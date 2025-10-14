@@ -15,17 +15,17 @@ ht-degree: 0%
 
 # Ondersteunde acties verzenden in Adaptive Forms op basis van kerncomponenten
 
-<span class="preview"> Adobe adviseert het gebruiken van de Componenten van de Kern om [ Aangepaste Forms aan een Pagina van AEM Sites toe te voegen ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) of [ standalone Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) tot stand te brengen. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de Componenten van de Kern om [&#x200B; Aangepaste Forms aan een Pagina van AEM Sites toe te voegen &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) of [&#x200B; standalone Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) tot stand te brengen. </span>
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
-| AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/configuring-submit-actions.md) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
+| AEM as a Cloud Service (Foundation Components) | [&#x200B; klik hier &#x200B;](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
-| AEM as a Cloud Service (Edge Delivery Services) | [ klik hier ](/help/forms/configure-submit-action-eds-forms.md) |
+| AEM as a Cloud Service (Edge Delivery Services) | [&#x200B; klik hier &#x200B;](/help/forms/configure-submit-action-eds-forms.md) |
 
-Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier klikt. De adaptieve Forms die op de Component van de Kern wordt gebaseerd steunt diverse [ uit-van-de-doos acties ](#submit-actions-supported-by-adaptive-forms-based-on-core-components) voorleggen.
+Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier klikt. De adaptieve Forms die op de Component van de Kern wordt gebaseerd steunt diverse [&#x200B; uit-van-de-doos acties &#x200B;](#submit-actions-supported-by-adaptive-forms-based-on-core-components) voorleggen.
 
 <!--You can also configure different actions for an Adaptive Form submissions.
 
@@ -46,14 +46,14 @@ De volgende verzendacties worden ondersteund door Adaptive Forms op basis van Co
 * [Verzenden naar OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Een AEM-workflow aanroepen](/help/forms/configure-submit-action-workflow.md)
 * [Verzenden naar Marketo-pagina](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [ voorleggen aan Adobe Experience Platform (AEP) ](/help/forms/aem-forms-aep-connector.md)
+* [&#x200B; voorleggen aan Adobe Experience Platform (AEP) &#x200B;](/help/forms/aem-forms-aep-connector.md)
 
 U kunt ook een adaptief formulier op basis van kerncomponenten verzenden naar andere opslagconfiguraties:
 
 * [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/aem-forms-salesforce-integration.md)
 * [Een adaptief formulier verbinden met Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-Bovendien, kunt u [ aanpassen het gebrek verzendt Acties ](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) om met specifieke organisatorische vereisten te richten.
+Bovendien, kunt u [&#x200B; aanpassen het gebrek verzendt Acties &#x200B;](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) om met specifieke organisatorische vereisten te richten.
 
 
 ### Een verzendhandeling configureren voor een adaptief formulier op basis van kerncomponenten
@@ -66,9 +66,9 @@ Bovendien, kunt u [ aanpassen het gebrek verzendt Acties ](/help/forms/custom-su
   ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
 -->
 
-U kunt de eigenschappen van de Container van de Vorm bepalen gebruikend het lusje van de Verzending van Configure Dialoog. Meer over Configure Dialoog van een component van de Container van de Vorm leren, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=nl-NL).
+U kunt de eigenschappen van de Container van de Vorm bepalen gebruikend het lusje van de Verzending van Configure Dialoog. Meer over Configure Dialoog van een component van de Container van de Vorm leren, [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=nl-NL).
 
-![ klik het pictogram van de Sleutel om de Adaptieve de dialoogdoos van de Container van de Vorm te openen om een verzendactie te vormen ](/help/forms/assets/adaptive-forms-submit-message.png)
+![&#x200B; klik het pictogram van de Sleutel om de Adaptieve de dialoogdoos van de Container van de Vorm te openen om een verzendactie te vormen &#x200B;](/help/forms/assets/adaptive-forms-submit-message.png)
 
 <!--To select and configure a Submit Action for your form:
 

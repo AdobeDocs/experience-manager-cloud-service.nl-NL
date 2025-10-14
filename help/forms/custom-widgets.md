@@ -22,9 +22,9 @@ ht-degree: 0%
 <span class="preview"> De HTML5 Forms-functionaliteit wordt aangeboden als onderdeel van het programma voor vroege toegang. Als u toegang wilt aanvragen, stuurt u een e-mail van uw officiële (werk)e-mailadres naar aem-forms-ea@adobe.com.
 </span>
 
-U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De motor XFA gebruikt diverse widgets, zie [ Kader van de Verschijning voor aanpassings en vormen HTML5 ](/help/forms/custom-widgets.md) voor gedetailleerde informatie.
+U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De motor XFA gebruikt diverse widgets, zie [&#x200B; Kader van de Verschijning voor aanpassings en vormen HTML5 &#x200B;](/help/forms/custom-widgets.md) voor gedetailleerde informatie.
 
-![ Een voorbeeld van gebrek en douane widget ](assets/custom-widgets.jpg)
+![&#x200B; Een voorbeeld van gebrek en douane widget &#x200B;](assets/custom-widgets.jpg)
 
 Een voorbeeld van de standaard- en aangepaste widget
 
@@ -32,7 +32,7 @@ Een voorbeeld van de standaard- en aangepaste widget
 
 ### Een profiel maken  {#create-a-profile-nbsp}
 
-U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Voor meer informatie bij het creëren van profielen, zie [ Creërend douaneProfiel ](/help/forms/custom-profile.md).
+U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Voor meer informatie bij het creëren van profielen, zie [&#x200B; Creërend douaneProfiel &#x200B;](/help/forms/custom-profile.md).
 
 ### Een widget maken {#create-a-widget}
 
@@ -79,7 +79,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Aangepaste widget registreren met XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wanneer de code van de douanewidget klaar is, registreer widget met de scripting motor door `registerConfig` API voor [ Vorm Bridge ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) te gebruiken. Het neemt widgetConfigObject als input.
+Wanneer de code van de douanewidget klaar is, registreer widget met de scripting motor door `registerConfig` API voor [&#x200B; Vorm Bridge &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) te gebruiken. Het neemt widgetConfigObject als input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

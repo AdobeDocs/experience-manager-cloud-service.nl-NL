@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2021, 2022, enzovoort.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -56,13 +56,13 @@ Bekijk de video Overzicht van de release van februari 2023 voor een overzicht va
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Gegevens van het Gebruik vangen kerncomponenten om Aangepaste Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) te bouwen**: [ de Aangepaste redacteur van Forms van het Gebruik ](/help/forms/creating-adaptive-form-core-components.md) om vormen tot stand te brengen die op gestandaardiseerde gegevens worden gebaseerd vangen componenten (de Componenten van de Kern). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
+* **[Gegevens van het Gebruik vangen kerncomponenten om Aangepaste Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) te bouwen**: [&#x200B; de Aangepaste redacteur van Forms van het Gebruik &#x200B;](/help/forms/creating-adaptive-form-core-components.md) om vormen tot stand te brengen die op gestandaardiseerde gegevens worden gebaseerd vangen componenten (de Componenten van de Kern). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
 
 * **[Frontend pijpleidingssteun voor het stileren van kerncomponent gebaseerde Aangepaste Forms](/help/forms/using-themes-in-core-components.md)**: Gebruik gestandaardiseerde op BEM-Gebaseerde thema&#39;s voor op kern-componenten-Gebaseerde Aangepaste Forms door hen met de pijpleiding van de Plaatsing van de Voorkant op te stellen om de blik en het gevoel van uw vormen te verbeteren en zich aan de merkgoedgekeurde ontwerprichtlijnen van uw organisatie te richten.
 
 * **[produceer Document van Verslag voor kerncomponent gebaseerde Adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)**: Creeer een document van verslag dat voorgelegde gegevens voor Adaptief Forms bevat die gebruikend kerncomponenten voor archivering of verwijzing aan eind - gebruikers, in druk of in het documentformaat worden gebouwd.
 
-![ https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![&#x200B; https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
 * **[efficiënte vorm-bouw met sparen een Aangepast Vorm als malplaatjeeigenschap](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Versnelde en normaliseer vormontwikkeling door bestaande merk goedgekeurde vormen als vormmalplaatjes voor snel hergebruik op te slaan.
 
@@ -77,7 +77,7 @@ Bekijk de video Overzicht van de release van februari 2023 voor een overzicht va
 
 * **[legt Aangepaste Forms aan Microsoft SharePoint en Microsoft OneDrive voor](/help/forms/configuring-submit-actions.md)**: Verbeter bedrijfsgebruikersbehendigheid om nieuwe vormen snel te lanceren en voorgelegde gegevens in alledaagse hulpmiddelen op te slaan zij zoals plaats Microsoft SharePoint of omslag OneDrive gebruiken.
 
-![ legt Aangepaste Forms aan Microsoft SharePoint en Microsoft OneDrive voor ](/help/forms/assets/onedrive-and-sharepoint.jpg)
+![&#x200B; legt Aangepaste Forms aan Microsoft SharePoint en Microsoft OneDrive voor &#x200B;](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
 
 ## Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
@@ -93,12 +93,12 @@ U kunt vanaf uw officiële e-mailadres een e-mail sturen naar aem-forms-headless
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
+U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](/help/release-notes/maintenance/latest.md) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.

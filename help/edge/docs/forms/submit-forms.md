@@ -14,12 +14,12 @@ ht-degree: 0%
 # Google-bladen of Microsoft Excel-bestanden instellen om gegevens te accepteren
 
 
-Zodra u [ hebt gecreeerd en de vorm ](/help/edge/docs/forms/create-forms.md) previewde, is het tijd om het overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen. U kunt
+Zodra u [&#x200B; hebt gecreeerd en de vorm &#x200B;](/help/edge/docs/forms/create-forms.md) previewde, is het tijd om het overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen. U kunt
 
-- [ laat manueel spreadsheet toe om gegevens ](#manually-enable-the-spreadsheet-to-accept-data) goed te keuren
+- [&#x200B; laat manueel spreadsheet toe om gegevens &#x200B;](#manually-enable-the-spreadsheet-to-accept-data) goed te keuren
 - [Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
-![ op document-gebaseerde het Authoring ecosysteem ](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+![&#x200B; op document-gebaseerde het Authoring ecosysteem &#x200B;](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 
 <!--
@@ -32,7 +32,7 @@ Zodra u [ hebt gecreeerd en de vorm ](/help/edge/docs/forms/create-forms.md) pre
 
 De spreadsheet inschakelen om gegevens te accepteren
 
-1. Open het werkblad met het formulier en voeg een nieuw blad toe, onder een andere naam `incoming` . Bijvoorbeeld, het [ vraag ](/help/edge/assets/enquiry.xlsx) van het werkboek van Microsoft Excel.
+1. Open het werkblad met het formulier en voeg een nieuw blad toe, onder een andere naam `incoming` . Bijvoorbeeld, het [&#x200B; vraag &#x200B;](/help/edge/assets/enquiry.xlsx) van het werkboek van Microsoft Excel.
 
    >[!WARNING]
    >
@@ -48,9 +48,9 @@ De spreadsheet inschakelen om gegevens te accepteren
 
    Elke waarde in de kolom `Name` van het `shared-aem` -blad, met uitzondering van de verzendknop, kan fungeren als koptekst in het `incoming` -blad. Neem bijvoorbeeld de volgende afbeelding die kopteksten illustreert voor een &quot;vraag&quot;-formulier:
 
-   ![ Gebieden voor een contact-usvorm ](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+   ![&#x200B; Gebieden voor een contact-usvorm &#x200B;](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Gebruik de [ uitbreiding van AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef de vormupdates. Uw blad is nu klaar om inkomende formulierverzendingen te accepteren.
+1. Gebruik de [&#x200B; uitbreiding van AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef de vormupdates. Uw blad is nu klaar om inkomende formulierverzendingen te accepteren.
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ De spreadsheet inschakelen om gegevens te accepteren
 
 Nadat de veldnamen aan het `incoming` -werkblad zijn toegevoegd, kan het formulier opmerkingen accepteren. U kunt een voorbeeld van het formulier bekijken en gegevens naar het blad verzenden.
 
-Zodra het blad opstelling is om gegevens te ontvangen, kunt u [ voorproef de vorm ](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> beginnen gegevens naar het blad te verzenden.
+Zodra het blad opstelling is om gegevens te ontvangen, kunt u [&#x200B; voorproef de vorm &#x200B;](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> beginnen gegevens naar het blad te verzenden.
 
 >[!WARNING]
 >
@@ -87,7 +87,7 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
 
 1. Verzend de POST-aanvraag om de juiste kopteksten op het `incoming` -blad te genereren en voeg de `shared-default` -bladen toe aan uw spreadsheet, als dit nog niet het geval is.
 
-   Om te begrijpen hoe te om het POST- verzoek voor vestiging uw blad te formatteren, verwijs naar de [ Admin API documentatie ](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). U kunt het onderstaande voorbeeld bekijken:
+   Om te begrijpen hoe te om het POST- verzoek voor vestiging uw blad te formatteren, verwijs naar de [&#x200B; Admin API documentatie &#x200B;](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). U kunt het onderstaande voorbeeld bekijken:
 
    **Verzoek**
 
@@ -174,5 +174,5 @@ Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek
 
 
 
-Daarna, kunt u [ aanpassen dankt u bericht ](/help/edge/docs/forms/thank-you-page-form.md).
+Daarna, kunt u [&#x200B; aanpassen dankt u bericht &#x200B;](/help/edge/docs/forms/thank-you-page-form.md).
 

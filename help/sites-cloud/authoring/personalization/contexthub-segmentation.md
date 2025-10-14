@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Het vormen Segmentatie met ContextHub{#configuring-segmentation-with-contexthub}
 
-Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [ Begrijpend Segmentatie ](segmentation.md) voor informatie over hoe de segmentatie en zeer belangrijke termijnen werkt.
+Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [&#x200B; Begrijpend Segmentatie &#x200B;](segmentation.md) voor informatie over hoe de segmentatie en zeer belangrijke termijnen werkt.
 
 Afhankelijk van de informatie u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, bepaal de segmenten en de strategieën nodig voor uw gerichte inhoud.
 
@@ -28,18 +28,18 @@ De [&#128279;](audiences.md) console van 0&rbrace; Soorten publiek &lbrace;wordt
 
 Om tot uw segmenten toegang te hebben, in globale navigatie selecteren **Navigatie > Personalization > Soorten publiek**. Selecteer uw configuratie (bijvoorbeeld, Plaats WKND) om uw segmenten te zien:
 
-![ het Leiden publiek ](../assets/contexthub-segmentation-audiences.png)
+![&#x200B; het Leiden publiek &#x200B;](../assets/contexthub-segmentation-audiences.png)
 
 ## Segment-editor {#segment-editor}
 
 <!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
 De **Redacteur van het Segment** laat u gemakkelijk een segment wijzigen. Om een segment uit te geven, selecteer een segment in de lijst van segmenten en klik **uitgeven** knoop.
 
-![ de redacteur van het Segment ](../assets/contexthub-segment-editor.png)
+![&#x200B; de redacteur van het Segment &#x200B;](../assets/contexthub-segment-editor.png)
 
-Gebruikend de componentenbrowser kunt u **EN** en **OF** containers toevoegen om de segmentlogica te bepalen, dan extra componenten toevoegen om eigenschappen en waarden of verwijzingsmanuscripten en andere segmenten te vergelijken om de selectiecriteria (zie [ Creërend een Nieuw Segment ](#creating-a-new-segment)) te bepalen om het nauwkeurige scenario voor het selecteren van het segment te bepalen.
+Gebruikend de componentenbrowser kunt u **EN** en **OF** containers toevoegen om de segmentlogica te bepalen, dan extra componenten toevoegen om eigenschappen en waarden of verwijzingsmanuscripten en andere segmenten te vergelijken om de selectiecriteria (zie [&#x200B; Creërend een Nieuw Segment &#x200B;](#creating-a-new-segment)) te bepalen om het nauwkeurige scenario voor het selecteren van het segment te bepalen.
 
-Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelost. In het geval van veelvoudige segmenten die van toepassing zijn, dan wordt de **factor van de Verhoging** ook gebruikt. Zie [ Creërend een Nieuw Segment ](#creating-a-new-segment) voor details op de verhogingsfactor.
+Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelost. In het geval van veelvoudige segmenten die van toepassing zijn, dan wordt de **factor van de Verhoging** ook gebruikt. Zie [&#x200B; Creërend een Nieuw Segment &#x200B;](#creating-a-new-segment) voor details op de verhogingsfactor.
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelos
 
 ### Containers {#containers}
 
-De volgende containers zijn beschikbaar uit-van-de-doos en staan u toe om vergelijkingen en verwijzingen samen te groeperen voor booleaanse evaluatie. U kunt deze vanuit de componentbrowser naar de editor slepen. Zie de volgende sectie [ Gebruikend EN EN OF Containers ](#using-and-and-or-containers) voor meer informatie.
+De volgende containers zijn beschikbaar uit-van-de-doos en staan u toe om vergelijkingen en verwijzingen samen te groeperen voor booleaanse evaluatie. U kunt deze vanuit de componentbrowser naar de editor slepen. Zie de volgende sectie [&#x200B; Gebruikend EN EN OF Containers &#x200B;](#using-and-and-or-containers) voor meer informatie.
 
 |  |  |
 |---|---|
@@ -72,7 +72,7 @@ De volgende segmentvergelijkingen zijn beschikbaar uit-van-de-doos om segmenteig
 >
 >`null < 30 // will return true`
 >
->Daarom wanneer [ creërend een segment ](#creating-a-new-segment), zou u a **gegevenstype** moeten selecteren wanneer de types van vergeleken waarden gekend zijn. Bijvoorbeeld:
+>Daarom wanneer [&#x200B; creërend een segment &#x200B;](#creating-a-new-segment), zou u a **gegevenstype** moeten selecteren wanneer de types van vergeleken waarden gekend zijn. Bijvoorbeeld:
 >
 >Wanneer het vergelijken van het bezit `profile/age`, weet u reeds dat het vergeleken type a **aantal** is, zodat zelfs als `profile/age` niet wordt geplaatst, is een vergelijking `profile/age` minder-dan 30 **vals** teruggekeerd, aangezien u zou verwachten.
 
@@ -83,21 +83,21 @@ De volgende verwijzingen zijn beschikbaar uit-van-de-doos om rechtstreeks met ee
 |  |  |
 |---|---|
 | Segmentverwijzing | Evalueer het referenced segment |
-| Scriptreferentie | Evalueer het referenced manuscript. Zie de volgende sectie [ Gebruikend de Verwijzingen van het Manuscript ](#using-script-references) voor meer informatie. |
+| Scriptreferentie | Evalueer het referenced manuscript. Zie de volgende sectie [&#x200B; Gebruikend de Verwijzingen van het Manuscript &#x200B;](#using-script-references) voor meer informatie. |
 
 ## Een nieuw segment maken {#creating-a-new-segment}
 
 Het nieuwe segment definiëren:
 
-1. Na [ toegang hebbend tot de segmenten ](#accessing-segments), [ navigeer aan de omslag ](#organizing-segments) waar u het segment zou willen tot stand brengen.
+1. Na [&#x200B; toegang hebbend tot de segmenten &#x200B;](#accessing-segments), [&#x200B; navigeer aan de omslag &#x200B;](#organizing-segments) waar u het segment zou willen tot stand brengen.
 
 1. Selecteer **creeer** knoop en selecteer **creëren Segment ContextHub**.
 
-   ![ voeg segment ](../assets/contexthub-create-segment.png) toe
+   ![&#x200B; voeg segment &#x200B;](../assets/contexthub-create-segment.png) toe
 
 1. In het **Nieuwe Segment ContextHub**, ga een titel voor het segment en een verhogingswaarde indien nodig in en selecteer dan **creeer**.
 
-   ![ Nieuw segment ](../assets/contexthub-new-segment.png)
+   ![&#x200B; Nieuw segment &#x200B;](../assets/contexthub-new-segment.png)
 
    Elk segment heeft een verhogingsparameter die als weegfactor wordt gebruikt. Een hoger getal geeft aan dat het segment wordt geselecteerd bij voorkeur boven een segment met een lager getal in gevallen waarin meerdere segmenten geldig zijn.
 
@@ -108,12 +108,12 @@ Het nieuwe segment definiëren:
 1. Sleep een vergelijking of een verwijzing naar de segmentredacteur het in het gebrek EN container zal verschijnen.
 1. Dubbelselecteer de configureoptie van de nieuwe verwijzing of het nieuwe segment om de specifieke parameters uit te geven. In dit voorbeeld testen we mensen in Bazel.
 
-   ![ het Testen voor mensen in Bazel ](../assets/contexthub-comparing-property-value.png)
+   ![&#x200B; het Testen voor mensen in Bazel &#x200B;](../assets/contexthub-comparing-property-value.png)
 
-   Plaats altijd het Type van Gegevens van a **&#x200B;**&#x200B;indien mogelijk om ervoor te zorgen dat uw vergelijkingen behoorlijk worden geëvalueerd. Zie [ Vergelijkingen ](#comparisons) voor meer informatie.
+   Plaats altijd het Type van Gegevens van a **&#x200B;**&#x200B;indien mogelijk om ervoor te zorgen dat uw vergelijkingen behoorlijk worden geëvalueerd. Zie [&#x200B; Vergelijkingen &#x200B;](#comparisons) voor meer informatie.
 
 1. Klik **Gedaan** om uw definitie te bewaren:
-1. Voeg desgewenst meer componenten toe. U kunt booleaanse uitdrukkingen formuleren gebruikend de containercomponenten voor EN en OF vergelijkingen (zie [ Gebruikend EN en of Containers ](#using-and-and-or-containers) hieronder). Met de segmentredacteur kunt u componenten schrappen niet meer nodig, of hen slepen aan nieuwe posities binnen de verklaring.
+1. Voeg desgewenst meer componenten toe. U kunt booleaanse uitdrukkingen formuleren gebruikend de containercomponenten voor EN en OF vergelijkingen (zie [&#x200B; Gebruikend EN en of Containers &#x200B;](#using-and-and-or-containers) hieronder). Met de segmentredacteur kunt u componenten schrappen niet meer nodig, of hen slepen aan nieuwe posities binnen de verklaring.
 
 ### AND en OR-containers gebruiken {#using-and-and-or-containers}
 
@@ -134,7 +134,7 @@ In het volgende voorbeeld worden bezoekers geselecteerd die worden beschouwd in 
 
 U begint door een OF containercomponent binnen het gebrek EN container te plaatsen. Binnen de container OR kunt u de bezit of verwijzingscomponenten toevoegen.
 
-![ Segment met OR exploitant ](../assets/contexthub-or-operator.png)
+![&#x200B; Segment met OR exploitant &#x200B;](../assets/contexthub-or-operator.png)
 
 U kunt meerdere AND- en OR-operatoren naar wens nesten.
 
@@ -188,7 +188,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. Creeer segment ContextHub.
 1. Voeg **component van de Verwijzing van 0&rbrace; Manuscript &lbrace;in de gewenste plaats van het segment toe.**
-1. Open uitgeven dialoog van de **component van de Verwijzing van het Manuscript**. Als [ behoorlijk gevormd ](#defining-a-script-to-reference), het manuscript in de **naam van het Manuscript** drop-down zou moeten beschikbaar zijn.
+1. Open uitgeven dialoog van de **component van de Verwijzing van het Manuscript**. Als [&#x200B; behoorlijk gevormd &#x200B;](#defining-a-script-to-reference), het manuscript in de **naam van het Manuscript** drop-down zou moeten beschikbaar zijn.
 
 ## Segmenten ordenen {#organizing-segments}
 
@@ -196,39 +196,39 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ### Een nieuwe map maken {#create-folder}
 
-1. Na [ toegang hebbend tot de segmenten ](#accessing-segments), selecteer **creeer** knoop en selecteer **Omslag**.
+1. Na [&#x200B; toegang hebbend tot de segmenten &#x200B;](#accessing-segments), selecteer **creeer** knoop en selecteer **Omslag**.
 
-   ![ voeg omslag ](../assets/contexthub-create-segment.png) toe
+   ![&#x200B; voeg omslag &#x200B;](../assets/contexthub-create-segment.png) toe
 
 1. Verstrek a **Titel** en a **Naam** voor uw omslag.
    * De **Titel** zou beschrijvend moeten zijn.
    * De **Naam** wordt de knoopnaam in de bewaarplaats.
-      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [ AEM noemende overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md).
+      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [&#x200B; AEM noemende overeenkomsten &#x200B;](/help/implementing/developing/introduction/naming-conventions.md).
       * Deze kan zo nodig worden aangepast.
 
-   ![ creeer omslag ](../assets/contexthub-create-folder.png)
+   ![&#x200B; creeer omslag &#x200B;](../assets/contexthub-create-folder.png)
 
 1. Selecteer **creeer**.
 
-   ![ bevestigt omslag ](../assets/contexthub-confirm-folder.png)
+   ![&#x200B; bevestigt omslag &#x200B;](../assets/contexthub-confirm-folder.png)
 
 1. De map wordt weergegeven in de lijst met segmenten.
    * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map verschijnt.
    * U kunt de kolomkoppen selecteren om de sortering aan te passen.
 
-     ![ De nieuwe omslag ](../assets/contexthub-folder.png)
+     ![&#x200B; De nieuwe omslag &#x200B;](../assets/contexthub-folder.png)
 
 ### Bestaande mappen wijzigen {#modify-folders}
 
-1. Na [ toegang hebbend tot de segmenten ](#accessing-segments), selecteer de omslag u wilt wijzigen om het te selecteren.
+1. Na [&#x200B; toegang hebbend tot de segmenten &#x200B;](#accessing-segments), selecteer de omslag u wilt wijzigen om het te selecteren.
 
-   ![ Uitgezochte omslag ](../assets/contexthub-select-folder.png)
+   ![&#x200B; Uitgezochte omslag &#x200B;](../assets/contexthub-select-folder.png)
 
 1. Selecteer **anders noemen** in de toolbar om de omslag anders te noemen.
 
 1. Verstrek een nieuwe **Titel van de Omslag** en selecteer **sparen**.
 
-   ![ noem omslag anders ](../assets/contexthub-rename-folder.png)
+   ![&#x200B; noem omslag anders &#x200B;](../assets/contexthub-rename-folder.png)
 
 >[!NOTE]
 >
@@ -236,22 +236,22 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ### Een map verwijderen
 
-1. Na [ toegang hebbend tot de segmenten ](#accessing-segments), selecteer de omslag u wilt wijzigen om het te selecteren.
+1. Na [&#x200B; toegang hebbend tot de segmenten &#x200B;](#accessing-segments), selecteer de omslag u wilt wijzigen om het te selecteren.
 
-   ![ Uitgezochte omslag ](../assets/contexthub-select-folder.png)
+   ![&#x200B; Uitgezochte omslag &#x200B;](../assets/contexthub-select-folder.png)
 
 1. Selecteer **Schrapping** in de toolbar om de omslag te schrappen.
 
 1. Een dialoogvenster bevat een lijst met mappen die zijn geselecteerd om te worden verwijderd.
 
-   ![ bevestigt schrapping ](../assets/contexthub-confirm-segment-delete.png)
+   ![&#x200B; bevestigt schrapping &#x200B;](../assets/contexthub-confirm-segment-delete.png)
 
    * Selecteer **Schrapping** om te bevestigen.
    * Selecteer **annuleren** om te aborteren.
 
 1. Als een van de geselecteerde mappen submappen of segmenten bevat, moet de verwijdering ervan worden bevestigd.
 
-   ![ Bevestig schrapping van kinderen ](../assets/contexthub-confirm-segment-child-delete.png)
+   ![&#x200B; Bevestig schrapping van kinderen &#x200B;](../assets/contexthub-confirm-segment-child-delete.png)
 
    * Selecteer **Drijf Schrapping** om te bevestigen.
    * Selecteer **annuleren** om te aborteren.
@@ -262,7 +262,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ## De toepassing van een segment testen {#testing-the-application-of-a-segment}
 
-Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van **[ContextHub ](contexthub.md) worden getest.**
+Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van **[ContextHub &#x200B;](contexthub.md) worden getest.**
 
 1. Een voorvertoning van een pagina weergeven
 1. Klik het pictogram ContextHub om de toolbar te openbaren ContextHub
@@ -271,11 +271,11 @@ Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van *
 
 Bijvoorbeeld, is onze eenvoudige segmentdefinitie om gebruikers in Bazel te identificeren gebaseerd op de plaats van de gebruiker. Als u een specifieke persoon laadt die overeenkomt met die criteria, wordt getoond of het segment is opgelost:
 
-![ Segment dat ](../assets/contexthub-segment-resolve.png) oplost
+![&#x200B; Segment dat &#x200B;](../assets/contexthub-segment-resolve.png) oplost
 
 Of indien deze niet is opgelost:
 
-![ Segment dat niet ](../assets/contexthub-segment-doesnt-resolve.png) oplost
+![&#x200B; Segment dat niet &#x200B;](../assets/contexthub-segment-doesnt-resolve.png) oplost
 
 >[!NOTE]
 >
@@ -283,7 +283,7 @@ Of indien deze niet is opgelost:
 
 Dergelijke tests kunnen ook op inhoudspagina&#39;s en in combinatie met gerichte inhoud en verwante **Activiteiten** en **Ervaringen** worden uitgevoerd.
 
-Als u een activiteit en ervaring hebt ingesteld, kunt u uw segment gemakkelijk testen met de activiteit. Voor details over vestiging ziet een activiteit, de [ documentatie bij het ontwerpen van gerichte inhoud ](targeted-content.md).
+Als u een activiteit en ervaring hebt ingesteld, kunt u uw segment gemakkelijk testen met de activiteit. Voor details over vestiging ziet een activiteit, de [&#x200B; documentatie bij het ontwerpen van gerichte inhoud &#x200B;](targeted-content.md).
 
 1. In de bewerkingsmodus van een pagina waarop u doelinhoud hebt ingesteld, ziet u dat de inhoud als doel is ingesteld via het pijlpictogram op de inhoud.
 1. De schakelaar aan voorproefwijze en het gebruiken van de contexthub, schakelaar aan een persoon die niet de segmentatie aanpast die voor de ervaring wordt gevormd.
@@ -291,4 +291,4 @@ Als u een activiteit en ervaring hebt ingesteld, kunt u uw segment gemakkelijk t
 
 ## Uw segment gebruiken {#using-your-segment}
 
-Segmenten worden gebruikt om de werkelijke inhoud te bepalen die door specifieke doelgroepen wordt gezien. Zie [ het Leiden Soorten publiek ](audiences.md) voor meer informatie over publiek en segmenten en [ het Authoring van Gerichte Inhoud ](targeted-content.md) over het gebruiken van publiek en segmenten aan doelinhoud.
+Segmenten worden gebruikt om de werkelijke inhoud te bepalen die door specifieke doelgroepen wordt gezien. Zie [&#x200B; het Leiden Soorten publiek &#x200B;](audiences.md) voor meer informatie over publiek en segmenten en [&#x200B; het Authoring van Gerichte Inhoud &#x200B;](targeted-content.md) over het gebruiken van publiek en segmenten aan doelinhoud.

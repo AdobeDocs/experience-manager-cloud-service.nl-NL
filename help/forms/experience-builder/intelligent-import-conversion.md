@@ -259,8 +259,8 @@ Voegt automatisch de juiste validatie toe:
 
 Voor conversieproblemen:
 
-- Controle [ Veelgestelde vragen van de Bouwer van de Ervaring van Forms ](forms-experience-builder-frequently-asked-questions.md)
-- Herzie [ Begonnen gids ](forms-experience-builder-getting-started.md)
+- Controle [&#x200B; Veelgestelde vragen van de Bouwer van de Ervaring van Forms &#x200B;](forms-experience-builder-frequently-asked-questions.md)
+- Herzie [&#x200B; Begonnen gids &#x200B;](forms-experience-builder-getting-started.md)
 - Neem contact op met de systeembeheerder voor technische ondersteuning
 
 ## Verwante artikelen

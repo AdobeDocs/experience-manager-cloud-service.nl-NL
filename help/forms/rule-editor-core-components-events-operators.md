@@ -37,7 +37,7 @@ De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u
 * **heeft Geselecteerd** - Keert waar terug wanneer een gebruiker een specifieke checkbox, drop-down, of radioknoopoptie selecteert.
 * **wordt geïnitialiseerd (gebeurtenis)** - keert waar terug wanneer een vormvoorwerp in browser wordt teruggegeven.
 * **wordt Veranderd (gebeurtenis)** - Keert waar terug wanneer een gebruiker de waarde of de selectie van een vormvoorwerp wijzigt.
-* **wordt geklikt (gebeurtenis)** - Keert waar terug wanneer een gebruiker een vormvoorwerp, bijvoorbeeld, een knoop klikt. Een gebruiker kan [ veelvoudige voorwaarden aan de knoop toevoegen klikt ](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid).
+* **wordt geklikt (gebeurtenis)** - Keert waar terug wanneer een gebruiker een vormvoorwerp, bijvoorbeeld, een knoop klikt. Een gebruiker kan [&#x200B; veelvoudige voorwaarden aan de knoop toevoegen klikt &#x200B;](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid).
 * **is Geldig** - Controleert als een vormvoorwerp aan bevestigingscriteria voldoet.
 * **is niet Geldig** - Controleert als een vormvoorwerp bevestigingscriteria ontbreekt.
 
@@ -50,11 +50,11 @@ De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u
 
 ### Beschikbare regeltypen in regeleditor {#available-rule-types-in-rule-editor}
 
-De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebruiken om regels te schrijven. Laten we elk regeltype in detail bekijken. Voor meer informatie over het schrijven van regels in de regelredacteur, zie [ regels ](/help/forms/rule-editor-core-components-user-interface.md#write-rules) schrijven.
+De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebruiken om regels te schrijven. Laten we elk regeltype in detail bekijken. Voor meer informatie over het schrijven van regels in de regelredacteur, zie [&#x200B; regels &#x200B;](/help/forms/rule-editor-core-components-user-interface.md#write-rules) schrijven.
 
 #### [!UICONTROL When] {#whenruletype}
 
-Het **[!UICONTROL When]** regeltype volgt de **voorwaarde-actie-afwisselende actie** regelconstructie, of soms, enkel de **voorwaarde-actie** constructie. In dit regeltype geeft u eerst een voorwaarde op voor evaluatie gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde is voldaan ( `True`). Terwijl het gebruiken van wanneer regeltype, kunt u veelvoudige EN en OF exploitanten gebruiken om [ genestelde uitdrukkingen ](/help/forms/rule-editor-core-components-usecases.md#nested-expressions) tot stand te brengen.
+Het **[!UICONTROL When]** regeltype volgt de **voorwaarde-actie-afwisselende actie** regelconstructie, of soms, enkel de **voorwaarde-actie** constructie. In dit regeltype geeft u eerst een voorwaarde op voor evaluatie gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde is voldaan ( `True`). Terwijl het gebruiken van wanneer regeltype, kunt u veelvoudige EN en OF exploitanten gebruiken om [&#x200B; genestelde uitdrukkingen &#x200B;](/help/forms/rule-editor-core-components-usecases.md#nested-expressions) tot stand te brengen.
 
 Met het regeltype &#39;Wanneer&#39; kunt u een voorwaarde op een formulierobject evalueren en acties op een of meer objecten uitvoeren.
 
@@ -78,11 +78,11 @@ Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of lijst, 
 
 Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het creëren van de regel, worden de opties (radioknopen) automatisch teruggewonnen en ter beschikking gesteld van de regelschepper als volgt:
 
-![ de multi opties van waardevertoningen ](assets/multivaluefcdisplaysoptions.png)
+![&#x200B; de multi opties van waardevertoningen &#x200B;](assets/multivaluefcdisplaysoptions.png)
 
 Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Met Waarde wissen wordt de waarde van het opgegeven object gewist. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden. U kunt de instructie Else toevoegen om meer voorwaarden toe te voegen
 
-![ Duidelijke waarde van ](assets/clearvalueof.png)
+![&#x200B; Duidelijke waarde van &#x200B;](assets/clearvalueof.png)
 
 >[!NOTE]
 >
@@ -108,11 +108,11 @@ Actie 1 op object A
 
 _
 
-![ Toegestane Meerdere gebieden binnen wanneer ](/help/forms/assets/allowed-multiple-field-when.png)
+![&#x200B; Toegestane Meerdere gebieden binnen wanneer &#x200B;](/help/forms/assets/allowed-multiple-field-when.png)
 
 **Overwegingen terwijl het gebruiken van Toegestane Meerdere gebieden in wanneer voorwaardelement**
 
-* Zorg ervoor dat de [ kerncomponent aan versie 3.0.14 of recenter ](https://github.com/adobe/aem-core-forms-components) wordt geplaatst om deze eigenschap in de regelredacteur te gebruiken.
+* Zorg ervoor dat de [&#x200B; kerncomponent aan versie 3.0.14 of recenter &#x200B;](https://github.com/adobe/aem-core-forms-components) wordt geplaatst om deze eigenschap in de regelredacteur te gebruiken.
 * Als regels worden toegepast op verschillende velden binnen de voorwaarde Wanneer, wordt de regel geactiveerd, zelfs als slechts een van deze velden wordt gewijzigd.
 * U kunt de veelvoudige gebieden in **slechts toevoegen wanneer** voorwaarde voor een **EN** regel. Het is niet mogelijk voor een **OF** regel.
 
@@ -141,7 +141,7 @@ Als er problemen optreden in de toegestane meerdere velden in de voorwaarde &#39
 
 1. Open het formulier in de bewerkingsmodus.
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op Gereed en sla het dialoogvenster opnieuw op.
 
 **[!UICONTROL Hide]** Verbergt het opgegeven object.
@@ -156,7 +156,7 @@ Als er problemen optreden in de toegestane meerdere velden in de voorwaarde &#39
 
 >[!NOTE]
 >
-> Meer over de Invoke dienst leren, [ klik hier ](/help/forms/invoke-service-enhancements-rule-editor.md).
+> Meer over de Invoke dienst leren, [&#x200B; klik hier &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md).
 
 Zie de voorbeeldregel voor het aanhalen van de diensten van het Model van de Gegevens van de Vorm (FDM).
 
@@ -185,7 +185,7 @@ Met het regeltype **[!UICONTROL Set Property]** kunt u de waarde van een eigensc
 
 U kunt bijvoorbeeld regels definiëren om het tekstvak weer te geven wanneer op een knop wordt geklikt. U kunt een aangepaste functie, een formulierobject, een objecteigenschap of een service-uitvoer gebruiken om een regel te definiëren.
 
-![ plaats Bezit ](assets/set_property_rule_new.png)
+![&#x200B; plaats Bezit &#x200B;](assets/set_property_rule_new.png)
 
 Als u een regel wilt definiëren die is gebaseerd op een aangepaste functie, selecteert u **[!UICONTROL Function Output]** in de vervolgkeuzelijst en sleept u een aangepaste functie naar het tabblad **[!UICONTROL Functions]** . Als aan de voorwaarde wordt voldaan, wordt het tekstinvoervak weergegeven.
 
@@ -195,7 +195,7 @@ Met de regel Eigenschap instellen die is gebaseerd op een objecteigenschap kunt 
 
 De volgende afbeelding toont een voorbeeld van het dynamisch inschakelen van het selectievakje op basis van het verbergen of weergeven van een tekstvak in een adaptieve vorm:
 
-![ Bezit van Objecten ](assets/object_property_set_property_new.png)
+![&#x200B; Bezit van Objecten &#x200B;](assets/object_property_set_property_new.png)
 
 **[!UICONTROL Clear Value Of]** Wist de waarde van het opgegeven object.
 
@@ -237,7 +237,7 @@ Indien (optioneel):
 
 In het volgende voorbeeld wordt de waarde `Question2` as `True` geselecteerd en wordt de waarde `Result` ingesteld als `correct` .
 
-![ reeks-waarde-web-dienst ](assets/set-value-web-service.png)
+![&#x200B; reeks-waarde-web-dienst &#x200B;](assets/set-value-web-service.png)
 
 Voorbeeld van waardeceregel instellen met de service Formuliergegevensmodel.
 
@@ -321,7 +321,7 @@ Een typisch Validate regel is gestructureerd als volgt:
 >
 >Als de opgegeven waarde niet voldoet aan de regel Valideren, kunt u een validatiebericht voor de gebruiker weergeven. U kunt het bericht in het veld **[!UICONTROL Script validation message]** opgeven in de componenteigenschappen op de zijbalk.
 
-![ manuscript-bevestiging ](assets/script-validation.png)
+![&#x200B; manuscript-bevestiging &#x200B;](assets/script-validation.png)
 
 #### [!UICONTROL Navigate among the panels]
 
@@ -347,11 +347,11 @@ Op dezelfde manier kunt u **navigeren onder de panelen** regel voor het verschui
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-Voor meer details op hoe te om een regel tot stand te brengen om in een paneel te navigeren, [ klik hier ](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+Voor meer details op hoe te om een regel tot stand te brengen om in een paneel te navigeren, [&#x200B; klik hier &#x200B;](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
 #### [!UICONTROL Async Function call]
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [&#x200B; pre-vrijgavekanaal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
 
 Met het **[!UICONTROL Async Function call]** -regeltype kunt u asynchrone functies uitvoeren. Het laat u toe om een functievraag in werking te stellen die onafhankelijk van de belangrijkste uitvoeringsdraad werkt, toestaand andere processen blijven lopend zonder het wachten op de asynchrone functie te voltooien.
 
@@ -365,7 +365,7 @@ Een typisch Async de vraagregel van de Functie om asynchrone functie uit te voer
 
 `[Callback Function];`
 
-Voor meer informatie over hoe te om de vraag van de Functie Async in de Visuele Redacteur van de Regel te gebruiken, verwijs naar [ Gebruikend asynchrone functievraag in het artikel van de regeleditor ](/help/forms/using-async-funct-in-rule-editor.md).
+Voor meer informatie over hoe te om de vraag van de Functie Async in de Visuele Redacteur van de Regel te gebruiken, verwijs naar [&#x200B; Gebruikend asynchrone functievraag in het artikel van de regeleditor &#x200B;](/help/forms/using-async-funct-in-rule-editor.md).
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
@@ -389,7 +389,7 @@ To define a rule based on a form data model:
 
 ## Volgende stap
 
-Laten wij nu diverse [ voorbeelden voor een Redacteur van de Regel voor een AanpassingsVorm begrijpen die op de Componenten van de Kern ](/help/forms/rule-editor-core-components-usecases.md) wordt gebaseerd.
+Laten wij nu diverse [&#x200B; voorbeelden voor een Redacteur van de Regel voor een AanpassingsVorm begrijpen die op de Componenten van de Kern &#x200B;](/help/forms/rule-editor-core-components-usecases.md) wordt gebaseerd.
 
 ## Zie ook
 

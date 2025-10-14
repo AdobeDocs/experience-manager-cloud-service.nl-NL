@@ -82,7 +82,7 @@ Uw strategie voor metagegevens kan het volgende definiëren:
 
 * **eigenschappen van Meta-gegevens:** identificeer en bepaal zorgvuldig elk meta-gegevensbezit. Ervoor zorgen dat elke eigenschap een duidelijke reden heeft om in de overeenkomst te worden opgenomen, die verband houdt met de doelstellingen en het doel.
 
-Om consistente resultaten in de hele opslagplaats te garanderen, moet u de strategie zorgvuldig plannen. Leer meer over [ meta-gegevensschema&#39;s ](metadata-schemas.md).
+Om consistente resultaten in de hele opslagplaats te garanderen, moet u de strategie zorgvuldig plannen. Leer meer over [&#x200B; meta-gegevensschema&#39;s &#x200B;](metadata-schemas.md).
 
 ### Een beheerplan voor metagegevens maken
 
@@ -97,7 +97,7 @@ Bepaal waar de informatie vandaan komt en bestudeer de details van de metagegeve
 
 >[!NOTE]
 >
->Leer hoe te [ meta-gegevens van uw digitale activa ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=nl-NL) beheren.
+>Leer hoe te [&#x200B; meta-gegevens van uw digitale activa &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=nl-NL) beheren.
 
 ### Verenigbaar zijn met de metagegevensstrategie
 
@@ -110,7 +110,7 @@ Hieronder volgen enkele aanbevolen procedures:
 * **vermijd dubbele waarden:** als u een inzameling van beelden van een marketing campagne hebt, gebruik verenigbare namen en vermijd duplicaten.<br>
 Bijvoorbeeld, in plaats van het gebruiken van dubbele namen zoals *campagne_image_001* en *campagne_image_002*, voer een systematische noemende overeenkomst zoals *event_promotion* en *product_launch* uit, die een duidelijke en bevolen identificatie verzekeren.
 
-* **gecontroleerde woordenboeken van het Gebruik effectief:** voer gecontroleerde woordenboeken uit door gestandaardiseerde termijnen voor markeringen aan te wenden. Leer hoe te om [ AEM Tagging Kader ](/help/implementing/developing/introduction/tagging-framework.md) effectief uit te voeren.  <br>
+* **gecontroleerde woordenboeken van het Gebruik effectief:** voer gecontroleerde woordenboeken uit door gestandaardiseerde termijnen voor markeringen aan te wenden. Leer hoe te om [&#x200B; AEM Tagging Kader &#x200B;](/help/implementing/developing/introduction/tagging-framework.md) effectief uit te voeren.  <br>
 Bijvoorbeeld, constant gebruik termijnen zoals *product_launch* of *event_promotion* wanneer het etiketteren van beelden met thema&#39;s om systematische opeenvolging te handhaven.
 
 * **handhaaf nauwkeurigheid en volledigheid:** om meta-gegevens verenigbaar, nauwkeurigheid, volledigheid, en groepering over diverse bronnen te houden zijn essentieel.
@@ -136,9 +136,9 @@ U kunt meerdere trefwoorden toevoegen en deze rangschikken naar prioriteit.
    1. Klik op **[!UICONTROL Save & Close]** .
 Zoek het element met de trefwoorden die u hebt toegevoegd. Het element wordt weergegeven in de bovenste zoekresultaten.
 
-  Leer hoe te om [ onderzoek in Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=nl-NL) op te voeren.
+  Leer hoe te om [&#x200B; onderzoek in Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=nl-NL) op te voeren.
 
-* **de meta-gegevensgebieden van de Douane:** pas uw meta-gegevensgebieden aan om extra informatie over activa te vangen. Voeg bijvoorbeeld specifieke velden toe voor projectdetails, copyrightinformatie of andere relevante gegevens die de zoekmogelijkheden verbeteren. Leer [ om douanemetagegevens ](meta-edit.md) in Experience Manager Assets uit te geven of toe te voegen.
+* **de meta-gegevensgebieden van de Douane:** pas uw meta-gegevensgebieden aan om extra informatie over activa te vangen. Voeg bijvoorbeeld specifieke velden toe voor projectdetails, copyrightinformatie of andere relevante gegevens die de zoekmogelijkheden verbeteren. Leer [&#x200B; om douanemetagegevens &#x200B;](meta-edit.md) in Experience Manager Assets uit te geven of toe te voegen.
 
 
 * **de bevestiging van Meta-gegevens:** voer bevestigingscontroles voor meta-gegevensingangen uit om consistentie en nauwkeurigheid te verzekeren. Het gebruik van gecontroleerde woordenboeken maakt het validatieproces vloeiender en vermindert de kans op onduidelijke of inconsistente items. Dit kan het instellen van richtlijnen voor bepaalde eigenschappen van metagegevens vereisen om dubbelzinnige of inconsistente informatie te voorkomen.
@@ -166,4 +166,4 @@ Onderzoek de leveringsketen van de inhoud om meta-gegevensbronnen te vinden en a
 
 Geef vroegtijdig informatie over doelstellingen, vooruitgang, mijlpalen en uitdagingen, zodat alle belanghebbenden er hun bijdrage aan kunnen leveren en kunnen samenwerken. Stimuleer samenwerking in de hele organisatie om efficiënte processen en waardevolle metagegevens te maken.
 
-Leer meer over [ meta-gegevens en zijn verwante concepten ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=nl-NL) om uw meta-gegevens van Experience Manager effectief te beheren.
+Leer meer over [&#x200B; meta-gegevens en zijn verwante concepten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=nl-NL) om uw meta-gegevens van Experience Manager effectief te beheren.

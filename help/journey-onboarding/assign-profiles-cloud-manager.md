@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Teamleden toewijzen aan Cloud Manager-productprofielen {#assign-team-members}
 
-In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om teamleden aan de productprofielen van Cloud Manager toe te wijzen.
+In dit deel van de [&#x200B; onboarding reis &#x200B;](overview.md), leert u hoe te om teamleden aan de productprofielen van Cloud Manager toe te wijzen.
 
 ## Doelstelling {#objective}
 
-In de vorige stap in deze reis, [ die tot de Admin Console ](admin-console.md) toegang heeft, leerde u nu login aan de Admin Console en verifieert uw voorrechten als systeembeheerder. U kunt uw teamleden nu toegang geven tot Cloud Manager. U doet dit door productprofielen toe te wijzen.
+In de vorige stap in deze reis, [&#x200B; die tot de Admin Console &#x200B;](admin-console.md) toegang heeft, leerde u nu login aan de Admin Console en verifieert uw voorrechten als systeembeheerder. U kunt uw teamleden nu toegang geven tot Cloud Manager. U doet dit door productprofielen toe te wijzen.
 
 Wanneer het verlenen van toegang tot een oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersrechten. U gebruikt de Admin Console om productprofielen toe te wijzen.
 
@@ -65,9 +65,9 @@ Voordat uw team iets anders kan doen, moeten ze in Cloud Manager worden binnenge
 
 Met de Admin Console kunt u de lijst met Cloud Manager-profielen weergeven.
 
-1. Login aan Adobe Admin Console bij [ adminconsole.adobe.com ](https://adminconsole.adobe.com/) en van de **pagina van het Overzicht**, uitgezochte **Adobe Experience Manager as a Cloud Service** van de **Producten en de diensten** kaart.
+1. Login aan Adobe Admin Console bij [&#x200B; adminconsole.adobe.com &#x200B;](https://adminconsole.adobe.com/) en van de **pagina van het Overzicht**, uitgezochte **Adobe Experience Manager as a Cloud Service** van de **Producten en de diensten** kaart.
 
-   ![ AEM als product ](/help/journey-onboarding/assets/assign-team1.png)
+   ![&#x200B; AEM als product &#x200B;](/help/journey-onboarding/assets/assign-team1.png)
 
 1. Navigeer aan de **instantie van Cloud Manager** van de lijst van alle instanties.
 
@@ -75,7 +75,7 @@ Met de Admin Console kunt u de lijst met Cloud Manager-profielen weergeven.
 
 1. U kunt de lijst met vooraf geconfigureerde Cloud Manager-productprofielen bekijken.
 
-   ![ Profielen van het Product ](/help/journey-onboarding/assets/assign-team3.png)
+   ![&#x200B; Profielen van het Product &#x200B;](/help/journey-onboarding/assets/assign-team3.png)
 
 De belangrijkste profielen die in het kader van het eerste instapproces moeten worden toegewezen, zijn:
 
@@ -93,24 +93,24 @@ U bent nu bereid om gebruikers toe te voegen en hen toe te wijzen aan het **Bedr
 
 1. Logon aan de Admin Console bij `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **2&rbrace; pagina van het Overzicht &lbrace;, uitgezocht** Adobe Experience Manager as a Cloud Service **product van** Producten en de diensten **kaart.**
 
-   ![ Producten en de diensten ](/help/journey-onboarding/assets/assign-team1.png)
+   ![&#x200B; Producten en de diensten &#x200B;](/help/journey-onboarding/assets/assign-team1.png)
 
 1. Selecteer het **lusje van Gebruikers** van de hoogste navigatie, dan uitgezocht **voeg Gebruiker** toe.
 
-   ![ voeg gebruiker ](/help/journey-onboarding/assets/assign-team4.png) toe
+   ![&#x200B; voeg gebruiker &#x200B;](/help/journey-onboarding/assets/assign-team4.png) toe
 
 1. In **voeg gebruikers aan uw team** dialoog toe, ga e-mailidentiteitskaart van de gebruiker in u wilt toevoegen.
 
    * Als federated identiteitskaart voor uw teamleden nog niet opstelling is, uitgezochte **Adobe ID** voor het **Type van identiteitskaart**.
 
-   ![ voeg gebruikersdetail ](/help/journey-onboarding/assets/assign-team5.png) toe
+   ![&#x200B; voeg gebruikersdetail &#x200B;](/help/journey-onboarding/assets/assign-team5.png) toe
 
 1. Klik plus knoop onder **Uitgezochte producten of gebruikersgroepen** rubriek om met productselectie te beginnen en **Adobe Experience Manager as a Cloud Service** te selecteren en **BedrijfsEigenaar** productprofiel aan de gebruiker toe te wijzen.
 
    * Wijs elke gebruiker aan minstens één productprofiel toe zodat de gebruiker tot Cloud Manager kan toegang hebben.
    * Herinner me om zich als systeembeheerder aan de **rol van BedrijfsEigenaar** toe te wijzen.
 
-   ![ Toewijzend gebruikers ](/help/journey-onboarding/assets/assign-team6.png)
+   ![&#x200B; Toewijzend gebruikers &#x200B;](/help/journey-onboarding/assets/assign-team6.png)
 
 1. Klik **sparen** en een welkome e-mail wordt verzonden naar de gebruiker u toevoegde. De uitgenodigde gebruiker kan tot Cloud Manager toegang hebben door de verbinding in welkome e-mail te klikken en het ondertekenen binnen gebruikend hun Adobe ID.
 
@@ -124,21 +124,21 @@ Uw **BedrijfsEigenaar** is toegewezen en kan tot Cloud Manager nu toegang hebben
 
 1. Login aan de Admin Console bij `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **2&rbrace; pagina van het Overzicht {uitgezocht 3} Adobe Experience Manager as a Cloud Service** product van de **Producten en de diensten** kaart.**&#x200B;**
 
-   ![ Producten en de diensten ](/help/journey-onboarding/assets/assign-team1.png)
+   ![&#x200B; Producten en de diensten &#x200B;](/help/journey-onboarding/assets/assign-team1.png)
 
 1. Selecteer het **lusje van Gebruikers** van de hoogste navigatie en selecteer dan **Gebruiker** toevoegen.
 
-   ![ voeg gebruiker ](/help/journey-onboarding/assets/assign-team4.png) toe
+   ![&#x200B; voeg gebruiker &#x200B;](/help/journey-onboarding/assets/assign-team4.png) toe
 
 1. In **voeg gebruikers aan uw team** dialoog toe, ga e-mailidentiteitskaart van de gebruiker in u wilt toevoegen.
 
    * Als federated identiteitskaart voor uw teamleden nog niet opstelling is, uitgezochte **Adobe ID** voor het **Type van identiteitskaart**.
 
-   ![ ga identiteitskaart ](/help/journey-onboarding/assets/assign-team5.png) binnen
+   ![&#x200B; ga identiteitskaart &#x200B;](/help/journey-onboarding/assets/assign-team5.png) binnen
 
 1. Klik de plus knoop onder **Uitgezochte producten of gebruikersgroepen** rubriek om met productselectie te beginnen en **Adobe Experience Manager as a Cloud Service** te selecteren en **het productprofiel van de Manager van de Plaatsing** aan de gebruiker toe te wijzen.
 
-   ![ wijs profiel ](/help/journey-onboarding/assets/assign-team6.png) toe
+   ![&#x200B; wijs profiel &#x200B;](/help/journey-onboarding/assets/assign-team6.png) toe
 
 Uw **Manager van de Plaatsing** is toegewezen en kan tot Cloud Manager nu toegang hebben. Afhankelijk van uw toekomstige verantwoordelijkheden, kunt u of kan niet nodig ook om zich als systeembeheerder aan het **profiel van de Manager van de Plaatsing toe te wijzen 0&rbrace;.**
 
@@ -148,21 +148,21 @@ Uw **Manager van de Plaatsing** is toegewezen en kan tot Cloud Manager nu toegan
 
 1. Login aan de Admin Console bij `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **2&rbrace; pagina van het Overzicht {uitgezocht 3} Adobe Experience Manager as a Cloud Service** product van de **Producten en de diensten** kaart.**&#x200B;**
 
-   ![ Producten en de diensten ](/help/journey-onboarding/assets/assign-team1.png)
+   ![&#x200B; Producten en de diensten &#x200B;](/help/journey-onboarding/assets/assign-team1.png)
 
 1. Selecteer het **lusje van Gebruikers** van de hoogste navigatie en selecteer dan **Gebruiker** toevoegen.
 
-   ![ voeg gebruiker ](/help/journey-onboarding/assets/assign-team4.png) toe
+   ![&#x200B; voeg gebruiker &#x200B;](/help/journey-onboarding/assets/assign-team4.png) toe
 
 1. In **voeg gebruikers aan uw team** dialoog toe, ga e-mailidentiteitskaart van de gebruiker in u wilt toevoegen.
 
    * Als federated identiteitskaart voor uw teamleden nog niet opstelling is, uitgezochte **Adobe ID** voor het **Type van identiteitskaart**.
 
-   ![ toevoegen gebruiker - identiteitskaart ](/help/journey-onboarding/assets/assign-team5.png)
+   ![&#x200B; toevoegen gebruiker - identiteitskaart &#x200B;](/help/journey-onboarding/assets/assign-team5.png)
 
 1. Klik de plus knoop onder **Uitgezochte producten of gebruikersgroepen** rubriek om met productselectie te beginnen en **Adobe Experience Manager as a Cloud Service** te selecteren en **het productprofiel van de Ontwikkelaar** aan de gebruiker toe te wijzen.
 
-   ![ wijs profiel ](/help/journey-onboarding/assets/assign-team6.png) toe.
+   ![&#x200B; wijs profiel &#x200B;](/help/journey-onboarding/assets/assign-team6.png) toe.
 
 Uw **Ontwikkelaar** is toegewezen en kan tot Cloud Manager nu toegang hebben. Afhankelijk van uw toekomstige verantwoordelijkheden, kunt u of niet nodig ook om zich als systeembeheerder aan het **profiel van de Ontwikkelaar** toe te wijzen.
 
@@ -177,13 +177,13 @@ In dit gedeelte van de instapreis leerde u over het toewijzen van uw teamleden a
 * Ken de drie belangrijke het productprofielen van Cloud Manager: **BedrijfsEigenaar**, **Manager van de Plaatsing**, en **Ontwikkelaar**.
 * Teamleden kunnen toewijzen aan Cloud Manager-productprofielen.
 
-U bent nu bereid om uw aan boord gaan reis door het document [ te herzien Cloud Manager van de Toegang ](cloud-manager.md), waar u leert om tot Cloud Manager toegang te hebben en uw projectmiddelen tot stand te brengen.
+U bent nu bereid om uw aan boord gaan reis door het document [&#x200B; te herzien Cloud Manager van de Toegang &#x200B;](cloud-manager.md), waar u leert om tot Cloud Manager toegang te hebben en uw projectmiddelen tot stand te brengen.
 
 ## Aanvullende bronnen {#additional-resources}
 
 U wordt aangeraden de instapreis voort te zetten zoals eerder beschreven. Dit zijn enkele extra bronnen als je een diep duik wilt maken over een bepaald onderwerp van deze reis.
 
-* [ Inleiding van Cloud Manager ](/help/onboarding/cloud-manager-introduction.md) - Leer over Cloud Manager, de programma&#39;s van Cloud Manager, en milieu&#39;s.
-* [ de Profielen van het Product van Cloud Manager ](/help/onboarding/aem-cs-team-product-profiles.md) - Leer over het team van AEM as a Cloud Service en productprofielen.
-* [ de types van Identiteit op Adobe Admin Console ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - de hulp van het het identiteitsbeheersysteem van de Adobe leidt tot en beheert gebruikerstoegang tot toepassingen en de diensten. Met Adobe kunt u deze typen identiteiten of accounts verifiëren en autoriseren.
+* [&#x200B; Inleiding van Cloud Manager &#x200B;](/help/onboarding/cloud-manager-introduction.md) - Leer over Cloud Manager, de programma&#39;s van Cloud Manager, en milieu&#39;s.
+* [&#x200B; de Profielen van het Product van Cloud Manager &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md) - Leer over het team van AEM as a Cloud Service en productprofielen.
+* [&#x200B; de types van Identiteit op Adobe Admin Console &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - de hulp van het het identiteitsbeheersysteem van de Adobe leidt tot en beheert gebruikerstoegang tot toepassingen en de diensten. Met Adobe kunt u deze typen identiteiten of accounts verifiëren en autoriseren.
 

@@ -29,7 +29,7 @@ De volgende bewerkingen worden in de activiteitsstroom aangemeld:
 * Afwijzen
 * Verplaatsen
 
-De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald vanaf de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar logboekbestanden worden opgeslagen. Bovendien wordt de chronologieactiviteit geregistreerd wanneer de nieuwe activa worden geupload of de bestaande activa worden gewijzigd en in [!DNL Experience Manager] gecontroleerd via [ de Verbinding van Activa van Adobe ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) of [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=nl-NL).
+De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald vanaf de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar logboekbestanden worden opgeslagen. Bovendien wordt de chronologieactiviteit geregistreerd wanneer de nieuwe activa worden geupload of de bestaande activa worden gewijzigd en in [!DNL Experience Manager] gecontroleerd via [&#x200B; de Verbinding van Activa van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) of [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=nl-NL).
 
 >[!NOTE]
 >

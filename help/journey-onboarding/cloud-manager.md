@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Toegang tot Cloud Manager {#cloud-resources}
 
-In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om tot Cloud Manager toegang te hebben zodat u opstelling uw projectmiddelen kunt.
+In dit deel van de [&#x200B; onboarding reis &#x200B;](overview.md), leert u hoe te om tot Cloud Manager toegang te hebben zodat u opstelling uw projectmiddelen kunt.
 
 ## Doelstelling {#objective}
 
-In het vorige artikel in dit onboarding reis, [ toewijzend de Leden van het Team aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md), verleende u uw team AEMaaCS de juiste rollen. Nu, leer hoe te om tot Cloud Manager toegang te hebben zodat u uw projectmiddelen kunt opstelling die uw team van plan is te gebruiken.
+In het vorige artikel in dit onboarding reis, [&#x200B; toewijzend de Leden van het Team aan de Profielen van het Product van Cloud Manager &#x200B;](assign-profiles-cloud-manager.md), verleende u uw team AEMaaCS de juiste rollen. Nu, leer hoe te om tot Cloud Manager toegang te hebben zodat u uw projectmiddelen kunt opstelling die uw team van plan is te gebruiken.
 
 Aangezien u de vorige stap hebt uitgevoerd, heeft uw team toegang tot Cloud Manager. Cloud Manager wordt gebruikt om uw projectmiddelen, zoals programma&#39;s en milieu&#39;s tot stand te brengen en te beheren.
 
@@ -40,13 +40,13 @@ Vóór de teamleden die u aan de **rol van de Bedrijfs eigenaar** toewees kunnen
 
 1. Zorg ervoor dat u, als systeembeheerder, de **toegewezen rol van de BedrijfsEigenaar** hebt.
 
-   Terugkeer aan de vorige stap, [ wijs de Leden van het Team aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md) toe, voor details bij het toewijzen van de **BedrijfsEigenaar** rol aan de systeembeheerder.
+   Terugkeer aan de vorige stap, [&#x200B; wijs de Leden van het Team aan de Profielen van het Product van Cloud Manager &#x200B;](assign-profiles-cloud-manager.md) toe, voor details bij het toewijzen van de **BedrijfsEigenaar** rol aan de systeembeheerder.
 
-1. Teken in Cloud Manager bij [ experience.adobe.com ](https://experience.adobe.com).
+1. Teken in Cloud Manager bij [&#x200B; experience.adobe.com &#x200B;](https://experience.adobe.com).
 1. In de Snelle groepering van de Toegang, klik **Experience Manager**.
 1. In het linkerzijpaneel, klik **Cloud Manager**.
 
-   ![ Cloud Manager op console ](/help/journey-onboarding/assets/consol-cloud-manager.png)
+   ![&#x200B; Cloud Manager op console &#x200B;](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
 Door met succes binnen als systeembeheerder met de **rol van de BedrijfsEigenaar te ondertekenen**, gebruikt u Cloud Manager voor gebruik door de andere gebruikers met de **BedrijfsEigenaar** rol. Je ontvangt geen bevestiging of bericht. Eenvoudig aanmelden is voldoende.
 
@@ -57,7 +57,7 @@ Totdat u binnen aan Cloud Manager als systeembeheerder met de **rol van Bedrijfs
 De gebruikers met de **rol van de BedrijfsEigenaar** ontvangen een welkome e-mail met een verbinding om te beginnen. Volg de onderstaande stappen om naar Cloud Manager te navigeren met deze welkomstmail.
 
 1. Van uw welkome e-mail, klik **begonnen worden**, zoals aangetoond in het hieronder cijfer.
-   ![ E-mailvoorbeeld ](/help/journey-onboarding/assets/get-started-email.png)
+   ![&#x200B; E-mailvoorbeeld &#x200B;](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Navigeer aan Cloud Manager **Programma&#39;s &amp; de pagina van Producten**.
 
@@ -96,19 +96,19 @@ Nadat u Cloud Manager hebt geopend, is wat u ziet afhankelijk van de status van 
 
 Als er geen programma&#39;s in uw organisatie aanwezig zijn, wordt u op de bestemmingspagina opgedragen het eerste programma te maken.
 
-![ Geen programma&#39;s ](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
+![&#x200B; Geen programma&#39;s &#x200B;](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
 ### Wanneer programma&#39;s al bestaan {#programs-exist}
 
 Als er programma&#39;s in uw organisatie aanwezig zijn, wordt op de landingspagina uw bestaande programma&#39;s weergegeven en wordt ook een knop weergegeven waarmee u aanvullende programma&#39;s kunt toevoegen.
 
-![ de Programma&#39;s bestaan ](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
+![&#x200B; de Programma&#39;s bestaan &#x200B;](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
 ### Wanneer een programma bestaat en u een Beheerder van het Systeem bent {#programs-exist-sysadmin}
 
 Als de programma&#39;s in uw organisatie bestaan en u een systeembeheerder bent, dan toont uw landende pagina **de Manage knoop van de Toegang** samen met **voegt de optie van het Programma** toe.
 
-![ de beheerdermening van het Systeem ](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
+![&#x200B; de beheerdermening van het Systeem &#x200B;](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
 ## Verifieer uw gebruikersrollen {#verify-user-roles}
 
@@ -118,11 +118,11 @@ Zodra u met succes in Cloud Manager hebt het programma geopend, kunt u verifiër
 
 1. Klik **Rollen van de Gebruiker**.
 
-   ![ de rollen van de Gebruiker ](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
+   ![&#x200B; de rollen van de Gebruiker &#x200B;](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
 1. In het **de dialoogvakje van de Rollen van de Gebruiker**, bevestig dat uw gebruiker de **BedrijfsEigenaar** rol heeft.
 
-   ![ Lijst van gebruikersrollen ](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
+   ![&#x200B; Lijst van gebruikersrollen &#x200B;](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
 U hebt zich met succes bij Cloud Manager als Bedrijfseigenaar aangemeld. Als u niet de **rol van de BedrijfsEigenaar** wordt toegewezen, contacteer uw systeembeheerder.
 
@@ -130,13 +130,13 @@ U hebt zich met succes bij Cloud Manager als Bedrijfseigenaar aangemeld. Als u n
 
 Nu u als systeembeheerder tot Cloud Manager kunt toegang hebben, bent u bereid om uw eerste programma tot stand te brengen.
 
-Ga uw aan boord komende reis door het document te herzien [ voort creeer een Programma ](create-program.md) waar u leert dit te doen.
+Ga uw aan boord komende reis door het document te herzien [&#x200B; voort creeer een Programma &#x200B;](create-program.md) waar u leert dit te doen.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-* [ Inleiding aan Cloud Manager ](/help/onboarding/cloud-manager-introduction.md) -
+* [&#x200B; Inleiding aan Cloud Manager &#x200B;](/help/onboarding/cloud-manager-introduction.md) -
 Meer informatie over Cloud Manager, Cloud Manager-programma&#39;s en omgevingen.
-* [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) - leer hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van Adobe kunnen verlenen en beperken.
+* [&#x200B; het Team van AEM as a Cloud Service en de Profielen van het Product &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md) - leer hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van Adobe kunnen verlenen en beperken.
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - Watch this video for an overview of Cloud Manager's UI from an AEM champion. -->

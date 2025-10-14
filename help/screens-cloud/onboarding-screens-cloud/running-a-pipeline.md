@@ -16,7 +16,7 @@ ht-degree: 2%
 Deze sectie beschrijft hoe te om de pijpleiding in werking te stellen en uw code voor uw programma in Cloud Manager op te stellen.
 
 >[!NOTE]
->Zie [ Vormend uw CI-CD Pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=nl-NL) en [ uw Code ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) opstellen om te leren hoe u de pijpleiding voor uw programma in Cloud Manager kunt in werking stellen.
+>Zie [&#x200B; Vormend uw CI-CD Pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=nl-NL) en [&#x200B; uw Code &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) opstellen om te leren hoe u de pijpleiding voor uw programma in Cloud Manager kunt in werking stellen.
 
 ## Doelstelling {#objective}
 
@@ -37,14 +37,14 @@ De volgende sectie beschrijft hoe te om de pijpleiding te vormen CI/CD en uw cod
 1. Selecteer uw opties van de **tovenaar van de Pijl van de Opstelling**. Klik **sparen**.
 
    >[!NOTE]
-   >Om over de opties in de tovenaar van de Pijl van de Opstelling te leren, zie [ Vormend de Montages van de Pijpleiding van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=nl-NL) voor meer details.
+   >Om over de opties in de tovenaar van de Pijl van de Opstelling te leren, zie [&#x200B; Vormend de Montages van de Pijpleiding van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=nl-NL) voor meer details.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Nadat de opstellingspijpleiding volledig is, wordt de vraag-aan-actie kaart bijgewerkt.
 
    >[!NOTE]
-   >Om over de stadia in plaatsing in Cloud Manager te leren, zie [ het Opstellen van uw Code ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) voor meer details.
+   >Om over de stadia in plaatsing in Cloud Manager te leren, zie [&#x200B; het Opstellen van uw Code &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) voor meer details.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 
@@ -60,4 +60,4 @@ De volgende sectie beschrijft hoe te om de pijpleiding te vormen CI/CD en uw cod
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe te opstelling een milieu voor uw programma in Cloud Manager, bent u bereid om zich op de volgende stap in het Aan boord gaan proces te bewegen: [ navigerend aan de Dienstverlener van Screens ](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
+Nadat u hebt geleerd hoe te opstelling een milieu voor uw programma in Cloud Manager, bent u bereid om zich op de volgende stap in het Aan boord gaan proces te bewegen: [&#x200B; navigerend aan de Dienstverlener van Screens &#x200B;](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).

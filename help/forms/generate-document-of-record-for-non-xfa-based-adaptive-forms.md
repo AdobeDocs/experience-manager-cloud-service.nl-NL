@@ -15,19 +15,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
 
 Wanneer een formulier wordt ingevuld of verzonden, kunt u het formulier afdrukken of in documentindeling registreren. Deze record wordt een Document of Record (DoR) genoemd. Het is een afdrukvriendelijke kopie van het ingediende formulier. U kunt ook het document met records raadplegen voor de gegevens die klanten op een latere datum hebben ingevuld of het document met records gebruiken om formulieren en inhoud samen te archiveren in PDF-indeling.
 
-![ Document van Verslag ](assets/document-of-record.png)
+![&#x200B; Document van Verslag &#x200B;](assets/document-of-record.png)
 
 Als u een document met records wilt maken, wordt een op XFA of Acroform gebaseerde sjabloon samengevoegd met gegevens die via een adaptief formulier zijn verzameld. U kunt een Document van Verslag automatisch of op bestelling produceren.
 Met de optie Op aanvraag kunt u een aangepaste op XFA of Acroform gebaseerde sjabloon opgeven voor een aangepaste weergave van uw Document of Record.
@@ -42,7 +42,7 @@ U kunt:
 
 Voordat u leert welke elementen nodig zijn voor een Document of Record:
 
-**malplaatje van de Basis:** Een malplaatje XFA (XDP dossier) dat in Forms Designer of een Vorm van Acrobat (AcroForm) wordt gecreeerd. [ het malplaatje van de Basis ](#base-template-of-a-document-of-record) wordt gebruikt om het stileren en het brandmerken informatie voor een Document van Verslag te specificeren. Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie voordat
+**malplaatje van de Basis:** Een malplaatje XFA (XDP dossier) dat in Forms Designer of een Vorm van Acrobat (AcroForm) wordt gecreeerd. [&#x200B; het malplaatje van de Basis &#x200B;](#base-template-of-a-document-of-record) wordt gebruikt om het stileren en het brandmerken informatie voor een Document van Verslag te specificeren. Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie voordat
 
 **Aangepaste Vorm:** Een AanpassingsVorm waarvoor het Document van Verslag moet worden geproduceerd.
 
@@ -57,7 +57,7 @@ Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie. Voer de volgen
 1. In het Document van de sectie van de Configuratie van het Malplaatje van het Verslag van het Model van de Vorm, uitgezochte **Vennoot het Malplaatje van de Vorm als Document van het Malplaatje van het Verslag**. Als u deze optie selecteert, worden alle XFA-sjablonen (XDP-bestanden) die op uw computer beschikbaar zijn, weergegeven. Selecteer het juiste bestand. Zorg er ook voor dat hetzelfde schema (gegevensschema) wordt gebruikt voor Adaptief formulier en geselecteerde XFA-sjabloon (XDP-bestand).
 1. Klikken **[!UICONTROL Done]**
 
-Het adaptieve formulier is nu geconfigureerd voor het gebruik van een XDP-bestand als sjabloon voor het document of record. De volgende stap moet [ de Aangepaste componenten van de Vorm met overeenkomstige malplaatjegebieden ](#bind-adaptive-form-components-with-template-fields) binden.
+Het adaptieve formulier is nu geconfigureerd voor het gebruik van een XDP-bestand als sjabloon voor het document of record. De volgende stap moet [&#x200B; de Aangepaste componenten van de Vorm met overeenkomstige malplaatjegebieden &#x200B;](#bind-adaptive-form-components-with-template-fields) binden.
 
 ## Een op acroform gebaseerd document met records genereren {#generate-an-Acroform-based-document-of-record}
 
@@ -70,7 +70,7 @@ Upload uw Adobe Acrobat PDF (Acrobat) naar uw AEM Forms-exemplaar. Voer de volge
 1. In het Document van de sectie van de Configuratie van het Malplaatje van het Verslag van het Model van de Vorm, uitgezochte **Vennoot het Malplaatje van de Vorm als Document van het Malplaatje van het Verslag**. Als u deze optie selecteert, worden alle Acrobat PDF (Acrobat) die op uw computer beschikbaar zijn, weergegeven. Selecteer het juiste bestand.
 1. Klikken **[!UICONTROL Done]**
 
-Het adaptieve formulier is nu geconfigureerd voor het gebruik van een Acrobat-formulier als sjabloon voor het document met records. De volgende stap moet [ de Aangepaste componenten van de Vorm met overeenkomstige malplaatjegebieden ](#bind-adaptive-form-components-with-template-fields) binden.
+Het adaptieve formulier is nu geconfigureerd voor het gebruik van een Acrobat-formulier als sjabloon voor het document met records. De volgende stap moet [&#x200B; de Aangepaste componenten van de Vorm met overeenkomstige malplaatjegebieden &#x200B;](#bind-adaptive-form-components-with-template-fields) binden.
 
 ## Automatisch een document met records genereren {#auto-generate-a-document-of-record}
 
@@ -97,7 +97,7 @@ Adaptief-formuliervelden binden met sjabloonvelden om vastgelegde formuliergegev
 
 1. Open het adaptieve formulier, geconfigureerd om een aangepaste formuliersjabloon te gebruiken voor bewerken.
 
-1. Selecteer een Adaptieve component van de Vorm en klik open vormen ![ ](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend.
+1. Selecteer een Adaptieve component van de Vorm en klik open vormen ![&#x200B; &#x200B;](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend.
 
 1. Blader in de eigenschappenbrowser naar een veld en selecteer dit.
 
@@ -110,7 +110,7 @@ Adaptief-formuliervelden binden met sjabloonvelden om vastgelegde formuliergegev
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-U kunt Send E-mail, het Werkschema van Experience Manager gebruiken verzendt actie samen met [ Document van de stap van het Verslag, en andere voorlegt acties ](configuring-submit-actions.md) om een Document van Verslag te ontvangen.
+U kunt Send E-mail, het Werkschema van Experience Manager gebruiken verzendt actie samen met [&#x200B; Document van de stap van het Verslag, en andere voorlegt acties &#x200B;](configuring-submit-actions.md) om een Document van Verslag te ontvangen.
 
 ## Incrementele updates van de sjabloon Document of Record {#document-of-record-template-incremental-updates}
 
@@ -120,15 +120,15 @@ Wanneer u een Document of Record-sjabloon wijzigt en het gewijzigde Document of 
 
 Bijvoorbeeld, heeft een Organisatie, *We.Retail*, een AcroForm-Gebaseerd Document van het malplaatje van het Verslag, *wij-retail-factuur.pdf*. De sjabloon ziet er als volgt uit:
 
-![ Origineel Malplaatje ](assets/we-retail-invoice.png)
+![&#x200B; Origineel Malplaatje &#x200B;](assets/we-retail-invoice.png)
 
 Nadat de sjabloon enige tijd is gebruikt, besluit de organisatie het veld `invoice-number` te hernoemen naar het veld `bill-number` en het e-mailadres van kopers vast te leggen. Een ontwikkelaar werkt de naam van het veld `invoice-number` bij en voegt een e-mailveld aan de sjabloon toe. Hij leidt ook tot een nieuwe versie van malplaatje genoemd *wij-retail-factuur-v2.pdf*.
 
-![ Bijgewerkt Malplaatje ](assets/we-retail-new-invoice.png)
+![&#x200B; Bijgewerkt Malplaatje &#x200B;](assets/we-retail-new-invoice.png)
 
 De ontwikkelaar uploadt en past de bijgewerkte sjabloon toe op het adaptieve formulier. Het adaptieve formulier detecteert automatisch velden waarvan de binding is gewijzigd en geeft een lijst weer.
 
-![ Bindende Fout ](assets/we-retail-binding-error.png)
+![&#x200B; Bindende Fout &#x200B;](assets/we-retail-binding-error.png)
 
 De formulierontwikkelaar bindt adaptieve Forms-velden aan het overeenkomstige Document of Record-sjabloon.
 
@@ -136,13 +136,13 @@ De formulierontwikkelaar bindt adaptieve Forms-velden aan het overeenkomstige Do
 
 Wanneer het adaptieve formulier wordt verzonden, wordt nu een bijgewerkt document met recordgegevens gemaakt.
 
-![ Bijgewerkt - ](assets/we-retail-new-invoice-sent-to-customer.png)
+![&#x200B; Bijgewerkt - &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Belangrijkste overwegingen bij het werken met het document Record {#key-considerations-when-working-with-document-of-record}
 
 Houd rekening met de volgende overwegingen en beperkingen wanneer u werkt aan Document of Record voor Adaptive Forms.
 
-* **Verrijkte tekststeun**: Het document van het Verslag steunt de prijsverhogingstags van HTML in rijke tekstgebieden. Voor volledige details op gesteunde markeringen en toegankelijkheidsoverwegingen, zie [ Ondersteunde de prijsverhogingstags van HTML in Document van Verslag ](html-markup-tags-support-in-document-of-record.md).
+* **Verrijkte tekststeun**: Het document van het Verslag steunt de prijsverhogingstags van HTML in rijke tekstgebieden. Voor volledige details op gesteunde markeringen en toegankelijkheidsoverwegingen, zie [&#x200B; Ondersteunde de prijsverhogingstags van HTML in Document van Verslag &#x200B;](html-markup-tags-support-in-document-of-record.md).
 * Documentfragmenten in een adaptief formulier worden niet weergegeven in het Document of Record. Adaptieve formulierfragmenten worden echter wel ondersteund.
 * Inhoudbinding in Document of Record gegenereerd voor adaptief formulier op basis van een XML-schema wordt niet ondersteund.
 * De gelokaliseerde versie van Document van Verslag wordt gecreeerd op bestelling voor een scène wanneer de gebruiker om de teruggave van het Document van Verslag verzoekt. De lokalisatie van Document of Record vindt plaats samen met de lokalisatie van het adaptieve formulier. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -292,7 +292,7 @@ Basissjabloon biedt opmaak- en weergavegegevens voor het document van record. Hi
 
 De basispagina van het basissjabloon wordt gebruikt als een basispagina voor de sjabloon Document of Record. De stramienpagina kan informatie bevatten zoals paginakoptekst, voettekst en paginanummer die u kunt toepassen op het document of record. U kunt dergelijke informatie op Document van Verslag toepassen gebruikend basissjabloon voor auto het produceren van Document van Verslag. Met een basissjabloon kunt u de standaardeigenschappen van velden wijzigen.
 
-Volg altijd [ de overeenkomsten van het malplaatje van de Basis ](#base-template-conventions) wanneer u basissjabloon ontwerpt.
+Volg altijd [&#x200B; de overeenkomsten van het malplaatje van de Basis &#x200B;](#base-template-conventions) wanneer u basissjabloon ontwerpt.
 
 ## Basissjabloonconventies {#base-template-conventions}
 
@@ -339,8 +339,8 @@ Tijdens het genereren van een Document of Record kunt u de brandinggegevens voor
 
 Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt lokaliseren, moet u controleren of de landinstelling van de browser correct is ingesteld. Voer de volgende stappen uit om de brandinggegevens van Document of Record aan te passen:
 
-1. Selecteer een paneel (wortelpaneel) in het Document van Verslag en selecteer dan ![ vormen ](assets/configure.png).
-1. Selecteer ![ dortab ](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
+1. Selecteer een paneel (wortelpaneel) in het Document van Verslag en selecteer dan ![&#x200B; vormen &#x200B;](assets/configure.png).
+1. Selecteer ![&#x200B; dortab &#x200B;](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
 1. Selecteer de standaardsjabloon of een aangepaste sjabloon voor het weergeven van het Document of Record. Als u de standaardsjabloon selecteert, wordt een miniatuurvoorvertoning van het Document of Record weergegeven onder de vervolgkeuzelijst Sjabloon.
 1. Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon selecteert, worden enkele van de volgende eigenschappen of alle eigenschappen weergegeven op het tabblad Document of Record. Geef de onderstaande eigenschappen op om de weergave van het Document of Record te definiëren:
 
@@ -351,13 +351,13 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 
         >[!NOTE]
         >
-        > AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. Om de lijst van gesteunde doopvonten te zien, [ klik hier ](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. Om de lijst van gesteunde doopvonten te zien, [&#x200B; klik hier &#x200B;](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **omvat vormvoorwerpen die niet aan gegevensmodel** verbindend zijn: Het plaatsen van het bezit omvat ongebonden gebieden van Schema gebaseerde AanpassingsVorm in Document van Verslag.
       * **sluit verborgen gebieden van het Document van Verslag** uit: Het plaatsen van het bezit identificeert de verborgen gebieden voor uitsluiting van Document van Verslag.
       * **Verberg beschrijving van panelen**: Het plaatsen van het bezit sluit beschrijving van het paneel/de lijst van Document van Verslag uit. Van toepassing op paneel en lijst.
 
-      ![ Basiseigenschappen ](/help/forms/assets/basicpropertiesdor.png)
+      ![&#x200B; Basiseigenschappen &#x200B;](/help/forms/assets/basicpropertiesdor.png)
 
    2. **Eigenschappen van het Gebied van de Vorm**:
       * **voor de componenten van de Doos van de Controle en van de Keuzerondje, toon slechts de geselecteerde waarden**: Het plaatsen van het bezit toont slechts geselecteerde waarden van controledoos en radioknoop in [!UICONTROL Document of Record].
@@ -365,7 +365,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
       * **Uitlijning van Opties**: U kunt de gewenste uitlijning (Horizontaal, Verticaal, Zelfde als Aangepast Vorm) selecteren om de groepering voor de gebieden zoals controledoos of radioknoop te plaatsen om op [!UICONTROL Document of Record] worden getoond. Standaard wordt de verticale uitlijning ingesteld voor de velden in [!UICONTROL Document of Record] . Als u de eigenschappen van de [!UICONTROL Form Field Properties] van DoR instelt, worden de eigenschappen overschreven die zijn ingesteld in [!UICONTROL Item Alignment] voor de velden op een adaptief formulier. Als u de optie [!UICONTROL Same as Aaptive form] selecteert, wordt de uitlijning zoals geconfigureerd in een instantie van de auteur van een adaptief formulier gebruikt voor [!UICONTROL Document of Record] -velden.
       * **Aantal opties voor horizontale groepering**:You kan het aantal opties plaatsen dat op het Document van Verslag voor de horizontale groepering moet worden getoond.
 
-      ![ Eigenschappen van het Gebied van de Vorm ](/help/forms/assets/formfieldpropertiesdor.png)
+      ![&#x200B; Eigenschappen van het Gebied van de Vorm &#x200B;](/help/forms/assets/formfieldpropertiesdor.png)
 
    3. **Hoofdpagina Eigenschappen**:
       * **Beeld van het Logo**: U kunt of verkiezen om het logobeeld van de Aangepaste Vorm te gebruiken, één van DAM te kiezen, of één van uw computer te uploaden.
@@ -375,7 +375,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
       * **Disclaimer**: Tekst die het werkingsgebied van rechten en verplichtingen op het Document van Verslag specificeert.
       * **Tekst van de Disclaimer**: Tekst van ontkenning.
 
-      ![ Hoofdpagina Eigenschappen ](/help/forms/assets/masterpagepropertiesdor.png)
+      ![&#x200B; Hoofdpagina Eigenschappen &#x200B;](/help/forms/assets/masterpagepropertiesdor.png)
 
    >[!NOTE]
    >
@@ -410,15 +410,15 @@ U kunt de sjabloon [!UICONTROL Document of Record] rechtstreeks configureren van
 Voer de volgende stappen uit vanuit de auteur-instantie van de Adaptieve formuliereditor:
 
 1. Selecteer de component **[!UICONTROL Adaptive Form container (Root)]** .
-1. Klik ![ vormen pictogram van het Pictogram ](/help/forms/assets/configure-icon.svg) om **[!UICONTROL Properties]** van de Aangepaste container van de Vorm te openen.
+1. Klik ![&#x200B; vormen pictogram van het Pictogram &#x200B;](/help/forms/assets/configure-icon.svg) om **[!UICONTROL Properties]** van de Aangepaste container van de Vorm te openen.
 1. Open het tabblad **[!UICONTROL Document of Record Template]** en selecteer een van de volgende opties:
    * **[!UICONTROL None]**: Als deze optie is geselecteerd, wordt er geen [!UICONTROL Document of Record] -sjabloon gemaakt voor uw adaptieve formulier.
    * **[!UICONTROL Associate Form Template as Document of Record Template]**:Whendeze optie is geselecteerd, wordt XFA-formulier gebruikt als sjabloon voor Document of Record.
    * **[!UICONTROL Generate Document of Record]**: Als deze optie is geselecteerd, wordt de sjabloon [!UICONTROL Document of Record] automatisch gegenereerd voor uw adaptieve formulier.
 
-1. Selecteer ![ sparen ](/help/forms/assets/check-button.png) om de eigenschappen te bewaren.
+1. Selecteer ![&#x200B; sparen &#x200B;](/help/forms/assets/check-button.png) om de eigenschappen te bewaren.
 
-![ Document van de Steun van het Malplaatje van het Verslag ](/help/forms/assets/dor-templatesupport.png)
+![&#x200B; Document van de Steun van het Malplaatje van het Verslag &#x200B;](/help/forms/assets/dor-templatesupport.png)
 
 >[!NOTE]
 >
@@ -430,11 +430,11 @@ Het adaptieve formulier kan lang zijn en meerdere formuliervelden bevatten. U ku
 
 Alvorens een Document van Verslag te produceren, in de montages van een paneel, uitgezochte Lay-out voor het Document van Verslag voor dat paneel als Lijst of Kolom. De velden in het deelvenster worden dienovereenkomstig ingedeeld in het document of record.
 
-![ Gebieden in een paneel dat in een lijstlay-out in het Document van Verslag ](assets/dortablelayout.png) wordt teruggegeven
+![&#x200B; Gebieden in een paneel dat in een lijstlay-out in het Document van Verslag &#x200B;](assets/dortablelayout.png) wordt teruggegeven
 
 Velden in een deelvenster die zijn gerenderd in een tabelindeling in het document met records
 
-![ Gebieden in een paneel dat in een kolomlay-out in het Document van Verslag ](assets/dorcolumnlayout.png) wordt teruggegeven
+![&#x200B; Gebieden in een paneel dat in een kolomlay-out in het Document van Verslag &#x200B;](assets/dorcolumnlayout.png) wordt teruggegeven
 
 Velden in een deelvenster die zijn gerenderd in een kolomindeling in het document met records
 
@@ -442,7 +442,7 @@ Velden in een deelvenster die zijn gerenderd in een kolomindeling in het documen
 
 Met de instellingen voor Document of Record kunt u opties kiezen die u wilt opnemen in het Document of Record. Een bank accepteert bijvoorbeeld naam, leeftijd, socialezekerheidsnummer en telefoonnummer in een formulier. Het formulier genereert een bankrekeningnummer en filiaalgegevens. U kunt ervoor kiezen alleen de naam, het socialezekerheidsnummer, de bankrekening en de filiaalgegevens weer te geven in Document of Record.
 
-De instelling van de component Document of Record is beschikbaar onder de eigenschappen. Om tot de eigenschappen toegang te hebben een component, selecteer de component en klik ![ cmp ](assets/cmppr.png) in de bekleding. De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
+De instelling van de component Document of Record is beschikbaar onder de eigenschappen. Om tot de eigenschappen toegang te hebben een component, selecteer de component en klik ![&#x200B; cmp &#x200B;](assets/cmppr.png) in de bekleding. De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
 
 **het niveaumontages van het Gebied**
 
@@ -455,7 +455,7 @@ De instelling van de component Document of Record is beschikbaar onder de eigens
 **het niveau van de Vorm montages**
 
 * **omvat niet verbindende gebieden in DoR:** het plaatsen van het bezit omvat ongebonden gebieden van Schema gebaseerd Aangepast Vorm in Document van Verslag. Standaard is dit waar.
-* **sluit gebieden van DoR uit als verborgen:** plaats het bezit om de verborgen gebieden van Document van Verslag bij vormvoorlegging uit te sluiten. Wanneer u [ toelaat verwerk op server ](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), hercompileert de server de verborgen gebieden alvorens die gebieden van het Document van Verslag uit te sluiten.
+* **sluit gebieden van DoR uit als verborgen:** plaats het bezit om de verborgen gebieden van Document van Verslag bij vormvoorlegging uit te sluiten. Wanneer u [&#x200B; toelaat verwerk op server &#x200B;](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), hercompileert de server de verborgen gebieden alvorens die gebieden van het Document van Verslag uit te sluiten.
 
 ## Een aangepast XCI-bestand gebruiken
 
@@ -463,8 +463,8 @@ Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een docume
 
 | XCI, optie | Beschrijving |
 |--- |--- |
-| config/present/pdf/creator | Hiermee wordt de maker van het document geïdentificeerd met het item Maker in het documentgegevenswoordenboek. Voor informatie over dit woordenboek, zie de [ gids van de Verwijzing van PDF ](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/present/pdf/producer | Hiermee wordt de documentproducent geïdentificeerd met behulp van het Producent-item in het documentinformatiewoordenboek. Voor informatie over dit woordenboek, zie de [ gids van de Verwijzing van PDF ](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/creator | Hiermee wordt de maker van het document geïdentificeerd met het item Maker in het documentgegevenswoordenboek. Voor informatie over dit woordenboek, zie de [&#x200B; gids van de Verwijzing van PDF &#x200B;](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | Hiermee wordt de documentproducent geïdentificeerd met behulp van het Producent-item in het documentinformatiewoordenboek. Voor informatie over dit woordenboek, zie de [&#x200B; gids van de Verwijzing van PDF &#x200B;](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | config/present/layout | Hiermee bepaalt u of de uitvoer één deelvenster is of gepagineerd. |
 | config/present/pdf/compression/level | Hiermee geeft u de mate van compressie op die moet worden gebruikt bij het genereren van een PDF-document. |
 | config/present/pdf/fontInfo/embed | Bepaalt het insluiten van lettertypen in het uitvoerdocument. |
@@ -493,13 +493,13 @@ Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een docume
 
 >[!NOTE]
 >
-> AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. Om de lijst van gesteunde doopvonten te zien, [ klik hier ](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. Om de lijst van gesteunde doopvonten te zien, [&#x200B; klik hier &#x200B;](/help/forms/supported-out-of-the-box-fonts.md).
 
 
 ### Een aangepast XCI-bestand gebruiken in uw Forms as a Cloud Service-omgeving
 
 1. Voeg het aangepaste XCI-bestand toe aan uw ontwikkelingsproject.
-1. Specificeer het volgende [ gealigneerde bezit ](/help/implementing/deploying/configuring-osgi.md):
+1. Specificeer het volgende [&#x200B; gealigneerde bezit &#x200B;](/help/implementing/deploying/configuring-osgi.md):
 
    ```JSON
     {

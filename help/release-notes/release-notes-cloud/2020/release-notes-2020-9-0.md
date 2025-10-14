@@ -23,20 +23,20 @@ De releasedatum voor [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* De enige Toepassing van de Pagina (SPA) Redacteur JavaScript SDK [ is nu open bron ](/help/implementing/developing/hybrid/reference-materials.md).
+* De enige Toepassing van de Pagina (SPA) Redacteur JavaScript SDK [&#x200B; is nu open bron &#x200B;](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#what-is-new-assets}
 
-* Watermerken van afbeeldingsbestanden wordt ondersteund voor uitvoeringen die worden gegenereerd met elementmicroservices. Deze kan worden geconfigureerd als een verwerkingsprofiel en gebruikt een PNG-bestand als watermerk. Zie [ watermerk uw activa ](/help/assets/watermark-assets.md).
+* Watermerken van afbeeldingsbestanden wordt ondersteund voor uitvoeringen die worden gegenereerd met elementmicroservices. Deze kan worden geconfigureerd als een verwerkingsprofiel en gebruikt een PNG-bestand als watermerk. Zie [&#x200B; watermerk uw activa &#x200B;](/help/assets/watermark-assets.md).
 
 * Verbeteringen in [!DNL Dynamic Media]
 
-   * Selectieve Publish - Een marketingteam kan nu toegang krijgen tot [!DNL Dynamic Media] Smart crop images en dynamische uitvoeringen die zijn gesynchroniseerd met [!DNL Dynamic Media] , zodat ze promotiematerialen kunnen maken zonder dat ze deze middelen naar [!DNL Dynamic Media] hoeven te publiceren voor levering wereldwijd. [!DNL Experience Manager] en [!DNL Dynamic Media] publishing is ontkoppeld en kan afzonderlijk plaatsvinden om dit te bereiken. Zie [ selectief publiceren ](/help/assets/dynamic-media/selective-publishing.md).
+   * Selectieve Publish - Een marketingteam kan nu toegang krijgen tot [!DNL Dynamic Media] Smart crop images en dynamische uitvoeringen die zijn gesynchroniseerd met [!DNL Dynamic Media] , zodat ze promotiematerialen kunnen maken zonder dat ze deze middelen naar [!DNL Dynamic Media] hoeven te publiceren voor levering wereldwijd. [!DNL Experience Manager] en [!DNL Dynamic Media] publishing is ontkoppeld en kan afzonderlijk plaatsvinden om dit te bereiken. Zie [&#x200B; selectief publiceren &#x200B;](/help/assets/dynamic-media/selective-publishing.md).
    * Beheerders kunnen nu het wachtwoord voor de Cloud Service van [!DNL Dynamic Media] opnieuw instellen dat bij provisioning wordt ontvangen. U kunt de instellingen opnieuw instellen in de gebruikersinterface van [!DNL Experience Manager] zonder dat u de bureaubladtoepassing van [!DNL Dynamic Media Classic] hoeft te gebruiken.
 
-* Om over de volgende verhogingen te weten, zie [ wat in Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=nl-NL) nieuw is.
+* Om over de volgende verhogingen te weten, zie [&#x200B; wat in Brand Portal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=nl-NL) nieuw is.
 
    * Verbeterde PDF-voorvertoning dankzij de integratie met Adobe Document Cloud View SDK.
    * Downloadfunctionaliteit met één klik.
@@ -52,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Uitgegeven CIF Core Components v1.3.0. Zie [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) voor meer details.
+* Uitgegeven CIF Core Components v1.3.0. Zie [&#x200B; CIF de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) voor meer details.
 
 * Voorvertoningsmogelijkheden met product/categorie voor product- en categoriesjablonen zijn nu beschikbaar. Zo kunnen zakelijke gebruikers/marketers in AEM de product-/categoriesjablonen met echte gegevens bekijken.
 
@@ -120,8 +120,8 @@ Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen v
 
 * De insteekmodule AIO-CLI ondersteunt Repository Modernizer en stelt gebruikers in staat het gereedschap uit te voeren met de insteekmodule.
 
-  Zie [ Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer details.
+  Zie [&#x200B; Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer details.
 
 * Het nut van de Modernizer van de Bewaarplaats kan worden gebruikt om bestaande projectpakketten in pakketten te herstructureren die met de projectstructuur verenigbaar zijn die voor AEM as a Cloud Service wordt bepaald.
 
-  Zie [ Middel van de Git: Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer details.
+  Zie [&#x200B; Middel van de Git: Modernizer van de Bewaarplaats &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer details.

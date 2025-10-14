@@ -23,7 +23,7 @@ ht-degree: 0%
 
 U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard is de ondersteuning voor bijlagen uitgeschakeld. De ondersteuning voor bijlagen inschakelen:
 
-1. Creeer a [ douaneprofiel ](/help/forms/custom-profile.md) met a `mfAttachmentOptions` multiselect koordbezit. Elke tekenreeks in de eigenschap `mfAttachmentOptions` moet een `property=value` -indeling hebben om opties voor de bestandsbijlage-widget te configureren. De waarden `property` en `value` kunnen een van de volgende waarden hebben:
+1. Creeer a [&#x200B; douaneprofiel &#x200B;](/help/forms/custom-profile.md) met a `mfAttachmentOptions` multiselect koordbezit. Elke tekenreeks in de eigenschap `mfAttachmentOptions` moet een `property=value` -indeling hebben om opties voor de bestandsbijlage-widget te configureren. De waarden `property` en `value` kunnen een van de volgende waarden hebben:
 
    | Eigenschap | Waarde |
    |--- |---|
@@ -34,7 +34,7 @@ U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard
 
    Bijvoorbeeld:
 
-   ![ vormt opties ](assets/mfAttachmentOptions.png)
+   ![&#x200B; vormt opties &#x200B;](assets/mfAttachmentOptions.png)
 
    Desgewenst kunt u ook meer aangepaste opties voor de eigenschap `mfAttachmentOptions` opgeven.
 
@@ -42,12 +42,12 @@ U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard
    >
    >In Microsoft Internet Explorer 9 kunnen gebruikers bestanden bijvoegen die groter zijn dan de opgegeven limiet. Het is een bekend probleem.
 
-1. Gebruik de [ meta-gegevensredacteur ](/help/forms/manage-form-metadata.md) om het douaneprofiel te selecteren dat u hierboven voor HTML 5 vormen hebt gecreeerd.
+1. Gebruik de [&#x200B; meta-gegevensredacteur &#x200B;](/help/forms/manage-form-metadata.md) om het douaneprofiel te selecteren dat u hierboven voor HTML 5 vormen hebt gecreeerd.
 1. U geeft de formuliersjabloon weer met een aangepast profiel en het pictogram Bijlagen wordt weergegeven op de werkbalk Formulieren.
 
    >[!NOTE]
    >
-   >Het portal Formulieren bevat een aangepast profiel met de mogelijkheden voor concepten en bijlagen ingeschakeld. Voor meer informatie over **sparen als Ontwerp** profiel, zie [ Opgeslagen vormen HTML5 als ontwerp ](/help/forms/saving-html5-form-draft.md).
+   >Het portal Formulieren bevat een aangepast profiel met de mogelijkheden voor concepten en bijlagen ingeschakeld. Voor meer informatie over **sparen als Ontwerp** profiel, zie [&#x200B; Opgeslagen vormen HTML5 als ontwerp &#x200B;](/help/forms/saving-html5-form-draft.md).
 
 1. Klik op het pictogram voor bijlagen en er verschijnt een dialoogvenster voor het selecteren van bijlagen. Blader en selecteer de gehechtheid en klik **Band**.
 
@@ -67,4 +67,4 @@ Als bijlagen zijn ingeschakeld, verzendt HTML5-formulier meerdelige gegevens. De
 >
 >Als de optie `mfAllowAttachments` is uitgeschakeld, verzendt HTML5-formulieren de meerdelige gegevens niet voor achterwaartse compatibiliteit. Het verzendt eenvoudige gegevens xml in **toepassing/xml** formaat.
 
-Als de vlag mfAllowAttachments wordt aangezet, [ voorlegt de dienst van de de dienstvolmacht ](/help/forms/service-proxy.md) ook posten multipart gegevens met dataXml en gehechtheid.
+Als de vlag mfAllowAttachments wordt aangezet, [&#x200B; voorlegt de dienst van de de dienstvolmacht &#x200B;](/help/forms/service-proxy.md) ook posten multipart gegevens met dataXml en gehechtheid.

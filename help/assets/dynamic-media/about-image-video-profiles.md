@@ -27,7 +27,7 @@ U moet beheerdersrechten hebben om dynamische profielen voor mediageluurafbeeldi
 
 Nadat u een afbeeldingsprofiel of videoprofiel hebt gemaakt, wijst u dit toe aan een of meer mappen die u gebruikt voor nieuw geüploade dynamische media-elementen.
 
-Zie ook [ Beste praktijken voor het Organiseren van uw Digitale Assets voor het gebruiken van Profielen van de Verwerking ](/help/assets/organize-assets.md).
+Zie ook [&#x200B; Beste praktijken voor het Organiseren van uw Digitale Assets voor het gebruiken van Profielen van de Verwerking &#x200B;](/help/assets/organize-assets.md).
 
 
 >[!NOTE]
@@ -46,7 +46,7 @@ U kunt de herverwerkingsworkflow uitvoeren op een element waarvoor de verwerking
 
 U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u het _Dynamische 1&rbrace; werkschema van Media van het Herverwerken &lbrace;op een omslag in werking stelt, worden de activa gegroepeerd in partijen, dan verzonden naar de Dynamische server van Media voor verwerking._ Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op [!DNL Adobe Experience Manager] . Als de partij groot is, kunt u een vertraging in verwerking ervaren. Als de batch te klein is, kan dit ook leiden tot te veel roundtrips op de Dynamic Media-server.
 
-Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
+Zie [&#x200B; aanpassen de partijgrootte van het herproceswerkschema &#x200B;](#adjusting-load).
 
 >[!NOTE]
 >
@@ -75,13 +75,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de pagina de optie **[!UICONTROL Timeline]** .
 1. Selecteer rechts naast de linkerbenedenhoek van de pagina, rechts van het veld [!UICONTROL Comment] , het karatpictogram ( **^** ).
 
-   ![ Schermafbeelding van Assets in Experience Manager die een geselecteerde omslag van activa toont, benadrukte de drop-down lijst van de Chronologie, de benadrukte knoop van het Werkschema van het Begin, en het karatpictogram rechts van het gebied van de Commentaar ook ](/help/assets/dynamic-media/assets/reprocess-assets1.png) benadrukte.
+   ![&#x200B; Schermafbeelding van Assets in Experience Manager die een geselecteerde omslag van activa toont, benadrukte de drop-down lijst van de Chronologie, de benadrukte knoop van het Werkschema van het Begin, en het karatpictogram rechts van het gebied van de Commentaar ook &#x200B;](/help/assets/dynamic-media/assets/reprocess-assets1.png) benadrukte.
 
 1. Selecteer **[!UICONTROL Start Workflow]** .
 1. Kies **[!UICONTROL Dynamic Media Reprocess]** in de vervolgkeuzelijst **[!UICONTROL Start Workflow]** .
 1. (Facultatief) op **ga titel van werkschemagebied** in, ga een naam voor het werkschema in. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
-   ![ Screenshot van het gebruikersinterface van de Chronologie met &quot;Dynamische Media die&quot;van de drop-down lijst van het Werkschema van het Begin wordt geselecteerd, en de knoop van het Begin benadrukte ](/help/assets/dynamic-media/assets/reprocess-assets2.png).
+   ![&#x200B; Screenshot van het gebruikersinterface van de Chronologie met &quot;Dynamische Media die&quot;van de drop-down lijst van het Werkschema van het Begin wordt geselecteerd, en de knoop van het Begin benadrukte &#x200B;](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Selecteer **[!UICONTROL Start]** en selecteer vervolgens **[!UICONTROL Confirm]** .
 
@@ -96,13 +96,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Selecteer in [!DNL Experience Manager] **[!UICONTROL Adobe Experience Manager]** om toegang te krijgen tot de algemene navigatieconsole en selecteer vervolgens het pictogram **[!UICONTROL Tools]** (hamer) > **[!UICONTROL Workflow > Models]** .
 1. Selecteer **[!UICONTROL Dynamic Media Reprocess]** op de pagina Workflowmodellen in Kaartweergave of Lijstweergave.
 
-   ![ Schermafbeelding van de pagina van de Modellen van het Werkschema met het &quot;Dynamische Werkschema van Media die&quot;werkschema in de mening van de Kaart van Experience Manager ](/help/assets/dynamic-media/assets/reprocess-assets7.png) wordt geselecteerd.
+   ![&#x200B; Schermafbeelding van de pagina van de Modellen van het Werkschema met het &quot;Dynamische Werkschema van Media die&quot;werkschema in de mening van de Kaart van Experience Manager &#x200B;](/help/assets/dynamic-media/assets/reprocess-assets7.png) wordt geselecteerd.
 
 1. Selecteer **[!UICONTROL Edit]** in de werkbalk. Met een nieuw browsertabblad wordt de modelpagina Dynamisch opnieuw verwerken van media geopend.
 1. Selecteer in de rechterbovenhoek van de pagina Dynamische media herverwerken workflow **[!UICONTROL Edit]** om de workflow te &quot;ontgrendelen&quot;.
 1. In het werkschema, selecteer de Partij Scene7 uploadt component om de toolbar te openen, dan uitgezocht **[!UICONTROL Configure]** in de toolbar.
 
-   ![ Screenshot van de &quot;Plaats Scene7&quot;component op de &quot;Dynamische pagina van Media Reprocess&quot;met de muiswijzer die over het &quot;Configure&quot;pictogram ](/help/assets/dynamic-media/assets/reprocess-assets8.png) beweegt.
+   ![&#x200B; Screenshot van de &quot;Plaats Scene7&quot;component op de &quot;Dynamische pagina van Media Reprocess&quot;met de muiswijzer die over het &quot;Configure&quot;pictogram &#x200B;](/help/assets/dynamic-media/assets/reprocess-assets8.png) beweegt.
 
 1. Stel in het dialoogvenster **[!UICONTROL Batch Upload to Scene7—Step Properties]** het volgende in:
    * Voer in de tekstvelden **[!UICONTROL Title]** en **[!UICONTROL Description]** desgewenst een nieuwe titel en beschrijving in voor de taak.
@@ -112,13 +112,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Voer in de **[!UICONTROL Batch field]** het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor de batchverwerking van een Dynamic Media-server.
    * Selecteer **[!UICONTROL Advance on timeout]** als u wilt doorgaan wanneer de time-out is bereikt. Schakel deze optie uit als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
 
-   ![ Schermafbeelding van de &quot;Partij uploadt aan Scene7 - de pagina van de Eigenschappen van de Stap&quot;](/help/assets/dynamic-media/assets/reprocess-assets3.png).
+   ![&#x200B; Schermafbeelding van de &quot;Partij uploadt aan Scene7 - de pagina van de Eigenschappen van de Stap&quot;](/help/assets/dynamic-media/assets/reprocess-assets3.png).
 
 1. Selecteer **[!UICONTROL Done]** in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** .
 
 1. Selecteer **[!UICONTROL Sync]** in de rechterbovenhoek van de modelpagina Dynamische media opnieuw verwerken. Wanneer u **[!UICONTROL Synced]** ziet, wordt het runtimemodel van de workflow gesynchroniseerd en kunt u elementen in een map opnieuw verwerken.
 
-   ![ Schermafbeelding van Assets in Experience Manager die een geselecteerde omslag van activa toont, benadrukte de drop-down lijst van de Chronologie, de benadrukte knoop van het Werkschema van het Begin, en het karatpictogram rechts van het gebied van de Commentaar ook ](/help/assets/dynamic-media/assets/reprocess-assets1.png) benadrukte.
+   ![&#x200B; Schermafbeelding van Assets in Experience Manager die een geselecteerde omslag van activa toont, benadrukte de drop-down lijst van de Chronologie, de benadrukte knoop van het Werkschema van het Begin, en het karatpictogram rechts van het gebied van de Commentaar ook &#x200B;](/help/assets/dynamic-media/assets/reprocess-assets1.png) benadrukte.
 
 1. Sluit het browsertabblad waarin het workflowmodel Dynamische media opnieuw verwerken wordt weergegeven.
 

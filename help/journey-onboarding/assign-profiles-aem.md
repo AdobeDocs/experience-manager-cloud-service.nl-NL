@@ -18,11 +18,11 @@ ht-degree: 0%
 >title="AEM-productprofielen toewijzen"
 >abstract="Je mag Experience Manager Assets niet gebruiken. Neem contact op met de beheerder."
 
-In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om u teamtoegang tot AEM te verlenen gebruikend de productprofielen van AEM.
+In dit deel van de [&#x200B; onboarding reis &#x200B;](overview.md), leert u hoe te om u teamtoegang tot AEM te verlenen gebruikend de productprofielen van AEM.
 
 ## Doelstelling {#objective}
 
-Nadat u het vorige document in deze onboarding reis hebt gelezen, [ creeer Milieu ](create-environments.md), en hebben uw wolkenmiddelen gevormd, verleent uw teamtoegang tot AEM zelf gebruikend de productprofielen van AEM. Als systeembeheerder doet u dit door AEM-productprofielen toe te wijzen.
+Nadat u het vorige document in deze onboarding reis hebt gelezen, [&#x200B; creeer Milieu &#x200B;](create-environments.md), en hebben uw wolkenmiddelen gevormd, verleent uw teamtoegang tot AEM zelf gebruikend de productprofielen van AEM. Als systeembeheerder doet u dit door AEM-productprofielen toe te wijzen.
 
 Na het lezen van dit document is het verstandig:
 
@@ -42,7 +42,7 @@ Als u AEM wilt gebruiken, moeten uw teamleden worden toegewezen aan ten minste �
 >Elke gebruiker die aan een het productprofiel van AEM as a Cloud Service wordt toegewezen heeft read-only toegang tot Cloud Manager via de **&#x200B;**&#x200B;rol van de Gebruiker van Cloud Manager.
 >
 >De gebruikers met de **rol van de Gebruiker van Cloud Manager** kunnen slechts in Cloud Manager registreren en aan de auteursmilieu&#39;s van AEM navigeren (als zij bestaan) door de het menuopties van Programma&#39;s te gebruiken. De **rol van de Gebruiker van 0&rbrace; Cloud Manager &lbrace;is niet voldoende om tot programmadetails toegang te hebben.** Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
->Zie de [ Extra sectie van Middelen hieronder ](#additional-resources) voor meer informatie over de gebruikersrollen van Cloud Manager.
+>Zie de [&#x200B; Extra sectie van Middelen hieronder &#x200B;](#additional-resources) voor meer informatie over de gebruikersrollen van Cloud Manager.
 
 >[!CAUTION]
 >
@@ -64,19 +64,19 @@ Voordat u deze sectie gaat lezen, moet u over de volgende informatie beschikken 
 
 Voer de volgende stappen uit om de AEM-productprofielen van de Admin Console te bekijken.
 
-1. Meld u aan bij Admin Console op [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) .
+1. Meld u aan bij Admin Console op [`https://adminconsole.adobe.com` &#x200B;](https://adminconsole.adobe.com) .
 
 1. Van de **pagina van het Overzicht**, uitgezochte **Adobe Experience Manager as a Cloud Service** van de **Producten en de diensten** kaart.
 
-   ![ Producten en de dienstenkaart ](/help/journey-onboarding/assets/assign-team1.png)
+   ![&#x200B; Producten en de dienstenkaart &#x200B;](/help/journey-onboarding/assets/assign-team1.png)
 
 1. Navigeer en selecteer de instantie.
 
-   ![ Uitgezochte instantie ](/help/journey-onboarding/assets/cloud-profiles-1.png)
+   ![&#x200B; Uitgezochte instantie &#x200B;](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
 1. U kunt de lijst met AEM as a Cloud Service-productprofielen zien die op basis van hun rollen aan een gebruiker kunnen worden toegewezen.
 
-   ![ Profielen van het Product ](/help/journey-onboarding/assets/cloud-profiles-2.png)
+   ![&#x200B; Profielen van het Product &#x200B;](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
 ## Teamleden toevoegen aan productprofielen {#add-team-members}
 
@@ -86,15 +86,15 @@ Deze taken vereisen u om een systeembeheerder met het **BedrijfsEigenaar** het p
 
 1. Navigeer aan uw programma van Cloud Manager en selecteer de **Manage knoop van de Toegang** van de context van het milieu van belang.
 
-   ![ beheer toegang ](/help/journey-onboarding/assets/add-team1.png)
+   ![&#x200B; beheer toegang &#x200B;](/help/journey-onboarding/assets/add-team1.png)
 
 1. Een nieuw tabblad navigeert u naar de Admin Console vanwaar u toegang hebt tot de instantie van de auteur van de omgeving. Selecteer **de Beheerders van AEM** of **Gebruikers van AEM** die op de toestemmingen worden gebaseerd dit individu moet worden gegeven.
 
-   ![ wijs toegang ](/help/journey-onboarding/assets/add-team2.png) toe
+   ![&#x200B; wijs toegang &#x200B;](/help/journey-onboarding/assets/add-team2.png) toe
 
 1. Selecteer `AEM Administrator` of `AEM User` en klik **voeg Gebruiker** zoals hieronder getoond toe en verzend de noodzakelijke details om het toevoegen van het teamlid te voltooien.
 
-   ![ voeg teamlid ](/help/journey-onboarding/assets/add-team3.png) toe
+   ![&#x200B; voeg teamlid &#x200B;](/help/journey-onboarding/assets/add-team3.png) toe
 
 1. Herhaal deze stappen voor alle omgevingen, inclusief ontwikkeling, staging en productie, als u beschikt over de informatie van teamleden die toegang nodig hebben.
 
@@ -106,14 +106,14 @@ Gefeliciteerd! De gebruikers die u hebt toegewezen aan AEM as a Cloud Service-pr
 
 Als u echter beter wilt begrijpen hoe auteurs en ontwikkelaars het systeem gebruiken, kunt u doorgaan met twee optionele onderdelen van deze instapreis:
 
-* [ de Taken van de Manager van de Ontwikkelaar en van de Plaatsing ](developers.md) - waar u leert hoe de ontwikkelaars toegang hebben tot git om hun douanecode op te slaan en het op te stellen gebruikend de pijpleidingen van Cloud Manager.
-* [ de Taken van de Gebruiker van AEM ](aem-users.md) - waar u leert om tot het milieu van AEM toegang te hebben waar u kunt beginnen inhoud te creëren.
+* [&#x200B; de Taken van de Manager van de Ontwikkelaar en van de Plaatsing &#x200B;](developers.md) - waar u leert hoe de ontwikkelaars toegang hebben tot git om hun douanecode op te slaan en het op te stellen gebruikend de pijpleidingen van Cloud Manager.
+* [&#x200B; de Taken van de Gebruiker van AEM &#x200B;](aem-users.md) - waar u leert om tot het milieu van AEM toegang te hebben waar u kunt beginnen inhoud te creëren.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-* [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) - leer hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van Adobe kunnen verlenen en beperken.
-* [ het Leiden Producten en de Toegang van de Gebruiker in Admin Console ](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - leer hoe te om Admin Console te gebruiken om gebruikstoegang te beheren.
-* [ het Vormen toegang tot AEM lopen-door ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=nl-NL) - Check uit dit verkorte looppas-hoewel om over het vormen van gebruikers IMS van Adobe, gebruikersgroepen, en productprofielen in Admin Console te leren.
+* [&#x200B; het Team van AEM as a Cloud Service en de Profielen van het Product &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md) - leer hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van Adobe kunnen verlenen en beperken.
+* [&#x200B; het Leiden Producten en de Toegang van de Gebruiker in Admin Console &#x200B;](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - leer hoe te om Admin Console te gebruiken om gebruikstoegang te beheren.
+* [&#x200B; het Vormen toegang tot AEM lopen-door &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=nl-NL) - Check uit dit verkorte looppas-hoewel om over het vormen van gebruikers IMS van Adobe, gebruikersgroepen, en productprofielen in Admin Console te leren.
 

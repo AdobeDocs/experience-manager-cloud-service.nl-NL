@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Het dashboard voor het realiseren van waarden
 
-![ dashboard van de de realisatie van de waarde ](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+![&#x200B; dashboard van de de realisatie van de waarde &#x200B;](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
 <span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Als u toegang wilt aanvragen, stuurt u een e-mail van uw officiële adres naar aem-forms-ea@adobe.com. <span>
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Welkom bij de one-stop shop voor meer inzicht in de waarde die uw formulieren bieden! Met dit dashboard beschikt u over waardevolle inzichten om uw formulieren te optimaliseren, workflows te stroomlijnen en uw doelen uiteindelijk sneller te bereiken.
 
-Dit artikel biedt een conceptueel overzicht van het Dashboard voor de realisatie van waarden en de voordelen ervan. Voor gedetailleerde gebruiksinstructies en metrieke interpretatie, zie [ gebruikend het dashboard van de waardeverwezenlijking om vormen &amp; de tendensen van het documentgebruik te analyseren ](/help/forms/using-the-value-realization-dashboard.md).
+Dit artikel biedt een conceptueel overzicht van het Dashboard voor de realisatie van waarden en de voordelen ervan. Voor gedetailleerde gebruiksinstructies en metrieke interpretatie, zie [&#x200B; gebruikend het dashboard van de waardeverwezenlijking om vormen &amp; de tendensen van het documentgebruik te analyseren &#x200B;](/help/forms/using-the-value-realization-dashboard.md).
 
 
 ## Wat staat er op het dashboard? {#content-of-dashboard}
@@ -51,7 +51,7 @@ Met dit dashboard kunt u gegevensgestuurde beslissingen nemen over uw formuliere
 * **optimaliseer de Creatie van de Vorm**: Verminder schepingstijden door knelpunten te identificeren. Bekijk vooraf gebouwde sjablonen of stroomlijnende workflows.
 * **hergebruik van het Fragment van de Verhoging**: Stimuleer samenwerking en ontdekkingsbaarheid van herbruikbare fragmenten. Goed georganiseerde fragmentbibliotheken kunnen de efficiëntie aanzienlijk verbeteren.
 
-  ![ dashboard van de waardeverwezenlijking ](/help/forms/assets/forms-usage-insights.png)
+  ![&#x200B; dashboard van de waardeverwezenlijking &#x200B;](/help/forms/assets/forms-usage-insights.png)
 
 
 ## Inzichten omzetten in actie {#turning-insights-into-actions}

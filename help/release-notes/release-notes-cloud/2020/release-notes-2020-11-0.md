@@ -24,7 +24,7 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 ### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* **[Lanceert het Beheer van de Hiërarchie ](/help/sites-cloud/authoring/launches/managing-pages.md) &amp; [ Toekomstige Tijdverdraaiing](/help/sites-cloud/authoring/launches/preview.md)**: Nieuwe UI om pagina&#39;s binnen een lancering toe te voegen/te verwijderen, en het doorbladeren van plaats met Tijdverdraaiing toont toekomstige staat van Lanceringen.
+* **[Lanceert het Beheer van de Hiërarchie &#x200B;](/help/sites-cloud/authoring/launches/managing-pages.md) &amp; [&#x200B; Toekomstige Tijdverdraaiing](/help/sites-cloud/authoring/launches/preview.md)**: Nieuwe UI om pagina&#39;s binnen een lancering toe te voegen/te verwijderen, en het doorbladeren van plaats met Tijdverdraaiing toont toekomstige staat van Lanceringen.
 
 * **[Uitgebreide Modellen van het Fragment van de Inhoud &amp; Redacteur](/help/assets/content-fragments/content-fragments-models.md)**: De nieuwe opties voor inputbevestiging op diverse gegevenstypes, het verbeterde gegevenstype van de Opsomming met nieuwe vormvisualisaties, en de het modelnaam van het Fragment van de Inhoud wordt getoond en doorzoekbaar in Assets UI.
 
@@ -34,17 +34,17 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 ### Nieuw in [!DNL Assets] en [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Bulk activaopname**: Verstrek klanten van de scalable, wolk-inheemse dienst die [!DNL Experience Manager] as a Cloud Service architectuur met inbegrip van activa microservices gebruikt. Belangrijke gebruiksgevallen zijn onder andere schaling op schaal met bewaking, rapportage en planning, terwijl de mogelijkheid bestaat om middelen eerst over te brengen naar de gegevensopslag in de cloud met gebruik van de gebruikelijke tools voor uploaden naar de cloud. Zie [ activa bulkingestor hulpmiddel ](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Bulk activaopname**: Verstrek klanten van de scalable, wolk-inheemse dienst die [!DNL Experience Manager] as a Cloud Service architectuur met inbegrip van activa microservices gebruikt. Belangrijke gebruiksgevallen zijn onder andere schaling op schaal met bewaking, rapportage en planning, terwijl de mogelijkheid bestaat om middelen eerst over te brengen naar de gegevensopslag in de cloud met gebruik van de gebruikelijke tools voor uploaden naar de cloud. Zie [&#x200B; activa bulkingestor hulpmiddel &#x200B;](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-  Dit hulpmiddel is voor systeembeheerder, adviseur, of de persona&#39;s van de implementatiepartner. Deze functie maakt het mogelijk om op grote schaal in te nemen en wordt bij voorkeur gebruikt tijdens de eerste opname of bij incidentele grote inname. Voor kleinere opnemingstaken, gebruik [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL) of [ uploadt gebruikend Assets gebruikersinterface ](/help/assets/add-assets.md#upload-assets).
+  Dit hulpmiddel is voor systeembeheerder, adviseur, of de persona&#39;s van de implementatiepartner. Deze functie maakt het mogelijk om op grote schaal in te nemen en wordt bij voorkeur gebruikt tijdens de eerste opname of bij incidentele grote inname. Voor kleinere opnemingstaken, gebruik [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL) of [&#x200B; uploadt gebruikend Assets gebruikersinterface &#x200B;](/help/assets/add-assets.md#upload-assets).
 
-  ![ Configuratie van bulkimporteur ](/help/assets/assets/bulk-import-config-low-res.png)
+  ![&#x200B; Configuratie van bulkimporteur &#x200B;](/help/assets/assets/bulk-import-config-low-res.png)
 
 * Gebruikers kunnen de digitale elementen nu sorteren in de Kaart- en kolomweergave.
 
-  ![ soortactiva ](/help/assets/assets/asset-sort-options.png)
+  ![&#x200B; soortactiva &#x200B;](/help/assets/assets/asset-sort-options.png)
 
-* De volgende verbeteringen zijn doorgevoerd voor toegankelijkheid in [!DNL Experience Manager Assets] in deze release. Voor meer informatie, zie [ toegankelijkheidseigenschappen in  [!DNL Assets]](/help/assets/accessibility.md).
+* De volgende verbeteringen zijn doorgevoerd voor toegankelijkheid in [!DNL Experience Manager Assets] in deze release. Voor meer informatie, zie [&#x200B; toegankelijkheidseigenschappen in  [!DNL Assets]](/help/assets/accessibility.md).
 
    * Wanneer u door de tijdlijn navigeert met een toetsenbord, kunt u met de toets Esc de optie Alles tonen samenvouwen zonder de focus te verliezen.
    * Wanneer u navigeert met de Tab-toets op het toetsenbord, blijft het tagveld actief nadat u de laatste tag uit de toegevoegde tags hebt verwijderd.
@@ -56,7 +56,7 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 * **de Reeks van de Partij vooraf instelt in Dynamic Media**: Nu kunt u de verwezenlijking en de organisatie van veelvoudige activa in een beeldreeks automatiseren of draaien die op het tijdstip wordt geplaatst u activa dossiers aan een omslag of individueel uploadt of bulkingestitie gebruikt.
 
-  Zie [ Ongeveer Geplaatste Partij vooraf instelt ](/help/assets/dynamic-media/batch-set-presets-dm.md).
+  Zie [&#x200B; Ongeveer Geplaatste Partij vooraf instelt &#x200B;](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 * De volgende toegankelijkheidsverbeteringen zijn nu beschikbaar in [!DNL Dynamic Media] :
 
@@ -69,15 +69,15 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
    * Gebruikers van het toetsenbord en de schermlezer kunnen de uitsnijdfunctionaliteit gebruiken.
    * De gebruikers van het toetsenbord kunnen de hotspots beter beheren.
 
-  Zie [ Toegang in  [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  Zie [&#x200B; Toegang in  [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Release CIF Venia Reference Site - 2020.11.05 die de snelste versie CIF Core Components v1.5.0 bevat. Zie [ CIF de Plaats van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) voor meer details.
+* Release CIF Venia Reference Site - 2020.11.05 die de snelste versie CIF Core Components v1.5.0 bevat. Zie [&#x200B; CIF de Plaats van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) voor meer details.
 
-* Uitgegeven CIF Core Components v1.5.0. Zie [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) voor meer details.
+* Uitgegeven CIF Core Components v1.5.0. Zie [&#x200B; CIF de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) voor meer details.
 
 ### Opgeloste problemen {#bug-fixes-commerce}
 
@@ -92,7 +92,7 @@ De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2020.11.0 is 12 nov
 ### Nieuwe functies in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Een nieuwe menuoptie **Lokale Login** is nu beschikbaar aan gebruikers van de opties van het milieumenu op de **3&rbrace; kaart van Milieu&#39;s &lbrace;en** summiere pagina&#39;s van Milieu **.**
-Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.md#login-locally) voor meer details.
+Zie [&#x200B; het Leiden Milieu &#x200B;](/help/implementing/cloud-manager/manage-environments.md#login-locally) voor meer details.
 
 * Het **Leer** lusje in Cloud Manager is verfrist met nieuwe beelden in UI.
 
@@ -111,19 +111,19 @@ Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.m
 
 ### Synchronisatie van gebruikersgegevens op Publish-niveau {#user-sync}
 
-* Gebruikersgegevens, waaronder profielkenmerken en groepslidmaatschappen, kunnen op de publicatielijst worden voortgezet. Leer meer over deze eigenschap in [ Registratie, Login, en de documentatie van het Profiel van de Gebruiker ](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md).
+* Gebruikersgegevens, waaronder profielkenmerken en groepslidmaatschappen, kunnen op de publicatielijst worden voortgezet. Leer meer over deze eigenschap in [&#x200B; Registratie, Login, en de documentatie van het Profiel van de Gebruiker &#x200B;](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md).
 
 ### SDK Build Analyzers {#analyzers}
 
-De AEM as a Cloud Service SDK Build Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling te ontdekken, ruim voordat ze met Cloud Manager naar Cloud-omgevingen implementeren. Voor meer informatie, zie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing) en [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL#building-for-the-sdk).
+De AEM as a Cloud Service SDK Build Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling te ontdekken, ruim voordat ze met Cloud Manager naar Cloud-omgevingen implementeren. Voor meer informatie, zie de documentatie [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing) en [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL#building-for-the-sdk).
 
 ### Overige {#others-foundation}
 
-De nieuwe [ &quot;httpd -t&quot;syntaxis ](/help/implementing/dispatcher/disp-overview.md#local-validation) controle voor apache en verzender configuratie die tijdens de bouw van Cloud Manager wordt uitgevoerd, die ook kan worden in werking gesteld gebruikend de Hulpmiddelen van Dispatcher van AEM as a Cloud Service SDK.
+De nieuwe [&#x200B; &quot;httpd -t&quot;syntaxis &#x200B;](/help/implementing/dispatcher/disp-overview.md#local-validation) controle voor apache en verzender configuratie die tijdens de bouw van Cloud Manager wordt uitgevoerd, die ook kan worden in werking gesteld gebruikend de Hulpmiddelen van Dispatcher van AEM as a Cloud Service SDK.
 
 ## Inhoud overbrengen {#content-transfer-tool}
 
-Volg deze sectie om over te leren wat nieuw en de updates voor [ het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=nl-NL) Versie v1.1.12 is.
+Volg deze sectie om over te leren wat nieuw en de updates voor [&#x200B; het Hulpmiddel van de Overdracht van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=nl-NL) Versie v1.1.12 is.
 
 ### Nieuwe functies {#what-is-new-ctt}
 

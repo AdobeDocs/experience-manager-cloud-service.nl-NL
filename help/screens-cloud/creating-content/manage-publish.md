@@ -33,22 +33,22 @@ Voer de onderstaande stappen uit om het kanaal te publiceren:
 
 1. Navigeer en selecteer het kanaal van uw project, zoals **FirstDigitalExperience** —> **Kanalen** —> **LoopingChannelOne**.
 
-   ![ Uitgezochte Kanaal ](/help/screens-cloud/assets/create-content/managepub-1.png)
+   ![&#x200B; Uitgezochte Kanaal &#x200B;](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Klik **leiden Publicatie** van de actiebar.
 
 1. Selecteer de **Actie** als **Publish** en **plannend** als **&#x200B;**&#x200B;van **leiden de tovenaar van de Publicatie** en klik **daarna**.
 
-   ![ Uitgezochte Actie van Publish ](/help/screens-cloud/assets/create-content/managepub-2.png)
+   ![&#x200B; Uitgezochte Actie van Publish &#x200B;](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
    >Klik **omvatten Kinderen** van de actiebar en uncheck alle opties om alle modules in uw project te publiceren en klik toevoegen om te publiceren. Door gebrek, worden alle dozen gecontroleerd en u moet manueel uncheck de dozen om alle modules in uw project te publiceren.
 
 1. Na het selecteren van het kanaal van **leidt de tovenaar van de Publicatie**, klik **Publish** om het kanaal te publiceren.
 
-   ![ Publish het Kanaal ](/help/screens-cloud/assets/create-content/managepub-3.png)
+   ![&#x200B; Publish het Kanaal &#x200B;](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u uw kanalen in het project hebt gepubliceerd, zou u uw as a Cloud Service reis van Screens door het document te herzien, [ nu moeten voortzetten Installerend en Vormend Players in Screens as a Cloud Service ](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Nu, dat u uw kanalen in het project hebt gepubliceerd, zou u uw as a Cloud Service reis van Screens door het document te herzien, [&#x200B; nu moeten voortzetten Installerend en Vormend Players in Screens as a Cloud Service &#x200B;](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

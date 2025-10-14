@@ -23,7 +23,7 @@ ht-degree: 0%
 
 HTML5-formulieren bieden talrijke mogelijkheden die geschikt zijn voor mobiele apparaten. Het helpt u uw huidige oplossingen en workflows aan tablets of smartphones apparaten met browsers uit te breiden HTML5. Enkele mogelijkheden omvatten:
 
-* **op HTML5-Gebaseerde teruggeven van XFA vormmalplaatjes:** Naast regelmatige PDF forms, kunt u uw bestaande op XFA-Gebaseerde vormen in formaat nu teruggeven HTML5. Hiermee kunt u uw clientplatform uitbreiden naar mobiele apparaten (Apple iPad, Android-tablet, smartphones enzovoort) die HTML5 ondersteunen en Adobe Reader niet met XFA Forms ondersteunen. Voor meer informatie over op HTML5-Gebaseerd teruggevend vermogen, zie [ Inleiding aan HTML5 vormen ](/help/forms/introductionhtml5.md).
+* **op HTML5-Gebaseerde teruggeven van XFA vormmalplaatjes:** Naast regelmatige PDF forms, kunt u uw bestaande op XFA-Gebaseerde vormen in formaat nu teruggeven HTML5. Hiermee kunt u uw clientplatform uitbreiden naar mobiele apparaten (Apple iPad, Android-tablet, smartphones enzovoort) die HTML5 ondersteunen en Adobe Reader niet met XFA Forms ondersteunen. Voor meer informatie over op HTML5-Gebaseerd teruggevend vermogen, zie [&#x200B; Inleiding aan HTML5 vormen &#x200B;](/help/forms/introductionhtml5.md).
 
 * **Beherend Forms:** bovendien omvat AEM nieuwe mogelijkheden om het proces te vereenvoudigen om vormen te organiseren en te beheren. U kunt formulieren activeren, deactiveren, publiceren en hiervan een voorbeeld weergeven.<!--For more information, see [Introduction to managing forms](/help/forms/using/introduction-managing-forms.md).-->
 

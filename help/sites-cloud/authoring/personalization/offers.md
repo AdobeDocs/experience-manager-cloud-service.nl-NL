@@ -20,7 +20,7 @@ De **console van Aanbiedingen** zal in de toekomst worden afgekeurd. Dus vanaf n
 * Aanbevolen dat dergelijke verouderde aanbiedingen worden geconverteerd naar Experience Fragment-aanbiedingen
    * Zodra de laatste erfenisaanbieding wordt omgezet/verwijderd, zal de **console van Aanbiedingen** niet meer beschikbaar zijn.
 
-![ Consoles van Personalization ](/help/sites-cloud/authoring/assets/offers-consoles.png)
+![&#x200B; Consoles van Personalization &#x200B;](/help/sites-cloud/authoring/assets/offers-consoles.png)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ A **Bekeerling aan ervaringsfragmentvariatie** optie, en het werkschema, is uitg
 
 1. De componententoolbar zal een optie aan **Bekeerling aan ervaringsfragmentvariatie** verstrekken:
 
-   ![ het Omzetten van Verouderde Aanbieding van de Verouderde aan het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+   ![&#x200B; het Omzetten van Verouderde Aanbieding van de Verouderde aan het Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
 1. Er wordt een dialoogvenster weergegeven. Hier kunt u de vereiste **Actie** selecteren:
 
@@ -74,7 +74,7 @@ A **Bekeerling aan ervaringsfragmentvariatie** optie, en het werkschema, is uitg
 
    Voor dit scenario, creeer **een nieuw Fragment van de Ervaring**.
 
-   ![ Bekeerling in de dialoog van de Variatie van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+   ![&#x200B; Bekeerling in de dialoog van de Variatie van het Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
 
 1. Vul de vereiste velden in het dialoogvenster in:
 
@@ -106,7 +106,7 @@ Voeg indien nodig codes toe.
 
 Voor klanten met reeds bestaande erfenisaanbiedingen, zijn de **opties van het Malplaatje van de Aanbieding van het 0&rbrace; Gebruik zichtbaar wanneer het richten van componenten die** niet **de Fragmenten van de Ervaring zijn:**
 
-![ Bekeerling in de dialoog van de Variatie van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
+![&#x200B; Bekeerling in de dialoog van de Variatie van het Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## De aanbiedingenconsole {#offers-console}
 
@@ -114,7 +114,7 @@ Voor klanten met reeds bestaande erfenisaanbiedingen, zijn de **opties van het M
 >
 >Deze console wordt afgekeurd in de toekomst, aangezien het een erfenismanier aanbiedt om inhoud te personaliseren.
 >
->Je hebt wat tijd om je voor te bereiden. Zie hoe te [ uw bestaande erfenisaanbiedingen in een aanbieding van het ervaringsfragment omzetten ](#convert-legacy-offer-to-experience-fragment).
+>Je hebt wat tijd om je voor te bereiden. Zie hoe te [&#x200B; uw bestaande erfenisaanbiedingen in een aanbieding van het ervaringsfragment omzetten &#x200B;](#convert-legacy-offer-to-experience-fragment).
 
 Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen [&#128279;](/help/sites-cloud/authoring/personalization/targeted-content.md) kunt  gebruiken. Het creëren van aanbiedingen in de console van Aanbiedingen bespaart tijd wanneer verscheidene ervaringen de zelfde aanbieding vereisen:
 
@@ -127,11 +127,11 @@ De console van Aanbiedingen organiseert aanbiedingen door merk. Elk merk bevat e
 
 Maak een merk waaraan uw aanbiedingen zijn gekoppeld. Open een merk in de console van Aanbiedingen om tot zijn aanbiedingsbibliotheek toegang te hebben waar u omslagen en aanbiedingen kunt tot stand brengen.
 
-Wanneer u een merk gebruikend de console van Aanbiedingen creeert, verschijnt het ook in de [ console van Activiteiten ](/help/sites-cloud/authoring/personalization/activities.md) waar u activiteiten voor het merk kunt toevoegen en beheren.
+Wanneer u een merk gebruikend de console van Aanbiedingen creeert, verschijnt het ook in de [&#x200B; console van Activiteiten &#x200B;](/help/sites-cloud/authoring/personalization/activities.md) waar u activiteiten voor het merk kunt toevoegen en beheren.
 
 1. In de console van de Navigatie, uitgezochte **Personalization** > **Aanbiedingen**.
 
-   ![ die aan de console van Aanbiedingen navigeren ](/help/sites-cloud/authoring/assets/offers-navigation.png)
+   ![&#x200B; die aan de console van Aanbiedingen navigeren &#x200B;](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
 1. Selecteer **creeer** en dan **creeer** **Merk**.
 1. Selecteer het merkmalplaatje en selecteer **daarna**.
@@ -145,12 +145,12 @@ Voeg een map toe aan de aanbiedingsbibliotheek van een merk om aanbiedingen te o
 1. Open in de console Aanbiedingen de locatie waar u de map wilt maken. Open bijvoorbeeld het merk om een map op hoofdniveau te maken of open een andere map in de bibliotheek.
 1. Selecteer **creeer** > **creeer Omslag of Aanbieding**.
 
-   ![ Creërend aanbiedingsomslag ](/help/sites-cloud/authoring/assets/offers-create-folder.png)
+   ![&#x200B; Creërend aanbiedingsomslag &#x200B;](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
 1. Selecteer **Omslag** en klik **daarna**.
 1. Typ een titel voor de map zoals u deze wilt weergeven in de aanbiedingsbibliotheek en typ of selecteer tags.
 
-   ![ het bepalen van omslageigenschappen ](/help/sites-cloud/authoring/assets/offers-folder-properties.png)
+   ![&#x200B; het bepalen van omslageigenschappen &#x200B;](/help/sites-cloud/authoring/assets/offers-folder-properties.png)
 
 1. Selecteer **creeer**.
 
@@ -163,7 +163,7 @@ Nadat u het voorstel hebt gemaakt, kunt u het openen om de inhoud te ontwerpen.
 1. In de console van Aanbiedingen, open de plaats waar u de aanbieding wilt tot stand brengen. Open bijvoorbeeld het merk om een aanbieding op hoofdniveau te maken of open een map in de bibliotheek.
 1. Selecteer **creeer** > **creeer Omslag of Aanbieding**.
 
-   ![ Creërend aanbiedingsomslag ](/help/sites-cloud/authoring/assets/offers-create-folder.png)
+   ![&#x200B; Creërend aanbiedingsomslag &#x200B;](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
 1. Selecteer het **malplaatje van de Pagina van 0&rbrace; Aanbieding &lbrace;en selecteer dan** daarna **.**
 1. Typ een titel voor de aanbieding en selecteer of typ naar keuze één of meerdere markeringen aan vennoot met de aanbieding, dan uitgezocht **creeer**.
@@ -198,7 +198,7 @@ U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibli
 
 Zoek naar voorstellen van om het even welk merk gebruikend sleutelwoorden om de titel te passen.
 
-![ zoekend naar een aanbieding ](/help/sites-cloud/authoring/assets/offers-search.png)
+![&#x200B; zoekend naar een aanbieding &#x200B;](/help/sites-cloud/authoring/assets/offers-search.png)
 
 De huidige zoekcriteria worden naast de zoekresultaten weergegeven. U kunt de resultaten ook in oplopende of aflopende volgorde op kolom sorteren. U kunt een onderzoek van om het even welke omslag van om het even welke aanbiedingsbibliotheek uitvoeren. De zoekresultaten zijn hetzelfde, ongeacht de huidige map.
 

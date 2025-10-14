@@ -27,7 +27,7 @@ Er zijn twee manieren om aangepaste Oak-indexdefinities te maken:
 * `under /apps` (via een willekeurig aangepast inhoudspakket)
 * direct onder `/oak:index` pad
 
-Als [ verzekert de Index van Oak ](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) werd gebruikt, verzeker de Definities niet op AEM as a Cloud Service worden gesteund. Daarom moeten ze eerst worden omgezet in Oak Index Definition en vervolgens worden gemigreerd naar Custom Oak Index Definition die compatibel zijn met AEM as a Cloud Service, zoals hieronder beschreven:
+Als [&#x200B; verzekert de Index van Oak &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) werd gebruikt, verzeker de Definities niet op AEM as a Cloud Service worden gesteund. Daarom moeten ze eerst worden omgezet in Oak Index Definition en vervolgens worden gemigreerd naar Custom Oak Index Definition die compatibel zijn met AEM as a Cloud Service, zoals hieronder beschreven:
 
 * Als de eigenschap ignore is ingesteld op `true` , negeert of slaat u de definitie van de functie voor het controleren van de selectie over
 * De lus `jcr:primaryType` to `oak:QueryIndexDefinition` bijwerken
@@ -38,8 +38,8 @@ Als [ verzekert de Index van Oak ](https://adobe-consulting-services.github.io/a
 
 * Als Adobe I/O CLI: Adobe raadt u aan om de indexconverter te gebruiken als `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
 
-  Zie **[Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** leren om de stop te installeren en te gebruiken.
+  Zie **[Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** leren om de stop te installeren en te gebruiken.
 
 * Als standalone nut: De Convertor van de Index kan ook als standalone nut worden uitgevoerd.
 
-  Zie **[Middel van de Git: aem-cs-bron-migratie-index-omzetter ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** leren hoe te om dit hulpmiddel te gebruiken.
+  Zie **[Middel van de Git: aem-cs-bron-migratie-index-omzetter &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** leren hoe te om dit hulpmiddel te gebruiken.

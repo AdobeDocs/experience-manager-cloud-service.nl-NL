@@ -23,17 +23,17 @@ Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar van AEM te
 
 ## Zelfstudie voor WKND-ontwikkelaars {#wknd-developer-tutorial}
 
-![ WKND ](assets/wknd-tutorial-homepage.png)
+![&#x200B; WKND &#x200B;](assets/wknd-tutorial-homepage.png)
 
-[ het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) en leidt u door het creëren van een project van AEM gebruikend de recentste technologieën en beste praktijken.
+[&#x200B; het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) en leidt u door het creëren van een project van AEM gebruikend de recentste technologieën en beste praktijken.
 
 ## Basisconcepten {#core-concepts}
 
 De zelfstudie-implementatie gebruikt veel krachtige functies van AEM. De site wordt geïmplementeerd met:
 
-* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=nl-NL)
-* [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
-* [ Bewerkbare Malplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=nl-NL)
+* [&#x200B; Gemaakt AEM Project Archetype &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=nl-NL)
+* [&#x200B; Sling Models &#x200B;](https://sling.apache.org/documentation/bundles/models.html)
+* [&#x200B; Bewerkbare Malplaatjes &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=nl-NL)
 * [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=nl-NL)

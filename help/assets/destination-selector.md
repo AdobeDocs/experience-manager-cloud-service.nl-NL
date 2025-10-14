@@ -48,7 +48,7 @@ De integratie wordt gedaan door het pakket van de Selecteur van de Bestemming in
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
 
-* U integreert een [!DNL Adobe] toepassing op [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=nl-NL).
+* U integreert een [!DNL Adobe] toepassing op [&#x200B; Verenigde Shell &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=nl-NL).
 * Er is al een IMS-token gegenereerd voor verificatie.
 
 ## Vereisten {#prerequisites}
@@ -61,7 +61,7 @@ Definieer de voorwaarden in het `index.html` -bestand of een vergelijkbaar besta
 
 ## Installatie {#installation}
 
-De Selecteur van de bestemming is beschikbaar via zowel ESM CDN (bijvoorbeeld, [ esm.sh ](https://esm.sh/)/[ kabel ](https://www.skypack.dev/)) als [ UMD ](https://github.com/umdjs/umd) versie.
+De Selecteur van de bestemming is beschikbaar via zowel ESM CDN (bijvoorbeeld, [&#x200B; esm.sh &#x200B;](https://esm.sh/)/[&#x200B; kabel &#x200B;](https://www.skypack.dev/)) als [&#x200B; UMD &#x200B;](https://github.com/umdjs/umd) versie.
 
 In browsers die {versie 0} gebruiken UMD **(geadviseerd):**
 
@@ -143,7 +143,7 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het geselecteer
 | *dc:formaat* | string | De indeling van het element. |
 | *_page* | orderBy: string; count: number; order | Hiermee neemt u het paginanummer van het document op. |
 
-Voor een volledige lijst van eigenschappen en gedetailleerd voorbeeld, bezoek [ het Voorbeeld van de Code van de Selecteur van de Bestemming ](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+Voor een volledige lijst van eigenschappen en gedetailleerd voorbeeld, bezoek [&#x200B; het Voorbeeld van de Code van de Selecteur van de Bestemming &#x200B;](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 ### Voorbeeld voor de niet-SUSI-stroom {#non-ims-vanilla}
 
@@ -205,7 +205,7 @@ U kunt de eigenschappen van de Selector van de Bestemming gebruiken om de manier
 | *itemNameFormatter* | string | Nee | | Met deze eigenschap kunt u de itemnaam opmaken |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |  | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen gelokaliseerde aangepaste waarden kunt doorgeven via de `i18nSymbols` -proxy. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Om de opheffing uit te voeren, moet u een geldig [&#128279;](https://formatjs.io/docs/react-intl/api/#message-descriptor) voorwerp van de Beschrijver van het Bericht  tot de sleutel van `i18nSymbols` overgaan die u wilt met voeten treden. |
 | *inlineAlertSetup* | string | Nee | | Er wordt een waarschuwingsbericht toegevoegd dat u in de toepassing wilt doorgeven. U kunt bijvoorbeeld een waarschuwingsbericht toevoegen dat u geen toestemming hebt om deze map te openen. |
-| *intl* | Object | Nee | | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via de eigenschap `intl.locale` . Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> de gesteunde scènekoorden volgen [ ISO 639 - Codes ](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
+| *intl* | Object | Nee | | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via de eigenschap `intl.locale` . Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> de gesteunde scènekoorden volgen [&#x200B; ISO 639 - Codes &#x200B;](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 
 ## Voorbeelden voor het gebruik van de eigenschappen van de doelkiezer {#usage-examples}
 
@@ -215,34 +215,34 @@ U kunt de Eigenschappen van de Selecteur van de Bestemming [&#128279;](#destinat
 
 Met Doelkiezer kunt u een map maken om elementen op de desbetreffende locatie te uploaden, verplaatsen of kopiëren.
 
-![ creeer-omslag-bestemming-selecteur ](assets/create-folder-destination-selector.png)
+![&#x200B; creeer-omslag-bestemming-selecteur &#x200B;](assets/create-folder-destination-selector.png)
 
 ### Voorbeeld 2: weergavetype van doelkiezer opgeven
 
 Met Doelselectie wordt een grote verscheidenheid aan elementen in vier verschillende weergaven weergegeven, waaronder de lijstweergave, de rasterweergave, de galerijweergave en de watervalweergave. U kunt de eigenschap `viewType` gebruiken om het standaardweergavetype op te geven. De eigenschap `viewTypeOptions` wordt samen met de eigenschap `viewType` gebruikt om andere weergavetypen op te geven, zodat andere opties voor weergavetype in een vervolgkeuzelijst kunnen worden weergegeven. Er kan één argument worden gebruikt voor het geval u slechts één optie wilt weergeven.
 
-![ viewtype-bestemming-selecteur ](assets/viewtype-destination-selector.png)
+![&#x200B; viewtype-bestemming-selecteur &#x200B;](assets/viewtype-destination-selector.png)
 
 ### Voorbeeld 3: Pad initialiseren van Assets-map
 
 Gebruik de eigenschap `path` om de mapnaam te definiëren die automatisch wordt weergegeven wanneer de doelkiezer wordt weergegeven.
 
-![ initialize-folder-weg ](assets/initialize-folder-path.png)
+![&#x200B; initialize-folder-weg &#x200B;](assets/initialize-folder-path.png)
 
 ## Doelselectie gebruiken {#using-destination-selector}
 
 Als de doelkiezer is ingesteld en u bent geverifieerd dat u de doelkiezer als [!DNL Adobe Experience Manager] -toepassing kunt gebruiken, kunt u elementen selecteren of verschillende andere bewerkingen uitvoeren om te zoeken naar uw elementen in de opslagplaats. [!DNL Cloud Service]
 
-![ gebruiken-bestemming-selecteur ](assets/using-destination-selector.png)
+![&#x200B; gebruiken-bestemming-selecteur &#x200B;](assets/using-destination-selector.png)
 
-* **A**: [ bar van het Onderzoek ](#search-bar)
-* **B**: [ Sorterend ](#sorting)
-* **C**: [ Assets ](#assets-repo)
-* **D**: [ voeg achtervoegsel of prefix ](#add-suffix-or-prefix) toe
-* **E**: [ creeer nieuwe omslag ](#create-new-folder)
-* **F**: [ Mening ](#types-of-view)
-* **G**: [ Info ](#info)
-* **H**: [ Uitgezochte omslag ](#select-folder)
+* **A**: [&#x200B; bar van het Onderzoek &#x200B;](#search-bar)
+* **B**: [&#x200B; Sorterend &#x200B;](#sorting)
+* **C**: [&#x200B; Assets &#x200B;](#assets-repo)
+* **D**: [&#x200B; voeg achtervoegsel of prefix &#x200B;](#add-suffix-or-prefix) toe
+* **E**: [&#x200B; creeer nieuwe omslag &#x200B;](#create-new-folder)
+* **F**: [&#x200B; Mening &#x200B;](#types-of-view)
+* **G**: [&#x200B; Info &#x200B;](#info)
+* **H**: [&#x200B; Uitgezochte omslag &#x200B;](#select-folder)
 
 ### Zoekbalk {#search-bar}
 
@@ -268,10 +268,10 @@ Hiermee kunt u als [!DNL Cloud Service] een map maken in de doelmap van de [!DNL
 
 Met de optie Doelselectie kunt u het element in vier verschillende weergaven weergeven:
 
-* ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**]: De lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
+* ![&#x200B; lijstmening &#x200B;](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**]: De lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
 * ![&#128279;](assets/do-not-localize/grid-view.png) [!UICONTROL **de Mening van het Net**] van de netmening &lbrace;: De netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
-* ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**]: De galeriemening toont dossiers of omslagen in een centrum-gesloten horizontale lijst.
-* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Mening van de Waterval**]: De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
+* ![&#x200B; galeriemening &#x200B;](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**]: De galeriemening toont dossiers of omslagen in een centrum-gesloten horizontale lijst.
+* ![&#x200B; watervalmening &#x200B;](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Mening van de Waterval**]: De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
 
 ### Info {#info}
 
@@ -279,4 +279,4 @@ Met het informatie- of infopictogram kunt u metagegevens van het geselecteerde e
 
 ### Map selecteren {#select-folder}
 
-De Uitgezochte omslagknoop laat u activa selecteren voor diverse verrichtingen verbonden aan [ eigenschappen ](#destination-selector-properties) op bestemmingsselecteur uitvoeren.
+De Uitgezochte omslagknoop laat u activa selecteren voor diverse verrichtingen verbonden aan [&#x200B; eigenschappen &#x200B;](#destination-selector-properties) op bestemmingsselecteur uitvoeren.

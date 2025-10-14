@@ -18,11 +18,11 @@ Met Voorinstellingen voor afbeeldingen kunnen elementen dynamisch afbeeldingen v
 
 Daarnaast kunt u een voorinstelling voor een afbeelding kiezen die reageert (aangeduid met de knop **[!UICONTROL RESS]** nadat u deze hebt geselecteerd).
 
-[ de Beheerders kunnen beeld tot stand brengen en vormen vooraf instelt ](managing-image-presets.md).
+[&#x200B; de Beheerders kunnen beeld tot stand brengen en vormen vooraf instelt &#x200B;](managing-image-presets.md).
 
 >[!NOTE]
 >
->Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [ Slimme Beeldvorming ](imaging-faq.md) voor meer informatie.
+>Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [&#x200B; Slimme Beeldvorming &#x200B;](imaging-faq.md) voor meer informatie.
 
 U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen.
 
@@ -34,9 +34,9 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
    >
    >* Statische vertoningen worden weergegeven in de bovenste helft van het epaan. Dynamische uitvoeringen worden weergegeven in de onderste helft. Alleen bij dynamische uitvoeringen kunt u de URL gebruiken om de afbeelding weer te geven. De knop **[!UICONTROL URL]** wordt alleen weergegeven als u een dynamische uitvoering selecteert. De knop **[!UICONTROL RESS]** wordt alleen weergegeven als u een voorinstelling voor een responsieve afbeelding selecteert.
    >
-   >* Het systeem toont talrijke vertoningen wanneer u **[!UICONTROL Renditions]** in de mening van het Detail van activa selecteert. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [ Verhoogend het aantal beeld vooraf instelt dat vertoning ](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >* Het systeem toont talrijke vertoningen wanneer u **[!UICONTROL Renditions]** in de mening van het Detail van activa selecteert. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [&#x200B; Verhoogend het aantal beeld vooraf instelt dat vertoning &#x200B;](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-   ![ chlimage_1-208 ](assets/chlimage_1-208.png)
+   ![&#x200B; chlimage_1-208 &#x200B;](assets/chlimage_1-208.png)
 
 1. Voer een van de volgende handelingen uit:
 

@@ -28,7 +28,7 @@ Verzameling herbruikbare snelle patronen en voorbeelden die zijn geoptimaliseerd
 
 ## Deze Promptbibliotheek gebruiken
 
-Deze bibliotheek verstrekt herbruikbare snelle patronen voor gemeenschappelijke vorm-bouwende scenario&#39;s. Voor uitvoerige beste praktijken, zie de [ Begonnen Gids van de Bouwer van de Ervaring van Forms ](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
+Deze bibliotheek verstrekt herbruikbare snelle patronen voor gemeenschappelijke vorm-bouwende scenario&#39;s. Voor uitvoerige beste praktijken, zie de [&#x200B; Begonnen Gids van de Bouwer van de Ervaring van Forms &#x200B;](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
 ### Snelle tips voor deze bibliotheek
 
@@ -99,7 +99,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
 
 **wanneer te gebruiken:** wanneer u nieuwe vormen moet creëren of bestaande degenen wijzigen.
 
-**hoe te gebruiken:** kies één van twee benaderingen: creeer van Scratch of de Invoer &amp; zet (zie [ Begonnen Gids ](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
+**hoe te gebruiken:** kies één van twee benaderingen: creeer van Scratch of de Invoer &amp; zet (zie [&#x200B; Begonnen Gids &#x200B;](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
 **Vragen van het Voorbeeld - Eenvoudige Making van de Vorm:**
 
@@ -492,6 +492,6 @@ Gebruik de syntaxis `@fieldName` om te verwijzen naar bestaande velden in uw vra
 
 ### Controlelijst voor validatie
 
-Voor uitvoerige beste praktijken en bevestigingsrichtlijnen, zie de [ Begonnen Gids van de Bouwer van de Ervaring van Forms ](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
+Voor uitvoerige beste praktijken en bevestigingsrichtlijnen, zie de [&#x200B; Begonnen Gids van de Bouwer van de Ervaring van Forms &#x200B;](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
-*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en de nieuwe mogelijkheden van de Bouwer van de Ervaring van Forms. Voor de recentste eigenschappen en de voorbeelden, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL).*
+*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en de nieuwe mogelijkheden van de Bouwer van de Ervaring van Forms. Voor de recentste eigenschappen en de voorbeelden, controleer de [&#x200B; documentatie van AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL).*

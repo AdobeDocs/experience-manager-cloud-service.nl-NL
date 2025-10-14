@@ -22,13 +22,13 @@ Met dit document krijgt u meer inzicht in het maken en beheren van kanalen voor 
 
 * begrijpen hoe kanalen naar Screens Content Provider kunnen worden gemaakt
 * inhoud in uw kanalen beheren en bewerken
-* beheer taak en activeringsprogramma voor uw kanalen in [ de Dienstverlener van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=nl-NL)
+* beheer taak en activeringsprogramma voor uw kanalen in [&#x200B; de Dienstverlener van Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=nl-NL)
 
 ## Stappen voor het maken van een nieuw sequentiekanaal in Screens as a Cloud Service {#create-new-channel}
 
 >[!NOTE]
 >**Eerste vereisten**
->Alvorens deze sectie van de Gids te beginnen, herzie [ Creërend en het Leiden Projecten in Screens as a Cloud Service ](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>Alvorens deze sectie van de Gids te beginnen, herzie [&#x200B; Creërend en het Leiden Projecten in Screens as a Cloud Service &#x200B;](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Voer de onderstaande stappen uit om een volgnummer te maken in Screens as a Cloud Service:
 
@@ -38,22 +38,22 @@ Voer de onderstaande stappen uit om een volgnummer te maken in Screens as a Clou
 
 1. Selecteer de **omslag van Kanalen** van uw project, zoals **FirstDigitalExperience** -> **Kanalen** en klik **creeer** van de actiebar.
 
-   ![ kanaal-create1 ](/help/screens-cloud/assets/create-content/channel-create1.png)
+   ![&#x200B; kanaal-create1 &#x200B;](/help/screens-cloud/assets/create-content/channel-create1.png)
 
 1. Selecteer het malplaatje, zoals, **Kanaal van de Opeenvolging** van **creeer** tovenaar en klik **daarna**.
 
-   ![ kanaal-create2 ](/help/screens-cloud/assets/create-content/channel-create2.png)
+   ![&#x200B; kanaal-create2 &#x200B;](/help/screens-cloud/assets/create-content/channel-create2.png)
 
    >[!NOTE]
-   > **creeer** tovenaar verstrekt verschillende soorten malplaatjes terwijl het creëren van een kanaal. Zie [ Beschikbare Malplaatjes ](#available-templates) in Create Tovenaar voor meer details.
+   > **creeer** tovenaar verstrekt verschillende soorten malplaatjes terwijl het creëren van een kanaal. Zie [&#x200B; Beschikbare Malplaatjes &#x200B;](#available-templates) in Create Tovenaar voor meer details.
 
 1. Ga de naam van uw opeenvolgingskanaal, zoals in, **LoopingChannelOne** en klik **creeer**.
 
-   ![ kanaal-create3 ](/help/screens-cloud/assets/create-content/channel-create3.png)
+   ![&#x200B; kanaal-create3 &#x200B;](/help/screens-cloud/assets/create-content/channel-create3.png)
 
    U zult nu a **LoopingChannelOne** in uw omslag van Kanalen in uw project van AEM Screens zien.
 
-   Nadat u het kanaal hebt gemaakt, kunt u nu inhoud aan het kanaal toevoegen. Zie [ Toevoegend Inhoud aan een Kanaal ](#add-content) om te leren hoe te om activa (beelden/video&#39;s) aan uw kanaal toe te voegen.
+   Nadat u het kanaal hebt gemaakt, kunt u nu inhoud aan het kanaal toevoegen. Zie [&#x200B; Toevoegend Inhoud aan een Kanaal &#x200B;](#add-content) om te leren hoe te om activa (beelden/video&#39;s) aan uw kanaal toe te voegen.
 
 ## Een kanaal beheren {#managing-channels}
 
@@ -61,7 +61,7 @@ U kunt een kanaal bewerken, weergeven, eigenschappen en dashboard, kopiëren, vo
 
 Navigeer naar het kanaal vanuit uw project en selecteer het kanaal, zoals in de onderstaande afbeelding wordt getoond. U kunt nu opties selecteren, zoals het bewerken van het kanaal, het weergeven van eigenschappen, het voorvertonen van inhoud, het beheren van publicatie of het verwijderen van het kanaal uit de actiebalk.
 
-![ channelprop1 ](/help/screens-cloud/assets/create-content/channelprop1.png)
+![&#x200B; channelprop1 &#x200B;](/help/screens-cloud/assets/create-content/channelprop1.png)
 
 ### Inhoud toevoegen aan een kanaal {#add-content}
 
@@ -69,17 +69,17 @@ Ga als volgt te werk om inhoud aan een kanaal toe te voegen of te bewerken:
 
 1. Selecteer het kanaal dat u wilt bewerken, zoals in de onderstaande afbeelding wordt getoond. Klik **uitgeven** van de hoogste linkerhoek van de actiebar om de redacteur te openen.
 
-   ![ geef-channel1 uit ](/help/screens-cloud/assets/create-content/edit-channel1.png)
+   ![&#x200B; geef-channel1 uit &#x200B;](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
 1. In de editor kunt u elementen/componenten aan uw kanaal toevoegen die u wilt publiceren.
 
 1. Sleep de elementen vanuit het linkerdeelvenster en voeg deze toe aan de editor.
 
-   ![ uitgeven-channel2 ](/help/screens-cloud/assets/create-content/edit-channel2.png)
+   ![&#x200B; uitgeven-channel2 &#x200B;](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
    >Klik **Voorproef** aan voorproef de inhoud van uw kanaal.
-   >![ geef-kanaalvoorproef uit ](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
+   >![&#x200B; geef-kanaalvoorproef uit &#x200B;](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Beschikbare sjablonen in wizard Maken {#available-templates}
 
@@ -95,7 +95,7 @@ De volgende malplaatjes zijn beschikbaar terwijl het gebruiken van **creeer** ka
 
 Met deze functie kunt u een standaard activeringsschema voor een kanaal definiëren en dit standaard gebruiken voor elke toewijzing voor een weergave. Dit verstrekt een methode zodat de lastige programmadefinitie niet te hoeven worden herhaald.
 
-1. Navigeer aan de [ Leverancier van de Diensten van Screens ](https://experience.adobe.com/screens).
+1. Navigeer aan de [&#x200B; Leverancier van de Diensten van Screens &#x200B;](https://experience.adobe.com/screens).
 
 ### Standaardtoewijzingsdetails maken voor een kanaal {#create-default}
 
@@ -123,7 +123,7 @@ In deze tegel wordt de volgende informatie weergegeven:
 Kanalen met standaardtoewijzingsdetails kunnen op dezelfde manier worden weergegeven als gewone kanalen, met de toegevoegde optie om de standaardtoewijzingsdetails te gebruiken in plaats van telkens handmatig aangepaste details te definiëren.
 
 1. Navigeer aan de pagina van vertoningsdetails u het kanaal aan wilt toewijzen en **klikken wijst kanaal** toe.
-Alternatief, selecteer de gewenste vertoning in de [ inventaris ](https://experience.adobe.com/screens/displays) mening en klik **toewijzen kanaal**.
+Alternatief, selecteer de gewenste vertoning in de [&#x200B; inventaris &#x200B;](https://experience.adobe.com/screens/displays) mening en klik **toewijzen kanaal**.
 1. Het dialoogvenster Kanaaltoewijzing wordt geopend.
 
    ![afbeelding](/help/screens-cloud/assets/display/Assignments4.png)
@@ -179,4 +179,4 @@ Dit kan dan ook leiden tot lege schermen als er geen alternatieve inhoud op die 
 
 ## Volgende functies {#whats-next}
 
-Nu u een AEM Screens-kanaal hebt ingesteld in uw project, moet u uw kanaal publiceren. Zie [ het Publiceren Kanalen in Screens as a Cloud Service ](manage-publish.md) alvorens uw spelers van de Leverancier van de Diensten van Screens te beheren.
+Nu u een AEM Screens-kanaal hebt ingesteld in uw project, moet u uw kanaal publiceren. Zie [&#x200B; het Publiceren Kanalen in Screens as a Cloud Service &#x200B;](manage-publish.md) alvorens uw spelers van de Leverancier van de Diensten van Screens te beheren.

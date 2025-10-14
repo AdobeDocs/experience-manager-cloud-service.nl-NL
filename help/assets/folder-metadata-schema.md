@@ -36,13 +36,13 @@ U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metage
 1. Selecteer op de pagina Schema Forms het formulier dat u hebt gemaakt en selecteer vervolgens het pictogram **[!UICONTROL Edit]** op de werkbalk.
 1. Selecteer op de pagina van de Editor voor het metagegevensschema van de map het pictogram **[!UICONTROL +]** om een tabblad aan het formulier toe te voegen. Als u de naam van het tabblad wilt wijzigen, selecteert u de standaardnaam en geeft u de nieuwe naam op onder **[!UICONTROL Settings]** .
 
-   ![ custom_tab ](assets/custom_tab.png)
+   ![&#x200B; custom_tab &#x200B;](assets/custom_tab.png)
 
    Selecteer het pictogram **[!UICONTROL +]** als u meer tabbladen wilt toevoegen. Selecteer **[!UICONTROL X]** om een tabblad te verwijderen.
 
 1. Voeg op het actieve tabblad een of meer componenten toe vanaf het tabblad **[!UICONTROL Build Form]** .
 
-   ![ adding_components ](assets/adding_components.png)
+   ![&#x200B; adding_components &#x200B;](assets/adding_components.png)
 
    Als u meerdere tabbladen maakt, selecteert u een bepaald tabblad om componenten toe te voegen.
 
@@ -50,7 +50,7 @@ U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metage
 
    Verwijder zo nodig een component van het tabblad **[!UICONTROL Settings]** .
 
-   ![ configure_properties ](assets/configure_properties.png)
+   ![&#x200B; configure_properties &#x200B;](assets/configure_properties.png)
 
 1. Selecteer **[!UICONTROL Save]** op de werkbalk om de wijzigingen op te slaan.
 
@@ -129,7 +129,7 @@ Neem geen spatie op in het eigenschapspad om ervoor te zorgen dat de component c
 
 U kunt de schemaformulieren van de omslagmeta-gegevens van het Schema Forms van de Meta-gegevens van de Omslag schrappen pagina. Als u een formulier wilt verwijderen, selecteert u het en selecteert u het pictogram Verwijderen op de werkbalk.
 
-![ delete_form ](assets/delete_form.png)
+![&#x200B; delete_form &#x200B;](assets/delete_form.png)
 
 ## Een schema voor metagegevens van mappen toewijzen {#assign-a-folder-metadata-schema}
 
@@ -146,11 +146,11 @@ Als u een metagegevensschema voor een map configureert, wordt het pad naar het s
 1. Selecteer de map waarop u het schema wilt toepassen en selecteer vervolgens **[!UICONTROL Apply]** . Als er al een metagegevensschema op de map is toegepast, verschijnt er een waarschuwingsbericht dat u het bestaande metagegevensschema wilt overschrijven. Selecteer **[!UICONTROL Overwrite]** .
 1. Open de eigenschappen van de metagegevens voor de map waarop u het metagegevensschema hebt toegepast.
 
-   ![ folder_properties ](assets/folder_properties.png)
+   ![&#x200B; folder_properties &#x200B;](assets/folder_properties.png)
 
    Selecteer de tab **[!UICONTROL Folder Metadata]** om de velden met metagegevens van de map weer te geven.
 
-   ![ folder_metadata_properties ](assets/folder_metadata_properties.png)
+   ![&#x200B; folder_metadata_properties &#x200B;](assets/folder_metadata_properties.png)
 
 ### Een schema toewijzen bij het maken van een map {#assign-a-schema-when-creating-a-folder}
 
@@ -160,7 +160,7 @@ U kunt een schema van omslagmeta-gegevens toewijzen wanneer het creëren van een
 1. Geef een titel en naam voor de map op.
 1. Selecteer het gewenste schema in de lijst Metagegevensschema van map. Selecteer vervolgens **[!UICONTROL Create]** .
 
-   ![ select_schema ](assets/select_schema.png)
+   ![&#x200B; select_schema &#x200B;](assets/select_schema.png)
 
 1. Open de eigenschappen van de metagegevens voor de map waarop u het metagegevensschema hebt toegepast.
 1. Selecteer de tab **[!UICONTROL Folder Metadata]** om de velden met metagegevens van de map weer te geven.
@@ -171,7 +171,7 @@ Open de eigenschappen voor een map die met een mapmetadataschema is geconfiguree
 
 Voer waarden in voor de metagegevens in de verschillende velden en selecteer **[!UICONTROL Save]** om de waarden op te slaan. De waarden die u opgeeft, worden opgeslagen in het mapknooppunt in de CRX-opslagplaats.
 
-![ folder_metadata_properties-1 ](assets/folder_metadata_properties-1.png)
+![&#x200B; folder_metadata_properties-1 &#x200B;](assets/folder_metadata_properties-1.png)
 
 **zie ook**
 

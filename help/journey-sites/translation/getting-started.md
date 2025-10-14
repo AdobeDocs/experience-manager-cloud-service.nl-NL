@@ -21,7 +21,7 @@ Leer hoe u uw AEM Sites-inhoud kunt ordenen en hoe AEM vertaalhulpmiddelen werke
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de de vertaalreis van AEM Sites, [ Leer over de inhoud van AEM Sites en hoe te in AEM ](learn-about.md) te vertalen u de basistheorie van AEM Sites leerde en u zou nu moeten:
+In het vorige document van de de vertaalreis van AEM Sites, [&#x200B; Leer over de inhoud van AEM Sites en hoe te in AEM &#x200B;](learn-about.md) te vertalen u de basistheorie van AEM Sites leerde en u zou nu moeten:
 
 * Begrijp de basisbeginselen van het maken van AEM Sites-inhoud.
 * Zorg dat u weet hoe AEM vertaling ondersteunt.
@@ -50,7 +50,7 @@ Er zijn verschillende vereisten voordat u begint met het vertalen van AEM inhoud
 
 >[!TIP]
 >
->Als u niet vertrouwd bent met het gebruiken van grote CMS als AEM, overweeg het herzien van de [ Basis Behandelende ](/help/sites-cloud/authoring/basic-handling.md) documentatie alvorens te werk te gaan. De documentatie van de Basisbehandeling maakt geen deel uit van de reis. Ga daarom terug naar deze pagina wanneer u klaar bent.
+>Als u niet vertrouwd bent met het gebruiken van grote CMS als AEM, overweeg het herzien van de [&#x200B; Basis Behandelende &#x200B;](/help/sites-cloud/authoring/basic-handling.md) documentatie alvorens te werk te gaan. De documentatie van de Basisbehandeling maakt geen deel uit van de reis. Ga daarom terug naar deze pagina wanneer u klaar bent.
 
 ### Gereedschappen {#tools}
 
@@ -72,19 +72,19 @@ Toegang tot de siteconsole:
 1. De siteconsole wordt geopend op het hoogste niveau van uw inhoud.
 1. Zorg ervoor dat de **Mening van de Kolom** gebruikend de meningsselecteur bij het top-right van het venster wordt geselecteerd.
 
-   ![ Selecterend kolommening ](assets/selecting-column-view.png)
+   ![&#x200B; Selecterend kolommening &#x200B;](assets/selecting-column-view.png)
 
 1. Als u op een item in een kolom tikt of erop klikt, wordt de onderliggende inhoud weergegeven in de hiërarchie in de kolom rechts.
 
-   ![ de hiërarchie van de Inhoud ](assets/sites-console-hierarchy.png)
+   ![&#x200B; de hiërarchie van de Inhoud &#x200B;](assets/sites-console-hierarchy.png)
 
 1. Door op het selectievakje van een item in een kolom te tikken of erop te klikken, wordt dat item geselecteerd en worden de details van het geselecteerde item in de kolom rechts weergegeven, zodat verschillende beschikbare acties voor het geselecteerde item op de bovenstaande werkbalk zichtbaar worden.
 
-   ![ selectie van de Inhoud ](assets/sites-console-selection.png)
+   ![&#x200B; selectie van de Inhoud &#x200B;](assets/sites-console-selection.png)
 
 1. Door op de spoorselecteur bij hoogste linkerzijde te tikken of te klikken, kunt u de **mening van de Boom van de Inhoud** voor een boomstructuuroverzicht van uw inhoud ook tonen.
 
-   ![ de boommening van de Inhoud ](assets/sites-console-content-tree.png)
+   ![&#x200B; de boommening van de Inhoud &#x200B;](assets/sites-console-content-tree.png)
 
 Met deze eenvoudige gereedschappen kunt u op intuïtieve wijze door de inhoudsstructuur navigeren.
 
@@ -102,13 +102,13 @@ Een pagina bewerken:
 
 1. Gebruik de siteconsole om een pagina te zoeken en te selecteren. U moet het selectievakje van een afzonderlijke pagina inschakelen om deze te selecteren.
 
-   ![ Selecterend een pagina om uit te geven ](assets/sites-editor-select-page.png)
+   ![&#x200B; Selecterend een pagina om uit te geven &#x200B;](assets/sites-editor-select-page.png)
 
 1. Selecteer **uitgeven** optie in de toolbar.
 1. De site-editor wordt geopend en de geselecteerde pagina wordt geladen voor bewerking in een nieuw browsertabblad.
 1. Wanneer u de muis over inhoud beweegt of hierop tikt, worden kiezers voor afzonderlijke componenten weergegeven. Componenten zijn de bouwstenen voor slepen en neerzetten die de pagina vormen.
 
-   ![ Uitgevend een pagina ](assets/sites-editor-title.png)
+   ![&#x200B; Uitgevend een pagina &#x200B;](assets/sites-editor-title.png)
 
 U kunt naar de plaatsenconsole terugkeren door terug naar dat lusje in uw browser op elk ogenblik te schakelen. Met de site-editor kunt u de inhoud van de pagina snel weergeven als de auteurs van de inhoud en uw publiek deze kunnen zien.
 
@@ -204,13 +204,13 @@ Nu u dit deel van de AEM Sites-vertaalreis hebt voltooid, moet u:
 * Begrijp hoe AEM inhoud opslaat.
 * Wees vertrouwd met AEM vertaalhulpmiddelen.
 
-Bouw op deze kennis voort en ga uw de vertaalreis van AEM Sites door het document [ opnieuw te bekijken vormt de vertaalschakelaar ](configure-connector.md) waar u leert hoe te om AEM met de vertaaldienst te verbinden.|
+Bouw op deze kennis voort en ga uw de vertaalreis van AEM Sites door het document [&#x200B; opnieuw te bekijken vormt de vertaalschakelaar &#x200B;](configure-connector.md) waar u leert hoe te om AEM met de vertaaldienst te verbinden.|
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl wordt geadviseerd dat u zich op het volgende deel van de vertaalreis door het document [ te herzien de vertaalschakelaar ](configure-connector.md) beweegt is het volgende wat extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl wordt geadviseerd dat u zich op het volgende deel van de vertaalreis door het document [&#x200B; te herzien de vertaalschakelaar &#x200B;](configure-connector.md) beweegt is het volgende wat extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [ AEM Basisbehandeling ](/help/sites-cloud/authoring/basic-handling.md) - leer de grondbeginselen van AEM UI om essentiële taken gemakkelijk te kunnen navigeren en uitvoeren zoals het vinden van uw inhoud.
-* [ identificerend Inhoud om ](/help/sites-cloud/administering/translation/rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.
-* [ Vormend het Kader van de Integratie van de Vertaling ](/help/sites-cloud/administering/translation/integration-framework.md) - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
-* [ het Leiden de Projecten van de Vertaling ](/help/sites-cloud/administering/translation/managing-projects.md) - leer hoe te om zowel machine als menselijke vertaalprojecten in AEM tot stand te brengen en te leiden.
+* [&#x200B; AEM Basisbehandeling &#x200B;](/help/sites-cloud/authoring/basic-handling.md) - leer de grondbeginselen van AEM UI om essentiële taken gemakkelijk te kunnen navigeren en uitvoeren zoals het vinden van uw inhoud.
+* [&#x200B; identificerend Inhoud om &#x200B;](/help/sites-cloud/administering/translation/rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.
+* [&#x200B; Vormend het Kader van de Integratie van de Vertaling &#x200B;](/help/sites-cloud/administering/translation/integration-framework.md) - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
+* [&#x200B; het Leiden de Projecten van de Vertaling &#x200B;](/help/sites-cloud/administering/translation/managing-projects.md) - leer hoe te om zowel machine als menselijke vertaalprojecten in AEM tot stand te brengen en te leiden.

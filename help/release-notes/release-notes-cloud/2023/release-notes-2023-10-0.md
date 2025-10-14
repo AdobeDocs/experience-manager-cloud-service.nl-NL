@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij de [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -31,7 +31,7 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
+U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](/help/release-notes/maintenance/latest.md) vinden.
 
 ## Video vrijgeven {#release-video}
 
@@ -49,21 +49,21 @@ Bekijk de video Overzicht van de release van oktober 2023 voor een overzicht van
 
 * Minder tijd en moeite in het algemeen om nieuwe elementen te maken of nieuwe versies van bestaande elementen te maken
 
-  ![ omvat activa van Assets toe:voegen-op ](/help/assets/assets/aem-assets-add-on-include-assets.png)
+  ![&#x200B; omvat activa van Assets toe:voegen-op &#x200B;](/help/assets/assets/aem-assets-add-on-include-assets.png)
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-features}
 
 * **Bulk de invoeractiva van Gegevensbron OneDrive**: De beheerders hebben nu de capaciteit om groot aantal activa van OneDrive in AEM Assets [&#128279;](/help/assets/bulk-import-assets-view.md#onedrive-developer-application) in te voeren.  Tot de bijgewerkte lijst voor de ondersteunde gegevensbronnen voor bulkimport behoren Azure, AWS, Google Cloud, Dropbox en OneDrive.
 
-  ![ wijs meta-gegevensvorm aan een omslag ](/help/assets/assets/bulk-import-source-details-onedrive.png) toe
+  ![&#x200B; wijs meta-gegevensvorm aan een omslag &#x200B;](/help/assets/assets/bulk-import-source-details-onedrive.png) toe
 
 * **Cross-Org de Steun van de Entitlement voor Bibliotheken**: Experience Manager Assets laat u nu toe om toegang tot de bibliotheken van het Creative Cloud in een verschillende organisatie te vormen IMS. Het maakt gemakkelijker toegang tot de recentste productoverschrijdende werkschema&#39;s tussen Creative Cloud en Experience Manager mogelijk en vermindert tijd en moeite voor creatieve personen.
 
 ### Functies voor pre-release beschikbaar in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [ Multi-caption en multi-audio spoorsteun voor video&#39;s in Dynamic Media ](/help/assets/dynamic-media/video.md#about-msma) - u kunt veelvoudige titels en veelvoudige audiosporen aan een primaire video nu gemakkelijk toevoegen. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+* **Dynamic Media**: [&#x200B; Multi-caption en multi-audio spoorsteun voor video&#39;s in Dynamic Media &#x200B;](/help/assets/dynamic-media/video.md#about-msma) - u kunt veelvoudige titels en veelvoudige audiosporen aan een primaire video nu gemakkelijk toevoegen. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
-  ![ Bijschriften en Audiosporen tabel op de pagina van Eigenschappen van een geselecteerd videoelement.](/help/release-notes/assets/msma-aem-cs.png)*Bijschriften en Audiosporen lusje op de pagina van Eigenschappen van geselecteerde videoactiva.*
+  ![&#x200B; Bijschriften en Audiosporen tabel op de pagina van Eigenschappen van een geselecteerd videoelement.](/help/release-notes/assets/msma-aem-cs.png)*Bijschriften en Audiosporen lusje op de pagina van Eigenschappen van geselecteerde videoactiva.*
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -73,7 +73,7 @@ Bekijk de video Overzicht van de release van oktober 2023 voor een overzicht van
 
 * **Thema&#39;s en malplaatjes**: Kickstart uw proces van de vormverwezenlijking met onze nieuwe thema&#39;s en malplaatjes, die aan macht zowel gekruiste beroeps als nieuwe vormauteurs worden aangepast. Dankzij deze nauwgezette thema&#39;s en sjablonen, die naadloos zijn gebouwd met Adaptive Forms Core Components, kunt u snel formulieren maken voor veelgebruikte toepassingen.
 
-  ![ uit de vakmalplaatjes ](/help/forms/assets/form-templates-ootb.png)
+  ![&#x200B; uit de vakmalplaatjes &#x200B;](/help/forms/assets/form-templates-ootb.png)
 
 
 ### Programma voor vroegtijdige adoptie {#forms-early-adopter}
@@ -86,9 +86,9 @@ Bekijk de video Overzicht van de release van oktober 2023 voor een overzicht van
 
 ### Regels voor verkeersfilters, inclusief WAF {#traffic-filter-rules-waf}
 
-[ verkeer van de Filter bij de Adobe Beheerde CDN ](/help/security/traffic-filter-rules-including-waf.md) door regels te verklaren die websiteverkeer door eigenschappen met inbegrip van url, IP adres, en gebruikersagent aanpassen - of de grenzen van het douaneverkeer plaatsen om tegen aanvallen van Dos te beschermen. Klanten kunnen ook een licentie verlenen voor een set geavanceerde WAF-regels (Web Application Firewall) voor extra bescherming tegen geavanceerde websitebedreigingen.
+[&#x200B; verkeer van de Filter bij de Adobe Beheerde CDN &#x200B;](/help/security/traffic-filter-rules-including-waf.md) door regels te verklaren die websiteverkeer door eigenschappen met inbegrip van url, IP adres, en gebruikersagent aanpassen - of de grenzen van het douaneverkeer plaatsen om tegen aanvallen van Dos te beschermen. Klanten kunnen ook een licentie verlenen voor een set geavanceerde WAF-regels (Web Application Firewall) voor extra bescherming tegen geavanceerde websitebedreigingen.
 
-Wij moedigen u aan om vertrouwd te worden met de regels van de verkeersfilter door [ het proberen van een leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=nl-NL)! Het begeleidt u door vestiging een nieuwe Pijpleiding van de Configuratie van Cloud Manager, verklarende regels in een configuratiedossier, en het analyseren van CDN- logboeken voor kwaadwillig verkeer.
+Wij moedigen u aan om vertrouwd te worden met de regels van de verkeersfilter door [&#x200B; het proberen van een leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=nl-NL)! Het begeleidt u door vestiging een nieuwe Pijpleiding van de Configuratie van Cloud Manager, verklarende regels in een configuratiedossier, en het analyseren van CDN- logboeken voor kwaadwillig verkeer.
 
 De filterregels van het verkeer zijn nu beschikbaar op ontwikkelomgevingen, met een geleidelijke uitrol aan stadium en prod milieu&#39;s in November. U kunt vroegere toegang op stadium en prod verzoeken door **aemcs-waf-adopter@adobe.com** te e-mailen.
 
@@ -96,8 +96,8 @@ De geavanceerde het verkeersfilterregels van WAF kunnen later dit jaar door de V
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.

@@ -20,7 +20,7 @@ AEM biedt een console voor het beheer van de verschillende vertalingen van tekst
 
 Gebruik het gereedschap Vertaler voor het beheren van Engelse tekenreeksen en de bijbehorende vertalingen. De woordenboeken worden bijvoorbeeld gemaakt in de opslagplaats `/apps/myproject/i18n` .
 
-Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor het weergeven van de gebruikersinterface van de component in verschillende talen. Als u pagina&#39;s wilt vertalen, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-cloud/administering/translation/overview.md).
+Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor het weergeven van de gebruikersinterface van de component in verschillende talen. Als u pagina&#39;s wilt vertalen, zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](/help/sites-cloud/administering/translation/overview.md).
 
 ## Woordenboek maken {#creating-a-dictionary}
 
@@ -44,9 +44,9 @@ Ontwikkelaars kunnen aanvullende woordenboeken maken door een basisknooppunt (`s
 
 >[!NOTE]
 >
->Dit is de structuur van de [ Verschuivende i18n module ](https://sling.apache.org/site/internationalization-support.html).
+>Dit is de structuur van de [&#x200B; Verschuivende i18n module &#x200B;](https://sling.apache.org/site/internationalization-support.html).
 
-Zodra gecreeerd in een AEM bewaarplaats GitHub, kunnen de woordenboeken via een AEM [ CI/CD pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) worden opgesteld.
+Zodra gecreeerd in een AEM bewaarplaats GitHub, kunnen de woordenboeken via een AEM [&#x200B; CI/CD pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) worden opgesteld.
 
 ## Locaties woordenboek {#dictionary-locations}
 
@@ -58,7 +58,7 @@ Bij het bepalen van de plaats waar i18n-woordenboeken, bron- en taalkopieën moe
 
 * `/apps`
    * standaardlocatie voor woordenboeken met componenttekenreeksvertalingen, volgens AEM archetype en WKND-voorbeeldcode
-   * hoogste het teruggeven orde, per het Verdelen ([ de Hiërarchieën van het Onderzoek van de Bundel van het Middel ](https://sling.apache.org/documentation/bundles/internationalization-support-i18n.html#resourcebundle-hierarchies))
+   * hoogste het teruggeven orde, per het Verdelen ([&#x200B; de Hiërarchieën van het Onderzoek van de Bundel van het Middel &#x200B;](https://sling.apache.org/documentation/bundles/internationalization-support-i18n.html#resourcebundle-hierarchies))
    * maar het is niet mogelijk om woordenboeken tijdens runtime te bewerken of te vertalen, aangezien `/apps` in AEM as a Cloud Service-omgevingen onveranderlijk is
 
 * `/content/cq:i18n`

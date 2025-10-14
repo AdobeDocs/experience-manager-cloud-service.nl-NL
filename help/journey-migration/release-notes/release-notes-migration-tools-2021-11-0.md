@@ -17,7 +17,7 @@ Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratieh
 
 >[!NOTE]
 >
->Zie [ Huidige Nota&#39;s van de Versie voor Adobe Experience Manager as a Cloud Service ](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de recentste versienota&#39;s.
+>Zie [&#x200B; Huidige Nota&#39;s van de Versie voor Adobe Experience Manager as a Cloud Service &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de recentste versienota&#39;s.
 
 ## Inhoud overbrengen {#ctt-release}
 
@@ -27,6 +27,6 @@ De datum van de Versie voor het Hulpmiddel van de Overdracht van de Inhoud v1.7.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Steun voor een facultatieve [ pre-exemplaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL) stap die aan gebruik met het Hulpmiddel van de Overdracht van de Inhoud wordt toegevoegd wanneer de bron AEM instantie wordt gevormd om de Opslag van de Gegevens van het Dossier te gebruiken om de extractiefase beduidend te versnellen.
+* Steun voor een facultatieve [&#x200B; pre-exemplaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL) stap die aan gebruik met het Hulpmiddel van de Overdracht van de Inhoud wordt toegevoegd wanneer de bron AEM instantie wordt gevormd om de Opslag van de Gegevens van het Dossier te gebruiken om de extractiefase beduidend te versnellen.
 
 * Aanvullende beschrijvende berichten die worden toegevoegd aan de invoerfase in de gebruikersinterface van het gereedschap Inhoudsoverdracht om aan te geven wanneer de stappen voor indexering en herstel van het mongo in uitvoering zijn.

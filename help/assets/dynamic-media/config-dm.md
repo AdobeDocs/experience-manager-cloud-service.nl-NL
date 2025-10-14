@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Als u Adobe Experience Manager as a Cloud Service voor verschillende omgevingen gebruikt, zoals ontwikkeling, staging en live productie, configureert u Dynamic Media Cloud Services voor elk van deze omgevingen.
 
-Zie ook [ een Dynamische alias rekening van het Bedrijf van Media vormen ](/help/assets/dynamic-media/dm-alias-account.md)
+Zie ook [&#x200B; een Dynamische alias rekening van het Bedrijf van Media vormen &#x200B;](/help/assets/dynamic-media/dm-alias-account.md)
 
 >[!IMPORTANT]
 >
@@ -40,16 +40,16 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 1. Nadat de vertoningen worden geproduceerd, kan Experience Manager as a Cloud Service veilig tot de verre Dynamische vertoningen van Media toegang hebben en voorproef (geen binaire getallen worden teruggestuurd naar de instantie van Experience Manager as a Cloud Service).
 1. Nadat de inhoud klaar is om te publiceren en goed te keuren, brengt het de Dynamische dienst van Media aan duw inhoud aan leveringsservers en geheim voorgeheugeninhoud bij CDN (het Netwerk van de Levering van de Inhoud) teweeg.
 
-![ chlimage_1-550 ](assets/chlimage_1-550.png)
+![&#x200B; chlimage_1-550 &#x200B;](assets/chlimage_1-550.png)
 
 >[!NOTE]
 >
 >Voor de volgende lijst met functies moet u de uit-van-de-box CDN gebruiken die is gebundeld met Adobe Experience Manager - Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functies.
 >
 >* [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
->* [ de ongeldigverklaring van het Geheime voorgeheugen ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
->* [ Hotlink bescherming ](/help/assets/dynamic-media/hotlink-protection.md)
->* [ HTTP/2 levering van inhoud ](/help/assets/dynamic-media/http2faq.md)
+>* [&#x200B; de ongeldigverklaring van het Geheime voorgeheugen &#x200B;](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [&#x200B; Hotlink bescherming &#x200B;](/help/assets/dynamic-media/hotlink-protection.md)
+>* [&#x200B; HTTP/2 levering van inhoud &#x200B;](/help/assets/dynamic-media/http2faq.md)
 >* URL omleiden op CDN-niveau
 >* Akamai ChinaCDN (voor optimale levering in China)
 
@@ -99,17 +99,17 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    Als u **[!UICONTROL Cancel]** in het dialoogvenster **[!UICONTROL Change Password]** hebt geselecteerd, moet u nog steeds een nieuw wachtwoord invoeren wanneer u de gemaakte dynamische mediaconfiguratie opslaat.
 
-   Zie ook [ Verandering het wachtwoord in Dynamische Media ](#change-dm-password).
+   Zie ook [&#x200B; Verandering het wachtwoord in Dynamische Media &#x200B;](#change-dm-password).
 
 1. Wanneer de verbinding tot stand is gebracht, kunt u het volgende instellen:
 
    | Eigenschap | Beschrijving |
    |---|---|
-   | Bedrijf | De naam van de Dynamic Media-account.<br>**Belangrijk**: Slechts één Dynamische Configuratie van Media in de Diensten van de Wolk wordt gesteund op een geval van Experience Manager; voeg niet meer dan één configuratie toe. Adobe steunt *niet* of adviseert het vormen van veelvoudige Dynamische configuraties van Media op één enkele instantie van Experience Manager.<!-- CQDOC-19579 and CQDOC-19612 --><br> zie ook [ een Dynamische alias rekening van het Bedrijf van Media ](/help/assets/dynamic-media/dm-alias-account.md) vormen. |
+   | Bedrijf | De naam van de Dynamic Media-account.<br>**Belangrijk**: Slechts één Dynamische Configuratie van Media in de Diensten van de Wolk wordt gesteund op een geval van Experience Manager; voeg niet meer dan één configuratie toe. Adobe steunt *niet* of adviseert het vormen van veelvoudige Dynamische configuraties van Media op één enkele instantie van Experience Manager.<!-- CQDOC-19579 and CQDOC-19612 --><br> zie ook [&#x200B; een Dynamische alias rekening van het Bedrijf van Media &#x200B;](/help/assets/dynamic-media/dm-alias-account.md) vormen. |
    | Pad naar hoofdmap van bedrijf | Het pad naar de hoofdmap van uw bedrijf. |
    | Assets publiceren | U kunt uit de volgende drie opties kiezen:<br>**[!UICONTROL Immediately]**- wanneer de activa worden geupload, neemt het systeem de activa op en verstrekt onmiddellijk URL/Embed. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.<br>**[!UICONTROL On Activation]** - U moet het element eerst expliciet publiceren voordat er een koppeling URL/Insluiten wordt opgegeven.<br>**[!UICONTROL Selective Publish]**- Assets wordt automatisch gepubliceerd voor een beveiligde voorvertoning. Ze kunnen ook expliciet worden gepubliceerd naar Experience Manager as a Cloud Service zonder dat ze worden gepubliceerd naar DMS7 voor levering in het publieke domein. In de toekomst is deze optie bedoeld om elementen naar Experience Manager as a Cloud Service te publiceren en elementen naar Dynamic Media te publiceren, die elkaar wederzijds uitsluiten. Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies als Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. U kunt ook uitsluitend elementen publiceren in Experience Manager as a Cloud Service om een voorbeeld te bekijken. Dezelfde activa worden niet in DMS7 gepubliceerd voor levering in het publieke domein. |
    | Secure Preview Server | Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige uitvoeringen opgeven. Met andere woorden, nadat uitvoeringen zijn gegenereerd, kan AEM as a Cloud Service veilig toegang krijgen tot de externe dynamische media-uitvoeringen en deze voorvertonen (er worden geen binaire bestanden teruggestuurd naar de Experience Manager as a Cloud Service-instantie).<br> tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe dat u dit het plaatsen zoals gespecificeerd verlaat. |
-   | Alle inhoud synchroniseren | Standaard geselecteerd. Schakel deze optie uit als u selectieve elementen wilt opnemen in of uitsluiten van de synchronisatie met Dynamische media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee dynamische media-synchronisatiemodi:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**- De configuratie wordt standaard toegepast op alle mappen, tenzij u een specifieke map voor uitsluiting markeert.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met dynamische media.<br> om een geselecteerde omslag voor synchronisatie aan Dynamische Media te merken, selecteer een activaomslag, dan in de toolbar, uitgezochte **[!UICONTROL Properties]**. Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Selecteer **[!UICONTROL Save]** als u klaar bent. _Herinner me: deze drie opties zijn niet beschikbaar als u **Synchroniseer alle inhoud**&#x200B;vroeger selecteerde._ zie ook [ Werk met Selectief publiceren op het omslagniveau in Dynamische Media ](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]**- Geen expliciete synchronisatiewaarde in de map. In plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont dit als knopinfo.<br>**[!UICONTROL Enable for subfolders]** - Neem alles op in deze substructuur voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.<br>**[!UICONTROL Disabled for subfolders]**- Sluit alles in deze substructuur uit van synchroniseren naar dynamische media. |
+   | Alle inhoud synchroniseren | Standaard geselecteerd. Schakel deze optie uit als u selectieve elementen wilt opnemen in of uitsluiten van de synchronisatie met Dynamische media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee dynamische media-synchronisatiemodi:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**- De configuratie wordt standaard toegepast op alle mappen, tenzij u een specifieke map voor uitsluiting markeert.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met dynamische media.<br> om een geselecteerde omslag voor synchronisatie aan Dynamische Media te merken, selecteer een activaomslag, dan in de toolbar, uitgezochte **[!UICONTROL Properties]**. Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Selecteer **[!UICONTROL Save]** als u klaar bent. _Herinner me: deze drie opties zijn niet beschikbaar als u **Synchroniseer alle inhoud**&#x200B;vroeger selecteerde._ zie ook [&#x200B; Werk met Selectief publiceren op het omslagniveau in Dynamische Media &#x200B;](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]**- Geen expliciete synchronisatiewaarde in de map. In plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont dit als knopinfo.<br>**[!UICONTROL Enable for subfolders]** - Neem alles op in deze substructuur voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.<br>**[!UICONTROL Disabled for subfolders]**- Sluit alles in deze substructuur uit van synchroniseren naar dynamische media. |
 
    >[!NOTE]
    >
@@ -118,7 +118,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >
    >Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
-   ![ dynamicmediaconfiguration2updated ](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
+   ![&#x200B; dynamicmediaconfiguration2updated &#x200B;](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
 1. Selecteer **[!UICONTROL Save]**. Het nieuwe wachtwoord en de nieuwe configuratie voor dynamische media worden opgeslagen. Als u in plaats daarvan **[!UICONTROL Cancel]** hebt geselecteerd, wordt het wachtwoord niet bijgewerkt.
 1. Selecteer in het dialoogvenster **[!UICONTROL Configuring Dynamic Media]** de optie **[!UICONTROL OK]** om de configuratie te starten.
@@ -128,9 +128,9 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Wanneer de nieuwe dynamische configuratie van Media zijn opstelling voltooit, ontvangt u een statusbericht binnen Experience Manager as a Cloud Service Inbox.
    >
    >Dit Inbox bericht deelt u als de configuratie of succesvol of niet was.
-   > Zie [ problemen oplossen een nieuwe Dynamische configuratie van Media ](#troubleshoot-dm-config) en [ Uw Inbox ](/help/sites-cloud/authoring/inbox.md) voor meer informatie.
+   > Zie [&#x200B; problemen oplossen een nieuwe Dynamische configuratie van Media &#x200B;](#troubleshoot-dm-config) en [&#x200B; Uw Inbox &#x200B;](/help/sites-cloud/authoring/inbox.md) voor meer informatie.
 
-1. Voor een veilige voorvertoning van dynamische media-inhoud voordat deze wordt gepubliceerd, gebruikt Experience Manager as a Cloud Service een op token gebaseerde validatie en daarom geeft Experience Manager Author standaard een voorvertoning weer van dynamische media-inhoud. Nochtans, kunt u *meer IPs lijsten van gewenste personen* gebruikers toegang tot voorproefinhoud veilig verlenen. Aan opstelling deze actie in Experience Manager as a Cloud Service, zie [ Dynamische Media vormen publiceren Opstelling voor de Server van het Beeld - het lusje van de Veiligheid ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. Voor een veilige voorvertoning van dynamische media-inhoud voordat deze wordt gepubliceerd, gebruikt Experience Manager as a Cloud Service een op token gebaseerde validatie en daarom geeft Experience Manager Author standaard een voorvertoning weer van dynamische media-inhoud. Nochtans, kunt u *meer IPs lijsten van gewenste personen* gebruikers toegang tot voorproefinhoud veilig verlenen. Aan opstelling deze actie in Experience Manager as a Cloud Service, zie [&#x200B; Dynamische Media vormen publiceren Opstelling voor de Server van het Beeld - het lusje van de Veiligheid &#x200B;](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
@@ -142,17 +142,17 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 U wordt nu gebeëindigd met de basisconfiguratie; u bent klaar om Dynamische Media te gebruiken.
 
-Als u uw configuratie verder wilt aanpassen, zoals toelatend ACL (de Lijst van het Toegangsbeheer) toestemmingen, kunt u naar keuze om het even welke taken voltooien onder [ Geavanceerde Montages in Dynamische Media ](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode) vormen.
+Als u uw configuratie verder wilt aanpassen, zoals toelatend ACL (de Lijst van het Toegangsbeheer) toestemmingen, kunt u naar keuze om het even welke taken voltooien onder [&#x200B; Geavanceerde Montages in Dynamische Media &#x200B;](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode) vormen.
 
 ### Los een nieuwe Dynamische configuratie van Media problemen op {#troubleshoot-dm-config}
 
 Wanneer een nieuwe Dynamic Media-configuratie klaar is met de installatie, ontvangt u een statusmelding in Experience Manager as a Cloud Service Inbox. Deze melding geeft aan of de configuratie is gelukt of niet, zoals in de volgende afbeeldingen in het Postvak In wordt getoond.
 
-![ Experience Manager Inbox succes ](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+![&#x200B; Experience Manager Inbox succes &#x200B;](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
 
-![ de mislukking van Experience Manager Inbox ](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+![&#x200B; de mislukking van Experience Manager Inbox &#x200B;](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-Zie ook [ Uw Inbox ](/help/sites-cloud/authoring/inbox.md).
+Zie ook [&#x200B; Uw Inbox &#x200B;](/help/sites-cloud/authoring/inbox.md).
 
 **om een nieuwe Dynamische configuratie van Media problemen op te lossen:**
 
@@ -161,11 +161,11 @@ Zie ook [ Uw Inbox ](/help/sites-cloud/authoring/inbox.md).
 
    Als de configuratie ontbrak, selecteer het mislukkingsbericht gelijkend op het volgende screenshot.
 
-   ![ Dynamische opstelling van Media ontbroken ](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+   ![&#x200B; Dynamische opstelling van Media ontbroken &#x200B;](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
 1. Controleer op de pagina **[!UICONTROL DMSETUP]** de configuratiedetails die de fout beschrijven. Let met name op foutberichten of foutcodes. Neem contact op met de klantenondersteuning van Adobe voor deze informatie.
 
-   ![ Dynamische pagina van de Opstelling van Media ](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   ![&#x200B; Dynamische pagina van de Opstelling van Media &#x200B;](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### Het wachtwoord wijzigen in Dynamische media {#change-dm-password}
 
@@ -259,23 +259,23 @@ De taken van de opstelling en van de configuratie omvatten het volgende:
 
 Op de pagina Dynamische media publiceren stelt u standaardinstellingen in die bepalen hoe elementen van Adobe Dynamic Media-servers worden geleverd aan websites of toepassingen.
 
-Zie [ Dynamische Media vormen publiceren Opstelling voor de Server van het Beeld ](/help/assets/dynamic-media/dm-publish-settings.md).
+Zie [&#x200B; Dynamische Media vormen publiceren Opstelling voor de Server van het Beeld &#x200B;](/help/assets/dynamic-media/dm-publish-settings.md).
 
 #### Algemene instellingen voor dynamische media configureren {#configuring-application-general-settings}
 
 Configureer de URL voor dynamische media **[!UICONTROL Publish Server Name]** en de URL voor **[!UICONTROL Origin Server Name]** . U kunt ook **[!UICONTROL Upload to Application]** instellingen opgeven en **[!UICONTROL Default Upload Options]** allemaal op basis van uw specifieke gebruiksscenario.
 
-Zie [ Dynamische Montages van Media Algemene ](/help/assets/dynamic-media/dm-general-settings.md) vormen.
+Zie [&#x200B; Dynamische Montages van Media Algemene &#x200B;](/help/assets/dynamic-media/dm-general-settings.md) vormen.
 
 #### Kleurbeheer configureren {#configuring-color-management}
 
 Met Dynamisch mediakleurbeheer kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte.
 
-Zie [ Beeld vormen vooraf instelt ](/help/assets/dynamic-media/managing-image-presets.md).
+Zie [&#x200B; Beeld vormen vooraf instelt &#x200B;](/help/assets/dynamic-media/managing-image-presets.md).
 
 De standaardkleureigenschappen configureren voor het inschakelen van kleurcorrectie bij het aanvragen van afbeeldingen:
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started), dan login aan uw rekening gebruikend geloofsbrieven die tijdens levering worden verstrekt.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started), dan login aan uw rekening gebruikend geloofsbrieven die tijdens levering worden verstrekt.
 1. Ga naar **[!UICONTROL Setup > Application Setup]** .
 1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server]**. Stel **[!UICONTROL Publish Context]** in op **[!UICONTROL Image Serving]** wanneer u standaardinstellingen voor publicatie-exemplaren instelt.
 1. Blader naar de eigenschap die u moet wijzigen, bijvoorbeeld een eigenschap in het gebied **[!UICONTROL Color Management Attributes]** .
@@ -307,29 +307,29 @@ U kunt de elementtypen opgeven die Dynamic Media verwerkt en de geavanceerde par
 * Een Adobe PDF converteren naar een eCatalog-element.
 * Converteer een Adobe Photoshop-document (.PSD) naar een bannersjabloonelement voor personalisatie.
 * Rasteren een Adobe Illustrator-bestand (.AI) of een PostScript®-bestand met Adobe Photoshop Encapsulated (.EPS).
-* [ Videoprofielen ](/help/assets/dynamic-media/video-profiles.md) en [ Profielen van het Beeld ](/help/assets/dynamic-media/image-profiles.md) kunnen worden gebruikt om verwerking van video&#39;s en beelden te bepalen, respectievelijk.
+* [&#x200B; Videoprofielen &#x200B;](/help/assets/dynamic-media/video-profiles.md) en [&#x200B; Profielen van het Beeld &#x200B;](/help/assets/dynamic-media/image-profiles.md) kunnen worden gebruikt om verwerking van video&#39;s en beelden te bepalen, respectievelijk.
 
-Zie [ activa ](/help/assets/add-assets.md) uploaden.
+Zie [&#x200B; activa &#x200B;](/help/assets/add-assets.md) uploaden.
 
 **om MIME types voor gesteunde formaten uit te geven:**
 
 1. Meld u aan bij de Experience Manager as a Cloud Service als de productbeheerder.
 1. Selecteer in Experience Manager as a Cloud Service het Experience Manager as a Cloud Service-logo voor toegang tot de algemene navigatieconsole en ga vervolgens naar **[!UICONTROL General > CRXDE Lite]** .
 
-   Als u geen toegang tot CRXDE Lite hebt, zie [ Gebruikend CRXDE Lite ](/help/implementing/developing/tools/crxde.md).
+   Als u geen toegang tot CRXDE Lite hebt, zie [&#x200B; Gebruikend CRXDE Lite &#x200B;](/help/implementing/developing/tools/crxde.md).
 
 1. Navigeer in de linkerspoorstaaf naar het volgende:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-   ![ MIME types ](assets/mimetypes.png)
+   ![&#x200B; MIME types &#x200B;](assets/mimetypes.png)
 
 1. Selecteer een MIME-type onder de map mimeTypes.
 1. Aan de rechterkant van de CRXDE Lite-pagina, in het onderste gedeelte:
 
    * Dubbelselecteer het veld **[!UICONTROL enabled]** . Standaard zijn alle MIME-elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de elementen worden gesynchroniseerd met Dynamic Media voor verwerking. Als u dit MIME-type van het element wilt uitsluiten van verwerking, wijzigt u deze instelling in **[!UICONTROL false]** .
 
-   * Dubbelselecteer **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [ Gesteunde Types MIME ](/help/assets/file-format-support.md) voor een lijst van toegelaten waarden van de verwerkingsparameter die u voor een bepaald type MIME kunt gebruiken.
+   * Dubbelselecteer **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [&#x200B; Gesteunde Types MIME &#x200B;](/help/assets/file-format-support.md) voor een lijst van toegelaten waarden van de verwerkingsparameter die u voor een bepaald type MIME kunt gebruiken.
 
 1. Voer een van de volgende handelingen uit:
    * Herhaal stap 3-4 om meer MIME-typen te bewerken.
@@ -346,25 +346,25 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 1. Meld u aan bij de Experience Manager as a Cloud Service als de productbeheerder.
 1. Ga vanuit Experience Manager as a Cloud Service naar **[!UICONTROL Tools > Operations > Web Console]** .
 
-   ![ 2019-08-02_16-13-14 ](assets/2019-08-02_16-13-14.png)
+   ![&#x200B; 2019-08-02_16-13-14 &#x200B;](assets/2019-08-02_16-13-14.png)
 
 1. Er wordt een nieuw browsertabblad geopend voor de pagina **[!UICONTROL Adobe Experience Manager Web Console Configuration]** .
 
-   ![ 2019-08-02_16-17-29 ](assets/2019-08-02_16-17-29.png)
+   ![&#x200B; 2019-08-02_16-17-29 &#x200B;](assets/2019-08-02_16-17-29.png)
 
 1. Voor de pagina, scrol neer aan de naam *activaMIME van de activaMIME van Adobe CQ Scene7* zoals gezien in het volgende screenshot. Selecteer rechts van de naam het pictogram **[!UICONTROL Edit the configuration values]** (potlood).
 
-   ![ geef de configuratiewaarden ](assets/2019-08-02_16-44-56.png) uit
+   ![&#x200B; geef de configuratiewaarden &#x200B;](assets/2019-08-02_16-44-56.png) uit
 
 1. Voor de **pagina van het MIME type van Activa van Adobe CQ Scene7 van de Dienst**, selecteer om het even welk plusteken pictogram &lt;+>. De locatie in de tabel waar u het plusteken selecteert om het nieuwe MIME-type toe te voegen, is triviaal.
 
-   ![ de Dienst van het Type van Activa MIME van Cisco CQ7 ](assets/2019-08-02_16-27-27.png)
+   ![&#x200B; de Dienst van het Type van Activa MIME van Cisco CQ7 &#x200B;](assets/2019-08-02_16-27-27.png)
 
 1. Typ `DWG=image/vnd.dwg` in het lege tekstveld dat u zojuist hebt toegevoegd.
 
    Het MIME-type `DWG=image/vnd.dwg` is alleen bedoeld voor voorbeelddoeleinden. Het MIME-type dat u hier toevoegt, kan elke andere niet-ondersteunde indeling hebben.
 
-   ![ Toevoegend MIME type DWG ](assets/2019-08-02_16-36-36.png)
+   ![&#x200B; Toevoegend MIME type DWG &#x200B;](assets/2019-08-02_16-36-36.png)
 
 1. Selecteer **[!UICONTROL Save]** rechtsonder op de pagina.
 
@@ -373,9 +373,9 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 1. Ga terug naar het browsertabblad met de geopende Experience Manager as a Cloud Service-console.
 1. Ga vanuit Experience Manager as a Cloud Service naar **[!UICONTROL Tools > General > CRXDE Lite]** .
 
-   Als u geen toegang tot CRXDE Lite hebt, zie [ Gebruikend CRXDE Lite ](/help/implementing/developing/tools/crxde.md).
+   Als u geen toegang tot CRXDE Lite hebt, zie [&#x200B; Gebruikend CRXDE Lite &#x200B;](/help/implementing/developing/tools/crxde.md).
 
-   ![ Hulpmiddelen > Algemeen > CRXDE Lite ](assets/2019-08-02_16-55-41.png)
+   ![&#x200B; Hulpmiddelen > Algemeen > CRXDE Lite &#x200B;](assets/2019-08-02_16-55-41.png)
 
 1. Navigeer in de linkerspoorstaaf naar het volgende:
 
@@ -383,12 +383,12 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
 1. Sleep het MIME-type `image_vnd.dwg` en zet dit direct boven `image_` in de boomstructuur neer, zoals in de volgende schermafbeelding wordt getoond.
 
-   ![ Uitgevend een DWG- dossier in CRXDE Lite ](assets/crxdelite_cqdoc-14627.png)
+   ![&#x200B; Uitgevend een DWG- dossier in CRXDE Lite &#x200B;](assets/crxdelite_cqdoc-14627.png)
 
 1. Selecteer het MIME-type `image_vnd.dwg` nog steeds via de tab **[!UICONTROL Properties]** in de rij **[!UICONTROL enabled]** onder de kolomkop **[!UICONTROL Value]** de waarde. De vervolgkeuzelijst **[!UICONTROL Value]** wordt geopend.
 1. Typ `false` in het veld (of selecteer **[!UICONTROL false]** in de vervolgkeuzelijst).
 
-   ![ het Uitgeven mime types in CRXDE Lite ](assets/2019-08-02_16-60-30.png)
+   ![&#x200B; het Uitgeven mime types in CRXDE Lite &#x200B;](assets/2019-08-02_16-60-30.png)
 
 1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van de CRXDE Lite-pagina.
 
@@ -396,10 +396,10 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
 Adobe raadt de volgende tips voor synchronisatieprestaties/schaalbaarheid aan om dynamische media vlot te laten werken:
 
-* [ werk de vooraf bepaalde parameters van de Baan voor verwerking van verschillende dossierformaten ](#update-job-para) bij.
+* [&#x200B; werk de vooraf bepaalde parameters van de Baan voor verwerking van verschillende dossierformaten &#x200B;](#update-job-para) bij.
 * [Werk de vooraf bepaalde de arbeidersthreads van de Rij van de Werkstroom van de Granite (videoactiva) bij](#update-granite-workflow-queue-worker-threads-video)
-* [ werk de vooraf bepaalde Geriet Vooraf ingestelde Rij van het Werkschema van de Overgang van de Post (beelden en niet-videoactiva) arbeidersthreads ](#update-granite-transient-workflow-queue-worker-threads-images) bij.
-* [ werk de maximumupload verbindingen aan de server van Dynamic Media Classic (Scene7) ](#update-max-s7-upload-connections) bij.
+* [&#x200B; werk de vooraf bepaalde Geriet Vooraf ingestelde Rij van het Werkschema van de Overgang van de Post (beelden en niet-videoactiva) arbeidersthreads &#x200B;](#update-granite-transient-workflow-queue-worker-threads-images) bij.
+* [&#x200B; werk de maximumupload verbindingen aan de server van Dynamic Media Classic (Scene7) &#x200B;](#update-max-s7-upload-connections) bij.
 
 #### De vooraf gedefinieerde taakparameters bijwerken voor de verwerking van verschillende bestandsindelingen {#update-job-para}
 
@@ -419,9 +419,9 @@ Adobe raadt u aan de volgende &#39;aangepaste&#39; taakparameters te gebruiken v
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Om om het even welk van deze parameters bij te werken, zie [ het Uitgeven MIME types voor gesteunde formaten ](#editing-mime-types-for-supported-formats).
+Om om het even welk van deze parameters bij te werken, zie [&#x200B; het Uitgeven MIME types voor gesteunde formaten &#x200B;](#editing-mime-types-for-supported-formats).
 
-Zie ook [ Toevoegend MIME types voor niet gestaafde formaten ](#adding-mime-types-for-unsupported-formats).
+Zie ook [&#x200B; Toevoegend MIME types voor niet gestaafde formaten &#x200B;](#adding-mime-types-for-unsupported-formats).
 
 #### Werk de vooraf bepaalde de arbeidersthreads van de Rij van de Werkstroom van de Granite (videoactiva) bij {#update-granite-workflow-queue-worker-threads-video}
 
@@ -447,7 +447,7 @@ Als u geen toegang tot OSGi hebt, zie {Configuratie 0} OSGi [&#128279;](/help/im
 
    In de meeste gevallen is de standaardinstelling 0,5 voldoende.
 
-   ![ Configuratie van een rij van de baanverwerking ](assets/chlimage_1-1.jpeg)
+   ![&#x200B; Configuratie van een rij van de baanverwerking &#x200B;](assets/chlimage_1-1.jpeg)
 
 1. Selecteer **[!UICONTROL Save]** .
 
@@ -476,7 +476,7 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
    Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
 
-![ chlimage_1 ](assets/chlimage_1.jpeg)
+![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.jpeg)
 
 1. Selecteer **[!UICONTROL Save]** .
 
@@ -499,7 +499,7 @@ Met de instelling Dynamic Media Classic (Scene7) Upload Connection worden Experi
 
    In de meeste gevallen is de instelling 2100 voldoende.
 
-   ![ de UploadDienst van Adobe Scene7 ](assets/chlimage_1-2.jpeg)
+   ![&#x200B; de UploadDienst van Adobe Scene7 &#x200B;](assets/chlimage_1-2.jpeg)
 
 1. Selecteer **[!UICONTROL Save]** .
 

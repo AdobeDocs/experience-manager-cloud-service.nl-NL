@@ -17,7 +17,7 @@ Met gelokaliseerde formulieren hebt u een groter publiek in verschillende regio&
 
 ## Een adaptief formulier en een document met records vertalen met behulp van automatische vertaling {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-De dienst van de machinevertaling vertaalt onmiddellijk uw inhoud in Aangepaste Vorm en [ Document van Verslag ](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service is vooraf geconfigureerd voor het gebruik van een proefversie van Microsoft Translator voor machinevertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw Adaptieve Forms en Document of Record:
+De dienst van de machinevertaling vertaalt onmiddellijk uw inhoud in Aangepaste Vorm en [&#x200B; Document van Verslag &#x200B;](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service is vooraf geconfigureerd voor het gebruik van een proefversie van Microsoft Translator voor machinevertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw Adaptieve Forms en Document of Record:
 
 1. Selecteer een formulier in de gebruikersinterface van AEM Forms en selecteer de optie **[!UICONTROL Add Dictionary]** .
 1. Kies in het scherm Woordenboek toevoegen aan vertaalproject de optie **[!UICONTROL Project]**
@@ -27,10 +27,10 @@ De dienst van de machinevertaling vertaalt onmiddellijk uw inhoud in Aangepaste 
 1. Op het **gebied van de Talen van het Doel**, specificeer een scène (bijvoorbeeld, `German(de)`). U kunt meerdere landinstellingen opgeven. De vorm wordt vertaald aan alle scènes die in het **gebied van de Talen van het Doel** worden gespecificeerd. Klik **Gedaan**.
 1. In het Woordenboek toegevoegde dialoogvakje, klik **Open Projecten**.
 1. Klik in het scherm Projecten op het gemaakte project. Bijvoorbeeld, klik de **Plaats van de Verwijzing van de Regering - Duitse scène** tegel.
-1. Op de **tegel van de VertaalBaan**, klik ![ aem62forms_downarrow ](assets/aem62forms_downarrow.png) pictogram, en klik **Begin**. De status van de tegel verandert in Concept. Na voltooiing van de vertaling, verandert de status in **Goedgekeurd**. Vernieuw de pagina na een paar minuten en controleer de status.
+1. Op de **tegel van de VertaalBaan**, klik ![&#x200B; aem62forms_downarrow &#x200B;](assets/aem62forms_downarrow.png) pictogram, en klik **Begin**. De status van de tegel verandert in Concept. Na voltooiing van de vertaling, verandert de status in **Goedgekeurd**. Vernieuw de pagina na een paar minuten en controleer de status.
 
-   ![ Vertaling van het Begin ](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
-1. Na de statusveranderingen in **Goedgekeurd** op de **Taal van de VertaalBaan**, klik ![ aem62forms_downarrow ](assets/aem62forms_downarrow.png) pictogram, en klik **Volledig**.
+   ![&#x200B; Vertaling van het Begin &#x200B;](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
+1. Na de statusveranderingen in **Goedgekeurd** op de **Taal van de VertaalBaan**, klik ![&#x200B; aem62forms_downarrow &#x200B;](assets/aem62forms_downarrow.png) pictogram, en klik **Volledig**.
 
 1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klik **[!UICONTROL Preview]** > **[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u de `afAcceptLang=<locale code>` aan de URL van het formulier hebt toegevoegd. Voeg bijvoorbeeld `afAcceptLang=de` toe om de Duitse versie van het formulier te openen.
 
@@ -72,16 +72,16 @@ Voer de volgende stappen uit om een formulier en het bijbehorende document te lo
 1. Klik in het scherm Projecten op het gemaakte project. Bijvoorbeeld, klik de **Plaats van de Verwijzing van de Regering - Duitse scène** tegel.
 1. Bij de bodem van de **Summiere** tegel, klik de **ellipsen**. Het scherm Projecteigenschappen omzetten wordt geopend.
 1. Open het **[!UICONTROL Advanced]** lusje bij de bovenkant van het **scherm van de Eigenschappen van het Project van de Vertaling**. Selecteer **[!UICONTROL Human Translation]** voor **[!UICONTROL Translation field]** . Klik **sparen &amp; dicht** bij de bovenkant van het scherm.
-1. Op de **tegel van de VertaalBaan**, klik ![ aem62forms_downarrow ](assets/aem62forms_downarrow.png) pictogram, en klik **Uitvoer**. Klik in het dialoogvenster Exporteren op de optie Geëxporteerd bestand downloaden. Er wordt een ZIP-bestand gedownload.
-   ![ de vertaaldossier van de Uitvoer ](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+1. Op de **tegel van de VertaalBaan**, klik ![&#x200B; aem62forms_downarrow &#x200B;](assets/aem62forms_downarrow.png) pictogram, en klik **Uitvoer**. Klik in het dialoogvenster Exporteren op de optie Geëxporteerd bestand downloaden. Er wordt een ZIP-bestand gedownload.
+   ![&#x200B; de vertaaldossier van de Uitvoer &#x200B;](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Extraheer het gedownloade .zip-bestand. De geëxtraheerde map heeft twee bestanden:
    * transleren_export_summary.xml
    * [ vorm-gebieden-dossier ].xml.
 1. Open [ vorm-gebieden-dossier ] .xml voor het uitgeven. Voeg de gelokaliseerde tekenreeksen en berichten voor formuliervelden toe. Sla het bestand op en sluit het.
 1. Zip de dossiers translate_export_summary.xml en [ vorm-gebieden-dossier ] .xml.
-1. Op de **tegel van de VertaalBaan**, klik ![ aem62forms_downarrow ](assets/aem62forms_downarrow.png) pictogram, en klik **de Invoer**. Selecteer het archief dat [ vorm-gebieden-dossier ].xml bevat. met gelokaliseerde tekenreeksen en berichten voor formuliervelden.
+1. Op de **tegel van de VertaalBaan**, klik ![&#x200B; aem62forms_downarrow &#x200B;](assets/aem62forms_downarrow.png) pictogram, en klik **de Invoer**. Selecteer het archief dat [ vorm-gebieden-dossier ].xml bevat. met gelokaliseerde tekenreeksen en berichten voor formuliervelden.
 
-   ![ de vertaaldossier van de Invoer ](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![&#x200B; de vertaaldossier van de Invoer &#x200B;](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klik **[!UICONTROL Preview]** > **[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u de `afAcceptLang=<locale code>` aan de URL van het formulier hebt toegevoegd. Voeg bijvoorbeeld `afAcceptLang=de` toe om de Duitse versie van het formulier te openen.
 

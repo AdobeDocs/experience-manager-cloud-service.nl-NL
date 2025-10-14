@@ -32,7 +32,7 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
    De basiswerking van de inhoudfragment-editor vereist dat dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties, ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
    * **geval van het Gebruik**: Een gebruiker die een inhoudsfragment moet uitgeven/bijwerken - **zonder het worden toegestaan om een volledig fragment** te schrappen.
-   * **Toestemmingen**: Zie [ Toestemmingen die voor de Functionaliteit van de Redacteur slechts ](#permissions-required-for-editor-functionality-only) worden vereist.
+   * **Toestemmingen**: Zie [&#x200B; Toestemmingen die voor de Functionaliteit van de Redacteur slechts &#x200B;](#permissions-required-for-editor-functionality-only) worden vereist.
 
 >[!NOTE]
 >

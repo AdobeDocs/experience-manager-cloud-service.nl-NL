@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Digitale middelen zijn vaak gekoppeld aan een licentie waarin de gebruiksvoorwaarden en -duur zijn vastgelegd. Met het [!DNL Experience Manager] -platform kunt u op efficiënte wijze informatie over het verlopen van bedrijfsmiddelen en licentiegegevens beheren.
@@ -34,7 +34,7 @@ U kunt de vervalstatus van een element op de volgende plaatsen bekijken:
 
 Ga als volgt te werk om het verwijzen naar webpagina&#39;s en samengestelde elementen voor een element weer te geven:
 
-1. Navigeer aan de activa, selecteer de activa, en klik ![ linker pictogram van de spoorinhoudsverwijzingen ](assets/do-not-localize/content-rail-icon.png). De linkerspoorstaaf opent.
+1. Navigeer aan de activa, selecteer de activa, en klik ![&#x200B; linker pictogram van de spoorinhoudsverwijzingen &#x200B;](assets/do-not-localize/content-rail-icon.png). De linkerspoorstaaf opent.
 1. Selecteer **[!UICONTROL References]** in het linkerspoor.
 1. Voor verlopen elementen geeft [!UICONTROL References] de vervalstatus weer als **[!UICONTROL Asset is Expired]** . Als het element verlopen subassets heeft, geeft de [!UICONTROL References] -rail de status **[!UICONTROL Asset has Expired Sub-Assets]** weer.
 
@@ -65,7 +65,7 @@ Configureer **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL 
    }
    ```
 
-1. Volg de instructies van [ hoe te om configuratie OSGi in  [!DNL Experience Manager]  als a  [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) te doen.
+1. Volg de instructies van [&#x200B; hoe te om configuratie OSGi in  [!DNL Experience Manager]  als a  [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) te doen.
 
 U kunt de planner vormen gebruikend de volgende eigenschappen:
 

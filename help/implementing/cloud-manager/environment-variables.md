@@ -37,21 +37,21 @@ De meest gangbare gebruiksgevallen voor het gebruik van omgevingsvariabelen zijn
 
 ## Een omgevingsvariabele toevoegen {#add-variables}
 
-Als u veelvoudige variabelen wilt toevoegen, adviseert de Adobe dat u de eerste variabele toevoegt, dan gebruik ![ pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **toevoegen** in de **dialoog van de Configuratie van het Milieu** om de extra variabelen toe te voegen. Deze methode betekent dat u ze met één update aan de omgeving kunt toevoegen.
+Als u veelvoudige variabelen wilt toevoegen, adviseert de Adobe dat u de eerste variabele toevoegt, dan gebruik ![&#x200B; pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **toevoegen** in de **dialoog van de Configuratie van het Milieu** om de extra variabelen toe te voegen. Deze methode betekent dat u ze met één update aan de omgeving kunt toevoegen.
 
 Om milieu variabelen toe te voegen, bij te werken of te schrappen, moet u een lid van de **rol [&#128279;](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) zijn van de Manager van de Plaatsing 0&rbrace;.**
 
 **om een omgevingsvariabele toe te voegen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer één u wilt leiden.
 1. Van het zijmenu, klik **Milieu&#39;s**.
 1. Voor de **pagina van Milieu&#39;s**, selecteer een rij in de lijst die het milieu heeft waarvoor u een milieuvariabele wilt toevoegen.
 1. Voor de detailpagina van het milieu, klik de **Configuratie** tabel.
-1. Klik ![ toevoegen/bijwerken - voeg cirkelpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **toevoegen/bijwerken**.
+1. Klik ![&#x200B; toevoegen/bijwerken - voeg cirkelpictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **toevoegen/bijwerken**.
 Als u een milieuvariabele voor het eerst toevoegt, klik **voeg Configuratie** in het centrum van de pagina toe.
 
-   ![ het lusje van de Configuratie ](assets/configuration-tab.png)
+   ![&#x200B; het lusje van de Configuratie &#x200B;](assets/configuration-tab.png)
 
 1. In het **de dialoogvakje van de Configuratie van het Milieu**, ga de details in de eerste rij van de lijst in.
 
@@ -62,9 +62,9 @@ Als u een milieuvariabele voor het eerst toevoegt, klik **voeg Configuratie** in
    | Toegepaste stap | Selecteer op welke service de variabele van toepassing is. Selecteer **allen** om de variabele te hebben die op alle diensten wordt toegepast.<ul><li>**allen**</li><li>**Auteur**</li><li>**Publish**</li><li>**Voorproef**</li></ul> |
    | Type | Selecteer deze optie als de variabele normaal of geheim is. |
 
-   ![ Toevoegend een variabele ](assets/add-variable.png)
+   ![&#x200B; Toevoegend een variabele &#x200B;](assets/add-variable.png)
 
-1. Klik ![ toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **&#x200B;**&#x200B;toevoegen.
+1. Klik ![&#x200B; toevoegen pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **&#x200B;**&#x200B;toevoegen.
 
    Voeg zo nodig extra variabelen toe.
 
@@ -72,36 +72,36 @@ Als u een milieuvariabele voor het eerst toevoegt, klik **voeg Configuratie** in
 
    Een spinner met de status **die** bijwerkt wordt getoond in de hoger-juiste hoek van de lijst. Links van nieuwe variabelen wordt ook een spinner weergegeven. Deze statussen wijzen erop dat het milieu met de configuratie wordt bijgewerkt. Na voltooiing, is de nieuwe milieuvariabele zichtbaar in de lijst.
 
-![ Bijwerkend variabelen ](assets/updating-variables.png)
+![&#x200B; Bijwerkend variabelen &#x200B;](assets/updating-variables.png)
 
 ## Een omgevingsvariabele bijwerken {#update-variables}
 
-Nadat u milieuvariabelen hebt gecreeerd, kunt u hen bijwerken gebruikend ![ toevoegen/bijwerken - voeg cirkelpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **&#x200B;**&#x200B;bijwerken om het **de dialoogvakje van de Configuratie van het Milieu** te openen.
+Nadat u milieuvariabelen hebt gecreeerd, kunt u hen bijwerken gebruikend ![&#x200B; toevoegen/bijwerken - voeg cirkelpictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **&#x200B;**&#x200B;bijwerken om het **de dialoogvakje van de Configuratie van het Milieu** te openen.
 
 Als u veelvoudige variabelen wilt bijwerken, adviseert de Adobe dat u het **dialoogvakje van de Configuratie van het Milieu** gebruikt om alle noodzakelijke variabelen onmiddellijk bij te werken alvorens **te klikken sparen**. Op deze manier kunt u ze met één update toevoegen aan de omgeving.
 
 **om een omgevingsvariabele bij te werken:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer één u wilt leiden.
 1. Van het zijmenu, klik **Milieu&#39;s**.
 1. Voor de **pagina van Milieu&#39;s**, selecteer een rij in de lijst die het milieu heeft waarvoor u een variabele wilt bijwerken.
 1. Voor de detailpagina van het milieu, klik de **Configuratie** tabel.
-1. Klik ![ toevoegen/bijwerken - voeg cirkelpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **toevoegen/bijwerken**.
-1. In het **de dialoogvakje van de Configuratie van het Milieu 1&rbrace;, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de laatste kolom van de rij van de variabele u wilt veranderen.**
+1. Klik ![&#x200B; toevoegen/bijwerken - voeg cirkelpictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **toevoegen/bijwerken**.
+1. In het **de dialoogvakje van de Configuratie van het Milieu 1&rbrace;, klik ![&#x200B; Ellipse - Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de laatste kolom van de rij van de variabele u wilt veranderen.**
 1. In het drop-down menu, geeft de klik **&#x200B;**&#x200B;uit.
 
-   ![ geef of schrap veranderlijke ](assets/edit-delete-variable.png) uit
+   ![&#x200B; geef of schrap veranderlijke &#x200B;](assets/edit-delete-variable.png) uit
 
 1. Werk indien nodig de waarde van de omgevingsvariabele bij.
 Als u een geheim bewerkt, kan de waarde alleen worden bijgewerkt en niet worden weergegeven.
 
-   ![ geef veranderlijke ](assets/edit-variable.png) uit
+   ![&#x200B; geef veranderlijke &#x200B;](assets/edit-variable.png) uit
 
 1. Voer een van de volgende handelingen uit:
 
-   * Klik ![ toepassen - het pictogram van het Vinkje ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) om de verandering toe te passen.
-   * Klik ![ ongedaan maken pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) om de verandering ongedaan te maken.
+   * Klik ![&#x200B; toepassen - het pictogram van het Vinkje &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) om de verandering toe te passen.
+   * Klik ![&#x200B; ongedaan maken pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) om de verandering ongedaan te maken.
 
 1. Klik **sparen**.
 
@@ -109,13 +109,13 @@ Als u een geheim bewerkt, kan de waarde alleen worden bijgewerkt en niet worden 
 
 ## Een omgevingsvariabele verwijderen {#delete-env-variable}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer één u wilt leiden.
 1. Van het zijmenu, klik **Milieu&#39;s**.
 1. Voor de **pagina van Milieu&#39;s**, selecteer een rij in de lijst die het milieu heeft waarvoor u een variabele wilt bijwerken.
 1. Voor de detailpagina van het milieu, klik de **Configuratie** tabel.
-1. Klik ![ toevoegen/bijwerken - voeg cirkelpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **toevoegen/bijwerken**.
-1. In het **de dialoogvakje van de Configuratie van het Milieu 1&rbrace;, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de laatste kolom van de rij van de variabele u wilt veranderen.**
+1. Klik ![&#x200B; toevoegen/bijwerken - voeg cirkelpictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **toevoegen/bijwerken**.
+1. In het **de dialoogvakje van de Configuratie van het Milieu 1&rbrace;, klik ![&#x200B; Ellipse - Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de laatste kolom van de rij van de variabele u wilt veranderen.**
 1. In het drop-down menu, klik **Schrapping** om de variabele onmiddellijk te verwijderen.
 1. Klik **sparen**.
 
@@ -127,9 +127,9 @@ U hebt als volgt toegang tot omgevingsvariabelen en geheimen via XML:
 
 `${env.VARIABLE_NAME}`
 
-Zie [ VestigingsProject ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) voor een voorbeeld van hoe te om beide soorten variabelen in a `pom.xml` dossier te gebruiken.
+Zie [&#x200B; VestigingsProject &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) voor een voorbeeld van hoe te om beide soorten variabelen in a `pom.xml` dossier te gebruiken.
 
-Zie ook de [ officiële Gemaakte documentatie ](https://maven.apache.org/settings.html#quick-overview) voor meer details.
+Zie ook de [&#x200B; officiële Gemaakte documentatie &#x200B;](https://maven.apache.org/settings.html#quick-overview) voor meer details.
 
 ## Beschikbaarheid van omgevingsvariabelen {#availability}
 
@@ -138,7 +138,7 @@ Omgevingsvariabelen kunnen als volgt op verschillende plaatsen worden gebruikt:
 | Waar omgevingsvariabelen kunnen worden gebruikt | Beschrijving |
 | --- | --- |
 | Auteur, Voorvertoning en Publish | Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontwerpomgeving, voorvertoningsomgeving en in de publicatieomgeving. |
-| Dispatcher | Slechts kunnen de regelmatige milieuvariabelen met [ Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) worden gebruikt.<ul><li>Geheimen kunnen niet worden gebruikt.</li><li>Omgevingsvariabelen kunnen niet worden gebruikt in `IfDefine` -instructies.</li><li>Valideer uw gebruik van milieuvariabelen met [ Dispatcher plaatselijk ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) alvorens op te stellen.</li></ul> |
-| OSGi-configuraties | Zowel kunnen de regelmatige omgevingsvariabelen als de geheimen in [ worden gebruikt OSGi Configurations ](/help/implementing/deploying/configuring-osgi.md). |
-| Pipetvariabelen | Naast milieuvariabelen, zijn er ook pijpleidingsvariabelen, die tijdens de bouwstijlfase worden blootgesteld. Leer meer over pijpleidingsvariabelen in [ Bouwstijl Milieu ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables). |
+| Dispatcher | Slechts kunnen de regelmatige milieuvariabelen met [&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) worden gebruikt.<ul><li>Geheimen kunnen niet worden gebruikt.</li><li>Omgevingsvariabelen kunnen niet worden gebruikt in `IfDefine` -instructies.</li><li>Valideer uw gebruik van milieuvariabelen met [&#x200B; Dispatcher plaatselijk &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) alvorens op te stellen.</li></ul> |
+| OSGi-configuraties | Zowel kunnen de regelmatige omgevingsvariabelen als de geheimen in [&#x200B; worden gebruikt OSGi Configurations &#x200B;](/help/implementing/deploying/configuring-osgi.md). |
+| Pipetvariabelen | Naast milieuvariabelen, zijn er ook pijpleidingsvariabelen, die tijdens de bouwstijlfase worden blootgesteld. Leer meer over pijpleidingsvariabelen in [&#x200B; Bouwstijl Milieu &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables). |
 

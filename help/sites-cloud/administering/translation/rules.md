@@ -22,9 +22,9 @@ De vertaalregels identificeren de inhoud om voor pagina&#39;s, componenten, en a
 
 ## Inhoudsfragmenten en vertaalregels {#content-fragments}
 
-De vertaalregels die in dit document worden beschreven zijn op de Fragmenten van de Inhoud slechts van toepassing als **de ModelGebieden van de Inhoud voor Vertaling** optie niet op het [ configuratieniveau van het vertaalintegratiekader ](integration-framework.md#assets-configuration-properties) zijn geactiveerd.
+De vertaalregels die in dit document worden beschreven zijn op de Fragmenten van de Inhoud slechts van toepassing als **de ModelGebieden van de Inhoud voor Vertaling** optie niet op het [&#x200B; configuratieniveau van het vertaalintegratiekader &#x200B;](integration-framework.md#assets-configuration-properties) zijn geactiveerd.
 
-Als **laat de ModelGebieden van de Inhoud voor Vertaling** optie toe actief is, AEM zal het **Vertaalbare** gebied op [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) gebruiken om te bepalen als het gebied moet worden vertaald en creeert automatisch vertaalregels dienovereenkomstig. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
+Als **laat de ModelGebieden van de Inhoud voor Vertaling** optie toe actief is, AEM zal het **Vertaalbare** gebied op [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) gebruiken om te bepalen als het gebied moet worden vertaald en creeert automatisch vertaalregels dienovereenkomstig. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
 
 Als u vertaalregels voor het vertalen van uw Fragmenten van de Inhoud wilt gebruiken, **laat de ModelGebieden van de Inhoud voor Vertaling** optie op de configuratie van het het kader van de vertaalintegratie toe moet worden onbruikbaar gemaakt en u moet de hieronder geschetste stappen volgen om uw regels tot stand te brengen.
 
@@ -49,9 +49,9 @@ De regels omvatten de volgende informatie:
 
 U kunt bijvoorbeeld een regel maken die de inhoud vertaalt die auteurs aan alle tekstcomponenten op uw pagina&#39;s toevoegen. De regel kan de node `/content` en de eigenschap `text` voor de component `core/wcm/components/text/v2/text` identificeren.
 
-Er is a [ console ](#translation-rules-ui) die voor het vormen vertaalregels is toegevoegd. De definities in UI zullen het dossier voor u bevolken.
+Er is a [&#x200B; console &#x200B;](#translation-rules-ui) die voor het vormen vertaalregels is toegevoegd. De definities in UI zullen het dossier voor u bevolken.
 
-Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](overview.md).
+Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](overview.md).
 
 >[!NOTE]
 >
@@ -166,15 +166,15 @@ In de interface met vertaalregels kunt u:
 
 1. **voegt Context** toe, die u een weg laat toevoegen.
 
-   ![ voeg vertaalcontext ](../assets/add-translation-context.png) toe
+   ![&#x200B; voeg vertaalcontext &#x200B;](../assets/add-translation-context.png) toe
 
 1. Gebruik wegbrowser om de vereiste context te selecteren en **te selecteren bevestigen** knoop om te bewaren.
 
-   ![ Uitgezochte context ](../assets/select-context.png)
+   ![&#x200B; Uitgezochte context &#x200B;](../assets/select-context.png)
 
 1. Dan moet u uw context selecteren en dan **klikken geeft** uit. Hiermee opent u de Editor voor vertaalregels.
 
-   ![ Redacteur van de Regels van de Vertaling ](../assets/translation-rules-editor.png)
+   ![&#x200B; Redacteur van de Regels van de Vertaling &#x200B;](../assets/translation-rules-editor.png)
 
 Er zijn vier attributen die u via UI kunt veranderen:
 
@@ -191,7 +191,7 @@ Onderliggende knooppunten worden bijvoorbeeld toegevoegd aan een vertaaltaak, ze
 
 In de redacteur, kunt u controleren/uncheck **is Diep** in de **Filters** tabel.
 
-![ de regels van de Filter ](../assets/translation-rules-editor-filters.png)
+![&#x200B; de regels van de Filter &#x200B;](../assets/translation-rules-editor-filters.png)
 
 Hier is een voorbeeld van resulterende XML wanneer **Diep** is ongecontroleerd in UI:
 
@@ -221,7 +221,7 @@ In UI, kunt u **controleren/uncheck** in het **lusje van Eigenschappen** om deze
 
 Voor meer duidelijkheid over het verschil tussen `updateDestinationLanguage` en `translate` is dit een eenvoudig voorbeeld van een context met slechts twee regels:
 
-![ updateDestinationLanguage voorbeeld ](../assets/translation-rules-updatedestinationlanguage.png)
+![&#x200B; updateDestinationLanguage voorbeeld &#x200B;](../assets/translation-rules-updatedestinationlanguage.png)
 
 Het resultaat in de xml ziet er als volgt uit:
 

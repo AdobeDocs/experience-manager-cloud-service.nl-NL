@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Technische stichtingen AEM {#aem-technical-foundations}
 
-AEM is een robuust platform dat op bewezen, scalable, en flexibele technologieën wordt voortgebouwd. Dit document biedt een gedetailleerd overzicht van de verschillende onderdelen die AEM vormen en is bedoeld als een technisch aanhangsel voor een ontwikkelaar van een complete AEM. Het is niet bedoeld als gids aan de slag. Als u nieuw aan AEM ontwikkeling bent, zie [ Begonnen het Ontwikkelen AEM Sites - WKND Leerprogramma ](develop-wknd-tutorial.md) als eerste stap.
+AEM is een robuust platform dat op bewezen, scalable, en flexibele technologieën wordt voortgebouwd. Dit document biedt een gedetailleerd overzicht van de verschillende onderdelen die AEM vormen en is bedoeld als een technisch aanhangsel voor een ontwikkelaar van een complete AEM. Het is niet bedoeld als gids aan de slag. Als u nieuw aan AEM ontwikkeling bent, zie [&#x200B; Begonnen het Ontwikkelen AEM Sites - WKND Leerprogramma &#x200B;](develop-wknd-tutorial.md) als eerste stap.
 
 >[!TIP]
 >
->Alvorens in de kerntechnologieën van AEM te duiken, adviseert de Adobe de voltooiing van [ Begonnen het Ontwikkelen van AEM Sites - WKND Leerprogramma ](develop-wknd-tutorial.md).
+>Alvorens in de kerntechnologieën van AEM te duiken, adviseert de Adobe de voltooiing van [&#x200B; Begonnen het Ontwikkelen van AEM Sites - WKND Leerprogramma &#x200B;](develop-wknd-tutorial.md).
 
 ## Grondbeginselen {#fundamentals}
 
@@ -36,21 +36,21 @@ De onderliggende inhoudopslagplaats en de bedrijfslogische lagen worden gebouwd 
 
 ## Java™ Content Repository {#java-content-repository}
 
-De norm van de Bewaarplaats van de Inhoud Java™ (JCR), [ JSR 283 ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), specificeert een verkoper-onafhankelijke en implementatie-onafhankelijke manier om tot inhoud bidirectioneel op een korrelig niveau binnen een inhoudsbewaarplaats toegang te hebben. Het productdossier is in het bezit van Adobe Research (Zwitserland) AG.
+De norm van de Bewaarplaats van de Inhoud Java™ (JCR), [&#x200B; JSR 283 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), specificeert een verkoper-onafhankelijke en implementatie-onafhankelijke manier om tot inhoud bidirectioneel op een korrelig niveau binnen een inhoudsbewaarplaats toegang te hebben. Het productdossier is in het bezit van Adobe Research (Zwitserland) AG.
 
-Het [ JCR API 2.0 ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, `javax.jcr.*` wordt gebruikt voor de directe toegang en de manipulatie van bewaarplaatsinhoud.
+Het [&#x200B; JCR API 2.0 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, `javax.jcr.*` wordt gebruikt voor de directe toegang en de manipulatie van bewaarplaatsinhoud.
 
 AEM is gebaseerd op een JCR.
 
 ## Apache Jackrabbit Oak {#jackrabbit-oak}
 
-[ Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/) is een implementatie van een scalable en krachtige hiërarchische inhoudsbewaarplaats voor gebruik als stichting van moderne websites van wereldklasse en andere veeleisende inhoudstoepassingen, in overeenstemming met de norm JCR.
+[&#x200B; Apache Jackrabbit Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/) is een implementatie van een scalable en krachtige hiërarchische inhoudsbewaarplaats voor gebruik als stichting van moderne websites van wereldklasse en andere veeleisende inhoudstoepassingen, in overeenstemming met de norm JCR.
 
 Jackrabbit Oak (ook gewoon Oak genoemd) is de toepassing van de JCR-norm waarop AEM wordt gebouwd.
 
 ## Verwerking van aanvraag voor verzending {#sling-request-processing}
 
-AEM wordt gebouwd gebruikend [ het Schuiven ](https://sling.apache.org/index.html), een de toepassingskader van het Web dat op de beginselen van REST wordt gebaseerd die gemakkelijke ontwikkeling van op inhoud-georiënteerde toepassingen verstrekt. Sling gebruikt een JCR-opslagplaats, zoals Apache Jackrabbit Oak, als gegevensopslagplaats. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
+AEM wordt gebouwd gebruikend [&#x200B; het Schuiven &#x200B;](https://sling.apache.org/index.html), een de toepassingskader van het Web dat op de beginselen van REST wordt gebaseerd die gemakkelijke ontwikkeling van op inhoud-georiënteerde toepassingen verstrekt. Sling gebruikt een JCR-opslagplaats, zoals Apache Jackrabbit Oak, als gegevensopslagplaats. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
 
 ### Inleiding tot verkoop {#introduction-to-sling}
 
@@ -58,15 +58,15 @@ Met Verschuiving is het type inhoud dat moet worden gerenderd niet de eerste ver
 
 De voordelen van deze flexibiliteit worden duidelijk in toepassingen met een groot aantal verschillende inhoudselementen, of wanneer u pagina&#39;s nodig hebt die gemakkelijk kunnen worden aangepast. Met name bij de implementatie van een systeem voor webcontentbeheer, zoals AEM.
 
-Zie [ ontdekken Sling in 15 minuten ](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) voor de eerste stappen voor het ontwikkelen met het Verschilderen.
+Zie [&#x200B; ontdekken Sling in 15 minuten &#x200B;](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) voor de eerste stappen voor het ontwikkelen met het Verschilderen.
 
 In het volgende diagram wordt de resolutie van het script Sling uitgelegd. Het toont hoe te om van HTTP- verzoek aan inhoudsknoop, van inhoudsknoop aan middeltype, van middeltype aan manuscript te krijgen en welke scripting variabelen beschikbaar zijn.
 
-![ Begrijpend Apache die manuscriptresolutie verdeelt ](assets/sling-cheatsheet-01.png)
+![&#x200B; Begrijpend Apache die manuscriptresolutie verdeelt &#x200B;](assets/sling-cheatsheet-01.png)
 
 In het volgende diagram worden de verborgen, maar krachtige, aanvraagparameters uitgelegd die u met `SlingPostServlet` kunt gebruiken, de standaardhandler voor alle verzoeken om POST. De manager geeft u eindeloze opties voor het creëren van, het wijzigen van, het schrappen van, het kopiëren van, en het bewegen van knopen in de bewaarplaats.
 
-![ Gebruikend SlingPostServlet ](assets/sling-cheatsheet-02.png)
+![&#x200B; Gebruikend SlingPostServlet &#x200B;](assets/sling-cheatsheet-02.png)
 
 ### Verdelen is Content Centric {#sling-is-content-centric}
 
@@ -117,7 +117,7 @@ De beginselen van URL-decompositie gebruiken:
 
 De volgende afbeelding illustreert het gebruikte mechanisme, dat in de volgende secties nader wordt besproken.
 
-![ URL toewijzingsmechanisme ](assets/url-mapping.png)
+![&#x200B; URL toewijzingsmechanisme &#x200B;](assets/url-mapping.png)
 
 Met Sling geeft u op welk script een bepaalde entiteit wordt gerenderd (door de eigenschap `sling:resourceType` in het knooppunt JCR in te stellen). Dit mechanisme biedt meer vrijheid dan één waarin het script de gegevensentiteiten benadert (zoals een SQL-instructie in een PHP-script zou doen) omdat een resource meerdere uitvoeringen kan hebben.
 
@@ -266,7 +266,7 @@ Een OSGi-framework biedt u vervolgens dynamisch laden/verwijderen, configureren 
 
 >[!NOTE]
 >
->De volledige informatie over technologie OSGi kan bij de [ website OSGi ](https://www.osgi.org) worden gevonden.
+>De volledige informatie over technologie OSGi kan bij de [&#x200B; website OSGi &#x200B;](https://www.osgi.org) worden gevonden.
 >
 >De pagina Basisonderwijs bevat met name een verzameling presentaties en zelfstudies.
 
@@ -282,7 +282,7 @@ Met deze functionaliteit kunt u de volgende handelingen uitvoeren op elk van de 
 * Zie laatste status
 * Meer gedetailleerde informatie over specifieke bundels, bijvoorbeeld symbolische naam, versie en locatie, bekijken
 
-Zie [ Vormend OSGi voor AEM as a Cloud Service ](/help/implementing/deploying/configuring-osgi.md) voor meer informatie.
+Zie [&#x200B; Vormend OSGi voor AEM as a Cloud Service &#x200B;](/help/implementing/deploying/configuring-osgi.md) voor meer informatie.
 
 ## Structuur in de opslagplaats {#structure-within-the-repository}
 

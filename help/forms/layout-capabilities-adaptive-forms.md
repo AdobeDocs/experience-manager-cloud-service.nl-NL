@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=nl-NL) |
-| AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
+| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=nl-NL) |
+| AEM as a Cloud Service (Core Components) | [&#x200B; klik hier &#x200B;](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
 | AEM as a Cloud Service (Foundation Components) | Dit artikel |
 
 Met [!DNL Adobe Experience Manager] kunt u gebruiksvriendelijke adaptieve Forms maken die eindgebruikers een dynamische ervaring biedt. De formulierindeling bepaalt hoe items of componenten in een adaptieve vorm worden weergegeven.
@@ -48,9 +48,9 @@ Als u de indeling van een adaptief formulier wilt wijzigen, gebruikt u de ontwer
 
 Een auteur van een formulier kan een indeling koppelen aan elk deelvenster van een adaptief formulier, inclusief het hoofdvenster.
 
-De schermindelingen van het deelvenster zijn beschikbaar op de locatie `/libs/fd/af/layouts/panel` . Selecteer het paneel en selecteer ![ cmp1 ](assets/configure-icon.svg) om de paneeleigenschappen te bekijken.
+De schermindelingen van het deelvenster zijn beschikbaar op de locatie `/libs/fd/af/layouts/panel` . Selecteer het paneel en selecteer ![&#x200B; cmp1 &#x200B;](assets/configure-icon.svg) om de paneeleigenschappen te bekijken.
 
-![ Lijst van paneellay-outs voor wortelpaneel van een Aangepaste Vorm ](assets/layouts.png)
+![&#x200B; Lijst van paneellay-outs voor wortelpaneel van een Aangepaste Vorm &#x200B;](assets/layouts.png)
 
 ### [!UICONTROL Responsive - everything on one page without navigation] {#responsive-everything-on-one-page-without-navigation-br}
 
@@ -58,7 +58,7 @@ Met deze deelvensterlay-out maakt u een responsieve lay-out die zich aanpast aan
 
 Met deze lay-out kunt u meerdere **[!UICONTROL Panel Adaptive Form]** componenten achter elkaar in het deelvenster plaatsen.
 
-![ Vorm die A ontvankelijke lay-out zoals gezien op een klein scherm ](assets/responsive-layout.png) gebruikt
+![&#x200B; Vorm die A ontvankelijke lay-out zoals gezien op een klein scherm &#x200B;](assets/responsive-layout.png) gebruikt
 
 ### [!UICONTROL Wizard] {#wizard}
 
@@ -70,7 +70,7 @@ Gebruik de component **[!UICONTROL Panel Adaptive Form]** om stapsgewijze naviga
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
-![ Vorm van A gebruikend tovenaar lay-out ](assets/wizard-layout2.png)
+![&#x200B; Vorm van A gebruikend tovenaar lay-out &#x200B;](assets/wizard-layout2.png)
 
 ### [!UICONTROL Accordion] {#layout-for-accordion-design}
 
@@ -78,13 +78,13 @@ Met deze lay-out kunt u de component **[!UICONTROL Panel Adaptive Form]** plaats
 
 De summiere uitdrukking kan worden gebruikt om de waarden te tonen die door de gebruiker in de titel van het geminimaliseerde paneel worden verstrekt.
 
-![ Herhaalbare panelen die de lay-out van de Accordeon in Aanpassings Forms gebruiken ](assets/accordion-layout.png)
+![&#x200B; Herhaalbare panelen die de lay-out van de Accordeon in Aanpassings Forms gebruiken &#x200B;](assets/accordion-layout.png)
 
 ### [!UICONTROL Tabbed layout - tabs appear on the left]{#tabbed-layout-tabs-appear-on-the-left}
 
 Met deze indeling kunt u de component **[!UICONTROL Panel Adaptive Form]** in een deelvenster met tabnavigatie plaatsen. De tabbladen worden links van de inhoud van het deelvenster geplaatst.
 
-![ in de Lay-out met tabs, verschijnen de lusjes op de linkerzijde ](assets/tabs-on-left.png)
+![&#x200B; in de Lay-out met tabs, verschijnen de lusjes op de linkerzijde &#x200B;](assets/tabs-on-left.png)
 
 Tabs die links van een deelvenster worden weergegeven
 
@@ -92,7 +92,7 @@ Tabs die links van een deelvenster worden weergegeven
 
 Met deze indeling kunt u de component **[!UICONTROL Panel Adaptive Form]** in een deelvenster met tabnavigatie plaatsen. De tabbladen worden boven op de inhoud van het deelvenster geplaatst.
 
-![ Van labels voorzien lay-out in Aangepaste Forms met lusjes op de bovenkant ](assets/tabs-on-top.png)
+![&#x200B; Van labels voorzien lay-out in Aangepaste Forms met lusjes op de bovenkant &#x200B;](assets/tabs-on-top.png)
 
 ## Mobiele lay-outs {#mobile-layouts}
 
@@ -102,23 +102,23 @@ Deze indeling bepaalt de navigatie met behulp van een navigatiebalk en een navig
 
 De mobiele lay-outs zijn beschikbaar op `/libs/fd/af/layouts/mobile/` locatie. De volgende mobiele lay-outs zijn standaard beschikbaar in Adaptive Forms.
 
-![ Lijst van Mobiele Lay-outs in Aanpassings Forms ](assets/mobile-navigation.png)
+![&#x200B; Lijst van Mobiele Lay-outs in Aanpassings Forms &#x200B;](assets/mobile-navigation.png)
 
 Selecteer de optie **[!UICONTROL Add navigable items of responsive layout to mobile menu]** om de opties weer te geven die beschikbaar zijn voor een deelvenster in de mobiele lay-out. De opties voor navigatie zijn alleen zichtbaar als u **[!UICONTROL Responsive]** lay-out voor een deelvenster selecteert.
 
-Wanneer het gebruiken van een Mobiele lay-out, is het vormmenu, om tot diverse vormpanelen toegang te hebben, beschikbaar door ![ te tikken aem6forms_form_menu ](assets/rail-icon.svg) pictogram.
+Wanneer het gebruiken van een Mobiele lay-out, is het vormmenu, om tot diverse vormpanelen toegang te hebben, beschikbaar door ![&#x200B; te tikken aem6forms_form_menu &#x200B;](assets/rail-icon.svg) pictogram.
 
 ### [!UICONTROL Layout with panel titles in the form header] {#layout-with-panel-titles-in-the-form-header}
 
 In deze indeling worden, zoals in de naam wordt gesuggereerd, deelvenstertitels weergegeven, samen met het navigatiemenu en de navigatiebalk. Deze indeling biedt ook de pictogrammen Volgende en Vorige voor navigatie.
 
-![ Mobiele lay-outs met paneeltitels in de vormkopballen ](assets/mobile-layout1.png)
+![&#x200B; Mobiele lay-outs met paneeltitels in de vormkopballen &#x200B;](assets/mobile-layout1.png)
 
 ### [!UICONTROL Layout without panel titles in the form header]{#layout-without-panel-titles-in-the-form-header}
 
 In deze indeling worden, zoals in de naam wordt gesuggereerd, alleen het navigatiemenu en de navigatiebalk zonder venstertitels weergegeven. Deze indeling biedt ook de pictogrammen Volgende en Vorige voor navigatie.
 
-![ Mobiele lay-outs zonder paneeltitels in de vormkopballen ](assets/mobile-layout2.png)
+![&#x200B; Mobiele lay-outs zonder paneeltitels in de vormkopballen &#x200B;](assets/mobile-layout2.png)
 
 ## Zie ook {#see-also}
 

@@ -21,22 +21,22 @@ Leer hoe u de AEM CIF Product Carousel-component kunt uitbreiden door het Sling 
 
 De component Product Carousel wordt uitgebreid door deze zelfstudie. Als eerste stap voegt u een exemplaar van de productcarrousel toe aan de startpagina om inzicht te krijgen in de basislijnfunctionaliteit:
 
-1. Navigeer aan de Homepage van de plaats, bijvoorbeeld [ http://localhost :4502 /editor.html/content/acme/us/en.html ](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Navigeer aan de Homepage van de plaats, bijvoorbeeld [&#x200B; http://localhost :4502 /editor.html/content/acme/us/en.html &#x200B;](http://localhost:4502/editor.html/content/acme/us/en.html)
 1. Plaats een nieuwe productcarrouselcomponent in de hoofdlay-outcontainer op de pagina.
 
-   ![ component van de Carrousel van het Product ](/help/commerce-cloud/cif-storefront/assets/product-carousel-component.png)
+   ![&#x200B; component van de Carrousel van het Product &#x200B;](/help/commerce-cloud/cif-storefront/assets/product-carousel-component.png)
 
 1. Breid het Zijpaneel (als niet reeds) van een knevel voorzien en schakelaar de activa finder dropdown aan **Producten**.
 
-   ![ Carrouselproducten ](/help/commerce-cloud/cif-storefront/assets/carousel-products.png)
+   ![&#x200B; Carrouselproducten &#x200B;](/help/commerce-cloud/cif-storefront/assets/carousel-products.png)
 
 1. Dit zou een lijst van beschikbare producten van een verbonden instantie van Adobe Commerce moeten tonen.
 
-   ![ Verbonden Instantie ](/help/commerce-cloud/cif-storefront/assets/connected-instance.png)
+   ![&#x200B; Verbonden Instantie &#x200B;](/help/commerce-cloud/cif-storefront/assets/connected-instance.png)
 
 1. Producten worden hieronder weergegeven met standaardeigenschappen:
 
-   ![ Product dat met Eigenschappen ](/help/commerce-cloud/cif-storefront/assets/discount.png) wordt getoond
+   ![&#x200B; Product dat met Eigenschappen &#x200B;](/help/commerce-cloud/cif-storefront/assets/discount.png) wordt getoond
 
 ## Het verkoopmodel bijwerken {#update-sling-model}
 

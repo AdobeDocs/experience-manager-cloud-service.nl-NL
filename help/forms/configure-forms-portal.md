@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=nl-NL) |
+| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=nl-NL) |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
 
 Forms Portal biedt een efficiënte manier om Adaptief Forms weer te geven en weer te geven op een AEM Sites-pagina. Het is nuttig voor organisaties die een platform vereisen om verschillende formulieren systematisch aan hun gebruikers voor te leggen.
@@ -32,7 +32,7 @@ De componenten Form Portal bieden de volgende functionaliteit:
 
 ## Componenten van een Forms Portal
 
-![ Componenten van het Portaal van Forms ](/help/forms/assets/forms-portal.png)
+![&#x200B; Componenten van het Portaal van Forms &#x200B;](/help/forms/assets/forms-portal.png)
 
 AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 
@@ -42,7 +42,7 @@ AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 
 ## Volgende stappen
 
-In het volgende artikel, laten wij [ leren hoe te om van vormen op de pagina van Plaatsen een lijst te maken gebruikend het Onderzoek &amp; van de Schrijver Forms Portal component ](/help/forms/list-forms-on-sites-page.md).
+In het volgende artikel, laten wij [&#x200B; leren hoe te om van vormen op de pagina van Plaatsen een lijst te maken gebruikend het Onderzoek &amp; van de Schrijver Forms Portal component &#x200B;](/help/forms/list-forms-on-sites-page.md).
 
 ## Verwante artikelen
 

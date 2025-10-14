@@ -17,11 +17,11 @@ ht-degree: 0%
 
 <span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Als u toegang wilt aanvragen, stuurt u een e-mail van uw officiële adres naar aem-forms-ea@adobe.com. <span>
 
-![ Dashboard van de Realisatie van de Waarde ](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+![&#x200B; Dashboard van de Realisatie van de Waarde &#x200B;](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 Door regelmatig de metriek te controleren die in het dashboard van de Inzichten van het Gebruik van Forms wordt voorgesteld, kunt u waardevolle inzichten in de prestaties van uw vormen, documenten, en vormfragmenten verkrijgen. Gebruik deze gegevens om geïnformeerde beslissingen te nemen over formulierontwerp, fragmentbeheer en algemene formulierstrategie.
 
-Dit artikel bevat gedetailleerde gebruiksinstructies en metrische interpretatie voor het dashboard voor waardetoewijzing. Voor een conceptueel overzicht en voordelen van het dashboard, zie [ begrip van uw dashboard van de waardeverwezenlijking ](/help/forms/aem-forms-value-realization-dashboard.md).
+Dit artikel bevat gedetailleerde gebruiksinstructies en metrische interpretatie voor het dashboard voor waardetoewijzing. Voor een conceptueel overzicht en voordelen van het dashboard, zie [&#x200B; begrip van uw dashboard van de waardeverwezenlijking &#x200B;](/help/forms/aem-forms-value-realization-dashboard.md).
 
 
 ## Het dashboard met gebruiksinzichten openen
@@ -31,7 +31,7 @@ Zo opent u het dashboard met Forms-gebruiksinzichten:
 1. Navigeer aan **Forms** > **Forms en Documenten**
 1. Klik **Dashboard InProduct**. Het dashboard wordt in een nieuw venster geopend.
 
-   ![ Dashboard van de Realisatie van de Waarde ](/help/forms/assets/forms-usage-insights.png)
+   ![&#x200B; Dashboard van de Realisatie van de Waarde &#x200B;](/help/forms/assets/forms-usage-insights.png)
 
 ## Overzicht
 
@@ -56,7 +56,7 @@ Deze sectie bevat vier grafieken, die elk een verschillend aspect van vormactivi
 
 - **Doel:** Dit diagram toont het aantal tijden de vormen met succes over de geselecteerde tijdspanne zijn voorgelegd.
 
-  ![ Forms legt Grafiek voor ](/help/forms/assets/forms-submissions-vr-dashboard-form-insights.png)
+  ![&#x200B; Forms legt Grafiek voor &#x200B;](/help/forms/assets/forms-submissions-vr-dashboard-form-insights.png)
 - **Informatie aan Uittreksel:**
    - **Analyse van de Trend:** neem de algemene trend van vormverklaringen waar. Is het aantal stijgend, verminderend, of blijft relatief constant?
    - **Piekperiodes:** identificeer dagen of periodes met ongebruikelijk hoge voorleggingspercentages. Onderzoek de mogelijke redenen voor deze pieken (bijvoorbeeld marketingcampagnes, specifieke gebeurtenissen).
@@ -67,7 +67,7 @@ Deze sectie bevat vier grafieken, die elk een verschillend aspect van vormactivi
 
 - **Doel:** Deze grafiek volgt het aantal documenten die als resultaat van vormvoorlegging worden geproduceerd. Dit is relevant als uw formulieren het maken van documenten (bijvoorbeeld contracten, rapporten) activeren.
 
-  ![ Grafiek van de Teruggaven van het Document ](/help/forms/assets/document-rendetions-vr-dashboard-form-insights.png)
+  ![&#x200B; Grafiek van de Teruggaven van het Document &#x200B;](/help/forms/assets/document-rendetions-vr-dashboard-form-insights.png)
 
 
 - **Informatie aan Uittreksel:**
@@ -79,7 +79,7 @@ Deze sectie bevat vier grafieken, die elk een verschillend aspect van vormactivi
 
 - **Doel:** Deze grafiek toont het aantal nieuwe vormen die binnen de geselecteerde tijdspanne worden gecreeerd.
 
-  ![ Forms creeerde Grafiek ](/help/forms/assets/forms-created-vr-dashboard-form-insights.png)
+  ![&#x200B; Forms creeerde Grafiek &#x200B;](/help/forms/assets/forms-created-vr-dashboard-form-insights.png)
 
 - **Informatie aan Uittreksel:**
    - **Tarief van de Making van de Vorm:** spoor het tarief waaraan de nieuwe vormen worden gecreeerd. Dit biedt inzicht in de vraag naar nieuwe formulieren binnen de organisatie.
@@ -89,7 +89,7 @@ Deze sectie bevat vier grafieken, die elk een verschillend aspect van vormactivi
 
 - **Doel:** Dit diagram volgt het aantal vormen die (beschikbaar voor gebruik gemaakt) binnen de geselecteerde tijdspanne zijn gepubliceerd.
 
-  ![ Forms Gepubliceerde Grafiek ](/help/forms/assets/forms-publish-vr-dashboard-form-insights.png)
+  ![&#x200B; Forms Gepubliceerde Grafiek &#x200B;](/help/forms/assets/forms-publish-vr-dashboard-form-insights.png)
 
 
 - **Informatie aan Uittreksel:**
@@ -100,7 +100,7 @@ Deze sectie bevat vier grafieken, die elk een verschillend aspect van vormactivi
 
 Deze sectie biedt inzicht in het gebruik van formulierfragmenten. Dit zijn herbruikbare componenten die in meerdere formulieren kunnen worden opgenomen.
 
-![ Forms Gepubliceerde Grafiek ](/help/forms/assets/fragment-usage-vr-dashboard-form-insights.png)
+![&#x200B; Forms Gepubliceerde Grafiek &#x200B;](/help/forms/assets/fragment-usage-vr-dashboard-form-insights.png)
 
 ### Aantal gebruikte formulierfragmenten
 

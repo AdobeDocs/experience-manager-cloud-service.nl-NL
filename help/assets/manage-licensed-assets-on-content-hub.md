@@ -16,9 +16,9 @@ Als beheerder kunt u het metagegevensformulier bewerken en het veld voor de elem
 Voer de volgende stappen uit:
 
 1. Bewerk het metagegevensformulier om een nieuw tekstveld op te nemen waarin de licentiegegevens worden opgenomen. Wijs het tekstveld toe aan de eigenschap `dc:license` . Voor meer informatie over hoe te om gebieden aan een meta-gegevensvorm toe te voegen en eigenschappen te bepalen, zie &lbrace;de Meta-gegevens van de Opstelling Forms [&#128279;](/help/assets/metadata-assets-view.md#metadata-forms).
-   ![ zip extractie ](/help/assets/assets/metadata-form-edit.png)
-1. Pas het metagegevensformulier toe op de elementmap om de instellingen in stap 1 toe te passen. Voor informatie over hoe te om een meta-gegevensvorm aan de activaomslag toe te wijzen, zie [ meta-gegevensvorm aan een omslag ](/help/assets/metadata-assets-view.md#metadata-forms) toewijzen.
+   ![&#x200B; zip extractie &#x200B;](/help/assets/assets/metadata-form-edit.png)
+1. Pas het metagegevensformulier toe op de elementmap om de instellingen in stap 1 toe te passen. Voor informatie over hoe te om een meta-gegevensvorm aan de activaomslag toe te wijzen, zie [&#x200B; meta-gegevensvorm aan een omslag &#x200B;](/help/assets/metadata-assets-view.md#metadata-forms) toewijzen.
 1. [De PDF met licentie goedkeuren](/help/assets/manage-organize-assets-view.md#set-asset-status)
 1. Selecteer de activa en klik **Details** om zijn eigenschappen te bekijken. In het vergunningsgebied dat in Stap 1 wordt toegevoegd, bepaal de absolute weg voor de activavergunning die in Stap 3 is goedgekeurd of reeds eerder goedgekeurd. Het absolute Content Hub-pad volgt het volgende standaardpatroon: `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`. Bijvoorbeeld /content/dam/teamA/projects/documents/file1.pdf
-   ![ absolute weg ](/help/assets/assets/absolute-path.png)
-1. Stem de activa goed om het in Content Hub beschikbaar te maken en klik **sparen**. Voor informatie over hoe te om activa goed te keuren, zie [ Vastgestelde activastatus ](/help/assets/manage-organize-assets-view.md#set-asset-status).
+   ![&#x200B; absolute weg &#x200B;](/help/assets/assets/absolute-path.png)
+1. Stem de activa goed om het in Content Hub beschikbaar te maken en klik **sparen**. Voor informatie over hoe te om activa goed te keuren, zie [&#x200B; Vastgestelde activastatus &#x200B;](/help/assets/manage-organize-assets-view.md#set-asset-status).

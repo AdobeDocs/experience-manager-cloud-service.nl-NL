@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Met de functie Sling Model Exporter kunt u Sling Model-objecten serialiseren in JSON-indeling. Deze functie wordt op grote schaal gebruikt omdat SPA (toepassingen van één pagina) gemakkelijk toegang hebben tot gegevens van AEM. Aan de implementatiezijde wordt de bibliotheek Jackson Databind gebruikt om deze objecten van een serienummer te voorzien.
 
-De rangschikking is een recursieve verrichting. Vanaf een &quot;wortelvoorwerp,&quot;herhaalt het recursief door alle in aanmerking komende voorwerpen en rangschikt hen en hun kinderen. U kunt een beschrijving vinden van welke gebieden in het artikel [ worden in series vervaardigd Jackson - besluit welke Gebieden in series vervaardigd/Deserialized ](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) krijgen.
+De rangschikking is een recursieve verrichting. Vanaf een &quot;wortelvoorwerp,&quot;herhaalt het recursief door alle in aanmerking komende voorwerpen en rangschikt hen en hun kinderen. U kunt een beschrijving vinden van welke gebieden in het artikel [&#x200B; worden in series vervaardigd Jackson - besluit welke Gebieden in series vervaardigd/Deserialized &#x200B;](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) krijgen.
 
 Deze benadering serialiseert alle soorten voorwerpen in JSON. Het kan natuurlijk ook een Sling `ResourceResolver` -object serialiseren, als dit onder de serialisatieregels valt. Dit is problematisch, omdat de `ResourceResolver` -service (en dus ook het serviceobject dat deze vertegenwoordigt) mogelijk gevoelige informatie bevat, die niet openbaar moet worden gemaakt. Bijvoorbeeld:
 
@@ -23,7 +23,7 @@ Deze benadering serialiseert alle soorten voorwerpen in JSON. Het kan natuurlijk
 * De zoekpaden voor het omzetten van relatieve paden
 * De `propertyMap`
 
-Speciaal gevoelig is `propertyMap` (zie de API documentatie van [`getPropertyMap` ](https://sling.apache.org/apidocs/sling12/org/apache/sling/api/resource/ResourceResolver.html#getPropertyMap--)), aangezien het een interne gegevensstructuur is, die voor vele doeleinden kan worden gebruikt, bijvoorbeeld caching voorwerpen die de zelfde levenscyclus zoals `ResourceResolver` delen. Het serialiseren van deze gegevens kan implementatiedetails lekken en kan een effect op de beveiliging hebben, omdat gegevens worden weergegeven die niet leesbaar en toegankelijk moeten zijn voor een eindgebruiker. Daarom moet `ResourceResolvers` niet met serienummering in JSON worden gecodeerd.
+Speciaal gevoelig is `propertyMap` (zie de API documentatie van [`getPropertyMap` &#x200B;](https://sling.apache.org/apidocs/sling12/org/apache/sling/api/resource/ResourceResolver.html#getPropertyMap--)), aangezien het een interne gegevensstructuur is, die voor vele doeleinden kan worden gebruikt, bijvoorbeeld caching voorwerpen die de zelfde levenscyclus zoals `ResourceResolver` delen. Het serialiseren van deze gegevens kan implementatiedetails lekken en kan een effect op de beveiliging hebben, omdat gegevens worden weergegeven die niet leesbaar en toegankelijk moeten zijn voor een eindgebruiker. Daarom moet `ResourceResolvers` niet met serienummering in JSON worden gecodeerd.
 
 Adobe is van plan de serialisatie van `ResourceResolvers` uit te schakelen in een tweestapige aanpak:
 
@@ -43,12 +43,12 @@ Dit logbericht betekent dat tijdens het proces van het serialiseren van `/conten
 
 >[!NOTE]
 >
->[ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/introduction) zijn bevestigd om niet door dit probleem worden beïnvloed.
+>[&#x200B; AEM de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/introduction) zijn bevestigd om niet door dit probleem worden beïnvloed.
 
 ## Aangevraagde actie {#requested-action}
 
 De Adobe verzoekt alle klanten om hun toepassingslogboeken en codebasis te controleren om te zien of worden zij beïnvloed door dit probleem, en de douanetoepassing waar nodig te veranderen, zodat dit waarschuwingsbericht niet meer in logboeken verschijnt.
 
-Er wordt aangenomen dat deze vereiste wijzigingen in de meeste gevallen rechtuit zijn. De `ResourceResolver` voorwerpen worden vereist in de output JSON helemaal niet, aangezien de informatie bevat daar normaal niet door frontend toepassingen wordt vereist, die in de meeste gevallen het zou moeten voldoende zijn om het `ResourceResolver` voorwerp van worden uitgesloten dat (zie de [ regels ](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).)
+Er wordt aangenomen dat deze vereiste wijzigingen in de meeste gevallen rechtuit zijn. De `ResourceResolver` voorwerpen worden vereist in de output JSON helemaal niet, aangezien de informatie bevat daar normaal niet door frontend toepassingen wordt vereist, die in de meeste gevallen het zou moeten voldoende zijn om het `ResourceResolver` voorwerp van worden uitgesloten dat (zie de [&#x200B; regels &#x200B;](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).)
 
 Als een Sling Model door dit probleem wordt beïnvloed maar niet veranderd, zal het expliciete onbruikbaar maken van rangschikking van het voorwerp `ResourceResolver` (zoals uitgevoerd door Adobe als tweede stap) een verandering in de output afdwingen JSON.

@@ -28,7 +28,7 @@ You can share collections with various users that are assigned different levels 
 
 U kunt meerdere verzamelingen delen met een gebruiker. Elke verzameling bevat verwijzingen naar elementen. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.
 
-![ Inzamelingen ](assets/collections.png)
+![&#x200B; Inzamelingen &#x200B;](assets/collections.png)
 
 U kunt de volgende taken uitvoeren om inzamelingen te beheren en te gebruiken:
 
@@ -64,7 +64,7 @@ Een verzameling maken:
 
 1. Klik op **[!UICONTROL Create]** om de verzameling te maken.
 
-![ creeer inzameling ](assets/create-collection.png)
+![&#x200B; creeer inzameling &#x200B;](assets/create-collection.png)
 
 <!--
    
@@ -102,11 +102,11 @@ Sla de zoekresultaten op als een slimme verzameling om de inhoud van de verzamel
 
 Een slimme verzameling maken:
 
-1. Klik **[!UICONTROL Filter]** en [ bepalen de onderzoekscriteria ](search-assets-view.md#refine-search-results).
+1. Klik **[!UICONTROL Filter]** en [&#x200B; bepalen de onderzoekscriteria &#x200B;](search-assets-view.md#refine-search-results).
 
 1. Klik op **[!UICONTROL Save as]** en selecteer vervolgens **[!UICONTROL Smart Collection]** .
 
-   ![ creeer slimme inzameling ](assets/create-smart-collection.png)
+   ![&#x200B; creeer slimme inzameling &#x200B;](assets/create-smart-collection.png)
 
 1. Geef in het dialoogvenster [!UICONTROL Create Smart Collection] een titel en een beschrijving op voor de slimme verzameling.
 
@@ -122,7 +122,7 @@ Een slimme verzameling bewerken:
 
 1. Klik op **[!UICONTROL Edit Smart Collection]**.
 
-1. Voor het [!UICONTROL Edit Smart Collection Filters] dialoogvakje, [ werk de onderzoekscriteria ](search-assets-view.md#refine-search-results) voor de Slimme Inzameling bij.
+1. Voor het [!UICONTROL Edit Smart Collection Filters] dialoogvakje, [&#x200B; werk de onderzoekscriteria &#x200B;](search-assets-view.md#refine-search-results) voor de Slimme Inzameling bij.
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -158,15 +158,15 @@ Metagegevens van verzamelingen weergeven en bewerken:
 1. De metagegevens van de verzameling weergeven met het tabblad **[!UICONTROL Basic]** .
 1. Wijzig desgewenst de metagegevensvelden. U kunt de velden [!UICONTROL Title] en [!UICONTROL Description] wijzigen.
 
-![ meta-gegevens van de Inzameling ](assets/collection-metadata.png)
+![&#x200B; meta-gegevens van de Inzameling &#x200B;](assets/collection-metadata.png)
 
 ## Koppelingen voor verzamelingen delen {#share-collection-links}
 
 Met [!DNL Assets view] kunt u een koppeling genereren en verzamelingen en elementen in verzamelingen delen met externe belanghebbenden die geen toegang hebben tot de [!DNL Assets view] -toepassing. U kunt een vervaldatum voor de verbinding bepalen en dan het delen met anderen gebruikend uw aangewezen communicatie methode zoals e-mail of overseinendiensten. Ontvangers van de koppeling kunnen een voorbeeld van de elementen bekijken en deze downloaden.
 
-![ verbinding van het Aandeel voor activa ](assets/share-link-collections.png)
+![&#x200B; verbinding van het Aandeel voor activa &#x200B;](assets/share-link-collections.png)
 
-Voor meer informatie over hoe te om inzamelingsverbindingen met externe belanghebbenden te delen, zie [ verbindingen voor activa ](/help/assets/share-links-for-assets-view.md) delen.
+Voor meer informatie over hoe te om inzamelingsverbindingen met externe belanghebbenden te delen, zie [&#x200B; verbindingen voor activa &#x200B;](/help/assets/share-links-for-assets-view.md) delen.
 
 ## Een verzameling downloaden {#download-collection}
 
@@ -192,20 +192,20 @@ Een verzameling verwijderen:
 
 ## Rechten voor een privéverzameling beheren{#manage-permissions-private-collection}
 
-U kunt beheerders toestaan om [ toegangsniveaus ](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) voor privé inzamelingen te beheren beschikbaar in de bewaarplaats. U kunt machtigingen zoals `Can View` en `Can Edit` toewijzen aan gebruikersgroepen of gebruikers. U kunt toestemmingsbeheervoorrechten aan gebruikersgroepen ook delegeren. De gebruikers die privé inzamelingen tot stand brengen zijn de eigenaars van die inzamelingen. Ze kunnen de handeling [!UICONTROL Manage Permissions] gebruiken om toegang te verlenen aan andere gebruikers. Bovendien kunnen beheerders machtigingen van de privéverzamelingen in de [!DNL Experience Manager] -opslagplaats weergeven en beheren.
+U kunt beheerders toestaan om [&#x200B; toegangsniveaus &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) voor privé inzamelingen te beheren beschikbaar in de bewaarplaats. U kunt machtigingen zoals `Can View` en `Can Edit` toewijzen aan gebruikersgroepen of gebruikers. U kunt toestemmingsbeheervoorrechten aan gebruikersgroepen ook delegeren. De gebruikers die privé inzamelingen tot stand brengen zijn de eigenaars van die inzamelingen. Ze kunnen de handeling [!UICONTROL Manage Permissions] gebruiken om toegang te verlenen aan andere gebruikers. Bovendien kunnen beheerders machtigingen van de privéverzamelingen in de [!DNL Experience Manager] -opslagplaats weergeven en beheren.
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-Voor informatie over hoe te om de beschikbare toestemmingen aan gebruikersgroepen toe te wijzen, zie [ toestemmingen aan gebruikersgroepen ](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) toevoegen.
+Voor informatie over hoe te om de beschikbare toestemmingen aan gebruikersgroepen toe te wijzen, zie [&#x200B; toestemmingen aan gebruikersgroepen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) toevoegen.
 
-Voor meer informatie over het werkschema van begin tot eind, zie [ toestemmingen ](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) beheren.
+Voor meer informatie over het werkschema van begin tot eind, zie [&#x200B; toestemmingen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) beheren.
 
 ## Volgende stappen {#next-steps}
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
 * De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)

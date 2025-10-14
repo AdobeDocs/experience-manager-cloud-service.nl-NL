@@ -24,9 +24,9 @@ In dit gedeelte van de reis leert u hoe u de migratie kunt plannen en uitvoeren 
 
 In de vorige fasen van de reis:
 
-* U leerde hoe te beginnen met de beweging aan AEM as a Cloud Service in [ worden Begonnen ](/help/journey-migration/getting-started.md) pagina.
-* Vastgesteld als uw plaatsing klaar is om aan de wolk te worden bewogen door de [ fase van de Gereedheid ](/help/journey-migration/readiness.md) te lezen
-* Vertrouwd zelf met de hulpmiddelen en het proces waardoor u uw code en inhoudswolk met de [ fase van de Implementatie ](/help/journey-migration/implementation.md) kunt maken.
+* U leerde hoe te beginnen met de beweging aan AEM as a Cloud Service in [&#x200B; worden Begonnen &#x200B;](/help/journey-migration/getting-started.md) pagina.
+* Vastgesteld als uw plaatsing klaar is om aan de wolk te worden bewogen door de [&#x200B; fase van de Gereedheid &#x200B;](/help/journey-migration/readiness.md) te lezen
+* Vertrouwd zelf met de hulpmiddelen en het proces waardoor u uw code en inhoudswolk met de [&#x200B; fase van de Implementatie &#x200B;](/help/journey-migration/implementation.md) kunt maken.
 
 ## Doelstelling {#objective}
 
@@ -34,7 +34,7 @@ Dit document helpt u te begrijpen hoe u de migratie naar AEM as a Cloud Service 
 
 ## Oorspronkelijke productiemigratie {#initial-migration}
 
-Alvorens u de productiemigratie kunt uitvoeren, volg de installatie en het bewijs van migratiestappen die in de [ worden geschetst de migratiestrategie van de Inhoud en chronologie ](/help/journey-migration/implementation.md##strategy-timeline) sectie van de [ fase van de Implementatie ](/help/journey-migration/implementation.md).
+Alvorens u de productiemigratie kunt uitvoeren, volg de installatie en het bewijs van migratiestappen die in de [&#x200B; worden geschetst de migratiestrategie van de Inhoud en chronologie &#x200B;](/help/journey-migration/implementation.md##strategy-timeline) sectie van de [&#x200B; fase van de Implementatie &#x200B;](/help/journey-migration/implementation.md).
 
 * De migratie vanuit productie starten op basis van de ervaring die u hebt opgedaan tijdens de AEM as a Cloud Service-migratie tijdens het uitvoeren van klonen:
    * Auteur
@@ -43,8 +43,8 @@ Alvorens u de productiemigratie kunt uitvoeren, volg de installatie en het bewij
 * Valideer de inhoud die in de AEM as a Cloud Service-auteur en -publicatielagen wordt opgenomen.
 * Geef het ontwerpteam van de inhoud de opdracht om te voorkomen dat inhoud op zowel de bron als de bestemming wordt verplaatst totdat de opname is voltooid
 * Nieuwe inhoud kan worden toegevoegd, bewerkt of verwijderd, maar u kunt het verplaatsen voorkomen. Dit geldt zowel voor de bron als voor de bestemming.
-* Registreer de [ tijd die ](/help/journey-migration/implementation.md#gathering-data) voor volledige extractie en opname wordt genomen om een schatting voor toekomstige top-up migratiechronologie te hebben.
-* Creeer a [ migratieplanner ](/help/journey-migration/implementation.md#migration-plan) voor zowel auteur als publiceert.
+* Registreer de [&#x200B; tijd die &#x200B;](/help/journey-migration/implementation.md#gathering-data) voor volledige extractie en opname wordt genomen om een schatting voor toekomstige top-up migratiechronologie te hebben.
+* Creeer a [&#x200B; migratieplanner &#x200B;](/help/journey-migration/implementation.md#migration-plan) voor zowel auteur als publiceert.
 
 ## Incrementele top-ups {#top-up}
 
@@ -79,7 +79,7 @@ Houd bij het plannen of uitvoeren van de migratie rekening met de volgende richt
 
 **Beste praktijken van het Hulpmiddel van de Overdracht van de Inhoud**
 
-Zorg ervoor dat wanneer u live gaat, u de migratie van inhoud uitvoert op productie in plaats van op een kloon. Een goede benadering is [ AZCopy ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) voor de aanvankelijke migratie te gebruiken en dan bovenop extracties vaak (zelfs dagelijks) in werking te stellen om kleinere brokken te halen en om het even welke lading op lange termijn op de AEM te vermijden.
+Zorg ervoor dat wanneer u live gaat, u de migratie van inhoud uitvoert op productie in plaats van op een kloon. Een goede benadering is [&#x200B; AZCopy &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) voor de aanvankelijke migratie te gebruiken en dan bovenop extracties vaak (zelfs dagelijks) in werking te stellen om kleinere brokken te halen en om het even welke lading op lange termijn op de AEM te vermijden.
 
 Wanneer u de productiemigratie uitvoert, moet u het gereedschap Inhoud overbrengen niet vanuit een kloon uitvoeren omdat:
 
@@ -92,7 +92,7 @@ Vergeet niet dat de belasting op de AEM tijdens de extractiefase groter is. Let 
 
 * Het gereedschap Inhoud overbrengen is een extern Java-proces dat een JVM-heap van 4 GB gebruikt
 * De niet-AzCopy versie downloadt binaire getallen, slaat hen op een tijdelijke ruimte op de bron AEM auteur, verbruikt schijf I/O, dan uploadt in de Azure container die netwerkbandbreedte verbruikt
-* [ AzCopy ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) brengt direct van de blob opslag aan de Azure container over die schijf I/O en netwerkbandbreedte bespaart. De versie AzCopy gebruikt nog de schijf en de netwerkbandbreedte om de gegevens uit de segmentopslag in de Azure-container te halen en te uploaden
+* [&#x200B; AzCopy &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) brengt direct van de blob opslag aan de Azure container over die schijf I/O en netwerkbandbreedte bespaart. De versie AzCopy gebruikt nog de schijf en de netwerkbandbreedte om de gegevens uit de segmentopslag in de Azure-container te halen en te uploaden
 * Het proces van het Hulpmiddel van de Overdracht van de Inhoud is lichter op de systeembronnen tijdens de innamefase, aangezien het slechts stromen ingeslikt logboeken en er niet veel lading op de broninstantie voor schijf I/O of netwerkbandbreedte betrokken is.
 
 ## Bekende beperkingen {#known-limitations}
@@ -110,12 +110,12 @@ Vergeleken met de sectie boven het innemen **niet** om de volgende activazorgen 
 * Elk element met de oorspronkelijke uitvoering ontbreekt
 * Een map waarin een knooppunt `jcr:content` ontbreekt.
 
-Beide bovengenoemde punten worden geïdentificeerd en in het [ rapport van de Analysator van de Beste praktijk ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) gemeld.
+Beide bovengenoemde punten worden geïdentificeerd en in het [&#x200B; rapport van de Analysator van de Beste praktijk &#x200B;](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) gemeld.
 
 ## Live checklist {#Go-Live-Checklist}
 
-Voor meer informatie, raadpleeg de [ Go-Live Checklist ](/help/journey-onboarding/go-live-checklist.md) documentatie.
+Voor meer informatie, raadpleeg de [&#x200B; Go-Live Checklist &#x200B;](/help/journey-onboarding/go-live-checklist.md) documentatie.
 
 ## Volgende functies {#what-is-next}
 
-Zodra u begrijpt hoe te om de migratie aan AEM as a Cloud Service uit te voeren, kunt u de [ post-gaan-Levende ](/help/journey-migration/post-go-live.md) pagina controleren om uw instantie te houden die regelmatig loopt.
+Zodra u begrijpt hoe te om de migratie aan AEM as a Cloud Service uit te voeren, kunt u de [&#x200B; post-gaan-Levende &#x200B;](/help/journey-migration/post-go-live.md) pagina controleren om uw instantie te houden die regelmatig loopt.

@@ -20,7 +20,7 @@ De Apache- en Dispatcher-configuratie in AEM as a Cloud Service lijkt sterk op d
 * In AEM as a Cloud Service worden sommige Apache-instructies mogelijk niet gebruikt (bijvoorbeeld `Listen` of `LogLevel` )
 * In AEM as a Cloud Service kunnen alleen bepaalde onderdelen van de Dispatcher-configuratie worden opgenomen in include-bestanden en is de naamgeving ervan belangrijk. Zo moeten filterregels die u op verschillende hosts opnieuw wilt gebruiken, in een bestand met de naam `filters/filters.any` worden geplaatst. Zie de referentiepagina voor meer informatie.
 * In AEM as a Cloud Service is er een extra validatie om filterregels die met `/glob` zijn geschreven, niet toe te staan om beveiligingsproblemen te voorkomen. Omdat `deny *` wordt gebruikt in plaats van `allow *` (en niet kan worden gebruikt), profiteren klanten van het lokaal uitvoeren van de Dispatcher en het uitvoeren van vallen en fouten. In de logboeken ziet u precies welke paden door de Dispatcher-filters worden geblokkeerd, zodat deze kunnen worden toegevoegd.
-* In AEM as a Cloud Service wordt het momenteel hoogst geadviseerd om [ te kiezen binnen om de flexibele bronwijze van verzender config ](/help/implementing/dispatcher/disp-overview.md#validation-debug) te gebruiken bv. om web-tier config pijpleidingen te gebruiken of betere flexibiliteit op aantal en structuur van configuratiedossiers te hebben.
+* In AEM as a Cloud Service wordt het momenteel hoogst geadviseerd om [&#x200B; te kiezen binnen om de flexibele bronwijze van verzender config &#x200B;](/help/implementing/dispatcher/disp-overview.md#validation-debug) te gebruiken bv. om web-tier config pijpleidingen te gebruiken of betere flexibiliteit op aantal en structuur van configuratiedossiers te hebben.
 
 ## Richtlijnen voor het migreren van de configuratie van de verzender van AMS naar AEM as a Cloud Service
 
@@ -29,7 +29,7 @@ De Dispatcher-configuratiestructuur is anders tussen Managed Services en AEM as 
 ## Een AMS converteren naar een AEM als Dispatcher-configuratie voor een cloudservice
 
 In de volgende sectie vindt u stapsgewijze instructies voor het omzetten van een AMS-configuratie. Zij gaat ervan uit
-dat u een archief met een structuur gelijkend op die in [ wordt beschreven de configuratie van Dispatcher van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=nl-NL) hebt
+dat u een archief met een structuur gelijkend op die in [&#x200B; wordt beschreven de configuratie van Dispatcher van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=nl-NL) hebt
 
 ### Het archief extraheren en een eventueel voorvoegsel verwijderen
 

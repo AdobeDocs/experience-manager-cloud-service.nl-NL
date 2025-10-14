@@ -33,10 +33,10 @@ U kunt het Live Copy-overzicht openen via het volgende:
 
 Het **Levende Overzicht van het Exemplaar** kan van het **3&rbrace; zijpaneel van Verwijzingen van de** Sites **console worden geopend:**
 
-1. In de **console van Plaatsen**, [ navigeer aan uw blauwdruk pagina en selecteer het ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. In de **console van Plaatsen**, [&#x200B; navigeer aan uw blauwdruk pagina en selecteer het &#x200B;](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open het **[spoor van Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references)** en selecteer **Levende Exemplaren**.
 
-   ![ Levend Exemplaar van verwijzingenspoor ](../assets/live-copy-references.png)
+   ![&#x200B; Levend Exemplaar van verwijzingenspoor &#x200B;](../assets/live-copy-references.png)
 
    >[!TIP]
    >
@@ -52,7 +52,7 @@ Het **Levende Overzicht van het Exemplaar** kan worden geopend wanneer het bekij
 1. Open **Eigenschappen** voor de aangewezen blauwdrukpagina.
 1. Open het **lusje van de Vervaging** - de **Levende optie van het Overzicht van het Exemplaar** wordt getoond in de hoogste toolbar:
 
-   ![ het lusje van Eigenschappen van de Vervaging ](../assets/live-copy-blueprint-tab.png)
+   ![&#x200B; het lusje van Eigenschappen van de Vervaging &#x200B;](../assets/live-copy-blueprint-tab.png)
 
 1. Selecteer **Levend Overzicht van het Exemplaar** om het overzicht van alle Levende Exemplaren met betrekking tot de huidige blauwdruk te tonen en te gebruiken.
 
@@ -62,7 +62,7 @@ Het **Levende Overzicht van het Exemplaar** kan worden geopend wanneer het bekij
 
 Het **Levende venster van het Overzicht van het Exemplaar** verstrekt en overzicht van het statuut van Levende Exemplaren met betrekking tot de geselecteerde pagina.
 
-![ Levend venster van het Overzicht van het Exemplaar ](../assets/live-copy-overview.png)
+![&#x200B; Levend venster van het Overzicht van het Exemplaar &#x200B;](../assets/live-copy-overview.png)
 
 Een rollout hangt van de synchronisatieacties af die in de specifieke rollout configuratie worden bepaald. Sommige acties zijn afhankelijk van wijzigingen in de inhoud. Er zijn echter ook veel acties die niet afhankelijk zijn van wijzigingen in de inhoud, maar die afhankelijk zijn van gebeurtenissen zoals paginanactivering. Dergelijke gebeurtenissen wijzigen de inhoud niet, maar wijzigen wel de interne eigenschappen die betrekking hebben op de inhoud.
 
@@ -73,13 +73,13 @@ Een rollout-configuratie wordt bijvoorbeeld gedefinieerd als `targetActivate` . 
 Het **Levende Overzicht van het Exemplaar** kan ook worden gebruikt om acties op Levend Exemplaar uit te voeren:
 
 1. Open het **Levende Overzicht van het Exemplaar**.
-1. Selecteer de gewenste blauwdruk of pagina Live kopie en de werkbalk wordt bijgewerkt om de beschikbare acties weer te geven. De [ beschikbare acties ](overview.md#terms-used) hangen van af of u a [ blauwdruk ](#actions-for-a-blueprint-page) of [ Levende pagina van het Exemplaar ](#actions-for-a-live-copy-page) selecteert.
+1. Selecteer de gewenste blauwdruk of pagina Live kopie en de werkbalk wordt bijgewerkt om de beschikbare acties weer te geven. De [&#x200B; beschikbare acties &#x200B;](overview.md#terms-used) hangen van af of u a [&#x200B; blauwdruk &#x200B;](#actions-for-a-blueprint-page) of [&#x200B; Levende pagina van het Exemplaar &#x200B;](#actions-for-a-live-copy-page) selecteert.
 
 ### Handelingen voor een vervagingspagina {#actions-for-a-blueprint-page}
 
 Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 
-![ Levende acties van het Overzicht van het Exemplaar voor een blauwdruk ](../assets/live-copy-overview-actions-blueprint.png)
+![&#x200B; Levende acties van het Overzicht van het Exemplaar voor een blauwdruk &#x200B;](../assets/live-copy-overview-actions-blueprint.png)
 
 * **geeft** uit - open de blauwdruk pagina voor het uitgeven uit.
 * **[Uitvoer](overview.md#rollout-and-synchronize)** - voer een rollout uit om veranderingen van de bron in Levend Exemplaar te duwen.
@@ -88,7 +88,7 @@ Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 
 Wanneer u een pagina voor Live kopie selecteert, zijn de volgende acties beschikbaar:
 
-![ Levende acties van het Overzicht van het Exemplaar voor Levend Exemplaar ](../assets/live-copy-overview-actions.png)
+![&#x200B; Levende acties van het Overzicht van het Exemplaar voor Levend Exemplaar &#x200B;](../assets/live-copy-overview-actions.png)
 
 * **geef uit** - open de Levende pagina van het Exemplaar voor het uitgeven uit.
 * **[Status van de Verhouding](#relationship-status)** - de informatie van de mening over de status en de overerving.
@@ -109,10 +109,10 @@ De **console van de Status van de Verhouding** heeft twee lusjes die een waaier 
 
 Dit tabblad bevat gedetailleerde informatie over de status van de relatie tussen de blauwdruk en Live kopie.
 
-![ lusje van de Status van de Verhouding ](../assets/live-copy-relationship-status.png)
+![&#x200B; lusje van de Status van de Verhouding &#x200B;](../assets/live-copy-relationship-status.png)
 
 ### Live kopie {#live-copy-tab}
 
 Op dit tabblad kunt u de Live Copy-configuratie weergeven en bewerken.
 
-![ Levende het lusje van het Exemplaar ](../assets/live-copy-relationship-status-live-copy.png)
+![&#x200B; Levende het lusje van het Exemplaar &#x200B;](../assets/live-copy-relationship-status-live-copy.png)

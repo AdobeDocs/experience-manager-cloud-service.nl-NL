@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Met lanceringen kunt u allebei:
 
-* [ beheer nieuwe inhoud in bestaande pagina&#39;s ](/help/sites-cloud/authoring/launches/editing.md),
-* [ navigeer door de structuur van een lancering in de console van Plaatsen ](#navigate-structure-of-launch),
-* Van de console [ voegt nieuwe pagina&#39;s aan ](#add-pages-to-launch) toe, of [ schrapt ongewenste pagina&#39;s van ](#remove-pages-from-launch), een lancering,
+* [&#x200B; beheer nieuwe inhoud in bestaande pagina&#39;s &#x200B;](/help/sites-cloud/authoring/launches/editing.md),
+* [&#x200B; navigeer door de structuur van een lancering in de console van Plaatsen &#x200B;](#navigate-structure-of-launch),
+* Van de console [&#x200B; voegt nieuwe pagina&#39;s aan &#x200B;](#add-pages-to-launch) toe, of [&#x200B; schrapt ongewenste pagina&#39;s van &#x200B;](#remove-pages-from-launch), een lancering,
 * Andere standaardhandelingen uitvoeren op pagina&#39;s binnen de opstart.
 
 ## Navigeren door de structuur van uw opstart {#navigate-structure-of-launch}
@@ -29,7 +29,7 @@ U kunt door de structuur van uw lancering navigeren van:
 
    * Selecteer **navigeer** om de structuur van de Lancering in de console te openen:
 
-     ![ navigeren lancering van de Redacteur van de Pagina ](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+     ![&#x200B; navigeren lancering van de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]
      >
@@ -39,12 +39,12 @@ U kunt door de structuur van uw lancering navigeren van:
 
 * De **Console van Lanceringen**:
 Als u een specifieke lancering selecteert, kunt u **dan selecteren leidt Inhoud**:
-  ![ Console van de Lancering - beheer Inhoud ](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+  ![&#x200B; Console van de Lancering - beheer Inhoud &#x200B;](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * De **Console van Plaatsen**:
 Als u een specifieke bronpagina selecteert en **Verwijzingen** opent, kunt u **Lanceringen** dan selecteren die door **wordt gevolgd beheert Inhoud**:
 
-  ![ Console van de Lancering - beheer Inhoud ](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+  ![&#x200B; Console van de Lancering - beheer Inhoud &#x200B;](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
   >[!NOTE]
   >
@@ -55,22 +55,22 @@ Al deze ingangspunten opent de lancering in de console van Plaatsen, waar u kunt
 * Navigeren,
 * **creeer** nieuwe pagina&#39;s,
 * Selecteer bestaande pagina&#39;s en actie; bijvoorbeeld, **geef** uit, open **Eigenschappen**, **Slot**, **Exemplaar**, **Deeg** en **Schrapping**
-  ![ navigeer lancering in de Console van Plaatsen van Manage Inhoud ](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+  ![&#x200B; navigeer lancering in de Console van Plaatsen van Manage Inhoud &#x200B;](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Gebruik het **spoor van Verwijzingen** om aan de **Source van de Lancering** pagina&#39;s terug te keren:
-  ![ Console van Plaatsen - Lanceer Source ](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+  ![&#x200B; Console van Plaatsen - Lanceer Source &#x200B;](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Pagina&#39;s toevoegen aan uw startpagina {#add-pages-to-launch}
 
 Nieuwe pagina&#39;s toevoegen aan uw lancering:
 
-1. [ navigeer aan de vereiste plaats in uw lancering ](#navigate-structure-of-launch).
+1. [&#x200B; navigeer aan de vereiste plaats in uw lancering &#x200B;](#navigate-structure-of-launch).
 
-1. Selecteer **creeer** [ om een pagina ](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) te creëren zoals gebruikelijk.
+1. Selecteer **creeer** [&#x200B; om een pagina &#x200B;](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) te creëren zoals gebruikelijk.
 
 ## Pagina&#39;s verwijderen uit uw startpagina {#remove-pages-from-launch}
 
 Pagina&#39;s verwijderen van uw lancering:
 
-1. [ navigeer aan de vereiste plaats in uw lancering ](#navigate-structure-of-launch).
+1. [&#x200B; navigeer aan de vereiste plaats in uw lancering &#x200B;](#navigate-structure-of-launch).
 
-1. Selecteer **Schrapping** [ om een pagina ](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) zoals gebruikelijk te schrappen.
+1. Selecteer **Schrapping** [&#x200B; om een pagina &#x200B;](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) zoals gebruikelijk te schrappen.

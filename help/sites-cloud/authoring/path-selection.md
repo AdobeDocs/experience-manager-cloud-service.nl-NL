@@ -14,27 +14,27 @@ ht-degree: 3%
 
 # Padselectie {#path-selection}
 
-Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina definieert of een afbeelding selecteert. Om een weg gemakkelijk te selecteren, [ weggebieden ](#path-fields) aanbieden auto-volledig en [ wegbrowser ](#path-browser) staat voor robuustere selectie toe.
+Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina definieert of een afbeelding selecteert. Om een weg gemakkelijk te selecteren, [&#x200B; weggebieden &#x200B;](#path-fields) aanbieden auto-volledig en [&#x200B; wegbrowser &#x200B;](#path-browser) staat voor robuustere selectie toe.
 
 ## Padvelden {#path-fields}
 
-Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Voor meer informatie over het gebruiken van en het uitgeven van componenten zie [ Componenten voor de Authoring van de Pagina ](/help/sites-cloud/authoring/page-editor/components.md).
+Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Voor meer informatie over het gebruiken van en het uitgeven van componenten zie [&#x200B; Componenten voor de Authoring van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/components.md).
 
 De gebieden van de weg hebben auto-volledige en vooruitblik functionaliteit om het vinden van een middel gemakkelijker te maken.
 
-Het klikken van de **Open Dialoog van de Selectie** knoop op het weggebied opent [ wegbrowser ](#path-browser) dialoog om voor meer gedetailleerde selectieopties toe te staan.
+Het klikken van de **Open Dialoog van de Selectie** knoop op het weggebied opent [&#x200B; wegbrowser &#x200B;](#path-browser) dialoog om voor meer gedetailleerde selectieopties toe te staan.
 
-![ Open de knoop van de Dialoog van de Selectie ](assets/path-selection-open-selection-dialog.png)
+![&#x200B; Open de knoop van de Dialoog van de Selectie &#x200B;](assets/path-selection-open-selection-dialog.png)
 
 U kunt ook beginnen te typen in het veld Pad en AEM biedt overeenkomende paden terwijl u typt.
 
-![ Open de knoop van de Dialoog van de Selectie ](assets/path-selection-open-selection-dialog.png)
+![&#x200B; Open de knoop van de Dialoog van de Selectie &#x200B;](assets/path-selection-open-selection-dialog.png)
 
 ## Padbrowser {#path-browser}
 
-De wegbrowser wordt georganiseerd als de [ kolommening ](/help/sites-cloud/authoring/basic-handling.md#column-view) van de [**3&rbrace; console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), die voor meer gedetailleerde selectie van middelen toestaat.**
+De wegbrowser wordt georganiseerd als de [&#x200B; kolommening &#x200B;](/help/sites-cloud/authoring/basic-handling.md#column-view) van de [**3&rbrace; console van Plaatsen &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md), die voor meer gedetailleerde selectie van middelen toestaat.**
 
-![ Browser van de Weg ](/help/sites-cloud/authoring/assets/path-browser.png)
+![&#x200B; Browser van de Weg &#x200B;](/help/sites-cloud/authoring/assets/path-browser.png)
 
 * Zodra een middel wordt geselecteerd, wordt de **Uitgezochte** knoop bij het hoger-recht van de dialoogdoos actief.
    * Selecteer om de selectie te bevestigen of **annuleert** om te aborteren.
@@ -46,4 +46,4 @@ De wegbrowser wordt georganiseerd als de [ kolommening ](/help/sites-cloud/autho
    * Klik **X** op het onderzoeksgebied om het onderzoek te ontruimen.
 * Als u uw zoekopdracht wilt beperken, kunt u de filteropties zichtbaar maken en de resultaten filteren op basis van een bepaald pad.
 
-![ de optie van Filters ](assets/path-selection-filters.png)
+![&#x200B; de optie van Filters &#x200B;](assets/path-selection-filters.png)

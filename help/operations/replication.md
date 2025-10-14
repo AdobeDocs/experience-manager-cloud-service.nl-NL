@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Replicatie {#replication}
 
-Adobe Experience Manager as a Cloud Service gebruikt het [ Verschuivende vermogen van de Distributie van de Inhoud ](https://sling.apache.org/documentation/bundles/content-distribution.html) om de inhoud te bewegen om aan een pijpleidingsdienst te herhalen die op Adobe Developer wordt uitgevoerd die buiten runtime van AEM is.
+Adobe Experience Manager as a Cloud Service gebruikt het [&#x200B; Verschuivende vermogen van de Distributie van de Inhoud &#x200B;](https://sling.apache.org/documentation/bundles/content-distribution.html) om de inhoud te bewegen om aan een pijpleidingsdienst te herhalen die op Adobe Developer wordt uitgevoerd die buiten runtime van AEM is.
 
 >[!NOTE]
 >
->Lees [ Distributie ](/help/overview/architecture.md#content-distribution) voor meer informatie.
+>Lees [&#x200B; Distributie &#x200B;](/help/overview/architecture.md#content-distribution) voor meer informatie.
 
 ## Methoden voor het publiceren van inhoud {#methods-of-publishing-content}
 
 >[!NOTE]
 >
->Als u in bulk het publiceren inhoud geinteresseerd bent, creeer een werkschema gebruikend de [ Stap van het Werkschema van de Activering van de Boom ](#tree-activation), die grote ladingen efficiënt kan behandelen.
+>Als u in bulk het publiceren inhoud geinteresseerd bent, creeer een werkschema gebruikend de [&#x200B; Stap van het Werkschema van de Activering van de Boom &#x200B;](#tree-activation), die grote ladingen efficiënt kan behandelen.
 >&#x200B;>Het wordt niet aangeraden om uw eigen aangepaste code voor bulkpublicaties te maken.
 >&#x200B;>Als u om welke reden dan ook moet aanpassen, kunt u een werkstroom met deze stap teweegbrengen door bestaande Werkstroom APIs te gebruiken.
 >&#x200B;>Het is altijd een goede gewoonte om alleen inhoud te publiceren die moet worden gepubliceerd. En wees voorzichtig als u niet probeert grote aantallen inhoud te publiceren, als dat niet nodig is. Er gelden echter geen limieten voor de hoeveelheid inhoud die u via workflows kunt verzenden met de Workflowstap voor boomactivering.
@@ -32,15 +32,15 @@ Adobe Experience Manager as a Cloud Service gebruikt het [ Verschuivende vermoge
 
 Met deze functie kunt u de geselecteerde pagina&#39;s direct publiceren, zonder de extra opties die mogelijk zijn via de methode Publicatie beheren.
 
-Voor meer informatie, zie [ Publicatie ](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) leiden.
+Voor meer informatie, zie [&#x200B; Publicatie &#x200B;](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) leiden.
 
 ### Aan- en uittijden - Configuratie activeren {#on-and-off-times-trigger-configuration}
 
-De extra mogelijkheden van **op Tijd** en **van Tijd** zijn beschikbaar bij het [ Basis lusje van de Eigenschappen van de Pagina ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
+De extra mogelijkheden van **op Tijd** en **van Tijd** zijn beschikbaar bij het [&#x200B; Basis lusje van de Eigenschappen van de Pagina &#x200B;](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
-Om de automatische replicatie voor deze eigenschap te realiseren, laat **AutoReplicatie** in de [ configuratie OSGi ](/help/implementing/deploying/configuring-osgi.md) **op van de Configuratie van de Trekker** toe:
+Om de automatische replicatie voor deze eigenschap te realiseren, laat **AutoReplicatie** in de [&#x200B; configuratie OSGi &#x200B;](/help/implementing/deploying/configuring-osgi.md) **op van de Configuratie van de Trekker** toe:
 
-![ OSGi op de Configuratie van de Trekker ](/help/operations/assets/replication-on-off-trigger.png)
+![&#x200B; OSGi op de Configuratie van de Trekker &#x200B;](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Publicatie beheren {#manage-publication}
 
@@ -48,7 +48,7 @@ Publicatie beheren biedt meer opties dan Snel publiceren, waardoor onderliggende
 
 Als de onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de inhoudsstructuur publiceren geactiveerd, zoals in dit artikel wordt beschreven.
 
-U kunt meer gedetailleerde informatie over Manage Publication over de [ het Publiceren documentatie van Grondbeginselen ](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) vinden.
+U kunt meer gedetailleerde informatie over Manage Publication over de [&#x200B; het Publiceren documentatie van Grondbeginselen &#x200B;](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) vinden.
 
 ### Workflowstap Boomactivering {#tree-activation}
 
@@ -58,17 +58,17 @@ Maak een workflowmodel dat gebruikmaakt van de processtap `TreeActivation` :
 
 1. Van de homepage van AEM as a Cloud Service, ga naar **Hulpmiddelen - Werkschema - Modellen**.
 1. In de pagina Modellen van het Werkschema, druk **creeer** in de hogere juiste hoek van het scherm.
-1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL).
+1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [&#x200B; Creërend de Modellen van het Werkschema &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL).
 1. Selecteer het gecreeerde model van de lijst, en druk **uitgeven**
 1. Verwijder in het volgende venster de standaard weergegeven Stap
 1. Sleep de Stap van het Proces aan de huidige modelstroom en laat vallen:
 
-   ![ Stap van het Proces ](/help/operations/assets/processstep.png)
+   ![&#x200B; Stap van het Proces &#x200B;](/help/operations/assets/processstep.png)
 
 1. Selecteer de stap van het Proces in de stroom en selecteer **vormen** door het moersleutelpictogram te drukken.
 1. Selecteer het **lusje van het Proces** &lbrace;en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler &lbrace;** controlevakje
 
-   ![ Treeactivation ](/help/operations/assets/new-treeactivationstep.png)
+   ![&#x200B; Treeactivation &#x200B;](/help/operations/assets/new-treeactivationstep.png)
 
 1. Plaats om het even welke extra parameters op het **gebied van Argumenten**. U kunt meerdere door komma&#39;s gescheiden argumenten samenvoegen. Bijvoorbeeld:
 
@@ -111,12 +111,12 @@ De workflow verwerkt inhoud in blokken, die elk een subset vormen van de volledi
 1. Van de homepage van AEM as a Cloud Service, ga naar **Hulpmiddelen - Algemeen - Banen**.
 1. Bekijk de rij die overeenkomt met uw workflow. De *vooruitgangs* kolom geeft een aanwijzing van hoe de replicatie vooruitgaat. Het kan bijvoorbeeld 41/564 weergeven en bij het vernieuwen kan het worden bijgewerkt naar 52/564.
 
-   ![ de vooruitgang van de Treeactivation ](/help/operations/assets/treeactivation-progress.png)
+   ![&#x200B; de vooruitgang van de Treeactivation &#x200B;](/help/operations/assets/treeactivation-progress.png)
 
 
 1. Als u de rij selecteert en opent, worden aanvullende gegevens over de status van de uitvoering van de workflow weergegeven.
 
-   ![ de statusdetails van de Treeactivation ](/help/operations/assets/treeactivation-progress-details.png)
+   ![&#x200B; de statusdetails van de Treeactivation &#x200B;](/help/operations/assets/treeactivation-progress-details.png)
 
 
 
@@ -130,26 +130,26 @@ De workflow verwerkt inhoud in blokken, die elk een subset vormen van de volledi
 
 U kunt een boomreplicatie teweegbrengen door **Hulpmiddelen te kiezen - Werkschema - Modellen** en het kopiëren van **publiceren de Boom van de Inhoud** uit-van-de-doos werkschemamodel, zoals hieronder getoond:
 
-![ de Publish Kaart van het Werkschema van de Boom van de Inhoud ](/help/operations/assets/publishcontenttreeworkflow.png)
+![&#x200B; de Publish Kaart van het Werkschema van de Boom van de Inhoud &#x200B;](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Roep het oorspronkelijke model niet aan. Let er in plaats daarvan op dat u het model eerst kopieert en dat exemplaar aanroept.
 
-Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Voor meer informatie, zie [ Interacting met Workflows programmatically ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=nl-NL#extending-aem).
+Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Voor meer informatie, zie [&#x200B; Interacting met Workflows programmatically &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=nl-NL#extending-aem).
 
 U kunt ook een workflowmodel maken waarin de processtap `Publish Content Tree` wordt gebruikt.
 
 1. Van de homepage van AEM as a Cloud Service, ga naar **Hulpmiddelen - Werkschema - Modellen**.
 1. In de pagina Modellen van het Werkschema, druk **creeer** in de hogere juiste hoek van het scherm.
-1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL).
+1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [&#x200B; Creërend de Modellen van het Werkschema &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL).
 1. Selecteer het gecreeerde model van de lijst, en druk **uitgeven**
 1. Sleep in het volgende venster de processtap naar de huidige modelstroom:
 
-   ![ Stap van het Proces ](/help/operations/assets/processstep.png)
+   ![&#x200B; Stap van het Proces &#x200B;](/help/operations/assets/processstep.png)
 
 1. Selecteer de stap van het Proces in de stroom en selecteer **vormen** door het moersleutelpictogram te drukken.
 1. Selecteer het **lusje van het Proces** &lbrace;en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler &lbrace;** controlevakje
 
-   ![ Treeactivation ](/help/operations/assets/newstep.png)
+   ![&#x200B; Treeactivation &#x200B;](/help/operations/assets/newstep.png)
 
 1. Plaats om het even welke extra parameters op het **gebied van Argumenten**. U kunt meerdere door komma&#39;s gescheiden argumenten samenvoegen. Bijvoorbeeld:
 
@@ -199,7 +199,7 @@ Hieronder volgen voorbeelden van logboeken die worden gegenereerd tijdens een wo
 
 U kunt inhoud publiceren met behulp van de Replicatie-API die in AEM as a Cloud Service is geïnstalleerd.
 
-Voor meer informatie, zie de [ API Documentatie ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+Voor meer informatie, zie de [&#x200B; API Documentatie &#x200B;](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
 **Basis Gebruik van API**
 
@@ -257,7 +257,7 @@ De algemene `ReplicationStatus` van een bron wordt alleen gewijzigd als de repli
 
 ### Methoden voor het ongeldig maken van inhoud {#invalidating-content}
 
-U kunt inhoud direct ongeldig maken door of het Verdelen van de Invalidatie van de Inhoud (SCD) van auteur (de aangewezen methode) te gebruiken of door de Replicatie API te gebruiken om publiceer Dispatcher te roepen flush replicatieagent. Zie [ Caching ](/help/implementing/dispatcher/caching.md) pagina voor verdere details.
+U kunt inhoud direct ongeldig maken door of het Verdelen van de Invalidatie van de Inhoud (SCD) van auteur (de aangewezen methode) te gebruiken of door de Replicatie API te gebruiken om publiceer Dispatcher te roepen flush replicatieagent. Zie [&#x200B; Caching &#x200B;](/help/implementing/dispatcher/caching.md) pagina voor verdere details.
 
 **de capaciteitsgrenzen van de Replicatie API**
 
@@ -271,16 +271,16 @@ De grootte van de inhoud die per replicatieaanroep wordt verzonden, mag niet gro
 
 Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie in het Web UI van de Dienst van de Auteur van AEM:
 
-1. Van AEM [ Globale Navigatie ](/help/sites-cloud/authoring/basic-handling.md#global-navigation), navigeer aan **Hulpmiddelen** > **Plaatsing** > **Distributie**
+1. Van AEM [&#x200B; Globale Navigatie &#x200B;](/help/sites-cloud/authoring/basic-handling.md#global-navigation), navigeer aan **Hulpmiddelen** > **Plaatsing** > **Distributie**
 1. Selecteer kaart **publiceren**
 
-   ![ Status ](assets/publish-status.png " Status ")
+   ![&#x200B; Status &#x200B;](assets/publish-status.png " Status ")
 
 1. Controleer de wachtrijstatus die groen moet zijn
 1. U kunt de verbinding met de replicatieservice testen
 1. Selecteer het **Logs** lusje dat de geschiedenis van inhoudspublicaties toont
 
-![ Logs ](assets/publish-logs.png " Logs ")
+![&#x200B; Logs &#x200B;](assets/publish-logs.png " Logs ")
 
 Als de inhoud niet kon worden gepubliceerd, wordt de volledige publicatie teruggezet van de AEM Publish Service.
 

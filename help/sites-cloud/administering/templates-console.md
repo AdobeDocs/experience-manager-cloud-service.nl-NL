@@ -18,11 +18,11 @@ Leer hoe de sjabloonconsole fungeert als de centrale locatie voor het weergeven 
 
 ## Overzicht {#overview}
 
-Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. [ AEM die editable malplaatjes ](/help/implementing/developing/components/templates.md)  kan de structuur van de resulterende pagina, om het even welke aanvankelijke inhoud, en de componenten bepalen die (ontwerpeigenschappen) kunnen worden gebruikt.
+Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. [&#x200B; AEM die editable malplaatjes &#x200B;](/help/implementing/developing/components/templates.md)  kan de structuur van de resulterende pagina, om het even welke aanvankelijke inhoud, en de componenten bepalen die (ontwerpeigenschappen) kunnen worden gebruikt.
 
-De auteurs van de inhoud worden voorgesteld met een selectie van beschikbare malplaatjes wanneer zij [ nieuwe pagina&#39;s in de plaatsenconsole ](/help/sites-cloud/authoring/sites-console/creating-pages.md) creëren. Sjablonen kunnen worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met:
+De auteurs van de inhoud worden voorgesteld met een selectie van beschikbare malplaatjes wanneer zij [&#x200B; nieuwe pagina&#39;s in de plaatsenconsole &#x200B;](/help/sites-cloud/authoring/sites-console/creating-pages.md) creëren. Sjablonen kunnen worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met:
 
-* [ de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md) of
+* [&#x200B; de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) of
 * [De Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 Met de sjabloonconsole kan een beheerder alle paginasjablonen op een centrale locatie weergeven en beheren.
@@ -34,17 +34,17 @@ Met de sjabloonconsole kan een beheerder alle paginasjablonen op een centrale lo
 
 ## Afdrukstand {#orientation}
 
-De malplaatjeconsole wordt georganiseerd in omslagen met één omslag per [ configuratie ](/help/implementing/developing/introduction/configurations.md) waar de editable malplaatjes voor de configuratie zijn geactiveerd.
+De malplaatjeconsole wordt georganiseerd in omslagen met één omslag per [&#x200B; configuratie &#x200B;](/help/implementing/developing/introduction/configurations.md) waar de editable malplaatjes voor de configuratie zijn geactiveerd.
 
-![ de Console van Malplaatjes ](assets/templates-console/templates-console.png)
+![&#x200B; de Console van Malplaatjes &#x200B;](assets/templates-console/templates-console.png)
 
-[ de standaardmening ](/help/sites-cloud/authoring/quick-start.md) van de console is de kaartmening. Tik of klik op een map om de inhoud ervan te verkennen.
+[&#x200B; de standaardmening &#x200B;](/help/sites-cloud/authoring/quick-start.md) van de console is de kaartmening. Tik of klik op een map om de inhoud ervan te verkennen.
 
-![ Inhoud van malplaatjeomslag in malplaatjeconsole ](assets/templates-console/templates-console-templates.png)
+![&#x200B; Inhoud van malplaatjeomslag in malplaatjeconsole &#x200B;](assets/templates-console/templates-console-templates.png)
 
 Selecteer een sjabloon om de beschikbare opties op de werkbalk weer te geven.
 
-![ de consoletoolbar van Malplaatjes ](assets/templates-console/templates-console-toolbar.png)
+![&#x200B; de consoletoolbar van Malplaatjes &#x200B;](assets/templates-console/templates-console-toolbar.png)
 
 * [Bewerken](#edit-edit)
 * [Eigenschappen](#properties)
@@ -73,7 +73,7 @@ Als een auteur aan een malplaatje begint dat met de malplaatjeredacteur wordt ge
 
 ## Eigenschappen {#properties}
 
-U kunt de [ eigenschappen van het malplaatje ](/help/sites-cloud/authoring/page-editor/templates.md) veel op de zelfde manier uitgeven dat u pagina eigenschappen kunt [ uitgeven.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) Sjablooneigenschappen zijn onder andere:
+U kunt de [&#x200B; eigenschappen van het malplaatje &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) veel op de zelfde manier uitgeven dat u pagina eigenschappen kunt [&#x200B; uitgeven.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) Sjablooneigenschappen zijn onder andere:
 
 * Sjabloontitel
 * Beschrijving
@@ -91,7 +91,7 @@ Een sjabloon kan een van de volgende drie statussen hebben:
 * **Toegelaten** - het malplaatje is volledig en beschikbaar voor het creëren van nieuwe pagina&#39;s.
 * **Gehandicapten** - het malplaatje is volledig maar niet beschikbaar voor het creëren van nieuwe pagina&#39;s.
 
-Wanneer een malplaatje wordt gecreeerd, is het door gebrek of in a **Ontwerp** staat (voor malplaatjes die met de [ Redacteur van het Malplaatje ](/help/sites-cloud/authoring/page-editor/templates.md) worden gecreeerd) of **Toegelaten** staat (voor malplaatjes die met de [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/templates.md) worden gecreeerd).
+Wanneer een malplaatje wordt gecreeerd, is het door gebrek of in a **Ontwerp** staat (voor malplaatjes die met de [&#x200B; Redacteur van het Malplaatje &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) worden gecreeerd) of **Toegelaten** staat (voor malplaatjes die met de [&#x200B; Universele Redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/templates.md) worden gecreeerd).
 
 Een sjabloon moet zijn ingeschakeld voordat het door inhoudsauteurs kan worden gebruikt om pagina&#39;s te maken. Als een sjabloon niet meer nodig is, kan deze worden uitgeschakeld zodat deze niet meer wordt weergegeven in de wizard Pagina maken.
 
@@ -114,10 +114,10 @@ Als u een aantal pagina&#39;s hebt die in structuur gelijkaardig zijn, kunt u de
 
 Na het plakken kunt u:
 
-* [ geef het malplaatje ](#edit) uit om het zonodig aan te passen.
-* [ gebruik het eigenschappenvenster ](#properties) om de malplaatjetitel bij te werken.
-* [ laat het malplaatje ](#enable-disable) toe zodat kan het worden gebruikt om pagina tot stand te brengen.
-* [ publiceer het malplaatje ](#publish) indien vereist.
+* [&#x200B; geef het malplaatje &#x200B;](#edit) uit om het zonodig aan te passen.
+* [&#x200B; gebruik het eigenschappenvenster &#x200B;](#properties) om de malplaatjetitel bij te werken.
+* [&#x200B; laat het malplaatje &#x200B;](#enable-disable) toe zodat kan het worden gebruikt om pagina tot stand te brengen.
+* [&#x200B; publiceer het malplaatje &#x200B;](#publish) indien vereist.
 
 >[!TIP]
 >
@@ -135,6 +135,6 @@ Selecteer het malplaatje en dan de Tik of klik **Schrapping** om het te schrappe
 
 ## Sjablonen maken {#create}
 
-Gebruik **creeer** knoop in de console om een nieuw malplaatje in uw huidige plaats tot stand te brengen. Voor details bij het creëren van een malplaatje, te zien gelieve het document [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md) editable zijn.
+Gebruik **creeer** knoop in de console om een nieuw malplaatje in uw huidige plaats tot stand te brengen. Voor details bij het creëren van een malplaatje, te zien gelieve het document [&#x200B; Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) editable zijn.
 
-**creeer** knoop wordt slechts gebruikt om malplaatjes tot stand te brengen die met de Redacteur van de Pagina editable zijn. Gelieve te zien het document [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/templates.md) editable zijn om over het creëren van malplaatjes te leren die op pagina&#39;s worden gebaseerd die met de Universele Redacteur worden gemaakt.
+**creeer** knoop wordt slechts gebruikt om malplaatjes tot stand te brengen die met de Redacteur van de Pagina editable zijn. Gelieve te zien het document [&#x200B; Malplaatjes om Pagina&#39;s tot stand te brengen die met de Universele Redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/templates.md) editable zijn om over het creëren van malplaatjes te leren die op pagina&#39;s worden gebaseerd die met de Universele Redacteur worden gemaakt.

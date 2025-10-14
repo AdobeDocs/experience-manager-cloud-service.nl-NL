@@ -26,41 +26,41 @@ Met deze functie hebt u de flexibiliteit om een PDF-bestand of JPG-bestand met e
 
 1. Open vanuit de interface [!DNL Experience Manager] de pagina **[!UICONTROL Properties]** voor een element dat u wilt koppelen.
 
-   ![ open de pagina van de Eigenschappen van activa om de activa ](assets/asset-properties-relate-assets.png) met elkaar in verband te brengen
+   ![&#x200B; open de pagina van de Eigenschappen van activa om de activa &#x200B;](assets/asset-properties-relate-assets.png) met elkaar in verband te brengen
 
-1. Om andere activa met de activa te relateren u selecteerde, klik **[!UICONTROL Asset Relations]** ![ met elkaar verband houdende activa ](assets/do-not-localize/link-relate.png).
+1. Om andere activa met de activa te relateren u selecteerde, klik **[!UICONTROL Asset Relations]** ![&#x200B; met elkaar verband houdende activa &#x200B;](assets/do-not-localize/link-relate.png).
 1. Voer een van de volgende handelingen uit:
 
    * Als u het bronbestand voor het element wilt koppelen, selecteert u **[!UICONTROL Add Source]** in de lijst. U kunt slechts één element als bron koppelen.
    * Selecteer **[!UICONTROL Add Derived]** in de lijst als u een afgeleid bestand wilt koppelen. U kunt meerdere elementen in deze categorie koppelen.
    * Selecteer **[!UICONTROL Add Other]** in de lijst om een relatie in twee richtingen tussen de elementen te maken. U kunt meerdere elementen in deze categorie koppelen.
 
-1. Navigeer in het **[!UICONTROL Select Assets]** -scherm naar de locatie van het element dat u wilt koppelen en selecteer het. U kunt één enkel middel tegelijkertijd of veelvoudige activa selecteren door de verschuivingssleutel te houden terwijl het klikken, die om het even welke [ gesteunde dossierformaten in de Mening van Assets ](/help/assets/supported-file-formats-assets-view.md) kan omvatten.
+1. Navigeer in het **[!UICONTROL Select Assets]** -scherm naar de locatie van het element dat u wilt koppelen en selecteer het. U kunt één enkel middel tegelijkertijd of veelvoudige activa selecteren door de verschuivingssleutel te houden terwijl het klikken, die om het even welke [&#x200B; gesteunde dossierformaten in de Mening van Assets &#x200B;](/help/assets/supported-file-formats-assets-view.md) kan omvatten.
 
-   ![ voeg verwante activa ](assets/add-related-asset.png) toe
+   ![&#x200B; voeg verwante activa &#x200B;](assets/add-related-asset.png) toe
 
 1. Klik op **[!UICONTROL Select]**. Afhankelijk van uw keuze voor relatie in stap 3 wordt het gerelateerde element weergegeven onder een van de juiste categorieën in de sectie **[!UICONTROL Asset Relations]** . Als het element dat u hebt verwant bijvoorbeeld het bronbestand voor het huidige element is, wordt het weergegeven onder **[!UICONTROL Source]** .
 
-   ![ Assets relatievoorbeeld ](assets/asset-relations-example.png)
+   ![&#x200B; Assets relatievoorbeeld &#x200B;](assets/asset-relations-example.png)
 
-1. Klik **[!UICONTROL Unrelate]** ![ losse activa ](assets/do-not-localize/link-unrelate-icon.png) beschikbaar voor alle verwante activa in elke sectie ([!UICONTROL Source], [!UICONTROL Derived], en [!UICONTROL Other]) om activa niet-met elkaar in verband te brengen.
+1. Klik **[!UICONTROL Unrelate]** ![&#x200B; losse activa &#x200B;](assets/do-not-localize/link-unrelate-icon.png) beschikbaar voor alle verwante activa in elke sectie ([!UICONTROL Source], [!UICONTROL Derived], en [!UICONTROL Other]) om activa niet-met elkaar in verband te brengen.
 
 ## Gerelateerde elementen vertalen {#translating-related-assets}
 
 Het maken van bron-/afgeleide relaties tussen elementen met behulp van de functie voor gerelateerde elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, haalt [!DNL Experience Manager Assets] automatisch elk element op waarnaar het bronbestand verwijst en dat het voor vertaling bevat. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Als het bronbestand verwant is aan een ander element, haalt [!DNL Experience Manager Assets] het element waarnaar wordt verwezen op en wordt het opgenomen voor vertaling.
 
-Zie [ activa in AEM ](/help/assets/translate-assets.md) vertalen.
+Zie [&#x200B; activa in AEM &#x200B;](/help/assets/translate-assets.md) vertalen.
 
 ## Volgende stappen {#next-steps}
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
 * De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
->* [ de versies van de Mening van activa ](/help/assets/manage-organize-assets-view.md#view-versions)
->* [ vertaalde activa in AEM ](/help/assets/translate-assets.md)
->* [ Ondersteunde Formaten van het Dossier in de Mening van Assets ](/help/assets/supported-file-formats-assets-view.md).
+>* [&#x200B; de versies van de Mening van activa &#x200B;](/help/assets/manage-organize-assets-view.md#view-versions)
+>* [&#x200B; vertaalde activa in AEM &#x200B;](/help/assets/translate-assets.md)
+>* [&#x200B; Ondersteunde Formaten van het Dossier in de Mening van Assets &#x200B;](/help/assets/supported-file-formats-assets-view.md).

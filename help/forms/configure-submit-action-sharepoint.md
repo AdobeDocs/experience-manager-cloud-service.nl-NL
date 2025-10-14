@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Met de verzendactie van **[!UICONTROL Submit to SharePoint]** kunt u uw Adaptief formulier naadloos verbinden met een Microsoft® SharePoint-opslag. Nadat u het formulier hebt verzonden, worden de formuliergegevens naar de SharePoint-opslagruimte van uw keuze verzonden.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/aem-forms-submit-action.md).
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [&#x200B; AanpassingsVorm voorlegt Artikel van de Actie &#x200B;](/help/forms/aem-forms-submit-action.md).
 
 ## Voordelen
 

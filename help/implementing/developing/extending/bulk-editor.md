@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bulk bewerken van pagina-eigenschappen configureren {#configuring-bulk-editing-of-page-properties}
 
-[ Bulk het uitgeven van paginaeigenschappen ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#from-the-sites-console-multiple-pages) laat u de eigenschappen van veelvoudige pagina&#39;s in één keer uitgeven.
+[&#x200B; Bulk het uitgeven van paginaeigenschappen &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#from-the-sites-console-multiple-pages) laat u de eigenschappen van veelvoudige pagina&#39;s in één keer uitgeven.
 
 ## Overwegingen {#considerations}
 
@@ -35,7 +35,7 @@ Vanwege de mogelijkheid van meerdere waarden wordt aangeraden alleen de volgende
 
 ## Veld inschakelen {#enabling-a-field}
 
-Deze stappen gebruiken `/apps/core/wcm/components/page/v1/page` van de [ WKND steekproefinhoud ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als voorbeeld om bulkhet uitgeven op een gebied in een ontwikkelomgeving toe te laten.
+Deze stappen gebruiken `/apps/core/wcm/components/page/v1/page` van de [&#x200B; WKND steekproefinhoud &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als voorbeeld om bulkhet uitgeven op een gebied in een ontwikkelomgeving toe te laten.
 
 1. Met CRXDE opent u de pagina-component.
 1. Navigeer naar het vereiste veld binnen de definitie van `cq:dialog` .

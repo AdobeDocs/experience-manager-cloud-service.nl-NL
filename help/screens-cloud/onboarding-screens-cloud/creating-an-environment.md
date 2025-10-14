@@ -16,7 +16,7 @@ ht-degree: 1%
 In deze sectie wordt beschreven hoe u een omgeving voor uw programma kunt maken in Cloud Manager.
 
 >[!NOTE]
->Zie [ het Leiden Milieu&#39;s in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) om te leren hoe de gebruiker een milieu kan creëren.
+>Zie [&#x200B; het Leiden Milieu&#39;s in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) om te leren hoe de gebruiker een milieu kan creëren.
 
 ## Doelstelling {#objective}
 
@@ -42,4 +42,4 @@ Nadat het project is gemaakt, kunt u de call-to-action-kaartupdate bekijken op d
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u verdergaan. De volgende stap in het proces Onboarding is [ Lopend de Pijpleiding ](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+Nadat u hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u verdergaan. De volgende stap in het proces Onboarding is [&#x200B; Lopend de Pijpleiding &#x200B;](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

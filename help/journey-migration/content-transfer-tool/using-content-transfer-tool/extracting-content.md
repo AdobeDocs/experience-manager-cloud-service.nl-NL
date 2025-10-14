@@ -25,14 +25,14 @@ ht-degree: 8%
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
 
 >[!NOTE]
->Als Amazon S3, Azure Data Store of File Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase te versnellen. De voorkopieerstap is het meest effectief voor de eerste volledige extractie en inname. Zie [ Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) voor meer details.
+>Als Amazon S3, Azure Data Store of File Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase te versnellen. De voorkopieerstap is het meest effectief voor de eerste volledige extractie en inname. Zie [&#x200B; Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) voor meer details.
 
 1. Selecteer een migratie die van de **tovenaar van de Overdracht van de Inhoud** wordt geplaatst en klik **trekken** om extractie te beginnen.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >[!TIP]
-   >Een opname kan nu automatisch worden gepland om onmiddellijk te beginnen nadat een extractie is gelukt. Zie [ Ingesterend Inhoud in Doel ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor meer informatie.
+   >Een opname kan nu automatisch worden gepland om onmiddellijk te beginnen nadat een extractie is gelukt. Zie [&#x200B; Ingesterend Inhoud in Doel &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor meer informatie.
 
    >[!IMPORTANT]
    >
@@ -94,4 +94,4 @@ Voer de onderstaande stappen uit:
 
 ## Volgende functies {#whats-next}
 
-Nadat u het Uitpakken van Inhoud van Source in het Hulpmiddel van de Overdracht van de Inhoud hebt geleerd, bent u nu bereid om het Proces van de Ingestie in het Hulpmiddel van de Overdracht van de Inhoud te leren. Zie [ Ingesterend Inhoud in Doel ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) waar u kunt leren hoe te om uw migratie in te nemen die van het Hulpmiddel van de Overdracht van de Inhoud wordt geplaatst.
+Nadat u het Uitpakken van Inhoud van Source in het Hulpmiddel van de Overdracht van de Inhoud hebt geleerd, bent u nu bereid om het Proces van de Ingestie in het Hulpmiddel van de Overdracht van de Inhoud te leren. Zie [&#x200B; Ingesterend Inhoud in Doel &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) waar u kunt leren hoe te om uw migratie in te nemen die van het Hulpmiddel van de Overdracht van de Inhoud wordt geplaatst.

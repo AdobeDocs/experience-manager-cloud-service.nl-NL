@@ -17,7 +17,7 @@ Repository Modernizer is een hulpprogramma dat is ontwikkeld om bestaande projec
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM-projecten. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om compatibel te zijn met AEM Cloud Service. Op een hoog niveau, vereist AEM een scheiding van **inhoud** en **code** in discrete subpackages om de scheiding tussen veranderlijke en onveranderlijke inhoud te respecteren. Zie [ de Structuur van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) voor meer details over de nieuwe het projectstructuur van AEM voor Cloud Service.
+Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM-projecten. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om compatibel te zijn met AEM Cloud Service. Op een hoog niveau, vereist AEM een scheiding van **inhoud** en **code** in discrete subpackages om de scheiding tussen veranderlijke en onveranderlijke inhoud te respecteren. Zie [&#x200B; de Structuur van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) voor meer details over de nieuwe het projectstructuur van AEM voor Cloud Service.
 
 Met de Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructuur gemaakt door de volgende implementatiestructuur te maken:
 
@@ -29,7 +29,7 @@ Met de Repository Modernizer wordt een compatibele AEM Cloud Service-projectstru
 
 >[!NOTE]
 >
->De structuur van het Project is gebaseerd op *Archetype 24* voor pakketten en hun `pom.xml/filter.xml files`. Zie [ Archetype 24 ](https://github.com/adobe/aem-project-archetype) voor meer details.
+>De structuur van het Project is gebaseerd op *Archetype 24* voor pakketten en hun `pom.xml/filter.xml files`. Zie [&#x200B; Archetype 24 &#x200B;](https://github.com/adobe/aem-project-archetype) voor meer details.
 
 ## De Repository Modernizer gebruiken {#using-repo-modernizer}
 
@@ -37,11 +37,11 @@ Met de Repository Modernizer wordt een compatibele AEM Cloud Service-projectstru
 
 * Als Adobe I/O CLI: Adobe raadt u aan de Repository Modernizer te gebruiken via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
 
-  Zie **[Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** zodat kunt u leren hoe te om de stop te installeren en te gebruiken.
+  Zie **[Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** zodat kunt u leren hoe te om de stop te installeren en te gebruiken.
 
 * Als standalone nut: De Modernizer van de Bewaarplaats kan ook als standalone nut worden uitgevoerd.
 
-  Zie **[Middel van de Git: Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** zodat kunt u leren hoe te om dit hulpmiddel te gebruiken.
+  Zie **[Middel van de Git: Modernizer van de Bewaarplaats &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** zodat kunt u leren hoe te om dit hulpmiddel te gebruiken.
 
   >[!NOTE]
   >

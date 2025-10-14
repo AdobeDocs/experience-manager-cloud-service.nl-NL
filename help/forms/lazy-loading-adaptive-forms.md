@@ -16,11 +16,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html?lang=nl-NL) |
+| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -42,10 +42,10 @@ U kunt alleen Adaptieve formulierfragmenten configureren voor wazig laden. Een f
 * **identificeer en merk globale waarden**
 Bij op Forms gebaseerde transacties worden dynamische elementen gebruikt om relevante gegevens van gebruikers vast te leggen en te verwerken om het invullen van formulieren te vereenvoudigen. Het formulier heeft bijvoorbeeld veld A in fragment X, waarvan de waarde de geldigheid van veld B in een ander fragment bepaalt. In dit geval moet, als fragment X is gemarkeerd voor lui laden, de waarde van veld A beschikbaar zijn om veld B te valideren, zelfs als fragment X niet is geladen. Hiertoe kunt u veld A markeren als globaal, zodat de waarde ervan beschikbaar is voor het valideren van veld B wanneer fragment X niet is geladen.
 
-  Voor informatie over hoe te om een gebiedswaarde globaal te maken, zie [ Vormend lui ladend ](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Voor informatie over hoe te om een gebiedswaarde globaal te maken, zie [&#x200B; Vormend lui ladend &#x200B;](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **schrijf regels om zicht van gebieden** te controleren
-Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebruikers en onder alle omstandigheden. Forms-auteurs en -ontwikkelaars gebruiken zichtbaarheids- of show-hide-regels om hun zichtbaarheid te bepalen op basis van gebruikersinvoer. Bijvoorbeeld, wordt het gebied van het Adres van het Bureau niet getoond aan de gebruikers die op het gebied van de Status van de Werkgelegenheid in een vorm werkloos kiezen. Voor meer informatie over het schrijven van regels, zie [ Gebruikend regelredacteur ](rule-editor.md).
+Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebruikers en onder alle omstandigheden. Forms-auteurs en -ontwikkelaars gebruiken zichtbaarheids- of show-hide-regels om hun zichtbaarheid te bepalen op basis van gebruikersinvoer. Bijvoorbeeld, wordt het gebied van het Adres van het Bureau niet getoond aan de gebruikers die op het gebied van de Status van de Werkgelegenheid in een vorm werkloos kiezen. Voor meer informatie over het schrijven van regels, zie [&#x200B; Gebruikend regelredacteur &#x200B;](rule-editor.md).
 
   U kunt zichtbaarheidsregels gebruiken in de laaggeladen fragmenten, zodat voorwaardelijke velden alleen worden weergegeven wanneer ze vereist zijn. Markeer ook het voorwaardelijke veld globaal om ernaar te verwijzen in de zichtbaarheidsexpressie van het langzaam geladen fragment.
 
@@ -54,20 +54,20 @@ Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebrui
 Voer de volgende stappen uit om het laden in een adaptief formulierfragment mogelijk te maken:
 
 1. Open het adaptieve formulier in de ontwerpmodus met het fragment dat u wilt inschakelen voor wazig laden.
-1. Selecteer het Adaptieve Fragment van de Vorm en selecteer ![ vormen ](assets/configure-icon.svg).
+1. Selecteer het Adaptieve Fragment van de Vorm en selecteer ![&#x200B; vormen &#x200B;](assets/configure-icon.svg).
 1. In sidebar, laat **[!UICONTROL Load fragment lazily]** toe en selecteer **Gedaan**.
 
-   ![ laat luie lading voor het Aangepaste Fragment van de Vorm toe ](assets/lazy-loading-fragment.png)
+   ![&#x200B; laat luie lading voor het Aangepaste Fragment van de Vorm toe &#x200B;](assets/lazy-loading-fragment.png)
 
    Het fragment is nu ingeschakeld voor wazig laden.
 
 U kunt de waarden van objecten in het laaggeladen fragment als globaal markeren, zodat deze beschikbaar zijn voor gebruik in scripts wanneer het bevattende fragment niet is geladen. Ga als volgt te werk:
 
 1. Open het adaptieve formulierfragment in de ontwerpmodus.
-1. Selecteer het gebied waarvan waarde u als globaal wilt merken, en dan selecteren ![ ](assets/configure-icon.svg) vormt.
+1. Selecteer het gebied waarvan waarde u als globaal wilt merken, en dan selecteren ![&#x200B; &#x200B;](assets/configure-icon.svg) vormt.
 1. Schakel in het zijpaneel **[!UICONTROL Use value during lazy loading]** in.
 
-   ![ Lazy ladend gebied in sidebar ](assets/enable-lazy-loading.png)
+   ![&#x200B; Lazy ladend gebied in sidebar &#x200B;](assets/enable-lazy-loading.png)
 
    De waarde wordt nu gemarkeerd als globaal en is beschikbaar voor gebruik in scripts, zelfs als het omvattende fragment wordt verwijderd.
 

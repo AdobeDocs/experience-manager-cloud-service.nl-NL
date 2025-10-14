@@ -43,11 +43,11 @@ Met de Universal Editor kunt u tekst op een flexibele manier in context en op zi
 
 1. Dubbelklik om de titel van het meest recente artikel te selecteren en te bewerken.
 
-   ![ Universele Redacteur ](assets/do-not-localize/ue-component-mode.png)
+   ![&#x200B; Universele Redacteur &#x200B;](assets/do-not-localize/ue-component-mode.png)
 
 1. De component wordt geselecteerd zoals aangegeven door een blauwe rand met een tab die aangeeft dat het een tekstcomponent is. Er bevindt zich een cursor in de rand die op tekstinvoer wacht. Wijzig de tekst in `Aloha Spirit in Lofoten` .
 
-   ![ het Uitgeven tekst in de Universele Redacteur ](assets/do-not-localize/ue-edit-text-2.png)
+   ![&#x200B; het Uitgeven tekst in de Universele Redacteur &#x200B;](assets/do-not-localize/ue-edit-text-2.png)
 
 1. Selecteer buiten de tekstcomponent en uw wijzigingen worden automatisch opgeslagen.
 
@@ -61,13 +61,13 @@ Met de Universal Editor kunt u ook afbeeldingen omwisselen terwijl u in de conte
 
 1. In de componentrail kunt u de details van het element zien. Selecteer de **Aanbevolen duimnagel van het Beeld**.
 
-   ![ Selecterend een beeld om uit te geven ](assets/do-not-localize/ue-edit-media.png)
+   ![&#x200B; Selecterend een beeld om uit te geven &#x200B;](assets/do-not-localize/ue-edit-media.png)
 
 1. In het **Uitgezochte Assets** venster, scrol neer en selecteer het `surfer-wave-02.JPG` beeld om het te selecteren.
 
 1. Selecteer **Uitgezocht** in het **Uitgezochte Assets** venster.
 
-   ![ Gebruikend het Uitgezochte venster van Activa om een beeld ](assets/do-not-localize/ue-select-asset.png) te selecteren
+   ![&#x200B; Gebruikend het Uitgezochte venster van Activa om een beeld &#x200B;](assets/do-not-localize/ue-select-asset.png) te selecteren
 
 De afbeelding wordt vervangen door de afbeelding die u hebt geselecteerd.
 
@@ -77,11 +77,11 @@ Met de Universal Editor kunt u in de context van de editor communiceren met uw i
 
 1. Standaard rendert de editor de bureaubladversie van uw inhoud. Selecteer de emulatorknop rechtsboven op de werkbalk van de Universal Editor om het doelapparaat te wijzigen.
 
-   ![ het punt van het emulatormenu ](assets/do-not-localize/ue-emulator-1.png)
+   ![&#x200B; het punt van het emulatormenu &#x200B;](assets/do-not-localize/ue-emulator-1.png)
 
 1. Readers kunnen zich op verschillende apparaten met verschillende hoogte-breedteverhoudingen bevinden, zodat de editor emulatiemodi aanbiedt om te zien hoe de pagina aan gebruikers wordt weergegeven. Selecteer bijvoorbeeld de optie Mobiel apparaat in de staande modus.
 
-   ![ het punt van het emulatormenu ](assets/do-not-localize/ue-emulator-2.png)
+   ![&#x200B; het punt van het emulatormenu &#x200B;](assets/do-not-localize/ue-emulator-2.png)
 
 1. Zie de inhoudswijziging in de editor. Het pictogram voor de emulator verandert ook om de modus aan te geven waarin deze zich bevindt. Selecteer een willekeurige locatie buiten het emulatormenu om het te sluiten en te communiceren met de inhoud.
 
@@ -97,15 +97,15 @@ Omdat u de inhoud moet selecteren om deze in de editor te wijzigen, kunt u in de
 
 1. Nu selecteer **Lees meer** verbinding voor het belangrijkste artikel.
 
-   ![ wijze van de Voorproef ](assets/do-not-localize/ue-preview-publish-1.png)
+   ![&#x200B; wijze van de Voorproef &#x200B;](assets/do-not-localize/ue-preview-publish-1.png)
 
 1. Doorblader het artikel, dan gebruik de **Vorige** verbinding om aan de belangrijkste pagina terug te keren.
 
-   ![ Terugkeer aan belangrijkste pagina gebruikend de verbinding van de Terugkeer ](assets/do-not-localize/ue-preview-publish-3.png)
+   ![&#x200B; Terugkeer aan belangrijkste pagina gebruikend de verbinding van de Terugkeer &#x200B;](assets/do-not-localize/ue-preview-publish-3.png)
 
 1. Nu selecteer de **knoop van Publish** bij het hoogste recht van de redacteur om uw inhoud te publiceren.
 
-   ![ de voorproef en publiceert menupunten ](assets/do-not-localize/ue-preview-publish-4.png)
+   ![&#x200B; de voorproef en publiceert menupunten &#x200B;](assets/do-not-localize/ue-preview-publish-4.png)
 
 Uw inhoud is gepubliceerd.
 
@@ -115,7 +115,7 @@ Als u het schrijven van inhoud wilt versnellen terwijl het gestructureerd bewerk
 
 1. De draai van voorproefwijze door de **knoop van de Voorproef** op de Universele toolbar van de Redacteur te tikken.
 
-   ![ Draai van voorproefwijze ](assets/do-not-localize/ue-toggle-off-preview.png)
+   ![&#x200B; Draai van voorproefwijze &#x200B;](assets/do-not-localize/ue-toggle-off-preview.png)
 
 1. De rol verder neer op de pagina aan de **Adventures** sectie.
 
@@ -126,6 +126,6 @@ Als u het schrijven van inhoud wilt versnellen terwijl het gestructureerd bewerk
 
 1. Het **geeft** pictogram uit verschijnt op componentenspoor. Selecteer **uitgeven** pictogram om de redacteur van het Fragment van de Inhoud op een nieuw lusje te openen.
 
-![ Selecterend de Fragmenten van de Inhoud in de Universele Redacteur ](assets/do-not-localize/ue-content-fragments.png)
+![&#x200B; Selecterend de Fragmenten van de Inhoud in de Universele Redacteur &#x200B;](assets/do-not-localize/ue-content-fragments.png)
 
 Op het nieuwe tabblad kunt u nu het inhoudsfragment bewerken dat u hebt geselecteerd in de universele editor.

@@ -21,7 +21,7 @@ Dit document helpt u begrijpen hoe te om de functionaliteit van de Multisite Man
 
 >[!TIP]
 >
->Deze pagina wordt gemakkelijker begrepen in de context van het document [ die Inhoud hergebruiken: De Manager van de MultiPlaats ](/help/sites-cloud/administering/msm/overview.md).
+>Deze pagina wordt gemakkelijker begrepen in de context van het document [&#x200B; die Inhoud hergebruiken: De Manager van de MultiPlaats &#x200B;](/help/sites-cloud/administering/msm/overview.md).
 
 >[!CAUTION]
 >
@@ -31,16 +31,16 @@ Dit document helpt u begrijpen hoe te om de functionaliteit van de Multisite Man
 
 Beheer van meerdere sites bestaat uit de volgende pakketten:
 
-* [ com.day.cq.wcm.msm.api ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [ com.day.cq.wcm.msm.commons ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [&#x200B; com.day.cq.wcm.msm.api &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [&#x200B; com.day.cq.wcm.msm.commons &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
-De belangrijkste voorwerpen MSM API in wisselwerking als volgt (zie ook de sectie [ Gebruikte Termen ](/help/sites-cloud/administering/msm/overview.md#terms-used)):
+De belangrijkste voorwerpen MSM API in wisselwerking als volgt (zie ook de sectie [&#x200B; Gebruikte Termen &#x200B;](/help/sites-cloud/administering/msm/overview.md#terms-used)):
 
-![ HoofdMSM API voorwerpen ](assets/msm-api-interaction.png)
+![&#x200B; HoofdMSM API voorwerpen &#x200B;](assets/msm-api-interaction.png)
 
-* **`Blueprint`** - A `Blueprint` (zoals in [ blauwdrukconfiguratie ](/help/sites-cloud/administering/msm/overview.md#source-blueprints-and-blueprint-configurations)) specificeert de pagina&#39;s waarvan een levend exemplaar inhoud kan erven.
+* **`Blueprint`** - A `Blueprint` (zoals in [&#x200B; blauwdrukconfiguratie &#x200B;](/help/sites-cloud/administering/msm/overview.md#source-blueprints-and-blueprint-configurations)) specificeert de pagina&#39;s waarvan een levend exemplaar inhoud kan erven.
 
-  ![ Vervaging ](assets/msm-blueprint-interaction.png)
+  ![&#x200B; Vervaging &#x200B;](assets/msm-blueprint-interaction.png)
 
    * Het gebruik van een blauwdrukconfiguratie ( `Blueprint`) is optioneel, maar:
 
@@ -75,12 +75,12 @@ De belangrijkste voorwerpen MSM API in wisselwerking als volgt (zie ook de secti
 
 ## Nieuwe synchronisatiehandeling maken {#creating-a-new-synchronization-action}
 
-U kunt aangepaste synchronisatiehandelingen maken voor gebruik met uw rollout-configuraties. Dit kan nuttig zijn wanneer de [ geïnstalleerde acties ](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-synchronization-actions) niet aan uw specifieke toepassingsvereisten voldoen.
+U kunt aangepaste synchronisatiehandelingen maken voor gebruik met uw rollout-configuraties. Dit kan nuttig zijn wanneer de [&#x200B; geïnstalleerde acties &#x200B;](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-synchronization-actions) niet aan uw specifieke toepassingsvereisten voldoen.
 
 Hiertoe maakt u twee klassen:
 
-* Een implementatie van de [`com.day.cq.wcm.msm.api.LiveAction` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface die de actie uitvoert.
-* Een component OSGi die de [`com.day.cq.wcm.msm.api.LiveActionFactory` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface uitvoert en instanties van uw `LiveAction` klasse leidt
+* Een implementatie van de [`com.day.cq.wcm.msm.api.LiveAction` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface die de actie uitvoert.
+* Een component OSGi die de [`com.day.cq.wcm.msm.api.LiveActionFactory` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface uitvoert en instanties van uw `LiveAction` klasse leidt
 
 In `LiveActionFactory` worden instanties van de klasse `LiveAction` voor een bepaalde configuratie gemaakt:
 
@@ -110,9 +110,9 @@ Gebruik het configuratieknooppunt `LiveAction` in de opslagplaats om informatie 
 
 Een `LiveAction` moet bijvoorbeeld de naam van de auteur van het concept opslaan. Een bezit van de configuratieknoop omvat de bezitsnaam van de blauwdruk pagina die de informatie opslaat. Tijdens runtime haalt `LiveAction` de eigenschapnaam uit de configuratie op en verkrijgt vervolgens de eigenschapswaarde.
 
-De parameter van de methode [`LiveActionFactory.createAction` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) is een `Resource` -object. Dit `Resource` -object vertegenwoordigt het `cq:LiveSyncAction` -knooppunt voor deze live actie in de rollout-configuratie.
+De parameter van de methode [`LiveActionFactory.createAction` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) is een `Resource` -object. Dit `Resource` -object vertegenwoordigt het `cq:LiveSyncAction` -knooppunt voor deze live actie in de rollout-configuratie.
 
-Zie [ Creërend een Configuratie van de Output ](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) voor meer informatie.
+Zie [&#x200B; Creërend een Configuratie van de Output &#x200B;](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) voor meer informatie.
 
 Zoals gebruikelijk wanneer het gebruiken van een configuratieknoop, zou u het aan een voorwerp `ValueMap` moeten aanpassen:
 
@@ -132,9 +132,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 De volgende objecten worden opgegeven als parameters van de methode `execute` van het object `LiveAction` :
 
-* Een [`Resource` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) voorwerp dat de bron van het levende exemplaar vertegenwoordigt
+* Een [`Resource` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) voorwerp dat de bron van het levende exemplaar vertegenwoordigt
 * Een `Resource` -object dat het doel van de actieve kopie vertegenwoordigt.
-* Het [`LiveRelationship` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) -object voor de live kopie
+* Het [`LiveRelationship` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) -object voor de live kopie
    * De waarde `autoSave` geeft aan of de `LiveAction` wijzigingen moet opslaan die in de repository zijn aangebracht
    * De `reset` -waarde geeft de modus voor het opnieuw instellen van de rollout aan.
 
@@ -150,7 +150,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->De `Resource` argumenten kunnen `null` of `Resources` objecten zijn die zich niet aanpassen aan `Node` -objecten, zoals [`NonExistingResource` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/NonExistingResource.html) -objecten.
+>De `Resource` argumenten kunnen `null` of `Resources` objecten zijn die zich niet aanpassen aan `Node` -objecten, zoals [`NonExistingResource` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/NonExistingResource.html) -objecten.
 
 ## Een nieuwe rollout-configuratie maken {#creating-a-new-rollout-configuration}
 
@@ -163,7 +163,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
 >[!TIP]
 >
->Zie ook de [ beste praktijken voor het aanpassen van rollouts ](/help/sites-cloud/administering/msm/best-practices.md#customizing-rollouts).
+>Zie ook de [&#x200B; beste praktijken voor het aanpassen van rollouts &#x200B;](/help/sites-cloud/administering/msm/best-practices.md#customizing-rollouts).
 
 ### De configuratie van de rollout maken {#create-the-rollout-configuration}
 
@@ -195,7 +195,7 @@ Een rollout-configuratie maken:
    * **Naam**: `cq:trigger`
 
      **Type**: `String`
-     **Waarde**: De [ Trigger van de Uitvoer ](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) om worden gebruikt
+     **Waarde**: De [&#x200B; Trigger van de Uitvoer &#x200B;](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) om worden gebruikt
       * `rollout`
       * `modification`
       * `publish`
@@ -205,7 +205,7 @@ Een rollout-configuratie maken:
 
 ### Synchronisatiehandelingen toevoegen aan de configuratie van de rollout {#add-synchronization-actions-to-the-rollout-configuration}
 
-De configuraties van de rollout worden opgeslagen onder de [ knoop van de rollout configuratie ](#create-the-rollout-configuration) die u onder de `/apps/msm/<your-project>/rolloutconfigs` knoop hebt gecreeerd.
+De configuraties van de rollout worden opgeslagen onder de [&#x200B; knoop van de rollout configuratie &#x200B;](#create-the-rollout-configuration) die u onder de `/apps/msm/<your-project>/rolloutconfigs` knoop hebt gecreeerd.
 
 Voeg onderliggende knooppunten van het type `cq:LiveSyncAction` toe om synchronisatiehandelingen toe te voegen aan de rollout-configuratie. De volgorde van de actieknooppunten voor synchronisatie bepaalt de volgorde waarin de acties plaatsvinden.
 
@@ -214,7 +214,7 @@ Voeg onderliggende knooppunten van het type `cq:LiveSyncAction` toe om synchroni
 1. Maak een knooppunt met de volgende knoopeigenschappen:
 
    * **Naam**: De knoopnaam van de synchronisatieactie
-      * De naam moet het zelfde als de **Naam van de Actie** in de lijst onder [ de Acties van de Synchronisatie ](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-synchronization-actions) zoals `contentCopy` of `workflow` zijn.
+      * De naam moet het zelfde als de **Naam van de Actie** in de lijst onder [&#x200B; de Acties van de Synchronisatie &#x200B;](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-synchronization-actions) zoals `contentCopy` of `workflow` zijn.
    * **Type**: `cq:LiveSyncAction`
 
 1. Voeg en vorm zo vele knopen van de synchronisatieactie toe aangezien u vereist.
@@ -226,20 +226,20 @@ Voeg onderliggende knooppunten van het type `cq:LiveSyncAction` toe om synchroni
 
 Volg de procedures in deze sectie om een `LiveActionFactory` te ontwikkelen en het in een rollout configuratie te gebruiken. De procedures gebruiken Maven en Eclipse om `LiveActionFactory` te ontwikkelen en op te stellen:
 
-1. [ creeer het geleide project ](#create-the-maven-project) en voer het in Eclipse in.
-1. [ voegt gebiedsdelen ](#add-dependencies-to-the-pom-file) aan het POM- dossier toe.
-1. [ voert de `LiveActionFactory` interface ](#implement-liveactionfactory) uit en stelt de bundel OSGi op.
-1. [ creeer de rollout configuratie ](#create-the-example-rollout-configuration).
-1. [ creeer het levende exemplaar ](#create-the-live-copy).
+1. [&#x200B; creeer het geleide project &#x200B;](#create-the-maven-project) en voer het in Eclipse in.
+1. [&#x200B; voegt gebiedsdelen &#x200B;](#add-dependencies-to-the-pom-file) aan het POM- dossier toe.
+1. [&#x200B; voert de `LiveActionFactory` interface &#x200B;](#implement-liveactionfactory) uit en stelt de bundel OSGi op.
+1. [&#x200B; creeer de rollout configuratie &#x200B;](#create-the-example-rollout-configuration).
+1. [&#x200B; creeer het levende exemplaar &#x200B;](#create-the-live-copy).
 
-[ het Gemaakt project en de broncode van de klasse van Java ](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout) is beschikbaar in de openbare bewaarplaats van het Git.
+[&#x200B; het Gemaakt project en de broncode van de klasse van Java &#x200B;](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout) is beschikbaar in de openbare bewaarplaats van het Git.
 
 ### Maven {#create-the-maven-project}
 
 Voor de volgende procedure is het vereist dat u het `adobe-public` -profiel hebt toegevoegd aan het Maven-instellingenbestand.
 
-* Voor informatie over het adobe-openbare profiel, zie [ het Verkrijgen van het Pakket van de Inhoud Gemaakte Insteekmodule ](/help/implementing/developing/tools/maven-plugin.md#obtaining-the-content-package-maven-plugin)
-* Voor informatie over het GeMaven montagesdossier, zie de Gemaakt [ Verwijzing van Montages ](https://maven.apache.org/settings.html).
+* Voor informatie over het adobe-openbare profiel, zie [&#x200B; het Verkrijgen van het Pakket van de Inhoud Gemaakte Insteekmodule &#x200B;](/help/implementing/developing/tools/maven-plugin.md#obtaining-the-content-package-maven-plugin)
+* Voor informatie over het GeMaven montagesdossier, zie de Gemaakt [&#x200B; Verwijzing van Montages &#x200B;](https://maven.apache.org/settings.html).
 
 1. Open een terminal- of opdrachtregelsessie en wijzig de directory om te wijzen naar de locatie waar u het project wilt maken.
 1. Voer de volgende opdracht in:
@@ -258,7 +258,7 @@ Voor de volgende procedure is het vereist dat u het `adobe-public` -profiel hebt
    * **`artifactName`**: `MyLiveActionFactory package`
    * **`packageGroup`**: `myPackages`
 
-1. De Verduistering van het begin en [ voeren het Geweven project ](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse) in.
+1. De Verduistering van het begin en [&#x200B; voeren het Geweven project &#x200B;](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse) in.
 
 ### Afhankelijkheden toevoegen aan het POM-bestand {#add-dependencies-to-the-pom-file}
 
@@ -521,7 +521,7 @@ De volgende `LiveActionFactory` -klasse implementeert een `LiveAction` -klasse d
 
 Creeer de MSM rollout configuratie die `LiveActionFactory` gebruikt die u creeerde:
 
-1. Creeer en vorm de Configuratie van de a [ Uitvoer met de standaardprocedure ](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) gebruikend de eigenschappen:
+1. Creeer en vorm de Configuratie van de a [&#x200B; Uitvoer met de standaardprocedure &#x200B;](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) gebruikend de eigenschappen:
 
    * **Titel**: De Configuratie van de Uitvoer van het voorbeeld
    * **Naam**: examplerolloutconfig
@@ -550,7 +550,7 @@ Vorm de rollout configuratie die u in de vorige procedure creeerde zodat het de 
 
 ### Live kopie maken {#create-the-live-copy}
 
-[ creeer een levend exemplaar ](/help/sites-cloud/administering/msm/creating-live-copies.md#creating-a-live-copy-of-a-page) van de Engelse/Producten tak van de WKND verwijzingsplaats gebruikend uw rollout configuratie:
+[&#x200B; creeer een levend exemplaar &#x200B;](/help/sites-cloud/administering/msm/creating-live-copies.md#creating-a-live-copy-of-a-page) van de Engelse/Producten tak van de WKND verwijzingsplaats gebruikend uw rollout configuratie:
 
 * **Source**: `/content/wknd/language-masters/en/products`
 
@@ -584,7 +584,7 @@ De taallijst wordt opgeslagen onder het knooppunt `/libs/wcm/core/resources/lang
 * In de eigenschap `country` van het knooppunt wordt de volledige naam van het land voor de code opgeslagen.
 * Wanneer de knooppuntnaam alleen uit een taalcode bestaat (zoals `en` ), is de landeigenschap `*` en slaat een extra `defaultCountry` -eigenschap de code van het taal-land op om het land aan te geven dat moet worden gebruikt.
 
-![ de definitie van de Taal ](assets/msm-language-manager.png)
+![&#x200B; de definitie van de Taal &#x200B;](assets/msm-language-manager.png)
 
 De talen wijzigen:
 
@@ -622,7 +622,7 @@ Daarna moet u ervoor zorgen dat:
 * E-mailadres contactpersoon:
 
    * Is uitgesloten van de opgerolde eigenschappen.
-   * Zie [ Vormend Actieve Synchronisatie van het Exemplaar ](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) voor meer informatie.
+   * Zie [&#x200B; Vormend Actieve Synchronisatie van het Exemplaar &#x200B;](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) voor meer informatie.
 
 * Belangrijke visuele stijl:
 

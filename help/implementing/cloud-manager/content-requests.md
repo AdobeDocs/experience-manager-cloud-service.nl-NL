@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Inhoudsverzoeken omvatten aanvragen die naar AEM Sites worden verzonden. Deze verzoeken kunnen door Edge Delivery Services of klant-verstrekt caching systemen zoals een Netwerk van de Levering van de Inhoud (CDN) leiden. Deze verzoeken leveren gestructureerde gegevens in HTML- of JSON-indeling en ondersteunen paginaweergaven (bijvoorbeeld pagina&#39;s en ervaringsfragmenten) of JSON retourneert zonder kop via API&#39;s.
 
-Het systeem telt inhoudsverzoeken wanneer een gebruiker een pagina gebruikend HTML of JSON bekijkt. Het meet het verzoek op het punt waar het eerste caching systeem het ontvangt. Bepaalde HTTP-aanvragen worden opgenomen of uitgesloten voor het tellen van inhoudsaanvragen. Zie de volledige lijst van HTTP [ inbegrepen inhoudsverzoeken ](#included-content-requests) en [ uitgesloten inhoudsverzoeken ](#excluded-content-request).
+Het systeem telt inhoudsverzoeken wanneer een gebruiker een pagina gebruikend HTML of JSON bekijkt. Het meet het verzoek op het punt waar het eerste caching systeem het ontvangt. Bepaalde HTTP-aanvragen worden opgenomen of uitgesloten voor het tellen van inhoudsaanvragen. Zie de volledige lijst van HTTP [&#x200B; inbegrepen inhoudsverzoeken &#x200B;](#included-content-requests) en [&#x200B; uitgesloten inhoudsverzoeken &#x200B;](#excluded-content-request).
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Inhoudsverzoeken kunnen variaties hebben binnen de analytische rapportagehulppro
 | Verkeersblokkers | Privacy-functies in de browser of bedrijfsfirewalls kunnen het laden van analysescripts blokkeren. Deze gebruikers genereren nog steeds verzoeken om inhoud op de server. |
 | Firewalls | Met bedrijfsfirewalls of regionale firewalls kan worden voorkomen dat analytische aanroepen Adobe-servers bereiken, wat leidt tot onderrapportage in analyses, terwijl het aantal aan de serverzijde ongewijzigd blijft. |
 
-Zie het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) voor informatie over het bekijken en het volgen gebruik van de inhoudsverzoek tegen uw vergunningsgrenzen.
+Zie het [&#x200B; dashboard van de Vergunning &#x200B;](/help/implementing/cloud-manager/license-dashboard.md) voor informatie over het bekijken en het volgen gebruik van de inhoudsverzoek tegen uw vergunningsgrenzen.
 
 ## Regels voor verzamelingen op de server {#serverside-collection}
 
@@ -78,11 +78,11 @@ In de volgende tabellen worden de typen opgenomen en uitgesloten inhoudsaanvrage
 | --- | --- | --- |
 | HTTP-code 100-299 | Opgenomen | Omvat succesvolle verzoeken die volledige of gedeeltelijke HTML of inhoud JSON terugkeren.<br> Code 206 van HTTP: Deze verzoeken leveren slechts een gedeelte van de volledige inhoud. Bijvoorbeeld een video of een grote afbeelding. Gedeeltelijke inhoudsaanvragen worden opgenomen wanneer ze een deel van een HTML- of JSON-reactie leveren die wordt gebruikt bij het renderen van pagina-inhoud. |
 | HTTP-bibliotheken voor automatisering | Opgenomen | Verzoeken die zijn gemaakt door gereedschappen of bibliotheken die pagina-inhoud ophalen. Voorbeelden zijn: <br>・ Amazon CloudFront <br>・ Apache Http Client <br>・ Asynchronous HTTP Client <br>・ Axios <br>・ Azureus <br>・ Curl <br>・ GitHub Node Fetch <br>・ Guzzle <br>・ Go-http-client <br>・ Headless Chrome <br>・ Java™ Client &lbrace;1 <br>・ Jersey <br>・ Node Oembed <br>・ okhttp<br>・ Python-verzoeken <br>・ Reactor Netty <br>・ Wget <br>・ WinHTTP <br>・ Fast HTTP <br>・ GitHub Node Fetch <br>・ Reactor Netty |
-| Gereedschappen voor toezicht en gezondheidscontrole | Opgenomen | Verzoeken die worden gebruikt om de gezondheid of beschikbaarheid van pagina&#39;s te controleren.<br> zie [ Types van uitgesloten inhoudsverzoeken ](#excluded-content-request).<br> Voorbeelden omvatten het volgende:<br>・ `Amazon-Route53-Health-Check-Service`<br>・ EyeMonIT_bot_version_0.1_[ (https://eyemonit.com/) ](https://eyemonit.com/) <br>・ Investis-Site24x7 <br>・ Mozilla/5.0+ (compatibel; UptimeRobot/2.0; [ https://uptimerobot.com/ ](https://uptimerobot.com/)) <br>・ ThousandEyes-gonfly-x1 <br>・ OmtrBot/1.0 <br>・ WebMon/2.0.0 |
+| Gereedschappen voor toezicht en gezondheidscontrole | Opgenomen | Verzoeken die worden gebruikt om de gezondheid of beschikbaarheid van pagina&#39;s te controleren.<br> zie [&#x200B; Types van uitgesloten inhoudsverzoeken &#x200B;](#excluded-content-request).<br> Voorbeelden omvatten het volgende:<br>・ `Amazon-Route53-Health-Check-Service`<br>・ EyeMonIT_bot_version_0.1_[&#x200B; (https://eyemonit.com/) &#x200B;](https://eyemonit.com/) <br>・ Investis-Site24x7 <br>・ Mozilla/5.0+ (compatibel; UptimeRobot/2.0; [&#x200B; https://uptimerobot.com/ &#x200B;](https://uptimerobot.com/)) <br>・ ThousandEyes-gonfly-x1 <br>・ OmtrBot/1.0 <br>・ WebMon/2.0.0 |
 | `<link rel="prefetch">` aanvragen | Opgenomen | Wanneer klanten vooraf inhoud laden of vooraf instellen (bijvoorbeeld met `<link rel="prefetch">`), telt het systeem die serververzoeken. Let erop dat deze benadering het verkeer kan verhogen, afhankelijk van het aantal van deze pagina&#39;s dat vooraf is ingesteld. |
 | Verkeer dat Adobe Analytics- of Google Analytics-rapportage blokkeert | Opgenomen | Het is meer gebruikelijk dat bezoekers van sites privacysoftware (Ad-blockers, enzovoort) hebben geïnstalleerd die van invloed is op de nauwkeurigheid van Google Analytics of Adobe Analytics. AEM as a Cloud Service telt verzoeken op het eerste toegangspunt tot de door Adobe geëxploiteerde infrastructuur en niet op de client. |
 
-Zie ook [ Dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md).
+Zie ook [&#x200B; Dashboard van de Vergunning &#x200B;](/help/implementing/cloud-manager/license-dashboard.md).
 
 ### Typen verzoeken om uitgesloten inhoud {#excluded-content-request}
 

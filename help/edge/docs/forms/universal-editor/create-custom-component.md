@@ -172,7 +172,7 @@ Het kan:
 
 In deze sectie, zult u het proces leren om de component van de a **kaartendouane** tot stand te brengen door OOTB radioknoopcomponent uit te breiden.
 
-![ Aangepaste Component van de Kaart ](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+![&#x200B; Aangepaste Component van de Kaart &#x200B;](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
 ### &#x200B;1. Code-instelling
 
@@ -190,7 +190,7 @@ npm install
 npm run create:custom-component
 ```
 
-![ Scaffolder CLI ](/help/edge/docs/forms/universal-editor/assets/scaffolder-cli.png)
+![&#x200B; Scaffolder CLI &#x200B;](/help/edge/docs/forms/universal-editor/assets/scaffolder-cli.png)
 
 Het zal:
 
@@ -217,7 +217,7 @@ De volgende functies worden automatisch uitgevoerd:
 
 >[!NOTE]
 >
-> U kunt ook een aangepaste component maken met de methode manual (verouderd). Zie de [ Handleiding of Verouderde Methode ](#manual-or-legacy-method-to-create-custom-component) om de sectie van de douanecomponent voor details tot stand te brengen.
+> U kunt ook een aangepaste component maken met de methode manual (verouderd). Zie de [&#x200B; Handleiding of Verouderde Methode &#x200B;](#manual-or-legacy-method-to-create-custom-component) om de sectie van de douanecomponent voor details tot stand te brengen.
 
 #### 1.2 Component gebruiken in Universal Editor
 
@@ -229,7 +229,7 @@ De volgende functies worden automatisch uitgevoerd:
    2. Blader naar de sectie Aangepaste componenten.
    3. Selecteer de pas gecreëerde **component van Kaarten** om het in uw vorm op te nemen.
 
-      ![ Uitgezochte Component van de Douane ](/help/edge/docs/forms/universal-editor/assets/select-custom-component.png)
+      ![&#x200B; Uitgezochte Component van de Douane &#x200B;](/help/edge/docs/forms/universal-editor/assets/select-custom-component.png)
 
 Aangezien er geen code aanwezig is binnen `cards.js` , wordt de aangepaste component weergegeven als een groep keuzerondjes.
 
@@ -291,13 +291,13 @@ export default function decorate(element, fieldJson, container, formId) {
 
 De kaartcomponent ziet er nu als volgt uit:
 
-![ voeg kaart css en js ](/help/edge/docs/forms/universal-editor/assets/add-card-css.png) toe
+![&#x200B; voeg kaart css en js &#x200B;](/help/edge/docs/forms/universal-editor/assets/add-card-css.png) toe
 
 #### 2.2 Dynamisch gedrag toevoegen met behulp van Abonnementsfunctie
 
 Wanneer de vervolgkeuzelijst wordt gewijzigd, worden de kaarten opgehaald en ingesteld in de opsomming van de groep keuzerondjes. Maar dit wordt momenteel niet in de weergave verwerkt. Het wordt dus weergegeven zoals hieronder wordt getoond:
 
-![ subscribe functie ](/help/edge/docs/forms/universal-editor/assets/card-subscribe.png)
+![&#x200B; subscribe functie &#x200B;](/help/edge/docs/forms/universal-editor/assets/card-subscribe.png)
 
 Wanneer API wordt geroepen, plaatst het het gebiedsmodel en moet aan de veranderingen luisteren en dienovereenkomstig de mening teruggeven. Dit wordt bereikt gebruikend **onderteken functie**.
 
@@ -353,7 +353,7 @@ export default function decorate(element, fieldJson, container, formId) {
 
 Wanneer u het vervolgkeuzemenu wijzigt, worden de kaarten gevuld, zoals hieronder wordt weergegeven:
 
-![ subscribe functie ](/help/edge/docs/forms/universal-editor/assets/card-subscribe-final.png)
+![&#x200B; subscribe functie &#x200B;](/help/edge/docs/forms/universal-editor/assets/card-subscribe-final.png)
 
 #### 2.3 Updates synchroniseren met veldmodel
 
@@ -418,7 +418,7 @@ export default function decorate(element, fieldJson, container, formId) {
 
 De aangepaste kaartcomponent wordt nu weergegeven, zoals hieronder wordt getoond:
 
-![ Aangepaste Component van de Kaart ](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+![&#x200B; Aangepaste Component van de Kaart &#x200B;](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
 ### &#x200B;3. Wijzigingen vastleggen en duwen
 
@@ -587,7 +587,7 @@ Houd rekening met de onderstaande punten voordat u uw eigen aangepaste component
 
 ## Verwijzingen
 
-- [ vorm-gebied-types ](/help/edge/docs/forms/eds-form-field-properties.md): De structuren en de eigenschappen van HTML van de basis voor alle gebiedstypes.
+- [&#x200B; vorm-gebied-types &#x200B;](/help/edge/docs/forms/eds-form-field-properties.md): De structuren en de eigenschappen van HTML van de basis voor alle gebiedstypes.
 
 - **blokken/vorm/modellen/vorm-componenten**: OOTB en de definities van het douanecomponentenbezit.
 

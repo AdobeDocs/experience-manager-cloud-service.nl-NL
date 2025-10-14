@@ -57,13 +57,13 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 * Assets kan worden aangeschaft met [!DNL Experience Manager Assets Brand Portal] . Het helpt om activa van de uitzendingsgebruikers voor nieuwe marketing campagnes, foto&#39;s, en projecten te betrekken.
 
-* [!DNL Experience Manager Assets] als een [!DNL Cloud Service] heeft het recht om een vooraf geconfigureerde [!DNL Brand Portal] -instantie te hebben. De [!DNL Cloud Manager] -gebruiker kan [!DNL Brand Portal] on [!DNL Experience Manager Assets] activeren als een [!DNL Cloud Service] . Zie [ Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=nl-NL) activeren.
+* [!DNL Experience Manager Assets] als een [!DNL Cloud Service] heeft het recht om een vooraf geconfigureerde [!DNL Brand Portal] -instantie te hebben. De [!DNL Cloud Manager] -gebruiker kan [!DNL Brand Portal] on [!DNL Experience Manager Assets] activeren als een [!DNL Cloud Service] . Zie [&#x200B; Brand Portal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=nl-NL) activeren.
 
-* Bedrijven kunnen nu elementen aanschaffen met [!DNL Brand Portal] . De functie voor het aanschaffen van bedrijfsmiddelen gebruikt [!DNL Brand Portal] om klanten te helpen bij het aanschaffen van bedrijfsmiddelen voor nieuwe marketingcampagnes, foto&#39;s en projecten. Zie [ activa die in  [!DNL Brand Portal] ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=nl-NL) betrekken.
+* Bedrijven kunnen nu elementen aanschaffen met [!DNL Brand Portal] . De functie voor het aanschaffen van bedrijfsmiddelen gebruikt [!DNL Brand Portal] om klanten te helpen bij het aanschaffen van bedrijfsmiddelen voor nieuwe marketingcampagnes, foto&#39;s en projecten. Zie [&#x200B; activa die in  [!DNL Brand Portal] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=nl-NL) betrekken.
 
-* In het gebruiksrapport van [!DNL Brand Portal] worden nu alleen de actieve gebruikers weergegeven. De inactieve gebruikers worden nu niet weergegeven. Actieve gebruikers zijn gebruikers van wie de account is toegewezen aan een productprofiel in de [!DNL Admin Console] . Zie [[!DNL Brand Portal]  rapporten ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=nl-NL).
+* In het gebruiksrapport van [!DNL Brand Portal] worden nu alleen de actieve gebruikers weergegeven. De inactieve gebruikers worden nu niet weergegeven. Actieve gebruikers zijn gebruikers van wie de account is toegewezen aan een productprofiel in de [!DNL Admin Console] . Zie [[!DNL Brand Portal]  rapporten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=nl-NL).
 
-* In [!DNL Brand Portal] wordt een nieuwe downloadinstelling geïntroduceerd, waarmee u voor elk element een aparte map kunt maken wanneer u mappen, verzamelingen en dergelijke downloadt. Zie [ downloadmontages ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=nl-NL).
+* In [!DNL Brand Portal] wordt een nieuwe downloadinstelling geïntroduceerd, waarmee u voor elk element een aparte map kunt maken wanneer u mappen, verzamelingen en dergelijke downloadt. Zie [&#x200B; downloadmontages &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=nl-NL).
 
 ## Opgeloste problemen in [!DNL Assets] {#bug-fixes-assets}
 
@@ -80,9 +80,9 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 * Uitgebreide eigenschappen van de productconsole om verbonden Assets en de Fragmenten van de Ervaring te tonen, met inbegrip van actie om snel aan de bijbehorende inhoud te navigeren.
 
-* Release CIF Venia Reference Site - 2021.02.24 die de nieuwste versie CIF Core Components versie v1.8.0 bevat. Zie [ CIF de Plaats van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) voor meer details.
+* Release CIF Venia Reference Site - 2021.02.24 die de nieuwste versie CIF Core Components versie v1.8.0 bevat. Zie [&#x200B; CIF de Plaats van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) voor meer details.
 
-* Uitgegeven CIF Core Components v1.8.0. Zie [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) voor meer details.
+* Uitgegeven CIF Core Components v1.8.0. Zie [&#x200B; CIF de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) voor meer details.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -138,7 +138,7 @@ De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 ### Nieuw in gereedschap voor inhoudsoverdracht {#what-is-new-ctt}
 
 * Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System IDs als deel van de activiteit van de inhoudsmigratie.
-Zie [ Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=nl-NL) voor meer details.
+Zie [&#x200B; Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=nl-NL) voor meer details.
 * Met het gereedschap Inhoud overbrengen worden nu alle groepen en gebruikers gemigreerd waarnaar in de migratieset wordt verwezen, inclusief kinderen.
 * Gebruikers mogen bepaalde paden onder `/etc` selecteren bij het maken van migratiesets.
 
@@ -161,9 +161,9 @@ De releasedatum voor de analyse van best practices v2.1.2 is 18 februari 2021.
 ### Nieuw in de Hulpmiddelen van de Refactoring van de Code {#what-is-new-crt}
 
 * Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat verschillende foutoplossingen voor de Repository Modernizer.
-Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=nl-NL#benefits) om meer over deze stop te leren.
+Zie [&#x200B; Verenigde Ervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=nl-NL#benefits) om meer over deze stop te leren.
 
 ### Opgeloste problemen {#bug-fixes-crt}
 
 * Verschillende opgeloste problemen zijn opgelost in de Repository Modernizer.
-Zie [ Middel GitHub: aem-wolk-dienst-bron-migratie ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer details.
+Zie [&#x200B; Middel GitHub: aem-wolk-dienst-bron-migratie &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer details.

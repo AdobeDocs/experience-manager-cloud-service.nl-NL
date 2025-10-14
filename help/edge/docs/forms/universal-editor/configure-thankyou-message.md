@@ -53,19 +53,19 @@ Dank u berichten het beste werken wanneer:
 
 Open uw AanpassingsVorm in Universele Redacteur en klik **geef de pictogram van de Eigenschappen van de Vorm** in de toolbar uit. Hiermee wordt het dialoogvenster met uitgebreide formuliereigenschappen geopend.
 
-![ de eigenschappen van de Vorm pictogram ](/help/forms/assets/ue-form-properties-icon.png)
+![&#x200B; de eigenschappen van de Vorm pictogram &#x200B;](/help/forms/assets/ue-form-properties-icon.png)
 
 **2. Navigeer om u configuratie te danken**
 
 In de dialoog van de Eigenschappen van de Vorm, selecteer **Dank u** tabel om tot de opties van de post-voorleggingsconfiguratie toegang te hebben.
 
-![ Universele Eigenschappen van de Vorm van de Redacteur ](/help/forms/assets/ue-form-properties.png)
+![&#x200B; Universele Eigenschappen van de Vorm van de Redacteur &#x200B;](/help/forms/assets/ue-form-properties.png)
 
 **3. Vorm berichtvertoning**
 
 Selecteer **Bericht van de Show** van de beschikbare opties.
 
-![ bedankt ](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
+![&#x200B; bedankt &#x200B;](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. Maak uw berichtinhoud**
 
@@ -123,19 +123,19 @@ Omleiding van URL&#39;s is optimaal voor:
 
 Open uw AanpassingsVorm in Universele Redacteur en klik **geef de Eigenschappen van de Vorm** pictogram uit om de dialoog van de vormconfiguratie te openen.
 
-![ de eigenschappen van de Vorm pictogram ](/help/forms/assets/ue-form-properties-icon.png)
+![&#x200B; de eigenschappen van de Vorm pictogram &#x200B;](/help/forms/assets/ue-form-properties-icon.png)
 
 **2. Navigeer om u configuratie te danken**
 
 Selecteer **Dank u** lusje in de dialoog van de Eigenschappen van de Vorm om tot herleidingsconfiguratieopties toegang te hebben.
 
-![ Universele Eigenschappen van de Vorm van de Redacteur ](/help/forms/assets/ue-form-properties.png)
+![&#x200B; Universele Eigenschappen van de Vorm van de Redacteur &#x200B;](/help/forms/assets/ue-form-properties.png)
 
 **3. Omleidingsfunctionaliteit inschakelen**
 
 Kies **Omleiden aan URL** van de beschikbare post-voorleggingsopties.
 
-![ redirect ](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
+![&#x200B; redirect &#x200B;](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. Doel-URL configureren**
 

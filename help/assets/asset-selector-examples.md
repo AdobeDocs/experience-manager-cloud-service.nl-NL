@@ -17,9 +17,9 @@ U kunt de Eigenschappen van de Selecteur van Activa [&#128279;](/help/assets/ass
 
 ## Voorbeeld 1: Kiezer voor bedrijfsmiddelen in spoorwegweergave
 
-![ spoorstaaf-mening-voorbeeld ](assets/rail-view-example-vanilla.png)
+![&#x200B; spoorstaaf-mening-voorbeeld &#x200B;](assets/rail-view-example-vanilla.png)
 
-Als de waarde van de AssetSelector `rail` is ingesteld op `false` of niet wordt vermeld in de eigenschappen, wordt de functie Asset Selector standaard weergegeven in de modale weergave. Met de eigenschap `acvConfig` kunt u bepaalde diepgaande configuraties gebruiken, zoals Slepen en neerzetten. Bezoek [ laat of maak belemmering en daling ](asset-selector-customization.md#enable-disable-drag-and-drop) toe onbruikbaar om het gebruik van `acvConfig` bezit te begrijpen.
+Als de waarde van de AssetSelector `rail` is ingesteld op `false` of niet wordt vermeld in de eigenschappen, wordt de functie Asset Selector standaard weergegeven in de modale weergave. Met de eigenschap `acvConfig` kunt u bepaalde diepgaande configuraties gebruiken, zoals Slepen en neerzetten. Bezoek [&#x200B; laat of maak belemmering en daling &#x200B;](asset-selector-customization.md#enable-disable-drag-and-drop) toe onbruikbaar om het gebruik van `acvConfig` bezit te begrijpen.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -33,13 +33,13 @@ Use the `path` property to define the folder name that displays automatically wh
 
 Gebruik verschillende eigenschappen om de metagegevens te definiëren van een element dat u wilt weergeven met een info-pictogram. De info popover verstrekt de inzameling van informatie over activa of de omslag met inbegrip van titel, afmetingen, datum van wijziging, plaats, en beschrijving van activa. In het onderstaande voorbeeld worden verschillende eigenschappen gebruikt om metagegevens van een element weer te geven. Met de eigenschap `repo:path` wordt bijvoorbeeld de locatie van een element opgegeven. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
 
-![ meta-gegevens-popover-voorbeeld ](assets/metadata-popover.png)
+![&#x200B; meta-gegevens-popover-voorbeeld &#x200B;](assets/metadata-popover.png)
 
 ## Voorbeeld 3: Aangepaste filtereigenschap in de rasterweergave
 
 Naast de beperkte zoekopdracht kunt u met Assets Selector verschillende kenmerken aanpassen om uw zoekopdracht te verfijnen van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] -toepassing. Voeg de volgende code toe om aangepaste zoekfilters in uw toepassing toe te voegen. In het onderstaande voorbeeld zoekt u in `Type Filter` het elementtype tussen Afbeeldingen, Documenten of Video&#39;s of het filtertype dat u voor de zoekopdracht hebt toegevoegd.
 
-![ douane-filter-voorbeeld-vanilla ](assets/custom-filter-example-vanilla.png)
+![&#x200B; douane-filter-voorbeeld-vanilla &#x200B;](assets/custom-filter-example-vanilla.png)
 
 <!--
 
@@ -53,7 +53,7 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 >[!MORELIKETHIS]
 >
->* [ de aanpassingen van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)
->* [ de selecteur van Activa uploadt ](/help/assets/asset-selector-upload.md)
->* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
->* [ integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [&#x200B; de aanpassingen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-customization.md)
+>* [&#x200B; de selecteur van Activa uploadt &#x200B;](/help/assets/asset-selector-upload.md)
+>* [&#x200B; Eigenschappen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-properties.md)
+>* [&#x200B; integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

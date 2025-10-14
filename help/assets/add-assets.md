@@ -19,19 +19,19 @@ ht-degree: 0%
 
 Naast het meest gebruikte uploaden naar de browser bestaan er andere methoden om elementen aan de [!DNL Experience Manager] -opslagplaats toe te voegen. Tot deze andere methoden behoren desktopclients, zoals Adobe Asset Link of de [!DNL Experience Manager] desktop-app, het uploaden en insluiten van scripts die klanten zouden maken, en geautomatiseerde innamesintegraties die als [!DNL Experience Manager] -extensies worden toegevoegd.
 
-Hoewel u elk binair bestand in [!DNL Experience Manager] kunt uploaden en beheren, bieden de meest gebruikte bestandsindelingen ondersteuning voor aanvullende services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Zie [ gesteunde dossierformaten ](file-format-support.md) voor details.
+Hoewel u elk binair bestand in [!DNL Experience Manager] kunt uploaden en beheren, bieden de meest gebruikte bestandsindelingen ondersteuning voor aanvullende services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Zie [&#x200B; gesteunde dossierformaten &#x200B;](file-format-support.md) voor details.
 
-Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade elementen. Verschillende profielen voor middelenverwerking kunnen worden geconfigureerd in de map waarin elementen worden geüpload om specifieke metagegevens, uitvoeringen of services voor beeldverwerking toe te voegen. Zie [ procesactiva wanneer geupload ](#process-when-uploaded).
+Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade elementen. Verschillende profielen voor middelenverwerking kunnen worden geconfigureerd in de map waarin elementen worden geüpload om specifieke metagegevens, uitvoeringen of services voor beeldverwerking toe te voegen. Zie [&#x200B; procesactiva wanneer geupload &#x200B;](#process-when-uploaded).
 
 [!DNL Assets] biedt de volgende uploadmethoden. Adobe raadt u aan om uw gebruiksscenario en toepasselijkheid van een uploadoptie te begrijpen voordat u deze gebruikt.
 
 | Upload, methode | Wanneer gebruiken? | Primaire persoon |
 |---------------------|----------------|-----------------|
-| [ de gebruikersinterface van de Console van Assets ](#upload-assets) | Soms uploaden, indrukken en slepen, zoeken naar uploaden. Gebruik deze optie niet om veel elementen te uploaden. | Alle gebruikers |
-| [ uploadt API ](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
-| [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL) | Lage hoeveelheden asset opnemen, maar niet voor migratie. | Beheerder, Marketer |
+| [&#x200B; de gebruikersinterface van de Console van Assets &#x200B;](#upload-assets) | Soms uploaden, indrukken en slepen, zoeken naar uploaden. Gebruik deze optie niet om veel elementen te uploaden. | Alle gebruikers |
+| [&#x200B; uploadt API &#x200B;](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
+| [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL) | Lage hoeveelheden asset opnemen, maar niet voor migratie. | Beheerder, Marketer |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html) | Dit is handig wanneer creatieve en marketingmedewerkers hun middelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud] -bureaubladapps. | Creative, Marketer |
-| [ bulkingestor van Activa ](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
+| [&#x200B; bulkingestor van Activa &#x200B;](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
 
 ## Elementen uploaden {#upload-assets}
 
@@ -73,7 +73,7 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
    * Klik op **[!UICONTROL Create]** > **[!UICONTROL Files]** op de werkbalk. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
    * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de gebruikersinterface van [!DNL Assets] . Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
 
-   ![ create_menu ](assets/create_menu.png)
+   ![&#x200B; create_menu &#x200B;](assets/create_menu.png)
 
    Als u meerdere bestanden wilt selecteren, selecteert u de toets `Ctrl` of `Command` en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
 
@@ -85,7 +85,7 @@ Daarnaast wordt in de gebruikersinterface van [!DNL Assets] het element weergege
 
 >[!NOTE]
 >
->Om genestelde omslaghiërarchieën te uploaden, zie [ bulkupload activa ](#bulk-upload).
+>Om genestelde omslaghiërarchieën te uploaden, zie [&#x200B; bulkupload activa &#x200B;](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -138,11 +138,11 @@ De grote leverancier van bedrijfsmiddelen kan veel bedrijfsmiddelen efficiënt v
 * Elementen ordenen: u kunt de inhoud in een logische volgorde ordenen, bijvoorbeeld op bestandsgrootte, bestandsindeling, gebruik van hoofdletters en kleine letters of prioriteit. Over het algemeen is voor grote complexe bestanden meer verwerking nodig. U kunt ook overwegen grote bestanden afzonderlijk in te voegen met de filteroptie voor bestandsgrootte (hieronder beschreven).
 * Staggeringestie: Overweeg uw inname op te delen in meerdere bulkinname-projecten. Met q kunt u de inhoud sneller zien en zonodig uw opname bijwerken. U kunt bijvoorbeeld verwerkingsintensieve elementen opnemen tijdens niet-piekuren of geleidelijk in meerdere stukken. U kunt echter kleinere en eenvoudigere elementen invoeren die niet veel verwerkingstijd in één keer vereisen.
 
-Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende methoden. Ook, zie de [ gebruiksgevallen en methodes ](#upload-methods-comparison)
+Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende methoden. Ook, zie de [&#x200B; gebruiksgevallen en methodes &#x200B;](#upload-methods-comparison)
 
-* [ Activa uploadt APIs ](developer-reference-material-apis.md#asset-upload): Gebruik een douane uploadt manuscript of een hulpmiddel dat APIs gebruikt om extra behandeling van activa (bijvoorbeeld, vertaal meta-gegevens of anders noem dossiers) toe te voegen, indien nodig.
-* [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL): Nuttig voor creatieve beroeps en marketers die activa van hun lokaal dossiersysteem uploaden. Gebruik deze optie om geneste mappen te uploaden die lokaal beschikbaar zijn.
-* [ Bulk ingestition hulpmiddel ](#asset-bulk-ingestor): Gebruik voor opname van grote hoeveelheden activa of nu en aanvankelijk wanneer het opstellen [!DNL Experience Manager].
+* [&#x200B; Activa uploadt APIs &#x200B;](developer-reference-material-apis.md#asset-upload): Gebruik een douane uploadt manuscript of een hulpmiddel dat APIs gebruikt om extra behandeling van activa (bijvoorbeeld, vertaal meta-gegevens of anders noem dossiers) toe te voegen, indien nodig.
+* [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL): Nuttig voor creatieve beroeps en marketers die activa van hun lokaal dossiersysteem uploaden. Gebruik deze optie om geneste mappen te uploaden die lokaal beschikbaar zijn.
+* [&#x200B; Bulk ingestition hulpmiddel &#x200B;](#asset-bulk-ingestor): Gebruik voor opname van grote hoeveelheden activa of nu en aanvankelijk wanneer het opstellen [!DNL Experience Manager].
 
 ### Gereedschap Asset Bulk importeren {#asset-bulk-ingestor}
 
@@ -152,7 +152,7 @@ Het hulpmiddel wordt verstrekt slechts aan de groep van beheerders voor grootsch
 
 De volgende afbeelding illustreert de verschillende fasen wanneer u elementen vanuit een gegevensopslagruimte in Experience Manager invoert:
 
-![ Bulk het Hulpmiddel van de Opname ](assets/bulk-ingestion.png)
+![&#x200B; Bulk het Hulpmiddel van de Opname &#x200B;](assets/bulk-ingestion.png)
 
 **Eerste vereisten**
 
@@ -164,7 +164,7 @@ Voor het gebruik van deze functie is een externe opslagaccount of emmer uit Azur
 
 >[!NOTE]
 >
->Externe opslagaccounts kunnen andere naamregels voor bestanden/mappen hebben dan het gereedschap Bulk importeren. Zie [ Behandelend filenames tijdens bulkinvoer ](#filename-handling-bulkimport) voor meer details op niet toegelaten/ontsnapte namen.
+>Externe opslagaccounts kunnen andere naamregels voor bestanden/mappen hebben dan het gereedschap Bulk importeren. Zie [&#x200B; Behandelend filenames tijdens bulkinvoer &#x200B;](#filename-handling-bulkimport) voor meer details op niet toegelaten/ontsnapte namen.
 
 
 ### Het gereedschap Bulkimport configureren {#configure-bulk-ingestor-tool}
@@ -187,17 +187,17 @@ Voer de volgende stappen uit om het gereedschap Bulk importeren te configureren:
 
 1. (Optioneel) Geef de maximale bestandsgrootte van elementen op in MB om ze op te nemen in het innameproces in het veld **[!UICONTROL Filter by Max Size]** .
 
-1. (Optioneel) Geef een door komma&#39;s gescheiden lijst op met MIME-typen die u wilt uitsluiten van de opname in het veld **[!UICONTROL Exclude MIME Types]** . Bijvoorbeeld `image/jpeg, image/.*, video/mp4` . Zie [ alle gesteunde dossierformaten ](/help/assets/file-format-support.md).
+1. (Optioneel) Geef een door komma&#39;s gescheiden lijst op met MIME-typen die u wilt uitsluiten van de opname in het veld **[!UICONTROL Exclude MIME Types]** . Bijvoorbeeld `image/jpeg, image/.*, video/mp4` . Zie [&#x200B; alle gesteunde dossierformaten &#x200B;](/help/assets/file-format-support.md).
 
-1. Geef een door komma&#39;s gescheiden lijst op met MIME-typen die u wilt opnemen van de opname in het veld **[!UICONTROL Include MIME Types]** . Zie [ alle gesteunde dossierformaten ](/help/assets/file-format-support.md).
+1. Geef een door komma&#39;s gescheiden lijst op met MIME-typen die u wilt opnemen van de opname in het veld **[!UICONTROL Include MIME Types]** . Zie [&#x200B; alle gesteunde dossierformaten &#x200B;](/help/assets/file-format-support.md).
 
 1. Selecteer de optie **[!UICONTROL Delete source file after import]** om de oorspronkelijke bestanden uit de brongegevensopslag te verwijderen nadat de bestanden zijn geïmporteerd in [!DNL Experience Manager] .
 
-1. Selecteer de **[!UICONTROL Import Mode]** . Selecteer **Overslaan**, **vervangen**, of **creeer Versie**. De modus Overslaan is de standaardinstelling en in deze modus slaat de functie Instantor over om een element te importeren als dit al bestaat. Zie de betekenis van [ vervangen en creeer versieopties ](#handling-upload-existing-file).
+1. Selecteer de **[!UICONTROL Import Mode]** . Selecteer **Overslaan**, **vervangen**, of **creeer Versie**. De modus Overslaan is de standaardinstelling en in deze modus slaat de functie Instantor over om een element te importeren als dit al bestaat. Zie de betekenis van [&#x200B; vervangen en creeer versieopties &#x200B;](#handling-upload-existing-file).
 
 1. Als u een locatie in DAM wilt definiëren waar elementen moeten worden geïmporteerd met het veld **[!UICONTROL Assets Target Folder]** , geeft u een pad op. Bijvoorbeeld `/content/dam/imported_assets` .
 
-1. (Optioneel) Geef het metagegevensbestand op dat u wilt importeren, in CSV-indeling, in het veld **[!UICONTROL Metadata File]** . Geef het CSV-bestand op de locatie van het bronblob en raadpleeg het pad tijdens het configureren van het gereedschap Bulk importeren. Het CSV- dossierformaat dat op dit gebied van verwijzingen wordt voorzien is het zelfde als het Csv- dossierformaat wanneer u [ activa meta-gegevens van de Invoer en van de uitvoer in bulk ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=nl-NL). Als u het **Bron dossier van de Schrapping na de invoer** optie selecteert, filterCSV- dossiers of gebruikend **uitsluiten** of **omvatten MIME Type** of **Filter door Weg/Dossier** gebieden. U kunt een reguliere expressie gebruiken om CSV-bestanden in deze velden te filteren.
+1. (Optioneel) Geef het metagegevensbestand op dat u wilt importeren, in CSV-indeling, in het veld **[!UICONTROL Metadata File]** . Geef het CSV-bestand op de locatie van het bronblob en raadpleeg het pad tijdens het configureren van het gereedschap Bulk importeren. Het CSV- dossierformaat dat op dit gebied van verwijzingen wordt voorzien is het zelfde als het Csv- dossierformaat wanneer u [&#x200B; activa meta-gegevens van de Invoer en van de uitvoer in bulk &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=nl-NL). Als u het **Bron dossier van de Schrapping na de invoer** optie selecteert, filterCSV- dossiers of gebruikend **uitsluiten** of **omvatten MIME Type** of **Filter door Weg/Dossier** gebieden. U kunt een reguliere expressie gebruiken om CSV-bestanden in deze velden te filteren.
 
 1. Klik op **[!UICONTROL Save]** om de configuratie op te slaan.
 
@@ -217,13 +217,13 @@ Selecteer de configuratie en klik op **[!UICONTROL Delete]** om de configuratie 
 
 Als u de verbinding met de gegevensbron wilt valideren, selecteert u de configuratie en klikt u op **[!UICONTROL check]** . Als de verbinding tot stand is gebracht, geeft Experience Manager het volgende bericht weer:
 
-![ Bulk het bericht van het Succes van de Invoer ](assets/bulk-import-success-message.png)
+![&#x200B; Bulk het bericht van het Succes van de Invoer &#x200B;](assets/bulk-import-success-message.png)
 
 ### Een testrun aanroepen voor de Bulk Import-taak {#invoke-test-run-bulk-import}
 
 Selecteer de configuratie en klik **[!UICONTROL Dry Run]** om een testrun voor de Bulk-importtaak aan te roepen. Experience Manager geeft de volgende gegevens weer over de Bulk Import-taak:
 
-![ Droog Resultaat van de Looppas ](assets/dry-assets-result.png)
+![&#x200B; Droog Resultaat van de Looppas &#x200B;](assets/dry-assets-result.png)
 
 ### Bestandsnamen verwerken tijdens bulkimport {#filename-handling-bulkimport}
 
@@ -319,7 +319,7 @@ Voer de volgende stappen uit om een eenmalige of terugkerende bulkimport te plan
 1. Selecteer de configuratie en selecteer **[!UICONTROL Schedule]** op de werkbalk.
 1. Stel een eenmalige opname in of voer een uur-, dag- of wekelijks schema in. Klik op **[!UICONTROL Submit]**.
 
-   ![ de bulkingestor van het Programma baan ](assets/bulk-ingest-schedule1.png)
+   ![&#x200B; de bulkingestor van het Programma baan &#x200B;](assets/bulk-ingest-schedule1.png)
 
 
 #### De Assets-doelmap weergeven {#view-assets-target-folder}
@@ -328,9 +328,9 @@ Als u de Assets-doellocatie wilt weergeven waar de elementen worden geïmporteer
 
 #### Het gereedschap Bulkimport uitvoeren {#run-bulk-import-tool}
 
-Na [ het vormen van het Bulk hulpmiddel van de Invoer ](#configure-bulk-ingestor-tool) en naar keuze [ het beheren van het Bulk het hulpmiddelconfiguratie van de Invoer ](#manage-bulk-import-configuration), kunt u de configuratietaak in werking stellen om bulkopname van activa te beginnen.
+Na [&#x200B; het vormen van het Bulk hulpmiddel van de Invoer &#x200B;](#configure-bulk-ingestor-tool) en naar keuze [&#x200B; het beheren van het Bulk het hulpmiddelconfiguratie van de Invoer &#x200B;](#manage-bulk-import-configuration), kunt u de configuratietaak in werking stellen om bulkopname van activa te beginnen.
 
-Om het Bulk proces van de Invoer te beginnen, navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**, selecteer de [ Bulk configuratie van de Invoer ](#configure-bulk-ingestor-tool), en klik dan **[!UICONTROL Run]**. Klik nogmaals op **[!UICONTROL Run]** om te bevestigen.
+Om het Bulk proces van de Invoer te beginnen, navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**, selecteer de [&#x200B; Bulk configuratie van de Invoer &#x200B;](#configure-bulk-ingestor-tool), en klik dan **[!UICONTROL Run]**. Klik nogmaals op **[!UICONTROL Run]** om te bevestigen.
 
 Experience Manager werkt het statuut van de baan aan **Verwerking** bij en aan **succesvol** op succesvolle voltooiing van de baan. Om de ingevoerde activa in Experience Manager te bekijken, klik **Mening Assets**.
 
@@ -342,7 +342,7 @@ Met Experience Manager kunt u de geschiedenis van de bulkimporttaken bekijken. D
 
 Als u de taakgeschiedenis voor een configuratie wilt openen, selecteert u de configuratie en klikt u op **[!UICONTROL Job History]** . Selecteer een baan en klik **Open**.
 
-![ de bulkingestor van het Programma baan ](assets/job-history-bulk-import.png)
+![&#x200B; de bulkingestor van het Programma baan &#x200B;](assets/job-history-bulk-import.png)
 
 Experience Manager geeft de taakgeschiedenis weer. Op de Bulk de pagina van de de baangeschiedenis van de Invoer, kunt u **Schrapping** ook klikken om die baan voor de Bulk configuratie van de Invoer te schrappen.
 
@@ -351,24 +351,24 @@ Experience Manager geeft de taakgeschiedenis weer. Op de Bulk de pagina van de d
 
 Naast de gebruikersinterface van de webbrowser ondersteunt [!DNL Experience Manager] ook andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
 
-* [[!DNL Adobe Asset Link] ](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html) biedt toegang tot elementen van [!DNL Experience Manager] in Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document rechtstreeks vanuit de gebruikersinterface van Adobe Asset Link uploaden naar [!DNL Experience Manager] vanuit deze bureaubladtoepassingen.
-* [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL) vereenvoudigt het werken met activa op Desktop, onafhankelijk op hun dossiertype of inheemse toepassing die hen behandelt. Het is handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
+* [[!DNL Adobe Asset Link] &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html) biedt toegang tot elementen van [!DNL Experience Manager] in Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document rechtstreeks vanuit de gebruikersinterface van Adobe Asset Link uploaden naar [!DNL Experience Manager] vanuit deze bureaubladtoepassingen.
+* [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL) vereenvoudigt het werken met activa op Desktop, onafhankelijk op hun dossiertype of inheemse toepassing die hen behandelt. Het is handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
 
 ## Elementen verwerken bij het uploaden {#process-when-uploaded}
 
 Als u de geüploade elementen extra wilt verwerken, kunt u verwerkingsprofielen toepassen op de uploadmappen. De profielen zijn beschikbaar op de pagina **[!UICONTROL Properties]** van een map in [!DNL Assets] . Een digitaal element zonder extensie of met een onjuiste extensie wordt niet naar wens verwerkt. Wanneer u dergelijke elementen uploadt, gebeurt er bijvoorbeeld niets of wordt een onjuist verwerkingsprofiel toegepast op het element. Gebruikers kunnen de binaire bestanden nog steeds opslaan in de DAM.
 
-![ Eigenschappen van een activa omslag met opties om een verwerkingsprofiel toe te voegen ](assets/assets-folder-properties.png)
+![&#x200B; Eigenschappen van een activa omslag met opties om een verwerkingsprofiel toe te voegen &#x200B;](assets/assets-folder-properties.png)
 
 De volgende tabbladen zijn beschikbaar:
 
-* {de profielen van Meta-gegevens 0} [ laten u standaardmeta-gegevenseigenschappen op activa toepassen die in die omslag worden geupload.](metadata-profiles.md)
-* [ de profielen van de Verwerking ](asset-microservices-configure-and-use.md) laten u meer vertoningen produceren dan door gebrek mogelijk zijn.
+* {de profielen van Meta-gegevens 0} [&#x200B; laten u standaardmeta-gegevenseigenschappen op activa toepassen die in die omslag worden geupload.](metadata-profiles.md)
+* [&#x200B; de profielen van de Verwerking &#x200B;](asset-microservices-configure-and-use.md) laten u meer vertoningen produceren dan door gebrek mogelijk zijn.
 
 Als [!DNL Dynamic Media] is ingeschakeld op uw implementatie, zijn ook de volgende tabbladen beschikbaar:
 
-* [[!DNL Dynamic Media]  de profielen van het Beeld ](dynamic-media/image-profiles.md) laten u specifieke het bebouwen (**[!UICONTROL Smart Cropping]** en pixel het bebouwen) en het scherpen configuratie op de geuploade activa toepassen.
-* [[!DNL Dynamic Media]  Videoprofielen ](dynamic-media/video-profiles.md) laten u specifieke video coderende profielen (resolutie, formaat, parameters) toepassen.
+* [[!DNL Dynamic Media]  de profielen van het Beeld &#x200B;](dynamic-media/image-profiles.md) laten u specifieke het bebouwen (**[!UICONTROL Smart Cropping]** en pixel het bebouwen) en het scherpen configuratie op de geuploade activa toepassen.
+* [[!DNL Dynamic Media]  Videoprofielen &#x200B;](dynamic-media/video-profiles.md) laten u specifieke video coderende profielen (resolutie, formaat, parameters) toepassen.
 
 >[!NOTE]
 >
@@ -378,7 +378,7 @@ Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam w
 
 ## Elementen uploaden of toevoegen met API&#39;s {#upload-using-apis}
 
-De technische details van uploaden APIs en het protocol, en de verbindingen met open-source SDK en steekproefcliënten worden verstrekt in [ activa uploadt ](developer-reference-material-apis.md#asset-upload) sectie van de ontwikkelaarsverwijzing.
+De technische details van uploaden APIs en het protocol, en de verbindingen met open-source SDK en steekproefcliënten worden verstrekt in [&#x200B; activa uploadt &#x200B;](developer-reference-material-apis.md#asset-upload) sectie van de ontwikkelaarsverwijzing.
 
 ## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
 
@@ -386,11 +386,11 @@ De technische details van uploaden APIs en het protocol, en de verbindingen met 
 
 * [!DNL Experience Manager Assets] ondersteunt nu mappen met een groot aantal onderliggende elementen. Als een map meer dan 1000 directe onderliggende items bevat (elementen of submappen), gebruikt de interface van Beheer een asynchroon bijgewerkte index om de inhoud van de map weer te geven. Als dusdanig, zou er een korte vertraging in de zichtbaarheid van pas gecreëerde omslagen en activa (over het algemeen slechts een paar seconden) kunnen zijn en wanneer het openen van zulk een omslag in de Mening Admin, wordt een banner getoond om eind - gebruikers van dit gedrag op de hoogte te brengen, verklarend het volgende: &quot;Deze folder bevat 1000+ punten. Uploads en nieuwe omslagverwezenlijking kunnen worden vertraagd.&quot;
 
-* Wanneer u **[!UICONTROL Replace]** selecteert in het dialoogvenster [!UICONTROL Name Conflict] , wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element. Als [ de Inzichten van Assets ](/help/assets/assets-insights.md) wordt toegelaten om beelden te volgen of met [!DNL Adobe Analytics] te klikken, maakt opnieuw geproduceerde activa identiteitskaart de gegeven-gevangen voor de activa op [!DNL Analytics] ongeldig.
+* Wanneer u **[!UICONTROL Replace]** selecteert in het dialoogvenster [!UICONTROL Name Conflict] , wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element. Als [&#x200B; de Inzichten van Assets &#x200B;](/help/assets/assets-insights.md) wordt toegelaten om beelden te volgen of met [!DNL Adobe Analytics] te klikken, maakt opnieuw geproduceerde activa identiteitskaart de gegeven-gevangen voor de activa op [!DNL Analytics] ongeldig.
 
-* Sommige uploadmethodes houden u niet tegen het uploaden van activa met [ verboden karakters ](#filename-handling) in filenames. De tekens worden vervangen door het symbool `-` .
+* Sommige uploadmethodes houden u niet tegen het uploaden van activa met [&#x200B; verboden karakters &#x200B;](#filename-handling) in filenames. De tekens worden vervangen door het symbool `-` .
 
-* Het uploaden van elementen via de browser ondersteunt alleen platte bestandslijsten en geen geneste maphiërarchieën. Om alle activa binnen genestelde omslag te uploaden, overweeg gebruikend [ Desktop app ](#upload-assets-desktop-clients).
+* Het uploaden van elementen via de browser ondersteunt alleen platte bestandslijsten en geen geneste maphiërarchieën. Om alle activa binnen genestelde omslag te uploaden, overweeg gebruikend [&#x200B; Desktop app &#x200B;](#upload-assets-desktop-clients).
 
 * Met de methode Bulk importeren wordt de volledige mapstructuur geïmporteerd zoals deze op de gegevensbron bestaat. In [!DNL Experience Manager] worden echter alleen de niet-lege mappen gemaakt.
 
@@ -416,7 +416,7 @@ De technische details van uploaden APIs en het protocol, en de verbindingen met 
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Adobe Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL)
->* [ Ongeveer  [!DNL Adobe Asset Link] ](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [[!DNL Adobe Asset Link]  documentatie ](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html)
->* [ Technische verwijzing voor activa uploadt ](developer-reference-material-apis.md#asset-upload)
+>* [[!DNL Adobe Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL)
+>* [&#x200B; Ongeveer  [!DNL Adobe Asset Link] &#x200B;](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link]  documentatie &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html)
+>* [&#x200B; Technische verwijzing voor activa uploadt &#x200B;](developer-reference-material-apis.md#asset-upload)

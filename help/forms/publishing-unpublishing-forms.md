@@ -65,13 +65,13 @@ Middelen kunnen de volgende statussen hebben:
 1. Meld u aan bij de [!DNL AEM Forms] -server.
 1. Gebruik een van de volgende opties om een element te selecteren en te publiceren.
 
-   1. Beweeg de wijzer over een activa en selecteer **[!UICONTROL Publish]** ![ aem6forms_globe ](assets/aem6forms_globe.pngasset.png).
+   1. Beweeg de wijzer over een activa en selecteer **[!UICONTROL Publish]** ![&#x200B; aem6forms_globe &#x200B;](assets/aem6forms_globe.pngasset.png).
    1. Voer een van de volgende handelingen uit en selecteer vervolgens Publish:
 
-      * Als u in de kaartmening bent, selecteer **[!UICONTROL Enter Selection]** ![ aem6forms_check-circle ](assets/aem6forms_check-circle.png), en selecteer de activa. Het element is geselecteerd.
+      * Als u in de kaartmening bent, selecteer **[!UICONTROL Enter Selection]** ![&#x200B; aem6forms_check-circle &#x200B;](assets/aem6forms_check-circle.png), en selecteer de activa. Het element is geselecteerd.
       * Als u zich in de lijstweergave bevindt, schakelt u het selectievakje van een element in. Het element is geselecteerd.
       * Selecteer een element om de details ervan weer te geven.
-      * De eigenschappen van de vertoning van activa door de Eigenschappen van de Mening ![ viewproperties ](assets/viewproperties.png) te tikken.
+      * De eigenschappen van de vertoning van activa door de Eigenschappen van de Mening ![&#x200B; viewproperties &#x200B;](assets/viewproperties.png) te tikken.
 
       >[!NOTE]
       >
@@ -83,7 +83,7 @@ Middelen kunnen de volgende statussen hebben:
    >
    >Voor de Adaptive Forms wordt naast de gerelateerde elementen ook de paginanaam Adaptief formulier weergegeven.
 
-   ![ de bevestigingsdialoog van A met alle verwante activa en middelen ](assets/p4.png)
+   ![&#x200B; de bevestigingsdialoog van A met alle verwante activa en middelen &#x200B;](assets/p4.png)
 
    Een bevestigingsdialoogvenster met alle gerelateerde middelen en middelen.
 
@@ -103,14 +103,14 @@ Voer de volgende stappen uit om alle Correspondence Management-elementen op een 
 
 1. Meld u aan bij de [!DNL AEM Forms] -server.
 1. Selecteer **Adobe Experience Manager** in de globale navigatiebar.
-1. Selecteer ![ hulpmiddelen ](assets/tools.png), en selecteer dan **Forms**.
+1. Selecteer ![&#x200B; hulpmiddelen &#x200B;](assets/tools.png), en selecteer dan **Forms**.
 1. Selecteer **Publish Correspondence Management Assets**.
 
-   ![ publiceren-cmp-activa ](assets/publish-cmp-assets.png)
+   ![&#x200B; publiceren-cmp-activa &#x200B;](assets/publish-cmp-assets.png)
 
    De pagina Publish All Correspondence Management Assets wordt weergegeven en geeft de informatie weer over de laatste keer dat het Publish Correspondence Management Assets-proces is gestart.
 
-   ![ publiceren-last-looppas-details ](assets/publish-last-run-details.png)
+   ![&#x200B; publiceren-last-looppas-details &#x200B;](assets/publish-last-run-details.png)
 
 1. Selecteer **Publish** en, in het bevestig bericht, uitgezocht **O.K.**.
 
@@ -122,29 +122,29 @@ Voer de volgende stappen uit om alle Correspondence Management-elementen op een 
 
 ## Publiceren en verwijderen voor Forms en documenten automatiseren {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-Met [!DNL AEM Forms] kunt u publicatie en verwijdering van middelen plannen voor Forms en Documenten. U kunt het schema opgeven in de Metagegevenseditor. Voor meer informatie over het beheren van vormmeta-gegevens, zie [ het Leiden vormmeta-gegevens ](manage-form-metadata.md).
+Met [!DNL AEM Forms] kunt u publicatie en verwijdering van middelen plannen voor Forms en Documenten. U kunt het schema opgeven in de Metagegevenseditor. Voor meer informatie over het beheren van vormmeta-gegevens, zie [&#x200B; het Leiden vormmeta-gegevens &#x200B;](manage-form-metadata.md).
 
 Voer de volgende stappen uit om de datum en het tijdstip van publicatie en het verwijderen van de publicatie van Forms &amp; Documents-elementen te plannen:
 
 1. Selecteer een element en selecteer **[!UICONTROL View Properties]** . De pagina Eigenschappen van metagegevens wordt geopend.
-1. In de pagina van de Eigenschappen van Meta-gegevens, selecteer **[!UICONTROL Advanced]**, en selecteer dan **[!UICONTROL Edit]** ![ illustrator_penciltool_cur_edit_2_17 ](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. In de pagina van de Eigenschappen van Meta-gegevens, selecteer **[!UICONTROL Advanced]**, en selecteer dan **[!UICONTROL Edit]** ![&#x200B; illustrator_penciltool_cur_edit_2_17 &#x200B;](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. Selecteer in de velden **[!UICONTROL Publish On Time]** en **[!UICONTROL Publish Off Time]** de datum en tijd.\
-   Selecteer **[!UICONTROL Done]** ![ aem6forms_check ](assets/aem6forms_check.png).
+   Selecteer **[!UICONTROL Done]** ![&#x200B; aem6forms_check &#x200B;](assets/aem6forms_check.png).
 
 ## Een element verwijderen {#unpublish-an-asset}
 
-1. Selecteer een activa die wordt gepubliceerd en **[!UICONTROL Unpublish]** ![ uitgezocht unpublish ](assets/unpublish.png).
+1. Selecteer een activa die wordt gepubliceerd en **[!UICONTROL Unpublish]** ![&#x200B; uitgezocht unpublish &#x200B;](assets/unpublish.png).
 1. Gebruik een van de volgende opties om elementen te selecteren en de publicatie ervan ongedaan te maken.
 
-   1. Verplaats de wijzer over een activa en selecteer **[!UICONTROL Unpublish]** ![ unpublish ](assets/unpublish.png).
+   1. Verplaats de wijzer over een activa en selecteer **[!UICONTROL Unpublish]** ![&#x200B; unpublish &#x200B;](assets/unpublish.png).
    1. Voer een van de volgende handelingen uit en selecteer vervolgens Publiceren ongedaan maken:
 
-      * Als u in de kaartmening bent, selecteer **[!UICONTROL Enter Selection]** ![ aem6forms_check-circle ](assets/aem6forms_check-circle.png), en selecteer de activa. Het element is geselecteerd.
+      * Als u in de kaartmening bent, selecteer **[!UICONTROL Enter Selection]** ![&#x200B; aem6forms_check-circle &#x200B;](assets/aem6forms_check-circle.png), en selecteer de activa. Het element is geselecteerd.
 
-      * Als u in de lijstmening bent, houd over een activa en selecteer ![ selectassetcheckmark ](assets/selectassetcheckmark.png). Het element is geselecteerd.
+      * Als u in de lijstmening bent, houd over een activa en selecteer ![&#x200B; selectassetcheckmark &#x200B;](assets/selectassetcheckmark.png). Het element is geselecteerd.
 
       * Selecteer een element om de details ervan weer te geven.
-      * De eigenschappen van de vertoning van activa door de Eigenschappen van de Mening ![ viewproperties ](assets/viewproperties.png) te tikken.
+      * De eigenschappen van de vertoning van activa door de Eigenschappen van de Mening ![&#x200B; viewproperties &#x200B;](assets/viewproperties.png) te tikken.
 
 1. Wanneer het Unpublish-proces wordt gestart, wordt een bevestigingsvenster weergegeven. Selecteer **[!UICONTROL Unpublish]** .
 
@@ -160,7 +160,7 @@ Elke keer dat u een element of brief publiceert nadat u deze hebt bewerkt, wordt
 >
 >Keer geen brief aan een laatst gepubliceerde staat terug als om het even welk afhankelijk element dat in die gepubliceerde brief wordt gebruikt van het systeem wordt geschrapt.
 
-1. Selecteer een activa en selecteer **[!UICONTROL Revert to Previously Published Version]** ![ reverttopreviousslypublishedversion ](assets/reverttopreviouslypublishedversion.png).
+1. Selecteer een activa en selecteer **[!UICONTROL Revert to Previously Published Version]** ![&#x200B; reverttopreviousslypublishedversion &#x200B;](assets/reverttopreviouslypublishedversion.png).
 1. Voordat het element wordt teruggedraaid, verschijnt er een bevestigingsvenster. Selecteer **[!UICONTROL Revert]** .
 
    Het element of de letter wordt teruggedraaid naar de eerder gepubliceerde versie.
@@ -171,17 +171,17 @@ Elke keer dat u een element of brief publiceert nadat u deze hebt bewerkt, wordt
 >
 >Als u een element verwijdert, wordt dit verwijderd uit de publicatie-instantie. Wanneer u elementen verwijdert, verwijdert u ook de versiehistorie, met uitzondering van de basisversie.
 
-1. Selecteer een activa en selecteer **[!UICONTROL Delete]** ![ schrapping ](assets/delete.png).
+1. Selecteer een activa en selecteer **[!UICONTROL Delete]** ![&#x200B; schrapping &#x200B;](assets/delete.png).
 
    >[!NOTE]
    >
-   >De optie van de Schrapping is ook beschikbaar wanneer u activa details door activa te tikken of u toont de eigenschappen van een activa door de viewproperties van de Mening ![ te tikken ](assets/viewproperties.png).
+   >De optie van de Schrapping is ook beschikbaar wanneer u activa details door activa te tikken of u toont de eigenschappen van een activa door de viewproperties van de Mening ![&#x200B; te tikken &#x200B;](assets/viewproperties.png).
 
 1. Voordat het element wordt verwijderd, verschijnt er een bevestigingsvenster. Selecteer **[!UICONTROL Delete]** .
 
    >[!NOTE]
    >
-   >Alleen het geselecteerde element wordt verwijderd en de afhankelijke elementen worden niet verwijderd. Om verwijzingen van een activa te controleren, selecteer ![ verwijzingen ](assets/references.png) en selecteer dan een activa.
+   >Alleen het geselecteerde element wordt verwijderd en de afhankelijke elementen worden niet verwijderd. Om verwijzingen van een activa te controleren, selecteer ![&#x200B; verwijzingen &#x200B;](assets/references.png) en selecteer dan een activa.
    >
    >
    >Als het element dat u wilt verwijderen, een onderliggend element van een ander element is, wordt het niet verwijderd. Als u een dergelijk element wilt verwijderen, verwijdert u verwijzingen van dit element uit andere elementen en probeert u het vervolgens opnieuw.

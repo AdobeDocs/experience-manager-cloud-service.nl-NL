@@ -28,7 +28,7 @@ Alvorens Inhoudsfragmenten te gebruiken, moet u **Browser van de Configuratie** 
 >Als u niet **Modellen van het Fragment van de Inhoud** toelaat:
 >
 >* **creeer** optie is niet beschikbaar voor het creëren van modellen.
->* u kunt niet [ de configuratie van Plaatsen selecteren om het verwante eindpunt ](/help/headless/graphql-api/graphql-endpoint.md) tot stand te brengen.
+>* u kunt niet [&#x200B; de configuratie van Plaatsen selecteren om het verwante eindpunt &#x200B;](/help/headless/graphql-api/graphql-endpoint.md) tot stand te brengen.
 
 U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schakelen:
 
@@ -37,15 +37,15 @@ U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schak
 
 ### Functionaliteit van inhoudsfragment inschakelen in configuratievenster {#enable-content-fragment-functionality-in-configuration-browser}
 
-Om bepaalde [ functionaliteit van het Fragment van de Inhoud ](#creating-a-content-fragment-model) te gebruiken, moet u **&#x200B;**&#x200B;eerst hen als **Browser van de Configuratie** toelaten:
+Om bepaalde [&#x200B; functionaliteit van het Fragment van de Inhoud &#x200B;](#creating-a-content-fragment-model) te gebruiken, moet u **&#x200B;**&#x200B;eerst hen als **Browser van de Configuratie** toelaten:
 
 >[!NOTE]
 >
->Zie [ Browser van de Configuratie ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Zie [&#x200B; Browser van de Configuratie &#x200B;](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
->[ Subconfiguration ](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (een configuratie die binnen een andere configuratie wordt genest) wordt volledig gesteund voor gebruik met de Fragmenten van de Inhoud, Modellen van het Fragment van de Inhoud en de vragen van GraphQL.
+>[&#x200B; Subconfiguration &#x200B;](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (een configuratie die binnen een andere configuratie wordt genest) wordt volledig gesteund voor gebruik met de Fragmenten van de Inhoud, Modellen van het Fragment van de Inhoud en de vragen van GraphQL.
 >
 >Ik wil alleen opmerken dat:
 >
@@ -63,13 +63,13 @@ Om bepaalde [ functionaliteit van het Fragment van de Inhoud ](#creating-a-conte
 
    1. Specificeer a **Titel**.
    1. De **Naam** wordt de knoopnaam in de bewaarplaats.
-      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [ AEM noemende overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md).
+      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [&#x200B; AEM noemende overeenkomsten &#x200B;](/help/implementing/developing/introduction/naming-conventions.md).
       * U kunt deze desgewenst aanpassen.
    1. Om hun gebruik toe te laten selecteer
       * **Modellen van contentfragmenten**
       * **GraphQL Blijven Vragen**
 
-      ![ bepaalt configuratie ](assets/cfm-conf-01.png)
+      ![&#x200B; bepaalt configuratie &#x200B;](assets/cfm-conf-01.png)
 
 1. Selecteer **creeer** om de definitie te bewaren.
 
@@ -81,4 +81,4 @@ Wanneer de configuratie **globale** voor de functionaliteit van het inhoudsfragm
 
 Als u andere configuraties (behalve algemene configuraties) wilt gebruiken in een vergelijkbare Assets-map, moet u de verbinding definiëren. Deze verbinding wordt gedaan door de aangewezen **Configuratie** in het **Cloud Servicen** lusje van de **Eigenschappen van de Omslag** van de aangewezen omslag te selecteren.
 
-![ pas configuratie ](assets/cfm-conf-02.png) toe
+![&#x200B; pas configuratie &#x200B;](assets/cfm-conf-02.png) toe

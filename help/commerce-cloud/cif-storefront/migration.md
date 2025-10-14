@@ -19,11 +19,11 @@ Deze handleiding helpt u de gebieden te identificeren die u moet bijwerken voor 
 
 ## CIF-invoegtoepassing {#cif-add-on}
 
-Voor Experience Manager as a Cloud Service is de CIF add-on de enige ondersteunde handelsintegratieoplossing voor Adobe Commerce en handelsoplossingen van derden. De invoegtoepassing CIF wordt automatisch geïmplementeerd voor klanten op Experience Manager as a Cloud Service. Handmatige implementatie is niet nodig. Zie [ Begonnen het worden met AEM Commerce as a Cloud Service.](/help/commerce-cloud/cif-storefront/getting-started.md)
+Voor Experience Manager as a Cloud Service is de CIF add-on de enige ondersteunde handelsintegratieoplossing voor Adobe Commerce en handelsoplossingen van derden. De invoegtoepassing CIF wordt automatisch geïmplementeerd voor klanten op Experience Manager as a Cloud Service. Handmatige implementatie is niet nodig. Zie [&#x200B; Begonnen het worden met AEM Commerce as a Cloud Service.](/help/commerce-cloud/cif-storefront/getting-started.md)
 
-Om projecten te steunen die CIF Adobe opstellen verstrekt [ AEM CIF Core Componenten.](https://github.com/adobe/aem-core-cif-components)
+Om projecten te steunen die CIF Adobe opstellen verstrekt [&#x200B; AEM CIF Core Componenten.](https://github.com/adobe/aem-core-cif-components)
 
-CIF toe:voegen-op is beschikbaar voor AEM 6.5 evenals via het [ portaal van de Distributie van de Software.](/help/implementing/developing/tools/package-manager.md) Het is compatibel en biedt dezelfde functies als de CIF-invoegtoepassing voor Experience Manager as a Cloud Service. Aanpassingen zijn niet vereist.
+CIF toe:voegen-op is beschikbaar voor AEM 6.5 evenals via het [&#x200B; portaal van de Distributie van de Software.](/help/implementing/developing/tools/package-manager.md) Het is compatibel en biedt dezelfde functies als de CIF-invoegtoepassing voor Experience Manager as a Cloud Service. Aanpassingen zijn niet vereist.
 
 Klassieke CIF met zijn afhankelijkheden is niet meer beschikbaar. Code die afhankelijk is van deze CIF-versie met behulp van `com.adobe.cq.commerce.api` Java API&#39;s moet worden aangepast aan de CIF-invoegtoepassing en de bijbehorende principes.
 
@@ -31,7 +31,7 @@ De eerder beschikbare CIF-connector kan niet meer worden geïnstalleerd. Code di
 
 ## Projectstructuur {#project-structure}
 
-Leer de [ Structuur van het Project van AEM ](/help/implementing/developing/introduction/aem-project-content-package-structure.md) en de kenmerken van AEM as a Cloud Service. Pas de projectinstelling aan op de AEM as a Cloud Service-lay-out.
+Leer de [&#x200B; Structuur van het Project van AEM &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md) en de kenmerken van AEM as a Cloud Service. Pas de projectinstelling aan op de AEM as a Cloud Service-lay-out.
 
 Vergeleken met AEM 6.5-implementaties zijn er twee belangrijke verschillen:
 
@@ -40,7 +40,7 @@ Vergeleken met AEM 6.5-implementaties zijn er twee belangrijke verschillen:
 
 >[!TIP]
 >
->Controle uit het [ project van de Opslag van de Verwijzing van AEM Venia ](https://github.com/adobe/aem-cif-guides-venia) op GitHub. Dit project biedt Maven-profielen voor AEM as a Cloud Service en on-premise implementaties die rekening houden met de verschillende raamvoorwaarden.
+>Controle uit het [&#x200B; project van de Opslag van de Verwijzing van AEM Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) op GitHub. Dit project biedt Maven-profielen voor AEM as a Cloud Service en on-premise implementaties die rekening houden met de verschillende raamvoorwaarden.
 
 ## Productcatalogus {#product-catalog}
 
@@ -48,7 +48,7 @@ Het importeren van productcatalogusgegevens wordt niet meer ondersteund. Het geb
 
 >[!TIP]
 >
->Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [ open-source van Magento.](https://business.adobe.com/products/magento/open-source.html)
+>Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [&#x200B; open-source van Magento.](https://business.adobe.com/products/magento/open-source.html)
 
 ## Ervaringen met productcatalogi met AEM-rendering {#aem-rendering}
 

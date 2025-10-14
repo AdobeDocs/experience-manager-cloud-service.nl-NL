@@ -17,7 +17,7 @@ Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp va
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
-[ nu dat u een configuratie ](create-configuration.md) hebt gecreeerd, kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
+[&#x200B; nu dat u een configuratie &#x200B;](create-configuration.md) hebt gecreeerd, kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
 
 Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u maakt en beheert in AEM. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een model voor inhoudsfragmenten dat u definieert en dat hen bij het maken van inhoud begeleidt.
 
@@ -28,21 +28,21 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 1. Logboek in AEM as a Cloud Service en van het belangrijkste menu selecteert **Hulpmiddelen**, **Algemeen**, **Modellen van het Fragment van de Inhoud**.
 1. Selecteer de map die u hebt gemaakt door uw configuratie te maken.
 
-   ![ de modellenomslag ](../assets/models-folder.png)
+   ![&#x200B; de modellenomslag &#x200B;](../assets/models-folder.png)
 1. Selecteer **creeer**.
 1. Verstrek a **ModelTitel**, **Markeringen** en **Beschrijving**. U kunt ook selecteren/deselecteren **laat model** toe om te controleren of het model onmiddellijk op verwezenlijking wordt toegelaten.
 
-   ![ creeer een model ](../assets/models-create.png)
+   ![&#x200B; creeer een model &#x200B;](../assets/models-create.png)
 1. In het bevestigingsvenster, uitgezochte **Open** om uw model te vormen.
 
-   ![ Bevestigingsvenster ](../assets/models-confirmation.png)
+   ![&#x200B; Bevestigingsvenster &#x200B;](../assets/models-confirmation.png)
 1. Gebruikend de **ModelRedacteur van het Fragment van de Inhoud**, bouwt uw Model van het Fragment van de Inhoud door gebieden van de **3&rbrace; kolom van de Types van Gegevens te slepen en te laten vallen.**
 
-   ![ belemmering en dalingsgebieden ](../assets/models-drag-and-drop.png)
+   ![&#x200B; belemmering en dalingsgebieden &#x200B;](../assets/models-drag-and-drop.png)
 
 1. Nadat u een veld hebt geplaatst, moet u de eigenschappen ervan configureren. De redacteur zal automatisch aan het **lusje van Eigenschappen** voor het toegevoegde gebied schakelen waar u de verplichte gebieden kunt verstrekken.
 
-   ![ vorm eigenschappen ](../assets/models-configure-properties.png)
+   ![&#x200B; vorm eigenschappen &#x200B;](../assets/models-configure-properties.png)
 
 1. Wanneer u wordt gebeëindigd bouwend uw model, uitgezocht **sparen**.
 
@@ -53,22 +53,22 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 1. Als niet reeds toegelaten, moet het model **&#x200B;**&#x200B;worden toegelaten om het te gebruiken.
    1. Selecteer het model u creeerde en selecteer dan **toelaten**.
 
-      ![ toelatend het model ](../assets/models-enable.png)
+      ![&#x200B; toelatend het model &#x200B;](../assets/models-enable.png)
    1. Bevestig toelatend het model door te tikken of **te klikken laat** in de bevestigingsdialoog toe.
 
-      ![ toelatend bevestigingsdialoog ](../assets/models-enabling.png)
+      ![&#x200B; toelatend bevestigingsdialoog &#x200B;](../assets/models-enabling.png)
 1. Het model is nu ingeschakeld en klaar voor gebruik.
 
-   ![ toegelaten Model ](../assets/models-enabled.png)
+   ![&#x200B; toegelaten Model &#x200B;](../assets/models-enabled.png)
 
 De **ModelRedacteur van het Fragment van de Inhoud** steunt vele verschillende gegevenstype zoals eenvoudige tekstgebieden, activaverwijzingen, verwijzingen naar andere modellen, en gegevens JSON.
 
-U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfragmenten. Gebruik [ configuraties ](create-configuration.md) om uw modellen te organiseren.
+U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfragmenten. Gebruik [&#x200B; configuraties &#x200B;](create-configuration.md) om uw modellen te organiseren.
 
 ## Volgende stappen {#next-steps}
 
-Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [ creeert omslagen waar u de fragmenten zelf ](create-assets-folder.md) zult opslaan.
+Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [&#x200B; creeert omslagen waar u de fragmenten zelf &#x200B;](create-assets-folder.md) zult opslaan.
 
 >[!TIP]
 >
->Voor volledige details over de Modellen van het Fragment van de Inhoud, zie de [ documentatie van de Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+>Voor volledige details over de Modellen van het Fragment van de Inhoud, zie de [&#x200B; documentatie van de Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).

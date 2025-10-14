@@ -17,7 +17,7 @@ ht-degree: 13%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Een verzameling is een set elementen binnen Adobe Experience Manager Assets. Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
@@ -40,7 +40,7 @@ Als u **[!UICONTROL Collections]** wilt openen, selecteert u het Experience Mana
 
 ## Een verzameling maken {#create-a-collection}
 
-U kunt een inzameling of met [ statische verwijzingen ](#create-a-collection-with-static-references) tot stand brengen of op a [ onderzoek op criteria-gebaseerde filter ](#create-a-smart-collection) worden gebaseerd. U kunt ook een verzameling maken van een lichtbak.
+U kunt een inzameling of met [&#x200B; statische verwijzingen &#x200B;](#create-a-collection-with-static-references) tot stand brengen of op a [&#x200B; onderzoek op criteria-gebaseerde filter &#x200B;](#create-a-smart-collection) worden gebaseerd. U kunt ook een verzameling maken van een lichtbak.
 
 ### Een verzameling met statische verwijzingen maken {#create-a-collection-with-static-references}
 
@@ -62,7 +62,7 @@ U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzam
    >
    >Met Experience Manager Assets kunt u controletaken voor een verzameling maken, vergelijkbaar met de manier waarop u overzichtstaken voor een map met middelen maakt.
 
-   Navigeer naar de gebruikersinterface van Assets om elementen aan de verzameling toe te voegen. Voor details, zie [ activa aan een inzameling ](#add-assets-to-a-collection) toevoegen.
+   Navigeer naar de gebruikersinterface van Assets om elementen aan de verzameling toe te voegen. Voor details, zie [&#x200B; activa aan een inzameling &#x200B;](#add-assets-to-a-collection) toevoegen.
 
 ### Verzamelingen maken met dropzone {#create-collections-using-dropzone}
 
@@ -106,7 +106,7 @@ U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of ma
 
 ## Een slimme verzameling bewerken {#edit-a-smart-collection}
 
-De slimme inzamelingen worden gebouwd door een onderzoek te bewaren zodat kunt u hun inhoud veranderen door de onderzoeksparameters van het [ bewaarde onderzoek ](#saved-searches) te wijzigen.
+De slimme inzamelingen worden gebouwd door een onderzoek te bewaren zodat kunt u hun inhoud veranderen door de onderzoeksparameters van het [&#x200B; bewaarde onderzoek &#x200B;](#saved-searches) te wijzigen.
 
 1. Selecteer in de Assets-gebruikersinterface het pictogram **[!UICONTROL Search]** op de werkbalk.
 1. Selecteer de `Enter` -toets terwijl de cursor in het vak Onderzoek staat.
@@ -142,7 +142,7 @@ U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functi
 
 ## Zoeken {#searching}
 
-De eigenschap van het Onderzoek binnen Inzamelingen steunt zowel [ Onderzoek naar inzamelingen ](#search-collections) als [ Onderzoek naar activa binnen een Inzameling ](#search-within-collections).
+De eigenschap van het Onderzoek binnen Inzamelingen steunt zowel [&#x200B; Onderzoek naar inzamelingen &#x200B;](#search-collections) als [&#x200B; Onderzoek naar activa binnen een Inzameling &#x200B;](#search-within-collections).
 
 ### Verzamelingen zoeken {#search-collections}
 
@@ -171,7 +171,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
 
    >[!NOTE]
    >
-   >U kunt Slimme inzamelingen ook schrappen door [ bewaarde onderzoeken ](#saved-searches) te schrappen.
+   >U kunt Slimme inzamelingen ook schrappen door [&#x200B; bewaarde onderzoeken &#x200B;](#saved-searches) te schrappen.
 
 ## Een verzameling downloaden {#download-a-collection}
 
@@ -191,7 +191,7 @@ Gebruik de Schema-editor om de pagina met metagegevens [!UICONTROL Properties] a
 
 >[!NOTE]
 >
->De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk aan [ bulkupdate de meta-gegevens na het zoeken ](/help/assets/search-assets.md#metadata-updates).
+>De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk aan [&#x200B; bulkupdate de meta-gegevens na het zoeken &#x200B;](/help/assets/search-assets.md#metadata-updates).
 
 1. Selecteer in de verzamelingsconsole de verzamelingen die u wilt bewerken.
 1. Selecteer op de werkbalk **[!UICONTROL Properties]** om de pagina [!UICONTROL Properties] voor de geselecteerde verzamelingen te openen.
@@ -237,7 +237,7 @@ Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt.
 >
 >U kunt slimme verzamelingen op dezelfde manier delen als statische verzamelingen.
 
-Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerken. Voor details, zie [ een slimme inzameling ](#edit-a-smart-collection) uitgeven.
+Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerken. Voor details, zie [&#x200B; een slimme inzameling &#x200B;](#edit-a-smart-collection) uitgeven.
 
 Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
@@ -276,4 +276,4 @@ U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verza
 
 >[!MORELIKETHIS]
 >
->* [ creeer een overzichtstaak voor Inzamelingen ](/help/assets/bulk-approval.md)
+>* [&#x200B; creeer een overzichtstaak voor Inzamelingen &#x200B;](/help/assets/bulk-approval.md)

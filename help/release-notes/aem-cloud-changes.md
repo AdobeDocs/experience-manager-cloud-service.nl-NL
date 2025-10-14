@@ -81,11 +81,11 @@ Naast wijzigingen in de map `/home` op de publicatielijst zijn directe wijziging
 
 ## Aangepaste uitvoermodi zijn niet toegestaan {#custom-runmodes}
 
-Aanvullende of aangepaste uitvoermodi zijn niet mogelijk in AEM Cloud Service. Voor een lijst van looppas wijzen die uit-van-de-doos voor de Dienst van de Wolk AEM worden verstrekt, zie [ het Opstellen aan AEM as a Cloud Service ](/help/implementing/deploying/overview.md#runmodes).
+Aanvullende of aangepaste uitvoermodi zijn niet mogelijk in AEM Cloud Service. Voor een lijst van looppas wijzen die uit-van-de-doos voor de Dienst van de Wolk AEM worden verstrekt, zie [&#x200B; het Opstellen aan AEM as a Cloud Service &#x200B;](/help/implementing/deploying/overview.md#runmodes).
 
 ## Verwijderen van replicatieagents en gerelateerde wijzigingen {#replication-agents}
 
-In de Dienst van de Wolk AEM, wordt de inhoud gepubliceerd gebruikend [ het Verdelen van de Distributie van de Inhoud ](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande Projecten van AEM zouden kunnen beïnvloeden:
+In de Dienst van de Wolk AEM, wordt de inhoud gepubliceerd gebruikend [&#x200B; het Verdelen van de Distributie van de Inhoud &#x200B;](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande Projecten van AEM zouden kunnen beïnvloeden:
 
 * Aangepaste workflows die bijvoorbeeld inhoud doorsturen naar replicatieagents van voorvertoningsservers.
 * Aanpassing aan replicatieagenten om inhoud om te zetten.
@@ -105,4 +105,4 @@ Voor projecten die van AMS of een op-gebouw installatie overgaan, adviseert Adob
 
 ## Afhandeling en levering van bedrijfsmiddelen {#asset-handling}
 
-Het uploaden, verwerken en downloaden van middelen wordt in [!DNL Experience Manager Assets] geoptimaliseerd als een [!DNL Cloud Service] . AEM [!DNL Assets] is nu efficiënter, maakt meer schaling mogelijk en kunt u sneller uploaden en downloaden. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Voor een lijst van veranderingen en voor pariteit met [!DNL Experience Manager] 6.5 eigenschappen, zie de [ veranderingen in  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Het uploaden, verwerken en downloaden van middelen wordt in [!DNL Experience Manager Assets] geoptimaliseerd als een [!DNL Cloud Service] . AEM [!DNL Assets] is nu efficiënter, maakt meer schaling mogelijk en kunt u sneller uploaden en downloaden. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Voor een lijst van veranderingen en voor pariteit met [!DNL Experience Manager] 6.5 eigenschappen, zie de [&#x200B; veranderingen in  [!DNL Assets]](/help/assets/assets-cloud-changes.md).

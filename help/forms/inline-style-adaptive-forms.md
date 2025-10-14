@@ -16,21 +16,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
-U kunt de algemene verschijning en de stijl van een Aangepaste Vorm bepalen door stijlen te specificeren gebruikend [ themaredacteur ](themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke componenten van Adaptief formulier en de wijzigingen direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
+U kunt de algemene verschijning en de stijl van een Aangepaste Vorm bepalen door stijlen te specificeren gebruikend [&#x200B; themaredacteur &#x200B;](themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke componenten van Adaptief formulier en de wijzigingen direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
 
 ## Inline CSS-eigenschappen toepassen {#apply-inline-css-properties}
 
 Inline stijlen toevoegen aan een component:
 
-1. Open het formulier in de formulierbuilder en wijzig de modus in opmaakmodus. Om de wijze aan het stileren wijze, op de paginagoolbar te veranderen, selecteer ![ canvas-drop-down ](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
-1. Selecteer een component in de pagina, en selecteer uitgeven knoop ![ uitgeven-knoop ](assets/edit.svg). Stijleigenschappen worden geopend in de zijbalk.
+1. Open het formulier in de formulierbuilder en wijzig de modus in opmaakmodus. Om de wijze aan het stileren wijze, op de paginagoolbar te veranderen, selecteer ![&#x200B; canvas-drop-down &#x200B;](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
+1. Selecteer een component in de pagina, en selecteer uitgeven knoop ![&#x200B; uitgeven-knoop &#x200B;](assets/edit.svg). Stijleigenschappen worden geopend in de zijbalk.
 
    U kunt ook componenten selecteren in de boomstructuur van de formulierhiërarchie in het zijpaneel. De boomstructuur in de formulierhiërarchie is beschikbaar als formulierobjecten op de zijbalk.
 
@@ -54,7 +54,7 @@ Inline stijlen toevoegen aan een component:
 
 In de volgende afbeeldingen wordt een tekstveld weergegeven voor- en nadat er inline stijlen op zijn toegepast.
 
-![ de vakje van de Tekst component alvorens het gealigneerde stileren wordt toegepast ](assets/no-style.png)
+![&#x200B; de vakje van de Tekst component alvorens het gealigneerde stileren wordt toegepast &#x200B;](assets/no-style.png)
 
 Component van tekstvak voordat inline-stijleigenschappen worden toegepast
 
@@ -101,7 +101,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
  </tbody>
 </table>
 
-![ het vakje van de Tekst stijl na het gealigneerde stileren wordt toegepast ](assets/applied-style.png)
+![&#x200B; het vakje van de Tekst stijl na het gealigneerde stileren wordt toegepast &#x200B;](assets/applied-style.png)
 
 Component van tekstvak na toepassen van inline-stijleigenschappen
 
@@ -113,9 +113,9 @@ Na de bovenstaande stappen kunt u andere componenten selecteren en opmaken, zoal
 
 ## Stijlen kopiëren en plakken {#copy-paste-styles}
 
-U kunt ook een stijl van de ene component naar een andere component in een adaptief formulier kopiëren en plakken. Op de **[!UICONTROL Style]** wijze, selecteer de component en selecteer het pictogram van het Exemplaar ![ Exemplaar ](assets/property-copy-icon.svg).
+U kunt ook een stijl van de ene component naar een andere component in een adaptief formulier kopiëren en plakken. Op de **[!UICONTROL Style]** wijze, selecteer de component en selecteer het pictogram van het Exemplaar ![&#x200B; Exemplaar &#x200B;](assets/property-copy-icon.svg).
 
-Selecteer de andere component van het zelfde type en selecteer het pictogram van het Deeg ![ Exemplaar ](assets/Smock_Paste_18_N.svg) om de gekopieerde stijl te kleven. U kunt het Duidelijke pictogram van de Stijl ook selecteren ![ Exemplaar ](assets/clear-style-icon.svg) om de toegepaste stijl te ontruimen.
+Selecteer de andere component van het zelfde type en selecteer het pictogram van het Deeg ![&#x200B; Exemplaar &#x200B;](assets/Smock_Paste_18_N.svg) om de gekopieerde stijl te kleven. U kunt het Duidelijke pictogram van de Stijl ook selecteren ![&#x200B; Exemplaar &#x200B;](assets/clear-style-icon.svg) om de toegepaste stijl te ontruimen.
 
 ## Stijlen instellen voor verschillende statussen van een component {#set-styles-for-states}
 
@@ -123,17 +123,17 @@ U kunt stijlen instellen voor verschillende toestanden van een componenttype. De
 
 Stijl definiëren voor een status van een component:
 
-1. Op de **[!UICONTROL Style]** wijze, selecteer de component en selecteer het Edit pictogram ![ uitgeven ](assets/Smock_Edit_18_N.svg).
+1. Op de **[!UICONTROL Style]** wijze, selecteer de component en selecteer het Edit pictogram ![&#x200B; uitgeven &#x200B;](assets/Smock_Edit_18_N.svg).
 
 1. Selecteer de status voor de component met de vervolgkeuzelijst **[!UICONTROL State]** .
 
-   ![ Uitgezochte staat ](assets/select-state.png)
+   ![&#x200B; Uitgezochte staat &#x200B;](assets/select-state.png)
 
-1. Bepaal het stileren voor de geselecteerde staat van de component en selecteer ![ sparen ](assets/save_icon.svg) om de eigenschappen te bewaren.
+1. Bepaal het stileren voor de geselecteerde staat van de component en selecteer ![&#x200B; sparen &#x200B;](assets/save_icon.svg) om de eigenschappen te bewaren.
 
 U kunt ook de status van succes en fout simuleren. Selecteer het pictogram Uitvouwen om de opties **[!UICONTROL Simulate Success]** en **[!UICONTROL Simulate Error]** weer te geven.
 
-![ Simuleer staten ](assets/simulate-states.png)
+![&#x200B; Simuleer staten &#x200B;](assets/simulate-states.png)
 
 
 ## Zie ook {#see-also}

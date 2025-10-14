@@ -24,11 +24,11 @@ Om AEM beheerders toe te staan om plaatsen snel tot stand te brengen die aan bed
 
 ## Aanvullende bronnen {#additional-resources}
 
-Omdat [ plaatsverwezenlijking ](/help/sites-cloud/administering/site-creation/create-site.md) over het algemeen de verantwoordelijkheid van de AEM beheerder is, zie de beleidsdocumentatie voor meer details bij het aanpassen van plaatsmalplaatjes en thema&#39;s.
+Omdat [&#x200B; plaatsverwezenlijking &#x200B;](/help/sites-cloud/administering/site-creation/create-site.md) over het algemeen de verantwoordelijkheid van de AEM beheerder is, zie de beleidsdocumentatie voor meer details bij het aanpassen van plaatsmalplaatjes en thema&#39;s.
 
-* [ Malplaatjes van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md) - leer hoe AEM plaatssjablonen kunnen worden gebruikt om plaatsstructuur en aanvankelijke inhoud vooraf te bepalen om u toe te staan om nieuwe plaatsen snel tot stand te brengen.
-* [ Thema&#39;s van de Plaats ](/help/sites-cloud/administering/site-creation/site-themes.md) - leer hoe AEM plaatsthema&#39;s kunnen worden gebruikt om de stijl en het ontwerp van uw plaats aan te passen.
+* [&#x200B; Malplaatjes van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/site-templates.md) - leer hoe AEM plaatssjablonen kunnen worden gebruikt om plaatsstructuur en aanvankelijke inhoud vooraf te bepalen om u toe te staan om nieuwe plaatsen snel tot stand te brengen.
+* [&#x200B; Thema&#39;s van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/site-themes.md) - leer hoe AEM plaatsthema&#39;s kunnen worden gebruikt om de stijl en het ontwerp van uw plaats aan te passen.
 
 >[!TIP]
 >
->Een beschrijving van begin tot eind van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in de [ Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md) worden gevonden.
+>Een beschrijving van begin tot eind van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in de [&#x200B; Snelle Reis van de Aanmaak van de Plaats &#x200B;](/help/journey-sites/quick-site/overview.md) worden gevonden.

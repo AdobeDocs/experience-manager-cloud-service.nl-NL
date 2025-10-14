@@ -18,7 +18,7 @@ Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw
 
 >[!NOTE]
 >
->Het werken met ondersteuning voor meerdere sites voor doelgerichte inhoud is een geavanceerde functie. Om deze eigenschap te gebruiken, zou u met [ Meerdere Manager van de Plaats ](/help/sites-cloud/administering/msm/overview.md) en de [ integratie van Adobe Target ](/help/sites-cloud/integrating/integrating-adobe-target.md) met AEM vertrouwd moeten zijn.
+>Het werken met ondersteuning voor meerdere sites voor doelgerichte inhoud is een geavanceerde functie. Om deze eigenschap te gebruiken, zou u met [&#x200B; Meerdere Manager van de Plaats &#x200B;](/help/sites-cloud/administering/msm/overview.md) en de [&#x200B; integratie van Adobe Target &#x200B;](/help/sites-cloud/integrating/integrating-adobe-target.md) met AEM vertrouwd moeten zijn.
 
 In dit document wordt het volgende beschreven:
 
@@ -29,9 +29,9 @@ In dit document wordt het volgende beschreven:
 
 Als u wilt instellen hoe uw sites gepersonaliseerde inhoud delen, moet u de volgende stappen uitvoeren:
 
-1. [ creeer een nieuw gebied ](#creating-new-areas) of [ creeer een gebied als levende exemplaar ](#creating-new-areas). Een gebied omvat alle activiteiten die voor een *gebied* van de pagina beschikbaar zijn; namelijk de plaats op de pagina waar de component wordt gericht. Als u een nieuw gebied maakt, wordt een leeg gebied gemaakt, terwijl u door het maken van een gebied als een live kopie inhoud kunt overnemen in de sitestructuren.
+1. [&#x200B; creeer een nieuw gebied &#x200B;](#creating-new-areas) of [&#x200B; creeer een gebied als levende exemplaar &#x200B;](#creating-new-areas). Een gebied omvat alle activiteiten die voor een *gebied* van de pagina beschikbaar zijn; namelijk de plaats op de pagina waar de component wordt gericht. Als u een nieuw gebied maakt, wordt een leeg gebied gemaakt, terwijl u door het maken van een gebied als een live kopie inhoud kunt overnemen in de sitestructuren.
 
-1. [ Verbinding uw plaats of pagina ](#linking-sites-to-an-area) aan een gebied.
+1. [&#x200B; Verbinding uw plaats of pagina &#x200B;](#linking-sites-to-an-area) aan een gebied.
 
 U kunt de overerving op elk gewenst moment opschorten of herstellen. Als u de overerving niet wilt onderbreken, kunt u bovendien lokale ervaringen creëren. Standaard gebruiken alle pagina&#39;s het hoofdgebied, tenzij u anders opgeeft.
 
@@ -55,7 +55,7 @@ Een site of live kopie is gekoppeld aan een gebied met de activiteiten die besch
 
 ## Gebruik hoofdletters {#use-cases}
 
-U kunt ondersteuning voor meerdere sites instellen voor doelinhoud, afhankelijk van uw gebruiksscenario. In deze sectie wordt beschreven hoe dit theoretisch zou werken met één merk. Bovendien in [ Voorbeeld: Het richten van Inhoud die op Geografie ](#example-targeting-content-based-on-geography) wordt gebaseerd, kunt u een real-world toepassing zien van het richten van inhoud in veelvoudige plaatsen.
+U kunt ondersteuning voor meerdere sites instellen voor doelinhoud, afhankelijk van uw gebruiksscenario. In deze sectie wordt beschreven hoe dit theoretisch zou werken met één merk. Bovendien in [&#x200B; Voorbeeld: Het richten van Inhoud die op Geografie &#x200B;](#example-targeting-content-based-on-geography) wordt gebaseerd, kunt u een real-world toepassing zien van het richten van inhoud in veelvoudige plaatsen.
 
 Gerichte inhoud wordt verpakt in zogenaamde gebieden, die het bereik voor sites of pagina&#39;s bepalen. Deze gebieden worden op merkniveau gedefinieerd. Eén merk kan meerdere gebieden bevatten. Gebieden kunnen verschillend zijn tussen merken. Hoewel één merk het hoofdgebied kan bevatten en daarom voor alle merken wordt gedeeld, kan een ander merk meerdere merken bevatten (bijvoorbeeld per regio). Merkens hoeven dus niet de reeks gebieden ertussen te weerspiegelen.
 
@@ -73,11 +73,11 @@ Met multisite steun voor gerichte inhoud, kunt u, bijvoorbeeld, twee (of meer) p
 
 U kon **veelvoudige** merken ook hebben die in één plaats worden gebruikt, die complexer dan dit voorbeeld zou kunnen zijn.
 
-![ Multisite voorbeeld ](/help/sites-cloud/authoring/assets/multisite-example.png)
+![&#x200B; Multisite voorbeeld &#x200B;](/help/sites-cloud/authoring/assets/multisite-example.png)
 
 >[!NOTE]
 >
->Voor een meer technische blik bij deze eigenschap, zie [ hoe Multisite Beheer voor Gerichte Inhoud wordt gestructureerd ](/help/sites-cloud/authoring/personalization/multisite-structure.md).
+>Voor een meer technische blik bij deze eigenschap, zie [&#x200B; hoe Multisite Beheer voor Gerichte Inhoud wordt gestructureerd &#x200B;](/help/sites-cloud/authoring/personalization/multisite-structure.md).
 
 ## Voorbeeld: Inhoud als doel instellen op basis van geografie {#example-targeting-content-based-on-geography}
 
@@ -88,7 +88,7 @@ Er zijn vier versies van dezelfde site op basis van geografie:
 * De **Verenigde Staten** plaats is in de hogere linkerhoek en is de hoofdplaats. In dit voorbeeld is deze geopend in de modus Doel.
 * De drie andere versies van deze plaats zijn **Canada**, **Groot-Brittannië**, en **Australië**, die allen levende exemplaren zijn. Deze sites zijn geopend in de modus Voorbeeld.
 
-![ Multisite versies ](/help/sites-cloud/authoring/assets/multisite-versions.png)
+![&#x200B; Multisite versies &#x200B;](/help/sites-cloud/authoring/assets/multisite-versions.png)
 
 Elke site deelt gepersonaliseerde inhoud in geografische regio&#39;s:
 
@@ -96,19 +96,19 @@ Elke site deelt gepersonaliseerde inhoud in geografische regio&#39;s:
 * Groot-Brittannië is verbonden met de Europese ruimte en erft van het hoofdgebied.
 * Australië heeft zijn eigen gepersonaliseerde inhoud, omdat het zich op het zuidelijk halfrond bevindt en seizoensgebonden producten niet van toepassing zouden zijn.
 
-![ Multisite diagram ](/help/sites-cloud/authoring/assets/multisite-diagram.png)
+![&#x200B; Multisite diagram &#x200B;](/help/sites-cloud/authoring/assets/multisite-diagram.png)
 
 Voor het noordelijk halfrond hebben we een winteractiviteit gecreëerd, maar in het mannelijke publiek zou de marktmaker in Noord-Amerika een ander beeld voor de winter willen, dus hij of zij verandert het op de Amerikaanse site.
 
-![ versie van de Verenigde Staten ](/help/sites-cloud/authoring/assets/multisite-us.png)
+![&#x200B; versie van de Verenigde Staten &#x200B;](/help/sites-cloud/authoring/assets/multisite-us.png)
 
 Nadat u het tabblad hebt vernieuwd, wordt de Canadese site gewijzigd in de nieuwe afbeelding zonder actie van onze kant. Dat gebeurt omdat het de hoofdzone deelt met de Verenigde Staten. In Groot-Brittannië en Australië verandert het beeld niet.
 
-![ Veranderende versies ](/help/sites-cloud/authoring/assets/multisite-us-change.png)
+![&#x200B; Veranderende versies &#x200B;](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-De teller zou deze veranderingen in het Europese gebied willen uitrollen en [ rolt uit het levende exemplaar ](/help/sites-cloud/administering/msm/creating-live-copies.md) door **Pagina van de Uitvoer** te tikken of te klikken. Na het verfrissen van de tab heeft de site van Groot-Brittannië de nieuwe afbeelding, aangezien het Europa-gebied overerft van het hoofdgebied (na rollout).
+De teller zou deze veranderingen in het Europese gebied willen uitrollen en [&#x200B; rolt uit het levende exemplaar &#x200B;](/help/sites-cloud/administering/msm/creating-live-copies.md) door **Pagina van de Uitvoer** te tikken of te klikken. Na het verfrissen van de tab heeft de site van Groot-Brittannië de nieuwe afbeelding, aangezien het Europa-gebied overerft van het hoofdgebied (na rollout).
 
-![ levende exemplaar van de Uitvoer ](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
+![&#x200B; levende exemplaar van de Uitvoer &#x200B;](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
 De afbeelding op de Australische site blijft ongewijzigd, wat het gewenste gedrag is, omdat het in de zomer in Australië is en de markeerteken die inhoud niet wil wijzigen. De site van Australië verandert niet omdat het een gebied niet deelt met een andere regio en het ook geen live kopie van een andere regio is. De marketeter hoeft zich nooit zorgen te maken dat de doelinhoud van de Australische site wordt overschreven.
 
@@ -118,7 +118,7 @@ U kunt de overerving op elk gewenst moment opschorten of de overerving volledig 
 
 >[!NOTE]
 >
->Voor een meer technische blik bij deze eigenschap, zie [ hoe Multisite Beheer voor Gerichte Inhoud wordt gestructureerd ](/help/sites-cloud/authoring/personalization/multisite-structure.md).
+>Voor een meer technische blik bij deze eigenschap, zie [&#x200B; hoe Multisite Beheer voor Gerichte Inhoud wordt gestructureerd &#x200B;](/help/sites-cloud/authoring/personalization/multisite-structure.md).
 
 ### Een nieuw gebied maken in plaats van een nieuw gebied te maken als livecopie {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
@@ -132,7 +132,7 @@ Als, echter, u erfenisopstelling via MSM tussen de twee plaatsen hebt, dan kunt 
 
 In het volgende diagram zijn er bijvoorbeeld vier sites waar twee het hoofdgebied delen (en alle activiteiten die deel uitmaken van dat gebied), één site die een gebied heeft dat een live kopie van een gebied is, zodat het de activiteiten deelt bij rollout, en één kant die volledig gescheiden is (en dus een gebied voor zijn activiteiten vereist).
 
-![ het detail van het Diagram ](/help/sites-cloud/authoring/assets/multisite-diagram-detail.png)
+![&#x200B; het detail van het Diagram &#x200B;](/help/sites-cloud/authoring/assets/multisite-diagram-detail.png)
 
 Om dit in AEM te bereiken, zou u het volgende doen:
 
@@ -154,7 +154,7 @@ Een gebied maken:
 1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
 1. Selecteer **creeer Gebied**.
 
-   ![ creeer gebied ](/help/sites-cloud/authoring/assets/multisite-create-area.png)
+   ![&#x200B; creeer gebied &#x200B;](/help/sites-cloud/authoring/assets/multisite-create-area.png)
 
 1. Klik het **pictogram van het Gebied** en klik **daarna**.
 1. Op het **gebied van de Titel**, ga een naam voor het nieuwe gebied in. Selecteer optioneel tags.
@@ -162,7 +162,7 @@ Een gebied maken:
 
    AEM wordt omgeleid naar het merkvenster, waar de gemaakte gebieden worden vermeld. Als er een ander gebied buiten het hoofdgebied is, kunt u gebieden rechtstreeks in de merkenconsole maken.
 
-   ![ creeer ](/help/sites-cloud/authoring/assets/multisite-create.png)
+   ![&#x200B; creeer &#x200B;](/help/sites-cloud/authoring/assets/multisite-create.png)
 
 ## Gebieden maken als actieve kopieën {#creating-areas-as-live-copies}
 
@@ -173,21 +173,21 @@ Een gebied maken als een livecopy:
 1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
 1. Selecteer **Gebied als Levend Exemplaar** creëren.
 
-   ![ creeer gebied als levende exemplaar ](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
+   ![&#x200B; creeer gebied als levende exemplaar &#x200B;](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
 
 1. Selecteer het gebied dat u een levend exemplaar van wilt maken en **daarna** klikken.
 
-   ![ creeer levende exemplaar ](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
+   ![&#x200B; creeer levende exemplaar &#x200B;](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
 
 1. Voer in het veld **Naam** een naam in voor de livekopie. Standaard worden subpagina&#39;s opgenomen. Sluit ze uit door het selectievakje **Subpagina&#39;s uitsluiten** in te schakelen.
 
-   ![ creeer levende exemplaar ](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
+   ![&#x200B; creeer levende exemplaar &#x200B;](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
 
 1. In **Rollout vormt** drop-down menu, selecteer de aangewezen configuratie.
 
-   Zie [ Geïnstalleerde Configuraties van de Uitvoer ](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-and-custom-rollout-configurations) voor beschrijvingen van elke optie.
+   Zie [&#x200B; Geïnstalleerde Configuraties van de Uitvoer &#x200B;](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-and-custom-rollout-configurations) voor beschrijvingen van elke optie.
 
-   Zie [ Creërend en Synchroniserend Levende Kopieën ](/help/sites-cloud/administering/msm/creating-live-copies.md) voor meer informatie over levende exemplaren.
+   Zie [&#x200B; Creërend en Synchroniserend Levende Kopieën &#x200B;](/help/sites-cloud/administering/msm/creating-live-copies.md) voor meer informatie over levende exemplaren.
 
    >[!NOTE]
    >
@@ -197,7 +197,7 @@ Een gebied maken als een livecopy:
 
    AEM wordt omgeleid naar het merkvenster, waar de gemaakte gebieden worden vermeld. Als er een ander gebied buiten het hoofdgebied is, kunt u gebieden rechtstreeks vanuit het merkvenster maken.
 
-   ![ creeer gebied ](/help/sites-cloud/authoring/assets/multisite-create-2.png)
+   ![&#x200B; creeer gebied &#x200B;](/help/sites-cloud/authoring/assets/multisite-create-2.png)
 
 ## Sites koppelen aan een gebied {#linking-sites-to-an-area}
 
@@ -216,11 +216,11 @@ Een site koppelen aan een gebied:
 1. Selecteer het **Personalization** lusje.
 1. In het **Merk** menu, selecteer het merk u uw gebied aan wilt verbinden. Nadat u het merk selecteert, zijn de beschikbare gebieden beschikbaar in het **menu van de Verwijzing van het Gebied**.
 
-   ![ het Verbinden plaatsen ](/help/sites-cloud/authoring/assets/multisite-english.png)
+   ![&#x200B; het Verbinden plaatsen &#x200B;](/help/sites-cloud/authoring/assets/multisite-english.png)
 
 1. Selecteer het gebied van de **drop-down menu van de Verwijzing van het 0&rbrace; Gebied en selecteer** sparen **.**
 
-   ![ Verwijzing van het Gebied ](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
+   ![&#x200B; Verwijzing van het Gebied &#x200B;](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 
 ## Live kopie losmaken of overerving van doelinhoud opschorten {#detaching-live-copy-or-suspending-inheritance-of-targeted-content}
 
@@ -249,11 +249,11 @@ Om erfenis van gerichte inhoud in een activiteit op te schorten of los te maken:
    1. Selecteer een element van de activiteit, zoals het publiek. AEM geeft automatisch een bevestigingsvenster voor Live kopie onderbreken weer. (U kunt livekopieën opschorten door tijdens het doelproces op een element te tikken of te klikken.)
    1. Selecteer **Uitstel Levende Exemplaar** van het drop-down menu in de toolbar op.
 
-   ![ Uitstel levende exemplaar ](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
+   ![&#x200B; Uitstel levende exemplaar &#x200B;](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
 1. Selecteer **Onderbreking** om de activiteit op te schorten. Uitgestelde activiteiten worden rood gemarkeerd.
 
-   ![ Onderbroken levende exemplaar ](/help/sites-cloud/authoring/assets/multisite-suspended.png)
+   ![&#x200B; Onderbroken levende exemplaar &#x200B;](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
 ### Overerving breken {#breaking-inheritance}
 
@@ -264,7 +264,7 @@ Overerving van doelinhoud in een activiteit onderbreken:
 1. Selecteer **Livekopie loskoppelen** in het vervolgkeuzemenu op de werkbalk. AEM bevestigt dat u de livekopie wilt loskoppelen.
 1. Selecteer **losmaken** om het levende exemplaar van de activiteit los te maken. Nadat deze is losgekoppeld, wordt het vervolgkeuzemenu met betrekking tot overerving niet meer weergegeven. De activiteit is nu een lokale activiteit.
 
-   ![ Lokale activiteit ](/help/sites-cloud/authoring/assets/multisite-winter.png)
+   ![&#x200B; Lokale activiteit &#x200B;](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
 ## Overerving van doelinhoud herstellen {#restoring-inheritance-of-targeted-content}
 
@@ -276,7 +276,7 @@ Om erfenis van gerichte inhoud in een activiteit te herstellen:
 1. Selecteer **Begin richtend**.
 1. Selecteer **Livekopie hervatten** in het vervolgkeuzemenu op de werkbalk.
 
-   ![ Hervatten levende exemplaar ](/help/sites-cloud/authoring/assets/multisite-resume.png)
+   ![&#x200B; Hervatten levende exemplaar &#x200B;](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
 1. Selecteer **Hervatten** om te bevestigen dat u levende exemplaarovererving wilt hervatten. Eventuele wijzigingen aan de huidige activiteit gaan verloren als u de overerving hervat.
 

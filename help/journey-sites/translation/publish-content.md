@@ -21,7 +21,7 @@ Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de 
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de de vertaalreis van AEM Sites, [ vertaalde Inhoud ](configure-connector.md), leerde u hoe te om AEM Vertaalprojecten te gebruiken om uw inhoud te vertalen. Nu moet u:
+In het vorige document van de de vertaalreis van AEM Sites, [&#x200B; vertaalde Inhoud &#x200B;](configure-connector.md), leerde u hoe te om AEM Vertaalprojecten te gebruiken om uw inhoud te vertalen. Nu moet u:
 
 * Begrijp wat een vertaalproject is.
 * U kunt nieuwe vertaalprojecten maken.
@@ -71,14 +71,14 @@ Onder dit pad hebt u submappen voor elke vertaaltaal en kunt u kiezen welke taal
 
 1. Ga naar **Navigatie** > **Plaatsen** > **Dossiers** en open de projectomslag.
 1. Hier ziet u de hoofdmap van de taal en alle andere taalmappen. Selecteer de gelokaliseerde taal of talen die u wilt publiceren.
-   ![ Uitgezochte taalomslag ](assets/select-language-folder.png)
+   ![&#x200B; Uitgezochte taalomslag &#x200B;](assets/select-language-folder.png)
 1. Selecteer **Beheert Publicatie**.
 1. In het **beheer Publicatie** venster, zorg ervoor dat **Publish** automatisch onder **Actie** wordt geselecteerd en dat **&#x200B;**&#x200B;nu onder **het Plannen** wordt geselecteerd. Selecteer **daarna**.
-   ![ beheer publicatieopties ](assets/manage-publication-options.png)
+   ![&#x200B; beheer publicatieopties &#x200B;](assets/manage-publication-options.png)
 1. In het volgende **leidt het venster van de Publicatie**, bevestig dat de juiste weg(en) wordt/worden geselecteerd. Selecteer **Publish**.
-   ![ beheer publicatiewerkingsgebied ](assets/manage-publication-scope.png)
+   ![&#x200B; beheer publicatiewerkingsgebied &#x200B;](assets/manage-publication-scope.png)
 1. AEM bevestigt de publicatieactie met een pop-upbericht onder aan het scherm.
-   ![ Van Middelen gepubliceerde banner ](assets/resources-published-message.png)
+   ![&#x200B; Van Middelen gepubliceerde banner &#x200B;](assets/resources-published-message.png)
 
 Uw vertaalde inhoud is nu gepubliceerd! Het kan nu worden betreden en worden verbruikt.
 
@@ -86,7 +86,7 @@ Uw vertaalde inhoud is nu gepubliceerd! Het kan nu worden betreden en worden ver
 >
 >U kunt meerdere items selecteren (dat wil zeggen meerdere taalmappen) wanneer u publiceert om meerdere vertalingen tegelijk te publiceren.
 
-Er zijn extra opties wanneer het publiceren van uw inhoud, zoals het plannen van een publicatietijd, die buiten het werkingsgebied van deze reis zijn. Zie de [ Extra sectie van Middelen ](#additional-resources) aan het eind van het document voor meer informatie.
+Er zijn extra opties wanneer het publiceren van uw inhoud, zoals het plannen van een publicatietijd, die buiten het werkingsgebied van deze reis zijn. Zie de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) aan het eind van het document voor meer informatie.
 
 ## Uw vertaalde inhoud bijwerken {#updating-translations}
 
@@ -108,7 +108,7 @@ Het proces verschilt echter enigszins als u ervoor kiest om uw vertaalproject au
 1. In de **Bestaande drop-down lijst van het Project van de Vertaling**, selecteer het project dat voor de aanvankelijke vertaling wordt gecreeerd.
 1. Selecteer **Update**.
 
-![ voegt punten aan bestaand vertaalproject ](assets/add-to-existing-project.png) toe
+![&#x200B; voegt punten aan bestaand vertaalproject &#x200B;](assets/add-to-existing-project.png) toe
 
 De inhoud wordt toegevoegd aan het bestaande vertaalproject. Het vertaalproject weergeven:
 
@@ -118,11 +118,11 @@ De inhoud wordt toegevoegd aan het bestaande vertaalproject. Het vertaalproject 
 
 U ziet dat er een nieuwe banenkaart aan het project is toegevoegd. In dit voorbeeld is een andere Spaanse vertaling toegevoegd.
 
-![ Extra toegevoegde vertaalbaan ](assets/additional-translation-job.png)
+![&#x200B; Extra toegevoegde vertaalbaan &#x200B;](assets/additional-translation-job.png)
 
 U kunt zien dat de statistieken op de nieuwe kaart verschillend zijn. Dit komt omdat AEM herkent wat er is veranderd sinds de laatste vertaling en alleen de inhoud bevat die moet worden vertaald. Dit omvat het opnieuw vertalen van bijgewerkte inhoud en het voor het eerst vertalen van nieuwe inhoud.
 
-Van dit punt, begint u [ en beheert uw vertaalbaan enkel aangezien u origineel ](translate-content.md#using-translation-project) deed.
+Van dit punt, begint u [&#x200B; en beheert uw vertaalbaan enkel aangezien u origineel &#x200B;](translate-content.md#using-translation-project) deed.
 
 ### Een handmatig gemaakt vertaalproject bijwerken {#updating-manual-project}
 
@@ -133,26 +133,26 @@ Als u een vertaling wilt bijwerken, kunt u een nieuwe taak toevoegen aan uw best
 1. Selecteer **toevoegen** knoop bij de bovenkant van het venster.
 1. In **voeg het venster van de Tegel** toe, selecteer **VertaalBaan** en dan **voorlegt**.
 
-   ![ voeg tegel ](assets/add-translation-job-tile.png) toe
+   ![&#x200B; voeg tegel &#x200B;](assets/add-translation-job-tile.png) toe
 
 1. Op de kaart van de nieuwe vertaalbaan, selecteer de chevron knoop bij de bovenkant van de kaart, en selecteer **Doel van de Update** om de doeltaal van de nieuwe baan te bepalen.
 
-   ![ doel van de Update ](assets/update-target.png)
+   ![&#x200B; doel van de Update &#x200B;](assets/update-target.png)
 
 1. In de **Uitgezochte Taal van het Doel** dialoog, gebruik drop-down om de taal te selecteren en **Gedaane** te selecteren.
 
-   ![ Uitgezochte doeltaal ](assets/select-target-language.png)
+   ![&#x200B; Uitgezochte doeltaal &#x200B;](assets/select-target-language.png)
 
 1. Als de doeltaal van uw nieuwe vertaaltaak is ingesteld, selecteert u de knop voor de weglatingsteken onder aan de taakkaart om de details van de taak weer te geven.
-1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Voeg inhoud aan de baan toe door te tikken of **te klikken voeg** knoop toe en gebruikend wegbrowser [ zoals u deed alvorens toen oorspronkelijk het vertaalproject ](translate-content.md##manually-creating) creeerde.
+1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Voeg inhoud aan de baan toe door te tikken of **te klikken voeg** knoop toe en gebruikend wegbrowser [&#x200B; zoals u deed alvorens toen oorspronkelijk het vertaalproject &#x200B;](translate-content.md##manually-creating) creeerde.
 
 >[!TIP]
 >
 >De krachtige filters van de padbrowser kunnen ook weer nuttig zijn om alleen de inhoud te zoeken die is bijgewerkt.
 >
->U kunt meer over wegbrowser in de [ extra middelensectie ](#additional-resources) leren.
+>U kunt meer over wegbrowser in de [&#x200B; extra middelensectie &#x200B;](#additional-resources) leren.
 
-Van dit punt, begint u [ en beheert uw vertaalbaan enkel aangezien u origineel ](translate-content.md#using-translation-project) deed.
+Van dit punt, begint u [&#x200B; en beheert uw vertaalbaan enkel aangezien u origineel &#x200B;](translate-content.md#using-translation-project) deed.
 
 ## Einde van de reis? {#end-of-journey}
 
@@ -162,11 +162,11 @@ Gefeliciteerd! U hebt de AEM Sites vertaalreis voltooid! Nu moet u:
 * Begrijp AEM vertaaleigenschappen en hoe zij met uw plaatsinhoud verwant.
 * Ga meteen door met het vertalen van uw eigen inhoud.
 
-U bent nu klaar om uw eigen inhoud in AEM te vertalen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Controle uit enkele extra middelen beschikbaar in de [ Extra sectie van Middelen ](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
+U bent nu klaar om uw eigen inhoud in AEM te vertalen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Controle uit enkele extra middelen beschikbaar in de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ het Leiden de Projecten van de Vertaling ](/help/sites-cloud/administering/translation/managing-projects.md) - leer de details van vertaalprojecten en extra eigenschappen zoals menselijke vertaalwerkschema&#39;s en meertalige projecten.
-* [ Authoring concepten ](/help/sites-cloud/authoring/author-publish.md) - Leer meer over de auteur en publiceer het model van AEM. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
-* [ het Publiceren Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - leer over de extra eigenschappen beschikbaar wanneer het publiceren van inhoud. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
-* [ Authoring Milieu en Hulpmiddelen ](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM verstrekt diverse mechanismen om uw inhoud met inbegrip van robuuste wegbrowser te organiseren en uit te geven.
+* [&#x200B; het Leiden de Projecten van de Vertaling &#x200B;](/help/sites-cloud/administering/translation/managing-projects.md) - leer de details van vertaalprojecten en extra eigenschappen zoals menselijke vertaalwerkschema&#39;s en meertalige projecten.
+* [&#x200B; Authoring concepten &#x200B;](/help/sites-cloud/authoring/author-publish.md) - Leer meer over de auteur en publiceer het model van AEM. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
+* [&#x200B; het Publiceren Pagina&#39;s &#x200B;](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - leer over de extra eigenschappen beschikbaar wanneer het publiceren van inhoud. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
+* [&#x200B; Authoring Milieu en Hulpmiddelen &#x200B;](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM verstrekt diverse mechanismen om uw inhoud met inbegrip van robuuste wegbrowser te organiseren en uit te geven.

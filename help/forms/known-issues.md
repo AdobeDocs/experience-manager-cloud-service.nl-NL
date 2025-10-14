@@ -25,13 +25,13 @@ Voordat u [!DNL AEM Forms] as a Cloud Service gaat gebruiken, moet u de volgende
 
 * De **[!UICONTROL Set variable]** -stap van AEM Workflows ondersteunt geen variabelen van het type arraylijst. U kunt de processtap gebruiken om variabelen van het type arraylijst in te stellen.
 
-* Wanneer u een adaptief formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 bytes ontvangen. De kwestie komt met tussenpozen en slechts bij het gebruiken van synchrone voorlegging voor. Dit is a [ gekende kwestie ](https://feedbackassistant.apple.com/feedback/9117687) in Apple iOS.
+* Wanneer u een adaptief formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 bytes ontvangen. De kwestie komt met tussenpozen en slechts bij het gebruiken van synchrone voorlegging voor. Dit is a [&#x200B; gekende kwestie &#x200B;](https://feedbackassistant.apple.com/feedback/9117687) in Apple iOS.
 
-* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan het andere uiteinde een bestand van 0 bytes ontvangen. Dit is een bekend probleem in Apple iOS. [ FB9117687 ](https://feedbackassistant.apple.com/feedback/9117687)
+* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan het andere uiteinde een bestand van 0 bytes ontvangen. Dit is een bekend probleem in Apple iOS. [&#x200B; FB9117687 &#x200B;](https://feedbackassistant.apple.com/feedback/9117687)
 
 * AEM Forms as a Cloud Service genereert geen miniaturen voor XDP- en JSON-schemabestanden. De service geeft standaardpictogrammen weer in plaats van miniaturen.
 
-  ![ Bekende kwestie van de Miniatuur van Forms ](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![&#x200B; Bekende kwestie van de Miniatuur van Forms &#x200B;](/help/forms/assets/forms-tumbnail-known-issue.png)
 
 * Wanneer u een schema met herhaalbare elementen gebruikt om een op kerncomponenten gebaseerde adaptieve vorm te maken, werkt de optie om herhaalbare elementen uit gegevensmodelstructuur te slepen en neer te zetten in de Adaptieve Forms Editor niet.
 

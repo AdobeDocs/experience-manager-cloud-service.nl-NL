@@ -26,7 +26,7 @@ U kunt de modus Lay-out gebruiken om het aantal kolommen te definiëren waaraan 
 
 De eigenschappen van een scheidingscomponent opgeven:
 
-1. Selecteer een separatorcomponent en selecteer ![ cmp ](assets/cmppr.png). De eigenschappen worden geopend in het zijpaneel.
+1. Selecteer een separatorcomponent en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png). De eigenschappen worden geopend in het zijpaneel.
 1. Klik op een tabblad in de sectie Inline CSS-eigenschappen zodat u CSS-eigenschappen kunt opgeven. Bijvoorbeeld a. Op het lusje van het Gebied, klik **Punt** toevoegen. Er wordt een rij met twee velden toegevoegd.
 1. Geef in het eerste veld links een CSS3-eigenschap op die u wilt toepassen. Bijvoorbeeld, **grens**. U kunt een eigenschap ook selecteren door op de knop pijl-omlaag te klikken. De vervolgkeuzelijst is niet uitputtend en u kunt elke ondersteunde CSS3-eigenschapnaam opgeven in dit veld.
 1. Geef in het aangrenzende veld een geldige waarde op voor de opgegeven CSS3-eigenschap. Bijvoorbeeld, **3 pixel stevige zwarte**.

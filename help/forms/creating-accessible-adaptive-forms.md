@@ -47,7 +47,7 @@ ANDI werkt met alle grote internetbrowsers. Zie, {de documentatie van 0} ANDI [&
 Het Ultramarijn-Toegankelijke thema is een verwijzingsthema. Hiermee kunt u demonstreren hoe u kleurcontrast en andere toegankelijkheidsgerelateerde problemen in een adaptief formulier kunt oplossen. Adobe raadt u aan een aangepast thema voor de productieomgeving te maken op basis van de stijlen die door uw organisatie zijn goedgekeurd. Voer de volgende stappen uit om het thema naar uw AEM-exemplaar te uploaden:
 
 1. Download het themapakket.
-1. Navigeer aan **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![ Navigatie ](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** op uw AEM instantie.
+1. Navigeer aan **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![&#x200B; Navigatie &#x200B;](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** op uw AEM instantie.
 1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL File Upload]** . Selecteer en upload het bestand x Ultramarine-Accessible-Theme.zip. Het thema wordt geüpload naar uw AEM.
 
 ## Een adaptief formulier toegankelijk maken
@@ -73,7 +73,7 @@ Nadat u een toegankelijk thema hebt toegepast, voert u de onderstaande aanvullen
 
    De meeste toegankelijkheidsfuncties informeren gebruikers over de hiërarchie van de inhoud, zodat ze de structuur van de webpagina beter kunnen begrijpen. Stel verschillende kopniveaus in voor de naam van de organisatie en de tekst voor de naam van het formulier in het adaptieve formulier om deze tekst een hiërarchische structuur te geven. Gebruik bovendien een tekstcomponent voor elk deelvenster en elke sectie met een geschikt kopniveau om een hiërarchie te maken.
 
-   ![ hoe te om een kopbalstijl toe te passen ](assets/apply-style.gif)
+   ![&#x200B; hoe te om een kopbalstijl toe te passen &#x200B;](assets/apply-style.gif)
 
 1. Wijzig de achtergrondkleur van de voettekst om het juiste contrast te gebruiken in overeenstemming met de toegankelijkheidsnormen om de zichtbaarheid en leesbaarheid van de tekst te verbeteren. U kunt ANDI gebruiken om problemen met kleurcontrast in uw formulier te zoeken. Gebruik ook geen erg klein lettertype. Kleine lettertypen zijn moeilijk leesbaar.
 
@@ -101,12 +101,12 @@ Het label dat door schermlezers wordt waargenomen, hoeft niet noodzakelijkerwijs
 
 Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 
-1. Selecteer een component en selecteer ![ cmp ](assets/cmppr.png).
+1. Selecteer een component en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png).
 1. Klik op **[!UICONTROL Accessibility]** in het zijpaneel om de gewenste toegankelijkheidsoptie te kiezen.
 
 ### Toegankelijkheidsopties in formuliercomponenten {#accessibility-options-in-form-components}
 
-![ de opties van de Toegankelijkheid in vormcomponenten ](assets/accessibility-options.png)
+![&#x200B; de opties van de Toegankelijkheid in vormcomponenten &#x200B;](assets/accessibility-options.png)
 
 **de auteurs van de Vorm van de Tekst van 0&rbrace; de Douane van de Tekst van de Tekst van de Tekst van de Tekst van de Aangepast van de 0&rbrace; &lbrace;.** De ondersteunende hulpmiddelen, zoals schermlezers, gebruiken deze aangepaste tekst. Het gebruiken van het plaatsen van de Titel is de beste optie in een meerderheid van de scenario&#39;s. U kunt bijvoorbeeld alleen aangepaste schermtekst maken als Titel of korte beschrijving niet mogelijk is.
 
@@ -129,9 +129,9 @@ Afbeeldingen kunnen sommige gebruikers helpen het begrip te verbeteren. Voor geb
 
 Zorg ervoor dat in de tekst het object en het doel ervan in het formulier worden beschreven. Een schermlezer leest deze alternatieve tekst wanneer een afbeelding wordt aangetroffen. Voor een afbeelding moet altijd een alternatieve tekst worden opgegeven.
 
-Selecteer een beeldcomponent en selecteer ![ cmp ](assets/cmppr.png). Geef in het zijpaneel onder Eigenschappen alternatieve tekst op voor een afbeelding.
+Selecteer een beeldcomponent en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png). Geef in het zijpaneel onder Eigenschappen alternatieve tekst op voor een afbeelding.
 
-![ Afwisselende tekst voor een beeld ](assets/image-properties.png)
+![&#x200B; Afwisselende tekst voor een beeld &#x200B;](assets/image-properties.png)
 
 ### 4. Geef voldoende kleurcontrast op {#provide-sufficient-color-contrast}
 
@@ -158,7 +158,7 @@ De volgende sneltoetsen zijn beschikbaar in [!DNL AEM Forms] .
 | De gevulde gegevens in een formulier opnieuw instellen | Alt+R |
 | Een formulier verzenden | Alt+S |
 
-Daarnaast zijn er verschillende sneltoetsen beschikbaar voor de component **[!UICONTROL Date Picker]** in Adaptief Forms. Om de kortere wegsleutels toe te laten, selecteer de **[!UICONTROL Date Picker]** component en selecteer ![ vormen ](assets/configure-icon.svg) om de eigenschappen te openen. Selecteer in de sectie **[!UICONTROL Patterns]** een weergavepatroon met de vervolgkeuzelijsten **[!UICONTROL Type]** en **[!UICONTROL Pattern]** . Sla de eigenschappen op om het gebruik van sneltoetsen voor de component **[!UICONTROL Date Picker]** in te schakelen.
+Daarnaast zijn er verschillende sneltoetsen beschikbaar voor de component **[!UICONTROL Date Picker]** in Adaptief Forms. Om de kortere wegsleutels toe te laten, selecteer de **[!UICONTROL Date Picker]** component en selecteer ![&#x200B; vormen &#x200B;](assets/configure-icon.svg) om de eigenschappen te openen. Selecteer in de sectie **[!UICONTROL Patterns]** een weergavepatroon met de vervolgkeuzelijsten **[!UICONTROL Type]** en **[!UICONTROL Pattern]** . Sla de eigenschappen op om het gebruik van sneltoetsen voor de component **[!UICONTROL Date Picker]** in te schakelen.
 
 De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adaptive Forms:
 
@@ -173,8 +173,8 @@ De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adapti
 | De cursor achterwaarts verplaatsen in de kalender die beschikbaar is in de component Date Picker | Pijl-links |
 | De cursor vooruit verplaatsen in de kalender die beschikbaar is in de component Date Picker | Pijl-rechts |
 | Voer de handeling uit voor het bijschrift dat beschikbaar is tussen rechter- en linkernavigatiepijlen in de kalender | Shift + Pijl-omhoog |
-| Voer de actie voor het pictogram van de juiste navigatiepijl ![ juist-pijl ](assets/right-navigation-icon.svg) beschikbaar in de kalender uit | Shift + Pijl-links |
-| Voer de actie voor het linker pictogram van de navigatiepijl ![ links-pijl ](assets/left-navigation-icon.svg) beschikbaar in de kalender uit | Shift + Pijl-rechts |
+| Voer de actie voor het pictogram van de juiste navigatiepijl ![&#x200B; juist-pijl &#x200B;](assets/right-navigation-icon.svg) beschikbaar in de kalender uit | Shift + Pijl-links |
+| Voer de actie voor het linker pictogram van de navigatiepijl ![&#x200B; links-pijl &#x200B;](assets/left-navigation-icon.svg) beschikbaar in de kalender uit | Shift + Pijl-rechts |
 
 ## Gebruik het gereedschap Toegankelijkheid om resterende toegankelijkheidsproblemen te zoeken
 

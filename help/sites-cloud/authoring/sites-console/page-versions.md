@@ -37,22 +37,22 @@ Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaal
 
 U kunt een versie van uw bron maken op basis van:
 
-* Het [ spoor van de Chronologie ](#creating-a-new-version-timeline)
-* [ creeer ](#creating-a-new-version-create-with-a-selected-resource) optie (wanneer een middel wordt geselecteerd)
+* Het [&#x200B; spoor van de Chronologie &#x200B;](#creating-a-new-version-timeline)
+* [&#x200B; creeer &#x200B;](#creating-a-new-version-create-with-a-selected-resource) optie (wanneer een middel wordt geselecteerd)
 
 ### Nieuwe versie maken - tijdlijn {#creating-a-new-version-timeline}
 
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open het **spoor van de Chronologie**.
 1. Selecteer de ellips op het commentaarveld om de opties weer te geven:
 
-   ![ Versies in de chronologiespoorstaaf ](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
+   ![&#x200B; Versies in de chronologiespoorstaaf &#x200B;](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
 1. Selecteer **sparen als Versie**.
 1. Ga a **Etiket** en **Commentaar** in, indien nodig.
 
-   ![ voeg etiket voor een versie ](/help/sites-cloud/authoring/assets/versions-add-label.png) toe
+   ![&#x200B; voeg etiket voor een versie &#x200B;](/help/sites-cloud/authoring/assets/versions-add-label.png) toe
 
 1. Bevestig de nieuwe versie met **creeer**.
 
@@ -61,7 +61,7 @@ U kunt een versie van uw bron maken op basis van:
 ### Een nieuwe versie maken - Maken met een geselecteerde bron {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Selecteer **creeer** optie van de toolbar.
 1. Hetzelfde dialoogvenster wordt geopend. U kunt a **Etiket** en a **Commentaar** ingaan, indien nodig.
 1. Bevestig de nieuwe versie met **creeer**.
@@ -72,11 +72,11 @@ De tijdlijn wordt geopend met de informatie die wordt bijgewerkt om de nieuwe ve
 
 Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op verschillende manieren opnieuw installeren:
 
-* **keert aan deze optie van Versie** van de [ Chronologie ](/help/sites-cloud/authoring/basic-handling.md#timeline) spoor terug
+* **keert aan deze optie van Versie** van de [&#x200B; Chronologie &#x200B;](/help/sites-cloud/authoring/basic-handling.md#timeline) spoor terug
 
   Vorige versie van geselecteerde pagina opnieuw installeren.
 
-* **herstel** opties van de hoogste [ actiestoolbar ](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
+* **herstel** opties van de hoogste [&#x200B; actiestoolbar &#x200B;](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
    * **herstelt Versie**
 
@@ -103,11 +103,11 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 Om **terug te keren** de geselecteerde pagina aan een vorige versie:
 
 1. Navigeer om de pagina weer te geven die u naar een vorige versie wilt terugkeren.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**. De paginaversies voor de geselecteerde pagina worden weergegeven.
 1. Selecteer de versie waarnaar u wilt terugkeren. De mogelijke opties worden weergegeven:
 
-   ![ keert aan deze Versie ](/help/sites-cloud/authoring/assets/versions-revert.png) terug
+   ![&#x200B; keert aan deze Versie &#x200B;](/help/sites-cloud/authoring/assets/versions-revert.png) terug
 
 1. Selecteer **terugkeren aan deze Versie**. De geselecteerde versie wordt hersteld en de informatie in de tijdlijn wordt bijgewerkt.
 
@@ -115,9 +115,9 @@ Om **terug te keren** de geselecteerde pagina aan een vorige versie:
 
 Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de huidige map te herstellen. Het kan ook het terugzetten van pagina&#39;s omvatten die eerder zijn geschrapt:
 
-1. Navigeer aan, en [ selecteer ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste omslag.
+1. Navigeer aan, en [&#x200B; selecteer &#x200B;](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste omslag.
 
-1. Selecteer **herstellen**, dan **herstelt Versie** van de hoogste [ actiestoolbar ](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar).
+1. Selecteer **herstellen**, dan **herstelt Versie** van de hoogste [&#x200B; actiestoolbar &#x200B;](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar).
 
    >[!NOTE]
    >
@@ -130,15 +130,15 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
 
 1. De beschikbare versies worden weergegeven:
 
-   ![ herstelt Versie - Lijst van alle pagina&#39;s in omslag ](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+   ![&#x200B; herstelt Versie - Lijst van alle pagina&#39;s in omslag &#x200B;](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
 1. Voor een specifieke pagina, gebruik de drop-down selecteur onder **HERSTEL AAN VERSIE** om de vereiste versie voor die pagina te selecteren.
 
-   ![ herstelt Versie - Uitgezochte Versie ](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+   ![&#x200B; herstelt Versie - Uitgezochte Versie &#x200B;](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
 1. Selecteer in het hoofdscherm de pagina die u wilt herstellen:
 
-   ![ herstelt Versie - selecteer Pagina ](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+   ![&#x200B; herstelt Versie - selecteer Pagina &#x200B;](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
 1. Selecteer **Herstel** voor de geselecteerde versie, van de geselecteerde pagina, die als huidige versie moet worden hersteld.
 
@@ -150,11 +150,11 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
 
 Deze methode kan worden gebruikt om een versie van een boom op een gespecificeerde datum en tijd te herstellen. Deze pagina kan pagina&#39;s bevatten die eerder zijn verwijderd:
 
-1. Navigeer aan, en [ selecteer ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste omslag.
+1. Navigeer aan, en [&#x200B; selecteer &#x200B;](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste omslag.
 
-1. Selecteer **herstellen**, dan **herstellen Boom** van de hoogste [ actiestoolbar ](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar). De meest recente versie van de boomstructuur wordt weergegeven:
+1. Selecteer **herstellen**, dan **herstellen Boom** van de hoogste [&#x200B; actiestoolbar &#x200B;](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar). De meest recente versie van de boomstructuur wordt weergegeven:
 
-   ![ herstelt Boom ](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
+   ![&#x200B; herstelt Boom &#x200B;](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
 1. Gebruik de datum en tijdselecteur bij **Latest Versies bij Datum** zodat kunt u een andere versie van de boom selecteren - te herstellen.
 
@@ -171,11 +171,11 @@ Deze methode kan worden gebruikt om een versie van een boom op een gespecificeer
 U kunt een voorvertoning van een specifieke versie weergeven:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt voorvertonen:
 
-   ![ versie van de Voorproef ](/help/sites-cloud/authoring/assets/versions-revert.png)
+   ![&#x200B; versie van de Voorproef &#x200B;](/help/sites-cloud/authoring/assets/versions-revert.png)
 
 1. Selecteer **Voorproef**. De pagina wordt weergegeven op een nieuw tabblad.
 
@@ -183,20 +183,20 @@ U kunt een voorvertoning van een specifieke versie weergeven:
    >
    >Als een pagina is verplaatst, kunt u geen voorvertoning meer weergeven van versies die vóór de verplaatsing zijn gemaakt.
    >
-   >Als u problemen met een voorproef ervaart, controleer de [ Chronologie ](/help/sites-cloud/authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
+   >Als u problemen met een voorproef ervaart, controleer de [&#x200B; Chronologie &#x200B;](/help/sites-cloud/authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
 
 ## Een versie vergelijken met de huidige pagina {#comparing-a-version-with-current-page}
 
 Een vorige versie vergelijken met de huidige pagina:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt vergelijken:
 
-   ![ vergelijkt versies ](/help/sites-cloud/authoring/assets/versions-revert.png)
+   ![&#x200B; vergelijkt versies &#x200B;](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Selecteer **vergelijken met Huidige**. Het [ pagina diff ](/help/sites-cloud/authoring/sites-console/page-diff.md) opent en toont de verschillen.
+1. Selecteer **vergelijken met Huidige**. Het [&#x200B; pagina diff &#x200B;](/help/sites-cloud/authoring/sites-console/page-diff.md) opent en toont de verschillen.
 
 ## Timewarp {#timewarp}
 
@@ -219,23 +219,23 @@ Deze functie gebruiken:
 
 >[!TIP]
 >
->[ de Tijd van de Onderbreking kan ook met Lanceringen worden gebruikt om de toekomst ](/help/sites-cloud/authoring/launches/preview.md) voor te vertonen.
+>[&#x200B; de Tijd van de Onderbreking kan ook met Lanceringen worden gebruikt om de toekomst &#x200B;](/help/sites-cloud/authoring/launches/preview.md) voor te vertonen.
 
 ### Tijdverdraaiing gebruiken {#using-timewarp}
 
-De tijdverdraaiing is a [ wijze ](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) van de paginaredacteur. Om het te beginnen, eenvoudig schakelaar het zoals u een andere wijze.
+De tijdverdraaiing is a [&#x200B; wijze &#x200B;](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) van de paginaredacteur. Om het te beginnen, eenvoudig schakelaar het zoals u een andere wijze.
 
 1. Begin de redacteur voor de pagina waar u Tijdverdraaiing wilt beginnen en dan **Tijdverdraaiing** op de wijzeselectie selecteren.
 
-   ![ wijze Tijdverdraaiing ](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
+   ![&#x200B; wijze Tijdverdraaiing &#x200B;](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
 1. In de dialoogdoos, plaats een doeldatum en tijd en klik **Vastgestelde Datum**. Als u geen tijd selecteert, wordt standaard de huidige tijd gebruikt.
 
-   ![ de doeldatum van de tijdverdraaiing ](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
+   ![&#x200B; de doeldatum van de tijdverdraaiing &#x200B;](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
 1. De pagina wordt weergegeven op basis van de datumset. De modus Tijdlijn verdraaien wordt aangegeven met de blauwe statusbalk boven in het venster. Gebruik de koppelingen op de statusbalk, zodat u een nieuwe doeldatum kunt selecteren of de modus Tijdwijziging kunt afsluiten.
 
-   ![ op wijze Timewarp ](/help/sites-cloud/authoring/assets/versions-timewarp.png)
+   ![&#x200B; op wijze Timewarp &#x200B;](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 
 ### Beperkingen voor tijdwijziging {#timewarp-limitations}
 
@@ -244,7 +244,7 @@ Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de
 * **de werken van de Onderbreking van de Onderbreking die op gepubliceerde pagina&#39;s** worden gebaseerd - de Onderbreking werkt slechts volledig als u eerder de pagina hebt gepubliceerd. Als dat niet het geval is, wordt bij Timewarp de huidige pagina in de auteursomgeving weergegeven.
 * **Tijdverdraaiing gebruikt paginaversies** - als u aan een pagina navigeert die is verwijderd/geschrapt uit de bewaarplaats het behoorlijk teruggegeven als de oude versies van de pagina nog in de bewaarplaats beschikbaar zijn.
 * **Verwijderde versies beïnvloeden Timewarp** - als de versies uit de bewaarplaats dan worden verwijderd kan de Timewarp niet de correcte mening tonen.
-* **Tijdverdraaiing is read-only** - u kunt niet de oude versie van de pagina uitgeven. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat manueel doen gebruikend [ herstellen ](#revert-to-a-version).
+* **Tijdverdraaiing is read-only** - u kunt niet de oude versie van de pagina uitgeven. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat manueel doen gebruikend [&#x200B; herstellen &#x200B;](#revert-to-a-version).
 * **Tijdverdraaiing is gebaseerd op paginacontent** - als de elementen voor het teruggeven van de website, zoals code, css, en activa veranderden, verschilt de mening van wat het oorspronkelijk was. Deze items zijn niet in de gegevensopslagruimte geversiveerd.
 * Timewarp werkt niet voor geneste lanceringen of wanneer ervaringsfragmenten worden gebruikt.
 

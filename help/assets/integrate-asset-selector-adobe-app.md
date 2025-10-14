@@ -149,7 +149,7 @@ onErrorReceived: (type, msg) => {
 
 >[!MORELIKETHIS]
 >
->* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
->* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
->* [ integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [ de aanpassingen van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)
+>* [&#x200B; integreer de Selector van Activa met diverse toepassingen &#x200B;](/help/assets/integrate-asset-selector.md)
+>* [&#x200B; Eigenschappen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-properties.md)
+>* [&#x200B; integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [&#x200B; de aanpassingen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-customization.md)

@@ -18,8 +18,8 @@ ht-degree: 0%
 
 Als u ervaart wat u denkt is onjuist gedrag of een fout in MSM, alvorens en het gedetailleerde oplossen van problemen zeker te zijn:
 
-* Controleer [ Veelgestelde vragen MSM ](#faq) omdat uw problemen of vragen daar kunnen reeds worden gericht.
-* Controle [ MSM beste praktijken ](best-practices.md) voor verscheidene uiteinden, samen met verduidelijking van bepaalde misconcepties.
+* Controleer [&#x200B; Veelgestelde vragen MSM &#x200B;](#faq) omdat uw problemen of vragen daar kunnen reeds worden gericht.
+* Controle [&#x200B; MSM beste praktijken &#x200B;](best-practices.md) voor verscheidene uiteinden, samen met verduidelijking van bepaalde misconcepties.
 
 ## Geavanceerde informatie over uw blauwdruk en status van Live Copy zoeken {#advanced-info}
 
@@ -70,7 +70,7 @@ Hier volgen enkele veelgestelde vragen over MSM en Live Copy.
 
 De acties van de synchronisatie MSM zijn hoogst configureerbaar. Welke eigenschappen of componenten tijdens rollouts direct worden gewijzigd hangt van de eigenschappen van die configuraties af.
 
-Zie [ MSM Beste praktijken ](best-practices.md) voor meer informatie over dit onderwerp.
+Zie [&#x200B; MSM Beste praktijken &#x200B;](best-practices.md) voor meer informatie over dit onderwerp.
 
 ### Hoe kan ik rollout toestemmingen voor een groep auteurs verwijderen? {#remove-rollout-permissions}
 
@@ -93,4 +93,4 @@ Als er een zelfstandige pagina wordt gevonden, kiest MSM ervoor de naam van deze
 
 Zulk een standalone pagina in Levende subtree van het Exemplaar is typisch het resultaat van a **ontkoppel** verrichting, of de vroegere Levende pagina van het Exemplaar werd manueel geschrapt door een auteur en toen opnieuw gecreeerd met de zelfde naam.
 
-Om dit te vermijden, gebruik Levend Exemplaar **Uitstel** eigenschap in plaats van **losmaken**. Meer details op **ontkoppelen** actie kan in [ dit artikel ](creating-live-copies.md) worden gevonden.
+Om dit te vermijden, gebruik Levend Exemplaar **Uitstel** eigenschap in plaats van **losmaken**. Meer details op **ontkoppelen** actie kan in [&#x200B; dit artikel &#x200B;](creating-live-copies.md) worden gevonden.

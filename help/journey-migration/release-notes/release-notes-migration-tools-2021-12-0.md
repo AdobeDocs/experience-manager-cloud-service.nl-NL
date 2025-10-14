@@ -17,7 +17,7 @@ Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratieh
 
 >[!NOTE]
 >
->Zie [ Huidige Nota&#39;s van de Versie voor Adobe Experience Manager as a Cloud Service ](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de recentste versienota&#39;s.
+>Zie [&#x200B; Huidige Nota&#39;s van de Versie voor Adobe Experience Manager as a Cloud Service &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de recentste versienota&#39;s.
 
 ## Analysator van best practices {#bpa-release}
 
@@ -45,5 +45,5 @@ De releasedatum voor Content Transfer Tool v1.7.10 is 8 december 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Wissel dat aan de innamefase in het Hulpmiddel van de Overdracht van de Inhoud wordt toegevoegd om gebruikers toe te staan om [ pre-exemplaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL) tijdens opname onbruikbaar te maken. Voor een optimale inname moet de voorkopie tijdens inname worden uitgeschakeld voor kleine migratiesets of als er sinds de laatste inname slechts een paar blobs zijn toegevoegd.
+* Wissel dat aan de innamefase in het Hulpmiddel van de Overdracht van de Inhoud wordt toegevoegd om gebruikers toe te staan om [&#x200B; pre-exemplaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL) tijdens opname onbruikbaar te maken. Voor een optimale inname moet de voorkopie tijdens inname worden uitgeschakeld voor kleine migratiesets of als er sinds de laatste inname slechts een paar blobs zijn toegevoegd.
 * Gebruikerstoewijzing bijgewerkt om de verbeterde gebruikersbeheer-API te gebruiken waarmee 2000 gebruikers tegelijk kunnen worden opgehaald, hetgeen de prestaties aanzienlijk verbetert.

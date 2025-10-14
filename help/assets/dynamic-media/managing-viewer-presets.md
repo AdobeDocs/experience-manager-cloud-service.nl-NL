@@ -25,9 +25,9 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-Zie ook de [ Dynamische Gids van de Verwijzing van de Kijkers van Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL).
+Zie ook de [&#x200B; Dynamische Gids van de Verwijzing van de Kijkers van Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL).
 
-In deze sectie wordt beschreven hoe u voorinstellingen voor viewers kunt maken, bewerken en beheren. U kunt een viewervoorinstelling op elk gewenst moment op een element toepassen. Zie [ Kijker toepassen vooraf instelt ](#applying-a-viewer-preset-to-an-asset).
+In deze sectie wordt beschreven hoe u voorinstellingen voor viewers kunt maken, bewerken en beheren. U kunt een viewervoorinstelling op elk gewenst moment op een element toepassen. Zie [&#x200B; Kijker toepassen vooraf instelt &#x200B;](#applying-a-viewer-preset-to-an-asset).
 
 >[!NOTE]
 >
@@ -37,28 +37,28 @@ In deze sectie wordt beschreven hoe u voorinstellingen voor viewers kunt maken, 
 
 Alle viewers die niet in de verpakking zijn opgenomen, ondersteunen toegankelijkheid van het toetsenbord.
 
-Zie ook [ toegankelijkheid van het Toetsenbord en navigatie ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=nl-NL).
+Zie ook [&#x200B; toegankelijkheid van het Toetsenbord en navigatie &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=nl-NL).
 
 ## Voorinstellingen voor viewers beheren {#managing-viewer-presets-1}
 
 U kunt in Adobe Experience Manager voorinstellingen voor viewers toevoegen, bewerken, verwijderen, publiceren, ongedaan maken en voorvertonen door naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]** te navigeren.
 
-![ 6_5_tools-assets-viewerpresets ](assets/6_5_tools-assets-viewerpresets.png)
+![&#x200B; 6_5_tools-assets-viewerpresets &#x200B;](assets/6_5_tools-assets-viewerpresets.png)
 
 >[!NOTE]
 >
->Standaard geeft het systeem 15 voorinstellingen voor viewers weer wanneer u Viewers selecteert in de gedetailleerde weergave van elementen. U kunt deze limiet verhogen. Zie [ Verhoog het aantal kijker vooraf instelt die ](#increasing-the-number-of-viewer-presets-that-display) tonen.
+>Standaard geeft het systeem 15 voorinstellingen voor viewers weer wanneer u Viewers selecteert in de gedetailleerde weergave van elementen. U kunt deze limiet verhogen. Zie [&#x200B; Verhoog het aantal kijker vooraf instelt die &#x200B;](#increasing-the-number-of-viewer-presets-that-display) tonen.
 
 ### Viewer-ondersteuning voor responsieve webpagina&#39;s {#viewer-support-for-responsive-designed-web-pages}
 
 Verschillende webpagina&#39;s hebben verschillende behoeften. Soms wilt u bijvoorbeeld een webpagina die een koppeling bevat waarmee de HTML5 Viewer in een apart browservenster wordt geopend. In andere gevallen moet u de HTML5 Viewer rechtstreeks insluiten op de hostpagina. In het laatste geval heeft de webpagina een statische indeling. Of de interface reageert op een ander scherm en wordt op verschillende apparaten of voor verschillende venstergrootten van de browser anders weergegeven. Om aan deze behoeften tegemoet te komen, ondersteunen alle vooraf gedefinieerde, kant-en-klare HTML5 Viewers die bij Dynamic Media worden geleverd zowel statische webpagina&#39;s als responsieve webpagina&#39;s.
 
-Zie [ Responsieve Statische bibliotheek van het Beeld ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=nl-NL#about-responsive-image-library) in het *Dynamische Beeld van Media die en API Hulp teruggeven* voor meer informatie over hoe te om ontvankelijke kijkers op uw Web-pagina&#39;s in te bedden.
+Zie [&#x200B; Responsieve Statische bibliotheek van het Beeld &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=nl-NL#about-responsive-image-library) in het *Dynamische Beeld van Media die en API Hulp teruggeven* voor meer informatie over hoe te om ontvankelijke kijkers op uw Web-pagina&#39;s in te bedden.
 
 >[!NOTE]
 >
 >Publiceer alle viewers buiten de box voordat u ze voor het eerst gebruikt.
->Zie [ Publish Kijker vooraf instelt ](#publishing-viewer-presets).
+>Zie [&#x200B; Publish Kijker vooraf instelt &#x200B;](#publishing-viewer-presets).
 
 ### Compatibiliteit van het systeem met voorinstellingen voor viewers  {#viewer-preset-system-compatibility}
 
@@ -152,19 +152,19 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
 
 In de volgende tabel worden alle vooraf gedefinieerde, kant-en-klare voorinstellingen voor viewers weergegeven die bij Dynamische media worden geleverd.
 
-Zie ook [ Levende Demo&#39;s ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+Zie ook [&#x200B; Levende Demo&#39;s &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Voor informatie over ondersteunde webbrowsers en besturingssysteemversies voor Viewers kunt u de Opmerkingen bij de release Viewers bekijken.
 
-Zie &quot;de versiennota&#39;s van Kijkers&quot;in de inhoudstafel van de [ Gids van de Verwijzing van Kijkers ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL).
+Zie &quot;de versiennota&#39;s van Kijkers&quot;in de inhoudstafel van de [&#x200B; Gids van de Verwijzing van Kijkers &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL).
 
 >[!NOTE]
 >
 >Alle voorinstellingen van de viewer buiten de box in Dynamic Media worden geactiveerd (ingeschakeld), maar u moet ze publiceren.
->Zie [ publiceren kijkersvoorinstellingen ](#publishing-viewer-presets).
+>Zie [&#x200B; publiceren kijkersvoorinstellingen &#x200B;](#publishing-viewer-presets).
 >
 >Alle nieuwe viewervoorinstellingen die u maakt en toevoegt, moeten zowel worden geactiveerd *als *gepubliceerd.
->Zie [ kijker activeren of deactiveren vooraf instelt ](#activating-or-deactivating-viewer-presets) en [ het Publiceren kijker vooraf instelt ](#publishing-viewer-presets).
+>Zie [&#x200B; kijker activeren of deactiveren vooraf instelt &#x200B;](#activating-or-deactivating-viewer-presets) en [&#x200B; het Publiceren kijker vooraf instelt &#x200B;](#publishing-viewer-presets).
 
 <table>
  <tbody>
@@ -374,15 +374,15 @@ Experience Manager biedt een groot aantal verschillende viewervoorinstellingen w
 
 **om het aantal kijker te verhogen stelt die worden getoond:**
 
-1. Navigeer aan CRXDE Lite ([ https://localhost:4502/crx/de ](https://localhost:4502/crx/de)).
+1. Navigeer aan CRXDE Lite ([&#x200B; https://localhost:4502/crx/de &#x200B;](https://localhost:4502/crx/de)).
 1. Ga naar het keuzerondje met voorinstellingen voor viewer op `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
-   ![ chlimage_1-221 ](/help/assets/dynamic-media/assets/chlimage_1-221.png)
+   ![&#x200B; chlimage_1-221 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-221.png)
 
 1. Wijzig in de eigenschap **[!UICONTROL limit]** de **[!UICONTROL Value]**, die standaard op 15 is ingesteld, in het gewenste getal.
 1. Navigeer naar de gegevensbron voor de viewervoorinstelling op `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist/datasource`
 
-   ![ chlimage_1-222 ](/help/assets/dynamic-media/assets/chlimage_1-222.png)
+   ![&#x200B; chlimage_1-222 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
 1. Wijzig in de eigenschap limit het getal in het gewenste getal, bijvoorbeeld `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Selecteer **[!UICONTROL Save All]** .
@@ -395,15 +395,15 @@ Als u een viewervoorinstelling maakt nadat u deze hebt opgeslagen, wordt de stat
 
 Sommige voorinstellingen voor viewers hebben exclusieve instellingen die het gebruik en het algemene gedrag van de viewer kunnen beïnvloeden. Afhankelijk van de viewervoorinstelling die u maakt, wilt u zich bewust zijn van deze speciale overwegingen.
 
-Zie [ Speciale overwegingen voor het creëren van een Interactieve Kijker vooraf ingesteld ](#special-considerations-for-creating-an-interactive-viewer-preset).
+Zie [&#x200B; Speciale overwegingen voor het creëren van een Interactieve Kijker vooraf ingesteld &#x200B;](#special-considerations-for-creating-an-interactive-viewer-preset).
 
-Zie [ Speciale overwegingen voor het creëren van een vooraf ingestelde Kijker van de Banner van de Carrousel ](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
+Zie [&#x200B; Speciale overwegingen voor het creëren van een vooraf ingestelde Kijker van de Banner van de Carrousel &#x200B;](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
 **om kijkersvoorinstellingen tot stand te brengen:**
 
 1. Selecteer in de linkerbovenhoek van Experience Manager het Experience Manager-logo en ga vervolgens in de linkerrails naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]** .
 
-   ![ 6_5_viewerpresets ](assets/6_5_viewerpresets.png)
+   ![&#x200B; 6_5_viewerpresets &#x200B;](assets/6_5_viewerpresets.png)
 
 1. Selecteer op de pagina Voorinstellingen viewer op de werkbalk de optie **[!UICONTROL Create]** .
 1. Voer in het veld **[!UICONTROL Preset Name]** in het dialoogvenster **[!UICONTROL New Viewer Preset]** de naam van de nieuwe voorinstelling in. Kies een zorgvuldig gekozen naam. U kunt deze niet bewerken nadat u **[!UICONTROL Create]** hebt geselecteerd.
@@ -412,7 +412,7 @@ Zie [ Speciale overwegingen voor het creëren van een vooraf ingestelde Kijker v
 
 1. Selecteer in het vervolgkeuzemenu Type rijke media het type voorinstelling voor de viewer dat u wilt maken en selecteer vervolgens in de rechterbovenhoek van de pagina **[!UICONTROL Create]** .
 
-   Zie [ Rijke Types van Media voor Kijker vooraf instelt ](#rich-media-types-for-viewer-presets).
+   Zie [&#x200B; Rijke Types van Media voor Kijker vooraf instelt &#x200B;](#rich-media-types-for-viewer-presets).
 
 1. Selecteer op de pagina Viewer Preset Editor de tab **[!UICONTROL Appearance]** .
 1. Voer een van de volgende handelingen uit:
@@ -421,13 +421,13 @@ Zie [ Speciale overwegingen voor het creëren van een vooraf ingestelde Kijker v
 
      Met de visuele editor kunt u zien welk effect een bepaalde eigenschap heeft op een stijl. Stel een eigenschap in of pas deze aan om direct te zien welk effect het heeft op de viewer met behulp van het voorbeeld links van de editor.
 
-     De CSS het stileren eigenschappen voor elk type van vooraf ingesteld kijker worden beschreven in het &quot;Aanpassen *`<viewer name>`* onderwerp van de Hulp van de Kijker&quot;in de [ Gids van de Verwijzing van Kijkers ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL). Bijvoorbeeld, als u een kijker creeert vooraf ingesteld van het type `Mixed_Media`, zie [ Gemengde kijker van Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=nl-NL) voor een lijst en een beschrijving van elk bezit aanpassen.
+     De CSS het stileren eigenschappen voor elk type van vooraf ingesteld kijker worden beschreven in het &quot;Aanpassen *`<viewer name>`* onderwerp van de Hulp van de Kijker&quot;in de [&#x200B; Gids van de Verwijzing van Kijkers &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL). Bijvoorbeeld, als u een kijker creeert vooraf ingesteld van het type `Mixed_Media`, zie [&#x200B; Gemengde kijker van Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=nl-NL) voor een lijst en een beschrijving van elk bezit aanpassen.
 
    * Als u stijlinstellingen hebt gedefinieerd in een afzonderlijk CSS-bestand, kunt u het CSS-bestand uploaden naar Experience Manager Assets. Als u het geüploade CSS-bestand wilt zoeken en dit wilt koppelen aan de viewervoorinstelling, selecteert u **[!UICONTROL Import CSS]** onder het keuzemenu **[!UICONTROL Selected Type]** (schuif zo nodig door de visuele editor omhoog om dit te zien).
 
      Wanneer u een CSS-bestand importeert, controleert de visuele editor of de CSS de juiste viewermarkeringen gebruikt. Als u bijvoorbeeld een zoomviewer maakt, moeten alle CSS-regels die u importeert, worden gedefinieerd met de viewerklassenaam `.s7mixedmediaviewer` die is gedefinieerd voor een bovenliggend viewerelement.
 
-     U kunt willekeurige, handgemaakte CSS importeren zolang deze de CSS-markeringen voor een bepaalde viewer correct definieert. (CSS de tellers worden beschreven in om het even welk &quot;het Aanpassen *&lt;viewer name>* het onderwerp van de Hulp van de Kijker&quot;in de [ Gids van de Verwijzing van Kijkers ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL). Bijvoorbeeld, als u over CSS tellers voor de Kijker van het Gezoem wilt lezen, zie [ het Aanpassen van de Kijker van het Gezoem ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=nl-NL).) Het is echter mogelijk, dat de visuele redacteur sommige CSS waarden niet begrijpt. In dergelijke gevallen probeert de visuele editor de fouten te negeren zodat de CSS nog steeds werkt.
+     U kunt willekeurige, handgemaakte CSS importeren zolang deze de CSS-markeringen voor een bepaalde viewer correct definieert. (CSS de tellers worden beschreven in om het even welk &quot;het Aanpassen *&lt;viewer name>* het onderwerp van de Hulp van de Kijker&quot;in de [&#x200B; Gids van de Verwijzing van Kijkers &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL). Bijvoorbeeld, als u over CSS tellers voor de Kijker van het Gezoem wilt lezen, zie [&#x200B; het Aanpassen van de Kijker van het Gezoem &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=nl-NL).) Het is echter mogelijk, dat de visuele redacteur sommige CSS waarden niet begrijpt. In dergelijke gevallen probeert de visuele editor de fouten te negeren zodat de CSS nog steeds werkt.
 
    >[!NOTE]
    >
@@ -465,11 +465,11 @@ Bijvoorbeeld, voor het *type 0&rbrace; VideoPlayer, onder **[!UICONTROL Modifier
 1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
 1. Publiceer uw nieuwe viewervoorinstelling. U moet de voorinstelling publiceren zodat u de resulterende URL op uw website kunt gebruiken.
 
-   Zie [ het Publiceren Kijker stelt ](#publishing-viewer-presets) vooraf in.
+   Zie [&#x200B; het Publiceren Kijker stelt &#x200B;](#publishing-viewer-presets) vooraf in.
 
    >[!IMPORTANT]
    >
-   >Voor oude video&#39;s die een adaptieve bitrate het stromen profiel gebruiken, blijft URL zoals gebruikelijk spelen — met HLS het stromen — tot u [ de videoactiva ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerkt. Na herverwerking, zal zelfde URL blijven werken maar nu met *zowel* toegelaten stromen DASH als HLS.
+   >Voor oude video&#39;s die een adaptieve bitrate het stromen profiel gebruiken, blijft URL zoals gebruikelijk spelen — met HLS het stromen — tot u [&#x200B; de videoactiva &#x200B;](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerkt. Na herverwerking, zal zelfde URL blijven werken maar nu met *zowel* toegelaten stromen DASH als HLS.
 
 ### Speciale overwegingen voor het maken van een interactieve viewervoorinstelling {#special-considerations-for-creating-an-interactive-viewer-preset}
 
@@ -550,9 +550,9 @@ Als u de status van een viewervoorinstelling activeert (of inschakelt), betekent
 
 Nochtans, om *te leveren* een activa met vooraf ingestelde kijker, moet de kijker vooraf ingesteld eveneens worden gepubliceerd. Alle kijkers moeten worden geactiveerd *en* worden gepubliceerd om URL te verkrijgen of code voor een activa in te bedden. Activeer en publiceer alle voorinstellingen van de viewer buiten de box die bij Dynamische media worden geleverd. Aangepaste viewervoorinstellingen die u maakt en toevoegt, worden automatisch geactiveerd, maar moeten ook worden gepubliceerd.
 
-Zie [ het activeren of Deactiveren van Kijker stelt ](#activating-or-deactivating-viewer-presets) vooraf in.
+Zie [&#x200B; het activeren of Deactiveren van Kijker stelt &#x200B;](#activating-or-deactivating-viewer-presets) vooraf in.
 
-Zie ook [ Previewing Assets ](/help/assets/dynamic-media/previewing-assets.md).
+Zie ook [&#x200B; Previewing Assets &#x200B;](/help/assets/dynamic-media/previewing-assets.md).
 
 **om kijkersvoorinstellingen te publiceren:**
 
@@ -607,10 +607,10 @@ Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de
 
 1. Selecteer een viewervoorinstelling in het linkerdeelvenster om deze toe te passen op het element.
 
-   U kunt [ URL kopiëren om ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
+   U kunt [&#x200B; URL kopiëren om &#x200B;](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
 
 ## Elementen leveren met viewervoorinstellingen {#delivering-assets-with-viewer-presets}
 
-Om URLs voor Kijker te krijgen stelt vooraf in, zie [ Verbinding URLs aan uw toepassing van het Web ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Zie ook [ bed de VideoKijker op een Web-pagina ](/help/assets/dynamic-media/embed-code.md) in.
+Om URLs voor Kijker te krijgen stelt vooraf in, zie [&#x200B; Verbinding URLs aan uw toepassing van het Web &#x200B;](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Zie ook [&#x200B; bed de VideoKijker op een Web-pagina &#x200B;](/help/assets/dynamic-media/embed-code.md) in.
 
-Als u Experience Manager als uw WCM gebruikt, kunt u elementen toevoegen met behulp van de voorinstellingen van de viewer rechtstreeks op de pagina. Zie [ Dynamische Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.
+Als u Experience Manager als uw WCM gebruikt, kunt u elementen toevoegen met behulp van de voorinstellingen van de viewer rechtstreeks op de pagina. Zie [&#x200B; Dynamische Media Assets aan Pagina&#39;s &#x200B;](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.

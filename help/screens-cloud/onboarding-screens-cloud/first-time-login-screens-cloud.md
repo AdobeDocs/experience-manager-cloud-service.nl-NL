@@ -20,11 +20,11 @@ Na ondertekening van het contract start de Adobe Managed Services (AMS) de klant
 
 ## Gebruikers toevoegen aan Adobe Admin Console {#admin-console}
 
-Zodra u met een identiteitskaart van de Organisatie van het Systeem van Identity Management van de Adobe (IMS) bent voorzien, kunt u tot [ Adobe Admin Console ](https://adminconsole.adobe.com/) nu toegang hebben. Zie [ gebruikers van Adobe Admin Console ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/users.ug.html) om meer over het toevoegen van gebruikers aan de Admin Console te leren.
+Zodra u met een identiteitskaart van de Organisatie van het Systeem van Identity Management van de Adobe (IMS) bent voorzien, kunt u tot [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com/) nu toegang hebben. Zie [&#x200B; gebruikers van Adobe Admin Console &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/users.ug.html) om meer over het toevoegen van gebruikers aan de Admin Console te leren.
 
 >[!NOTE]
 >Gebruikers hebben toegang tot het AEM Cloud Service-productprofiel, zodat ze zich kunnen aanmelden om te AEM met Adobe ID of Federated ID.
 
 ## Volgende functies {#whats-next}
 
-Nu u met een identiteitskaart van de Organisatie IMS en toegevoegd als gebruiker aan Adobe Admin Console bent voorzien, kunt u nu Screens als [ toe:voegen-op aan een nieuw programma ](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) of aan [ een bestaand programma ](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) in Cloud Manager toevoegen.
+Nu u met een identiteitskaart van de Organisatie IMS en toegevoegd als gebruiker aan Adobe Admin Console bent voorzien, kunt u nu Screens als [&#x200B; toe:voegen-op aan een nieuw programma &#x200B;](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) of aan [&#x200B; een bestaand programma &#x200B;](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) in Cloud Manager toevoegen.

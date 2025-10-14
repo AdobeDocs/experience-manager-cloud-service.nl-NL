@@ -28,7 +28,7 @@ De volgende sectie om de Leverancier van de Diensten van Screens te vormen en te
 
 Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
 
-1. Navigeer aan de [ Leverancier van de Diensten van Screens ](https://experience.adobe.com/screens).
+1. Navigeer aan de [&#x200B; Leverancier van de Diensten van Screens &#x200B;](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Als u toegang tot veelvoudige organisaties hebt, zorg ervoor dat u in correcte Organisatie hebt geregistreerd. Als u uw organisatie wilt wijzigen, klikt u op de naam van de organisatie in de rechterbovenhoek van het scherm en kiest u de gewenste organisatie waartoe u toegang nodig hebt.
@@ -49,11 +49,11 @@ Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
 1. Klik **sparen** om met de inhoudsleverancier van Screens te verbinden.
 
 1. Als u de AEM publiceer instantie hebt gevormd om toegang tot vertrouwde IP adressen door de eigenschap van de Lijst van gewenste personen van Cloud Manager IP slechts toe te staan, moet u een kopbal met een zeer belangrijke waarde in de instellingendialoog zoals hieronder getoond vormen.
-IPs die aan whitelisted ook moet worden bewogen aan het configuratiedossier en moet [ niet worden toegepast ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) van de montages van Cloud Manager zijn.
+IPs die aan whitelisted ook moet worden bewogen aan het configuratiedossier en moet [&#x200B; niet worden toegepast &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) van de montages van Cloud Manager zijn.
 
-   ![ beeld ](/help/screens-cloud/assets/configure/configure-screens20b.png)
-De zelfde sleutel moet bij AEM configuratie worden gevormd CDN.  Het wordt geadviseerd om de kopbalwaarde niet direct in GITHub te zetten en a [ geheime verwijzing ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) te gebruiken.
-Een steekproef [ CDN config ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) wordt hieronder gegeven:
+   ![&#x200B; beeld &#x200B;](/help/screens-cloud/assets/configure/configure-screens20b.png)
+De zelfde sleutel moet bij AEM configuratie worden gevormd CDN.  Het wordt geadviseerd om de kopbalwaarde niet direct in GITHub te zetten en a [&#x200B; geheime verwijzing &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) te gebruiken.
+Een steekproef [&#x200B; CDN config &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) wordt hieronder gegeven:
 
    ```kind: "CDN"
        version: "1"
@@ -98,4 +98,4 @@ Een steekproef [ CDN config ](https://experienceleague.adobe.com/nl/docs/experie
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe te opstelling de Leverancier van de Diensten van Screens, navigeer aan [ Gebruikend de Leverancier van de Inhoud van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=nl-NL#screens-content-provider) voor meer details.
+Nadat u hebt geleerd hoe te opstelling de Leverancier van de Diensten van Screens, navigeer aan [&#x200B; Gebruikend de Leverancier van de Inhoud van Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=nl-NL#screens-content-provider) voor meer details.

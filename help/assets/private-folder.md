@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 In de gebruikersinterface van [!DNL Adobe Experience Manager Assets] kunt u een persoonlijke map maken die exclusief voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de elementen in de map weergeven of de elementen bewerken.
@@ -33,21 +33,21 @@ Een persoonlijke map maken en delen:
 
 1. Klik in de [!DNL Assets] -console op de knop **[!UICONTROL Create]** op de werkbalk en selecteer vervolgens **[!UICONTROL Folder]** in het menu.
 
-   ![ creeer activa omslag ](assets/create-folder.png)
+   ![&#x200B; creeer activa omslag &#x200B;](assets/create-folder.png)
 
 1. Voer in het dialoogvenster **[!UICONTROL Create Folder]** een `Title` en `Name` (optioneel) voor de map in.
 
    Selecteer het selectievakje **[!UICONTROL Private]** en klik op **[!UICONTROL Create]** .
 
-   ![ chlimage_1-413 ](assets/create-private-folder.png)
+   ![&#x200B; chlimage_1-413 &#x200B;](assets/create-private-folder.png)
 
-   Er wordt een persoonlijke map gemaakt. U kunt nu [ activa ](add-assets.md#upload-assets) aan de omslag toevoegen en de omslag met andere gebruikers of groepen delen. De map is pas zichtbaar voor andere gebruikers als u deze deelt en er rechten aan toewijst.
+   Er wordt een persoonlijke map gemaakt. U kunt nu [&#x200B; activa &#x200B;](add-assets.md#upload-assets) aan de omslag toevoegen en de omslag met andere gebruikers of groepen delen. De map is pas zichtbaar voor andere gebruikers als u deze deelt en er rechten aan toewijst.
 
 1. Als u de map wilt delen, selecteert u de map en klikt u op **[!UICONTROL Properties]** op de werkbalk.
 
 1. Selecteer op de pagina **[!UICONTROL Folder Properties]** een gebruiker of groep in de lijst **[!UICONTROL Add User]** , wijs een rol ( `Viewer` , `Editor` of `Owner` ) toe aan uw persoonlijke map en klik op **[!UICONTROL Add]** .
 
-   ![ wijs-gebruiker-groep ](assets/assign-permissions-private-folder.png) toe
+   ![&#x200B; wijs-gebruiker-groep &#x200B;](assets/assign-permissions-private-folder.png) toe
 
    U kunt verschillende rollen, zoals `Editor` , `Owner` of `Viewer` , toewijzen aan de gebruiker met wie u de map deelt. Als u een `Owner` rol aan de gebruiker toewijst, heeft de gebruiker `Editor` voorrechten op de omslag. Bovendien kan de gebruiker de map met anderen delen. Als u een `Editor` rol toewijst, kan de gebruiker de activa in uw privé omslag uitgeven. Als u een viewerrol toewijst, kan de gebruiker alleen de elementen in uw persoonlijke map bekijken.
 
@@ -61,7 +61,7 @@ Een persoonlijke map maken en delen:
 
 1. Klik op [!UICONTROL Notifications] om een lijst met meldingen te openen.
 
-   ![ bericht ](assets/notification-icon.png)
+   ![&#x200B; bericht &#x200B;](assets/notification-icon.png)
 
 1. Klik op de vermelding voor de privémap die door de beheerder wordt gedeeld om de map te openen.
 
@@ -69,7 +69,7 @@ Een persoonlijke map maken en delen:
 
 U kunt een map verwijderen door de map te selecteren en de optie [!UICONTROL Delete] te selecteren in het bovenste menu of door de Backspace-toets op het toetsenbord te gebruiken.
 
-![ schrappingsoptie in hoogste menu ](assets/delete-option.png)
+![&#x200B; schrappingsoptie in hoogste menu &#x200B;](assets/delete-option.png)
 
 >[!CAUTION]
 >

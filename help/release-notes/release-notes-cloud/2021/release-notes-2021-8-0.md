@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -30,7 +30,7 @@ De volgende release (2021.9.0) vindt plaats op 6 oktober 2021.
 
 ## Video vrijgeven {#release-video}
 
-Heb een blik bij de [ Augustus 2021 video van het Overzicht van de Versie ](https://video.tv.adobe.com/v/336277) voor een samenvatting van de toegevoegde eigenschappen.
+Heb een blik bij de [&#x200B; Augustus 2021 video van het Overzicht van de Versie &#x200B;](https://video.tv.adobe.com/v/336277) voor een samenvatting van de toegevoegde eigenschappen.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -38,19 +38,19 @@ Heb een blik bij de [ Augustus 2021 video van het Overzicht van de Versie ](http
 
 * Wanneer de gebruiker digitale middelen als verbinding deelt, kan de gebruiker URL aan het klembord onmiddellijk kopiëren. Dankzij deze verbetering kunt u elementen sneller en handiger delen. Dankzij deze functionaliteit kunt u sneller en handig elementen delen.
 
-  ![ optie van URL van het Exemplaar wanneer het delen van activa als verbinding ](/help/assets/assets/link-share-copy-URL-option.png)
+  ![&#x200B; optie van URL van het Exemplaar wanneer het delen van activa als verbinding &#x200B;](/help/assets/assets/link-share-copy-URL-option.png)
   *Cijfer: Wanneer het delen van een activa als verbinding, kunt u URL nu kopiëren om het afzonderlijk te delen.*
 
 * Wanneer u TXT-bestanden uploadt, genereren de elementmicroservices automatisch een miniatuur. De PNG-miniatuur is een uitvoering van een TXT-bestand waarmee gebruikers de inhoud of de bestanden tot op zekere hoogte kunnen identificeren zonder de bestanden te openen. Deze functionaliteit vereist geen configuratie en werkt standaard.
 
-  ![ De vertoning van A van een TXT- dossier wordt automatisch geproduceerd door [!DNL Assets] in een formaat PNG ](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  ![&#x200B; De vertoning van A van een TXT- dossier wordt automatisch geproduceerd door [!DNL Assets] in een formaat PNG &#x200B;](/help/assets/assets/thumbnail-rendition-txt-file.png)
   *Cijfer: Een vertoning van een TXT- dossier wordt automatisch geproduceerd om u te helpen het dossier identificeren zonder te openen.*
 
 ### Nieuwe functie in het [!DNL Assets] prereleasekanaal {#assets-prerelease-features}
 
 * Gebruikers kunnen de elementen die in de zoekresultaten worden weergegeven nu sorteren in de kolom- en kaartweergave. Het sorteren werkt op de kolommen Naam, Gemaakt, Gewijzigd of Geen.
 
-  ![ Soort de onderzoeksresultaten in [!DNL Assets] in Kolom en de meningen van de Kaart ](/help/assets/assets/sort-searched-assets.png)
+  ![&#x200B; Soort de onderzoeksresultaten in [!DNL Assets] in Kolom en de meningen van de Kaart &#x200B;](/help/assets/assets/sort-searched-assets.png)
   *Cijfer: Soort de onderzoeksresultaten in [!DNL Assets] in de meningen van de Kolom en van de Kaart.*
 
 ### Buizen gecorrigeerd in [!DNL Assets] {#assets-bugs-fixed}
@@ -62,11 +62,11 @@ Heb een blik bij de [ Augustus 2021 video van het Overzicht van de Versie ](http
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* De dienst van de automatede form conversion kan [ PDF forms in het Italiaans en Portugees ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=nl-NL&#language-specific-meta-model) in Aanpassings Forms omzetten.
+* De dienst van de automatede form conversion kan [&#x200B; PDF forms in het Italiaans en Portugees &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=nl-NL&#language-specific-meta-model) in Aanpassings Forms omzetten.
 
-* **op acroform-Gebaseerd Document van Verslag**: De as a Cloud Service steunen van AEM Forms die [ de Vorm van Adobe Acrobat PDF (Acroform PDF) gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje.
+* **op acroform-Gebaseerd Document van Verslag**: De as a Cloud Service steunen van AEM Forms die [&#x200B; de Vorm van Adobe Acrobat PDF (Acroform PDF) gebruiken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje.
 
-* **Microsoft® Azure schakelaar van de gegevensopslag**: U kunt [ het Model van de Gegevens van de Vorm aan Microsoft® Azure Opslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=nl-NL) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
+* **Microsoft® Azure schakelaar van de gegevensopslag**: U kunt [&#x200B; het Model van de Gegevens van de Vorm aan Microsoft® Azure Opslag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=nl-NL) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#prerelease-features-forms}
 
@@ -82,7 +82,7 @@ Heb een blik bij de [ Augustus 2021 video van het Overzicht van de Versie ](http
 
 * De nieuwe interface van de Plukker van de Categorie voor betere gebruikerservaring, verhoogde efficiency en betere steun voor complexe productcatalogus
 
-  ![ Nieuwe Plukker van de Categorie ](/help/assets/CIF/category-picker.png)
+  ![&#x200B; Nieuwe Plukker van de Categorie &#x200B;](/help/assets/CIF/category-picker.png)
 
 * Betere A11Y-ondersteuning voor CIF Core Components
 
@@ -98,7 +98,7 @@ De volgende release is gepland voor 9 september 2021.
 ### Wat is er nieuw? {#what-is-new-aug}
 
 * Klanten van Cloud Servicen kunnen nu SLA-rapporten (Service Level Agreement) weergeven in Cloud Manager. Dit zal de komende maanden geleidelijk beschikbaar komen.
-Zie [ SLA die ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=nl-NL) meldt.
+Zie [&#x200B; SLA die &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=nl-NL) meldt.
 
 * Het type en de ernst van de IndexType- en `IndexDamAssetLucene` kwaliteitsregels zijn gewijzigd. Dit zijn nu beide Bugs van Blocker *strengheid*.
 

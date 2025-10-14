@@ -24,7 +24,7 @@ Organisaties kunnen maximaal drie extra publicatiegebieden licenties verlenen.
 >[!NOTE]
 >
 >* Deze functie is beschikbaar voor de Sites- en Forms-oplossingen.
->* Deze eigenschap kan niet op [ zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) worden toegepast.
+>* Deze eigenschap kan niet op [&#x200B; zandbakprogramma&#39;s &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) worden toegepast.
 >* Voor deze functie moet uw programma worden bijgewerkt naar AEM versie 12142 of hoger.
 
 ## Gevallen gebruiken {#use-cases}
@@ -37,7 +37,7 @@ Hieronder volgt een aantal gebruiksgevallen waarin organisaties kunnen profitere
 
 ## Het toelaten en het Vormen {#enabling-and-configuring}
 
-Nadat u een licentie voor een extra publicatiegebied hebt verleend, worden de regio&#39;s geconfigureerd met Cloud Manager. Zie de [ documentatie van Cloud Manager ](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) voor gedetailleerde instructies.
+Nadat u een licentie voor een extra publicatiegebied hebt verleend, worden de regio&#39;s geconfigureerd met Cloud Manager. Zie de [&#x200B; documentatie van Cloud Manager &#x200B;](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) voor gedetailleerde instructies.
 
 Aanvullende publicatiegebieden worden toegepast op stadium- en productieomgevingen, maar niet op RDE- of ontwikkelomgevingen.
 
@@ -50,11 +50,11 @@ Zoals beschreven in de Geavanceerde sectie van de Overwegingen van het Voorzien 
 
 Wanneer een extra publicatiegebied op een programma met geavanceerd reeds gevormd voorzien van een netwerk wordt toegelaten, zal het verkeer in het extra publicatiegebied dat de geavanceerde voorzien van een netwerkregels aanpast door standaardroute door het primaire gebied. Om uit verhoogde beschikbaarheid voordeel te halen, wordt het geadviseerd om geavanceerd voorzien van een netwerk op de extra gebieden toe te laten.
 
-Zie de [ Geavanceerde Configuratie van het Voorzien van een netwerk voor Extra Gebieden van Publish ](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) sectie in de Geavanceerde documentatie van het Voorzien van een netwerk voor details, met inbegrip van hoe te om geavanceerde voorzien van een netwerkconfiguraties aan extra gebieden toe te voegen zonder verlies van connectiviteit te veroorzaken.
+Zie de [&#x200B; Geavanceerde Configuratie van het Voorzien van een netwerk voor Extra Gebieden van Publish &#x200B;](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) sectie in de Geavanceerde documentatie van het Voorzien van een netwerk voor details, met inbegrip van hoe te om geavanceerde voorzien van een netwerkconfiguraties aan extra gebieden toe te voegen zonder verlies van connectiviteit te veroorzaken.
 
 ## Logboekregistratie {#logging}
 
-Als extra publicatiegebieden zijn ingeschakeld, worden afzonderlijke logbestanden voor elk gebied beschikbaar gesteld via Cloud Manager. Voor meer informatie, zie [ Toegang tot en het Leiden Logboeken ](/help/implementing/cloud-manager/manage-logs.md) en [ Logboeken voor de Extra Gebieden van Publish ](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+Als extra publicatiegebieden zijn ingeschakeld, worden afzonderlijke logbestanden voor elk gebied beschikbaar gesteld via Cloud Manager. Voor meer informatie, zie [&#x200B; Toegang tot en het Leiden Logboeken &#x200B;](/help/implementing/cloud-manager/manage-logs.md) en [&#x200B; Logboeken voor de Extra Gebieden van Publish &#x200B;](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Beperkingen {#limitations}
 

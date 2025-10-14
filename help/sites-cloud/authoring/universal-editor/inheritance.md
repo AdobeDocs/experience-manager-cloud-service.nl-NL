@@ -42,13 +42,13 @@ Om bepaalde inhoud van de kopieën te wijzigen, breken auteurs de overerving op 
 
 Wanneer een pagina deel van MSM uitmaakt of een Lanceer en de inhoud met de Universele Redacteur wordt uitgegeven, maakt de redacteur automatisch overerving voor alle veranderingen onbruikbaar die door auteurs op die pagina worden aangebracht, die ervoor zorgen dat de gewijzigde inhoud wordt behouden wanneer de updates van de blauwdruk worden gesynchroniseerd.
 
-De auteur hoeft niet op een knop te klikken of op een andere manier andere stappen te ondernemen om overerving uit te schakelen voordat hij lokale bewerkingen uitvoert. Zodra een verandering wordt aangebracht, wordt de erfenis impliciet geannuleerd. Dit werkschema is in tegenstelling tot de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
+De auteur hoeft niet op een knop te klikken of op een andere manier andere stappen te ondernemen om overerving uit te schakelen voordat hij lokale bewerkingen uitvoert. Zodra een verandering wordt aangebracht, wordt de erfenis impliciet geannuleerd. Dit werkschema is in tegenstelling tot de [&#x200B; Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
 Overerving kan voor de gehele pagina worden hersteld via:
 
-* [ Levende Console van het Overzicht van het Exemplaar ](/help/sites-cloud/administering/msm/live-copy-overview.md)
+* [&#x200B; Levende Console van het Overzicht van het Exemplaar &#x200B;](/help/sites-cloud/administering/msm/live-copy-overview.md)
 * [Opstartconsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-* Gebruikend de **knoop van het Terugstellen** op het **Levende lusje van het Exemplaar** van het [ pagina eigenschappen venster ](/help/sites-cloud/authoring/sites-console/page-properties.md).
+* Gebruikend de **knoop van het Terugstellen** op het **Levende lusje van het Exemplaar** van het [&#x200B; pagina eigenschappen venster &#x200B;](/help/sites-cloud/authoring/sites-console/page-properties.md).
 
 De Universal Editor heeft geen invloed op het onderliggende overervingsmechanisme. Raadpleeg de volgende documentatie voor meer informatie over hoe overerving werkt.
 
@@ -59,9 +59,9 @@ De Universal Editor heeft geen invloed op het onderliggende overervingsmechanism
 
 Indien geïnstalleerd, toont de **multi-plaats-beheer van AEM (MSM) Uitbreiding** zowel de huidige overervingsstatus van de geselecteerde component evenals staat u toe om overerving op het componentenniveau te breken of opnieuw op te nemen.
 
-Gelieve te zien [ auteursdocumentatie voor meer informatie over hoe te om deze uitbreiding te gebruiken.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+Gelieve te zien [&#x200B; auteursdocumentatie voor meer informatie over hoe te om deze uitbreiding te gebruiken.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
 
-Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Voor informatie over hoe te om deze uitbreiding toe te laten, [&#x200B; te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Beperkingen {#limitations}
 

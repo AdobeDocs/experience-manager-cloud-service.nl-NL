@@ -18,14 +18,14 @@ Leer hoe u het pre-releasekanaal gebruikt om een voorvertoning van aanstaande fu
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager as a Cloud Service biedt regelmatig nieuwe functies. De lijst van nieuwe en aanstaande eigenschappen voor een bepaalde eigenschapversie wordt gepost binnen de [ versienota&#39;s.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+Adobe Experience Manager as a Cloud Service biedt regelmatig nieuwe functies. De lijst van nieuwe en aanstaande eigenschappen voor een bepaalde eigenschapversie wordt gepost binnen de [&#x200B; versienota&#39;s.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 De volgende functies worden doorgaans op twee manieren beschikbaar gesteld:
 
 * Als onderdeel van een Alpha-, Beta- of Limited Availability-programma
 * Als onderdeel van het prereleasekanaal
 
-In dit document wordt beschreven hoe u het prereleasekanaal kunt inschakelen. Het pre-releasekanaal verleent toegang tot vroege eigenschappen die een toekomstige eigenschapversie van AEM zullen worden geïntroduceerd. Dit geeft u de kans om nieuwe eigenschappen te bevestigen en voor hun goedkeuring vóór hun toekomstige versie te plannen. Gelieve te zien de document [ Nota&#39;s van de Versie voor Adobe Experience Manager (AEM) as a Cloud Service ](/help/release-notes/home.md) voor details op het de versieschema van AEM.
+In dit document wordt beschreven hoe u het prereleasekanaal kunt inschakelen. Het pre-releasekanaal verleent toegang tot vroege eigenschappen die een toekomstige eigenschapversie van AEM zullen worden geïntroduceerd. Dit geeft u de kans om nieuwe eigenschappen te bevestigen en voor hun goedkeuring vóór hun toekomstige versie te plannen. Gelieve te zien de document [&#x200B; Nota&#39;s van de Versie voor Adobe Experience Manager (AEM) as a Cloud Service &#x200B;](/help/release-notes/home.md) voor details op het de versieschema van AEM.
 
 ## Laat het Kanaal van de Prerelease toe om tot Aankomende Eigenschappen toegang te hebben en uit te proberen {#enable-prerelease}
 
@@ -42,13 +42,13 @@ Als u een wolkenomgeving wilt bijwerken om het pre-releasekanaal te gebruiken, m
 
 #### Omgevingsvariabele toevoegen met behulp van de gebruikersinterface {#add-with-ui}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Navigeer naar het programma waar u het prereleasekanaal wilt inschakelen.
 
 1. Selecteer het milieu waar u het prereleasekanaal wilt toelaten en tot zijn configuratie via **Programma** toegang hebben > **Milieu** > **Configuratie van het Milieu**.
 
-1. Voeg een nieuwe [ milieuvariabele ](/help/implementing/cloud-manager/environment-variables.md) toe
+1. Voeg een nieuwe [&#x200B; milieuvariabele &#x200B;](/help/implementing/cloud-manager/environment-variables.md) toe
 
    | Naam | Waarde | Toegepaste service | Type |
    |------|-------|-----------------|------|
@@ -56,13 +56,13 @@ Als u een wolkenomgeving wilt bijwerken om het pre-releasekanaal te gebruiken, m
 
 1. Sla de wijzigingen op en vernieuw de omgeving met het prereleasekanaal ingeschakeld.
 
-   ![ Nieuwe omgevingsvariabele ](assets/env-configuration-prerelease.png)
+   ![&#x200B; Nieuwe omgevingsvariabele &#x200B;](assets/env-configuration-prerelease.png)
 
 #### Omgevingsvariabele toevoegen met CLI {#add-with-cli}
 
 U kunt de Cloud Manager API en CLI ook gebruiken om de omgevingsvariabelen bij te werken.
 
-* Gebruikend [ Cloud Manager API het milieu variabelen eindpunt ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), plaats de `AEM_RELEASE_CHANNEL` milieuvariabele aan de waarde `prerelease`.
+* Gebruikend [&#x200B; Cloud Manager API het milieu variabelen eindpunt &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), plaats de `AEM_RELEASE_CHANNEL` milieuvariabele aan de waarde `prerelease`.
 
   ```text
   PATCH /program/{programId}/environment/{environmentId}/variables
@@ -75,7 +75,7 @@ U kunt de Cloud Manager API en CLI ook gebruiken om de omgevingsvariabelen bij t
   ]
   ```
 
-* [ CLI van Cloud Manager ](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) kan ook worden gebruikt
+* [&#x200B; CLI van Cloud Manager &#x200B;](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) kan ook worden gebruikt
 
   ```shell
   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
@@ -89,7 +89,7 @@ U hebt toegang tot de volgende functies in het pre-releasekanaal in uw lokale Qu
 
 #### Quickstart SDK starten in pre-releasemodus {#prerelease-mode}
 
-1. Download SDK van softwaredistributie en installeer zoals die in [ wordt beschreven Toegang tot AEM as a Cloud Service SDK.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Download SDK van softwaredistributie en installeer zoals die in [&#x200B; wordt beschreven Toegang tot AEM as a Cloud Service SDK.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 1. Neem het argument `-r prerelease` op wanneer u de SDK Quickstart start start.
 
 De waarde blijft behouden, zodat deze alleen bij het eerste opstarten kan worden geselecteerd. Installeer de SDK opnieuw om de opdrachtregeloptie te wijzigen.
@@ -146,13 +146,13 @@ JavaDocs wordt gepubliceerd aan Centrale Maven.
 
 1. Distribueren naar uw lokale server.
 
-1. Als tevreden bevonden dat het zoals plaatselijk verwacht werkt, wijs code aan een ontwikkelingstak toe en gebruik een Cloud Manager niet-productiepijplijn om aan een [ milieu op te stellen dat het pre-releasekanaal toegelaten heeft.](#cloud-environments)
+1. Als tevreden bevonden dat het zoals plaatselijk verwacht werkt, wijs code aan een ontwikkelingstak toe en gebruik een Cloud Manager niet-productiepijplijn om aan een [&#x200B; milieu op te stellen dat het pre-releasekanaal toegelaten heeft.](#cloud-environments)
 
 >[!CAUTION]
 > 
 > De `aem-prerelease-sdk-api` artifactId mag nooit worden gebruikt bij de implementatie naar het werkgebied of de productie. Gebruikt altijd `aem-sdk-api` wanneer het opstellen via de productiepijplijn. Ook de code die verwijzingen prerelease APIs niet via de productiepijplijn zou moeten worden opgesteld.
 
-De [ AEM CS SDK bouwt Analysator die stop in v1.0 wordt gemaakt en hoger ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing) zal ontdekken als prerelease API in een project door de gebiedsdelen te inspecteren wordt gebruikt. Als de analysator het vindt, zal het pre-versie SDK API gebruiken om het project te analyseren.
+De [&#x200B; AEM CS SDK bouwt Analysator die stop in v1.0 wordt gemaakt en hoger &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing) zal ontdekken als prerelease API in een project door de gebiedsdelen te inspecteren wordt gebruikt. Als de analysator het vindt, zal het pre-versie SDK API gebruiken om het project te analyseren.
 
 ## Overwegingen {#considerations}
 
@@ -162,4 +162,4 @@ Er zijn een paar punten om van nota te nemen wanneer het gebruiken van het prere
 * Functies in de prerelease worden onderworpen aan strenge kwaliteitsborging en zijn bedoeld om volledig te zijn in plaats van bètakwaliteit. Als u problemen opmerkt, rapporteert u deze op dezelfde manier als wanneer u vermoedt dat er fouten zijn in functies in een gewone AEM-release.
 * Om te bepalen als een milieu voor het prereleasekanaal wordt gevormd, ga **ongeveer** pagina van de console van AEM en controleer als het de versieaantal van AEM a `PRERELEASE` achtervoegsel zoals `Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE` omvat.
 
-![ Ongeveer ](/help/release-notes/assets/about.png)
+![&#x200B; Ongeveer &#x200B;](/help/release-notes/assets/about.png)

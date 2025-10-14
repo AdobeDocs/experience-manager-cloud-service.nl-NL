@@ -23,17 +23,17 @@ De interface biedt ruimte voor zowel mobiele apparaten als bureaubladapparaten, 
 
 Alle modules gebruiken de zelfde basislay-out:
 
-![ AEM Sites console ](assets/ui-sites-console.png)
+![&#x200B; AEM Sites console &#x200B;](assets/ui-sites-console.png)
 
 De lay-out volgt een ontvankelijke ontwerpstijl en past zich aan de grootte van het apparaat, of venster, of allebei aan, dat u gebruikt.
 
 Als de resolutie bijvoorbeeld lager is dan 1024 pixels (zoals op een mobiel apparaat), wordt het beeldscherm dienovereenkomstig aangepast:
 
-![ de console mobiele mening van Plaatsen ](assets/ui-sites-mobile.png)
+![&#x200B; de console mobiele mening van Plaatsen &#x200B;](assets/ui-sites-mobile.png)
 
 ### Koptekstbalk {#header-bar}
 
-![ AEM kopbalbar ](assets/ui-header-bar.png)
+![&#x200B; AEM kopbalbar &#x200B;](assets/ui-header-bar.png)
 
 De kopbalbar toont globale elementen met inbegrip van:
 
@@ -50,11 +50,11 @@ De werkbalk is contextueel ten opzichte van uw locatie en de gereedschappen voor
 
 Op de werkbalk ziet u de acties die momenteel beschikbaar zijn.
 
-![ de toolbar van AEM Sites ](assets/ui-sites-toolbar.png)
+![&#x200B; de toolbar van AEM Sites &#x200B;](assets/ui-sites-toolbar.png)
 
 Ook afhankelijk van of een bron is geselecteerd:
 
-![ geselecteerde de toolbar van AEM Sites ](assets/ui-sites-toolbar-selected.png)
+![&#x200B; geselecteerde de toolbar van AEM Sites &#x200B;](assets/ui-sites-toolbar-selected.png)
 
 ### Linkerspoor {#left-rail}
 
@@ -68,7 +68,7 @@ De linkerspoorstaaf kan worden geopend/verborgen zoals vereist om te tonen:
 
 Het gebrek is **slechts Inhoud** (spoorstaaf verborgen).
 
-![ Linkerspoor ](assets/ui-left-rail.png)
+![&#x200B; Linkerspoor &#x200B;](assets/ui-left-rail.png)
 
 ## Pagina&#39;s ontwerpen {#page-authoring}
 
@@ -80,7 +80,7 @@ De pagina-inhoud wordt weergegeven in het inhoudskader. Het inhoudskader is onaf
 
 Het inhoudskader bevindt zich in de rechtersectie van het venster, onder de werkbalk.
 
-![ kader van de Inhoud ](assets/ui-content-frame.png)
+![&#x200B; kader van de Inhoud &#x200B;](assets/ui-content-frame.png)
 
 ### Editor frame {#editor-frame}
 
@@ -93,7 +93,7 @@ Het editorframe is een container (abstract) voor alle pagina-ontwerpelementen. H
 * Alle overlays
 * Een ander pagina-ontwerpelement, bijvoorbeeld de componentwerkbalk
 
-![ Kader van de Redacteur ](assets/ui-editor-frame.png)
+![&#x200B; Kader van de Redacteur &#x200B;](assets/ui-editor-frame.png)
 
 ### Zijpaneel {#side-panel}
 
@@ -101,39 +101,39 @@ Bevat drie standaardtabbladen. De **Assets** en **Componenten** lusjes laten u d
 
 Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of als de vensterbreedte kleiner is dan 1024 pixels, schuift deze over om het hele venster te bedekken, bijvoorbeeld op een mobiel apparaat.
 
-![ Zijpaneel ](assets/ui-side-panel.png)
+![&#x200B; Zijpaneel &#x200B;](assets/ui-side-panel.png)
 
 ### Zijpaneel - Assets {#side-panel-assets}
 
 Op het tabblad Assets kunt u een selectie maken uit het assortiment elementen. U kunt ook filteren op een bepaalde term of een groep selecteren.
 
-![ Assets tabel ](assets/ui-side-panel-assets.png)
+![&#x200B; Assets tabel &#x200B;](assets/ui-side-panel-assets.png)
 
 ### Zijpaneel - Elementgroepen {#side-panel-asset-groups}
 
 Op het tabblad Assets vindt u een vervolgkeuzelijst waarmee u de specifieke groepen elementen kunt selecteren.
 
-![ de groepen van Activa ](assets/ui-side-panel-asset-groups.png)
+![&#x200B; de groepen van Activa &#x200B;](assets/ui-side-panel-asset-groups.png)
 
 ### Zijpaneel - Componenten {#side-panel-components}
 
 Op het tabblad Componenten kunt u een keuze maken uit het bereik van componenten. U kunt ook filteren op een bepaalde term of een groep selecteren.
 
-![ Componenten tabel ](assets/ui-side-panel-components.png)
+![&#x200B; Componenten tabel &#x200B;](assets/ui-side-panel-components.png)
 
 ### Zijpaneel - Inhoudsstructuur {#side-panel-content-tree}
 
 Op het tabblad Inhoudsstructuur kunt u de hiërarchie van inhoud op de pagina weergeven. Wanneer u op een item in het tabblad klikt, gaat u naar het item op de pagina in de editor en selecteert u het item.
 
-![ de boom van de Inhoud ](assets/ui-side-panel-content-tree.png)
+![&#x200B; de boom van de Inhoud &#x200B;](assets/ui-side-panel-content-tree.png)
 
 ### Bedekkingen {#overlays}
 
-Bedekt het inhoudskader en door de [ lagen ](#layer) gebruikt om de mechanica van te realiseren hoe u met de componenten en hun inhoud transparant kunt in wisselwerking staan.
+Bedekt het inhoudskader en door de [&#x200B; lagen &#x200B;](#layer) gebruikt om de mechanica van te realiseren hoe u met de componenten en hun inhoud transparant kunt in wisselwerking staan.
 
 De overlays bevinden zich in het editorframe (met alle andere pagina-ontwerpelementen), hoewel ze de juiste componenten in het inhoudsframe bedekken.
 
-![ Bedekkingen ](assets/ui-overlays.png)
+![&#x200B; Bedekkingen &#x200B;](assets/ui-overlays.png)
 
 ### Laag {#layer}
 
@@ -156,7 +156,7 @@ Met de laagschakeloptie kunt u de laag kiezen die u wilt gebruiken. Als u deze o
 
 De laagschakelaar is beschikbaar als drop-down van de toolbar (bij de bovenkant van het venster, binnen het redacteurskader).
 
-![ de schakelaar van de Laag ](assets/ui-layer-switcher.png)
+![&#x200B; de schakelaar van de Laag &#x200B;](assets/ui-layer-switcher.png)
 
 ### Werkbalk Component {#component-toolbar}
 
@@ -164,17 +164,17 @@ Elke instantie van een component toont zijn toolbar wanneer geklikt (of eens of 
 
 Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst bij de bovenkant, of bodem, juiste hoek van de aangewezen component.
 
-![ de toolbar van de Component ](assets/ui-component-toolbar.png)
+![&#x200B; de toolbar van de Component &#x200B;](assets/ui-component-toolbar.png)
 
 ## Aanvullende informatie {#further-information}
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Voor meer technische informatie, zie de [ JS documentatiereeks ](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) voor de paginaredacteur.
+Voor meer technische informatie, zie de [&#x200B; JS documentatiereeks &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) voor de paginaredacteur.
 
 ### Unified Shell {#unified-shell}
 
-Zie [ AEM as a Cloud Service op Verenigde Shell ](/help/overview/aem-cloud-service-on-unified-shell.md) als u Verenigde Shell als uw AEM UI gebruikt.
+Zie [&#x200B; AEM as a Cloud Service op Verenigde Shell &#x200B;](/help/overview/aem-cloud-service-on-unified-shell.md) als u Verenigde Shell als uw AEM UI gebruikt.
 
 Als u moet maken, of reeds gemaakt, om het even welke aanpassingen maken, verenigd zal kunnen worden onbruikbaar gemaakt:
 

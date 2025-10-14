@@ -23,13 +23,13 @@ In Adobe Cloud Manager kunt u uw website laten opvallen door een aangepast domei
 ## Een aangepast domein voor de leveringslaag configureren
 
 1. Ga naar **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Program Overview]** > **[!UICONTROL SSL Certificates]** en voeg uw SSL-certificaat toe.
-   ![ beeld ](/help/assets/assets/ssl-certificate.png)
-Leer hoe te om [ SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager toe te voegen.
+   ![&#x200B; beeld &#x200B;](/help/assets/assets/ssl-certificate.png)
+Leer hoe te om [&#x200B; SSL certificaat &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager toe te voegen.
 
 1. Voeg een aangepast domein toe nadat u het SSL-certificaat hebt toegevoegd. Klik op **[!UICONTROL Domain Settings]** en geef het aangepaste domein op met de optie **[!UICONTROL Publish service]** .
-Leer meer over [ douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+Leer meer over [&#x200B; douanedomein &#x200B;](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. Voeg twee [ verslagen van de NAAM ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) in uw DNS verslag toe die aan publiceer domeinen beantwoorden.
+1. Voeg twee [&#x200B; verslagen van de NAAM &#x200B;](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) in uw DNS verslag toe die aan publiceer domeinen beantwoorden.
 DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.
 
 1. Logboek een steungeval om de configuratie van het douanedomein te vergemakkelijken, ervoor zorgen dat het aan de leveringsrij richt.

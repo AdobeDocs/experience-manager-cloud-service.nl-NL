@@ -14,9 +14,9 @@ ht-degree: 0%
 # [!DNL Azure] opslag configureren {#configure-azure-storage}
 
 
-![ gegeven-integratie ](assets/data-integeration.png)
+![&#x200B; gegeven-integratie &#x200B;](assets/data-integeration.png)
 
-[[!DNL Experience Manager Forms]  de Integratie van Gegevens ](data-integration.md) verstrekt een [!DNL Azure] opslagconfiguratie om vormen met [!DNL Azure] opslagdiensten te integreren. Met FDM (Form Data Model) kunt u Adaptive Forms maken dat met [!DNL Azure] Server werkt om bedrijfsworkflows in te schakelen. Bijvoorbeeld:
+[[!DNL Experience Manager Forms]  de Integratie van Gegevens &#x200B;](data-integration.md) verstrekt een [!DNL Azure] opslagconfiguratie om vormen met [!DNL Azure] opslagdiensten te integreren. Met FDM (Form Data Model) kunt u Adaptive Forms maken dat met [!DNL Azure] Server werkt om bedrijfsworkflows in te schakelen. Bijvoorbeeld:
 
 * Schrijf gegevens naar [!DNL Azure] bij het verzenden van een adaptief formulier.
 * Schrijf gegevens in [!DNL Azure] via aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel (FDM) en omgekeerd.
@@ -35,7 +35,7 @@ Controleer voordat u deze stappen uitvoert of u een [!DNL Azure] opslagaccount e
 
 ## Formuliergegevensmodel maken {#create-azure-form-data-model}
 
-Na het creëren van de [!DNL Azure] opslagconfiguratie, kunt u [ tot het Model van de Gegevens van de Vorm ](create-form-data-models.md) leiden. Geef de map op die de [!DNL Azure] -configuratie bevat in het veld **[!UICONTROL Data Source Configuration]** terwijl u het FDM (Form Data Model) maakt. Vervolgens kunt u de configuratie selecteren in de lijst met configuraties in de opgegeven mapnaam.
+Na het creëren van de [!DNL Azure] opslagconfiguratie, kunt u [&#x200B; tot het Model van de Gegevens van de Vorm &#x200B;](create-form-data-models.md) leiden. Geef de map op die de [!DNL Azure] -configuratie bevat in het veld **[!UICONTROL Data Source Configuration]** terwijl u het FDM (Form Data Model) maakt. Vervolgens kunt u de configuratie selecteren in de lijst met configuraties in de opgegeven mapnaam.
 
 ### [!DNL Azure] -services toevoegen aan het formuliergegevensmodel {#add-azure-services}
 
@@ -45,7 +45,7 @@ Nadat u de objecten Form Data Model (FDM) en Data Model hebt gemaakt, kunt u [!D
 
 1. Selecteer in de modus Bewerken de services in het gedeelte **[!UICONTROL Services]** in het linkervenster en selecteer **[!UICONTROL Add Selected]** . De geselecteerde services worden weergegeven op het tabblad **[!UICONTROL Services]** van het FDM (Form Data Model).
 
-   ![ voeg de Geselecteerde Diensten ](assets/select-services.png) toe
+   ![&#x200B; voeg de Geselecteerde Diensten &#x200B;](assets/select-services.png) toe
 
 1. Selecteer op het tabblad **[!UICONTROL Services]** de service en **[!UICONTROL Edit Properties]** . Definieer op basis van de service de invoer- of uitvoermodelobjecten voor de service.
 

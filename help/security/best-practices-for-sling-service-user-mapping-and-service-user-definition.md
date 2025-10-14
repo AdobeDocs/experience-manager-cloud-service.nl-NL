@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Toewijzing van servicegebruikers {#service-user-mapping}
 
-Als u een toewijzing van uw service aan de overeenkomstige systeemgebruiker(s) wilt toevoegen, moet u een fabrieksconfiguratie voor de service `ServiceUserMapper` maken. Om dit modulair te houden, kunnen dergelijke configuraties worden verstrekt gebruikend het Verschuiven &quot;wijzigt&quot;mechanisme (zie [ SLING-3578 ](https://issues.apache.org/jira/browse/SLING-3578) voor meer details). U kunt dergelijke configuraties het beste met uw bundel installeren door deze toe te voegen aan het Quickstart-inrichtingsmodel, zoals in het volgende voorbeeld wordt beschreven:
+Als u een toewijzing van uw service aan de overeenkomstige systeemgebruiker(s) wilt toevoegen, moet u een fabrieksconfiguratie voor de service `ServiceUserMapper` maken. Om dit modulair te houden, kunnen dergelijke configuraties worden verstrekt gebruikend het Verschuiven &quot;wijzigt&quot;mechanisme (zie [&#x200B; SLING-3578 &#x200B;](https://issues.apache.org/jira/browse/SLING-3578) voor meer details). U kunt dergelijke configuraties het beste met uw bundel installeren door deze toe te voegen aan het Quickstart-inrichtingsmodel, zoals in het volgende voorbeeld wordt beschreven:
 
 ```
 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-my-mapping
@@ -183,13 +183,13 @@ Voorbeelden voor `userproperties-copy-service` :
 * Machtigingen beperken
 
    * Toekennen van de minimale reeks benodigde machtigingen
-   * Voor meer informatie, raadpleeg de [ Bevoegdheden van de Afbeelding aan Punten ](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) en [ de Vraag van API van de Afbeelding aan Privileges ](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html) documentatie
+   * Voor meer informatie, raadpleeg de [&#x200B; Bevoegdheden van de Afbeelding aan Punten &#x200B;](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) en [&#x200B; de Vraag van API van de Afbeelding aan Privileges &#x200B;](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html) documentatie
    * Geen toestemming verlenen voor `jcr:all` . Dat is hoogstwaarschijnlijk niet de minimale set.
 
 * Bereik reduceren
 
    * Het toegangsbeheerbeleid van de plaats bij eigenschapspecifieke onderaannemers
-   * In geval van verdeelde punten: gebruiksbeperkingen om werkingsgebied te beperken (raadpleeg [ de documentatie ](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) voor lijst van ingebouwde beperkingen).
+   * In geval van verdeelde punten: gebruiksbeperkingen om werkingsgebied te beperken (raadpleeg [&#x200B; de documentatie &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) voor lijst van ingebouwde beperkingen).
 
 * Consistentie garanderen
 
@@ -214,7 +214,7 @@ Voorbeelden voor `userproperties-copy-service` :
    * Aanmelding- en evaluatieprestaties
    * Werkt niet met op hoofdletters gebaseerde ac-setup
 
-* De toegang tot de user-home knoop (of om het even welke subtree bevat daarin), die geen voorspelbare weg heeft wordt bereikt in repo init door huis (`userId`) te gebruiken. Zie de het laten vallen repo in het [ documentatie ](https://sling.apache.org/documentation/bundles/repository-initialization.html) voor details.
+* De toegang tot de user-home knoop (of om het even welke subtree bevat daarin), die geen voorspelbare weg heeft wordt bereikt in repo init door huis (`userId`) te gebruiken. Zie de het laten vallen repo in het [&#x200B; documentatie &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html) voor details.
 * RTC: maak een specifieke RTC-uitgave als u de machtigingen van een bestaande servicegebruiker wijzigt en zorg ervoor dat deze door het beveiligingsteam wordt gecontroleerd.
 
 **Creatie met Initialisatie van de Bewaarplaats**

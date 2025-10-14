@@ -72,7 +72,7 @@ Om ervoor te zorgen dat uw gegevens veilig blijven, moet u ervoor zorgen dat:
 
 * De gevoelige informatie wordt **nooit** blootgesteld; noch direct, noch onrechtstreeks:
 
-   * Bijvoorbeeld, zijn alle [ schema&#39;s van GraphQL ](/help/headless/graphql-api/content-fragments.md#schema-generation):
+   * Bijvoorbeeld, zijn alle [&#x200B; schema&#39;s van GraphQL &#x200B;](/help/headless/graphql-api/content-fragments.md#schema-generation):
 
       * afgeleid uit de Modellen van het Fragment van de Inhoud die **&#x200B;**&#x200B;zijn toegelaten
 

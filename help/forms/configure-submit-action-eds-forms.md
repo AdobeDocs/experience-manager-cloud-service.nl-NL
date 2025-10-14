@@ -16,18 +16,18 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 |---------|-----------------------------|
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
-| AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/configuring-submit-actions.md) |
-| AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/configure-submit-actions-core-components.md) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
+| AEM as a Cloud Service (Foundation Components) | [&#x200B; klik hier &#x200B;](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (Core Components) | [&#x200B; klik hier &#x200B;](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Dit artikel |
 
 Met Verzendhandelingen wordt gedefinieerd wat er gebeurt wanneer een gebruiker een formulier verzendt, zoals gegevens opslaan, workflows activeren of integreren met systemen van derden. Het type verzendacties dat u kunt configureren, is afhankelijk van de ontwerpmethode die wordt gebruikt om Edge Delivery Services Forms te maken.
 
-U kunt Edge Delivery Services Forms tot stand brengen gebruikend of de [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) of door [ Document Gebaseerd Forms ](/help/edge/docs/forms/overview.md) te gebruiken creeert creeert, en de vormen met verschillend vormt dienovereenkomstig voorlegt acties.
+U kunt Edge Delivery Services Forms tot stand brengen gebruikend of de [&#x200B; Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) of door [&#x200B; Document Gebaseerd Forms &#x200B;](/help/edge/docs/forms/overview.md) te gebruiken creeert creeert, en de vormen met verschillend vormt dienovereenkomstig voorlegt acties.
 
 ## Handelingen verzenden voor Forms die zijn gemaakt in de Universal Editor
 
-Het volgende voorlegt acties wordt gesteund door [ Aangepaste Forms authored in de Universele Redacteur ](/help/edge/docs/forms/universal-editor/create-forms.md):
+Het volgende voorlegt acties wordt gesteund door [&#x200B; Aangepaste Forms authored in de Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/create-forms.md):
 
 * [E-mail verzenden](/help/forms/configure-submit-action-send-email.md)
 * [Een automatische stroomvoorziening aanroepen](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -59,11 +59,11 @@ You can configure the submit action for forms created in the Universal Editor us
 >[!NOTE]
 >
 > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-> * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+> * Verwijs naar het [&#x200B; artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Handelingen verzenden voor Forms op basis van document
 
-Forms-supportverzending op basis van documenten alleen naar werkbladen. Leren hoe te opstelling uw spreadsheet om voorgelegde gegevens te ontvangen, zie de instructies in de [ Opstelling uw Bladen van Google of de dossiers van Microsoft Excel beginnen gegevens ](/help/edge/docs/forms/submit-forms.md) goed te keuren.
+Forms-supportverzending op basis van documenten alleen naar werkbladen. Leren hoe te opstelling uw spreadsheet om voorgelegde gegevens te ontvangen, zie de instructies in de [&#x200B; Opstelling uw Bladen van Google of de dossiers van Microsoft Excel beginnen gegevens &#x200B;](/help/edge/docs/forms/submit-forms.md) goed te keuren.
 
 ## Zie ook {#see-also}
 

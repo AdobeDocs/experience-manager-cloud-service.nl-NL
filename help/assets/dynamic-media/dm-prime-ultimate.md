@@ -12,15 +12,15 @@ ht-degree: 5%
 
 # Dynamic Media Prime en Ultimate {#dynamic-media-prime-ultimate}
 
-![ Dynamische banner van Media ](/help/assets/assets/dm-pnp-banner.png)
+![&#x200B; Dynamische banner van Media &#x200B;](/help/assets/assets/dm-pnp-banner.png)
 
 Met Adobe Experience Manager as a Cloud Service hebt u toegang tot de Dynamic Media Prime- en Ultimate-aanbiedingen om uw digitale workflows te stroomlijnen en inhoudsbeheer te optimaliseren. Dit artikel introduceert elk aanbod, schetst de voordelen ervan en benadrukt ook de belangrijkste verschillen tussen beide.
 
 ## Dynamic Media Prime {#dynamic-media-prime}
 
-De dynamische Media Prime is de activeringsdienst voor Experience Manager Assets, die [ Dynamische Media met OpenAPI basismogelijkheden ](/help/assets/dynamic-media-open-apis-overview.md) toelatend organisaties aanbiedt om AEM Assets met Adobe of niet-Adobe toepassingen te integreren. Deze ondersteunt transformatie (roteren, uitsnijden, spiegelen, hoogte, breedte, kwaliteit) en geoptimaliseerde aflevering.
+De dynamische Media Prime is de activeringsdienst voor Experience Manager Assets, die [&#x200B; Dynamische Media met OpenAPI basismogelijkheden &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) toelatend organisaties aanbiedt om AEM Assets met Adobe of niet-Adobe toepassingen te integreren. Deze ondersteunt transformatie (roteren, uitsnijden, spiegelen, hoogte, breedte, kwaliteit) en geoptimaliseerde aflevering.
 
-Als u de Dynamische basis van Media evenals geavanceerde mogelijkheden en toegang tot Dynamische oplossing van Media in AEM as a Cloud Service nodig hebt, zie [ Dynamische Media Ultimate ](#dynamic-media-ultimate).
+Als u de Dynamische basis van Media evenals geavanceerde mogelijkheden en toegang tot Dynamische oplossing van Media in AEM as a Cloud Service nodig hebt, zie [&#x200B; Dynamische Media Ultimate &#x200B;](#dynamic-media-ultimate).
 
 Tot de andere belangrijke voordelen van Dynamic Media Prime behoren:
 
@@ -42,20 +42,20 @@ Tot de andere belangrijke voordelen van Dynamic Media Prime behoren:
 
 ## Dynamic Media Ultimate {#dynamic-media-ultimate}
 
-De dynamische Media Ultimate is de activeringsdienst voor Experience Manager Assets, die [ Dynamische Media met OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) basis en geavanceerde mogelijkheden evenals [ Dynamische oplossing van Media in AEM as a Cloud Service ](/help/assets/dynamic-media/dynamic-media.md) omvat. Het laat organisaties toe om veelvoudige variaties van rijke inhoud in real time door zijn globaal, scalable, prestaties-geoptimaliseerd netwerk te produceren en te leveren.
+De dynamische Media Ultimate is de activeringsdienst voor Experience Manager Assets, die [&#x200B; Dynamische Media met OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) basis en geavanceerde mogelijkheden evenals [&#x200B; Dynamische oplossing van Media in AEM as a Cloud Service &#x200B;](/help/assets/dynamic-media/dynamic-media.md) omvat. Het laat organisaties toe om veelvoudige variaties van rijke inhoud in real time door zijn globaal, scalable, prestaties-geoptimaliseerd netwerk te produceren en te leveren.
 
 Naast de Dynamic Media Prime-functies, zoals AEM Assets-integratie met Adobe- of niet-Adobe-toepassingen, transformatie (roteren, uitsnijden, spiegelen, hoogte, breedte, kwaliteit) en geoptimaliseerde levering, biedt Dynamic Media Ultimate ook:
 
-* [ Dynamische Media met 1&rbrace; mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
+* [&#x200B; Dynamische Media met 1&rbrace; mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
 
    * Veilige levering van activa,
-   * [ het Slimme Gewas, Slimme Beeldvorming, Beeld stelt, en extra beeldbepalingen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) vooraf in.
+   * [&#x200B; het Slimme Gewas, Slimme Beeldvorming, Beeld stelt, en extra beeldbepalingen &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) vooraf in.
 
-* [ Dynamische oplossing van Media in AEM as a Cloud Service ](/help/assets/dynamic-media/dynamic-media.md), die ook de volgende belangrijkste mogelijkheden omvat:
+* [&#x200B; Dynamische oplossing van Media in AEM as a Cloud Service &#x200B;](/help/assets/dynamic-media/dynamic-media.md), die ook de volgende belangrijkste mogelijkheden omvat:
 
    * [Dynamische mediasjablonen](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [ Grondbeginselen van het Malplaatje ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [ Visuele Configuratie ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [&#x200B; Grondbeginselen van het Malplaatje &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [&#x200B; Visuele Configuratie &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Vereisten {#pre-requisites-dm-ultimate}
 
@@ -63,6 +63,6 @@ Naast de Dynamic Media Prime-functies, zoals AEM Assets-integratie met Adobe- of
 * [AEM Assets as a Cloud Service](/help/assets/overview.md)
 * [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 
-Voor meer informatie over de volledige lijst van mogelijkheden, zie [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) en [ Werkend met Dynamische Media ](/help/assets/dynamic-media/dynamic-media.md).
+Voor meer informatie over de volledige lijst van mogelijkheden, zie [&#x200B; Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) en [&#x200B; Werkend met Dynamische Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md).
 
-Voor informatie over hoe te om Dynamische Media Prime en Ultimate voor uw milieu van AEM as a Cloud Service toe te laten, zie [ Dynamische Media Prime en Ultimate ](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md) toelaten.
+Voor informatie over hoe te om Dynamische Media Prime en Ultimate voor uw milieu van AEM as a Cloud Service toe te laten, zie [&#x200B; Dynamische Media Prime en Ultimate &#x200B;](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md) toelaten.

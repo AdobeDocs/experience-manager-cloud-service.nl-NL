@@ -27,27 +27,27 @@ Ga als volgt te werk om video-uitvoeringen te maken in Screens as a Cloud Servic
 1. Navigeer naar uw kanaal in de Screens Content Provider.
 
    >[!NOTE]
-   >Zie [ Gebruikend de Leverancier van de Inhoud van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=nl-NL#screens-content-provider) voor meer details.
+   >Zie [&#x200B; Gebruikend de Leverancier van de Inhoud van Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=nl-NL#screens-content-provider) voor meer details.
 
 1. Klik de sectie van Hulpmiddelen van de linkernavigatiebar en klik **Assets** en klik dan **Profielen van de Verwerking**.
 
-   ![ klik het Verwerken Profielen ](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![&#x200B; klik het Verwerken Profielen &#x200B;](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Klik **creëren** om een verwerkingsprofiel tot stand te brengen.
 
-   ![ klik creëren ](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![&#x200B; klik creëren &#x200B;](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. Ga de **Naam**, zoals **ScreensProcessingProfile** in.
 
-   ![ de dialoogdoos die van het Profiel van de Verwerking het benadrukte gebied van de Naam tonen.](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![&#x200B; de dialoogdoos die van het Profiel van de Verwerking het benadrukte gebied van de Naam tonen.](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. Navigeer aan **Video** lusje zodat kunt u een video coderen toevoegen, en dan **klikken voegt Nieuw** toe.
 
-   ![ de dialoogdoos die van het Profiel van de Verwerking Nieuwe benadrukte knoop toont.](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![&#x200B; de dialoogdoos die van het Profiel van de Verwerking Nieuwe benadrukte knoop toont.](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. Ga de **Coderende Naam** zoals in, **schermen-volledig** en **Bitsnelheid** als **2500**.
 
-   ![ de dialoogdoos die van het Profiel van de Verwerking sparen benadrukte knoop toont.](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![&#x200B; de dialoogdoos die van het Profiel van de Verwerking sparen benadrukte knoop toont.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >Gebruik de coderingsnaam die begint met &quot;screens-&quot;. Alleen deze video-uitvoeringen worden beschouwd als het afspelen van de video-ervaring in Screens as a Cloud Service. Voer de bitsnelheid in die voor uw video&#39;s wordt gebruikt (2500 kbps voor video van 720 pixels en 5000 kbps voor video van 1080 px).
@@ -59,11 +59,11 @@ Ga als volgt te werk om video-uitvoeringen te maken in Screens as a Cloud Servic
 
 1. Selecteer het profiel van de Verwerking en klik **passen Profiel op Omslagen** toe.
 
-   ![ pas Profiel op Omslag ](/help/screens-cloud/assets/configure/screens-video-5.png) toe
+   ![&#x200B; pas Profiel op Omslag &#x200B;](/help/screens-cloud/assets/configure/screens-video-5.png) toe
 
 1. Selecteer de omslagen waar de video&#39;s van Screens worden gehouden en de klik **past** toe.
 
-   ![ klik toepassen ](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![&#x200B; klik toepassen &#x200B;](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >

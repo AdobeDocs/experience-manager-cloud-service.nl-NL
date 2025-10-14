@@ -22,7 +22,7 @@ Gebruik de volgende voorwaarden als u Asset Selector integreert met Dynamic Medi
 * Voor toegang tot Dynamic Media met OpenAPI-mogelijkheden hebt u licenties nodig voor:
    * Assets repository (bijvoorbeeld Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Slechts [ goedgekeurde activa ](/help/assets/approve-assets.md) zijn beschikbaar voor gebruik die merkconsistentie verzekeren.
+* Slechts [&#x200B; goedgekeurde activa &#x200B;](/help/assets/approve-assets.md) zijn beschikbaar voor gebruik die merkconsistentie verzekeren.
 
 ## Integratie voor dynamische media met OpenAPI-mogelijkheden {#adobe-app-integration-polaris}
 
@@ -36,7 +36,7 @@ De eigenschappen `rootPath` en `path` mogen geen deel uitmaken van de Dynamic Me
 aemTierType:[1: "delivery"]
 ```
 
-Met deze configuratie kunt u alle goedgekeurde elementen weergeven zonder mappen of als een platte structuur. Voor meer informatie, navigeer aan `aemTierType` bezit onder [ de eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md).
+Met deze configuratie kunt u alle goedgekeurde elementen weergeven zonder mappen of als een platte structuur. Voor meer informatie, navigeer aan `aemTierType` bezit onder [&#x200B; de eigenschappen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-properties.md).
 
 
 ### Een URL voor dynamische levering maken op basis van goedgekeurde elementen {#create-dynamic-media-url}
@@ -103,7 +103,7 @@ Alle geselecteerde elementen worden gedragen door de functie `handleSelection` d
 
 Hieronder ziet u de twee manieren waarop u het JSON-object kunt doorlopen:
 
-![ Dynamische levering url ](assets/dynamic-delivery-url.png)
+![&#x200B; Dynamische levering url &#x200B;](assets/dynamic-delivery-url.png)
 
 * **Duimnagel:** de duimnagels kunnen beelden zijn en de activa zijn PDF, video, beelden, etc. Hoewel u de hoogte- en breedtekenmerken van de miniatuur van een element kunt gebruiken als de dynamische uitvoering van het element.
 De volgende set uitvoeringen kan worden gebruikt voor de PDF-elementen:
@@ -160,7 +160,7 @@ Voor het ophalen van de naam moet een eenmalige activiteit worden uitgevoerd. Ma
 
 Na de integratie met de Adobe Micro-Frontend Asset Selector kunt u de structuur van alle goedgekeurde middelen alleen zien in de gegevensopslagruimte van Experience Manager.
 
-![ Dynamische Media met OpenAPI mogelijkheden UI ](assets/polaris-ui.png)
+![&#x200B; Dynamische Media met OpenAPI mogelijkheden UI &#x200B;](assets/polaris-ui.png)
 
 * **A**: Verberg/toon paneel
 * **B**: Assets
@@ -177,6 +177,6 @@ Na de integratie met de Adobe Micro-Frontend Asset Selector kunt u de structuur 
 
 >[!MORELIKETHIS]
 >
->* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
->* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
->* [ de aanpassingen van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)
+>* [&#x200B; integreer de Selector van Activa met diverse toepassingen &#x200B;](/help/assets/integrate-asset-selector.md)
+>* [&#x200B; Eigenschappen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-properties.md)
+>* [&#x200B; de aanpassingen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-customization.md)

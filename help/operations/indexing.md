@@ -26,19 +26,19 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 1. Klanten kunnen waarschuwingen instellen op basis van hun behoeften.
 1. SRE&#39;s controleren de systeemgezondheid 24/7 en er wordt zo snel mogelijk actie ondernomen.
 1. Indexconfiguratie wordt gewijzigd via implementaties. Wijzigingen in indexdefinities worden net als andere wijzigingen in de inhoud geconfigureerd.
-1. Op een hoog niveau op AEM as a Cloud Service, met de introductie van het [ het rollen plaatsingsmodel ](#index-management-using-rolling-deployments), bestaan twee reeksen indexen: voor de oude versie, en voor de nieuwe versie.
+1. Op een hoog niveau op AEM as a Cloud Service, met de introductie van het [&#x200B; het rollen plaatsingsmodel &#x200B;](#index-management-using-rolling-deployments), bestaan twee reeksen indexen: voor de oude versie, en voor de nieuwe versie.
 1. Klanten kunnen zien of de indexerende baan op Cloud Manager volledig is bouwt pagina en ontvangt een bericht wanneer de nieuwe versie klaar is om verkeer te nemen.
 
 Beperkingen:
 
 * Indexbeheer op AEM as a Cloud Service wordt momenteel alleen ondersteund voor indexen van het type `lucene` . Dit betekent dat alle indexaanpassingen van het type `lucene` moeten zijn. De eigenschap `async` mag slechts een van de volgende eigenschappen zijn: `[async]` , `[async,nrt]` of `[fulltext-async]` .
-* Intern, zouden andere indexen voor vragen kunnen worden gevormd en worden gebruikt. Vragen die bijvoorbeeld op basis van de `damAssetLucene` -index worden geschreven, kunnen op AEM as a Cloud Service in feite worden uitgevoerd op basis van een Elasticsearch-versie van deze index. Dit verschil is niet zichtbaar voor de gebruiker. Bepaalde gereedschappen, zoals de functie `explain` , rapporteren echter een andere index. Voor verschillen tussen de indexen van Lucene en Elastische indexen, zie [ de Elastische documentatie in Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten hoeven en kunnen Elasticsearch-indexen niet rechtstreeks configureren.
+* Intern, zouden andere indexen voor vragen kunnen worden gevormd en worden gebruikt. Vragen die bijvoorbeeld op basis van de `damAssetLucene` -index worden geschreven, kunnen op AEM as a Cloud Service in feite worden uitgevoerd op basis van een Elasticsearch-versie van deze index. Dit verschil is niet zichtbaar voor de gebruiker. Bepaalde gereedschappen, zoals de functie `explain` , rapporteren echter een andere index. Voor verschillen tussen de indexen van Lucene en Elastische indexen, zie [&#x200B; de Elastische documentatie in Apache Jackrabbit Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten hoeven en kunnen Elasticsearch-indexen niet rechtstreeks configureren.
 * Alleen standaardanalysatoren worden ondersteund (dat wil zeggen de analysatoren die bij het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
 * Zoeken op vergelijkbare eigenschapvectoren (`useInSimilarity = true`) wordt niet ondersteund.
 
 >[!TIP]
 >
->Voor meer details op Oak het indexeren en de vragen, met inbegrip van een gedetailleerde beschrijving van geavanceerde onderzoek en het indexeren eigenschappen, zie de [ documentatie van Apache Oak ](https://jackrabbit.apache.org/oak/docs/query/query.html).
+>Voor meer details op Oak het indexeren en de vragen, met inbegrip van een gedetailleerde beschrijving van geavanceerde onderzoek en het indexeren eigenschappen, zie de [&#x200B; documentatie van Apache Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/query/query.html).
 
 
 ## Hoe wordt het gebruikt {#how-to-use}
@@ -49,7 +49,7 @@ Indexdefinities kunnen als volgt in drie gevallen van primair gebruik worden ing
 2. **werk** een bestaande indexdefinitie bij door een nieuwe versie toe te voegen.
 3. **verwijder** een indexdefinitie die niet meer noodzakelijk is.
 
-Voor zowel de punten 1 als 2 hierboven, moet u een indexdefinitie als deel van uw basis van douanecode in het respectieve de versieschema van Cloud Manager tot stand brengen. Voor meer informatie, zie [ het Opstellen aan AEM as a Cloud Service ](/help/implementing/deploying/overview.md) documentatie.
+Voor zowel de punten 1 als 2 hierboven, moet u een indexdefinitie als deel van uw basis van douanecode in het respectieve de versieschema van Cloud Manager tot stand brengen. Voor meer informatie, zie [&#x200B; het Opstellen aan AEM as a Cloud Service &#x200B;](/help/implementing/deploying/overview.md) documentatie.
 
 ## Indexnamen {#index-names}
 
@@ -164,7 +164,7 @@ Bestandsnaam: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-cus
    </properties>
    ```
 
-5. Zorg ervoor dat uw configuratie met de richtlijnen in de [ sectie van de Configuratie van het Project ](#project-configuration) wordt verstrekt in overeenstemming is. Breng de nodige aanpassingen aan.
+5. Zorg ervoor dat uw configuratie met de richtlijnen in de [&#x200B; sectie van de Configuratie van het Project &#x200B;](#project-configuration) wordt verstrekt in overeenstemming is. Breng de nodige aanpassingen aan.
 
 ## Projectconfiguratie
 
@@ -246,7 +246,7 @@ Implementeer de nieuwe toepassing met Cloud Manager nadat u de nieuwe indexdefin
 
 >[!TIP]
 >
->Voor meer details over de vereiste pakketstructuur voor AEM as a Cloud Service, zie [ de Structuur van het Project van AEM ](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Voor meer details over de vereiste pakketstructuur voor AEM as a Cloud Service, zie [&#x200B; de Structuur van het Project van AEM &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Indexbeheer met behulp van rollende implementaties {#index-management-using-rolling-deployments}
 
@@ -322,7 +322,7 @@ Het is belangrijk om te weten dat omgevingen zich in verschillende AEM-versies k
 
 ### Huidige beperkingen {#current-limitations}
 
-Indexbeheer wordt alleen ondersteund voor indexen van het type `lucene` met `compatVersion` ingesteld op `2` . Intern, zouden andere indexen voor vragen, bijvoorbeeld, indexen van Elasticsearch kunnen worden gevormd en worden gebruikt. Query&#39;s die zijn geschreven op basis van de `damAssetLucene` -index kunnen in AEM as a Cloud Service worden uitgevoerd op een Elasticsearch-versie van deze index. Dit verschil is onzichtbaar voor de gebruiker van de toepassing, maar bepaalde gereedschappen, zoals de functie `explain` , rapporteren een andere index. Voor verschillen tussen de indexen van Lucene en van Elasticsearch, zie [ de documentatie van Elasticsearch in Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten kunnen en hoeven Elasticsearch-indexen niet rechtstreeks te configureren.
+Indexbeheer wordt alleen ondersteund voor indexen van het type `lucene` met `compatVersion` ingesteld op `2` . Intern, zouden andere indexen voor vragen, bijvoorbeeld, indexen van Elasticsearch kunnen worden gevormd en worden gebruikt. Query&#39;s die zijn geschreven op basis van de `damAssetLucene` -index kunnen in AEM as a Cloud Service worden uitgevoerd op een Elasticsearch-versie van deze index. Dit verschil is onzichtbaar voor de gebruiker van de toepassing, maar bepaalde gereedschappen, zoals de functie `explain` , rapporteren een andere index. Voor verschillen tussen de indexen van Lucene en van Elasticsearch, zie [&#x200B; de documentatie van Elasticsearch in Apache Jackrabbit Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten kunnen en hoeven Elasticsearch-indexen niet rechtstreeks te configureren.
 
 Alleen ingebouwde analysatoren worden ondersteund (dat wil zeggen de analysatoren die bij het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
 
@@ -379,11 +379,11 @@ Hieronder worden de twee mogelijke gevallen beschreven: het verwijderen van aanp
 
 #### Het verwijderen van Aanpassingen van een uit-van-de-doos index
 
-Volg de stappen in [ worden beschreven ongedaan maken een Verandering ](#undoing-a-change-undoing-a-change) gebruikend de definities van de index OTB als nieuwe versie die. Als u bijvoorbeeld `damAssetLucene-8-custom-3` al hebt geïmplementeerd, maar de aanpassingen niet meer nodig hebt en wilt terugschakelen naar de standaard `damAssetLucene-8` -index, moet u een index `damAssetLucene-8-custom-4` toevoegen die de indexdefinitie van `damAssetLucene-8` bevat.
+Volg de stappen in [&#x200B; worden beschreven ongedaan maken een Verandering &#x200B;](#undoing-a-change-undoing-a-change) gebruikend de definities van de index OTB als nieuwe versie die. Als u bijvoorbeeld `damAssetLucene-8-custom-3` al hebt geïmplementeerd, maar de aanpassingen niet meer nodig hebt en wilt terugschakelen naar de standaard `damAssetLucene-8` -index, moet u een index `damAssetLucene-8-custom-4` toevoegen die de indexdefinitie van `damAssetLucene-8` bevat.
 
 #### Een volledig aangepaste index verwijderen
 
-Volg de stappen die in [ worden beschreven Ongedaan maken een Verandering ](#undoing-a-change-undoing-a-change) gebruikend een dummyindex als nieuwe versie. Een dummyindex wordt nooit gebruikt voor query&#39;s en bevat geen gegevens. Het effect is dus hetzelfde als wanneer de index niet bestaat. In dit voorbeeld kunt u de naam `/oak:index/acme.product-1-custom-3` geven. Deze naam vervangt de index `/oak:index/acme.product-1-custom-2`. Een voorbeeld van een dergelijke dummy-index is:
+Volg de stappen die in [&#x200B; worden beschreven Ongedaan maken een Verandering &#x200B;](#undoing-a-change-undoing-a-change) gebruikend een dummyindex als nieuwe versie. Een dummyindex wordt nooit gebruikt voor query&#39;s en bevat geen gegevens. Het effect is dus hetzelfde als wanneer de index niet bestaat. In dit voorbeeld kunt u de naam `/oak:index/acme.product-1-custom-3` geven. Deze naam vervangt de index `/oak:index/acme.product-1-custom-2`. Een voorbeeld van een dergelijke dummy-index is:
 
 ```xml
 <acme.product-1-custom-3
@@ -410,4 +410,4 @@ Volg de stappen die in [ worden beschreven Ongedaan maken een Verandering ](#und
 
 Met Apache Jackrabbit Oak kunnen flexibele indexconfiguraties zoekopdrachten efficiënt verwerken. Indexen zijn vooral belangrijk voor grotere opslagplaatsen. Zorg ervoor dat alle vragen door een aangewezen index worden gesteund. De vragen zonder een geschikte index kunnen duizenden knopen lezen, die dan als waarschuwing worden geregistreerd.
 
-Zie [ dit document ](query-and-indexing-best-practices.md) voor informatie over hoe de vragen en de indexen kunnen worden geoptimaliseerd.
+Zie [&#x200B; dit document &#x200B;](query-and-indexing-best-practices.md) voor informatie over hoe de vragen en de indexen kunnen worden geoptimaliseerd.

@@ -16,9 +16,9 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 |---------|-----------------------------|
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
-| AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/configuring-submit-actions.md) |
-| AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/configure-submit-actions-core-components.md) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
+| AEM as a Cloud Service (Foundation Components) | [&#x200B; klik hier &#x200B;](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (Core Components) | [&#x200B; klik hier &#x200B;](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Dit artikel |
 
 
@@ -45,7 +45,7 @@ Deze handleiding is ontworpen voor:
 
 ## Handelingen verzenden voor Forms die zijn gemaakt in de Universal Editor
 
-Het volgende voorlegt acties wordt gesteund door [ Aangepaste Forms authored in de Universele Redacteur ](/help/edge/docs/forms/universal-editor/create-forms.md):
+Het volgende voorlegt acties wordt gesteund door [&#x200B; Aangepaste Forms authored in de Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/create-forms.md):
 
 - [E-mail verzenden](/help/forms/configure-submit-action-send-email.md)
 - [Een automatische stroomvoorziening aanroepen](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -70,11 +70,11 @@ U kunt de verzendactie voor vormen vormen vormen die in de Universele Redacteur 
 **hoe te vormen verzend Actie voor Forms authored in Universele Redacteur?**
 U kunt de verzendactie voor vormen vormen vormen die in de Universele Redacteur worden gecreeerd gebruikend het **Verzending** lusje van **uitgeven de uitbreiding van de Eigenschappen van de Vorm**.
 
-![ de eigenschappen van de Vorm pictogram ](/help/forms/assets/ue-form-properties-icon.png)
+![&#x200B; de eigenschappen van de Vorm pictogram &#x200B;](/help/forms/assets/ue-form-properties-icon.png)
 
-![ tovenaar van de Eigenschappen van 0&rbrace; Vorm](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+![&#x200B; tovenaar van de Eigenschappen van 0&rbrace; Vorm](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
 >[!NOTE]
 >
 > - Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-> - Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+> - Verwijs naar het [&#x200B; artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)

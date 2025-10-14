@@ -39,4 +39,4 @@ Aanvullende informatie over de categorieën en mogelijke implicaties en oplossin
 >[!NOTE]
 >Het Rapport van de Analysator van Beste praktijken versnelt het proces om de tijd en de kosten te schatten die aan overgang aan AEM as a Cloud Service worden vereist door informatie te verstrekken die anders manueel zou moeten worden verzameld en worden geëvalueerd.
 
-U kunt het rapport Best Practices Analyzer ook downloaden van uw AEM-exemplaar. Zie [ het Bekijken van het Rapport van de Analysator van Beste praktijken ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) voor meer details.
+U kunt het rapport Best Practices Analyzer ook downloaden van uw AEM-exemplaar. Zie [&#x200B; het Bekijken van het Rapport van de Analysator van Beste praktijken &#x200B;](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) voor meer details.

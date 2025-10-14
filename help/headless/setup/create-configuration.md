@@ -21,7 +21,7 @@ Browser van de Configuratie verstrekt een generische configuratie API, inhoudsst
 
 In de context van het beheer van inhoud zonder kop in AEM, denk aan een configuratie als werkplaats binnen AEM waar u uw Modellen van de Inhoud kunt tot stand brengen, die de structuur van uw toekomstige inhoud en de Fragmenten van de Inhoud bepalen. U kunt veelvoudige configuraties hebben om deze modellen te scheiden.
 
-Als u met [ paginasjablonen in een volledig-stapel AEM implementatie ](/help/sites-cloud/authoring/page-editor/templates.md) vertrouwd bent, is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
+Als u met [&#x200B; paginasjablonen in een volledig-stapel AEM implementatie &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) vertrouwd bent, is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
 
 ## Hoe te om een Configuratie te creëren {#how-to-create-a-configuration}
 
@@ -31,13 +31,13 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
 1. Verstrek a **Titel** en a **Naam** voor uw configuratie.
    * De **Titel** zou beschrijvend moeten zijn.
    * De **Naam** wordt de knoopnaam in de bewaarplaats.
-      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [ AEM noemende overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md).
+      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [&#x200B; AEM noemende overeenkomsten &#x200B;](/help/implementing/developing/introduction/naming-conventions.md).
       * Deze kan zo nodig worden aangepast.
 1. Controleer de volgende opties:
    * **Modellen van contentfragmenten**
    * **GraphQL Blijven Vragen**
 
-   ![ creeer Configuratie ](../assets/create-configuration.png)
+   ![&#x200B; creeer Configuratie &#x200B;](../assets/create-configuration.png)
 
 1. Selecteer **creëren**
 
@@ -49,8 +49,8 @@ U kunt indien nodig meerdere configuraties maken. Configuraties kunnen ook worde
 
 ## Volgende stappen {#next-steps}
 
-Gebruikend deze configuratie, kunt u zich nu op het tweede deel van begonnen gids bewegen en [ creeer de Modellen van het Fragment van de Inhoud ](create-content-model.md).
+Gebruikend deze configuratie, kunt u zich nu op het tweede deel van begonnen gids bewegen en [&#x200B; creeer de Modellen van het Fragment van de Inhoud &#x200B;](create-content-model.md).
 
 >[!TIP]
 >
->Voor volledige details over Browser van de Configuratie, zie de [ Browser van de Configuratie documentatie ](/help/implementing/developing/introduction/configurations.md).
+>Voor volledige details over Browser van de Configuratie, zie de [&#x200B; Browser van de Configuratie documentatie &#x200B;](/help/implementing/developing/introduction/configurations.md).

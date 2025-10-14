@@ -18,57 +18,57 @@ Met gemengde mediasets kunt u afbeeldingen, afbeeldingssets, centrifuges en vide
 
 Gemengde mediasets worden aangegeven door een banner met het woord **[!UICONTROL MixedMediaSet]**. Als de gemengde mediaset wordt gepubliceerd, wordt bovendien de publicatiedatum, die door het pictogram **[!UICONTROL World]** wordt aangegeven, samen met de laatste wijzigingsdatum op de banner weergegeven. Dit wordt aangegeven door het pictogram **[!UICONTROL Pencil]**.
 
-![ chlimage_1-137 ](assets/chlimage_1-348.png)
+![&#x200B; chlimage_1-137 &#x200B;](assets/chlimage_1-348.png)
 
 >[!NOTE]
 >
->Voor informatie over het gebruikersinterface van Assets, zie [ activa met Aanraakinterface beheren ](/help/assets/manage-digital-assets.md).
+>Voor informatie over het gebruikersinterface van Assets, zie [&#x200B; activa met Aanraakinterface beheren &#x200B;](/help/assets/manage-digital-assets.md).
 
 ## Snel starten: gemengde mediasets {#quick-start-mixed-media-sets}
 
 Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
-1. [ uploadt uw activa ](#uploading-assets).
+1. [&#x200B; uploadt uw activa &#x200B;](#uploading-assets).
 
    Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Maak indien nodig uw eigen [afbeeldingsets](/help/assets/dynamic-media/image-sets.md) en [spinsets](/help/assets/dynamic-media/spin-sets.md). Omdat gebruikers kunnen inzoomen op afbeeldingen in de gemengde Media Set Viewer, moet u er rekening mee houden dat u kunt zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn.
 
-   Zie [ Dynamische Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door Gemengde Reeksen van Media worden gesteund.
+   Zie [&#x200B; Dynamische Media - de Ondersteunde formaten van het roosterbeeld &#x200B;](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door Gemengde Reeksen van Media worden gesteund.
 
-1. [ creeer Gemengde Reeksen van Media ](#creating-mixed-media-sets).
+1. [&#x200B; creeer Gemengde Reeksen van Media &#x200B;](#creating-mixed-media-sets).
 
    Als u een gemengde mediaset wilt maken, gaat u op de Assets-pagina naar **[!UICONTROL Create]** > **[!UICONTROL Mixed Media Set]** en geeft u een naam op voor de set, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
 
-   Zie [ Werk met Kiezers ](/help/assets/dynamic-media/working-with-selectors.md).
+   Zie [&#x200B; Werk met Kiezers &#x200B;](/help/assets/dynamic-media/working-with-selectors.md).
 
-1. Opstelling [ Gemengde de Kijker van Media stelt ](/help/assets/dynamic-media/managing-viewer-presets.md) vooraf in, zoals nodig.
+1. Opstelling [&#x200B; Gemengde de Kijker van Media stelt &#x200B;](/help/assets/dynamic-media/managing-viewer-presets.md) vooraf in, zoals nodig.
 
    Beheerders kunnen viewervoorinstellingen voor gemengde mediasets maken of wijzigen. Als u de gemengde media met een viewervoorinstelling wilt weergeven, selecteert u de gemengde mediaset en selecteert u **[!UICONTROL Viewers]** in de vervolgkeuzelijst van het linkerspoor.
 
    Als u viewervoorinstellingen wilt maken of bewerken, navigeert u naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]** .
 
-   Zie [ vooraf instelt van de kijker toevoegen en uitgeven ](/help/assets/dynamic-media/managing-viewer-presets.md).
+   Zie [&#x200B; vooraf instelt van de kijker toevoegen en uitgeven &#x200B;](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-1. [ Voorproef Gemengde Plaatsen van Media ](#previewing-mixed-media-sets).
+1. [&#x200B; Voorproef Gemengde Plaatsen van Media &#x200B;](#previewing-mixed-media-sets).
 
    Selecteer de gemengde Mediaset en u kunt er een voorvertoning van weergeven. Als u de gemengde mediaset in de geselecteerde viewer wilt bekijken, selecteert u de miniatuurpictogrammen. U kunt verschillende Viewers kiezen in het **[!UICONTROL Viewers]** -menu, dat beschikbaar is in het linkervervolgkeuzemenu.
 
-1. [ publiceer Gemengde Plaatsen van Media ](#publishing-mixed-media-sets).
+1. [&#x200B; publiceer Gemengde Plaatsen van Media &#x200B;](#publishing-mixed-media-sets).
 
-   Wanneer u een gemengde mediaset publiceert, worden de URL en de insluitreeks geactiveerd. Bovendien moet u [ de vooraf ingestelde kijker ](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets) publiceren.
+   Wanneer u een gemengde mediaset publiceert, worden de URL en de insluitreeks geactiveerd. Bovendien moet u [&#x200B; de vooraf ingestelde kijker &#x200B;](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets) publiceren.
 
-1. [ Verbinding URLs aan uw Toepassing van het Web ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) of [ bed de Video of Kijker van het Beeld ](/help/assets/dynamic-media/embed-code.md) in.
+1. [&#x200B; Verbinding URLs aan uw Toepassing van het Web &#x200B;](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) of [&#x200B; bed de Video of Kijker van het Beeld &#x200B;](/help/assets/dynamic-media/embed-code.md) in.
 
    Adobe Experience Manager Assets maakt URL-aanroepen voor gemengde mediasets en activeert deze nadat u de gemengde mediasets hebt gepubliceerd. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
 
    Selecteer de gemengde Mediaset en selecteer vervolgens **[!UICONTROL Viewers]** in het keuzemenu voor de linkertrack.
 
-   Zie [ Verbinding een Gemengde Media die aan een Web-pagina ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) wordt geplaatst en [ bed de Video of Kijker van het Beeld ](/help/assets/dynamic-media/embed-code.md) in.
+   Zie [&#x200B; Verbinding een Gemengde Media die aan een Web-pagina &#x200B;](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) wordt geplaatst en [&#x200B; bed de Video of Kijker van het Beeld &#x200B;](/help/assets/dynamic-media/embed-code.md) in.
 
-Indien noodzakelijk, kunt u [ Gemengde Reeksen van Media ](#editing-mixed-media-sets) uitgeven. Bovendien kunt u [ Gemengde Media bekijken en wijzigen vastgestelde eigenschappen ](/help/assets/manage-digital-assets.md#editing-properties).
+Indien noodzakelijk, kunt u [&#x200B; Gemengde Reeksen van Media &#x200B;](#editing-mixed-media-sets) uitgeven. Bovendien kunt u [&#x200B; Gemengde Media bekijken en wijzigen vastgestelde eigenschappen &#x200B;](/help/assets/manage-digital-assets.md#editing-properties).
 
 >[!NOTE]
 >
->Als u kwesties hebt die reeksen creëren, zie [ Problemen met Dynamische Media ](/help/assets/dynamic-media/troubleshoot-dm.md) oplossen.
+>Als u kwesties hebt die reeksen creëren, zie [&#x200B; Problemen met Dynamische Media &#x200B;](/help/assets/dynamic-media/troubleshoot-dm.md) oplossen.
 
 ## Elementen uploaden {#uploading-assets}
 
@@ -76,7 +76,7 @@ Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden
 
 Als u bovendien centrifuges of afbeeldingssets wilt toevoegen aan de gemengde mediaset, maakt u deze ook.
 
-Zie [ Dynamische Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door Gemengde Reeksen van Media worden gesteund.
+Zie [&#x200B; Dynamische Media - de Ondersteunde formaten van het roosterbeeld &#x200B;](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door Gemengde Reeksen van Media worden gesteund.
 
 ## Gemengde mediasets maken {#creating-mixed-media-sets}
 
@@ -88,11 +88,11 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 1. Navigeer in Assets naar de plaats waar u een gemengde mediaset wilt maken, selecteer **[!UICONTROL Create]** en selecteer **[!UICONTROL Mixed Media Set]** . U kunt de set ook maken vanuit een map die uw assets bevat. De editor voor gemengde mediasets wordt weergegeven.
 
-   ![ chlimage_1-138 ](assets/chlimage_1-349.png)
+   ![&#x200B; chlimage_1-138 &#x200B;](assets/chlimage_1-349.png)
 
 1. Voer in de Editor gemengde mediaset in **[!UICONTROL Title]** een naam in voor de gemengde mediaset. De naam wordt in de banner weergegeven in de gemengde mediaset. Voer eventueel een beschrijving in.
 
-   ![ chlimage_1-139 ](assets/chlimage_1-350.png)
+   ![&#x200B; chlimage_1-139 &#x200B;](assets/chlimage_1-350.png)
 
    >[!NOTE]
    >
@@ -102,13 +102,13 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
    Met de Asset Selector kunt u naar elementen zoeken door een trefwoord in te voeren en **[!UICONTROL Return]** te selecteren. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door het pictogram **[!UICONTROL View]** te selecteren en **[!UICONTROL List View]**, **[!UICONTROL Column View]** of **[!UICONTROL Card View]** te selecteren.
 
-   Zie [ Werkend met Kiezers ](/help/assets/dynamic-media/working-with-selectors.md).
+   Zie [&#x200B; Werkend met Kiezers &#x200B;](/help/assets/dynamic-media/working-with-selectors.md).
 
-   ![ chlimage_1-140 ](assets/chlimage_1-351.png)
+   ![&#x200B; chlimage_1-140 &#x200B;](assets/chlimage_1-351.png)
 
 1. Wijzig de volgorde van de elementen door deze omhoog of omlaag te slepen (selecteer het pictogram **[!UICONTROL Reorder]** ).
 
-   ![ chlimage_1-141 ](assets/chlimage_1-352.png)
+   ![&#x200B; chlimage_1-141 &#x200B;](assets/chlimage_1-352.png)
 
    Als u miniaturen wilt toevoegen, selecteert u het pictogram **+** **[!UICONTROL thumbnail]** naast de afbeelding en navigeert u naar de gewenste miniatuur. Selecteer **[!UICONTROL Save]** wanneer u klaar bent met het selecteren van alle miniatuurafbeeldingen.
 
@@ -122,7 +122,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 ## Gemengde mediasets bewerken {#editing-mixed-media-sets}
 
-U kunt diverse het uitgeven taken aan activa in Gemengde Reeksen van Media direct in het gebruikersinterface [ uitvoeren aangezien u om het even welke activa in Assets ](/help/assets/manage-digital-assets.md). U kunt ook de volgende handelingen uitvoeren in Gemengde Mediasets:
+U kunt diverse het uitgeven taken aan activa in Gemengde Reeksen van Media direct in het gebruikersinterface [&#x200B; uitvoeren aangezien u om het even welke activa in Assets &#x200B;](/help/assets/manage-digital-assets.md). U kunt ook de volgende handelingen uitvoeren in Gemengde Mediasets:
 
 * Voeg elementen toe aan de gemengde mediaset.
 * Elementen opnieuw rangschikken in de gemengde mediaset.
@@ -164,11 +164,11 @@ U kunt diverse het uitgeven taken aan activa in Gemengde Reeksen van Media direc
 
 ## Voorvertoning van gemengde mediasets {#previewing-mixed-media-sets}
 
-Zie [ activa van de Voorproef ](/help/assets/dynamic-media/previewing-assets.md) voor details op hoe te voorproef Gemengde Reeksen van Media.
+Zie [&#x200B; activa van de Voorproef &#x200B;](/help/assets/dynamic-media/previewing-assets.md) voor details op hoe te voorproef Gemengde Reeksen van Media.
 
 ## Gemengde mediasets publiceren {#publishing-mixed-media-sets}
 
-Zie [ activa ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op publiceren de Gemengde Reeksen van Media.
+Zie [&#x200B; activa &#x200B;](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op publiceren de Gemengde Reeksen van Media.
 
 >[!NOTE]
 >

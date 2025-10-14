@@ -55,5 +55,5 @@ Als u het kenmerk `components` in een filterdefinitie instelt op `null` , worden
 >
 >Meer informatie over andere opties voor aanpassing en extensie die beschikbaar zijn in de Universal Editor vindt u in de documenten:
 >
->* [ het Aanpassen van de Universele Redacteur ](/help/implementing/universal-editor/customizing.md)
->* [ Uitbreidend de Universele Redacteur ](/help/implementing/universal-editor/extending.md)
+>* [&#x200B; het Aanpassen van de Universele Redacteur &#x200B;](/help/implementing/universal-editor/customizing.md)
+>* [&#x200B; Uitbreidend de Universele Redacteur &#x200B;](/help/implementing/universal-editor/extending.md)

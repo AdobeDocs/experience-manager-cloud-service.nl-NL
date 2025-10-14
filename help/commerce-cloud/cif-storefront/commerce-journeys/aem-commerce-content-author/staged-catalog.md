@@ -19,7 +19,7 @@ Leer hoe u ervaringen met gefaseerde productcatalogi beheert.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis van de Inhoud van AEM en van Commerce, [ leiden de Pagina&#39;s en de Malplaatjes van de Catalogus van het Product, ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) u leerde om de ervaringen van de productcatalogus te beheren en te bouwen die op malplaatjes worden gebaseerd.
+In het vorige document van de reis van de Inhoud van AEM en van Commerce, [&#x200B; leiden de Pagina&#39;s en de Malplaatjes van de Catalogus van het Product, &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) u leerde om de ervaringen van de productcatalogus te beheren en te bouwen die op malplaatjes worden gebaseerd.
 
 Dit artikel bouwt voort op die grondbeginselen.
 
@@ -29,7 +29,7 @@ Dit document helpt u te begrijpen hoe u de ervaring van de productcatalogus kunt
 
 >[!NOTE]
 >
->Deze functie is alleen beschikbaar bij Adobe Commerce of Cloud Edition en connectors van derden die tokenverificatie ondersteunen. Zie [ Begonnen het Worden ](/help/commerce-cloud/cif-storefront/getting-started.md) voor extra informatie.
+>Deze functie is alleen beschikbaar bij Adobe Commerce of Cloud Edition en connectors van derden die tokenverificatie ondersteunen. Zie [&#x200B; Begonnen het Worden &#x200B;](/help/commerce-cloud/cif-storefront/getting-started.md) voor extra informatie.
 
 Eerst, zien wij hoe de auteurs tot gefaseerde productgegevens met CIF kunnen toegang hebben.
 
@@ -37,15 +37,15 @@ Eerst, zien wij hoe de auteurs tot gefaseerde productgegevens met CIF kunnen toe
 
 Een manier om gefaseerde productgegevens te openen is het gebruik van de productcockpit. Open de productcatalogus door op het Commerce-pictogram in het AEM-hoofdmenu te klikken. Hierdoor hebt u toegang tot live productgegevens. Open het filterlusje op de linkerzijde en breid **STAGED CATALOG** uit. Met de voorvertoningsgegevens hebt u nu toegang tot de gefaseerde productgegevens voor elk gewenst moment. De gefaseerde gegevens omvatten nieuwe categorieën, producten, of bijgewerkte gebieden zoals prijs.
 
-![ cockpit van het stadium ](assets/staged-cockpit.png)
+![&#x200B; cockpit van het stadium &#x200B;](assets/staged-cockpit.png)
 
 Het is mogelijk om een voorvertoning van een opslagruimte met gefaseerde gegevens weer te geven met de tijdverdraaiingsweergave. Open de editor en schakel over naar de modus voor tijdverdraaiing. Selecteer een toekomstige datum. U ziet de informatie boven op de editor dat u de pagina voor een bepaalde datum bekijkt.
 
-![ stadium timewarp ](assets/staged-timewarp.png)
+![&#x200B; stadium timewarp &#x200B;](assets/staged-timewarp.png)
 
 U kunt nu door de catalogus bladeren met de gegevens in het werkgebied. Als u een gefaseerde categorie of productpagina opent, zal de redacteur een visuele indicator tonen.
 
-![ stadium plp ](assets/staged-plp.png)
+![&#x200B; stadium plp &#x200B;](assets/staged-plp.png)
 
 >[!NOTE]
 >
@@ -53,13 +53,13 @@ U kunt nu door de catalogus bladeren met de gegevens in het werkgebied. Als u ee
 
 ## AEM Launches {#launches}
 
-Met AEM Launches kunt u inhoud maken voor gefaseerde productgegevens. Als u niet vertrouwd met Lanceren bent, volg de documentatieverbinding onder de [ Extra sectie van Middelen.](#additional-resources) De datum van de Lancering wordt dan gebruikt om tot gefaseerde productgegevens toegang te hebben.
+Met AEM Launches kunt u inhoud maken voor gefaseerde productgegevens. Als u niet vertrouwd met Lanceren bent, volg de documentatieverbinding onder de [&#x200B; Extra sectie van Middelen.](#additional-resources) De datum van de Lancering wordt dan gebruikt om tot gefaseerde productgegevens toegang te hebben.
 
-![ stadium lancering ](assets/staged-launch.png)
+![&#x200B; stadium lancering &#x200B;](assets/staged-launch.png)
 
 De kiezers respecteren de startdatum met de gefaseerde indicator aan de rechterkant.
 
-![ plukker van het stadium ](assets/staged-picker.png)
+![&#x200B; plukker van het stadium &#x200B;](assets/staged-picker.png)
 
 ## Volgende functies {#what-is-next}
 
@@ -68,7 +68,7 @@ Nu u dit deel van de reis hebt voltooid, moet u:
 * begrijpen de concepten van een gefaseerde productcatalogus en inhoud met Launches
 * toegang hebben tot gegevens uit de gefaseerde productcatalogus via productcockpit en editor
 
-U bent nu klaar om [ productervaringen te beheren.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) Voor AEM Content en Commerce zijn echter veel extra opties beschikbaar. Controle uit enkele extra middelen beschikbaar in de [ Extra sectie van Middelen ](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
+U bent nu klaar om [&#x200B; productervaringen te beheren.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) Voor AEM Content en Commerce zijn echter veel extra opties beschikbaar. Controle uit enkele extra middelen beschikbaar in de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
 
 ## Aanvullende bronnen {#additional-resources}
 

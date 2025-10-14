@@ -27,10 +27,10 @@ Hieronder ziet u een eenvoudig pad voor het maken, beheren en leveren van ervari
 >
 >Als u aan of AEM of zonder kop nieuw bent, zie de Dagboeken van de Documentatie van de Zwaartepunt van de Adobe voor een inleiding van begin tot eind aan zowel hoofd als hoe AEM het steunt.
 >
->* [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md)
->* [ Zwaardeloze Reis van de Architect van de Inhoud ](/help/journey-headless/architect/overview.md)
+>* [&#x200B; Zwaardeloze Reis van de Ontwikkelaar &#x200B;](/help/journey-headless/developer/overview.md)
+>* [&#x200B; Zwaardeloze Reis van de Architect van de Inhoud &#x200B;](/help/journey-headless/architect/overview.md)
 >* [&#128279;](/help/journey-headless/author/overview.md) Reis van de Auteur van de Inhoud zonder hoofd 
->* [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md).
+>* [&#x200B; Zwaardeloze Vertaalreis &#x200B;](/help/journey-headless/translation/overview.md).
 
 ## Publiek {#audience}
 
@@ -44,4 +44,4 @@ In een productiesituatie worden de taken echter meerdere malen door verschillend
 
 ## Volgende stap {#next-step}
 
-Klaar om meer te leren? Dan begin door het eerste deel van de Opstelling zonder Koppen te lezen: [ Creërend een Configuratie ](create-configuration.md).
+Klaar om meer te leren? Dan begin door het eerste deel van de Opstelling zonder Koppen te lezen: [&#x200B; Creërend een Configuratie &#x200B;](create-configuration.md).

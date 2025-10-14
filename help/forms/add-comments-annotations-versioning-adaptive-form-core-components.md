@@ -33,38 +33,38 @@ Voer de volgende stappen uit om een versie van een formulier te maken:
 1. Maak een formulier of gebruik een bestaand formulier.
 1. Op AEM UI, navigeer aan **[!UICONTROL Form]**>> **[!UICONTROL Forms & Documents]** en selecteer uw **Vorm**.
 1. Selecteer **[!UICONTROL Versions]** in het keuzemenu Selectie in het linkerdeelvenster.
-   ![ selecteer een vorm ](select-a-form.png)
+   ![&#x200B; selecteer een vorm &#x200B;](select-a-form.png)
 1. Klik **drie punten** die op het lagere paneel op de linkerzijde worden gevestigd, klik **[!UICONTROL Save as Version]**.
 1. Geef nu een label op voor de formulierversie en u kunt informatie over het formulier geven via de opmerking.
-   ![ creeer een vormversie ](create-a-form-version.png)
+   ![&#x200B; creeer een vormversie &#x200B;](create-a-form-version.png)
 
 ### Een formulierversie bijwerken {#update-a-form-version}
 
 Wanneer u het aangepaste formulier bewerkt en bijwerkt, voegt u een nieuwe versie aan het formulier toe. Voer de stappen in de laatste sectie uit om een nieuwe versie van het formulier een naam te geven, zoals wordt weergegeven in de afbeelding:
 
-![ werk een vormversie ](update-a-form-version.png) bij
+![&#x200B; werk een vormversie &#x200B;](update-a-form-version.png) bij
 
 ### Een formulierversie herstellen {#revert-a-form-version}
 
 Als u de vorige versie van een formulier wilt herstellen, selecteert u een formulierversie en klikt u op **[!UICONTROL Revert to this Version]** .
 
-![ keert vormversie ](revert-form-version.png) terug
+![&#x200B; keert vormversie &#x200B;](revert-form-version.png) terug
 
 ### Formulierversies vergelijken {#compare-form-versions}
 
 Formulierauteurs kunnen twee verschillende versies van een formulier vergelijken voor voorbeelddoeleinden. Als u versies wilt vergelijken, selecteert u een formulierversie en klikt u op **[!UICONTROL Compare to Current]** . Er worden twee verschillende formulierversies weergegeven in de voorbeeldmodus.
 
-![ vergelijk vormversies ](compare-form-versions.png)
+![&#x200B; vergelijk vormversies &#x200B;](compare-form-versions.png)
 
 ## Opmerkingen toevoegen {#add-comments}
 
 Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen op formulieren kunnen plaatsen. Elke gebruiker van het formulier kan opmerkingen plaatsen op een formulier of een formulier reviseren via opmerkingen. Als u opmerkingen wilt maken over een formulier, selecteert u een **[!UICONTROL Form]** en voegt u een **[!UICONTROL Comment]** toe aan het formulier.
 
 >[!NOTE]
-> Wanneer u commentaren in adaptieve componenten van de vormkern zoals hierboven besproken gebruikt, wordt de vormfunctionaliteit [ Creërend en het leiden van overzichten aan vormen ](/help/forms/create-reviews-forms.md) onbruikbaar gemaakt.
+> Wanneer u commentaren in adaptieve componenten van de vormkern zoals hierboven besproken gebruikt, wordt de vormfunctionaliteit [&#x200B; Creërend en het leiden van overzichten aan vormen &#x200B;](/help/forms/create-reviews-forms.md) onbruikbaar gemaakt.
 
 
-![ voeg commentaren op een vorm ](form-comments.png) toe
+![&#x200B; voeg commentaren op een vorm &#x200B;](form-comments.png) toe
 
 ## Annotaties toevoegen {#adaptive-form-annotations}
 
@@ -73,16 +73,16 @@ In veel gevallen moeten gebruikers van een formuliergroep annotaties toevoegen a
 1. Open een formulier in de modus **[!UICONTROL Edit]** .
 
 1. Klik **voeg pictogram** toe dat op de hogere juiste spoorstaaf zoals die in het beeld wordt gegeven.
-   ![ Annotation ](annotation.png)
+   ![&#x200B; Annotation &#x200B;](annotation.png)
 
 1. Klik **toevoegen pictogram** op de hogere linkerspoorstaaf zoals die in het beeld wordt gegeven om de aantekening toe te voegen.
-   ![ voeg aantekening ](add-annotation.png) toe
+   ![&#x200B; voeg aantekening &#x200B;](add-annotation.png) toe
 
 1. Nu kunt u opmerkingen toevoegen en schetsen met meerdere kleuren tekenen in formuliercomponenten.
 
 1. Als u alle toegevoegde aantekeningen op een formulier wilt bekijken, selecteert u het formulier en ziet u de aantekeningen die aan de linkerkant zijn toegevoegd, zoals in de afbeelding wordt getoond.
 
-   ![ zie toegevoegde annotaties ](see-annotations.png)
+   ![&#x200B; zie toegevoegde annotaties &#x200B;](see-annotations.png)
 
 ## Zie ook {#see-also}
 

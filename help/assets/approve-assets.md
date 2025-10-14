@@ -58,7 +58,7 @@ Voer de volgende stappen uit om elementen in [!DNL Experience Manager Admin view
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   Op dezelfde manier kunt u activa goedkeuren gebruikend de [ nieuwe mening van Assets ](/help/assets/manage-organize-assets-view.md).
+   Op dezelfde manier kunt u activa goedkeuren gebruikend de [&#x200B; nieuwe mening van Assets &#x200B;](/help/assets/manage-organize-assets-view.md).
 
 ## Elementen in bulk goedkeuren {#bulk-approve-assets}
 
@@ -103,14 +103,14 @@ En als u een grote hoeveelheid gegevens in een map in de Assets-weergave wilt se
 
 1. Selecteer **[!UICONTROL Approved]** in het **[!UICONTROL Status]** -veld dat beschikbaar is in de sectie [!UICONTROL Properties] in het rechterdeelvenster.
 
-   Als u de status als `Approved` selecteert, en als [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) of [ Content Hub ](/help/assets/product-overview.md), of allebei voor uw Experience Manager Assets worden toegelaten, kunt u `Delivery` bekijken en `Content Hub` opties beschikbaar op het **[!UICONTROL Approval Target]** gebied.
+   Als u de status als `Approved` selecteert, en als [&#x200B; Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) of [&#x200B; Content Hub &#x200B;](/help/assets/product-overview.md), of allebei voor uw Experience Manager Assets worden toegelaten, kunt u `Delivery` bekijken en `Content Hub` opties beschikbaar op het **[!UICONTROL Approval Target]** gebied.
 
    * Selecteer **[!UICONTROL Delivery]** om de middelen beschikbaar te maken voor zowel Dynamic Media met OpenAPI-mogelijkheden als Content Hub. Als Content Hub niet is ingeschakeld, maakt u met deze optie de middelen alleen beschikbaar voor Dynamic Media met OpenAPI-mogelijkheden.
    * Selecteer **[!UICONTROL Content Hub]** om de middelen beschikbaar te maken voor Content Hub.
 
-   ![ de status van de Goedkeuring ](/help/assets/assets/approval-status-delivery.png)
+   ![&#x200B; de status van de Goedkeuring &#x200B;](/help/assets/assets/approval-status-delivery.png)
 
-   Als u niet de standaardmeta-gegevensvorm gebruikt en niet het **[!UICONTROL Approval Target]** gebied kunt bekijken, [ geef uw meta-gegevensvorm ](/help/assets/metadata-assets-view.md#metadata-forms) uit om het **[!UICONTROL Approval for]** gebied van de beschikbare componenten aan uw meta-gegevensvorm te slepen en klik **[!UICONTROL Save]**.
+   Als u niet de standaardmeta-gegevensvorm gebruikt en niet het **[!UICONTROL Approval Target]** gebied kunt bekijken, [&#x200B; geef uw meta-gegevensvorm &#x200B;](/help/assets/metadata-assets-view.md#metadata-forms) uit om het **[!UICONTROL Approval for]** gebied van de beschikbare componenten aan uw meta-gegevensvorm te slepen en klik **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
@@ -131,10 +131,10 @@ Om levering URL voor een goedgekeurd middel binnen de bewaarplaats te kopiëren:
 1. Selecteer **[!UICONTROL Dynamic Media with OpenAPI]** beschikbaar in het deelvenster **[!UICONTROL Dynamic Media]** .
 
 1. Klik op **[!UICONTROL Copy URL]** om de URL van de levering van het element te kopiëren.
-   ![ dynamische vertoningen ](/help/assets/assets/dm-with-openapi-non-image-assets.png)
+   ![&#x200B; dynamische vertoningen &#x200B;](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
 
-Voor informatie over andere vertoningen die binnen het Dynamische paneel van Media tonen, zie [ Mening en download Dynamische vertoningen van Media ](/help/assets/renditions.md#view-download-dm-renditions).
+Voor informatie over andere vertoningen die binnen het Dynamische paneel van Media tonen, zie [&#x200B; Mening en download Dynamische vertoningen van Media &#x200B;](/help/assets/renditions.md#view-download-dm-renditions).

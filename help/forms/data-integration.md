@@ -15,12 +15,12 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=nl-NL) |
+| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 
 
-![ de Integratie van Gegevens ](do-not-localize/data-integeration.png)
+![&#x200B; de Integratie van Gegevens &#x200B;](do-not-localize/data-integeration.png)
 
 De infrastructuur van de onderneming omvat verschillende back-end systemen of gegevensbronnen zoals gegevensbestanden, Webdiensten, de diensten van REST, de diensten van OData, en de oplossingen van CRM. Samengesteld, maken zij een informatiesysteem dat gegevens aan ondernemingstoepassingen dient om zaken van dag tot dag uit te voeren. Anderzijds leggen toepassingen gegevens vast en sturen deze terug naar bijgewerkte gegevensbronnen.
 
@@ -30,7 +30,7 @@ Terwijl een verdeeld, modulair systeem zijn eigen voordelen heeft, ligt de uitda
 
 ## Overzicht van gegevensintegratie {#data-integration-overview}
 
-![ aem-vormen-gegeven-integratie ](assets/aem-forms-data-integeration.png)
+![&#x200B; aem-vormen-gegeven-integratie &#x200B;](assets/aem-forms-data-integeration.png)
 
 [!DNL AEM Forms] Dankzij gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden met [!DNL AEM Forms] . Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen. De verenigde vertegenwoordiging is gekend als model van vormgegevens (FDM), een uitbreiding van het schema JSON. De entiteiten in een formuliergegevensmodel (FDM) worden gegevensmodelobjecten genoemd. Met een formuliergegevensmodel (FDM) kunt u:
 

@@ -45,7 +45,7 @@ Launches kunnen ook:
 * Gemaakt voor meerdere hoofdvertakkingen. Hoewel u de lancering voor de volledige plaats (en de veranderingen daar) kon tot stand brengen kan dit onpraktisch zijn aangezien de volledige plaats moet worden gekopieerd. Wanneer er honderden of zelfs duizenden pagina&#39;s bij betrokken zijn, worden de systeemvereisten en de prestaties beïnvloed door zowel de kopieeractie als later de vergelijkingen die vereist zijn voor de promotietaken.
 * Genest (een lancering binnen een lancering) om u de capaciteit te geven om een lancering van een bestaande lancering tot stand te brengen zodat de auteurs van reeds aangebrachte veranderingen kunnen voordeel halen, eerder dan het moeten de zelfde veranderingen veelvoudige tijden voor elke lancering aanbrengen.
 
-Deze sectie beschrijft om te creëren, uit te geven en te bevorderen (en indien nodig [ schrapt ](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) lanceringspagina&#39;s van binnen de console van Plaatsen of [ de console van Lanceringen ](#the-launches-console):
+Deze sectie beschrijft om te creëren, uit te geven en te bevorderen (en indien nodig [&#x200B; schrapt &#x200B;](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) lanceringspagina&#39;s van binnen de console van Plaatsen of [&#x200B; de console van Lanceringen &#x200B;](#the-launches-console):
 
 * [Starten maken](/help/sites-cloud/authoring/launches/creating.md)
 * [Starten bewerken](/help/sites-cloud/authoring/launches/editing.md)
@@ -64,7 +64,7 @@ Met Launches kunt u:
    * De bronpagina&#39;s op het hoogste niveau worden **Productie** genoemd.
       * De bronpagina&#39;s kunnen uit meerdere (afzonderlijke) vertakkingen worden genomen.
 
-  ![ Orde van verrichting van lanceringen ](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![&#x200B; Orde van verrichting van lanceringen &#x200B;](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * De startconfiguratie bewerken:
    * Pagina&#39;s en/of vertakkingen toevoegen aan of verwijderen uit het opstarten.
@@ -83,13 +83,13 @@ Met Launches kunt u:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze worden ingesteld op basis van overerving, dat wil zeggen als een live kopie).
    * U kunt wijzigingen aanbrengen in de opstartafbeelding zonder deze automatische updates of de bronpagina&#39;s te onderbreken.
 
-  ![ Acties parallel ](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![&#x200B; Acties parallel &#x200B;](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
-* [ creeer een genestelde lancering ](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
+* [&#x200B; creeer een genestelde lancering &#x200B;](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
    * De bron is een bestaande opstart.
-   * U kunt [ een genestelde lancering ](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) aan om het even welk doel bevorderen; dit kan een ouderlancering of de top-level bronpagina&#39;s (Productie) zijn.
+   * U kunt [&#x200B; een genestelde lancering &#x200B;](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) aan om het even welk doel bevorderen; dit kan een ouderlancering of de top-level bronpagina&#39;s (Productie) zijn.
 
-  ![ Een genestelde lancering ](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![&#x200B; Een genestelde lancering &#x200B;](/help/sites-cloud/authoring/assets/launches-nested.png)
 
   >[!CAUTION]
   >
@@ -107,11 +107,11 @@ Met Launches kunt u:
 1. Open het **spoor van Verwijzingen** en selecteer de bronpagina.
 1. Selecteer **Lanceringen**, zijn de bestaande lanceringen vermeld, samen met toegang tot de **Console van Lanceringen**:
 
-   ![ Verwijzingen van lanceringen in plaatsenconsole ](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![&#x200B; Verwijzingen van lanceringen in plaatsenconsole &#x200B;](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Selecteer de juiste start en de lijst met mogelijke acties wordt weergegeven:
 
-   ![ Acties om lanceringen in plaatsenconsole ](/help/sites-cloud/authoring/assets/launches-references-actions.png) over te nemen
+   ![&#x200B; Acties om lanceringen in plaatsenconsole &#x200B;](/help/sites-cloud/authoring/assets/launches-references-actions.png) over te nemen
 
 ## De opstartconsole {#the-launches-console}
 
@@ -125,7 +125,7 @@ Met Launches kunt u:
 
 De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u op die vermelde handelen.
 
-![ Console van de Lancering - beheer Inhoud ](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+![&#x200B; Console van de Lancering - beheer Inhoud &#x200B;](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 De console is toegankelijk via:
 
@@ -133,8 +133,8 @@ De console is toegankelijk via:
 
 * **Console van Lanceringen** bij de bodem van de **sectie van Lanceringen** van de **Verwijzingen** spoor wanneer het navigeren van broninhoud in de console van Plaatsen.
 
-  ![ Console van Lanceringen in Verwijzingen van lanceringen in de console van Plaatsen ](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![&#x200B; Console van Lanceringen in Verwijzingen van lanceringen in de console van Plaatsen &#x200B;](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * De **Starten** knoop bij het hoogste recht, wanneer het navigeren van lanceringsinhoud in de console van Plaatsen:
 
-  ![ optie van Lanceringen in de console van Plaatsen ](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![&#x200B; optie van Lanceringen in de console van Plaatsen &#x200B;](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)

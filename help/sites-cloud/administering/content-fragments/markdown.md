@@ -14,9 +14,9 @@ ht-degree: 2%
 
 # Markering {#markdown}
 
-Wanneer u [&#128279;](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) creeert uw Fragmenten van de Inhoud u [ Multiline tekstgebieden ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) kunt hebben die met het **StandaardType** van **wordt bepaald Markdown**. De redacteur van het Fragment van de Inhoud gebruikt *syntaxis van de prijsdaling* om u toe te staan om inhoud voor zowel pagina auteursrecht als hoofdloze levering gemakkelijk te schrijven:
+Wanneer u [&#128279;](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) creeert uw Fragmenten van de Inhoud u [&#x200B; Multiline tekstgebieden &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) kunt hebben die met het **StandaardType** van **wordt bepaald Markdown**. De redacteur van het Fragment van de Inhoud gebruikt *syntaxis van de prijsdaling* om u toe te staan om inhoud voor zowel pagina auteursrecht als hoofdloze levering gemakkelijk te schrijven:
 
-![ de Meerdere gebieden van de Prijsverhoging van de lijntekst in de redacteur ](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
+![&#x200B; de Meerdere gebieden van de Prijsverhoging van de lijntekst in de redacteur &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 U kunt het volgende definiëren:
 

@@ -34,15 +34,15 @@ Voor Adaptive Forms-auteurs worden referentiefragmenten geleverd in het [!DNL AE
 * Voorwaarden en bepalingen
 * Voorwaarden en bepalingen met krabbels
 
-Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Voor het installeren van een pakket, zie [ het Opstellen van Inhoudspakketten via Cloud Manager en de Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#deploying-content-packages-via-cloud-manager-and-package-manager) en [ hoe te met Pakketten ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) werken.
+Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Voor het installeren van een pakket, zie [&#x200B; het Opstellen van Inhoudspakketten via Cloud Manager en de Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#deploying-content-packages-via-cloud-manager-and-package-manager) en [&#x200B; hoe te met Pakketten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) werken.
 
-![ Alle vermelde fragmenten ](assets/ootb-frags.png)
+![&#x200B; Alle vermelde fragmenten &#x200B;](assets/ootb-frags.png)
 
 ## Adres {#address}
 
 Bevat velden voor het opgeven van een postadres. De beschikbare velden zijn adres, postcode, plaats, staat en land. Het omvat ook een vooraf geconfigureerde webservice die de stad en de staat voor een opgegeven Amerikaanse postcode vult.
 
-![ fragment van het Adres ](assets/address.png)
+![&#x200B; fragment van het Adres &#x200B;](assets/address.png)
 
 <!--[Click to enlarge
 
@@ -52,7 +52,7 @@ Bevat velden voor het opgeven van een postadres. De beschikbare velden zijn adre
 
 Bevat velden voor het vastleggen van een telefoonnummer en e-mailadres.
 
-![ fragment van de informatie van het Contact ](assets/contact-info.png)
+![&#x200B; fragment van de informatie van het Contact &#x200B;](assets/contact-info.png)
 
 <!--[Click to enlarge
 
@@ -61,13 +61,13 @@ Bevat velden voor het vastleggen van een telefoonnummer en e-mailadres.
 ## Creditcardgegevens {#credit-card-information}
 
 Bevat velden voor het vastleggen van creditcardgegevens die kunnen worden gebruikt voor het verwerken van betalingen.
-[![ Fragment van de Informatie van de Kaart van de Krediet ](assets/cc-info.png)](assets/cc-info-1.png)
+[![&#x200B; Fragment van de Informatie van de Kaart van de Krediet &#x200B;](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Huidige werkgelegenheid {#current-employment}
 
 Bevat velden waarin actuele werkgelegenheidsdetails worden opgenomen, zoals arbeidsstatus, werkterrein, aanwijzing, organisatie en datum van toetreding.
 
-![ Huidige het fragment van de Werkgelegenheid ](assets/current-emp.png)
+![&#x200B; Huidige het fragment van de Werkgelegenheid &#x200B;](assets/current-emp.png)
 
 <!--[Click to enlarge
 
@@ -77,7 +77,7 @@ Bevat velden waarin actuele werkgelegenheidsdetails worden opgenomen, zoals arbe
 
 Omvat gebieden om informatie over één of meerdere gebiedsdelen, zoals hun naam, verhouding, en leeftijd in een tabelvorm te specificeren.
 
-![ het fragment van de Informatie van Afhankelijkheden ](assets/dependents-info.png)
+![&#x200B; het fragment van de Informatie van Afhankelijkheden &#x200B;](assets/dependents-info.png)
 
 <!--[Click to enlarge
 
@@ -87,7 +87,7 @@ Omvat gebieden om informatie over één of meerdere gebiedsdelen, zoals hun naam
 
 Bevat velden voor het vastleggen van de arbeidsgeschiedenis. Het staat toe toevoegend veelvoudige organisaties.
 
-![ het fragment van de Geschiedenis van de Werkgelegenheid ](assets/emp-history.png)
+![&#x200B; het fragment van de Geschiedenis van de Werkgelegenheid &#x200B;](assets/emp-history.png)
 
 <!--[Click to enlarge
 
@@ -97,7 +97,7 @@ Bevat velden voor het vastleggen van de arbeidsgeschiedenis. Het staat toe toevo
 
 Bevat velden voor het opnemen van maandelijkse kasstroom en uitgaven. Forms die van gebruikers eist dat ze financiële gegevens verstrekken, kan dit fragment gebruiken om inkomsten en uitgaven vast te leggen.
 
-![ Inkomen &amp; Fragment van Uitgaven ](assets/income.png)
+![&#x200B; Inkomen &amp; Fragment van Uitgaven &#x200B;](assets/income.png)
 
 <!--[Click to enlarge
 
@@ -107,7 +107,7 @@ Bevat velden voor het opnemen van maandelijkse kasstroom en uitgaven. Forms die 
 
 Bevat velden voor het opgeven van de titel, voornaam, middelste naam en achternaam.
 
-![ fragment van de Naam ](assets/name.png)
+![&#x200B; fragment van de Naam &#x200B;](assets/name.png)
 
 <!--[Click to enlarge
 
@@ -117,7 +117,7 @@ Bevat velden voor het opgeven van de titel, voornaam, middelste naam en achterna
 
 Hiermee geeft u aan welke voorwaarden gebruikers moeten accepteren voordat ze een formulier verzenden.
 
-![ het fragment van Termen &amp; van Voorwaarden ](assets/tnc.png)
+![&#x200B; het fragment van Termen &amp; van Voorwaarden &#x200B;](assets/tnc.png)
 
 <!--[Click to enlarge
 
@@ -127,7 +127,7 @@ Hiermee geeft u aan welke voorwaarden gebruikers moeten accepteren voordat ze ee
 
 Hiermee geeft u aan onder welke voorwaarden gebruikers een formulier moeten accepteren en ondertekenen voordat ze het verzenden.
 
-![ Termen &amp; Voorwaarden met Krabbelen ](assets/tnc-scribble.png)
+![&#x200B; Termen &amp; Voorwaarden met Krabbelen &#x200B;](assets/tnc-scribble.png)
 
 <!--[Click to enlarge
 

@@ -61,7 +61,7 @@ Een activiteit:
 
 * definieert de toewijzing van een specifiek publiek (segment) met een specifieke ervaring
 * wordt de periode gedefinieerd gedurende welke de streefwaarde wordt toegepast
-* identificeert [ richtend motor ](#targeting-engine) die uw pagina&#39;s gebruiken
+* identificeert [&#x200B; richtend motor &#x200B;](#targeting-engine) die uw pagina&#39;s gebruiken
 
 De activiteit kan of een verpersoonlijkingsactiviteit, of A/B de activiteit van de Test (in het geval van het AEM en de verpersoonlijkingswerkschema van Adobe Target) zijn.
 
@@ -69,7 +69,7 @@ Een activiteit kan bijvoorbeeld ervaringen definiëren voor twee verschillende s
 
 Of, als ander voorbeeld, kan uw productcatalogus tellers omvatten die aandacht op seizoensgebonden producten richten. Een zomersportactiviteit zou het publiek kunnen bepalen dat de theers in de zomermaanden als doel hebben.
 
-Gebruik de [ console van Activiteiten ](/help/sites-cloud/authoring/personalization/activities.md) om de activiteiten voor uw [ Banden ](#brand) tot stand te brengen en te beheren. U kunt activiteiten ook tot stand brengen aangezien u uw [ gerichte inhoud ](/help/sites-cloud/authoring/personalization/targeted-content.md) met [ het richten wijze ](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) ontwerpt.
+Gebruik de [&#x200B; console van Activiteiten &#x200B;](/help/sites-cloud/authoring/personalization/activities.md) om de activiteiten voor uw [&#x200B; Banden &#x200B;](#brand) tot stand te brengen en te beheren. U kunt activiteiten ook tot stand brengen aangezien u uw [&#x200B; gerichte inhoud &#x200B;](/help/sites-cloud/authoring/personalization/targeted-content.md) met [&#x200B; het richten wijze &#x200B;](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) ontwerpt.
 
 ### Merk {#brand}
 
@@ -85,26 +85,26 @@ Een gebied is een deelgebied van een merk.
 
 Wanneer creatie, is dit de het uitgeven wijze die wordt gebruikt om, de componenten voor verpersoonlijking te activeren en te vormen.
 
-U kunt [ Auteur gerichte inhoud ](/help/sites-cloud/authoring/personalization/targeted-content.md) gebruiken het richten wijze van AEM. De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor de ervaringen van uw marketing activiteiten tot stand te brengen.
+U kunt [&#x200B; Auteur gerichte inhoud &#x200B;](/help/sites-cloud/authoring/personalization/targeted-content.md) gebruiken het richten wijze van AEM. De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor de ervaringen van uw marketing activiteiten tot stand te brengen.
 
 ## Ervaar fragment {#experience-fragments}
 
 Een gegroepeerde set componenten die een ervaring opbouwen.
 
-[ de Fragmenten van de Ervaring ](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) worden gemaakt van inhoud en informatie (het stileren, etc.) om een ervaring tot stand te brengen; zij kunnen direct worden gebruikt wanneer pagina het ontwerpen. Ze kunnen worden beschouwd als een subset van een AEM pagina. Hiermee kunnen auteurs van inhoud inhoud inhoud hergebruiken via kanalen, waaronder sitepagina&#39;s en systemen van derden.
+[&#x200B; de Fragmenten van de Ervaring &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) worden gemaakt van inhoud en informatie (het stileren, etc.) om een ervaring tot stand te brengen; zij kunnen direct worden gebruikt wanneer pagina het ontwerpen. Ze kunnen worden beschouwd als een subset van een AEM pagina. Hiermee kunnen auteurs van inhoud inhoud inhoud hergebruiken via kanalen, waaronder sitepagina&#39;s en systemen van derden.
 
 Voor een verpersoonlijkingsvoorbeeld, kunnen een Titel, Beeld, Beschrijving, en Vraag aan de Knoop van de Actie worden gecombineerd om een laserervaring te vormen. Het gebruiken van de Fragmenten van de Ervaring is een zeer belangrijk deel van het gebruiken van de verpersoonlijking van Adobe Target.
 
 ## Richtingsmotor {#targeting-engine}
 
-De doelengine is het mechanisme dat de logica voor doelgerichte inhoud oplost. [ de Activiteiten ](/help/sites-cloud/authoring/personalization/activities.md) worden gevormd om één van twee het richten motoren te gebruiken die beschikbaar zijn: AEM en Adobe Target.
+De doelengine is het mechanisme dat de logica voor doelgerichte inhoud oplost. [&#x200B; de Activiteiten &#x200B;](/help/sites-cloud/authoring/personalization/activities.md) worden gevormd om één van twee het richten motoren te gebruiken die beschikbaar zijn: AEM en Adobe Target.
 
 De gerichte Motor is het platform of het mechanisme dat bepaalt welk verpersoonlijkingssysteem aan gebruik.
 
 AEM kan momenteel het volgende gebruiken:
 
-* [ AEM ContextHub ](#aem-contexthub) (standaard AEM)
-* de [ Adobe Target ](#adobe-target) verpersoonlijkingsmotor
+* [&#x200B; AEM ContextHub &#x200B;](#aem-contexthub) (standaard AEM)
+* de [&#x200B; Adobe Target &#x200B;](#adobe-target) verpersoonlijkingsmotor
 
 >[!CAUTION]
 >
@@ -114,16 +114,16 @@ AEM kan momenteel het volgende gebruiken:
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM verstrekt ingebouwde het richten motor [ ContextHub ](/help/implementing/developing/personalization/contexthub.md) die paginaverzoeken verwerkt en de inhoud aan vertoning bepaalt. Wanneer u de AEM doelengine gebruikt, kunt u alleen segmenten gebruiken die zijn gemaakt in AEM voor het definiëren van het publiek van uw ervaringen.
+AEM verstrekt ingebouwde het richten motor [&#x200B; ContextHub &#x200B;](/help/implementing/developing/personalization/contexthub.md) die paginaverzoeken verwerkt en de inhoud aan vertoning bepaalt. Wanneer u de AEM doelengine gebruikt, kunt u alleen segmenten gebruiken die zijn gemaakt in AEM voor het definiëren van het publiek van uw ervaringen.
 
 ### Adobe Target {#adobe-target}
 
-[ Adobe Target ](/help/sites-cloud/integrating/integrating-adobe-target.md) richtend motor veroorzaakt informatie die van paginabezoeken wordt verzameld om in Adobe Target worden gevolgd.
+[&#x200B; Adobe Target &#x200B;](/help/sites-cloud/integrating/integrating-adobe-target.md) richtend motor veroorzaakt informatie die van paginabezoeken wordt verzameld om in Adobe Target worden gevolgd.
 
 * Wanneer u deze doelengine gebruikt, gebruikt u de segmenten die u uit Adobe Target importeert om het publiek voor uw ervaringen te definiëren.
-* De activiteiten die de motor van Adobe Target gebruiken worden [ gesynchroniseerd aan Doel ](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* De activiteiten die de motor van Adobe Target gebruiken worden [&#x200B; gesynchroniseerd aan Doel &#x200B;](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
-U kunt deze motor gebruiken wanneer u [ met Adobe Target ](/help/sites-cloud/integrating/integrating-adobe-target.md) geïntegreerd hebt.
+U kunt deze motor gebruiken wanneer u [&#x200B; met Adobe Target &#x200B;](/help/sites-cloud/integrating/integrating-adobe-target.md) geïntegreerd hebt.
 
 ## Uw persoonlijke inhoud instellen {#how-to-setup-personalized-content}
 
@@ -131,15 +131,15 @@ Er zijn verschillende stappen en definities vereist voor het leveren van uw gepe
 
 1. Stel de doelengine in door:
 
-   1. Het vormen [ ContextHub ](/help/implementing/developing/personalization/configuring-contexthub.md)
-   1. Het integreren met [ Adobe Target ](/help/sites-cloud/integrating/integrating-adobe-target.md)
+   1. Het vormen [&#x200B; ContextHub &#x200B;](/help/implementing/developing/personalization/configuring-contexthub.md)
+   1. Het integreren met [&#x200B; Adobe Target &#x200B;](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. Configureer het publiek.
 
-   1. Afhankelijk van uw het richten motor, bepaal het [ publiek van het Doel ](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=nl-NL) of [ segment ContextHub ](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md), samen met de regels.
+   1. Afhankelijk van uw het richten motor, bepaal het [&#x200B; publiek van het Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=nl-NL) of [&#x200B; segment ContextHub &#x200B;](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md), samen met de regels.
 
-1. Creeer uw [ Merk en Activiteiten ](/help/sites-cloud/authoring/personalization/activities.md).
+1. Creeer uw [&#x200B; Merk en Activiteiten &#x200B;](/help/sites-cloud/authoring/personalization/activities.md).
 
 1. Maak een selectie van ervaringen die u aan de verschillende doelgroepen wilt laten zien.
 
-1. Personaliseer deze ervaringen, door [ te richten ](/help/sites-cloud/authoring/personalization/targeted-content.md) hen aan het specifieke publiek (segmenten).
+1. Personaliseer deze ervaringen, door [&#x200B; te richten &#x200B;](/help/sites-cloud/authoring/personalization/targeted-content.md) hen aan het specifieke publiek (segmenten).

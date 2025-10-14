@@ -17,7 +17,7 @@ Gemaakte projecten voor Adobe Experience Manager as a Cloud Service vereisen een
 
 Als uw codepakket in een plaats **opstelt niet die** door het codepakket wordt behandeld, dan moeten om het even welke vooroudermiddelen (middelen JCR dichter bij de wortel JCR) in het pakket van de opslagplaatsstructuur worden opgesomd. Dit proces is noodzakelijk om deze gebiedsdelen te vestigen.
 
-![ Pakket van de Structuur van de Bewaarplaats ](./assets/repository-structure-packages.png)
+![&#x200B; Pakket van de Structuur van de Bewaarplaats &#x200B;](./assets/repository-structure-packages.png)
 
 Het opslagplaatsstructuurpakket definieert de verwachte, algemene status van `/apps` die door de pakketvalidator wordt gebruikt om te bepalen welke gebieden &#39;veilig zijn tegen potentiële conflicten&#39;, aangezien ze de standaardwortels hebben.
 
@@ -184,4 +184,4 @@ Deze fout geeft aan dat het pakket voor het afbreken van code geen `<repositoryS
 
 ## Aanvullende bronnen
 
-+ [ Geproduceerde Plug-in van het Pakket van de Inhoud FileVault ](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [&#x200B; Geproduceerde Plug-in van het Pakket van de Inhoud FileVault &#x200B;](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

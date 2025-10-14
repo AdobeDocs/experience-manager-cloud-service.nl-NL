@@ -15,7 +15,7 @@ Deze pagina beschrijft de configureerbare parameters huidig in de Adobe AEM het 
 
 ## Parameters {#parameters}
 
-![ het Venster van HTTP van het Doel ](assets/httpwindow.png " Venster van HTTP van het Doel ")
+![&#x200B; het Venster van HTTP van het Doel &#x200B;](assets/httpwindow.png " Venster van HTTP van het Doel ")
 
 Het venster bevat de volgende configureerbare parameters:
 

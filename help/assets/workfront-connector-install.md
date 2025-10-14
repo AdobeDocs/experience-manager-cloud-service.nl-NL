@@ -15,14 +15,14 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
-Een gebruiker met beheerderstoegang in [!DNL Adobe Experience Manager] als [!DNL Cloud Service] installeert de verbeterde schakelaar. Alvorens u installeert, herzie de platformsteun en andere [ eerste vereisten voor de schakelaar ](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
+Een gebruiker met beheerderstoegang in [!DNL Adobe Experience Manager] als [!DNL Cloud Service] installeert de verbeterde schakelaar. Alvorens u installeert, herzie de platformsteun en andere [&#x200B; eerste vereisten voor de schakelaar &#x200B;](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
->Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aansluiting van Workfront op Adobe Experience Manager Assets as a Cloud Service. Deze integratie is de vereiste methode geworden om deze twee oplossingen aan te sluiten. Elke toekomstige nieuwe implementatie van de verbeterde connector (1.9.8 en hoger) voor de verbinding van Workfront met AEM Assets as a Cloud Service wordt geblokkeerd. Voor meer informatie over hoe te opstelling deze integratie, zie [ de integratie van Experience Manager Assets as a Cloud Service ](workfront-connector-configure.md) vormen.
+>Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aansluiting van Workfront op Adobe Experience Manager Assets as a Cloud Service. Deze integratie is de vereiste methode geworden om deze twee oplossingen aan te sluiten. Elke toekomstige nieuwe implementatie van de verbeterde connector (1.9.8 en hoger) voor de verbinding van Workfront met AEM Assets as a Cloud Service wordt geblokkeerd. Voor meer informatie over hoe te opstelling deze integratie, zie [&#x200B; de integratie van Experience Manager Assets as a Cloud Service &#x200B;](workfront-connector-configure.md) vormen.
 
 >[!IMPORTANT]
 >
@@ -30,17 +30,17 @@ Een gebruiker met beheerderstoegang in [!DNL Adobe Experience Manager] als [!DNL
 >
 >* Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] vrijgeven die deze connector redundant maken. Als dit gebeurt, kunnen klanten worden gevraagd over te stappen van het gebruik van deze connector.
 >
->* Adobe ondersteunt verbeterde connectorversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Om de verbeterde schakelaarversie te controleren, zie stap 5 (a) van [ verbeterde instructies van de schakelaarinstallatie ](workfront-connector-install.md).
+>* Adobe ondersteunt verbeterde connectorversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Om de verbeterde schakelaarversie te controleren, zie stap 5 (a) van [&#x200B; verbeterde instructies van de schakelaarinstallatie &#x200B;](workfront-connector-install.md).
 >
->* Zie [ de certificatieexamen van de Partner voor Workfront voor Experience Manager Assets verbeterde schakelaar ](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie {de Gids van het 0} Examen [&#128279;](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* Zie [&#x200B; de certificatieexamen van de Partner voor Workfront voor Experience Manager Assets verbeterde schakelaar &#x200B;](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie {de Gids van het 0} Examen [&#128279;](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 Volg de volgende stappen voordat u de aansluiting installeert:
 
 1. Als uw AEM as a Cloud Service-programma Advanced Networking heeft geconfigureerd en IP Allow-Listing heeft ingeschakeld, moet u de Workfront IP&#39;s toevoegen aan deze allow-list om het verzenden van abonnementen voor gebeurtenissen en verschillende API-aanroepen toe te staan om door te gaan naar AEM.
 
-   * [ de Cluster IPs van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=nl-NL#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL System]** > **[!UICONTROL Customer Info]** om het IP-cluster in [!DNL Workfront] te kennen.
+   * [&#x200B; de Cluster IPs van Workfront &#x200B;](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=nl-NL#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL System]** > **[!UICONTROL Customer Info]** om het IP-cluster in [!DNL Workfront] te kennen.
 
-   * [ Abonnement API IPs van de Gebeurtenis van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=nl-NL)
+   * [&#x200B; Abonnement API IPs van de Gebeurtenis van Workfront &#x200B;](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=nl-NL)
 
    >[!IMPORTANT]
    >
@@ -66,14 +66,14 @@ Volg de volgende stappen voordat u de aansluiting installeert:
 
 1. Deze installatie vereist de kennis om een Maven-project in [!DNL Experience Manager] in te stellen als een [!DNL Cloud Service] . Gebruik de volgende bronnen om te begrijpen hoe u een pakket van derden kunt opnemen in uw Maven-project:
 
-   * [ omvat derdepakket in uw Gemaakt project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#including-third-party).
-   * [ opstellen met  [!DNL Cloud Manager] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL).
+   * [&#x200B; omvat derdepakket in uw Gemaakt project &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#including-third-party).
+   * [&#x200B; opstellen met  [!DNL Cloud Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL).
 
 Voer de volgende stappen uit om de invoegtoepassing in [!DNL Experience Manager] als een [!DNL Cloud Service] te installeren:
 
-1. Download de verbeterde schakelaar van [ de Distributie van de Software van Adobe ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+1. Download de verbeterde schakelaar van [&#x200B; de Distributie van de Software van Adobe &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
-1. [ Toegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=nl-NL) en kloon uw bewaarplaats van AEM as a Cloud Service van Cloud Manager.
+1. [&#x200B; Toegang &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=nl-NL) en kloon uw bewaarplaats van AEM as a Cloud Service van Cloud Manager.
 
 1. Open de gekloonde AEM as a Cloud Service-opslagplaats met een IDE van uw keuze.
 
@@ -136,11 +136,11 @@ Voer de volgende stappen uit om de invoegtoepassing in [!DNL Experience Manager]
 
 1. Breng de wijzigingen aan in de repository.
 
-1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) op te stellen.
+1. Stel de pijpleiding in werking om [&#x200B; de veranderingen in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) op te stellen.
 
 1. Als u een systeemgebruikersconfiguratie wilt maken, maakt u `wf-workfront-users` in [!DNL Experience Manager] Gebruikersgroep en wijst u de machtiging `jcr:all` toe aan `/content/dam` . Er wordt automatisch een systeemgebruiker `workfront-tools` gemaakt en de vereiste machtigingen worden automatisch beheerd. Alle gebruikers van [!DNL Workfront] die de verbeterde connector gebruiken, worden automatisch toegevoegd als onderdeel van deze groep.
 
-Voor informatie om [!DNL Workfront for Experience Manager enhanced connector] van een vorige versie aan de recentste versie bij te werken, klik [ hier ](update-workfront-enhanced-connector.md).
+Voor informatie om [!DNL Workfront for Experience Manager enhanced connector] van een vorige versie aan de recentste versie bij te werken, klik [&#x200B; hier &#x200B;](update-workfront-enhanced-connector.md).
 
 ## De verbinding configureren tussen [!DNL Experience Manager] als een [!DNL Cloud Service] en [!DNL Workfront] {#configure-connection}
 
@@ -152,6 +152,6 @@ Ga als volgt te werk om een verbinding met [!DNL Workfront] te maken:
 
 1. Geef in het dialoogvenster **[!UICONTROL Workfront Connection]** de vereiste details van de [!DNL Workfront] -implementatie op en selecteer de optie **[!UICONTROL Connect to Workfront]** . Zodra de verbinding is gelukt, wordt de aangepaste integratie van het [!DNL Workfront] -document automatisch gemaakt in de [!DNL Workfront] -omgeving.
 
-   ![ Verbinden [!DNL Experience Manager] en [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
+   ![&#x200B; Verbinden [!DNL Experience Manager] en [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
 1. Navigeer naar het tabblad **[!UICONTROL Advanced]** en selecteer de optie **[!UICONTROL Is the Server AEM as a Cloud Service]** .

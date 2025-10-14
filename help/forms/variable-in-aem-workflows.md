@@ -15,29 +15,29 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=nl-NL) |
+| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype. U kunt de naam van de variabele in om het even welke werkschemastap gebruiken om de waarde terug te winnen die in de variabele wordt opgeslagen. U kunt veranderlijke namen ook gebruiken om uitdrukkingen te bepalen voor het nemen van verpletterende besluiten.
 
 In AEM workflowmodellen kunt u:
 
-* [ creeer een variabele ](variable-in-aem-workflows.md#create-a-variable) van een gegevenstype dat op het informatietype wordt gebaseerd dat u in het wilt opslaan.
-* [ plaats een waarde voor de variabele ](variable-in-aem-workflows.md#set-a-variable) gebruikend de Vastgestelde Veranderlijke werkschemastap.
-* [ gebruik veranderlijk ](variable-in-aem-workflows.md#use-a-variable) in alle [!DNL AEM Forms] stappen van het Werkschema om de opgeslagen waarde terug te winnen en in OF gesplitst en gaat stappen om een verpletterende uitdrukking te bepalen.
+* [&#x200B; creeer een variabele &#x200B;](variable-in-aem-workflows.md#create-a-variable) van een gegevenstype dat op het informatietype wordt gebaseerd dat u in het wilt opslaan.
+* [&#x200B; plaats een waarde voor de variabele &#x200B;](variable-in-aem-workflows.md#set-a-variable) gebruikend de Vastgestelde Veranderlijke werkschemastap.
+* [&#x200B; gebruik veranderlijk &#x200B;](variable-in-aem-workflows.md#use-a-variable) in alle [!DNL AEM Forms] stappen van het Werkschema om de opgeslagen waarde terug te winnen en in OF gesplitst en gaat stappen om een verpletterende uitdrukking te bepalen.
 
 De volgende video laat zien hoe u variabelen kunt maken, instellen en gebruiken in AEM workflowmodellen:
 
 >[!VIDEO](assets/variables_introduction_1_1.mp4)
 
-De variabelen zijn een uitbreiding van de bestaande [ MetaDataMap ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface. U kunt [ MetaDataMap ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript gebruiken om tot meta-gegevens toegang te hebben die gebruikend variabelen worden bewaard.
+De variabelen zijn een uitbreiding van de bestaande [&#x200B; MetaDataMap &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface. U kunt [&#x200B; MetaDataMap &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript gebruiken om tot meta-gegevens toegang te hebben die gebruikend variabelen worden bewaard.
 
 ## Een variabele maken {#create-a-variable}
 
 U maakt variabelen aan de hand van de sectie Variabelen die beschikbaar is in de assistent van het workflowmodel. AEM workflowvariabelen ondersteunen de volgende gegevenstypen:
 
 * **Primitieve gegevenstypes**: Lang, Dubbel, Van Boole, Datum, en Koord
-* **Complexe gegevenstypes**: [ Document ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [ XML ](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [ JSON ](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), en de Modelinstantie van Gegevens van de Vorm.
+* **Complexe gegevenstypes**: [&#x200B; Document &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [&#x200B; XML &#x200B;](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [&#x200B; JSON &#x200B;](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), en de Modelinstantie van Gegevens van de Vorm.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Een variabele maken:
 1. Selecteer **[!UICONTROL Create]** en geef de titel en een optionele naam voor het workflowmodel op. Selecteer het model en selecteer **[!UICONTROL Edit]** .
 1. Selecteer het Variabelepictogram dat beschikbaar is in de assistent van het workflowmodel en selecteer **[!UICONTROL Add Variable]** .
 
-   ![ voeg Variabele ](assets/variables_add_variable_new.png) toe
+   ![&#x200B; voeg Variabele &#x200B;](assets/variables_add_variable_new.png) toe
 
 1. Geef in het dialoogvenster Variabele toevoegen de naam op en selecteer het type variabele.
 1. Selecteer het gegevenstype in de vervolgkeuzelijst **[!UICONTROL Type]** en geef de volgende waarden op:
@@ -61,7 +61,7 @@ Een variabele maken:
    * Formuliergegevensmodel (FDM) - Geef een formuliergegevensmodelpad op.
    * ArrayList - Geef een subtype op voor de verzameling.
 
-1. Specificeer een facultatieve beschrijving voor de variabele en selecteer ![ done_icon ](assets/Smock_Checkmark_18_N.svg) om de veranderingen te bewaren. De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
+1. Specificeer een facultatieve beschrijving voor de variabele en selecteer ![&#x200B; done_icon &#x200B;](assets/Smock_Checkmark_18_N.svg) om de veranderingen te bewaren. De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
 
 Houd rekening met de volgende werkwijzen wanneer u variabelen maakt:
 
@@ -95,10 +95,10 @@ U kunt ook specifieke elementen van een variabele van het type JSON of XML bijwe
 Toewijzing tussen variabelen toevoegen:
 
 1. Selecteer op de pagina voor workflowbewerking het pictogram Stappen dat beschikbaar is in de assistent van het workflowmodel.
-1. Sleep-en-daling de **[!UICONTROL Set Variable]** stap aan de werkschemaredacteur, selecteer de stap en selecteer ![ configure_icon ](assets/Smock_Wrench_18_N.svg) (vorm).
+1. Sleep-en-daling de **[!UICONTROL Set Variable]** stap aan de werkschemaredacteur, selecteer de stap en selecteer ![&#x200B; configure_icon &#x200B;](assets/Smock_Wrench_18_N.svg) (vorm).
 1. Selecteer **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]** in het dialoogvenster Variabele instellen.
 1. In de **Variabele van de Kaart** sectie, selecteer de variabele om gegevens op te slaan, selecteer de afbeeldingswijze, en specificeer een waarde om in de variabele op te slaan. De toewijzingsmodi variëren op basis van het type variabele.
-1. Wijs meer variabelen toe om een betekenisvolle expressie te maken. Selecteer ![ done_icon ](assets/Smock_Checkmark_18_N.svg) om de veranderingen te bewaren.
+1. Wijs meer variabelen toe om een betekenisvolle expressie te maken. Selecteer ![&#x200B; done_icon &#x200B;](assets/Smock_Checkmark_18_N.svg) om de veranderingen te bewaren.
 
 ### Voorbeeld 1: Vraag een XML-variabele naar een waarde voor een tekenreeksvariabele {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -127,7 +127,7 @@ Met de expressie-editor kunt u:
 * Voeg voorwaarden toe om waarden van variabelen in te stellen.
 * Operatoren toevoegen tussen voorwaarden.
 
-![ Redacteur van de Uitdrukking ](assets/variables_expression_editor_new.png)
+![&#x200B; Redacteur van de Uitdrukking &#x200B;](assets/variables_expression_editor_new.png)
 
 Het is gebaseerd op de Adaptive Forms-regeleditor met de volgende wijzigingen. Regeleditor in variabelen:
 
@@ -138,7 +138,7 @@ Het is gebaseerd op de Adaptive Forms-regeleditor met de volgende wijzigingen. R
 * Hiermee wordt eigenschap instellen van een object niet ondersteund.
 * Biedt geen ondersteuning voor het oproepen van een webservice.
 
-Voor meer informatie, zie [ Aangepaste de regelredacteur van Forms ](rule-editor.md).
+Voor meer informatie, zie [&#x200B; Aangepaste de regelredacteur van Forms &#x200B;](rule-editor.md).
 
 ## Een variabele gebruiken {#use-a-variable}
 
@@ -157,9 +157,9 @@ Met de indeling OR wordt een splitsing in de workflow gemaakt, waarna slechts é
 
 U kunt het verpletteren van uitdrukking voor een tak bepalen gebruikend een regeldefinitie, manuscript ECMA, of een extern manuscript.
 
-U kunt variabelen gebruiken om de verpletterende uitdrukking te bepalen gebruikend de uitdrukkingsredacteur. Voor meer informatie bij het gebruiken van het verpletteren van uitdrukkingen voor OF Gesplitste stap, zie [ OF stap Splitsen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem?lang=nl-NL#or-split).
+U kunt variabelen gebruiken om de verpletterende uitdrukking te bepalen gebruikend de uitdrukkingsredacteur. Voor meer informatie bij het gebruiken van het verpletteren van uitdrukkingen voor OF Gesplitste stap, zie [&#x200B; OF stap Splitsen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem?lang=nl-NL#or-split).
 
-In dit voorbeeld, alvorens de verpletterende uitdrukking te bepalen, gebruik [ voorbeeld 2 ](variable-in-aem-workflows.md#example2) om de waarde voor de **totalvalue** variabele te plaatsen. Tak 1 is actief als de waarde van de **totalvalue** variabele groter is dan 50000. Op dezelfde manier kunt u een regel bepalen om Tak 2 actief te maken als de waarde van de **totalvalue** variabele minder dan 50000 is.
+In dit voorbeeld, alvorens de verpletterende uitdrukking te bepalen, gebruik [&#x200B; voorbeeld 2 &#x200B;](variable-in-aem-workflows.md#example2) om de waarde voor de **totalvalue** variabele te plaatsen. Tak 1 is actief als de waarde van de **totalvalue** variabele groter is dan 50000. Op dezelfde manier kunt u een regel bepalen om Tak 2 actief te maken als de waarde van de **totalvalue** variabele minder dan 50000 is.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
@@ -173,21 +173,21 @@ De **Goto Stap** laat u de volgende stap in het werkschemamodel specificeren uit
 
 Gelijkaardig aan OF de Gesplitste stap, kunt u het verpletteren van uitdrukking voor stap bepalen gebruikend een regeldefinitie, manuscript ECMA, of een extern manuscript.
 
-U kunt variabelen gebruiken om de verpletterende uitdrukking te bepalen gebruikend de uitdrukkingsredacteur. Voor meer informatie bij het gebruiken van het verpletteren van uitdrukkingen voor de stap Ga, zie [ Ga ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem?lang=nl-NL#goto-step).
+U kunt variabelen gebruiken om de verpletterende uitdrukking te bepalen gebruikend de uitdrukkingsredacteur. Voor meer informatie bij het gebruiken van het verpletteren van uitdrukkingen voor de stap Ga, zie [&#x200B; Ga &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem?lang=nl-NL#goto-step).
 
-![ ga naar Regel ](assets/variables_goto_rule1_new.png)
+![&#x200B; ga naar Regel &#x200B;](assets/variables_goto_rule1_new.png)
 
 In dit voorbeeld, specificeert de stap van het Ga de Toepassing van de Kaart van het Overzicht als volgende stap als de waarde voor de **genomen actie** variabele gelijk is aan **behoefte meer info**.
 
-Voor meer voorbeelden bij het gebruiken van regeldefinitie in de Goto stap, zie [ Simulerend a voor lijn ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem?lang=nl-NL#simulateforloop).
+Voor meer voorbeelden bij het gebruiken van regeldefinitie in de Goto stap, zie [&#x200B; Simulerend a voor lijn &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem?lang=nl-NL#simulateforloop).
 
 #### Forms-centric workflowstappen {#forms-workflow-centric-workflow-steps}
 
-Alle [!DNL AEM Forms] Workflowstappen ondersteunen variabelen. Voor meer informatie, zie [ Forms-centric werkschema op OSGi ](aem-forms-workflow-step-reference.md).
+Alle [!DNL AEM Forms] Workflowstappen ondersteunen variabelen. Voor meer informatie, zie [&#x200B; Forms-centric werkschema op OSGi &#x200B;](aem-forms-workflow-step-reference.md).
 
 ### Workflowstappen zonder ondersteuning voor variabelen {#workflow-steps-without-support-for-variables}
 
-U kunt [ MetaDataMap ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface gebruiken om tot variabelen in werkschemastappen toegang te hebben die geen variabelen steunen.
+U kunt [&#x200B; MetaDataMap &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface gebruiken om tot variabelen in werkschemastappen toegang te hebben die geen variabelen steunen.
 
 #### De waarde van de variabele ophalen {#retrieve-the-variable-value}
 
@@ -230,7 +230,7 @@ Werkt de waarde voor de **salaris** variabele aan 50000 bij.
 
 U kunt een API gebruiken om variabelen in te stellen en deze door te geven om workflowinstanties aan te roepen.
 
-[ workflowSession.startWorkflow ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) gebruikt model, wfData, en metaData als argumenten. Gebruik MetaDataMap om de waarde voor de variabele in te stellen.
+[&#x200B; workflowSession.startWorkflow &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) gebruikt model, wfData, en metaData als argumenten. Gebruik MetaDataMap om de waarde voor de variabele in te stellen.
 
 In dit API, wordt de **variableName** variabele geplaatst aan **waarde** gebruikend metaData.put (variableName, waarde);
 
@@ -270,8 +270,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Een variabele bewerken {#edit-a-variable}
 
 1. Selecteer op de pagina voor de bewerkingsworkflow het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
-1. Selecteer ![ uitgeven ](assets/edit.svg) (geef uit) pictogram naast de veranderlijke naam uit die u wilt uitgeven.
-1. Bewerk de veranderlijke informatie en selecteer ![ done_icon ](assets/Smock_Checkmark_18_N.svg) om de veranderingen te bewaren. U kunt de velden **[!UICONTROL Name]** en **[!UICONTROL Type]** voor een variabele niet bewerken.
+1. Selecteer ![&#x200B; uitgeven &#x200B;](assets/edit.svg) (geef uit) pictogram naast de veranderlijke naam uit die u wilt uitgeven.
+1. Bewerk de veranderlijke informatie en selecteer ![&#x200B; done_icon &#x200B;](assets/Smock_Checkmark_18_N.svg) om de veranderingen te bewaren. U kunt de velden **[!UICONTROL Name]** en **[!UICONTROL Type]** voor een variabele niet bewerken.
 
 ## Een variabele verwijderen {#delete-a-variable}
 
@@ -281,8 +281,8 @@ Een variabele verwijderen:
 
 1. Selecteer op de pagina voor de bewerkingsworkflow het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
 1. Selecteer het pictogram Verwijderen naast de naam van de variabele die u wilt verwijderen.
-1. Selecteer ![ done_icon ](assets/Smock_Checkmark_18_N.svg) om de variabele te bevestigen en te schrappen.
+1. Selecteer ![&#x200B; done_icon &#x200B;](assets/Smock_Checkmark_18_N.svg) om de variabele te bevestigen en te schrappen.
 
 ## Verwijzingen {#references}
 
-Voor meer voorbeelden bij het gebruiken van variabelen in [!DNL AEM Forms] stappen van het Werkschema, zie [ Variabelen in AEM werkschema&#39;s ](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+Voor meer voorbeelden bij het gebruiken van variabelen in [!DNL AEM Forms] stappen van het Werkschema, zie [&#x200B; Variabelen in AEM werkschema&#39;s &#x200B;](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

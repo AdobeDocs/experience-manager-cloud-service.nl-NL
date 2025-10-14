@@ -33,7 +33,7 @@ Om [!DNL Experience Manager] te vormen om gebruikers te beperken om dossiers van
 
 1. Klik op **[!UICONTROL Add]** om de toegestane MIME-typen te definiëren.
 
-1. Geef het MIME-type op in het tekstvak. U kunt nogmaals op **[!UICONTROL Add]** klikken om meer toegestane MIME-typen op te geven. U kunt ![ schrappingspictogram ](assets/delete-icon.svg) ook klikken om het even welk type MIME van de lijst te schrappen.
+1. Geef het MIME-type op in het tekstvak. U kunt nogmaals op **[!UICONTROL Add]** klikken om meer toegestane MIME-typen op te geven. U kunt ![&#x200B; schrappingspictogram &#x200B;](assets/delete-icon.svg) ook klikken om het even welk type MIME van de lijst te schrappen.
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -41,13 +41,13 @@ Om [!DNL Experience Manager] te vormen om gebruikers te beperken om dossiers van
 
 Voer de volgende instellingen uit om het uploaden van afbeeldingen in alle indelingen en PDF-bestanden naar Experience Manager Assets toe te staan:
 
-![ Activa uploadt beperkingen ](assets/asset-upload-restrictions.png)
+![&#x200B; Activa uploadt beperkingen &#x200B;](assets/asset-upload-restrictions.png)
 
 `image/*` als het MIME-type het uploaden van afbeeldingen in alle indelingen toestaat. `application/pdf` als het MIME-type het uploaden van PDF-bestanden naar Experience Manager Assets toestaat.
 
 Als u probeert een bestand te uploaden dat niet is opgenomen in de lijst met toegestane MIME-typen, geeft Experience Manager Assets het volgende foutbericht weer:
 
-![ Beperkte dossiers ](assets/asset-upload-restricted-files.png)
+![&#x200B; Beperkte dossiers &#x200B;](assets/asset-upload-restricted-files.png)
 
 `Screen Recording 2022-08-31 at 3.36.09 PM.mov` verwijst naar een bestandsnaam die niet is opgenomen in de toegestane MIME-typen.
 
@@ -55,7 +55,7 @@ Als u probeert een bestand te uploaden dat niet is opgenomen in de lijst met toe
 
 Voer de volgende instellingen uit om specifieke afbeeldingsindelingen toe te voegen aan de toegestane MIME-typen en het uploaden van alle andere elementindelingen te beperken:
 
-![ de beperkingen van Activa ](assets/asset-restrictions.png)
+![&#x200B; de beperkingen van Activa &#x200B;](assets/asset-restrictions.png)
 
 Op basis van de instellingen in de afbeelding kunt u afbeeldingen in de indelingen .JPG, .PNG en .GIF uploaden naar Experience Manager Assets.
 

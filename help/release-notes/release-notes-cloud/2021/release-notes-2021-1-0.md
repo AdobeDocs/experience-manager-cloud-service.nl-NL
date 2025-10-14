@@ -44,9 +44,9 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 ## [!DNL Adobe Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-* [!DNL Experience Manager] als [!DNL Cloud Service] breidt de functionaliteit Slimme tags uit ter ondersteuning van de identificatie van trefwoorden en entiteiten in op tekst gebaseerde elementen. De tekst wordt geïdentificeerd, geïndexeerd, en ter beschikking gesteld als meta-gegevens om de onderzoekservaring zonder de behoefte aan om het even welke configuratie te verbeteren. Zie [ Slimme Markeringen ](/help/assets/smart-tags.md).
+* [!DNL Experience Manager] als [!DNL Cloud Service] breidt de functionaliteit Slimme tags uit ter ondersteuning van de identificatie van trefwoorden en entiteiten in op tekst gebaseerde elementen. De tekst wordt geïdentificeerd, geïndexeerd, en ter beschikking gesteld als meta-gegevens om de onderzoekservaring zonder de behoefte aan om het even welke configuratie te verbeteren. Zie [&#x200B; Slimme Markeringen &#x200B;](/help/assets/smart-tags.md).
 
-* MXF-bestandsindeling wordt nu ondersteund. Zie [ gesteunde dossierformaten ](/help/assets/file-format-support.md#video-formats).
+* MXF-bestandsindeling wordt nu ondersteund. Zie [&#x200B; gesteunde dossierformaten &#x200B;](/help/assets/file-format-support.md#video-formats).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -54,9 +54,9 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 * Product Experience Management: Nieuw tabblad &#39;Commerce&#39;-eigenschappen voor Assets en Experience Fragments. Op dit tabblad kunt u producten/categorieën koppelen aan Assets en Fragmenten ervaren. Op het tabblad vindt u ook real-time gegevens voor gekoppelde producten/categorieën en een koppeling om details weer te geven in de productconsole.
 
-* Release CIF Venia Reference Site - 2021.02.02 die de nieuwste versie CIF Core Components versie v1.7.0 bevat. Zie [ CIF de Plaats van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) voor meer details.
+* Release CIF Venia Reference Site - 2021.02.02 die de nieuwste versie CIF Core Components versie v1.7.0 bevat. Zie [&#x200B; CIF de Plaats van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) voor meer details.
 
-* Uitgegeven CIF Core Components v1.7.0. Zie [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) voor meer details.
+* Uitgegeven CIF Core Components v1.7.0. Zie [&#x200B; CIF de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) voor meer details.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -76,21 +76,21 @@ De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.1.0 is 14 janu
 
 ### Nieuwe functies in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en ondersteunt ook een nieuw hulpprogramma - Index Converter. Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=nl-NL#benefits) om meer over deze stop te leren.
+* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en ondersteunt ook een nieuw hulpprogramma - Index Converter. Zie [&#x200B; Verenigde Ervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=nl-NL#benefits) om meer over deze stop te leren.
 
-* Indexconverter is een hulpprogramma waarmee de aangepaste OAK-indexdefinities van een klant kunnen worden getransformeerd naar OAK-compatibele indexdefinities. Zie [ Omzetter van de Index ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer details.
+* Indexconverter is een hulpprogramma waarmee de aangepaste OAK-indexdefinities van een klant kunnen worden getransformeerd naar OAK-compatibele indexdefinities. Zie [&#x200B; Omzetter van de Index &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer details.
 
-* Nieuwe eigenschap die aan [ wordt toegevoegd de Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) die tot een afzonderlijk pakket `ui.config` leidt om alle configuraties te bevatten OSGi.
+* Nieuwe eigenschap die aan [&#x200B; wordt toegevoegd de Modernizer van de Bewaarplaats &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) die tot een afzonderlijk pakket `ui.config` leidt om alle configuraties te bevatten OSGi.
 
 ### Opgeloste problemen {#crt-bug-fixes}
 
-* Verschillende opgeloste problemen zijn opgelost met de AEM Dispatcher Converter en Repository Modernizer. Zie [ AEM de Convertor van Dispatcher ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) en [ Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Verschillende opgeloste problemen zijn opgelost met de AEM Dispatcher Converter en Repository Modernizer. Zie [&#x200B; AEM de Convertor van Dispatcher &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) en [&#x200B; Modernizer van de Bewaarplaats &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Server-aan-server voor authentiek verklaarde API vraag - produceer de aangewezen toegangstokens om voor authentiek verklaarde server-aan-server API vraag tussen uw externe toepassingen en milieu&#39;s van AEM as a Cloud Service te maken. Leer meer door [ de documentatie ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) te lezen of door het [ leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL#authentication) te raadplegen.
+* Server-aan-server voor authentiek verklaarde API vraag - produceer de aangewezen toegangstokens om voor authentiek verklaarde server-aan-server API vraag tussen uw externe toepassingen en milieu&#39;s van AEM as a Cloud Service te maken. Leer meer door [&#x200B; de documentatie &#x200B;](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) te lezen of door het [&#x200B; leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL#authentication) te raadplegen.
 
 ### SDK Build Analyzers {#sdk-build-analyzers}
 
@@ -101,7 +101,7 @@ Voor deze afgifte zijn twee nieuwe analysatoren toegevoegd:
 * herpuntanalyse
 * bundle-nativecode
 
-Voor meer informatie, zie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing).
+Voor meer informatie, zie de documentatie [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing).
 
 ## Gereedschappen voor cloudovergang {#code-transition-tools}
 
@@ -111,6 +111,6 @@ De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 
 ### Nieuwe functies in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System IDs als deel van de activiteit van de inhoudsmigratie. Zie [ Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=nl-NL) voor meer details.
+* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System IDs als deel van de activiteit van de inhoudsmigratie. Zie [&#x200B; Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=nl-NL) voor meer details.
 * Met het gereedschap Inhoud overbrengen worden nu alle groepen en gebruikers gemigreerd waarnaar in de migratieset wordt verwezen, inclusief kinderen.
 * Gebruikers mogen bepaalde paden onder `/etc` selecteren bij het maken van migratiesets.

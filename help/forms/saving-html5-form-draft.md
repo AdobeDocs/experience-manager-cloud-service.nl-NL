@@ -30,7 +30,7 @@ U kunt een HTML5-formulier opslaan als concept en het invullen van het formulier
 
 Uit de doos, verstrekt AEM Forms a **sparen als Ontwerp** profiel. U kunt een formulier weergeven met het profiel Opslaan als concept om de conceptfunctionaliteit voor een HTML5-formulier in te schakelen. U kunt HTML specificeren teruggeeft profiel voor een vorm in **Manager van Forms**.
 
-Om sparen als functionaliteit van het Ontwerp voor uw bestaand [ douaneprofiel ](/help/forms/custom-profile.md) toe te laten, voeg de volgende eigenschappen aan uw knoop van het douaneprofiel toe:
+Om sparen als functionaliteit van het Ontwerp voor uw bestaand [&#x200B; douaneprofiel &#x200B;](/help/forms/custom-profile.md) toe te laten, voeg de volgende eigenschappen aan uw knoop van het douaneprofiel toe:
 
 <table>
  <tbody>
@@ -78,4 +78,4 @@ Voeg de volgende eigenschap toe aan het profielknooppunt om formuliervermelding 
  </tbody>
 </table>
 
-Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt uw leverancier van de douaneopslag toevoegen, voor details zie [ de opslag van de Douane voor de componenten van Concepten en van Verzending ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt uw leverancier van de douaneopslag toevoegen, voor details zie [&#x200B; de opslag van de Douane voor de componenten van Concepten en van Verzending &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).

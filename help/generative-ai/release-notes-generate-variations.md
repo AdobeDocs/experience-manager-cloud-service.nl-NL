@@ -17,7 +17,7 @@ Op deze pagina worden de releaseopmerkingen voor Generate Variations, die toegan
 
 >[!NOTE]
 >
->Zie [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service.
+>Zie [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service.
 
 ## Hooglichten opheffen {#release-highlights}
 
@@ -25,7 +25,7 @@ De huidige versie is versie 3.0.0.
 
 ### 3.0.0. {#release-notes-3-0-0}
 
-U kunt [ toegang tot Variaties ](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) van de volgende redacteurs produceren ([ zodra zij ](#access-generate-variations)) zijn gevormd:
+U kunt [&#x200B; toegang tot Variaties &#x200B;](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) van de volgende redacteurs produceren ([&#x200B; zodra zij &#x200B;](#access-generate-variations)) zijn gevormd:
 
 * [in de Sidekick van AEM Edge Delivery Services; voor op documenten gebaseerde ontwerpen](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
 * [in de Universal Editor](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
@@ -33,7 +33,7 @@ U kunt [ toegang tot Variaties ](/help/generative-ai/generate-variations-integra
 
 >[!NOTE]
 >
->Het wordt geadviseerd dat u versie 3.0.0 gebruikt, aangezien hoewel de vorige versie van [ Variaties nog kan direct worden betreden ](/help/generative-ai/generate-variations.md), het in de toekomst zal worden afgekeurd.
+>Het wordt geadviseerd dat u versie 3.0.0 gebruikt, aangezien hoewel de vorige versie van [&#x200B; Variaties nog kan direct worden betreden &#x200B;](/help/generative-ai/generate-variations.md), het in de toekomst zal worden afgekeurd.
 
 ### 2.2.0. {#release-notes-2-2-0}
 

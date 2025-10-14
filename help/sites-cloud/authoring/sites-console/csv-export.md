@@ -53,12 +53,12 @@ Een CSV-export maken:
    * De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites**-console bladert (in de lijstweergave)
    * Het is een optie van **creeer** drop-down menu:
 
-     ![ creeer optie CSV ](/help/sites-cloud/authoring/assets/csv-create.png)
+     ![&#x200B; creeer optie CSV &#x200B;](/help/sites-cloud/authoring/assets/csv-create.png)
 
 1. Selecteer op de werkbalk de optie **Maken** en vervolgens **CSV-rapport** om de wizard te openen:
 
-   ![ CSV de uitvoeropties ](/help/sites-cloud/authoring/assets/csv-options.png)
+   ![&#x200B; CSV de uitvoeropties &#x200B;](/help/sites-cloud/authoring/assets/csv-options.png)
 
 1. Selecteer de eigenschappen die u wilt exporteren.
 1. Selecteer **creeer**.
-   ![ Resulterende uitvoer CSV in Excel ](/help/sites-cloud/authoring/assets/csv-example.png)
+   ![&#x200B; Resulterende uitvoer CSV in Excel &#x200B;](/help/sites-cloud/authoring/assets/csv-example.png)

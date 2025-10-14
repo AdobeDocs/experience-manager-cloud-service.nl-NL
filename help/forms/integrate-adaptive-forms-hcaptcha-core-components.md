@@ -20,9 +20,9 @@ ht-degree: 0%
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
 AEM Forms as a Cloud Service ondersteunt de volgende CAPTCHA-oplossingen:
-* [ hCaptcha ](#integrate-aem-forms-environment-with-hcaptcha-captcha)
+* [&#x200B; hCaptcha &#x200B;](#integrate-aem-forms-environment-with-hcaptcha-captcha)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-* [ hCaptcha ](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+* [&#x200B; hCaptcha &#x200B;](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 ## AEM Forms-omgeving integreren met hCaptcha Captcha
 
@@ -35,7 +35,7 @@ AEM Forms as a Cloud Service ondersteunt hCaptcha® in Adaptive Forms Core Compo
 
 ### Vereisten om de AEM Forms-omgeving te integreren met hCaptcha® {#prerequisite}
 
-Om hCaptcha® met AEM Forms te vormen, moet u [ hCaptcha® sitekey en geheime sleutel ](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) van de website hCaptcha® verkrijgen.
+Om hCaptcha® met AEM Forms te vormen, moet u [&#x200B; hCaptcha® sitekey en geheime sleutel &#x200B;](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) van de website hCaptcha® verkrijgen.
 
 ### Captcha® configureren {#steps-to-configure-hcaptcha}
 
@@ -56,20 +56,20 @@ Voer de volgende stappen uit om AEM Forms te integreren met de service hCaptcha�
          1. Selecteer **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
 1. De Cloud Service configureren:
-   1. Op uw de auteursinstantie van AEM, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en selecteer **[!UICONTROL hCaptcha®]**.
+   1. Op uw de auteursinstantie van AEM, ga ![&#x200B; hulpmiddelen-1 &#x200B;](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en selecteer **[!UICONTROL hCaptcha®]**.
 
-      ![ hCaptcha® in ui ](assets/hcaptcha-in-ui.png)
+      ![&#x200B; hCaptcha® in ui &#x200B;](assets/hcaptcha-in-ui.png)
    1. Selecteer een configuratiecontainer, gecreeerd of bijgewerkt, zoals die in de vorige sectie wordt beschreven. Selecteer **[!UICONTROL Create]** .
 
-      ![ Configuratie hCaptcha® ](assets/config-hcaptcha.png)
-   1. Specificeer **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de dienst hCaptcha® [ die in Vereiste ](#prerequisite) wordt verkregen. Selecteer **[!UICONTROL Create]** .
+      ![&#x200B; Configuratie hCaptcha® &#x200B;](assets/config-hcaptcha.png)
+   1. Specificeer **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de dienst hCaptcha® [&#x200B; die in Vereiste &#x200B;](#prerequisite) wordt verkregen. Selecteer **[!UICONTROL Create]** .
 
-      ![ vorm Cloud Service om uw milieu van AEM Forms met hCaptcha® ](assets/create-hcaptcha-config.png) te verbinden
+      ![&#x200B; vorm Cloud Service om uw milieu van AEM Forms met hCaptcha® &#x200B;](assets/create-hcaptcha-config.png) te verbinden
 
    >[!NOTE]
-   > De gebruikers moeten niet [ cliënt-zijbevestiging URL van JavaScript ](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) en [ server-zijbevestiging URL ](https://docs.hcaptcha.com/#verify-the-user-response-server-side) wijzigen aangezien zij reeds voor bevestiging hCaptcha® worden voorgevuld.
+   > De gebruikers moeten niet [&#x200B; cliënt-zijbevestiging URL van JavaScript &#x200B;](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) en [&#x200B; server-zijbevestiging URL &#x200B;](https://docs.hcaptcha.com/#verify-the-user-response-server-side) wijzigen aangezien zij reeds voor bevestiging hCaptcha® worden voorgevuld.
 
-   Zodra de dienst hCAPTCHA wordt gevormd, is het beschikbaar voor gebruik in een [ Aangepaste Vorm die op de Componenten van de Kern ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction) wordt gebaseerd.
+   Zodra de dienst hCAPTCHA wordt gevormd, is het beschikbaar voor gebruik in een [&#x200B; Aangepaste Vorm die op de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction) wordt gebaseerd.
 
 ## Captcha® gebruiken in een adaptieve Forms Core-component {#using-hCaptcha®-core-components}
 
@@ -77,15 +77,15 @@ Voer de volgende stappen uit om AEM Forms te integreren met de service hCaptcha�
 1. Ga naar **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]** .
 1. Selecteer een adaptief formulier en selecteer **[!UICONTROL Properties]** . Selecteer voor de optie **[!UICONTROL Configuration Container]** de configuratiecontainer die de Cloud Configuration bevat die AEM Forms verbindt met hCaptcha® en selecteer **[!UICONTROL Save & Close]** .
 
-   Als u geen dergelijke Container van de Configuratie hebt, zie sectie [ uw milieu van AEM Forms met hCaptcha® ](#connect-your-forms-environment-with-hcaptcha-service) verbinden om te leren hoe te om een Container van de Configuratie tot stand te brengen.
+   Als u geen dergelijke Container van de Configuratie hebt, zie sectie [&#x200B; uw milieu van AEM Forms met hCaptcha® &#x200B;](#connect-your-forms-environment-with-hcaptcha-service) verbinden om te leren hoe te om een Container van de Configuratie tot stand te brengen.
 
-   ![ Uitgezochte Container van de Configuratie ](/help/forms/assets/captcha-properties.png)
+   ![&#x200B; Uitgezochte Container van de Configuratie &#x200B;](/help/forms/assets/captcha-properties.png)
 
 1. Selecteer een adaptief formulier en selecteer **[!UICONTROL Edit]** . Het adaptieve formulier wordt geopend in de Adaptive Forms Editor.
 1. Sleep vanuit de browser van de component de component **[!UICONTROL Adaptive Form hCaptcha®]** naar het adaptieve formulier of voeg deze toe.
-1. Selecteer de **[!UICONTROL Adaptive Form hCaptcha®]** component en klik eigenschappen ![ pictogram van Eigenschappen ](assets/configure-icon.svg) pictogram. Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende eigenschappen op:
+1. Selecteer de **[!UICONTROL Adaptive Form hCaptcha®]** component en klik eigenschappen ![&#x200B; pictogram van Eigenschappen &#x200B;](assets/configure-icon.svg) pictogram. Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende eigenschappen op:
 
-   ![ hCaptcha® v2 ](assets/config-hcaptcha-v2.png)
+   ![&#x200B; hCaptcha® v2 &#x200B;](assets/config-hcaptcha-v2.png)
 
    * **[!UICONTROL Name]:** Geef de naam voor de component Captcha op. U kunt een formuliercomponent gemakkelijk identificeren met zijn unieke naam, zowel in het formulier als in de regeleditor.
    * **[!UICONTROL Title]:** specificeer de titel voor uw component Captcha.
@@ -95,7 +95,7 @@ Voer de volgende stappen uit om AEM Forms te integreren met de service hCaptcha�
    * **[!UICONTROL Script Validation Message]** - Met deze optie kunt u een bericht invoeren dat wordt weergegeven als de scriptvalidatie mislukt.
 
      >[!NOTE]
-     >U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen dienst vermeld is, zie [ uw milieu van AEM Forms met hCaptcha® ](#connect-your-forms-environment-with-hcaptcha-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de dienst hCaptcha® verbindt.
+     >U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen dienst vermeld is, zie [&#x200B; uw milieu van AEM Forms met hCaptcha® &#x200B;](#connect-your-forms-environment-with-hcaptcha-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de dienst hCaptcha® verbindt.
 
    <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
 

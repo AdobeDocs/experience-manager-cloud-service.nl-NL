@@ -18,9 +18,9 @@ ht-degree: 0%
 
 ![Workflow](/help/forms/assets/workflow-marketo-3.png)
 
-De adaptieve redacteur van Forms verstrekt **voorleggen aan Marketo Engage** actie om de Adaptieve gegevens van Forms naar Adobe Marketo Engage voor verwerking te verzenden. U kunt een bestaande Aangepaste Vorm vormen om gegevens aan [ Adobe Marketo Engage ](https://experienceleague.adobe.com/nl/docs/marketo/using/home) op voorlegging voor te leggen.
+De adaptieve redacteur van Forms verstrekt **voorleggen aan Marketo Engage** actie om de Adaptieve gegevens van Forms naar Adobe Marketo Engage voor verwerking te verzenden. U kunt een bestaande Aangepaste Vorm vormen om gegevens aan [&#x200B; Adobe Marketo Engage &#x200B;](https://experienceleague.adobe.com/nl/docs/marketo/using/home) op voorlegging voor te leggen.
 
-Er zijn verschillende verzendacties beschikbaar die niet in de verpakking staan en waarmee formulierverzendingen kunnen worden verwerkt. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/configure-submit-actions-core-components.md).
+Er zijn verschillende verzendacties beschikbaar die niet in de verpakking staan en waarmee formulierverzendingen kunnen worden verwerkt. U kunt meer over deze opties leren in het [&#x200B; AanpassingsVorm voorlegt Artikel van de Actie &#x200B;](/help/forms/configure-submit-actions-core-components.md).
 
 ## Overwegingen bij het configureren van verzendactie naar Marketo Engage voor formulier
 
@@ -30,7 +30,7 @@ Er zijn verschillende verzendacties beschikbaar die niet in de verpakking staan 
 
 Vereiste om de verzendhandeling naar Marketo Engage te configureren:
 
-* Vorm de [ gegevensbron van Marketo Engage voor AanpassingsVorm ](/help/forms/use-marketo-engage-data-source-in-form.md) en verbind de vormelementen met de gebieden van Marketo Engage.
+* Vorm de [&#x200B; gegevensbron van Marketo Engage voor AanpassingsVorm &#x200B;](/help/forms/use-marketo-engage-data-source-in-form.md) en verbind de vormelementen met de gebieden van Marketo Engage.
 
 ## Hoe te om verzendactie aan Marketo Engage voor bestaande vormen te vormen?
 
@@ -49,7 +49,7 @@ U kunt de verzendactie van een adaptief formulier configureren op basis van Foun
 1. Open de Adaptieve Vorm voor het uitgeven en navigeer aan **[!UICONTROL Submission]** sectie van de Adaptieve eigenschappen van de Container van de Vorm en selecteer een voorleggingsactie zoals **voorleggen aan Marketo Engage**.
 1. Klik op **[!UICONTROL Done]**.
 
-![ Marketo legt Actie ](/help/forms/assets/marketo-engage-submit-action-af.png){width=50%, height=50%} voor
+![&#x200B; Marketo legt Actie &#x200B;](/help/forms/assets/marketo-engage-submit-action-af.png){width=50%, height=50%} voor
 
 Na het vormen van voorlegt actie voor de Aangepaste Vorm als **voorleggen aan Marketo Engage**, kunt u gegevens naar Adobe Marketo Engage voor verwerking verzenden. De gegevens kunnen worden gebruikt voor het analyseren en optimaliseren van marketingcampagnes, het automatiseren van follow-up-e-mails en het activeren van workflows op basis van formulierverzendingen.
 
@@ -59,11 +59,11 @@ U kunt de verzendactie van een adaptief formulier configureren op basis van kern
 
 1. Open het adaptieve formulier voor bewerking.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Guide Container]** .
-1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![ AanpassingsContainer eigenschappen ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer om verzendactie te configureren wordt geopend.
+1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![&#x200B; AanpassingsContainer eigenschappen &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer om verzendactie te configureren wordt geopend.
 1. Open het **[!UICONTROL Submission]** lusje en selecteer voorlegt actie aangezien **aan Marketo Engage** voorlegt.
 1. Klik op **[!UICONTROL Done]**.
 
-![ Marketo legt Actie ](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%} voor
+![&#x200B; Marketo legt Actie &#x200B;](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%} voor
 
 Na het vormen van voorlegt actie voor de Aangepaste Vorm als **voorleggen aan Marketo Engage**, kunt u gegevens naar Adobe Marketo Engage voor verwerking verzenden. De gegevens kunnen worden gebruikt voor het analyseren en optimaliseren van marketingcampagnes, het automatiseren van follow-up-e-mails en het activeren van workflows op basis van formulierverzendingen.
 
@@ -78,11 +78,11 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
    >[!NOTE]
    >
    > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Verwijs naar het [&#x200B; artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 1. Klik **Verzending** lusje en selecteer **[!UICONTROL Submit to Marketo Engage]** voorlegt actie.
 
-   ![ Marketo legt Actie ](/help/forms/assets/marketo-engage-submit-action-ue.png) voor
+   ![&#x200B; Marketo legt Actie &#x200B;](/help/forms/assets/marketo-engage-submit-action-ue.png) voor
 
 1. Klik op **[!UICONTROL Save & Close]**.
 
@@ -97,7 +97,7 @@ Na het vormen van voorlegt actie voor de Aangepaste Vorm als **voorleggen aan Ma
 
 ## Volgende stap
 
-U kunt een AanpassingsVorm met de [ bibliotheek van Munchkin ](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
+U kunt een AanpassingsVorm met de [&#x200B; bibliotheek van Munchkin &#x200B;](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
 
 ## Verwante artikelen
 

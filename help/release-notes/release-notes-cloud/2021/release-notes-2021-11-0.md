@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -30,7 +30,7 @@ De volgende release (2022.1.0) vindt plaats op 3 februari 2022.
 
 ## Video vrijgeven {#release-video}
 
-Heb een blik bij de [ December 2021 het Overzicht van de Versie ](https://video.tv.adobe.com/v/339278) video voor een samenvatting van de eigenschappen die in de 2021.11.0 (November 2021) versie worden toegevoegd.
+Heb een blik bij de [&#x200B; December 2021 het Overzicht van de Versie &#x200B;](https://video.tv.adobe.com/v/339278) video voor een samenvatting van de eigenschappen die in de 2021.11.0 (November 2021) versie worden toegevoegd.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -44,7 +44,7 @@ Heb een blik bij de [ December 2021 het Overzicht van de Versie ](https://video.
 
 * [!DNL Dynamic Media] ondersteunt nu opname, voorvertoning, afspelen en publiceren voor MXF-video&#39;s. Annotatie en verbluffende video voor MXF-video&#39;s worden nog niet ondersteund.
 
-* Nadat u een verbinding tussen externe DAM- en Sites-implementaties hebt geconfigureerd, worden de middelen op externe DAM beschikbaar gesteld op de implementatie van Sites. U kunt de [ update nu uitvoeren, schrappen, hernoemen, en bewegingsverrichtingen ](/help/assets/use-assets-across-connected-assets-instances.md) op de verre activa DAM of de omslagen anders. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen.
+* Nadat u een verbinding tussen externe DAM- en Sites-implementaties hebt geconfigureerd, worden de middelen op externe DAM beschikbaar gesteld op de implementatie van Sites. U kunt de [&#x200B; update nu uitvoeren, schrappen, hernoemen, en bewegingsverrichtingen &#x200B;](/help/assets/use-assets-across-connected-assets-instances.md) op de verre activa DAM of de omslagen anders. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -54,14 +54,14 @@ Heb een blik bij de [ December 2021 het Overzicht van de Versie ](https://video.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=nl-NL) hulp u een malplaatje en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [&#x200B; Communicatie APIs &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=nl-NL) hulp u een malplaatje en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Genereer documenten door sjabloonbestanden (PDF en XDP) te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
 
 * **de doopvonten van de Douane voor Document van Verslag en PDF documenten die met Mededelingen APIs** worden gecreeerd: U kunt merk goedgekeurde doopvonten in de documenten van PDF nu gebruiken die Communicatie APIs worden geproduceerd om op uw organisatorische vereisten te richten.
 
-* **Forms Portal**: U kunt [ Portaal van Forms ](/help/forms/configure-forms-portal.md) gebruiken om van uw gepubliceerde adaptieve vormen op een pagina van AEM Sites een lijst te maken. Hiermee kan een sitebezoeker alle beschikbare formulieren detecteren. Bovendien kan de bezoeker de portal Formulieren gebruiken om een concept van een adaptief formulier op te slaan en te openen en de versie van de PDF van een ingediend adaptief formulier te bekijken.
+* **Forms Portal**: U kunt [&#x200B; Portaal van Forms &#x200B;](/help/forms/configure-forms-portal.md) gebruiken om van uw gepubliceerde adaptieve vormen op een pagina van AEM Sites een lijst te maken. Hiermee kan een sitebezoeker alle beschikbare formulieren detecteren. Bovendien kan de bezoeker de portal Formulieren gebruiken om een concept van een adaptief formulier op te slaan en te openen en de versie van de PDF van een ingediend adaptief formulier te bekijken.
 
 ## CIF invoegtoepassing {#cloud-services-cif}
 
@@ -69,7 +69,7 @@ Heb een blik bij de [ December 2021 het Overzicht van de Versie ](https://video.
 
 * Uitgebreide myAccount-componenten die zijn gebaseerd op uitbreidbare Peregrine-componenten van Commerce
 
-![ Uitgebreide myAccount componenten ](/help/assets/CIF/extended-myAccount-components.png)
+![&#x200B; Uitgebreide myAccount componenten &#x200B;](/help/assets/CIF/extended-myAccount-components.png)
 
 * Auteurs kunnen ad-hoc Commerce Product Recommendations tot stand brengen gebruikend extra advisetypes
 
@@ -86,7 +86,7 @@ De volgende release is gepland voor 9 december 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-nov}
 
-* De gebruikers kunnen nieuwe pijpleidingen van het Eind van de Voorzijde nu gebruiken om vooreind code op een versnelde manier uitsluitend op te stellen. Zie [ Cloud Manager Voorste Pijpleidingen van het Eind ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) om meer te leren.
+* De gebruikers kunnen nieuwe pijpleidingen van het Eind van de Voorzijde nu gebruiken om vooreind code op een versnelde manier uitsluitend op te stellen. Zie [&#x200B; Cloud Manager Voorste Pijpleidingen van het Eind &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) om meer te leren.
 
   >[!IMPORTANT]
   >U moet AEM versie `2021.10.5933.20211012T154732Z` of hoger zijn om nieuwe Front End-pijpleidingen te kunnen gebruiken.
@@ -99,7 +99,7 @@ De volgende release is gepland voor 9 december 2021.
 
 * Environment Creation is nu beschikbaar via openbare API.
 
-* De `x-request-id` antwoordkopbal is nu zichtbaar in API Playground op [ www.adobe.io ](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
+* De `x-request-id` antwoordkopbal is nu zichtbaar in API Playground op [&#x200B; www.adobe.io &#x200B;](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
 
 * Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij van de juiste begeleiding voorziet.
 

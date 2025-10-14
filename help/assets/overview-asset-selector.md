@@ -20,7 +20,7 @@ De gebruikersinterface van Micro-Frontend wordt beschikbaar gesteld in uw toepas
 
 Asset Selector biedt vele voordelen, zoals:
 
-* Versnelling van integratie met om het even welke [ Adobe ](/help/assets/integrate-asset-selector-adobe-app.md) of [ niet-Adobe ](/help/assets/integrate-asset-selector-non-adobe-app.md) toepassingen die de bibliotheek van JavaScript Vanilla gebruiken.
+* Versnelling van integratie met om het even welke [&#x200B; Adobe &#x200B;](/help/assets/integrate-asset-selector-adobe-app.md) of [&#x200B; niet-Adobe &#x200B;](/help/assets/integrate-asset-selector-non-adobe-app.md) toepassingen die de bibliotheek van JavaScript Vanilla gebruiken.
 * Eenvoudig te onderhouden, aangezien updates van het Assets Selector-pakket automatisch worden geïmplementeerd op de Asset Selector die beschikbaar is voor uw toepassing. Uw toepassing hoeft geen updates uit te voeren om de laatste wijzigingen te laden.
 * Gemakkelijk aanpassen aangezien er eigenschappen beschikbaar zijn die de vertoning van de Selecteur van Activa binnen uw toepassing controleren.
 * In de volledige tekst doorzoeken, uit-van-de-doos, en aangepaste filters om snel aan activa voor gebruik binnen de auteurservaring te navigeren.
@@ -71,7 +71,7 @@ Gebruik de bovenstaande voorwaarden als u de IMS-verificatieworkflow van de Asse
 
 ## Installatie {#installation}
 
-De Selecteur van activa is beschikbaar via zowel ESM CDN (bijvoorbeeld, [ esm.sh ](https://esm.sh/)/[ kabel ](https://www.skypack.dev/)) als [ UMD ](https://github.com/umdjs/umd) versie.
+De Selecteur van activa is beschikbaar via zowel ESM CDN (bijvoorbeeld, [&#x200B; esm.sh &#x200B;](https://esm.sh/)/[&#x200B; kabel &#x200B;](https://www.skypack.dev/)) als [&#x200B; UMD &#x200B;](https://github.com/umdjs/umd) versie.
 
 In browsers die {versie 0} gebruiken UMD **(geadviseerd):**
 
@@ -101,16 +101,16 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 Nadat de Asset Selector is ingesteld en u bent gemachtigd om Asset Selector te gebruiken in uw [!DNL Adobe Experience Manager] -toepassing als [!DNL Cloud Service] -toepassing, kunt u elementen selecteren of verschillende andere bewerkingen uitvoeren om te zoeken naar uw elementen in de opslagplaats.
 
-![ gebruiken-activa-selecteur ](assets/using-asset-selector.png)
+![&#x200B; gebruiken-activa-selecteur &#x200B;](assets/using-asset-selector.png)
 
-* **A**: [ verberg/toon paneel ](#hide-show-panel)
-* **B**: [ de schakelaar van de Bewaarplaats ](#repository-switcher)
-* **C**: [ Assets ](#repository)
-* **D**: [ Filters ](#filters)
-* **E**: [ bar van het Onderzoek ](#search-bar)
-* **F**: [ Sorterend ](#sorting)
-* **G**: [ Sorterend in het stijgen of dalende orde ](#sorting)
-* **H**: [ Mening ](#types-of-view)
+* **A**: [&#x200B; verberg/toon paneel &#x200B;](#hide-show-panel)
+* **B**: [&#x200B; de schakelaar van de Bewaarplaats &#x200B;](#repository-switcher)
+* **C**: [&#x200B; Assets &#x200B;](#repository)
+* **D**: [&#x200B; Filters &#x200B;](#filters)
+* **E**: [&#x200B; bar van het Onderzoek &#x200B;](#search-bar)
+* **F**: [&#x200B; Sorterend &#x200B;](#sorting)
+* **G**: [&#x200B; Sorterend in het stijgen of dalende orde &#x200B;](#sorting)
+* **H**: [&#x200B; Mening &#x200B;](#types-of-view)
 
 ### Deelvenster verbergen/tonen {#hide-show-panel}
 
@@ -130,7 +130,7 @@ De Kiezer van activa verstrekt ook uit-van-de-doos filteropties om uw onderzoeks
 
 * **[!UICONTROL Status]:** bevat de huidige status van het element tussen `all` , `approved`, `rejected` of `no status` .
 * **[!UICONTROL File type]:** includes `folder`, `file`, `images`, `documents` of `video` .
-* **[!UICONTROL Expiration status]:** verwijst naar de elementen op basis van de vervalduur. U kunt het selectievakje `[!UICONTROL Expired]` inschakelen om verlopen elementen te filteren, of u kunt `[!UICONTROL Expiration Duration]` van een element instellen om elementen weer te geven op basis van de vervaldatum. Wanneer een element al is verlopen of bijna is verlopen, lijkt een badge om het zelfde aan te geven. Bovendien kunt u bepalen of u het gebruik (of slepen en neerzetten) van een verlopen element wilt toestaan. Zie meer over [ verlopen activa ](/help/assets/asset-selector-customization.md#customize-expired-assets) aanpassen. Door gebrek, wordt het **Verlopen Soon** badge getoond voor activa die in de volgende 30 dagen verlopen. U kunt de vervaldatum echter configureren met de eigenschap `expirationDate` .
+* **[!UICONTROL Expiration status]:** verwijst naar de elementen op basis van de vervalduur. U kunt het selectievakje `[!UICONTROL Expired]` inschakelen om verlopen elementen te filteren, of u kunt `[!UICONTROL Expiration Duration]` van een element instellen om elementen weer te geven op basis van de vervaldatum. Wanneer een element al is verlopen of bijna is verlopen, lijkt een badge om het zelfde aan te geven. Bovendien kunt u bepalen of u het gebruik (of slepen en neerzetten) van een verlopen element wilt toestaan. Zie meer over [&#x200B; verlopen activa &#x200B;](/help/assets/asset-selector-customization.md#customize-expired-assets) aanpassen. Door gebrek, wordt het **Verlopen Soon** badge getoond voor activa die in de volgende 30 dagen verlopen. U kunt de vervaldatum echter configureren met de eigenschap `expirationDate` .
 
   >[!TIP]
   >
@@ -139,13 +139,13 @@ De Kiezer van activa verstrekt ook uit-van-de-doos filteropties om uw onderzoeks
 * **[!UICONTROL MIME type]:** includes `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`.
 * **[!UICONTROL Image Size]:** omvat minimum/maximumbreedte, minimum/maximumhoogte van beeld.
 
-  ![ spoorstaaf-mening-voorbeeld ](assets/filters-asset-selector.png)
+  ![&#x200B; spoorstaaf-mening-voorbeeld &#x200B;](assets/filters-asset-selector.png)
 
 ### Aangepaste zoekopdracht
 
 Met Asset Selector kunt u naast de zoekopdracht in volledige tekst ook elementen in bestanden zoeken met behulp van een aangepaste zoekopdracht. U kunt aangepaste zoekfilters gebruiken in zowel de modusweergave als de spoorweergave.
 
-![ douane-onderzoek ](assets/custom-search1.png)
+![&#x200B; douane-onderzoek &#x200B;](assets/custom-search1.png)
 
 U kunt ook een standaardzoekfilter maken om de velden op te slaan waarnaar u vaak zoekt en deze later te gebruiken. Als u een aangepaste zoekopdracht naar uw elementen wilt maken, kunt u de eigenschap `filterSchema` gebruiken.
 
@@ -161,24 +161,24 @@ U kunt elementen in de Asset Selector sorteren op naam, afmetingen of grootte va
 
 Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
 
-* ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**] de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
-* ![ ](assets/do-not-localize/grid-view.png) de mening van het Net [!UICONTROL **van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.**]
-* ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**] de dossiers of de omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
-* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** &#x200B;] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
+* ![&#x200B; lijstmening &#x200B;](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**] de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
+* ![&#x200B; &#x200B;](assets/do-not-localize/grid-view.png) de mening van het Net [!UICONTROL **van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.**]
+* ![&#x200B; galeriemening &#x200B;](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**] de dossiers of de omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
+* ![&#x200B; watervalmening &#x200B;](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** &#x200B;] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
 
 ### Gegevens en metagegevens van middelen {#asset-details-and-metadata}
 
-De pagina Asset Details biedt een uitgebreide weergave van een specifiek element, waarbij alle belangrijke informatie op één plaats wordt geconsolideerd. Het bevat een overzicht met de naam, de bestandsindeling, de status en een korte beschrijving, samen met een voorvertoning of miniatuur voor eenvoudige visuele identificatie. Het bevat ook metagegevens van een element, zoals de aanmaakdatum, de auteur, de grootte, het kleurenschema, enzovoort. Deze attributen helpen efficiënt onderzoek, het filtreren, en classificatie van activa. Het deelvenster Elementdetails is beschikbaar in zowel de spoorweergave als de modale weergave van de Asset Selector. In de spoormening, is het vereist om `onDrop` bezit toe te laten en te vormen om activa terug te keren. In de modale weergave retourneert de eigenschap `handleSelection` ook een element. Zie [ Eigenschappen van de Selecteur van Activa ](asset-selector-properties.md).
+De pagina Asset Details biedt een uitgebreide weergave van een specifiek element, waarbij alle belangrijke informatie op één plaats wordt geconsolideerd. Het bevat een overzicht met de naam, de bestandsindeling, de status en een korte beschrijving, samen met een voorvertoning of miniatuur voor eenvoudige visuele identificatie. Het bevat ook metagegevens van een element, zoals de aanmaakdatum, de auteur, de grootte, het kleurenschema, enzovoort. Deze attributen helpen efficiënt onderzoek, het filtreren, en classificatie van activa. Het deelvenster Elementdetails is beschikbaar in zowel de spoorweergave als de modale weergave van de Asset Selector. In de spoormening, is het vereist om `onDrop` bezit toe te laten en te vormen om activa terug te keren. In de modale weergave retourneert de eigenschap `handleSelection` ook een element. Zie [&#x200B; Eigenschappen van de Selecteur van Activa &#x200B;](asset-selector-properties.md).
 
 Voer de onderstaande stappen uit om details van een element en metagegevens weer te geven:
 
 1. Open Asset Selector MFE en navigeer naar een element.
-1. Beweeg de activa en klik ![ infopictogram ](/help/assets/assets/info-icon-solid-black.svg).
+1. Beweeg de activa en klik ![&#x200B; infopictogram &#x200B;](/help/assets/assets/info-icon-solid-black.svg).
 1. Ga naar het tabblad **[!UICONTROL Info]** om de details van het element weer te geven. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
 
-Om het paneel van de detailmening van een activa aan te passen, zie [ informatie in modale mening ](asset-selector-customization.md#customize-info-in-modal-view) aanpassen.
+Om het paneel van de detailmening van een activa aan te passen, zie [&#x200B; informatie in modale mening &#x200B;](asset-selector-customization.md#customize-info-in-modal-view) aanpassen.
 
-![ de details van Activa ](assets/asset-details.png)
+![&#x200B; de details van Activa &#x200B;](assets/asset-details.png)
 
 <!--
 
@@ -282,8 +282,8 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 
 >[!MORELIKETHIS]
 >
->* [ de aanpassingen van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)
->* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
->* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
->* [ integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [ Visuals van het Product aangedreven door de Integratie van AEM Assets voor Commerce ](https://experienceleague.adobe.com/nl/docs/commerce/product-visuals/overview)
+>* [&#x200B; de aanpassingen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-customization.md)
+>* [&#x200B; integreer de Selector van Activa met diverse toepassingen &#x200B;](/help/assets/integrate-asset-selector.md)
+>* [&#x200B; Eigenschappen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-properties.md)
+>* [&#x200B; integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [&#x200B; Visuals van het Product aangedreven door de Integratie van AEM Assets voor Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce/product-visuals/overview)

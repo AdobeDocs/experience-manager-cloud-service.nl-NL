@@ -27,7 +27,7 @@ Elk veld in het JSON-schema heeft een `fieldType` -eigenschap die bepaalt hoe he
 
 Als `fieldType` een speciaal type aanpast, wordt a **douanerenderer** gebruikt. Anders, wordt het behandeld als a **standaardinputtype**.
 
-Zie de secties hieronder voor de [ volledige structuur en eigenschappen van HTML ](#common-html-structure) voor elk gebiedstype.
+Zie de secties hieronder voor de [&#x200B; volledige structuur en eigenschappen van HTML &#x200B;](#common-html-structure) voor elk gebiedstype.
 
 ## Algemene eigenschappen die door velden worden gebruikt
 

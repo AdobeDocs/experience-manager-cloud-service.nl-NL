@@ -17,7 +17,7 @@ Als u de prestaties van uw GraphQL-filters wilt optimaliseren, voert u een proce
 
 >[!NOTE]
 >
->Na het bijwerken van uw Fragmenten van de Inhoud, kunt u de aanbevelingen voor [ volgen het Optimaliseren van de Vragen van GraphQL ](/help/headless/graphql-api/graphql-optimization.md).
+>Na het bijwerken van uw Fragmenten van de Inhoud, kunt u de aanbevelingen voor [&#x200B; volgen het Optimaliseren van de Vragen van GraphQL &#x200B;](/help/headless/graphql-api/graphql-optimization.md).
 
 
 ## Vereisten {#prerequisites}
@@ -34,7 +34,7 @@ Er zijn voorwaarden voor deze taak:
 
 1. Schakel de update in door de volgende variabelen voor uw instantie in te stellen met behulp van de gebruikersinterface van Cloud Manager:
 
-   ![ de Configuratie van het Milieu van Cloud Manager ](assets/cfm-graphql-update-01.png " de Configuratie van het Milieu van Cloud Manager ")
+   ![&#x200B; de Configuratie van het Milieu van Cloud Manager &#x200B;](assets/cfm-graphql-update-01.png " de Configuratie van het Milieu van Cloud Manager ")
 
    De beschikbare variabelen zijn:
 
@@ -88,7 +88,7 @@ Er zijn voorwaarden voor deze taak:
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   De klanten, die toegang tot de milieulogboeken gebruikend Splunk toeliet, kunnen de voorbeeldvraag hieronder gebruiken om het verbeteringsproces te controleren. Voor details over het toelaten van het registreren van het Splunk, zie [ het Zuiveren Productie en Stadium ](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
+   De klanten, die toegang tot de milieulogboeken gebruikend Splunk toeliet, kunnen de voorbeeldvraag hieronder gebruiken om het verbeteringsproces te controleren. Voor details over het toelaten van het registreren van het Splunk, zie [&#x200B; het Zuiveren Productie en Stadium &#x200B;](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 

@@ -49,11 +49,11 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
 
 ## Een voorbeeld van een formulier bekijken {#previewing-a-form-1}
 
-1. Selecteer activa die u wilt voorproef, en klik Voorproef ![ aem6forms_preview ](assets/aem6forms_preview.png) in de actietoolbar.
+1. Selecteer activa die u wilt voorproef, en klik Voorproef ![&#x200B; aem6forms_preview &#x200B;](assets/aem6forms_preview.png) in de actietoolbar.
 
    >[!NOTE]
    >
-   >Als u een element wilt selecteren, schakelt u over naar de lijstweergave in de standaardkaartweergave. Klik ![ aem6forms_viewlist ](assets/aem6forms_viewlist.png) of ![ aem6forms_viewcard ](assets/aem6forms_viewcard.png) om meningen te schakelen.
+   >Als u een element wilt selecteren, schakelt u over naar de lijstweergave in de standaardkaartweergave. Klik ![&#x200B; aem6forms_viewlist &#x200B;](assets/aem6forms_viewlist.png) of ![&#x200B; aem6forms_viewcard &#x200B;](assets/aem6forms_viewcard.png) om meningen te schakelen.
 
 1. Klik op Voorvertoning om de mogelijke voorvertoningsopties weer te geven die van toepassing zijn op het geselecteerde elementtype. Klik op de gewenste optie om het geselecteerde element op een nieuw tabblad weer te geven.
 
@@ -67,5 +67,5 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
 
 Wanneer u **Voorproef met Gegevens** selecteert, kunt u zien hoe de vorm met echte gegevens ingegaan in het kijkt. Met de optie Voorvertonen met gegevens kunt u een XML uploaden die voorbeeldgebruikersgegevens bevat. De voorbeeldgebruikersgegevens worden gebruikt om het voorbeeldformulier in de door u gekozen indeling in te vullen.
 
-1. Selecteer een activa, klik Voorproef ![ aem6forms_preview ](assets/aem6forms_preview.png), en selecteer **Voorproef met Gegevens**.
+1. Selecteer een activa, klik Voorproef ![&#x200B; aem6forms_preview &#x200B;](assets/aem6forms_preview.png), en selecteer **Voorproef met Gegevens**.
 1. Geef in het dialoogvenster Formulier voorvertonen de formuliergegevens op als een XML-bestand. Klik op Voorbeeld om het formulier te genereren met de samengevoegde gegevens van XML.

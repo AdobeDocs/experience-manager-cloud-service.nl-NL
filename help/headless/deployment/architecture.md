@@ -23,13 +23,13 @@ Een typische AEM omgeving bestaat uit een Auteur Service, Publish Service en een
 
 * **Dispatcher** is een statische Webserver die met de AEM verzender module wordt uitgebreid. Het verstrekt caching mogelijkheden en een andere laag van veiligheid. De **Dispatcher** zit vóór de **Publish** en **Voorproef** diensten.
 
-Binnen een AEM as a Cloud Service-programma kunt u meerdere omgevingen hebben: Dev, Stage en Prod. Elk milieu zou zijn eigen unieke **Auteur**, **Publish**, en **Voorproef** diensten hebben. Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.md) om meer te leren.
+Binnen een AEM as a Cloud Service-programma kunt u meerdere omgevingen hebben: Dev, Stage en Prod. Elk milieu zou zijn eigen unieke **Auteur**, **Publish**, en **Voorproef** diensten hebben. Zie [&#x200B; het Leiden Milieu &#x200B;](/help/implementing/cloud-manager/manage-environments.md) om meer te leren.
 
 ## Publish-model auteur
 
 Het meest gangbare implementatiepatroon met AEM toepassingen zonder kop is dat de productieversie van de toepassing verbinding maakt met een AEM Publish-service.
 
-![ de Architectuur van Publish van de Auteur ](assets/autho-publish-architecture-diagram.png)
+![&#x200B; de Architectuur van Publish van de Auteur &#x200B;](assets/autho-publish-architecture-diagram.png)
 
 Het diagram hierboven toont dit gemeenschappelijke plaatsingspatroon.
 
@@ -43,7 +43,7 @@ Het diagram hierboven toont dit gemeenschappelijke plaatsingspatroon.
 
 Een andere optie voor hoofdloze plaatsingen is een **AEM de dienst van de Voorproef** op te nemen. Met deze benadering kan de inhoud eerst aan de **dienst van de Voorproef** worden gepubliceerd en een voorproefversie van de hoofdloze toepassing kan met het verbinden. Het voordeel met deze benadering is dat de **dienst van de Voorproef** opstelling met de zelfde authentificatievereisten en toestemmingen zoals de **Publish** dienst kan zijn, makend het gemakkelijker om de productieervaring te simuleren.
 
-![ de Architectuur van de Voorproef van de Auteur en van Publish ](assets/author-preview-publish-architecture-diagram.png)
+![&#x200B; de Architectuur van de Voorproef van de Auteur en van Publish &#x200B;](assets/author-preview-publish-architecture-diagram.png)
 
 1. A **de auteur van de Inhoud** gebruikt de AEM dienst van de Auteur om, inhoud tot stand te brengen uit te geven en te beheren.
 1. Inhoud wordt eerst gepubliceerd naar de service AEM.

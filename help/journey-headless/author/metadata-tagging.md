@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [&#x200B; Reis van de Auteur van de Inhoud van AEM Headless &#x200B;](overview.md) de [&#x200B; Inleiding &#x200B;](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
 In de vorige stap werd u toegevoegd aan het gebruik van verwijzingen voor CMS-authoring zonder koptekst. U hebt geleerd welke soorten verwijzingen beschikbaar zijn en wat hun doeleinden zijn: Content References, Asset/Media References en Fragmentverwijzingen.
 
@@ -31,7 +31,7 @@ Dit artikel bouwt hierop voort, zodat u begrijpt hoe u metagegevens kunt gebruik
 
 U kunt metagegevens en tags toevoegen vanuit het rechterdeelvenster van de Content Fragment Editor:
 
-![ de Redacteur van het Fragment van de Inhoud - de Rondjes van Alaska ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![&#x200B; de Redacteur van het Fragment van de Inhoud - de Rondjes van Alaska &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Volgende functies {#whats-next}
 

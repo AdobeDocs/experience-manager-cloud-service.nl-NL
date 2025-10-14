@@ -16,29 +16,29 @@ Met [!DNL Content Hub] kunt u uw elementen downloaden en delen. In de gebruikers
 
 U kunt één of meerdere activa en hun beschikbare vertoningen downloaden gebruikend [!DNL Content Hub].
 
-Zie de [ types van vertoningen beschikbaar in Content Hub ](#types-of-renditions).
+Zie de [&#x200B; types van vertoningen beschikbaar in Content Hub &#x200B;](#types-of-renditions).
 
 ## Een of meer elementen en de bijbehorende uitvoeringen downloaden {#download-asset-renditions}
 
 Voer de volgende stappen uit om een of meer elementen en de bijbehorende uitvoeringen te downloaden:
 
-1. Om activa te downloaden, uitgezochte ![ download ](/help/assets/assets/download-icon.svg) beschikbaar op de activakaart om de activa voor te vertonen, de beschikbare vertoningen te selecteren en de **[!UICONTROL Download]** optie in de dialoogdoos te klikken om de geselecteerde vertoningen als dossier van het PIT te downloaden. Als in het dialoogvenster een licentie voor middelen wordt weergegeven (voor onder licentie gegeven middelen), accepteert u de licentievoorwaarden en klikt u op **[!UICONTROL Download]** .
+1. Om activa te downloaden, uitgezochte ![&#x200B; download &#x200B;](/help/assets/assets/download-icon.svg) beschikbaar op de activakaart om de activa voor te vertonen, de beschikbare vertoningen te selecteren en de **[!UICONTROL Download]** optie in de dialoogdoos te klikken om de geselecteerde vertoningen als dossier van het PIT te downloaden. Als in het dialoogvenster een licentie voor middelen wordt weergegeven (voor onder licentie gegeven middelen), accepteert u de licentievoorwaarden en klikt u op **[!UICONTROL Download]** .
    ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
-   Alternatief, klik de activaduimnagel en selecteer ![ download ](/help/assets/assets/download-icon.svg) om de beschikbare vertoningen op de dialoogdoos te selecteren en te bekijken alvorens hen te downloaden.
+   Alternatief, klik de activaduimnagel en selecteer ![&#x200B; download &#x200B;](/help/assets/assets/download-icon.svg) om de beschikbare vertoningen op de dialoogdoos te selecteren en te bekijken alvorens hen te downloaden.
 
-1. Om veelvoudige activa te downloaden, selecteer de activa, klik ![ download ](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** en herzie de lijst van geselecteerde activa in het **[!UICONTROL Download assets]** dialoogvakje. Klik ![ unselect ](/help/assets/assets/Close.svg) naast een activa om het van de lijst ongedaan te maken. Selecteer een of meer uitvoeringen en klik op **[!UICONTROL Download]** om deze als één ZIP-bestand te downloaden. Als u **[!UICONTROL Smart Crop]** en **[!UICONTROL Static Renditions]** selecteert, worden alle beschikbare statische en slimme uitsnijduitvoeringen van elk geselecteerd element gedownload.
-   ![ download veelvoudige activa ](/help/assets/assets/download-multiple-assets-CH.png)
+1. Om veelvoudige activa te downloaden, selecteer de activa, klik ![&#x200B; download &#x200B;](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** en herzie de lijst van geselecteerde activa in het **[!UICONTROL Download assets]** dialoogvakje. Klik ![&#x200B; unselect &#x200B;](/help/assets/assets/Close.svg) naast een activa om het van de lijst ongedaan te maken. Selecteer een of meer uitvoeringen en klik op **[!UICONTROL Download]** om deze als één ZIP-bestand te downloaden. Als u **[!UICONTROL Smart Crop]** en **[!UICONTROL Static Renditions]** selecteert, worden alle beschikbare statische en slimme uitsnijduitvoeringen van elk geselecteerd element gedownload.
+   ![&#x200B; download veelvoudige activa &#x200B;](/help/assets/assets/download-multiple-assets-CH.png)
 U kunt [!DNL Content Hub] blijven gebruiken terwijl het downloaden bezig is. Content Hub onderbreekt uw workflow niet tijdens het downloadproces.
-   ![ download veelvoudige activa ](/help/assets/assets/download-assets-notification-ch.png)
+   ![&#x200B; download veelvoudige activa &#x200B;](/help/assets/assets/download-assets-notification-ch.png)
 Als in het dialoogvenster **[!UICONTROL Download assets]** licenties voor elementen worden weergegeven, selecteert u elke licentie in het linkerdeelvenster ([!UICONTROL T&C Documents] -sectie) om een voorvertoning van de licentie weer te geven en de geselecteerde elementen die aan de licentie zijn gekoppeld, in het middelste deelvenster van het dialoogvenster weer te geven. Nadat u elke licentie hebt bekeken, selecteert u de uitvoeringen, klikt u op **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** en selecteert u **[!UICONTROL Download]** om deze te downloaden.
-   ![ download veelvoudige activa ](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+   ![&#x200B; download veelvoudige activa &#x200B;](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
    >
    >* De vertoningen van vertoningen slechts als hun zicht gebruikend het [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) Gebruikersinterface wordt toegelaten.
    >* Gebruikers met toegang tot [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) kunnen dynamische en slimme uitsnijduitvoeringen weergeven en downloaden.
-   >* De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de [!DNL Assets as a Cloud Service] -ontwerpomgeving. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
+   >* De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de [!DNL Assets as a Cloud Service] -ontwerpomgeving. Voor meer informatie, zie [&#x200B; Gelicentieerde activa op Content Hub &#x200B;](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
 
 <!--
 
@@ -125,19 +125,19 @@ The dialog box that displays depends on whether the download list includes expir
 
 Elementuitvoeringen zijn verschillende weergaven van het oorspronkelijke bestand van een element. Dit kunnen miniaturen, geoptimaliseerde versies voor web of mobiele apparaten, bestanden met watermerken of DRM-bescherming zijn, of zelfs dynamische elementen zoals slimme gewassen. Ze hoeven niet overeen te komen met het oorspronkelijke bestandstype, maar ze dienen om het element in verschillende gebruiksgevallen weer te geven.
 
-Leer meer over [ mening en beheer vertoningen in  [!DNL Experience Manager Assets]](/help/assets/renditions.md).
+Leer meer over [&#x200B; mening en beheer vertoningen in  [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
 [!DNL Experience Manager Assets] ondersteunt de volgende typen uitvoeringen:
 
-* [ Statische vertoningen ](/help/assets/renditions.md#static-renditions): De statische vertoningen zijn pre-gecreeerde versies van digitale activa, typisch geproduceerd tijdens de activaopname of de wijziging. Deze zijn geoptimaliseerd voor specifieke toepassingen en platforms, zoals webminiaturen, mobiele indelingen voor responsieve ontwerpen of bestanden met hoge resolutie voor afdrukken, zodat u over een gestroomlijnde en consistente ervaring beschikt.
+* [&#x200B; Statische vertoningen &#x200B;](/help/assets/renditions.md#static-renditions): De statische vertoningen zijn pre-gecreeerde versies van digitale activa, typisch geproduceerd tijdens de activaopname of de wijziging. Deze zijn geoptimaliseerd voor specifieke toepassingen en platforms, zoals webminiaturen, mobiele indelingen voor responsieve ontwerpen of bestanden met hoge resolutie voor afdrukken, zodat u over een gestroomlijnde en consistente ervaring beschikt.
 
-* [ Dynamische vertoningen ](/help/assets/renditions.md#dynamic-renditions): De dynamische vertoningen zijn in real time, aangepaste versies van activa om diverse acties uit te voeren, zoals het resizing van beelden voor verschillende apparatenresoluties of het bebouwen om diverse aspectverhoudingen te passen. Met deze uitvoeringen kunt u persoonlijke en geoptimaliseerde ervaringen bieden voor bredere vereisten. Dynamische uitvoeringen van elementen worden gemaakt in de [!DNL Adobe Experience Manager Assets] -auteursomgeving. Voor informatie over stappen die worden vereist om Dynamische vertoningen toe te laten, zie [ Dynamische vertoningen ](#enable-dynamic-media-renditions) toelaten.
+* [&#x200B; Dynamische vertoningen &#x200B;](/help/assets/renditions.md#dynamic-renditions): De dynamische vertoningen zijn in real time, aangepaste versies van activa om diverse acties uit te voeren, zoals het resizing van beelden voor verschillende apparatenresoluties of het bebouwen om diverse aspectverhoudingen te passen. Met deze uitvoeringen kunt u persoonlijke en geoptimaliseerde ervaringen bieden voor bredere vereisten. Dynamische uitvoeringen van elementen worden gemaakt in de [!DNL Adobe Experience Manager Assets] -auteursomgeving. Voor informatie over stappen die worden vereist om Dynamische vertoningen toe te laten, zie [&#x200B; Dynamische vertoningen &#x200B;](#enable-dynamic-media-renditions) toelaten.
 
-* [ Slimme gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamic Media Smart snijdt kunstmatige intelligentie uit, aangedreven door Adobe Sensei, om het interessepunt bij te houden, zodat onze middelen er optimaal uitzien op alle schermgrootten. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [ gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [&#x200B; Slimme gewas &#x200B;](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamic Media Smart snijdt kunstmatige intelligentie uit, aangedreven door Adobe Sensei, om het interessepunt bij te houden, zodat onze middelen er optimaal uitzien op alle schermgrootten. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [&#x200B; gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
-  De slimme vertoning van de Uitsnijdvertoning van het Gewas en is beschikbaar voor download slechts als u toegang tot [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) hebt. Slimme uitsnijduitvoeringen zijn alleen beschikbaar voor afbeeldingselementen.
+  De slimme vertoning van de Uitsnijdvertoning van het Gewas en is beschikbaar voor download slechts als u toegang tot [&#x200B; Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) hebt. Slimme uitsnijduitvoeringen zijn alleen beschikbaar voor afbeeldingselementen.
 
-  ![ de types van Uitvoeringen ](/help/assets/assets/renditions-types.png)
+  ![&#x200B; de types van Uitvoeringen &#x200B;](/help/assets/assets/renditions-types.png)
 
   >[!NOTE]
   > 
@@ -147,13 +147,13 @@ Leer meer over [ mening en beheer vertoningen in  [!DNL Experience Manager Asset
 
 Dynamische uitvoeringen inschakelen:
 
-1. Zorg ervoor dat u toegang tot [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) hebt.
+1. Zorg ervoor dat u toegang tot [&#x200B; Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) hebt.
 
    Zodra u toegang hebt tot Dynamic Media met OpenAPI-mogelijkheden, zijn alle als `Approved` gemarkeerde middelen beschikbaar voor openbare levering met behulp van Dynamic Media.
 
-1. Plaats het [ goedkeuringsdoel van de activa ](/help/assets/approve-assets-content-hub.md#set-approval-target) aan Content Hub om activa slechts voor Content Hub goed te keuren.
+1. Plaats het [&#x200B; goedkeuringsdoel van de activa &#x200B;](/help/assets/approve-assets-content-hub.md#set-approval-target) aan Content Hub om activa slechts voor Content Hub goed te keuren.
 
-1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3&rbrace; Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
+1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [&#x200B; 3&rbrace; Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
 
 1. Sla de bestaande voorinstellingen voor afbeeldingen opnieuw op om deze beschikbaar te maken op Content Hub. Deze optie is alleen van toepassing als u onlangs bent aangemeld bij Dynamic Media met OpenAPI.
 

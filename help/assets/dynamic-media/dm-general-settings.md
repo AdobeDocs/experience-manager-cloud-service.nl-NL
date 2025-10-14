@@ -25,7 +25,7 @@ hidefromtoc: yes -->
 
 Het configureren van **[!UICONTROL Dynamic Media General Settings]** is alleen beschikbaar als:
 
-* U hebt *bestaand* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager as a Cloud Service. Zie [ een Dynamische Configuratie van Media in de Diensten van de Wolk ](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) creëren.
+* U hebt *bestaand* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager as a Cloud Service. Zie [&#x200B; een Dynamische Configuratie van Media in de Diensten van de Wolk &#x200B;](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) creëren.
 * U bent een Experience Manager-systeembeheerder met beheerdersrechten.
 
 Ervaren ontwikkelaars en programmeurs van websites zijn het beoogde publiek voor Dynamic Media General Settings. Adobe Dynamic Media raadt gebruikers die de publicatie-instellingen wijzigen aan om op Adobe Experience Manager bekend te zijn met Dynamic Media en de basistechnologie voor beeldbewerking.
@@ -34,27 +34,27 @@ Bij het maken van accounts biedt Adobe Dynamic Media automatisch de toegewezen s
 
 Op de pagina Dynamische media publiceren stelt u standaardinstellingen in die bepalen hoe elementen van Adobe Dynamic Media-servers worden geleverd aan websites of toepassingen. Als er geen instelling is opgegeven, levert de Adobe Dynamic Media-server een element op basis van een standaardinstelling die is geconfigureerd op de pagina Dynamische media publiceren-instelling.
 
-Zie ook [ Facultatief - Opstelling en configuratie van Dynamische montages van Media ](/help/assets/dynamic-media/config-dm.md#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings) voor meer facultatieve configuratietaken.
+Zie ook [&#x200B; Facultatief - Opstelling en configuratie van Dynamische montages van Media &#x200B;](/help/assets/dynamic-media/config-dm.md#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings) voor meer facultatieve configuratietaken.
 
 >[!NOTE]
 >
->Dynamic Media Classic uitbreiden naar Dynamic Media op Adobe Experience Manager? De Algemene pagina van Montages en [ publiceren de pagina van de Opstelling ](/help/assets/dynamic-media/dm-publish-settings.md) in Dynamische Media wordt pre-bevolkt met de waarden die van uw rekening van Dynamic Media Classic worden genomen. De uitzonderingen zijn alle waarden die worden vermeld onder **[!UICONTROL Default upload options]** gebied van de Algemene pagina van Montages. Deze waarden staan al in Experience Manager. Alle wijzigingen die u onder **[!UICONTROL Default upload options]** aanbrengt in een van de vijf tabbladen via de Experience Manager-gebruikersinterface, worden daarom weerspiegeld in Dynamic Media, niet in Dynamic Media Classic. Alle andere montages en waarden in de Algemene pagina van Montages en [ publiceren de pagina van de Opstelling ](/help/assets/dynamic-media/dm-publish-settings.md) wordt gehandhaafd tussen Dynamic Media Classic en Dynamische Media op Experience Manager.
+>Dynamic Media Classic uitbreiden naar Dynamic Media op Adobe Experience Manager? De Algemene pagina van Montages en [&#x200B; publiceren de pagina van de Opstelling &#x200B;](/help/assets/dynamic-media/dm-publish-settings.md) in Dynamische Media wordt pre-bevolkt met de waarden die van uw rekening van Dynamic Media Classic worden genomen. De uitzonderingen zijn alle waarden die worden vermeld onder **[!UICONTROL Default upload options]** gebied van de Algemene pagina van Montages. Deze waarden staan al in Experience Manager. Alle wijzigingen die u onder **[!UICONTROL Default upload options]** aanbrengt in een van de vijf tabbladen via de Experience Manager-gebruikersinterface, worden daarom weerspiegeld in Dynamic Media, niet in Dynamic Media Classic. Alle andere montages en waarden in de Algemene pagina van Montages en [&#x200B; publiceren de pagina van de Opstelling &#x200B;](/help/assets/dynamic-media/dm-publish-settings.md) wordt gehandhaafd tussen Dynamic Media Classic en Dynamische Media op Experience Manager.
 
 **om Dynamische Media Algemene Montages te vormen:**
 
 1. Selecteer in de Experience Manager Auteur-modus het Experience Manager-logo voor toegang tot de algemene navigatieconsole.
-1. In het linkerspoor, klik ![ pictogram van Hulpmiddelen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > ![ geeft de Lijnen uit ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GearsEdit_18_N.svg) **[!UICONTROL Dynamic Media General Settings]**.
+1. In het linkerspoor, klik ![&#x200B; pictogram van Hulpmiddelen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > ![&#x200B; geeft de Lijnen uit &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GearsEdit_18_N.svg) **[!UICONTROL Dynamic Media General Settings]**.
 1. Stel op de pagina Server de opties **[!UICONTROL Published Server Name]** en **[!UICONTROL Origin Server Name]** in en gebruik vervolgens de vijf tabbladen om de standaardopties voor het uploaden van afbeeldingen te configureren voor Beeldbewerking en voor Postscript-, Photoshop-, PDF- en Illustrator-bestanden.
 
    * [Server](#server-general-setting)
    * [Uploaden naar toepassing](#upload-to-application)
-   * [ Beeld die ](#image-editing-tab) tabel uitgeeft
-   * [ PostScript ](#postscript-tab) lusje
-   * [ Photoshop ](#photoshop-tab) lusje
-   * [ PDF ](#pdf-tab) lusje
-   * [ Illustrator ](#illustrator-tab) lusje
+   * [&#x200B; Beeld die &#x200B;](#image-editing-tab) tabel uitgeeft
+   * [&#x200B; PostScript &#x200B;](#postscript-tab) lusje
+   * [&#x200B; Photoshop &#x200B;](#photoshop-tab) lusje
+   * [&#x200B; PDF &#x200B;](#pdf-tab) lusje
+   * [&#x200B; Illustrator &#x200B;](#illustrator-tab) lusje
 
-   ![ Dynamische pagina van de Montages van Media Algemene ](/help/assets/assets-dm/dm-general-settings.png)
+   ![&#x200B; Dynamische pagina van de Montages van Media Algemene &#x200B;](/help/assets/assets-dm/dm-general-settings.png)
    *Dynamische pagina van de Montages van Media Algemene, met het **[!UICONTROL Image Editing]**&#x200B;geselecteerde lusje.*<br><br>
 
 1. Als u klaar bent, klikt u in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** .
@@ -89,7 +89,7 @@ Bij het maken van accounts biedt Adobe Dynamic Media automatisch de toegewezen s
 
   Hiermee regelt u het behoud van bestaande handmatige snijddefinities.
 
-  Zie ook `preserveCrop` in [ UploadPostJob ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) en [ ReprocessAssetsJob ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), zowel in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
+  Zie ook `preserveCrop` in [&#x200B; UploadPostJob &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) en [&#x200B; ReprocessAssetsJob &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), zowel in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
 
 ## Standaardopties voor uploaden {#default-upload-options}
 
@@ -106,7 +106,7 @@ Voor het effect Onscherp masker worden dezelfde opties gebruikt als voor het fil
 | **[!UICONTROL Threshold]** | Vereist.<br> de Drempel is een waaier van contrast die wordt genegeerd wanneer de filter Onscherp Masker wordt toegepast. Dit effect is belangrijk, zodat er geen &#39;ruis&#39; wordt toegevoegd aan een afbeelding wanneer dit filter wordt gebruikt. Het waardebereik is `0` - `255` . Dit is het aantal helderheidsstappen in een grijswaardenafbeelding. `0`=zwart, `128`=50% grijs en `255`=wit.<br> de drempelwaarde van A van `12` negeert lichte variaties is de helderheid van de huidskleur om het toevoegen van lawaai te vermijden, maar nog toevoegt randcontrast aan contrasterende gebieden zoals waar de wimpers huid ontmoeten.<br> als u een foto van iemands gezicht hebt, beïnvloedt het Onscherp Masker de contrasterende delen van het beeld. Bijvoorbeeld, waar wimpers en huid samenkomen om een duidelijk gebied van contrast tot stand te brengen, en de vlotte huid zelf. Zelfs de meest vloeiende skin vertoont subtiele wijzigingen in helderheidswaarden. Als u geen drempelwaarde gebruikt, accentueert het filter deze subtiele wijzigingen in de pixels van de skin. Er wordt op zijn beurt een lawaai en ongewenst effect gecreëerd terwijl het contrast op de wimpers wordt verhoogd, waardoor de scherpte wordt vergroot.<br> om deze kwestie te vermijden, wordt een drempelwaarde geïntroduceerd die het filter vertelt om pixel te negeren die contrast, zoals vlotte huid niet dramatisch veranderen.<br> in zipper grafisch vroeger getoond, merk de textuur naast de ritppers op. Ruis in de afbeelding wordt weergegeven omdat de drempelwaarden te laag waren om de ruis te onderdrukken. |
 | **[!UICONTROL Monochrome]** | Selecteer deze optie om de helderheid (intensiteit) van een afbeelding zonder scherp masker te wijzigen.<br> schrap aan unshark-masker elke kleurencomponent afzonderlijk. |
 
-Zie ook [ scherp beelden in de Dynamische Media van Adobe en op de Server van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=nl-NL).
+Zie ook [&#x200B; scherp beelden in de Dynamische Media van Adobe en op de Server van het Beeld &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=nl-NL).
 
 ### Het tabblad PostScript {#postscript-tab}
 
@@ -138,7 +138,7 @@ U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeve
 
 ### Het tabblad PDF {#pdf-tab}
 
-Een PDF kan maximaal 5000 pagina&#39;s uitnemen voor nieuwe uploads. Deze limiet wordt gewijzigd in 100 pagina&#39;s (voor alle PDF&#39;s) op 31 december 2022. Zie ook [ Dynamische beperkingen van Media ](/help/assets/dynamic-media/limitations.md).
+Een PDF kan maximaal 5000 pagina&#39;s uitnemen voor nieuwe uploads. Deze limiet wordt gewijzigd in 100 pagina&#39;s (voor alle PDF&#39;s) op 31 december 2022. Zie ook [&#x200B; Dynamische beperkingen van Media &#x200B;](/help/assets/dynamic-media/limitations.md).
 
 U kunt de bestanden omzetten in pixels, zoekwoorden en koppelingen extraheren, de resolutie instellen en een kleurruimte kiezen.
 

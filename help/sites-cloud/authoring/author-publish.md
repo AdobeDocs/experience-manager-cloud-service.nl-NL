@@ -29,9 +29,9 @@ Deze lagen hebben invloed op de manier waarop u inhoud op uw website kunt plaats
 
 Inhoud kan van verschillende typen zijn, zoals pagina&#39;s, elementen en publicaties. Voorvertoningen van inhoud kunnen naar goeddunken van de auteur worden overgeslagen.
 
-![ Diagram van auteur, uitgever, en verzenders ](assets/author-publish.jpg)
+![&#x200B; Diagram van auteur, uitgever, en verzenders &#x200B;](assets/author-publish.jpg)
 
-Voor verdere details over de technische architectuur van AEM as a Cloud Service, gelieve te zien het document [ Een Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service ](/help/overview/architecture.md).
+Voor verdere details over de technische architectuur van AEM as a Cloud Service, gelieve te zien het document [&#x200B; Een Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service &#x200B;](/help/overview/architecture.md).
 
 {{edge-delivery-authoring}}
 
@@ -54,19 +54,19 @@ Bovendien zijn er beheertaken die u helpen uw inhoud te beheren:
 
 AEM wordt ook vanuit de auteursomgeving beheerd.
 
-Gelieve te zien de document [ Snelle Gids van het Begin aan Authoring ](/help/sites-cloud/authoring/quick-start.md) voor een overzicht van het auteursproces.
+Gelieve te zien de document [&#x200B; Snelle Gids van het Begin aan Authoring &#x200B;](/help/sites-cloud/authoring/quick-start.md) voor een overzicht van het auteursproces.
 
 ## Inhoud voorvertonen {#previewing-content}
 
 AEM biedt ook een voorbeeldservice waarmee ontwikkelaars en makers van inhoud de uiteindelijke ervaring van een website kunnen voorvertonen voordat deze de publicatieomgeving bereikt en deze openbaar beschikbaar is.
 
-Gelieve te zien het document [ Previewing Inhoud ](/help/sites-cloud/authoring/sites-console/previewing-content.md) voor verdere details.
+Gelieve te zien het document [&#x200B; Previewing Inhoud &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md) voor verdere details.
 
 ## Publish-omgeving {#publish-environment}
 
 Als de inhoud van uw site gereed is, wordt deze gepubliceerd naar de publicatieomgeving van de publicatielaag. Hier worden de pagina&#39;s van de website beschikbaar gesteld aan het beoogde publiek in overeenstemming met de vormgeving van uw inhoudssjabloon.
 
-Gelieve te zien het document [ Publiceren Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) voor meer informatie over het publiceren en het unpublishing van pagina&#39;s.
+Gelieve te zien het document [&#x200B; Publiceren Pagina&#39;s &#x200B;](/help/sites-cloud/authoring/sites-console/publishing-pages.md) voor meer informatie over het publiceren en het unpublishing van pagina&#39;s.
 
 ## Dispatcher {#dispatcher}
 

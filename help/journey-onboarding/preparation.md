@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Voorbereiding aan boord {#onboarding-preparation}
 
-Nu u weet wat voor u in opslag in het onboarding proces door het artikel [ AEM as a Cloud Service onboarding Inleiding van de Reis Inleiding van de Reis ](overview.md) is te lezen, bent u waarschijnlijk bereid binnen te springen. Nochtans, alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
+Nu u weet wat voor u in opslag in het onboarding proces door het artikel [&#x200B; AEM as a Cloud Service onboarding Inleiding van de Reis Inleiding van de Reis &#x200B;](overview.md) is te lezen, bent u waarschijnlijk bereid binnen te springen. Nochtans, alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
 
 ## Doelstelling {#objective}
 
@@ -90,4 +90,4 @@ U zou nu een basisbegrip moeten hebben van:
 * Hoe dat contract het instapproces beïnvloedt.
 * Hoe te op uw onboarding vraag voor te bereiden.
 
-Nu u bekend bent met deze voorbereidingsstappen, bent u bijna klaar om u aan te melden bij het systeem zelf. Maar eerst hebt u een kort overzicht nodig van hoe AEM as a Cloud Service vanuit het standpunt van de systeembeheerder gestructureerd is en om wat belangrijke terminologie te leren kennen. Ga aan het volgende deel van de reis, [ Terminologie van AEM as a Cloud Service ](terminology.md) verder.
+Nu u bekend bent met deze voorbereidingsstappen, bent u bijna klaar om u aan te melden bij het systeem zelf. Maar eerst hebt u een kort overzicht nodig van hoe AEM as a Cloud Service vanuit het standpunt van de systeembeheerder gestructureerd is en om wat belangrijke terminologie te leren kennen. Ga aan het volgende deel van de reis, [&#x200B; Terminologie van AEM as a Cloud Service &#x200B;](terminology.md) verder.

@@ -17,11 +17,11 @@ Leer de stappen die de volledige as a Cloud Service ervaring van AEM Screens op 
 
 >[!NOTE]
 >
->AEM Screens Demo vereist dat de invoegtoepassing Screens wordt toegevoegd aan het Cloud Manager-programma. Leer hoe met [ het Toevoegen van Screens als toe:voegen-op aan een Nieuw Programma in Cloud Manager ](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) hoe te om het toe te voegen.
+>AEM Screens Demo vereist dat de invoegtoepassing Screens wordt toegevoegd aan het Cloud Manager-programma. Leer hoe met [&#x200B; het Toevoegen van Screens als toe:voegen-op aan een Nieuw Programma in Cloud Manager &#x200B;](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) hoe te om het toe te voegen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Toelating van de Demo&#39;s van de Verwijzing, [ creeerde de Plaats van de Demo van de Demo ](create-site.md), u een demoplaats die op de malplaatjes van toe:voegen-op van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
+In het vorige document van de AEM Toelating van de Demo&#39;s van de Verwijzing, [&#x200B; creeerde de Plaats van de Demo van de Demo &#x200B;](create-site.md), u een demoplaats die op de malplaatjes van toe:voegen-op van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
 
 * Begrijp hoe te om tot het AEM auteursmilieu toegang te hebben.
 * Weet hoe u een site kunt maken op basis van een sjabloon.
@@ -47,9 +47,9 @@ AEM Screens as a Cloud Service is een digitale signaaloplossing waarmee marketer
 
 >[!TIP]
 >
->Voor de volledige details van AEM Screens as a Cloud Service, zie de [ Extra sectie van Middelen ](#additional-resources) aan het eind van dit document.
+>Voor de volledige details van AEM Screens as a Cloud Service, zie de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) aan het eind van dit document.
 
-Door de AEM Reference Demos Add-on te installeren, beschikt u automatisch over Web.Cafe-inhoud voor AEM Screens in uw demo-ontwerpomgeving. De stappen die in [ worden beschreven stellen een Project van Screens van de Manifestatie ](#deploy-project) helpen u de volledige ervaring van AEM Screens toelaten door die inhoud te publiceren en aan media spelers op te stellen, etc.
+Door de AEM Reference Demos Add-on te installeren, beschikt u automatisch over Web.Cafe-inhoud voor AEM Screens in uw demo-ontwerpomgeving. De stappen die in [&#x200B; worden beschreven stellen een Project van Screens van de Manifestatie &#x200B;](#deploy-project) helpen u de volledige ervaring van AEM Screens toelaten door die inhoud te publiceren en aan media spelers op te stellen, etc.
 
 ## De demo-inhoud begrijpen {#demo-content}
 
@@ -72,13 +72,13 @@ De locatie in New York wordt verondersteld zich in een kleinere winkel te bevind
 
 >[!NOTE]
 >
->Als u besluit om met de Cloud Service van Screens in de [ Connect Screens as a Cloud Service ](#connect-screens) sectie te verbinden, creeer de plaatsen als omslagen onder vertoningen. Zie de [ Extra sectie van Middelen ](#additional-resources) aan het eind van dit document voor meer informatie over vertoningen.
+>Als u besluit om met de Cloud Service van Screens in de [&#x200B; Connect Screens as a Cloud Service &#x200B;](#connect-screens) sectie te verbinden, creeer de plaatsen als omslagen onder vertoningen. Zie de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) aan het eind van dit document voor meer informatie over vertoningen.
 
 ### Cafe-indelingen {#care-layouts}
 
 De locaties Web.Cafe hebben de volgende lay-outs.
 
-![ wij.Cafe lay-outs ](assets/cafe-layouts.png)
+![&#x200B; wij.Cafe lay-outs &#x200B;](assets/cafe-layouts.png)
 
 >[!NOTE]
 >
@@ -88,24 +88,24 @@ De locaties Web.Cafe hebben de volgende lay-outs.
 
 De ingangsweergave wordt dagelijks geparseerd en wijzigt alleen de eerste afbeelding van ochtend naar middag. Bij elke stap van de reeks wordt ook reclame gemaakt voor een ander speciaal koffiepreparaat, waarbij een gemeten ingesloten reeks wordt gebruikt om telkens een ander item af te spelen.
 
-Het laatste beeld op de ingangskanalen wordt ook gericht (namelijk dynamisch veranderd) die op buitentemperatuur wordt gebaseerd, die zoals die in [ wordt beschreven kan worden gesimuleerd creëren Gesimuleerde Gegevens Source ](#data-source) sectie.
+Het laatste beeld op de ingangskanalen wordt ook gericht (namelijk dynamisch veranderd) die op buitentemperatuur wordt gebaseerd, die zoals die in [&#x200B; wordt beschreven kan worden gesimuleerd creëren Gesimuleerde Gegevens Source &#x200B;](#data-source) sectie.
 
 ## Een demo Screens-project implementeren {#deploy-project}
 
-Om de demo inhoud in de zandbak te gebruiken die u in [ creeerde creeerde de stap van het Programma ](create-program.md), moet een plaats worden gecreeerd gebaseerd op een malplaatje.
+Om de demo inhoud in de zandbak te gebruiken die u in [&#x200B; creeerde creeerde de stap van het Programma &#x200B;](create-program.md), moet een plaats worden gecreeerd gebaseerd op een malplaatje.
 
-Als u nog geen de demoplaats van Web.Cafe hebt gecreeerd, volg eenvoudig de zelfde stappen zoals in [ creeer de Plaats van de Demo ](create-site.md) sectie. Wanneer het selecteren van het malplaatje, kies eenvoudig het {**Malplaatje 1} Web.Cafe van de Website.**
+Als u nog geen de demoplaats van Web.Cafe hebt gecreeerd, volg eenvoudig de zelfde stappen zoals in [&#x200B; creeer de Plaats van de Demo &#x200B;](create-site.md) sectie. Wanneer het selecteren van het malplaatje, kies eenvoudig het {**Malplaatje 1} Web.Cafe van de Website.**
 
-![ wij.Cafe malplaatje ](assets/wecafe-template.png)
+![&#x200B; wij.Cafe malplaatje &#x200B;](assets/wecafe-template.png)
 
 Nadat de wizard is voltooid, vindt u de inhoud die onder Sites is geïmplementeerd en kunt u navigeren en verkennen zoals u elke andere inhoud wilt.
 
-![ wij.Cafe inhoud ](assets/wecafe-content.png)
+![&#x200B; wij.Cafe inhoud &#x200B;](assets/wecafe-content.png)
 
 Nu we Web.Cafe-demo-inhoud hebben, hebt u een keuze over hoe u AEM Screens wilt testen:
 
-* Als u slechts de inhoud binnen de console van AEM Sites wilt onderzoeken, eenvoudig beginnen en meer in de [ Extra Bronnen ](#additional-resources) sectie ontdekken; geen meer actie wordt vereist.
-* Als u de volledige dynamische eigenschappen van AEM Screens wilt ervaren, ga aan de volgende sectie verder, [ dynamisch de Inhoud van Screens van de Verandering ](#dynamically-change).
+* Als u slechts de inhoud binnen de console van AEM Sites wilt onderzoeken, eenvoudig beginnen en meer in de [&#x200B; Extra Bronnen &#x200B;](#additional-resources) sectie ontdekken; geen meer actie wordt vereist.
+* Als u de volledige dynamische eigenschappen van AEM Screens wilt ervaren, ga aan de volgende sectie verder, [&#x200B; dynamisch de Inhoud van Screens van de Verandering &#x200B;](#dynamically-change).
 
 ## Screens-inhoud dynamisch wijzigen {#dynamically-change}
 
@@ -123,23 +123,23 @@ Ten eerste moet u een Google API-sleutel maken om de gegevensuitwisseling te ver
 1. Open de Cloud Console met deze koppeling `https://console.cloud.google.com` .
 1. Creeer een project door de huidige projectnaam in top-left van de toolbar na het **Google Cloud Platform** etiket te klikken.
 
-   ![ Google Cloud Console ](assets/google-cloud-console.png)
+   ![&#x200B; Google Cloud Console &#x200B;](assets/google-cloud-console.png)
 
 1. In de dialoog van de projectselecteur, klik **NIEUW PROJECT**.
 
-   ![ Nieuw project ](assets/new-project.png)
+   ![&#x200B; Nieuw project &#x200B;](assets/new-project.png)
 
 1. Geef het project een naam en klik **CREATE**.
 
-   ![ creeer project ](assets/create-project.png)
+   ![&#x200B; creeer project &#x200B;](assets/create-project.png)
 
 1. Zorg ervoor dat uw nieuw project wordt geselecteerd en dan gebruikend het hamburgermenu in het dashboard van de Console van de Wolk, uitgezochte **APIs &amp; de Diensten**.
 
-   ![ APIs en de Diensten ](assets/apis-services.png)
+   ![&#x200B; APIs en de Diensten &#x200B;](assets/apis-services.png)
 
 1. In het linkerpaneel van het venster APIs &amp; van de Diensten, klik **Geloofsbrieven** bij de bovenkant van het venster, dan klik **CREËREN CREDENTIALS** en **API Sleutel**.
 
-   ![ Geloofsbrieven ](assets/credentials.png)
+   ![&#x200B; Geloofsbrieven &#x200B;](assets/credentials.png)
 
 1. Kopieer de nieuwe API-sleutel in het dialoogvenster en sla deze op voor later gebruik. Klik **SLUITEN** zodat kunt u de dialoogdoos weggaan.
 
@@ -149,15 +149,15 @@ Als u de uitwisseling van Google Sheets-gegevens met behulp van uw API-sleutel w
 
 1. Terugkeer naar de Console van de Wolk van Google bij `https://console.cloud.google.com` voor uw project en gebruik dan het hamburger menu om **APIs &amp; de Diensten > Bibliotheek** te selecteren.
 
-   ![ API bibliotheek ](assets/api-library.png)
+   ![&#x200B; API bibliotheek &#x200B;](assets/api-library.png)
 
 1. In het scherm van de Bibliotheek API van API, rol om uw onderzoek naar **Google Bladen API** te vinden, dan het te klikken.
 
-   ![ API bibliotheekonderzoek ](assets/api-library-search.png)
+   ![&#x200B; API bibliotheekonderzoek &#x200B;](assets/api-library-search.png)
 
 1. In het **Google Bladen API** venster, klik **&#x200B;**&#x200B;TOESTAAN.
 
-   ![ Google bladen API ](assets/sheets-api.png)
+   ![&#x200B; Google bladen API &#x200B;](assets/sheets-api.png)
 
 #### Google-werkblad met bladen maken {#create-spreadsheet}
 
@@ -167,11 +167,11 @@ Nu kunt u een Google Sheets-spreadsheet maken om uw weergegevens op te slaan.
 1. Definieer de temperatuur door `32` in cel A2 in te voeren.
 1. Deel het document door **Aandeel** bij het hoogste recht van het venster te klikken en onder **krijg verbinding**, klik **Verandering**.
 
-   ![ Werkblad van het Aandeel ](assets/share-sheet.png)
+   ![&#x200B; Werkblad van het Aandeel &#x200B;](assets/share-sheet.png)
 
 1. Kopieer de koppeling voor de volgende stap.
 
-   ![ verbinding van het Aandeel ](assets/share-link.png)
+   ![&#x200B; verbinding van het Aandeel &#x200B;](assets/share-link.png)
 
 1. Zoek de pagina-id.
 
@@ -217,7 +217,7 @@ AEM Screens kan inhoud dynamisch wijzigen op basis van context. De manifestatie 
 
 >[!TIP]
 >
->Voor de volledige details van ContextHub, zie de [ Extra sectie van Middelen ](#additional-resources) aan het eind van dit document.
+>Voor de volledige details van ContextHub, zie de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) aan het eind van dit document.
 
 Wanneer de het scherminhoud wordt getoond, roept ContextHub uw weerdienst om de huidige temperatuur te vinden om te bepalen welke inhoud aan vertoning.
 
@@ -227,8 +227,8 @@ Voor demo-doeleinden kunnen de waarden in het blad worden gewijzigd. ContextHub 
 1. Selecteer de configuratiecontainer die de zelfde naam heeft zoals wat u het project gaf toen u het project van Screens van het **Web.Cafe Malplaatje van de Website** creeerde.
 1. Selecteer **Configuratie > Configuratie ContextHub > de Bladen van Google** dan **daarna** bij het hoogste recht klikken.
 1. De configuratie zou reeds JSON gegevens moeten hebben pre-gevormd. Er zijn twee waarden die moeten worden gewijzigd:
-   1. Vervang `[your Google Sheets id]` met blad identiteitskaart die [ u eerder ](#create-spreadsheet) bewaarde.
-   1. Vervang `[your Google API Key]` met de API sleutel die [ u eerder ](#create-api-key) bewaarde.
+   1. Vervang `[your Google Sheets id]` met blad identiteitskaart die [&#x200B; u eerder &#x200B;](#create-spreadsheet) bewaarde.
+   1. Vervang `[your Google API Key]` met de API sleutel die [&#x200B; u eerder &#x200B;](#create-api-key) bewaarde.
 1. Klik **sparen**.
 
 Nu kunt u de temperatuurwaarde in uw spreadsheet van Google veranderen en ContextHub werkt Screens dynamisch bij aangezien het &quot;de weerverandering ziet.&quot;
@@ -240,17 +240,17 @@ Nu AEM Screens en ContextHub met uw weerdienst worden verbonden, kunt u het test
 1. Toegang tot de instantie van de maker van de sandbox.
 1. Navigeer aan de plaatsenconsole via **Globale Navigatie > Plaatsen** en selecteer de volgende pagina **Screens > &lt;project-name> > Kanalen > Binnenkomt (Portret)**.
 
-   ![ Uitgezochte inhoud van het demoproject ](assets/project-content.png)
+   ![&#x200B; Uitgezochte inhoud van het demoproject &#x200B;](assets/project-content.png)
 
 1. Klik **uitgeven** in de toolbar of typ de kortere wegsleutel `e` zodat kunt u de pagina uitgeven.
 
 1. In de redacteur, kunt u de inhoud zien. Eén afbeelding wordt in blauw gemarkeerd met een doelpictogram in de hoek.
 
-   ![ de inhoud van Screens in redacteur ](assets/screens-content-editor.png)
+   ![&#x200B; de inhoud van Screens in redacteur &#x200B;](assets/screens-content-editor.png)
 
 1. Wijzig de temperatuur die u hebt ingevoerd in het werkblad van 32 in 70 en bekijk de wijziging van de inhoud.
 
-   ![ de inhoud van Screens in redacteur ](assets/screens-content-editor-2.png)
+   ![&#x200B; de inhoud van Screens in redacteur &#x200B;](assets/screens-content-editor-2.png)
 
 Op basis van de temperatuursverandering van een vriestemperatuur van 32°F (0°C) in een comfortabele 70°F (21°C) veranderde het aanbevolen beeld van een opwarmer theekopje in een koele, geijkte koffie.
 
@@ -266,7 +266,7 @@ U kunt de demo ook eenvoudig voorvertonen in de Kanaaleditor op AEMaaCS.
 
 >[!TIP]
 >
->Voor de volledige details van de Redacteur van het Kanaal, zie de [ Extra sectie van Middelen ](#additional-resources) aan het eind van dit document.
+>Voor de volledige details van de Redacteur van het Kanaal, zie de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) aan het eind van dit document.
 
 ### AEM Screens as a Cloud Service configureren {#configure-screens}
 
@@ -276,23 +276,23 @@ Eerst moet u de Screens-demo-inhoud publiceren naar AEM Screens as a Cloud Servi
 1. Navigeer naar Screens as a Cloud Service op `https://experience.adobe.com/screens` en meld u aan.
 1. Rechtsboven in het scherm moet u controleren of u zich in de juiste organisatie bevindt.
 
-   ![ controleer uw Screens org ](assets/screens-org.png)
+   ![&#x200B; controleer uw Screens org &#x200B;](assets/screens-org.png)
 
 1. Vlak de upper-left hoek, klik **uitgeeft het pictogram van Montages**, vormde als versnelling.
 
-   ![ geeft montages ](assets/screens-edit-settings.png) uit
+   ![&#x200B; geeft montages &#x200B;](assets/screens-edit-settings.png) uit
 
 1. Verstrek URLs van auteur AEMaaCS en publiceer instanties waar u uw demoplaats creeerde en **sparen** klikt.
 
-   ![ Screens plaatsend ](assets/screens-settings.png)
+   ![&#x200B; Screens plaatsend &#x200B;](assets/screens-settings.png)
 
 1. Zodra Screens is verbonden met uw demo-instanties, wordt de inhoud van uw kanaal opgehaald. Klik **Kanalen** in het linkerpaneel zodat kunt u uw gepubliceerde kanalen zien. Het kan even duren voordat de informatie wordt ingevuld. U kunt de blauwe **knoop van de Synchronisatie** bij het hoogste recht van het scherm klikken om de informatie bij te werken.
 
-   ![ het kanaalinfo van de Demo ](assets/screens-channels.png)
+   ![&#x200B; het kanaalinfo van de Demo &#x200B;](assets/screens-channels.png)
 
 1. Klik **Vertoningen** in het linkerpaneel. U hebt nog geen bestanden voor uw demo gemaakt. U kunt de locaties van Web.Cafe simuleren door voor elke locatie mappen te maken. Klik **creëren** bij het hoogste recht van het scherm en selecteren **Omslag**.
 
-   ![ creeer vertoning ](assets/screens-displays.png)
+   ![&#x200B; creeer vertoning &#x200B;](assets/screens-displays.png)
 
 1. In de dialoogdoos, verstrek een omslagnaam zoals **San Jose** en klik **creeer**.
 
@@ -300,15 +300,15 @@ Eerst moet u de Screens-demo-inhoud publiceren naar AEM Screens as a Cloud Servi
 
 1. Verstrek een vertoningsnaam en klik **creëren**.
 
-   ![ creeer vertoning ](assets/create-display.png)
+   ![&#x200B; creeer vertoning &#x200B;](assets/create-display.png)
 
 1. Nadat de weergave is gemaakt, klikt u op de naam van de weergave om het scherm met weergavedetails te openen. Aan de weergave moet een kanaal worden toegewezen dat vanuit uw demosite is gesynchroniseerd. Klik **toewijzen kanaal** bij het hoogste recht van het scherm.
 
-   ![ detail van het Kanaal ](assets/channel-detail.png)
+   ![&#x200B; detail van het Kanaal &#x200B;](assets/channel-detail.png)
 
 1. In de dialoog, selecteer het kanaal en klik **toewijzen**.
 
-   ![ wijs kanaal ](assets/assign-channel.png) toe
+   ![&#x200B; wijs kanaal &#x200B;](assets/assign-channel.png) toe
 
 U kunt deze stappen voor uw extra plaatsen en vertoningen herhalen. Na voltooiing hebt u een koppeling tot stand gebracht tussen uw demo-site en AEM Screens en hebt u de benodigde configuratie voltooid.
 
@@ -325,19 +325,19 @@ Eerst moet u een registratiecode maken om een speler veilig te verbinden met AEM
 1. Navigeer naar Screens as a Cloud Service op `https://experience.adobe.com/screens` en meld u aan.
 1. Rechtsboven in het scherm moet u controleren of u zich in de juiste organisatie bevindt.
 
-   ![ controleer uw Screens org ](assets/screens-org.png)
+   ![&#x200B; controleer uw Screens org &#x200B;](assets/screens-org.png)
 
 1. In het linkerpaneel, klik **Beheer van de Speler > Codes van de Registratie** en klik dan **creeer code** bij het hoogste recht van het scherm.
 
-![ de codes van de Registratie ](assets/registration-codes.png)
+![&#x200B; de codes van de Registratie &#x200B;](assets/registration-codes.png)
 
 1. Ga een naam voor de code in en klik **creeer**.
 
-   ![ creeer code ](assets/create-code.png)
+   ![&#x200B; creeer code &#x200B;](assets/create-code.png)
 
 1. Nadat de code is gemaakt, wordt deze weergegeven in de lijst. Klik om de code te kopiëren.
 
-   ![ de code van de Registratie ](assets/registration-code.png)
+   ![&#x200B; de code van de Registratie &#x200B;](assets/registration-code.png)
 
 #### Speler installeren en configureren {#install-player}
 
@@ -345,42 +345,42 @@ Eerst moet u een registratiecode maken om een speler veilig te verbinden met AEM
 1. Stel de speler in werking, dan schakelaar aan de **Configuratie** tabel.
 1. De rol aan de bodem, klikt en bevestigt dan zowel **Terugstellen aan Factory** en **Verandering in de Wijze van de Wolk** opties.
 
-   ![ montages van de Speler ](assets/player-configuration.png)
+   ![&#x200B; montages van de Speler &#x200B;](assets/player-configuration.png)
 
 1. De speler verandert automatisch in de **Registratie van de Speler** tabel. Ga de code in die u eerder produceerde en klik **Register**.
 
-   ![ de registratie van de Speler ](assets/player-registration-code.png)
+   ![&#x200B; de registratie van de Speler &#x200B;](assets/player-registration-code.png)
 
 1. Schakelaar aan het **lusje van de Informatie van het Systeem** om te bevestigen dat de speler is geregistreerd.
 
-   ![ Geregistreerde speler ](assets/player-registered.png)
+   ![&#x200B; Geregistreerde speler &#x200B;](assets/player-registered.png)
 
 #### Speler aan een Vertoning toewijzen {#assign-player}
 
 1. Navigeer naar Screens as a Cloud Service op `https://experience.adobe.com/screens` en meld u aan.
 1. Rechtsboven in het scherm moet u controleren of u zich in de juiste organisatie bevindt.
 
-   ![ controleer uw Screens org ](assets/screens-org.png)
+   ![&#x200B; controleer uw Screens org &#x200B;](assets/screens-org.png)
 
 1. In het linkerpaneel, klik **het Beheer van de Speler > Players** en u ziet de speler die u eerder installeerde en registreerde.
 
-   ![ Players ](assets/players.png)
+   ![&#x200B; Players &#x200B;](assets/players.png)
 
 1. Klik op de naam van de speler, zodat u de details kunt openen. Klik **toewijzen aan vertoning** in het hoogste recht van het scherm.
 
-   ![ wijs speler aan vertoning ](assets/assign-to-display.png) toe
+   ![&#x200B; wijs speler aan vertoning &#x200B;](assets/assign-to-display.png) toe
 
 1. In de dialoogdoos, selecteer de vertoning die u eerder creeerde en klik dan **Uitgezocht**.
 
-   ![ wijs een vertoning ](assets/assign-a-display.png) toe
+   ![&#x200B; wijs een vertoning &#x200B;](assets/assign-a-display.png) toe
 
 #### Afspelen! {#playback}
 
 Nadat u een weergave aan een speler hebt toegewezen, levert AEM Screens as a Cloud Service de inhoud aan de speler waar deze zichtbaar is.
 
-![ Portret van de Ingang ](assets/entrance-portrait.jpg)
+![&#x200B; Portret van de Ingang &#x200B;](assets/entrance-portrait.jpg)
 
-![ Ingang landscape ](assets/entrance-landscape.jpg)
+![&#x200B; Ingang landscape &#x200B;](assets/entrance-landscape.jpg)
 
 ## Volgende functies {#what-is-next}
 
@@ -390,15 +390,15 @@ Nu u dit deel van de AEM Invoegtoepassing van de Demo van de Verwijzing hebt vol
 * Begrijp de Web.Cafe demo-inhoud.
 * Weet hoe u AEM Screens for We.Cafe kunt configureren.
 
-U kunt nu de mogelijkheden van AEM Screens verkennen met uw eigen demo-sites. Ga aan de volgende sectie van de reis, [ leiden Uw Plaatsen van de Demo ](manage.md) voort, waar u over de hulpmiddelen beschikbaar leert om u te helpen uw demoplaatsen beheren en hoe te om hen te verwijderen.
+U kunt nu de mogelijkheden van AEM Screens verkennen met uw eigen demo-sites. Ga aan de volgende sectie van de reis, [&#x200B; leiden Uw Plaatsen van de Demo &#x200B;](manage.md) voort, waar u over de hulpmiddelen beschikbaar leert om u te helpen uw demoplaatsen beheren en hoe te om hen te verwijderen.
 
-U kunt enkele extra middelen ook controleren beschikbaar in de [ Extra sectie van Middelen ](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
+U kunt enkele extra middelen ook controleren beschikbaar in de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ documentatie ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md) - leer hoe ContextHub kan worden gebruikt om inhoud te personaliseren die op gebruikerscontext voorbij weersomstandigheden wordt gebaseerd.
-* [ Gebruikend API Sleutels - de Documentatie van Google ](https://developers.google.com/maps/documentation/javascript/get-api-key) - een handige verwijzing voor details over het gebruiken van Google API sleutels.
-* [ Vertoningen ](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md) - leer meer over wat een vertoning in AEM Screens is en wat het kan doen.
-* [ Speler van de Download ](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md) - Leer hoe te om tot de Speler van Screens toegang te hebben en hoe te te installeren.
-* [ Speler van het Register ](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) - leer hoe te opstelling en een speler bij uw project van AEM Screens te registreren.
-* [ Toewijzend Speler aan een Vertoning ](/help/screens-cloud/managing-players-registration/assigning-player-display.md) - vorm een speler om uw inhoud te tonen.
+* [&#x200B; documentatie ContextHub &#x200B;](/help/sites-cloud/authoring/personalization/contexthub.md) - leer hoe ContextHub kan worden gebruikt om inhoud te personaliseren die op gebruikerscontext voorbij weersomstandigheden wordt gebaseerd.
+* [&#x200B; Gebruikend API Sleutels - de Documentatie van Google &#x200B;](https://developers.google.com/maps/documentation/javascript/get-api-key) - een handige verwijzing voor details over het gebruiken van Google API sleutels.
+* [&#x200B; Vertoningen &#x200B;](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md) - leer meer over wat een vertoning in AEM Screens is en wat het kan doen.
+* [&#x200B; Speler van de Download &#x200B;](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md) - Leer hoe te om tot de Speler van Screens toegang te hebben en hoe te te installeren.
+* [&#x200B; Speler van het Register &#x200B;](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) - leer hoe te opstelling en een speler bij uw project van AEM Screens te registreren.
+* [&#x200B; Toewijzend Speler aan een Vertoning &#x200B;](/help/screens-cloud/managing-players-registration/assigning-player-display.md) - vorm een speler om uw inhoud te tonen.

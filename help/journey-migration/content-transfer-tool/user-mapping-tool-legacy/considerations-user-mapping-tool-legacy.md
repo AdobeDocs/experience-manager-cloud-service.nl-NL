@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Deze documentatie verwijst naar een verouderde versie van het hulpmiddel. Voor meer informatie over de recentste versie, zie [ de Migratie van de Groep ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
+>Deze documentatie verwijst naar een verouderde versie van het hulpmiddel. Voor meer informatie over de recentste versie, zie [&#x200B; de Migratie van de Groep &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 ## Uitzonderlijke gevallen {#exceptional-cases}
 
@@ -47,4 +47,4 @@ De volgende specifieke gevallen worden geregistreerd:
 
 ### Volgende functies {#whats-next}
 
-Zodra u de belangrijke overwegingen en de uitzonderlijke gevallen hebt geleerd, bent u nu klaar om het hulpmiddel te gebruiken. Zie [ Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker ](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md) voor meer details.
+Zodra u de belangrijke overwegingen en de uitzonderlijke gevallen hebt geleerd, bent u nu klaar om het hulpmiddel te gebruiken. Zie [&#x200B; Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker &#x200B;](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md) voor meer details.

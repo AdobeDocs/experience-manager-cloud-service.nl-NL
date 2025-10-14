@@ -72,4 +72,4 @@ Volg de onderstaande stappen om uw speler te registreren:
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u de speler aan de wijze van de Wolk hebt geïnstalleerd en gevormd, zou u uw as a Cloud Service reis van Screens door het document te herzien moeten voortzetten, [ toewijzend Speler aan een Vertoning in Screens as a Cloud Service ](/help/screens-cloud/managing-players-registration/assigning-player-display.md) van Screens Services Provider.
+Nu, dat u de speler aan de wijze van de Wolk hebt geïnstalleerd en gevormd, zou u uw as a Cloud Service reis van Screens door het document te herzien moeten voortzetten, [&#x200B; toewijzend Speler aan een Vertoning in Screens as a Cloud Service &#x200B;](/help/screens-cloud/managing-players-registration/assigning-player-display.md) van Screens Services Provider.

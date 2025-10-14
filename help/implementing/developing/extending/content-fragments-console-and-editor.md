@@ -19,14 +19,14 @@ Zie voor volledige informatie:
 
 * voor beide scenario&#39;s
 
-   * [ hoe te om Toegang ](https://developer.adobe.com/uix/docs/guides/get-access/) te krijgen
+   * [&#x200B; hoe te om Toegang &#x200B;](https://developer.adobe.com/uix/docs/guides/get-access/) te krijgen
 
-   * [ Uitbreidbaarheid UI ](https://developer.adobe.com/uix/docs/)
+   * [&#x200B; Uitbreidbaarheid UI &#x200B;](https://developer.adobe.com/uix/docs/)
 
 * de Content Fragment Console:
 
-   * [ Stap voor stap AEM de Ontwikkeling van de Uitbreiding van de Console van de Fragmenten van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/)
+   * [&#x200B; Stap voor stap AEM de Ontwikkeling van de Uitbreiding van de Console van de Fragmenten van de Inhoud &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/)
 
 * De Inhoudsfragmenteditor
 
-   * [ AEM de Punten van de Uitbreiding van de Redacteur van de Fragmenten van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)
+   * [&#x200B; AEM de Punten van de Uitbreiding van de Redacteur van de Fragmenten van de Inhoud &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)

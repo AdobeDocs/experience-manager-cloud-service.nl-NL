@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 De video-indeling is een essentieel onderdeel van digitale middelen van een organisatie. [!DNL Adobe Experience Manager] biedt geavanceerde aanbiedingen en functies om de volledige levenscyclus van uw video-elementen te beheren nadat deze zijn gemaakt.
@@ -34,7 +34,7 @@ Voer de volgende stappen uit om een video-element te uploaden:
 
 1. Navigeer in de map met digitale elementen of in de submappen naar de locatie waar u het element wilt toevoegen.
 1. Klik op **[!UICONTROL Create]** op de werkbalk en kies **[!UICONTROL Files]** . <br> Alternatief, sleep een dossier op het gebruikersinterface.
-Leer meer over [ het uploaden activa ](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+Leer meer over [&#x200B; het uploaden activa &#x200B;](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
 
 <!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
@@ -43,11 +43,11 @@ Leer meer over [ het uploaden activa ](manage-digital-assets.md#uploading-assets
 
 U kunt video&#39;s voorvertonen in ondersteunde uitvoeringen in de gebruikersinterface van [!DNL Assets] . Voer de volgende stappen uit om een voorvertoning van een video-element weer te geven:
 
-1. Upload een video-element met een ondersteunde indeling naar [!DNL Experience Manager Assets] . Leer meer over de [ gesteunde videoformaten ](file-format-support.md#video-formats). <br> Zodra geupload, wordt de videoactiva verwerkt, en een voorproefvertoning wordt geproduceerd.
-1. Klik de activa, en selecteer ![ detailsoptie ](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]** van de hoogste toolbar. Het video-element wordt geopend in de videoviewer.
-1. Klik het ![ pictogram van de speeloptie ](assets/do-not-localize/play.png) op de videoduimnagel. <br> u kunt spelen, pauzeren, het volume controleren, en de video aan het volledige scherm zoemen.
+1. Upload een video-element met een ondersteunde indeling naar [!DNL Experience Manager Assets] . Leer meer over de [&#x200B; gesteunde videoformaten &#x200B;](file-format-support.md#video-formats). <br> Zodra geupload, wordt de videoactiva verwerkt, en een voorproefvertoning wordt geproduceerd.
+1. Klik de activa, en selecteer ![&#x200B; detailsoptie &#x200B;](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]** van de hoogste toolbar. Het video-element wordt geopend in de videoviewer.
+1. Klik het ![&#x200B; pictogram van de speeloptie &#x200B;](assets/do-not-localize/play.png) op de videoduimnagel. <br> u kunt spelen, pauzeren, het volume controleren, en de video aan het volledige scherm zoemen.
 
-Voor bestaande video-elementen in [!DNL Experience Manager Assets] moet u **[!UICONTROL Reprocess]** de elementen in [!DNL Experience Manager] gebruiken om de functie voor videovoorvertoning in te schakelen. Leer hoe te [ digitale activa ](reprocessing.md) in [!DNL Experience Manager] opnieuw verwerken.
+Voor bestaande video-elementen in [!DNL Experience Manager Assets] moet u **[!UICONTROL Reprocess]** de elementen in [!DNL Experience Manager] gebruiken om de functie voor videovoorvertoning in te schakelen. Leer hoe te [&#x200B; digitale activa &#x200B;](reprocessing.md) in [!DNL Experience Manager] opnieuw verwerken.
 
 ### Beperkingen van videovoorvertoning
 
@@ -56,7 +56,7 @@ Voor bestaande video-elementen in [!DNL Experience Manager Assets] moet u **[!UI
 
 ## Video-elementen publiceren {#publish-video-assets}
 
-Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Voor details, zie [  [!DNL Dynamic Media]  activa ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.
+Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Voor details, zie [&#x200B;  [!DNL Dynamic Media]  activa &#x200B;](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.
 
 ## Video&#39;s publiceren naar YouTube {#publishing-videos-to-youtube}
 
@@ -79,7 +79,7 @@ Bij het publiceren van video-elementen naar YouTube-servers moeten de volgende t
 1. [(Optioneel) Controleer de gepubliceerde video op YouTube](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [YouTube-URL&#39;s koppelen aan uw webtoepassing](#linking-youtube-urls-to-your-web-application)
 
-U kunt ook [ unpublish video&#39;s om hen uit YouTube ](#unpublishing-videos-to-remove-them-from-youtube) te verwijderen.
+U kunt ook [&#x200B; unpublish video&#39;s om hen uit YouTube &#x200B;](#unpublishing-videos-to-remove-them-from-youtube) te verwijderen.
 
 ### Google Cloud-instellingen configureren {#configuring-google-cloud-settings}
 
@@ -99,7 +99,7 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
    Als u al een Google-account hebt, kunt u de volgende stap overslaan.
 
-1. Ga naar [ https://cloud.google.com/ ](https://cloud.google.com/).
+1. Ga naar [&#x200B; https://cloud.google.com/ &#x200B;](https://cloud.google.com/).
 1. Selecteer **[!UICONTROL Console]** op de pagina **[!UICONTROL Google Cloud]** in de rechterbovenhoek.
 
    Indien nodig, **[!UICONTROL Sign in]** gebruikt u de gegevens van uw Google-account om de optie **[!UICONTROL Console]** te zien.
@@ -122,13 +122,13 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 1. Selecteer op de pagina **[!UICONTROL YouTube]** de optie **[!UICONTROL YouTube Data API v3]** .
 1. Selecteer op de pagina **[!UICONTROL YouTube Data API v3]** de optie **[!UICONTROL MANAGE]** .
 
-   ![ 6_5_googleaccount-apis-manage ](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-manage.png)
+   ![&#x200B; 6_5_googleaccount-apis-manage &#x200B;](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-manage.png)
 
 1. U hebt referenties nodig om de API te gebruiken. Selecteer indien nodig links op de pagina **[!UICONTROL APIs & Services]** de optie **[!UICONTROL Credentials]** .
 1. Selecteer **[!UICONTROL CREATE CREDENTIALS]** boven op de pagina **[!UICONTROL Credentials]** en selecteer vervolgens **[!UICONTROL OAuth client ID]** .
 1. Selecteer op de pagina **[!UICONTROL Create OAuth client ID]** in de vervolgkeuzelijst **[!UICONTROL Application type]** de optie **[!UICONTROL Web application]** .
 
-   ![ 6_5_googleaccount-apis-applicationType ](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
+   ![&#x200B; 6_5_googleaccount-apis-applicationType &#x200B;](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
 1. Voer een van de volgende handelingen uit:
 
@@ -137,7 +137,7 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
 1. Selecteer onder de kop **[!UICONTROL Authorized JavaScript origins]** de optie **[!UICONTROL ADD URI]** .
 
-   ![ 6_5_googleaccount-apis-nameAuthorizations ](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
+   ![&#x200B; 6_5_googleaccount-apis-nameAuthorizations &#x200B;](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
 
 1. Voer in het tekstveld **[!UICONTROL URIs]** het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt, en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
 
@@ -168,22 +168,22 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
    U hebt dit gedownloade JSON-bestand nodig wanneer u YouTube later instelt in Adobe Experience Manager.
 
-   ![ 6_5_googleaccount-apis-oauthclient created ](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
+   ![&#x200B; 6_5_googleaccount-apis-oauthclient created &#x200B;](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
 1. Selecteer **[!UICONTROL OK]** in het dialoogvenster **[!UICONTROL OAuth client created]** .
 1. Log uit op je Google account. Maak nu een YouTube-kanaal.
 
 ### Een YouTube-kanaal maken {#creating-a-youtube-channel}
 
-Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodig. Als u reeds een kanaal van YouTube hebt gecreeerd, kunt u deze taak overslaan en naar [ gaan toevoegen markeringen voor het publiceren ](/help/assets/dynamic-media/video.md#adding-tags-for-publishing).
+Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodig. Als u reeds een kanaal van YouTube hebt gecreeerd, kunt u deze taak overslaan en naar [&#x200B; gaan toevoegen markeringen voor het publiceren &#x200B;](/help/assets/dynamic-media/video.md#adding-tags-for-publishing).
 
 >[!CAUTION]
 >
->Ben zeker u reeds opstelling één of meerdere kanalen in YouTube *vóór* hebt u kanalen onder de Montages van YouTube in Experience Manager (zie [ Opstelling YouTube in Experience Manager ](#setting-up-youtube-in-aem) hieronder) toevoegt. Als u de kanaalinstelling niet kunt uitvoeren, wordt u niet gewaarschuwd dat er geen bestaande kanalen zijn. Google-verificatie vindt echter nog steeds plaats wanneer u een kanaal toevoegt, maar er is geen optie om te kiezen welk kanaal de video wordt verzonden.
+>Ben zeker u reeds opstelling één of meerdere kanalen in YouTube *vóór* hebt u kanalen onder de Montages van YouTube in Experience Manager (zie [&#x200B; Opstelling YouTube in Experience Manager &#x200B;](#setting-up-youtube-in-aem) hieronder) toevoegt. Als u de kanaalinstelling niet kunt uitvoeren, wordt u niet gewaarschuwd dat er geen bestaande kanalen zijn. Google-verificatie vindt echter nog steeds plaats wanneer u een kanaal toevoegt, maar er is geen optie om te kiezen welk kanaal de video wordt verzonden.
 
 **om een kanaal van YouTube tot stand te brengen:**
 
-1. Ga naar [ https://www.youtube.com ](https://www.youtube.com/) en teken binnen gebruikend uw de rekeningsgeloofsbrieven van Google.
+1. Ga naar [&#x200B; https://www.youtube.com &#x200B;](https://www.youtube.com/) en teken binnen gebruikend uw de rekeningsgeloofsbrieven van Google.
 1. Selecteer in de rechterbovenhoek van de YouTube-pagina uw profielafbeelding (deze kan ook als een letter binnen een cirkel met effen kleuren worden weergegeven) en selecteer vervolgens **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
 1. Selecteer op de pagina Overzicht onder de kop Extra functies de optie **[!UICONTROL See all my channels or create a channel]** .
 1. Selecteer op de pagina Kanalen de optie **[!UICONTROL Create a new channel]** .
@@ -197,9 +197,9 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 
 ### Codes toevoegen voor publicatie {#adding-tags-for-publishing}
 
-Experience Manager koppelt tags aan een of meer YouTube-kanalen om uw video&#39;s naar YouTube te publiceren. Om markeringen voor het publiceren toe te voegen, zie [ Markeringen beheren ](/help/sites-cloud/authoring/sites-console/tags.md).
+Experience Manager koppelt tags aan een of meer YouTube-kanalen om uw video&#39;s naar YouTube te publiceren. Om markeringen voor het publiceren toe te voegen, zie [&#x200B; Markeringen beheren &#x200B;](/help/sites-cloud/authoring/sites-console/tags.md).
 
-Of, als u van plan bent om de standaardmarkeringen in Experience Manager te gebruiken, kunt u deze taak overslaan en naar [ Opstelling YouTube in Experience Manager ](#setting-up-youtube-in-aem) gaan.
+Of, als u van plan bent om de standaardmarkeringen in Experience Manager te gebruiken, kunt u deze taak overslaan en naar [&#x200B; Opstelling YouTube in Experience Manager &#x200B;](#setting-up-youtube-in-aem) gaan.
 
 >[!NOTE]
 >
@@ -219,8 +219,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 Vanaf Experience Manager 6.4 is een nieuwe aanraakgebruikersinterfacemethode geïntroduceerd om YouTube-publicaties in Experience Manager in te stellen. Voer een van de volgende handelingen uit op basis van de geïnstalleerde versie van Experience Manager die u gebruikt:
 
-* Om YouTube in Experience Manager vóór 6.4 te vormen, zie [ Opstelling YouTube in Experience Manager vóór 6.4 ](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
-* Om YouTube in Experience Manager 6.4 of recenter te vormen, zie [ Opstelling YouTube in Experience Manager 6.4 en later ](#setting-up-youtube-in-aem-and-later).
+* Om YouTube in Experience Manager vóór 6.4 te vormen, zie [&#x200B; Opstelling YouTube in Experience Manager vóór 6.4 &#x200B;](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
+* Om YouTube in Experience Manager 6.4 of recenter te vormen, zie [&#x200B; Opstelling YouTube in Experience Manager 6.4 en later &#x200B;](#setting-up-youtube-in-aem-and-later).
 
 #### YouTube instellen in Experience Manager 6.4 en hoger {#setting-up-youtube-in-aem-and-later}
 
@@ -234,9 +234,9 @@ Vanaf Experience Manager 6.4 is een nieuwe aanraakgebruikersinterfacemethode ge�
    U hebt de project-id opgegeven toen u de Google Cloud-instellingen voor het eerst eerder hebt geconfigureerd.
 Laat de pagina YouTube-configuratie maken open. U keert er zo meteen naar terug.
 
-   ![ 6_5_youtubepublish-createyoutubeconfiguration ](/help/assets/dynamic-media/assets/6_5_youtubepublish-createyoutubeconfiguration.png)
+   ![&#x200B; 6_5_youtubepublish-createyoutubeconfiguration &#x200B;](/help/assets/dynamic-media/assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
-1. Gebruikend een gewone tekstredacteur, open het JSON dossier dat u vroeger in de taak [ downloadde en bewaarde montages van de Wolk van Google ](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) vormt.
+1. Gebruikend een gewone tekstredacteur, open het JSON dossier dat u vroeger in de taak [&#x200B; downloadde en bewaarde montages van de Wolk van Google &#x200B;](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) vormt.
 1. Selecteer en kopieer de volledige JSON-tekst.
 1. Ga terug naar het dialoogvenster YouTube-accountinstellingen. Plak de JSON-tekst in het veld **[!UICONTROL JSON Config]**.
 1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
@@ -279,7 +279,7 @@ Laat de pagina YouTube-configuratie maken open. U keert er zo meteen naar terug.
 1. Selecteer **[!UICONTROL Create]** .
 1. Voer in het veld **[!UICONTROL Application Name]** in het dialoogvenster YouTube-accountinstellingen de Google-project-id in.
 
-   U specificeerde projectidentiteitskaart wanneer u aanvankelijk [ de montages van de Wolk van Google ](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) vroeger vormde.
+   U specificeerde projectidentiteitskaart wanneer u aanvankelijk [&#x200B; de montages van de Wolk van Google &#x200B;](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) vroeger vormde.
 Laat het dialoogvenster YouTube-accountinstellingen open. U keert er zo meteen naar terug.
 
 1. Open met een teksteditor zonder opmaak het JSON-bestand dat u eerder hebt gedownload en opgeslagen in de taak Google Cloud-instellingen configureren.
@@ -392,7 +392,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 >
 >Als u inhoud uit YouTube wilt publiceren, gebruikt Experience Manager de **[!UICONTROL Publish to YouTube]** -workflow. Hiermee kunt u de voortgang volgen en eventuele foutgegevens weergeven.
 >
->Zie [ video het coderen van de Monitor en YouTube het publiceren vooruitgang ](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Zie [&#x200B; video het coderen van de Monitor en YouTube het publiceren vooruitgang &#x200B;](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
 >Voor gedetailleerdere voortgangsgegevens kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
@@ -410,7 +410,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 1. Selecteer **[!UICONTROL Save and Close]** in de rechterbovenhoek van de eigenschappenpagina van de video.
 1. Selecteer **[!UICONTROL Quick Publish]** op de werkbalk.
 
-   Zie ook [ het Beheer van de Publicatie van het Gebruik met Experience Manager Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=nl-NL#page-authoring).
+   Zie ook [&#x200B; het Beheer van de Publicatie van het Gebruik met Experience Manager Sites &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=nl-NL#page-authoring).
 
    U kunt desgewenst de gepubliceerde video op uw YouTube-kanaal verifiëren.
 
@@ -418,7 +418,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 
 U kunt optioneel de voortgang van het publiceren van YouTube (of het ongedaan maken van het publiceren) volgen.
 
-Zie [ video het coderen van de Monitor en YouTube het publiceren vooruitgang ](#monitoring-video-encoding-and-youtube-publishing-progress).
+Zie [&#x200B; video het coderen van de Monitor en YouTube het publiceren vooruitgang &#x200B;](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 De het publiceren tijden kunnen zeer afhankelijk van talrijke factoren variëren die het formaat van uw primaire bronvideo, dossiergrootte, en uploadverkeer omvatten. Het publicatieproces kan een paar minuten tot enkele uren duren. Bovendien worden indelingen met een hogere resolutie veel langzamer gerenderd. Het duurt bijvoorbeeld langer om 720p en 1080p weer te geven dan 480p.
 
@@ -454,7 +454,7 @@ Wanneer u de publicatie van een video-element in Experience Manager ongedaan maa
 >
 >Experience Manager gebruikt de **[!UICONTROL Unpublish from YouTube]** -workflow om inhoud uit YouTube te verwijderen. Hiermee kunt u de voortgang volgen en eventuele foutgegevens weergeven.
 >
->Zie [ video het coderen van de Monitor en YouTube het publiceren vooruitgang ](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Zie [&#x200B; video het coderen van de Monitor en YouTube het publiceren vooruitgang &#x200B;](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **unpublish video&#39;s om hen uit YouTube te verwijderen:**
 
@@ -477,25 +477,25 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
 
    * In de kaartweergave wordt de voortgang van de videocodering met een percentage weergegeven op het element. Als er een fout optreedt, wordt deze informatie ook weergegeven op het element.
 
-   ![ chlimage_1-429 ](/help/assets/dynamic-media/assets/chlimage_1-429.png)
+   ![&#x200B; chlimage_1-429 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-429.png)
 
    * In de lijstweergave wordt de voortgang van de videocodering weergegeven in de kolom **[!UICONTROL Processing Status]** . Als er een fout is, toont dit bericht in die zelfde kolom.
 
-   ![ chlimage_1-430 ](/help/assets/dynamic-media/assets/chlimage_1-430.png)
+   ![&#x200B; chlimage_1-430 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-430.png)
 
    Deze kolom wordt niet standaard weergegeven. Als u de kolom wilt inschakelen, selecteert u **[!UICONTROL View Settings]** in de vervolgkeuzelijst Weergaven en voegt u de kolom **[!UICONTROL Processing Status]** toe en selecteert u **[!UICONTROL Update]** .
 
-   ![ chlimage_1-431 ](/help/assets/dynamic-media/assets/chlimage_1-431.png)
+   ![&#x200B; chlimage_1-431 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
 1. De voortgang van de elementen weergeven. Wanneer u een element selecteert, opent u het keuzemenu en selecteert u **[!UICONTROL Timeline]** . Selecteer **[!UICONTROL Workflows]** als u het wilt beperken tot workflowactiviteiten zoals coderen of YouTube publiceren.
 
-   ![ chlimage_1-432 ](/help/assets/dynamic-media/assets/chlimage_1-432.png)
+   ![&#x200B; chlimage_1-432 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-432.png)
 
    Workflowinformatie, zoals codering, wordt weergegeven in de tijdlijn. Voor YouTube-publicatie bevat de tijdlijn van de workflow ook de naam van het YouTube-kanaal en de YouTube-video-URL. Bovendien ziet u eventuele foutmeldingen in de tijdlijn van de workflow nadat het publiceren is voltooid.
 
    >[!NOTE]
    >
-   >Het kan lange tijd voor mislukking/foutenmeldingen duren om definitief te worden geregistreerd toe te schrijven aan veelvoudige werkschemeconfiguraties op **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [ https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
+   >Het kan lange tijd voor mislukking/foutenmeldingen duren om definitief te worden geregistreerd toe te schrijven aan veelvoudige werkschemeconfiguraties op **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [&#x200B; https://localhost:4502/system/console/configMgr &#x200B;](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    >
    >* Configuratie Apache Sling-taakwachtrij
    >* Adobe Granite Workflow External Process Job Handler
@@ -509,13 +509,13 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
    >
    >U hebt beheerrechten nodig om het menu **[!UICONTROL Tools]** te openen.
 
-   ![ chlimage_1-433 ](/help/assets/dynamic-media/assets/chlimage_1-433.png)
+   ![&#x200B; chlimage_1-433 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
    Selecteer de instantie en selecteer **[!UICONTROL Open History]** .
 
-   ![ chlimage_1-434 ](/help/assets/dynamic-media/assets/chlimage_1-434.png)
+   ![&#x200B; chlimage_1-434 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-434.png)
 
-   Vanuit het gebied Workflowinstanties kunt u workflows ook opschorten, beëindigen of hernoemen. Zie [ werkschema&#39;s ](/help/sites-cloud/authoring/workflows/overview.md) voor meer informatie beheren.
+   Vanuit het gebied Workflowinstanties kunt u workflows ook opschorten, beëindigen of hernoemen. Zie [&#x200B; werkschema&#39;s &#x200B;](/help/sites-cloud/authoring/workflows/overview.md) voor meer informatie beheren.
 
 1. Voor mislukte taken raadpleegt u de beschikbare workflowfouten in **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Failures]**. De lijst **[!UICONTROL Workflow Failure]** bevat alle mislukte workflowactiviteiten.
 
@@ -523,11 +523,11 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
    >
    >U hebt beheerrechten nodig om het menu **[!UICONTROL Tools]** te openen.
 
-   ![ chlimage_1-435 ](/help/assets/dynamic-media/assets/chlimage_1-435.png)
+   ![&#x200B; chlimage_1-435 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   >Het kan lange tijd voor het foutenbericht duren om definitief te worden geregistreerd toe te schrijven aan veelvoudige werkschemeconfiguraties op **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [ https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
+   >Het kan lange tijd voor het foutenbericht duren om definitief te worden geregistreerd toe te schrijven aan veelvoudige werkschemeconfiguraties op **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [&#x200B; https://localhost:4502/system/console/configMgr &#x200B;](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    >
    >* Configuratie Apache Sling-taakwachtrij
    >* Adobe Granite Workflow External Process Job Handler
@@ -541,9 +541,9 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
    >
    >U hebt beheerrechten nodig om het menu **[!UICONTROL Tools]** te openen.
 
-   ![ chlimage_1-436 ](/help/assets/dynamic-media/assets/chlimage_1-436.png)
+   ![&#x200B; chlimage_1-436 &#x200B;](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
-1. U ontvangt e-mailmeldingen over afgebroken of mislukte workflowtaken. Deze e-mailberichten kunnen door een beheerder worden geconfigureerd. Zie [ e-mailberichten ](#configuring-e-mail-notifications) vormen.
+1. U ontvangt e-mailmeldingen over afgebroken of mislukte workflowtaken. Deze e-mailberichten kunnen door een beheerder worden geconfigureerd. Zie [&#x200B; e-mailberichten &#x200B;](#configuring-e-mail-notifications) vormen.
 
 <!-- EMAIL NOT AVAILABLE IN SKYLINE
 
@@ -595,17 +595,17 @@ For YouTube publishing jobs, do the following:
 
 Met [!DNL Experience Manager] als een [!DNL Cloud Service] kunt u standaardtranscodering van MP4-videobestanden uitvoeren met behulp van Profielen verwerken. Met deze functie kunt u niet alleen een MP4-videobestand uploaden, maar ook een voorvertoning weergeven en schalen.
 
-![ Verwerkingsprofiel maken voor videotranscodering in [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
+![&#x200B; Verwerkingsprofiel maken voor videotranscodering in [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *Cijfer: Een Profiel van de Verwerking voor videotranscodering in [!DNL Experience Manager].*
 
 Als u alleen de breedte of alleen de hoogte opgeeft en het andere veld leeg laat, behouden de uitvoeringen de hoogte-breedteverhouding. H.264-videocodec is beschikbaar voor transcodering.
 
-Als u elementen wilt verwerken met een verwerkingsprofiel, voegt u een profiel toe aan een map. Zie [ profielen van de gebruiksverwerking om activa ](/help/assets/asset-microservices-configure-and-use.md#use-profiles) te verwerken.
+Als u elementen wilt verwerken met een verwerkingsprofiel, voegt u een profiel toe aan een map. Zie [&#x200B; profielen van de gebruiksverwerking om activa &#x200B;](/help/assets/asset-microservices-configure-and-use.md#use-profiles) te verwerken.
 
 ## Video-elementen notities aanbrengen {#annotate-video-assets}
 
-U kunt notities toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Voor details, zie [ het leiden videoactiva ](manage-video-assets.md).
+U kunt notities toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Voor details, zie [&#x200B; het leiden videoactiva &#x200B;](manage-video-assets.md).
 
 >[!NOTE]
 >
@@ -650,5 +650,5 @@ U kunt notities toevoegen aan video-elementen. Tijdens het annoteren van video&#
 
 >[!MORELIKETHIS]
 >
->* [ Dynamische de videodocumentatie van Media ](/help/assets/dynamic-media/video.md).
->* [ ken meer over gebruik, types, en configuratie van verwerkingsprofielen ](/help/assets/asset-microservices-configure-and-use.md).
+>* [&#x200B; Dynamische de videodocumentatie van Media &#x200B;](/help/assets/dynamic-media/video.md).
+>* [&#x200B; ken meer over gebruik, types, en configuratie van verwerkingsprofielen &#x200B;](/help/assets/asset-microservices-configure-and-use.md).

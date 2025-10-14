@@ -23,19 +23,19 @@ Met dit hulpprogramma kunnen AEM-ontwikkelaars bestaande AEM-workflows voor de v
 
 ## Ondersteunde workflows {#migration-support-for-workflows}
 
-De workflows hebben een verschillend niveau van migratieondersteuning. Zie deze [ lijst van specifieke werkschema&#39;s ](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties). De workflows worden ingedeeld in de volgende categorieën op basis van de geleverde ondersteuning. Adobe ondersteunt de migratie van de workflows die in de categorieën `SUPPORTED` , `REQUIRED` of `OPTIONAL` worden vermeld. De workflowstappen die in de andere categorieën worden vermeld, worden niet ondersteund.
+De workflows hebben een verschillend niveau van migratieondersteuning. Zie deze [&#x200B; lijst van specifieke werkschema&#39;s &#x200B;](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties). De workflows worden ingedeeld in de volgende categorieën op basis van de geleverde ondersteuning. Adobe ondersteunt de migratie van de workflows die in de categorieën `SUPPORTED` , `REQUIRED` of `OPTIONAL` worden vermeld. De workflowstappen die in de andere categorieën worden vermeld, worden niet ondersteund.
 
 * `SUPPORTED`: ondersteunde functionaliteit in [!DNL Experience Manager Assets] as a Cloud Service.
 * `OPTIONAL`: optionele functionaliteit in [!DNL Experience Manager Assets] as a Cloud Service.
 * `REQUIRED`: Een vereiste stap die wordt toegevoegd aan de workflow.
 * `UNNECESSARY`: functionaliteit is niet nodig in [!DNL Experience Manager Assets] as a Cloud Service.
-* `NUI_OOTB`: Functionaliteit die door [ wordt verstrekt de Dienst van de Asset compute ](/help/assets/asset-microservices-configure-and-use.md).
+* `NUI_OOTB`: Functionaliteit die door [&#x200B; wordt verstrekt de Dienst van de Asset compute &#x200B;](/help/assets/asset-microservices-configure-and-use.md).
 * `DMS7_OOTB`: Functionaliteit die wordt geboden door standaard [!DNL Dynamic Media] -connectors.
-* `NUI_MIGRATED`: Gegigreerd aan a [ verwerkingsprofiel voor de Dienst van de Asset compute ](/help/assets/asset-microservices-configure-and-use.md).
+* `NUI_MIGRATED`: Gegigreerd aan a [&#x200B; verwerkingsprofiel voor de Dienst van de Asset compute &#x200B;](/help/assets/asset-microservices-configure-and-use.md).
 * `UNSUPPORTED`: wordt momenteel niet ondersteund in [!DNL Experience Manager Assets] as a Cloud Service.
 
 ## Hulpprogramma voor migratie van bedrijfsmiddelen gebruiken {#use-workflow-migrator}
 
-* **[!DNL Adobe I/O]CLI**: Adobe raadt u aan het hulpmiddel Asset Workflow Migration te gebruiken via `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] als een [!DNL Cloud Service] code refactoring plugin voor de [!DNL Adobe I/O] CLI). Leren om de stop te installeren en te gebruiken, zie [ middel van de it: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
+* **[!DNL Adobe I/O]CLI**: Adobe raadt u aan het hulpmiddel Asset Workflow Migration te gebruiken via `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] als een [!DNL Cloud Service] code refactoring plugin voor de [!DNL Adobe I/O] CLI). Leren om de stop te installeren en te gebruiken, zie [&#x200B; middel van de it: ao-cli-stop-aem-wolk-dienst-migratie &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
 
-* **Standalone nut**: Het hulpmiddel van de Migratie van het Werkschema van Activa kan ook als standalone nut worden uitgevoerd. Om over het installeren van en het bouwen van code van de bron te leren, zie [ middel van de Git: [!DNL Experience Manager Assets]  als a  [!DNL Cloud Service]  - werkschemamigratie ](https://github.com/adobe/aem-cloud-migration).
+* **Standalone nut**: Het hulpmiddel van de Migratie van het Werkschema van Activa kan ook als standalone nut worden uitgevoerd. Om over het installeren van en het bouwen van code van de bron te leren, zie [&#x200B; middel van de Git: [!DNL Experience Manager Assets]  als a  [!DNL Cloud Service]  - werkschemamigratie &#x200B;](https://github.com/adobe/aem-cloud-migration).

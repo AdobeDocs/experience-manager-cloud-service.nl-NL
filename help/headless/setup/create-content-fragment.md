@@ -17,7 +17,7 @@ Leer hoe u AEM inhoudsfragmenten kunt gebruiken voor het ontwerpen, maken, beher
 
 ## Wat zijn inhoudsfragmenten? {#what-are-content-fragments}
 
-[ nu dat u een activa omslag ](create-assets-folder.md) hebt gecreeerd waar u uw Fragmenten van de Inhoud kunt opslaan, kunt u de fragmenten nu tot stand brengen!
+[&#x200B; nu dat u een activa omslag &#x200B;](create-assets-folder.md) hebt gecreeerd waar u uw Fragmenten van de Inhoud kunt opslaan, kunt u de fragmenten nu tot stand brengen!
 
 Met inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties en via meerdere kanalen.
 
@@ -29,28 +29,28 @@ Inhoudsauteurs maken een willekeurig aantal Inhoudsfragmenten om de inhoud weer 
 
 1. Logboek in AEM as a Cloud Service en van het belangrijkste menu selecteert **Navigatie** > **de Fragmenten van de Inhoud**.
 
-1. Selecteer de [ omslag u eerder ](create-assets-folder.md) creeerde.
+1. Selecteer de [&#x200B; omslag u eerder &#x200B;](create-assets-folder.md) creeerde.
 1. Selecteer **creeer**.
 1. Het maken van een inhoudsfragment wordt weergegeven als een dialoogvenster.
 Selecteer de locatie en het model waarmee u het inhoudsfragment wilt maken.
 
-   * De beschikbare modellen hangen van de [**Configuratie van de Wolk** af u voor de activa omslag ](create-assets-folder.md) bepaalde waarin u het Fragment van de Inhoud creeert.
+   * De beschikbare modellen hangen van de [**Configuratie van de Wolk** af u voor de activa omslag &#x200B;](create-assets-folder.md) bepaalde waarin u het Fragment van de Inhoud creeert.
    * Als uw model niet beschikbaar is, controleert u de configuratie van de map Assets.
 
    Voeg de titel, de naam en, indien nodig, de beschrijving toe.
 
-   ![ creeer de Nieuwe dialoog van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+   ![&#x200B; creeer de Nieuwe dialoog van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. Selecteer **creeer** of **creeer en open**.
 
 Inhoudsfragmenten kunnen verwijzen naar andere inhoudsfragmenten, waarbij zo nodig een geneste inhoudsstructuur mogelijk is.
 
-Inhoudsfragmenten kunnen ook verwijzen naar andere elementen in AEM. [ Deze activa moeten in AEM ](/help/assets/manage-digital-assets.md) worden opgeslagen alvorens een het van verwijzingen voorzien Fragment van de Inhoud te creëren.
+Inhoudsfragmenten kunnen ook verwijzen naar andere elementen in AEM. [&#x200B; Deze activa moeten in AEM &#x200B;](/help/assets/manage-digital-assets.md) worden opgeslagen alvorens een het van verwijzingen voorzien Fragment van de Inhoud te creëren.
 
 ## Volgende stappen {#next-steps}
 
-Nu u een Fragment van de Inhoud hebt gecreeerd, kunt u zich op het definitieve deel van het begonnen worden gids bewegen en [ creeer API verzoeken om tot inhoudsfragmenten toegang te hebben en te leveren ](create-api-request.md).
+Nu u een Fragment van de Inhoud hebt gecreeerd, kunt u zich op het definitieve deel van het begonnen worden gids bewegen en [&#x200B; creeer API verzoeken om tot inhoudsfragmenten toegang te hebben en te leveren &#x200B;](create-api-request.md).
 
 >[!TIP]
 >
->Voor volledige details over het beheren van de Fragmenten van de Inhoud, zie de [ documentatie van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md).
+>Voor volledige details over het beheren van de Fragmenten van de Inhoud, zie de [&#x200B; documentatie van de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md).

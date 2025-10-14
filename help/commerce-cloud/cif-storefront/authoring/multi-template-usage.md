@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 > Deze functionaliteit werkt alleen voor winkeliers die zijn gebaseerd op CIF (bijvoorbeeld Venia).
 
-[ AEM CIF Core Components ](https://github.com/adobe/aem-core-cif-components) verstrekt inhoudsauteurs de capaciteit om extra categorie en productpagina&#39;s tot stand te brengen. Deze pagina&#39;s kunnen met extra marketing inhoud worden verrijkt en worden gevormd om specifieke categorieën en producten te richten. De volgende video doorloopt de opstelling van deze eigenschap.
+[&#x200B; AEM CIF Core Components &#x200B;](https://github.com/adobe/aem-core-cif-components) verstrekt inhoudsauteurs de capaciteit om extra categorie en productpagina&#39;s tot stand te brengen. Deze pagina&#39;s kunnen met extra marketing inhoud worden verrijkt en worden gevormd om specifieke categorieën en producten te richten. De volgende video doorloopt de opstelling van deze eigenschap.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
@@ -35,8 +35,8 @@ Specifieke productpagina&#39;s kunnen worden geselecteerd door een sku of door d
 Meer informatie over dit onderwerp vindt u in de volgende bronnen:
 
 - [Geavanceerde URL-configuraties](/help/commerce-cloud/cif-storefront/configuring/advanced-url-configuration.md)
-- [ de Componenten van de Kern van AEM CIF - Configuratie van de multiCataloguspagina ](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [&#x200B; de Componenten van de Kern van AEM CIF - Configuratie van de multiCataloguspagina &#x200B;](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## Gerelateerde bronnen {#related}
 
-Het is ook mogelijk om bepaalde gebieden van een pagina dynamisch als doel in te stellen en dezelfde sjabloon opnieuw te gebruiken. Leer hoe te [ productgegevens met de bijbehorende inhoud van AEM verrijken.](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)
+Het is ook mogelijk om bepaalde gebieden van een pagina dynamisch als doel in te stellen en dezelfde sjabloon opnieuw te gebruiken. Leer hoe te [&#x200B; productgegevens met de bijbehorende inhoud van AEM verrijken.](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)

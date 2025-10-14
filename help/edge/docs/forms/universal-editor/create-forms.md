@@ -35,10 +35,10 @@ Zorg ervoor dat aan de volgende voorwaarden is voldaan voordat u verdergaat:
 - **AEM Forms as a Cloud Service**: Een actieve auteursinstantie met een vergunning van Forms.
 - **Rekening GitHub**: Persoonlijke of organisatorische rekening voor bewaarplaatsbeheer.
 - **Opstelling van de Bewaarplaats**: Kies één van het volgende:
-   - **Nieuw Project**: [ creeer een nieuw project van AEM met het AanpassingsBlok van Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block). De opslagplaats is vooraf geconfigureerd voor Edge Delivery Services.
-   - **Bestaand Project**: [ voeg het Aangepaste Blok van Forms aan een bestaande bewaarplaats ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) toe en werk de configuratie bij.
+   - **Nieuw Project**: [&#x200B; creeer een nieuw project van AEM met het AanpassingsBlok van Forms &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block). De opslagplaats is vooraf geconfigureerd voor Edge Delivery Services.
+   - **Bestaand Project**: [&#x200B; voeg het Aangepaste Blok van Forms aan een bestaande bewaarplaats &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) toe en werk de configuratie bij.
 
-- **AEM-GitHub Verbinding**: [ Vestig een verbinding ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) tussen uw instantie van AEM en bewaarplaats GitHub.
+- **AEM-GitHub Verbinding**: [&#x200B; Vestig een verbinding &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) tussen uw instantie van AEM en bewaarplaats GitHub.
 - **Edge Delivery Services**: Zorg ervoor de bewaarplaats voor automatische plaatsing wordt gevormd.
 - **Toestemmingen**: Verifieer u de noodzakelijke toegangsrechten voor vormverwezenlijking en het publiceren hebt.
 
@@ -50,9 +50,9 @@ Zorg ervoor dat aan de volgende voorwaarden is voldaan voordat u verdergaat:
 
 Het proces bestaat uit drie hoofdfasen:
 
-- **Fase 1:** [ de Creatie van de Vorm ](#step-1-form-creation)
-- **Fase 2:** [ Authoring en Ontwerp van de Vorm ](#step-2-form-authoring-and-design)
-- **Fase 3:** [ Configuratie en het Publiceren ](#step-3-configuration-and-publishing)
+- **Fase 1:** [&#x200B; de Creatie van de Vorm &#x200B;](#step-1-form-creation)
+- **Fase 2:** [&#x200B; Authoring en Ontwerp van de Vorm &#x200B;](#step-2-form-authoring-and-design)
+- **Fase 3:** [&#x200B; Configuratie en het Publiceren &#x200B;](#step-3-configuration-and-publishing)
 
 Elke fase omvat bevestigingsstappen om correcte opstelling te bevestigen.
 
@@ -68,7 +68,7 @@ Elke fase omvat bevestigingsstappen om correcte opstelling te bevestigen.
    - In het **Source** lusje, selecteer een **op Edge Delivery Services-Gebaseerde malplaatje**.
    - **creeer** knoop wordt toegelaten.
 
-     ![ creeer EDS Forms ](/help/edge/assets/create-eds-forms.png)
+     ![&#x200B; creeer EDS Forms &#x200B;](/help/edge/assets/create-eds-forms.png)
 
 1. **vorm Opties (Facultatief)**
    - **Gegevens Source tabel**: Selecteer gegevensintegratie indien vereist.
@@ -82,7 +82,7 @@ Elke fase omvat bevestigingsstappen om correcte opstelling te bevestigen.
       - **Titel**: De naam van de vertoning voor uw vorm.
       - **GitHub URL**: Bewaarplaats URL (bijvoorbeeld, `https://github.com/your-org/your-repo`).
 
-   ![ creeer de Tovenaar van de Vorm ](/help/edge/assets/create-form-wizard.png)
+   ![&#x200B; creeer de Tovenaar van de Vorm &#x200B;](/help/edge/assets/create-form-wizard.png)
 
 1. **Bevestiging**
    - Na het klikken **creeer**, verifieer:
@@ -91,7 +91,7 @@ Elke fase omvat bevestigingsstappen om correcte opstelling te bevestigen.
       - Het componentpalet is beschikbaar.
       - Het canvas van het formulier is zichtbaar.
 
-   ![ Universele Interface van de Redacteur ](/help/edge/assets/author-form.png)
+   ![&#x200B; Universele Interface van de Redacteur &#x200B;](/help/edge/assets/author-form.png)
 
 **Resultaat:** de vorm is klaar voor creatie in de Universele Redacteur.
 
@@ -102,21 +102,21 @@ Elke fase omvat bevestigingsstappen om correcte opstelling te bevestigen.
    - Open de Content browser in Universal Editor.
    - Navigeer aan de **Aangepaste component van de Vorm** in de inhoudsboom.
 
-   ![ de Navigatie van de Boom van 0&rbrace; Inhoud](/help/edge/assets/content-tree.png)
+   ![&#x200B; de Navigatie van de Boom van 0&rbrace; Inhoud](/help/edge/assets/content-tree.png)
 
 1. **voeg de Gebieden van de Vorm** toe
    - Klik **toevoegen** pictogram om de componentenbibliotheek te openen.
    - Selecteer componenten van de **Adaptieve lijst van Componenten van de Vorm**.
    - Sleep componenten naar het canvas van het formulier.
 
-   ![ voegt Componenten ](/help/edge/assets/add-component.png) toe
+   ![&#x200B; voegt Componenten &#x200B;](/help/edge/assets/add-component.png) toe
 
 1. **Ontwerp de Vorm**
    - Veldeigenschappen configureren in het deelvenster Eigenschappen.
    - Stel validatieregels en -gedrag in.
    - Pas de opmaak en lay-out naar wens aan.
 
-   ![ Voltooide Vorm van de Registratie ](/help/edge/assets/contact-us.png)
+   ![&#x200B; Voltooide Vorm van de Registratie &#x200B;](/help/edge/assets/contact-us.png)
 
 #### Validatie
 
@@ -127,8 +127,8 @@ Elke fase omvat bevestigingsstappen om correcte opstelling te bevestigen.
 
 #### Volgende stappen
 
-- [ vormen voorlegt acties ](/help/edge/docs/forms/universal-editor/submit-action.md) voor gegevens behandeling.
-- [ Universele gids van de Redacteur ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) voor geavanceerde eigenschappen.
+- [&#x200B; vormen voorlegt acties &#x200B;](/help/edge/docs/forms/universal-editor/submit-action.md) voor gegevens behandeling.
+- [&#x200B; Universele gids van de Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) voor geavanceerde eigenschappen.
 
 ### Stap 3: Configuratie en publicatie
 
@@ -144,7 +144,7 @@ Configureer Edge Delivery Services en publiceer uw formulier.
 - De configuratie bevestigen wordt weergegeven in de instellingen van het formulier.
 - Zorg ervoor dat de GitHub-URL correct is gekoppeld.
 
-![ Automatische Configuratie EDS ](/help/edge/assets/aem-instance-eds-configuration.png)
+![&#x200B; Automatische Configuratie EDS &#x200B;](/help/edge/assets/aem-instance-eds-configuration.png)
 
 #### Het formulier publiceren
 
@@ -152,7 +152,7 @@ Configureer Edge Delivery Services en publiceer uw formulier.
 2. Bevestig het publiceren succes in de dialoog.
 3. Maak een notitie van de gegenereerde URL&#39;s voor gefaseerde en live versies.
 
-   ![ Universele Redacteur publiceert ](/help/edge/assets/publish-form.png)
+   ![&#x200B; Universele Redacteur publiceert &#x200B;](/help/edge/assets/publish-form.png)
 
 - [Handleiding voor publiceren](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
@@ -193,15 +193,15 @@ Voorbeeld voor formulier `contact-us` in gegevensopslagruimte `forms-project` on
 - **Gelaagd (.page):** Laatste veranderingen voor het testen.
 - **Levend (.live):** Gepubliceerde inhoud voor productie.
 
-![ Structuur URL ](/help/edge/docs/forms/universal-editor/assets/url-structure.svg)
+![&#x200B; Structuur URL &#x200B;](/help/edge/docs/forms/universal-editor/assets/url-structure.svg)
 *de structuurindeling van Edge Delivery Services van URL*
 
 #### Visuele voorbeelden
 
 **Malplaatje van Edge Delivery Services:**
 
-- Staged: ![ Van de Registratie vorm gestage versie ](/help/forms/assets/registration-form-staged-version.png)
-- Levend: ![ de vorm van de Registratie levende versie ](/help/forms/assets/registration-form-live-version.png)
+- Staged: ![&#x200B; Van de Registratie vorm gestage versie &#x200B;](/help/forms/assets/registration-form-staged-version.png)
+- Levend: ![&#x200B; de vorm van de Registratie levende versie &#x200B;](/help/forms/assets/registration-form-live-version.png)
 
 ## Problemen oplossen
 
@@ -291,7 +291,7 @@ Als er problemen blijven optreden:
 
 1. Controleer de Adobe Experience Cloud-servicestatus.
 2. Herzie {de documentatie van 0} Edge Delivery Services [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=nl-NL)
-3. Bezoek [ Gemeenschap van de Liga van de Ervaring van Adobe ](https://experienceleaguecommunities.adobe.com/).
+3. Bezoek [&#x200B; Gemeenschap van de Liga van de Ervaring van Adobe &#x200B;](https://experienceleaguecommunities.adobe.com/).
 4. Neem contact op met de klantenservice van Adobe.
 
 +++
@@ -300,8 +300,8 @@ Als er problemen blijven optreden:
 
 Nadat u het maken en publiceren van formulieren hebt voltooid, kunt u het volgende overwegen:
 
-- [ vormt voorleggen Acties ](/help/edge/docs/forms/universal-editor/submit-action.md): De opstelling gegevens die en integratie behandelen.
-- [ Modellen van de Gegevens van de Vorm ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md): Verbind vormen met achterste gegevensbronnen.
-- [ Beste praktijken van Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=nl-NL): Maximaliseer prestaties.
-- [ Analytics van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): De vormprestaties en gebruikersgedrag van het spoor.
+- [&#x200B; vormt voorleggen Acties &#x200B;](/help/edge/docs/forms/universal-editor/submit-action.md): De opstelling gegevens die en integratie behandelen.
+- [&#x200B; Modellen van de Gegevens van de Vorm &#x200B;](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md): Verbind vormen met achterste gegevensbronnen.
+- [&#x200B; Beste praktijken van Edge Delivery Services &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=nl-NL): Maximaliseer prestaties.
+- [&#x200B; Analytics van de Vorm &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): De vormprestaties en gebruikersgedrag van het spoor.
 

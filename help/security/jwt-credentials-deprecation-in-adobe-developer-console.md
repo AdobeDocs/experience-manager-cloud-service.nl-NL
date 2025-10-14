@@ -15,19 +15,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM 6.5 klanten zou [ de vergelijkbare documentatie voor AEM 6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console) voor meer informatie moeten van verwijzingen voorzien.
+>AEM 6.5 klanten zou [&#x200B; de vergelijkbare documentatie voor AEM 6.5 &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console) voor meer informatie moeten van verwijzingen voorzien.
 
-De klanten van Adobe gebruiken [ Adobe Developer Console ](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Één van die credentietypes, de geloofsbrieven van de Rekening van de Dienst (JWT), is afgekeurd ten gunste van de geloofsbrieven van Server-aan-Server OAuth. De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 3 juni 2024 worden gecreeerd, en de bestaande geloofsbrieven van JWT zullen niet op of na 30 juni 2025 werken. U kunt [ lezen over de veroudering ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+De klanten van Adobe gebruiken [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Één van die credentietypes, de geloofsbrieven van de Rekening van de Dienst (JWT), is afgekeurd ten gunste van de geloofsbrieven van Server-aan-Server OAuth. De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 3 juni 2024 worden gecreeerd, en de bestaande geloofsbrieven van JWT zullen niet op of na 30 juni 2025 werken. U kunt [&#x200B; lezen over de veroudering &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
 Dit artikel bevat een extra context voor de manier waarop AEM as a Cloud Service de afleiding moet verwerken.
 
 Het belangrijkste voordeel is dat AEM nu de nieuwe OAuth Server-to-Server referenties voor AEM as a Cloud Service ondersteunt. Mogelijk hebt u een e-mail ontvangen met instructies voor het migreren van uw JWT-gegevens. Deze migratie kan nu worden uitgevoerd.
 
-In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-referenties (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, nu AEM deze ondersteunt. [ las hoe ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) om de geloofsbrieven te migreren.
+In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-referenties (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, nu AEM deze ondersteunt. [&#x200B; las hoe &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) om de geloofsbrieven te migreren.
 
 >[!NOTE]
 >
->[**AEM** Developer Console ](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) (neem nota van **AEM** in de naam, die het van **Adobe** Developer Console) onderscheidt verstrekt een nut om [ tokens te produceren JWT ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) die voor server-aan-server APIs worden gebruikt. Deze gegevens zijn niet afgekeurd en kunnen ook in de toekomst worden gebruikt.
+>[**AEM** Developer Console &#x200B;](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) (neem nota van **AEM** in de naam, die het van **Adobe** Developer Console) onderscheidt verstrekt een nut om [&#x200B; tokens te produceren JWT &#x200B;](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) die voor server-aan-server APIs worden gebruikt. Deze gegevens zijn niet afgekeurd en kunnen ook in de toekomst worden gebruikt.
 
 ## AEM integreren met andere Adobe-oplossingen {#integrating-aem-with-other-adobe-solutions}
 
@@ -48,7 +48,7 @@ Zie &lbrace;de Integraties IMS van de Opstelling voor AEM as a Cloud Service [&#
 
 **Relevante versies van AEM**: AEM as a Cloud Service
 
-De klanten creëren de projecten van Adobe Developer Console zodat kunnen zij [ Cloud Manager APIs ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) aanhalen. De geloofsbrieven in het project van Adobe Developer zouden aan het server-aan-Server referentie type OAuth moeten worden gemigreerd alvorens de afgekeurde geloofsbrieven JWT in juni 2025 verlopen.
+De klanten creëren de projecten van Adobe Developer Console zodat kunnen zij [&#x200B; Cloud Manager APIs &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) aanhalen. De geloofsbrieven in het project van Adobe Developer zouden aan het server-aan-Server referentie type OAuth moeten worden gemigreerd alvorens de afgekeurde geloofsbrieven JWT in juni 2025 verlopen.
 
 ## Automatisch gegenereerde projecten {#autogen-projects}
 
@@ -58,7 +58,7 @@ De klanten creëren de projecten van Adobe Developer Console zodat kunnen zij [ 
 
 Als Cloud Manager AEM as a Cloud Service-omgevingen aanbiedt, wordt automatisch een Adobe Developer Console-project met JWT-referenties gegenereerd. Dit project is gemarkeerd als alleen-lezen, zoals in de onderstaande schermafbeelding wordt geïllustreerd. De klanten kunnen en zouden niet moeten proberen om deze projecten aan OAuth server-aan-Server geloofsbrieven te migreren. In plaats daarvan, zal Adobe deze projecten op zich migreren, alvorens de geloofsbrieven niet meer bruikbaar zijn.
 
-![ auto-geproduceerde projecten ](/help/security/assets/jwt-deprecation-autogen-projects.png)
+![&#x200B; auto-geproduceerde projecten &#x200B;](/help/security/assets/jwt-deprecation-autogen-projects.png)
 
 ## Veelgestelde vragen over automatisch gegenereerde projecten {#autogen-projects-faqs}
 
@@ -68,11 +68,11 @@ Deze sectie verstrekt antwoorden op de vaakst gestelde vragen over JWT geloofsve
 
 Navigeren naar de Adobe Developer Console | Sectie Projecten.  Automatisch gegenereerde AEM as a Cloud Service-projecten krijgen een vergrendelingspictogram met de id &#39;Automatisch gegenereerd&#39;.  Automatisch gegenereerde projecten volgen de indeling AEM-p#####-e####### en worden gemaakt door de gebruiker van een technische account.
 
-![ Automatisch geproduceerde Projecten ](/help/security/assets/jwt-alert.png)
+![&#x200B; Automatisch geproduceerde Projecten &#x200B;](/help/security/assets/jwt-alert.png)
 
 **wat als wij kwesties met onze auto-geproduceerde projecten ontmoeten?**
 
-De Zorg van de Klant van het contact [ Adobe ](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html).
+De Zorg van de Klant van het contact [&#x200B; Adobe &#x200B;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html).
 
 **zou ik vooruit moeten gaan en onze auto-geproduceerde projecten migreren?**
 
@@ -86,8 +86,8 @@ Adobe zal in het eerste kwartaal van 2025 een gefaseerde migratieaanpak starten,
 
 Automatisch gegenereerde projectintegratie werkt niet meer als ze in juni 2025 niet naar OAuth worden gemigreerd.
 
-Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
+Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [&#x200B; recentste Versie van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
 
 **kan ik aan een gesteunde versie OAuth bevorderen zonder mijn Versie van AEM as a Cloud Service AEM te bevorderen?**
 
-Nee. Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
+Nee. Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [&#x200B; recentste Versie van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.

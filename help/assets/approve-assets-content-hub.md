@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Assets goedkeuren voor Content Hub {#approve-assets-content-hub}
 
-![ keur activa voor Content Hub ](assets/content-hub-approve-assets.png) goed
+![&#x200B; keur activa voor Content Hub &#x200B;](assets/content-hub-approve-assets.png) goed
 
 >[!AVAILABILITY]
 >
@@ -29,7 +29,7 @@ Voordat u begint, moet u beschikken over:
 
 * Toegang tot AEM Assets as a Cloud Service
 
-* Schrijf toestemmingen om activa meta-gegevens uit te geven om het **[!UICONTROL Status]** gebied beschikbaar in [ activa eigenschappen ](/help/assets/manage-organize-assets-view.md##manage-asset-status) voor een activa uit te geven.
+* Schrijf toestemmingen om activa meta-gegevens uit te geven om het **[!UICONTROL Status]** gebied beschikbaar in [&#x200B; activa eigenschappen &#x200B;](/help/assets/manage-organize-assets-view.md##manage-asset-status) voor een activa uit te geven.
 
 ## Assets goedkeuren voor Content Hub{#approve-assets-for-content-hub}
 
@@ -48,7 +48,7 @@ De elementstatus instellen op `approved` in de Assets-weergave in AEM as a Cloud
 
    >[!VIDEO](https://video.tv.adobe.com/v/3433172)
 
-Als u activa gebruikend mening Admin moet goedkeuren, zie [ activa goedkeuren gebruikend mening Admin ](/help/assets/approve-assets.md#approve-assets).
+Als u activa gebruikend mening Admin moet goedkeuren, zie [&#x200B; activa goedkeuren gebruikend mening Admin &#x200B;](/help/assets/approve-assets.md#approve-assets).
 
 ## Bulk activa voor Content Hub goedkeuren met de Assets-weergave {#bulk-approve-assets-content-hub}
 
@@ -74,26 +74,26 @@ Goedkeuringsdoel instellen:
 
 1. Als u **Goedgekeurd** in stap 2 selecteert, selecteer een goedkeuringsdoel. Mogelijke waarden zijn Delivery en Content Hub.
 
-   * **Levering** is de standaardoptie die in het drop-down menu wordt geselecteerd en het publiceert de activa aan zowel [ Dynamische Media met OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) en [ Content Hub ](/help/assets/product-overview.md), als allebei voor Experience Manager Assets worden toegelaten.
+   * **Levering** is de standaardoptie die in het drop-down menu wordt geselecteerd en het publiceert de activa aan zowel [&#x200B; Dynamische Media met OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) en [&#x200B; Content Hub &#x200B;](/help/assets/product-overview.md), als allebei voor Experience Manager Assets worden toegelaten.
 
    * Het selecteren van **Content Hub** publiceert enkel de activa aan Content Hub. Content Hub wordt alleen weergegeven als een optie als deze is ingeschakeld voor Experience Manager Assets.
 
    * Als u geen optie selecteert in de vervolgkeuzelijst, wordt de voor uw AEM as a Cloud Service-omgeving ingeschakelde standaardoptie automatisch toegepast op het element.
 
 
-   Voor meer informatie over de beschikbare opties, zie [ StandaardDoel van de Goedkeuring en publiceer bestemmingen voor goedgekeurde activa ](#default-approval-target-options-publish-destinations).
+   Voor meer informatie over de beschikbare opties, zie [&#x200B; StandaardDoel van de Goedkeuring en publiceer bestemmingen voor goedgekeurde activa &#x200B;](#default-approval-target-options-publish-destinations).
 
    >[!NOTE]
    >
    >Het instellen van een goedkeuringsdoel is een beperkte beschikbaarheidsfunctie. U kunt het toegelaten krijgen of onbruikbaar maken door een steunkaartje te creëren. Als u Dynamische media met OpenAPI hebt ingeschakeld, is deze standaard ingeschakeld.
 
-   ![ de status van de Goedkeuring ](/help/assets/assets/approval-status-delivery.png)
+   ![&#x200B; de status van de Goedkeuring &#x200B;](/help/assets/assets/approval-status-delivery.png)
 
 1. Geef andere elementeigenschappen op en klik op **[!UICONTROL Save]** .
 
 Enkele extra punten die u wilt noteren zijn:
 
-* Wanneer u niet de standaardmeta-gegevensvorm gebruikt en niet het **[!UICONTROL Approval Target]** gebied kunt bekijken, [ geef uw meta-gegevensvorm ](/help/assets/metadata-assets-view.md#metadata-forms) uit om het **[!UICONTROL Approval for]** gebied van de beschikbare componenten aan uw meta-gegevensvorm te slepen en klik **[!UICONTROL Save]**.
+* Wanneer u niet de standaardmeta-gegevensvorm gebruikt en niet het **[!UICONTROL Approval Target]** gebied kunt bekijken, [&#x200B; geef uw meta-gegevensvorm &#x200B;](/help/assets/metadata-assets-view.md#metadata-forms) uit om het **[!UICONTROL Approval for]** gebied van de beschikbare componenten aan uw meta-gegevensvorm te slepen en klik **[!UICONTROL Save]**.
 
 * Wanneer u het goedkeuringsdoel selecteert als `Content Hub` in de Assets-weergave, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie.
 
@@ -113,7 +113,7 @@ In de volgende tabel worden de voorwaarden weergegeven voor de weergave van de v
 Nadat u van de Assets-weergave naar de Admin-weergave bent overgeschakeld, kunt u mapinstellingen zodanig instellen dat alle nieuwe elementen die aan de map zijn toegevoegd, automatisch worden goedgekeurd.
 
 U kunt op de volgende manieren schakelen tussen de weergaven Beheer en Assets:
-![ Mijn overzicht van Workspace ](assets/assets-view.png)
+![&#x200B; Mijn overzicht van Workspace &#x200B;](assets/assets-view.png)
 
 Voer de volgende stappen uit om goedkeuring voor nieuw opgenomen elementen in [!DNL Experience Manager Admin view] te automatiseren:
 
@@ -148,12 +148,12 @@ Voer de volgende stappen uit om goedkeuring voor nieuw opgenomen elementen in [!
 
 ## Middelen beheren die met Content Hub zijn geüpload {#manage-assets-uploaded-using-content-hub}
 
-[ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen [ activa aan Content Hub ](/help/assets/upload-brand-approved-assets.md) of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
+[&#x200B; de gebruikers van Content Hub met rechten om activa &#x200B;](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen [&#x200B; activa aan Content Hub &#x200B;](/help/assets/upload-brand-approved-assets.md) of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
 
-De vertoning van activa die gebruikend Content Hub worden geupload hangt af van als u [ de auto-goedkeuringsknevel ](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) hebt toegelaten:
+De vertoning van activa die gebruikend Content Hub worden geupload hangt af van als u [&#x200B; de auto-goedkeuringsknevel &#x200B;](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) hebt toegelaten:
 
 * Als de schakeloptie **[!UICONTROL Auto-approval]** is ingeschakeld, zijn de elementen die u uploadt met Content Hub automatisch beschikbaar.
 
-* Als de schakeloptie **[!UICONTROL Auto-approval]** is uitgeschakeld, worden de elementen die u uploadt met Content Hub niet automatisch weergegeven. De middelen zijn beschikbaar in de map `hydrated-assets` van uw Assets as a Cloud Service-omgeving. Navigeer aan de omslag en [ bulkgeef ](#bulk-approve-assets-content-hub) het statuut van die activa `Approved` voor die activa uit om in Content Hub te tonen.
+* Als de schakeloptie **[!UICONTROL Auto-approval]** is uitgeschakeld, worden de elementen die u uploadt met Content Hub niet automatisch weergegeven. De middelen zijn beschikbaar in de map `hydrated-assets` van uw Assets as a Cloud Service-omgeving. Navigeer aan de omslag en [&#x200B; bulkgeef &#x200B;](#bulk-approve-assets-content-hub) het statuut van die activa `Approved` voor die activa uit om in Content Hub te tonen.
 
-![ Content Hub goedkeuringsproces ](/help/assets/assets/content-hub-approval.png)
+![&#x200B; Content Hub goedkeuringsproces &#x200B;](/help/assets/assets/content-hub-approval.png)

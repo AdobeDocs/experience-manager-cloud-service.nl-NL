@@ -21,7 +21,7 @@ Nadat een gebruiker een formulier heeft verzonden, is het van cruciaal belang da
 
 Het standaardgedrag van Adaptive Forms Block is om het volgende bedankbericht bij verzending weer te geven. Het bericht wordt boven aan het formulier weergegeven wanneer het formulier is verzonden.
 
-![ gebrek dank u bericht ](/help/edge/assets/thank-you-message.png)
+![&#x200B; gebrek dank u bericht &#x200B;](/help/edge/assets/thank-you-message.png)
 
 U hebt echter de flexibiliteit om deze ervaring af te stemmen op uw specifieke behoeften. U kunt onder andere de volgende opties kiezen:
 
@@ -30,7 +30,7 @@ U hebt echter de flexibiliteit om deze ervaring af te stemmen op uw specifieke b
 
 >[!NOTE]
 >
-> U kunt naar het volgende [ onderzoeksspreadsheet ](/help/edge/docs/forms/assets/enquiry.xlsx) verwijzen om te passen dankt u bericht volgens uw vereisten.
+> U kunt naar het volgende [&#x200B; onderzoeksspreadsheet &#x200B;](/help/edge/docs/forms/assets/enquiry.xlsx) verwijzen om te passen dankt u bericht volgens uw vereisten.
 
 ## Een aangepast bedankbericht configureren
 
@@ -41,13 +41,13 @@ Voer de onderstaande stappen uit om een aangepast bedankbericht voor uw Adaptive
 1. Ga naar uw Edge Deliver-projectmap op Microsoft SharePoint of Google Workspace en open uw spreadsheet.
 1. Voeg een aangepast bedankbericht toe in de kolom `value` voor het veldtype `submit` in de spreadsheet.
 
-   ![ Aangepast Thanku bericht ](/help/edge/docs/forms/assets/thankyou-custommessage.png)
+   ![&#x200B; Aangepast Thanku bericht &#x200B;](/help/edge/docs/forms/assets/thankyou-custommessage.png)
 
    Voeg bijvoorbeeld het bericht `Submission Successful!` in de kolom `value` toe voor het veldtype `submit` .
 
-1. Voorproef en publiceer het blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Voorproef en publiceer het blad gebruikend [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   ![ Aangepast Thanku bericht ](/help/edge/docs/forms/assets/customized-thank-you-message.png)
+   ![&#x200B; Aangepast Thanku bericht &#x200B;](/help/edge/docs/forms/assets/customized-thank-you-message.png)
 
 ## Gebruikers omleiden naar een andere pagina na verzending
 
@@ -60,13 +60,13 @@ Voer de volgende stappen uit om gebruikers om te leiden naar een andere pagina:
 
 1. Ga naar uw Edge Deliver-projectmap op Microsoft SharePoint of Google Workspace en open uw spreadsheet.
 1. Plak de URL in de kolom `value` voor het veldtype `submit` in het spreadsheet om de gebruiker om te leiden wanneer het formulier is verzonden.
-Om de pagina aan een verschillende pagina om te leiden, gebruik [ de Documentatie van Edge Delivery ](https://www.aem.live/docs/) pagina URL.
+Om de pagina aan een verschillende pagina om te leiden, gebruik [&#x200B; de Documentatie van Edge Delivery &#x200B;](https://www.aem.live/docs/) pagina URL.
 
-   ![ Thankyou redirect URL ](/help/edge/docs/forms/assets/thankyou-redirecturl.png)
+   ![&#x200B; Thankyou redirect URL &#x200B;](/help/edge/docs/forms/assets/thankyou-redirecturl.png)
 
-1. Voorproef en publiceer het blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Voorproef en publiceer het blad gebruikend [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   ![ Redirect het bericht van Thanku ](/help/edge/docs/forms/assets/thankyou-redirectpage.gif)
+   ![&#x200B; Redirect het bericht van Thanku &#x200B;](/help/edge/docs/forms/assets/thankyou-redirectpage.gif)
 
 U kunt ook een nieuw documentbestand maken en de voorbeeld-URL toevoegen in de kolom `value` voor het veldtype `submit` .
 

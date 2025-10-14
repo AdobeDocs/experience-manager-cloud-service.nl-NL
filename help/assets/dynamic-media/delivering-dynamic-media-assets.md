@@ -23,11 +23,11 @@ Met Dynamische media hebt u verschillende opties:
 
    * Uw video of afbeelding insluiten op uw website.
    * Koppel URL&#39;s aan uw webtoepassing. Gebruik koppelingen wanneer u een videospeler wilt leveren als een pop-up- of modaal venster.
-   * Als uw plaats ontvankelijk is, kunt u [ geoptimaliseerde beelden ](/help/assets/dynamic-media/responsive-site.md) leveren.
+   * Als uw plaats ontvankelijk is, kunt u [&#x200B; geoptimaliseerde beelden &#x200B;](/help/assets/dynamic-media/responsive-site.md) leveren.
 
 >[!NOTE]
 >
->Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [ Slimme Beeldvorming ](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
+>Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [&#x200B; Slimme Beeldvorming &#x200B;](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
@@ -45,4 +45,4 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 
 Experience Manager ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze methode van levering verbetert de manier browsers en servers communiceren, die voor betere reactie en ladingstijden van al uw Dynamische activa van Media toestaan.
 
-Meer leren, zie [ HTTP/2 Levering van Inhoud Veelgestelde Vragen ](/help/assets/dynamic-media/http2faq.md).
+Meer leren, zie [&#x200B; HTTP/2 Levering van Inhoud Veelgestelde Vragen &#x200B;](/help/assets/dynamic-media/http2faq.md).

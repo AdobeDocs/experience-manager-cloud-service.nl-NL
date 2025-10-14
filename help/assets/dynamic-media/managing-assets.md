@@ -18,9 +18,9 @@ ht-degree: 0%
 
 Het beheren van dynamische media-elementen - afbeeldingen, video en interactieve elementen - nadat deze zijn geüpload, omvat veel taken zoals voorvertonen, downloaden of publiceren.
 
-Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [ kijker toepassen vooraf instelt ](viewer-presets.md) en [ beeld toepassen vooraf instelt ](image-presets.md).
+Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [&#x200B; kijker toepassen vooraf instelt &#x200B;](viewer-presets.md) en [&#x200B; beeld toepassen vooraf instelt &#x200B;](image-presets.md).
 
-De algemene informatie over het beheren van activa wordt gevonden in [ beheert Assets met Aanraakinterface ](/help/assets/manage-digital-assets.md).
+De algemene informatie over het beheren van activa wordt gevonden in [&#x200B; beheert Assets met Aanraakinterface &#x200B;](/help/assets/manage-digital-assets.md).
 
 De volgende onderwerpen beschrijven wat u kunt doen om Dynamische activa van Media te beheren:
 

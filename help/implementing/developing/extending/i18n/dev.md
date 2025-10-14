@@ -20,7 +20,7 @@ Met Java™- en JavaScript API&#39;s kunt u tekenreeksen internationaliseren in 
 * JavaScript in clientbibliotheken of in paginabron.
 * Waarden van eigenschappen van JCR-knooppunten worden gebruikt in dialoogvensters en componentconfiguratie-eigenschappen.
 
-Voor een overzicht van het internationalisatie en localisatieproces, zie [ Internationaliserende Componenten ](/help/implementing/developing/extending/i18n/components.md).
+Voor een overzicht van het internationalisatie en localisatieproces, zie [&#x200B; Internationaliserende Componenten &#x200B;](/help/implementing/developing/extending/i18n/components.md).
 
 ## Internationalisatie van tekenreeksen in Java™- en JSP-code {#internationalizing-strings-in-java-and-jsp-code}
 
@@ -111,9 +111,9 @@ De klasse `I18N` definieert een statische methode `get` die nuttig is wanneer u 
 
 ### Internationalisatie tekenreeksen in JavaScript-code {#internationalizing-strings-in-javascript-code}
 
-Met de JavaScript API kunt u tekenreeksen lokaliseren op de client. Zoals met [ Java™ en JSP ](#internationalizing-strings-in-java-and-jsp-code) code, laat JavaScript API u toe om koorden te identificeren te lokaliseren, lokalisatiewenken te verstrekken, en variabelen in de gelokaliseerde koorden te omvatten.
+Met de JavaScript API kunt u tekenreeksen lokaliseren op de client. Zoals met [&#x200B; Java™ en JSP &#x200B;](#internationalizing-strings-in-java-and-jsp-code) code, laat JavaScript API u toe om koorden te identificeren te lokaliseren, lokalisatiewenken te verstrekken, en variabelen in de gelokaliseerde koorden te omvatten.
 
-De `granite.utils` [ omslag van de cliëntbibliotheek ](/help/implementing/developing/introduction/clientlibs.md) verstrekt JavaScript API. Neem deze clientbibliotheekmap op de pagina op om de API te gebruiken. Localisatiefuncties gebruiken de naamruimte `Granite.I18n` .
+De `granite.utils` [&#x200B; omslag van de cliëntbibliotheek &#x200B;](/help/implementing/developing/introduction/clientlibs.md) verstrekt JavaScript API. Neem deze clientbibliotheekmap op de pagina op om de API te gebruiken. Localisatiefuncties gebruiken de naamruimte `Granite.I18n` .
 
 Voordat u gelokaliseerde tekenreeksen weergeeft, stelt u de landinstelling in met behulp van de functie `Granite.I18n.setLocale` . De functie vereist de taalcode van de landinstelling als argument:
 
@@ -160,7 +160,7 @@ In het volgende voorbeeld haalt het JSP-script de eigenschap `jcr:title` op uit 
 
 #### Vertaaltips opgeven voor JCR-knooppunten {#specifying-translation-hints-for-jcr-nodes}
 
-Gelijkaardig aan [ vertaalwenken in Java™ API ](#using-translation-hints), kunt u vertaalwenken verstrekken om dubbele koorden in het woordenboek te onderscheiden. Geef de vertaalhint op als een eigenschap van het knooppunt dat de geïnternationaliseerde eigenschap bevat. De naam van de eigenschap hint bestaat uit de naam van de geïnternationaliseerde eigenschapnaam met het achtervoegsel `_commentI18n` :
+Gelijkaardig aan [&#x200B; vertaalwenken in Java™ API &#x200B;](#using-translation-hints), kunt u vertaalwenken verstrekken om dubbele koorden in het woordenboek te onderscheiden. Geef de vertaalhint op als een eigenschap van het knooppunt dat de geïnternationaliseerde eigenschap bevat. De naam van de eigenschap hint bestaat uit de naam van de geïnternationaliseerde eigenschapnaam met het achtervoegsel `_commentI18n` :
 
 `${prop}_commentI18n`
 
@@ -174,7 +174,7 @@ Test of u alle tekenreeksen in uw gebruikersinterface hebt geïnternationaliseer
 
 In de volgende afbeelding ziet u de stub-vertaling voor de AEM homepage:
 
-![ vertaling van de Stub voor de AEM homepage ](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![&#x200B; vertaling van de Stub voor de AEM homepage &#x200B;](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 Om de taal voor de gebruiker te plaatsen, vorm het taalbezit van de voorkeurenknoop voor de gebruikersrekening.
 

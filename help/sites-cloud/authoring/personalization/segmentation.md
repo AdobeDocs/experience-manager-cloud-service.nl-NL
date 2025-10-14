@@ -51,7 +51,7 @@ Bij het bespreken van segmentatie wordt de volgende terminologie gebruikt:
    * Geslacht
    * Locatie
 * **Afgeleide Beetjes** - sommige demografische eigenschappen zijn moeilijk te bepalen zonder registratie, maar kunnen worden afgeleid door gedrag en demografische eigenschappen te combineren.
-   * Bijvoorbeeld, staat het combineren van verwijzende URL (als gedragseigenschap) met demografische gegevens (die van hulpmiddelen zoals [ worden verkregen Google Ad Planner ](https://www.google.com/adplanner/)) plaatseigenaars toe om demografische kenmerken van hun bezoekers af te leiden.
+   * Bijvoorbeeld, staat het combineren van verwijzende URL (als gedragseigenschap) met demografische gegevens (die van hulpmiddelen zoals [&#x200B; worden verkregen Google Ad Planner &#x200B;](https://www.google.com/adplanner/)) plaatseigenaars toe om demografische kenmerken van hun bezoekers af te leiden.
 * **Subsegment** - een segment kan in verscheidene subsegmenten worden onderverdeeld. Dit wordt gedaan door extra eigenschappen te bepalen.
 * **de Pagina van het Taser** - een teaser pagina wordt geleid aan een specifiek publiek. Het bevat herbruikbare inhoud die in de teasalinea kan worden gebruikt.
 * **Campagne** - een campagne is een inzameling van laserpagina&#39;s en e-mailmarketing pagina&#39;s, zoals nieuwsbrieven of uitnodigingen. Een campagne wordt doorgaans gedurende een beperkte periode uitgevoerd en wordt vervangen door een andere campagne.

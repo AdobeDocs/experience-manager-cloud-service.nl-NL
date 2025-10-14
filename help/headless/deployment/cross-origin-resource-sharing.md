@@ -16,13 +16,13 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Als [ caching in Dispatcher ](/help/headless/deployment/dispatcher-caching.md) dan is toegelaten is het filter CORS niet nodig, en zo kan deze sectie worden genegeerd.
+>Als [&#x200B; caching in Dispatcher &#x200B;](/help/headless/deployment/dispatcher-caching.md) dan is toegelaten is het filter CORS niet nodig, en zo kan deze sectie worden genegeerd.
 
 >[!NOTE]
 >
->Voor een gedetailleerd overzicht van het CORS middel delend beleid in AEM zie [ het Delen van het Middel van de Cross-Origin begrijpen (CORS) ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL#understand-cross-origin-resource-sharing-(cors)).
+>Voor een gedetailleerd overzicht van het CORS middel delend beleid in AEM zie [&#x200B; het Delen van het Middel van de Cross-Origin begrijpen (CORS) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL#understand-cross-origin-resource-sharing-(cors)).
 
-Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden gevormd en aan een AEM Project worden toegevoegd dat [ aan AEM via Cloud Manager ](/help/implementing/cloud-manager/deploy-code.md) wordt opgesteld. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen. U kunt meerdere CORS-configuraties maken en implementeren in verschillende omgevingen. De voorbeelden kunnen in de [ plaats van de Verwijzing WKND ](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig) worden gevonden
+Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden gevormd en aan een AEM Project worden toegevoegd dat [&#x200B; aan AEM via Cloud Manager &#x200B;](/help/implementing/cloud-manager/deploy-code.md) wordt opgesteld. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen. U kunt meerdere CORS-configuraties maken en implementeren in verschillende omgevingen. De voorbeelden kunnen in de [&#x200B; plaats van de Verwijzing WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig) worden gevonden
 
 In de CORS-configuratie moet een vertrouwde website-oorsprong `alloworigin` of `alloworiginregexp` worden opgegeven waarvoor toegang moet worden verleend.
 

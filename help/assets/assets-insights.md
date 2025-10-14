@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met de functie Assets Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve Adobe-oplossingen. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
@@ -25,7 +25,7 @@ Met Assets Insights worden details van gebruikersactiviteit vastgelegd, zoals he
 
 Assets Insights kan alleen gebruiksstatistieken vastleggen voor afbeeldingen van een website als u de insluitcode voor de afbeelding opneemt in de websitecode.
 
-Om Assets Insights gebruiksstatistieken voor middelen te laten weergeven, configureert u eerst de functie om rapportgegevens op te halen uit [!DNL Adobe Analytics] . Voor details, zie [ de Inzichten van Assets ](#configure-asset-insights) vormen. Als u deze functie wilt gebruiken, moet u de licentie voor [!DNL Adobe Analytics] afzonderlijk kopen.
+Om Assets Insights gebruiksstatistieken voor middelen te laten weergeven, configureert u eerst de functie om rapportgegevens op te halen uit [!DNL Adobe Analytics] . Voor details, zie [&#x200B; de Inzichten van Assets &#x200B;](#configure-asset-insights) vormen. Als u deze functie wilt gebruiken, moet u de licentie voor [!DNL Adobe Analytics] afzonderlijk kopen.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ U kunt de Assets Insights-scores bekijken op de metagegevenspagina.
    * **[!UICONTROL Social]**: Het aantal keren dat het element is gebruikt in andere oplossingen, zoals een [!DNL Adobe Campaign] .
    * **[!UICONTROL Email]**: Het aantal keren dat het middel in e-mailcampagnes is gebruikt.
 
-   ![ usage_statistics ](assets/usage_statistics.png)
+   ![&#x200B; usage_statistics &#x200B;](assets/usage_statistics.png)
 
    >[!NOTE]
    >
@@ -58,7 +58,7 @@ U kunt de Assets Insights-scores bekijken op de metagegevenspagina.
 
 1. Als u de prestatiestatistieken voor het element gedurende een bepaalde periode grafisch wilt weergeven, selecteert u een punt in de sectie **[!UICONTROL Performance Statistics]** . De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
-   ![ chlimage_1-3 ](assets/chlimage_1-3.jpeg)
+   ![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3.jpeg)
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ U kunt de Assets Insights-scores bekijken op de metagegevenspagina.
 
 1. Klik op **[!UICONTROL Get Embed Code]** onder de elementminiatuur om de insluitcode te verkrijgen voor het element dat u in websites opneemt om prestatiegegevens op te halen. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-   ![ chlimage_1-98 ](assets/chlimage_1-98.png)
+   ![&#x200B; chlimage_1-98 &#x200B;](assets/chlimage_1-98.png)
 
 ## Samengevoegde statistieken voor afbeeldingen weergeven {#viewing-aggregate-statistics-for-images}
 
@@ -100,7 +100,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Klik in [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** .
 
-   ![ chlimage_1-73 ](assets/chlimage_1-73.png)
+   ![&#x200B; chlimage_1-73 &#x200B;](assets/chlimage_1-73.png)
 
 1. Klik op de **[!UICONTROL Insights Configuration]** -kaart.
 
@@ -110,7 +110,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    Klik op **[!UICONTROL Authenticate]**.
 
-   ![ Adobe Analytics for Assets Insights configureren in [!DNL Experience Manager]](assets/analytics-insight-config.png)
+   ![&#x200B; Adobe Analytics for Assets Insights configureren in [!DNL Experience Manager]](assets/analytics-insight-config.png)
 
    *Cijfer: Vorm Adobe Analytics for Assets Insights in[!DNL Experience Manager]*
 
@@ -126,7 +126,7 @@ Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Pagina
 
 1. Klik in [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** .
 
-   ![ chlimage_1-73 ](assets/chlimage_1-73.png)
+   ![&#x200B; chlimage_1-73 &#x200B;](assets/chlimage_1-73.png)
 
 1. Klik op de **[!UICONTROL Navigation]** -pagina op de **[!UICONTROL Insights Page Tracker]** -kaart.
 1. Klik op **[!UICONTROL Download]** om de code van de paginacontracker te downloaden.

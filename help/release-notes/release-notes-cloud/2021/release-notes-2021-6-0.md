@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -30,7 +30,7 @@ De volgende release (2021.7.0) vindt plaats op 29 juli 2021.
 
 ## Video vrijgeven {#release-video}
 
-Heb een blik bij de [ Juni 2021 video van het Overzicht van de Versie ](https://video.tv.adobe.com/v/334296) voor een samenvatting van de toegevoegde eigenschappen.
+Heb een blik bij de [&#x200B; Juni 2021 video van het Overzicht van de Versie &#x200B;](https://video.tv.adobe.com/v/334296) voor een samenvatting van de toegevoegde eigenschappen.
 
 ## XML Documentation for AEM as a cloud Service {#xml-documentation}
 
@@ -50,7 +50,7 @@ De volgende release is gepland voor 15 juli 2021.
 
 ### Wat is er nieuw? {#what-is-new-junecm}
 
-* De Voorproefdienst zal op rolbasis aan alle Programma&#39;s worden opgesteld. Klanten worden in-product op de hoogte gebracht wanneer hun Programma voor de Dienst van de Voorproef wordt toegelaten. Zie [ Toegang hebbend tot de Dienst van de Voorproef ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) voor meer details.
+* De Voorproefdienst zal op rolbasis aan alle Programma&#39;s worden opgesteld. Klanten worden in-product op de hoogte gebracht wanneer hun Programma voor de Dienst van de Voorproef wordt toegelaten. Zie [&#x200B; Toegang hebbend tot de Dienst van de Voorproef &#x200B;](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) voor meer details.
 
 * Geweven Gedeelten die tijdens de bouwstijlstap worden gedownload zullen nu in het voorgeheugen ondergebracht tussen pijpleidinguitvoeringen worden. Deze functie wordt de komende weken ingeschakeld voor klanten.
 
@@ -66,11 +66,11 @@ De volgende release is gepland voor 15 juli 2021.
 
 * Om verwarring te voorkomen, zijn de rijen van de segmenten Publish AEM en Publish Dispatcher op de pagina Environment Details geconsolideerd.
 
-  ![ de milieu&#39;s van Dispatcher ](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![&#x200B; de milieu&#39;s van Dispatcher &#x200B;](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * Er is een nieuwe code kwaliteitsregel toegevoegd om de structuur van `damAssetLucene` indexen te valideren. Zie {de Indexen van Oak van het Activa van 10} Douane DAM [&#128279;](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) voor meer details.
 
-* De pagina met omgevingsdetails geeft nu meerdere domeinnamen weer voor Publish en de voorvertoningsservices (indien van toepassing). Zie [ Details van het Milieu ](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) aan meer details.
+* De pagina met omgevingsdetails geeft nu meerdere domeinnamen weer voor Publish en de voorvertoningsservices (indien van toepassing). Zie [&#x200B; Details van het Milieu &#x200B;](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) aan meer details.
 
 ### Opgeloste problemen {#bug-fixes-junecm}
 
@@ -142,7 +142,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 ### Buizen gecorrigeerd in [!DNL Forms] {#forms-bugs-fixed}
 
 * Wanneer een veld wordt gevalideerd voordat gegevens via FDM (Form Data Model) naar de service Backend worden verzonden, slagen validaties erin, maar wordt postvalidatie niet aangeroepen door de service Form Data Model.
-* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 byte ontvangen. Dit is een bekend probleem in Apple iOS. [ FB9117687 ](https://feedbackassistant.apple.com/feedback/9117687)
+* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 byte ontvangen. Dit is een bekend probleem in Apple iOS. [&#x200B; FB9117687 &#x200B;](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Experience Manager Screens] als een [!DNL Cloud Service] {#screens}
 
@@ -184,7 +184,7 @@ De releasedatum voor Content Transfer Tool v1.5.4 is 28 juni 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt-latest}
 
-* Steun voor een facultatieve [ pre-exemplaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL) stap die aan gebruik met CTT wordt toegevoegd. De pre-exemplaarstap kan worden gebruikt om de extractie en inname fasen van de activiteit van de inhoudoverdracht beduidend te versnellen wanneer de bron AEM instantie wordt gevormd om een gegevensbestand van de Opslag van Amazon S3 of van Azure Blob te gebruiken.
+* Steun voor een facultatieve [&#x200B; pre-exemplaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL) stap die aan gebruik met CTT wordt toegevoegd. De pre-exemplaarstap kan worden gebruikt om de extractie en inname fasen van de activiteit van de inhoudoverdracht beduidend te versnellen wanneer de bron AEM instantie wordt gevormd om een gegevensbestand van de Opslag van Amazon S3 of van Azure Blob te gebruiken.
 
 * Guardrail toegevoegd aan CTT om te voorkomen dat gebruikers een opname stoppen en mogelijk gegevens beschadigen zodra deze het kritieke punt tijdens de innamefase heeft bereikt.
 

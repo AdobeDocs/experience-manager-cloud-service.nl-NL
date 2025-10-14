@@ -49,9 +49,9 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 <br>
 
-![ rollen van het Overzicht voor implementatie ](assets/team_involvement.png)
+![&#x200B; rollen van het Overzicht voor implementatie &#x200B;](assets/team_involvement.png)
 
-**herzie deze lijst met uw implementatieteam** en zorg ervoor u mensen met relevante kwalificaties in elke rol hebt. De leden van het team die minder vertrouwd met Adobe Experience Cloud zijn kunnen [ Experience League ](https://experienceleague.adobe.com/nl#recommended/solutions/experience-manager) het leren middelen gebruiken om verklaard door [ Digitaal Leren van de Adobe ](https://learning.adobe.com/certification.html) te worden.
+**herzie deze lijst met uw implementatieteam** en zorg ervoor u mensen met relevante kwalificaties in elke rol hebt. De leden van het team die minder vertrouwd met Adobe Experience Cloud zijn kunnen [&#x200B; Experience League &#x200B;](https://experienceleague.adobe.com/nl#recommended/solutions/experience-manager) het leren middelen gebruiken om verklaard door [&#x200B; Digitaal Leren van de Adobe &#x200B;](https://learning.adobe.com/certification.html) te worden.
 
 ## **Zeer belangrijke Rollen voor AEM Experience Manager Assets**
 
@@ -76,8 +76,8 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 <br>
 
-![ Horizontaal staafdiagram dat fictieve rollen en hun niveau van betrokkenheid op het team van AEM Assets ](/help/overview/assets/team_involvement2.png) toont.
+![&#x200B; Horizontaal staafdiagram dat fictieve rollen en hun niveau van betrokkenheid op het team van AEM Assets &#x200B;](/help/overview/assets/team_involvement2.png) toont.
 
 >[!TIP]
 >
-> Leer meer over Adobe Experience Cloud en gebruiksmiddelen op [ Experience League ](https://experienceleague.adobe.com/nl#recommended/solutions/experience-manager) en wordt verklaard door [ Digitaal Leren van de Adobe ](https://learning.adobe.com/certification.html).
+> Leer meer over Adobe Experience Cloud en gebruiksmiddelen op [&#x200B; Experience League &#x200B;](https://experienceleague.adobe.com/nl#recommended/solutions/experience-manager) en wordt verklaard door [&#x200B; Digitaal Leren van de Adobe &#x200B;](https://learning.adobe.com/certification.html).

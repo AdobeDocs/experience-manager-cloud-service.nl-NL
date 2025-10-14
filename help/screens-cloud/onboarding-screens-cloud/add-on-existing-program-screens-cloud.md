@@ -16,7 +16,7 @@ ht-degree: 0%
 In deze sectie wordt beschreven hoe u Screens kunt toevoegen als een invoegtoepassing aan een bestaand programma in Cloud Manager.
 
 >[!NOTE]
->Zie [ Begrijpend Programma&#39;s en de Types van Programma ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=nl-NL) om meer over de programma&#39;s van Cloud Manager te leren.
+>Zie [&#x200B; Begrijpend Programma&#39;s en de Types van Programma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=nl-NL) om meer over de programma&#39;s van Cloud Manager te leren.
 
 ## Doelstelling {#objective}
 
@@ -26,24 +26,24 @@ De volgende stappen helpen u leren hoe u de invoegtoepassing Screens aan een bes
 
 Ga als volgt te werk om Screens toe te voegen aan een bestaand programma:
 
-1. Navigeer aan [ Cloud Manager ](https://my.cloudmanager.adobe.com/).
+1. Navigeer aan [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Zie [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=nl-NL) om over Cloud Manager te leren.
+   >Zie [&#x200B; Inleiding aan Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=nl-NL) om over Cloud Manager te leren.
 
 1. Navigeer aan uw project en klik **geef programmaoptie** van de Cloud Manager **pagina van het Overzicht** uit.
 
-   ![ geef programma ](/help/screens-cloud/assets/onboarding/add-onexisting1.png) uit
+   ![&#x200B; geef programma &#x200B;](/help/screens-cloud/assets/onboarding/add-onexisting1.png) uit
 
    >[!NOTE]
    >De **geeft de pagina van het Programma** uit toont twee lusjes **Algemeen** en **Oplossingen &amp; toe:voegen-ons**.
 
 1. De **Oplossingen &amp; toe:voegen-ons** opties van lusjevertoningen, zoals Plaatsen, Assets, en Screens. Selecteer **toe:voegen-op optie 0&rbrace; Screens &lbrace;, zoals aangetoond in het hieronder cijfer.**
 
-   ![ Screens toe:voegen-op optie ](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![&#x200B; Screens toe:voegen-op optie &#x200B;](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Klik **Update**, zodra u uw opties hebt geselecteerd.
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u Screens kunt toevoegen als invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Cloud Manager-programma&#39;s en -producten ziet, kunt u verdergaan. De volgende stap in het onboarding proces is [ Creërend een tak voor uw Project in Cloud Manager ](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Nadat u hebt geleerd hoe u Screens kunt toevoegen als invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Cloud Manager-programma&#39;s en -producten ziet, kunt u verdergaan. De volgende stap in het onboarding proces is [&#x200B; Creërend een tak voor uw Project in Cloud Manager &#x200B;](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

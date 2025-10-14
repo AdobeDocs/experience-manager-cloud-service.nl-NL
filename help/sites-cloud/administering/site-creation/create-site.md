@@ -23,7 +23,7 @@ Voordat auteurs van inhoud pagina&#39;s met inhoud kunnen maken, moet de site ee
 
 ## Sitestructuur plannen {#structure}
 
-Neem de tijd om ruim van tevoren rekening te houden met het doel en de geplande inhoud van uw site. Zo kunt u de structuur van de site ontwerpen. Een goede plaatsstructuur steunt gemakkelijke navigatie en inhoudsontdekking voor uw plaatsbezoekers en steunt diverse eigenschappen van AEM zoals [ multisite beheer en vertaling.](/help/sites-cloud/administering/msm-and-translation.md)
+Neem de tijd om ruim van tevoren rekening te houden met het doel en de geplande inhoud van uw site. Zo kunt u de structuur van de site ontwerpen. Een goede plaatsstructuur steunt gemakkelijke navigatie en inhoudsontdekking voor uw plaatsbezoekers en steunt diverse eigenschappen van AEM zoals [&#x200B; multisite beheer en vertaling.](/help/sites-cloud/administering/msm-and-translation.md)
 
 ## Sitesjablonen {#site-templates}
 
@@ -33,11 +33,11 @@ Sitesjablonen bevatten over het algemeen inhoud en structuur van de basissite en
 
 >[!TIP]
 >
->Voor verder detail op plaatsmalplaatjes, zie het document [ Malplaatjes van de Plaats.](site-templates.md)
+>Voor verder detail op plaatsmalplaatjes, zie het document [&#x200B; Malplaatjes van de Plaats.](site-templates.md)
 
 >[!NOTE]
 >
->Het plaatssjabloon moet niet met [ paginasjablonen worden verward.](/help/sites-cloud/authoring/page-editor/templates.md) Sitesjablonen definiëren de algehele structuur van een site. Een paginasjabloon definieert de structuur en initiële inhoud van een afzonderlijke pagina.
+>Het plaatssjabloon moet niet met [&#x200B; paginasjablonen worden verward.](/help/sites-cloud/authoring/page-editor/templates.md) Sitesjablonen definiëren de algehele structuur van een site. Een paginasjabloon definieert de structuur en initiële inhoud van een afzonderlijke pagina.
 
 ### Door Adobe verschafte sitesjablonen {#adobe-templates}
 
@@ -53,11 +53,11 @@ Het is eenvoudig om een site te maken met een sjabloon.
 
 1. Selecteer **creeer** bij het hoogste recht van het scherm en van het drop-down menu uitgezocht **Plaats van malplaatje**.
 
-   ![ Creërend een plaats van een malplaatje ](../assets/create-site-from-template.png)
+   ![&#x200B; Creërend een plaats van een malplaatje &#x200B;](../assets/create-site-from-template.png)
 
 1. In de Create tovenaar van de Plaats, selecteer een bestaand malplaatje in het linkerpaneel of op **de Invoer** bij de bovenkant van de linkerkolom om een nieuw malplaatje in te voeren.
 
-   ![ tovenaar van de creatie van de Plaats ](../assets/site-creation-wizard.png)
+   ![&#x200B; tovenaar van de creatie van de Plaats &#x200B;](../assets/site-creation-wizard.png)
 
    1. Als u verkoos om, in dossierbrowser in te voeren, bepaal de plaats van het malplaatje u **gebruiken en wilt selecteren uploadt**.
 
@@ -65,30 +65,30 @@ Het is eenvoudig om een site te maken met een sjabloon.
 
 1. Als u een sjabloon selecteert, wordt informatie over de sjabloon in de rechterkolom weergegeven. Met uw gewenste geselecteerde malplaatje, uitgezochte **Volgende**.
 
-   ![ selecteer een malplaatje ](../assets/select-site-template.png)
+   ![&#x200B; selecteer een malplaatje &#x200B;](../assets/select-site-template.png)
 
 1. Geef een titel op voor uw site. U kunt een sitenaam opgeven of genereren op basis van de titel als u deze weglaat.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
-   * De plaatsnaam moet [ AEM pagina het noemen overeenkomsten ](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices) naleven.
+   * De plaatsnaam moet [&#x200B; AEM pagina het noemen overeenkomsten &#x200B;](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices) naleven.
 
 1. Geef aanvullende sitedetails op zoals vereist door de sitesjabloon.
 
    * Voor verschillende templates zijn mogelijk aanvullende details vereist.
-   * Bijvoorbeeld, vereisen de malplaatjes voor [ projecten van Edge Delivery Services ](https://www.aem.live/developer/ue-tutorial) de bewaarplaats GitHub van uw project.
+   * Bijvoorbeeld, vereisen de malplaatjes voor [&#x200B; projecten van Edge Delivery Services &#x200B;](https://www.aem.live/developer/ue-tutorial) de bewaarplaats GitHub van uw project.
 
 1. Selecteer **creeer** en de plaats wordt gecreeerd van het plaatssjabloon.
 
-   ![ Details van de nieuwe plaats ](../assets/create-site-details.png)
+   ![&#x200B; Details van de nieuwe plaats &#x200B;](../assets/create-site-details.png)
 
 1. In de bevestigingsdialoog die verschijnt, uitgezocht **Gedaan**.
 
-   ![ de dialoog van het Succes ](../assets/success.png)
+   ![&#x200B; de dialoog van het Succes &#x200B;](../assets/success.png)
 
 1. In de plaatsenconsole, is de nieuwe plaats zichtbaar en kan worden genavigeerd om zijn basisstructuur te onderzoeken zoals die door het malplaatje wordt bepaald.
 
-   ![ Nieuwe plaatsstructuur ](../assets/new-site.png)
+   ![&#x200B; Nieuwe plaatsstructuur &#x200B;](../assets/new-site.png)
 
 Inhoudsauteurs kunnen nu beginnen met ontwerpen!
 
@@ -97,7 +97,7 @@ Inhoudsauteurs kunnen nu beginnen met ontwerpen!
 Sjablonen zijn handig voor het snel instellen van de basisstructuur en -stijl van een site. Voor de meeste projecten is echter aanvullende opmaak en aanpassing vereist. Sitesjablonen helpen u de stijl van de site te ontkoppelen, zodat front-end ontwikkelaars geen kennis van AEM nodig hebben om de site op te maken en de site
 werk gescheiden van en parallel aan de makers van de inhoud. Afhankelijk van het type project kan dit twee vormen aannemen.
 
-* Voor projecten met de pagina van AEM authoring met de Universele Redacteur en levering door [ randlevering, ](/help/edge/overview.md) wordt al het stileren gedaan in het project GitHub.
-   * Gelieve te zien het document [ Begonnen worden - Universele Zelfstudie van de Ontwikkelaar van de Redacteur ](https://www.aem.live/developer/ue-tutorial) voor meer informatie.
-* Voor projecten met traditionele AEM paginauteurs en levering door [ publiceren levering, ](/help/sites-cloud/authoring/author-publish.md) downloadt de beheerder van AEM eenvoudig het plaatsthema en verstrekt het aan de front-end ontwikkelaar die het gebruikend hun favoriete hulpmiddelen aanpast en dan de veranderingen in de de codebewaarplaats van AEM toebedeelt, die dan wordt opgesteld.
-   * Gelieve te zien de Reis van de Aanmaak van de Plaats van het document [ Snelle ](/help/journey-sites/quick-site/overview.md) voor meer informatie.
+* Voor projecten met de pagina van AEM authoring met de Universele Redacteur en levering door [&#x200B; randlevering, &#x200B;](/help/edge/overview.md) wordt al het stileren gedaan in het project GitHub.
+   * Gelieve te zien het document [&#x200B; Begonnen worden - Universele Zelfstudie van de Ontwikkelaar van de Redacteur &#x200B;](https://www.aem.live/developer/ue-tutorial) voor meer informatie.
+* Voor projecten met traditionele AEM paginauteurs en levering door [&#x200B; publiceren levering, &#x200B;](/help/sites-cloud/authoring/author-publish.md) downloadt de beheerder van AEM eenvoudig het plaatsthema en verstrekt het aan de front-end ontwikkelaar die het gebruikend hun favoriete hulpmiddelen aanpast en dan de veranderingen in de de codebewaarplaats van AEM toebedeelt, die dan wordt opgesteld.
+   * Gelieve te zien de Reis van de Aanmaak van de Plaats van het document [&#x200B; Snelle &#x200B;](/help/journey-sites/quick-site/overview.md) voor meer informatie.

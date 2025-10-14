@@ -33,7 +33,7 @@ Voer de volgende stappen uit om verbinding te maken met een nieuwe Creative Clou
 
 1. Klik op **[!UICONTROL Switch orgs]** om over te schakelen naar de nieuwe organisatie.
 
-   ![ dwars-Org Entitlements ](assets/cross-org-entitlements.png)
+   ![&#x200B; dwars-Org Entitlements &#x200B;](assets/cross-org-entitlements.png)
 
 ## Beperkingen {#limitations}
 

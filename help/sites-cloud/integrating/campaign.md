@@ -21,7 +21,7 @@ Meer informatie over AEM as a Cloud Service-ondersteuning voor integratie met Ad
 >
 >In dit document wordt beschreven hoe Adobe Campaign kan worden geïntegreerd met AEM as a Cloud Service, de AEM-oplossing in de cloud.
 >
->Voor details bij het integreren van Adobe Campaign met AEM 6.5, op gebouw of AMS-ontvangen oplossing van AEM, [ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html?lang=nl-NL).
+>Voor details bij het integreren van Adobe Campaign met AEM 6.5, op gebouw of AMS-ontvangen oplossing van AEM, [&#x200B; zie dit document &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html?lang=nl-NL).
 
 ## Integreren met Adobe Campaign v7/v8 {#acc}
 
@@ -29,10 +29,10 @@ De ondersteuning voor integratie met AEM as a Cloud Service is afhankelijk van d
 
 | Campagneversie | Integratie met AEMaaCS |
 |---|---|
-| [ Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=nl-NL) | Niet ondersteund |
-| [ Campagne v8 (cliëntconsole) ](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=nl-NL) | Niet ondersteund |
-| Campaign Web User Interface | Ondersteund. [ Leer meer ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/connect/ac-aem) |
+| [&#x200B; Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=nl-NL) | Niet ondersteund |
+| [&#x200B; Campagne v8 (cliëntconsole) &#x200B;](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=nl-NL) | Niet ondersteund |
+| Campaign Web User Interface | Ondersteund. [&#x200B; Leer meer &#x200B;](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## Integreren met Adobe Campaign Standard {#acs}
 
-AEM as a Cloud Service steunt geen integratie met [ Adobe Campaign Standard ](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=nl-NL) (ACS).
+AEM as a Cloud Service steunt geen integratie met [&#x200B; Adobe Campaign Standard &#x200B;](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=nl-NL) (ACS).

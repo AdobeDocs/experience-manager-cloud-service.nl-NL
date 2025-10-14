@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{work-with-dynamic-media}}
 
-[ Dynamische Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -44,4 +44,4 @@ Zie ook de volgende onderwerpen:
 >
 >**als u bevordert:**
 >
->* Nadat u Adobe [!DNL Experience Manager] hebt gestart en uitgevoerd, wordt Dynamische media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u zich op een geüpgrade instantie van [!DNL Experience Manager] en een nieuwe versie van Dynamic Media bevindt, moet u uw elementen waarschijnlijk opnieuw verwerken om ze voor Dynamic Media in te schakelen. Zie [ activa in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
+>* Nadat u Adobe [!DNL Experience Manager] hebt gestart en uitgevoerd, wordt Dynamische media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u zich op een geüpgrade instantie van [!DNL Experience Manager] en een nieuwe versie van Dynamic Media bevindt, moet u uw elementen waarschijnlijk opnieuw verwerken om ze voor Dynamic Media in te schakelen. Zie [&#x200B; activa in een omslag &#x200B;](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.

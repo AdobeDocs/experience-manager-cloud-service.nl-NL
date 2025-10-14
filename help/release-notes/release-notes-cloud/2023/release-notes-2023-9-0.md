@@ -20,11 +20,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -32,7 +32,7 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
+U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](/help/release-notes/maintenance/latest.md) vinden.
 
 ## Video vrijgeven {#release-video}
 
@@ -44,7 +44,7 @@ Bekijk de video Overzicht van de release van september 2023 voor een overzicht v
 
 Edge Delivery is een nieuwe reeks composable diensten die zich op het maximaliseren van het effect van inhoud concentreert om meetbare bedrijfsresultaten op het punt van klanteninteractie te drijven.
 
-Leer meer over Edge Delivery Services in het artikel [ hier ](/help/edge/overview.md).
+Leer meer over Edge Delivery Services in het artikel [&#x200B; hier &#x200B;](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -54,21 +54,21 @@ Leer meer over Edge Delivery Services in het artikel [ hier ](/help/edge/overvie
 
 U kunt nu een metagegevensformulier toewijzen aan een specifieke map binnen uw implementatie. Alle elementen in de map, inclusief de elementen in de submappen, geven vervolgens de eigenschappen weer die in het toegewezen metagegevensformulier zijn gedefinieerd.
 
-![ wijs meta-gegevensvorm aan een omslag ](/help/release-notes/assets/assign-to-folder.png) toe
+![&#x200B; wijs meta-gegevensvorm aan een omslag &#x200B;](/help/release-notes/assets/assign-to-folder.png) toe
 
 ### Nieuwe functies in de beheerweergave {#admin-view-features}
 
-* **integreer AEM Assets as a Cloud Service met op document-gebaseerde Authoring voor Edge Delivery Services**: Integreer AEM Assets met op document-gebaseerde Authoring voor Edge Delivery Services om websiteauteurs toe te laten om [ beelden beschikbaar in de bewaarplaatsen van AEM Assets te gebruiken terwijl het ontwerpen van documenten in Microsoft Word of Google Docs ](/help/edge/overview.md).
+* **integreer AEM Assets as a Cloud Service met op document-gebaseerde Authoring voor Edge Delivery Services**: Integreer AEM Assets met op document-gebaseerde Authoring voor Edge Delivery Services om websiteauteurs toe te laten om [&#x200B; beelden beschikbaar in de bewaarplaatsen van AEM Assets te gebruiken terwijl het ontwerpen van documenten in Microsoft Word of Google Docs &#x200B;](/help/edge/overview.md).
 
-* **de archieven van het ZIP van het Extraheren**: Mogelijkheid om de archieven van het ZIP te selecteren die in Experience Manager worden beheerd en [ die de dossiers direct in Experience Manager ](/help/assets/manage-digital-assets.md#extract-zip-archives) halen zonder hen te downloaden.
+* **de archieven van het ZIP van het Extraheren**: Mogelijkheid om de archieven van het ZIP te selecteren die in Experience Manager worden beheerd en [&#x200B; die de dossiers direct in Experience Manager &#x200B;](/help/assets/manage-digital-assets.md#extract-zip-archives) halen zonder hen te downloaden.
 
-  ![ Vastzetten punten voor groepen ](/help/release-notes/assets/extract-archive.png)
+  ![&#x200B; Vastzetten punten voor groepen &#x200B;](/help/release-notes/assets/extract-archive.png)
 
 ### Functies voor pre-release beschikbaar in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamische Media**: [ Multi-caption en multi-audiospoorsteun voor video&#39;s in Dynamische Media ](/help/assets/dynamic-media/video.md#about-msma) - u kunt veelvoudige titels en veelvoudige audiosporen aan een primaire video nu gemakkelijk toevoegen. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+* **Dynamische Media**: [&#x200B; Multi-caption en multi-audiospoorsteun voor video&#39;s in Dynamische Media &#x200B;](/help/assets/dynamic-media/video.md#about-msma) - u kunt veelvoudige titels en veelvoudige audiosporen aan een primaire video nu gemakkelijk toevoegen. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
-  ![ Bijschriften en Audiosporen tabel op de pagina van Eigenschappen van een geselecteerd videoelement.](/help/release-notes/assets/msma-aem-cs.png)*Bijschriften en Audiosporen lusje op de pagina van Eigenschappen van geselecteerde videoactiva.*
+  ![&#x200B; Bijschriften en Audiosporen tabel op de pagina van Eigenschappen van een geselecteerd videoelement.](/help/release-notes/assets/msma-aem-cs.png)*Bijschriften en Audiosporen lusje op de pagina van Eigenschappen van geselecteerde videoactiva.*
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -82,7 +82,7 @@ U kunt nu een metagegevensformulier toewijzen aan een specifieke map binnen uw i
 
 * [**het rapportmalplaatje van Adobe Analytics voor Adaptieve Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service verstrekt nu een Adobe Analytics rapport OOTB. Zo kunt u gemakkelijk de prestaties van uw formulieren begrijpen. Met de maatstaven op formulierniveau kunt u een insight laten zien hoe het formulier presteert op meerdere prestatie-indicatoren (KPI&#39;s), zoals uitvoeringen, bezoekers, verzendingen, gemiddelde vultijd. Door gebruikersgedrag en feedback te volgen, kunt u delen van het formulier identificeren die verwarring veroorzaken en verbeteringen aanbrengen in het ontwerp en de functionaliteit van het formulier.
 
-  ![ het adaptieve rapport van de de analysegegevens van de vormenbetrokkenheid van de gebruiker ](/help/forms/assets/forms-analytics-report.png)
+  ![&#x200B; het adaptieve rapport van de de analysegegevens van de vormenbetrokkenheid van de gebruiker &#x200B;](/help/forms/assets/forms-analytics-report.png)
 
 * **[Fragment van de Vorm in Aangepast Forms dat op de Componenten van de Kern](/help/forms/adaptive-form-fragments-core-components.md)** wordt gebaseerd: Zeg afscheid aan duplicatie, optimaliseer uw digitale inventaris, en verbeter samenwerking aangezien u uw vorm-bouwende ervaring met de Fragmenten van de Vorm opheft. Deze herbruikbare componenten integreren naadloos in meerdere formulieren, waardoor het maken van consistente en professioneel ogende formulieren wordt gestroomlijnd. Formulierfragmenten zorgen voor herbruikbaarheid, standaardisering en consistentie van merken via de functie &#39;Eenmaal wijzigen en overal weerspiegelen&#39;. Ervaar meer onderhoudsgemak en efficiëntie, aangezien updates die op één plaats worden gemaakt, automatisch worden verspreid over alle vormen die deze fragmenten gebruiken.
 
@@ -118,7 +118,7 @@ U kunt nu een metagegevensformulier toewijzen aan een specifieke map binnen uw i
 
 ### Nieuw gedrag CDN in cache plaatsen voor aan campagne gerelateerde URL-parameters {#cache-url-params}
 
-Voor nieuwe milieu&#39;s, zal CDN marketing verwante vraagparameters door gebrek verwijderen om de prestaties van de marketing campagne en de slagverhoudingen van het geheime voorgeheugen te verhogen. Bestaande omgevingen blijven ongewijzigd. [ leer meer ](/help/implementing/dispatcher/caching.md#marketing-parameters).
+Voor nieuwe milieu&#39;s, zal CDN marketing verwante vraagparameters door gebrek verwijderen om de prestaties van de marketing campagne en de slagverhoudingen van het geheime voorgeheugen te verhogen. Bestaande omgevingen blijven ongewijzigd. [&#x200B; leer meer &#x200B;](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
 ### Programma voor vroege adoptie van verkeersfilterregels (inclusief WAF-regels) {#waf-early-adopter}
 
@@ -129,12 +129,12 @@ Het verkeer van de filter bij CDN die op wordt gebaseerd:
 
 Wilt u de functie proberen en feedback delen? Verzend een e-mail naar **aemcs-waf-adopter@adobe.com** van uw officiële e-mailidentiteitskaart om meer over het vroege adoptieprogramma te leren. De ruimte is beperkt.
 
-Leer meer over de eigenschap in het artikel [ hier ](/help/security/traffic-filter-rules-including-waf.md).
+Leer meer over de eigenschap in het artikel [&#x200B; hier &#x200B;](/help/security/traffic-filter-rules-including-waf.md).
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.

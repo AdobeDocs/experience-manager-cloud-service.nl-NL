@@ -18,7 +18,7 @@ Leer hoe u meerdere Git-opslagruimten beheert wanneer u met Cloud Manager werkt.
 
 ## Persoonlijke Git-opslagruimten synchroniseren {#syncing-customer-managed-git-repositories}
 
-In plaats van direct werkend met de bewaarplaats van de Git van Cloud Manager, [ kunnen de klanten met hun eigen privé bewaarplaats van het Git ](integrating-with-git.md) of veelvoudige eigen bewaarplaatsen van het Git werken. In deze gevallen moet u een geautomatiseerd synchronisatieproces opzetten om ervoor te zorgen dat de Git-opslagplaats in Cloud Manager altijd up-to-date blijft.
+In plaats van direct werkend met de bewaarplaats van de Git van Cloud Manager, [&#x200B; kunnen de klanten met hun eigen privé bewaarplaats van het Git &#x200B;](integrating-with-git.md) of veelvoudige eigen bewaarplaatsen van het Git werken. In deze gevallen moet u een geautomatiseerd synchronisatieproces opzetten om ervoor te zorgen dat de Git-opslagplaats in Cloud Manager altijd up-to-date blijft.
 
 Afhankelijk van waar de gegevensopslagplaats van het Git van de klant wordt ontvangen, zou een actie GitHub of een ononderbroken integratieoplossing zoals Jenkins aan opstelling de automatisering kunnen worden gebruikt. Met een automatische installatie kan elke push naar een Git-opslagplaats in eigendom van de klant automatisch worden doorgestuurd naar de Cloud Manager Git-opslagplaats.
 

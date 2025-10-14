@@ -16,11 +16,11 @@ ht-degree: 0%
 Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun productieomgeving op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
 
 >[!NOTE]
->Terwijl de primaire stroom van het inhoudsexemplaar van hogere milieu&#39;s aan lagere milieu&#39;s is, een extra vermogen - **Voorwaartse Stroom** - staat het kopiëren van lagere niet productiemilieu&#39;s aan hogere niet productiemilieu&#39;s (bijvoorbeeld Dev → Stadium, RDE → Stadium) toe. Zie [ Beperkingen ](#limitations) voor details, met inbegrip van beschikbaarheidsvereisten.
+>Terwijl de primaire stroom van het inhoudsexemplaar van hogere milieu&#39;s aan lagere milieu&#39;s is, een extra vermogen - **Voorwaartse Stroom** - staat het kopiëren van lagere niet productiemilieu&#39;s aan hogere niet productiemilieu&#39;s (bijvoorbeeld Dev → Stadium, RDE → Stadium) toe. Zie [&#x200B; Beperkingen &#x200B;](#limitations) voor details, met inbegrip van beschikbaarheidsvereisten.
 
 ## Inleiding {#introduction}
 
-De huidige, echte gegevens zijn waardevol voor het testen, de bevestiging, en de gebruiker-aanvaarding doeleinden. Het inhoudsexemplaarhulpmiddel laat u inhoud van een milieu van productieAEM as a Cloud Service aan een het opvoeren, ontwikkeling, of [ Snelle Milieu van de Ontwikkeling (RDE) ](/help/implementing/developing/introduction/rapid-development-environments.md) milieu voor zulk het testen kopiëren.
+De huidige, echte gegevens zijn waardevol voor het testen, de bevestiging, en de gebruiker-aanvaarding doeleinden. Het inhoudsexemplaarhulpmiddel laat u inhoud van een milieu van productieAEM as a Cloud Service aan een het opvoeren, ontwikkeling, of [&#x200B; Snelle Milieu van de Ontwikkeling (RDE) &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md) milieu voor zulk het testen kopiëren.
 
 De inhoud die moet worden gekopieerd, wordt gedefinieerd door een inhoudsset. Een inhoudsset bestaat uit een lijst met JCR-paden die de veranderbare inhoud bevatten die van een ontwerpomgeving van een bron naar een ontwerpomgeving van een doel binnen hetzelfde Cloud Manager-programma moet worden gekopieerd. De volgende paden zijn toegestaan in een inhoudsset.
 
@@ -43,26 +43,26 @@ Als u het gereedschap Inhoud kopiëren wilt gebruiken, zijn bepaalde machtiginge
 
 | Functie Inhoud kopiëren | AEM-beheergroep | Implementatiebeheerfunctie |
 |---|---|---|
-| Creeer en wijzig [ inhoudssets ](#create-content-set) | Niet vereist | Vereist |
-| Begin of annuleer het [ proces van het inhoudsexemplaar ](#copy-content) | Vereist | Vereist |
+| Creeer en wijzig [&#x200B; inhoudssets &#x200B;](#create-content-set) | Niet vereist | Vereist |
+| Begin of annuleer het [&#x200B; proces van het inhoudsexemplaar &#x200B;](#copy-content) | Vereist | Vereist |
 
-Voor meer details op toestemmingen en hoe te om hen te plaatsen, zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md).
+Voor meer details op toestemmingen en hoe te om hen te plaatsen, zie [&#x200B; het Team van AEM as a Cloud Service en de Profielen van het Product &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Een inhoudsset maken {#create-content-set}
 
 Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nadat deze is gedefinieerd, kunnen inhoudssets opnieuw worden gebruikt om inhoud te kopiëren. Voer de volgende stappen uit, zodat u een inhoudsset kunt maken.
 
-1. Logon aan Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma.
+1. Logon aan Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma.
 
 1. Gebruikend het zijnavigatievenster, navigeer aan het **lusje van de Reeksen van de Inhoud** van de **Overzicht** pagina.
 
 1. Bij top-right van het scherm, klik **toevoegen Inhoud plaatste**.
 
-   ![ Inhoudsreeksen ](assets/content-sets.png)
+   ![&#x200B; Inhoudsreeksen &#x200B;](assets/content-sets.png)
 
 1. Op het **lusje van Details** van de tovenaar, verstrek een naam en een beschrijving voor de geplaatste inhoud en selecteer **verdergaan**.
 
-   ![ Inhoud plaatste details ](assets/add-content-set-details.png)
+   ![&#x200B; Inhoud plaatste details &#x200B;](assets/add-content-set-details.png)
 
 1. Op het **lusje van de Wegen van de Inhoud** van de tovenaar, specificeer de wegen van de veranderlijke inhoud die in de inhoudreeks moet worden omvat.
 
@@ -71,7 +71,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nad
    1. Klik **voeg Weg** opnieuw toe zonodig.
       * Er zijn maximaal 50 paden toegestaan.
 
-   ![ voegt wegen aan inhoud toe plaatste ](assets/add-content-set-paths.png)
+   ![&#x200B; voegt wegen aan inhoud toe plaatste &#x200B;](assets/add-content-set-paths.png)
 
 1. Als u de inhoudenset moet verfijnen of beperken, kunnen subpaden worden uitgesloten.
 
@@ -82,14 +82,14 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nad
       * Uitgesloten paden moeten relatief zijn ten opzichte van het ingesloten pad.
       * Het aantal uitgesloten paden is niet beperkt.
 
-   ![ Excluding wegen ](assets/add-content-set-paths-excluded.png)
+   ![&#x200B; Excluding wegen &#x200B;](assets/add-content-set-paths-excluded.png)
 
 1. U kunt de opgegeven paden desgewenst bewerken.
 
    1. Klik op de X naast de uitgesloten subpaden, zodat u deze kunt verwijderen.
    1. Klik de ellipsknoop naast de wegen zodat kunt u **openbaren uitgeven** en **schrapping** opties.
 
-   ![ het Uitgeven weglijst ](assets/add-content-set-excluded-paths.png)
+   ![&#x200B; het Uitgeven weglijst &#x200B;](assets/add-content-set-excluded-paths.png)
 
 1. Selecteer **creeer** om de geplaatste inhoud tot stand te brengen.
 
@@ -99,7 +99,7 @@ De inhoudenset kan nu worden gebruikt om inhoud tussen omgevingen te kopiëren.
 
 Voer vergelijkbare stappen uit als bij het maken van een stap Inhoud. In plaats van het klikken **voeg Geplaatste Inhoud** toe, selecteer een bestaande reeks van de console, en selecteer **uitgeven** van het ellipsmenu.
 
-![ geef inhoudreeks ](assets/edit-content-set.png) uit
+![&#x200B; geef inhoudreeks &#x200B;](assets/edit-content-set.png) uit
 
 Wanneer u de inhoudenset bewerkt, kunt u de geconfigureerde paden uitbreiden om de uitgesloten subpaden zichtbaar te maken.
 
@@ -108,9 +108,9 @@ Wanneer u de inhoudenset bewerkt, kunt u de geconfigureerde paden uitbreiden om 
 Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëren. Voer de volgende stappen uit om inhoud te kopiëren.
 
 >[!NOTE]
-> Gebruik geen inhoudsexemplaar op een milieu terwijl de verrichting van de a [ inhoudsoverdracht ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) op dat milieu loopt.
+> Gebruik geen inhoudsexemplaar op een milieu terwijl de verrichting van de a [&#x200B; inhoudsoverdracht &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) op dat milieu loopt.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
 1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
@@ -118,7 +118,7 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
 
 1. Selecteer een inhoud die van de console wordt geplaatst en selecteer **Inhoud van het Exemplaar** van het ellipsmenu.
 
-   ![ exemplaar van de Inhoud ](assets/copy-content.png)
+   ![&#x200B; exemplaar van de Inhoud &#x200B;](assets/copy-content.png)
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
 
 1. In de **inhoud van het Exemplaar** dialoog, specificeer de bron en de bestemming voor uw actie van het inhoudsexemplaar.
 
-   ![ het Kopiëren inhoud ](assets/copying-content.png)
+   ![&#x200B; het Kopiëren inhoud &#x200B;](assets/copying-content.png)
 
    * Inhoud kan alleen worden gekopieerd van een hogere omgeving naar een lagere omgeving of tussen ontwikkelings-/RDE-omgevingen waarin de hiërarchie van omgevingen als volgt is (van hoogste naar laagste):
       * Productie
@@ -148,13 +148,13 @@ Het kopieerproces wordt gestart. De status van het kopieerproces wordt weerspieg
 
 U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit van de Inhoud van het Exemplaar controleren**.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
 1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
 1. Navigeer aan de **pagina van de Activiteit van de Inhoud van het Exemplaar** van het **milieu&#39;s** scherm.
 
-![ Activiteit van het Exemplaar van de Inhoud ](assets/copy-content-activity.png)
+![&#x200B; Activiteit van het Exemplaar van de Inhoud &#x200B;](assets/copy-content-activity.png)
 
 ### Statussen van inhoud kopiëren {#statuses}
 
@@ -173,7 +173,7 @@ Als u een bewerking voor het kopiëren van inhoud moet afbreken nadat u deze heb
 
 Om dit, op de **pagina van de Activiteit van de Inhoud van het Exemplaar** te doen, selecteer **annuleer** actie van het elliptische menu van het exemplaarproces u eerder begon.
 
-![ annuleer inhoudsexemplaar ](assets/content-copy-cancel.png)
+![&#x200B; annuleer inhoudsexemplaar &#x200B;](assets/content-copy-cancel.png)
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ U kunt de logbestanden controleren op zowel de bron- als de doelomgeving voor ee
 
 Om dit, op de **pagina van de Activiteit van de Inhoud van het Exemplaar** te doen, selecteer de **Logboeken** actie van het elliptische menu van het exemplaarproces waarvoor u de logboeken en dan kiezen waarvoor milieu zou willen herzien.
 
-![ Toegang tot logboeken voor het proces van de exemplaarinhoud ](assets/copy-content-logs.png)
+![&#x200B; Toegang tot logboeken voor het proces van de exemplaarinhoud &#x200B;](assets/copy-content-logs.png)
 
 De logbestanden worden naar uw lokale computer gedownload. Als het downloaden niet begint, controleert u de instellingen van de pop-upblokkering.
 
@@ -205,4 +205,4 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 * Het gereedschap voor het kopiëren van inhoud heeft geen versiemogelijkheid en kan niet automatisch gewijzigde inhoud of gemaakte inhoud detecteren in de bronomgeving in een inhoudenset sinds de laatste bewerking voor het kopiëren van inhoud.
    * Als u uw doelomgeving alleen wilt bijwerken met wijzigingen in de inhoud, moet u sinds de laatste bewerking voor het kopiëren van inhoud een inhoudsset maken. Geef vervolgens de paden op in de broninstantie waar wijzigingen zijn aangebracht sinds de laatste bewerking voor het kopiëren van inhoud.
 * Versiegegevens worden niet opgenomen in een inhoudskopie.
-* [ de Modellen van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) kunnen verwijzingsgebieden specificeren die op universeel unieke IDs (UUID) worden gebaseerd. Dergelijke UUIDs is opslagplaats-specifiek, zodat zal het hulpmiddel van de inhoudkopie deze UUIDs in het doelmilieu opnieuw berekenen wanneer het kopiëren van Inhoudsfragmenten.
+* [&#x200B; de Modellen van de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) kunnen verwijzingsgebieden specificeren die op universeel unieke IDs (UUID) worden gebaseerd. Dergelijke UUIDs is opslagplaats-specifiek, zodat zal het hulpmiddel van de inhoudkopie deze UUIDs in het doelmilieu opnieuw berekenen wanneer het kopiëren van Inhoudsfragmenten.

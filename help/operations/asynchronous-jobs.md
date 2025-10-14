@@ -77,7 +77,7 @@ Er zijn verscheidene opties rond asynchrone banen die kunnen worden gevormd. De 
 
 >[!NOTE]
 >
->[ OSGi configuraties ](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) worden beschouwd als veranderlijke inhoud en om het even welke dergelijke configuraties moeten als inhoudspakket voor een productiemilieu worden opgesteld.
+>[&#x200B; OSGi configuraties &#x200B;](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) worden beschouwd als veranderlijke inhoud en om het even welke dergelijke configuraties moeten als inhoudspakket voor een productiemilieu worden opgesteld.
 
 ### Voltooide taken wissen {#purging-completed-jobs}
 
@@ -138,6 +138,6 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 
 >[!MORELIKETHIS]
 >
->* [ het Leiden Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+>* [&#x200B; het Leiden Pagina&#39;s &#x200B;](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Importeer/exporteer metadata van assets bulksgewijs](/help/assets/metadata-import-export.md).
 >* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).

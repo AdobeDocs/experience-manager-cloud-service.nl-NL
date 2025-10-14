@@ -16,13 +16,13 @@ ht-degree: 0%
 
 Dit artikel introduceert de geavanceerde netwerkfuncties die beschikbaar zijn in AEM as a Cloud Service. Deze eigenschappen omvatten zelfbediening en API levering van VPN, niet-standaardhavens, en specifieke uitgangIP adressen.
 
-Naast deze documentatie, is er ook een reeks leerprogramma&#39;s die worden ontworpen om u door elk van de geavanceerde voorzien van een netwerkopties te lopen. Zie [ Geavanceerde voorzien van een netwerk ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+Naast deze documentatie, is er ook een reeks leerprogramma&#39;s die worden ontworpen om u door elk van de geavanceerde voorzien van een netwerkopties te lopen. Zie [&#x200B; Geavanceerde voorzien van een netwerk &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
 
 >[!IMPORTANT]
 >
 >U kunt geavanceerde netwerken configureren in AEM as a Cloud Service via de gebruikersinterface van Cloud Manager of met de Cloud Manager-API (bijvoorbeeld cURL).
 >
->Dit artikel richt zich op het gebruiken van de methode UI. Als u verkiezen configuratie door API te automatiseren, zie het [ Virtuele privé netwerk (VPN) leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Dit artikel richt zich op het gebruiken van de methode UI. Als u verkiezen configuratie door API te automatiseren, zie het [&#x200B; Virtuele privé netwerk (VPN) leerprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 >**het Automatiseren van geavanceerd voorzien van een netwerk met API**
 >Om geavanceerde voorzien van een netwerkopstelling (zoals de verwezenlijking van VPN) te automatiseren, kunt u Cloud Manager API gebruiken:
@@ -44,22 +44,22 @@ Naast deze documentatie, is er ook een reeks leerprogramma&#39;s die worden ontw
 >   }'
 >```
 >
->Zie het volledige leerprogramma en meer API voorbeelden in het [ Virtuele privé netwerk (VPN) leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Zie het volledige leerprogramma en meer API voorbeelden in het [&#x200B; Virtuele privé netwerk (VPN) leerprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 
 ## Overzicht {#overview}
 
 AEM as a Cloud Service biedt de volgende geavanceerde netwerkopties:
 
-* [ Flexibele havenuitgang ](#flexible-port-egress) - Vorm AEM as a Cloud Service om uitgaand verkeer uit niet-standaardhavens toe te staan.
-* [ Dedicated egress IP adres ](#dedicated-egress-ip-address) - vorm verkeer uit AEM as a Cloud Service om uit unieke IP voort te komen.
-* [ Virtueel Privé Netwerk (VPN) ](#vpn) - Beveilig verkeer tussen uw infrastructuur en AEM as a Cloud Service, als u VPN hebt.
+* [&#x200B; Flexibele havenuitgang &#x200B;](#flexible-port-egress) - Vorm AEM as a Cloud Service om uitgaand verkeer uit niet-standaardhavens toe te staan.
+* [&#x200B; Dedicated egress IP adres &#x200B;](#dedicated-egress-ip-address) - vorm verkeer uit AEM as a Cloud Service om uit unieke IP voort te komen.
+* [&#x200B; Virtueel Privé Netwerk (VPN) &#x200B;](#vpn) - Beveilig verkeer tussen uw infrastructuur en AEM as a Cloud Service, als u VPN hebt.
 
 In dit artikel worden deze opties gedetailleerd beschreven en wordt uitgelegd waarom u ze kunt gebruiken, voordat u beschrijft hoe ze zijn geconfigureerd met de Cloud Manager-gebruikersinterface en door de API te gebruiken. Het artikel sluit af met enkele gevallen van geavanceerd gebruik.
 
 >[!CAUTION]
 >
->Als u reeds provisioned met erfenis specifieke toegangstechnologie bent en één van deze geavanceerde voorzien van een netwerkopties wilt vormen, [ contacteer de Zorg van de Cliënt van Adobe ](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager#home).
+>Als u reeds provisioned met erfenis specifieke toegangstechnologie bent en één van deze geavanceerde voorzien van een netwerkopties wilt vormen, [&#x200B; contacteer de Zorg van de Cliënt van Adobe &#x200B;](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager#home).
 >
 >Het proberen om geavanceerd voorzien van een netwerk met erfenisegress technologie te vormen kan plaatsconnectiviteit beïnvloeden.
 
@@ -68,11 +68,11 @@ In dit artikel worden deze opties gedetailleerd beschreven en wordt uitgelegd wa
 Bij het configureren van geavanceerde netwerkfuncties gelden de volgende beperkingen.
 
 * Een programma kan één enkele geavanceerde voorzien van een netwerkoptie (flexibele havenuitgang, specifiek uitgang IP adres, of VPN) verstrekken.
-* Het geavanceerde voorzien van een netwerk is niet beschikbaar voor [ zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+* Het geavanceerde voorzien van een netwerk is niet beschikbaar voor [&#x200B; zandbakprogramma&#39;s &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 * Een gebruiker moet de **rol van de Beheerder** hebben om netwerkinfrastructuur in uw programma toe te voegen en te vormen.
 * De productieomgeving moet worden gemaakt voordat netwerkinfrastructuur in uw programma kan worden toegevoegd.
 * Uw netwerkinfrastructuur moet zich in het zelfde gebied bevinden zoals het primaire gebied van uw productiemilieu.
-   * In het geval waar uw productiemilieu [ extra heeft publiceer gebieden ](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), kunt u een andere netwerkinfrastructuur creëren die elk extra gebied weerspiegelt.
+   * In het geval waar uw productiemilieu [&#x200B; extra heeft publiceer gebieden &#x200B;](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), kunt u een andere netwerkinfrastructuur creëren die elk extra gebied weerspiegelt.
    * U mag geen netwerkinfrastructuur maken die groter is dan het maximumaantal regio&#39;s dat in uw productieomgeving is geconfigureerd.
    * U kunt zo vele netwerkinfrastructuur als beschikbare gebieden in uw productiemilieu bepalen, maar de nieuwe infrastructuur moet het zelfde type zijn zoals de eerder gecreeerde infrastructuur.
    * Wanneer u meerdere infrastructuren maakt, kunt u alleen die gebieden selecteren waar geen geavanceerde netwerkinfrastructuur is gemaakt.
@@ -81,8 +81,8 @@ Bij het configureren van geavanceerde netwerkfuncties gelden de volgende beperki
 
 Het gebruik van geavanceerde netwerkfuncties vereist twee stappen:
 
-1. Configuratie van de geavanceerde voorzien van een netwerkoptie, of [ flexibele havenuitgang ](#flexible-port-egress), [ specifiek uitgangIP adres ](#dedicated-egress-ip-address), of [ VPN ](#vpn), eerst op het programmaniveau moet worden gedaan.
-1. Om te worden gebruikt, moet de geavanceerde voorzien van een netwerkoptie [ dan worden toegelaten op het milieuniveau ](#enabling).
+1. Configuratie van de geavanceerde voorzien van een netwerkoptie, of [&#x200B; flexibele havenuitgang &#x200B;](#flexible-port-egress), [&#x200B; specifiek uitgangIP adres &#x200B;](#dedicated-egress-ip-address), of [&#x200B; VPN &#x200B;](#vpn), eerst op het programmaniveau moet worden gedaan.
+1. Om te worden gebruikt, moet de geavanceerde voorzien van een netwerkoptie [&#x200B; dan worden toegelaten op het milieuniveau &#x200B;](#enabling).
 
 Beide stappen kunnen worden uitgevoerd met de gebruikersinterface van Cloud Manager of de Cloud Manager-API.
 
@@ -104,26 +104,26 @@ Met deze geavanceerde netwerkfunctie kunt u AEM as a Cloud Service zo configurer
 
 ### UI-configuratie {#configuring-flexible-port-egress-provision-ui}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
 1. Van de **pagina van het Overzicht van het Programma**, navigeer aan het **milieu&#39;s** lusje en selecteer **Infrastructuur van het Netwerk** in het linkerpaneel.
 
-   ![ Toevoegend netwerkinfrastructuur ](assets/advanced-networking-ui-network-infrastructure.png)
+   ![&#x200B; Toevoegend netwerkinfrastructuur &#x200B;](assets/advanced-networking-ui-network-infrastructure.png)
 
 1. In **voeg de tovenaar van de netwerkinfrastructuur** toe, uitgezochte **Flexibele havenuitgang**.
 1. Van het **gebied** drop-down menu, kies het gewenste gebied, dan klik **verdergaan**.
 
-   ![ het Vormen flexibele havenuitgang ](assets/advanced-networking-ui-flexible-port-egress.png)
+   ![&#x200B; het Vormen flexibele havenuitgang &#x200B;](assets/advanced-networking-ui-flexible-port-egress.png)
 
 1. Het **lusje van de Bevestiging** vat uw selectie en de volgende stappen samen. Klik **sparen** om de infrastructuur tot stand te brengen.
 
-   ![ Bevestigende configuratie van flexibel havenuitgang ](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
+   ![&#x200B; Bevestigende configuratie van flexibel havenuitgang &#x200B;](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
 Een nieuw verslag verschijnt onder de **rubriek van de Infrastructuur van het Netwerk** in het zijpaneel. Het omvat details zoals het type van infrastructuur, status, gebied, en de milieu&#39;s waar het wordt toegelaten.
 
-![ Nieuwe ingang onder de Infrastructuur van het Netwerk ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![&#x200B; Nieuwe ingang onder de Infrastructuur van het Netwerk &#x200B;](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -133,11 +133,11 @@ Een nieuw verslag verschijnt onder de **rubriek van de Infrastructuur van het Ne
 
 Eenmaal per programma wordt het eindpunt POST `/program/<programId>/networkInfrastructures` aangeroepen, waarbij de waarde `flexiblePortEgress` voor de parameter en het gebied `kind` gewoon wordt doorgegeven. Het eindpunt reageert met `network_id` en andere informatie, waaronder de status.
 
-Eenmaal geroepen, duurt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur. Een vraag aan het Cloud Manager [ eindpunt van GET van de netwerkinfrastructuur ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) zou een status van **klaar** tonen.
+Eenmaal geroepen, duurt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur. Een vraag aan het Cloud Manager [&#x200B; eindpunt van GET van de netwerkinfrastructuur &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) zou een status van **klaar** tonen.
 
 >[!TIP]
 >
->De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [ kan in de API documentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
+>De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [&#x200B; kan in de API documentatie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
 
 ### Verkeer dat {#flexible-port-egress-traffic-routing}
 
@@ -248,7 +248,7 @@ Het zelfde specifieke IP wordt toegepast op alle milieu&#39;s in een programma, 
 
 Zonder de specifieke IP toegelaten adreseigenschap, stroomt het verkeer van AEM as a Cloud Service door een gedeelde reeks IPs. Deze IPs wordt gebruikt door andere klanten van AEM as a Cloud Service.
 
-Het vormen van een specifiek uitgangIP adres is gelijkaardig aan [ flexibele havenuitgang ](#flexible-port-egress). Het belangrijkste verschil is dat na configuratie, het verkeer altijd van specifieke, unieke IP zal weggaan. Om dat IP te vinden, gebruik DNS resolver om het IP adres te identificeren verbonden aan `p{PROGRAM_ID}.external.adobeaemcloud.com`. Het IP adres wordt verwacht niet te veranderen, maar als het moet veranderen, wordt het geavanceerde bericht verstrekt.
+Het vormen van een specifiek uitgangIP adres is gelijkaardig aan [&#x200B; flexibele havenuitgang &#x200B;](#flexible-port-egress). Het belangrijkste verschil is dat na configuratie, het verkeer altijd van specifieke, unieke IP zal weggaan. Om dat IP te vinden, gebruik DNS resolver om het IP adres te identificeren verbonden aan `p{PROGRAM_ID}.external.adobeaemcloud.com`. Het IP adres wordt verwacht niet te veranderen, maar als het moet veranderen, wordt het geavanceerde bericht verstrekt.
 
 >[!TIP]
 >
@@ -266,26 +266,26 @@ Het vormen van een specifiek uitgangIP adres is gelijkaardig aan [ flexibele hav
 
 ### UI-configuratie {#configuring-dedicated-egress-provision-ui}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
 1. Van de **pagina van het Overzicht van het Programma**, navigeer aan het **milieu&#39;s** lusje en selecteer **Infrastructuur van het Netwerk** in het linkerpaneel.
 
-   ![ Toevoegend netwerkinfrastructuur ](assets/advanced-networking-ui-network-infrastructure.png)
+   ![&#x200B; Toevoegend netwerkinfrastructuur &#x200B;](assets/advanced-networking-ui-network-infrastructure.png)
 
 1. In **voeg netwerkinfrastructuur** tovenaar toe die opent, klik **Dedicated IP adres van de uitgang**.
 1. Van het **gebied** drop-down menu, kies het gewenste gebied, dan klik **verdergaan**.
 
-   ![ Vormend specifiek uitgangIP adres ](assets/advanced-networking-ui-dedicated-egress.png)
+   ![&#x200B; Vormend specifiek uitgangIP adres &#x200B;](assets/advanced-networking-ui-dedicated-egress.png)
 
 1. Het **lusje van de Bevestiging** vat uw selectie en de volgende stappen samen. Klik **sparen** om de infrastructuur tot stand te brengen.
 
-   ![ Bevestigende configuratie van flexibel havenuitgang ](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
+   ![&#x200B; Bevestigende configuratie van flexibel havenuitgang &#x200B;](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
 Een nieuw verslag verschijnt onder de **rubriek van de Infrastructuur van het Netwerk** in het zijpaneel. Het omvat details zoals het type van infrastructuur, status, gebied, en de milieu&#39;s waar het wordt toegelaten.
 
-![ Nieuwe ingang onder de Infrastructuur van het Netwerk ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![&#x200B; Nieuwe ingang onder de Infrastructuur van het Netwerk &#x200B;](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -295,11 +295,11 @@ Een nieuw verslag verschijnt onder de **rubriek van de Infrastructuur van het Ne
 
 Eenmaal per programma wordt het eindpunt POST `/program/<programId>/networkInfrastructures` aangeroepen, waarbij de waarde `dedicatedEgressIp` voor de parameter en het gebied `kind` gewoon wordt doorgegeven. Het eindpunt reageert met `network_id` en andere informatie, waaronder de status.
 
-Eenmaal geroepen, duurt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur. Een vraag aan het Cloud Manager [ eindpunt van GET van de netwerkinfrastructuur ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) zou een status van **klaar** tonen.
+Eenmaal geroepen, duurt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur. Een vraag aan het Cloud Manager [&#x200B; eindpunt van GET van de netwerkinfrastructuur &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) zou een status van **klaar** tonen.
 
 >[!TIP]
 >
->De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [ kan in de API documentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
+>De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [&#x200B; kan in de API documentatie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
 
 ### Verkeer dat {#dedicated-egress-ip-traffic-routing}
 
@@ -404,8 +404,8 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 Sommige bibliotheken vereisen expliciete configuratie om standaard Java™ systeemeigenschappen voor volmachtsconfiguraties te gebruiken.
 
 Een voorbeeld dat Apache HttpClient gebruikt die expliciete vraag aan vereist
-[`HttpClientBuilder.useSystemProperties()` ](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) of gebruik
-[`HttpClients.createSystem()` ](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()) :
+[`HttpClientBuilder.useSystemProperties()` &#x200B;](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) of gebruik
+[`HttpClients.createSystem()` &#x200B;](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()) :
 
 ```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
@@ -423,13 +423,13 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Foutopsporingsoverwegingen {#debugging-considerations}
 
-Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres, controlelogboeken binnen de bestemmingsdienst, als beschikbaar gaat. Anders, kan het nuttig zijn om uit te roepen aan de het zuiveren dienst zoals [ https://ifconfig.me/ip ](https://ifconfig.me/ip), die het roepende IP adres terugkeert.
+Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres, controlelogboeken binnen de bestemmingsdienst, als beschikbaar gaat. Anders, kan het nuttig zijn om uit te roepen aan de het zuiveren dienst zoals [&#x200B; https://ifconfig.me/ip &#x200B;](https://ifconfig.me/ip), die het roepende IP adres terugkeert.
 
 ## Virtual Private Network (VPN) {#vpn}
 
 VPN staat het verbinden met een infrastructuur op-gebouw of gegevenscentrum van de auteur toe, publiceert, of voorproefinstanties. Deze mogelijkheid kan bijvoorbeeld nuttig zijn om de toegang tot een database te beveiligen. Het staat ook het verbinden met verkopers SaaS zoals een verkoper van CRM toe die VPN steunt.
 
-De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de informatie in de **RouteBased configuratieinstructies** kolom in [ deze lijst van apparaten ](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Configureer het apparaat zoals beschreven in de tabel.
+De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de informatie in de **RouteBased configuratieinstructies** kolom in [&#x200B; deze lijst van apparaten &#x200B;](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Configureer het apparaat zoals beschreven in de tabel.
 
 >[!NOTE]
 >
@@ -440,13 +440,13 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
 
 ### UI-configuratie {#configuring-vpn-ui}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
 1. Van de **pagina van het Overzicht van het Programma**, navigeer aan het **milieu&#39;s** lusje en selecteer **Infrastructuur van het Netwerk** in het linkerpaneel.
 
-   ![ Toevoegend netwerkinfrastructuur ](assets/advanced-networking-ui-network-infrastructure.png)
+   ![&#x200B; Toevoegend netwerkinfrastructuur &#x200B;](assets/advanced-networking-ui-network-infrastructure.png)
 
 1. In **voeg netwerkinfrastructuur** tovenaar toe die begint, **Virtuele privé netwerk** selecteert en de noodzakelijke informatie verstrekt alvorens **te klikken gaat** verder.
 
@@ -459,11 +459,11 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
    * **Gedeelde Sleutel** - Uw VPN preshared sleutel.
       * Selecteer **tonen gedeelde sleutel** om de sleutel te openbaren zodat kunt u zijn waarde tweemaal controleren.
 
-   ![ het Vormen vpn ](assets/advanced-networking-ui-vpn.png)
+   ![&#x200B; het Vormen vpn &#x200B;](assets/advanced-networking-ui-vpn.png)
 
 1. Op het **lusje van Verbindingen** van de tovenaar, verstrek de naam van de a **Verbinding** om uw verbinding van VPN te identificeren en **te klikken voegt Verbinding** toe.
 
-   ![ voeg verbinding ](assets/advanced-networking-ui-vpn-add-connection.png) toe
+   ![&#x200B; voeg verbinding &#x200B;](assets/advanced-networking-ui-vpn-add-connection.png) toe
 
 1. In **voeg verbinding** dialoogdoos toe, bepaal uw verbinding van VPN, dan klik **sparen**.
 
@@ -474,15 +474,15 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
       * Klik op `X` na een bereik om het te verwijderen.
    * **IP het Beleid van de Veiligheid** - pas van de standaardwaarden zoals vereist aan
 
-   ![ Toevoegend een verbinding van VPN ](assets/advanced-networking-ui-vpn-adding-connection.png)
+   ![&#x200B; Toevoegend een verbinding van VPN &#x200B;](assets/advanced-networking-ui-vpn-adding-connection.png)
 
 1. Het dialoogvakje sluit en u keert aan het **lusje van Verbindingen** van de tovenaar terug. Klik **verdergaan**.
 
-   ![ de verbinding van VPN wordt toegevoegd ](assets/advanced-networking-ui-vpn-connection-added.png)
+   ![&#x200B; de verbinding van VPN wordt toegevoegd &#x200B;](assets/advanced-networking-ui-vpn-connection-added.png)
 
 1. Het **lusje van de Bevestiging** vat uw selectie en de volgende stappen samen. Klik **sparen** om de infrastructuur tot stand te brengen.
 
-   ![ Bevestigende configuratie van flexibel havenuitgang ](assets/advanced-networking-ui-vpn-confirm.png)
+   ![&#x200B; Bevestigende configuratie van flexibel havenuitgang &#x200B;](assets/advanced-networking-ui-vpn-confirm.png)
 
 Een nieuw verslag verschijnt onder de **rubriek van de Infrastructuur van het Netwerk** in het zijpaneel. Het omvat details zoals het type van infrastructuur, status, gebied, en de milieu&#39;s waar het wordt toegelaten.
 
@@ -494,7 +494,7 @@ Zodra geroepen, duurt het typisch van 45 tot 60 minuten voor de voorzien van een
 
 >[!TIP]
 >
->De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [ kan in de API documentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
+>De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [&#x200B; kan in de API documentatie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
 
 ### Verkeer dat {#vpn-traffic-routing}
 
@@ -589,7 +589,7 @@ De lijst beschrijft hieronder verkeer dat verplettert.
 
 Het hieronder diagram verstrekt een visuele vertegenwoordiging van een reeks domeinen en bijbehorende IPs die voor configuratie en ontwikkeling nuttig zijn. De lijst verder onder het diagram beschrijft die domeinen en IPs.
 
-![ Configuratie van het Domein van VPN ](/help/security/assets/AdvancedNetworking.jpg)
+![&#x200B; Configuratie van het Domein van VPN &#x200B;](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
@@ -615,7 +615,7 @@ Het hieronder diagram verstrekt een visuele vertegenwoordiging van een reeks dom
 
 ## Geavanceerde netwerkconfiguraties inschakelen voor omgevingen {#enabling}
 
-Zodra u een geavanceerde voorzien van een netwerkoptie voor een programma hebt gevormd, of [ flexibele havenuitgang ](#flexible-port-egress), [ specifiek uitgangIP adres ](#dedicated-egress-ip-address), of [ VPN ](#vpn), om het te gebruiken, moet u het op het milieuniveau toelaten.
+Zodra u een geavanceerde voorzien van een netwerkoptie voor een programma hebt gevormd, of [&#x200B; flexibele havenuitgang &#x200B;](#flexible-port-egress), [&#x200B; specifiek uitgangIP adres &#x200B;](#dedicated-egress-ip-address), of [&#x200B; VPN &#x200B;](#vpn), om het te gebruiken, moet u het op het milieuniveau toelaten.
 
 Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu toelaat, kunt u facultatieve haven ook toelaten door:sturen en niet volmachtsgastheren. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
 
@@ -635,13 +635,13 @@ Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu 
 
 ### UI-interface inschakelen {#enabling-ui}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
 1. Van de **pagina van het Overzicht van het 0&rbrace; Programma, navigeer aan het** milieu **lusje en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder de** milieu&#39;s **rubriek in het linkerpaneel wilt toelaten.** Dan selecteer het **Geavanceerde lusje van de netwerkconfiguratie** van het geselecteerde milieu en klik **netwerkinfrastructuur** toelaten.
 
-   ![ Selecterend milieu zodat kunt u geavanceerde voorzien van een netwerk ](assets/advanced-networking-ui-enable-environments.png) toelaten
+   ![&#x200B; Selecterend milieu zodat kunt u geavanceerde voorzien van een netwerk &#x200B;](assets/advanced-networking-ui-enable-environments.png) toelaten
 
 1. Het **vormt geavanceerde voorzien van een netwerkdialoog** opent.
 
@@ -652,7 +652,7 @@ Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu 
    * Klik op de X rechts van de rij als u een host wilt verwijderen.
    * Dit lusje is niet beschikbaar voor flexibele configuraties van de havenuitgang.
 
-   ![ Toevoegend niet-volmachtsgastheren ](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
+   ![&#x200B; Toevoegend niet-volmachtsgastheren &#x200B;](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
 1. Op de **Haven door:sturen** tabel, kunt u naar keuze haven bepalen door:sturen regels voor om het even welke bestemmingshavens buiten 80/443 als het gebruiken van HTTP of HTTPS. Verstrek a **Naam**, **Haven Orig**, en **Poort Dest** en klik **toevoegen**.
 
@@ -660,13 +660,13 @@ Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu 
    * Herhaal deze stap als u meerdere regels wilt toevoegen.
    * Klik op de X rechts van de rij als u een regel wilt verwijderen.
 
-   ![ het bepalen van facultatieve haven door:sturen ](assets/advanced-networking-ui-port-forwards.png)
+   ![&#x200B; het bepalen van facultatieve haven door:sturen &#x200B;](assets/advanced-networking-ui-port-forwards.png)
 
 1. Klik **sparen** in de dialoogdoos zodat kunt u de configuratie op het milieu toepassen.
 
 De geavanceerde voorzien van een netwerkconfiguratie wordt toegepast op het geselecteerde milieu. Terug op het **lusje van Milieu&#39;s**, kunt u de details van de configuratie zien die op het geselecteerde milieu en hun status wordt toegepast.
 
-![ Milieu die met geavanceerde voorzien van een netwerk ](assets/advanced-networking-ui-configured-environment.png) wordt gevormd
+![&#x200B; Milieu die met geavanceerde voorzien van een netwerk &#x200B;](assets/advanced-networking-ui-configured-environment.png) wordt gevormd
 
 ### De API inschakelen {#enabling-api}
 
@@ -682,11 +682,11 @@ Zelfs als er geen milieu verkeer zijn dat regels (gastheren of omleidingen) verp
 
 >[!TIP]
 >
->De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [ kan in de API documentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
+>De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [&#x200B; kan in de API documentatie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
 
 ## Geavanceerde netwerkconfiguraties in omgevingen bewerken en verwijderen {#editing-deleting-environments}
 
-Na [ toelatend geavanceerde voorzien van een netwerkconfiguraties aan milieu&#39;s ](#enabling), kunt u de details van die configuraties bijwerken of hen schrappen.
+Na [&#x200B; toelatend geavanceerde voorzien van een netwerkconfiguraties aan milieu&#39;s &#x200B;](#enabling), kunt u de details van die configuraties bijwerken of hen schrappen.
 
 >[!NOTE]
 >
@@ -694,17 +694,17 @@ Na [ toelatend geavanceerde voorzien van een netwerkconfiguraties aan milieu&#39
 
 ### Bewerken of verwijderen met de gebruikersinterface {#editing-ui}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
 1. Van de **pagina van het Overzicht van het 0&rbrace; Programma, navigeer aan het** milieu **lusje en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder de** milieu&#39;s **rubriek in het linkerpaneel wilt toelaten.** Dan selecteer het **Geavanceerde lusje van de netwerkconfiguratie** van het geselecteerde milieu en klik de ellipsis knoop.
 
-   ![ Selecterend geef uit of schrap van geavanceerd voorzien van een netwerk op het programmaniveau ](assets/advanced-networking-ui-edit-delete.png)
+   ![&#x200B; Selecterend geef uit of schrap van geavanceerd voorzien van een netwerk op het programmaniveau &#x200B;](assets/advanced-networking-ui-edit-delete.png)
 
 1. In het elliptische menu, uitgezocht of **geef** uit of **schrap**.
 
-   * Als u **kiest geef** uit, werk de informatie per de stappen bij die in de vorige sectie worden beschreven, [ toelatend het Gebruiken van UI ](#enabling-ui), en klik **sparen**.
+   * Als u **kiest geef** uit, werk de informatie per de stappen bij die in de vorige sectie worden beschreven, [&#x200B; toelatend het Gebruiken van UI &#x200B;](#enabling-ui), en klik **sparen**.
    * Als u **Schrapping** kiest, bevestig de schrapping in het **3&rbrace; de dialoogvakje van de het netwerkconfiguratie van de Schrapping &lbrace;met** Schrapping **of aborteer met** annuleert **.**
 
 De veranderingen worden weerspiegeld op het **Milieu** lusje.
@@ -715,7 +715,7 @@ Als u geavanceerde netwerken voor een bepaalde omgeving wilt verwijderen, roept 
 
 >[!TIP]
 >
->De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [ kan in de API documentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
+>De volledige reeks parameters, nauwkeurige syntaxis, en belangrijke informatie als welke parameters niet later kunnen worden veranderd, [&#x200B; kan in de API documentatie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) worden van verwijzingen voorzien.
 
 ## De netwerkinfrastructuur van een programma bewerken en verwijderen {#editing-deleting-program}
 
@@ -732,15 +732,15 @@ Zodra de netwerkinfrastructuur voor een programma wordt gecreeerd, slechts kunne
 
 ### Bewerken en verwijderen met de gebruikersinterface {#delete-ui}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
 1. Van de **pagina van het Overzicht van het Programma**, navigeer aan **Milieu&#39;s** tabel.
 1. In het linkerpaneel, klik **de Infrastructuur van het Netwerk**.
-1. Klik ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de infrastructuur die u wilt schrappen.
+1. Klik ![&#x200B; Meer pictogram, ellips &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de infrastructuur die u wilt schrappen.
 
-   ![ Selecterend geef uit of schrap van geavanceerd voorzien van een netwerk op het programmaniveau ](assets/advanced-networking-ui-delete-infrastructure.png)
+   ![&#x200B; Selecterend geef uit of schrap van geavanceerd voorzien van een netwerk op het programmaniveau &#x200B;](assets/advanced-networking-ui-delete-infrastructure.png)
 
 1. Klik of **uitgeven** of **Schrapping**.
 
@@ -762,10 +762,10 @@ Het is slechts mogelijk om één type van geavanceerde voorzien van een netwerki
 
 Als u besluit dat u een ander geavanceerd type van voorzien van een netwerkinfrastructuur dan reeds hebt gevormd, schrap bestaande, en creeer andere. Ga als volgt te werk:
 
-1. [ Schrap geavanceerd voorzien van een netwerk in alle milieu&#39;s ](#editing-deleting-environments).
-1. [ Schrap de geavanceerde voorzien van een netwerkinfrastructuur ](#editing-deleting-program).
-1. Creeer het geavanceerde type van voorzien van een netwerkinfrastructuur u nu vereist, of [ flexibel havenuitgang ](#flexible-port-egress), [ specifiek uitgangIP adres ](#dedicated-egress-ip-address), of [ VPN ](#vpn).
-1. [ Vernieuwbare geavanceerde voorzien van een netwerk op het milieuniveau ](#enabling).
+1. [&#x200B; Schrap geavanceerd voorzien van een netwerk in alle milieu&#39;s &#x200B;](#editing-deleting-environments).
+1. [&#x200B; Schrap de geavanceerde voorzien van een netwerkinfrastructuur &#x200B;](#editing-deleting-program).
+1. Creeer het geavanceerde type van voorzien van een netwerkinfrastructuur u nu vereist, of [&#x200B; flexibel havenuitgang &#x200B;](#flexible-port-egress), [&#x200B; specifiek uitgangIP adres &#x200B;](#dedicated-egress-ip-address), of [&#x200B; VPN &#x200B;](#vpn).
+1. [&#x200B; Vernieuwbare geavanceerde voorzien van een netwerk op het milieuniveau &#x200B;](#enabling).
 
 >[!WARNING]
 >
@@ -778,7 +778,7 @@ Wanneer een extra gebied aan een milieu met geavanceerd reeds gevormd voorzien v
 
 >[!NOTE]
 >
->Alle gebieden delen [ milieu geavanceerde voorzien van een netwerkconfiguratie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), zodat is het niet mogelijk om verkeer aan verschillende bestemmingen te leiden die op het gebied worden gebaseerd het verkeer uit weggaat.
+>Alle gebieden delen [&#x200B; milieu geavanceerde voorzien van een netwerkconfiguratie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), zodat is het niet mogelijk om verkeer aan verschillende bestemmingen te leiden die op het gebied worden gebaseerd het verkeer uit weggaat.
 
 ### Specifieke IP van de Eis Adressen {#additional-publish-regions-dedicated-egress}
 
@@ -794,8 +794,8 @@ Als een geavanceerde voorzien van een netwerkconfiguratie reeds in het primaire 
 
 De procedure is grotendeels vergelijkbaar met de voorgaande instructies. Nochtans, als het productiemilieu nog niet voor geavanceerd voorzien van een netwerk is toegelaten, is er een kans om de configuratie te testen door het in een het opvoeren milieu eerst toe te laten:
 
-1. Creeer voorzien van een netwerkinfrastructuur voor alle gebieden door een vraag van de POST aan [ Cloud Manager creeert de Infrastructuur API van het Netwerk ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot het primaire gebied is het gebiedbezit.
-1. Voor de het opvoeren milieu, laat en vormt het milieu scoped geavanceerde voorzien van een netwerk toe door `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` in werking te stellen. Voor meer informatie, zie [ de API documentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. Creeer voorzien van een netwerkinfrastructuur voor alle gebieden door een vraag van de POST aan [&#x200B; Cloud Manager creeert de Infrastructuur API van het Netwerk &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot het primaire gebied is het gebiedbezit.
+1. Voor de het opvoeren milieu, laat en vormt het milieu scoped geavanceerde voorzien van een netwerk toe door `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` in werking te stellen. Voor meer informatie, zie [&#x200B; de API documentatie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. Sluit indien nodig externe infrastructuur af, bij voorkeur met FQDN (bijvoorbeeld `p1234.external.adobeaemcloud.com` ). U kunt het anders doen door IP adres
 1. Als het het opvoeren milieu zoals verwacht werkt, laat en vormt de milieu-scoped geavanceerde voorzien van een netwerkconfiguratie voor productie toe.
 

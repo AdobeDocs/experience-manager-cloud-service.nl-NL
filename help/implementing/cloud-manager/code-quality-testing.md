@@ -25,17 +25,17 @@ Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de k
 
 Bij het testen van de codekwaliteit wordt uw toepassingscode geëvalueerd op basis van een set kwaliteitsregels. Het is het primaire doel van een code-kwaliteit slechts pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle productie en niet-productiepijpleidingen.
 
-Zie [ Vormend Uw CI-CD Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) om meer over verschillende soorten pijpleidingen te leren.
+Zie [&#x200B; Vormend Uw CI-CD Pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) om meer over verschillende soorten pijpleidingen te leren.
 
 ## Codekwaliteitsregels {#understanding-code-quality-rules}
 
-Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Deze stap wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met OakPAL. Er zijn meer dan 100 regels, die generieke regels van Java en AEM-specifieke regels combineren. Sommige AEM-specifieke regels zijn gebaseerd op beste praktijken van AEM Techniek en zijn gekend als [ de kwaliteitsregels van de douanecode ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Deze stap wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met OakPAL. Er zijn meer dan 100 regels, die generieke regels van Java en AEM-specifieke regels combineren. Sommige AEM-specifieke regels zijn gebaseerd op beste praktijken van AEM Techniek en zijn gekend als [&#x200B; de kwaliteitsregels van de douanecode &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
-U kunt de huidige volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+U kunt de huidige volledige lijst van regels [&#x200B; downloaden gebruikend deze verbinding &#x200B;](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 >[!IMPORTANT]
 >
->Beginnend Donderdag, 13 Februari, 2025 (Cloud Manager 2025.2.0), gebruikt de Kwaliteit van de Code van Cloud Manager een bijgewerkte versie SonarQube 9.9 en een bijgewerkte lijst van regels die u hier [ kunt downloaden ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
+>Beginnend Donderdag, 13 Februari, 2025 (Cloud Manager 2025.2.0), gebruikt de Kwaliteit van de Code van Cloud Manager een bijgewerkte versie SonarQube 9.9 en een bijgewerkte lijst van regels die u hier [&#x200B; kunt downloaden &#x200B;](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Waarderingen met drie lagen {#three-tiered-gate}
 
@@ -74,7 +74,7 @@ De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor
 
 >[!NOTE]
 >
->Meer over de de kwaliteitsregels van de douanecode leren die door [!UICONTROL Cloud Manager] worden in werking gesteld, zie [ de Regels van de Kwaliteit van de Code van de Douane ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>Meer over de de kwaliteitsregels van de douanecode leren die door [!UICONTROL Cloud Manager] worden in werking gesteld, zie [&#x200B; de Regels van de Kwaliteit van de Code van de Douane &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Werken met valse positieven {#dealing-with-false-positives}
 
@@ -111,7 +111,7 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 >Hoewel het aan te raden is de annotatie `@SuppressWarnings` zo specifiek mogelijk te maken (bijvoorbeeld alleen de instructie of het blok dat de uitgave veroorzaakt aanwijzen), is het ook mogelijk om een annotatie op klasseniveau te maken.
 
 >[!NOTE]
->Terwijl er geen expliciete veiligheidsteststap is, zijn er veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Zie [ Overzicht van de Veiligheid voor AEM as a Cloud Service ](/help/security/cloud-service-security-overview.md) om meer over veiligheid in Cloud Service te leren.
+>Terwijl er geen expliciete veiligheidsteststap is, zijn er veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Zie [&#x200B; Overzicht van de Veiligheid voor AEM as a Cloud Service &#x200B;](/help/security/cloud-service-security-overview.md) om meer over veiligheid in Cloud Service te leren.
 
 ## Optimalisatie van inhoudspakketscannen {#content-package-scanning-optimization}
 

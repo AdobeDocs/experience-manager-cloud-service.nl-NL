@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Sling Resource Merger verleent de diensten om tot middelen toegang te hebben en samen te voegen. Het verstrekt afdiff (differentiërende) mechanismen voor allebei:
 
-* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)** van middelen die de [ onderzoekspaden ](/help/implementing/developing/introduction/overlays.md#search-paths) gebruiken.
+* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)** van middelen die de [&#x200B; onderzoekspaden &#x200B;](/help/implementing/developing/introduction/overlays.md#search-paths) gebruiken.
 
 * **treedt** van componentendialogen voor aanraking-toegelaten UI (`cq:dialog`) met voeten, gebruikend de hiërarchie van het middeltype (door middel van het bezit `sling:resourceSuperType`).
 
@@ -25,7 +25,7 @@ Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getred
 
 * De inhoud van de aangepaste definitie heeft een hogere prioriteit dan die van origineel (namelijk het *bekledingen* of *met voeten treedt* het).
 
-* Waar noodzakelijk, [ eigenschappen ](#properties) die in de aanpassing worden bepaald, wijzen erop hoe de inhoud die van origineel wordt samengevoegd moet worden gebruikt.
+* Waar noodzakelijk, [&#x200B; eigenschappen &#x200B;](#properties) die in de aanpassing worden bepaald, wijzen erop hoe de inhoud die van origineel wordt samengevoegd moet worden gebruikt.
 
 >[!CAUTION]
 >
@@ -46,7 +46,7 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 >
 >De reden hiervoor is dat de inhoud van `/libs` kan worden overschreven wanneer upgrades op uw instantie worden toegepast.
 >
->* De bekledingen zijn afhankelijk van [ onderzoekspaden ](/help/implementing/developing/introduction/overlays.md#search-paths).
+>* De bekledingen zijn afhankelijk van [&#x200B; onderzoekspaden &#x200B;](/help/implementing/developing/introduction/overlays.md#search-paths).
 >
 >* Overschrijvingen zijn niet afhankelijk van de zoekpaden, maar maken de verbinding met de eigenschap `sling:resourceSuperType` .
 >

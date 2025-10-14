@@ -54,7 +54,7 @@ De anatomie bevat gegevens met de volgende invoermodi:
 
 ## Stap 2: Een formuliergegevensmodel maken
 
-Met een formuliergegevensmodel kunt u een interactieve communicatie verbinden met verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful-webservices, SOAP-gebaseerde webservices, OData-services en relationele databases. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Voor meer informatie over het model van vormgegevens, zie [ de Integratie van Gegevens van AEM Forms ](/help/forms/data-integration.md).
+Met een formuliergegevensmodel kunt u een interactieve communicatie verbinden met verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful-webservices, SOAP-gebaseerde webservices, OData-services en relationele databases. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Voor meer informatie over het model van vormgegevens, zie [&#x200B; de Integratie van Gegevens van AEM Forms &#x200B;](/help/forms/data-integration.md).
 
 ## Stap 3: fragmenten maken
 

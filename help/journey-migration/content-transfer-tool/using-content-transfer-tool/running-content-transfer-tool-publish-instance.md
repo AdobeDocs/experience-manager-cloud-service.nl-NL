@@ -18,7 +18,7 @@ ht-degree: 0%
 Met het gereedschap Inhoud overbrengen (CTT) kunt u geen inhoudanalyse uitvoeren voordat u inhoud van de broninstantie naar de doelinstantie overbrengt. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een Publish-omgeving. De inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. Een gebruiker heeft de mogelijkheid om een migratieset in te voeren in een Author-instantie, een Publish-instantie of beide.
 
 >[!NOTE]
->Het wordt aanbevolen om tijdens het verplaatsen van inhoud naar een instantie Production Content Transfer Tool te installeren op de instantie van de bronauteur om inhoud naar de instantie van de doelauteur te verplaatsen en op dezelfde manier Content Transfer Tool op de Publish-broninstantie te installeren om inhoud naar de Publish-doelinstantie te verplaatsen. Zie [ Aanbevolen Benadering ](#recommended-approach) hieronder sectie voor meer details.
+>Het wordt aanbevolen om tijdens het verplaatsen van inhoud naar een instantie Production Content Transfer Tool te installeren op de instantie van de bronauteur om inhoud naar de instantie van de doelauteur te verplaatsen en op dezelfde manier Content Transfer Tool op de Publish-broninstantie te installeren om inhoud naar de Publish-doelinstantie te verplaatsen. Zie [&#x200B; Aanbevolen Benadering &#x200B;](#recommended-approach) hieronder sectie voor meer details.
 
 ## Aanbevolen aanpak {#recommended-approach}
 

@@ -28,9 +28,9 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 
 | Eigenschap gegevens | Beschrijving |
 |---|---|
-| `data-aue-resource` | URL aan het middel, zie het sectie [ Instrument de Pagina van het document dat met de Universele Redacteur in AEM ](getting-started.md#instrument-thepage) wordt begonnen |
-| `data-aue-prop` | Attribuut van het middel, zie het sectie [ Instrument de Pagina van het document dat met de Universele Redacteur in AEM ](getting-started.md#instrument-thepage) wordt begonnen |
-| `data-aue-type` | [ Type van het editable punt ](#item-types) (bijvoorbeeld, tekst, beeld, en verwijzing) |
+| `data-aue-resource` | URL aan het middel, zie het sectie [&#x200B; Instrument de Pagina van het document dat met de Universele Redacteur in AEM &#x200B;](getting-started.md#instrument-thepage) wordt begonnen |
+| `data-aue-prop` | Attribuut van het middel, zie het sectie [&#x200B; Instrument de Pagina van het document dat met de Universele Redacteur in AEM &#x200B;](getting-started.md#instrument-thepage) wordt begonnen |
+| `data-aue-type` | [&#x200B; Type van het editable punt &#x200B;](#item-types) (bijvoorbeeld, tekst, beeld, en verwijzing) |
 | `data-aue-filter` | Bepaalt:<br> - welke functies RTE <br> - welke componenten aan een container <br> kunnen worden toegevoegd - welke activa aan een media type kunnen worden toegevoegd |
 | `data-aue-label` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven |
 | `data-aue-model` | Definieert een model dat wordt gebruikt voor formulierbewerkingen in het deelvenster Eigenschappen |

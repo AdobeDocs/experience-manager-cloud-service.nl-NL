@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Overzicht van componenten {#components-overview}
 
-Deze pagina verstrekt een overzicht van de componenten van Adobe Experience Manager (AEM) zoals die [ die voor pagina creatie ](/help/sites-cloud/authoring/page-editor/components.md) worden gebruikt.
+Deze pagina verstrekt een overzicht van de componenten van Adobe Experience Manager (AEM) zoals die [&#x200B; die voor pagina creatie &#x200B;](/help/sites-cloud/authoring/page-editor/components.md) worden gebruikt.
 
 ## Wat zijn componenten? {#what-are-components}
 
@@ -26,7 +26,7 @@ Deze pagina verstrekt een overzicht van de componenten van Adobe Experience Mana
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
 * Dialoogvensters van het gebruik die gebruikend subelementen worden gebouwd die op componenten van Granite UI worden gebaseerd.
-* Zij worden ontwikkeld gebruikend [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL).
+* Zij worden ontwikkeld gebruikend [&#x200B; HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL).
 * Ze kunnen worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
 
 Omdat componenten modulair zijn, kunt u:
@@ -44,13 +44,13 @@ Elke AEM component:
 
 ## AEM-kerncomponenten {#aem-core-components}
 
-[ de Componenten van de Kern van de AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en de onderhoudskosten van uw websites te drukken.
+[&#x200B; de Componenten van de Kern van de AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en de onderhoudskosten van uw websites te drukken.
 
-De Componenten van de Kern worden voorzien van AEM as a Cloud Service en het [ WKND Leerprogramma ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustreert hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
+De Componenten van de Kern worden voorzien van AEM as a Cloud Service en het [&#x200B; WKND Leerprogramma &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustreert hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
 
 ### Beschikbare componenten weergeven {#viewing-available-components}
 
-Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik de [ Console van Componenten ](/help/sites-cloud/authoring/components-console.md).
+Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik de [&#x200B; Console van Componenten &#x200B;](/help/sites-cloud/authoring/components-console.md).
 
 U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 

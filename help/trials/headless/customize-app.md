@@ -41,7 +41,7 @@ U start in de Content Fragment Editor met de voorbeeldtoepassing die bij de proe
 
 1. Ga terug naar het browsertabblad van de editor voor inhoudsfragmenten om door te gaan.
 
-![ Voorproef app ](assets/do-not-localize/preview-app-1.png)
+![&#x200B; Voorproef app &#x200B;](assets/do-not-localize/preview-app-1.png)
 
 ## Een koptekst bewerken in de app {#edit-app}
 
@@ -49,7 +49,7 @@ In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven
 
 1. Selecteer **Biker Mtn in Canyon** in de **3&rbrace; sectie van Comités &lbrace;.**
 
-   ![ Uitgezochte tekstpaneel ](assets/do-not-localize/edit-header-1.png)
+   ![&#x200B; Uitgezochte tekstpaneel &#x200B;](assets/do-not-localize/edit-header-1.png)
 
 1. De redacteur opent omhoog het kopbalpaneel van app voor de bergbiker. Elk deelvenster bestaat uit lagen die verschillende afbeeldingen en tekst vertegenwoordigen die de ervaring bepalen.
 
@@ -61,7 +61,7 @@ In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven
 
 1. Selecteer **Voorproef** bij het hoogste recht van het venster om uw veranderingen te zien. De voorvertoning van de demo-app wordt op een nieuw tabblad geopend.
 
-   ![ demo app voorproef ](assets/do-not-localize/edit-header-5-6.png)
+   ![&#x200B; demo app voorproef &#x200B;](assets/do-not-localize/edit-header-5-6.png)
 
 Zo eenvoudig is het om inhoud bij te werken in een React-app wanneer deze is geïntegreerd in AEM headless CMS.
 
@@ -73,13 +73,13 @@ Nu u een kopregel in de app hebt gewijzigd, kunt u proberen een afbeelding te wi
 
 1. U moet terugkeren naar de juiste plaats in de editor voor inhoudsfragmenten. De broodkruimels bij top-left van de redacteur tonen waar u in uw inhoudshiërarchie bent. Selecteer **Biker Mtn in Canyon** in de broodkruimels om aan die pagina terug te keren.
 
-   ![ Broodkruimels ](assets/do-not-localize/swap-image-2.png)
+   ![&#x200B; Broodkruimels &#x200B;](assets/do-not-localize/swap-image-2.png)
 
 1. Selecteer de **Biking Mtn - de beeldlaag van de Biker**. Hiermee opent u de editor voor inhoudsfragmenten
 
 1. Selecteer **X** om het bikerbeeld te verwijderen. De afbeelding verdwijnt en in de editor wordt een fout weergegeven omdat de afbeelding vereiste gegevens is voor dit model van inhoudsfragment.
 
-   ![ verwijder beeld uit fragment ](assets/do-not-localize/swap-image-4.png)
+   ![&#x200B; verwijder beeld uit fragment &#x200B;](assets/do-not-localize/swap-image-4.png)
 
 1. Selecteer **activa** toevoegen en dan **doorbladeren Assets** in pop-up menu.
 
@@ -97,7 +97,7 @@ Het is zo eenvoudig om afbeeldingen en middelen in uw apps bij te werken met AEM
 
 Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inhoud aan een app toevoegt door een nieuw inhoudsfragment te maken en ernaar te verwijzen. U voegt een productcall-out beheerd door een &quot;shoppable moment&quot; inhoudsfragment toe aan het tweede paneel van de app.
 
-![ Voorbeeld van een shoppable moment ](assets/do-not-localize/example-shoppable-moment.png)
+![&#x200B; Voorbeeld van een shoppable moment &#x200B;](assets/do-not-localize/example-shoppable-moment.png)
 
 1. Keer terug naar het browserlusje van de redacteur van het Fragment van de Inhoud van het voorproeflusje.
 
@@ -109,7 +109,7 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
 
 1. Als u een call-out wilt maken in dit deelvenster, maakt u een schokkend moment met een inhoudsfragment. Selecteer de knop **+ Nieuw fragment maken** .
 
-   ![ voeg een shoppable ogenblik ](assets/do-not-localize/add-reference-1-5.png) toe
+   ![&#x200B; voeg een shoppable ogenblik &#x200B;](assets/do-not-localize/add-reference-1-5.png) toe
 
 1. U moet eerst een model kiezen waarop u het nieuwe inhoudsfragment wilt baseren. Selecteer het **model van het Punt van de Moment 0&rbrace; Vervormbaar &lbrace;van het** model van het Fragment van de Inhoud **drop-down.**
 
@@ -117,7 +117,7 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
 
 1. Selecteer **creeer en open**.
 
-   ![ Naam het shoppable moment ](assets/do-not-localize/add-reference-6-7-8.png)
+   ![&#x200B; Naam het shoppable moment &#x200B;](assets/do-not-localize/add-reference-6-7-8.png)
 
 1. De editor wordt geopend voor het nieuwe inhoudsfragment.
 
@@ -130,6 +130,6 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
 
 1. Selecteer **Voorproef** bij het hoogste recht van het venster om uw veranderingen te zien. De voorvertoning van de demo-app wordt op een nieuw tabblad geopend. Klik verfrissen zich op browser om het plaatsen te testen en aanpassingen aan te brengen zoals nodig in de redacteur.
 
-   ![ Voorproef ](assets/do-not-localize/add-reference-10-11-12.png)
+   ![&#x200B; Voorproef &#x200B;](assets/do-not-localize/add-reference-10-11-12.png)
 
 Nu begrijpt u hoe u nieuwe inhoud kunt maken en ernaar kunt verwijzen als een inhoudsfragment in uw app zonder ontwikkelingscycli.

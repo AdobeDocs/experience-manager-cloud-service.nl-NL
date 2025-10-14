@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Zoeken in Assets API {#search-assets-api}
 
-Alle [ goedgekeurde activa ](approve-assets.md) beschikbaar in de activa van Experience Manager bewaarplaats kan worden gezocht en dan aan geïntegreerde stroomafwaartse toepassingen worden geleverd gebruikend een Levering URL.
+Alle [&#x200B; goedgekeurde activa &#x200B;](approve-assets.md) beschikbaar in de activa van Experience Manager bewaarplaats kan worden gezocht en dan aan geïntegreerde stroomafwaartse toepassingen worden geleverd gebruikend een Levering URL.
 
 Het zoeken naar de juiste goedgekeurde middelen van de Experience Manager-opslagplaats is de eerste stap naar het leveren van middelen via de bezorgings-URL. Het antwoord op het zoekverzoek bestaat uit een array van JSON-documenten die overeenkomen met de elementen die aan de zoekcriteria voldoen. Elk JSON-document wordt geïdentificeerd met behulp van een `id` -veld, dat wordt gebruikt om de aanvraag voor het leveren van elementen samen te stellen.
 
-![ Overzicht van direct binair upload protocol ](assets/search-assets-api-overview.png)
+![&#x200B; Overzicht van direct binair upload protocol &#x200B;](assets/search-assets-api-overview.png)
 
 U kunt eigenschappen definiëren in de aanvraag Zoeken in Assets API om de volgende mogelijkheden in te schakelen:
 
@@ -56,6 +56,6 @@ headers: {
     },
 ```
 
-Om de zoek-API aan te roepen, is een IMS-token vereist om in de `Authorization` -details te definiëren. De token IMS wordt opgehaald van een technische account. Zie [ Vetsen de Referenties van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#fetch-the-aem-as-a-cloud-service-credentials) om een nieuwe technische rekening tot stand te brengen. Zie [ Genererend het toegangstoken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#generating-the-access-token) om het teken IMS te produceren en het te gebruiken geschikt in de activaAPI van het Onderzoek verzoekkopbal.
+Om de zoek-API aan te roepen, is een IMS-token vereist om in de `Authorization` -details te definiëren. De token IMS wordt opgehaald van een technische account. Zie [&#x200B; Vetsen de Referenties van AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#fetch-the-aem-as-a-cloud-service-credentials) om een nieuwe technische rekening tot stand te brengen. Zie [&#x200B; Genererend het toegangstoken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#generating-the-access-token) om het teken IMS te produceren en het te gebruiken geschikt in de activaAPI van het Onderzoek verzoekkopbal.
 
-Om verzoeksteekproeven, reactiemonsters, en reactiecodes te bekijken, zie [ Onderzoek Assets API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search).
+Om verzoeksteekproeven, reactiemonsters, en reactiecodes te bekijken, zie [&#x200B; Onderzoek Assets API &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search).

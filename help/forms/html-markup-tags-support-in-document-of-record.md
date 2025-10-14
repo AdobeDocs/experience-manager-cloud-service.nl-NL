@@ -34,7 +34,7 @@ U zou vertrouwd met moeten zijn:
 
 ### Overwegingen
 
-Het Document of Record (DoR) kan een gelabelde PDF zijn die de toegankelijkheid en juiste structuur voor ondersteunende hulpmiddelen helpt te garanderen. Om geëtiketteerde output van PDF toe te laten, [ plaats het bezit XCI `config/present/pdf/tagged` aan `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nadat u de PDF hebt gegenereerd, is het belangrijk te controleren of toegankelijkheidstags correct zijn toegepast. U kunt [ Adobe Acrobat gebruiken om toegankelijkheidstags ](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) te controleren en uw document te verzekeren voldoet aan toegankelijkheidsnormen.
+Het Document of Record (DoR) kan een gelabelde PDF zijn die de toegankelijkheid en juiste structuur voor ondersteunende hulpmiddelen helpt te garanderen. Om geëtiketteerde output van PDF toe te laten, [&#x200B; plaats het bezit XCI `config/present/pdf/tagged` aan `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nadat u de PDF hebt gegenereerd, is het belangrijk te controleren of toegankelijkheidstags correct zijn toegepast. U kunt [&#x200B; Adobe Acrobat gebruiken om toegankelijkheidstags &#x200B;](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) te controleren en uw document te verzekeren voldoet aan toegankelijkheidsnormen.
 
 ### Nieuwe functies
 

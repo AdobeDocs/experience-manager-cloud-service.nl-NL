@@ -41,13 +41,13 @@ Door een herhaalbare sectie in een formulier te maken, kunnen gebruikers meerder
 
    Wijs bijvoorbeeld `experience` aan in de eigenschap Veldset van alle relevante velden die moeten worden opgenomen in de sectie `employment history` .
 
-   ![ voorbeeld van een herhaalbaar sectieveld en zijn eigenschappen ](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
+   ![&#x200B; voorbeeld van een herhaalbaar sectieveld en zijn eigenschappen &#x200B;](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
-1. Het gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef en publiceert het blad. De herhaalbare sectie wordt toegevoegd aan het formulier.
+1. Het gebruik [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef en publiceert het blad. De herhaalbare sectie wordt toegevoegd aan het formulier.
 
    Onder de herhaalbare sectie, vinden de gebruikers intuïtieve **toevoegen** knoop, die de toevoeging van veelvoudige secties met gemak vergemakkelijkt.
 
-   ![ herhaalbare sectie, voegt knoop toe, om veelvoudige secties toe te voegen ](/help/edge/assets/repeatable-section-example.png)
+   ![&#x200B; herhaalbare sectie, voegt knoop toe, om veelvoudige secties toe te voegen &#x200B;](/help/edge/assets/repeatable-section-example.png)
 
 
 ## Minimale en maximale herhalingen instellen
@@ -62,9 +62,9 @@ In formulierontwerp is het nuttig minimale en maximale herhalingen voor herhaalb
 
    - Stel de eigenschap `max` in om het maximale aantal keren op te geven dat de sectie kan worden herhaald.
 
-   ![ plaats min en max bezit om het aantal tijden te specificeren de sectie kan worden herhaald ](/help/edge/assets/repeatable-section-set-min-max.png)
+   ![&#x200B; plaats min en max bezit om het aantal tijden te specificeren de sectie kan worden herhaald &#x200B;](/help/edge/assets/repeatable-section-set-min-max.png)
 
-1. Het gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef en publiceert het blad.
+1. Het gebruik [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef en publiceert het blad.
 
    Bij het toevoegen van een herhaalbare sectie, vinden de gebruikers een intuïtief **pictogram van de Schrapping**, makend het gemakkelijker om herhaalbare secties te verwijderen. Nadat deze secties zijn toegevoegd, kunnen ze niet worden verkleind tot minder instanties dan opgegeven door de eigenschap `min` . Op die manier wordt voldaan aan de minimumvereisten die voor het invullen van het formulier zijn ingesteld.
 

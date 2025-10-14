@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -42,7 +42,7 @@ Heb een blik bij de [&#128279;](https://video.tv.adobe.com/v/338253) video van h
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] biedt nu ondersteuning voor het automatisch genereren van teksttranscripties vanaf de ondersteunde audio- en video-elementen via een ingebouwde connector naar [!DNL Azure Media Services] . De [ gesteunde dossiertypes ](/help/assets/file-format-support.md#audio-video-transcription-formats) worden automatisch getranscripeerd en de tekst wordt opgeslagen in formaat WebVTT. De WebVTT-bijschriften worden gebruikt voor effectievere zoekacties, ondertiteling of vertaling. Bovendien verbetert de functie de toegankelijkheid, de ontdekkingsmogelijkheden en de lokalisatie van de middelen.
+* [!DNL Experience Manager] biedt nu ondersteuning voor het automatisch genereren van teksttranscripties vanaf de ondersteunde audio- en video-elementen via een ingebouwde connector naar [!DNL Azure Media Services] . De [&#x200B; gesteunde dossiertypes &#x200B;](/help/assets/file-format-support.md#audio-video-transcription-formats) worden automatisch getranscripeerd en de tekst wordt opgeslagen in formaat WebVTT. De WebVTT-bijschriften worden gebruikt voor effectievere zoekacties, ondertiteling of vertaling. Bovendien verbetert de functie de toegankelijkheid, de ontdekkingsmogelijkheden en de lokalisatie van de middelen.
 
 ### Nieuwe functie in het [!DNL Assets] prereleasekanaal {#assets-prerelease-features}
 
@@ -68,7 +68,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Beta-functies van [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=nl-NL) hulp u een malplaatje en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [&#x200B; Communicatie APIs &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=nl-NL) hulp u een malplaatje en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Genereer documenten door sjabloonbestanden (PDF en XDP) te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
@@ -100,7 +100,7 @@ De volgende release is gepland voor 9 december 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-nov}
 
-* De gebruikers kunnen nieuwe pijpleidingen van het Eind van de Voorzijde nu gebruiken om vooreind code op een versnelde manier uitsluitend op te stellen. Zie [ Cloud Manager Voorste Pijpleidingen van het Eind ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) om meer te leren.
+* De gebruikers kunnen nieuwe pijpleidingen van het Eind van de Voorzijde nu gebruiken om vooreind code op een versnelde manier uitsluitend op te stellen. Zie [&#x200B; Cloud Manager Voorste Pijpleidingen van het Eind &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) om meer te leren.
 
   >[!IMPORTANT]
   >U moet AEM versie `2021.10.5933.20211012T154732Z` zijn om nieuwe Front End pijpleidingen te gebruiken.
@@ -113,7 +113,7 @@ De volgende release is gepland voor 9 december 2021.
 
 * Environment Creation is nu beschikbaar via openbare API.
 
-* De `x-request-id` antwoordkopbal is nu zichtbaar in API Playground op [ www.adobe.io ](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
+* De `x-request-id` antwoordkopbal is nu zichtbaar in API Playground op [&#x200B; www.adobe.io &#x200B;](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
 
 * Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij van de juiste begeleiding voorziet.
 
@@ -162,7 +162,7 @@ De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 okt
 
 * Voeg IP de tovenaar van de Lijst van gewenste personen nu toe zal de gebruiker informeren als maximum toegestaan aantal IP Lijsten van gewenste personen is bereikt.
 
-* De Cloud Manager API-documentatie bevat nu een interactieve afspeelruimte waarmee aangemelde gebruikers vanuit hun browser kunnen experimenteren met de API. Zie [ de Playground van Cloud Manager API ](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) voor meer details.
+* De Cloud Manager API-documentatie bevat nu een interactieve afspeelruimte waarmee aangemelde gebruikers vanuit hun browser kunnen experimenteren met de API. Zie [&#x200B; de Playground van Cloud Manager API &#x200B;](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) voor meer details.
 
 * De knopinfo op de programmakaart is beschrijfbaarder als een selectieoptie onder &#39;Navigeren naar&#39; is uitgeschakeld. Het toont nu &quot;een productiemilieu bestaat niet.&quot;
 

@@ -21,10 +21,10 @@ Leer hoe u Cloud Manager kunt gebruiken om de status van uw SSL-certificaten te 
 
 Cloud Manager geeft een overzicht van de status van alle certificaten voor uw programma.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
-1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
-1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
+1. In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+1. Onder de **rubriek van de Diensten**, klik ![&#x200B; Slot gesloten pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
 
 De **SSL Certificaten** pagina verstrekt de status van uw SSL certificaten.
 
@@ -32,7 +32,7 @@ De **SSL Certificaten** pagina verstrekt de status van uw SSL certificaten.
 | --- | --- |
 | Groen | Het certificaat is ten minste 14 dagen geldig vanaf de huidige datum. |
 | Oranje | Het certificaat verloopt over minder dan 14 dagen.<br>・ Zorg ervoor dat u een abonnement hebt om uw certificaat te vernieuwen en dit te vervangen door de gebruikersinterface van Cloud Manager om mogelijke toegang tot of uitval van de site te voorkomen.<br>・ Cloud Manager verzendt regelmatig meldingen in de gebruikersinterface om u te waarschuwen voor een aanstaande vervaldatum van een certificaat. |
-| Rood | Het SSL-certificaat is verlopen.<br> zie [ Update een verlopen klant beheerde SSL certificaat ](#update-ssl-certificate) of [ Schrap een SSL certificaat ](#deleting-an-ssl-certificate). |
+| Rood | Het SSL-certificaat is verlopen.<br> zie [&#x200B; Update een verlopen klant beheerde SSL certificaat &#x200B;](#update-ssl-certificate) of [&#x200B; Schrap een SSL certificaat &#x200B;](#deleting-an-ssl-certificate). |
 
 ## Een verlopen door de klant beheerd SSL-certificaat bijwerken {#update-ssl-certificate}
 
@@ -46,13 +46,13 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 **om een verlopen klant beheerde SSL certificaat bij te werken:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
-1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
-1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
-1. In de rij van het verlopen klant beheerde certificaat dat u wilt bijwerken, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts, dan klik **Mening en Update**.
+1. In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+1. Onder de **rubriek van de Diensten**, klik ![&#x200B; Slot gesloten pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
+1. In de rij van het verlopen klant beheerde certificaat dat u wilt bijwerken, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts, dan klik **Mening en Update**.
 
-   ![ werk een verlopen klant beheerde SSL certificatie bij ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![&#x200B; werk een verlopen klant beheerde SSL certificatie bij &#x200B;](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. In het **de dialoogvakje van de Mening &amp; van het Certificaat van de Update SSL**, doe het volgende:
 
@@ -68,11 +68,11 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 >
 >Als twee of meer SAN-certificaten dezelfde SAN-domeinvermelding dekken en een van deze certificaten wordt bijgewerkt, installeert het systeem het bijgewerkte certificaat voor het domein.
 >
->Zie [ problemen oplossen SSL van het Certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) voor meer informatie.
+>Zie [&#x200B; problemen oplossen SSL van het Certificaat &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) voor meer informatie.
 
 ## Een verlopen door de klant beheerd SSL-certificaat vervangen {#replace-ssl-certificate}
 
-Volg de zelfde stappen die in [ worden beschreven Werk een verlopen SSL certificaat ](#update-ssl-certificate) bij om een verlopen, klant beheerde SSL certificaat te vervangen.
+Volg de zelfde stappen die in [&#x200B; worden beschreven Werk een verlopen SSL certificaat &#x200B;](#update-ssl-certificate) bij om een verlopen, klant beheerde SSL certificaat te vervangen.
 
 ## De naam wijzigen van een door Adobe beheerd SSL-certificaat (#rename-an-ssl-certificate)
 
@@ -84,15 +84,15 @@ Hieronder volgen enkele redenen waarom u de naam van een SSL-certificaat wilt wi
 
 **om een Adobe beheerde SSL certificaat anders te noemen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+1. In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
 
-1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
+1. Onder de **rubriek van de Diensten**, klik ![&#x200B; Slot gesloten pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
 
-1. Op de **SSL Certificaten** pagina, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan **Adobe** SSL certificaat beheerde u wilt anders noemen.
+1. Op de **SSL Certificaten** pagina, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan **Adobe** SSL certificaat beheerde u wilt anders noemen.
 
 1. In het drop-down menu, klik **anders noemen**.
 
@@ -107,25 +107,25 @@ Het verwijderen van door Adobe beheerde of door de klant beheerde SSL-certificat
 
 >[!NOTE]
 >
->U kunt geen door Adobe beheerd SSL-certificaat verwijderen waaraan een of meer actieve domeinen zijn gekoppeld. Alle gekoppelde actieve domeinen moeten worden verwijderd voordat het SSL-certificaat wordt verwijderd. Zie [ de namen van het douanedomein beheren ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) om meer te leren.
+>U kunt geen door Adobe beheerd SSL-certificaat verwijderen waaraan een of meer actieve domeinen zijn gekoppeld. Alle gekoppelde actieve domeinen moeten worden verwijderd voordat het SSL-certificaat wordt verwijderd. Zie [&#x200B; de namen van het douanedomein beheren &#x200B;](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) om meer te leren.
 
 Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Manager van de Plaatsing** om deze taak te voltooien.
 
 **om een SSL certificaat te schrappen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+1. In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
 
-1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
+1. Onder de **rubriek van de Diensten**, klik ![&#x200B; Slot gesloten pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
 
-1. Voor de SSL pagina van Certificaten, in de lijstrij van het certificaat u wilt schrappen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts, dan klik **Schrapping**.
+1. Voor de SSL pagina van Certificaten, in de lijstrij van het certificaat u wilt schrappen, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts, dan klik **Schrapping**.
 
    Als **Schrapping** een informatiepictogram zoals gezien in het volgende beeld heeft, zie de Nota hierboven.
 
-   ![ knoop van de Schrapping met het pictogram van de Informatie ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
+   ![&#x200B; knoop van de Schrapping met het pictogram van de Informatie &#x200B;](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
 1. In het **SSL van de Schrapping** dialoogvakje, klik **Schrapping** om de schrapping te bevestigen.
 
@@ -138,6 +138,6 @@ Als u reeds een configuratie CDN voor uw SSL certificaat hebt, toont de **SSL Ce
 
 Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan een tot twee werkdagen duren voordat het bericht verdwijnt.
 
-Zie [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer details toevoegen.
+Zie [&#x200B; een SSL certificaat &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer details toevoegen.
 
 Een gelijkaardig bericht wordt ook verstrekt op de **IP Lijst van gewenste personen** en de **milieu&#39;s** pagina&#39;s voor milieu&#39;s die reeds bestaande CDN configuraties voor IP Lijsten van gewenste personen of de namen van het douanedomein hebben.

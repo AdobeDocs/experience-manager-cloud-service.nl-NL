@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## CodePen {#codepen}
 
-CodePen is een online code-editor en afspeellocatie voor webontwikkeling aan de voorkant. Hiermee kunt u HTML-, CSS- en JavaScript-code in uw browser schrijven en de resultaten van uw werk vrijwel direct bekijken. U kunt uw werk ook opslaan en met anderen delen. Adobe heeft een app in CodePen gecreeerd die u kunt gebruiken om JSON- gegevens van uw proefmilieu te halen gebruikend de [ Hoofdloze Cliënt van AEM voor JavaScript ](https://github.com/adobe/aem-headless-client-js). U kunt deze app ongewijzigd gebruiken of deze in uw eigen CodePen-account opnemen om deze verder aan te passen.
+CodePen is een online code-editor en afspeellocatie voor webontwikkeling aan de voorkant. Hiermee kunt u HTML-, CSS- en JavaScript-code in uw browser schrijven en de resultaten van uw werk vrijwel direct bekijken. U kunt uw werk ook opslaan en met anderen delen. Adobe heeft een app in CodePen gecreeerd die u kunt gebruiken om JSON- gegevens van uw proefmilieu te halen gebruikend de [&#x200B; Hoofdloze Cliënt van AEM voor JavaScript &#x200B;](https://github.com/adobe/aem-headless-client-js). U kunt deze app ongewijzigd gebruiken of deze in uw eigen CodePen-account opnemen om deze verder aan te passen.
 
 Het klikken van de **Lancering app van de steekproefCodePen** knoop van de proef neemt u aan app in CodePen. De app dient als minimaal voorbeeld voor het ophalen van JSON-gegevens met JavaScript. De voorbeeld-app is ontworpen om JSON-inhoud te renderen die wordt geretourneerd, ongeacht de structuur van het onderliggende model van inhoudsfragment. De app haalt gegevens op uit een `aem-demo-assets` aanhoudend query dat in uw testomgeving is opgenomen. U dient een JSON-respons te zien die vergelijkbaar is met het volgende:
 
@@ -49,13 +49,13 @@ Het klikken van de **Lancering app van de steekproefCodePen** knoop van de proef
           ...
 ```
 
-Als u in plaats daarvan een fout ziet, controleer de browser console voor meer detail of reik [ door e-mail ](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
+Als u in plaats daarvan een fout ziet, controleer de browser console voor meer detail of reik [&#x200B; door e-mail &#x200B;](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
 
 Nu u een beetje over CodePen kent, zult u dan app vormen om gegevens van de voortgezette vraag te halen u in een vorige module creeerde.
 
 ## JavaScript Code Walkthrough {#code-walkthrough}
 
-De **JS** ruit aan het recht in CodePen bevat JavaScript van voorbeeldapp. Vanaf regel 2 importeert u de AEM Headless Client voor JavaScript vanuit de Skypack CDN. Skypack wordt gebruikt om ontwikkeling zonder bouwstijlstap te vergemakkelijken, maar u kunt de Zwaardeloze Cliënt van AEM met NPM of Gararn in uw eigen projecten ook gebruiken. Controle uit de gebruiksinstructies in [ README ](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) voor verder detail.
+De **JS** ruit aan het recht in CodePen bevat JavaScript van voorbeeldapp. Vanaf regel 2 importeert u de AEM Headless Client voor JavaScript vanuit de Skypack CDN. Skypack wordt gebruikt om ontwikkeling zonder bouwstijlstap te vergemakkelijken, maar u kunt de Zwaardeloze Cliënt van AEM met NPM of Gararn in uw eigen projecten ook gebruiken. Controle uit de gebruiksinstructies in [&#x200B; README &#x200B;](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) voor verder detail.
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
@@ -94,9 +94,9 @@ Op regel 25 geeft u aan van welke GraphQL-query de app gegevens moet ophalen. De
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. Nadat deze wijziging is aangebracht, moet de app automatisch vernieuwen en de onbewerkte JSON-reactie van uw aanhoudende query naar het `#output` div-element afdrukken. Als u een foutenmelding ziet, controleer de console voor extra details. Bereik uit [ door e-mail ](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) als u nog kwesties met deze stap hebt.
+1. Nadat deze wijziging is aangebracht, moet de app automatisch vernieuwen en de onbewerkte JSON-reactie van uw aanhoudende query naar het `#output` div-element afdrukken. Als u een foutenmelding ziet, controleer de console voor extra details. Bereik uit [&#x200B; door e-mail &#x200B;](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) als u nog kwesties met deze stap hebt.
 
-1. Bevat deze JSON precies de eigenschappen die uw app nodig heeft? Als niet, kom terug naar [ inhoud van het Extraheren gebruikend de GraphQL API ](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) het leren gids om veranderingen aan te brengen. Vergeet niet om uw vraag te bewaren en te publiceren zodra u wordt gedaan.
+1. Bevat deze JSON precies de eigenschappen die uw app nodig heeft? Als niet, kom terug naar [&#x200B; inhoud van het Extraheren gebruikend de GraphQL API &#x200B;](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) het leren gids om veranderingen aan te brengen. Vergeet niet om uw vraag te bewaren en te publiceren zodra u wordt gedaan.
 
 ## De JSON-rendering wijzigen {#change-rendering}
 
@@ -120,6 +120,6 @@ De JSON wordt &#39;as-is&#39; weergegeven in een `pre` -tag, die niet te creatie
 
 Deze query levert een JSON-reactie op die afbeeldingen bevat en de functie `resultToDom()` geeft deze inline weer.
 
-![ Resultaat van avonturen-al vraag en resultToDom teruggevende functie ](assets/do-not-localize/adventures-all-query-result.png)
+![&#x200B; Resultaat van avonturen-al vraag en resultToDom teruggevende functie &#x200B;](assets/do-not-localize/adventures-all-query-result.png)
 
 Nu u het werk hebt gedaan om de modellen en vragen te bouwen, kan uw inhoudsteam overnemen met gemak. In de volgende module, toont u van de stroom van de inhoudauteur.

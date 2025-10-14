@@ -24,9 +24,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moeten de SEO-zorgen over veel projecten op Adobe Experience Manager (AEM) as a Cloud Service worden aangepakt. Zie [ SEO en de Beste praktijken van het Beheer URL ](/help/overview/seo-and-url-management.md) voor extra informatie.
+> SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moeten de SEO-zorgen over veel projecten op Adobe Experience Manager (AEM) as a Cloud Service worden aangepakt. Zie [&#x200B; SEO en de Beste praktijken van het Beheer URL &#x200B;](/help/overview/seo-and-url-management.md) voor extra informatie.
 
-[ de Componenten van de Kern van AEM CIF van ](https://github.com/adobe/aem-core-cif-components) verstrekt geavanceerde configuraties om URLs voor product en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). De volgende videodetails hoe te om de `UrlProvider` Dienst en eigenschappen van [ het Schipen Afbeelding ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs voor product en categoriepagina&#39;s aan te passen.
+[&#x200B; de Componenten van de Kern van AEM CIF van &#x200B;](https://github.com/adobe/aem-core-cif-components) verstrekt geavanceerde configuraties om URLs voor product en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). De volgende videodetails hoe te om de `UrlProvider` Dienst en eigenschappen van [&#x200B; het Schipen Afbeelding &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs voor product en categoriepagina&#39;s aan te passen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
@@ -50,7 +50,7 @@ Vormt URLs van de productpagina&#39;s en steunt de volgende opties:
 * `{{page}}.html/{{category}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 
-Als er de [ opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia) is:
+Als er de [&#x200B; opslag van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) is:
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/product-page`
 * `{{sku}}` wordt bijvoorbeeld vervangen door de SKU van het product `VP09`
@@ -69,7 +69,7 @@ Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of prod
 * `{{page}}.html/{{url_path}}.html` (standaardwaarde)
 * `{{page}}.html/{{url_key}}.html`
 
-Als er de [ opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia) is:
+Als er de [&#x200B; opslag van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) is:
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/category-page`
 * `{{url_key}}` wordt vervangen door de eigenschap `url_key` van de categorie
@@ -87,13 +87,13 @@ De de categorie en van de productpagina URL formaten die door de _configuratie v
 
 In de Configuratie van CIF, kan een redacteur een alternatief product of een formaat van de categoriepagina URL selecteren. Als daar niets wordt geselecteerd, valt de implementatie terug naar de systeem-brede configuratie.
 
-Het wijzigen van de URL-indeling van een live website kan een negatief effect hebben op het organische verkeer van uw site. Zie [ Beste praktijken ](#best-practices) hieronder en plant zorgvuldig de verandering van het formaat URL vooraf.
+Het wijzigen van de URL-indeling van een live website kan een negatief effect hebben op het organische verkeer van uw site. Zie [&#x200B; Beste praktijken &#x200B;](#best-practices) hieronder en plant zorgvuldig de verandering van het formaat URL vooraf.
 
-![ Url formaten in de Configuratie van CIF ](assets/store-specific-url-formats.png)
+![&#x200B; Url formaten in de Configuratie van CIF &#x200B;](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
-> De opslag-specifieke configuratie van de formaten URL vereist [ de Componenten 2.6.0 van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) en de recentste versie van de Inhoud van Adobe Experience Manager en Commerce toe:voegen-on.
+> De opslag-specifieke configuratie van de formaten URL vereist [&#x200B; de Componenten 2.6.0 van de Kern van CIF &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) en de recentste versie van de Inhoud van Adobe Experience Manager en Commerce toe:voegen-on.
 
 ## URL&#39;s voor productpagina&#39;s die zijn afgestemd op de categorie {#context-aware-pdps}
 
@@ -115,7 +115,7 @@ Deze eigenschap moet in de _configuratie van de Leverancier van CIF worden toege
 * ze komen overeen met delen van een bepaalde categorie `url_path` vanaf het begin (wazzy prefix matching)
 * of ze komen overeen met de `url_key` -waarde van een bepaalde categorie (exact gedeeltelijke overeenkomst)
 
-Bijvoorbeeld, overweeg de reactie voor a [ productvraag ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) hieronder. Gezien het volgende:
+Bijvoorbeeld, overweeg de reactie voor a [&#x200B; productvraag &#x200B;](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) hieronder. Gezien het volgende:
 
 * de gebruiker bevindt zich op de categoriepagina &quot;New Products / New in Summer 2022&quot;
 * de winkel gebruikt de standaard URL-indeling van de categoriepagina
@@ -156,11 +156,11 @@ Het alternatief &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&
 
 >[!NOTE]
 >
-> Categorie-bewuste product-URL&#39;s vereisen [ CIF Core Components 2.6.0 ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) of nieuwer.
+> Categorie-bewuste product-URL&#39;s vereisen [&#x200B; CIF Core Components 2.6.0 &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) of nieuwer.
 
 ## Specifieke categorie en productpagina&#39;s {#specific-pages}
 
-Het is mogelijk om [ multi-category en productpagina&#39;s ](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md) voor slechts een specifieke ondergroep van categorieën of producten van een catalogus tot stand te brengen.
+Het is mogelijk om [&#x200B; multi-category en productpagina&#39;s &#x200B;](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md) voor slechts een specifieke ondergroep van categorieën of producten van een catalogus tot stand te brengen.
 
 ### Selectiecriteria {#specific-pages-selection}
 
@@ -183,7 +183,7 @@ Specifieke productpagina&#39;s worden geselecteerd door de SKU of de categorie v
 
 >[!NOTE]
 >
-> Het selecteren van specifieke productpagina&#39;s door categorie vereist [ de Componenten 2.6.0 van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) of nieuwer.
+> Het selecteren van specifieke productpagina&#39;s door categorie vereist [&#x200B; de Componenten 2.6.0 van de Kern van CIF &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) of nieuwer.
 
 ### Diepe koppeling {#specific-pages-deep-linking}
 
@@ -201,23 +201,23 @@ Het wordt aanbevolen dat de product- en categoriepagina&#39;s van een catalogusp
 
 >[!NOTE]
 >
-> De volledige steun voor veelvoudige cataloguspagina&#39;s vereist [ Componenten 2.10.0 van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) of nieuwer.
+> De volledige steun voor veelvoudige cataloguspagina&#39;s vereist [&#x200B; Componenten 2.10.0 van de Kern van CIF &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) of nieuwer.
 
 ## Aanpassingen {#customization}
 
 ### Aangepaste URL-indelingen {#custom-url-format}
 
-Om een formaat van douaneURL te verstrekken, kan een project of [`ProductUrlFormat` uitvoeren ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) of de [`CategoryUrlFormat` ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) de dienstinterface en de implementatie registreren als dienst OSGI. Deze implementaties, indien beschikbaar, vervangen de geconfigureerde, vooraf gedefinieerde indeling. Als er veelvoudige geregistreerde implementaties zijn, vervangt één met de hogere de dienstrangschikking degenen met de lagere de dienstrangschikking.
+Om een formaat van douaneURL te verstrekken, kan een project of [`ProductUrlFormat` uitvoeren &#x200B;](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) of de [`CategoryUrlFormat` &#x200B;](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) de dienstinterface en de implementatie registreren als dienst OSGI. Deze implementaties, indien beschikbaar, vervangen de geconfigureerde, vooraf gedefinieerde indeling. Als er veelvoudige geregistreerde implementaties zijn, vervangt één met de hogere de dienstrangschikking degenen met de lagere de dienstrangschikking.
 
 De de formaatimplementaties van douaneURL moeten een paar methodes uitvoeren om een URL van bepaalde parameters te bouwen, en een URL te ontleden om de zelfde parameters respectievelijk terug te keren.
 
 ### Combineren met Sling Mappings {#sling-mapping}
 
-Naast `UrlProvider`, is het ook mogelijk om [ het Schuiven Mappings ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs te herschrijven en te verwerken. Het project van Archetype van AEM verstrekt ook [ een voorbeeldconfiguratie ](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Wijzen voor haven 4503 (te vormen publiceert) en 80 (Dispatcher).
+Naast `UrlProvider`, is het ook mogelijk om [&#x200B; het Schuiven Mappings &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs te herschrijven en te verwerken. Het project van Archetype van AEM verstrekt ook [&#x200B; een voorbeeldconfiguratie &#x200B;](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Wijzen voor haven 4503 (te vormen publiceert) en 80 (Dispatcher).
 
 ### Combineren met AEM Dispatcher {#dispatcher}
 
-URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_rewrite` module te gebruiken. Het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een referentieAEM Dispatcher config die reeds basis[ herschrijft regels ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de geproduceerde grootte omvat.
+URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_rewrite` module te gebruiken. Het [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) verstrekt een referentieAEM Dispatcher config die reeds basis[&#x200B; herschrijft regels &#x200B;](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de geproduceerde grootte omvat.
 
 ## Aanbevolen procedures {#best-practices}
 
@@ -237,7 +237,7 @@ Sommige functies van de CIF URL Provider zijn alleen beschikbaar wanneer u produ
 
 Afhankelijk van de grootte van de catalogus, met name de grootte en diepte van de categoriestructuur, is het wellicht niet verstandig om de volledige `url_path` categorieën in de URL te coderen. In dat geval kan de lengte van de URL worden verminderd door alleen de categorie `url_key` in plaats daarvan op te nemen. Deze methode ondersteunt de meeste functies die beschikbaar zijn wanneer u de categorie `url_path` gebruikt.
 
-Ook, gebruik [ het Schuiven Toewijzingen ](#sling-mapping) om SKU met het product `url_key` te combineren. In de meeste e-commercesystemen, volgt SKU een bepaald formaat en het scheiden van SKU van `url_key` voor inkomende verzoeken zou gemakkelijk moeten mogelijk zijn. Daarom moet het mogelijk zijn om de URL van een productpagina te herschrijven naar `/p/{{category}}/{{sku}}-{{url_key}}.html` en een categorie-URL naar `/c/{{url_key}}.html` . Het voorvoegsel `/p` en `/c` zijn nog steeds nodig om product- en categoriepagina&#39;s te onderscheiden van andere inhoudspagina&#39;s.
+Ook, gebruik [&#x200B; het Schuiven Toewijzingen &#x200B;](#sling-mapping) om SKU met het product `url_key` te combineren. In de meeste e-commercesystemen, volgt SKU een bepaald formaat en het scheiden van SKU van `url_key` voor inkomende verzoeken zou gemakkelijk moeten mogelijk zijn. Daarom moet het mogelijk zijn om de URL van een productpagina te herschrijven naar `/p/{{category}}/{{sku}}-{{url_key}}.html` en een categorie-URL naar `/c/{{url_key}}.html` . Het voorvoegsel `/p` en `/c` zijn nog steeds nodig om product- en categoriepagina&#39;s te onderscheiden van andere inhoudspagina&#39;s.
 
 ### Migreren naar een nieuwe URL-indeling {#migrate-url-formats}
 
@@ -245,11 +245,11 @@ Veel van de standaard-URL-indelingen zijn op de een of andere manier compatibel 
 
 Aan de andere kant hebben zoekprogramma&#39;s tijd nodig om alle cataloguspagina&#39;s opnieuw in te delen met de nieuwe URL-indeling. Om dit proces te ondersteunen en ook de gebruikerservaring te verbeteren, wordt aanbevolen om omleidingen te bieden die de gebruiker van de oude URL&#39;s naar de nieuwe URL&#39;s sturen.
 
-Eén manier om dat mogelijk te doen, is een werkgebiedomgeving verbinden met de back-end van de e-commerce productie en deze zodanig configureren dat de nieuwe URL-indeling wordt gebruikt. Daarna verkrijg de [ product sitemap die door de producten van CIF wordt geproduceerd de generator van sitemap ](/help/overview/seo-and-url-management.md) voor zowel het stadium als het productiemilieu, en gebruik hen om een [ Apache httpd te creëren kaart ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) herschrijft. Deze herschrijfkaart kan vervolgens samen met de uitrol van de nieuwe URL-indeling worden geïmplementeerd op de Dispatcher.
+Eén manier om dat mogelijk te doen, is een werkgebiedomgeving verbinden met de back-end van de e-commerce productie en deze zodanig configureren dat de nieuwe URL-indeling wordt gebruikt. Daarna verkrijg de [&#x200B; product sitemap die door de producten van CIF wordt geproduceerd de generator van sitemap &#x200B;](/help/overview/seo-and-url-management.md) voor zowel het stadium als het productiemilieu, en gebruik hen om een [&#x200B; Apache httpd te creëren kaart &#x200B;](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) herschrijft. Deze herschrijfkaart kan vervolgens samen met de uitrol van de nieuwe URL-indeling worden geïmplementeerd op de Dispatcher.
 
 ## Voorbeeld {#example}
 
-Het [ project van de opslag van de Verwijzing van 0&rbrace; Venia &lbrace;omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen. ](https://github.com/adobe/aem-cif-guides-venia) Met deze configuratie kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Een combinatie van CIF `UrlProvider` en Sling Mappings zoals hierboven beschreven wordt gebruikt.
+Het [&#x200B; project van de opslag van de Verwijzing van 0&rbrace; Venia &lbrace;omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen. &#x200B;](https://github.com/adobe/aem-cif-guides-venia) Met deze configuratie kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Een combinatie van CIF `UrlProvider` en Sling Mappings zoals hierboven beschreven wordt gebruikt.
 
 >[!NOTE]
 >
@@ -257,6 +257,6 @@ Het [ project van de opslag van de Verwijzing van 0&rbrace; Venia &lbrace;omvat 
 
 ## Aanvullende bronnen {#additional}
 
-* [ de opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia)
-* [ het Middel van AEM Afbeelding ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
-* [ Sling Mappings ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+* [&#x200B; de opslag van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia)
+* [&#x200B; het Middel van AEM Afbeelding &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [&#x200B; Sling Mappings &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

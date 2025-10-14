@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Ontwerpen voor AEM als een CMS zonder koppen - Een inleiding {#author-headless-introduction}
 
-In dit deel van de [ Hoofdloze Reis van de Auteur van de Inhoud van AEM ](overview.md), kunt u de (basis) concepten en de terminologie noodzakelijk leren om auteursinhoud te begrijpen wanneer het gebruiken van Adobe Experience Manager (AEM) as a Cloud Service als Headless CMS. Dit betekent dat u inhoud zonder kop moet structureren en maken.
+In dit deel van de [&#x200B; Hoofdloze Reis van de Auteur van de Inhoud van AEM &#x200B;](overview.md), kunt u de (basis) concepten en de terminologie noodzakelijk leren om auteursinhoud te begrijpen wanneer het gebruiken van Adobe Experience Manager (AEM) as a Cloud Service als Headless CMS. Dit betekent dat u inhoud zonder kop moet structureren en maken.
 
 ## Doelstelling {#objective}
 
@@ -74,19 +74,19 @@ Voor AEM zal de rol van de Architect van de Inhoud (vaak een verschillende perso
 
 ## Volgende functies {#whats-next}
 
-Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [ de grondbeginselen van het schrijven van de Fragmenten van de Inhoud ](basics.md) leren. Dit zal de basisbehandeling van AEM samen met hoe te om de Fragments van de Inhoud introduceren.
+Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [&#x200B; de grondbeginselen van het schrijven van de Fragmenten van de Inhoud &#x200B;](basics.md) leren. Dit zal de basisbehandeling van AEM samen met hoe te om de Fragments van de Inhoud introduceren.
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
 
-* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
+* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
 
 * AEM Headless Developer Journey
    * [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
    * [Leer hoe u uw inhoud kunt modelleren](/help/journey-headless/developer/model-your-content.md)
 
-* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [&#x200B; AEM Developer Portal &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
 
 * [AEM Headless Content Architect Reis](/help/journey-headless/architect/overview.md)
 

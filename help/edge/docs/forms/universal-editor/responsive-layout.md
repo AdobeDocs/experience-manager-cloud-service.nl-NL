@@ -62,10 +62,10 @@ Door uw formulieren op verschillende apparaten te testen, kunt u problemen die o
 **Stap 1: Open de Mededinger van het Apparaat**
 
 1. Open het formulier in de Universal Editor.
-2. Klik het ![ pictogram van de Mededinger ](/help/edge/docs/forms/universal-editor/assets/emulator.png) {height=2%,width=2%} **Emulator** pictogram in de toolbar.
+2. Klik het ![&#x200B; pictogram van de Mededinger &#x200B;](/help/edge/docs/forms/universal-editor/assets/emulator.png) {height=2%,width=2%} **Emulator** pictogram in de toolbar.
 3. Het menu van de apparaatkiezer wordt weergegeven.
 
-![ Universele Redacteur Responsieve het Testen Interface ](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
+![&#x200B; Universele Redacteur Responsieve het Testen Interface &#x200B;](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
 **Stap 2: Selecteer een Apparaat voor het Testen**
 
@@ -95,19 +95,19 @@ Elk apparaattype onthult unieke responsieve gedragingen:
 ### Visuele voorbeelden door Apparaat
 
 **Mening van de Desktop (1200px+):**
-![ de vormmening van de Desktop ](/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png)
+![&#x200B; de vormmening van de Desktop &#x200B;](/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png)
 *volledig-breedtelay-out met zij aan zij vormgebieden.*
 
 **Mening van de Tablet (768px-1199px):**
-![ de vormmening van Tablet ](/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png)
+![&#x200B; de vormmening van Tablet &#x200B;](/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png)
 *Medium-breedte lay-out met aangepaste component uit elkaar plaatsen.*
 
 **Mobiele Mening (320px-767px):**
-![ Mobiele vormmening ](/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png)
+![&#x200B; Mobiele vormmening &#x200B;](/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png)
 *enig-kolomlay-out met gestapelde componenten.*
 
 **Mening van het Apparaat van de Douane:**
-![ het apparatenmening van de Douane ](/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png)
+![&#x200B; het apparatenmening van de Douane &#x200B;](/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png)
 *Gebruiker-gespecificeerde afmetingen voor het gerichte testen.*
 
 ### Testworkflow
@@ -164,7 +164,7 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 In de deelvensterindeling wordt gerelateerde inhoud gerangschikt in visueel verschillende secties, zodat gebruikers meerdere secties tegelijk kunnen bekijken. Deze indeling is ideaal voor formulieren met gecategoriseerde informatie die baat heeft bij een presentatie naast elkaar op grotere schermen.
 
-![ Voorbeeld van de Lay-out van het Comité ](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+![&#x200B; Voorbeeld van de Lay-out van het Comité &#x200B;](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
 **Responsief Gedrag**
 
@@ -174,7 +174,7 @@ In de deelvensterindeling wordt gerelateerde inhoud gerangschikt in visueel vers
 
 **hoe te om uit te voeren**
 
-1. Voeg de [ Component van het Comité ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) aan uw vorm toe.
+1. Voeg de [&#x200B; Component van het Comité &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) aan uw vorm toe.
 2. Groepeer verwante velden binnen elk deelvenster om de logische organisatie te behouden.
 3. Wijs duidelijke, beschrijvende rubrieken aan elke paneelsectie toe.
 4. Zorg ervoor dat er voldoende ruimte is tussen deelvensters om visueel onoverzichtelijk te blijven.
@@ -196,7 +196,7 @@ In de deelvensterindeling wordt gerelateerde inhoud gerangschikt in visueel vers
 
 De Lay-out van de Tovenaar begeleidt gebruikers door een multi-step proces, dat één sectie tegelijkertijd presenteert. Deze indeling is vooral handig voor complexe formulieren, omdat cognitieve belasting wordt verminderd en de voltooiingssnelheid toeneemt doordat het proces wordt opgedeeld in hanteerbare stappen.
 
-![ het Voorbeeld van de Lay-out van de Tovenaar ](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+![&#x200B; het Voorbeeld van de Lay-out van de Tovenaar &#x200B;](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
 **Responsief Gedrag**
 
@@ -207,7 +207,7 @@ De Lay-out van de Tovenaar begeleidt gebruikers door een multi-step proces, dat 
 
 **hoe te om uit te voeren**
 
-1. Neem de [ Component van de Tovenaar ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) in uw vorm op.
+1. Neem de [&#x200B; Component van de Tovenaar &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) in uw vorm op.
 2. Verdeel het formulier in logische stappen, idealiter tussen 3 en 7, om elke stap geconcentreerd en beheerbaar te houden.
 3. Voeg voortgangsindicatoren toe om gebruikers te helpen hun positie in het proces te begrijpen.
 4. Zorg voor duidelijke besturingselementen voor navigatie, zoals de knoppen Volgende, Vorige en Opslaan.
@@ -236,7 +236,7 @@ De Lay-out van de Tovenaar begeleidt gebruikers door een multi-step proces, dat 
 
 Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelten te ordenen, waardoor deze ideaal is voor optionele of secundaire informatie. Deze indeling is vooral handig voor formulieren met inhoud die logisch kan worden gegroepeerd en die niet in één keer hoeft te worden weergegeven.
 
-![ het Voorbeeld van de Lay-out van de Accordeon ](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+![&#x200B; het Voorbeeld van de Lay-out van de Accordeon &#x200B;](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
 **Responsief Gedrag**
 
@@ -247,7 +247,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 **hoe te om uit te voeren**
 
-1. Voeg de [ Component van de Accordeon ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) aan uw vorm toe.
+1. Voeg de [&#x200B; Component van de Accordeon &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) aan uw vorm toe.
 2. Groepeer gerelateerde optionele of secundaire inhoud binnen elke accordeonsectie.
 3. Gebruik duidelijke, beschrijvende kopteksten voor elke sectie om gebruikers te helpen begrijpen welke informatie bevat binnen is.
 4. Stel de juiste open of gesloten standaardinstellingen voor elke sectie in op basis van belang en gebruikersbehoeften.

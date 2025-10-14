@@ -16,13 +16,13 @@ ht-degree: 0%
 ## Inleiding {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Voor meer informatie over Dispatcher in de Wolk en hoe te om de Hulpmiddelen van Dispatcher te downloaden, zie [ Dispatcher in de Cloud ](/help/implementing/dispatcher/disp-overview.md) pagina. Als uw configuratie van Dispatcher op erfeniswijze is, zie [ documentatie van de erfeniswijze ](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Voor meer informatie over Dispatcher in de Wolk en hoe te om de Hulpmiddelen van Dispatcher te downloaden, zie [&#x200B; Dispatcher in de Cloud &#x200B;](/help/implementing/dispatcher/disp-overview.md) pagina. Als uw configuratie van Dispatcher op erfeniswijze is, zie [&#x200B; documentatie van de erfeniswijze &#x200B;](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 In de volgende secties wordt de structuur van het bestand in de flexibele modus beschreven, evenals lokale validatie, foutopsporing en migratie van de oude modus naar de flexibele modus.
 
 In dit artikel wordt ervan uitgegaan dat het bestand `opt-in/USE_SOURCES_DIRECTLY` is opgenomen in de Dispatcher-configuratie van uw project. Dit bestand zorgt ervoor dat de SDK en de runtime de configuratie op een betere manier valideren en implementeren dan in de verouderde modus, waarbij beperkingen rond het aantal en de grootte van bestanden worden verwijderd.
 
-Als uw configuratie van Dispatcher niet het eerder vermelde dossier omvat, adviseert de Adobe dat u van erfeniswijze aan de flexibele wijze zoals die in [ wordt geschetst migrerend van erfeniswijze aan flexibele wijze ](#migrating) sectie migreert.
+Als uw configuratie van Dispatcher niet het eerder vermelde dossier omvat, adviseert de Adobe dat u van erfeniswijze aan de flexibele wijze zoals die in [&#x200B; wordt geschetst migrerend van erfeniswijze aan flexibele wijze &#x200B;](#migrating) sectie migreert.
 
 ## Bestandsstructuur {#flexible-mode-file-structure}
 
@@ -128,7 +128,7 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 >[!NOTE]
 >
-> Wanneer het werken met symbolische verbindingen onder Vensters, zou u in een opgeheven bevelherinnering, in het Subsysteem van Vensters voor Linux moeten lopen of [ hebben creeer symbolische toegewezen verbindingen ](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) voorrecht.
+> Wanneer het werken met symbolische verbindingen onder Vensters, zou u in een opgeheven bevelherinnering, in het Subsysteem van Vensters voor Linux moeten lopen of [&#x200B; hebben creeer symbolische toegewezen verbindingen &#x200B;](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) voorrecht.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -166,7 +166,7 @@ mklink wknd.farm ..\available_farms\wknd.farm
 
 >[!NOTE]
 >
-> Wanneer het werken met symbolische verbindingen onder Vensters, zou u in een opgeheven bevelherinnering, in het Subsysteem van Vensters voor Linux moeten lopen of [ hebben creeer symbolische toegewezen verbindingen ](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) voorrecht.
+> Wanneer het werken met symbolische verbindingen onder Vensters, zou u in een opgeheven bevelherinnering, in het Subsysteem van Vensters voor Linux moeten lopen of [&#x200B; hebben creeer symbolische toegewezen verbindingen &#x200B;](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) voorrecht.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -245,7 +245,7 @@ Standaardhostglobing geschikt voor een standaardproject. Wijzig `virtualhosts.an
 
 ## Ondersteunde Apache-modules {#apache-modules}
 
-Zie [ Ondersteunde modules Apache ](/help/implementing/dispatcher/disp-overview.md#supported-directives).
+Zie [&#x200B; Ondersteunde modules Apache &#x200B;](/help/implementing/dispatcher/disp-overview.md#supported-directives).
 
 ## Lokale validatie {#local-validation-flexible-mode}
 
@@ -295,19 +295,19 @@ Het script heeft de volgende drie fasen:
 
 1. De validator wordt uitgevoerd. Als de configuratie ongeldig is, ontbreekt het manuscript.
 2. De methode voert de opdracht `httpd -t` uit om te testen of de syntaxis correct is, zodat Apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
-3. Controleert dat de ondergroep van de de configuratiedossiers van SDK van Dispatcher, die om zoals beschreven in de [ de structuursectie van het Dossier ](##flexible-mode-file-structure) moeten zijn onveranderlijk zijn, niet is gewijzigd en de huidige versie van SDK aanpast.
+3. Controleert dat de ondergroep van de de configuratiedossiers van SDK van Dispatcher, die om zoals beschreven in de [&#x200B; de structuursectie van het Dossier &#x200B;](##flexible-mode-file-structure) moeten zijn onveranderlijk zijn, niet is gewijzigd en de huidige versie van SDK aanpast.
 
 Tijdens een Cloud Manager-implementatie wordt de syntaxiscontrole van `httpd -t` ook uitgevoerd en worden eventuele fouten opgenomen in het Cloud Manager `Build Images step failure` -logboek.
 
 >[!NOTE]
 >
->Zie [ Automatisch het herladen en bevestiging ](#automatic-loading) sectie voor een efficiënt alternatief aan het lopen `validate.sh` na elke configuratiewijziging.
+>Zie [&#x200B; Automatisch het herladen en bevestiging &#x200B;](#automatic-loading) sectie voor een efficiënt alternatief aan het lopen `validate.sh` na elke configuratiewijziging.
 
 ### Fase 1 {#first-phase}
 
 Als een instructie niet is gevoegd op lijst van gewenste personen, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Bovendien worden alle bestanden met patroon `conf.dispatcher.d/enabled_farms/*.farm` gescand en wordt gecontroleerd of:
 
-* Geen filterregel bestaat die het gebruik via `/glob` toestaat (zie [ CVE-2016-0957 ](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)) voor meer details.
+* Geen filterregel bestaat die het gebruik via `/glob` toestaat (zie [&#x200B; CVE-2016-0957 &#x200B;](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)) voor meer details.
 * Er wordt geen beheerfunctie weergegeven. Bijvoorbeeld toegang tot paden zoals `/crx/de or /system/console` .
 
 Het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn gevoegd op lijst van gewenste personen. Er worden geen syntactische of semantische problemen gerapporteerd met uw Apache-configuratie, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
@@ -599,7 +599,7 @@ In de Dispatcher-configuratie is dezelfde omgevingsvariabele beschikbaar. Als me
 }
 ```
 
-U kunt ook Cloud Manager-omgevingsvariabelen gebruiken in uw httpd/dispatcher-configuratie, maar geen omgevingsgeheimen. Deze methode is vooral belangrijk als een programma meerdere ontwikkelomgevingen heeft en sommige van deze ontwikkelomgevingen verschillende waarden hebben voor de httpd/dispatcherconfiguratie. De zelfde $ {VIRTUALHOST} syntaxis zou worden gebruikt zoals in het voorbeeld hierboven, nochtans zou Define verklaringen in het bovengenoemde variabelendossier niet worden gebruikt. Lees de [ documentatie van Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md) voor instructies bij het vormen van de milieuvariabelen van Cloud Manager.
+U kunt ook Cloud Manager-omgevingsvariabelen gebruiken in uw httpd/dispatcher-configuratie, maar geen omgevingsgeheimen. Deze methode is vooral belangrijk als een programma meerdere ontwikkelomgevingen heeft en sommige van deze ontwikkelomgevingen verschillende waarden hebben voor de httpd/dispatcherconfiguratie. De zelfde $ {VIRTUALHOST} syntaxis zou worden gebruikt zoals in het voorbeeld hierboven, nochtans zou Define verklaringen in het bovengenoemde variabelendossier niet worden gebruikt. Lees de [&#x200B; documentatie van Cloud Manager &#x200B;](/help/implementing/cloud-manager/environment-variables.md) voor instructies bij het vormen van de milieuvariabelen van Cloud Manager.
 
 Wanneer u uw configuratie lokaal test, kunt u verschillende omgevingstypen simuleren door de variabele `DISP_RUN_MODE` rechtstreeks door te geven aan het `docker_run.sh` -script:
 
@@ -635,7 +635,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migreren van oude modus naar flexibele modus {#migrating}
 
-Met de versie van Cloud Manager 2021.7.0, produceren de nieuwe programma&#39;s van Cloud Manager gemodelleerde projectstructuren met [ AEM archetype 28 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) of hoger, die het dossier **opt-in/USE_SOURCES_DIRECTLY** omvat. Het verwijdert vorige beperkingen van de [ erfeniswijze ](/help/implementing/dispatcher/validation-debug-legacy.md) rond het aantal en de grootte van dossiers, ook veroorzakend SDK en runtime om de configuratie op een betere manier te bevestigen en op te stellen. Als dit bestand niet beschikbaar is in uw Dispatcher-configuratie, wordt u ten zeerste aangeraden te migreren. Gebruik de volgende stappen om een veilige overgang te garanderen:
+Met de versie van Cloud Manager 2021.7.0, produceren de nieuwe programma&#39;s van Cloud Manager gemodelleerde projectstructuren met [&#x200B; AEM archetype 28 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) of hoger, die het dossier **opt-in/USE_SOURCES_DIRECTLY** omvat. Het verwijdert vorige beperkingen van de [&#x200B; erfeniswijze &#x200B;](/help/implementing/dispatcher/validation-debug-legacy.md) rond het aantal en de grootte van dossiers, ook veroorzakend SDK en runtime om de configuratie op een betere manier te bevestigen en op te stellen. Als dit bestand niet beschikbaar is in uw Dispatcher-configuratie, wordt u ten zeerste aangeraden te migreren. Gebruik de volgende stappen om een veilige overgang te garanderen:
 
 1. **Lokale het testen.** Voeg de map en het bestand toe met de meest recente SDK voor Dispatcher-gereedschappen `opt-in/USE_SOURCES_DIRECTLY` . Volg de instructies voor lokale validatie in dit artikel, zodat u kunt testen of de Dispatcher lokaal werkt.
 1. **het ontwikkelingstests van de Wolk:**

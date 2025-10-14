@@ -39,7 +39,7 @@ Aan het einde van de zelfstudie kunt u het volgende doen:
 
 AEM Forms biedt Foundation Components en Core Components (Basiscomponenten) voor het maken van formulieren. Core Components is de moderne en aanbevolen methode om nieuwe formulieren te maken. Waarom Core Components gebruiken? Deze componenten zijn lichtgewicht, opensource (beschikbaar op github), bieden een geweldige Google Lighthouse- en web vitals score, voldoen aan toegankelijkheidsvereisten en bieden alle vertrouwde functies van AEM Sites (zoals versioning en lokalisatie). Bovendien zijn deze componenten gemakkelijker te maken, kunt u hun verschijning gemakkelijk aanpassen volgens de branding richtlijnen van uw organisatie. Deze zijn niet afhankelijk van derden. Ontwikkelaars met kennis van JavaScript en CSS kunnen deze componenten eenvoudig aanpassen.
 
-![ waarom creeer de Componenten van de Kern gebaseerd Adaptief Forms? Deze componenten zijn lichtgewicht, gemakkelijker om te vormen, bieden hoge vuurthouse score, steunen toegankelijkheidsnormen, gemakkelijk aanpasbaar, open-bronnen, beschikbaar op github, geen afhankelijkheid van derdebibliotheken, en hebben bijna geen het leren kromme voor AEM ontwikkelaars en AEM Auteurs bovenop het AEM Forms Core Components alle eigenschappen van AEM WCM Core Componenten.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
+![&#x200B; waarom creeer de Componenten van de Kern gebaseerd Adaptief Forms? Deze componenten zijn lichtgewicht, gemakkelijker om te vormen, bieden hoge vuurthouse score, steunen toegankelijkheidsnormen, gemakkelijk aanpasbaar, open-bronnen, beschikbaar op github, geen afhankelijkheid van derdebibliotheken, en hebben bijna geen het leren kromme voor AEM ontwikkelaars en AEM Auteurs bovenop het AEM Forms Core Components alle eigenschappen van AEM WCM Core Componenten.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## Gebruiksscenario: gestroomlijnde voorkwalificatie voor thuislening met Adaptive Forms
 
@@ -53,7 +53,7 @@ Het formulier wordt samengesteld met behulp van adaptieve formulieren. Dit maakt
 
 Nadat u de zelfstudie hebt voltooid, ziet het formulier er als volgt uit en werkt het als volgt:
 
-![ voeg hier een het werk vorm toe ](/help/forms/assets/cc-tutorial-final-form.png)
+![&#x200B; voeg hier een het werk vorm toe &#x200B;](/help/forms/assets/cc-tutorial-final-form.png)
 
 ## Ontwikkelomgeving instellen
 
@@ -68,16 +68,16 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
 
 **klaar om te beginnen?**
 
-1. [ de ontwikkelingshulpmiddelen van de opstelling voor AEM Projecten ](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): Download en installeer de recentste versie van [ Java 11™ ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#local-development-environment-set-up), [ Git ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#install-git), [ Node.js (npm) ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#node-js), en [ Gemaakt ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#install-maven). Installeer ook een duidelijk-tekstredacteur, zijn de voorbeelden in dit leerprogramma gebaseerd op de Code van Visual Studio.
+1. [&#x200B; de ontwikkelingshulpmiddelen van de opstelling voor AEM Projecten &#x200B;](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): Download en installeer de recentste versie van [&#x200B; Java 11™ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#local-development-environment-set-up), [&#x200B; Git &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#install-git), [&#x200B; Node.js (npm) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#node-js), en [&#x200B; Gemaakt &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#install-maven). Installeer ook een duidelijk-tekstredacteur, zijn de voorbeelden in dit leerprogramma gebaseerd op de Code van Visual Studio.
 
-1. [ installeer de AEM SDK ](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): Download en installeer de recentste versie van AEM SDK. Dit biedt de essentiële instrumenten voor AEM ontwikkeling. Noteer de versie van AEM SDK.
+1. [&#x200B; installeer de AEM SDK &#x200B;](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): Download en installeer de recentste versie van AEM SDK. Dit biedt de essentiële instrumenten voor AEM ontwikkeling. Noteer de versie van AEM SDK.
 
-   ![ software-Distributie ](/help/forms/assets/software-distribution.png)
+   ![&#x200B; software-Distributie &#x200B;](/help/forms/assets/software-distribution.png)
 
-   ![ installeer AEM SDK ](/help/forms/assets/start-aem-sdk.png)
+   ![&#x200B; installeer AEM SDK &#x200B;](/help/forms/assets/start-aem-sdk.png)
 
-1. [ voeg toe:voegen-op van AEM Forms ](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users) toe: Download en installeer toe:voegen-op aanpassing van AEM Forms aan de versie van uw AEM SDK van het [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads).
-   ![ install-name-forms-add-on ](/help/forms/assets/install-aem-forms-add-on.png)
+1. [&#x200B; voeg toe:voegen-op van AEM Forms &#x200B;](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users) toe: Download en installeer toe:voegen-op aanpassing van AEM Forms aan de versie van uw AEM SDK van het [&#x200B; Portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads).
+   ![&#x200B; install-name-forms-add-on &#x200B;](/help/forms/assets/install-aem-forms-add-on.png)
 
    +++ AEM Forms-invoegtoepassing installeren:
 
@@ -89,12 +89,12 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
 
    +++
 
-1. [ vorm gebruikerstoestemmingen ](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): Creeer gebruikers met ontwikkeling, auteursrecht, en andere toestemmingen en voeg deze gebruikers aan vooraf bepaalde vormgroepen toe.
+1. [&#x200B; vorm gebruikerstoestemmingen &#x200B;](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): Creeer gebruikers met ontwikkeling, auteursrecht, en andere toestemmingen en voeg deze gebruikers aan vooraf bepaalde vormgroepen toe.
 
 
-1. [ voegt de Aangepaste malplaatjes van Forms ](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype) toe: Gebruik AEM Archetypes 48 of later om een nieuw AEM project tot stand te brengen en het op uw AEM SDK op te stellen. Het project voegt adaptieve Forms-sjablonen toe aan uw AEM SDK.
+1. [&#x200B; voegt de Aangepaste malplaatjes van Forms &#x200B;](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype) toe: Gebruik AEM Archetypes 48 of later om een nieuw AEM project tot stand te brengen en het op uw AEM SDK op te stellen. Het project voegt adaptieve Forms-sjablonen toe aan uw AEM SDK.
 
-   ![ Aangepaste Malplaatjes van de Vorm ](/help/forms/assets/adaptive-forms-templates.png)
+   ![&#x200B; Aangepaste Malplaatjes van de Vorm &#x200B;](/help/forms/assets/adaptive-forms-templates.png)
 
    +++ Voeg Aangepaste Forms-sjablonen toe aan uw AEM SDK:
 
@@ -104,7 +104,7 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
       mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="48" -D appTitle=securbank -D appId=securbank -D groupId=com.securbank -D includeFormsenrollment="y" -D aemVersion="cloud"
       ```
 
-      ![ AEM-Archetyoe-Project ](/help/forms/assets/aem-archetype-project.png)
+      ![&#x200B; AEM-Archetyoe-Project &#x200B;](/help/forms/assets/aem-archetype-project.png)
 
    1. Implementeer het project in uw lokale ontwikkelomgeving. U kunt het volgende bevel gebruiken om aan uw lokale ontwikkelomgeving op te stellen
 
@@ -119,7 +119,7 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
    +++
 
 
-Voor gedetailleerde instructies en geleidelijke gids bij vestiging uw lokale de ontwikkelomgeving van AEM Forms, verwijs het [ opstelling lokale ontwikkelomgeving voor AEM Forms ](/help/forms/setup-local-development-environment.md) artikel.
+Voor gedetailleerde instructies en geleidelijke gids bij vestiging uw lokale de ontwikkelomgeving van AEM Forms, verwijs het [&#x200B; opstelling lokale ontwikkelomgeving voor AEM Forms &#x200B;](/help/forms/setup-local-development-environment.md) artikel.
 
 
 

@@ -17,7 +17,7 @@ Meer informatie over Cloud Manager en hoe de invoegtoepassing wordt geïnstallee
 
 >[!TIP]
 >
->Als u met Cloud Manager wordt ervaren of rechtstreeks aan configuratie en gebruik van toe:voegen-op wilt springen, overslaan aan [ creeer een Programma en een Pijpleiding ](create-program.md)
+>Als u met Cloud Manager wordt ervaren of rechtstreeks aan configuratie en gebruik van toe:voegen-op wilt springen, overslaan aan [&#x200B; creeer een Programma en een Pijpleiding &#x200B;](create-program.md)
 >
 >Als u wilt leren hoe Cloud Manager en AEM samenwerken om uw demo-omgevingen te maken en hoe u uw eigen omgevingen kunt instellen en gebruiken, blijft u het huidige document lezen.
 
@@ -31,7 +31,7 @@ Dit document helpt u begrijpen hoe het installatieproces van de Add-on van de De
 
 Dit document richt zich op het begrijpen van deze fundamentele stukken van de AEM Toeslag van de Demo van de Verwijzing alvorens tot de volgende stap van de reis over te gaan waar u met installatie begint.
 
-Hoewel het wordt geadviseerd om door deze reis te werk te gaan, als u met Cloud Manager wordt ervaren, of rechtstreeks aan configuratie en gebruik van toe:voegen-op wilt springen, overslaan aan [ creeer een Programma en een Pijpleiding ](create-program.md).
+Hoewel het wordt geadviseerd om door deze reis te werk te gaan, als u met Cloud Manager wordt ervaren, of rechtstreeks aan configuratie en gebruik van toe:voegen-op wilt springen, overslaan aan [&#x200B; creeer een Programma en een Pijpleiding &#x200B;](create-program.md).
 
 ## Verantwoordelijke rol {#responsible-role}
 
@@ -104,12 +104,12 @@ Nu u dit deel van de AEM Toestemmingsreis van de Demos van de Verwijzing hebt vo
 * Begrijp hoe de pijpleidingen inhoud en configuratie aan AEM leveren.
 * Bekijk hoe sjablonen met slechts een paar klikken sites kunnen maken die vooraf zijn gevuld met demo-inhoud.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door te herzien [ creeer een Programma en een Pijpleiding ](create-program.md), waar u leert hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen.
+Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door te herzien [&#x200B; creeer een Programma en een Pijpleiding &#x200B;](create-program.md), waar u leert hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich naar het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door te herzien [ creeert een Programma en een Pijpleiding ](create-program.md), zijn het volgende wat extra, facultatieve middelen. Deze middelen nemen een diepere duik in concepten in dit document worden vermeld. Zij zijn echter niet verplicht de reis voort te zetten.
+Terwijl het wordt geadviseerd dat u zich naar het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door te herzien [&#x200B; creeert een Programma en een Pijpleiding &#x200B;](create-program.md), zijn het volgende wat extra, facultatieve middelen. Deze middelen nemen een diepere duik in concepten in dit document worden vermeld. Zij zijn echter niet verplicht de reis voort te zetten.
 
-* [ Begrip Programma&#39;s en de Types van Programma ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=nl-NL) - Begin hier om de verschillen tussen levende en zandbakprogramma&#39;s te begrijpen.
-* [ Malplaatjes van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md) - als u meer over de structuur van plaatssjablonen zou willen weten en hoe zij worden gebruikt om plaatsen tot stand te brengen, verwijs naar dit document.
-* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=nl-NL) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [&#x200B; Begrip Programma&#39;s en de Types van Programma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=nl-NL) - Begin hier om de verschillen tussen levende en zandbakprogramma&#39;s te begrijpen.
+* [&#x200B; Malplaatjes van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/site-templates.md) - als u meer over de structuur van plaatssjablonen zou willen weten en hoe zij worden gebruikt om plaatsen tot stand te brengen, verwijs naar dit document.
+* [&#x200B; documentatie van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=nl-NL) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.

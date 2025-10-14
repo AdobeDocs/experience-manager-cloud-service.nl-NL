@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Met de **[!UICONTROL Submit to Azure Blob Storage]** -actie Verzenden wordt een adaptief formulier verbonden met een Microsoft® Azure-portal. U kunt de formuliergegevens, bestanden, bijlagen of Document of Record verzenden naar de aangesloten Azure Storage-containers.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/aem-forms-submit-action.md).
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [&#x200B; AanpassingsVorm voorlegt Artikel van de Actie &#x200B;](/help/forms/aem-forms-submit-action.md).
 
 ## Voordelen
 
@@ -29,8 +29,8 @@ De voordelen van de integratie van Azure Blob Storage met AEM Forms zijn:
 
 Om Azure Blob Storage te gebruiken in Adaptive Forms Submit Action:
 
-1. [ creeer een Azure BlobContainer van de Opslag ](#create-a-azure-blob-storage-container-create-azure-configuration): Het verbindt AEM Forms met de containers van de Azure Opslag.
-2. [ Gebruik de Azure Configuratie van de Opslag in een AanpassingsVorm ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Het verbindt uw AanpassingsVorm met gevormde de containers van de Opslag Azure.
+1. [&#x200B; creeer een Azure BlobContainer van de Opslag &#x200B;](#create-a-azure-blob-storage-container-create-azure-configuration): Het verbindt AEM Forms met de containers van de Azure Opslag.
+2. [&#x200B; Gebruik de Azure Configuratie van de Opslag in een AanpassingsVorm &#x200B;](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Het verbindt uw AanpassingsVorm met gevormde de containers van de Opslag Azure.
 
 ### Een Azure Blob Storage Container maken {#create-azure-configuration}
 
@@ -41,7 +41,7 @@ AEM Forms aansluiten op uw Azure Storage-containers:
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]**. De wizard Azure Storage Configuration wordt weergegeven.
 
-   ![ Azure Configuratie van de Opslag ](/help/forms/assets/azure-storage-configuration.png)
+   ![&#x200B; Azure Configuratie van de Opslag &#x200B;](/help/forms/assets/azure-storage-configuration.png)
 
 1. Geef de waarden **[!UICONTROL Title]** , **[!UICONTROL Azure Storage Account]** en **[!UICONTROL Azure Access key]** op.
 
@@ -78,7 +78,7 @@ Voer de volgende stappen uit om de configuratie van de container van de Opslag v
 1. Open het Adaptief formulier voor bewerking en ga naar de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Submit to Azure Blob Storage]**.
 
-   ![ Azure Blob Storage GIF ](/help/forms/assets/submit-to-azure-blob-fc.png) {width=50%,height=50%}
+   ![&#x200B; Azure Blob Storage GIF &#x200B;](/help/forms/assets/submit-to-azure-blob-fc.png) {width=50%,height=50%}
 
    U kunt Document of Record (DoR) ook opslaan in de Azure Blob Storage.
 
@@ -93,11 +93,11 @@ De mapstructuur voor het opslaan van gegevens is `/configuration_container/form_
 Voer de volgende stappen uit om de configuratie van de Azure Storage container in een adaptief formulier te gebruiken dat is gebaseerd op Core Components als:
 
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op de tab **[!UICONTROL Submission]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Submit to Azure Blob Storage]**.
 
-   ![ Azure Blob Storage GIF ](/help/forms/assets/azure-submit-video.gif)
+   ![&#x200B; Azure Blob Storage GIF &#x200B;](/help/forms/assets/azure-submit-video.gif)
 
    U kunt Document of Record (DoR) ook opslaan in de Azure Blob Storage.
 
@@ -118,10 +118,10 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
    >[!NOTE]
    >
    > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Verwijs naar het [&#x200B; artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 1. Klik **Verzending** lusje en selecteer **[!UICONTROL Submit to Azure Blob Storage]** voorlegt actie.
-   ![ Azure Blob Storage ](/help/forms/assets/azure-blob-storage-ue.png)
+   ![&#x200B; Azure Blob Storage &#x200B;](/help/forms/assets/azure-blob-storage-ue.png)
 
    Als u **sparen Bijlagen met Oorspronkelijke Naam** selecteert, worden de gehechtheid opgeslagen in de omslag gebruikend hun originele filenames. U kunt Document of Record (DoR) ook opslaan in de Azure Blob Storage.
 

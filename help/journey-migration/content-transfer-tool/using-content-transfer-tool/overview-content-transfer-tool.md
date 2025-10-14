@@ -37,11 +37,11 @@ De overdracht van content bestaat uit twee fasen:
 
 1. **Extractie**: Dit heeft betrekking op het extraheren van content van de AEM-broninstantie naar een tijdelijke locatie, de zogenaamde *migratieset*. Een *migratieset* is een opslaggebied op de cloud dat door Adobe wordt geleverd om overgedragen content tijdelijk op te slaan tussen de AEM-broninstantie en de AEM Cloud Service-instantie.
 
-   Zie [ Proces van de Opwinning in de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) voor meer details.
+   Zie [&#x200B; Proces van de Opwinning in de Overdracht van de Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) voor meer details.
 
 1. **Opname**: Dit verwijst naar het verplaatsen en opnemen van content uit de *migratieset* naar de Cloud Service-doelinstantie.
 
-   Zie [ Proces van de Ingestie in de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor meer details.
+   Zie [&#x200B; Proces van de Ingestie in de Overdracht van de Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor meer details.
 
 ## Attributen van een migratieset {#attributes-migration-set}
 
@@ -55,9 +55,9 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 >[!NOTE]
 >Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
 
-Als u in de extractiefase een bestaande migratieset wilt ***aanvullen***, moet de optie voor *overschrijven* zijn uitgeschakeld. Zie [ Hoogste Extractie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) voor meer details.
+Als u in de extractiefase een bestaande migratieset wilt ***aanvullen***, moet de optie voor *overschrijven* zijn uitgeschakeld. Zie [&#x200B; Hoogste Extractie &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) voor meer details.
 
-Als u in de opnamefase de deltacontent boven op de huidige content wilt toepassen, moet de optie voor *wissen* zijn uitgeschakeld. Zie [ Omhoog Ingestie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) voor meer details.
+Als u in de opnamefase de deltacontent boven op de huidige content wilt toepassen, moet de optie voor *wissen* zijn uitgeschakeld. Zie [&#x200B; Omhoog Ingestie &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) voor meer details.
 
 ## Vervaldatum migratieset {#migration-set-expiry}
 
@@ -79,4 +79,4 @@ Het verstrijken van een migratieset kan op de rij van de Plaats van de Migratie 
 
 ## Volgende functies {#whats-next}
 
-Zodra u over het Hulpmiddel van de Overdracht van de Inhoud en zijn overzicht hebt geleerd dat dit hulpmiddel kan worden gebruikt om bestaande inhoud over van een bronAEM instantie (op-gebouw of AMS) aan de instantie van de Dienst van de Kloud van doelAEM te bewegen, moet u [ Eerste vereisten voor het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) herzien.
+Zodra u over het Hulpmiddel van de Overdracht van de Inhoud en zijn overzicht hebt geleerd dat dit hulpmiddel kan worden gebruikt om bestaande inhoud over van een bronAEM instantie (op-gebouw of AMS) aan de instantie van de Dienst van de Kloud van doelAEM te bewegen, moet u [&#x200B; Eerste vereisten voor het Hulpmiddel van de Overdracht van de Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) herzien.

@@ -16,7 +16,7 @@ ht-degree: 80%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | Dit artikel |
 
 Als beheerder van AEM Assets (Adobe Experience Manager) kunt u assets, mappen en verzamelingen publiceren naar de AEM Assets Brand Portal-instantie. Bovendien kunt u de publicatieworkflow van een asset of map op een latere datum of tijd plannen. Na publicatie krijgen de Brand Portal-gebruikers toegang tot de assets, mappen en verzamelingen en kunnen ze deze naar andere gebruikers distribueren.
@@ -77,7 +77,7 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 
    <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
 
-   ![ publiceer later ](assets/publish-later.png)
+   ![&#x200B; publiceer later &#x200B;](assets/publish-later.png)
 
 1. Selecteer een **[!UICONTROL Activation date]** en geef de tijd op. Klik op **[!UICONTROL Next]**.
 
@@ -87,7 +87,7 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 
    <!--![publishworkflow](assets/publishworkflow.png)-->
 
-   ![ publiceer werkschema ](assets/publish-workflow.png)
+   ![&#x200B; publiceer werkschema &#x200B;](assets/publish-workflow.png)
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ U kunt als volgt de mappen met elementen op een latere datum of tijd publiceren:
 
       <!--![publishlaterbp](assets/publishlaterbp.png)-->
 
-   ![ publiceer recentere omslag ](assets/publish-later-folder.png)
+   ![&#x200B; publiceer recentere omslag &#x200B;](assets/publish-later-folder.png)
 
    1. Bevestig uw selectie in **[!UICONTROL Scope]**. Klik op **[!UICONTROL Next]**.
 
@@ -150,19 +150,19 @@ U kunt als volgt de mappen met elementen op een latere datum of tijd publiceren:
 
       <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
-   ![ publiceer werkschema ](assets/publish-workflow.png)
+   ![&#x200B; publiceer werkschema &#x200B;](assets/publish-workflow.png)
 
 ### Gepubliceerd bestand of map weergeven op Brand Portal {#view-published-file-folder}
 
 1. Meld u aan bij de Brand Portal-interface om de gepubliceerde assets te bekijken (afhankelijk van uw geplande datum of tijd).
 
-   ![ bp_landingpage ](assets/bp_landingpage.png)
+   ![&#x200B; bp_landingpage &#x200B;](assets/bp_landingpage.png)
 
-1. De schakelaar aan de mening van de Lijst ![ mening van de Lijst ](assets/list-view.svg) om de huidige te zien publiceert status van de activa.
+1. De schakelaar aan de mening van de Lijst ![&#x200B; mening van de Lijst &#x200B;](assets/list-view.svg) om de huidige te zien publiceert status van de activa.
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
-![ geproduceerde rapportstatus ](assets/report-status.JPG)
+![&#x200B; geproduceerde rapportstatus &#x200B;](assets/report-status.JPG)
 
 ### Mappen uit Brand Portal verwijderen {#unpublish-folders-from-brand-portal}
 

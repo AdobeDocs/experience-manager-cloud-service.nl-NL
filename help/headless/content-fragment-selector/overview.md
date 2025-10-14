@@ -16,7 +16,7 @@ De Micro-Front Content Fragment Selector biedt een gebruikersinterface die eenvo
 
 De gebruikersinterface Micro-Frontend wordt beschikbaar gesteld in uw toepassing gebruikend het pakket van de Selector van het Fragment van de Inhoud. Alle updates van het pakket worden automatisch geïmporteerd en in de toepassing geladen.
 
-![ Micro-Front de Selector van het Fragment van de Inhoud - Overzicht ](/help/headless/assets/content-fragment-selector-overview.png)
+![&#x200B; Micro-Front de Selector van het Fragment van de Inhoud - Overzicht &#x200B;](/help/headless/assets/content-fragment-selector-overview.png)
 
 De kiezer voor het inhoudsfragment biedt veel voordelen, zoals:
 
@@ -69,7 +69,7 @@ Gebruik de component `ContentFragmentSelector` . Er zijn verschillende installat
 
 Als de Content Fragment Selector is ingesteld en geverifieerd voor gebruik van de Content Fragment Selector met uw AEM as a Cloud Service-toepassing, kunt u Content Fragments selecteren of verschillende andere bewerkingen uitvoeren om te zoeken naar uw fragmenten in de dataopslag:
 
-![ de Selector van het Fragment van de Inhoud ](/help/headless/assets/content-fragment-selector-using.png)
+![&#x200B; de Selector van het Fragment van de Inhoud &#x200B;](/help/headless/assets/content-fragment-selector-using.png)
 
 * Met de **1&rbrace; selecteur van de Bewaarplaats &lbrace;bij het hoogste recht, kunt u de bewaarplaats selecteren u wilt gebruiken**
 * In het linkerdeelvenster kunt u:
@@ -92,7 +92,7 @@ Met de Content Fragment Selector kunt u een opslagplaats voor fragmentselectie s
 
 U kunt de bewaarplaats van uw keus van **Repository** drop-down selecteren, beschikbaar bij de bovenkant van het belangrijkste paneel.
 
-![ de Selector van het Fragment van de Inhoud ](/help/headless/assets/content-fragment-repository-selector.png)
+![&#x200B; de Selector van het Fragment van de Inhoud &#x200B;](/help/headless/assets/content-fragment-repository-selector.png)
 
 De opslagruimteopties in de vervolgkeuzelijst zijn gebaseerd op de eigenschap `repositoryId` die is gedefinieerd in het `index.html` -bestand. Deze eigenschap is gebaseerd op de omgeving van de geselecteerde IMS-org die wordt benaderd door de gebruiker die momenteel is aangemeld.
 
@@ -113,7 +113,7 @@ De kiezer voor inhoudsfragmenten beschikt ook over filteropties buiten de doos o
 * Gebruikers
 * Termijnen en data
 
-![ de opties van de Filter ](/help/headless/assets/content-selector-filters.png)
+![&#x200B; de opties van de Filter &#x200B;](/help/headless/assets/content-selector-filters.png)
 
 U kunt ook een standaardzoekfilter maken om op te slaan voor toekomstig gebruik. U kunt de eigenschap `filterSchema` gebruiken om aangepaste zoekfilters voor uw inhoudsfragmenten te maken.
 

@@ -20,7 +20,7 @@ Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inh
 
 >[!INFO]
 >
->Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De doelomgeving van AEM Cloud Service moet ten minste versie 6158 of hoger zijn. Het vereist ook het bronmilieu om opstelling te zijn om [ pre-exemplaar ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step) in werking te stellen. De bevestigingseigenschap zoekt het azcopy.config- dossier op de bron. Als dit bestand niet wordt gevonden, wordt de validatie niet uitgevoerd. Meer over leren hoe te om een dossier te vormen azcopy.config, zie [ Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud - vorm een dossier azcopy.config ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De doelomgeving van AEM Cloud Service moet ten minste versie 6158 of hoger zijn. Het vereist ook het bronmilieu om opstelling te zijn om [&#x200B; pre-exemplaar &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step) in werking te stellen. De bevestigingseigenschap zoekt het azcopy.config- dossier op de bron. Als dit bestand niet wordt gevonden, wordt de validatie niet uitgevoerd. Meer over leren hoe te om een dossier te vormen azcopy.config, zie [&#x200B; Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud - vorm een dossier azcopy.config &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om een extractie en opname uit te voeren. Als u deze functie wilt gebruiken, schakelt u deze in de System Console van de AEM-bronomgeving in door de volgende stappen uit te voeren:
 
@@ -33,7 +33,7 @@ Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze fun
 
 Als deze instelling is ingeschakeld en de AEM Cloud Service-doelomgeving een compatibele release uitvoert, vindt migratievalidatie plaats tijdens alle volgende extractie- en insluitingen.
 
-Voor meer informatie over hoe te om het Hulpmiddel van de Overdracht van de Inhoud te installeren, zie [ Begonnen het Worden met het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
+Voor meer informatie over hoe te om het Hulpmiddel van de Overdracht van de Inhoud te installeren, zie [&#x200B; Begonnen het Worden met het Hulpmiddel van de Overdracht van de Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
 
 ## Hoe te om een Overdracht van de Inhoud te bevestigen {#how-to-validate-a-content-transfer}
 
@@ -175,4 +175,4 @@ De paden die we momenteel uitsluiten van de samenvattingen zijn: `cqdam.text.txt
 
 ### Gesloten gebruikersgroepen {#validating-cugs}
 
-Zie [ het Migreren van Gesloten Groepen van de Gebruiker ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen wanneer het gebruiken van een Gesloten beleid van de Groep van de Gebruiker (CUG).
+Zie [&#x200B; het Migreren van Gesloten Groepen van de Gebruiker &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen wanneer het gebruiken van een Gesloten beleid van de Groep van de Gebruiker (CUG).

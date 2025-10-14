@@ -25,7 +25,7 @@ Volg de onderstaande sectie om de belangrijke overwegingen voor het gebruik van 
 
 ## Beschikbaarheid {#availability-ct}
 
-De transformator van de Inhoud wordt gebundeld met het [ Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) dat als zip dossier van het Portaal van de Distributie van de Software kan worden gedownload. U kunt het pakket installeren via Package Manager op uw AEM.
+De transformator van de Inhoud wordt gebundeld met het [&#x200B; Hulpmiddel van de Overdracht van de Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) dat als zip dossier van het Portaal van de Distributie van de Software kan worden gedownload. U kunt het pakket installeren via Package Manager op uw AEM.
 
 >[!NOTE]
 >De Content Transformer is beschikbaar met Content Transfer Tool v2.0.20 of hoger.

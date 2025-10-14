@@ -30,7 +30,7 @@ Cloud Acceleration Manager (CAM) biedt een one-stop ervaring voor migraties. Het
 
 Ga als volgt te werk om naar Cloud Acceleration Manager (CAM) te navigeren:
 
-1. Logon aan [ Adobe Experience Cloud ](https://experience.adobe.com).
+1. Logon aan [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com).
 
 1. Klik **kaart van de Experience Manager 0&rbrace; &lbrace;.**
 
@@ -103,4 +103,4 @@ Voer de onderstaande stappen uit om uw project te verwijderen:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe te om in Cloud Acceleration Manager te registreren en hoe te om een project tot stand te brengen, bent u bereid om de volgende stap in de [ Fase van de Bereidheid ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=nl-NL) te herzien.
+Nadat u hebt geleerd hoe te om in Cloud Acceleration Manager te registreren en hoe te om een project tot stand te brengen, bent u bereid om de volgende stap in de [&#x200B; Fase van de Bereidheid &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=nl-NL) te herzien.

@@ -36,19 +36,19 @@ De analyse is gebaseerd op de standaardfunctionaliteit van AEM en de steekproefW
 * [Laatste ontwikkeling SDK van AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
    * Het zou als lokale ontwikkelomgeving moeten lopen.
    * U moet beheerdersrechten voor het systeem hebben.
-* [ de steekproefWKND app van het Project van het KUUROORD beschikbaar op GitHub ](https://github.com/adobe/aem-guides-wknd-spa)
-   * Download de [ recentste versie van React app ](https://github.com/adobe/aem-guides-wknd-spa/releases) genoemd gelijkaardig aan `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
-   * Download de [ recentste steekproefbeelden voor app ](https://github.com/adobe/aem-guides-wknd-spa/releases) genoemd gelijkaardig aan `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [ het pakketmanager van het Gebruik ](/help/implementing/developing/tools/package-manager.md) om beide pakketten te installeren aangezien u een ander pakket in AEM zou.
+* [&#x200B; de steekproefWKND app van het Project van het KUUROORD beschikbaar op GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-spa)
+   * Download de [&#x200B; recentste versie van React app &#x200B;](https://github.com/adobe/aem-guides-wknd-spa/releases) genoemd gelijkaardig aan `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * Download de [&#x200B; recentste steekproefbeelden voor app &#x200B;](https://github.com/adobe/aem-guides-wknd-spa/releases) genoemd gelijkaardig aan `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [&#x200B; het pakketmanager van het Gebruik &#x200B;](/help/implementing/developing/tools/package-manager.md) om beide pakketten te installeren aangezien u een ander pakket in AEM zou.
    * Voor deze analyse hoeft de app niet te worden geïnstalleerd met Maven.
 
 >[!CAUTION]
 >
->Dit document gebruikt [ WKND SPA Project app ](https://github.com/adobe/aem-guides-wknd-spa) voor demonstratiedoeleinden slechts. Gebruik het niet voor enig projectwerk.
+>Dit document gebruikt [&#x200B; WKND SPA Project app &#x200B;](https://github.com/adobe/aem-guides-wknd-spa) voor demonstratiedoeleinden slechts. Gebruik het niet voor enig projectwerk.
 
 >[!TIP]
 >
->Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
+>Om het even welk project van AEM zou het [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
@@ -62,7 +62,7 @@ De redacteur van AEM SPA staat front-end ontwikkelaars toe om SPAs tot stand te 
 
 Door sneller, dynamisch, en meer als een inheemse toepassing te zijn, wordt een SPA een zeer aantrekkelijke ervaring niet alleen voor de bezoeker van de webpagina, maar ook voor marketers en ontwikkelaars toe te schrijven aan de aard van hoe SPAs werkt.
 
-![ voordelen van het KUUROORD ](assets/spa-benefits.png)
+![&#x200B; voordelen van het KUUROORD &#x200B;](assets/spa-benefits.png)
 
 #### Bezoekers {#visitors}
 
@@ -85,7 +85,7 @@ Het primaire idee achter een KUUROORD is dat de vraag aan, en gebiedsdeel op, ee
 
 In een traditionele, opeenvolgende webpagina worden alleen de gegevens geladen die nodig zijn voor de directe pagina. Dit betekent dat wanneer de bezoeker naar een andere pagina gaat, de server om de extra bronnen wordt gevraagd. Aanvullende aanroepen kunnen nodig zijn wanneer de bezoeker werkt met elementen op de pagina. Deze veelvoudige vraag kan een gevoel van vertraging of vertraging geven aangezien de pagina met de verzoeken van de bezoeker moet inhalen.
 
-![ Opeenvolgende tegenover dynamische ervaringen ](assets/spa-sequential-vs-fluid.png)
+![&#x200B; Opeenvolgende tegenover dynamische ervaringen &#x200B;](assets/spa-sequential-vs-fluid.png)
 
 Voor een vloeiendere ervaring, die nadert wat een bezoeker van mobiele, native apps verwacht, laadt een SPA alle noodzakelijke gegevens voor de bezoeker bij de eerste lading. Hoewel dit een beetje langer kan duren, elimineert het dan de behoefte aan extra servervraag.
 
@@ -94,11 +94,11 @@ Door de pagina op de client te renderen, reageren de pagina-elementen sneller en
 >[!TIP]
 >
 >Voor technische details over hoe het werk van SPAs in AEM, zie de artikelen:
->* [ Begonnen het Worden met SPAs in AEM die Reageren gebruiken ](getting-started-react.md)
->* [ Begonnen het worden met SPAs in AEM die Angular gebruiken ](getting-started-angular.md)
+>* [&#x200B; Begonnen het Worden met SPAs in AEM die Reageren gebruiken &#x200B;](getting-started-react.md)
+>* [&#x200B; Begonnen het worden met SPAs in AEM die Angular gebruiken &#x200B;](getting-started-angular.md)
 >
 >Voor een dichtere blik bij het ontwerp, de architectuur, en het technische werkschema van de Redacteur van het KUUROORD, zie het artikel:
->* [ Overzicht van de Redacteur van het KUUROORD ](editor-overview.md).
+>* [&#x200B; Overzicht van de Redacteur van het KUUROORD &#x200B;](editor-overview.md).
 
 ## Ervaring voor het bewerken van inhoud met SPA {#content-editing-experience-with-spa}
 
@@ -108,23 +108,23 @@ Wanneer een KUUROORD wordt gebouwd om de Redacteur van AEM SPA te gebruiken, mer
 
    `http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html`
 
-   ![ WKND huis van het Project van het KUUROORD ](assets/wknd-home.png)
+   ![&#x200B; WKND huis van het Project van het KUUROORD &#x200B;](assets/wknd-home.png)
 
 1. Selecteer een tekstcomponent. Een werkbalk ziet er net zo uit als een andere component. Selecteer **uitgeven**.
 
-   ![ Uitgezochte tekstcomponent ](assets/wknd-text.png)
+   ![&#x200B; Uitgezochte tekstcomponent &#x200B;](assets/wknd-text.png)
 
 1. Bewerk de inhoud als normaal in AEM en houd er rekening mee dat de wijzigingen zich blijven voordoen.
 
-   ![ geeft tekst ](assets/wknd-edit-text.png) uit
+   ![&#x200B; geeft tekst &#x200B;](assets/wknd-edit-text.png) uit
 
 1. Met de Assets-browser kunt u een nieuwe afbeelding naar een afbeeldingscomponent slepen en neerzetten.
 
-   ![ die een beeldactiva ](assets/wkdn-drop-image.png) laten vallen
+   ![&#x200B; die een beeldactiva &#x200B;](assets/wkdn-drop-image.png) laten vallen
 
 1. De wijziging wordt doorgevoerd.
 
-   ![ Beeld bleef ](assets/wknd-change-persisted.png)
+   ![&#x200B; Beeld bleef &#x200B;](assets/wknd-change-persisted.png)
 
 Aanvullende ontwerpgereedschappen, zoals slepen en neerzetten van aanvullende componenten op de pagina, het opnieuw rangschikken van componenten en het wijzigen van de layout, worden ondersteund zoals in elke niet-SPA AEM-toepassing.
 
@@ -132,7 +132,7 @@ Aanvullende ontwerpgereedschappen, zoals slepen en neerzetten van aanvullende co
 >
 >De redacteur van het KUUROORD wijzigt DOM van de toepassing niet. De SPA zelf is verantwoordelijk voor het DOM.
 >
->Om te zien hoe dit werk, aan de volgende sectie van dit artikel [ Apps van het KUUROORD en de Redacteur van AEM SPA ](#spa-apps-and-the-aem-spa-editor) verder gaat.
+>Om te zien hoe dit werk, aan de volgende sectie van dit artikel [&#x200B; Apps van het KUUROORD en de Redacteur van AEM SPA &#x200B;](#spa-apps-and-the-aem-spa-editor) verder gaat.
 
 ## SPA Apps en de Redacteur van AEM SPA {#spa-apps-and-the-aem-spa-editor}
 
@@ -144,17 +144,17 @@ Ervarend hoe een KUUROORD zich voor de gebruiker gedraagt en dan het inspecteren
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
-   ![ Voorproef van het huis van het Project van WKND SPA ](assets/wknd-preview.png)
+   ![&#x200B; Voorproef van het huis van het Project van WKND SPA &#x200B;](assets/wknd-preview.png)
 
    Maak een notitie van de paginastructuur, inclusief navigatie naar onderliggende pagina&#39;s, menu&#39;s en artikelkaarten.
 
 1. Navigeer naar een onderliggende pagina met behulp van het menu en controleer of de pagina direct wordt geladen zonder dat een pagina moet worden vernieuwd.
 
-   ![ WKND pagina 1 van het Project van het KUUROORD ](assets/wknd-page1.png)
+   ![&#x200B; WKND pagina 1 van het Project van het KUUROORD &#x200B;](assets/wknd-page1.png)
 
 1. Open de ingebouwde ontwikkelaarsgereedschappen van uw browser en controleer de netwerkactiviteit terwijl u door de onderliggende pagina&#39;s navigeert.
 
-   ![ de activiteit van het Netwerk ](assets/wknd-network-activity.png)
+   ![&#x200B; de activiteit van het Netwerk &#x200B;](assets/wknd-network-activity.png)
 
    Er is erg weinig verkeer wanneer u van pagina naar pagina gaat in de app. De pagina wordt niet opnieuw geladen en alleen de nieuwe afbeeldingen worden aangevraagd.
 
@@ -162,7 +162,7 @@ Ervarend hoe een KUUROORD zich voor de gebruiker gedraagt en dan het inspecteren
 
 Dus als de pagina niet opnieuw wordt geladen wanneer u door de onderliggende pagina&#39;s navigeert, hoe wordt deze geladen?
 
-De volgende sectie, [ die een Toepassing van het KUUROORD ](#loading-a-spa-application) laadt, graaft dieper in de mechanica van het laden van het KUUROORD en hoe de inhoud synchroon en asynchroon kan worden geladen.
+De volgende sectie, [&#x200B; die een Toepassing van het KUUROORD &#x200B;](#loading-a-spa-application) laadt, graaft dieper in de mechanica van het laden van het KUUROORD en hoe de inhoud synchroon en asynchroon kan worden geladen.
 
 ### Een SPA-toepassing laden {#loading-a-spa-application}
 
@@ -170,7 +170,7 @@ De volgende sectie, [ die een Toepassing van het KUUROORD ](#loading-a-spa-appli
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
-   ![ WKND de voorproef van het Project van het KUUROORD ](assets/wknd-preview.png)
+   ![&#x200B; WKND de voorproef van het Project van het KUUROORD &#x200B;](assets/wknd-preview.png)
 
 1. Gebruik het ingebouwde gereedschap van uw browser om de bron van de pagina weer te geven.
 1. De inhoud van de bron is beperkt.
@@ -179,21 +179,21 @@ De volgende sectie, [ die een Toepassing van het KUUROORD ](#loading-a-spa-appli
 
 1. Gebruik de ingebouwde gereedschappen van uw browser om de pagina te inspecteren. Zie de inhoud van de DOM volledig geladen.
 
-   ![ DOM van het Project van het KND-KUUROORD ](assets/wknd-dom.png)
+   ![&#x200B; DOM van het Project van het KND-KUUROORD &#x200B;](assets/wknd-dom.png)
 
 1. Ga naar het tabblad Netwerk in de Inspecteur en laad de pagina opnieuw.
 
    Afbeeldingsverzoeken negeren. De primaire bronnen die voor de pagina worden geladen, zijn de pagina zelf, CSS, de React JavaScript, de afhankelijkheden en JSON-gegevens voor de pagina.
 
-   ![ het netwerkactiviteit van het Project van WKND SPA ](assets/wknd-network.png)
+   ![&#x200B; het netwerkactiviteit van het Project van WKND SPA &#x200B;](assets/wknd-network.png)
 
 1. Laad de `home.model.json` op een nieuw tabblad.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.model.json`
 
-   ![ JSON van de WKND homepage van het Project van het KUUROORD ](assets/wknd-json.png)
+   ![&#x200B; JSON van de WKND homepage van het Project van het KUUROORD &#x200B;](assets/wknd-json.png)
 
-   De redacteur van AEM SPA gebruikt [ de Diensten van de Inhoud van AEM ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-and-content-services) om de volledige inhoud van de pagina als model te leveren JSON.
+   De redacteur van AEM SPA gebruikt [&#x200B; de Diensten van de Inhoud van AEM &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-and-content-services) om de volledige inhoud van de pagina als model te leveren JSON.
 
    Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan SPA. De levering van de JSON-gegevens wordt omlaag gedelegeerd aan elke component (van pagina, alinea, component, enzovoort).
 
@@ -205,11 +205,11 @@ De volgende sectie, [ die een Toepassing van het KUUROORD ](#loading-a-spa-appli
 
    Dit gedrag is niet verplicht en is volledig definieerbaar.
 
-   ![ WKND het punt van het Project van het KUUROORD groeperen ](assets/wknd-pages.png)
+   ![&#x200B; WKND het punt van het Project van het KUUROORD groeperen &#x200B;](assets/wknd-pages.png)
 
 1. Als u dit verschil in gedrag wilt zien, laadt u de pagina `home` opnieuw en wist u de netwerkactiviteit van de inspecteur. Navigeer naar `page-1` in het paginamenu en controleer of de enige netwerkactiviteit een aanvraag is voor de afbeelding van `page-1` . `page-1` zelf hoeft niet te worden geladen.
 
-   ![ WKND het Project van het KUUROORD pagina-1 netwerkactiviteit ](assets/wknd-page1-network.png)
+   ![&#x200B; WKND het Project van het KUUROORD pagina-1 netwerkactiviteit &#x200B;](assets/wknd-page1-network.png)
 
 ### Interactie met de Redacteur van het KUUROORD {#interaction-with-the-spa-editor}
 
@@ -227,7 +227,7 @@ In de volgende sectie zullen wij het contract onderzoeken dat de Redacteur van h
 
    De component heeft een nieuw gegevenskenmerk `data-cq-data-path` .
 
-   ![ inspecterend de elementen van het Project van WKND SPA ](assets/wknd-inspector.png)
+   ![&#x200B; inspecterend de elementen van het Project van WKND SPA &#x200B;](assets/wknd-inspector.png)
 
    Bijvoorbeeld
 
@@ -251,13 +251,13 @@ SPAs kan met flexibele niveaus van integratie binnen AEM worden toegelaten met i
 
 >[!TIP]
 >
->Zie het document [ Kopieerbaar en Hoofdloos in AEM ](/help/implementing/developing/headful-headless.md) voor meer informatie.
+>Zie het document [&#x200B; Kopieerbaar en Hoofdloos in AEM &#x200B;](/help/implementing/developing/headful-headless.md) voor meer informatie.
 
 ## Volgende stappen {#next-steps}
 
 Nu u het uitgeven van het KUUROORD ervaring in AEM begrijpt en hoe een KUUROORD op de Redacteur van het KUUROORD betrekking heeft, neem een diepere duik in het begrip hoe een KUUROORD wordt gebouwd.
 
-* [ Begonnen het Worden met SPAs in AEM die Reageren ](getting-started-react.md) gebruikt toont hoe een basisKUUROORD wordt gebouwd om met de Redacteur van het KUUROORD in AEM te werken gebruikend Reageren
-* [ Begonnen het Worden met SPAs in AEM die Angular gebruiken ](getting-started-angular.md) toont hoe een basisKUUROORD wordt gebouwd om met de Redacteur van het KUUROORD in AEM te werken gebruikend Angular
-* [ het Overzicht van de Redacteur van het KUUROORD ](editor-overview.md) gaat in meer diepte in het communicatie model tussen AEM en het KUUROORD.
-* [ het ontwikkelen SPAs voor AEM ](developing.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een KUUROORD voor AEM te ontwikkelen en hoe SPAs met de architectuur van AEM in wisselwerking staat.
+* [&#x200B; Begonnen het Worden met SPAs in AEM die Reageren &#x200B;](getting-started-react.md) gebruikt toont hoe een basisKUUROORD wordt gebouwd om met de Redacteur van het KUUROORD in AEM te werken gebruikend Reageren
+* [&#x200B; Begonnen het Worden met SPAs in AEM die Angular gebruiken &#x200B;](getting-started-angular.md) toont hoe een basisKUUROORD wordt gebouwd om met de Redacteur van het KUUROORD in AEM te werken gebruikend Angular
+* [&#x200B; het Overzicht van de Redacteur van het KUUROORD &#x200B;](editor-overview.md) gaat in meer diepte in het communicatie model tussen AEM en het KUUROORD.
+* [&#x200B; het ontwikkelen SPAs voor AEM &#x200B;](developing.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een KUUROORD voor AEM te ontwikkelen en hoe SPAs met de architectuur van AEM in wisselwerking staat.

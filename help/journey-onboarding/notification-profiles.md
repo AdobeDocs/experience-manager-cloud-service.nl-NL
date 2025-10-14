@@ -23,7 +23,7 @@ Van tijd tot tijd, contacteert de Adobe gebruikers betreffende hun milieu&#39;s 
 * **Melding van het Ongeval** - Deze berichten worden verzonden tijdens een incident of wanneer de Adobe een potentiële beschikbaarheidskwestie met uw milieu van AEM as a Cloud Service heeft geïdentificeerd.
 * **Proactief Bericht** - Deze berichten worden verzonden wanneer een het teamlid van de steun van de Adobe begeleiding op een potentiële optimalisering of een aanbeveling wil verstrekken die uw milieu van AEM as a Cloud Service kan profiteren.
 
-De gebruikers kunnen deze berichten voor specifieke programma&#39;s ook ontvangen die op hun [ toestemmingen van de douanegroep ](/help/implementing/cloud-manager/custom-permissions.md) worden gebaseerd.
+De gebruikers kunnen deze berichten voor specifieke programma&#39;s ook ontvangen die op hun [&#x200B; toestemmingen van de douanegroep &#x200B;](/help/implementing/cloud-manager/custom-permissions.md) worden gebaseerd.
 
 Bovendien wordt het toewijzen van groepen aan proactieve meldingen ondersteund en kunnen gebruikers en groepen rechtstreeks aan de productprofielen worden toegewezen.
 
@@ -43,21 +43,21 @@ Omdat gebruikersprofielen worden gemaakt en onderhouden in de Admin Console, moe
 
 Maak twee gebruikersprofielen om de ontvangst van meldingen correct in te stellen. Deze stappen worden slechts één keer uitgevoerd.
 
-1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) .
+1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` &#x200B;](https://adminconsole.adobe.com) .
 
 1. Zorg ervoor dat u zich in de juiste organisatie bevindt.
 
 1. Van de **pagina van het Overzicht**, uitgezochte **Adobe Experience Manager as a Cloud Service** van de **Producten en de diensten** kaart.
 
-   ![ Lijst van producten en de diensten in de Admin Console ](assets/products_services.png)
+   ![&#x200B; Lijst van producten en de diensten in de Admin Console &#x200B;](assets/products_services.png)
 
 1. Navigeer aan de **instantie van Cloud Manager** van de lijst van alle instanties.
 
-   ![ Lijst van instanties in de Admin Console ](assets/cloud_manager_instance.png)
+   ![&#x200B; Lijst van instanties in de Admin Console &#x200B;](assets/cloud_manager_instance.png)
 
 1. U kunt de lijst met alle geconfigureerde Cloud Manager-productprofielen bekijken.
 
-   ![ profielen van het Product in de Admin Console ](assets/cloud_manager_profiles.png)
+   ![&#x200B; profielen van het Product in de Admin Console &#x200B;](assets/cloud_manager_profiles.png)
 
 1. Klik **Nieuw Profiel** en verstrek de volgende details:
 
@@ -95,17 +95,17 @@ Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde i
 
 1. Identificeer de gebruiker(s) of groep(en) die incidenten of proactieve meldingen moet ontvangen.
 
-1. Meld u bij Admin Console aan bij [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) als u nog niet bent aangemeld.
+1. Meld u bij Admin Console aan bij [`https://adminconsole.adobe.com` &#x200B;](https://adminconsole.adobe.com) als u nog niet bent aangemeld.
 
 1. Zorg ervoor dat u de juiste organisatie hebt geselecteerd.
 
 1. Van de **pagina van het Overzicht**, uitgezochte **Adobe Experience Manager as a Cloud Service** van de **Producten en de diensten** kaart.
 
-   ![ Gebruikers ](assets/product_services.png)
+   ![&#x200B; Gebruikers &#x200B;](assets/product_services.png)
 
-1. Als federated identiteitskaart voor uw teamleden nog niet opstelling is, selecteer het **Gebruikers** lusje van de hoogste navigatie, dan uitgezocht **voeg Gebruiker** toe. Anders overslaan aan de sectie [ voegt Bestaande Gebruikers aan Profielen ](#existing-users) toe.
+1. Als federated identiteitskaart voor uw teamleden nog niet opstelling is, selecteer het **Gebruikers** lusje van de hoogste navigatie, dan uitgezocht **voeg Gebruiker** toe. Anders overslaan aan de sectie [&#x200B; voegt Bestaande Gebruikers aan Profielen &#x200B;](#existing-users) toe.
 
-   ![ Gebruikers ](assets/cloud_manager_add_user.png)
+   ![&#x200B; Gebruikers &#x200B;](assets/cloud_manager_add_user.png)
 
 1. In **voeg gebruikers aan uw team** dialoog toe, ga e-mailidentiteitskaart van de gebruiker in u `Adobe ID` voor het **Type van identiteitskaart** wilt toevoegen en selecteren.
 
@@ -128,7 +128,7 @@ Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde i
 
 1. Identificeer de gebruiker(s) of groep(en) die incidenten of proactieve meldingen moet ontvangen.
 
-1. Meld u bij Admin Console aan bij [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) als u nog niet bent aangemeld.
+1. Meld u bij Admin Console aan bij [`https://adminconsole.adobe.com` &#x200B;](https://adminconsole.adobe.com) als u nog niet bent aangemeld.
 
 1. Zorg ervoor dat u de juiste organisatie hebt geselecteerd.
 
@@ -136,7 +136,7 @@ Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde i
 
 1. Selecteer het **lusje van Gebruikers** van de hoogste navigatie.
 
-1. Als de gefedereerde identiteitskaart reeds voor het teamlid bestaat die u aan een berichtprofiel wilt toevoegen, bepaal de plaats van die gebruiker in de lijst en klik het. Anders overslaan aan de sectie [ voegt Nieuwe Gebruikers aan Profielen ](#add-user) toe.
+1. Als de gefedereerde identiteitskaart reeds voor het teamlid bestaat die u aan een berichtprofiel wilt toevoegen, bepaal de plaats van die gebruiker in de lijst en klik het. Anders overslaan aan de sectie [&#x200B; voegt Nieuwe Gebruikers aan Profielen &#x200B;](#add-user) toe.
 
 1. In de **sectie van Producten** van het venster van gebruikersdetails, klik de elliptische knoop en selecteer dan **uitgeven**.
 
@@ -157,4 +157,4 @@ Herhaal deze stappen voor de gebruikers in uw team die u meldingen wilt ontvange
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-* [ Centrum van Acties ](/help/operations/actions-center.md) - hefboomwerking het Centrum van Acties om op incidenten en andere belangrijke informatie gemakkelijk te handelen.
+* [&#x200B; Centrum van Acties &#x200B;](/help/operations/actions-center.md) - hefboomwerking het Centrum van Acties om op incidenten en andere belangrijke informatie gemakkelijk te handelen.

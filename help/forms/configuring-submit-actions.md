@@ -15,15 +15,15 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
 | AEM as a Cloud Service (Foundation Components) | Dit artikel |
-| AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/configure-submit-actions-core-components.md) |
-| AEM as a Cloud Service (Edge Delivery Services) | [ klik hier ](/help/forms/configure-submit-action-eds-forms.md) |
+| AEM as a Cloud Service (Core Components) | [&#x200B; klik hier &#x200B;](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service (Edge Delivery Services) | [&#x200B; klik hier &#x200B;](/help/forms/configure-submit-action-eds-forms.md) |
 
 <!--
 **Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).-->
 
-[ Aanpassings Forms die op de Component van de Stichting ](/help/forms/creating-adaptive-form.md) wordt gebaseerd steunt diverse [ uit-van-de-doos acties ](#submit-actions-supported-by-adaptive-forms-based-on-foundation-components) voorlegt. Een handeling Verzenden wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier klikt.
+[&#x200B; Aanpassings Forms die op de Component van de Stichting &#x200B;](/help/forms/creating-adaptive-form.md) wordt gebaseerd steunt diverse [&#x200B; uit-van-de-doos acties &#x200B;](#submit-actions-supported-by-adaptive-forms-based-on-foundation-components) voorlegt. Een handeling Verzenden wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier klikt.
 
 ## Handelingen verzenden voor Forms op basis van Foundation-componenten
 
@@ -39,20 +39,20 @@ De volgende Verzendacties worden gesteund door Adaptive Forms die op de Componen
 * [Verzenden naar OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Een AEM-workflow aanroepen](/help/forms/configure-submit-action-workflow.md)
 * [Verzenden naar Marketo-pagina](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [ voorleggen aan Adobe Experience Platform (AEP) ](/help/forms/aem-forms-aep-connector.md)
+* [&#x200B; voorleggen aan Adobe Experience Platform (AEP) &#x200B;](/help/forms/aem-forms-aep-connector.md)
 
 U kunt ook een adaptieve vorm indienen die op de Componenten van de Stichting aan andere opslagconfiguraties wordt gebaseerd:
 
 * [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/aem-forms-salesforce-integration.md)
 * [Een adaptief formulier verbinden met Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-Bovendien, kunt u [ aanpassen het gebrek verzendt Acties ](/help/forms/custom-submit-action-form.md) om met specifieke organisatorische vereisten te richten.
+Bovendien, kunt u [&#x200B; aanpassen het gebrek verzendt Acties &#x200B;](/help/forms/custom-submit-action-form.md) om met specifieke organisatorische vereisten te richten.
 
 ### Vorm een Submit Actie voor Vorm die op de Componenten van de Stichting wordt gebaseerd
 
 U kunt een handeling Verzenden configureren in de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren, in de zijbalk.
 
-![ AEM Forms legt actie ](/help/forms/assets/submit-form-foundation-component.png) voor
+![&#x200B; AEM Forms legt actie &#x200B;](/help/forms/assets/submit-form-foundation-component.png) voor
 
 <!-- [!NOTE]
 >

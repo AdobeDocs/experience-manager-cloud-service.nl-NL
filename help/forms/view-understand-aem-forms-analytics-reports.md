@@ -19,7 +19,7 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dit artikel |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=nl-NL) |
 
 In het zich snel ontwikkelende landschap van digitale analysemogelijkheden is het absoluut noodzakelijk om de aandacht te houden aan mondiale trends om geïnformeerde beslissingen te nemen en de digitale ervaringen te optimaliseren. Om dit te verhelpen, integreert Adaptive Forms naadloos met Adobe Analytics om prestatiesmetriek voor uw gepubliceerde formulieren en documenten te vangen en te volgen. Het doel van de analyse van deze meetgegevens is gegevensgestuurde beslissingen te nemen, waarbij gebruik wordt gemaakt van meetgegevens en analyses om de bruikbaarheid en doeltreffendheid van de formulieren te verbeteren.
 
@@ -27,7 +27,7 @@ Door belangrijke prestatie-indicatoren vast te leggen en te volgen, kunnen bedri
 
 ## Adobe Analytics instellen op Adaptive Forms {#setup-adobe-analytics-to-aem-forms}
 
-Voor het AEM Forms Analytics-rapport integreert u eerst Adobe Analytics naar AEM Forms via Experience Cloud Setup Automation. Experience Cloud Setup Automation in Adaptive Forms vereist een Adobe Analytics-licentie, gegevensverzameling (voorheen Adobe Launch) voor het beheer van trackingscripts en integratie met de Experience Platform Launch-API voor gestroomlijnde gegevensaggregatie en het genereren van inzichten. Bezoek [ laat Adobe Analytics voor een AanpassingsVorm toe gebruikend de Automatisering van de Opstelling van Experience Cloud ](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) voor een volledige opstellingsinformatie.
+Voor het AEM Forms Analytics-rapport integreert u eerst Adobe Analytics naar AEM Forms via Experience Cloud Setup Automation. Experience Cloud Setup Automation in Adaptive Forms vereist een Adobe Analytics-licentie, gegevensverzameling (voorheen Adobe Launch) voor het beheer van trackingscripts en integratie met de Experience Platform Launch-API voor gestroomlijnde gegevensaggregatie en het genereren van inzichten. Bezoek [&#x200B; laat Adobe Analytics voor een AanpassingsVorm toe gebruikend de Automatisering van de Opstelling van Experience Cloud &#x200B;](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) voor een volledige opstellingsinformatie.
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ Voor het AEM Forms Analytics-rapport integreert u eerst Adobe Analytics naar AEM
 1. Ga in uw AEM-instantie naar **[!UICONTROL Forms]** >> **[!UICONTROL Forms and Document]** .
 1. Selecteer uw formulier. Adobe Analytics wordt geïntegreerd zoals links in het scherm wordt weergegeven, terwijl de Forms wordt geactiveerd voor Adobe Analytics.
 
-   ![ Rapport van de Mening ](assets/activ-aa.png){width="100%"}
+   ![&#x200B; Rapport van de Mening &#x200B;](assets/activ-aa.png){width="100%"}
 
 1. Klik **Adobe Analytics** om uw rapport te bekijken en prestatiesgegevens te analyseren.
 
@@ -56,60 +56,60 @@ Het heeft de metrieke Uitvoeringen van de Vorm, de Voor verzending bestemde Vorm
 
 * **de fouten van de Bevestiging**: De fout van de Bevestiging toont het totale aantal op bevestiging betrekking hebbende fouten die op de gebieden van de vormen voorkwamen.
 
-* **Unieke bezoekers**: De unieke bezoekers vertegenwoordigen het aantal tijden de vorm door een bezoeker wordt teruggegeven. Voor meer informatie over unieke bezoekers, zie [ Unieke Bezoekers, Bezoeken, en het gedrag van de Klant ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=nl-NL).
+* **Unieke bezoekers**: De unieke bezoekers vertegenwoordigen het aantal tijden de vorm door een bezoeker wordt teruggegeven. Voor meer informatie over unieke bezoekers, zie [&#x200B; Unieke Bezoekers, Bezoeken, en het gedrag van de Klant &#x200B;](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=nl-NL).
 
-  ![ Prestaties van Forms ](assets/forms-performance.png){width="100%"}
+  ![&#x200B; Prestaties van Forms &#x200B;](assets/forms-performance.png){width="100%"}
 
 ### **Bezoekers aan uw vormen** {#visitors-to-your-forms}
 
 Zo krijgt u waardevolle inzichten in bezoekersactiviteiten op uw formulieren:
 
-* **bezoeken &amp; voorlegging**: Het beschrijft de frequentie van bezoeken aan uw vormen in een datumwaaier en het overeenkomstige aantal vormvoorlegging, voor meer informatie over dit klik [ Bezoeken ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=nl-NL).
-* **Unieke bezoekers &amp; hun totale bezoeken**: Het maakt onderscheid tussen de nieuwe en terugkerende gebruikers. Een bezoeker kan bijvoorbeeld elke dag een maand naar uw site komen, maar hij telt nog steeds als één unieke bezoeker. Bezoek [ Unieke bezoekers ](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=nl-NL) voor een gedetailleerde informatie.
+* **bezoeken &amp; voorlegging**: Het beschrijft de frequentie van bezoeken aan uw vormen in een datumwaaier en het overeenkomstige aantal vormvoorlegging, voor meer informatie over dit klik [&#x200B; Bezoeken &#x200B;](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=nl-NL).
+* **Unieke bezoekers &amp; hun totale bezoeken**: Het maakt onderscheid tussen de nieuwe en terugkerende gebruikers. Een bezoeker kan bijvoorbeeld elke dag een maand naar uw site komen, maar hij telt nog steeds als één unieke bezoeker. Bezoek [&#x200B; Unieke bezoekers &#x200B;](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=nl-NL) voor een gedetailleerde informatie.
 
-  ![ Bezoekers van Forms ](assets/forms-visitors.png){width="100%"}
+  ![&#x200B; Bezoekers van Forms &#x200B;](assets/forms-visitors.png){width="100%"}
 
 ### **Type van Apparaat** {#device-type}
 
 Met apparaattype kunt u bepalen welk type apparaat wordt gebruikt voor toegang tot uw formulieren. Het apparaattype wordt gecategoriseerd als Mobiel apparaattype. In dit geval is het bijvoorbeeld Mobiel apparaattype: Overige en Mobiel apparaattype: Mobiele telefoon. De verschillende typen mobiele apparaten zijn onder andere mobiele telefoons, tablets, mediaspelers, gameconsole en nog veel meer.
 
-![ Type van Apparaat ](assets/device-type.png){width="100%"}
+![&#x200B; Type van Apparaat &#x200B;](assets/device-type.png){width="100%"}
 
 ### **Geografische verdeling** {#geographical-breakdown}
 
 U ziet hier de locatie waar de Forms is geopend. Deze pagina bevat regiospecifieke informatie over formuliergebruikers. U ziet bijvoorbeeld dat specifieke informatie over een formuliergebruiker India is, zoals wordt weergegeven in de afbeelding.
 
-![ Geografische verdeling ](assets/geographical-breakdown.png){width="100%"}
+![&#x200B; Geografische verdeling &#x200B;](assets/geographical-breakdown.png){width="100%"}
 
 ### **Hoogste bronnen van verkeer en populaire vormen** {#top-sources-of-traffic-and-popular-forms}
 
 Zo kunt u de primaire bron of de koppeling identificeren waarnaar uw formulieren verwijzen. Bijvoorbeeld, in het bepaalde beeld hieronder ziet u onderzoeksinstanties voor uw adaptieve vormen waar 18.9% **getypt/Bookmarked** is, 70.49% gebaseerd op **de Motoren van het Onderzoek**, en 24% zijn van **Andere Plaatsen van het Web**. U kunt dimensie-items definiëren op basis van uw vereisten. U kunt ook uitzoeken welke formulieren het meest worden bezocht of populair zijn.
 
-![ Verwezen plaatsen ](assets/referred-sites.png){width="100%"}
+![&#x200B; Verwezen plaatsen &#x200B;](assets/referred-sites.png){width="100%"}
 
 ### **activiteit van de Gebruiker op hoogste vormen** {#user-activity-on-top-forms}
 
 Een uitgebreide weergave van de betrokkenheid van gebruikers bij veldbezoeken, formulieruitvoeringen, validatiefouten, verlaten formulieren en het verzenden van formulieren bieden inzicht in de meest actieve formulieren. In de onderstaande afbeelding ziet u dat het toepassingsformulier het actiefst is op basis van de cijfers voor formuliergebeurtenissen.
 
-![ de activiteit van de Gebruiker ](assets/user-activity.png){width="100%"}
+![&#x200B; de activiteit van de Gebruiker &#x200B;](assets/user-activity.png){width="100%"}
 
 ### **Chronologie voor tijd besteed aan vormen** {#timeline-for-time-spent-on-forms}
 
 Het is de tijd die gebruikers in de loop der tijd aan uw formulieren besteden, die u helpen om betrokkenheidspatronen te identificeren.
 
-![ Tijd besteed aan vormen ](assets/time-spent-on-forms.png){width="100%"}
+![&#x200B; Tijd besteed aan vormen &#x200B;](assets/time-spent-on-forms.png){width="100%"}
 
 ### **Gebieden waar de bezoekers hulp met het invullen van de vorm** vereisen {#areas-requiring-assistance}
 
 Metrische gegevens zoals Help-weergaven, validatiefouten en veldbezoeken laten zien waar gebruikers hulp nodig hebben of hoe we fouten in velden kunnen opsporen. Bijvoorbeeld, in het beeld hieronder ziet u dat in een vorm met gebieden zoals **Volledige Naam**, **Aantal van de Telefoon**, **DoB**. Het **Volledige gebied van de Naam** heeft 12 bezoeken, van 12 bezoeken 8 bezoeken hebben bevestigingsfout en 1 klikte hulppictogram voor hulpmening op dit gebied. U kunt de metrische gegevens voor andere formuliervelden zien.
 
-![ het Bijstaan gebieden ](assets/assisting-areas.png){width="100%"}
+![&#x200B; het Bijstaan gebieden &#x200B;](assets/assisting-areas.png){width="100%"}
 
 ### **het laatste vormgebied dat de bezoekers bekeken alvorens zij de vorm** verlieten {#last-form-field-that-visitors-viewed}
 
 Hiermee kunt u de formuliervelden analyseren waarin de gebruikers tijd hebben doorgebracht voordat ze het formulier verlaten. Bijvoorbeeld, in het hieronder gegeven beeld, van 5 verlaten vormen, 2 verlaten op het gebied **Volledige Naam**, 2 verlaten op het gebied **Aantal van de Telefoon**, en 1 verlaten op de Invoer van de Tekst van het Gebied **&#x200B;**.
 
-![ de bezoekers van het Gebied ](assets/field-visitors.png){width="100%"}
+![&#x200B; de bezoekers van het Gebied &#x200B;](assets/field-visitors.png){width="100%"}
 
 ## Zie ook {#see-also}
 

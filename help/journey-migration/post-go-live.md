@@ -24,7 +24,7 @@ Deze reis is het laatste deel, zodat leert u hoe te om op kwesties te controlere
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In de vorige stap van de reis, leerde u hoe te om de migratie uit te voeren en [ gaan-leven ](/help/journey-migration/go-live.md) zodra de code en de inhoud klaar waren om over naar AEM as a Cloud Service te worden bewogen.
+In de vorige stap van de reis, leerde u hoe te om de migratie uit te voeren en [&#x200B; gaan-leven &#x200B;](/help/journey-migration/go-live.md) zodra de code en de inhoud klaar waren om over naar AEM as a Cloud Service te worden bewogen.
 
 ## Doelstelling {#objective}
 
@@ -38,7 +38,7 @@ In dit document worden de gereedschappen beschreven die beschikbaar zijn om prob
 
 Fouten opsporen in AEM as a Cloud Service-ontwikkelomgevingen is in de Developer Console beschikbaar voor ontwikkelings-, stage- en productieomgevingen.
 
-Zie [ het Uitvoeren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) om meer over ontwikkelingshulpmiddelen te leren.
+Zie [&#x200B; het Uitvoeren voor AEM as a Cloud Service &#x200B;](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) om meer over ontwikkelingshulpmiddelen te leren.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -47,13 +47,13 @@ Als gebruiker hebt u toegang tot CRXDE Lite in de ontwikkelomgeving, maar niet i
 >[!IMPORTANT]
 >Het schrijven naar onveranderlijke opslagruimten, zoals `/libs` en `/apps` bij uitvoering, resulteert in fouten. Bovendien hebt u geen toegang tot ontwikkelaarstools voor testomgevingen en productieomgevingen.
 
-Zie [ Ontwikkelen met CRXDE Lite ](/help/implementing/developing/tools/crxde.md) voor meer informatie over hoe te om uw toepassing van AEM te ontwikkelen gebruikend CRXDE Lite.
+Zie [&#x200B; Ontwikkelen met CRXDE Lite &#x200B;](/help/implementing/developing/tools/crxde.md) voor meer informatie over hoe te om uw toepassing van AEM te ontwikkelen gebruikend CRXDE Lite.
 
 ## Logbestanden beheren {#managing-logs}
 
 Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Zie [ Toegang tot en het Leiden Logboeken ](/help/implementing/cloud-manager/manage-logs.md) om tot logboeken door het gebruikersinterface of van API als Cloud Manager toegang te hebben en te leiden.
+Zie [&#x200B; Toegang tot en het Leiden Logboeken &#x200B;](/help/implementing/cloud-manager/manage-logs.md) om tot logboeken door het gebruikersinterface of van API als Cloud Manager toegang te hebben en te leiden.
 
 ## Contact opnemen met ondersteuning {#contacting-support}
 
@@ -63,7 +63,7 @@ Zie [ Toegang tot en het Leiden Logboeken ](/help/implementing/cloud-manager/man
 >abstract="Neem contact op met het ondersteuningsteam van Adobe dat AEM ondersteunt voor meer informatie of om eventuele problemen op te lossen."
 >additional-url="https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html" text="Ondersteuning voor Experience Cloud"
 
-Als u vragen over toegang tot Cloud Service hebt, contacteer uw vertegenwoordiger van Adobe of [ Steun voor Experience Cloud ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) voor meer details.
+Als u vragen over toegang tot Cloud Service hebt, contacteer uw vertegenwoordiger van Adobe of [&#x200B; Steun voor Experience Cloud &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) voor meer details.
 
 ## Documentlessen {#document-learnings}
 

@@ -71,4 +71,4 @@ Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u het kanaal aan een vertoning hebt toegewezen, zou u uw as a Cloud Service reis van Screens moeten voortzetten door het document [ te herzien Installing en het Vormen de Speler van Screens voor AEM as a Cloud Service ](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Nu, dat u het kanaal aan een vertoning hebt toegewezen, zou u uw as a Cloud Service reis van Screens moeten voortzetten door het document [&#x200B; te herzien Installing en het Vormen de Speler van Screens voor AEM as a Cloud Service &#x200B;](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

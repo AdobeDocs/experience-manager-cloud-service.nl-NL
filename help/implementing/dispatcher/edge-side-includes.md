@@ -37,7 +37,7 @@ De ESI-syntaxis ziet er als volgt uit als een bovenliggende pagina `/content/pag
 </html>
 ```
 
-Zie de [ ESI specificatie ](https://www.w3.org/TR/esi-lang/) voor details.
+Zie de [&#x200B; ESI specificatie &#x200B;](https://www.w3.org/TR/esi-lang/) voor details.
 
 ### Overwegingen {#esi-syntax-considerations}
 
@@ -84,4 +84,4 @@ De gevormde eigenschappen hebben het volgende gedrag:
 
 ## Dynamisch afspelen opnemen {#esi-sdi}
 
-Terwijl niet vereist, [ Sling Dynamisch omvat ](https://sling.apache.org/documentation/bundles/dynamic-includes.html) (SDI) kan worden gebruikt om fragmenten te produceren ESI die bij CDN worden geïnterpreteerd.
+Terwijl niet vereist, [&#x200B; Sling Dynamisch omvat &#x200B;](https://sling.apache.org/documentation/bundles/dynamic-includes.html) (SDI) kan worden gebruikt om fragmenten te produceren ESI die bij CDN worden geïnterpreteerd.

@@ -46,7 +46,7 @@ AEM as a Cloud Service heeft shell verenigd ingeschakeld. Nochtans, als top-head
 
 >[!NOTE]
 >
->De verenigde Shell kan ook van uw projectcode worden onbruikbaar gemaakt. Zie [ Structuur van AEM UI - verenigde Shell ](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
+>De verenigde Shell kan ook van uw projectcode worden onbruikbaar gemaakt. Zie [&#x200B; Structuur van AEM UI - verenigde Shell &#x200B;](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
 
 ## Wijzigen in donker thema {#changing-to-dark-theme}
 
@@ -60,7 +60,7 @@ Klik op het profielpictogram om het donkere thema te wijzigen. Deze actie toont 
 
 ## De AEM as a Cloud Service-omgeving identificeren {#identify-aemaacs-environment}
 
-AEM as a Cloud Service biedt drie typen omgevingen: productie, werkgebied en ontwikkeling. Zie [ Types van Milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) voor meer details. Met deze integratie met Verenigde Shell, wordt het type van milieu dat de gebruiker op de dienst van de Auteur wordt geregistreerd getoond op top-header via een etiket zoals hieronder getoond.
+AEM as a Cloud Service biedt drie typen omgevingen: productie, werkgebied en ontwikkeling. Zie [&#x200B; Types van Milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) voor meer details. Met deze integratie met Verenigde Shell, wordt het type van milieu dat de gebruiker op de dienst van de Auteur wordt geregistreerd getoond op top-header via een etiket zoals hieronder getoond.
 
 ![afbeelding](/help/overview/assets/unifiedshell_header_label.png)
 

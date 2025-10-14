@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| Stichting | [ klik hier ](/help/forms/adaptive-form-json-schema-form-model.md) |
+| Stichting | [&#x200B; klik hier &#x200B;](/help/forms/adaptive-form-json-schema-form-model.md) |
 | Kernonderdelen | Dit artikel |
 
 
@@ -26,18 +26,18 @@ ht-degree: 0%
 Voor het ontwerpen van een adaptief formulier op basis van kerncomponenten met behulp van een JSON-schema als formuliermodel is basiskennis van het JSON-schema vereist. Het wordt aanbevolen de volgende inhoud vóór dit artikel te lezen.
 
 * [Een adaptief formulier maken op basis van kerncomponenten](/help/forms/creating-adaptive-form-core-components.md)
-* [ JSON Schema ](https://json-schema.org/)
+* [&#x200B; JSON Schema &#x200B;](https://json-schema.org/)
 
 ## Een JSON-schema gebruiken als formuliermodel  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms ondersteunt het maken van een adaptief formulier op basis van kerncomponenten door een bestaand JSON-schema als formuliermodel te gebruiken. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het Schema JSON u gebruikt zou met [ v4 specificaties ](https://json-schema.org/draft-04/schema) volgzaam moeten zijn.
+Adobe Experience Manager Forms ondersteunt het maken van een adaptief formulier op basis van kerncomponenten door een bestaand JSON-schema als formuliermodel te gebruiken. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het Schema JSON u gebruikt zou met [&#x200B; v4 specificaties &#x200B;](https://json-schema.org/draft-04/schema) volgzaam moeten zijn.
 
 De belangrijkste eigenschappen van het gebruiken van een Schema JSON zijn:
 
 * De structuur van JSON wordt als een structuur weergegeven op het tabblad Inhoudszoeker in de ontwerpmodus voor een adaptief formulier. U kunt elementen vanuit de JSON-hiërarchie naar het adaptieve formulier slepen op basis van kerncomponenten.
 * U kunt het formulier vooraf invullen met JSON dat voldoet aan het bijbehorende schema.
 * Bij verzending worden de gegevens die door de gebruiker zijn ingevoerd, verzonden als JSON die wordt uitgelijnd met het bijbehorende schema.
-* U kunt de vorm ook tot stand brengen die op het schema JSON volgens de specificaties van [ wordt gebaseerd 2012-20 versie ](https://json-schema.org/draft/2020-12/release-notes).
+* U kunt de vorm ook tot stand brengen die op het schema JSON volgens de specificaties van [&#x200B; wordt gebaseerd 2012-20 versie &#x200B;](https://json-schema.org/draft/2020-12/release-notes).
 
 Een JSON-schema bestaat uit eenvoudige en complexe elementtypen. De elementen hebben attributen die regels aan het element toevoegen. Wanneer deze elementen en kenmerken naar een adaptief formulier worden gesleept, worden ze automatisch toegewezen aan de corresponderende componenten Adaptief formulier.
 
@@ -867,7 +867,7 @@ Voer de volgende stappen uit om alle op JSON-schema&#39;s gebaseerde Adaptieve F
 1. Schakel het selectievakje **[!UICONTROL Generate Schema Compliant Data]** in.
 1. Sla de instellingen op.
 
-![ adaptieve vorm en interactieve configuratie van het communicatieWebkanaal ](/help/forms/assets/af-ic-web-channel-configuration.png)
+![&#x200B; adaptieve vorm en interactieve configuratie van het communicatieWebkanaal &#x200B;](/help/forms/assets/af-ic-web-channel-configuration.png)
 
 
 ## Niet-ondersteunde constructies  {#non-supported-constructs}

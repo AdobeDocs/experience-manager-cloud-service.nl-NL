@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Pagina-inhoud nul wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer, zoals de standaardviewer voor PDF in [!DNL Chrome] of [!DNL Firefox] , de inhoud van het PDF/XFA-formulier niet kan lezen. Het standaardbericht Pagina Nul wordt hieronder weergegeven.
 
-![ defaultPage0message ](assets/defaultpage0message.png)
+![&#x200B; defaultPage0message &#x200B;](assets/defaultpage0message.png)
 
 Met de [!DNL AEM Forms] -versie van Designer kunt u het bericht wijzigen dat wordt weergegeven op Pagina Nul. Voer de volgende stappen uit om het bericht Pagina nul te wijzigen:
 
@@ -27,7 +27,7 @@ Met de [!DNL AEM Forms] -versie van Designer kunt u het bericht wijzigen dat wor
 
 1. Klik op **[!UICONTROL File]** > **[!UICONTROL Form Properties]** .
 
-1. In de [!UICONTROL Form Properties] dialoog, klik ![ plus ](assets/plus.png) (plus pictogram) om een douanebezit toe te voegen.
+1. In de [!UICONTROL Form Properties] dialoog, klik ![&#x200B; plus &#x200B;](assets/plus.png) (plus pictogram) om een douanebezit toe te voegen.
 
 1. Specificeer **_pagezerocontent** als naam van het bezit.
 1. Voeg het nieuwe bericht Pagina Nul, in Rich Text-indeling, als waarde toe. Bijvoorbeeld:
@@ -39,7 +39,7 @@ Met de [!DNL AEM Forms] -versie van Designer kunt u het bericht wijzigen dat wor
 
 1. Bekijk het formulier PDF in browser om te bevestigen dat het bericht is bijgewerkt. De bovenstaande voorbeeldwaarde ziet er als volgt uit:
 
-   ![ veranderd bericht ](assets/changedmessage.png)
+   ![&#x200B; veranderd bericht &#x200B;](assets/changedmessage.png)
 
 >[!NOTE]
 >
@@ -47,5 +47,5 @@ Met de [!DNL AEM Forms] -versie van Designer kunt u het bericht wijzigen dat wor
 
 >[!MORELIKETHIS]
 >
->* [ Download en installeer Forms Designer om Document van de malplaatjes van het Verslag te creëren ](/help/forms/installing-configuring-designer.md)
->* [ Forms Designer van het gebruik om Document van de malplaatjes en vormfragmenten van het Verslag (van Dor) te creëren?](/help/forms/use-forms-designer.md)
+>* [&#x200B; Download en installeer Forms Designer om Document van de malplaatjes van het Verslag te creëren &#x200B;](/help/forms/installing-configuring-designer.md)
+>* [&#x200B; Forms Designer van het gebruik om Document van de malplaatjes en vormfragmenten van het Verslag (van Dor) te creëren?](/help/forms/use-forms-designer.md)

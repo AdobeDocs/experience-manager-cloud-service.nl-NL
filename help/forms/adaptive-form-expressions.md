@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adaptief Forms biedt geoptimaliseerde en vereenvoudigde ervaring voor het invullen van formulieren voor eindgebruikers met dynamische scriptmogelijkheden. Hiermee kunt u expressies schrijven om verschillende gedragingen toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. Ook kunt u berekende velden toevoegen, velden alleen-lezen maken, validatielogica toevoegen en nog veel meer. Het dynamische gedrag is gebaseerd op de gebruikersinvoer of voorgevulde gegevens.
 
-JavaScript™ is de expressietaal van Adaptive Forms. Alle expressies zijn geldige JavaScript™-expressies en gebruiken API&#39;s van het Adaptive Forms-scriptmodel. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van de Adaptieve klassen van Forms, de gebeurtenissen, de voorwerpen, en openbare APIs, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript™ is de expressietaal van Adaptive Forms. Alle expressies zijn geldige JavaScript™-expressies en gebruiken API&#39;s van het Adaptive Forms-scriptmodel. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van de Adaptieve klassen van Forms, de gebeurtenissen, de voorwerpen, en openbare APIs, zie [&#x200B; JavaScript™ API van de Bibliotheek voor Aanpassings Forms &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Aanbevolen werkwijzen voor het schrijven van expressies {#best-practices-for-writing-expressions}
 
@@ -32,7 +32,7 @@ Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden
 * Als u een herhalend deelvenster wilt maken, opent u in het dialoogvenster van het deelvenster de instellingen en stelt u de waarde van het maximale telveld in op meer dan 1.
 * De minimale telwaarde van de herhalingsinstellingen van het deelvenster kan een of meer zijn, maar mag niet meer zijn dan de maximale telwaarde.
 * Wanneer een expressie verwijst naar een veld van een herhalend deelvenster, worden de veldnamen in de expressie omgezet naar het dichtstbijzijnde herhalende element.
-* Adaptief Forms biedt een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Voor de volledige lijst van functies, zie [ JavaScript™ API van de Bibliotheek verwijzing voor Adaptieve Forms ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/af.html)
+* Adaptief Forms biedt een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Voor de volledige lijst van functies, zie [&#x200B; JavaScript™ API van de Bibliotheek verwijzing voor Adaptieve Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/af.html)
 * API&#39;s voor het manipuleren van instanties van herhalende deelvensters zijn:
 
    * Een deelvensterinstantie toevoegen: `panel1.instanceManager.addInstance()`
@@ -47,11 +47,11 @@ In Adaptief Forms kunt u expressies schrijven om gedrag toe te voegen, zoals vel
 * **[de uitdrukkingen van de Toegang](#access-expression-enablement-expression)**: om een gebied toe te laten/onbruikbaar te maken.
 * **[berekent uitdrukkingen](#calculate-expression)**: aan auto-compute waarde van een gebied.
 * **[klik uitdrukking](#click-expression)**: om acties op klikgebeurtenis van een knoop te behandelen.
-* **[Manuscript van de Initialisatie ](#initialization-script):** voer een actie op initialisering van een gebied uit.
+* **[Manuscript van de Initialisatie &#x200B;](#initialization-script):** voer een actie op initialisering van een gebied uit.
 * **[uitdrukking van Opties](#options-expression)**: een drop-down lijst dynamisch vullen.
 * **[Summiere uitdrukking](#summary)**: om de titel van een accordeon dynamisch gegevens te verwerken.
 * **[bevestigt uitdrukkingen](#validate-expression)**: om een gebied te bevestigen.
-* **[de Waarde verbindt Manuscript ](#value-commit-script):** om de componenten van een vorm te veranderen nadat de waarde van een gebied wordt veranderd.
+* **[de Waarde verbindt Manuscript &#x200B;](#value-commit-script):** om de componenten van een vorm te veranderen nadat de waarde van een gebied wordt veranderd.
 * **[de uitdrukking van het Zichtbaarheid](#visibility-expression)**: om zicht van een gebied en een paneel te controleren.
 * **[de voltooiingsuitdrukking van de Stap](#step-completion-expression)**: om een gebruiker te verhinderen naar volgende stap van een tovenaar te gaan.
 
@@ -78,7 +78,7 @@ De expressie calculate wordt gebruikt om de waarde van een veld automatisch te b
 
 ### Klikken op uitdrukking {#click-expression}
 
-De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor volledige lijst van APIs, zie [ GuideBridge APIs ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html).
+De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor volledige lijst van APIs, zie [&#x200B; GuideBridge APIs &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html).
 
 **is op** van toepassing: De gebieden van de knoop
 
@@ -199,7 +199,7 @@ Er zijn meerdere validatiepatronen beschikbaar voor een veld. Om een validatiepa
 
 ### Validatie-expressies {#validation-expressions}
 
-De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3&rbrace; lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [ Uitdrukking ](adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
+De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3&rbrace; lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [&#x200B; Uitdrukking &#x200B;](adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
 
 ## Aanvullende informatie {#additional-information}
 
@@ -209,7 +209,7 @@ U kunt de indeling weergeven gebruiken om de gegevens in verschillende indelinge
 
 ### GuideBridge - API&#39;s en gebeurtenissen {#guidebridge-apis-and-events}
 
-GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met Adaptive Forms in het geheugenmodel in een browser. Voor gedetailleerde inleiding aan Gids Bridge API, klassenmethodes, blootgestelde gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/).
+GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met Adaptive Forms in het geheugenmodel in een browser. Voor gedetailleerde inleiding aan Gids Bridge API, klassenmethodes, blootgestelde gebeurtenissen, zie [&#x200B; JavaScript™ API van de Bibliotheek voor Aanpassings Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Als u GuideBridge wilt gebruiken nadat het formulier is geïnitialiseerd (de geb
 
 #### GuideBridge-gebeurtenissen {#guidebridge-events}
 
-GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Voor meer details over dergelijke gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Adaptieve Forms ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Voor meer details over dergelijke gebeurtenissen, zie [&#x200B; JavaScript™ API van de Bibliotheek voor Adaptieve Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html).
 
 Gebruik de volgende code om handlers te registreren:
 
@@ -281,6 +281,6 @@ Voer de volgende stappen uit om een aangepast patroon te maken voor een specifie
 &quot;
 1. U kunt een aangepast patroon toevoegen door een eigenschap toe te wijzen aan het knooppunt `textboxpatterns` . Voeg een eigenschap met een naam toe (bijvoorbeeld `pattern1` ) en stel de waarde ervan in op het patroon dat u wilt toevoegen. Bijvoorbeeld, voeg een bezit `pattern1` met waarde Fax=text {99-999- 9999999} toe. Het patroon is beschikbaar voor alle tekstvakken die u in Adaptief Forms gebruikt.
 
-   ![ Creërend douanepatronen voor gebieden in CrxDe ](assets/creating-custom-patterns.png)
+   ![&#x200B; Creërend douanepatronen voor gebieden in CrxDe &#x200B;](assets/creating-custom-patterns.png)
 
    Aangepaste patronen maken

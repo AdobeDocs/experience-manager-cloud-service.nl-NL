@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # De RemotePage-component {#remote-page-component}
 
-Wanneer het beslissen van [ welk niveau van integratie ](/help/implementing/developing/headful-headless.md) u tussen uw externe SPA en AEM zou willen hebben, is het vaak duidelijk dat u het KUUROORD binnen AEM moet kunnen bekijken en uitgeven. De component RemotePage is alleen voor dit doel een aangepaste pagina-component.
+Wanneer het beslissen van [&#x200B; welk niveau van integratie &#x200B;](/help/implementing/developing/headful-headless.md) u tussen uw externe SPA en AEM zou willen hebben, is het vaak duidelijk dat u het KUUROORD binnen AEM moet kunnen bekijken en uitgeven. De component RemotePage is alleen voor dit doel een aangepaste pagina-component.
 
 {{ue-over-spa}}
 
@@ -27,7 +27,7 @@ De component RemotePage haalt alle noodzakelijke activa van de geproduceerde toe
 * Met de Virtual Front Components kunt u secties markeren als bewerkbaar in de AEM SPA Editor.
 * Samen, kan een SPA die op een verschillend domein wordt ontvangen editable in AEM worden gemaakt.
 
-Zie het artikel [ Uitgevend een Externe KUUROORD binnen AEM ](editing-external-spa.md) voor meer details over editable, externe SPAs in AEM.
+Zie het artikel [&#x200B; Uitgevend een Externe KUUROORD binnen AEM &#x200B;](editing-external-spa.md) voor meer details over editable, externe SPAs in AEM.
 
 ## Vereisten {#requirements}
 
@@ -39,7 +39,7 @@ Zie het artikel [ Uitgevend een Externe KUUROORD binnen AEM ](editing-external-s
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
-     ![ entrypoints bezitsvoorbeeld ](assets/asset-manifest-entrypoints.png)
+     ![&#x200B; entrypoints bezitsvoorbeeld &#x200B;](assets/asset-manifest-entrypoints.png)
 * De toepassing moet kunnen initialiseren in een `<div id="root"></div>` onder het `body` -element. Als er een andere opmaak wordt verwacht voor de app om te instantiëren, moet deze dienovereenkomstig worden aangepast in de HTML-scripts van de proxycomponent met een `sling:resourceSuperType="spa-project-core/components/remotepage` .
 
 ## Beperkingen {#limitations}
@@ -49,4 +49,4 @@ Zie het artikel [ Uitgevend een Externe KUUROORD binnen AEM ](editing-external-s
 
 ## Technische details {#technical-details}
 
-Zoals de rest van het project van AEM SPA, is de Component RemotePage open bron. Voor de volledige technische details van de Component RemotePage, [ zie de bewaarplaats GitHub ](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage).
+Zoals de rest van het project van AEM SPA, is de Component RemotePage open bron. Voor de volledige technische details van de Component RemotePage, [&#x200B; zie de bewaarplaats GitHub &#x200B;](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage).

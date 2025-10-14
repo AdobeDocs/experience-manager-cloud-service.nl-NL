@@ -38,13 +38,13 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM as a Clo
 
 >[!NOTE]
 >
->Voor meer details op de Versies van de Dienst Op locatie en Beheerde, zie [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL).
+>Voor meer details op de Versies van de Dienst Op locatie en Beheerde, zie [&#x200B; AEM 6.5 documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL).
 
 ## Architectuur {#architecture}
 
 >[!NOTE]
 >
->Voor meer details, zie [ Architectuur ](/help/overview/architecture.md).
+>Voor meer details, zie [&#x200B; Architectuur &#x200B;](/help/overview/architecture.md).
 
 AEM as a Cloud Service heeft nu:
 
@@ -115,11 +115,11 @@ Met name het aantal en het type AEM-programma&#39;s dat met Cloud Manager kan wo
 
 Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangrijkste onderdelen van AEM as a Cloud Service kunnen worden gemaakt en geconfigureerd:
 
-* Nieuwe programma&#39;s maken en beheren. Zie [ Begrijpend Programma&#39;s en de Types van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer details.
+* Nieuwe programma&#39;s maken en beheren. Zie [&#x200B; Begrijpend Programma&#39;s en de Types van Programma &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer details.
 
-* De AEM omgevingen binnen deze programma&#39;s maken en beheren. Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.md) voor meer details.
+* De AEM omgevingen binnen deze programma&#39;s maken en beheren. Zie [&#x200B; het Leiden Milieu &#x200B;](/help/implementing/cloud-manager/manage-environments.md) voor meer details.
 
-* Het creëren van en het leiden van de pijpleidingen voor het opstellen van de klantencode en de verwante configuratie aan een specifiek milieu. Zie [ Vormend uw CI-CD Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer details.
+* Het creëren van en het leiden van de pijpleidingen voor het opstellen van de klantencode en de verwante configuratie aan een specifiek milieu. Zie [&#x200B; Vormend uw CI-CD Pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer details.
 
 * Meldingen ontvangen van belangrijke levenscyclusgebeurtenissen voor deze onderdelen (zoals productupdates).
 
@@ -152,13 +152,13 @@ Er zijn ook aanzienlijke verschillen door de aanwezigheid van:
 
 >[!TIP]
 >
->Voor een volledig overzicht van het onboarding proces, zie [ onboarding reis ](/help/journey-onboarding/overview.md).
+>Voor een volledig overzicht van het onboarding proces, zie [&#x200B; onboarding reis &#x200B;](/help/journey-onboarding/overview.md).
 
 ## Ontwikkelen {#developing}
 
 >[!NOTE]
 >
->Voor meer details, kunt u met [ Richtlijnen van de Ontwikkeling ](/help/implementing/developing/introduction/development-guidelines.md) en [ het Ontwikkelen beginnen - het leerprogramma WKND ](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>Voor meer details, kunt u met [&#x200B; Richtlijnen van de Ontwikkeling &#x200B;](/help/implementing/developing/introduction/development-guidelines.md) en [&#x200B; het Ontwikkelen beginnen - het leerprogramma WKND &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 De nieuwe architectuur die AEM as a Cloud Service ondersteunt, omvat een paar belangrijke wijzigingen in de algemene ontwikkelaarservaring. Een van de belangrijkste doelstellingen voor AEM as a Cloud Service is om ervaren klanten (die AEM op locatie of in de context van Adobe Managed Services hebben gebruikt) de mogelijkheid te bieden om zo snel mogelijk te migreren naar AEM as a Cloud Service, zonder het grootste deel van hun aangepaste code te hoeven herschrijven. Hiervoor zijn mogelijk wat aanpassingen vereist.
 
@@ -208,7 +208,7 @@ Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AE
 
 >[!NOTE]
 >
->Voor meer details, begin met [ inhoudsherstel ](/help/operations/restore.md), [ het Indexeren ](/help/operations/indexing.md), en [ andere Taken van het Onderhoud ](/help/operations/maintenance.md).
+>Voor meer details, begin met [&#x200B; inhoudsherstel &#x200B;](/help/operations/restore.md), [&#x200B; het Indexeren &#x200B;](/help/operations/indexing.md), en [&#x200B; andere Taken van het Onderhoud &#x200B;](/help/operations/maintenance.md).
 
 Met AEM as a Cloud Service worden dergelijke bewerkingen geautomatiseerd, zodat de service niet meer hoeft te worden onderbroken.
 
@@ -226,7 +226,7 @@ Bewerkingen voor AEM as a Cloud Service worden ook ondersteund door een nieuwe i
 
 >[!NOTE]
 >
->Zie [ Veiligheid - Steun IMS ](/help/security/ims-support.md).
+>Zie [&#x200B; Veiligheid - Steun IMS &#x200B;](/help/security/ims-support.md).
 
 Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag.
 
@@ -242,7 +242,7 @@ Dit biedt een combinatie van de volgende voordelen:
 
 >[!NOTE]
 >
->Voor meer details, is de [ Basis Behandeling ](/help/sites-cloud/authoring/basic-handling.md) een goed uitgangspunt.
+>Voor meer details, is de [&#x200B; Basis Behandeling &#x200B;](/help/sites-cloud/authoring/basic-handling.md) een goed uitgangspunt.
 
 De basisbeginselen van de authoringgebruikersinterface (UI), zowel voor Sites als Assets, zullen heel vertrouwd zijn voor iedereen die AEM vroeger heeft gebruikt.
 
@@ -276,6 +276,6 @@ Zie voor meer informatie:
 
 >[!TIP]
 >
->Wanneer u een overzicht van AEM as a Cloud Service hebt, kunt u aan boord snel door de [ Onboarding Reis ](/help/journey-onboarding/overview.md) te herzien.
+>Wanneer u een overzicht van AEM as a Cloud Service hebt, kunt u aan boord snel door de [&#x200B; Onboarding Reis &#x200B;](/help/journey-onboarding/overview.md) te herzien.
 >
->Hebt u al een functie voor het testen van AEM? Installeer de [ AEM toe:voegen-aan van de Demo van de Verwijzing ](/help/journey-sites/demos-add-on/overview.md) om AEM het gebruiken van rijke voorbeelden te onderzoeken krachtige eigenschappen.
+>Hebt u al een functie voor het testen van AEM? Installeer de [&#x200B; AEM toe:voegen-aan van de Demo van de Verwijzing &#x200B;](/help/journey-sites/demos-add-on/overview.md) om AEM het gebruiken van rijke voorbeelden te onderzoeken krachtige eigenschappen.

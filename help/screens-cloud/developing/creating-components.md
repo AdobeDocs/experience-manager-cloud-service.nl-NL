@@ -44,4 +44,4 @@ De ingebouwde componenten gebruiken de volgende categorieën van de cliëntbibli
 
 >[!NOTE]
 >
->Om douanecomponenten te ontwikkelen, gebruik het *** [ malplaatje van de steekproefcomponent van AEM Screens ](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***.
+>Om douanecomponenten te ontwikkelen, gebruik het *** [&#x200B; malplaatje van de steekproefcomponent van AEM Screens &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***.

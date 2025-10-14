@@ -154,7 +154,7 @@ De Universal Editor biedt twee krachtige ontwerpbenaderingen voor Edge Delivery 
 
 ### Van stichting tot kerncomponenten
 
-- **Geadviseerde benadering:** gebruik het [ hulpmiddel van het migratienut ](/help/forms/migration-utility-tool-for-af-core-components.md)
+- **Geadviseerde benadering:** gebruik het [&#x200B; hulpmiddel van het migratienut &#x200B;](/help/forms/migration-utility-tool-for-af-core-components.md)
 - **Voordelen:** Moderne eigenschappen, betere prestaties, dubbel het publiceren vermogen
 - **inspanning:** Gematigd aan hoog, afhankelijk van vormingewikkeldheid
 
@@ -180,8 +180,8 @@ Nadat u de formulierbuilder hebt gekozen:
 
 ### Universele editor (Edge Delivery Services)
 
-1. **WYSIWYG Authoring:** [ Begonnen worden met Universele Redacteur ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-2. **op document-Gebaseerde Authoring:** [ bouwt uw eerste vorm met spreadsheets ](/help/edge/docs/forms/tutorial.md)
+1. **WYSIWYG Authoring:** [&#x200B; Begonnen worden met Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+2. **op document-Gebaseerde Authoring:** [&#x200B; bouwt uw eerste vorm met spreadsheets &#x200B;](/help/edge/docs/forms/tutorial.md)
 
 
 ## Hebt u hulp nodig om te beslissen?
@@ -199,6 +199,6 @@ Neem contact op met uw AEM Forms-implementatieteam of Adobe-ondersteuning voor g
 ## Verwante artikelen
 
 - [Gedetailleerde vergelijking van formulierontwerpen](/help/edge/docs/forms/authoring-a-form.md)
-- [ overzicht van de Componenten van de Kern van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL)
+- [&#x200B; overzicht van de Componenten van de Kern van AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL)
 - [Overzicht Edge Delivery Services for Forms](/help/edge/docs/forms/overview.md)
-- [ Zwaarloze Adaptieve Forms met de Componenten van de Kern ](https://experienceleague.adobe.com/nl/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)
+- [&#x200B; Zwaarloze Adaptieve Forms met de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)

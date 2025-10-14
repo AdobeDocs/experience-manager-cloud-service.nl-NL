@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Middelen voorvertonen en de eigenschappen ervan in Content Hub {#asset-properties}
 
-![ Bannerbeeld van de metagegevensbanner ](assets/metadata-banner-image.png)
+![&#x200B; Bannerbeeld van de metagegevensbanner &#x200B;](assets/metadata-banner-image.png)
 
 Met [!DNL The Content Hub] kunt u informatie over het element weergeven die essentieel is voor een efficiënte distributie van elementen. Het is de verzameling van alle gegevens die beschikbaar zijn voor een element.
 
@@ -24,13 +24,13 @@ Door de voorvertoning van elementen en de bijbehorende eigenschappen weer te gev
 
 ## Vereisten {#prerequisites}
 
-[ de gebruikers van Content Hub ](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
+[&#x200B; de gebruikers van Content Hub &#x200B;](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
 
 ## Middelen voorvertonen en de eigenschappen ervan {#properties-ui}
 
-Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijken. Met de voorvertoningsfunctie kunt u niet alleen de afbeeldingen bekijken, maar ook een paar andere ondersteunde elementtypen. U kunt niet alleen het element weergeven, maar ook de gedetailleerde informatie ervan bekijken en andere handelingen uitvoeren. Om informatie van een activa te bekijken, navigeer aan de activa of [ onderzoek ](search-assets.md) de activa en klik dan de activa om zijn eigenschappen te openen. In de volgende afbeelding ziet u de velden die beschikbaar zijn op een pagina met eigenschappen van elementen:
+Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijken. Met de voorvertoningsfunctie kunt u niet alleen de afbeeldingen bekijken, maar ook een paar andere ondersteunde elementtypen. U kunt niet alleen het element weergeven, maar ook de gedetailleerde informatie ervan bekijken en andere handelingen uitvoeren. Om informatie van een activa te bekijken, navigeer aan de activa of [&#x200B; onderzoek &#x200B;](search-assets.md) de activa en klik dan de activa om zijn eigenschappen te openen. In de volgende afbeelding ziet u de velden die beschikbaar zijn op een pagina met eigenschappen van elementen:
 
-![ Eigenschappen van een activa UI ](assets/properties-ui.png)
+![&#x200B; Eigenschappen van een activa UI &#x200B;](assets/properties-ui.png)
 
 * **A:** Titel van een activa
 * **B:** percentage van gezoem of voorproefactiva door binnen of uit te zoomen
@@ -111,7 +111,7 @@ Sommige eigenschappen voor elementen die worden weergegeven in [!DNL Content Hub
 
 * **Slimme Markeringen:** [!DNL The Content Hub] gebruikt de slimme inhoudsdiensten van Adobe Sensei om activa te trainen gebruikend herkenningsalgoritme op de op markeringen-gebaseerde structuur. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. Met slimme tags verhoogt u de snelheid van de inhoud van uw projecten doordat u snel relevante middelen kunt vinden. De slimme tags zijn een voorbeeld van informatie over elementen die niet in de afbeelding voorkomen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op elementen.
 
-* **de Markeringen van de Kleur:** [ de markeringen van de Kleur ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=nl-NL) helpen u activa herkennen gebruikend kleuren die automatisch in een activa gebruikend de mogelijkheden van Adobe AIR AI worden geïdentificeerd.
+* **de Markeringen van de Kleur:** [&#x200B; de markeringen van de Kleur &#x200B;](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=nl-NL) helpen u activa herkennen gebruikend kleuren die automatisch in een activa gebruikend de mogelijkheden van Adobe AIR AI worden geïdentificeerd.
 
 * Uploaddatum
 
@@ -121,12 +121,12 @@ Sommige eigenschappen voor elementen die worden weergegeven in [!DNL Content Hub
 
 * Laatst gewijzigd door
 
-Er zijn ook eigenschappen die worden opgegeven wanneer elementen aan Content Hub worden toegevoegd. Voor meer informatie, zie [ merk goedgekeurde activa aan Content Hub ](upload-brand-approved-assets.md) toevoegen. Deze eigenschappen worden ook weergegeven op de pagina met eigenschappen van elementen.
+Er zijn ook eigenschappen die worden opgegeven wanneer elementen aan Content Hub worden toegevoegd. Voor meer informatie, zie [&#x200B; merk goedgekeurde activa aan Content Hub &#x200B;](upload-brand-approved-assets.md) toevoegen. Deze eigenschappen worden ook weergegeven op de pagina met eigenschappen van elementen.
 
 Beheerders kunnen ook de eigenschappen configureren, die voor elk element worden weergegeven:
 
-* In de activavoorproef UI: zie [ Content Hub gebruikersinterface ](configure-content-hub-ui-options.md#configure-asset-details-content-hub) vormen.
-* Op activakaarten in onderzoeksresultaten of inzamelingen: zie [ Content Hub gebruikersinterface ](configure-content-hub-ui-options.md#asset-card) vormen.
+* In de activavoorproef UI: zie [&#x200B; Content Hub gebruikersinterface &#x200B;](configure-content-hub-ui-options.md#configure-asset-details-content-hub) vormen.
+* Op activakaarten in onderzoeksresultaten of inzamelingen: zie [&#x200B; Content Hub gebruikersinterface &#x200B;](configure-content-hub-ui-options.md#asset-card) vormen.
 
 <!--
 

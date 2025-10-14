@@ -21,7 +21,7 @@ Met de ingebouwde tools voor beheer en vertaling van meerdere sites van Adobe Ex
 * Met vertaling kunt u de vertaling van pagina-inhoud automatiseren om meertalige websites te maken en onderhouden:
    * [Inhoud vertalen voor meertalige sites](translation/overview.md)
 
-Deze twee eigenschappen kunnen worden gecombineerd om voor websites te behandelen die zowel [ multinationaal als meertalig ](#multinational-and-multilingual-sites) zijn.
+Deze twee eigenschappen kunnen worden gecombineerd om voor websites te behandelen die zowel [&#x200B; multinationaal als meertalig &#x200B;](#multinational-and-multilingual-sites) zijn.
 
 >[!TIP]
 >
@@ -33,8 +33,8 @@ U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites
 
 Doorgaans maakt u een primaire site in één taal en voor een specifiek land en gebruikt u die inhoud als basis voor de andere sites, waar nodig met vertaling.
 
-1. [ vertaal ](translation/overview.md) de primaire plaats in verschillende talen.
-1. Gebruik [ MultiManager van de Plaats ](msm/overview.md) aan:
+1. [&#x200B; vertaal &#x200B;](translation/overview.md) de primaire plaats in verschillende talen.
+1. Gebruik [&#x200B; MultiManager van de Plaats &#x200B;](msm/overview.md) aan:
    1. Inhoud van de primaire site en de bijbehorende vertalingen opnieuw gebruiken om sites te maken voor andere landen en culturen.
    1. Koppel zo nodig elementen van de actieve kopieën los om lokalisatiegegevens toe te voegen.
 
@@ -46,12 +46,12 @@ Doorgaans maakt u een primaire site in één taal en voor een specifiek land en 
 
 In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet alle niveaus/elementen in kwestie weergeven):
 
-![ Overzicht van de Lokalisatie ](assets/localization-overview.png)
+![&#x200B; Overzicht van de Lokalisatie &#x200B;](assets/localization-overview.png)
 
 In dit scenario, en vergelijkbare, beheert MSM niet de verschillende taalversies als dusdanig.
 
-* [ MSM ](msm/overview.md) beheert de plaatsing van vertaalde inhoud van een blauwdruk (namelijk een primaire globaal) aan Levende Exemplaren (namelijk de lokale plaatsen), binnen de grenzen van een taal.
-* De [ vertaling ](translation/overview.md) integratiemogelijkheden van AEM, met de diensten van het de vertaalbeheer van de derde, beheert de talen en het vertalen van inhoud in deze verschillende talen.
+* [&#x200B; MSM &#x200B;](msm/overview.md) beheert de plaatsing van vertaalde inhoud van een blauwdruk (namelijk een primaire globaal) aan Levende Exemplaren (namelijk de lokale plaatsen), binnen de grenzen van een taal.
+* De [&#x200B; vertaling &#x200B;](translation/overview.md) integratiemogelijkheden van AEM, met de diensten van het de vertaalbeheer van de derde, beheert de talen en het vertalen van inhoud in deze verschillende talen.
 
 Voor geavanceerdere gebruiksgevallen kan MSM ook in de primaire talen worden gebruikt.
 
@@ -59,5 +59,5 @@ Voor geavanceerdere gebruiksgevallen kan MSM ook in de primaire talen worden geb
 >
 >Voor alle gebruiksgevallen is het raadzaam de volgende aanbevolen procedures te lezen:
 >
->* [ Beste praktijken voor MSM ](msm/best-practices.md)
->* [ Beste praktijken voor Vertaling ](translation/best-practices.md)
+>* [&#x200B; Beste praktijken voor MSM &#x200B;](msm/best-practices.md)
+>* [&#x200B; Beste praktijken voor Vertaling &#x200B;](translation/best-practices.md)

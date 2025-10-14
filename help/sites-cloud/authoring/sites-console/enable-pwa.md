@@ -32,25 +32,25 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies voor p
 
 ## Inleiding {#introduction}
 
-[ Progressieve Web apps (PWAs) ](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) laat immersieve app-achtige ervaringen voor de plaatsen van AEM toe door hen toe te staan om plaatselijk op de machine van een gebruiker worden opgeslagen en offline toegankelijk zijn. Een gebruiker kan onderweg door een site bladeren, zelfs als hij een internetverbinding verliest. PWA&#39;s bieden een naadloze ervaring, zelfs als het netwerk verloren of instabiel is.
+[&#x200B; Progressieve Web apps (PWAs) &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) laat immersieve app-achtige ervaringen voor de plaatsen van AEM toe door hen toe te staan om plaatselijk op de machine van een gebruiker worden opgeslagen en offline toegankelijk zijn. Een gebruiker kan onderweg door een site bladeren, zelfs als hij een internetverbinding verliest. PWA&#39;s bieden een naadloze ervaring, zelfs als het netwerk verloren of instabiel is.
 
-In plaats van het vereisen van om het even welke opname van de plaats, kan een inhoudsauteur PWA eigenschappen als extra lusje in de [ pagina eigenschappen ](/help/sites-cloud/authoring/sites-console/page-properties.md) van een plaats vormen.
+In plaats van het vereisen van om het even welke opname van de plaats, kan een inhoudsauteur PWA eigenschappen als extra lusje in de [&#x200B; pagina eigenschappen &#x200B;](/help/sites-cloud/authoring/sites-console/page-properties.md) van een plaats vormen.
 
-* Wanneer bewaard of gepubliceerd, brengt deze configuratie een gebeurtenismanager teweeg die de [ duidelijke dossiers ](https://developer.mozilla.org/en-US/docs/Web/Manifest) en a [ de dienstarbeider ](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) schrijft die de eigenschappen van PWA op de plaats toelaten.
+* Wanneer bewaard of gepubliceerd, brengt deze configuratie een gebeurtenismanager teweeg die de [&#x200B; duidelijke dossiers &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Manifest) en a [&#x200B; de dienstarbeider &#x200B;](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) schrijft die de eigenschappen van PWA op de plaats toelaten.
 * Er worden ook segmenttoewijzingen bijgehouden om ervoor te zorgen dat de serviceworker wordt aangeboden vanuit de hoofdmap van de toepassing, zodat inhoud die buiten de app valt, kan worden vernieuwd en offline mogelijkheden worden toegestaan.
 
 Met PWA beschikt de gebruiker over een lokale kopie van de site, zodat hij zelfs zonder internetverbinding een app-achtige ervaring heeft.
 
 >[!NOTE]
 >
->De progressieve Web apps zijn evoluerende technologie en steun voor lokale app installatie en andere eigenschappen [ hangt van welke browser af u ](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary) gebruikt.
+>De progressieve Web apps zijn evoluerende technologie en steun voor lokale app installatie en andere eigenschappen [&#x200B; hangt van welke browser af u &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary) gebruikt.
 
 ## Vereisten {#prerequisites}
 
 Er zijn twee vereisten voor uw projectomgeving om PWA-functies voor uw site te kunnen gebruiken:
 
-1. [ Componenten van de Kern van het Gebruik ](#adjust-components) om uit deze eigenschap voordeel te halen
-1. [ pas uw Dispatcher ](#adjust-dispatcher) regels aan om de vereiste dossiers bloot te stellen
+1. [&#x200B; Componenten van de Kern van het Gebruik &#x200B;](#adjust-components) om uit deze eigenschap voordeel te halen
+1. [&#x200B; pas uw Dispatcher &#x200B;](#adjust-dispatcher) regels aan om de vereiste dossiers bloot te stellen
 
 Dit zijn technische stappen die de auteur met het ontwikkelingsteam moet coördineren. Deze stappen zijn slechts eenmaal per site vereist.
 
@@ -60,7 +60,7 @@ Core Components versie 2.15.0 en hoger biedt volledige ondersteuning voor de PWA
 
 >[!NOTE]
 >
->Adobe adviseert niet gebruikend de eigenschappen van PWA op douanecomponenten of componenten niet [ uitgebreid van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=nl-NL).
+>Adobe adviseert niet gebruikend de eigenschappen van PWA op douanecomponenten of componenten niet [&#x200B; uitgebreid van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=nl-NL).
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -88,7 +88,7 @@ The developer also adds the following link to the `customfooterlibs.html` file o
 
 ### Je Dispatcher aanpassen {#adjust-dispatcher}
 
-Met de functie PWA worden `/content/<sitename>/manifest.webmanifest` bestanden gegenereerd en gebruikt. Door gebrek, [ stelt Dispatcher ](/help/implementing/dispatcher/overview.md) dergelijke dossiers niet bloot. Om deze dossiers bloot te stellen, moet de ontwikkelaar de volgende configuratie aan uw plaatsproject toevoegen.
+Met de functie PWA worden `/content/<sitename>/manifest.webmanifest` bestanden gegenereerd en gebruikt. Door gebrek, [&#x200B; stelt Dispatcher &#x200B;](/help/implementing/dispatcher/overview.md) dergelijke dossiers niet bloot. Om deze dossiers bloot te stellen, moet de ontwikkelaar de volgende configuratie aan uw plaatsproject toevoegen.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -105,7 +105,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## PWA inschakelen voor uw site {#enabling-pwa-for-your-site}
 
-Met [ voldaan aan de eerste vereisten ](#prerequisites), is het voor een inhoudauteur gemakkelijk om de eigenschappen van PWA aan een plaats toe te laten. Hieronder volgt een basisoverzicht van hoe u dit kunt doen. De individuele opties worden gedetailleerd in de sectie [ Gedetailleerde Opties ](#detailed-options).
+Met [&#x200B; voldaan aan de eerste vereisten &#x200B;](#prerequisites), is het voor een inhoudauteur gemakkelijk om de eigenschappen van PWA aan een plaats toe te laten. Hieronder volgt een basisoverzicht van hoe u dit kunt doen. De individuele opties worden gedetailleerd in de sectie [&#x200B; Gedetailleerde Opties &#x200B;](#detailed-options).
 
 1. Log in bij AEM.
 1. Van het belangrijkste menu, uitgezochte **Navigatie** > **Plaatsen**.
@@ -114,11 +114,11 @@ Met [ voldaan aan de eerste vereisten ](#prerequisites), is het voor een inhouda
    1. Selecteer de optie **laat PWA** toe.
    1. Bepaal **Opstarten URL**.
 
-      ![ laat PWA ](../assets/pwa-enable.png) toe
+      ![&#x200B; laat PWA &#x200B;](../assets/pwa-enable.png) toe
 
    1. Upload een pictogram van 512 x 512 png naar de DAM en verwijs naar dat pictogram voor de app.
 
-      ![ bepalen het pictogram van PWA ](../assets/pwa-icon.png)
+      ![&#x200B; bepalen het pictogram van PWA &#x200B;](../assets/pwa-icon.png)
 
    1. Configureer de paden die de serviceworker offline moet gebruiken. Typische paden zijn:
       * `/content/<sitename>`
@@ -127,17 +127,17 @@ Met [ voldaan aan de eerste vereisten ](#prerequisites), is het voor een inhouda
       * Eventuele verwijzingen naar lettertypen van derden
       * `/etc/clientlibs/<sitename>`
 
-      ![ bepaalt PWA offline wegen ](../assets/pwa-offline.png)
+      ![&#x200B; bepaalt PWA offline wegen &#x200B;](../assets/pwa-offline.png)
 
 1. Selecteer **sparen &amp; Sluiten**.
 
-Uw plaats wordt nu gevormd en u kunt [ het als lokale app ](#using-pwa-enabled-site) installeren.
+Uw plaats wordt nu gevormd en u kunt [&#x200B; het als lokale app &#x200B;](#using-pwa-enabled-site) installeren.
 
 ## Uw PWA-site gebruiken {#using-pwa-enabled-site}
 
-Nu u [ uw plaats hebt gevormd om PWA ](#enabling-pwa-for-your-site) te steunen, kunt u het voor zich ervaren.
+Nu u [&#x200B; uw plaats hebt gevormd om PWA &#x200B;](#enabling-pwa-for-your-site) te steunen, kunt u het voor zich ervaren.
 
-1. Heb toegang tot de plaats in a [ gesteunde browser ](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
+1. Heb toegang tot de plaats in a [&#x200B; gesteunde browser &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 1. Er verschijnt een nieuw pictogram op de adresbalk van de browser om aan te geven dat de site kan worden geïnstalleerd als een lokale app.
    * Afhankelijk van de browser kan het pictogram variëren en kan de browser ook een melding (zoals een banner of een dialoogvenster) weergeven die aangeeft dat het mogelijk is om de toepassing als een lokale app te installeren.
 1. Installeer de toepassing.
@@ -146,47 +146,47 @@ Nu u [ uw plaats hebt gevormd om PWA ](#enabling-pwa-for-your-site) te steunen, 
 
 ## Gedetailleerde opties {#detailed-options}
 
-De volgende sectie verstrekt meer detail op de beschikbare opties wanneer [ vormend uw plaats voor PWA ](#enabling-pwa-for-your-site).
+De volgende sectie verstrekt meer detail op de beschikbare opties wanneer [&#x200B; vormend uw plaats voor PWA &#x200B;](#enabling-pwa-for-your-site).
 
 ### Installeerbare ervaring configureren {#configure-installable-experience}
 
 Met deze instellingen kan uw site zich gedragen als een native app door deze installeerbaar te maken op het thuisscherm van de bezoeker en offline beschikbaar te stellen.
 
 * **laat PWA** toe - dit is de belangrijkste knevel voor het toelaten van PWA voor de plaats.
-* **Opstarten URL** - dit is het [ aangewezen begin URL ](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) dat app opent wanneer de gebruiker plaatselijk geïnstalleerde app laadt.
+* **Opstarten URL** - dit is het [&#x200B; aangewezen begin URL &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) dat app opent wanneer de gebruiker plaatselijk geïnstalleerde app laadt.
    * Dit kan elk pad in de inhoudsstructuur zijn.
    * Dit hoeft niet de basis te zijn en is vaak een speciale welkomstpagina voor de app.
    * Als deze URL relatief is, wordt de manifest-URL gebruikt als basis-URL om deze op te lossen.
    * Als de functie leeg blijft, gebruikt deze het adres van de webpagina vanwaar de app is geïnstalleerd.
    * U wordt aangeraden een waarde in te stellen.
-* **wijze van de Vertoning** - een PWA-Toegelaten app is nog een plaats van AEM die door browser wordt geleverd. [ Deze vertoningsopties ](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) bepalen hoe browser zou moeten worden verborgen of anders aan de gebruiker op het lokale apparaat worden voorgesteld.
+* **wijze van de Vertoning** - een PWA-Toegelaten app is nog een plaats van AEM die door browser wordt geleverd. [&#x200B; Deze vertoningsopties &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) bepalen hoe browser zou moeten worden verborgen of anders aan de gebruiker op het lokale apparaat worden voorgesteld.
    * **Zelfstandig** - browser is verborgen van de gebruiker en het lijkt als inheemse app. Dit is de standaardwaarde.
       * Met deze optie moet toepassingsnavigatie volledig door uw inhoud gebruikend verbindingen en componenten op de pagina&#39;s van de plaats zonder de browser navigatiecontroles mogelijk zijn.
    * **Browser** - browser verschijnt aangezien het normaal wanneer het bezoeken van de plaats zou.
    * **Minimale UI** - browser is meestal verborgen, als inheemse app, maar de basisnavigatie controles worden blootgesteld.
    * **Volledig Scherm** - browser is verborgen, als inheemse app, maar op het volledige schermwijze teruggegeven.
       * Met deze optie moet toepassingsnavigatie volledig door uw inhoud gebruikend verbindingen en componenten op de pagina&#39;s van de plaats zonder de browser navigatiecontroles mogelijk zijn.
-* **de richtlijn van het Scherm** - als lokale app, moet PWA weten hoe te om [ apparatenrichtingen ](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation) te behandelen.
+* **de richtlijn van het Scherm** - als lokale app, moet PWA weten hoe te om [&#x200B; apparatenrichtingen &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation) te behandelen.
    * **om het even welk** - app past aan de richtlijn van het apparaat van de gebruiker aan. Dit is de standaardwaarde.
    * **Portret** - dit dwingt app om in portretlay-out ongeacht de richtlijn van het apparaat van de gebruiker te openen.
    * **Liggend** - dit dwingt app om in landschaplay-out ongeacht de richtlijn van het apparaat van de gebruiker te openen.
-* **kleur van het Thema** - dit bepaalt de [ kleur van app ](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) die beïnvloedt hoe het werkende systeem van de lokale gebruiker de inheemse toolbar UI en navigatiecontroles toont. Afhankelijk van de browser kan dit invloed hebben op andere presentatie-elementen van de app.
+* **kleur van het Thema** - dit bepaalt de [&#x200B; kleur van app &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) die beïnvloedt hoe het werkende systeem van de lokale gebruiker de inheemse toolbar UI en navigatiecontroles toont. Afhankelijk van de browser kan dit invloed hebben op andere presentatie-elementen van de app.
    * Selecteer een kleur met het pop-upmenu Kleurenvak.
    * De kleur kan ook worden gedefinieerd door hexadecimale waarden of RGB-waarden.
-* **Achtergrondkleur** - dit bepaalt de [ achtergrondkleur van app ](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), die wordt getoond aangezien app laadt.
+* **Achtergrondkleur** - dit bepaalt de [&#x200B; achtergrondkleur van app &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), die wordt getoond aangezien app laadt.
    * Selecteer een kleur met het pop-upmenu Kleurenvak.
    * De kleur kan ook worden gedefinieerd door hexadecimale waarden of RGB-waarden.
-   * Bepaalde browsers [ bouwen automatisch een welkomstscherm ](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) van de toepassingsnaam, achtergrondkleur, en pictogram.
-* **Pictogram** - dit bepaalt [ het pictogram ](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) dat app op het apparaat van de gebruiker vertegenwoordigt.
+   * Bepaalde browsers [&#x200B; bouwen automatisch een welkomstscherm &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) van de toepassingsnaam, achtergrondkleur, en pictogram.
+* **Pictogram** - dit bepaalt [&#x200B; het pictogram &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) dat app op het apparaat van de gebruiker vertegenwoordigt.
    * Het pictogram moet een png-bestand van 512x512 pixels zijn.
-   * Het pictogram moet [ worden opgeslagen in DAM ](/help/assets/overview.md).
+   * Het pictogram moet [&#x200B; worden opgeslagen in DAM &#x200B;](/help/assets/overview.md).
 
 ### Cachebeheer (geavanceerd) {#offline-configuration}
 
 Deze instellingen stellen delen van deze site offline beschikbaar en lokaal beschikbaar op het apparaat van uw bezoeker. Hierdoor kunt u de cache van de webtoepassing beheren om netwerkaanvragen te optimaliseren en offline ervaringen te ondersteunen.
 
 * **Caching strategie en frequentie van inhoud verfrissen zich** - Dit het plaatsen bepaalt het caching model voor uw PWA.
-   * **Gematigd** - [ Dit het plaatsen ](https://web.dev/stale-while-revalidate/) is het geval voor de meeste plaatsen en is de standaardwaarde.
+   * **Gematigd** - [&#x200B; Dit het plaatsen &#x200B;](https://web.dev/stale-while-revalidate/) is het geval voor de meeste plaatsen en is de standaardwaarde.
       * Met deze instelling wordt de inhoud die de gebruiker voor het eerst bekijkt, geladen uit de cache en terwijl de gebruiker die inhoud gebruikt, wordt de rest van de inhoud in de cache opnieuw gevalideerd.
    * **vaak** - dit is het geval voor plaatsen die updates nodig hebben om snel zoals veilinghuizen te zijn.
       * Met deze instelling zoekt de app eerst naar de meest recente inhoud via het netwerk en als deze niet beschikbaar is, wordt de lokale cache opnieuw opgehaald.
@@ -223,7 +223,7 @@ Clientbibliotheken worden geleverd met de toevoeging van een cacheselectiekader,
 
 De afbeeldingscomponent van de AEM Core-componenten bepaalt de voorkant van de beste uitvoering die u wilt ophalen. Dit mechanisme bevat ook een tijdstempel die overeenkomt met de laatste gewijzigde tijd van die bron. Dit mechanisme compliceert de configuratie van de PWA pre-cache.
 
-Wanneer het vormen van pre-geheime voorgeheugen, moet de gebruiker van alle wegvariaties een lijst maken die kunnen worden gehaald. Deze variaties bestaan uit parameters zoals kwaliteit en breedte. U wordt geadviseerd het aantal van deze variaties te verminderen tot maximaal drie - klein, middelgroot, groot. U kunt dat als inhoud-beleid dialoogdoos van de [ Component van het Beeld doen ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=nl-NL).
+Wanneer het vormen van pre-geheime voorgeheugen, moet de gebruiker van alle wegvariaties een lijst maken die kunnen worden gehaald. Deze variaties bestaan uit parameters zoals kwaliteit en breedte. U wordt geadviseerd het aantal van deze variaties te verminderen tot maximaal drie - klein, middelgroot, groot. U kunt dat als inhoud-beleid dialoogdoos van de [&#x200B; Component van het Beeld doen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=nl-NL).
 
 Als het niet zorgvuldig wordt geconfigureerd, kan het geheugen- en netwerkgebruik de prestaties van uw PWA ernstig beïnvloeden. Als u bijvoorbeeld 50 afbeeldingen wilt vooraf instellen en drie breedten per afbeelding wilt hebben, moet de gebruiker die de site beheert, een lijst bijhouden met maximaal 150 items in de PWA-sectie voor het vooraf opslaan in cache van de pagina-eigenschappen.
 

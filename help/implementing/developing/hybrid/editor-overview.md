@@ -31,9 +31,9 @@ De steun van het KUUROORD in AEM introduceert een dunne laag JS die met de code 
 
 Voor meer details over SPAs in AEM, zie het volgende:
 
-* [ Vervaging van het KUUROORD ](blueprint.md) voor de technische vereisten van een KUUROORD.
-* [ Begonnen het Worden met SPAs in AEM die Reageren ](getting-started-react.md) voor een snelle tour van een eenvoudig KUUROORD gebruiken Reageert.
-* [ Begonnen het Worden met SPAs in AEM gebruikend Angular ](getting-started-angular.md) voor een snelle reis van een eenvoudige KUUROORD die Angular gebruikt.
+* [&#x200B; Vervaging van het KUUROORD &#x200B;](blueprint.md) voor de technische vereisten van een KUUROORD.
+* [&#x200B; Begonnen het Worden met SPAs in AEM die Reageren &#x200B;](getting-started-react.md) voor een snelle tour van een eenvoudig KUUROORD gebruiken Reageert.
+* [&#x200B; Begonnen het Worden met SPAs in AEM gebruikend Angular &#x200B;](getting-started-angular.md) voor een snelle reis van een eenvoudige KUUROORD die Angular gebruikt.
 
 ## Ontwerp {#design}
 
@@ -51,7 +51,7 @@ Als de de paginacomponent van het KUUROORD van de component van de paginaconneco
 Voor elk middel in het uitgevoerde model zal SPA een daadwerkelijke component in kaart brengen die zal doen
 renderen. Het model, dat als JSON wordt vertegenwoordigd, wordt dan teruggegeven gebruikend de componentenafbeeldingen binnen een container.
 
-![ Model en componentenafbeelding in SPAs ](assets/model-component-mapping.png)
+![&#x200B; Model en componentenafbeelding in SPAs &#x200B;](assets/model-component-mapping.png)
 
 >[!CAUTION]
 >
@@ -61,7 +61,7 @@ renderen. Het model, dat als JSON wordt vertegenwoordigd, wordt dan teruggegeven
 
 Wanneer de categorie `cq.authoring.pagemodel.messaging` aan de pagina wordt toegevoegd, wordt een bericht naar de Pagina-editor verzonden om het gegevenstype voor JSON-communicatiegegevens vast te stellen. Wanneer het gegevenstype voor communicatie is ingesteld op JSON, communiceren de GET-aanvragen met de eindpunten van een component in het Sling Model. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. De bibliotheek van het Model van de Pagina informeert dan het KUUROORD van updates.
 
-![ mededeling van het KUUROORD ](assets/communication.png)
+![&#x200B; mededeling van het KUUROORD &#x200B;](assets/communication.png)
 
 ## Workflow {#workflow}
 
@@ -72,13 +72,13 @@ U kunt de stroom van de interactie tussen SPA en AEM begrijpen door van de Redac
 * De manager van het paginamodel brengt de redacteur op de hoogte het klaar voor uitgave is en gaat het paginamodel als structuur JSON over.
 * De editor wijzigt de DOM-structuur van de pagina die wordt gemaakt niet of opent deze zelfs niet, maar biedt wel het nieuwste paginamodel.
 
-![ het werkschema van het KUUROORD ](assets/workflow.png)
+![&#x200B; het werkschema van het KUUROORD &#x200B;](assets/workflow.png)
 
 ### Basis SPA Editor-workflow {#basic-spa-editor-workflow}
 
 Rekening houdend met de belangrijkste elementen van de Redacteur van het KUUROORD, verschijnt het werkschema op hoog niveau van het uitgeven van een KUUROORD binnen AEM aan de auteur als volgt.
 
-![ Geanimeerde het werkschema van het KUUROORD ](assets/workflow.gif)
+![&#x200B; Geanimeerde het werkschema van het KUUROORD &#x200B;](assets/workflow.gif)
 
 1. De redacteur van het KUUROORD laadt.
 1. SPA wordt geladen in een afzonderlijk kader.
@@ -101,7 +101,7 @@ Rekening houdend met de belangrijkste elementen van de Redacteur van het KUUROOR
 
 Dit is een meer gedetailleerd overzicht van de cliënt-server interactie wanneer het uitgeven van een KUUROORD.
 
-![ Cliënt-server het uitgeven werkschema ](assets/client-server-editing.png)
+![&#x200B; Cliënt-server het uitgeven werkschema &#x200B;](assets/client-server-editing.png)
 
 1. Het KUUROORD initialiseert zich en verzoekt het paginamodel van de Verschuivende ModelExporter.
 1. De verkoper ModelExporter verzoekt om de middelen die de pagina van de bewaarplaats samenstellen.
@@ -135,7 +135,7 @@ Dit is een meer gedetailleerd overzicht van de cliënt-server interactie wanneer
 
 Dit is een gedetailleerder overzicht dat is toegespitst op de ontwerpervaring.
 
-![ SPA auteurswerkschema ](assets/authoring-workflow.png)
+![&#x200B; SPA auteurswerkschema &#x200B;](assets/authoring-workflow.png)
 
 1. Het SPA haalt het paginamodel.
 1. **2a** het paginamodel voorziet de redacteur van de gegevens die voor het ontwerpen worden vereist.
@@ -153,7 +153,7 @@ Dit is een gedetailleerder overzicht dat is toegespitst op de ontwerpervaring.
 
 ## Vereisten en beperkingen {#requirements-limitations}
 
-Om de auteur toe te laten om de paginaredacteur te gebruiken om de inhoud van een KUUROORD uit te geven, moet uw toepassing van het KUUROORD worden uitgevoerd om met de Redacteur SDK van AEM te communiceren SPA. Zie [ Begonnen het Worden met SPAs in AEM die Reageer ](getting-started-react.md) document voor minimum gebruiken dat u moet weten om van u het lopen te krijgen.
+Om de auteur toe te laten om de paginaredacteur te gebruiken om de inhoud van een KUUROORD uit te geven, moet uw toepassing van het KUUROORD worden uitgevoerd om met de Redacteur SDK van AEM te communiceren SPA. Zie [&#x200B; Begonnen het Worden met SPAs in AEM die Reageer &#x200B;](getting-started-react.md) document voor minimum gebruiken dat u moet weten om van u het lopen te krijgen.
 
 ### Ondersteunde kaders {#supported-frameworks}
 
@@ -166,7 +166,7 @@ Eerdere versies van deze frameworks werken mogelijk samen met de AEM SPA Editor 
 
 ### Aanvullende kaders {#additional-frameworks}
 
-De extra kaders van het KUUROORD kunnen worden uitgevoerd om met de Redacteur SDK van AEM te werken SPA. Zie het [ document van het Vervagen van het KUUROORD ](blueprint.md) voor de vereisten dat een kader moet vervullen om een kader-specifieke laag tot stand te brengen die uit modules, componenten, en de diensten wordt samengesteld om met de Redacteur van AEM te werken SPA.
+De extra kaders van het KUUROORD kunnen worden uitgevoerd om met de Redacteur SDK van AEM te werken SPA. Zie het [&#x200B; document van het Vervagen van het KUUROORD &#x200B;](blueprint.md) voor de vereisten dat een kader moet vervullen om een kader-specifieke laag tot stand te brengen die uit modules, componenten, en de diensten wordt samengesteld om met de Redacteur van AEM te werken SPA.
 
 ### Meerdere kiezers gebruiken {#multiple-selectors}
 
@@ -179,7 +179,7 @@ Als u op zijn plaats redacteur van een tekstcomponent wilt gebruiken die in KUUR
 1. Stel een willekeurig kenmerk in op het containerelement dat de tekst HTML bevat. In het geval van het Project van het KND SPA, is het een `<div>` element en de selecteur die is gebruikt is `data-rte-editelement`.
 1. Stel de configuratie `editElementQuery` in voor de overeenkomende AEM-tekstcomponent `cq:InplaceEditingConfig` die bijvoorbeeld naar die kiezer wijst `data-rte-editelement` . Hierdoor weet de editor welk HTML-element de HTML-tekst omsluit.
 
-Voor extra informatie over het `editElementQuery` bezit en de configuratie van de rijke tekstredacteur, zie [ de Rijke Redacteur van de Tekst ](/help/implementing/developing/extending/rich-text-editor.md) vormen.
+Voor extra informatie over het `editElementQuery` bezit en de configuratie van de rijke tekstredacteur, zie [&#x200B; de Rijke Redacteur van de Tekst &#x200B;](/help/implementing/developing/extending/rich-text-editor.md) vormen.
 
 ### Beperkingen {#limitations}
 
@@ -191,6 +191,6 @@ De AEM SPA Editor SDK wordt volledig ondersteund door Adobe en wordt verder uitg
 * Configs bewerken (bijvoorbeeld listeners)
 * Ongedaan maken/Opnieuw
 * Pagina diff en Tijd verdraaien
-* Eigenschappen die HTML uitvoeren die server-kant zoals [ controleren van de Verbinding herschrijven, ](/help/operations/link-checker.md) CDN herschrijvingsdienst, verkorting URL etc.
+* Eigenschappen die HTML uitvoeren die server-kant zoals [&#x200B; controleren van de Verbinding herschrijven, &#x200B;](/help/operations/link-checker.md) CDN herschrijvingsdienst, verkorting URL etc.
 * Modus Ontwikkelaar
 * AEM Launches

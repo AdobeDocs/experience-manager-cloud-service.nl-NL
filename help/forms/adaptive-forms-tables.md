@@ -16,12 +16,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html?lang=nl-NL) |
+| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -44,7 +44,7 @@ AEM Forms biedt een component Tabel in de deelvensterbrowser op het zijpaneel wa
 
 Als u een tabel wilt maken, sleept u de component Tabel uit de componentbrowser in het hulpwerkgebied naar het aangepaste formulier. Standaard bevat de tabel twee kolommen en drie rijen, inclusief de koptekstrij.
 
-![ component van de Lijst in AEM sidebar ](assets/sidebar-tables.png)
+![&#x200B; component van de Lijst in AEM sidebar &#x200B;](assets/sidebar-tables.png)
 
 ### Over kop- en lichaamscellen {#about-header-and-body-cells}
 
@@ -54,7 +54,7 @@ De lichaamscellen zijn tekstvakjes, door gebrek. U kunt een hoofdcel vervangen d
 
 De eerste tekstrij in de volgende tabel bevat bijvoorbeeld tekstvak, datumkiezer en vervolgkeuzelijstcomponenten als cellen.
 
-![ rij-cel-types ](assets/row-cell-types.png)
+![&#x200B; rij-cel-types &#x200B;](assets/row-cell-types.png)
 
 U kunt twee of meer lichaamscellen samenvoegen door de cellen te selecteren u wilt samenvoegen, met de rechtermuisknop aanklikken, en **selecteren samenvoegen**. Ook, kunt u een samengevoegde cel verdelen door het met de rechtermuisknop aan te klikken en **Gesplitste Cellen** te selecteren.
 
@@ -64,7 +64,7 @@ U kunt een rij of kolom toevoegen en verwijderen en een rij omhoog en omlaag ver
 
 #### Een rij toevoegen, verwijderen of verplaatsen
 
-Als u de rij wilt toevoegen, verwijderen of verplaatsen, klikt u op een cel van de rij. open de browser van de inhouds ![ Inhoud ](/help/forms/assets/Smock_Layers_18_N.svg) en selecteer de overeenkomstige rij, benadrukt het de geselecteerde rij met de toolbaroptie van waar u, de rij omhoog of omlaag kunt toevoegen schrappen of bewegen.
+Als u de rij wilt toevoegen, verwijderen of verplaatsen, klikt u op een cel van de rij. open de browser van de inhouds ![&#x200B; Inhoud &#x200B;](/help/forms/assets/Smock_Layers_18_N.svg) en selecteer de overeenkomstige rij, benadrukt het de geselecteerde rij met de toolbaroptie van waar u, de rij omhoog of omlaag kunt toevoegen schrappen of bewegen.
 
 * Met de bewerking **[!UICONTROL Move Up]** en **[!UICONTROL Move Down]** verplaatst u de geselecteerde rij omhoog en omlaag.
 
@@ -72,17 +72,17 @@ Als u de rij wilt toevoegen, verwijderen of verplaatsen, klikt u op een cel van 
 
 * Met de bewerking **[!UICONTROL Delete Column]** verwijdert u de geselecteerde rij.
 
-![ toe:voegen-schrapping-rij-kolom ](assets/add-delete-move-row.png)
+![&#x200B; toe:voegen-schrapping-rij-kolom &#x200B;](assets/add-delete-move-row.png)
 
 Dubbelklik op de rij om de eigenschappen van een rij te configureren, zoals Naam, Verwijzing binden, Instellingen herhalen en CSS-klasse.
-![ toe:voegen-schrapping-rij-kolom ](assets/row-properties-image.png)
+![&#x200B; toe:voegen-schrapping-rij-kolom &#x200B;](assets/row-properties-image.png)
 
 
 #### Een kolom toevoegen of verwijderen
 
 Als u een kolom wilt toevoegen of verwijderen, klikt u op de tekstcel in de koptekstsectie. Er wordt een werkbalk geopend met opties voor het toevoegen of verwijderen van een kolom:
 
-![ toe:voegen-schrapping-rij-kolom ](assets/add-delet-column.png)
+![&#x200B; toe:voegen-schrapping-rij-kolom &#x200B;](assets/add-delet-column.png)
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Als u een kolom wilt toevoegen of verwijderen, klikt u op de tekstcel in de kopt
 
 U kunt een beschrijving van de tabel toevoegen om uit te leggen hoe de informatie is ingedeeld die schermlezers kunnen interpreteren en lezen. De beschrijving toevoegen:
 
-1. Selecteer de lijst en selecteer ![ cmp ](assets/cmppr.png) om zijn eigenschappen in sidebar te zien.
+1. Selecteer de lijst en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png) om zijn eigenschappen in sidebar te zien.
 1. Geef een overzicht op op het tabblad Toegankelijkheid.
 1. Klik **Gedaan**.
 
@@ -110,18 +110,18 @@ Als u sortering wilt toepassen op tabelkolommen, moeten de cellen in de tabelkol
 
 Sorteren inschakelen:
 
-1. Selecteer de lijst en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm). U kunt de lijst ook selecteren gebruikend **inhoud** browser in het hulpje van de Interactieve Mededeling.
+1. Selecteer de lijst en selecteer ![&#x200B; configure_icon &#x200B;](assets/configure_icon.png) (vorm). U kunt de lijst ook selecteren gebruikend **inhoud** browser in het hulpje van de Interactieve Mededeling.
 1. Selecteer **het Sorteren** toelaten.
-1. Selecteer ![ done_icon ](assets/done_icon.png) om de lijsteigenschappen te bewaren. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
+1. Selecteer ![&#x200B; done_icon &#x200B;](assets/done_icon.png) om de lijsteigenschappen te bewaren. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
 
-   ![ laat het sorteren ](assets/enable_sorting_new.png) toe
+   ![&#x200B; laat het sorteren &#x200B;](assets/enable_sorting_new.png) toe
 
 1. Schakelaar aan de **wijze van de Voorproef** om de output te bekijken. De tabel wordt automatisch gesorteerd op basis van de eerste kolom van de tabel.
 1. Klik op de kolomkop om de waarden te sorteren op basis van de kolom.
 
    Een kolomkop met een pijl-omhoog geeft aan dat de tabel is gesorteerd op basis van die kolom. Bovendien worden de waarden in de kolom in oplopende volgorde weergegeven.
 
-   ![ Sorterend in stijgende orde ](assets/sorting_ascending_new.png)
+   ![&#x200B; Sorterend in stijgende orde &#x200B;](assets/sorting_ascending_new.png)
 
    Op dezelfde manier vertegenwoordigt een kolomkopbal met een benedenpijl dat de waarden in de kolom in dalende orde worden getoond.
 
@@ -131,7 +131,7 @@ Sorteren inschakelen:
 
 Voer de volgende stappen uit om de kolombreedte voor een tabel in te stellen:
 
-1. In het **[!UICONTROL Content]** lusje, selecteer de **[!UICONTROL Table]** component en selecteer vormen (![ ](assets/configure-icon.svg)) pictogram.
+1. In het **[!UICONTROL Content]** lusje, selecteer de **[!UICONTROL Table]** component en selecteer vormen (![&#x200B; &#x200B;](assets/configure-icon.svg)) pictogram.
 
 1.Voer in het veld **[!UICONTROL Column Width]** de lijst met door komma&#39;s gescheiden waarden in om de proportionele breedte van elke kolom in de tabel op te geven. Als u bijvoorbeeld voor een tabel met 3 kolommen 2,4,6 opgeeft als waarde in het veld **[!UICONTROL Column Width]** , wordt de breedte van de kolommen voor de eerste kolom ingesteld op 2/12, voor de tweede kolom op 4/12 en voor de derde kolom op 6/12. 2/12, aangezien de breedte voor de eerste kolom verwijst naar een zesde van de tabelbreedte. Zo stelt 4/12 de tweede kolombreedte in als een derde van de tabelbreedte en 6/12 stelt de derde kolombreedte in als de helft van de tabelbreedte.
 
@@ -139,28 +139,28 @@ Voer de volgende stappen uit om de kolombreedte voor een tabel in te stellen:
 
 U kunt de stijl voor een tabel definiëren met de modus Stijl op de paginaboolbalk. Ga als volgt te werk om over te schakelen op de stijlmodus en de tabelopmaak te bewerken
 
-1. In de paginatoolbar, vóór Voorproef, selecteer ![ canvas-drop-down ](assets/canvas-drop-down.png) > **Stijl**.
+1. In de paginatoolbar, vóór Voorproef, selecteer ![&#x200B; canvas-drop-down &#x200B;](assets/canvas-drop-down.png) > **Stijl**.
 
-1. In sidebar uitgezochte lijst en uitgeeft knoop ![ uitgeven-knoop ](assets/edit-button.png).
+1. In sidebar uitgezochte lijst en uitgeeft knoop ![&#x200B; uitgeven-knoop &#x200B;](assets/edit-button.png).
 De opmaakeigenschappen worden weergegeven in het zijpaneel.
 
-![ het Stijlen eigenschappen van een lijst ](assets/style-table.png)
+![&#x200B; het Stijlen eigenschappen van een lijst &#x200B;](assets/style-table.png)
 
 >[!NOTE]
 >
->U kunt het kleurenthema voor kopbal en lichaamstrijen veranderen door de waarden van [ LESS variabelen ](https://lesscss.org//) te veranderen. Voor meer informatie, zie [ Thema&#39;s in AEM Forms ](/help/forms/themes.md).
+>U kunt het kleurenthema voor kopbal en lichaamstrijen veranderen door de waarden van [&#x200B; LESS variabelen &#x200B;](https://lesscss.org//) te veranderen. Voor meer informatie, zie [&#x200B; Thema&#39;s in AEM Forms &#x200B;](/help/forms/themes.md).
 
 ## Een rij dynamisch toevoegen of verwijderen {#add-or-delete-a-row-dynamically}
 
 Tabellen bieden ondersteuning voor het dynamisch toevoegen of verwijderen van rijen tijdens runtime.
 
-1. Selecteer een lijstrij en selecteer ![ cmp ](assets/cmppr.png).
+1. Selecteer een lijstrij en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png).
 1. Geef op het tabblad Herhalingsinstellingen het minimale en maximale aantal rijen op om het aantal rijen in de tabel te beperken.
 1. Klik **Gedaan**.
 
-Bij runtime of voorproef, ziet u **+** en ![ Knoop van de Schrapping ](/help/forms/assets/Smock_Delete.svg) knopen om een rij toe te voegen of te schrappen.
+Bij runtime of voorproef, ziet u **+** en ![&#x200B; Knoop van de Schrapping &#x200B;](/help/forms/assets/Smock_Delete.svg) knopen om een rij toe te voegen of te schrappen.
 
-![ toe:voegen-schrapping-rijen-dynamisch ](assets/add-delete-layout.png)
+![&#x200B; toe:voegen-schrapping-rijen-dynamisch &#x200B;](assets/add-delete-layout.png)
 
 >[!NOTE]
 >
@@ -186,7 +186,7 @@ Tabellen en rijen bieden alleen ondersteuning voor zichtbaarheidsexpressies om d
 
 De zichtbaarheidsexpressie voor een tabel of rij kan worden gedefinieerd op het tabblad Eigenschappen van deelvenster van het corresponderende dialoogvenster van de component Bewerken. De expressies voor een cel kunnen worden gedefinieerd op het tabblad Script van het dialoogvenster dat de component Edit bevat.
 
-Voor de volledige lijst van adaptieve vormklassen, gebeurtenissen, voorwerpen, en openbare APIs, zie [ API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
+Voor de volledige lijst van adaptieve vormklassen, gebeurtenissen, voorwerpen, en openbare APIs, zie [&#x200B; API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Mobiele lay-outs {#mobile-layouts}
 
@@ -198,11 +198,11 @@ U kunt een mobiele lay-out voor een lijst van het Stijllusje van het Edit compon
 
 In de kopteksten op linkerlay-out, wordt de kopbal in de lijst omgezet op de linkerzijde met slechts één cel die op een kopbal verschijnt. Elke rij in deze lay-out wordt weergegeven als een afzonderlijke sectie. In de volgende afbeeldingen wordt een tabel op een desktopcomputer vergeleken met die op een mobiel apparaat.
 
-![ Desktopmening ](assets/desktopview_new.png)
+![&#x200B; Desktopmening &#x200B;](assets/desktopview_new.png)
 
 Bureaubladweergave van een tabel met Koptekst in linkerindeling
 
-![ Kopballen op de linkerzijde ](assets/headersontheleft_new.png)
+![&#x200B; Kopballen op de linkerzijde &#x200B;](assets/headersontheleft_new.png)
 
 De mobiele mening van een lijst met Kopbal op linkerlay-out
 
@@ -216,11 +216,11 @@ In de Inklapbare kolomlay-out, de kolommen in de lijst doen ineenstorten om éé
 
 De volgende afbeeldingen vergelijken hoe een tabel eruitziet op een apparaat met samengevouwen en uitgevouwen kolommen.
 
-![ doen ineenstorten-kolom ](assets/collapsed-column.png)
+![&#x200B; doen ineenstorten-kolom &#x200B;](assets/collapsed-column.png)
 
 Samengevouwen kolommen van een tabel waarvan slechts twee kolommen worden weergegeven op een mobiel apparaat
 
-![ doen ineenstorten_column ](assets/collapsible_column.png)
+![&#x200B; doen ineenstorten_column &#x200B;](assets/collapsible_column.png)
 
 Uitgebreide kolom van een tabel op een mobiel apparaat
 
@@ -230,7 +230,7 @@ Met tabellen in adaptieve formulieren kunt u de tabel tijdens runtime vullen met
 
 Neem bijvoorbeeld de volgende overzichtstabel voor banktransacties die we willen vullen met gegevens uit een XML-bestand.
 
-![ gegeven-fusie-lijst ](assets/data-merge-table.png)
+![&#x200B; gegeven-fusie-lijst &#x200B;](assets/data-merge-table.png)
 
 In dit voorbeeld is de eigenschap Element name for:
 
@@ -304,7 +304,7 @@ Als u deze gegevens tijdens runtime wilt samenvoegen met de tabel, moet u het aa
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
-![ gegevens-samengevoegd-lijst ](assets/data-merged-table.png)
+![&#x200B; gegevens-samengevoegd-lijst &#x200B;](assets/data-merged-table.png)
 
 ## XDP-componenten en XSD-complexe typen gebruiken {#use-xdp-components-and-xsd-complex-types}
 

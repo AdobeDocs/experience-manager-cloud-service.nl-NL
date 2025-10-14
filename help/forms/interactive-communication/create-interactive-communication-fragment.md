@@ -37,22 +37,22 @@ Voer de volgende stappen uit om een interactief communicatiefragment te maken:
 1. Navigeer aan **Forms > Forms &amp; Documenten**.
 1. Klik **creeer** knoop en selecteer **Interactief Communicatie Fragment**.
 
-   ![ vind IC Docu ](/help/forms/interactive-communication/assets/fragment.png)
+   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/fragment.png)
 
 1. Als u Interactief communicatiefragment selecteert, verschijnt er een scherm waarin u de belangrijkste fragmentdetails definieert, zoals titel, naam, beschrijving, gegevensmodel (een gestructureerde weergave van de gegevens op de achtergrond) en tags.
 
-   Meer leren, verwijs naar de [ Gids van de Configuratie van het Model van Gegevens ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Meer leren, verwijs naar de [&#x200B; Gids van de Configuratie van het Model van Gegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
-   ![ vind IC Docu ](/help/forms/interactive-communication/assets/createfrgmnt.png)
+   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
 1. Klik op de knop Maken nadat u alle verplichte velden hebt ingevuld.
 1. Hiermee opent u de IC-editor waarin u het fragment kunt ontwerpen.
 
-   ![ vind IC Docu ](/help/forms/interactive-communication/assets/frgmntui.png)
+   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/frgmntui.png)
 
 Door Interactieve Communicatie Fragments te creëren, verzekert u ontwerpconsistentie, sparen tijd, en stroomlijnt het proces om dynamische, gepersonaliseerde mededelingen te bouwen.
 
 ## Volgende stappen
 
-[ creeer een interactieve mededeling ](/help/forms/interactive-communication/create-interactive-communication.md)
-[ creeer een interactief communicatieMalplaatje ](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[&#x200B; creeer een interactieve mededeling &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md)
+[&#x200B; creeer een interactief communicatieMalplaatje &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md)

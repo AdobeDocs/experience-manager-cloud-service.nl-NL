@@ -29,7 +29,7 @@ Aan het einde van het artikel zult u:
 
 ## Werken met formulierveldtypen
 
-Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [ gebiedstypes ](/help/edge/docs/forms/form-components.md) die door het AanpassingsBlok van Forms worden gesteund:
+Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [&#x200B; gebiedstypes &#x200B;](/help/edge/docs/forms/form-components.md) die door het AanpassingsBlok van Forms worden gesteund:
 
 - Invoervelden: dit zijn tekstinvoer, e-mailinvoer, wachtwoordinvoer en meer
 - Selectievakjesgroepen: gebruikt voor het selecteren van meerdere opties
@@ -39,18 +39,18 @@ Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [ gebieds
 
 ## Basisbeginselen voor stijlen
 
-Het begrip van [ fundamentele CSS concepten ](https://www.w3schools.com/css/css_intro.asp) is essentieel alvorens specifieke vormgebieden te stileren:
+Het begrip van [&#x200B; fundamentele CSS concepten &#x200B;](https://www.w3schools.com/css/css_intro.asp) is essentieel alvorens specifieke vormgebieden te stileren:
 
-- [ Kiezers ](https://www.w3schools.com/css/css_selectors.asp): CSS de Kiezers staan u toe om specifieke elementen van HTML voor het stileren te richten. U kunt elementkiezers, klassekiezers of id-kiezers gebruiken
-- [ Eigenschappen ](https://www.w3schools.com/css/css_syntax.asp): CSS de eigenschappen bepalen de visuele verschijning van elementen. Veelvoorkomende eigenschappen voor het opmaken van formuliervelden zijn kleur, achtergrondkleur, rand, opvulling, marge en meer
-- [ Model van de Doos ](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd
-- Flexbox/Net: CSS [ Flexbox ](https://www.w3schools.com/css/css3_flexbox.asp) en [ de lay-outs van het Net ](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen te creëren
+- [&#x200B; Kiezers &#x200B;](https://www.w3schools.com/css/css_selectors.asp): CSS de Kiezers staan u toe om specifieke elementen van HTML voor het stileren te richten. U kunt elementkiezers, klassekiezers of id-kiezers gebruiken
+- [&#x200B; Eigenschappen &#x200B;](https://www.w3schools.com/css/css_syntax.asp): CSS de eigenschappen bepalen de visuele verschijning van elementen. Veelvoorkomende eigenschappen voor het opmaken van formuliervelden zijn kleur, achtergrondkleur, rand, opvulling, marge en meer
+- [&#x200B; Model van de Doos &#x200B;](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd
+- Flexbox/Net: CSS [&#x200B; Flexbox &#x200B;](https://www.w3schools.com/css/css3_flexbox.asp) en [&#x200B; de lay-outs van het Net &#x200B;](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen te creëren
 
 ## Een formulier opmaken voor Adaptief Forms-blok
 
 Het Adaptive Forms Block biedt een gestandaardiseerde HTML-structuur waarmee het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
 
-- **Update standaardstijlen**: U kunt de standaardstijlen van een vorm wijzigen door het `/blocks/form/form.css` dossier uit te geven. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Voor instructies bij het toevoegen van het AanpassingsBlok van Forms aan uw project, verwijs naar [ creeer een vorm ](/help/edge/docs/forms/create-forms.md).
+- **Update standaardstijlen**: U kunt de standaardstijlen van een vorm wijzigen door het `/blocks/form/form.css` dossier uit te geven. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Voor instructies bij het toevoegen van het AanpassingsBlok van Forms aan uw project, verwijs naar [&#x200B; creeer een vorm &#x200B;](/help/edge/docs/forms/create-forms.md).
 
 - **Aanpassing**: Gebruik het gebrek `forms.css` als basis en pas het aan om de blik en het gevoel van uw vormcomponenten te wijzigen, die hen visueel aantrekkelijk en gebruikersvriendelijk maken. De bestandsstructuur stimuleert de organisatie en handhaaft stijlen voor formulieren, waardoor consistente ontwerpen op uw website worden bevorderd.
 

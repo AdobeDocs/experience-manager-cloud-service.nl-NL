@@ -44,7 +44,7 @@ Voordat u een aangepaste functie toevoegt aan de Adaptive Forms, moet u het volg
 
 ## Een aangepaste functie maken
 
-Creeer een cliëntbibliotheek om douanefuncties in de regelredacteur te roepen. Voor meer informatie, zie [ Gebruikend cliënt-Kant Bibliotheken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=nl-NL#developing).
+Creeer een cliëntbibliotheek om douanefuncties in de regelredacteur te roepen. Voor meer informatie, zie [&#x200B; Gebruikend cliënt-Kant Bibliotheken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=nl-NL#developing).
 
 Stappen voor het maken van aangepaste functies zijn:
 
@@ -57,7 +57,7 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
 
 **Kloon de Bewaarplaats**
 
-Kloon uw [ Bewaarplaats van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git):
+Kloon uw [&#x200B; Bewaarplaats van AEM Forms as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git):
 
 1. Open de opdrachtregel of het terminalvenster.
 
@@ -75,7 +75,7 @@ Om nieuwe omslag van de cliëntbibliotheek aan de [ AEMaaCS projectfolder ] toe 
 
 1. Open de [ AEMaaCS projectfolder ] in een redacteur.
 
-   ![ de omslagstructuur van de douanefunctie ](/help/forms/assets/custom-library-folder-structure.png)
+   ![&#x200B; de omslagstructuur van de douanefunctie &#x200B;](/help/forms/assets/custom-library-folder-structure.png)
 
 1. Zoek `ui.apps` .
 1. Nieuwe map toevoegen. Voeg bijvoorbeeld een map toe met de naam `experience-league` .
@@ -140,7 +140,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
 
 1. Sla de bestanden op.
 
-![ de omslagstructuur van de douanefunctie ](/help/forms/assets/custom-function-added-files.png)
+![&#x200B; de omslagstructuur van de douanefunctie &#x200B;](/help/forms/assets/custom-function-added-files.png)
 
 **omvat de nieuwe omslag in filter.xml**:
 
@@ -151,7 +151,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
    `<filter root="/apps/experience-league" />`
 3. Sla het bestand op.
 
-![ de filter xml van de douanefunctie &lbrace;](/help/forms/assets/custom-function-filterxml.png)
+![&#x200B; de filter xml van de douanefunctie &lbrace;](/help/forms/assets/custom-function-filterxml.png)
 
 **stel de pas gecreëerde de bibliotheekomslag van de Cliënt aan uw milieu van AEM** op
 
@@ -171,9 +171,9 @@ Stel AEM as a Cloud Service, [ AEMaaCS projectfolder ], aan uw milieu van Cloud 
 
    1. Trigger een plaatsing van uw code door de bestaande full-stack pijpleiding. Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd.
 
-Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
+Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [&#x200B; hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
 
-Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in de cliëntbibliotheek wordt toegevoegd beschikbaar in uw [ Aangepaste redacteur van de Regel van de Vorm ](/help/forms/rule-editor-core-components.md).
+Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in de cliëntbibliotheek wordt toegevoegd beschikbaar in uw [&#x200B; Aangepaste redacteur van de Regel van de Vorm &#x200B;](/help/forms/rule-editor-core-components.md).
 
 ### Clientbibliotheek toevoegen aan een adaptief formulier{#use-custom-function}
 
@@ -181,10 +181,10 @@ Zodra u de clientbibliotheek hebt geïmplementeerd in uw Forms CS-omgeving, gebr
 
 1. Open het formulier in de bewerkingsmodus. Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en selecteert u **[!UICONTROL Edit]** .
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Open het tabblad **[!UICONTROL Basic]** en selecteer de naam van de **[!UICONTROL client library category]** in de vervolgkeuzelijst (in dit geval selecteert u `customfunctionscategory` ).
 
-   ![ Toevoegend de de cliëntbibliotheek van de douanefunctie ](/help/forms/assets/clientlib-custom-function.png)
+   ![&#x200B; Toevoegend de de cliëntbibliotheek van de douanefunctie &#x200B;](/help/forms/assets/clientlib-custom-function.png)
 
    >[!NOTE]
    >
@@ -192,11 +192,11 @@ Zodra u de clientbibliotheek hebt geïmplementeerd in uw Forms CS-omgeving, gebr
 
 1. Klik op **[!UICONTROL Done]**.
 
-U kunt de douanefunctie in de [ regelredacteur van een Aangepaste Vorm ](/help/forms/rule-editor-core-components.md) gebruiken gebruikend de [ annotaties van JavaScript ](##js-annotations).
+U kunt de douanefunctie in de [&#x200B; regelredacteur van een Aangepaste Vorm &#x200B;](/help/forms/rule-editor-core-components.md) gebruiken gebruikend de [&#x200B; annotaties van JavaScript &#x200B;](##js-annotations).
 
 ## Een aangepaste functie gebruiken in een adaptief formulier
 
-In een AanpassingsVorm, kunt u [ douanefuncties binnen de regelredacteur ](/help/forms/rule-editor-core-components.md) gebruiken. Voeg de volgende code toe aan het JavaScript-bestand (`Function.js` ) om de leeftijd te berekenen op basis van de geboortedatum (JJJJ-MM-DD). Maak een aangepaste functie als `calculateAge()` die de geboortedatum als invoer neemt en de leeftijd retourneert:
+In een AanpassingsVorm, kunt u [&#x200B; douanefuncties binnen de regelredacteur &#x200B;](/help/forms/rule-editor-core-components.md) gebruiken. Voeg de volgende code toe aan het JavaScript-bestand (`Function.js` ) om de leeftijd te berekenen op basis van de geboortedatum (JJJJ-MM-DD). Maak een aangepaste functie als `calculateAge()` die de geboortedatum als invoer neemt en de leeftijd retourneert:
 
 ```javascript
     /**
@@ -223,15 +223,15 @@ In een AanpassingsVorm, kunt u [ douanefuncties binnen de regelredacteur ](/help
 
 In het bovenstaande voorbeeld wordt de aangepaste functie `calculateAge` aangeroepen en wordt de leeftijd geretourneerd wanneer de gebruiker de geboortedatum in de notatie invoert (JJJJ-MM-DD).
 
-![ Calcualte tegen douanefunctie in de Redacteur van de Regel ](/help/forms/assets/custom-function-calculate-age.png)
+![&#x200B; Calcualte tegen douanefunctie in de Redacteur van de Regel &#x200B;](/help/forms/assets/custom-function-calculate-age.png)
 
 Bekijk een voorbeeld van het formulier om te zien hoe de aangepaste functies worden geïmplementeerd via de regeleditor:
 
-![ berekent tegen douanefunctie in de Voorproef van de Vorm van de Redacteur van de Regel ](/help/forms/assets/custom-function-age-calculate-form.png)
+![&#x200B; berekent tegen douanefunctie in de Voorproef van de Vorm van de Redacteur van de Regel &#x200B;](/help/forms/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
-> U kunt naar de volgende [ omslag van de douanefunctie ](/help/forms/assets//customfunctions.zip) verwijzen. Download en installeer deze omslag in uw instantie van AEM gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> U kunt naar de volgende [&#x200B; omslag van de douanefunctie &#x200B;](/help/forms/assets//customfunctions.zip) verwijzen. Download en installeer deze omslag in uw instantie van AEM gebruikend de [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 ## Functies van Aangepaste functies
 
@@ -243,7 +243,7 @@ Laten we eens kijken naar de functies van aangepaste functies.
 
 ### Asynchrone ondersteuning in aangepaste functies {#support-of-async-functions}
 
-U kunt asynchrone functies in de regelredacteur uitvoeren gebruikend douanefuncties. Voor begeleiding op hoe te om dit te doen, verwijs naar het artikel [ Gebruikend asynchrone functies in een AanpassingsVorm ](/help/forms/using-async-funct-in-rule-editor.md).
+U kunt asynchrone functies in de regelredacteur uitvoeren gebruikend douanefuncties. Voor begeleiding op hoe te om dit te doen, verwijs naar het artikel [&#x200B; Gebruikend asynchrone functies in een AanpassingsVorm &#x200B;](/help/forms/using-async-funct-in-rule-editor.md).
 
 ### Veld- en globale bereikobjecten ondersteunen aangepaste functies {#support-field-and-global-objects}
 
@@ -253,13 +253,13 @@ Veldobjecten verwijzen naar de afzonderlijke componenten of elementen in een for
 >
 > `param {scope} globals` moet de laatste parameter zijn en wordt niet weergegeven in de regeleditor van een adaptief formulier.
 
-Voor meer informatie over werkingsgebiedvoorwerpen, zie de [ voorwerpen van het Toepassingsgebied in douanefuncties ](/help/forms/custom-function-core-component-scope-function.md) artikel.
+Voor meer informatie over werkingsgebiedvoorwerpen, zie de [&#x200B; voorwerpen van het Toepassingsgebied in douanefuncties &#x200B;](/help/forms/custom-function-core-component-scope-function.md) artikel.
 
 ### Ondersteuning voor caching in aangepaste functies
 
 De adaptieve Forms voert caching voor douanefuncties uit om reactietijd te verbeteren terwijl het terugwinnen van de lijst van de douanefunctie in de regelredacteur. Er verschijnt een bericht als `Fetched following custom functions list from cache` in het `error.log` -bestand.
 
-![ douanefunctie met geheim voorgeheugensteun ](/help/forms/assets/custom-function-cache-error.png)
+![&#x200B; douanefunctie met geheim voorgeheugensteun &#x200B;](/help/forms/assets/custom-function-cache-error.png)
 
 Als de aangepaste functies worden gewijzigd, wordt het in cache plaatsen ongeldig en wordt het geparseerd.
 
@@ -267,15 +267,15 @@ Als de aangepaste functies worden gewijzigd, wordt het in cache plaatsen ongeldi
 
 * Als het JavaScript-bestand met code voor aangepaste functies een fout bevat, worden de aangepaste functies niet vermeld in de regeleditor van een adaptief formulier. Als u de lijst met aangepaste functies wilt controleren, navigeert u naar het `error.log` -bestand voor de fout. In het geval van een fout wordt de lijst met aangepaste functies leeg weergegeven:
 
-  ![ dossier van het foutenlogboek ](/help/forms/assets/custom-function-list-error-file.png)
+  ![&#x200B; dossier van het foutenlogboek &#x200B;](/help/forms/assets/custom-function-list-error-file.png)
 
   Als er geen fout optreedt, wordt de aangepaste functie opgehaald en in het `error.log` -bestand weergegeven. Er verschijnt een bericht als `Fetched following custom functions list` in het `error.log` -bestand:
 
-  ![ dossier van het foutenlogboek met juiste douanefunctie ](/help/forms/assets/custom-function-list-fetched-in-error.png)
+  ![&#x200B; dossier van het foutenlogboek met juiste douanefunctie &#x200B;](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## Volgende stap
 
-Laat ons nu diverse [ voorbeelden van douanefuncties voor een Aangepaste Vorm zien die op de Componenten van de Kern ](/help/forms/custom-function-core-components-use-cases.md) wordt gebaseerd.
+Laat ons nu diverse [&#x200B; voorbeelden van douanefuncties voor een Aangepaste Vorm zien die op de Componenten van de Kern &#x200B;](/help/forms/custom-function-core-components-use-cases.md) wordt gebaseerd.
 
 ## Zie ook
 

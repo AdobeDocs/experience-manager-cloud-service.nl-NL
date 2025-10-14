@@ -32,6 +32,6 @@ AEM Forms Designer bevat verschillende opties voor spraaktekst die aan schermlez
 * Bijschriften voor velden op het formulier.
 * Namen van objecten, zoals opgegeven in de optie Naam op het tabblad Binding.
 
-![ toegankelijkheid ](assets/accessibility.png)
+![&#x200B; toegankelijkheid &#x200B;](assets/accessibility.png)
 
 Als er meerdere opties beschikbaar zijn voor een formulierbesturingselement, zoals knopinfo, Reader-tekst op scherm en Bijschrift, gebruikt de Reader van het scherm slechts een van deze eigenschappen. De standaardvolgorde is Reader-tekst, knopinfo, Bijschrift en Naam voor aangepast scherm. U kunt de standaardorde met voeten treden gebruikend het Scherm Reader **Voorrang** optie in het palet van de Toegankelijkheid.

@@ -18,7 +18,7 @@ Leer hoe u uw ontwikkelingsteam voor ondernemingen kunt instellen en schalen en 
 
 ## Inleiding {#introduction}
 
-Om klanten met de montages van de ondernemingsontwikkeling te steunen, integreert AEM as a Cloud Service volledig met Cloud Manager en zijn doel-gebouwde, [ geadviseerde pijpleidingen CI/CD ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Deze pijpleidingen en de diensten worden gebouwd gebaseerd op beste praktijken, die grondig [ het testen en de hoogste codekwaliteit ](/help/implementing/cloud-manager/code-quality-testing.md) verzekeren.
+Om klanten met de montages van de ondernemingsontwikkeling te steunen, integreert AEM as a Cloud Service volledig met Cloud Manager en zijn doel-gebouwde, [&#x200B; geadviseerde pijpleidingen CI/CD &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Deze pijpleidingen en de diensten worden gebouwd gebaseerd op beste praktijken, die grondig [&#x200B; het testen en de hoogste codekwaliteit &#x200B;](/help/implementing/cloud-manager/code-quality-testing.md) verzekeren.
 
 ## Cloud Manager-ondersteuning in de ontwikkeling van een Enterprise-team {#cloud-manager}
 
@@ -32,7 +32,7 @@ Er zijn drie typen omgevingen beschikbaar in Cloud Manager.
 * Werkgebied
 * Productie
 
-De code kan aan ontwikkelmilieu&#39;s worden opgesteld gebruikend een niet productiepijplijn. Voor het opvoeren en productiemilieu&#39;s, die altijd samen gaan en zo bevestiging vóór productieplaatsing als beste praktijken verzekeren, gebruikt een productiepijpleiding [ kwaliteitsspoorten ](/help/implementing/cloud-manager/custom-code-quality-rules.md) om de toepassingscode en de configuratieveranderingen te bevestigen.
+De code kan aan ontwikkelmilieu&#39;s worden opgesteld gebruikend een niet productiepijplijn. Voor het opvoeren en productiemilieu&#39;s, die altijd samen gaan en zo bevestiging vóór productieplaatsing als beste praktijken verzekeren, gebruikt een productiepijpleiding [&#x200B; kwaliteitsspoorten &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md) om de toepassingscode en de configuratieveranderingen te bevestigen.
 
 De productiepijpleiding stelt de code en de configuratie aan het opvoeren milieu eerst op, test de toepassing, en stelt definitief aan productie op.
 
@@ -44,7 +44,7 @@ Cloud Manager ondersteunt flexibele instellingen voor meerdere teams die kunnen 
 
 Elke onderneming heeft verschillende vereisten met inbegrip van verschillende teamopstelling, processen, en ontwikkelingswerkstromen. De hieronder beschreven setup wordt door de Adobe gebruikt voor verschillende projecten die ervaring bieden boven op AEM as a Cloud Service.
 
-De Adobe Creative Cloud-toepassingen, zoals Adobe Photoshop of Adobe Illustrator, bevatten bijvoorbeeld inhoudsbronnen, zoals zelfstudies, voorbeelden en hulplijnen die beschikbaar zijn voor eindgebruikers. Clienttoepassingen verbruiken inhoud van AEM as a Cloud Service zonder kop. Ze maken API-aanroepen naar de AEM Cloud-publicatielaag om gestructureerde inhoud op te halen als JSON-streams. Bovendien, wordt het [ Netwerk van de Levering van de Inhoud (CDN) in AEM as a Cloud Service ](/help/implementing/dispatcher/cdn.md#content-delivery) gebruikt om zowel gestructureerde als ongestructureerde inhoud met optimale prestaties te dienen.
+De Adobe Creative Cloud-toepassingen, zoals Adobe Photoshop of Adobe Illustrator, bevatten bijvoorbeeld inhoudsbronnen, zoals zelfstudies, voorbeelden en hulplijnen die beschikbaar zijn voor eindgebruikers. Clienttoepassingen verbruiken inhoud van AEM as a Cloud Service zonder kop. Ze maken API-aanroepen naar de AEM Cloud-publicatielaag om gestructureerde inhoud op te halen als JSON-streams. Bovendien, wordt het [&#x200B; Netwerk van de Levering van de Inhoud (CDN) in AEM as a Cloud Service &#x200B;](/help/implementing/dispatcher/cdn.md#content-delivery) gebruikt om zowel gestructureerde als ongestructureerde inhoud met optimale prestaties te dienen.
 
 De teams die aan dit project bijdragen volgen het volgende proces.
 
@@ -52,9 +52,9 @@ Elk team gebruikt zijn eigen ontwikkelworkflow en heeft een aparte Git-opslagpla
 
 Voor het instappen van een nieuw project moet in het projectbestand Maven van de reactor een lijst worden opgenomen in de hoofdmap van de gedeelde Git-opslagplaats. Voor Dispatcher-configuratie wordt een nieuw configuratiebestand gemaakt in het Dispatcher-project. De hoofdconfiguratie van Dispatcher omvat dan dit dossier. Elk team is verantwoordelijk voor zijn eigen Dispatcher-configuratiebestand. Wijzigingen in de gedeelde Git-opslagplaats zijn zeldzaam en zijn gewoonlijk alleen vereist wanneer een nieuw project wordt gestart. Het belangrijkste werk wordt gedaan door elk projectteam binnen hun eigen bewaarplaats van het Git.
 
-![ diagram van het Werkschema ](/help/implementing/cloud-manager/assets/team-setup1.png)
+![&#x200B; diagram van het Werkschema &#x200B;](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-De bewaarplaats van het Git voor elk wordt opstelling gebruikend [ AEM Archetype van het Project ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/overview) en volgt zo de beste praktijken voor vestiging AEM Projecten. De enige uitzondering hierop is de Dispatcher-configuratie, die wordt uitgevoerd in de gedeelde Git-opslagplaats, zoals hierboven beschreven.
+De bewaarplaats van het Git voor elk wordt opstelling gebruikend [&#x200B; AEM Archetype van het Project &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/overview) en volgt zo de beste praktijken voor vestiging AEM Projecten. De enige uitzondering hierop is de Dispatcher-configuratie, die wordt uitgevoerd in de gedeelde Git-opslagplaats, zoals hierboven beschreven.
 
 Elk team gebruikt een vereenvoudigde Git-workflow met twee vertakkingen + N, volgens het Git-flowmodel:
 
@@ -73,27 +73,27 @@ De installatie in de Cloud Manager Git-opslagplaats heeft twee vertakkingen.
 * Een stabiele releasetak bevat de productiecode van alle teams.
 * Een ontwikkelingstak bevat de ontwikkelingscode van alle teams.
 
-Elke duw aan de bewaarplaats van het Git van een team in of de ontwikkeling of de stabiele tak teweegbrengt de actie van a [ GitHub ](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
+Elke duw aan de bewaarplaats van het Git van een team in of de ontwikkeling of de stabiele tak teweegbrengt de actie van a [&#x200B; GitHub &#x200B;](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
 
 Alle projecten volgen de zelfde opstelling voor de stabiele tak. Een duw naar de stabiele tak van een project wordt automatisch geduwd aan de stabiele tak in de bewaarplaats van de Git van Cloud Manager. Een duw naar de stabiele tak brengt de productiepijpleiding in Cloud Manager in werking. Elke duw door om het even welk team in een stabiele tak brengt de productiepijpleiding teweeg. De productieplaatsing wordt bijgewerkt als alle kwaliteitspoorten overgaan.
 
-![ Push diagram ](/help/implementing/cloud-manager/assets/team-setup2.png)
+![&#x200B; Push diagram &#x200B;](/help/implementing/cloud-manager/assets/team-setup2.png)
 
 Penselen naar de ontwikkelingsvertakking worden anders verwerkt. Een duw aan een ontwikkelaartak in de bewaarplaats van de it van een team teweegbrengt ook een actie GitHub teweeg. Deze actie duwt automatisch de code in de ontwikkelingstak in de bewaarplaats van het Git van Cloud Manager. Deze code-push activeert echter niet automatisch de niet-productiepijplijn. Een aanroep van de Cloud Manager API activeert deze.
 
 Het runnen van de productiepijpleiding omvat het controleren van de code van alle teams via de verstrekte kwaliteitsspoortaten. Nadat de code aan stadium wordt opgesteld, worden de tests en de controles in werking gesteld zodat werkt alles zoals verwacht. Wanneer alle poorten worden doorgegeven, worden de wijzigingen doorgevoerd in de productie zonder onderbreking of downtime.
 
-Voor lokale ontwikkeling, wordt [ SDK voor AEM as a Cloud Service ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) gebruikt. Met de SDK kunnen een lokale auteur, publicatie en Dispatcher worden ingesteld. Deze workflow maakt offline ontwikkeling en snelle doorlooptijden mogelijk. Soms wordt alleen de auteursomgeving gebruikt voor ontwikkeling, maar als u snel Dispatcher- en publicatieomgevingen instelt, kunt u alles lokaal testen voordat u naar de Git-opslagplaats gaat.
+Voor lokale ontwikkeling, wordt [&#x200B; SDK voor AEM as a Cloud Service &#x200B;](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) gebruikt. Met de SDK kunnen een lokale auteur, publicatie en Dispatcher worden ingesteld. Deze workflow maakt offline ontwikkeling en snelle doorlooptijden mogelijk. Soms wordt alleen de auteursomgeving gebruikt voor ontwikkeling, maar als u snel Dispatcher- en publicatieomgevingen instelt, kunt u alles lokaal testen voordat u naar de Git-opslagplaats gaat.
 
 De leden van elk team controleren gewoonlijk de code van de gedeelde Git voor hun eigen projectcode. Andere projecten hoeven niet te worden gecontroleerd omdat de projecten onafhankelijk zijn.
 
-![ Lokale controle en SDK ](/help/implementing/cloud-manager/assets/team-setup3.png)
+![&#x200B; Lokale controle en SDK &#x200B;](/help/implementing/cloud-manager/assets/team-setup3.png)
 
 Deze real-world opstelling kan als blauwdruk worden gebruikt en dan aan de behoeften van een onderneming worden aangepast. Met het flexibele vertakkings- en samenvoegingsconcept van Git kunt u de hierboven vermelde workflows variëren en aanpassen aan de behoeften van elk team. AEM as a Cloud Service steunt al deze variaties zonder de kernwaarde van de gedenkwaardige Cloud Manager-pijpleiding op te offeren.
 
 >[!TIP]
 >
->Zie [ het Werk met de Veelvoudige Opslagplaatsen van de Plaats van de it van Source ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) om meer over deze opstelling te leren.
+>Zie [&#x200B; het Werk met de Veelvoudige Opslagplaatsen van de Plaats van de it van Source &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) om meer over deze opstelling te leren.
 
 ### Overwegingen bij de installatie van meerdere teams {#considerations}
 

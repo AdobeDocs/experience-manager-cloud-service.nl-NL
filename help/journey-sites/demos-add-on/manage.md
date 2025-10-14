@@ -17,13 +17,13 @@ Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosite
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Toelaatbare reis van de Demo&#39;s van de Verwijzing, [ creeerde Plaats ](create-site.md), creeerde u een nieuwe demoplaats die op de malplaatjes van de Toelating van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
+In het vorige document van de AEM Toelaatbare reis van de Demo&#39;s van de Verwijzing, [&#x200B; creeerde Plaats &#x200B;](create-site.md), creeerde u een nieuwe demoplaats die op de malplaatjes van de Toelating van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
 
 * Begrijp hoe te om tot het AEM auteursmilieu toegang te hebben.
 * Weet hoe u een site kunt maken op basis van een sjabloon.
 * Begrijp de grondbeginselen van het navigeren van de plaatsstructuur en het uitgeven van een pagina.
 
-Als u ook [ AEM Screens voor uw demoplaats ](screens.md) toeliet, zou u ook moeten:
+Als u ook [&#x200B; AEM Screens voor uw demoplaats &#x200B;](screens.md) toeliet, zou u ook moeten:
 
 * De basisbeginselen van AEM Screens kennen.
 * Begrijp de Web.Cafe demo-inhoud.
@@ -45,11 +45,11 @@ Nu u uw eigen demosites hebt, wilt u waarschijnlijk weten hoe u deze kunt behere
 
 1. Van de AEM globale navigatiebar, uitgezochte **Hulpmiddelen** > **Demo&#39;s van de Verwijzing** > **Hulpmiddelen van de Demo van de Verwijzing**.
 
-   ![ Zelfbediening de Hulpprogramma&#39;s van de Demo ](assets/demo-utilities.png)
+   ![&#x200B; Zelfbediening de Hulpprogramma&#39;s van de Demo &#x200B;](assets/demo-utilities.png)
 
 1. De Hulpprogramma&#39;s van de Demo van de verwijzing zijn een inzameling van nuttige functionaliteit die opstelling en controle uw milieu van Adobe Experience Manager zal helpen. De aanvankelijke mening is het **dashboard**, dat als statuscontrole van het milieu en zijn demofunctionaliteit dient.
 
-   ![ Dashboard ](assets/dashboard.png)
+   ![&#x200B; Dashboard &#x200B;](assets/dashboard.png)
 
 De Hulpprogramma&#39;s van de Demo van de zelfbediening verstrekken verscheidene hulpmiddelen.
 
@@ -66,7 +66,7 @@ Nadat u een set AEM hebt getest, hebt u mogelijk niet langer uw demosite of zelf
 
 1. Heb toegang tot de **Hulpmiddelen van de Demo van de Verwijzing** en selecteer **Plaatsen van de Schrapping**.
 
-   ![ schrapt plaatsen ](assets/delete-sites.png)
+   ![&#x200B; schrapt plaatsen &#x200B;](assets/delete-sites.png)
 
 1. De beschikbare sites worden in een lijst weergegeven. Controleer de plaats of de plaatsen u wilt schrappen en dan selecteren **Schrapping**.
 
@@ -76,11 +76,11 @@ Nadat u een set AEM hebt getest, hebt u mogelijk niet langer uw demosite of zelf
 
 1. Bevestig het verwijderen van de site in het dialoogvenster.
 
-   ![ Bevestig plaatsschrapping ](assets/confirm-site-delete.png)
+   ![&#x200B; Bevestig plaatsschrapping &#x200B;](assets/confirm-site-delete.png)
 
 1. AEM schrapt de geselecteerde plaats of plaatsen en toont zijn vooruitgang waar de **Schrapping** knoop eerder was.
 
-   ![ de vooruitgang van de Schrapping ](assets/delete-progress.png)
+   ![&#x200B; de vooruitgang van de Schrapping &#x200B;](assets/delete-progress.png)
 
 De site wordt nu verwijderd.
 
@@ -101,13 +101,13 @@ Gefeliciteerd! U hebt de reis AEM de Toelage van de Demos van de Verwijzing volt
 * Begrijp hoe te om tot de Hulpmiddelen van de Demo van de Zelfbediening toegang te hebben.
 * Weet hoe u een bestaande demosite of sjabloon kunt verwijderen.
 
-U bent nu klaar om de mogelijkheden van AEM te onderzoeken gebruikend uw eigen demo plaatsen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Controle uit enkele extra middelen beschikbaar in de [ Extra sectie van Middelen ](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
+U bent nu klaar om de mogelijkheden van AEM te onderzoeken gebruikend uw eigen demo plaatsen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Controle uit enkele extra middelen beschikbaar in de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=nl-NL) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
-* [ creeer Plaats ](/help/sites-cloud/administering/site-creation/create-site.md) - leer hoe te om AEM te gebruiken om een plaats tot stand te brengen gebruikend plaatssjablonen om de stijl en de structuur van uw plaats te bepalen.
-* [ AEM pagina noemende overeenkomsten ](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Zie deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
-* [ AEM Basisbehandeling ](/help/sites-cloud/authoring/basic-handling.md) - onderzoek dit document als u nieuw bent om basisconcepten zoals navigatie en consoleorganisatie AEM te begrijpen.
-* [ AEM as a Cloud Service technische documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) - als u reeds een vast begrip van AEM hebt, kunt u de diepgaande technische documenten direct willen raadplegen.
-* [ Malplaatjes van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md) - als u meer over de structuur van plaatssjablonen zou willen weten en hoe zij worden gebruikt om plaatsen tot stand te brengen, verwijs naar dit document.
+* [&#x200B; documentatie van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=nl-NL) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [&#x200B; creeer Plaats &#x200B;](/help/sites-cloud/administering/site-creation/create-site.md) - leer hoe te om AEM te gebruiken om een plaats tot stand te brengen gebruikend plaatssjablonen om de stijl en de structuur van uw plaats te bepalen.
+* [&#x200B; AEM pagina noemende overeenkomsten &#x200B;](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Zie deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
+* [&#x200B; AEM Basisbehandeling &#x200B;](/help/sites-cloud/authoring/basic-handling.md) - onderzoek dit document als u nieuw bent om basisconcepten zoals navigatie en consoleorganisatie AEM te begrijpen.
+* [&#x200B; AEM as a Cloud Service technische documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) - als u reeds een vast begrip van AEM hebt, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [&#x200B; Malplaatjes van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/site-templates.md) - als u meer over de structuur van plaatssjablonen zou willen weten en hoe zij worden gebruikt om plaatsen tot stand te brengen, verwijs naar dit document.

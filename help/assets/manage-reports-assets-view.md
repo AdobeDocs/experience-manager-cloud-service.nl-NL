@@ -23,7 +23,7 @@ Alle gebruikers die zijn toegewezen aan het productprofiel van AEM-beheerders he
 
 Navigeer naar **[!UICONTROL Reports]** onder **[!UICONTROL Settings]** om rapporten te openen.
 
-![ Rapporten ](assets/reports.png)
+![&#x200B; Rapporten &#x200B;](assets/reports.png)
 
 <!--
 In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
@@ -43,11 +43,11 @@ De AEM Assets-weergaveomgeving biedt uitgebreide rapportagemogelijkheden via het
 **om een rapport tot stand te brengen:**
 
 1. Navigeer aan **Rapporten** en klik **creëren rapport** (van het hoogste recht). **creeer rapport** dialoogdoos toont de hieronder gebieden:
-   ![ creeer-rapport ](/help/assets/assets/executed-reports1.svg)
+   ![&#x200B; creeer-rapport &#x200B;](/help/assets/assets/executed-reports1.svg)
 
    **In het lusje van de Configuratie:**
 
-   1. **type van Rapport:** Uitgezocht onder [!UICONTROL upload], [!UICONTROL download], of [ Dynamische het Rapport van de Levering van Media ](#dynamic-media-delivery-reports) type.
+   1. **type van Rapport:** Uitgezocht onder [!UICONTROL upload], [!UICONTROL download], of [&#x200B; Dynamische het Rapport van de Levering van Media &#x200B;](#dynamic-media-delivery-reports) type.
    1. **Titel:** voeg een titel aan het rapport toe.
    1. **Beschrijving:** voeg een facultatieve beschrijving aan het rapport toe.
    1. **Uitgezochte omslagweg:** selecteer een omslagweg om het rapport van geupload en gedownloade activa binnen die specifieke omslag te produceren. Als u bijvoorbeeld het rapport met middelen nodig hebt die naar een map zijn geüpload, geeft u het pad naar die map op.
@@ -158,16 +158,16 @@ U moet een Dynamic Media-licentie hebben om dit rapport te maken en te gebruiken
 
 ### Een dynamisch rapport voor mediaweergave maken{#create-dynamic-media-delivery-report}
 
-1. Creeer een Dynamisch Rapport van de Levering van Media, gebruikend de stappen in [ worden vermeld creeer een rapport ](#create-report).
+1. Creeer een Dynamisch Rapport van de Levering van Media, gebruikend de stappen in [&#x200B; worden vermeld creeer een rapport &#x200B;](#create-report).
 
 1. Selecteer **[!UICONTROL Dynamic Media Delivery]** in de vervolgkeuzelijst **[!UICONTROL Report type]** .
 
-   ![ Dynamische drop-down het Rapport van de Levering van Media ](assets/dynamic-media-delivery-report-option.png)
+   ![&#x200B; Dynamische drop-down het Rapport van de Levering van Media &#x200B;](assets/dynamic-media-delivery-report-option.png)
 
 
 1. Op het tabblad **[!UICONTROL Columns]** kunt u de kolom **[!UICONTROL Referrer]** selecteren en opnemen in uw rapport.
 
-   ![ Referrer ](assets/referrer.png)
+   ![&#x200B; Referrer &#x200B;](assets/referrer.png)
 
    Alle kolommen van het gedownloade rapport zijn read-only, behalve de **kolom van de Referateur**, die u kunt wijzigen om van het rapport te omvatten of uit te sluiten. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
 
@@ -181,15 +181,15 @@ Nadat u het rapport hebt gemaakt, kunt u de volgende handelingen uitvoeren:
 
    * **Hits** maakt een lijst van het aantal tijden de activa (leveringstelling) wordt geleverd.
 
-Om het Dynamische Rapport van de Levering van Media als CSV te schrappen of te downloaden, zie [ Mening en download bestaand rapport ](#View-and-download-existing-report).
+Om het Dynamische Rapport van de Levering van Media als CSV te schrappen of te downloaden, zie [&#x200B; Mening en download bestaand rapport &#x200B;](#View-and-download-existing-report).
 
-![ Gedownloade CSV op het Dynamische Rapport van de Levering van Media ](assets/csv-dynamic-media-delivery-report.png)
+![&#x200B; Gedownloade CSV op het Dynamische Rapport van de Levering van Media &#x200B;](assets/csv-dynamic-media-delivery-report.png)
 
 
 ## Bestaand rapport weergeven en downloaden {#View-and-download-existing-report}
 
 De bestaande rapporten tonen onder **Uitvoerde Rapporten** tabel. Klik **Rapporten** en selecteer **Uitvoerde Rapporten** om alle gecreeerde rapporten met de status te bekijken zoals **voltooide**, erop wijzend zij klaar zijn te downloaden. Om het rapport in formaat te downloaden CSV of het rapport te schrappen, selecteer de rapportrij. Dan selecteer **CSV van de Download** of **Schrapping**.
-![ mening en download bestaande rapporten ](/help/assets/assets/view-download-existing-report.png)
+![&#x200B; mening en download bestaande rapporten &#x200B;](/help/assets/assets/view-download-existing-report.png)
 
 
 ## Een rapport plannen {#schedule-report}
@@ -206,7 +206,7 @@ Volg onderstaande stappen om een rapport te plannen:
    1. **Uitgezochte omslagweg:** selecteer een omslagweg om een rapport voor activa te produceren die aan of van die specifieke omslag in de toekomst zullen worden geupload.
    1. Wissel **rapport van het Programma:** Wissel om het rapport voor een recentere tijd of voor zijn herhaalde voorkomen te plannen.
 
-      ![ planningsrapport ](/help/assets/assets/schedule-reports1.svg)
+      ![&#x200B; planningsrapport &#x200B;](/help/assets/assets/schedule-reports1.svg)
 
    1. **kies frequentie:** specificeer het interval voor het produceren van het rapport (bijvoorbeeld, dagelijks, wekelijks, maandelijks, jaarlijks, of eens) en plaats de datum en de tijd om het rapport samen met de einddatum voor herhaling in werking te stellen. Voor een eenmalig rapport selecteert u het datumbereik voor het rapport over het geselecteerde type activiteit in de AEM-omgeving. Bijvoorbeeld, als u een rapport over gedownloade activa van de tiende tot 29e (toekomstige data) van een specifieke maand nodig hebt, selecteer deze data in het **Uitgezochte 1&rbrace; gebied van het datuminterval &lbrace;.**
 
@@ -216,8 +216,8 @@ Volg onderstaande stappen om een rapport te plannen:
 
 ## Geplande rapporten weergeven {#view-scheduled-reports}
 
-De geplande rapporten tonen onder **Geplande Rapporten** lusje op een systematisch georganiseerde manier. Alle voltooide rapporten voor elk gepland rapport worden opgeslagen binnen één enkele rapportomslag. Klik ![ vouwen samen ](/help/assets/assets/expand-icon1.svg) om de voltooide rapporten te bekijken. Als u bijvoorbeeld een dagelijks rapport hebt gepland, worden alle voltooide rapporten gegroepeerd in één map. Deze organisatie vereenvoudigt zowel de navigatie als de ontdekkingsbaarheid van rapporten. Om geplande rapporten te bekijken, klik **Rapporten** en klik dan **Geplande Rapporten**. Alle geplande rapporten worden weergegeven met hun status als lopend of voltooid. Voltooide rapporten kunnen worden gedownload.\
-![ gepland rapport ](/help/assets/assets/scheduled-reports-tab.png)
+De geplande rapporten tonen onder **Geplande Rapporten** lusje op een systematisch georganiseerde manier. Alle voltooide rapporten voor elk gepland rapport worden opgeslagen binnen één enkele rapportomslag. Klik ![&#x200B; vouwen samen &#x200B;](/help/assets/assets/expand-icon1.svg) om de voltooide rapporten te bekijken. Als u bijvoorbeeld een dagelijks rapport hebt gepland, worden alle voltooide rapporten gegroepeerd in één map. Deze organisatie vereenvoudigt zowel de navigatie als de ontdekkingsbaarheid van rapporten. Om geplande rapporten te bekijken, klik **Rapporten** en klik dan **Geplande Rapporten**. Alle geplande rapporten worden weergegeven met hun status als lopend of voltooid. Voltooide rapporten kunnen worden gedownload.\
+![&#x200B; gepland rapport &#x200B;](/help/assets/assets/scheduled-reports-tab.png)
 
 ## Geplande rapporten bewerken en annuleren {#edit-cancel-scheduled-reports}
 
@@ -225,12 +225,12 @@ De geplande rapporten tonen onder **Geplande Rapporten** lusje op een systematis
 1. Selecteer de rapportrij.
 1. Klik **uitgeven**.
 1. Klik **annuleer Programma** en klik dan **bevestigen**, om het geplande rapport te annuleren. Voor geannuleerde rapporten, wordt de volgende runtime leeg en toont de status geannuleerd.
-   ![ geef uit en annuleer gepland rapport ](/help/assets/assets/cancel-edit-scheduled-reports.png)
+   ![&#x200B; geef uit en annuleer gepland rapport &#x200B;](/help/assets/assets/cancel-edit-scheduled-reports.png)
 
 ### Plan hervatten {#resume-schedule}
 
 Om het geannuleerde programma te hervatten, selecteer de rapportrij en klik **Programma van de Hervatting**. Wanneer deze wordt hervat, worden de volgende runtimegegevens opnieuw weergegeven en wordt de status weergegeven als zijnde actief.
-![ hervat programma ](/help/assets/assets/resume-schedule.png)
+![&#x200B; hervat programma &#x200B;](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]
 >
@@ -245,10 +245,10 @@ Met de Assets-weergave kunt u realtime gegevens voor uw Assets-weergaveomgeving 
 Klik op **[!UICONTROL Insights]** beschikbaar in het linkernavigatievenster om de volgende automatisch gegenereerde grafieken weer te geven:
 
 * **Downloads**: Het aantal activa die van het de meningsmilieu van Assets in de laatste 30 dagen of 12 maanden worden gedownload vertegenwoordigden gebruikend een lijngrafiek.
-  ![ inzichten-downloads ](/help/assets/assets/insights-downloads2341.svg)
+  ![&#x200B; inzichten-downloads &#x200B;](/help/assets/assets/insights-downloads2341.svg)
 
 * **uploadt**: Het aantal activa die aan het de meningsmilieu van Assets in de laatste 30 dagen of 12 maanden worden geupload vertegenwoordigden gebruikend een lijngrafiek.
-  ![ inzichten-uploads ](/help/assets/assets/insights-uplods2.svg)
+  ![&#x200B; inzichten-uploads &#x200B;](/help/assets/assets/insights-uplods2.svg)
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
 * **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
@@ -258,12 +258,12 @@ Klik op **[!UICONTROL Insights]** beschikbaar in het linkernavigatievenster om d
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Hoogste Zoekopdrachten**: De hoogste gezochte termijnen van de mening samen met het aantal tijden die termijnen binnen uw het meningsmilieu van Assets in de laatste 30 dagen of 12 maanden worden gezocht die maanden in een tabelformaat worden vertegenwoordigd.
-  ![ inzichten-uploads ](/help/assets/assets/insights-top-search.svg)
+  ![&#x200B; inzichten-uploads &#x200B;](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
 * **Telling van Activa door grootte:** segmenteert de totale activa tellen in uw milieu van de Mening van Assets in verschillende groottewaaiers, die de telling en het percentage activa in elke groottewaaier benadrukken, door een donutgrafiek wordt vertegenwoordigd.
-  ![ inzichten-activa-telling-door-grootte ](/help/assets/assets/insights-assets-count-by-size.svg)
+  ![&#x200B; inzichten-activa-telling-door-grootte &#x200B;](/help/assets/assets/insights-assets-count-by-size.svg)
 * **Telling van Activa door het Type van Activa:** segmenteert het totale assetentelling in uw milieu van de Mening van Assets, die de telling en het percentage van activa benadrukken die op hun dossiertypes worden gebaseerd, door een donutgrafiek wordt vertegenwoordigd.
-  ![ inzichten-activa-telling-door-grootte ](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
+  ![&#x200B; inzichten-activa-telling-door-grootte &#x200B;](/help/assets/assets/insights-assest-count-by-asset-type1.svg)

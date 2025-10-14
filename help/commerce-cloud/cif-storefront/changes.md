@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Opvallende wijzigingen in de invoegtoepassing Commerce integration framework (CIF) {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM-projecten te beheren. Om meer over deze mogelijkheden te leren, volg de verbinding voor [ veranderingen in Experience Manager as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+Adobe Experience Manager as a Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM-projecten te beheren. Om meer over deze mogelijkheden te leren, volg de verbinding voor [&#x200B; veranderingen in Experience Manager as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
 
 In dit document worden de belangrijke verschillen tussen de Commerce integration framework (CIF) add-on en de oude CIF-versies, ook wel CIF Classic (Quickstart) en CIF Open-source genoemd, benadrukt.
 
@@ -41,12 +41,12 @@ Het eindpunt wordt gevormd en bijgewerkt of via Cloud Manager UI of zijn CLI.
 
 ## Invoering van het CIF-project van Venia {#venia-project}
 
-Project beschikbaar in [ de Bewaarplaats van de Bewaarplaats van de Bezit van Cloud Manager ](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) en plaatsing die via [ Cloud Manager wordt gedaan.](/help/implementing/deploying/overview.md)
+Project beschikbaar in [&#x200B; de Bewaarplaats van de Bewaarplaats van de Bezit van Cloud Manager &#x200B;](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) en plaatsing die via [&#x200B; Cloud Manager wordt gedaan.](/help/implementing/deploying/overview.md)
 
 ### Vorige CIF-versies {#previous-versions-venia}
 
 * CIF Classic: via AEM-pakket installeren
-* CIF open-source: Via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
+* CIF open-source: Via [&#x200B; Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
 
 ## Productcatalogusgegevens {#product-catalog-data}
 
@@ -66,4 +66,4 @@ AEM geeft de ervaringen met productcatalogi direct weer met AEM-catalogussjablon
 
 >[!NOTE]
 >
->Voor extra documentatie op hoe te om CIF met AEM te gebruiken Beheerde Dienst of AEM op-gebouw, zie [ Commerce integration framework.](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Voor extra documentatie op hoe te om CIF met AEM te gebruiken Beheerde Dienst of AEM op-gebouw, zie [&#x200B; Commerce integration framework.](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

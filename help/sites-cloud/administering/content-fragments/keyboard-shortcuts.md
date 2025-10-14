@@ -16,11 +16,11 @@ ht-degree: 0%
 
 Een selectie van toetsenbordkortere weg is beschikbaar voor gebruik in de console van de Fragmenten van de Inhoud.
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing wanneer [ het uitgeven pagina&#39;s ](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), anderen op het [ algemene gebruik van consoles ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing wanneer [&#x200B; het uitgeven pagina&#39;s &#x200B;](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), anderen op het [&#x200B; algemene gebruik van consoles &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->De [ bepalingssleutels ](#os-specific-modifier-keys) die voor AEM toetsenbordkortere weg worden vereist variëren afhankelijk van werkend systeem.
+>De [&#x200B; bepalingssleutels &#x200B;](#os-specific-modifier-keys) die voor AEM toetsenbordkortere weg worden vereist variëren afhankelijk van werkend systeem.
 
 ## Console met inhoudsfragmenten - sneltoetsen {#content-fragments-console-keyboard-shortcuts}
 
@@ -39,11 +39,11 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing 
 | Selecteer een of meer inhoudsfragmenten | `u` | Het dialoogvenster Publiceren nu ongedaan maken openen |
 | Willekeurig geopend dialoogvenster | `esc` | Dialoogvenster wordt gesloten |
 
-Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers. Sommigen zijn van toepassing wanneer [ het uitgeven pagina&#39;s ](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), anderen op het algemene [ gebruik van consoles ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers. Sommigen zijn van toepassing wanneer [&#x200B; het uitgeven pagina&#39;s &#x200B;](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), anderen op het algemene [&#x200B; gebruik van consoles &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->De toetsenbordkortere weg van de redacteur is altijd actief ongeacht als de [ consolekortere weg ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) is gedeactiveerd.
+>De toetsenbordkortere weg van de redacteur is altijd actief ongeacht als de [&#x200B; consolekortere weg &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) is gedeactiveerd.
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 

@@ -22,7 +22,7 @@ De gebruikersinterface van Micro-Frontend wordt beschikbaar gesteld in uw toepas
 
 Asset Selector biedt vele voordelen, zoals:
 
-* Versnelling van integratie met om het even welke [ Adobe ](#asset-selector-ims) of [ niet-Adobe ](#asset-selector-non-ims) toepassingen die de bibliotheek van JavaScript Vanilla gebruiken.
+* Versnelling van integratie met om het even welke [&#x200B; Adobe &#x200B;](#asset-selector-ims) of [&#x200B; niet-Adobe &#x200B;](#asset-selector-non-ims) toepassingen die de bibliotheek van JavaScript Vanilla gebruiken.
 * Eenvoudig te onderhouden, aangezien updates van het Assets Selector-pakket automatisch worden geïmplementeerd op de Asset Selector die beschikbaar is voor uw toepassing. Uw toepassing hoeft geen updates uit te voeren om de laatste wijzigingen te laden.
 * Gemakkelijk aanpassen aangezien er eigenschappen beschikbaar zijn die de vertoning van de Selecteur van Activa binnen uw toepassing controleren.
 * In de volledige tekst doorzoeken, uit-van-de-doos, en aangepaste filters om snel aan activa voor gebruik binnen de auteurservaring te navigeren.
@@ -61,7 +61,7 @@ Gebruik de bovenstaande voorwaarden als u een IMS-verificatieworkflow van de Ass
 
 ## Installatie {#installation}
 
-De Selecteur van activa is beschikbaar via zowel ESM CDN (bijvoorbeeld, [ esm.sh ](https://esm.sh/)/[ kabel ](https://www.skypack.dev/)) als [ UMD ](https://github.com/umdjs/umd) versie.
+De Selecteur van activa is beschikbaar via zowel ESM CDN (bijvoorbeeld, [&#x200B; esm.sh &#x200B;](https://esm.sh/)/[&#x200B; kabel &#x200B;](https://www.skypack.dev/)) als [&#x200B; UMD &#x200B;](https://github.com/umdjs/umd) versie.
 
 In browsers die {versie 0} gebruiken UMD **(geadviseerd):**
 
@@ -89,7 +89,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ## Asset Selector integreren met Vanilla JS {#integration-using-vanilla-js}
 
-U kunt elke [!DNL Adobe] -toepassing of niet-Adobe-toepassing integreren in de [!DNL Experience Manager Assets] -opslagplaats en elementen selecteren vanuit de toepassing. Zie [ de Integratie van de Selecteur van Activa met diverse toepassingen ](#asset-selector-integration-with-apps).
+U kunt elke [!DNL Adobe] -toepassing of niet-Adobe-toepassing integreren in de [!DNL Experience Manager Assets] -opslagplaats en elementen selecteren vanuit de toepassing. Zie [&#x200B; de Integratie van de Selecteur van Activa met diverse toepassingen &#x200B;](#asset-selector-integration-with-apps).
 
 De integratie gebeurt door het pakket Asset Selector te importeren en verbinding te maken met de Assets as a Cloud Service via de Vanilla JavaScript-bibliotheek. Bewerk een `index.html` of een ander geschikt bestand in uw toepassing om:
 
@@ -99,7 +99,7 @@ De integratie gebeurt door het pakket Asset Selector te importeren en verbinding
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
 
-* U integreert een [!DNL Adobe] toepassing op [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=nl-NL).
+* U integreert een [!DNL Adobe] toepassing op [&#x200B; Verenigde Shell &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=nl-NL).
 * Er is al een IMS-token gegenereerd voor verificatie.
 
 ## Asset Selector integreren met verschillende toepassingen {#asset-selector-integration-with-apps}
@@ -402,7 +402,7 @@ Gebruik de volgende voorwaarden als u Asset Selector integreert met Dynamic Medi
 * Voor toegang tot Dynamic Media met OpenAPI-mogelijkheden hebt u licenties nodig voor:
    * Assets repository (bijvoorbeeld Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Slechts [ goedgekeurde activa ](#approved-assets.md) zijn beschikbaar voor gebruik die merkconsistentie verzekeren.
+* Slechts [&#x200B; goedgekeurde activa &#x200B;](#approved-assets.md) zijn beschikbaar voor gebruik die merkconsistentie verzekeren.
 
 ### Integratie voor dynamische media met OpenAPI-mogelijkheden{#adobe-app-integration-polaris}
 
@@ -416,7 +416,7 @@ De eigenschappen `rootPath` en `path` mogen geen deel uitmaken van de Dynamic Me
 aemTierType:[1: "delivery"]
 ```
 
-Met deze configuratie kunt u alle goedgekeurde elementen weergeven zonder mappen of als een platte structuur. Voor meer informatie, navigeer aan `aemTierType` bezit onder [ de eigenschappen van de Selecteur van Activa ](#asset-selector-properties)
+Met deze configuratie kunt u alle goedgekeurde elementen weergeven zonder mappen of als een platte structuur. Voor meer informatie, navigeer aan `aemTierType` bezit onder [&#x200B; de eigenschappen van de Selecteur van Activa &#x200B;](#asset-selector-properties)
 
 +++
 
@@ -484,7 +484,7 @@ Alle geselecteerde elementen worden gedragen door de functie `handleSelection` d
 
 Hieronder ziet u de twee manieren waarop u het JSON-object kunt doorlopen:
 
-![ Dynamische levering url ](assets/dynamic-delivery-url.png)
+![&#x200B; Dynamische levering url &#x200B;](assets/dynamic-delivery-url.png)
 
 * **Duimnagel:** de duimnagels kunnen beelden zijn en de activa zijn PDF, video, beelden, etc. Hoewel u de hoogte- en breedtekenmerken van de miniatuur van een element kunt gebruiken als de dynamische uitvoering van het element.
 De volgende set uitvoeringen kan worden gebruikt voor de PDF-elementen:
@@ -527,14 +527,14 @@ In de bovenstaande schermafbeelding moet de bezorgings-URL van de oorspronkelijk
 
 Na de integratie met de Adobe Micro-Frontend Asset Selector kunt u de structuur van alle goedgekeurde middelen alleen zien in de gegevensopslagruimte van Experience Manager.
 
-![ Dynamische Media met OpenAPI mogelijkheden UI ](assets/polaris-ui.png)
+![&#x200B; Dynamische Media met OpenAPI mogelijkheden UI &#x200B;](assets/polaris-ui.png)
 
-* **A**: [ verberg/toon paneel ](#hide-show-panel)
-* **B**: [ Assets ](#repository)
-* **C**: [ Sorterend ](#sorting)
-* **D**: [ Filters ](#filters)
-* **E**: [ bar van het Onderzoek ](#search-bar)
-* **F**: [ Sorterend in het stijgen of dalende orde ](#sorting)
+* **A**: [&#x200B; verberg/toon paneel &#x200B;](#hide-show-panel)
+* **B**: [&#x200B; Assets &#x200B;](#repository)
+* **C**: [&#x200B; Sorterend &#x200B;](#sorting)
+* **D**: [&#x200B; Filters &#x200B;](#filters)
+* **E**: [&#x200B; bar van het Onderzoek &#x200B;](#search-bar)
+* **F**: [&#x200B; Sorterend in het stijgen of dalende orde &#x200B;](#sorting)
 * **G**: Cancel Selectie
 * **H**: Selecteer enige of veelvoudige activa
 
@@ -571,16 +571,16 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *filterFormProps* | Object | Nee | | Geef de filtereigenschappen op die u nodig hebt om de zoekopdracht te verfijnen. Voor! Voorbeeld: MIME-type JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nee |                 | Geef de geselecteerde Assets op wanneer de Asset Selector wordt weergegeven. Een array van objecten is vereist die een id-eigenschap van de elementen bevat. `[{id: 'urn:234}, {id: 'urn:555'}]` Een element moet bijvoorbeeld beschikbaar zijn in de huidige map. Als u een andere map moet gebruiken, geeft u ook een waarde op voor de eigenschap `path` . |
 | *acvConfig* | Object | Nee | | De bezit van de Mening van de Inzameling van activa dat voorwerp bevat dat douaneconfiguratie bevat om gebreken met voeten te treden. Deze eigenschap wordt ook gebruikt met de eigenschap `rail` om de weergave per spoor van de viewer voor elementen in te schakelen. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |                 | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` -proxy. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling. Om de opheffing uit te voeren, moet u een geldig [ voorwerp van de Beschrijver van het Bericht ](https://formatjs.io/docs/react-intl/api/#message-descriptor) tot de sleutel van `i18nSymbols` overgaan die u wilt met voeten treden. |
-| *intl* | Object | Nee | | Asset Selector biedt standaard OTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via de eigenschap `intl.locale` . Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> de gesteunde scènekoorden volgen [ ISO 639 - Codes ](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |                 | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` -proxy. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling. Om de opheffing uit te voeren, moet u een geldig [&#x200B; voorwerp van de Beschrijver van het Bericht &#x200B;](https://formatjs.io/docs/react-intl/api/#message-descriptor) tot de sleutel van `i18nSymbols` overgaan die u wilt met voeten treden. |
+| *intl* | Object | Nee | | Asset Selector biedt standaard OTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via de eigenschap `intl.locale` . Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> de gesteunde scènekoorden volgen [&#x200B; ISO 639 - Codes &#x200B;](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 | *repositoryId* | String | Nee | &#39;&#39; | Opslagplaats waar de inhoud wordt geladen door de Asset Selector. |
 | *additionalAemSolutions* | `Array<string>` | Nee | [ ] | Hiermee kunt u een lijst met extra AEM-opslagplaatsen toevoegen. Als deze eigenschap geen informatie bevat, worden alleen mediawisselaars of AEM Assets-opslagruimten in aanmerking genomen. |
 | *hideTreeNav* | Boolean | Nee |  | Hiermee geeft u op of de zijbalk met boomnavigatie met elementen moet worden weergegeven of verborgen. Het wordt alleen in modale zin gebruikt en daarom heeft dit onroerend goed geen effect in de spoorwegen. |
 | *onDrop* | Functie | Nee | | Met de eigenschap kan een element worden neergezet. |
 | *dropOptions* | `{allowList?: Object}` | Nee | | Vormt dalingsopties gebruikend &quot;lijst van gewenste personen&quot;. |
 | *colorScheme* | String | Nee | | Configureer het thema (`light` of `dark` ) voor de Asset Selector. |
-| *handleSelection* | Functie | Nee | | Wordt aangeroepen met een array van elementen wanneer elementen worden geselecteerd en op de knop `Select` op het modale object wordt geklikt. Deze functie wordt alleen aangeroepen in de modale weergave. Gebruik voor de rasterweergave de functies `handleAssetSelection` of `onDrop` . Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Zie [ Geselecteerd Type van Activa ](#selected-asset-type) voor details. |
-| *handleAssetSelection* | Functie | Nee | | Wordt aangeroepen met een array van items wanneer de elementen worden geselecteerd of niet geselecteerd. Dit is handig wanneer u naar elementen wilt luisteren terwijl de gebruiker deze selecteert. Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Zie [ Geselecteerd Type van Activa ](#selected-asset-type) voor details. |
+| *handleSelection* | Functie | Nee | | Wordt aangeroepen met een array van elementen wanneer elementen worden geselecteerd en op de knop `Select` op het modale object wordt geklikt. Deze functie wordt alleen aangeroepen in de modale weergave. Gebruik voor de rasterweergave de functies `handleAssetSelection` of `onDrop` . Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Zie [&#x200B; Geselecteerd Type van Activa &#x200B;](#selected-asset-type) voor details. |
+| *handleAssetSelection* | Functie | Nee | | Wordt aangeroepen met een array van items wanneer de elementen worden geselecteerd of niet geselecteerd. Dit is handig wanneer u naar elementen wilt luisteren terwijl de gebruiker deze selecteert. Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Zie [&#x200B; Geselecteerd Type van Activa &#x200B;](#selected-asset-type) voor details. |
 | *onClose* | Functie | Nee | | Wordt aangeroepen wanneer op de knop `Close` in de modale weergave wordt gedrukt. Dit wordt alleen aangeroepen in de `modal` -weergave en wordt in `rail` -weergave genegeerd. |
 | *onFilterSubmit* | Functie | Nee | | Wordt aangeroepen met filteritems wanneer de gebruiker andere filtercriteria wijzigt. |
 | *selectionType* | String | Nee | Enkel | Configuratie voor `single` of `multiple` selectie van elementen tegelijk. |
@@ -591,7 +591,7 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *dialogSize* | overnemen op klein, middelgroot, groot, volledig scherm of volledig scherm | String | Optioneel | U kunt de lay-out bepalen door zijn grootte te specificeren gebruikend de bepaalde opties. |
 | *colorScheme* | Licht of donker | Nee | | Deze eigenschap wordt gebruikt om het thema van een toepassing Asset Selector in te stellen. U kunt kiezen tussen licht of donker thema. |
 | *filterRepoList* | Functie | Nee |  | U kunt de callback-functie `filterRepoList` gebruiken die een Experience Manager-opslagplaats aanroept en een gefilterde lijst met opslagplaatsen retourneert. |
-| *endOptions* | Functie | | | U kunt tussen de volgende twee eigenschappen gebruiken: **getExpiryStatus** die status van een verlopen activa verstrekt. De functie retourneert `EXPIRED` , `EXPIRING_SOON` of `NOT_EXPIRED` op basis van de vervaldatum van een element dat u opgeeft. Zie [ verlopen activa ](#customize-expired-assets) aanpassen. Bovendien, kunt u **allowSelectionAndDrag** gebruiken waarin de waarde van de functie of `true` of `false` kan zijn. Wanneer de waarde is ingesteld op `false` , kan het verlopen element niet worden geselecteerd of gesleept op het canvas. |
+| *endOptions* | Functie | | | U kunt tussen de volgende twee eigenschappen gebruiken: **getExpiryStatus** die status van een verlopen activa verstrekt. De functie retourneert `EXPIRED` , `EXPIRING_SOON` of `NOT_EXPIRED` op basis van de vervaldatum van een element dat u opgeeft. Zie [&#x200B; verlopen activa &#x200B;](#customize-expired-assets) aanpassen. Bovendien, kunt u **allowSelectionAndDrag** gebruiken waarin de waarde van de functie of `true` of `false` kan zijn. Wanneer de waarde is ingesteld op `false` , kan het verlopen element niet worden geselecteerd of gesleept op het canvas. |
 | *showToast* | | Nee | | Hierdoor kan de Asset Selector een aangepast pop-upbericht weergeven voor het verlopen element. |
 
 <!--
@@ -607,9 +607,9 @@ U kunt de Eigenschappen van de Selecteur van Activa [&#128279;](#asset-selector-
 
 ### Voorbeeld 1: Kiezer voor bedrijfsmiddelen in spoorwegweergave
 
-![ spoorstaaf-mening-voorbeeld ](assets/rail-view-example-vanilla.png)
+![&#x200B; spoorstaaf-mening-voorbeeld &#x200B;](assets/rail-view-example-vanilla.png)
 
-Als de waarde van de AssetSelector `rail` is ingesteld op `false` of niet wordt vermeld in de eigenschappen, wordt de functie Asset Selector standaard weergegeven in de modale weergave. Met de eigenschap `acvConfig` kunt u bepaalde diepgaande configuraties gebruiken, zoals Slepen en neerzetten. Bezoek [ laat of maak belemmering en daling ](#enable-disable-drag-and-drop) toe onbruikbaar om het gebruik van `acvConfig` bezit te begrijpen.
+Als de waarde van de AssetSelector `rail` is ingesteld op `false` of niet wordt vermeld in de eigenschappen, wordt de functie Asset Selector standaard weergegeven in de modale weergave. Met de eigenschap `acvConfig` kunt u bepaalde diepgaande configuraties gebruiken, zoals Slepen en neerzetten. Bezoek [&#x200B; laat of maak belemmering en daling &#x200B;](#enable-disable-drag-and-drop) toe onbruikbaar om het gebruik van `acvConfig` bezit te begrijpen.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -623,13 +623,13 @@ Use the `path` property to define the folder name that displays automatically wh
 
 Gebruik verschillende eigenschappen om de metagegevens te definiëren van een element dat u wilt weergeven met een info-pictogram. De info popover verstrekt de inzameling van informatie over activa of de omslag met inbegrip van titel, afmetingen, datum van wijziging, plaats, en beschrijving van activa. In het onderstaande voorbeeld worden verschillende eigenschappen gebruikt om metagegevens van een element weer te geven. Met de eigenschap `repo:path` wordt bijvoorbeeld de locatie van een element opgegeven. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
 
-![ meta-gegevens-popover-voorbeeld ](assets/metadata-popover.png)
+![&#x200B; meta-gegevens-popover-voorbeeld &#x200B;](assets/metadata-popover.png)
 
 ### Voorbeeld 3: Aangepaste filtereigenschap in de rasterweergave
 
 Naast de beperkte zoekopdracht kunt u met Assets Selector verschillende kenmerken aanpassen om uw zoekopdracht te verfijnen van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] -toepassing. Voeg de volgende code toe om aangepaste zoekfilters in uw toepassing toe te voegen. In het onderstaande voorbeeld zoekt u in `Type Filter` het elementtype tussen Afbeeldingen, Documenten of Video&#39;s of het filtertype dat u voor de zoekopdracht hebt toegevoegd.
 
-![ douane-filter-voorbeeld-vanilla ](assets/custom-filter-example-vanilla.png)
+![&#x200B; douane-filter-voorbeeld-vanilla &#x200B;](assets/custom-filter-example-vanilla.png)
 
 <!--
 
@@ -708,7 +708,7 @@ filterSchema: [
 
 ### Informatie aanpassen in de modale weergave {#customize-info-in-modal-view}
 
-U kunt de detailmening van activa aanpassen wanneer u het ![ infopictogram ](assets/info-icon.svg) pictogram klikt. Voer de onderstaande code uit:
+U kunt de detailmening van activa aanpassen wanneer u het ![&#x200B; infopictogram &#x200B;](assets/info-icon.svg) pictogram klikt. Voer de onderstaande code uit:
 
 ```
 // Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
@@ -909,7 +909,7 @@ const showToast = {
 
 Gebruik het volgende codefragment om pop-upbericht voor het gebruik van een verlopen element weer te geven:
 
-![ toast bericht ](assets/toast-message.png)
+![&#x200B; toast bericht &#x200B;](assets/toast-message.png)
 
 ### Contextafhankelijke aanroepfilter{#contextual-invocation-filter}
 
@@ -963,13 +963,13 @@ const filterSchema = useMemo ((); => {
 }, [selectedTags]);
 ```
 
-![ filter van de markeringsgroep ](assets/tag-group.gif)
+![&#x200B; filter van de markeringsgroep &#x200B;](assets/tag-group.gif)
 
 ## Selectie van Assets afhandelen met behulp van objectschema {#handling-selection}
 
 De eigenschap `handleSelection` wordt gebruikt om één of meerdere selecties van Assets in Assets Selector af te handelen. In het onderstaande voorbeeld wordt de gebruikssyntaxis van `handleSelection` weergegeven.
 
-![ handvat-selectie ](assets/handling-selection.png)
+![&#x200B; handvat-selectie &#x200B;](assets/handling-selection.png)
 
 ## Selectie van Assets uitschakelen {#disable-selection}
 
@@ -1004,16 +1004,16 @@ De syntaxis voor het uitschakelen van selectie is als volgt:
 
 Nadat de Asset Selector is ingesteld en u bent gemachtigd om Asset Selector te gebruiken in uw [!DNL Adobe Experience Manager] -toepassing als [!DNL Cloud Service] -toepassing, kunt u elementen selecteren of verschillende andere bewerkingen uitvoeren om te zoeken naar uw elementen in de opslagplaats.
 
-![ gebruiken-activa-selecteur ](assets/using-asset-selector.png)
+![&#x200B; gebruiken-activa-selecteur &#x200B;](assets/using-asset-selector.png)
 
-* **A**: [ verberg/toon paneel ](#hide-show-panel)
-* **B**: [ de schakelaar van de Bewaarplaats ](#repository-switcher)
-* **C**: [ Assets ](#repository)
-* **D**: [ Filters ](#filters)
-* **E**: [ bar van het Onderzoek ](#search-bar)
-* **F**: [ Sorterend ](#sorting)
-* **G**: [ Sorterend in het stijgen of dalende orde ](#sorting)
-* **H**: [ Mening ](#types-of-view)
+* **A**: [&#x200B; verberg/toon paneel &#x200B;](#hide-show-panel)
+* **B**: [&#x200B; de schakelaar van de Bewaarplaats &#x200B;](#repository-switcher)
+* **C**: [&#x200B; Assets &#x200B;](#repository)
+* **D**: [&#x200B; Filters &#x200B;](#filters)
+* **E**: [&#x200B; bar van het Onderzoek &#x200B;](#search-bar)
+* **F**: [&#x200B; Sorterend &#x200B;](#sorting)
+* **G**: [&#x200B; Sorterend in het stijgen of dalende orde &#x200B;](#sorting)
+* **H**: [&#x200B; Mening &#x200B;](#types-of-view)
 
 ### Deelvenster verbergen/tonen {#hide-show-panel}
 
@@ -1033,7 +1033,7 @@ De Kiezer van activa verstrekt ook uit-van-de-doos filteropties om uw onderzoeks
 
 * **[!UICONTROL Status]:** bevat de huidige status van het element tussen `all` , `approved`, `rejected` of `no status` .
 * **[!UICONTROL File type]:** includes `folder`, `file`, `images`, `documents` of `video` .
-* **[!UICONTROL Expiration status]:** verwijst naar de elementen op basis van de vervalduur. U kunt het selectievakje `[!UICONTROL Expired]` inschakelen om verlopen elementen te filteren, of u kunt `[!UICONTROL Expiration Duration]` van een element instellen om elementen weer te geven op basis van de vervaldatum. Wanneer een element al is verlopen of bijna is verlopen, wordt hetzelfde symbool weergegeven. Bovendien kunt u bepalen of u het gebruik (of slepen en neerzetten) van een verlopen element wilt toestaan. Zie meer over [ verlopen activa ](#customize-expired-assets) aanpassen. Door gebrek, wordt het **Verlopen Soon** badge getoond voor activa die in volgende 30 dagen verlopen. U kunt de vervaldatum echter configureren met de eigenschap `expirationDate` .
+* **[!UICONTROL Expiration status]:** verwijst naar de elementen op basis van de vervalduur. U kunt het selectievakje `[!UICONTROL Expired]` inschakelen om verlopen elementen te filteren, of u kunt `[!UICONTROL Expiration Duration]` van een element instellen om elementen weer te geven op basis van de vervaldatum. Wanneer een element al is verlopen of bijna is verlopen, wordt hetzelfde symbool weergegeven. Bovendien kunt u bepalen of u het gebruik (of slepen en neerzetten) van een verlopen element wilt toestaan. Zie meer over [&#x200B; verlopen activa &#x200B;](#customize-expired-assets) aanpassen. Door gebrek, wordt het **Verlopen Soon** badge getoond voor activa die in volgende 30 dagen verlopen. U kunt de vervaldatum echter configureren met de eigenschap `expirationDate` .
 
   >[!TIP]
   >
@@ -1042,13 +1042,13 @@ De Kiezer van activa verstrekt ook uit-van-de-doos filteropties om uw onderzoeks
 * **[!UICONTROL MIME type]:** includes `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`.
 * **[!UICONTROL Image Size]:** omvat minimum/maximumbreedte, minimum/maximumhoogte van beeld.
 
-  ![ spoorstaaf-mening-voorbeeld ](assets/filters-asset-selector.png)
+  ![&#x200B; spoorstaaf-mening-voorbeeld &#x200B;](assets/filters-asset-selector.png)
 
 ### Aangepaste zoekopdracht
 
 Met Asset Selector kunt u naast de zoekopdracht in volledige tekst ook elementen in bestanden zoeken met behulp van een aangepaste zoekopdracht. U kunt aangepaste zoekfilters gebruiken in zowel de modusweergave als de spoorweergave.
 
-![ douane-onderzoek ](assets/custom-search1.png)
+![&#x200B; douane-onderzoek &#x200B;](assets/custom-search1.png)
 
 U kunt ook een standaardzoekfilter maken om de velden op te slaan waarnaar u vaak zoekt en deze later te gebruiken. Als u een aangepaste zoekopdracht naar uw elementen wilt maken, kunt u de eigenschap `filterSchema` gebruiken.
 
@@ -1064,10 +1064,10 @@ U kunt elementen in de Asset Selector sorteren op naam, afmetingen of grootte va
 
 Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
 
-* **![lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL List View]** de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
-* **![netmening ](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]** de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
-* **![galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]** de de vertoningendossiers of omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
-* **![watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]** De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
+* **![lijstmening &#x200B;](assets/do-not-localize/list-view.png) [!UICONTROL List View]** de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
+* **![netmening &#x200B;](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]** de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
+* **![galeriemening &#x200B;](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]** de de vertoningendossiers of omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
+* **![watervalmening &#x200B;](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]** De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
 
 <!--
 ### Modes to view Asset Selector

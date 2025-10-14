@@ -21,12 +21,12 @@ Leer hoe u de lay-outcontainer en de lay-outmodus configureert om responsieve la
 >
 >In dit document wordt beschreven hoe een sitebeheerder de lay-outcontainer kan configureren om responsief webontwerp te ondersteunen. Er zijn aanvullende bronnen beschikbaar:
 >
->* Voor inhoudsauteurs, zijn de details van hoe te om ontvankelijke ontwerpeigenschappen op een inhoudspagina te gebruiken beschikbaar in het document [ Responsieve Lay-out.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
->* Voor ontwikkelaars, worden de details van de Container van de Lay-out en het ontvankelijke net beschreven in [ het Responsieve document van het Ontwerp, ](/help/implementing/developing/introduction/responsive-design.md) dat verstrekt en uiteinden voor het gebruiken van lay-outcontainers en ontvankelijk net wanneer het ontwerpen van uw plaats.
+>* Voor inhoudsauteurs, zijn de details van hoe te om ontvankelijke ontwerpeigenschappen op een inhoudspagina te gebruiken beschikbaar in het document [&#x200B; Responsieve Lay-out.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Voor ontwikkelaars, worden de details van de Container van de Lay-out en het ontvankelijke net beschreven in [&#x200B; het Responsieve document van het Ontwerp, &#x200B;](/help/implementing/developing/introduction/responsive-design.md) dat verstrekt en uiteinden voor het gebruiken van lay-outcontainers en ontvankelijk net wanneer het ontwerpen van uw plaats.
 
 ## Overzicht {#overview}
 
-De responsieve Lay-out is een mechanisme om [ ontvankelijk Webontwerp ](https://en.wikipedia.org/wiki/Responsive_web_design) te realiseren. Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
+De responsieve Lay-out is een mechanisme om [&#x200B; ontvankelijk Webontwerp &#x200B;](https://en.wikipedia.org/wiki/Responsive_web_design) te realiseren. Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
 
 AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een combinatie van mechanismen:
 
@@ -50,11 +50,11 @@ Met deze responsieve rastermechanismen kunt u:
 
 >[!NOTE]
 >
->Wanneer het creëren van een plaats van het [ Archetype van het Project ](#addlink) of van het [ StandaardMalplaatje van de Plaats ](#addlink), wordt de ontvankelijke lay-out over het algemeen gevormd. Anders, moet u de component van de Container van de Lay-out [&#128279;](#enable-the-layout-container-component-for-page) voor uw pagina&#39;s activeren.
+>Wanneer het creëren van een plaats van het [&#x200B; Archetype van het Project &#x200B;](#addlink) of van het [&#x200B; StandaardMalplaatje van de Plaats &#x200B;](#addlink), wordt de ontvankelijke lay-out over het algemeen gevormd. Anders, moet u de component van de Container van de Lay-out [&#128279;](#enable-the-layout-container-component-for-page) voor uw pagina&#39;s activeren.
 
 ## De emulator inschakelen {#enabling-emulator}
 
-Het [ Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) en [ StandaardMalplaatje van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) worden reeds toegelaten om de mededinger te gebruiken. Als u uw eigen inhoud hebt ontwikkeld die niet op de Componenten van de Kern of archetype wordt gebaseerd, te zien gelieve het document [ Responsieve Ontwerp ](/help/implementing/developing/introduction/responsive-design.md) voor details op hoe te om uw componenten te ontwikkelen terwijl het leveraging van deze eigenschappen.
+Het [&#x200B; Archetype van het Project &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) en [&#x200B; StandaardMalplaatje van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) worden reeds toegelaten om de mededinger te gebruiken. Als u uw eigen inhoud hebt ontwikkeld die niet op de Componenten van de Kern of archetype wordt gebaseerd, te zien gelieve het document [&#x200B; Responsieve Ontwerp &#x200B;](/help/implementing/developing/introduction/responsive-design.md) voor details op hoe te om uw componenten te ontwikkelen terwijl het leveraging van deze eigenschappen.
 
 ## Lay-outmodus voor uw site activeren {#activate-layout-mode-for-your-site}
 
@@ -160,7 +160,7 @@ De volgende twee voorbeelden illustreren de definitie:
 
 AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, deze moeten voor uw projecten worden omvat.
 
-U moet de bibliotheek van de a [ cliënt ](/help/implementing/developing/introduction/clientlibs.md) tot stand brengen om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
+U moet de bibliotheek van de a [&#x200B; cliënt &#x200B;](/help/implementing/developing/introduction/clientlibs.md) tot stand brengen om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -235,15 +235,15 @@ Voor een effectieve responsieve lay-out moet de auteur van de inhoud instanties 
 
 Auteurs kunnen meer responsieve rasters toevoegen aan de inhoudspagina&#39;s als u de component Layout Container voor uw pagina wilt inschakelen. U kunt dit doen door:
 
-* **via het Milieu van de Auteur** - [ geeft uw paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) uit om de Container van de Lay-out voor een pagina toe te laten.
+* **via het Milieu van de Auteur** - [&#x200B; geeft uw paginasjablonen &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) uit om de Container van de Lay-out voor een pagina toe te laten.
 * **de Definitie van de Component** - Gebruik `allowedComponent` of statisch omvat wanneer het bepalen van de component.
 
 ### Het raster van de container van de layout configureren {#configure-the-grid-of-the-layout-container}
 
-U kunt het aantal kolommen beschikbaar voor elke specifieke instantie van lay-outcontainer [ vormen door uw paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) uit te geven.
+U kunt het aantal kolommen beschikbaar voor elke specifieke instantie van lay-outcontainer [&#x200B; vormen door uw paginasjablonen &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) uit te geven.
 
 ### Geneste responsieve rasters {#nested-responsive-grids}
 
 De aanbevolen werkwijze van Adobe is om de structuur zo vlak mogelijk te houden.
 
-Wanneer u niet kunt vermijden gebruikend genestelde ontvankelijke netten, te zien gelieve het ontwikkelaardocument [ Responsief Ontwerp.](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)
+Wanneer u niet kunt vermijden gebruikend genestelde ontvankelijke netten, te zien gelieve het ontwikkelaardocument [&#x200B; Responsief Ontwerp.](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)

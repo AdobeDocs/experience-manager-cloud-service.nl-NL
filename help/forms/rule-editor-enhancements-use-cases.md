@@ -22,16 +22,16 @@ De onderstaande tabel bevat een overzicht van recente verbeteringen aan de regel
 
 | Verbetering | Beschrijving | Voordelen |
 |---|----|---|
-| [ Bevestiging die gebruikt bevestigt () methode ](#validate-method-in-function-list) | Beschikbaar in de functielijst om afzonderlijke velden, deelvensters of het hele formulier te valideren. | - Kortere validatie op deelvenster-, veld- of formulierniveau <br> - Betere gebruikerservaring met gericht foutbericht <br> - Voorkomt dat er vooruitgang wordt geboekt met onvolledige gegevens <br> - Vermindert de fout bij het verzenden van formulieren |
-| [ Document van de Download van Verslag ](#download-document-of-record) | De functie uit-van-de-doos beschikbaar in de regelredacteur om het Document van Verslag (DoR) te downloaden. | - Geen aangepaste ontwikkeling vereist voor het downloaden van DoR <br> - Consistente downloadervaring in verschillende formulieren |
-| [ Dynamische variabelen ](#support-for-dynamic-variables-in-rules) | Maak regels met variabelen die worden gewijzigd op basis van gebruikersinvoer of andere voorwaarden. | - Maakt flexibele regelvoorwaarden mogelijk <br> - Minder behoefte aan dubbele logica <br> - elimineert de vereiste om verborgen velden te maken |
-| [ Aangepaste op gebeurtenis-gebaseerde regels ](#custom-event-based-rules-support) | Definieer regels die reageren op aangepaste gebeurtenissen buiten de standaardtriggers. | - Biedt ondersteuning voor gevallen van geavanceerd gebruik <br> - Meer controle over wanneer en hoe regels worden uitgevoerd <br> - Verbetert de interactiviteit |
-| [ context-bewuste herhaalbare paneeluitvoering ](#context-based-rule-execution-for-repeatable-panels) | Regels worden nu uitgevoerd in de juiste context voor elk herhaald deelvenster in plaats van alleen voor de laatste instantie. | - Nauwkeurige regeltoepassing voor elke herhalingsinstantie <br> - Vermindert fouten in dynamische secties <br> - Verbetert gebruikerservaring met herhaalde inhoud |
-| [ Steun voor vraagkoord, UTM, en browser parameters ](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Maak regels die het formuliergedrag aanpassen op basis van URL-parameters of browserspecifieke waarden. | - Schakelt personalisatie op basis van bron of omgeving in <br> - Geschikt voor marketing of tracking-specific flows <br> - Geen noodzaak voor extra scripts of aanpassing |
+| [&#x200B; Bevestiging die gebruikt bevestigt () methode &#x200B;](#validate-method-in-function-list) | Beschikbaar in de functielijst om afzonderlijke velden, deelvensters of het hele formulier te valideren. | - Kortere validatie op deelvenster-, veld- of formulierniveau <br> - Betere gebruikerservaring met gericht foutbericht <br> - Voorkomt dat er vooruitgang wordt geboekt met onvolledige gegevens <br> - Vermindert de fout bij het verzenden van formulieren |
+| [&#x200B; Document van de Download van Verslag &#x200B;](#download-document-of-record) | De functie uit-van-de-doos beschikbaar in de regelredacteur om het Document van Verslag (DoR) te downloaden. | - Geen aangepaste ontwikkeling vereist voor het downloaden van DoR <br> - Consistente downloadervaring in verschillende formulieren |
+| [&#x200B; Dynamische variabelen &#x200B;](#support-for-dynamic-variables-in-rules) | Maak regels met variabelen die worden gewijzigd op basis van gebruikersinvoer of andere voorwaarden. | - Maakt flexibele regelvoorwaarden mogelijk <br> - Minder behoefte aan dubbele logica <br> - elimineert de vereiste om verborgen velden te maken |
+| [&#x200B; Aangepaste op gebeurtenis-gebaseerde regels &#x200B;](#custom-event-based-rules-support) | Definieer regels die reageren op aangepaste gebeurtenissen buiten de standaardtriggers. | - Biedt ondersteuning voor gevallen van geavanceerd gebruik <br> - Meer controle over wanneer en hoe regels worden uitgevoerd <br> - Verbetert de interactiviteit |
+| [&#x200B; context-bewuste herhaalbare paneeluitvoering &#x200B;](#context-based-rule-execution-for-repeatable-panels) | Regels worden nu uitgevoerd in de juiste context voor elk herhaald deelvenster in plaats van alleen voor de laatste instantie. | - Nauwkeurige regeltoepassing voor elke herhalingsinstantie <br> - Vermindert fouten in dynamische secties <br> - Verbetert gebruikerservaring met herhaalde inhoud |
+| [&#x200B; Steun voor vraagkoord, UTM, en browser parameters &#x200B;](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Maak regels die het formuliergedrag aanpassen op basis van URL-parameters of browserspecifieke waarden. | - Schakelt personalisatie op basis van bron of omgeving in <br> - Geschikt voor marketing of tracking-specific flows <br> - Geen noodzaak voor extra scripts of aanpassing |
 
 >[!NOTE]
 >
-> De verhogingen zijn ook van toepassing op de [ Redacteur van de Regel van de Diensten Forms van Edge Delivery ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
+> De verhogingen zijn ook van toepassing op de [&#x200B; Redacteur van de Regel van de Diensten Forms van Edge Delivery &#x200B;](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 Verken nu elke methode in detail met specifieke gebruiksgevallen om u te helpen begrijpen hoe deze eigenschappen kunnen worden gebruikt om een gepersonaliseerde ervaring voor gebruikers te leveren
 
@@ -54,11 +54,11 @@ A **Volgende** knoop in elk paneel brengt een regel teweeg gebruikend **bevestig
 
 Het schermafbeelding hieronder toont de regel die op **Volgende** knoop wordt toegepast:
 
-![ bevestigt Volgende Knoop ](/help/forms/assets/validate-next.png)
+![&#x200B; bevestigt Volgende Knoop &#x200B;](/help/forms/assets/validate-next.png)
 
 In de bovengenoemde regel, controleert de **Volgende** knoop of de gebieden in de **Persoonlijke sectie van Details** geldig zijn. Als de details niet geldig zijn, beweegt de nadruk zich aan het **gebied van de Naam** in het **Persoonlijke Details** paneel.
 
-![ output ](/help/forms/assets/valid-output.png)
+![&#x200B; output &#x200B;](/help/forms/assets/valid-output.png)
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ A **de knoop van de Download** wordt toegevoegd aan vorm gebruikend de Redacteur
 
 Het schermafbeelding hieronder toont de regel die op de **downloadt** knoop wordt toegepast:
 
-![ de regel van de Knoop van de Download ](/help/forms/assets/download-button-rule.png)
+![&#x200B; de regel van de Knoop van de Download &#x200B;](/help/forms/assets/download-button-rule.png)
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Het schermafbeelding hieronder toont de regel die op de **downloadt** knoop word
 
 Als het formulier is geconfigureerd voor het genereren van doR, genereert en downloadt deze functie de PDF onmiddellijk, zonder dat er een aangepaste functie nodig is.
 
-![ Document van Verslag ](/help/forms/assets/download-dor-output.png)
+![&#x200B; Document van Verslag &#x200B;](/help/forms/assets/download-dor-output.png)
 
 ## Ondersteuning voor dynamische variabelen in regels
 
@@ -112,19 +112,19 @@ Een regel wordt gevormd op het **fragment van het Adres** gebruikend de **Vastge
 * Als de gebruiker Verenigde Staten selecteert, **extra lading** wordt geplaatst aan 500.
 * Voor om het even welk ander land, **wordt de extra lading** geplaatst aan 100.
 
-![ vastgestelde veranderlijke waarde ](/help/forms/assets/setvalue.png)
+![&#x200B; vastgestelde veranderlijke waarde &#x200B;](/help/forms/assets/setvalue.png)
 
 Later, wanneer de **Totale Kosten van de Verzending** wordt berekend, **krijgt de Veranderlijke functie van de Waarde** wordt gebruikt om de waarde van **extra lading** terug te winnen. Deze waarde wordt toegevoegd aan de **Prijs van het Product × Hoeveelheid van het Product** om het definitieve te betalen bedrag op de knoop te berekenen klikt.
 
-![ krijgt veranderlijke waarde ](/help/forms/assets/getvalue.png)
+![&#x200B; krijgt veranderlijke waarde &#x200B;](/help/forms/assets/getvalue.png)
 
 Het **Totale gebied van de Kosten van de Verzending** werkt dynamisch bij om op zowel de productkosten als de verzendkosten te wijzen aangezien de gebruiker het land of de hoeveelheid verandert.
-![ output ](/help/forms/assets/getsetvalue-output.png)
+![&#x200B; output &#x200B;](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
 > U kunt **ook toevoegen krijgt veranderlijke waarde** functie in wanneer voorwaarde.
-> &#x200B;> ![Hiermee wordt de functie Variabele-waarde opgehaald in Wanneer voorwaarde ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> &#x200B;> ![Hiermee wordt de functie Variabele-waarde opgehaald in Wanneer voorwaarde &#x200B;](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Deze aanpak maakt dynamische, real-time berekeningen mogelijk zonder extra velden aan het formulier toe te voegen, zodat de structuur schoon en gebruiksvriendelijk blijft.
 
@@ -143,15 +143,15 @@ In plaats van het rechtstreeks binden van logica aan de gebieden, gebruikt de vo
 
 Het aanmeldingsfragment wordt aan het formulier toegevoegd, dat vooraf gedefinieerde velden voor Gebruikersnaam en Wachtwoord bevat. Een regel wordt gevormd op **krijgt OTP** knoop om het **Comité van de Bevestiging** te tonen, dat het inputgebied voor het ingaan van en het bevestigen van OTP omvat.
 
-![ krijgt OTP Regel ](/help/forms/assets/get-otp-rule.png)
+![&#x200B; krijgt OTP Regel &#x200B;](/help/forms/assets/get-otp-rule.png)
 
 In het **Comité van de Bevestiging**, wordt een regel gevormd op Validate knoop. API integratie wordt gebruikt om OTP te bevestigen ingegaan op **ga OTP** gebied in. Als de bevestiging succesvol is, wordt a **genoemd** LoggedIn van de Gebeurtenis van de Verzending **&#x200B;**&#x200B;teweeggebracht met de gebeurtenislading die de API reactie bevatten.
 
-![ In de regel van de trekkergebeurtenis ](/help/forms/assets/trigger-event-rule.png)
+![&#x200B; In de regel van de trekkergebeurtenis &#x200B;](/help/forms/assets/trigger-event-rule.png)
 
 Op het vormniveau, wordt een regel gevormd om op de **LoggedIn** gebeurtenis te luisteren. Wanneer deze gebeurtenis wordt teweeggebracht, toont de regel het omleidingsbericht en neemt de gebruiker aan de dashboardpagina.
 
-![ regel van de verzendingsgebeurtenis ](/help/forms/assets/dispatch-event-rule.png)
+![&#x200B; regel van de verzendingsgebeurtenis &#x200B;](/help/forms/assets/dispatch-event-rule.png)
 
 Wanneer de gebruiker het formulier verzendt met de juiste gegevens en een geldige OTP, is de aanmelding gelukt en wordt de gebruiker omgeleid naar het dashboard.
 
@@ -169,11 +169,11 @@ Een regel wordt gevormd op het **Aantal gebied van het Product** binnen het herh
 
 De hieronder screenshot toont de regel voor het **Aantal van het gebied van het Product** binnen het herhaalbare productpaneel:
 
-![ aantal productregel ](/help/forms/assets/number-of-product-rule.png)
+![&#x200B; aantal productregel &#x200B;](/help/forms/assets/number-of-product-rule.png)
 
 Wanneer de hoeveelheid wordt gewijzigd, haalt de regel de eenheidsprijs van het geselecteerde product op en berekent de totale kosten alleen voor dat paneel.
 
-![ Context bewuste regeloutput ](/help/forms/assets/context-aware-rule-output.png)
+![&#x200B; Context bewuste regeloutput &#x200B;](/help/forms/assets/context-aware-rule-output.png)
 
 ## URL- en browserparameterregels in adaptieve Forms
 
@@ -196,11 +196,11 @@ Een regel wordt gevormd op een tekstgebied dat douanebericht aan de gebruikers v
 
 In de onderstaande schermafbeelding wordt de regel weergegeven die op het tekstbericht is geconfigureerd:
 
-![ regel op tekstbericht ](/help/forms/assets/utm-param-rule.png)
+![&#x200B; regel op tekstbericht &#x200B;](/help/forms/assets/utm-param-rule.png)
 
 Als de **utm_source** parameterwaarde &quot;google&quot;evenaart, een douanebericht zoals &quot;de gebruikers van Google van Hello, welkom aan de Campagne Ad!&quot; wordt weergegeven.
 
-![ utm-param-output ](/help/forms/assets/utm-param-output.png)
+![&#x200B; utm-param-output &#x200B;](/help/forms/assets/utm-param-output.png)
 
 Op deze manier kunnen marketers relevante inhoud leveren aan gebruikers op basis van de campagne die hen naar het formulier heeft gebracht zonder dat handmatige invoer van velden of aangepaste scripts vereist zijn.
 

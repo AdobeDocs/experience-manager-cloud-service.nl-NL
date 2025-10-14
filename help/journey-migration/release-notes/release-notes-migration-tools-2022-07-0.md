@@ -60,5 +60,5 @@ De Releasedatum voor Cloud Acceleration Manager is 15 juli 2022.
 
 ### Wat is er nieuw? {#what-is-new-cam}
 
-* Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om het migratietoken handmatig op te halen om een opname te kunnen starten wanneer het automatisch ophalen mislukt. De automatische herwinning kan ontbreken als de klanten opstelling IP allow-list hebben die CAM blokkeert of als een niet-admin gebruiker probeert om een opname te beginnen. Zie [ het Oplossen van problemen ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) voor meer informatie.
+* Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om het migratietoken handmatig op te halen om een opname te kunnen starten wanneer het automatisch ophalen mislukt. De automatische herwinning kan ontbreken als de klanten opstelling IP allow-list hebben die CAM blokkeert of als een niet-admin gebruiker probeert om een opname te beginnen. Zie [&#x200B; het Oplossen van problemen &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) voor meer informatie.
 * Lange tabellen op de pagina Complexiteit migratie kunnen nu worden samengevouwen, zodat u ze eenvoudig kunt gebruiken.

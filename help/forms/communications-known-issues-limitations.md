@@ -23,7 +23,7 @@ Communicatie-API&#39;s accepteren zowel een formulierontwerp dat gewoonlijk in D
 
 Bekijk het volgende voorbeeld van een aanvraagformulier voor een lening:
 
-![ de toepassingsVorm van de Lening ](assets/loanFormData.png)
+![&#x200B; de toepassingsVorm van de Lening &#x200B;](assets/loanFormData.png)
 
 Als u gegevens wilt samenvoegen in dit formulierontwerp, maakt u een XML-gegevensbron die overeenkomt met het formulier. De volgende XML vertegenwoordigt een XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassingsformulier.
 
@@ -73,7 +73,7 @@ Zorg altijd dat u het juiste XDC-bestand voor de printer gebruikt. Vermijd bijvo
 
 ### Scripts voor alleen XFA-formulieren (XDP/PDF) {#scripts}
 
-Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Voor informatie over het creëren van manuscripten van het vormontwerp, zie [ Hulp van Designer ](use-forms-designer.md).
+Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Voor informatie over het creëren van manuscripten van het vormontwerp, zie [&#x200B; Hulp van Designer &#x200B;](use-forms-designer.md).
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
@@ -179,7 +179,7 @@ In de volgende tabel worden XCI-opties opgegeven.
 
 **kan ik een gecontroleerde omslag of andere opslagmechanismen gebruiken om input en output op te slaan?**
 
-Op dit moment kunt u Microsoft Azure Storage gebruiken om invoergegevens en gegenereerde documenten op te slaan. De opslag van Microsoft Azure verstrekt diverse opties om [ verrichtingen van de gegevensbeweging ](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) te automatiseren.
+Op dit moment kunt u Microsoft Azure Storage gebruiken om invoergegevens en gegenereerde documenten op te slaan. De opslag van Microsoft Azure verstrekt diverse opties om [&#x200B; verrichtingen van de gegevensbeweging &#x200B;](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) te automatiseren.
 
 **is een Microsoft Azure rekening van de Opslag inbegrepen met de vergunning van de Cloud Service van Experience Manager Forms?**
 
@@ -208,8 +208,8 @@ Ja, u kunt meerdere batchbewerkingen tegelijk uitvoeren. Gebruik altijd verschil
 
 >[!MORELIKETHIS]
 >
->* [ Inleiding aan de as a Cloud Service Mededelingen van AEM Forms ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [ as a Cloud Service Architectuur van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
->* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
->* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [&#x200B; Inleiding aan de as a Cloud Service Mededelingen van AEM Forms &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [&#x200B; as a Cloud Service Architectuur van AEM Forms voor Adaptieve Forms en Communicatie APIs &#x200B;](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [&#x200B; Communicatie Verwerking - Synchrone APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications.md)
+>* [&#x200B; Communicatie Verwerking - Partij APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Met Adaptive Forms kunt u e-mailsjablonen voor HTML en normale tekst gebruiken. Met e-mailsjablonen voor HTML kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
 
-![ HTML e-mailmalplaatjes ](/help/forms/assets/html-email.png)
+![&#x200B; HTML e-mailmalplaatjes &#x200B;](/help/forms/assets/html-email.png)
 
 Met dit artikel kunt u e-mailsjablonen configureren en gebruiken in Adaptive Forms. Tegen het einde kunt u het volgende doen:
 
@@ -28,13 +28,13 @@ Met dit artikel kunt u e-mailsjablonen configureren en gebruiken in Adaptive For
 Hier volgt een kort overzicht van de betrokken stappen:
 
 1. Open het adaptieve formulier voor bewerking.
-1. Vorm [ verzenden E-mail ](/help/forms/configure-submit-action-send-email.md) voorlegt actie.
+1. Vorm [&#x200B; verzenden E-mail &#x200B;](/help/forms/configure-submit-action-send-email.md) voorlegt actie.
 1. Selecteer of upload een HTML-sjabloon of voer de e-mailsjabloon handmatig in.
 1. Test uw e-mailconfiguratie.
 
 ## Een HTML-sjabloon configureren voor een adaptief formulier
 
-U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie ](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een malplaatje van HTML te vormen:
+U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie &#x200B;](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een malplaatje van HTML te vormen:
 
 ### Optie 1: Een bestand selecteren dat de HTML-sjabloon bevat
 
@@ -44,7 +44,7 @@ Voordat u verdergaat, moet u ervoor zorgen dat u de HTML-sjabloon hebt geüpload
 1. Ga naar **Browser van de Inhoud**, selecteer de **Container van de Gids**, en tik het eigenschappen pictogram. Er wordt een dialoogvenster met de titel `Adaptive Form Container` weergegeven.
 1. Ga naar het **lusje van de Verzending** en selecteer **verzenden e-mail** voorlegt actie.
 
-   ![ verzend e-mail verzendt actie ](/help/forms/assets/send-email-action.png)
+   ![&#x200B; verzend e-mail verzendt actie &#x200B;](/help/forms/assets/send-email-action.png)
 
 1. Laat de **externe malplaatje van het Gebruik** optie toe.
 1. Laat de **HTML malplaatje van het Gebruik** optie toe.
@@ -64,7 +64,7 @@ Uw HTML-sjabloon is nu geconfigureerd voor het adaptieve formulier.
 
 ## Een sjabloon voor normale tekst configureren voor een adaptief formulier
 
-U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie ](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een onbewerkte-tekstmalplaatje te vormen:
+U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie &#x200B;](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een onbewerkte-tekstmalplaatje te vormen:
 
 ### Optie 1: Een bestand selecteren dat de sjabloon bevat
 
@@ -159,4 +159,4 @@ Hier volgt een voorbeeld van een sjabloon voor normale e-mail:
 * Gebruik gereedschappen zoals Litmus of E-mail op zuur om een voorbeeld van uw e-mail te bekijken voor verschillende e-mailclients.
 * Zorg ervoor dat de namen van de plaatsaanduidingen exact overeenkomen met de namen van de formuliervelden.
 * Controleer of er ontbrekende of onjuiste tags voorkomen in uw HTML-sjabloon.
-* Verifieer dat [ verzendt e-mail ](/help/forms/configure-submit-action-send-email.md) verzendt actie correct wordt gevormd.
+* Verifieer dat [&#x200B; verzendt e-mail &#x200B;](/help/forms/configure-submit-action-send-email.md) verzendt actie correct wordt gevormd.

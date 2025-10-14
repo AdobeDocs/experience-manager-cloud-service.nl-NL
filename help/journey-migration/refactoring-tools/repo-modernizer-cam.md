@@ -17,7 +17,7 @@ Repository Modernizer is een hulpprogramma dat is ontwikkeld om bestaande projec
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM-projecten. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om compatibel te zijn met AEM Cloud Service. Op een hoog niveau, vereist AEM een scheiding van **inhoud** en **code** in discrete subpackages om de scheiding tussen veranderlijke en onveranderlijke inhoud te respecteren. Zie [ de Structuur van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) voor meer details over de nieuwe het projectstructuur van AEM voor Cloud Service.
+Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM-projecten. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om compatibel te zijn met AEM Cloud Service. Op een hoog niveau, vereist AEM een scheiding van **inhoud** en **code** in discrete subpackages om de scheiding tussen veranderlijke en onveranderlijke inhoud te respecteren. Zie [&#x200B; de Structuur van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) voor meer details over de nieuwe het projectstructuur van AEM voor Cloud Service.
 
 Met de Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructuur gemaakt door de volgende implementatiestructuur te maken:
 
@@ -29,7 +29,7 @@ Met de Repository Modernizer wordt een compatibele AEM Cloud Service-projectstru
 
 >[!NOTE]
 >
-> De structuur van het Project is gebaseerd op _Archetype 48_ voor pakketten en hun `pom.xml/filter.xml files`. Zie [ Archetype 48 ](https://github.com/adobe/aem-project-archetype) voor meer details.
+> De structuur van het Project is gebaseerd op _Archetype 48_ voor pakketten en hun `pom.xml/filter.xml files`. Zie [&#x200B; Archetype 48 &#x200B;](https://github.com/adobe/aem-project-archetype) voor meer details.
 
 De functie Repository Modernizer ondersteunt nu ook de volgende projecttypen:
 

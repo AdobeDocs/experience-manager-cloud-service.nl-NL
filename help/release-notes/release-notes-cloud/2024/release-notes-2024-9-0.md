@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
+>Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [&#x200B; Update van het Product van de Prioriteit Adobe &#x200B;](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Releasedatum {#release-date}
 
@@ -31,7 +31,7 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
+U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](/help/release-notes/maintenance/latest.md) vinden.
 
 ## Video vrijgeven {#release-video}
 
@@ -51,7 +51,7 @@ AEM-workflows voor vertaling en API-acties activeren nu gebeurtenissen om insigh
 
 **produceer Variaties**
 
-Hefboomgaard GenAI door de nieuwe eigenschap van AEM, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met uw Adobe-accountteam voor hulp in het programma.
+Hefboomgaard GenAI door de nieuwe eigenschap van AEM, [&#x200B; produceert variaties &#x200B;](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met uw Adobe-accountteam voor hulp in het programma.
 
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
@@ -62,18 +62,18 @@ Hefboomgaard GenAI door de nieuwe eigenschap van AEM, [ produceert variaties ](/
 
 Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmatige intelligentie om automatisch bijschriften te genereren voor video-inhoud. Deze functie is ontworpen om de toegankelijkheid te verbeteren en de gebruikerservaring te verbeteren door nauwkeurige, real-time bijschriften te bieden. De AI analyseert de audiotrack van de video om spraak te transcriperen en bijschriften te maken, die kunnen worden bewerkt voor nauwkeurigheid of aanpassing. Deze bijschriften helpen te voldoen aan toegankelijkheidsvereisten en verbeteren de videobetrokkenheid van gebruikers die op tekst gebaseerde videoondersteuning gebruiken of verkiezen.
 
-Om vroege toegang tot AI-Gegenereerde titelsteun op uw Dynamische rekening van Media te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
+Om vroege toegang tot AI-Gegenereerde titelsteun op uw Dynamische rekening van Media te krijgen, [&#x200B; creeer en voorlegt een geval van de Steun van de Klant van Adobe &#x200B;](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nieuwe functies in Asset Selector {#asset-selector-new-features}
 
 Asset Selector biedt nu ondersteuning voor het bladeren in verzamelingen naar het gewenste element.
-![ de selecteursinzamelingen van Activa ](/help/assets/assets/collections-rail-modal-view.png)
+![&#x200B; de selecteursinzamelingen van Activa &#x200B;](/help/assets/assets/collections-rail-modal-view.png)
 
 ### Nieuwe functies in Content Hub {#content-hub-new-features}
 
 Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden.
 
-![ Verlopen activa op Content Hub ](/help/assets/assets/view-download-expired-assets.png)
+![&#x200B; Verlopen activa op Content Hub &#x200B;](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -94,7 +94,7 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
 
 Generative AI voor Adaptive Forms biedt een heel nieuw niveau van kracht en maakt het ontwikkelen van formulieren eenvoudiger. Hierdoor kunt u sneller dan ooit betere formulieren maken.
 
-![ Generatieve AI Medewerker, Aangepaste Forms ](/help/forms/assets/generative-ai-assistant.png)
+![&#x200B; Generatieve AI Medewerker, Aangepaste Forms &#x200B;](/help/forms/assets/generative-ai-assistant.png)
 
 De beschikbare Generative AI-mogelijkheden zijn:
 
@@ -110,7 +110,7 @@ De beschikbare Generative AI-mogelijkheden zijn:
 
 >[!IMPORTANT]
 >
-> Wil je deelnemen aan het programma voor vroege toegang voor Forms-innovatie? Verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden die u in geinteresseerd bent.
+> Wil je deelnemen aan het programma voor vroege toegang voor Forms-innovatie? Verzend een e-mail van uw officieel adres naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden die u in geinteresseerd bent.
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
@@ -130,23 +130,23 @@ De beschikbare Generative AI-mogelijkheden zijn:
 
 ### Edge Side Includes (ESI) voor het laden van dynamische inhoud {#esi}
 
-Adobe beheerde CDN steunt nu [ de Zijde van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl het halen van uit oorsprong die kleinere secties die hogere toegangsupdates (lagere TTLs) vereisen. Dit onderdeel wordt geleidelijk ingevoerd.
+Adobe beheerde CDN steunt nu [&#x200B; de Zijde van Edge omvat (ESI) &#x200B;](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl het halen van uit oorsprong die kleinere secties die hogere toegangsupdates (lagere TTLs) vereisen. Dit onderdeel wordt geleidelijk ingevoerd.
 
 ### Basisverificatie bij de CDN {#basicauth-cdn}
 
-Bescherm bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord zijn vereist. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden wordt beheerd door een configuratiedossier in Git dat via Pijpleiding Config, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Bescherm bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord zijn vereist. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden wordt beheerd door een configuratiedossier in Git dat via Pijpleiding Config, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [&#x200B; leer meer &#x200B;](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 ### Server-kant omleidingen {#server-side-redirects}
 
-Declareer [ browser richt ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) in een Git van het configuratiedossier opnieuw die aan en geëvalueerd bij CDN worden opgesteld. Dit kan handig zijn voor scenario&#39;s zoals het verwijderen van pagina&#39;s, gewijzigde sitestructuur en SEO-optimalisatie.
+Declareer [&#x200B; browser richt &#x200B;](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) in een Git van het configuratiedossier opnieuw die aan en geëvalueerd bij CDN worden opgesteld. Dit kan handig zijn voor scenario&#39;s zoals het verwijderen van pagina&#39;s, gewijzigde sitestructuur en SEO-optimalisatie.
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
-Probeer uit een vernieuwde [ AEM Developer Console ](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
+Probeer uit een vernieuwde [&#x200B; AEM Developer Console &#x200B;](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
 
 Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe verwelkomt feedback, die u via e-mail kunt verzenden naar **<aemcs-new-devconsole-ui-beta@adobe.com>** .
 
-![ het Scherm van Bundles OSGi in AEM Developer Console ](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+![&#x200B; het Scherm van Bundles OSGi in AEM Developer Console &#x200B;](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
 ### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (vroege adopter-programma) {#apache-rewritemaps-early-adopter}
 
@@ -154,28 +154,28 @@ Net als in AEM 6.5 worden door Apache/dispatcher opnieuw toegewezen die op een s
 
 ### Config Pipeline voor RDEs (Vroege Programma van de Aannemer) {#config-pipeline-rdes-early-adopter}
 
-De [ Pijpleiding Config ](/help/operations/config-pipeline.md) wordt gebruikt om uw dossierconfiguraties, met inbegrip van CDN opties (de regels van de verkeersfilter, verzoek/reactietransformaties, etc.) op te stellen. U kunt deelnemen aan het programma voor vroege adoptie door **<aemcs-cdn-config-adopter@adobe.com>** te e-mailen om dezelfde configuraties te implementeren in RDE&#39;s (Rapid Development Environment), die een CLI gebruiken.
+De [&#x200B; Pijpleiding Config &#x200B;](/help/operations/config-pipeline.md) wordt gebruikt om uw dossierconfiguraties, met inbegrip van CDN opties (de regels van de verkeersfilter, verzoek/reactietransformaties, etc.) op te stellen. U kunt deelnemen aan het programma voor vroege adoptie door **<aemcs-cdn-config-adopter@adobe.com>** te e-mailen om dezelfde configuraties te implementeren in RDE&#39;s (Rapid Development Environment), die een CLI gebruiken.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
 
 ## Universele editor {#universal-editor}
 
-U kunt een volledige lijst van Universele versies van de Redacteur [ hier ](/help/release-notes/universal-editor/current.md) vinden.
+U kunt een volledige lijst van Universele versies van de Redacteur [&#x200B; hier &#x200B;](/help/release-notes/universal-editor/current.md) vinden.
 
 ## Variaties genereren {#generate-variations}
 
-U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/generative-ai/release-notes-generate-variations.md) vinden.
+U kunt een volledige lijst van Generate de versies van Variaties [&#x200B; hier &#x200B;](/help/generative-ai/release-notes-generate-variations.md) vinden.
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.

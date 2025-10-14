@@ -27,7 +27,7 @@ Naast het gebruik van de specifieke functie Voorvertoning voor video, centrifuge
 >
 >Wanneer u op een webpagina (Sites) in Adobe Experience Manager werkt, kunt u geen voorvertoning van elementen weergeven in de modus **[!UICONTROL Edit]** . Ga in plaats daarvan naar de modus Voorbeeld door **[!UICONTROL Preview]** in de rechterbovenhoek van de pagina te selecteren.
 
-Om kijkersvoorinstellingen in of onbruikbaar te maken in het gebruikersinterface, zie [ het Leiden Kijker vooraf instelt ](/help/assets/dynamic-media/managing-viewer-presets.md).
+Om kijkersvoorinstellingen in of onbruikbaar te maken in het gebruikersinterface, zie [&#x200B; het Leiden Kijker vooraf instelt &#x200B;](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 **aan voorproefactiva:**
 

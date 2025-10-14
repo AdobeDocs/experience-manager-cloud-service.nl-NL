@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # AEM as a Cloud Service Terminologie {#terminology}
 
-In dit deel van de [ onboarding reis ](overview.md), leert u enkele terminologie van AEM as a Cloud Service en zijn basisstructuur.
+In dit deel van de [&#x200B; onboarding reis &#x200B;](overview.md), leert u enkele terminologie van AEM as a Cloud Service en zijn basisstructuur.
 
 ## Doelstelling {#objective}
 
-Nu u begrijpt wat tot het onboarding proces door het document [ onboarding Voorbereiding ](preparation.md) heeft geleid te lezen, is het nuttig om enkele terminologie van het systeem en zijn basisstructuur te begrijpen alvorens het programma te openen.
+Nu u begrijpt wat tot het onboarding proces door het document [&#x200B; onboarding Voorbereiding &#x200B;](preparation.md) heeft geleid te lezen, is het nuttig om enkele terminologie van het systeem en zijn basisstructuur te begrijpen alvorens het programma te openen.
 
 AEM as a Cloud Service is een krachtig en flexibel hulpmiddel en om elk hulpmiddel te gebruiken dat u zou moeten kennen met zijn organisatie en de terminologie en de taal die worden gebruikt om het te beschrijven. Dit document bevat een overzicht van enkele belangrijke termen die u moet begrijpen voordat u het systeem gaat gebruiken.
 
@@ -30,7 +30,7 @@ Nadat u dit document hebt gelezen, moet u
 
 Voor deze instapreis is een volledig begrip van de structuur van AEM as a Cloud Service niet nodig. Maar door de kennis van de volgende concepten is het gemakkelijker om later op de reis verder te gaan.
 
-![ structuur van Cloud Manager ](/help/journey-sites/quick-site/assets/cloud-manager-structure.png)
+![&#x200B; structuur van Cloud Manager &#x200B;](/help/journey-sites/quick-site/assets/cloud-manager-structure.png)
 
 * **TENANT** - elke klant wordt provisioned met een huurder. Een huurder wordt ook wel IMS org genoemd (meer op IMS later in deze reis)
 * **PROGRAMMA&#39;S** - elke huurder heeft één of meerdere programma&#39;s, die vaak op de gelicentieerde oplossingen van de klant wijzen.
@@ -55,4 +55,4 @@ Nu u dit deel van de AEM onboarding trip hebt voltooid, moet u begrijpen:
 * De verschillende lagen waaruit AEMaaCS bestaat.
 * De basisbeginselen van wat elke laag doet.
 
-Bouw op deze kennis voort en ga uw AEM reis op het instappen door het document [ te lezen dat tot de Admin Console ](admin-console.md) toegang heeft, waar u leert hoe toegang tot de console en uw status als systeembeheerder verifieert.
+Bouw op deze kennis voort en ga uw AEM reis op het instappen door het document [&#x200B; te lezen dat tot de Admin Console &#x200B;](admin-console.md) toegang heeft, waar u leert hoe toegang tot de console en uw status als systeembeheerder verifieert.

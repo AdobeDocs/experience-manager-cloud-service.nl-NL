@@ -18,7 +18,7 @@ Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde
 
 Met de optie [Gebruiker](#user-settings) in de [koptekst](/help/sites-cloud/authoring/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#my-preferences) kunt u uw gebruikersopties wijzigen, zoals
 
-Begin door tot de [ optie van de Gebruiker ](#user-settings) in de kopbal toegang te hebben.
+Begin door tot de [&#x200B; optie van de Gebruiker &#x200B;](#user-settings) in de kopbal toegang te hebben.
 
 ## Gebruikersinstellingen {#user-settings}
 
@@ -31,15 +31,15 @@ Het **de montagedialoog van de Gebruiker** geeft u toegang tot:
 * [Mijn voorkeuren](#my-preferences)
    * Verschillende voorkeursinstellingen opgeven die uniek zijn voor uw gebruiker
 
-![ montages van de Gebruiker ](/help/sites-cloud/authoring/assets/user-settings.png)
+![&#x200B; montages van de Gebruiker &#x200B;](/help/sites-cloud/authoring/assets/user-settings.png)
 
 ### Mijn voorkeuren {#my-preferences}
 
-Het **Mijn de dialoogvakje van de Voorkeur** wordt betreden als [ gebruiker ](#user-settings) optie in de kopbal.
+Het **Mijn de dialoogvakje van de Voorkeur** wordt betreden als [&#x200B; gebruiker &#x200B;](#user-settings) optie in de kopbal.
 
 Elke gebruiker kan zijn eigen voorkeurseigenschappen instellen.
 
-![ Mijn Voorkeur ](/help/sites-cloud/authoring/assets/user-preferences.png)
+![&#x200B; Mijn Voorkeur &#x200B;](/help/sites-cloud/authoring/assets/user-preferences.png)
 
 * **Taal**
 
@@ -96,4 +96,4 @@ Elke gebruiker kan zijn eigen voorkeurseigenschappen instellen.
 
 * **Configuratie van de Beeld**
 
-  Deze optie laat u de aangewezen configuratie van Adobe Stock specificeren en is slechts beschikbaar als uw systeembeheerder [ integratie van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md) heeft toegelaten.
+  Deze optie laat u de aangewezen configuratie van Adobe Stock specificeren en is slechts beschikbaar als uw systeembeheerder [&#x200B; integratie van Adobe Stock &#x200B;](/help/assets/aem-assets-adobe-stock.md) heeft toegelaten.

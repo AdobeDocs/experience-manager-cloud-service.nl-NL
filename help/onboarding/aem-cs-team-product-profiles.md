@@ -18,7 +18,7 @@ Leer hoe AEM as a Cloud Service-team en productprofielen toegang tot uw Adobe-op
 
 ## Productprofielen {#profiles}
 
-Wanneer u een gebruiker toegang geeft tot een specifieke Adobe-oplossing, wilt u deze niet altijd volledige toegang geven. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersrechten. Deze zijn beschikbaar en toegankelijk via [ Admin Console ](/help/journey-onboarding/admin-console.md).
+Wanneer u een gebruiker toegang geeft tot een specifieke Adobe-oplossing, wilt u deze niet altijd volledige toegang geven. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersrechten. Deze zijn beschikbaar en toegankelijk via [&#x200B; Admin Console &#x200B;](/help/journey-onboarding/admin-console.md).
 
 De Adobe Admin Console heeft een gestructureerde hiërarchie van product, productinstanties, en productprofielen waar de interne gebruikers van een organisatie kunnen worden toegewezen lidmaatschap, die hen toegang tot de oplossingen en de eigenschappen geven die zijn vergunning gegeven.
 
@@ -34,13 +34,13 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 ## AEM as a Cloud Service-productprofielen {#aem-product-profiles}
 
-AEM as a Cloud Service is een volledig &#39;cloud-native&#39; aanbod dat AEM als service biedt. Het biedt AEM op een native manier in de cloud, met nieuwe kenmerken zoals altijd ingeschakeld, altijd actueel, altijd veilig en altijd op schaal. Tegelijkertijd behoudt het de belangrijkste waardestelling die AEM biedt als aanpasbaar platform voor klanten en stelt het teams op bedrijfsniveau in staat in hun ontwikkelings- en leveringsprocedure te integreren. Zie [ Inleiding aan Adobe Experience Manager as a Cloud Service ](/help/overview/introduction.md) om meer over AEM as a Cloud Service te leren.
+AEM as a Cloud Service is een volledig &#39;cloud-native&#39; aanbod dat AEM als service biedt. Het biedt AEM op een native manier in de cloud, met nieuwe kenmerken zoals altijd ingeschakeld, altijd actueel, altijd veilig en altijd op schaal. Tegelijkertijd behoudt het de belangrijkste waardestelling die AEM biedt als aanpasbaar platform voor klanten en stelt het teams op bedrijfsniveau in staat in hun ontwikkelings- en leveringsprocedure te integreren. Zie [&#x200B; Inleiding aan Adobe Experience Manager as a Cloud Service &#x200B;](/help/overview/introduction.md) om meer over AEM as a Cloud Service te leren.
 
 ### Productinstanties op organisatieniveau {#org-level-product-instances}
 
 >[!NOTE]
 >
-> Sommige productinstanties en productprofielen die in dit artikel worden beschreven, worden mogelijk alleen weergegeven voor nieuwe omgevingen. Zie [ Toevoegend de Profielen van het Product voor Bestaande sectie van Milieu ](#adding-product-profiles-for-existing-environments) voor hoe te om uw milieu&#39;s te moderniseren.
+> Sommige productinstanties en productprofielen die in dit artikel worden beschreven, worden mogelijk alleen weergegeven voor nieuwe omgevingen. Zie [&#x200B; Toevoegend de Profielen van het Product voor Bestaande sectie van Milieu &#x200B;](#adding-product-profiles-for-existing-environments) voor hoe te om uw milieu&#39;s te moderniseren.
 
 Als Adobe voor het eerst licenties voor een AEM-oplossing verwerkt, verschijnen er twee Product Instances in Adobe Admin Console, onder het Adobe Experience Manager as a Cloud Service-product:
 
@@ -53,23 +53,23 @@ Als Adobe voor het eerst licenties voor een AEM-oplossing verwerkt, verschijnen 
 >For existing programs, the AEM Org-Level Product Instance is created upon selecting the **Update product** profiles action for a given environment.
 -->
 
-![ of de Instanties van het Product van het Niveau ](/help/onboarding/assets/orglevel.png)
+![&#x200B; of de Instanties van het Product van het Niveau &#x200B;](/help/onboarding/assets/orglevel.png)
 
 In de AEM Org-Level Product Instance bevindt zich een productprofiel met de naam AEM Org-Level Reporters, dat momenteel niet wordt gebruikt, maar in de toekomst wel toegang kan vertegenwoordigen tot het ophalen van informatie over AEM-productlicenties.
 
 Wanneer een Forms Communication Solution een licentie heeft, wordt een overeenkomstig productprofiel ook weergegeven onder de AEM Org-Level Product Instance.
 
-![ Profiel van het Product van Reporters ](/help/onboarding/assets/org-level-reporters.png)
+![&#x200B; Profiel van het Product van Reporters &#x200B;](/help/onboarding/assets/org-level-reporters.png)
 
 ### Product-instanties op milieuniveau en op niveau van niveaus {#environment-and-tier-level-product-instances}
 
 Nadat u nieuwe programma&#39;s hebt voorzien in een of meer AEM-omgevingen, worden per omgeving twee Product-instanties weergegeven die productprofielen bevatten voor auteur en publiceren.
 
-![ Instanties van het Product van het Milieu ](/help/onboarding/assets/env-productinstances.png)
+![&#x200B; Instanties van het Product van het Milieu &#x200B;](/help/onboarding/assets/env-productinstances.png)
 
 Hieronder vindt u de productprofielen in een productinstantie van de auteur voor een organisatie die een omgeving heeft ingericht in een programma met AEM Sites:
 
-![ Instanties van het Product van Plaatsen ](/help/onboarding/assets/sites-product-instances.png)
+![&#x200B; Instanties van het Product van Plaatsen &#x200B;](/help/onboarding/assets/sites-product-instances.png)
 
 In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een specifieke instantie van het product die specifiek is voor de omgeving.
 
@@ -254,11 +254,11 @@ Merk op dat elk Profiel van het Product een bijbehorende Dienst van het Profiel 
 
 De AEM-groep in AEM die aan de service is gekoppeld, heeft de geaggregeerde set gebruikers die in alle bijbehorende productprofielen van die service voor die combinatie op milieuniveau bestaan.
 
-![ de Diensten ](/help/onboarding/assets/services.png)
+![&#x200B; de Diensten &#x200B;](/help/onboarding/assets/services.png)
 
 In de volgende afbeelding ziet u de AEM-groepen die overeenkomen met de productprofiel en service van de auteur van AEM Sites Content Managers.
 
-![ Groep van AEM aan de afbeelding van de Dienst ](/help/onboarding/assets/profile-to-service-mapping.png)
+![&#x200B; Groep van AEM aan de afbeelding van de Dienst &#x200B;](/help/onboarding/assets/profile-to-service-mapping.png)
 
 >[!NOTE]
 >
@@ -272,8 +272,8 @@ In de volgende afbeelding ziet u de AEM-groepen die overeenkomen met de productp
 
 >[!TIP]
 >
->* Meer over het productprofielen van AEM leren, zie [ Toewijzend de Profielen van het Product van AEM ](/help/journey-onboarding/assign-profiles-aem.md).
->* Voor meer informatie over het onboarding proces, zie [ onboarding reis ](/help/journey-onboarding/overview.md).
+>* Meer over het productprofielen van AEM leren, zie [&#x200B; Toewijzend de Profielen van het Product van AEM &#x200B;](/help/journey-onboarding/assign-profiles-aem.md).
+>* Voor meer informatie over het onboarding proces, zie [&#x200B; onboarding reis &#x200B;](/help/journey-onboarding/overview.md).
 
 ### Productprofielen toevoegen voor bestaande omgevingen {#adding-product-profiles-for-existing-environments}
 
@@ -281,15 +281,15 @@ In omgevingen die vóór begin april 2024 zijn gemaakt, ontbreken mogelijk de in
 
 Als voor een of meer omgevingen in een programma de productprofielen moeten worden bijgewerkt, geeft Cloud Manager de onderstaande kennisgeving weer. Merk op dat een milieu op de recentste versie van AEM moet zijn alvorens zijn productprofielen kunnen worden bijgewerkt.
 
-![ Moderniseer de Profielen van het Product ](/help/onboarding/assets/modernize-product-profiles.png)
+![&#x200B; Moderniseer de Profielen van het Product &#x200B;](/help/onboarding/assets/modernize-product-profiles.png)
 
 Het klikken **voegt de knoop van Profielen van het Product** toe zal een menu openen dat opties toont om nieuwe productprofielen aan alle milieu&#39;s toe te voegen beschikbaar in het programma of de individuele milieu&#39;s.
 
-![ vervang Milieu&#39;s ](/help/onboarding/assets/choose-env-r.png)
+![&#x200B; vervang Milieu&#39;s &#x200B;](/help/onboarding/assets/choose-env-r.png)
 
 Klik **Alle Milieu&#39;s** om de nieuwe productprofielen aan alle milieu&#39;s in het programma toe te voegen. Alternatief, klik **Individuele Milieu&#39;s** om de nieuwe productprofielen aan geselecteerde milieu&#39;s toe te voegen; dit navigeert de gebruiker aan een milieu&#39;s die pagina van een lijst maken, waar **toevoegen de actie van de Profielen van het Product** van het **Meer pictogram van Opties** kan worden geselecteerd.
 
-![ Individuele Milieu&#39;s ](/help/onboarding/assets/individual-environments.png)
+![&#x200B; Individuele Milieu&#39;s &#x200B;](/help/onboarding/assets/individual-environments.png)
 
 U kunt productprofielen ook toevoegen aan geselecteerde omgevingen door naar de sectie Omgeving van de pagina Programmaoverzicht te navigeren, op het pictogram Meer opties voor een omgeving te klikken en Productprofielen toevoegen te selecteren.
 
@@ -302,7 +302,7 @@ Cloud Manager beschikt over vooraf geconfigureerde productprofielen die kunnen w
 
 >[!TIP]
 >
->Zie [ Rol Gebaseerde Toestemmingen in Cloud Manager ](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) voor meer details.
+>Zie [&#x200B; Rol Gebaseerde Toestemmingen in Cloud Manager &#x200B;](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) voor meer details.
 
 Aan elk van de productprofielen zijn specifieke machtigingen gekoppeld.
 
@@ -333,5 +333,5 @@ Uw Cloud Manager-team omvat ten minste:
 
 >[!TIP]
 >
->* Meer over het productprofielen van Cloud Manager leren, zie [ Toewijzend de Leden van het Team aan de Profielen van het Product van Cloud Manager ](/help/journey-onboarding/assign-profiles-cloud-manager.md).
->* Voor meer informatie over het onboarding proces, zie [ onboarding reis ](/help/journey-onboarding/overview.md).
+>* Meer over het productprofielen van Cloud Manager leren, zie [&#x200B; Toewijzend de Leden van het Team aan de Profielen van het Product van Cloud Manager &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Voor meer informatie over het onboarding proces, zie [&#x200B; onboarding reis &#x200B;](/help/journey-onboarding/overview.md).

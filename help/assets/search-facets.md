@@ -15,7 +15,7 @@ ht-degree: 13%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Een bedrijfsbrede implementatie van Adobe Experience Manager Assets heeft de mogelijkheid om veel assets op te slaan. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden als u alleen de algemene zoekmogelijkheden van Experience Manager gebruikt.
@@ -33,36 +33,36 @@ De zoekfacetten die in het deelvenster Filters worden weergegeven, worden in het
 Voor zoekopdrachten in volledige tekst voegt u de `Fulltext` voorspelling toe aan het formulier. Gebruik de voorspelling van de eigenschap om te zoeken naar elementen die overeenkomen met één eigenschap die u opgeeft. Gebruik de voorspelling Opties om te zoeken in elementen die overeenkomen met een of meer waarden voor een bepaalde eigenschap. Voeg de Datumbereik-voorspelling toe aan zoekelementen die binnen een opgegeven datumbereik zijn gemaakt.
 
 1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]** .
-1. Van de pagina van Forms van het Onderzoek, uitgezocht **[!UICONTROL Assets Admin Search Rail]**, dan uitgezocht **&#x200B;**&#x200B;![ aemassets_edit ](assets/aemassets_edit.png).
+1. Van de pagina van Forms van het Onderzoek, uitgezocht **[!UICONTROL Assets Admin Search Rail]**, dan uitgezocht **&#x200B;**&#x200B;![&#x200B; aemassets_edit &#x200B;](assets/aemassets_edit.png).
 
-   ![ plaats en selecteer de Rail van het Onderzoek van Admin van Assets ](assets/assets_admin_searchrail.png)
+   ![&#x200B; plaats en selecteer de Rail van het Onderzoek van Admin van Assets &#x200B;](assets/assets_admin_searchrail.png)
 
 1. Sleep op de pagina Zoeken in Forms bewerken een voorspelling van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster. Sleep bijvoorbeeld **[!UICONTROL Property Predicate]** .
 
-   ![ Uitgezocht en beweeg predikaat om de onderzoeksfilters ](assets/drag_predicate.png) aan te passen
+   ![&#x200B; Uitgezocht en beweeg predikaat om de onderzoeksfilters &#x200B;](assets/drag_predicate.png) aan te passen
 
    *Cijfer: Selecteer en verplaats predikaat om de onderzoeksfilters aan te passen.*
 
 1. Voer op het tabblad Instellingen een veldlabel, plaatsaanduidingstekst en beschrijving voor de voorspelling in. Geef een geldige naam op voor de eigenschap metadata die u aan de voorspelling wilt koppelen. Het koptekstlabel op het tabblad Instellingen geeft het type van de geselecteerde voorspelling aan.
 
-   ![ Gebruik het lusje van Montages om de vereiste opties van te verstrekken predikaat ](assets/settings.png)
+   ![&#x200B; Gebruik het lusje van Montages om de vereiste opties van te verstrekken predikaat &#x200B;](assets/settings.png)
 
    *Cijfer: Gebruik het lusje van Montages om de vereiste opties van te verstrekken predikaat.*
 
 1. Geef in het veld **[!UICONTROL Property Name]** een geldige naam op voor de metadata-eigenschap die u aan het predicaat wilt koppelen. Dit is de naam op basis waarvan de zoekopdracht wordt uitgevoerd. Voer bijvoorbeeld `jcr:content/metadata/dc:description` of `./jcr:content/metadata/dc:description` in. U kunt ook een bestaand knooppunt selecteren in het dialoogvenster Selecteren.
 
-   ![ associeer een meta-gegevensbezit met predikaat op het gebied van de Naam van het Bezit ](assets/property_settings.png)
+   ![&#x200B; associeer een meta-gegevensbezit met predikaat op het gebied van de Naam van het Bezit &#x200B;](assets/property_settings.png)
 
    *Cijfer: Koppel een meta-gegevensbezit met predikaat op het gebied van de Naam van het Bezit.*
 
-1. Klik de **[!UICONTROL Preview]** ![ voorproef ](assets/preview.png) om een voorproef van het paneel van Filters te produceren aangezien het verschijnt nadat u predikaat toevoegt.
+1. Klik de **[!UICONTROL Preview]** ![&#x200B; voorproef &#x200B;](assets/preview.png) om een voorproef van het paneel van Filters te produceren aangezien het verschijnt nadat u predikaat toevoegt.
 1. Bekijk de lay-out van de voorspelling in de modus Voorbeeld.
 
-   ![ Voorproef de onderzoeksvorm alvorens de veranderingen voor te leggen ](assets/preview-1.png)
+   ![&#x200B; Voorproef de onderzoeksvorm alvorens de veranderingen voor te leggen &#x200B;](assets/preview-1.png)
 
    Voorbeeld van het zoekformulier bekijken voordat de wijzigingen worden verzonden
 
-1. Om de voorproef te sluiten, klik **[!UICONTROL Close]** ![ dicht ](assets/do-not-localize/close_icon.png) op de hoger-juiste hoek van de voorproef.
+1. Om de voorproef te sluiten, klik **[!UICONTROL Close]** ![&#x200B; dicht &#x200B;](assets/do-not-localize/close_icon.png) op de hoger-juiste hoek van de voorproef.
 1. Selecteer **[!UICONTROL Done]** om de instellingen op te slaan.
 1. Navigeer naar het deelvenster Zoeken in de gebruikersinterface van Assets. De voorspelling van de eigenschap wordt toegevoegd aan het deelvenster.
 1. Voer in het tekstvak een beschrijving in voor het element dat u wilt doorzoeken. Voer bijvoorbeeld &quot;Adobe&quot; in. Wanneer u een zoekopdracht uitvoert, worden elementen met een beschrijving die overeenkomt met &quot;Adobe&quot;, weergegeven in de zoekresultaten.
@@ -108,11 +108,11 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 1. Voer een van de volgende handelingen uit:
 
    * Geef in het veld **[!UICONTROL Property Name]** het pad van het JSON-bestand op, waarin u de knooppunten voor de opties definieert en corresponderende sleutelwaardeparen opgeeft.
-   * Selecteer ![ Assets voegt pictogram ](assets/do-not-localize/aem_assets_add_icon.png) naast het gebied van Opties toe om de vertoningstekst en de waarde voor de opties te specificeren u in het paneel van Filters wilt leveren. Om een andere optie toe te voegen, voegt de uitgezochte ![ Assets pictogram ](assets/do-not-localize/aem_assets_add_icon.png) toe en herhaalt de stap.
+   * Selecteer ![&#x200B; Assets voegt pictogram &#x200B;](assets/do-not-localize/aem_assets_add_icon.png) naast het gebied van Opties toe om de vertoningstekst en de waarde voor de opties te specificeren u in het paneel van Filters wilt leveren. Om een andere optie toe te voegen, voegt de uitgezochte ![&#x200B; Assets pictogram &#x200B;](assets/do-not-localize/aem_assets_add_icon.png) toe en herhaalt de stap.
 
 1. Zorg ervoor dat **[!UICONTROL Single Select]** is uitgeschakeld, zodat de gebruiker meerdere opties voor bestandstypen tegelijk kan selecteren (bijvoorbeeld Afbeeldingen, Documenten, Multimedia en Archieven). Als u **[!UICONTROL Single Select]** selecteert, kan de gebruiker slechts één optie tegelijk selecteren voor bestandstypen.
 
-   ![ de beschikbare gebieden in de Opties voorspellen ](assets/options_predicate.png)
+   ![&#x200B; de beschikbare gebieden in de Opties voorspellen &#x200B;](assets/options_predicate.png)
 
    De beschikbare velden in de voorspelling Opties
 
@@ -124,7 +124,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 Met de voorspelling `Multi Value Property` kunt u elementen zoeken naar meerdere waarden. Neem bijvoorbeeld een scenario waarin u afbeeldingen van meerdere producten in [!DNL Assets] hebt en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
 
 1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]** .
-1. Voor de pagina van Forms van het Onderzoek, uitgezocht **[!UICONTROL Assets Admin Search Rail]**, geeft uitgezocht **&#x200B;**&#x200B;![ aemassets_edit ](assets/aemassets_edit.png) uit.
+1. Voor de pagina van Forms van het Onderzoek, uitgezocht **[!UICONTROL Assets Admin Search Rail]**, geeft uitgezocht **&#x200B;**&#x200B;![&#x200B; aemassets_edit &#x200B;](assets/aemassets_edit.png) uit.
 1. Sleep op de pagina Zoekformulier bewerken een **[!UICONTROL Multi Value Property Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. Voer op het tabblad **[!UICONTROL Settings]** een label en plaatsaanduidingstekst in voor de voorspelling. Geef de naam van de eigenschap op op basis waarvan de zoekopdracht in het eigenschapveld moet worden uitgevoerd, bijvoorbeeld `jcr:content/metadata/dc:value` . U kunt ook een knooppunt selecteren in het dialoogvenster Selecteren.
 1. Zorg ervoor dat **[!UICONTROL Delimiter Support]** is geselecteerd. Geef in het veld **[!UICONTROL Input Delimiters]** scheidingstekens op om afzonderlijke waarden van elkaar te scheiden. Standaard wordt een komma opgegeven als scheidingsteken. U kunt een ander scheidingsteken opgeven.
@@ -137,13 +137,13 @@ Met de voorspelling `Multi Value Property` kunt u elementen zoeken naar meerdere
 Met de voorspelling `Tags` kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard zoekt [!DNL Assets] naar elementen op basis van de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
 
 1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]** .
-1. Van de pagina van Forms van het Onderzoek, selecteer **[!UICONTROL Assets Admin Search Rail]** en selecteer dan **uitgeven** ![ aemassets_edit ](assets/aemassets_edit.png).
+1. Van de pagina van Forms van het Onderzoek, selecteer **[!UICONTROL Assets Admin Search Rail]** en selecteer dan **uitgeven** ![&#x200B; aemassets_edit &#x200B;](assets/aemassets_edit.png).
 1. Op de pagina Zoekformulier bewerken sleept u **[!UICONTROL Tags Predicate]** van het tabblad Voorspelling selecteren naar het hoofdvenster.
 1. Voer op het tabblad Instellingen een plaatsaanduidingstekst in voor de voorspelling. Geef de naam van de eigenschap op op basis waarvan de zoekopdracht in het eigenschapveld moet worden uitgevoerd, bijvoorbeeld `jcr:content/metadata/cq:tags` . U kunt ook een knooppunt in CRXDE selecteren in het dialoogvenster Selecteren.
 1. Configureer de padeigenschap Root-tags van deze voorspelling om verschillende tags in de lijst Tags te vullen.
 1. Selecteer **[!UICONTROL Show match all tags option]** om te zoeken naar assets die alle tags bevatten die u opgeeft.
 
-   ![ Typische montages van Markeringen voorspellen ](assets/tags_predicate.png)
+   ![&#x200B; Typische montages van Markeringen voorspellen &#x200B;](assets/tags_predicate.png)
 
 1. Voer in het veld **[!UICONTROL Description]** een optionele beschrijving in en selecteer vervolgens **[!UICONTROL Done]** .
 1. Navigeer naar het deelvenster Zoeken. De voorspelling **[!UICONTROL Tags]** wordt toegevoegd aan het deelvenster Zoeken.
@@ -152,7 +152,7 @@ Met de voorspelling `Tags` kunt u op tags gebaseerde zoekopdrachten naar element
 
 U kunt de codestructuur in oplopende of aflopende volgorde sorteren op basis van de datum **[!UICONTROL Name]** (alfabetische volgorde), **[!UICONTROL Created]** date of **[!UICONTROL Modified]** . In de volgende afbeelding wordt de codestructuur alfabetisch gesorteerd op basis van de **[!UICONTROL Name]** .
 
-![ toe:voegen-markeringen ](assets/add-tags-to-asset.png)
+![&#x200B; toe:voegen-markeringen &#x200B;](assets/add-tags-to-asset.png)
 
 
 ## Andere voorspellingen toevoegen {#adding-other-predicates}
@@ -325,7 +325,7 @@ Het vergrendelingspictogram tegen een optie op de pagina Zoeken in Forms geeft a
 Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 
 1. Selecteer **[!UICONTROL Assets Admin Search Rail]** op de pagina van **[!UICONTROL Search Forms]** .
-1. Selecteer **[!UICONTROL Delete]** ![ schrappingspictogram ](assets/do-not-localize/deleteoutline.png) in de toolbar.
+1. Selecteer **[!UICONTROL Delete]** ![&#x200B; schrappingspictogram &#x200B;](assets/do-not-localize/deleteoutline.png) in de toolbar.
 1. Selecteer **[!UICONTROL Delete]** in het bevestigingsvenster om de aangepaste wijzigingen te verwijderen.
 
    Nadat u de aangepaste wijzigingen in zoekfacetten hebt verwijderd, verschijnt het vergrendelingspictogram opnieuw vóór **[!UICONTROL Assets Admin Search Rail]** op de pagina **[!UICONTROL Search Forms]**.
@@ -342,7 +342,7 @@ Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigi
 
 **zie ook**
 
-* [ beste praktijken van het Onderzoek ](search-best-practices.md)
+* [&#x200B; beste praktijken van het Onderzoek &#x200B;](search-best-practices.md)
 * [Assets vertalen](translate-assets.md)
 * [ASSETS HTTP API](mac-api-assets.md)
 * [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
@@ -358,4 +358,4 @@ Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigi
 
 >[!MORELIKETHIS]
 >
->* [ Onderzoek digitale activa ](search-assets.md).
+>* [&#x200B; Onderzoek digitale activa &#x200B;](search-assets.md).

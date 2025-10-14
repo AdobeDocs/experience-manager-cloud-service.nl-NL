@@ -50,7 +50,7 @@ Zorg ervoor dat u het volgende hebt voordat u begint:
 
 ## Waarom gebruik je reCAPTCHA in je Forms?
 
-| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ Ervaring van 0&rbrace; Gebruiker](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
+| ![&#x200B; Veiligheid &#x200B;](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![&#x200B; Bot Bescherming &#x200B;](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![&#x200B; Ervaring van 0&rbrace; Gebruiker](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **Verbeterde Veiligheid** | **Bot &amp; Preventie Spam** | **Naadloze Ervaring van de Gebruiker** |
 | Formulieren beschermen tegen frauduleuze activiteiten en aanvallen | Voorkomen dat automatische bots formulieren verzenden | Onzichtbare reCAPTCHA verstoort legitieme gebruikers niet |
@@ -116,7 +116,7 @@ Edge Delivery Services Forms ondersteunt twee Google reCAPTCHA-opties. Gebruik d
 **Opstelling:**
 
 1. Een Google Cloud-project maken of selecteren
-   - Ga naar [ Google Cloud Console ](https://console.cloud.google.com/)
+   - Ga naar [&#x200B; Google Cloud Console &#x200B;](https://console.cloud.google.com/)
    - Een nieuw project maken of een bestaand project selecteren
    - Noteer uw project-id
 
@@ -148,7 +148,7 @@ Edge Delivery Services Forms ondersteunt twee Google reCAPTCHA-opties. Gebruik d
 
 +++ Stap 2: AEM Cloud Configuration Container configureren
 
-![ de geleidelijke opstelling van de wolkenconfiguratie ](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
+![&#x200B; de geleidelijke opstelling van de wolkenconfiguratie &#x200B;](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
 *Cijfer: Het toelaten van wolkenconfiguraties voor uw vormcontainer*
 
 **Opstelling:**
@@ -176,7 +176,7 @@ Edge Delivery Services Forms ondersteunt twee Google reCAPTCHA-opties. Gebruik d
 
 +++ Stap 3: Configureer de reCAPTCHA Enterprise Service in AEM
 
-![ reCAPTCHA het configuratiescherm van de Onderneming ](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+![&#x200B; reCAPTCHA het configuratiescherm van de Onderneming &#x200B;](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
 *Cijfer: reCAPTCHA de configuratieinterface van de Onderneming in AEM*
 
 **Configuratie:**
@@ -227,7 +227,7 @@ Edge Delivery Services Forms ondersteunt twee Google reCAPTCHA-opties. Gebruik d
 
 1. Google reCAPTCHA-console openen
 
-   - Ga naar [ Google reCAPTCHA Admin Console ](https://www.google.com/recaptcha/admin)
+   - Ga naar [&#x200B; Google reCAPTCHA Admin Console &#x200B;](https://www.google.com/recaptcha/admin)
    - Aanmelden met uw Google-account
 
 2. Nieuwe site maken
@@ -269,7 +269,7 @@ Volg hetzelfde proces als in de Enterprise-instelling:
 
 +++Stap 3: Configureer de standaardservice reCAPTCHA in AEM (zie details)
 
-![ reCAPTCHA Standaard configuratiescherm ](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
+![&#x200B; reCAPTCHA Standaard configuratiescherm &#x200B;](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *Cijfer: reCAPTCHA Standaard configuratieinterface in AEM*
 
 **Configuratie:**
@@ -309,7 +309,7 @@ Volg hetzelfde proces als in de Enterprise-instelling:
 
 Nadat u de service reCAPTCHA hebt geconfigureerd, voegt u als volgt beveiliging toe aan uw formulier:
 
-![ Toevoegend de reCAPTCHA component aan een vorm ](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
+![&#x200B; Toevoegend de reCAPTCHA component aan een vorm &#x200B;](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *Figuur: Het toevoegen van de Onzichtbare component Captcha aan uw vorm*
 
 +++&#x200B;1. Formulier openen in Universal Editor

@@ -27,7 +27,7 @@ ht-degree: 1%
 
 Gebruik het gereedschap Refactoring om uw code te migreren voor compatibiliteit met AEM as a Cloud Service.
 
-1. Als u nog geen CAM project hebt gecreeerd, verwijs naar [ Creërend en Lerend een Project in CAM ](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
+1. Als u nog geen CAM project hebt gecreeerd, verwijs naar [&#x200B; Creërend en Lerend een Project in CAM &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
 1. Klik de **Refactoring van de Code** kaart om de broncode te uploaden.
 
    ![afbeelding](/help/journey-migration/refactoring-tools/assets/rscam1.png)

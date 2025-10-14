@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met Adobe Experience Manager Assets kunt u werkstromen voor ad-hocrevisies instellen voor elementen in een map of een verzameling. U kunt deze delen met revisoren of creatieve partners om hun feedback te vragen. U kunt een revisiewerkstroom aan een project koppelen of een onafhankelijke revisietaak maken.
@@ -30,7 +30,7 @@ Nadat de controleur de revisie heeft voltooid (activa goedkeurt of verwerpt), on
 1. Selecteer in de gebruikersinterface van Assets de map waarvoor u een revisietaak wilt maken.
 1. Selecteer op de werkbalk het pictogram **[!UICONTROL Create Review Task]** om de pagina van **[!UICONTROL Review Task]** te openen. Als het pictogram niet op de werkbalk wordt weergegeven, selecteert u **[!UICONTROL More]** en vervolgens het pictogram.
 
-   ![ chlimage_1-403 ](assets/chlimage_1-403.png)
+   ![&#x200B; chlimage_1-403 &#x200B;](assets/chlimage_1-403.png)
 
 1. (Optioneel) Selecteer in de lijst **[!UICONTROL Project]** het project waaraan u de revisietaak wilt koppelen. Standaard is de optie **[!UICONTROL None]** geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
@@ -46,39 +46,39 @@ Nadat de controleur de revisie heeft voltooid (activa goedkeurt of verwerpt), on
 
 1. Voer een beschrijving, de prioriteit van de taak en de vervaldatum voor de controletaak in.
 
-   ![ task_details ](assets/task_details.png)
+   ![&#x200B; task_details &#x200B;](assets/task_details.png)
 
 1. Voer op het tabblad Geavanceerd een label in dat u wilt gebruiken om de URI te maken.
 
-   ![ review_name ](assets/review_name.png)
+   ![&#x200B; review_name &#x200B;](assets/review_name.png)
 
 1. Selecteer **[!UICONTROL Submit]** en selecteer vervolgens **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
 1. Meld u aan bij [!DNL Experience Manager Assets] als fiatteur en navigeer naar de gebruikersinterface van Assets. Als u elementen wilt goedkeuren, selecteert u het pictogram **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
 
-   ![ bericht ](assets/notification.png)
+   ![&#x200B; bericht &#x200B;](assets/notification.png)
 
 1. Controleer op de pagina **[!UICONTROL Review Task]** de details van de revisietaak en selecteer vervolgens **[!UICONTROL Review]** .
 1. Selecteer op de pagina **[!UICONTROL Review Task]** elementen en selecteer het pictogram **[!UICONTROL Approve/Reject]** dat u wilt goedkeuren of afwijzen.
 
-   ![ review_task ](assets/review_task.png)
+   ![&#x200B; review_task &#x200B;](assets/review_task.png)
 
 1. Selecteer het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en selecteer **[!UICONTROL Complete]** om te bevestigen.
 1. Navigeer naar de gebruikersinterface van Assets en open de map. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
    **mening van de Kaart**
 
-   ![ chlimage_1-404 ](assets/chlimage_1-404.png)
+   ![&#x200B; chlimage_1-404 &#x200B;](assets/chlimage_1-404.png)
 
    **mening van de Lijst**
 
-   ![ review_status_listview ](assets/review_status_listview.png)
+   ![&#x200B; review_status_listview &#x200B;](assets/review_status_listview.png)
 
 ## Een revisietaak voor verzamelingen maken {#creating-a-review-task-for-collections}
 
 1. Selecteer op de pagina Verzamelingen de verzameling waarvoor u een revisietaak wilt maken.
 1. Selecteer op de werkbalk het pictogram **[!UICONTROL Create Review Task]** om de pagina van **[!UICONTROL Review Task]** te openen. Als het pictogram niet op de werkbalk wordt weergegeven, selecteert u **[!UICONTROL More]** en vervolgens het pictogram.
 
-   ![ chlimage_1-405 ](assets/chlimage_1-405.png)
+   ![&#x200B; chlimage_1-405 &#x200B;](assets/chlimage_1-405.png)
 
 1. (Optioneel) Selecteer in de lijst **[!UICONTROL Project]** het project waaraan u de revisietaak wilt koppelen. Standaard is de optie **[!UICONTROL None]** geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
@@ -94,25 +94,25 @@ Nadat de controleur de revisie heeft voltooid (activa goedkeurt of verwerpt), on
 
 1. Voer een beschrijving, de prioriteit van de taak en de vervaldatum voor de controletaak in.
 
-   ![ task_details-collection ](assets/task_details-collection.png)
+   ![&#x200B; task_details-collection &#x200B;](assets/task_details-collection.png)
 
 1. Selecteer **[!UICONTROL Submit]** en selecteer vervolgens **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
 1. Meld u aan bij [!DNL Experience Manager Assets] als fiatteur en navigeer naar de Assets-console. Als u elementen wilt goedkeuren, selecteert u het pictogram **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
 1. Controleer op de pagina **[!UICONTROL Review Task]** de details van de revisietaak en selecteer vervolgens **[!UICONTROL Review]** .
 1. Alle elementen in de verzameling zijn zichtbaar op de controlepagina. Selecteer de elementen en selecteer het pictogram **[!UICONTROL Approve/Reject]** om elementen goed te keuren of af te wijzen.
 
-   ![ review_task_collection ](assets/review_task_collection.png)
+   ![&#x200B; review_task_collection &#x200B;](assets/review_task_collection.png)
 
 1. Selecteer het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en selecteer **[!UICONTROL Complete]** om te bevestigen.
 1. Navigeer naar de verzamelingsconsole en open de verzameling. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
    **mening van de Kaart**
 
-   ![ collection_reviewstatuscardview ](assets/collection_reviewstatuscardview.png)
+   ![&#x200B; collection_reviewstatuscardview &#x200B;](assets/collection_reviewstatuscardview.png)
 
    **mening van de Lijst**
 
-   ![ collection_reviewstatuslistview ](assets/collection_reviewstatuslistview.png)
+   ![&#x200B; collection_reviewstatuslistview &#x200B;](assets/collection_reviewstatuslistview.png)
 
 **zie ook**
 

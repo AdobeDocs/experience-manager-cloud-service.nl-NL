@@ -23,13 +23,13 @@ Inhoudsauteurs hoeven zich niet bezig te houden met het valideren van elke koppe
 * Een lijst met alle externe koppelingen in de inhoud weergeven
 * Koppelingtransformaties uitvoeren
 
-De controleur van de Verbinding heeft verscheidene [ configuratieopties ](#configuring) zoals het bepalen van de bevestiging van interne verbindingen, toestaand bepaalde verbindingen of verbindingspatters om van bevestiging worden weggelaten, en het bepalen van verbinding die regels herschrijven.
+De controleur van de Verbinding heeft verscheidene [&#x200B; configuratieopties &#x200B;](#configuring) zoals het bepalen van de bevestiging van interne verbindingen, toestaand bepaalde verbindingen of verbindingspatters om van bevestiging worden weggelaten, en het bepalen van verbinding die regels herschrijven.
 
-De controleur van de Verbinding bevestigt zowel [ interne verbindingen ](#internal) als [ externe verbindingen.](#external)
+De controleur van de Verbinding bevestigt zowel [&#x200B; interne verbindingen &#x200B;](#internal) als [&#x200B; externe verbindingen.](#external)
 
 >[!NOTE]
 >
->Omdat de koppelingencontrole de koppelingen van elke inhoudspagina controleert, kan de koppelingencontrole de prestaties op grote opslagplaatsen beïnvloeden. In dergelijke gevallen, kunt u moeten [ vormen hoe vaak de Controle van de Verbinding ](#configuring) loopt of [ het onbruikbaar maakt.](#disabling)
+>Omdat de koppelingencontrole de koppelingen van elke inhoudspagina controleert, kan de koppelingencontrole de prestaties op grote opslagplaatsen beïnvloeden. In dergelijke gevallen, kunt u moeten [&#x200B; vormen hoe vaak de Controle van de Verbinding &#x200B;](#configuring) loopt of [&#x200B; het onbruikbaar maakt.](#disabling)
 
 ## Interne koppelingencontrole {#internal}
 
@@ -45,7 +45,7 @@ Interne koppelingen worden gevalideerd zodra de auteur van de inhoud een dergeli
    * De tekst van de koppeling blijft behouden.
 * Het wordt getoond als gebroken verbinding in de auteursinterface.
 
-![ Controle die van de Verbinding interne verbindingen ](assets/link-checker-internal.png) controleert
+![&#x200B; Controle die van de Verbinding interne verbindingen &#x200B;](assets/link-checker-internal.png) controleert
 
 ## Controleren van externe koppeling {#external}
 
@@ -61,18 +61,18 @@ Externe koppelingen worden gevalideerd voor syntaxis en door de beschikbaarheid 
    * De tekst van de koppeling blijft behouden.
 * Het wordt getoond als gebroken verbinding in de auteursinterface.
 
-![ Controle van de Verbinding die externe verbindingen ](assets/link-checker-external.png) controleert
+![&#x200B; Controle van de Verbinding die externe verbindingen &#x200B;](assets/link-checker-external.png) controleert
 
 ### De werking van de externe koppelingencontrole {#external-details}
 
-De Externe Controle van de Verbinding baseert zich op verscheidene diensten en het begrip hoe zij werken helpt u begrijpen hoe te [ de Controle van de Verbinding vormen om aan uw behoeften te voldoen.](#configuring)
+De Externe Controle van de Verbinding baseert zich op verscheidene diensten en het begrip hoe zij werken helpt u begrijpen hoe te [&#x200B; de Controle van de Verbinding vormen om aan uw behoeften te voldoen.](#configuring)
 
 1. Wanneer een inhoudsontwerper een koppeling naar een pagina opslaat, wordt een gebeurtenishandler geactiveerd.
 1. De gebeurtenishandler doorloopt alle inhoud onder `/content` en controleert op nieuwe of bijgewerkte koppelingen en voegt deze toe aan een cache voor de koppelingencontrole.
 1. De **Dienst van de Controle van de Verbinding van de Dag CQ** voert dan op een regelmatig programma uit om de ingangen in het geheime voorgeheugen voor geldige syntaxis te controleren.
-1. De syntaxis-bevestigde verbindingen verschijnen dan in het [ Externe venster van de Controle van de Verbinding.](#external-using) Nochtans zullen zij in a **in afwachting van** staat zijn.
+1. De syntaxis-bevestigde verbindingen verschijnen dan in het [&#x200B; Externe venster van de Controle van de Verbinding.](#external-using) Nochtans zullen zij in a **in afwachting van** staat zijn.
 1. De **Taak van de Controle van de Verbinding van CQ van de Dag CQ** voert dan op een regelmatige basis uit om de verbindingen te bevestigen door een vraag van GET te maken.
-1. De **Taak van CQ van de Controle van de Verbinding van de Dag CQ** werkt dan de ingangen in het [ Externe venster van de Controle van de Verbinding ](#external-using) met de resultaten van de vraag van GET bij.
+1. De **Taak van CQ van de Controle van de Verbinding van de Dag CQ** werkt dan de ingangen in het [&#x200B; Externe venster van de Controle van de Verbinding &#x200B;](#external-using) met de resultaten van de vraag van GET bij.
 
 ### De externe koppelingencontrole gebruiken {#external-using}
 
@@ -81,7 +81,7 @@ De External Link Checker is een console die een overzicht biedt van alle externe
 1. Van de Globale Navigatie, uitgezochte **Hulpmiddelen** -> **Plaatsen**.
 1. Selecteer **Externe Controle van de Verbinding** en een lijst van alle externe verbindingen wordt getoond.
 
-![ Externe verbindingscontrole ](assets/external-link-checker.png)
+![&#x200B; Externe verbindingscontrole &#x200B;](assets/external-link-checker.png)
 
 Elke ingang in de lijst vertegenwoordigt een externe verbinding die door de dienst van de Controleur van de Verbinding wordt ontdekt. De volgende kolommen worden weergegeven:
 
@@ -91,9 +91,9 @@ Elke ingang in de lijst vertegenwoordigt een externe verbinding die door de dien
    * **Ongeldig** - de externe verbinding is niet bereikbaar door de Controleur van de Verbinding.
 * **URL** - de externe verbinding
 * **Referrer** - de inhoudspagina die de externe verbinding bevat
-   * Dit is slechts bevolkt [ als gevormd.](#configuring)
+   * Dit is slechts bevolkt [&#x200B; als gevormd.](#configuring)
 * **Laatste Gecontroleerde** - de laatste tijd de Controle van de Verbinding bevestigde de externe verbinding
-   * Hoe vaak worden de verbindingen gecontroleerd [ configureerbaar.](#configuring)
+   * Hoe vaak worden de verbindingen gecontroleerd [&#x200B; configureerbaar.](#configuring)
 * **Laatste Status** - de laatste de statuscode van HTML keerde terug toen de Verbinding het laatst controleerde verbinding
 * **Laatste Beschikbare** - Tijd sinds de verbinding laatste beschikbaar aan de Controle van de Verbinding was
 * **Laatste Toegelaten** - Tijd sinds de pagina met de externe verbinding werd laatst betreden in de auteursinterface
@@ -116,7 +116,7 @@ De koppelingencontrole is automatisch uit-de-doos beschikbaar in AEM. Nochtans, 
    * Het staat afzonderlijke definities van intervallen toe om slechte en goede verbindingen onder andere opties te controleren.
 * **De Transformator van de Controle van de Verbinding van de Dag CQ** - Deze dienst zet verbindingen om die op een user-defined regelreeks worden gebaseerd.
 
-Zie het document [ Vormend OSGi ](/help/implementing/deploying/configuring-osgi.md) voor meer details op hoe te om montages te veranderen OSGi.
+Zie het document [&#x200B; Vormend OSGi &#x200B;](/help/implementing/deploying/configuring-osgi.md) voor meer details op hoe te om montages te veranderen OSGi.
 
 ## De koppelingencontrole uitschakelen {#disabling}
 

@@ -24,16 +24,16 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 >
 >De gebruiker moet **hebben wijzigt/creeert/schrapt** toestemming op de knoop `/content/versionhistory` om de eigenschap te gebruiken.
 >
->Zie [ het Ontwikkelen en Afschuiving van de Pagina ](/help/implementing/developing/introduction/page-diff.md#operation-details) voor meer technische details op deze eigenschap.
+>Zie [&#x200B; het Ontwikkelen en Afschuiving van de Pagina &#x200B;](/help/implementing/developing/introduction/page-diff.md#operation-details) voor meer technische details op deze eigenschap.
 
 ## Gebruiken {#use}
 
 De zijdelingse scheiding kan het volgende vergelijken:
 
-* [ Versies ](/help/sites-cloud/authoring/sites-console/page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met zijn huidige staat
-* [ Levende Exemplaren ](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) - Levend Exemplaar met zijn Vervaging
-* [ Lanceringen ](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Lanceer met zijn Source
-* [ Kopieën van de Taal ](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) - een pagina vóór en na (re-)vertaling
+* [&#x200B; Versies &#x200B;](/help/sites-cloud/authoring/sites-console/page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met zijn huidige staat
+* [&#x200B; Levende Exemplaren &#x200B;](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) - Levend Exemplaar met zijn Vervaging
+* [&#x200B; Lanceringen &#x200B;](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Lanceer met zijn Source
+* [&#x200B; Kopieën van de Taal &#x200B;](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) - een pagina vóór en na (re-)vertaling
 
 Zie de respectieve onderwerpen over hoe te om diff binnen die contexten te beginnen.
 
@@ -48,7 +48,7 @@ Als u bijvoorbeeld versies vergelijkt, wordt de huidige versie links weergegeven
 
 De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk boven in het browservenster.
 
-![ Versies zij aan zij mening ](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
+![&#x200B; Versies zij aan zij mening &#x200B;](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
 De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
@@ -70,11 +70,11 @@ De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn ge
 
 Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om dit naar het volledige browservenster te vergroten.
 
-![ Volledige het schermknoop ](/help/sites-cloud/authoring/assets/versions-full-screen.png)
+![&#x200B; Volledige het schermknoop &#x200B;](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
 De geselecteerde zijde vult het gehele venster, maar de balk blijft boven aan de pagina zodat u tussen de twee pagina&#39;s kunt schakelen.
 
-![ Volledige het schermwijze ](/help/sites-cloud/authoring/assets/versions-full-screen-mode.png)
+![&#x200B; Volledige het schermwijze &#x200B;](/help/sites-cloud/authoring/assets/versions-full-screen-mode.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ De geselecteerde zijde vult het gehele venster, maar de balk blijft boven aan de
 
 U kunt de volledige schermweergave ook sluiten door op het pictogram Volledig scherm afsluiten te klikken.
 
-![ Uitgang het volledige schermwijze ](/help/sites-cloud/authoring/assets/versions-exit-full-screen.png)
+![&#x200B; Uitgang het volledige schermwijze &#x200B;](/help/sites-cloud/authoring/assets/versions-exit-full-screen.png)
 
 U kunt het schuifregelaar Naast elkaar op elk gewenst moment afsluiten door op de knop Sluiten in de koptekst te klikken.
 
@@ -90,11 +90,11 @@ U kunt het schuifregelaar Naast elkaar op elk gewenst moment afsluiten door op d
 
 In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert zoals u had verwacht.
 
-* Wanneer het verschillen van pagina&#39;s voor gebruik met [ Edge Delivery Services worden gecreeerd, ](/help/edge/overview.md) de pagina&#39;s zullen naast-zij voor gemakkelijke vergelijking worden getoond, maar de verschillen zullen niet worden benadrukt.
+* Wanneer het verschillen van pagina&#39;s voor gebruik met [&#x200B; Edge Delivery Services worden gecreeerd, &#x200B;](/help/edge/overview.md) de pagina&#39;s zullen naast-zij voor gemakkelijke vergelijking worden getoond, maar de verschillen zullen niet worden benadrukt.
 * Bij verschillende versies en lanceringen houdt diff geen rekening met dynamische componenten zoals broodkruimels, menu&#39;s, productlijsten of logo&#39;s (componenten die op de plaatsstructuur vertrouwen om hun inhoud terug te geven).
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
-   * Als u problemen met afschuiving ervaart, controleer de [ Chronologie ](/help/sites-cloud/authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
+   * Als u problemen met afschuiving ervaart, controleer de [&#x200B; Chronologie &#x200B;](/help/sites-cloud/authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
 
 >[!NOTE]
 >

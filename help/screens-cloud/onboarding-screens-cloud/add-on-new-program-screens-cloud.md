@@ -16,7 +16,7 @@ ht-degree: 1%
 In deze sectie wordt beschreven hoe u Screens kunt toevoegen als een invoegtoepassing aan een nieuw programma in Cloud Manager.
 
 >[!NOTE]
->Zie [ Begrijpend Programma&#39;s en de Types van Programma ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=nl-NL) om meer over de programma&#39;s van Cloud Manager te leren.
+>Zie [&#x200B; Begrijpend Programma&#39;s en de Types van Programma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=nl-NL) om meer over de programma&#39;s van Cloud Manager te leren.
 
 ## Doelstelling {#objective}
 
@@ -26,10 +26,10 @@ In de volgende sectie wordt beschreven hoe u Screens kunt toevoegen als een invo
 
 Voer de onderstaande stappen uit om Screens toe te voegen aan een nieuw programma in Cloud Manager:
 
-1. Navigeer aan [ Cloud Manager ](https://my.cloudmanager.adobe.com/).
+1. Navigeer aan [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Zie [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=nl-NL) om over Cloud Manager te leren.
+   >Zie [&#x200B; Inleiding aan Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=nl-NL) om over Cloud Manager te leren.
 
 1. Klik **toevoegen Programma** van de Cloud Manager het landen pagina.
 
@@ -49,4 +49,4 @@ Voer de onderstaande stappen uit om Screens toe te voegen aan een nieuw programm
 
 ## Volgende functies {#whats-next}
 
-Wanneer u hebt geleerd hoe u Screens kunt toevoegen als een invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Cloud Manager-programma&#39;s en -producten ziet, kunt u verdergaan. De volgende stap in het onboarding proces is [ Creërend een tak voor uw Project in Cloud Manager ](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Wanneer u hebt geleerd hoe u Screens kunt toevoegen als een invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Cloud Manager-programma&#39;s en -producten ziet, kunt u verdergaan. De volgende stap in het onboarding proces is [&#x200B; Creërend een tak voor uw Project in Cloud Manager &#x200B;](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

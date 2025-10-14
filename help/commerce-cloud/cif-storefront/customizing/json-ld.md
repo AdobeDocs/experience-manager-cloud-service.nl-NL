@@ -29,7 +29,7 @@ Om **toe te laten JSON+LD** checkbox beschikbaar in de configuratie van CIF te m
 
 `com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
 
-Voor verdere details bij het toevoegen van deze configuratie, verwijs naar [ toevoegt configuratie voor json-Ld ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) in de openbare aem-cif-guides-venia bewaarplaats.
+Voor verdere details bij het toevoegen van deze configuratie, verwijs naar [&#x200B; toevoegt configuratie voor json-Ld &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) in de openbare aem-cif-guides-venia bewaarplaats.
 
 Zodra deze configuratie wordt toegevoegd en opgesteld, wordt checkbox zichtbaar in de de configuratiemontages van CIF en hier zijn de stappen om **JSON+LD** toe te laten:
 
@@ -116,4 +116,4 @@ JSON+LD-kenmerken kunnen worden toegewezen aan GraphQL-query&#39;s in AEM CIF, z
 
 Deze toewijzing zorgt ervoor dat het JSON+LD-script dynamisch wordt gevuld op basis van productgegevens die via GraphQL-query&#39;s zijn opgehaald.
 
-Om uw JSON+LD structuur te testen, kunt u de [ Rijke Test van Resultaten gebruiken - de Console van het Onderzoek van Google.](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw) Dit gereedschap biedt gedetailleerde feedback, waaronder of de vereiste kenmerken aanwezig zijn of ontbreken, en zorgt ervoor dat uw gestructureerde gegevens correct zijn geïmplementeerd.
+Om uw JSON+LD structuur te testen, kunt u de [&#x200B; Rijke Test van Resultaten gebruiken - de Console van het Onderzoek van Google.](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw) Dit gereedschap biedt gedetailleerde feedback, waaronder of de vereiste kenmerken aanwezig zijn of ontbreken, en zorgt ervoor dat uw gestructureerde gegevens correct zijn geïmplementeerd.

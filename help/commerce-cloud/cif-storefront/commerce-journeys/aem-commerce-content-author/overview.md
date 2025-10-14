@@ -29,7 +29,7 @@ Deze handleiding begeleidt u door de belangrijkste AEM Content- en Commerce-ontw
 
 ## AEM-documentatiereizen {#documentation-journeys}
 
-[ de Reis van de Documentatie van A ](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende, gecompliceerde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die aan AEM nieuw kan zijn, een bedrijfsprobleem van begin tot eind begrijpen en oplossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of kennis van AEM.
+[&#x200B; de Reis van de Documentatie van A &#x200B;](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende, gecompliceerde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die aan AEM nieuw kan zijn, een bedrijfsprobleem van begin tot eind begrijpen en oplossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of kennis van AEM.
 
 Documentatiereizen zijn gebaseerd op de beginselen van best practices, op informatie van Adobe over het meest recente onderzoek, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
 
@@ -50,12 +50,12 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 | Aantal | Artikel | Beschrijving |
 |---|---|---|
 | 0 | AEM Content and Commerce Developer Journey | Dit document |
-| 1 | [ Leer over de Inhoud van AEM en Commerce ](/help/commerce-cloud/introduction.md) | Leer concepten en basisbeginselen over AEM Content en Commerce. |
-| 2 | [ Begonnen het worden met AEM CIF authoring grondbeginselen ](getting-started.md) | Leer hoe u productgegevens kunt openen en gebruiken voor uw gebruiksscenario&#39;s. |
-| 3 | [ beheer productcataloguspagina&#39;s en malplaatje ](catalog-templates.md) | Leer hoe u een typische ervaring met productcatalogi maakt. |
-| 4 | [ beheer gestagte ervaringen van de productcatalogus ](staged-catalog.md) | Leer hoe u een toekomstige productcatalogus kunt maken met gefaseerde gegevens en AEM Launches. |
+| 1 | [&#x200B; Leer over de Inhoud van AEM en Commerce &#x200B;](/help/commerce-cloud/introduction.md) | Leer concepten en basisbeginselen over AEM Content en Commerce. |
+| 2 | [&#x200B; Begonnen het worden met AEM CIF authoring grondbeginselen &#x200B;](getting-started.md) | Leer hoe u productgegevens kunt openen en gebruiken voor uw gebruiksscenario&#39;s. |
+| 3 | [&#x200B; beheer productcataloguspagina&#39;s en malplaatje &#x200B;](catalog-templates.md) | Leer hoe u een typische ervaring met productcatalogi maakt. |
+| 4 | [&#x200B; beheer gestagte ervaringen van de productcatalogus &#x200B;](staged-catalog.md) | Leer hoe u een toekomstige productcatalogus kunt maken met gefaseerde gegevens en AEM Launches. |
 | 5 | {de Ervaringen van het Product van 0} Bouwen [&#128279;](product-experience-management.md) | Leer hoe u productgegevens kunt uitbreiden met overweldigende inhoud in AEM. |
 
 ## Volgende functies {#what-is-next}
 
-U bent nu klaar om aan de slag te gaan met uw AEM Content en Commerce Development-reis. Wij moedigen u aan om op het volgende deel van de reis voort te gaan en het artikel [ te lezen Leer over de Inhoud van AEM en Commerce.](/help/commerce-cloud/cif-storefront/introduction.md)
+U bent nu klaar om aan de slag te gaan met uw AEM Content en Commerce Development-reis. Wij moedigen u aan om op het volgende deel van de reis voort te gaan en het artikel [&#x200B; te lezen Leer over de Inhoud van AEM en Commerce.](/help/commerce-cloud/cif-storefront/introduction.md)

@@ -21,7 +21,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -38,30 +38,30 @@ Bekijk de video Overzicht van de release van oktober 2022 voor een overzicht van
 
 ### Nieuwe functies in [!DNL Sites] {#sites-features}
 
-* Het [ Lusje van Personalization voor de Fragmenten van de Ervaring ](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) staat segmentatiespecificatiemogelijkheden aan de Redacteur van het Fragment van de Ervaring en de flexibiliteit toe om genestelde Fragmenten van de Ervaring tot stand te brengen waardoor de kopballen en footers variaties voor veelvoudige segmenten kunnen worden gecreeerd. Vóór de lancering van deze eigenschap, personalisatie die door AEM wordt aangeboden is slechts beschikbaar voor plaatspagina&#39;s, maar niet voor de Fragments van de Ervaring
+* Het [&#x200B; Lusje van Personalization voor de Fragmenten van de Ervaring &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) staat segmentatiespecificatiemogelijkheden aan de Redacteur van het Fragment van de Ervaring en de flexibiliteit toe om genestelde Fragmenten van de Ervaring tot stand te brengen waardoor de kopballen en footers variaties voor veelvoudige segmenten kunnen worden gecreeerd. Vóór de lancering van deze eigenschap, personalisatie die door AEM wordt aangeboden is slechts beschikbaar voor plaatspagina&#39;s, maar niet voor de Fragments van de Ervaring
 
-* De [ Console van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) laat nu gebruikers toe om vertaalde inhoudsfragmenten efficiënt te beheren. Er is 1-klik toegang beschikbaar om ook alle taalkopieën weer te geven. Gebruikers kunnen de tabelweergave ook filteren op de landinstelling van hun interesse.
+* De [&#x200B; Console van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) laat nu gebruikers toe om vertaalde inhoudsfragmenten efficiënt te beheren. Er is 1-klik toegang beschikbaar om ook alle taalkopieën weer te geven. Gebruikers kunnen de tabelweergave ook filteren op de landinstelling van hun interesse.
 
-![ de Talen van de Fragmenten van de Inhoud ](/help/release-notes/assets/cfconsole-languages.png)
+![&#x200B; de Talen van de Fragmenten van de Inhoud &#x200B;](/help/release-notes/assets/cfconsole-languages.png)
 
-* Verminder verder de laadtijd van de pagina voor bezoekers door de afbeeldingsgrootten in sjablonen te optimaliseren. Vind meer informatie voor de beeldcomponent bij [ Component van WCM van de Kern ](https://github.com/adobe/aem-core-wcm-components)
+* Verminder verder de laadtijd van de pagina voor bezoekers door de afbeeldingsgrootten in sjablonen te optimaliseren. Vind meer informatie voor de beeldcomponent bij [&#x200B; Component van WCM van de Kern &#x200B;](https://github.com/adobe/aem-core-wcm-components)
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets laat u nu documenten in andere gesteunde formaattypes uploaden en [ voorproef hen gebruikend de inbegrepen kijker van het Document Cloud ](/help/assets/manage-pdf-documents.md). Tot de ondersteunde indelingstypen behoren TXT, RTF, DOC, DOCX, PPT, PPTX, XLS en XLSX.
+* Experience Manager Assets laat u nu documenten in andere gesteunde formaattypes uploaden en [&#x200B; voorproef hen gebruikend de inbegrepen kijker van het Document Cloud &#x200B;](/help/assets/manage-pdf-documents.md). Tot de ondersteunde indelingstypen behoren TXT, RTF, DOC, DOCX, PPT, PPTX, XLS en XLSX.
 
-  ![ de vertoning van de PDF voor andere formaten ](/help/release-notes/assets/multi-page-other-formats.png)
+  ![&#x200B; de vertoning van de PDF voor andere formaten &#x200B;](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### Nieuwe functies in [!DNL Assets] prerelease {#prerelease-features-assets}
 
 * Experience Manager Assets maakt nu gebruik van een verbeterd kunstmatig intelligentiekader voor slimme tags voor afbeeldingen. Deze inhoudsinfo geeft een betere relevantie en nauwkeurigheid van slimme tags die beschikbaar zijn voor alle afbeeldingselementen bij opname. Daarnaast worden oriëntatiegegevens ingevuld in `cq:tags` , zodat u betere zoekresultaten kunt gebruiken met het filter Richting.
 
-  Als u in het deelnemen in Beta geinteresseerd bent, [ vul deze vorm ](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) tegen 14 november.
+  Als u in het deelnemen in Beta geinteresseerd bent, [&#x200B; vul deze vorm &#x200B;](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) tegen 14 november.
 
-* Experience Manager Assets [ steunt nu SAS Token ](/help/assets/add-assets.md#asset-bulk-ingestor) naast de Sleutel van de Toegang voor authentificatie terwijl het verbinden met de gegevensbron van de Opslag van Azure Blob voor het opnemen van activa die het Bulk hulpmiddel van de Invoer gebruiken.
+* Experience Manager Assets [&#x200B; steunt nu SAS Token &#x200B;](/help/assets/add-assets.md#asset-bulk-ingestor) naast de Sleutel van de Toegang voor authentificatie terwijl het verbinden met de gegevensbron van de Opslag van Azure Blob voor het opnemen van activa die het Bulk hulpmiddel van de Invoer gebruiken.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -87,16 +87,16 @@ Bekijk de video Overzicht van de release van oktober 2022 voor een overzicht van
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* AEM as a Cloud Service (de Dienst van de Auteur) is nu geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van het Experience Cloud te verenigen. Zie AEM als a [ Cloud Service op Verenigde Shell ](/help/overview/aem-cloud-service-on-unified-shell.md) voor meer details.
+* AEM as a Cloud Service (de Dienst van de Auteur) is nu geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van het Experience Cloud te verenigen. Zie AEM als a [&#x200B; Cloud Service op Verenigde Shell &#x200B;](/help/overview/aem-cloud-service-on-unified-shell.md) voor meer details.
 
-* Zoals eerder vermeld in versienota&#39;s, wordt het gebruiken van het scherm van de replicatieagent of replicatie API voor het verspreiden van inhoudspakketten groter dan 10 MB (knopen met eigenschappen, exclusief binaire getallen) nu afgekeurd en afgedwongen. Zie [ Publicatie ](/help/operations/replication.md#manage-publication) of het [ werkschema van de Boom van de Inhoud van Publish ](/help/operations/replication.md#publish-content-tree-workflow) voor voorgestelde benaderingen beheren om deze grote inhoudspakketten te herhalen.
+* Zoals eerder vermeld in versienota&#39;s, wordt het gebruiken van het scherm van de replicatieagent of replicatie API voor het verspreiden van inhoudspakketten groter dan 10 MB (knopen met eigenschappen, exclusief binaire getallen) nu afgekeurd en afgedwongen. Zie [&#x200B; Publicatie &#x200B;](/help/operations/replication.md#manage-publication) of het [&#x200B; werkschema van de Boom van de Inhoud van Publish &#x200B;](/help/operations/replication.md#publish-content-tree-workflow) voor voorgestelde benaderingen beheren om deze grote inhoudspakketten te herhalen.
 
-* De configuratie van Dispatcher verwijst nu naar een dossier dat van gemeenschappelijke de vraagparameters van de marketing campagne een lijst maakt. Klanten kunnen ervoor kiezen om de commentaarmarkering van de parameters die voor hen relevant zijn, ongedaan te maken, wat resulteert in betere caching. Zie [ de campagneparameters van de Marketing ](/help/implementing/dispatcher/caching.md#marketing-parameters) voor meer details.
+* De configuratie van Dispatcher verwijst nu naar een dossier dat van gemeenschappelijke de vraagparameters van de marketing campagne een lijst maakt. Klanten kunnen ervoor kiezen om de commentaarmarkering van de parameters die voor hen relevant zijn, ongedaan te maken, wat resulteert in betere caching. Zie [&#x200B; de campagneparameters van de Marketing &#x200B;](/help/implementing/dispatcher/caching.md#marketing-parameters) voor meer details.
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.

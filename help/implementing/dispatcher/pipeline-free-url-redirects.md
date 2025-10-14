@@ -21,17 +21,17 @@ De scenario&#39;s omvatten:
 * De naam van een HTML-pagina is gewijzigd.
 * SEO-optimalisatie.
 
-AEM as a Cloud Service biedt [ verscheidene benaderingen ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/url-redirection) aan om server-zij omleidingen uit te voeren, maar de strategie die in dit artikel wordt beschreven, zonder pijpleiding is omleiding, is een goede keus wanneer:
+AEM as a Cloud Service biedt [&#x200B; verscheidene benaderingen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/url-redirection) aan om server-zij omleidingen uit te voeren, maar de strategie die in dit artikel wordt beschreven, zonder pijpleiding is omleiding, is een goede keus wanneer:
 
 * De mensen die redirects handhaven zijn bedrijfsgebruikers, die niet de noodzakelijke toegang hebben om dossierveranderingen in broncontrole of de mogelijkheid vast te leggen om een Cloud Manager web-tier configuratiepijplijn uit te voeren.
 * Het aantal omleidingen varieert van een paar tot tienduizenden.
-* U wilt de optie van een gebruikersinterface, of als douaneproject worden gecreeerd of door de [ ACS Commons te gebruiken richt de Manager van de Kaart van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) of [ ACS de Commons Redirect Manager ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
+* U wilt de optie van een gebruikersinterface, of als douaneproject worden gecreeerd of door de [&#x200B; ACS Commons te gebruiken richt de Manager van de Kaart van de Kaart &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) of [&#x200B; ACS de Commons Redirect Manager &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
 De kern van deze functie is de mogelijkheid voor AEM Apache/Dispatcher om een of meer kaartbestanden te laden (of opnieuw te laden) die op een opgegeven locatie in de publicatieopslagplaats zijn geplaatst (zodat deze kunnen worden gedownload van AEM-publicatie). Het is belangrijk om te vermelden dat hoe de dossiers daar krijgen buiten het werkingsgebied van deze eigenschap is maar u kunt één van de volgende methodes overwegen:
 
 * De kaart voor herschrijven als een element invoegen in de gebruikersinterface van de auteur en deze publiceren.
-* Het installeren van de [ ACS Commons richt de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) opnieuw ([ minstens versie 6.7.0 of hoger ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), die een gebruikersinterface omvat om de url in kaart te brengen en kan ook het herschrijven kaartdossier publiceren.
-* Het installeren van de [ ACS Commons richt Manager ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) opnieuw ([ minstens versie 6.10.0 of hoger ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), die ook een gebruikersinterface omvat om de url in kaart te brengen en kan ook het herschrijven kaartdossier publiceren.
+* Het installeren van de [&#x200B; ACS Commons richt de Manager van de Kaart &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) opnieuw ([&#x200B; minstens versie 6.7.0 of hoger &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), die een gebruikersinterface omvat om de url in kaart te brengen en kan ook het herschrijven kaartdossier publiceren.
+* Het installeren van de [&#x200B; ACS Commons richt Manager &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) opnieuw ([&#x200B; minstens versie 6.10.0 of hoger &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), die ook een gebruikersinterface omvat om de url in kaart te brengen en kan ook het herschrijven kaartdossier publiceren.
 * Volledige flexibiliteit door een aangepaste toepassing te schrijven. U kunt bijvoorbeeld een gebruikersinterface of opdrachtregelinterface gebruiken om de URL-toewijzingen te beheren of een formulier om een herschrijfmap te uploaden, die vervolgens AEM API&#39;s gebruikt om het kaartbestand voor herschrijven te publiceren.
 
 >[!NOTE]
@@ -40,13 +40,13 @@ De kern van deze functie is de mogelijkheid voor AEM Apache/Dispatcher om een of
 >[!NOTE]
 > Het gebruik van deze eigenschap van de Manager van de Kaart van Redirect vereist ACS versie van Commons **6.7.0 of hoger** terwijl het gebruik van Redirect Manager versie **6.10.0 of hoger** vereist.
 
-Voor een gedetailleerde stap-voor-stap implementatiegids, zie het [ Uitvoeren pijpleiding-vrije URL herleidt ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) leerprogramma.
+Voor een gedetailleerde stap-voor-stap implementatiegids, zie het [&#x200B; Uitvoeren pijpleiding-vrije URL herleidt &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) leerprogramma.
 
 ## De kaart voor herschrijven {#rewrite-map}
 
-De kaart voor herschrijven wordt opnieuw geladen (indien gewijzigd) door de Apache HTTP-server standaard elke 300 seconden (de waarde kan worden geconfigureerd). Het dossierformaat zou de duidelijke tekst sleutel-waarde kaart RewriteMap dossierformaat moeten volgen dat in de [ documentatie Apache ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html#txt) wordt beschreven.
+De kaart voor herschrijven wordt opnieuw geladen (indien gewijzigd) door de Apache HTTP-server standaard elke 300 seconden (de waarde kan worden geconfigureerd). Het dossierformaat zou de duidelijke tekst sleutel-waarde kaart RewriteMap dossierformaat moeten volgen dat in de [&#x200B; documentatie Apache &#x200B;](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html#txt) wordt beschreven.
 
-Er moet een bestand met de naam `managed-rewrite-maps.yaml` worden gemaakt om de locatie van het kaartbestand voor herschrijven op te geven. Dit bestand moet één keer worden geïmplementeerd met de Cloud Manager-stackpijplijn of de weblaagpijplijn. Het dossier moet in de [ src/opt-in ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud/src/opt-in) omslag van uw verzender configuratie worden gecreeerd. Zorg ervoor u de [ flexibele structuur van het wijzedossier ](/help/implementing/dispatcher/validation-debug.md#flexible-mode-file-structure) gebruikt.
+Er moet een bestand met de naam `managed-rewrite-maps.yaml` worden gemaakt om de locatie van het kaartbestand voor herschrijven op te geven. Dit bestand moet één keer worden geïmplementeerd met de Cloud Manager-stackpijplijn of de weblaagpijplijn. Het dossier moet in de [&#x200B; src/opt-in &#x200B;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud/src/opt-in) omslag van uw verzender configuratie worden gecreeerd. Zorg ervoor u de [&#x200B; flexibele structuur van het wijzedossier &#x200B;](/help/implementing/dispatcher/validation-debug.md#flexible-mode-file-structure) gebruikt.
 
 U kunt het met het volgende patroon vormen:
 
@@ -87,5 +87,5 @@ Houd rekening met het volgende:
 
 ## Tutorials {#tutorials}
 
-1. [ Uitvoerend pijpleiding-vrije URL richt zich opnieuw ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
-1. [ opnieuw richt URL ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/url-redirection)
+1. [&#x200B; Uitvoerend pijpleiding-vrije URL richt zich opnieuw &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [&#x200B; opnieuw richt URL &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/url-redirection)

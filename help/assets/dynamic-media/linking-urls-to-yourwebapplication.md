@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Via URL-aanroepen hebben uw websites en toepassingen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
-U verbindt met URLs slechts als u *niet* gebruikend Adobe Experience Manager als uw WCM bent. Koppelen - in plaats van insluiten - wordt gebruikt wanneer u een videospeler wilt leveren als pop-up of modaal venster. Als u Experience Manager als uw WCM gebruikt, [ voegt u de activa direct op uw pagina ](adding-dynamic-media-assets-to-pages.md) toe.
+U verbindt met URLs slechts als u *niet* gebruikend Adobe Experience Manager als uw WCM bent. Koppelen - in plaats van insluiten - wordt gebruikt wanneer u een videospeler wilt leveren als pop-up of modaal venster. Als u Experience Manager als uw WCM gebruikt, [&#x200B; voegt u de activa direct op uw pagina &#x200B;](adding-dynamic-media-assets-to-pages.md) toe.
 
 Als u deze URL-tekenreeksen wilt plaatsen in uw webpagina&#39;s en toepassingen, kopieert u ze van Dynamic Media.
 
@@ -24,13 +24,13 @@ Als u deze URL-tekenreeksen wilt plaatsen in uw webpagina&#39;s en toepassingen,
 >
 >URL-tekenreeksen zijn alleen beschikbaar voor dynamische uitvoeringen van elementen. Deze zijn momenteel niet beschikbaar voor statische elementen die zich in DAM bevinden en niet voor de Dynamic Media-server. De knop URL wordt niet weergegeven voor vertoningen die statisch zijn.
 
-Zie ook [ bed de video of beeldkijker op een Web-pagina ](embed-code.md) in.
+Zie ook [&#x200B; bed de video of beeldkijker op een Web-pagina &#x200B;](embed-code.md) in.
 
-Zie ook [ Verbinding YouTube URLs aan uw Webtoepassing ](video.md).
+Zie ook [&#x200B; Verbinding YouTube URLs aan uw Webtoepassing &#x200B;](video.md).
 
-Zie ook [ lever geoptimaliseerde beelden voor een ontvankelijke plaats ](responsive-site.md).
+Zie ook [&#x200B; lever geoptimaliseerde beelden voor een ontvankelijke plaats &#x200B;](responsive-site.md).
 
-Zie ook [ uploaden Assets ](/help/assets/manage-digital-assets.md#uploading-assets).
+Zie ook [&#x200B; uploaden Assets &#x200B;](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ## Een URL verkrijgen voor een element {#obtaining-a-url-for-an-asset}
 
@@ -40,11 +40,11 @@ U kunt een URL-tekenreeks verkrijgen die wordt gegenereerd door een voorinstelli
 >
 >De URL is pas beschikbaar voor kopiëren nadat u het geselecteerde element hebt gepubliceerd. Daarnaast moet u ook de voorinstelling van de viewer of de voorinstelling van de afbeelding publiceren.
 >
->Zie [ publiceren Assets ](publishing-dynamicmedia-assets.md).
+>Zie [&#x200B; publiceren Assets &#x200B;](publishing-dynamicmedia-assets.md).
 >
->Zie [ Publish Kijker vooraf instelt ](managing-viewer-presets.md#publishing-viewer-presets).
+>Zie [&#x200B; Publish Kijker vooraf instelt &#x200B;](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Zie [ publiceren Beeld vooraf instelt ](managing-image-presets.md#publishing-image-presets).
+>Zie [&#x200B; publiceren Beeld vooraf instelt &#x200B;](managing-image-presets.md#publishing-image-presets).
 
 Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In de onderstaande stappen ziet u echter slechts één methode die u kunt gebruiken.
 
@@ -54,11 +54,11 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
    Houd er rekening mee dat URL&#39;s alleen beschikbaar zijn om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
-   Zie [ publiceren Assets ](publishing-dynamicmedia-assets.md).
+   Zie [&#x200B; publiceren Assets &#x200B;](publishing-dynamicmedia-assets.md).
 
-   Zie [ Publish Kijker vooraf instelt ](managing-viewer-presets.md#publishing-viewer-presets).
+   Zie [&#x200B; Publish Kijker vooraf instelt &#x200B;](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Zie [ publiceren Beeld vooraf instelt ](managing-image-presets.md#publishing-image-presets).
+   Zie [&#x200B; publiceren Beeld vooraf instelt &#x200B;](managing-image-presets.md#publishing-image-presets).
 
 1. Voer op basis van het element dat u hebt geselecteerd een van de volgende handelingen uit:
 
@@ -68,7 +68,7 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
      Selecteer **[!UICONTROL URL]** onder aan het linkerspoor.
 
-     ![ chlimage_1-270 ](assets/chlimage_1-270.png)
+     ![&#x200B; chlimage_1-270 &#x200B;](assets/chlimage_1-270.png)
 
    * Selecteer **[!UICONTROL Viewers]** als u een centrifugeset, een afbeeldingsset, een carrouselset of een video hebt geselecteerd in de vervolgkeuzelijst.
 
@@ -76,7 +76,7 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
      Selecteer **[!UICONTROL URL]** in het linkerspoor, onderaan.
 
-     ![ chlimage_1-271 ](assets/chlimage_1-271.png)
+     ![&#x200B; chlimage_1-271 &#x200B;](assets/chlimage_1-271.png)
 
 1. Als u een voorvertoning van het element wilt weergeven of aan uw pagina met webinhoud wilt toevoegen, selecteert u de tekst en kopieert u deze naar uw webbrowser.
 
@@ -102,7 +102,7 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn ander
 
    Herinner dat URLs slechts beschikbaar is om *te kopiëren nadat* u eerst ** het statische activa hebt gepubliceerd.
 
-   Zie [ het Publiceren Assets ](publishing-dynamicmedia-assets.md).
+   Zie [&#x200B; het Publiceren Assets &#x200B;](publishing-dynamicmedia-assets.md).
 
 1. Gebruik een van de volgende methoden om de URL van het gepubliceerde statische element te verkrijgen:
 
@@ -211,4 +211,4 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn ander
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
-Zie [ HTTP2 Levering van Inhoud ](http2faq.md) voor volledige details bij het worden begonnen HTTP/2 met uw Dynamische rekening van Media te gebruiken.
+Zie [&#x200B; HTTP2 Levering van Inhoud &#x200B;](http2faq.md) voor volledige details bij het worden begonnen HTTP/2 met uw Dynamische rekening van Media te gebruiken.

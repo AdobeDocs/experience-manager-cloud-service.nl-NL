@@ -60,8 +60,8 @@ Formulierfragmenten in Edge Delivery Services bieden krachtige mogelijkheden voo
 
 **Technische opstellingsvereisten:**
 
-- [ GitHub bewaarplaats die ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) met verbinding wordt gevormd tussen uw milieu van AEM en bewaarplaats GitHub
-- [ Latest Aangepast Forms blok ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) toegevoegd aan uw bewaarplaats GitHub (voor bestaande projecten van Edge Delivery Services)
+- [&#x200B; GitHub bewaarplaats die &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) met verbinding wordt gevormd tussen uw milieu van AEM en bewaarplaats GitHub
+- [&#x200B; Latest Aangepast Forms blok &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) toegevoegd aan uw bewaarplaats GitHub (voor bestaande projecten van Edge Delivery Services)
 - AEM Forms Author-instantie met Edge Delivery Services-sjabloon beschikbaar
 - Toegang tot de URL van de AEM Forms as a Cloud Service-auteurinstantie en de GitHub-opslagplaats
 
@@ -91,20 +91,20 @@ Voer de volgende stappen uit om een formulierfragment te maken in de Universal E
 1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 1. Klik **creëren > het AanpassingsFragment van de Vorm**.
 
-   ![ creeer fragment ](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
+   ![&#x200B; creeer fragment &#x200B;](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    De **Create Aangepaste tovenaar van het Fragment van de Vorm** verschijnt.
 1. Selecteer het op Edge Delivery Services gebaseerde malplaatje van het **Uitgezochte Malplaatje** lusje en klik **[!UICONTROL Next]**.
-   ![ Uitgezochte het malplaatje van Edge Delivery Services ](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
+   ![&#x200B; Uitgezochte het malplaatje van Edge Delivery Services &#x200B;](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Geef een titel, naam, beschrijving en tags voor het fragment op. Zorg ervoor dat u een unieke naam voor het fragment opgeeft. Als een ander fragment met dezelfde naam bestaat, kan het fragment niet worden gemaakt.
 1. Specificeer **GitHub URL**. Als uw GitHub-opslagplaats bijvoorbeeld de naam `edsforms` heeft, bevindt deze zich onder de account `wkndforms` , is de URL `https://github.com/wkndforms/edsforms` .
 
-   ![ basiseigenschappen ](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
+   ![&#x200B; basiseigenschappen &#x200B;](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
 1. (Facultatief) klik om het **Model van de Vorm** lusje te openen, en van **Uitgezocht van** drop-down menu, selecteer één van de volgende modellen voor het fragment:
 
-   ![ modeltype van vertoningen in het Modellusje van de Vorm ](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
+   ![&#x200B; modeltype van vertoningen in het Modellusje van de Vorm &#x200B;](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
    - **Model van de Gegevens van de Vorm (FDM)**: Integreer de voorwerpen en de diensten van het gegevensmodel van gegevensbronnen in uw fragment. Kies FDM (Form Data Model) als in uw formulier gegevens uit meerdere bronnen moeten worden gelezen en geschreven.
 
@@ -113,26 +113,26 @@ Voer de volgende stappen uit om een formulierfragment te maken in de Universal E
 
    >[!NOTE]
    >
-   > Leren hoe te om vormen of fragmenten met een Model van de Gegevens van de Vorm (FDM) in de Universele Redacteur te integreren om diverse achterste gegevensbronnen te gebruiken, zie [ vormen met het Model van de Gegevens van de Vorm in Universele Redacteur ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) integreren.
+   > Leren hoe te om vormen of fragmenten met een Model van de Gegevens van de Vorm (FDM) in de Universele Redacteur te integreren om diverse achterste gegevensbronnen te gebruiken, zie [&#x200B; vormen met het Model van de Gegevens van de Vorm in Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) integreren.
 
 1. (Facultatief) specificeer **publiceer Datum** of **publiceer Datum** voor het fragment in het **Geavanceerde** lusje.
 
-   ![ Geavanceerd lusje ](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
+   ![&#x200B; Geavanceerd lusje &#x200B;](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
 1. Klik **creëren** om het fragment te produceren. Er wordt een dialoogvenster weergegeven met bewerkingsopties.
 
-   ![ geef fragment ](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png) uit
+   ![&#x200B; geef fragment &#x200B;](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png) uit
 
 1. Klik **uitgeven** om het fragment in Universele Redacteur met het toegepaste standaardmalplaatje te openen.
 
-   ![ Fragment in Universele Redacteur voor creatie ](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+   ![&#x200B; Fragment in Universele Redacteur voor creatie &#x200B;](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
 
-1. **Ontwerp uw fragmentinhoud**: voeg vormcomponenten (tekstgebieden, dropdowns, checkboxes) toe om de herbruikbare sectie te bouwen. Voor gedetailleerde componentenbegeleiding, zie [ Begonnen het Worden met Edge Delivery Services voor AEM Forms gebruikend Universele Redacteur ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+1. **Ontwerp uw fragmentinhoud**: voeg vormcomponenten (tekstgebieden, dropdowns, checkboxes) toe om de herbruikbare sectie te bouwen. Voor gedetailleerde componentenbegeleiding, zie [&#x200B; Begonnen het Worden met Edge Delivery Services voor AEM Forms gebruikend Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
 
 1. **vorm componenteneigenschappen**: Plaats gebiedsnamen, bevestigingsregels, en standaardwaarden zoals nodig voor uw gebruiksgeval.
 
 1. **sparen en voorproef**: Sparen uw fragment en gebruik de wijze van de Voorproef om de lay-out en de functionaliteit te verifiëren.
 
-   ![ Schermafbeelding van een voltooid fragment van de de vorm van contactdetails in de Universele Redacteur, die gebieden voor naam, telefoon, e-mail, en adres tonen die over veelvoudige vormen kunnen worden opnieuw gebruikt ](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![&#x200B; Schermafbeelding van een voltooid fragment van de de vorm van contactdetails in de Universele Redacteur, die gebieden voor naam, telefoon, e-mail, en adres tonen die over veelvoudige vormen kunnen worden opnieuw gebruikt &#x200B;](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
 **controlepunt van de Bevestiging:**
 
@@ -141,7 +141,7 @@ Voer de volgende stappen uit om een formulierfragment te maken in de Universal E
 - Veldeigenschappen en validatieregels werken zoals verwacht
 - Fragment wordt opgeslagen en beschikbaar in de Forms &amp; Documents-console
 
-Zodra uw fragment volledig is, kunt u het [ integreren in om het even welke vorm van Edge Delivery Services ](#adding-form-fragments-to-a-form).
+Zodra uw fragment volledig is, kunt u het [&#x200B; integreren in om het even welke vorm van Edge Delivery Services &#x200B;](#adding-form-fragments-to-a-form).
 
 +++
 
@@ -157,26 +157,26 @@ Een formulierfragment integreren in uw formulier:
 1. Open Inhoudsbrowser, en navigeer aan de **[!UICONTROL Adaptive Form]** component in de **boom van de Inhoud**.
 1. Navigeer naar de sectie waar u een fragment wilt toevoegen. Bijvoorbeeld, navigeer aan het **paneel van de Details van de Werknemer**.
 
-   ![ ga aan sectie ](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
+   ![&#x200B; ga aan sectie &#x200B;](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
 1. Klik het **[!UICONTROL Add]** pictogram en voeg de **[!UICONTROL Form Fragment]** component van de **Aangepaste lijst van de Componenten van de Vorm** toe.
-   ![ voeg het Fragment van de Vorm ](/help/edge/docs/forms/universal-editor/assets/add-fragment.png) toe
+   ![&#x200B; voeg het Fragment van de Vorm &#x200B;](/help/edge/docs/forms/universal-editor/assets/add-fragment.png) toe
 
    Wanneer u de component **[!UICONTROL Form Fragment]** selecteert, wordt het fragment aan het formulier toegevoegd. U kunt de eigenschappen van het toegevoegde fragment vormen door zijn **Eigenschappen** te openen. Bijvoorbeeld, verberg de titel van het fragment van zijn **Eigenschappen**.
 
-   ![ Vormend eigenschappen van fragment ](/help/edge/docs/forms/universal-editor/assets/fragment-properties.png)
+   ![&#x200B; Vormend eigenschappen van fragment &#x200B;](/help/edge/docs/forms/universal-editor/assets/fragment-properties.png)
 
 1. Selecteer de **verwijzing van het Fragment** in **Basis** tabel. Alle fragmenten die beschikbaar zijn voor het formulier, worden weergegeven, afhankelijk van het formuliermodel.
 
    Navigeer bijvoorbeeld naar `/content/forms/af` en selecteer het `Contact Details` -fragment.
 
-   ![ Uitgezochte Fragment ](/help/edge/docs/forms/universal-editor/assets/select-fragment.png)
+   ![&#x200B; Uitgezochte Fragment &#x200B;](/help/edge/docs/forms/universal-editor/assets/select-fragment.png)
 
 1. Klik op **[!UICONTROL Select]**.
 
    Het formulierfragment wordt toegevoegd ten opzichte van het formulier en blijft gesynchroniseerd met het zelfstandige formulierfragment.
 
-   ![ Schermschot die het fragment van contactdetails tonen met succes in een werknemersvorm binnen de Universele Redacteur wordt geïntegreerd, die aantoont hoe de fragmenten hun structuur handhaven wanneer hergebruikt ](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![&#x200B; Schermschot die het fragment van contactdetails tonen met succes in een werknemersvorm binnen de Universele Redacteur wordt geïntegreerd, die aantoont hoe de fragmenten hun structuur handhaven wanneer hergebruikt &#x200B;](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    >[!NOTE]
    >
@@ -184,11 +184,11 @@ Een formulierfragment integreren in uw formulier:
 
    U kunt voorproef de vorm zien hoe de vorm op de **wijze van de Voorproef** verschijnt.
 
-   ![ Voorproef ](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
+   ![&#x200B; Voorproef &#x200B;](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
 
    Op dezelfde manier kunt u stap 3 tot en met 7 herhalen om het fragment `Contact Details` in te voegen voor het deelvenster `Supervisor Details` .
 
-   ![ vorm van de Details van de Werknemer ](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
+   ![&#x200B; vorm van de Details van de Werknemer &#x200B;](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
 
 +++
 
@@ -203,7 +203,7 @@ U kunt verschillende bewerkingen uitvoeren op formulierfragmenten via de gebruik
 
 1. Selecteer een formulierfragment en op de werkbalk worden de volgende bewerkingen weergegeven die u op het geselecteerde fragment kunt uitvoeren.
 
-   ![ beheert fragment ](/help/edge/docs/forms/universal-editor/assets/manage-fragment.png)
+   ![&#x200B; beheert fragment &#x200B;](/help/edge/docs/forms/universal-editor/assets/manage-fragment.png)
 
    <table>
     <tbody>
@@ -294,7 +294,7 @@ U hebt geleerd hoe u in Edge Delivery Services formulierfragmenten kunt gebruike
 
 - Maak een bibliotheek met veelgebruikte fragmenten voor uw organisatie.
 - Vaststellen van naamconventies en beheerbeleid voor fragmentgebruik.
-- Onderzoek geavanceerde integratie met [ Modellen van de Gegevens van de Vorm ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) voor dynamische gegeven-gedreven fragmenten
+- Onderzoek geavanceerde integratie met [&#x200B; Modellen van de Gegevens van de Vorm &#x200B;](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) voor dynamische gegeven-gedreven fragmenten
 - Op fragment gebaseerde formuliersjablonen implementeren voor consistente gebruikerservaring.
 
 Uw formulieren profiteren nu van modulaire, onderhoudsbare architectuur die efficiënt over projecten kan worden geschaald en tegelijkertijd een consistente gebruikerservaring garandeert.

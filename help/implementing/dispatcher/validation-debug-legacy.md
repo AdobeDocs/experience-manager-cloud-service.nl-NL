@@ -17,9 +17,9 @@ ht-degree: 0%
 ## Inleiding {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Voor meer informatie over Dispatcher in de Wolk en hoe te om de Hulpmiddelen van Dispatcher te downloaden zie [ Dispatcher in de Cloud ](/help/implementing/dispatcher/disp-overview.md) pagina.
+>Voor meer informatie over Dispatcher in de Wolk en hoe te om de Hulpmiddelen van Dispatcher te downloaden zie [&#x200B; Dispatcher in de Cloud &#x200B;](/help/implementing/dispatcher/disp-overview.md) pagina.
 
-De volgende secties beschrijven de structuur van het dossier van de erfeniswijze, lokale bevestiging, het zuiveren en hoe te van de erfeniswijze aan de [ flexibele wijze ](/help/implementing/dispatcher/validation-debug.md) migreren.
+De volgende secties beschrijven de structuur van het dossier van de erfeniswijze, lokale bevestiging, het zuiveren en hoe te van de erfeniswijze aan de [&#x200B; flexibele wijze &#x200B;](/help/implementing/dispatcher/validation-debug.md) migreren.
 
 In dit artikel wordt ervan uitgegaan dat de Dispatcher-configuratie van uw project niet de bestandsindeling opt-in/USE_SOURCES_DIRECTLY bevat. Hierdoor zijn er beperkingen met betrekking tot het aantal en de grootte van bestanden, zoals:
 
@@ -28,7 +28,7 @@ In dit artikel wordt ervan uitgegaan dat de Dispatcher-configuratie van uw proje
 
 Vanaf de Cloud Manager 2021.7.0-release genereren nieuwe Cloud Manager-programma&#39;s gefabriceerde projectstructuren met AEM archetype 28 en hoger, waaronder het eerder genoemde bestand.
 
-Het wordt **hoogst geadviseerd** dat u van erfeniswijze aan flexibele wijze zoals geschetst in de migratiesectie [ migrerend van erfeniswijze aan flexibele wijze ](#migrating-flexible) migreert. Het gebruik van de flexibele modus zorgt er ook voor dat de SDK en de runtime de configuratie op een verbeterde manier valideren en implementeren.
+Het wordt **hoogst geadviseerd** dat u van erfeniswijze aan flexibele wijze zoals geschetst in de migratiesectie [&#x200B; migrerend van erfeniswijze aan flexibele wijze &#x200B;](#migrating-flexible) migreert. Het gebruik van de flexibele modus zorgt er ook voor dat de SDK en de runtime de configuratie op een verbeterde manier valideren en implementeren.
 
 ## Bestandsstructuur {#legacy-mode-file-structure}
 
@@ -174,7 +174,7 @@ Standaardhostglobing geschikt voor een standaardproject. Wijzig `virtualhosts.an
 
 ## Ondersteunde Apache-modules {#apache-modules}
 
-Zie [ Ondersteunde modules Apache ](/help/implementing/dispatcher/disp-overview.md#supported-directives).
+Zie [&#x200B; Ondersteunde modules Apache &#x200B;](/help/implementing/dispatcher/disp-overview.md#supported-directives).
 
 ## Lokale validatie {#local-validation-legacy-mode}
 
@@ -220,7 +220,7 @@ Het script doet het volgende:
 
 1. De validator wordt uitgevoerd. Als de configuratie ongeldig is, ontbreekt het manuscript.
 2. De methode voert de opdracht `httpd -t` uit om te testen of de syntaxis correct is, zodat Apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
-3. Controleert dat de ondergroep van de de configuratiedossiers van SDK van Dispatcher, die om zoals beschreven in de [ de structuursectie van het Dossier ](##legacy-mode-file-structure) moeten zijn onveranderlijk, niet is uitgegeven. Deze controle is nieuw en is geïntroduceerd met AEM SDK-versie 2021.1.4738 die ook Dispatcher Tools versie 2.0.36 bevat. Vóór deze update hebben klanten mogelijk ten onrechte aangenomen dat eventuele lokale SDK-wijzigingen van die onveranderlijke bestanden ook worden toegepast op de cloud-omgeving.
+3. Controleert dat de ondergroep van de de configuratiedossiers van SDK van Dispatcher, die om zoals beschreven in de [&#x200B; de structuursectie van het Dossier &#x200B;](##legacy-mode-file-structure) moeten zijn onveranderlijk, niet is uitgegeven. Deze controle is nieuw en is geïntroduceerd met AEM SDK-versie 2021.1.4738 die ook Dispatcher Tools versie 2.0.36 bevat. Vóór deze update hebben klanten mogelijk ten onrechte aangenomen dat eventuele lokale SDK-wijzigingen van die onveranderlijke bestanden ook worden toegepast op de cloud-omgeving.
 
 Tijdens een Cloud Manager-implementatie wordt de syntaxiscontrole van `httpd -t` ook uitgevoerd en worden eventuele fouten opgenomen in het Cloud Manager `Build Images step failure` -logboek.
 
@@ -228,7 +228,7 @@ Tijdens een Cloud Manager-implementatie wordt de syntaxiscontrole van `httpd -t`
 
 Als een instructie niet is gevoegd op lijst van gewenste personen, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Bovendien worden alle bestanden met patroon `conf.dispatcher.d/enabled_farms/*.farm` gescand en wordt gecontroleerd of:
 
-* Geen filterregel bestaat die het gebruik via `/glob` toestaat (zie [ CVE-2016-0957 ](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) voor meer details.
+* Geen filterregel bestaat die het gebruik via `/glob` toestaat (zie [&#x200B; CVE-2016-0957 &#x200B;](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) voor meer details.
 * Er wordt geen beheerfunctie weergegeven. Bijvoorbeeld toegang tot paden zoals `/crx/de or /system/console` .
 
 Het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn gevoegd op lijst van gewenste personen. Er worden geen syntactische of semantische problemen gerapporteerd met uw Apache-configuratie, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
@@ -316,7 +316,7 @@ De namen van de opgenomen bestanden moeten als volgt luiden:
 
 >[!TIP]
 >
->Als u meer bestanden op een veel minder beperkte manier wilt opnemen, kunt u overschakelen naar de flexibele Dispatcher-configuratiemodus. Zie [ Valideren en het Zuiveren gebruikend de Hulpmiddelen van Dispatcher ](/help/implementing/dispatcher/validation-debug.md) voor meer details op flexibele wijze.
+>Als u meer bestanden op een veel minder beperkte manier wilt opnemen, kunt u overschakelen naar de flexibele Dispatcher-configuratiemodus. Zie [&#x200B; Valideren en het Zuiveren gebruikend de Hulpmiddelen van Dispatcher &#x200B;](/help/implementing/dispatcher/validation-debug.md) voor meer details op flexibele wijze.
 
 Alternatief, kunt u de **standaard** versie van omvatten herschrijft regels, de waarvan naam `conf.d/rewrites/default_rewrite.rules` is.
 Er is geen standaardversie van de variabelebestanden.
@@ -483,4 +483,4 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migreren van oude modus naar flexibele modus {#migrating-flexible}
 
-Met de versie van Cloud Manager 2021.7.0, produceren de nieuwe programma&#39;s van Cloud Manager gemodelleerde projectstructuren met AEM archetype 28 of hoger, die het dossier **opt-in/USE_SOURCES_DIRECTLY** omvat. Eerdere beperkingen van de verouderde modus met betrekking tot het aantal en de grootte van bestanden worden verwijderd, waardoor de SDK en de runtime de configuratie op een verbeterde manier valideren en implementeren. Als dit bestand niet beschikbaar is in uw Dispatcher-configuratie, wordt u ten zeerste aangeraden te migreren. Gebruik de methodes die in de [ worden beschreven flexibele wijze ](/help/implementing/dispatcher/validation-debug.md#migrating) pagina.
+Met de versie van Cloud Manager 2021.7.0, produceren de nieuwe programma&#39;s van Cloud Manager gemodelleerde projectstructuren met AEM archetype 28 of hoger, die het dossier **opt-in/USE_SOURCES_DIRECTLY** omvat. Eerdere beperkingen van de verouderde modus met betrekking tot het aantal en de grootte van bestanden worden verwijderd, waardoor de SDK en de runtime de configuratie op een verbeterde manier valideren en implementeren. Als dit bestand niet beschikbaar is in uw Dispatcher-configuratie, wordt u ten zeerste aangeraden te migreren. Gebruik de methodes die in de [&#x200B; worden beschreven flexibele wijze &#x200B;](/help/implementing/dispatcher/validation-debug.md#migrating) pagina.

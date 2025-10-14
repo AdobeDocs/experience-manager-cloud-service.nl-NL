@@ -28,7 +28,7 @@ Deze videoreeks verkent verschillende gebruiksgevallen bij de integratie van een
 * [Implementatie van productie](#production-deployment)
 * [Releasetags synchroniseren](#sync-tags)
 
-De videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie de [ extra middelen hieronder ](#additional-resources) voor meer details op git.
+De videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie de [&#x200B; extra middelen hieronder &#x200B;](#additional-resources) voor meer details op git.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
@@ -66,6 +66,6 @@ Synchroniseer releasetags van een Cloud Manager-it-opslagplaats naar een door de
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Middelen GitHub ](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
-* [ Atlassian Tutorials van het Git ](https://www.atlassian.com/git/tutorials/what-is-version-control)
-* [ Git Cheat Sheet ](https://education.github.com/git-cheat-sheet-education.pdf)
+* [&#x200B; Middelen GitHub &#x200B;](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
+* [&#x200B; Atlassian Tutorials van het Git &#x200B;](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [&#x200B; Git Cheat Sheet &#x200B;](https://education.github.com/git-cheat-sheet-education.pdf)

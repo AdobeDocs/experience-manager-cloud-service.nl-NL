@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Organisaties beschikken over een metagegevensmodel dat de detectie, het gebruik, de interoperabiliteit, enzovoort van middelen verbetert. Correcte toepassing van metagegevens is onaantastbaar om workflows met metagegevens en processen te behouden. Om aan organisatie-brede meta-gegevensstrategie en normen te houden, kunt u meta-gegevensschema&#39;s gebruiken die gebruikers DAM helpen zich te richten. Met [!DNL Adobe Experience Manager] kunt u gemakkelijk en flexibel metagegevensschema&#39;s maken, onderhouden en toepassen.
@@ -25,15 +25,15 @@ In [!DNL Adobe Experience Manager Assets] bevatten schema&#39;s specifieke velde
 
 Ga als volgt te werk om de pagina met eigenschappen voor een element weer te geven en te bewerken:
 
-1. Klik op de optie **[!UICONTROL View Properties]** van de snelle handelingen op het element element in de kaartweergave. Alternatief, selecteer een activa en klik dan **[!UICONTROL Properties]** ![ meningseigenschappen ](assets/do-not-localize/info-circle-icon.png) van de toolbar.
+1. Klik op de optie **[!UICONTROL View Properties]** van de snelle handelingen op het element element in de kaartweergave. Alternatief, selecteer een activa en klik dan **[!UICONTROL Properties]** ![&#x200B; meningseigenschappen &#x200B;](assets/do-not-localize/info-circle-icon.png) van de toolbar.
 
 1. U kunt de verschillende bewerkbare eigenschappen van metagegevens bewerken onder de beschikbare tabbladen. U kunt het element [!UICONTROL Type] echter niet wijzigen op het tabblad [!UICONTROL Basic] met eigenschappen.
 
-   ![ Basis lusje van activaEigenschappen, waar activa type niet kan worden veranderd ](assets/asset-properties-basic-tab.png)
+   ![&#x200B; Basis lusje van activaEigenschappen, waar activa type niet kan worden veranderd &#x200B;](assets/asset-properties-basic-tab.png)
 
    *Cijfer: Basis lusje op activa [!UICONTROL Properties].*
 
-   Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [ Forms van het Schema van Meta-gegevens ](#edit-metadata-schema-forms) voor meer informatie uitgeven. Als u het metagegevensschema van een MIME-type wijzigt, wordt de indeling van de eigenschappenpagina voor de elementen en alle subtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder `default/image` , wordt alleen de indeling van metagegevens (eigenschappen van elementen) gewijzigd voor elementen met het MIME-type `image/jpeg` . Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
+   Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [&#x200B; Forms van het Schema van Meta-gegevens &#x200B;](#edit-metadata-schema-forms) voor meer informatie uitgeven. Als u het metagegevensschema van een MIME-type wijzigt, wordt de indeling van de eigenschappenpagina voor de elementen en alle subtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder `default/image` , wordt alleen de indeling van metagegevens (eigenschappen van elementen) gewijzigd voor elementen met het MIME-type `image/jpeg` . Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
 ## Metagegevensschema-formulieren {#default-metadata-schema-forms}
 
@@ -66,7 +66,7 @@ Ga als volgt te werk om een metagegevensschemaformulier toe te voegen:
 
    >[!NOTE]
    >
-   >Er wordt een vergrendelingssymbool weergegeven met de onbewerkte sjablonen. Als u een malplaatje aanpast, is het niet gesloten ![ slot gesloten ](assets/do-not-localize/lock_closed_icon.svg).
+   >Er wordt een vergrendelingssymbool weergegeven met de onbewerkte sjablonen. Als u een malplaatje aanpast, is het niet gesloten ![&#x200B; slot gesloten &#x200B;](assets/do-not-localize/lock_closed_icon.svg).
 
 1. Geef in het dialoogvenster de titel van het schema op en klik op **[!UICONTROL Create]** om het maken van het formulier te voltooien.
 
@@ -78,7 +78,7 @@ U kunt een nieuw toegevoegd of bestaand schema voor metagegevens bewerken. Het m
 
 1. Pas het metagegevensformulier aan op de pagina **[!UICONTROL Metadata Schema Form Editor]** . Sleep de benodigde componenten van de tab **[!UICONTROL Build Form]** naar een van de tabbladen.
 
-   ![ Redacteur van het Schema van Meta-gegevens om de pagina van ActivaEigenschappen aan te passen ](assets/metadata-schema-editor.png)
+   ![&#x200B; Redacteur van het Schema van Meta-gegevens om de pagina van ActivaEigenschappen aan te passen &#x200B;](assets/metadata-schema-editor.png)
 
    *Cijfer: A [!UICONTROL Metadata Schema Form Editor] pagina met beschikbare lusjes.*
 
@@ -152,11 +152,11 @@ In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Settings
 
 Met de schema-editor kunt u een tabblad toevoegen of verwijderen. Het standaardschema bevat de tabbladen **[!UICONTROL Basic]** , **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]** en **[!UICONTROL IPTC Extension]** .
 
-![ Standaardlusjes in de vorm van het Schema van Meta-gegevens ](assets/metadata-schema-form-tabs.png)
+![&#x200B; Standaardlusjes in de vorm van het Schema van Meta-gegevens &#x200B;](assets/metadata-schema-form-tabs.png)
 
 Klik op `+` om een tabblad toe te voegen aan een schemaformulier. Standaard heeft het nieuwe tabblad de naam `Unnamed-1` . U kunt de naam wijzigen via het tabblad **[!UICONTROL Settings]** . Klik op `X` om een tab te verwijderen.
 
-![ voeg of schrap een lusje toe gebruikend de Redacteur van het Schema van Meta-gegevens ](assets/metadata-schema-form-new-tab.png)
+![&#x200B; voeg of schrap een lusje toe gebruikend de Redacteur van het Schema van Meta-gegevens &#x200B;](assets/metadata-schema-form-new-tab.png)
 
 ## Formulieren met metagegevens verwijderen {#deleting-metadata-schema-forms}
 
@@ -170,7 +170,7 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op h
 
 >[!NOTE]
 >
->* Nadat u douaneveranderingen in een standaardvorm schrapt, sluit het slot ![ gesloten ](assets/do-not-localize/lock_closed_icon.svg) opnieuw verschijnt vóór de vorm. Hiermee wordt aangegeven dat de standaardstatus van het formulier wordt hersteld.
+>* Nadat u douaneveranderingen in een standaardvorm schrapt, sluit het slot ![&#x200B; gesloten &#x200B;](assets/do-not-localize/lock_closed_icon.svg) opnieuw verschijnt vóór de vorm. Hiermee wordt aangegeven dat de standaardstatus van het formulier wordt hersteld.
 >* U kunt de standaardformulieren voor het metagegevensschema niet verwijderen in [!DNL Assets] .
 
 ## Schema-formulieren voor MIME-typen {#schema-forms-for-mime-types}

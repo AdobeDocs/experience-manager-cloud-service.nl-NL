@@ -62,18 +62,18 @@ Meld u aan bij uw CLI met `az login` voordat u verder gaat met de rest van deze 
 U moet de configuratie CMK (Customer Managed Keys) voor uw AEM as a Cloud Service-omgeving aanvragen via de gebruikersinterface. Om dit te doen, navigeer aan de Veiligheid UI van het Huis van AEM, onder de **Klant Beheerde Sleutels** sectie.
 U kunt dan beginnen het onboarding proces door op het **Begin te klikken onboarding** knoop.
 
-![ Begin op instapniveau van een website gebruikend CMK UI ](./assets/cmk/step1.png)
+![&#x200B; Begin op instapniveau van een website gebruikend CMK UI &#x200B;](./assets/cmk/step1.png)
 
 
 ## Een toepassings-id verkrijgen van Adobe {#obtain-an-application-id-from-adobe}
 
 Na het starten van het instapproces wordt een Entra-toepassings-id geleverd door Adobe. Deze toepassings-id is nodig voor de rest van de handleiding en wordt gebruikt om een serviceprincipal te maken waarmee Adobe toegang heeft tot uw sleutelkluis. Als u nog geen toepassings-id hebt, moet u wachten tot deze door Adobe is opgegeven.
 
-![ het verzoek wordt proces, wacht op Adobe om identiteitskaart van de Toepassing te verstrekken Entra ](./assets/cmk/step2.png)
+![&#x200B; het verzoek wordt proces, wacht op Adobe om identiteitskaart van de Toepassing te verstrekken Entra &#x200B;](./assets/cmk/step2.png)
 
 Nadat het verzoek is voltooid, kunt u de toepassings-id zien in de CMK-interface.
 
-![ Entra identiteitskaart van de Toepassing wordt verstrekt door Adobe ](./assets/cmk/step3.png)
+![&#x200B; Entra identiteitskaart van de Toepassing wordt verstrekt door Adobe &#x200B;](./assets/cmk/step3.png)
 
 ## Een nieuwe bronnengroep maken {#create-a-new-resource-group}
 
@@ -182,7 +182,7 @@ $subscriptionId="<Subscription ID>"
 ```
 
 Geef deze informatie op in de CMK-gebruikersinterface:
-![ Vul de informatie in UI ](./assets/cmk/step3a.png)
+![&#x200B; Vul de informatie in UI &#x200B;](./assets/cmk/step3a.png)
 
 ## Implicaties van het Herhalen van Zeer belangrijke Toegang {#implications-of-revoking-key-access}
 
@@ -194,13 +194,13 @@ Als u besluit om de toegang van het Platform tot uw gegevens in te trekken, kunt
 
 Nadat u de vereiste informatie in de CMK-interface hebt opgegeven, start Adobe het configuratieproces voor uw AEM as a Cloud Service-omgeving. Dit proces kan enige tijd duren en u wordt op de hoogte gesteld zodra het is voltooid.
 
-![ wacht op Adobe om het milieu te vormen.](./assets/cmk/step4.png)
+![&#x200B; wacht op Adobe om het milieu te vormen.](./assets/cmk/step4.png)
 
 
 ## CMK-instelling voltooien {#complete-the-cmk-setup}
 
 Zodra het configuratieproces wordt voltooid, zult u de status van uw opstelling CMK in UI kunnen zien. U kunt ook de sleutelvault en de encryptiesleutel zien.
-![ het proces nu voltooide ](./assets/cmk/step5.png)
+![&#x200B; het proces nu voltooide &#x200B;](./assets/cmk/step5.png)
 
 ## Vragen en ondersteuning {#questions-and-support}
 

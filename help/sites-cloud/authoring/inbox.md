@@ -30,19 +30,19 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en er a
 >
 >Raadpleeg de volgende secties voor meer informatie over de itemtypen:
 >
->* [ Projecten ](/help/sites-cloud/authoring/projects/overview.md)
->* [ Projecten - het werken met Taken ](/help/sites-cloud/authoring/projects/tasks.md)
->* [ Werkstromen ](/help/sites-cloud/authoring/workflows/overview.md)
+>* [&#x200B; Projecten &#x200B;](/help/sites-cloud/authoring/projects/overview.md)
+>* [&#x200B; Projecten - het werken met Taken &#x200B;](/help/sites-cloud/authoring/projects/tasks.md)
+>* [&#x200B; Werkstromen &#x200B;](/help/sites-cloud/authoring/workflows/overview.md)
 
 ## Postvak IN van koptekst {#inbox-in-the-header}
 
 Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoond in de kopbal. De indicator kan ook worden geopend om snel toegang te geven tot de pagina&#39;s waarvoor een of meer handelingen vereist zijn, of om toegang te krijgen tot het Postvak IN:
 
-![ Inbox overzicht in kopbal ](/help/sites-cloud/authoring/assets/inbox-header.png)
+![&#x200B; Inbox overzicht in kopbal &#x200B;](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
 >
->Bepaalde acties zullen ook in de [ kaartmening van het aangewezen middel ](/help/sites-cloud/authoring/basic-handling.md#card-view) worden getoond.
+>Bepaalde acties zullen ook in de [&#x200B; kaartmening van het aangewezen middel &#x200B;](/help/sites-cloud/authoring/basic-handling.md#card-view) worden getoond.
 
 ## De Postvak IN openen {#opening-the-inbox}
 
@@ -53,9 +53,9 @@ U opent als volgt het AEM-vak:
 1. Selecteer **Alles bekijken**. **AEM Inbox** opent. In de inbox ziet u items uit workflows, projecten en taken.
 1. De standaardweergave is [Lijstweergave](#inbox-list-view), maar u kunt ook schakelen naar [Kalenderweergave](#inbox-calendar-view). Dit gebeurt met de weergavekiezer (werkbalk, rechtsboven).
 
-   Voor beide meningen kunt u [ Montages van de Mening ](#inbox-view-settings) ook bepalen. De beschikbare opties zijn afhankelijk van de huidige weergave.
+   Voor beide meningen kunt u [&#x200B; Montages van de Mening &#x200B;](#inbox-view-settings) ook bepalen. De beschikbare opties zijn afhankelijk van de huidige weergave.
 
-   ![ Inbox meningsmontages ](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
+   ![&#x200B; Inbox meningsmontages &#x200B;](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
 >
@@ -65,13 +65,13 @@ U opent als volgt het AEM-vak:
 
 In deze weergave worden alle items weergegeven, samen met relevante informatie:
 
-![ Inbox lijstmening ](/help/sites-cloud/authoring/assets/inbox-list-view.png)
+![&#x200B; Inbox lijstmening &#x200B;](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
 ### Postvak IN - Kalenderweergave {#inbox-calendar-view}
 
 In deze weergave worden de items weergegeven op basis van hun positie in de kalender:
 
-![ Inbox kalendermening ](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
+![&#x200B; Inbox kalendermening &#x200B;](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
 
 U kunt:
 
@@ -80,7 +80,7 @@ U kunt:
 * Boor neer voor meer gedetailleerde informatie over een punt
 * Selecteer een datumbereik waarop u de focus op de weergave wilt plaatsen:
 
-![ Inbox de waaier van de de meningsdatum van de kalender ](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
+![&#x200B; Inbox de waaier van de de meningsdatum van de kalender &#x200B;](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
 
 ### Postvak IN - Instellingen weergeven {#inbox-view-settings}
 
@@ -94,7 +94,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * **Planning** of **Geen**
    * **Grootte van de Kaart**
 
-  ![ Inbox montages van de kalendermening van de Kalender ](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![&#x200B; Inbox montages van de kalendermening van de Kalender &#x200B;](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **de Mening van de Lijst**
 
@@ -103,11 +103,11 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * **Soort op**
    * **de Orde van de Sortering**
 
-  ![ Inbox de montages van de lijstmening ](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![&#x200B; Inbox de montages van de lijstmening &#x200B;](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
   U kunt uw agenda ook delegeren aan andere gebruikers, vragen om delegatie van andere gebruikers en uw delegaties beheren.
 
-  ![ Inbox de montages van de de lijstmening van de lijstdelegatie ](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![&#x200B; Inbox de montages van de de lijstmening van de lijstdelegatie &#x200B;](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## Actie ondernemen op een item {#taking-action-on-an-item}
 
@@ -117,7 +117,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
 1. Als u een actie wilt uitvoeren op een item, selecteert u de miniatuur voor het desbetreffende item. Pictogrammen voor de acties die op dat item van toepassing zijn, worden weergegeven op de werkbalk:
 
-   ![ Uitgezochte inbox punt ](/help/sites-cloud/authoring/assets/inbox-select-item.png)
+   ![&#x200B; Uitgezochte inbox punt &#x200B;](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
    De acties zijn geschikt voor het item en omvatten:
 
@@ -137,7 +137,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    >
    >Raadpleeg de volgende secties voor meer informatie:
    >
-   >* De punten van het werkschema - [ Deelnemend aan Werkschema&#39;s ](/help/sites-cloud/authoring/workflows/participating.md)
+   >* De punten van het werkschema - [&#x200B; Deelnemend aan Werkschema&#39;s &#x200B;](/help/sites-cloud/authoring/workflows/participating.md)
 
 2. Afhankelijk van het geselecteerde item wordt een handeling gestart, bijvoorbeeld:
 
@@ -147,7 +147,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
    Bijvoorbeeld, **Afgevaardigde** opent een dialoog:
 
-   ![ Delegate inbox taak ](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
+   ![&#x200B; Delegate inbox taak &#x200B;](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
    Afhankelijk van of een dialoogvenster, wizard, documentatiepagina is geopend, kunt u:
 
@@ -173,19 +173,19 @@ In het Postvak IN kunt u taken maken:
       * **Datum van het Begin**
       * **Vervaldatum**
 
-   ![ binnen voegt taak ](/help/sites-cloud/authoring/assets/inbox-create-task.png) toe
+   ![&#x200B; binnen voegt taak &#x200B;](/help/sites-cloud/authoring/assets/inbox-create-task.png) toe
 
    * **Geavanceerd**
 
       * **Naam**: Gebruikt om URL te vormen en als het leeg is gebaseerd op de **Titel**.
 
-   ![ binnen voegt taak geavanceerde opties ](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png) toe
+   ![&#x200B; binnen voegt taak geavanceerde opties &#x200B;](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png) toe
 
 1. Selecteer **voorleggen**.
 
 ## Een project maken {#creating-a-project}
 
-Voor bepaalde taken kunt u a [ Project ](/help/sites-cloud/authoring/projects/overview.md) creëren dat op die taak wordt gebaseerd:
+Voor bepaalde taken kunt u a [&#x200B; Project &#x200B;](/help/sites-cloud/authoring/projects/overview.md) creëren dat op die taak wordt gebaseerd:
 
 1. Selecteer de gewenste taak door op de miniatuur te tikken of te klikken.
 
@@ -213,7 +213,7 @@ Voor bepaalde taken kunt u a [ Project ](/help/sites-cloud/authoring/projects/ov
 
    >[!NOTE]
    >
-   >Zie [ Creërend een Project ](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) voor volledige informatie.
+   >Zie [&#x200B; Creërend een Project &#x200B;](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) voor volledige informatie.
 
 1. Selecteer **creeer** om de actie te bevestigen.
 
@@ -225,12 +225,12 @@ U kunt de vermelde items filteren:
 
 1. Open de filterkiezer:
 
-   ![ Inbox onderzoek ](/help/sites-cloud/authoring/assets/inbox-search.png)
+   ![&#x200B; Inbox onderzoek &#x200B;](/help/sites-cloud/authoring/assets/inbox-search.png)
 
 1. U kunt de vermelde items filteren op basis van een reeks criteria, waarvan er vele kunnen worden verfijnd. Bijvoorbeeld:
 
-   ![ Inbox onderzoeksfilter ](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
+   ![&#x200B; Inbox onderzoeksfilter &#x200B;](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
    >
-   >Met [ Montages van de Mening ](#inbox-view-settings) kunt u de soortorde ook vormen wanneer het gebruiken van de [ Mening van de Lijst ](#inbox-list-view).
+   >Met [&#x200B; Montages van de Mening &#x200B;](#inbox-view-settings) kunt u de soortorde ook vormen wanneer het gebruiken van de [&#x200B; Mening van de Lijst &#x200B;](#inbox-list-view).

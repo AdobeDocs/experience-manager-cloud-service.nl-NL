@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # AEM Forms-integratie met Adobe Experience Platform (AEP) {#aem-forms-aep-integration}
 
-<span class="preview"> De mogelijkheid om Adaptive Forms (AEM Forms) te verbinden met Adobe Experience Platform (AEP) valt onder het programma voor vroege toegang. Om toegang tot het vermogen te verzoeken, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D). U kunt ook de <a href="/help/forms/early-access-ea-features.md"> Vroege pagina van het Programma van de Toegang </a> bezoeken om alle beschikbare innovaties en mogelijkheden te ontdekken. . </span>
+<span class="preview"> De mogelijkheid om Adaptive Forms (AEM Forms) te verbinden met Adobe Experience Platform (AEP) valt onder het programma voor vroege toegang. Om toegang tot het vermogen te verzoeken, verzend eenvoudig een e-mail van uw officieel adres aan [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D). U kunt ook de <a href="/help/forms/early-access-ea-features.md"> Vroege pagina van het Programma van de Toegang </a> bezoeken om alle beschikbare innovaties en mogelijkheden te ontdekken. . </span>
 
 ## Overzicht {#overview}
 
@@ -58,16 +58,16 @@ De onderstaande video bevat een stapsgewijze handleiding over de vereisten (zoal
 Voordat u de AEP-connector instelt in AEM Forms, moet u controleren of het volgende in Adobe Experience Platform is voltooid:
 
 1. Schema instellen
-   * [ creeer een schema XDM ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [ laat schema voor het profileren ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui#profile) toe
-   * [ bepaalt identiteitsgebied ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [&#x200B; creeer een schema XDM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [&#x200B; laat schema voor het profileren &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui#profile) toe
+   * [&#x200B; bepaalt identiteitsgebied &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Gegevensconfiguratie
-   * [ creeer een dataset ](https://experienceleague.adobe.com/nl/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [ opstelling die verbinding ](https://experienceleague.adobe.com/nl/docs/experience-platform/ingestion/tutorials/create-streaming-connection) stromen (u hebt het stromen eindpunt URL later nodig, zo maak een nota van het nu.)
+   * [&#x200B; creeer een dataset &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [&#x200B; opstelling die verbinding &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ingestion/tutorials/create-streaming-connection) stromen (u hebt het stromen eindpunt URL later nodig, zo maak een nota van het nu.)
 
 3. Verificatie
-   * [ produceer API geloofsbrieven ](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identiteitskaart van de Cliënt en Geheime cliënt) van Adobe Developer Console
+   * [&#x200B; produceer API geloofsbrieven &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identiteitskaart van de Cliënt en Geheime cliënt) van Adobe Developer Console
 
 
 ## Implementatiestappen
@@ -83,7 +83,7 @@ Voordat u de AEP-connector instelt in AEM Forms, moet u controleren of het volge
    * Clientgeheim (verkregen van ontwikkelaarsconsole)
    * OAuth URL (Er is een standaard-URL maar deze kan ook worden verkregen via de ontwikkelaarsconsole)
 
-   ![ Configuratie van de Wolk van AEP ](/help/forms/assets/aep-cloud-configuration.png)
+   ![&#x200B; Configuratie van de Wolk van AEP &#x200B;](/help/forms/assets/aep-cloud-configuration.png)
 
 1. Klik **verbinden** om de verbinding te vestigen. Nadat u de verbinding tot stand hebt gebracht, configureert u de volgende aanvullende instellingen:
    * Basis-URL: platform.adobe.io (dit is een standaard-URL en kan ook worden verkregen via de ontwikkelaarsconsole. De URL&#39;s van het oauth- en platform worden standaard ingesteld op URL&#39;s van het pod-object. Als u verbinding moet maken met het werkgebied, moet u URL&#39;s van het werkgebied gebruiken.)
@@ -173,7 +173,7 @@ Voer de volgende stappen uit om een adaptief formulier te maken dat is geschreve
 1. In het **lusje van Gegevens**, selecteer de **Adobe Experience Platform** optie.
 1. Selecteer uw cloudconfiguratie in het deelvenster Eigenschappen.
 
-   ![ schemaintegratie ](/help/forms/assets/xdm-schema-integration.png)
+   ![&#x200B; schemaintegratie &#x200B;](/help/forms/assets/xdm-schema-integration.png)
 
    Het systeem laadt alle beschikbare schema&#39;s van Adobe Experience Platform
 
@@ -193,7 +193,7 @@ Voer de volgende stappen uit om een adaptief formulier te maken dat is geschreve
      >* Als u niet het pictogram van Gegevensbronnen in uw Universele interface van de Redacteur ziet of het bezit van de Verwijzing in het juiste bezitspaneel binden, laat de **uitbreiding van de 0&rbrace; Gegevensbron &lbrace;in Extension Manager toe.**
      >* Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
      > 
-     > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+     > * Verwijs naar het [&#x200B; artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
    De prefill-service voor formulieren in de Universal Editor wordt momenteel niet ondersteund.
 
@@ -249,7 +249,7 @@ A: Deze connector werkt met zowel Adaptive Forms Core Components als Adaptive Fo
 A: Op dit moment kan elk formulier slechts naar één gegevensset verzenden.
 
 **Q: Is er een grens aan hoeveel vormvoorlegging kan worden verwerkt?**
-A: De voorlegging van de vorm is onderworpen aan uw AEP die inname [ quota en tariefgrenzen ](https://experienceleague.adobe.com/nl/docs/experience-platform/data-lifecycle/api/quota) stromen.
+A: De voorlegging van de vorm is onderworpen aan uw AEP die inname [&#x200B; quota en tariefgrenzen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/data-lifecycle/api/quota) stromen.
 
 <!-- 
 >
@@ -279,7 +279,7 @@ Dankzij de AEM Forms-integratie met Adobe Experience Platform kunnen organisatie
 
 Aan de slag met deze integratie:
 
-1. **de toegang van het Verzoek** - als u niet reeds hebt, zich bij het Vroege programma van de Toegang aansluiten door [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D) te contacteren
+1. **de toegang van het Verzoek** - als u niet reeds hebt, zich bij het Vroege programma van de Toegang aansluiten door [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D) te contacteren
 2. **bereidt uw milieu** voor - verzeker u de noodzakelijke toestemmingen en de configuraties in zowel AEM Forms als Adobe Experience Platform hebt
 3. **volg de implementatiestappen** - gebruik de gids hierboven aan opstelling uw wolkenconfiguratie en creeer uw eerste AEP-Verbonden vorm met XDM schemaintegratie
 4. **Test grondig** - bevestigt zowel de gegevensvoorlegging als prefill mogelijkheden in een ontwikkelomgeving
@@ -287,11 +287,11 @@ Aan de slag met deze integratie:
 
 ## Gerelateerde bronnen {#related-resources}
 
-* [ de documentatie van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL)
-* [ documentatie van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=nl-NL)
-* [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl-NL)
-* [ Streaming opname in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=nl-NL)
-* [ overzicht van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl-NL)
+* [&#x200B; de documentatie van AEM Forms as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL)
+* [&#x200B; documentatie van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=nl-NL)
+* [&#x200B; XDM overzicht van het Systeem &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl-NL)
+* [&#x200B; Streaming opname in Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=nl-NL)
+* [&#x200B; overzicht van het Profiel van de Klant in real time &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl-NL)
 * [AEM Forms-functies voor vroege toegang](/help/forms/early-access-ea-features.md)
 * [Adaptieve Forms maken met kerncomponenten](/help/forms/creating-adaptive-form-core-components.md)
 * [Formuliergegevensmodellen gebruiken in AEM Forms](/help/forms/using-form-data-model.md)

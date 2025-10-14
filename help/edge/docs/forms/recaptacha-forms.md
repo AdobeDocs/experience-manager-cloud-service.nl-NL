@@ -25,7 +25,7 @@ Neem bijvoorbeeld een enquêteformulier waarin gegevens worden verzameld zoals b
 
 Edge Delivery Services steunt slechts de **gebaseerde Score (v3)-reCAPTCHA** voor het Aanpassings Blok van de Vorm.
 
-![ Recaptcha V2 ](/help/forms/assets/recaptcha-v2-invisible.png){width="300" align="center"}
+![&#x200B; Recaptcha V2 &#x200B;](/help/forms/assets/recaptcha-v2-invisible.png){width="300" align="center"}
 
 
 Aan het einde van dit artikel leert u:
@@ -34,8 +34,8 @@ Aan het einde van dit artikel leert u:
 
 ## Voorwaarden
 
-- Begin met de ontwikkeling van Edge Delivery Services Forms door de stappen te volgen die in [ worden verklaard creeer een vorm gebruikend het AanpassingsBlok van Forms ](/help/edge/docs/forms/create-forms.md).
-- Registreer uw domein met [ Google reCAPTCHA en verkrijg geloofsbrieven ](https://www.google.com/recaptcha/admin/create).
+- Begin met de ontwikkeling van Edge Delivery Services Forms door de stappen te volgen die in [&#x200B; worden verklaard creeer een vorm gebruikend het AanpassingsBlok van Forms &#x200B;](/help/edge/docs/forms/create-forms.md).
+- Registreer uw domein met [&#x200B; Google reCAPTCHA en verkrijg geloofsbrieven &#x200B;](https://www.google.com/recaptcha/admin/create).
 
 ## Google reCAPTCHA inschakelen voor één formulier {#enable-google-recaptchas-for-a-single-form}
 
@@ -46,7 +46,7 @@ Google reCAPTCHA inschakelen voor één formulier:
 1. [Vorm de reCAPTCHA geheime sleutel in het dossier van de projectconfiguratie](#configure-secret-key)
 1. [De reCAPTCHA-sitesleutel toevoegen aan uw formulier](#add-site-key)
 
-Beginnen reCaptcha in Edge Delivery Services Forms te vormen, verwijs naar het volgende [ spreadsheet ](/help/edge/docs/forms/assets/recaptcha.xlsx) dat de vormdefinitie voor een vorm omvat.
+Beginnen reCaptcha in Edge Delivery Services Forms te vormen, verwijs naar het volgende [&#x200B; spreadsheet &#x200B;](/help/edge/docs/forms/assets/recaptcha.xlsx) dat de vormdefinitie voor een vorm omvat.
 
 ### Vorm de reCAPTCHA geheime sleutel in het dossier van de projectconfiguratie {#configure-secret-key}
 
@@ -57,7 +57,7 @@ Het Sitegeheim voor domein dat bij Google reCAPTCHA wordt geregistreerd wordt to
 
    >[!NOTE]
    >
-   > Het [ dossier van de projectconfiguratie ](https://www.aem.live/docs/configuration) is een spreadsheet die bij `/.helix/config` wordt gevestigd. Als het bestand niet bestaat, maakt u het.
+   > Het [&#x200B; dossier van de projectconfiguratie &#x200B;](https://www.aem.live/docs/configuration) is een spreadsheet die bij `/.helix/config` wordt gevestigd. Als het bestand niet bestaat, maakt u het.
 
 1. Open het `config` -bestand en voeg de volgende sleutel- en waardeparen toe:
 
@@ -66,16 +66,16 @@ Het Sitegeheim voor domein dat bij Google reCAPTCHA wordt geregistreerd wordt to
 
    >[!NOTE]
    >
-   >  - U kunt de reCAPTCHA sleutels van [ Google reCAPTCHA Admin Console ](https://www.google.com/recaptcha/admin) terugwinnen.
+   >  - U kunt de reCAPTCHA sleutels van [&#x200B; Google reCAPTCHA Admin Console &#x200B;](https://www.google.com/recaptcha/admin) terugwinnen.
    >  - U moet de waarde van **captcha.type** in het `config` dossier als **reCAPTCHA v2** specificeren.
 
    Raadpleeg de schermafbeelding van een projectconfiguratiebestand hieronder:
 
-   ![ het configuratiedossier van het Project ](/help/forms/assets/recaptcha-config-file.png)
+   ![&#x200B; het configuratiedossier van het Project &#x200B;](/help/forms/assets/recaptcha-config-file.png)
 
 1. Sla het `config` -bestand op.
 
-1. Voorproef en publiceer het `config` dossier gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Voorproef en publiceer het `config` dossier gebruikend [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
 ### Voeg reCAPTCHA-sitesleutel toe aan uw formulier {#add-site-key}
 
@@ -88,18 +88,18 @@ De sitecode voor een domein dat is geregistreerd bij Google reCAPTCHA, wordt toe
 
    Raadpleeg de onderstaande schermafbeelding waarin het spreadsheet met het nieuwe rijtype als CAPTCHA wordt weergegeven:
 
-   ![ Recaptcha spreadsheet ](/help/edge/docs/forms/assets/recaptcha-spreadsheet.png)
+   ![&#x200B; Recaptcha spreadsheet &#x200B;](/help/edge/docs/forms/assets/recaptcha-spreadsheet.png)
 
    >[!NOTE]
    >
-   >  U kunt de reCAPTCHA sleutels van [ Google reCAPTCHA Admin Console ](https://www.google.com/recaptcha/admin) terugwinnen.
+   >  U kunt de reCAPTCHA sleutels van [&#x200B; Google reCAPTCHA Admin Console &#x200B;](https://www.google.com/recaptcha/admin) terugwinnen.
 
 1. Sla de spreadsheet op.
-1. Het gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef en publiceert het blad.
+1. Het gebruik [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef en publiceert het blad.
 
 Nadat u nieuwe rij hebt toegevoegd aan de formulierdefinitie, wordt er een reCAPTCHA-badge weergegeven in de rechterbenedenhoek van het formulier. Dit zorgt ervoor dat het formulier nu wordt beschermd tegen frauduleuze activiteiten, spam en misbruik.
 
-![ recaptcha-form ](/help/edge/docs/forms/assets/recaptcha-form.png)
+![&#x200B; recaptcha-form &#x200B;](/help/edge/docs/forms/assets/recaptcha-form.png)
 
 ## reCAPTCHA inschakelen voor alle formulieren op uw site{#enable-recaptcha-for-all-the-forms}
 
@@ -115,11 +115,11 @@ Als u Google reCAPTCHA wilt toepassen op alle formulieren op uw site die gebruik
 1. Ga naar de map `[../Form Block/integrations]` en open het bestand `recaptcha.js` .
 1. Vervang `siteKey` door de sleutelwaarde van de Google reCAPTCHA-site.
 
-   ![ Recaptcha is op alle vormen van toepassing ](/help/forms/assets/recaptcha-apply-to-all-forms.png)
+   ![&#x200B; Recaptcha is op alle vormen van toepassing &#x200B;](/help/forms/assets/recaptcha-apply-to-all-forms.png)
 
    >[!NOTE]
    >
-   >  U kunt de reCAPTCHA sleutels van [ Google reCAPTCHA Admin Console ](https://www.google.com/recaptcha/admin) terugwinnen.
+   >  U kunt de reCAPTCHA sleutels van [&#x200B; Google reCAPTCHA Admin Console &#x200B;](https://www.google.com/recaptcha/admin) terugwinnen.
 
 1. Sla het `recaptcha.js` -bestand op.
 
@@ -129,7 +129,7 @@ Stel het bijgewerkte `recaptcha.js` dossier aan uw project GitHub op en verifiee
 
 ### De site voorvertonen met AEM sidekick
 
-Het gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om de plaats te voorproef en te publiceren.
+Het gebruik [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om de plaats te voorproef en te publiceren.
 
 De reCAPTCHA-badge wordt weergegeven voor alle formulieren op uw site.
 

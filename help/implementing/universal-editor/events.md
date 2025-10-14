@@ -17,7 +17,7 @@ Leer over de verschillende gebeurtenissen die de Universele Redacteur verzendt d
 
 ## Inleiding {#introduction}
 
-Toepassingen kunnen verschillende vereisten hebben voor pagina- of componentupdates. Daarom verzendt de Universele Redacteur bepaalde gebeurtenissen naar verre toepassingen. In het geval dat de verre toepassing geen luisteraar van de douanegebeurtenis voor de verzonden gebeurtenis heeft, wordt de luisteraar van de a [ fallback gebeurtenis ](#fallback-listeners) verstrekt door het `universal-editor-cors` pakket uitgevoerd.
+Toepassingen kunnen verschillende vereisten hebben voor pagina- of componentupdates. Daarom verzendt de Universele Redacteur bepaalde gebeurtenissen naar verre toepassingen. In het geval dat de verre toepassing geen luisteraar van de douanegebeurtenis voor de verzonden gebeurtenis heeft, wordt de luisteraar van de a [&#x200B; fallback gebeurtenis &#x200B;](#fallback-listeners) verstrekt door het `universal-editor-cors` pakket uitgevoerd.
 
 Alle gebeurtenissen worden aangeroepen op het betrokken DOM-element van de externe pagina. Gebeurtenissen beluisteren omhoog naar het element `BODY` waar de standaardgebeurtenislistener die door het `universal-editor-cors` -pakket wordt geboden, wordt geregistreerd. Er zijn gebeurtenissen voor de inhoud en de gebeurtenissen voor UI.
 

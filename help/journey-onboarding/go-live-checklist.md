@@ -22,11 +22,11 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat Go-Live probleeml
 * Als u van AEM 6.5 migreert, zou u inhoud aan productie moeten migreren en ervoor zorgen dat een relevante ondergroep bij het opvoeren voor het testen beschikbaar is.
    * De beste praktijken van DevOps voor AEM impliceren dat de code zich omhoog van ontwikkeling aan het productiemilieu beweegt terwijl de inhoud zich van productiemilieu&#39;s beweegt.
 * Plan een code- en inhoudstijdsperiode.
-   * Zie ook de sectie [ Code en de Inhoud bevriezen Tijdlijnen voor de Migratie ](#code-content-freeze)
+   * Zie ook de sectie [&#x200B; Code en de Inhoud bevriezen Tijdlijnen voor de Migratie &#x200B;](#code-content-freeze)
 * Voer de laatste top-up van de inhoud uit.
 * Dispatcher-configuraties valideren.
    * Gebruik een lokale Dispatcher-validator waarmee u de Dispatcher lokaal kunt configureren, valideren en simuleren
-      * [ opstelling de lokale hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
+      * [&#x200B; opstelling de lokale hulpmiddelen van Dispatcher &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
    * Herzie zorgvuldig de virtuele gastheerconfiguratie.
       * De eenvoudigste (en standaard)oplossing is om `ServerAlias *` op te nemen in het virtuele hostbestand in `/dispatcher/src/conf.d/available_vhostsfolder` . Hierdoor kunnen de aliassen van de host die worden gebruikt door product functionele tests, Dispatcher cache-validatie en klonen functioneren.
       * Als `ServerAlias *` echter niet acceptabel is, moeten in aanvulling op uw aangepaste domeinen ten minste de volgende `ServerAlias` -items zijn toegestaan:
@@ -36,7 +36,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat Go-Live probleeml
          * `publish*.adobeaemcloud.com`
 * Vorm CDN, SSL en DNS.
    * Als u uw eigen CDN gebruikt, ga een steunkaartje in om aangewezen het verpletteren te vormen.
-      * Zie de sectie [ CDN van de Klant richt aan AEM Beheerde CDN ](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in de documentatie CDN voor details.
+      * Zie de sectie [&#x200B; CDN van de Klant richt aan AEM Beheerde CDN &#x200B;](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in de documentatie CDN voor details.
       * Vorm SSL en DNS volgens de documentatie van uw verkoper CDN.
    * Als u geen extra CDN gebruikt, beheer SSL en DNS volgens de volgende documentatie:
       * SSL-certificaten beheren
@@ -54,9 +54,9 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat Go-Live probleeml
    * Tests uitvoeren in een werkgebiedomgeving.  Het is even groot als de productie.
    * Ontwikkelomgevingen hebben niet dezelfde grootte als stadium en productie.
 * Besnoeiing over en zorg ervoor dat daadwerkelijke go-live zonder enige nieuwe plaatsing of inhoudsupdate wordt uitgevoerd.
-* Maak profielen voor gebruikersmeldingen voor Admin Consoles. Zie [ Profielen van het Bericht ](/help/journey-onboarding/notification-profiles.md)
+* Maak profielen voor gebruikersmeldingen voor Admin Consoles. Zie [&#x200B; Profielen van het Bericht &#x200B;](/help/journey-onboarding/notification-profiles.md)
 * Overweeg het vormen van de Regels van de Filter van het Verkeer om te controleren welk verkeer niet op uw website zou moeten worden toegestaan.
    * De regels van de Filter van het Verkeer van het tarief kunnen een efficiënt hulpmiddel tegen aanvallen zijn DDoS. Een speciale categorie van de Regels van de Filter van het Verkeer, genoemd de (Firewall van de Toepassing van het Web) regels van WAF, vereist een afzonderlijke vergunning.
-   * Zie documentatie voor sommige [ voorgestelde starterregels ](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
+   * Zie documentatie voor sommige [&#x200B; voorgestelde starterregels &#x200B;](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 U kunt altijd naar de lijst verwijzen als u uw taken tijdens Go-Live opnieuw moet kalibreren.

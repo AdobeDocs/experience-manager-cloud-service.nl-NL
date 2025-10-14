@@ -15,20 +15,20 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met [!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van [!DNL Experience Manager Assets] te delen als een [!DNL Cloud Service] :
 
-* [ Aandeel als verbinding ](#sharelink).
-* [ de activa van de Download ](/help/assets/download-assets-from-aem.md) en delen afzonderlijk.
-* Deel gebruikend [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL).
-* Delen met [[!DNL Adobe Asset Link] ](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) .
-* Delen met [[!DNL Brand Portal] ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=nl-NL) .
+* [&#x200B; Aandeel als verbinding &#x200B;](#sharelink).
+* [&#x200B; de activa van de Download &#x200B;](/help/assets/download-assets-from-aem.md) en delen afzonderlijk.
+* Deel gebruikend [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL).
+* Delen met [[!DNL Adobe Asset Link] &#x200B;](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) .
+* Delen met [[!DNL Brand Portal] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=nl-NL) .
 
 ## Vereisten {#prerequisites}
 
-U hebt de voorrechten van de Beheerder nodig om [ montages voor het delen van activa als Verbinding ](#config-link-share-settings) te vormen.
+U hebt de voorrechten van de Beheerder nodig om [&#x200B; montages voor het delen van activa als Verbinding &#x200B;](#config-link-share-settings) te vormen.
 
 ## Instellingen voor gedeelde koppelingen configureren {#config-link-share-settings}
 
@@ -50,9 +50,9 @@ In [!DNL Experience Manager Assets] kunt u de standaardinstellingen voor het del
 1. **[!UICONTROL Link share]** in de actiebalk:
    * Alle gebruikers met `jcr:modifyAccessControl` -machtigingen kunnen de optie [!UICONTROL Link share] weergeven. Het is standaard zichtbaar voor alle beheerders. De knop [!UICONTROL Link share] is standaard zichtbaar voor iedereen. U kunt configureren om deze optie alleen voor de gedefinieerde groepen weer te geven of u kunt deze optie ook van specifieke groepen weigeren. Selecteer `Allow only for groups` als u wilt dat bepaalde groepen de optie `Share Link` kunnen weergeven. Selecteer `Deny from groups` om de optie `Share Link` van specifieke groepen te weigeren. Nadat u een van deze opties hebt geselecteerd, geeft u de groepnamen op met het veld `Select Groups` om de groepnamen toe te voegen die u wilt toestaan of weigeren.
 
-Voor de verwante montages van de Configuratie E-mail, bezoek [ Documentatie van de Dienst E-mail ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=nl-NL)
+Voor de verwante montages van de Configuratie E-mail, bezoek [&#x200B; Documentatie van de Dienst E-mail &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=nl-NL)
 
-![ vorm E-maildienst ](/help/assets/assets/config-email-service.png)
+![&#x200B; vorm E-maildienst &#x200B;](/help/assets/assets/config-email-service.png)
 
 ## Elementen delen als koppeling {#sharelink}
 
@@ -65,14 +65,14 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 >[!NOTE]
 >
 >* U hebt ACL toestemming op de omslag of de activa nodig uitgeven die u als verbinding wilt delen.
->* [ laat uitgaande e-mails ](/help/implementing/developing/introduction/development-guidelines.md#sending-email) toe alvorens een verbinding met de gebruikers te delen.
+>* [&#x200B; laat uitgaande e-mails &#x200B;](/help/implementing/developing/introduction/development-guidelines.md#sending-email) toe alvorens een verbinding met de gebruikers te delen.
 
 Er zijn twee manieren om de elementen te delen met behulp van de functie voor het delen van koppelingen:
 
-1. Produceer een gedeelde verbinding, [ exemplaar, en deel de activa verbinding ](#copy-and-share-assets-link) met andere gebruikers.
-1. Produceer een gedeelde verbinding en [ deel de activa verbinding door e-mail ](#share-assets-link-through-email). U kunt de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan. U kunt e-mail naar meerdere gebruikers verzenden door hun e-mailadres toe te voegen.
+1. Produceer een gedeelde verbinding, [&#x200B; exemplaar, en deel de activa verbinding &#x200B;](#copy-and-share-assets-link) met andere gebruikers.
+1. Produceer een gedeelde verbinding en [&#x200B; deel de activa verbinding door e-mail &#x200B;](#share-assets-link-through-email). U kunt de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan. U kunt e-mail naar meerdere gebruikers verzenden door hun e-mailadres toe te voegen.
 
-   ![ Verbinding die dialoog deelt ](assets/share-link.png)
+   ![&#x200B; Verbinding die dialoog deelt &#x200B;](assets/share-link.png)
 
 In beide gevallen kunt u de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan.
 
@@ -104,7 +104,7 @@ Elementen delen via e-mail:
 
 1. Klik op **[!UICONTROL Share]**. Een bericht bevestigt dat de koppeling wordt gedeeld met de gebruikers. De gebruikers ontvangen een e-mail met de gedeelde koppeling.
 
-   ![ Verbinding die e-mail deelt ](assets/link-sharing-email-notification.png)
+   ![&#x200B; Verbinding die e-mail deelt &#x200B;](assets/link-sharing-email-notification.png)
 
 ### E-mailsjabloon aanpassen {#customize-email-template}
 
@@ -155,11 +155,11 @@ Elke gebruiker die toegang heeft tot de koppeling voor gedeelde elementen, kan d
 
 * Als u de middelen of map selecteert, verschijnt er een optie **[!UICONTROL Queue Download]** op het scherm. Klik op de optie **[!UICONTROL Queue Download]** om het downloadproces te starten.
 
-  ![ download van de Rij ](assets/queue-download.png)
+  ![&#x200B; download van de Rij &#x200B;](assets/queue-download.png)
 
 * Terwijl het downloadbestand is voorbereid, klikt u op de optie **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
 
-  ![ Inbox van de Download ](assets/link-sharing-download-inbox.png)
+  ![&#x200B; Inbox van de Download &#x200B;](assets/link-sharing-download-inbox.png)
 
 * Wanneer de verwerking is voltooid, klikt u op de knop **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
 
@@ -241,13 +241,13 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Elementen downloaden en afzonderlijk delen {#download-and-share-assets}
 
-Gebruikers kunnen de vereiste elementen downloaden en deze buiten [!DNL Experience Manager] delen. Voor meer informatie, zie [ hoe te activa ](/help/assets/search-assets.md) zoeken, [ hoe te activa ](/help/assets/download-assets-from-aem.md) downloaden, en [ hoe te om inzamelingen ](manage-collections.md#download-a-collection) te downloaden
+Gebruikers kunnen de vereiste elementen downloaden en deze buiten [!DNL Experience Manager] delen. Voor meer informatie, zie [&#x200B; hoe te activa &#x200B;](/help/assets/search-assets.md) zoeken, [&#x200B; hoe te activa &#x200B;](/help/assets/download-assets-from-aem.md) downloaden, en [&#x200B; hoe te om inzamelingen &#x200B;](manage-collections.md#download-a-collection) te downloaden
 
 ## Elementen delen met creatieve professionals {#share-with-creatives}
 
 Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvoudig delen met hun creatieve professionals.
 
-* **Desktop app van Experience Manager**: App werkt op Vensters en Mac. Zie [ Desktop app overzicht ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL). Om te weten hoe om het even welke geautoriseerde Desktopgebruiker tot de gedeelde activa kan gemakkelijk toegang hebben, zie [ doorbladeren, doorzoeken, en voorproefactiva ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager-gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [ activa uploaden gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#upload-and-add-new-assets-to-aem).
+* **Desktop app van Experience Manager**: App werkt op Vensters en Mac. Zie [&#x200B; Desktop app overzicht &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL). Om te weten hoe om het even welke geautoriseerde Desktopgebruiker tot de gedeelde activa kan gemakkelijk toegang hebben, zie [&#x200B; doorbladeren, doorzoeken, en voorproefactiva &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager-gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [&#x200B; activa uploaden gebruikend Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#upload-and-add-new-assets-to-aem).
 
 * **de Verbinding van Activa van Adobe**: De creatieve beroeps kunnen activa van binnen [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop] direct zoeken en gebruiken.
 
@@ -296,15 +296,15 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Desktopacties inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
 
-Vanuit de gebruikersinterface van [!DNL Assets] in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden genoemd Desktopacties en om het toe te laten, zie [ Desktopacties in  [!DNL Assets]  Webinterface ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#desktopactions-v2) toelaten.
+Vanuit de gebruikersinterface van [!DNL Assets] in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden genoemd Desktopacties en om het toe te laten, zie [&#x200B; Desktopacties in  [!DNL Assets]  Webinterface &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#desktopactions-v2) toelaten.
 
-![ laat Desktopacties toe om als kortere weg te gebruiken wanneer het werken met Desktop app ](assets/enable_desktop_actions.png)
+![&#x200B; laat Desktopacties toe om als kortere weg te gebruiken wanneer het werken met Desktop app &#x200B;](assets/enable_desktop_actions.png)
 
 ### Te gebruiken configuraties [!DNL Adobe Asset Link] {#configure-asset-link}
 
 Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. [!DNL Adobe Experience Manager Assets] wordt verbonden met [!DNL Creative Cloud] bureaubladapps [!DNL Adobe InDesign] , [!DNL Adobe Photoshop] en [!DNL Adobe Illustrator] . In het deelvenster [!DNL Adobe Asset Link] hebben creatieve toepassingen toegang tot inhoud die is opgeslagen in [!DNL Assets] en kunnen ze deze inhoud wijzigen zonder de meest bekende creatieve toepassingen te verlaten.
 
-Zie [ hoe te om  [!DNL Assets]  te vormen om het met  [!DNL Adobe Asset Link] te gebruiken ](https://helpx.adobe.com/nl/enterprise/using/configure-aem-assets-for-asset-link.html).
+Zie [&#x200B; hoe te om  [!DNL Assets]  te vormen om het met  [!DNL Adobe Asset Link] te gebruiken &#x200B;](https://helpx.adobe.com/nl/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Aanbevolen werkwijzen en problemen oplossen {#bestpractices}
 

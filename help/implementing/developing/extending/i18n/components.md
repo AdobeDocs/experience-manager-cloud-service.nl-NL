@@ -17,13 +17,13 @@ ht-degree: 0%
 
 Internationaliseer uw componenten en dialogen zodat hun koorden UI in verschillende talen kunnen worden voorgesteld. Componenten die zijn ontworpen voor internationalisatie maken het mogelijk om UI-tekenreeksen te extern maken, te vertalen en vervolgens te importeren in de opslagplaats. Tijdens runtime bepaalt de taalvoorkeuren van de gebruiker of de landinstelling van de pagina welke taal wordt weergegeven in de gebruikersinterface.
 
-![ i18n-components-1.png ](/help/implementing/developing/extending/assets/i18n-comp1.png)
+![&#x200B; i18n-components-1.png &#x200B;](/help/implementing/developing/extending/assets/i18n-comp1.png)
 
 Gebruik het volgende proces om uw componenten te internationaliseren en de gebruikersinterface in verschillende talen te bieden:
 
-1. [ voer uw componenten uit gebruikend code die koorden internationaliseert.](/help/implementing/developing/extending/i18n/dev.md) De code identificeert de tekenreeksen die moeten worden vertaald en selecteert de taal die moet worden weergegeven bij uitvoering.
-1. [ creeer woordenboeken ](/help/implementing/developing/extending/i18n/translator.md#creating-a-dictionary).
-1. [ de Uitvoer ](/help/implementing/developing/extending/i18n/translator.md#exporting-a-dictionary) het woordenboek aan formaat XLIFF, vertaalt de koorden, dan de dossiers XLIFF terug in AEM.
+1. [&#x200B; voer uw componenten uit gebruikend code die koorden internationaliseert.](/help/implementing/developing/extending/i18n/dev.md) De code identificeert de tekenreeksen die moeten worden vertaald en selecteert de taal die moet worden weergegeven bij uitvoering.
+1. [&#x200B; creeer woordenboeken &#x200B;](/help/implementing/developing/extending/i18n/translator.md#creating-a-dictionary).
+1. [&#x200B; de Uitvoer &#x200B;](/help/implementing/developing/extending/i18n/translator.md#exporting-a-dictionary) het woordenboek aan formaat XLIFF, vertaalt de koorden, dan de dossiers XLIFF terug in AEM.
 1. Neem het woordenboek op in het releasebeheerproces van uw toepassing.
 
 >[!NOTE]
@@ -37,11 +37,11 @@ Het AEM internationalisatiekader gebruikt woordenboeken in de repository om Enge
 * Code is gemakkelijk te lezen.
 * De standaardtaal is altijd beschikbaar.
 
-Het [ hulpmiddel van de Vertaling ](/help/implementing/developing/extending/i18n/translator.md) laat u toe om alle woordenboeken van één centrale plaats te beheren.
+Het [&#x200B; hulpmiddel van de Vertaling &#x200B;](/help/implementing/developing/extending/i18n/translator.md) laat u toe om alle woordenboeken van één centrale plaats te beheren.
 
-![ i18n-componenten-2 ](/help/implementing/developing/extending/assets/i18n-comp2.png)
+![&#x200B; i18n-componenten-2 &#x200B;](/help/implementing/developing/extending/assets/i18n-comp2.png)
 
-De vertalingsveranderingen moeten van Git via de [ CI/CD pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) in AEM als wolkendienst komen.
+De vertalingsveranderingen moeten van Git via de [&#x200B; CI/CD pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) in AEM als wolkendienst komen.
 
 ### Tekenreeksen in systeemwoordenboeken overschrijven {#overlaying-strings-in-system-dictionaries}
 

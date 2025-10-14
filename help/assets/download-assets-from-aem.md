@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar elementen rechtstreeks vanuit [!DNL Adobe Experience Manager Assets] verzenden. Gedownloade elementen worden opgenomen in een ZIP-bestand. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -34,17 +34,17 @@ U kunt elementen op de volgende manieren downloaden van Experience Manager:
 <!-- * [Link Share](#link-share-download) -->
 
 * [Experience Manager-gebruikersinterface](#download-assets)
-* [ Commons van het Aandeel van Activa ](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [ Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=nl-NL)
-* [ Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#download-assets)
+* [&#x200B; Commons van het Aandeel van Activa &#x200B;](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* [&#x200B; Brand Portal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=nl-NL)
+* [&#x200B; Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#download-assets)
 
 ## Elementen downloaden via de interface [!DNL Experience Manager] {#download-assets}
 
 Experience Manager optimaliseert de downloadervaring op basis van het aantal en de grootte van de middelen. Kleinere bestanden worden in real-time gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] downloadt direct enkele elementaanvragen voor het oorspronkelijke bestand in plaats van afzonderlijke elementen in een ZIP-archief te omsluiten, zodat sneller kan worden gedownload. Experience Manager ondersteunt grote downloads met asynchrone verzoeken. Downloadaanvragen die groter zijn dan 100 GB worden gesplitst in meerdere ZIP-archieven met een maximale grootte van 100 MB elk.
 
-Door gebrek, [!DNL Experience Manager] brengt een bericht in [[!DNL Experience Manager]  in werking Inbox ](/help/sites-cloud/authoring/inbox.md) op generatie van een downloadarchief.
+Door gebrek, [!DNL Experience Manager] brengt een bericht in [[!DNL Experience Manager]  in werking Inbox &#x200B;](/help/sites-cloud/authoring/inbox.md) op generatie van een downloadarchief.
 
-![ Inbox bericht ](assets/inbox-notification-for-large-downloads.png)
+![&#x200B; Inbox bericht &#x200B;](assets/inbox-notification-for-large-downloads.png)
 
 
 ### E-mailmeldingen inschakelen voor grote downloads {#enable-emails-for-large-downloads}
@@ -55,7 +55,7 @@ Asynchrone downloads worden in een van de volgende gevallen geactiveerd:
 * Als de downloadgrootte groter is dan 100 MB
 * Als het downloaden meer dan 30 seconden duurt om voor te bereiden
 
-Terwijl de asynchrone download achteraan loopt, kan de gebruiker verder onderzoeken en verder werken in Experience Manager. Naast de inbox-berichten van Experience Manager, kan Experience Manager e-mails verzenden om de gebruiker op de hoogte te stellen wanneer het downloadproces is voltooid. Om deze eigenschap toe te laten, kunnen de beheerders e-maildienst vormen door [ een SMTP serververbinding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=nl-NL#sending-email) te vormen.
+Terwijl de asynchrone download achteraan loopt, kan de gebruiker verder onderzoeken en verder werken in Experience Manager. Naast de inbox-berichten van Experience Manager, kan Experience Manager e-mails verzenden om de gebruiker op de hoogte te stellen wanneer het downloadproces is voltooid. Om deze eigenschap toe te laten, kunnen de beheerders e-maildienst vormen door [&#x200B; een SMTP serververbinding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=nl-NL#sending-email) te vormen.
 
 Als de e-mailservice eenmaal is geconfigureerd, kunnen beheerders en gebruikers e-mailmeldingen inschakelen via de Experience Manager-interface.
 
@@ -65,7 +65,7 @@ E-mailmeldingen inschakelen:
 1. Klik op het gebruikerspictogram in de rechterbovenhoek en klik vervolgens op **[!UICONTROL My Preferences]** om het venster Gebruikersvoorkeuren te openen.
 1. Selecteer het selectievakje **[!UICONTROL Asset Download email notifications]** en klik op **[!UICONTROL Accept]** .
 
-   ![ toelaten-e-mail-berichten-voor-grote-downloads ](/help/assets/assets/enable-email-for-large-downloads.png)
+   ![&#x200B; toelaten-e-mail-berichten-voor-grote-downloads &#x200B;](/help/assets/assets/enable-email-for-large-downloads.png)
 
 
 Voer de volgende stappen uit om elementen te downloaden:
@@ -73,7 +73,7 @@ Voer de volgende stappen uit om elementen te downloaden:
 1. Klik in de gebruikersinterface van [!DNL Experience Manager] op **[!UICONTROL Assets]** > **[!UICONTROL Files]** .
 1. Navigeer naar de elementen die u wilt downloaden. Selecteer de map of selecteer een of meer middelen in de map. Klik op **[!UICONTROL Download]** op de werkbalk.
 
-   ![ Beschikbare opties bij het downloaden van elementen van [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
+   ![&#x200B; Beschikbare opties bij het downloaden van elementen van [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
 1. Selecteer in het dialoogvenster Downloaden de gewenste downloadopties.
 
@@ -84,27 +84,27 @@ Voer de volgende stappen uit om elementen te downloaden:
    | **[!UICONTROL Asset(s)]** | Selecteer deze optie als u het element in de oorspronkelijke vorm wilt downloaden.<br> de subassets optie is beschikbaar als het originele element subassets heeft. |
    | **[!UICONTROL Rendition(s)]** | Een vertoning is de binaire representatie van een element. Assets heeft een primaire representatie: die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het geselecteerde element. |
    | **[!UICONTROL Smart Crops]** | Selecteer deze optie als u alle slimme uitsnijduitvoeringen van het geselecteerde element wilt downloaden vanuit [!DNL Experience Manager] . Er wordt een ZIP-bestand met de Smart Crop-uitvoeringen gemaakt en gedownload naar uw lokale computer. |
-   | **[!UICONTROL Dynamic Rendition(s)]** | Selecteer deze optie als u een reeks alternatieve vertoningen in real-time wilt genereren. Wanneer u deze optie selecteert, selecteert u ook de vertoningen die u dynamisch wilt tot stand brengen door uit de [ Vooraf ingestelde Beeld ](/help/assets/dynamic-media/image-presets.md) lijst te selecteren. <br> bovendien, kunt u de grootte en de eenheid van meting, formaat, kleurenruimte, resolutie, en om het even welke facultatieve beeldbepalingen selecteren zoals het omkeren van het beeld. De optie is alleen beschikbaar als u [!DNL Dynamic Media] hebt ingeschakeld. |
+   | **[!UICONTROL Dynamic Rendition(s)]** | Selecteer deze optie als u een reeks alternatieve vertoningen in real-time wilt genereren. Wanneer u deze optie selecteert, selecteert u ook de vertoningen die u dynamisch wilt tot stand brengen door uit de [&#x200B; Vooraf ingestelde Beeld &#x200B;](/help/assets/dynamic-media/image-presets.md) lijst te selecteren. <br> bovendien, kunt u de grootte en de eenheid van meting, formaat, kleurenruimte, resolutie, en om het even welke facultatieve beeldbepalingen selecteren zoals het omkeren van het beeld. De optie is alleen beschikbaar als u [!DNL Dynamic Media] hebt ingeschakeld. |
 
 1. Klik in het dialoogvenster op **[!UICONTROL Download]** .
 
    Als e-mailmelding is ingeschakeld voor grote downloads, wordt een e-mail met een download-URL van de gearchiveerde ZIP-map in uw Postvak IN weergegeven. Klik op de downloadkoppeling in de e-mail om het ZIP-archief te downloaden.
 
-   ![ e-mail-notifications-voor-grote-downloads ](/help/assets/assets/email-for-large-notification.png)
+   ![&#x200B; e-mail-notifications-voor-grote-downloads &#x200B;](/help/assets/assets/email-for-large-notification.png)
 
    U kunt de melding ook weergeven in het Postvak IN [!DNL Experience Manager] .
 
-   ![ inbox-notifications-voor-grote-downloads ](/help/assets/assets/inbox-notification-for-large-downloads.png)
+   ![&#x200B; inbox-notifications-voor-grote-downloads &#x200B;](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
 ## Elementen downloaden die via koppelingen delen worden gedeeld {#link-share-download}
 
-Het delen van elementen via een koppeling is een handige manier om deze beschikbaar te maken voor belangstellenden zonder dat zij zich hoeven aan te melden bij [!DNL Assets] . Zie [ functionaliteit van het Aandeel van de Verbinding ](/help/assets/share-assets.md#sharelink).
+Het delen van elementen via een koppeling is een handige manier om deze beschikbaar te maken voor belangstellenden zonder dat zij zich hoeven aan te melden bij [!DNL Assets] . Zie [&#x200B; functionaliteit van het Aandeel van de Verbinding &#x200B;](/help/assets/share-assets.md#sharelink).
 
 Wanneer gebruikers elementen downloaden van gedeelde koppelingen, gebruikt [!DNL Assets] een asynchrone service die snellere en ononderbroken downloads biedt. De te downloaden middelen worden op de achtergrond in een Postvak IN in een ZIP-archief met beheerbare bestandsgrootte in een wachtrij geplaatst. Voor grotere downloads wordt de download uitgeknipt in bestanden van 100 GB.
 
 In [!UICONTROL Download Inbox] wordt de verwerkingsstatus van elk archief weergegeven. Zodra de verwerking is voltooid, kunt u de archieven downloaden van inbox.
 
-![ Inbox van de Download ](assets/link-sharing-download-inbox.png)
+![&#x200B; Inbox van de Download &#x200B;](assets/link-sharing-download-inbox.png)
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
@@ -128,7 +128,7 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 
 Als u de downloadfunctionaliteit niet nodig hebt, dan onbruikbaar servlet om het even welke DoS-gelijkaardige risico&#39;s te verhinderen. `Asset Download Servlet` kan op een [!DNL Experience Manager] auteur en publiceer instanties worden onbruikbaar gemaakt door de configuratie van de verzender bij te werken om het even welke verzoeken van de activadownload te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
-1. Om activa te blokkeren downloadverzoeken via een verdienersconfiguratie geeft de `dispatcher.any` configuratie uit en voegt een nieuwe regel aan de [ filtersectie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring) toe.
+1. Om activa te blokkeren downloadverzoeken via een verdienersconfiguratie geeft de `dispatcher.any` configuratie uit en voegt een nieuwe regel aan de [&#x200B; filtersectie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring) toe.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
@@ -139,7 +139,7 @@ Om de `OnOffTimeAssetAccessFilter` dienst toe te laten, moet u een configuratie 
 1. In uw projectcode in Git, creeer een configuratiedossier bij `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Het bestand moet `{}` bevatten als inhoud, wat een lege OSGi-configuratie voor de corresponderende OSGi-component betekent. Deze actie laat de dienst toe.
 1. Implementeer uw code, inclusief deze nieuwe configuratie, via [!DNL Cloud Manager] .
 1. Nadat de uitvoeringen en metagegevens zijn geïmplementeerd, zijn deze toegankelijk volgens de instellingen voor aan- en uittijd van de elementen. Als de huidige datum of tijd vóór de on-time of na de off-time valt, wordt een foutenmelding getoond.
-Voor meer details bij het toevoegen van een lege configuratie OSGi, zie deze [ gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL).
+Voor meer details bij het toevoegen van een lege configuratie OSGi, zie deze [&#x200B; gids &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL).
 
 ## Tips en beperkingen {#tips-limitations}
 
@@ -162,6 +162,6 @@ Voor meer details bij het toevoegen van een lege configuratie OSGi, zie deze [ g
 
 >[!MORELIKETHIS]
 >
->* [ Download DRM beschermde activa ](drm.md)
->* [ de activa van de Download gebruikend Desktop app van Experience Manager op de Desktop van Win of van Mac ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL)
->* [ de activa van de Download gebruikend de Verbinding van Adobe Assets van binnen gesteunde apps van Adobe Creative Cloud ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [&#x200B; Download DRM beschermde activa &#x200B;](drm.md)
+>* [&#x200B; de activa van de Download gebruikend Desktop app van Experience Manager op de Desktop van Win of van Mac &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL)
+>* [&#x200B; de activa van de Download gebruikend de Verbinding van Adobe Assets van binnen gesteunde apps van Adobe Creative Cloud &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)

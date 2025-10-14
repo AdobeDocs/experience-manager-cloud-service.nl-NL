@@ -30,17 +30,17 @@ Met aangepaste machtigingen kunnen gebruikers aangepaste machtigingsprofielen ma
 
 >[!TIP]
 >
->Voor details op vooraf bepaalde rollen, zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md).
+>Voor details op vooraf bepaalde rollen, zie [&#x200B; het Team van AEM as a Cloud Service en de Profielen van het Product &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Aangepaste machtigingen gebruiken {#using}
 
 Voor het maken en gebruiken van uw eigen aangepaste machtigingen zijn drie stappen vereist:
 
-1. [ creeer een productprofiel ](#create).
-1. [ wijs douanetoestemmingen aan het productprofiel ](#assign-permissions) toe.
-1. [ wijs gebruikers aan het productprofiel ](#assign-users) toe.
+1. [&#x200B; creeer een productprofiel &#x200B;](#create).
+1. [&#x200B; wijs douanetoestemmingen aan het productprofiel &#x200B;](#assign-permissions) toe.
+1. [&#x200B; wijs gebruikers aan het productprofiel &#x200B;](#assign-users) toe.
 
-In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [ Termijnen ](#terms) en [ Configurable 3&rbrace; secties van Toestemmingen te zien aangezien u uw eigen douanetoestemmingen creeert.](#configurable-permissions)
+In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [&#x200B; Termijnen &#x200B;](#terms) en [&#x200B; Configurable 3&rbrace; secties van Toestemmingen te zien aangezien u uw eigen douanetoestemmingen creeert.](#configurable-permissions)
 
 >[!NOTE]
 >
@@ -50,15 +50,15 @@ In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [ 
 
 Maak eerst een productprofiel waaraan u aangepaste machtigingen kunt toewijzen.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/).
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/).
 
 1. Voor de Cloud Manager landende pagina, selecteer **leiden de knoop van de Toegang**.
 
-![ beheert de knoop van de Toegang ](assets/manage-access.png)
+![&#x200B; beheert de knoop van de Toegang &#x200B;](assets/manage-access.png)
 
 1. U wordt opnieuw gericht aan het **Producten** lusje van Admin Console, waar u gebruikers en toestemmingen voor Cloud Manager kunt beheren. In Admin Console, selecteer de **Nieuwe knoop van het Profiel**.
 
-![ Nieuwe knoop van het Profiel ](assets/admin-console-new-profile.png)
+![&#x200B; Nieuwe knoop van het Profiel &#x200B;](assets/admin-console-new-profile.png)
 
 1. Geef de algemene details over het profiel op.
 
@@ -75,11 +75,11 @@ Het nieuwe productprofiel wordt opgeslagen en wordt weergegeven in de lijst met 
 
 Nu u een nieuw productprofiel hebt, kunt u er aangepaste machtigingen aan toewijzen.
 
-1. In Admin Console, selecteer de naam van het [ nieuwe productprofiel u ](#create) creeerde.
+1. In Admin Console, selecteer de naam van het [&#x200B; nieuwe productprofiel u &#x200B;](#create) creeerde.
 
 1. In het venster dat opent, selecteer het **lusje van Toestemmingen** om een lijst van editable toestemmingen te bekijken.
 
-   ![ Bewerkbare toestemmingen ](assets/permissions-tab.png)
+   ![&#x200B; Bewerkbare toestemmingen &#x200B;](assets/permissions-tab.png)
 
 1. Selecteer **uitgeven** verbinding van een toestemming zodat kunt u het uitgeven.
 
@@ -88,7 +88,7 @@ Nu u een nieuw productprofiel hebt, kunt u er aangepaste machtigingen aan toewij
    * De toestemmingspunten beschikbaar voor taak voor de toestemming zijn in de middenkolom geëtiketteerd **Beschikbare Punten van de Toestemming**.
    * De toegewezen toestemmingspunten zijn in de juiste kolom geëtiketteerd **Inclusief Punten van de Toestemming**.
 
-   ![ geef toestemmingspunten ](assets/edit-permission-items.png) uit
+   ![&#x200B; geef toestemmingspunten &#x200B;](assets/edit-permission-items.png) uit
 
 1. Selecteer plus (`+`) pictogram naast het toestemmingspunt zodat kunt u het aan de kolom **Included Punten van de Toestemming** toevoegen.
 
@@ -104,13 +104,13 @@ Uw nieuwe productprofiel wordt nu opgeslagen met de aangepaste machtigingen.
 
 U kunt nu gebruikers toewijzen aan het nieuwe productprofiel dat u met aangepaste machtigingen hebt gemaakt.
 
-1. In Admin Console, selecteer de naam van het [ nieuwe productprofiel waaraan u douanetoestemmingen ](#assign-permissions) toewees.
+1. In Admin Console, selecteer de naam van het [&#x200B; nieuwe productprofiel waaraan u douanetoestemmingen &#x200B;](#assign-permissions) toewees.
 
 1. In het venster dat opent, selecteer de **Gebruikers** tabel.
 
 1. Selecteer **toevoegen Gebruikers** knoop en wijs gebruikers aan uw nieuw productprofiel met douanetoestemmingen toe.
 
-Zie de sectie **gebruikers en gebruikersgroepen aan een productprofiel** van het document [ toevoegen productprofielen voor ondernemingsgebruikers ](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html) voor meer details op hoe te om Admin Console te gebruiken.
+Zie de sectie **gebruikers en gebruikersgroepen aan een productprofiel** van het document [&#x200B; toevoegen productprofielen voor ondernemingsgebruikers &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html) voor meer details op hoe te om Admin Console te gebruiken.
 
 ## Configureerbare machtigingen {#configurable-permissions}
 
@@ -156,7 +156,7 @@ De volgende machtigingen zijn bevoegdheden op organisatieniveau:
 * **Programma creeert** - Deze toestemming laat gebruikers een programma in de organisatie tot stand brengen.
 * **Toegang van Info van de Bewaarplaats** Dit huurder/organisatieniveau toestemming staat gebruikers toe om een gebruikersbenaming, een wachtwoord, en een bewaarplaats URL voor toegang te produceren en tot een klantenproject bij te dragen.
    * De gebruikersnaam en het wachtwoord voor toegang tot de opslagplaats zijn dezelfde voor alle opslagplaatsen in de organisatie. De URL van de gegevensopslagruimte is echter uniek voor elk programma.
-   * Zie [ Toegang hebbend tot Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/accessing-repos.md) voor meer informatie.
+   * Zie [&#x200B; Toegang hebbend tot Bewaarplaatsen &#x200B;](/help/implementing/cloud-manager/managing-code/accessing-repos.md) voor meer informatie.
 
 ## Voorwaarden {#terms}
 
@@ -164,7 +164,7 @@ De volgende termen worden gebruikt bij het maken en beheren van aangepaste macht
 
 | Term | Beschrijving |
 | --- | --- |
-| Vooraf gedefinieerde machtigingen | Vooraf bepaalde rollen zoals **BedrijfsEigenaar** en **Manager van de Plaatsing** om diverse eigenschappen van Cloud Manager te regeren. Voor details op vooraf bepaalde rollen, zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md). |
+| Vooraf gedefinieerde machtigingen | Vooraf bepaalde rollen zoals **BedrijfsEigenaar** en **Manager van de Plaatsing** om diverse eigenschappen van Cloud Manager te regeren. Voor details op vooraf bepaalde rollen, zie [&#x200B; het Team van AEM as a Cloud Service en de Profielen van het Product &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md). |
 | Aangepaste machtigingen | Met Cloud Manager-functies kunnen gebruikers machtigingsprofielen maken om rollen te definiëren die de ondersteunde functies van Cloud Manager bepalen. |
 | Productprofiel | Gemaakt in de Admin Console voor het beheer van configureerbare machtigingen die van toepassing zijn op gebruikers die deel uitmaken van het machtigingsprofiel. |
 | Configureerbare machtiging | Cloud Manager-machtigingen die u kunt configureren in het machtigingsprofiel. |
@@ -194,7 +194,7 @@ De punten van de toestemming verwijzen naar het werkingsgebied waar de toestemmi
 * Deployment Manager
 * Developer
 
-Voor details op vooraf bepaalde rollen, zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md).
+Voor details op vooraf bepaalde rollen, zie [&#x200B; het Team van AEM as a Cloud Service en de Profielen van het Product &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### Wat gebeurt er met vooraf gedefinieerde machtigingsprofielen met inleiding tot aangepaste profielen?
 

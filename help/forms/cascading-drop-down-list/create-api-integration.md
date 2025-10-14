@@ -47,7 +47,7 @@ In deze zelfstudie worden 2 API-integratie gemaakt
    - Output definieert welke velden uit de JSON-reactie moeten worden geëxtraheerd en gebruikt.
 De reactie GeoNames ziet er als volgt uit:
 
-  ![ json-reactie ](assets/geonames-data.png)
+  ![&#x200B; json-reactie &#x200B;](assets/geonames-data.png)
    - Twee velden toegewezen vanuit de array geonames:
 
      geonames [*].geonameId → as a Number
@@ -58,7 +58,7 @@ De reactie GeoNames ziet er als volgt uit:
 
 
 
-![ get-all-countries ](assets/api-integration.png)
+![&#x200B; get-all-countries &#x200B;](assets/api-integration.png)
 
 
 ## GetChildren
@@ -92,7 +92,7 @@ Het vraagt GeoNames voor de directe kinderen van de plaats waarvan geonamesId al
    - Hiermee definieert u welke velden uit de JSON-reactie moeten worden geëxtraheerd en gebruikt.
 De reactie GeoNames ziet er als volgt uit:
 
-  ![ json-reactie ](assets/child-elements-data.png)
+  ![&#x200B; json-reactie &#x200B;](assets/child-elements-data.png)
    - Twee velden toegewezen vanuit de array geonames:
 
      geonames [*].geonameId → as a Number
@@ -102,4 +102,4 @@ De reactie GeoNames ziet er als volgt uit:
      [ * ] betekent het voor elk land in de serie herhaalt.
 
 
-![ get-children ](assets/get-children-api-integration.png)
+![&#x200B; get-children &#x200B;](assets/get-children-api-integration.png)

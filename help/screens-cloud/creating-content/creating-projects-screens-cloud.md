@@ -26,22 +26,22 @@ Voer de onderstaande stappen uit om een project te maken in Screens as a Cloud S
 1. Navigeer naar de Screens Content Provider.
 
    >[!NOTE]
-   >Zie [ Gebruikend de Leverancier van de Inhoud van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=nl-NL) leren hoe te om tot de Leverancier van de Inhoud van Screens voor het creëren van uw project toegang te hebben.
+   >Zie [&#x200B; Gebruikend de Leverancier van de Inhoud van Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=nl-NL) leren hoe te om tot de Leverancier van de Inhoud van Screens voor het creëren van uw project toegang te hebben.
 
 1. Vlak de hoger-juiste hoek van de actiebar, klik **creëren het Project van Screens**.
 
-   ![ creeer-schermen-project1 ](/help/screens-cloud/assets/create-content/create-screens-project1.png)
+   ![&#x200B; creeer-schermen-project1 &#x200B;](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. Ga de **Titel** van uw project in **in creeer de dialoogdoos van het Project van Screens**. Bijvoorbeeld, *FirstDigitalExperience*.
 
-   ![ creeer-schermen-project2 ](/help/screens-cloud/assets/create-content/create-screens-project2.png)
+   ![&#x200B; creeer-schermen-project2 &#x200B;](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >Het **gebied van de Naam** wordt bevolkt automatisch in **creeer het 3&rbrace; dialoogvakje van het Project van Screens &lbrace;dat op de titel wordt gebaseerd u kiest.**
 
 1. Klik **sparen**. U ziet uw project van Screens, dat als *FirstDigitalExperience* in de Leverancier van de Inhoud van Screens wordt genoemd. U ziet ook uw project in de Leverancier van de Inhoud van Screens, met twee genoemde omslagen, **Plaatsen** en **Kanalen**.
 
-   ![ creeer-schermen-project3 ](/help/screens-cloud/assets/create-content/create-screens-project3.png)
+   ![&#x200B; creeer-schermen-project3 &#x200B;](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
    Nu u een AEM Screens-project hebt ingesteld, kunt u beginnen met het toevoegen van kanalen en locaties aan uw project.
 
@@ -53,7 +53,7 @@ Bestaande projecten in Screens as a Cloud Service kunnen worden verwijderd.
 1. Selecteer het project dat u wilt verwijderen.
 1. Voor de actiebar, klik **Schrapping**.
 
-   ![ create-project5 ](/help/screens-cloud/assets/create-content/create-project5.png)
+   ![&#x200B; create-project5 &#x200B;](/help/screens-cloud/assets/create-content/create-project5.png)
 
 1. Klik **Schrapping** om de schrapping van het project te bevestigen.
 
@@ -62,4 +62,4 @@ Bestaande projecten in Screens as a Cloud Service kunnen worden verwijderd.
 
 ## Volgende functies {#whats-next}
 
-Nu u een AEM Screens-project hebt ingesteld, kunt u een kanaal maken en inhoud toevoegen aan de kanalen. Zie [ Creërend en het Leiden een Kanaal ](creating-channels-screens-cloud.md) zodat kunt u leren om inhoud in Kanalen tot stand te brengen en te beheren.
+Nu u een AEM Screens-project hebt ingesteld, kunt u een kanaal maken en inhoud toevoegen aan de kanalen. Zie [&#x200B; Creërend en het Leiden een Kanaal &#x200B;](creating-channels-screens-cloud.md) zodat kunt u leren om inhoud in Kanalen tot stand te brengen en te beheren.

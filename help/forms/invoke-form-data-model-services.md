@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Met [!DNL AEM Forms] kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die zijn geconfigureerd in een formuliergegevensmodel (FDM) vanuit een adaptief formulierveld. Om de dienst van het gegevensmodel aan te halen, kunt u of een regel in de visuele redacteur tot stand brengen of JavaScript specificeren gebruikend `guidelib.dataIntegrationUtils.executeOperation` API in de coderedacteur van de [ regelredacteur ](rule-editor.md).
+Met [!DNL AEM Forms] kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die zijn geconfigureerd in een formuliergegevensmodel (FDM) vanuit een adaptief formulierveld. Om de dienst van het gegevensmodel aan te halen, kunt u of een regel in de visuele redacteur tot stand brengen of JavaScript specificeren gebruikend `guidelib.dataIntegrationUtils.executeOperation` API in de coderedacteur van de [&#x200B; regelredacteur &#x200B;](rule-editor.md).
 
 Dit document is gericht op het schrijven van een JavaScript met de API `guidelib.dataIntegrationUtils.executeOperation` om een service aan te roepen.
 

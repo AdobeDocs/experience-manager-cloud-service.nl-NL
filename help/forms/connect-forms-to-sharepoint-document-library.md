@@ -21,8 +21,8 @@ ht-degree: 0%
 
 U kunt als volgt de **[!UICONTROL Submit to SharePoint Document Library]** Handeling verzenden in een adaptieve vorm gebruiken:
 
-1. [ creeer een Configuratie van de Bibliotheek van het Document van SharePoint ](#1-create-a-sharepoint-document-library-configuration): Het verbindt AEM Forms met uw Opslag van SharePoint Microsoft®.
-2. [ gebruik Submit aan SharePoint verzendt actie in een AanpassingsVorm ](#2-use-sharepoint-document-library-configuration-in-an-adaptive-form): Het verbindt uw AanpassingsVorm met gevormde SharePoint Microsoft®.
+1. [&#x200B; creeer een Configuratie van de Bibliotheek van het Document van SharePoint &#x200B;](#1-create-a-sharepoint-document-library-configuration): Het verbindt AEM Forms met uw Opslag van SharePoint Microsoft®.
+2. [&#x200B; gebruik Submit aan SharePoint verzendt actie in een AanpassingsVorm &#x200B;](#2-use-sharepoint-document-library-configuration-in-an-adaptive-form): Het verbindt uw AanpassingsVorm met gevormde SharePoint Microsoft®.
 
 ## &#x200B;1. Een SharePoint-documentbibliotheekconfiguratie maken
 
@@ -33,16 +33,16 @@ AEM Forms verbinden met uw Microsoft® SharePoint Document Library-opslagruimte:
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
 
-   ![ configuratie van SharePoint ](/help/forms/assets/sharepoint_configuration.png)
+   ![&#x200B; configuratie van SharePoint &#x200B;](/help/forms/assets/sharepoint_configuration.png)
 
-1. Geef de waarden **[!UICONTROL Title]** , **[!UICONTROL Client ID]** , **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]** op. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheime cliënt, identiteitskaart van de Aannemer voor OAuth URL, zie [ Documentatie Microsoft® ](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+1. Geef de waarden **[!UICONTROL Title]** , **[!UICONTROL Client ID]** , **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]** op. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheime cliënt, identiteitskaart van de Aannemer voor OAuth URL, zie [&#x200B; Documentatie Microsoft® &#x200B;](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * U kunt de `Client ID` en `Client Secret` van uw app ophalen via de Microsoft® Azure-portal.
    * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` . Vervang `[author-instance]` door de URL van de instantie Auteur.
    * Voeg de API-machtigingen `offline_access` en `Sites.Manage.All` toe om lees- en schrijfmachtigingen te bieden. `Sites.Manage.All` is een machtigingsbereik in de Microsoft Graph-API waarmee een toepassing alle aspecten van SharePoint-sites kan beheren, zoals het verwijderen of wijzigen van sites.
 
      >[!NOTE]
      >
-     > U kunt de Plaatsen van SharePoint met beperkte toegang [ ook vormen door het ](/help/forms/configure-sharepoint-site-limited-access.md) toestemmingswerkingsgebied in de Grafiek API van Microsoft te gebruiken. `Sites.Selected` `Sites.Selected` is een machtigingsbereik in de Microsoft Graph API die gedetailleerdere en beperkte toegang tot SharePoint-sites toestaat.
+     > U kunt de Plaatsen van SharePoint met beperkte toegang [&#x200B; ook vormen door het &#x200B;](/help/forms/configure-sharepoint-site-limited-access.md) toestemmingswerkingsgebied in de Grafiek API van Microsoft te gebruiken. `Sites.Selected` `Sites.Selected` is een machtigingsbereik in de Microsoft Graph API die gedetailleerdere en beperkte toegang tot SharePoint-sites toestaat.
 
    * Gebruik OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervang `<tenant-id>` door `tenant-id` van uw app via de Microsoft® Azure-portal.
 
@@ -79,7 +79,7 @@ Voer de volgende stappen uit om een opslagconfiguratie van de Bibliotheek van he
 
 1. Open het Adaptief formulier voor bewerking en ga naar de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
 1. Van de **[!UICONTROL Submit Action]** drop-down lijst, uitgezochte **legt Actie** als **[!UICONTROL Submit to SharePoint]** voor.
-   ![ SharePoint GIF ](/help/forms/assets/submit-to-sharepoint-fc.png){width=50%}
+   ![&#x200B; SharePoint GIF &#x200B;](/help/forms/assets/submit-to-sharepoint-fc.png){width=50%}
 1. Selecteer **[!UICONTROL Storage Configuration]** waar u de gegevens wilt opslaan.
 1. Klik op **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
 
@@ -93,10 +93,10 @@ Voer de volgende stappen uit om een opslagconfiguratie van de Bibliotheek van he
 Voer de volgende stappen uit om een opslagconfiguratie van de Documentbibliotheek van SharePoint in een Aangepast Vorm te gebruiken dat op de Component van de Kern wordt gebaseerd als:
 
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op de tab **[!UICONTROL Submission]** .
 1. Van de **[!UICONTROL Submit Action]** drop-down lijst, uitgezochte **legt Actie** als **[!UICONTROL Submit to SharePoint]** voor.
-   ![ SharePoint GIF ](/help/forms/assets/sharedrive-video.gif)
+   ![&#x200B; SharePoint GIF &#x200B;](/help/forms/assets/sharedrive-video.gif)
 1. Selecteer **[!UICONTROL Storage Configuration]** waar u de gegevens wilt opslaan.
 1. Klik op **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
 
@@ -116,10 +116,10 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
    >[!NOTE]
    >
    > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Verwijs naar het [&#x200B; artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 1. Klik **Verzending** lusje en selecteer **[!UICONTROL Submit to SharePoint]** voorlegt actie.
-   ![ SharePoint GIF ](/help/forms/assets/submit-to-sharepoint-ue.png)
+   ![&#x200B; SharePoint GIF &#x200B;](/help/forms/assets/submit-to-sharepoint-ue.png)
 1. Selecteer **[!UICONTROL Storage Configuration]** waar u de gegevens wilt opslaan.
 1. Klik op **[!UICONTROL Save&Close]** om de verzendinstellingen op te slaan.
 

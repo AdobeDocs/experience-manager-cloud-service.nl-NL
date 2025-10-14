@@ -13,24 +13,24 @@ ht-degree: 0%
 
 # Salesforce voor AEM Forms configureren {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms]  de Integratie van Gegevens ](data-integration.md) verstrekt [!DNL Salesforce] de Diensten van de Wolk om Aanpassings Forms met het Model van de Gegevens van de Vorm van OTB (FDM) te integreren. De Adaptive Forms kan vervolgens communiceren met [!DNL Salesforce] -servers om bedrijfsworkflows in te schakelen. Bijvoorbeeld:
+[[!DNL Experience Manager Forms]  de Integratie van Gegevens &#x200B;](data-integration.md) verstrekt [!DNL Salesforce] de Diensten van de Wolk om Aanpassings Forms met het Model van de Gegevens van de Vorm van OTB (FDM) te integreren. De Adaptive Forms kan vervolgens communiceren met [!DNL Salesforce] -servers om bedrijfsworkflows in te schakelen. Bijvoorbeeld:
 
 * Schrijf gegevens naar [!DNL Salesforce] bij het verzenden van een adaptief formulier.
 * Schrijf gegevens in [!DNL Salesforce] via aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel (FDM) en omgekeerd.
 * Vraag [!DNL Salesforce] -server om gegevens en vul Adaptief Forms vooraf in.
 * Gegevens van de [!DNL Salesforce] -server lezen.
 
-[!DNL Salesforce] de wolkendiensten en het Model van de Gegevens van de Vorm (FDM) zijn beschikbaar uit de doos op de [!DNL AEM Forms] Server nadat u [ opstelling een ontwikkelingsproject voor Forms die op Experience Manager archetype ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) wordt gebaseerd.
+[!DNL Salesforce] de wolkendiensten en het Model van de Gegevens van de Vorm (FDM) zijn beschikbaar uit de doos op de [!DNL AEM Forms] Server nadat u [&#x200B; opstelling een ontwikkelingsproject voor Forms die op Experience Manager archetype &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment) wordt gebaseerd.
 
 >[!NOTE]
 >
->[!DNL Salesforce] de wolkendiensten en het Model van de Gegevens van de Vorm (FDM) zijn beschikbaar uit de doos slechts als u opstelling een [!DNL Experience Manager Forms] als [!DNL Cloud Service] project dat op [ wordt gebaseerd Archetype 30 van AEM ](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) of later.
+>[!DNL Salesforce] de wolkendiensten en het Model van de Gegevens van de Vorm (FDM) zijn beschikbaar uit de doos slechts als u opstelling een [!DNL Experience Manager Forms] als [!DNL Cloud Service] project dat op [&#x200B; wordt gebaseerd Archetype 30 van AEM &#x200B;](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) of later.
 
 ## [!DNL Salesforce] cloudservice configureren {#configure-salesforce-cloud-service}
 
 Voordat u de [!DNL Salesforce] -cloudservices configureert, moet u de volgende taken uitvoeren:
 
-* [ creeer een verbonden OAuth-Toegelaten  [!DNL Salesforce]  toepassing ](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). Wanneer u de verbonden [!DNL Salesforce] toepassing creeert, specificeer callback URL in het volgende formaat:
+* [&#x200B; creeer een verbonden OAuth-Toegelaten  [!DNL Salesforce]  toepassing &#x200B;](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5). Wanneer u de verbonden [!DNL Salesforce] toepassing creeert, specificeer callback URL in het volgende formaat:
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
@@ -44,7 +44,7 @@ Voordat u de [!DNL Salesforce] -cloudservices configureert, moet u de volgende t
 
 Voer de volgende stappen uit om de cloudservice van [!DNL Salesforce] te configureren:
 
-1. Voor [!DNL AEM Forms] auteursinstantie, navigeer aan **[!UICONTROL Tools]** ![ hamer ](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**.
+1. Voor [!DNL AEM Forms] auteursinstantie, navigeer aan **[!UICONTROL Tools]** ![&#x200B; hamer &#x200B;](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**.
 2. Selecteer de mapnaam, selecteer **[!UICONTROL Salesforce Cloud Config]** en selecteer **[!UICONTROL Properties]** .
 3. Op het tabblad **[!UICONTROL Authentication Settings]** :
    1. Geef de [!DNL Salesforce] domein-URL op in het veld **[!UICONTROL Host]** . Bijvoorbeeld, [ domein-naam ] .my.salesforce.com.
@@ -56,16 +56,16 @@ Voer de volgende stappen uit om de cloudservice van [!DNL Salesforce] te configu
 
 ### Toegang vanuit het vak [!DNL Salesforce] Formuliergegevensmodel (FDM)
 
-Een [!DNL Salesforce] Model van de Gegevens van de Vorm (FDM) is beschikbaar uit de doos op de [!DNL AEM Forms] Server nadat u [ opstelling een ontwikkelingsproject voor Forms die op Experience Manager archetype ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) wordt gebaseerd.
+Een [!DNL Salesforce] Model van de Gegevens van de Vorm (FDM) is beschikbaar uit de doos op de [!DNL AEM Forms] Server nadat u [&#x200B; opstelling een ontwikkelingsproject voor Forms die op Experience Manager archetype &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment) wordt gebaseerd.
 
 U kunt als volgt het formuliergegevensmodel (FDM) openen:
 1. Navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]** .
-1. Selecteer de omslagnaam, selecteer **[!UICONTROL Salesforce Data Model]**, en selecteer uitgeven ![ ](assets/edit.png) pictogram uitgeven om het model van vormgegevens (FDM) te bekijken.
+1. Selecteer de omslagnaam, selecteer **[!UICONTROL Salesforce Data Model]**, en selecteer uitgeven ![&#x200B; &#x200B;](assets/edit.png) pictogram uitgeven om het model van vormgegevens (FDM) te bekijken.
 
-Na het vormen van de [[!DNL Salesforce]  dienst van Config van de Wolk ](#configure-salesforce-cloud-service), kunt u adaptieve vormen met uit de doos [!DNL Salesforce] Model van Gegevens integreren.
+Na het vormen van de [[!DNL Salesforce]  dienst van Config van de Wolk &#x200B;](#configure-salesforce-cloud-service), kunt u adaptieve vormen met uit de doos [!DNL Salesforce] Model van Gegevens integreren.
 
 >[!MORELIKETHIS]
 >
->* [ vorm gegevensbronnen voor AEM Forms ](/help/forms/configure-data-sources.md)
->* [ vorm Azure opslag voor AEM Forms ](/help/forms/configure-azure-storage.md)
->  [Forms Portal toevoegen aan een AEM Sites-pagina ](/help/forms/configure-forms-portal.md)
+>* [&#x200B; vorm gegevensbronnen voor AEM Forms &#x200B;](/help/forms/configure-data-sources.md)
+>* [&#x200B; vorm Azure opslag voor AEM Forms &#x200B;](/help/forms/configure-azure-storage.md)
+>  [Forms Portal toevoegen aan een AEM Sites-pagina &#x200B;](/help/forms/configure-forms-portal.md)

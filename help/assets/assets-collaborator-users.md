@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # AEM Assets Collaborator-gebruikers {#assets-collaborator-users}
 
-![ de gebruikersbanner van de Medewerker van AEM Assets ](/help/assets/assets/aem-assets-collaborator-users-banner.png)
+![&#x200B; de gebruikersbanner van de Medewerker van AEM Assets &#x200B;](/help/assets/assets/aem-assets-collaborator-users-banner.png)
 
-Experience Manager Assets bevat een gebruikerstype van Medewerker en beheerders kunnen eenvoudig gebruikers of gebruikersgroepen aan dit gebruikerstype toevoegen met Admin Console. Voor meer informatie, zie [ Gebruikers van de Medewerker aan boord ](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users).
+Experience Manager Assets bevat een gebruikerstype van Medewerker en beheerders kunnen eenvoudig gebruikers of gebruikersgroepen aan dit gebruikerstype toevoegen met Admin Console. Voor meer informatie, zie [&#x200B; Gebruikers van de Medewerker aan boord &#x200B;](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users).
 
 Als deelnemer kunt u:
 
@@ -24,4 +24,4 @@ Als deelnemer kunt u:
 * Elementen maken en bewerken met behulp van ingebouwde Adobe Express en Firefly, waarbij gebruik wordt gemaakt van professioneel ontworpen sjablonen, merkpakketten, Adobe Stock-middelen enzovoort.
 
 
-Als uw beheerder Content Hub voor uw organisatie heeft geconfigureerd, kunt u bovendien goedgekeurde middelen van uw organisatie openen en gebruiken via AEM Assets Content Hub Portal. Voor meer informatie over de mogelijkheden van Content Hub, zie [ Overzicht van Content Hub ](/help/assets/product-overview.md).
+Als uw beheerder Content Hub voor uw organisatie heeft geconfigureerd, kunt u bovendien goedgekeurde middelen van uw organisatie openen en gebruiken via AEM Assets Content Hub Portal. Voor meer informatie over de mogelijkheden van Content Hub, zie [&#x200B; Overzicht van Content Hub &#x200B;](/help/assets/product-overview.md).

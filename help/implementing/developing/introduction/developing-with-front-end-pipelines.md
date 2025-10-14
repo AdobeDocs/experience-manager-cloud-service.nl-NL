@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{traditional-aem}}
 
-De [ front-end pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) geeft front-end ontwikkelaars grotere onafhankelijkheid en versnelt beduidend ontwikkeling. In dit artikel wordt uitgelegd hoe het proces werkt en worden belangrijke overwegingen gemarkeerd om u te helpen er optimaal van te profiteren.
+De [&#x200B; front-end pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) geeft front-end ontwikkelaars grotere onafhankelijkheid en versnelt beduidend ontwikkeling. In dit artikel wordt uitgelegd hoe het proces werkt en worden belangrijke overwegingen gemarkeerd om u te helpen er optimaal van te profiteren.
 
 >[!TIP]
 >
@@ -24,7 +24,7 @@ De [ front-end pijpleiding ](/help/implementing/cloud-manager/configuring-pipeli
 
 ## Begrijp de front-end pijpleiding opstelling en bouwstijlproces in AEM Cloud Manager {#front-end-build-contract}
 
-Gelijkaardig aan [ volledig-stapel bouwt milieu ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), heeft de front-end pijpleiding zijn eigen milieu. Ontwikkelaars hebben enige flexibiliteit met deze pijpleiding, op voorwaarde dat ze het front-end bouwcontract volgen.
+Gelijkaardig aan [&#x200B; volledig-stapel bouwt milieu &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), heeft de front-end pijpleiding zijn eigen milieu. Ontwikkelaars hebben enige flexibiliteit met deze pijpleiding, op voorwaarde dat ze het front-end bouwcontract volgen.
 
 De front-end pijpleiding vereist het front-end `Node.js` project om de `build` manuscriptrichtlijn te gebruiken om de bouwstijl te produceren die het opstelt. Deze vereiste bestaat omdat Cloud Manager het bevel `npm run build` gebruikt om het plaatsbare project voor front-end bouwt te produceren.
 
@@ -42,7 +42,7 @@ De front-end build-omgeving ondersteunt de volgende `Node.js` versies:
 * 14 (standaard)
 * 12
 
-U kunt de `NODE_VERSION` [ milieuvariabele ](/help/implementing/cloud-manager/environment-variables.md) gebruiken om de gewenste versie te plaatsen.
+U kunt de `NODE_VERSION` [&#x200B; milieuvariabele &#x200B;](/help/implementing/cloud-manager/environment-variables.md) gebruiken om de gewenste versie te plaatsen.
 
 ## Aanbevolen procedures voor de naamgeving en het beheer van pijpleidingen aan de voorzijde in AEM {#single-source-of-truth}
 
@@ -92,11 +92,11 @@ De volgende stappen worden over het algemeen aanbevolen wanneer u wijzigingen aa
 
 * Leer hoe u met AEM-sitethema&#39;s de stijl en het ontwerp van uw site kunt aanpassen.
 
-  Zie [ Thema&#39;s van de Plaats ](/help/sites-cloud/administering/site-creation/site-themes.md).
+  Zie [&#x200B; Thema&#39;s van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 * Adobe biedt een AEM Site Theme Builder als een set scripts voor het maken van nieuwe sitethema&#39;s.
 
-  Zie [ de Bouwer van het Thema van de Plaats van AEM ](https://github.com/adobe/aem-site-theme-builder)
+  Zie [&#x200B; de Bouwer van het Thema van de Plaats van AEM &#x200B;](https://github.com/adobe/aem-site-theme-builder)
 
 
 

@@ -24,7 +24,7 @@ Vlakke lijsten met gecontroleerde woordenboeken kunnen in de loop der tijd onbeh
 
 U kunt een naamruimte maken op hoofdniveau en een hiërarchische structuur van subtags maken binnen de naamruimte. U kunt bijvoorbeeld een naamruimte `Activities` op hoofdniveau maken en tags `Cycling` , `Hiking` en `Running` in de naamruimte gebruiken. U kunt nog meer subtags `Clothing` en `Shoes` within `Running` gebruiken.
 
-![ het Taggen Beheer ](assets/tags-hierarchy.png)
+![&#x200B; het Taggen Beheer &#x200B;](assets/tags-hierarchy.png)
 
 Tags bieden veel voordelen, zoals:
 
@@ -42,7 +42,7 @@ Als u tags wilt toepassen op elementen, moet u eerst een naamruimte maken en er 
 >
 >U hoeft het veld Codes alleen aan het metagegevensformulier toe te voegen als u het standaardmetagegevensformulier niet gebruikt.
 
-![ het Taggen Beheer ](assets/tagging-taxonomy-management.png)
+![&#x200B; het Taggen Beheer &#x200B;](assets/tagging-taxonomy-management.png)
 
 Aanvullende mogelijkheden die verder gaan dan wat in dit artikel wordt vermeld, zoals tags samenvoegen, hernoemen, lokaliseren en publiceren, zijn beschikbaar in de beheerweergave.
 
@@ -56,7 +56,7 @@ Voer de volgende stappen uit om een naamruimte te maken:
 1. Klik op `Create Namespace`.
 1. Voeg `Title` , `Name` en `Description` toe voor de naamruimte. De invoer die u opgeeft in het veld `Title` wordt boven in de hiërarchie weergegeven. Bijvoorbeeld, in het volgende beeld, **Activiteiten** verwijst naar de titel van Namespace.
 
-   ![ het Taggen Beheer ](assets/tags-hierarchy.png)
+   ![&#x200B; het Taggen Beheer &#x200B;](assets/tags-hierarchy.png)
 
 1. Klik op `Save`.
 
@@ -66,7 +66,7 @@ Voer de volgende stappen uit om tags toe te voegen aan een naamruimte:
 
 1. Ga naar **[!UICONTROL Taxonomy Management]** .
 1. Selecteer de naamruimte en klik op `Create` om de tag op het hoogste niveau onder de naamruimte te maken. Als u een subtag wilt maken onder een tag in een naamruimte, selecteert u de tag en klikt u op `Create` .
-   ![ Hiërarchie van Markeringen ](assets/hierarchy-of-tags.png)
+   ![&#x200B; Hiërarchie van Markeringen &#x200B;](assets/hierarchy-of-tags.png)
 
    In dit voorbeeld vertegenwoordigt de afbeelding aan de linkerkant de tag direct onder de naamruimte `automobile-four-wheeler` die in het `Path` -veld wordt weergegeven. De afbeelding aan de rechterkant is een voorbeeld van subtags die binnen een tag worden toegevoegd, omdat er naast de naamruimte meer tagnamen `jeep` en `jeep-meridian` worden weergegeven in het veld `Path` .
 1. Geef de titel, naam en beschrijving voor de tag op en klik op `Save` .
@@ -84,7 +84,7 @@ Niet-gestructureerde tags of tags zonder hiërarchie worden opgeslagen onder naa
 
 Als u een standaardcode wilt maken, klikt u op `Create Tag` op het hoofdniveau. Geef een titel, naam en beschrijving op en klik op `Save` .
 
-![ Toevoegend markeringen aan standaardmarkeringen ](assets/adding-tags-to-standard-tags.png)
+![&#x200B; Toevoegend markeringen aan standaardmarkeringen &#x200B;](assets/adding-tags-to-standard-tags.png)
 
 >[!NOTE]
 >
@@ -124,13 +124,13 @@ Voer de volgende stappen uit om tags te verwijderen:
 
 >[!NOTE]
 >
->* Als u de bovenliggende tag of naamruimte verwijdert, worden ook de subtags verwijderd die in de hiërarchie zijn opgeslagen. Als u de ouder Namespace moet schrappen of bijwerken, wordt het geadviseerd om [ uw markeringen ](#moving-tags) aan de nieuwe bestemming te bewegen alvorens de ouderhiërarchie te schrappen.
+>* Als u de bovenliggende tag of naamruimte verwijdert, worden ook de subtags verwijderd die in de hiërarchie zijn opgeslagen. Als u de ouder Namespace moet schrappen of bijwerken, wordt het geadviseerd om [&#x200B; uw markeringen &#x200B;](#moving-tags) aan de nieuwe bestemming te bewegen alvorens de ouderhiërarchie te schrappen.
 >* Als u een tag verwijdert, worden ook alle verwijzingen uit de elementen verwijderd.
 >* U kunt geen standaardlabels verwijderen die zich op het hoofdniveau bevinden.
 
 ## De component Codes toevoegen aan het formulier Metagegevens {#add-tags-to-metadata-form}
 
-De tagcomponent wordt automatisch toegevoegd aan het metagegevensformulier `default` . U kunt de vorm van a [ Meta-gegevens ](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=nl-NL#metadata-forms) of door een malplaatje of van kras te gebruiken ontwerpen. Als u geen bestaande sjabloon voor metagegevens gebruikt, kunt u het formulier Metagegevens wijzigen en de tagcomponent toevoegen. De toewijzing van de eigenschap metadata wordt automatisch ingevuld en kan op dit moment niet worden gewijzigd. [!DNL Assets as a Cloud Service] -gebruikers kunnen de toewijzing bijwerken om tagwaarden op te slaan met behulp van aangepaste naamruimten en alleen subsets van hiërarchieën toegankelijk maken met behulp van hoofdpaden.
+De tagcomponent wordt automatisch toegevoegd aan het metagegevensformulier `default` . U kunt de vorm van a [&#x200B; Meta-gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=nl-NL#metadata-forms) of door een malplaatje of van kras te gebruiken ontwerpen. Als u geen bestaande sjabloon voor metagegevens gebruikt, kunt u het formulier Metagegevens wijzigen en de tagcomponent toevoegen. De toewijzing van de eigenschap metadata wordt automatisch ingevuld en kan op dit moment niet worden gewijzigd. [!DNL Assets as a Cloud Service] -gebruikers kunnen de toewijzing bijwerken om tagwaarden op te slaan met behulp van aangepaste naamruimten en alleen subsets van hiërarchieën toegankelijk maken met behulp van hoofdpaden.
 
 Bekijk deze korte video om te zien hoe u de component Tags aan het metagegevensformulier kunt toevoegen:
 
@@ -142,7 +142,7 @@ Bekijk deze korte video om te zien hoe u de component Tags aan het metagegevensf
 1. Ga naar de pagina met elementdetails en navigeer naar de sectie `Tags` van het formulier Metagegevens.
 1. Selecteer het tagkiezerpictogram dat naast het veld Tags staat of typ een labelnaam om de voorgestelde resultaten te zien.
 
-   ![ Tags-activa ](assets/adding-tags-to-assets.png)
+   ![&#x200B; Tags-activa &#x200B;](assets/adding-tags-to-assets.png)
 
 1. Selecteer een of meer tags. De subtag wordt automatisch geselecteerd samen met de bovenliggende tag of naamruimte.
 Tags die zijn gewijzigd in de Elementen worden ook toegepast in Assets as a Cloud Service.
@@ -176,7 +176,7 @@ U kunt ook slimme tags voor één element blokkeren. Navigeer naar de details va
 * **Uitgezocht allen:** selecteer checkbox naast **Naam van de Markering** om alle markeringen in de lijst van gewezen personen te selecteren.
 * **Sorterend:** u kunt de lijst van gewezen personen in of het stijgen of dalende orde sorteren. Om dit te doen, klik pijl naast **Naam van de Markering**.
 
-  ![ blokmarkeringen ](assets/blocklist.gif)
+  ![&#x200B; blokmarkeringen &#x200B;](assets/blocklist.gif)
 
   >[!NOTE]
   >
@@ -198,7 +198,7 @@ In de Assets-weergave kunt u geblokkeerde tags importeren uit een gegevensbron (
 1. Kies het CSV-bestand van uw apparaat. Klik op **[!UICONTROL select a file]** om vanaf uw apparaat naar het bestand te navigeren. U kunt het CSV-bestand ook slepen en neerzetten vanaf het apparaat.
 1. Klik op **[!UICONTROL Upload]**. De tags uit het CSV-bestand worden vermeld in de lijst met geblokkeerde tags.
 
-   ![ de Invoer geblokkeerde lijst van markeringen ](assets/import-blocked-tags.png)
+   ![&#x200B; de Invoer geblokkeerde lijst van markeringen &#x200B;](assets/import-blocked-tags.png)
 
 Voer de onderstaande stappen uit als u een sjabloon voor geblokkeerde tags wilt downloaden:
 

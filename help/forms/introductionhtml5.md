@@ -22,9 +22,9 @@ ht-degree: 0%
 
 HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager 6.0 (AEM 6.0)-software die XFA-formuliersjablonen kan weergeven in HTML5-indeling. Met deze functie wordt de weergave mogelijk van formulieren op mobiele apparaten en desktopbrowsers waarop XFA-gebaseerde PDF niet wordt ondersteund. HTML5-formulieren ondersteunen niet alleen de bestaande mogelijkheden van XFA-formuliersjablonen, maar voegen ook nieuwe mogelijkheden toe, zoals een krabbelhandtekening, voor mobiele apparaten.
 
-HTML5-formulieren genereren documenten op basis van standaard HTML5-constructies. U kunt HTML5-formulieren weergeven in alle moderne browsers die HTML5 ondersteunen. Hiervoor hoeft u geen extra browserplug-ins voor de browsers te installeren. Voor meer informatie over gesteunde browsers, zie [ Ondersteunde cliëntplatforms ](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
+HTML5-formulieren genereren documenten op basis van standaard HTML5-constructies. U kunt HTML5-formulieren weergeven in alle moderne browsers die HTML5 ondersteunen. Hiervoor hoeft u geen extra browserplug-ins voor de browsers te installeren. Voor meer informatie over gesteunde browsers, zie [&#x200B; Ondersteunde cliëntplatforms &#x200B;](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
-![ HTML5 vormvoorproef ](assets/mobile_form_on_an_ipad_date_14.png)
+![&#x200B; HTML5 vormvoorproef &#x200B;](assets/mobile_form_on_an_ipad_date_14.png)
 
 ## Belangrijkste mogelijkheden van HTML5-formulieren {#key-capabilities-of-html-forms-br}
 
@@ -48,4 +48,4 @@ AEM biedt ook één weergave voor het aanbieden en beheren van alle formuliersja
 
 ### Forms-aanpassing {#forms-customization}
 
-HTML5-formulieren renderen formuliersjablonen met behulp van standaard HTML5-constructies. Hierdoor is het eenvoudig om formulieren in HTML5-indeling aan te passen en uit te breiden met behulp van webtechnologieën, voornamelijk CSS en JavaScript. U kunt de weergave van bestaande widgets eenvoudig aanpassen, uw eigen aangepaste widgets maken of aangepaste stijlen in formulieren gebruiken. Voor meer informatie over het creëren van douane widgets en het aanpassen van bestaande widgets, zie [ Stop in douanegidgets met HTML5 vormen ](/help/forms/custom-widgets.md).
+HTML5-formulieren renderen formuliersjablonen met behulp van standaard HTML5-constructies. Hierdoor is het eenvoudig om formulieren in HTML5-indeling aan te passen en uit te breiden met behulp van webtechnologieën, voornamelijk CSS en JavaScript. U kunt de weergave van bestaande widgets eenvoudig aanpassen, uw eigen aangepaste widgets maken of aangepaste stijlen in formulieren gebruiken. Voor meer informatie over het creëren van douane widgets en het aanpassen van bestaande widgets, zie [&#x200B; Stop in douanegidgets met HTML5 vormen &#x200B;](/help/forms/custom-widgets.md).

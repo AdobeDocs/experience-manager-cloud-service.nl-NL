@@ -16,8 +16,8 @@ ht-degree: 6%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie [ het Beheer Markeringen ](/help/sites-cloud/administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
-* Zie [ Tags voor Ontwikkelaars ](/help/implementing/developing/introduction/tagging-framework.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
+* Zie [&#x200B; het Beheer Markeringen &#x200B;](/help/sites-cloud/administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
+* Zie [&#x200B; Tags voor Ontwikkelaars &#x200B;](/help/implementing/developing/introduction/tagging-framework.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
 
 ## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
 
@@ -40,7 +40,7 @@ In het auteursmilieu, kunnen de auteurs markeringen toepassen door tot de pagina
 
 Als u vooraf gedefinieerde tags wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** het veld **Tags** en het venster **Tags selecteren**. Het tabblad **Standaardtags** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` als voorvoegsel is voor de taxonomie. <!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
 
-![ Uitgezochte veelvoudige markeringen ](/help/sites-cloud/authoring/assets/tags-select.png)
+![&#x200B; Uitgezochte veelvoudige markeringen &#x200B;](/help/sites-cloud/authoring/assets/tags-select.png)
 
 ## Codes publiceren {#publishing-tags}
 

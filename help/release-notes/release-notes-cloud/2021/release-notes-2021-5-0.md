@@ -20,7 +20,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -31,37 +31,37 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 ### Nieuw in AEM as a Cloud Service Foundation {#what-is-new-foundation}
 
-* [ het Kanaal van de preRelease ](/help/release-notes/prerelease.md): Voorproef komende eigenschappen voor een volledige maand alvorens zij in productie gaan!
+* [&#x200B; het Kanaal van de preRelease &#x200B;](/help/release-notes/prerelease.md): Voorproef komende eigenschappen voor een volledige maand alvorens zij in productie gaan!
 
-* [ API Verdringing ](/help/release-notes/deprecated-removed-features.md): een lijst van recentste verouderde APIs voor AEM as a Cloud Service is beschikbaar.
+* [&#x200B; API Verdringing &#x200B;](/help/release-notes/deprecated-removed-features.md): een lijst van recentste verouderde APIs voor AEM as a Cloud Service is beschikbaar.
 
-* [ AEM as a Cloud Service SDK bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL): Werk uw beproefde projecten aan de recentste versie bij, die een verouderde controle van Java API en andere verbeteringen omvat.
+* [&#x200B; AEM as a Cloud Service SDK bouwt Analysator Gemaakte Insteekmodule &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL): Werk uw beproefde projecten aan de recentste versie bij, die een verouderde controle van Java API en andere verbeteringen omvat.
 
 ## [!DNL Adobe Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* U zult binnenkort inhoud op een nieuwe [ rij van de Voorproef ](/help/sites-cloud/authoring/sites-console/previewing-content.md) kunnen verifiëren om de definitieve ervaring te simuleren kijkt en voelt zoals u op de rij van Publish zou. Dit wordt ingeschakeld door de AEM Sites Managed Publication-wizard, waarmee u nu een publicatiebestemming kunt kiezen tussen Publish of Voorvertoning. Ervaring met Voorvertoning is dan toegankelijk via een specifieke URL. Na validatie bij Voorvertoning kan inhoud op de gebruikelijke wijze van Auteur naar Publish worden gepubliceerd. Het inschakelen van de voorvertoningsservice in AEM as a Cloud Service-omgevingen wordt in de komende weken geleidelijk uitgevoerd.
+* U zult binnenkort inhoud op een nieuwe [&#x200B; rij van de Voorproef &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md) kunnen verifiëren om de definitieve ervaring te simuleren kijkt en voelt zoals u op de rij van Publish zou. Dit wordt ingeschakeld door de AEM Sites Managed Publication-wizard, waarmee u nu een publicatiebestemming kunt kiezen tussen Publish of Voorvertoning. Ervaring met Voorvertoning is dan toegankelijk via een specifieke URL. Na validatie bij Voorvertoning kan inhoud op de gebruikelijke wijze van Auteur naar Publish worden gepubliceerd. Het inschakelen van de voorvertoningsservice in AEM as a Cloud Service-omgevingen wordt in de komende weken geleidelijk uitgevoerd.
 
 ## [!DNL Adobe Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#what-is-new-assets}
 
-* U kunt de gedeelde elementen downloaden met de functie voor delen van koppeling. Deze download gebruikt nu een asynchrone service die sneller en ononderbroken downloads biedt, zelfs voor zeer grote downloads. Zie [ downloadactiva ](/help/assets/download-assets-from-aem.md#link-share-download).
+* U kunt de gedeelde elementen downloaden met de functie voor delen van koppeling. Deze download gebruikt nu een asynchrone service die sneller en ononderbroken downloads biedt, zelfs voor zeer grote downloads. Zie [&#x200B; downloadactiva &#x200B;](/help/assets/download-assets-from-aem.md#link-share-download).
 
-  ![ Inbox van de Download ](/help/assets/assets/download-inbox.png)
+  ![&#x200B; Inbox van de Download &#x200B;](/help/assets/assets/download-inbox.png)
 
 ### Nieuwe functies beschikbaar in het prerelease-kanaal {#what-is-new-assets-prerelease}
 
 * Metagegevensschema&#39;s kunnen rechtstreeks op de mapeigenschappen worden toegepast.
 
-  ![ voeg meta-gegevensschema van omslageigenschappen ](/help/assets/assets/metadata-schema-folder-properties.png) toe
+  ![&#x200B; voeg meta-gegevensschema van omslageigenschappen &#x200B;](/help/assets/assets/metadata-schema-folder-properties.png) toe
 
 * Met het gereedschap Asset Bulk Ingestor kunt u metagegevens toevoegen tijdens een grote opname.
 
 * Dankzij de verbeteringen in de gebruikerservaring wordt het aantal elementen in een map weergegeven. Voor meer dan 1000 elementen in een map geeft [!DNL Assets] 1000+ weer.
 
-  ![ Aantal activa in een omslag worden getoond op de interface ](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![&#x200B; Aantal activa in een omslag worden getoond op de interface &#x200B;](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Buizen gecorrigeerd in [!DNL Assets] {#assets-bugs-fixed}
 
@@ -70,7 +70,7 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 #### Nieuwe functies in Dynamic Media {#what-is-new-dm}
 
-* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Voor meer informatie, zie [ Slimme beelden FAQs ](/help/assets/dynamic-media/imaging-faq.md) en [ optimalisering van het Beeld met volgende generatie beeldformaten WebP en AVIF ](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
+* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Voor meer informatie, zie [&#x200B; Slimme beelden FAQs &#x200B;](/help/assets/dynamic-media/imaging-faq.md) en [&#x200B; optimalisering van het Beeld met volgende generatie beeldformaten WebP en AVIF &#x200B;](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
 * Introductie van ondersteuning voor AVIF van de volgende generatie voor afbeeldingsindeling in Dynamic Media-levering (fmt URL-modifier).
 
 ## [!DNL Adobe Experience Manager Forms] als een [!DNL Cloud Service] {#forms}

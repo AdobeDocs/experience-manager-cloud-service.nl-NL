@@ -28,8 +28,8 @@ U kunt een foutenrapport eens per maand, voor een bepaald bedrijf aanvragen.
 
 **om een foutenrapport voor Dynamische levering URLs van Media te verzoeken die ontbreken:**
 
-1. [ verzend een e-mail naar reports-dynamic-media@adobe.com ](mailto:reports-dynamic-media@adobe.com) met de bedrijfsnaam die met uw Dynamische rekening van Media wordt geassocieerd.
+1. [&#x200B; verzend een e-mail naar reports-dynamic-media@adobe.com &#x200B;](mailto:reports-dynamic-media@adobe.com) met de bedrijfsnaam die met uw Dynamische rekening van Media wordt geassocieerd.
 
-   Als u niet de bedrijfsnaam kent, zie de [ Dynamische pagina van de Configuratie van Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=nl-NL#configuring-dynamic-media-cloud-services) in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuation]**. Voor de Dynamische Browser van de Configuratie van Media pagina, klik **[!UICONTROL global]**, selecteer *[Dynamic_Media_folder_icon]* checkbox, dan uitgezochte **[!UICONTROL Edit]**. U moet beheerdersrechten in AEM hebben om toegang te krijgen tot de pagina Dynamic Media Configuration.
+   Als u niet de bedrijfsnaam kent, zie de [&#x200B; Dynamische pagina van de Configuratie van Media &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=nl-NL#configuring-dynamic-media-cloud-services) in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuation]**. Voor de Dynamische Browser van de Configuratie van Media pagina, klik **[!UICONTROL global]**, selecteer *[Dynamic_Media_folder_icon]* checkbox, dan uitgezochte **[!UICONTROL Edit]**. U moet beheerdersrechten in AEM hebben om toegang te krijgen tot de pagina Dynamic Media Configuration.
 
-   ![ die tot de Dynamische pagina van de Configuratie van Media toegang hebben.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
+   ![&#x200B; die tot de Dynamische pagina van de Configuratie van Media toegang hebben.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

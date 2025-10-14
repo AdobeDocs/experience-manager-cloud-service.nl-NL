@@ -22,13 +22,13 @@ Uw systeembeheerder is verantwoordelijk voor het instellen van uw Cloud Manager-
 
 Ga als volgt te werk om naar Cloud Manager te navigeren.
 
-1. Navigeer naar de Cloud Manager-aanmeldingspagina op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com/) .
+1. Navigeer naar de Cloud Manager-aanmeldingspagina op [`https://my.cloudmanager.adobe.com` &#x200B;](https://my.cloudmanager.adobe.com/) .
 
 1. Selecteer het programma van Cloud Manager **Programma&#39;s en Producten** pagina om de **pagina van het Overzicht** te lanceren.
 
 U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Cloud Manager-programma&#39;s en -producten navigeren door deze stappen te volgen.
 
-1. Navigeer naar Adobe Experience Cloud op [`https://experience.adobe.com` ](https://experience.adobe.com) en meld u aan met uw Adobe ID.
+1. Navigeer naar Adobe Experience Cloud op [`https://experience.adobe.com` &#x200B;](https://experience.adobe.com) en meld u aan met uw Adobe ID.
 
 1. Zorg ervoor dat u zich in de juiste organisatie bevindt door te verwijzen naar de naam van de organisatie die rechtsboven op de werkbalk wordt weergegeven.
 
@@ -70,17 +70,17 @@ U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Cloud
 Cloud Manager-programma&#39;s zijn een reeks Cloud Manager-omgevingen die ondersteuning bieden voor logische groepen bedrijfsinitiatieven. Deze groepen komen meestal overeen met een aangeschafte Service level agreement (SLA). Bijvoorbeeld, kan één programma de AEM middelen vertegenwoordigen om de openbare Website van een organisatie te steunen, terwijl een ander programma interne DAM vertegenwoordigt.
 
 
-Bekijk deze [ video ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=nl-NL) om meer te leren bij het gebruiken van de programma&#39;s van Cloud Manager.
+Bekijk deze [&#x200B; video &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=nl-NL) om meer te leren bij het gebruiken van de programma&#39;s van Cloud Manager.
 
 Een gebruiker kan a **zandbak** of a **productie** programma tot stand brengen.
 
 * A **productieprogramma** wordt gecreeerd om levend verkeer op de aangewezen tijd in de toekomst toe te laten.
-   * Zie [ Inleiding aan de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer details.
+   * Zie [&#x200B; Inleiding aan de Programma&#39;s van de Productie &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer details.
 
 * A **zandbakprogramma** wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, activering, creërend POCs, of voor documentatie te dienen.
    * Het is niet de bedoeling om levend verkeer te vervoeren en zal beperkingen hebben die een productieprogramma niet zal hebben.
    * Het omvat Plaatsen en Assets en wordt geleverd automatisch bevolkt met een git tak die steekproefcode, een ontwikkelomgeving, en een niet productiepijplijn omvat.
-   * Zie [ Inleiding aan Programma&#39;s Sandbox ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer details.
+   * Zie [&#x200B; Inleiding aan Programma&#39;s Sandbox &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer details.
 
 ## Cloud Manager Environment {#cloud-manager-environments}
 
@@ -92,9 +92,9 @@ Uw cloudomgevingen worden gemaakt, geopend en weergegeven via Cloud Manager. Dez
 
 >[!TIP]
 >
-> Zie de video [ Gebruikend de Milieu&#39;s van Cloud Manager van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=nl-NL) een overzicht van de beschikbare milieu&#39;s.
+> Zie de video [&#x200B; Gebruikend de Milieu&#39;s van Cloud Manager van de Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=nl-NL) een overzicht van de beschikbare milieu&#39;s.
 >
->Zie [ Milieu&#39;s ](/help/implementing/cloud-manager/manage-environments.md) beheren om meer over types van milieu te leren een gebruiker kan creëren en hoe de gebruiker een milieu kan creëren.
+>Zie [&#x200B; Milieu&#39;s &#x200B;](/help/implementing/cloud-manager/manage-environments.md) beheren om meer over types van milieu te leren een gebruiker kan creëren en hoe de gebruiker een milieu kan creëren.
 
 ### AEM Authoring {#author-services}
 

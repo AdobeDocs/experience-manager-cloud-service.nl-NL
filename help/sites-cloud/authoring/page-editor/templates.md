@@ -23,7 +23,7 @@ Wanneer een auteur een pagina maakt, moet hij of zij een sjabloon selecteren dat
 
 >[!NOTE]
 >
->[ de Malplaatjes zijn ook beschikbaar voor het creëren van pagina&#39;s die met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/templates.md) editable zijn.
+>[&#x200B; de Malplaatjes zijn ook beschikbaar voor het creëren van pagina&#39;s die met de Universele Redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/templates.md) editable zijn.
 
 Met de **Redacteur van het Malplaatje**, creërend en het handhaven van malplaatjes is geen ontwikkelaar-enige taak. Een type van macht-gebruiker, die a **malplaatjeauteur** wordt genoemd, kan malplaatjes tot stand brengen. De ontwikkelaars worden vereist om het milieu te plaatsen, cliëntbibliotheken te creëren, en de te gebruiken componenten tot stand te brengen, maar zodra deze grondbeginselen op zijn plaats zijn heeft de **malplaatjeauteur** de flexibiliteit om malplaatjes tot stand te brengen en te vormen zonder een ontwikkelaar te impliceren.
 
@@ -35,7 +35,7 @@ De **Redacteur van het Malplaatje** staat malplaatjeauteurs toe om:
 
 Dit document verklaart hoe de auteur van het a **malplaatje** de **Redacteur van het Malplaatje** kan gebruiken om editable malplaatjes tot stand te brengen en te beheren.
 
-Voor gedetailleerde informatie over hoe editable malplaatjes op een technisch niveau werken, zie het ontwikkelaarsdocument [ Bewerkbare Malplaatjes ](/help/implementing/developing/components/templates.md) voor meer informatie.
+Voor gedetailleerde informatie over hoe editable malplaatjes op een technisch niveau werken, zie het ontwikkelaarsdocument [&#x200B; Bewerkbare Malplaatjes &#x200B;](/help/implementing/developing/components/templates.md) voor meer informatie.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Voor gedetailleerde informatie over hoe editable malplaatjes op een technisch ni
 
 ## Voordat u begint {#before-you-start}
 
-Voordat u begint, is het belangrijk om te bedenken dat voor het maken van een sjabloon samenwerking vereist is. Om deze reden wordt de [ Rol ](#roles) vermeld voor elke taak. Dit heeft geen invloed op de manier waarop u een sjabloon gebruikt om een pagina te maken, maar het heeft wel invloed op de manier waarop een pagina betrekking heeft op de sjabloon.
+Voordat u begint, is het belangrijk om te bedenken dat voor het maken van een sjabloon samenwerking vereist is. Om deze reden wordt de [&#x200B; Rol &#x200B;](#roles) vermeld voor elke taak. Dit heeft geen invloed op de manier waarop u een sjabloon gebruikt om een pagina te maken, maar het heeft wel invloed op de manier waarop een pagina betrekking heeft op de sjabloon.
 
 >[!NOTE]
 >
@@ -76,16 +76,16 @@ De in dit document beschreven taken worden weergegeven met de rol die verantwoor
 
 Bij het maken van een bewerkbare sjabloon:
 
-* [ creeer een nieuw malplaatje ](#creating-a-new-template-template-author), dat aanvankelijk leeg zal zijn
-* [ bepaal extra eigenschappen ](#defining-template-properties-template-author) voor het malplaatje indien nodig
-* [ geef het malplaatje ](#editing-templates-template-authors) uit om te bepalen:
-   * [ Structuur ](#editing-a-template-structure-template-author) - vooraf bepaalde inhoud die niet op pagina&#39;s kan worden veranderd die met het malplaatje worden gecreeerd.
-   * [ Aanvankelijke Inhoud ](#editing-a-template-initial-content-author) - vooraf bepaalde inhoud die op pagina&#39;s kan worden veranderd die met het malplaatje worden gecreeerd.
-   * [ Lay-out ](#editing-a-template-layout-template-author) - voor een waaier van apparaten.
-   * [ Stijlen ](/help/sites-cloud/authoring/page-editor/style-system.md) - bepaal de stijlen die met het malplaatje en zijn componenten moeten worden gebruikt.
-* [ laat het malplaatje ](#enabling-a-template-template-author) voor gebruik toe wanneer het creëren van een pagina
-* [ sta het malplaatje ](#allowing-a-template-author) voor de vereiste pagina of tak van uw website toe
-* [ Publish het malplaatje ](#publishing-a-template-template-author) om het op te stellen publiceert milieu
+* [&#x200B; creeer een nieuw malplaatje &#x200B;](#creating-a-new-template-template-author), dat aanvankelijk leeg zal zijn
+* [&#x200B; bepaal extra eigenschappen &#x200B;](#defining-template-properties-template-author) voor het malplaatje indien nodig
+* [&#x200B; geef het malplaatje &#x200B;](#editing-templates-template-authors) uit om te bepalen:
+   * [&#x200B; Structuur &#x200B;](#editing-a-template-structure-template-author) - vooraf bepaalde inhoud die niet op pagina&#39;s kan worden veranderd die met het malplaatje worden gecreeerd.
+   * [&#x200B; Aanvankelijke Inhoud &#x200B;](#editing-a-template-initial-content-author) - vooraf bepaalde inhoud die op pagina&#39;s kan worden veranderd die met het malplaatje worden gecreeerd.
+   * [&#x200B; Lay-out &#x200B;](#editing-a-template-layout-template-author) - voor een waaier van apparaten.
+   * [&#x200B; Stijlen &#x200B;](/help/sites-cloud/authoring/page-editor/style-system.md) - bepaal de stijlen die met het malplaatje en zijn componenten moeten worden gebruikt.
+* [&#x200B; laat het malplaatje &#x200B;](#enabling-a-template-template-author) voor gebruik toe wanneer het creëren van een pagina
+* [&#x200B; sta het malplaatje &#x200B;](#allowing-a-template-author) voor de vereiste pagina of tak van uw website toe
+* [&#x200B; Publish het malplaatje &#x200B;](#publishing-a-template-template-author) om het op te stellen publiceert milieu
 
 >[!NOTE]
 >
@@ -95,11 +95,11 @@ Bij het maken van een bewerkbare sjabloon:
 >
 >Ga nooit om het even welke informatie in die [&#128279;](/help/implementing/developing/extending/i18n/dev.md) in een malplaatje moet worden geinternationaliseerd.
 >
->Voor malplaatjeelementen zoals kopballen en footers die moeten worden gelokaliseerd, gebruik de [ localisatieeigenschappen van de kerncomponenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=nl-NL).
+>Voor malplaatjeelementen zoals kopballen en footers die moeten worden gelokaliseerd, gebruik de [&#x200B; localisatieeigenschappen van de kerncomponenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=nl-NL).
 
 ### Sjabloonmap maken - Beheer {#creating-a-template-folder-admin}
 
-Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-specifieke malplaatjes te houden. Dit is een admin taak en in het document [ Malplaatjes van de Pagina ](/help/implementing/developing/components/templates.md#template-folders) beschreven.
+Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-specifieke malplaatjes te houden. Dit is een admin taak en in het document [&#x200B; Malplaatjes van de Pagina &#x200B;](/help/implementing/developing/components/templates.md#template-folders) beschreven.
 
 ### Een nieuwe sjabloon maken - Sjabloonauteur {#creating-a-new-template-template-author}
 
@@ -109,7 +109,7 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
    >
    >In een standaard AEM instantie bestaat de **globale** omslag reeds in de malplaatjeconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden.
    >
-   >Het wordt geadviseerd beste praktijken om a [ malplaatjeomslag te gebruiken die voor uw project ](/help/implementing/developing/components/templates.md#template-folders) wordt gecreeerd.
+   >Het wordt geadviseerd beste praktijken om a [&#x200B; malplaatjeomslag te gebruiken die voor uw project &#x200B;](/help/implementing/developing/components/templates.md#template-folders) wordt gecreeerd.
 
 1. Selecteer **creëren**, die door **wordt gevolgd leidt Malplaatje** om de tovenaar te openen.
 
@@ -117,7 +117,7 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
 
    >[!NOTE]
    >
-   >Sjabloontypen zijn vooraf gedefinieerde sjabloonlay-outs en kunnen worden beschouwd als sjablonen voor een sjabloon. Deze worden vooraf bepaald door ontwikkelaars of de systeembeheerder. Meer informatie kan in het ontwikkelaardocument [ Malplaatjes van de Pagina ](/help/implementing/developing/components/templates.md#template-type) worden gevonden.—>
+   >Sjabloontypen zijn vooraf gedefinieerde sjabloonlay-outs en kunnen worden beschouwd als sjablonen voor een sjabloon. Deze worden vooraf bepaald door ontwikkelaars of de systeembeheerder. Meer informatie kan in het ontwikkelaardocument [&#x200B; Malplaatjes van de Pagina &#x200B;](/help/implementing/developing/components/templates.md#template-type) worden gevonden.—>
 
 1. Voltooi de **Details van het Malplaatje**:
 
@@ -141,7 +141,7 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
 Een sjabloon kan de volgende eigenschappen hebben:
 
 * Afbeelding
-   * Beeld dat als a [ duimnagel van het malplaatje ](#template-thumbnail-image) moet worden gebruikt om selectie zoals in de Create tovenaar van de Pagina te helpen.
+   * Beeld dat als a [&#x200B; duimnagel van het malplaatje &#x200B;](#template-thumbnail-image) moet worden gebruikt om selectie zoals in de Create tovenaar van de Pagina te helpen.
       * Kan uploaden
       * Kan worden gegenereerd op basis van de sjablooninhoud
 * Titel
@@ -167,8 +167,8 @@ De sjabloonminiatuur definiëren:
 
 Als u een sjabloon wilt kunnen gebruiken bij het maken van een pagina, moet u:
 
-* [ laat het malplaatje ](#enabling-a-template-template-author) toe om het voor gebruik beschikbaar te maken wanneer het creëren van pagina&#39;s.
-* [ sta het malplaatje ](#allowing-a-template-author) toe om de inhoudtakken te specificeren waar het malplaatje kan worden gebruikt.
+* [&#x200B; laat het malplaatje &#x200B;](#enabling-a-template-template-author) toe om het voor gebruik beschikbaar te maken wanneer het creëren van pagina&#39;s.
+* [&#x200B; sta het malplaatje &#x200B;](#allowing-a-template-author) toe om de inhoudtakken te specificeren waar het malplaatje kan worden gebruikt.
 
 #### Sjabloon inschakelen - Sjabloonauteur {#enabling-a-template-template-author}
 
@@ -184,7 +184,7 @@ Gebruik de **[Console van Malplaatjes](/help/sites-cloud/administering/templates
 
 Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
 
-1. Open de [ Eigenschappen van de Pagina ](/help/sites-cloud/authoring/sites-console/page-properties.md) voor de wortelpagina van de tak waar u het malplaatje beschikbaar wilt zijn.
+1. Open de [&#x200B; Eigenschappen van de Pagina &#x200B;](/help/sites-cloud/authoring/sites-console/page-properties.md) voor de wortelpagina van de tak waar u het malplaatje beschikbaar wilt zijn.
 1. Open het **Geavanceerde** lusje.
 1. Gebruik onder **Sjablooninstellingen** de optie **Veld toevoegen** om het pad of de paden naar de sjabloon of sjablonen op te geven.
 
@@ -198,7 +198,7 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
    >
    >Als de **Toegestane lijst van Malplaatjes** leeg wordt verlaten, dan wordt de boom gevergd tot een waarde/lijst wordt gevonden.
    >
-   >Zie [ Beschikbaarheid van het Malplaatje ](/help/implementing/developing/components/templates.md#template-availability) - de principes voor toegestane malplaatjes blijven het zelfde.
+   >Zie [&#x200B; Beschikbaarheid van het Malplaatje &#x200B;](/help/implementing/developing/components/templates.md#template-availability) - de principes voor toegestane malplaatjes blijven het zelfde.
 
 1. Klik **sparen** om de veranderingen in de paginaeigenschappen te bewaren.
 
@@ -222,11 +222,11 @@ De **selecteur van de Wijze** in de toolbar laat u het aangewezen aspect van het
 * [Oorspronkelijke inhoud](#editing-a-template-initial-content-author)
 * [Layout](#editing-a-template-layout-template-author)
 
-![ de redacteurswijze van het Malplaatje selecteur ](/help/sites-cloud/authoring/assets/templates-mode.png)
+![&#x200B; de redacteurswijze van het Malplaatje selecteur &#x200B;](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-Terwijl de **optie van het Beleid van de Pagina** op het **menu van de Informatie van de Pagina** u [ het vereiste paginabeleid ](#page-policies) laat selecteren:
+Terwijl de **optie van het Beleid van de Pagina** op het **menu van de Informatie van de Pagina** u [&#x200B; het vereiste paginabeleid &#x200B;](#page-policies) laat selecteren:
 
-![ de Informatie van de Pagina van de Redacteur van het Malplaatje ](/help/sites-cloud/authoring/assets/templates-page-information.png)
+![&#x200B; de Informatie van de Pagina van de Redacteur van het Malplaatje &#x200B;](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
 >[!CAUTION]
 >
@@ -238,9 +238,9 @@ De volgende kenmerken van een sjabloon kunnen worden bewerkt:
 
 #### Structuur {#template-structure}
 
-De componenten die aan de [ structuur ](#editing-a-template-structure-template-author) worden toegevoegd kunnen niet worden bewogen/van resulterende pagina&#39;s door de paginaauteurs worden verwijderd. Als u wilt dat auteurs van pagina&#39;s componenten aan resulterende pagina&#39;s kunnen toevoegen en verwijderen, dan moet u een paragraafsysteem aan het malplaatje toevoegen.
+De componenten die aan de [&#x200B; structuur &#x200B;](#editing-a-template-structure-template-author) worden toegevoegd kunnen niet worden bewogen/van resulterende pagina&#39;s door de paginaauteurs worden verwijderd. Als u wilt dat auteurs van pagina&#39;s componenten aan resulterende pagina&#39;s kunnen toevoegen en verwijderen, dan moet u een paragraafsysteem aan het malplaatje toevoegen.
 
-Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worden bewerkt door auteurs van pagina&#39;s. U kunt componenten ontgrendelen om u toe te staan om [ Aanvankelijke Inhoud ](#editing-a-template-initial-content-author) te bepalen.
+Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worden bewerkt door auteurs van pagina&#39;s. U kunt componenten ontgrendelen om u toe te staan om [&#x200B; Aanvankelijke Inhoud &#x200B;](#editing-a-template-initial-content-author) te bepalen.
 
 >[!NOTE]
 >
@@ -248,7 +248,7 @@ Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worde
 
 #### Oorspronkelijke inhoud {#template-initial-content}
 
-Wanneer een component is ontgrendeld kunt u de [ aanvankelijke inhoud ](#editing-a-template-initial-content-author) bepalen die aan de resulterende pagina(s) wordt gekopieerd, die van het malplaatje wordt gecreeerd. Deze niet-vergrendelde componenten kunnen op de resulterende pagina(&#39;s) worden bewerkt.
+Wanneer een component is ontgrendeld kunt u de [&#x200B; aanvankelijke inhoud &#x200B;](#editing-a-template-initial-content-author) bepalen die aan de resulterende pagina(s) wordt gekopieerd, die van het malplaatje wordt gecreeerd. Deze niet-vergrendelde componenten kunnen op de resulterende pagina(&#39;s) worden bewerkt.
 
 >[!NOTE]
 >
@@ -260,13 +260,13 @@ Met de [lay-out](#editing-a-template-layout-template-author) kunt u de sjabloonl
 
 #### Paginabeleid {#template-page-policies}
 
-[ het beleid van de Pagina ](#page-policies) kan vooraf bepaald paginabeleid met de pagina verbinden. Met dit paginabeleid worden de verschillende ontwerpconfiguraties gedefinieerd.
+[&#x200B; het beleid van de Pagina &#x200B;](#page-policies) kan vooraf bepaald paginabeleid met de pagina verbinden. Met dit paginabeleid worden de verschillende ontwerpconfiguraties gedefinieerd.
 
 #### Stijlen {#template-styles}
 
 Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 
-Gelieve te zien de [ documentatie van het Systeem van de Stijl ](/help/sites-cloud/authoring/page-editor/style-system.md) voor meer informatie.
+Gelieve te zien de [&#x200B; documentatie van het Systeem van de Stijl &#x200B;](/help/sites-cloud/authoring/page-editor/style-system.md) voor meer informatie.
 
 ### Een sjabloon bewerken - Structuur - Sjabloonauteur {#editing-a-template-structure-template-author}
 
@@ -274,10 +274,10 @@ Op **wijze van de Structuur** bepaalt u componenten en inhoud voor uw malplaatje
 
 * Componenten die in de sjabloonstructuur zijn gedefinieerd, kunnen niet op een resulterende pagina worden verplaatst of uit resulterende pagina&#39;s worden verwijderd.
 * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
-* De componenten kunnen opnieuw worden ontgrendeld en worden gesloten om u toe te staan om [ aanvankelijke inhoud ](#editing-a-template-initial-content-author) te bepalen.
+* De componenten kunnen opnieuw worden ontgrendeld en worden gesloten om u toe te staan om [&#x200B; aanvankelijke inhoud &#x200B;](#editing-a-template-initial-content-author) te bepalen.
 * Het ontwerpbeleid voor de componenten en pagina wordt gedefinieerd.
 
-![ de paginastructuur van de Redacteur van het Malplaatje ](/help/sites-cloud/authoring/assets/templates-page-structure.png)
+![&#x200B; de paginastructuur van de Redacteur van het Malplaatje &#x200B;](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
 Er zijn verscheidene acties u op de **wijze van de Structuur** van de malplaatjeredacteur en verscheidene eigenschappen kunt nemen om u bij te staan:
 
@@ -305,13 +305,13 @@ Na toevoeging wordt elke component gemarkeerd met:
 
 >[!NOTE]
 >
->Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen aan gelijkaardige acties wanneer [ pagina creatie ](/help/sites-cloud/authoring/page-editor/edit-content.md).
+>Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen aan gelijkaardige acties wanneer [&#x200B; pagina creatie &#x200B;](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 #### Componenthandelingen {#component-actions}
 
 Voer acties uit op de componenten nadat deze aan de sjabloon zijn toegevoegd. Elk afzonderlijk exemplaar heeft een toolbar die u tot de beschikbare acties toegang heeft, is de toolbar afhankelijk van het componenttype.
 
-![ toolbar van de Actie van een malplaatjecomponent ](/help/sites-cloud/authoring/assets/templates-component-actions.png)
+![&#x200B; toolbar van de Actie van een malplaatjecomponent &#x200B;](/help/sites-cloud/authoring/assets/templates-component-actions.png)
 
 Het kan ook afhankelijk zijn van acties zoals wanneer een beleid met de component is geassocieerd, dan wordt het pictogram van de ontwerpconfiguratie beschikbaar.
 
@@ -329,11 +329,11 @@ Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van 
 
 Maak een inhoudsbeleid of selecteer een bestaand beleid voor een component.
 
-![ knoop van het Beleid van de Inhoud ](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
+![&#x200B; knoop van het Beleid van de Inhoud &#x200B;](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
 
 Hiermee kunt u de ontwerpdetails definiëren.
 
-![ Beleid van de Inhoud ](/help/sites-cloud/authoring/assets/template-content-policy.png)
+![&#x200B; Beleid van de Inhoud &#x200B;](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
 Het configuratievenster is verdeeld in twee.
 
@@ -348,21 +348,21 @@ Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van 
 
 Onder **Beleid** kunt u een bestaand beleid selecteren om op de component als drop-down van toepassing te zijn.
 
-![ Uitgezochte beleid ](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+![&#x200B; Uitgezochte beleid &#x200B;](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
 Een nieuw beleid kan worden toegevoegd door toe te voegen knoop naast **Uitgezochte beleid** drop-down te selecteren. Geef een nieuwe titel op het **gebied van de Titel van het Beleid**.
 
-![ voeg de knoop van het Beleid toe ](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+![&#x200B; voeg de knoop van het Beleid toe &#x200B;](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
 Het geselecteerde bestaande beleid in **Uitgezochte beleid** drop-down lijst kan als nieuw beleid worden gekopieerd gebruikend de exemplaarknoop naast de drop-down lijst. Geef een nieuwe titel op het **gebied van de Titel van het Beleid**. Door gebrek wordt het gekopieerde beleid genoemd **Exemplaar van X**, waar X de titel van het gekopieerde beleid is.
 
-![ knoop van het Beleid van het Exemplaar ](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+![&#x200B; knoop van het Beleid van het Exemplaar &#x200B;](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 Een beschrijving van het beleid is facultatief op het **gebied van de Beschrijving van het Beleid**.
 
 In de **Andere malplaatjes die ook de geselecteerde beleids** sectie gebruiken, kunt u gemakkelijk zien welke andere malplaatjes het beleid gebruiken in de **Uitgezochte beleid** drop-down lijst wordt geselecteerd.
 
-![ Gebruik van bestaand beleid ](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+![&#x200B; Gebruik van bestaand beleid &#x200B;](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 >[!NOTE]
 >
@@ -383,13 +383,13 @@ Voor een afbeeldingscomponent kunnen bijvoorbeeld de toegestane breedten worden 
 
 Als het plaatsen voor veelvoudige configuraties toestaat, selecteer **voeg** knoop toe om een andere configuratie toe te voegen.
 
-![ voeg knoop ](/help/sites-cloud/authoring/assets/templates-add-button.png) toe
+![&#x200B; voeg knoop &#x200B;](/help/sites-cloud/authoring/assets/templates-add-button.png) toe
 
 Om een configuratie te verwijderen, selecteer de **schrapping** knoop die aan het recht van de configuratie wordt gevestigd.
 
 Om een configuratie te verwijderen, selecteer **Schrapping** knoop.
 
-![ knoop van de Schrapping ](/help/sites-cloud/authoring/assets/templates-delete-button.png)
+![&#x200B; knoop van de Schrapping &#x200B;](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
 ###### Functies {#features}
 
@@ -397,7 +397,7 @@ Het **lusje van Eigenschappen** laat u extra eigenschappen van de component toel
 
 Voor een afbeeldingscomponent kunt u bijvoorbeeld de uitsnijdverhoudingen, de toegestane afbeeldingsoriëntaties en de vraag of uploads zijn toegestaan, definiëren.
 
-![ Eigenschappen tabel ](/help/sites-cloud/authoring/assets/templates-features-tab.png)
+![&#x200B; Eigenschappen tabel &#x200B;](/help/sites-cloud/authoring/assets/templates-features-tab.png)
 
 >[!CAUTION]
 >
@@ -405,7 +405,7 @@ Voor een afbeeldingscomponent kunt u bijvoorbeeld de uitsnijdverhoudingen, de to
 
 >[!NOTE]
 >
->[ het beleid van de Inhoud voor componenten die de rijke tekstredacteur ](/help/implementing/developing/extending/rich-text-editor.md) uitvoeren kan slechts voor opties worden bepaald die door RTE door zijn montages worden ter beschikking gesteld UI.
+>[&#x200B; het beleid van de Inhoud voor componenten die de rijke tekstredacteur &#x200B;](/help/implementing/developing/extending/rich-text-editor.md) uitvoeren kan slechts voor opties worden bepaald die door RTE door zijn montages worden ter beschikking gesteld UI.
 
 #### Beleid en eigenschappen (container voor layout) {#policy-and-properties-layout-container}
 
@@ -441,7 +441,7 @@ Op het **Toegestane lusje van Componenten**, bepaalt u welke componenten voor de
 * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
 * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
 
-![ Toegestane Componenten tabel ](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
+![&#x200B; Toegestane Componenten tabel &#x200B;](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
 
 ###### Standaardcomponenten {#default-components}
 
@@ -451,7 +451,7 @@ Selecteer **Toewijzing** toevoegen om een volledig nieuwe component en MIME type
 
 Selecteer een component in de lijst en selecteer **type** toevoegen om een extra type MIME aan een reeds in kaart gebrachte component toe te voegen. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
 
-![ StandaardComponenten tabel ](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
+![&#x200B; StandaardComponenten tabel &#x200B;](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
 ###### Instellingen voor responsie {#responsive-settings}
 
@@ -469,23 +469,23 @@ Wanneer een component is ontgrendeld:
    * Al ingegaan inhoud wordt beschouwd als aanvankelijke inhoud en is slechts zichtbaar op **Aanvankelijke wijze van de Inhoud**.
 * De bovenliggende elementen van de ontgrendelde component kunnen niet worden verplaatst, geknipt of verwijderd.
 
-![ de componentenknoop van het Slot ](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
+![&#x200B; de componentenknoop van het Slot &#x200B;](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
 Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u reeds componenten/inhoud aan de container vóór het ontgrendelen van het hebt toegevoegd, dan worden deze niet meer getoond wanneer op **de wijze van de Structuur**, maar zij worden getoond op **Aanvankelijke Inhoud** wijze. In **Wijze van de Structuur**, slechts wordt de containercomponent zelf getoond met zijn lijst van **Toegestane Componenten**.
 
-![ Toegestane Componenten ](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
+![&#x200B; Toegestane Componenten &#x200B;](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
 Om ruimte te besparen, groeit de lay-outcontainer niet om de lijst van toegestane componenten aan te passen. In plaats daarvan wordt de container een schuifbare lijst.
 
 De componenten die configureerbaar zijn, worden weergegeven met een pictogram **Beleid**, waarop kan worden getikt of geklikt om het beleid en de eigenschappen van die component te bewerken.
 
-![ Configureerbaar pictogram van de Component ](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
+![&#x200B; Configureerbaar pictogram van de Component &#x200B;](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
 #### Verhouding tot bestaande pagina&#39;s {#relationship-to-existing-pages}
 
 Als de structuur na het maken van op de sjabloon gebaseerde pagina&#39;s wordt bijgewerkt, worden de wijzigingen in de sjabloon doorgevoerd in deze pagina&#39;s. Er wordt een waarschuwing weergegeven op de werkbalk om u hieraan te herinneren, samen met bevestigingsdialoogvensters.
 
-![ waarschuwing van de Banner dat het malplaatje in gebruik is ](/help/sites-cloud/authoring/assets/templates-in-use-banner.png)
+![&#x200B; waarschuwing van de Banner dat het malplaatje in gebruik is &#x200B;](/help/sites-cloud/authoring/assets/templates-in-use-banner.png)
 
 ### Een sjabloon bewerken - Eerste inhoud - Auteur {#editing-a-template-initial-content-author}
 
@@ -495,7 +495,7 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 
 >[!NOTE]
 >
->**de wijze van de 1&rbrace; Eerste Inhoud** kan van uitgeeft wijze voor pagina&#39;s worden gedacht die met dat malplaatje worden gecreeerd. Daarom wordt het beleid niet bepaald op **Aanvankelijke wijze van de Inhoud** maar eerder op [**3&rbrace; wijze van de Structuur ](#editing-a-template-structure-template-author).**
+>**de wijze van de 1&rbrace; Eerste Inhoud** kan van uitgeeft wijze voor pagina&#39;s worden gedacht die met dat malplaatje worden gecreeerd. Daarom wordt het beleid niet bepaald op **Aanvankelijke wijze van de Inhoud** maar eerder op [**3&rbrace; wijze van de Structuur &#x200B;](#editing-a-template-structure-template-author).**
 
 * Ontgrendelde componenten die beschikbaar zijn voor bewerking, worden gemarkeerd. Als deze optie is geselecteerd, hebben ze een blauwe rand:
 
@@ -503,14 +503,14 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 
 * Ontgrendelde componenten beschikken over een werkbalk waarmee u de inhoud kunt bewerken en configureren:
 
-  ![ Ontgrendelde component ](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![&#x200B; Ontgrendelde component &#x200B;](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * Als een containercomponent is ontgrendeld (in de modus **Structuur**), kunt u nieuwe componenten aan de container toevoegen (in de modus **Initiële content**). Componenten die in de modus **Initiële content** zijn toegevoegd, kunnen worden verplaatst naar of verwijderd uit de resulterende pagina&#39;s.
 
   U kunt een component toevoegen met behulp van het gebied **Componenten hierheen slepen** of de optie **Nieuwe component invoegen** op de werkbalk van de betreffende container.
 
-  ![ voeg component ](/help/sites-cloud/authoring/assets/templates-add-component.png) toe
-  ![ voeg component ](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png) toe
+  ![&#x200B; voeg component &#x200B;](/help/sites-cloud/authoring/assets/templates-add-component.png) toe
+  ![&#x200B; voeg component &#x200B;](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png) toe
 
 * Als de initiële inhoud van de sjabloon wordt bijgewerkt nadat pagina&#39;s zijn gemaakt op basis van de sjabloon, worden deze pagina&#39;s niet beïnvloed door wijzigingen in de oorspronkelijke inhoud van de sjabloon.
 
@@ -518,17 +518,17 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 >
 >De eerste inhoud is bedoeld voor het voorbereiden van componenten en de paginalay-out die als uitgangspunt dienen voor het maken van de inhoud. Het is niet de bedoeling om de inhoud te zijn die ongewijzigd blijft. Daarom kan de initiële inhoud niet worden vertaald.
 >
->Als u vertaalbare tekst in uw malplaatje zoals in kopballen of footers moet omvatten, kunt u de [ localisatieeigenschappen van de kerncomponenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=nl-NL) gebruiken.
+>Als u vertaalbare tekst in uw malplaatje zoals in kopballen of footers moet omvatten, kunt u de [&#x200B; localisatieeigenschappen van de kerncomponenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=nl-NL) gebruiken.
 
 ### Een sjabloon bewerken - Layout - Sjabloonauteur {#editing-a-template-layout-template-author}
 
-U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [ Responsieve lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) voor malplaatjes werkt aangezien het voor pagina creatie doet.
+U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [&#x200B; Responsieve lay-out &#x200B;](/help/sites-cloud/authoring/page-editor/responsive-layout.md) voor malplaatjes werkt aangezien het voor pagina creatie doet.
 
 >[!NOTE]
 >
 >De veranderingen in de lay-out worden weerspiegeld in **Aanvankelijke wijze van de Inhoud**, maar geen verandering wordt gezien op **wijze van de Structuur**.
 
-![ geef malplaatjelay-out ](/help/sites-cloud/authoring/assets/templates-edit-layout.png) uit
+![&#x200B; geef malplaatjelay-out &#x200B;](/help/sites-cloud/authoring/assets/templates-edit-layout.png) uit
 
 ### Een sjabloon bewerken - Paginabeleid - Sjabloonauteur/ontwikkelaar {#editing-a-template-page-policy-template-author-developer}
 
@@ -539,37 +539,37 @@ Om tot de **dialoog van het Beleid van de Pagina** toegang te hebben:
 1. Van de **Redacteur van het Malplaatje**, selecteer **Informatie van de Pagina** van de toolbar, toen **Beleid van de Pagina** om de dialoog te openen.
 1. Het **dialoogvenster van het Beleid van de 1&rbrace; Pagina opent en is verdeeld in twee secties:**
 
-   * De linkerhelft bepaalt het [ paginabeleid ](#page-policies)
-   * De rechterhelft bepaalt de [ paginaeigenschappen ](#page-properties)
+   * De linkerhelft bepaalt het [&#x200B; paginabeleid &#x200B;](#page-policies)
+   * De rechterhelft bepaalt de [&#x200B; paginaeigenschappen &#x200B;](#page-properties)
 
-   ![ het ontwerp van de Pagina ](/help/sites-cloud/authoring/assets/templates-page-design.png)
+   ![&#x200B; het ontwerp van de Pagina &#x200B;](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### Paginabeleid {#page-policies}
 
 U kunt een inhoudsbeleid toepassen op de sjabloon of de resulterende pagina&#39;s. Hiermee wordt het inhoudsbeleid voor het hoofdalineasysteem op de pagina gedefinieerd.
 
-![ Beleid van de Pagina ](/help/sites-cloud/authoring/assets/templates-page-policy.png)
+![&#x200B; Beleid van de Pagina &#x200B;](/help/sites-cloud/authoring/assets/templates-page-policy.png)
 
 * U kunt een bestaand beleid voor de pagina van **selecteren beleid** drop-down.
 
-  ![ selecteur van het Beleid ](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![&#x200B; selecteur van het Beleid &#x200B;](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
   Een nieuw beleid kan worden toegevoegd door toe te voegen knoop naast **te selecteren beleid** drop-down lijst. Geef een nieuwe titel op het **gebied van de Titel van het Beleid**.
 
-  ![ voeg de knoop van het Beleid toe ](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![&#x200B; voeg de knoop van het Beleid toe &#x200B;](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
   Het geselecteerde bestaande beleid in **Uitgezochte beleid** drop-down lijst kan als nieuw beleid worden gekopieerd gebruikend de exemplaarknoop naast de drop-down lijst. Geef een nieuwe titel op het **gebied van de Titel van het Beleid**. Door gebrek wordt het gekopieerde beleid genoemd **Exemplaar van X**, waar X de titel van het gekopieerde beleid is.
 
-  ![ knoop van het Beleid van het Exemplaar ](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![&#x200B; knoop van het Beleid van het Exemplaar &#x200B;](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * Bepaal een titel voor het beleid op het **gebied van de Titel van het Beleid**. Een beleid wordt vereist om een titel te hebben zodat het gemakkelijk in **Uitgezochte beleid** drop-down lijst kan worden geselecteerd.
 
-  ![ Titel van het Beleid ](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![&#x200B; Titel van het Beleid &#x200B;](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * Een beschrijving van het beleid is facultatief op het **gebied van de Beschrijving van het Beleid**.
 * In de **Andere malplaatjes die ook de geselecteerde beleids** sectie gebruiken, kunt u gemakkelijk zien welke andere malplaatjes het beleid gebruiken in de **Uitgezochte beleid** drop-down lijst wordt geselecteerd.
 
-  ![ het gebruik van het Beleid ](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![&#x200B; het gebruik van het Beleid &#x200B;](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### Pagina-eigenschappen {#page-properties}
 
@@ -579,17 +579,17 @@ Gebruikend paginaeigenschappen, kunt u de vereiste cliënt-zijbibliotheken bepal
 
 * Geef de clientbibliotheken op die u wilt toepassen op pagina&#39;s die met deze sjabloon zijn gemaakt. Het ingaan van de naam van een bibliotheek op het tekstgebied in de **sectie van de Bibliotheken van de Kant van de Cliënt**.
 
-  ![ cliënt-zijbibliotheken ](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![&#x200B; cliënt-zijbibliotheken &#x200B;](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * Als er meerdere bibliotheken nodig zijn, klikt u op de knop Toevoegen om een extra tekstveld voor de naam van de bibliotheek toe te voegen.
 
-  ![ voeg knoop ](/help/sites-cloud/authoring/assets/templates-add-button.png) toe
+  ![&#x200B; voeg knoop &#x200B;](/help/sites-cloud/authoring/assets/templates-add-button.png) toe
 
   Voeg zoveel tekstvelden toe als nodig zijn voor uw clientbibliotheken.
 
 * Definieer zo nodig de relatieve positie van de bibliotheken door de velden te slepen met de sleepgreep.
 
-  ![ handvat van de belemmering ](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![&#x200B; handvat van de belemmering &#x200B;](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -597,13 +597,13 @@ Gebruikend paginaeigenschappen, kunt u de vereiste cliënt-zijbibliotheken bepal
 
 ### Een sjabloon bewerken - Initiële pagina-eigenschappen - Auteur {#editing-a-template-initial-page-properties-author}
 
-Gebruikend de **Aanvankelijke optie van de Eigenschappen van de Pagina**, kunt u de aanvankelijke [ pagina eigenschappen ](/help/sites-cloud/authoring/sites-console/page-properties.md) bepalen die moeten worden gebruikt wanneer het creëren van resulterende pagina&#39;s.
+Gebruikend de **Aanvankelijke optie van de Eigenschappen van de Pagina**, kunt u de aanvankelijke [&#x200B; pagina eigenschappen &#x200B;](/help/sites-cloud/authoring/sites-console/page-properties.md) bepalen die moeten worden gebruikt wanneer het creëren van resulterende pagina&#39;s.
 
 1. Van de malplaatjedacteur, uitgezochte **Informatie van de Pagina** van de toolbar, toen **Aanvankelijke Eigenschappen van de Pagina** om de dialoog te openen.
 
 1. In het dialoogvenster kunt u de eigenschappen definiëren die u wilt toepassen op pagina&#39;s die met deze sjabloon zijn gemaakt.
 
-   ![ Sjablonen aanvankelijke pagina-eigenschappen ](/help/sites-cloud/authoring/assets/templates-initial-properties.png)
+   ![&#x200B; Sjablonen aanvankelijke pagina-eigenschappen &#x200B;](/help/sites-cloud/authoring/assets/templates-initial-properties.png)
 
 1. Bevestig uw definities met **Gereed**.
 
@@ -646,5 +646,5 @@ Houd bij het maken van sjablonen rekening met:
    >
    >AEM geeft expliciete waarschuwingen wanneer het veranderen van de slotstatus van componenten op malplaatjes die niet meer concepten zijn.
 
-1. [ Creërend uw eigen omslagen ](#creating-a-template-folder-admin) voor uw plaats-specifieke malplaatjes.
-1. [ Publish uw malplaatjes ](#publishing-a-template-template-author) van de **[console van Malplaatjes]** (/help/sites-cloud/administering/templates-console.md).
+1. [&#x200B; Creërend uw eigen omslagen &#x200B;](#creating-a-template-folder-admin) voor uw plaats-specifieke malplaatjes.
+1. [&#x200B; Publish uw malplaatjes &#x200B;](#publishing-a-template-template-author) van de **[console van Malplaatjes]** (/help/sites-cloud/administering/templates-console.md).

@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # OSGi configureren voor Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[ OSGi ](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
+[&#x200B; OSGi &#x200B;](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
 
-OSGi verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare, en samenwerkingscomponenten worden geconstrueerd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld. Dit staat gemakkelijk beheer van bundels OSGi toe aangezien zij kunnen worden tegengehouden, geïnstalleerd, individueel begonnen. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi is bevat in één van de diverse bundels. Voor meer informatie, zie de [ specificatie OSGi ](https://help.eclipse.org/latest/index.jsp).
+OSGi verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare, en samenwerkingscomponenten worden geconstrueerd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld. Dit staat gemakkelijk beheer van bundels OSGi toe aangezien zij kunnen worden tegengehouden, geïnstalleerd, individueel begonnen. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi is bevat in één van de diverse bundels. Voor meer informatie, zie de [&#x200B; specificatie OSGi &#x200B;](https://help.eclipse.org/latest/index.jsp).
 
 U kunt de configuratiemontages voor componenten OSGi door configuratiedossiers beheren die deel van een AEM codeproject uitmaken.
 
@@ -48,13 +48,13 @@ in de volgende `cfg.json` OSGi-configuratie-indeling.
 
 >[!NOTE]
 >
->De OSGi-configuraties worden niet opgeslagen onder /apps, zoals AEM instanties in de cloud die ze op een externe locatie opslaan. Controle in Cloud Manager [ Developer Console ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) om OSGi te bekijken vormt.
+>De OSGi-configuraties worden niet opgeslagen onder /apps, zoals AEM instanties in de cloud die ze op een externe locatie opslaan. Controle in Cloud Manager [&#x200B; Developer Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) om OSGi te bekijken vormt.
 
 ## Resolutie van de uitvoermodus {#runmode-resolution}
 
 >[!TIP]
 >
->AEM 6.x ondersteunt aangepaste runmodi, maar AEM as a Cloud Service niet. AEM as a Cloud Service steunt een [ nauwkeurige reeks runmodes ](./overview.md#runmodes). Om het even welke variatie in configuraties OSGi tussen de milieu&#39;s van AEM as a Cloud Service moet worden behandeld gebruikend [ variabelen van het OSGi- configuratiemilieu ](#environment-specific-configuration-values).
+>AEM 6.x ondersteunt aangepaste runmodi, maar AEM as a Cloud Service niet. AEM as a Cloud Service steunt een [&#x200B; nauwkeurige reeks runmodes &#x200B;](./overview.md#runmodes). Om het even welke variatie in configuraties OSGi tussen de milieu&#39;s van AEM as a Cloud Service moet worden behandeld gebruikend [&#x200B; variabelen van het OSGi- configuratiemilieu &#x200B;](#environment-specific-configuration-values).
 
 De specifieke configuraties OSGi kunnen aan specifieke AEM instanties worden gericht door runmodes te gebruiken. Om runmode te gebruiken, creeer config omslagen onder `/apps/example` (waar voorbeeld uw projectnaam is), in het formaat:
 
@@ -80,7 +80,7 @@ $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 
 ### Runmodi controleren
 
-AEM as a Cloud Service-runmodi zijn goed gedefinieerd op basis van het omgevingstype en de service. Herzie de [ volledige lijst van beschikbare runmodes van AEM as a Cloud Service ](./overview.md#runmodes).
+AEM as a Cloud Service-runmodi zijn goed gedefinieerd op basis van het omgevingstype en de service. Herzie de [&#x200B; volledige lijst van beschikbare runmodes van AEM as a Cloud Service &#x200B;](./overview.md#runmodes).
 
 De OSGi-configuratiewaarden die door de runmode worden gespecificeerd, kunnen worden geverifieerd door:
 
@@ -142,7 +142,7 @@ Er zijn drie soorten OSGi configuratiewaarden die met Adobe Experience Manager a
 
 Het algemene geval voor OSGi gebruikt inline OSGi configuratiewaarden. Milieu-specifieke configuraties worden gebruikt slechts voor specifieke gebruiksgevallen waar een waarde tussen dev milieu&#39;s verschilt.
 
-![ Beslissende boom op hoe te om het aangewezen type van configuratiewaarde te gebruiken ](assets/choose-configuration-value-type_res1.png)
+![&#x200B; Beslissende boom op hoe te om het aangewezen type van configuratiewaarde te gebruiken &#x200B;](assets/choose-configuration-value-type_res1.png)
 
 De milieu-specifieke configuraties breiden de traditionele, statisch bepaalde configuraties OSGi uit die gealigneerde waarden bevatten, die de capaciteit verstrekken om de OSGi configuratiewaarden extern via Cloud Manager API te beheren. Het is belangrijk om te begrijpen wanneer de gemeenschappelijke en traditionele benadering van het bepalen van gealigneerde waarden en het opslaan van hen in Git, zou moeten worden gebruikt, tegenover het abstraheren van de waarden in milieu-specifieke configuraties.
 
@@ -183,7 +183,7 @@ De JSON geformatteerde OSGi configuratiedossiers kunnen door hand in het AEM pro
 1. Maak een `<PID>.cfg.json` -bestand in deze configuratiemap. PID is de Persistente Identiteit van de component OSGi. Het is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 Namen van OSGi-configuratiefabrieksbestanden gebruiken de naamgevingsconventie `<factoryPID>-<name>.cfg.json`
-1. Open het nieuwe `.cfg.json` dossier, en bepaal de sleutel/waardecombinaties voor het bezit OSGi en waardeparen, na het [ JSON OSGi configuratieformaat ](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+1. Open het nieuwe `.cfg.json` dossier, en bepaal de sleutel/waardecombinaties voor het bezit OSGi en waardeparen, na het [&#x200B; JSON OSGi configuratieformaat &#x200B;](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Wijzigingen opslaan in het nieuwe `.cfg.json` -bestand
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe
 
@@ -198,7 +198,7 @@ De AEM SDK Quickstart Jar&#39;s AEM Web Console kan worden gebruikt vormt compon
 1. Meld u aan bij de AEM webconsole van AEM SDK Quickstart Jar op `https://<host>:<port>/system/console` als beheerder
 1. Ga aan **OSGi** > **Configuratie**
 1. Om te vormen, bepaal de plaats van de component OSGi en selecteer zijn te uitgeven titel
-   ![ Configuratie OSGi ](./assets/configuring-osgi/configuration.png)
+   ![&#x200B; Configuratie OSGi &#x200B;](./assets/configuring-osgi/configuration.png)
 1. Bewerk indien nodig de OSGi-waarden van het configuratiebezit via de webinterface
 1. Registreer de Persistent Identity (PID) op een veilige plaats. Dit wordt later gebruikt om de configuratie te produceren OSGi JSON
 1. Selecteer Opslaan
@@ -206,7 +206,7 @@ De AEM SDK Quickstart Jar&#39;s AEM Web Console kan worden gebruikt vormt compon
 1. Plak in PID die in Stap 5 wordt gekopieerd, zorg ervoor de Formaat van de Rangschikking wordt geplaatst aan &quot;OSGi Configurator JSON&quot;
 1. Afdrukken selecteren
 1. De configuratie OSGi in formaat JSON zal in de Serialized sectie van de Eigenschappen van de Configuratie tonen
-   ![ Printer van de Configuratie van de Installateur OSGi ](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+   ![&#x200B; Printer van de Configuratie van de Installateur OSGi &#x200B;](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. In uw winde, open het `ui.apps` project, bepaal de plaats of creeer van de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe OSGi configuratiebehoefte om te gevolgen hebben.
 1. Maak een `<PID>.cfg.json` -bestand in deze configuratiemap. De PID is dezelfde waarde uit stap 5.
 1. Plak de Gerialiseerde Eigenschappen van de Configuratie van Stap 10 in het `.cfg.json` dossier.
@@ -240,7 +240,7 @@ De klanten zouden deze techniek voor OSGi configuratieeigenschappen met betrekki
 
 >[!NOTE]
 >
->Plaatsaanduidingen kunnen niet in [ worden gebruikt herricht verklaringen ](/help/implementing/deploying/overview.md#repoinit).
+>Plaatsaanduidingen kunnen niet in [&#x200B; worden gebruikt herricht verklaringen &#x200B;](/help/implementing/deploying/overview.md#repoinit).
 
 ### Geheime configuratiewaarden {#secret-configuration-values}
 
@@ -295,7 +295,7 @@ Variabelen kunnen in de lokale omgeving worden gedefinieerd, zodat ze tijdens ru
 export ENV_VAR_NAME=my_value
 ```
 
-Men adviseert dat een eenvoudig bash manuscript wordt geschreven dat de milieuvariabelen plaatst die in de configuraties worden gebruikt en het uitvoeren alvorens AEM te beginnen. Hulpmiddelen zoals [ https://direnv.net/ ](https://direnv.net/) hulp met het vereenvoudigen van deze benadering. Afhankelijk van het type van de waarden, zouden zij in broncodebeheer kunnen worden gecontroleerd, als zij tussen iedereen kunnen worden gedeeld.
+Men adviseert dat een eenvoudig bash manuscript wordt geschreven dat de milieuvariabelen plaatst die in de configuraties worden gebruikt en het uitvoeren alvorens AEM te beginnen. Hulpmiddelen zoals [&#x200B; https://direnv.net/ &#x200B;](https://direnv.net/) hulp met het vereenvoudigen van deze benadering. Afhankelijk van het type van de waarden, zouden zij in broncodebeheer kunnen worden gecontroleerd, als zij tussen iedereen kunnen worden gedeeld.
 
 De waarden voor geheimen worden gelezen uit bestanden. Daarom moet voor elke plaatsaanduiding die een geheim gebruikt, een tekstbestand met de geheime waarde worden gemaakt.
 
@@ -319,11 +319,11 @@ org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secre
 
 Als een bezit OSGi verschillende waarden voor auteur tegenover publiceert vereist:
 
-* Afzonderlijke `config.author` en `config.publish` OSGi omslagen moeten worden gebruikt, zoals die in de [ wordt beschreven Runmode sectie van de Resolutie ](#runmode-resolution).
+* Afzonderlijke `config.author` en `config.publish` OSGi omslagen moeten worden gebruikt, zoals die in de [&#x200B; wordt beschreven Runmode sectie van de Resolutie &#x200B;](#runmode-resolution).
 * Er zijn twee opties om de onafhankelijke variabelennamen te maken die moeten worden gebruikt:
    * de eerste optie, die wordt aanbevolen: in alle OSGi-mappen (zoals `config.author` en `config.publish` ) die zijn gedeclareerd om verschillende waarden te definiëren, gebruikt u dezelfde variabelenaam. Bijvoorbeeld
 
-     `$[env:ENV_VAR_NAME;default=<value>]` , waarbij de standaardwaarde overeenkomt met de standaardwaarde voor die laag (auteur of publicatie). Wanneer het plaatsen van de milieuvariabele via [ Cloud Manager API ](#cloud-manager-api-format-for-setting-properties) of via een cliënt, onderscheid tussen de rijen gebruikend de &quot;dienst&quot;parameter zoals die in de [ Cloud Manager API verwijzingsdocumentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) wordt beschreven. De &quot;dienst&quot;parameter zal de waarde van de variabele aan de aangewezen OSGi rij binden. Het kan &quot;auteur&quot;, &quot;publish&quot; of &quot;preview&quot; zijn.
+     `$[env:ENV_VAR_NAME;default=<value>]` , waarbij de standaardwaarde overeenkomt met de standaardwaarde voor die laag (auteur of publicatie). Wanneer het plaatsen van de milieuvariabele via [&#x200B; Cloud Manager API &#x200B;](#cloud-manager-api-format-for-setting-properties) of via een cliënt, onderscheid tussen de rijen gebruikend de &quot;dienst&quot;parameter zoals die in de [&#x200B; Cloud Manager API verwijzingsdocumentatie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) wordt beschreven. De &quot;dienst&quot;parameter zal de waarde van de variabele aan de aangewezen OSGi rij binden. Het kan &quot;auteur&quot;, &quot;publish&quot; of &quot;preview&quot; zijn.
    * de tweede optie, namelijk het declareren van verschillende variabelen met een voorvoegsel zoals `author_<samevariablename>` en `publish_<samevariablename>`
 
 ### Configuratievoorbeelden {#configuration-examples}
@@ -516,7 +516,7 @@ config.dev
 
 ## Cloud Manager API-indeling voor het instellen van eigenschappen {#cloud-manager-api-format-for-setting-properties}
 
-Zie [ Adobe Cloud Manager op de Website van Adobe Developer ](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) voor informatie over Cloud Manager API, en hoe het zou moeten worden gevormd.
+Zie [&#x200B; Adobe Cloud Manager op de Website van Adobe Developer &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) voor informatie over Cloud Manager API, en hoe het zou moeten worden gevormd.
 
 >[!NOTE]
 >
@@ -524,7 +524,7 @@ Zie [ Adobe Cloud Manager op de Website van Adobe Developer ](https://developer.
 
 >[!TIP]
 >
->U kunt Cloud Manager ook gebruiken om omgevingsvariabelen te configureren. Voor meer informatie, raadpleeg [ de Variabelen van het Milieu van Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md).
+>U kunt Cloud Manager ook gebruiken om omgevingsvariabelen te configureren. Voor meer informatie, raadpleeg [&#x200B; de Variabelen van het Milieu van Cloud Manager &#x200B;](/help/implementing/cloud-manager/environment-variables.md).
 
 ### Waarden instellen via API {#setting-values-via-api}
 
@@ -552,7 +552,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >Standaardvariabelen worden niet ingesteld via API, maar in de eigenschap OSGi zelf.
 >
->Zie [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) voor meer informatie.
+>Zie [&#x200B; Cloud Manager API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) voor meer informatie.
 
 ### Waarden ophalen via API {#getting-values-via-api}
 
@@ -560,7 +560,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-Zie [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) voor meer informatie.
+Zie [&#x200B; Cloud Manager API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) voor meer informatie.
 
 ### Waarden verwijderen via API {#deleting-values-via-api}
 
@@ -570,7 +570,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 Als u een variabele wilt verwijderen, neemt u deze op met een lege waarde.
 
-Zie [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) voor meer informatie.
+Zie [&#x200B; Cloud Manager API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) voor meer informatie.
 
 ### Waarden ophalen via de opdrachtregel {#getting-values-via-cli}
 
@@ -596,7 +596,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->Zie [ de audio-cloudmanager op GitHub ](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie over hoe te om waarden te vormen die de stop van Cloud Manager voor Adobe I/O CLI gebruiken.
+>Zie [&#x200B; de audio-cloudmanager op GitHub &#x200B;](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie over hoe te om waarden te vormen die de stop van Cloud Manager voor Adobe I/O CLI gebruiken.
 
 ### Aantal variabelen {#number-of-variables}
 

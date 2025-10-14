@@ -48,11 +48,11 @@ Een element, map of verzameling vastzetten:
 
 1. Selecteer deze optie als u het item alleen voor u, voor de hele organisatie of voor geselecteerde groepen wilt vastzetten. Als u **[!UICONTROL For groups]** selecteert, kiest u een bestaande groepsnaam in het veld **[!UICONTROL Pin for groups]** .
 
-   ![ Vastzetten punten voor groepen ](assets/pin-items-for-groups.png)
+   ![&#x200B; Vastzetten punten voor groepen &#x200B;](assets/pin-items-for-groups.png)
 1. Klik op **[!UICONTROL Pin]**.
 
    Het geselecteerde item wordt weergegeven in de sectie **[!UICONTROL Quick Access]** van Mijn Workspace.
-   ![ Taken in Workspace ](assets/quick-access.png)
+   ![&#x200B; Taken in Workspace &#x200B;](assets/quick-access.png)
 
 **Inzichten**
 
@@ -60,13 +60,13 @@ Beheerders kunnen een overzicht weergeven van het aantal downloads en uploads da
 
 U kunt hoogste gezochte termijnen samen met het aantal tijden ook bekijken die termijnen binnen uw de meningsplaatsing van Assets gebruikend de **sectie van Inzichten** van Mijn Workspace worden gezocht. U kunt ook naar gedetailleerde inzichten navigeren om de belangrijkste zoekopdrachten in de afgelopen 30 dagen of 12 maanden weer te geven.
 
-![ Inzichten in Workspace ](assets/insights.png)
+![&#x200B; Inzichten in Workspace &#x200B;](assets/insights.png)
 
 **Taken**
 
 Hiermee geeft u op het tabblad **[!UICONTROL My Tasks]** de lijst weer met taken die u momenteel hebt toegewezen, die u hebt gemaakt op het tabblad **[!UICONTROL Assigned tasks]** en de taken die u al hebt voltooid op het tabblad **[!UICONTROL Completed tasks]** . U kunt een taak selecteren en op **[!UICONTROL Complete ask]** klikken om een taak goed te keuren of af te wijzen. U kunt ook een taak selecteren en op **[!UICONTROL Open Task Details]** klikken om de taak weer te geven en deze goed te keuren, af te wijzen, te bewerken of te verwijderen.
 
-![ Taken in Workspace ](assets/tasks-workspace.png)
+![&#x200B; Taken in Workspace &#x200B;](assets/tasks-workspace.png)
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Hiermee geeft u een overzicht weer van de elementen, inclusief de lijst met elem
 
 Op het tabblad **[!UICONTROL Top Downloads]** worden de tien meest gedownloade elementen weergegeven die beschikbaar zijn in uw Assets-weergaveomgeving. U kunt selecteren om elementen weer te geven in de Lijstweergave of de Rasterweergave. In beide weergaven worden het indelingstype en het aantal downloads voor elk element weergegeven. U kunt ook een element selecteren en op **[!UICONTROL Details]** klikken om de eigenschappen ervan weer te geven.
 
-![ Inhoud widget in Workspace ](assets/workspace-content.png)
+![&#x200B; Inhoud widget in Workspace &#x200B;](assets/workspace-content.png)
 
 ## Mijn Workspace aanpassen {#configure-widgets}
 
@@ -90,4 +90,4 @@ Alle widgets worden standaard weergegeven, maar u kunt de widgets die in Mijn Wo
 
 1. Klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
-   ![ pas widgets in Workspace ](assets/customize-workspace.png) aan
+   ![&#x200B; pas widgets in Workspace &#x200B;](assets/customize-workspace.png) aan

@@ -16,15 +16,15 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 
-![ de integratie van Gegevens ](do-not-localize/data-integeration.png)
+![&#x200B; de integratie van Gegevens &#x200B;](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms] -gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen. Een model van de Gegevens van de Vorm (FDM) baseert zich op gegevensbronnen voor uitwisseling van gegevens; nochtans, kunt u een Model van de Gegevens van de Vorm (FDM) met of zonder een gegevensbron tot stand brengen. Er zijn twee benaderingen om van gegevensmodel afhankelijk van tot stand te brengen of u gegevensbronnen hebt gevormd:
 
-* **Gebruikend preconfigured gegevensbronnen**: Als u gegevensbronnen zoals die in [ worden beschreven vormt gegevensbronnen ](configure-data-sources.md), kunt u hen selecteren terwijl het creëren van een model van vormgegevens (FDM). Hiermee worden alle gegevensmodelobjecten, -eigenschappen en -services van de geselecteerde gegevensbronnen beschikbaar voor gebruik in het FDM (Form Data Model).
+* **Gebruikend preconfigured gegevensbronnen**: Als u gegevensbronnen zoals die in [&#x200B; worden beschreven vormt gegevensbronnen &#x200B;](configure-data-sources.md), kunt u hen selecteren terwijl het creëren van een model van vormgegevens (FDM). Hiermee worden alle gegevensmodelobjecten, -eigenschappen en -services van de geselecteerde gegevensbronnen beschikbaar voor gebruik in het FDM (Form Data Model).
 
 * **Zonder gegevensbronnen**: Als u geen gegevensbronnen voor uw model van vormgegevens (FDM) hebt gevormd, kunt u het zonder gegevensbronnen nog tot stand brengen. Met FDM (Form Data Model) kunt u Adaptive Forms <!--and interactive communication--> ontwerpen en deze testen met behulp van voorbeeldgegevens. Wanneer de gegevensbronnen beschikbaar zijn, kunt u het Model van de Gegevens van de Vorm (FDM) met gegevensbronnen binden, die automatisch op in de bijbehorende Aanpassings Forms <!--and interactive communications--> wijst.
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## Formuliergegevensmodel (FDM) maken {#data-sources}
 
-Zorg ervoor dat u de gegevensbronnen hebt gevormd u in het Model van de Gegevens van de Vorm (FDM) zoals die in [ worden beschreven vormt gegevensbronnen ](configure-data-sources.md) van plan bent te gebruiken. Ga als volgt te werk om een Form Data Model (FDM) te maken op basis van geconfigureerde gegevensbronnen:
+Zorg ervoor dat u de gegevensbronnen hebt gevormd u in het Model van de Gegevens van de Vorm (FDM) zoals die in [&#x200B; worden beschreven vormt gegevensbronnen &#x200B;](configure-data-sources.md) van plan bent te gebruiken. Ga als volgt te werk om een Form Data Model (FDM) te maken op basis van geconfigureerde gegevensbronnen:
 
 1. Navigeer in [!DNL Experience Manager] auteurinstantie naar **[!UICONTROL Forms > Data Integrations]** .
 1. Selecteer **[!UICONTROL Create > Form Data Model]** .
@@ -51,7 +51,7 @@ Zorg ervoor dat u de gegevensbronnen hebt gevormd u in het Model van de Gegevens
 
    Laten we de verschillende componenten van de gebruikersinterface van de formuliergegevensmodel bekijken.
 
-   ![ het Model van de Gegevens van de Vorm van A met drie gegevensbronnen - de dienst RESTful, [!DNL Experience Manager] gebruikersprofiel, en een RDBMS ](assets/fdm-ui.png)
+   ![&#x200B; het Model van de Gegevens van de Vorm van A met drie gegevensbronnen - de dienst RESTful, [!DNL Experience Manager] gebruikersprofiel, en een RDBMS &#x200B;](assets/fdm-ui.png)
 
    A. **[!UICONTROL Data Sources]** Hiermee worden gegevensbronnen in een formuliergegevensmodel weergegeven. Breid een gegevensbron uit om zijn voorwerpen en de diensten van het gegevensmodel te bekijken.
 
@@ -65,7 +65,7 @@ Zorg ervoor dat u de gegevensbronnen hebt gevormd u in het Model van de Gegevens
 
    F. **[!UICONTROL Add Selected]** Hiermee voegt u geselecteerde gegevensmodelobjecten en -services toe aan het formuliergegevensmodel.
 
-Voor meer informatie over de Modelredacteur van Gegevens van de Vorm en hoe u met het kunt werken om het model van vormgegevens uit te geven en te vormen (FDM), zie [ Werk met het model van vormgegevens ](work-with-form-data-model.md).
+Voor meer informatie over de Modelredacteur van Gegevens van de Vorm en hoe u met het kunt werken om het model van vormgegevens uit te geven en te vormen (FDM), zie [&#x200B; Werk met het model van vormgegevens &#x200B;](work-with-form-data-model.md).
 
 ## Gegevensbronnen bijwerken {#update}
 
@@ -83,7 +83,7 @@ Ga als volgt te werk om gegevensbronnen toe te voegen aan of bij te werken naar 
    * Als u een bestaande gegevensbron wilt vervangen door een andere gegevensbron van hetzelfde type, selecteert u het pictogram **[!UICONTROL Edit]** voor de gegevensbron en kiest u een van de beschikbare gegevensbronnen in de lijst.
    * Als u een bestaande gegevensbron wilt verwijderen, selecteert u het pictogram **[!UICONTROL Delete]** voor de gegevensbron. Het pictogram Verwijderen is uitgeschakeld als een gegevensmodelobject in de gegevensbron wordt toegevoegd aan het formuliergegevensmodel (FDM).
 
-     ![ fdm-eigenschappen ](assets/fdm-properties.png)
+     ![&#x200B; fdm-eigenschappen &#x200B;](assets/fdm-properties.png)
 
 1. Selecteer **[!UICONTROL Save & Close]** om de updates op te slaan.
 
@@ -93,7 +93,7 @@ Ga als volgt te werk om gegevensbronnen toe te voegen aan of bij te werken naar 
 
 ## Contextbewuste configuraties voor specifieke uitvoeringsmodi {#runmode-specific-context-aware-config}
 
-[!UICONTROL Form Data Model (FDM)] gebruikt [ Sling context-bewuste configuraties ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=nl-NL) om verschillende gegevensbronparameters te steunen om met gegevensbronnen voor verschillende [!DNL Experience Manager] looppaswijzen te verbinden.
+[!UICONTROL Form Data Model (FDM)] gebruikt [&#x200B; Sling context-bewuste configuraties &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=nl-NL) om verschillende gegevensbronparameters te steunen om met gegevensbronnen voor verschillende [!DNL Experience Manager] looppaswijzen te verbinden.
 
 Wanneer [!UICONTROL Form Data Model (FDM)] cloudconfiguraties gebruikt om parameters op te slaan, die bij inchecken en implementeren via bronbesturing (GIT-opslagruimte van Cloud-Manager) cloudconfiguratie met dezelfde parameters maakt voor alle uitvoermodi (Ontwikkeling, Werkgebied en Productie). Als er echter verschillende gegevenssets nodig zijn voor test- en productieomgevingen, gebruiken we gegevensbronparameters (bijvoorbeeld de URL van de gegevensbron) voor verschillende uitvoermodi van [!DNL Experience Manager] .
 
@@ -101,44 +101,44 @@ Om dit te bereiken moet u een configuratie tot stand brengen OSGi die parameter-
 
 Implementatiespecifieke cloudconfiguraties inschakelen in [!UICONTROL Form Data Model (FDM)] :
 
-1. Cloudconfiguratie maken op een lokale ontwikkelingsinstantie. Voor gedetailleerde stappen, zie [ hoe te gegevensbronnen ](/help/forms/configure-data-sources.md) vormen.
+1. Cloudconfiguratie maken op een lokale ontwikkelingsinstantie. Voor gedetailleerde stappen, zie [&#x200B; hoe te gegevensbronnen &#x200B;](/help/forms/configure-data-sources.md) vormen.
 
 1. Sla uw cloudconfiguratie op het bestandssysteem op.
    1. Pakket maken met filter `/conf/{foldername}/settings/cloudconfigs/fdm` . Gebruik dezelfde `{foldername}` als in stap 1. Vervang `fdm` door `azurestorage` voor Azure-opslagconfiguratie.
-   1. Pakket samenstellen en downloaden. Voor details, zie [ pakketacties ](/help/implementing/developing/tools/package-manager.md).
+   1. Pakket samenstellen en downloaden. Voor details, zie [&#x200B; pakketacties &#x200B;](/help/implementing/developing/tools/package-manager.md).
 
 1. Integreer de cloudconfiguratie in het project Archetype van [!DNL Experience Manager] .
    1. Pak het gedownloade pakket uit.
    1. Kopieer de map `jcr_root` en plaats deze `ui.content` > `src` > `main` > `content` .
-   1. Werk `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` bij voor het filter `/conf/{foldername}/settings/cloudconfigs/fdm` . Voor details, zie [ ui.content module van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=nl-NL). Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, wordt de zelfde wolkenconfiguratie geïnstalleerd op alle milieu&#39;s (of runmodes). Om de waarde van gebieden (zoals URL) van wolkenconfiguraties te veranderen die op milieu worden gebaseerd, gebruik de configuratie OSGi die in de volgende stap wordt besproken.
+   1. Werk `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` bij voor het filter `/conf/{foldername}/settings/cloudconfigs/fdm` . Voor details, zie [&#x200B; ui.content module van het Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=nl-NL). Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, wordt de zelfde wolkenconfiguratie geïnstalleerd op alle milieu&#39;s (of runmodes). Om de waarde van gebieden (zoals URL) van wolkenconfiguraties te veranderen die op milieu worden gebaseerd, gebruik de configuratie OSGi die in de volgende stap wordt besproken.
 
 1. Maak een contextbewuste configuratie voor Apache Sling. Om de configuratie te creëren OSGi:
    1. **opstelling OSGi configuratiedossiers in [!DNL Experience Manager] project Archetype.**
-OSGi-fabrieksconfiguratiebestanden maken met PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider` . Maak een bestand met dezelfde naam onder elke uitvoermodusmap waarin de waarden per uitvoermodus moeten worden gewijzigd. Voor details, zie [ het Vormen OSGi voor  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+OSGi-fabrieksconfiguratiebestanden maken met PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider` . Maak een bestand met dezelfde naam onder elke uitvoermodusmap waarin de waarden per uitvoermodus moeten worden gewijzigd. Voor details, zie [&#x200B; het Vormen OSGi voor  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **plaats de configuratiejson OSGI.** Om Apache Sling te gebruiken met behoud van context-Aware Configuration Override Provider:
       1. Selecteer in een lokale ontwikkelingsinstantie `/system/console/configMgr` de OSGi-configuratie in de fabriek met de naam **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi configuration]** .
       1. Geef een beschrijving.
       1. Selecteer **[!UICONTROL enabled]** .
-      1. Geef onder Overschrijvingen velden op die moeten worden gewijzigd op basis van de omgeving in de syntaxis met regelafstand. Voor details, zie [ Apache die Context-Aware Configuratie - met voeten treedt ](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Bijvoorbeeld `cloudconfigs/fdm/{configName}/url="newURL"` .
+      1. Geef onder Overschrijvingen velden op die moeten worden gewijzigd op basis van de omgeving in de syntaxis met regelafstand. Voor details, zie [&#x200B; Apache die Context-Aware Configuratie - met voeten treedt &#x200B;](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Bijvoorbeeld `cloudconfigs/fdm/{configName}/url="newURL"` .
 U kunt meerdere overschrijvingen toevoegen door **[!UICONTROL +]** te selecteren.
       1. Selecteer **[!UICONTROL Save]** .
-      1. Om Configuratie JSON te krijgen OSGi, volg de stappen in [ Genererend Configuraties OSGi gebruikend AEM SDK Quickstart ](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+      1. Om Configuratie JSON te krijgen OSGi, volg de stappen in [&#x200B; Genererend Configuraties OSGi gebruikend AEM SDK Quickstart &#x200B;](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. Plaats JSON in de Dossiers van de Configuratie van de Fabriek OSGi die in de vorige stap worden gecreeerd.
       1. Wijzig de waarde van `newURL` op basis van de omgeving (of de runmode).
-      1. Om geheime waarde te veranderen die op runmode wordt gebaseerd, kan de geheime variabele worden gecreeerd gebruikend [ wolkenmanager API ](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) en kan later in de [ Configuratie OSGi ](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values) worden van verwijzingen voorzien.
+      1. Om geheime waarde te veranderen die op runmode wordt gebaseerd, kan de geheime variabele worden gecreeerd gebruikend [&#x200B; wolkenmanager API &#x200B;](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) en kan later in de [&#x200B; Configuratie OSGi &#x200B;](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values) worden van verwijzingen voorzien.
 Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, zal de opheffing verschillende waarden op verschillende milieu&#39;s (of looppaswijze) verstrekken.
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] de gebruikers kunnen de geheime waarden coderen gebruikend crypto steun voor details, zie [ encryptiesteun voor configuratieeigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=nl-NL#enabling-encryption-support) en plaats gecodeerde tekst in de waarde nadat [ context bewuste configuraties in de dienstpak 6.5.13.0 ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL#runmode-specific-context-aware-config) beschikbaar zijn.
+      >[!DNL Adobe Managed Service] de gebruikers kunnen de geheime waarden coderen gebruikend crypto steun voor details, zie [&#x200B; encryptiesteun voor configuratieeigenschappen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=nl-NL#enabling-encryption-support) en plaats gecodeerde tekst in de waarde nadat [&#x200B; context bewuste configuraties in de dienstpak 6.5.13.0 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL#runmode-specific-context-aware-config) beschikbaar zijn.
 
-1. Vernieuw de gegevensbrondefinities gebruikend de optie om gegevensbrondefinities in de [ modelredacteur van Gegevens van de Vorm ](#data-sources) te verfrissen FDM geheime voorgeheugen door FDM UI en de recentste configuratie te krijgen.
+1. Vernieuw de gegevensbrondefinities gebruikend de optie om gegevensbrondefinities in de [&#x200B; modelredacteur van Gegevens van de Vorm &#x200B;](#data-sources) te verfrissen FDM geheime voorgeheugen door FDM UI en de recentste configuratie te krijgen.
 
 ## Volgende stappen {#next-steps}
 
 U hebt nu een Model van de Gegevens van de Vorm (FDM) met gegevensbronnen die aan het worden toegevoegd. Vervolgens kunt u het formuliergegevensmodel (FDM) bewerken om gegevensmodelobjecten en -services toe te voegen en te configureren, koppelingen tussen gegevensmodelobjecten toe te voegen, eigenschappen te bewerken, aangepaste gegevensmodelobjecten en -eigenschappen toe te voegen, voorbeeldgegevens te genereren, enzovoort.
 
-Voor meer informatie, zie [ Werk met model van vormgegevens ](work-with-form-data-model.md).
+Voor meer informatie, zie [&#x200B; Werk met model van vormgegevens &#x200B;](work-with-form-data-model.md).
 
 

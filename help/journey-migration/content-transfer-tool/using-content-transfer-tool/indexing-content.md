@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Zodra de Cloud Acceleration Manager de inhoud in uw Cloud Service-exemplaar heeft ingevoerd, is deze klaar om te worden gebruikt. In eerste instantie wordt de inhoud niet geïndexeerd, wat waarschijnlijk resulteert in een instabiele omgeving waarin problemen zoals ondoorzoekbare inhoud en verminderde prestaties kunnen worden verwacht. Voor optimale prestaties op de instantie wordt de inhoud automatisch geïndexeerd tijdens het migratieproces. Er hoeft niets te worden gedaan, behalve om de voortgang van de indexering te volgen.
 
-> Voor informatie over hoe te om een opname te beginnen, zie [ Ingesterend Inhoud in Cloud Service ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
+> Voor informatie over hoe te om een opname te beginnen, zie [&#x200B; Ingesterend Inhoud in Cloud Service &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
 De volgende stappen tonen de algemene stroom u in UI tijdens het indexeren kunt verwachten te zien. Sommige labels bieden handige context in knopinfo. Houd de muisaanwijzer boven items om meer te weten te komen over de huidige indexstatus.
 
@@ -56,7 +56,7 @@ Het indexeren van de bestemmingsCloud Service instantie zal zeer waarschijnlijk 
 
 >[!TIP]
 >
-> Als de het indexeren baan te lang schijnt te lopen, zorg ervoor dat een [ IP Lijst van gewenste personen niet ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) door Cloud Manager is toegepast aangezien het Cloud Acceleration Manager van het bereiken van de migratiedienst verhindert.
+> Als de het indexeren baan te lang schijnt te lopen, zorg ervoor dat een [&#x200B; IP Lijst van gewenste personen niet &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) door Cloud Manager is toegepast aangezien het Cloud Acceleration Manager van het bereiken van de migratiedienst verhindert.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

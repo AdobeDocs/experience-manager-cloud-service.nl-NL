@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Deze documentatie verwijst naar een verouderde versie van het hulpmiddel. Voor meer informatie over de recentste versie, zie [ de Migratie van de Groep ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
+>Deze documentatie verwijst naar een verouderde versie van het hulpmiddel. Voor meer informatie over de recentste versie, zie [&#x200B; de Migratie van de Groep &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 <!-- Alexandru: drafting this for now
 
@@ -37,7 +37,7 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 
 Als onderdeel van de overgang naar Adobe Experience Manager (AEM) as a Cloud Service moet u gebruikers en groepen verplaatsen van uw bestaande AEM-systeem naar AEM as a Cloud Service. Deze migratie wordt uitgevoerd met het gereedschap Inhoud overbrengen.
 
-Een belangrijke wijziging in AEM as a Cloud Service is het volledig geïntegreerde gebruik van Adobe-id&#39;s voor toegang tot de auteurslaag. Deze integratie vereist gebruik van [ Adobe Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS), dat één aanmelding biedt voor alle Adobe-cloudtoepassingen. Voor meer details, zie [ Identity Management ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=nl-NL#identity-management). Vanwege deze wijziging moeten bestaande gebruikers en groepen worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers en groepen in de Cloud Service-auteur-instantie te voorkomen.
+Een belangrijke wijziging in AEM as a Cloud Service is het volledig geïntegreerde gebruik van Adobe-id&#39;s voor toegang tot de auteurslaag. Deze integratie vereist gebruik van [&#x200B; Adobe Admin Console &#x200B;](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS), dat één aanmelding biedt voor alle Adobe-cloudtoepassingen. Voor meer details, zie [&#x200B; Identity Management &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=nl-NL#identity-management). Vanwege deze wijziging moeten bestaande gebruikers en groepen worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers en groepen in de Cloud Service-auteur-instantie te voorkomen.
 
 ## Gereedschap Gebruiker toewijzen {#mapping-tool}
 
@@ -45,4 +45,4 @@ Met het gereedschap Inhoud overbrengen (zonder gebruikerstoewijzing) worden alle
 
 ### Volgende functies {#whats-next}
 
-Nadat u hebt geleerd wat een hulpmiddel voor het toewijzen van gebruikers is, kunt u nu belangrijke overwegingen en uitzonderlijke gevallen beoordelen voordat u het gereedschap Toewijzing gebruiker gaat gebruiken. Zie [ Belangrijke Overwegingen voor het Hulpmiddel van de Toewijzing van de Gebruiker ](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md) voor meer details.
+Nadat u hebt geleerd wat een hulpmiddel voor het toewijzen van gebruikers is, kunt u nu belangrijke overwegingen en uitzonderlijke gevallen beoordelen voordat u het gereedschap Toewijzing gebruiker gaat gebruiken. Zie [&#x200B; Belangrijke Overwegingen voor het Hulpmiddel van de Toewijzing van de Gebruiker &#x200B;](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md) voor meer details.

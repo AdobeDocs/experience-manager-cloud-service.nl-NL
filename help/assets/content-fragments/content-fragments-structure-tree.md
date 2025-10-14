@@ -20,11 +20,11 @@ Gebruik de functie Structuur van de Content Fragment Editor in AEM om de inhoud 
 >
 >De Fragmenten van de inhoud zijn een eigenschap van Plaatsen, maar worden opgeslagen als **Assets**.
 >
->Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3&rbrace; console van de Fragmenten van de Inhoud &lbrace;).**
+>Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [&#x200B; de Fragmenten van de Inhoud - Authoring &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3&rbrace; console van de Fragmenten van de Inhoud &lbrace;).**
 
 In de Inhoudsfragmenteditor kunt u het pictogram van de boomstructuur selecteren:
 
-![ de Boom van de Structuur van het Fragment van de Inhoud in zijpaneel ](assets/cfm-structuretree-01.png)
+![&#x200B; de Boom van de Structuur van het Fragment van de Inhoud in zijpaneel &#x200B;](assets/cfm-structuretree-01.png)
 
 Hiermee wordt een representatie van de structuur van het fragment geopend in het linkerdeelvenster. Hiermee kunt u navigeren door fragmenten waarnaar wordt verwezen en naar fragmenten. Als u een verwijzing selecteert, wordt dat fragment geopend voor bewerking.
 
@@ -32,4 +32,4 @@ Hiermee wordt een representatie van de structuur van het fragment geopend in het
 >
 >Met de broodkruimels in het hoofddeelvenster kunt u terugnavigeren naar het beginpunt.
 
-![ Voorbeeld van de Structuur van het Fragment van de Inhoud ](assets/cfm-structuretree-02.png)
+![&#x200B; Voorbeeld van de Structuur van het Fragment van de Inhoud &#x200B;](assets/cfm-structuretree-02.png)

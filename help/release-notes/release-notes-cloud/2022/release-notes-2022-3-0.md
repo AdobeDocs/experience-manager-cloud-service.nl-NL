@@ -21,7 +21,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -30,7 +30,7 @@ De volgende release (2022.4.0) is gepland voor 5 mei 2022.
 
 ## Video vrijgeven {#release-video}
 
-Heb een blik bij de [ Maart 2022 het Overzicht van de Versie ](https://video.tv.adobe.com/v/341465) video voor een samenvatting van de eigenschappen die in de versie 2022.3.0 worden toegevoegd.
+Heb een blik bij de [&#x200B; Maart 2022 het Overzicht van de Versie &#x200B;](https://video.tv.adobe.com/v/341465) video voor een samenvatting van de eigenschappen die in de versie 2022.3.0 worden toegevoegd.
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -42,27 +42,27 @@ Heb een blik bij de [ Maart 2022 het Overzicht van de Versie ](https://video.tv.
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* [!DNL AEM Dynamic Media] verstrekt nu de flexibiliteit om [ één alias rekening ](/help/assets/dynamic-media/dm-alias-account.md) in het gebruikersinterface te vormen, daardoor het verzekeren van uit-van-de-doos Dynamic Media URLs en de Kijker bedt code wordt bijgewerkt. Dit heeft een positieve invloed op SEO om de updates te weerspiegelen die zijn aangebracht in uw zakelijke context, zoals herbranding.
+* [!DNL AEM Dynamic Media] verstrekt nu de flexibiliteit om [&#x200B; één alias rekening &#x200B;](/help/assets/dynamic-media/dm-alias-account.md) in het gebruikersinterface te vormen, daardoor het verzekeren van uit-van-de-doos Dynamic Media URLs en de Kijker bedt code wordt bijgewerkt. Dit heeft een positieve invloed op SEO om de updates te weerspiegelen die zijn aangebracht in uw zakelijke context, zoals herbranding.
 
 * U kunt nu de gebruikersinterface van [!DNL Experience Manager Assets] gebruiken om:
 
-   * Vorm de [ opsporing van dubbele activa ](/help/assets/detect-duplicate-assets.md) in een bewaarplaats.
+   * Vorm de [&#x200B; opsporing van dubbele activa &#x200B;](/help/assets/detect-duplicate-assets.md) in een bewaarplaats.
 
-   * Vorm [ toevoegend digitale watermerken ](/help/assets/watermark-assets.md) aan beelden.
+   * Vorm [&#x200B; toevoegend digitale watermerken &#x200B;](/help/assets/watermark-assets.md) aan beelden.
 
-* De beheerders kunnen nu de e-mailservice configureren voor grote downloads. Het staat de gebruikers toe om [ e-mailberichten voor grote downloads ](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) van de [!DNL Experience Manager Assets] interface toe te laten. De gebruiker ontvangt een e-mailbericht met de downloadkoppeling van de gearchiveerde ZIP-map na voltooiing van het downloadproces.
+* De beheerders kunnen nu de e-mailservice configureren voor grote downloads. Het staat de gebruikers toe om [&#x200B; e-mailberichten voor grote downloads &#x200B;](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) van de [!DNL Experience Manager Assets] interface toe te laten. De gebruiker ontvangt een e-mailbericht met de downloadkoppeling van de gearchiveerde ZIP-map na voltooiing van het downloadproces.
 
-* [ leidt de eigenschap van de Publicatie ](/help/assets/manage-publication.md) wordt verbeterd met een beter gebruikersinterface. De gebruikers kunnen inhoud publiceren of unpublish aan en van de geselecteerde bestemming, [ toevoegen Inhoud ](/help/assets/manage-publication.md#add-content) aan de het publiceren lijst van over de bewaarplaats DAM, [ omvatten de Montages van de Omslag ](/help/assets/manage-publication.md#include-folder-settings) om inhoud van de geselecteerde omslagen te publiceren en filters toe te passen, en [ plannen het publiceren ](/help/assets/manage-publication.md#publish-assets-later) aan een recentere datum of een tijd.
+* [&#x200B; leidt de eigenschap van de Publicatie &#x200B;](/help/assets/manage-publication.md) wordt verbeterd met een beter gebruikersinterface. De gebruikers kunnen inhoud publiceren of unpublish aan en van de geselecteerde bestemming, [&#x200B; toevoegen Inhoud &#x200B;](/help/assets/manage-publication.md#add-content) aan de het publiceren lijst van over de bewaarplaats DAM, [&#x200B; omvatten de Montages van de Omslag &#x200B;](/help/assets/manage-publication.md#include-folder-settings) om inhoud van de geselecteerde omslagen te publiceren en filters toe te passen, en [&#x200B; plannen het publiceren &#x200B;](/help/assets/manage-publication.md#publish-assets-later) aan een recentere datum of een tijd.
 
 ### Nieuwe functies beschikbaar in [!DNL Assets] prereleasekanaal {#prerelease-features-assets}
 
-* U kunt [ soortmarkeringen ](/help/assets/organize-assets.md#use-tags-to-organize-assets) in het venster van de markeringsplukker nu in het stijgen of dalende orde die op de markeringsnaam, datum van verwezenlijking, of datum van wijziging wordt gebaseerd.
+* U kunt [&#x200B; soortmarkeringen &#x200B;](/help/assets/organize-assets.md#use-tags-to-organize-assets) in het venster van de markeringsplukker nu in het stijgen of dalende orde die op de markeringsnaam, datum van verwezenlijking, of datum van wijziging wordt gebaseerd.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**: [ de Generatie APIs van het Document ](/help/forms/aem-forms-cloud-service-communications.md) helpen om, PDF documenten te combineren opnieuw te rangschikken en te bevestigen. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL Communications - Document Generation APIs]**: [&#x200B; de Generatie APIs van het Document &#x200B;](/help/forms/aem-forms-cloud-service-communications.md) helpen om, PDF documenten te combineren opnieuw te rangschikken en te bevestigen. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Stel PDF-documenten samen.
    * U kunt PDF-documenten deassembleren.
@@ -93,11 +93,11 @@ Heb een blik bij de [ Maart 2022 het Overzicht van de Versie ](https://video.tv.
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Voor efficiëntere en effectievere het oplossen van problemen van douaneeigenschappen in de milieu&#39;s van de Wolk, hebben wij een nieuw ontwikkelaarshulpmiddel vrijgegeven - [ Browser van de Bewaarplaats ](/help/implementing/developing/tools/repository-browser.md). Het is een lichtgewicht, alleen-lezen, HTML-browser die u kunt starten vanuit de Developer Console. U krijgt zichtbaarheid in de opslagplaats voor inhoud op de uitgever-, auteur- en voorvertoningslagen en in alle omgevingen, inclusief productie, werkgebied en ontwikkeling. Blader door de inhoudsstructuur, de weergave-eigenschappen en de binaire bestanden voor voorvertoningen en downloaden.
+* Voor efficiëntere en effectievere het oplossen van problemen van douaneeigenschappen in de milieu&#39;s van de Wolk, hebben wij een nieuw ontwikkelaarshulpmiddel vrijgegeven - [&#x200B; Browser van de Bewaarplaats &#x200B;](/help/implementing/developing/tools/repository-browser.md). Het is een lichtgewicht, alleen-lezen, HTML-browser die u kunt starten vanuit de Developer Console. U krijgt zichtbaarheid in de opslagplaats voor inhoud op de uitgever-, auteur- en voorvertoningslagen en in alle omgevingen, inclusief productie, werkgebied en ontwikkeling. Blader door de inhoudsstructuur, de weergave-eigenschappen en de binaire bestanden voor voorvertoningen en downloaden.
 
-  ![ repobrowserrelnotes ](/help/release-notes/assets/repobrowserrelnotes.png)
+  ![&#x200B; repobrowserrelnotes &#x200B;](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* De referenties die worden gebruikt voor het verifiëren van API-aanroepen van server naar server (bijvoorbeeld voor GraphQL API-aanvragen) kunnen nu worden vernieuwd voordat ze verlopen op een zelfstandige manier vanuit de Developer Console. Zie de [ documentatie ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) voor meer info.
+* De referenties die worden gebruikt voor het verifiëren van API-aanroepen van server naar server (bijvoorbeeld voor GraphQL API-aanvragen) kunnen nu worden vernieuwd voordat ze verlopen op een zelfstandige manier vanuit de Developer Console. Zie de [&#x200B; documentatie &#x200B;](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) voor meer info.
 
 * De het zuiveren van de versie en de taken van het de zuiveringslogboek van de controle, die niet eerder waren toegelaten, worden nu toegelaten voor nieuwe milieu&#39;s. Zie de bijbehorende waarden in het [&#128279;](/help/operations/maintenance.md) artikel van de Taak van 0&rbrace; Onderhoud &lbrace;.
 
@@ -105,7 +105,7 @@ Heb een blik bij de [ Maart 2022 het Overzicht van de Versie ](https://video.tv.
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Inhoud overbrengen {#ctt-release}
 
@@ -115,7 +115,7 @@ De releasedatum voor Content Transfer Tool v1.9.0 is 28 februari 2022.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Hulplijnen voor grootte controleren - Met de functie voor het controleren van de grootte van het gereedschap Inhoud overbrengen kunt u mislukte overdrachten van inhoud reduceren.  Met de functie Grootte controleren kunnen gebruikers 1) bepalen of ze voldoende schijfruimte hebben in de submap `crx-quickstart` voordat ze de map extraheren, en 2) de grootte van de migratieset schatten en controleren of deze wordt ondersteund. Als één of allebei van deze controles worden geschonden, zien de gebruikers waarschuwingen in CTT UI. Met deze garantie kunt u mislukte inhoudsoverdrachten voorkomen en de migratieopties proactief bespreken met de klantenservice van de Adobe. Zie [ het Bepalen van migratie vastgestelde grootte en schijfruimte ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=nl-NL#migration-set-size) voor meer details.
+* Hulplijnen voor grootte controleren - Met de functie voor het controleren van de grootte van het gereedschap Inhoud overbrengen kunt u mislukte overdrachten van inhoud reduceren.  Met de functie Grootte controleren kunnen gebruikers 1) bepalen of ze voldoende schijfruimte hebben in de submap `crx-quickstart` voordat ze de map extraheren, en 2) de grootte van de migratieset schatten en controleren of deze wordt ondersteund. Als één of allebei van deze controles worden geschonden, zien de gebruikers waarschuwingen in CTT UI. Met deze garantie kunt u mislukte inhoudsoverdrachten voorkomen en de migratieopties proactief bespreken met de klantenservice van de Adobe. Zie [&#x200B; het Bepalen van migratie vastgestelde grootte en schijfruimte &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=nl-NL#migration-set-size) voor meer details.
 
 ## Analysator van best practices {#bpa-release}
 

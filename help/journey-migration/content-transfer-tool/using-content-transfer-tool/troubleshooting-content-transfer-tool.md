@@ -37,7 +37,7 @@ java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
 ```
 
-Zie [ Runable Jar van Oak ](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) voor meer details.
+Zie [&#x200B; Runable Jar van Oak &#x200B;](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) voor meer details.
 
 De bestanden die in de *OUT_DIR* hierboven zijn gemaakt voor consistentie, kunnen vervolgens worden gecontroleerd op paden met ontbrekende binaire elementen en op de juiste manier gecorrigeerd, zoals herstellen via een back-up, paden verwijderen, opnieuw indexeren, enzovoort.
 

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Gekoppelde inhoud{#associated-content}
 
-Voor inhoudsfragmenten van Adobe Experience Manager (AEM) as a Cloud Service biedt de bijbehorende inhoudsfunctie (beschikbaar in de oorspronkelijke editor) de verbinding, zodat elementen optioneel met het fragment kunnen worden gebruikt. Dit verstrekt flexibiliteit door [ een waaier van activa te verstrekken om toegang te hebben wanneer het gebruiken van het inhoudsfragment ](/help/assets/content-fragments/content-fragments.md#using-associated-content), terwijl ook het helpen om de tijd te verminderen die wordt vereist om naar de aangewezen activa te zoeken. Deze functie kan worden gebruikt voor het leveren van inhoud zonder kop en voor het ontwerpen van pagina&#39;s.
+Voor inhoudsfragmenten van Adobe Experience Manager (AEM) as a Cloud Service biedt de bijbehorende inhoudsfunctie (beschikbaar in de oorspronkelijke editor) de verbinding, zodat elementen optioneel met het fragment kunnen worden gebruikt. Dit verstrekt flexibiliteit door [&#x200B; een waaier van activa te verstrekken om toegang te hebben wanneer het gebruiken van het inhoudsfragment &#x200B;](/help/assets/content-fragments/content-fragments.md#using-associated-content), terwijl ook het helpen om de tijd te verminderen die wordt vereist om naar de aangewezen activa te zoeken. Deze functie kan worden gebruikt voor het leveren van inhoud zonder kop en voor het ontwerpen van pagina&#39;s.
 
 >[!NOTE]
 >
@@ -26,13 +26,13 @@ Voor inhoudsfragmenten van Adobe Experience Manager (AEM) as a Cloud Service bie
 
 >[!NOTE]
 >
->Er zijn diverse methodes om [ visuele activa (bijvoorbeeld, beelden) ](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
+>Er zijn diverse methodes om [&#x200B; visuele activa (bijvoorbeeld, beelden) &#x200B;](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
 
-Om de vereniging te maken u eerst moet [ uw media activa aan een inzameling ](/help/assets/manage-collections.md) toevoegen. Daarna kunt u:
+Om de vereniging te maken u eerst moet [&#x200B; uw media activa aan een inzameling &#x200B;](/help/assets/manage-collections.md) toevoegen. Daarna kunt u:
 
 1. Open uw fragment en selecteer **Gekoppelde content** in het zijpaneel.
 
-   ![ Verwante Inhoud ](assets/cfm-assoc-content-01.png)
+   ![&#x200B; Verwante Inhoud &#x200B;](assets/cfm-assoc-content-01.png)
 
 1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u:
 
@@ -43,11 +43,11 @@ Om de vereniging te maken u eerst moet [ uw media activa aan een inzameling ](/h
 
    U kunt desgewenst het fragment zelf toevoegen aan de geselecteerde verzameling. Dit is nuttig bij het bijhouden van gegevens.
 
-   ![ Uitgezochte inzameling ](assets/cfm-assoc-content-02.png)
+   ![&#x200B; Uitgezochte inzameling &#x200B;](assets/cfm-assoc-content-02.png)
 
 1. Bevestig (met **Uitgezochte**). De verzameling wordt weergegeven als gekoppeld.
 
-   ![ Bevestigde vereniging ](assets/cfm-assoc-content-03.png)
+   ![&#x200B; Bevestigde vereniging &#x200B;](assets/cfm-assoc-content-03.png)
 
 ## Gekoppelde inhoud bewerken {#editing-associated-content}
 

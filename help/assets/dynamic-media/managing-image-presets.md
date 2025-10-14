@@ -20,11 +20,11 @@ Beheerders kunnen voorinstellingen maken voor het exporteren van elementen. Gebr
 
 U kunt ook voorinstellingen voor afbeeldingen maken die reageren. Als u een voorinstelling voor een responsieve afbeelding toepast op uw elementen, worden deze afhankelijk van het apparaat of de schermgrootte waarop ze worden weergegeven. U kunt Voorinstellingen voor afbeeldingen zodanig configureren dat naast RGB of Grijs ook CMYK in de kleurruimte wordt gebruikt.
 
-In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen maakt, wijzigt en over het algemeen beheert. U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen. Zie [ Beeld toepassen vooraf instelt ](/help/assets/dynamic-media/image-presets.md).
+In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen maakt, wijzigt en over het algemeen beheert. U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen. Zie [&#x200B; Beeld toepassen vooraf instelt &#x200B;](/help/assets/dynamic-media/image-presets.md).
 
 >[!NOTE]
 >
->Slimme beeldverwerking werkt met uw bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie bij de laatste milliseconde van de levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [ Slimme Beeldvorming ](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
+>Slimme beeldverwerking werkt met uw bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie bij de laatste milliseconde van de levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [&#x200B; Slimme Beeldvorming &#x200B;](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
 
 ## Meer informatie over voorinstellingen voor afbeeldingen {#understanding-image-presets}
 
@@ -40,7 +40,7 @@ Beheerders kunnen voorinstellingen voor afbeeldingen maken. Als u een voorinstel
 
 U beheert uw Voorinstellingen voor afbeeldingen in Experience Manager door het Experience Manager-logo te selecteren voor toegang tot de algemene navigatieconsole en vervolgens het pictogram Extra te selecteren en naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** te navigeren.
 
-![ 6_5_tools-assets-imagepresets ](assets/6_5_tools-assets-imagepresets.png)
+![&#x200B; 6_5_tools-assets-imagepresets &#x200B;](assets/6_5_tools-assets-imagepresets.png)
 
 >[!NOTE]
 >
@@ -48,11 +48,11 @@ U beheert uw Voorinstellingen voor afbeeldingen in Experience Manager door het E
 >
 >U *niet* te hoeven om Beeld te publiceren vooraf instelt aangezien het Beeld automatisch wordt gepubliceerd.
 >
->Zie [ publiceren Beeld vooraf instelt ](#publishing-image-presets).
+>Zie [&#x200B; publiceren Beeld vooraf instelt &#x200B;](#publishing-image-presets).
 
 >[!NOTE]
 >
->Het systeem geeft verschillende uitvoeringen weer wanneer u **[!UICONTROL Renditions]** selecteert in de Gedetailleerde weergave van een element. U kunt het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, verhogen of verlagen. Zie [ Verhoog het aantal beeld vooraf instelt die ](#increasing-or-decreasing-the-number-of-image-presets-that-display) worden getoond.
+>Het systeem geeft verschillende uitvoeringen weer wanneer u **[!UICONTROL Renditions]** selecteert in de Gedetailleerde weergave van een element. U kunt het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, verhogen of verlagen. Zie [&#x200B; Verhoog het aantal beeld vooraf instelt die &#x200B;](#increasing-or-decreasing-the-number-of-image-presets-that-display) worden getoond.
 
 ### Bestandsindelingen Adobe Illustrator (AI), PostScript® (EPS) en PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -92,7 +92,7 @@ Selecteer Adobe Experience Manager linksboven en klik op **[!UICONTROL Tools]** 
 
 #### Opties PDF/AI Voorvertoning afbeelding omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
 
-![ Argumenten om het werkschema van PDF of AI ](assets/rasterize_pdf_ai_image_preview.png) om te zetten in pixels
+![&#x200B; Argumenten om het werkschema van PDF of AI &#x200B;](assets/rasterize_pdf_ai_image_preview.png) om te zetten in pixels
 
 Argumenten voor het rasteren van PDF- of AI-workflow
 
@@ -119,7 +119,7 @@ Voor InDesign-bestanden worden subelementen alleen geëxtraheerd als de Adobe In
 
 Met de component Media Extraction Process in de `DAM Update Asset` -workflow worden verschillende vooraf geconfigureerde Extend Scripts uitgevoerd voor het verwerken van InDesign-bestanden.
 
-![ de wegen ExtendScript in de argumenten van het proces van de Extractie van Media ](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![&#x200B; de wegen ExtendScript in de argumenten van het proces van de Extractie van Media &#x200B;](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
 De ExtendScript-paden in de argumenten van de procescomponent Media Extraction in de DAM Update Asset-workflow.
 
@@ -152,7 +152,7 @@ Miniatuurgrootte wordt als volgt gedefinieerd: **[!UICONTROL width:height:center
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]** .
 1. Selecteer de stap **[!UICONTROL Dynamic Media Process Image Assets]** en selecteer de tab **[!UICONTROL Thumbnails]** . Wijzig desgewenst de miniatuurgrootte en selecteer **[!UICONTROL OK]** .
 
-   ![ 6_5_dynamicmediaprocessimageassets-duimnailstab ](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
+   ![&#x200B; 6_5_dynamicmediaprocessimageassets-duimnailstab &#x200B;](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
 1. Selecteer de stap **[!UICONTROL Process Thumbnails]** en selecteer vervolgens de tab **[!UICONTROL Thumbnails]** . Wijzig desgewenst de miniatuurgrootte en selecteer **[!UICONTROL OK]** .
 
@@ -168,15 +168,15 @@ Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoer
 
 **om het aantal beeld te verhogen of te verminderen stelt die worden getoond:**
 
-1. Navigeer aan CRXDE Lite ([ https://localhost:4502/crx/de ](https://localhost:4502/crx/de)).
+1. Navigeer aan CRXDE Lite ([&#x200B; https://localhost:4502/crx/de &#x200B;](https://localhost:4502/crx/de)).
 1. Navigeer naar het knooppunt met vooraf ingestelde lijsten voor afbeeldingen op `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
-   ![ verhogings_reduction ethenumberofimagepresetsthatdisplay ](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
+   ![&#x200B; verhogings_reduction ethenumberofimagepresetsthatdisplay &#x200B;](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
 1. Wijzig in de eigenschap **[!UICONTROL limit]** de **[!UICONTROL Value]**, die standaard op 15 is ingesteld, in het gewenste getal.
 1. Navigeer naar de gegevensbron voor de afbeeldingsvoorinstelling op `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
 
-   ![ chlimage_1-495 ](assets/chlimage_1-495.png)
+   ![&#x200B; chlimage_1-495 &#x200B;](assets/chlimage_1-495.png)
 
 1. Wijzig in de eigenschap limit het getal in het gewenste getal, bijvoorbeeld `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Selecteer **[!UICONTROL Save All]** .
@@ -191,18 +191,18 @@ Maak voorinstellingen voor afbeeldingen, zodat u instellingen consistent kunt to
 
 Als u de opname van AI-, PDF- en EPS-bestanden wilt ondersteunen, zodat u een dynamische uitvoering van deze bestandsindelingen kunt genereren, bekijkt u de volgende informatie voordat u Voorinstellingen voor afbeeldingen maakt.
 
-Zie [ Adobe Illustrator (AI), PostScript® (EPS), en de dossierformaten van PDF ](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+Zie [&#x200B; Adobe Illustrator (AI), PostScript® (EPS), en de dossierformaten van PDF &#x200B;](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Als u de opname van INDD-bestanden wilt ondersteunen, zodat u dynamische uitvoering van deze bestandsindeling kunt genereren, controleert u de volgende informatie voordat u Voorinstellingen afbeelding maakt.
 
-Zie [ InDesign (INDD) dossierformaat ](#indesign-indd-file-format).
+Zie [&#x200B; InDesign (INDD) dossierformaat &#x200B;](#indesign-indd-file-format).
 
 **om beeld tot stand te brengen vooraf instelt:**
 
 1. Selecteer in Experience Manager het Experience Manager-logo voor toegang tot de algemene navigatieconsole en ga vervolgens naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** .
 1. Selecteer **[!UICONTROL Create]** .
 
-   ![ chlimage_1-496 ](assets/chlimage_1-496.png)
+   ![&#x200B; chlimage_1-496 &#x200B;](assets/chlimage_1-496.png)
 
    >[!NOTE]
    >
@@ -210,13 +210,13 @@ Zie [ InDesign (INDD) dossierformaat ](#indesign-indd-file-format).
 
 1. Voer in het venster **[!UICONTROL Edit Image Preset]** waar nodig waarden in op de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]** , inclusief een naam. De opties worden beschreven in [Opties voor afbeeldingsvoorinstellingen](#image-preset-options). Voorinstellingen worden weergegeven in het linkerdeelvenster en kunnen direct samen met andere assets worden gebruikt.
 
-   ![ 6_5_imagepreset-geef uit ](assets/6_5_imagepreset-edit.png)
+   ![&#x200B; 6_5_imagepreset-geef uit &#x200B;](assets/6_5_imagepreset-edit.png)
 
 1. Selecteer **[!UICONTROL Save]** .
 
 ### Een responsieve voorinstelling voor afbeeldingen maken {#creating-a-responsive-image-preset}
 
-Om een ontvankelijke Vooraf ingesteld Beeld tot stand te brengen, voer de stappen in [ tot beeld uit vooraf instelt ](#creating-image-presets). Wanneer u de hoogte en breedte in het **[!UICONTROL Edit Image Preset]** -venster invoert, wist u de waarden en laat u deze leeg.
+Om een ontvankelijke Vooraf ingesteld Beeld tot stand te brengen, voer de stappen in [&#x200B; tot beeld uit vooraf instelt &#x200B;](#creating-image-presets). Wanneer u de hoogte en breedte in het **[!UICONTROL Edit Image Preset]** -venster invoert, wist u de waarden en laat u deze leeg.
 
 Als u deze leeg laat, weet Experience Manager dat op deze voorinstelling kan worden gereageerd. U kunt de andere waarden desgewenst aanpassen.
 
@@ -224,7 +224,7 @@ Als u deze leeg laat, weet Experience Manager dat op deze voorinstelling kan wor
 >
 >Als u de knoppen **[!UICONTROL URL]** en **[!UICONTROL RESS]** wilt zien wanneer u een voorinstelling voor afbeelding op een element toepast, moet het element worden gepubliceerd.
 >
->![ chlimage_1-79 ](assets/chlimage_1-498.png)
+>![&#x200B; chlimage_1-79 &#x200B;](assets/chlimage_1-498.png)
 >
 >Voorinstellingen voor afbeeldingen en afbeeldingselementen worden automatisch gepubliceerd.
 
@@ -334,29 +334,29 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 
 ### Voorinstellingsopties voor afbeeldingen definiëren met afbeeldingsopties {#defining-image-preset-options-with-image-modifiers}
 
-Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook afbeeldingsopties definiëren waarmee u meer opties hebt bij het definiëren van voorinstellingen voor afbeeldingen. Het beeld dat op het Dynamische Beeld teruggeeft van Media baseert API en in detail in de [ Verwijzing van het Protocol van HTTP ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api) wordt bepaald.
+Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook afbeeldingsopties definiëren waarmee u meer opties hebt bij het definiëren van voorinstellingen voor afbeeldingen. Het beeld dat op het Dynamische Beeld teruggeeft van Media baseert API en in detail in de [&#x200B; Verwijzing van het Protocol van HTTP &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api) wordt bepaald.
 
 Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoetsen voor afbeeldingen.
 
 >[!NOTE]
 >
->Sommige beeldbepalingen [ kunnen niet in Experience Manager ](#advanced-tab-options) worden gebruikt.
+>Sommige beeldbepalingen [&#x200B; kunnen niet in Experience Manager &#x200B;](#advanced-tab-options) worden gebruikt.
 
-* [ op_invert ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - keert elke kleurencomponent voor een negatief beeldeffect om.
+* [&#x200B; op_invert &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - keert elke kleurencomponent voor een negatief beeldeffect om.
 
   ```xml {.line-numbers}
   &op_invert=1
   ```
 
-  ![ 6_5_imagepreset-edit-invert ](assets/6_5_imagepreset-edit-invert.png)
+  ![&#x200B; 6_5_imagepreset-edit-invert &#x200B;](assets/6_5_imagepreset-edit-invert.png)
 
-* [ op_blur ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - past een vervagend filter op het beeld toe.
+* [&#x200B; op_blur &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - past een vervagend filter op het beeld toe.
 
   ```xml {.line-numbers}
   &op_blur=7
   ```
 
-  ![ 6_5_imagepreset-geef-onduidelijk ](assets/6_5_imagepreset-edit-blur.png)
+  ![&#x200B; 6_5_imagepreset-geef-onduidelijk &#x200B;](assets/6_5_imagepreset-edit-blur.png)
 
 * Gecombineerde opdrachten - op_vervagen en op-omkeren
 
@@ -364,29 +364,29 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
   &op_invert=1&op_blur=7
   ```
 
-  ![ chlimage_1-80 ](assets/chlimage_1-501.png)
+  ![&#x200B; chlimage_1-80 &#x200B;](assets/chlimage_1-501.png)
 
-* [ op_brightness ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - vermindert of verhoogt de helderheid.
+* [&#x200B; op_brightness &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - vermindert of verhoogt de helderheid.
 
   ```xml {.line-numbers}
   &op_brightness=58
   ```
 
-  ![ 6_5_imagepreset-geef-helderheid uit ](assets/6_5_imagepreset-edit-brightness.png)
+  ![&#x200B; 6_5_imagepreset-geef-helderheid uit &#x200B;](assets/6_5_imagepreset-edit-brightness.png)
 
-* [ opac ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - Past beelddekking aan. Hiermee kunt u de dekking van de voorgrond verlagen.
+* [&#x200B; opac &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - Past beelddekking aan. Hiermee kunt u de dekking van de voorgrond verlagen.
 
   ```xml {.line-numbers}
   opac=29
   ```
 
-  ![ 6_5_imagepreset-geef-opacity ](assets/6_5_imagepreset-edit-opacity.png)
+  ![&#x200B; 6_5_imagepreset-geef-opacity &#x200B;](assets/6_5_imagepreset-edit-opacity.png)
 
 ### Voorinstellingen voor afbeeldingen bewerken {#modifying-image-presets}
 
 1. Selecteer in Experience Manager het Experience Manager-logo voor toegang tot de algemene navigatieconsole en ga vervolgens naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** .
 
-   ![ 6_5_imagepreset-editpreset ](assets/6_5_imagepreset-editpreset.png)
+   ![&#x200B; 6_5_imagepreset-editpreset &#x200B;](assets/6_5_imagepreset-editpreset.png)
 
 1. Selecteer een voorinstelling en selecteer vervolgens **[!UICONTROL Edit]** . Het venster **[!UICONTROL Edit Image Preset]** wordt geopend.
 1. Breng de wijzigingen aan en selecteer **[!UICONTROL Save]** om de wijzigingen op te slaan of **[!UICONTROL Cancel]** om de wijzigingen te annuleren.

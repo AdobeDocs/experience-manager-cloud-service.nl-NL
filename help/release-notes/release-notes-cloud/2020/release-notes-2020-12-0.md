@@ -28,19 +28,19 @@ De volgende release (2021.1.0) is 28 januari 2021.
 
 * Integratie met [!DNL Adobe InDesign Server] is nu beschikbaar voor [!DNL Experience Manager] as a [!DNL Cloud Service] . Het biedt automatisering voor het verwerken van [!DNL Adobe InDesign] -bestanden met behulp van [!DNL Adobe InDesign Server] -scripts en biedt gebruikers de mogelijkheid om [!DNL Assets] -sjablonen in de gebruikersinterface te gebruiken om brochures of advertenties te maken. Alleen [!DNL InDesign Server] dat wordt gehost door [!DNL Adobe Managed Services] , wordt ondersteund voor [!DNL Experience Manager as a Cloud Service] . <!-- TBD: Add link to article. -->
 
-* [!DNL Experience Manager] wordt uitgebreid om elementverwijzingen bij te houden en weer te geven wanneer een element wordt gebruikt in een externe [!DNL Experience Manager Sites] -implementatie met behulp van de Connected Assets-functionaliteit. Een nieuw tabblad [!UICONTROL References] op de pagina [!UICONTROL Properties] van het element bevat nu lokale en externe verwijzingen naar het element. Met de verwijzingen kunnen DAM-gebruikers het gebruik van elementen bijhouden in [!DNL Sites] -pagina&#39;s en in samengestelde elementen in [!DNL Assets] . Zie [ vormen en gebruiken Verbonden Assets ](/help/assets/use-assets-across-connected-assets-instances.md).
+* [!DNL Experience Manager] wordt uitgebreid om elementverwijzingen bij te houden en weer te geven wanneer een element wordt gebruikt in een externe [!DNL Experience Manager Sites] -implementatie met behulp van de Connected Assets-functionaliteit. Een nieuw tabblad [!UICONTROL References] op de pagina [!UICONTROL Properties] van het element bevat nu lokale en externe verwijzingen naar het element. Met de verwijzingen kunnen DAM-gebruikers het gebruik van elementen bijhouden in [!DNL Sites] -pagina&#39;s en in samengestelde elementen in [!DNL Assets] . Zie [&#x200B; vormen en gebruiken Verbonden Assets &#x200B;](/help/assets/use-assets-across-connected-assets-instances.md).
 
 * De mogelijkheden van [!DNL Dynamic Media] zijn nu toegankelijk via AEM [!DNL Sites] op afbeeldingen gebaseerde Core Components. Auteurs kunnen snel componenten configureren voor het gebruik van Voorinstellingen voor afbeeldingen, SmartCrop en Image Modifiers bij het maken van webpagina&#39;s. Zie {de versie van de Componenten 2.13.0 van de Kern van 0} [&#128279;](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* Met de bureaubladtoepassing [!DNL Experience Manager] kunnen gebruikers bestanden en mappen uploaden door de bestanden vanuit Windows Explorer of Mac Finder naar de interface van de bureaubladtoepassing te slepen. Zie [ activa toevoegen gebruikend Desktop app ](https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
+* Met de bureaubladtoepassing [!DNL Experience Manager] kunnen gebruikers bestanden en mappen uploaden door de bestanden vanuit Windows Explorer of Mac Finder naar de interface van de bureaubladtoepassing te slepen. Zie [&#x200B; activa toevoegen gebruikend Desktop app &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Release CIF Venia Reference Site - 2020.12.01 die de nieuwste versie CIF Core Components v1.6.0 bevat. Zie [ CIF de Plaats van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) voor meer details.
+* Release CIF Venia Reference Site - 2020.12.01 die de nieuwste versie CIF Core Components v1.6.0 bevat. Zie [&#x200B; CIF de Plaats van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) voor meer details.
 
-* Uitgegeven CIF Core Components v1.6.0. Zie [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) voor meer details.
+* Uitgegeven CIF Core Components v1.6.0. Zie [&#x200B; CIF de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) voor meer details.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -50,9 +50,9 @@ De Releasedatum voor Cloud Manager in Adobe Experience Manager (AEM) as a Cloud 
 
 ### Nieuwe functies in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Zelfbediening beheer van [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) en [ Inleiding aan de Namen van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Zelfbediening beheer van [&#x200B; SSL Certificaten &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) en [&#x200B; Inleiding aan de Namen van het Domein van de Douane &#x200B;](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Zelfbediening beheer van [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Zelfbediening beheer van [&#x200B; IP Lijsten van gewenste personen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * De bijgewerkte **detailspagina van het Milieu** staat nu gebruikers toe om de Namen van het Domein van de Douane en IP Lijsten van gewenste personen op hun milieu&#39;s te beheren.
 
@@ -66,15 +66,15 @@ De Releasedatum voor Cloud Manager in Adobe Experience Manager (AEM) as a Cloud 
 
 ### Nieuwe functies in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) waar u meer over deze elektrisch toestel kunt leren.
+* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [&#x200B; Verenigde Ervaring &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) waar u meer over deze elektrisch toestel kunt leren.
 
-* Indexconverter is een hulpprogramma waarmee de aangepaste Oak-indexdefinities van een klant kunnen worden getransformeerd naar Oak-compatibele indexdefinities. Zie [ Omzetter van de Index ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer details.
+* Indexconverter is een hulpprogramma waarmee de aangepaste Oak-indexdefinities van een klant kunnen worden getransformeerd naar Oak-compatibele indexdefinities. Zie [&#x200B; Omzetter van de Index &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer details.
 
-* Nieuwe eigenschap die aan [ wordt toegevoegd de Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) die tot een afzonderlijk pakket `ui.config` leidt om alle configuraties te bevatten OSGi.
+* Nieuwe eigenschap die aan [&#x200B; wordt toegevoegd de Modernizer van de Bewaarplaats &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) die tot een afzonderlijk pakket `ui.config` leidt om alle configuraties te bevatten OSGi.
 
 ### Opgeloste problemen {#crt-bug-fixes}
 
-* Er zijn verschillende foutoplossingen uitgevoerd voor de AEM Dispatcher Converter en Repository Modernizer. Zie [ AEM de Convertor van Dispatcher ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) en [ Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Er zijn verschillende foutoplossingen uitgevoerd voor de AEM Dispatcher Converter en Repository Modernizer. Zie [&#x200B; AEM de Convertor van Dispatcher &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) en [&#x200B; Modernizer van de Bewaarplaats &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ### Releasedatum {#release-date-ctt}
 

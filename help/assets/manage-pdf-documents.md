@@ -23,21 +23,21 @@ De Document Cloud PDF-viewer biedt AEM Assets de volgende voordelen:
 
 >[!TIP]
 >
-> Als u niet veelvoudige paginavoorproef van een eerder geupload document van PDF kunt krijgen dan PDF selecteren en ![ ](/help/assets/assets/Reprocess.svg) **klikt opnieuw verwerken Assets**.
+> Als u niet veelvoudige paginavoorproef van een eerder geupload document van PDF kunt krijgen dan PDF selecteren en ![&#x200B; &#x200B;](/help/assets/assets/Reprocess.svg) **klikt opnieuw verwerken Assets**.
 
 ## Ondersteuning voor PDF Document Cloud Viewer-componenten {#pdf-doc-cloud}
 
 De systeemeigen PDF Doc Cloud-viewer heeft de volgende componenten in AEM Assets:
 
-* **de kijker van PDF die paginaminiaturen** gebruikt de mening van de Duimnagel is een kleine voorproef van de pagina&#39;s van een document van PDF. Met behulp van miniaturen kunt u rechtstreeks naar de gewenste pagina gaan. U kunt tot duimnagels van het geselecteerde document van PDF door ![ duimnagel ](/help/assets/assets/thumbnail.svg) op de linkerruit toegang hebben.
+* **de kijker van PDF die paginaminiaturen** gebruikt de mening van de Duimnagel is een kleine voorproef van de pagina&#39;s van een document van PDF. Met behulp van miniaturen kunt u rechtstreeks naar de gewenste pagina gaan. U kunt tot duimnagels van het geselecteerde document van PDF door ![&#x200B; duimnagel &#x200B;](/help/assets/assets/thumbnail.svg) op de linkerruit toegang hebben.
 
-* **de kijker van PDF die referenties gebruikt** bladwijzer is een directe verbinding die u aan de inhoud in het document navigeert. U kunt tot referenties van het geselecteerde document van PDF door ![ referentie ](/help/assets/assets/bookmark.svg) op de linkerruit toegang hebben.
+* **de kijker van PDF die referenties gebruikt** bladwijzer is een directe verbinding die u aan de inhoud in het document navigeert. U kunt tot referenties van het geselecteerde document van PDF door ![&#x200B; referentie &#x200B;](/help/assets/assets/bookmark.svg) op de linkerruit toegang hebben.
 
-* **Onderzoek in PDF** u onderzoek ![ ](/help/assets/assets/Search.svg) kunt gebruiken om omhoog de tekst in het document van PDF te kijken.
+* **Onderzoek in PDF** u onderzoek ![&#x200B; &#x200B;](/help/assets/assets/Search.svg) kunt gebruiken om omhoog de tekst in het document van PDF te kijken.
 
-* **pagina omhoog/pagina onderaan** pagina van het Gebruik omhoog ![ pagina ](/help/assets/assets/ArrowUp.svg) of pagina onderaan ![ pagina neer ](/help/assets/assets/ArrowDown.svg) om door het document te scrollen.
+* **pagina omhoog/pagina onderaan** pagina van het Gebruik omhoog ![&#x200B; pagina &#x200B;](/help/assets/assets/ArrowUp.svg) of pagina onderaan ![&#x200B; pagina neer &#x200B;](/help/assets/assets/ArrowDown.svg) om door het document te scrollen.
 
-* **Uitzoomen/Gezoem binnen** Uitzoomen van het Gebruik ![ Uitzoomen ](/help/assets/assets/Zoom-out.svg) of Gezoem binnen ![ Gezoem binnen ](/help/assets/assets/zoom-in.svg) om het document te stromen.
+* **Uitzoomen/Gezoem binnen** Uitzoomen van het Gebruik ![&#x200B; Uitzoomen &#x200B;](/help/assets/assets/Zoom-out.svg) of Gezoem binnen ![&#x200B; Gezoem binnen &#x200B;](/help/assets/assets/zoom-in.svg) om het document te stromen.
 
 * **Breedte of hoogtedimensies van het Gebruik van het Passen van 0&rbrace; Pagina &lbrace;om het document volgens uw het schermgrootte te passen.**
 
@@ -47,13 +47,13 @@ De systeemeigen PDF Doc Cloud-viewer heeft de volgende componenten in AEM Assets
 
 In Adobe Experience Manager Assets kunt u een voorbeeld van een PDF-document bekijken dat uit meerdere pagina&#39;s bestaat. Neem de volgende stappen om een voorvertoning weer te geven van meerdere pagina&#39;s van een PDF-document:
 
-1. Volg de stappen om [ activa in AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL) te uploaden.
+1. Volg de stappen om [&#x200B; activa in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL) te uploaden.
 1. Blader naar het PDF-document dat u wilt uploaden en bekijk een voorvertoning.
 1. Open het document.
 1. De PDF-documentviewer wordt standaard geladen. U kunt ook PDF-uitvoering selecteren onder het deelvenster Vertoning.
 1. Onder drop-down Vertoningen, uitgezochte **Alle Vertoningen**.
 
-U kunt [ annotaties ](#pdf-annotations) op het document van PDF in een veelvoudige paginavoorproef ook toepassen.
+U kunt [&#x200B; annotaties &#x200B;](#pdf-annotations) op het document van PDF in een veelvoudige paginavoorproef ook toepassen.
 
 >[!NOTE]
 >
@@ -122,11 +122,11 @@ Hieronder vindt u de annotaties die kunnen worden toegepast op een PDF-document:
 
 Naast de PDF-documenten kunt u ook meerdere pagina&#39;s voorvertonen voor documenten in andere indelingstypen. De ondersteunde documentindelingen zijn TXT, RTF, DOC, DOCX, PPT, PPTX, XLS en XLSX. Experience Manager Assets converteert deze documentindelingen automatisch naar een PDF-indeling en stelt ze beschikbaar voor een voorvertoning.
 
-![ Multi-pageVoorproef van Documenten in Andere Formaten ](/help/assets/assets/multi-page-other-formats.png)
+![&#x200B; Multi-pageVoorproef van Documenten in Andere Formaten &#x200B;](/help/assets/assets/multi-page-other-formats.png)
 
 Voer de volgende stappen uit voor de voorvertoning van meerdere pagina&#39;s van andere ondersteunde documentindelingen:
 
-1. Volg de stappen om [ activa in AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL) te uploaden.
+1. Volg de stappen om [&#x200B; activa in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL) te uploaden.
 1. Blader naar het document dat u wilt uploaden en bekijk een voorvertoning.
 1. Open het document.
 1. Selecteer PDF onder het statische gedeelte in het linkerdeelvenster. In het rechterdeelvenster ziet u de voorvertoning van meerdere pagina&#39;s van een element. Selecteer een miniatuur in het linkerdeelvenster om de pagina te kiezen waarvan u een voorvertoning wilt weergeven.

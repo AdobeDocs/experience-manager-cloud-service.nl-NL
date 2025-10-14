@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Vertaalprojecten beheren {#managing-translation-projects}
 
-Met vertaalprojecten kunt u de vertaling van AEM inhoud beheren. Een vertaalproject is een type van AEM [ project ](/help/sites-cloud/authoring/projects/overview.md) dat middelen bevat die in andere talen moeten worden vertaald. Deze middelen zijn de pagina&#39;s en de activa van de [ taalexemplaren ](preparation.md) die van de taalmeester worden gecreeerd.
+Met vertaalprojecten kunt u de vertaling van AEM inhoud beheren. Een vertaalproject is een type van AEM [&#x200B; project &#x200B;](/help/sites-cloud/authoring/projects/overview.md) dat middelen bevat die in andere talen moeten worden vertaald. Deze middelen zijn de pagina&#39;s en de activa van de [&#x200B; taalexemplaren &#x200B;](preparation.md) die van de taalmeester worden gecreeerd.
 
 >[!TIP]
 >
@@ -57,7 +57,7 @@ Maak vertaalprojecten zodat u de workflow voor het vertalen van de bronnen van u
 
 U kunt opgeven dat de onderliggende pagina&#39;s van de geselecteerde pagina ook worden geselecteerd. In dit geval worden ook kopieën van de onderliggende pagina&#39;s aan elk project toegevoegd, zodat deze worden vertaald. Wanneer om het even welke kindpagina&#39;s met verschillende configuraties van het kader van de vertaalintegratie worden geassocieerd, AEM leidt tot extra projecten.
 
-U kunt ook [ manueel vertaalprojecten ](#creating-a-translation-project-using-the-projects-console) tot stand brengen.
+U kunt ook [&#x200B; manueel vertaalprojecten &#x200B;](#creating-a-translation-project-using-the-projects-console) tot stand brengen.
 
 >[!NOTE]
 >
@@ -67,11 +67,11 @@ U kunt ook [ manueel vertaalprojecten ](#creating-a-translation-project-using-th
 
 In het deelvenster Referenties wordt aangegeven of de bestaande taalkopieën worden bijgewerkt of dat de eerste versie van de taalkopieën wordt gemaakt. Wanneer een taalexemplaar voor de geselecteerde pagina bestaat, lijkt het lusje van de Exemplaren van de Taal van de Update toegang tot project-verwante bevelen te verlenen.
 
-![ de taalexemplaren van de Update ](../assets/update-language-copies.png)
+![&#x200B; de taalexemplaren van de Update &#x200B;](../assets/update-language-copies.png)
 
-Na het vertalen, kunt u [ de vertaling ](#reviewing-and-promoting-updated-content) herzien alvorens het taalexemplaar met het te beschrijven. Als er geen taalkopie voor de geselecteerde pagina bestaat, wordt op het tabblad Maken en vertalen toegang weergegeven tot opdrachten die betrekking hebben op het project.
+Na het vertalen, kunt u [&#x200B; de vertaling &#x200B;](#reviewing-and-promoting-updated-content) herzien alvorens het taalexemplaar met het te beschrijven. Als er geen taalkopie voor de geselecteerde pagina bestaat, wordt op het tabblad Maken en vertalen toegang weergegeven tot opdrachten die betrekking hebben op het project.
 
-![ creeer en vertaal ](../assets/create-and-translate.png)
+![&#x200B; creeer en vertaal &#x200B;](../assets/create-and-translate.png)
 
 ### Vertaalprojecten maken voor een kopie van nieuwe taal {#create-translation-projects-for-a-new-language-copy}
 
@@ -79,19 +79,19 @@ Na het vertalen, kunt u [ de vertaling ](#reviewing-and-promoting-updated-conten
 
 1. Gebruikend de toolbar, open het **spoor van Verwijzingen**.
 
-   ![ Verwijzingen ](../assets/references.png)
+   ![&#x200B; Verwijzingen &#x200B;](../assets/references.png)
 
 1. Selecteer **Exemplaren van de Taal**, en selecteer dan de taalexemplaren waarvoor u de bronpagina&#39;s vertaalt.
 1. Selecteer **creeer en vertaal** en vorm dan de vertaalbaan:
 
-   * Gebruik **Talen** drop-down om een taalexemplaar te selecteren waarvoor u wilt vertalen. Selecteer desgewenst extra talen. Talen die in de lijst verschijnen beantwoorden aan de [ taalwortels die u ](preparation.md#creating-a-language-root) hebt gecreeerd.
+   * Gebruik **Talen** drop-down om een taalexemplaar te selecteren waarvoor u wilt vertalen. Selecteer desgewenst extra talen. Talen die in de lijst verschijnen beantwoorden aan de [&#x200B; taalwortels die u &#x200B;](preparation.md#creating-a-language-root) hebt gecreeerd.
       * Als u meerdere talen selecteert, wordt er één project gemaakt met een vertaaltaak voor elke taal.
    * Om de pagina te vertalen die u en alle kindpagina&#39;s selecteerde, uitgezochte **alle subpagina&#39;s**. Als u alleen de geselecteerde pagina wilt vertalen, schakelt u de optie uit.
    * Voor **Project**, uitgezochte **creeer Omzettingsproject(en)**.
    * Naar keuze voor **Hoofd van het Project**, selecteer een project waarvan om gebruikersrollen en toestemmingen te erven.
    * In **Titel** type een naam voor het project.
 
-   ![ creeer vertaalproject ](../assets/create-translation-project.png)
+   ![&#x200B; creeer vertaalproject &#x200B;](../assets/create-translation-project.png)
 
 1. Selecteer **creeer**.
 
@@ -101,7 +101,7 @@ Na het vertalen, kunt u [ de vertaling ](#reviewing-and-promoting-updated-conten
 
 1. Gebruikend de toolbar, open het **spoor van Verwijzingen**.
 
-   ![ Verwijzingen ](../assets/references.png)
+   ![&#x200B; Verwijzingen &#x200B;](../assets/references.png)
 
 1. Selecteer **Exemplaren van de Taal**, en selecteer dan de taalexemplaren waarvoor u de bronpagina&#39;s vertaalt.
 1. Selecteer {de Kopieën van de Taal van 0} Update **en vorm dan de vertaalbaan:**
@@ -111,7 +111,7 @@ Na het vertalen, kunt u [ de vertaling ](#reviewing-and-promoting-updated-conten
    * Naar keuze voor **Hoofd van het Project**, selecteer een project waarvan om gebruikersrollen en toestemmingen te erven.
    * In **Titel** type een naam voor het project.
 
-   ![ creeer project om taalexemplaren ](../assets/create-update-language-copies-project.png) bij te werken
+   ![&#x200B; creeer project om taalexemplaren &#x200B;](../assets/create-update-language-copies-project.png) bij te werken
 
 1. Selecteer **creeer**.
 
@@ -119,19 +119,19 @@ Na het vertalen, kunt u [ de vertaling ](#reviewing-and-promoting-updated-conten
 
 Nadat u een vertaalproject hebt gecreeerd, kunt u het **spoor van Middelen** gebruiken om pagina&#39;s aan het project toe te voegen. Het toevoegen van pagina&#39;s is handig wanneer u pagina&#39;s van verschillende vertakkingen in hetzelfde project opneemt.
 
-Wanneer u pagina&#39;s toevoegt aan een vertaalproject, worden de pagina&#39;s opgenomen in een nieuwe vertaaltaak. U kunt ook [ pagina&#39;s aan een bestaande baan ](#adding-pages-assets-to-a-translation-job) toevoegen.
+Wanneer u pagina&#39;s toevoegt aan een vertaalproject, worden de pagina&#39;s opgenomen in een nieuwe vertaaltaak. U kunt ook [&#x200B; pagina&#39;s aan een bestaande baan &#x200B;](#adding-pages-assets-to-a-translation-job) toevoegen.
 
-Net als bij het maken van een project worden bij het toevoegen van pagina&#39;s kopieën van de pagina&#39;s zo nodig toegevoegd aan een opstart om te voorkomen dat bestaande taalkopieën worden overschreven. (Zie [ Creërend Vertaalprojecten voor Bestaande Exemplaren van de Taal ](#performing-initial-translations-and-updating-existing-translations).)
+Net als bij het maken van een project worden bij het toevoegen van pagina&#39;s kopieën van de pagina&#39;s zo nodig toegevoegd aan een opstart om te voorkomen dat bestaande taalkopieën worden overschreven. (Zie [&#x200B; Creërend Vertaalprojecten voor Bestaande Exemplaren van de Taal &#x200B;](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Gebruik de console van Plaatsen om de pagina te selecteren die u aan het vertaalproject toevoegt.
 
 1. Gebruikend de toolbar, open het **spoor van Verwijzingen**.
 
-   ![ Verwijzingen ](../assets/references.png)
+   ![&#x200B; Verwijzingen &#x200B;](../assets/references.png)
 
 1. Selecteer **Exemplaren van de Taal**, en selecteer dan de taalexemplaren waarvoor u de bronpagina&#39;s vertaalt.
 
-   ![ de taalexemplaren van de update van verwijzingenspoor ](../assets/update-language-copies-references.png)
+   ![&#x200B; de taalexemplaren van de update van verwijzingenspoor &#x200B;](../assets/update-language-copies-references.png)
 
 1. Selecteer {de Kopieën van de Taal van 0} Update **en vorm dan de eigenschappen:**
 
@@ -149,23 +149,23 @@ Net als bij het maken van een project worden bij het toevoegen van pagina&#39;s 
 
 Het is mogelijk om alleen de structuur van de taalkopie te maken, zodat u inhoud en structurele wijzigingen in de hoofdtaal kunt kopiëren naar (onvertaalde) taalkopieën. Dit houdt geen verband met een vertaalbaan of een project. U kunt dit gebruiken om uw taalmeesters synchroon te houden, zelfs zonder vertaling.
 
-Vul de taalkopie zodanig dat deze inhoud bevat uit de hoofdtaal die u vertaalt. Alvorens u uw taalexemplaar bevolkt, moet u [ tot de taalwortel ](preparation.md#creating-a-language-root) van het taalexemplaar hebben gecreeerd.
+Vul de taalkopie zodanig dat deze inhoud bevat uit de hoofdtaal die u vertaalt. Alvorens u uw taalexemplaar bevolkt, moet u [&#x200B; tot de taalwortel &#x200B;](preparation.md#creating-a-language-root) van het taalexemplaar hebben gecreeerd.
 
 1. Gebruik de plaatsenconsole om de taalwortel van de hoofdtaal te selecteren die u als bron gebruikt.
 1. Open de verwijzingenspoorstaaf door **Verwijzingen** in de toolbar te klikken of te tikken.
 
-   ![ Verwijzingen ](../assets/references.png)
+   ![&#x200B; Verwijzingen &#x200B;](../assets/references.png)
 
 1. Selecteer **Exemplaren van de Taal**, en selecteer dan de taalexemplaren die u wilt bevolken.
 
-   ![ Uitgezochte taalexemplaren ](../assets/language-copy-structure-select.png)
+   ![&#x200B; Uitgezochte taalexemplaren &#x200B;](../assets/language-copy-structure-select.png)
 
 1. Selecteer {de Kopieën van de Taal van 0} Update **om de vertaalhulpmiddelen te openbaren, en de eigenschappen te vormen:**
 
    * Selecteer **Uitgezochte alle sub-pagina&#39;s** optie.
    * Voor **Project**, uitgezochte **creeer slechts Structuur**.
 
-   ![ slechts Structuur ](../assets/language-copy-structure-only.png)
+   ![&#x200B; slechts Structuur &#x200B;](../assets/language-copy-structure-only.png)
 
 1. Selecteer **Update**.
 
@@ -176,7 +176,7 @@ Handmatige bewerkingen van vertaalde inhoud kunnen worden gesynchroniseerd met h
 1. Van de plaatsenconsole, na het bijwerken van tekstinhoud in een vertaalde pagina, selecteer **het Geheugen van de Vertaling van de Update**.
 1. Een lijstmening toont een zij-aan-zij vergelijking van de bron en de vertaling voor elke tekstcomponent die werd uitgegeven. Selecteer welke vertaalupdates aan vertaalgeheugen zouden moeten worden gesynchroniseerd, en **Geheugen van de Update** selecteren.
 
-![ vergelijk veranderingen voor vertaalgeheugen ](../assets/update-translation-memory-compare.png)
+![&#x200B; vergelijk veranderingen voor vertaalgeheugen &#x200B;](../assets/update-translation-memory-compare.png)
 
 AEM werkt de vertaling van de bestaande koorden in het vertaalgeheugen van gevormde TMS bij.
 
@@ -187,7 +187,7 @@ AEM werkt de vertaling van de bestaande koorden in het vertaalgeheugen van gevor
 Deze functie gebruiken:
 
 * Een TMS moet voor gebruik met AEM worden gevormd.
-* De schakelaar moet de methode [`storeTranslation` uitvoeren ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+* De schakelaar moet de methode [`storeTranslation` uitvoeren &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
    * De code binnen deze methode bepaalt wat met het verzoek van de vertaalgeheugenupdate gebeurt.
    * Het AEM vertaalkader verzendt de koordwaardeparen (originele en bijgewerkte vertaling) terug naar TMS via deze methodeimplementatie.
 
@@ -197,13 +197,13 @@ De updates van het vertaalgeheugen kunnen worden onderschept en naar een douaneb
 
 Een bezit kan in de lijstmening van de plaatsenconsole worden geselecteerd die toont als een pagina is vertaald, in vertaling is, of nog niet is vertaald.
 
-1. In de plaatsenconsole, schakelaar aan [ lijstmening ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. In de plaatsenconsole, schakelaar aan [&#x200B; lijstmening &#x200B;](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Selecteer, **Montages van de Mening** in de meningsdrop-down.
 1. In de dialoog, controleer het **Vertaalde** bezit en selecteer **Update**.
 
 De plaatsenconsole toont nu de **Vertaalde** kolom die de vertaalstatus van de vermelde pagina&#39;s toont.
 
-![ Vertaal status in lijstmening ](../assets/translation-status-list-view.png)
+![&#x200B; Vertaal status in lijstmening &#x200B;](../assets/translation-status-list-view.png)
 
 ## Vertaalprojecten beheren vanuit de projectconsole
 
@@ -211,11 +211,11 @@ Vele vertaaltaken en geavanceerde opties kunnen in de projectenconsole worden be
 
 ### De projectenconsole begrijpen
 
-De vertaalprojecten in AEM gebruiken de standaard [ AEM projectenconsole ](/help/sites-cloud/authoring/projects/overview.md). Als u niet vertrouwd met AEM projecten bent, herzie die documentatie.
+De vertaalprojecten in AEM gebruiken de standaard [&#x200B; AEM projectenconsole &#x200B;](/help/sites-cloud/authoring/projects/overview.md). Als u niet vertrouwd met AEM projecten bent, herzie die documentatie.
 
 Net als elk ander project bestaat een vertaalproject uit tegels die een overzicht geven van de projecttaken.
 
-![ Vertaal project ](../assets/translation-project.png)
+![&#x200B; Vertaal project &#x200B;](../assets/translation-project.png)
 
 * **Samenvatting** - een overzicht van het project
 * **Taken** - één of meerdere vertaaltaken
@@ -224,9 +224,9 @@ Net als elk ander project bestaat een vertaalproject uit tegels die een overzich
 
 Gebruik de opdrachten en de elliptische knoppen boven en onder aan de tegels (respectievelijk) voor toegang tot de besturingselementen en opties voor de verschillende tegels.
 
-![ Bevelen knoop ](../assets/context.png)
+![&#x200B; Bevelen knoop &#x200B;](../assets/context.png)
 
-![ knoop van de Ellipsis ](../assets/ellipsis.png)
+![&#x200B; knoop van de Ellipsis &#x200B;](../assets/ellipsis.png)
 
 ### Een vertaalproject maken met de projectconsole {#creating-a-translation-project-using-the-projects-console}
 
@@ -236,7 +236,7 @@ U kunt een vertaalproject manueel tot stand brengen als u verkiest de projectenc
 >
 >Uw account moet lid zijn van de `project-administrators` -groep om een project te maken.
 
-Wanneer u manueel een vertaalproject creeert, moet u waarden voor de volgende op vertaling betrekking hebbende eigenschappen naast de [ basiseigenschappen ](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) verstrekken:
+Wanneer u manueel een vertaalproject creeert, moet u waarden voor de volgende op vertaling betrekking hebbende eigenschappen naast de [&#x200B; basiseigenschappen &#x200B;](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) verstrekken:
 
 * **Naam:** de naam van het Project
 * **Taal van Source:** De taal van de broninhoud
@@ -256,19 +256,19 @@ U kunt pagina&#39;s, elementen of codes toevoegen aan de vertaaltaak van uw vert
 
 1. Selecteer de ellips onder aan de tegel voor vertaaltaken van het vertaalproject.
 
-   ![ de baantegel van de Vertaling ](../assets/translation-job.png)
+   ![&#x200B; de baantegel van de Vertaling &#x200B;](../assets/translation-job.png)
 
 1. In het volgende venster selecteer **toevoegen** knoop in de toolbar en dan selecteren **Assets/Pagina&#39;s**.
 
-   ![ voegt pagina&#39;s ](../assets/add-to-project.png) toe
+   ![&#x200B; voegt pagina&#39;s &#x200B;](../assets/add-to-project.png) toe
 
 1. Selecteer in het modale venster het bovenste item van de vertakking die u wilt toevoegen en selecteer vervolgens het pictogram van het vinkje. Multi-select is ingeschakeld in dit venster.
 
-   ![ Uitgezochte pagina&#39;s ](../assets/select-pages.png)
+   ![&#x200B; Uitgezochte pagina&#39;s &#x200B;](../assets/select-pages.png)
 
 1. U kunt ook het zoekpictogram selecteren om gemakkelijk te zoeken naar pagina&#39;s of elementen die u aan uw vertaaltaak wilt toevoegen.
 
-   ![ Onderzoek naar inhoud ](../assets/search-for-content.png)
+   ![&#x200B; Onderzoek naar inhoud &#x200B;](../assets/search-for-content.png)
 
 1. Zodra geselecteerd, uitgezochte **Uitgezochte**. Uw pagina&#39;s en/of middelen worden toegevoegd aan de vertaaltaak.
 
@@ -282,29 +282,29 @@ U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vert
 
 1. Klik onder aan de tegel Vertaal taak van het vertaalproject op de ellips.
 
-   ![ de baantegel van de Vertaling ](../assets/translation-job.png)
+   ![&#x200B; de baantegel van de Vertaling &#x200B;](../assets/translation-job.png)
 
 1. Klik op Toevoegen en I18N-woordenboek.
 
-   ![ voeg i18n- woordenboek ](../assets/add-i18n.png) toe
+   ![&#x200B; voeg i18n- woordenboek &#x200B;](../assets/add-i18n.png) toe
 
 1. Selecteer de **Folder van de Wortel**, en woordenboek (indien nodig), die u wilt toevoegen, en dan selecteren **&#x200B;**&#x200B;toevoegen.
 
-   ![ Uitgezochte i18N Woordenboek ](../assets/select-i18n.png)
+   ![&#x200B; Uitgezochte i18N Woordenboek &#x200B;](../assets/select-i18n.png)
 
 Uw woordenboek staat nu in uw vertaalwerk en het vertaalproces kan dan worden gestart om de woordenboektaalexemplaren in `/content/cq:i18n` te creëren en die woordenboektaalexemplaren voor vertaling te verzenden.
 
 >[!NOTE]
 >
->Voor meer informatie over i18n woordenboeken, lees [ Gebruikend Vertaler om Woordenboeken ](/help/implementing/developing/extending/i18n/translator.md) te beheren.
+>Voor meer informatie over i18n woordenboeken, lees [&#x200B; Gebruikend Vertaler om Woordenboeken &#x200B;](/help/implementing/developing/extending/i18n/translator.md) te beheren.
 
 ### Tags toevoegen aan een vertaaltaak {#adding-tags-to-a-translation-job}
 
-U kunt markeringen aan een vertaalproject gelijkend op [ toevoegen hoe u activa en pagina&#39;s aan een project ](#adding-pages-assets-to-a-translation-job) toevoegt. Enkel uitgezochte **Markeringen** onder **voegt** menu dan de zelfde stappen toe.
+U kunt markeringen aan een vertaalproject gelijkend op [&#x200B; toevoegen hoe u activa en pagina&#39;s aan een project &#x200B;](#adding-pages-assets-to-a-translation-job) toevoegt. Enkel uitgezochte **Markeringen** onder **voegt** menu dan de zelfde stappen toe.
 
 ### Details van vertaalproject bekijken {#seeing-translation-project-details}
 
-De eigenschappen van het vertaalproject zijn toegankelijk via de ellipsieknoop van de projectoverzicht. Naast de generische [ projectinformatie ](/help/sites-cloud/authoring/projects/overview.md#project-info), bevatten de eigenschappen van het vertaalproject vertaling-specifiek.
+De eigenschappen van het vertaalproject zijn toegankelijk via de ellipsieknoop van de projectoverzicht. Naast de generische [&#x200B; projectinformatie &#x200B;](/help/sites-cloud/authoring/projects/overview.md#project-info), bevatten de eigenschappen van het vertaalproject vertaling-specifiek.
 
 In uw vertaalproject, selecteer de ellips bij de bodem van de Vertaling Summiere tegel. De meeste project-specifieke eigenschappen zijn op **Geavanceerd** tabel.
 
@@ -322,13 +322,13 @@ In uw vertaalproject, selecteer de ellips bij de bodem van de Vertaling Summiere
 
 Wanneer een project wordt gecreeerd gebruikend de verwijzingsspoorlijn van een pagina, worden deze eigenschappen automatisch gevormd gebaseerd op de eigenschappen van de bronpagina.
 
-![ het projecteigenschappen van de Vertaling ](../assets/translation-project-properties.png)
+![&#x200B; het projecteigenschappen van de Vertaling &#x200B;](../assets/translation-project-properties.png)
 
 ### De status van een vertalingstaak controleren {#monitoring-the-status-of-a-translation-job}
 
 De tegel voor vertaaltaken van een vertaalproject geeft de status van een vertaaltaak en het aantal pagina&#39;s en middelen in de taak.
 
-![ de baan van de Vertaling ](../assets/translation-job.png)
+![&#x200B; de baan van de Vertaling &#x200B;](../assets/translation-job.png)
 
 In de volgende tabel wordt elke status beschreven die een taak of een item in de taak kan hebben:
 
@@ -355,11 +355,11 @@ Geef de datum op waarop de leverancier van de vertaling vertaalde bestanden moet
 
 1. Selecteer de ellips onder aan de samenvattingstabel van de vertaling.
 
-   ![ de summiere tegel van de Vertaling ](../assets/translation-summary-tile.png)
+   ![&#x200B; de summiere tegel van de Vertaling &#x200B;](../assets/translation-summary-tile.png)
 
 1. Op het **Basis** lusje, gebruik de datumplukker van het **Verschuldigde bezit van de Datum** om de verouderde datum te selecteren.
 
-   ![ het projecteigenschappen van de Vertaling ](../assets/translation-project-properties-basic.png)
+   ![&#x200B; het projecteigenschappen van de Vertaling &#x200B;](../assets/translation-project-properties-basic.png)
 
 1. Selecteer **sparen &amp; Sluiten**.
 
@@ -440,16 +440,16 @@ U kunt de siteconsole gebruiken om inhoud te controleren, taalkopieën te vergel
 
 Wanneer de inhoud voor een bestaand taalexemplaar wordt vertaald, herzie de vertalingen, breng veranderingen indien nodig aan, en publiceer dan de vertalingen om het naar het taalexemplaar te bewegen. U kunt vertaalde dossiers herzien wanneer de vertaalbaan **voor de status van het Overzicht** klaar toont.
 
-![ Baan klaar voor overzicht ](../assets/job-ready-for-review.png)
+![&#x200B; Baan klaar voor overzicht &#x200B;](../assets/job-ready-for-review.png)
 
 1. Selecteer de pagina in de taalmeester, uitgezochte **Verwijzingen**, dan selecteren **de Kopieën van de Taal**.
 1. Selecteer de taalkopie die u wilt controleren.
 
-   ![ exemplaar van de Taal klaar voor overzicht ](../assets/language-copy-ready-for-review.png)
+   ![&#x200B; exemplaar van de Taal klaar voor overzicht &#x200B;](../assets/language-copy-ready-for-review.png)
 
 1. Selecteer **Lancering** om op lancering betrekking hebbende bevelen te openbaren.
 
-   ![ Lancering ](../assets/language-copy-launch.png)
+   ![&#x200B; Lancering &#x200B;](../assets/language-copy-launch.png)
 
 1. Om het lanceringsexemplaar van de pagina te openen om de inhoud te herzien en uit te geven, klik **Open Pagina**.
 1. Nadat u de inhoud hebt herzien en noodzakelijke veranderingen aangebracht, om het lanceringsexemplaar te bevorderen klikt **bevorderen**.
@@ -460,18 +460,18 @@ Wanneer de inhoud voor een bestaand taalexemplaar wordt vertaald, herzie de vert
 U kunt als volgt de taalkopieën vergelijken met de hoofdtaal:
 
 1. In de plaatsenconsole, navigeer aan het taalexemplaar u wilt vergelijken.
-1. Open het [ spoor van Verwijzingen ](/help/sites-cloud/authoring/basic-handling.md#references).
+1. Open het [&#x200B; spoor van Verwijzingen &#x200B;](/help/sites-cloud/authoring/basic-handling.md#references).
 1. Onder de **koppen** kopbal selecteren **de Kopieën van de Taal.**
 1. Selecteer uw specifiek taalexemplaar en dan kunt u of **&#x200B;**&#x200B;vergelijken of **vergelijken met Vorige** indien van toepassing.
 
-   ![ vergelijk taalexemplaren ](../assets/language-copy-compare.png)
+   ![&#x200B; vergelijk taalexemplaren &#x200B;](../assets/language-copy-compare.png)
 
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
-   * Voor volledige informatie over het gebruiken van deze eigenschap zie [ Afschuiving van de Pagina ](/help/sites-cloud/authoring/sites-console/page-diff.md).
+   * Voor volledige informatie over het gebruiken van deze eigenschap zie [&#x200B; Afschuiving van de Pagina &#x200B;](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Source-pagina&#39;s verplaatsen of hernoemen {#move-source}
 
-Als een reeds vertaalde bronpagina [ moet worden anders genoemd of worden bewogen ](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), leidt het vertalen van de pagina opnieuw na de beweging tot een taalexemplaar dat op de nieuwe paginanaam/de plaats wordt gebaseerd. De oude taalkopie op basis van de vorige naam/locatie is er nog. Om dit te voorkomen, kunt u de functionaliteit voor het kopiëren van de updatetaal na de verplaatsing gebruiken:
+Als een reeds vertaalde bronpagina [&#x200B; moet worden anders genoemd of worden bewogen &#x200B;](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), leidt het vertalen van de pagina opnieuw na de beweging tot een taalexemplaar dat op de nieuwe paginanaam/de plaats wordt gebaseerd. De oude taalkopie op basis van de vorige naam/locatie is er nog. Om dit te voorkomen, kunt u de functionaliteit voor het kopiëren van de updatetaal na de verplaatsing gebruiken:
 
 1. Verplaats een pagina met een taalkopie.
 1. Selecteer de hoofdmap van de taalkopie.
@@ -480,13 +480,13 @@ Als een reeds vertaalde bronpagina [ moet worden anders genoemd of worden bewoge
 1. Selecteer de doeltalen die u wilt bijwerken.
 1. Selecteer **de taalexemplaren van de Update**.
 
-   ![ het bijwerken-taal-exemplaren ](../assets/translation-move-to.png)
+   ![&#x200B; het bijwerken-taal-exemplaren &#x200B;](../assets/translation-move-to.png)
 
-1. Klik **Update**. A [ Lancering ](/help/sites-cloud/authoring/launches/promoting.md) zal worden gecreeerd.
+1. Klik **Update**. A [&#x200B; Lancering &#x200B;](/help/sites-cloud/authoring/launches/promoting.md) zal worden gecreeerd.
 1. Navigeer naar de vereiste hoofdtaal en selecteer deze.
 1. Gebruikend het **paneel van Verwijzingen**, uitgezochte **Lanceringen**.
 
-   ![ bevorderen-lancering-vertaling ](../assets/promote-launch-translation.png)
+   ![&#x200B; bevorderen-lancering-vertaling &#x200B;](../assets/promote-launch-translation.png)
 
 1. Klik op de Lancering die werd gecreeerd en klik **bevorderen lancering**.
 

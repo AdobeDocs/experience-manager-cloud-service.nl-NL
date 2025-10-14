@@ -45,7 +45,7 @@ Maak en configureer de Dropbox-ontwikkelaarstoepassing voordat u elementen van u
 
 Voer de volgende stappen uit:
 
-1. Teken binnen aan uw [ rekening van Dropbox ](https://www.dropbox.com/developers) en klik **[!UICONTROL Create apps]**. <br> als u een rekening van de Onderneming Dropbox gebruikt, moet u toegang tot de rol van Admin van de Inhoud hebben.
+1. Teken binnen aan uw [&#x200B; rekening van Dropbox &#x200B;](https://www.dropbox.com/developers) en klik **[!UICONTROL Create apps]**. <br> als u een rekening van de Onderneming Dropbox gebruikt, moet u toegang tot de rol van Admin van de Inhoud hebben.
 
 1. Selecteer in de sectie **[!UICONTROL Choose an API]** het enige beschikbare keuzerondje.
 
@@ -79,7 +79,7 @@ Voordat u middelen van uw OneDrive-account naar AEM Assets importeert, moet u ee
 
 ### Een toepassing maken
 
-1. Teken binnen aan uw [ rekening OneDrive ](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) en klik **[!UICONTROL New registration]**.
+1. Teken binnen aan uw [&#x200B; rekening OneDrive &#x200B;](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) en klik **[!UICONTROL New registration]**.
 
 1. Geef een naam voor de toepassing op en selecteer **[!UICONTROL Accounts in this organizational directory only (Adobe only - Single tenant)]** in **[!UICONTROL Supported account types]** .
 
@@ -116,7 +116,7 @@ Voer de volgende stappen uit om een configuratie voor bulkimport te maken in de 
 1. Klik op **[!UICONTROL Bulk Import]** in het linkervenster en klik op **[!UICONTROL Create Import]** .
 1. Selecteer de gegevensbron. De beschikbare opties zijn **[!UICONTROL Azure]** , **[!UICONTROL AWS]** , **[!UICONTROL Google Cloud]** , **[!UICONTROL Dropbox]** en **[!UICONTROL OneDrive]** .
 1. Geef een naam op voor de configuratie voor bulkimport in het veld **[!UICONTROL Name]** .
-1. Specificeer de gegevensbron specifieke geloofsbrieven, zoals die in [ Vereisten ](#prerequisites) worden vermeld.
+1. Specificeer de gegevensbron specifieke geloofsbrieven, zoals die in [&#x200B; Vereisten &#x200B;](#prerequisites) worden vermeld.
 1. Geef een naam op van de hoofdmap die elementen bevat in de gegevensbron in het veld **[!UICONTROL Source Folder]** .
 
    >[!NOTE]
@@ -134,7 +134,7 @@ Voer de volgende stappen uit om een configuratie voor bulkimport te maken in de 
 
 1. (Optioneel) Selecteer de optie **[!UICONTROL Delete source file after import]** om de oorspronkelijke bestanden uit de opslagplaats voor brongegevens te verwijderen nadat de bestanden in Experience Manager Assets zijn geïmporteerd.
 1. Selecteer de **[!UICONTROL Import Mode]** . Selecteer **[!UICONTROL Skip]**, **[!UICONTROL Replace]** of **[!UICONTROL Create Version]** . De modus Overslaan is de standaardinstelling en in deze modus slaat de functie Instantor over om een element te importeren als dit al bestaat.
-   ![ de brondetails van de Invoer ](/help/assets/assets/bulk-import-source-details.png)
+   ![&#x200B; de brondetails van de Invoer &#x200B;](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Optioneel) Geef het metagegevensbestand op dat u wilt importeren, in CSV-indeling, in het veld **[!UICONTROL Metadata File]** . Het bronbestand voor metagegevens moet zich in de bronmap bevinden. Klik op **[!UICONTROL Next]** om naar **[!UICONTROL Location & Filters]** te navigeren.
 
@@ -149,7 +149,7 @@ Voer de volgende stappen uit om een configuratie voor bulkimport te maken in de 
 
 1. (Optioneel) Selecteer de MIME-typen die u wilt uitsluiten in het invoerproces met behulp van het veld **[!UICONTROL Exclude MIME Type]** . U kunt meerdere MIME-typen selecteren in dit veld. Als u geen waarde definieert, worden alle MIME-typen opgenomen in het innameproces.
 
-   ![ Bulk de invoerfilters ](assets/bulk-import-location.png)
+   ![&#x200B; Bulk de invoerfilters &#x200B;](assets/bulk-import-location.png)
 
 1. Klik op **[!UICONTROL Next]**. Selecteer een van de volgende opties naar wens:
 
@@ -157,7 +157,7 @@ Voer de volgende stappen uit om een configuratie voor bulkimport te maken in de 
    * **[!UICONTROL Save & run import]** om de configuratie op te slaan en de bulkimport uit te voeren.
    * **[!UICONTROL Save & schedule import]** om de configuratie op te slaan en de bulkimport voor een later tijdstip te plannen. U kunt de frequentie van het bulkimporteren kiezen en de datum en tijd voor het importeren instellen. De bulkimport wordt uitgevoerd op de ingestelde datum en tijd in de gekozen frequentie.
 
-   ![ Uitvoeren bulkinvoer ](assets/save-run.png)
+   ![&#x200B; Uitvoeren bulkinvoer &#x200B;](assets/save-run.png)
 
 1. Klik op **[!UICONTROL Save]** om de geselecteerde optie uit te voeren.
 
@@ -167,64 +167,64 @@ Wanneer u elementen of mappen bulksgewijs importeert, importeert [!DNL Experienc
 
 Tijdens het bulkimporteren zoekt [!DNL Experience Manager] naar de bestaande mappen om te voorkomen dat de elementen en mappen opnieuw worden geïmporteerd en controleert het tevens de ontsmettingsregels die zijn toegepast in de bovenliggende map waar het importeren plaatsvindt. Als de ontsmettingsregels worden toegepast in de bovenliggende map, worden dezelfde regels toegepast op de importbron. Voor nieuwe importbewerkingen worden de volgende ontsmettingsregels toegepast om de bestandsnamen van elementen en mappen te beheren.
 
-Voor meer informatie over verboden namen, behandelend activanamen, en behandelend omslagnamen tijdens bulkinvoer, zie [ Behandelend filenames tijdens bulkinvoer in mening Admin ](add-assets.md##filename-handling-bulkimport).
+Voor meer informatie over verboden namen, behandelend activanamen, en behandelend omslagnamen tijdens bulkinvoer, zie [&#x200B; Behandelend filenames tijdens bulkinvoer in mening Admin &#x200B;](add-assets.md##filename-handling-bulkimport).
 
 ## Bestaande configuraties voor bulkimport weergeven {#view-import-configuration}
 
 Als u de bestaande bulkimport wilt weergeven, selecteert u de optie **[!UICONTROL Bulk Imports]** in het linkerdeelvenster. De pagina voor bulkimport wordt weergegeven met de lijst **[!UICONTROL Executed Imports]** . <br>
 U kunt de **[!UICONTROL Saved Imports]** en **[!UICONTROL Scheduled Imports]** ook weergeven via de vervolgkeuzelijst.
 
-![ sparen bulkinvoerconfiguratie ](assets/bulk-import-options.png)
+![&#x200B; sparen bulkinvoerconfiguratie &#x200B;](assets/bulk-import-options.png)
 
 ## Configuratie voor bulkimport bewerken {#edit-import-configuration}
 
-Om de configuratiedetails uit te geven, klik ![ Meer pictogram ](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoorden en klik **[!UICONTROL Edit]**. U kunt de titel van de configuratie en de gegevensbron van het voer niet uitgeven terwijl het uitvoeren van geeft verrichting uit. U kunt de configuratie bewerken met de tabbladen Uitgevoerde, Geplande of Opgeslagen importbestanden.
+Om de configuratiedetails uit te geven, klik ![&#x200B; Meer pictogram &#x200B;](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoorden en klik **[!UICONTROL Edit]**. U kunt de titel van de configuratie en de gegevensbron van het voer niet uitgeven terwijl het uitvoeren van geeft verrichting uit. U kunt de configuratie bewerken met de tabbladen Uitgevoerde, Geplande of Opgeslagen importbestanden.
 
-![ geef bulkinvoerconfiguratie ](assets/edit-bulk-import.png) uit
+![&#x200B; geef bulkinvoerconfiguratie &#x200B;](assets/edit-bulk-import.png) uit
 
 ## Eenmalige of herhaalde invoer plannen {#schedule-imports}
 
 Voer de volgende stappen uit om een eenmalige of terugkerende bulkimport te plannen:
 
-1. Klik ![ Meer pictogram ](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beschikbaar in **[!UICONTROL Executed Imports]** of **[!UICONTROL Saved Imports]** tabel beantwoordt en **[!UICONTROL Schedule]** klikt. U kunt een bestaande geplande importbewerking ook opnieuw plannen door naar de tab **[!UICONTROL Scheduled Imports]** te navigeren en op **[!UICONTROL Schedule]** te klikken.
+1. Klik ![&#x200B; Meer pictogram &#x200B;](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beschikbaar in **[!UICONTROL Executed Imports]** of **[!UICONTROL Saved Imports]** tabel beantwoordt en **[!UICONTROL Schedule]** klikt. U kunt een bestaande geplande importbewerking ook opnieuw plannen door naar de tab **[!UICONTROL Scheduled Imports]** te navigeren en op **[!UICONTROL Schedule]** te klikken.
 
 1. Stel een eenmalige opname in of voer een uur-, dag- of wekelijks schema in. Klik op **[!UICONTROL Submit]**.
 
-   ![ de bulkinvoerconfiguratie van het Programma ](assets/bulk-import-schedule.png)
+   ![&#x200B; de bulkinvoerconfiguratie van het Programma &#x200B;](assets/bulk-import-schedule.png)
 
 ## Een health check voor importeren uitvoeren {#import-health-check}
 
-Om de verbinding aan de gegevensbron te bevestigen, klik ![ Meer pictogram ](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoorden, en klik dan **[!UICONTROL Check]**. Als de verbinding tot stand is gebracht, geeft Experience Manager Assets het volgende bericht weer:
+Om de verbinding aan de gegevensbron te bevestigen, klik ![&#x200B; Meer pictogram &#x200B;](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoorden, en klik dan **[!UICONTROL Check]**. Als de verbinding tot stand is gebracht, geeft Experience Manager Assets het volgende bericht weer:
 
-![ Bulk de controle van de invoergezondheid ](assets/bulk-import-health-check.png)
+![&#x200B; Bulk de controle van de invoergezondheid &#x200B;](assets/bulk-import-health-check.png)
 
 ## Een droge run uitvoeren voordat het importeren wordt uitgevoerd {#dry-run-bulk-import}
 
-Klik ![ Meer pictogram ](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoordt en **[!UICONTROL Dry Run]** klikt om een testlooppas voor de BulkTaak van de Invoer aan te halen. Experience Manager Assets geeft de volgende gegevens weer over de Bulk Import-taak:
+Klik ![&#x200B; Meer pictogram &#x200B;](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoordt en **[!UICONTROL Dry Run]** klikt om een testlooppas voor de BulkTaak van de Invoer aan te halen. Experience Manager Assets geeft de volgende gegevens weer over de Bulk Import-taak:
 
-![ Bulk de controle van de invoergezondheid ](assets/bulk-import-dry-run.png)
+![&#x200B; Bulk de controle van de invoergezondheid &#x200B;](assets/bulk-import-dry-run.png)
 
 ## Een bulkimport uitvoeren {#run-bulk-import}
 
-Als u de invoer terwijl het creëren van de configuratie hebt bewaard, kunt u aan het Bewaarde lusje van de Invoer navigeren, ![ Meer pictogram ](assets/do-not-localize/more-icon.svg) klikken dat aan de configuratie beantwoordt en **[!UICONTROL Run]** klikt.
+Als u de invoer terwijl het creëren van de configuratie hebt bewaard, kunt u aan het Bewaarde lusje van de Invoer navigeren, ![&#x200B; Meer pictogram &#x200B;](assets/do-not-localize/more-icon.svg) klikken dat aan de configuratie beantwoordt en **[!UICONTROL Run]** klikt.
 
-Op dezelfde manier als u reeds uitgevoerde invoer moet uitvoeren, navigeer aan het Uitvoerde lusje van Invoer, klik ![ Meer pictogram ](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoorden en klik **[!UICONTROL Run]**.
+Op dezelfde manier als u reeds uitgevoerde invoer moet uitvoeren, navigeer aan het Uitvoerde lusje van Invoer, klik ![&#x200B; Meer pictogram &#x200B;](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoorden en klik **[!UICONTROL Run]**.
 
 ## Doorlopende import stoppen of plannen {#schedule-stop-ongoing-report}
 
 U kunt een actieve bulkimport plannen of stoppen met behulp van het statusdialoogvenster voor bulkimport dat tijdens het importeren wordt weergegeven op de introductiepagina Bulk.
 
-![ het Lopende invoeren ](assets/bulk-import-progress.png)
+![&#x200B; het Lopende invoeren &#x200B;](assets/bulk-import-progress.png)
 
 U kunt ook de elementen weergeven die in de doelmap zijn geïmporteerd door op **[!UICONTROL View Assets]** te klikken.
 
 ## Een configuratie voor bulkimport verwijderen {#delete-bulk-import-configuration}
 
-Klik ![ Meer pictogram ](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoordt die in **[!UICONTROL Executed Imports]**, **[!UICONTROL Scheduled Imports]**, of **[!UICONTROL Saved Imports]** lusjes bestaat en klik **[!UICONTROL Delete]** om de Bulk configuratie van de Invoer te schrappen.
+Klik ![&#x200B; Meer pictogram &#x200B;](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoordt die in **[!UICONTROL Executed Imports]**, **[!UICONTROL Scheduled Imports]**, of **[!UICONTROL Saved Imports]** lusjes bestaat en klik **[!UICONTROL Delete]** om de Bulk configuratie van de Invoer te schrappen.
 
 ## Navigeren naar elementen nadat bulkimport is uitgevoerd {#view-assets-after-bulk-import}
 
-Om de het doelplaats van Assets te bekijken waar de activa na het in werking stellen van de BulkTaak van de Invoer worden ingevoerd, klik ![ Meer pictogram ](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoorden, en klik dan **[!UICONTROL View Assets]**.
+Om de het doelplaats van Assets te bekijken waar de activa na het in werking stellen van de BulkTaak van de Invoer worden ingevoerd, klik ![&#x200B; Meer pictogram &#x200B;](assets/do-not-localize/more-icon.svg) die aan de configuratienaam beantwoorden, en klik dan **[!UICONTROL View Assets]**.
 
 ## Video: Bulkimportelementen met gebruik van Assets View
 

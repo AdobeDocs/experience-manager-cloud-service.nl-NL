@@ -49,7 +49,7 @@ Elke fase bouwt op vorige voort om veilige, functionele plaatsing te verzekeren.
 1. **heb toegang tot uw vorm**: Open uw AanpassingsVorm in de Universele Redacteur
 2. **Begin het publiceren**: Klik **publiceren** pictogram in de toolbar
 
-   ![ klik publiceren ](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
+   ![&#x200B; klik publiceren &#x200B;](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ Elke fase bouwt op vorige voort om veilige, functionele plaatsing te verzekeren.
 
 1. **Overzicht het publiceren activa**: Het systeem toont alle activa die, met inbegrip van uw vorm worden gepubliceerd
 
-   ![ op Klik publiceren ](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
+   ![&#x200B; op Klik publiceren &#x200B;](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **Bevestig het publiceren**: Klik **publiceren** te werk te gaan
 3. **verifieer succes**: Zoek het bevestigingsbericht
 
-   ![ publiceer Succes ](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
+   ![&#x200B; publiceer Succes &#x200B;](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ Elke fase bouwt op vorige voort om veilige, functionele plaatsing te verzekeren.
 
 **de status van de Controle**: Klik **publiceren** opnieuw pictogram om huidige status te bekijken
 
-![ publiceer Status ](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
+![&#x200B; publiceer Status &#x200B;](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **Controlepunt van de Bevestiging:**
 
@@ -91,7 +91,7 @@ Elke fase bouwt op vorige voort om veilige, functionele plaatsing te verzekeren.
 2. Klik op het menu met drie punten (⋯) in de rechterbovenhoek
 3. Selecteer **Unpublish**
 
-![ unpublish vorm ](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
+![&#x200B; unpublish vorm &#x200B;](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 
@@ -169,8 +169,8 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentatie van de Verwijzing:**
 
-- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [ Documentatie van de Filter van de Verwijzer ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+- [&#x200B; de Gids van de Configuratie van CORS &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [&#x200B; Documentatie van de Filter van de Verwijzer &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 +++
 
@@ -221,7 +221,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentatie van de Verwijzing:**
 
-- [ vorm de Filter van de Referateur via Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [&#x200B; vorm de Filter van de Referateur via Cloud Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
 +++
 

@@ -30,7 +30,7 @@ Volg de sectie hieronder om de belangrijke overwegingen voor het runnen van de A
 * BPA wordt ondersteund op AEM-instanties met versie 6.1 en hoger.
 
   >[!NOTE]
-  >Zie [ Installerend op AEM 6.1 ](#installing-on-aem61) voor speciale vereisten voor het installeren van BPA op AEM 6.1.
+  >Zie [&#x200B; Installerend op AEM 6.1 &#x200B;](#installing-on-aem61) voor speciale vereisten voor het installeren van BPA op AEM 6.1.
 
 * BPA kan op om het even welk milieu in werking stellen, maar het heeft de voorkeur om het op het milieu van het a *Stadium* te hebben.
 
@@ -48,10 +48,10 @@ Volg de sectie hieronder om de belangrijke overwegingen voor het runnen van de A
 >title="Download de Analyzer van Beste praktijken"
 >abstract="De Analysator van Beste praktijken kan als zip dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager)."
 
-De Analysator van Beste praktijken kan als zip dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op uw bronAdobe Experience Manager (AEM) instantie installeren.
+De Analysator van Beste praktijken kan als zip dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via [&#x200B; Manager van het Pakket &#x200B;](/help/implementing/developing/tools/package-manager.md) op uw bronAdobe Experience Manager (AEM) instantie installeren.
 
 >[!NOTE]
->Download de Analysator van Beste praktijken van het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Download de Analysator van Beste praktijken van het [&#x200B; portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Connectiviteit Source-omgeving {#source-environment-connectivity}
 
@@ -73,11 +73,11 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
 1. Selecteer Adobe Experience Manager en navigeer aan hulpmiddelen > **Verrichtingen** > **Analysator van Beste praktijken**.
 
-   ![ Analyzer van Beste praktijken ](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![&#x200B; Analyzer van Beste praktijken &#x200B;](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Klik **produceren Rapport** om de Analysator van Beste praktijken uit te voeren.
 
-   ![ produceer Rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![&#x200B; produceer Rapport &#x200B;](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 >[!NOTE]
 > Vanaf BPA versie 2.1.54 is een nieuwe functie geïntroduceerd om de Lighthouse Score te verkrijgen.
@@ -95,9 +95,9 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
       ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
-1. Verstrek BPA upload sleutel om het geproduceerde BPA- rapport aan [ Cloud Acceleration Manager (CAM) ](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md) automatisch te uploaden. Om uploadt sleutel te krijgen, navigeer aan de [ Analyse van Beste praktijken in CAM ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Verstrek BPA upload sleutel om het geproduceerde BPA- rapport aan [&#x200B; Cloud Acceleration Manager (CAM) &#x200B;](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md) automatisch te uploaden. Om uploadt sleutel te krijgen, navigeer aan de [&#x200B; Analyse van Beste praktijken in CAM &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![ plaats BPA uploadt Sleutel ](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![&#x200B; plaats BPA uploadt Sleutel &#x200B;](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >U hebt de optie om automatisch over te slaan uploadt aan CAM door **te selecteren overslaat rapport auto uploadt aan CAM**. Als u verkiest om over te slaan, zult u het BPA- rapport als komma-gescheiden waardedossier manueel moeten downloaden en dan het dossier in CAM uploaden. Het wordt aanbevolen de optie Upload key te gebruiken omdat deze de bewerking stroomlijnt.
@@ -107,47 +107,47 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
 1. **produceer** knoop actief wordt wanneer een geldige sleutel wordt verstrekt. Klik op **produceren** om rapportgeneratie in werking te stellen.
 
-   ![ produceer Rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+   ![&#x200B; produceer Rapport &#x200B;](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
 1. Terwijl BPA het rapport produceert, kunt u de vooruitgang zien die door het hulpmiddel op het scherm wordt gemaakt. De voortgang wordt weergegeven in procenten dat is voltooid. Ook wordt het aantal geanalyseerde items weergegeven en wordt het aantal gevonden bevindingen weergegeven.
 
-   ![ Genererend Rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![&#x200B; Genererend Rapport &#x200B;](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
 >De tijdstempel van de BPA-upload met sleutelvervaldatum wordt in de rechterbovenhoek weergegeven. U zou BPA moeten vernieuwen uploadt sleutel wanneer het bijna zijn vervaldatum is. Om de sleutel te vernieuwen, kunt u op **klikken vernieuwt** om aan CAM te navigeren om de sleutel te vernieuwen.
 
 1. Nadat het BPA-rapport is gegenereerd, worden een samenvatting en het aantal bevindingen weergegeven in een tabelvorm die is ingedeeld op basis van het type bevinding en het belangrijkste niveau. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
 
-   ![ Overzicht van het Rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![&#x200B; Overzicht van het Rapport &#x200B;](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-1. U hebt de optie om het rapport in een komma-gescheiden waarden (CSV) formaat te downloaden door op **Uitvoer naar CSV** te klikken. U hebt ook de optie om het rapport in CAM te bekijken door op **te klikken gaat naar CAM**. Dit zal u aan de [ pagina van de Analyse van Beste praktijken ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) in CAM nemen.
+1. U hebt de optie om het rapport in een komma-gescheiden waarden (CSV) formaat te downloaden door op **Uitvoer naar CSV** te klikken. U hebt ook de optie om het rapport in CAM te bekijken door op **te klikken gaat naar CAM**. Dit zal u aan de [&#x200B; pagina van de Analyse van Beste praktijken &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) in CAM nemen.
 
 U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door **te klikken verfrist Rapport**.
 
-![ verfrist rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+![&#x200B; verfrist rapport &#x200B;](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. Als het geheime voorgeheugen verloopt, hebt u de optie om het laatste geproduceerde rapport in CAM te bekijken door op **te klikken Mening het laatste geproduceerde rapport in CAM** of een nieuwe rapportgeneratie in werking te stellen door op **te klikken produceert Nieuw Rapport**.
 
-![ Geen rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
+![&#x200B; Geen rapport &#x200B;](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
 #### Het gebruiken van Filters in het Rapport van de Analysator van Beste praktijken {#bpa-filters}
 
-Om bevindingen met betrekking tot [ ACS Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/) uit te filtreren, volg de stappen hieronder:
+Om bevindingen met betrekking tot [&#x200B; ACS Commons &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/) uit te filtreren, volg de stappen hieronder:
 
 1. Klik op het linkerspoorpictogram aan de linkerkant van de pagina. Dit zal de **filter van de Bevelen ACS** tonen. Klik de **filter van Bevelen ACS** om interactieve checkbox zoals aangetoond in het hieronder beeld te tonen.
 
-   ![ ACS Commons Filter ](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![&#x200B; ACS Commons Filter &#x200B;](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >Het linkerspoorpictogram zal verschijnen slechts als BPA het gebruik van ACSCommons ontdekt.
 
 1. Schakel het selectievakje uit om alle bevindingen met betrekking tot ACS-opdrachten uit te filteren. U zou a **Gefilterde het Vinden Aantal** op het rapport zoals aangetoond in het beeld hieronder moeten zien. Het filter wordt ook toegepast op het rapport wanneer het in een komma-gescheiden-waarde (CSV) formaat wordt uitgevoerd.
 
-   ![ Gefilterde het Vinden Telling ](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![&#x200B; Gefilterde het Vinden Telling &#x200B;](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [ documentatie ](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om verenigbaarheid met AEM as a Cloud Service te bepalen.
+   >De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [&#x200B; documentatie &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om verenigbaarheid met AEM as a Cloud Service te bepalen.
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -266,7 +266,7 @@ De volgende responswaarden zijn mogelijk:
 
 * `200 OK`: geeft aan dat de reactie bevindingen van de patroondetector bevat die zijn gegenereerd binnen de frissheidsperiode van de cache.
 * `202 Accepted`: wordt gebruikt om aan te geven dat de cache leeg is. Als `respond-async=true` en `may-refresh-cache=true` dit antwoord aangeeft dat een vernieuwingstaak wordt uitgevoerd. Als `may-refresh-cache=false` deze reactie alleen maar aangeeft dat de cache leeg is.
-* `400 Bad Request`: Geeft aan dat er een fout is opgetreden met de aanvraag. Een bericht in het formaat van de Details van het Probleem (zie [ RFC 7807 ](https://tools.ietf.org/html/rfc7807)) verstrekt meer details.
+* `400 Bad Request`: Geeft aan dat er een fout is opgetreden met de aanvraag. Een bericht in het formaat van de Details van het Probleem (zie [&#x200B; RFC 7807 &#x200B;](https://tools.ietf.org/html/rfc7807)) verstrekt meer details.
 * `401 Unauthorized`: geeft aan dat de aanvraag niet is geautoriseerd.
 * `500 Internal Server Error`: Geeft aan dat er een interne serverfout is opgetreden. Een bericht in de indeling voor probleemdetails biedt meer informatie.
 * `503 Service Unavailable`: Geeft aan dat de server bezig is met een andere respons en deze aanvraag niet tijdig kan uitvoeren. Dit gebeurt alleen bij synchrone aanvragen. Een bericht in de indeling voor probleemdetails biedt meer informatie.

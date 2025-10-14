@@ -18,28 +18,28 @@ Leer hoe de controles GitHub PRs voor uw privé bewaarplaatsen annoteert om u te
 
 ## Overzicht {#overview}
 
-Als u [ privé bewaarplaatsen ](private-repositories.md) voor uw programma van Cloud Manager gebruikt, worden de controles in GitHub automatisch in werking gesteld voor elk trekkingsverzoek. Deze worden voorzien van nuttige informatie om u te helpen om het even welke kwesties met uw code zo snel mogelijk begrijpen.
+Als u [&#x200B; privé bewaarplaatsen &#x200B;](private-repositories.md) voor uw programma van Cloud Manager gebruikt, worden de controles in GitHub automatisch in werking gesteld voor elk trekkingsverzoek. Deze worden voorzien van nuttige informatie om u te helpen om het even welke kwesties met uw code zo snel mogelijk begrijpen.
 
-![ Voorbeeld van GitHub controleannotaties ](assets/github-check-annotations.png)
+![&#x200B; Voorbeeld van GitHub controleannotaties &#x200B;](assets/github-check-annotations.png)
 
-{de kwaliteit van de 0} Code [&#128279;](/help/implementing/cloud-manager/code-quality-testing.md) kwesties die door [ worden ontdekt SonarQube ](/help/implementing/cloud-manager/custom-code-quality-rules.md) zijn duidelijk vermeld.
+{de kwaliteit van de 0} Code [&#128279;](/help/implementing/cloud-manager/code-quality-testing.md) kwesties die door [&#x200B; worden ontdekt SonarQube &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md) zijn duidelijk vermeld.
 
-![ Voorbeeld van de annotatie van de codekwestie ](assets/github-check-annotations-example.png)
+![&#x200B; Voorbeeld van de annotatie van de codekwestie &#x200B;](assets/github-check-annotations-example.png)
 
 De exacte coderegel met de uitgave is opgegeven en u kunt erop klikken om de relevante code weer te geven. Deze annotaties worden gegeven voor alle code kwesties, niet alleen die veranderd in het trekkingsverzoek.
 
-![ Voorbeeld van de annotatie van de codekwestie ](assets/github-check-annotations-example-code.png)
+![&#x200B; Voorbeeld van de annotatie van de codekwestie &#x200B;](assets/github-check-annotations-example-code.png)
 
 Alle geannoteerde lijnen worden samengevoegd op het **Gewijzigde Dossiers** lusje op het trekkingsverzoek GitHub. Annotaties voor bestanden die niet zijn gewijzigd in de pull-aanvraag, worden in hun eigen sectie weergegeven.
 
-![ Voorbeeld van aantekeningen op veranderde dossiers tabel ](assets/github-check-annotations-files-changed.png)
+![&#x200B; Voorbeeld van aantekeningen op veranderde dossiers tabel &#x200B;](assets/github-check-annotations-files-changed.png)
 
 ## Codekwaliteitspijplijnen {#code-quality-pipelines}
 
-De [ resultaten van de codekwaliteit ](/help/implementing/cloud-manager/code-quality-testing.md) zijn ook zichtbaar in de pijpleiding die automatisch door Cloud Manager bij de bodem van de **Controles** tabel wordt teweeggebracht. Het is ook toegankelijk van de **Details** van de controle van het trekkingsverzoek.
+De [&#x200B; resultaten van de codekwaliteit &#x200B;](/help/implementing/cloud-manager/code-quality-testing.md) zijn ook zichtbaar in de pijpleiding die automatisch door Cloud Manager bij de bodem van de **Controles** tabel wordt teweeggebracht. Het is ook toegankelijk van de **Details** van de controle van het trekkingsverzoek.
 
-![ Voorbeeld van annotaties ](assets/github-check-annotations-code-quality.png)
+![&#x200B; Voorbeeld van annotaties &#x200B;](assets/github-check-annotations-code-quality.png)
 
-![ Voorbeeld van annotaties ](assets/github-check-annotations-code-quality-2.png)
+![&#x200B; Voorbeeld van annotaties &#x200B;](assets/github-check-annotations-code-quality-2.png)
 
-U kunt de problemen ook visualiseren in de vorm van een CSV. Dit kan door [ worden teruggewonnen het bekijken van de details van de pijpleidingsuitvoering in Cloud Manager ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details).
+U kunt de problemen ook visualiseren in de vorm van een CSV. Dit kan door [&#x200B; worden teruggewonnen het bekijken van de details van de pijpleidingsuitvoering in Cloud Manager &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details).

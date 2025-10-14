@@ -53,7 +53,7 @@ U kunt de punten van Inbox aan onderzoek naar een aantalwaaier binnen een kolom 
 
 Om een Predicate van de Waaier te vormen:
 
-1. Open de [ vorm voor configuratie ](#creating-opening-customized-configuration).
+1. Open de [&#x200B; vorm voor configuratie &#x200B;](#creating-opening-customized-configuration).
 1. Selecteer de tab **[!UICONTROL Select Predicate]** en sleep **[!UICONTROL Range Predicate]** naar het formulier.
 1. Selecteer op het tabblad **[!UICONTROL Settings]** de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, in het veld **[!UICONTROL Column Name]** .
 1. Geef het label voor het filter op in het veld **[!UICONTROL Filter Label]** . Schakel het selectievakje **[!UICONTROL Enable Decimal Values]** in als u decimale waarden voor getallen wilt accepteren terwijl u het bereik definieert.
@@ -71,7 +71,7 @@ Filter Inbox-items om te zoeken naar een tekstreeks in een kolom Inbox met behul
 
 Een tekstvoorspelling configureren:
 
-1. Open de [ vorm voor configuratie ](#creating-opening-customized-configuration).
+1. Open de [&#x200B; vorm voor configuratie &#x200B;](#creating-opening-customized-configuration).
 1. Selecteer de tab **[!UICONTROL Select Predicate]** en sleep **[!UICONTROL Text Predicate]** naar het formulier.
 1. Selecteer op het tabblad **[!UICONTROL Settings]** de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, in het veld **[!UICONTROL Column Name]** .
 1. Geef de tekst op die in het tekstvak Zoeken wordt weergegeven als plaatsaanduidingstekst in het veld **[!UICONTROL Search Text Box Placeholder]** .
@@ -85,7 +85,7 @@ Met de Datumbereikvoorspelling kunt u items in het Postvak IN filteren om te zoe
 
 Een datumbereikvoorspelling configureren:
 
-1. Open de [ vorm voor configuratie ](#creating-opening-customized-configuration).
+1. Open de [&#x200B; vorm voor configuratie &#x200B;](#creating-opening-customized-configuration).
 1. Selecteer de tab **[!UICONTROL Select Predicate]** en sleep **[!UICONTROL Date Range Predicate]** naar het formulier.
 1. Selecteer op het tabblad **[!UICONTROL Settings]** de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, in het veld **[!UICONTROL Column Name]** .
 1. Geef het label voor het datumbereikfilter op in het veld **[!UICONTROL Filter Label]** .
@@ -100,7 +100,7 @@ Met het voorvoegsel Aangepaste kolomopties kunt u de items in het Postvak IN fil
 
 Een voorspelling voor aangepaste kolomopties configureren:
 
-1. Open de [ vorm voor configuratie ](#creating-opening-customized-configuration).
+1. Open de [&#x200B; vorm voor configuratie &#x200B;](#creating-opening-customized-configuration).
 1. Selecteer de tab **[!UICONTROL Select Predicate]** en sleep **[!UICONTROL Custom Column Options Predicate]** naar het formulier.
 1. Selecteer op het tabblad **[!UICONTROL Settings]** de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, in het veld **[!UICONTROL Column Name]** .
 1. Geef het label voor het filter met aangepaste kolomopties op in het veld **[!UICONTROL Filter Label]** .
@@ -151,6 +151,6 @@ In de volgende video ziet u de stappen waarmee u een kolom filtert op basis van 
 
 U kunt zoekfilters weergeven op basis van voorspelling. Selecteer **[!UICONTROL Filter]** op de pagina Inbox. De filters worden weergegeven in het linkervenster. Vervolgens kunt u de zoekcriteria opgeven om de items in het Postvak IN te filteren.
 
-![ pagina van Filters ](assets/apply-filters.png)
+![&#x200B; pagina van Filters &#x200B;](assets/apply-filters.png)
 
-Voor meer informatie bij het beheren van predikeconfiguraties, zie [ Vormend Onderzoek Forms ](search-forms.md).
+Voor meer informatie bij het beheren van predikeconfiguraties, zie [&#x200B; Vormend Onderzoek Forms &#x200B;](search-forms.md).

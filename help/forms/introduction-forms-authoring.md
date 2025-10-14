@@ -18,11 +18,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
@@ -30,7 +30,7 @@ ht-degree: 0%
 Met Adaptieve Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. [!DNL AEM Forms] biedt een intuïtieve gebruikersinterface en kant-en-klare componenten voor het maken van en werken met Adaptieve Forms. U kunt desgewenst een adaptief formulier maken op basis van een formuliermodel of -schema of zonder formuliermodel. Het is belangrijk om zorgvuldig het formuliermodel te kiezen dat niet alleen aan uw vereisten voldoet, maar ook uw bestaande infrastructurele investeringen en middelen uitbreidt. U kunt uit de volgende opties kiezen om een adaptief formulier te maken:
 
 * **Gebruikend een model van vormgegevens (FDM)**
-  [ de integratie van Gegevens ](data-integration.md) laat u entiteiten en de diensten van verschillende gegevensbronnen in aan een Model van de Gegevens van de Vorm (FDM) integreren dat u kunt gebruiken om Aangepaste Forms tot stand te brengen. Kies Formuliergegevensmodel (FDM) als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
+  [&#x200B; de integratie van Gegevens &#x200B;](data-integration.md) laat u entiteiten en de diensten van verschillende gegevensbronnen in aan een Model van de Gegevens van de Vorm (FDM) integreren dat u kunt gebruiken om Aangepaste Forms tot stand te brengen. Kies Formuliergegevensmodel (FDM) als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
 
 * **Gebruikend een Malplaatje van de Vorm XDP**
 Het is een ideaal formuliermodel als u investeert in XFA-gebaseerde of XDP-formulieren. Het biedt een directe manier om uw XFA-formulieren om te zetten in Adaptive Forms. Bestaande XFA-regels blijven behouden in de gekoppelde Adaptive Forms. De resulterende Adaptieve Forms ondersteunt XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
@@ -43,9 +43,9 @@ Voor adaptieve Forms die met deze optie is gemaakt, wordt geen formuliermodel ge
 
   >[!NOTE]
   >
-  > U kunt de eigenschappen van het formuliermodel wijzigen met de sjabloonconstructor Adaptief formulier of Adaptief formulier. Voor meer informatie, zie [ de Model eigenschappen van de Vorm van een AanpassingsVorm ](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) uitgeven.
+  > U kunt de eigenschappen van het formuliermodel wijzigen met de sjabloonconstructor Adaptief formulier of Adaptief formulier. Voor meer informatie, zie [&#x200B; de Model eigenschappen van de Vorm van een AanpassingsVorm &#x200B;](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) uitgeven.
 
-Om een AanpassingsVorm tot stand te brengen, zie [ Creërend een AanpassingsVorm ](creating-adaptive-form.md).
+Om een AanpassingsVorm tot stand te brengen, zie [&#x200B; Creërend een AanpassingsVorm &#x200B;](creating-adaptive-form.md).
 
 ## Gebruikersinterface voor adaptieve formulierontwerp {#adaptive-form-authoring-ui}
 
@@ -75,7 +75,7 @@ Met de zijbalk kunt u
 * Voeg componenten toe aan uw formulier.
 * Eigenschappen van componenten bewerken.
 
-![ Sidebar ](assets/sidebar-comps.png)
+![&#x200B; Sidebar &#x200B;](assets/sidebar-comps.png)
 
 **A.** browser van de Inhoud **B.** browser van Eigenschappen **C.** browser van Assets **D.** Browser van Componenten
 
@@ -99,7 +99,7 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
 
   Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen worden gewijzigd op basis van een component. Eigenschappen van de container van het Adaptief formulier weergeven:
 
-  Selecteer een component, dan uitgezocht ![ gebied-niveau ](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![ eigenschappen ](assets/Smock_Wrench_18_N.svg).
+  Selecteer een component, dan uitgezocht ![&#x200B; gebied-niveau &#x200B;](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![&#x200B; eigenschappen &#x200B;](assets/Smock_Wrench_18_N.svg).
 
 * **browser van Assets**
 
@@ -284,11 +284,11 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
 
 De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van het formulier kunt bekijken, de eigenschappen van het formulier kunt wijzigen en de indeling van het formulier kunt bewerken. U kunt een voorbeeld van het formulier bekijken wanneer u het maakt en de wijzigingen daarop aanbrengen. In de paginabooltoolbar, ziet u:
 
-* **Knevel Zijpaneel** ![ knevel-zij-paneel ](assets/Smock_RailLeft_18_N.svg): Laat u Zijbalk tonen of verbergen.
+* **Knevel Zijpaneel** ![&#x200B; knevel-zij-paneel &#x200B;](assets/Smock_RailLeft_18_N.svg): Laat u Zijbalk tonen of verbergen.
 
-* **de informatie van de Pagina** ![ thema-opties ](assets/Smock_Properties_18_N.svg): Laat u paginaeigenschappen bekijken, publiceren/unpublish een vorm, een vormwerkschema beginnen, en de vorm in klassieke UI openen.
+* **de informatie van de Pagina** ![&#x200B; thema-opties &#x200B;](assets/Smock_Properties_18_N.svg): Laat u paginaeigenschappen bekijken, publiceren/unpublish een vorm, een vormwerkschema beginnen, en de vorm in klassieke UI openen.
 
-* **Emulator** ![ heerser ](assets/Smock_Devices_18_N.svg): Laat u het blik van uw vorm voor verschillende vertoningsgrootte zoals tabletten en telefoons emuleren.
+* **Emulator** ![&#x200B; heerser &#x200B;](assets/Smock_Devices_18_N.svg): Laat u het blik van uw vorm voor verschillende vertoningsgrootte zoals tabletten en telefoons emuleren.
 
 * **geeft** uit: Laat u andere wijzen zoals: **[!UICONTROL Edit]**, **[!UICONTROL Style]**, **[!UICONTROL Developer]**, en **[!UICONTROL Design]** selecteren.
 
@@ -306,7 +306,7 @@ De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van 
 
 ### Component, werkbalk {#component-toolbar}
 
-![ de toolbar van de Component in de aanraking UI ](assets/component-toolbar.png)
+![&#x200B; de toolbar van de Component in de aanraking UI &#x200B;](assets/component-toolbar.png)
 
 Wanneer u een component selecteert, ziet u een werkbalk waarin u de component kunt bewerken. U krijgt opties om, eigenschappen van de componenten te snijden te kleven, te bewegen en te specificeren. U kunt kiezen uit de volgende opties:
 
@@ -347,7 +347,7 @@ J. **anderen**: Verstrekt meer opties om met de geselecteerde component te werke
 
 De pagina Adaptief formulier is het daadwerkelijke formulier. Dit is net als elke andere WCM-pagina die is gemodelleerd als de WCM `cq:Page` -component. In de volgende afbeelding ziet u de inhoudsstructuur van een typisch adaptief formulier.
 
-![ de structuur van de Inhoud van een Adaptieve pagina van WCM van de Vorm ](assets/afstructure.png)
+![&#x200B; de structuur van de Inhoud van een Adaptieve pagina van WCM van de Vorm &#x200B;](assets/afstructure.png)
 
 De inhoudsstructuur bevat doorgaans de volgende primaire componenten:
 
@@ -366,7 +366,7 @@ De inhoudsstructuur bevat doorgaans de volgende primaire componenten:
 
 ## AI Assistant in AEM
 
-Voor klanten die [ voltooide noodzakelijke criteria ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) hebben, is de Medewerker AI in AEM beschikbaar aan gebruikers van hun organisatie. Zie [ Medewerker AI in AEM ](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Voor klanten die [&#x200B; voltooide noodzakelijke criteria &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) hebben, is de Medewerker AI in AEM beschikbaar aan gebruikers van hun organisatie. Zie [&#x200B; Medewerker AI in AEM &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 ## Zie ook {#see-also}
 

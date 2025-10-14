@@ -19,7 +19,7 @@ Leer welke browsers worden ondersteund voor het ontwerpen van inhoud met Adobe E
 
 >[!TIP]
 >
->Dit document is van toepassing op clientplatforms die door AEM as a Cloud Service worden ondersteund. Voor details op het bouwstijlmilieu voor het ontwikkelen van uw project van AEM, te zien gelieve het document [ Milieu bouwen.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+>Dit document is van toepassing op clientplatforms die door AEM as a Cloud Service worden ondersteund. Voor details op het bouwstijlmilieu voor het ontwikkelen van uw project van AEM, te zien gelieve het document [&#x200B; Milieu bouwen.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
 
 ## Ondersteuningsniveaus {#support-levels}
 
@@ -35,11 +35,11 @@ Adobe definieert de volgende ondersteuningsniveaus voor AEM-clientplatforms.
 
 De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen in laptops, desktopcomputers en tablets (zoals Apple iPad of Microsoft Surface). De telefoonvormfactor wordt niet gesteund voor om het even welk auteursgeval.
 
-Het gebruikersinterface van Adobe Experience Manager werkt met de volgende cliëntplatforms afhankelijk van [ auteursmethode.](/help/edge/overview.md#authoring-method)
+Het gebruikersinterface van Adobe Experience Manager werkt met de volgende cliëntplatforms afhankelijk van [&#x200B; auteursmethode.](/help/edge/overview.md#authoring-method)
 
 * [Universele editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Pagina-editor](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [ op document-Gebaseerde creatie ](https://www.aem.live/docs/aem-authoring) gebruikend [ Sidekick ](https://www.aem.live/docs/sidekick)
+* [&#x200B; op document-Gebaseerde creatie &#x200B;](https://www.aem.live/docs/aem-authoring) gebruikend [&#x200B; Sidekick &#x200B;](https://www.aem.live/docs/sidekick)
 
 Alle browsers worden getest met de standaardset plug-ins en invoegtoepassingen.
 
@@ -52,7 +52,7 @@ Alle browsers worden getest met de standaardset plug-ins en invoegtoepassingen.
 | Safari op macOS (evergreen) | A: Ondersteund | A: Ondersteund | Z: Niet ondersteund |
 | Safari op iPadOS (groen) | Z: Niet ondersteund | A: Ondersteund | Z: Niet ondersteund |
 
-1. Uitgebreide Versie van de Steun van Firefox ([ leert meer op mozilla.org ](https://www.mozilla.org/en-US/firefox/enterprise/))
+1. Uitgebreide Versie van de Steun van Firefox ([&#x200B; leert meer op mozilla.org &#x200B;](https://www.mozilla.org/en-US/firefox/enterprise/))
 
 >[!NOTE]
 >
@@ -64,4 +64,4 @@ Alle browsers worden getest met de standaardset plug-ins en invoegtoepassingen.
 
 Browserondersteuning voor websites die door AEM worden weergegeven, is afhankelijk van de implementatie van AEM-paginasjablonen, -blokken, -ontwerpen en -componentuitvoer. Daarom hebben uw ontwikkelaars die uw project implementeren uiteindelijk controle over de compatibiliteit van uw site.
 
-AEM [ projectbouwsteen, ](https://www.aem.live/developer/ue-tutorial#create-github-project) [ Componenten van de Kern, ](/help/implementing/developing/components/overview.md#aem-core-components) en [ WKND steekproefplaats ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) zijn allen compatibel met alle moderne browsers.
+AEM [&#x200B; projectbouwsteen, &#x200B;](https://www.aem.live/developer/ue-tutorial#create-github-project) [&#x200B; Componenten van de Kern, &#x200B;](/help/implementing/developing/components/overview.md#aem-core-components) en [&#x200B; WKND steekproefplaats &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) zijn allen compatibel met alle moderne browsers.

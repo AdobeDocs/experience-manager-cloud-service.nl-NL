@@ -66,7 +66,7 @@ U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samens
 
 1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur. Als de query onjuist is, wordt een fout weergegeven in het rechterdeelvenster.
 
-   ![ vraag van de Lijst ](assets/do-not-localize/list-query-1-3-4-5.png)
+   ![&#x200B; vraag van de Lijst &#x200B;](assets/do-not-localize/list-query-1-3-4-5.png)
 
 U hebt zojuist een lijstquery voor een volledige lijst met alle inhoudsfragmenten gevalideerd. Dit proces zorgt ervoor dat de reactie is wat uw app verwacht, met resultaten die aantonen hoe uw apps en websites de in AEM gemaakte inhoud ophalen.
 
@@ -105,7 +105,7 @@ Als u een query op basis van pad uitvoert, kunt u inhoud voor een bepaald inhoud
 
 1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur. Als de query onjuist is, wordt een fout weergegeven in het rechterdeelvenster.
 
-   ![ byPath vraagresultaten ](assets/do-not-localize/bypath-query-2-3-4.png)
+   ![&#x200B; byPath vraagresultaten &#x200B;](assets/do-not-localize/bypath-query-2-3-4.png)
 
 U hebt zojuist een bytepadquery gevalideerd om een specifiek inhoudsfragment op te halen dat wordt aangeduid door het pad van dat fragment.
 
@@ -117,7 +117,7 @@ Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om u
 
 1. Verwijder alle bestaande inhoud in de query-editor. Typ vervolgens accolade openen `{` en druk op Ctrl+Space of Option+Space voor een lijst met automatisch aangevulde modellen die in het eindpunt zijn gedefinieerd. Selecteer in de opties het model dat u hebt gemaakt en dat eindigt in `List` . Als u de voorbeelden in de vorige modules volgt, zou u `adventureList` in de auto-volledige lijst moeten vinden.
 
-   ![ de douanequery van het Begin ](assets/do-not-localize/custom-query-1.png)
+   ![&#x200B; de douanequery van het Begin &#x200B;](assets/do-not-localize/custom-query-1.png)
 
 1. Definieer de items die de query moet bevatten voor het model Inhoudsfragment dat u hebt geselecteerd. Typ het rechte openingshaakje `{` en druk vervolgens op Ctrl+Spatiebalk of Option+Spatiebalk voor een lijst die automatisch wordt ingevuld. Selecteer `items` in de opties.
 
@@ -127,7 +127,7 @@ Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om u
 
 1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur.
 
-   ![ de douanequery van de Looppas ](assets/do-not-localize/custom-query-2.png)
+   ![&#x200B; de douanequery van de Looppas &#x200B;](assets/do-not-localize/custom-query-2.png)
 
 Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen.
 
@@ -173,7 +173,7 @@ U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing w
 
 1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur. Als de query onjuist is, wordt een fout weergegeven in het rechterdeelvenster.
 
-   ![ creeer eigen vraag ](assets/do-not-localize/own-query.png)
+   ![&#x200B; creeer eigen vraag &#x200B;](assets/do-not-localize/own-query.png)
 
 1. Wanneer tevreden met uw vraag, klik **sparen als** knoop bij de bovenkant van de vraagredacteur om de vraag voort te zetten.
 
@@ -181,7 +181,7 @@ U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing w
 
 1. Selecteer **sparen als**.
 
-   ![ blijft vraag ](assets/do-not-localize/persist-query.png)
+   ![&#x200B; blijft vraag &#x200B;](assets/do-not-localize/persist-query.png)
 
 1. De vraag wordt voortgeduurd zoals bevestigd door een bannerbericht bij de bodem van het scherm. De query wordt nu ook weergegeven in het linkerdeelvenster met doorlopende query&#39;s in het venster.
 

@@ -50,7 +50,7 @@ Een AEM Screens-klant wil weten welke inhoud op welk moment en voor hoe lang (ge
 
 In het volgende architectuurdiagram wordt de Adobe Analytics Integration met AEM Screens uitgelegd:
 
-![ Integratie met Adobe Analytics ](/help/screens-cloud/assets/analytics-architecture.png)
+![&#x200B; Integratie met Adobe Analytics &#x200B;](/help/screens-cloud/assets/analytics-architecture.png)
 
 ## Adobe Analytics inschakelen in AEM Screens Cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
@@ -63,4 +63,4 @@ Dit scenario haalt Analytics API door de vraag van het HART van een analysediens
 Analytische gebeurtenissen worden offline opgeslagen in geïndexeerdeDB en later afgekapt en naar de cloud verzonden.
 
 >[!NOTE]
->Meer over het Opeenvolgen en het Standaard Model van Gegevens voor Gebeurtenissen leren, zie [ Vormend Adobe Analytics voor AEM Screens ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html?lang=nl-NL) voor details.
+>Meer over het Opeenvolgen en het Standaard Model van Gegevens voor Gebeurtenissen leren, zie [&#x200B; Vormend Adobe Analytics voor AEM Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html?lang=nl-NL) voor details.

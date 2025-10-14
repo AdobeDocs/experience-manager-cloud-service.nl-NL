@@ -33,37 +33,37 @@ Met ondersteuning voor miniaturen kunt u het volgende doen:
 
 >[!IMPORTANT]
 >**Eerste vereisten**
->Voordat u leert hoe u miniaturen voor video&#39;s kunt gebruiken, moet u weten hoe u video-uitvoeringen voor kanalen maakt in Screens as a Cloud Service project. Zie [ Creërend VideoUitvoeringen in Screens as a Cloud Service ](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
+>Voordat u leert hoe u miniaturen voor video&#39;s kunt gebruiken, moet u weten hoe u video-uitvoeringen voor kanalen maakt in Screens as a Cloud Service project. Zie [&#x200B; Creërend VideoUitvoeringen in Screens as a Cloud Service &#x200B;](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
 
 Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
 1. Navigeer naar een bestaand Screens-kanaal of maak een kanaal.
 
    >[!NOTE]
-   >Leren hoe te om een kanaal tot stand te brengen en inhoud aan een kanaal toe te voegen, zie [ Creërend en het Leiden een Kanaal in Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=nl-NL).
+   >Leren hoe te om een kanaal tot stand te brengen en inhoud aan een kanaal toe te voegen, zie [&#x200B; Creërend en het Leiden een Kanaal in Screens as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=nl-NL).
 
 1. Selecteer het kanaal. Voor de actiebar, geeft de klik **&#x200B;**&#x200B;uit om de redacteur te openen.
 
 
-   ![ geef knoop op actiebar ](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png) uit.
+   ![&#x200B; geef knoop op actiebar &#x200B;](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png) uit.
 
 1. Voeg of geef een bestaande videocomponent, zoals aangetoond in hieronder figuur toe uit.
 
-   ![ Gemarkeerd beeld van een videoactiva ](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
+   ![&#x200B; Gemarkeerd beeld van een videoactiva &#x200B;](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
 1. Voeg of geef een bestaande videocomponent, zoals aangetoond in hieronder figuur toe uit.
 
 1. Selecteer de video en klik Configure (*moersleutel*) pictogram om de videoeigenschappen te openen.
 
-   ![ Geselecteerde beeld van videoactiva met pijl die aan het Configure pictogram richten, geportretteerd als moersleutel. op de toolbar ](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
+   ![&#x200B; Geselecteerde beeld van videoactiva met pijl die aan het Configure pictogram richten, geportretteerd als moersleutel. op de toolbar &#x200B;](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. Het **Video** dialoogvakje opent waar u de **3&rbrace; dalingsstreek van de Duimnagel &lbrace;kunt bekijken.**
 
-   ![ de dialoogdoos die van de Video beeld van videoactiva en de duimnageldoos toont ](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
+   ![&#x200B; de dialoogdoos die van de Video beeld van videoactiva en de duimnageldoos toont &#x200B;](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
 1. De belemmering en laat vallen een beeld van de activa plukker aan de **1&rbrace; dalingsstreek van de Duimnagel &lbrace;en klikt** Gedaan **.**
 
-   ![ de beeldplukker van Activa die achter de Videodialoogdoos met beeldactiva wordt getoond in de de dalingsdoos van de Duimnagel ](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
+   ![&#x200B; de beeldplukker van Activa die achter de Videodialoogdoos met beeldactiva wordt getoond in de de dalingsdoos van de Duimnagel &#x200B;](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. Klik **Voorproef**.
 

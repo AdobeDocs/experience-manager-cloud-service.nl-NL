@@ -35,10 +35,10 @@ Adobe Enterprise Documentation biedt meer dan een verzameling gebruikershandleid
 ### Inhoud en Commerce
 
 + [[!DNL Experience Manager as a Cloud Service]](experience-manager-cloud-service.md)
-+ [ Optimizer Experience Manager Sites ](https://experienceleague.adobe.com/nl/docs/experience-manager-sites-optimizer/content/home)
++ [&#x200B; Optimizer Experience Manager Sites &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
-+ [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
++ [Experience Manager &#x200B;](experience-manager-release-information#/help/using/aem-previous-versions.md)
 + [Experience Manager Assets Essentials](experience-manager-assets-essentials#help)
 + [Commerce (inclusief Magento Open Source)](commerce.md)
 
@@ -87,58 +87,58 @@ Adobe Enterprise Documentation biedt meer dan een verzameling gebruikershandleid
 
 ### Documentatie
 
-+ [ Acrobat Leren &amp; Steun ](https://helpx.adobe.com/nl/support/acrobat.html)
-+ [ Acrobat Sign Leren &amp; Steun ](https://helpx.adobe.com/nl/support/sign.html)
++ [&#x200B; Acrobat Leren &amp; Steun &#x200B;](https://helpx.adobe.com/nl/support/acrobat.html)
++ [&#x200B; Acrobat Sign Leren &amp; Steun &#x200B;](https://helpx.adobe.com/nl/support/sign.html)
 
 ### Developer
 
-+ [ de Diensten van Acrobat ](https://developer.adobe.com/document-services/docs/overview/)
++ [&#x200B; de Diensten van Acrobat &#x200B;](https://developer.adobe.com/document-services/docs/overview/)
 + [Zelfstudies voor Acrobat Services](acrobat-services-learn#tutorials)
 
 ### Nuttige bronnen voor Document Cloud
 
-+ [ Document Cloud Leren &amp; Steun ](https://helpx.adobe.com/nl/support/document-cloud.html)
-+ [ de Zelfstudies van de Onderneming van Document Cloud ](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=nl-NL#document-cloud-tutorials)
-+ [ Status van Adobe ](https://status.adobe.com/)
-+ [ Gids Admin ](https://helpx.adobe.com/nl/enterprise/admin-guide.html)
++ [&#x200B; Document Cloud Leren &amp; Steun &#x200B;](https://helpx.adobe.com/nl/support/document-cloud.html)
++ [&#x200B; de Zelfstudies van de Onderneming van Document Cloud &#x200B;](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=nl-NL#document-cloud-tutorials)
++ [&#x200B; Status van Adobe &#x200B;](https://status.adobe.com/)
++ [&#x200B; Gids Admin &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html)
 
 ## Creative Cloud for Enterprise
 
 ### Documentatie
 
-+ [ Creative Cloud Leren &amp; Steun ](https://helpx.adobe.com/nl/support/creative-cloud.html)
++ [&#x200B; Creative Cloud Leren &amp; Steun &#x200B;](https://helpx.adobe.com/nl/support/creative-cloud.html)
 
 ### Nuttige bronnen voor Creative Cloud for Enterprise
 
 + [Zelfstudies voor Creative Cloud for Enterprise](creative-cloud-enterprise-learn#cce-learning-hub)
-+ [ Status van Adobe ](https://status.adobe.com/)
-+ [ Adobe Developer ](https://developer.adobe.com/)
-+ [ Gids Admin ](https://helpx.adobe.com/nl/enterprise/admin-guide.html)
++ [&#x200B; Status van Adobe &#x200B;](https://status.adobe.com/)
++ [&#x200B; Adobe Developer &#x200B;](https://developer.adobe.com/)
++ [&#x200B; Gids Admin &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html)
 
 ## Aanvullende bronnen {#lists-resources}
 
 ### Bronnen voor verschillende cloud
 
-+ [ Gebeurtenissen van Experience League ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=nl-NL#events)
-+ [ Status van Adobe ](https://status.adobe.com/)
-+ [ Adobe Developer ](https://developer.adobe.com/)
-+ [ Gids Admin ](https://helpx.adobe.com/nl/enterprise/admin-guide.html)
++ [&#x200B; Gebeurtenissen van Experience League &#x200B;](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=nl-NL#events)
++ [&#x200B; Status van Adobe &#x200B;](https://status.adobe.com/)
++ [&#x200B; Adobe Developer &#x200B;](https://developer.adobe.com/)
++ [&#x200B; Gids Admin &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html)
 + [Softwaredistributie](experience-cloud#software-distribution)
 
 ### Middelen voor inschakelen en beheer
 
 + [Experience Cloud Administration](core-services#/help/interface/administration/admin-tool-experience-cloud.md)
-+ [ de Onderneming en de Teams van Adobe: De Gids van het beleid ](https://helpx.adobe.com/nl/enterprise/managing/user-guide.html) voor alle de wolkenproducten van Adobe
++ [&#x200B; de Onderneming en de Teams van Adobe: De Gids van het beleid &#x200B;](https://helpx.adobe.com/nl/enterprise/managing/user-guide.html) voor alle de wolkenproducten van Adobe
 + [Klantsucces: strategie en leiderschap](customer-success#customer-success)
 
 ### Bronnen voor informatie en ondersteuning
 
 + [Opmerkingen bij de release van Experience Cloud](release-notes#experience-cloud)
 + [Tutorials](home-tutorials.md)
-+ [ Playlists ](https://experienceleague.adobe.com/nl/playlists)
++ [&#x200B; Playlists &#x200B;](https://experienceleague.adobe.com/nl/playlists)
 + [Certificering](certification#program)
-+ [ Communautair Forum ](https://experienceleaguecommunities.adobe.com)
-+ [ Steun ](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support)
++ [&#x200B; Communautair Forum &#x200B;](https://experienceleaguecommunities.adobe.com)
++ [&#x200B; Steun &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support)
 
 <!--
 + [Events](events.md)

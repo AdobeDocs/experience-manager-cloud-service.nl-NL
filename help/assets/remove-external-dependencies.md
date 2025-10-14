@@ -47,4 +47,4 @@ De externe afhankelijkheden verwijderen:
          </server>
    ```
 
-1. Voer de [ nieuwe installatiestappen ](workfront-connector-install.md) uit.
+1. Voer de [&#x200B; nieuwe installatiestappen &#x200B;](workfront-connector-install.md) uit.

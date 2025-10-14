@@ -40,11 +40,11 @@ Zoekopdrachten voor verwijzingen, zoals in het volgende voorbeeld, moeten nu bij
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Om grotere volumes van klantengegevens te steunen, leidt de Adobe niet meer tot de generische index van Lucene op nieuwe milieu&#39;s van AEM as a Cloud Service. Bovendien verwijdert Adobe de index uit bestaande opslagruimten. [ zie de chronologie ](#timeline) aan het eind van dit document voor meer details.
+Om grotere volumes van klantengegevens te steunen, leidt de Adobe niet meer tot de generische index van Lucene op nieuwe milieu&#39;s van AEM as a Cloud Service. Bovendien verwijdert Adobe de index uit bestaande opslagruimten. [&#x200B; zie de chronologie &#x200B;](#timeline) aan het eind van dit document voor meer details.
 
 Adobe heeft de indexkosten al aangepast via de eigenschappen `costPerEntry` en `costPerExecution` om ervoor te zorgen dat waar mogelijk andere indexen, zoals `/oak:index/pathreference` , de voorkeur krijgen.
 
-De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die zonodig kunnen worden aangepast. U kunt ook nieuwe aangepaste indexen toevoegen aan de toepassing van de klant. De volledige instructies voor indexbeheer in AEM as a Cloud Service kunnen in de [ indexerende documentatie ](/help/operations/indexing.md) worden gevonden.
+De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die zonodig kunnen worden aangepast. U kunt ook nieuwe aangepaste indexen toevoegen aan de toepassing van de klant. De volledige instructies voor indexbeheer in AEM as a Cloud Service kunnen in de [&#x200B; indexerende documentatie &#x200B;](/help/operations/indexing.md) worden gevonden.
 
 ## Betrokken bent u? {#are-you-affected}
 
@@ -145,7 +145,7 @@ Voordat de generieke Lucene-index wordt verwijderd, wordt de component `pathfiel
 
 | Padveldkiezer met zoeken | Padveldkiezer zonder zoeken |
 |---|---|
-| ![ Plukker van het Gebied van de Weg met Onderzoek ](assets/index-pathfield-picker-with-search.png) | ![ Plukker van het Gebied van de Weg zonder Onderzoek ](assets/index-pathfield-picker-without-search.png) |
+| ![&#x200B; Plukker van het Gebied van de Weg met Onderzoek &#x200B;](assets/index-pathfield-picker-with-search.png) | ![&#x200B; Plukker van het Gebied van de Weg zonder Onderzoek &#x200B;](assets/index-pathfield-picker-without-search.png) |
 
 >[!IMPORTANT]
 >

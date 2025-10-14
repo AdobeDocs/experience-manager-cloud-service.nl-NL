@@ -20,11 +20,11 @@ Leer meer over de verschillende eigenschappen die een pagina kan hebben en hoe z
 
 >[!TIP]
 >
->Voor details op hoe u de eigenschappen van een pagina kunt uitgeven en veranderen, te zien gelieve het document [ het Uitgeven Eigenschappen van de Pagina.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
+>Voor details op hoe u de eigenschappen van een pagina kunt uitgeven en veranderen, te zien gelieve het document [&#x200B; het Uitgeven Eigenschappen van de Pagina.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 
 ## Overzicht en beschikbaarheid van eigenschappen {#overview}
 
-Met pagina-eigenschappen kunt u vele aspecten van een pagina beheren, van de titel en branding van de pagina tot aan de machtigingen. De eigenschappen worden over verschillende tabbladen verdeeld, waarvan sommige afhankelijk van het type pagina kunnen worden verborgen. Zoals de meeste eigenschappen in AEM, [ pagina kunnen eigenschappen worden geërft.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
+Met pagina-eigenschappen kunt u vele aspecten van een pagina beheren, van de titel en branding van de pagina tot aan de machtigingen. De eigenschappen worden over verschillende tabbladen verdeeld, waarvan sommige afhankelijk van het type pagina kunnen worden verborgen. Zoals de meeste eigenschappen in AEM, [&#x200B; pagina kunnen eigenschappen worden geërft.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Met pagina-eigenschappen kunt u vele aspecten van een pagina beheren, van de tit
 ### Titel en tags {#title-tags}
 
 * **Titel** - bepaalt de titel van paginameta voor SEO doeleinden evenals de titel die in de paginacontent wordt getoond (tenzij met voeten getreden)
-   * De titel van de pagina wordt getoond in diverse plaatsen in AEM UI met inbegrip van de **kaart/lijstmeningen van 0&rbrace; Plaatsen &lbrace;in de [ Console van Plaatsen.](/help/sites-cloud/authoring/sites-console/introduction.md)**
+   * De titel van de pagina wordt getoond in diverse plaatsen in AEM UI met inbegrip van de **kaart/lijstmeningen van 0&rbrace; Plaatsen &lbrace;in de [&#x200B; Console van Plaatsen.](/help/sites-cloud/authoring/sites-console/introduction.md)**
    * Dit is een verplicht veld.
 * **Markeringen** - bepaalt de markeringen van paginameta voor SEO doeleinden
    * U kunt codes toevoegen aan of verwijderen uit de pagina door de lijst in het selectievak bij te werken.
@@ -45,12 +45,12 @@ Met pagina-eigenschappen kunt u vele aspecten van een pagina beheren, van de tit
       * De nieuwe tag wordt gemaakt wanneer u op Enter drukt.
       * De nieuwe tag wordt dan weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
    * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
-   * Voor meer informatie over markeringen, zie [ Gebruikend Markering.](/help/sites-cloud/authoring/sites-console/tags.md)
+   * Voor meer informatie over markeringen, zie [&#x200B; Gebruikend Markering.](/help/sites-cloud/authoring/sites-console/tags.md)
 * **Verbergen in Navigatie** - wijst erop of de pagina in de paginanavigatie van de resulterende plaats wordt getoond of verborgen
 
 ### Branding {#branding}
 
-Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [&#x200B; Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 
 * **Merk Slug**
    * **met voeten treden** - Controle om de merkschuine streep op deze pagina te bepalen.
@@ -78,8 +78,8 @@ De aan/uit-tijd voor een pagina is een handige manier om inhoud die al is gepubl
 
 * **op Tijd** - de datum en de tijd waarop de gepubliceerde pagina zichtbaar (teruggegeven) op het publicatiemilieu wordt gemaakt. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
 
-   * Als reeds [ gepubliceerd, ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) is deze pagina beschikbaar op publiceer instantie, maar gehouden slapend (verborgen) tot het teruggeven op de gespecificeerde tijd.
-   * Als niet gepubliceerd en [ voor auto-replicatie wordt gevormd, ](/help/operations/replication.md#on-and-off-times-trigger-configuratio) wordt de pagina automatisch gepubliceerd, dan teruggegeven, op de gespecificeerde tijd.
+   * Als reeds [&#x200B; gepubliceerd, &#x200B;](/help/sites-cloud/authoring/sites-console/publishing-pages.md) is deze pagina beschikbaar op publiceer instantie, maar gehouden slapend (verborgen) tot het teruggeven op de gespecificeerde tijd.
+   * Als niet gepubliceerd en [&#x200B; voor auto-replicatie wordt gevormd, &#x200B;](/help/operations/replication.md#on-and-off-times-trigger-configuratio) wordt de pagina automatisch gepubliceerd, dan teruggegeven, op de gespecificeerde tijd.
    * Als niet gepubliceerd en niet gevormd voor auto-replicatie, wordt de pagina niet automatisch gepubliceerd, zodat wordt 404 gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
 
 * **Van Tijd** - Gelijkaardig aan en vaak gebruikt in combinatie met **op Tijd**, bepaalt dit de tijd waarbij de gepubliceerde pagina op het publicatiemilieu wordt verborgen.
@@ -93,7 +93,7 @@ Verlaat deze gebieden (**op Tijd** en **van Tijd**) leeg voor pagina&#39;s u wil
 >
 >Aan/uit-tijden hebben uitsluitend betrekking op inhoud die al is gepubliceerd (handmatig of via automatische replicatie). Daarom hebben publicatieworkflows, zoals die voor het goedkeuren van inhoud, geen invloed op de publicatiestatus van de pagina als gevolg van aan-/uittijden en aan/uit-tijden. Daarom zijn aan/uit-tijden het meest geschikt voor het tijdelijk tonen/verbergen van inhoud die al is goedgekeurd en gepubliceerd.
 >
->Als u wenst om nieuwe inhoud met alle bijbehorende werkschema&#39;s te publiceren of (unpublish inhoud) volledig te verwijderen uit uw plaats, overweeg [ het leiden van uw publicatie.](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)
+>Als u wenst om nieuwe inhoud met alle bijbehorende werkschema&#39;s te publiceren of (unpublish inhoud) volledig te verwijderen uit uw plaats, overweeg [&#x200B; het leiden van uw publicatie.](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)
 
 ### Vanity URL {#vanity-url}
 
@@ -124,8 +124,8 @@ Met deze eigenschap kunt u een vanity-URL voor deze pagina invoeren, waarmee u e
 * **Alias** - specificeert een alias die met deze pagina moet worden gebruikt
    * Als u bijvoorbeeld een alias van `private` voor de pagina `/content/wknd/us/en/magazine/members-only` definieert, kunt u deze pagina ook openen via `/content/wknd/us/en/magazine/private`
    * Als u een alias maakt, wordt de eigenschap `sling:alias` op het paginaknooppunt ingesteld. Dit heeft alleen invloed op de bron, niet op het pad naar de opslagplaats.
-   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [ publiceer opties ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
-   * Zie [ Gelokaliseerde paginanamen onder SEO en de Beste praktijken van het Beheer URL ](/help/overview/seo-and-url-management.md#localized-page-names) voor meer informatie.
+   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [&#x200B; publiceer opties &#x200B;](/help/sites-cloud/authoring/sites-console/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
+   * Zie [&#x200B; Gelokaliseerde paginanamen onder SEO en de Beste praktijken van het Beheer URL &#x200B;](/help/overview/seo-and-url-management.md#localized-page-names) voor meer informatie.
 
 ### Configuratie {#configuration}
 
@@ -136,10 +136,10 @@ Met deze eigenschap kunt u een vanity-URL voor deze pagina invoeren, waarmee u e
 
 ### Sjablooninstellingen {#template-settings}
 
-* **Toegestane Malplaatjes** - [ bepaalt de lijst van malplaatjes die ](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) binnen deze subtak beschikbaar zijn
+* **Toegestane Malplaatjes** - [&#x200B; bepaalt de lijst van malplaatjes die &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) binnen deze subtak beschikbaar zijn
    * Elke waarde moet een absoluut pad naar een sjabloon zijn.
    * Gebruik `/.*` om alle sjablonen onder dit pad toe te staan.
-* **Pagina van het Gebruik als Malplaatje** - [ creeer een nieuw malplaatje dat op de huidige pagina wordt gebaseerd.](/help/sites-cloud/authoring/universal-editor/templates.md)
+* **Pagina van het Gebruik als Malplaatje** - [&#x200B; creeer een nieuw malplaatje dat op de huidige pagina wordt gebaseerd.](/help/sites-cloud/authoring/universal-editor/templates.md)
    * Dit is alleen van toepassing op pagina&#39;s die zijn gemaakt voor gebruik met Edge Delivery Services van de Universal Editor.
 
 ### Verificatievereiste {#authentication}
@@ -195,17 +195,17 @@ In deze sectie wordt de miniatuur van de afbeelding voor de pagina geselecteerd 
 
 ### ContextHub-configuraties {#contexthub-config}
 
-* **ContextHub Weg** - bepaal de [ configuratie ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md)
-* **Weg van Segmenten** - bepaal de [ weg van Segmenten ](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+* **ContextHub Weg** - bepaal de [&#x200B; configuratie ContextHub &#x200B;](/help/sites-cloud/authoring/personalization/contexthub.md)
+* **Weg van Segmenten** - bepaal de [&#x200B; weg van Segmenten &#x200B;](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 ### Doelconfiguratie {#targeting-config}
 
-* **Merk** - bepaalt a [ Merk om een werkingsgebied te specificeren voor het richten ](/help/sites-cloud/authoring/personalization/targeted-content.md)
+* **Merk** - bepaalt a [&#x200B; Merk om een werkingsgebied te specificeren voor het richten &#x200B;](/help/sites-cloud/authoring/personalization/targeted-content.md)
    * Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Administrators` -groep.
 
 ## Machtigingen {#permissions}
 
-Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [ gesloten gebruikersgroepen (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=nl-NL) tot de pagina kunnen toegang hebben en/of wijzigen.
+Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [&#x200B; gesloten gebruikersgroepen (CUGs) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=nl-NL) tot de pagina kunnen toegang hebben en/of wijzigen.
 
 * **voeg Toestemmingen** toe
 * **geeft Gesloten Groep van de Gebruiker uit**
@@ -213,7 +213,7 @@ Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen,
 
 ## Blauwdruk {#blueprint}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. De blauwdrukken dienen als basis voor Levende Kopieën, en maken deel uit van [ Multisite Beheer.](/help/sites-cloud/administering/msm/overview.md)
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. De blauwdrukken dienen als basis voor Levende Kopieën, en maken deel uit van [&#x200B; Multisite Beheer.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Uitdraaiing** - stel een uitrol van blauwdrukinhoud aan Levende Exemplaren in werking
 * **Levend Overzicht van het Exemplaar** - Open een venster om de Levende de paginastructuur van het Exemplaar te doorbladeren
@@ -221,7 +221,7 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
 
 ## Live kopie {#live-copy}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Zoals met [ blauwdrukken, ](#blueprint) Levende Exemplaren deel van [ Multisite Beheer zijn.](/help/sites-cloud/administering/msm/overview.md)
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Zoals met [&#x200B; blauwdrukken, &#x200B;](#blueprint) Levende Exemplaren deel van [&#x200B; Multisite Beheer zijn.](/help/sites-cloud/administering/msm/overview.md)
 
 * **synchroniseer** - synchroniseer Levend Exemplaar met blauwdruk, die lokale wijzigingen houden
 * **Teruggestelde** - het Levende Exemplaar van het Terugstellen aan staat van blauwdruk, verwijderend lokale aanpassingen
@@ -245,7 +245,7 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als li
 
 ## Voorvertoning {#preview}
 
-Wanneer het milieu van de a [ voorproef ](/help/sites-cloud/authoring/sites-console/previewing-content.md) wordt toegelaten, zijn de volgende details beschikbaar:
+Wanneer het milieu van de a [&#x200B; voorproef &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md) wordt toegelaten, zijn de volgende details beschikbaar:
 
 * **Voorproef URL** - URL die voor de toegang tot van de inhoud op het voorproefmilieu wordt gebruikt
 
@@ -279,5 +279,5 @@ Een auteur van inhoud kan via een eenvoudige configuratie functies voor progress
 
 >[!NOTE]
 >
->Zie [ toelatend de Progressieve Eigenschappen van de App van het Web ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) voor meer details.
+>Zie [&#x200B; toelatend de Progressieve Eigenschappen van de App van het Web &#x200B;](/help/sites-cloud/authoring/sites-console/enable-pwa.md) voor meer details.
 

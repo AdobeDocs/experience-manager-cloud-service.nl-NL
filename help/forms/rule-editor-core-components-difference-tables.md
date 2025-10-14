@@ -22,7 +22,7 @@ Dit artikel biedt een uitgebreide vergelijking van de verschillende edities, waa
 
 >[!NOTE]
 >
-> Leren om douanefuncties tot stand te brengen en in detail te gebruiken, verwijs naar [ functies van de Douane in Aanpassings Forms (de Componenten van de Kern) ](/help/forms/create-and-use-custom-functions.md) artikel.
+> Leren om douanefuncties tot stand te brengen en in detail te gebruiken, verwijs naar [&#x200B; functies van de Douane in Aanpassings Forms (de Componenten van de Kern) &#x200B;](/help/forms/create-and-use-custom-functions.md) artikel.
 
 
 ## Zie ook

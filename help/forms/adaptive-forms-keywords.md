@@ -236,4 +236,4 @@ Adaptieve Forms-trefwoorden zijn vooraf gedefinieerde, gereserveerde id&#39;s di
  </tbody>
 </table>
 
-Naast de hierboven vermelde sleutelwoorden, vermijd het gebruiken van namen die aan [ Adaptieve Forms JavaScript APIs ](https://adobe.com/go/learn_aemforms_javascript_api_63) gelijkaardig zijn.
+Naast de hierboven vermelde sleutelwoorden, vermijd het gebruiken van namen die aan [&#x200B; Adaptieve Forms JavaScript APIs &#x200B;](https://adobe.com/go/learn_aemforms_javascript_api_63) gelijkaardig zijn.

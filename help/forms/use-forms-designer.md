@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Adobe Experience Manager (AEM) Forms Designer gebruiken {#install-designer}
 
-Designer is een toepassing waarmee u eenvoudig grafische formulieren kunt ontwerpen en waarmee u eenvoudig XDP-formuliersjablonen kunt maken. U kunt een formuliersjabloon ontwerpen, de logica ervan definiëren en aan strikte wettelijke vereisten voldoen. Deze sjablonen fungeren als een sjabloon Document of Record voor een adaptief formulier. Deze vormenmalplaatjes zijn verschillend van [ Aangepaste malplaatjes van de Vorm ](template-editor.md).
+Designer is een toepassing waarmee u eenvoudig grafische formulieren kunt ontwerpen en waarmee u eenvoudig XDP-formuliersjablonen kunt maken. U kunt een formuliersjabloon ontwerpen, de logica ervan definiëren en aan strikte wettelijke vereisten voldoen. Deze sjablonen fungeren als een sjabloon Document of Record voor een adaptief formulier. Deze vormenmalplaatjes zijn verschillend van [&#x200B; Aangepaste malplaatjes van de Vorm &#x200B;](template-editor.md).
 
 De volgende documenten bevatten instructies voor het gebruik van Designer bij het maken van XDP-sjablonen en -PDF forms:
 
 + [Designer gebruiken](assets/using-designer-cs.pdf)
-+ [ Tutorials van het Begin van Designer Snelle ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
-+ [ de Steekproeven van Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-samples.pdf)
-+ [ Designer Scripting Basics ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
-+ [ Designer Scripting Reference ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
-+ [ Referentie FormCalc van Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)
++ [&#x200B; Tutorials van het Begin van Designer Snelle &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
++ [&#x200B; de Steekproeven van Designer &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-samples.pdf)
++ [&#x200B; Designer Scripting Basics &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
++ [&#x200B; Designer Scripting Reference &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
++ [&#x200B; Referentie FormCalc van Designer &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)

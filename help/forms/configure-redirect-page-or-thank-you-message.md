@@ -14,14 +14,14 @@ ht-degree: 0%
 
 # Omleidingspagina configureren {#configuring-redirect-page}
 
-Op voorlegging van a [ de Componenten van de Kern gebaseerde Aangepaste Vorm ](creating-adaptive-form-core-components.md), kunt u de gebruiker aan een andere webpage opnieuw richten of een bericht tonen. U kunt als volgt de omleidingspagina of het bedankbericht configureren:
+Op voorlegging van a [&#x200B; de Componenten van de Kern gebaseerde Aangepaste Vorm &#x200B;](creating-adaptive-form-core-components.md), kunt u de gebruiker aan een andere webpage opnieuw richten of een bericht tonen. U kunt als volgt de omleidingspagina of het bedankbericht configureren:
 
 1. Open het adaptieve formulier voor bewerking.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Guide Container]** .
-1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![ AanpassingsContainer eigenschappen ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
+1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![&#x200B; AanpassingsContainer eigenschappen &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
 1. Open de tab **[!UICONTROL Submission]** . De opties om een omleidingspagina of een bericht te vormen worden getoond:
 
-   ![ de dialoog van de Verzending van de Contaner van de Gids om een omleidingspagina of een bericht te vormen ](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
+   ![&#x200B; de dialoog van de Verzending van de Contaner van de Gids om een omleidingspagina of een bericht te vormen &#x200B;](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
    * Als u een omleidings-URL wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Redirect to URL option]** en geeft u een absoluut adres, een omleidings-URL of een relatief pad van een AEM Sites-pagina op.
 
@@ -35,7 +35,7 @@ Formulierauteurs kunnen een pagina configureren voor elk formulier, waarnaar de 
 
 >[!MORELIKETHIS]
 >
->* [ vorm een Redirect Pagina ](/help/forms/configuring-redirect-page.md)
+>* [&#x200B; vorm een Redirect Pagina &#x200B;](/help/forms/configuring-redirect-page.md)
 
 ## Zie ook {#see-also}
 

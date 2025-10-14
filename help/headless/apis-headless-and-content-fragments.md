@@ -31,7 +31,7 @@ Adobe Experience Manager (AEM) as a Cloud Service biedt meerdere API&#39;s voor 
 
 >[!NOTE]
 >
->[ de Steun van het Fragment van de Inhoud in HTTP API van Assets ](/help/assets/content-fragments/assets-api-content-fragments.md) is nu afgekeurd [&#128279;](/help/release-notes/deprecated-removed-features.md). Het is vervangen door [ Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md) samen met [ Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud Management OpenAPIs ](/help/headless/content-fragment-openapis.md).
+>[&#x200B; de Steun van het Fragment van de Inhoud in HTTP API van Assets &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md) is nu afgekeurd [&#128279;](/help/release-notes/deprecated-removed-features.md). Het is vervangen door [&#x200B; Levering van het Fragment van de Inhoud met OpenAPI &#x200B;](/help/headless/aem-content-fragment-delivery-with-openapi.md) samen met [&#x200B; Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud Management OpenAPIs &#x200B;](/help/headless/content-fragment-openapis.md).
 
 ## REST vs GraphQL {#rest-vs-graphql}
 
@@ -41,7 +41,7 @@ Er zijn veel vergelijkingen online beschikbaar, maar een aantal hooglichten en v
 
 * Eenvoud
 
-   * Ontwikkelaars zijn (vaak) vertrouwd met HTTP en REST. Volgens de [ Staat van Postman van het APIs- rapport ](https://www.postman.com/state-of-api/), gebruikt een hoog percentage ontwikkelaars REST.
+   * Ontwikkelaars zijn (vaak) vertrouwd met HTTP en REST. Volgens de [&#x200B; Staat van Postman van het APIs- rapport &#x200B;](https://www.postman.com/state-of-api/), gebruikt een hoog percentage ontwikkelaars REST.
 
    * Met eenvoud komt vertrouwdheid. Met REST zijn er geen organisatorische vragen over wie de query&#39;s bezit en wie de app bezit, terwijl deze vragen bij GraphQL kunnen rijzen.
 

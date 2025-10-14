@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # [!DNL Assets] as a Cloud Service Ultimate inschakelen {#enable-assets-cloud-service-ultimate}
 
-![ Verbetering aan Activa Cloud Service Ultimate ](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
+![&#x200B; Verbetering aan Activa Cloud Service Ultimate &#x200B;](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
 
-Met Assets as a Cloud Service Ultimate kunt u verschillende belangrijke DAM-mogelijkheden uitvoeren, zoals beheer van bedrijfsmiddelen en bibliotheekservices, beheer van beveiliging en rechten, Creative- en Experience Cloud-verbindingen, uitbreidbaarheid van de gebruikersinterface, API-gestuurde automatisering, integratie met Adobe- en niet-Adobe-toepassingen, aangepaste code-implementatie en nog veel meer. Zie [ Assets as a Cloud Service Ultimate Overzicht ](/help/assets/assets-ultimate-overview.md) voor de volledige lijst.
+Met Assets as a Cloud Service Ultimate kunt u verschillende belangrijke DAM-mogelijkheden uitvoeren, zoals beheer van bedrijfsmiddelen en bibliotheekservices, beheer van beveiliging en rechten, Creative- en Experience Cloud-verbindingen, uitbreidbaarheid van de gebruikersinterface, API-gestuurde automatisering, integratie met Adobe- en niet-Adobe-toepassingen, aangepaste code-implementatie en nog veel meer. Zie [&#x200B; Assets as a Cloud Service Ultimate Overzicht &#x200B;](/help/assets/assets-ultimate-overview.md) voor de volledige lijst.
 
 ## Assets Ultimate inschakelen {#enable-assets-ultimate}
 
@@ -27,13 +27,13 @@ Voer de volgende stappen uit:
 
    >[!NOTE]
    >
-   >Voeg een nieuw programma toe aan het juiste Cloud Manager-productprofiel. Voor meer informatie, zie [ Rol Gebaseerde Toestemmingen in Cloud Manager ](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
+   >Voeg een nieuw programma toe aan het juiste Cloud Manager-productprofiel. Voor meer informatie, zie [&#x200B; Rol Gebaseerde Toestemmingen in Cloud Manager &#x200B;](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
-1. [ creeer een nieuw programma ](/help/journey-onboarding/create-program.md) en [ voeg milieu&#39;s ](/help/journey-onboarding//create-environments.md) aan het toe.
+1. [&#x200B; creeer een nieuw programma &#x200B;](/help/journey-onboarding/create-program.md) en [&#x200B; voeg milieu&#39;s &#x200B;](/help/journey-onboarding//create-environments.md) aan het toe.
 
-   Selecteer **[!UICONTROL Assets Ultimate]** op het tabblad **[!UICONTROL Solutions & Add-ons]** tijdens het maken van het nieuwe programma. U kunt **[!UICONTROL Assets Ultimate]** ook uitbreiden en selecteren **[!UICONTROL Content Hub]** om [ Content Hub ](/help/assets/product-overview.md) voor activadistributie toe te laten.
+   Selecteer **[!UICONTROL Assets Ultimate]** op het tabblad **[!UICONTROL Solutions & Add-ons]** tijdens het maken van het nieuwe programma. U kunt **[!UICONTROL Assets Ultimate]** ook uitbreiden en selecteren **[!UICONTROL Content Hub]** om [&#x200B; Content Hub &#x200B;](/help/assets/product-overview.md) voor activadistributie toe te laten.
 
-   ![ AEM Assets Ultimate ](assets/aem-assets-ultimate-solutions.png)
+   ![&#x200B; AEM Assets Ultimate &#x200B;](assets/aem-assets-ultimate-solutions.png)
 
 1. Klik op **[!UICONTROL Create]** om het programma te maken. Assets Ultimate is nu ingeschakeld voor Experience Manager Assets as a Cloud Service.
 
@@ -49,11 +49,11 @@ Uw AEM as a Cloud Service-exemplaar op Admin Console bestaat uit de volgende pro
 
 * [AEM Assets Power Users](#onboard-power-users)
 
-  ![ Profielen van het Product van AEM Assets ](assets/aem-assets-product-profiles.png)
+  ![&#x200B; Profielen van het Product van AEM Assets &#x200B;](assets/aem-assets-product-profiles.png)
 
 Als u Content Hub for Assets as a Cloud Service hebt ingeschakeld, wordt in AEM Assets as a Cloud Service op Admin Console een nieuwe instantie gemaakt met `delivery` als achtervoegsel:
 
-![ Nieuwe instantie voor Content Hub ](assets/new-instance-content-hub.png)
+![&#x200B; Nieuwe instantie voor Content Hub &#x200B;](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ De instantienaam voor Content Hub bevat geen `author` of `publish` .
 
 Klik op de instantienaam om het `AEM Assets Limited Users` Content Hub-productprofiel te bekijken.
 
-![ het productprofiel van Content Hub ](assets/content-hub-product-profile.png)
+![&#x200B; het productprofiel van Content Hub &#x200B;](assets/content-hub-product-profile.png)
 
 U kunt gebruikers of gebruikersgroepen aan dit productprofiel toevoegen om hen toegang tot Content Hub te verlenen.
 
@@ -75,7 +75,7 @@ U kunt gebruikers of gebruikersgroepen aan dit productprofiel toevoegen om hen t
 
 Bestaande Assets as a Cloud Service-klanten kunnen een upgrade uitvoeren naar Assets Ultimate door twee eenvoudige stappen uit te voeren. U kunt naar het Assets as a Cloud Service-programma in Cloud Manager navigeren en de status van de upgrade bekijken op de Program Card op basis van de beschikbaarheid van Assets Ultimate-credits. Als er voldoende credits beschikbaar zijn voor een upgrade naar Assets Ultimate, kunt u de status `Assets license upgrade required` zien, zoals in de volgende afbeelding wordt getoond:
 
-![ de verbetering van AEM Assets aan Assets Ultimate ](assets/aem-assets-upgrade-status-ultimate.png)
+![&#x200B; de verbetering van AEM Assets aan Assets Ultimate &#x200B;](assets/aem-assets-upgrade-status-ultimate.png)
 
 Als een bestaande klant een nieuwe licentie aanschaft voor Assets Ultimate, wordt de upgrademoestand weergegeven als `Assets license upgrade available` .
 
@@ -89,11 +89,11 @@ Voer de volgende stappen uit:
 
 1. Klik op de naam van het programma nadat u hebt overgeschakeld naar de minimale vereisten voor de AEM-releaseversie. Een upgradekaart wordt net boven **[!UICONTROL Environments]** -sectie weergegeven, zoals in de volgende afbeelding wordt getoond:
 
-   ![ de verbetering van AEM Assets aan Assets Ultimate ](assets/aem-assets-upgrade-card.png)
+   ![&#x200B; de verbetering van AEM Assets aan Assets Ultimate &#x200B;](assets/aem-assets-upgrade-card.png)
 
 1. Klik op **[!UICONTROL Add Product Profiles]**. Cloud Manager geeft opties weer om nieuwe productprofielen toe te voegen aan alle omgevingen die beschikbaar zijn in het programma of de afzonderlijke omgevingen.
 
-   ![ de verbeteringsopties van AEM Assets ](assets/aem-assets-upgrade-options.png)
+   ![&#x200B; de verbeteringsopties van AEM Assets &#x200B;](assets/aem-assets-upgrade-options.png)
 
 1. Klik op **[!UICONTROL All Environments]** om de nieuwe productprofielen toe te voegen aan alle omgevingen in het programma of op **[!UICONTROL Individual Environments]** om de nieuwe productprofielen toe te voegen aan geselecteerde omgevingen.
 
@@ -101,7 +101,7 @@ Voer de volgende stappen uit:
 
 1. Klik op het pictogram Meer opties voor een omgeving en selecteer **[!UICONTROL Add Product Profiles]** om de nieuwe productprofielen aan de geselecteerde omgeving toe te voegen.
 
-   ![ AEM Assets uitgezochte individuele milieu&#39;s ](assets/aem-assets-individual-environments.png)
+   ![&#x200B; AEM Assets uitgezochte individuele milieu&#39;s &#x200B;](assets/aem-assets-individual-environments.png)
 
    U kunt productprofielen ook aan geselecteerde omgevingen toevoegen door naar de sectie **[!UICONTROL Environments]** te navigeren, op het pictogram Meer opties voor een omgeving te klikken en **[!UICONTROL Add Product Profiles]** te selecteren.
 
@@ -111,11 +111,11 @@ Voer de volgende stappen uit:
 
 1. Klik op **[!UICONTROL Upgrade]**. De optie **[!UICONTROL Upgrade]** wordt alleen weergegeven wanneer u productprofielen toevoegt aan alle beschikbare omgevingen.
 
-   ![ Laatste stap in het verbeteringsproces ](assets/aem-assets-upgrade-button.png)
+   ![&#x200B; Laatste stap in het verbeteringsproces &#x200B;](assets/aem-assets-upgrade-button.png)
 
    Het upgradeproces is voltooid en u hebt uw Assets as a Cloud Service geüpgraded naar Assets Ultimate. De status van het programma wordt weergegeven `Assets Ultimate` .
 
-   ![ status van het Programma na verbetering ](assets/program-status-post-upgrade.png)
+   ![&#x200B; status van het Programma na verbetering &#x200B;](assets/program-status-post-upgrade.png)
 
 Het AEM as a Cloud Service-exemplaar op Admin Console bevat nu de volgende productprofielen:
 
@@ -127,11 +127,11 @@ Het AEM as a Cloud Service-exemplaar op Admin Console bevat nu de volgende produ
 
 * [AEM Assets Power Users](#onboard-power-users)
 
-![ Profielen van het Product van AEM Assets ](assets/aem-assets-product-profiles.png)
+![&#x200B; Profielen van het Product van AEM Assets &#x200B;](assets/aem-assets-product-profiles.png)
 
 Als Content Hub ingeschakeld moet zijn, klikt u op het pictogram Meer opties (...) op de naam van het programma in Cloud Manager en selecteert u **[!UICONTROL Edit Program]** . Vouw **[!UICONTROL Assets Ultimate]** uit en klik op **[!UICONTROL Content Hub]** . Met deze stap wordt de Content Hub for Assets Ultimate ingeschakeld. Er is een nieuwe instantie gemaakt in AEM Assets as a Cloud Service op Admin Console met `delivery` als achtervoegsel:
 
-![ Nieuwe instantie voor Content Hub ](assets/new-instance-content-hub.png)
+![&#x200B; Nieuwe instantie voor Content Hub &#x200B;](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ De instantienaam voor Content Hub bevat geen `author` of `publish` .
 
 Klik op de instantienaam om het `AEM Assets Limited Users` Content Hub-productprofiel te bekijken.
 
-![ het productprofiel van Content Hub ](assets/content-hub-product-profile.png)
+![&#x200B; het productprofiel van Content Hub &#x200B;](assets/content-hub-product-profile.png)
 
 U kunt gebruikers of gebruikersgroepen aan dit productprofiel toevoegen om hen toegang tot Content Hub te verlenen.
 
@@ -158,16 +158,16 @@ Aan boord van Collaborator-gebruikers:
 1. Open Experience Manager Assets-productprofielen door op de AEM as a Cloud Service-productnaam in de lijst met producten op Admin Console te klikken.
 
 1. Klik op de productieauteur-instantie voor AEM as a Cloud Service:
-   ![ de profielen van het Product voor AEM as a Cloud Service ](assets/aem-cloud-service-instances.png)
+   ![&#x200B; de profielen van het Product voor AEM as a Cloud Service &#x200B;](assets/aem-cloud-service-instances.png)
 
 1. Klik op het gebruikersprofiel Deelnemers en klik op **[!UICONTROL Add users]** om gebruikers of gebruikersgroepen toe te voegen aan het productprofiel.
-   ![ het productprofiel van de Gebruiker ](assets/aem-assets-collaborator-user-permissions.png)
+   ![&#x200B; het productprofiel van de Gebruiker &#x200B;](assets/aem-assets-collaborator-user-permissions.png)
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
 U kunt ook toegang krijgen tot de services die zijn toegewezen aan gebruikers van Medewerkers, zoals wordt weergegeven in de volgende afbeelding:
 
-![ de Diensten voor de gebruikers van de Medewerker ](assets/aem-assets-collaborator-users.png)
+![&#x200B; de Diensten voor de gebruikers van de Medewerker &#x200B;](assets/aem-assets-collaborator-users.png)
 
 `Adobe Express` - en `AEM Assets Collaborator Users` -services zijn standaard ingeschakeld.
 
@@ -185,16 +185,16 @@ Aan boord van stroomgebruikers:
 1. Open Experience Manager Assets-productprofielen door op de AEM as a Cloud Service-productnaam in de lijst met producten op Admin Console te klikken.
 
 1. Klik op de productieauteur-instantie voor AEM as a Cloud Service:
-   ![ de profielen van het Product voor AEM as a Cloud Service ](assets/aem-cloud-service-instances.png)
+   ![&#x200B; de profielen van het Product voor AEM as a Cloud Service &#x200B;](assets/aem-cloud-service-instances.png)
 
 1. Klik op het productprofiel voor Power-gebruikers en klik op **[!UICONTROL Add users]** om gebruikers of gebruikersgroepen toe te voegen aan het productprofiel.
-   ![ het productprofiel van de Gebruiker ](assets/aem-assets-power-user-permissions.png)
+   ![&#x200B; het productprofiel van de Gebruiker &#x200B;](assets/aem-assets-power-user-permissions.png)
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
 U kunt ook toegang krijgen tot de services die zijn toegewezen aan Power-gebruikers en deze weergeven, zoals in de volgende afbeelding wordt getoond:
 
-![ de Diensten voor de gebruikers van de Macht ](assets/aem-assets-power-users.png)
+![&#x200B; de Diensten voor de gebruikers van de Macht &#x200B;](assets/aem-assets-power-users.png)
 
 `Adobe Express` - en `AEM Assets Power Users` -services zijn standaard ingeschakeld.
 

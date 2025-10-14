@@ -20,7 +20,7 @@ Voer de onderstaande stappen uit om de naam van een element of map te wijzigen:
 
 1. Gebruik een van de volgende manieren om de naam van een element of map te wijzigen:
 
-   * Selecteer de activa of de omslag en klik ![ anders noemen pictogram ](assets/do-not-localize/rename-icon.png) **[!UICONTROL Rename]** van het hoogste menu.
+   * Selecteer de activa of de omslag en klik ![&#x200B; anders noemen pictogram &#x200B;](assets/do-not-localize/rename-icon.png) **[!UICONTROL Rename]** van het hoogste menu.
    * Klik op meer opties `...` in het element of de map en selecteer **[!UICONTROL Rename]** .
    * Klik op de titel van een element of map om de naam ervan te wijzigen. Vermelding de nieuwe tekst in **anders noemt Activa** textbox en klikt **sparen**. Deze mogelijkheid is beschikbaar in de raster-, galerie-, waterval- en lijstweergaven.
 
@@ -32,15 +32,15 @@ Voer de onderstaande stappen uit om de naam van het grootste deel van de element
 
 1. Selecteer meerdere elementen en klik op **[!UICONTROL Bulk Rename]** in het bovenste menu.
 
-1. Voeg de vraag toe die beschrijft hoe u de geselecteerde activa wilt anders noemen. Verwijs naar [ sommige voorbeelden die AI Bulk illustreren anders noemen ](#examples-ai-bulk-rename).
+1. Voeg de vraag toe die beschrijft hoe u de geselecteerde activa wilt anders noemen. Verwijs naar [&#x200B; sommige voorbeelden die AI Bulk illustreren anders noemen &#x200B;](#examples-ai-bulk-rename).
 
 1. Klik op **[!UICONTROL Execute]** als u wilt dat AI de naam van elementen kan wijzigen zoals wordt vermeld in de vraag.
 
-1. [ Facultatieve ] klik ![ ongedaan maken pictogram ](assets/do-not-localize/undo.svg) om de laatste actie terug te keren of te annuleren u uitvoerde.
+1. [ Facultatieve ] klik ![&#x200B; ongedaan maken pictogram &#x200B;](assets/do-not-localize/undo.svg) om de laatste actie terug te keren of te annuleren u uitvoerde.
 
 1. Controleer de wijzigingen in de kolom [!UICONTROL New name preview] en klik op **[!UICONTROL Save]** .
 
-   ![ AI bulkanders noemen ](assets/ai-bulk-rename.png)
+   ![&#x200B; AI bulkanders noemen &#x200B;](assets/ai-bulk-rename.png)
 
 ## Enkele voorbeelden ter illustratie van gewijzigde naam voor AI-bulknamen {#examples-ai-bulk-rename}
 
@@ -61,10 +61,10 @@ Hieronder volgen enkele voorbeelden waarmee u AI kunt gebruiken om de naam van a
 
 ## Volgende stappen {#next-steps}
 
-* [ bekijk een video om meta-gegevensvormen in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=nl-NL)
+* [&#x200B; bekijk een video om meta-gegevensvormen in de mening van Assets te beheren &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=nl-NL)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
 * De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)

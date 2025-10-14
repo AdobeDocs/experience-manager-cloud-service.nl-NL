@@ -15,12 +15,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=nl-NL) |
+| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
@@ -186,13 +186,13 @@ Assets heeft bestaande eigenschapswaarden die kunnen worden weergegeven in de al
 
 1. Open de eigenschappenpagina op een van de volgende manieren:
 
-   * Klik het **[!UICONTROL Properties]** ![ pictogram van Eigenschappen ](assets/Smock_Info_18_N.svg) van Snelle Acties.
+   * Klik het **[!UICONTROL Properties]** ![&#x200B; pictogram van Eigenschappen &#x200B;](assets/Smock_Info_18_N.svg) van Snelle Acties.
 
      >[!NOTE]
      >
      >Snelle acties zijn de actiepunten die over een duimnagel worden getoond wanneer de muiswijzer.
 
-   * Selecteer de vorm en klik het **[!UICONTROL Properties]** ![ Eigenschappen ](assets/Smock_Info_18_N.svg) pictogram dat in de toolbar verschijnt.
+   * Selecteer de vorm en klik het **[!UICONTROL Properties]** ![&#x200B; Eigenschappen &#x200B;](assets/Smock_Info_18_N.svg) pictogram dat in de toolbar verschijnt.
    * Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het ![&#128279;](assets/Smock_Info_18_N.svg) oogpictogram van Eigenschappen 0&rbrace; &lbrace;op het hogere recht, en klik dan Eigenschappen in de lijst onder het.
 
 1. De bezitspagina die opent toont een schema dat slechts die meta-gegevenseigenschappen bevat die één of andere waarde houden.
@@ -266,7 +266,7 @@ Er is een hulpprogramma (de Editor voor metagegevensschema&#39;s) beschikbaar wa
 
 1. Elk type element waarop u klikt, opent een lijst met de optie `extendedmetadata` . Bewerk dit schema.
 
-1. Selecteer checkbox naast `extendedmetadata` en klik dan uitgeven ![ ](assets/Smock_Edit_18_N.svg) pictogram dat in de toolbar verschijnt.
+1. Selecteer checkbox naast `extendedmetadata` en klik dan uitgeven ![&#x200B; &#x200B;](assets/Smock_Edit_18_N.svg) pictogram dat in de toolbar verschijnt.
 
 1. [!DNL AEM Forms] opent de editor/formulierbuilder voor het metagegevensschema van het geselecteerde elementtype (in dit geval Adaptief formulier).
 
@@ -303,7 +303,7 @@ Er is een hulpprogramma (de Editor voor metagegevensschema&#39;s) beschikbaar wa
       >De eigenschapsnaam moet ook uniek zijn om te voorkomen dat waarden worden geschreven voor twee of meer eigenschappen op dezelfde locatie in de opslagplaats. Het wordt daarom aanbevolen de waarde &#39;default&#39; te wijzigen.
 
    1. Vul andere instellingen in op basis van vereisten. Selecteer bijvoorbeeld de optie Vereist als u het veld verplicht wilt maken.
-   1. Om een gebied te schrappen u toevoegde, selecteer het gebied en klik dan schrapping ![ schrap ](assets/Smock_Delete_18_N.svg) pictogram.
+   1. Om een gebied te schrappen u toevoegde, selecteer het gebied en klik dan schrapping ![&#x200B; schrap &#x200B;](assets/Smock_Delete_18_N.svg) pictogram.
 
 1. Voer indien nodig stap 1-3 uit om een andere eigenschap toe te voegen.
 1. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht.

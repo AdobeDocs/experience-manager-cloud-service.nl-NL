@@ -17,9 +17,9 @@ ht-degree: 0%
 >[!CAUTION]
 >
 >* De fragmenten AEM Ervaring worden geëxporteerd naar de standaardwerkruimte van Adobe Target.
->* AEM moet met Adobe Target volgens de instructies onder [ worden geïntegreerd die met Adobe Target ](/help/sites-cloud/integrating/integrating-adobe-target.md) integreren.
+>* AEM moet met Adobe Target volgens de instructies onder [&#x200B; worden geïntegreerd die met Adobe Target &#x200B;](/help/sites-cloud/integrating/integrating-adobe-target.md) integreren.
 
-U kunt [ Fragmenten van de Ervaring ](/help/sites-cloud/authoring/fragments/content-fragments.md) uitvoeren, die in Adobe Experience Manager as a Cloud Service (AEM), aan Adobe Target (Doel) worden gecreeerd. Zij kunnen dan als aanbiedingen in de activiteiten van het Doel worden gebruikt, om ervaringen op schaal te testen en te personaliseren.
+U kunt [&#x200B; Fragmenten van de Ervaring &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md) uitvoeren, die in Adobe Experience Manager as a Cloud Service (AEM), aan Adobe Target (Doel) worden gecreeerd. Zij kunnen dan als aanbiedingen in de activiteiten van het Doel worden gebruikt, om ervaringen op schaal te testen en te personaliseren.
 
 Er zijn drie opties beschikbaar voor het exporteren van een Experience-fragment naar Adobe Target:
 
@@ -37,7 +37,7 @@ Daarna kunt u:
 
 * [Een ervaringsfragment exporteren naar Adobe Target](#exporting-an-experience-fragment-to-adobe-target)
 * [Je ervaringsfragmenten in Adobe Target gebruiken](#using-your-experience-fragments-in-adobe-target)
-* En ook [ schrap een Fragment van de Ervaring reeds die naar Adobe Target ](#deleting-an-experience-fragment-already-exported-to-adobe-target) wordt uitgevoerd
+* En ook [&#x200B; schrap een Fragment van de Ervaring reeds die naar Adobe Target &#x200B;](#deleting-an-experience-fragment-already-exported-to-adobe-target) wordt uitgevoerd
 
 U kunt Experience Fragments exporteren naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target.
 
@@ -53,22 +53,22 @@ U kunt Experience Fragments exporteren naar de standaardwerkruimte in Adobe Targ
 >
 >Raadpleeg de volgende secties voor meer informatie:
 >
->* [ de ontwikkeling van Adobe Target ](https://developers.adobetarget.com/)
->* [ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
->* [ Adobe Target - hoe gebruik ik de Fragmenten van de de Ervaring van Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=nl-NL)
->* [ AEM 6.5 - Vormend manueel de Integratie met Adobe Target - Creërend een Configuratie van de Wolk van het Doel ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=nl-NL#creating-a-target-cloud-configuration)
+>* [&#x200B; de ontwikkeling van Adobe Target &#x200B;](https://developers.adobetarget.com/)
+>* [&#x200B; Componenten van de Kern - de Fragmenten van de Ervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+>* [&#x200B; Adobe Target - hoe gebruik ik de Fragmenten van de de Ervaring van Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=nl-NL)
+>* [&#x200B; AEM 6.5 - Vormend manueel de Integratie met Adobe Target - Creërend een Configuratie van de Wolk van het Doel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=nl-NL#creating-a-target-cloud-configuration)
 
 ## Vereisten {#prerequisites}
 
 Er zijn verschillende acties vereist:
 
-1. U moet [ AEM met Adobe Target ](/help/sites-cloud/integrating/integrating-adobe-target.md) integreren.
+1. U moet [&#x200B; AEM met Adobe Target &#x200B;](/help/sites-cloud/integrating/integrating-adobe-target.md) integreren.
 
-1. De Fragmenten van de ervaring worden uitgevoerd van de AEM auteurinstantie, zodat moet u [ AEM Verbinding uiterlijk vormen ](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer) op de auteursinstantie om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
+1. De Fragmenten van de ervaring worden uitgevoerd van de AEM auteurinstantie, zodat moet u [&#x200B; AEM Verbinding uiterlijk vormen &#x200B;](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer) op de auteursinstantie om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
 
    >[!NOTE]
    >
-   >Voor verbinding die niet door het gebrek herschrijft, is de [ Verstrekker van de Verbinding van het Fragment van de Ervaring Rewriter ](/help/implementing/developing/extending/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) beschikbaar. Met dit, kunnen de aangepaste regels voor uw geval worden ontwikkeld.
+   >Voor verbinding die niet door het gebrek herschrijft, is de [&#x200B; Verstrekker van de Verbinding van het Fragment van de Ervaring Rewriter &#x200B;](/help/implementing/developing/extending/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) beschikbaar. Met dit, kunnen de aangepaste regels voor uw geval worden ontwikkeld.
 
 ## Cloudconfiguratie toevoegen {#add-the-cloud-configuration}
 
@@ -98,7 +98,7 @@ De vereiste opties kunnen in **Eigenschappen van de Pagina** van de vereiste oms
    >
    >De JSON-indeling van een Experience Fragment-aanbieding kan worden aangepast. Hiervoor definieert u een component van het fragment van de klantenervaring en annoteert u hoe u de eigenschappen van de component in het Sling-model kunt exporteren.
    >
-   >Zie de kerncomponent: [ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=nl-NL)
+   >Zie de kerncomponent: [&#x200B; Componenten van de Kern - de Fragmenten van de Ervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=nl-NL)
 
 1. Onder **Adobe Target** uitgezocht:
 
@@ -111,13 +111,13 @@ De vereiste opties kunnen in **Eigenschappen van de Pagina** van de vereiste oms
    >
    >Het externalizer-domein is optioneel.
    >
-   > Een AEM externalizer wordt gevormd wanneer u de uitgevoerde inhoud aan specifiek *wilt richten publiceert* domein. Voor meer details zie [ Vormend de AEM Verbinding Externalzer ](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer).
+   > Een AEM externalizer wordt gevormd wanneer u de uitgevoerde inhoud aan specifiek *wilt richten publiceert* domein. Voor meer details zie [&#x200B; Vormend de AEM Verbinding Externalzer &#x200B;](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer).
    >
    > Houd er ook rekening mee dat Externe domeinen alleen relevant zijn voor de inhoud van het ervaringsfragment dat naar Doel wordt verzonden, en niet voor metagegevens zoals Inhoud weergaveaanbod.
 
    Bijvoorbeeld voor een map:
 
-   ![ Omslag - Cloud Servicen ](assets/xf-target-integration-01.png " Omslag - Cloud Servicen ")
+   ![&#x200B; Omslag - Cloud Servicen &#x200B;](assets/xf-target-integration-01.png " Omslag - Cloud Servicen ")
 
 1. **sparen &amp; sluit**.
 
@@ -129,7 +129,7 @@ De vereiste opties kunnen in **Eigenschappen van de Pagina** van de vereiste oms
 >
 >Het toevoegen van een nieuwe configuratie van de Oudheid is een speciaal casescenario dat slechts voor de uitvoer van de Fragmenten van de Ervaring wordt gesteund.
 
-Na [ toevoegend de Configuratie van de Wolk ](#add-the-cloud-configuration) om Launch by Adobe te gebruiken, om AEM met Adobe Target aanvankelijk te integreren, moet u ook manueel met Adobe Target integreren gebruikend een erfenisconfiguratie.
+Na [&#x200B; toevoegend de Configuratie van de Wolk &#x200B;](#add-the-cloud-configuration) om Launch by Adobe te gebruiken, om AEM met Adobe Target aanvankelijk te integreren, moet u ook manueel met Adobe Target integreren gebruikend een erfenisconfiguratie.
 
 ### Een doelcloud-configuratie maken {#creating-a-target-cloud-configuration}
 
@@ -142,7 +142,7 @@ U kunt de wolkenconfiguratie vormen om segmenten van Adobe Target te synchronise
 Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM tot stand te brengen:
 
 1. Navigeer aan **Verouderde Cloud Servicen** via het **AEM embleem** > **Hulpmiddelen** > **Cloud Servicen** > **Verouderde Cloud Servicen**.
-Bijvoorbeeld: ([ http://localhost:4502/libs/cq/core/content/tools/cloudservices.html ](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+Bijvoorbeeld: ([&#x200B; http://localhost:4502/libs/cq/core/content/tools/cloudservices.html &#x200B;](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    De **Adobe Experience Cloud** overzichtspagina opent.
 
@@ -157,7 +157,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
 1. Het dialoogvenster Bewerken wordt geopend.
 
-   ![ config-doel-montages-dialoog ](assets/config-target-settings-dialog.png)
+   ![&#x200B; config-doel-montages-dialoog &#x200B;](assets/config-target-settings-dialog.png)
 
    <!-- Can this still occur?
 
@@ -198,7 +198,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
      >[!NOTE]
      >
-     >Het dossier van de Bibliotheek van het Doel, [ AT.JS ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=nl-NL), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen.
+     >Het dossier van de Bibliotheek van het Doel, [&#x200B; AT.JS &#x200B;](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=nl-NL), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen.
      >
      >mbox.js is afgekeurd en wordt in een later stadium verwijderd.
      >
@@ -243,7 +243,7 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel creëren. 
 
    <!-- ![config-target-framework-dialog](assets/config-target-framework-dialog.png) -->
 
-   De pagina Framework wordt geopend. Sidekick verstrekt componenten die informatie van [ ContextHub ](/help/implementing/developing/personalization/configuring-contexthub.md) vertegenwoordigen die u kunt in kaart brengen.
+   De pagina Framework wordt geopend. Sidekick verstrekt componenten die informatie van [&#x200B; ContextHub &#x200B;](/help/implementing/developing/personalization/configuring-contexthub.md) vertegenwoordigen die u kunt in kaart brengen.
 
    <!-- ![Framework](assets/chlimage_1-162.png) -->
 
@@ -347,7 +347,7 @@ Een ervaringsfragment exporteren van AEM naar doel (na het opgeven van de cloudc
 
    >[!NOTE]
    >
-   >[ de Diverse details ](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-experience-fragment) van de uitvoer kunnen in **Mening van de Lijst** van de console en **Eigenschappen** worden gezien.
+   >[&#x200B; de Diverse details &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-experience-fragment) van de uitvoer kunnen in **Mening van de Lijst** van de console en **Eigenschappen** worden gezien.
 
    >[!NOTE]
    >
@@ -355,11 +355,11 @@ Een ervaringsfragment exporteren van AEM naar doel (na het opgeven van de cloudc
 
 >[!NOTE]
 >
->Alternatief, kunt u de uitvoer van de paginaredacteur uitvoeren, gebruikend vergelijkbare bevelen in het [ menu van de Informatie van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md#page-information).
+>Alternatief, kunt u de uitvoer van de paginaredacteur uitvoeren, gebruikend vergelijkbare bevelen in het [&#x200B; menu van de Informatie van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/introduction.md#page-information).
 
 ## Uw ervaringsfragmenten in Adobe Target gebruiken {#using-your-experience-fragments-in-adobe-target}
 
-Na het uitvoeren van de voorafgaande taken, toont het ervaringsfragment op de pagina van Aanbiedingen in Doel. Zie [ specifieke documentatie van het Doel ](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) om over te leren wat u daar kunt bereiken.
+Na het uitvoeren van de voorafgaande taken, toont het ervaringsfragment op de pagina van Aanbiedingen in Doel. Zie [&#x200B; specifieke documentatie van het Doel &#x200B;](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) om over te leren wat u daar kunt bereiken.
 
 >[!NOTE]
 >

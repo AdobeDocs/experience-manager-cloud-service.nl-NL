@@ -20,7 +20,7 @@ Leer hoe u snel een AEM-site kunt maken met een sitesjabloon.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [ Begrijp Cloud Manager en het Snelle Werkschema van de Aanmaak van de Plaats ](cloud-manager.md), leerde u over Cloud Manager en hoe het het nieuwe Snelle proces van de Aanmaak van de Plaats verbindt en u zou nu moeten:
+In het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [&#x200B; Begrijp Cloud Manager en het Snelle Werkschema van de Aanmaak van de Plaats &#x200B;](cloud-manager.md), leerde u over Cloud Manager en hoe het het nieuwe Snelle proces van de Aanmaak van de Plaats verbindt en u zou nu moeten:
 
 * Begrijp hoe AEM Sites en Cloud Manager samenwerken om front-end ontwikkeling te vergemakkelijken
 * Ontdek hoe de stap voor aanpassing aan de voorkant volledig losgekoppeld is van AEM en geen AEM-kennis vereist.
@@ -58,7 +58,7 @@ Sjablonen zijn krachtig omdat ze herbruikbaar zijn, zodat de auteurs van de inho
 
 De eenvoudigste manier om begonnen te worden is de recentste versie van het Malplaatje van de Plaats van AEM Standaard van zijn bewaarplaats GitHub [&#128279;](https://github.com/adobe/aem-site-template-standard/releases) te downloaden.
 
-Na het downloaden kunt u het net als elk ander pakket uploaden naar uw AEM-omgeving. Zie de [ Extra sectie van Middelen ](#additional-resources) voor details op hoe te met pakketten werken als u meer informatie over dit onderwerp nodig hebt.
+Na het downloaden kunt u het net als elk ander pakket uploaden naar uw AEM-omgeving. Zie de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) voor details op hoe te met pakketten werken als u meer informatie over dit onderwerp nodig hebt.
 
 >[!TIP]
 >
@@ -78,17 +78,17 @@ Het is eenvoudig om een site te maken met een sjabloon.
 
 1. Selecteer **creeer** bij het hoogste recht van het scherm en van het drop-down menu uitgezocht **Plaats van malplaatje**.
 
-   ![ Creërend een nieuwe plaats van een malplaatje ](assets/create-site-from-template.png)
+   ![&#x200B; Creërend een nieuwe plaats van een malplaatje &#x200B;](assets/create-site-from-template.png)
 
 1. In de Create tovenaar van de Plaats, uitgezochte **Invoer** bij de bovenkant van de linkerkolom.
 
-   ![ tovenaar van de creatie van de Plaats ](assets/site-creation-wizard.png)
+   ![&#x200B; tovenaar van de creatie van de Plaats &#x200B;](assets/site-creation-wizard.png)
 
-1. In dossierbrowser, bepaal de plaats van het malplaatje [ u eerder ](#obtaining-template) downloadde en **selecteert uploadt**.
+1. In dossierbrowser, bepaal de plaats van het malplaatje [&#x200B; u eerder &#x200B;](#obtaining-template) downloadde en **selecteert uploadt**.
 
 1. Zodra het geüpload, verschijnt het in de lijst van beschikbare malplaatjes. Selecteer het om het te selecteren (die ook informatie over het malplaatje in de juiste kolom) openbaart en dan **daarna** selecteert.
 
-   ![ selecteer een malplaatje ](assets/select-site-template.png)
+   ![&#x200B; selecteer een malplaatje &#x200B;](assets/select-site-template.png)
 
 1. Geef een titel op voor uw site. U kunt een sitenaam opgeven of genereren op basis van de titel, als u deze weglaat.
 
@@ -97,15 +97,15 @@ Het is eenvoudig om een site te maken met een sjabloon.
 
 1. Selecteer **creeer** en de nieuwe plaats wordt gecreeerd van het plaatssjabloon.
 
-   ![ Details van de nieuwe plaats ](assets/create-site-details.png)
+   ![&#x200B; Details van de nieuwe plaats &#x200B;](assets/create-site-details.png)
 
 1. In de bevestigingsdialoog die verschijnt, uitgezocht **Gedaan**.
 
-   ![ de dialoog van het Succes ](assets/success.png)
+   ![&#x200B; de dialoog van het Succes &#x200B;](assets/success.png)
 
 1. In de plaatsenconsole, is de nieuwe plaatsen zichtbaar en kan worden genavigeerd om zijn basisstructuur te onderzoeken zoals die door het malplaatje wordt bepaald.
 
-   ![ Nieuwe plaatsstructuur ](assets/new-site.png)
+   ![&#x200B; Nieuwe plaatsstructuur &#x200B;](assets/new-site.png)
 
 Inhoudsauteurs kunnen nu beginnen met ontwerpen.
 
@@ -122,15 +122,15 @@ Als u extra front-end aanpassing vereist, houd in mening dat de front-end ontwik
 
 1. In plaatsen browser, navigeer aan de homepage van de hoofdtaal van de plaats en selecteer dan de pagina om het te selecteren en dan **uitgezocht geef** in de menubar uit.
 
-   ![ Typische homepage ](assets/home-page-in-console.png)
+   ![&#x200B; Typische homepage &#x200B;](assets/home-page-in-console.png)
 
 1. In de redacteur, selecteer de **knoop van de Informatie van de Pagina** in de toolbar en dan **Mening zoals gepubliceerd**.
 
-   ![ Uitgevend de homepage ](assets/home-page-edit.png)
+   ![&#x200B; Uitgevend de homepage &#x200B;](assets/home-page-edit.png)
 
 1. Kopieer op het tabblad dat wordt geopend het pad van de inhoud van de adresbalk. Het zal er ongeveer als `/content/<your-site>/en/home.html?wcmmode=disabled` uitzien.
 
-   ![ Homepage van het Huis ](assets/home-page.png)
+   ![&#x200B; Homepage van het Huis &#x200B;](assets/home-page.png)
 
 1. Sla het pad op dat u later aan de front-end ontwikkelaar wilt geven.
 
@@ -140,11 +140,11 @@ Nu de site is gemaakt, kan het thema van de site dat door de sjabloon wordt gege
 
 1. Op de plaatsenconsole, toon het **spoor van de Plaats**.
 
-   ![ toon plaatsen spoor ](assets/show-site-rail.png)
+   ![&#x200B; toon plaatsen spoor &#x200B;](assets/show-site-rail.png)
 
 1. Selecteer de wortel van uw nieuwe plaats en selecteer dan **de Bronnen van het Thema van de Download** in de plaats spoorstaaf.
 
-   ![ Download themabronnen ](assets/download-theme-sources.png)
+   ![&#x200B; Download themabronnen &#x200B;](assets/download-theme-sources.png)
 
 U hebt nu een kopie van de bronbestanden voor thema&#39;s in uw downloadbestanden.
 
@@ -155,17 +155,17 @@ Als u wilt dat de front-end ontwikkelaar de aanpassingen voorvertoont met AEM-in
 1. In AEM van belangrijkste navigatie gaat naar **Hulpmiddelen** > **Veiligheid** > **Gebruikers**.
 1. In de console van het gebruikersbeheer, uitgezochte **creeert**.
 
-   ![ de beheersconsole van de Gebruiker ](assets/user-management-console.png)
+   ![&#x200B; de beheersconsole van de Gebruiker &#x200B;](assets/user-management-console.png)
 1. In **creeer Nieuwe Gebruiker** venster u moet minstens verstrekken:
    * **identiteitskaart** - neem nota van deze waarde aangezien u het aan de front-end ontwikkelaar moet verstrekken.
    * **Wachtwoord** - sparen deze waarde veilig in een wachtwoordkluis aangezien u het aan de front-end ontwikkelaar moet verstrekken.
 
-   ![ Nieuwe gebruikersdetails ](assets/new-user-details.png)
+   ![&#x200B; Nieuwe gebruikersdetails &#x200B;](assets/new-user-details.png)
 
 1. Op het **lusje van Groepen**, voeg de volmachtsgebruiker aan de `contributors` groep toe.
    * Als u de term `contributors` typt, wordt de functie voor automatisch aanvullen in AEM geactiveerd, zodat u de groep gemakkelijk kunt selecteren.
 
-   ![ toevoegen aan groep ](assets/add-to-group.png)
+   ![&#x200B; toevoegen aan groep &#x200B;](assets/add-to-group.png)
 
 1. Selecteer **sparen &amp; Sluiten**.
 
@@ -179,16 +179,16 @@ Nu u dit deel van de AEM Quick Site Creation-reis hebt voltooid, kunt u het volg
 * Leer hoe u een site maakt met een sjabloon.
 * Zie hoe u de sjabloon van uw nieuwe site kunt downloaden en aan de front-end ontwikkelaar kunt leveren.
 
-Bouw op deze kennis voort en ga uw reis van het Gemaakt van de Plaats van AEM Snelle door het document [ eerst te herzien Opstelling Uw Pijpleiding ](pipeline-setup.md) voort, waar u een front-end pijpleiding zult creëren om de aanpassing van het thema van uw plaats te beheren.
+Bouw op deze kennis voort en ga uw reis van het Gemaakt van de Plaats van AEM Snelle door het document [&#x200B; eerst te herzien Opstelling Uw Pijpleiding &#x200B;](pipeline-setup.md) voort, waar u een front-end pijpleiding zult creëren om de aanpassing van het thema van uw plaats te beheren.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door de document [ Reeks te herzien Uw Pijpleiding ](pipeline-setup.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door de document [&#x200B; Reeks te herzien Uw Pijpleiding &#x200B;](pipeline-setup.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [ het StandaardMalplaatje van de Plaats van AEM ](https://github.com/adobe/aem-site-template-standard) - dit is de bewaarplaats GitHub van het malplaatje van de Plaats van AEM Standaard.
-* [ het Organiseren van Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Deze gids specificeert hoe te om de pagina&#39;s van uw Plaats van AEM te organiseren.
-* [ Creërend Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Deze gids bepaalt hoe te om nieuwe pagina&#39;s aan uw plaats toe te voegen.
-* [ het Leiden Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Deze gids bepaalt hoe te om de pagina&#39;s van uw plaats te beheren met inbegrip van het bewegen, het kopiëren, en het schrappen.
-* [ hoe te met Pakket ](/help/implementing/developing/tools/package-manager.md) te werken - de Pakketten laten het invoeren en het uitvoeren van bewaarplaatsinhoud toe. In dit document wordt uitgelegd hoe u met pakketten werkt in AEM 6.5. Dit geldt ook voor AEMaaCS.
-* [ Documentatie van het Beleid van de Plaats ](/help/sites-cloud/administering/site-creation/create-site.md) - Controle uit de technische documenten op plaatsverwezenlijking voor meer details op de Snelle eigenschappen van het hulpmiddel van de Aanmaak van de Plaats.
-* [ creeer of voeg vormen aan een pagina van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) toe - leer geleidelijke technieken en beste praktijken voor het integreren van vormen in uw website, die uw digitale ervaringen voor maximumeffect optimaliseren.
+* [&#x200B; het StandaardMalplaatje van de Plaats van AEM &#x200B;](https://github.com/adobe/aem-site-template-standard) - dit is de bewaarplaats GitHub van het malplaatje van de Plaats van AEM Standaard.
+* [&#x200B; het Organiseren van Pagina&#39;s &#x200B;](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Deze gids specificeert hoe te om de pagina&#39;s van uw Plaats van AEM te organiseren.
+* [&#x200B; Creërend Pagina&#39;s &#x200B;](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Deze gids bepaalt hoe te om nieuwe pagina&#39;s aan uw plaats toe te voegen.
+* [&#x200B; het Leiden Pagina&#39;s &#x200B;](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Deze gids bepaalt hoe te om de pagina&#39;s van uw plaats te beheren met inbegrip van het bewegen, het kopiëren, en het schrappen.
+* [&#x200B; hoe te met Pakket &#x200B;](/help/implementing/developing/tools/package-manager.md) te werken - de Pakketten laten het invoeren en het uitvoeren van bewaarplaatsinhoud toe. In dit document wordt uitgelegd hoe u met pakketten werkt in AEM 6.5. Dit geldt ook voor AEMaaCS.
+* [&#x200B; Documentatie van het Beleid van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/create-site.md) - Controle uit de technische documenten op plaatsverwezenlijking voor meer details op de Snelle eigenschappen van het hulpmiddel van de Aanmaak van de Plaats.
+* [&#x200B; creeer of voeg vormen aan een pagina van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) toe - leer geleidelijke technieken en beste praktijken voor het integreren van vormen in uw website, die uw digitale ervaringen voor maximumeffect optimaliseren.

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Werken met dynamische media {#working-with-dynamic-media}
 
-[ de Dynamische hulp van Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[&#x200B; de Dynamische hulp van Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360° draaien en video. Dynamic Media integreert op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
@@ -34,7 +34,7 @@ Dynamic Media integreert naadloos met uw DAM-systeem (Digital Asset Management) 
 
 ## Wat u met Dynamische Media kunt doen {#what-you-can-do-with-dynamic-media}
 
-Met Dynamische media kunt u uw elementen beheren voordat u ze publiceert. Hoe te met activa in het algemeen te werken is in detail behandeld in [ Werkend met Digitale Assets ](/help/assets/manage-digital-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
+Met Dynamische media kunt u uw elementen beheren voordat u ze publiceert. Hoe te met activa in het algemeen te werken is in detail behandeld in [&#x200B; Werkend met Digitale Assets &#x200B;](/help/assets/manage-digital-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
 
 De dynamische Media-enige eigenschappen omvatten het volgende:
 
@@ -50,7 +50,7 @@ De dynamische Media-enige eigenschappen omvatten het volgende:
 * [Assets beheren](managing-assets.md)
 * [Snelle weergaven gebruiken om aangepaste pop-upvensters te maken](custom-pop-ups.md)
 
-Zie ook [ Opstelling Dynamische Media ](administering-dynamic-media.md).
+Zie ook [&#x200B; Opstelling Dynamische Media &#x200B;](administering-dynamic-media.md).
 
 <!-- 
 
@@ -75,26 +75,26 @@ Wanneer u op een afbeeldingselement klikt, is de weergave van het element anders
 
 Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]** ) zijn beschikbaar wanneer Dynamische media is ingeschakeld.
 
-![ chlimage_1-358 ](assets/chlimage_1-358.png)
+![&#x200B; chlimage_1-358 &#x200B;](assets/chlimage_1-358.png)
 
 ### Dynamische mediafobeeldingssets, spelersets, gemengde mediasets {#image-sets-spins-sets-mixed-media-sets}
 
 Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als Dynamische media is ingeschakeld.
 
-![ chlimage_1-359 ](assets/chlimage_1-359.png)
+![&#x200B; chlimage_1-359 &#x200B;](assets/chlimage_1-359.png)
 
 ### Dynamische PTIFF-uitvoeringen waarvoor media is ingeschakeld {#ptiff-renditions}
 
 Dynamische media-ingeschakelde elementen omvatten `pyramid.tiffs`.
 
-![ chlimage_1-360 ](assets/chlimage_1-360.png)
+![&#x200B; chlimage_1-360 &#x200B;](assets/chlimage_1-360.png)
 
 ### Weergave van dynamische media-elementen wijzigen {#asset-views-change}
 
 Als Dynamische media is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook selecteren om in bepaalde gebieden in te zoomen. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamische media ingeschakeld wordt als volgt weergegeven:
 
-![ chlimage_1-361 ](assets/chlimage_1-361.png)
+![&#x200B; chlimage_1-361 &#x200B;](assets/chlimage_1-361.png)
 
 Als Dynamische media is uitgeschakeld, kunt u in- en uitzoomen en terugkeren naar de oorspronkelijke grootte:
 
-![ chlimage_1-362 ](assets/chlimage_1-362.png)
+![&#x200B; chlimage_1-362 &#x200B;](assets/chlimage_1-362.png)

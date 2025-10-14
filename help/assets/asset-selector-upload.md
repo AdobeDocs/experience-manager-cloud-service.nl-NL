@@ -18,25 +18,25 @@ U kunt bestanden of mappen vanuit uw lokale bestandssysteem uploaden naar Asset 
 
 Voer de volgende stappen uit om elementen toe te voegen aan Asset Selector:
 
-1. Als u spoormening gebruikt, dan ga naar ellips en klik dan ![ uploadpictogram ](assets/upload-icon.svg) **[!UICONTROL Upload]**. Anderzijds, klik ![ uploadt pictogram ](assets/upload-icon.svg) **[!UICONTROL Upload]** op top-right in het geval van modale mening. Het scherm [!UICONTROL Upload Assets] wordt weergegeven.
+1. Als u spoormening gebruikt, dan ga naar ellips en klik dan ![&#x200B; uploadpictogram &#x200B;](assets/upload-icon.svg) **[!UICONTROL Upload]**. Anderzijds, klik ![&#x200B; uploadt pictogram &#x200B;](assets/upload-icon.svg) **[!UICONTROL Upload]** op top-right in het geval van modale mening. Het scherm [!UICONTROL Upload Assets] wordt weergegeven.
 
-   ![ upload activa aan de Selecteur van Activa ](assets/upload-assets.png)
+   ![&#x200B; upload activa aan de Selecteur van Activa &#x200B;](assets/upload-assets.png)
 
    Daarnaast kunt u in de sectie **[!UICONTROL Drag files or folders here]** de elementen slepen van het lokale bestandssysteem of op **[!UICONTROL Browse]** klikken om handmatig bestanden of mappen te selecteren die beschikbaar zijn op het lokale bestandssysteem. Deze lijst met bestanden die deel uitmaken van de upload, is beschikbaar als een lijst.
 
-   ![ Basis uploadt activa aan de Selecteur van Activa ](assets/basic-upload.png)
+   ![&#x200B; Basis uploadt activa aan de Selecteur van Activa &#x200B;](assets/basic-upload.png)
 
    U kunt geselecteerde afbeeldingen ook voorvertonen met behulp van de miniaturen en op het X-pictogram klikken om een bepaalde afbeelding uit de lijst te verwijderen. Het X-pictogram wordt alleen weergegeven wanneer u de muis boven de naam of grootte van de afbeelding houdt. U kunt ook op **[!UICONTROL Remove all]** klikken om alle items uit de uploadlijst te verwijderen.
 
-1. Klik op **[!UICONTROL Upload]** om het uploadproces te voltooien. Uw geüploade elementen worden weergegeven. Zie [ basisupload ](/help/assets/asset-selector-customization.md#basic-upload) voor de configureerbare code.
+1. Klik op **[!UICONTROL Upload]** om het uploadproces te voltooien. Uw geüploade elementen worden weergegeven. Zie [&#x200B; basisupload &#x200B;](/help/assets/asset-selector-customization.md#basic-upload) voor de configureerbare code.
 
 ## Elementen uploaden met metagegevens {#upload-assets-with-metadata}
 
-U kunt metagegevens aan de elementen toevoegen terwijl u deze direct in de toepassing uploadt. Metagegevens omvatten diverse velden, zoals de onderwerpregel van het bedrijf, productdetails, campagne enzovoort. Hiervoor wordt de eigenschap `metadataSchema` gebruikt. Ga naar [ eigenschappen van de activaselecteur ](/help/assets/asset-selector-properties.md) om meer over `metadataSchema` bezit te weten.
+U kunt metagegevens aan de elementen toevoegen terwijl u deze direct in de toepassing uploadt. Metagegevens omvatten diverse velden, zoals de onderwerpregel van het bedrijf, productdetails, campagne enzovoort. Hiervoor wordt de eigenschap `metadataSchema` gebruikt. Ga naar [&#x200B; eigenschappen van de activaselecteur &#x200B;](/help/assets/asset-selector-properties.md) om meer over `metadataSchema` bezit te weten.
 
-Zie [ uploaden met meta-gegevens ](/help/assets/asset-selector-customization.md#upload-with-metadata) voor het codefragment dat voor de configuratie wordt vereist.
+Zie [&#x200B; uploaden met meta-gegevens &#x200B;](/help/assets/asset-selector-customization.md#upload-with-metadata) voor het codefragment dat voor de configuratie wordt vereist.
 
-![ upload activa met meta-gegevens ](assets/upload-with-metadata.png)
+![&#x200B; upload activa met meta-gegevens &#x200B;](assets/upload-with-metadata.png)
 
 1. Definieer de naam voor het uploaden met behulp van het veld **[!UICONTROL Campaign name]** . U kunt een bestaande naam gebruiken of een nieuwe naam maken. Met de Asset Selector beschikt u over meer opties terwijl u de naam typt.
 
@@ -51,12 +51,12 @@ Zie [ uploaden met meta-gegevens ](/help/assets/asset-selector-customization.md#
 
 ## Aangepaste upload {#customize-upload}
 
-Met Asset Selector kunt u een aangepast uploadformulier toevoegen. Er zijn verschillende aanpassingen beschikbaar. Bijvoorbeeld staat het [ hideUploadButton ](/help/assets/asset-selector-properties.md) bezit u toe om uploadt knoop te verbergen die door gebrek in de toepassing wordt getoond. In plaats daarvan, kunt u het aanpassen om buiten de MFE toepassing zoals vereist terug te geven. Zie [ aangepaste upload ](/help/assets/asset-selector-customization.md#customized-upload) voor de configuratie.
+Met Asset Selector kunt u een aangepast uploadformulier toevoegen. Er zijn verschillende aanpassingen beschikbaar. Bijvoorbeeld staat het [&#x200B; hideUploadButton &#x200B;](/help/assets/asset-selector-properties.md) bezit u toe om uploadt knoop te verbergen die door gebrek in de toepassing wordt getoond. In plaats daarvan, kunt u het aanpassen om buiten de MFE toepassing zoals vereist terug te geven. Zie [&#x200B; aangepaste upload &#x200B;](/help/assets/asset-selector-customization.md#customized-upload) voor de configuratie.
 
-![ Aangepaste upload ](assets/customized-upload.png)
+![&#x200B; Aangepaste upload &#x200B;](assets/customized-upload.png)
 
 >[!MORELIKETHIS]
 >
->* [ Voorbeelden van de Selecteur van Activa ](/help/assets/asset-selector-examples.md)
->* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
->* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
+>* [&#x200B; Voorbeelden van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-examples.md)
+>* [&#x200B; integreer de Selector van Activa met diverse toepassingen &#x200B;](/help/assets/integrate-asset-selector.md)
+>* [&#x200B; Eigenschappen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-properties.md)

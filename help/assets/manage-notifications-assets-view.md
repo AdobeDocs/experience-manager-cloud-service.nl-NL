@@ -62,18 +62,18 @@ U kunt een keuze maken in een lijst met categorieën en u kunt zich hierop abonn
 
 Abonneer u op de berichtcategorieën:
 
-1. Klik ![ belpictogram ](assets/bell-icon.svg) bij het rechtereind van de menubar op het de meningsgebruikersinterface van Assets.
+1. Klik ![&#x200B; belpictogram &#x200B;](assets/bell-icon.svg) bij het rechtereind van de menubar op het de meningsgebruikersinterface van Assets.
 
-1. Klik ![ montagespictogram ](assets/settings-icon.svg) om de [!UICONTROL Experience Cloud preferences] pagina te bekijken.
+1. Klik ![&#x200B; montagespictogram &#x200B;](assets/settings-icon.svg) om de [!UICONTROL Experience Cloud preferences] pagina te bekijken.
 
 1. Klik op de optie **[!UICONTROL Notifications]** in het linkerdeelvenster.
 
 1. Navigeer in de sectie **[!UICONTROL Notifications]** naar de sectie [!UICONTROL Assets view] en controleer of de schakeloptie is ingesteld op Aan.
 
-   ![ Meldingen in de mening van Assets ](assets/enable-notifications.png)
+   ![&#x200B; Meldingen in de mening van Assets &#x200B;](assets/enable-notifications.png)
 
 1. Klik op **[!UICONTROL Customize]** om de berichtcategorieën weer te geven.
-   ![ Meldingen in de mening van Assets ](assets/enable-notification-categories.png)
+   ![&#x200B; Meldingen in de mening van Assets &#x200B;](assets/enable-notification-categories.png)
 
 1. Selecteer de berichtcategorieën waarvoor u op de hoogte moet worden gesteld.
 
@@ -81,7 +81,7 @@ Abonneer u op de berichtcategorieën:
 
 U kunt mappen, elementen of verzamelingen bekijken en de controle er ongedaan maken om op de hoogte te blijven, zodat u beter kunt samenwerken rond de elementen die u controleert.
 
-Na [ het intekenen aan de berichtcategorieën ](#subscribe-to-notification-categories), moet u aan de inhoud intekenen beginnen berichten te ontvangen.
+Na [&#x200B; het intekenen aan de berichtcategorieën &#x200B;](#subscribe-to-notification-categories), moet u aan de inhoud intekenen beginnen berichten te ontvangen.
 
 >[!NOTE]
 >
@@ -94,9 +94,9 @@ Voer de volgende stappen uit om u te abonneren op mappen, elementen of verzameli
 
 1. Blader naar de map, het element of de verzameling waarop u zich wilt abonneren en klik op **[!UICONTROL Watch]** .
 
-1. In de Assets-weergave wordt een succesbericht weergegeven. U kunt **[!UICONTROL Go to notification preferences]** in het succesbericht klikken om uw [ abonnement aan berichtcategorieën ](#subscribe-to-notification-categories) uit te geven.
+1. In de Assets-weergave wordt een succesbericht weergegeven. U kunt **[!UICONTROL Go to notification preferences]** in het succesbericht klikken om uw [&#x200B; abonnement aan berichtcategorieën &#x200B;](#subscribe-to-notification-categories) uit te geven.
 
-   ![ Meldingen in de mening van Assets ](assets/watch-assets.png)
+   ![&#x200B; Meldingen in de mening van Assets &#x200B;](assets/watch-assets.png)
 
 De Assets-weergave verzendt nu berichten voor de geabonneerde rubrieken. U kunt ook meerdere elementen, mappen of verzamelingen selecteren en op **[!UICONTROL Watch]** klikken om tijd te besparen. Als u echter meerdere items selecteert en sommige al zijn geabonneerd, wordt de optie **[!UICONTROL Watch]** niet weergegeven.
 
@@ -106,9 +106,9 @@ Voer de volgende stappen uit om uw geabonneerde inhoud weer te geven:
 
 1. Navigeer naar **[!UICONTROL Watched Assets]** onder [!UICONTROL Asset Management] .
 
-1. In de Assets-weergave wordt een lijst met geabonneerde elementen weergegeven, inclusief hun naam, type en pad. Selecteer een activa, een omslag, of een inzameling van de lijst om zijn details, plaats te bekijken, of [ unsubscribe ](#unsubscribe-to-content).
+1. In de Assets-weergave wordt een lijst met geabonneerde elementen weergegeven, inclusief hun naam, type en pad. Selecteer een activa, een omslag, of een inzameling van de lijst om zijn details, plaats te bekijken, of [&#x200B; unsubscribe &#x200B;](#unsubscribe-to-content).
 
-   ![ mening geabonneerde inhoud ](assets/view-watched-assets.png)
+   ![&#x200B; mening geabonneerde inhoud &#x200B;](assets/view-watched-assets.png)
 
 ### Inhoudsabonnees weergeven {#view-content-subscribers}
 
@@ -116,9 +116,9 @@ Voer de volgende stappen uit om uw abonnees van inhoud weer te geven:
 
 1. Navigeer in de map, het element of de verzameling en selecteer **[!UICONTROL Details]** .
 
-1. Klik oog ![ oogpictogram ](assets/do-not-localize/eye-icon.png) van de juiste ruit om een lijst van horloges van de inhoud te zien.
+1. Klik oog ![&#x200B; oogpictogram &#x200B;](assets/do-not-localize/eye-icon.png) van de juiste ruit om een lijst van horloges van de inhoud te zien.
 
-   Alternatief, klik {het pictogram van de Commentaar 0} ![ op de juiste ruit om inhoudsafwachters te zien.](assets/do-not-localize/comment-icon.svg)
+   Alternatief, klik {het pictogram van de Commentaar 0} ![&#x200B; op de juiste ruit om inhoudsafwachters te zien.](assets/do-not-localize/comment-icon.svg)
 
 ### Abonnement op de inhoud opzeggen {#unsubscribe-to-content}
 
@@ -128,14 +128,14 @@ Abonnement opzeggen:
 
 1. Selecteer het element, de map of de verzameling waarvan u het abonnement wilt opzeggen en klik op **[!UICONTROL Unwatch]** .
 
-   ![ unsubscribe inhoud ](assets/unsubscribe-assets.png)
+   ![&#x200B; unsubscribe inhoud &#x200B;](assets/unsubscribe-assets.png)
 
-U kunt ook naar de map, het element of de verzameling bladeren onder [!UICONTROL Asset Management] . Selecteer de [ ingetekende activa ](#subscribe-to-content) en klik **[!UICONTROL Unwatch]**.
+U kunt ook naar de map, het element of de verzameling bladeren onder [!UICONTROL Asset Management] . Selecteer de [&#x200B; ingetekende activa &#x200B;](#subscribe-to-content) en klik **[!UICONTROL Unwatch]**.
 
 ## Meldingen weergeven {#view-notifications}
 
 De meldingen worden rechts op de menubalk in de gebruikersinterface van de Assets-weergave weergegeven.
 
-![ Meldingen in de mening van Assets ](assets/notifications-assets-essentials.png)
+![&#x200B; Meldingen in de mening van Assets &#x200B;](assets/notifications-assets-essentials.png)
 
 Wanneer u op een melding klikt, navigeert de Assets-weergave u naar het juiste middel of de juiste map waarnaar in het bericht wordt verwezen.

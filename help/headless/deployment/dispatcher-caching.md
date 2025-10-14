@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Als het in het voorgeheugen onderbrengen in Dispatcher dan wordt toegelaten is de [ filter CORS ](/help/headless/deployment/cross-origin-resource-sharing.md) niet nodig, en zodat kan die sectie worden genegeerd.
+>Als het in het voorgeheugen onderbrengen in Dispatcher dan wordt toegelaten is de [&#x200B; filter CORS &#x200B;](/help/headless/deployment/cross-origin-resource-sharing.md) niet nodig, en zodat kan die sectie worden genegeerd.
 
 Het in cache plaatsen van doorlopende query&#39;s is niet standaard ingeschakeld in de Dispatcher. Standaardactivering is niet mogelijk omdat klanten die gebruikmaken van CORS (Cross-Origin Resource Sharing) met meerdere origines hun Dispatcher-configuratie moeten controleren en mogelijk bijwerken.
 
@@ -27,7 +27,7 @@ Het in cache plaatsen van doorlopende query&#39;s is niet standaard ingeschakeld
 
 >[!NOTE]
 >
->Voor gedetailleerde documentatie over Dispatcher, zie de [ Gids van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL).
+>Voor gedetailleerde documentatie over Dispatcher, zie de [&#x200B; Gids van Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL).
 
 ## Het in cache plaatsen van doorlopende query&#39;s inschakelen {#enable-caching-persisted-queries}
 
@@ -52,7 +52,7 @@ Definieer de Dispatcher-variabele `CACHE_GRAPHQL_PERSISTED_QUERIES` als u het in
 
 >[!NOTE]
 >
->Om aan de [ Dispatcher vereisten voor documenten in overeenstemming te zijn die ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=nl-NL#how-does-the-dispatcher-return-documents%3F) in het voorgeheugen kunnen worden opgeslagen, voegt Dispatcher het achtervoegsel `.json` aan alle voortgeduurde vraagURL&#39;s toe, zodat het resultaat in het voorgeheugen kan worden opgeslagen.
+>Om aan de [&#x200B; Dispatcher vereisten voor documenten in overeenstemming te zijn die &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=nl-NL#how-does-the-dispatcher-return-documents%3F) in het voorgeheugen kunnen worden opgeslagen, voegt Dispatcher het achtervoegsel `.json` aan alle voortgeduurde vraagURL&#39;s toe, zodat het resultaat in het voorgeheugen kan worden opgeslagen.
 >
 >Dit achtervoegsel wordt toegevoegd door herschrijft regel, zodra het voortbestaan vraagcaching wordt toegelaten.
 

@@ -37,7 +37,7 @@ AEM-formulieren bieden de volgende verzendacties uit de verpakking:
 * [Verzenden naar OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Een AEM-workflow aanroepen](/help/forms/configure-submit-action-workflow.md)
 * [Verzenden naar Marketo-pagina](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [ voorleggen aan Adobe Experience Platform (AEP) ](/help/forms/aem-forms-aep-connector.md)
+* [&#x200B; voorleggen aan Adobe Experience Platform (AEP) &#x200B;](/help/forms/aem-forms-aep-connector.md)
 * [Verzenden naar werkblad](/help/forms/forms-submission-service.md)
 
 U kunt ook een adaptief formulier verzenden naar andere opslagconfiguraties:
@@ -49,7 +49,7 @@ U kunt ook een adaptief formulier verzenden naar andere opslagconfiguraties:
 
 In de volgende tabel wordt aangegeven welke verzendacties worden ondersteund op basis van de in AEM Forms gebruikte methode voor het schrijven van formulieren:
 
-| Handeling verzenden | [ Componenten van de Stichting ](/help/forms/configuring-submit-actions.md) | [ Componenten van de Kern ](/help/forms/configure-submit-actions-core-components.md) | [ Universele Redacteur ](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [ op document-Gebaseerde Forms ](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
+| Handeling verzenden | [&#x200B; Componenten van de Stichting &#x200B;](/help/forms/configuring-submit-actions.md) | [&#x200B; Componenten van de Kern &#x200B;](/help/forms/configure-submit-actions-core-components.md) | [&#x200B; Universele Redacteur &#x200B;](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [&#x200B; op document-Gebaseerde Forms &#x200B;](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
 |----------------------------|------------------------|------------------|------------------|------------------------|
 | E-mail verzenden | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
 | Power Automated Flow | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
@@ -82,7 +82,7 @@ Alle OOTB-veldvalidaties (out-of-box) van een adaptief formulier die opnieuw wor
 
 Gebruik de **[!UICONTROL Revalidate on server]** onder Adaptief formuliercontainer in de zijbalk om validatie op de server in of uit te schakelen voor het huidige formulier.
 
-![ toelatend server-zijBevestiging ](assets/revalidate-on-server.png)
+![&#x200B; toelatend server-zijBevestiging &#x200B;](assets/revalidate-on-server.png)
 
 **toelatend server-zijBevestiging**
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Een van de krachtige functies van het maken van formulieren met behulp van een spreadsheet is de mogelijkheid om ingebouwde spreadsheetfuncties te gebruiken om regels te maken, zodat u formuliervelden voorwaardelijk kunt weergeven of verbergen, berekeningen kunt automatiseren op basis van gebruikersinvoer en een meer dynamische gebruikerservaring kunt creëren.
 
-Dit artikel begeleidt u door hoe te om diverse Adaptieve eigenschappen van het Blok van de Vorm hoofdzakelijk [`Visible`](#visible-property), [`Visibility Expression`](#visible-expression-property) en [`Value Expression`](#value-expression-property) eigenschappen samen met [ spreadsheetfuncties ](#spreadsheet-functions-for-rules) te gebruiken om efficiënte regels voor uw vormen tot stand te brengen. We zullen ook enkele voorbeelden bekijken om te illustreren hoe deze regels in de praktijk kunnen worden toegepast.
+Dit artikel begeleidt u door hoe te om diverse Adaptieve eigenschappen van het Blok van de Vorm hoofdzakelijk [`Visible`](#visible-property), [`Visibility Expression`](#visible-expression-property) en [`Value Expression`](#value-expression-property) eigenschappen samen met [&#x200B; spreadsheetfuncties &#x200B;](#spreadsheet-functions-for-rules) te gebruiken om efficiënte regels voor uw vormen tot stand te brengen. We zullen ook enkele voorbeelden bekijken om te illustreren hoe deze regels in de praktijk kunnen worden toegepast.
 
 ## Werken met de constructies van een regel
 
@@ -32,7 +32,7 @@ Als u bijvoorbeeld een e-mailvak wilt weergeven, selecteert u een selectievakje:
 - Actie (true): het e-mailvak wordt weergegeven. (Wat gebeurt er als dat het geval is). De `Visibility Expression` gebruikt de voorwaarde die voor de eigenschap `visible` is gedefinieerd om velden dynamisch weer te geven.
 - Handeling (Onwaar): Het e-mailvak is verborgen. (Wat gebeurt er als dit niet het geval is). In `Visibility Expression` wordt de gedefinieerde voorwaarde voor `Value` gebruikt om velden dynamisch te verbergen.
 
-Voor gedetailleerde geleidelijke instructies, zie [ tonen/verbergen e-mailgebied dat op een voorwaarde ](#example-1-conditional-email-field) wordt gebaseerd
+Voor gedetailleerde geleidelijke instructies, zie [&#x200B; tonen/verbergen e-mailgebied dat op een voorwaarde &#x200B;](#example-1-conditional-email-field) wordt gebaseerd
 
 
 ## Inzicht krijgen in de eigenschappen Waarde, Zichtbaarheid, Weergave en Waardeuitdrukking
@@ -52,7 +52,7 @@ Met de eigenschap `Visible Expression` kunt u de regel gebruiken die aan de eige
 
 Gebruik `=FORMULATEXT("Address of the corresponding Visible property)` om de formule die in de `Visible` -eigenschap wordt vermeld, als een tekenreeks toe te voegen aan het eigenschapveld `Visible Expression` . Dit is vereist om velden in een gepubliceerd formulier dynamisch weer te geven/te verbergen.
 
-![ Forumaltext ](/help/edge/assets/aem-forms-formulatext.png)
+![&#x200B; Forumaltext &#x200B;](/help/edge/assets/aem-forms-formulatext.png)
 
 ### Waarde, eigenschap (de oorspronkelijke gegevens instellen)
 
@@ -69,7 +69,7 @@ Met deze eigenschap kunt u de waarde beheren die wordt weergegeven in een veld o
 
 Gebruik `=FORMULATEXT("Address of the corresponding Value property)` om de formule die in de `Value` -eigenschap wordt vermeld, als een tekenreeks toe te voegen aan het eigenschapveld `Value Expression` . Dit is vereist om berekende waarden dynamisch te berekenen en weer te geven in een gepubliceerde vorm.
 
-![ Forumaltext ](/help/edge/assets/aem-forms-formulatext-value.png)
+![&#x200B; Forumaltext &#x200B;](/help/edge/assets/aem-forms-formulatext-value.png)
 
 Hier is een analogie om deze concepten te verharden:
 
@@ -78,7 +78,7 @@ Hier is een analogie om deze concepten te verharden:
 - Waarde: dit is als een vooraf ingestelde dimmer-schakelaar voor het licht (initiële gegevens in het veld). Gebruikers kunnen vervolgens de helderheid aanpassen (de waarde wijzigen).
 - Waardeuitdrukking: dit is als een mooie rekenmachine die in de prijstag van een product in het huis (vorm) is ingebouwd. De prijstag (veld) toont de uiteindelijke prijs op basis van een formule (bijvoorbeeld door belasting toe te voegen aan de basisprijs) die andere informatie gebruikt, zoals de basisprijs (waarde van een ander veld).
 
-Door deze eigenschappen met [ spreadsheetfuncties ](#spreadsheet-functions-for-rules) te combineren, kunt u een brede waaier van dynamisch gedrag binnen uw vormen bereiken.
+Door deze eigenschappen met [&#x200B; spreadsheetfuncties &#x200B;](#spreadsheet-functions-for-rules) te combineren, kunt u een brede waaier van dynamisch gedrag binnen uw vormen bereiken.
 
 ## Werkbladfuncties voor regels
 
@@ -86,19 +86,19 @@ Adaptief Forms Block ondersteunt diverse spreadsheetfuncties die kunnen worden g
 
 ### Logische functies
 
-- [ NIET () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): Keert de logische staat (WAAR wordt VALS en vice versa) om.
-- [ EN () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): Keert WAAR terug slechts als alle gespecificeerde voorwaarden WAAR zijn.
-- [ OF () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): Keert WAAR terug als minstens één van de gespecificeerde voorwaarden WAAR is.
+- [&#x200B; NIET () &#x200B;](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): Keert de logische staat (WAAR wordt VALS en vice versa) om.
+- [&#x200B; EN () &#x200B;](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): Keert WAAR terug slechts als alle gespecificeerde voorwaarden WAAR zijn.
+- [&#x200B; OF () &#x200B;](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): Keert WAAR terug als minstens één van de gespecificeerde voorwaarden WAAR is.
 
 ### Voorwaardelijke functies
 
-- [ IF () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): Evalueert een voorwaarde en keert een specifieke waarde als WAAR, en een andere waarde als VALS terug.
+- [&#x200B; IF () &#x200B;](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): Evalueert een voorwaarde en keert een specifieke waarde als WAAR, en een andere waarde als VALS terug.
 
 ### Wiskundige functies
 
-- [ SUM () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): Voegt waarden van een gespecificeerde waaier van cellen toe.
-- [ ROND () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): Rondt een aantal aan een gespecificeerd aantal decimalen.
-- [ MIN () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): Keert de kleinste waarde van een gespecificeerde waaier van cellen terug.
+- [&#x200B; SUM () &#x200B;](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): Voegt waarden van een gespecificeerde waaier van cellen toe.
+- [&#x200B; ROND () &#x200B;](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): Rondt een aantal aan een gespecificeerd aantal decimalen.
+- [&#x200B; MIN () &#x200B;](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): Keert de kleinste waarde van een gespecificeerde waaier van cellen terug.
 
 ## Een regel maken
 
@@ -110,7 +110,7 @@ In dit voorbeeld wordt getoond hoe het selectievakje als voorwaarde werkt. Wanne
 
 Maak een formulier met een selectievakje en een e-mailvak, zoals wordt weergegeven in de onderstaande afbeelding:
 
-![ Voorwaardelijke E-mailVorm ](/help/edge/assets/aem-forms-conditional-email-form.png)
+![&#x200B; Voorwaardelijke E-mailVorm &#x200B;](/help/edge/assets/aem-forms-conditional-email-form.png)
 
 
 Hier is hoe te om een regel te gebruiken om het e-mailgebied op de selectie van checkbox te tonen:
@@ -126,11 +126,11 @@ Hier is hoe te om een regel te gebruiken om het e-mailgebied op de selectie van 
 
 1. Stel de eigenschap `Visible Expression` van het veld Selectievakje in op `=FORMULATEXT ((address of Visible property of the checkbox field))` . Bijvoorbeeld `=FORMULATEXT((G12))` . De functie FORMULATEXT() neemt een formule als input en retourneert de formule zelf als een tekstreeks. Het is handig de formule in het formulier te gebruiken.
 
-   ![ Voorwaardelijk E-mailGebied ](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
+   ![&#x200B; Voorwaardelijk E-mailGebied &#x200B;](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 1. Geef een voorbeeld van het formulier weer en publiceer het. Als u nu het selectievakje inschakelt, wordt het e-mailveld weergegeven en wordt het veld verborgen, wat een dynamische gebruikerservaring oplevert.
 
-   ![ Voorwaardelijke E-mail ](/help/edge/assets/aem-forms-coditional-email.gif)
+   ![&#x200B; Voorwaardelijke E-mail &#x200B;](/help/edge/assets/aem-forms-coditional-email.gif)
 
 
 ## Voorbeeld 2: Automatische berekening
@@ -139,7 +139,7 @@ In dit voorbeeld wordt getoond hoe een formulier de geschatte kosten voor reisko
 
 Maak een formulier met een datumveld, een budget voor de ruimte, de velden Geschatte reiskosten zoals hieronder weergegeven en een e-mailvak, zoals in de onderstaande afbeelding wordt weergegeven:
 
-![ Voorwaardelijke E-mailVorm ](/help/edge/assets/aem-forms-automatic-calculations-form.png)
+![&#x200B; Voorwaardelijke E-mailVorm &#x200B;](/help/edge/assets/aem-forms-automatic-calculations-form.png)
 
 Hieronder wordt beschreven hoe u een automatische berekening kunt uitvoeren om de geschatte kosten van de reis weer te geven:
 
@@ -162,12 +162,12 @@ Hier volgen enkele voorbeelden van de meestgebruikte spreadsheetfuncties:
 
    1. Stel de eigenschap `Visible` van het veld E-mail bevestigen in op `=NOT(if('address of email field'=""))` .
 
-      ![ AEM Forms verbergt bevestigt e-mailgebied ](/help/edge/assets/aem-forms-not-function-hide-email-field.png)
+      ![&#x200B; AEM Forms verbergt bevestigt e-mailgebied &#x200B;](/help/edge/assets/aem-forms-not-function-hide-email-field.png)
 
 
    1. Stel de zichtbare expressie van het veld E-mail bevestigen in op `=FORMULATEXT ((address of visible property of the Confirm Email field))`
 
-      ![ AEM Forms zichtbare uitdrukkingsformule ](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
+      ![&#x200B; AEM Forms zichtbare uitdrukkingsformule &#x200B;](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
 - AND(): retourneert alleen TRUE als alle opgegeven voorwaarden TRUE zijn.
@@ -292,12 +292,12 @@ MIN (ageLimits [ &quot;US&quot;], ageLimits [ &quot;VK&quot;], ageLimits [ &quot
   Deze formule veronderstelt u een lijst genoemd &quot;ageLimits&quot;hebt die minimumleeftijdsvereisten voor verschillende landen opslaat. Het gebruikt MIN() om de kleinste waarde onder hen te vinden.
 
 
-Bovendien laat het Aangepaste Blok van Forms u volledige leiding van uw vormen nemen door [ douanefuncties ](#creating-custom-functions) te creëren. Met aangepaste functies kunt u uw eigen regels en logica definiëren, zodat u volledig zelf kunt bepalen hoe uw formulieren zich gedragen.
+Bovendien laat het Aangepaste Blok van Forms u volledige leiding van uw vormen nemen door [&#x200B; douanefuncties &#x200B;](#creating-custom-functions) te creëren. Met aangepaste functies kunt u uw eigen regels en logica definiëren, zodat u volledig zelf kunt bepalen hoe uw formulieren zich gedragen.
 
 
 ## Aangepaste functies maken en implementeren
 
-Het uit-van-de-Doos (OOTB) Aangepaste blok van Forms verstrekt implementaties voor vele [ gemeenschappelijke spreadsheetfuncties ](#spreadsheet-functions-for-rules). Voor meer korrelige controle over uw formulieren kunt u echter alle OOTB-functies gebruiken die beschikbaar zijn in Microsoft® Excel of Google Sheets in uw Adaptive Forms-blokken. Adaptief Forms-blok bevat geen implementatie voor alle OOTB-functies die beschikbaar zijn in Microsoft® Excel of Google Sheets. Als u een van deze functies nodig hebt, kunt u een aangepaste functie met een vergelijkbare syntaxis ontwikkelen voor de functionaliteit die wordt geboden door Microsoft® Excel of Google Sheets. Bijvoorbeeld, kunt u de [ functie van het Jaar van Microsoft® Excel () ](https://support.microsoft.com/en-us/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#) uitvoeren om leeftijd van geboortedatum te berekenen.
+Het uit-van-de-Doos (OOTB) Aangepaste blok van Forms verstrekt implementaties voor vele [&#x200B; gemeenschappelijke spreadsheetfuncties &#x200B;](#spreadsheet-functions-for-rules). Voor meer korrelige controle over uw formulieren kunt u echter alle OOTB-functies gebruiken die beschikbaar zijn in Microsoft® Excel of Google Sheets in uw Adaptive Forms-blokken. Adaptief Forms-blok bevat geen implementatie voor alle OOTB-functies die beschikbaar zijn in Microsoft® Excel of Google Sheets. Als u een van deze functies nodig hebt, kunt u een aangepaste functie met een vergelijkbare syntaxis ontwikkelen voor de functionaliteit die wordt geboden door Microsoft® Excel of Google Sheets. Bijvoorbeeld, kunt u de [&#x200B; functie van het Jaar van Microsoft® Excel () &#x200B;](https://support.microsoft.com/en-us/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#) uitvoeren om leeftijd van geboortedatum te berekenen.
 
 
 ### Een aangepaste functie maken

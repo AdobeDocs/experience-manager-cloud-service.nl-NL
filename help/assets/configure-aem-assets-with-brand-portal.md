@@ -16,16 +16,16 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Als u Adobe Experience Manager Assets Brand Portal configureert, kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets publiceren als een [!DNL Cloud Service] -exemplaar naar Brand Portal en deze verspreiden onder de Brand Portal-gebruikers.
 
 >[!IMPORTANT]
 >
-> * Brand Portal bevindt zich in de onderhoudsmodus. Alle nieuwe productinnovaties zijn beschikbaar op [ Content Hub ](/help/assets/product-overview.md).
+> * Brand Portal bevindt zich in de onderhoudsmodus. Alle nieuwe productinnovaties zijn beschikbaar op [&#x200B; Content Hub &#x200B;](/help/assets/product-overview.md).
 > * Als u Brand Portal nog steeds moet activeren, neemt u contact op met uw Adobe-vertegenwoordiger voor meer informatie over uw gebruiksgeval en andere specifieke vereisten.
-> * Brand Portal is niet beschikbaar met [ Assets Prime ](/help/assets/assets-prime.md) of [ Assets Ultimate ](/help/assets/assets-ultimate-overview.md). Bestaande Assets as a Cloud Service-klanten, die al toegang hebben tot Brand Portal, kunnen deze echter blijven gebruiken wanneer ze naar Assets Ultimate overstappen.
+> * Brand Portal is niet beschikbaar met [&#x200B; Assets Prime &#x200B;](/help/assets/assets-prime.md) of [&#x200B; Assets Ultimate &#x200B;](/help/assets/assets-ultimate-overview.md). Bestaande Assets as a Cloud Service-klanten, die al toegang hebben tot Brand Portal, kunnen deze echter blijven gebruiken wanneer ze naar Assets Ultimate overstappen.
 
 <!--
 
@@ -201,7 +201,7 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 >[!NOTE]
 >
 > U kunt vanaf juni 2024 geen nieuwe JWT-referenties maken. Voortaan worden alleen OAuth-referenties gemaakt.
-> &#x200B;> Zie meer [ creërend een configuratie OAuth ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+> &#x200B;> Zie meer [&#x200B; creërend een configuratie OAuth &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 
 In de volgende sectie wordt beschreven hoe u Experience Manager Assets handmatig kunt configureren als een [!DNL Cloud Service] met Brand Portal met Adobe Developer Console.
 
@@ -368,11 +368,11 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 ### De OAuth-referenties configureren in de Adobe Developer Console {#config-oauth}
 
-[ vorm de geloofsbrieven OAuth in Adobe Developer Console ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) en selecteer Brand Portal API.
+[&#x200B; vorm de geloofsbrieven OAuth in Adobe Developer Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) en selecteer Brand Portal API.
 
 ### Nieuwe Adobe IMS-integratie maken met OAuth {#create-ims-account-configuration}
 
-[ creeer een nieuwe Integratie van Adobe IMS gebruikend OAuth ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) en selecteer Brand Portal van de drop down onder de Oplossing van de Wolk.
+[&#x200B; creeer een nieuwe Integratie van Adobe IMS gebruikend OAuth &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) en selecteer Brand Portal van de drop down onder de Oplossing van de Wolk.
 
 <!--
 Ensure that you have performed the following steps:
@@ -423,11 +423,11 @@ Voer de volgende stappen uit om de Brand Portal-cloudservice te configureren:
 
 1. Geef een **[!UICONTROL Title]** op voor de configuratie.
 
-   Selecteer de configuratie IMS die u terwijl [ vormend de rekening IMS ](#create-ims-account-configuration) creeerde.
+   Selecteer de configuratie IMS die u terwijl [&#x200B; vormend de rekening IMS &#x200B;](#create-ims-account-configuration) creeerde.
 
    Geef in het veld **[!UICONTROL Service URL]** de URL van de Brand Portal-huurder (organisatie) op.
 
-   ![ de dialoogdoos van de Configuratie van Brand Portal.](assets/create-cloud-service.png)
+   ![&#x200B; de dialoogdoos van de Configuratie van Brand Portal.](assets/create-cloud-service.png)
 
 1. Klik op **[!UICONTROL Save & Close]**. De cloudconfiguratie wordt gemaakt.
 
@@ -436,7 +436,7 @@ Voer de volgende stappen uit om de Brand Portal-cloudservice te configureren:
 U kunt de configuratie nu testen door de distributieagent te controleren en elementen naar Brand Portal te publiceren.
 
 **Lijst van gewenste personen Eind IPs in SPS als veilige voorproef toegelaten**
-Als het gebruiken van Dynamische media-Scene7 met [ veilige voorproef ](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=nl-NL) voor een bedrijf wordt toegelaten, dan wordt het geadviseerd dat de beheerder van het bedrijf Scene7 [ de openbare uitgang IPs ](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=nl-NL#testing-the-secure-testing-service) voor respectieve gebieden voegt op lijst van gewenste personen gebruikend SPS (Scene7 het Publiceren Systeem) flits UI.
+Als het gebruiken van Dynamische media-Scene7 met [&#x200B; veilige voorproef &#x200B;](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=nl-NL) voor een bedrijf wordt toegelaten, dan wordt het geadviseerd dat de beheerder van het bedrijf Scene7 [&#x200B; de openbare uitgang IPs &#x200B;](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=nl-NL#testing-the-secure-testing-service) voor respectieve gebieden voegt op lijst van gewenste personen gebruikend SPS (Scene7 het Publiceren Systeem) flits UI.
 De IP&#39;s van de uitgang zijn als volgt:
 
 | **Gebied** | **IP van de Eis** |

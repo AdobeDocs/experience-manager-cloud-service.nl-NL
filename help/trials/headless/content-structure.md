@@ -49,7 +49,7 @@ Bijvoorbeeld, creeert u een model dat de gegevensstructuur van een reis vertegen
 
 1. Het **de dialoogvakje van het Succes** bevestigt dat het model werd gecreeerd. Klik **Open** in de dialoogdoos zodat kunt u uw nieuw Model van het Fragment van de Inhoud in de redacteur in een nieuw lusje openen. Ga vervolgens verder met de volgende stap om gegevensvelden aan uw model toe te voegen.
 
-![ Stappen twee en drie van het creëren van een model van het Fragment van de Inhoud ](assets/do-not-localize/create-model.png)
+![&#x200B; Stappen twee en drie van het creëren van een model van het Fragment van de Inhoud &#x200B;](assets/do-not-localize/create-model.png)
 
 ## De modeleditor gebruiken {#configure-model}
 
@@ -74,7 +74,7 @@ Op deze manier kunt u zoveel velden toevoegen als nodig zijn voor het ondersteun
 
 Ga aan de volgende sectie verder zodat kunt u de gebieden noodzakelijk toevoegen om te voltooien en het **model van het Avontuur** te bewaren
 
-![ stappen één, twee, en drie van het toevoegen van gebieden aan het model ](assets/do-not-localize/define-model-fields.png)
+![&#x200B; stappen één, twee, en drie van het toevoegen van gebieden aan het model &#x200B;](assets/do-not-localize/define-model-fields.png)
 
 ## Velden toevoegen aan het model {#additional-fields}
 
@@ -82,7 +82,7 @@ U hebt al een veld voor de titel van het avontuur. Nu moet u velden toevoegen om
 
 >[!TIP]
 >
->Het **1&rbrace; model van het Avontuur is gebaseerd op de WKND steekproefplaats voor AEM.** U kunt [ de plaats van WKND hier bezoeken ](https://wknd.site/us/en/adventures/yosemite-backpacking.html) om inhoud te zien die het **3&rbrace; model van het Avontuur &lbrace;gebruikt.**
+>Het **1&rbrace; model van het Avontuur is gebaseerd op de WKND steekproefplaats voor AEM.** U kunt [&#x200B; de plaats van WKND hier bezoeken &#x200B;](https://wknd.site/us/en/adventures/yosemite-backpacking.html) om inhoud te zien die het **3&rbrace; model van het Avontuur &lbrace;gebruikt.**
 
 Voer dezelfde stappen uit als hierboven om deze extra velden toe te voegen. Het enige verschil is de eigenschappen die u moet instellen.
 

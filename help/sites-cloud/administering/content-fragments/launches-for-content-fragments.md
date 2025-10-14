@@ -25,7 +25,7 @@ A *Lancering* wordt gecreeerd om u toe te staan om veranderingen in voorbereidin
 >
 >Startpagina&#39;s zijn ook beschikbaar. De basisbegrippen zijn hetzelfde, maar er zijn verschillen in de manier waarop ze in AEM moeten worden beheerd.
 >
->Voor volledige details zie [ Lanceringen voor Pagina&#39;s ](/help/sites-cloud/authoring/launches/overview.md).
+>Voor volledige details zie [&#x200B; Lanceringen voor Pagina&#39;s &#x200B;](/help/sites-cloud/authoring/launches/overview.md).
 
 U creeert a *Lancering*, dan uitgeeft en werkt uw Fragmenten van de Inhoud in uw *Lancering* bij. Als de veranderingen in de *fragmenten van Source* tijdens deze fase worden aangebracht, kunt u hen kopiëren aan *Lancering* met *Rebase* verrichting. Wanneer klaar, *bevordert* de lanceringsinhoud terug naar de bron. Vervolgens kunt u de bronfragmenten handmatig of automatisch activeren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart). U kunt ook opgeven of fragmenten waarnaar wordt verwezen, in dit proces moeten worden opgenomen.
 
@@ -37,9 +37,9 @@ Bijvoorbeeld, worden de seizoensgebonden productfragmenten van uw online opslag 
 
 Wanneer het volgende kwartaal arriveert, publiceert u de startpagina&#39;s, zodat u de bronpagina&#39;s kunt publiceren (met de bijgewerkte inhoud). U kunt alle fragmenten opwaarderen of alleen de fragmenten die u hebt gewijzigd.
 
-![ Overzicht van Lanceringen - Rebase en bevordert ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-overview.png)
+![&#x200B; Overzicht van Lanceringen - Rebase en bevordert &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-overview.png)
 
-Deze sectie beschrijft om, te creëren uit te geven, te beheren, opnieuw te baseren, te bevorderen en indien nodig te schrappen, lanceert van binnen de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md):
+Deze sectie beschrijft om, te creëren uit te geven, te beheren, opnieuw te baseren, te bevorderen en indien nodig te schrappen, lanceert van binnen de [&#x200B; console van de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md):
 
 * [Starten openen en weergeven in de Content Fragment-console](#launches-in-the-content-fragment-console)
 * [Een start maken](#create-a-launch)
@@ -54,16 +54,16 @@ Deze sectie beschrijft om, te creëren uit te geven, te beheren, opnieuw te base
 
 Het **lusje van Lanceringen** van de console van de Fragmenten van de Inhoud staat u toe om lanceringen tot stand te brengen, van alle bestaande lanceringen een lijst te maken, zeer belangrijke eigenschappen te zien, en acties op hen te nemen.
 
-Wanneer geen lancering wordt geselecteerd kunt u [ een nieuwe lancering ](#create-a-launch) tot stand brengen.
+Wanneer geen lancering wordt geselecteerd kunt u [&#x200B; een nieuwe lancering &#x200B;](#create-a-launch) tot stand brengen.
 
-![ Lanceringen lusje in console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-tab.png)
+![&#x200B; Lanceringen lusje in console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-tab.png)
 
 Selecteer de lancering om te tonen:
 
 * de werkbalk, met de beschikbare acties
 * in het rechterdeelvenster, eigenschappen en verdere handelingen weergeven
 
-![ de actiestoolbar van de Lancering in console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-actions.png)
+![&#x200B; de actiestoolbar van de Lancering in console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-actions.png)
 
 Met de werkbalk kunt u:
 
@@ -78,21 +78,21 @@ In het rechterdeelvenster kunt u:
 
 * Bewerk de Titel van de Lancering **&#x200B;**
 * Bewerk de Beschrijving van de Lancering **&#x200B;**
-* De configuratiedetails van de update die werden geplaatst toen u [ de lancering ](#create-a-launch) creeerde:
+* De configuratiedetails van de update die werden geplaatst toen u [&#x200B; de lancering &#x200B;](#create-a-launch) creeerde:
 
    * **omvat verwijzingen**: Creeer de Lancering of met, of zonder, met inbegrip van om het even welke referenced Fragments van de Inhoud. Standaard worden fragmenten waarnaar wordt verwezen, opgenomen.
 
-      * De fragmenten van verwijzingen worden ook beïnvloed wanneer u [ toevoegt, of fragmenten uit de lancering ](#manage-content-within-a-launch) in een recentere fase verwijdert.
+      * De fragmenten van verwijzingen worden ook beïnvloed wanneer u [&#x200B; toevoegt, of fragmenten uit de lancering &#x200B;](#manage-content-within-a-launch) in een recentere fase verwijdert.
 
      >[!NOTE]
      >
-     >Zie [ Details betreffende Included Verwijzingen ](#details-concerning-included-references)
+     >Zie [&#x200B; Details betreffende Included Verwijzingen &#x200B;](#details-concerning-included-references)
 
    * **publiceer Klaar**; het toelaten van deze knevel zal automatisch de fragmenten publiceren wanneer de lancering aan de bron wordt bevorderd.
 
 * En definieer ook:
 
-   * A **bevordert Datum** en Tijd: als de [ lancering automatisch moet worden bevorderd ](#promote-automatically)
+   * A **bevordert Datum** en Tijd: als de [&#x200B; lancering automatisch moet worden bevorderd &#x200B;](#promote-automatically)
 
 ## Een start maken {#create-a-launch}
 
@@ -106,7 +106,7 @@ Om uw lancering te creëren:
 
 1. Navigeer naar de juiste map en selecteer de fragmenten die u wilt opnemen in de startpagina:
 
-   ![ selecteer inhoudsfragmenten voor nieuwe lancering ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-create-select-cfs.png)
+   ![&#x200B; selecteer inhoudsfragmenten voor nieuwe lancering &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-create-select-cfs.png)
 
 1. Selecteer **daarna**.
 
@@ -118,11 +118,11 @@ Om uw lancering te creëren:
 
      >[!NOTE]
      >
-     >Zie [ Details betreffende Included Verwijzingen ](#details-concerning-included-references)
+     >Zie [&#x200B; Details betreffende Included Verwijzingen &#x200B;](#details-concerning-included-references)
 
    * **publiceer Klaar**: Het toelaten van deze knevel zal automatisch de fragmenten publiceren wanneer de lancering aan de bron wordt bevorderd.
 
-   ![ Details voor nieuwe lancering ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-create-launch-details.png)
+   ![&#x200B; Details voor nieuwe lancering &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-create-launch-details.png)
 
 1. **sparen** de configuratie.
 
@@ -133,9 +133,9 @@ Om uw lancering te creëren:
 
       * **Baan begon om nieuwe Lancering tot stand te brengen, de vooruitgang in AEM te controleren en pagina opnieuw te laden wanneer gedaan.**
 
-1. Selecteer **Mening**, van het berichtvakje, om verdere details in de console van AEM voor [ de Verrichtingen van de Achtergrond ](/help/operations/asynchronous-jobs.md) te zien.
+1. Selecteer **Mening**, van het berichtvakje, om verdere details in de console van AEM voor [&#x200B; de Verrichtingen van de Achtergrond &#x200B;](/help/operations/asynchronous-jobs.md) te zien.
 
-   ![ Nieuwe lancering in console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
+   ![&#x200B; Nieuwe lancering in console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
 ## Starten van inhoud bewerken {#edit-launch-content}
 
@@ -151,9 +151,9 @@ U bewerkt als volgt de inhoudsfragmenten in uw opstart:
 
    De opstart wordt samen met de fragmenten weergegeven.
 
-   ![ geef de inhoud van de Lancering ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-edit-launch-content.png) uit
+   ![&#x200B; geef de inhoud van de Lancering &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-edit-launch-content.png) uit
 
-1. Selecteer **uitgeven** voor het fragment u wilt bijwerken. Het zal in de [ fragmentredacteur ](/help/sites-cloud/administering/content-fragments/authoring.md) zoals gebruikelijk openen.
+1. Selecteer **uitgeven** voor het fragment u wilt bijwerken. Het zal in de [&#x200B; fragmentredacteur &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md) zoals gebruikelijk openen.
 
 ## Inhoud beheren in een opstartprogramma {#manage-content-within-a-launch}
 
@@ -169,7 +169,7 @@ U beheert als volgt de inhoudsfragmenten in uw opstart en bewerkt ook de inhoud 
 
    De bronfragmenten van de opstart worden weergegeven.
 
-   ![ geef Source ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-edit-sources.png) uit
+   ![&#x200B; geef Source &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-edit-sources.png) uit
 
 1. U kunt:
 
@@ -177,7 +177,7 @@ U beheert als volgt de inhoudsfragmenten in uw opstart en bewerkt ook de inhoud 
 
       * Als **omvat Verwijzingen** waar voor de lancering is, zullen alle referenced Fragments van de Inhoud ook in lancering worden gebracht (als niet reeds aanwezig).
 
-   1. Selecteer **uitgeven** voor het bronfragment u wilt bijwerken. Het zal in de [ fragmentredacteur ](/help/sites-cloud/administering/content-fragments/authoring.md) zoals gebruikelijk openen.
+   1. Selecteer **uitgeven** voor het bronfragment u wilt bijwerken. Het zal in de [&#x200B; fragmentredacteur &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md) zoals gebruikelijk openen.
 
    1. Selecteer een fragment, dan de **Bron van de Schrapping** actie van de toolbar om dat fragment uit de lancering te verwijderen.
 
@@ -185,7 +185,7 @@ U beheert als volgt de inhoudsfragmenten in uw opstart en bewerkt ook de inhoud 
 
    >[!NOTE]
    >
-   >Zie [ Details betreffende Included Verwijzingen ](#details-concerning-included-references)
+   >Zie [&#x200B; Details betreffende Included Verwijzingen &#x200B;](#details-concerning-included-references)
 
 ## Starten vergelijken met Source {#compare-launch-to-source}
 
@@ -205,7 +205,7 @@ U wordt aangeraden om vóór elke actie Rebase of Promote altijd de bron te verg
          * Source: blauw
          * Starten: roze
          * Conflicten: geel
-   * [ bevordert ](#promote-a-launch-to-source) en [ rebase ](#rebase-a-launch-from-source) acties zijn beschikbaar van het hoogste recht.
+   * [&#x200B; bevordert &#x200B;](#promote-a-launch-to-source) en [&#x200B; rebase &#x200B;](#rebase-a-launch-from-source) acties zijn beschikbaar van het hoogste recht.
    * **Gevonden Updates**: In de hogere linkerzijde, wordt een samenvatting van alle updates getoond. Het aantal bronupdates in blauw, het aantal opstartupdates in roze en updates voor beide (conflicten) in geel.
       * Met de oogpictogrammen kunt u de daadwerkelijke updates van de inhoud weergeven of verbergen voor een duidelijker overzicht.
    * **omvat** schuif staat u toe om de Fragmenten te bepalen van de Inhoud die in verdere Bevorderen of opnieuw te baseren verrichting moeten worden omvat:
@@ -219,7 +219,7 @@ U wordt aangeraden om vóór elke actie Rebase of Promote altijd de bron te verg
    * De inhoud van het fragment wordt getoond op gebied-niveau (het element van het Fragment van de Inhoud/datatype-niveau); met hoogtepunten die op veranderingen wijzen.
    * Selecteer **Mening** om de verschillen opnieuw samen te stellen.
 
-   ![ vergelijk Source en Lancering ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+   ![&#x200B; vergelijk Source en Lancering &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
 
 ## Starten opnieuw baseren (vanuit Source) {#rebase-a-launch-from-source}
 
@@ -235,7 +235,7 @@ Wanneer de bronfragmenten zijn bijgewerkt en u deze wijzigingen wilt kopiëren n
 
 >[!NOTE]
 >
->U kunt **een lancering van**&#x200B;[ ook opnieuw vestigen **&lbrace;vergelijken Lancering aan Source](#compare-launch-to-source)**.
+>U kunt **een lancering van**&#x200B;[&#x200B; ook opnieuw vestigen **&lbrace;vergelijken Lancering aan Source](#compare-launch-to-source)**.
 
 ## Starten bevorderen (naar Source) {#promote-a-launch-to-source}
 
@@ -261,9 +261,9 @@ Wanneer uw lancering klaar is om te worden gepubliceerd kan het aan de bron met 
 
 Als u een opstart automatisch wilt promoten op een bepaalde datum en tijd, moet u:
 
-1. Bepaal **bevorderen Datum** en Tijd van het juiste paneel van het [ lusje van Lanceringen ](#launches-in-the-content-fragment-console).
+1. Bepaal **bevorderen Datum** en Tijd van het juiste paneel van het [&#x200B; lusje van Lanceringen &#x200B;](#launches-in-the-content-fragment-console).
 
-1. Als de inhoud kan worden gepubliceerd wanneer het wordt bevorderd, plaats **publiceert Klaar** wanneer [ creërend de lancering ](#create-a-launch), of van het juiste paneel van het [ lusje van Lanceringen ](#launches-in-the-content-fragment-console).
+1. Als de inhoud kan worden gepubliceerd wanneer het wordt bevorderd, plaats **publiceert Klaar** wanneer [&#x200B; creërend de lancering &#x200B;](#create-a-launch), of van het juiste paneel van het [&#x200B; lusje van Lanceringen &#x200B;](#launches-in-the-content-fragment-console).
 
 ## Een Starten verwijderen {#delete-a-launch}
 
@@ -281,7 +281,7 @@ Nadat u de introductie hebt bevorderd of hebt besloten dat u deze niet meer nodi
 
 ## Gegevens betreffende de opgenomen verwijzingen {#details-concerning-included-references}
 
-Voor Lanceringen worden de volgende verwijzingen van het Fragment van de Inhoud overwogen, afhankelijk van [ gegevenstype ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types):
+Voor Lanceringen worden de volgende verwijzingen van het Fragment van de Inhoud overwogen, afhankelijk van [&#x200B; gegevenstype &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types):
 
 * Het **gegevenstype van de Verwijzing van het Fragment**, toepasselijk voor zowel enige fragmentverwijzingen, als multi-gebiedfragmentverwijzingen.
 * De fragmenten die binnen het **Van meerdere lijnen tekst** worden van verwijzingen voorzien gegevenstype wanneer het gebruiken van **Rijke Tekst**.

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=nl-NL) |
+| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -31,20 +31,20 @@ Lees verder voor meer informatie over asynchrone verzending in Adaptive Forms.
 
 Om asynchrone voorlegging voor een Aangepast Vorm te vormen:
 
-1. Op de Aanpassende auteurswijze van de Vorm, selecteer het voorwerp van de Container van de Vorm en selecteer ![ cmp1 ](assets/configure-icon.svg) om zijn eigenschappen te openen.
+1. Op de Aanpassende auteurswijze van de Vorm, selecteer het voorwerp van de Container van de Vorm en selecteer ![&#x200B; cmp1 &#x200B;](assets/configure-icon.svg) om zijn eigenschappen te openen.
 1. Schakel in de sectie **[!UICONTROL Submission]** -eigenschappen **[!UICONTROL Use asynchronous submission]** in.
 1. Selecteer in de sectie **[!UICONTROL On Submit]** een van de volgende opties voor het verzenden van formulieren.
 
    * **[!UICONTROL Redirect to URL]**: leidt bij het verzenden van het formulier naar de opgegeven URL of pagina. U kunt een URL opgeven of bladeren naar het pad naar een pagina in het veld **[!UICONTROL Redirect URL/Path]** .
    * **[!UICONTROL Show Message]**: geeft een bericht weer bij het verzenden van het formulier. U kunt een bericht schrijven in het tekstveld onder de optie **[!UICONTROL Show Message]** . Het tekstveld ondersteunt RTF-opmaak.
 
-1. Selecteer ![ controle-button1 ](assets/save_icon.svg) om de eigenschappen te bewaren.
+1. Selecteer ![&#x200B; controle-button1 &#x200B;](assets/save_icon.svg) om de eigenschappen te bewaren.
 
 ## Hoe asynchrone verzending werkt {#how-asynchronous-submission-works}
 
 [!DNL Experience Manager Forms] biedt fouthandlers voor het verzenden van formulieren die niet in de verpakking staan. Handlers zijn client-side functies die worden uitgevoerd op basis van de serverreactie. Wanneer een formulier wordt verzonden, worden de gegevens voor validatie naar de server verzonden, die een reactie op de client retourneert met informatie over de gebeurtenis &#39;success&#39; of &#39;error&#39; voor de verzending. De informatie wordt als parameters doorgegeven aan de relevante handler om de functie uit te voeren.
 
-Bovendien kunnen auteurs en ontwikkelaars van formulieren regels op formulierniveau schrijven om standaardhandlers te overschrijven. Voor meer informatie, zie [ standaardmanagers met voeten treden gebruikend regels ](#custom).
+Bovendien kunnen auteurs en ontwikkelaars van formulieren regels op formulierniveau schrijven om standaardhandlers te overschrijven. Voor meer informatie, zie [&#x200B; standaardmanagers met voeten treden gebruikend regels &#x200B;](#custom).
 
 Laat ons eerst de serverreactie voor succes en foutengebeurtenissen herzien.
 
@@ -108,11 +108,11 @@ Formulierontwikkelaars en auteurs kunnen regels schrijven op formulierniveau om 
 
 Voer de volgende stappen uit om regels te schrijven voor het afhandelen van geluids- en foutgebeurtenissen.
 
-1. Open de Adaptieve Vorm op auteurswijze, selecteer om het even welk vormvoorwerp, en selecteer ![ geef-rules1 ](assets/edit-rules-icon.svg) uit om de regelredacteur te openen.
+1. Open de Adaptieve Vorm op auteurswijze, selecteer om het even welk vormvoorwerp, en selecteer ![&#x200B; geef-rules1 &#x200B;](assets/edit-rules-icon.svg) uit om de regelredacteur te openen.
 1. Selecteer **[!UICONTROL Form]** in de structuur Formulierobjecten en selecteer **[!UICONTROL Create]** .
 1. Kies **[!UICONTROL is submitted successfully]** of **[!UICONTROL submission fails]** in de vervolgkeuzelijst **[!UICONTROL Select state]** .
 1. Definieer een handeling **[!UICONTROL Then]** voor de geselecteerde status. Selecteer bijvoorbeeld **[!UICONTROL Navigate To]** en typ of plak een URL. U kunt ook elke functie met de tab **[!UICONTROL Functions]** naar de regel slepen.
 
-   ![ succesvolle voorleggingsmanager ](assets/form-submission-handler.png)
+   ![&#x200B; succesvolle voorleggingsmanager &#x200B;](assets/form-submission-handler.png)
 
 1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.

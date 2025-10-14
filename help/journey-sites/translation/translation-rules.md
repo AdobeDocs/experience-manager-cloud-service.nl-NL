@@ -21,7 +21,7 @@ Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de de vertaalreis van AEM Sites, [ vorm vertaalschakelaar ](configure-connector.md) u leerde om uw vertaalschakelaar te installeren en te vormen en zou nu moeten:
+In het vorige document van de de vertaalreis van AEM Sites, [&#x200B; vorm vertaalschakelaar &#x200B;](configure-connector.md) u leerde om uw vertaalschakelaar te installeren en te vormen en zou nu moeten:
 
 * Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
 * Uw eigen verbinding met uw vertaalservice instellen.
@@ -69,7 +69,7 @@ AEM maakt automatisch vertaalregels voor alle inhoud. Deze regels weergeven:
 1. Voor de toolbar, selecteer **uitgeven**.
 1. De redacteur van de Regels van de Vertaling opent met de regels die automatisch voor de `/content` weg AEM gecreeerd.
 
-   ![ redacteur van de Regels van de Vertaling ](assets/translation-rules-editor.png)
+   ![&#x200B; redacteur van de Regels van de Vertaling &#x200B;](assets/translation-rules-editor.png)
 
 1. De eigenschappen van de pagina die worden vertaald worden gevestigd onder de **Algemene** sectie van de lijst. U kunt bestaande eigenschapsnamen toevoegen of bijwerken die u expliciet wilt opnemen in de vertaling.
    1. Op het **Nieuwe gebied van het Bezit**, ga de bezitsnaam in. De opties **vertalen** en **overerven** worden automatisch gecontroleerd.
@@ -91,7 +91,7 @@ U hebt nu uw vertaalregels geconfigureerd.
 
 Er zijn verscheidene extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
 
-Zulke eigenschappen zijn over het algemeen niet nodig begonnen uw inhoud te lokaliseren, maar u kunt over hen in de [ Extra sectie van Middelen ](#additional-resources) lezen als u geinteresseerd bent.
+Zulke eigenschappen zijn over het algemeen niet nodig begonnen uw inhoud te lokaliseren, maar u kunt over hen in de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) lezen als u geinteresseerd bent.
 
 ## Volgende functies {#what-is-next}
 
@@ -100,10 +100,10 @@ Nu u dit deel van de AEM Sites-vertaalreis hebt voltooid, moet u:
 * Begrijp wat de vertaalregels doen.
 * U kunt uw eigen vertaalregels definiëren.
 
-Bouw op deze kennis voort en ga uw de vertaalreis van AEM Sites door het document [ opnieuw te bekijken vertaal inhoud ](translate-content.md) waar u leert hoe uw schakelaar en regels samenwerken om inhoud te vertalen.
+Bouw op deze kennis voort en ga uw de vertaalreis van AEM Sites door het document [&#x200B; opnieuw te bekijken vertaal inhoud &#x200B;](translate-content.md) waar u leert hoe uw schakelaar en regels samenwerken om inhoud te vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de vertaalreis door het document [ te herzien vertaalt inhoud ](translate-content.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de vertaalreis door het document [&#x200B; te herzien vertaalt inhoud &#x200B;](translate-content.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [ identificerend Inhoud om ](/help/sites-cloud/administering/translation/rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.
+* [&#x200B; identificerend Inhoud om &#x200B;](/help/sites-cloud/administering/translation/rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.

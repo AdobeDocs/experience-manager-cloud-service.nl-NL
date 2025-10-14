@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Grondbeginselen van de Modellering van de Inhoud voor Zwaartepunt met AEM ](basics.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [&#x200B; Reis van de Auteur van de Inhoud van AEM Headless &#x200B;](overview.md) de [&#x200B; Grondbeginselen van de Modellering van de Inhoud voor Zwaartepunt met AEM &#x200B;](basics.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
 Dit artikel bouwt verder op deze principes zodat u begrijpt hoe u uw eigen modellen van het Fragment van de Inhoud voor uw project zonder titel van AEM creeert.
 
@@ -50,7 +50,7 @@ Vervolgens kunt u de modellen van Content Fragments maken en de structuur defini
 
 1. Het gebruik **leidt** tot om de **Nieuwe dialoog van het Fragmentmodel van de Inhoud** te openen.
 
-   ![ Titel en beschrijving ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
+   ![&#x200B; Titel en beschrijving &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
 1. De details invullen
 
@@ -74,21 +74,21 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 
 Wanneer u eerst een nieuw model opent u ziet - een grote lege ruimte aan de linkerzijde, en een lange lijst van **Types van Gegevens** bij het recht:
 
-![ Leeg Model ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
+![&#x200B; Leeg Model &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 
 Wat moet er gebeuren?
 
 U kunt instanties van de **Types van Gegevens** op de linkerruimte slepen - u bepaalt reeds uw model!
 
-![ die gebieden ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) bepalen
+![&#x200B; die gebieden &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) bepalen
 
 Nadat u een gegevenstype toevoegt wordt u vereist om de **Eigenschappen** voor dat gebied te bepalen. Deze eigenschappen zijn afhankelijk van het type dat wordt gebruikt. Bijvoorbeeld:
 
-![ Eigenschappen van Gegevens ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
+![&#x200B; Eigenschappen van Gegevens &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
 U kunt zoveel velden toevoegen als u nodig hebt. Bijvoorbeeld:
 
-![ Model van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
+![&#x200B; Model van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
 
 ### Uw makers van inhoud {#your-content-authors}
 
@@ -129,7 +129,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw ei
 
 * [Concepten ontwerpen](/help/sites-cloud/authoring/author-publish.md)
 
-* [ Basis Behandelend ](/help/sites-cloud/authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/meeste eigenschappen zijn ook relevant voor het navigeren aan, en het nemen van actie op, **Modellen van het Fragment van de Inhoud** onder de **Algemene** console.
+* [&#x200B; Basis Behandelend &#x200B;](/help/sites-cloud/authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/meeste eigenschappen zijn ook relevant voor het navigeren aan, en het nemen van actie op, **Modellen van het Fragment van de Inhoud** onder de **Algemene** console.
 
 * [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 

@@ -20,7 +20,7 @@ In de volgende video ziet u Content Hub-sleutelmogelijkheden:
 
 >[!IMPORTANT]
 >
->[ Assets Ultimate ](/help/assets/assets-ultimate-overview.md) en Assets as a Cloud Service omvatten 250 Beperkte gebruikers van Content Hub. [ Assets Prime ](/help/assets/assets-prime.md) omvat 50 Beperkte gebruikers van Content Hub.
+>[&#x200B; Assets Ultimate &#x200B;](/help/assets/assets-ultimate-overview.md) en Assets as a Cloud Service omvatten 250 Beperkte gebruikers van Content Hub. [&#x200B; Assets Prime &#x200B;](/help/assets/assets-prime.md) omvat 50 Beperkte gebruikers van Content Hub.
 
 ## Releasedatum {#release-date}
 
@@ -46,7 +46,7 @@ Dankzij de bestaande personalisatiefuncties kunnen beheerders in Content Hub hun
 
 U kunt nu een titel toevoegen wanneer u een gedeelde koppeling genereert. Dit kan in de weergave Elementdetails of nadat u een of meer elementen hebt geselecteerd. Hierdoor kunnen ontvangers gemakkelijker het doel van elke koppeling identificeren, met name bij het ontvangen van meerdere gedeelde elementen.
 
-![ privé en openbare verbinding ](/help/assets/assets/shared-link-for-assets.png)
+![&#x200B; privé en openbare verbinding &#x200B;](/help/assets/assets/shared-link-for-assets.png)
 
 [!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
@@ -98,7 +98,7 @@ Enkele belangrijke voordelen van op Attribuut-Gebaseerd Toegangsbeheer omvatten:
 
 In Content Hub kunnen beheerders nu de gebruikersinterface aanpassen met merkspecifieke elementen, zoals bannerafbeeldingen, bannertitels en platte tekst, en met primaire en secundaire kleuren. Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
 
-![ het Brandmerken UI ](/help/assets/assets/content-hub-ui-branding.png)
+![&#x200B; het Brandmerken UI &#x200B;](/help/assets/assets/content-hub-ui-branding.png)
 
 [!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
@@ -106,7 +106,7 @@ In Content Hub kunnen beheerders nu de gebruikersinterface aanpassen met merkspe
 
 Content Hub ondersteunt nu het genereren van deelbare koppelingen, zodat externe gebruikers zonder toegang tot de toepassing metagegevens van middelen kunnen bekijken of elementen kunnen downloaden.
 
-![ het Brandmerken UI ](/help/assets/assets/public-and-private-link.png)
+![&#x200B; het Brandmerken UI &#x200B;](/help/assets/assets/public-and-private-link.png)
 
 [!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
@@ -120,6 +120,6 @@ Met Content Hub kunt u nu ook de geselecteerde elementen en de bijbehorende uitv
 
 Open al uw dynamische vooraf ingestelde vertoningen van Media en slimme gewassen voor download, direct van binnen de Gebruikersinterface van Content Hub.
 
-&#x200B; ![ Dynamische vertoningen van Media ](/help/assets/assets/dm-renditions-content-hub.png)
+&#x200B; ![&#x200B; Dynamische vertoningen van Media &#x200B;](/help/assets/assets/dm-renditions-content-hub.png)
 
 [!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}

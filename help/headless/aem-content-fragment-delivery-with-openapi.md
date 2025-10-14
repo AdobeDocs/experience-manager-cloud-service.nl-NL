@@ -23,17 +23,17 @@ In Adobe Experience Manager (AEM) as a Cloud Service wordt de AEM OpenAPI voor h
 
 Deze API:
 
-* is de opvolger aan [ Steun van de Fragmenten van de Inhoud in AEM Assets HTTP API ](/help/assets/content-fragments/assets-api-content-fragments.md)
+* is de opvolger aan [&#x200B; Steun van de Fragmenten van de Inhoud in AEM Assets HTTP API &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md)
 
-* supplementeert de [ Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud OpenAPIs ](/help/headless/content-fragment-openapis.md), die u toestaan om de Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud (CRUD) te beheren
+* supplementeert de [&#x200B; Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud OpenAPIs &#x200B;](/help/headless/content-fragment-openapis.md), die u toestaan om de Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud (CRUD) te beheren
 
-* is een alternatief van HTTP REST aan [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](/help/headless/graphql-api/content-fragments.md)
+* is een alternatief van HTTP REST aan [&#x200B; AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud &#x200B;](/help/headless/graphql-api/content-fragments.md)
 
-Voor volledige documentatie zie [ de Levering van het Fragment van de Inhoud van AEM met OpenAPI ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/).
+Voor volledige documentatie zie [&#x200B; de Levering van het Fragment van de Inhoud van AEM met OpenAPI &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/).
 
 >[!NOTE]
 >
->Zie [ AEM APIs voor Gestructureerde Inhoudslevering en Beheer ](/help/headless/apis-headless-and-content-fragments.md) voor een overzicht van diverse beschikbare APIs en vergelijking van sommige betrokken concepten.
+>Zie [&#x200B; AEM APIs voor Gestructureerde Inhoudslevering en Beheer &#x200B;](/help/headless/apis-headless-and-content-fragments.md) voor een overzicht van diverse beschikbare APIs en vergelijking van sommige betrokken concepten.
 
 >[!IMPORTANT]
 >
@@ -72,7 +72,7 @@ Voor een voorvertoning kan de levering van inhoudsfragmenten met OpenAPI:
 
 ## CORS {#cors}
 
-[ CORS toegestane oorsprong ](/help/headless/deployment/cross-origin-resource-sharing.md) bepaalt de oorsprong die API kan roepen.
+[&#x200B; CORS toegestane oorsprong &#x200B;](/help/headless/deployment/cross-origin-resource-sharing.md) bepaalt de oorsprong die API kan roepen.
 
 De toegestane oorsprong van CORS aan de kant van de verzendersconfiguratie, specifiek voor GraphQL, wordt niet in aanmerking genomen door deze API.
 
@@ -80,11 +80,11 @@ De toegestane oorsprong van CORS aan de kant van de verzendersconfiguratie, spec
 
 De API maakt nieuwe aanvragen mogelijk met een snelheid van maximaal 200 aanvragen per seconde, per omgeving.
 
-Zodra deze grens wordt overschreden, begint API [ 429 fout ](https://www.rfc-editor.org/rfc/rfc6585#section-4) reacties te verzenden. Deze fouten moeten door om het even welke cliënttoepassingen worden behandeld, en ontbroken verzoeken die na een exponentiële backoff opnieuw worden geprobeerd. De HTTP-reactie wordt geleverd met een specifieke header, `Retry-After` , die aan de client aangeeft hoelang ze moeten wachten voordat ze de aanvraag opnieuw verzenden.
+Zodra deze grens wordt overschreden, begint API [&#x200B; 429 fout &#x200B;](https://www.rfc-editor.org/rfc/rfc6585#section-4) reacties te verzenden. Deze fouten moeten door om het even welke cliënttoepassingen worden behandeld, en ontbroken verzoeken die na een exponentiële backoff opnieuw worden geprobeerd. De HTTP-reactie wordt geleverd met een specifieke header, `Retry-After` , die aan de client aangeeft hoelang ze moeten wachten voordat ze de aanvraag opnieuw verzenden.
 
 ## Voor authentiek verklaarde Verzoeken {#authenticated-requests}
 
-De steun voor voor authentiek verklaarde verzoeken kan met de [ sleutel van AEM CDN Edge ](/help/implementing/dispatcher/cdn-credentials-authentication.md) worden uitgevoerd. Met de AEM CDN Edge-sleutel kunt u vertrouwen op de AEM CDN en ervoor zorgen dat alleen specifieke aanvragen toegang hebben tot de API, op basis van de opgegeven Edge-sleutelheader.
+De steun voor voor authentiek verklaarde verzoeken kan met de [&#x200B; sleutel van AEM CDN Edge &#x200B;](/help/implementing/dispatcher/cdn-credentials-authentication.md) worden uitgevoerd. Met de AEM CDN Edge-sleutel kunt u vertrouwen op de AEM CDN en ervoor zorgen dat alleen specifieke aanvragen toegang hebben tot de API, op basis van de opgegeven Edge-sleutelheader.
 
 >[!NOTE]
 >

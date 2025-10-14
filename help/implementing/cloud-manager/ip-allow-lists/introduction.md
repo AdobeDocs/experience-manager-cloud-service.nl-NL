@@ -28,9 +28,9 @@ Leer hoe IP de Lijsten van gewenste personen kunnen beperken waarvan de adressen
 
 AEM als cloudservice is standaard toegankelijk via internet. Terwijl de veiligheid door gebruikersauthentificatie en vergunning wordt behandeld, IP staat-lijst toe om toegang tot slechts vertrouwde op IP adressen te beperken.
 
-De Lijsten van gewenste personen van Cloud Manager IP kunnen worden gebruikt om toegang tot slechts dergelijke vertrouwde op IP adressen te beperken en te controleren. De gebruikers van Cloud Manager met aangewezen toestemmingen kunnen [ tot IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) van vertrouwde op IP adressen leiden en toevoegen waarvan de gebruikers van hun plaats tot hun domeinen van AEM kunnen toegang hebben.
+De Lijsten van gewenste personen van Cloud Manager IP kunnen worden gebruikt om toegang tot slechts dergelijke vertrouwde op IP adressen te beperken en te controleren. De gebruikers van Cloud Manager met aangewezen toestemmingen kunnen [&#x200B; tot IP Lijsten van gewenste personen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) van vertrouwde op IP adressen leiden en toevoegen waarvan de gebruikers van hun plaats tot hun domeinen van AEM kunnen toegang hebben.
 
-Na het toevoegen, [ IP kunnen de Lijsten van gewenste personen worden toegepast of ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) veelvoudige tijden als eenheid of entiteit aan de auteursdienst, of een uitgeversdienst, of allebei, in een milieu ongedaan worden gemaakt.
+Na het toevoegen, [&#x200B; IP kunnen de Lijsten van gewenste personen worden toegepast of &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) veelvoudige tijden als eenheid of entiteit aan de auteursdienst, of een uitgeversdienst, of allebei, in een milieu ongedaan worden gemaakt.
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ Na het toevoegen, [ IP kunnen de Lijsten van gewenste personen worden toegepast 
 
 ### Voorste-Eind Pijpleidingen en IP Lijsten van gewenste personen {#front-end-pipeline}
 
-Als u gebruik-of van plan bent te gebruiken-de [ front-end pijpleiding om plaatsen ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) te ontwikkelen, moet de volgende Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
+Als u gebruik-of van plan bent te gebruiken-de [&#x200B; front-end pijpleiding om plaatsen &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) te ontwikkelen, moet de volgende Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
 
-Wanneer u [ de IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist) toevoegt, noem het *`Cloud Manager`*, dan kopieer de lijst van hieronder adressen en kleef hen in het IP de dialoogvakje van de Lijst van gewenste personen.
+Wanneer u [&#x200B; de IP Lijst van gewenste personen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist) toevoegt, noem het *`Cloud Manager`*, dan kopieer de lijst van hieronder adressen en kleef hen in het IP de dialoogvakje van de Lijst van gewenste personen.
 
 ```text
 52.254.106.192/28
@@ -76,7 +76,7 @@ Wanneer u [ de IP Lijst van gewenste personen ](/help/implementing/cloud-manager
 
 Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze Lijst van gewenste personen van Cloud Manager IP wordt toegevoegd. Dan, pas de lijst op het milieu van de Auteur *toe alvorens* u de pijpleiding toelaat.
 
-Zie [ IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) toepassen en [ eerst-eind pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) voor meer informatie toelaten.
+Zie [&#x200B; IP Lijst van gewenste personen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) toepassen en [&#x200B; eerst-eind pijpleiding &#x200B;](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) voor meer informatie toelaten.
 
 ### De Universal Editor en IP-Lijsten van gewenste personen {#universal-editor}
 

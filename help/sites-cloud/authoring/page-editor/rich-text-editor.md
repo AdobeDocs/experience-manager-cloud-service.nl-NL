@@ -18,13 +18,13 @@ De Rich Text Editor (RTE) is een basisbouwsteen voor het toevoegen van tekstuele
 
 ## Lokaal bewerken {#in-place-editing}
 
-Het selecteren van een op tekst-gebaseerde component met één enkele klik om de [ componententoolbar ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) te openbaren.
+Het selecteren van een op tekst-gebaseerde component met één enkele klik om de [&#x200B; componententoolbar &#x200B;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) te openbaren.
 
-![ de componententoolbar ](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
+![&#x200B; de componententoolbar &#x200B;](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 Als u nogmaals klikt of de component aanvankelijk selecteert met een langzaam dubbelklikken, wordt de bewerking op de plaats geopend. De bewerkingsmodus bevat een werkbalk. U kunt de inhoud bewerken en basisopmaakwijzigingen aanbrengen.
 
-![ Op plaats die met RTE ](/help/sites-cloud/authoring/assets/rte-in-place-editing.png) uitgeeft
+![&#x200B; Op plaats die met RTE &#x200B;](/help/sites-cloud/authoring/assets/rte-in-place-editing.png) uitgeeft
 
 De werkbalk bevat doorgaans de volgende opties:
 
@@ -38,11 +38,11 @@ De werkbalk bevat doorgaans de volgende opties:
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Voor op tekst-gebaseerde componenten, klik de het volledig-schermwijze ![ volledig het schermknoop van RTE ](/help/sites-cloud/authoring/assets/editing-full-screen.png) van de [ toolbar ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) om de rijke tekstredacteur te openen en de rest van de paginacontent te verbergen.
+Voor op tekst-gebaseerde componenten, klik de het volledig-schermwijze ![&#x200B; volledig het schermknoop van RTE &#x200B;](/help/sites-cloud/authoring/assets/editing-full-screen.png) van de [&#x200B; toolbar &#x200B;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) om de rijke tekstredacteur te openen en de rest van de paginacontent te verbergen.
 
-In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid van opties [ hangt van de configuratie ](/help/implementing/developing/extending/rich-text-editor.md) af.
+In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid van opties [&#x200B; hangt van de configuratie &#x200B;](/help/implementing/developing/extending/rich-text-editor.md) af.
 
-![ RTE op volledige het schermwijze ](/help/sites-cloud/authoring/assets/rte-full-screen.png)
+![&#x200B; RTE op volledige het schermwijze &#x200B;](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
 De volgende opties voor teksteditors met tekstopmaak zijn beschikbaar:
 
@@ -59,4 +59,4 @@ Klik op minimaliseren om de modus Volledig scherm te sluiten.
 
 >[!MORELIKETHIS]
 >
->* [ vorm rijke teksteditors ](/help/implementing/developing/extending/rich-text-editor.md)
+>* [&#x200B; vorm rijke teksteditors &#x200B;](/help/implementing/developing/extending/rich-text-editor.md)

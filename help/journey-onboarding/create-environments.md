@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Omgevingen maken {#create-environments}
 
-In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om Cloud Manager te gebruiken om uw eerste milieu&#39;s tot stand te brengen.
+In dit deel van de [&#x200B; onboarding reis &#x200B;](overview.md), leert u hoe te om Cloud Manager te gebruiken om uw eerste milieu&#39;s tot stand te brengen.
 
 ## Doelstelling {#objective}
 
-Na het lezen van het vorige document in dit op instapweigering reis, [ Creërend Programma&#39;s ](create-program.md), hebt u nu uw eigen programma van Cloud Manager. Nu kunt u leren hoe u Cloud Manager kunt gebruiken om uw eerste omgevingen voor dat programma te maken.
+Na het lezen van het vorige document in dit op instapweigering reis, [&#x200B; Creërend Programma&#39;s &#x200B;](create-program.md), hebt u nu uw eigen programma van Cloud Manager. Nu kunt u leren hoe u Cloud Manager kunt gebruiken om uw eerste omgevingen voor dat programma te maken.
 
 Na het lezen van dit document zult u:
 
@@ -48,17 +48,17 @@ In het kader van deze instapreis creëert u een ontwikkelomgeving die u kunt geb
 
 **om een milieu tot stand te brengen:**
 
-1. Logon aan Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logon aan Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Selecteer het programma waaraan u een omgeving wilt toevoegen.
 
 1. Om een milieu, van de **pagina van het Overzicht van het 0&rbrace; Programma, op de** Milieu **kaart toe te voegen, selecteer** milieu **optie toevoegen.**
 
-   ![ kaart van Milieu&#39;s ](/help/implementing/cloud-manager/assets/no-environments.png)
+   ![&#x200B; kaart van Milieu&#39;s &#x200B;](/help/implementing/cloud-manager/assets/no-environments.png)
 
    * **voegt de optie van het Milieu** toe is ook beschikbaar op **Milieu** tabel.
 
-     ![ Milieu&#39;s tabel ](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![&#x200B; Milieu&#39;s tabel &#x200B;](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * **voeg Milieu** optie toe kan wegens gebrek aan toestemmingen of afhankelijk van de vergunning gegeven middelen worden onbruikbaar gemaakt.
 
@@ -70,7 +70,7 @@ In het kader van deze instapreis creëert u een ontwikkelomgeving die u kunt geb
    * Verstrek een **beschrijving van het Milieu**.
    * Selecteer het Gebied van de a **Wolk**.
 
-   ![ voeg milieudialoog ](/help/implementing/cloud-manager/assets/add-environment2.png) toe
+   ![&#x200B; voeg milieudialoog &#x200B;](/help/implementing/cloud-manager/assets/add-environment2.png) toe
 
 1. Klik **sparen** om het gespecificeerde milieu toe te voegen.
 
@@ -86,14 +86,14 @@ Nu je dit deel van de instapreis hebt gelezen, moet je:
 
 Uw team heeft nu toegang tot de cloudbronnen die u hebt gemaakt. Als systeembeheerder, moet u uw teamleden aan productprofielen in AEM as a Cloud Service van Adobe Admin Console eerst toewijzen zodat zij tot die middelen kunnen toegang hebben.
 
-Daarom zou u uw aan boord gaan reis door het document te herzien [ moeten voortzetten toewijzend de Leden van het Team aan de Profielen van het Product van AEM as a Cloud Service ](assign-profiles-aem.md). In dat document, leert u hoe te om uw teamleden rechten aan uw nieuwe milieu&#39;s te verlenen.
+Daarom zou u uw aan boord gaan reis door het document te herzien [&#x200B; moeten voortzetten toewijzend de Leden van het Team aan de Profielen van het Product van AEM as a Cloud Service &#x200B;](assign-profiles-aem.md). In dat document, leert u hoe te om uw teamleden rechten aan uw nieuwe milieu&#39;s te verlenen.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-* [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.md) - Leer over de soorten milieu&#39;s die u kunt creëren en hoe te om hen voor uw project van Cloud Manager tot stand te brengen
-* [ Gebruikend Adobe Cloud Manager - de milieu&#39;s van Milieu ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/cloud-manager/environments) - de milieu&#39;s van Cloud Manager zijn samengesteld van de creatie van AEM, het publiceren, en de diensten van Dispatcher. Leer hoe de verschillende milieu&#39;s rollen steunen en kunnen worden betrokken gebruikend verschillende CI/CD pijpleidingen.
-* [ Snelle Milieu&#39;s van de Ontwikkeling ](/help/implementing/developing/introduction/rapid-development-environments.md) - zie deze documentatie voor details over hoe te om RDE te gebruiken
+* [&#x200B; het Leiden Milieu &#x200B;](/help/implementing/cloud-manager/manage-environments.md) - Leer over de soorten milieu&#39;s die u kunt creëren en hoe te om hen voor uw project van Cloud Manager tot stand te brengen
+* [&#x200B; Gebruikend Adobe Cloud Manager - de milieu&#39;s van Milieu &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/cloud-manager/environments) - de milieu&#39;s van Cloud Manager zijn samengesteld van de creatie van AEM, het publiceren, en de diensten van Dispatcher. Leer hoe de verschillende milieu&#39;s rollen steunen en kunnen worden betrokken gebruikend verschillende CI/CD pijpleidingen.
+* [&#x200B; Snelle Milieu&#39;s van de Ontwikkeling &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md) - zie deze documentatie voor details over hoe te om RDE te gebruiken
 <!-- ERROR: Not Found (HTTP error 404) FIND AN ALTERNATE RESOURCE? * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 Wanneer u een adaptief formulier maakt met een XML-schema als formuliermodel, hebt u basiskennis van XML-schema&#39;s nodig. Bovendien wordt aangeraden de volgende inhoud vóór dit artikel te lezen.
 
 * [Een adaptief formulier maken](creating-adaptive-form.md)
-* [ schema van XML ](https://www.w3.org/TR/xmlschema-2/)
+* [&#x200B; schema van XML &#x200B;](https://www.w3.org/TR/xmlschema-2/)
 
 ## Een XML-schema gebruiken als formuliermodel {#using-an-xml-schema-as-form-model}
 
@@ -303,4 +303,4 @@ In een herhaalbaar subformulier moet u het subformulier Voltooien gebruiken. Als
 
 >[!MORELIKETHIS]
 >
->* [ Schema van JSON van het Ontwerp voor een AanpassingsVorm ](/help/forms/adaptive-form-json-schema-form-model.md)
+>* [&#x200B; Schema van JSON van het Ontwerp voor een AanpassingsVorm &#x200B;](/help/forms/adaptive-form-json-schema-form-model.md)

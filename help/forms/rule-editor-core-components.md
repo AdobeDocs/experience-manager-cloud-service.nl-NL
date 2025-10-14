@@ -18,8 +18,8 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
-| AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/rule-editor.md) |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=nl-NL) |
+| AEM as a Cloud Service (Foundation Components) | [&#x200B; klik hier &#x200B;](/help/forms/rule-editor.md) |
+| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=nl-NL) |
 
 In een Adaptief formulier dat is gebaseerd op Core Components, biedt de functie voor de regeleditor zowel zakelijke gebruikers als ontwikkelaars de mogelijkheid om regels voor adaptieve formulierobjecten te schrijven. Met deze regels worden acties gedefinieerd die op formulierobjecten worden geactiveerd op basis van vooraf ingestelde voorwaarden, gebruikersinvoer en gebruikersacties op het formulier. Deze functie helpt de ervaring bij het invullen van formulieren verder te stroomlijnen, zodat u zowel nauwkeurigheid als snelheid hebt.
 
@@ -39,7 +39,7 @@ Een aantal belangrijke handelingen die u met behulp van regels kunt uitvoeren op
 
 Gebruikers die aan de groep `forms-power-users` zijn toegevoegd, kunnen scripts maken en bestaande scripts bewerken. Gebruikers in de groep [!DNL forms-users] kunnen de scripts gebruiken, maar maken of bewerken geen scripts.
 
-Verwijs naar het [ Verschil tussen de Redacteur van de Regel van de Stichting en het artikel van de Redacteur van de Regel van de Component van de Kern ](/help/forms/rule-editor-core-components-difference-tables.md) voor een gedetailleerde vergelijking.
+Verwijs naar het [&#x200B; Verschil tussen de Redacteur van de Regel van de Stichting en het artikel van de Redacteur van de Regel van de Component van de Kern &#x200B;](/help/forms/rule-editor-core-components-difference-tables.md) voor een gedetailleerde vergelijking.
 
 <!--
 ## Difference between Rule editor in Core Components and Rule Editor in Foundation Components
@@ -72,11 +72,11 @@ Toon, verberg, laat toe, maak onbruikbaar, plaats Waarde van, en bevestig regelt
 >
 >De beschikbare regeltypen, inclusief de voorwaarden en handelingen die u in de regeleditor definieert, zijn ook afhankelijk van het type formulierobject waarop u een regel maakt. In de regeleditor worden alleen geldige regeltypen en opties weergegeven voor het schrijven van voorwaarde- en handelingsinstructies voor een bepaald type formulierobject. U ziet bijvoorbeeld geen typen Valideren en Waarde instellen voor een deelvensterobject.
 
-Voor meer informatie over regeltypes beschikbaar in de regelredacteur, zie [ Beschikbare regeltypes in regelredacteur ](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Voor meer informatie over regeltypes beschikbaar in de regelredacteur, zie [&#x200B; Beschikbare regeltypes in regelredacteur &#x200B;](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
 ### Richtlijnen voor het kiezen van een regelconstructie {#guidelines-for-choosing-a-rule-construct}
 
-Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelconstructie te gebruiken, zijn hier sommige richtlijnen om één constructie over een andere te kiezen. Voor meer informatie over de beschikbare regels in regelredacteur, zie [ Beschikbare regeltypes in regelredacteur ](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelconstructie te gebruiken, zijn hier sommige richtlijnen om één constructie over een andere te kiezen. Voor meer informatie over de beschikbare regels in regelredacteur, zie [&#x200B; Beschikbare regeltypes in regelredacteur &#x200B;](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
 * Een typische regel van het duim wanneer het creëren van een regel is het denken over het in de context van het voorwerp waarop u een regel schrijft. Denk eraan dat u veld B wilt verbergen of weergeven op basis van de waarde die een gebruiker in veld A heeft opgegeven. In dit geval evalueert u een voorwaarde in veld A en activeert u een actie in veld B op basis van de waarde die de voorwaarde retourneert.
 
@@ -92,7 +92,7 @@ Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelco
 * De voorwaarde in wanneer regel wordt geëvalueerd wanneer een gebruiker de waarde van het voorwerp verandert waarop wanneer regel wordt toegepast. Als u echter wilt dat de actie wordt geactiveerd wanneer de waarde aan de serverzijde verandert, bijvoorbeeld bij het vooraf invullen van de waarde, kunt u het beste een When-regel schrijven die de actie activeert wanneer het veld wordt geïnitialiseerd.
 * Wanneer u regels schrijft voor vervolgkeuzelijsten, keuzerondjes of selectievakjes, worden de opties of waarden van deze formulierobjecten in het formulier vooraf ingevuld in de regeleditor.
 
-Om te begrijpen hoe te om het gebruikersinterface voor het schrijven van en het leiden van regels in een Redacteur van de Regel te gebruiken, verwijs naar het [ Gebruikersinterface van de Redacteur van de Regel voor Aangepast Forms dat op het artikel van de Componenten van de Kern wordt gebaseerd ](/help/forms/rule-editor-core-components-user-interface.md).
+Om te begrijpen hoe te om het gebruikersinterface voor het schrijven van en het leiden van regels in een Redacteur van de Regel te gebruiken, verwijs naar het [&#x200B; Gebruikersinterface van de Redacteur van de Regel voor Aangepast Forms dat op het artikel van de Componenten van de Kern wordt gebaseerd &#x200B;](/help/forms/rule-editor-core-components-user-interface.md).
 
 ## Zie ook
 

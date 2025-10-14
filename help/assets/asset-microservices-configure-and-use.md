@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Asset microservices zorgen voor schaalbare en veerkrachtige verwerking van middelen met behulp van cloudnative toepassingen (ook wel workers genoemd). Adobe beheert de services voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties.
 
-De microdiensten van activa laten u a [ brede waaier van dossiertypes ](/help/assets/file-format-support.md) behandelen die meer formaten uit-van-de-doos dan wat met vorige versies van [!DNL Experience Manager] mogelijk is. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren, maar hiervoor zijn oplossingen van derden vereist, zoals [!DNL ImageMagick] .
+De microdiensten van activa laten u a [&#x200B; brede waaier van dossiertypes &#x200B;](/help/assets/file-format-support.md) behandelen die meer formaten uit-van-de-doos dan wat met vorige versies van [!DNL Experience Manager] mogelijk is. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren, maar hiervoor zijn oplossingen van derden vereist, zoals [!DNL ImageMagick] .
 
 De verwerking van elementen is afhankelijk van de configuratie in **[!UICONTROL Processing Profiles]** . Experience Manager biedt een standaardconfiguratie en stelt beheerders in staat specifiekere configuratie voor middelenverwerking toe te voegen. Beheerders maken, onderhouden en wijzigen de configuraties van naverwerkingsworkflows, inclusief optionele aanpassing. Door de workflows aan te passen kunnen ontwikkelaars de standaardaanbieding uitbreiden.
 
@@ -25,7 +25,7 @@ De verwerking van elementen is afhankelijk van de configuratie in **[!UICONTROL 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![ Een mening op hoog niveau van activa verwerkend ](assets/asset-microservices-flow.png " een mening op hoog niveau van activa verwerkend ")
+![&#x200B; Een mening op hoog niveau van activa verwerkend &#x200B;](assets/asset-microservices-flow.png " een mening op hoog niveau van activa verwerkend ")
 
 >[!NOTE]
 >
@@ -37,16 +37,16 @@ In [!DNL Experience Manager] zijn de volgende verwerkingsniveaus mogelijk.
 
 | Optie | Beschrijving | Gebruikte gevallen |
 |---|---|---|
-| [ Standaardconfiguratie ](#default-config) | Het is beschikbaar zoals is en kan niet worden gewijzigd. Deze configuratie biedt een basisvermogen voor het genereren van vertoningen. | <ul> <li>Standaardminiaturen die worden gebruikt door de gebruikersinterface van [!DNL Assets] (48, 140 en 319 pixels) </li> <li> Grote voorvertoning (webuitvoering, 1280 pixels) </li><li> Metagegevens en tekstextractie.</li></ul> |
-| [ de configuratie van de Douane ](#standard-config) | Gevormd door beheerders als gebruikersinterface. Er zijn meer opties beschikbaar voor het genereren van vertoningen door de standaardoptie uit te breiden. De optie voor het uit-van-de-doos uitbreiden voor verschillende indelingen en uitvoeringen. | <ul><li>FPO (alleen voor plaatsing)-uitvoering. </li> <li>Bestandsindeling en resolutie van afbeeldingen wijzigen</li> <li> Voorwaardelijk van toepassing op gevormde dossiertypes. </li> </ul> |
-| [ profiel van de Douane ](#custom-config) | Gevormd door beheerders via gebruikersinterface om douanecode door douanetoepassingen te gebruiken om [ Dienst van Asset Compute ](https://experienceleague.adobe.com/nl/docs/asset-compute/using/introduction) te roepen. Ondersteunt complexere vereisten in een cloudnative en schaalbare methode. | Zie [ toegestane gebruiksgevallen ](#custom-config). |
+| [&#x200B; Standaardconfiguratie &#x200B;](#default-config) | Het is beschikbaar zoals is en kan niet worden gewijzigd. Deze configuratie biedt een basisvermogen voor het genereren van vertoningen. | <ul> <li>Standaardminiaturen die worden gebruikt door de gebruikersinterface van [!DNL Assets] (48, 140 en 319 pixels) </li> <li> Grote voorvertoning (webuitvoering, 1280 pixels) </li><li> Metagegevens en tekstextractie.</li></ul> |
+| [&#x200B; de configuratie van de Douane &#x200B;](#standard-config) | Gevormd door beheerders als gebruikersinterface. Er zijn meer opties beschikbaar voor het genereren van vertoningen door de standaardoptie uit te breiden. De optie voor het uit-van-de-doos uitbreiden voor verschillende indelingen en uitvoeringen. | <ul><li>FPO (alleen voor plaatsing)-uitvoering. </li> <li>Bestandsindeling en resolutie van afbeeldingen wijzigen</li> <li> Voorwaardelijk van toepassing op gevormde dossiertypes. </li> </ul> |
+| [&#x200B; profiel van de Douane &#x200B;](#custom-config) | Gevormd door beheerders via gebruikersinterface om douanecode door douanetoepassingen te gebruiken om [&#x200B; Dienst van Asset Compute &#x200B;](https://experienceleague.adobe.com/nl/docs/asset-compute/using/introduction) te roepen. Ondersteunt complexere vereisten in een cloudnative en schaalbare methode. | Zie [&#x200B; toegestane gebruiksgevallen &#x200B;](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
 
 ## Ondersteunde bestandsindelingen {#supported-file-formats}
 
-Asset microservices bieden ondersteuning voor een groot aantal verschillende bestandsindelingen voor het verwerken, genereren en extraheren van metagegevens. Zie [ gesteunde dossierformaten ](file-format-support.md) voor de volledige lijst van types MIME en de functionaliteit die voor elk type wordt gesteund.
+Asset microservices bieden ondersteuning voor een groot aantal verschillende bestandsindelingen voor het verwerken, genereren en extraheren van metagegevens. Zie [&#x200B; gesteunde dossierformaten &#x200B;](file-format-support.md) voor de volledige lijst van types MIME en de functionaliteit die voor elk type wordt gesteund.
 
 ## Standaardconfiguratie {#default-config}
 
@@ -59,15 +59,15 @@ Met de standaardconfiguratie, slechts wordt het meest basisverwerkingsprofiel ge
 
 ## Standaardconfiguratie {#standard-config}
 
-[!DNL Experience Manager] biedt mogelijkheden om specifiekere uitvoeringen te genereren voor veelgebruikte indelingen, afhankelijk van de behoeften van de gebruiker. Een beheerder kan aanvullende [!UICONTROL Processing Profiles] maken om het maken van dergelijke vertoningen te vergemakkelijken. Gebruikers wijzen vervolgens een of meer van de beschikbare profielen toe aan specifieke mappen om de extra verwerking te voltooien. De extra verwerking kan bijvoorbeeld uitvoeringen genereren voor het web, mobiele apparaten en tablets. [ zie deze video om te begrijpen, om [!UICONTROL Processing Profiles] tot stand te brengen en toe te passen en hoe te om tot de gecreeerde vertoningen ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/content-automation/creative-operations) toegang te hebben.
+[!DNL Experience Manager] biedt mogelijkheden om specifiekere uitvoeringen te genereren voor veelgebruikte indelingen, afhankelijk van de behoeften van de gebruiker. Een beheerder kan aanvullende [!UICONTROL Processing Profiles] maken om het maken van dergelijke vertoningen te vergemakkelijken. Gebruikers wijzen vervolgens een of meer van de beschikbare profielen toe aan specifieke mappen om de extra verwerking te voltooien. De extra verwerking kan bijvoorbeeld uitvoeringen genereren voor het web, mobiele apparaten en tablets. [&#x200B; zie deze video om te begrijpen, om [!UICONTROL Processing Profiles] tot stand te brengen en toe te passen en hoe te om tot de gecreeerde vertoningen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/content-automation/creative-operations) toegang te hebben.
 
 * **de breedte en de hoogte van de Vertoning**: De breedte en de hoogtespecificatie van de Vertoning verstrekken maximumgrootte van het geproduceerde uitvoerbeeld. Middelenmicroservices proberen de grootst mogelijke uitvoering te produceren, waarbij de breedte en hoogte niet groter zijn dan respectievelijk de opgegeven breedte en hoogte. De hoogte-breedteverhouding blijft behouden, dat wil zeggen hetzelfde als het origineel. Een lege waarde houdt in dat bij de verwerking van elementen de pixelafmetingen van het origineel worden gebruikt.
 
 * **MIME de regels van de typeopneming**: Wanneer een activa met een specifiek MIME type wordt verwerkt, wordt het MIME type eerst gecontroleerd tegen de uitgesloten MIME typewaarde voor de vertoningsspecificatie. Als deze overeenkomt met die lijst, wordt deze specifieke uitvoering niet gegenereerd voor het element (lijst van gewezen personen). Anders wordt het MIME-type gecontroleerd op basis van het opgenomen MIME-type en als het overeenkomt met de lijst, wordt de vertoning gegenereerd (lijst van gewenste personen).
 
-* **Speciale FPO vertoning**: Wanneer het plaatsen van grote activa van [!DNL Experience Manager] in [!DNL Adobe InDesign] documenten, wacht een creatieve beroeps op een wezenlijke tijd nadat zij [ activa ](https://helpx.adobe.com/nl/indesign/using/placing-graphics.html) plaatsen. Ondertussen kan de gebruiker [!DNL InDesign] niet gebruiken. Dit onderbreekt de creatieve stroom en beïnvloedt de gebruikerservaring negatief. Met Adobe kunt u tijdelijk kleine uitvoeringen in [!DNL InDesign] -documenten plaatsen. Deze kunnen later worden vervangen door middelen voor volledige resolutie. Op aanvraag. [!DNL Experience Manager] biedt uitvoeringen die alleen voor plaatsing worden gebruikt. Deze FPO-uitvoeringen hebben een kleine bestandsgrootte maar hebben dezelfde hoogte-breedteverhouding.
+* **Speciale FPO vertoning**: Wanneer het plaatsen van grote activa van [!DNL Experience Manager] in [!DNL Adobe InDesign] documenten, wacht een creatieve beroeps op een wezenlijke tijd nadat zij [&#x200B; activa &#x200B;](https://helpx.adobe.com/nl/indesign/using/placing-graphics.html) plaatsen. Ondertussen kan de gebruiker [!DNL InDesign] niet gebruiken. Dit onderbreekt de creatieve stroom en beïnvloedt de gebruikerservaring negatief. Met Adobe kunt u tijdelijk kleine uitvoeringen in [!DNL InDesign] -documenten plaatsen. Deze kunnen later worden vervangen door middelen voor volledige resolutie. Op aanvraag. [!DNL Experience Manager] biedt uitvoeringen die alleen voor plaatsing worden gebruikt. Deze FPO-uitvoeringen hebben een kleine bestandsgrootte maar hebben dezelfde hoogte-breedteverhouding.
 
-Het verwerkingsprofiel kan een FPO-uitvoering (alleen voor plaatsing) bevatten. Zie [!DNL Adobe Asset Link] [ documentatie ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) om te begrijpen als u het voor uw verwerkingsprofiel moet aanzetten. Voor meer informatie, zie de [ volledige documentatie van de Verbinding van de Activa van Adobe ](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html).
+Het verwerkingsprofiel kan een FPO-uitvoering (alleen voor plaatsing) bevatten. Zie [!DNL Adobe Asset Link] [&#x200B; documentatie &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) om te begrijpen als u het voor uw verwerkingsprofiel moet aanzetten. Voor meer informatie, zie de [&#x200B; volledige documentatie van de Verbinding van de Activa van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html).
 
 ### Een standaardprofiel maken {#create-standard-profile}
 
@@ -82,7 +82,7 @@ Het verwerkingsprofiel kan een FPO-uitvoering (alleen voor plaatsing) bevatten. 
    * Kwaliteit in procent van elke JPEG- en WebP-uitvoering.
    * MIME-typen zijn opgenomen en uitgesloten om de toepasbaarheid van een profiel te definiëren.
 
-   ![ verwerking-profielen-toevoegend ](assets/processing-profiles-image.png)
+   ![&#x200B; verwerking-profielen-toevoegend &#x200B;](assets/processing-profiles-image.png)
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -99,7 +99,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Aangepast profiel en gebruiksscenario&#39;s {#custom-config}
 
-[!DNL Asset Compute Service] ondersteunt een groot aantal gebruiksgevallen, zoals standaardverwerking en verwerking van Adobe-specifieke indelingen, zoals Photoshop-bestanden. Het staat ook voor het uitvoeren van douane of organisatie-specifieke verwerking toe. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt automatisch verwerkt of als configuratie Profielen verwerken. Als deze verwerkingsopties niet aan uw bedrijfsbehoeften voldoen, raadt Adobe aan de standaardfuncties uit te breiden met [!DNL Asset Compute Service] . Voor een overzicht, zie [ uitbreidbaarheid begrijpen en wanneer om het ](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/understand-extensibility) te gebruiken.
+[!DNL Asset Compute Service] ondersteunt een groot aantal gebruiksgevallen, zoals standaardverwerking en verwerking van Adobe-specifieke indelingen, zoals Photoshop-bestanden. Het staat ook voor het uitvoeren van douane of organisatie-specifieke verwerking toe. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt automatisch verwerkt of als configuratie Profielen verwerken. Als deze verwerkingsopties niet aan uw bedrijfsbehoeften voldoen, raadt Adobe aan de standaardfuncties uit te breiden met [!DNL Asset Compute Service] . Voor een overzicht, zie [&#x200B; uitbreidbaarheid begrijpen en wanneer om het &#x200B;](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/understand-extensibility) te gebruiken.
 
 >[!NOTE]
 >
@@ -107,12 +107,12 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 Het kan beeld, video, document, en andere dossierformaten in verschillende vertoningen met inbegrip van duimnagels, gehaalde tekst en meta-gegevens, en archieven omzetten.
 
-De ontwikkelaars kunnen [!DNL Asset Compute Service] gebruiken [ om douanetoepassingen ](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/develop-custom-application) voor de gesteunde gebruiksgevallen tot stand te brengen. [!DNL Experience Manager] kan deze aangepaste toepassingen vanuit de gebruikersinterface aanroepen met behulp van aangepaste profielen die beheerders configureren. [!DNL Asset Compute Service] biedt ondersteuning voor de volgende gevallen waarin externe services worden aangeroepen:
+De ontwikkelaars kunnen [!DNL Asset Compute Service] gebruiken [&#x200B; om douanetoepassingen &#x200B;](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/develop-custom-application) voor de gesteunde gebruiksgevallen tot stand te brengen. [!DNL Experience Manager] kan deze aangepaste toepassingen vanuit de gebruikersinterface aanroepen met behulp van aangepaste profielen die beheerders configureren. [!DNL Asset Compute Service] biedt ondersteuning voor de volgende gevallen waarin externe services worden aangeroepen:
 
-* Gebruik [!DNL Adobe Photoshop] ImageCutout API van 0&rbrace; [ en bewaar het resultaat als vertoning.](https://developer.adobe.com/photoshop/photoshop-api-docs/)
+* Gebruik [!DNL Adobe Photoshop] ImageCutout API van 0&rbrace; [&#x200B; en bewaar het resultaat als vertoning.](https://developer.adobe.com/photoshop/photoshop-api-docs/)
 * Vraag derdesystemen om veranderingen, bijvoorbeeld, een PIM systeem aan te brengen.
 * Met de API van [!DNL Photoshop] kunt u diverse uitvoeringen genereren op basis van de Photoshop-sjabloon.
-* Gebruik [ Adobe Lightroom API ](https://developer.adobe.com/photoshop/photoshop-api-docs/) om de opgenomen activa te optimaliseren en hen te bewaren als vertoningen.
+* Gebruik [&#x200B; Adobe Lightroom API &#x200B;](https://developer.adobe.com/photoshop/photoshop-api-docs/) om de opgenomen activa te optimaliseren en hen te bewaren als vertoningen.
 
 >[!NOTE]
 >
@@ -125,13 +125,13 @@ De ontwikkelaars kunnen [!DNL Asset Compute Service] gebruiken [ om douanetoepas
 1. Typ in het tekstveld Naam de gewenste bestandsnaam van de vertoning en geef vervolgens de volgende informatie op.
 
    * Bestandsnaam van elke vertoning en een ondersteunde bestandsextensie.
-   * [ Eindpunt URL van een aangepaste app van App Builder ](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/deploy-custom-application). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
-   * Voeg de Parameters van de Dienst aan [ extra informatie of parameters tot de douanetoepassing ](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/develop-custom-application#extend) over.
+   * [&#x200B; Eindpunt URL van een aangepaste app van App Builder &#x200B;](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/deploy-custom-application). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
+   * Voeg de Parameters van de Dienst aan [&#x200B; extra informatie of parameters tot de douanetoepassing &#x200B;](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/develop-custom-application#extend) over.
    * MIME-typen zijn opgenomen en uitgesloten om de verwerking te beperken tot een paar specifieke bestandsindelingen.
 
 1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
 
-De douanetoepassingen zijn hoofd [ App Builder ](https://developer.adobe.com/app-builder/docs/overview/) apps van het Project. Uw aangepaste toepassing haalt alle beschikbare bestanden op als deze zijn ingesteld met een verwerkingsprofiel. De toepassing moet de bestanden filteren.
+De douanetoepassingen zijn hoofd [&#x200B; App Builder &#x200B;](https://developer.adobe.com/app-builder/docs/overview/) apps van het Project. Uw aangepaste toepassing haalt alle beschikbare bestanden op als deze zijn ingesteld met een verwerkingsprofiel. De toepassing moet de bestanden filteren.
 
 >[!CAUTION]
 >
@@ -145,7 +145,7 @@ Dankzij de integratie met Asset Compute Service kan Experience Manager deze para
 
 <!-- TBD: Check screenshot against the interface. -->
 
-![ douane-verwerkings-profiel ](assets/custom-processing-profile.png)
+![&#x200B; douane-verwerkings-profiel &#x200B;](assets/custom-processing-profile.png)
 
 *Figuur: Gebruik het [!UICONTROL Service Parameters] gebied om toegevoegde informatie tot vooraf bepaalde parameters over te gaan bouwen in de douanetoepassing. In dit voorbeeld worden de afbeeldingen bijgewerkt met `Jumanji` tekst in `Arial-BoldMT` font.*
 
@@ -157,9 +157,9 @@ Pas verwerkingsprofielen toe op mappen met een van de volgende methoden:
 
 * Beheerders kunnen een definitie van het verwerkingsprofiel selecteren in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** en de handeling **[!UICONTROL Apply Profile to Folders]** gebruiken. Er wordt een inhoudbrowser geopend waarin u naar specifieke mappen kunt navigeren en deze kunt selecteren en vervolgens de toepassing van het profiel kunt bevestigen.
 * Gebruikers kunnen een map selecteren in de Assets-gebruikersinterface en de handeling **[!UICONTROL Properties]** gebruiken om het scherm met de eigenschappen van de map te openen. Op het tabblad **[!UICONTROL Asset Processing]** kunnen ze in de lijst [!UICONTROL Processing Profile] het juiste verwerkingsprofiel voor die map selecteren. Klik op **[!UICONTROL Save & Close]** om de wijzigingen op te slaan.
-  ![ pas verwerkingsprofiel op een omslag van het lusje van de Eigenschappen van Activa toe ](assets/folder-properties-processing-profile.png)
+  ![&#x200B; pas verwerkingsprofiel op een omslag van het lusje van de Eigenschappen van Activa toe &#x200B;](assets/folder-properties-processing-profile.png)
 
-* De gebruikers kunnen omslagen of specifieke activa in het gebruikersinterface van Assets selecteren om een verwerkingsprofiel toe te passen, dan selecteren ![ activa opnieuw verwerkingspictogram ](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Reprocess Assets]** optie van de opties beschikbaar op de bovenkant.
+* De gebruikers kunnen omslagen of specifieke activa in het gebruikersinterface van Assets selecteren om een verwerkingsprofiel toe te passen, dan selecteren ![&#x200B; activa opnieuw verwerkingspictogram &#x200B;](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Reprocess Assets]** optie van de opties beschikbaar op de bovenkant.
 
 >[!TIP]
 >
@@ -173,7 +173,7 @@ Nadat een verwerkingsprofiel is toegepast op een map, worden alle nieuwe element
 
 Als u wilt controleren of elementen worden verwerkt, bekijkt u een voorvertoning van de gegenereerde uitvoeringen in de weergave [!UICONTROL Renditions] in de linkerrails. Open de voorvertoning van het element en open het linkerspoor om de weergave **[!UICONTROL Renditions]** te openen. De specifieke uitvoeringen in het verwerkingsprofiel, waarvoor het type van het specifieke element overeenkomt met de regels voor het opnemen van het MIME-type, moeten zichtbaar en toegankelijk zijn.
 
-![ extra-vertoningen ](assets/renditions-additional-renditions.png)
+![&#x200B; extra-vertoningen &#x200B;](assets/renditions-additional-renditions.png)
 
 *Cijfer: Voorbeeld van twee extra vertoningen die door een verwerkingsprofiel worden geproduceerd dat op de ouderomslag wordt toegepast.*
 
@@ -181,7 +181,7 @@ Als u wilt controleren of elementen worden verwerkt, bekijkt u een voorvertoning
 
 Voor een situatie waarin extra verwerking van activa wordt vereist die niet kan worden bereikt gebruikend de Profielen van de Verwerking, kunnen de extra postverwerkingswerkschema&#39;s aan de configuratie worden toegevoegd. Na de verwerking kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
 
-Nadat de microdiensten verwerking eindigt, [!DNL Experience Manager] automatisch looppas postverwerkingswerkschema&#39;s, of [ auto-begin werkschema&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/configuring/auto-start-workflows), als gevormd. Het is niet nodig om handmatig starters voor werkstromen toe te voegen om de werkstromen te activeren. De voorbeelden zijn:
+Nadat de microdiensten verwerking eindigt, [!DNL Experience Manager] automatisch looppas postverwerkingswerkschema&#39;s, of [&#x200B; auto-begin werkschema&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/configuring/auto-start-workflows), als gevormd. Het is niet nodig om handmatig starters voor werkstromen toe te voegen om de werkstromen te activeren. De voorbeelden zijn:
 
 * Aangepaste workflowstappen om elementen te verwerken.
 * Integraties om metagegevens of eigenschappen toe te voegen aan elementen van externe systemen, bijvoorbeeld product- of procesgegevens.
@@ -194,7 +194,7 @@ Voer de volgende stappen uit om een workflowconfiguratie voor na verwerking toe 
 * Voeg de stap [!UICONTROL DAM Update Asset Workflow Completed Process] aan het einde toe. Het toevoegen van deze stap zorgt ervoor dat Experience Manager weet wanneer de verwerking beëindigt en de activa als verwerkt kunnen worden gemerkt, die *Nieuw* is wordt getoond op de activa.
 * Creeer een configuratie voor de Dienst van de Runner van de Werkschema van de Douane die u uitvoering van een model van het post-verwerkingswerkschema of door een weg (omslagplaats) of door een regelmatige uitdrukking laat vormen.
 
-Voor details over welke standaardwerkschemastap in het post-verwerkingswerkschema kan worden gebruikt, zie [ werkschemastappen in postverwerkingswerkschema ](developer-reference-material-apis.md#post-processing-workflows-steps) in de ontwikkelaarsverwijzing.
+Voor details over welke standaardwerkschemastap in het post-verwerkingswerkschema kan worden gebruikt, zie [&#x200B; werkschemastappen in postverwerkingswerkschema &#x200B;](developer-reference-material-apis.md#post-processing-workflows-steps) in de ontwikkelaarsverwijzing.
 
 ### Workflowmodellen voor naverwerking maken {#create-post-processing-workflow-models}
 
@@ -208,8 +208,8 @@ Zorg ervoor dat de laatste stap van elke naverwerkingsworkflow `DAM Update Asset
 
 Nadat de assetmicroservices de verwerking van de geüploade elementen hebben voltooid, kunt u een workflow voor nabewerking definiëren om de elementen verder te verwerken. Als u naverwerking wilt configureren met behulp van workflowmodellen, kunt u een van de volgende handelingen uitvoeren:
 
-* [ pas een werkschemamodel in de omslagEigenschappen ](#apply-workflow-model-to-folder) toe.
-* [ vormt de dienst van de Runner van het Werkschema van de Douane ](#configure-custom-workflow-runner-service).
+* [&#x200B; pas een werkschemamodel in de omslagEigenschappen &#x200B;](#apply-workflow-model-to-folder) toe.
+* [&#x200B; vormt de dienst van de Runner van het Werkschema van de Douane &#x200B;](#configure-custom-workflow-runner-service).
 
 #### Workflowmodel toepassen op een map {#apply-workflow-model-to-folder}
 
@@ -219,7 +219,7 @@ Voor gangbare gebruiksgevallen na verwerking kunt u de methode gebruiken om een 
 1. Selecteer een map, klik op **[!UICONTROL Properties]** op de werkbalk en klik op de tab **[!UICONTROL Assets Processing]** .
 1. Selecteer onder **[!UICONTROL Auto-start Workflow]** de gewenste workflow, geef een titel op voor de workflow en sla de wijzigingen op.
 
-   ![ pas een post-verwerkingswerkschema op een omslag in zijn Eigenschappen ](assets/post-processing-profile-workflow-for-folders.png) toe
+   ![&#x200B; pas een post-verwerkingswerkschema op een omslag in zijn Eigenschappen &#x200B;](assets/post-processing-profile-workflow-for-folders.png) toe
 
 #### De service Custom Workflow Runner configureren {#configure-custom-workflow-runner-service}
 
@@ -228,7 +228,7 @@ U kunt de Dienst van de Runner van de Werkstroom van de Douane voor de geavancee
 * Workflows na verwerking volgens pad (`postProcWorkflowsByPath`): meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende repository paden. Scheid paden en modellen met een dubbele punt. Eenvoudige opslagpaden worden ondersteund. Wijs deze toe aan een workflowmodel in het `/var` -pad. Bijvoorbeeld: `/content/dam/my-brand:/var/workflow/models/my-workflow` .
 * Workflows na verwerking op expressie (`postProcWorkflowsByExpression`): er kunnen meerdere workflowmodellen worden weergegeven op basis van verschillende reguliere expressies. Scheid expressies en modellen met een dubbele punt. Wijs de reguliere expressie rechtstreeks naar het knooppunt Asset, en niet naar een van de uitvoeringen of bestanden. Bijvoorbeeld: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow` .
 
-Om te weten hoe te om een configuratie op te stellen OSGi, zie [ aan  [!DNL Experience Manager]](/help/implementing/deploying/overview.md) opstellen.
+Om te weten hoe te om een configuratie op te stellen OSGi, zie [&#x200B; aan  [!DNL Experience Manager]](/help/implementing/deploying/overview.md) opstellen.
 
 #### Uitvoering van workflow na verwerking uitschakelen
 
@@ -254,7 +254,7 @@ Wanneer post-verwerking niet nodig is, creeer en gebruik een &quot;leeg&quot;Mod
 
 ##### Het workflowmodel voor automatisch opstarten van uitgeschakelde systemen toepassen
 
-Volg de stappen die in [ worden geschetst een werkschemamodel op een omslag ](#apply-workflow-model-to-folder) toepassen en **onbruikbaar maken Auto-Begin Werkschema** als **Auto-begin Werkschema** voor omslagen plaatsen die geen post-verwerking van activa vereisen.
+Volg de stappen die in [&#x200B; worden geschetst een werkschemamodel op een omslag &#x200B;](#apply-workflow-model-to-folder) toepassen en **onbruikbaar maken Auto-Begin Werkschema** als **Auto-begin Werkschema** voor omslagen plaatsen die geen post-verwerking van activa vereisen.
 
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
@@ -280,10 +280,10 @@ Volg de stappen die in [ worden geschetst een werkschemamodel op een omslag ](#a
 
 >[!MORELIKETHIS]
 >
->* [ Inleiding aan de Dienst van Asset Compute ](https://experienceleague.adobe.com/nl/docs/asset-compute/using/introduction).
->* [ begrijp de rekbaarheid en wanneer om het ](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/understand-extensibility) te gebruiken.
->* [ hoe te om douanetoepassingen ](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/develop-custom-application) tot stand te brengen.
->* [ Gesteunde types MIME voor diverse gebruiksgevallen ](/help/assets/file-format-support.md).
+>* [&#x200B; Inleiding aan de Dienst van Asset Compute &#x200B;](https://experienceleague.adobe.com/nl/docs/asset-compute/using/introduction).
+>* [&#x200B; begrijp de rekbaarheid en wanneer om het &#x200B;](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/understand-extensibility) te gebruiken.
+>* [&#x200B; hoe te om douanetoepassingen &#x200B;](https://experienceleague.adobe.com/nl/docs/asset-compute/using/extend/develop-custom-application) tot stand te brengen.
+>* [&#x200B; Gesteunde types MIME voor diverse gebruiksgevallen &#x200B;](/help/assets/file-format-support.md).
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

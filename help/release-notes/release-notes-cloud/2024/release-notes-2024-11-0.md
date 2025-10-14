@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
+>Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [&#x200B; Update van het Product van de Prioriteit Adobe &#x200B;](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Releasedatum {#release-date}
 
@@ -31,7 +31,7 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
+U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](/help/release-notes/maintenance/latest.md) vinden.
 
 ## Video vrijgeven {#release-video}
 
@@ -43,21 +43,21 @@ Heb een blik bij de Video van het Overzicht van de Versie van november 2024 voor
 
 **[!DNL Edge Delivery Services]Paginasjablonen met Universal Editor-ontwerp**
 
-U kunt elke Edge Delivery-pagina snel veranderen in een paginasjabloon. Hierdoor kunt u een nieuwe pagina met een vooraf gedefinieerde structuur en inhoud starten in plaats van een lege pagina. [ las meer ](/help/sites-cloud/authoring/universal-editor/templates.md).
+U kunt elke Edge Delivery-pagina snel veranderen in een paginasjabloon. Hierdoor kunt u een nieuwe pagina met een vooraf gedefinieerde structuur en inhoud starten in plaats van een lege pagina. [&#x200B; las meer &#x200B;](/help/sites-cloud/authoring/universal-editor/templates.md).
 
 **[!DNL Edge Delivery Services]CSV-importmodule voor publicatie via een AEM-instantie**
 
-Beheer uw Edge Delivery-spreadsheetgegevens (bijvoorbeeld omleidingen) efficiënt in uw favoriete spreadsheetprogramma en upload deze naar AEM via de nieuwe CSV-importmodule. [ las meer ](https://www.aem.live/docs/authoring-tabular-data).
+Beheer uw Edge Delivery-spreadsheetgegevens (bijvoorbeeld omleidingen) efficiënt in uw favoriete spreadsheetprogramma en upload deze naar AEM via de nieuwe CSV-importmodule. [&#x200B; las meer &#x200B;](https://www.aem.live/docs/authoring-tabular-data).
 
 ### Prerelease-mogelijkheden in AEM Sites
 
-Verbeterd [ het Fragment van de Inhoud die met unieke op identiteitskaart-Gebaseerde verwijzingen ](/help/headless/graphql-api/uuid-reference-upgrade.md) van verwijzingen verwijzen, die stabiele verbindingen verzekeren die geldig blijven zelfs wanneer de activa of de fragmenten worden bewogen, die de behoefte aan updates elimineren of opnieuw publiceren. Huidige beperking: paginaverwijzingen worden nog niet ondersteund met unieke id&#39;s. Als er in inhoudsfragmenten wordt verwezen naar pagina&#39;s, mag deze mogelijkheid niet worden gebruikt.
+Verbeterd [&#x200B; het Fragment van de Inhoud die met unieke op identiteitskaart-Gebaseerde verwijzingen &#x200B;](/help/headless/graphql-api/uuid-reference-upgrade.md) van verwijzingen verwijzen, die stabiele verbindingen verzekeren die geldig blijven zelfs wanneer de activa of de fragmenten worden bewogen, die de behoefte aan updates elimineren of opnieuw publiceren. Huidige beperking: paginaverwijzingen worden nog niet ondersteund met unieke id&#39;s. Als er in inhoudsfragmenten wordt verwezen naar pagina&#39;s, mag deze mogelijkheid niet worden gebruikt.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
 **AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud**
 
-[ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-content-fragment-delivery-with-openapi.md), is nu beschikbaar voor AEM as a Cloud Service.
+[&#x200B; AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud &#x200B;](/help/headless/aem-content-fragment-delivery-with-openapi.md), is nu beschikbaar voor AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -67,21 +67,21 @@ Verbeterd [ het Fragment van de Inhoud die met unieke op identiteitskaart-Gebase
 
 Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmatige intelligentie om automatisch bijschriften te genereren voor video-inhoud. Deze functie is ontworpen om de toegankelijkheid te verbeteren en de gebruikerservaring te verbeteren door nauwkeurige, real-time bijschriften te bieden. De AI analyseert de audiotrack van de video om spraak te transcriperen en bijschriften te maken, die kunnen worden bewerkt voor nauwkeurigheid of aanpassing. Deze bijschriften helpen te voldoen aan toegankelijkheidsvereisten en verbeteren de videobetrokkenheid van gebruikers die op tekst gebaseerde videoondersteuning gebruiken of verkiezen.
 
-Om vroege toegang tot AI-Gegenereerde titelsteun op uw Dynamische rekening van Media te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
+Om vroege toegang tot AI-Gegenereerde titelsteun op uw Dynamische rekening van Media te krijgen, [&#x200B; creeer en voorlegt een geval van de Steun van de Klant van Adobe &#x200B;](/help/assets/dynamic-media/video.md##enable-dash).
 
 **Dynamisch rapport van de Levering van Media**
 
 Krijg leveringsinzichten voor activa die met Dynamische Media worden geleverd, met de telling van de levering op activaniveau, verwijzende informatie, activaweg in AEM Assets en unieke activa ID. Er kunnen rapporten worden gegenereerd voor alle elementen die via Dynamic Media voor AEM Assets-opslagplaats worden geleverd of voor een specifieke maphiërarchie in AEM Assets. Met behulp van inzichten kunt u het rendement van de geleverde middelen meten, de kanaalprestaties meten en weloverwogen taken voor middelenbeheer voor middelen uitvoeren.
 
-Om vroege toegang tot het Dynamische Rapport van de Levering van Media op uw Dynamische rekening van Media te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van Adobe ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
+Om vroege toegang tot het Dynamische Rapport van de Levering van Media op uw Dynamische rekening van Media te krijgen, [&#x200B; creeer en voorlegt een geval van de Steun van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
 
 **Dynamisch paneel van Media**
 
-In de Assets-weergave hebt u nu toegang tot Dynamic Media en Dynamic Media met OpenAPI-uitvoeringen vanuit een apart deelvenster dat u ter beschikking wordt gesteld. U kunt ervoor kiezen de leverings-URL te kopiëren of de uitvoeringen te downloaden op basis van het element- en weergavetype. Voor meer informatie, zie [ Dynamische vertoningen van Media ](/help/assets/renditions.md#dynamic-media-renditions) en [ Dynamische Media met OpenAPI mogelijkheden vertoningen ](/help/assets/renditions.md#dm-with-openapi-renditions).
+In de Assets-weergave hebt u nu toegang tot Dynamic Media en Dynamic Media met OpenAPI-uitvoeringen vanuit een apart deelvenster dat u ter beschikking wordt gesteld. U kunt ervoor kiezen de leverings-URL te kopiëren of de uitvoeringen te downloaden op basis van het element- en weergavetype. Voor meer informatie, zie [&#x200B; Dynamische vertoningen van Media &#x200B;](/help/assets/renditions.md#dynamic-media-renditions) en [&#x200B; Dynamische Media met OpenAPI mogelijkheden vertoningen &#x200B;](/help/assets/renditions.md#dm-with-openapi-renditions).
 
-![ dynamische vertoningen ](/help/assets/assets/dm-scene7-renditions.png)
+![&#x200B; dynamische vertoningen &#x200B;](/help/assets/assets/dm-scene7-renditions.png)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -118,16 +118,16 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
 
 * **HTML5 Forms (op XFA-Gebaseerde Vormen van het Web)**: Nu, kunnen de klanten die van AEM Forms op locatie XFA technologie gebruiken moeiteloos overgang naar AEM Forms as a Cloud Service terwijl het bewaren van hun bestaande gebruikerservaring met HTML5 Forms (op XFA-Gebaseerde Vormen van het Web). Met deze functie wordt de weergave van XFA-formuliersjablonen in HTML5-indeling mogelijk, waardoor formulieren toegankelijk worden gemaakt voor apparaten die geen XFA-gebaseerde PDF forms ondersteunen.
 
-  ![ HTML Forms (op XFA-Gebaseerde Vormen van het Web) ](/help/forms/assets/html-forms-xfa-based-web-forms.png)
+  ![&#x200B; HTML Forms (op XFA-Gebaseerde Vormen van het Web) &#x200B;](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
 
-* **[Base64 de Gecodeerde Steun van het Koord voor de Bijlage van het Dossier ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: De component van de Bijlage van het Dossier in Aanpassende Forms die op de Componenten van de Kern wordt gebaseerd omvat nu een optie om dossiers in bijlage als Base64-Gecodeerde koorden voor te leggen.
+* **[Base64 de Gecodeerde Steun van het Koord voor de Bijlage van het Dossier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: De component van de Bijlage van het Dossier in Aanpassende Forms die op de Componenten van de Kern wordt gebaseerd omvat nu een optie om dossiers in bijlage als Base64-Gecodeerde koorden voor te leggen.
 
 #### Interactieve communicatie- en communicatie-API&#39;s
 
 * **Interactieve Communicatie Redacteur**: De Interactieve Communicatie Redacteur is een gebruikersvriendelijk, grafisch Communicatie ontwerphulpmiddel dat de verwezenlijking van gepersonaliseerde, gegeven-gedreven correspondentie vereenvoudigt en in om het even welke moderne browser loopt. Het steunt naadloze gegevensintegratie, ingewikkelde logische definitie, en rijke media integratie, die professioneel en volgzaam document, Communicatie, en malplaatjegeneratie voor diverse bedrijfsbehoeften verzekeren.
 
-  ![ Interactieve Communicatie Redacteur ](/help/forms/assets/ic-editor.png)
+  ![&#x200B; Interactieve Communicatie Redacteur &#x200B;](/help/forms/assets/ic-editor.png)
 
 
 * **[de Verbeteringen van de Naleving PDF/A](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**: U kunt Communicatie APIs nu gebruiken om de documenten van PDF in formaten PDF/A (1a, 2a, 3a) voor archiveringsdoeleinden om te zetten terwijl het verzekeren van toegankelijkheid en het controleren van naleving van deze normen.
@@ -147,11 +147,11 @@ intuitive and improving the mobile form-filling experience.
 
 ## Automated Forms Conversion Service
 
-* **[zet PDF forms in de Componenten van de Kern om Gebaseerde Aangepaste Forms ](https://experienceleague.adobe.com/nl/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: U kunt de Geautomatiseerde Dienst van de Omzetting van Vormen nu gebruiken om PDF forms, AcroForms, of op XFA-Gebaseerde vormen in de Componenten van de Kern Aangepaste Forms om te zetten.
+* **[zet PDF forms in de Componenten van de Kern om Gebaseerde Aangepaste Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: U kunt de Geautomatiseerde Dienst van de Omzetting van Vormen nu gebruiken om PDF forms, AcroForms, of op XFA-Gebaseerde vormen in de Componenten van de Kern Aangepaste Forms om te zetten.
 
 >[!IMPORTANT]
 >
-> Wil je deelnemen aan het programma voor vroege toegang voor Forms-innovatie? Verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden die u in geinteresseerd bent.## CIF Add-on {#cloud-services-cif}
+> Wil je deelnemen aan het programma voor vroege toegang voor Forms-innovatie? Verzend een e-mail van uw officieel adres naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden die u in geinteresseerd bent.## CIF Add-on {#cloud-services-cif}
 
 ## CIF-invoegtoepassing {#cif}
 
@@ -164,50 +164,50 @@ intuitive and improving the mobile form-filling experience.
 
 ### Verbeterde boomstructuurreplicatieprestaties (en veroudering van de workflow voor de publicatiestructuur) {#tree-replication-performance}
 
-[ de Stap van het Werkschema van de Activering van de Boom ](/help/operations/replication.md#tree-activation) is een nieuwe stap van het werkschemamodel die voor het herhalen van diepe inhoudshiërarchieën wordt geadviseerd. Nota, staat het onafhankelijke replicaties (b.v. door snel te publiceren of publicatie te beheren) toe om parallel aan de lopende boom replicatiewerkschema te werk te gaan. Dit is vooral nuttig als u wat tijd-gevoelige inhoud moet publiceren terwijl een bulkreplicatie nog bezig is. De Stap van de Replicatie van de boom vervangt de Publish Werkstroom van de Inhoudsboom en zijn verwante Stap van het Werkschema, die nu verouderd zijn.
+[&#x200B; de Stap van het Werkschema van de Activering van de Boom &#x200B;](/help/operations/replication.md#tree-activation) is een nieuwe stap van het werkschemamodel die voor het herhalen van diepe inhoudshiërarchieën wordt geadviseerd. Nota, staat het onafhankelijke replicaties (b.v. door snel te publiceren of publicatie te beheren) toe om parallel aan de lopende boom replicatiewerkschema te werk te gaan. Dit is vooral nuttig als u wat tijd-gevoelige inhoud moet publiceren terwijl een bulkreplicatie nog bezig is. De Stap van de Replicatie van de boom vervangt de Publish Werkstroom van de Inhoudsboom en zijn verwante Stap van het Werkschema, die nu verouderd zijn.
 
 ### API&#39;s op basis van OpenAPI&#39;s - Vroege adopter-programma {#open-apis-earlyadopter}
 
 Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen zullen worden geproduceerd door de projecten van Adobe Developer Console te creëren.
 
-Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
+Leer meer over [&#x200B; OpenAPI-Gebaseerde AEM APIs &#x200B;](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [&#x200B; leerprogramma van begin tot eind &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
 
-Concreet zijn de API-eindpunten die hieronder worden vermeld, beschikbaar als onderdeel van een programma voor vroege adoptie. Als geinteresseerd, e-mail [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) beschrijvend hoe u van hen van plan bent gebruik te maken.
-* [ de Fragmenten APIs van de Inhoud van Plaatsen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [ Assets APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+Concreet zijn de API-eindpunten die hieronder worden vermeld, beschikbaar als onderdeel van een programma voor vroege adoptie. Als geinteresseerd, e-mail [&#x200B; aem-apis@adobe.com &#x200B;](mailto:aem-apis@adobe.com) beschrijvend hoe u van hen van plan bent gebruik te maken.
+* [&#x200B; de Fragmenten APIs van de Inhoud van Plaatsen &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [&#x200B; Assets APIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API&#39;s voor sites en Assets-mappen
-* [ Communicatie APIs van Forms ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [&#x200B; Communicatie APIs van Forms &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Edge Computing - Verzoek om feedback! {#edge-computing-feedback}
 
-Edge Computing brengt gegevensverwerking dichter bij de browser, wat voordelen heeft, zoals minder latentie. Als input in de roadmap, zouden wij graag horen als u deze technologie nuttig voor de projecten van de Publicatie van AEM en van Edge Delivery Services en zou vinden waarvoor u het gebruikt. E-mail [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met vragen en commentaren!
+Edge Computing brengt gegevensverwerking dichter bij de browser, wat voordelen heeft, zoals minder latentie. Als input in de roadmap, zouden wij graag horen als u deze technologie nuttig voor de projecten van de Publicatie van AEM en van Edge Delivery Services en zou vinden waarvoor u het gebruikt. E-mail [&#x200B; aemcs-edgecompute-feedback@adobe.com &#x200B;](mailto:aemcs-edgecompute-feedback@adobe.com) met vragen en commentaren!
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
-Probeer uit een vernieuwde [ AEM Developer Console ](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
+Probeer uit een vernieuwde [&#x200B; AEM Developer Console &#x200B;](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
 
-Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe verwelkomt terugkoppelen, die u aan [ aemcs-new-devconsole-ui-beta@adobe.com ](mailto:aemcs-new-devconsole-ui-beta@adobe.com) kunt e-mailen
+Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe verwelkomt terugkoppelen, die u aan [&#x200B; aemcs-new-devconsole-ui-beta@adobe.com &#x200B;](mailto:aemcs-new-devconsole-ui-beta@adobe.com) kunt e-mailen
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
 
 ## Universele editor {#universal-editor}
 
-U kunt een volledige lijst van Universele versies van de Redacteur [ hier ](/help/release-notes/universal-editor/current.md) vinden.
+U kunt een volledige lijst van Universele versies van de Redacteur [&#x200B; hier &#x200B;](/help/release-notes/universal-editor/current.md) vinden.
 
 ## Variaties genereren {#generate-variations}
 
-U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/generative-ai/release-notes-generate-variations.md) vinden.
+U kunt een volledige lijst van Generate de versies van Variaties [&#x200B; hier &#x200B;](/help/generative-ai/release-notes-generate-variations.md) vinden.
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.

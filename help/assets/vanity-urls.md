@@ -25,7 +25,7 @@ Gebruik korte en eenvoudige ijdelingsidentificatoren om uw ijdelheid-URL kort, s
 
 Wanneer de gebruiker op de URL van uw ijdelheid klikt, wordt [!DNL Dynamic Media with OpenAPI] automatisch toegewezen aan de oorspronkelijke elementlocatie op het moment van inname en worden deze op de juiste wijze omgezet op het moment van levering naar de server waarop het element wordt geplaatst.
 
-Leer [ tot Vanity URLs ](#create-vanity-urls) leiden.
+Leer [&#x200B; tot Vanity URLs &#x200B;](#create-vanity-urls) leiden.
 
 ## Standaard URL&#39;s voor levering{#standard-urls}
 
@@ -76,7 +76,7 @@ Bovendien versterkt een consistent gebruik van merkgebonden URL&#39;s in alle co
 
 ## Vereisten{#prerequisites-for-creating-vanity-id}
 
-Om ijdelheid URL tot stand te brengen, zorg ervoor u reeds [ de activa voor openbare levering ](/help/assets/manage-organize-assets-view.md#manage-asset-status) hebt goedgekeurd.
+Om ijdelheid URL tot stand te brengen, zorg ervoor u reeds [&#x200B; de activa voor openbare levering &#x200B;](/help/assets/manage-organize-assets-view.md#manage-asset-status) hebt goedgekeurd.
 
 ## Vanity-URL&#39;s maken{#create-vanity-urls}
 
@@ -90,33 +90,33 @@ Voer de volgende stappen uit om vanity URLs tot stand te brengen:
 
 Voer het volgende uit om de vanity-id in te stellen in het metagegevensformulier van uw element:
 1. Navigeer naar de detailpagina van de map met uw elementen voor levering [!DNL Dynamic Media with OpenAPI] .
-1. [ geef die meta-gegevens uit ](/help/assets/metadata-assets-view.md#edit-metadata-forms) door één van het volgende te doen:
+1. [&#x200B; geef die meta-gegevens uit &#x200B;](/help/assets/metadata-assets-view.md#edit-metadata-forms) door één van het volgende te doen:
    * Voeg een nieuw metagegevensveld toe en geef de vereiste ID als waarde voor dat veld op.
-   * Werk bestaand veld bij door de waarde van een bestaande eigenschap voor metagegevens te vervangen door de vereiste ijdeligheids-id. Leer de [ beste praktijken ](#best-practices) voor het creëren van ijdeligheidsidentiteitskaart
-     ![ vanity identiteitskaart ](/help/assets/assets/vanity-id-metadata.png)
-Leer meer over [ meta-gegevensschema&#39;s ](/help/assets/metadata-schemas.md).
+   * Werk bestaand veld bij door de waarde van een bestaande eigenschap voor metagegevens te vervangen door de vereiste ijdeligheids-id. Leer de [&#x200B; beste praktijken &#x200B;](#best-practices) voor het creëren van ijdeligheidsidentiteitskaart
+     ![&#x200B; vanity identiteitskaart &#x200B;](/help/assets/assets/vanity-id-metadata.png)
+Leer meer over [&#x200B; meta-gegevensschema&#39;s &#x200B;](/help/assets/metadata-schemas.md).
 
      >[!NOTE]
      >
      > * Gebruik unieke vanity-id&#39;s voor elk element. Controleer altijd of elementen die hetzelfde metagegevensformulier delen, unieke vanity-id&#39;s hebben voor DM met OpenAPI-levering via vanity-URL&#39;s. Als twee elementen dezelfde vanity-id hebben, levert DM met OpenAPI het element dat de id het laatst heeft ontvangen, waarbij de vorige machtiging van de id voor een ander element wordt overschreven.
      >
-     > * Een enkel element kan meerdere vanity-id&#39;s hebben. [ de steun van Adobe van het Contact ](https://helpx.adobe.com/in/contact.html) en wint een verzoek op om vereiste vanity IDs te produceren.
+     > * Een enkel element kan meerdere vanity-id&#39;s hebben. [&#x200B; de steun van Adobe van het Contact &#x200B;](https://helpx.adobe.com/in/contact.html) en wint een verzoek op om vereiste vanity IDs te produceren.
 
-Na vestiging uw identiteitskaart van de Veerzaamheid in de vorm van activa meta-gegevens, [ kaart dit meta-gegevensgebied aan het de leveringsmechanisme van het systeem ](#map-cloud-manager-environment-variable).
+Na vestiging uw identiteitskaart van de Veerzaamheid in de vorm van activa meta-gegevens, [&#x200B; kaart dit meta-gegevensgebied aan het de leveringsmechanisme van het systeem &#x200B;](#map-cloud-manager-environment-variable).
 
 ### Omgevingsvariabele van Cloud Manager maken en toewijzen{#map-cloud-manager-environment-variable}
 
 Voer de volgende stappen uit om een omgevingsvariabele te maken en deze toe te wijzen aan het metagegevensveld met de vanity-id:
 
-1. [ navigeer aan de configuratiepagina van uw milieu van Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md) en doe het volgende:
+1. [&#x200B; navigeer aan de configuratiepagina van uw milieu van Cloud Manager &#x200B;](/help/implementing/cloud-manager/environment-variables.md) en doe het volgende:
    1. Voeg `ASSET_DELIVERY_VANITY_ID` variabele toe. Dit is de sleutel.
    1. Gebruik het waardeveld om toe te wijzen aan de eigenschap met metagegevens van het element die de vanity-id bevat. De toewijzing volgt de `dc:<your-metadata-property>` -indeling, waarbij het voorvoegsel voor de toewijzing van metagegevens (zoals dc:) varieert op basis van de configuratieeigenschap voor de metagegevens van het element.
-      ![ variabele ASSET_DELIVERY_VANITY_ID ](/help/assets/assets/environment-config.png)
+      ![&#x200B; variabele ASSET_DELIVERY_VANITY_ID &#x200B;](/help/assets/assets/environment-config.png)
 1. Sla de wijzigingen op om de pods opnieuw te starten in uw omgeving.
 
 ### De activa goedkeuren voor levering{#approve-assets-for-delivery}
 
-Na het in kaart brengen van de `ASSET_DELIVERY_VANITY_ID` variabele in uw milieu van Cloud Manager aan het bezit van activa meta-gegevens dat ijdelings identiteitskaart houdt, [ keurt uw activa goed die ijdelheid URL voor levering ](/help/assets/manage-organize-assets-view.md#manage-asset-status) vereisen.
+Na het in kaart brengen van de `ASSET_DELIVERY_VANITY_ID` variabele in uw milieu van Cloud Manager aan het bezit van activa meta-gegevens dat ijdelings identiteitskaart houdt, [&#x200B; keurt uw activa goed die ijdelheid URL voor levering &#x200B;](/help/assets/manage-organize-assets-view.md#manage-asset-status) vereisen.
 
 ### Vanity-URL&#39;s genereren{#generate-vanity-urls}
 
@@ -125,16 +125,16 @@ Maak de volgende vervangingen in uw standaard levering URL om het in een ijdelhe
 * Vervang **UUID** met uw **ijdelings identiteitskaart**.
 * Vervang `aaid` door `avid` .
 
-Zie de [ transformatie URL van norm aan ijdelheid URL ](#standard-urls) hierboven.
-Leer hoe te [ om Dynamische Media met OpenAPI levering URLs ](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) voor uw activa te kopiëren.
+Zie de [&#x200B; transformatie URL van norm aan ijdelheid URL &#x200B;](#standard-urls) hierboven.
+Leer hoe te [&#x200B; om Dynamische Media met OpenAPI levering URLs &#x200B;](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) voor uw activa te kopiëren.
 
 Wanneer de gebruiker op de URL van de ijdelheid klikt, wijst [!DNL Dynamic Media with OpenAPI] automatisch de ijdelheidsidentiteitskaart aan het originele element UUID toe in ingstijd en lost hen op behoorlijk op leveringstijd om het middel aan de gebruiker zonder enige vertraging te dienen. U kunt de vanity-URL in real-time aanpassen zonder dat dit van invloed is op de prestaties van de levering van elementen.
 
-[ gebruik de geavanceerde aanpassingsmogelijkheden van de Dienst van de Wolk AEM met uw ijdelheid URL om zijn effect ](#scale-using-vanity-url) te verbeteren.
+[&#x200B; gebruik de geavanceerde aanpassingsmogelijkheden van de Dienst van de Wolk AEM met uw ijdelheid URL om zijn effect &#x200B;](#scale-using-vanity-url) te verbeteren.
 
 ## Schalen met URL&#39;s met vanity{#scale-using-vanity-url}
 
-AEM as a Cloud Service laat u toe om [ de DNS en CDN namen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) binnen uw Webadressen aan te passen. Gebruik deze mogelijkheden AEMCS met uw ijdelheid URLs om hen in unieke web-adressen om te zetten die schoon, beschrijvend, van branding voorzien, intuïtief zijn en [ bovengenoemde voordelen ](#key-benefits) verstrekken.
+AEM as a Cloud Service laat u toe om [&#x200B; de DNS en CDN namen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) binnen uw Webadressen aan te passen. Gebruik deze mogelijkheden AEMCS met uw ijdelheid URLs om hen in unieke web-adressen om te zetten die schoon, beschrijvend, van branding voorzien, intuïtief zijn en [&#x200B; bovengenoemde voordelen &#x200B;](#key-benefits) verstrekken.
 
 Zie de volgende vanity URL en zijn klantgerichte componenten:
 
@@ -172,23 +172,23 @@ Zie de volgende vanity URL en zijn klantgerichte componenten:
 
 **Aanpasbare Componenten URL**
 
-* ***[DNS naam (hostname):](#customize-DNS)*** `https://delivery-<tenant>.adobeaemcloud.com` is het serverdomein dat gastheren uw activa. [ pas DNS aan om hostname ](#customize-DNS) te veranderen.
-* ***[CDN herschrijft regels:](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` is de wegstructuur die activatypes en leveringsmethodes identificeert. [ herschrijf CDN regels ](#rewrite-cdn-rules) om de domeinweg te wijzigen.
+* ***[DNS naam (hostname):](#customize-DNS)*** `https://delivery-<tenant>.adobeaemcloud.com` is het serverdomein dat gastheren uw activa. [&#x200B; pas DNS aan om hostname &#x200B;](#customize-DNS) te veranderen.
+* ***[CDN herschrijft regels:](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` is de wegstructuur die activatypes en leveringsmethodes identificeert. [&#x200B; herschrijf CDN regels &#x200B;](#rewrite-cdn-rules) om de domeinweg te wijzigen.
 
 ### DNS aanpassen{#customize-dns}
 
-[ omhoog een verzoek aan de steun van Adobe ](https://helpx.adobe.com/in/contact.html) om vereiste douaneDNS voor uw leveringsrij te produceren. Volg deze [ beste praktijken ](#best-practices) voor het creëren van de namen van douaneDNS.
+[&#x200B; omhoog een verzoek aan de steun van Adobe &#x200B;](https://helpx.adobe.com/in/contact.html) om vereiste douaneDNS voor uw leveringsrij te produceren. Volg deze [&#x200B; beste praktijken &#x200B;](#best-practices) voor het creëren van de namen van douaneDNS.
 
 ### CDN-regels herschrijven{#rewrite-cdn-rules}
 
 Voer de volgende stappen uit om de CDN-regels voor levering te herschrijven:
 
 1. Navigeer naar de AEM-opslagplaats om een YAML-configuratiebestand te maken.
-2. Voer de stappen in [ opstelling ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) sectie uit om CDN regels te vormen en de configuratie door uw de configuratiepijplijn van Cloud Manager op te stellen.
-Volg deze [ beste praktijken ](#best-practices) voor het creëren van uw domeinweg.
-   [ Leer meer over CDN die regels ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) herschrijven.
+2. Voer de stappen in [&#x200B; opstelling &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) sectie uit om CDN regels te vormen en de configuratie door uw de configuratiepijplijn van Cloud Manager op te stellen.
+Volg deze [&#x200B; beste praktijken &#x200B;](#best-practices) voor het creëren van uw domeinweg.
+   [&#x200B; Leer meer over CDN die regels &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) herschrijven.
 
-Hieronder volgen voorbeelden van herschrijfregels voor het toevoegen van bestandsnamen met extensies in vanity-URL&#39;s. Pas deze herschrijfregels aan volgens uw specifieke vereisten. [ de steun van Adobe van het Contact ](https://helpx.adobe.com/in/contact.html) voor verdere hulp:
+Hieronder volgen voorbeelden van herschrijfregels voor het toevoegen van bestandsnamen met extensies in vanity-URL&#39;s. Pas deze herschrijfregels aan volgens uw specifieke vereisten. [&#x200B; de steun van Adobe van het Contact &#x200B;](https://helpx.adobe.com/in/contact.html) voor verdere hulp:
 
 ```- name: cdn-rewrite-rule
   when:
@@ -233,9 +233,9 @@ type: transform
 
 ## Volg de aanbevolen procedures voor het maken van schone vanity-URL&#39;s{#best-practices}
 
-Volg deze beste praktijken voor het creëren van [ vanity IDs ](#create-vanity-urls), [ douane DNS ](#customize-dns) en [ CDN namen ](#rewrite-cdn-rules):
+Volg deze beste praktijken voor het creëren van [&#x200B; vanity IDs &#x200B;](#create-vanity-urls), [&#x200B; douane DNS &#x200B;](#customize-dns) en [&#x200B; CDN namen &#x200B;](#rewrite-cdn-rules):
 
 1. Gebruik geen speciale tekens in vanity-id&#39;s, zoals spaties, schuine strepen, afbreekstreepjes en meer. Het systeem vervangt speciale karakters in vanity IDs gebruikend een vooraf bepaalde afbeelding.
-1. Gebruik uw merknaam, productnamen, en relevante sleutelwoorden in uw [ ijkdentiteitskaarts ](#create-vanity-urls), [ douane DNS ](#customize-dns) en [ namen CDN ](#rewrite-cdn-rules) om uw merkzichtbaarheid en gebruikersbetrokkenheid te verhogen.
+1. Gebruik uw merknaam, productnamen, en relevante sleutelwoorden in uw [&#x200B; ijkdentiteitskaarts &#x200B;](#create-vanity-urls), [&#x200B; douane DNS &#x200B;](#customize-dns) en [&#x200B; namen CDN &#x200B;](#rewrite-cdn-rules) om uw merkzichtbaarheid en gebruikersbetrokkenheid te verhogen.
 1. Gebruik korte, beschrijvende woorden of tekenreeksen die betekenis overbrengen.
 1. Gebruik teksten die gebruikers voor kliks uitnodigen.

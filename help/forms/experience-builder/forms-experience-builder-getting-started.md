@@ -41,11 +41,11 @@ Voordat u begint, moet u controleren of:
 * **AEM Forms as a Cloud Service** - het milieu van de auteur van de productie met de AanpassingsComponenten van de Kern van Forms
 * **Basis begrip** - vertrouwdheid met vormconcepten en bedrijfsvereisten
 
-Voor gedetailleerde technische opstellingsvereisten en omgevingsconfiguratie, zie [ opstellen en de Bouwer van de Ervaring van Forms vormen ](deploy-forms-experience-builder.md).
+Voor gedetailleerde technische opstellingsvereisten en omgevingsconfiguratie, zie [&#x200B; opstellen en de Bouwer van de Ervaring van Forms vormen &#x200B;](deploy-forms-experience-builder.md).
 
 ## Manieren om formulieren te maken {#two-ways-to-create-forms}
 
-Nadat u de Tovenaar van Forms gebruikt om het malplaatje van de Componenten van de a [ Kern ](/help/forms/creating-adaptive-form-core-components.md) of [ Edge Delivery Services ](/help/edge/docs/forms/universal-editor/create-forms.md) malplaatje, thema, en andere opties te selecteren, biedt de Bouwer van de Ervaring van Forms twee primaire benaderingen voor vormverwezenlijking aan:
+Nadat u de Tovenaar van Forms gebruikt om het malplaatje van de Componenten van de a [&#x200B; Kern &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; Edge Delivery Services &#x200B;](/help/edge/docs/forms/universal-editor/create-forms.md) malplaatje, thema, en andere opties te selecteren, biedt de Bouwer van de Ervaring van Forms twee primaire benaderingen voor vormverwezenlijking aan:
 
 ### &#x200B;1. Geheel nieuw maken {#create-from-scratch}
 
@@ -75,7 +75,7 @@ Formulieren samenstellen met behulp van beschrijvingen van uw eigen taal.
 
 Bestaande documenten transformeren in interactieve digitale formulieren.
 
-Voordat u deze optie gebruikt, uploadt u uw PDF-bestand of een afbeelding van het formulier. De PDF kan een AcroForm- of een XFA-gebaseerd PDF-formulier zijn. Voor [ andere types van PDF forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), gebruik [ Voorbereiden de optie van de Vorm ](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat om hen in een AcroForm om te zetten
+Voordat u deze optie gebruikt, uploadt u uw PDF-bestand of een afbeelding van het formulier. De PDF kan een AcroForm- of een XFA-gebaseerd PDF-formulier zijn. Voor [&#x200B; andere types van PDF forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), gebruik [&#x200B; Voorbereiden de optie van de Vorm &#x200B;](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat om hen in een AcroForm om te zetten
 
 **Wanneer te gebruiken:**
 
@@ -104,7 +104,7 @@ Beginnen met een basisformulierbeschrijving:
 
 Hiermee maakt u een formulier met drie essentiële velden.
 
-![ Vorm met drie essentieel gebied - gecreeerd gebruikend natuurlijke taalherinnering ](/help/forms/assets/forms-experience-builder-contact-us-form.png)
+![&#x200B; Vorm met drie essentieel gebied - gecreeerd gebruikend natuurlijke taalherinnering &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form.png)
 
 ### Stap 2: Voeg validatie en vereisten toe {#step-2-add-validation}
 
@@ -114,7 +114,7 @@ Het formulier verbeteren met validatieregels:
 
 Het symbool `@` verwijst naar specifieke velden voor doelwijzigingen.
 
-![ Toegevoegde bevestiging in de bouwer van de vormervaring gebruikend natuurlijke taalherinnering ](/help/forms/assets/forms-experience-builder-contact-us-form-add-validation.png)
+![&#x200B; Toegevoegde bevestiging in de bouwer van de vormervaring gebruikend natuurlijke taalherinnering &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-validation.png)
 
 
 ### Stap 3: De gebruikerservaring verbeteren {#step-3-improve-ux}
@@ -123,7 +123,7 @@ Voeg nuttige plaatsaanduidingstekst en begeleiding toe:
 
      voegt placeholder tekst toe: @name &quot;Uw volledige naam&quot;, @email &quot;your.email@company.com&quot;, @message &quot;vertelt ons hoe wij kunnen helpen&quot;
 
-![ Toegevoegde bevestiging die natuurlijke taalherinneringen in de bouwer van de vormervaring gebruikt ](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
+![&#x200B; Toegevoegde bevestiging die natuurlijke taalherinneringen in de bouwer van de vormervaring gebruikt &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
 
 ### Stap 4: Geavanceerde functies toevoegen {#step-4-advanced-features}
 
@@ -136,7 +136,7 @@ Inclusief extra functionaliteit:
      &#x200B;- urgentLevel met opties (Laag, Medium, Hoog) 
 
 
-![ toegevoegde een dropdown componenten gebruikend natuurlijke taalherinneringen in de bouwer van de vormervaring ](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
+![&#x200B; toegevoegde een dropdown componenten gebruikend natuurlijke taalherinneringen in de bouwer van de vormervaring &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
 
 
 ### Stap 5: Voorwaardelijke logica implementeren {#step-5-conditional-logic}

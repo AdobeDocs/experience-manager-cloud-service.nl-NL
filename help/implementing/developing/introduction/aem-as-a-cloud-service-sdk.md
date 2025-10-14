@@ -27,11 +27,11 @@ Bovendien gebruiken sommige klanten die eerder werden geïmplementeerd met AEM 6
 
 >[!NOTE]
 > 
-> Er zijn verschillen tussen AEM as a Cloud Service en SDK op een aantal verschillende gebieden. Voor situaties waarin snelle en herhalende veranderingen nodig zijn, heeft Adobe Rapid Development Environment geïntroduceerd. Heb een blik bij [ Snelle Milieu&#39;s van de Ontwikkeling ](/help/implementing/developing/introduction/rapid-development-environments.md) voor meer informatie.
+> Er zijn verschillen tussen AEM as a Cloud Service en SDK op een aantal verschillende gebieden. Voor situaties waarin snelle en herhalende veranderingen nodig zijn, heeft Adobe Rapid Development Environment geïntroduceerd. Heb een blik bij [&#x200B; Snelle Milieu&#39;s van de Ontwikkeling &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md) voor meer informatie.
 
 ## Het gebouw voor de SDK {#building-for-the-sdk}
 
-De AEM as a Cloud Service SDK wordt gebruikt om aangepaste code te maken en implementeren. Zie de [ documentatie van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/using). Op een hoog niveau worden de volgende stappen uitgevoerd:
+De AEM as a Cloud Service SDK wordt gebruikt om aangepaste code te maken en implementeren. Zie de [&#x200B; documentatie van het Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/using). Op een hoog niveau worden de volgende stappen uitgevoerd:
 
 * **compileert code** - de code van Source wordt gecompileerd, die de resulterende inhoudspakketten produceert.
 * **bouwt artefacten** - De artefacten worden gebouwd tijdens dit proces.
@@ -42,12 +42,12 @@ Cloud Manager voert dezelfde stappen uit bij de implementatie naar Cloud-omgevin
 
 >[!NOTE]
 >
->AEM as a Cloud Service SDK zou met een distributie en een versie van Java moeten worden gebouwd die door [ wordt gesteund Cloud Manager bouwt milieu ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). De klanten van AEM as a Cloud Service kunnen Oracle JDK van het [ portaal van de Distributie van de Software downloaden ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Ze hebben tot september 2026 Java 11 Extended Support omdat Adobe licenties en ondersteuningsvoorwaarden voor Oracle Java-technologie in Adobe Experience Manager-projecten heeft .
+>AEM as a Cloud Service SDK zou met een distributie en een versie van Java moeten worden gebouwd die door [&#x200B; wordt gesteund Cloud Manager bouwt milieu &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). De klanten van AEM as a Cloud Service kunnen Oracle JDK van het [&#x200B; portaal van de Distributie van de Software downloaden &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Ze hebben tot september 2026 Java 11 Extended Support omdat Adobe licenties en ondersteuningsvoorwaarden voor Oracle Java-technologie in Adobe Experience Manager-projecten heeft .
 
 ## Toegang tot de AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * U kunt AEM Admin Console **controleren Ongeveer Adobe Experience Manager** pictogram om de versie van AEM te weten te komen u in productie loopt.
-* QuickStart Jar en de Hulpmiddelen van Dispatcher kunnen als zip dossier van het [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) worden gedownload. De toegang tot de SDK-lijsten is beperkt tot mensen die een omgeving hebben op AEM Managed Services of AEM as a Cloud Service.
+* QuickStart Jar en de Hulpmiddelen van Dispatcher kunnen als zip dossier van het [&#x200B; Portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) worden gedownload. De toegang tot de SDK-lijsten is beperkt tot mensen die een omgeving hebben op AEM Managed Services of AEM as a Cloud Service.
 * De Java™ API Jar en Javadoc Jar kunnen worden gedownload via Maven-gereedschappen, ofwel de opdrachtregel, ofwel de IDE van uw voorkeur.
 * De toegewezen projectruimten moeten verwijzen naar het volgende API Jar-pakket. Er moet ook worden verwezen naar de afhankelijkheid van subpakketruimten.
 
@@ -93,7 +93,7 @@ Als er inhoud is die met elke nieuwe versie van AEM QuickStart zou moeten worden
 
 Adobe raadt u aan de SDK regelmatig bij te werken, bijvoorbeeld om de twee weken. Gooi de volledige lokale staat dagelijks weg, zodat u niet per ongeluk afhankelijk bent van stateful gegevens in de toepassing.
 
-Als u CryptoSupport for Cloud-services, SMTP Mail-configuratie of de CryptoSupport-API gebruikt, worden de gecodeerde eigenschappen beveiligd met een sleutel. Meer details zijn beschikbaar in de [ CryptoSupport API documentatie ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html). Deze sleutel wordt automatisch gegenereerd bij de eerste start van een AEM-omgeving. Terwijl de wolkenopstelling ervoor zorgt om automatisch het milieu-specifieke CryptoKey te hergebruiken, is het noodzakelijk om cryptokey in de lokale ontwikkelomgeving te injecteren.
+Als u CryptoSupport for Cloud-services, SMTP Mail-configuratie of de CryptoSupport-API gebruikt, worden de gecodeerde eigenschappen beveiligd met een sleutel. Meer details zijn beschikbaar in de [&#x200B; CryptoSupport API documentatie &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html). Deze sleutel wordt automatisch gegenereerd bij de eerste start van een AEM-omgeving. Terwijl de wolkenopstelling ervoor zorgt om automatisch het milieu-specifieke CryptoKey te hergebruiken, is het noodzakelijk om cryptokey in de lokale ontwikkelomgeving te injecteren.
 
 Door gebrek, wordt AEM gevormd om de belangrijkste gegevens binnen de gegevensomslag van een omslag op te slaan, maar voor gemak van gemakkelijker hergebruik in ontwikkeling, kan het proces van AEM bij eerste opstarten met &quot;`-Dcom.adobe.granite.crypto.file.disable=true` worden geïnitialiseerd.&quot; Dit proces produceert de encryptiegegevens bij &quot;`/etc/key`&quot;.
 

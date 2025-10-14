@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Overzicht {#overview-ct}
 
-De transformator van de Inhoud (CT) is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om inhoud op verwante kwesties automatisch te ontdekken en te bevestigen die door de [ Analysator van Beste praktijken (BPA) ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) worden gemeld alvorens inhoud van uw huidige AEM implementatie (On-premise of Managed Services) aan AEM as a Cloud Service te migreren.
+De transformator van de Inhoud (CT) is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om inhoud op verwante kwesties automatisch te ontdekken en te bevestigen die door de [&#x200B; Analysator van Beste praktijken (BPA) &#x200B;](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) worden gemeld alvorens inhoud van uw huidige AEM implementatie (On-premise of Managed Services) aan AEM as a Cloud Service te migreren.
 
-De transformator van de Inhoud kan helpen kwesties oplossen die onder de volgende [ BPA patrooncategorieën ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=nl-NL) (aangetoond in lijst hieronder) door gebruikers toe te staan om bulkacties zoals beweging of schrapping te nemen vallen. Dit kan de tijd aanzienlijk verminderen en de complexiteit van een migratieproject verminderen.
+De transformator van de Inhoud kan helpen kwesties oplossen die onder de volgende [&#x200B; BPA patrooncategorieën &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=nl-NL) (aangetoond in lijst hieronder) door gebruikers toe te staan om bulkacties zoals beweging of schrapping te nemen vallen. Dit kan de tijd aanzienlijk verminderen en de complexiteit van een migratieproject verminderen.
 
 ## Patrooncategorieën die worden gedekt door Content Transformer en oplossingen die worden voorgesteld {#pattern-categories-and-benefits}
 

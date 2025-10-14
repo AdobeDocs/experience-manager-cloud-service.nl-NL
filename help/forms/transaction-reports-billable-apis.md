@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -495,7 +495,7 @@ Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u 
 
 ## Billable Data Capture API&#39;s {#billable-data-capture-apis}
 
-Alle verzendingen van adaptieve formulieren worden administratief verwerkt als transacties. Een PDF-formulier wordt standaard niet als een transactie verwerkt. Gebruik verstrekte [ transactierecorder API ](record-transaction-custom-implementation.md) om een voorlegging van PDF forms als transactie te registreren.
+Alle verzendingen van adaptieve formulieren worden administratief verwerkt als transacties. Een PDF-formulier wordt standaard niet als een transactie verwerkt. Gebruik verstrekte [&#x200B; transactierecorder API &#x200B;](record-transaction-custom-implementation.md) om een voorlegging van PDF forms als transactie te registreren.
 
 ### Adaptieve Forms {#adaptive-forms}
 
@@ -647,7 +647,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ## Infactureerbare API&#39;s opnemen als transacties voor aangepaste code {#recording-billable-apis-as-transactions-for-custom-code}
 
-Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de Agent voor het weergeven van een interactieve communicatie, het gebruik van niet-standaardformulierverzending en aangepaste implementaties worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke handelingen op te nemen, zoals transacties. U kunt API van uw douaneimplementaties roepen om [ een transactie ](/help/forms/record-transaction-custom-implementation.md) te registreren.
+Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de Agent voor het weergeven van een interactieve communicatie, het gebruik van niet-standaardformulierverzending en aangepaste implementaties worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke handelingen op te nemen, zoals transacties. U kunt API van uw douaneimplementaties roepen om [&#x200B; een transactie &#x200B;](/help/forms/record-transaction-custom-implementation.md) te registreren.
 
 ## Verwante artikelen {#related-articles}
 

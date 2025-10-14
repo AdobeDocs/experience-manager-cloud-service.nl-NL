@@ -81,23 +81,23 @@ Als u het bovenstaande scenario in **[!UICONTROL Admin view]** wilt uitvoeren, k
 
 AND operator is de standaardoperator tussen twee trefwoorden in Universeel zoeken. Wanneer u bijvoorbeeld `classic car` in de zoekbalk typt, worden de resultaten met `classic` - en `car` -trefwoorden standaard in de zoekresultaten weergegeven.
 
-![ Onderzoek gebruikend EN Exploitant ](assets/simple-search-1.png)
+![&#x200B; Onderzoek gebruikend EN Exploitant &#x200B;](assets/simple-search-1.png)
 
 ### OR, operator {#or-operator}
 
 Als u specifiek wilt zijn voor de zoekresultaten en een optie wilt opnemen in de zoekresultaten, kunt u de operator OR gebruiken. Het trefwoord `classic OR car` biedt bijvoorbeeld zoekresultaten met de twee trefwoorden in de metagegevens.
 
-![ Onderzoek gebruikend OF Exploitant ](assets/or-operator.png)
+![&#x200B; Onderzoek gebruikend OF Exploitant &#x200B;](assets/or-operator.png)
 
 ### NOT, operator {#not-operator}
 
 Wanneer u resultaten wilt terugwinnen exclusief sommige sleutelwoorden, kunt u de NOT exploitant gebruiken. De operator NOT gebruikt het koppelteken (-) om AEM te laten zoeken wat van de zoekresultaten moet worden uitgesloten. De zoekquery van `car - classic` die bijvoorbeeld metagegevens opgeeft die `car` bevatten maar `classic` niet.
 
-![ Onderzoek gebruikend NIET exploitant ](assets/not-operator.png)
+![&#x200B; Onderzoek gebruikend NIET exploitant &#x200B;](assets/not-operator.png)
 
 Op dezelfde manier kun je naar alle auto&#39;s zoeken, maar niet naar jeep. De query ziet er als volgt uit: `car - jeep`. Alle elementen worden weergegeven met metagegevens `car` , maar elementen met metagegevens `jeep` worden uitgesloten.
 
-![ Onderzoek gebruikend NIET exploitant ](assets/images-jeep.png)
+![&#x200B; Onderzoek gebruikend NIET exploitant &#x200B;](assets/images-jeep.png)
 
 **[!UICONTROL Assets view]** biedt geen ondersteuning voor het gebruik van operatoren.
 
@@ -129,7 +129,7 @@ Sterretje is een jokertekenoperator die wordt gebruikt om uw zoekopdracht uit te
 
 Adobe Experience Manager biedt verschillende zoekfilters waarmee u de zoekopdracht kunt verfijnen en segmenteren met behulp van een bereikquery. Wanneer u niet zeker weet wat de titel of de meta-beschrijving van een element is, kunt u verschillende zoekfilters gebruiken om de zoekopdracht relevanter te maken. U kunt zoekfilters gebruiken met of zonder een trefwoord te typen. Om het filterenpaneel in **[!UICONTROL Admin view]** te openen, klik het **GlobalNav** pictogram en selecteer **[!UICONTROL Filters]**. Als u het deelvenster Filters in **[!UICONTROL Assets view]** wilt openen, klikt u op [!UICONTROL Filters] naast de zoekbalk.
 
-![ het paneel van Filters ](assets/filters.png)
+![&#x200B; het paneel van Filters &#x200B;](assets/filters.png)
 
 U kunt een of meer filters selecteren om uw zoekopdracht in Adobe Experience Manager te verfijnen.
 <!--The following filters are available out of the box for all the users of Experience Manager:
@@ -256,7 +256,7 @@ Wanneer u een zoekopdracht uitvoert op AEM, kunt u de resultaten filteren door v
 of
 Selecteer het element > navigeer naar de ellips rechtsboven > selecteer [!UICONTROL Find Similar] .
 
-   ![ vind gelijkaardig ](assets/find-similar.png)
+   ![&#x200B; vind gelijkaardig &#x200B;](assets/find-similar.png)
 
 1. Let op de zoekbalk. De miniatuur van het geselecteerde element verschijnt op de zoekbalk om aan te geven dat u een zoekopdracht wilt uitvoeren. Hierdoor worden elementen met vergelijkbare slimme tags geretourneerd.
 
@@ -268,7 +268,7 @@ U gaat naar de verzameling elementen met vergelijkbare kleuren en metagegevens.
 
 ## Aangepaste zoekfacetten {#custom-search-facets}
 
-Met zoekfacetten in Adobe Experience Manager kunt u op meerdere manieren zoeken naar elementen in plaats van in één, vooraf bepaalde of taxonomische volgorde. U kunt zoekfacetten aanpassen en voorspelden toevoegen naar wens. Lees [ Facetten van het Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL#) voor de geleidelijke gids over het toevoegen van een douane predikaat.
+Met zoekfacetten in Adobe Experience Manager kunt u op meerdere manieren zoeken naar elementen in plaats van in één, vooraf bepaalde of taxonomische volgorde. U kunt zoekfacetten aanpassen en voorspelden toevoegen naar wens. Lees [&#x200B; Facetten van het Onderzoek &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL#) voor de geleidelijke gids over het toevoegen van een douane predikaat.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -278,7 +278,7 @@ to be added later
 
 Met datumbeperkingen kunt u uw aangepaste zoekopdracht beperken tot een bepaalde periode, bijvoorbeeld met de zoekfilters voor de tijdsperiode. Typ `classic car` in de zoekbalk om naar de bovenstaande vereiste te zoeken. Selecteer het datumbereik in de datumfilters [!UICONTROL Created Date] en [!UICONTROL Last Modified] .
 
-![ de filters van de Datum ](assets/date-filters.png)
+![&#x200B; de filters van de Datum &#x200B;](assets/date-filters.png)
 
 De zoekopdracht geeft vergelijkbare resultaten als u ook in de [!UICONTROL Assets view] werkt.
 

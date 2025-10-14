@@ -36,7 +36,7 @@ Als een project om het even welke verwante taken heeft, wordt een Tegel van de T
 * Percentage actieve taken
 * Percentage achterstallige taken
 
-![ Taaktegel ](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
+![&#x200B; Taaktegel &#x200B;](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
 ### Het bekijken van of het Wijzigen van de Taken in een Project {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -46,19 +46,19 @@ Naast het volgen van vooruitgang, kunt u meer informatie over het project willen
 
 Klik de ellips (...) in de tegel van de Taak om de lijst van de taken met betrekking tot het project te tonen. De taken worden gedeeld door bovenliggende workflows. De taakdetails worden getoond samen met meta-gegevens zoals vervaldatum, ontvanger, prioriteit, en status.
 
-![ lijst van de Taak ](/help/sites-cloud/authoring/assets/projects-task-list.png)
+![&#x200B; lijst van de Taak &#x200B;](/help/sites-cloud/authoring/assets/projects-task-list.png)
 
 #### Taakdetails {#task-details}
 
 Voor meer informatie over een bepaalde taak, in de Lijst van de Taak, selecteer de taak en **Open**.
 
-![ de details van de Taak ](/help/sites-cloud/authoring/assets/projects-task-details.png)
+![&#x200B; de details van de Taak &#x200B;](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
 ### Taakopmerkingen weergeven en wijzigen {#viewing-and-modifying-task-comments}
 
 In Taakdetails kunt u opmerkingen bewerken of toevoegen. Bovendien zijn alle opmerkingen in een project zichtbaar in het gebied Opmerkingen.
 
-![ Commentaren op taken ](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
+![&#x200B; Commentaren op taken &#x200B;](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
 
 ### Taken toevoegen {#adding-tasks}
 
@@ -69,7 +69,7 @@ Een taak toevoegen:
 1. In het project, in de **tegel van Taken**, selecteer + pictogram. Het venster **Taak toevoegen** wordt geopend.
 1. Voer informatie in over de taak. De titel van de taak en de groep waaraan deze is toegewezen, zijn verplicht. Aanvullende informatie zoals het inhoudspad, de beschrijving, de taakprioriteit en de vervaldatum zijn optioneel. Bovendien kunt u het **Geavanceerde** lusje selecteren om de naam van de taak in te gaan, die wordt gebruikt om URL te noemen.
 
-   ![ voeg een taak ](/help/sites-cloud/authoring/assets/projects-add-task.png) toe
+   ![&#x200B; voeg een taak &#x200B;](/help/sites-cloud/authoring/assets/projects-add-task.png) toe
 
 1. Selecteer **creeer**.
 
@@ -77,8 +77,8 @@ Een taak toevoegen:
 
 Een andere manier om tot taken toegang te hebben is van Inbox. Vanuit het Postvak IN kunt u de inhoud openen om de vereiste wijzigingen te implementeren. Als u klaar bent, stelt u de taakstatus in op Voltooid. De taken verschijnen ook in uw inbox wanneer zij aan een gebruikersgroep worden toegewezen die u tot behoort. In dat geval kan elk lid van de groep het werk uitvoeren en de taak voltooien.
 
-![ Taken in inbox ](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
+![&#x200B; Taken in inbox &#x200B;](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Om een taak te voltooien, selecteer de taak en klik **Volledig**. Voeg informatie aan de taak toe en klik dan **Gereed**. Zie [ Uw Inbox ](/help/sites-cloud/authoring/inbox.md) voor meer informatie.
+Om een taak te voltooien, selecteer de taak en klik **Volledig**. Voeg informatie aan de taak toe en klik dan **Gereed**. Zie [&#x200B; Uw Inbox &#x200B;](/help/sites-cloud/authoring/inbox.md) voor meer informatie.
 
-![ de berichten van de Taak ](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
+![&#x200B; de berichten van de Taak &#x200B;](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

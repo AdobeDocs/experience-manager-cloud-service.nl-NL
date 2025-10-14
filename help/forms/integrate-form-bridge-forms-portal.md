@@ -21,7 +21,7 @@ ht-degree: 0%
 <span class="preview"> De HTML5 Forms-functionaliteit wordt aangeboden als onderdeel van het programma voor vroege toegang. Als u toegang wilt aanvragen, stuurt u een e-mail van uw officiële (werk)e-mailadres naar aem-forms-ea@adobe.com.
 </span>
 
-FormBridge is een bridge-API voor HTML5-formulieren waarmee u kunt communiceren met een formulier. Voor de verwijzing FormBridge API, zie [ FormBridge API verwijzing ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).
+FormBridge is een bridge-API voor HTML5-formulieren waarmee u kunt communiceren met een formulier. Voor de verwijzing FormBridge API, zie [&#x200B; FormBridge API verwijzing &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).
 
 U kunt de FormBridge-API gebruiken om de waarden van formuliervelden op de HTML-pagina op te halen of in te stellen en het formulier te verzenden. U kunt bijvoorbeeld de API gebruiken om een wizards-achtige ervaring op te bouwen.
 
@@ -35,7 +35,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    1. Meld u aan met beheerdersreferenties.
    1. Maak een profiel of kies een bestaand profiel.
 
-      Voor details op hoe te om een profiel tot stand te brengen, zie [ Creërend een Profiel ](/help/forms/custom-profile.md).
+      Voor details op hoe te om een profiel tot stand te brengen, zie [&#x200B; Creërend een Profiel &#x200B;](/help/forms/custom-profile.md).
 
 1. **wijzig het Profiel van HTML**
 
@@ -88,7 +88,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    >
    >De volgende schermafbeelding laat zien hoe het formulier in een browser wordt weergegeven.
 
-   ![ portaal ](assets/portal.jpg)
+   ![&#x200B; portaal &#x200B;](assets/portal.jpg)
 
    De linkerkant is een deel van de **pagina van HTML**. De juiste kant die de gebieden bevat is de **xfa vorm**.
 

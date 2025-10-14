@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Een aangepaste verzendactie maken voor Adaptive Forms (Core Components)
 
-Met een verzendactie kunnen gebruikers de bestemming selecteren voor de gegevens die in een formulier zijn vastgelegd en aanvullende functionaliteit definiëren die bij het verzenden van het formulier moet worden uitgevoerd. De vorm van AEM steunt veelvoudige [ voorlegt acties uit-van-de-doos (OTB) ](/help/forms/configure-submit-actions-core-components.md), zoals het verzenden van een e-mail of het opslaan van gegevens naar SharePoint of OneDrive.
+Met een verzendactie kunnen gebruikers de bestemming selecteren voor de gegevens die in een formulier zijn vastgelegd en aanvullende functionaliteit definiëren die bij het verzenden van het formulier moet worden uitgevoerd. De vorm van AEM steunt veelvoudige [&#x200B; voorlegt acties uit-van-de-doos (OTB) &#x200B;](/help/forms/configure-submit-actions-core-components.md), zoals het verzenden van een e-mail of het opslaan van gegevens naar SharePoint of OneDrive.
 
-U kunt een douane ook creëren voorlegt actie om functionaliteit toe te voegen niet inbegrepen in [ uit-van-de-doos opties ](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). U kunt bijvoorbeeld de formuliergegevens integreren met een toepassing van een derde of een gepersonaliseerde SMS-melding activeren op basis van de gebruikersinvoer.
+U kunt een douane ook creëren voorlegt actie om functionaliteit toe te voegen niet inbegrepen in [&#x200B; uit-van-de-doos opties &#x200B;](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). U kunt bijvoorbeeld de formuliergegevens integreren met een toepassing van een derde of een gepersonaliseerde SMS-melding activeren op basis van de gebruikersinvoer.
 
 <!-- ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
 -->
@@ -33,7 +33,7 @@ Voordat u begint met het maken van uw eerste aangepaste verzendactie voor Adapti
 
 In het onderstaande diagram worden de stappen beschreven voor het maken van een aangepaste verzendactie voor een adaptieve vorm:
 
-![ Aangepast voorlegt actiewerkschema ](/help/forms/assets/custom-submit-action-workflow.png) &lbrace;width=50%, hoogte-50%)
+![&#x200B; Aangepast voorlegt actiewerkschema &#x200B;](/help/forms/assets/custom-submit-action-workflow.png) &lbrace;width=50%, hoogte-50%)
 
 ### Clone AEM as a Cloud Service Git-gegevensopslagruimte.
 
@@ -47,13 +47,13 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
 
    **waar om deze informatie te vinden?**
 
-   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[ Toegang tot Git ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git)&quot;.
+   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[&#x200B; Toegang tot Git &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git)&quot;.
 
    **Uw project is klaar!**
 
    Wanneer de opdracht met succes is voltooid, ziet u een nieuwe map die in uw lokale map is gemaakt. Deze map krijgt de naam van uw toepassing (bijvoorbeeld app-id). Deze map bevat alle bestanden en code die u hebt gedownload van uw AEM as a Cloud Service Git-opslagplaats. U kunt `<appid>` voor uw AEM-project vinden in het `archetype.properties` -bestand.
 
-   ![ archetype Eigenschappen ](/help/forms/assets/custom-submit-action-archetype-app-id.png)
+   ![&#x200B; archetype Eigenschappen &#x200B;](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
    In deze handleiding wordt deze map de `[AEMaaCS project directory]` genoemd.
 
@@ -61,7 +61,7 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
 
 1. Open de opslagplaats map in een editor.
 
-   ![ Gelegelde Bewaarplaats ](/help/forms/assets/custom-submit-action-clone-repo.png)
+   ![&#x200B; Gelegelde Bewaarplaats &#x200B;](/help/forms/assets/custom-submit-action-clone-repo.png)
 
 1. Navigeer naar de volgende map in de `[AEMaaCS project directory]` :
 
@@ -73,7 +73,7 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
 
 1. Maak een nieuwe map voor uw aangepaste verzendactie en geef deze een door u gewenste naam. Geef de map bijvoorbeeld de naam `customsubmitaction` .
 
-   ![ creeer douane voorlegt actiemap ](/help/forms/assets/custom-submit-action-create-folder.png)
+   ![&#x200B; creeer douane voorlegt actiemap &#x200B;](/help/forms/assets/custom-submit-action-create-folder.png)
 
 1. Navigeer naar de toegevoegde aangepaste verzendactiemap.
 
@@ -86,7 +86,7 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
 1. Nieuw configuratiebestand maken.
 Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml` .
 
-   ![ creeer Dossier Config ](/help/forms/assets/custom-submit-action-create-config-folder.png)
+   ![&#x200B; creeer Dossier Config &#x200B;](/help/forms/assets/custom-submit-action-create-config-folder.png)
 
 1. Open dit bestand en plak de volgende inhoud, waarbij u `[customsubmitaction]` vervangt door de naam van de verzendactie
 
@@ -103,7 +103,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
    Vervang bijvoorbeeld `[customsubmitaction]` door de aangepaste naam van de verzendactie als `Custom Submit Action` .
 
-   ![ creeer douane voorlegt dossier van de actieconfiguratie ](/help/forms/assets/custom-submit-action-config-file.png)
+   ![&#x200B; creeer douane voorlegt dossier van de actieconfiguratie &#x200B;](/help/forms/assets/custom-submit-action-config-file.png)
 
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
    <filter root="/apps/wknd/customsubmitaction"/>
    ```
 
-   ![ voeg de gecreeerde omslagen in filter.xml ](/help/forms/assets/custom-submit-action-filter-xml.png) toe
+   ![&#x200B; voeg de gecreeerde omslagen in filter.xml &#x200B;](/help/forms/assets/custom-submit-action-filter-xml.png) toe
 
 1. Sla de wijzigingen op.
 
@@ -137,7 +137,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
    `Important`: vervang `<app-id>` door de werkelijke toepassings-id.
 1. Maak een nieuw Java-bestand om de service voor de toegevoegde verzendactie te implementeren. Voeg bijvoorbeeld het nieuwe Java-bestand toe als `CustomSubmitService.java` .
 
-   ![ Douane legt de Omslag van de Actie ](/help/forms/assets/custom-submit-action-custom-submit-folder.png) voor
+   ![&#x200B; Douane legt de Omslag van de Actie &#x200B;](/help/forms/assets/custom-submit-action-custom-submit-folder.png) voor
 
 1. Open dit bestand en voeg de code toe voor de aangepaste verzendactie-implementatie.
 
@@ -180,7 +180,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
        }
    ```
 
-   ![ de Douane legt de Dienst van de Actie ](/help/forms/assets/custom-submit-action-service.png) voor
+   ![&#x200B; de Douane legt de Dienst van de Actie &#x200B;](/help/forms/assets/custom-submit-action-service.png) voor
 
 1. Sla de wijzigingen op.
 
@@ -190,7 +190,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
 * Implementeer de AEM as a Cloud Service `[AEMaaCS project directory]` in uw lokale ontwikkelomgeving om de nieuwe verzendactie op uw lokale computer uit te voeren. Distribueren naar uw lokale ontwikkelomgeving:
 
-   1. Zorg ervoor dat uw lokale ontwikkelomgeving actief is. Als u niet reeds opstelling een lokale ontwikkelomgeving hebt, verwijs naar de gids op [ Opstelling een lokale ontwikkelomgeving voor AEM Forms ](/help/forms/setup-local-development-environment.md).
+   1. Zorg ervoor dat uw lokale ontwikkelomgeving actief is. Als u niet reeds opstelling een lokale ontwikkelomgeving hebt, verwijs naar de gids op [&#x200B; Opstelling een lokale ontwikkelomgeving voor AEM Forms &#x200B;](/help/forms/setup-local-development-environment.md).
 
    1. Open het eindvenster of de bevelherinnering.
 
@@ -202,7 +202,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
       mvn -PautoInstallPackage clean install
       ```
 
-      ![ Lokale Plaatsing ](/help/forms/assets/custom-submit-action-local-deployment.png)
+      ![&#x200B; Lokale Plaatsing &#x200B;](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **stel de code voor het milieu van Cloud Service** op
 
@@ -214,17 +214,17 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
    1. De bijgewerkte code implementeren:
 
-      Trigger een plaatsing van uw code door de [ bestaande volledig-stapelpijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline). Het bouwt en stelt automatisch de bijgewerkte code met de nieuwe douane op om actiessteun voor te leggen.
+      Trigger een plaatsing van uw code door de [&#x200B; bestaande volledig-stapelpijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline). Het bouwt en stelt automatisch de bijgewerkte code met de nieuwe douane op om actiessteun voor te leggen.
 
-      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
+      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [&#x200B; hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
 
-      ![ Plaatsing van de Wolk ](/help/forms/assets/custom-submit-action-cloud-deployment.png)
+      ![&#x200B; Plaatsing van de Wolk &#x200B;](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
       **hoe te om de installatie te bevestigen?**
 
       Zodra het project is voltooid, wordt de aangepaste verzendactie weergegeven in de vervolgkeuzelijst `Submit action` tijdens het ontwerpen van een formulier.
 
-      ![ de Vervolgkeuzelijst van de Actie van de Douane voorleggen ](/help/forms/assets/custom-submit-action-drop-down-list.png)
+      ![&#x200B; de Vervolgkeuzelijst van de Actie van de Douane voorleggen &#x200B;](/help/forms/assets/custom-submit-action-drop-down-list.png)
 
   Uw omgeving is nu gereed om de aangepaste verzendactie te gebruiken wanneer u een formulier ontwerpt.
 
@@ -233,38 +233,38 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 1. Meld u aan bij uw AEM Forms as a Cloud Service-exemplaar.
 1. Ga naar **Forms** > **Forms en Documenten**.
 
-   ![ Forms en Documenten ](/help/forms/assets/custom-submit-action-fnd.png)
+   ![&#x200B; Forms en Documenten &#x200B;](/help/forms/assets/custom-submit-action-fnd.png)
 
 1. Selecteer een AanpassingsVorm en klik **uitgeven**. Het formulier wordt geopend in de bewerkingsmodus.
 
-   ![ geef Vorm ](/help/forms/assets/custom-submit-action-edit-af.png) uit
+   ![&#x200B; geef Vorm &#x200B;](/help/forms/assets/custom-submit-action-edit-af.png) uit
 
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op de tab **[!UICONTROL Submission]** .
 1. Selecteer de verzendactie in de vervolgkeuzelijst **[!UICONTROL Submit Action]** . Selecteer bijvoorbeeld de verzendactie als `Custom Submit Action` .
 
-   ![ de Douane legt Vorm ](/help/forms/assets/custom-submit-action-select-submit-action.png) voor
+   ![&#x200B; de Douane legt Vorm &#x200B;](/help/forms/assets/custom-submit-action-select-submit-action.png) voor
 
 1. Vul het formulier in en verzend het.
 
-   ![ legt Vorm ](/help/forms/assets/custom-submit-action-submit-form.png) voor
+   ![&#x200B; legt Vorm &#x200B;](/help/forms/assets/custom-submit-action-submit-form.png) voor
 
-   ![ het bericht van Thanku ](/help/forms/assets/custom-submit-action-thankyou-msg.png)
+   ![&#x200B; het bericht van Thanku &#x200B;](/help/forms/assets/custom-submit-action-thankyou-msg.png)
 
    Zodra de vorm met succes wordt voorgelegd, kunt u de **Configuratie van de Console van het Web van Adobe Experience Manager** controleren om de actie van douane te verifiëren voorlegt actie in het lokale ontwikkelmilieu.
 1. Ga naar `http://<host>:<port>/system/console/configMgr` .
 
 1. Navigeer aan de **Steun van het Logboek van de Console van het Web van Adobe Experience Manager** bij `http://<host>:<port>/system/console/slinglog`.
 
-   ![ ConfigMgr ](/help/forms/assets/custom-submit-action-sling-log.png)
+   ![&#x200B; ConfigMgr &#x200B;](/help/forms/assets/custom-submit-action-sling-log.png)
 
 1. Klik op de optie `logs/error.log` .
-   ![ Open error.log- dossier ](/help/forms/assets/custom-submit-action-error-log.png)
+   ![&#x200B; Open error.log- dossier &#x200B;](/help/forms/assets/custom-submit-action-error-log.png)
 
 1. Open het `error.log` -bestand om te controleren of de gegevens eraan zijn toegevoegd.
 
-   ![ error.log dossier ](/help/forms/assets/custom-submit-action-form-data-display.png)
+   ![&#x200B; error.log dossier &#x200B;](/help/forms/assets/custom-submit-action-form-data-display.png)
 
    >[!NOTE]
    >

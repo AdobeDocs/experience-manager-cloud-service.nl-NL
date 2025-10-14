@@ -28,8 +28,8 @@ Met de AEM-moderniseringstools kunt u eenvoudig de volgende taken uitvoeren:
 >[!NOTE]
 >De AEM-moderniseringstools worden gemaakt door leden van onze community. De tools worden niet ondersteund of gewaarborgd door Adobe.
 
-Zie **[Introducerend AEM Moderniseringshulpmiddelen ](https://opensource.adobe.com/aem-modernize-tools/)** om meer over planning, configuratie, en ontwikkeling voor AEM de reeks van de Modernisering van hulpmiddelen te leren.
+Zie **[Introducerend AEM Moderniseringshulpmiddelen &#x200B;](https://opensource.adobe.com/aem-modernize-tools/)** om meer over planning, configuratie, en ontwikkeling voor AEM de reeks van de Modernisering van hulpmiddelen te leren.
 
 ## Installatie- en implementatiefunctie AEM modernisering {#installing-implementing}
 
-Zie **[Middel van de Git: AEM Moderniseer de Reeks van Hulpmiddelen ](https://github.com/adobe/aem-modernize-tools)** om over installatie en implementatie te leren.
+Zie **[Middel van de Git: AEM Moderniseer de Reeks van Hulpmiddelen &#x200B;](https://github.com/adobe/aem-modernize-tools)** om over installatie en implementatie te leren.

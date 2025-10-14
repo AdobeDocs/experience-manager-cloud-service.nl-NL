@@ -23,13 +23,13 @@ In de service Auteur kunnen interne gebruikers inhoud maken, beheren en publicer
 
 Als beste praktijken, zouden de toestemmingen op Groepen in AEM moeten worden geplaatst. Deze groepen, die ook als lokale groepen worden bekend, kunnen binnen het AEM auteursmilieu worden beheerd.
 
-De gemakkelijkste manier om groepslidmaatschap te beheren is de groepen van het Systeem van Identity Management van de Adobe (IMS) te gebruiken en [ groepen IMS aan lokale AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=nl-NL#managing-permissions-in-aem) toe te wijzen.
+De gemakkelijkste manier om groepslidmaatschap te beheren is de groepen van het Systeem van Identity Management van de Adobe (IMS) te gebruiken en [&#x200B; groepen IMS aan lokale AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=nl-NL#managing-permissions-in-aem) toe te wijzen.
 
-![ stroom van de de consoletoestemming Admin ](assets/admin-console-aem-group-permissions.png)
+![&#x200B; stroom van de de consoletoestemming Admin &#x200B;](assets/admin-console-aem-group-permissions.png)
 
 Op hoog niveau is het proces:
 
-1. Voeg Gebruikers IMS aan een nieuwe of bestaande IMS Gebruikersgroep toe gebruikend de [ Admin Console ](https://adminconsole.adobe.com/)
+1. Voeg Gebruikers IMS aan een nieuwe of bestaande IMS Gebruikersgroep toe gebruikend de [&#x200B; Admin Console &#x200B;](https://adminconsole.adobe.com/)
 1. IMS-groepen worden gesynchroniseerd met AEM wanneer gebruikers zich aanmelden.
 1. Wijs IMS-groepen toe aan AEM groepen.
 1. Machtigingen instellen voor AEM groepen.
@@ -37,7 +37,7 @@ Op hoog niveau is het proces:
 
 >[!TIP]
 >
->Voor een gedetailleerde videoanalyse van het beheren van IMS en AEM gebruikers en groepen zie [ het Vormen toegang tot AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=nl-NL).
+>Voor een gedetailleerde videoanalyse van het beheren van IMS en AEM gebruikers en groepen zie [&#x200B; het Vormen toegang tot AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=nl-NL).
 
 Om **groepen** in AEM te beheren, navigeer aan **Hulpmiddelen** > **Veiligheid** > **Groepen**.
 
@@ -55,7 +55,7 @@ Het is beter om toestemmingen van een uit de bakgroep direct niet te wijzigen. I
 
 Voor meer korrelige toestemmingen gebruikt de **console van Toestemmingen** in AEM en werkt de weg van `/content/dam` aan een specifieker weg bij, namelijk `/content/dam/mycontentfragments`.
 
-Het kan wenselijk zijn om deze groep gebruikers toestemmingen te geven om inhoudsfragmenten tot stand te brengen en uit te geven maar niet te schrappen. Om toestemmingen voor uit te geven te herzien en toe te wijzen, maar niet te schrappen zie [ de Fragmenten van de Inhoud - de Overwegingen van de Schrapping ](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
+Het kan wenselijk zijn om deze groep gebruikers toestemmingen te geven om inhoudsfragmenten tot stand te brengen en uit te geven maar niet te schrappen. Om toestemmingen voor uit te geven te herzien en toe te wijzen, maar niet te schrappen zie [&#x200B; de Fragmenten van de Inhoud - de Overwegingen van de Schrapping &#x200B;](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 ### Modeleditors
 
@@ -80,7 +80,7 @@ Standaard is inhoud die via de GraphQL-eindpunten van AEM Publish-service wordt 
 
 ### Machtigingen voor inhoud
 
-Inhoud die via AEM GraphQL APIs wordt blootgesteld kan worden beperkt gebruikend [ Gesloten Groepen van de Gebruiker (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=nl-NL) geplaatst op activa omslagen, die specificeren welke AEM Gebruikersgroepen (en hun leden) tot de inhoud van de omslagen van Assets kunnen toegang hebben.
+Inhoud die via AEM GraphQL APIs wordt blootgesteld kan worden beperkt gebruikend [&#x200B; Gesloten Groepen van de Gebruiker (CUGs) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=nl-NL) geplaatst op activa omslagen, die specificeren welke AEM Gebruikersgroepen (en hun leden) tot de inhoud van de omslagen van Assets kunnen toegang hebben.
 
 Assets CUG&#39;s werken door:
 
@@ -91,11 +91,11 @@ CUG&#39;s kunnen worden ingesteld in middelenmappen die inhoud bevatten die via 
 
 #### Het verificatieschema selecteren{#publish-permissions-users}
 
-[ AEM Koploze SDK ](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) steunt twee types van authentificatie:
+[&#x200B; AEM Koploze SDK &#x200B;](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) steunt twee types van authentificatie:
 
-* [ Symbolische gebaseerde authentificatie ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) die de dienstgeloofsbrieven gebruiken die aan één enkele technische rekening worden gebonden.
+* [&#x200B; Symbolische gebaseerde authentificatie &#x200B;](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) die de dienstgeloofsbrieven gebruiken die aan één enkele technische rekening worden gebonden.
 * Standaardverificatie met AEM gebruikers.
 
 ### De GraphQL API openen
 
-De verzoeken van HTTP die de [ aangewezen authentificatiegeloofsbrieven ](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) verstrekken aan de eindpunten van GraphQL API van de dienst van AEM Publish omvatten inhoud de geloofsbrieven worden gemachtigd om te lezen, en anonymously toegankelijke inhoud. Andere gebruikers van de GraphQL API kunnen de inhoud in de door CUG&#39;s beveiligde mappen niet lezen.
+De verzoeken van HTTP die de [&#x200B; aangewezen authentificatiegeloofsbrieven &#x200B;](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) verstrekken aan de eindpunten van GraphQL API van de dienst van AEM Publish omvatten inhoud de geloofsbrieven worden gemachtigd om te lezen, en anonymously toegankelijke inhoud. Andere gebruikers van de GraphQL API kunnen de inhoud in de door CUG&#39;s beveiligde mappen niet lezen.

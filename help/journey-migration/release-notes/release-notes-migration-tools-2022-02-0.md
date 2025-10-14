@@ -40,7 +40,7 @@ De releasedatum voor Content Transfer Tool v1.8.6 is 3 februari 2022.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Inhoudsvalidatie - Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Als u deze functie wilt gebruiken, schakelt u deze in in de `System Console` AEM van de bronomgeving. Zie [ Bevaliderende Inhoudsoverdrachten - Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=nl-NL#getting-started) voor meer details.
+* Inhoudsvalidatie - Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Als u deze functie wilt gebruiken, schakelt u deze in in de `System Console` AEM van de bronomgeving. Zie [&#x200B; Bevaliderende Inhoudsoverdrachten - Begonnen het Worden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=nl-NL#getting-started) voor meer details.
 
 ### Opgeloste problemen {#bug-fixes-ctt}
 

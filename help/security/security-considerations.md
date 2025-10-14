@@ -23,10 +23,10 @@ Om asymmetrische, cryptografische verrichtingen te steunen, AEM slaat certificat
 
 * De vertrouwde opslag bevindt zich onder `/etc/truststore` en bestaat uit een Java™ sleutelarchiefbestand, het sleutelarchiefwachtwoord en de metagegevens van de opslagplaats. Zowel het wachtwoord als het sleutelarchief zijn om technische redenen gecodeerd, ook al zijn de ingesloten certificaten standaard voor iedereen toegankelijk via de API
 * Buiten het vak worden de certificaten alleen gebruikt voor HTTPS- en SAML-ondersteuning en moet de winkel eerst handmatig worden gemaakt
-* De klanten kunnen het in hun eigen code door [ keystore API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) gebruiken
+* De klanten kunnen het in hun eigen code door [&#x200B; keystore API &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) gebruiken
 * De vertrouwen-opslag kan door UI in **Hulpmiddelen** worden geleid - **Veiligheid** - **opslag van het Vertrouwen** of door tot *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`* toegang te hebben, zoals hieronder getoond:
 
-  ![ Beheer van de Opslag van het Vertrouwen ](/help/security/assets/global-trust-store-modified.png)
+  ![&#x200B; Beheer van de Opslag van het Vertrouwen &#x200B;](/help/security/assets/global-trust-store-modified.png)
 
 * De toegang tot de trust-opslag kan verder worden beperkt door de toegangscontrole van de bewaarplaats afhankelijk van het gebruik-geval.
 

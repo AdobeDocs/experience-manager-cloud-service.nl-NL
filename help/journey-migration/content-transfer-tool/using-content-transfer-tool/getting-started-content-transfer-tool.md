@@ -24,7 +24,7 @@ ht-degree: 2%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=nl-NL" text="Release-opmerkingen"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket als [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op uw bronAdobe Experience Manager (AEM) instantie installeren. Download de nieuwste versie. Voor meer details op de recentste versie, zie [ de Nota&#39;s van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=nl-NL).
+Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket als [&#x200B; Manager van het Pakket &#x200B;](/help/implementing/developing/tools/package-manager.md) op uw bronAdobe Experience Manager (AEM) instantie installeren. Download de nieuwste versie. Voor meer details op de recentste versie, zie [&#x200B; de Nota&#39;s van de Versie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=nl-NL).
 
 Alleen versie 2.0.0 en hoger wordt ondersteund en het is raadzaam de meest recente versie te gebruiken.
 
@@ -94,7 +94,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   Het volgende dialoogvenster wordt weergegeven. Een migratieset verloopt na een langdurige periode van inactiviteit. Nadat de waarschuwingen op de projectkaart en de rijen van de migratietabel voor een tijdspanne worden getoond, zal de migratiereeks verlopen en zijn gegevens zullen niet meer beschikbaar zijn. Het overzicht [ Vastgestelde Verval van de Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor details.
+   Het volgende dialoogvenster wordt weergegeven. Een migratieset verloopt na een langdurige periode van inactiviteit. Nadat de waarschuwingen op de projectkaart en de rijen van de migratietabel voor een tijdspanne worden getoond, zal de migratiereeks verlopen en zijn gegevens zullen niet meer beschikbaar zijn. Het overzicht [&#x200B; Vastgestelde Verval van de Migratie &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor details.
 
    Tijdens het maken van de migratieset kunt u het geografische gebied kiezen waarin de tijdelijke migratiegegevens worden opgeslagen.  U wordt aangeraden het gebied te kiezen dat het dichtst bij uw doelcloud-omgeving ligt om optimale prestaties tijdens inname te garanderen.  U kunt de regio niet wijzigen nadat u de migratieset hebt gemaakt. Als u een ander gebied wilt gebruiken, moet u een nieuwe migratieset maken.
 
@@ -132,7 +132,7 @@ Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt v
 
    >[!NOTE]
    >
-   >Zorg ervoor dat de extractietoets geldig is en niet bij het verlopen ervan is. U kunt deze informatie in **krijgen creeer de Reeks van de Migratie** dialoog nadat u de extractiesleutel kleeft. Als u een verbindingsfout krijgt, zie [ Connectiviteit van het Milieu van Source ](#source-environment-connectivity) voor meer informatie.
+   >Zorg ervoor dat de extractietoets geldig is en niet bij het verlopen ervan is. U kunt deze informatie in **krijgen creeer de Reeks van de Migratie** dialoog nadat u de extractiesleutel kleeft. Als u een verbindingsfout krijgt, zie [&#x200B; Connectiviteit van het Milieu van Source &#x200B;](#source-environment-connectivity) voor meer informatie.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
@@ -231,4 +231,4 @@ Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Alvorens u deze processen leert, moet u [ Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) herzien om de extractie en inname fasen van de activiteit van de inhoudsoverdracht beduidend te versnellen om inhoud naar AEM as a Cloud Service te bewegen.
+Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Alvorens u deze processen leert, moet u [&#x200B; Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) herzien om de extractie en inname fasen van de activiteit van de inhoudsoverdracht beduidend te versnellen om inhoud naar AEM as a Cloud Service te bewegen.

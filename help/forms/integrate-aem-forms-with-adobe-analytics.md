@@ -323,9 +323,9 @@ Bewaak de prestaties van formulieren op dezelfde manier als bij realtime dashboa
 
 ### Buiten-de-doos het Volgen Mogelijkheden
 
-AEM Forms integreert naadloos met [ Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=nl-NL) om prestatiesmetriek voor uw gepubliceerde vormen automatisch te vangen en te volgen. U kunt het gedrag van zowel voor authentiek verklaarde als anonieme gebruikers zonder extra configuratie controleren.
+AEM Forms integreert naadloos met [&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=nl-NL) om prestatiesmetriek voor uw gepubliceerde vormen automatisch te vangen en te volgen. U kunt het gedrag van zowel voor authentiek verklaarde als anonieme gebruikers zonder extra configuratie controleren.
 
-Alvorens vormanalyses uit te voeren, zorg ervoor uw [ milieu van AEM Forms behoorlijk wordt gevormd ](/help/forms/setup-forms-cloud-service.md) en u hebt [ uw adaptieve vormen ](/help/forms/creating-adaptive-form-core-components.md) gecreeerd gebruikend of de Componenten van de Kern of [ Componenten van de Stichting ](/help/forms/creating-adaptive-form.md).
+Alvorens vormanalyses uit te voeren, zorg ervoor uw [&#x200B; milieu van AEM Forms behoorlijk wordt gevormd &#x200B;](/help/forms/setup-forms-cloud-service.md) en u hebt [&#x200B; uw adaptieve vormen &#x200B;](/help/forms/creating-adaptive-form-core-components.md) gecreeerd gebruikend of de Componenten van de Kern of [&#x200B; Componenten van de Stichting &#x200B;](/help/forms/creating-adaptive-form.md).
 
 **het Uitgebreide Volgen van de Gebeurtenis van de Vorm:**
 
@@ -481,7 +481,7 @@ Forms die in minder dan 3 seconden laadt, heeft 70% hogere voltooiingssnelheden 
 
 In de volgende afbeelding ziet u de handelingen die u moet uitvoeren voordat u rapporten kunt weergeven in [!DNL Adobe Analytics] :
 
-![ Overzicht van Analytics ](assets/analytics-workflow.png)
+![&#x200B; Overzicht van Analytics &#x200B;](assets/analytics-workflow.png)
 
 ## Formulieranalyse instellen voor AEM Forms
 
@@ -493,7 +493,7 @@ Voordat u begint met de implementatie van de formulieranalyse, moet u controlere
 
 >[!NOTE]
 >
->Als u kwesties tijdens opstelling ontmoet, verwijs naar onze uitvoerige [ het oplossen van problemengids van AEM Forms ](/help/forms/troubleshooting-installation-and-configuration.md) voor installatie en configuratieproblemen.
+>Als u kwesties tijdens opstelling ontmoet, verwijs naar onze uitvoerige [&#x200B; het oplossen van problemengids van AEM Forms &#x200B;](/help/forms/troubleshooting-installation-and-configuration.md) voor installatie en configuratieproblemen.
 
 **Toegang van Adobe Experience Cloud**
 
@@ -503,10 +503,10 @@ Voordat u begint met de implementatie van de formulieranalyse, moet u controlere
 
 **het Milieu van AEM Forms**
 
-- [ AEM Forms as a Cloud Service ](/help/forms/setup-forms-cloud-service.md) of AEM Forms 6.5+ (op-gebouw/installaties van AMS)
+- [&#x200B; AEM Forms as a Cloud Service &#x200B;](/help/forms/setup-forms-cloud-service.md) of AEM Forms 6.5+ (op-gebouw/installaties van AMS)
 - Forms-mogelijkheden voor schrijven en publiceren ingeschakeld
-- Verzeker {de optie van 0} Forms beschikbaar is [ in uw milieu van AEM](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable)
-- [ de Aangepaste Componenten van de Kern van Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ beschikbare Componenten van de Stichting ](/help/forms/creating-adaptive-form.md)
+- Verzeker {de optie van 0} Forms beschikbaar is [&#x200B; in uw milieu van AEM](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable)
+- [&#x200B; de Aangepaste Componenten van de Kern van Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; beschikbare Componenten van de Stichting &#x200B;](/help/forms/creating-adaptive-form.md)
 
 **Technische Vereisten**
 
@@ -526,13 +526,13 @@ Voordat u begint met de implementatie van de formulieranalyse, moet u controlere
 
 Maak voordat u [!DNL Adobe Analytics] configureert:
 
-- Een Adobe ID aan login aan [ Adobe Experience Cloud ](https://experience.adobe.com/#/home).
-- A [ rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=nl-NL).
+- Een Adobe ID aan login aan [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com/#/home).
+- A [&#x200B; rapportreeks &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=nl-NL).
 
 
 ### AEM Forms- en [!DNL Adobe Analytics] extensies installeren {#install-extensions}
 
-Voer de volgende stappen uit om AEM Forms en [ Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=nl-NL) uitbreidingen te vormen:
+Voer de volgende stappen uit om AEM Forms en [&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=nl-NL) uitbreidingen te vormen:
 
 1. Meld u aan bij Adobe Experience Cloud en selecteer de gewenste naam voor het bedrijf.
 
@@ -625,12 +625,12 @@ Voer de volgende stappen uit om regels te maken op basis van de extensie **[!UIC
 
      Het wordt aanbevolen het actietype **[!UICONTROL Set Variables]** te gebruiken om de gebeurtenis en gegevenselementen te configureren, vervolgens **[!UICONTROL Send Beacon]** te gebruiken om gegevens te verzenden en vervolgens **[!UICONTROL Clear Variables]** te gebruiken om het gegevenstraject te wissen.
 
-1. In de **[!UICONTROL Props]** sectie, kaart de opties van de rapportreeks beschikbaar in de drop-down lijst met de gegevenselementen die gebruikend [ worden bepaald gegevenselementen ](#configure-data-elements) vormen.
+1. In de **[!UICONTROL Props]** sectie, kaart de opties van de rapportreeks beschikbaar in de drop-down lijst met de gegevenselementen die gebruikend [&#x200B; worden bepaald gegevenselementen &#x200B;](#configure-data-elements) vormen.
 
    Bijvoorbeeld, om **het gegevenselement van de Titel van de Vorm** van AEM Forms naar [!DNL Adobe Analytics] te verzenden wanneer u een vorm voorlegt:
-   1. In de **[!UICONTROL Props]** sectie, selecteer een steun voor Titel van de Vorm beschikbaar in de rapportreeks en selecteer dan ![ pictogram van het Gegevensbestand ](assets/database-icon.svg) om het aan Titel in kaart te brengen van de Vorm die in [ wordt gecreeerd vormt gegevenselementen ](#configure-data-elements).
+   1. In de **[!UICONTROL Props]** sectie, selecteer een steun voor Titel van de Vorm beschikbaar in de rapportreeks en selecteer dan ![&#x200B; pictogram van het Gegevensbestand &#x200B;](assets/database-icon.svg) om het aan Titel in kaart te brengen van de Vorm die in [&#x200B; wordt gecreeerd vormt gegevenselementen &#x200B;](#configure-data-elements).
 
-      ![ bepalen-props ](assets/define-props.png)
+      ![&#x200B; bepalen-props &#x200B;](assets/define-props.png)
 
    1. Selecteer **[!UICONTROL Add Another]** om meer gegevenselementen aan de lijst toe te voegen.
 
@@ -643,11 +643,11 @@ Voer de volgende stappen uit om regels te maken op basis van de extensie **[!UIC
 1. Selecteer + in de sectie **[!UICONTROL Actions]** en geef **[!UICONTROL Adobe Analytics]** op als de naam van de extensie.
 
 1. Selecteer **[!UICONTROL Clear Variables]** als het handelingstype. Selecteer **[!UICONTROL Keep Changes]**. Nadat u deze stappen hebt uitgevoerd, wordt de sectie **[!UICONTROL Actions]** weergegeven als:
-   ![ Configuratie van Acties ](assets/actions-config.png)
+   ![&#x200B; Configuratie van Acties &#x200B;](assets/actions-config.png)
 
    Pas de sectie **[!UICONTROL Actions]** aan uw wensen aan. Bijvoorbeeld, kunt u twee **verzenden de stappen van het Baken** in een stroom van de Actie bepalen om gegevens naar [!DNL Adobe Analytics] te verzenden en het als paginamening in één stap te behandelen en gegevens naar [!DNL Adobe Analytics] te verzenden en het niet als paginamening in de tweede stap te behandelen.
 
-   ![ Configuratie van Acties ](assets/actions-config-2.png)
+   ![&#x200B; Configuratie van Acties &#x200B;](assets/actions-config-2.png)
 
 1. Selecteer **[!UICONTROL Save]** om de regel op te slaan.
 
@@ -668,15 +668,15 @@ Voer de volgende stappen uit om de configuratie te publiceren:
 
 1. Selecteer **[!UICONTROL Add All Changed Resources]** en selecteer vervolgens **[!UICONTROL Save & Build to Development]** .
 
-1. In de **[!UICONTROL Development]** sectie, selecteer ![ Meer opties ](assets/more-options-icon.svg) en selecteer dan **[!UICONTROL Approve & Publish to Production]**.
+1. In de **[!UICONTROL Development]** sectie, selecteer ![&#x200B; Meer opties &#x200B;](assets/more-options-icon.svg) en selecteer dan **[!UICONTROL Approve & Publish to Production]**.
 
 1. Controleer of de wijzigingen en de publicatiestroom binnenkort worden weergegeven in de sectie **[!UICONTROL Published]** .
 
-![ publiceer Stroom ](assets/publish-flow.png)
+![&#x200B; publiceer Stroom &#x200B;](assets/publish-flow.png)
 
 ## &#x200B;2. AEM Forms configureren {#configure-aem-forms}
 
-Alvorens een configuratie van de Lancering van Adobe tot stand te brengen, creeer een [ Configuratie van Adobe IMS gebruikend de Lancering van Adobe als Oplossing van de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=nl-NL).
+Alvorens een configuratie van de Lancering van Adobe tot stand te brengen, creeer een [&#x200B; Configuratie van Adobe IMS gebruikend de Lancering van Adobe als Oplossing van de Wolk &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=nl-NL).
 
 ### Adobe-startconfiguratie maken {#create-adobe-launch-configuration}
 
@@ -688,11 +688,11 @@ Voer de volgende stappen uit om een Adobe-startconfiguratie te maken:
 
 1. Geef een titel voor de configuratie op in het veld **[!UICONTROL Title]** .
 
-1. Selecteer de [ bijbehorende configuratie van Adobe IMS ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=nl-NL).
+1. Selecteer de [&#x200B; bijbehorende configuratie van Adobe IMS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=nl-NL).
 
-1. Selecteer de naam van het gebruikte bedrijf terwijl [ het vormen Adobe Analytics ](#Configure-adobe-analytics).
+1. Selecteer de naam van het gebruikte bedrijf terwijl [&#x200B; het vormen Adobe Analytics &#x200B;](#Configure-adobe-analytics).
 
-1. Selecteer de naam van het gecreeerde bezit terwijl [ het vormen Adobe Analytics ](#install-extensions).
+1. Selecteer de naam van het gecreeerde bezit terwijl [&#x200B; het vormen Adobe Analytics &#x200B;](#install-extensions).
 
 1. Selecteer **[!UICONTROL Save & Close]** .
 
@@ -704,11 +704,11 @@ De [!DNL Adobe Launch] -configuratie gebruiken in een bestaand adaptief formulie
 
 1. Ga in de AEM Forms Author-instantie naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 1. Selecteer het adaptieve formulier en selecteer **[!UICONTROL Properties]** .
-1. In het **[!UICONTROL Basic]** lusje, selecteer de [ gebruikte configuratiecontainer ](#create-adobe-launch-configuration) terwijl het creëren van de configuratie van de Lancering van Adobe.
+1. In het **[!UICONTROL Basic]** lusje, selecteer de [&#x200B; gebruikte configuratiecontainer &#x200B;](#create-adobe-launch-configuration) terwijl het creëren van de configuratie van de Lancering van Adobe.
 1. Selecteer **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL Adobe Analytics] .
 1. Publiceer het formulier.
 
-Nadat u [!DNL Adobe Analytics] voor een adaptieve vorm toelaat, kunt u [ bevestigen ](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=nl-NL#validate-the-page-view-beacon) als er een aangewezen stroom van de gegevensgebeurtenis tussen AEM Forms en [!DNL Adobe Analytics] is. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [ vormen en rapporten in Adobe Analytics ](#view-reports-adobe-analytics) bekijken.
+Nadat u [!DNL Adobe Analytics] voor een adaptieve vorm toelaat, kunt u [&#x200B; bevestigen &#x200B;](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=nl-NL#validate-the-page-view-beacon) als er een aangewezen stroom van de gegevensgebeurtenis tussen AEM Forms en [!DNL Adobe Analytics] is. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [&#x200B; vormen en rapporten in Adobe Analytics &#x200B;](#view-reports-adobe-analytics) bekijken.
 
 ### Regels maken om aangepaste gebeurtenissen vast te leggen (optioneel) {#capture-custom-events}
 
@@ -718,18 +718,18 @@ In een proces in twee fasen definieert u een regel voor een veld in een adaptiev
 
 U kunt als volgt regels maken met behulp van een regeleditor:
 
-1. Selecteer het gebied en selecteer ![ Redacteur van de Regel ](assets/rule-editor-icon.svg) om de pagina van de regelredacteur te openen.
+1. Selecteer het gebied en selecteer ![&#x200B; Redacteur van de Regel &#x200B;](assets/rule-editor-icon.svg) om de pagina van de regelredacteur te openen.
 1. Definieer een voorwaarde in de sectie [!UICONTROL When] van de regel.
 1. Selecteer in de sectie [!UICONTROL Then] van de regel de optie **[!UICONTROL Dispatch Event]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** .
 1. Geef de naam van de gebeurtenis op in het veld **[!UICONTROL Type Event Name]** .
 
 Bijvoorbeeld, als de geboortedatum vóór een bepaalde datum is, verzendt AEM Forms de **gebeurtenis van de Veiligheid**.
 
-![ de Gebeurtenis van de Verzending ](assets/security-event.png)
+![&#x200B; de Gebeurtenis van de Verzending &#x200B;](assets/security-event.png)
 
 U kunt als volgt de gebeurtenis toewijzen aan een aangepaste vastleggebeurtenis in [!DNL Adobe Analytics] :
 
-1. [ creeer een regel ](#configure-rules).
+1. [&#x200B; creeer een regel &#x200B;](#configure-rules).
 
 1. Selecteer **[!UICONTROL Events]** in de sectie **[!UICONTROL Add]** .
 
@@ -739,13 +739,13 @@ U kunt als volgt de gebeurtenis toewijzen aan een aangepaste vastleggebeurtenis 
 
 1. Geef de naam op van de gebeurtenis die u in stap 4 hebt opgegeven tijdens het maken van een regel met de regeleditor.
 
-1. Selecteer **houden Veranderingen** en voer de rest acties uit die in [ worden gespecificeerd vormen Regels ](#configure-rules).
+1. Selecteer **houden Veranderingen** en voer de rest acties uit die in [&#x200B; worden gespecificeerd vormen Regels &#x200B;](#configure-rules).
 
 ## &#x200B;3. Configureer en bekijk rapporten in [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
 
 Nadat u een adaptief formulier hebt geconfigureerd om gebeurtenisgegevens naar [!DNL Adobe Analytics] te verzenden, kunt u rapporten weergeven in [!DNL Adobe Analytics] :
 
-1. Selecteer ![ Uitgezochte Product ](assets/select-analytics.png) en selecteer **[!UICONTROL Analytics]**.
+1. Selecteer ![&#x200B; Uitgezochte Product &#x200B;](assets/select-analytics.png) en selecteer **[!UICONTROL Analytics]**.
 
 1. Selecteer **[!UICONTROL Create Project]** en selecteer **[!UICONTROL Blank project]** .
 
@@ -757,7 +757,7 @@ Nadat u een adaptief formulier hebt geconfigureerd om gebeurtenisgegevens naar [
 
 1. Zet vanuit de sectie **[!UICONTROL Metrics]** de gebeurtenissen neer om bij te houden naar het tekstvak **[!UICONTROL Drop a metric here (or any other component)]** .
 
-1. Selecteer ![ Visualisaties ](assets/visualization-icon.svg) en laat vallen een grafiektype aan de sectie Freeform. Op dezelfde manier kunt u veelvoudige grafiektypes aan de sectie van de Vrije vorm toevoegen.
+1. Selecteer ![&#x200B; Visualisaties &#x200B;](assets/visualization-icon.svg) en laat vallen een grafiektype aan de sectie Freeform. Op dezelfde manier kunt u veelvoudige grafiektypes aan de sectie van de Vrije vorm toevoegen.
 
 1. Selecteer Ctrl + S en geef een naam op om het project op te slaan.
 
@@ -916,7 +916,7 @@ Zelfs met zorgvuldige implementatie, kunnen de configuraties van de vormanalyse 
 
 >[!TIP]
 >
->Voor extra het oplossen van problemenbegeleiding, zie onze [ het oplossen van problemeninzameling van AEM Forms ](/help/forms/troubleshooting-installation-and-configuration.md) en [ het oplossen van problemen van de vormverwezenlijking ](/help/forms/form-creation-failing.md) gidsen.
+>Voor extra het oplossen van problemenbegeleiding, zie onze [&#x200B; het oplossen van problemeninzameling van AEM Forms &#x200B;](/help/forms/troubleshooting-installation-and-configuration.md) en [&#x200B; het oplossen van problemen van de vormverwezenlijking &#x200B;](/help/forms/form-creation-failing.md) gidsen.
 
 **De Problemen van de Configuratie**
 
@@ -963,7 +963,7 @@ Voor het met succes implementeren van formulieranalyses moeten de best practices
 
 >[!TIP]
 >
->Alvorens analyses uit te voeren, zorg ervoor uw vormen behoorlijk worden gevormd gebruikend [ beste praktijken van AEM Forms ](/help/forms/introduction-forms-authoring.md) en aangewezen [ voorlegt acties ](/help/forms/configuring-submit-actions.md).
+>Alvorens analyses uit te voeren, zorg ervoor uw vormen behoorlijk worden gevormd gebruikend [&#x200B; beste praktijken van AEM Forms &#x200B;](/help/forms/introduction-forms-authoring.md) en aangewezen [&#x200B; voorlegt acties &#x200B;](/help/forms/configuring-submit-actions.md).
 
 ### Implementatierichtlijnen
 
@@ -1122,4 +1122,4 @@ A: Maak rolspecifieke dashboards door: het identificeren van zeer belangrijke me
 
 >[!MORELIKETHIS]
 >
->*[ laat Adobe Analytics aan een Aangepaste Vorm ](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) toe
+>*[&#x200B; laat Adobe Analytics aan een Aangepaste Vorm &#x200B;](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) toe

@@ -21,7 +21,7 @@ In dit artikel worden verschillende implementaties van aangepaste functies bespr
 
 De Redacteur van de Regel in de Componenten van de Kern steunt niet het **Vastgestelde bezit van Opties** om dropdown lijstopties dynamisch bij runtime te bevolken. U kunt de opties in de vervolgkeuzelijst echter vullen met behulp van aangepaste functies, waarmee u opties kunt ophalen op basis van specifieke logica. Aangepaste functies bieden meer flexibiliteit en controle over de manier waarop en wanneer de vervolgkeuzemogelijkheden worden gevuld. Hierdoor wordt de gebruikerservaring verbeterd.
 
-Om de opties van de dropdown lijst te bevolken gebruikend een douanefunctie, voeg de volgende code toe zoals die in [ wordt beschreven creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie:
+Om de opties van de dropdown lijst te bevolken gebruikend een douanefunctie, voeg de volgende code toe zoals die in [&#x200B; wordt beschreven creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie:
 
 
 ```javascript
@@ -46,19 +46,19 @@ In de bovenstaande code wordt `setEnums` gebruikt om de eigenschap `enum` in te 
 
 Maak een regel voor de knop `Next` , die de waarde van de keuzelijst instelt wanneer de gebruiker op de knop `Next` klikt:
 
-![ drop-down lijstopties ](/help/forms/assets/drop-down-list-options.png)
+![&#x200B; drop-down lijstopties &#x200B;](/help/forms/assets/drop-down-list-options.png)
 
 Raadpleeg de onderstaande afbeelding om aan te tonen waar de opties van de vervolgkeuzelijst zijn ingesteld wanneer u op de knop Weergeven klikt:
 
-![ drop-down opties in de regeleditor ](/help/forms/assets/drop-down-option-rule-editor.png)
+![&#x200B; drop-down opties in de regeleditor &#x200B;](/help/forms/assets/drop-down-option-rule-editor.png)
 
 ## Een deelvenster tonen met de regel `SetProperty`
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken met behulp van een `Contact Us` -formulier.
 
-![ Vorm van het Contact ons ](/help/forms/assets/contact-us-form.png)
+![&#x200B; Vorm van het Contact ons &#x200B;](/help/forms/assets/contact-us-form.png)
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, om het vormgebied als `Required` te plaatsen.
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, om het vormgebied als `Required` te plaatsen.
 
 ```javascript
     
@@ -88,21 +88,21 @@ In dit voorbeeld wordt de validatie van het deelvenster `personaldetails` uitgev
 
 Laten we een regel voor de knop `Next` maken, die het deelvenster `personaldetails` valideert en het deelvenster `feedback` zichtbaar maakt wanneer de gebruiker op de knop `Next` klikt.
 
-![ plaats Bezit ](/help/forms/assets/custom-function-set-property.png)
+![&#x200B; plaats Bezit &#x200B;](/help/forms/assets/custom-function-set-property.png)
 
 Raadpleeg de onderstaande afbeelding om aan te tonen waar het deelvenster `personaldetails` wordt gevalideerd wanneer u op de knop `Next` klikt. Als alle velden in de `personaldetails` worden gevalideerd, wordt het deelvenster `feedback` weergegeven.
 
-![ plaats de Voorproef van de Vorm van het Bezit ](/help/forms/assets/set-property-form-preview.png)
+![&#x200B; plaats de Voorproef van de Vorm van het Bezit &#x200B;](/help/forms/assets/set-property-form-preview.png)
 
 Als er fouten voorkomen in de velden van het deelvenster `personaldetails` , worden deze in het veld weergegeven wanneer op de knop `Next` wordt geklikt. Het deelvenster `feedback` blijft dan onzichtbaar.
 
-![ plaats de Voorproef van de Vorm van het Bezit ](/help/forms/assets/set-property-panel.png)
+![&#x200B; plaats de Voorproef van de Vorm van het Bezit &#x200B;](/help/forms/assets/set-property-panel.png)
 
 ## Het veld valideren
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken om het veld te valideren met behulp van een `Contact Us` -formulier.
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, om het gebied te bevestigen.
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, om het gebied te bevestigen.
 
 ```javascript
     /**
@@ -125,25 +125,25 @@ Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard cre
 
 In dit voorbeeld wordt een aangepast validatiepatroon toegepast op het veld `contact` . Gebruikers moeten een telefoonnummer invoeren dat begint met `10` gevolgd door `8` cijfers. Als de gebruiker een telefoonnummer invoert dat niet begint met `10` of meer of minder dan `8` cijfers bevat, verschijnt er een foutbericht bij de klik op de knop:
 
-![ Patroon van de Bevestiging van het E-mailAdres ](/help/forms/assets/custom-function-validation-pattern.png)
+![&#x200B; Patroon van de Bevestiging van het E-mailAdres &#x200B;](/help/forms/assets/custom-function-validation-pattern.png)
 
 De volgende stap bestaat uit het maken van een regel voor de knop `Next` die het veld `contact` in het klikveld valideert.
 
-![ Patroon van de Bevestiging ](/help/forms/assets/custom-function-validate.png)
+![&#x200B; Patroon van de Bevestiging &#x200B;](/help/forms/assets/custom-function-validate.png)
 
 Verwijs naar de illustratie hieronder om aan te tonen dat als de gebruiker een telefoonaantal ingaat dat niet met `10` begint, een foutenmelding op het gebiedsniveau verschijnt:
 
-![ Patroon van de Bevestiging van het E-mailAdres ](/help/forms/assets/custom-function-validate-error-message.png)
+![&#x200B; Patroon van de Bevestiging van het E-mailAdres &#x200B;](/help/forms/assets/custom-function-validate-error-message.png)
 
 Als de gebruiker een geldig telefoonnummer invoert en alle velden in het deelvenster `personaldetails` zijn gevalideerd, wordt het deelvenster `feedback` op het scherm weergegeven:
 
-![ Patroon van de Bevestiging van het E-mailAdres ](/help/forms/assets/validate-form-preview-form.png)
+![&#x200B; Patroon van de Bevestiging van het E-mailAdres &#x200B;](/help/forms/assets/validate-form-preview-form.png)
 
 ## Een deelvenster opnieuw instellen
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken om het veld opnieuw in te stellen met behulp van een `Contact Us` -formulier.
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, om het paneel terug te stellen.
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, om het paneel terug te stellen.
 
 ```javascript
     /**
@@ -167,11 +167,11 @@ Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard cre
 
 In dit voorbeeld wordt het deelvenster `personaldetails` opnieuw ingesteld wanneer u op de knop `Clear` klikt. In de volgende stap wordt een regel gemaakt voor de knop `Clear` die het deelvenster opnieuw instelt wanneer op de knop wordt geklikt.
 
-![ Duidelijke knoop ](/help/forms/assets/custom-function-reset-field.png)
+![&#x200B; Duidelijke knoop &#x200B;](/help/forms/assets/custom-function-reset-field.png)
 
 Zie de onderstaande afbeelding om weer te geven dat als de gebruiker op de knop `clear` klikt, het deelvenster `personaldetails` opnieuw wordt ingesteld:
 
-![ Vorm van het Terugstellen ](/help/forms/assets/custom-function-reset-form.png)
+![&#x200B; Vorm van het Terugstellen &#x200B;](/help/forms/assets/custom-function-reset-form.png)
 
 ## Een aangepast bericht weergeven op veldniveau en het veld markeren als ongeldig
 
@@ -184,7 +184,7 @@ De syntaxis die wordt gebruikt om een veld als ongeldig te markeren en een aange
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, om een douanebericht op het gebiedsniveau toe te laten.
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, om een douanebericht op het gebiedsniveau toe te laten.
 
 ```javascript
     /**
@@ -206,15 +206,15 @@ In dit voorbeeld wordt een aangepast bericht weergegeven op veldniveau als de ge
 
 In de volgende stap wordt een regel voor het veld `comments` gemaakt:
 
-![ gebied van het Teken als Ongeldig ](/help/forms/assets/custom-function-invalid-field.png)
+![&#x200B; gebied van het Teken als Ongeldig &#x200B;](/help/forms/assets/custom-function-invalid-field.png)
 
 Zie de onderstaande demonstratie om te tonen dat het invoeren van negatieve feedback in het veld `comments` de weergave van een aangepast bericht op veldniveau activeert:
 
-![ gebied van het Teken als Ongeldige vorm van de Voorproef ](/help/forms/assets/custom-function-invalidfield-form.png)
+![&#x200B; gebied van het Teken als Ongeldige vorm van de Voorproef &#x200B;](/help/forms/assets/custom-function-invalidfield-form.png)
 
 Als de gebruiker meer dan 15 tekens in het tekstvak Opmerkingen invoert, wordt het veld gevalideerd en wordt het formulier verzonden:
 
-![ gebied van het Teken als geldige vorm van de Voorproef ](/help/forms/assets/custom-function-validfield-form.png)
+![&#x200B; gebied van het Teken als geldige vorm van de Voorproef &#x200B;](/help/forms/assets/custom-function-validfield-form.png)
 
 ## Gewijzigde gegevens naar de server verzenden
 
@@ -226,7 +226,7 @@ De volgende regel code:
 * Het tweede argument geeft aan of het formulier moet worden gevalideerd voordat het wordt verzonden. Deze is `optional` en wordt standaard ingesteld op `true` .
 * Het derde argument is de `contentType` van de verzending, die ook optioneel is met de standaardwaarde `multipart/form-data` . De andere waarden kunnen `application/json` en `application/x-www-form-urlencoded` zijn.
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, om de gemanipuleerde gegevens bij de server voor te leggen:
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, om de gemanipuleerde gegevens bij de server voor te leggen:
 
 ```javascript
     /**
@@ -251,21 +251,21 @@ In dit voorbeeld wordt `NA` verzonden naar de server wanneer de gebruiker het te
 
 Maak nu een regel voor de knop `Submit` die gegevens verzendt:
 
-![ legt gegevens ](/help/forms/assets/custom-function-submit-data.png) voor
+![&#x200B; legt gegevens &#x200B;](/help/forms/assets/custom-function-submit-data.png) voor
 
 Raadpleeg de illustratie van de onderstaande `console window` om aan te tonen dat als de gebruiker het `comments` textbox leeg laat, de waarde zoals `NA` wordt verzonden op de server:
 
-![ legt gegevens bij het consolevenster voor ](/help/forms/assets/custom-function-submit-data-form.png)
+![&#x200B; legt gegevens bij het consolevenster voor &#x200B;](/help/forms/assets/custom-function-submit-data-form.png)
 
 U kunt het consolevenster ook inspecteren om de gegevens te bekijken die aan de server worden voorgelegd:
 
-![ inspecteer gegevens bij het consolevenster ](/help/forms/assets/custom-function-submit-data-console-data.png)
+![&#x200B; inspecteer gegevens bij het consolevenster &#x200B;](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## Voltooien van verzenden van formulieren en fouthandlers negeren
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken om verzendingshandlers te negeren met behulp van een `Contact Us` -formulier.
 
-Voeg de volgende lijn van code toe zoals die in [ wordt verklaard creeer-douane-functionas ](/help/forms/custom-function-core-component-create-function.md) sectie, om de voorlegging of het mislukkingsbericht voor vormvoorlegging aan te passen en de berichten van de vormvoorlegging in een modaal vakje te tonen:
+Voeg de volgende lijn van code toe zoals die in [&#x200B; wordt verklaard creeer-douane-functionas &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, om de voorlegging of het mislukkingsbericht voor vormvoorlegging aan te passen en de berichten van de vormvoorlegging in een modaal vakje te tonen:
 
 ```javascript
 /**
@@ -354,23 +354,23 @@ Wanneer de gebruiker in dit voorbeeld de aangepaste functies `customSubmitSucces
 
 Maak nu een regel voor het succesvol verzenden van formulieren:
 
-![ succes van de de voorlegging van de Vorm ](/help/forms/assets/form-submission-success.png)
+![&#x200B; succes van de de voorlegging van de Vorm &#x200B;](/help/forms/assets/form-submission-success.png)
 
 Raadpleeg de onderstaande illustratie om aan te tonen dat wanneer het formulier is verzonden, het succesbericht wordt weergegeven in een modaal formulier:
 
-![ bericht van het de voorlegging van de Vorm succesbericht ](/help/forms/assets/form-submission-success-message.png)
+![&#x200B; bericht van het de voorlegging van de Vorm succesbericht &#x200B;](/help/forms/assets/form-submission-success-message.png)
 
 Laten we ook een regel maken voor mislukte formulierverzendingen:
 
-![ de voorlegging van de Vorm ontbreekt ](/help/forms/assets/form-submission-fail.png)
+![&#x200B; de voorlegging van de Vorm ontbreekt &#x200B;](/help/forms/assets/form-submission-fail.png)
 
 Raadpleeg de onderstaande afbeelding om aan te tonen dat wanneer het verzenden van het formulier mislukt, het foutbericht wordt weergegeven in een modaal:
 
-![ de voorlegging van de Vorm ontbreekt bericht ](/help/forms/assets/form-submission-fail-message.png)
+![&#x200B; de voorlegging van de Vorm ontbreekt bericht &#x200B;](/help/forms/assets/form-submission-fail-message.png)
 
 Als u het verzenden van formulieren standaard wilt laten slagen of mislukken, zijn de functies `Default submit Form Success Handler` en `Default submit Form Error Handler` beschikbaar buiten het vak.
 
-In geval, de manager van de douanevoorlegging niet zoals verwacht in bestaande Projecten of vormen van AEM uit te voeren, verwijs naar de [ het oplossen van problemen](#troubleshooting) sectie.
+In geval, de manager van de douanevoorlegging niet zoals verwacht in bestaande Projecten of vormen van AEM uit te voeren, verwijs naar de [&#x200B; het oplossen van problemen](#troubleshooting) sectie.
 
 ## Handelingen uitvoeren in een specifieke instantie van het herhaalbare deelvenster
 
@@ -378,9 +378,9 @@ Regels die u met de visuele regeleditor in een herhaalbaar deelvenster hebt gema
 
 Laten we een ander formulier maken als `Booking Form` om informatie te verzamelen over reizigers die naar een bestemming gaan. Er wordt een deelvenster voor reizigers toegevoegd als een herhaalbaar deelvenster, waar de gebruiker met de knop `Add Traveler` details voor 5 reizigers kan toevoegen.
 
-![ Informatie van de reiziger ](/help/forms/assets/traveler-info-form.png)
+![&#x200B; Informatie van de reiziger &#x200B;](/help/forms/assets/traveler-info-form.png)
 
-Voeg de volgende lijn van code toe zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, om acties in een specifieke instantie van het herhaalbare paneel, buiten laatste uit te voeren:
+Voeg de volgende lijn van code toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, om acties in een specifieke instantie van het herhaalbare paneel, buiten laatste uit te voeren:
 
 ```javascript
 /**
@@ -399,7 +399,7 @@ In dit voorbeeld voert de aangepaste functie `hidePanelInRepeatablePanel` een ha
 
 Voeg een knop met het label `Hide` toe en voeg een regel toe om de tweede instantie van een herhaalbaar deelvenster te verbergen.
 
-![ de regel van het Comité van de Huid ](/help/forms/assets/custom-function-hidepanel-rule.png)
+![&#x200B; de regel van het Comité van de Huid &#x200B;](/help/forms/assets/custom-function-hidepanel-rule.png)
 
 In de onderstaande video ziet u hoe u kunt zien dat wanneer op `Hide` wordt geklikt, het deelvenster in de tweede herhaalbare instantie wordt verborgen:
 
@@ -409,7 +409,7 @@ In de onderstaande video ziet u hoe u kunt zien dat wanneer op `Hide` wordt gekl
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken om velden vooraf in te vullen met behulp van een `Booking Form` .
 
-Voeg de volgende lijn van code, zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, toe om de vooraf ingevulde waarde op een gebied te laden wanneer de vorm wordt geïnitialiseerd:
+Voeg de volgende lijn van code, zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, toe om de vooraf ingevulde waarde op een gebied te laden wanneer de vorm wordt geïnitialiseerd:
 
 ```javascript
 /**
@@ -427,17 +427,17 @@ In de bovenstaande code vult de functie `testImportData` het tekstvak `Booking A
 
 Laten we een regel maken bij de initialisatie van het formulier, waarbij de waarde in het tekstvak `Booking Amount` wordt voorgevuld met een opgegeven waarde wanneer het formulier wordt geladen:
 
-![ de Regel van de Gegevens van de Invoer ](/help/forms/assets/custom-function-import-data.png)
+![&#x200B; de Regel van de Gegevens van de Invoer &#x200B;](/help/forms/assets/custom-function-import-data.png)
 
 Raadpleeg de onderstaande schermafbeelding, die aantoont dat bij het laden van het formulier de waarde in het tekstvak `Booking Amount` vooraf is ingevuld met een opgegeven waarde:
 
-![ de Vorm van de Regel van Gegevens van de Invoer ](/help/forms/assets/custom-function-prefill-form.png)
+![&#x200B; de Vorm van de Regel van Gegevens van de Invoer &#x200B;](/help/forms/assets/custom-function-prefill-form.png)
 
 ## Focus instellen op het specifieke veld
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken om focus op een specifiek veld in te stellen met behulp van een `Booking Form` .
 
-Voeg de volgende lijn van code, zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, toe om nadruk op het gespecificeerde gebied te plaatsen wanneer de `Submit` knoop wordt geklikt.:
+Voeg de volgende lijn van code, zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, toe om nadruk op het gespecificeerde gebied te plaatsen wanneer de `Submit` knoop wordt geklikt.:
 
 ```javascript
 /**
@@ -453,11 +453,11 @@ Voeg de volgende lijn van code, zoals die in [ wordt verklaard creeer-douane-fun
 
 Voeg een regel toe aan de knop `Submit` om de focus in te stellen op het tekstvak `Email ID` wanneer erop wordt geklikt.
 
-![ plaats de Regel van de Focus ](/help/forms/assets/custom-function-set-focus.png)
+![&#x200B; plaats de Regel van de Focus &#x200B;](/help/forms/assets/custom-function-set-focus.png)
 
 Raadpleeg de onderstaande schermafbeelding die aantoont dat wanneer op de knop `Submit` wordt geklikt, de focus wordt ingesteld op het veld `Email ID` :
 
-![ plaats de Regel van de Focus ](/help/forms/assets/custom-function-set-focus-form.png)
+![&#x200B; plaats de Regel van de Focus &#x200B;](/help/forms/assets/custom-function-set-focus-form.png)
 
 >[!NOTE]
 >
@@ -467,7 +467,7 @@ Raadpleeg de onderstaande schermafbeelding die aantoont dat wanneer op de knop `
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken om een herhaalbaar deelvenster toe te voegen of te verwijderen met behulp van de eigenschap `dispatchEvent` met behulp van een `Booking Form` .
 
-Voeg de volgende lijn van code, zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, toe om een paneel toe te voegen wanneer de `Add Traveler` knoop gebruikend het `dispatchEvent` bezit wordt geklikt:
+Voeg de volgende lijn van code, zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](/help/forms/custom-function-core-component-create-function.md) sectie, toe om een paneel toe te voegen wanneer de `Add Traveler` knoop gebruikend het `dispatchEvent` bezit wordt geklikt:
 
 ```javascript
 /**
@@ -484,13 +484,13 @@ function testAddInstance(globals)
 
 Voeg een regel aan de knop `Add Traveler` toe om het herhaalbare deelvenster toe te voegen wanneer erop wordt geklikt:
 
-![ voeg de Regel van het Comité toe ](/help/forms/assets/custom-function-add-panel.png)
+![&#x200B; voeg de Regel van het Comité toe &#x200B;](/help/forms/assets/custom-function-add-panel.png)
 
 Verwijs naar gif hieronder, die aantoont dat wanneer `Add Traveler` wordt geklikt, het paneel gebruikend het `dispatchEvent` bezit wordt toegevoegd:
 
-![ voeg Comité ](/help/forms/assets/custom-function-add-panel.gif) toe
+![&#x200B; voeg Comité &#x200B;](/help/forms/assets/custom-function-add-panel.gif) toe
 
-Op dezelfde manier voeg de volgende lijn van code toe, zoals die in [ wordt verklaard creeer-douane-functie ](#create-custom-function) sectie, om een paneel te schrappen wanneer de `Delete Traveler` knoop gebruikend het `dispatchEvent` bezit wordt geklikt:
+Op dezelfde manier voeg de volgende lijn van code toe, zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](#create-custom-function) sectie, om een paneel te schrappen wanneer de `Delete Traveler` knoop gebruikend het `dispatchEvent` bezit wordt geklikt:
 
 ```javascript
 /**
@@ -507,11 +507,11 @@ function testRemoveInstance(globals)
 
 Voeg een regel aan de knop `Delete Traveler` toe om het herhaalbare deelvenster te verwijderen wanneer erop wordt geklikt.
 
-![ de Regel van het Comité van de Schrapping ](/help/forms/assets/custom-function-delete-panel.png)
+![&#x200B; de Regel van het Comité van de Schrapping &#x200B;](/help/forms/assets/custom-function-delete-panel.png)
 
 Zie de onderstaande GIF, die aantoont dat wanneer op de knop `Delete Traveler` wordt geklikt, het deelvenster Reiziger wordt verwijderd met de eigenschap `dispatchEvent` :
 
-![ schrapt Comité ](/help/forms/assets/custom-function-delete-panel.gif)
+![&#x200B; schrapt Comité &#x200B;](/help/forms/assets/custom-function-delete-panel.gif)
 
 ## Bekend probleem
 
@@ -526,7 +526,7 @@ Reguliere expressies van Refactor om de constructor RegExp te gebruiken voor con
 ## Problemen oplossen
 
 * Voer de volgende stappen uit als de aangepaste verzendhandler niet naar behoren kan worden uitgevoerd in bestaande AEM-projecten of -formulieren:
-   * Zorg ervoor dat de [ versie van de kerncomponenten aan 3.0.18 en later ](https://github.com/adobe/aem-core-forms-components) wordt bijgewerkt. Voor bestaande AEM-projecten en -formulieren moeten echter aanvullende stappen worden ondernomen:
+   * Zorg ervoor dat de [&#x200B; versie van de kerncomponenten aan 3.0.18 en later &#x200B;](https://github.com/adobe/aem-core-forms-components) wordt bijgewerkt. Voor bestaande AEM-projecten en -formulieren moeten echter aanvullende stappen worden ondernomen:
 
    * Voor het AEM-project moet de gebruiker alle instanties van `submitForm('custom:submitSuccess', 'custom:submitError')` vervangen door `submitForm()` en het project implementeren via de Cloud Manager-pijplijn.
 

@@ -14,13 +14,13 @@ ht-degree: 0%
 # De CDN-cache leegmaken {#cdn-purge-cache}
 
 Het zuiveren verwijdert een voorwerp uit het geheime voorgeheugen van de Adobe CDN, resulterend in toekomstige verzoeken die aan de oorsprong als geheim voorgeheugenmissen, eerder dan worden gediend van geheim voorgeheugen.
-Met AEM as a Cloud Service kunt u een token voor de paars-API configureren. Deze token kan vervolgens worden gebruikt in opschoonAPI-aanroepen. Lees [ het Vormen CDN Geloofsbrieven en Authentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijpleiding van Cloud Manager Config.
+Met AEM as a Cloud Service kunt u een token voor de paars-API configureren. Deze token kan vervolgens worden gebruikt in opschoonAPI-aanroepen. Lees [&#x200B; het Vormen CDN Geloofsbrieven en Authentificatie &#x200B;](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijpleiding van Cloud Manager Config.
 
 Er zijn drie ondersteunde variaties voor het wissen:
 
-* [ Enige zuivering URL ](#single-purge) - zuiveren één enkel middel tegelijkertijd.
-* [ wis door vervangings sleutel ](#surrogate-key-purge) - wis veelvoudige middelen in één keer.
-* [ Volledige zuivering ](#full-purge) - zuivering alle middelen.
+* [&#x200B; Enige zuivering URL &#x200B;](#single-purge) - zuiveren één enkel middel tegelijkertijd.
+* [&#x200B; wis door vervangings sleutel &#x200B;](#surrogate-key-purge) - wis veelvoudige middelen in één keer.
+* [&#x200B; Volledige zuivering &#x200B;](#full-purge) - zuivering alle middelen.
 
 Alle variaties van de purge delen het volgende:
 
@@ -31,7 +31,7 @@ Alle variaties van de purge delen het volgende:
 >[!CAUTION]
 >Het leegmaken van het CDN geheime voorgeheugen, vooral met de harde vlag, zal verkeer bij de oorsprong verhogen en tot een stroomonderbreking leiden wanneer niet behoorlijk uitgevoerd.
 
-U kunt [ een leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
+U kunt [&#x200B; een leerprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
 
 ## Eén URL leegmaken {#single-purge}
 
@@ -77,7 +77,7 @@ Houd er rekening mee dat de header `X-AEM-Purge` de waarde &#39;all&#39; moet be
 
 ## Interactie met door Klant beheerde CDN
 
-In het geval van a [ Klant Beheerde CDN ](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) ook `X-Forwarded-Host` en `X-AEM-Edge-Key` moet worden verstrekt:
+In het geval van a [&#x200B; Klant Beheerde CDN &#x200B;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) ook `X-Forwarded-Host` en `X-AEM-Edge-Key` moet worden verstrekt:
 
 ```
 curl
@@ -90,4 +90,4 @@ curl
 
 ## Interacties met de laag Apache/Dispatcher {#apache-layer}
 
-Zoals die onder [ de Stroom van de Levering van de Inhoud ](/help/implementing/dispatcher/overview.md) wordt beschreven, wint CDN inhoud van de laag Apache/Dispatcher terug, als het geheime voorgeheugen is verlopen. Dit houdt in dat u, voordat u een bron op de CDN wist, ervoor moet zorgen dat er ook een nieuwe versie van de inhoud beschikbaar is op de Dispatcher. Voor verdere details zie ook [ de Invalidatie van het Geheime voorgeheugen van Dispatcher ](/help/implementing/dispatcher/caching.md#disp).
+Zoals die onder [&#x200B; de Stroom van de Levering van de Inhoud &#x200B;](/help/implementing/dispatcher/overview.md) wordt beschreven, wint CDN inhoud van de laag Apache/Dispatcher terug, als het geheime voorgeheugen is verlopen. Dit houdt in dat u, voordat u een bron op de CDN wist, ervoor moet zorgen dat er ook een nieuwe versie van de inhoud beschikbaar is op de Dispatcher. Voor verdere details zie ook [&#x200B; de Invalidatie van het Geheime voorgeheugen van Dispatcher &#x200B;](/help/implementing/dispatcher/caching.md#disp).

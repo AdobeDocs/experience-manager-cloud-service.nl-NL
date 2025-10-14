@@ -22,7 +22,7 @@ Adobe Experience Manager als [!DNL Cloud Service] biedt een methode in de cloud 
 * Verbeterde veerkracht van de verwerking van bedrijfsmiddelen. Mogelijke problemen bij het verwerken van atypische bestanden, zoals beschadigde bestanden of extreem grote bestanden, hebben geen gevolgen meer voor de prestaties van de implementatie.
 * Vereenvoudigde configuratie van middelenverwerking voor beheerders.
 * Assets-verwerkingsinstellingen worden beheerd en onderhouden door Adobe om de best bekende configuratie te bieden voor de verwerking van uitvoeringen, metagegevens en tekstextractie voor verschillende bestandstypen
-* De inheemse diensten van de het dossierverwerking van Adobe worden gebruikt waar toepasselijk, die high-fidelity output en [ efficiënte behandeling van merkgebonden formaten van Adobe verstrekken ](file-format-support.md).
+* De inheemse diensten van de het dossierverwerking van Adobe worden gebruikt waar toepasselijk, die high-fidelity output en [&#x200B; efficiënte behandeling van merkgebonden formaten van Adobe verstrekken &#x200B;](file-format-support.md).
 * Mogelijkheid om een workflow voor naverwerking te configureren om gebruikersspecifieke acties en integratie toe te voegen.
 
 Met Asset microservices voorkomt u de behoefte aan renderingtools en -methoden van derden (zoals [!DNL ImageMagick] en MPEG-transcodering) en vereenvoudigt u configuraties, terwijl u standaard basisfunctionaliteit voor de algemene bestandsindelingen biedt.
@@ -36,7 +36,7 @@ Een architectuurdiagram op hoog niveau geeft de belangrijkste elementen weer van
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![ Inname van activa en verwerking met activa microservices ](assets/asset-microservices-overview.png " Inname van Activa en verwerking met activa microservices ")
+![&#x200B; Inname van activa en verwerking met activa microservices &#x200B;](assets/asset-microservices-overview.png " Inname van Activa en verwerking met activa microservices ")
 
 De belangrijkste stappen van de opname en verwerking met behulp van asset microservices zijn:
 
@@ -60,10 +60,10 @@ Experience Manager-clients, die onderdeel zijn van productaanbiedingen, bieden s
 
 U kunt aangepaste uploadgereedschappen gebruiken die rechtstreeks werken met [!DNL Experience Manager] HTTP-API&#39;s. U kunt deze APIs direct gebruiken, of de volgende open-bronprojecten gebruiken en uitbreiden die het uploadprotocol uitvoeren:
 
-* [ open-bron uploadt bibliotheek ](https://github.com/adobe/aem-upload)
-* [ open-bron bevel-lijn hulpmiddel ](https://github.com/adobe/aio-cli-plugin-aem)
+* [&#x200B; open-bron uploadt bibliotheek &#x200B;](https://github.com/adobe/aem-upload)
+* [&#x200B; open-bron bevel-lijn hulpmiddel &#x200B;](https://github.com/adobe/aio-cli-plugin-aem)
 
-Voor meer informatie, zie [ activa ](add-assets.md) uploaden.
+Voor meer informatie, zie [&#x200B; activa &#x200B;](add-assets.md) uploaden.
 
 ## Aangepaste naverwerking van elementen toevoegen {#add-custom-asset-post-processing}
 
@@ -96,6 +96,6 @@ Adobe Experience Manager kan zo worden geconfigureerd dat de naverwerkingsworkfl
 >
 >* [Aan de slag met microservices voor assets](asset-microservices-configure-and-use.md)
 >* [Ondersteunde bestandsindelingen](file-format-support.md)
->* [ de Verbinding van Activa van Adobe ](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL)
->* [ Apache Oak documentatie op directe binaire toegang ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
+>* [&#x200B; de Verbinding van Activa van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL)
+>* [&#x200B; Apache Oak documentatie op directe binaire toegang &#x200B;](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

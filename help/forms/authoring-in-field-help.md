@@ -30,7 +30,7 @@ U kunt in-context hulp specificeren gebruikend de volgende opties in de sectie v
 * [Korte beschrijving](authoring-in-field-help.md#p-short-description-p)
 * [Lange beschrijving](authoring-in-field-help.md#p-long-description-p)
 
-![ In-context hulp voor vormgebieden ](assets/descriptions.png)
+![&#x200B; In-context hulp voor vormgebieden &#x200B;](assets/descriptions.png)
 
 >[!NOTE]
 >
@@ -40,30 +40,30 @@ U kunt in-context hulp specificeren gebruikend de volgende opties in de sectie v
 
 In het veld Korte beschrijving kunt u snelle en korte aanwijzingen geven over het invullen van een formulierveld. De tekst die in het veld Korte beschrijving is opgegeven, wordt als knopinfo weergegeven wanneer u de muis boven het veld houdt.
 
-![ Korte beschrijving voor het toevoegen van in-context hulp voor vormgebieden ](assets/tooltip.png)
+![&#x200B; Korte beschrijving voor het toevoegen van in-context hulp voor vormgebieden &#x200B;](assets/tooltip.png)
 
 >[!NOTE]
 >
 >Selecteer **altijd tonen korte beschrijving** om de hulptekst onder het gebied permanent te tonen.
 
-![ Permanente korte in-context hulp onder het gebied ](assets/short1.png)
+![&#x200B; Permanente korte in-context hulp onder het gebied &#x200B;](assets/short1.png)
 
 ### Lange beschrijving {#long-description}
 
 U kunt het lange beschrijvingsgebied gebruiken om lange teksten te specificeren of rijke media inhoud, met inbegrip van video&#39;s in te bedden, als in-context hulp. In de volgende afbeelding ziet u bijvoorbeeld hoe u een video kunt insluiten als in-context-Help.
 
-![ Toevoegend rijke media als in-context hulp voor vormgebieden ](assets/long-descriptions.png)
+![&#x200B; Toevoegend rijke media als in-context hulp voor vormgebieden &#x200B;](assets/long-descriptions.png)
 
 Als u een lange beschrijving toevoegt, wordt een **weergegeven?** naast het veld. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de lange beschrijving.
 
-![ Voorbeeld van rijke media in-context hulp ](assets/photoshop.png)
+![&#x200B; Voorbeeld van rijke media in-context hulp &#x200B;](assets/photoshop.png)
 
 ### Help op deelvensterniveau {#panel-level-help}
 
 Naast de contextHelp voor formuliervelden kunt u op deelvensterniveau Help opgeven op het tabblad Help-inhoud van het dialoogvenster Bewerken van het deelvenster.
 
-![ Toevoegend in-context hulp voor een vormpaneel ](assets/panel-level-help.png)
+![&#x200B; Toevoegend in-context hulp voor een vormpaneel &#x200B;](assets/panel-level-help.png)
 
 Wanneer u Help voor het deelvenster toevoegt, wordt een **weergegeven?** naast de beschrijving van het deelvenster. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de sectie Help-inhoud van het dialoogvenster voor het bewerken van deelvensters.
 
-![ Voorbeeld van in-context hulp op het niveau van het vormpaneel ](assets/photoshop-1.png)
+![&#x200B; Voorbeeld van in-context hulp op het niveau van het vormpaneel &#x200B;](assets/photoshop-1.png)

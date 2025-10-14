@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Een pagina ontwerpen voor mobiele apparaten {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager-pagina&#39;s zijn gebaseerd op een responsieve indeling. [ Responsieve lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) past uw inhoud aan om het doelapparaat automatisch te passen, eliminerend de behoefte aan auteursinhoud voor specifieke apparaten.
+Adobe Experience Manager-pagina&#39;s zijn gebaseerd op een responsieve indeling. [&#x200B; Responsieve lay-out &#x200B;](/help/sites-cloud/authoring/page-editor/responsive-layout.md) past uw inhoud aan om het doelapparaat automatisch te passen, eliminerend de behoefte aan auteursinhoud voor specifieke apparaten.
 
 Wanneer u een mobiele pagina ontwerpt, wordt de pagina weergegeven op een manier die het mobiele apparaat emuleert. Wanneer u de pagina ontwerpt, kunt u schakelen tussen verschillende emulators om te zien wat de eindgebruiker ziet wanneer hij of zij de pagina opent.
 
@@ -22,7 +22,7 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 
 >[!NOTE]
 >
->Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. Zie [ Creërend Levende Kopieën ](/help/sites-cloud/administering/msm/creating-live-copies.md).
+>Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. Zie [&#x200B; Creërend Levende Kopieën &#x200B;](/help/sites-cloud/administering/msm/creating-live-copies.md).
 >
 >AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. Zie Apparaatgroepfilters maken.
 
@@ -36,14 +36,14 @@ Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 1. Bewerk een inhoudspagina.
 1. Schakelaar aan de gewenste mededinger door het **Emulator** pictogram bij de bovenkant van de pagina te klikken.
 
-   ![ Emulatorpictogram ](/help/sites-cloud/authoring/assets/emulator.png)
+   ![&#x200B; Emulatorpictogram &#x200B;](/help/sites-cloud/authoring/assets/emulator.png)
 
 1. Sleep componenten van de componentbrowser of de middelenbrowser naar de pagina.
-1. [ wijzigt de ontvankelijke lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) van de pagina en zijn componenten die op het geselecteerde apparaat worden gebaseerd.
+1. [&#x200B; wijzigt de ontvankelijke lay-out &#x200B;](/help/sites-cloud/authoring/page-editor/responsive-layout.md) van de pagina en zijn componenten die op het geselecteerde apparaat worden gebaseerd.
 
 De pagina ziet er ongeveer als volgt uit:
 
-![ Mobiel voorbeeld ](/help/sites-cloud/authoring/assets/mobile.png)
+![&#x200B; Mobiel voorbeeld &#x200B;](/help/sites-cloud/authoring/assets/mobile.png)
 
 >[!NOTE]
 >

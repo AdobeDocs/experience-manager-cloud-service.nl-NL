@@ -20,7 +20,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -31,7 +31,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* [ het werkschema van de Boom van de Inhoud van Publish ](/help/operations/replication.md#publish-content-tree-workflow) - een nieuw werkschemamodel en een stap verstrekt verhoogde prestaties wanneer het publiceren van diepe hiërarchieën van inhoud.
+* [&#x200B; het werkschema van de Boom van de Inhoud van Publish &#x200B;](/help/operations/replication.md#publish-content-tree-workflow) - een nieuw werkschemamodel en een stap verstrekt verhoogde prestaties wanneer het publiceren van diepe hiërarchieën van inhoud.
 
 ## [!DNL Adobe Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -59,15 +59,15 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * Wanneer een element wordt gedownload via de optie voor het delen van koppelingen, kunt u de uitvoeringen nu downloaden of niet downloaden. Eerder werden alle elementuitvoeringen gedownload.
 
-* Beheerders kunnen [!DNL Experience Manager] zo configureren dat de bron van elementen wordt verwijderd nadat ze elementen in bulk hebben opgenomen. Zie [ bulkactiva opnemen ](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Beheerders kunnen [!DNL Experience Manager] zo configureren dat de bron van elementen wordt verwijderd nadat ze elementen in bulk hebben opgenomen. Zie [&#x200B; bulkactiva opnemen &#x200B;](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Wanneer het uitvoeren van een gezondheidscontrole om activa in bulk in te voeren, verstrekt de Experience Manager nu meer informatieredenen voor mislukkingen. Zie [ bulkactiva opnemen ](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Wanneer het uitvoeren van een gezondheidscontrole om activa in bulk in te voeren, verstrekt de Experience Manager nu meer informatieredenen voor mislukkingen. Zie [&#x200B; bulkactiva opnemen &#x200B;](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Bij het importeren van elementen met het gereedschap voor bulkimport hebben beheerders nu de optie om de bronbestanden te verwijderen nadat het importeren is voltooid. Zie [ bulkactiva opnemen ](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Bij het importeren van elementen met het gereedschap voor bulkimport hebben beheerders nu de optie om de bronbestanden te verwijderen nadat het importeren is voltooid. Zie [&#x200B; bulkactiva opnemen &#x200B;](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Wanneer het uitgeven van een meta-gegevensschema, staat een nieuw gebied van de selecteur van de wortelweg beheerders toe om de selectie snel en gemakkelijk te maken, daardoor verminderend de configuratietijd.
 
-* Bij het bewerken van een metagegevensschema wordt een gegevenstype toegevoegd dat een tekstgebied met vrije vorm biedt in de metagegevenseditor. Gebruikers kunnen dit tekstgebied gebruiken om vrije tekst in te voeren als metagegevens van een element. Zie [ redacteur van het meta-gegevensschema ](/help/assets/metadata-schemas.md).
+* Bij het bewerken van een metagegevensschema wordt een gegevenstype toegevoegd dat een tekstgebied met vrije vorm biedt in de metagegevenseditor. Gebruikers kunnen dit tekstgebied gebruiken om vrije tekst in te voeren als metagegevens van een element. Zie [&#x200B; redacteur van het meta-gegevensschema &#x200B;](/help/assets/metadata-schemas.md).
 
 * Metagegevens van vele elementen kunnen in bulk worden geïmporteerd met behulp van een CSV-bestand en kunnen worden geëxporteerd naar een CSV-bestand. De standaarddatumnotatie is nu `yyyy-MM-dd'T'HH:mm:ss.SSSXXX` . Gebruikers kunnen een andere indeling gebruiken door de kolomkop bij te werken. Voeg bijvoorbeeld `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` toe als kolomkop in het CSV-bestand in plaats van het woord `Date` .
 
@@ -99,7 +99,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
   Met behulp van geavanceerde computerleeralgoritmen kunnen bedrijven over de hele wereld dankzij het Adobe Sign-proces voor overheidsidentiteitskaart een kwalitatief hoogstaande verificatie van de identiteit van hun ontvanger krijgen. Nu kunt u de methode voor identiteitsverificatie van overheidsidentiteiten gebruiken in met Adobe Sign ingeschakelde Adaptive Forms.
 
-  Identiteitskaart van de overheid is een methode van de identiteitsauthentificatie van de premie die de ontvanger opdraagt [ het beeld van een door de overheid uitgegeven identiteitsdocument (rijbewijs, nationale identiteitskaart, paspoort) ](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) te uploaden, en dan dat document te evalueren om het authentiek te verzekeren.
+  Identiteitskaart van de overheid is een methode van de identiteitsauthentificatie van de premie die de ontvanger opdraagt [&#x200B; het beeld van een door de overheid uitgegeven identiteitsdocument (rijbewijs, nationale identiteitskaart, paspoort) &#x200B;](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) te uploaden, en dan dat document te evalueren om het authentiek te verzekeren.
 
 * **Steun om in-vorm het ondertekenen ervaring voor asynchrone adaptieve vormverzendingen te gebruiken**
 

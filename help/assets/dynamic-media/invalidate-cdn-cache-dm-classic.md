@@ -28,7 +28,7 @@ Dynamische media-elementen worden in het cachegeheugen opgeslagen door de CDN (C
 
 **om uw CDN geheime voorgeheugen als Dynamic Media Classic ongeldig te maken:**
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens opgegeven op het moment van de levering. Neem contact op met de Klantenondersteuning als u deze informatie niet hebt.
 

@@ -23,16 +23,16 @@ Met de Extension Manager kunt u:
 * ontdekken UI rekbaarheidseigenschappen via interactieve demo&#39;s
 * toegang krijgen tot de experimentele functies van Adobe via eersteklas uitbreidingen
 
-![ Extension Manager in AEM ](/help/implementing/developing/extending/assets/homepage.png)
+![&#x200B; Extension Manager in AEM &#x200B;](/help/implementing/developing/extending/assets/homepage.png)
 
 Voor nadere informatie:
 
 * De Extension Manager:
 
-   * De [ Extension Manager in AEM Experience Manager ](https://developer.adobe.com/uix/docs/extension-manager/)
-   * [ Uitbreidingen die door Adobe worden ontwikkeld ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+   * De [&#x200B; Extension Manager in AEM Experience Manager &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/)
+   * [&#x200B; Uitbreidingen die door Adobe worden ontwikkeld &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 * De AEM App Builder
 
    * [AEM uitbreiden met de Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
-   * [ de rekbaarheid van UI van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)
+   * [&#x200B; de rekbaarheid van UI van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)

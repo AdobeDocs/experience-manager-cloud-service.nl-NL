@@ -21,7 +21,7 @@ Adobe Experience Manager as a Cloud Service biedt waarneming en controle van: in
 
 AEM as a Cloud Service gebruikt honderden native monitoren in de cloud om de status van elke omgeving (24/7) gedurende 365 dagen per jaar voortdurend te rapporteren. De monitordefinities zijn niet statisch, zij worden voortdurend herzien om het vroege opsporingsvermogen te verbeteren. Ook heeft de Adobe procedures ingesteld om op waarschuwingen te reageren.
 
-Als u informatie over andere soorten controle zoals het registreren of het controleren door Cloud Manager vereist, zie [ Extra Middelen ](#resources).
+Als u informatie over andere soorten controle zoals het registreren of het controleren door Cloud Manager vereist, zie [&#x200B; Extra Middelen &#x200B;](#resources).
 
 ## Externe beschikbaarheid {#external-availability}
 
@@ -33,11 +33,11 @@ Al uw omgevingen van AEM as a Cloud Service worden gecontroleerd op beschikbaarh
 
 ### Aangepaste controle {#custom-monitoring}
 
-Met de controle van de Douane, kunnen de klanten naar keuze tot vijf verschillende Web bezit URLs verstrekken alvorens [ levend ](/help/journey-migration/go-live.md) gaan. Deze URL&#39;s moeten geldig zijn en een HTTP 200-antwoordcode retourneren. Deze monitors steunen klanten die [ hun eigen CDN ](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) vóór de Adobe CDN en om het even welk extern verkeer brengen dat binnen AEM as a Cloud Service wordt gebruikt die niet onder de controle van de Adobe is. Alarm die uit de controles van de Controle van de Controle van de Douane voortvloeit neemt de steunteams en processen van de Adobe in dienst.
+Met de controle van de Douane, kunnen de klanten naar keuze tot vijf verschillende Web bezit URLs verstrekken alvorens [&#x200B; levend &#x200B;](/help/journey-migration/go-live.md) gaan. Deze URL&#39;s moeten geldig zijn en een HTTP 200-antwoordcode retourneren. Deze monitors steunen klanten die [&#x200B; hun eigen CDN &#x200B;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) vóór de Adobe CDN en om het even welk extern verkeer brengen dat binnen AEM as a Cloud Service wordt gebruikt die niet onder de controle van de Adobe is. Alarm die uit de controles van de Controle van de Controle van de Douane voortvloeit neemt de steunteams en processen van de Adobe in dienst.
 
 >[!NOTE]
 >
-> Deze functionaliteit wordt slechts aangeboden voor productiemilieu&#39;s en klanten met [ Geavanceerde Steun van de Wolk ](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=nl-NL#support-add-ons). Neem contact op met het accountteam van de Adobe als u vragen hebt.
+> Deze functionaliteit wordt slechts aangeboden voor productiemilieu&#39;s en klanten met [&#x200B; Geavanceerde Steun van de Wolk &#x200B;](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=nl-NL#support-add-ons). Neem contact op met het accountteam van de Adobe als u vragen hebt.
 
 ## Interne modulemonitoring {#module-monitoring}
 
@@ -59,6 +59,6 @@ De klanten kunnen de [&#128279;](https://experienceleague.adobe.com/docs/experie
 
 ## Aanvullende bronnen {#resources}
 
-* [ de Controle van de Prestaties van de Toepassing van New Relic ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=nl-NL)
-* [ het Registreren voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=nl-NL)
-* [ de Milieu&#39;s van de Controle ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=nl-NL)
+* [&#x200B; de Controle van de Prestaties van de Toepassing van New Relic &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=nl-NL)
+* [&#x200B; het Registreren voor AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=nl-NL)
+* [&#x200B; de Milieu&#39;s van de Controle &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=nl-NL)

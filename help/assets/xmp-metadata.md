@@ -16,12 +16,12 @@ ht-degree: 13%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html?lang=nl-NL) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 XMP (Extensible Metadata Platform) is de metagegevensstandaard die Experience Manager Assets gebruikt voor alle metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 
-Naast het aanbieden van universele meta-gegevens het coderen die in alle dossierformaten kunnen worden ingebed, verstrekt XMP een rijk [ inhoudsmodel ](#xmp-core-concepts) en wordt [ gesteund door Adobe ](#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met [!DNL Assets] een krachtig platform hebben om op te bouwen.
+Naast het aanbieden van universele meta-gegevens het coderen die in alle dossierformaten kunnen worden ingebed, verstrekt XMP een rijk [&#x200B; inhoudsmodel &#x200B;](#xmp-core-concepts) en wordt [&#x200B; gesteund door Adobe &#x200B;](#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met [!DNL Assets] een krachtig platform hebben om op te bouwen.
 
 ## Overzicht en ecosysteem van XMP {#xmp-ecosystem}
 
@@ -83,15 +83,15 @@ Wanneer u de metagegevens van een element wijzigt vanuit [!DNL Assets] of wannee
 
 Neem bijvoorbeeld een scenario waarin u de eigenschap [!UICONTROL Title] van het element met de naam `Classic Leather` to `Nylon` wijzigt.
 
-![ meta-gegevens ](assets/metadata.png)
+![&#x200B; meta-gegevens &#x200B;](assets/metadata.png)
 
 In dit geval slaat [!DNL Assets] de wijzigingen in de eigenschap **[!UICONTROL Title]** op in de parameter `dc:title` voor de metagegevens van de elementen die zijn opgeslagen in de elementenhiërarchie.
 
-![ die meta-gegevens in activaknoop in de bewaarplaats worden opgeslagen ](assets/metadata_stored.png)
+![&#x200B; die meta-gegevens in activaknoop in de bewaarplaats worden opgeslagen &#x200B;](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->De functie Terugschrijven is niet standaard ingeschakeld in [!DNL Assets] . Zie hoe te [ meta-gegevensschrijver ](#enable-xmp-writeback) toelaten. MSM voor digitale elementen werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
+>De functie Terugschrijven is niet standaard ingeschakeld in [!DNL Assets] . Zie hoe te [&#x200B; meta-gegevensschrijver &#x200B;](#enable-xmp-writeback) toelaten. MSM voor digitale elementen werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
 
 ### Terugschrijven naar XMP inschakelen {#enable-xmp-writeback}
 
@@ -106,7 +106,7 @@ Voer de volgende stappen uit als u Launchers wilt gebruiken:
 1. Als beheerder opent u **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]** .
 1. Selecteer de [!UICONTROL Launcher] waarvoor de **[!UICONTROL Workflow]** kolom **[!UICONTROL DAM MetaData Writeback]** wordt weergegeven. Klik op **[!UICONTROL Properties]** op de werkbalk.
 
-   ![ Uitgezochte DAM de lancerer van de meta-gegevensbrief om zijn eigenschappen te wijzigen en het te activeren ](assets/launcher-properties-metadata-writeback1.png)
+   ![&#x200B; Uitgezochte DAM de lancerer van de meta-gegevensbrief om zijn eigenschappen te wijzigen en het te activeren &#x200B;](assets/launcher-properties-metadata-writeback1.png)
 
 1. Selecteer **[!UICONTROL Activate]** op de **[!UICONTROL Launcher Properties]** -pagina. Klik op **[!UICONTROL Save & Close]**.
 

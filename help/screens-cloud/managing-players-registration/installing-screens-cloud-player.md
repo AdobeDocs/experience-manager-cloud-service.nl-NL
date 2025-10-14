@@ -24,7 +24,7 @@ Dit document helpt u te begrijpen hoe u de speler kunt instellen voordat u de sp
 
 ## Stappen om de speler in te stellen op de cloudmodus {#cloud-mode-setup}
 
-Nadat u de recentste speler van [ Downloads van de Speler van AEM Screens ](https://download.macromedia.com/screens/) hebt gedownload, bent u nu klaar om uw speler aan de wijze van de Wolk bij te werken.
+Nadat u de recentste speler van [&#x200B; Downloads van de Speler van AEM Screens &#x200B;](https://download.macromedia.com/screens/) hebt gedownload, bent u nu klaar om uw speler aan de wijze van de Wolk bij te werken.
 
 Voer de onderstaande stappen uit om uw speler bij te werken:
 
@@ -35,13 +35,13 @@ Voer de onderstaande stappen uit om uw speler bij te werken:
 
 1. Klik het **lusje van de Configuratie** en klik **aan de knoop van de Fabriek** onder **het Terugstellen** optie.
 
-   ![ aan de knoop van de Fabriek onder de optie van het Terugstellen ](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![&#x200B; aan de knoop van de Fabriek onder de optie van het Terugstellen &#x200B;](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Klik **bevestigen** om uw speler terug te stellen.
 
 1. Opnieuw van het **lusje van de Configuratie** en klik **Verandering in de knoop van de Wijze van de Wolk** onder **Wissel Runmode** optie.
 
-   ![ Verandering in de knoop van de Wijze van de Wolk onder Runmode van de Wisselen optie ](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![&#x200B; Verandering in de knoop van de Wijze van de Wolk onder Runmode van de Wisselen optie &#x200B;](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Klik **bevestigen** dat herinneringen wanneer het schakelen aan wolkenwijze unregisters de speler.
 
@@ -92,4 +92,4 @@ Hieronder worden enkele beperkingen weergegeven voor elementaire afspeelcontrole
 
 ## Volgende functies {#whats-next}
 
-Nu u de speler hebt geïnstalleerd en geconfigureerd in de cloud-modus, gaat u door met uw as a Cloud Service Screens-reis. Zie [ Registrerend Players in Screens as a Cloud Service ](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van de Dienstverlener van Screens.
+Nu u de speler hebt geïnstalleerd en geconfigureerd in de cloud-modus, gaat u door met uw as a Cloud Service Screens-reis. Zie [&#x200B; Registrerend Players in Screens as a Cloud Service &#x200B;](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van de Dienstverlener van Screens.

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Zijn alle middelen in de Experience Manager Assets as a Cloud Service-opslagplaats beschikbaar voor zoeken en leveren met behulp van Dynamic Media met OpenAPI-mogelijkheden? {#assets-available-for-search}
 
-Nr, slechts [ goedgekeurde en recentste versie van de activa ](/help/assets/approve-assets.md) zijn beschikbaar voor onderzoek en levering gebruikend Dynamische Media met mogelijkheden OpenAPI, die merkconsistentie over alle kanalen en toepassingen verzekeren.
+Nr, slechts [&#x200B; goedgekeurde en recentste versie van de activa &#x200B;](/help/assets/approve-assets.md) zijn beschikbaar voor onderzoek en levering gebruikend Dynamische Media met mogelijkheden OpenAPI, die merkconsistentie over alle kanalen en toepassingen verzekeren.
 
 
 ## Hoe kunnen beheerders nieuwe en bestaande activa merken die aan een omslag zoals goedgekeurd worden toegevoegd? {#add-assets-to-folder-as-approved}
@@ -31,27 +31,27 @@ Experience Manager Assets maakt een onderscheid tussen de goedgekeurde status me
 
 **Admin mening**
 
-![ Goedgekeurde activa in Admin mening ](/help/assets/assets/approved-assets-thumbs-up.png)
+![&#x200B; Goedgekeurde activa in Admin mening &#x200B;](/help/assets/assets/approved-assets-thumbs-up.png)
 
 **de mening van Assets**
 
-![ Goedgekeurde activa in de mening van Assets ](/help/assets/assets/approved-assets-thumbs-up-assets-view.png)
+![&#x200B; Goedgekeurde activa in de mening van Assets &#x200B;](/help/assets/assets/approved-assets-thumbs-up-assets-view.png)
 
 
-Om alle activa in een omslag goed te keuren, zie instructies op [ hoe te in bulk goedkeuren activa in een omslag ](/help/assets/approve-assets.md#bulk-approve-assets). Er is ook een video die het gehele proces weergeeft.
+Om alle activa in een omslag goed te keuren, zie instructies op [&#x200B; hoe te in bulk goedkeuren activa in een omslag &#x200B;](/help/assets/approve-assets.md#bulk-approve-assets). Er is ook een video die het gehele proces weergeeft.
 
-Nadat u een map hebt ingesteld voor bulkgoedkeuring, worden alle nieuwe middelen die aan de map worden toegevoegd, automatisch goedgekeurd. Alle bestaande activa worden na het opwerken van activa goedgekeurd. Zie [ het Opverwerken van digitale activa ](/help/assets/reprocessing.md) voor instructies op hoe te om activa opnieuw te verwerken. Als u kopieert of niet goedgekeurde activa van een andere omslag beweegt, moet u [ de activa ](/help/assets/reprocessing.md) opnieuw verwerken.
+Nadat u een map hebt ingesteld voor bulkgoedkeuring, worden alle nieuwe middelen die aan de map worden toegevoegd, automatisch goedgekeurd. Alle bestaande activa worden na het opwerken van activa goedgekeurd. Zie [&#x200B; het Opverwerken van digitale activa &#x200B;](/help/assets/reprocessing.md) voor instructies op hoe te om activa opnieuw te verwerken. Als u kopieert of niet goedgekeurde activa van een andere omslag beweegt, moet u [&#x200B; de activa &#x200B;](/help/assets/reprocessing.md) opnieuw verwerken.
 
-Het element wordt gemarkeerd als `Rejected` als de beheerder `Rejected` of `Changes requested` waarden opgeeft. Experience Manager Assets onderscheidt de Geweigerde status gebruikend ![ Verwerp Assets ](/help/assets/assets/do-not-localize/reject-assets.svg) beschikbaar op de activakaart in Admin mening.
+Het element wordt gemarkeerd als `Rejected` als de beheerder `Rejected` of `Changes requested` waarden opgeeft. Experience Manager Assets onderscheidt de Geweigerde status gebruikend ![&#x200B; Verwerp Assets &#x200B;](/help/assets/assets/do-not-localize/reject-assets.svg) beschikbaar op de activakaart in Admin mening.
 
 Op dezelfde manier maakt Experience Manager Assets een onderscheid tussen de status Afgewezen in de Assets-weergave en de volgende status Afgewezen op de asset card:
 
-![ Geweigerde activa in de mening van Assets ](/help/assets/assets/rejected-assets-admin-view.png)
+![&#x200B; Geweigerde activa in de mening van Assets &#x200B;](/help/assets/assets/rejected-assets-admin-view.png)
 
 
 ## Hoe kunt u gebruikers- of groepsidentiteitskaart van Adobe IMS (Adobe Identity Management Services) gebruiken om de rollen op activa in de mening van Admin van Experience Manager te plaatsen, voor het beveiligen van levering en onderzoekservaring? {#set-roles-secure-delivery-search}
 
-Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [ gebruikers IMS van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=nl-NL).
+Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [&#x200B; gebruikers IMS van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=nl-NL).
 
 
 ## Kunt u meerdere elementen tegelijk in een map goedkeuren? {#approve-multiple-assets-in-folder}
@@ -80,12 +80,12 @@ Met het beheer van centrale bedrijfsmiddelen in Experience Manager kunnen de DAM
 
 Eindgebruikers die URL&#39;s van levering zoeken of gebruiken, kunnen toegang krijgen tot beperkte elementen nadat ze het autorisatieproces hebben doorstaan.
 
-Voor meer informatie, zie [ Toegang tot activa in Experience Manager ](restrict-assets-delivery.md#authoring) beperken.
+Voor meer informatie, zie [&#x200B; Toegang tot activa in Experience Manager &#x200B;](restrict-assets-delivery.md#authoring) beperken.
 
 
 ## Hoe kunt u toestemmingen krijgen om de goedkeuringsstatus van een activa uit te geven? {#permissions-edit-approval-status}
 
-Als gebruiker DAM, zou u geen toestemmingen kunnen hebben om [ activa ](approve-assets.md#approve-assets) goed te keuren. Als u machtigingen wilt verkrijgen om de goedkeuringsstatus van een element te bewerken, kunnen de beheerders de standaardinstelling of elk ander metagegevensschema dat op de elementenmap wordt toegepast, bewerken en machtigingen voor het **[!UICONTROL Review Status]** -veld opgeven. Voor meer informatie, zie [ hoe te om uit te schakelen uitgeeft voor het gebied van de Status van het Overzicht ](approve-assets.md#configuration).
+Als gebruiker DAM, zou u geen toestemmingen kunnen hebben om [&#x200B; activa &#x200B;](approve-assets.md#approve-assets) goed te keuren. Als u machtigingen wilt verkrijgen om de goedkeuringsstatus van een element te bewerken, kunnen de beheerders de standaardinstelling of elk ander metagegevensschema dat op de elementenmap wordt toegepast, bewerken en machtigingen voor het **[!UICONTROL Review Status]** -veld opgeven. Voor meer informatie, zie [&#x200B; hoe te om uit te schakelen uitgeeft voor het gebied van de Status van het Overzicht &#x200B;](approve-assets.md#configuration).
 
 
 ## Wat is de ondersteunde bestandsgrootte voor video&#39;s? {#supported-file-formats-videos}
@@ -103,10 +103,10 @@ Hier volgen enkele belangrijke verschillen tussen Dynamic Media met OpenAPI-moge
 
 | Dynamische media met OpenAPI-mogelijkheden | Dynamische media |
 |---|---|
-| [ Beschikbaar slechts met Assets as a Cloud Service ](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Ook beschikbaar bij On-premise of Adobe Managed Services met extra configuratie en leveringsstappen. |
-| [ rijke reeks gesteunde beeldbepalingen, zoals breedte, hoogte, roteert, omkeert, kwaliteit, en formaat ](/help/assets/deliver-assets-apis.md) | Rijke set met beschikbare afbeeldingsopties |
-| [ Beperkte die activalevering op gebruikers, rollen, datum, en tijd wordt gebaseerd ](/help/assets/restrict-assets-delivery.md) | Assets gepubliceerd naar Dynamic Media is toegankelijk voor alle gebruikers |
-| De meeste ontwikkelaars zijn bekend met OpenAPI-specificaties. De rekbaarheid van AEM Assets wordt werkelijk eenvoudig door [ Micro-Frontend de Selector van Activa te gebruiken ](/help/assets/overview-asset-selector.md). | API&#39;s die zijn gebaseerd op SOAP en die een barrière vormen voor het ontwikkelen van integratieaanpassingen. |
+| [&#x200B; Beschikbaar slechts met Assets as a Cloud Service &#x200B;](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Ook beschikbaar bij On-premise of Adobe Managed Services met extra configuratie en leveringsstappen. |
+| [&#x200B; rijke reeks gesteunde beeldbepalingen, zoals breedte, hoogte, roteert, omkeert, kwaliteit, en formaat &#x200B;](/help/assets/deliver-assets-apis.md) | Rijke set met beschikbare afbeeldingsopties |
+| [&#x200B; Beperkte die activalevering op gebruikers, rollen, datum, en tijd wordt gebaseerd &#x200B;](/help/assets/restrict-assets-delivery.md) | Assets gepubliceerd naar Dynamic Media is toegankelijk voor alle gebruikers |
+| De meeste ontwikkelaars zijn bekend met OpenAPI-specificaties. De rekbaarheid van AEM Assets wordt werkelijk eenvoudig door [&#x200B; Micro-Frontend de Selector van Activa te gebruiken &#x200B;](/help/assets/overview-asset-selector.md). | API&#39;s die zijn gebaseerd op SOAP en die een barrière vormen voor het ontwikkelen van integratieaanpassingen. |
 | Wijzigingen die worden aangebracht in goedgekeurde elementen in DAM, inclusief versies-updates en wijzigingen in metagegevens, worden automatisch doorgevoerd in de URL&#39;s van de levering. Met een korte tijd-aan-Levende (TTL) waarde van 10 minuten die voor Dynamische Media met mogelijkheden OpenAPI via CDN wordt gevormd, worden de updates zichtbaar over alle creatie en gepubliceerde interfaces binnen 10 minuten. | Aanbevolen CDN TTL van 10 uur. U kunt de waarde van TTL met de actie van de geheim voorgeheugenontbinding met voeten treden. |
 | Alleen goedgekeurde bedrijfsmiddelen zijn beschikbaar voor de levering van bedrijfsmiddelen aan downstreamtoepassingen, waardoor in digitale ervaringen goedgekeurde bedrijfsmiddelen onder een merknaam kunnen worden geplaatst. | Updates van een via Dynamic Media gepubliceerd element worden automatisch gepubliceerd zonder goedkeuringswerkstroom. Dit garandeert niet dat middelen die door een merk zijn goedgekeurd, in digitale ervaringen worden opgenomen. |
 | Gebruiksrapporten op basis van het aantal geleverde elementen. Deze functie is binnenkort beschikbaar. | Gebruiksrapporten zijn niet beschikbaar. Deze functie is binnenkort beschikbaar. |
@@ -126,16 +126,16 @@ De onderstaande tabel geeft een overzicht van de belangrijkste verschillen tusse
 | Elementbinaire bestanden worden niet gekopieerd wanneer middelen op een externe DAM-implementatie beschikbaar zijn in een AEM Sites-instantie. | De binaire middelen van activa worden gekopieerd wanneer de activa op een verre plaatsing DAM op een instantie van AEM Sites beschikbaar zijn. |
 | Ondersteuning voor alle typen asset-indelingen die door AEM Assets worden ondersteund. | Geen ondersteuning voor video&#39;s. |
 | U kunt Dynamische Media op de lokale plaatsing van Plaatsen gebruiken terwijl het halen van activa van verre plaatsing DAM. | De dynamische Media op lokale plaatsing van Plaatsen is read-only. |
-| Geen beperkingen op het aantal AEM Sites-instanties dat is verbonden met een externe DAM-implementatie. U kunt [ de toegang tot activa op de instantie van Plaatsen beperken door rollen ](/help/assets/restrict-assets-delivery.md) voor goedgekeurde activa op verre DAM te vormen. | Beperking om maximaal 4 AEM Sites-instanties te verbinden met de externe DAM-implementatie. Voor een hoger aantal is aanvullende tests vereist. |
+| Geen beperkingen op het aantal AEM Sites-instanties dat is verbonden met een externe DAM-implementatie. U kunt [&#x200B; de toegang tot activa op de instantie van Plaatsen beperken door rollen &#x200B;](/help/assets/restrict-assets-delivery.md) voor goedgekeurde activa op verre DAM te vormen. | Beperking om maximaal 4 AEM Sites-instanties te verbinden met de externe DAM-implementatie. Voor een hoger aantal is aanvullende tests vereist. |
 | Zowel Asset Selector als Dynamic Media met OpenAPI-mogelijkheden zijn uitbreidbaar om aangepaste integratie mogelijk te maken. | Connected Assets API&#39;s kunnen niet worden uitgebreid om aangepaste integratie toe te staan. |
 | Wijzigingen die worden aangebracht in goedgekeurde middelen die beschikbaar zijn op de externe DAM-implementatie, inclusief updates van versies en wijzigingen in metagegevens, worden automatisch weerspiegeld in de Sites-instantie binnen een korte tijd-voor-live (TTL)-waarde van 10 minuten. | Updates van middelen op externe DAM-implementatie worden automatisch afgehandeld via levenscyclusgebeurtenissen, maar nemen veel meer tijd in beslag dan bij Dynamic Media met OpenAPI-mogelijkheden. |
 | Metagegevens van middelen op externe DAM zijn ook beschikbaar in AEM Sites-instantie. | Metagegevens van middelen op externe DAM zijn niet beschikbaar op AEM Sites-instanties. |
 
 ## Sommige bepalingen zijn gemarkeerd als Beperkte Beschikbaarheid. Hoe kan ik ze gaan gebruiken? {#use-limited-availability-modifiers}
 
-Om het productiegebruik van [ bepalingen in Beperkte Beschikbaarheid ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) op uw rekening toe te laten:
+Om het productiegebruik van [&#x200B; bepalingen in Beperkte Beschikbaarheid &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) op uw rekening toe te laten:
 
-1. [ creeer een geval van de Steun van Adobe gebruikend Admin Console ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
+1. [&#x200B; creeer een geval van de Steun van Adobe gebruikend Admin Console &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 
 1. Vermeld de volgende details in de Adobe Support-zaak:
 
@@ -147,4 +147,4 @@ Om het productiegebruik van [ bepalingen in Beperkte Beschikbaarheid ](https://d
 ## Hoe kan ik experimentele modifiers testen? {#modifiers-not-generally-available}
 
 U kunt elke modifier testen, die niet algemeen beschikbaar is via experimentele API&#39;s. Bijvoorbeeld &lt;/adobe/Experimentele/geavanceerde/odifiers-expired-YYYMMDD/assets>
-Klik hier om meer op te kennen hoe te om [ experimentele APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) en [ volledige lijst van bepalingen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) te gebruiken.
+Klik hier om meer op te kennen hoe te om [&#x200B; experimentele APIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) en [&#x200B; volledige lijst van bepalingen &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/) te gebruiken.

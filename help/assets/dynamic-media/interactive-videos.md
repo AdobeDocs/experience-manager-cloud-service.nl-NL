@@ -18,17 +18,17 @@ U kunt eenvoudig interactieve video&#39;s maken. U kunt deze video&#39;s ook wel
 
 Wanneer de video eindigt, wordt een visueel overzicht van al dienstenaanbod getoond om een vraag aan actie te drijven. Klanten hebben nog een kans om het gewenste item te selecteren. Handelbare en specifieke ervaringen zoals deze verhogen de betrokkenheid van klanten en conversies.
 
-Zie ook [ Interactieve Beelden ](/help/assets/dynamic-media/interactive-images.md).
+Zie ook [&#x200B; Interactieve Beelden &#x200B;](/help/assets/dynamic-media/interactive-images.md).
 
 ## Interactieve video in actie {#interactive-video-in-action}
 
-Om een interactieve, shoppable video in actie te zien, selecteer [ Levende Demo&#39;s ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scrol aan de **[!UICONTROL Shoppable Media]** rubriek op de pagina, dan selecteer de shoppable video om met playback te beginnen.
+Om een interactieve, shoppable video in actie te zien, selecteer [&#x200B; Levende Demo&#39;s &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scrol aan de **[!UICONTROL Shoppable Media]** rubriek op de pagina, dan selecteer de shoppable video om met playback te beginnen.
 
 * Terwijl producten tijdens het afspelen in de video worden gebruikt, wordt het identieke product aan de rechterkant weergegeven als een miniatuurafbeelding.
 
 * Als u de video wilt pauzeren en de Snelle weergave van het product wilt openen, selecteert u de miniatuur. Selecteer bijvoorbeeld de miniatuurafbeelding KitchenAid in de video om een draaiweergave van 360° van de mixer te ervaren of zoom in om details van de mixer te bekijken.
 
-Zie ook [ Interactieve Video van het Gebruik met Dynamische Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=nl-NL#dynamic-media)
+Zie ook [&#x200B; Interactieve Video van het Gebruik met Dynamische Media &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=nl-NL#dynamic-media)
 
 <!-- 
 
@@ -48,36 +48,36 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### Controleren hoe interactieve video&#39;s worden gemaakt {#watch-how-interactive-videos-are-created}
 
-Bekijk een analyse op [ hoe de interactieve video&#39;s ](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minuten en 30 seconden) worden gecreeerd.
+Bekijk een analyse op [&#x200B; hoe de interactieve video&#39;s &#x200B;](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo) (7 minuten en 30 seconden) worden gecreeerd.
 (Hoewel de videoanalyse met Assets op bestelling wordt gemerkt, zijn de principes en de stappen nog van toepassing op Interactieve Video in Adobe Experience Manager Assets.)
 
 ### Adobe Customer Success Webinar {#adobe-customer-success-webinar}
 
-Het [ gebruik Interactieve Video, Verbinding die, en YouTube delen deelt in Experience Manager Assets ](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) webinar leert u hoe te om interactieve video en andere eigenschappen te gebruiken om omzetting gedreven gebeurtenissen in uw video marketing inhoud te binden.
+Het [&#x200B; gebruik Interactieve Video, Verbinding die, en YouTube delen deelt in Experience Manager Assets &#x200B;](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) webinar leert u hoe te om interactieve video en andere eigenschappen te gebruiken om omzetting gedreven gebeurtenissen in uw video marketing inhoud te binden.
 
 ## Snel starten: Interactieve video&#39;s {#quick-start-interactive-videos}
 
 De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met interactieve video&#39;s in Dynamic Media.
 
-Zoek de **rubriek van het Voorbeeld** binnen sommige van de Snelle taken van het Begin. Het bevat een korte zelfstudie die op deze [ beginnende demo Web-pagina gebaseerd is die *geen* interactiviteit heeft nog aan het ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL) wordt toegevoegd.
+Zoek de **rubriek van het Voorbeeld** binnen sommige van de Snelle taken van het Begin. Het bevat een korte zelfstudie die op deze [&#x200B; beginnende demo Web-pagina gebaseerd is die *geen* interactiviteit heeft nog aan het &#x200B;](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL) wordt toegevoegd.
 
 Met behulp van de **voorbeelden** kunt u de stappen illustreren voor het integreren van interactieve video&#39;s op uw eigen website.
 
-Wanneer u de leerprogramma&#39;s in de laatste sectie van het Voorbeeld beëindigt, [ verschijnt uw definitieve demo Web-pagina met volledig geïntegreerde interactieve video deze manier ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=nl-NL).
+Wanneer u de leerprogramma&#39;s in de laatste sectie van het Voorbeeld beëindigt, [&#x200B; verschijnt uw definitieve demo Web-pagina met volledig geïntegreerde interactieve video deze manier &#x200B;](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=nl-NL).
 
 Interactieve videostappen:
 
-1. **(Facultatief) identificeer variabelen van de Snelle mening** - begin door dynamische variabelen te identificeren die door uw bestaande implementatie van de Snelle weergave worden gebruikt. U gebruikt de variabelen om productminiaturen toe te wijzen aan hun overeenkomstige productQuickView wanneer u uw interactieve video creeert. Zie [ (Optioneel) Quickview-variabelen identificeren ](#optional-identifying-quickview-variables) .
+1. **(Facultatief) identificeer variabelen van de Snelle mening** - begin door dynamische variabelen te identificeren die door uw bestaande implementatie van de Snelle weergave worden gebruikt. U gebruikt de variabelen om productminiaturen toe te wijzen aan hun overeenkomstige productQuickView wanneer u uw interactieve video creeert. Zie [&#x200B; (Optioneel) Quickview-variabelen identificeren &#x200B;](#optional-identifying-quickview-variables) .
    **deze stap wordt slechts vereist als alle volgende waar zijn:**
    * U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen te teweegbrengen.
    * Uw implementatie van Experience Manager gebruikt *niet* een eCommerce integratiekader voor het trekken van productgegevens in Experience Manager van om het even welke eCommerce oplossing zoals IBM® WebSphere® Commerce, Elastic Path, de Hybris van SAP, of Intershop.
 
 1. **(Optioneel) Maak een voorinstelling voor een interactieve videoviewer** - Pas de weergave en het gedrag aan van de verschillende componenten waaruit de speler bestaat, zoals de videoscrubber en de interactieve miniaturen.
 Het is niet nodig een eigen voorinstelling voor een interactieve videoviewer te maken als u de voorinstellingen voor de uit-de-box Interactieve videoviewer wilt gebruiken `Shoppable_Video_Light` of `Shoppable_Video_Dark` .
-Zie [ een Kijker creëren vooraf ingesteld ](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) (facultatief) en [ Speciale overwegingen voor het creëren van een Interactieve Kijker vooraf ingesteld ](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
+Zie [&#x200B; een Kijker creëren vooraf ingesteld &#x200B;](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) (facultatief) en [&#x200B; Speciale overwegingen voor het creëren van een Interactieve Kijker vooraf ingesteld &#x200B;](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
 1. **upload een video en zijn bijbehorende beeldactiva** - upload een video en bijbehorende beelden die u interactief wilt maken.
-Zie [ een video en zijn bijbehorende duimnagelactiva ](#uploading-a-video-and-its-associated-thumbnail-assets) uploaden.
+Zie [&#x200B; een video en zijn bijbehorende duimnagelactiva &#x200B;](#uploading-a-video-and-its-associated-thumbnail-assets) uploaden.
 
    >[!NOTE]
    >
@@ -85,13 +85,13 @@ Zie [ een video en zijn bijbehorende duimnagelactiva ](#uploading-a-video-and-it
 
 1. **voegt interactiviteit aan uw video** toe - voeg één of meerdere tijdsegmenten aan de video toe. Koppel vervolgens afbeeldingsminiaturen aan die tijdsegmenten. Wijs elke afbeeldingsminiatuur toe aan een handeling zoals een hyperlink, een Snelle weergave of een Ervingspatroon.
 (De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.)
-Voltooi de bewerking door de interactieve video-elementen te publiceren. Bij het publiceren wordt de insluitcode of URL gemaakt die u uiteindelijk kopieert en toepast op de bestemmingspagina van uw website. Zie [ interactiviteit aan uw video ](#adding-interactivity-to-your-video) toevoegen.
-Zie [ publiceren Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Voltooi de bewerking door de interactieve video-elementen te publiceren. Bij het publiceren wordt de insluitcode of URL gemaakt die u uiteindelijk kopieert en toepast op de bestemmingspagina van uw website. Zie [&#x200B; interactiviteit aan uw video &#x200B;](#adding-interactivity-to-your-video) toevoegen.
+Zie [&#x200B; publiceren Assets &#x200B;](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **voeg een interactieve video aan uw website of aan uw website in Experience Manager** toe - als u Experience Manager Sites of eCommerce, of allebei gebruikt, voeg de interactieve video aan een Web-pagina in Experience Manager toe. Sleep de component Interactieve media naar de pagina. Zie [ Dynamische Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.
-Gebruik de insluitcode of URL om uw interactieve video te integreren met uw ervaringen op de website. Zie [ een interactieve video met uw website ](#integrating-an-interactive-video-with-your-website) integreren.
-Als u een externe WCM (Web Content Manager) gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [ een interactieve video met een bestaande QuickView ](#integrating-an-interactive-video-with-an-existing-quickview) integreren.
-   [ voeg Dynamische Media Assets aan Pagina&#39;s toe ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **voeg een interactieve video aan uw website of aan uw website in Experience Manager** toe - als u Experience Manager Sites of eCommerce, of allebei gebruikt, voeg de interactieve video aan een Web-pagina in Experience Manager toe. Sleep de component Interactieve media naar de pagina. Zie [&#x200B; Dynamische Media Assets aan Pagina&#39;s &#x200B;](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.
+Gebruik de insluitcode of URL om uw interactieve video te integreren met uw ervaringen op de website. Zie [&#x200B; een interactieve video met uw website &#x200B;](#integrating-an-interactive-video-with-your-website) integreren.
+Als u een externe WCM (Web Content Manager) gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [&#x200B; een interactieve video met een bestaande QuickView &#x200B;](#integrating-an-interactive-video-with-an-existing-quickview) integreren.
+   [&#x200B; voeg Dynamische Media Assets aan Pagina&#39;s toe &#x200B;](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## (Optioneel) Quickview-variabelen identificeren {#optional-identifying-quickview-variables}
 
@@ -147,10 +147,10 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de bijbehorende mi
     <td><p>Enige SKU, die in het vraagkoord wordt gevonden.</p> </td>
     <td><p>De opgenomen URL's van de Snelle weergave bevatten het volgende:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>Het enige variabele deel in de URL is de waarde van de parameter van de <code>productId=</code> querytekenreeks en het is duidelijk een SKU-waarde. De miniaturen hebben daarom alleen SKU-velden nodig die zijn gevuld met waarden zoals <strong><code>866558</code></strong> , <strong><code>1196184</code></strong> , <strong><code>1081492</code></strong> en <strong><code>1898294</code></strong> .</p> </td>
   </tr>
   <tr>
@@ -166,9 +166,9 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de bijbehorende mi
     <td><p>SKU en categorie-id in de queryreeks.</p> </td>
     <td><p>De opgenomen URL's van de Snelle weergave bevatten het volgende:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>In dit geval bevat de URL twee verschillende onderdelen. De SKU wordt opgeslagen in de parameter <code>prodId</code> en de categorie-id wordt opgeslagen in de parameter <code>category=</code> .</p> <p>Daarom zijn de miniatuurdefinities paren. Dit is een SKU-waarde en een extra variabele met de naam <code>categoryId</code> . De resulterende paren zijn als volgt:</p>
     <ul>
       <li>SKU is <code>305466</code> en <code>categoryId</code> is <code>1100004</code></li>
@@ -183,7 +183,7 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de bijbehorende mi
 
 Wanneer de bovenstaande benadering wordt toegepast op de website van het Voorbeeld, hebt u een Web-pagina met verscheidene productduimnagels, elk met een &quot;ZIE MEER&quot;knoop:
 
-[ https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL)
+[&#x200B; https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL)
 
 Nadat u alle product Snelle meningen activeert beschikbaar op de pagina, krijgt u de volgende lijst van verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
 
@@ -227,7 +227,7 @@ U kunt deze taak overslaan en verdergaan naar de volgende taak als u een van de 
 
 Wanneer een miniatuur is geselecteerd in de ontwerpomgeving, wordt een voorvertoning van het dialoogvenster Snelle weergave weergegeven.
 
-![ chlimage_1-21 ](assets/chlimage_1-127.png)
+![&#x200B; chlimage_1-21 &#x200B;](assets/chlimage_1-127.png)
 
 U kunt desgewenst uw eigen aangepaste voorinstelling voor een interactieve videoviewer maken. U kunt onder andere de opmaak bepalen van de videospeler, de interactieve miniaturen en de weergave van het miniatuurraster die aan het einde van de video wordt weergegeven.
 
@@ -235,24 +235,24 @@ Een voorinstelling voor een interactieve videoviewer geeft de video en alle tijd
 
 Nadat u de viewervoorinstelling hebt opgeslagen, wordt de status ervan automatisch ingesteld op **On** (Ingeschakeld) op de pagina Viewervoorinstellingen. Deze status betekent dat deze zichtbaar is in de component Dynamische media en wanneer u een voorvertoning van een video weergeeft. Zorg ervoor dat u de nieuwe viewervoorinstelling ook handmatig publiceert.
 
-Zie [ een Vooraf ingestelde Kijker ](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) creëren om uw eigen Interactieve Video vooraf ingestelde kijker tot stand te brengen.
+Zie [&#x200B; een Vooraf ingestelde Kijker &#x200B;](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) creëren om uw eigen Interactieve Video vooraf ingestelde kijker tot stand te brengen.
 
 ## Een video en de bijbehorende miniatuurelementen uploaden {#uploading-a-video-and-its-associated-thumbnail-assets}
 
-Als u reeds uw video en duimnagelactiva hebt geupload, ga aan [ te werk voeg interactiviteit aan uw video ](#adding-interactivity-to-your-video) toe.
+Als u reeds uw video en duimnagelactiva hebt geupload, ga aan [&#x200B; te werk voeg interactiviteit aan uw video &#x200B;](#adding-interactivity-to-your-video) toe.
 
 >[!NOTE]
 >
 >De MXF-video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in dynamische media.
 
-Als u de verkeerde video&#39;s of beelden uploadde, of u geuploade video&#39;s of beelden wilt schrappen die u niet meer nodig hebt, zie [ Assets ](/help/assets/manage-digital-assets.md#delete-assets) schrappen.
+Als u de verkeerde video&#39;s of beelden uploadde, of u geuploade video&#39;s of beelden wilt schrappen die u niet meer nodig hebt, zie [&#x200B; Assets &#x200B;](/help/assets/manage-digital-assets.md#delete-assets) schrappen.
 
 Een video en de bijbehorende miniatuurelementen uploaden:
 
 1. Upload de video en de bijbehorende miniatuurbestanden naar de gewenste map of mappen.
 
-   Zie [ activa ](/help/assets/manage-digital-assets.md) uploaden.
-Zie [ activa uploaden gebruikend de baan die van FTP ](/help/assets/manage-digital-assets.md) plannen.
+   Zie [&#x200B; activa &#x200B;](/help/assets/manage-digital-assets.md) uploaden.
+Zie [&#x200B; activa uploaden gebruikend de baan die van FTP &#x200B;](/help/assets/manage-digital-assets.md) plannen.
 
    Voeg nu interactiviteit toe aan uw video.
 
@@ -262,7 +262,7 @@ U voegt tijdlijnsegmenten aan een video toe met de lokale visuele editor op de p
 
 Nadat u tijdlijnsegmenten hebt toegevoegd, voegt u miniatuurafbeeldingen toe binnen elk segment. Voor elke miniatuur die u toevoegt, past u er een actie op toe. U kunt bijvoorbeeld een Snelle weergave toepassen op de miniatuur, u kunt er een hyperlink aan toewijzen of u kunt een Experience-fragment toevoegen.
 
-Zie [ Fragmenten van de Ervaring ](/help/sites-cloud/authoring/fragments/content-fragments.md).
+Zie [&#x200B; Fragmenten van de Ervaring &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -299,7 +299,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
 1. (Optioneel) Sleep de balk aan de linkerkant van de **[!UICONTROL Timeline Scale Slider]** om in te zoomen of naar rechts om uit te zoomen. Met deze actie kunt u bepalen hoeveel details u ziet van de segmenten die u hebt toegevoegd.
 
-   ![ chlimage_1-22 ](assets/chlimage_1-128.png)
+   ![&#x200B; chlimage_1-22 &#x200B;](assets/chlimage_1-128.png)
 
    Afhankelijk van de lengte van uw video, blijft de Duur van het Segment aan de volgende waarden in gebreke:
 
@@ -336,19 +336,19 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    Ter illustratie gebruiken de volgende drie schermafbeeldingen dezelfde video. U ziet dat de breedte van elk segment afhankelijk is van de instelling voor de tijdlijnschaal.
 
-   ![ chlimage_1-23 ](assets/chlimage_1-129.png)
+   ![&#x200B; chlimage_1-23 &#x200B;](assets/chlimage_1-129.png)
 
    Schermafbeelding A
 
    Screenshot A hierboven toont u de standaardweergave van een 29-secondenproductvideo. De tijdlijnschaal wordt standaard ingesteld op 5 seconden.
 
-   ![ chlimage_1-130 ](assets/chlimage_1-130.png)
+   ![&#x200B; chlimage_1-130 &#x200B;](assets/chlimage_1-130.png)
 
    Schermafbeelding B
 
    In bovenstaande afbeelding B werd de schuifregelaar Tijdlijnschaal van de standaardduur van 5 seconden naar 3 seconden gesleept. De afzonderlijke tijdstempels voor de schaal van de tijdlijn zijn nu allemaal ingesteld op intervallen van 3 seconden.
 
-   ![ chlimage_1-25 ](assets/chlimage_1-131.png)
+   ![&#x200B; chlimage_1-25 &#x200B;](assets/chlimage_1-131.png)
 
    Screenshot C
 
@@ -366,7 +366,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
       * Als u de video direct naar het einde van dat segment wilt zoeken, selecteert u het navolgende blauwe ovaal.
       * Selecteer het gehele segment om het afspelen van video terug te zetten naar het begin van dat segment.
 
-   ![ chlimage_1-26 ](assets/chlimage_1-132.png)
+   ![&#x200B; chlimage_1-26 &#x200B;](assets/chlimage_1-132.png)
 
    Het einde van een tijdlijnsegment verplaatsen
 
@@ -399,7 +399,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
       </tbody>
     </table>
 
-   ![ plukker van Activa ](assets/chlimage_1-133.png)
+   ![&#x200B; plukker van Activa &#x200B;](assets/chlimage_1-133.png)
 
    Als u een afbeelding selecteert in het deelvenster met middelenkiezers, wordt deze aan het geselecteerde tijdlijnsegment toegevoegd.
 
@@ -452,7 +452,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
     </tbody> 
    </table>
 
-   ![ ervarragment_interactivevideos ](assets/experiencefragment_interactivevideos.png)
+   ![&#x200B; ervarragment_interactivevideos &#x200B;](assets/experiencefragment_interactivevideos.png)
 
    Er wordt een nieuw tekstlabel toegevoegd aan de miniatuurafbeelding.
 
@@ -469,7 +469,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
      Selecteer **[!UICONTROL Merge Segment]** op de werkbalk.
 
-   ![ chlimage_1-134 ](assets/chlimage_1-134.png)
+   ![&#x200B; chlimage_1-134 &#x200B;](assets/chlimage_1-134.png)
 
    Twee geselecteerde segmenten van vijf seconden samenvoegen tot één segment van tien seconden.
 
@@ -479,7 +479,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
      Als u twee of meer segmenten selecteert, wordt de functie **[!UICONTROL Split Segment]** uitgeschakeld.
 
-   ![ chlimage_1-135 ](assets/chlimage_1-135.png)
+   ![&#x200B; chlimage_1-135 &#x200B;](assets/chlimage_1-135.png)
 
    Een geselecteerd segment van tien seconden opsplitsen in twee segmenten van vijf seconden elk.
 
@@ -499,28 +499,28 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    Als u interactiviteit hebt toegevoegd met Snelle weergaven, gebruikt u alleen de insluitcode. Als u interactiviteit hebt toegevoegd met hypergekoppelde webpagina&#39;s, kunt u ook de gepubliceerde URL gebruiken. De op URL gebaseerde methode voor koppelen is echter niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar Experience Manager Sites-pagina&#39;s.
 
-   Zie [ activa ](publishing-dynamicmedia-assets.md) publiceren.
+   Zie [&#x200B; activa &#x200B;](publishing-dynamicmedia-assets.md) publiceren.
 
    >[!NOTE]
    >
    >Als u een schokkende video wilt publiceren met Snelle weergaven, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
 
-   Nadat u tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze toevoegen aan de openingspagina van uw bestaande website. Zie [ een interactieve video met uw website ](#integrating-an-interactive-video-with-your-website) integreren.
+   Nadat u tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze toevoegen aan de openingspagina van uw bestaande website. Zie [&#x200B; een interactieve video met uw website &#x200B;](#integrating-an-interactive-video-with-your-website) integreren.
 
 ## Interactieve video-elementen publiceren {#publishing-interactive-video-assets}
 
-Zie [ publiceren Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op hoe te om interactieve videoactiva te publiceren.
+Zie [&#x200B; publiceren Assets &#x200B;](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op hoe te om interactieve videoactiva te publiceren.
 
 ## Een interactieve video integreren met uw website {#integrating-an-interactive-video-with-your-website}
 
 Nadat u een video hebt geüpload, tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze nu toevoegen aan uw bestaande website.
 
-Als u een Experience Manager Sites-klant bent, kunt u de interactieve video toevoegen door de component Interactieve media naar de pagina te slepen. Zie [ Dynamische Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.
+Als u een Experience Manager Sites-klant bent, kunt u de interactieve video toevoegen door de component Interactieve media naar de pagina te slepen. Zie [&#x200B; Dynamische Media Assets aan Pagina&#39;s &#x200B;](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.
 
 Als u een zelfstandige Experience Manager Assets-klant bent, kunt u de interactieve video handmatig aan uw website toevoegen, zoals in deze sectie wordt beschreven.
 
 1. Kopieer de insluitcode of URL van de gepubliceerde interactieve video.
-Zie [ de Video of Kijker van het Beeld op een Web-pagina ](/help/assets/dynamic-media/embed-code.md) inbedden.
+Zie [&#x200B; de Video of Kijker van het Beeld op een Web-pagina &#x200B;](/help/assets/dynamic-media/embed-code.md) inbedden.
 Als u interactiviteit hebt toegevoegd met Snelle weergaven, gebruikt u alleen de insluitcode. Als u interactiviteit hebt toegevoegd met hypergekoppelde webpagina&#39;s, kunt u ook de gepubliceerde URL gebruiken. De op URL gebaseerde methode voor koppelen is echter niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar Experience Manager Sites-pagina&#39;s.
 
 1. Geef in de webpaginacode van het doel aan waar de statische video zich bevindt.
@@ -537,7 +537,7 @@ De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat 
 
 De demo-website als voorbeeld gebruiken:
 
-[ https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL)
+[&#x200B; https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=nl-NL)
 
 De insluitcode voor video is standaard:
 
@@ -568,7 +568,7 @@ De insluitcode voor video is standaard:
 
 Integratie is zo eenvoudig als het verwijderen van de video-insluitcode en het vervangen van deze code door de interactieve video-insluitcode uit Experience Manager. U kunt het resultaat op de volgende URL zien. Hoewel er een interactieve video op de pagina wordt weergegeven, is deze nog niet geïntegreerd met de bestaande Snelle weergaven:
 
-[ https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=nl-NL](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=nl-NL)
+[&#x200B; https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=nl-NL](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=nl-NL)
 
 ## Een interactieve video integreren met een bestaande QuickView {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -768,8 +768,8 @@ De volledige broncode ziet er als volgt uit:
 
 De laatste demo-website met de volledig geïntegreerde interactieve video ziet er als volgt uit:
 
-[ https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=nl-NL](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=nl-NL)
+[&#x200B; https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=nl-NL](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=nl-NL)
 
 ## Aangepaste pop-upvensters® maken met Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-Zie [ douane pop-up Windows® gebruikend QuickView ](/help/assets/dynamic-media/custom-pop-ups.md) creëren.
+Zie [&#x200B; douane pop-up Windows® gebruikend QuickView &#x200B;](/help/assets/dynamic-media/custom-pop-ups.md) creëren.

@@ -20,14 +20,14 @@ ht-degree: 0%
 
 Er zijn verschillende soorten gebruikers met verschillende vaardigheden die werken met Adaptive Forms. Terwijl deskundige gebruikers de juiste kennis kunnen hebben om met manuscripten en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die slechts met de lay-out en basiseigenschappen van Aangepast Forms moeten werken.
 
-Met [!DNL Experience Manager Forms] kunt u de toegang van regeleditors beperken tot gebruikers op basis van hun rol of functie. In de Adaptieve montages van de Dienst van de Configuratie van Forms, kunt u de [ gebruikersgroepen ](forms-groups-privileges-tasks.md) specificeren die tot regelredacteur kunnen bekijken en toegang hebben.
+Met [!DNL Experience Manager Forms] kunt u de toegang van regeleditors beperken tot gebruikers op basis van hun rol of functie. In de Adaptieve montages van de Dienst van de Configuratie van Forms, kunt u de [&#x200B; gebruikersgroepen &#x200B;](forms-groups-privileges-tasks.md) specificeren die tot regelredacteur kunnen bekijken en toegang hebben.
 
 ## Geef gebruikersgroepen op die toegang kunnen krijgen tot de regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Meld u aan bij [!DNL Experience Manager Forms] als beheerder.
-1. In de auteursinstantie, klik ![ Adobe Experience Manager ](assets/adobeexperiencemanager.png) Adobe Experience Manager > Hulpmiddelen ![ hamer ](assets/hammer-icon.svg) > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. De webconsole wordt in een nieuw venster geopend.
+1. In de auteursinstantie, klik ![&#x200B; Adobe Experience Manager &#x200B;](assets/adobeexperiencemanager.png) Adobe Experience Manager > Hulpmiddelen ![&#x200B; hamer &#x200B;](assets/hammer-icon.svg) > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. De webconsole wordt in een nieuw venster geopend.
 
-   ![ 1-2 ](assets/1-2.png)
+   ![&#x200B; 1-2 &#x200B;](assets/1-2.png)
 
 1. Zoek en klik op **[!UICONTROL Adaptive Form Configuration Service]** in het [!UICONTROL Web Console] -venster. **[!UICONTROL Adaptive Form Configuration Service]** wordt weergegeven. Wijzig geen waarde en klik op **[!UICONTROL Save]** .
 
@@ -42,17 +42,17 @@ Met [!DNL Experience Manager Forms] kunt u de toegang van regeleditors beperken 
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 
-   ![ creeer Gebruiker ](assets/create_user_new.png)
+   ![&#x200B; creeer Gebruiker &#x200B;](assets/create_user_new.png)
 
-   Nu, wanneer een gebruiker die geen deel uitmaakt van de opgegeven gebruikersgroep (hier)    `RuleEditorsUserGroup`) tikt een gebied, geeft het pictogram van de Regel uit ( ![ geef-rules1 ](assets/edit-rules1.png)) is niet beschikbaar in de toolbar van Componenten:
+   Nu, wanneer een gebruiker die geen deel uitmaakt van de opgegeven gebruikersgroep (hier)    `RuleEditorsUserGroup`) tikt een gebied, geeft het pictogram van de Regel uit ( ![&#x200B; geef-rules1 &#x200B;](assets/edit-rules1.png)) is niet beschikbaar in de toolbar van Componenten:
 
-   ![ componentStoolbarwithre ](assets/componentstoolbarwithre.png)
+   ![&#x200B; componentStoolbarwithre &#x200B;](assets/componentstoolbarwithre.png)
 
    De toolbar van componenten zoals zichtbaar aan een gebruiker met de toegang van de regelredacteur:
 
-   ![ componentStoolbarwithoutre ](assets/componentstoolbarwithoutre.png)
+   ![&#x200B; componentStoolbarwithoutre &#x200B;](assets/componentstoolbarwithoutre.png)
 
    De toolbar van Componenten zoals zichtbaar aan een gebruiker zonder de toegang van de regelredacteur
 
-   Voor instructies bij het toevoegen van gebruikers aan groepen, zie [ Beleid van de Gebruiker en Veiligheid ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL).
+   Voor instructies bij het toevoegen van gebruikers aan groepen, zie [&#x200B; Beleid van de Gebruiker en Veiligheid &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL).
 

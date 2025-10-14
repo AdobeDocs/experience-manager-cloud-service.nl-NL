@@ -13,11 +13,11 @@ In dit bestand wordt beschreven hoe u een bijdrage kunt leveren en worden de ric
 
 ## Adobe Open gedragscode van Source
 
-Dit project heeft de [ Adobe Open Code van Source van Gedrag ](code-of-conduct.md) goedgekeurd. Door bij te dragen aan AEM documentatie gaat u akkoord met het naleven van deze gedragscode. Het onaanvaardbare gedrag van het rapport aan [ Grp-opensourceoffice@adobe.com ](mailto:Grp-opensourceoffice@adobe.com).
+Dit project heeft de [&#x200B; Adobe Open Code van Source van Gedrag &#x200B;](code-of-conduct.md) goedgekeurd. Door bij te dragen aan AEM documentatie gaat u akkoord met het naleven van deze gedragscode. Het onaanvaardbare gedrag van het rapport aan [&#x200B; Grp-opensourceoffice@adobe.com &#x200B;](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Richtsnoeren voor de bijdrage
 
-Hoewel alle bijdragen worden toegejuicht om AEM documentatie te verbeteren, moet u er zeker van zijn dat bijdragen waar mogelijk aan bepaalde richtsnoeren en normen voldoen. Herzie de [ Richtlijnen voor Bijdrage aan AEM Documentatie ](guidelines.md) voor meer informatie.
+Hoewel alle bijdragen worden toegejuicht om AEM documentatie te verbeteren, moet u er zeker van zijn dat bijdragen waar mogelijk aan bepaalde richtsnoeren en normen voldoen. Herzie de [&#x200B; Richtlijnen voor Bijdrage aan AEM Documentatie &#x200B;](guidelines.md) voor meer informatie.
 
 ## Hoe kan ik met Contribute?
 
@@ -30,7 +30,7 @@ Welke methode u kiest hangt van af hoe comfortabel u de documentatie in GitHub z
 
 >[!NOTE]
 >
->De bijdragen die u voorlegt worden behandeld door de [ termijnen van de Adobe van gebruik ](https://www.adobe.com/legal/terms.html).
+>De bijdragen die u voorlegt worden behandeld door de [&#x200B; termijnen van de Adobe van gebruik &#x200B;](https://www.adobe.com/legal/terms.html).
 
 ### Een probleem maken {#create-an-issue}
 
@@ -42,7 +42,7 @@ De kwesties staan u toe om uw idee voor verbetering aan de documenten gemakkelij
 
 Als u een probleem ziet en precies weet hoe u dit kunt verhelpen, kunt u een pull-verzoek maken. De verzoeken van de Trek staan u toe om uw eigen uit te geven aan de documentatie, die dan voor opneming door een lid van het Team van AEM Docs wordt herzien. Klik gewoon op de koppeling **[!UICONTROL Edit this page]** boven aan het rechternavigatievenster op een pagina om de voorgestelde wijzigingen aan te brengen en de pull-aanvraag te maken.
 
-Alle trektrekkingsverzoeken moeten door een ondertekende [ overeenkomst van de bijdragevergunning of CLA ](https://opensource.adobe.com/cla.html) worden vergezeld. Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. U hoeft slechts één keer een Adobe CLA in te dienen, dus als u al een eerder hebt verzonden, kunt u het beste gaan!
+Alle trektrekkingsverzoeken moeten door een ondertekende [&#x200B; overeenkomst van de bijdragevergunning of CLA &#x200B;](https://opensource.adobe.com/cla.html) worden vergezeld. Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. U hoeft slechts één keer een Adobe CLA in te dienen, dus als u al een eerder hebt verzonden, kunt u het beste gaan!
 
 ### Snelle video-introductie
 
@@ -58,4 +58,4 @@ Het documentatieteam is blij met elke bijdrage en zal uw bijdrage beoordelen als
 
 ## Aanvullende informatie
 
-Zie de [ Gids van de Medewerker van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL) voor verdere details op hoe te om het GitHub auteursplatform te gebruiken.
+Zie de [&#x200B; Gids van de Medewerker van Docs van de Adobe &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL) voor verdere details op hoe te om het GitHub auteursplatform te gebruiken.

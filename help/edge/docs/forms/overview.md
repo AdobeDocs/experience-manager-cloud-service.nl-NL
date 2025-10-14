@@ -53,7 +53,7 @@ Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijp
 <span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features">pre-release channel</a>. </span>
 -->
 
-[ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is een visueel, belemmering-en-dalingsauteursgereedschap voor marketers en ontwerpers die snelheid met onderneming-rang macht combineert:
+[&#x200B; Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is een visueel, belemmering-en-dalingsauteursgereedschap voor marketers en ontwerpers die snelheid met onderneming-rang macht combineert:
 
 - WYSIWYG-bewerkingen in realtime en voorvertoningen van apparaten.
 - Directe integratie met AEM-elementen, -workflows en -formuliergegevensmodel (FDM).
@@ -74,7 +74,7 @@ Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijp
 
 ### Op documenten gebaseerde ontwerpfuncties (met Microsoft Docs of Google Sheets)
 
-[ op document-Gebaseerde creatie ](/help/edge/docs/forms/tutorial.md) is best geschikt voor het creëren van eenvoudige, laag-ingewikkelde vormen gebruikend vertrouwde hulpmiddelen zoals Microsoft Word, Google Docs, of de Bladen van Google. Deze methode is ideaal voor inhoudsteams die een snelle en eenvoudige manier nodig hebben om formulieren te maken.
+[&#x200B; op document-Gebaseerde creatie &#x200B;](/help/edge/docs/forms/tutorial.md) is best geschikt voor het creëren van eenvoudige, laag-ingewikkelde vormen gebruikend vertrouwde hulpmiddelen zoals Microsoft Word, Google Docs, of de Bladen van Google. Deze methode is ideaal voor inhoudsteams die een snelle en eenvoudige manier nodig hebben om formulieren te maken.
 
 - Toegankelijke onderdelen voor een gebruiksvriendelijke ervaring.
 - Gestandaardiseerde HTML-structuur voor consistente rendering.
@@ -94,7 +94,7 @@ Document Authoring (DA) is ontworpen voor het maken van gestructureerde pagina-i
 
 In het volgende diagram ziet u hoe u formulieren kunt bewerken in Microsoft Excel of Google Sheets (Document-based Authoring) en publiceren naar Edge Delivery Services. Ook wordt de AEM-publicatiemethode weergegeven met behulp van de WYSIWYG Authoring (Universal Editor).
 
-![ publiceer aan Edge Delivery Services en AEM ](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
+![&#x200B; publiceer aan Edge Delivery Services en AEM &#x200B;](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
 
 <!-- 
@@ -116,8 +116,8 @@ In het volgende diagram ziet u hoe u formulieren kunt bewerken in Microsoft Exce
 
 - [Functies en mogelijkheden van de Universal Editor voor Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 - [Uw eerste formulier maken met de Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
-- [ creeer uw eerste vorm gebruikend de Bladen van Google of Microsoft Excel ](/help/edge/docs/forms/tutorial.md).
-- [ bed Forms in Document Authoring (DA) in ](https://www.aem.live/developer/da-tutorial)
+- [&#x200B; creeer uw eerste vorm gebruikend de Bladen van Google of Microsoft Excel &#x200B;](/help/edge/docs/forms/tutorial.md).
+- [&#x200B; bed Forms in Document Authoring (DA) in &#x200B;](https://www.aem.live/developer/da-tutorial)
 
 
 U kunt nu uw eerste krachtige formulier maken met AEM Edge Delivery Services.

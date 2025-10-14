@@ -14,19 +14,19 @@ ht-degree: 0%
 
 # Sneltoetsen voor paginabewerking {#keyboard-shortcuts-when-editing-pages}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing wanneer het uitgeven van pagina&#39;s, anderen op het [ gebruik van consoles ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md), en wat in het bijzonder op de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing wanneer het uitgeven van pagina&#39;s, anderen op het [&#x200B; gebruik van consoles &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md), en wat in het bijzonder op de [&#x200B; console van de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->De [ bepalingssleutels ](#os-specific-modifier-keys) die voor AEM toetsenbordkortere weg worden vereist variëren afhankelijk van werkend systeem.
+>De [&#x200B; bepalingssleutels &#x200B;](#os-specific-modifier-keys) die voor AEM toetsenbordkortere weg worden vereist variëren afhankelijk van werkend systeem.
 
 ## Sneltoetsen bewerken {#editing-keyboard-shortcuts}
 
 | Locatie | Sneltoets | Beschrijving |
 |---|---|---|
-| Willekeurige modus van venster bewerken | `Ctrl-Shift-m` | Wissel tussen **Voorproef** en momenteel geselecteerde [ wijze ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) (bijvoorbeeld, **geeft** uit, **Lay-out**, etc.)* |
-| **geeft** wijze uit | `Ctrl-z` | [ maak laatste verandering ongedaan ](/help/sites-cloud/authoring/page-editor/edit-content.md) |
-|  | `Ctrl-y` | [ herstelt laatste verandering ](/help/sites-cloud/authoring/page-editor/edit-content.md#undoing-and-redoing-page-edits) |
+| Willekeurige modus van venster bewerken | `Ctrl-Shift-m` | Wissel tussen **Voorproef** en momenteel geselecteerde [&#x200B; wijze &#x200B;](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) (bijvoorbeeld, **geeft** uit, **Lay-out**, etc.)* |
+| **geeft** wijze uit | `Ctrl-z` | [&#x200B; maak laatste verandering ongedaan &#x200B;](/help/sites-cloud/authoring/page-editor/edit-content.md) |
+|  | `Ctrl-y` | [&#x200B; herstelt laatste verandering &#x200B;](/help/sites-cloud/authoring/page-editor/edit-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Meerdere alinea&#39;s selecteren |
 |  | `Ctrl-c` | Geselecteerde alinea&#39;s kopiëren |
 |  | `Ctrl-x` | Geselecteerde alinea&#39;s knippen (verwijderde alinea&#39;s verdwijnen pas in de gebruikersinterface als deze wordt geplakt) |
@@ -40,11 +40,11 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing 
 >
 >Wanneer de gebruiker in de voorvertoningsmodus met de pagina begint te communiceren, is de sneltoets `Ctrl-Shift-m` niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar wanneer de gebruiker op de bovenste editor-balk klikt of terugkeert naar de modus Bewerken.
 
-Diverse toetsenbordkortere weg is ook beschikbaar voor Desktopgebruikers wanneer het gebruiken van de [ consoles ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md), en wat in het bijzonder aan de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
+Diverse toetsenbordkortere weg is ook beschikbaar voor Desktopgebruikers wanneer het gebruiken van de [&#x200B; consoles &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md), en wat in het bijzonder aan de [&#x200B; console van de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->De toetsenbordkortere weg van de redacteur is altijd actief ongeacht als de [ consolekortere weg ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) is gedeactiveerd.
+>De toetsenbordkortere weg van de redacteur is altijd actief ongeacht als de [&#x200B; consolekortere weg &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) is gedeactiveerd.
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 

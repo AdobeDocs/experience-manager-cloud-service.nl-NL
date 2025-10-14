@@ -30,7 +30,7 @@ Aan de slag met CRXDE Lite:
 
 De gebruikersinterface van CRXDE Lite wordt als volgt weergegeven in uw browser:
 
-![ de interface van CRXDE Lite ](assets/crxde-lite.png)
+![&#x200B; de interface van CRXDE Lite &#x200B;](assets/crxde-lite.png)
 
 >[!TIP]
 >
@@ -42,7 +42,7 @@ CRXDE Lite-gebruikersinterface bevat veel onderdelen en functies.
 
 ### Bovenste schakelbalk {#top-switcher-bar}
 
-De hoogste bar van de Schakelaar laat u snel tussen CRXDE Lite en [ de Manager van het Pakket ](package-manager.md) schakelen.
+De hoogste bar van de Schakelaar laat u snel tussen CRXDE Lite en [&#x200B; de Manager van het Pakket &#x200B;](package-manager.md) schakelen.
 
 ### Knooppuntwidget {#node-path-widget}
 
@@ -220,7 +220,7 @@ Een bestand maken met CRXDE Lite:
 
 ## Nodetypen exporteren en importeren {#exporting-and-importing-node-types}
 
-Met CRXDE Lite kunt u knooptype definities in [ Compacte Namespace en van het Type van Knoop (CND) notatie invoeren en/of uitvoeren ](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Met CRXDE Lite kunt u knooptype definities in [&#x200B; Compacte Namespace en van het Type van Knoop (CND) notatie invoeren en/of uitvoeren &#x200B;](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Een definitie van een knooptype exporteren in CRXDE Lite:
 

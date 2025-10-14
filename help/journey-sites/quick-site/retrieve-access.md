@@ -20,9 +20,9 @@ Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen 
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Als u een front-end ontwikkelaar slechts verantwoordelijk voor de aanpassing van het plaatsthema bent, hebt u geen kennis van nodig hoe AEM opstelling was en aan de [ Doelstelling ](#objective) sectie van dit document kan overslaan.
+Als u een front-end ontwikkelaar slechts verantwoordelijk voor de aanpassing van het plaatsthema bent, hebt u geen kennis van nodig hoe AEM opstelling was en aan de [&#x200B; Doelstelling &#x200B;](#objective) sectie van dit document kan overslaan.
 
-Als u ook de rol van de beheerder van Cloud Manager of van AEM en front-end ontwikkelaar dient, leerde u in het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [ Toegang van de Verlening tot de Front-End Ontwikkelaar ](grant-access.md), hoe te aan boord de front-end ontwikkelaar zodat hebben zij toegang tot de git bewaarplaats, en u zou nu moeten weten:
+Als u ook de rol van de beheerder van Cloud Manager of van AEM en front-end ontwikkelaar dient, leerde u in het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [&#x200B; Toegang van de Verlening tot de Front-End Ontwikkelaar &#x200B;](grant-access.md), hoe te aan boord de front-end ontwikkelaar zodat hebben zij toegang tot de git bewaarplaats, en u zou nu moeten weten:
 
 * Een front-end ontwikkelaar toevoegen als een gebruiker.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
@@ -75,31 +75,31 @@ Voor de front-end ontwikkelaar, is het de gateway aan:
 
 De Cloud Manager-beheerder heeft u als Cloud Manager-gebruiker aangemeld. U zou een welkome e-mail gelijkend op het volgende moeten ontvangen hebben.
 
-![ Welkome e-mail ](assets/welcome-email.png)
+![&#x200B; Welkome e-mail &#x200B;](assets/welcome-email.png)
 
 Neem contact op met de Cloud Manager-beheerder als u dit e-mailbericht niet hebt ontvangen.
 
 ## Toegang tot Cloud Manager {#access-cloud-manager}
 
-1. Logboek in Adobe Experience Cloud bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) of klik de verbinding die in welkome e-mail wordt verstrekt.
+1. Logboek in Adobe Experience Cloud bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) of klik de verbinding die in welkome e-mail wordt verstrekt.
 
 1. Cloud Manager geeft een overzicht van de verschillende beschikbare programma&#39;s. Selecteer het bestand dat u wilt openen, zoals opgegeven door de Cloud Manager-beheerder. Als dit uw eerste front-end project voor AEMaaCS is, hebt u waarschijnlijk slechts één programma beschikbaar.
 
-   ![ Selecterend een programma in Cloud Manager ](assets/cloud-manager-select-program.png)
+   ![&#x200B; Selecterend een programma in Cloud Manager &#x200B;](assets/cloud-manager-select-program.png)
 
 U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is vergelijkbaar met dit voorbeeld.
 
-![ overzicht van Cloud Manager ](assets/cloud-manager-overview.png)
+![&#x200B; overzicht van Cloud Manager &#x200B;](assets/cloud-manager-overview.png)
 
 ## Toegang tot opslagplaats ophalen {#repo-access}
 
 1. In de **sectie van Pijpleidingen** van de pagina van Cloud Manager, selecteer de **knoop van Info van de Reparatie van de Toegang**.
 
-   ![ Pijpleidingen ](assets/pipelines-repo-info.png)
+   ![&#x200B; Pijpleidingen &#x200B;](assets/pipelines-repo-info.png)
 
 1. Het **dialoog van Info van de Bewaarplaats 0&rbrace; &lbrace;opent.**
 
-   ![ Repo info ](assets/repo-info.png)
+   ![&#x200B; Repo info &#x200B;](assets/repo-info.png)
 
 1. Selecteer **produceer wachtwoord** knoop om een wachtwoord voor zich tot stand te brengen.
 
@@ -116,10 +116,10 @@ Nu u dit deel van de AEM Quick Site Creation-reis hebt voltooid, kunt u het volg
 * Begrijp op een hoog niveau wat Cloud Manager is.
 * U hebt uw gegevens opgehaald voor toegang tot de AEM-kit zodat u uw aanpassingen kunt doorvoeren.
 
-Bouw op deze kennis voort en zet uw reis van de Gemaakt van de Plaats van AEM Snelle door het document [ te herzien pas het Thema van de Plaats ](customize-theme.md) aan, waar u leert hoe het plaatsthema wordt gebouwd, hoe te aan te passen, en hoe te om het gebruiken van levende inhoud van AEM te testen.
+Bouw op deze kennis voort en zet uw reis van de Gemaakt van de Plaats van AEM Snelle door het document [&#x200B; te herzien pas het Thema van de Plaats &#x200B;](customize-theme.md) aan, waar u leert hoe het plaatsthema wordt gebouwd, hoe te aan te passen, en hoe te om het gebruiken van levende inhoud van AEM te testen.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien aanpast het Thema van de Plaats ](customize-theme.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [&#x200B; te herzien aanpast het Thema van de Plaats &#x200B;](customize-theme.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [ de Documentatie van Adobe Experience Manager Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=nl-NL) - Onderzoek de documentatie van Cloud Manager voor volledige details van zijn eigenschappen.
+* [&#x200B; de Documentatie van Adobe Experience Manager Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=nl-NL) - Onderzoek de documentatie van Cloud Manager voor volledige details van zijn eigenschappen.

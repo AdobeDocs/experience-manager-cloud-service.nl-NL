@@ -26,4 +26,4 @@ Wanneer het werken met Adaptieve Forms (de Componenten van de Kern), kunt u a **
 
 Als u de 502-foutpagina wilt voorkomen, plaatst u de logica voor verzending tussen blokken die de fout proberen af te vangen.
 
-Voor gedetailleerde stappen, zie [ een douane aanmaken voorlegt actie voor Adaptieve Forms (de Componenten van de Kern) ](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md).
+Voor gedetailleerde stappen, zie [&#x200B; een douane aanmaken voorlegt actie voor Adaptieve Forms (de Componenten van de Kern) &#x200B;](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md).

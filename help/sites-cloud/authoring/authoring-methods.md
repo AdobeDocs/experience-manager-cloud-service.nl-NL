@@ -20,10 +20,10 @@ Leer de verschillende manieren waarop u inhoud in AEM kunt ontwerpen, hoe deze v
 
 AEM as a Cloud Service biedt verschillende editors om verschillende typen inhoud te bewerken en biedt ondersteuning voor verschillende gebruiksgevallen bij het ontwerpen.
 
-* [ WYSIWYG Authoring using the Universal Editor ](#universal-editor) - De Universal Editor is een moderne UI die u toestaat om AEM-inhoud op een content-agnostische manier te schrijven en is beschikbaar voor AEM-projecten die Edge Delivery Services gebruiken.
-* [ het Authoring van WYSIWYG die de Redacteur van de Pagina ](#page-editor) gebruikt - de Redacteur van de Pagina is de klassieke redacteur voor auteursinhoud in AEM, die voor duizenden op duizenden websites wordt geprobeerd en wordt vertrouwd.
-* [ op document-Gebaseerde Authoring ](#document-based) - als u de diensten van Edge Delivery gebruikt, kunt u verkiezen om uw inhoud als conventionele documenten zoals Microsoft Word of Google Docs volledig buiten de consoles van AEM te schrijven.
-* [ de Redacteur van het Fragment van de Inhoud van AEM ](#cf-editor) - dit is de redacteur van keus voor het creëren van hoofdloze inhoud.
+* [&#x200B; WYSIWYG Authoring using the Universal Editor &#x200B;](#universal-editor) - De Universal Editor is een moderne UI die u toestaat om AEM-inhoud op een content-agnostische manier te schrijven en is beschikbaar voor AEM-projecten die Edge Delivery Services gebruiken.
+* [&#x200B; het Authoring van WYSIWYG die de Redacteur van de Pagina &#x200B;](#page-editor) gebruikt - de Redacteur van de Pagina is de klassieke redacteur voor auteursinhoud in AEM, die voor duizenden op duizenden websites wordt geprobeerd en wordt vertrouwd.
+* [&#x200B; op document-Gebaseerde Authoring &#x200B;](#document-based) - als u de diensten van Edge Delivery gebruikt, kunt u verkiezen om uw inhoud als conventionele documenten zoals Microsoft Word of Google Docs volledig buiten de consoles van AEM te schrijven.
+* [&#x200B; de Redacteur van het Fragment van de Inhoud van AEM &#x200B;](#cf-editor) - dit is de redacteur van keus voor het creëren van hoofdloze inhoud.
 
 Vanwege de geïntegreerde en schaalbare aard van AEM kunnen deze methoden uitsluitend of in combinatie met elkaar worden gebruikt, afhankelijk van de behoeften van uw project.
 
@@ -33,44 +33,44 @@ Raadpleeg uw systeembeheerder of projectmanager als u onzeker bent welke auteurs
 
 De Universele Redacteur is een moderne UI die u toestaat om de inhoud van AEM op een tevreden-agnostische manier te schrijven en is de eerste keus voor de projecten van AEM leveraging Edge Delivery Services.
 
-![ Universele Redacteur ](assets/authoring-methods-ue.png)
+![&#x200B; Universele Redacteur &#x200B;](assets/authoring-methods-ue.png)
 
 De Universal Editor is toegankelijk via de Sites-console in AEM, maar biedt de auteur de kracht en de flexibiliteit om inhoud niet alleen aan uw AEM-inhoud te besteden, maar ook correct geïnstrueerde externe inhoud.
 
-Om meer over de Universele Redacteur te leren, te zien gelieve het document [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).
+Om meer over de Universele Redacteur te leren, te zien gelieve het document [&#x200B; Authoring Inhoud met de Universele Redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 ## WYSIWYG Authoring met de paginaeditor {#page-editor}
 
 Dit is de klassieke editor voor het ontwerpen van inhoud in traditionele AEM-projecten, die duizenden op duizenden websites zijn uitgeprobeerd en vertrouwd.
 
-![ de paginaredacteur van AEM ](assets/authoring-methods-page-editor.png)
+![&#x200B; de paginaredacteur van AEM &#x200B;](assets/authoring-methods-page-editor.png)
 
 De AEM-pagina-editor biedt een geïntegreerde omgeving voor het ontwerpen van inhoud met behulp van een &#39;what-you-see-is-what-you-get&#39;-interface (WYSIWYG). Met vooraf gedefinieerde componenten voor slepen en neerzetten kunt u de pagina samenstellen en inhoud op plaats bewerken.
 
-Om meer over de de paginageditor van AEM te leren, te zien gelieve het document [ de Redacteur van de Pagina van AEM ](/help/sites-cloud/authoring/page-editor/introduction.md).
+Om meer over de de paginageditor van AEM te leren, te zien gelieve het document [&#x200B; de Redacteur van de Pagina van AEM &#x200B;](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 ## Authoring op basis van documenten  {#document-based}
 
-Als u de diensten van Edge Delivery gebruikt, kunt u verkiezen om uw inhoud als conventionele documenten zoals Microsoft Word of Google Docs volledig buiten de [ AEM **console van Plaatsen** ](/help/sites-cloud/authoring/sites-console/introduction.md) te schrijven.
+Als u de diensten van Edge Delivery gebruikt, kunt u verkiezen om uw inhoud als conventionele documenten zoals Microsoft Word of Google Docs volledig buiten de [&#x200B; AEM **console van Plaatsen** &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md) te schrijven.
 
-![ het uitgeven op document-gebaseerde inhoud ](assets/authoring-methods-document.jpg)
+![&#x200B; het uitgeven op document-gebaseerde inhoud &#x200B;](assets/authoring-methods-document.jpg)
 
 Met op documenten gebaseerde authoring kunnen auteurs de gereedschappen gebruiken die ze al kennen en profiteren nog steeds van de snelheid en prestaties van AEM Edge Delivery Services om hun inhoud te publiceren. Voor schrijven op basis van documenten is geen gebruik van de AEM-console vereist.
 
-Meer over op document-gebaseerde creatie leren, zie [ Authoring en het Publiceren Inhoud ](https://www.aem.live/docs/aem-authoring).
+Meer over op document-gebaseerde creatie leren, zie [&#x200B; Authoring en het Publiceren Inhoud &#x200B;](https://www.aem.live/docs/aem-authoring).
 
 ## AEM Content Fragment Editor {#cf-editor}
 
 De AEM Content Fragment-editor is de editor waarin u inhoud zonder kop kunt maken.
 
-![ de Redacteur van het Fragment van de Inhoud van AEM ](assets/authoring-methods-cf-editor.png)
+![&#x200B; de Redacteur van het Fragment van de Inhoud van AEM &#x200B;](assets/authoring-methods-cf-editor.png)
 
 De AEM Content Fragment-editor biedt een duidelijke interface voor het maken en beheren van gestructureerde inhoud, ideaal voor levering zonder kop.
 
-Meer over de redacteur van het Fragment van de Inhoud van AEM leren, gelieve de documenten [ te zien die de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md) leiden en [ Begeleidende de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md).
+Meer over de redacteur van het Fragment van de Inhoud van AEM leren, gelieve de documenten [&#x200B; te zien die de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md) leiden en [&#x200B; Begeleidende de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md).
 
 >[!NOTE]
 >
 >De *nieuwe* die redacteur in deze sectie wordt benadrukt is niet beschikbaar wanneer het ontwikkelen plaatselijk voor AEM as a Cloud Service.
 >
->De [*originele* redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-variations.md) is ook beschikbaar.
+>De [*originele* redacteur van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-variations.md) is ook beschikbaar.

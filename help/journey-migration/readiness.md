@@ -23,7 +23,7 @@ In deze fase van de AEM as a Cloud Service Migration Journey weet u uzelf bekend
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Het vorige document, [ Begonnen Worden met Beweging aan AEM as a Cloud Service ](/help/journey-migration/getting-started.md), schetst een lijst van fasen u moet ondergaan zodat kunt u naar AEM as a Cloud Service migreren. Het schetst ook de voordelen van migratie.
+Het vorige document, [&#x200B; Begonnen Worden met Beweging aan AEM as a Cloud Service &#x200B;](/help/journey-migration/getting-started.md), schetst een lijst van fasen u moet ondergaan zodat kunt u naar AEM as a Cloud Service migreren. Het schetst ook de voordelen van migratie.
 
 ## Doelstelling {#objective}
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service biedt veel nieuwe functies en mogelijkheden voor het behe
 
 Samen met deze verbeteringen zijn er verschillende verschillen ontstaan tussen installaties op locatie in AEM en Adobe Managed Services, in vergelijking met AEM as a Cloud Service.
 
-De lijst met items in de onderstaande tabel is de subset van de wijzigingen die het meest relevant zijn voor een migratie naar AEM as a Cloud Service. U kunt de volledige lijst van [ Notable Veranderingen in Adobe Experience Manager as a Cloud Service ](/help/release-notes/aem-cloud-changes.md) raadplegen.
+De lijst met items in de onderstaande tabel is de subset van de wijzigingen die het meest relevant zijn voor een migratie naar AEM as a Cloud Service. U kunt de volledige lijst van [&#x200B; Notable Veranderingen in Adobe Experience Manager as a Cloud Service &#x200B;](/help/release-notes/aem-cloud-changes.md) raadplegen.
 
 <table>
 <thead>
@@ -161,7 +161,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
 
 Adobe evalueert continu de productfuncties, zodat oudere functies na verloop van tijd kunnen worden bijgewerkt of vervangen door modernere alternatieven om de algehele waarde voor de klant te verbeteren. Hierbij wordt altijd zorgvuldig gekeken naar compatibiliteit met oudere versies.
 
-Adobe adviseert dat u [ Vervangen Eigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=nl-NL#deprecated-features) raadpleegt om zich met de eigenschappen en de mogelijkheden vertrouwd te maken die zoals afgekeurd in Experience Manager as a Cloud Service worden gemerkt. Bekijk wat de impact is op uw AEM-implementatie.
+Adobe adviseert dat u [&#x200B; Vervangen Eigenschappen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=nl-NL#deprecated-features) raadpleegt om zich met de eigenschappen en de mogelijkheden vertrouwd te maken die zoals afgekeurd in Experience Manager as a Cloud Service worden gemerkt. Bekijk wat de impact is op uw AEM-implementatie.
 
 ## Plan voor een overzicht van uw installatie van AEM {#review-planning}
 
@@ -169,7 +169,7 @@ Nadat u zich met de veranderingen vertrouwd hebt gemaakt die met AEM as a Cloud 
 
 In de volgende afbeelding ziet u de belangrijkste stappen die tijdens de beoordelingsfase zijn ondernomen:
 
-![ Belangrijke stappen betrokken tijdens de overzichtsfase ](/help/journey-migration/assets/planning-phaseimg1.png)
+![&#x200B; Belangrijke stappen betrokken tijdens de overzichtsfase &#x200B;](/help/journey-migration/assets/planning-phaseimg1.png)
 
 Hierna gaat u na wat elk van deze stappen in detail betekent.
 
@@ -185,11 +185,11 @@ Het aantal bevindingen kan rechtstreeks van invloed zijn op de tijdlijnen en het
 
 U kunt de beoordeling versnellen door de Analysator van Beste praktijken tegen uw huidige versie van AEM in werking te stellen. Een goed begrip van hoe het werkt is essentieel om uw evaluatie planning te versnellen.
 
-U kunt omhoog lezen op hoe het door de [ documentatie van de Analysator van Beste praktijken te raadplegen ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) werkt.
+U kunt omhoog lezen op hoe het door de [&#x200B; documentatie van de Analysator van Beste praktijken te raadplegen &#x200B;](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) werkt.
 
 **creeer een Rapport van de Beoordeling van de Bereidheid van de Wolk**
 
-De volgende stap is het opstellen van een verslag op basis van alle tot nu toe verworven kennis. U creeert het rapport door de rapporten van de Analysator van Beste praktijken van het Stadium en de instanties van de Productie te produceren, [ dan hen in Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#readiness-phase-cam) voor een verteerbaar rapport van actionable punten te uploaden.
+De volgende stap is het opstellen van een verslag op basis van alle tot nu toe verworven kennis. U creeert het rapport door de rapporten van de Analysator van Beste praktijken van het Stadium en de instanties van de Productie te produceren, [&#x200B; dan hen in Cloud Acceleration Manager &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#readiness-phase-cam) voor een verteerbaar rapport van actionable punten te uploaden.
 
 Een typisch rapport moet deze input bevatten:
 
@@ -200,7 +200,7 @@ Een typisch rapport moet deze input bevatten:
 
 **socialiseer het Rapport**
 
-Nadat de rapporten van de Analysator van Beste praktijken volledig zijn, deel hen met de relevante teams zodat kunt u uw bevindingen bevestigen en voor uw volgende stappen plannen. Afhankelijk van voorkeur, kunt u een gedrukte versie van het rapport ook verspreiden door [ Voorproef van de Druk te gebruiken ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
+Nadat de rapporten van de Analysator van Beste praktijken volledig zijn, deel hen met de relevante teams zodat kunt u uw bevindingen bevestigen en voor uw volgende stappen plannen. Afhankelijk van voorkeur, kunt u een gedrukte versie van het rapport ook verspreiden door [&#x200B; Voorproef van de Druk te gebruiken &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### Resourceplanning controleren {#review-resource-planning}
 
@@ -210,16 +210,16 @@ Zodra u het niveau van inspanning hebt geschat dat wordt vereist om zich aan Clo
 
 Als u geen Belangrijkste Indicatoren van Prestaties (KPIs) eerder hebt gevestigd, wordt het geadviseerd om KPIs voor uw implementatie van AEM te vestigen om uw team te helpen zich concentreren op wat het belangrijkst is.
 
-Zie [ het Ontwikkelen KPIs ](https://experienceleague.adobe.com/welcome/aem/part6.html?lang=nl-NL) zodat kunt u leren hoe te om juiste KPIs voor uw bedrijfsdoelstellingen te kiezen.
+Zie [&#x200B; het Ontwikkelen KPIs &#x200B;](https://experienceleague.adobe.com/welcome/aem/part6.html?lang=nl-NL) zodat kunt u leren hoe te om juiste KPIs voor uw bedrijfsdoelstellingen te kiezen.
 
 ## Volgende functies {#what-is-next}
 
-Zodra u het werkingsgebied van de veranderingen begrijpt die worden vereist om zich naar AEM as a Cloud Service te bewegen, is het tijd om [ uw code en inhoudswolk klaar te maken ](/help/journey-migration/implementation.md) alvorens de migratie eigenlijk uit te voeren.
+Zodra u het werkingsgebied van de veranderingen begrijpt die worden vereist om zich naar AEM as a Cloud Service te bewegen, is het tijd om [&#x200B; uw code en inhoudswolk klaar te maken &#x200B;](/help/journey-migration/implementation.md) alvorens de migratie eigenlijk uit te voeren.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Begonnen het worden met Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - een uitvoerige gids op hoe te om Cloud Acceleration Manager te gebruiken om uw beweging aan de wolk te versnellen.
-* [ AEM as a Cloud Service: Inleiding, Architectuur, en anders Dinking ](https://experienceleague.adobe.com/nl?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
-* [ AEM een Huis van Cloud Service ](/help/overview/introduction.md) - voor een overzicht van de documentatie van Experience Manager as a Cloud Service, begin hier.
-* [ het Overzicht van AEM as a Cloud Service ](/help/overview/introduction.md) - Deze gids verstrekt een overzicht van Experience Manager als de dienst van de Wolk, met inbegrip van een inleiding, een terminologie, en een architectuur.
-* [ Onboarding Reis ](/help/journey-onboarding/overview.md) - Deze gids verstrekt een samenvatting van hoe te beginnen met Experience Manager as a Cloud Service, met inbegrip van hoe te om toegang en opstelling uw team te krijgen.
+* [&#x200B; Begonnen het worden met Cloud Acceleration Manager &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - een uitvoerige gids op hoe te om Cloud Acceleration Manager te gebruiken om uw beweging aan de wolk te versnellen.
+* [&#x200B; AEM as a Cloud Service: Inleiding, Architectuur, en anders Dinking &#x200B;](https://experienceleague.adobe.com/nl?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=en#dashboard/learning)
+* [&#x200B; AEM een Huis van Cloud Service &#x200B;](/help/overview/introduction.md) - voor een overzicht van de documentatie van Experience Manager as a Cloud Service, begin hier.
+* [&#x200B; het Overzicht van AEM as a Cloud Service &#x200B;](/help/overview/introduction.md) - Deze gids verstrekt een overzicht van Experience Manager als de dienst van de Wolk, met inbegrip van een inleiding, een terminologie, en een architectuur.
+* [&#x200B; Onboarding Reis &#x200B;](/help/journey-onboarding/overview.md) - Deze gids verstrekt een samenvatting van hoe te beginnen met Experience Manager as a Cloud Service, met inbegrip van hoe te om toegang en opstelling uw team te krijgen.

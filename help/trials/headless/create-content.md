@@ -49,7 +49,7 @@ De console van het Fragment van de Inhoud wordt gebruikt om inhoud zonder kop ov
 
 1. Selecteer **creeer en open**.
 
-![ Creërend een nieuw Fragment van de Inhoud ](assets/do-not-localize/create-content.png)
+![&#x200B; Creërend een nieuw Fragment van de Inhoud &#x200B;](assets/do-not-localize/create-content.png)
 
 >[!TIP]
 >
@@ -75,7 +75,7 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. In de activa pop-up, uitgezochte **doorbladert Assets** om van een bestaand middel in de activa bibliotheek te selecteren.
 
-   ![ voeg activa ](assets/do-not-localize/add-asset.png) toe
+   ![&#x200B; voeg activa &#x200B;](assets/do-not-localize/add-asset.png) toe
 
 1. Het **Uitgezochte de dialoogvakje van Activa** opent. Gebruikend de boomnavigator in het linkerpaneel, navigeer aan **Alle activa** > **aem-demo-activa** > **en** > **avonturen** > **kring-tuscany**.
 
@@ -83,17 +83,17 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. Selecteer **Uitgezocht**.
 
-   ![ Uitgezochte activa ](assets/do-not-localize/select-asset.png)
+   ![&#x200B; Uitgezochte activa &#x200B;](assets/do-not-localize/select-asset.png)
 
 1. De geselecteerde afbeelding wordt weergegeven in het inhoudsfragment. De editor slaat de wijzigingen automatisch op.
 
 1. Zodra u wordt gebeëindigd toevoegend inhoud, selecteer de **knoop van Publish** bij het hoogste recht van de redacteur. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps. Dan selecteer **nu** van drop-down. U kunt ook plannen dat de presentatie op een later tijdstip wordt gepubliceerd.
 
-   ![ de inhoud van Publish ](assets/do-not-localize/publish.png)
+   ![&#x200B; de inhoud van Publish &#x200B;](assets/do-not-localize/publish.png)
 
 1. De **de dialoog van de Fragmenten van de Inhoud van Publish** verschijnt. AEM voert automatisch een verwijzingscontrole uit om ervoor te zorgen dat alle noodzakelijke middelen voor uw Inhoudsfragment worden gepubliceerd. In dit geval moet u ook het model publiceren dat u hebt gemaakt. Selecteer **Publish**.
 
-   ![ Publish en verwijzingscontrole ](assets/do-not-localize/publish-confirm.png)
+   ![&#x200B; Publish en verwijzingscontrole &#x200B;](assets/do-not-localize/publish-confirm.png)
 
 1. De publicatie wordt bevestigd in een banner.
 
