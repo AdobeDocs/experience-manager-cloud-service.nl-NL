@@ -48,7 +48,7 @@ Het importeren van productcatalogusgegevens wordt niet meer ondersteund. Het geb
 
 >[!TIP]
 >
->Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [&#x200B; open-source van Magento.](https://business.adobe.com/products/magento/open-source.html)
+>Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [&#x200B; open-source van Magento.](https://business.adobe.com/nl/products/magento/open-source.html)
 
 ## Ervaringen met productcatalogi met AEM-rendering {#aem-rendering}
 

@@ -219,7 +219,7 @@ Zodra u het werkingsgebied van de veranderingen begrijpt die worden vereist om z
 ## Aanvullende bronnen {#additional-resources}
 
 * [&#x200B; Begonnen het worden met Cloud Acceleration Manager &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - een uitvoerige gids op hoe te om Cloud Acceleration Manager te gebruiken om uw beweging aan de wolk te versnellen.
-* [&#x200B; AEM as a Cloud Service: Inleiding, Architectuur, en anders Dinking &#x200B;](https://experienceleague.adobe.com/nl?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=en#dashboard/learning)
+* [&#x200B; AEM as a Cloud Service: Inleiding, Architectuur, en anders Dinking &#x200B;](https://experienceleague.adobe.com/nl?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=nl#dashboard/learning)
 * [&#x200B; AEM een Huis van Cloud Service &#x200B;](/help/overview/introduction.md) - voor een overzicht van de documentatie van Experience Manager as a Cloud Service, begin hier.
 * [&#x200B; het Overzicht van AEM as a Cloud Service &#x200B;](/help/overview/introduction.md) - Deze gids verstrekt een overzicht van Experience Manager als de dienst van de Wolk, met inbegrip van een inleiding, een terminologie, en een architectuur.
 * [&#x200B; Onboarding Reis &#x200B;](/help/journey-onboarding/overview.md) - Deze gids verstrekt een samenvatting van hoe te beginnen met Experience Manager as a Cloud Service, met inbegrip van hoe te om toegang en opstelling uw team te krijgen.

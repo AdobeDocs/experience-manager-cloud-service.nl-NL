@@ -33,7 +33,7 @@ Voor plaatsen die op Adobe Experience Manager lopen, is er &quot;uit de doos&quo
 
 De experimentatiestop - binnen wordt gebruikt binnen de context van [&#x200B; Edge Delivery Services &#x200B;](/help/edge/overview.md) zodat zult u een rekening van Github, een inhoudsbewaarplaats zoals de Aandrijving van SharePoint of van Google, en ook zult u [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/docs/sidekick) nodig hebben. Zie ook [&#x200B; Begonnen het Worden - de Universele pagina van het Leerprogramma van de Ontwikkelaar van de Redacteur &#x200B;](https://www.aem.live/developer/tutorial) en [&#x200B; Begonnen het worden - Leerprogramma van de Ontwikkelaar &#x200B;](https://www.aem.live/developer/tutorial).
 
-Nadat u alles opstelling hebt, **gelieve op deze video** te letten titelde [&#x200B; Onmiddellijke experimentatie &#x200B;](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) voor een korte demonstratie op hoe het experimenteren plug-in werkt.
+Nadat u alles opstelling hebt, **gelieve op deze video** te letten titelde [&#x200B; Onmiddellijke experimentatie &#x200B;](https://business.adobe.com/nl/products/experience-manager/sites/testing-optimization.html) voor een korte demonstratie op hoe het experimenteren plug-in werkt.
 
 ## Veelgebruikte termen {#frequently-used-terms}
 

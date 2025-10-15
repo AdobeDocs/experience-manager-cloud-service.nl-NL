@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Training voor slimme tags
 
-Met training voor slimme tags kunt u tags trainen, zodat u de gegevens kunt opgeven als de relevante tags niet aanwezig zijn. Het gebruikt een kunstmatig intelligent kader van [&#x200B; Adobe Sensei &#x200B;](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) om zijn algoritme van de beelderkenning op uw markeringsstructuur en bedrijfstaxonomie te trainen. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op geüploade elementen.
+Met training voor slimme tags kunt u tags trainen, zodat u de gegevens kunt opgeven als de relevante tags niet aanwezig zijn. Het gebruikt een kunstmatig intelligent kader van [&#x200B; Adobe Sensei &#x200B;](https://business.adobe.com/nl/why-adobe/experience-cloud-artificial-intelligence.html) om zijn algoritme van de beelderkenning op uw markeringsstructuur en bedrijfstaxonomie te trainen. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op geüploade elementen.
 
 ## Bepalen van de vereiste van training voor slimme tags {#smart-tag-training-requirement}
 

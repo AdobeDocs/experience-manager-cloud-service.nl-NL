@@ -19,7 +19,7 @@ Slimme tags zijn trefwoorden die niet alleen in de tekst worden weergegeven, maa
 
 Woorden die alfabetisch in een woordenboek zijn gerangschikt, zijn bijvoorbeeld gemakkelijker te vinden dan willekeurig verspreide woorden. Tags zijn een soortgelijk doel. Het organiseert activa volgens bedrijfstaxonomie, die ervoor zorgt dat de meest relevante degenen in onderzoeksresultaten verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven bij het ontwerpen van een promotiecampagne. Of gebruikers nu &#39;runners&#39; of &#39;loopschoenen&#39; labelen, gebruikers hoeven zich geen zorgen te maken over typos, spellingvariaties of andere zoektermen. Slimme tags herkennen ze allemaal.
 
-Op de achtergrond, gebruikt de functionaliteit het kunstmatig intelligente kader van [&#x200B; Adobe Sensei &#x200B;](https://business.adobe.com/products/sensei/adobe-sensei.html) automatisch Slimme Markeringen op geüploade activa-door gebrek-samen met tekst die aan de bedrijfstaxonomie wordt gericht.
+Op de achtergrond, gebruikt de functionaliteit het kunstmatig intelligente kader van [&#x200B; Adobe Sensei &#x200B;](https://business.adobe.com/nl/products/sensei/adobe-sensei.html) automatisch Slimme Markeringen op geüploade activa-door gebrek-samen met tekst die aan de bedrijfstaxonomie wordt gericht.
 
 ## Vereisten en configuratie {#smart-tags-prereqs-config}
 

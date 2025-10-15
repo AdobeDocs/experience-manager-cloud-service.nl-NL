@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Integreren met Adobe Target{#integrating-with-adobe-target}
 
-Als deel van Adobe Experience Cloud, [&#x200B; Adobe Target &#x200B;](https://business.adobe.com/products/target/adobe-target.html) laat u inhoudsrelevantie door het richten en het meten over alle kanalen verhogen. Adobe Target wordt door marketers gebruikt voor het ontwerpen en uitvoeren van online tests, het maken van on-the-fly publiekssegmenten (gebaseerd op gedrag) en het automatiseren van het richten van inhoud en online ervaringen. AEM as a Cloud Service heeft de workflow voor het opgeven van doelen overgenomen die wordt gebruikt in Adobe Target Standard. Als u Target gebruikt, bent u vertrouwd met de het richten het uitgeven milieu in AEM as a Cloud Service.
+Als deel van Adobe Experience Cloud, [&#x200B; Adobe Target &#x200B;](https://business.adobe.com/nl/products/target/adobe-target.html) laat u inhoudsrelevantie door het richten en het meten over alle kanalen verhogen. Adobe Target wordt door marketers gebruikt voor het ontwerpen en uitvoeren van online tests, het maken van on-the-fly publiekssegmenten (gebaseerd op gedrag) en het automatiseren van het richten van inhoud en online ervaringen. AEM as a Cloud Service heeft de workflow voor het opgeven van doelen overgenomen die wordt gebruikt in Adobe Target Standard. Als u Target gebruikt, bent u vertrouwd met de het richten het uitgeven milieu in AEM as a Cloud Service.
 
 Integreer uw AEM-sites met Adobe Target, zodat u de inhoud van uw pagina&#39;s kunt aanpassen:
 
