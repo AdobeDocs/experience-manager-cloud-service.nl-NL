@@ -61,9 +61,9 @@ Volg de onderstaande aanbevolen procedures om uw AEM-toepassing zonder koppen kl
 
 ## Distribueren naar productie {#deploy-to-production}
 
-Zodra u ervoor zorgt dat alles is getest en behoorlijk werkt, bent u bereid om uw codeupdates aan a [&#x200B; gecentraliseerde bewaarplaats van de it in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html) te duwen.
+Zodra u ervoor zorgt dat alles is getest en behoorlijk werkt, bent u bereid om uw codeupdates aan a [&#x200B; gecentraliseerde bewaarplaats van de it in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=nl-NL) te duwen.
 
-Nadat de updates aan Cloud Manager zijn geupload, kunnen zij aan AEM as a Cloud Service worden opgesteld gebruikend [&#x200B; Cloud Manager CI/CD pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+Nadat de updates aan Cloud Manager zijn geupload, kunnen zij aan AEM as a Cloud Service worden opgesteld gebruikend [&#x200B; Cloud Manager CI/CD pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=nl-NL).
 
 U kunt beginnen uw code op te stellen door de pijpleiding van Cloud Manager te gebruiken CI/CD, die uitgebreid onder [&#x200B; het Opstellen van de Pakketten van de Inhoud als Manager van Cloud Manager en van het Pakket &#x200B;](/help/implementing/deploying/overview.md) wordt behandeld.
 
@@ -129,8 +129,8 @@ Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga op het facu
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
-* [&#x200B; AEM Developer Portal &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [&#x200B; AEM Developer Portal &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
 * [Een overzicht van de implementatie op AEM as a Cloud Service](/help/implementing/deploying/overview.md)
-* [&#x200B; Gebruik Cloud Manager om Uw Code &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) op te stellen
-* [&#x200B; integreer de Bewaarplaats van het Git van Cloud Manager met een Externe Bewaarplaats van het Git en stel een Project aan AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html) op
+* [&#x200B; Gebruik Cloud Manager om Uw Code &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=nl-NL) op te stellen
+* [&#x200B; integreer de Bewaarplaats van het Git van Cloud Manager met een Externe Bewaarplaats van het Git en stel een Project aan AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=nl-NL) op
