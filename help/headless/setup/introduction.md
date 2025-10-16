@@ -4,37 +4,37 @@ description: Met deze snelstartgids leert u de basisprincipes van AEM as a Cloud
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 # Installatie zonder koppen {#introduction}
 
-Hieronder ziet u een eenvoudig pad voor het maken, beheren en leveren van ervaringen met AEM as a Cloud Service in vijf stappen voor gebruikers die al vertrouwd zijn met AEM en technologie zonder kop. Elke gids bouwt op het vorige voort, zodat wordt het geadviseerd om hen grondig en in orde te onderzoeken.
+Hieronder volgt een eenvoudig pad voor het maken, beheren en leveren van ervaringen met AEM as a Cloud Service in vijf stappen voor gebruikers die al vertrouwd zijn met AEM en technologie zonder kop (zodat ze naar de gedetailleerde documentatie verwijzen). Elke gids bouwt op het vorige voort, zodat wordt het geadviseerd om hen grondig en in orde te onderzoeken.
 
-1. [Een configuratie maken](create-configuration.md)
-1. [Een inhoudsfragmentmodel maken](create-content-model.md)
-1. [Een Assets-map maken](create-assets-folder.md)
-1. [Een inhoudsfragment maken](create-content-fragment.md)
-1. [Een API-aanvraag maken](create-api-request.md)
+1. [Een configuratie maken](/help/headless/setup/create-configuration.md)
+1. [Een fragmentmodel voor inhoud maken](/help/headless/setup/create-content-model.md)
+1. [Een Assets-map maken](/help/headless/setup/create-assets-folder.md)
+1. [Een inhoudsfragment maken](/help/headless/setup/create-content-fragment.md)
+1. [Een API-aanvraag maken](/help/headless/setup/create-api-request.md)
 
 >[!TIP]
 >
->Deze gids aan de slag veronderstelt kennis van zowel AEM als headless technologieën.
+>Deze gids aan de slag gaat uit van kennis van zowel AEM als headless technologieën.
 >
->Als u aan of AEM of zonder kop nieuw bent, zie de Dagboeken van de Documentatie van de Zwaartepunt van de Adobe voor een inleiding van begin tot eind aan zowel hoofd als hoe AEM het steunt.
+>Als u niet bekend bent met AEM of zonder kop, raadpleegt u Adobe Headless Documentation Jourards voor een volledige introductie van zowel de kop als de manier waarop AEM dit ondersteunt.
 >
->* [&#x200B; Zwaardeloze Reis van de Ontwikkelaar &#x200B;](/help/journey-headless/developer/overview.md)
->* [&#x200B; Zwaardeloze Reis van de Architect van de Inhoud &#x200B;](/help/journey-headless/architect/overview.md)
->* [&#128279;](/help/journey-headless/author/overview.md) Reis van de Auteur van de Inhoud zonder hoofd 
->* [&#x200B; Zwaardeloze Vertaalreis &#x200B;](/help/journey-headless/translation/overview.md).
+>* [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md)
+>* [ Zwaardeloze Reis van de Architect van de Inhoud ](/help/journey-headless/architect/overview.md)
+>* [ Reis van de Auteur van de Inhoud zonder hoofd ](/help/journey-headless/author/overview.md)
+>* [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md).
 
 ## Publiek {#audience}
 
-De beschreven taken zijn noodzakelijk voor een basisdemonstratie van begin tot eind van AEM capaciteit zonder kop. Iedereen met beheerdertoegang tot een test AEM instantie kan deze gidsen volgen om hoofdloze levering in AEM te begrijpen, hoewel iemand met ontwikkelaarservaring ideaal is.
+De beschreven taken zijn nodig voor een eenvoudige end-to-end demonstratie van AEM-mogelijkheden zonder kop. Iedereen met beheerdertoegang tot een AEM-testinstantie kan deze handleidingen volgen om koploze levering in AEM te begrijpen, hoewel iemand met ontwikkelaarservaring ideaal is.
 
 In een productiesituatie worden de taken echter meerdere malen door verschillende personen uitgevoerd. Bijvoorbeeld:
 
@@ -44,4 +44,4 @@ In een productiesituatie worden de taken echter meerdere malen door verschillend
 
 ## Volgende stap {#next-step}
 
-Klaar om meer te leren? Dan begin door het eerste deel van de Opstelling zonder Koppen te lezen: [&#x200B; Creërend een Configuratie &#x200B;](create-configuration.md).
+Klaar om meer te leren? Dan begin door het eerste deel van de Opstelling zonder Koppen te lezen: [ Creërend een Configuratie ](create-configuration.md).

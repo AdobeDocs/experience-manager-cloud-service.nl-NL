@@ -1,26 +1,26 @@
 ---
-title: Beste praktijken voor de opstelling en het gebruik van AEM GraphQL met Inhoudsfragmenten
-description: Leer de geadviseerde Beste praktijken voor de opstelling en het gebruik van AEM GraphQL met de Fragments van de Inhoud.
+title: Aanbevolen procedures voor het instellen en gebruiken van AEM GraphQL met Content Fragments
+description: Leer de geadviseerde Beste praktijken voor de opstelling en het gebruik van AEM GraphQL met Inhoudsfragmenten.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 1%
 
 ---
 
-# Beste praktijken voor de opstelling en het gebruik van AEM GraphQL met Inhoudsfragmenten{#best-practices-setup-use-aem-graphql-content-fragments}
+# Aanbevolen procedures voor het instellen en gebruiken van AEM GraphQL met Content Fragments{#best-practices-setup-use-aem-graphql-content-fragments}
 
-Deze richtlijnen vatten de geadviseerde beste praktijken voor vestiging samen, vormend en het gebruiken AEM met GraphQL en de Fragments van de Inhoud.
+In deze richtlijnen wordt een overzicht gegeven van de aanbevolen aanbevolen procedures voor het instellen, configureren en gebruiken van AEM met GraphQL en Content Fragments.
 
 ## Aan de slag {#getting-started}
 
 Zo kunt u sneller:
 
 * [Wat is Headless?](/help/headless/what-is-headless.md)
-* Een overzicht van de diverse milieu&#39;s in de AEM [&#x200B; Architectuur &#x200B;](/help/headless/deployment/architecture.md)
+* Een overzicht van de diverse milieu&#39;s in de Architectuur van AEM [ ](/help/headless/deployment/architecture.md)
 
 ## Instellen {#setup}
 
@@ -40,7 +40,7 @@ De eindpunten moeten worden gevormd in:
 
 * Auteur
 * Voorvertoning
-* Publish
+* Publiceren
 
 Voor:
 
@@ -51,7 +51,7 @@ Voor:
 ### AEM Dispatcher in cache plaatsen {#dispatcher-caching}
 
 >[!NOTE]
->Als het in het voorgeheugen onderbrengen in Dispatcher dan wordt toegelaten is de [&#x200B; opstelling CORS &#x200B;](#cors-setup) niet nodig, en kan zo worden genegeerd.
+>Als het in het voorgeheugen onderbrengen in Dispatcher dan wordt toegelaten is de [ opstelling CORS ](#cors-setup) niet nodig, en kan zo worden genegeerd.
 
 Het in cache plaatsen van doorlopende query&#39;s is niet standaard ingeschakeld in de Dispatcher. Standaardactivering is niet mogelijk omdat klanten die gebruikmaken van CORS (Cross-Origin Resource Sharing) met meerdere origines hun Dispatcher-configuratie moeten controleren en mogelijk bijwerken.
 
@@ -63,14 +63,14 @@ Het in cache plaatsen van doorlopende query&#39;s is niet standaard ingeschakeld
 
 De Dispatcher is gewoonlijk geconfigureerd voor:
 
-* Publish: productie
+* Publiceren: productie
 
 ### CORS instellen {#cors-setup}
 
 >[!NOTE]
->Als caching in [&#x200B; AEM Dispatcher &#x200B;](#dispatcher-caching) wordt toegelaten dan is de opstelling CORS niet nodig, en zo kan deze sectie worden genegeerd.
+>Als caching in [ AEM Dispatcher ](#dispatcher-caching) wordt toegelaten dan is de opstelling CORS niet nodig, en zo kan deze sectie worden genegeerd.
 
-Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden gevormd en aan een AEM Project worden toegevoegd dat aan AEM via Cloud Manager wordt opgesteld. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen.
+Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden gevormd en aan een Project van AEM worden toegevoegd dat aan AEM via Cloud Manager wordt opgesteld. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen.
 
 #### Details {#details-cors-setup}
 
@@ -80,7 +80,7 @@ Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden g
 
 CORS wordt gewoonlijk geconfigureerd voor:
 
-* Publish: productie
+* Publiceren: productie
 
 ### Verificatie {#authentication}
 
@@ -95,7 +95,7 @@ Een van de belangrijkste gebruiksscenario&#39;s voor de Adobe Experience Manager
 De authentificatie wordt gewoonlijk gevormd voor:
 
 * Voorvertoning
-* Publish
+* Publiceren
 
 Voor:
 
@@ -105,7 +105,7 @@ Voor:
 
 ### Machtigingen {#permissions}
 
-Met een implementatie zonder kop zijn er verschillende gebieden met beveiliging en machtigingen die moeten worden aangepakt. De toestemmingen en de personen kunnen globaal worden overwogen gebaseerd op het AEM milieu **Auteur** of **Publish**. Elke omgeving bevat verschillende personen en met verschillende behoeften.
+Met een implementatie zonder kop zijn er verschillende gebieden met beveiliging en machtigingen die moeten worden aangepakt. De toestemmingen en de personen kunnen globaal worden overwogen gebaseerd op het milieu van AEM **Auteur** of **publiceren**. Elke omgeving bevat verschillende personen en met verschillende behoeften.
 
 #### Details {#details-permissions}
 
@@ -117,7 +117,7 @@ De toestemmingen worden gewoonlijk gevormd voor:
 
 * Auteur
 * Voorvertoning
-* Publish
+* Publiceren
 
 Voor:
 
@@ -137,11 +137,11 @@ GraphQL-query&#39;s en hun JSON-antwoorden kunnen in de cache worden geplaatst a
 
 Een CDN wordt gewoonlijk gevormd voor:
 
-* Publish: productie
+* Publiceren: productie
 
 ### Inhoudsfragmenten configureren en maken {#cconfigure-create-content-fragments}
 
-AEM GraphQL wordt gebruikt om informatie van uw Contentfragmenten terug te winnen. Deze moeten worden gevormd, dan wordt een structuur en een plaats bepaald, alvorens u de inhoud kunt tot stand brengen.
+AEM GraphQL wordt gebruikt om informatie op te halen uit uw inhoudsfragmenten. Deze moeten worden gevormd, dan wordt een structuur en een plaats bepaald, alvorens u de inhoud kunt tot stand brengen.
 
 #### Details {#details-content-fragments}
 
@@ -156,7 +156,7 @@ Inhoudsfragmenten worden gedefinieerd, geschreven, getest, gepubliceerd en geope
 
 * Auteur
 * Voorvertoning
-* Publish
+* Publiceren
 
 Voor:
 
@@ -176,24 +176,24 @@ Deze richtlijnen zijn bedoeld om prestatieproblemen met uw GraphQL-query&#39;s t
 
 >[!NOTE]
 >
->De optimalisatierichtlijnen behandelen geheim voorgeheugenconfiguratie, reeds behandeld in [&#x200B; Opstelling &#x200B;](#setup).
+>De optimalisatierichtlijnen behandelen geheim voorgeheugenconfiguratie, reeds behandeld in [ Opstelling ](#setup).
 
 ### GraphQL openen vanuit uw apps {#access-graphql-from-your-apps}
 
-AEM CMS zonder kop geeft ontwikkelaars de vrijheid om uitzonderlijke ervaringen op te bouwen en te leveren met behulp van de talen, frameworks en tools die ze al kennen.
+AEM headless CMS geeft ontwikkelaars de vrijheid om uitzonderlijke ervaringen op te bouwen en te leveren met behulp van de talen, frameworks en tools die ze al kennen.
 
 #### Details {#details-your-apps}
 
-* [&#x200B; installeer, en gebruik, AEM SDK voor ontwikkeling &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=nl-NL)
-* [&#x200B; AEM Headless Developer Resources &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
-* De voorbeelden, met inbegrip van [&#x200B; Reageren &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=nl-NL), [&#x200B; Next.js &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html?lang=nl-NL), [&#x200B; Node.js &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html?lang=nl-NL), onder andere
+* [ installeer, en gebruik, AEM SDK voor ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
+* [ AEM Headless Developer Resources ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* De voorbeelden, met inbegrip van [ Reageren ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [ Next.js ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [ Node.js ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), onder andere
 
 #### Omgevingen {#environments-your-apps}
 
 Apps worden gewoonlijk ontwikkeld, getest en gebruikt op:
 
 * Voorvertoning
-* Publish
+* Publiceren
 
 Voor:
 
@@ -205,6 +205,6 @@ Voor:
 
 Raadpleeg de volgende secties voor meer informatie over AEM GraphQL en Content Fragments:
 
-* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
+* [AEM GraphQL API voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
 * [GraphiQL IDE gebruiken](/help/headless/graphql-api/graphiql-ide.md)
-* [&#x200B; AEM Headless Developer Resources &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [ AEM Headless Developer Resources ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

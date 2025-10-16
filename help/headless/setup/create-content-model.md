@@ -4,9 +4,9 @@ description: Definieer de structuur van de inhoud die u wilt maken en gebruiken 
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: b76898409291fef85733e75405e65152424e2d41
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -17,58 +17,28 @@ Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp va
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
-[&#x200B; nu dat u een configuratie &#x200B;](create-configuration.md) hebt gecreeerd, kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
+[ nu dat u een configuratie ](create-configuration.md) hebt gecreeerd, kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
 
 Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u maakt en beheert in AEM. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een model voor inhoudsfragmenten dat u definieert en dat hen bij het maken van inhoud begeleidt.
 
 ## Een model voor een inhoudsfragment maken {#how-to-create-a-content-fragment-model}
 
-Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist. Om aan de slag te kunnen gaan, hoeven we maar één model te maken.
+Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist.
 
-1. Logboek in AEM as a Cloud Service en van het belangrijkste menu selecteert **Hulpmiddelen**, **Algemeen**, **Modellen van het Fragment van de Inhoud**.
-1. Selecteer de map die u hebt gemaakt door uw configuratie te maken.
+U moet de volgende stappen uitvoeren om een gebruiksklaar model te maken:
 
-   ![&#x200B; de modellenomslag &#x200B;](../assets/models-folder.png)
-1. Selecteer **creeer**.
-1. Verstrek a **ModelTitel**, **Markeringen** en **Beschrijving**. U kunt ook selecteren/deselecteren **laat model** toe om te controleren of het model onmiddellijk op verwezenlijking wordt toegelaten.
-
-   ![&#x200B; creeer een model &#x200B;](../assets/models-create.png)
-1. In het bevestigingsvenster, uitgezochte **Open** om uw model te vormen.
-
-   ![&#x200B; Bevestigingsvenster &#x200B;](../assets/models-confirmation.png)
-1. Gebruikend de **ModelRedacteur van het Fragment van de Inhoud**, bouwt uw Model van het Fragment van de Inhoud door gebieden van de **3&rbrace; kolom van de Types van Gegevens te slepen en te laten vallen.**
-
-   ![&#x200B; belemmering en dalingsgebieden &#x200B;](../assets/models-drag-and-drop.png)
-
-1. Nadat u een veld hebt geplaatst, moet u de eigenschappen ervan configureren. De redacteur zal automatisch aan het **lusje van Eigenschappen** voor het toegevoegde gebied schakelen waar u de verplichte gebieden kunt verstrekken.
-
-   ![&#x200B; vorm eigenschappen &#x200B;](../assets/models-configure-properties.png)
-
-1. Wanneer u wordt gebeëindigd bouwend uw model, uitgezocht **sparen**.
-
-1. De wijze van het gecreeerde model hangt van af of u **Model** selecteerde toen het creëren van het model:
-   * geselecteerd - het nieuwe model zal reeds **Toegelaten** zijn
-   * niet geselecteerd - het nieuwe model wordt gecreeerd op **1&rbrace; wijze van het Ontwerp &lbrace;**
-
-1. Als niet reeds toegelaten, moet het model **&#x200B;**&#x200B;worden toegelaten om het te gebruiken.
-   1. Selecteer het model u creeerde en selecteer dan **toelaten**.
-
-      ![&#x200B; toelatend het model &#x200B;](../assets/models-enable.png)
-   1. Bevestig toelatend het model door te tikken of **te klikken laat** in de bevestigingsdialoog toe.
-
-      ![&#x200B; toelatend bevestigingsdialoog &#x200B;](../assets/models-enabling.png)
-1. Het model is nu ingeschakeld en klaar voor gebruik.
-
-   ![&#x200B; toegelaten Model &#x200B;](../assets/models-enabled.png)
-
-De **ModelRedacteur van het Fragment van de Inhoud** steunt vele verschillende gegevenstype zoals eenvoudige tekstgebieden, activaverwijzingen, verwijzingen naar andere modellen, en gegevens JSON.
-
-U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfragmenten. Gebruik [&#x200B; configuraties &#x200B;](create-configuration.md) om uw modellen te organiseren.
+* [Een fragmentmodel voor inhoud maken](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)
+* [Het model van het inhoudsfragment inschakelen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-a-content-fragment-model)
+* [Definieer uw model voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Uw model voor inhoudsfragmenten publiceren](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)
 
 ## Volgende stappen {#next-steps}
 
-Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [&#x200B; creeert omslagen waar u de fragmenten zelf &#x200B;](create-assets-folder.md) zult opslaan.
+Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [ creeert omslagen waar u de fragmenten zelf ](create-assets-folder.md) zult opslaan.
 
 >[!TIP]
 >
->Voor volledige details over de Modellen van het Fragment van de Inhoud, zie de [&#x200B; documentatie van de Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+>Zie voor volledige informatie over modellen van inhoudsfragmenten:
+>
+>* [ het Leiden Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [ het bepalen van Modellen van het Fragment van Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
