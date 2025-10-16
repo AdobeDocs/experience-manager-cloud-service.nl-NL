@@ -17,7 +17,7 @@ Leer hoe u AEM Content Fragments kunt gebruiken om pagina-onafhankelijke inhoud 
 
 ## Wat zijn inhoudsfragmenten? {#what-are-content-fragments}
 
-[ nu dat u een activa omslag ](create-assets-folder.md) hebt gecreeerd waar u uw Fragmenten van de Inhoud kunt opslaan, kunt u de fragmenten nu tot stand brengen!
+[&#x200B; nu dat u een activa omslag &#x200B;](create-assets-folder.md) hebt gecreeerd waar u uw Fragmenten van de Inhoud kunt opslaan, kunt u de fragmenten nu tot stand brengen!
 
 Inhoudsfragmenten bevatten gestructureerde inhoud waarmee u paginaonafhankelijke inhoud kunt ontwerpen, maken, beheren en publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties en via meerdere kanalen.
 
@@ -33,15 +33,15 @@ De stappen voor het maken van een inhoudsfragment voor gebruik:
 
 Inhoudsfragmenten kunnen verwijzen naar andere inhoudsfragmenten, waarbij zo nodig een geneste inhoudsstructuur mogelijk is.
 
-Inhoudsfragmenten kunnen ook verwijzen naar andere elementen in AEM. [ Deze activa moeten in AEM ](/help/assets/manage-digital-assets.md) worden opgeslagen alvorens een het van verwijzingen voorzien Fragment van de Inhoud te creëren.
+Inhoudsfragmenten kunnen ook verwijzen naar andere elementen in AEM. [&#x200B; Deze activa moeten in AEM &#x200B;](/help/assets/manage-digital-assets.md) worden opgeslagen alvorens een het van verwijzingen voorzien Fragment van de Inhoud te creëren.
 
 ## Volgende stappen {#next-steps}
 
-Nu u een Fragment van de Inhoud hebt gecreeerd, kunt u zich op het definitieve deel van het begonnen worden gids bewegen en [ creeer API verzoeken om tot inhoudsfragmenten toegang te hebben en te leveren ](create-api-request.md).
+Nu u een Fragment van de Inhoud hebt gecreeerd, kunt u zich op het definitieve deel van het begonnen worden gids bewegen en [&#x200B; creeer API verzoeken om tot inhoudsfragmenten toegang te hebben en te leveren &#x200B;](create-api-request.md).
 
 >[!TIP]
 >
 >Voor volledige details over het beheren van de Fragmenten van de Inhoud, zie:
 >
 >* [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/managing.md)
->* [ Authoring Inhoudsfragmenten ](/help/sites-cloud/administering/content-fragments/authoring.md)
+>* [&#x200B; Authoring Inhoudsfragmenten &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md)

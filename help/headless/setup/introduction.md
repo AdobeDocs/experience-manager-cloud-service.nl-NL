@@ -27,10 +27,10 @@ Hieronder volgt een eenvoudig pad voor het maken, beheren en leveren van ervarin
 >
 >Als u niet bekend bent met AEM of zonder kop, raadpleegt u Adobe Headless Documentation Jourards voor een volledige introductie van zowel de kop als de manier waarop AEM dit ondersteunt.
 >
->* [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md)
->* [ Zwaardeloze Reis van de Architect van de Inhoud ](/help/journey-headless/architect/overview.md)
->* [ Reis van de Auteur van de Inhoud zonder hoofd ](/help/journey-headless/author/overview.md)
->* [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md).
+>* [&#x200B; Zwaardeloze Reis van de Ontwikkelaar &#x200B;](/help/journey-headless/developer/overview.md)
+>* [&#x200B; Zwaardeloze Reis van de Architect van de Inhoud &#x200B;](/help/journey-headless/architect/overview.md)
+>* [&#x200B; Reis van de Auteur van de Inhoud zonder hoofd &#x200B;](/help/journey-headless/author/overview.md)
+>* [&#x200B; Zwaardeloze Vertaalreis &#x200B;](/help/journey-headless/translation/overview.md).
 
 ## Publiek {#audience}
 
@@ -44,4 +44,4 @@ In een productiesituatie worden de taken echter meerdere malen door verschillend
 
 ## Volgende stap {#next-step}
 
-Klaar om meer te leren? Dan begin door het eerste deel van de Opstelling zonder Koppen te lezen: [ Creërend een Configuratie ](create-configuration.md).
+Klaar om meer te leren? Dan begin door het eerste deel van de Opstelling zonder Koppen te lezen: [&#x200B; Creërend een Configuratie &#x200B;](create-configuration.md).
