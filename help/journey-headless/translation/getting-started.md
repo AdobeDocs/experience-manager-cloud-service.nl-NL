@@ -193,4 +193,4 @@ Terwijl wordt geadviseerd dat u zich op het volgende deel van de hoofdloze verta
 * [&#x200B; Vormend het Kader van de Integratie van de Vertaling &#x200B;](/help/sites-cloud/administering/translation/integration-framework.md) - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
 * [&#x200B; het Leiden Vertaalprojecten &#x200B;](/help/sites-cloud/administering/translation/managing-projects.md) - leer hoe te om zowel machine als menselijke vertaalprojecten in AEM tot stand te brengen en te leiden.
 * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
-* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
