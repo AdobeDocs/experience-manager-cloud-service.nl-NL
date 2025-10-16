@@ -184,9 +184,9 @@ AEM headless CMS geeft ontwikkelaars de vrijheid om uitzonderlijke ervaringen op
 
 #### Details {#details-your-apps}
 
-* [&#x200B; installeer, en gebruik, AEM SDK voor ontwikkeling &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
-* [&#x200B; AEM Headless Developer Resources &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* De voorbeelden, met inbegrip van [&#x200B; Reageren &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [&#x200B; Next.js &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [&#x200B; Node.js &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), onder andere
+* [&#x200B; installeer, en gebruik, AEM SDK voor ontwikkeling &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=nl-NL)
+* [&#x200B; AEM Headless Developer Resources &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* De voorbeelden, met inbegrip van [&#x200B; Reageren &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=nl-NL), [&#x200B; Next.js &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [&#x200B; Node.js &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html?lang=nl-NL), onder andere
 
 #### Omgevingen {#environments-your-apps}
 
@@ -207,4 +207,4 @@ Raadpleeg de volgende secties voor meer informatie over AEM GraphQL en Content F
 
 * [AEM GraphQL API voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
 * [GraphiQL IDE gebruiken](/help/headless/graphql-api/graphiql-ide.md)
-* [&#x200B; AEM Headless Developer Resources &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [&#x200B; AEM Headless Developer Resources &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
