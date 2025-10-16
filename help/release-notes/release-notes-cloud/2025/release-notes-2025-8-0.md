@@ -18,7 +18,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -75,12 +75,12 @@ Dynamische media met OpenAPI-URL&#39;s leesbaarder maken door Vanity-URL&#39;s t
 
 >[!NOTE]
 >
->Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [&#x200B; tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
+>Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [&#x200B; tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
-* [&#x200B; Component van de Invoer van de Datum &amp; van de Tijd &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): Een component van de Datum &amp; van de Tijd is nu beschikbaar, toelatend gebruikers om zowel datum en tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
-* [&#x200B; Verbeterde de Behandeling van de Fout voor Dossier uploadt &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): De component van de Bijlage van het Dossier bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
+* [&#x200B; Component van de Invoer van de Datum &amp; van de Tijd &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): Een component van de Datum &amp; van de Tijd is nu beschikbaar, toelatend gebruikers om zowel datum en tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
+* [&#x200B; Verbeterde de Behandeling van de Fout voor Dossier uploadt &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): De component van de Bijlage van het Dossier bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
 * [&#x200B; specificeerde de Reactie van de Fout voor Douane legt Actie &#x200B;](/help/forms/custom-submit-action-troubleshooting.md) voor: Wanneer een douane voorlegt actie een niet behandelde fout ontmoet, foutencode 502 is teruggekeerd. Dit helpt identificeren dat de kwestie met de douane verwant is voorlegt actie, die het zuiveren gemakkelijker maakt.
 * [&#x200B; exclusief Verborgen Gebieden van Document van Verslag &#x200B;](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): Een nieuw bezit is toegevoegd om uitsluiting van verborgen gebieden van het Document van Verslag toe te staan. Deze optie is standaard niet geselecteerd en is van toepassing op alle formuliervelden.
 
@@ -101,7 +101,7 @@ Dynamische media met OpenAPI-URL&#39;s leesbaarder maken door Vanity-URL&#39;s t
 
 ### Functies voor vroege adopters in AEM Forms
 
-* [&#x200B; de Component van de Handtekening van de Krabbels &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): U kunt de component van de Handtekening nu gebruiken om gebruikers te helpen hun handtekeningen aan een vorm, zoals in een overeenkomstenvorm toevoegen. Met de component kunnen gebruikers hun handtekening rechtstreeks in het formulier tekenen met een muis, pen of touchscreen.
+* [&#x200B; de Component van de Handtekening van de Krabbels &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): U kunt de component van de Handtekening nu gebruiken om gebruikers te helpen hun handtekeningen aan een vorm, zoals in een overeenkomstenvorm toevoegen. Met de component kunnen gebruikers hun handtekening rechtstreeks in het formulier tekenen met een muis, pen of touchscreen.
 * [&#x200B; Directe API Integratie in de Redacteur van de Regel &#x200B;](/help/forms/api-integration-in-rule-editor.md): De adaptieve Forms steunt nu directe API integratie in de Visuele Redacteur van de Regel zonder een Model van de Gegevens van de Vorm te vereisen. Auteurs kunnen API&#39;s configureren met behulp van een URL- of cURL-import, invoer-/uitvoerparameters toewijzen en aanroepen beveiligen met verificatie.
 
 <!--
@@ -216,7 +216,7 @@ Leer meer in het [&#x200B; logboek door:sturen documentatie &#x200B;](/help/impl
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -236,4 +236,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [&#x200B; hier 
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
