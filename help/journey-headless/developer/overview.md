@@ -6,9 +6,9 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: f9634228fed8c194f1bdcdc9a368d4c0492b7fd5
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '930'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Leer over de krachtige en flexibele functies zonder koppen, hun mogelijkheden en
 >id="aemcloud_headless_developer_resources"
 >title="AEM Headless-ontwikkelaarsbronnen en geavanceerde documentatie"
 >abstract="Alles wat u nodig hebt om meer te leren over CMS zonder kop en betere toepassingen en snellere ervaringen te maken en te verzenden."
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL" text="AEM Headless developer-bronnen"
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html" text="AEM Headless developer-bronnen"
 
 
 ## Inleiding {#introduction}
@@ -35,10 +35,6 @@ Deze gids leidt u door hoofdloze implementatieonderwerpen in AEM zodat wanneer u
 * U moet goed begrijpen wat de inhoud zonder kop levert en wat de voordelen ervan zijn.
 * Begrijp de baanloze AEM-functies en hoe ze samenwerken om een eindeloze ervaring te bieden.
 * Voer de eerste stappen uit om uw eerste AEM-project zonder kop uit te voeren.
-
->[!TIP]
->
-> Als u verkiest om **te leren door** te doen en bestaande kennis van AEM te hebben, bezoek de Hoofdloze zelfstudies van AEM, die door API en kader worden georganiseerd en in de [&#x200B; Aanvullende sectie van Middelen &#x200B;](#additional-resources) aan het eind van dit document beschikbaar zijn.
 
 ## Publiek {#audience}
 
@@ -62,39 +58,33 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, zijn veel
 | Aantal | Artikel | Beschrijving |
 |---|---|---|
 | 0 | AEM Headless Developer Journey | Dit document |
-| 1 | [&#x200B; Leer over de Hoofdloze Ontwikkeling van CMS &#x200B;](learn-about.md) | Meer informatie over Headless Technology en wanneer u deze gebruikt. |
-| 2 | [&#x200B; Begonnen het Worden met AEM Headless as a Cloud Service &#x200B;](getting-started.md) | Meer informatie over AEM Headless-vereisten |
-| 3 | [&#x200B; Weg aan uw eerste ervaring gebruikend de Zetel van AEM &#x200B;](path-to-first-experience.md) | Stel uw ontwikkelomgeving in en leer hoe u een eenvoudige app kunt integreren met AEM Headless |
-| 4 | [&#x200B; hoe te om uw inhoud &#x200B;](model-your-content.md) te modelleren | Leer hoe u uw inhoudsstructuur kunt modelleren. |
-| 5 | [&#x200B; hoe te om tot uw inhoud via levering APIs van AEM toegang te hebben &#x200B;](access-your-content.md) | Leer hoe u GraphQL-query&#39;s gebruikt om toegang te krijgen tot inhoud van Content Fragments. |
-| 6 | [&#x200B; hoe te om uw inhoud via AEM Assets APIs bij te werken &#x200B;](update-your-content.md) | Leer hoe u REST API kunt gebruiken om de inhoud van Content Fragments te openen en bij te werken. |
-| 7 | [&#x200B; hoe te om het allen samen te zetten - uw app en uw inhoud in AEM Headless &#x200B;](put-it-all-together.md) | Leer hoe u uw AEM-project kunt nemen en voorbereiden op live gaan met de AEM Headless SDK. |
-| 8 | [&#x200B; hoe te om met uw headless toepassing te gaan &#x200B;](go-live.md) | Leer hoe u de toepassing live kunt implementeren en uw lokale code in Git kunt plaatsen en naar Cloud Manager Git voor CI/CD-pijpleiding kunt verplaatsen. |
-| 9 | [&#x200B; Facultatief - hoe te om enige paginatoepassingen (SPAs) met AEM &#x200B;](create-spa.md) tot stand te brengen | Onderzoek hoe te om krachtige en zonder kop levering te combineren en te leren hoe u editable SPAs kunt tot stand brengen gebruikend het kader van de Redacteur van het KUUROORD van AEM. |
+| 1 | [ Leer over de Hoofdloze Ontwikkeling van CMS ](learn-about.md) | Meer informatie over Headless Technology en wanneer u deze gebruikt. |
+| 2 | [ Begonnen het Worden met AEM Headless as a Cloud Service ](getting-started.md) | Meer informatie over AEM Headless-vereisten |
+| 3 | [ Weg aan uw eerste ervaring gebruikend de Zetel van AEM ](path-to-first-experience.md) | Stel uw ontwikkelomgeving in en leer hoe u een eenvoudige app kunt integreren met AEM Headless |
+| 4 | [ hoe te om uw inhoud ](model-your-content.md) te modelleren | Leer hoe u uw inhoudsstructuur kunt modelleren. |
+| 5 | [ hoe te om tot uw inhoud via levering APIs van AEM toegang te hebben ](access-your-content.md) | Leer hoe u GraphQL-query&#39;s gebruikt om toegang te krijgen tot inhoud van Content Fragments. |
+| 6 | [ hoe te om uw inhoud via AEM Assets APIs bij te werken ](update-your-content.md) | Leer hoe u REST API kunt gebruiken om de inhoud van Content Fragments te openen en bij te werken. |
+| 7 | [ hoe te om het allen samen te zetten - uw app en uw inhoud in AEM Headless ](put-it-all-together.md) | Leer hoe u uw AEM-project kunt nemen en voorbereiden op live gaan met de AEM Headless SDK. |
+| 8 | [ hoe te om met uw headless toepassing te gaan ](go-live.md) | Leer hoe u de toepassing live kunt implementeren en uw lokale code in Git kunt plaatsen en naar Cloud Manager Git voor CI/CD-pijpleiding kunt verplaatsen. |
+| 9 | [ Facultatief - hoe te om enige paginatoepassingen (SPAs) met AEM ](create-spa.md) tot stand te brengen | Onderzoek hoe te om krachtige en zonder kop levering te combineren en te leren hoe u editable SPAs kunt tot stand brengen gebruikend het kader van de Redacteur van het KUUROORD van AEM. |
 
 {style="table-layout:auto"}
 
 ## Volgende functies {#what-is-next}
 
-Ga aan de slag door het volgende artikel uit te checken: [&#x200B; Leer meer over CMS Headless Development &#x200B;](learn-about.md) ,
-
-### Kies uw eigen avontuur {#choose-your-path}
-
-Wil je in je eigen tempo leren? Bekijk de volgende opties:
-
-* Als u verkiest om **over headless concepten en AEM te blijven leren zonder kop technologieën**, zou u uw reis zonder kop van AEM moeten voortzetten zoals geadviseerd door het document [&#x200B; te herzien hoe te Uw Inhoud als Modellen van de Inhoud van AEM te modelleren &#x200B;](model-your-content.md) waar u leert hoe te om uw inhoudsstructuur in AEM te modelleren.
-* Als u verkiest om **te leren door** te doen, kunt u aan [&#x200B; springen Begonnen het Worden met AEM Headless hands-on leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL) waar u direct in de Zwaarloze ontwikkeling van AEM zult springen door een eenvoudig project uit te voeren om de inhoud van AEM zonder kop bloot te stellen.
+Ga aan de slag door het volgende artikel uit te checken: [ Leer meer over CMS Headless Development ](learn-about.md) ,
 
 ## Aanvullende bronnen {#additional-resources}
 
 Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal te bieden dat u door verwante processen en functies begeleidt. Een reis illustreert hoe de veelvoudige eigenschappen samenwerken om één enkele bedrijfsbehoefte te dienen.
 
+Als u liever wilt leren door AEM te doen en er al kennis van hebt, neemt u onze praktische zelfstudies die zijn georganiseerd door API en framework, die het maken en gebruiken van toepassingen die zijn gebaseerd op AEM Headless onderzoeken. Zie [ Leerprogramma&#39;s voor Hoofdtelefoon in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html).
+
 Bekijk deze extra ritten voor meer informatie over hoe de krachtige functies van AEM samenwerken.
 
-* Het [&#x200B; Portaal van de Ontwikkelaar van AEM &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
-* [&#x200B; Hoofdloze zelfstudies van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - als u verkiest te leren door bestaande kennis van AEM te doen en te hebben, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op AEM Headless worden gebouwd.
-* [&#x200B; de Vertaalreis van 0&rbrace; AEM Headless &#x200B;](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in headless technologie, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
-* [&#x200B; Koploze het Authoring Reis &#x200B;](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
-* [&#x200B; Eis van de Architect zonder hoofd &#x200B;](/help/journey-headless/architect/overview.md) - Begin hier voor een inleiding aan de krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager as a Cloud Service, en hoe te om inhoud voor uw project te modelleren.
-* [&#x200B; de technische documentatie van AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, controleer onze diepgaande technische documenten.
+* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ de Vertaalreis van 0} AEM Headless ](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in headless technologie, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
+* [ Koploze het Authoring Reis ](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
+* [ Eis van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) - Begin hier voor een inleiding aan de krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager as a Cloud Service, en hoe te om inhoud voor uw project te modelleren.
+* [ de technische documentatie van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, controleer onze diepgaande technische documenten.
    * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)

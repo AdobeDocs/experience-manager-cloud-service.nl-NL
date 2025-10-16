@@ -5,9 +5,9 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
+source-git-commit: 29c9b47fe10fd4109190ec91990e8ba7a0359f72
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [&#x200B; Reis van de Auteur van de Inhoud van AEM Headless &#x200B;](overview.md) de [&#x200B; Grondbeginselen van de Modellering van de Inhoud voor Zwaartepunt met AEM &#x200B;](basics.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Grondbeginselen van de Modellering van de Inhoud voor Zwaartepunt met AEM ](basics.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
 Dit artikel bouwt verder op deze principes zodat u begrijpt hoe u uw eigen modellen van het Fragment van de Inhoud voor uw project zonder titel van AEM creeert.
 
@@ -24,21 +24,6 @@ Dit artikel bouwt verder op deze principes zodat u begrijpt hoe u uw eigen model
 
 * **Publiek**: Begin
 * **Doelstelling**: de concepten en de mechanica van het modelleren van inhoud voor uw Hoofdloze CMS gebruikend de Modellen van de Fragmenten van de Inhoud.
-
-<!-- which persona does this? -->
-<!-- and who allows the configuration on the folders? -->
-
-<!--
-## Enabling Content Fragment Models {#enabling-content-fragment-models}
-
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
-
-![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
-
->[!NOTE]
->
->See Additional Resources - Content Fragments in the Configuration Browser
--->
 
 ## Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
 
@@ -50,45 +35,31 @@ Vervolgens kunt u de modellen van Content Fragments maken en de structuur defini
 
 1. Het gebruik **leidt** tot om de **Nieuwe dialoog van het Fragmentmodel van de Inhoud** te openen.
 
-   ![&#x200B; Titel en beschrijving &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
+   ![ Titel en beschrijving ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
 1. De details invullen
 
 1. Het gebruik **creeert** om het lege model te bewaren, of **creeert en opent**.
 
-<!--
-Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
-
-![Content Fragment Models in Tools](assets/cfm-tools.png)
-
-After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
-
-The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
-
-![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
-
-Confirm with **Create** and you can then **Open** your model to start defining the structure.
--->
-
 ## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
-Wanneer u eerst een nieuw model opent u ziet - een grote lege ruimte aan de linkerzijde, en een lange lijst van **Types van Gegevens** bij het recht:
+Wanneer u eerst een nieuw model opent u ziet - een grote (eerlijk) lege ruimte in het midden, een lange lijst van **Types van Gegevens** bij de linkerzijde, en **Eigenschappen** (leeg bij het begin, aangezien zij voor het geselecteerde gebied) bij het recht zijn:
 
-![&#x200B; Leeg Model &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
+![ Leeg Model ](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
 Wat moet er gebeuren?
 
-U kunt instanties van de **Types van Gegevens** op de linkerruimte slepen - u bepaalt reeds uw model!
+U kunt:
 
-![&#x200B; die gebieden &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) bepalen
+* Sleep een gegevenstype van het linkerpaneel aan de vereiste plaats voor een gebied in het middelste paneel.
+* Selecteer + pictogram door een Type van Gegevens om het aan de bodem van de gebiedslijst toe te voegen.
+* Selecteer Toevoegen in het middelste deelvenster en selecteer vervolgens het vereiste gegevenstype in de vervolgkeuzelijst om een veld onder aan de lijst toe te voegen.
+
+U definieert uw model al!
 
 Nadat u een gegevenstype toevoegt wordt u vereist om de **Eigenschappen** voor dat gebied te bepalen. Deze eigenschappen zijn afhankelijk van het type dat wordt gebruikt. Bijvoorbeeld:
 
-![&#x200B; Eigenschappen van Gegevens &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
-
-U kunt zoveel velden toevoegen als u nodig hebt. Bijvoorbeeld:
-
-![&#x200B; Model van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
+![ Eigenschappen van Gegevens ](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 ### Uw makers van inhoud {#your-content-authors}
 
@@ -119,7 +90,7 @@ Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke 
 
 Zodra een model wordt gepubliceerd is het *gesloten* in een LEZEN-ONLY wijze op auteur. Dit is bedoeld om wijzigingen te voorkomen die zouden leiden tot fouten in bestaande GraphQL-schema&#39;s en query&#39;s, met name in de publicatieomgeving. Het wordt vermeld in de console door **Vergrendelde**.
 
-Wanneer het model **&#x200B;**&#x200B;(op LEZEN-ONLY wijze) wordt gesloten, kunt u de inhoud en de structuur van modellen zien maar u kunt hen niet direct uitgeven; hoewel u **Vergrendelde** modellen van of de console, of de modelredacteur kunt beheren.
+Wanneer het model **** (op LEZEN-ONLY wijze) wordt gesloten, kunt u de inhoud en de structuur van modellen zien maar u kunt hen niet direct uitgeven; hoewel u **Vergrendelde** modellen van of de console, of de modelredacteur kunt beheren.
 
 ## Volgende functies {#whats-next}
 
@@ -129,7 +100,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw ei
 
 * [Concepten ontwerpen](/help/sites-cloud/authoring/author-publish.md)
 
-* [&#x200B; Basis Behandelend &#x200B;](/help/sites-cloud/authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/meeste eigenschappen zijn ook relevant voor het navigeren aan, en het nemen van actie op, **Modellen van het Fragment van de Inhoud** onder de **Algemene** console.
+* [ Basis Behandelend ](/help/sites-cloud/authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/meeste eigenschappen zijn ook relevant voor het navigeren aan, en het nemen van actie op, **Modellen van het Fragment van de Inhoud** onder de **Algemene** console.
 
 * [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 

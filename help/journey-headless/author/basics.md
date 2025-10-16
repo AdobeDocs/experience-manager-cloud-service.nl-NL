@@ -5,9 +5,9 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1733'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [&#x200B; Reis van de Auteur van de Inhoud van AEM Headless &#x200B;](overview.md) de [&#x200B; Inleiding &#x200B;](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
 Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw eigen inhoud voor uw AEM-project zonder titel kunt maken.
 
@@ -63,37 +63,29 @@ Vervolgens kunt u het navigatievenster gebruiken om toegang te krijgen tot belan
 
 U kunt het navigatievenster openen door het Adobe-pictogram linksboven te selecteren, gevolgd door het kleine kompaspictogram.
 
-<!--
-The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
-
-![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
--->
-
 >[!NOTE]
 >Hoewel de Fragmenten van de Inhoud een eigenschap van de Plaatsen van AEM **zijn, worden zij bewaard als** Assets **.** Dit is een technisch detail dat u niet zou moeten beïnvloeden, maar zou nuttig kunnen zijn om te weten.
 
-Binnen de console kunt u mappen in het linkerdeelvenster selecteren om naar het inhoudsfragment te navigeren. U kunt ook filteren en/of zoeken.
+Binnen de console van de Fragmenten van de Inhoud kunt u omslagen in het linkerpaneel selecteren om aan uw Inhoudsfragment te navigeren. U kunt ook filteren en/of zoeken.
 
-![&#x200B; de console van Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
+![ de console van Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Handelingen, selecteren, weergeven {#actions-selecting-viewing}
 
 In de **console van de Fragmenten van de Inhoud** is een waaier van acties beschikbaar voor uw inhoudsfragmenten van de toolbar:
-
-<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
 * **Open in Assets**
 * **creeer**
 * De **die** kolom van verwijzingen wordt voorzien verstrekt ook een directe verbinding om alle ouderverwijzingen van dat fragment te tonen; met inbegrip van het van verwijzingen voorzien van de Fragmenten van de Inhoud, de Fragmenten van de Ervaring en pagina&#39;s.
 * Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 
-Nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar:
-
-<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+Nadat u het fragment hebt geselecteerd, zijn er verdere acties beschikbaar (al naar gelang van toepassing):
 
 * **Open**
 * **publiceer** (en **unpublish**)
+* **beheert Markeringen**
 * **Exemplaar**
+* **vervangen**
 * **Beweging**
 * **anders noemen**
 * **Schrapping**
@@ -101,26 +93,6 @@ Nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikb
 >[!NOTE]
 >
 >Handelingen zoals Publiceren, Publiceren ongedaan maken, Verwijderen, Verplaatsen, Naam wijzigen, Kopiëren, een asynchrone taak activeren. De voortgang van die taak kan worden gecontroleerd via de gebruikersinterface van AEM Async Jobs.
-
-<!--
-The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
-
-The Quick Actions are available for a single resource, see **Basel** in the example below:
-
-![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
-
-The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
-
-![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
-
-You can select the format for viewing your resources with the View Selector:
-
-![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
-
-You can view additional information about items using the Rail Selector. This also gives access to additional actions.
-
-![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
--->
 
 ## Inhoudsfragmenten ontwerpen {#authoring-content-fragments}
 
@@ -136,11 +108,11 @@ Tenzij u zeer weinig Inhoudsfragmenten hebt, wilt u deze ordenen - zodat u (en a
 
 U kunt dit doen door een reeks omslagen binnen **te creëren Dossiers** sectie van de **Assets** console. Selecteer **creeer** optie (hoogste recht), die door **Omslag** wordt gevolgd:
 
-![&#x200B; creeer de optie van de Omslag &#x200B;](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
+![ creeer de optie van de Omslag ](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Een dialoog opent waar u de details kunt ingaan, dan bevestig met **&#x200B;**&#x200B;creëren:
+Een dialoog opent waar u de details kunt ingaan, dan bevestig met **** creëren:
 
-![&#x200B; creeer de dialoog van de Omslag &#x200B;](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
+![ creeer de dialoog van de Omslag ](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
 #### Paden en tags gebruiken om de in de map beschikbare modellen van inhoudsfragmenten te beperken {#tags-paths-for-models-in-folder}
 
@@ -150,7 +122,7 @@ Uw Content Architect zal alle Content Fragment Models hebben gecreeerd die voor 
 
 Na het creëren van uw omslag kunt u de omslag **Eigenschappen** openen. Hier zijn diverse lusjes met informatie, en configuratiedetails, over de omslag. Met name voor de Fragmenten van de Inhoud, kunt u het **lusje van Beleid** gebruiken om specifieke wegen en/of markeringen voor deze omslag te bepalen. Dit beperkt de modellen van het Fragment van de Inhoud beschikbaar voor gebruik in de omslag aangezien het betekent dat de Modellen van het Fragment van de Inhoud aan deze vereisten moeten voldoen alvorens zij kunnen worden gebruikt om fragmenten in deze omslag te produceren.
 
-![&#x200B; creeer de Eigenschappen van de Omslag - Beleid &#x200B;](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
+![ creeer de Eigenschappen van de Omslag - Beleid ](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
 
 >[!NOTE]
 >
@@ -164,7 +136,7 @@ Alleen voor het geval...
 
 U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aangezien sommige configuratiedetails (gewoonlijk door een Ontwikkelaar of Beheerder van het Systeem) op de wortelomslag moeten worden toegepast. Dit zal waarschijnlijk u niet interesseren, maar indien nodig kunt u de **Configuratie** in de **Diensten van de Wolk** van de omslag **Eigenschappen** controleren:
 
-![&#x200B; creeer de Eigenschappen van de Omslag - Configuratie &#x200B;](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
+![ creeer de Eigenschappen van de Omslag - Configuratie ](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
 >[!NOTE]
 >
@@ -174,7 +146,7 @@ U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aan
 
 In de **console van de Fragmenten van de Inhoud** kunt u **gebruiken creeer** om de **Nieuwe dialoog van het Fragment van de Inhoud** te openen:
 
-![&#x200B; de console van Fragmenten van de Inhoud - Creërend een nieuw fragment &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+![ de console van Fragmenten van de Inhoud - Creërend een nieuw fragment ](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 Geef de volgende instellingen op:
 
@@ -223,7 +195,7 @@ Een fragment kan bijvoorbeeld:
 
 * Hiermee kunt u een lange sectie tekst schrijven. Hier zijn aanvullende opties voor het beheren en opmaken van de tekst. U kunt zelfs de afzonderlijke tekstvelden openen in een volledige-schermeditor (met het kleine schermachtige pictogram rechts)
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - de Rondjes van Alaska &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![ de Redacteur van het Fragment van de Inhoud - de Rondjes van Alaska ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -258,7 +230,7 @@ Zodra u uw fragment hebt voltooid kunt u **publiceren** het zodat het aan de toe
 
 De publicatieacties zijn beschikbaar in de editor:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Mijn Fragment &#x200B;](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+![ de Redacteur van het Fragment van de Inhoud - Mijn Fragment ](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 >[!NOTE]
 >
@@ -266,13 +238,13 @@ De publicatieacties zijn beschikbaar in de editor:
 
 ## Volgende functies {#whats-next}
 
-Nu u de grondbeginselen hebt geleerd, moet de volgende stap [&#x200B; leren hoe over Verwijzingen &#x200B;](references.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van creatie voor headless.
+Nu u de grondbeginselen hebt geleerd, moet de volgende stap [ leren hoe over Verwijzingen ](references.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van creatie voor headless.
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Concepten ontwerpen](/help/sites-cloud/authoring/author-publish.md)
 
-* [&#x200B; Basis Behandelend &#x200B;](/help/sites-cloud/authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/de meeste eigenschappen zijn ook relevant voor het ontwerpen van **Fragmenten van de Inhoud** onder de **Assets** console.
+* [ Basis Behandelend ](/help/sites-cloud/authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/de meeste eigenschappen zijn ook relevant voor het ontwerpen van **Fragmenten van de Inhoud** onder de **Assets** console.
 
    * [Deelvenster Navigatie](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
@@ -302,7 +274,7 @@ Nu u de grondbeginselen hebt geleerd, moet de volgende stap [&#x200B; leren hoe 
 
          * [Snel publiceren](/help/assets/manage-publication.md#quick-publish)
 
-         * [&#x200B; beheer Publicatie &#x200B;](/help/assets/manage-publication.md#manage-publication)
+         * [ beheer Publicatie ](/help/assets/manage-publication.md#manage-publication)
 
       * Van de **Console van de Fragmenten van de Inhoud**
 

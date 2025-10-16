@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Uw inhoud modelleren {#model-your-content}
 
-In dit deel van de [&#x200B; Hoofdloze Reis van de Ontwikkelaar van AEM &#x200B;](overview.md), leert u hoe te om uw inhoudsstructuur te modelleren. Bespreek vervolgens die structuur voor Adobe Experience Manager (AEM) met gebruik van Content Fragments Models en Content Fragments, voor hergebruik over kanalen.
+In dit deel van de [ Hoofdloze Reis van de Ontwikkelaar van AEM ](overview.md), leert u hoe te om uw inhoudsstructuur te modelleren. Bespreek vervolgens die structuur voor Adobe Experience Manager (AEM) met gebruik van Content Fragments Models en Content Fragments, voor hergebruik over kanalen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Aan het begin, [&#x200B; Leer over Hoofdloze Ontwikkeling van CMS &#x200B;](learn-about.md) behandelde hoofdloze inhoudslevering en waarom het wordt gebruikt. Dan [&#x200B; Begonnen het Worden met as a Cloud Service van de Hoofdloze AEM &#x200B;](getting-started.md) beschreef de Zwaartepunt van AEM in de context van uw eigen project.
+Aan het begin, [ Leer over Hoofdloze Ontwikkeling van CMS ](learn-about.md) behandelde hoofdloze inhoudslevering en waarom het wordt gebruikt. Dan [ Begonnen het Worden met as a Cloud Service van de Hoofdloze AEM ](getting-started.md) beschreef de Zwaartepunt van AEM in de context van uw eigen project.
 
-In het vorige document van de hoofdloze reis van AEM, [&#x200B; Weg aan Uw Eerste Ervaring Gebruikend AEM Headless &#x200B;](path-to-first-experience.md), leerde u dan de stappen nodig om uw eerste project uit te voeren. Nadat u het document hebt gelezen, kunt u het volgende doen:
+In het vorige document van de hoofdloze reis van AEM, [ Weg aan Uw Eerste Ervaring Gebruikend AEM Headless ](path-to-first-experience.md), leerde u dan de stappen nodig om uw eerste project uit te voeren. Nadat u het document hebt gelezen, kunt u het volgende doen:
 
 * Belangrijke planningsoverwegingen voor het ontwerpen van uw inhoud begrijpen en uitleggen
 * Begrijp en verklaar de stappen voor het uitvoeren van headless, afhankelijk van uw vereisten van het integratieniveau.
@@ -48,7 +48,7 @@ Dit artikel bouwt verder op deze basisbeginselen zodat u begrijpt hoe u uw eigen
 
 *het is een grote, slechte wereld daar*.
 
-Misschien, maar misschien niet. Het is zeker gecompliceerde a **&#x200B;**&#x200B;** wereld daar en de gegevens modellering wordt gebruikt om een vereenvoudigde vertegenwoordiging van een zeer (zeer) kleine onderafdeling te bepalen, gebruikend de specifieke informatie die voor een bepaald doel nodig is.
+Misschien, maar misschien niet. Het is zeker gecompliceerde a ****** wereld daar en de gegevens modellering wordt gebruikt om een vereenvoudigde vertegenwoordiging van een zeer (zeer) kleine onderafdeling te bepalen, gebruikend de specifieke informatie die voor een bepaald doel nodig is.
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Bijvoorbeeld, bepaal het gebied wachtend de naam van een leraar als **Tekst** en
 1. Het **gegevenstype van de Verwijzing van het Fragment** laat u veelvoudige niveaus van structuur realiseren door uw Fragmenten van de Inhoud (volgens het modeltype) te nesten. Dit is van essentieel belang voor het modelleren van inhoud.
 
 Bijvoorbeeld:
-![&#x200B; Inhoud die met de Fragmenten van de Inhoud modelleert &#x200B;](assets/headless-modeling-01.png " Inhoud met de Fragmenten van de Inhoud ")
+![ Inhoud die met de Fragmenten van de Inhoud modelleert ](assets/headless-modeling-01.png " Inhoud met de Fragmenten van de Inhoud ")
 
 ### Gegevenstypen {#data-types}
 
@@ -208,7 +208,7 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 
 Aan het begin moet u Modellen van inhoudsfragmenten voor uw site inschakelen. Dit wordt gedaan in Browser van de Configuratie onder **Hulpmiddelen** > **Algemene** > **Browser van de Configuratie**. U kunt of selecteren om de globale ingang te vormen, of een configuratie creëren. Bijvoorbeeld:
 
-![&#x200B; bepaalt configuratie &#x200B;](assets/cfm-configuration.png)
+![ bepaalt configuratie ](assets/cfm-configuration.png)
 
 >[!NOTE]
 >
@@ -218,7 +218,7 @@ Vervolgens kunt u de modellen van Content Fragments maken en de structuur defini
 
 Nadat u het model hebt gemaakt, kunt u het bewerken. Bijvoorbeeld:
 
-![&#x200B; Model van het Fragment van de Inhoud &#x200B;](assets/cfm-model.png)
+![ Model van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 >[!NOTE]
 >
@@ -248,7 +248,7 @@ Nadat u het fragment hebt gemaakt, kunt u het openen in de Inhoudsfragmenteditor
 
 Nadat u het juiste model hebt geselecteerd, wordt een inhoudsfragment geopend voor bewerking in de Inhoudsfragmenteditor:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Overzicht &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![ de Redacteur van het Fragment van de Inhoud - Overzicht ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -256,25 +256,19 @@ Nadat u het juiste model hebt geselecteerd, wordt een inhoudsfragment geopend vo
 
 ## Aan de slag met enkele voorbeelden {#getting-started-examples}
 
-<!--
-tbc...
-...and/or see the structures covered for the GraphQL samples...
-...will those (ever) be delivered as an official sample package?
--->
-
 Zie De structuur van het voorbeeldinhoudsfragment voor een basisstructuur als voorbeeld.
 
 ## Volgende functies {#whats-next}
 
-Nu u hebt geleerd hoe te om uw structuur te modelleren, en inhoud tot stand te brengen afhankelijk van dat, moet de volgende stap [&#x200B; leren hoe te om de vragen van GraphQL te gebruiken om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben en terug te winnen &#x200B;](access-your-content.md). Dit introduceert en bespreekt GraphQL, dan bekijkt sommige steekproefvragen om te zien hoe de dingen in de praktijk werken.
+Nu u hebt geleerd hoe te om uw structuur te modelleren, en inhoud tot stand te brengen afhankelijk van dat, moet de volgende stap [ leren hoe te om de vragen van GraphQL te gebruiken om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben en terug te winnen ](access-your-content.md). Dit introduceert en bespreekt GraphQL, dan bekijkt sommige steekproefvragen om te zien hoe de dingen in de praktijk werken.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [&#x200B; Werkend met de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) - lood-in pagina voor de Fragmenten van de Inhoud
-   * [&#x200B; de Fragmenten van de Inhoud in Browser van de Configuratie &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - laat de functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe
-   * [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - creërend en het uitgeven de Modellen van het Fragment van de Inhoud
-   * [&#x200B; het Leiden de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md) - creërend en creërend de Fragmenten van de Inhoud; deze pagina leidt u tot andere gedetailleerde secties
-* [&#x200B; AEM GraphQL Schemas &#x200B;](access-your-content.md) - hoe GraphQL modellen realiseert
+* [ Werkend met de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) - lood-in pagina voor de Fragmenten van de Inhoud
+   * [ de Fragmenten van de Inhoud in Browser van de Configuratie ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - laat de functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe
+   * [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - creërend en het uitgeven de Modellen van het Fragment van de Inhoud
+   * [ het Leiden de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md) - creërend en creërend de Fragmenten van de Inhoud; deze pagina leidt u tot andere gedetailleerde secties
+* [ AEM GraphQL Schemas ](access-your-content.md) - hoe GraphQL modellen realiseert
 * [De structuur van het voorbeeldinhoudsfragment](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [&#x200B; Begonnen het Worden met de Zetel van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) - een korte videoles die een overzicht geven van het gebruiken van AEM hoofdloze eigenschappen, met inbegrip van inhoud modelleren en GraphQL
-   * [&#x200B; Basisprincipes van de Modellering van GraphQL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=nl-NL) - Leer hoe te om de Fragmenten van de Inhoud in Adobe Experience Manager (AEM) voor gebruik met GraphQL te bepalen en te gebruiken.
+* [ Begonnen het Worden met de Zetel van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - een korte videoles die een overzicht geven van het gebruiken van AEM hoofdloze eigenschappen, met inbegrip van inhoud modelleren en GraphQL
+   * [ Basisprincipes van de Modellering van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Leer hoe te om de Fragmenten van de Inhoud in Adobe Experience Manager (AEM) voor gebruik met GraphQL te bepalen en te gebruiken.

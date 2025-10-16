@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Toegang tot uw inhoud via API&#39;s voor levering via AEM {#access-your-content}
 
-In dit deel van de [&#x200B; Hoofdloze Reis van de Ontwikkelaar van AEM &#x200B;](overview.md), kunt u leren hoe te om de vragen van GraphQL te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en het te voeren aan uw app (koploze levering).
+In dit deel van de [ Hoofdloze Reis van de Ontwikkelaar van AEM ](overview.md), kunt u leren hoe te om de vragen van GraphQL te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en het te voeren aan uw app (koploze levering).
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de hoofdloze reis van AEM, [&#x200B; hoe te om Uw Inhoud &#x200B;](model-your-content.md) te modelleren leerde u de grondbeginselen van inhoud modellerend in AEM, zodat zou u nu moeten begrijpen hoe te om uw inhoudsstructuur te modelleren, dan realiseer die structuur gebruikend de Modellen van het Fragment van de Inhoud van AEM en de Fragments van de Inhoud:
+In het vorige document van de hoofdloze reis van AEM, [ hoe te om Uw Inhoud ](model-your-content.md) te modelleren leerde u de grondbeginselen van inhoud modellerend in AEM, zodat zou u nu moeten begrijpen hoe te om uw inhoudsstructuur te modelleren, dan realiseer die structuur gebruikend de Modellen van het Fragment van de Inhoud van AEM en de Fragments van de Inhoud:
 
 * De concepten en terminologie met betrekking tot inhoudsmodellen herkennen.
 * Begrijp waarom de inhoud modellering voor de levering van de Inhoud zonder Zwaartepunt nodig is.
@@ -140,106 +140,6 @@ Deze modellen van inhoudsfragmenten:
 
    * Wanneer bepaald als a **multifeed**, kunnen de veelvoudige sub-fragmenten (teruggewonnen) door het eerste fragment van verwijzingen worden voorzien.
 
-<!--
-### JSON Preview {#json-preview}
-
-To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
-
-![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
--->
-
-<!--
-## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
-
-GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client must fetch the Schema, which contains all the types necessary for a query. 
-
-For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
-
->[!CAUTION]
->
->All the GraphQL schemas (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
->
->This means that you need to ensure that no sensitive content is available, to ensure that no sensitive data is exposed via GraphQL endpoints; for example, this includes information that could be present as field names in the model definition.
-
-For example, if a user created a Content Fragment Model called `Article`, then AEM generates the object `article` that is of a type `ArticleModel`. The fields within this type correspond to the fields and data types defined in the model.
-
-1. A Content Fragment Model:
-
-   ![Content Fragment Model for use with GraphQL](assets/graphqlapi-cfmodel.png "Content Fragment Model for use with GraphQL")
-
-1. The corresponding GraphQL schema (output from GraphiQL automatic documentation):
-   ![GraphQL Schema based on Content Fragment Model](assets/graphqlapi-cfm-schema.png "GraphQL Schema based on Content Fragment Model")
-
-   This shows that the generated type `ArticleModel` contains several [fields](#fields). 
-   
-   * Three of them have been controlled by the user: `author`, `main` and `referencearticle`.
-
-   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
-
-1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the Sample Queries.md#graphql-sample-queries) (based on a sample Content Fragment structure for use with GraphQL.
-
-In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
-
-The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stability.
-
-So for example, if you:
-
-1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
- 
-   1. GraphQL types for `Model-1` and `Model-2` are generated.
-
-1. Then modify `Content-Fragment-Model-2`:
-
-   1. Only the `Model-2` GraphQL type will get updated.
-
-   1. Whereas `Model-1` will remain the same. 
-
->[!NOTE]
->
->This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
-
-The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
-
-### Schema Generation - Unpublished Models {#schema-generation-unpublished-models}
-
-When Content Fragments are nested it can happen that a parent Content Fragment Model is published, but a referenced model is not.
-
->[!NOTE]
->
->The AEM UI prevents this happening, but if publishing is made programmatically, or with content packages, it can occur.
-
-When this happens, AEM generates an *incomplete* Schema for the parent Content Fragment Model. This means that the Fragment Reference, which is dependent on the unpublished model, is removed from the schema.
-
-## AEM GraphQL Endpoints {#aem-graphql-endpoints}
-
-An endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
-
-* access the GraphQL schemas,
-* send your GraphQL queries,
-* receive the responses (to your GraphQL queries).
-
-AEM allows for:
-
-* A global endpoint - available for use by all sites.
-* Endpoints for specific Sites configurations - that you can configure (in the Configuration Browser), specific to a specified site/project.
-
-## Permissions {#permissions}
-
-The permissions are those required for accessing Assets.
-
-## The AEM GraphiQL Interface {#aem-graphiql-interface}
-
-To help you directly input, and test queries, an implementation of the standard GraphiQL interface is available for use with AEM GraphQL. This can be installed with AEM.
-
->[!NOTE]
->
->GraphiQL is bound the global endpoint (and does not work with other endpoints for specific Sites configurations).
-
-It provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation.
-
-![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
--->
-
 ## De AEM GraphQL API daadwerkelijk gebruiken {#actually-using-aem-graphiql}
 
 ### Eerste instelling {#initial-setup}
@@ -277,7 +177,7 @@ De vragen kunnen in de interface worden ingegaan GraphiQL. U kunt tot de vraagre
 * **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**
 * direct; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
-![&#x200B; GraphiQL Interface &#x200B;](assets/graphiql-interface.png " GraphiQL Interface ")
+![ GraphiQL Interface ](assets/graphiql-interface.png " GraphiQL Interface ")
 
 ### Aan de slag met query&#39;s {#getting-Started-with-queries}
 
@@ -347,8 +247,6 @@ query {
 }
 ```
 
-<!-- need code / curl / cli examples-->
-
 Voor de volledige informatie over het gebruik van de AEM GraphQL API, samen met het configureren van de benodigde elementen, kunt u verwijzen naar:
 
 * GraphQL leren gebruiken met AEM
@@ -357,16 +255,16 @@ Voor de volledige informatie over het gebruik van de AEM GraphQL API, samen met 
 
 ## Volgende functies {#whats-next}
 
-Nu u hebt geleerd om tot uw hoofdloze inhoud toegang te hebben en te vragen gebruikend AEM GraphQL API kunt u nu [&#x200B; leren hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken &#x200B;](update-your-content.md).
+Nu u hebt geleerd om tot uw hoofdloze inhoud toegang te hebben en te vragen gebruikend AEM GraphQL API kunt u nu [ leren hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken ](update-your-content.md).
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [&#x200B; Adobe Experience Manager as a Cloud Service APIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
-* [&#x200B; GraphQL.org &#x200B;](https://graphql.org)
-   * [&#x200B; Schemas &#x200B;](https://graphql.org/learn/schema/)
-   * [&#x200B; Variabelen &#x200B;](https://graphql.org/learn/queries/#variables)
-   * [&#x200B; de bibliotheken van GraphQL Java &#x200B;](https://graphql.org/code/#java)
-* [&#x200B; GraphiQL &#x200B;](https://graphql.org/learn/serving-over-http/#graphiql)
+* [ Adobe Experience Manager as a Cloud Service APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
+* [ GraphQL.org ](https://graphql.org)
+   * [ Schemas ](https://graphql.org/learn/schema/)
+   * [ Variabelen ](https://graphql.org/learn/queries/#variables)
+   * [ de bibliotheken van GraphQL Java ](https://graphql.org/code/#java)
+* [ GraphiQL ](https://graphql.org/learn/serving-over-http/#graphiql)
 * [GraphQL leren gebruiken met AEM](/help/headless/graphql-api/content-fragments.md)
    * [GraphQL Endpoint inschakelen](/help/headless/graphql-api/graphql-endpoint.md)
    * [De AEM GraphiQL-interface installeren](/help/headless/graphql-api/graphiql-ide.md)
@@ -379,7 +277,7 @@ Nu u hebt geleerd om tot uw hoofdloze inhoud toegang te hebben en te vragen gebr
 * [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
    * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [JSON-uitvoer](/help/assets/content-fragments/content-fragments-json-preview.md)
-* [&#x200B; Begrijp het Middel dat van de dwars-Oorsprong (CORS) deelt &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL#understand-cross-origin-resource-sharing-(cors))
+* [ Begrijp het Middel dat van de dwars-Oorsprong (CORS) deelt ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
 * [GraphQL Persisted Queries - caching inschakelen in Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Toegangstokens genereren voor server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [&#x200B; Begonnen het Worden met de Zetel van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) - een korte videolesreeks die een overzicht geeft van het gebruiken van AEM hoofdloze eigenschappen, met inbegrip van inhoud modellering en GraphQL.
+* [ Begonnen het Worden met de Zetel van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - een korte videolesreeks die een overzicht geeft van het gebruiken van AEM hoofdloze eigenschappen, met inbegrip van inhoud modellering en GraphQL.
