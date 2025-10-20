@@ -4,9 +4,9 @@ description: Leer over de verschillende opties om de Universele Redacteur aan te
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -18,85 +18,45 @@ Leer over de verschillende opties om de Universele Redacteur aan te passen om de
 
 >[!TIP]
 >
->De Universele Redacteur biedt ook vele [&#x200B; uitbreidingspunten aan, &#x200B;](/help/implementing/universal-editor/extending.md) toestaand u om zijn functionaliteit uit te breiden om aan uw projectbehoeften te voldoen.
+>De Universele Redacteur biedt ook vele [ uitbreidingspunten aan, ](/help/implementing/universal-editor/extending.md) toestaand u om zijn functionaliteit uit te breiden om aan uw projectbehoeften te voldoen.
 
-## Publiceren uitschakelen {#disable-publish}
+## Meta Config-tags gebruiken {#meta-tags}
 
-Voor bepaalde ontwerpworkflows moet de inhoud worden gecontroleerd voordat deze wordt gepubliceerd. In dergelijke situaties mag de optie om te publiceren niet beschikbaar zijn voor auteurs.
+Voor bepaalde ontwerpworkflows moet u wellicht bepaalde functies van de universele editor gebruiken, niet andere. Om dergelijke diverse gevallen te steunen, zijn de metatags beschikbaar om bepaalde eigenschappen of knopen van de redacteur te vormen of onbruikbaar te maken.
 
-De **publiceer** knoop kan daarom volledig in app worden onderdrukt door de volgende meta-gegevens toe te voegen.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## Publiceren uitschakelen voor voorvertoning {#publish-preview}
-
-Bepaalde auteurswerkschema&#39;s zouden de publicatie aan de [&#x200B; voorproefdienst &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md) (als beschikbaar) kunnen uitsluiten.
-
-De **optie van de Voorproef** in publiceer venster kan daarom volledig in app worden onderdrukt door de volgende meta-gegevens toe te voegen.
+Gebruik dit label in de sectie `<head>` van de pagina om een of meer functies uit te schakelen:
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## Publiceren uitschakelen in Live {#publish-live}
+Als u meerdere functies wilt uitschakelen, voert u een lijst met waarden in die door komma&#39;s wordt gescheiden.
 
-Bepaalde ontwerpworkflows kunnen de publicatie naar de live service belemmeren.
+Hieronder vindt u de ondersteunde waarden voor `content` , dat wil zeggen de functies die met metatags kunnen worden uitgeschakeld.
 
-De **Levende** optie in publiceer venster kan daarom volledig in app worden onderdrukt door de volgende meta-gegevens toe te voegen.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## Unpublishing uitschakelen {#unpublish}
-
-Voor bepaalde ontwerpworkflows is een goedkeuringsproces vereist voordat de inhoud niet is gepubliceerd. In dergelijke situaties mag de optie om publicatie ongedaan te maken niet beschikbaar zijn voor auteurs.
-
-**unpublish** knoop kan daarom volledig in een app worden onderdrukt door de volgende meta-gegevens toe te voegen.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## Openingspagina uitschakelen {#open-page}
-
-De **Open knoop van de Pagina** kan volledig in app worden onderdrukt door de volgende meta-gegevens toe te voegen.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## Knop Dupliceren uitschakelen {#duplicate-button}
-
-Het is mogelijk dat bepaalde ontwerpwerkstromen de mogelijkheid van de auteur van de inhoud om componenten te dupliceren moeten beperken. U kunt het [&#x200B; dubbele pictogram &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) onbruikbaar maken door de volgende meta-gegevens toe te voegen.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## Kopiëren en plakken uitschakelen {#copy-paste}
-
-Het is mogelijk dat bepaalde ontwerpwerkstromen de mogelijkheid van de auteur van de inhoud om componenten te kopiëren en plakken moeten beperken. U kunt de [&#x200B; exemplaar en deegpictogrammen &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) onbruikbaar maken door de volgende meta-gegevens toe te voegen.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| Inhoudswaarde | Beschrijving |
+|---|---|
+| `publish` | Maak [ onbruikbaar publiceren knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
+| `publish-live` | Maak live [ het publiceren ](/help/sites-cloud/authoring/universal-editor/publishing.md) onbruikbaar |
+| `publish-preview` | Maak voorproef het publiceren onbruikbaar (als de [ voorproefdienst ](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar is) |
+| `unpublish` | Maakt [ unpublish knoop ](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) onbruikbaar |
+| `copy` | Maakt [ exemplaar en deegknopen ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) onbruikbaar |
+| `duplicate` | Schakelt [ dubbele knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) onbruikbaar |
+| `header-open-page` | Maakt [ open paginaknoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) onbruikbaar |
 
 ## Het veranderen van Uw Eindpunt {#custom-endpoint}
 
-Als u de Universal Editor-service, die door Adobe wordt gehost, maar uw eigen gehoste versie niet wilt gebruiken, kunt u dit instellen in een metatag. Gelieve te zien het document [&#x200B; Begonnen het worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md##configuration-settings) voor details.
+Als u de Universal Editor-service, die door Adobe wordt gehost, maar uw eigen gehoste versie niet wilt gebruiken, kunt u dit instellen in een metatag. Gelieve te zien het document [ Begonnen het worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md##configuration-settings) voor details.
 
 ## Componenten filteren {#filtering-components}
 
-U kunt de toegestane componenten per container in de Universele Redacteur beperken gebruikend componentenfilters. Gelieve te zien het document [&#x200B; Filtrerend Componenten &#x200B;](/help/implementing/universal-editor/filtering.md) voor meer informatie.
+U kunt de toegestane componenten per container in de Universele Redacteur beperken gebruikend componentenfilters. Gelieve te zien het document [ Filtrerend Componenten ](/help/implementing/universal-editor/filtering.md) voor meer informatie.
 
 ## Componenten voorwaardelijk tonen en verbergen in deelvenster Eigenschappen {#conditionally-hide}
 
-Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen, kunt u componenten in het eigenschappen paneel verbergen door a `condition` attributen aan de [&#x200B; gebieden van het componentenmodel &#x200B;](/help/implementing/universal-editor/field-types.md#fields) toe te voegen.
+Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen, kunt u componenten in het eigenschappen paneel verbergen door a `condition` attributen aan de [ gebieden van het componentenmodel ](/help/implementing/universal-editor/field-types.md#fields) toe te voegen.
 
-De voorwaarden kunnen worden bepaald gebruikend [&#x200B; schema JsonLogic &#x200B;](https://jsonlogic.com/). Als de voorwaarde waar is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
+De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic ](https://jsonlogic.com/). Als de voorwaarde waar is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
 
 >[!BEGINTABS]
 
@@ -125,17 +85,17 @@ De voorwaarden kunnen worden bepaald gebruikend [&#x200B; schema JsonLogic &#x20
 
 >[!TAB  Onwaar van de Voorwaarde ]
 
-![&#x200B; Verborgen tekstgebied &#x200B;](assets/hidden.png)
+![ Verborgen tekstgebied ](assets/hidden.png)
 
->[!TAB  de Toestand van 0&rbrace; Waar &lbrace;]
+>[!TAB  de Toestand van 0} Waar {]
 
-![&#x200B; Getoonde tekstgebied &#x200B;](assets/shown.png)
+![ Getoonde tekstgebied ](assets/shown.png)
 
 >[!ENDTABS]
 
 ## Aangepaste voorbeeld-URL&#39;s {#custom-preview-urls}
 
-U kunt een douanevoorproef URL via a `urn:adobe:aue:config:preview` metaconfiguratie specificeren, die wanneer het klikken van de **Open pagina** knoop in de [&#x200B; top-right toolbar van de redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) zal openen.
+U kunt een douanevoorproef URL via a `urn:adobe:aue:config:preview` metaconfiguratie specificeren, die wanneer het klikken van de **Open pagina** knoop in de [ top-right toolbar van de redacteur ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) zal openen.
 
 Hiervoor neemt u gewoon de gewenste voorvertoning-URL op in een metatag van de van instrumenten voorziene app, zoals in het volgende voorbeeld.
 
