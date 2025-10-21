@@ -4,12 +4,14 @@ description: Leer hoe het Snelle hulpmiddel van de Aanmaak van de Plaats plaatsm
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
 
 ---
+
 
 # Snel site maken en front-end aanpassen {#quick-site-creation}
 
@@ -29,12 +31,12 @@ Hiertoe gebruikt het gereedschap Snel site maken verschillende krachtige AEM as 
 
 ## Reis voor snel maken van site {#quick-site-creation-journey}
 
-Voor een volledig overzicht van hoe het Snelle hulpmiddel van de Verwezenlijking van de Plaats werkt en om onmiddellijk begonnen te worden opstellend en het aanpassen van uw eigen plaats gebruikend dit krachtige hulpmiddel, herzie de [&#x200B; Snelle Reis van de Verwezenlijking van de Plaats &#x200B;](/help/journey-sites/quick-site/overview.md).
+Voor een volledig overzicht van hoe het Snelle hulpmiddel van de Verwezenlijking van de Plaats werkt en om onmiddellijk begonnen te worden opstellend en het aanpassen van uw eigen plaats gebruikend dit krachtige hulpmiddel, herzie de [ Snelle Reis van de Verwezenlijking van de Plaats ](/help/journey-sites/quick-site/overview.md).
 
 ## Aanvullende bronnen {#additional-resources}
 
 Omdat het gereedschap Snel site maken veel AEM-functies gebruikt, kunnen deze extra bronnen nuttig zijn.
 
-* [&#x200B; Malplaatjes van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/site-templates.md) - leer hoe de plaatssjablonen van AEM kunnen worden gebruikt om plaatsstructuur en aanvankelijke inhoud vooraf te bepalen om u toe te staan om nieuwe plaatsen snel tot stand te brengen.
-* [&#x200B; Thema&#39;s van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/site-themes.md) - leer hoe de de plaatsthema&#39;s van AEM kunnen worden gebruikt om de stijl en het ontwerp van uw plaats aan te passen.
-* [&#x200B; het Ontwikkelen van Plaatsen met de Voorste-Eind Pijpleiding &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - met de front-end pijpleiding, wordt meer onafhankelijkheid gegeven aan de front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijke snelheid bereiken. In dit document worden enkele overwegingen beschreven die u in acht moet nemen om het volledige potentieel van dit proces te benutten.
+* [ Malplaatjes van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md) - leer hoe de plaatssjablonen van AEM kunnen worden gebruikt om plaatsstructuur en aanvankelijke inhoud vooraf te bepalen om u toe te staan om nieuwe plaatsen snel tot stand te brengen.
+* [ Thema&#39;s van de Plaats ](/help/sites-cloud/administering/site-creation/site-themes.md) - leer hoe de de plaatsthema&#39;s van AEM kunnen worden gebruikt om de stijl en het ontwerp van uw plaats aan te passen.
+* [ het Ontwikkelen van Plaatsen met de Voorste-Eind Pijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - met de front-end pijpleiding, wordt meer onafhankelijkheid gegeven aan de front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijke snelheid bereiken. In dit document worden enkele overwegingen beschreven die u in acht moet nemen om het volledige potentieel van dit proces te benutten.

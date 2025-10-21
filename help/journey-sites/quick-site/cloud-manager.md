@@ -5,12 +5,14 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 0%
 
 ---
+
 
 # Cloud Manager en de workflow voor snel maken van sites begrijpen {#understand-cloud-manager}
 
@@ -20,7 +22,7 @@ Meer informatie over Cloud Manager en hoe het nieuwe proces voor het maken van d
 
 >[!TIP]
 >
->Als uw rol exclusief front-end ontwikkeling is, kunt u aan het artikel [&#x200B; overslaan terugwinnen de toegangsinformatie van de git bewaarplaats &#x200B;](retrieve-access.md) in deze reis.
+>Als uw rol exclusief front-end ontwikkeling is, kunt u aan het artikel [ overslaan terugwinnen de toegangsinformatie van de git bewaarplaats ](retrieve-access.md) in deze reis.
 >
 >Als u een beheerder van AEM, een beheerder van Cloud Manager bent, voor zowel front-end ontwikkeling als beheerderstaken verantwoordelijk, of eenvoudig het proces van begin tot eind in AEM voor front-end ontwikkeling wilt begrijpen, blijven lezend het huidige document en ga op deze reis verder.
 
@@ -33,7 +35,7 @@ Dit document helpt u begrijpen hoe het gereedschap AEM Quick Site Creation werkt
 
 Dit document richt zich op het begrijpen van deze fundamentele stukken van de Snelle oplossing van de Plaats alvorens zich aan de volgende stap van de reis te bewegen waar u configuratie begint.
 
-Hoewel het wordt geadviseerd om door deze reis stap voor stap te werk te gaan, als u reeds AEM Sites en Cloud Manager samen begrijpt en direct met configuratie wilt beginnen, kunt u [&#x200B; aan de volgende stap van de reis &#x200B;](create-site.md) overslaan.
+Hoewel het wordt geadviseerd om door deze reis stap voor stap te werk te gaan, als u reeds AEM Sites en Cloud Manager samen begrijpt en direct met configuratie wilt beginnen, kunt u [ aan de volgende stap van de reis ](create-site.md) overslaan.
 
 ## Verantwoordelijke rol {#responsible-role}
 
@@ -75,7 +77,7 @@ Voor de front-end ontwikkelaar is geen gebruik van AEM nodig.
 
 >[!TIP]
 >
->Als u niet vertrouwd met de rollen en rolbeheer van Cloud Manager bent, zie het Rol Gebaseerde document van Toestemmingen in de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources).
+>Als u niet vertrouwd met de rollen en rolbeheer van Cloud Manager bent, zie het Rol Gebaseerde document van Toestemmingen in de [ Extra sectie van Middelen ](#additional-resources).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -85,7 +87,7 @@ Om klanten met de montages van de ondernemingsontwikkeling te steunen, integreer
 
 Voor deze reis is een volledig begrip van Cloud Manager niet nodig. Op hoog niveau bestaat Cloud Manager uit verschillende structuurniveaus.
 
-![&#x200B; structuur van Cloud Manager &#x200B;](assets/cloud-manager-structure.png)
+![ structuur van Cloud Manager ](assets/cloud-manager-structure.png)
 
 * **TENANT** - elke klant wordt provisioned met een huurder.
 * **PROGRAMMA&#39;S** - elke huurder heeft één of meerdere programma&#39;s, die vaak op de gelicentieerde oplossingen van de klant wijzen.
@@ -111,7 +113,7 @@ De algehele stroom is eenvoudig en intuïtief, zelfs als u nog geen uitgebreide 
 1. De front-end ontwikkelaar past het thema aan, test het het gebruikend daadwerkelijke inhoud van de plaats gebruikend een volmacht en begaat dan de veranderingen in de git bewaarplaats.
 1. De front-end ontwikkelaar voert de pijpleiding uit om de themaaanpassingen aan het productiemilieu van het programma op te stellen.
 
-![&#x200B; Snelle stroom van de Verwezenlijking van de Plaats &#x200B;](assets/qsc-flow.png)
+![ Snelle stroom van de Verwezenlijking van de Plaats ](assets/qsc-flow.png)
 
 Het belangrijkste voordeel van het gebruik van het gereedschap Snel maken is dat de zuivere front-end ontwikkelaar alleen verantwoordelijk is voor de werkelijke aanpassing. De front-end ontwikkelaar heeft geen interactie met AEM of heeft enige kennis van AEM nodig.
 
@@ -124,13 +126,13 @@ Nu u dit deel van de AEM Quick Site Creation-reis hebt voltooid, kunt u het volg
 * Begrijp hoe AEM Sites en Cloud Manager samenwerken om front-end ontwikkeling te vergemakkelijken
 * Ontdek hoe de stap voor aanpassing aan de voorkant volledig losgekoppeld is van AEM en geen AEM-kennis vereist.
 
-Bouw op deze kennis voort en ga uw reis van de Gemaakt van de Plaats van AEM Snelle door het document te herzien [&#x200B; creeer Plaats van Malplaatje &#x200B;](create-site.md), waar u leert hoe te om snel een nieuwe plaats van AEM tot stand te brengen gebruikend een malplaatje.
+Bouw op deze kennis voort en ga uw reis van de Gemaakt van de Plaats van AEM Snelle door het document te herzien [ creeer Plaats van Malplaatje ](create-site.md), waar u leert hoe te om snel een nieuwe plaats van AEM tot stand te brengen gebruikend een malplaatje.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document te herzien [&#x200B; creeert Plaats van Malplaatje &#x200B;](create-site.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document te herzien [ creeert Plaats van Malplaatje ](create-site.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [&#x200B; documentatie van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=nl-NL) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
-* [&#x200B; Rol Gebaseerde Toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=nl-NL) - Cloud Manager heeft pre-gevormde rollen met aangewezen toestemmingen. Zie dit document voor details over deze rollen en hoe te om hen te beheren.
-* [&#x200B; npm &#x200B;](https://www.npmjs.com) - de thema&#39;s van AEM die worden gebruikt om plaatsen snel te bouwen zijn gebaseerd op npm.
-* [&#x200B; webpack &#x200B;](https://webpack.js.org) - de thema&#39;s van AEM die worden gebruikt om sites snel te bouwen baseren zich op webpack.
+* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [ Rol Gebaseerde Toestemmingen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager heeft pre-gevormde rollen met aangewezen toestemmingen. Zie dit document voor details over deze rollen en hoe te om hen te beheren.
+* [ npm ](https://www.npmjs.com) - de thema&#39;s van AEM die worden gebruikt om plaatsen snel te bouwen zijn gebaseerd op npm.
+* [ webpack ](https://webpack.js.org) - de thema&#39;s van AEM die worden gebruikt om sites snel te bouwen baseren zich op webpack.

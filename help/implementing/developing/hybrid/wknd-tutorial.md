@@ -5,7 +5,8 @@ exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -20,11 +21,11 @@ ht-degree: 0%
 
 Ga in de ontwikkeling van het KUUROORD met dit multi-part leerprogramma binnen dat u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing verplettert om uw eigen KUUROORD uit te voeren.
 
-![&#x200B; WKND Project van het KUUROORD &#x200B;](assets/wknd-spa-project.png)
+![ WKND Project van het KUUROORD ](assets/wknd-spa-project.png)
 
 Gelijkaardig aan de zelfstudie van AEM WKND, biedt deze SPA-geconcentreerde tegenhanger een voorbeeld van begin tot eind van de bouw van uw eigen enig-paginatoepassing aan die met AEM met projectopstelling door toepassing het verpletteren editable is.
 
-* [&#x200B; creeer uw eerste SPA van Angular in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=nl-NL)
-* [&#x200B; creeer uw eerste React SPA in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=nl-NL)
+* [ creeer uw eerste SPA van Angular in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [ creeer uw eerste React SPA in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
-Alvorens u met uw eigen project van het KUUROORD voor AEM begint nochtans, kunt u [&#x200B; het Ontwikkelen SPAs voor AEM &#x200B;](developing.md) document ook willen herzien.
+Alvorens u met uw eigen project van het KUUROORD voor AEM begint nochtans, kunt u [ het Ontwikkelen SPAs voor AEM ](developing.md) document ook willen herzien.
