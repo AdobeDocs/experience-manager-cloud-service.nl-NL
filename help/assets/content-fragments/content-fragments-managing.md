@@ -136,7 +136,7 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 >[!NOTE]
 >
->Veel van deze zijn [&#x200B; standaardacties voor Assets &#x200B;](/help/assets/manage-digital-assets.md) en/of [&#x200B; Desktop app van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
+>Veel van deze zijn [&#x200B; standaardacties voor Assets &#x200B;](/help/assets/manage-digital-assets.md) en/of [&#x200B; Desktop app van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=nl-NL).
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
