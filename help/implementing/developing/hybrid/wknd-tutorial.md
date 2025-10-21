@@ -21,11 +21,11 @@ ht-degree: 0%
 
 Ga in de ontwikkeling van het KUUROORD met dit multi-part leerprogramma binnen dat u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing verplettert om uw eigen KUUROORD uit te voeren.
 
-![ WKND Project van het KUUROORD ](assets/wknd-spa-project.png)
+![&#x200B; WKND Project van het KUUROORD &#x200B;](assets/wknd-spa-project.png)
 
 Gelijkaardig aan de zelfstudie van AEM WKND, biedt deze SPA-geconcentreerde tegenhanger een voorbeeld van begin tot eind van de bouw van uw eigen enig-paginatoepassing aan die met AEM met projectopstelling door toepassing het verpletteren editable is.
 
-* [ creeer uw eerste SPA van Angular in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
-* [ creeer uw eerste React SPA in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [&#x200B; creeer uw eerste SPA van Angular in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [&#x200B; creeer uw eerste React SPA in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
-Alvorens u met uw eigen project van het KUUROORD voor AEM begint nochtans, kunt u [ het Ontwikkelen SPAs voor AEM ](developing.md) document ook willen herzien.
+Alvorens u met uw eigen project van het KUUROORD voor AEM begint nochtans, kunt u [&#x200B; het Ontwikkelen SPAs voor AEM &#x200B;](developing.md) document ook willen herzien.

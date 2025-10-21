@@ -22,7 +22,7 @@ Maak een front-end pijplijn om de aanpassing van het thema van uw site te behere
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [ creeer Plaats van Malplaatje ](create-site.md), leerde u hoe te om een plaatsmalplaatje te gebruiken om snel een plaats van AEM tot stand te brengen die verder kan worden aangepast gebruikend front-end hulpmiddelen en nu zou u nu moeten:
+In het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [&#x200B; creeer Plaats van Malplaatje &#x200B;](create-site.md), leerde u hoe te om een plaatsmalplaatje te gebruiken om snel een plaats van AEM tot stand te brengen die verder kan worden aangepast gebruikend front-end hulpmiddelen en nu zou u nu moeten:
 
 * Begrijp hoe u AEM Site-sjablonen kunt verkrijgen.
 * Leer hoe u een site maakt met een sjabloon.
@@ -46,7 +46,7 @@ Dit deel van de reis is van toepassing op de beheerder van Cloud Manager.
 * Je moet toegang hebben tot Cloud Manager.
 * U moet een lid van de **rol van de Manager van de Plaatsing** in Cloud Manager zijn.
 * In Cloud Manager moet een git-repo voor de AEM-omgeving worden opgezet.
-   * Dit is in het algemeen al het geval voor elk actief project. Nochtans als het niet is, zie de documentatie van de Bewaarplaatsen van Cloud Manager beschikbaar onder de [ Extra sectie van Middelen ](#additional-resources).
+   * Dit is in het algemeen al het geval voor elk actief project. Nochtans als het niet is, zie de documentatie van de Bewaarplaatsen van Cloud Manager beschikbaar onder de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources).
 
 ## Wat is een voorste pijpleiding {#front-end-pipeline}
 
@@ -62,15 +62,15 @@ Op deze manier kan de ontwikkeling aan de voorzijde los van en parallel aan elke
 
 ## Toegang tot Cloud Manager {#login}
 
-1. Logboek in Adobe Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/).
+1. Logboek in Adobe Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/).
 
 1. Cloud Manager geeft een overzicht van de verschillende beschikbare programma&#39;s. Selecteer de map die u wilt beheren. Als je net met AEM as a Cloud Service begint, heb je waarschijnlijk maar één programma beschikbaar.
 
-   ![ Selecterend een programma in Cloud Manager ](assets/cloud-manager-select-program.png)
+   ![&#x200B; Selecterend een programma in Cloud Manager &#x200B;](assets/cloud-manager-select-program.png)
 
 U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is vergelijkbaar met dit voorbeeld.
 
-![ overzicht van Cloud Manager ](assets/cloud-manager-overview.png)
+![&#x200B; overzicht van Cloud Manager &#x200B;](assets/cloud-manager-overview.png)
 
 Noteer de naam van het programma dat u hebt geopend of kopieer de URL. U moet dit later aan de front-end ontwikkelaar verstrekken.
 
@@ -80,7 +80,7 @@ Nu u Cloud Manager hebt benaderd, kunt u een pijpleiding voor front-end plaatsin
 
 1. In de **sectie van Pijpleidingen** van de pagina van Cloud Manager, selecteer **toevoegen** knoop.
 
-   ![ Pijpleidingen ](assets/pipelines-add.png)
+   ![&#x200B; Pijpleidingen &#x200B;](assets/pipelines-add.png)
 
 1. In pop-up menu dat onder **verschijnt voeg** knoop uitgezocht **toe Voeg niet-ProductiePijpleiding** voor deze reis toe.
 
@@ -88,7 +88,7 @@ Nu u Cloud Manager hebt benaderd, kunt u een pijpleiding voor front-end plaatsin
    * Selecteer **Pijpleiding van de Plaatsing**.
    * Verstrek de pijpleiding van een naam op het **niet-Productie gebied van de Naam van de Pijpleiding**.
 
-   ![ voeg pijpleidingsconfiguratie ](assets/add-pipeline-configuration.png) toe
+   ![&#x200B; voeg pijpleidingsconfiguratie &#x200B;](assets/add-pipeline-configuration.png) toe
 
 1. Selecteer **verdergaan**.
 
@@ -99,17 +99,17 @@ Nu u Cloud Manager hebt benaderd, kunt u een pijpleiding voor front-end plaatsin
    * Bepaal welke **Tak van het Git** de pijpleiding met zou moeten worden geassocieerd.
    * Bepaal de **Plaats van de Code** als de front-end ontwikkeling onder een bepaalde weg in de geselecteerde bewaarplaats wordt gevestigd. De standaardwaarde is de wortel van de bewaarplaats, maar vaak front-end ontwikkeling en achtereind zijn onder verschillende wegen.
 
-   ![ de codeinfo van Source voor het toevoegen van pijpleiding ](assets/add-pipeline-source-code.png)
+   ![&#x200B; de codeinfo van Source voor het toevoegen van pijpleiding &#x200B;](assets/add-pipeline-source-code.png)
 
 1. Selecteer **sparen**.
 
 De nieuwe pijpleiding wordt gecreeerd en zichtbaar in de **sectie van Pijpleidingen** van het venster van Cloud Manager. Tik op de ellips nadat u de naam van de pijplijn hebt weergegeven. U kunt dan desgewenst nog meer details bewerken of weergeven.
 
-![ de opties van de Pijpleiding ](assets/new-pipeline.png)
+![&#x200B; de opties van de Pijpleiding &#x200B;](assets/new-pipeline.png)
 
 >[!TIP]
 >
->Als u reeds vertrouwd met pijpleidingen in AEMaaCS bent en meer over de verschillen tussen de verschillende types pijpleidingen met inbegrip van verdere details over de voorste eindpijpleiding wilt leren, zie CI/CD Pijpleiding - de Diensten van de Wolk verbonden in de [ Extra hieronder sectie van Middelen ](#additional-resources) vormen.
+>Als u reeds vertrouwd met pijpleidingen in AEMaaCS bent en meer over de verschillen tussen de verschillende types pijpleidingen met inbegrip van verdere details over de voorste eindpijpleiding wilt leren, zie CI/CD Pijpleiding - de Diensten van de Wolk verbonden in de [&#x200B; Extra hieronder sectie van Middelen &#x200B;](#additional-resources) vormen.
 
 ## Volgende functies {#what-is-next}
 
@@ -118,12 +118,12 @@ Nu u dit deel van de AEM Quick Site Creation-reis hebt voltooid, kunt u het volg
 * Begrijp wat een front-end pijpleiding is.
 * Weet hoe u een front-end pijpleiding in Cloud Manager kunt opzetten.
 
-Bouw op deze kennis voort en ga uw reis van de Gemaakt van de Plaats van AEM Snelle door het document [ Toegang van de Verlening tot de Ontwikkelaar van het Front-End ](grant-access.md) verder te herzien, waar u aan boord de front-end ontwikkelaars in Cloud Manager zult zodat zij toegang tot uw plaats en pijpleiding van de Plaats van AEM hebben.
+Bouw op deze kennis voort en ga uw reis van de Gemaakt van de Plaats van AEM Snelle door het document [&#x200B; Toegang van de Verlening tot de Ontwikkelaar van het Front-End &#x200B;](grant-access.md) verder te herzien, waar u aan boord de front-end ontwikkelaars in Cloud Manager zult zodat zij toegang tot uw plaats en pijpleiding van de Plaats van AEM hebben.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien aanpast het Thema van de Plaats ](customize-theme.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [&#x200B; te herzien aanpast het Thema van de Plaats &#x200B;](customize-theme.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
-* [ Opslagplaatsen van Cloud Manager ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - als u meer informatie over nodig hebt om git bewaarplaatsen voor uw project te vestigen en te beheren AEMaaCS, dit document zien.
-* [ vorm CI/CD Pijpleiding - de Diensten van de Wolk ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - leer meer details over vestiging pijpleidingen, zowel volledige stapel als vooreind, in dit document.
+* [&#x200B; documentatie van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [&#x200B; Opslagplaatsen van Cloud Manager &#x200B;](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - als u meer informatie over nodig hebt om git bewaarplaatsen voor uw project te vestigen en te beheren AEMaaCS, dit document zien.
+* [&#x200B; vorm CI/CD Pijpleiding - de Diensten van de Wolk &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - leer meer details over vestiging pijpleidingen, zowel volledige stapel als vooreind, in dit document.
