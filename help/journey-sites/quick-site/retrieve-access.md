@@ -124,4 +124,4 @@ Bouw op deze kennis voort en zet uw reis van de Gemaakt van de Plaats van AEM Sn
 
 Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [&#x200B; te herzien aanpast het Thema van de Plaats &#x200B;](customize-theme.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [&#x200B; de Documentatie van Adobe Experience Manager Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Onderzoek de documentatie van Cloud Manager voor volledige details van zijn eigenschappen.
+* [&#x200B; de Documentatie van Adobe Experience Manager Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=nl-NL) - Onderzoek de documentatie van Cloud Manager voor volledige details van zijn eigenschappen.
