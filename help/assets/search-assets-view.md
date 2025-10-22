@@ -4,9 +4,9 @@ description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Ass
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >id="assets_search"
 >title="Zoeken in Assets"
 >abstract="Zoek naar activa door een sleutelwoord in de bar van het Onderzoek te specificeren of door activa te filtreren die op hun status, dossiertype, MIME type, grootte, verwezenlijking, wijziging, en vervaldata worden gebaseerd. Naast de standaardfilters kunt u ook aangepaste filters toepassen. U kunt de gefilterde resultaten opslaan als een opgeslagen zoekopdracht of als een slimme verzameling."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=nl-NL#manage-smart-collection" text="Slimme verzamelingen maken"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=en#manage-smart-collection" text="Slimme verzamelingen maken"
 
 [!DNL Assets view] biedt een effectieve zoekfunctie die standaard werkt. De zoekopdracht is uitgebreid omdat het een zoekopdracht in volledige tekst betreft. Met de krachtige zoekfunctionaliteit kunt u snel de juiste middelen vinden en de snelheid van de inhoud verbeteren. [!DNL Assets view] biedt zoekopdrachten in volledige tekst en zoekopdrachten via metagegevens, zoals slimme tags, titel, gemaakte datum en copyright.
 
@@ -25,7 +25,7 @@ Elementen zoeken:
 
 * Klik in het zoekvak boven aan de pagina. Standaard wordt gezocht in de map waarin u momenteel bladert. Voer een van de volgende handelingen uit:
 
-  ![&#x200B; onderzoeksdoos &#x200B;](assets/search-box.png)
+  ![ onderzoeksdoos ](assets/search-box.png)
 
    * Zoeken met een trefwoord en desgewenst de map wijzigen. Druk op Return.
 
@@ -35,7 +35,7 @@ Elementen zoeken:
 
 U kunt de zoekresultaten filteren op basis van de volgende parameters.
 
-![&#x200B; filters van het Onderzoek &#x200B;](assets/filters1.png)
+![ filters van het Onderzoek ](assets/filters1.png)
 
 *Cijfer: De gezochte activa van de filter die op diverse parameters worden gebaseerd.*
 
@@ -49,7 +49,7 @@ U kunt de zoekresultaten filteren op basis van de volgende parameters.
 
 * Vervaldatum: filter de zoekresultaten op basis van de status van een `Expired` -element. Daarnaast kunt u een datumbereik voor de vervaldatum voor elementen opgeven om de zoekresultaten verder te filteren.
 
-* Aangepaste Filters: [&#x200B; voeg douanefilters &#x200B;](#custom-filters) aan het de meningsgebruikersinterface van Assets toe. Pas de aangepaste filters toe naast de standaardfilters om de zoekresultaten te verfijnen.
+* Aangepaste Filters: [ voeg douanefilters ](#custom-filters) aan het de meningsgebruikersinterface van Assets toe. Pas de aangepaste filters toe naast de standaardfilters om de zoekresultaten te verfijnen.
 
 U kunt de gezochte elementen in toenemende of afnemende volgorde van `Name`, `Relevance`, `Size`, `Modified` en `Created` sorteren. De gezochte elementen worden standaard gesorteerd op basis van `Relevance` .
 
@@ -57,7 +57,7 @@ U kunt de gezochte elementen in toenemende of afnemende volgorde van `Name`, `Re
 
 **vereiste Toestemmingen:** `Can Edit`, `Owner`, of Beheerder.
 
-In de Assets-weergave kunt u ook aangepaste filters toevoegen aan de gebruikersinterface. U kunt die douanefilters dan toepassen naast de [&#x200B; standaardfilters &#x200B;](#refine-search-results) om uw onderzoeksresultaten te verfijnen.
+In de Assets-weergave kunt u ook aangepaste filters toevoegen aan de gebruikersinterface. U kunt die douanefilters dan toepassen naast de [ standaardfilters ](#refine-search-results) om uw onderzoeksresultaten te verfijnen.
 
 De Assets-weergave biedt de volgende aangepaste filters:
 
@@ -103,7 +103,7 @@ Aangepaste filters toevoegen:
 
 1. Klik in de sectie **[!UICONTROL Custom Filters]** op **[!UICONTROL Edit]** of **[!UICONTROL Add Filters]** .
 
-   ![&#x200B; voeg douanefilters &#x200B;](assets/add-custom-filters.png) toe
+   ![ voeg douanefilters ](assets/add-custom-filters.png) toe
 
 1. Selecteer in het dialoogvenster **[!UICONTROL Custom filters management]** de filters die u aan de bestaande lijst met filters wilt toevoegen. Selecteer **[!UICONTROL Custom Filters]** om alle filters te selecteren.
 
@@ -137,8 +137,6 @@ Sommige hiervan zijn de belangrijkste voordelen:
 
 * **context-Aware onderzoek**: Erkent de bedoeling achter een vraag, niet alleen de woorden.
 
-* **Onderzoek dat op op tekst-gebaseerde herinneringen** wordt gebaseerd: Experience Manager Assets past filters op inhoud toe en toont aangewezen resultaten automatisch gebaseerd op eenvoudige op tekst-gebaseerde herinneringen.
-
 >[!IMPORTANT]
 >
 > Geef drie of meer dan drie woorden op voor de semantische zoekopdracht om de juiste resultaten weer te geven.
@@ -153,7 +151,7 @@ Semantic Search zoekt echter naar vergelijkbare woorden, zoals `Girl` , `Lady` i
 
 Op dezelfde manier kunt u deze vraag in het Spaans of de spelfout `Woman` als `Wman` specificeren en nog steeds dezelfde resultaten krijgen.
 
-![&#x200B; Semantic Onderzoek in de mening van Assets &#x200B;](assets/semantic-search.png)
+![ Semantic Onderzoek in de mening van Assets ](assets/semantic-search.png)
 
 ## Middelen zoeken met [!DNL Adobe Firefly] {#search-firefly}
 
@@ -171,11 +169,11 @@ Nieuwe elementen genereren met [!DNL Adobe Firefly] :
 
 1. Typ de naam van het element in de zoekbalk. U kunt bijvoorbeeld een element zoeken met het trefwoord `Bugatti Type 57` . Bij het zoeken naar het element worden geen resultaten gevonden, omdat het element in geen van de elementmappen aanwezig is. Klik op **[!UICONTROL Generate with Firefly]** als u elementen wilt genereren met AI. Het scherm [!DNL Adobe Firefly] wordt weergegeven.
 
-   ![&#x200B; de integratie van Firefly &#x200B;](assets/firefly-integration.png)
+   ![ de integratie van Firefly ](assets/firefly-integration.png)
 
-   De nieuwe elementen worden gegenereerd. Bovendien kunt u de beschrijving van de afbeelding wijzigen door de nieuwe tekstprompt in het beschrijvingsvak te typen. [&#x200B; Leer hoe te om een goede AI herinnering te schrijven om buitengewone en relevante inhoud &#x200B;](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) te produceren. Alternatief, kunt u beeld met diverse andere eigenschappen zoals veranderende stijl, beelddimensies, en meer [&#x200B; uitgeven.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+   De nieuwe elementen worden gegenereerd. Bovendien kunt u de beschrijving van de afbeelding wijzigen door de nieuwe tekstprompt in het beschrijvingsvak te typen. [ Leer hoe te om een goede AI herinnering te schrijven om buitengewone en relevante inhoud ](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) te produceren. Alternatief, kunt u beeld met diverse andere eigenschappen zoals veranderende stijl, beelddimensies, en meer [ uitgeven.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
 
-   ![&#x200B; de integratie van Firefly &#x200B;](assets/bugatti-type-57.png)
+   ![ de integratie van Firefly ](assets/bugatti-type-57.png)
 
 1. Selecteer een afbeelding die u wilt opslaan. Klik op **[!UICONTROL Save]** om de elementen in de voorkeursmap op te slaan, zodat u ze gemakkelijk kunt openen.
 
@@ -185,7 +183,7 @@ Nieuwe elementen genereren met [!DNL Adobe Firefly] :
    * Selecteer een doelmap.
    * Voer details in, zoals de naam van een project of campagne, Trefwoorden, kanalen, het tijdframe en het gebied.
 
-   ![&#x200B; de integratie van Firefly &#x200B;](assets/save-generated-asset.png)
+   ![ de integratie van Firefly ](assets/save-generated-asset.png)
 
 1. Klik **sparen als nieuwe activa** om de activa te bewaren.
 
@@ -195,7 +193,7 @@ Het gegenereerde element uploaden naar de gegevensopslagplaats:
 
 1. Klik op **[!UICONTROL Upload]**.
 1. Selecteer de elementmap waarnaar u het element wilt uploaden en klik op **[!UICONTROL Select Folder]** .
-   ![&#x200B; uploadt activa &#x200B;](assets/upload-asset-firefly.jpg)
+   ![ uploadt activa ](assets/upload-asset-firefly.jpg)
 
 ## Opgeslagen zoekopdrachten {#saved-search}
 
@@ -203,9 +201,9 @@ Zoekfuncties kunt u eenvoudig gebruiken in [!DNL Assets view] . Vanuit het zoekv
 
 U kunt de zoekresultaten ook filteren op basis van specifieke criteria voor metagegevens en het type element. Voor veelgebruikte filters kunt u de zoekervaring verbeteren door [!DNL Assets view] de zoekparameters op te slaan. Vervolgens kunt u de opgeslagen zoekopdracht selecteren en het filter toepassen met één klik.
 
-Als u een opgeslagen zoekopdracht wilt maken, zoekt u naar een element, past u een of meer filters toe en klikt u op **[!UICONTROL Save as]** > **[!UICONTROL Saved Search]** in het deelvenster [!UICONTROL Filters] . U kunt ook op **[!UICONTROL Save as]** klikken en **[!UICONTROL Smart Collection]** selecteren om de resultaten op te slaan als een slimme verzameling. Zie [&#x200B; een Slimme Inzameling &#x200B;](manage-collections.md#create-a-smart-collection) voor meer details creëren.
+Als u een opgeslagen zoekopdracht wilt maken, zoekt u naar een element, past u een of meer filters toe en klikt u op **[!UICONTROL Save as]** > **[!UICONTROL Saved Search]** in het deelvenster [!UICONTROL Filters] . U kunt ook op **[!UICONTROL Save as]** klikken en **[!UICONTROL Smart Collection]** selecteren om de resultaten op te slaan als een slimme verzameling. Zie [ een Slimme Inzameling ](manage-collections.md#create-a-smart-collection) voor meer details creëren.
 
-![&#x200B; creeer slimme inzameling &#x200B;](assets/create-smart-collection.png)
+![ creeer slimme inzameling ](assets/create-smart-collection.png)
 
 <!-- TBD: Search behavior. Full-text search. Ranking and rank boosts. Hidden assets.
 Report poor UX that users can only save a filtered search and not a simple search.
@@ -230,13 +228,13 @@ U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de
 
 * **voeg aan Inzameling** toe: Voeg de geselecteerde activa aan een inzameling toe.
 
-* **Vastzetten aan Snelle Toegang**: [&#x200B; Vastzetten activa &#x200B;](my-workspace-assets-view.md) voor snellere toegang wanneer u het later nodig hebt. Alle vastgezette punten tonen in de **Snelle toegang** sectie van Mijn Workspace.
+* **Vastzetten aan Snelle Toegang**: [ Vastzetten activa ](my-workspace-assets-view.md) voor snellere toegang wanneer u het later nodig hebt. Alle vastgezette punten tonen in de **Snelle toegang** sectie van Mijn Workspace.
 
 * **Open in Adobe Express**: Bewerk een beeld in geïntegreerde Adobe Express van het scherm van Experience Manager Assets.
 
 * **geef** uit: geef het beeld uit gebruikend Adobe Express.
 
-* **Verbinding van het Aandeel**: [&#x200B; de verbindingen van het Aandeel &#x200B;](share-links-for-assets-view.md) voor een activa met andere gebruikers zodat zij tot het kunnen toegang hebben en het downloaden.
+* **Verbinding van het Aandeel**: [ de verbindingen van het Aandeel ](share-links-for-assets-view.md) voor een activa met andere gebruikers zodat zij tot het kunnen toegang hebben en het downloaden.
 
 * **Schrapping**: Schrap een activa.
 
@@ -250,7 +248,7 @@ U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de
 
 * **Wijs Taken** toe: Wijs taken aan gebruikers voor een activa toe.
 
-* **Controle**: [&#x200B; controleert de verrichtingen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/search-assets) die op activa worden uitgevoerd.
+* **Controle**: [ controleert de verrichtingen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets) die op activa worden uitgevoerd.
 
 ## Eerste homepage van zoekopdracht configureren {#configuring-search-first-homepage}
 
@@ -259,13 +257,13 @@ In de Assets-weergave kunt u de standaardbestemmingspagina voor uw organisatie s
 Voer de onderstaande stappen uit om de eerste homepage van de zoekopdracht te configureren:
 
 1. Ga naar **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
-1. Selecteer **[!UICONTROL Search first]**. Het opent verder de onderzoek eerste verwante configuratie. U kunt [&#x200B; groepering &#x200B;](#setting-alignment-search-bar) plaatsen of [&#x200B; de achtergrond en het embleembeeld &#x200B;](#setting-background-image-and-logo) van uw homepage plaatsen.
+1. Selecteer **[!UICONTROL Search first]**. Het opent verder de onderzoek eerste verwante configuratie. U kunt [ groepering ](#setting-alignment-search-bar) plaatsen of [ de achtergrond en het embleembeeld ](#setting-background-image-and-logo) van uw homepage plaatsen.
 
 ### Uitlijning van zoekbalk instellen {#setting-alignment-search-bar}
 
 Met [!DNL Assets view] kunt u de uitlijning van de zoekbalk wijzigen. U kunt de zoekbalk in het midden of boven aan het scherm weergeven. Selecteer de gewenste uitlijning en klik op **[!UICONTROL Save]** .
 
-![&#x200B; Onderzoek eerste homepage groepering &#x200B;](assets/search-first-alignment.png)
+![ Onderzoek eerste homepage groepering ](assets/search-first-alignment.png)
 
 ### Achtergrond- en logoafbeelding van homepage instellen {#setting-background-image-and-logo}
 
@@ -273,7 +271,7 @@ U kunt een merklogo en achtergrondafbeelding toevoegen aan uw eerste zoekpagina.
 
 1. Ga naar de sectie **[!UICONTROL Background and Logo image]** onder **[!UICONTROL Homepage]** .
 1. Klik op **[!UICONTROL Replace]** om door afbeeldingen te bladeren vanuit de bestaande gegevensopslagruimte.
-1. Klik op **[!UICONTROL Save]**. [&#x200B; Voorproef &#x200B;](#preview-configured-homepage) de veranderingen om de wijzigingen te herzien.
+1. Klik op **[!UICONTROL Save]**. [ Voorproef ](#preview-configured-homepage) de veranderingen om de wijzigingen te herzien.
 
 ### Voorvertoning geconfigureerde homepage {#preview-configured-homepage}
 
@@ -283,7 +281,7 @@ U kunt een voorvertoning weergeven om de lay-out en opmaak van de eerste homepag
 1. Ga naar **[!UICONTROL Customize search first homepage]** en klik op **[!UICONTROL Preview]** . Schakel de knop **[!UICONTROL Dark theme]** in en uit om een voorvertoning van de startpagina weer te geven in donker of licht thema.
 1. Klik op **[!UICONTROL Close]** om het voorvertoningsscherm te sluiten.
 
-   ![&#x200B; Onderzoek eerste homepage voorproef &#x200B;](/help/assets/assets/search-first-preview.gif)
+   ![ Onderzoek eerste homepage voorproef ](/help/assets/assets/search-first-preview.gif)
 
 ## Contextueel zoeken {#contextual-search}
 
@@ -295,11 +293,11 @@ Toegang krijgen tot contextafhankelijke zoekopdrachten in Experience Manager Ass
 
 1. Klik op **[!UICONTROL Search]** in het linkerdeelvenster.
 
-   ![&#x200B; Contextual Onderzoek &#x200B;](assets/access-contextual-search.png)
+   ![ Contextual Onderzoek ](assets/access-contextual-search.png)
 
 1. Definieer de tekstprompt in het tekstvak Zoeken en klik op **[!UICONTROL Contextual Search]** .
 
-   ![&#x200B; Contextual de tekstherinnering van het Onderzoek &#x200B;](/help/assets/assets/wknd-contextual-search.png)
+   ![ Contextual de tekstherinnering van het Onderzoek ](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] geeft de zoekresultaten weer.
 
@@ -333,7 +331,7 @@ Contextueel zoeken ondersteunt de volgende filters uit de verpakking. Baseer uw 
 
 [!DNL Experience Manager Assets] past de volgende filters automatisch toe en toont de onderzoeksresultaten:
 
-![&#x200B; Contextual het Voorbeeld van het Onderzoek 1 &#x200B;](assets/contextual-search-example1.png)
+![ Contextual het Voorbeeld van het Onderzoek 1 ](assets/contextual-search-example1.png)
 
 **Voorbeeld 2**
 
@@ -341,7 +339,7 @@ Contextueel zoeken ondersteunt de volgende filters uit de verpakking. Baseer uw 
 
 [!DNL Experience Manager Assets] past de volgende filters automatisch toe en toont de onderzoeksresultaten:
 
-![&#x200B; Contextual het Voorbeeld van het Onderzoek 2 &#x200B;](assets/contextual-search-example2.png)
+![ Contextual het Voorbeeld van het Onderzoek 2 ](assets/contextual-search-example2.png)
 
 **Voorbeeld 3**
 
@@ -349,7 +347,7 @@ Contextueel zoeken ondersteunt de volgende filters uit de verpakking. Baseer uw 
 
 [!DNL Experience Manager Assets] past de volgende filters automatisch toe en toont de onderzoeksresultaten:
 
-![&#x200B; Contextual het Voorbeeld van het Onderzoek 3 &#x200B;](assets/contextual-search-example3.png)
+![ Contextual het Voorbeeld van het Onderzoek 3 ](assets/contextual-search-example3.png)
 
 De volgende video illustreert het proces van begin tot eind van de toegang tot van het Contextual Onderzoek Gebruikersinterface tot het bepalen van tekstherinneringen, en het bekijken van de onderzoeksresultaten.
 
@@ -365,18 +363,18 @@ Beheerders hebben ook de mogelijkheid om contextafhankelijke zoekopdrachten voor
 
 ### Feedback op contextuele zoekopdrachten {#contextual-search-feedback}
 
-Als u moet verstrekken terugkoppelt op de Contextuele eigenschap van het Onderzoek, klik ![&#x200B; Contextafhankelijk pictogram van het Onderzoek &#x200B;](assets/do-not-localize/Smock_Help_18_N.svg) en klik het pictogram van de Terugkoppeling. Selecteer het type feedback, geef het onderwerp en de beschrijving op en klik op **[!UICONTROL Submit]** .
+Als u moet verstrekken terugkoppelt op de Contextuele eigenschap van het Onderzoek, klik ![ Contextafhankelijk pictogram van het Onderzoek ](assets/do-not-localize/Smock_Help_18_N.svg) en klik het pictogram van de Terugkoppeling. Selecteer het type feedback, geef het onderwerp en de beschrijving op en klik op **[!UICONTROL Submit]** .
 
-![&#x200B; Contextafhankelijke Onderzoek terugkoppelt &#x200B;](assets/contextual-search-feedback.png)
+![ Contextafhankelijke Onderzoek terugkoppelt ](assets/contextual-search-feedback.png)
 
 ## Volgende stappen {#next-steps}
 
-* [&#x200B; bekijk een video aan onderzoeksactiva in de mening van Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=nl-NL)
+* [ bekijk een video aan onderzoeksactiva in de mening van Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar.
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar.
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
