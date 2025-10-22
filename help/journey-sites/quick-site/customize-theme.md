@@ -22,7 +22,7 @@ Leer hoe u het sitethema hebt gemaakt, hoe u het kunt aanpassen en hoe u het kun
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [ wint de Informatie van de Toegang van de Toegang van de Bewaarplaats van de it ](retrieve-access.md) terug, leerde u hoe de front-end ontwikkelaarsgebruikers Cloud Manager om tot informatie van de gokbewaarplaats toegang te hebben, en u zou nu moeten:
+In het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [&#x200B; wint de Informatie van de Toegang van de Toegang van de Bewaarplaats van de it &#x200B;](retrieve-access.md) terug, leerde u hoe de front-end ontwikkelaarsgebruikers Cloud Manager om tot informatie van de gokbewaarplaats toegang te hebben, en u zou nu moeten:
 
 * Begrijp op een hoog niveau wat Cloud Manager is.
 * U hebt uw gegevens opgehaald voor toegang tot de AEM-kit zodat u uw aanpassingen kunt doorvoeren.
@@ -45,7 +45,7 @@ Dit deel van de reis geldt voor de front-end ontwikkelaar.
 
 Extraheer het thema dat door de AEM-beheerder wordt aangeboden naar de locatie waar u het thema wilt bewerken en open het in de gewenste editor.
 
-![ Uitgevend het thema ](assets/edit-theme.png)
+![&#x200B; Uitgevend het thema &#x200B;](assets/edit-theme.png)
 
 U ziet dat het thema een typisch front-end project is. De belangrijkste onderdelen van de structuur zijn:
 
@@ -56,7 +56,7 @@ U ziet dat het thema een typisch front-end project is. De belangrijkste onderdel
 
 >[!TIP]
 >
->Als u meer over het standaard de plaatsthema van AEM zou willen weten, zie de verbinding GitHub in de [ Extra sectie van Middelen ](#additional-resources) aan het eind van dit document.
+>Als u meer over het standaard de plaatsthema van AEM zou willen weten, zie de verbinding GitHub in de [&#x200B; Extra sectie van Middelen &#x200B;](#additional-resources) aan het eind van dit document.
 
 Als u vertrouwd bent met de structuur van het themaproject, start u de lokale proxy zodat u in real-time alle themaaanpassingen kunt zien op basis van de werkelijke AEM-inhoud.
 
@@ -65,26 +65,26 @@ Als u vertrouwd bent met de structuur van het themaproject, start u de lokale pr
 1. Navigeer vanaf de opdrachtregel naar de basis van het thema op uw lokale computer.
 1. Uitvoeren `npm install` en npm halen gebiedsdelen terug en installeert het project.
 
-   ![ npm installeert ](assets/npm-install.png)
+   ![&#x200B; npm installeert &#x200B;](assets/npm-install.png)
 
 1. Uitvoeren `npm run live` en de proxyserver start.
 
-   ![ npm looppas live ](assets/npm-run-live.png)
+   ![&#x200B; npm looppas live &#x200B;](assets/npm-run-live.png)
 
 1. Wanneer de proxyserver wordt gestart, opent deze automatisch een browser naar `http://localhost:7001/` . Selecteer **LOKAAL ONDERTEKENEN (ALLEEN TAKEN VAN ADMIN)** en ondertekenen binnen met de geloofsbrieven van de volmachtsgebruiker die aan u door de beheerder van AEM worden verstrekt.
 
-   ![ Teken binnen plaatselijk ](assets/sign-in-locally.png)
+   ![&#x200B; Teken binnen plaatselijk &#x200B;](assets/sign-in-locally.png)
 
    >[!TIP]
    >
-   >Als u deze geloofsbrieven niet hebt, spreek met uw beheerder die de [ sectie van de Gebruiker van de Volmacht van de Opstelling van Create Plaats van het artikel van het Malplaatje ](/help/journey-sites/quick-site/create-site.md#proxy-user) in deze reis van verwijzingen voorzien.
+   >Als u deze geloofsbrieven niet hebt, spreek met uw beheerder die de [&#x200B; sectie van de Gebruiker van de Volmacht van de Opstelling van Create Plaats van het artikel van het Malplaatje &#x200B;](/help/journey-sites/quick-site/create-site.md#proxy-user) in deze reis van verwijzingen voorzien.
 
 1. Als u zich eenmaal hebt aangemeld, wijzigt u de URL in de browser zodat deze verwijst naar het pad naar de voorbeeldinhoud die de AEM-beheerder u heeft verschaft.
 
    * Als het opgegeven pad bijvoorbeeld `/content/<your-site>/en/home.html?wcmmode=disabled` was
    * U verandert de URL in `http://localhost:7001/content/<your-site>/en/home.html?wcmmode=disabled`
 
-   ![ Proxied steekproefinhoud ](assets/proxied-sample-content.png)
+   ![&#x200B; Proxied steekproefinhoud &#x200B;](assets/proxied-sample-content.png)
 
 U kunt op de site navigeren om de inhoud te verkennen. De site wordt live opgehaald uit het live AEM-exemplaar, zodat u uw thema kunt aanpassen op basis van echte inhoud.
 
@@ -94,19 +94,19 @@ Nu kunt u beginnen het thema aan te passen. In het volgende voorbeeld ziet u hoe
 
 1. Open het bestand in de editor `<your-theme-sources>/src/site/_variables.scss`
 
-   ![ geef thema ](assets/edit-theme.png) uit
+   ![&#x200B; geef thema &#x200B;](assets/edit-theme.png) uit
 
 1. Bewerk de variabele `$color-background` en stel deze in op een andere waarde dan wit. In dit voorbeeld wordt `orange` gebruikt.
 
-   ![ Bewerkte thema ](assets/edited-theme.png)
+   ![&#x200B; Bewerkte thema &#x200B;](assets/edited-theme.png)
 
 1. Wanneer u het bestand opslaat, ziet u dat de proxyserver de wijziging herkent via de regel `[Browsersync] File event [change]` .
 
-   ![ Proxy browserSync ](assets/proxy-browsersync.png)
+   ![&#x200B; Proxy browserSync &#x200B;](assets/proxy-browsersync.png)
 
 1. Als u terugschakelt naar uw browser van de proxyserver, is de wijziging direct zichtbaar.
 
-   ![ Oranje thema ](assets/orange-theme.png)
+   ![&#x200B; Oranje thema &#x200B;](assets/orange-theme.png)
 
 U kunt het thema blijven aanpassen op basis van de vereisten die de AEM-beheerder u biedt.
 
@@ -115,9 +115,9 @@ U kunt het thema blijven aanpassen op basis van de vereisten die de AEM-beheerde
 Zodra uw aanpassingen volledig zijn, kunt u hen aan de git bewaarplaats van AEM begaan. Eerst moet u de repository klonen op uw lokale computer.
 
 1. Navigeer vanaf de opdrachtregel naar de locatie waar u de repo wilt klonen.
-1. Voer het bevel uit u [ eerder van Cloud Manager ](retrieve-access.md) wordt teruggewonnen. Deze zou vergelijkbaar moeten zijn met `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` . Gebruik de gebruikersnaam en het wachtwoord van de git die [ u in het vorige deel van deze reis ](retrieve-access.md) terugwint.
+1. Voer het bevel uit u [&#x200B; eerder van Cloud Manager &#x200B;](retrieve-access.md) wordt teruggewonnen. Deze zou vergelijkbaar moeten zijn met `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` . Gebruik de gebruikersnaam en het wachtwoord van de git die [&#x200B; u in het vorige deel van deze reis &#x200B;](retrieve-access.md) terugwint.
 
-   ![ Kloonrepo ](assets/clone-repo.png)
+   ![&#x200B; Kloonrepo &#x200B;](assets/clone-repo.png)
 
 1. Verplaats het themaproject dat u aan het bewerken was naar het gekloonde antwoord met een opdracht vergelijkbaar met `mv <site-theme-sources> <cloned-repo>`
 1. Wijs in de map met de gekloonde repo de themabestanden toe waarnaar u zojuist hebt verplaatst met de volgende opdrachten.
@@ -130,7 +130,7 @@ Zodra uw aanpassingen volledig zijn, kunt u hen aan de git bewaarplaats van AEM 
 
 1. De aanpassingen worden doorgestuurd naar de AEM git-opslagplaats.
 
-   ![ Gecommitteerde Veranderingen ](assets/changes-committed.png)
+   ![&#x200B; Gecommitteerde Veranderingen &#x200B;](assets/changes-committed.png)
 
 Uw aanpassingen worden nu veilig opgeslagen in de AEM-it-opslagplaats.
 
@@ -142,12 +142,12 @@ Nu u dit deel van de AEM Quick Site Creation-reis hebt voltooid, kunt u het volg
 * Zie hoe u uw themaaanpassingen kunt testen met echte AEM-inhoud via lokale proxy.
 * Weet hoe u uw wijzigingen kunt doorvoeren in de AEM Git-opslagplaats.
 
-Bouw op deze kennis voort en zet uw reis van de Gemaakt van de Plaats van AEM Snelle door het document [ opnieuw te bekijken stelt Uw Aangepast Thema ](deploy-theme.md) op, waar u leert hoe te om het thema op te stellen gebruikend de front-end pijpleiding.
+Bouw op deze kennis voort en zet uw reis van de Gemaakt van de Plaats van AEM Snelle door het document [&#x200B; opnieuw te bekijken stelt Uw Aangepast Thema &#x200B;](deploy-theme.md) op, waar u leert hoe te om het thema op te stellen gebruikend de front-end pijpleiding.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien uw Aangepast Thema ](deploy-theme.md) opstelt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [&#x200B; te herzien uw Aangepast Thema &#x200B;](deploy-theme.md) opstelt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [ het Thema van de Plaats van AEM ](https://github.com/adobe/aem-site-template-standard-theme-e2e) - dit is de bewaarplaats GitHub van het Thema van de Plaats van AEM.
-* [ npm ](https://www.npmjs.com) - de thema&#39;s van AEM die worden gebruikt om plaatsen snel te bouwen zijn gebaseerd op npm.
-* [ webpack ](https://webpack.js.org) - de thema&#39;s van AEM die worden gebruikt om sites snel te bouwen baseren zich op webpack.
+* [&#x200B; het Thema van de Plaats van AEM &#x200B;](https://github.com/adobe/aem-site-template-standard-theme-e2e) - dit is de bewaarplaats GitHub van het Thema van de Plaats van AEM.
+* [&#x200B; npm &#x200B;](https://www.npmjs.com) - de thema&#39;s van AEM die worden gebruikt om plaatsen snel te bouwen zijn gebaseerd op npm.
+* [&#x200B; webpack &#x200B;](https://webpack.js.org) - de thema&#39;s van AEM die worden gebruikt om sites snel te bouwen baseren zich op webpack.
