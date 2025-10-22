@@ -4,8 +4,8 @@ description: De front-end pijpleiding verbetert de onafhankelijkheid van de ontw
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-recommendations: display, noCatalog
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+recommendations: noDisplay, noCatalog
+source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 {{traditional-aem}}
 
-De [&#x200B; front-end pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) geeft front-end ontwikkelaars grotere onafhankelijkheid en versnelt beduidend ontwikkeling. In dit artikel wordt uitgelegd hoe het proces werkt en worden belangrijke overwegingen gemarkeerd om u te helpen er optimaal van te profiteren.
+De [ front-end pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) geeft front-end ontwikkelaars grotere onafhankelijkheid en versnelt beduidend ontwikkeling. In dit artikel wordt uitgelegd hoe het proces werkt en worden belangrijke overwegingen gemarkeerd om u te helpen er optimaal van te profiteren.
 
 >[!TIP]
 >
->Als u nog niet vertrouwd met bent hoe te om de front-end pijpleiding en zijn voordelen te gebruiken, zie de [&#x200B; gids van de Reis van de Aanmaak van de Snel van de Plaats &#x200B;](/help/journey-sites/quick-site/overview.md). Het verstrekt een voorbeeld van hoe te om een nieuwe plaats snel op te stellen en zijn thema onafhankelijk van achterste-eindontwikkeling aan te passen.
+>Als u nog niet vertrouwd met bent hoe te om de front-end pijpleiding en zijn voordelen te gebruiken, zie de [ gids van de Reis van de Aanmaak van de Snel van de Plaats ](/help/journey-sites/quick-site/overview.md). Het verstrekt een voorbeeld van hoe te om een nieuwe plaats snel op te stellen en zijn thema onafhankelijk van achterste-eindontwikkeling aan te passen.
 
 ## Begrijp de front-end pijpleiding opstelling en bouwstijlproces in AEM Cloud Manager {#front-end-build-contract}
 
-Gelijkaardig aan [&#x200B; volledig-stapel bouwt milieu &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), heeft de front-end pijpleiding zijn eigen milieu. Ontwikkelaars hebben enige flexibiliteit met deze pijpleiding, op voorwaarde dat ze het front-end bouwcontract volgen.
+Gelijkaardig aan [ volledig-stapel bouwt milieu ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), heeft de front-end pijpleiding zijn eigen milieu. Ontwikkelaars hebben enige flexibiliteit met deze pijpleiding, op voorwaarde dat ze het front-end bouwcontract volgen.
 
 De front-end pijpleiding vereist het front-end `Node.js` project om de `build` manuscriptrichtlijn te gebruiken om de bouwstijl te produceren die het opstelt. Deze vereiste bestaat omdat Cloud Manager het bevel `npm run build` gebruikt om het plaatsbare project voor front-end bouwt te produceren.
 
@@ -43,7 +43,7 @@ De front-end build-omgeving ondersteunt de volgende `Node.js` versies:
 * 14 (standaard)
 * 12
 
-U kunt de `NODE_VERSION` [&#x200B; milieuvariabele &#x200B;](/help/implementing/cloud-manager/environment-variables.md) gebruiken om de gewenste versie te plaatsen.
+U kunt de `NODE_VERSION` [ milieuvariabele ](/help/implementing/cloud-manager/environment-variables.md) gebruiken om de gewenste versie te plaatsen.
 
 ## Aanbevolen procedures voor de naamgeving en het beheer van pijpleidingen aan de voorzijde in AEM {#single-source-of-truth}
 
@@ -93,11 +93,11 @@ De volgende stappen worden over het algemeen aanbevolen wanneer u wijzigingen aa
 
 * Leer hoe u met AEM-sitethema&#39;s de stijl en het ontwerp van uw site kunt aanpassen.
 
-  Zie [&#x200B; Thema&#39;s van de Plaats &#x200B;](/help/sites-cloud/administering/site-creation/site-themes.md).
+  Zie [ Thema&#39;s van de Plaats ](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 * Adobe biedt een AEM Site Theme Builder als een set scripts voor het maken van nieuwe sitethema&#39;s.
 
-  Zie [&#x200B; de Bouwer van het Thema van de Plaats van AEM &#x200B;](https://github.com/adobe/aem-site-theme-builder)
+  Zie [ de Bouwer van het Thema van de Plaats van AEM ](https://github.com/adobe/aem-site-theme-builder)
 
 
 
