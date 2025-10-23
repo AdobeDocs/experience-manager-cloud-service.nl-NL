@@ -62,6 +62,6 @@ Er zijn veel beschikbare bronnen, waaronder:
 
 * [&#x200B; Verantwoordelijke AI bij Adobe &#x200B;](https://www.adobe.com/trust/responsible-ai.html)
 
-* [&#x200B; Generatieve AI in de producten van Experience Cloud &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+* [&#x200B; Generatieve AI in de producten van Experience Cloud &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai)
 
-   * [&#x200B; Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+   * [&#x200B; Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai#aem)
