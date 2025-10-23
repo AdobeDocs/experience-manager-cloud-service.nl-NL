@@ -18,18 +18,18 @@ Dit zijn de opmerkingen bij de release van 23 oktober 2025 van de Universal Edit
 
 >[!TIP]
 >
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* [ het Exemplaar en de deeg ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) over browser lusjes wordt nu gesteund.
+* [&#x200B; het Exemplaar en de deeg &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) over browser lusjes wordt nu gesteund.
    * Beperkt tot tussen tabbladen die tegelijkertijd geopend zijn.
    * Het kopiëren van inhoud en het openen van een nieuw tabblad wordt niet ondersteund.
-* U kunt unpublish knoop met a [ meta markering nu onbruikbaar maken.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* U kunt unpublish knoop met a [&#x200B; meta markering nu onbruikbaar maken.](/help/implementing/universal-editor/customizing.md#meta-tags)
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -37,7 +37,7 @@ Als u deze functies wilt testen en feedback wilt delen, stuurt u een e-mail naar
 
 ### Nieuwe RTE {#new-rte}
 
-De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [ dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
+De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [&#x200B; dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
 
 ## Overige verbeteringen {#other-improvements}
 
