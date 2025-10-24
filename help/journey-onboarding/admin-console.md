@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Toegang tot de Admin Console {#accessing-admin-console}
 
-In dit deel van de [ onboarding reis ](overview.md), leert u over de voorbereiding noodzakelijk alvorens u in het systeem voor het eerst kunt registreren.
+In dit deel van de [&#x200B; onboarding reis &#x200B;](overview.md), leert u over de voorbereiding noodzakelijk alvorens u in het systeem voor het eerst kunt registreren.
 
 ## Doelstelling {#objective}
 
-Nu u de artikel [ Terminologie van AEM as a Cloud Service ](terminology.md) hebt gelezen en de grondbeginselen van structuur begrijpt AEMaaCS, bent u bereid om in Admin Console voor het eerst te registreren!
+Nu u de artikel [&#x200B; Terminologie van AEM as a Cloud Service &#x200B;](terminology.md) hebt gelezen en de grondbeginselen van structuur begrijpt AEMaaCS, bent u bereid om in Admin Console voor het eerst te registreren!
 
 Als systeembeheerder bent u verantwoordelijk voor het beheer van gebruikers binnen uw organisatie die de Admin Console gebruiken. Na het lezen van deze sectie moet u het volgende kunnen doen:
 
@@ -52,43 +52,43 @@ Voordat u de Admin Console kunt gebruiken om gebruikers binnen uw team te behere
 
 1. Als systeembeheerder ontvangt u meerdere e-mails van Adobe als onderdeel van het instapproces. Zoek de welkomstmail die de informatie over de organisatienaam verstrekt waaraan u toegang hebt verleend.
 
-1. Klik **krijgen begonnen** verbinding in uw welkome e-mail om aan Admin Console te navigeren. Als u e-mail niet kunt vinden, open direct browser aan Admin Console op [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com).
+1. Klik **krijgen begonnen** verbinding in uw welkome e-mail om aan Admin Console te navigeren. Als u e-mail niet kunt vinden, open direct browser aan Admin Console op [`https://adminconsole.adobe.com` &#x200B;](https://adminconsole.adobe.com).
 
-   ![ Welkome e-mail ](/help/journey-onboarding/assets/get-started-email.png)
+   ![&#x200B; Welkome e-mail &#x200B;](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Meld u aan met uw Adobe ID. Op succesvolle login, ziet u de **pagina van het Overzicht** van Adobe Admin Console.
 
-   ![ Admin Console ](/help/journey-onboarding/assets/get-started1.png)
+   ![&#x200B; Admin Console &#x200B;](/help/journey-onboarding/assets/get-started1.png)
 
 1. Als u toegang tot veelvoudige organisaties hebt, zorg ervoor dat u zich bij de correcte organisatie hebt aangemeld. Als u uw organisatie wilt wijzigen, klikt u in de rechterbovenhoek op de naam van de organisatie en kiest u de gewenste organisatie waartoe u toegang nodig hebt.
 
-   ![ de org van de Verandering ](/help/journey-onboarding/assets/admin-console-orgswitch.png)
+   ![&#x200B; de org van de Verandering &#x200B;](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 
 1. Selecteer **Beheerders** van de **Gebruikers** kaart om te verifiëren dat u een systeembeheerder bent.
 
-   ![ de beheerders van het Overzicht ](/help/journey-onboarding/assets/get-started2.png)
+   ![&#x200B; de beheerders van het Overzicht &#x200B;](/help/journey-onboarding/assets/get-started2.png)
 
 1. Nadat u **Beheerders** van de **Gebruikers** kaart klikt, kunt u zoeken door uw e-mail van Adobe ID, gebruikersbenaming, eerst, of achternaam in te gaan.
 
-   ![ de gebruikers van het Onderzoek ](/help/journey-onboarding/assets/get-started3.png)
+   ![&#x200B; de gebruikers van het Onderzoek &#x200B;](/help/journey-onboarding/assets/get-started3.png)
 
 1. Als alles goed werkt, retourneert de zoekopdracht uw record. Als de waarde in de **ADMIN ROLE** kolom **Systeem** toont, weet u dat u (of de getoonde gebruiker) een systeembeheerder zijn.
 
-   ![ status van het Systeem ](/help/journey-onboarding/assets/get-started4.png)
+   ![&#x200B; status van het Systeem &#x200B;](/help/journey-onboarding/assets/get-started4.png)
 
 Gefeliciteerd, systeembeheerder!
 
 ## Toegang tot de Admin Console via Experience Hub  {#access-admin-console-via-experience-hub}
 
-[ Experience Hub ](/help/experience-hub.md) is het verenigde, gepersonaliseerde huis voor AEM. Het brengt AEM Tools en de Admin Console samen op één plaats.
+[&#x200B; Experience Hub &#x200B;](/help/experience-hub.md) is het verenigde, gepersonaliseerde huis voor AEM. Het brengt AEM Tools en de Admin Console samen op één plaats.
 
-![ optie van Admin Console aangezien het op de homepage van Experience Hub ](/help/journey-onboarding/assets/experiencehub-adminconsole1.png) verschijnt
+![&#x200B; optie van Admin Console aangezien het op de homepage van Experience Hub &#x200B;](/help/journey-onboarding/assets/experiencehub-adminconsole1.png) verschijnt
 
 **om tot Admin Console door Experience Hub toegang te hebben:**
 
-1. Klik [ Adobe Experience Cloud ](https://experience.adobe.com/#/@foundationinternal/home) om Experience Hub homepage te openen.
+1. Klik [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com/#/@foundationinternal/home) om Experience Hub homepage te openen.
 
-1. In de **Snelle toegang** groepering, klik [**Admin Console** ](https://experience.adobe.com).
+1. In de **Snelle toegang** groepering, klik [**Admin Console** &#x200B;](https://experience.adobe.com).
 
 ## Adobe Identity Management System {#ims}
 
@@ -102,7 +102,7 @@ Meer informatie over productprofielen en het toewijzen van gebruikers in het vol
 
 Als u problemen hebt, kunt u Adobe-ondersteuning openen via de Admin Console. Het **lusje van de Steun** laat u tot diverse de steunfuncties van Adobe door een eenvoudig en makkelijk te gebruiken interface toegang hebben.
 
-![ het lusje van de Steun ](/help/journey-onboarding/assets/support-menu.png)
+![&#x200B; het lusje van de Steun &#x200B;](/help/journey-onboarding/assets/support-menu.png)
 
 Op het tabblad kunt u zaken maken en beheren, rechtstreeks chatten met Adobe-vertegenwoordigers voor klantenondersteuning en sessies plannen met experts. Systeembeheerders en supportbeheerders moeten zich aanmelden voor toegang tot ondersteuningsgevallen en sessieopties van experts.
 
@@ -115,14 +115,14 @@ Nu u dit document hebt gelezen, moet u:
 * Leer hoe u uw rechten als systeembeheerder kunt controleren met de Admin Console.
 * Vraag hoe u contact kunt opnemen met Adobe-ondersteuning voor hulp.
 
-U bent bereid om uw onboarding reis door te leren hoe te [ teamleden aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md) toewijzen zodat uw collega&#39;s tot AEMaaCS kunnen ook toegang hebben.
+U bent bereid om uw onboarding reis door te leren hoe te [&#x200B; teamleden aan de Profielen van het Product van Cloud Manager &#x200B;](assign-profiles-cloud-manager.md) toewijzen zodat uw collega&#39;s tot AEMaaCS kunnen ook toegang hebben.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-* [ Overzicht van Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) - een uitvoerig overzicht van Admin Console
-* [ creeer of werk Uw Adobe ID ](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) bij - leer hoe te om een Adobe ID tot stand te brengen, het te veranderen, en veelvoudige Adobe IDs te beheren.
-* [ SAML 2.0 de Handler van de Authentificatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) - de schepen van AEM met een de authentificatiemanager van SAML. Deze manager verleent steun voor SAML 2.0 het Protocol van het Verzoek van de Authentificatie (Web-SSO profiel) gebruikend de POST van HTTP band.
-* [ Administratieve Rollen ](https://helpx.adobe.com/enterprise/using/admin-roles.html) - Gebruikend de Adobe Admin Console, kunnen de organisaties een flexibele administratieve hiërarchie bepalen die fijnkorrelig beheer van de het producttoegang en het gebruik van Adobe toelaat.
-* [ de Sessies van de Steun en van de Expert ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - leer hoe te om tot de steunopties op Admin Console toegang te hebben, uw steungevallen te beheren, een deskundige zitting te plannen, en meer.
+* [&#x200B; Overzicht van Admin Console &#x200B;](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) - een uitvoerig overzicht van Admin Console
+* [&#x200B; creeer of werk Uw Adobe ID &#x200B;](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) bij - leer hoe te om een Adobe ID tot stand te brengen, het te veranderen, en veelvoudige Adobe IDs te beheren.
+* [&#x200B; SAML 2.0 de Handler van de Authentificatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) - de schepen van AEM met een de authentificatiemanager van SAML. Deze manager verleent steun voor SAML 2.0 het Protocol van het Verzoek van de Authentificatie (Web-SSO profiel) gebruikend de POST van HTTP band.
+* [&#x200B; Administratieve Rollen &#x200B;](https://helpx.adobe.com/enterprise/using/admin-roles.html) - Gebruikend de Adobe Admin Console, kunnen de organisaties een flexibele administratieve hiërarchie bepalen die fijnkorrelig beheer van de het producttoegang en het gebruik van Adobe toelaat.
+* [&#x200B; de Sessies van de Steun en van de Expert &#x200B;](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - leer hoe te om tot de steunopties op Admin Console toegang te hebben, uw steungevallen te beheren, een deskundige zitting te plannen, en meer.
