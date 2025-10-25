@@ -4,35 +4,38 @@ description: Alvorens het aan boord gaan proces begint, zijn er een aantal of vo
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 7c79ad402826cd40a25560cdc169b31e95cda6bd
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
 
 # Voorbereiding aan boord {#onboarding-preparation}
 
-Nu u weet wat voor u in opslag in het onboarding proces door het artikel [&#x200B; AEM as a Cloud Service onboarding Inleiding van de Reis Inleiding van de Reis &#x200B;](overview.md) is te lezen, bent u waarschijnlijk bereid binnen te springen. Nochtans, alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
+Nu u weet wat voor u in opslag in het onboarding proces door het artikel [ AEM as a Cloud Service onboarding Inleiding van de Reis Inleiding van de Reis ](overview.md) is te lezen, bent u waarschijnlijk bereid binnen te springen. Nochtans, alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
 
 ## Doelstelling {#objective}
 
-AEM as a Cloud Service is een krachtig en flexibel hulpprogramma met tal van oplossingen, invoegtoepassingen en beschikbare implementatiemodellen. De oplossing die uw organisatie mag gebruiken, wordt gedefinieerd in uw contract met Adobe, dat het begin van het instapproces begeleidt.
+AEM as a Cloud Service is een krachtig en flexibel hulpprogramma met tal van oplossingen, invoegtoepassingen en beschikbare implementatiemodellen. De oplossing die uw organisatie mag gebruiken, wordt gedefinieerd in uw contract met Adobe, dat als leidraad fungeert voor het begin van het instapproces.
 
 Nadat u dit document hebt gelezen, moet u
 
-* Wat uw contract met Adobe bepaalt.
-* Welke bepalingen inzake Adobe?
+* Wat bepaalt je contract met Adobe?
+* Wat Adobe voorschrijft.
 * Hoe dat contract het instapproces beïnvloedt.
 * Hoe te op uw onboarding vraag voor te bereiden.
 
 Maak u geen zorgen als u niet vertrouwd bent met alle termen die op deze pagina worden gebruikt. De voorwaarden worden uitgelegd in het volgende deel van de reis.
 
+<!-- REMOVED VIDEO AS PER CQDOC-23130. VIDEO NEEDS TO BE RECREATED/UPDATED
 ## Video {#video}
 
-Deze video geeft een overzicht van het instapproces dat in deze reis wordt beschreven en is bedoeld als een optieoverzicht. Alle onderwerpen in de video worden in detail gepresenteerd binnen de reis.
+This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431500/?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+
+-->
 
 ## Uw contract {#contract}
 
@@ -46,15 +49,15 @@ Bij instapweigering op AEM as a Cloud Service begint een ondertekend contract tu
 
 Als u niet op de hoogte bent van deze gegevens, neemt u contact op met het contracterende team binnen uw organisatie.
 
-Zodra het contract wordt ondertekend, wordt de bepalingen van de Adobe uw milieu&#39;s, welkome e-mail verzonden naar de onboarding contacten die in het contract worden bepaald, en een onboarding vraag wordt georganiseerd door Adobe. Dit gebeurt gewoonlijk een paar dagen na het sluiten van het contract, tenzij een toekomstige datum van de de dienstaanvang wordt geschikt.
+Zodra het contract is ondertekend, voorziet Adobe uw milieu&#39;s, wordt een welkome e-mail verzonden naar de onboarding contacten die in het contract worden bepaald, en Adobe organiseert een onboarding vraag. Deze workflow vindt meestal een paar dagen na het afsluiten van het contract plaats, tenzij een datum voor het starten van de service in de toekomst wordt vastgelegd.
 
 ## Systeemprovisioning {#provisioning}
 
-Nadat het contract is ondertekend, worden alle AEM cloudomgevingen die onder het contract vallen automatisch door Adobe voorzien. Deze omgevingen zullen ook worden gekoppeld aan uw programma&#39;s in Cloud Manager (meer over dit onderwerp later op de reis). Deze AEM cloudomgevingen zijn inbegrepen in elk AEM as a Cloud Service-abonnement en bestaan gewoonlijk uit minstens één productieomgeving, één testomgeving en optioneel één of meer ontwikkelings- of testomgevingen.
+Nadat het contract is ondertekend, voorziet Adobe automatisch in alle AEM-cloudomgevingen die onder het contract vallen. Deze omgevingen zijn ook gekoppeld aan uw programma&#39;s in Cloud Manager (meer over dit onderwerp later op de reis). Elk abonnement bevat AEM-cloudomgevingen: ten minste één productie, één testfase en optionele ontwikkeling of test.
 
-## On-boarding Call {#onboarding-call}
+## On-board oproep {#onboarding-call}
 
-Bij de voltooiing van het contract, plant de Adobe aan boord van team een vraag met vertegenwoordigers van uw organisatie om te bespreken hoe te beginnen.
+Bij de voltooiing van het contract plant het Adobe on boarding team een oproep met vertegenwoordigers van uw organisatie om te bespreken hoe te beginnen.
 
 De deelnemers van uw organisatie zouden moeten omvatten:
 
@@ -62,12 +65,12 @@ De deelnemers van uw organisatie zouden moeten omvatten:
 * Tech-beoefenaars
 * Uw implementatiepartner
 
-Adobe wordt vertegenwoordigd door:
+Adobe biedt:
 
-* Onboarding-specialist
-* Uw technische accountmanager (indien van toepassing)
-* Uw benoemde Customer Successengineer (indien van toepassing)
-* Aanvullende vakspecialisten indien nodig
+* Een onboarding specialist.
+* Uw technische accountmanager (indien van toepassing).
+* Uw benoemde Customer Successengineer (indien van toepassing).
+* Eventuele aanvullende deskundigen op het gebied van onderwerpen.
 
 Het doel van de oproep is om u de gelegenheid te geven vragen te stellen, over het ondersteuningsproces te leren, en misschien het product voor het eerst te zien.
 
@@ -75,19 +78,19 @@ Het doel van de oproep is om u de gelegenheid te geven vragen te stellen, over h
 
 Na voltooiing van het proces voor de levering van de omgeving ontvangt de in het contract gedefinieerde systeembeheerder een welkomstbericht met de bevestiging dat hun toegang tot de Adobe Experience Cloud is verleend. Als u deze documentatiereis leest, is die persoon waarschijnlijk u!
 
-Het e-mailbericht bevat uitgebreide informatie over hoe u aan de slag kunt gaan met de services van het Experience Cloud en het zelfserviceportaal van Cloud Manager. Het e-mailbericht bevat ook belangrijke informatie, zoals waar u ondersteuningsbronnen, forums, veelgestelde vragen en nog veel meer wilt vinden. In de lijst met bronnen in de e-mail krijgt u ook informatie over hoe u toegang kunt krijgen tot uw AEM cloudomgevingen.
+Het e-mailbericht bevat gedetailleerde informatie over hoe u aan de slag kunt met de Experience Cloud-services en het Cloud Manager-zelfserviceportaal. Het e-mailbericht bevat ook belangrijke informatie, zoals waar u ondersteuningsbronnen, forums, veelgestelde vragen en nog veel meer wilt vinden. In de lijst met bronnen in de e-mail vindt u ook meer informatie over hoe u toegang kunt krijgen tot uw AEM-cloudomgevingen.
 
 >[!TIP]
 >
->Als u de welkomste-mail hebt ontvangen en niet de systeembeheerder bent, informeert u de Adobe tijdens de welkomstoproep. Alternatief kunt u op deze reis en in de volgende stappen blijven leren hoe te om een andere collega als systeembeheerder zelf aan te wijzen.
+>Als u het welkomstbericht hebt ontvangen en niet de systeembeheerder bent, informeert u Adobe tijdens de welkomstoproep. Alternatief kunt u op deze reis en in de volgende stappen blijven leren hoe te om een andere collega als systeembeheerder zelf aan te wijzen.
 
-## Volgende functies {#whats-next}
+## Wat nu? {#whats-next}
 
 U zou nu een basisbegrip moeten hebben van:
 
-* Wat uw contract met Adobe bepaalt.
-* Welke bepalingen inzake Adobe?
+* Wat bepaalt je contract met Adobe?
+* Wat Adobe voorschrijft.
 * Hoe dat contract het instapproces beïnvloedt.
 * Hoe te op uw onboarding vraag voor te bereiden.
 
-Nu u bekend bent met deze voorbereidingsstappen, bent u bijna klaar om u aan te melden bij het systeem zelf. Maar eerst hebt u een kort overzicht nodig van hoe AEM as a Cloud Service vanuit het standpunt van de systeembeheerder gestructureerd is en om wat belangrijke terminologie te leren kennen. Ga aan het volgende deel van de reis, [&#x200B; Terminologie van AEM as a Cloud Service &#x200B;](terminology.md) verder.
+Nu u bekend bent met deze voorbereidingsstappen, bent u bijna klaar om u aan te melden bij het systeem zelf. Begin met een korte rondleiding van AEM as a Cloud Service vanuit het perspectief van de systeembeheerder. Leer vervolgens de essentiële terminologie. Ga aan het volgende deel van de reis, [ Terminologie van AEM as a Cloud Service ](terminology.md) verder.
