@@ -111,7 +111,7 @@ Als voorbeeld, kan het veranderen van een indexdefinitie op een grote inhoudsbew
 
 Voor lokale ontwikkeling worden logitems naar lokale bestanden in de map `/crx-quickstart/logs` geschreven.
 
-In Cloud-omgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manager of een opdrachtregelprogramma gebruiken om de logbestanden te staart. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+In Cloud-omgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manager of een opdrachtregelprogramma gebruiken om de logbestanden te staart. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=nl-NL) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **plaatsend het Niveau van het Logboek**
 
@@ -215,7 +215,7 @@ Ook nuttig voor het zuiveren, heeft AEM as a Cloud Service Developer Console een
 
 ![&#x200B; Dev Console 4 &#x200B;](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Voor productieprogramma&#39;s wordt de toegang tot de AEM as a Cloud Service Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Adobe Admin Console, terwijl voor sandboxprogramma&#39;s de AEM as a Cloud Service Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM as a Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - Developer Role&quot; vereist voor statusdumps en moeten de browser van de opslagplaats en gebruikers ook worden gedefinieerd in het productprofiel van AEM Users of AEM-beheerders voor zowel auteur- als publicatieservices om gegevens van beide services te bekijken. Voor meer informatie over vestiging gebruikerstoestemmingen, zie [&#x200B; Documentatie van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Voor productieprogramma&#39;s wordt de toegang tot de AEM as a Cloud Service Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Adobe Admin Console, terwijl voor sandboxprogramma&#39;s de AEM as a Cloud Service Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM as a Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - Developer Role&quot; vereist voor statusdumps en moeten de browser van de opslagplaats en gebruikers ook worden gedefinieerd in het productprofiel van AEM Users of AEM-beheerders voor zowel auteur- als publicatieservices om gegevens van beide services te bekijken. Voor meer informatie over vestiging gebruikerstoestemmingen, zie [&#x200B; Documentatie van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=nl-NL).
 
 ### Prestatiebewaking {#performance-monitoring}
 
@@ -239,13 +239,13 @@ U moet een e-mailbericht verzenden via een e-mailserver in plaats van rechtstree
 
 ### E-mails verzenden {#sending-emails}
 
-De [&#x200B; dienst OSGI van de Post van de Post van de Dag CQ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) zou moeten worden gebruikt, en e-mails moeten naar de postserver worden verzonden die in het steunverzoek eerder dan rechtstreeks naar ontvangers wordt vermeld.
+De [&#x200B; dienst OSGI van de Post van de Post van de Dag CQ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=nl-NL#configuring-the-mail-service) zou moeten worden gebruikt, en e-mails moeten naar de postserver worden verzonden die in het steunverzoek eerder dan rechtstreeks naar ontvangers wordt vermeld.
 
 ### Configuratie {#email-configuration}
 
-E-mail in AEM zou moeten worden verzonden gebruikend de [&#x200B; dienst OSGi van de Post van CQ van de Dag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) dienst.
+E-mail in AEM zou moeten worden verzonden gebruikend de [&#x200B; dienst OSGi van de Post van CQ van de Dag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=nl-NL#configuring-the-mail-service) dienst.
 
-Zie [&#x200B; AEM 6.5 documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) voor details rond het vormen e-mailmontages. Houd bij AEM as a Cloud Service rekening met de volgende noodzakelijke aanpassingen van de service `com.day.cq.mailer.DefaultMailService OSGI` :
+Zie [&#x200B; AEM 6.5 documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=nl-NL) voor details rond het vormen e-mailmontages. Houd bij AEM as a Cloud Service rekening met de volgende noodzakelijke aanpassingen van de service `com.day.cq.mailer.DefaultMailService OSGI` :
 
 * De SMTP naam van de servergastheer zou aan $ [ moeten worden geplaatst env :AEM_PROXY_HOST;default=proxy.tunnel ]
 * De SMTP serverhaven zou aan de waarde van de originele volmachtshaven moeten worden geplaatst die in de portForwards parameter wordt geplaatst in de API vraag wordt gebruikt wanneer het vormen van omhoog geavanceerd voorzien van een netwerk. Bijvoorbeeld, 30465 (eerder dan 465)
