@@ -34,7 +34,7 @@ Volg de onderstaande stappen om uw migratieset in te voeren met de Cloud Acceler
 1. Geef de vereiste informatie op om een opname te maken.
 
    * **Reeks van de Migratie:** selecteer de migratiereeks die de gehaalde gegevens als Source bevat.
-      * De Reeksen van de migratie zullen verlopen na een lange periode van inactiviteit, zodat wordt verwacht dat de inname vrij snel na de extractie plaatsvindt. Het overzicht [ Vastgestelde Verval van de Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor details.
+      * De Reeksen van de migratie zullen verlopen na een lange periode van inactiviteit, zodat wordt verwacht dat de inname vrij snel na de extractie plaatsvindt. Het overzicht [&#x200B; Vastgestelde Verval van de Migratie &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor details.
 
    >[!TIP]
    > Als de extractie wordt uitgevoerd, wordt dit in het dialoogvenster aangegeven. Nadat de extractie is voltooid, wordt de inname automatisch gestart. Als de extractie mislukt of wordt gestopt, wordt de innametaak geannuleerd.
@@ -61,11 +61,11 @@ Volg de onderstaande stappen om uw migratieset in te voeren met de Cloud Acceler
    > Als het plaatsen **Sluitereffect** voor de opname wordt toegelaten, stelt het de volledige bestaande bewaarplaats met inbegrip van de gebruikerstoestemmingen op de instantie van doelCloud Service terug. Dit het terugstellen is waar ook voor een admin gebruiker die aan de **wordt toegevoegd beheerders** groep en die gebruiker moet aan de beheerdersgroep opnieuw worden toegevoegd om een opname te beginnen.
 
    * **pre-Exemplaar:** kies de `Pre-copy` waarde
-      * U kunt de optionele pre-copy stap uitvoeren om de inname aanzienlijk te versnellen. Zie [ Ingesting met AzCopy ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer details.
+      * U kunt de optionele pre-copy stap uitvoeren om de inname aanzienlijk te versnellen. Zie [&#x200B; Ingesting met AzCopy &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer details.
       * Als inesten met voorkopie wordt gebruikt (voor S3 of Azure Data Store), wordt aangeraden `Author` inname eerst alleen uit te voeren. Hierdoor wordt de opname van `Publish` sneller wanneer deze later wordt uitgevoerd.
 
    >[!IMPORTANT]
-   > U kunt een opname aan het bestemmingsmilieu in werking stellen slechts als u tot de lokale **beheerders van AEM** groep op de de auteursdienst van bestemmingsCloud Service behoort. Als u geen ingestie kunt beginnen, zie [ Onbekwaam om Ingestie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer details te beginnen.
+   > U kunt een opname aan het bestemmingsmilieu in werking stellen slechts als u tot de lokale **beheerders van AEM** groep op de de auteursdienst van bestemmingsCloud Service behoort. Als u geen ingestie kunt beginnen, zie [&#x200B; Onbekwaam om Ingestie &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer details te beginnen.
 
 1. Nadat de keuze voor inname is gemaakt, kan een schatting van de duur van de inname worden weergegeven. Dit is een inspanningsschatting gebaseerd op historische gegevens van vergelijkbare ingestie.
 
@@ -106,7 +106,7 @@ Het hulpmiddel van de Overdracht van de Inhoud heeft een eigenschap die de extra
 >[!NOTE]
 >Na de eerste overdracht van inhoud wordt aanbevolen regelmatig differentiële toevoegingen toe te passen om de periode waarin de inhoud wordt vastgezet voor de uiteindelijke differentiële overdracht van inhoud te verkorten voordat u live gaat op Cloud Service. Als u de pre-exemplaarstap voor de eerste opname hebt gebruikt, kunt u pre-exemplaar voor verdere bovenop-up ingestions overslaan (als de top-up migratie vastgestelde grootte minder dan 200 GB is). De reden is dat het tijd kan toevoegen aan het hele proces.
 
-Om differentiële inhoud in te voeren nadat sommige ingestions volledig zijn, moet u a [ Hoogste Extractie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) in werking stellen, en dan de inlaatmethode met **gebruiken Wipe** gehandicapte optie ****. Ben zeker om de **Sluiterende** verklaring hierboven te lezen om het verliezen van inhoud reeds op de bestemming te vermijden.
+Om differentiële inhoud in te voeren nadat sommige ingestions volledig zijn, moet u a [&#x200B; Hoogste Extractie &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) in werking stellen, en dan de inlaatmethode met **gebruiken Wipe** gehandicapte optie **&#x200B;**. Ben zeker om de **Sluiterende** verklaring hierboven te lezen om het verliezen van inhoud reeds op de bestemming te vermijden.
 
 Begin door een Baan van de Opname te creëren en ervoor te zorgen dat **Sluitereffect** tijdens het opnemen wordt onbruikbaar gemaakt, zoals hieronder getoond:
 
@@ -122,7 +122,7 @@ Begin door een Baan van de Opname te creëren en ervoor te zorgen dat **Sluitere
 
 ### CAM Kan migratietoken niet ophalen {#cam-unable-to-retrieve-the-migration-token}
 
-De automatische terugwinning van het migratietoken kan om verschillende redenen, met inbegrip van u [ vestiging een IP lijst van gewenste personen via Cloud Manager ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) op het milieu van doelCloud Service ontbreken. In dergelijke scenario&#39;s, ziet u de volgende dialoogdoos wanneer u probeert om een opname te beginnen:
+De automatische terugwinning van het migratietoken kan om verschillende redenen, met inbegrip van u [&#x200B; vestiging een IP lijst van gewenste personen via Cloud Manager &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) op het milieu van doelCloud Service ontbreken. In dergelijke scenario&#39;s, ziet u de volgende dialoogdoos wanneer u probeert om een opname te beginnen:
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -151,13 +151,13 @@ Dit bericht geeft aan dat de Cloud Acceleration Manager de migratieservice van d
 > Het veld &quot;Migratietoken&quot; wordt weergegeven omdat het ophalen van dat token in sommige gevallen niet is toegestaan. Door het handmatig aanbrengen van de injectie toe te staan, kan de gebruiker de opname snel starten, zonder extra hulp. Als het token is opgegeven en het bericht nog steeds wordt weergegeven, was het ophalen van het token niet het probleem.
 
 * AEM as a Cloud Service handhaaft de milieustaat, en moet af en toe de migratiedienst opnieuw beginnen om diverse normale redenen. Als die dienst opnieuw begint, kan het niet worden bereikt, maar is uiteindelijk beschikbaar.
-* Het is mogelijk dat een ander proces op de instantie wordt uitgevoerd. Bijvoorbeeld, als [ de Updates van de Versie van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) een update toepast, kan het systeem bezig zijn en de migratiedienst regelmatig niet beschikbaar. Zodra dat proces is voltooid, kan opnieuw worden geprobeerd om met de inname te beginnen.
-* Als een [ IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) door Cloud Manager is toegepast, verhindert het Cloud Acceleration Manager de migratiedienst te bereiken. Een IP adres kan niet voor ingesties worden toegevoegd omdat zijn adres dynamisch is. Momenteel, is de enige oplossing de IP lijst van gewenste personen tijdens de opname en het indexeren proces onbruikbaar te maken door 0.0.0.0/0 aan de lijst van gewenste personen tijdelijk toe te voegen terwijl de opname en het indexeren proces lopen.
+* Het is mogelijk dat een ander proces op de instantie wordt uitgevoerd. Bijvoorbeeld, als [&#x200B; de Updates van de Versie van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) een update toepast, kan het systeem bezig zijn en de migratiedienst regelmatig niet beschikbaar. Zodra dat proces is voltooid, kan opnieuw worden geprobeerd om met de inname te beginnen.
+* Als een [&#x200B; IP Lijst van gewenste personen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) door Cloud Manager is toegepast, verhindert het Cloud Acceleration Manager de migratiedienst te bereiken. Een IP adres kan niet voor ingesties worden toegevoegd omdat zijn adres dynamisch is. Momenteel, is de enige oplossing de IP lijst van gewenste personen tijdens de opname en het indexeren proces onbruikbaar te maken door 0.0.0.0/0 aan de lijst van gewenste personen tijdelijk toe te voegen terwijl de opname en het indexeren proces lopen.
 * Er kunnen andere redenen zijn die een onderzoek vereisen. Neem contact op met de klantenservice van Adobe als het invoeren of indexeren nog steeds mislukt.
 
 ### Updates en oplossingen voor AEM-versies {#aem-version-updates-and-ingestions}
 
-{de Updates van de Versie van 0} AEM [ worden automatisch toegepast op milieu&#39;s om hen met de meest recente versie van AEM as a Cloud Service bijgewerkt te houden. ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving.
+{de Updates van de Versie van 0} AEM [&#x200B; worden automatisch toegepast op milieu&#39;s om hen met de meest recente versie van AEM as a Cloud Service bijgewerkt te houden. &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving.
 
 Als de &quot;Updates van de Versie van AEM&quot;op het bestemmingsprogramma wordt ingezien, probeert het innameproces om zijn rij onbruikbaar te maken alvorens het begint. Wanneer de opname volledig is, wordt de status van de versieupdater teruggegeven aan hoe het was alvorens ingestions begonnen.
 
@@ -192,13 +192,13 @@ Zorg ervoor dat de auteursomgeving beschikbaar is en wacht een paar minuten voor
 >abstract="Een gemeenschappelijke oorzaak van een niet-sluitingsmislukking is een conflict in knoop ids. Er kan slechts een van de conflicterende knooppunten bestaan."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Bovenste inname"
 
-Een gemeenschappelijke oorzaak van de mislukking van de Opname van de a [ ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een conflict in knoopids. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
+Een gemeenschappelijke oorzaak van de mislukking van de Opname van de a [&#x200B; &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een conflict in knoopids. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint overtreden bezit [ jcr :uuid] die waarde a1a1a1a1-b2b2-c3-d4d4-e5e5e5e5e5: /some/path/jcr :content, /some/other/path/jcr :content
 
 Elk knooppunt in AEM moet een unieke uuid hebben. Deze fout geeft aan dat een knooppunt dat wordt ingesloten, dezelfde uuid heeft als een knooppunt dat zich in een ander pad op de doelinstantie bevindt. Deze situatie kan om twee redenen gebeuren:
 
-* Een knoop wordt bewogen op de bron tussen een extractie en een verdere [ Top-Up Extractie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+* Een knoop wordt bewogen op de bron tussen een extractie en een verdere [&#x200B; Top-Up Extractie &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
    * _VERGEET_: Voor Top-Up extracties, zal de knoop nog in de migratiereeks bestaan, zelfs als het niet meer op de bron bestaat.
 * Een knoop op de bestemming wordt bewogen tussen een ingestie en een verdere top-up ingestie.
 
@@ -212,7 +212,7 @@ Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud,
 >abstract="Een gemeenschappelijke oorzaak van een niet-veeggebaren ingangsmislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. De versies van het knooppunt moeten worden hersteld."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Bovenste inname"
 
-Een andere gemeenschappelijke oorzaak van de mislukking van de Opname van de a [ ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
+Een andere gemeenschappelijke oorzaak van de mislukking van de Opname van de a [&#x200B; &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e 976a8
 
@@ -237,13 +237,13 @@ Eigenschapwaarden voor knooppunten die zijn opgeslagen in MongoDB, mogen niet gr
 
 Dit is een MongoDB-beperking.
 
-Zie de `Node property value in MongoDB` nota in [ Eerste vereisten voor het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) voor meer informatie en een verbinding aan een hulpmiddel van Oak dat alle grote knopen kon helpen vinden. Als alle knooppunten met grote afmetingen zijn verholpen, voert u de extractie en inname opnieuw uit.
+Zie de `Node property value in MongoDB` nota in [&#x200B; Eerste vereisten voor het Hulpmiddel van de Overdracht van de Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) voor meer informatie en een verbinding aan een hulpmiddel van Oak dat alle grote knopen kon helpen vinden. Als alle knooppunten met grote afmetingen zijn verholpen, voert u de extractie en inname opnieuw uit.
 
-Om deze beperking mogelijk te vermijden, stel de [ Analysator van Beste praktijken ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) op de bronAEM instantie in werking en herzie de bevindingen het, met name [ &quot;Niet gestaafde Structuur van de Bewaarplaats&quot; (URS) ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) patroon voorstelt.
+Om deze beperking mogelijk te vermijden, stel de [&#x200B; Analysator van Beste praktijken &#x200B;](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) op de bronAEM instantie in werking en herzie de bevindingen het, met name [&#x200B; &quot;Niet gestaafde Structuur van de Bewaarplaats&quot; (URS) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) patroon voorstelt.
 
 >[!NOTE]
 >
->[ versie 2.1.50+ van de Analysator van Beste praktijken van 0} zal over grote knopen rapporteren die unicode karakters bevatten die de maximumgrootte overschrijden. ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) Zorg ervoor dat u de nieuwste versie uitvoert. In BPA-versies vóór 2.1.50 worden deze grote knooppunten niet geïdentificeerd en gerapporteerd. Deze knooppunten moeten afzonderlijk worden gedetecteerd met behulp van de hiervoor genoemde Oak-voorwaarde.
+>[&#x200B; versie 2.1.50+ van de Analysator van Beste praktijken van 0&rbrace; zal over grote knopen rapporteren die unicode karakters bevatten die de maximumgrootte overschrijden. &#x200B;](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) Zorg ervoor dat u de nieuwste versie uitvoert. In BPA-versies vóór 2.1.50 worden deze grote knooppunten niet geïdentificeerd en gerapporteerd. Deze knooppunten moeten afzonderlijk worden gedetecteerd met behulp van de hiervoor genoemde Oak-voorwaarde.
 
 ### Ingestiefout als gevolg van onverwachte intermitterende fouten {#ingestion-failure-due-to-unexpected-intermittent-errors}
 
@@ -290,6 +290,6 @@ In het scenario waarin een eerder gemigreerd element wordt verwijderd en de volg
 
 ## Volgende functies {#whats-next}
 
-Wanneer de opname is gelukt, wordt automatisch begonnen met de indexering van AEM. Zie [ Indexerend na het Migreren van Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) voor meer informatie.
+Wanneer de opname is gelukt, wordt automatisch begonnen met de indexering van AEM. Zie [&#x200B; Indexerend na het Migreren van Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) voor meer informatie.
 
-Nadat u de Ingesting Content in Cloud Service hebt voltooid, kunt u logboeken van elke stap (extractie en opname) weergeven en op fouten zoeken. Zie [ het Bekijken Logboeken voor een Reeks van de Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) om meer te leren.
+Nadat u de Ingesting Content in Cloud Service hebt voltooid, kunt u logboeken van elke stap (extractie en opname) weergeven en op fouten zoeken. Zie [&#x200B; het Bekijken Logboeken voor een Reeks van de Migratie &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) om meer te leren.
