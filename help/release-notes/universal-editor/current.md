@@ -1,35 +1,33 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.10.24
-description: Dit zijn de releaseopmerkingen voor de release 2025.10.24 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.10.30
+description: Dit zijn de releaseopmerkingen voor de release 2025.10.30 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
+source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.10.24 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.10.30 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 24 oktober 2025 van de Universal Editor.
-
->[!TIP]
->
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+Dit zijn de opmerkingen bij de release van 30 oktober 2025 van de Universal Editor.
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+
+>[!TIP]
+>
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* [&#x200B; het Exemplaar en de deeg &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) over browser lusjes wordt nu gesteund.
-   * Beperkt tot tussen tabbladen die tegelijkertijd geopend zijn.
-   * Het kopiëren van inhoud en het openen van een nieuw tabblad wordt niet ondersteund.
-* U kunt unpublish knoop met a [&#x200B; meta markering nu onbruikbaar maken.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* [ nieuwe RTE ](#new-rte) kan beelden nu opnemen.
+   * Deze eigenschap is gehandicapt OoTB en moet uitdrukkelijk via a [ filterdefinitie worden toegelaten.](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -37,10 +35,14 @@ Als u deze functies wilt testen en feedback wilt delen, stuurt u een e-mail naar
 
 ### Nieuwe RTE {#new-rte}
 
-De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [&#x200B; dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
+De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [ dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
 
 ## Overige verbeteringen {#other-improvements}
 
-* De boomstructuur is verbeterd.
-* Gekoppelde afbeeldingen worden nu ondersteund.
-* Er zijn verbeteringen aangebracht in bewerkingen voor ongedaan maken/opnieuw uitvoeren.
+* De gebeurtenis Update wordt nu geïnformeerd als de handeling ongedaan is gemaakt.
+* De tekenreeks `No results` is nu afhankelijk van de landinstelling van de browser in de tags van de Universal Editor.
+* Oplossing voor een extra regeleinde in de publicatieknop van de Universal Editor.
+* Overbodig verwijderen van de patch-API.
+* De knop Inhoud selecteren is nu zichtbaar in Safari.
+* De RPM-build is hersteld.
+* CORS-update om te voorkomen dat tekst die is bewerkt na het opslaan opnieuw wordt bijgewerkt.

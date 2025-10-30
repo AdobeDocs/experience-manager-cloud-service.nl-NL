@@ -3,13 +3,13 @@ title: Het vormen van RTE voor de Universele Redacteur
 description: Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redacteur kunt vormen.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 60699db418e5f02b8bdb0471eb2996c9caf5694b
+exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen van RTE voor de Universele Redacteur {#configure-rte}
 
@@ -17,13 +17,13 @@ Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redacteur kunt vorm
 
 >[!NOTE]
 >
->Deze documentatie is op nieuwe RTE voor de Universele Redacteur van toepassing, die als vroege adoptereigenschap beschikbaar is. Als u in het testen van deze nieuwe eigenschap geinteresseerd bent, [&#x200B; te zien gelieve de versienota&#39;s voor details.](/help/release-notes/universal-editor/current.md#new-rte)
+>Deze documentatie is op nieuwe RTE voor de Universele Redacteur van toepassing, die als vroege adoptereigenschap beschikbaar is. Als u in het testen van deze nieuwe eigenschap geinteresseerd bent, [ te zien gelieve de versienota&#39;s voor details.](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## Overzicht {#overview}
 
 De Universele Redacteur verstrekt een rijke tekstredacteur (RTE) zowel op zijn plaats als in het eigenschappenpaneel om auteurs toe te staan om het formatteren veranderingen toe te passen aangezien zij hun tekst uitgeven.
 
-Dit RTE is configureerbaar gebruikend [&#x200B; componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
+Dit RTE is configureerbaar gebruikend [ componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
 
 ## Configuratiestructuur {#structure}
 
@@ -32,7 +32,7 @@ De configuratie van RTE bestaat uit twee delen:
 * [`toolbar`](#toolbar): In de werkbalkconfiguratie wordt bepaald welke bewerkingsopties beschikbaar zijn in de gebruikersinterface en hoe deze zijn ingedeeld.
 * [`actions`](#actions): Met de configuratie van handelingen kunt u het gedrag en de weergave van afzonderlijke bewerkingsacties aanpassen.
 
-Deze configuraties kunnen als deel van a [&#x200B; componentenfilter &#x200B;](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
+Deze configuraties kunnen als deel van a [ componentenfilter ](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
 
 ```json
 [
@@ -73,7 +73,7 @@ De controles van de toolbarconfiguratie die het uitgeven opties in UI beschikbaa
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -158,6 +158,27 @@ De acties van de verbinding steunen de controle van doelattributen om verbinding
 * `hideTarget`: `true` - Doelkenmerk uitsluiten van koppelingen
 
 De handeling `unlink` wordt alleen weergegeven wanneer de cursor zich binnen een bestaande koppeling bevindt. De koppelingsopmaak wordt verwijderd terwijl de tekstinhoud behouden blijft.
+
+### Afbeeldingshandelingen {#image}
+
+Afbeeldingsacties ondersteunen de onmiddellijke omloop van afbeeldingselementen om responsieve afbeeldingsmarkeringen te genereren. De volgende secties zijn beschikbaar.
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### Opties voor configuratie van images {#image-options}
+
+* `wrapInPicture`: `false` (standaardwaarde) - Eenvoudige `<img>` elementen genereren
+* `wrapInPicture`: `true` - Afbeeldingen laten omlopen in `<picture>` -elementen voor responsief ontwerp
 
 ### Overige handelingen {#other}
 
