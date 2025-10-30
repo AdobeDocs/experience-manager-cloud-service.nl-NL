@@ -5,9 +5,9 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
+source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1027'
 ht-degree: 3%
 
 ---
@@ -18,15 +18,13 @@ Met Launches kunt u in Adobe Experience Manager (AEM) as a Cloud Service op effi
 
 A *Lancering* wordt gecreeerd om u toe te staan om veranderingen in voorbereiding op toekomstige publicatie aan te brengen, tezelfdertijd als het handhaven van uw huidige inhoud. Voor AEM-pagina&#39;s betekent dit dat u in feite twee versies tegelijk bewerkt: pagina&#39;s die momenteel worden gepubliceerd en een versie van deze pagina&#39;s die in de toekomst tegelijk worden gepubliceerd. Zodra dat tijdstip is bereikt, kunt u de originele pagina&#39;s vervangen en de nieuwe versies publiceren.
 
-<!--
 >[!NOTE]
 >
->Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>Launches zijn ook beschikbaar voor Content Fragments. De basisbegrippen zijn hetzelfde, maar er zijn verschillen in de manier waarop ze in AEM moeten worden beheerd.
 >
->For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Voor volledige details zie [ Lanceringen voor de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
-U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3&rbrace; pagina&#39;s van de Lancering &lbrace;u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
+U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3} pagina&#39;s van de Lancering {u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
 
 De seizoensgebonden productpagina&#39;s van uw online winkel worden bijvoorbeeld elk kwartaal bijgewerkt, zodat de aanbevolen producten op één lijn komen met het huidige seizoen. Als u de volgende driemaandelijkse update wilt voorbereiden, kunt u de juiste webpagina&#39;s starten. In het hele kwartaal worden de volgende wijzigingen in de opstartafbeelding opgebouwd:
 
@@ -45,7 +43,7 @@ Launches kunnen ook:
 * Gemaakt voor meerdere hoofdvertakkingen. Hoewel u de lancering voor de volledige plaats (en de veranderingen daar) kon tot stand brengen kan dit onpraktisch zijn aangezien de volledige plaats moet worden gekopieerd. Wanneer er honderden of zelfs duizenden pagina&#39;s bij betrokken zijn, worden de systeemvereisten en de prestaties beïnvloed door zowel de kopieeractie als later de vergelijkingen die vereist zijn voor de promotietaken.
 * Genest (een lancering binnen een lancering) om u de capaciteit te geven om een lancering van een bestaande lancering tot stand te brengen zodat de auteurs van reeds aangebrachte veranderingen kunnen voordeel halen, eerder dan het moeten de zelfde veranderingen veelvoudige tijden voor elke lancering aanbrengen.
 
-Deze sectie beschrijft om te creëren, uit te geven en te bevorderen (en indien nodig [&#x200B; schrapt &#x200B;](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) lanceringspagina&#39;s van binnen de console van Plaatsen of [&#x200B; de console van Lanceringen &#x200B;](#the-launches-console):
+Deze sectie beschrijft om te creëren, uit te geven en te bevorderen (en indien nodig [ schrapt ](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) lanceringspagina&#39;s van binnen de console van Plaatsen of [ de console van Lanceringen ](#the-launches-console):
 
 * [Starten maken](/help/sites-cloud/authoring/launches/creating.md)
 * [Starten bewerken](/help/sites-cloud/authoring/launches/editing.md)
@@ -64,7 +62,7 @@ Met Launches kunt u:
    * De bronpagina&#39;s op het hoogste niveau worden **Productie** genoemd.
       * De bronpagina&#39;s kunnen uit meerdere (afzonderlijke) vertakkingen worden genomen.
 
-  ![&#x200B; Orde van verrichting van lanceringen &#x200B;](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![ Orde van verrichting van lanceringen ](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * De startconfiguratie bewerken:
    * Pagina&#39;s en/of vertakkingen toevoegen aan of verwijderen uit het opstarten.
@@ -83,13 +81,13 @@ Met Launches kunt u:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze worden ingesteld op basis van overerving, dat wil zeggen als een live kopie).
    * U kunt wijzigingen aanbrengen in de opstartafbeelding zonder deze automatische updates of de bronpagina&#39;s te onderbreken.
 
-  ![&#x200B; Acties parallel &#x200B;](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![ Acties parallel ](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
-* [&#x200B; creeer een genestelde lancering &#x200B;](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
+* [ creeer een genestelde lancering ](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
    * De bron is een bestaande opstart.
-   * U kunt [&#x200B; een genestelde lancering &#x200B;](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) aan om het even welk doel bevorderen; dit kan een ouderlancering of de top-level bronpagina&#39;s (Productie) zijn.
+   * U kunt [ een genestelde lancering ](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) aan om het even welk doel bevorderen; dit kan een ouderlancering of de top-level bronpagina&#39;s (Productie) zijn.
 
-  ![&#x200B; Een genestelde lancering &#x200B;](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![ Een genestelde lancering ](/help/sites-cloud/authoring/assets/launches-nested.png)
 
   >[!CAUTION]
   >
@@ -107,25 +105,23 @@ Met Launches kunt u:
 1. Open het **spoor van Verwijzingen** en selecteer de bronpagina.
 1. Selecteer **Lanceringen**, zijn de bestaande lanceringen vermeld, samen met toegang tot de **Console van Lanceringen**:
 
-   ![&#x200B; Verwijzingen van lanceringen in plaatsenconsole &#x200B;](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![ Verwijzingen van lanceringen in plaatsenconsole ](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Selecteer de juiste start en de lijst met mogelijke acties wordt weergegeven:
 
-   ![&#x200B; Acties om lanceringen in plaatsenconsole &#x200B;](/help/sites-cloud/authoring/assets/launches-references-actions.png) over te nemen
+   ![ Acties om lanceringen in plaatsenconsole ](/help/sites-cloud/authoring/assets/launches-references-actions.png) over te nemen
 
 ## De opstartconsole {#the-launches-console}
 
-<!--
 >[!NOTE]
 >
->This console is only for Launches for Pages. 
+>Deze console is alleen voor Launches voor Pagina&#39;s.
 >
->To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Om uw Fragmenten van de Inhoud te beheren zie [ Lanceringen voor de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u op die vermelde handelen.
 
-![&#x200B; Console van de Lancering - beheer Inhoud &#x200B;](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+![ Console van de Lancering - beheer Inhoud ](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 De console is toegankelijk via:
 
@@ -133,8 +129,8 @@ De console is toegankelijk via:
 
 * **Console van Lanceringen** bij de bodem van de **sectie van Lanceringen** van de **Verwijzingen** spoor wanneer het navigeren van broninhoud in de console van Plaatsen.
 
-  ![&#x200B; Console van Lanceringen in Verwijzingen van lanceringen in de console van Plaatsen &#x200B;](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![ Console van Lanceringen in Verwijzingen van lanceringen in de console van Plaatsen ](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * De **Starten** knoop bij het hoogste recht, wanneer het navigeren van lanceringsinhoud in de console van Plaatsen:
 
-  ![&#x200B; optie van Lanceringen in de console van Plaatsen &#x200B;](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![ optie van Lanceringen in de console van Plaatsen ](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)

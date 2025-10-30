@@ -1,20 +1,18 @@
 ---
-title: De huidige Nota's van de Versie voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Huidige versienota's voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Nota's van de versie voor 2025.9.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2025.9.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 67a15a502dad883d5a370fedb16a5faca64ecf06
+source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '2088'
 ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2025.9.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de functierelease voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2025.9.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.10.0) is 30 oktober 2025. De volgende eigenschapversie (2025.10.0) is gepland voor 20 november 2025.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.9.0) is 25 september 2025. De volgende release met functies (2025.10.0) is gepland voor 30 oktober 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -46,11 +44,42 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
-### Nieuwe functies in Experience Manager Sites {#new-sites}
+### Nieuwe functies in Experience Manager Sites Prerelease {#prerelease-sites}
 
-* De [ Redacteur van het ModelInhoud voor de Fragmenten van de Inhoud van AEM ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) is gemoderniseerd om zich met andere React op spectrum-Gebaseerde interfaces in AEM te richten. De implementatie- en uitbreidingsmodellen van de gebruikersinterface zijn nu consistent met de Content Fragment Editor en de Universal Editor. De nieuwe Modelbewerker is nu standaard wanneer deze wordt geopend vanuit de nieuwe beheerinterface voor inhoudsmodellen. Als u een inhoudsmodel opent in de Touch-gebruikersinterface, wordt de Touch UI-editor geopend en kunt u de nieuwe editor uitproberen.
+De Content Model Editor voor AEM Content Fragments is gemoderniseerd en uitgelijnd met andere React Spectrum-gebaseerde interfaces in AEM. De implementatie- en uitbreidingsmodellen van de gebruikersinterface zijn nu consistent met de Content Fragment Editor en de Universal Editor. De nieuwe Modelbewerker is nu standaard wanneer deze wordt geopend vanuit de nieuwe beheerinterface voor inhoudsmodellen. Als u een inhoudsmodel opent in de Touch-gebruikersinterface, wordt de Touch UI-editor geopend en kunt u de nieuwe editor uitproberen.
 
-* [ Lanceringen voor de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): Het lusje van Lancties van de console van de Fragmenten van de Inhoud staat u toe om lanceringen tot stand te brengen, van alle bestaande lanceringen een lijst te maken, zeer belangrijke eigenschappen te zien, en acties op hen te voeren.
+## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
+
+### Nieuwe functies in de Assets-weergave {#new-features-assets-view}
+
+**Verbeterde Opmaak van de Tekst met Substrings in Dynamische Malplaatjes van Media**
+
+U kunt nu opmaak toepassen op subtekenreeksen binnen tekstlagen van de sjabloon Dynamische media. Een geselecteerd woord of een geselecteerde woordgroep wordt beschouwd als een aparte laag, zodat u het lettertype, de tekengrootte, de kleur en meer kunt aanpassen. De subtekenreekslaag wordt geparametriseerd zodat u het in real time kunt bijwerken gebruikend de levering URL van het malplaatje
+
+### Nieuwe functies in dynamische media met OpenAPI-mogelijkheden {#new-features-dynamic-media-with-openapi}
+
+**Gemarkeerde en Leesbare Levering URLs van Activa**
+
+Dynamische media met OpenAPI-URL&#39;s leesbaarder maken door Vanity-URL&#39;s te gebruiken in Dynamic Media met OpenAPI. Met URL&#39;s met Vanity kunnen lange, door het systeem gegenereerde, moeilijk te onthouden UUID&#39;s in URL&#39;s voor het leveren van elementen worden vervangen door korte, door het merk gecontroleerde id&#39;s. Hierdoor zijn Vanity-URL&#39;s korter, gemakkelijker te lezen en te delen en kunt u ze beter aanpassen aan uw merk of campagnes. URL&#39;s met Vanity worden tijdens runtime automatisch omgezet in de oorspronkelijke UUID van het element zonder bestaande workflows te onderbreken.
+
+>[!NOTE]
+>
+>Deze functie is beschikbaar als functie voor beperkte beschikbaarheid. Zie dit [ artikel ](/help/assets/vanity-urls.md) om begonnen te worden.
+
+### Nieuwe functies in Content Hub {#new-features-content-hub}
+
+**de Inzamelingen van het Teken als Favorieten**
+
+U kunt verzamelingen nu markeren als Favorieten in Content Hub, zodat u ze eenvoudiger kunt organiseren en ophalen. Als je je favoriete verzamelingen hebt toegevoegd, kun je ze gemakkelijk vinden op het tabblad Favorieten op de startpagina van Content Hub.
+
+
+**Vastzet inzamelingen voor snelle toegang**
+
+Content Hub-beheerders kunnen verzamelingen nu vastzetten in Content Hub, zodat ze snel toegankelijk zijn. Vastgezette inzamelingen worden getoond in een specifieke Vastgezette sectie op de homepage van Inzamelingen, die het gemakkelijker maken om belangrijke inzamelingen binnen bereik te houden.
+
+>[!IMPORTANT]
+>
+>Deze functies zijn beschikbaar als functies voor beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
 
 <!--
 
@@ -74,23 +103,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Nieuwe functies in Experience Manager Forms {#new-features-forms}
 
-**Universele Redacteur voor AanpassingsForms en de Fragmenten van de Vorm**
+**aanhaalt de Stap van het ModelWerkschema van de Gegevens van de Vorm voor de Bijlagen van de Lijst van SharePoint**
 
-De Universal Editor biedt nu een uniforme ontwerpervaring voor het maken van adaptieve Forms en herbruikbare formulierfragmenten. Auteurs kunnen visueel formulieren ontwerpen, verzendhandelingen configureren en reCAPTCHA-validatie integreren in een intuïtieve WYSIWYG-omgeving.
+De workflowstap Formuliergegevensmodel aanroepen ondersteunt nu de verwerking van metagegevens aan de werkschemazijde voor Base64-gecodeerde bijlagearrays in SharePoint List-based Form Data Models. Met deze verbetering, kan de werkschemastap meta-gegevens zoals dossier - naam, type MIME, en douaneeigenschappen voor elke gehechtheid overgaan, opslaan en terugwinnen. Deze mogelijkheid maakt een uitgebreider gegevensbeheer mogelijk en vergemakkelijkt naadloze integratie in de downstreamfase. Voor details, zie [ Verbeterde steun in de Invoke stap van het werkschemamodel van de Gegevens van de Vorm voor de gehechtheid van de Lijst van SharePoint ](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
-<!-- ### Pre-Release features in AEM Forms 
+### Functies vóór de release in AEM Forms
 
-**Rule Editor Enhancements**
+**Verbeteringen van de Redacteur van de Regel**
 
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
+De Redacteur van de Regel steunt nu verbeterde navigatie en staat gebruik van functie en wiskundige uitdrukkingen in inputparameters toe.
 
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+**Verbeterde Navigatie met de Steun van de Payload van de Gebeurtenis**
 
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
+De handeling `Navigate To` in de handlers van de Invoke-service ondersteunt nu `EVENT_PAYLOAD` , waarmee formulierauteurs follow-upacties kunnen configureren op basis van gebeurtenisreacties. Deze verbetering biedt meer flexibiliteit bij het ontwerpen van workflows na verzending, waardoor vloeiendere overgangen en meer persoonlijke gebruikerservaring worden gegarandeerd. Voor meer informatie, zie [ Verbeterde Navigatie met de Steun van de Payload van de Gebeurtenis ](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+
+**Functie en Wiskundige Steun van de Uitdrukking in de Parameters van de Input**
+
+Invoerparameters ondersteunen nu zowel functieaanroepen als wiskundige expressies, waardoor formulierauteurs dynamisch berekende waarden rechtstreeks kunnen doorgeven. Deze verbetering stroomlijnt regelconfiguraties, elimineert de behoefte aan extra gebieden, en maakt vormen meer aanpasbaar aan complexe logica en berekening-gedreven scenario&#39;s. Voor meer informatie, zie [ Functie en de Wiskundige Steun van de Uitdrukking in de Parameters van de Input ](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 ### Nieuwe functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
@@ -98,23 +127,17 @@ Het AEM Forms-programma voor vroege toegang biedt u een unieke kans om exclusiev
 
 In deze releaseopmerkingen worden de innovaties vermeld die in de huidige release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
 
-#### Verbeteringen voor interactieve communicatie
+**Voorproef PDF in Interactieve Communicatie Redacteur**
 
-##### Sjabloon vergrendelen
+Gebruikers kunnen een voorvertoning weergeven van interactieve communicatie-PDF&#39;s zonder gegevens, met lokale JSON-gegevensbestanden of met gegevens van een gegevensmodel, zodat u flexibele gegevensgestuurde tests kunt uitvoeren. Voor meer informatie, zie [ Voorproef van PDF in Interactieve Communicatie Redacteur ](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-Inhoud en lay-outelementen binnen sjablonen vergrendelen om de brandintegriteit te behouden en ongeoorloofde wijzigingen te voorkomen. Dit verzekert ontwerpconsistentie over alle mededelingen.
+**Steun van de Doopvonten van de Douane in Interactieve Mededeling**
 
-##### Ondersteuning voor overloop van inhoud
+Met de functie Aangepaste lettertypen kunnen gebruikers aangepaste of door de organisatie goedgekeurde lettertypen insluiten in de interactieve communicatie, zodat een consistente en branded PDF-rendering op alle apparaten en platforms wordt gegarandeerd. Voor meer informatie, zie [ Steun van de Doopvonten van de Douane in Interactieve Mededeling ](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
 
-Introductie van de optie Pagina-einden binnen inhoud toestaan voor stroombare indelingen. Deze verbetering maakt probleemloze bewerkingen met meerdere pagina&#39;s en een beter tekstbeheer voor complexe documenten mogelijk.
+**de Invoer en de Uitvoer Interactieve Mededelingen**
 
-##### XDP Bestandsbewerking
-
-De Interactieve Communicatie redacteur steunt nu het uitgeven XDP, met inbegrip van fragmentintegratie. U kunt nu XDP-bestanden bewerken in een browser in plaats van Forms Designer die alleen op het bureaublad van Microsoft Windows wordt uitgevoerd.
-
-##### Dynamische paginanummering
-
-Geef automatisch &quot;Pagina nr. van ##&quot; weer op basispagina&#39;s voor duidelijke, consistente paginering in documenten met meerdere pagina&#39;s.
+Deze eigenschap laat migratie en hergebruik van Interactieve Mededelingen over verschillende milieu&#39;s toe. U kunt nu een interactieve communicatie samen met de bijbehorende fragmenten en gegevensmodellen vanuit de ene omgeving exporteren en in een andere omgeving importeren. Voor meer informatie, zie [ Interactieve Mededelingen van de Invoer en van de Uitvoer ](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
 
 <!--
 **Forms Optimization opportunities**
@@ -149,19 +172,11 @@ Go-live dagen, live gebeurtenissen, piekverkoop-deze momenten kunnen niet breken
 >Beschikbaar als Beperkte Beschikbaarheid eigenschap op 25 september.
 >>E-mail [ aemcs-update-free@adobe.com ](mailto:aemcs-update-free@adobe.com) om het op uw programma&#39;s te krijgen geactiveerd.
 
-### AEM Log-Forwarding naar Meer Doelen {#log-forwarding}
+### Nieuwe release van AEM Developer Tools voor Eclipse {#aem-develeper-tools-for-eclipse}
 
-Het is nu mogelijk om AEM-logbestanden door te sturen naar Amazon S3, Sumo Logic, Dynatrace en uw eigen New Relic-account (niet naar het door Adobe verschafte account). Merk op dat de logboeken van AEM (met inbegrip van Apache/Dispatcher) voor deze registrerenbestemmingen, maar niet CDN- logboeken worden gesteund.
+Versie 1.4.0 van de AEM Developer Tools for Eclipse is uitgebracht. Deze versie voegt ondersteuning toe voor Eclipse IDE 2022-12 of hoger en is gevalideerd met de huidige versie (2025-09). Het gereedschap werkt nu met moderne versies van het AEM Project Archetype en bevat verbeteringen van de Sling IDE Tooling 1.3.0.
 
-Zie de volledige reeks van [ gesteund logboek door:sturen bestemmingen ](/help/implementing/developing/introduction/log-forwarding.md).
-
-### Config Pipeline voor Edge Delivery Services {#config-pipeline-eds}
-
-Config Pipelines worden nu ondersteund voor sites die met Edge Delivery Services zijn gemaakt en breiden deze mogelijkheid uit tot meer dan alleen AEM Author en AEM publicatiebezorging. U kunt Pijpleidingen Config gebruiken om montages zoals configuratie te beheren CDN, met inbegrip van de regels van de verkeersfilter en oorsprongselecteurs. Zie [ Ondersteunde Configuraties ](/help/operations/config-pipeline.md#configurations).
-
-Edge Delivery config pijpleidingen steunen ook geheimen door de pijpleidingsvariabelen van Cloud Manager.
-
-Zie [ toevoegen de Pijpleiding van Edge Delivery ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+Installeer van de [ Marketplace van de Verduistering ](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) en zie de [ pagina van de Hulpmiddelen van de Ontwikkelaar van AEM ](https://eclipse.adobe.com) voor meer details.
 
 ### Opkomende Java API-implementaties {#java-api-deprecation}
 
@@ -199,18 +214,19 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-Adobe bevorderde **het Stadium** en **de milieu&#39;s van de Productie** aan hoog-prestaties **Java 21 runtime** op 14 oktober, 2025. Vanaf eind januari werken de AEM Cloud Service SDK en eventuele cloudomgevingen niet met Java 11-runtime.
+*Java 11 runtime* wordt afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan hoog-prestaties **Java 21 runtime**.
+
+Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ Java 21 runtime vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met volgende stappen moeten ontvangen. Zoals daar beschreven, verbeterde Adobe uw **Dev** en **RDE** milieu&#39;s op **September 18, 2025** zodat kunt u uw plaats en processen bevestigen en om het even welke kwesties richten. De verbeteringen voor **Stadium** en **Productie** zullen op **14 oktober, 2025** te werk gaan.
 
 >[!NOTE]
 >
-> Als u wilt profiteren van de nieuwste prestatieoptimalisaties en taalverbeteringen, kunt u het beste bouwen met Java 17 of Java 21 (voorkeur). Samenstellen met Java 8 en Java 11 blijft voorlopig ondersteund, maar wordt in een volgende release vervangen. Een afzonderlijke mededeling zal vóór afschrijving worden uitgegeven. Zie *vereisten van de bouwstijltijd* sectie van [ dit artikel ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
->
+>De runtimeversie staat los van de build-versie van uw code. We raden u aan om samen te werken met Java 21, maar Java 11-builds zijn nog steeds geaccepteerd. In de toekomst wordt een afzonderlijke aankondiging voor het vervangen van Java 11-builds gedeeld.
 
 ### Handhaving van het configuratiebeleid van AEM Java Logs {#logconfig-policy}
 
 Zoals vermeld in de opmerkingen bij de release van april, moeten AEM Java-logboeken een standaardindeling gebruiken voor betrouwbare bewaking in alle klantomgevingen. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [ Registreren artikel ](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Beginnend op **November 20th**, zullen om het even welke niet gesteunde douane het registreren met voeten treden worden genegeerd. Op basis van onze analyse zullen de meeste klanten niet worden beïnvloed en heeft Adobe contact opgenomen met klanten van wie de huidige configuratie mogelijk wordt beïnvloed.
+Beginnend op **30th van Oktober**, zullen om het even welke niet gestaafde overrides van het douaneregistreren worden genegeerd. Op basis van onze analyse zullen de meeste klanten niet worden beïnvloed en heeft Adobe contact opgenomen met klanten van wie de huidige configuratie mogelijk wordt beïnvloed.
 
 Gelieve te herzien en bij te werken om het even welke stroomafwaartse processen die zich op het gedrag van het douaneregistreren baseren. Bijvoorbeeld:
 
@@ -254,25 +270,24 @@ Stel uw code versies aan productie op, maar beperkt het tot slechts intern testv
 
 E-mail [ aemcs-canary-deployments-beta@adobe.com ](mailto:aemcs-canary-deployments-beta@adobe.com) om toegang te verzoeken en terugkoppelen te delen.
 
-
-### AI-antwoorden - slimmere, contextbewuste reacties voor AEM Sites (Beta-programma) {#ai-answers-beta}
-
-AI-antwoorden introduceert een nieuwe manier voor bezoekers om te communiceren met uw inhoud. Met behulp van de RAG-technologie (Retrieval-Augmented Generation) maakt het gebruik van uw door AEM beheerde gegevens om nauwkeurige, merkbestendige antwoorden direct in uw digitale ervaringen te leveren.
-
-Als onderdeel van deze bètaversie kunt u veilig de AI-antwoorden verkennen in uw AEM Cloud Service-omgeving. Met deze aanpak kunt u prestaties, nauwkeurigheid en algemene ervaring valideren voordat u deze ter beschikking stelt van uw livepubliek. Zodra bevestigd, kunt u uw ervaring van AI Antwoorden aan volledige productie bevorderen.
-
-Om bètatoegang aan te vragen of uw te delen, gelieve te contacteren [ feedback-ai-answers@adobe.com ](mailto:feedback-ai-answers@adobe.com).
-
-
 ### Momentopnamen voor RDE&#39;s (Alpha-programma) {#rde-snapshot-program}
 
 In alfa, steunen de Snelle Milieu&#39;s van de Ontwikkeling (RDEs) nu een eigenschap om een momentopname van de huidige staat van code en inhoud te nemen, die op een recentere tijd kan worden hersteld. Dit kan nuttig zijn wanneer het synchroniseren van code die kan moeten worden teruggekeerd, of wanneer het schakelen tussen ontwikkeling van verschillende eigenschappen. Het is ook mogelijk om alleen de veranderbare inhoud te herstellen als een bekend beginpunt voor het testen.
 
 Gelieve te e-mail [ aemcs-rde-support@adobe.com ](mailto:aemcs-rde-support@adobe.com) als er belang in het verstrekken van terugkoppelt op deze eigenschap is.
 
+### AEM Log-Forwarding aan Meer Doelen (het Programma van Beta) {#log-forwarding-beta}
+
+Hoewel de logboeken van Cloud Manager kunnen worden gedownload, vinden vele organisaties het nuttig om die logboeken aan een aangewezen registrerenbestemming te stromen. AEM biedt al ondersteuning voor het doorsturen van AEM- en CDN-logbestanden naar Azure Blob Storage, Datadog, HTTPS, Elasticsearch (en OpenSearch) en Splunk. Deze eigenschap wordt gevormd op een zelf-servermanier, en opgesteld gebruikend de Pijpleiding Config.
+
+Nu in bèta kunt u AEM-logs doorsturen naar Amazon S3, Sumo Logic, Dynatrace en uw eigen New Relic-account (niet naar het door Adobe verschafte account). Merk op dat de logboeken van AEM (met inbegrip van Apache/Dispatcher) voor deze registrerenbestemmingen, maar niet CDN- logboeken worden gesteund. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) voor toegang.
+
+Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/developing/introduction/log-forwarding.md).
+
 ### Uitgebreide Application Performance Monitoring (APM) (Alpha-programma) {#apm-alpha}
 
 Voor waarneming, steunt de Dienst van de Wolk AEM momenteel Adobe-Geleverde [ New Relic One ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) en klant-geleide [ Dynatrace ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Aangezien wij steun voor extra opties van APM onderzoeken, gelieve ons in [ aemcs-apm-beta@adobe.com ](mailto:aemcs-apm-beta@adobe.com) met uw aangewezen verkoper of technologie, samen met gebruiksgevallen te e-mailen.
+
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
