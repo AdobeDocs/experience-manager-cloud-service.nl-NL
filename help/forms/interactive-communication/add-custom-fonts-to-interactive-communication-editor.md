@@ -4,10 +4,7 @@ description: Voeg Aangepaste lettertypen toe in de Interactieve communicatie-edi
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -39,5 +36,5 @@ Met de functie voor aangepaste lettertypen kunt u de vormgeving van uw interacti
 
 >[!NOTE]
 >
-> Voor gedetailleerde configuratiestappen, kunnen de gebruikers de gids [&#x200B; douanedoopvonten van het Gebruik &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) volgen
-> &#x200B;>Na de voltooiing van de stappen en het in werking stellen van de pijpleiding, zijn de douanedoopvonten beschikbaar voor gebruik direct in de Interactieve Communicatie Redacteur.
+> Voor gedetailleerde configuratiestappen, kunnen de gebruikers de gids [ douanedoopvonten van het Gebruik ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) volgen
+> >Na de voltooiing van de stappen en het in werking stellen van de pijpleiding, zijn de douanedoopvonten beschikbaar voor gebruik direct in de Interactieve Communicatie Redacteur.

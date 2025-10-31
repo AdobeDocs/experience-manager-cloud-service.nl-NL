@@ -4,10 +4,7 @@ description: De invoer en de Uitvoer Interactieve Communicatie laat gebruikers t
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -39,11 +36,11 @@ Creeer een Interactieve Communicatie (IC) in één milieu en gebruik het in een 
 
 +++&#x200B;1. Interactieve communicatie exporteren
 
-1.1. Selecteer a [&#x200B; gecreeerd Interactieve Communicatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
+1.1. Selecteer a [ gecreeerd Interactieve Communicatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
 1.2. Klik de **optie van de Download** om het als dossier van het PIT uit te voeren.
 1.3. Het gedownloade dossier van het PIT omvat IC samen met zijn geselecteerde **malplaatje**, **fragmenten**, en **gegevensmodel**.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/downloadic.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/downloadic.png)
 +++
 
 +++&#x200B;2. Interactieve communicatie importeren
@@ -52,11 +49,11 @@ Creeer een Interactieve Communicatie (IC) in één milieu en gebruik het in een 
 2.2. Navigeer aan **Forms > Forms en de Documenten > creëren > Dossier uploadt**.
 2.3. Upload het dossier van het PIT aan **invoer** IC.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/uploadfile.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/uploadfile.png)
 
 2.4. Na het uploaden wordt het IC weergegeven samen met de bijbehorende fragmenten en gegevensmodel.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/importfragment.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/importfragment.png)
 +++
 
 +++&#x200B;3. Fragment importeren en exporteren

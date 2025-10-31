@@ -4,10 +4,7 @@ description: De verwerking van de Overloop van de inhoud in Interactieve Communi
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -27,8 +24,7 @@ ht-degree: 0%
 
 ## Inleiding
 
-Met de functie voor de afhandeling van overloop bij inhoud in de Interactieve communicatie-editor kunt u beter bepalen hoe tekst zich gedraagt binnen de indelingen Overlopen en Geplaatst.
-Het zorgt voor vloeiende inhoudscontinuïteit voor stroombare lay-outs en biedt visuele waarschuwingen voor gepositioneerde lay-outs, waardoor auteurs beter controle en flexibiliteit hebben bij het ontwerpen van communicatie.
+Met de functie voor de afhandeling van overloop bij inhoud in de Interactieve communicatie-editor kunt u beter bepalen hoe tekst zich gedraagt binnen de indelingen Overlopen en Geplaatst. Het zorgt voor vloeiende inhoudscontinuïteit voor stroombare lay-outs en biedt visuele waarschuwingen voor gepositioneerde lay-outs, waardoor auteurs beter controle en flexibiliteit hebben bij het ontwerpen van communicatie.
 
 ## Belangrijkste mogelijkheden
 
