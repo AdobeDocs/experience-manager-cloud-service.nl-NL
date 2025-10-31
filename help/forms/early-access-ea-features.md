@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a974859746ca20f1979b773668a66be0197f623d
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '3019'
+source-wordcount: '3076'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusiev
 
 ## Hoe kan ik deelnemen aan het programma Vroege toegang?
 
-Als u in het aansluiten van bij ons programma van de Vroege Toegang voor om het even welke innovatie van de Vroege Toegang geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken. U kunt toegang vragen tot alle of tot specifieke innovaties.
+Als u in het aansluiten van bij ons programma van de Vroege Toegang voor om het even welke innovatie van de Vroege Toegang geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
 ## Innovaties voor vroege toegang
 
@@ -52,7 +52,7 @@ De AEM Forms Workfront Fusion Connector maakt naadloze integratie mogelijk tusse
 
 Met de AEM Forms Workfront Fusion Connector kunt u workflows ontwerpen die automatisch worden geactiveerd na verzending van een adaptief formulier. Stel bijvoorbeeld dat een workflow wordt gestart om een specifieke persoon de taak te geven de ingediende gegevens te beoordelen, zodat een aanvraag kan worden goedgekeurd of afgewezen op basis van de informatie die via het adaptieve formulier is vastgelegd. Deze gestroomlijnde integratie verbetert de efficiëntie en brengt een nieuw niveau van automatisering aan uw werkschemaprocessen.
 
-Klaar om te beginnen? [&#x200B; voorlegt een AanpassingsVorm aan de documentatie van de Fusie van Adobe Workfront &#x200B;](/help/forms/submit-adaptive-form-to-workfront-fusion.md) verstrekt een geleidelijke gids om de innovatie te gebruiken.
+Klaar om te beginnen? [ voorlegt een AanpassingsVorm aan de documentatie van de Fusie van Adobe Workfront ](/help/forms/submit-adaptive-form-to-workfront-fusion.md) verstrekt een geleidelijke gids om de innovatie te gebruiken.
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
@@ -62,7 +62,7 @@ Met de Conversational Forms-innovatie kunt u communiceren met formulieren als ee
 
 U kunt de component Conversational Forms gewoon naar uw AEM Sites-pagina slepen en op de startpagina plaatsen. Er is geen codering vereist, dus iedereen kan snel aantrekkelijke en gebruiksvriendelijke Forms-ervaringen voor gesprekken maken.
 
-![&#x200B; Coversation Forms, de Vulling van de Vorm van de Stijl van Chatbot, Aangepaste Forms &#x200B;](/help/forms/assets/conversational-forms.png)
+![ Coversation Forms, de Vulling van de Vorm van de Stijl van Chatbot, Aangepaste Forms ](/help/forms/assets/conversational-forms.png)
 
 Hier is wat meer Conversational Forms brengt:
 
@@ -75,11 +75,11 @@ Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaa
 
 ### AEM Forms naar Marketo Connector
 
-De [&#x200B; AEM Forms aan de Schakelaar van Marketo &#x200B;](/help/forms/integrate-form-to-marketo-engage.md) overbruggt het hiaat tussen uw Webvormen (Aanpassings Forms) die met Adobe Experience Manager (AEM) en uw platform van de marketing automatisering, Marketo worden gebouwd.
+De [ AEM Forms aan de Schakelaar van Marketo ](/help/forms/integrate-form-to-marketo-engage.md) overbruggt het hiaat tussen uw Webvormen (Aanpassings Forms) die met Adobe Experience Manager (AEM) en uw platform van de marketing automatisering, Marketo worden gebouwd.
 
 Wanneer iemand een formulier verzendt op uw website die is gemaakt met AEM Adaptive Forms, zorgt de connector ervoor dat de verzonden gegevens automatisch naar Marketo worden verzonden. Hierdoor wordt de noodzaak van handmatige gegevensinvoer weggenomen en wordt het risico op fouten verminderd.
 
-![&#x200B; Vorm AEM - de Schakelaar van Marketo &#x200B;](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![ Vorm AEM - de Schakelaar van Marketo ](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 Door het gegevensoverdrachtproces te stroomlijnen, kan de schakelaar u helpen de omzettingspercentages van uw website verbeteren. Door loodgegevens automatisch naar Marketo te verzenden, kunt u ervoor zorgen dat gekwalificeerde leads snel worden ingevoerd in uw verpleegprogramma&#39;s.
 
@@ -88,7 +88,7 @@ AEM Forms to Marketo Connector helpt u in wezen de sterke punten van beide platf
 Klaar om te beginnen? De volgende artikelen bevatten gedetailleerde instructies voor het gebruik van de innovatie.
 
 * [Marketo Engage integreren met AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-* [&#x200B; integreer een Aangepast Vorm met Marketo Engage &#x200B;](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [ integreer een Aangepast Vorm met Marketo Engage ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
 * [Marketo Engage en gegevensbron configureren voor bestaande Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Een bestaand adaptief formulier verzenden naar Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
@@ -96,7 +96,7 @@ Klaar om te beginnen? De volgende artikelen bevatten gedetailleerde instructies 
 
 Interactieve communicatie over Cloud is een krachtige oplossing voor het maken, beheren en leveren van interactieve correspondentie met behulp van gegevens, zoals zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits.
 
-![&#x200B; Interactieve Communicatie Redacteur &#x200B;](/help/forms/assets/ic-editor.png)
+![ Interactieve Communicatie Redacteur ](/help/forms/assets/ic-editor.png)
 
 #### Belangrijkste kenmerken:
 
@@ -141,19 +141,19 @@ Geef automatisch &quot;Pagina nr. van ##&quot; weer op basispagina&#39;s voor du
 * Het creëren van kwalitatief hoogstaande, veilige, en wettelijk conforme correspondentie
 * Het leiden van de verwezenlijking, de assemblage, en de levering van gegeven-gedreven interactieve correspondentie
 
-Klaar om te beginnen? De Interactive Communications-editor is beschikbaar in het kader van het programma Vroege toegang voor Forms as a Cloud Service-implementaties. Om toegang te verzoeken, e-mail uw organisatie identiteitskaart en programmadetails aan [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) van uw officieel adres.
+Klaar om te beginnen? De Interactive Communications-editor is beschikbaar in het kader van het programma Vroege toegang voor Forms as a Cloud Service-implementaties. Om toegang te verzoeken, e-mail uw organisatie identiteitskaart en programmadetails aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officieel adres.
 
 ### AEM Forms-integratie met Adobe Experience Platform (AEP)
 
 U kunt AEM Forms verbinden met Adobe Experience Platform (AEP) om klantprofielen en gegevens te gebruiken voor persoonlijke formulierervaringen en downstreamworkflows te activeren op basis van formulierverzendingen. Door formuliergegevens rechtstreeks naar AEP-gegevenssets te verzenden, kunt u klantprofielen verrijken en meer inzicht krijgen in gebruikersinteracties.
 
-Klaar om te beginnen? [&#x200B; Leer meer over het integreren van AEM Forms met Adobe Experience Platform (AEP) &#x200B;](/help/forms/aem-forms-aep-connector.md).
+Klaar om te beginnen? [ Leer meer over het integreren van AEM Forms met Adobe Experience Platform (AEP) ](/help/forms/aem-forms-aep-connector.md).
 
 ### AEM Forms HTML5 Forms
 
 Met AEM Forms HTML5 Forms kunt u bestaande XFA-formuliersjablonen (XML Forms Architecture) weergeven in HTML5-indeling, zodat deze toegankelijk zijn voor moderne browsers en mobiele apparaten waarvoor PDF op XFA-basis niet wordt ondersteund. Deze mogelijkheid overbrugt de kloof tussen traditionele PDF forms en moderne webervaringen.
 
-![&#x200B; HTML5 de Voorproef van Forms &#x200B;](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+![ HTML5 de Voorproef van Forms ](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
 
 **Zeer belangrijke mogelijkheden:**
 
@@ -171,7 +171,7 @@ Met AEM Forms HTML5 Forms kunt u bestaande XFA-formuliersjablonen (XML Forms Arc
 
 * **Bespaart van het Ontwerp**: Sparen een vorm HTML5 als ontwerp en hervat het invullen van de vorm in een recentere fase.
 
-Klaar om te beginnen? De [&#x200B; Inleiding aan HTML5 vormen &#x200B;](/help/forms/introductionhtml5.md) documentatie verstrekt een uitvoerig overzicht en begonnen gids voor deze innovatie.
+Klaar om te beginnen? De [ Inleiding aan HTML5 vormen ](/help/forms/introductionhtml5.md) documentatie verstrekt een uitvoerig overzicht en begonnen gids voor deze innovatie.
 
 ### AEM Forms-klassebestand CLI voor aangepaste componenten
 
@@ -186,7 +186,7 @@ Versnel uw AEM Forms Edge Delivery Services-ontwikkeling met de AEM Forms CLI-to
 * **de productiviteit van de Ontwikkelaar**: Focus op de bouw van bedrijfslogica en UI, terwijl CLI herhalende opstellingstaken behandelt.
 * **Naadloze integratie**: De geproduceerde componenten zijn klaar om met uw bestaande projecten van AEM Forms te gebruiken en te integreren.
 
-Klaar om te beginnen? Het AEM Forms CLI-hulpprogramma is beschikbaar onder het programma Vroege toegang voor Forms as a Cloud Service-implementaties. Om toegang te verzoeken, e-mail uw organisatie identiteitskaart en programmadetails aan [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) van uw officieel adres.
+Klaar om te beginnen? Het AEM Forms CLI-hulpprogramma is beschikbaar onder het programma Vroege toegang voor Forms as a Cloud Service-implementaties. Om toegang te verzoeken, e-mail uw organisatie identiteitskaart en programmadetails aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officieel adres.
 
 ### API-integratiefunctie voor dynamische formuliergegevens
 
@@ -210,9 +210,9 @@ Dit hulpmiddel is met name nuttig voor scenario&#39;s als adres auto-voltooiing,
 ### HTML-e-mailsjablonen in Adaptive Forms
 
 
-De adaptieve Forms staat u toe gebruiken [&#x200B; de e-mailmalplaatjes van HTML &#x200B;](/help/forms/html-email-templates-in-adaptive-forms.md). Met HTML-e-mailsjablonen kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+De adaptieve Forms staat u toe gebruiken [ de e-mailmalplaatjes van HTML ](/help/forms/html-email-templates-in-adaptive-forms.md). Met HTML-e-mailsjablonen kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
 
-![&#x200B; HTML e-mailmalplaatjes &#x200B;](/help/forms/assets/html-email.png)
+![ HTML e-mailmalplaatjes ](/help/forms/assets/html-email.png)
 
 ### RESTful Web Services Submit Handeling
 
@@ -230,7 +230,7 @@ Aangepaste Forms kan nu worden weergegeven in een RTL-taal (Right-to-Left), waar
 
 Deze functionaliteit richt zich op talen zoals Arabisch, Hebreeuws en Urdu, die van rechts naar links (RTL) worden geschreven en gelezen, die betere begrip en voltooiingsaantallen voor vormen bevorderen.
 
-![&#x200B; Van rechts naar links (RTL) taalsteun &#x200B;](mobile-responsive.png)
+![ Van rechts naar links (RTL) taalsteun ](mobile-responsive.png)
 
 De RTL-talen (rechts naar links) worden ondersteund in Adaptive Forms:
 
@@ -242,7 +242,7 @@ De RTL-talen (rechts naar links) worden ondersteund in Adaptive Forms:
 
 Over het algemeen biedt RTL-taalondersteuning in Adaptive Forms bedrijven de mogelijkheid om echt wereldwijde formulieren te ontwerpen, zodat ze hun bereik, betrokkenheid en inclusiviteit kunnen vergroten.
 
-Klaar om te beginnen? [&#x200B; de Aangepaste documentatie van Forms RTL &#x200B;](/help/forms/supporting-new-language-localization-core-components.md) verstrekt een geleidelijke gids om de innovatie te gebruiken RTL.
+Klaar om te beginnen? [ de Aangepaste documentatie van Forms RTL ](/help/forms/supporting-new-language-localization-core-components.md) verstrekt een geleidelijke gids om de innovatie te gebruiken RTL.
 
 ### Verbeterde methoden voor botbeveiliging
 
@@ -254,7 +254,7 @@ AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te vo
 
 Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [&#x200B; Cloudflare Turnstile &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [&#x200B; hCaptcha &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [&#x200B; Google reCAPTCHA &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### Doc Assurance API&#39;s
 
@@ -273,7 +273,7 @@ Hier is een uitsplitsing van wat Doc Assurance APIs kan doen:
 
   Wanneer de juiste gebruiksrechten zijn toegevoegd aan PDF-documenten, kunnen ontvangers ingeschakelde activiteiten uitvoeren vanuit Adobe Reader.
 
-Algemeen, [&#x200B; Doc Assurance APIs &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u documentveiligheid en naleving verbeteren door een extra laag van controle toe te voegen.
+Algemeen, [ Doc Assurance APIs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u documentveiligheid en naleving verbeteren door een extra laag van controle toe te voegen.
 
 
 ### Forms Service-API&#39;s
@@ -302,7 +302,11 @@ Het opslaan van PDF&#39;s in Azure Blob Storage maakt een gecentraliseerd beheer
 
 ### Verbeteringen in de Visuele Redacteur van de Regel
 
-* De visuele Redacteur van de Regel in Aanpassings Forms steunt nu [&#x200B; directe API integratie zonder een Model van de Gegevens van de Vorm te vereisen &#x200B;](/help/forms/api-integration-in-rule-editor.md). U kunt verbinding maken met een API-eindpunt door de JSON-URL in te voeren of door de configuratie te importeren met een cURL-opdracht. Na integratie kan de API worden aangeroepen met de handeling `Invoke Service` .
+* [ Directe API integratie ](/help/forms/api-integration-in-rule-editor.md): De Visuele Redacteur van de Regel in Aanpassings Forms steunt nu directe API integratie zonder een Model van de Gegevens van de Vorm te vereisen. U kunt verbinding maken met een API-eindpunt door de JSON-URL in te voeren of door de configuratie te importeren met een cURL-opdracht. Na integratie kan de API worden aangeroepen met de handeling `Invoke Service` .
+
+* [ Verbeterde Navigatie met de Steun van de Payload van de Gebeurtenis ](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): **navigeer aan** actie in de Invoke de handlers van de Dienst `EVENT_PAYLOAD`, toestaand vormauteurs om follow-upacties te vormen die op gebeurtenisreacties worden gebaseerd.
+
+* [ Functie en de Wiskundige Steun van de Uitdrukking in de Parameters van de Input ](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): De parameters van de input steunen nu zowel functievraag als wiskundige uitdrukkingen, toelatend vormauteurs om dynamisch gegevens verwerkte waarden direct over te gaan.
 
 ## Zie ook
 
