@@ -4,9 +4,9 @@ description: Meer informatie over onderhoudstaken in AEM as a Cloud Service en h
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -47,14 +47,14 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
   <tr>
     <td>Versie wissen</td>
     <td>Klant</td>
-    <td>De zuivering van de versie wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle van de Aanzuivering </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
+    <td>De zuivering van de versie wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle van de Aanzuivering </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Logboek controleren leegmaken</td>
     <td>Klant</td>
-    <td>Het logboek van de controle zuivert wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
+    <td>Het logboek van de controle zuivert wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
    </td>
    </td>
   </tr>
@@ -77,7 +77,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>
     <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_WorkflowPurgeTask</code> ) met de juiste eigenschappen. Vorm de eigenschappen OSGI zie <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=nl-NL#regular-purging-of-workflow-instances"> AEM 6.5 documentatie van de Taak van het Onderhoud </a>.</p>
+    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_WorkflowPurgeTask</code> ) met de juiste eigenschappen. Vorm de eigenschappen OSGI, zie <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances"> Regelmatige het Schrappen van de Instanties van het Werkschema </a>.</p>
   </td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>
     <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst van <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi"> Eigenschappen OSGi </a> voor <b> de Configuratie van de Woorden van de Projecten van Adobe </b>.</p>
+    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst van <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi"> Eigenschappen OSGi </a> voor <b> de Configuratie van de Woorden van de Projecten van Adobe </b>.</p>
   </td>
   </tr>
   </tbody>
@@ -222,11 +222,11 @@ Declareer een configuratiedossier en stel het op zoals die in de volgende stappe
 
 **1** creeer een dossier genoemd `mt.yaml` of gelijkaardig.
 
-**`config`** plaats het dossier ergens onder een top niveauomslag genoemd  of gelijkaardig, zoals die onder [&#x200B; wordt beschreven Gebruikend Pijpleidingen Config &#x200B;](/help/operations/config-pipeline.md#folder-structure).
+**** `config` plaats het dossier ergens onder een top niveauomslag genoemd  of gelijkaardig, zoals die onder [ wordt beschreven Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
 
 **3** - verklaar eigenschappen in het configuratiedossier, die omvatten:
 
-* a paar eigenschappen boven de gegevensknoop — zie [&#x200B; Gebruikend Pijpleidingen Config &#x200B;](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving. De `kind` bezitswaarde zou *MaintenanceTasks* moeten zijn en de versie zou aan *1* moeten worden geplaatst.
+* a paar eigenschappen boven de gegevensknoop — zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving. De `kind` bezitswaarde zou *MaintenanceTasks* moeten zijn en de versie zou aan *1* moeten worden geplaatst.
 
 * een gegevensobject met zowel `versionPurge` - als `auditLogPurge` -objecten.
 
@@ -267,7 +267,7 @@ Houd er rekening mee dat de configuratie alleen geldig is als:
 * alle eigenschappen moeten worden gedefinieerd. Er zijn geen overgeërfde standaardinstellingen.
 * de typen (gehele getallen, tekenreeksen, booleans, enz.) in de onderstaande eigenschappentabellen moeten in acht worden genomen.
 
-**4** - creeer een config pijpleiding in Cloud Manager, zoals die in het [&#x200B; wordt beschreven config pijpleidingsartikel &#x200B;](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+**4** - creeer een config pijpleiding in Cloud Manager, zoals die in het [ wordt beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Versie wissen {#version-purge}
 
