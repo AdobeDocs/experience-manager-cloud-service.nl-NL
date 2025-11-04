@@ -19,7 +19,7 @@ Slimme tags zijn trefwoorden die niet alleen in de tekst worden weergegeven, maa
 
 Woorden die alfabetisch in een woordenboek zijn gerangschikt, zijn bijvoorbeeld gemakkelijker te vinden dan willekeurig verspreide woorden. Tags zijn een soortgelijk doel. Het organiseert activa volgens bedrijfstaxonomie, die ervoor zorgt dat de meest relevante degenen in onderzoeksresultaten verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven bij het ontwerpen van een promotiecampagne. Of gebruikers nu &#39;runners&#39; of &#39;loopschoenen&#39; labelen, gebruikers hoeven zich geen zorgen te maken over typos, spellingvariaties of andere zoektermen. Slimme tags herkennen ze allemaal.
 
-Op de achtergrond, gebruikt de functionaliteit het kunstmatig intelligente kader van [&#x200B; Adobe Sensei &#x200B;](https://business.adobe.com/products/sensei/adobe-sensei.html) automatisch Slimme Markeringen op geüploade activa-door gebrek-samen met tekst die aan de bedrijfstaxonomie wordt gericht.
+Op de achtergrond, gebruikt de functionaliteit het kunstmatig intelligente kader van [&#x200B; Adobe Sensei &#x200B;](https://business.adobe.com/nl/products/sensei/adobe-sensei.html) automatisch Slimme Markeringen op geüploade activa-door gebrek-samen met tekst die aan de bedrijfstaxonomie wordt gericht.
 
 ## Vereisten en configuratie {#smart-tags-prereqs-config}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Niet-gelabelde Assets in DAM {#smart-tag-existing-assets}
 
-De bestaande of oudere elementen in DAM worden niet automatisch gemarkeerd met slimme tags. U moet [&#x200B; Assets opnieuw verwerken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) manueel om Slimme Markeringen voor hen te produceren. Als het proces is voltooid, navigeert u naar de [!UICONTROL Properties] -pagina van elk element in de map. De automatisch toegevoegde tags worden weergegeven in de sectie [!UICONTROL Smart Tags] op het tabblad [!UICONTROL Basic] . Deze toegepaste Slimme Markeringen worden gesorteerd in dalende orde van [&#x200B; betrouwbaarheidsscore &#x200B;](#confidence-score).
+De bestaande of oudere elementen in DAM worden niet automatisch gemarkeerd met slimme tags. U moet [&#x200B; Assets opnieuw verwerken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=nl-NL#adjusting-load) manueel om Slimme Markeringen voor hen te produceren. Als het proces is voltooid, navigeert u naar de [!UICONTROL Properties] -pagina van elk element in de map. De automatisch toegevoegde tags worden weergegeven in de sectie [!UICONTROL Smart Tags] op het tabblad [!UICONTROL Basic] . Deze toegepaste Slimme Markeringen worden gesorteerd in dalende orde van [&#x200B; betrouwbaarheidsscore &#x200B;](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
