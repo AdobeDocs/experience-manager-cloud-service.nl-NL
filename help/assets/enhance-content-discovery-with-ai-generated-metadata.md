@@ -3,9 +3,9 @@ title: Verbeter de detectie van inhoud met door AI gegenereerde metagegevens in 
 description: Leer hoe u de detectie van inhoud kunt verbeteren met metagegevens die door AI zijn gegenereerd in de beheerweergave
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,14 @@ ht-degree: 0%
 
 # Detectie van inhoud verbeteren met door AI gegenereerde metagegevens {#ai-smart-tags}
 
-In plaats van handmatig in te voeren, wijst AI automatisch beschrijvende tags toe aan digitale elementen. Deze door AI gegenereerde tags verbeteren de kwaliteit van de metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, gecategoriseerd en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud. Als het element bijvoorbeeld een afbeelding is, kan AI objecten, scènes, emoties of zelfs merklogo&#39;s in het element herkennen en relevante tags genereren, zoals &quot;zonsondergang&quot;, &quot;strand&quot;, &quot;vakantie&quot; of &quot;glimlachen&quot;. Door AI gegenereerde inhoud kan het zoeken naar elementen verbeteren door gebruik te maken van zowel semantische als lexicale zoektechnieken. Zie meer [&#x200B; Onderzoek Assets &#x200B;](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+| UI&#39;s | Artikelkoppeling |
+| -------- | ---------------------------- |
+| Assets View | [ klik hier ](/help/assets/ai-generated-metadata-assets-view.md) |
+| Admin View | Dit artikel |
 
-![&#x200B; Verbeterde slimme markeringen &#x200B;](assets/enhanced-smart-tags1.png)
+In plaats van handmatig in te voeren, wijst AI automatisch beschrijvende tags toe aan digitale elementen. Deze door AI gegenereerde tags verbeteren de kwaliteit van de metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, gecategoriseerd en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud. Als het element bijvoorbeeld een afbeelding is, kan AI objecten, scènes, emoties of zelfs merklogo&#39;s in het element herkennen en relevante tags genereren, zoals &quot;zonsondergang&quot;, &quot;strand&quot;, &quot;vakantie&quot; of &quot;glimlachen&quot;. Door AI gegenereerde inhoud kan het zoeken naar elementen verbeteren door gebruik te maken van zowel semantische als lexicale zoektechnieken. Zie meer [ Onderzoek Assets ](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![ Verbeterde slimme markeringen ](assets/enhanced-smart-tags1.png)
 
 ## Hoe kan ik door AI gegenereerde metagegevens inschakelen? {#enable-ai-generated-metadata}
 
@@ -41,7 +46,7 @@ Door AI gegenereerde titels configureren:
 
    * **AI-Gegenereerde Titel van de Vertoning slechts als Titel van gelijkstroom niet** bestaat: AEM Assets toont de AI-Gegenereerde titel slechts als de activatitel niet voor activa wordt bepaald.
 
-     ![&#x200B; vorm AI-Gegenereerde titels &#x200B;](assets/configure-title-ai-generated.png)
+     ![ vorm AI-Gegenereerde titels ](assets/configure-title-ai-generated.png)
 
 ## Door AI gegenereerde metagegevens gebruiken {#using-ai-generated-smart-tags}
 
@@ -82,4 +87,4 @@ Door AI gegenereerde metagegevens op mapniveau uitschakelen:
 
    * Uitschakelen - Door AI gegenereerde metagegevens voor de geselecteerde map worden uitgeschakeld.
 
-     ![&#x200B; maak AI-Gegenereerde meta-gegevens &#x200B;](assets/disable-ai-generated-metadata.png) onbruikbaar
+     ![ maak AI-Gegenereerde meta-gegevens ](assets/disable-ai-generated-metadata.png) onbruikbaar

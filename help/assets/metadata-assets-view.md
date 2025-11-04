@@ -5,9 +5,9 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Om deze redenen biedt Assets u de juiste middelen om metagegevens voor uw digita
 
 Als u de metagegevens van een element wilt weergeven, bladert u naar het element of doorzoekt u het element, selecteert u het element en klikt u op **[!UICONTROL Details]** op de werkbalk.
 
-![&#x200B; meta-gegevens van de Mening van een activa &#x200B;](assets/metadata-view.png)
+![ meta-gegevens van de Mening van een activa ](assets/metadata-view.png)
 
-*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
+*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
 De basismetagegevens, zoals titel, beschrijving en uploaddatum, zijn beschikbaar op het tabblad [!UICONTROL Basic] . Het tabblad [!UICONTROL Advanced] bevat meer geavanceerde metagegevens, zoals cameramodel, lensdetails en geotags. Het tabblad [!UICONTROL Tags] bevat automatisch toegepaste tags op basis van de inhoud van de afbeelding.
 
@@ -43,13 +43,13 @@ Nadat het metagegevensformulier door Admin is geconfigureerd, kunnen andere veld
 
 ## Slimme tags {#smart-tags}
 
-[!DNL Experience Manager Assets] gebruikt kunstmatige intelligentie die door [&#x200B; wordt verstrekt Adobe Sensei &#x200B;](https://www.adobe.com/sensei.html) om relevante markeringen op al uw geüploade activa automatisch toe te passen. Deze labels, met de juiste naam Slimme tags, verhogen de snelheid van de inhoud van uw projecten door u te helpen snel relevante elementen te vinden. De slimme tags zijn een voorbeeld van metagegevens die niet in de afbeelding voorkomen.
+[!DNL Experience Manager Assets] gebruikt kunstmatige intelligentie die door [ wordt verstrekt Adobe Sensei ](https://www.adobe.com/sensei.html) om relevante markeringen op al uw geüploade activa automatisch toe te passen. Deze labels, met de juiste naam Slimme tags, verhogen de snelheid van de inhoud van uw projecten door u te helpen snel relevante elementen te vinden. De slimme tags zijn een voorbeeld van metagegevens die niet in de afbeelding voorkomen.
 
-De slimme tags worden toegepast in de buurt van realtime en worden gegenereerd op basis van de inhoud van de afbeelding. Wanneer u een element uploadt, wordt de gebruikersinterface gedurende enige tijd [!UICONTROL Processing] weergegeven op de elementminiatuur. Zodra de verwerking volledig is, kunt u [&#x200B; de meta-gegevens &#x200B;](#view-metadata) en de slimme markeringen bekijken.
+De slimme tags worden toegepast in de buurt van realtime en worden gegenereerd op basis van de inhoud van de afbeelding. Wanneer u een element uploadt, wordt de gebruikersinterface gedurende enige tijd [!UICONTROL Processing] weergegeven op de elementminiatuur. Zodra de verwerking volledig is, kunt u [ de meta-gegevens ](#view-metadata) en de slimme markeringen bekijken.
 
-![&#x200B; Slimme Markeringen van de Mening van een activa &#x200B;](assets/metadata-view-tags.png)
+![ Slimme Markeringen van de Mening van een activa ](assets/metadata-view-tags.png)
 
-*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
+*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
 Slimme tags bevatten ook een betrouwbaarheidsscore als percentage. Het geeft het vertrouwen aan dat aan de toegepaste tag is gekoppeld. U kunt de automatisch toegepaste slimme tags verkleinen.
 
@@ -81,7 +81,7 @@ In de Assets-weergave wordt de volgende volgorde gebruikt om te zoeken naar best
 MIME-subtype > MIME-type > `default` -formulier > Formulier buiten de doos
 
 Als bijvoorbeeld een metagegevensformulier met de naam `PDF` of `pdf` bestaat, bevatten de geüploade PDF-documenten metagegevensvelden zoals gedefinieerd in het formulier. Als een metagegevensformulier met de naam `PDF` of `pdf` niet bestaat, komt de Assets-weergave overeen als er een metagegevensformulier met de naam `application` is. Als er een metagegevensformulier met de naam `application` is, bevatten de geüploade PDF-documenten metagegevensvelden zoals gedefinieerd in het formulier. Als in de Assets-weergave nog steeds geen overeenkomend metagegevensformulier wordt gevonden, wordt gezocht naar het metagegevensformulier `default` om de metagegevensvelden die in het formulier zijn gedefinieerd, toe te passen op de geüploade PDF-documenten. Als geen van deze stappen werkt, worden in de Assets-weergave metagegevensvelden die in het formulier buiten het vak zijn gedefinieerd, toegepast op alle geüploade PDF-documenten.
-Alhoewel als u een meta-gegevensvorm aan een omslag [&#x200B; wilt toewijzen zie &#x200B;](#assign-metadata-form-folder).
+Alhoewel als u een meta-gegevensvorm aan een omslag [ wilt toewijzen zie ](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -91,14 +91,14 @@ Ga als volgt te werk om een metagegevensformulier te maken:
 
 1. Klik in de linkertrack op **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** .
 
-   ![&#x200B; optie van meta-gegevensvormen in linkerzijbalk &#x200B;](assets/metadata-forms-sidebar.png)
+   ![ optie van meta-gegevensvormen in linkerzijbalk ](assets/metadata-forms-sidebar.png)
 
 1. Klik op **[!UICONTROL Create]** rechtsboven in de gebruikersinterface.
 1. Geef een naam op voor het formulier en klik op **[!UICONTROL Create]** .
 1. Geef een naam op voor de tab in **[!UICONTROL Settings]** in de rechtertrack.
 1. Sleep de vereiste componenten op een tabblad in het formulier vanuit de **[!UICONTROL Components]** -code die beschikbaar is in de linkertrack. Sleep de componenten in de gewenste volgorde.
 
-   ![&#x200B; optie van meta-gegevensvormen in linkerzijbalk &#x200B;](assets/metadata-form-new.png)
+   ![ optie van meta-gegevensvormen in linkerzijbalk ](assets/metadata-form-new.png)
 
    *Cijfer: De interface van de de vormverwezenlijking van meta-gegevens met opties om componenten en optie toe te voegen om de vorm voor te vertonen.*
 
@@ -149,11 +149,11 @@ Een metagegevensformulier toewijzen aan een map:
 
 3. Selecteer de map en klik op **[!UICONTROL Assign]** . U kunt de mappen selecteren door op de mapnamen te klikken.
 
-   ![&#x200B; wijs meta-gegevensvorm aan een omslag &#x200B;](assets/assign-to-folder.png) toe
+   ![ wijs meta-gegevensvorm aan een omslag ](assets/assign-to-folder.png) toe
 
    U kunt ook naar de pagina met mapdetails navigeren en een metagegevensformulier selecteren uit de makeigenschappen in het rechterdeelvenster om het metagegevensformulier aan de map toe te wijzen.
 
-   ![&#x200B; de vorm van meta-gegevens van omslageigenschappen &#x200B;](assets/metadata-from-folder-props.png)
+   ![ de vorm van meta-gegevens van omslageigenschappen ](assets/metadata-from-folder-props.png)
 
 ### Metagegevens uit mappen verwijderen {#remove-metadata-form-folder}
 
@@ -171,15 +171,15 @@ U kunt ook naar de pagina met mapdetails navigeren en **[!UICONTROL System mappe
 
 ### Werken met de component Koppeling in een metagegevensformulier {#link-component-metadata-form}
 
-De koppelingscomponent wordt gebruikt om externe URL&#39;s in te schakelen, zoals opslagkoppelingen, copyrightinformatie, contactformulieren enzovoort. Om verbindingscomponent op meta-gegevensvorm te gebruiken, moet u meta-gegevensvorm [&#x200B; vormen &#x200B;](#metadata-forms).
+De koppelingscomponent wordt gebruikt om externe URL&#39;s in te schakelen, zoals opslagkoppelingen, copyrightinformatie, contactformulieren enzovoort. Om verbindingscomponent op meta-gegevensvorm te gebruiken, moet u meta-gegevensvorm [ vormen ](#metadata-forms).
 
 Voer de onderstaande stappen uit om de koppelingscomponent te gebruiken in het metagegevensformulier:
 
 1. Ga naar de pagina met elementdetails en navigeer naar **[!UICONTROL Link URL]** .
 1. Voeg een URL toe die u wilt gebruiken om te leiden voor het geselecteerde element.
 1. Klik op **[!UICONTROL Add link]**. Voer een van de volgende handelingen uit:
-   * Klik ![&#x200B; exemplaarpictogram &#x200B;](assets/do-not-localize/copy.svg) om URL te kopiëren.
-   * Klik ![&#x200B; uitgeven pictogram &#x200B;](assets/do-not-localize/edit.svg) om URL uit te geven.
+   * Klik ![ exemplaarpictogram ](assets/do-not-localize/copy.svg) om URL te kopiëren.
+   * Klik ![ uitgeven pictogram ](assets/do-not-localize/edit.svg) om URL uit te geven.
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
 ### Werken met de component Tags in het metagegevensformulier {#tag-component-metadata-form}
@@ -196,9 +196,9 @@ Configureer de tagcomponent door de volgende stappen uit te voeren:
 1. Klik op **[!UICONTROL Restrict to specific taxonomy]** om het hoofdpad van de taxonomie te beperken. Blader hiertoe door de labels en kies de taxonomie naar het desbetreffende pad.
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
-   ![&#x200B; configuratie van de markeringen van de Wortel &#x200B;](assets/root-tag-config.png)
+   ![ configuratie van de markeringen van de Wortel ](assets/root-tag-config.png)
 
-1. [&#x200B; wijs meta-gegevensvorm aan omslagen &#x200B;](#assign-metadata-form-folder) toe.
+1. [ wijs meta-gegevensvorm aan omslagen ](#assign-metadata-form-folder) toe.
 
 <!--
 #### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
@@ -225,53 +225,15 @@ Voer de volgende stappen uit om een metagegevensformulier te bewerken:
 1. Klik op **[!UICONTROL Preview]** om de wijzigingen in het formulier te bekijken voordat u deze wijzigingen opslaat.
 1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
 
-## Detectie van inhoud verbeteren met door AI gegenereerde metagegevens {#ai-smart-tags}
-
-In plaats van handmatig in te voeren, wijst AI automatisch beschrijvende tags toe aan digitale elementen. Deze door AI gegenereerde tags verbeteren de kwaliteit van de metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, gecategoriseerd en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud. Als het element bijvoorbeeld een afbeelding is, kan AI objecten, scènes, emoties of zelfs merklogo&#39;s in het element herkennen en relevante tags genereren, zoals &quot;zonsondergang&quot;, &quot;strand&quot;, &quot;vakantie&quot; of &quot;glimlachen&quot;. Door AI gegenereerde inhoud kan het zoeken naar elementen verbeteren door gebruik te maken van zowel semantische als lexicale zoektechnieken. Zie meer [&#x200B; Onderzoek Assets &#x200B;](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
-
-![&#x200B; AI Gegenereerde meta-gegevens &#x200B;](/help/assets/assets/enhanced-smart-tags.png)
-
-### Hoe kan ik door AI gegenereerde metagegevens inschakelen? {#enable-ai-generated-metadata}
-
-Door AI gegenereerde metagegevens inschakelen:
-
-* Minimaal vereiste AEM-releaseversie is `20626` .
-
-* U moet een GenAI Rider-overeenkomst ondertekenen. Neem voor meer informatie contact op met uw Adobe-vertegenwoordiger.
-
-
-### Door AI gegenereerde metagegevens gebruiken {#using-ai-generated-smart-tags}
-
-<!--[!NOTE]
->
->The enhanced smart tags capability is available only for the newly uploaded assets.
--->
-
-Voer de volgende stappen uit om de verbeterde functie Slimme tags te gebruiken:
-
-1. Ga in de interface [!DNL Experience Manager] naar de gewenste map en klik op **[!UICONTROL Add Assets]** . <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> De compatibele indelingen voor afbeeldingsbestanden zijn `png` , `jpg` , `jpeg` , `psd` , `tiff` , `gif` , `webp` , `crw` , `cr2` , `3fr` , `nef` , `arw` en `bmp` .
-
-1. Wacht tot het net geüploade element is verwerkt. Als u klaar bent, gaat u naar de elementdetails.
-
-1. Ga naar tabblad **[!UICONTROL AI-Generated]** . Als de [!DNL Experience Manager] -versie incompatibel is of niet wordt bijgewerkt, is dit tabblad niet zichtbaar.  De volgende velden zijn beschikbaar:
-
-   * **[!UICONTROL Generated title]:** de titel verstrekt een duidelijke en beknopte titel die het kernidee van een geüploade activa vangt, die het gemakkelijk maken in een blik te begrijpen. Als u een element toevoegt en u een titel opgeeft (in `dc:title` ), wordt deze weergegeven in de bladerweergave met elementen. Als deze optie leeg blijft, wordt automatisch een door AI gegenereerde titel toegewezen.
-   * **[!UICONTROL Generated description]:** De beschrijving geeft een korte maar informatieve samenvatting van wat de activa over is, die gebruikers en onderzoeksmodule helpen om zijn relevantie snel te begrijpen.
-   * **[!UICONTROL Generated keywords]:** De trefwoorden zijn doeltermen die de hoofdthema&#39;s van een element vertegenwoordigen en die u helpen bij het labelen en filteren van inhoud.
-
-1. [ Facultatief ] u kunt extra markeringen toevoegen of uw creëren als u om het even welke relevante markeringen voelt ontbreken. U doet dit door uw tags in het veld **[!UICONTROL Generated keywords]** te schrijven en op **[!UICONTROL Save]** te klikken.
-
-Voor informatie over hoe te om AI-Gegenereerde meta-gegevens onbruikbaar te maken, zie [&#x200B; AI-Gegenereerde meta-gegevens &#x200B;](/help/assets/smart-tags.md#disable-ai-generated-metadata) onbruikbaar maken.
-
 ## Volgende stappen {#next-steps}
 
-* [&#x200B; bekijk een video om meta-gegevensvormen in de mening van Assets te beheren &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=nl-NL)
+* [ bekijk een video om meta-gegevensvormen in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
