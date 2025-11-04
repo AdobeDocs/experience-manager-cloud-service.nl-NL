@@ -78,7 +78,7 @@ De bovenste navigatiebalk van Experience Platform bevindt zich altijd boven in h
 
 ![&#x200B; de kopbal van Experience Cloud &#x200B;](assets/experience-cloud-header.png)
 
-Voor details op de hoogste navigatiebar van Experience Platform, gelieve te zien de [&#x200B; gids UI van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Voor details op de hoogste navigatiebar van Experience Platform, gelieve te zien de [&#x200B; gids UI van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Account {#user-properties}
 
