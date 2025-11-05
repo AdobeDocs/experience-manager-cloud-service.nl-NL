@@ -30,7 +30,7 @@ Dev-omgevingen en Rapid Dev-omgevingen dienen beperkt te blijven tot ontwikkelin
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-U kunt extra video&#39;s zien die [&#x200B; tonen hoe te om het &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [&#x200B; te plaatsen hoe te om het &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) te gebruiken, en de [&#x200B; cyclus van het ontwikkelingsleven &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) gebruikend RDE.
+U kunt extra video&#39;s zien die [&#x200B; tonen hoe te om het &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [&#x200B; te plaatsen hoe te om het &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) te gebruiken, en de [&#x200B; cyclus van het ontwikkelingsleven &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) gebruikend RDE.
 
 ## Inleiding {#introduction}
 
@@ -184,7 +184,7 @@ In omgevingen waar geen enkele gebruiker interactief de instellingsopdracht kan 
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Uw eigen organisatieidentiteitskaart kan omhoog worden gezocht gebruikend de methode die onder [&#x200B; wordt gedocumenteerd Mening uw organisatieidentiteitskaart &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Uw eigen organisatieidentiteitskaart kan omhoog worden gezocht gebruikend de methode die onder [&#x200B; wordt gedocumenteerd Mening uw organisatieidentiteitskaart &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Configureer vervolgens uw programma-id:
 
@@ -200,7 +200,7 @@ In omgevingen waar geen enkele gebruiker interactief de instellingsopdracht kan 
 
    Deze stappen vereisen u om een lid van de Cloud Manager **Ontwikkelaar te zijn - het Profiel van het Product van Cloud Service**. Zie [&#x200B; de Leden van het Team aan de Profielen van het Product van Cloud Manager toewijzen - wijs het Profiel van het Product van de Ontwikkelaar &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details toe.
 
-Voor meer informatie en demonstratie, bekijk het videoleerprogramma [&#x200B; hoe te opstelling RDE (06 :24) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Voor meer informatie en demonstratie, bekijk het videoleerprogramma [&#x200B; hoe te opstelling RDE (06 :24) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## RDE gebruiken tijdens het ontwikkelen van een nieuwe functie {#using-rde-while-developing-a-new-feature}
@@ -529,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Voor meer informatie en demonstratie, zie het videoleerprogramma [&#x200B; hoe te om de bevelen van RDE (10 :01) te gebruiken &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Voor meer informatie en demonstratie, zie het videoleerprogramma [&#x200B; hoe te om de bevelen van RDE (10 :01) te gebruiken &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Implementeren naar een RDE van externe Git-providers {#deploy-to-rde}
@@ -1156,7 +1156,7 @@ Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment
 
 ## RDE-zelfstudie
 
-Om over RDE in AEM as a Cloud Service te leren, zie het videoleerprogramma dat [&#x200B; toont hoe te opstelling, hoe te om het te gebruiken, en de cyclus van het ontwikkelingsleven (01 :25) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+Om over RDE in AEM as a Cloud Service te leren, zie het videoleerprogramma dat [&#x200B; toont hoe te opstelling, hoe te om het te gebruiken, en de cyclus van het ontwikkelingsleven (01 :25) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 ## Problemen oplossen {#troubleshooting}
 
