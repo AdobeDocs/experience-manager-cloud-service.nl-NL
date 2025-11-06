@@ -30,12 +30,12 @@ Dit artikel biedt uitgebreide configuratiestappen, voorbeelden en validatie-inst
 
 **alvorens u** begint
 
-Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), gebruikt uw plaats Helix 5 met één enkele bewaarplaats. [ volg Helix 5 instructies ](#config-helix5) en gebruik de verstrekte versie van Helix 4 YAML van de instructies als reserve.
+Als u [&#x200B; gebruikt één klik Edge Delivery in Cloud Manager &#x200B;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), gebruikt uw plaats Helix 5 met één enkele bewaarplaats. [&#x200B; volg Helix 5 instructies &#x200B;](#config-helix5) en gebruik de verstrekte versie van Helix 4 YAML van de instructies als reserve.
 
 **Bepaal uw versie van de Helix**
 
 * Helix 4 - Uw project bevat een `fstab.yaml` -bestand.
-* Helix 5 - Uw project *gebruikt* niet `fstab.yaml` en werd opstelling door [ Cloud Manager gebruikend de geleide tovenaar ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) of API.
+* Helix 5 - Uw project *gebruikt* niet `fstab.yaml` en werd opstelling door [&#x200B; Cloud Manager gebruikend de geleide tovenaar &#x200B;](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) of API.
 
 Bevestig de gegevens in de gegevensopslagruimte of raadpleeg uw beheerder als u nog niet zeker weet.
 

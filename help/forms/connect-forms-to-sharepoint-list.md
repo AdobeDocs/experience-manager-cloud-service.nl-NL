@@ -20,8 +20,8 @@ ht-degree: 0%
 
 U kunt als volgt de [!UICONTROL Submit to SharePoint List] Handeling verzenden in een adaptieve vorm gebruiken:
 
-1. [ creeer een Configuratie van de Lijst van SharePoint ](#1-create-a-sharepoint-list-configuration): Het verbindt AEM Forms met uw Opslag van de Lijst van SharePoint Microsoft®.
-1. [ gebruik Submit gebruikend het Model van de Gegevens van de Vorm (FDM) in een Aangepaste Vorm ](#2-use-the-submit-using-form-data-model-fdm-in-an-adaptive-form-use-submit-using-fdm): Het verbindt uw AanpassingsVorm met gevormde Microsoft® SharePoint.
+1. [&#x200B; creeer een Configuratie van de Lijst van SharePoint &#x200B;](#1-create-a-sharepoint-list-configuration): Het verbindt AEM Forms met uw Opslag van de Lijst van SharePoint Microsoft®.
+1. [&#x200B; gebruik Submit gebruikend het Model van de Gegevens van de Vorm (FDM) in een Aangepaste Vorm &#x200B;](#2-use-the-submit-using-form-data-model-fdm-in-an-adaptive-form-use-submit-using-fdm): Het verbindt uw AanpassingsVorm met gevormde Microsoft® SharePoint.
 
 ## &#x200B;1. Een SharePoint List-configuratie maken
 
@@ -30,7 +30,7 @@ AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]** .
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
-1. Geef de waarden **[!UICONTROL Title]** , **[!UICONTROL Client ID]** , **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]** op. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheime cliënt, identiteitskaart van de Aannemer voor OAuth URL, zie [ Documentatie Microsoft® ](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+1. Geef de waarden **[!UICONTROL Title]** , **[!UICONTROL Client ID]** , **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]** op. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheime cliënt, identiteitskaart van de Aannemer voor OAuth URL, zie [&#x200B; Documentatie Microsoft® &#x200B;](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * U kunt de `Client ID` en `Client Secret` van uw app ophalen via de Microsoft® Azure-portal.
    * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html` . Vervang `[author-instance]` door de URL van de instantie Auteur.
    * Voeg de API toestemmingen `offline_access` en `Sites.Manage.All` in het **Microsoft® Grafiek** lusje toe om lees-schrijftoestemmingen te verstrekken. Voeg `AllSites.Manage` toestemming in het **SharePoint** lusje toe om ver met de gegevens van SharePoint in wisselwerking te staan.

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Meer informatie over CMS Headless Development {#learn-about}
 
-In dit deel van de [ Hoofdloze Reis van de Ontwikkelaar van AEM ](overview.md), leer over headless technologie en waarom u het zou gebruiken.
+In dit deel van de [&#x200B; Hoofdloze Reis van de Ontwikkelaar van AEM &#x200B;](overview.md), leer over headless technologie en waarom u het zou gebruiken.
 
 ## Doelstelling {#objective}
 
@@ -28,7 +28,7 @@ Met dit document krijgt u inzicht in de levering van inhoud zonder kop en waarom
 
 Sinds de opkomst van gebruiksvriendelijke, grootschalige contentbeheersystemen (CMS&#39;s) hebben organisaties deze als centrale locatie gebruikt voor het beheer van berichten, branding en communicatie. Het gebruik van de CMS als centraal punt voor het beheer van ervaringen heeft geleid tot een verbeterde efficiëntie doordat het niet nodig is taken in verschillende systemen te dupliceren.
 
-![ de klassieke volledig-stapel CMS ](assets/full-stack.png)
+![&#x200B; de klassieke volledig-stapel CMS &#x200B;](assets/full-stack.png)
 
 In een CMS met volledige stapel bevindt de functionaliteit voor het manipuleren van uw inhoud zich in de CMS. De functies van het systeem bestaan uit verschillende onderdelen van de CMS-stapel. De full-stack oplossing heeft veel voordelen.
 
@@ -39,7 +39,7 @@ In een CMS met volledige stapel bevindt de functionaliteit voor het manipuleren 
 
 Als u dus een nieuw kanaal wilt toevoegen of nieuwe soorten ervaringen wilt ondersteunen, kunt u een (of meer) nieuwe componenten in de stapel invoegen en hebt u slechts één plaats om uw wijzigingen aan te brengen.
 
-![ Toevoegend een nieuw kanaal aan de stapel ](assets/adding-channel.png)
+![&#x200B; Toevoegend een nieuw kanaal aan de stapel &#x200B;](assets/adding-channel.png)
 
 De complexiteit van de afhankelijkheden in de stapel wordt snel zichtbaar, aangezien u ziet dat andere items in de stapel moeten worden aangepast aan de wijzigingen.
 
@@ -49,7 +49,7 @@ De full-stack aanpak creëert inherent een silo waar alle landen in één systee
 
 Dit geldt met name voor het presentatiesysteem, dat in traditionele instellingen vaak nauw verbonden is met de CMS. Een nieuw kanaal betekent doorgaans een update van het presentatiesysteem, die van invloed kan zijn op alle andere kanalen.
 
-![ de Complexiteit groeit aangezien de kanalen aan een stapel ](assets/presentation-complexity.png) worden toegevoegd
+![&#x200B; de Complexiteit groeit aangezien de kanalen aan een stapel &#x200B;](assets/presentation-complexity.png) worden toegevoegd
 
 De beperkingen van deze natuurlijke silo kunnen duidelijk worden aangezien u meer inspanning besteedt om veranderingen over alle componenten van uw stapel te coördineren.
 
@@ -63,7 +63,7 @@ Een server zonder kop bijvoorbeeld zit waarschijnlijk ergens in een rack in een 
 
 Als we het hebben over een CMS zonder kop, beheert de CMS de inhoud en blijft ze leveren aan de consument. Nochtans, door slechts de **inhoud** op een gestandaardiseerde manier te leveren, weglaat een headless CMS de definitieve output die teruggeeft, verlatend de **presentatie** van de inhoud aan de verbruikende dienst.
 
-![ Headless CMS ](assets/headless-cms.png)
+![&#x200B; Headless CMS &#x200B;](assets/headless-cms.png)
 
 De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA&#39;s), enzovoort, nemen inhoud van de CMS zonder kop in en leveren hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
@@ -123,13 +123,13 @@ Bedankt dat je aan de slag bent gegaan met je AEM-headless reis! Nu u dit docume
 * Begrijp waarom en wanneer de kop niet nodig is.
 * Op hoog niveau weten hoe headless-concepten worden gebruikt en hoe ze met elkaar verweven zijn.
 
-Bouw op deze kennis voort en ga uw reis zonder kop van AEM door het document [ te herzien Begonnen het worden Begonnen met as a Cloud Service van AEM Headless ](getting-started.md) waar u leert hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen nadenken over hoe AEM de inhoud zonder kop en zijn eerste vereisten benadert.
+Bouw op deze kennis voort en ga uw reis zonder kop van AEM door het document [&#x200B; te herzien Begonnen het worden Begonnen met as a Cloud Service van AEM Headless &#x200B;](getting-started.md) waar u leert hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen nadenken over hoe AEM de inhoud zonder kop en zijn eerste vereisten benadert.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingsreis door het document [ te herzien Begonnen worden Begonnen met as a Cloud Service zonder hoofd van AEM ](getting-started.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document doen, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingsreis door het document [&#x200B; te herzien Begonnen worden Begonnen met as a Cloud Service zonder hoofd van AEM &#x200B;](getting-started.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document doen, maar zij worden niet vereist om op de headless reis verder te gaan.
 
-* [ een Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service ](/help/overview/architecture.md) - begrijp de structuur van AEM as a Cloud Service
-* Een [ Inleiding aan AEM als Headless CMS ](/help/headless/introduction.md)
-* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Hoofdloze Leerprogramma&#39;s van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
+* [&#x200B; een Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service &#x200B;](/help/overview/architecture.md) - begrijp de structuur van AEM as a Cloud Service
+* Een [&#x200B; Inleiding aan AEM als Headless CMS &#x200B;](/help/headless/introduction.md)
+* Het [&#x200B; Portaal van de Ontwikkelaar van AEM &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [&#x200B; Hoofdloze Leerprogramma&#39;s van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.

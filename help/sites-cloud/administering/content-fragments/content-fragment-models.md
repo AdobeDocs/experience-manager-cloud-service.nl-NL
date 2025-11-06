@@ -14,21 +14,21 @@ ht-degree: 0%
 
 # Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
-De Modellen van het Fragment van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service bepalen de structuur voor de inhoud van uw [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md). Deze fragmenten kunnen vervolgens worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop.
+De Modellen van het Fragment van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service bepalen de structuur voor de inhoud van uw [&#x200B; Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md). Deze fragmenten kunnen vervolgens worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop.
 
-Op deze pagina wordt uitgelegd hoe u het fragmentmodel van de inhoud definieert met behulp van de toegewezen editor. Zie [ Leiden uw Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) voor verdere taken en opties beschikbaar zodra uw fragmenten, met inbegrip van [ acties beschikbaar van de Console van Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions) worden gecreeerd, [ toestaand het model op uw omslag ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) en [ het publiceren van uw model ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
+Op deze pagina wordt uitgelegd hoe u het fragmentmodel van de inhoud definieert met behulp van de toegewezen editor. Zie [&#x200B; Leiden uw Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) voor verdere taken en opties beschikbaar zodra uw fragmenten, met inbegrip van [&#x200B; acties beschikbaar van de Console van Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions) worden gecreeerd, [&#x200B; toestaand het model op uw omslag &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) en [&#x200B; het publiceren van uw model &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 
 >[!CAUTION]
 >
 >Als u meerdere fragmenten waarnaar wordt verwezen, wilt opvragen, is het niet aan te raden dat de verschillende fragmentmodellen veldnamen met dezelfde naam hebben, maar verschillende typen.
 >
->Voor verdere details zie [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Beperkingen ](/help/headless/graphql-api/content-fragments.md#limitations)
+>Voor verdere details zie [&#x200B; AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Beperkingen &#x200B;](/help/headless/graphql-api/content-fragments.md#limitations)
 
 >[!NOTE]
 >
 >Als u een model met deze nieuwe redacteur creeert zou u deze redacteur voor dat model altijd moeten gebruiken.
 >
->Als u dan het model met de [ originele modelredacteur ](/help/assets/content-fragments/content-fragments-models.md) opent, zult u het bericht zien:
+>Als u dan het model met de [&#x200B; originele modelredacteur &#x200B;](/help/assets/content-fragments/content-fragments-models.md) opent, zult u het bericht zien:
 >
 >* &quot;This model has a custom UI Schema configured. De volgorde van velden die in deze interface worden weergegeven, komt mogelijk niet overeen met het UI-schema. Als u de velden wilt weergeven die zijn uitgelijnd met het UI-schema, moet u overschakelen naar de nieuwe Inhoudsfragmenteditor.&quot;
 
@@ -40,22 +40,22 @@ Het model van het Fragment van de Inhoud bepaalt effectief de structuur van de r
 >
 >Het bewerken van een model dat al wordt gebruikt door bestaande inhoudsfragmenten kan van invloed zijn op die afhankelijke fragmenten.
 
-1. In de Console van het Fragment van de Inhoud, selecteer het paneel voor [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console) en navigeer aan de omslag die uw model van het Fragment van de Inhoud houdt.
+1. In de Console van het Fragment van de Inhoud, selecteer het paneel voor [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console) en navigeer aan de omslag die uw model van het Fragment van de Inhoud houdt.
 
    >[!NOTE]
    >
-   >U kunt een model ook direct openen na [ creërend het ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
+   >U kunt een model ook direct openen na [&#x200B; creërend het &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
 
 1. Open het vereiste model voor **uitgeven**; gebruik of één van de snelle actieverbindingen, of selecteer het model en toen de actie van de toolbar.
 
 
-   ![ Eigenschappen ](assets/cf-cfmodels-empty-model.png)
+   ![&#x200B; Eigenschappen &#x200B;](assets/cf-cfmodels-empty-model.png)
 
    Zodra open de modelredacteur toont:
 
    * boven:
       * **Begin** pictogram
-      * optie om tussen [ origineel ](/help/assets/content-fragments/content-fragments-models.md) en nieuwe redacteur van een knevel te voorzien
+      * optie om tussen [&#x200B; origineel &#x200B;](/help/assets/content-fragments/content-fragments-models.md) en nieuwe redacteur van een knevel te voorzien
       * **annuleert**
       * **sparen**
 
@@ -82,23 +82,23 @@ Het model van het Fragment van de Inhoud bepaalt effectief de structuur van de r
 
    * U kunt de positie van een veld wijzigen door de stipvorming links van het veldvak te gebruiken:
 
-     ![ gebied van de Beweging ](assets/cf-cfmodels-move-field-icon.png)
+     ![&#x200B; gebied van de Beweging &#x200B;](assets/cf-cfmodels-move-field-icon.png)
 
    * Zodra een gebied aan het model (en wordt geselecteerd) is toegevoegd, toont het juiste paneel de **Eigenschappen** die voor dat bepaalde gegevenstype kunnen worden bepaald. Hier kunt u bepalen wat voor specifiek wordt vereist
 veld.
 
-      * Vele eigenschappen zijn zelf-verklarend, voor extra details zie [ Eigenschappen (de Types van Gegevens) ](#properties).
+      * Vele eigenschappen zijn zelf-verklarend, voor extra details zie [&#x200B; Eigenschappen (de Types van Gegevens) &#x200B;](#properties).
       * Het typen a **Etiket van het Gebied** auto-voltooit de **Naam van het Bezit** - als leeg, en het kan achteraf manueel worden bijgewerkt.
 
         >[!CAUTION]
         >
-        >Wanneer manueel het bijwerken van de naam van het bezit **** voor een gegevenstype, moeten de namen *slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
+        >Wanneer manueel het bijwerken van de naam van het bezit **&#x200B;**&#x200B;voor een gegevenstype, moeten de namen *slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
         >
         >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
      Bijvoorbeeld:
 
-     ![ eigenschappen van het Gebied ](assets/cf-cfmodels-field-properties.png)
+     ![&#x200B; eigenschappen van het Gebied &#x200B;](assets/cf-cfmodels-field-properties.png)
 
      >[!NOTE]
      >
@@ -108,7 +108,7 @@ veld.
 
    Selecteer het prullenbakpictogram voor het desbetreffende veld in het middelste deelvenster.
 
-   ![ verwijder ](assets/cf-cfmodels-remove-icon.png)
+   ![&#x200B; verwijder &#x200B;](assets/cf-cfmodels-remove-icon.png)
 
 1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, zoals vereist.
 
@@ -130,7 +130,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
   >
   >Of het tekstgebied Rijke Tekst, Onbewerkte Tekst, of Markting is, wordt bepaald in het model door het bezit **StandaardType**.
   >
-  >Dit formaat kan niet van de [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) worden veranderd, maar slechts van het Model.
+  >Dit formaat kan niet van de [&#x200B; redacteur van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md) worden veranderd, maar slechts van het Model.
 
 * **Aantal**
    * Een numeriek veld toevoegen
@@ -150,7 +150,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
 
 * **Verwijzing van het Fragment**
-   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
+   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [&#x200B; genestelde inhoud &#x200B;](#using-references-to-form-nested-content) tot stand te brengen
    * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
       * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
       * Een nieuw inhoudsfragment maken op basis van het juiste model
@@ -169,7 +169,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
   -->
 
 * **Verwijzing van de Inhoud**
-   * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
+   * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [&#x200B; te creëren genestelde inhoud &#x200B;](#using-references-to-form-nested-content)
    * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
    * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
    * De verwijzing geeft het pad naar de resource waarnaar wordt verwezen aan, bijvoorbeeld `/content/dam/path/to/resource`
@@ -208,7 +208,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **de Naam van het Bezit**
 
-  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, moeten de namen **** *slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
+  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, moeten de namen **&#x200B;**&#x200B;*slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
 
   >[!CAUTION]
   >
@@ -216,13 +216,13 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **geeft terug als**
 
-  De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken. Wanneer **Veelvoudig Gebied** wordt gebruikt kunt u het minimum en maximumaantal punten bepalen - zie [ Bevestiging ](#validation) voor verdere details.
+  De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken. Wanneer **Veelvoudig Gebied** wordt gebruikt kunt u het minimum en maximumaantal punten bepalen - zie [&#x200B; Bevestiging &#x200B;](#validation) voor verdere details.
 
 * **Etiket van het Gebied**
 Het ingaan van het Etiket van het a **Gebied** autogenerate a **Naam van het Bezit**, die dan manueel kan worden bijgewerkt indien nodig.
 
 * **Bevestiging**
-De fundamentele bevestiging is beschikbaar door mechanismen zoals het **Vereiste** bezit. Sommige gegevenstypen hebben extra validatievelden. Zie [ Bevestiging ](#validation) voor verdere details.
+De fundamentele bevestiging is beschikbaar door mechanismen zoals het **Vereiste** bezit. Sommige gegevenstypen hebben extra validatievelden. Zie [&#x200B; Bevestiging &#x200B;](#validation) voor verdere details.
 
 * Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
 
@@ -239,7 +239,7 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
   Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
 
-  Bijvoorbeeld, het 1} gebied van de a **Enige lijntekst {in het Model van het Fragment van de Inhoud kan niet de waarde** in twee afhankelijke Fragmenten van de Inhoud hebben. `Country``Japan` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
+  Bijvoorbeeld, het 1&rbrace; gebied van de a **Enige lijntekst &lbrace;in het Model van het Fragment van de Inhoud kan niet de waarde** in twee afhankelijke Fragmenten van de Inhoud hebben. `Country` `Japan` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
 
   >[!NOTE]
   >
@@ -281,7 +281,7 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
    * **Min Aantal Punten**
    * **Max Aantal Punten**
 
-  Deze worden bevestigd in de [ Redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md).
+  Deze worden bevestigd in de [&#x200B; Redacteur van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Referenties gebruiken om geneste inhoud te vormen {#using-references-to-form-nested-content}
 
@@ -292,14 +292,14 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
    * Verstrekt door het **gegevenstype van de Verwijzing van de Inhoud**
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
-* [ Verwijzing van het Fragment ](#fragment-reference-nested-fragments) (Geneste Fragmenten)
+* [&#x200B; Verwijzing van het Fragment &#x200B;](#fragment-reference-nested-fragments) (Geneste Fragmenten)
    * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
    * Verstrekt door het **gegevenstype van de Verwijzing van het Fragment**
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
 
      >[!NOTE]
      >
-     >Deze methode is van bijzonder belang wanneer u [ Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) gebruikt.
+     >Deze methode is van bijzonder belang wanneer u [&#x200B; Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL &#x200B;](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) gebruikt.
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
 <!--
@@ -322,7 +322,7 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 >
 >Als u meerdere fragmenten waarnaar wordt verwezen, wilt opvragen, is het niet aan te raden dat de verschillende fragmentmodellen veldnamen met dezelfde naam hebben, maar verschillende typen.
 >
->Voor verdere details zie [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Beperkingen ](/help/headless/graphql-api/content-fragments.md#limitations)
+>Voor verdere details zie [&#x200B; AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Beperkingen &#x200B;](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Content Reference {#content-reference}
 
@@ -336,7 +336,7 @@ Naast de standaardeigenschappen kunt u opgeven:
   >
   >Dit is verplicht als u afbeeldingen in dit veld rechtstreeks wilt uploaden en ernaar wilt verwijzen wanneer u de Content Fragment-editor gebruikt.
   >
-  >Zie [ de Beelden van de Verwijzing ](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor verdere details.
+  >Zie [&#x200B; de Beelden van de Verwijzing &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor verdere details.
 
 * De inhoudstypen waarnaar kan worden verwezen
 
@@ -344,7 +344,7 @@ Naast de standaardeigenschappen kunt u opgeven:
   >
   >Deze moeten **Beeld** omvatten als u direct beelden op dit gebied wilt uploaden en van verwijzingen voorzien wanneer het gebruiken van de redacteur van het Fragment van de Inhoud.
   >
-  >Zie [ de Beelden van de Verwijzing ](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor verdere details.
+  >Zie [&#x200B; de Beelden van de Verwijzing &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor verdere details.
 
 * Beperkingen voor bestandsgrootten
 * Als naar een afbeelding wordt verwezen:
@@ -352,11 +352,11 @@ Naast de standaardeigenschappen kunt u opgeven:
    * Miniatuur tonen
    * Hoogte- en breedtebeperkingen voor afbeeldingen
 
-![ Verwijzing van de Inhoud ](assets/cf-cfmodels-content-reference.png)
+![&#x200B; Verwijzing van de Inhoud &#x200B;](assets/cf-cfmodels-content-reference.png)
 
 ### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
-Het **gegevenstype van de Verwijzing van het 0} Fragment {kan één, of meer, de Fragmenten van de Inhoud van verwijzingen voorzien.** Deze functie is met name van belang wanneer u inhoud ophaalt die u in uw app wilt gebruiken, aangezien u gestructureerde gegevens met meerdere lagen kunt ophalen.
+Het **gegevenstype van de Verwijzing van het 0&rbrace; Fragment &lbrace;kan één, of meer, de Fragmenten van de Inhoud van verwijzingen voorzien.** Deze functie is met name van belang wanneer u inhoud ophaalt die u in uw app wilt gebruiken, aangezien u gestructureerde gegevens met meerdere lagen kunt ophalen.
 
 Bijvoorbeeld:
 
@@ -379,7 +379,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->De Verwijzingen van het fragment zijn van bijzonder belang voor [ Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+>De Verwijzingen van het fragment zijn van bijzonder belang voor [&#x200B; Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL &#x200B;](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Naast de standaardeigenschappen kunt u definiëren:
 
@@ -401,7 +401,7 @@ Hiermee geeft u een hoofdpad op of vertegenwoordigt u dit voor alle fragmenten w
 
    * **fragmentreferencecomposite** - staat de fragmentauteur toe om een samenstelling te bouwen, door veelvoudige fragmenten te selecteren
 
-  ![ Verwijzing van het Fragment ](assets/cf-cfmodels-fragment-reference.png)
+  ![&#x200B; Verwijzing van het Fragment &#x200B;](assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >

@@ -30,18 +30,18 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 
 1. Lokale ontwikkelomgeving
 
-De stappen en de schermafbeeldingen van het leerprogramma worden uitgevoerd gebruikend **CRXDE Lite**. IDEs kan ook worden gebruikt om het leerprogramma te voltooien. Meer informatie bij het gebruiken van winde om [ met AEM te ontwikkelen kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) worden gevonden.
+De stappen en de schermafbeeldingen van het leerprogramma worden uitgevoerd gebruikend **CRXDE Lite**. IDEs kan ook worden gebruikt om het leerprogramma te voltooien. Meer informatie bij het gebruiken van winde om [&#x200B; met AEM te ontwikkelen kan hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) worden gevonden.
 
 
 ## Projectinstelling {#project-setup}
 
-De broncode van een Screens-project wordt doorgaans beheerd als een Maven-project met meerdere modules. Om het leerprogramma te versnellen, werd een project pre-geproduceerd gebruikend [ Archetype 13 van het Project van AEM ](https://github.com/adobe/aem-project-archetype). Zie [ Opstelling van het Project ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) voor meer details bij het creëren van een project met Maven het Archetype van het Project van AEM.
+De broncode van een Screens-project wordt doorgaans beheerd als een Maven-project met meerdere modules. Om het leerprogramma te versnellen, werd een project pre-geproduceerd gebruikend [&#x200B; Archetype 13 van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype). Zie [&#x200B; Opstelling van het Project &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) voor meer details bij het creëren van een project met Maven het Archetype van het Project van AEM.
 
-1. Download en installeer de volgende pakketten gebruikend [ Manager van het Pakket van CRX ](http://localhost:4502/crx/packmgr/index.jsp):
+1. Download en installeer de volgende pakketten gebruikend [&#x200B; Manager van het Pakket van CRX &#x200B;](http://localhost:4502/crx/packmgr/index.jsp):
 
 [Bestand ophalen](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
 
-   [ krijgt Dossier ](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
+   [&#x200B; krijgt Dossier &#x200B;](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
    **naar keuze** als het werken met Verduistering of een andere winde het hieronder bronpakket downloadt. Implementeer het project in een lokale AEM-instantie met de opdracht Maven:
 
    **`mvn -PautoInstallPackage clean install`**
@@ -50,12 +50,12 @@ De broncode van een Screens-project wordt doorgaans beheerd als een Maven-projec
 
 [Bestand ophalen](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
 
-1. In [ de Manager van het Pakket van CRX ](http://localhost:4502/crx/packmgr/index.jsp), verifieer dat de volgende twee pakketten geïnstalleerd zijn:
+1. In [&#x200B; de Manager van het Pakket van CRX &#x200B;](http://localhost:4502/crx/packmgr/index.jsp), verifieer dat de volgende twee pakketten geïnstalleerd zijn:
 
    1. **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**
    1. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**
 
-   ![ Screens Wij.Retail de pakketten van de Looppas Ui.Apps en Ui.Content die via de Manager van het Pakket van CRX worden geïnstalleerd ](assets/crx-packages.png)
+   ![&#x200B; Screens Wij.Retail de pakketten van de Looppas Ui.Apps en Ui.Content die via de Manager van het Pakket van CRX worden geïnstalleerd &#x200B;](assets/crx-packages.png)
 
    Screens Web.Retail Run UI.Apps en Ui.Content pakketten geïnstalleerd via CRX Package Manager
 
@@ -67,7 +67,7 @@ De broncode van een Screens-project wordt doorgaans beheerd als een Maven-projec
    >
    >In deze zelfstudie wordt geen Java™-code geschreven. Als complexere bedrijfslogica nodig is, kan back-end Java™ worden gemaakt en geïmplementeerd met de Core Java™-bundel.
 
-   ![ Vertegenwoordiging van de code ui.apps in CRXDE Lite ](/help/screens-cloud/developing/assets/uipps-contents.png)
+   ![&#x200B; Vertegenwoordiging van de code ui.apps in CRXDE Lite &#x200B;](/help/screens-cloud/developing/assets/uipps-contents.png)
 
    Weergave van de code ui.apps in CRXDE Lite
 
@@ -85,11 +85,11 @@ De broncode van een Screens-project wordt doorgaans beheerd als een Maven-projec
 
    Kies AEM Global Navigation > Click the Screens the icon. Verifieer het Web.Retail Project van de Looppas kan worden gezien.
 
-   ![ wij-detailul-looppas-starter ](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
+   ![&#x200B; wij-detailul-looppas-starter &#x200B;](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
 
 ## De Hello World-component maken {#hello-world-cmp}
 
-De component Hello World is een eenvoudige component waarmee een gebruiker een bericht kan invoeren dat op het scherm moet worden weergegeven. De component is gebaseerd op het [ Malplaatje van de Component van AEM Screens: https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template).
+De component Hello World is een eenvoudige component waarmee een gebruiker een bericht kan invoeren dat op het scherm moet worden weergegeven. De component is gebaseerd op het [&#x200B; Malplaatje van de Component van AEM Screens: https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template).
 
 AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar voor traditionele componenten van Plaatsen WCM zijn.
 
@@ -107,7 +107,7 @@ AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar vo
        componentGroup="We.Retail Run - Content"
    ```
 
-   ![ Eigenschappen voor /apps/weretail-run/components/content/helloworld ](/help/screens-cloud/developing/assets/2018-04-28_at_4_23pm.png)
+   ![&#x200B; Eigenschappen voor /apps/weretail-run/components/content/helloworld &#x200B;](/help/screens-cloud/developing/assets/2018-04-28_at_4_23pm.png)
 
    Eigenschappen voor /apps/weretail-run/components/content/helloworld
 
@@ -131,7 +131,7 @@ AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar vo
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   De componenten van Screens vereisen twee verschillende teruggaven afhankelijk van welke [ auteurswijze ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) wordt gebruikt:
+   De componenten van Screens vereisen twee verschillende teruggaven afhankelijk van welke [&#x200B; auteurswijze &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) wordt gebruikt:
 
    1. **Productie**: Voorproef of publiceer wijze (wcmmode=disabled)
    1. **geeft** uit: gebruikt voor alle andere auteurswijzen, namelijk uitgeven, ontwerp, steigers, ontwikkelaar...
@@ -157,7 +157,7 @@ AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar vo
 
    De component rendert een `div` - en een `h1` -tag met tekst. `${properties.message}` is een deel van het HTML-script dat de inhoud van een JCR-eigenschap met de naam `message` uitvoert. Later wordt een dialoogvenster gemaakt waarin een gebruiker een waarde voor de eigenschapstekst `message` kan invoeren.
 
-   Merk ook op dat BEM-notatie (Block Element Modifier) wordt gebruikt met de component. BEM is een CSS-coderingsconventie die het gemakkelijker maakt om herbruikbare componenten te maken. BEM is de aantekening die door [ wordt gebruikt de Componenten van de Kern van AEM ](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
+   Merk ook op dat BEM-notatie (Block Element Modifier) wordt gebruikt met de component. BEM is een CSS-coderingsconventie die het gemakkelijker maakt om herbruikbare componenten te maken. BEM is de aantekening die door [&#x200B; wordt gebruikt de Componenten van de Kern van AEM &#x200B;](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. Een bestand maken onder de naam `/apps/weretail-run/components/content/helloworld` `edit.html.`
 
@@ -195,7 +195,7 @@ AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar vo
    1. Het dialoogvenster kopiëren van: `/libs/screens/core/components/content/image/cq:dialog`
    1. Het dialoogvenster onder plakken `/apps/weretail-run/components/content/helloworld`
 
-   ![ exemplaar-beeld-dialoog ](/help/screens-cloud/developing/assets/copy-image-dialog.gif)
+   ![&#x200B; exemplaar-beeld-dialoog &#x200B;](/help/screens-cloud/developing/assets/copy-image-dialog.gif)
 
 1. **Update de dialoog van de Wereld van Hello om een lusje voor bericht te omvatten.**
 
@@ -259,7 +259,7 @@ AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar vo
 
    De waarde `textfield` voor het bericht wordt opgeslagen naar een eigenschap met de naam `message` en de waarde `numberfield` voor de duur wordt opgeslagen naar een eigenschap met de naam `duration` . In `/apps/weretail-run/components/content/helloworld/production.html` door HTML wordt naar deze twee eigenschappen verwezen als `${properties.message}` en `${properties.duration}` .
 
-   ![ de Wereld van Hello - voltooide dialoogdoos ](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
+   ![&#x200B; de Wereld van Hello - voltooide dialoogdoos &#x200B;](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
    Hello World - dialoogvenster voltooid
 
@@ -273,11 +273,11 @@ AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in d
 
    Onder `/apps/weretail-run/components/content/helloworld` maakt u een map met de naam `clientlibs` .
 
-   ![ 2018-04-30_at_1046am ](/help/screens-cloud/developing/assets/2018-04-30_at_1046am.png)
+   ![&#x200B; 2018-04-30_at_1046am &#x200B;](/help/screens-cloud/developing/assets/2018-04-30_at_1046am.png)
 
 1. Onder de map `clientlibs` maakt u een knooppunt met de naam `shared` of type `cq:ClientLibraryFolder.` .
 
-   ![ 2018-04-30_at_1115am ](/help/screens-cloud/developing/assets/2018-04-30_at_1115am.png)
+   ![&#x200B; 2018-04-30_at_1115am &#x200B;](/help/screens-cloud/developing/assets/2018-04-30_at_1115am.png)
 
 1. Voeg de volgende eigenschappen toe aan de gedeelde clientbibliotheek:
 
@@ -285,7 +285,7 @@ AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in d
 
    * `categories`| String [] | `cq.screens.components`
 
-   ![ Eigenschappen voor /apps/weretail-run/components/content/helloworld/clientlibs/shared ](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)
+   ![&#x200B; Eigenschappen voor /apps/weretail-run/components/content/helloworld/clientlibs/shared &#x200B;](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)
 
    Eigenschappen voor /apps/weretail-run/components/content/helloworld/clientlibs/shared
 
@@ -305,9 +305,9 @@ AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in d
 
 1. Maak een map met de naam `css` onder de map `shared` . Voeg een bestand met de naam `style.less` toe onder de map `css` . De structuur van de clientbibliotheken moet er nu als volgt uitzien:
 
-   ![ 2018-04-30_at_3_11pm ](/help/screens-cloud/developing/assets/2018-04-30_at_3_11pm.png)
+   ![&#x200B; 2018-04-30_at_3_11pm &#x200B;](/help/screens-cloud/developing/assets/2018-04-30_at_3_11pm.png)
 
-   In plaats van CSS rechtstreeks te schrijven, gebruikt deze zelfstudie LESS. [ LESS ](https://lesscss.org/) is populaire CSS pre-compiler die CSS variabelen, mixins, en functies steunt. AEM-clientbibliotheken bieden native ondersteuning voor LESS-compilatie. Sassa&#39;s of andere voorcompilers kunnen worden gebruikt, maar moeten buiten AEM worden samengesteld.
+   In plaats van CSS rechtstreeks te schrijven, gebruikt deze zelfstudie LESS. [&#x200B; LESS &#x200B;](https://lesscss.org/) is populaire CSS pre-compiler die CSS variabelen, mixins, en functies steunt. AEM-clientbibliotheken bieden native ondersteuning voor LESS-compilatie. Sassa&#39;s of andere voorcompilers kunnen worden gebruikt, maar moeten buiten AEM worden samengesteld.
 
 1. Vul `/apps/weretail-run/components/content/helloworld/clientlibs/shared/css/styles.less` met het volgende:
 
@@ -331,7 +331,7 @@ AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in d
 
 1. Kopieer en plak de clientbibliotheekmap van `shared` om een clientbibliotheek met de naam `production` te maken.
 
-   ![ Kopieer de gedeelde cliëntbibliotheek om een bibliotheek van de productiecliënt tot stand te brengen ](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![&#x200B; Kopieer de gedeelde cliëntbibliotheek om een bibliotheek van de productiecliënt tot stand te brengen &#x200B;](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Kopieer de gedeelde clientbibliotheek om een productieclientbibliotheek te maken.
 
@@ -339,7 +339,7 @@ AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in d
 
    Zo zorgt u ervoor dat de stijlen alleen worden geladen in de modus Voorbeeld/productie.
 
-   ![ Eigenschappen voor /apps/weretail-run/components/content/helloworld/clientlibs/production ](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
+   ![&#x200B; Eigenschappen voor /apps/weretail-run/components/content/helloworld/clientlibs/production &#x200B;](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
 
    Eigenschappen voor /apps/weretail-run/components/content/helloworld/clientlibs/production
 
@@ -378,7 +378,7 @@ Een derde clientbibliotheekcategorie: `cq.screens.components.edit` kan worden ge
 
 ## Een ontwerppagina maken {#design-page}
 
-AEM Screens gebruikt [ statische Malplaatjes van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) en [ configuraties van het Ontwerp ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) voor globale veranderingen. De configuraties van het ontwerp worden vaak gebruikt om toegestane componenten voor Parsys op een kanaal te vormen. U kunt deze configuraties het beste op een toepassingsspecifieke manier opslaan.
+AEM Screens gebruikt [&#x200B; statische Malplaatjes van de Pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) en [&#x200B; configuraties van het Ontwerp &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) voor globale veranderingen. De configuraties van het ontwerp worden vaak gebruikt om toegestane componenten voor Parsys op een kanaal te vormen. U kunt deze configuraties het beste op een toepassingsspecifieke manier opslaan.
 
 Een Web.Retail pagina van het Ontwerp van de Looppas wordt gecreeerd hieronder die alle configuraties specifiek voor het Web.Retail project van de Looppas opslaat.
 
@@ -392,7 +392,7 @@ Een Web.Retail pagina van het Ontwerp van de Looppas wordt gecreeerd hieronder d
    | sling :resourceType | String | wcm/core/components/ontwerper |
    | cq:doctype | String | html_5 |
 
-   ![ Pagina van het Ontwerp bij /apps/settings/wcm/designs/wij-retail-run ](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
+   ![&#x200B; Pagina van het Ontwerp bij /apps/settings/wcm/designs/wij-retail-run &#x200B;](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
 
    Ontwerppagina op /apps/settings/wcm/designs/we-Retail-run
 
@@ -406,22 +406,22 @@ De Hello World-component is bedoeld voor gebruik op een Volgekanaal. Om de compo
 
    1. Kies **tot Entiteit** leiden
 
-   ![ 2018-04-30_at_5_18pm ](/help/screens-cloud/developing/assets/2018-04-30_at_5_18pm.png)
+   ![&#x200B; 2018-04-30_at_5_18pm &#x200B;](/help/screens-cloud/developing/assets/2018-04-30_at_5_18pm.png)
 
 1. In de wizard Maken:
 
-1. De Stap van het malplaatje - kies **Kanaal van de Reeks 0}**
+1. De Stap van het malplaatje - kies **Kanaal van de Reeks 0&rbrace;**
 
    1. Eigenschappenstap
 
    * Basis Lusje > Titel = **Onactief Kanaal**
    * Het Lusje van het kanaal > controle **maakt kanaal online**
 
-   ![ nutteloos-kanaal ](/help/screens-cloud/developing/assets/idle-channel.gif)
+   ![&#x200B; nutteloos-kanaal &#x200B;](/help/screens-cloud/developing/assets/idle-channel.gif)
 
 1. Open de pagina-eigenschappen voor het onactieve kanaal. Werk het gebied van het Ontwerp bij zodat richt het aan `/apps/settings/wcm/designs/we-retail-run,` de ontwerppagina die in de vorige sectie wordt gecreeerd.
 
-   ![ Ontwerp config /apps/settings/wcm/designs/wij-retail-run ](/help/screens-cloud/developing/assets/2018-05-07_at_1240pm.png)
+   ![&#x200B; Ontwerp config /apps/settings/wcm/designs/wij-retail-run &#x200B;](/help/screens-cloud/developing/assets/2018-05-07_at_1240pm.png)
 
    Ontwerpconfiguratie die wijst naar /apps/settings/wcm/designs/we-retail-run
 
@@ -433,15 +433,15 @@ De Hello World-component is bedoeld voor gebruik op een Volgekanaal. Om de compo
 
    1. Selecteer de **Screens** groep en **Wij.Retail looppas - de groep van de Inhoud**.
 
-   ![ 2018-04-30_at_5_43pm ](assets/2018-04-30_at_5_43pm.png)
+   ![&#x200B; 2018-04-30_at_5_43pm &#x200B;](assets/2018-04-30_at_5_43pm.png)
 
 1. Schakelaar de paginamodus aan **geeft** uit. De component Hello World kan nu aan de pagina worden toegevoegd en met andere componenten van het opeenvolgingskanaal worden gecombineerd.
 
-   ![ 2018-04-30_at_5_53pm ](assets/2018-04-30_at_5_53pm.png)
+   ![&#x200B; 2018-04-30_at_5_53pm &#x200B;](assets/2018-04-30_at_5_53pm.png)
 
 1. In **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par`, navigeer aan `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. De eigenschap `components` bevat nu `group:Screens` , `group:We.Retail Run - Content` .
 
-   ![ configuratie van het ontwerp onder /apps/settings/wcm/designs/wij-retail-run ](/help/screens-cloud/developing/assets/2018-05-07_at_1_14pm.png)
+   ![&#x200B; configuratie van het ontwerp onder /apps/settings/wcm/designs/wij-retail-run &#x200B;](/help/screens-cloud/developing/assets/2018-05-07_at_1_14pm.png)
 
    Ontwerpconfiguratie onder /apps/settings/wcm/designs/we-retail-run
 

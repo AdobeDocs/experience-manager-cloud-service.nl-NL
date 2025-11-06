@@ -30,11 +30,11 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 **om een configuratie CDN van de Pagina van Toewijzingen van het Domein uit te geven:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-1. In het linkerzijmenu, onder **Diensten**, klik ![ het netwerkpictogram van de Sociale Zaken ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.
-1. In de **lijst van Toewijzingen van het Domein**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan configuratie CDN u wilt bijwerken.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. In het linkerzijmenu, onder **Diensten**, klik ![&#x200B; het netwerkpictogram van de Sociale Zaken &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.
+1. In de **lijst van Toewijzingen van het Domein**, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan configuratie CDN u wilt bijwerken.
 
-1. Van het drop-down menu, geeft de klik **** uit.
+1. Van het drop-down menu, geeft de klik **&#x200B;**&#x200B;uit.
 
 1. In **geef CDN configuratie** dialoogdoos uit, plaats één of meerdere opties in de respectieve drop-down lijst.
 
@@ -47,19 +47,19 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 ## Een CDN-configuratie bewerken via de pagina Omgevingen
 
-De stappen voor het uitgeven van een configuratie CDN van de **pagina van Milieu&#39;s** zijn bijna het zelfde als wanneer [ het uitgeven van een configuratie CDN van de pagina van Toewijzingen van het Domein ](#edit-cdn), maar het ingangspunt verschilt.
+De stappen voor het uitgeven van een configuratie CDN van de **pagina van Milieu&#39;s** zijn bijna het zelfde als wanneer [&#x200B; het uitgeven van een configuratie CDN van de pagina van Toewijzingen van het Domein &#x200B;](#edit-cdn), maar het ingangspunt verschilt.
 
 **om een configuratie CDN van de pagina van Milieu&#39;s uit te geven:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. In het linkerzijmenu, klik ![ het pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**.
+1. In het linkerzijmenu, klik ![&#x200B; het pictogram van Gegevens &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**.
 
 1. Voor de **pagina van Milieu&#39;s**, selecteer een milieu van belang.
 
-1. Voor de pagina van milieudetails, in de Mappingen van het Domein groeperen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dat aan de configuratie beantwoordt CDN u wilt uitgeven.
+1. Voor de pagina van milieudetails, in de Mappingen van het Domein groeperen, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dat aan de configuratie beantwoordt CDN u wilt uitgeven.
 
-1. In pop-up menu, geeft de klik **** uit.
+1. In pop-up menu, geeft de klik **&#x200B;**&#x200B;uit.
 
 1. In **geef de dialoogdoos van de Toewijzing van het Domein uit**, plaats één of meerdere opties in de respectieve drop-down lijst.
 
@@ -76,11 +76,11 @@ Alvorens een douanedomein verkeer kan dienen, moet u DNS configuratie met uw DNS
 
 **om Go levende bereidheid te vormen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-1. In het linkerzijmenu, onder **Diensten**, klik ![ het netwerkpictogram van de Sociale Zaken ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. In het linkerzijmenu, onder **Diensten**, klik ![&#x200B; het netwerkpictogram van de Sociale Zaken &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.
 1. In de lijst van Toewijzingen van het Domein, klik **gaan levend** dichtbij het eind van een rij die aan CDN beantwoordt waarvan levende gereedheid van de go u wilt vormen.
 
-   ![ ga levende gereedheidsdialoogdoos ](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
+   ![&#x200B; ga levende gereedheidsdialoogdoos &#x200B;](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
 
 1. In **ga levende gereedheid** dialoogdoos, doe één van het volgende:
 
@@ -93,7 +93,7 @@ Alvorens een douanedomein verkeer kan dienen, moet u DNS configuratie met uw DNS
 
    Wacht op DNS propagatie; het kan verscheidene notulen aan een paar uren vergen.
 
-   Wanneer de kolom **[!UICONTROL Status]** in de tabel Domeintoewijzingen wordt bijgewerkt naar **[!UICONTROL Verified]** , is het aangepaste domein klaar voor gebruik. U kunt ![ moeten klikken verfrist pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) om de status bij te werken.
+   Wanneer de kolom **[!UICONTROL Status]** in de tabel Domeintoewijzingen wordt bijgewerkt naar **[!UICONTROL Verified]** , is het aangepaste domein klaar voor gebruik. U kunt ![&#x200B; moeten klikken verfrist pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) om de status bij te werken.
 
 ## Een CDN-configuratie verwijderen {#delete-cdn}
 
@@ -103,11 +103,11 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 **om een configuratie te schrappen CDN:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. In het linkerzijmenu, onder **Diensten**, klik ![ het netwerkpictogram van de Sociale Zaken ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.
+1. In het linkerzijmenu, onder **Diensten**, klik ![&#x200B; het netwerkpictogram van de Sociale Zaken &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.
 
-1. In de lijst van Toewijzingen van het Domein, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij die aan CDN beantwoordt u wilt verwijderen, dan **Schrapping** klikken.
+1. In de lijst van Toewijzingen van het Domein, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij die aan CDN beantwoordt u wilt verwijderen, dan **Schrapping** klikken.
 
 1. In de **Toewijzing van het Domein van de Schrapping** dialoogdoos, klik **Schrapping**.
 
@@ -116,17 +116,17 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 ## Een CDN-configuratie verwijderen van de pagina Environment
 
-De stappen voor het schrappen van een configuratie CDN van de **pagina van Milieu&#39;s** zijn bijna het zelfde als wanneer [ het schrappen van een configuratie CDN van de pagina van Toewijzingen van het Domein ](#edit-cdn), maar het ingangspunt verschilt.
+De stappen voor het schrappen van een configuratie CDN van de **pagina van Milieu&#39;s** zijn bijna het zelfde als wanneer [&#x200B; het schrappen van een configuratie CDN van de pagina van Toewijzingen van het Domein &#x200B;](#edit-cdn), maar het ingangspunt verschilt.
 
 **om een configuratie CDN van de pagina van Milieu&#39;s te schrappen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. In het linkerzijmenu, klik ![ het pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**.
+1. In het linkerzijmenu, klik ![&#x200B; het pictogram van Gegevens &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**.
 
 1. Voor de **pagina van Milieu&#39;s**, selecteer een milieu van belang.
 
-1. Op de pagina van milieudetails, in de **Toewijzingen van het Domein** groeperen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dat aan de configuratie CDN beantwoordt u wilt verwijderen, dan **Schrapping** klikken.
+1. Op de pagina van milieudetails, in de **Toewijzingen van het Domein** groeperen, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dat aan de configuratie CDN beantwoordt u wilt verwijderen, dan **Schrapping** klikken.
 
 1. In de **Toewijzing van het Domein van de Schrapping** dialoogdoos, klik **Schrapping**.
 

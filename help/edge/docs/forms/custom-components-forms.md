@@ -15,19 +15,19 @@ ht-degree: 1%
 
 # Aangepaste componenten maken
 
-Edge Delivery Services voor AEM Forms staat u toe om de [ inheemse de vormcomponenten van HTML ](/help/edge/docs/forms/form-components.md) aan te passen en gebruikersvriendelijke en interactieve vormen tot stand te brengen. Het laat u toe om de vormcomponenten met vooraf bepaalde prijsverhoging te wijzigen, zoals die in [ wordt verklaard het Stijlen van vormgebieden ](/help/edge/docs/forms/style-theme-forms.md) gebruikend douane CSS (Cascading Style Sheets) en douanecode voor het versieren van de component, zo verbeterend de verschijning van vormgebieden binnen een Aangepast Blok van Forms.
+Edge Delivery Services voor AEM Forms staat u toe om de [&#x200B; inheemse de vormcomponenten van HTML &#x200B;](/help/edge/docs/forms/form-components.md) aan te passen en gebruikersvriendelijke en interactieve vormen tot stand te brengen. Het laat u toe om de vormcomponenten met vooraf bepaalde prijsverhoging te wijzigen, zoals die in [&#x200B; wordt verklaard het Stijlen van vormgebieden &#x200B;](/help/edge/docs/forms/style-theme-forms.md) gebruikend douane CSS (Cascading Style Sheets) en douanecode voor het versieren van de component, zo verbeterend de verschijning van vormgebieden binnen een Aangepast Blok van Forms.
 
-![ de component van de Douane ](/help/edge/assets/custom-component-image.png)
+![&#x200B; de component van de Douane &#x200B;](/help/edge/assets/custom-component-image.png)
 
 In dit document worden de stappen beschreven waarmee u aangepaste componenten kunt maken door de native HTML-formuliercomponenten op te maken om de gebruikerservaring te verbeteren en de visuele aantrekkingskracht van het formulier te vergroten.
 
 Neem een voorbeeld van een `range` -component die de `Estimated trip cost` op een formulier weergeeft. De component `range` wordt weergegeven als een rechte lijn, zonder waarden als minimum, maximum of geselecteerde waarde weer te geven.
 
-![ Inheemse component van de Waaier ](/help/edge/assets/native-range-component.png)
+![&#x200B; Inheemse component van de Waaier &#x200B;](/help/edge/assets/native-range-component.png)
 
 Laten we beginnen met het aanpassen van het veld `range` om de minimale, maximale en geselecteerde waarden op de regel weer te geven door stijl toe te voegen met CSS en een aangepaste functie toe te voegen om een component te decoreren.
 
-![ de component van de Waaier van de Douane ](/help/edge/assets/custom-range-component.png)
+![&#x200B; de component van de Waaier van de Douane &#x200B;](/help/edge/assets/custom-range-component.png)
 
 Aan het einde van dit artikel leert u aangepaste componenten te maken door stijlen toe te voegen in het CSS-bestand en de aangepaste functie.
 
@@ -35,14 +35,14 @@ Aan het einde van dit artikel leert u aangepaste componenten te maken door stijl
 
 Voordat u een aangepaste component gaat maken, moet u:
 
-- Heb een basiskennis van [ inheemse componenten van HTML ](/help/edge/docs/forms/form-components.md).
-- Weet hoe te [ de gebieden van de stijlvorm die op gebiedstype worden gebaseerd CSS selecteurs gebruiken ](/help/edge/docs/forms/style-theme-forms.md)
+- Heb een basiskennis van [&#x200B; inheemse componenten van HTML &#x200B;](/help/edge/docs/forms/form-components.md).
+- Weet hoe te [&#x200B; de gebieden van de stijlvorm die op gebiedstype worden gebaseerd CSS selecteurs gebruiken &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 
 
 ## Een aangepaste component maken
 
 
-![ stappen om douanecomponent ](/help/edge/docs/forms/assets/steps-to-create-custom-component.png) te creëren
+![&#x200B; stappen om douanecomponent &#x200B;](/help/edge/docs/forms/assets/steps-to-create-custom-component.png) te creëren
 
 Laten we nu elke stap in detail begrijpen.
 
@@ -219,7 +219,7 @@ Stel de bijgewerkte `range.js`, `mapping.js` en `form.css` dossiers aan uw proje
 
 Geef een voorbeeld van het formulier weer met de nieuw geïmplementeerde functie die de component `range` opmaakt.
 
-![ de componentenvorm van de Douane ](/help/edge/assets/custom-componet-form.png)
+![&#x200B; de componentenvorm van de Douane &#x200B;](/help/edge/assets/custom-componet-form.png)
 
 De nieuwe opmaak voor de component `range` geeft de minimale, maximale en geselecteerde waarden op de regel weer door stijlen toe te voegen met CSS en een aangepaste functie die een decorator voor de component bevat.
 

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Inhoudsfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
 
-Er zijn verscheidene [ geavanceerde diensten ](#definition-of-advanced-services-that-need-configuration) met betrekking tot het teruggeven van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
+Er zijn verscheidene [&#x200B; geavanceerde diensten &#x200B;](#definition-of-advanced-services-that-need-configuration) met betrekking tot het teruggeven van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
 
-Dit wordt gedaan door de [ Dienst OSGi te vormen - de Configuratie van de Component van het Fragment van de Inhoud ](#osgi-service-content-fragment-component-configuration).
+Dit wordt gedaan door de [&#x200B; Dienst OSGi te vormen - de Configuratie van de Component van het Fragment van de Inhoud &#x200B;](#osgi-service-content-fragment-component-configuration).
 
 Deze informatie is vereist wanneer:
 
@@ -26,7 +26,7 @@ Adobe raadt u aan de Core Components (Basiscomponenten) te gebruiken.
 
 >[!CAUTION]
 >
->* **als u niet de [ geavanceerde hieronder beschreven diensten](#definition-of-advanced-services-that-need-configuration)** nodig hebt, kunt u deze configuratie negeren.
+>* **als u niet de [&#x200B; geavanceerde hieronder beschreven diensten](#definition-of-advanced-services-that-need-configuration)** nodig hebt, kunt u deze configuratie negeren.
 >
 >* **wanneer u uitbreidt of de uit-van-de-doos component(s)** gebruikt, wordt het niet geadviseerd om de configuratie te veranderen OSGi.
 >
@@ -55,11 +55,11 @@ De configuratie moet aan de OSGi dienst **Configuratie van de Component van het 
 
 >[!NOTE]
 >
->Zie [ Configuratie OSGi ](/help/implementing/deploying/overview.md#osgi-configuration) voor verdere details.
+>Zie [&#x200B; Configuratie OSGi &#x200B;](/help/implementing/deploying/overview.md#osgi-configuration) voor verdere details.
 
 Bijvoorbeeld:
 
-![ Configuratie van de Component van het Fragment van de Inhoud van de Configuratie OSGi ](assets/cf-component-configuration-osgi.png)
+![&#x200B; Configuratie van de Component van het Fragment van de Inhoud van de Configuratie OSGi &#x200B;](assets/cf-component-configuration-osgi.png)
 
 De configuratie OSGi is:
 

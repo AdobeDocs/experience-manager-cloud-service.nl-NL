@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Door tags toe te wijzen, kunt u inhoud indelen en ordenen. Tags kunnen worden geclassificeerd door een naamruimte en een taxonomie. Voor gedetailleerde informatie over het gebruik van tags:
 
-* Zie [ Gebruikend Markeringen ](/help/sites-cloud/authoring/sites-console/tags.md) voor informatie over het etiketteren van inhoud als inhoudauteur.
+* Zie [&#x200B; Gebruikend Markeringen &#x200B;](/help/sites-cloud/authoring/sites-console/tags.md) voor informatie over het etiketteren van inhoud als inhoudauteur.
 * Zie Tags beheren voor een beheerder. Het standpunt van de beheerder over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
 
 Dit artikel richt zich op het onderliggende kader dat het etiketteren in AEM steunt en hoe te om het als ontwikkelaar te gebruiken.
@@ -24,7 +24,7 @@ Dit artikel richt zich op het onderliggende kader dat het etiketteren in AEM ste
 
 U kunt als volgt inhoud labelen en de AEM-taginfrastructuur gebruiken:
 
-* De markering moet als knoop van type [`cq:Tag`](#cq-tag-node-type) onder de [ taxonomy wortelknoop ](#taxonomy-root-node) bestaan.
+* De markering moet als knoop van type [`cq:Tag`](#cq-tag-node-type) onder de [&#x200B; taxonomy wortelknoop &#x200B;](#taxonomy-root-node) bestaan.
 * In het knooppunt `NodeType` met gecodeerde inhoud moet de [`cq:Taggable`](#taggable-content-cq-taggable-mixin) -mix zijn opgenomen.
 * [`TagID`](#tagid) wordt toegevoegd aan de eigenschap [`cq:tags`](#cq-tags-property) van het inhoudsknooppunt en wordt omgezet in een knooppunt van het type [`cq:Tag`](#cq-tag-node-type) .
 
@@ -42,21 +42,21 @@ Het coderingskader beperkt auteurs en sitebezoekers ook tot het gebruik van alle
 
 * Het knooppunttype is `cq:Tag` .
 * De knooppuntnaam is een component van [`TagID`](#tagid).
-* [`TagID`](#tagid) omvat altijd a [ namespace ](#tag-namespace).
+* [`TagID`](#tagid) omvat altijd a [&#x200B; namespace &#x200B;](#tag-namespace).
 * De eigenschap `jcr:title` (de titel die in de UI moet worden weergegeven) is optioneel.
 * De eigenschap `jcr:description` is optioneel.
-* Wanneer het bevatten van kindknopen, wordt bedoeld als a [ containermarkering ](#container-tags).
-* De markering wordt opgeslagen in de bewaarplaats onder een basisweg genoemd de [ taxonomie wortelknoop ](#taxonomy-root-node).
+* Wanneer het bevatten van kindknopen, wordt bedoeld als a [&#x200B; containermarkering &#x200B;](#container-tags).
+* De markering wordt opgeslagen in de bewaarplaats onder een basisweg genoemd de [&#x200B; taxonomie wortelknoop &#x200B;](#taxonomy-root-node).
 
 ### TagID {#tagid}
 
 Een `TagID` identificeert een pad dat wordt omgezet naar een tagknooppunt in de opslagplaats.
 
-Typisch, is `TagID` een steno `TagID` die met namespace begint of het kan een absolute `TagID` zijn die van de [ taxonomy wortelknoop ](#taxonomy-root-node) begint.
+Typisch, is `TagID` een steno `TagID` die met namespace begint of het kan een absolute `TagID` zijn die van de [&#x200B; taxonomy wortelknoop &#x200B;](#taxonomy-root-node) begint.
 
 Wanneer inhoud wordt gelabeld en nog niet bestaat, wordt de eigenschap [`cq:tags`](#cq-tags-property) toegevoegd aan het inhoudsknooppunt en wordt de eigenschap `TagID` toegevoegd aan de arraywaarde van de eigenschap `String` .
 
-`TagID` bestaat uit a [ namespace ](#tag-namespace) die door lokaal `TagID` wordt gevolgd. [ de markeringen van de Container ](#container-tags) hebben subtags die een hiërarchische orde in de taxonomie vertegenwoordigen. Subtags kunnen worden gebruikt om naar labels te verwijzen zoals elke lokale `TagID` . Inhoud bijvoorbeeld labelen met `fruit` is toegestaan, zelfs als het een containertag met subtags betreft, zoals `fruit/apple` en `fruit/banana` .
+`TagID` bestaat uit a [&#x200B; namespace &#x200B;](#tag-namespace) die door lokaal `TagID` wordt gevolgd. [&#x200B; de markeringen van de Container &#x200B;](#container-tags) hebben subtags die een hiërarchische orde in de taxonomie vertegenwoordigen. Subtags kunnen worden gebruikt om naar labels te verwijzen zoals elke lokale `TagID` . Inhoud bijvoorbeeld labelen met `fruit` is toegestaan, zelfs als het een containertag met subtags betreft, zoals `fruit/apple` en `fruit/banana` .
 
 ### Taxonomy Root Node {#taxonomy-root-node}
 
@@ -68,7 +68,7 @@ In AEM is het basispad `/content/cq:tags` en het basisknooppunt is van het type 
 
 Met naamruimten kunt u items groeperen. Het meest gangbare gebruik-hoofdlettergebruik is het hebben van een naamruimte per site (bijvoorbeeld public versus internal) of per grotere toepassing (bijvoorbeeld Sites of Assets), maar naamruimten kunnen voor verschillende andere behoeften worden gebruikt. Naamruimten worden in de gebruikersinterface gebruikt om alleen de subset van tags (dat wil zeggen tags van een bepaalde naamruimte) weer te geven die van toepassing is op de huidige inhoud.
 
-De namespace van de markering is het eerste niveau in taxonomy subtree, die de knoop onmiddellijk onder de [ taxonomy wortelknoop ](#taxonomy-root-node) is. Een naamruimte is een knooppunt van het type `cq:Tag` waarvan het bovenliggende element geen knooppunttype `cq:Tag` is.
+De namespace van de markering is het eerste niveau in taxonomy subtree, die de knoop onmiddellijk onder de [&#x200B; taxonomy wortelknoop &#x200B;](#taxonomy-root-node) is. Een naamruimte is een knooppunt van het type `cq:Tag` waarvan het bovenliggende element geen knooppunttype `cq:Tag` is.
 
 Alle tags hebben een naamruimte. Wanneer geen naamruimte is opgegeven, wordt de tag toegewezen aan de standaardnaamruimte, namelijk `TagID` `default` , dat wil zeggen `/content/cq:tags/default` . In dergelijke gevallen wordt Titel standaard ingesteld op `Standard Tags` .
 
@@ -102,12 +102,12 @@ Wanneer de tag de optionele titeltekenreeks `jcr:title` bevat, is het mogelijk d
 
 Raadpleeg de volgende secties voor meer informatie:
 
-* [ de Markeringen in Verschillende Talen ](tagging-applications.md#tags-in-different-languages) beschrijven het gebruik van APIs als ontwikkelaar
+* [&#x200B; de Markeringen in Verschillende Talen &#x200B;](tagging-applications.md#tags-in-different-languages) beschrijven het gebruik van APIs als ontwikkelaar
 * Tags beheren in verschillende talen, die het gebruik van de tagconsole als beheerder beschrijven
 
 ### Toegangsbeheer {#access-control}
 
-De markeringen bestaan als knopen in de bewaarplaats onder de [ taxonomie wortelknoop ](#taxonomy-root-node). Het toestaan of ontkennen van auteurs en plaatsbezoekers om markeringen in een bepaalde namespace tot stand te brengen kan worden bereikt door aangewezen ACLs in de bewaarplaats te plaatsen.
+De markeringen bestaan als knopen in de bewaarplaats onder de [&#x200B; taxonomie wortelknoop &#x200B;](#taxonomy-root-node). Het toestaan of ontkennen van auteurs en plaatsbezoekers om markeringen in een bepaalde namespace tot stand te brengen kan worden bereikt door aangewezen ACLs in de bewaarplaats te plaatsen.
 
 Door het weigeren van leesmachtigingen voor bepaalde tags of naamruimten wordt de mogelijkheid ingesteld om codes toe te passen op specifieke inhoud.
 
@@ -119,7 +119,7 @@ Een gebruikelijke praktijk omvat:
 
 ## Tagable Content : cq :Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
-Voor toepassingsontwikkelaars om het etiketteren aan een inhoudstype vast te maken, moet de registratie van de knoop ([ CND ](https://jackrabbit.apache.org/jcr/node-type-notation.html)) `cq:Taggable` mengen of `cq:OwnerTaggable` mengen omvatten.
+Voor toepassingsontwikkelaars om het etiketteren aan een inhoudstype vast te maken, moet de registratie van de knoop ([&#x200B; CND &#x200B;](https://jackrabbit.apache.org/jcr/node-type-notation.html)) `cq:Taggable` mengen of `cq:OwnerTaggable` mengen omvatten.
 
 De `cq:OwnerTaggable` -mix, die overerft van `cq:Taggable` , geeft aan dat de inhoud kan worden geclassificeerd door de eigenaar/auteur. In AEM is het alleen een kenmerk van het knooppunt `cq:PageContent` . Het coderingsframework vereist de `cq:OwnerTaggable` -mix niet.
 
@@ -132,7 +132,7 @@ De `cq:OwnerTaggable` -mix, die overerft van `cq:Taggable` , geeft aan dat de in
 
 ### Node Type Notation (CND) {#node-type-notation-cnd}
 
-Node Type definities bestaan in de bewaarplaats als Cnd- dossiers. De aantekening CND wordt bepaald als deel van de [ documentatie JCR ](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Node Type definities bestaan in de bewaarplaats als Cnd- dossiers. De aantekening CND wordt bepaald als deel van de [&#x200B; documentatie JCR &#x200B;](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 De belangrijkste definities voor de in AEM opgenomen knooppunttypen zijn:
 

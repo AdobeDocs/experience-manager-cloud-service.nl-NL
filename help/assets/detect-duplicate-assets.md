@@ -18,7 +18,7 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Als een DAM-gebruiker een of meer middelen uploadt die al in de opslagplaats aanwezig zijn, detecteert [!DNL Experience Manager] de duplicatie en wordt de gebruiker hiervan op de hoogte gesteld. Dubbele detectie is standaard uitgeschakeld, omdat deze invloed kan hebben op de prestaties, afhankelijk van de grootte van de opslagplaats en het aantal geüploade middelen.
@@ -35,7 +35,7 @@ De functie inschakelen:
 
 1. Klik op **[!UICONTROL Save]**.
 
-   ![ Detector van de Duplicatie van Activa ](assets/asset-duplication-detector.png)
+   ![&#x200B; Detector van de Duplicatie van Activa &#x200B;](assets/asset-duplication-detector.png)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ De functie inschakelen:
 
 Zodra deze optie is ingeschakeld, stuurt Experience Manager meldingen van dubbele middelen naar Experience Manager Inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Op basis van de resultaten kunnen gebruikers ervoor kiezen de elementen te verwijderen.
 
-![ Inbox bericht voor dubbele activa ](assets/duplicate-detect-inbox-notification.png)
+![&#x200B; Inbox bericht voor dubbele activa &#x200B;](assets/duplicate-detect-inbox-notification.png)
 
 >[!NOTE]
 >

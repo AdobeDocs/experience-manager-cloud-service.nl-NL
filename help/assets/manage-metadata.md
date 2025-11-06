@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 [!DNL Adobe Experience Manager Assets] houdt metagegevens bij voor elk element. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid om metagegevens te extraheren uit bestanden die zijn geüpload naar [!DNL Experience Manager Assets] , kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
@@ -134,7 +134,7 @@ Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Er wo
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door [!DNL Experience Manager Assets] wordt gebruikt voor alle metagegevensbeheer. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen de XMP-standaard omdat deze een Rich Content-model biedt. Gebruikers van de XMP-standaard en van [!DNL Experience Manager Assets] hebben een krachtig platform waarop u kunt bouwen. Voor meer informatie, zie [ XMP ](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door [!DNL Experience Manager Assets] wordt gebruikt voor alle metagegevensbeheer. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen de XMP-standaard omdat deze een Rich Content-model biedt. Gebruikers van de XMP-standaard en van [!DNL Experience Manager Assets] hebben een krachtig platform waarop u kunt bouwen. Voor meer informatie, zie [&#x200B; XMP &#x200B;](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -154,7 +154,7 @@ Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling
 
 Een belangrijke beperking van Exif is dat een aantal populaire indelingen voor afbeeldingsbestanden, zoals BMP, GIF of PNG, dit niet ondersteunen.
 
-Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Om deze reden, [!DNL Experience Manager Assets] biedt afbeelding van eigenschappen Exif in [ gemeenschappelijke meta-gegevensschemata ](metadata-schemas.md) en in XMP aan.
+Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Om deze reden, [!DNL Experience Manager Assets] biedt afbeelding van eigenschappen Exif in [&#x200B; gemeenschappelijke meta-gegevensschemata &#x200B;](metadata-schemas.md) en in XMP aan.
 
 #### Overige metagegevens {#other-metadata}
 
@@ -166,7 +166,7 @@ Met Enterprise Manager Assets kunt u de metagegevens van meerdere elementen tege
 
 >[!NOTE]
 >
->De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk aan [ bulkupdate de meta-gegevens na het zoeken ](/help/assets/search-assets.md#metadata-updates).
+>De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk aan [&#x200B; bulkupdate de meta-gegevens na het zoeken &#x200B;](/help/assets/search-assets.md#metadata-updates).
 
 1. Navigeer naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
@@ -193,9 +193,9 @@ Met Enterprise Manager Assets kunt u de metagegevens van meerdere elementen tege
 
 ## Aangepaste metagegevens met verwerkingsprofiel {#metadata-compute-service}
 
-Assets als [!DNL Cloud Service] kan aangepaste metagegevens voor een element genereren met gebruik van services die zijn gebaseerd op de cloud. Configureer een verwerkingsprofiel om aangepaste metagegevens te genereren. Zie [ hoe te om verwerkingsprofiel ](/help/assets/asset-microservices-configure-and-use.md#use-profiles) te gebruiken.
+Assets als [!DNL Cloud Service] kan aangepaste metagegevens voor een element genereren met gebruik van services die zijn gebaseerd op de cloud. Configureer een verwerkingsprofiel om aangepaste metagegevens te genereren. Zie [&#x200B; hoe te om verwerkingsprofiel &#x200B;](/help/assets/asset-microservices-configure-and-use.md#use-profiles) te gebruiken.
 
-![ de vertoning van Meta-gegevens in verwerkingsprofiel ](assets/processing-profile-metadata.png)
+![&#x200B; de vertoning van Meta-gegevens in verwerkingsprofiel &#x200B;](assets/processing-profile-metadata.png)
 
 >[!TIP]
 >
@@ -233,14 +233,14 @@ De ondersteunde metagegevensschema&#39;s worden hieronder weergegeven.
 
 De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metagegevens. Als u dergelijke metagegevens gebruikt, kunnen andere toepassingen de metagegevens mogelijk niet gebruiken. Een andere toepassing voor het renderen van afbeeldingen heeft bijvoorbeeld wellicht geen toegang tot [!DNL Adobe Photoshop] -metagegevens. U kunt een workflowstap maken waarmee een toepassingsspecifieke eigenschap wordt gewijzigd in een standaardeigenschap.
 
-* ACDSee - Metagegevens die door het [!DNL ACDSee] programma worden beheerd. Zie [ www.acdsee.com/](https://www.acdsee.com/).
+* ACDSee - Metagegevens die door het [!DNL ACDSee] programma worden beheerd. Zie [&#x200B; www.acdsee.com/](https://www.acdsee.com/).
 * Album - [!DNL Adobe Photoshop Album] .
 * CQ - Wordt gebruikt door [!DNL Experience Manager Assets] .
 * DAM - Wordt gebruikt door [!DNL Experience Manager Assets] .
-* DEX - [ de Optimale ontdekkingsreiziger van de Beschrijving van SC ](https://www.optimasc.com/products/dex/index.html) is een inzameling van hulpmiddelen voor meta-gegevens en dossierbeheer voor de werkende systemen van Vensters.
-* CRS - [ Ruwe Adobe Photoshop Camera ](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* DEX - [&#x200B; de Optimale ontdekkingsreiziger van de Beschrijving van SC &#x200B;](https://www.optimasc.com/products/dex/index.html) is een inzameling van hulpmiddelen voor meta-gegevens en dossierbeheer voor de werkende systemen van Vensters.
+* CRS - [&#x200B; Ruwe Adobe Photoshop Camera &#x200B;](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom] .
-* MediaPro - [ iView MediaPro ](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
+* MediaPro - [&#x200B; iView MediaPro &#x200B;](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto en MP - Microsoft Photo.
 * PDF en PDF/X.
 * Photoshop en psAux - [!DNL Adobe Photoshop] .
@@ -249,7 +249,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 
 * CC - [!DNL Creative Commons] .
 * [!DNL XMPRights].
-* PLUS - [ het Verlenen van vergunningen van het Beeld Universele Systeem ](https://www.useplus.com).
+* PLUS - [&#x200B; het Verlenen van vergunningen van het Beeld Universele Systeem &#x200B;](https://www.useplus.com).
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL - PRISM Rights Language.
 * PUR - PRISM-gebruiksrechten.
@@ -300,4 +300,4 @@ Door workflows te maken die op metagegevens zijn gebaseerd, kunt u bepaalde proc
 >[!MORELIKETHIS]
 >
 >* [XMP-metadata](xmp-metadata.md)
->* [ om meta-gegevens uit te geven of toe te voegen ](meta-edit.md)
+>* [&#x200B; om meta-gegevens uit te geven of toe te voegen &#x200B;](meta-edit.md)

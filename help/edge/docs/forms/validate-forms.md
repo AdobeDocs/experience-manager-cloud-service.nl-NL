@@ -19,7 +19,7 @@ Adaptive Forms Block heeft ingebouwde validatiefuncties. Deze validaties worden 
 
 ## Veldtypen en validatie
 
-Het Adaptieve Blok van Forms steunt een verscheidenheid van [ HTML-5 inputtypes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), met inbegrip van tekst, e-mail, aantal, datum, en meer. Het past ook [ textarea ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), uitgezocht, en gebiedsreeks, samen met uitvoerige eigenschappen van de inputbevestiging inherent aan HTML-5 aan.
+Het Adaptieve Blok van Forms steunt een verscheidenheid van [&#x200B; HTML-5 inputtypes &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), met inbegrip van tekst, e-mail, aantal, datum, en meer. Het past ook [&#x200B; textarea &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), uitgezocht, en gebiedsreeks, samen met uitvoerige eigenschappen van de inputbevestiging inherent aan HTML-5 aan.
 
 gebruikt HTML-veldtypen om het type gegevens te definiëren dat een gebruiker kan invoeren. Verschillende veldtypen hebben verschillende ingebouwde validatieregels:
 

@@ -25,14 +25,14 @@ U moet de functie Inhoudsfragment inschakelen om de instantie in te schakelen vo
   >Als u niet **Modellen van het Fragment van de Inhoud** toelaat:
   >
   >* **creeer** optie zal niet beschikbaar voor het creëren van modellen zijn.
-  >* u zult niet de configuratie van Plaatsen kunnen [ selecteren om het verwante eind-punt ](/help/headless/graphql-api/graphql-endpoint.md) tot stand te brengen.
+  >* u zult niet de configuratie van Plaatsen kunnen [&#x200B; selecteren om het verwante eind-punt &#x200B;](/help/headless/graphql-api/graphql-endpoint.md) tot stand te brengen.
 
 * **GraphQL Blijven Vragen** - facultatief
 
 Het instellen van de instantie is voltooid:
 
-* door [ toelatend functionaliteit in Browser van de Configuratie ](#enable-content-fragment-functionality-configuration-browser)
-* dan [ het toepassen van de configuratie op uw individuele omslagen van Assets ](#apply-the-configuration-to-your-folder)
+* door [&#x200B; toelatend functionaliteit in Browser van de Configuratie &#x200B;](#enable-content-fragment-functionality-configuration-browser)
+* dan [&#x200B; het toepassen van de configuratie op uw individuele omslagen van Assets &#x200B;](#apply-the-configuration-to-your-folder)
 
 ## Functionaliteit van inhoudsfragment inschakelen in de configuratiebrowser {#enable-content-fragment-functionality-configuration-browser}
 
@@ -40,11 +40,11 @@ Om de functionaliteit van het Fragment van de Inhoud, van de Modellen van het Fr
 
 >[!NOTE]
 >
->Voor meer details, zie [ Browser van de Configuratie ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Voor meer details, zie [&#x200B; Browser van de Configuratie &#x200B;](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
->[ Subconfiguration ](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (een configuratie die binnen een andere configuratie wordt genest) wordt volledig gesteund voor gebruik met de Fragmenten van de Inhoud, Modellen van het Fragment van de Inhoud en de vragen van GraphQL.
+>[&#x200B; Subconfiguration &#x200B;](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (een configuratie die binnen een andere configuratie wordt genest) wordt volledig gesteund voor gebruik met de Fragmenten van de Inhoud, Modellen van het Fragment van de Inhoud en de vragen van GraphQL.
 >
 >Ik wil alleen opmerken dat:
 >
@@ -60,12 +60,12 @@ Om de functionaliteit van het Fragment van de Inhoud, van de Modellen van het Fr
 
    1. Specificeer a **Titel**.
    1. Op verwezenlijking, wordt de **Naam** de knoopnaam in de bewaarplaats.
-U kunt een naam invoeren. Als u het gebied leeg verlaat wordt het automatisch geproduceerd gebaseerd op de titel, dan aangepast volgens [ AEM noemende overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md); u kunt het resultaat indien nodig aanpassen.
+U kunt een naam invoeren. Als u het gebied leeg verlaat wordt het automatisch geproduceerd gebaseerd op de titel, dan aangepast volgens [&#x200B; AEM noemende overeenkomsten &#x200B;](/help/implementing/developing/introduction/naming-conventions.md); u kunt het resultaat indien nodig aanpassen.
    1. Om hun gebruik toe te laten selecteer
       * **Modellen van contentfragmenten**
       * **GraphQL Blijven Vragen**
 
-      ![ bepaalt configuratie ](assets/cf-setup-create-conf.png)
+      ![&#x200B; bepaalt configuratie &#x200B;](assets/cf-setup-create-conf.png)
 
 1. Selecteer **creeer** om de definitie te bewaren.
 
@@ -75,4 +75,4 @@ Wanneer de configuratie **globale** voor de functionaliteit van het Fragment van
 
 Als u andere configuraties (dus niet globaal) wilt gebruiken met een vergelijkbare Assets-map, moet u de verbinding definiëren. Doe dit door de aangewezen **Configuratie** in het **lusje van de Diensten van de Wolk** van de **Eigenschappen van de Omslag** van de aangewezen omslag te selecteren.
 
-![ pas configuratie ](assets/cf-setup-apply-conf.png) toe
+![&#x200B; pas configuratie &#x200B;](assets/cf-setup-apply-conf.png) toe

@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -43,9 +43,9 @@ Bekijk de video Overzicht van de release van juli 2023 voor een overzicht van de
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
-* De [ Console van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) staat nu gebruikers toe om markeringen en onderzoek door markeringen te bekijken die als meta-gegevens op de Fragmenten van de Inhoud worden toegepast. Gebruikers hoeven voor deze functie niet meer over te schakelen op de gebruikersinterface van Assets, waardoor contextomschakeling wordt beperkt en de efficiëntie wordt verbeterd.
+* De [&#x200B; Console van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) staat nu gebruikers toe om markeringen en onderzoek door markeringen te bekijken die als meta-gegevens op de Fragmenten van de Inhoud worden toegepast. Gebruikers hoeven voor deze functie niet meer over te schakelen op de gebruikersinterface van Assets, waardoor contextomschakeling wordt beperkt en de efficiëntie wordt verbeterd.
 
-![ Tags toevoegen in de Console van het Fragment van de Inhoud ](/help/assets/content-fragments-console-tags.png)
+![&#x200B; Tags toevoegen in de Console van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments-console-tags.png)
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -69,7 +69,7 @@ Experience Manager Assets maakt nu gebruik van een verbeterd kunstmatig intellig
 
 De Hoofdzaak van activa verstrekt nu de capaciteit om de kolommen te selecteren die in de mening van de Lijst van Assets, zoals Status, Formaat, Dimensies, Grootte, etc. tonen.
 
-![ vorm kolommen ](/help/release-notes/assets/configure-columns.png)
+![&#x200B; vorm kolommen &#x200B;](/help/release-notes/assets/configure-columns.png)
 
 **de onderzoeksresultaten van de Soort die op relevantie** worden gebaseerd
 
@@ -82,9 +82,9 @@ De Hoofdzaak van activa sorteert nu de onderzoeksresultaten die op Relevantie wo
 
 * [**uit de vakthema&#39;s**](/help/forms/using-themes-in-core-components.md) **en malplaatjes**: Kickstart uw proces van de vormverwezenlijking met onze gebruiksklare OTB- thema&#39;s en malplaatjes, die aan macht zowel gekruiste beroeps als nieuwe vormauteurs worden aangepast. Dankzij deze nauwgezette thema&#39;s en sjablonen, die naadloos zijn gebouwd met Adaptive Forms Core Components, kunt u snel formulieren maken voor veelgebruikte toepassingen.
 
-* **[Reageer Componenten voor Hoofdloze Forms ](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: U kunt nu voorproef en aanpassen   Koploze adaptieve formulieruitvoeringen met de React-componenten in het tekstvak. Deze componenten gebruiken BEM-klassen van Adaptive Forms Core Components voor opmaken, waardoor het voor u gemakkelijker wordt om de weergave aan te passen aan uw specifieke vereisten.
+* **[Reageer Componenten voor Hoofdloze Forms &#x200B;](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: U kunt nu voorproef en aanpassen   Koploze adaptieve formulieruitvoeringen met de React-componenten in het tekstvak. Deze componenten gebruiken BEM-klassen van Adaptive Forms Core Components voor opmaken, waardoor het voor u gemakkelijker wordt om de weergave aan te passen aan uw specifieke vereisten.
 
-* [**creeer Aanpassings Forms met herhaalbare secties**](/help/forms/create-forms-repeatable-sections.md): U kunt [ Accordeon ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ Tovenaar ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [ Comité ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), en [ Horizontale 9} componenten van Lusjes {van 9} componenten maken gebaseerde Aangepaste Vorm herhaalbaar voor veelvoudige gegevens registreren.  ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)  Met deze herhaalbare secties kunt u eenvoudig meerdere gegevensitems opgeven. Dit is handig wanneer de vereiste instanties van gegevens vooraf onbekend zijn. Een invuller van een formulier kan eenvoudig secties toevoegen of verwijderen, waardoor formulieren kunnen worden aangepast aan verschillende scenario&#39;s voor gegevensinvoer en de verzameling van meerdere exemplaren van dezelfde gegevensrecord kan worden vereenvoudigd.
+* [**creeer Aanpassings Forms met herhaalbare secties**](/help/forms/create-forms-repeatable-sections.md): U kunt [&#x200B; Accordeon &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [&#x200B; Tovenaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [&#x200B; Comité &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), en [&#x200B; Horizontale 9&rbrace; componenten van Lusjes {van 9} componenten maken gebaseerde Aangepaste Vorm herhaalbaar voor veelvoudige gegevens registreren.  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)  Met deze herhaalbare secties kunt u eenvoudig meerdere gegevensitems opgeven. Dit is handig wanneer de vereiste instanties van gegevens vooraf onbekend zijn. Een invuller van een formulier kan eenvoudig secties toevoegen of verwijderen, waardoor formulieren kunnen worden aangepast aan verschillende scenario&#39;s voor gegevensinvoer en de verzameling van meerdere exemplaren van dezelfde gegevensrecord kan worden vereenvoudigd.
 
 
 ### Functies voor pre-release beschikbaar in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
@@ -95,7 +95,7 @@ De Hoofdzaak van activa sorteert nu de onderzoeksresultaten die op Relevantie wo
 
 ### Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
 
-Het gebruik [ Zwaardeloze Aanpassings Forms ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) om uw ontwikkelaars toe te laten om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking getreden. Met behulp van hoofdloze adaptieve formulieren kunt u:
+Het gebruik [&#x200B; Zwaardeloze Aanpassings Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) om uw ontwikkelaars toe te laten om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking getreden. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
 * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
 * U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen
@@ -108,9 +108,9 @@ U kunt een e-mail naar `aem-forms-headless@adobe.com` verzenden vanuit uw offici
 
 ### Handelingencentrum {#actions-center}
 
-Abonneer u op e-mailmeldingen die u waarschuwen wanneer zich kritieke incidenten voordoen die onmiddellijke actie vereisen, en ook op persoonlijke titel aanbevelingen om uw site te optimaliseren. [ Centrum van Acties ](/help/operations/actions-center.md) dient als hub waar u deze alarm, zoals geblokkeerde replicatierijen of het verlopen van geloofsbrieven kunt herzien, en hen als opgelost merken.
+Abonneer u op e-mailmeldingen die u waarschuwen wanneer zich kritieke incidenten voordoen die onmiddellijke actie vereisen, en ook op persoonlijke titel aanbevelingen om uw site te optimaliseren. [&#x200B; Centrum van Acties &#x200B;](/help/operations/actions-center.md) dient als hub waar u deze alarm, zoals geblokkeerde replicatierijen of het verlopen van geloofsbrieven kunt herzien, en hen als opgelost merken.
 
-![ het schermschot van het Centrum van Acties ](/help/assets/assets/actions-center.png)
+![&#x200B; het schermschot van het Centrum van Acties &#x200B;](/help/assets/assets/actions-center.png)
 
 ### Programma voor vroege adoptie van CDN- en WAF-regels {#waf-early-adopter}
 
@@ -121,20 +121,20 @@ Het verkeer van de filter bij CDN die op wordt gebaseerd:
 
 Wilt u de functie proberen en feedback delen? Verzend een e-mail naar **aemcs-waf-adopter@adobe.com** van uw officiële e-mailidentiteitskaart om meer over het vroege adoptieprogramma te leren. De ruimte is beperkt.
 
-Leer meer over de eigenschap in het artikel [ hier ](/help/security/traffic-filter-rules-including-waf.md).
+Leer meer over de eigenschap in het artikel [&#x200B; hier &#x200B;](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Andere wijzigingen in de Stichting {#other-foundation-changes}
 
-* In de week van 7 augustus retourneert AEM foutcode 429 in plaats van foutcode 503 wanneer aanvragen naar AEM-instanties een gezond niveau overschrijden. [ leer meer ](/help/implementing/developing/introduction/development-guidelines.md).
+* In de week van 7 augustus retourneert AEM foutcode 429 in plaats van foutcode 503 wanneer aanvragen naar AEM-instanties een gezond niveau overschrijden. [&#x200B; leer meer &#x200B;](/help/implementing/developing/introduction/development-guidelines.md).
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
+U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](/help/release-notes/maintenance/latest.md) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.

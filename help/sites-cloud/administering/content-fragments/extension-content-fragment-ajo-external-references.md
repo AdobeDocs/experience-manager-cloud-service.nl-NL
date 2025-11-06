@@ -24,23 +24,23 @@ Voor een integratie met Adobe Journey Optimizer (AJO) zijn de details bijvoorbee
 
 >[!NOTE]
 >
->Voor details van hoe te om de uitbreiding toe te laten, zie [ Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+>Voor details van hoe te om de uitbreiding toe te laten, zie [&#x200B; Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 Als u bijvoorbeeld de extensie wilt gebruiken met AJO:
 
 >[!NOTE]
 >
->Zie ook [ de Integratie van AJO ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
+>Zie ook [&#x200B; de Integratie van AJO &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
 
-1. Open de [ Console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
+1. Open de [&#x200B; Console van de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
 1. Navigeer naar het inhoudsfragment - het fragment dat is gemaakt en dat wordt gebruikt via verschillende AJO-kanalen.
 
-1. Open uw Fragment van de Inhoud in de [ redacteur ](/help/sites-cloud/administering/content-fragments/managing.md#editing-the-content-of-your-fragment).
+1. Open uw Fragment van de Inhoud in de [&#x200B; redacteur &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#editing-the-content-of-your-fragment).
 
 1. De extensie Externe AJO-verwijzingen is beschikbaar als een tabblad in het rechterdeelvenster. Selecteer het tabblad waarop u de extensie wilt openen:
 
-   ![ de Externe uitbreiding van Verwijzingen van AJO ](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
+   ![&#x200B; de Externe uitbreiding van Verwijzingen van AJO &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
 
    Nadat een referentietype is geselecteerd, worden de bijbehorende externe verwijzingen als een tabel met de kolommen weergegeven:
 

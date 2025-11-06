@@ -17,7 +17,7 @@ ht-degree: 0%
 
 De functionaliteit van RTE wordt beschikbaar gemaakt via een reeks stop-ins, elk met eigenschappen bezit. U kunt het eigenschapbezit vormen om, één of meerdere eigenschappen van RTE toe te laten of onbruikbaar te maken. Dit artikel beschrijft hoe te om de stop-ins specifiek te vormen RTE.
 
-Voor details over de andere configuraties van RTE, zie [ Rich Text Editor ](/help/implementing/developing/extending/rich-text-editor.md) vormen.
+Voor details over de andere configuraties van RTE, zie [&#x200B; Rich Text Editor &#x200B;](/help/implementing/developing/extending/rich-text-editor.md) vormen.
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ U kunt sommige, alle, of geen van deze drie pictogrammen aan uw auteurs in de to
 Om RTE te vormen om de vereiste pictogrammen te tonen, volg deze stappen.
 
 1. Navigeer naar de component, bijvoorbeeld `/apps/<myProject>/components/text` .
-1. Navigeer naar het knooppunt `rtePlugins/edit` . Zie [ insteekmodule ](#activateplugin) activeren als de knoop niet bestaat.
+1. Navigeer naar het knooppunt `rtePlugins/edit` . Zie [&#x200B; insteekmodule &#x200B;](#activateplugin) activeren als de knoop niet bestaat.
 1. Maak de eigenschap `features` op het knooppunt `edit` en voeg een of meer functies toe. Sla alle wijzigingen op.
 
 ### Het gedrag van het pictogram en de sneltoets Plakken (Ctrl+V) configureren {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
@@ -113,7 +113,7 @@ De configuratie staat voor de volgende drie soorten gebruiksgevallen toe:
 
 * Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak. geconfigureerd met `wordhtml` verderop.
 
-1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/edit` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer informatie, zie [ een elektrisch toestel ](#activateplugin) activeren.
+1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/edit` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer informatie, zie [&#x200B; een elektrisch toestel &#x200B;](#activateplugin) activeren.
 1. Maak in het knooppunt `edit` een eigenschap met de volgende details:
 
    * **Naam** `defaultPasteMode`
@@ -133,7 +133,7 @@ Voor koppelingen kunt u ook de protocollen definiëren die automatisch worden ge
 
 Om te vormen welke formaten wanneer het kleven van tekst in [!DNL Experience Manager] van een ander programma worden toegestaan:
 
-1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/edit` . Maak de knooppunten als het knooppunt niet bestaat. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
+1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/edit` . Maak de knooppunten als het knooppunt niet bestaat. Voor meer details, zie [&#x200B; een elektrisch toestel &#x200B;](#activateplugin) activeren.
 1. Maak een knooppunt onder het knooppunt `edit` voor de plakregels voor HTML:
 
    * **Naam** `htmlPasteRules`
@@ -207,13 +207,13 @@ Voor latere herconfiguraties, bijvoorbeeld om meer stijlen toe te voegen, volg s
 
 >[!NOTE]
 >
->De stijlen kunnen ook voor [ lijsten of lijstcellen ](configure-rich-text-editor-plug-ins.md#tablestyles) worden bepaald. Deze configuraties vereisen afzonderlijke procedures.
+>De stijlen kunnen ook voor [&#x200B; lijsten of lijstcellen &#x200B;](configure-rich-text-editor-plug-ins.md#tablestyles) worden bepaald. Deze configuraties vereisen afzonderlijke procedures.
 
 ### De vervolgkeuzelijst Stijl inschakelen {#styleselectorlist}
 
 Hiervoor schakelt u de insteekmodule Stijlen in.
 
-1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/styles` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
+1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/styles` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [&#x200B; een elektrisch toestel &#x200B;](#activateplugin) activeren.
 1. Maak de eigenschap `features` op het knooppunt `styles` :
 
    * **Naam** `features`
@@ -261,7 +261,7 @@ De Rich Text Editor gebruikt een container DOM-element met een id `CQrte` die ve
 
 ### Geef de beschikbare stijlen op in de pop-uplijst {#stylesindropdown}
 
-1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/styles`, zoals gecreeerd in [ toelatend de stijldrop-down selecteur ](#styleselectorlist).
+1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/styles`, zoals gecreeerd in [&#x200B; toelatend de stijldrop-down selecteur &#x200B;](#styleselectorlist).
 1. Onder het knooppunt `styles` maakt u een knooppunt (ook wel `styles` genoemd) voor de opname van de lijst die beschikbaar wordt gesteld:
 
    * **Naam** `styles`
@@ -294,7 +294,7 @@ Auteurs die [!DNL Experience Manager] gebruiken om inhoud in de Japanse taal te 
 
 Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen toepassen:
 
-1. Maak een knooppunt onder het knooppunt Stijlen. Zie [ een stijl ](#stylesindropdown) specificeren.
+1. Maak een knooppunt onder het knooppunt Stijlen. Zie [&#x200B; een stijl &#x200B;](#stylesindropdown) specificeren.
    * Naam: `jpn-word-wrap`
    * Type: `nt:unstructure`
 
@@ -308,7 +308,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 *Type: `String`
    * Waarde: `Japanese word-wrap`
 
-1. Maak een stijlpagina en geef het pad op. Zie [ plaats van stylesheet ](#locationofstylesheet) specificeren. Voeg de volgende inhoud toe aan het stijlblad. Wijzig de achtergrondkleur naar wens.
+1. Maak een stijlpagina en geef het pad op. Zie [&#x200B; plaats van stylesheet &#x200B;](#locationofstylesheet) specificeren. Voeg de volgende inhoud toe aan het stijlblad. Wijzig de achtergrondkleur naar wens.
 
    ```css
    .text span.jpn-word-wrap {
@@ -319,7 +319,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
    }
    ```
 
-   ![ blad van de Stijl om de Japanse eigenschap van de woordomslag van auteurs ](assets/rte_jpwordwrap_stylesheet.jpg) beschikbaar te maken
+   ![&#x200B; blad van de Stijl om de Japanse eigenschap van de woordomslag van auteurs &#x200B;](assets/rte_jpwordwrap_stylesheet.jpg) beschikbaar te maken
 
 ## Alinea-indelingen configureren {#paraformats}
 
@@ -344,7 +344,7 @@ Voor latere herconfiguraties, zeg om meer formaten toe te voegen, volg slechts h
 
 Voer de volgende stappen uit om de plug-in `paraformat` in te schakelen:
 
-1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/paraformat` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
+1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/paraformat` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [&#x200B; een elektrisch toestel &#x200B;](#activateplugin) activeren.
 1. Maak de eigenschap `features` op het knooppunt `paraformat` :
 
    * **Naam** `features`
@@ -363,7 +363,7 @@ Voer de volgende stappen uit om de plug-in `paraformat` in te schakelen:
 
 Alinea-indelingen worden beschikbaar gesteld voor selectie door:
 
-1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/paraformat`, zoals gecreeerd in [ toelatend de formaatdrop-down selecteur ](#styleselectorlist).
+1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/paraformat`, zoals gecreeerd in [&#x200B; toelatend de formaatdrop-down selecteur &#x200B;](#styleselectorlist).
 1. Onder het knooppunt `paraformat` maakt u een knooppunt voor de lijst met indelingen:
 
    * **Naam** `formats`
@@ -408,7 +408,7 @@ U kunt RTE vormen om uw selectie van karakters beschikbaar te maken; of door ver
 
 ### Eén teken definiëren {#definesinglechar}
 
-1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/misctools` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
+1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/misctools` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [&#x200B; een elektrisch toestel &#x200B;](#activateplugin) activeren.
 1. Maak de eigenschap `features` op het knooppunt `misctools` :
 
    * **Naam** `features`
@@ -442,11 +442,11 @@ U kunt RTE vormen om uw selectie van karakters beschikbaar te maken; of door ver
 
 In CRXDE, zodra het bezit wordt bewaard, wordt het vertegenwoordigde karakter getoond. Zie onder het voorbeeld van de helft. Herhaal bovenstaande stappen om meer speciale tekens beschikbaar te maken voor auteurs.
 
-![ in CRXDE, voeg één enkel karakter toe dat in de toolbar van RTE ](assets/chlimage_1-106.png " in CRXDE beschikbaar moet worden gemaakt, voeg één enkel karakter toe dat op de toolbar van RTE ") beschikbaar moet worden gemaakt
+![&#x200B; in CRXDE, voeg één enkel karakter toe dat in de toolbar van RTE &#x200B;](assets/chlimage_1-106.png " in CRXDE beschikbaar moet worden gemaakt, voeg één enkel karakter toe dat op de toolbar van RTE ") beschikbaar moet worden gemaakt
 
 ### Een tekenbereik definiëren {#definerangechar}
 
-1. De stappen 1 van het gebruik tot 3 van [ bepalen één enkel karakter ](#definesinglechar).
+1. De stappen 1 van het gebruik tot 3 van [&#x200B; bepalen één enkel karakter &#x200B;](#definesinglechar).
 1. Voeg onder `chars` een knooppunt toe voor de definitie van het tekenbereik:
 
    * **Naam** u kunt de naam specificeren, maar het zou op de karakterwaaier moeten wijzen; bijvoorbeeld, potloden.
@@ -456,21 +456,21 @@ In CRXDE, zodra het bezit wordt bewaard, wordt het vertegenwoordigde karakter ge
 
    * **Naam** `rangeStart`
      **Type** `Long`
-     **Waarde** de [ vertegenwoordiging van Unicode ](https://unicode.org/) (decimaal) van het eerste karakter in de waaier
+     **Waarde** de [&#x200B; vertegenwoordiging van Unicode &#x200B;](https://unicode.org/) (decimaal) van het eerste karakter in de waaier
 
    * **Naam** `rangeEnd`
      **Type** `Long`
-     **Waarde** de [ vertegenwoordiging van Unicode ](https://unicode.org/) (decimaal) van het laatste karakter in de waaier
+     **Waarde** de [&#x200B; vertegenwoordiging van Unicode &#x200B;](https://unicode.org/) (decimaal) van het laatste karakter in de waaier
 
 1. Sla de wijzigingen op.
 
    Als u bijvoorbeeld een bereik definieert tussen 998 en 10000, kunt u de volgende tekens gebruiken.
 
-   ![ in CRXDE, bepaal een waaier van karakters die in RTE ](assets/chlimage_1-107.png) beschikbaar moeten worden gemaakt
+   ![&#x200B; in CRXDE, bepaal een waaier van karakters die in RTE &#x200B;](assets/chlimage_1-107.png) beschikbaar moeten worden gemaakt
 
    *Cijfer: In CRXDE, bepaal een waaier van karakters die in RTE* beschikbaar moeten worden gemaakt
 
-   ![ Speciale karakters beschikbaar in RTE worden getoond aan auteurs in een pop-up venster ](assets/rtepencil.png " Speciale karakters beschikbaar in RTE worden getoond aan auteurs in een pop-up venster ")
+   ![&#x200B; Speciale karakters beschikbaar in RTE worden getoond aan auteurs in een pop-up venster &#x200B;](assets/rtepencil.png " Speciale karakters beschikbaar in RTE worden getoond aan auteurs in een pop-up venster ")
 
 ## Tabelstijlen configureren {#tablestyles}
 
@@ -484,7 +484,7 @@ Stijlen worden doorgaans toegepast op tekst, maar een aparte set stijlen kan ook
 >
 >Het kopiëren en het kleven van lijsten in of van de component van RTE is browser-afhankelijk. De functie wordt niet in het vak ondersteund voor alle browsers. Afhankelijk van de tabelstructuur en de browser krijgt u mogelijk verschillende resultaten. Wanneer u bijvoorbeeld een tabel kopieert en plakt in een RTE-component in Mozilla Firefox in Classic UI en Touch UI, blijft de indeling van de tabel niet behouden.
 
-1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/table` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
+1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/table` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [&#x200B; een elektrisch toestel &#x200B;](#activateplugin) activeren.
 1. Maak de eigenschap `features` op het knooppunt `table` :
 
    * **Naam** `features`
@@ -501,7 +501,7 @@ Stijlen worden doorgaans toegepast op tekst, maar een aparte set stijlen kan ook
    >   * `table` om het bewerken van tabeleigenschappen mogelijk te maken, inclusief de stijlen.
    >   * `cellprops` gebruiken om celeigenschappen, waaronder de stijlen, te kunnen bewerken.
 
-1. Definieer de locatie van CSS-stijlpagina&#39;s om deze te verwijzen. Zie [ het specificeren van de plaats van uw stijlblad ](#locationofstylesheet) aangezien dit het zelfde als wanneer het bepalen van [ stijlen voor tekst ](#textstyles) is. De locatie kan worden gedefinieerd als u andere stijlen hebt gedefinieerd.
+1. Definieer de locatie van CSS-stijlpagina&#39;s om deze te verwijzen. Zie [&#x200B; het specificeren van de plaats van uw stijlblad &#x200B;](#locationofstylesheet) aangezien dit het zelfde als wanneer het bepalen van [&#x200B; stijlen voor tekst &#x200B;](#textstyles) is. De locatie kan worden gedefinieerd als u andere stijlen hebt gedefinieerd.
 1. Maak onder het knooppunt `table` de volgende knooppunten naar wens:
 
    * Stijlen definiëren voor de gehele tabel (beschikbaar onder **[!UICONTROL Table properties]**):
@@ -574,7 +574,7 @@ Een standaard Experience Manager-installatie bevat de woordenboeken voor:
 
 Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 
-1. Navigeer aan de pagina [ https://extensions.openoffice.org/ ](https://extensions.openoffice.org/).
+1. Navigeer aan de pagina [&#x200B; https://extensions.openoffice.org/ &#x200B;](https://extensions.openoffice.org/).
 1. Selecteer de gewenste taal en download het ZIP-bestand met de spellingdefinities. Extraheer de inhoud van het archief op uw bestandssysteem.
 
    >[!CAUTION]
@@ -596,7 +596,7 @@ Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 
 Met RTE kunnen auteurs enkele laatste bewerkingen ongedaan maken of opnieuw uitvoeren. Standaard worden 50 bewerkingen opgeslagen in de geschiedenis. U kunt deze waarde naar wens configureren.
 
-1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/undo` . Maak deze knooppunten als deze niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
+1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/undo` . Maak deze knooppunten als deze niet bestaan. Voor meer details, zie [&#x200B; een elektrisch toestel &#x200B;](#activateplugin) activeren.
 1. Maak de eigenschap op het knooppunt `undo` :
 
    * **Naam** `maxUndoSteps`
@@ -611,7 +611,7 @@ Wanneer het tabteken wordt ingedrukt binnen tekst, wordt een vooraf gedefinieerd
 
 De tabgrootte definiëren:
 
-1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/keys` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
+1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/keys` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [&#x200B; een elektrisch toestel &#x200B;](#activateplugin) activeren.
 1. Maak de eigenschap op het knooppunt `keys` :
 
    * **Naam** `tabSize`
@@ -628,7 +628,7 @@ Wanneer inspringing is ingeschakeld (standaard), kunt u de grootte van de inspri
 >
 >Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst), maar heeft geen invloed op de inspringing van feitelijke lijsten.
 
-1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/lists` . Maak deze knooppunten als deze niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
+1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/lists` . Maak deze knooppunten als deze niet bestaan. Voor meer details, zie [&#x200B; een elektrisch toestel &#x200B;](#activateplugin) activeren.
 1. Maak op het knooppunt `lists` de parameter `identSize` :
 
    * **Naam**: `identSize`

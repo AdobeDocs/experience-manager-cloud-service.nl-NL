@@ -26,7 +26,7 @@ Als u bestaande inhoudsfragmenten en -modellen wilt bijwerken, kunt u de hier be
 
 >[!CAUTION]
 >
->Alvorens de verbeteringsprocedure in werking te stellen zou u [ een droge looppas ](#execute-a-dry-run) altijd moeten uitvoeren om het even welke potentiële kwesties met uw inhoud te benadrukken.
+>Alvorens de verbeteringsprocedure in werking te stellen zou u [&#x200B; een droge looppas &#x200B;](#execute-a-dry-run) altijd moeten uitvoeren om het even welke potentiële kwesties met uw inhoud te benadrukken.
 
 ## Wat is bijgewerkt {#what-is-upgraded}
 
@@ -50,7 +50,7 @@ De volgende referenties worden niet bijgewerkt:
 
    * Ongeldige verwijzingen worden niet bijgewerkt, alsof het pad van het inhoudsfragment of het middelenpad ongeldig is. Er is geen overeenkomstige UUID die moet worden toegewezen. De oorspronkelijke verwijzing blijft ongewijzigd.
 
-   * Gebruik a [ droge looppas ](#execute-a-dry-run) om het even welke ongeldige verwijzingen te ontmoedigen.
+   * Gebruik a [&#x200B; droge looppas &#x200B;](#execute-a-dry-run) om het even welke ongeldige verwijzingen te ontmoedigen.
 
   >[!NOTE]
   >
@@ -91,7 +91,7 @@ Voer de upgrade van de inhoud in de modus `dryRun` uit naar:
 * eventuele ongeldige verwijzingen identificeren; door deze weer te geven in de logbestanden
 U kunt deze verwijzingen vervolgens corrigeren voordat u de daadwerkelijke upgrade van de inhoud uitvoert.
 * alle paginaverwijzingen identificeren; door deze weer te geven in de logbestanden
-Wanneer de paginaverwijzingen worden ontdekt zou u [ niet de inhoudsverbetering ](#when-you-should-not-upgrade) in werking moeten stellen.
+Wanneer de paginaverwijzingen worden ontdekt zou u [&#x200B; niet de inhoudsverbetering &#x200B;](#when-you-should-not-upgrade) in werking moeten stellen.
 
 
 ### Inhoud bevriezen {#enforce-a-content-freeze}

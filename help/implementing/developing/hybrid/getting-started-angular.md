@@ -21,7 +21,7 @@ De auteurseigenschap van het KUUROORD biedt een uitvoerige oplossing voor het st
 
 >[!NOTE]
 >
->Dit artikel is gebaseerd op het Angular-kader. Voor het overeenkomstige document voor het Reageren kader zie [ Begonnen Worden met SPAs in AEM - Reageer ](getting-started-react.md).
+>Dit artikel is gebaseerd op het Angular-kader. Voor het overeenkomstige document voor het Reageren kader zie [&#x200B; Begonnen Worden met SPAs in AEM - Reageer &#x200B;](getting-started-react.md).
 
 {{ue-over-spa}}
 
@@ -63,7 +63,7 @@ Het `package.json` dossier bepaalt de vereisten van het algemene pakket van het 
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Voor verdere details zie [ aem-clientlib-generator op GitHub ](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+Voor verdere details zie [&#x200B; aem-clientlib-generator op GitHub &#x200B;](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 `aem-clientlib-generator` wordt als volgt geconfigureerd in het `clientlib.config.js` -bestand.
 
@@ -96,7 +96,7 @@ module.exports = {
 
 ### Gebouw {#building}
 
-Eigenlijk bouwend app gebruikt [ Webpack ](https://webpack.js.org/) voor transpilatie naast aem-client-clientlib-generator voor de automatische verwezenlijking van de cliëntbibliotheek. Daarom zal het bouwstijlbevel op lijken:
+Eigenlijk bouwend app gebruikt [&#x200B; Webpack &#x200B;](https://webpack.js.org/) voor transpilatie naast aem-client-clientlib-generator voor de automatische verwezenlijking van de cliëntbibliotheek. Daarom zal het bouwstijlbevel op lijken:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -104,7 +104,7 @@ Nadat het pakket is gemaakt, kan het worden geüpload naar een AEM-instantie.
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
+Om het even welk project van AEM zou het [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
@@ -212,7 +212,7 @@ export class MainContentComponent {
 }
 ```
 
-`MainComponent` neemt de JSON-representatie van het paginamodel op en verwerkt de inhoud om elk element van de pagina te buigen of te versieren. De verdere details op `Page` kunnen in het document [ Vervagen van het KUUROORD ](blueprint.md) worden gevonden.
+`MainComponent` neemt de JSON-representatie van het paginamodel op en verwerkt de inhoud om elk element van de pagina te buigen of te versieren. De verdere details op `Page` kunnen in het document [&#x200B; Vervagen van het KUUROORD &#x200B;](blueprint.md) worden gevonden.
 
 ### image.component.ts {#image-component-ts}
 
@@ -245,7 +245,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-Het centrale idee van SPAs in AEM is het idee om de componenten van SPA aan de componenten van AEM in kaart te brengen en de component bij te werken wanneer de inhoud (en omgekeerd) wordt gewijzigd. Zie het document [ Overzicht van de Redacteur van het KUUROORD ](editor-overview.md) voor een samenvatting van dit communicatie model.
+Het centrale idee van SPAs in AEM is het idee om de componenten van SPA aan de componenten van AEM in kaart te brengen en de component bij te werken wanneer de inhoud (en omgekeerd) wordt gewijzigd. Zie het document [&#x200B; Overzicht van de Redacteur van het KUUROORD &#x200B;](editor-overview.md) voor een samenvatting van dit communicatie model.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
@@ -278,8 +278,8 @@ Componenten in een toepassing van één pagina moeten regelmatig informatie uitw
 
 ## Volgende stappen {#next-steps}
 
-* [ Begonnen het Worden met SPAs in AEM die Reageren ](getting-started-react.md) gebruikt toont hoe een basisKUUROORD wordt gebouwd om met de Redacteur van het KUUROORD in AEM te werken gebruikend Reageren.
-* [ het Overzicht van de Redacteur van het KUUROORD ](editor-overview.md) gaat in meer diepte in het communicatie model tussen AEM en het KUUROORD.
-* [ WKND Project van het KUUROORD ](wknd-tutorial.md) is een geleidelijke leerprogramma die een eenvoudig project van het KUUROORD in AEM uitvoeren.
-* [ Dynamisch Model aan de Afbeelding van de Component voor SPAs ](model-to-component-mapping.md) verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPAs in AEM werkt.
-* [ het Blauwdruk van het KUUROORD ](blueprint.md) biedt een diepe duik in hoe het KUUROORD SDK voor de werken van AEM voor het geval u SPAs in AEM voor een kader buiten React of Angular wilt uitvoeren of eenvoudig een dieper begrip zou willen.
+* [&#x200B; Begonnen het Worden met SPAs in AEM die Reageren &#x200B;](getting-started-react.md) gebruikt toont hoe een basisKUUROORD wordt gebouwd om met de Redacteur van het KUUROORD in AEM te werken gebruikend Reageren.
+* [&#x200B; het Overzicht van de Redacteur van het KUUROORD &#x200B;](editor-overview.md) gaat in meer diepte in het communicatie model tussen AEM en het KUUROORD.
+* [&#x200B; WKND Project van het KUUROORD &#x200B;](wknd-tutorial.md) is een geleidelijke leerprogramma die een eenvoudig project van het KUUROORD in AEM uitvoeren.
+* [&#x200B; Dynamisch Model aan de Afbeelding van de Component voor SPAs &#x200B;](model-to-component-mapping.md) verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPAs in AEM werkt.
+* [&#x200B; het Blauwdruk van het KUUROORD &#x200B;](blueprint.md) biedt een diepe duik in hoe het KUUROORD SDK voor de werken van AEM voor het geval u SPAs in AEM voor een kader buiten React of Angular wilt uitvoeren of eenvoudig een dieper begrip zou willen.

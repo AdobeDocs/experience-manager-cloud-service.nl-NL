@@ -30,7 +30,7 @@ Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkela
 | × | Niet ondersteund. Niet gebruiken. |
 | - | Niet beschikbaar |
 
-| Hoofdletters gebruiken | [ aem-upload ](https://github.com/adobe/aem-upload) | [ Experience Manager/Sling/JCR ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java APIs | [ Activa verwerken de dienst ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets]  HTTP API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Het verkopen [ GET ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [ POST ](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [ GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
+| Hoofdletters gebruiken | [&#x200B; aem-upload &#x200B;](https://github.com/adobe/aem-upload) | [&#x200B; Experience Manager/Sling/JCR &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java APIs | [&#x200B; Activa verwerken de dienst &#x200B;](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets]  HTTP API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Het verkopen [&#x200B; GET &#x200B;](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [&#x200B; POST &#x200B;](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [&#x200B; GraphQL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Origineel binair binair** |  |  |  |  |  |  |
 | Origineel maken | ✓ | × | - | × | × | - |
@@ -68,11 +68,11 @@ Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkela
 
 In [!DNL Experience Manager] als een [!DNL Cloud Service] kunt u de elementen rechtstreeks uploaden naar de cloudopslag met de HTTP-API. De stappen voor het uploaden van een binair bestand staan hieronder. Voer deze stappen uit in een externe toepassing en niet in de JVM van [!DNL Experience Manager] .
 
-1. [ legt een verzoek van HTTP ](#initiate-upload) voor. Het informeert [!DNL Experience Manage] of plaatsing van uw intent om een nieuw binair getal te uploaden.
-1. [ PUT de inhoud van binair ](#upload-binary) aan één of meerdere URIs die door het inleidende verzoek wordt verstrekt.
-1. [ legt een verzoek van HTTP ](#complete-upload) voor om de server mee te delen dat de inhoud van binair getal met succes werd geupload.
+1. [&#x200B; legt een verzoek van HTTP &#x200B;](#initiate-upload) voor. Het informeert [!DNL Experience Manage] of plaatsing van uw intent om een nieuw binair getal te uploaden.
+1. [&#x200B; PUT de inhoud van binair &#x200B;](#upload-binary) aan één of meerdere URIs die door het inleidende verzoek wordt verstrekt.
+1. [&#x200B; legt een verzoek van HTTP &#x200B;](#complete-upload) voor om de server mee te delen dat de inhoud van binair getal met succes werd geupload.
 
-![ Overzicht van direct binair upload protocol ](assets/add-assets-technical.png)
+![&#x200B; Overzicht van direct binair upload protocol &#x200B;](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
 >
@@ -85,7 +85,7 @@ Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrij
 
 >[!NOTE]
 >
->Zie de cliëntcode om deze benadering in open-bron [ uit te voeren aem-upload bibliotheek ](https://github.com/adobe/aem-upload).
+>Zie de cliëntcode om deze benadering in open-bron [&#x200B; uit te voeren aem-upload bibliotheek &#x200B;](https://github.com/adobe/aem-upload).
 >
 >[!IMPORTANT]
 >
@@ -121,13 +121,13 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 }
 ```
 
-* `completeURI` (tekenreeks): Roep deze URI aan wanneer het binaire bestand klaar is met uploaden. De URI kan een absolute of relatieve URI zijn en clients moeten beide kunnen afhandelen. Namelijk kan de waarde `"https://[aem_server]:[port]/content/dam.completeUpload.json"` zijn of `"/content/dam.completeUpload.json"` zien [ volledige upload ](#complete-upload).
+* `completeURI` (tekenreeks): Roep deze URI aan wanneer het binaire bestand klaar is met uploaden. De URI kan een absolute of relatieve URI zijn en clients moeten beide kunnen afhandelen. Namelijk kan de waarde `"https://[aem_server]:[port]/content/dam.completeUpload.json"` zijn of `"/content/dam.completeUpload.json"` zien [&#x200B; volledige upload &#x200B;](#complete-upload).
 * `folderPath` (tekenreeks): het volledige pad naar de map waarin het binaire bestand is geüpload.
 * `(files)` (array): Een lijst met elementen waarvan de lengte en volgorde overeenkomen met de lengte en volgorde van de lijst met binaire informatie die wordt verschaft in de aanvraag voor het initiëren.
 * `fileName` (string): De naam van het overeenkomstige binaire getal, zoals opgegeven in de initiërende aanvraag. Deze waarde moet in het volledige verzoek worden opgenomen.
 * `mimeType` (tekenreeks): Het mime-type van het corresponderende binaire getal, zoals opgegeven in het initiëringsverzoek. Deze waarde moet in het volledige verzoek worden opgenomen.
 * `uploadToken` (tekenreeks): een upload-token voor het overeenkomstige binaire bestand. Deze waarde moet in het volledige verzoek worden opgenomen.
-* `uploadURIs` (serie): Een lijst van koorden de waarvan waarden volledige URIs zijn waaraan de inhoud van binair getal zou moeten worden geupload (zie [ binair ](#upload-binary) uploaden).
+* `uploadURIs` (serie): Een lijst van koorden de waarvan waarden volledige URIs zijn waaraan de inhoud van binair getal zou moeten worden geupload (zie [&#x200B; binair &#x200B;](#upload-binary) uploaden).
 * `minPartSize` (number): De minimale lengte, in bytes, van gegevens die aan om het even welke `uploadURIs` kunnen worden verstrekt, als er meer dan één URI is.
 * `maxPartSize` (number): De maximale lengte, in bytes, van gegevens die aan om het even welke `uploadURIs` kunnen worden verstrekt, als er meer dan één URI is.
 
@@ -159,7 +159,7 @@ Als het uploaden is voltooid, reageert de server op elke aanvraag met een `201` 
 
 >[!NOTE]
 >
->Voor meer informatie over uploadt algoritme, zie de [ officiële eigenschapdocumentatie ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) en [ API documentatie ](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) in het project van Apache Jackrabbit Oak.
+>Voor meer informatie over uploadt algoritme, zie de [&#x200B; officiële eigenschapdocumentatie &#x200B;](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) en [&#x200B; API documentatie &#x200B;](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) in het project van Apache Jackrabbit Oak.
 
 ### Uploaden voltooien {#complete-upload}
 
@@ -426,12 +426,12 @@ echo "File upload completed successfully."
 
 Adobe biedt opensource-bibliotheken en -gereedschappen voor meer informatie over de uploadalgoritmen of om uw eigen uploadscripts en -gereedschappen te maken:
 
-* [ open-bron a-upload bibliotheek ](https://github.com/adobe/aem-upload).
-* [ open-bron bevel-lijn hulpmiddel ](https://github.com/adobe/aio-cli-plugin-aem).
+* [&#x200B; open-bron a-upload bibliotheek &#x200B;](https://github.com/adobe/aem-upload).
+* [&#x200B; open-bron bevel-lijn hulpmiddel &#x200B;](https://github.com/adobe/aio-cli-plugin-aem).
 
 >[!NOTE]
 >
->De a-em-upload bibliotheek en het bevel-lijn hulpmiddel zowel gebruiken de [ knoop-httptransfer bibliotheek ](https://github.com/adobe/node-httptransfer/)
+>De a-em-upload bibliotheek en het bevel-lijn hulpmiddel zowel gebruiken de [&#x200B; knoop-httptransfer bibliotheek &#x200B;](https://github.com/adobe/node-httptransfer/)
 
 ### Verouderde API&#39;s voor middelenupload {#deprecated-asset-upload-api}
 
@@ -444,19 +444,19 @@ De nieuwe uploadmethode wordt alleen ondersteund voor [!DNL Adobe Experience Man
 
 >[!MORELIKETHIS]
 >
->* [ open-bron a-upload bibliotheek ](https://github.com/adobe/aem-upload).
->* [ open-bron bevel-lijn hulpmiddel ](https://github.com/adobe/aio-cli-plugin-aem).
->* [ Apache Jackrabbit Oak documentatie voor directe upload ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+>* [&#x200B; open-bron a-upload bibliotheek &#x200B;](https://github.com/adobe/aem-upload).
+>* [&#x200B; open-bron bevel-lijn hulpmiddel &#x200B;](https://github.com/adobe/aio-cli-plugin-aem).
+>* [&#x200B; Apache Jackrabbit Oak documentatie voor directe upload &#x200B;](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## Workflows voor de verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
 
-In [!DNL Experience Manager], is de activaverwerking gebaseerd op **[!UICONTROL Processing Profiles]** configuratie die [ activa microservices ](asset-microservices-configure-and-use.md#get-started-using-asset-microservices) gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
+In [!DNL Experience Manager], is de activaverwerking gebaseerd op **[!UICONTROL Processing Profiles]** configuratie die [&#x200B; activa microservices &#x200B;](asset-microservices-configure-and-use.md#get-started-using-asset-microservices) gebruikt. Voor verwerking zijn geen ontwikkelaarsextensies vereist.
 
 Voor workflowconfiguratie na verwerking gebruikt u de standaardworkflows met extensies met aangepaste stappen.
 
 ## Ondersteuning van workflowstappen in de naverwerkingsworkflow {#post-processing-workflows-steps}
 
-Als u een upgrade uitvoert van een eerdere versie van [!DNL Experience Manager] , kunt u met behulp van asset-microservices elementen elementen verwerken. De &#39;cloud-native asset microservices&#39; zijn eenvoudiger te configureren en gebruiken. Een aantal workflowstappen die in de [!UICONTROL DAM Update Asset] -workflow in de vorige versie werden gebruikt, worden niet ondersteund. Voor meer informatie over gesteunde klassen, zie de [ verwijzing van Java API of Java ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
+Als u een upgrade uitvoert van een eerdere versie van [!DNL Experience Manager] , kunt u met behulp van asset-microservices elementen elementen verwerken. De &#39;cloud-native asset microservices&#39; zijn eenvoudiger te configureren en gebruiken. Een aantal workflowstappen die in de [!UICONTROL DAM Update Asset] -workflow in de vorige versie werden gebruikt, worden niet ondersteund. Voor meer informatie over gesteunde klassen, zie de [&#x200B; verwijzing van Java API of Java &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 De volgende technische workflowmodellen worden vervangen door asset microservices of de ondersteuning is niet beschikbaar:
 
@@ -552,4 +552,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Cloud]  als a [!DNL Cloud Service]  SDK ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud]  als a [!DNL Cloud Service]  SDK &#x200B;](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

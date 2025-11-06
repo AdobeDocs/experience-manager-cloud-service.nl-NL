@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over de reactie van Adobe op privacykwesties, en wat het voor u als klant van Adobe betekent, zie [ het Centrum van de Privacy van Adobe ](https://www.adobe.com/privacy.html).
+>Voor meer informatie over de reactie van Adobe op privacykwesties, en wat het voor u als klant van Adobe betekent, zie [&#x200B; het Centrum van de Privacy van Adobe &#x200B;](https://www.adobe.com/privacy.html).
 
 ## AEM Foundation - ondersteuning voor gegevensbescherming en -bescherming {#aem-foundation-data-privacy-and-protection-support}
 
@@ -39,11 +39,11 @@ Op het niveau van de Stichting van AEM, worden de Persoonlijke Gegevens die word
 
 1. Zoek vervolgens naar de desbetreffende gebruiker door de naam in de zoekbalk boven aan de pagina te typen:
 
-   ![ onderzoek naar rekening ](assets/dpp-foundation-01.png)
+   ![&#x200B; onderzoek naar rekening &#x200B;](assets/dpp-foundation-01.png)
 
 1. Open ten slotte het gebruikersprofiel door erop te klikken en controleer het vervolgens onder de tab **[!UICONTROL Details]** .
 
-   ![ gebruikersprofiel ](assets/dpp-foundation-02.png)
+   ![&#x200B; gebruikersprofiel &#x200B;](assets/dpp-foundation-02.png)
 
 ### HTTP-API {#http-api}
 
@@ -85,13 +85,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 3. In het hogere menu, klik **onbruikbaar maken** om (draai weg) de gebruiker onbruikbaar te maken:
 
-   ![ maak rekening ](assets/dpp-foundation-03.png) onbruikbaar
+   ![&#x200B; maak rekening &#x200B;](assets/dpp-foundation-03.png) onbruikbaar
 
 4. Ten slotte, bevestig de actie.
 
    De gebruikersinterface geeft aan dat de gebruikersaccount is gedeactiveerd door uit te schakelen en een vergrendeling toe te voegen aan de profielkaart:
 
-   ![ gehandicapte rekening ](assets/dpp-foundation-04.png)
+   ![&#x200B; gehandicapte rekening &#x200B;](assets/dpp-foundation-04.png)
 
 ### Gebruikersprofielgegevens verwijderen {#delete-user-profile-information}
 

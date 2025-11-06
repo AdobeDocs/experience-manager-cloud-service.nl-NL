@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## De basisbeginselen {#the-basics}
 
-Een [ Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/content-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s van verwijzingen kunnen worden voorzien.
+Een [&#x200B; Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s van verwijzingen kunnen worden voorzien.
 
 Een Master of Variant van het Fragment van de Ervaring, of beide, gebruikt:
 
@@ -45,11 +45,11 @@ Bijvoorbeeld:
 >
 >Koppelingen verwijzen altijd naar de publicatie-instantie. Ze zijn bedoeld voor gebruik door derden. De koppeling wordt dus altijd aangeroepen vanuit het publicatie-exemplaar en niet vanuit de auteur-instantie.
 >
->Voor verdere informatie zie [ het externaliseren URLs ](/help/implementing/developing/tools/externalizer.md).
+>Voor verdere informatie zie [&#x200B; het externaliseren URLs &#x200B;](/help/implementing/developing/tools/externalizer.md).
 
-![ Onbewerkte vertoning van HTML ](assets/xf-14.png)
+![&#x200B; Onbewerkte vertoning van HTML &#x200B;](assets/xf-14.png)
 
-De selector voor normale uitvoering gebruikt een transformator in plaats van aanvullende scripts. [ het Verschuiven Rewriter ](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wordt gebruikt als transformator. Deze transformator wordt gevormd bij het volgende:
+De selector voor normale uitvoering gebruikt een transformator in plaats van aanvullende scripts. [&#x200B; het Verschuiven Rewriter &#x200B;](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wordt gebruikt als transformator. Deze transformator wordt gevormd bij het volgende:
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -64,7 +64,7 @@ De HTML-uitvoering wordt gegenereerd met behulp van de Sling Rewriter Pipelines.
    * Een lijst met HTML-tags die zijn toegestaan in de uiteindelijke uitvoering.
    * Standaard zijn de volgende tags toegestaan (geen configuratie vereist): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link en script
 
-Adobe raadt u aan de rewriter te configureren met behulp van een overlay. Zie [ Bedekkingen in AEM as a Cloud Service ](/help/implementing/developing/introduction/overlays.md).
+Adobe raadt u aan de rewriter te configureren met behulp van een overlay. Zie [&#x200B; Bedekkingen in AEM as a Cloud Service &#x200B;](/help/implementing/developing/introduction/overlays.md).
 
 ## Sjablonen voor ervaringsfragmenten {#templates-for-experience-fragments}
 
@@ -95,7 +95,7 @@ Om een malplaatje van het Fragment van de Ervaring tot stand te brengen dat door
       `experience-fragments`
 Met dit patroon kunnen gebruikers ervaringsfragmenten maken in /content/experience-fragments, aangezien de eigenschap `cq:allowedTemplates` van deze map alle sjablonen bevat die een naam hebben die begint met `experience-fragment` . Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
 
-1. [ Toegestane malplaatjes ](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) kunnen in de console van de Fragmenten van de Ervaring worden gevormd.
+1. [&#x200B; Toegestane malplaatjes &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) kunnen in de console van de Fragmenten van de Ervaring worden gevormd.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -179,7 +179,7 @@ Voor deze gebruiksgevallen biedt AEM de Link Rewriter Provider Interface.
 
 ### Interface Rewriter-provider koppelen {#link-rewriter-provider-interface}
 
-Voor meer gecompliceerde gevallen, die niet door het [ gebrek ](#default-link-rewriting) worden behandeld, biedt AEM de Interface van de Leverancier van de Verbinding Rewriter aan. Deze interface is een `ConsumerType` -interface die u als service in uw bundels kunt implementeren. Het omzeilt de wijzigingen die AEM uitvoert op interne koppelingen van een HTML-aanbieding, zoals deze worden weergegeven op basis van een Experience Fragment. Met deze interface kunt u het herschrijven van interne HTML-koppelingen aanpassen aan uw bedrijfsbehoeften.
+Voor meer gecompliceerde gevallen, die niet door het [&#x200B; gebrek &#x200B;](#default-link-rewriting) worden behandeld, biedt AEM de Interface van de Leverancier van de Verbinding Rewriter aan. Deze interface is een `ConsumerType` -interface die u als service in uw bundels kunt implementeren. Het omzeilt de wijzigingen die AEM uitvoert op interne koppelingen van een HTML-aanbieding, zoals deze worden weergegeven op basis van een Experience Fragment. Met deze interface kunt u het herschrijven van interne HTML-koppelingen aanpassen aan uw bedrijfsbehoeften.
 
 Voorbeelden van gebruiksgevallen om deze interface als dienst uit te voeren omvatten:
 

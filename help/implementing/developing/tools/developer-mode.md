@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Modus voor ontwikkelaars {#developer-mode}
 
-Wanneer het uitgeven van pagina&#39;s in AEM, zijn verscheidene [ wijzen ](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) beschikbaar, met inbegrip van de wijze van de Ontwikkelaar. In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar technische informatie over de huidige pagina bieden.
+Wanneer het uitgeven van pagina&#39;s in AEM, zijn verscheidene [&#x200B; wijzen &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) beschikbaar, met inbegrip van de wijze van de Ontwikkelaar. In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar technische informatie over de huidige pagina bieden.
 
 Er zijn twee tabbladen:
 
@@ -38,16 +38,16 @@ Deze hulp een ontwikkelaar om:
 
 De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Om het paneel te openen, selecteer **Ontwikkelaar** van de wijzesselecteur in de toolbar van de paginaredacteur:
 
-![ Openende ontwikkelaarwijze ](assets/developer-mode.png)
+![&#x200B; Openende ontwikkelaarwijze &#x200B;](assets/developer-mode.png)
 
 Het deelvenster bestaat uit twee tabbladen:
 
-* **[Componenten](#components)** - dit toont een componentenboom, gelijkend op de [ inhoudsboom ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) voor auteurs
+* **[Componenten](#components)** - dit toont een componentenboom, gelijkend op de [&#x200B; inhoudsboom &#x200B;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) voor auteurs
 * **[Fouten](#errors)** - wanneer de problemen voorkomen, worden de details getoond voor elke component.
 
 ### Tabblad Componenten {#components}
 
-![ Componenten tabel ](assets/developer-mode-components-tab.png)
+![&#x200B; Componenten tabel &#x200B;](assets/developer-mode-components-tab.png)
 
 Dit toont een componentenboom die:
 
@@ -56,7 +56,7 @@ Dit toont een componentenboom die:
 * Hiermee kunt u de structuur uitvouwen en specifieke componenten in de structuur selecteren. De selectie biedt toegang tot componentdetails, zoals:
    * Pad naar opslagplaats
    * Koppelingen naar scripts (toegankelijk in CRXDE Lite)
-   * Het detail van de component zoals gezien in de [ Console van Componenten ](/help/sites-cloud/authoring/components-console.md)
+   * Het detail van de component zoals gezien in de [&#x200B; Console van Componenten &#x200B;](/help/sites-cloud/authoring/components-console.md)
 * De componenten die in de boom worden geselecteerd worden vermeld door een blauwe grens in de redacteur.
 
 Op het tabblad Deze componenten kunt u:
@@ -67,17 +67,17 @@ Op het tabblad Deze componenten kunt u:
 
 Elk componentitem kan de volgende opties hebben:
 
-![ de wijze van de Ontwikkelaar componentenvoorbeeld ](assets/developer-mode-component-example.png)
+![&#x200B; de wijze van de Ontwikkelaar componentenvoorbeeld &#x200B;](assets/developer-mode-component-example.png)
 
 * **Details van de Mening:** een verbinding aan een lijst die toont:
    * Alle componentscripts die worden gebruikt om de component te renderen.
    * Het inhoudspad van de opslagplaats voor deze specifieke component.
 
-     ![ Details van de Mening ](assets/developer-mode-view-details.png)
+     ![&#x200B; Details van de Mening &#x200B;](assets/developer-mode-view-details.png)
 
 * **geef Manuscript uit:** een verbinding die het componentenmanuscript in CRXDE Lite opent.
 
-* **de Details van de Component van de Mening:** opent de details van de component binnen de [ Console van Componenten ](/help/sites-cloud/authoring/components-console.md).
+* **de Details van de Component van de Mening:** opent de details van de component binnen de [&#x200B; Console van Componenten &#x200B;](/help/sites-cloud/authoring/components-console.md).
 
 U kunt een componentitem uitbreiden door te tikken op het chevron of erop te klikken. U kunt ook het volgende weergeven:
 
@@ -86,7 +86,7 @@ U kunt een componentitem uitbreiden door te tikken op het chevron of erop te kli
 
 ### Tabblad Fouten {#errors}
 
-![ het foutenlusje ](assets/developer-mode-errors-tab.png)
+![&#x200B; het foutenlusje &#x200B;](assets/developer-mode-errors-tab.png)
 
 Hopelijk zal het **lusje van Fouten** altijd leeg zijn (zoals hierboven), maar wanneer de problemen voorkomen kunnen de volgende details voor elke component worden getoond:
 

@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -31,7 +31,7 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
+U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](/help/release-notes/maintenance/latest.md) vinden.
 
 ## Video vrijgeven {#release-video}
 
@@ -43,11 +43,11 @@ Bekijk de video Overzicht van de release van januari 2024 voor een overzicht van
 
 ### Extension Manager in AEM Sites {#sites-extension-manager}
 
-**Onderzoek nieuwe [ Extension Manager in AEM Sites ](https://developer.adobe.com/uix/docs/extension-manager/)** om uw opstelling van AEM te personaliseren door uitbreidingen te vormen UI.
+**Onderzoek nieuwe [&#x200B; Extension Manager in AEM Sites &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/)** om uw opstelling van AEM te personaliseren door uitbreidingen te vormen UI.
 
-![ Extension Manager in AEM Sites ](/help/assets/sites/extension-manager/homepage.png)
+![&#x200B; Extension Manager in AEM Sites &#x200B;](/help/assets/sites/extension-manager/homepage.png)
 
-Extension Manager in AEM Sites laat ontwikkelaars en artsen toe om tot [ uitbreidingen UI ](https://developer.adobe.com/uix/docs/) toegang te hebben te beheren en aan te passen die met [ App Builder van Adobe ](https://developer.adobe.com/app-builder/) worden gebouwd om de functionaliteit van AEM Sites te verbeteren.
+Extension Manager in AEM Sites laat ontwikkelaars en artsen toe om tot [&#x200B; uitbreidingen UI &#x200B;](https://developer.adobe.com/uix/docs/) toegang te hebben te beheren en aan te passen die met [&#x200B; App Builder van Adobe &#x200B;](https://developer.adobe.com/app-builder/) worden gebouwd om de functionaliteit van AEM Sites te verbeteren.
 Met de Extension Manager kunt u:
 
 * Extensies per geval in- of uitschakelen;
@@ -72,7 +72,7 @@ Experience Manager Assets genereert nu standaard voorvertoningen van alle onders
 
 Met de Elementen kunt u nu lijst van gewezen personen definiëren die woorden bevat die niet als slimme tags aan elementen mogen worden toegevoegd wanneer ze naar de opslagplaats worden geüpload. Met deze functie kunt u de naleving van het merk handhaven en de inspanningen voor het reduceren van slimme tags verminderen.
 
-![ Slimme lijst van gewezen personen van Markeringen ](/help/assets/assets/block-tags.png)
+![&#x200B; Slimme lijst van gewezen personen van Markeringen &#x200B;](/help/assets/assets/block-tags.png)
 
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
@@ -89,7 +89,7 @@ Met de Elementen kunt u nu lijst van gewezen personen definiëren die woorden be
 
 * **[Recht aan linkertaalsteun](/help/forms/supporting-new-language-localization-core-components.md)**: De adaptieve Forms die op de Componenten van de Kern wordt gebouwd kan nu in een (RTL) taal zoals Arabisch, Perzisch, en Urdu worden voorgesteld. De RTL-talen worden wereldwijd gesproken door meer dan 2 miljard mensen. Door een formulier in RTL-taal te gebruiken, kunt u het bereik van uw adaptieve formulieren uitbreiden naar deze verschillende doelgroepen en selecteren in RTL-markten. In bepaalde regio&#39;s is het ook een wettelijk mandaat om formulieren in de lokale taal te verstrekken. Door lokale talen aan te passen, opent u niet alleen deuren voor een breder publiek, maar zorgt u ook voor naleving van relevante wetten en regels.
 
-  ![ Recht aan linkertaalsteun ](/help/forms/assets/right-to-left-language-support.png)
+  ![&#x200B; Recht aan linkertaalsteun &#x200B;](/help/forms/assets/right-to-left-language-support.png)
 
 * **[bescherm uw documenten met DocAssurance APIs (Deel van Communicatie APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance APIs machtigt u om gevoelige informatie te beschermen door de documenten te ondertekenen en te coderen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
 
@@ -104,15 +104,15 @@ De operationele telemetrieservice biedt een nauwkeuriger weergave van gebruikers
 
 ### Ondersteuning voor Dynatrace {#dynatrace}
 
-Dynatrace-klanten kunnen hun AEM-gebruik controleren. [ las hoe ](/help/implementing/cloud-manager/dynatrace.md) om connectiviteit met uw milieu van Dynatrace voor toepassingsprestatie controle te verzoeken. Houd er rekening mee dat New Relic APM, dat voor alle klanten beschikbaar is, geen gegevens meer zal verzamelen als Dynatrace is ingeschakeld.
+Dynatrace-klanten kunnen hun AEM-gebruik controleren. [&#x200B; las hoe &#x200B;](/help/implementing/cloud-manager/dynatrace.md) om connectiviteit met uw milieu van Dynatrace voor toepassingsprestatie controle te verzoeken. Houd er rekening mee dat New Relic APM, dat voor alle klanten beschikbaar is, geen gegevens meer zal verzamelen als Dynatrace is ingeschakeld.
 
 ### RDE-ondersteuning voor front-end code met behulp van sitemenu&#39;s en sitesjablonen: Vroege adopter-programma {#rde-frontend-early-adopter}
 
-{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) [ steunen nu front-end code die op ](/help/implementing/developing/introduction/rapid-development-environments.md) plaatsthema&#39;s [ en ](/help/sites-cloud/administering/site-creation/site-themes.md) plaatsmalplaatjes [ wordt gebaseerd, voor vroege adopters. ](/help/sites-cloud/administering/site-creation/site-templates.md) Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan a [ front-end pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Gelieve te bereiken uit aan **aemcs-rde-support@adobe.com** om het uit te proberen en te verstrekken terugkoppelt.
+{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) [&#x200B; steunen nu front-end code die op &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md) plaatsthema&#39;s [&#x200B; en &#x200B;](/help/sites-cloud/administering/site-creation/site-themes.md) plaatsmalplaatjes [&#x200B; wordt gebaseerd, voor vroege adopters. &#x200B;](/help/sites-cloud/administering/site-creation/site-templates.md) Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan a [&#x200B; front-end pijpleiding &#x200B;](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Gelieve te bereiken uit aan **aemcs-rde-support@adobe.com** om het uit te proberen en te verstrekken terugkoppelt.
 
 ### Programma voor vroege adoptie van domeintoewijzing {#cdn-config-early-adopter}
 
-Naast onlangs vrijgegeven [ Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvat, is er een kans om de Pijpleiding van de Configuratie te gebruiken om [ andere types van configuratie CDN ](/help/implementing/dispatcher/cdn-configuring-traffic.md) te verklaren en op te stellen. U kunt deelnemen aan het programma voor vroege adoptie door **`aemcs-cdn-config-adopter@adobe.com`** per e-mail te verzenden om toegang te krijgen tot:
+Naast onlangs vrijgegeven [&#x200B; Regels van de Filter van het Verkeer &#x200B;](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvat, is er een kans om de Pijpleiding van de Configuratie te gebruiken om [&#x200B; andere types van configuratie CDN &#x200B;](/help/implementing/dispatcher/cdn-configuring-traffic.md) te verklaren en op te stellen. U kunt deelnemen aan het programma voor vroege adoptie door **`aemcs-cdn-config-adopter@adobe.com`** per e-mail te verzenden om toegang te krijgen tot:
 
 * 301/302 omleidingen op de client
 * verzoeken aan de rand van willekeurige oorsprong proxying
@@ -122,8 +122,8 @@ Naast onlangs vrijgegeven [ Regels van de Filter van het Verkeer ](/help/securit
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.

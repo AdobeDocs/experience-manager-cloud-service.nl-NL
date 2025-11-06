@@ -19,14 +19,14 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Dit artikel |
 
 AEM Forms ondersteunt aangepaste functies, zodat gebruikers JavaScript-functies kunnen definiëren voor het implementeren van complexe bedrijfsregels. Deze aangepaste functies vergroten de mogelijkheden van formulieren door het bewerken en verwerken van ingevoerde gegevens te vergemakkelijken, zodat aan bepaalde vereisten wordt voldaan. Met deze opties kunt u het formuliergedrag dynamisch wijzigen op basis van vooraf gedefinieerde criteria. Met aangepaste functies kunnen ontwikkelaars ook complexe validatielogica afdwingen, dynamische berekeningen uitvoeren en de weergave of het gedrag van formulierelementen bepalen op basis van gebruikersinteracties of vooraf gedefinieerde criteria.
 
 >[!NOTE]
 >
-> Zorg ervoor dat de [ kerncomponent ](https://github.com/adobe/aem-core-forms-components) aan de recentste versie wordt geplaatst om de recentste eigenschappen te gebruiken.
+> Zorg ervoor dat de [&#x200B; kerncomponent &#x200B;](https://github.com/adobe/aem-core-forms-components) aan de recentste versie wordt geplaatst om de recentste eigenschappen te gebruiken.
 
 ## Gebruik van aangepaste functies {#uses-of-custom-function}
 
@@ -73,7 +73,7 @@ De parameter is een lijst met argumenten die door aangepaste functies worden geb
    * date []: Vertegenwoordigt een serie van datumwaarden.
    * array: vertegenwoordigt een algemene array met waarden van verschillende typen.
    * object: vertegenwoordigt een formulierobject dat aan een aangepaste functie wordt doorgegeven in plaats van dat de waarde rechtstreeks wordt doorgegeven.
-   * bereik: vertegenwoordigt het globals object, dat alleen-lezen variabelen bevat, zoals formulierinstanties, doelveldinstanties en methoden voor het uitvoeren van formulierwijzigingen binnen aangepaste functies. Deze wordt gedeclareerd als de laatste parameter in JavaScript-annotaties en is niet zichtbaar in de regeleditor van een adaptief formulier. De bereikparameter benadert het object van het formulier of de component om de regel of gebeurtenis te activeren die vereist is voor formulierverwerking. Voor verdere informatie over het voorwerp Globals en hoe te om het te gebruiken, [ klik hier ](/help/forms/custom-function-core-component-scope-function.md).
+   * bereik: vertegenwoordigt het globals object, dat alleen-lezen variabelen bevat, zoals formulierinstanties, doelveldinstanties en methoden voor het uitvoeren van formulierwijzigingen binnen aangepaste functies. Deze wordt gedeclareerd als de laatste parameter in JavaScript-annotaties en is niet zichtbaar in de regeleditor van een adaptief formulier. De bereikparameter benadert het object van het formulier of de component om de regel of gebeurtenis te activeren die vereist is voor formulierverwerking. Voor verdere informatie over het voorwerp Globals en hoe te om het te gebruiken, [&#x200B; klik hier &#x200B;](/help/forms/custom-function-core-component-scope-function.md).
 
 Het parametertype is niet hoofdlettergevoelig en spaties zijn niet toegestaan in de parameternaam.
 
@@ -120,15 +120,15 @@ Overweeg het volgende codefragment, waar input2 als facultatieve parameter wordt
 
 De volgende illustratie wordt weergegeven met behulp van de aangepaste functie `OptionalParameterFunction` in de regeleditor:
 
-![ Optionele of vereiste parameters ](/help/forms/assets/optional-default-params.png)
+![&#x200B; Optionele of vereiste parameters &#x200B;](/help/forms/assets/optional-default-params.png)
 
 U kunt de regel opslaan zonder een waarde voor de vereiste parameters op te geven, maar de regel wordt niet uitgevoerd en er wordt een waarschuwingsbericht weergegeven als:
 
-![ onvolledige regelwaarschuwing ](/help/forms/assets/incomplete-rule.png)
+![&#x200B; onvolledige regelwaarschuwing &#x200B;](/help/forms/assets/incomplete-rule.png)
 
 Wanneer de gebruiker de optionele parameter leeg laat, wordt de &#39;Undefined&#39;-waarde doorgegeven aan de aangepaste functie voor de optionele parameter.
 
-Meer over leren hoe te om facultatieve parameters in JSDocs te bepalen, [ klik hier ](https://jsdoc.app/tags-param).
+Meer over leren hoe te om facultatieve parameters in JSDocs te bepalen, [&#x200B; klik hier &#x200B;](https://jsdoc.app/tags-param).
 
 ### Retourtype
 
@@ -228,7 +228,7 @@ Reguliere expressies van Refactor om de constructor RegExp te gebruiken voor con
 
 ## Volgende stap
 
-Om een douanefunctie in uw AanpassingsVorm tot stand te brengen en te gebruiken, verwijs naar [ creeer een Functie van de Douane voor een AanpassingsVorm die op het artikel van de Componenten van de Kern wordt gebaseerd ](/help/forms/custom-function-core-component-create-function.md).
+Om een douanefunctie in uw AanpassingsVorm tot stand te brengen en te gebruiken, verwijs naar [&#x200B; creeer een Functie van de Douane voor een AanpassingsVorm die op het artikel van de Componenten van de Kern wordt gebaseerd &#x200B;](/help/forms/custom-function-core-component-create-function.md).
 
 ## Zie ook
 

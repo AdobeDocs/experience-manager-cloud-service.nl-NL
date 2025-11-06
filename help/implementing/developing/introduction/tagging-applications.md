@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Voor programmatisch werken met tags of tags uitbreiden binnen een aangepaste AEM-toepassing, wordt in dit document het gebruik van de opdracht
 
-* [ Tagging API ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
+* [&#x200B; Tagging API &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
 
 die met de
 
@@ -23,12 +23,12 @@ die met de
 
 Voor gerelateerde informatie over codering:
 
-* Zie [ Gebruikend Markeringen ](/help/sites-cloud/authoring/sites-console/tags.md) voor informatie over het etiketteren van inhoud als inhoudauteur.
+* Zie [&#x200B; Gebruikend Markeringen &#x200B;](/help/sites-cloud/authoring/sites-console/tags.md) voor informatie over het etiketteren van inhoud als inhoudauteur.
 * Zie Tags beheren voor een beheerder. Het standpunt van de beheerder over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
 
 ## Overzicht van de API voor tags {#overview-of-the-tagging-api}
 
-De implementatie van het [ etiketterende kader ](tagging-framework.md) in AEM staat beheer van markeringen en markeringsinhoud toe gebruikend JCR API. `TagManager` zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array, niet worden gedupliceerd, `TagID` verwijdert het aanwijzen van niet-bestaande tags en werkt `TagID` s bij voor verplaatste of samengevoegde tags. `TagManager` gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen zijn in het [ com.day.cq.tagging ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) pakket:
+De implementatie van het [&#x200B; etiketterende kader &#x200B;](tagging-framework.md) in AEM staat beheer van markeringen en markeringsinhoud toe gebruikend JCR API. `TagManager` zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array, niet worden gedupliceerd, `TagID` verwijdert het aanwijzen van niet-bestaande tags en werkt `TagID` s bij voor verplaatste of samengevoegde tags. `TagManager` gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen zijn in het [&#x200B; com.day.cq.tagging &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) pakket:
 
 * `JcrTagManagerFactory` - retourneert een op JCR gebaseerde implementatie van een `TagManager` . Dit is de referentie-implementatie van de API voor labelen.
 * `TagManager` - Hiermee kunt u tags oplossen en maken op basis van paden en namen.

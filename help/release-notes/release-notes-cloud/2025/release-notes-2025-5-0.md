@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
+>Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [&#x200B; Update van het Product van de Prioriteit Adobe &#x200B;](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Releasedatum {#release-date}
 
@@ -31,7 +31,7 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
+U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](/help/release-notes/maintenance/latest.md) vinden.
 
 ## Video vrijgeven {#release-video}
 
@@ -43,13 +43,13 @@ Bekijk de video Overzicht van de release van mei 2025 voor een overzicht van de 
 
 **AI-Gegenereerde meta-gegevens**
 
-AEM Assets gebruikt nu [ AI om meta-gegevens, met inbegrip van Titel, Beschrijving, en Sleutelwoorden ](/help/assets/metadata-assets-view.md#ai-smart-tags) automatisch te produceren. Deze door AI gegenereerde velden verbeteren de nauwkeurigheid van metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, ingedeeld en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud.
+AEM Assets gebruikt nu [&#x200B; AI om meta-gegevens, met inbegrip van Titel, Beschrijving, en Sleutelwoorden &#x200B;](/help/assets/metadata-assets-view.md#ai-smart-tags) automatisch te produceren. Deze door AI gegenereerde velden verbeteren de nauwkeurigheid van metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, ingedeeld en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud.
 
-![ AI geproduceerde meta-gegevens ](/help/assets/assets/enhanced-smart-tags.png)
+![&#x200B; AI geproduceerde meta-gegevens &#x200B;](/help/assets/assets/enhanced-smart-tags.png)
 
 **Integratie met Figma**
 
-AEM Assets integreert native met Figma, waardoor ontwerpers rechtstreeks vanuit de gebruikersinterface van Figma toegang hebben tot de elementen die in AEM Assets zijn opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, in het Figma-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in de AEM Assets-opslagruimte. Om tot de Schakelaar van AEM Assets toegang te hebben beschikbaar op de Communautaire pagina van Figma, klik [ hier ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
+AEM Assets integreert native met Figma, waardoor ontwerpers rechtstreeks vanuit de gebruikersinterface van Figma toegang hebben tot de elementen die in AEM Assets zijn opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, in het Figma-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in de AEM Assets-opslagruimte. Om tot de Schakelaar van AEM Assets toegang te hebben beschikbaar op de Communautaire pagina van Figma, klik [&#x200B; hier &#x200B;](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
@@ -58,7 +58,7 @@ AEM Assets integreert native met Figma, waardoor ontwerpers rechtstreeks vanuit 
 
 **Op attributen-Gebaseerd Toegangsbeheer (ABAC)**
 
-[ Content Hub staat nu u toe om op regel-gebaseerde beperkingen op toegangsactiva ](/help/assets/attribute-based-access-control.md) toe te passen. Machtigingen voor bedrijfsmiddelen zorgen voor governance en zorgen er ook voor dat alleen de relevante bedrijfsmiddelen toegankelijk zijn voor gebruikers.
+[&#x200B; Content Hub staat nu u toe om op regel-gebaseerde beperkingen op toegangsactiva &#x200B;](/help/assets/attribute-based-access-control.md) toe te passen. Machtigingen voor bedrijfsmiddelen zorgen voor governance en zorgen er ook voor dat alleen de relevante bedrijfsmiddelen toegankelijk zijn voor gebruikers.
 
 De regels voor het beperken van elementen zijn gebaseerd op metagegevens en als de voorwaarden die in de regel zijn gedefinieerd overeenkomen met de metagegevens van het element, wordt het element weergegeven aan de gebruikersgroepen.
 
@@ -72,19 +72,19 @@ Enkele belangrijke voordelen van op Attribuut-Gebaseerd Toegangsbeheer omvatten:
 
 **het Brandmerken UI**
 
-Content Hub staat nu beheerders toe om het gebruikersinterface met brand-specifieke elementen [, met inbegrip van bannerbeelden, bannertitels en lichaamstekst, evenals primaire en secundaire kleuren aan te passen. ](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub) Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
+Content Hub staat nu beheerders toe om het gebruikersinterface met brand-specifieke elementen [, met inbegrip van bannerbeelden, bannertitels en lichaamstekst, evenals primaire en secundaire kleuren aan te passen. &#x200B;](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub) Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
 
-![ het Brandmerken UI ](/help/assets/assets/content-hub-ui-branding.png)
+![&#x200B; het Brandmerken UI &#x200B;](/help/assets/assets/content-hub-ui-branding.png)
 
 **Openbare verbinding delend**
 
-Content Hub steunt nu [ het produceren van shareable verbindingen om externe gebruikers ](/help/assets/share-assets-content-hub.md##share-assets), zonder toepassingstoegang toe te staan, om activa meta-gegevens of downloadactiva te bekijken.
+Content Hub steunt nu [&#x200B; het produceren van shareable verbindingen om externe gebruikers &#x200B;](/help/assets/share-assets-content-hub.md##share-assets), zonder toepassingstoegang toe te staan, om activa meta-gegevens of downloadactiva te bekijken.
 
-![ het Brandmerken UI ](/help/assets/assets/public-and-private-link.png)
+![&#x200B; het Brandmerken UI &#x200B;](/help/assets/assets/public-and-private-link.png)
 
 **het bestuur van Inzamelingen**
 
-Content Hub laat u [ nu toegang tot inzamelingen tijdens verwezenlijking controleren, die slechts erkende gebruikers verzekeren kan gegroepeerde activa ](/help/assets/collections-content-hub.md##create-collections) bekijken of beheren. Het zorgt voor betere veiligheid, betere samenwerking, georganiseerd activabeheer, en vereenvoudigd bestuur.
+Content Hub laat u [&#x200B; nu toegang tot inzamelingen tijdens verwezenlijking controleren, die slechts erkende gebruikers verzekeren kan gegroepeerde activa &#x200B;](/help/assets/collections-content-hub.md##create-collections) bekijken of beheren. Het zorgt voor betere veiligheid, betere samenwerking, georganiseerd activabeheer, en vereenvoudigd bestuur.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
@@ -94,19 +94,19 @@ Content Hub laat u [ nu toegang tot inzamelingen tijdens verwezenlijking control
 
 **Download veelvoudige activa als ZIP**
 
-Content Hub staat nu ook u toe om de geselecteerde activa en hun vertoningen in een dossier van het PIT [ en niet als afzonderlijke dossiers te downloaden die dossierbeheer voor u vereenvoudigen.](/help/assets/download-assets-content-hub.md#download-asset-renditions)
+Content Hub staat nu ook u toe om de geselecteerde activa en hun vertoningen in een dossier van het PIT [&#x200B; en niet als afzonderlijke dossiers te downloaden die dossierbeheer voor u vereenvoudigen.](/help/assets/download-assets-content-hub.md#download-asset-renditions)
 
 **Dynamische vertoningen van Media in Content Hub**
 
-Heb toegang tot al uw [ Dynamische vooraf ingestelde vertoningen van Media en slim-gewassen voor download, direct van binnen het Gebruikersinterface van Content Hub ](/help/assets/download-assets-content-hub.md#download-asset-renditions).
+Heb toegang tot al uw [&#x200B; Dynamische vooraf ingestelde vertoningen van Media en slim-gewassen voor download, direct van binnen het Gebruikersinterface van Content Hub &#x200B;](/help/assets/download-assets-content-hub.md#download-asset-renditions).
 
-&#x200B; ![ Dynamische vertoningen van Media ](/help/assets/assets/dm-renditions-content-hub.png)
+&#x200B; ![&#x200B; Dynamische vertoningen van Media &#x200B;](/help/assets/assets/dm-renditions-content-hub.png)
 
 ### Nieuwe functies in dynamische media {#new-features-dynamic-media}
 
 **Dynamische integratie van Media inheemse met de &#x200B; van AJO B2C**
 
-[ Inheemse integratie van de Dynamische Media van Experience Manager (AEM) met Journey Optimizer (AJO) B2C ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), toelatend marketers om AEM Dynamic Media activa (vertoning en Malplaatje DM) in de inhoud van AJO gemakkelijk in te bedden en updates in real time en hyper-gepersonaliseerde ervaringen over kanalen te leveren.
+[&#x200B; Inheemse integratie van de Dynamische Media van Experience Manager (AEM) met Journey Optimizer (AJO) B2C &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), toelatend marketers om AEM Dynamic Media activa (vertoning en Malplaatje DM) in de inhoud van AJO gemakkelijk in te bedden en updates in real time en hyper-gepersonaliseerde ervaringen over kanalen te leveren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
@@ -114,25 +114,25 @@ Heb toegang tot al uw [ Dynamische vooraf ingestelde vertoningen van Media en sl
 
 ### Functies vóór de release
 
-* [ Universele Redacteur voor AanpassingsForms en de Fragmenten van de Vorm ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): De Universele Redacteur steunt nu de verwezenlijking van zowel AanpassingsForms als herbruikbare Fragments van de Vorm. Auteurs kunnen visueel formulieren maken, verzendacties configureren en reCAPTCHA-validatie toevoegen, allemaal in een vereenvoudigde WYSIWYG-ontwerpomgeving. Deze mogelijkheid versnelt het maken van formulieren, verbetert de consistentie en verbetert de bescherming tegen spam en geautomatiseerd misbruik.
+* [&#x200B; Universele Redacteur voor AanpassingsForms en de Fragmenten van de Vorm &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): De Universele Redacteur steunt nu de verwezenlijking van zowel AanpassingsForms als herbruikbare Fragments van de Vorm. Auteurs kunnen visueel formulieren maken, verzendacties configureren en reCAPTCHA-validatie toevoegen, allemaal in een vereenvoudigde WYSIWYG-ontwerpomgeving. Deze mogelijkheid versnelt het maken van formulieren, verbetert de consistentie en verbetert de bescherming tegen spam en geautomatiseerd misbruik.
 
-* [ de Bibliotheek van het Document van SharePoint - sparen Bijlagen met Oorspronkelijke Filenames ](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): U hebt nu de optie om vormgehechtheid te bewaren gebruikend hun originele filenames wanneer het opslaan van hen in een Bibliotheek van het Document van SharePoint. Deze verbetering vereenvoudigt de identificatie en het beheer van geüploade bestanden.
+* [&#x200B; de Bibliotheek van het Document van SharePoint - sparen Bijlagen met Oorspronkelijke Filenames &#x200B;](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): U hebt nu de optie om vormgehechtheid te bewaren gebruikend hun originele filenames wanneer het opslaan van hen in een Bibliotheek van het Document van SharePoint. Deze verbetering vereenvoudigt de identificatie en het beheer van geüploade bestanden.
 
 * **Redacteur van de Regel**:
-   * [ Binaire Voorwaarde met de Gebeurtenis van de Klik in &quot;wanneer&quot;Clausule ](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): De Redacteur van de Regel staat nu toe combinerend een gebeurtenis van de knoopklik (_wordt geklikt_) met andere voorwaarden binnen de &quot;wanneer&quot;clausule. Dit laat nauwkeurigere controle over regeluitvoering toe die op gebruikersinteractie en andere factoren wordt gebaseerd. Opmerking: wanneer u meerdere voorwaarden gebruikt, moet de gebeurtenis click de eerste weergegeven voorwaarde zijn.
-   * [ de Voorwaarden van de Bevestiging voor Gebieden en Comités ](/help/forms/rule-editor-core-components-usecases.md): De Redacteur van de Regel omvat nu _IsValid_ en _IsNotValid_ voorwaarden. Hiermee kunt u de validatiestatus controleren van specifieke velden of volledige deelvensters (zoals lay-outs zoals Horizontale tabbladen, Verticale tabbladen, Accordeons en Wizards), waardoor de navigatie en gebruikerservaring van formulieren op basis van validatieresultaten wordt verbeterd.
-* [ Verbeterd Beheer van het Toepassingsgebied voor de Lijsten van SharePoint ](/help/forms/connect-forms-to-sharepoint-list.md): De plaatsen van SharePoint steunen nu alle beheerde wegen, bijvoorbeeld, /sites en /teams. Deze verbetering maakt een bredere integratie mogelijk in verschillende SharePoint-sitestructuren, waardoor u flexibeler kunt werken met organisatorische inhoud.
-* [ Steun voor het Opslaan van Document van Verslag aan de Lijst van SharePoint ](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms die gebruikend een op lijst-Gebaseerd Model van de Gegevens van de Vorm van SharePoint (FDM) wordt gecreeerd kan het Document van Verslag (DoR) aan de Lijsten van SharePoint nu opslaan door het Document van het het gebiedsbezit van de Verwijzing van de Bind van het Verslag te vormen. Dankzij deze verbetering kunnen ondersteunde formuliergegevens en -documenten naadloos worden geïntegreerd met SharePoint-opslag.
+   * [&#x200B; Binaire Voorwaarde met de Gebeurtenis van de Klik in &quot;wanneer&quot;Clausule &#x200B;](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): De Redacteur van de Regel staat nu toe combinerend een gebeurtenis van de knoopklik (_wordt geklikt_) met andere voorwaarden binnen de &quot;wanneer&quot;clausule. Dit laat nauwkeurigere controle over regeluitvoering toe die op gebruikersinteractie en andere factoren wordt gebaseerd. Opmerking: wanneer u meerdere voorwaarden gebruikt, moet de gebeurtenis click de eerste weergegeven voorwaarde zijn.
+   * [&#x200B; de Voorwaarden van de Bevestiging voor Gebieden en Comités &#x200B;](/help/forms/rule-editor-core-components-usecases.md): De Redacteur van de Regel omvat nu _IsValid_ en _IsNotValid_ voorwaarden. Hiermee kunt u de validatiestatus controleren van specifieke velden of volledige deelvensters (zoals lay-outs zoals Horizontale tabbladen, Verticale tabbladen, Accordeons en Wizards), waardoor de navigatie en gebruikerservaring van formulieren op basis van validatieresultaten wordt verbeterd.
+* [&#x200B; Verbeterd Beheer van het Toepassingsgebied voor de Lijsten van SharePoint &#x200B;](/help/forms/connect-forms-to-sharepoint-list.md): De plaatsen van SharePoint steunen nu alle beheerde wegen, bijvoorbeeld, /sites en /teams. Deze verbetering maakt een bredere integratie mogelijk in verschillende SharePoint-sitestructuren, waardoor u flexibeler kunt werken met organisatorische inhoud.
+* [&#x200B; Steun voor het Opslaan van Document van Verslag aan de Lijst van SharePoint &#x200B;](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms die gebruikend een op lijst-Gebaseerd Model van de Gegevens van de Vorm van SharePoint (FDM) wordt gecreeerd kan het Document van Verslag (DoR) aan de Lijsten van SharePoint nu opslaan door het Document van het het gebiedsbezit van de Verwijzing van de Bind van het Verslag te vormen. Dankzij deze verbetering kunnen ondersteunde formuliergegevens en -documenten naadloos worden geïntegreerd met SharePoint-opslag.
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
 
 #### Adobe Experience Platform (AEP) Integratie met Forms
 
-* [ Integratie van AEM Forms met Adobe Experience Platform ](/help/forms/aem-forms-aep-connector.md): AEM Forms aan de Schakelaar van Adobe Experience Platform laat naadloze integratie tussen Aanpassings Forms en Adobe Experience Platform toe. Met deze functie kunnen formuliergegevens worden toegewezen aan XDM-schema&#39;s en in real-time rechtstreeks naar AEP worden verzonden. Het stroomlijnt gegevensvangst voor verpersoonlijking en activeringsgebruiksgevallen over de oplossingen van Adobe Experience Cloud.
+* [&#x200B; Integratie van AEM Forms met Adobe Experience Platform &#x200B;](/help/forms/aem-forms-aep-connector.md): AEM Forms aan de Schakelaar van Adobe Experience Platform laat naadloze integratie tussen Aanpassings Forms en Adobe Experience Platform toe. Met deze functie kunnen formuliergegevens worden toegewezen aan XDM-schema&#39;s en in real-time rechtstreeks naar AEP worden verzonden. Het stroomlijnt gegevensvangst voor verpersoonlijking en activeringsgebruiksgevallen over de oplossingen van Adobe Experience Cloud.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
@@ -140,7 +140,7 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
 
 Adobe controleert regelmatig functies, bibliotheken, API&#39;s en configuraties om ervoor te zorgen dat deze voldoen aan de standaarden voor prestaties, beveiliging en waarde. Wanneer de mogelijkheden niet meer aan deze normen voldoen, zijn zij duidelijk voor verval en het gebruik moet tegen een gespecificeerde verwijderingsdatum ophouden. Adobe leidt tot deze datum en herinnert klanten aan e-mailmeldingen en acties die in Cloud Manager moeten worden uitgevoerd voordat ze nieuwe builds gaan gebruiken of implementeren. Als u de vereiste actie niet uitvoert, kan dit ertoe leiden dat u niet kunt upgraden naar nieuwe versies van AEM. Dit kan gevolgen hebben voor de beveiliging, prestaties, betrouwbaarheid en beschikbaarheid.
 
-Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md) voor verdere informatie.
+Zie het [&#x200B; afgekeuringsartikel &#x200B;](/help/release-notes/deprecated-removed-features.md) voor verdere informatie.
 
 #### Verouderde Java API&#39;s en OSGi-configuratie die verwijderingsdatums naderen {#deprecated-near-removals}
 
@@ -179,13 +179,13 @@ OSGi-eigenschappen:
 
 **Java 11 runtime** is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere **runtime Java 21**.
 
-Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ runtime van Java 21 vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met specifieke volgende stappen moeten ontvangen. Gelieve te verzekeren alle vereiste updates tegen **28 augustus, 2025** worden voltooid, zodat kan uw milieu zonder verstoring worden bevorderd.
+Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [&#x200B; runtime van Java 21 vereisten &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met specifieke volgende stappen moeten ontvangen. Gelieve te verzekeren alle vereiste updates tegen **28 augustus, 2025** worden voltooid, zodat kan uw milieu zonder verstoring worden bevorderd.
 
 Opmerking: de runtimeversie staat los van de build-versie van uw code. We raden u aan om samen te werken met Java 21, maar Java 11-builds worden voorlopig nog wel ondersteund. In de toekomst wordt een afzonderlijke aankondiging voor het vervangen van Java 11-builds gedeeld.
 
 ### Handhaving van het configuratiebeleid van AEM Java Logs {#logconfig-policy}
 
-Zoals vermeld in de opmerkingen bij de release van april, moeten AEM Java-logboeken een standaardindeling gebruiken voor betrouwbare bewaking in alle klantomgevingen. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [ Registreren artikel ](/help/implementing/developing/introduction/logging.md#configuration-loggers).
+Zoals vermeld in de opmerkingen bij de release van april, moeten AEM Java-logboeken een standaardindeling gebruiken voor betrouwbare bewaking in alle klantomgevingen. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [&#x200B; Registreren artikel &#x200B;](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
 Beginnend in **eind Augustus**, zullen om het even welke niet gestaafde overrides van het douaneregistreren worden genegeerd. Gebaseerd op onze analyse, zullen de meeste klanten niet beïnvloed worden en Adobe zal direct om het even welke klanten contacteren waarvan huidige configuratie kan worden beïnvloed.
 
@@ -226,7 +226,7 @@ Nochtans, om bewaarplaatsprestaties te optimaliseren, die in **eind juni 2025** 
 
 * U kunt deze gebreken door configuratie wijzigen YAML, die gebruikend de config pijpleiding wordt opgesteld.
 
-Voor meer details, zie het [ artikel van de Taken van het Onderhoud ](/help/operations/maintenance.md#defaults).
+Voor meer details, zie het [&#x200B; artikel van de Taken van het Onderhoud &#x200B;](/help/operations/maintenance.md#defaults).
 
 ### Edge Computing (Alpha-programma) {#edge-computing}
 
@@ -240,42 +240,42 @@ Vaak voorkomende gevallen van gebruik zijn:
 * Reacties van externe API&#39;s opnieuw opmaken (en wellicht meerdere API&#39;s samenvoegen) voordat deze naar de browser worden verzonden
 * Door de server gerenderde HTML aan de rand samenstellen en bedienen met inhoud die vanuit verschillende achtergronden is geplaatst
 
-We hebben een beperkt aantal mogelijkheden voor AEM Publish Delivery- of Edge Delivery Services-projecten voor live productiesites. Als u in het deelnemen geinteresseerd bent of meer wilt leren, gelieve [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval te e-mailen.
+We hebben een beperkt aantal mogelijkheden voor AEM Publish Delivery- of Edge Delivery Services-projecten voor live productiesites. Als u in het deelnemen geinteresseerd bent of meer wilt leren, gelieve [&#x200B; aemcs-edgecompute-feedback@adobe.com &#x200B;](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval te e-mailen.
 
 ### CDN-configuratie voor Edge Delivery Services (Beta-programma) {#cdn-eds-beta}
 
-Adobe-Beheerde CDN biedt flexibele configuratieopties aan, zoals die in het [ wordt beschreven Config Artikel van de Pijpleiding ](/help/operations/config-pipeline.md#configurations).
+Adobe-Beheerde CDN biedt flexibele configuratieopties aan, zoals die in het [&#x200B; wordt beschreven Config Artikel van de Pijpleiding &#x200B;](/help/operations/config-pipeline.md#configurations).
 
-Nu in een bèta, stel een config pijpleiding voor eigenschappen met inbegrip van CDN oorsprongselectors, reactie en verzoektransformaties, en meer op. Gelieve te bereiken uit aan [ aemcs-cdn-config-adopter@adobe.com ](mailto:aemcs-cdn-config-adopter@adobe.com) met de details van uw gebruiksgeval.
+Nu in een bèta, stel een config pijpleiding voor eigenschappen met inbegrip van CDN oorsprongselectors, reactie en verzoektransformaties, en meer op. Gelieve te bereiken uit aan [&#x200B; aemcs-cdn-config-adopter@adobe.com &#x200B;](mailto:aemcs-cdn-config-adopter@adobe.com) met de details van uw gebruiksgeval.
 
 ### AEM Log-Forwarding aan Meer Doelen (het Programma van Beta) {#log-forwarding-beta}
 
 Hoewel de logboeken van Cloud Manager kunnen worden gedownload, vinden vele organisaties het nuttig om die logboeken aan een aangewezen registrerenbestemming te stromen. AEM biedt al ondersteuning voor het doorsturen van AEM- en CDN-logbestanden naar Azure Blob Storage, Datadog, HTTPS, Elasticsearch (en OpenSearch) en Splunk. Deze eigenschap wordt gevormd op een zelf-servermanier, en opgesteld gebruikend de Pijpleiding Config.
 
-Nu in bèta kunt u AEM-logs doorsturen naar Amazon S3, Sumo Logic en uw eigen New Relic-account (niet naar het door Adobe verschafte account). Merk op dat de logboeken van AEM (met inbegrip van Apache/Dispatcher) voor deze registrerenbestemmingen, maar niet CDN- logboeken worden gesteund. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) voor toegang.
+Nu in bèta kunt u AEM-logs doorsturen naar Amazon S3, Sumo Logic en uw eigen New Relic-account (niet naar het door Adobe verschafte account). Merk op dat de logboeken van AEM (met inbegrip van Apache/Dispatcher) voor deze registrerenbestemmingen, maar niet CDN- logboeken worden gesteund. E-mail [&#x200B; aemcs-logforwarding-beta@adobe.com &#x200B;](mailto:aemcs-logforwarding-beta@adobe.com) voor toegang.
 
-Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/developing/introduction/log-forwarding.md).
+Leer meer in het [&#x200B; logboek door:sturen documentatie &#x200B;](/help/implementing/developing/introduction/log-forwarding.md).
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
 
 ## Universele editor {#universal-editor}
 
-U kunt een volledige lijst van Universele versies van de Redacteur [ hier ](/help/release-notes/universal-editor/current.md) vinden.
+U kunt een volledige lijst van Universele versies van de Redacteur [&#x200B; hier &#x200B;](/help/release-notes/universal-editor/current.md) vinden.
 
 ## Variaties genereren {#generate-variations}
 
-U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/generative-ai/release-notes-generate-variations.md) vinden.
+U kunt een volledige lijst van Generate de versies van Variaties [&#x200B; hier &#x200B;](/help/generative-ai/release-notes-generate-variations.md) vinden.
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.

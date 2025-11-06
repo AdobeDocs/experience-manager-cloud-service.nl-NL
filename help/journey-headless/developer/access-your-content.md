@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Toegang tot uw inhoud via API&#39;s voor levering via AEM {#access-your-content}
 
-In dit deel van de [ Hoofdloze Reis van de Ontwikkelaar van AEM ](overview.md), kunt u leren hoe te om de vragen van GraphQL te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en het te voeren aan uw app (koploze levering).
+In dit deel van de [&#x200B; Hoofdloze Reis van de Ontwikkelaar van AEM &#x200B;](overview.md), kunt u leren hoe te om de vragen van GraphQL te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en het te voeren aan uw app (koploze levering).
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de hoofdloze reis van AEM, [ hoe te om Uw Inhoud ](model-your-content.md) te modelleren leerde u de grondbeginselen van inhoud modellerend in AEM, zodat zou u nu moeten begrijpen hoe te om uw inhoudsstructuur te modelleren, dan realiseer die structuur gebruikend de Modellen van het Fragment van de Inhoud van AEM en de Fragments van de Inhoud:
+In het vorige document van de hoofdloze reis van AEM, [&#x200B; hoe te om Uw Inhoud &#x200B;](model-your-content.md) te modelleren leerde u de grondbeginselen van inhoud modellerend in AEM, zodat zou u nu moeten begrijpen hoe te om uw inhoudsstructuur te modelleren, dan realiseer die structuur gebruikend de Modellen van het Fragment van de Inhoud van AEM en de Fragments van de Inhoud:
 
 * De concepten en terminologie met betrekking tot inhoudsmodellen herkennen.
 * Begrijp waarom de inhoud modellering voor de levering van de Inhoud zonder Zwaartepunt nodig is.
@@ -177,7 +177,7 @@ De vragen kunnen in de interface worden ingegaan GraphiQL. U kunt tot de vraagre
 * **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**
 * direct; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
-![ GraphiQL Interface ](assets/graphiql-interface.png " GraphiQL Interface ")
+![&#x200B; GraphiQL Interface &#x200B;](assets/graphiql-interface.png " GraphiQL Interface ")
 
 ### Aan de slag met query&#39;s {#getting-Started-with-queries}
 
@@ -255,16 +255,16 @@ Voor de volledige informatie over het gebruik van de AEM GraphQL API, samen met 
 
 ## Volgende functies {#whats-next}
 
-Nu u hebt geleerd om tot uw hoofdloze inhoud toegang te hebben en te vragen gebruikend AEM GraphQL API kunt u nu [ leren hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken ](update-your-content.md).
+Nu u hebt geleerd om tot uw hoofdloze inhoud toegang te hebben en te vragen gebruikend AEM GraphQL API kunt u nu [&#x200B; leren hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken &#x200B;](update-your-content.md).
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Adobe Experience Manager as a Cloud Service APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
-* [ GraphQL.org ](https://graphql.org)
-   * [ Schemas ](https://graphql.org/learn/schema/)
-   * [ Variabelen ](https://graphql.org/learn/queries/#variables)
-   * [ de bibliotheken van GraphQL Java ](https://graphql.org/code/#java)
-* [ GraphiQL ](https://graphql.org/learn/serving-over-http/#graphiql)
+* [&#x200B; Adobe Experience Manager as a Cloud Service APIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
+* [&#x200B; GraphQL.org &#x200B;](https://graphql.org)
+   * [&#x200B; Schemas &#x200B;](https://graphql.org/learn/schema/)
+   * [&#x200B; Variabelen &#x200B;](https://graphql.org/learn/queries/#variables)
+   * [&#x200B; de bibliotheken van GraphQL Java &#x200B;](https://graphql.org/code/#java)
+* [&#x200B; GraphiQL &#x200B;](https://graphql.org/learn/serving-over-http/#graphiql)
 * [GraphQL leren gebruiken met AEM](/help/headless/graphql-api/content-fragments.md)
    * [GraphQL Endpoint inschakelen](/help/headless/graphql-api/graphql-endpoint.md)
    * [De AEM GraphiQL-interface installeren](/help/headless/graphql-api/graphiql-ide.md)
@@ -277,7 +277,7 @@ Nu u hebt geleerd om tot uw hoofdloze inhoud toegang te hebben en te vragen gebr
 * [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
    * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [JSON-uitvoer](/help/assets/content-fragments/content-fragments-json-preview.md)
-* [ Begrijp het Middel dat van de dwars-Oorsprong (CORS) deelt ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
+* [&#x200B; Begrijp het Middel dat van de dwars-Oorsprong (CORS) deelt &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
 * [GraphQL Persisted Queries - caching inschakelen in Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Toegangstokens genereren voor server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [ Begonnen het Worden met de Zetel van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - een korte videolesreeks die een overzicht geeft van het gebruiken van AEM hoofdloze eigenschappen, met inbegrip van inhoud modellering en GraphQL.
+* [&#x200B; Begonnen het Worden met de Zetel van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - een korte videolesreeks die een overzicht geeft van het gebruiken van AEM hoofdloze eigenschappen, met inbegrip van inhoud modellering en GraphQL.

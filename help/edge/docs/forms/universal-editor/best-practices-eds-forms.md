@@ -95,5 +95,5 @@ Deze handleiding bevat een overzicht van het gebruik van formulieren met AEM Edg
 
 - [Authoring op basis van documenten met Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
 - [Universele editor met Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-- [ Document Authoring (DA) en het Inbedden Inhoud ](https://www.aem.live/developer/da-tutorial)
-- [ de Verzenddienst van AEM Forms ](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+- [&#x200B; Document Authoring (DA) en het Inbedden Inhoud &#x200B;](https://www.aem.live/developer/da-tutorial)
+- [&#x200B; de Verzenddienst van AEM Forms &#x200B;](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

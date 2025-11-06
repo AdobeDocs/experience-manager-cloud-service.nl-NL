@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Voor meer informatie over Adobe antwoorden op privacykwesties, en wat deze reacties voor u als klant van Adobe betekenen, zie [ het Centrum van de Privacy van Adobe ](https://www.adobe.com/privacy.html).
+>Voor meer informatie over Adobe antwoorden op privacykwesties, en wat deze reacties voor u als klant van Adobe betekenen, zie [&#x200B; het Centrum van de Privacy van Adobe &#x200B;](https://www.adobe.com/privacy.html).
 
 Om Adobe-klanten te helpen zich aan deze regels te houden, biedt Adobe documentatie en procedures (met API&#39;s, indien beschikbaar) voor de privacybeheerders van de klant en AEM-beheerders:
 
@@ -34,7 +34,7 @@ Om Adobe-klanten te helpen zich aan deze regels te houden, biedt Adobe documenta
 >
 >Gegevens van een andere Adobe On-demand Service, samen met eventuele gerelateerde privacyverzoeken, vereisen dat op die service actie wordt ondernomen.
 >
->Voor meer informatie, zie [ het Centrum van de Privacy van Adobe ](https://www.adobe.com/privacy.html).
+>Voor meer informatie, zie [&#x200B; het Centrum van de Privacy van Adobe &#x200B;](https://www.adobe.com/privacy.html).
 
 ## Inleiding {#introduction}
 
@@ -80,7 +80,7 @@ Adobe biedt procedures voor het verwerken van privacyverzoeken met betrekking to
 
 In het volgende diagram ziet u hoe een workflow voor privacyverzoeken eruit kan zien (geïllustreerd met Adobe Experience Manager 6.5):
 
-![ de Bescherming van Gegevens en Privacy ](assets/data-protection-and-privacy-01.png)
+![&#x200B; de Bescherming van Gegevens en Privacy &#x200B;](assets/data-protection-and-privacy-01.png)
 
 ## Adobe Experience Manager as a Cloud Service en gereedheid voor regelgeving {#aem-as-a-cloud-service-and-regulatory-readiness}
 
@@ -88,17 +88,17 @@ Zie de volgende secties voor documentatie over regelgeving voor productgebieden 
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#aem-foundation}
 
-Zie [ Readiness van de Stichting van AEM voor de Regels van de Bescherming van Gegevens en van de Privacy van Gegevens ](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
+Zie [&#x200B; Readiness van de Stichting van AEM voor de Regels van de Bescherming van Gegevens en van de Privacy van Gegevens &#x200B;](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
 
 ## Adobe Experience Manager as a Cloud Service-sites {#aem-sites}
 
-Zie [ Readiness van AEM Sites voor de Regels van de Bescherming van Gegevens en van de Privacy van Gegevens ](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+Zie [&#x200B; Readiness van AEM Sites voor de Regels van de Bescherming van Gegevens en van de Privacy van Gegevens &#x200B;](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
 
 ## Adobe Experience Manager as a Cloud Service-integratie met Adobe Target en Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
 Integraties van Adobe Experience Manager as a Cloud Service met Adobe Target en Adobe Analytics worden geïmplementeerd met services die geschikt zijn voor gegevensbescherming en privacy (bijvoorbeeld GDPR). In AEM worden geen persoonsgegevens van Adobe Target of Adobe Analytics met betrekking tot de integratie opgeslagen.
 Zie voor meer informatie:
 
-* [ Adobe Target - het Overzicht van de Privacy ](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
+* [&#x200B; Adobe Target - het Overzicht van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
-* [ Workflow van de Privacy van Gegevens van Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
+* [&#x200B; Workflow van de Privacy van Gegevens van Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)

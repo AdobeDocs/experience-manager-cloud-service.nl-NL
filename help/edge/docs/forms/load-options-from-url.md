@@ -22,7 +22,7 @@ De voordelen van het laden van een meerkeuzeoptie uit een afzonderlijk spreadshe
 - Vereenvoudigd beheer: houd meerkeuzeopties op een gecentraliseerde locatie voor eenvoudigere updates en toevoegingen.
 - Verbeterde efficiëntie: u hoeft lange optielijsten niet handmatig toe te voegen aan de formulierdefinitie.
 
-![ drop-down opties ](/help/forms/assets/drop-down-options.png)
+![&#x200B; drop-down opties &#x200B;](/help/forms/assets/drop-down-options.png)
 
 
 Aan het einde van dit artikel leert u:
@@ -51,9 +51,9 @@ Voer uw landopties in de kolom &quot;Optie&quot; (en &quot;Waarde&quot;, indien 
 
    Zie het onderstaande voorbeeld voor structuur.
 
-   ![ drop-down voor land ](/help/forms/assets/drop-down-country-options.png)
+   ![&#x200B; drop-down voor land &#x200B;](/help/forms/assets/drop-down-country-options.png)
 
-1. Voorproef en publiceer het `shared-country` blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Voorproef en publiceer het `shared-country` blad gebruikend [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
    Als de gegevensopslagruimte van uw project bijvoorbeeld &#39;wefinance&#39; heet, bevindt deze zich onder de eigenaar van de account &#39;wkndform&#39; en gebruikt u de &#39;main&#39;-vertakking, de URL die het `shared-country` -blad toont:
    `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
@@ -70,14 +70,14 @@ De eigenschap `Options` van een `select` -veld accepteert een URL. De URL retour
 1. Ga naar de map AEM Project op Microsoft® SharePoint of Google Drive en open uw spreadsheet. U kunt ook een nieuw werkblad voor een formulier maken.
 1. Kopieer de URL van `shared-country` sheet en plak deze in de `Options` kolom voor het `Destination` veld.
 
-   ![ Opiniepeiling spreadsheet ](/help/forms/assets/drop-down-enquiry.png)
+   ![&#x200B; Opiniepeiling spreadsheet &#x200B;](/help/forms/assets/drop-down-enquiry.png)
 
-1. Voorproef en publiceer het blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Voorproef en publiceer het blad gebruikend [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
 
-   ![ drop-down voor land ](/help/forms/assets/load-dropdown-options-form.png)
+   ![&#x200B; drop-down voor land &#x200B;](/help/forms/assets/load-dropdown-options-form.png)
 
-U kunt naar [ onderzoeksspreadsheet ](/help/edge/assets/enquiry.xlsx) verwijzen om URL toe te voegen om drop-down lijstopties te laden.
+U kunt naar [&#x200B; onderzoeksspreadsheet &#x200B;](/help/edge/assets/enquiry.xlsx) verwijzen om URL toe te voegen om drop-down lijstopties te laden.
 
 Nadat u de URL in de formulierdefinitie hebt geïntegreerd om vervolgkeuzelijstopties te laden, worden de opties voor de vervolgkeuzelijst `Destination` weergegeven via de URL.
 

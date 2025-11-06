@@ -88,10 +88,10 @@ Document Authoring (DA) is ontworpen voor het maken van gestructureerde pagina-i
 
 ## Volgende stappen
 
-1. **Begin met Universele Redacteur:** zie de [ Universele Redacteur begonnen gids ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) beginnen creërende vormen te beginnen.
-2. **vormVerzending:** selecteer en opstelling uw aangewezen voorleggingsmethode. Verwijs naar [ de Dienst van de Verzending van Forms ](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) of AEM publiceer acties voor configuratieinstructies.
-3. **pas Beste praktijken toe:** Overzicht [ beste praktijken van het vormontwerp ](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md) om toegankelijkheid en prestaties te verzekeren.
-4. **Gebruik op document-Gebaseerde Authoring:** om vormen met Microsoft Excel of de Bladen van Google tot stand te brengen, volg het [ op document-Gebaseerde Authoring leerprogramma ](/help/edge/docs/forms/tutorial.md).
-5. **bedt Forms in Document Authoring in:** als u pagina&#39;s in Document Authoring bouwt, raadpleeg het [ DA leerprogramma ](https://www.aem.live/developer/da-tutorial) voor instructies over het inbedden van gepubliceerde vormen.
+1. **Begin met Universele Redacteur:** zie de [&#x200B; Universele Redacteur begonnen gids &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) beginnen creërende vormen te beginnen.
+2. **vormVerzending:** selecteer en opstelling uw aangewezen voorleggingsmethode. Verwijs naar [&#x200B; de Dienst van de Verzending van Forms &#x200B;](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) of AEM publiceer acties voor configuratieinstructies.
+3. **pas Beste praktijken toe:** Overzicht [&#x200B; beste praktijken van het vormontwerp &#x200B;](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md) om toegankelijkheid en prestaties te verzekeren.
+4. **Gebruik op document-Gebaseerde Authoring:** om vormen met Microsoft Excel of de Bladen van Google tot stand te brengen, volg het [&#x200B; op document-Gebaseerde Authoring leerprogramma &#x200B;](/help/edge/docs/forms/tutorial.md).
+5. **bedt Forms in Document Authoring in:** als u pagina&#39;s in Document Authoring bouwt, raadpleeg het [&#x200B; DA leerprogramma &#x200B;](https://www.aem.live/developer/da-tutorial) voor instructies over het inbedden van gepubliceerde vormen.
 
 > **u bent nu klaar om uw eerste krachtige vorm met AEM Edge Delivery Services tot stand te brengen.**

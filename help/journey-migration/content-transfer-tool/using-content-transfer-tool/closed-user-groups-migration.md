@@ -37,4 +37,4 @@ Het gedrag CUG&#39;s inschakelen voor de instantie Publiceren
 1. De pagina&#39;s die met het beleid van CUGs worden beschermd moeten dan worden gepubliceerd (dat de Publish instantie toelaat en het beleid registreert).
 1. Nadat alle pagina&#39;s zijn gepubliceerd, controleert u de functionaliteit voor elke pagina die met CUG is beveiligd.
 
-Voor extra informatie, zie [ Gesloten Gebruikersgroepen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html).
+Voor extra informatie, zie [&#x200B; Gesloten Gebruikersgroepen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html).

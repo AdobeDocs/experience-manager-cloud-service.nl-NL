@@ -39,7 +39,7 @@ In AEM wordt de levering bereikt met de extensie selector `model` en `.json` .
 
 1. Hiermee wordt inhoud geleverd, zoals:
 
-   ![ JSON model van inhoud WKND ](assets/json-model-wknd.png)
+   ![&#x200B; JSON model van inhoud WKND &#x200B;](assets/json-model-wknd.png)
 
 U kunt de inhoud van een gestructureerd inhoudsfragment ook leveren door dit specifiek te activeren.
 
@@ -57,22 +57,22 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
 * Hiermee wordt inhoud geleverd, zoals:
 
-  ![ JSON model van WKND inhoudsfragment ](assets/json-model-wknd-content-fragment.png)
+  ![&#x200B; JSON model van WKND inhoudsfragment &#x200B;](assets/json-model-wknd-content-fragment.png)
 
   >[!NOTE]
   >
-  >U kunt [ uw eigen componenten ](enabling-json-exporter.md) aanpassen om tot dit gegeven toegang te hebben en te gebruiken.
+  >U kunt [&#x200B; uw eigen componenten &#x200B;](enabling-json-exporter.md) aanpassen om tot dit gegeven toegang te hebben en te gebruiken.
 
   >[!NOTE]
   >
-  >Hoewel niet een standaardimplementatie, [ worden de veelvoudige selecteurs gesteund ](enabling-json-exporter.md#multiple-selectors), maar `model` moet de eerste zijn.
+  >Hoewel niet een standaardimplementatie, [&#x200B; worden de veelvoudige selecteurs gesteund &#x200B;](enabling-json-exporter.md#multiple-selectors), maar `model` moet de eerste zijn.
 
 ### Aanvullende informatie {#further-information}
 
 * ASSETS HTTP API
    * [ASSETS HTTP API](/help/assets/developer-reference-material-apis.md)
 * Modellen voor verkopen:
-   * [ het Verdelen Modellen - het associëren van een modelklasse met een middeltype sinds 130 ](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [&#x200B; het Verdelen Modellen - het associëren van een modelklasse met een middeltype sinds 130 &#x200B;](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM met JSON:
    * [JSON-export inschakelen voor een component](enabling-json-exporter.md)
 
@@ -81,4 +81,4 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [ component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [&#x200B; component van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

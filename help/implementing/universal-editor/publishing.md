@@ -17,11 +17,11 @@ Leer hoe de Universal Editor de inhoud publiceert, hoe deze verschilt van het pr
 
 >[!TIP]
 >
->In dit artikel worden de details besproken van het publicatieproces van de Universal Editor voor de ontwikkelaar. Voor de inhoudauteur, [ wordt het proces om uw inhoud te publiceren hier beschreven.](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>In dit artikel worden de details besproken van het publicatieproces van de Universal Editor voor de ontwikkelaar. Voor de inhoudauteur, [&#x200B; wordt het proces om uw inhoud te publiceren hier beschreven.](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 ## Vergelijkbaar met het Sites Console-proces {#similarities}
 
-Voor gebruikers van de [ Redacteur van de Pagina van AEM ](/help/sites-cloud/authoring/page-editor/introduction.md) en [ Console van Plaatsen, ](/help/sites-cloud/authoring/sites-console/introduction.md) het proces om inhoud met de Universele Redacteur te publiceren werkt aangezien u gewend bent: bij publicatie in AEM, wordt de inhoud herhaald van de auteursdienst aan de publicatiedienst (of aan [ de voorproefdienst ](/help/sites-cloud/authoring/sites-console/previewing-content.md) als beschikbaar en afhankelijk van de opties de auteur wanneer het publiceren kiest.)
+Voor gebruikers van de [&#x200B; Redacteur van de Pagina van AEM &#x200B;](/help/sites-cloud/authoring/page-editor/introduction.md) en [&#x200B; Console van Plaatsen, &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md) het proces om inhoud met de Universele Redacteur te publiceren werkt aangezien u gewend bent: bij publicatie in AEM, wordt de inhoud herhaald van de auteursdienst aan de publicatiedienst (of aan [&#x200B; de voorproefdienst &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md) als beschikbaar en afhankelijk van de opties de auteur wanneer het publiceren kiest.)
 
 ## Verschillen {#differences}
 
@@ -45,8 +45,8 @@ Evenzo stelt de Universele Redacteur geen vereisten op hoe om het even welk bepa
 
 Zie deze ontwikkelaarsdocumenten voor meer informatie over de technische details van de Universal Editor.
 
-* [ Universele Inleiding van de Redacteur ](/help/implementing/universal-editor/introduction.md) - Leer hoe de Universele Redacteur het uitgeven om het even welk aspect van om het even welke inhoud in om het even welke implementatie toelaat zodat kunt u uitzonderlijke ervaringen leveren, inhoudssnelheid verhogen, en een ervaring van de allernieuwste ontwikkelaar verstrekken.
-* [ Begonnen het Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md) - leer hoe te om toegang tot de Universele Redacteur te krijgen en hoe te beginnen van instrumenten voorzien uw eerste AEM app om het te gebruiken.
-* [ Universele Architectuur van de Redacteur ](/help/implementing/universal-editor/architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
-* [ Attributen en Types ](/help/implementing/universal-editor/attributes-types.md) - leer over de gegevensattributen en de types die de Universele Redacteur vereist.
-* [ Universele Authentificatie van de Redacteur ](/help/implementing/universal-editor/authentication.md) - leer hoe de Universele Redacteur voor authentiek verklaart.
+* [&#x200B; Universele Inleiding van de Redacteur &#x200B;](/help/implementing/universal-editor/introduction.md) - Leer hoe de Universele Redacteur het uitgeven om het even welk aspect van om het even welke inhoud in om het even welke implementatie toelaat zodat kunt u uitzonderlijke ervaringen leveren, inhoudssnelheid verhogen, en een ervaring van de allernieuwste ontwikkelaar verstrekken.
+* [&#x200B; Begonnen het Worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md) - leer hoe te om toegang tot de Universele Redacteur te krijgen en hoe te beginnen van instrumenten voorzien uw eerste AEM app om het te gebruiken.
+* [&#x200B; Universele Architectuur van de Redacteur &#x200B;](/help/implementing/universal-editor/architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
+* [&#x200B; Attributen en Types &#x200B;](/help/implementing/universal-editor/attributes-types.md) - leer over de gegevensattributen en de types die de Universele Redacteur vereist.
+* [&#x200B; Universele Authentificatie van de Redacteur &#x200B;](/help/implementing/universal-editor/authentication.md) - leer hoe de Universele Redacteur voor authentiek verklaart.

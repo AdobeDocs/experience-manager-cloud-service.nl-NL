@@ -81,7 +81,7 @@ Deze unieke leveringsmethode zorgt ervoor dat de verenigbare kwaliteitservaringe
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![ Adobe Dynamische Media levert het zelfde primaire beeld aan verschillende media in verschillende grootte en formaten ](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![&#x200B; Adobe Dynamische Media levert het zelfde primaire beeld aan verschillende media in verschillende grootte en formaten &#x200B;](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _Dynamische Media van Adobe verzekert verenigbare, kwaliteitservaringen worden geleverd aan om het even welk scherm, ongeacht grootte of bandbreedte._
 
 Terwijl u doorleest, gaat u meer leren over waarom dit concept van &quot;één primair elementenbestand, eindeloze mogelijkheden&quot; belangrijk is.
@@ -112,7 +112,7 @@ Deze intelligentie vermindert verder de grootte van het beelddossier die op brow
 
 Over het algemeen kunt u met intelligente beeldverwerking een prestatieverbetering van 22 tot 47% verwachten, afhankelijk van uw bestaande voorinstellingen voor afbeeldingen en specifieke kenmerken van de eindgebruiker. De beeldkwaliteit blijft behouden alsof deze nooit wordt beïnvloed.
 
-![ Slimme Beeldvorming ](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
+![&#x200B; Slimme Beeldvorming &#x200B;](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 _het Slimme Beeld optimaliseert automatisch het formaat en de dossiergrootte van een beeld die op browser van een klant vermogen en netwerksnelheid wordt gebaseerd._
 
 Smart imaging is niet standaard ingeschakeld, omdat hiervoor een gecoördineerde inspanning van u en de technische ondersteuning van Adobe Dynamic Media vereist is. Voor het inschakelen van Smart Imaging moet de CDN-cache volledig worden gewist. Deze cache wordt vervolgens opnieuw gevuld met tijd. Als u Smart Imaging wilt gebruiken, kunt u met Adobe samenwerken om het aan te zetten door een technisch ondersteuningsticket te verzenden. Technische ondersteuning geeft u vervolgens een URL-parameter waarmee u vooraf slimme beeldverwerking kunt uitproberen. U kunt de presentatie uitproberen op elk van uw webpagina&#39;s of afbeeldingen, zodat u de prestaties en besparingen kunt zien. U kunt SmartImage vervolgens inschakelen voor uw volledige site.
@@ -143,12 +143,12 @@ Een van de belangrijkste gebruiksgevallen voor Dynamic Media is ook een van de m
 
 Hieronder ziet u een typische ervaring of webpagina. Ongeveer 90% van een pagina bestaat uit rijke media, zoals beelden en video&#39;s, die algemeen veel zwaardere dossiers zijn.
 
-![ de paginagewicht van de Inhoud ](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
+![&#x200B; de paginagewicht van de Inhoud &#x200B;](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
 _de paginagewicht van de Inhoud van een typische Web-pagina._
 
 De resterende 10% is HTML, CSS-code en specifieke tags. U wilt de 90%-dikte van die pagina optimaliseren en Dynamic Media helpt daarbij. Eerder, las u over het concept _één primair activadossier met eindeloze mogelijkheden_. Deze aanpak is belangrijk voor het verminderen van het totale paginagewicht. De mogelijkheid om één primair middel te gebruiken op een pagina met productdetails, een miniatuurpagina, uw winkelwagentje en uw zoekraster, is een goede tijdbesparende functie. En het zorgt ook voor consistentie tussen ervaringen.
 
-![ Primaire dossierbenadering ](/help/assets/dynamic-media/assets/dm-onefile.png)
+![&#x200B; Primaire dossierbenadering &#x200B;](/help/assets/dynamic-media/assets/dm-onefile.png)
 _de horloge is één primair activadossier, maar met veelvoudige vertoningen van het - niet exemplaren - gecreeerd op de vlucht._
 
 Laten we nader kijken naar de problemen die Dynamic Media oplost met het ene bestand en enkele oplossingen voor die aanpak.
@@ -216,7 +216,7 @@ Hier zijn verscheidene meer te overwegen gebruiksgevallen.
 
 Hieronder ziet u een standaardworkflow voor Dynamische media.
 
-![ Dynamische werkschema van Media ](/help/assets/dynamic-media/assets/dm-workflow.png)
+![&#x200B; Dynamische werkschema van Media &#x200B;](/help/assets/dynamic-media/assets/dm-workflow.png)
 _hoe een activa door het Dynamische systeem van Media stroomt._
 
 U begint met de creatiefase met het belangrijkste doel om uw primaire activa aan het eind te hebben. Deze primaire elementen kunnen afkomstig zijn van fotofragmenten, van videobereizers of van audiobestanden die u hebt gemaakt. U kunt Adobe Creative Suite-toepassingen zoals Adobe InDesign, Adobe Photoshop en Adobe Illustrator gebruiken om u te helpen de inhoud uit te werken.
@@ -231,7 +231,7 @@ Wanneer u klaar bent met het maken van een primair element, uploadt u dit naar D
 
 De onderstaande afbeelding is bijvoorbeeld 4560 x 3020 pixels. En hoewel u misschien nooit een afbeelding van die grootte gebruikt, kunt u deze nog uploaden. Hoe groter de afbeelding, hoe beter de kwaliteit die Dynamic Media kan leveren, zelfs tot een miniatuuruitvoering. Herinner me: u kunt _gemakkelijk verminderen_ de resolutie van een bestaand beeld. Maar als u probeert __ de resolutie van een beeld te verhogen, zal het resultaat waarschijnlijk onbevredigend zijn.
 
-![ Geadviseerde formaten om in Dynamische Media ](/help/assets/dynamic-media/assets/dm-upload-formats.png) te uploaden
+![&#x200B; Geadviseerde formaten om in Dynamische Media &#x200B;](/help/assets/dynamic-media/assets/dm-upload-formats.png) te uploaden
 _Overwegingen voor activa uploadt._
 
 Adobe raadt u aan elementen zonder verlies te uploaden. Over het algemeen is het beter om JPEG te vermijden, omdat wanneer u JPEG levert of wanneer u JPEG blijft opslaan, de afbeeldingskwaliteit na verloop van tijd begint te verliezen. U wilt beginnen met afbeeldingen met de hoogste resolutie in een indeling zonder verlies waarmee u kunt leven. Deze indeling is doorgaans een TIFF- of PNG-bestand.
@@ -252,21 +252,21 @@ Naast het handmatig publiceren van elementen, kunt u Dynamic Media zodanig confi
 
 Na het uploaden zijn er verschillende manieren om een voorvertoning van de uitvoeringen van een element weer te geven in Dynamic Media. Voorvertoning van uitvoeringen kan u helpen een idee te krijgen van wat een klant ziet. Een gemeenschappelijke voorproefmethode moet een activa selecteren en dan zijn Vertoningen bekijken door een _vooraf ingesteld beeld_ zoals gezien in het volgende te selecteren.
 
-![ Previewing een vertoning van een activa die op het Grote beeld wordt gebaseerd vooraf ingesteld ](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+![&#x200B; Previewing een vertoning van een activa die op het Grote beeld wordt gebaseerd vooraf ingesteld &#x200B;](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _previewing een vertoning van een activa die op geselecteerde &quot;Grote&quot;beeldvooraf ingesteld wordt gebaseerd. Er is op de URL-knop geklikt. Het resulterende URL-pad bevat de naam voor de voorinstelling &quot;Groot&quot; en kan worden gebruikt in een webpagina._
 
-Bovenstaande URL is live! [ probeer het ](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
+Bovenstaande URL is live! [&#x200B; probeer het &#x200B;](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
 Een andere methode aan voorproef een activa is de beeldactiva te selecteren en dan a _vooraf ingestelde Kijkers_ te selecteren zoals die in het volgende wordt gezien.
 
-![ Previewing activa die op de Verticale die kijker van het Licht van het Gezoem wordt gebaseerd ](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+![&#x200B; Previewing activa die op de Verticale die kijker van het Licht van het Gezoem wordt gebaseerd &#x200B;](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _previewing activa die op geselecteerde &quot;ZoomVertical_light&quot;kijker wordt gebaseerd vooraf ingesteld. De muisaanwijzer (`+`) is over het horloge verplaatst om in te zoomen. Merk op URL en bed knopen in._
 
-De bovenstaande vertoning is live! [ probeer het ](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
+De bovenstaande vertoning is live! [&#x200B; probeer het &#x200B;](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Optioneel - Meer informatie
 
-Deel I van deze reis ging over de grondbeginselen van diverse Dynamic Media-onderwerpen. Als u meer wilt weten over wat u leest, gebruikt u de onderstaande materialen om concepten in detail te verkennen. Anders kunt u doorgaan met deel II van uw reis. Zie [ wat volgende in deze Dynamische Journey van Media ](#whats-next) is.
+Deel I van deze reis ging over de grondbeginselen van diverse Dynamic Media-onderwerpen. Als u meer wilt weten over wat u leest, gebruikt u de onderstaande materialen om concepten in detail te verkennen. Anders kunt u doorgaan met deel II van uw reis. Zie [&#x200B; wat volgende in deze Dynamische Journey van Media &#x200B;](#whats-next) is.
 
 <!--
 _Dynamic Media Help topics_
@@ -284,17 +284,17 @@ _Dynamic Media Help topics_
 
 _Dynamische zelfstudies van Media_
 
-* [ Dynamische Media van het Gebruik met Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [ de inhoudsbibliotheek van Adobe Experience Manager ](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (onderzoek op _Dynamische Media_)
+* [&#x200B; Dynamische Media van het Gebruik met Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [&#x200B; de inhoudsbibliotheek van Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (onderzoek op _Dynamische Media_)
 
 _Dynamische kijkers van Media_
 
-* [ Levende Demo&#39;s ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) van elke kijker
+* [&#x200B; Levende Demo&#39;s &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) van elke kijker
 
 ## Hoe verder in deze Dynamic Media Journey {#whats-next}
 
 In deel II van deze reis, onderzoekt u Dynamische Media URLs om beter te begrijpen wat aan de hand is wanneer een activa wordt geleverd. U leert ook meer over de grondbeginselen van het maken van voorinstellingen voor afbeeldingen om elementen te renderen, en leert over Afbeeldingssets, Spin-sets en Gemengde-mediasets en hoe deze worden gemaakt.
 
-Neem me aan [ Dynamische Reis van Media: De Grondbeginselen, Deel II ](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+Neem me aan [&#x200B; Dynamische Reis van Media: De Grondbeginselen, Deel II &#x200B;](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

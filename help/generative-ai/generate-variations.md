@@ -17,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Het wordt geadviseerd dat u tot [ toegang hebt produceert Variaties die in de redacteurs van AEM ](/help/generative-ai/generate-variations-integrated-editor.md) worden geïntegreerd, aangezien de versie die op deze pagina wordt beschreven in de toekomst zal worden afgekeurd.
+>Het wordt geadviseerd dat u tot [&#x200B; toegang hebt produceert Variaties die in de redacteurs van AEM &#x200B;](/help/generative-ai/generate-variations-integrated-editor.md) worden geïntegreerd, aangezien de versie die op deze pagina wordt beschreven in de toekomst zal worden afgekeurd.
 
-Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u Variaties genereren gebruiken. Bij Variaties genereren wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudsvariaties te maken op basis van aanwijzingen. Deze aanwijzingen worden geleverd door Adobe of gemaakt en beheerd door gebruikers. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [ 1} functionaliteit van de Experimentatie {van ](https://www.aem.live/docs/experimentation) Edge Delivery Services [.](/help/edge/overview.md)
+Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u Variaties genereren gebruiken. Bij Variaties genereren wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudsvariaties te maken op basis van aanwijzingen. Deze aanwijzingen worden geleverd door Adobe of gemaakt en beheerd door gebruikers. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [&#x200B; 1&rbrace; functionaliteit van de Experimentatie &lbrace;van &#x200B;](https://www.aem.live/docs/experimentation) Edge Delivery Services [.](/help/edge/overview.md)
 
-U kunt [ toegang tot produceren Variaties ](#access-generate-variations) van:
+U kunt [&#x200B; toegang tot produceren Variaties &#x200B;](#access-generate-variations) van:
 
 * [in Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [de Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
@@ -29,18 +29,18 @@ U kunt [ toegang tot produceren Variaties ](#access-generate-variations) van:
 
 >[!NOTE]
 >
->In alle gevallen, om te gebruiken produceert Variaties u moet ervoor zorgen dat de [ toegangseerste vereisten ](#access-prerequisites) worden vervuld.
+>In alle gevallen, om te gebruiken produceert Variaties u moet ervoor zorgen dat de [&#x200B; toegangseerste vereisten &#x200B;](#access-prerequisites) worden vervuld.
 
 U kunt dan:
 
-* [ worden begonnen ](#get-started) gebruikend een snel malplaatje dat Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
-* U kunt [ een bestaande herinnering ](#edit-the-prompt) uitgeven
-* Of [ creeer en gebruik uw eigen herinneringen ](#create-prompt):
-   * [ sparen uw herinneringen ](#save-prompt) voor toekomstig gebruik
-   * [ Toegang en gebruik gedeelde herinneringen ](#select-prompt) van over uw organisatie
-* Bepaal de [ publiek ](#audiences) segmenten om in de herinnering te gebruiken wanneer [ het produceren gepersonaliseerde publiek-specifieke inhoud ](#generate-copy).
+* [&#x200B; worden begonnen &#x200B;](#get-started) gebruikend een snel malplaatje dat Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
+* U kunt [&#x200B; een bestaande herinnering &#x200B;](#edit-the-prompt) uitgeven
+* Of [&#x200B; creeer en gebruik uw eigen herinneringen &#x200B;](#create-prompt):
+   * [&#x200B; sparen uw herinneringen &#x200B;](#save-prompt) voor toekomstig gebruik
+   * [&#x200B; Toegang en gebruik gedeelde herinneringen &#x200B;](#select-prompt) van over uw organisatie
+* Bepaal de [&#x200B; publiek &#x200B;](#audiences) segmenten om in de herinnering te gebruiken wanneer [&#x200B; het produceren gepersonaliseerde publiek-specifieke inhoud &#x200B;](#generate-copy).
 * Geef een voorvertoning van de uitvoer weer naast de prompt, voordat u wijzigingen aanbrengt en verfijnen, indien nodig.
-* Het gebruik [ Adobe Express om beelden ](#generate-image) te produceren die op de exemplaarvariaties worden gebaseerd; dit gebruikt de Generatieve mogelijkheden van AI van Firefly.
+* Het gebruik [&#x200B; Adobe Express om beelden &#x200B;](#generate-image) te produceren die op de exemplaarvariaties worden gebaseerd; dit gebruikt de Generatieve mogelijkheden van AI van Firefly.
 * Selecteer de inhoud die u op uw website of in een experiment wilt gebruiken.
 
 ## Opmerking bij wet en gebruik {#legal-usage-note}
@@ -51,15 +51,15 @@ Uw invoer voor de service moet aan een context zijn gekoppeld. Deze context kan 
 
 U moet de nauwkeurigheid van om het even welke output zoals aangewezen voor uw gebruiksgeval evalueren.
 
-Alvorens te gebruiken produceer Variaties u aan de [ Generatieve AI Richtlijnen van de Gebruiker van Adobe ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) moet akkoord gaan.
+Alvorens te gebruiken produceer Variaties u aan de [&#x200B; Generatieve AI Richtlijnen van de Gebruiker van Adobe &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) moet akkoord gaan.
 
-[ Gebruik van produceerde Variaties ](#generative-action-usage) is gebonden aan de consumptie van generatieve acties.
+[&#x200B; Gebruik van produceerde Variaties &#x200B;](#generative-action-usage) is gebonden aan de consumptie van generatieve acties.
 
 ## Overzicht {#overview}
 
 Als u Variaties genereren opent (en het linkerdeelvenster uitvouwt), ziet u:
 
-![ produceer Variaties - belangrijkste paneel ](assets/generate-variations-main-panel.png)
+![&#x200B; produceer Variaties - belangrijkste paneel &#x200B;](assets/generate-variations-main-panel.png)
 
 * Rechterdeelvenster
    * Dit is afhankelijk van de selectie die u maakt in de linkernavigatie.
@@ -71,10 +71,10 @@ Als u Variaties genereren opent (en het linkerdeelvenster uitvouwt), ziet u:
          * Wordt geleverd door Adobe zodat u inhoud kunt genereren. Wordt gemarkeerd met het Adobe-pictogram.
          * Gemaakt door uzelf.
          * Gemaakt binnen uw IMS-organisatie; gemarkeerd met een pictogram met meerdere koppen.
-      * Omvat de [ Nieuwe herinnering ](#create-prompt) verbinding voor het creëren van uw eigen herinnering.
+      * Omvat de [&#x200B; Nieuwe herinnering &#x200B;](#create-prompt) verbinding voor het creëren van uw eigen herinnering.
       * U kunt **herinneringen schrappen** die door zich, of binnen uw organisatie IMS worden gecreeerd. Dit wordt gedaan gebruikend het menu dat met de ellips op de aangewezen kaart wordt betreden.
-   * [ Favorieten ](#favorites): Toont resultaten van vorige generaties die u als Favorieten hebt gemarkeerd.
-   * [ Recenten ](#recents): Verzekert verbindingen met herinneringen, en hun input, die u onlangs hebt gebruikt.
+   * [&#x200B; Favorieten &#x200B;](#favorites): Toont resultaten van vorige generaties die u als Favorieten hebt gemarkeerd.
+   * [&#x200B; Recenten &#x200B;](#recents): Verzekert verbindingen met herinneringen, en hun input, die u onlangs hebt gebruikt.
    * **Hulp &amp; FAQ**: Verbindingen aan documentatie, met inbegrip van FAQs.
    * **Richtlijnen van de Gebruiker**: Verbindingen met de wettelijke richtlijnen.
 
@@ -87,7 +87,7 @@ De interface begeleidt u door het proces om inhoud te produceren. Na het openen 
 In het hoofdvenster kunt u het volgende selecteren:
 
 * een door Adobe aangeleverde template met vragen om inhoud te genereren;
-* de [ Nieuwe herinnering ](#create-prompt) om uw eigen herinnering tot stand te brengen,
+* de [&#x200B; Nieuwe herinnering &#x200B;](#create-prompt) om uw eigen herinnering tot stand te brengen,
 * een sjabloon die u alleen voor uw gebruik hebt gemaakt,
 * een sjabloon die u of iemand in uw organisatie heeft gemaakt.
 
@@ -97,7 +97,7 @@ U kunt als volgt onderscheiden:
 * De herinneringen beschikbaar door uw organisatie IMS worden gemarkeerd met een veelvoudige hoofdpictogram.
 * Uw persoonlijke herinneringen worden niet specifiek gemarkeerd.
 
-![ produceer Variaties - snelle malplaatjes ](assets/generate-variations-prompt-templates.png)
+![&#x200B; produceer Variaties - snelle malplaatjes &#x200B;](assets/generate-variations-prompt-templates.png)
 
 ### Invoer opgeven {#provide-inputs}
 
@@ -110,9 +110,9 @@ Er zijn verschillende belangrijke invoervelden die worden gebruikt bij meerdere 
 * **Telling van**/**Aantal van**
    * U kunt selecteren hoeveel inhoudvariaties u in één generatie wilt worden gecreeerd.
    * Afhankelijk van de vraag, zou dit één van diverse etiketten kunnen hebben; bijvoorbeeld Telling, Aantal Variaties, Aantal Ideeën, en anderen.
-* **/** het Doelpubliek van Source van het 0} publiek ****
+* **/** het Doelpubliek van Source van het 0&rbrace; publiek **&#x200B;**
    * Hiermee kunt u persoonlijke inhoud genereren voor een bepaald publiek.
-   * Adobe verstrekt standaardpubliek; of u kunt extra publiek specificeren; zie [ Soorten van publiek ](#audiences).
+   * Adobe verstrekt standaardpubliek; of u kunt extra publiek specificeren; zie [&#x200B; Soorten van publiek &#x200B;](#audiences).
 * **Extra Context**
    * Voeg relevante inhoud in om Generative AI-vaartuigen een betere respons te bieden op basis van de invoer. Als u bijvoorbeeld een webbanner maakt voor een bepaalde pagina of een bepaald product, wilt u mogelijk informatie over de pagina of het product opnemen.
 * **Temperatuur**
@@ -121,7 +121,7 @@ Gebruiken om de temperatuur van Adobe Generative AI te wijzigen:
    * Een lagere temperatuur is deterministischer en blijft dichter bij wat in de herinnering is.
    * De temperatuur wordt standaard ingesteld op 1. U kunt experimenteren met verschillende temperaturen als de gegenereerde resultaten u niet aanspreken.
 * **geef Herinnering** uit
-   * De onderliggende [ herinnering kan ](#edit-the-prompt) worden uitgegeven om de geproduceerde resultaten te raffineren.
+   * De onderliggende [&#x200B; herinnering kan &#x200B;](#edit-the-prompt) worden uitgegeven om de geproduceerde resultaten te raffineren.
 
 ### Kopie genereren {#generate-copy}
 
@@ -129,7 +129,7 @@ Nadat u de invoervelden hebt ingevuld en/of de vraag hebt gewijzigd, kunt u inho
 
 Selecteer **produceer** om reacties te zien die door generatieve AI worden geproduceerd. De gegenereerde inhoudsvariaties worden weergegeven onder de vraag die ze heeft gegenereerd.
 
-![ produceer Variaties - produceer exemplaar ](assets/generate-variations-generate-content.png)
+![&#x200B; produceer Variaties - produceer exemplaar &#x200B;](assets/generate-variations-generate-content.png)
 
 >[!NOTE]
 >
@@ -138,11 +138,11 @@ Selecteer **produceer** om reacties te zien die door generatieve AI worden gepro
 Wanneer u één variatie selecteert, zijn de volgende acties beschikbaar:
 
 * **Favoriet**
-   * De vlag als a **Favoriet** voor toekomstig gebruik (zal in [ Favorieten ](#favorites) tonen).
+   * De vlag als a **Favoriet** voor toekomstig gebruik (zal in [&#x200B; Favorieten &#x200B;](#favorites) tonen).
 * Duimbs omhoog/omlaag
    * Gebruik de duim omhoog/omlaag indicatoren om Adobe van de kwaliteit van reacties op de hoogte te brengen.
 * **Exemplaar**
-   * Kopieer aan het klembord voor gebruik wanneer het ontwerpen van inhoud op uw website, of in een [ Experiment ](https://www.aem.live/docs/experimentation).
+   * Kopieer aan het klembord voor gebruik wanneer het ontwerpen van inhoud op uw website, of in een [&#x200B; Experiment &#x200B;](https://www.aem.live/docs/experimentation).
 * **verwijder**
 
 Als u de input of de herinnering moet verfijnen, kunt u aanpassingen maken en **selecteren produceert** opnieuw om een reeks nieuwe reacties te krijgen. De nieuwe vraag en de reactie worden getoond onder de aanvankelijke herinnering en de reactie; u kunt omhoog en neer scrollen om de diverse reeksen inhoud te bekijken.
@@ -157,13 +157,13 @@ Nadat u tekstvariaties hebt gegenereerd, kunt u afbeeldingen in Adobe Express ge
 >
 >**produceer Beeld** is slechts beschikbaar als u een machtiging van Adobe Express als deel van uw organisatie IMS hebt, en toegang die aan u in Admin Console wordt verleend.
 
-Selecteer een variatie, die door **wordt gevolgd produceert Beeld**, om **Tekst aan Beeld** in [ Adobe Express ](https://www.adobe.com/express/) direct te openen. De vraag wordt vooraf ingevuld gebaseerd op uw variantselectie, en de beelden worden automatisch geproduceerd volgens die herinnering.
+Selecteer een variatie, die door **wordt gevolgd produceert Beeld**, om **Tekst aan Beeld** in [&#x200B; Adobe Express &#x200B;](https://www.adobe.com/express/) direct te openen. De vraag wordt vooraf ingevuld gebaseerd op uw variantselectie, en de beelden worden automatisch geproduceerd volgens die herinnering.
 
-![ produceer Variaties - druk beelden ](assets/generate-variations-express-images.png) uit
+![&#x200B; produceer Variaties - druk beelden &#x200B;](assets/generate-variations-express-images.png) uit
 
 U kunt verdere wijzigingen aanbrengen:
 
-* [ schrijft uw eigen herinnering in Adobe Express ](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) door te beschrijven wat u zou willen zien,
+* [&#x200B; schrijft uw eigen herinnering in Adobe Express &#x200B;](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) door te beschrijven wat u zou willen zien,
 * Pas de **Tekst aan beeld** opties aan,
 * dan **verfrist zich** de geproduceerde beelden.
 
@@ -171,18 +171,18 @@ U kunt **ook gebruiken ontdekken meer** voor verdere mogelijkheden.
 
 Wanneer volledig, selecteer het gewenste beeld en **sparen** om Adobe Express te sluiten. De afbeelding wordt geretourneerd en met de variatie opgeslagen.
 
-![ produceer Variaties - express bewaard beeld ](assets/generate-variations-express-image-saved.png)
+![&#x200B; produceer Variaties - express bewaard beeld &#x200B;](assets/generate-variations-express-image-saved.png)
 
 Hier kunt u de muis boven de afbeelding houden om actiepunten weer te geven voor:
 
-* **Exemplaar**: [ kopieer het beeld aan het klembord voor gebruik elders ](#use-content)
+* **Exemplaar**: [&#x200B; kopieer het beeld aan het klembord voor gebruik elders &#x200B;](#use-content)
 * **geeft** uit: open Adobe Express zodat u veranderingen in het beeld kunt aanbrengen
 * **Download**: download het beeld aan uw lokale machine
 * **Schrapping**: verwijder het beeld uit de variatie
 
 >[!NOTE]
 >
->[ geloofsbrieven van de Inhoud ](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) worden niet voortgeduurd wanneer gebruikt in op document-gebaseerd schrijven.
+>[&#x200B; geloofsbrieven van de Inhoud &#x200B;](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) worden niet voortgeduurd wanneer gebruikt in op document-gebaseerd schrijven.
 
 ### Inhoud gebruiken {#use-content}
 
@@ -193,7 +193,7 @@ Dit gebeurt met de kopieerpictogrammen:
 * Voor tekst: gebruik het kopieerpictogram dat zichtbaar is in het deelvenster Variaties
 * Voor de afbeelding: muis over de afbeelding om het kopieerpictogram weer te geven
 
-Nadat u de gegevens naar het klembord hebt gekopieerd, kunt u deze plakken en gebruiken wanneer u inhoud voor uw website ontwerpt. U kunt ook een [ experiment ](https://www.aem.live/docs/experimentation) in werking stellen.
+Nadat u de gegevens naar het klembord hebt gekopieerd, kunt u deze plakken en gebruiken wanneer u inhoud voor uw website ontwerpt. U kunt ook een [&#x200B; experiment &#x200B;](https://www.aem.live/docs/experimentation) in werking stellen.
 
 ## Favorieten {#favorites}
 
@@ -206,22 +206,22 @@ Zodra bewaard worden zij getoond onder **Favorieten** in de linkernavigatie. De 
 
 ## Recenten {#recents}
 
-Deze sectie bevat koppelingen naar uw recente activiteiten. A **Recente** ingang wordt toegevoegd nadat u **** selecteert. De naam van de vraag en een tijdstempel. Als u een koppeling selecteert, wordt de vraag geladen, worden de invoervelden ingevuld en worden de gegenereerde variaties weergegeven.
+Deze sectie bevat koppelingen naar uw recente activiteiten. A **Recente** ingang wordt toegevoegd nadat u **&#x200B;**&#x200B;selecteert. De naam van de vraag en een tijdstempel. Als u een koppeling selecteert, wordt de vraag geladen, worden de invoervelden ingevuld en worden de gegenereerde variaties weergegeven.
 
 ## De vraag bewerken {#edit-the-prompt}
 
 De onderliggende prompt kan worden bewerkt. U kunt dit doen:
 
 * Als de gegenereerde resultaten die u krijgt, verder moeten worden verfijnd
-* U wilt wijzigen en [ sparen de herinnering ](#save-prompt) voor toekomstig gebruik
+* U wilt wijzigen en [&#x200B; sparen de herinnering &#x200B;](#save-prompt) voor toekomstig gebruik
 
 Selecteer **uitgeven Herinnering**:
 
-![ produceer Variaties - geef herinnering ](assets/generate-variations-prompt-edit.png) uit
+![&#x200B; produceer Variaties - geef herinnering &#x200B;](assets/generate-variations-prompt-edit.png) uit
 
 Hiermee opent u de prompt-editor waarin u uw wijzigingen kunt aanbrengen:
 
-![ produceer Variaties - snelle redacteur ](assets/generate-variations-prompt-editor.png)
+![&#x200B; produceer Variaties - snelle redacteur &#x200B;](assets/generate-variations-prompt-editor.png)
 
 ### Prompte invoer toevoegen {#add-prompt-inputs}
 
@@ -253,7 +253,7 @@ Om een nieuw tekstgebied toe te voegen genoemd **Toon van Stem**, gebruik de vol
 }}
 ```
 
-![ produceer Variaties - herinnering uitgegeven met toon van stem ](assets/generate-variations-prompt-edited.png)
+![&#x200B; produceer Variaties - herinnering uitgegeven met toon van stem &#x200B;](assets/generate-variations-prompt-edited.png)
 
 <!--
 #### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
@@ -280,11 +280,11 @@ To create an input field Page Type providing a dropdown selection:
 
 ## Een prompt maken {#create-prompt}
 
-Wanneer u **Nieuwe herinnering** van **Snelle Malplaatjes** selecteert, zal een nieuw paneel u toestaan om een nieuwe herinnering in te voeren. U kunt deze, samen met de **Temperatuur** dan specificeren, **** inhoud produceren.
+Wanneer u **Nieuwe herinnering** van **Snelle Malplaatjes** selecteert, zal een nieuw paneel u toestaan om een nieuwe herinnering in te voeren. U kunt deze, samen met de **Temperatuur** dan specificeren, **&#x200B;**&#x200B;inhoud produceren.
 
-Zie [ Bevel Herinnering ](#save-prompt) voor details om de herinnering voor toekomst te bewaren.
+Zie [&#x200B; Bevel Herinnering &#x200B;](#save-prompt) voor details om de herinnering voor toekomst te bewaren.
 
-Zie [ snelle input ](#add-prompt-inputs) voor details toevoegen over het toevoegen van uw eigen snelle input.
+Zie [&#x200B; snelle input &#x200B;](#add-prompt-inputs) voor details toevoegen over het toevoegen van uw eigen snelle input.
 
 Als u opmaak wilt behouden in de gebruikersinterface en bij het kopiëren en plakken in de op documenten gebaseerde ontwerpstroom, neemt u het volgende op in de vraag:
 
@@ -297,7 +297,7 @@ In de volgende afbeelding ziet u de voordelen hiervan:
 * in het eerste voorbeeld worden de `Title` en `Description` gecombineerd
 * in het tweede voorbeeld worden ze afzonderlijk opgemaakt: dit is gebeurd door het JSON-verzoek op te nemen in de vraag.
 
-![ produceer Variaties - herinnering met Titel en Beschrijving afzonderlijk geformatteerd ](assets/generate-variations-prompt-formatted.png)
+![&#x200B; produceer Variaties - herinnering met Titel en Beschrijving afzonderlijk geformatteerd &#x200B;](assets/generate-variations-prompt-formatted.png)
 
 ## Vragen opslaan {#save-prompt}
 
@@ -307,13 +307,13 @@ Wanneer u de herinnering hebt uitgegeven, **sparen** optie is beschikbaar bij de
 
 Wanneer geselecteerd, **sparen Herinnering** dialoog opent:
 
-![ produceer Variaties - dialoog voor sparen herinnering ](assets/generate-variations-prompt-save-dialog.png)
+![&#x200B; produceer Variaties - dialoog voor sparen herinnering &#x200B;](assets/generate-variations-prompt-save-dialog.png)
 
 1. Voeg een unieke **Naam van de Vragen** toe; gebruikt om de herinnering binnen **Snelle Malplaatjes** te identificeren.
    1. Een nieuwe, en unieke naam leidt tot een nieuw herinnering malplaatje.
    1. Een bestaande naam beschrijft die herinnering; een bericht wordt getoond.
 1. Voeg desgewenst een beschrijving toe.
-1. Activeer, of deactiveer, de optie **over organisatie** wordt gedeeld, afhankelijk van of de herinnering aan u privé zou moeten zijn, of beschikbaar over uw organisatie IMS. Deze status wordt getoond in de [ resulterende kaart die in de Snelle Malplaatjes ](#select-prompt) wordt getoond.
+1. Activeer, of deactiveer, de optie **over organisatie** wordt gedeeld, afhankelijk van of de herinnering aan u privé zou moeten zijn, of beschikbaar over uw organisatie IMS. Deze status wordt getoond in de [&#x200B; resulterende kaart die in de Snelle Malplaatjes &#x200B;](#select-prompt) wordt getoond.
 1. **sparen** de herinnering; of **annuleert** de actie.
 
 >[!NOTE]
@@ -340,7 +340,7 @@ Twee bronnen van het publiek worden gesteund:
 * [Adobe Target](#audience-adobe-target)
 * [CSV-bestand](#audience-csv-file)
 
-![ produceer Variaties - publieksbronnen ](assets/generate-variations-audiences.png)
+![&#x200B; produceer Variaties - publieksbronnen &#x200B;](assets/generate-variations-audiences.png)
 
 ### Publiek - Adobe Target {#audience-adobe-target}
 
@@ -355,13 +355,13 @@ Het selecteren van een **Adobe Target** publiek in de herinnering staat voor de 
 
    >[!NOTE]
    >
-   >Om een **Adobe Target** publiek te gebruiken moet het beschrijvingsgebied worden ingevuld. Als dat niet het geval is, wordt in de vervolgkeuzelijst aangegeven dat het publiek niet beschikbaar is. Om een beschrijving toe te voegen, ga naar Doel en [ voeg een publieksbeschrijving ](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) toe.
+   >Om een **Adobe Target** publiek te gebruiken moet het beschrijvingsgebied worden ingevuld. Als dat niet het geval is, wordt in de vervolgkeuzelijst aangegeven dat het publiek niet beschikbaar is. Om een beschrijving toe te voegen, ga naar Doel en [&#x200B; voeg een publieksbeschrijving &#x200B;](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) toe.
 
-   ![ produceer Variaties - publieksbron - Adobe Target ](assets/generate-variations-audiences-adobe-target.png)
+   ![&#x200B; produceer Variaties - publieksbron - Adobe Target &#x200B;](assets/generate-variations-audiences-adobe-target.png)
 
 #### Adobe Target-publiek toevoegen {#add-adobe-target-audience}
 
-Zie [ publiek ](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) creëren om een publiek in Adobe Target tot stand te brengen.
+Zie [&#x200B; publiek &#x200B;](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) creëren om een publiek in Adobe Target tot stand te brengen.
 
 ### Publiek - CSV-bestand {#audience-csv-file}
 
@@ -372,7 +372,7 @@ Adobe biedt een aantal soorten publiek dat kan worden gebruikt.
 1. Selecteer **CSV dossier**.
 1. Dan selecteer het vereiste **publiek van het Doel**, van de verstrekte lijst.
 
-   ![ produceer Variaties - publieksbron - CSV dossier ](assets/generate-variations-audiences-csv-file.png)
+   ![&#x200B; produceer Variaties - publieksbron - CSV dossier &#x200B;](assets/generate-variations-audiences-csv-file.png)
 
 #### CSV-bestand voor publiek toevoegen {#add-audience-csv-file}
 
@@ -400,7 +400,7 @@ Als u bijvoorbeeld een publiek wilt toevoegen vanuit een bestand op Google Drive
 
    Bijvoorbeeld:
 
-   ![ produceer Variaties - voeg publiekCSV dossier ](assets/generate-variations-audiences-csv-save.png) toe
+   ![&#x200B; produceer Variaties - voeg publiekCSV dossier &#x200B;](assets/generate-variations-audiences-csv-save.png) toe
 
 ## Generatief actieverbruik {#generative-action-usage}
 
@@ -412,11 +412,11 @@ Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
 
   >[!NOTE]
   >
-  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
+  >Zie [&#x200B; Adobe Experience Manager: Cloud Service | Productbeschrijving &#x200B;](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
 
 * Adobe Express
 
-  Het gebruik van de de generatie van het beeld wordt behandeld door de aanspraken van Adobe Express en [ generatieve kredieten ](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+  Het gebruik van de de generatie van het beeld wordt behandeld door de aanspraken van Adobe Express en [&#x200B; generatieve kredieten &#x200B;](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
 
 ## Toegang genereert variaties {#access-generate-variations}
 
@@ -438,19 +438,19 @@ Gebruikers die toegang nodig hebben om variaties te genereren, moeten recht hebb
 >
 >Neem contact op met uw accountteam om te bespreken hoe u met Edge Delivery Services naar AEM Sites as a Cloud Service kunt gaan.
 
-Als u toegang wilt verlenen aan specifieke gebruikers, wijst u hun gebruikersaccount toe aan het desbetreffende productprofiel. Zie [ Toewijzend de Profielen van het Product van AEM voor verdere details ](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+Als u toegang wilt verlenen aan specifieke gebruikers, wijst u hun gebruikersaccount toe aan het desbetreffende productprofiel. Zie [&#x200B; Toewijzend de Profielen van het Product van AEM voor verdere details &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 
 ### Toegang tot AEM as a Cloud Service {#access-aemaacs}
 
-Produceer Variaties kan van het [ Comité van de Navigatie ](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) van AEM as a Cloud Service worden betreden:
+Produceer Variaties kan van het [&#x200B; Comité van de Navigatie &#x200B;](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) van AEM as a Cloud Service worden betreden:
 
-![ het paneel van de Navigatie ](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+![&#x200B; het paneel van de Navigatie &#x200B;](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
 
 ### Toegang van de AEM Sidekick {#access-aem-sidekick}
 
 Er is enige configuratie nodig voordat u toegang krijgt tot Variaties genereren via de Sidekick (van Edge Delivery Services).
 
-1. Zie het document [ Installerend AEM Sidekick ](https://www.aem.live/docs/sidekick-extension) voor hoe te om Sidekick te installeren en te vormen.
+1. Zie het document [&#x200B; Installerend AEM Sidekick &#x200B;](https://www.aem.live/docs/sidekick-extension) voor hoe te om Sidekick te installeren en te vormen.
 
 1. Als u de functie Variaties genereren in de Sidekick (van Edge Delivery Services) wilt gebruiken, neemt u de volgende configuratie op in uw Edge Delivery Services-projecten onder:
 
@@ -478,18 +478,18 @@ Er is enige configuratie nodig voordat u toegang krijgt tot Variaties genereren 
    }
    ```
 
-1. U kunt dan moeten ervoor zorgen dat de gebruikers [ Toegang tot Experience Manager as a Cloud Service met Edge Delivery Services ](#access-to-aemaacs-with-edge-delivery-services) hebben.
+1. U kunt dan moeten ervoor zorgen dat de gebruikers [&#x200B; Toegang tot Experience Manager as a Cloud Service met Edge Delivery Services &#x200B;](#access-to-aemaacs-with-edge-delivery-services) hebben.
 
 1. U kunt tot de eigenschap dan toegang hebben, door **te selecteren produceert Variaties** van de toolbar van Sidekick:
 
-   ![ produceer Variaties - toegang van AEM Sidekicj ](assets/generate-variations-sidekick-toolbar.png)
+   ![&#x200B; produceer Variaties - toegang van AEM Sidekicj &#x200B;](assets/generate-variations-sidekick-toolbar.png)
 
 ## Aanvullende informatie {#further-information}
 
 Voor meer informatie kunt u ook lezen:
 
-* [ GenAI produceert Variaties op GitHub ](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [ de Experimentatie van Edge Delivery Services ](https://www.aem.live/docs/experimentation)
+* [&#x200B; GenAI produceert Variaties op GitHub &#x200B;](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [&#x200B; de Experimentatie van Edge Delivery Services &#x200B;](https://www.aem.live/docs/experimentation)
 * [Generatieve AI in AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## Veelgestelde vragen {#faqs}
@@ -566,4 +566,4 @@ Deze ophalen:
 
 ## Releasegeschiedenis {#release-history}
 
-Voor details van huidige, en vorige, versies zien de [ Nota&#39;s van de Versie voor produceer Variaties ](/help/generative-ai/release-notes-generate-variations.md)
+Voor details van huidige, en vorige, versies zien de [&#x200B; Nota&#39;s van de Versie voor produceer Variaties &#x200B;](/help/generative-ai/release-notes-generate-variations.md)

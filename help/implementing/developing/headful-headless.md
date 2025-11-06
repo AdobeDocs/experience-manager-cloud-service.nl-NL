@@ -23,7 +23,7 @@ AEM kan ook worden gebruikt om inhoud eenvoudig te beheren, zodat presentatie en
 
 Maar dit hoeft geen binaire keuze te zijn. AEM biedt een ongekende flexibiliteit, zodat u de voordelen van beide modellen voor uw project kunt benutten.
 
-![ Modellen van de Implementatie van AEM ](/help/headless/assets/aem-implementation-models.png)
+![&#x200B; Modellen van de Implementatie van AEM &#x200B;](/help/headless/assets/aem-implementation-models.png)
 
 In een krachtig of volledig-stapelmodel, wordt de inhoud beheerd in de bewaarplaats van AEM en de componenten van AEM die op Java, HTML worden gebaseerd, etc. worden gebruikt om de inhoud voor de gebruikerservaring terug te geven. In dit model gebeurt het maken van de inhoud, het vormgeven, het presenteren en leveren ervan allemaal in AEM.
 
@@ -45,7 +45,7 @@ In de volgende sectie worden deze integratieniveaus nader beschreven.
 
 >[!NOTE]
 >
->Natuurlijk kon u WebshopSPA als volledig werkend AEM SPA [ ook re-uitvoeren gebruikend het kader van de Redacteur van AEM SPA ](/help/implementing/developing/hybrid/introduction.md). Als u reeds AEM hebt en een Webshop of andere SPA wilt tot stand brengen, is dit de geadviseerde methode, maar het uit het werkingsgebied van dit document.
+>Natuurlijk kon u WebshopSPA als volledig werkend AEM SPA [&#x200B; ook re-uitvoeren gebruikend het kader van de Redacteur van AEM SPA &#x200B;](/help/implementing/developing/hybrid/introduction.md). Als u reeds AEM hebt en een Webshop of andere SPA wilt tot stand brengen, is dit de geadviseerde methode, maar het uit het werkingsgebied van dit document.
 
 ## SPA-integratieniveaus {#integration-levels}
 
@@ -55,19 +55,19 @@ De integratie van SPA&#39;s valt op een spectrum van vier niveaus in AEM.
    * De SBZ en AEM bestaan afzonderlijk en wisselen geen informatie uit.
    * Inhoud wordt in twee aparte systemen gemaakt, beheerd en afzonderlijk geleverd.
 * **Niveau 1: De integratie van het fragmentintegratie van de inhoud**
-   * [ de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) worden gebruikt in AEM om beperkte inhoud voor het KUUUROORD tot stand te brengen en te beheren.
-   * Het KUUROORD wint deze inhoud via AEM [ GraphQL API ](/help/headless/graphql-api/content-fragments.md) terug.
+   * [&#x200B; de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) worden gebruikt in AEM om beperkte inhoud voor het KUUUROORD tot stand te brengen en te beheren.
+   * Het KUUROORD wint deze inhoud via AEM [&#x200B; GraphQL API &#x200B;](/help/headless/graphql-api/content-fragments.md) terug.
    * Sommige inhoud wordt beheerd in AEM en andere in een extern systeem.
    * De inhoud kan slechts in SPA worden bekeken.
 * **Niveau 2: Sluit het KUUROORD in AEM** in
-   * [ de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) worden gebruikt in AEM om inhoud voor het KUUROORD tot stand te brengen en te beheren.
-   * Het KUUROORD wint deze inhoud via AEM [ GraphQL API ](/help/headless/graphql-api/content-fragments.md) terug.
+   * [&#x200B; de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) worden gebruikt in AEM om inhoud voor het KUUROORD tot stand te brengen en te beheren.
+   * Het KUUROORD wint deze inhoud via AEM [&#x200B; GraphQL API &#x200B;](/help/headless/graphql-api/content-fragments.md) terug.
    * Sommige inhoud wordt beheerd in AEM en andere in een extern systeem.
    * Inhoud kan in AEM in context worden weergegeven.
    * Beperkte inhoud kan in AEM worden bewerkt.
 * **Niveau 3: Sluit en laat volledig SPA in AEM** in
-   * [ de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) worden gebruikt in AEM om inhoud voor het KUUROORD tot stand te brengen en te beheren.
-   * Het KUUROORD wint deze inhoud via AEM [ GraphQL API ](/help/headless/graphql-api/content-fragments.md) terug.
+   * [&#x200B; de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) worden gebruikt in AEM om inhoud voor het KUUROORD tot stand te brengen en te beheren.
+   * Het KUUROORD wint deze inhoud via AEM [&#x200B; GraphQL API &#x200B;](/help/headless/graphql-api/content-fragments.md) terug.
    * Inhoud kan in AEM in context worden weergegeven.
    * De meeste inhoud kan in AEM worden bewerkt.
 
@@ -79,9 +79,9 @@ Het voordeel en de flexibiliteit van AEM worden duidelijk met niveaus 2 en 3 ter
 
 Er zijn verschillende gereedschappen beschikbaar in AEM, afhankelijk van het integratieniveau dat u kiest. Elk niveau bouwt op de hulpmiddelen voort die in het vorige worden gebruikt. De volgende lijst verwijst naar de relevante bronnen.
 
-* **Niveau 1:** de Fragmenten van de Inhoud en [ het hoofd van AEM kader ](/help/headless/introduction.md) kunnen worden gebruikt om de inhoud van AEM aan het KUUROORD te leveren.
+* **Niveau 1:** de Fragmenten van de Inhoud en [&#x200B; het hoofd van AEM kader &#x200B;](/help/headless/introduction.md) kunnen worden gebruikt om de inhoud van AEM aan het KUUROORD te leveren.
 * **Niveau 2:** naast niveau één:
-   * [ de component RemotePage ](/help/implementing/developing/hybrid/remote-page.md) kan worden gebruikt om het externe KUUROORD in AEM in te bedden waar de inhoud van AEM in-context kan worden bekeken.
-   * Bepaalde punten op het KUUROORD kunnen ook worden toegelaten [ beperkt het uitgeven in AEM ](/help/implementing/developing/hybrid/editing-external-spa.md) toestaan.
+   * [&#x200B; de component RemotePage &#x200B;](/help/implementing/developing/hybrid/remote-page.md) kan worden gebruikt om het externe KUUROORD in AEM in te bedden waar de inhoud van AEM in-context kan worden bekeken.
+   * Bepaalde punten op het KUUROORD kunnen ook worden toegelaten [&#x200B; beperkt het uitgeven in AEM &#x200B;](/help/implementing/developing/hybrid/editing-external-spa.md) toestaan.
 * **Niveau 3:** naast niveau twee:
    * De volledige streken van het KUUROORD kunnen worden toegelaten om het uitvoerige uitgeven in AEM toe te staan.

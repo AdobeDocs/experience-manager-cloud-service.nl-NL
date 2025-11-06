@@ -16,9 +16,9 @@ ht-degree: 0%
 Met Edge Delivery Services for AEM Forms kunt u gebruikersvriendelijke en interactieve formulieren maken met behulp van verschillende componenten. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
 
 
-![ een steekproefspreadsheet van A met sommige componenten en eigenschappen ](/help/edge/assets/sample-form-in-spreadsheet.png)
+![&#x200B; een steekproefspreadsheet van A met sommige componenten en eigenschappen &#x200B;](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-Het Adaptieve Blok van Forms produceert a [ eenvormige structuur van HTML ](/help/edge/docs/forms/style-theme-forms.md) voor alle gebiedstypes en containers (panelen) die de consistentie verzekeren. Deze verenigbare structuur maakt het gemakkelijker om [ een vorm ](/help/edge/docs/forms/style-theme-forms.md) te stileren.
+Het Adaptieve Blok van Forms produceert a [&#x200B; eenvormige structuur van HTML &#x200B;](/help/edge/docs/forms/style-theme-forms.md) voor alle gebiedstypes en containers (panelen) die de consistentie verzekeren. Deze verenigbare structuur maakt het gemakkelijker om [&#x200B; een vorm &#x200B;](/help/edge/docs/forms/style-theme-forms.md) te stileren.
 
 ## Beschikbare componenten
 
@@ -26,17 +26,17 @@ Hier volgt een overzicht van de beschikbare componenten:
 
 ### Invoervelden
 
-- Alle geldige HTML5 [ inputtypes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) en [ textarea ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Bijvoorbeeld knop, selectievakje, kleur, datum, datum, lokale datum, e-mail, bestand, verborgen, afbeelding, maand, nummer, wachtwoord, radio, bereik, reset, submit, tel, text, time, url en week.
+- Alle geldige HTML5 [&#x200B; inputtypes &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) en [&#x200B; textarea &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Bijvoorbeeld knop, selectievakje, kleur, datum, datum, lokale datum, e-mail, bestand, verborgen, afbeelding, maand, nummer, wachtwoord, radio, bereik, reset, submit, tel, text, time, url en week.
 
 ### Selectie-elementen
 
-- [ de groepen van Checkbox ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): Voor het selecteren van veelvoudige opties.
-- [ Keuzerondjes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): Voor het selecteren van één enkele optie van een groep.
-- [ menu&#39;s Dropdown ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): Om een menu van opties te tonen. Bijvoorbeeld vervolgkeuzelijst.
+- [&#x200B; de groepen van Checkbox &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): Voor het selecteren van veelvoudige opties.
+- [&#x200B; Keuzerondjes &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): Voor het selecteren van één enkele optie van een groep.
+- [&#x200B; menu&#39;s Dropdown &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): Om een menu van opties te tonen. Bijvoorbeeld vervolgkeuzelijst.
 
 ### Containers
 
-- Deelvensters/containers: gerelateerde formulierelementen groeperen voor een betere organisatie. Het is een combinatie van [ veldset ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) en [ legenda ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
+- Deelvensters/containers: gerelateerde formulierelementen groeperen voor een betere organisatie. Het is een combinatie van [&#x200B; veldset &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) en [&#x200B; legenda &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## Eigenschappen van componenten
@@ -60,7 +60,7 @@ Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de w
 | Meerdere | Bestand | Hiermee worden meerdere selecties toegestaan. Het kenmerk multiple is een Booleaanse eigenschap die wordt gebruikt bij velden voor bestandsinvoer. Als deze optie is ingesteld op true, kunnen gebruikers meer dan één bestand selecteren. |
 | Opties | Vervolgkeuzelijst | Hiermee geeft u keuzen op voor vervolgkeuzemenu&#39;s. De eigenschap options is een door komma&#39;s gescheiden lijst met opties voor vervolgkeuzemenu&#39;s, waarmee de selecteerbare opties worden gedefinieerd die aan de gebruiker worden weergegeven. |
 | Ingeschakeld | Selectievakje, Radio | Hiermee bepaalt u of het veld standaard is geselecteerd. Het geselecteerde kenmerk is een Booleaanse eigenschap die wordt gebruikt met selectievakje en radio-invoer. Als de waarde true is, wordt hiermee aangegeven dat het veld standaard is geselecteerd wanneer het formulier wordt geladen. |
-| Veldset | Alles | Hiermee groepeert u velden om visueel verschillende secties in een formulier te maken. Met de veldsetelementgroepen worden verwante velden in een formulier gegroepeerd, zodat u ze visueel kunt scheiden om de organisatie en gebruikerservaring te verbeteren. </br> Als u een set velden binnen een veldset wilt ordenen, gebruikt u gewoon de eigenschap `fieldset` en geeft u het kenmerk name op. In het onderstaande voorbeeld tonen we aan hoe keuzerondjes worden ingekapseld binnen een enkele veldset voor een betere organisatie. ![ Voorbeeld van de Veldset ](/help/edge/assets/fieldset-example.png) |
+| Veldset | Alles | Hiermee groepeert u velden om visueel verschillende secties in een formulier te maken. Met de veldsetelementgroepen worden verwante velden in een formulier gegroepeerd, zodat u ze visueel kunt scheiden om de organisatie en gebruikerservaring te verbeteren. </br> Als u een set velden binnen een veldset wilt ordenen, gebruikt u gewoon de eigenschap `fieldset` en geeft u het kenmerk name op. In het onderstaande voorbeeld tonen we aan hoe keuzerondjes worden ingekapseld binnen een enkele veldset voor een betere organisatie. ![&#x200B; Voorbeeld van de Veldset &#x200B;](/help/edge/assets/fieldset-example.png) |
 | Herhalbaar | Alles | Een Booleaanse eigenschap voor `fieldset` die aangeeft dat een bepaalde veldset kan worden herhaald voor opgegeven `Min` en `Max` het aantal keren. De eigenschap `Min` moet op 1 of hoger worden ingesteld. Stel de eigenschap `Min` niet in op 0. |
 | Zichtbare expressie | Alles | Een zichtbare expressie verwijst naar een spreadsheetformule, aangeduid met de tag &#39;=&#39;, die wordt gebruikt om de zichtbaarheid van een veld te bepalen. In deze formule kan alleen de eigenschap value van andere velden worden gebruikt, zodat de zichtbaarheid van velden binnen het systeem eenvoudig kan worden beheerd. |
 | Waardeuitdrukking | Alles | Een waardexpressie verwijst naar een spreadsheetformule, aangeduid met de tag &#39;=&#39;, die wordt gebruikt om de waarde van een veld te bepalen. In deze formule kan alleen de eigenschap value van andere velden worden gebruikt, zodat de veldwaarde binnen het systeem eenvoudig kan worden beheerd. |

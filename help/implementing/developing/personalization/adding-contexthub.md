@@ -25,7 +25,7 @@ Om de eigenschappen ContextHub toe te laten en aan de bibliotheken van ContextHu
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-U moet ook vormen of de toolbar ContextHub op de wijze van de Voorproef verschijnt. Zie [ het Tonen van en het Hiding van ContextHub UI ](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+U moet ook vormen of de toolbar ContextHub op de wijze van de Voorproef verschijnt. Zie [&#x200B; het Tonen van en het Hiding van ContextHub UI &#x200B;](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## Informatie over ContextHub-winkels {#about-contexthub-stores}
 
@@ -36,7 +36,7 @@ De opslag van ContextHub van het gebruik om contextgegevens voort te zetten. Con
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Alle winkeltypen zijn extensies van de klasse [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) . Voor informatie over het creëren van een opslagtype, zie [ Creërend de Opslag van de Douane ](extending-contexthub.md#creating-custom-store-candidates). Voor informatie over de types van steekproefopslag, zie [ de Kandidaten van de Winkel van de Steekproef ContextHub ](sample-stores.md).
+Alle winkeltypen zijn extensies van de klasse [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) . Voor informatie over het creëren van een opslagtype, zie [&#x200B; Creërend de Opslag van de Douane &#x200B;](extending-contexthub.md#creating-custom-store-candidates). Voor informatie over de types van steekproefopslag, zie [&#x200B; de Kandidaten van de Winkel van de Steekproef ContextHub &#x200B;](sample-stores.md).
 
 ### Persistentiemodi {#persistence-modes}
 
@@ -111,7 +111,7 @@ De opslagkandidaten van de douane kunnen extra functies bepalen die toegang verl
 >
 >ContextHub is niet door gebrek zich bewust van momenteel het programma geopend op publiceer servers en dergelijke gebruikers worden beschouwd door ContextHub als &quot;Anoniem.&quot;
 >
->U kunt ContextHub bewust maken van het programma geopende gebruikers door de profielopslag te laden. Zie de steekproefcode: [ aem-sample-wij-retail op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>U kunt ContextHub bewust maken van het programma geopende gebruikers door de profielopslag te laden. Zie de steekproefcode: [&#x200B; aem-sample-wij-retail op GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### ContextHub Event {#contexthub-eventing}
 
@@ -129,15 +129,15 @@ De ContextHub segmentmotor laat u toe om te bepalen welke van de geregistreerde 
 
 ContextHub-segmenten worden onder het knooppunt `/conf/<site>/settings/wcm/segments` geïnstalleerd.
 
-De volgende segmenten worden geïnstalleerd met de [ plaats van het WKND leerprogramma ](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+De volgende segmenten worden geïnstalleerd met de [&#x200B; plaats van het WKND leerprogramma &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * zomer
 * winter
 
 De regels die worden gebruikt om deze segmenten op te lossen zijn als volgt samengevat:
 
-* Eerst wordt de [ geolocatie ](sample-stores.md#contexthub-geolocation-sample-store-candidate) opslag gebruikt om breedtegraad van de gebruiker te bepalen.
-* Dan bepaalt het maandgegevenspunt van de [ surferinfo opslag ](sample-stores.md#contexthub-surferinfo-sample-store-candidate) welk seizoen het in die breedtegraad is.
+* Eerst wordt de [&#x200B; geolocatie &#x200B;](sample-stores.md#contexthub-geolocation-sample-store-candidate) opslag gebruikt om breedtegraad van de gebruiker te bepalen.
+* Dan bepaalt het maandgegevenspunt van de [&#x200B; surferinfo opslag &#x200B;](sample-stores.md#contexthub-surferinfo-sample-store-candidate) welk seizoen het in die breedtegraad is.
 
 >[!WARNING]
 >
@@ -145,8 +145,8 @@ De regels die worden gebruikt om deze segmenten op te lossen zijn als volgt same
 
 ## Foutopsporing in ContextHub {#debugging-contexthub}
 
-Er zijn verscheidene opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [ het Vormen ContextHub voor meer informatie ](configuring-contexthub.md#logging-debug-messages-for-contexthub).
+Er zijn verscheidene opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [&#x200B; het Vormen ContextHub voor meer informatie &#x200B;](configuring-contexthub.md#logging-debug-messages-for-contexthub).
 
 ## Zie een Overzicht van het Kader ContextHub {#see-an-overview-of-the-contexthub-framework}
 
-ContextHub verstrekt a [ diagnostische pagina ](contexthub-diagnostics.md) waar u een overzicht van het kader ContextHub kunt zien.
+ContextHub verstrekt a [&#x200B; diagnostische pagina &#x200B;](contexthub-diagnostics.md) waar u een overzicht van het kader ContextHub kunt zien.

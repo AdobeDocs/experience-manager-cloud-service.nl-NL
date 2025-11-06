@@ -13,25 +13,25 @@ ht-degree: 1%
 
 # Zoeken in Forms configureren {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service komt met een krachtig [ mechanisme van het Onderzoek ](/help/sites-cloud/authoring/search.md).
+Adobe Experience Manager as a Cloud Service komt met een krachtig [&#x200B; mechanisme van het Onderzoek &#x200B;](/help/sites-cloud/authoring/search.md).
 
 In combinatie hiermee is er ook een set vooraf gedefinieerde opties waarmee u de inhoud kunt filteren. Deze greep vooraf bepaalde facetten zoals **Gewijzigde Datum**, **publiceer Status**, of **Status van de Leef** om u te helpen snel neer boren aan de middelen u nodig hebt.
 
-![ onderzoek en filtergebruik ](assets/csf-usage.png)
+![&#x200B; onderzoek en filtergebruik &#x200B;](assets/csf-usage.png)
 
 Samen helpen u om uw inhoud snel en gemakkelijk te vinden van:
 
 * [Zoeken en filteren](/help/sites-cloud/authoring/search.md#search-and-filter)
 * [Spoorwegkiezer](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
-* Browser van [ Assets ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (wanneer het uitgeven van pagina&#39;s)
+* Browser van [&#x200B; Assets &#x200B;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (wanneer het uitgeven van pagina&#39;s)
 
 >[!NOTE]
 >
->U kunt het onderliggende [ Onderzoek van de Inhoud en het Indexeren ](/help/operations/indexing.md) dienst vormen.
+>U kunt het onderliggende [&#x200B; Onderzoek van de Inhoud en het Indexeren &#x200B;](/help/operations/indexing.md) dienst vormen.
 
 Gebruikend **Onderzoek Forms**, kunt u, deze panelen aanpassen en uitbreiden, volgens uw specifieke behoeften.
 
-Het **Onderzoek Forms** verstrekt een uit-van-de-doosselectie van [ voorspelt ](#predicates-and-their-settings) dat u kunt combineren en bepalen. De [ dialogen voor het vormen van deze vormen ](#configuring-your-search-forms) kunnen via worden betreden:
+Het **Onderzoek Forms** verstrekt een uit-van-de-doosselectie van [&#x200B; voorspelt &#x200B;](#predicates-and-their-settings) dat u kunt combineren en bepalen. De [&#x200B; dialogen voor het vormen van deze vormen &#x200B;](#configuring-your-search-forms) kunnen via worden betreden:
 
 * **Hulpmiddelen**
    * **Algemeen**
@@ -39,9 +39,9 @@ Het **Onderzoek Forms** verstrekt een uit-van-de-doosselectie van [ voorspelt ](
 
 ## Standaard Forms {#default-forms}
 
-Wanneer u eerst tot het **Onderzoek Forms** console toegang hebt kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de overeenkomstige configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u hebt aangepast, en bewaard, zal een configuratie het slot verdwijnen. Het zal opnieuw verschijnen wanneer u [ uw aangepaste configuratie ](#deleting-a-configuration-to-reinstate-the-default) schrapt, waarin het gebrek (en de hangslotindicator) wordt hersteld.
+Wanneer u eerst tot het **Onderzoek Forms** console toegang hebt kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de overeenkomstige configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u hebt aangepast, en bewaard, zal een configuratie het slot verdwijnen. Het zal opnieuw verschijnen wanneer u [&#x200B; uw aangepaste configuratie &#x200B;](#deleting-a-configuration-to-reinstate-the-default) schrapt, waarin het gebrek (en de hangslotindicator) wordt hersteld.
 
-![ vormend overzicht van onderzoeksvormen ](assets/csf-overview.png)
+![&#x200B; vormend overzicht van onderzoeksvormen &#x200B;](assets/csf-overview.png)
 
 De standaardconfiguraties (alfabetisch weergegeven) zijn:
 
@@ -55,18 +55,18 @@ De standaardconfiguraties (alfabetisch weergegeven) zijn:
 * **Redacteur van de Pagina (het onderzoek van het Product)**
 * **de Redacteur van de Pagina (onderzoek Scene7)**
 * **de Redacteur van de Pagina (Video onderzoek)**
-* **Rail van het Onderzoek van Admin van het Project {**
+* **Rail van het Onderzoek van Admin van het Project &lbrace;**
 * **Rail van het Onderzoek van de Vertaling van het Project**
 * **Rail van het Onderzoek van Plaatsen Admin**
 * **Fragmenten Admin Rail van het Onderzoek van Admin**
 * **Rail van het Onderzoek van Admin van het Beeld**
 * **Modellen van het Fragment van de Inhoud van het Onderzoek Rail**
-* **Rail van het Onderzoek van Admin van het Project {**
+* **Rail van het Onderzoek van Admin van het Project &lbrace;**
 * **Rail van het Onderzoek van de Vertaling van het Project**
 
 >[!NOTE]
 >
->Voor meer details over activa verwante onderzoeksvormen, zie [ Assets - de Facetten van het Onderzoek ](/help/assets/search-facets.md).
+>Voor meer details over activa verwante onderzoeksvormen, zie [&#x200B; Assets - de Facetten van het Onderzoek &#x200B;](/help/assets/search-facets.md).
 
 
 ## Voorspellen en de bijbehorende instellingen {#predicates-and-their-settings}
@@ -320,7 +320,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
    <td>
     <ul>
      <li>Naam eigenschap ("path")</li>
-     <li>Waarde van het onroerend goed (`/content/dam')</li>
+     <li>Waarde van het onroerend goed (&grave;/content/dam')</li>
     </ul> 
    </td>
   </tr>
@@ -544,7 +544,7 @@ Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes 
 * **publiceer en Levende Naam van het Bezit van het Exemplaar**
 De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifieke predikaat van Plaatsen.
 
-* &amp;ast; op de gebiedslabels op het **lusje van Montages** betekent de gebieden verplicht zijn en als verlaten leeg een foutenmelding zal verschijnen.
+* &ast; op de gebiedslabels op het **lusje van Montages** betekent de gebieden verplicht zijn en als verlaten leeg een foutenmelding zal verschijnen.
 
 ## Uw zoekopdracht configureren, Forms {#configuring-your-search-forms}
 
@@ -554,7 +554,7 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
 
 1. Selecteer de configuratie die u wilt aanpassen.
 1. Gebruik **geef** pictogram uit om de configuratie voor het bijwerken te openen.
-1. Als een nieuwe aanpassing u waarschijnlijk [ zult willen toevoegen nieuwe voorspellen gebieden en de montages ](#add-edit-a-predicate-field-and-define-field-settings) zoals vereist bepalen. Als een bestaande aanpassing u een bestaand gebied kunt selecteren en [ de montages ](#add-edit-a-predicate-field-and-define-field-settings) bijwerken.
+1. Als een nieuwe aanpassing u waarschijnlijk [&#x200B; zult willen toevoegen nieuwe voorspellen gebieden en de montages &#x200B;](#add-edit-a-predicate-field-and-define-field-settings) zoals vereist bepalen. Als een bestaande aanpassing u een bestaand gebied kunt selecteren en [&#x200B; de montages &#x200B;](#add-edit-a-predicate-field-and-define-field-settings) bijwerken.
 1. Selecteer **Gedaan** om de configuratie te bewaren. De volgende keer dat de configuratie wordt gebruikt, zijn uw wijzigingen zichtbaar.
 
    >[!NOTE]
@@ -568,10 +568,10 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
 
 U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bijwerken:
 
-1. [ open de aangepaste configuratie ](#creating-opening-a-customized-configuration) voor het bijwerken.
+1. [&#x200B; open de aangepaste configuratie &#x200B;](#creating-opening-a-customized-configuration) voor het bijwerken.
 1. Als u een nieuw gebied wilt toevoegen, open **Uitgezochte Predicate** tabel en sleep vereiste predikaat aan de vereiste plaats. Bijvoorbeeld, het **Predicate van de Waaier van de Datum**:
 
-   ![ voeg predikaat ](assets/csf-add-predicate.png) toe
+   ![&#x200B; voeg predikaat &#x200B;](assets/csf-add-predicate.png) toe
 
 1. Afhankelijk van of:
 
@@ -585,7 +585,7 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    Bijvoorbeeld, de montages voor het **Predicate van de Waaier van de Datum**:
 
-   ![ wijzigen predikaat ](assets/csf-modify-predicate.png)
+   ![&#x200B; wijzigen predikaat &#x200B;](assets/csf-modify-predicate.png)
 
 1. Breng zonodig uw veranderingen aan en bevestig met **Gereed**. De volgende keer dat de configuratie wordt gebruikt, zijn uw wijzigingen zichtbaar.
 
@@ -593,20 +593,20 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
 1. Selecteer het pictogram Voorvertoning:
 
-   ![ voorproefpictogram ](assets/csf-preview-icon.png)
+   ![&#x200B; voorproefpictogram &#x200B;](assets/csf-preview-icon.png)
 
 1. Hiermee geeft u de zoekformulieren weer zoals deze worden weergegeven (volledig uitgevouwen) in de kolom Zoeken van de desbetreffende console.
 
-   ![ voorproefvorm ](assets/csf-preview-form.png)
+   ![&#x200B; voorproefvorm &#x200B;](assets/csf-preview-form.png)
 
 1. **dicht** de voorproef om de configuratie terug te keren en te beëindigen.
 
 ### Een voorspelbaar veld verwijderen {#deleting-a-predicate-field}
 
-1. [ open de aangepaste configuratie ](#creating-opening-a-customized-configuration) voor het bijwerken.
+1. [&#x200B; open de aangepaste configuratie &#x200B;](#creating-opening-a-customized-configuration) voor het bijwerken.
 1. Selecteer het voorspelbare gebied (op het recht), open het **lusje van Montages** en selecteer dan het **Schrapping** pictogram (linksonder).
 
-   ![ schrappingspictogram ](assets/csf-delete-icon.png)
+   ![&#x200B; schrappingspictogram &#x200B;](assets/csf-delete-icon.png)
 
 1. In een dialoogvenster wordt bevestiging van de verwijderactie gevraagd.
 
@@ -624,7 +624,7 @@ Het schrappen van een aangepaste configuratie wordt gedaan van de console:
 
 1. Selecteer de vereiste configuratie (bijvoorbeeld, **Redacteur van de Pagina (het onderzoek van Paragraaf)**) en toen **schrap** pictogram in de toolbar:
 
-   ![ herstel gebrek ](assets/csf-restore-default.png)
+   ![&#x200B; herstel gebrek &#x200B;](assets/csf-restore-default.png)
 
 1. De aangepaste configuratie wordt verwijderd en de standaardinstelling wordt hersteld (dit wordt aangegeven door het opnieuw verschijnen van het hangslotsymbool in de console).
 
@@ -643,7 +643,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    * `jcr:title` - het veldlabel dat moet worden weergegeven in de zoekrail
    * `value` - de eigenschapswaarde waarop moet worden gezocht
 
-   ![ Predicate definitie ](assets/csf-options-predicate-01.png)
+   ![&#x200B; Predicate definitie &#x200B;](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
    >
@@ -674,12 +674,12 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
      `/apps/cq/gui/content/common/options/predicates/templatetype`
 
-   ![ Voorspelden van de Optie ](assets/csf-options-predicate-02.png)
+   ![&#x200B; Voorspelden van de Optie &#x200B;](assets/csf-options-predicate-02.png)
 
 1. Selecteer **Gedaan** om uw configuratie te bewaren.
 1. Navigeer aan de aangewezen console (in dit voorbeeld, **Plaatsen**) en open het **Onderzoek - Filters** spoor. De nieuwe zoekformulieren en de verschillende opties zijn zichtbaar. Selecteer de gewenste optie om de zoekresultaten weer te geven.
 
-   ![ opties die ](assets/csf-options-usage.png) worden gebruikt
+   ![&#x200B; opties die &#x200B;](assets/csf-options-usage.png) worden gebruikt
 
 
 ## Gebruikersmachtigingen {#user-permissions}

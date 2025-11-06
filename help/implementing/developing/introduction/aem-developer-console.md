@@ -15,12 +15,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->In dit artikel wordt een vernieuwde ervaring beschreven voor de AEM Cloud Service Developer Console, die nu bètaversie is. Sommige klanten kunnen tot het toegang hebben door een knoop bij de klassieke bovenkant van UI te klikken. Adobe verwelkomt eventuele feedback van u door deze naar `aemcs-new-devconsole-ui-beta@adobe.com` te verzenden. Voor informatie over de klassieke AEM Developer Console, zie [ dit artikel ](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
+>In dit artikel wordt een vernieuwde ervaring beschreven voor de AEM Cloud Service Developer Console, die nu bètaversie is. Sommige klanten kunnen tot het toegang hebben door een knoop bij de klassieke bovenkant van UI te klikken. Adobe verwelkomt eventuele feedback van u door deze naar `aemcs-new-devconsole-ui-beta@adobe.com` te verzenden. Voor informatie over de klassieke AEM Developer Console, zie [&#x200B; dit artikel &#x200B;](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 De AEM as a Cloud Service Developer Console bevat een set gereedschappen voor foutopsporing in Cloud-omgevingen. Het kan door een per-milieu verbinding in Cloud Manager worden betreden.
 
 >[!NOTE]
->AEM as a Cloud Service Developer Console zou niet met zo ook genoemde [*Adobe Developer Console* ](https://developer.adobe.com/developer-console/) moeten worden verward.
+>AEM as a Cloud Service Developer Console zou niet met zo ook genoemde [*Adobe Developer Console* &#x200B;](https://developer.adobe.com/developer-console/) moeten worden verward.
 >
 
 
@@ -44,7 +44,7 @@ Ontwikkelaars hebben toegang tot de functies die hieronder worden beschreven:
 
 ## OSGi-bundels {#osgi-bundles}
 
-![ Nieuw scherm van Bundles OSGi in Console Dev ](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+![&#x200B; Nieuw scherm van Bundles OSGi in Console Dev &#x200B;](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
 * Een overzicht van de pakketten OSGI die in het geselecteerde omgevingstype worden opgesteld. Hiermee wordt een zoekopdracht in volledige tekst ingeschakeld.
 * Het is nuttig om informatie over de daadwerkelijke staat van bundels in het milieu te krijgen. U kunt informatie ophalen zoals geëxporteerde pakketten, geïmporteerde pakketten, gebruikte services en meer.
@@ -53,27 +53,27 @@ Ontwikkelaars hebben toegang tot de functies die hieronder worden beschreven:
 
 ## Java-pakketten {#java-packages}
 
-![ het lusje van de Pakketten van Java in Dev Console UI ](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)
+![&#x200B; het lusje van de Pakketten van Java in Dev Console UI &#x200B;](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)
 
 * Een zoekprompt die u kunt gebruiken om te zoeken in pakketten die actief zijn in het OSGI-systeem van de omgeving. Op deze locatie kunt u zien welke bundel het pakket exporteert (of levert) en u kunt zien welke bundel het pakket importeert (of gebruikt). U kunt ook controleren op dubbele pakketten (hetzelfde pakket, verschillende versies), wat in sommige gevallen problemen kan veroorzaken.
-* **gebruik-geval van het voorbeeld:** De douanedienst die de [ dynamische klassenloader ](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) gebruikt laadt een klasse zonder een versie te specificeren. Aangezien meerdere bundels verschillende versies exporteren, varieert de implementatie en dit leidt tot gedragswijzigingen. De ontwikkelaar wil controleren welke pakketten in het milieu zonder het eigenschapmodel te analyseren zijn. Ze zoeken naar het pakket en bekijken alle geëxporteerde versies. Deze mogelijkheid geeft hen de informatie om een betere versiewaaier in te gaan.
+* **gebruik-geval van het voorbeeld:** De douanedienst die de [&#x200B; dynamische klassenloader &#x200B;](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) gebruikt laadt een klasse zonder een versie te specificeren. Aangezien meerdere bundels verschillende versies exporteren, varieert de implementatie en dit leidt tot gedragswijzigingen. De ontwikkelaar wil controleren welke pakketten in het milieu zonder het eigenschapmodel te analyseren zijn. Ze zoeken naar het pakket en bekijken alle geëxporteerde versies. Deze mogelijkheid geeft hen de informatie om een betere versiewaaier in te gaan.
 
 ## Servlets {#servlets}
 
-![ Servlets lusje in de Dev Console UI ](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)
+![&#x200B; Servlets lusje in de Dev Console UI &#x200B;](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)
 
 * Een zoekprompt waarin u een pad met kiezers en een extensie met GET of POST kunt opgeven. Het verstrekt dan de resultaten van servlets in orde van voorkeur die het verzoek in Sling behandelt.
 * **het gebruiksgeval van het Voorbeeld:** u hebt servlet OSGI die op een verzoek en drukoutput aan de reactie zou moeten activeren. In plaats van de verwachte uitvoer wordt de reactie echter leeg geretourneerd. U moet controleren of een andere servlet voorrang heeft op uw servlet vanwege specifiekere kiezers, `resourceType` , uitbreidingen of rangschikkingen. U zoekt naar het verwachte pad en zoekt of een andere servlet actief is met een hogere rang. Vervolgens bepaalt u of u uw servlet boven in de rij kunt zetten door bijvoorbeeld kiezers toe te voegen.
 
 ## Services {#services}
 
-![ het lusje van de Diensten in Dev Console UI ](/help/implementing/developing/introduction/assets/services-dev-console.png)
+![&#x200B; het lusje van de Diensten in Dev Console UI &#x200B;](/help/implementing/developing/introduction/assets/services-dev-console.png)
 
 * Gelijkaardig aan de mening van Componenten OSGI, maar gebaseerd op de diensten. U kunt snel zoeken in welke services bepaalde eigenschappen worden aangeboden.
 
 ## OSGi-componenten {#osgi-components}
 
-![ het Lusje van Componenten OSGi in Dev Console UI ](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)
+![&#x200B; het Lusje van Componenten OSGi in Dev Console UI &#x200B;](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)
 
 * Een overzicht van de componenten OSGI die in het geselecteerde omgevingstype aanwezig zijn. Hiermee wordt een zoekopdracht in volledige tekst ingeschakeld.
 * Je krijgt de live status van OSGI componenten in de omgeving. U kunt zien aan welke services het voldoet, de bundel die het levert en het activeringstype (onmiddellijk of vertraagd).
@@ -82,29 +82,29 @@ Ontwikkelaars hebben toegang tot de functies die hieronder worden beschreven:
 
 ## Integrations {#integrations}
 
-![ het lusje van Integraties in de Dev Console UI ](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)
+![&#x200B; het lusje van Integraties in de Dev Console UI &#x200B;](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)
 
 * Beheerders kunnen tokens voor services en ontwikkelaars genereren, hernoemen en verwijderen.
 
 ## Bewaarplaats {#repository}
 
-* Opent [ browser van de Bewaarplaats ](/help/implementing/developing/tools/repository-browser.md).
+* Opent [&#x200B; browser van de Bewaarplaats &#x200B;](/help/implementing/developing/tools/repository-browser.md).
 
 ## Statusfouten/query&#39;s {#status-dumps-queries}
 
-![ de Fouten/het lusje van Vragen van de Status in Dev Console UI ](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
+![&#x200B; de Fouten/het lusje van Vragen van de Status in Dev Console UI &#x200B;](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
 
 * Een volledige tekst of JSON-stortplaats van de huidige staat van bundels, pakketten, configuraties, de diensten, componenten, sling banen of de definities van Oak.
 * Dit is vooral nuttig als de ontwikkelaar een onverwachte status heeft ontdekt en deze status voor andere ontwikkelaars wil communiceren of documenteren. Het downloaden van de stortplaats geeft u een momentopname van de staat voor recentere verwijzing.
 
 ## Configuraties {#configurations}
 
-![ het lusje van Configuraties in Dev Console UI ](/help/implementing/developing/introduction/assets/configurations-dev-console.png)
+![&#x200B; het lusje van Configuraties in Dev Console UI &#x200B;](/help/implementing/developing/introduction/assets/configurations-dev-console.png)
 
 * Een doorzoekbare lijst met configuraties die actief zijn in de omgeving. U kunt zien welke eigenschappen door de configuraties worden verstrekt door de detailspagina uit te checken.
 * **het gebruiksgeval van het Voorbeeld:** De ontwikkelaar van A wil ervoor zorgen dat de configuraties die zij hebben gespecificeerd eigenlijk in het milieu aanwezig zijn. Als de configuratie ontbreekt, kunnen zij het eigenschapmodel of de wijze of de omslag van de configuratielooppas controleren.
 
 Voor productieprogramma&#39;s wordt met de &quot;Cloud Manager - Developer Role&quot; in Adobe Admin Console de toegang tot de AEM as a Cloud Service Developer Console gecontroleerd. Voor sandboxprogramma&#39;s kan elke gebruiker met een productprofiel dat AEM toegang biedt, de Developer Console gebruiken. Voor alle programma&#39;s is de &quot;Cloud Manager - Developer Role&quot; vereist voor statusdumps en toegang tot de browser van de repository. Als u gegevens van zowel auteur- als publicatieservices wilt weergeven, moeten gebruikers ook zijn toegewezen aan het productprofiel van AEM-gebruikers of AEM-beheerders op beide services.
 
-Voor meer informatie over vestiging gebruikerstoestemmingen, zie [ Documentatie van Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+Voor meer informatie over vestiging gebruikerstoestemmingen, zie [&#x200B; Documentatie van Cloud Manager &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 

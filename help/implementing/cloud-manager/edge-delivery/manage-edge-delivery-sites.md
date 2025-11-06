@@ -17,7 +17,7 @@ Leer hoe u Edge Delivery-sites in Cloud Manager beheert door een CDN-configurati
 
 ## Een domeintoewijzing toevoegen aan een bestaande Edge Delivery-site {#add-cdn-to-edge-delivery-site}
 
-Zie [ een Toewijzing van het Domein ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) toevoegen.
+Zie [&#x200B; een Toewijzing van het Domein &#x200B;](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) toevoegen.
 
 ## De naam van een Edge Delivery-site wijzigen (#rename-edge-delivery-site)
 
@@ -29,16 +29,16 @@ In Adobe Cloud Manager wilt u de naam van een Edge Delivery-site mogelijk wijzig
 
 **om een plaats van Edge Delivery anders te noemen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma met gevormde Edge Delivery Services, waar u een plaats van Edge Delivery wilt toevoegen.
 1. Voer een van de volgende handelingen uit:
 
    * Van de **pagina van het Overzicht van het Programma**, klik **Edge Delivery** tabel. Klik in de Edge Delivery-sitetabel op de ellips aan het einde van een rij waarvan u de naam wilt wijzigen.
 Klik **anders noemen**.
-   * In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren. Onder de **rubriek van de Diensten**, klik ![ het pictogram van Web-pagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.
-In de de plaatslijst van Edge Delivery, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats wilt anders noemen. Klik **anders noemen**.
+   * In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren. Onder de **rubriek van de Diensten**, klik ![&#x200B; het pictogram van Web-pagina&#39;s &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.
+In de de plaatslijst van Edge Delivery, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats wilt anders noemen. Klik **anders noemen**.
 
-1. In **geef de dialoogdoos van de Plaats van Edge Delivery** uit, op het **3} tekstgebied van de Naam van de Plaats {, ga de nieuwe naam van de plaats in.**
+1. In **geef de dialoogdoos van de Plaats van Edge Delivery** uit, op het **3&rbrace; tekstgebied van de Naam van de Plaats &lbrace;, ga de nieuwe naam van de plaats in.**
 
 1. Klik **uitgeven**.
 
@@ -48,19 +48,19 @@ Als u een Edge Delivery Services-site verwijdert, worden alle gekoppelde CDN-con
 
 **om een plaats van Edge Delivery te schrappen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma met gevormde Edge Delivery Services, waar u een plaats van Edge Delivery wilt toevoegen.
 1. Voer een van de volgende handelingen uit:
 
-   * Van de **pagina van het Overzicht van het Programma**, klik **Edge Delivery** tabel. In de de plaatslijst van Edge Delivery, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats u wilt verwijderen.
-Klik ![ het plaatspictogram van Edge Delivery van de Schrapping ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Schrapping**, dan klik **Schrapping** opnieuw om de verwijdering van de plaats te bevestigen.
+   * Van de **pagina van het Overzicht van het Programma**, klik **Edge Delivery** tabel. In de de plaatslijst van Edge Delivery, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats u wilt verwijderen.
+Klik ![&#x200B; het plaatspictogram van Edge Delivery van de Schrapping &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Schrapping**, dan klik **Schrapping** opnieuw om de verwijdering van de plaats te bevestigen.
 
-     ![ voeg de Plaats van Edge Delivery van het lusje van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
+     ![&#x200B; voeg de Plaats van Edge Delivery van het lusje van Edge Delivery toe &#x200B;](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren. Onder de **rubriek van de Diensten**, klik ![ Web-pagina voor het de plaatspictogram van Edge Delivery ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.
-In de de plaatslijst van Edge Delivery, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats u wilt verwijderen. Klik ![ het plaatspictogram van Edge Delivery van de Schrapping ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Schrapping**, dan klik **Schrapping** opnieuw om de verwijdering van de plaats te bevestigen.
+   * In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren. Onder de **rubriek van de Diensten**, klik ![&#x200B; Web-pagina voor het de plaatspictogram van Edge Delivery &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.
+In de de plaatslijst van Edge Delivery, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats u wilt verwijderen. Klik ![&#x200B; het plaatspictogram van Edge Delivery van de Schrapping &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Schrapping**, dan klik **Schrapping** opnieuw om de verwijdering van de plaats te bevestigen.
 
-     ![ voeg de Plaats van Edge Delivery van de knoop van Plaatsen van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+     ![&#x200B; voeg de Plaats van Edge Delivery van de knoop van Plaatsen van Edge Delivery toe &#x200B;](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
 ## Een Edge Delivery-site beheren tussen Helix 4 en Helix 5
 

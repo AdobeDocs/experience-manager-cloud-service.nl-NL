@@ -15,23 +15,23 @@ ht-degree: 0%
 
 De Query Builder biedt een eenvoudige manier om de opslagplaats voor inhoud van AEM op te vragen. De functionaliteit wordt beschikbaar gemaakt via een Java™ API en een REST API. In dit document worden deze API&#39;s beschreven.
 
-De server-zijvraagbouwer ([`QueryBuilder` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) keurt een vraagbeschrijving goed, creeert en stelt een vraag van XPath in werking, naar keuze filter de resultaatreeks, en ook haalt facetten, indien gewenst.
+De server-zijvraagbouwer ([`QueryBuilder` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) keurt een vraagbeschrijving goed, creeert en stelt een vraag van XPath in werking, naar keuze filter de resultaatreeks, en ook haalt facetten, indien gewenst.
 
-De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een voorspelling in volledige tekst, die overeenkomt met de functie `jcr:contains()` in XPath.
+De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een voorspelling in volledige tekst, die overeenkomt met de functie `jcr:contains()` in XPath.
 
-Voor elk predikaat type, is er een beoordelaarcomponent ([`PredicateEvaluator` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) die weet hoe te om dat specifieke predikaat voor XPath, het filtreren, en facetextractie te behandelen. Het is gemakkelijk om douanebeoordelaars tot stand te brengen, die door componenten OSGi runtime gestopt zijn.
+Voor elk predikaat type, is er een beoordelaarcomponent ([`PredicateEvaluator` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) die weet hoe te om dat specifieke predikaat voor XPath, het filtreren, en facetextractie te behandelen. Het is gemakkelijk om douanebeoordelaars tot stand te brengen, die door componenten OSGi runtime gestopt zijn.
 
 De REST API biedt toegang tot dezelfde functies via HTTP, waarbij reacties worden verzonden in JSON.
 
 >[!NOTE]
 >
->De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de JCR van AEM door de JCR API te gebruiken vanuit een OSGi-bundel. Voor informatie, zie [ het Vragen van de Gegevens van Adobe Experience Manager gebruikend JCR API ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+>De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de JCR van AEM door de JCR API te gebruiken vanuit een OSGi-bundel. Voor informatie, zie [&#x200B; het Vragen van de Gegevens van Adobe Experience Manager gebruikend JCR API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 ## Gem-sessie {#gem-session}
 
-[ AEM Gems ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) is een reeks technische diepe duiken in Adobe Experience Manager die door de deskundigen van Adobe worden geleverd.
+[&#x200B; AEM Gems &#x200B;](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) is een reeks technische diepe duiken in Adobe Experience Manager die door de deskundigen van Adobe worden geleverd.
 
-U kunt [ de zitting herzien die aan de vraagbouwer ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) voor een overzicht en gebruik van het hulpmiddel wordt gewijd.
+U kunt [&#x200B; de zitting herzien die aan de vraagbouwer &#x200B;](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) voor een overzicht en gebruik van het hulpmiddel wordt gewijd.
 
 ## Voorbeeldquery&#39;s {#sample-queries}
 
@@ -127,7 +127,7 @@ Door gebrek zou de Bouwer van de Vraag ook het aantal treffers verstrekken. Afha
 
 De interface kan bijvoorbeeld de volgende benadering aanpassen:
 
-* Krijg en toon de nauwkeurige telling van het aantal totale treffers ([ SearchResult.getTotalMatches () ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) of totaal in de `querybuilder.json` reactie) zijn minder dan of gelijk aan 100;
+* Krijg en toon de nauwkeurige telling van het aantal totale treffers ([&#x200B; SearchResult.getTotalMatches () &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) of totaal in de `querybuilder.json` reactie) zijn minder dan of gelijk aan 100;
 * Stel `guessTotal` in op 100 om de Query Builder aan te roepen.
 
 * De reactie kan het volgende resultaat hebben:
@@ -347,11 +347,11 @@ p.nodedepth=5
 
 ## Meer voorspellingen {#morepredicates}
 
-Voor meer predikaten, zie de [ Vooraf ingestelde pagina van de Verwijzing van de Bouwer van de Vraag ](query-builder-predicates.md).
+Voor meer predikaten, zie de [&#x200B; Vooraf ingestelde pagina van de Verwijzing van de Bouwer van de Vraag &#x200B;](query-builder-predicates.md).
 
-U kunt [ Javadoc voor de `PredicateEvaluator` klassen ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) ook controleren. Javadoc voor deze klassen bevat de lijst met eigenschappen die u kunt gebruiken.
+U kunt [&#x200B; Javadoc voor de `PredicateEvaluator` klassen &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) ook controleren. Javadoc voor deze klassen bevat de lijst met eigenschappen die u kunt gebruiken.
 
-De prefix van de klassennaam (bijvoorbeeld, `similar` in [`SimilarityPredicateEvaluator` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is het *belangrijkste bezit* van de klasse. Dit bezit is ook de naam van predikaat aan gebruik in de vraag (in kleine letters).
+De prefix van de klassennaam (bijvoorbeeld, `similar` in [`SimilarityPredicateEvaluator` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is het *belangrijkste bezit* van de klasse. Dit bezit is ook de naam van predikaat aan gebruik in de vraag (in kleine letters).
 
 Voor dergelijke belangrijkste eigenschappen kunt u de query verkorten en `similar=/content/en` gebruiken in plaats van de volledig gekwalificeerde variant `similar.similar=/content/en` . Het volledig gekwalificeerde formulier moet worden gebruikt voor alle niet-hoofdeigenschappen van een klasse.
 
@@ -423,13 +423,13 @@ U kunt query&#39;s opslaan in de opslagplaats, zodat u ze later kunt gebruiken. 
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Wanneer u de methode [`QueryBuilder#storeQuery` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) gebruikt, wordt de gegeven `Query` in de opslagplaats opgeslagen als een bestand of als een eigenschap volgens de argumentwaarde `createFile` . In het volgende voorbeeld wordt getoond hoe u een `Query` als bestand opslaat naar het pad `/mypath/getfiles` :
+Wanneer u de methode [`QueryBuilder#storeQuery` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) gebruikt, wordt de gegeven `Query` in de opslagplaats opgeslagen als een bestand of als een eigenschap volgens de argumentwaarde `createFile` . In het volgende voorbeeld wordt getoond hoe u een `Query` als bestand opslaat naar het pad `/mypath/getfiles` :
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Om het even welke eerder opgeslagen vragen kunnen van de bewaarplaats worden geladen door de [`QueryBuilder#loadQuery` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) methode te gebruiken:
+Om het even welke eerder opgeslagen vragen kunnen van de bewaarplaats worden geladen door de [`QueryBuilder#loadQuery` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) methode te gebruiken:
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -470,7 +470,7 @@ Verklaar **alle** vragen tijdens de ontwikkelingscyclus tegen de reeks van de do
 
 Gebruik debugger van de Bouwer van de Vraag van AEM om een verklaarbare vraag van XPath te produceren.
 
-![ Debugger van de Bouwer van de Vraag ](assets/query-builder-debugger.png)
+![&#x200B; Debugger van de Bouwer van de Vraag &#x200B;](assets/query-builder-debugger.png)
 
 1. Geef de query van Query Builder op in de foutopsporing van Query Builder
 1. De zoekopdracht uitvoeren
@@ -485,9 +485,9 @@ Gebruik debugger van de Bouwer van de Vraag van AEM om een verklaarbare vraag va
 
 >[!NOTE]
 >
->De configuratie van de registreerapparaten wordt beschreven in het document [ Registreren ](/help/implementing/developing/introduction/logging.md).
+>De configuratie van de registreerapparaten wordt beschreven in het document [&#x200B; Registreren &#x200B;](/help/implementing/developing/introduction/logging.md).
 
-De logboekoutput (niveau INFO) van de implementatie van de vraagbouwer wanneer het uitvoeren van de vraag die in de vorige sectie [ wordt beschreven het Testen en het Zuiveren ](#testing-and-debugging)
+De logboekoutput (niveau INFO) van de implementatie van de vraagbouwer wanneer het uitvoeren van de vraag die in de vorige sectie [&#x200B; wordt beschreven het Testen en het Zuiveren &#x200B;](#testing-and-debugging)
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -523,10 +523,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Beschrijving** |
 |---|---|
-| [ com.day.cq.search ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | Basic Query Builder en Query API |
-| [ com.day.cq.search.result ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | Resultaat-API |
-| [ com.day.cq.search.facets ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Facetten |
-| [ com.day.cq.search.facets.buckets ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Emmers (in facetten) |
-| [ com.day.cq.search.eval ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | Voorspelende evaluatoren |
-| [ com.day.cq.search.facets.extractors ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet Extractor (voor beoordelaars) |
-| [ com.day.cq.search.writer ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer voor Query Builder servlet (`/bin/querybuilder.json`) |
+| [&#x200B; com.day.cq.search &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | Basic Query Builder en Query API |
+| [&#x200B; com.day.cq.search.result &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | Resultaat-API |
+| [&#x200B; com.day.cq.search.facets &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Facetten |
+| [&#x200B; com.day.cq.search.facets.buckets &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Emmers (in facetten) |
+| [&#x200B; com.day.cq.search.eval &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | Voorspelende evaluatoren |
+| [&#x200B; com.day.cq.search.facets.extractors &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet Extractor (voor beoordelaars) |
+| [&#x200B; com.day.cq.search.writer &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer voor Query Builder servlet (`/bin/querybuilder.json`) |

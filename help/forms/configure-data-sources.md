@@ -17,10 +17,10 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-![ de integratie van Gegevens ](do-not-localize/data-integeration.png)
+![&#x200B; de integratie van Gegevens &#x200B;](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms] Met gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden. De volgende typen worden buiten de box ondersteund:
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 * Salesforce
 * Microsoft® Azure Blob Storage
 
-De integratie van gegevens steunt OAuth2.0 ([ Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), Basisauthentificatie, en API Zeer belangrijke authentificatietypen uit-van-de-doos, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op SOAP-Gebaseerd, en de diensten OData in [!DNL Experience Manager] as a Cloud Service worden gevormd, JDBC voor relationele gegevensbestanden en schakelaar voor [!DNL Experience Manager] gebruikersprofiel wordt gevormd in [!DNL Experience Manager] Webconsole.
+De integratie van gegevens steunt OAuth2.0 ([&#x200B; Code van de Vergunning &#x200B;](https://oauth.net/2/grant-types/authorization-code/), [&#x200B; de Verantwoordelijkheden van de Cliënt &#x200B;](https://oauth.net/2/grant-types/client-credentials/)), Basisauthentificatie, en API Zeer belangrijke authentificatietypen uit-van-de-doos, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op SOAP-Gebaseerd, en de diensten OData in [!DNL Experience Manager] as a Cloud Service worden gevormd, JDBC voor relationele gegevensbestanden en schakelaar voor [!DNL Experience Manager] gebruikersprofiel wordt gevormd in [!DNL Experience Manager] Webconsole.
 
 ## Relationele database configureren {#configure-relational-database}
 
@@ -40,8 +40,8 @@ De integratie van gegevens steunt OAuth2.0 ([ Code van de Vergunning ](https://o
 
 Voordat u relationele databases configureert met gebruik van de [!DNL Experience Manager] webconsoleconfiguratie, moet u:
 
-* [ laat geavanceerd voorzien van een netwerk door wolkenmanager API ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html) toe, aangezien de havens door gebrek worden onbruikbaar gemaakt.
-* [ voeg JDBC bestuurdersgebiedsdelen in Geweven ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies) toe.
+* [&#x200B; laat geavanceerd voorzien van een netwerk door wolkenmanager API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html) toe, aangezien de havens door gebrek worden onbruikbaar gemaakt.
+* [&#x200B; voeg JDBC bestuurdersgebiedsdelen in Geweven &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies) toe.
 
 
 ### Stappen om een relationele database te configureren
@@ -51,7 +51,7 @@ U kunt relationele databases configureren met [!DNL Experience Manager] Web Cons
 1. Ga naar [!DNL Experience Manager] webconsole op `https://server:host/system/console/configMgr` .
 1. Zoek **[!UICONTROL Day Commons JDBC Connections Pools]** -configuratie. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
 
-   ![ JDBC Connector Pool ](/help/forms/assets/jdbc_connector.png)
+   ![&#x200B; JDBC Connector Pool &#x200B;](/help/forms/assets/jdbc_connector.png)
 
 1. In de configuratiedialoog, specificeer de details voor het gegevensbestand u, zoals wilt vormen:
 
@@ -73,7 +73,7 @@ U kunt relationele databases configureren met [!DNL Experience Manager] Web Cons
 
    >[!NOTE]
    >
-   > Zie [ SQL verbindingen gebruikend JDBC DataSourcePool ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) voor meer gedetailleerde informatie.
+   > Zie [&#x200B; SQL verbindingen gebruikend JDBC DataSourcePool &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) voor meer gedetailleerde informatie.
 
 1. Selecteer **[!UICONTROL Save]** om de configuratie op te slaan.
 
@@ -109,7 +109,7 @@ Alle configuraties van de cloudservice in [!DNL Experience Manager] worden gecon
 De map configureren voor configuraties van cloudservices:
 
 1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** .
-   * Zie Browser van de Configuratie [ documentatie 0} {voor meer informatie.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html)
+   * Zie Browser van de Configuratie [&#x200B; documentatie 0&rbrace; &lbrace;voor meer informatie.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html)
 1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
    1. Selecteer in **[!UICONTROL Configuration Browser]** de map `global` en selecteer **[!UICONTROL Properties]** .
@@ -124,29 +124,29 @@ De map configureren voor configuraties van cloudservices:
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
-De RESTful Webdiensten kunnen worden beschreven gebruikend [ de specificaties van de Wagger ](https://swagger.io/specification/v2/) in formaat JSON of YAML in a [!DNL Swagger] definitiedossier of een Eindpunt van de Dienst.
+De RESTful Webdiensten kunnen worden beschreven gebruikend [&#x200B; de specificaties van de Wagger &#x200B;](https://swagger.io/specification/v2/) in formaat JSON of YAML in a [!DNL Swagger] definitiedossier of een Eindpunt van de Dienst.
 
 >[!NOTE]
-> Om RESTful Webdienst in [!DNL Experience Manager] as a Cloud Service te vormen, zorg ervoor dat u of het [!DNL Swagger] dossier ([ Versie 2.0 van de Tagger ](https://swagger.io/specification/v2/)) of [!DNL Swagger] dossier ([ Versie van de Wagger 3.0 ](https://swagger.io/specification/v3/)) op uw dossiersysteem of URL hebt waar het dossier wordt ontvangen.
+> Om RESTful Webdienst in [!DNL Experience Manager] as a Cloud Service te vormen, zorg ervoor dat u of het [!DNL Swagger] dossier ([&#x200B; Versie 2.0 van de Tagger &#x200B;](https://swagger.io/specification/v2/)) of [!DNL Swagger] dossier ([&#x200B; Versie van de Wagger 3.0 &#x200B;](https://swagger.io/specification/v3/)) op uw dossiersysteem of URL hebt waar het dossier wordt ontvangen.
 
 ### RESTful-services configureren voor Open API Specification versie 2.0 {#configure-restful-services-open-api-2.0}
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
-   Zie [ omslag voor de configuraties van de wolkendienst ](configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
+   Zie [&#x200B; omslag voor de configuraties van de wolkendienst &#x200B;](configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
 
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL RESTful Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
 1. Specificeer de volgende details voor de RESTful dienst:
 
-   * Selecteer een URL of een Dossier van [!UICONTROL Swagger Source] drop-down, en specificeer dienovereenkomstig [!DNL Swagger URL] aan het [!DNL  Swagger] definitiedossier of upload het [!DNL Swagger] dossier van uw lokaal dossiersysteem.
-   * Gebaseerd op de [!DNL  Swagger] input van Source., zijn de volgende gebieden pre-bevolkt met waarden:
+   * Selecteer een URL of een Dossier van [!UICONTROL Swagger Source] drop-down, en specificeer dienovereenkomstig [!DNL Swagger URL] aan het [!DNL &#x200B; Swagger] definitiedossier of upload het [!DNL Swagger] dossier van uw lokaal dossiersysteem.
+   * Gebaseerd op de [!DNL &#x200B; Swagger] input van Source., zijn de volgende gebieden pre-bevolkt met waarden:
 
       * Schema: de overdrachtprotocollen die door de REST API worden gebruikt. Het aantal schematypen dat in de drop-down lijst wordt getoond hangt van de regelingen af die in de [!DNL Swagger] bron worden bepaald.
       * Host: de domeinnaam of het IP-adres van de host die de REST API aanbiedt. Het is een verplicht veld.
       * Basispad: het URL-voorvoegsel voor alle API-paden. Het is een optioneel veld.\
         Bewerk indien nodig de vooraf ingevulde waarden voor deze velden.
 
-   * Selecteer het authentificatietype — niets, OAuth2.0 ([ Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, API Sleutel, of de Authentificatie van de Douane — om tot de RESTful dienst toegang te hebben, en dienovereenkomstig details voor authentificatie te verstrekken.
+   * Selecteer het authentificatietype — niets, OAuth2.0 ([&#x200B; Code van de Vergunning &#x200B;](https://oauth.net/2/grant-types/authorization-code/), [&#x200B; de Verantwoordelijkheden van de Cliënt &#x200B;](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, API Sleutel, of de Authentificatie van de Douane — om tot de RESTful dienst toegang te hebben, en dienovereenkomstig details voor authentificatie te verstrekken.
 
    Als u **[!UICONTROL API Key]** selecteert als verificatietype, geeft u de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in de vervolgkeuzelijst **[!UICONTROL Location]** en geef de naam van de header of de queryparameter dienovereenkomstig op in het veld **[!UICONTROL Parameter Name]** .
 
@@ -158,14 +158,14 @@ De RESTful Webdiensten kunnen worden beschreven gebruikend [ de specificaties va
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
-   Zie [ omslag voor de configuraties van de wolkendienst ](configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
+   Zie [&#x200B; omslag voor de configuraties van de wolkendienst &#x200B;](configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
 
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL RESTful Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
 1. Specificeer de volgende details voor de RESTful dienst:
 
-   * Selecteer een URL of een Dossier van [!UICONTROL Swagger Source] drop-down, en specificeer dienovereenkomstig [!DNL Swagger 3.0 URL] aan het [!DNL  Swagger] definitiedossier of upload het [!DNL Swagger] dossier van uw lokaal dossiersysteem.
-   * Gebaseerd op de [!DNL  Swagger] input van Source, wordt de verbindingsinformatie met de doelserver getoond.
-   * Selecteer het authentificatietype — niets, OAuth2.0 ([ Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, API Sleutel, of de Authentificatie van de Douane — om tot de RESTful dienst toegang te hebben, en dienovereenkomstig details voor authentificatie te verstrekken.
+   * Selecteer een URL of een Dossier van [!UICONTROL Swagger Source] drop-down, en specificeer dienovereenkomstig [!DNL Swagger 3.0 URL] aan het [!DNL &#x200B; Swagger] definitiedossier of upload het [!DNL Swagger] dossier van uw lokaal dossiersysteem.
+   * Gebaseerd op de [!DNL &#x200B; Swagger] input van Source, wordt de verbindingsinformatie met de doelserver getoond.
+   * Selecteer het authentificatietype — niets, OAuth2.0 ([&#x200B; Code van de Vergunning &#x200B;](https://oauth.net/2/grant-types/authorization-code/), [&#x200B; de Verantwoordelijkheden van de Cliënt &#x200B;](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, API Sleutel, of de Authentificatie van de Douane — om tot de RESTful dienst toegang te hebben, en dienovereenkomstig details voor authentificatie te verstrekken.
 
    Als u **[!UICONTROL API Key]** selecteert als verificatietype, geeft u de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in de vervolgkeuzelijst **[!UICONTROL Location]** en geef de naam van de header of de queryparameter dienovereenkomstig op in het veld **[!UICONTROL Parameter Name]** .
 
@@ -181,7 +181,7 @@ Sommige bewerkingen die niet worden ondersteund door RESTful-services Open API S
 * Koppelingen
 * Verschillende aanvraagorganen voor verschillende MIME-typen voor één enkele bewerking
 
-Zie [ 3.0 Specificatie OpenAPI ](https://swagger.io/specification/v3/) voor gedetailleerde informatie.
+Zie [&#x200B; 3.0 Specificatie OpenAPI &#x200B;](https://swagger.io/specification/v3/) voor gedetailleerde informatie.
 
 ### Vorm de diensten RESTful gebruikend de Eindpunt van de Dienst {#configure-restful-services-service-endpoint}
 
@@ -189,7 +189,7 @@ Zie [ 3.0 Specificatie OpenAPI ](https://swagger.io/specification/v3/) voor gede
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
-   Zie [ omslag voor de configuraties van de wolkendienst ](configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
+   Zie [&#x200B; omslag voor de configuraties van de wolkendienst &#x200B;](configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
 
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen.
 
@@ -197,7 +197,7 @@ Zie [ 3.0 Specificatie OpenAPI ](https://swagger.io/specification/v3/) voor gede
 
 1. Selecteer op de volgende pagina **[!UICONTROL Service Endpoint]** in de **[!UICONTROL RESTful Service dropdown]** .
 
-   ![ Eindpunt van de Dienst ](/help/forms/assets/select-service-endpoint.png)
+   ![&#x200B; Eindpunt van de Dienst &#x200B;](/help/forms/assets/select-service-endpoint.png)
 
 1. Geef **[!UICONTROL Service Endpoint URL]** op.
 
@@ -205,7 +205,7 @@ Zie [ 3.0 Specificatie OpenAPI ](https://swagger.io/specification/v3/) voor gede
    > Standaard is het Type methode POST.
 1. Selecteer een van de inhoudstypen die u wilt kiezen in de vervolgkeuzelijst. Inhoudstypen zijn uit meerdere delen bestaande formuliergegevens, JSON- en URL-codering (Key-Value-paar).
 1. Nu selecteert u om het even welk van het Type van Authentificatie zoals OAuth 2.0, Basisauthentificatie, Sleutel API, de Authentificatie van de Douane, van de drop-down lijst.
-   ![ de authentificatietype van het Eindpunt van de Dienst ](/help/forms/assets/service-endpoint-authtype.png)
+   ![&#x200B; de authentificatietype van het Eindpunt van de Dienst &#x200B;](/help/forms/assets/service-endpoint-authtype.png)
 1. Klik op Maken.
 
 ### De cliëntconfiguratie van HTTP van het het gegevensmodel van de vorm (FDM) om prestaties te optimaliseren {#fdm-http-client-configuration}
@@ -254,20 +254,20 @@ In het volgende JSON-bestand wordt een voorbeeld weergegeven:
 
 ## SOAP-webservices configureren {#configure-soap-web-services}
 
-Op SOAP-Gebaseerde Webdiensten worden beschreven gebruikend {de specificaties van de Beschrijving van de Diensten van het Web van 0} van de Taal (WSDL) [. ](https://www.w3.org/TR/wsdl) [!DNL Experience Manager Forms] biedt geen ondersteuning voor het WSDL-model in RPC-stijl.
+Op SOAP-Gebaseerde Webdiensten worden beschreven gebruikend {de specificaties van de Beschrijving van de Diensten van het Web van 0} van de Taal (WSDL) [. &#x200B;](https://www.w3.org/TR/wsdl) [!DNL Experience Manager Forms] biedt geen ondersteuning voor het WSDL-model in RPC-stijl.
 
 Als u de op SOAP gebaseerde webservice in [!DNL Experience Manager] as a Cloud Service wilt configureren, controleert u of u de WSDL-URL voor de webservice hebt en voert u de volgende handelingen uit:
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
-   Zie [ omslag voor de configuraties van de wolkendienst ](configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
+   Zie [&#x200B; omslag voor de configuraties van de wolkendienst &#x200B;](configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
 
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL SOAP Web Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
 1. Geef het volgende op voor de SOAP-webservice:
 
    * WSDL-URL voor de webservice.
    * Service Endpoint. Specificeer een waarde op dit gebied om het de diensteindpunt met voeten te treden dat in WSDL wordt vermeld.
-   * Selecteer het authentificatietype — niets, OAuth2.0 ([ Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, of de Authentificatie van de Douane — om tot de dienst van SOAP toegang te hebben, en dienovereenkomstig de details voor authentificatie te verstrekken.
+   * Selecteer het authentificatietype — niets, OAuth2.0 ([&#x200B; Code van de Vergunning &#x200B;](https://oauth.net/2/grant-types/authorization-code/), [&#x200B; de Verantwoordelijkheden van de Cliënt &#x200B;](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, of de Authentificatie van de Douane — om tot de dienst van SOAP toegang te hebben, en dienovereenkomstig de details voor authentificatie te verstrekken.
 
      <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
      <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
@@ -288,7 +288,7 @@ Stel de eigenschap `importAllowlistPattern` van de **[!UICONTROL Form Data Model
 }
 ```
 
-Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van Cloud Service op.
+Om waarden van een configuratie te plaatsen, [&#x200B; produceer OSGi Configuraties gebruikend AEM SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [&#x200B; stel de configuratie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van Cloud Service op.
 
 ## OData-services configureren {#config-odata}
 
@@ -296,18 +296,18 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 
 >[!NOTE]
 >
-> Het gegevensmodel van de vorm (FDM) steunt [ OData versie 4 ](https://www.odata.org/documentation/).
->Voor een geleidelijke gids om [!DNL Microsoft®® Dynamics 365], online of op-gebouw te vormen, zie [[!DNL Microsoft® Dynamics]  Configuratie OData ](ms-dynamics-odata-configuration.md).
+> Het gegevensmodel van de vorm (FDM) steunt [&#x200B; OData versie 4 &#x200B;](https://www.odata.org/documentation/).
+>Voor een geleidelijke gids om [!DNL Microsoft®® Dynamics 365], online of op-gebouw te vormen, zie [[!DNL Microsoft® Dynamics]  Configuratie OData &#x200B;](ms-dynamics-odata-configuration.md).
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
-   Zie [ omslag voor de configuraties van de wolkendienst ](#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
+   Zie [&#x200B; omslag voor de configuraties van de wolkendienst &#x200B;](#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
 
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL OData Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
 1. Specificeer de volgende details voor de dienst OData:
 
    * Service Root URL voor de OData-service die moet worden geconfigureerd.
-   * Selecteer het authentificatietype — niets, OAuth2.0 ([ de Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, Sleutel API, of de Authentificatie van de Douane — om tot de dienst toegang te hebben OData, en dienovereenkomstig de details voor authentificatie te verstrekken.
+   * Selecteer het authentificatietype — niets, OAuth2.0 ([&#x200B; de Code van de Vergunning &#x200B;](https://oauth.net/2/grant-types/authorization-code/), [&#x200B; de Verantwoordelijkheden van de Cliënt &#x200B;](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, Sleutel API, of de Authentificatie van de Douane — om tot de dienst toegang te hebben OData, en dienovereenkomstig de details voor authentificatie te verstrekken.
 
    Als u **[!UICONTROL API Key]** selecteert als verificatietype, geeft u de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in de vervolgkeuzelijst **[!UICONTROL Location]** en geef de naam van de header of de queryparameter dienovereenkomstig op in het veld **[!UICONTROL Parameter Name]** .
 
@@ -358,7 +358,7 @@ When you enable mutual authentication for form data model (FDM), both the data s
 
 ## Volgende stappen {#next-steps}
 
-U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een FDM (Form Data Model) maken of als u al een FDM (Form Data Model) zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [ het model van vormgegevens ](create-form-data-models.md) voor details creëren.
+U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een FDM (Form Data Model) maken of als u al een FDM (Form Data Model) zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [&#x200B; het model van vormgegevens &#x200B;](create-form-data-models.md) voor details creëren.
 
 <!--
 

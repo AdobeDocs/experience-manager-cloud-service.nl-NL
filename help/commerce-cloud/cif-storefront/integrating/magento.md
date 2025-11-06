@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # AEM- en Adobe Commerce-integratie met Commerce integration framework {#aem-framework}
 
-De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met Commerce integration framework (CIF). CIF laat AEM toe om tot en met de handelsinstantie direct toegang te hebben gebruikend Adobe Commerce [ GraphQL APIs.](https://devdocs.magento.com/guides/v2.4/graphql/)
+De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met Commerce integration framework (CIF). CIF laat AEM toe om tot en met de handelsinstantie direct toegang te hebben gebruikend Adobe Commerce [&#x200B; GraphQL APIs.](https://devdocs.magento.com/guides/v2.4/graphql/)
 
 >[!NOTE]
 >
@@ -27,33 +27,33 @@ De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met Commerce
 >GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM) as a Cloud Service:
 >
 >* Dit scenario, waar CIF met handel via GraphQL communiceert.
->* [ de Inhoudsfragmenten van AEM werken samen met AEM GraphQL API (een aangepaste implementatie, die op standaardGraphQL wordt gebaseerd), om gestructureerde inhoud voor gebruik in uw toepassingen te leveren.](/help/headless/graphql-api/content-fragments.md)
+>* [&#x200B; de Inhoudsfragmenten van AEM werken samen met AEM GraphQL API (een aangepaste implementatie, die op standaardGraphQL wordt gebaseerd), om gestructureerde inhoud voor gebruik in uw toepassingen te leveren.](/help/headless/graphql-api/content-fragments.md)
 
 ## Overzicht van architectuur {#overview}
 
 De architectuur ziet er als volgt uit:
 
-![ het Overzicht van de Architectuur van CIF ](../assets/AEM_Magento_Architecture.png)
+![&#x200B; het Overzicht van de Architectuur van CIF &#x200B;](../assets/AEM_Magento_Architecture.png)
 
 Binnen CIF is er ondersteuning voor communicatiepatronen aan de serverzijde en de client.
-De server-kant APIs vraag wordt uitgevoerd gebruikend ingebouwde, generische [ cliënt van GraphQL ](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met a [ reeks geproduceerde gegevensmodellen ](https://github.com/adobe/commerce-cif-magento-graphql) voor het schema van handelsGraphQL. Ook kan elke GraphQL-query of -mutatie in GQL-indeling worden gebruikt.
+De server-kant APIs vraag wordt uitgevoerd gebruikend ingebouwde, generische [&#x200B; cliënt van GraphQL &#x200B;](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met a [&#x200B; reeks geproduceerde gegevensmodellen &#x200B;](https://github.com/adobe/commerce-cif-magento-graphql) voor het schema van handelsGraphQL. Ook kan elke GraphQL-query of -mutatie in GQL-indeling worden gebruikt.
 
-Voor de cliënt-zijcomponenten, die gebruikend [ Reageer ](https://reactjs.org/) worden gebouwd, wordt de [ Cliënt van Apollo ](https://www.apollographql.com/docs/react/) gebruikt.
+Voor de cliënt-zijcomponenten, die gebruikend [&#x200B; Reageer &#x200B;](https://reactjs.org/) worden gebouwd, wordt de [&#x200B; Cliënt van Apollo &#x200B;](https://www.apollographql.com/docs/react/) gebruikt.
 
 ## AEM CIF Core-componentarchitectuur {#cif-core-components}
 
-![ de Architectuur van de Component van de Kern van AEM CIF ](../assets/cif-component-architecture.jpg)
+![&#x200B; de Architectuur van de Component van de Kern van AEM CIF &#x200B;](../assets/cif-component-architecture.jpg)
 
-{de Componenten van de Kern van AEM CIF van 0} [ volgen zeer gelijkaardige ontwerppatronen en beste praktijken zoals ](https://github.com/adobe/aem-core-cif-components) de Componenten van de Kern van AEM WCM [.](https://github.com/adobe/aem-core-wcm-components)
+{de Componenten van de Kern van AEM CIF van 0} [&#x200B; volgen zeer gelijkaardige ontwerppatronen en beste praktijken zoals &#x200B;](https://github.com/adobe/aem-core-cif-components) de Componenten van de Kern van AEM WCM [.](https://github.com/adobe/aem-core-wcm-components)
 
 De bedrijfslogica en de achtergrondcommunicatie met Adobe Commerce voor de AEM CIF Core Components worden geïmplementeerd in Sling Models. Als deze logica moet worden aangepast om aan projectspecifieke vereisten te voldoen, kan het delegatiepatroon voor Sling Models worden gebruikt.
 
 >[!TIP]
 >
->[ het Aanpassen van de Componenten van de Kern van AEM CIF ](/help/commerce-cloud/cif-storefront/customizing/customize-cif-components.md) pagina heeft een gedetailleerd voorbeeld en beste praktijken op hoe te om de Componenten van de Kern van CIF aan te passen.
+>[&#x200B; het Aanpassen van de Componenten van de Kern van AEM CIF &#x200B;](/help/commerce-cloud/cif-storefront/customizing/customize-cif-components.md) pagina heeft een gedetailleerd voorbeeld en beste praktijken op hoe te om de Componenten van de Kern van CIF aan te passen.
 
 Binnen projecten, kunnen de Componenten van de Kern van AEM CIF en de componenten van het douaneproject de gevormde cliënt voor een opslag van Adobe Commerce gemakkelijk terugwinnen verbonden aan een pagina van AEM via het Verdelen van context-Aware configuratie.
 
 ## Zoeken
 
-CIF verstrekt uit-van-de-doos de Component van de Kern van het a [ Onderzoek ](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) die een server-kant teruggegeven onderzoekservaring is die op [ wordt gebaseerd GraphQL API van Commerce.](https://developer.adobe.com/commerce/webapi/graphql/) de klanten van Commerce hebben de optie om [ Levend Onderzoek ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) in plaats daarvan te gebruiken. Volg deze [ verbinding ](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md) om meer over CIF te leren - Levende integratie van het Onderzoek.
+CIF verstrekt uit-van-de-doos de Component van de Kern van het a [&#x200B; Onderzoek &#x200B;](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) die een server-kant teruggegeven onderzoekservaring is die op [&#x200B; wordt gebaseerd GraphQL API van Commerce.](https://developer.adobe.com/commerce/webapi/graphql/) de klanten van Commerce hebben de optie om [&#x200B; Levend Onderzoek &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) in plaats daarvan te gebruiken. Volg deze [&#x200B; verbinding &#x200B;](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md) om meer over CIF te leren - Levende integratie van het Onderzoek.

@@ -46,14 +46,14 @@ U hebt toegang tot de AI Assistant vanaf drie verschillende locaties in AEM Form
    - Zoeken naar het AI-assistent-pictogram links van de interface
    - Klik op het pictogram om het deelvenster AI Assistant te openen
 
-   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
+   ![&#x200B; AI Hulp pictogram* &#x200B;](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
 
 2. **de AanpassingsRedacteur van Forms**
    - Ga naar: Adobe Experience Manager > Forms > Forms &amp; Documents
    - Een formulier selecteren en openen om te bewerken
    - Klik op het pictogram AI Assistant in de editor-interface
 
-   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
+   ![&#x200B; AI Hulp pictogram* &#x200B;](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
 3. **Universele Redacteur**
 

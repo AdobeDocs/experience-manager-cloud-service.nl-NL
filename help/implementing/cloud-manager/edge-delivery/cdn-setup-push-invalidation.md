@@ -27,6 +27,6 @@ De volgende configuratieeigenschappen bepalen de naam van de productiegastheer e
 | `cdn.prod.host` | `<Production Host>` | Hostnaam van de productiesite. Bijvoorbeeld `www.example.com` . |
 | `cdn.prod.type` | beheerd |   |
 
-Zodra de veranderingen in het configuratieblad worden aangebracht, moeten de gebruikers hen voorproef en activeren gebruikend het [ hulpmiddel van Sidekick ](https://www.aem.live/docs/sidekick) om de updates toe te passen.
+Zodra de veranderingen in het configuratieblad worden aangebracht, moeten de gebruikers hen voorproef en activeren gebruikend het [&#x200B; hulpmiddel van Sidekick &#x200B;](https://www.aem.live/docs/sidekick) om de updates toe te passen.
 
-Zie ook [ Ongeveer Edge Delivery om lijst in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) te doen.
+Zie ook [&#x200B; Ongeveer Edge Delivery om lijst in Cloud Manager &#x200B;](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) te doen.

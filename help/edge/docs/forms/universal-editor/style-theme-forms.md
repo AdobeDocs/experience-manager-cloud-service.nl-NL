@@ -31,7 +31,7 @@ Deze uitgebreide handleiding heeft betrekking op de technische grondslagen van f
 
 ## Werken met formulierveldtypen
 
-Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [ gebiedstypes ](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes) die door het AanpassingsBlok van Forms worden gesteund:
+Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [&#x200B; gebiedstypes &#x200B;](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes) die door het AanpassingsBlok van Forms worden gesteund:
 
 - Invoervelden: dit zijn tekstinvoer, e-mailinvoer, wachtwoordinvoer en meer.
 - Selectievakjesgroepen: wordt gebruikt voor het selecteren van meerdere opties.
@@ -41,12 +41,12 @@ Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [ gebieds
 
 ## Basisbeginselen voor stijlen
 
-Het begrip van [ fundamentele CSS concepten ](https://www.w3schools.com/css/css_intro.asp) is essentieel alvorens specifieke vormgebieden te stileren:
+Het begrip van [&#x200B; fundamentele CSS concepten &#x200B;](https://www.w3schools.com/css/css_intro.asp) is essentieel alvorens specifieke vormgebieden te stileren:
 
-- [ Kiezers ](https://www.w3schools.com/css/css_selectors.asp): CSS de Kiezers staan u toe om specifieke elementen van HTML voor het stileren te richten. U kunt elementkiezers, klassekiezers of id-kiezers gebruiken.
-- [ Eigenschappen ](https://www.w3schools.com/css/css_syntax.asp): CSS de eigenschappen bepalen de visuele verschijning van elementen. Veelvoorkomende eigenschappen voor het opmaken van formuliervelden zijn kleur, achtergrondkleur, rand, opvulling, marge en meer.
-- [ Model van de Doos ](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd.
-- Flexbox/Net: CSS [ Flexbox ](https://www.w3schools.com/css/css3_flexbox.asp) en [ lay-outs van het Net ](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen tot stand te brengen.
+- [&#x200B; Kiezers &#x200B;](https://www.w3schools.com/css/css_selectors.asp): CSS de Kiezers staan u toe om specifieke elementen van HTML voor het stileren te richten. U kunt elementkiezers, klassekiezers of id-kiezers gebruiken.
+- [&#x200B; Eigenschappen &#x200B;](https://www.w3schools.com/css/css_syntax.asp): CSS de eigenschappen bepalen de visuele verschijning van elementen. Veelvoorkomende eigenschappen voor het opmaken van formuliervelden zijn kleur, achtergrondkleur, rand, opvulling, marge en meer.
+- [&#x200B; Model van de Doos &#x200B;](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd.
+- Flexbox/Net: CSS [&#x200B; Flexbox &#x200B;](https://www.w3schools.com/css/css3_flexbox.asp) en [&#x200B; lay-outs van het Net &#x200B;](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen tot stand te brengen.
 
 
 

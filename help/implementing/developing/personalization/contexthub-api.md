@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ContextHub JavaScript API-naslaggids {#contexthub-javascript-api-reference}
 
-De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de [ component ContextHub aan de pagina ](adding-contexthub.md) is toegevoegd.
+De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de [&#x200B; component ContextHub aan de pagina &#x200B;](adding-contexthub.md) is toegevoegd.
 
 ## ContextHub-constanten {#contexthub-constants}
 
@@ -21,7 +21,7 @@ Constante waarden die door de ContextHub JavaScript API worden gedefinieerd.
 
 ### Gebeurtenisconstanten {#event-constants}
 
-De volgende lijst maakt een lijst van de namengebeurtenissen die voor Winkels ContextHub voorkomen. Zie ook [ ContextHub.Utils.Event ](#contexthub-utils-eventing).
+De volgende lijst maakt een lijst van de namengebeurtenissen die voor Winkels ContextHub voorkomen. Zie ook [&#x200B; ContextHub.Utils.Event &#x200B;](#contexthub-utils-eventing).
 
 | Constante | Beschrijving | Waarde |
 |---|---|---|
@@ -264,7 +264,7 @@ Initialiseert de winkel.
 * **`name`:** De naam van de opslag.
 * **`config`:** Een object dat configuratie-eigenschappen bevat:
    * `eventDeferring`: de standaardwaarde is 32.
-   * `eventing`: Het {[ voorwerp 1} ContextHub.Utils.Event voor deze opslag. ](#contexthub-utils-eventing) De standaardwaarde is die van het object `ContextHub.eventing` .
+   * `eventing`: Het {[&#x200B; voorwerp 1} ContextHub.Utils.Event voor deze opslag. &#x200B;](#contexthub-utils-eventing) De standaardwaarde is die van het object `ContextHub.eventing` .
    * `persistence`: Het `ContextHub.Utils.Persistence` -object voor deze winkel. De standaardwaarde is het `ContextHub.persistence` -object.
 
 #### isEventPaused() {#iseventingpaused}
@@ -373,7 +373,7 @@ Een opslag die JSON-gegevens bevat. De gegevens worden teruggewonnen van de exte
 
 De opslag gebruikt in-geheugenpersistentie (variabele JavaScript). De gegevens van de opslag zijn beschikbaar slechts tijdens het leven van de pagina.
 
-ContextHub.Store.JSONPStore breidt [ ContextHub.Store.Core ](#contexthub-store-core) uit en erft de functies van die klasse.
+ContextHub.Store.JSONPStore breidt [&#x200B; ContextHub.Store.Core &#x200B;](#contexthub-store-core) uit en erft de functies van die klasse.
 
 ### Functies (ContextHub.Store.JSONPStore) {#functions-contexthub-store-jsonpstore}
 
@@ -385,7 +385,7 @@ Vormt de details voor het verbinden met de dienst JSONP die dit voorwerp gebruik
 
 * **`serviceConfig`:** Een object dat de volgende eigenschappen bevat:
    * `host`: (String) De servernaam of het IP-adres.
-   * `jsonp`: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Wanneer waar, {callback: &quot;ContextHub.Callbacks.*Object.name* wordt voorwerp toegevoegd aan het service.params voorwerp.
+   * `jsonp`: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Wanneer waar, &lbrace;callback: &quot;ContextHub.Callbacks.*Object.name* wordt voorwerp toegevoegd aan het service.params voorwerp.
    * `params`: (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
    * `path`: (Koord) de weg aan de dienst.
    * `port`: (Number) Het poortnummer van de service.
@@ -412,7 +412,7 @@ Hiermee wordt het serviceobject voor dit ContextHub.Store.JSONPStore-object opge
 Een object met de volgende eigenschappen:
 
 * **`host`:** (Koord) de servernaam of IP adres.
-* **`jsonp`:** (Van Boole) de waarde van waar wijst erop dat de dienst een dienst JSONP is, anders vals. Wanneer waar, {callback: &quot;ContextHub.Callbacks.*Object.name* wordt voorwerp toegevoegd aan het service.params voorwerp.
+* **`jsonp`:** (Van Boole) de waarde van waar wijst erop dat de dienst een dienst JSONP is, anders vals. Wanneer waar, &lbrace;callback: &quot;ContextHub.Callbacks.*Object.name* wordt voorwerp toegevoegd aan het service.params voorwerp.
 * **`params`:** (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
 * **`path`:** (Koord) de weg aan de dienst.
 * **`port`:** (Aantal) het havenaantal van de dienst.
@@ -455,11 +455,11 @@ initialiseert het `ContextHub.Store.JSONPStore` -object.
          * `true`: https://
          * `false`: http://
       * `timeout`: (Aantal) de hoeveelheid tijd op de dienst JSONP te wachten om vóór timing uit, in milliseconden te antwoorden.
-         * `ttl`: De minimale hoeveelheid tijd in milliseconden die tussen vraag aan de dienst JSONP overgaat. (Zie de [ queryService ](#queryservice-reload) functie).
+         * `ttl`: De minimale hoeveelheid tijd in milliseconden die tussen vraag aan de dienst JSONP overgaat. (Zie de [&#x200B; queryService &#x200B;](#queryservice-reload) functie).
 
 #### queryService(reload) {#queryservice-reload}
 
-Zoekt de verre dienst JSONP en caches de reactie. Als de tijd sinds de vorige aanroep van deze functie kleiner is dan de waarde van `config.service.ttl` , wordt de service niet aangeroepen en wordt de reactie in de cache niet gewijzigd. Naar keuze, kunt u de dienst dwingen om worden geroepen. Het `config.service.ttl` bezit wordt geplaatst wanneer het roepen van de [ init ](#init-name-config) functie om de opslag te initialiseren.
+Zoekt de verre dienst JSONP en caches de reactie. Als de tijd sinds de vorige aanroep van deze functie kleiner is dan de waarde van `config.service.ttl` , wordt de service niet aangeroepen en wordt de reactie in de cache niet gewijzigd. Naar keuze, kunt u de dienst dwingen om worden geroepen. Het `config.service.ttl` bezit wordt geplaatst wanneer het roepen van de [&#x200B; init &#x200B;](#init-name-config) functie om de opslag te initialiseren.
 
 De gebeurtenis ready wordt geactiveerd wanneer de query is voltooid. Wanneer de URL van de JSONP-service niet is ingesteld, doet de functie niets.
 
@@ -483,15 +483,15 @@ Hiermee wordt de opgegeven parameter omgezet.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` breidt [ ContextHub.Store.JSONPStore ](#contexthub-store-jsonpstore) uit zodat erft het alle functies van die klasse. Nochtans, worden de gegevens die van de dienst JSONP worden teruggewonnen voortgeduurd volgens de configuratie van persistentie ContextHub. (Zie [ Persistentiemodi ](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` breidt [&#x200B; ContextHub.Store.JSONPStore &#x200B;](#contexthub-store-jsonpstore) uit zodat erft het alle functies van die klasse. Nochtans, worden de gegevens die van de dienst JSONP worden teruggewonnen voortgeduurd volgens de configuratie van persistentie ContextHub. (Zie [&#x200B; Persistentiemodi &#x200B;](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-`ContextHub.Store.PersistedStore` breidt [ ContextHub.Store.Core ](#contexthub-store-core) uit zodat erft het alle functies van die klasse. De gegevens in deze opslag worden voortgeduurd volgens de configuratie van persistentie ContextHub.
+`ContextHub.Store.PersistedStore` breidt [&#x200B; ContextHub.Store.Core &#x200B;](#contexthub-store-core) uit zodat erft het alle functies van die klasse. De gegevens in deze opslag worden voortgeduurd volgens de configuratie van persistentie ContextHub.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` breidt [ ContextHub.Store.Core ](#contexthub-store-core) uit zodat erft het alle functies van die klasse. De gegevens in deze opslag blijven behouden met in-memory persistance (JavaScript-object).
+`ContextHub.Store.SessionStore` breidt [&#x200B; ContextHub.Store.Core &#x200B;](#contexthub-store-core) uit zodat erft het alle functies van die klasse. De gegevens in deze opslag blijven behouden met in-memory persistance (JavaScript-object).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -501,7 +501,7 @@ Beheert UI-modules en UI-moduleurs.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registreert een UI modulerenderer met ContextHub. Nadat renderer wordt geregistreerd, kan het worden gebruikt om [ modules tot stand te brengen UI ](configuring-contexthub.md#adding-a-ui-module). Gebruik deze functie wanneer u [ uitbreidt `ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types) om een renderer van de Module van de douaneUI tot stand te brengen.
+Registreert een UI modulerenderer met ContextHub. Nadat renderer wordt geregistreerd, kan het worden gebruikt om [&#x200B; modules tot stand te brengen UI &#x200B;](configuring-contexthub.md#adding-a-ui-module). Gebruik deze functie wanneer u [&#x200B; uitbreidt `ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types) om een renderer van de Module van de douaneUI tot stand te brengen.
 
 ##### Parameters {#parameters-registerrenderer}
 
@@ -667,7 +667,7 @@ Deze functie retourneert geen waarde.
 
 ## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
-Laat u toe om functies aan ContextHub archiefgebeurtenissen te binden en los te maken. De voorwerpen van de toegang `ContextHub.Utils.Eventing` voor een opslag die het [ gebeurtenis ](#eventing) bezit van de opslag gebruiken.
+Laat u toe om functies aan ContextHub archiefgebeurtenissen te binden en los te maken. De voorwerpen van de toegang `ContextHub.Utils.Eventing` voor een opslag die het [&#x200B; gebeurtenis &#x200B;](#eventing) bezit van de opslag gebruiken.
 
 ### Functies (ContextHub.Utils.Event) {#functions-contexthub-utils-eventing}
 
@@ -677,7 +677,7 @@ Hiermee wordt de binding van een functie met een gebeurtenis opgeheven.
 
 ##### Parameters {#parameters-off}
 
-* **`name`:** De [ naam van de gebeurtenis ](#contexthub-utils-eventing) waarvoor u de functie unbinding.
+* **`name`:** De [&#x200B; naam van de gebeurtenis &#x200B;](#contexthub-utils-eventing) waarvoor u de functie unbinding.
 * **`selector`:** De kiezer die de binding identificeert. (Zie de parameter `selector` voor de functies [`on`](#on-name-handler-selector-triggerforpastevents) en [`once`](#once-name-handler-selector-triggerforpastevents) .)
 
 ##### Retourneert {#returns-off}
@@ -690,7 +690,7 @@ Bindt een functie aan een gebeurtenis. De functie wordt aangeroepen telkens wann
 
 ##### Parameters {#parameters-on}
 
-* **`name`:** (Koord) de [ naam van de gebeurtenis ](#contexthub-utils-eventing) waaraan u de functie bindt.
+* **`name`:** (Koord) de [&#x200B; naam van de gebeurtenis &#x200B;](#contexthub-utils-eventing) waaraan u de functie bindt.
 * **`handler`:** (Functie) de functie om aan de gebeurtenis te binden.
 * **`selector`:** (Koord) een unieke herkenningsteken voor binden. U hebt de kiezer nodig om de binding te identificeren als u de functie `off` wilt gebruiken om de binding te verwijderen.
 * **`triggerForPastEvents`:** (Van Boole) wijst erop of de manager voor gebeurtenissen zou moeten worden uitgevoerd die in het verleden voorkwamen. De waarde `true` roept de handler voor gebeurtenissen uit het verleden aan. De waarde `false` roept de handler voor toekomstige gebeurtenissen aan. De standaardwaarde is `true` .
@@ -730,7 +730,7 @@ Bindt een functie aan een gebeurtenis. De functie wordt slechts eenmaal aangeroe
 
 ##### Parameters {#parameters-once}
 
-* **`name`:** (Koord) de [ naam van de gebeurtenis ](#contexthub-utils-eventing) waaraan u de functie bindt.
+* **`name`:** (Koord) de [&#x200B; naam van de gebeurtenis &#x200B;](#contexthub-utils-eventing) waaraan u de functie bindt.
 * **`handler`:** (Functie) de functie om aan de gebeurtenis te binden.
 * **`selector`:** (Koord) een unieke herkenningsteken voor binden. U hebt de kiezer nodig om de binding te identificeren als u de functie `off` wilt gebruiken om de binding te verwijderen.
 * **`triggerForPastEvents`:** (Van Boole) wijst erop of de manager voor gebeurtenissen zou moeten worden uitgevoerd die in het verleden voorkwamen. De waarde `true` roept de handler voor gebeurtenissen uit het verleden aan. De waarde `false` roept de handler voor toekomstige gebeurtenissen aan. De standaardwaarde is `true` .
@@ -921,7 +921,7 @@ Hiermee worden alle sleutels opgehaald uit de gegevensstructuur van een object. 
 
 * **`tree`:** Het object waarvan de sleutels van de gegevensstructuur moeten worden opgehaald.
 * **`parent`:** (Facultatief) de sleutel van een punt in de gegevensboom waarvoor u de sleutels van de kindpunten wilt terugwinnen.
-* **`order`:** (Facultatief) een functie die de soortorde van de teruggekeerde sleutels bepaalt. (Zie [`Array.prototype.sort` ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) op het Netwerk van de Ontwikkelaar van Mozilla.)
+* **`order`:** (Facultatief) een functie die de soortorde van de teruggekeerde sleutels bepaalt. (Zie [`Array.prototype.sort` &#x200B;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) op het Netwerk van de Ontwikkelaar van Mozilla.)
 
 ##### Retourneert {#returns-getkeys-2}
 
@@ -1033,7 +1033,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(tree, key, value) {#setitem-tree-key-value}
 
-Voegt een sleutel/waardepaar aan de gegevensboom van een exemplaar van een voorwerp toe. Voor informatie over gegevensbomen, zie [ Persistence ](contexthub.md#persistence).
+Voegt een sleutel/waardepaar aan de gegevensboom van een exemplaar van een voorwerp toe. Voor informatie over gegevensbomen, zie [&#x200B; Persistence &#x200B;](contexthub.md#persistence).
 
 ##### Parameters {#parameters-setitem-2}
 

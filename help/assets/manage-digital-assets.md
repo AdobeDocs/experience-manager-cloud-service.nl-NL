@@ -17,7 +17,7 @@ ht-degree: 8%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 In dit artikel wordt beschreven hoe u elementen in [!DNL Adobe Experience Manager Assets] kunt beheren en bewerken. Zie [!DNL Content Fragments] elementen voor informatie over het beheren van [[!DNL Content Fragments]](content-fragments/content-fragments.md) .
@@ -42,7 +42,7 @@ De volgende tekens (lijst met door spaties gescheiden tekens) worden niet onders
 
 ## Elementen uploaden {#uploading-assets}
 
-Zie [ digitale activa aan Experience Manager ](add-assets.md) toevoegen.
+Zie [&#x200B; digitale activa aan Experience Manager &#x200B;](add-assets.md) toevoegen.
 
 ## ZIP-archieven extraheren {#extract-zip-archives}
 
@@ -57,7 +57,7 @@ Voer de volgende stappen uit om de ZIP-bestanden te extraheren:
 1. Selecteer het juiste gedrag om conflicten met bestandsnamen tijdens het uitpakken te verwerken. U kunt selecteren om een versie van een bestaand element te maken, het element te vervangen, beide elementen in de doelmap te houden of de extractie van het nieuwe element over te slaan.
 1. Klik op **[!UICONTROL Extract]**. Het Zip-extractieproces wordt gestart. Nadat het proces is voltooid, kunt u de geëxtraheerde elementen weergeven in de doelmap.
 
-   ![ zip extractie ](assets/zip-extraction.png)
+   ![&#x200B; zip extractie &#x200B;](assets/zip-extraction.png)
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
 1. Navigeer in de Assets-gebruikersinterface naar de locatie van het element waarvan u een voorvertoning wilt weergeven.
 1. Selecteer het gewenste element om het te openen.
-1. Op de voorproefwijze, zijn de gezoemopties beschikbaar voor [ gesteunde types van Beeld ](/help/assets/file-format-support.md) (met interactieve het uitgeven).
+1. Op de voorproefwijze, zijn de gezoemopties beschikbaar voor [&#x200B; gesteunde types van Beeld &#x200B;](/help/assets/file-format-support.md) (met interactieve het uitgeven).
 
    Als u wilt inzoomen op een element, selecteert u `+` (of selecteert u het vergrootglas op het element). Selecteer `-` als u wilt uitzoomen. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave.
 
@@ -81,17 +81,17 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 1. Navigeer naar de locatie van het element waarvan u de metagegevens wilt bewerken.
 1. Selecteer het element en selecteer **[!UICONTROL Properties]** op de werkbalk om de eigenschappen van het element weer te geven. U kunt ook de handeling **[!UICONTROL Properties]** Snel op de elementenkaart kiezen.
 
-   ![ properties_quickaction ](assets/properties_quickaction.png)
+   ![&#x200B; properties_quickaction &#x200B;](assets/properties_quickaction.png)
 
 1. Bewerk op de pagina [!UICONTROL Properties] de eigenschappen van de metagegevens onder verschillende tabbladen. Bewerk bijvoorbeeld onder het tabblad **[!UICONTROL Basic]** de titel, beschrijving, enzovoort.
 
    >[!NOTE]
    >
-   >De indeling van de pagina [!UICONTROL Properties] en de beschikbare metagegevenseigenschappen zijn afhankelijk van het onderliggende metagegevensschema. Leren hoe te om de lay-out van de [!UICONTROL Properties] pagina te wijzigen, zie [ Schema&#39;s van Meta-gegevens ](/help/assets/metadata-schemas.md).
+   >De indeling van de pagina [!UICONTROL Properties] en de beschikbare metagegevenseigenschappen zijn afhankelijk van het onderliggende metagegevensschema. Leren hoe te om de lay-out van de [!UICONTROL Properties] pagina te wijzigen, zie [&#x200B; Schema&#39;s van Meta-gegevens &#x200B;](/help/assets/metadata-schemas.md).
 
 1. Gebruik de datumkiezer naast het veld **[!UICONTROL On Time]** om een bepaalde datum/tijd voor de activering van de asset te plannen.
 
-   ![ de Plukker van de Datum ](assets/date-picker.png)
+   ![&#x200B; de Plukker van de Datum &#x200B;](assets/date-picker.png)
 
 1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast het veld **[!UICONTROL Off Time]** . De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na [!UICONTROL Off Time] zijn een element en de bijbehorende uitvoeringen niet beschikbaar via de Assets-webinterface of via de HTTP-API.
 
@@ -136,7 +136,7 @@ Enkele kenmerken die uniek zijn voor een bepaalde kopie van een element, worden 
 
 De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeeltelijke kopie gemaakt wanneer een element wordt gekopieerd.
 
-1. Selecteer in de gebruikersinterface van Assets een of meer elementen en selecteer vervolgens het pictogram **[!UICONTROL Copy]** op de werkbalk. Alternatief, selecteer de **[!UICONTROL Copy]** ![ copy_icon ](assets/copy_icon.png) snelle actie van de activakaart.
+1. Selecteer in de gebruikersinterface van Assets een of meer elementen en selecteer vervolgens het pictogram **[!UICONTROL Copy]** op de werkbalk. Alternatief, selecteer de **[!UICONTROL Copy]** ![&#x200B; copy_icon &#x200B;](assets/copy_icon.png) snelle actie van de activakaart.
 
    >[!NOTE]
    >
@@ -160,7 +160,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
-1. Selecteer de activa, en selecteer het **[!UICONTROL Move]** pictogram ![ move_icon ](assets/move_icon.png) van de toolbar.
+1. Selecteer de activa, en selecteer het **[!UICONTROL Move]** pictogram ![&#x200B; move_icon &#x200B;](assets/move_icon.png) van de toolbar.
 
 1. Voer een van de volgende handelingen uit in de wizard Assets verplaatsen:
 
@@ -202,11 +202,11 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Selecteer het GlobalNav-pictogram en selecteer **[!UICONTROL Renditions]** in de lijst.
 
-   ![ renditions_menu ](assets/renditions_menu.png)
+   ![&#x200B; renditions_menu &#x200B;](assets/renditions_menu.png)
 
 1. Geef in het deelvenster **[!UICONTROL Renditions]** de lijst weer met uitvoeringen die voor het element zijn gegenereerd.
 
-   ![ renditions_panel ](assets/renditions_panel.png)
+   ![&#x200B; renditions_panel &#x200B;](assets/renditions_panel.png)
 
    >[!NOTE]
    >
@@ -218,7 +218,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    Selecteer een vertoning in het deelvenster **[!UICONTROL Renditions]** en selecteer vervolgens het pictogram **[!UICONTROL Delete Rendition]** op de werkbalk. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u [!DNL Experience Manager] aanpassen om specifieke vertoningen te verwijderen of de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
 
-   ![ delete_renditionicon ](assets/delete_renditionicon.png)
+   ![&#x200B; delete_renditionicon &#x200B;](assets/delete_renditionicon.png)
 
    **Uploading a new rendition**
 
@@ -260,7 +260,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 1. Navigeer naar de locatie van de elementen die u wilt verwijderen.
 
-1. Selecteer de activa, en klik **[!UICONTROL Delete]** ![ delete_icon ](assets/do-not-localize/delete-icon.png) van de toolbar.
+1. Selecteer de activa, en klik **[!UICONTROL Delete]** ![&#x200B; delete_icon &#x200B;](assets/do-not-localize/delete-icon.png) van de toolbar.
 
 1. Klik in het bevestigingsdialoogvenster op:
 
@@ -280,17 +280,17 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 ## Elementen downloaden {#download-assets}
 
-Zie [ downloadactiva van  [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Zie [&#x200B; downloadactiva van  [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Elementen publiceren of publiceren ongedaan maken {#publish-assets}
 
 1. Navigeer naar de locatie van het element of de map met middelen die u wilt publiceren of die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
-1. Selecteer de activa of de omslag om te publiceren of unpublish en te selecteren **[!UICONTROL Manage Publication]** ![ publicatieoptie ](assets/do-not-localize/globe-publication.png) van de toolbar beheren. Als u snel wilt publiceren, selecteert u de optie **[!UICONTROL Quick Publish]** op de werkbalk. Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
+1. Selecteer de activa of de omslag om te publiceren of unpublish en te selecteren **[!UICONTROL Manage Publication]** ![&#x200B; publicatieoptie &#x200B;](assets/do-not-localize/globe-publication.png) van de toolbar beheren. Als u snel wilt publiceren, selecteert u de optie **[!UICONTROL Quick Publish]** op de werkbalk. Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
 
 1. Selecteer de optie **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** naar wens.
 
-   ![ unpublish actie ](assets/unpublish_action.png)
+   ![&#x200B; unpublish actie &#x200B;](assets/unpublish_action.png)
    *Cijfer: Publiceer en unpublish opties en de het plannen optie.*
 
 1. Selecteer **[!UICONTROL Now]** om direct op het element te reageren of selecteer **[!UICONTROL Later]** om de actie te plannen. Selecteer een datum en tijd als u de optie **[!UICONTROL Later]** kiest. Klik op **[!UICONTROL Next]**.
@@ -315,11 +315,11 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 1. Selecteer een map in de gebruikersinterface van Assets en selecteer het pictogram Eigenschappen op de werkbalk om de pagina met eigenschappen weer te geven.
 1. Voeg leden of groepen toe onder **[!UICONTROL Permissions]** op het tabblad **[!UICONTROL Closed User Group]** .
 
-   ![ add_user ](assets/add_user.png)
+   ![&#x200B; add_user &#x200B;](assets/add_user.png)
 
 1. Als u een aanmeldingsscherm wilt weergeven wanneer gebruikers de map openen, selecteert u de optie **[!UICONTROL Enable]** . Selecteer vervolgens het pad naar een aanmeldingspagina in [!DNL Experience Manager] en sla de wijzigingen op.
 
-   ![ login_page ](assets/login_page.png)
+   ![&#x200B; login_page &#x200B;](assets/login_page.png)
 
    >[!NOTE]
    >
@@ -332,7 +332,7 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 
 Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders.
 
-Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activa te ontdekken en te gebruiken, zie [ onderzoeksactiva in  [!DNL Experience Manager]](/help/assets/search-assets.md).
+Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activa te ontdekken en te gebruiken, zie [&#x200B; onderzoeksactiva in  [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## Snelle acties {#quick-actions}
 
@@ -401,16 +401,16 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 In de tijdlijn kunt u verschillende gebeurtenissen voor een geselecteerd item weergeven, zoals actieve workflows voor een element, opmerkingen/annotaties, activiteitenlogbestanden en versies.
 
-![ de chronologieingangen van de Soort voor activa ](assets/sort_timeline.gif)
+![&#x200B; de chronologieingangen van de Soort voor activa &#x200B;](assets/sort_timeline.gif)
 *Cijfer: De chronologieingangen van de soort voor een activa*
 
 >[!NOTE]
 >
->In de [ console van Inzamelingen ](/help/assets/manage-collections.md#navigate-the-collections-console), verstrekt de **[!UICONTROL Show All]** lijst opties om commentaren en werkschema&#39;s slechts te bekijken. Bovendien wordt de chronologie getoond slechts voor top-level inzamelingen die in de console vermeld zijn. Deze wordt niet weergegeven als u in een van de verzamelingen navigeert.
+>In de [&#x200B; console van Inzamelingen &#x200B;](/help/assets/manage-collections.md#navigate-the-collections-console), verstrekt de **[!UICONTROL Show All]** lijst opties om commentaren en werkschema&#39;s slechts te bekijken. Bovendien wordt de chronologie getoond slechts voor top-level inzamelingen die in de console vermeld zijn. Deze wordt niet weergegeven als u in een van de verzamelingen navigeert.
 
 >[!NOTE]
 >
->De Chronologie bevat verscheidene [ opties specifiek voor inhoudsfragmenten ](content-fragments/content-fragments.md).
+>De Chronologie bevat verscheidene [&#x200B; opties specifiek voor inhoudsfragmenten &#x200B;](content-fragments/content-fragments.md).
 
 ## Elementen notities aanbrengen {#annotating}
 
@@ -420,7 +420,7 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 
 >[!NOTE]
 >
->Voor de Fragmenten van de Inhoud, [ worden de annotaties gecreeerd in de fragmentredacteur ](content-fragments/content-fragments.md).
+>Voor de Fragmenten van de Inhoud, [&#x200B; worden de annotaties gecreeerd in de fragmentredacteur &#x200B;](content-fragments/content-fragments.md).
 
 1. Navigeer naar de locatie van het element waaraan u annotaties wilt toevoegen.
 1. Selecteer het pictogram **[!UICONTROL Annotate]** op een van de volgende manieren:
@@ -457,7 +457,7 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 
    >[!NOTE]
    >
-   >U kunt ook annotaties toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Voor details, zie [ het leiden videoactiva ](manage-video-assets.md). De MXF-video-indeling wordt echter nog niet ondersteund met video-annotaties.
+   >U kunt ook annotaties toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Voor details, zie [&#x200B; het leiden videoactiva &#x200B;](manage-video-assets.md). De MXF-video-indeling wordt echter nog niet ondersteund met video-annotaties.
 
 1. Als u een andere kleur wilt kiezen, zodat u onderscheid kunt maken tussen gebruikers, selecteert u het pictogram Profiel en selecteert u **[!UICONTROL My Preferences]** .
 
@@ -513,7 +513,7 @@ Als u de annotaties en de revisiestatus wilt afdrukken, selecteert u het pictogr
 1. Voer een van de volgende handelingen uit:
 
    * Als u alle annotaties en de revisiestatus wilt afdrukken, slaat u stap 3 over en gaat u rechtstreeks naar stap 4.
-   * Om specifieke annotaties en overzichtsstatus te drukken, open de [ chronologie ](/help/assets/manage-digital-assets.md#timeline) en ga dan naar stap 3.
+   * Om specifieke annotaties en overzichtsstatus te drukken, open de [&#x200B; chronologie &#x200B;](/help/assets/manage-digital-assets.md#timeline) en ga dan naar stap 3.
 
 1. Als u specifieke annotaties wilt afdrukken, selecteert u de annotaties in de tijdlijn.
 
@@ -541,7 +541,7 @@ Als u de annotaties en de revisiestatus wilt afdrukken, selecteert u het pictogr
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Voor informatie rond het veranderen van de doopvontkleur van annotaties, zie [ het Annoteren ](/help/assets/manage-digital-assets.md#annotating).
+   Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Voor informatie rond het veranderen van de doopvontkleur van annotaties, zie [&#x200B; het Annoteren &#x200B;](/help/assets/manage-digital-assets.md#annotating).
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
@@ -567,7 +567,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
 1. Selecteer het GlobalNav-pictogram en kies **[!UICONTROL Timeline]** in het menu.
 
-   ![ chronologie ](assets/timeline.png)
+   ![&#x200B; chronologie &#x200B;](assets/timeline.png)
 
 1. Selecteer het pictogram **[!UICONTROL Actions]** (pijl) onderaan om de beschikbare handelingen weer te geven die u op het element kunt uitvoeren.
 
@@ -583,32 +583,32 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
 1. Als u de nieuwe versie wilt weergeven, opent u de lijst **[!UICONTROL Show All]** in de tijdlijn op de pagina met assetdetails of op de gebruikersinterface Assets en kiest u **[!UICONTROL Versions]**. Alle versies die voor een asset zijn gemaakt, worden weergegeven onder het tabblad Tijdlijn. U kunt de lijst filteren om Versies weer te geven door op de pijl-omlaag te klikken en **[!UICONTROL Versions]** in de lijst te selecteren.
 
-   ![ versions_option ](assets/versions_option.png)
+   ![&#x200B; versions_option &#x200B;](assets/versions_option.png)
 
 1. Selecteer een specifieke versie voor het element om er een voorvertoning van weer te geven of schakel de optie in voor weergave in de gebruikersinterface van Assets.
 
-   ![ select_version ](assets/select_version.png)
+   ![&#x200B; select_version &#x200B;](assets/select_version.png)
 
 1. Voeg een label en een opmerking voor de versie toe om terug te keren naar de specifieke versie in de gebruikersinterface van Assets.
 
-   ![ save_version ](assets/save_version.png)
+   ![&#x200B; save_version &#x200B;](assets/save_version.png)
 
 1. Selecteer **[!UICONTROL Preview Version]** als u een voorvertoning voor de versie wilt genereren.
 1. Selecteer **[!UICONTROL Revert to this Version]** als u deze versie wilt weergeven in de gebruikersinterface van Assets.
 1. Als u twee versies wilt vergelijken, gaat u naar de elementenpagina van het element en selecteert u de versie die u met de huidige versie wilt vergelijken.
 
-   ![ select_version_toCompare ](assets/select_version_tocompare.png)
+   ![&#x200B; select_version_toCompare &#x200B;](assets/select_version_tocompare.png)
 
 1. Selecteer in de tijdlijn de versie die u wilt vergelijken en sleep de schuifregelaar naar links om deze versie over de huidige versie heen te plaatsen en te vergelijken.
 
-   ![ compare_versions ](assets/compare_versions.png)
+   ![&#x200B; compare_versions &#x200B;](assets/compare_versions.png)
 
 ### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 
 1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en selecteer het element om de elementpagina te openen.
 1. Selecteer het GlobalNav-pictogram en kies **[!UICONTROL Timeline]** in het menu om de tijdlijn weer te geven.
 
-   ![ chronologie-1 ](assets/timeline-1.png)
+   ![&#x200B; chronologie-1 &#x200B;](assets/timeline-1.png)
 
 1. Selecteer het pictogram **[!UICONTROL Actions]** (pijl) onderaan om de lijst met acties te openen die beschikbaar zijn voor het element.
 
@@ -637,7 +637,7 @@ Een verzameling is een geordende set elementen. Gebruik verzamelingen om element
 * Een verzameling kan elementen van verschillende locaties bevatten, omdat deze alleen verwijzingen naar deze elementen bevatten. Bij elke verzameling blijft de referentiële integriteit van de elementen behouden.
 * U kunt verzamelingen delen met meerdere gebruikers met verschillende machtigingsniveaus, zoals bewerken, weergeven, enzovoort.
 
-Om details van het beheer van de Inzameling te kennen, zie [ Inzamelingen ](/help/assets/manage-collections.md) beheren.
+Om details van het beheer van de Inzameling te kennen, zie [&#x200B; Inzamelingen &#x200B;](/help/assets/manage-collections.md) beheren.
 
 ## Verlopen middelen verbergen bij weergave van middelen in bureaubladtoepassing of Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
@@ -657,7 +657,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Om meer te weten, zie hoe te [ activa doorbladeren DAM gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [ hoe te om de Verbinding van Activa van Adobe te gebruiken ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Om meer te weten, zie hoe te [&#x200B; activa doorbladeren DAM gebruikend Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [&#x200B; hoe te om de Verbinding van Activa van Adobe te gebruiken &#x200B;](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **zie ook**
 

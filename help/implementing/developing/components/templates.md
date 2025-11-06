@@ -21,7 +21,7 @@ Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wo
 
 * Met bewerkbare sjablonen kunnen auteurs sjablonen maken en gebruiken.
 * Bewerkbare sjablonen kunnen worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met beide
-   * [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md) en
+   * [&#x200B; Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) en
    * [Universele editor](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 Met paginasjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de Universal Editor, wordt een beperkte subset van bewerkbare sjabloonfunctionaliteit gebruikt. Daarom richt de rest van dit document zich op bewerkbare sjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de Pagina-editor.
@@ -46,24 +46,24 @@ Dit document:
 
 >[!NOTE]
 >
->In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewerken van sjablonen. Zie het auteursdocument [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md) editable zijn, die de mogelijkheden van editable malplaatjes zoals blootgesteld aan de malplaatjeauteur detailleert.
+>In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewerken van sjablonen. Zie het auteursdocument [&#x200B; Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) editable zijn, die de mogelijkheden van editable malplaatjes zoals blootgesteld aan de malplaatjeauteur detailleert.
 
 >[!TIP]
 >
->[ het leerprogramma WKND ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) gaat diepgaand in hoe te om editable malplaatjes te gebruiken door een voorbeeld uit te voeren en is vrij nuttig voor het begrip hoe te opstelling een malplaatje in een nieuw project
+>[&#x200B; het leerprogramma WKND &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) gaat diepgaand in hoe te om editable malplaatjes te gebruiken door een voorbeeld uit te voeren en is vrij nuttig voor het begrip hoe te opstelling een malplaatje in een nieuw project
 
 ## Een nieuwe bewerkbare sjabloon maken {#creating-a-new-template}
 
-Het creëren van editable malplaatjes wordt hoofdzakelijk gedaan met de [ malplaatjeconsole en malplaatjeredacteur ](/help/sites-cloud/authoring/page-editor/templates.md) door een malplaatjeauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
+Het creëren van editable malplaatjes wordt hoofdzakelijk gedaan met de [&#x200B; malplaatjeconsole en malplaatjeredacteur &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) door een malplaatjeauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
 
 Bij het maken van een bewerkbare sjabloon:
 
-1. Creeer a [ omslag voor de malplaatjes ](#template-folders). Dit is niet verplicht, maar aanbevolen beste praktijken.
-1. Selecteer a [ malplaatjetype ](#template-type). Dit wordt gekopieerd om de [ malplaatjedefinitie ](#template-definitions) tot stand te brengen.
+1. Creeer a [&#x200B; omslag voor de malplaatjes &#x200B;](#template-folders). Dit is niet verplicht, maar aanbevolen beste praktijken.
+1. Selecteer a [&#x200B; malplaatjetype &#x200B;](#template-type). Dit wordt gekopieerd om de [&#x200B; malplaatjedefinitie &#x200B;](#template-definitions) tot stand te brengen.
 
    >[!NOTE]
    >
-   >Een selectie van sjabloontypen is beschikbaar buiten het vak. U kunt ook [ uw eigen plaats-specifieke malplaatjetypes ](#creating-template-types) tot stand brengen indien nodig.
+   >Een selectie van sjabloontypen is beschikbaar buiten het vak. U kunt ook [&#x200B; uw eigen plaats-specifieke malplaatjetypes &#x200B;](#creating-template-types) tot stand brengen indien nodig.
 
 1. Vorm de structuur, inhoudsbeleid, aanvankelijke inhoud, en lay-out van het nieuwe malplaatje.
 
@@ -74,9 +74,9 @@ Bij het maken van een bewerkbare sjabloon:
    * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
    * Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u de initiële inhoud kunt definiëren.
 
-   Voor details op hoe een malplaatjeauteur de structuur bepaalt, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author) editable zijn.
+   Voor details op hoe een malplaatjeauteur de structuur bepaalt, zie [&#x200B; Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author) editable zijn.
 
-   Voor technische details van de structuur, zie [ Structuur ](#structure) in dit document.
+   Voor technische details van de structuur, zie [&#x200B; Structuur &#x200B;](#structure) in dit document.
 
    **Beleid**
 
@@ -86,49 +86,49 @@ Bij het maken van een bewerkbare sjabloon:
 
    * Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-   Voor details op hoe een malplaatjeauteur beleid bepaalt, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author) editable zijn.
+   Voor details op hoe een malplaatjeauteur beleid bepaalt, zie [&#x200B; Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author) editable zijn.
 
-   Voor technische details van beleid, zie [ Beleid van de Inhoud ](#content-policies) in dit document.
+   Voor technische details van beleid, zie [&#x200B; Beleid van de Inhoud &#x200B;](#content-policies) in dit document.
 
    **Aanvankelijke Inhoud**
 
    * Met Eerste inhoud wordt inhoud gedefinieerd die wordt weergegeven wanneer een pagina voor het eerst wordt gemaakt op basis van de sjabloon.
    * De initiële inhoud kan vervolgens worden bewerkt door auteurs van pagina&#39;s.
 
-   Voor details op hoe een malplaatjeauteur de structuur bepaalt, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author) editable zijn.
+   Voor details op hoe een malplaatjeauteur de structuur bepaalt, zie [&#x200B; Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author) editable zijn.
 
-   Voor technische details op aanvankelijke inhoud, zie [ Aanvankelijke Inhoud ](#initial-content) in dit document.
+   Voor technische details op aanvankelijke inhoud, zie [&#x200B; Aanvankelijke Inhoud &#x200B;](#initial-content) in dit document.
 
    **Lay-out**
 
    * U kunt de sjabloonlay-out voor een reeks apparaten definiëren.
    * De responsieve indeling voor sjablonen werkt op dezelfde manier als voor het ontwerpen van pagina&#39;s.
 
-   Voor details op hoe een malplaatjeauteur de malplaatjelay-out bepaalt, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author) editable zijn.
+   Voor details op hoe een malplaatjeauteur de malplaatjelay-out bepaalt, zie [&#x200B; Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author) editable zijn.
 
-   Voor technische details op malplaatjelay-out, zie [ Lay-out ](#layout) in dit document.
+   Voor technische details op malplaatjelay-out, zie [&#x200B; Lay-out &#x200B;](#layout) in dit document.
 
 1. Schakel de sjabloon in en sta deze vervolgens toe voor specifieke inhoudstructuren.
 
    * U kunt een sjabloon in- of uitschakelen om de sjabloon beschikbaar of niet beschikbaar te maken voor auteurs van pagina&#39;s.
    * Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
 
-   Voor details op hoe een malplaatjeauteur een malplaatje toelaat, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) editable zijn.
+   Voor details op hoe een malplaatjeauteur een malplaatje toelaat, zie [&#x200B; Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) editable zijn.
 
-   Voor technische details bij het toelaten van een malplaatje, zie [ Toelatend en Toestaan een Malplaatje voor Gebruik ](#enabling-and-allowing-a-template-for-use) e in dit document
+   Voor technische details bij het toelaten van een malplaatje, zie [&#x200B; Toelatend en Toestaan een Malplaatje voor Gebruik &#x200B;](#enabling-and-allowing-a-template-for-use) e in dit document
 
 1. Gebruik dit besturingselement om inhoudspagina&#39;s te maken.
 
    * Wanneer u een sjabloon gebruikt om een pagina te maken, is er geen zichtbaar verschil en is er geen indicatie tussen statische en bewerkbare sjablonen.
    * Voor de auteur van de pagina is het proces transparant.
 
-   Voor details op hoe een paginaauteur malplaatjes gebruikt om een pagina tot stand te brengen, zie [ Creërend en Organiserend Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
+   Voor details op hoe een paginaauteur malplaatjes gebruikt om een pagina tot stand te brengen, zie [&#x200B; Creërend en Organiserend Pagina&#39;s &#x200B;](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
 
-   Voor technische details bij het creëren van pagina&#39;s met editable malplaatjes, zie [ Resulterende Pagina&#39;s van de Inhoud ](#resultant-content-pages) in dit document.
+   Voor technische details bij het creëren van pagina&#39;s met editable malplaatjes, zie [&#x200B; Resulterende Pagina&#39;s van de Inhoud &#x200B;](#resultant-content-pages) in dit document.
 
 >[!TIP]
 >
->Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. Voor internaliseringsdoeleinden, worden de [ localiseringseigenschappen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) geadviseerd.
+>Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. Voor internaliseringsdoeleinden, worden de [&#x200B; localiseringseigenschappen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) geadviseerd.
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ Bij het maken van een bewerkbare sjabloon:
 >
 >Alle pagina&#39;s met voorbeeldinhoud bevatten `cq.shared` , dus alle inhoud die hierop is gebaseerd, bevat automatisch `cq.shared` . Als u echter besluit uw eigen inhoudspagina&#39;s helemaal zelf te maken zonder deze te baseren op voorbeeldinhoud, moet u de naamruimte `cq.shared` wel invoegen.
 >
->Zie [ Gebruikend Cliënt-Kant Bibliotheken ](/help/implementing/developing/introduction/clientlibs.md) voor verdere informatie.
+>Zie [&#x200B; Gebruikend Cliënt-Kant Bibliotheken &#x200B;](/help/implementing/developing/introduction/clientlibs.md) voor verdere informatie.
 
 ## Sjabloonmappen {#template-folders}
 
@@ -178,7 +178,7 @@ Er wordt een lijst met alle toegestane vermeldingen gemaakt. Als configuraties e
 Als u een map wilt maken, kunt u het volgende doen:
 
 * Programmaticaal of met CRXDE Lite
-* Het gebruiken van [ Browser van de Configuratie ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+* Het gebruiken van [&#x200B; Browser van de Configuratie &#x200B;](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## CRXDE Lite gebruiken {#using-crxde-lite}
 
@@ -205,7 +205,7 @@ Als u een map wilt maken, kunt u het volgende doen:
 
 1. Naast de standaardauteurstoestemmingen en voorrechten (bijvoorbeeld, `content-authors`) moet u nu groep(en) toewijzen en de vereiste toegangsrechten (ACLs) bepalen voor uw auteurs om malplaatjes in de nieuwe omslag te kunnen tot stand brengen.
 
-   De `template-authors` -groep is de standaardgroep die moet worden toegewezen. Zie de sectie [ ACLs en Groepen ](#acls-and-groups) voor details.
+   De `template-authors` -groep is de standaardgroep die moet worden toegewezen. Zie de sectie [&#x200B; ACLs en Groepen &#x200B;](#acls-and-groups) voor details.
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
@@ -225,13 +225,13 @@ Als u een map wilt maken, kunt u het volgende doen:
 
 >[!NOTE]
 >
->In Browser van de Configuratie [ ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u malplaatjes binnen deze omslag wilt tot stand brengen, nochtans wordt dit geadviseerde beste praktijken niet.
+>In Browser van de Configuratie [&#x200B; &#x200B;](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u malplaatjes binnen deze omslag wilt tot stand brengen, nochtans wordt dit geadviseerde beste praktijken niet.
 
 ### ACLs en Groepen {#acls-and-groups}
 
 Zodra uw malplaatjeomslagen (of via CRXDE of met Browser van de Configuratie) worden gecreeerd, moet ACLs voor de aangewezen groepen voor de malplaatjeomslagen worden bepaald om juiste veiligheid te verzekeren.
 
-De malplaatjeomslagen voor het [ WKND leerprogramma ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) kan als voorbeeld worden gebruikt.
+De malplaatjeomslagen voor het [&#x200B; WKND leerprogramma &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) kan als voorbeeld worden gebruikt.
 
 #### De groep sjabloonauteurs {#the-template-authors-group}
 
@@ -318,7 +318,7 @@ Wanneer u een sjabloon maakt, moet u een sjabloontype opgeven:
 
 * AEM biedt een kleine selectie van out-of-box sjabloontypen, zoals HTML5 Page en Adaptive Form Page.
 
-   * De extra voorbeelden worden verstrekt als deel van het [ WKND leerprogramma ](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+   * De extra voorbeelden worden verstrekt als deel van het [&#x200B; WKND leerprogramma &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * Sjabloontypen worden meestal gedefinieerd door ontwikkelaars.
 
@@ -369,9 +369,9 @@ When creating an editable template, the value is copied from the template type t
 
 Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, kunt u deze sjabloon kopiëren als een sjabloontype.
 
-1. Maak een sjabloon op dezelfde manier als een paginasjabloon. Zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author) editable zijn. Dit zal als basis van uw malplaatjetype dienen.
-1. Gebruikend CRXDE Lite, kopieer het gecreeerde malplaatje van de `templates` knoop aan de `template-types` knoop onder de [ malplaatjeomslag ](#template-folders).
-1. Schrap het malplaatje van de `templates` knoop onder de [ malplaatjeomslag ](#template-folders).
+1. Maak een sjabloon op dezelfde manier als een paginasjabloon. Zie [&#x200B; Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author) editable zijn. Dit zal als basis van uw malplaatjetype dienen.
+1. Gebruikend CRXDE Lite, kopieer het gecreeerde malplaatje van de `templates` knoop aan de `template-types` knoop onder de [&#x200B; malplaatjeomslag &#x200B;](#template-folders).
+1. Schrap het malplaatje van de `templates` knoop onder de [&#x200B; malplaatjeomslag &#x200B;](#template-folders).
 1. Verwijder in de kopie van de sjabloon onder het knooppunt `template-types` alle eigenschappen `cq:template` en `cq:templateType` uit alle `jcr:content` knooppunten.
 
 U kunt uw eigen malplaatjetype ook ontwikkelen gebruikend een voorbeeld editable malplaatje als basis, beschikbaar op GitHub.
@@ -380,12 +380,12 @@ CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [ open a-sites-example-custom-template-type project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
-* Download het project als [ een dossier van het PIT ](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
+* [&#x200B; open a-sites-example-custom-template-type project op GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
+* Download het project als [&#x200B; een dossier van het PIT &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
 
 ## Sjabloondefinities {#template-definitions}
 
-De definities voor editable malplaatjes worden opgeslagen [ user-defined omslagen ](#template-folders) (geadviseerd) of alternatief in `global`. Bijvoorbeeld:
+De definities voor editable malplaatjes worden opgeslagen [&#x200B; user-defined omslagen &#x200B;](#template-folders) (geadviseerd) of alternatief in `global`. Bijvoorbeeld:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -467,7 +467,7 @@ Definieert de eerste inhoud die een nieuwe pagina krijgt wanneer deze wordt gema
 
 ### Layout {#layout}
 
-Wanneer [ het uitgeven van een malplaatje u de lay-out ](/help/sites-cloud/authoring/page-editor/templates.md) kunt bepalen, gebruikt dit [ standaard ontvankelijke lay-out ](/help/sites-cloud/administering/responsive-layout.md), die [ op de pagina door de inhoudauteur ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) kan worden gevormd.
+Wanneer [&#x200B; het uitgeven van een malplaatje u de lay-out &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) kunt bepalen, gebruikt dit [&#x200B; standaard ontvankelijke lay-out &#x200B;](/help/sites-cloud/administering/responsive-layout.md), die [&#x200B; op de pagina door de inhoudauteur &#x200B;](/help/sites-cloud/authoring/page-editor/responsive-layout.md) kan worden gevormd.
 
 ### Inhoudsbeleid {#content-policies}
 
@@ -488,7 +488,7 @@ Verstrekt een relatieve verwijzing naar het inhoudsbeleid voor het de paragraafs
 
 ### Paginabeleid {#page-policies}
 
-Het beleid van de pagina staat u toe om het [ inhoudsbeleid ](#content-policies) voor de pagina (belangrijkste parsys), in of het malplaatje of de resulterende pagina&#39;s te bepalen.
+Het beleid van de pagina staat u toe om het [&#x200B; inhoudsbeleid &#x200B;](#content-policies) voor de pagina (belangrijkste parsys), in of het malplaatje of de resulterende pagina&#39;s te bepalen.
 
 ### Een sjabloon inschakelen en toestaan voor gebruik {#enabling-and-allowing-a-template-for-use}
 
@@ -496,7 +496,7 @@ Het beleid van de pagina staat u toe om het [ inhoudsbeleid ](#content-policies)
 
    Voordat een sjabloon kan worden gebruikt, moet deze zijn ingeschakeld door:
 
-   * [ toelatend het malplaatje ](/help/sites-cloud/authoring/page-editor/templates.md) van de **console van Malplaatjes**.
+   * [&#x200B; toelatend het malplaatje &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) van de **console van Malplaatjes**.
 
    * Setting the status property on the `jcr:content` node.
 
@@ -511,7 +511,7 @@ Het beleid van de pagina staat u toe om het [ inhoudsbeleid ](#content-policies)
 
 1. **Toegestane Malplaatjes**
 
-   * [ bepaalt de Toegestane weg(en) van het Malplaatje op de **Eigenschappen van de Pagina**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) van de aangewezen pagina of wortelpagina van een subtak.
+   * [&#x200B; bepaalt de Toegestane weg(en) van het Malplaatje op de **Eigenschappen van de Pagina**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) van de aangewezen pagina of wortelpagina van een subtak.
    * Stel de eigenschap in:
      `cq:allowedTemplates`
 Op het `jcr:content` -knooppunt van de vereiste vertakking.
@@ -532,13 +532,13 @@ Pagina&#39;s gemaakt op basis van bewerkbare sjablonen:
 
    * `cq:templateType` - Verstrekt een verwijzing naar het malplaatjetype.
 
-![ hoe de malplaatjes, de inhoud, en de componenten ](assets/templates-content-components.png) met elkaar in verband brengen
+![&#x200B; hoe de malplaatjes, de inhoud, en de componenten &#x200B;](assets/templates-content-components.png) met elkaar in verband brengen
 
 In het bovenstaande diagram ziet u hoe sjablonen, inhoud en componenten met elkaar verweven zijn:
 
 * Controller - `/content/<my-site>/<my-page>` - De resulterende pagina die naar de sjabloon verwijst. De inhoud bepaalt het gehele proces. Volgens de definities heeft het toegang tot de toepasselijke sjabloon en componenten.
-* Configuratie - `/conf/<my-folder>/settings/wcm/templates/<my-template>` - het [ malplaatje en verwante inhoudsbeleid ](#template-definitions) bepalen de paginasonfiguratie.
-* Model - de bundels OSGi - de [ bundels OSGI ](/help/implementing/deploying/configuring-osgi.md) voeren de functionaliteit uit.
+* Configuratie - `/conf/<my-folder>/settings/wcm/templates/<my-template>` - het [&#x200B; malplaatje en verwante inhoudsbeleid &#x200B;](#template-definitions) bepalen de paginasonfiguratie.
+* Model - de bundels OSGi - de [&#x200B; bundels OSGI &#x200B;](/help/implementing/deploying/configuring-osgi.md) voeren de functionaliteit uit.
 * Weergave - `/apps/<my-site>/components` - In zowel de auteur- als de publicatieomgeving wordt de inhoud gerenderd door componenten.
 
 Bij het weergeven van een pagina:
@@ -585,7 +585,7 @@ De evaluatie werkt als volgt:
 
 Het volgende diagram toont het sjabloonevaluatieproces:
 
-![ het evaluatieproces van het Malplaatje ](assets/template-evaluation.png)
+![&#x200B; het evaluatieproces van het Malplaatje &#x200B;](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
@@ -597,7 +597,7 @@ Het volgende diagram toont het sjabloonevaluatieproces:
 >
 >* alleen in de hoofdmap van de site
 >
->Voor een voorbeeld, zie de [ WKND leerprogramma ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) inhoud: `/content/wknd/jcr:content`
+>Voor een voorbeeld, zie de [&#x200B; WKND leerprogramma &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) inhoud: `/content/wknd/jcr:content`
 >
 >De eigenschappen `allowedPaths`, `allowedParents` en `allowedChildren` kunnen ook op de sjablonen worden geplaatst om geavanceerdere regels te definiëren. Nochtans, waar mogelijk, is het veel *eenvoudiger om verdere* eigenschappen op subsecties van de plaats te bepalen als er een behoefte is om de toegestane malplaatjes verder te beperken.`cq:allowedTemplates`
 >

@@ -21,9 +21,9 @@ AEM biedt een reeks functies waarmee meerdere personen in groepen in een organis
 De tijdlijn, die zich in de linkerbar bevindt, beschrijft de kanalen, de plaats, of de het levenscyclus van om het even welke het schermomslag in tijd om te tonen wat met het over zijn leven is gebeurd. Dit kan naar beneden door type worden gefiltreerd.
 De tijdlijn biedt naast de logboeken van de levenscyclus ook de volgende functies.
 
-![ pas Profiel op Omslag ](/help/screens-cloud/assets/configure/Screens-timeline1.jpg) toe
+![&#x200B; pas Profiel op Omslag &#x200B;](/help/screens-cloud/assets/configure/Screens-timeline1.jpg) toe
 
-![ pas Profiel op Omslag ](/help/screens-cloud/assets/configure/screens-timeline2.jpg) toe
+![&#x200B; pas Profiel op Omslag &#x200B;](/help/screens-cloud/assets/configure/screens-timeline2.jpg) toe
 
 Voer de volgende stappen uit om een tijdlijnweergave voor AEM Screens te maken:
 
@@ -43,11 +43,11 @@ Met opmerkingen kunnen AEM-gebruikers op een mooie geconsolideerde manier discus
 1. Open de **kolom van de Chronologie**.
 1. Voeg uw commentaar toe en druk **binnengaan**.
 
-![ voeg een Commentaar ](/help/screens-cloud/assets/configure/screen-timeline3.jpg) toe
+![&#x200B; voeg een Commentaar &#x200B;](/help/screens-cloud/assets/configure/screen-timeline3.jpg) toe
 
 De informatie in de tijdlijn wordt bijgewerkt om aan te geven dat de opmerking is toegevoegd.
 
-![ voeg een Commentaar ](/help/screens-cloud/assets/configure/screens-timeline4.jpg) toe
+![&#x200B; voeg een Commentaar &#x200B;](/help/screens-cloud/assets/configure/screens-timeline4.jpg) toe
 
 ### Versie opslaan {#saveversion}
 
@@ -67,12 +67,12 @@ Met Versioning maakt u een &#39;momentopname&#39; van een kanaal op een bepaald 
 1. Open de **kolom van de Chronologie**.
 1. Klik op de knop (drie punten) in het veld Opmerking onder aan de pagina.
 
-   ![ voeg een Commentaar ](/help/screens-cloud/assets/configure/screens-timeline5.jpg) toe
+   ![&#x200B; voeg een Commentaar &#x200B;](/help/screens-cloud/assets/configure/screens-timeline5.jpg) toe
 
 1. Selecteer **sparen als Versie**.
 1. Ga a **Etiket** en **Commentaar** voor de versie in.
 
-   ![ voeg een Commentaar ](/help/screens-cloud/assets/configure/screens-timeline6.jpg) toe
+   ![&#x200B; voeg een Commentaar &#x200B;](/help/screens-cloud/assets/configure/screens-timeline6.jpg) toe
 
 1. Bevestig de nieuwe versie door te selecteren **creeer**. De informatie in de chronologie wordt bijgewerkt om op de nieuwe versie te wijzen.
 
@@ -86,7 +86,7 @@ De geselecteerde pagina herstellen naar een vorige versie:
 1. Selecteer of **tonen Al** of **Versies** van de filterdrop. De kanaalversies voor het geselecteerde kanaal worden vermeld.
 1. Selecteer de versie waarnaar u wilt terugkeren. De mogelijke opties worden weergegeven:
 
-   ![ voeg een Commentaar ](/help/screens-cloud/assets/configure/screens-timeline7.jpg) toe
+   ![&#x200B; voeg een Commentaar &#x200B;](/help/screens-cloud/assets/configure/screens-timeline7.jpg) toe
 
 1. Selecteer **terugkeren aan deze Versie**. De geselecteerde versie wordt hersteld en de informatie in de tijdlijn wordt bijgewerkt.
 
@@ -100,7 +100,7 @@ U kunt een voorvertoning van een specifieke versie weergeven:
 1. Selecteer of **tonen Al** of **Versies** van de filterdrop. De kanaalversies voor het geselecteerde kanaal worden vermeld.
 1. Selecteer de versie die u wilt voorvertonen. De mogelijke opties worden weergegeven:
 
-   ![ Versie van de Voorproef ](/help/screens-cloud/assets/configure/screens-timeline8.jpg)
+   ![&#x200B; Versie van de Voorproef &#x200B;](/help/screens-cloud/assets/configure/screens-timeline8.jpg)
 
 1. Selecteer **Voorproef**. Het kanaal wordt weergegeven op een nieuw tabblad.
 
@@ -114,7 +114,7 @@ U kunt een specifieke versie vergelijken met de huidige versie:
 1. Selecteer of **tonen Al** of **Versies** van de filterdrop. De kanaalversies voor het geselecteerde kanaal worden vermeld.
 1. Selecteer de versie die u wilt vergelijken. De mogelijke opties worden weergegeven:
 
-   ![ vergelijk Versie ](/help/screens-cloud/assets/configure/screens-timeline9.jpg)
+   ![&#x200B; vergelijk Versie &#x200B;](/help/screens-cloud/assets/configure/screens-timeline9.jpg)
 
 1. Selecteer **vergelijken met Huidige**. De popup opent om de verschillen te tonen.
 
@@ -134,13 +134,13 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 1. Open de **kolom van de Chronologie**.
 1. Klik op de knop (drie punten) in het veld Opmerking onderaan.
 
-   ![ Werkschema van het Begin ](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
+   ![&#x200B; Werkschema van het Begin &#x200B;](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
 
 1. Selecteer **Werkschema van het Begin**.
 1. De wizard Werkstroom maken wordt geopend en geeft de workflowdetails op.
 1. Selecteer **model van het Werkschema** van de dropdown lijst en ga de titel van het Werkschema in.
 
-   ![ Werkschema van het Begin ](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
+   ![&#x200B; Werkschema van het Begin &#x200B;](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
 1. Ga door **daarna** te klikken.
 1. In de bereikstap kunt u:
@@ -148,9 +148,9 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
    * **omvat kinderen** om te specificeren dat de kinderen van dat middel in het werkschema zullen worden omvat.
    * **verwijder Selectie** om dat middel uit het werkschema te verwijderen.
 
-   ![ Werkschema van het Begin ](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
+   ![&#x200B; Werkschema van het Begin &#x200B;](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
 
 1. Selecteer **creeer** om de tovenaar te sluiten en de werkschemainstantie tot stand te brengen.
 1. Afhankelijk van het geselecteerde workflowmodel moet u mogelijk enkele aanvullende acties uitvoeren om de workflow te voltooien.
 
-   ![ Werkschema van het Begin ](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
+   ![&#x200B; Werkschema van het Begin &#x200B;](/help/screens-cloud/assets/configure/screens-timeline13.jpg)

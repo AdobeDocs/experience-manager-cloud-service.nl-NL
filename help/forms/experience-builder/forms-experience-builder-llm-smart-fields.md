@@ -230,6 +230,7 @@ Slimme velden werken uitzonderlijk goed met voorwaardelijke regels:
      worden gebaseerd voeg een stadsgebied toe dat de filters die op het geselecteerde land 
      worden gebaseerd een universitair gebied omvatten dat zich op het gekozen gebied van studie 
  aanpast
+
 ### Valideren en aanpassen
 
 Hoewel velden met LLM-ondersteuning uitgebreide gegevens bieden, moet u altijd:
@@ -249,6 +250,7 @@ Velden maken die worden aangepast op basis van andere formulierselecties:
      worden georganiseerd leidt tot een professionele certificatiedropdown die relevante opties toont die op baantitel 
      worden gebaseerd omvatten een stadsgebied dat filters die op geselecteerd land en gebied 
  worden gebaseerd
+
 ### Classificaties op meerdere niveaus
 
 hiërarchische gegevensstructuren maken:
@@ -265,6 +267,7 @@ Combineer LLM-kennis met de gegevens van uw organisatie:
      omvat tot een productgebied leiden dat industrie-standaardcategorieën met uw productcatalogus 
      omvat een plaatsgebied dat geografische gegevens met uw bureauplaatsen 
  samenvoegt
+
 ## Problemen met slimme velden oplossen {#troubleshooting-smart-fields}
 
 ### Gemeenschappelijke problemen en oplossingen

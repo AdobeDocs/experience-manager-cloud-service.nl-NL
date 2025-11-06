@@ -17,13 +17,13 @@ Blijvende query&#39;s zijn GraphQL-query&#39;s die zijn gemaakt en opgeslagen op
 
 >[!NOTE]
 >
->Blijvende query&#39;s worden aanbevolen. Zie [ Beste praktijken van de Vraag van GraphQL (Dispatcher) ](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) voor details, en de verwante configuratie van Dispatcher.
+>Blijvende query&#39;s worden aanbevolen. Zie [&#x200B; Beste praktijken van de Vraag van GraphQL (Dispatcher) &#x200B;](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) voor details, en de verwante configuratie van Dispatcher.
 
-[ IDE GraphiQL ](/help/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om, uw vragen van GraphQL te ontwikkelen te testen en voort te zetten, alvorens [ over te brengen naar uw productiemilieu ](#transfer-persisted-query-production). Voor gevallen die aanpassing (bijvoorbeeld, wanneer [ het geheime voorgeheugen ](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries) aanpassen) nodig hebben kunt u API gebruiken; zie het cURL voorbeeld dat in [ wordt verstrekt hoe te om een vraag van GraphQL ](#how-to-persist-query) voort te zetten.
+[&#x200B; IDE GraphiQL &#x200B;](/help/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om, uw vragen van GraphQL te ontwikkelen te testen en voort te zetten, alvorens [&#x200B; over te brengen naar uw productiemilieu &#x200B;](#transfer-persisted-query-production). Voor gevallen die aanpassing (bijvoorbeeld, wanneer [&#x200B; het geheime voorgeheugen &#x200B;](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries) aanpassen) nodig hebben kunt u API gebruiken; zie het cURL voorbeeld dat in [&#x200B; wordt verstrekt hoe te om een vraag van GraphQL &#x200B;](#how-to-persist-query) voort te zetten.
 
 ## Blijvende query&#39;s en eindpunten {#persisted-queries-and-endpoints}
 
-De aangehouden vragen moeten altijd het eindpunt met betrekking tot de [ aangewezen configuratie van Plaatsen ](graphql-endpoint.md) gebruiken; zodat kunnen zij of, of allebei gebruiken:
+De aangehouden vragen moeten altijd het eindpunt met betrekking tot de [&#x200B; aangewezen configuratie van Plaatsen &#x200B;](graphql-endpoint.md) gebruiken; zodat kunnen zij of, of allebei gebruiken:
 
 * De globale configuratie en het eindpunt
 De query heeft toegang tot alle modellen van inhoudsfragmenten.
@@ -33,7 +33,7 @@ Bijvoorbeeld, om een voortgeduurde vraag specifiek voor de configuratie van Plaa
 
 >[!NOTE]
 >
->Zie [ Functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) voor meer details toelaten.
+>Zie [&#x200B; Functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) voor meer details toelaten.
 >
 >De **GraphQL Persisted Vragen** moeten worden toegelaten, voor de aangewezen configuratie van Plaatsen.
 
@@ -52,13 +52,13 @@ Als er bijvoorbeeld een bepaalde query met de naam `my-query` is, die een model 
 
 ## Een GraphQL-query laten doorgaan {#how-to-persist-query}
 
-Het wordt geadviseerd om vragen op een de auteur van AEM milieu aanvankelijk voort te zetten en dan [ de vraag ](#transfer-persisted-query-production) over te brengen aan uw productie AEM publiceert milieu, voor gebruik door toepassingen.
+Het wordt geadviseerd om vragen op een de auteur van AEM milieu aanvankelijk voort te zetten en dan [&#x200B; de vraag &#x200B;](#transfer-persisted-query-production) over te brengen aan uw productie AEM publiceert milieu, voor gebruik door toepassingen.
 
 Er zijn verschillende methoden om query&#39;s te blijven uitvoeren, waaronder:
 
-* IDE GraphiQL - zie [ het Opslaan van Persisted Vragen ](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (aangewezen methode)
+* IDE GraphiQL - zie [&#x200B; het Opslaan van Persisted Vragen &#x200B;](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (aangewezen methode)
 * cURL - zie het volgende voorbeeld
-* Andere hulpmiddelen, met inbegrip van [ Postman ](https://www.postman.com/)
+* Andere hulpmiddelen, met inbegrip van [&#x200B; Postman &#x200B;](https://www.postman.com/)
 
 IDE GraphiQL is de **geprefereerde** methode voor het voortduren van vragen. Om een bepaalde vraag voort te zetten gebruikend het **cURL** hulpmiddel van de bevellijn:
 
@@ -208,7 +208,7 @@ Waar `PERSISTENT_PATH` een verkort pad is naar waar de Persisted-query wordt opg
 
    >[!NOTE]
    >
-   > De variabelen en de waarden van de vraag moeten behoorlijk [ worden gecodeerd ](#encoding-query-url) wanneer het uitvoeren van een Verlengde vraag.
+   > De variabelen en de waarden van de vraag moeten behoorlijk [&#x200B; worden gecodeerd &#x200B;](#encoding-query-url) wanneer het uitvoeren van een Verlengde vraag.
 
    Bijvoorbeeld:
 
@@ -217,7 +217,7 @@ Waar `PERSISTENT_PATH` een verkort pad is naar waar de Persisted-query wordt opg
        "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
 
-   Zie het gebruiken van [ vraagvariabelen ](#query-variables) voor meer details.
+   Zie het gebruiken van [&#x200B; vraagvariabelen &#x200B;](#query-variables) voor meer details.
 
 ## Query-variabelen gebruiken {#query-variables}
 
@@ -258,7 +258,7 @@ Deze query kan worden uitgevoerd onder een pad `wknd/adventures-by-activity` . O
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-De UTF-8-codering `%3B` is voor `;` en `%3D` is de codering voor `=` . De vraagvariabelen en om het even welke speciale karakters moeten [ behoorlijk ](#encoding-query-url) voor de Persisted vraag worden gecodeerd om uit te voeren.
+De UTF-8-codering `%3B` is voor `;` en `%3D` is de codering voor `=` . De vraagvariabelen en om het even welke speciale karakters moeten [&#x200B; behoorlijk &#x200B;](#encoding-query-url) voor de Persisted vraag worden gecodeerd om uit te voeren.
 
 ### Query-variabelen gebruiken - Aanbevolen werkwijzen {#query-variables-best-practices}
 
@@ -294,11 +294,11 @@ Deze instelling werkt momenteel echter alleen op `vhost` niveau. Als u Dispatche
 
 ## Door uw doorlopende query&#39;s in cache te plaatsen {#caching-persisted-queries}
 
-De geadviseerde vragen worden geadviseerd aangezien zij bij de [ Dispatcher ](/help/headless/deployment/dispatcher.md) en de lagen van het Netwerk van de Levering van de Inhoud (CDN) in het voorgeheugen kunnen worden ondergebracht, uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing.
+De geadviseerde vragen worden geadviseerd aangezien zij bij de [&#x200B; Dispatcher &#x200B;](/help/headless/deployment/dispatcher.md) en de lagen van het Netwerk van de Levering van de Inhoud (CDN) in het voorgeheugen kunnen worden ondergebracht, uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing.
 
 Standaard maakt AEM de cache ongeldig op basis van de definitie &#39;Tijd naar live&#39; (TTL). Deze TTLs kan door de volgende parameters worden bepaald. Deze parameters zijn op verschillende manieren toegankelijk, waarbij de namen variëren volgens het gebruikte mechanisme:
 
-| Cachetype | [ HTTP- kopbal ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-configuratie  | Cloud Manager |
+| Cachetype | [&#x200B; HTTP- kopbal &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-configuratie  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | Browser | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
@@ -321,8 +321,8 @@ Hiervoor gold het volgende:
 * kan niet worden overschreven:
    * met een OSGi-configuratie
 * kan worden overschreven:
-   * door een verzoek dat de kopbalmontages van HTTP gebruikend cURL bepaalt; het zou geschikte montages voor `cache-control` en/of `surrogate-control` moeten omvatten; voor voorbeelden, zie [ Beheerd Geheime voorgeheugen bij het Gepersisteerde Niveau van de Vraag ](#cache-persisted-query-level)
-   * als u waarden in de **Kopballen** dialoog van [ GraphiQL winde ](#http-cache-headers-graphiql-ide) specificeert
+   * door een verzoek dat de kopbalmontages van HTTP gebruikend cURL bepaalt; het zou geschikte montages voor `cache-control` en/of `surrogate-control` moeten omvatten; voor voorbeelden, zie [&#x200B; Beheerd Geheime voorgeheugen bij het Gepersisteerde Niveau van de Vraag &#x200B;](#cache-persisted-query-level)
+   * als u waarden in de **Kopballen** dialoog van [&#x200B; GraphiQL winde &#x200B;](#http-cache-headers-graphiql-ide) specificeert
 
 ### Exemplaren publiceren {#publish-instances}
 
@@ -337,7 +337,7 @@ Deze kunnen worden overschreven:
 
 * [van de GraphQL IDE](#http-cache-headers-graphiql-ide)
 
-* [ bij het Blijven Niveau van de Vraag ](#cache-persisted-query-level); dit impliceert het posten van de vraag aan AEM gebruikend cURL in uw interface van de bevellijn, en het publiceren van de Verlengde Vraag.
+* [&#x200B; bij het Blijven Niveau van de Vraag &#x200B;](#cache-persisted-query-level); dit impliceert het posten van de vraag aan AEM gebruikend cURL in uw interface van de bevellijn, en het publiceren van de Verlengde Vraag.
 
 * [met Cloud Manager-variabelen](#cache-cloud-manager-variables)
 
@@ -345,7 +345,7 @@ Deze kunnen worden overschreven:
 
 ### Het beheren van de Kopballen van het Geheime voorgeheugen van HTTP in GrahiQL winde {#http-cache-headers-graphiql-ide}
 
-GrahiQL winde - zie [ het Opslaan van Persisted Vragen ](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+GrahiQL winde - zie [&#x200B; het Opslaan van Persisted Vragen &#x200B;](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
 ### Het beheren van Geheime voorgeheugen op het Aanhoudende Niveau van de Vraag {#cache-persisted-query-level}
 
@@ -369,11 +369,11 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoorbeeld via een POST-aanvraag). Het cache-besturingselement is optioneel bij het maken van de permanente query, omdat AEM de standaardwaarde kan opgeven. Zie [ hoe te om een vraag van GraphQL ](#how-to-persist-query), voor een voorbeeld voort te zetten om een vraag te gebruiken cURL.
+De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoorbeeld via een POST-aanvraag). Het cache-besturingselement is optioneel bij het maken van de permanente query, omdat AEM de standaardwaarde kan opgeven. Zie [&#x200B; hoe te om een vraag van GraphQL &#x200B;](#how-to-persist-query), voor een voorbeeld voort te zetten om een vraag te gebruiken cURL.
 
 ### Cache beheren met Cloud Manager-variabelen {#cache-cloud-manager-variables}
 
-[ de Variabelen van het Milieu van Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md) kunnen met Cloud Manager worden bepaald om de vereiste waarden te bepalen:
+[&#x200B; de Variabelen van het Milieu van Cloud Manager &#x200B;](/help/implementing/cloud-manager/environment-variables.md) kunnen met Cloud Manager worden bepaald om de vereiste waarden te bepalen:
 
 | Naam | Waarde | Toegepaste service | Type |
 |--- |--- |--- |--- |
@@ -384,7 +384,7 @@ De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoo
 
 ### Het beheren van Geheime voorgeheugen met een configuratie OSGi {#cache-osgi-configration}
 
-Om het geheime voorgeheugen globaal te beheren, kunt u [ de montages OSGi ](/help/implementing/deploying/configuring-osgi.md) voor de **Verlengde Configuratie van de Dienst van de Vraag** vormen.
+Om het geheime voorgeheugen globaal te beheren, kunt u [&#x200B; de montages OSGi &#x200B;](/help/implementing/deploying/configuring-osgi.md) voor de **Verlengde Configuratie van de Dienst van de Vraag** vormen.
 
 >[!NOTE]
 >
@@ -392,7 +392,7 @@ Om het geheime voorgeheugen globaal te beheren, kunt u [ de montages OSGi ](/hel
 
 >[!NOTE]
 >
->De **Verlengde Configuratie van de Dienst van de Vraag** wordt ook gebruikt voor [ vormend de code van de vraagreactie ](#configuring-query-response-code).
+>De **Verlengde Configuratie van de Dienst van de Vraag** wordt ook gebruikt voor [&#x200B; vormend de code van de vraagreactie &#x200B;](#configuring-query-response-code).
 
 De standaard configuratie OSGi voor publiceer instanties:
 
@@ -407,17 +407,17 @@ De standaard configuratie OSGi voor publiceer instanties:
 
   {style="table-layout:auto"}
 
-* en als niet beschikbaar, gebruikt de configuratie OSGi de [ standaardwaarden voor publiceer instanties ](#publish-instances).
+* en als niet beschikbaar, gebruikt de configuratie OSGi de [&#x200B; standaardwaarden voor publiceer instanties &#x200B;](#publish-instances).
 
 ## De antwoordcode voor de query configureren {#configuring-query-response-code}
 
 Standaard verzendt `PersistedQueryServlet` een `200` -reactie wanneer een query wordt uitgevoerd, ongeacht het werkelijke resultaat.
 
-U kunt [ de montages OSGi ](/help/implementing/deploying/configuring-osgi.md) voor de **Versiesde Configuratie van de Dienst van de Vraag** vormen om te controleren of de meer gedetailleerde statuscodes door het `/execute.json/persisted-query` eindpunt zijn teruggekeerd, wanneer er een fout in de gepersisteerde vraag is.
+U kunt [&#x200B; de montages OSGi &#x200B;](/help/implementing/deploying/configuring-osgi.md) voor de **Versiesde Configuratie van de Dienst van de Vraag** vormen om te controleren of de meer gedetailleerde statuscodes door het `/execute.json/persisted-query` eindpunt zijn teruggekeerd, wanneer er een fout in de gepersisteerde vraag is.
 
 >[!NOTE]
 >
->De **Verlengde Configuratie van de Dienst van de Vraag** wordt ook gebruikt voor [ het beheren van geheim voorgeheugen ](#cache-osgi-configration).
+>De **Verlengde Configuratie van de Dienst van de Vraag** wordt ook gebruikt voor [&#x200B; het beheren van geheim voorgeheugen &#x200B;](#cache-osgi-configration).
 
 Het veld `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) kan als vereist worden gedefinieerd:
 
@@ -430,8 +430,8 @@ De geretourneerde `Content-Type` is `application/graphql-response+json` en het e
   | Code | Beschrijving |
   |--- |--- |
   | 200 | Geslaagd antwoord |
-  | 400 | Geeft aan dat er koppen ontbreken of dat er een probleem is met het voortgezette querypad. Configuratienaam niet opgegeven, achtervoegsel niet opgegeven en andere.<br> zie [ het Oplossen van problemen - het eindpunt van GraphQL niet gevormd ](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
-  | 404 | Kan de gewenste bron niet vinden. Bijvoorbeeld, is het eindpunt Graphql niet beschikbaar op de server.<br> zie [ het Oplossen van problemen - Ontbrekende weg in GraphQL voortgeduurde vraag URL ](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 400 | Geeft aan dat er koppen ontbreken of dat er een probleem is met het voortgezette querypad. Configuratienaam niet opgegeven, achtervoegsel niet opgegeven en andere.<br> zie [&#x200B; het Oplossen van problemen - het eindpunt van GraphQL niet gevormd &#x200B;](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | Kan de gewenste bron niet vinden. Bijvoorbeeld, is het eindpunt Graphql niet beschikbaar op de server.<br> zie [&#x200B; het Oplossen van problemen - Ontbrekende weg in GraphQL voortgeduurde vraag URL &#x200B;](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
   | 500 | Interne serverfout. Bijvoorbeeld validatiefouten, persistentiefout en andere. |
 
   >[!NOTE]
@@ -466,7 +466,7 @@ In onbewerkte tekst ziet de aanvraag-URI er als volgt uit:
 /graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
 ```
 
-Om een voortgezette vraag in een cliëntapp te gebruiken, zou de cliënt SDK zonder kop van AEM voor [ JavaScript ](https://github.com/adobe/aem-headless-client-js), [ Java ](https://github.com/adobe/aem-headless-client-java), of [ NodeJS ](https://github.com/adobe/aem-headless-client-nodejs) moeten worden gebruikt. De Headless Client SDK codeert alle queryvariabelen automatisch op de juiste wijze in de aanvraag.
+Om een voortgezette vraag in een cliëntapp te gebruiken, zou de cliënt SDK zonder kop van AEM voor [&#x200B; JavaScript &#x200B;](https://github.com/adobe/aem-headless-client-js), [&#x200B; Java &#x200B;](https://github.com/adobe/aem-headless-client-java), of [&#x200B; NodeJS &#x200B;](https://github.com/adobe/aem-headless-client-nodejs) moeten worden gebruikt. De Headless Client SDK codeert alle queryvariabelen automatisch op de juiste wijze in de aanvraag.
 
 ## Het overbrengen van een blijvende vraag aan uw milieu van de Productie  {#transfer-persisted-query-production}
 
@@ -474,7 +474,7 @@ Blijvende query&#39;s moeten altijd worden gemaakt op een AEM Auteur-service en 
 
 ### Voorbehouden query&#39;s verpakken
 
-De aanhoudende vragen kunnen in [ Pakketten van AEM ](/help/implementing/developing/tools/package-manager.md) worden gebouwd. AEM Packages kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Packages kunnen ook worden gerepliceerd vanuit een AEM Author-omgeving naar een AEM Publish-omgeving.
+De aanhoudende vragen kunnen in [&#x200B; Pakketten van AEM &#x200B;](/help/implementing/developing/tools/package-manager.md) worden gebouwd. AEM Packages kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Packages kunnen ook worden gerepliceerd vanuit een AEM Author-omgeving naar een AEM Publish-omgeving.
 
 Een pakket maken:
 

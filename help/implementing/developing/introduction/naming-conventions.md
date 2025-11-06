@@ -19,13 +19,13 @@ Nodes in de opslagplaats zijn onderworpen aan naamconventies van de Java Content
 
 Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
-* JcrUtil: de implementatie van AEM van de [ nut JCR ](#jcr-utilities).
-* PageManager: de [ Manager van de Pagina ](#page-manager) verstrekt methodes voor de verrichtingen van het paginaniveau.
+* JcrUtil: de implementatie van AEM van de [&#x200B; nut JCR &#x200B;](#jcr-utilities).
+* PageManager: de [&#x200B; Manager van de Pagina &#x200B;](#page-manager) verstrekt methodes voor de verrichtingen van het paginaniveau.
 * In de gebruikersinterface van AEM {#ui-behavior}
 
 ### JCR-hulpprogramma&#39;s {#jcr-utilities}
 
-[ JcrUtil ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) is de implementatie van AEM van de nut JCR. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
+[&#x200B; JcrUtil &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) is de implementatie van AEM van de nut JCR. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
 
 * `isValidName`
    * Controleert of de naam niet leeg is en alleen geldige tekens bevat.
@@ -36,7 +36,7 @@ Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
 ### Paginabeheer {#page-manager}
 
-[ PageManager ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) verstrekt methodes voor de verrichtingen van het paginaniveau, die op [ worden gebaseerd JCRUtil ](#jcr-utilities).
+[&#x200B; PageManager &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) verstrekt methodes voor de verrichtingen van het paginaniveau, die op [&#x200B; worden gebaseerd JCRUtil &#x200B;](#jcr-utilities).
 
 ### Werking gebruikersinterface van AEM {#ui-behavior}
 

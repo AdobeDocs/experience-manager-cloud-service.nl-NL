@@ -28,16 +28,16 @@ Met de GraphQL API in AEM kunt u inhoudsfragmenten efficiënt aan JavaScript-cli
 >
 >GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [ AEM Commerce verbruikt gegevens van een platform van Commerce via GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
+>* [&#x200B; AEM Commerce verbruikt gegevens van een platform van Commerce via GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* AEM Content Fragments werken samen met de AEM GraphQL API (een aangepaste implementatie op basis van standaard GraphQL) voor gestructureerde inhoud voor gebruik in uw toepassingen.
 
 >[!NOTE]
 >
->Zie [ AEM APIs voor Gestructureerde Inhoudslevering en Beheer ](/help/headless/apis-headless-and-content-fragments.md) voor een overzicht van diverse beschikbare APIs en vergelijking van sommige betrokken concepten.
+>Zie [&#x200B; AEM APIs voor Gestructureerde Inhoudslevering en Beheer &#x200B;](/help/headless/apis-headless-and-content-fragments.md) voor een overzicht van diverse beschikbare APIs en vergelijking van sommige betrokken concepten.
 
 >[!NOTE]
 >
->Voor de recentste informatie over Experience Manager APIs, gelieve ook [ Adobe Experience Manager as a Cloud Service APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) te bezoeken.
+>Voor de recentste informatie over Experience Manager APIs, gelieve ook [&#x200B; Adobe Experience Manager as a Cloud Service APIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/) te bezoeken.
 
 ## De GraphQL API {#graphql-api}
 
@@ -45,15 +45,15 @@ GraphQL is:
 
 * &quot;*...een vraagtaal voor APIs en runtime voor het vervullen van die vragen met uw bestaande gegevens. GraphQL verstrekt een volledige en begrijpelijke beschrijving van de gegevens in uw API, geeft cliënten de macht om precies te vragen wat zij en niets meer nodig hebben, maakt het gemakkelijker om APIs in tijd te evolueren, en laat krachtige ontwikkelaarshulpmiddelen toe.*&quot;.
 
-  Zie [ GraphQL.org ](https://graphql.org)
+  Zie [&#x200B; GraphQL.org &#x200B;](https://graphql.org)
 
 * &quot;*...een open specificatie voor een flexibele API laag. Plaats GraphQL over uw bestaande achtergronden om producten sneller dan ooit te bouwen...*&quot;.
 
-  Zie [ GraphQL ](https://www.graphql.com) ontdekken.
+  Zie [&#x200B; GraphQL &#x200B;](https://www.graphql.com) ontdekken.
 
 * *&quot;...een taal en specificatie voor gegevensquery&#39;s die in 2012 intern door Facebook zijn ontwikkeld voordat deze in 2015 openbaar werd uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van alle grootte...&quot;*
 
-  Zie [ Stichting van GraphQL ](https://foundation.graphql.org/).
+  Zie [&#x200B; Stichting van GraphQL &#x200B;](https://foundation.graphql.org/).
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world the tools they need to understand and adopt GraphQL.*". 
@@ -61,45 +61,45 @@ GraphQL is:
 
 Raadpleeg de volgende secties (onder andere over veel andere bronnen) voor informatie over de GraphQL API:
 
-* Bij [ graphql.org ](https://graphql.org):
+* Bij [&#x200B; graphql.org &#x200B;](https://graphql.org):
 
-   * [ Inleiding aan GraphQL ](https://graphql.org/learn)
+   * [&#x200B; Inleiding aan GraphQL &#x200B;](https://graphql.org/learn)
 
-   * [ de Specificatie van GraphQL ](https://spec.graphql.org/)
+   * [&#x200B; de Specificatie van GraphQL &#x200B;](https://spec.graphql.org/)
 
-* Bij [ graphql.com ](https://graphql.com):
+* Bij [&#x200B; graphql.com &#x200B;](https://graphql.com):
 
-   * [ Gidsen ](https://www.graphql.com/guides/)
+   * [&#x200B; Gidsen &#x200B;](https://www.graphql.com/guides/)
 
-   * [ Zelfstudies ](https://www.graphql.com/tutorials/)
+   * [&#x200B; Zelfstudies &#x200B;](https://www.graphql.com/tutorials/)
 
-   * [ Gevallenanalyses ](https://www.graphql.com/case-studies/)
+   * [&#x200B; Gevallenanalyses &#x200B;](https://www.graphql.com/case-studies/)
 
 De GraphQL for AEM-implementatie is gebaseerd op de standaard GraphQL Java Library. Zie:
 
-* [ graphQL.org - Java ](https://graphql.org/code/#java)
+* [&#x200B; graphQL.org - Java &#x200B;](https://graphql.org/code/#java)
 
-* [ GraphQL Java bij GitHub ](https://github.com/graphql-java)
+* [&#x200B; GraphQL Java bij GitHub &#x200B;](https://github.com/graphql-java)
 
 ### GraphQL Terminologie {#graphql-terminology}
 
 GraphQL gebruikt het volgende:
 
-* **[Vragen ](https://graphql.org/learn/queries/)**
+* **[Vragen &#x200B;](https://graphql.org/learn/queries/)**
 
-* **[Schema&#39;s en Types ](https://graphql.org/learn/schema/)**:
+* **[Schema&#39;s en Types &#x200B;](https://graphql.org/learn/schema/)**:
 
    * Schema&#39;s worden door AEM gegenereerd op basis van de modellen van inhoudsfragmenten.
    * Met behulp van uw schema&#39;s geeft GraphQL de typen en bewerkingen weer die zijn toegestaan voor de GraphQL for AEM-implementatie.
 
-* **[Gebieden ](https://graphql.org/learn/queries/#fields)**
+* **[Gebieden &#x200B;](https://graphql.org/learn/queries/#fields)**
 
 * **[Eindpunt van GraphQL](graphql-endpoint.md)**
    * Het pad in AEM dat reageert op GraphQL-query&#39;s en toegang biedt tot de GraphQL-schema&#39;s.
 
-   * Zie [ toelatend uw Eindpunt van GraphQL ](graphql-endpoint.md) voor verdere details.
+   * Zie [&#x200B; toelatend uw Eindpunt van GraphQL &#x200B;](graphql-endpoint.md) voor verdere details.
 
-Zie [ (GraphQL.org) Inleiding aan GraphQL ](https://graphql.org/learn/) voor uitvoerige details, met inbegrip van [ Beste praktijken ](https://graphql.org/learn/best-practices/).
+Zie [&#x200B; (GraphQL.org) Inleiding aan GraphQL &#x200B;](https://graphql.org/learn/) voor uitvoerige details, met inbegrip van [&#x200B; Beste praktijken &#x200B;](https://graphql.org/learn/best-practices/).
 
 ### GraphQL-querytypen {#graphql-query-types}
 
@@ -107,13 +107,13 @@ Met GraphQL kunt u query&#39;s uitvoeren die worden geretourneerd:
 
 * A **enige ingang**
 
-* A **[lijst van ingangen ](https://graphql.org/learn/schema/#lists-and-non-null)**
+* A **[lijst van ingangen &#x200B;](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM verstrekt mogelijkheden om vragen (beide types) in [ Verlengde Vragen om te zetten, die ](/help/headless/graphql-api/persisted-queries.md) door Dispatcher en CDN kunnen worden in het voorgeheugen ondergebracht.
+AEM verstrekt mogelijkheden om vragen (beide types) in [&#x200B; Verlengde Vragen om te zetten, die &#x200B;](/help/headless/graphql-api/persisted-queries.md) door Dispatcher en CDN kunnen worden in het voorgeheugen ondergebracht.
 
 ### Aanbevolen werkwijzen voor GraphQL-query (Dispatcher en CDN) {#graphql-query-best-practices}
 
-De [ Verlengde Vragen ](/help/headless/graphql-api/persisted-queries.md) zijn de geadviseerde methode om bij te gebruiken publiceer instanties als:
+De [&#x200B; Verlengde Vragen &#x200B;](/help/headless/graphql-api/persisted-queries.md) zijn de geadviseerde methode om bij te gebruiken publiceer instanties als:
 
 * ze zijn in cache geplaatst
 * zij worden centraal beheerd door AEM as a Cloud Service
@@ -126,13 +126,13 @@ GraphQL-query&#39;s die POST-aanvragen gebruiken, worden niet aanbevolen omdat z
 
 Hoewel GraphQL ook GET-verzoeken ondersteunt, kunnen deze limieten bereiken (bijvoorbeeld de lengte van de URL) die kunnen worden vermeden met behulp van Persisted Queries.
 
-Zie [ toelaten caching van persisted query ](/help/headless/deployment/dispatcher-caching.md) voor verdere details.
+Zie [&#x200B; toelaten caching van persisted query &#x200B;](/help/headless/deployment/dispatcher-caching.md) voor verdere details.
 
 >[!NOTE]
 >
 >Als u directe query&#39;s en/of POST-query&#39;s wilt toestaan in de Dispatcher, kunt u de systeembeheerder vragen:
 >
->* Creeer a [ het omgevingsvariabele van Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md) geroepen `ENABLE_GRAPHQL_ENDPOINT`
+>* Creeer a [&#x200B; het omgevingsvariabele van Cloud Manager &#x200B;](/help/implementing/cloud-manager/environment-variables.md) geroepen `ENABLE_GRAPHQL_ENDPOINT`
 >* met de waarde `true`
 
 >[!NOTE]
@@ -141,7 +141,7 @@ Zie [ toelaten caching van persisted query ](/help/headless/deployment/dispatche
 
 ### GraphiQL IDE {#graphiql-ide}
 
-U kunt de vragen van GraphQL testen en zuiveren gebruikend [ IDE GraphiQL ](/help/headless/graphql-api/graphiql-ide.md).
+U kunt de vragen van GraphQL testen en zuiveren gebruikend [&#x200B; IDE GraphiQL &#x200B;](/help/headless/graphql-api/graphiql-ide.md).
 
 ## Kwesties gebruiken voor auteur, voorvertoning en publicatie {#use-cases-author-preview-publish}
 
@@ -171,13 +171,13 @@ Ook, moet de gebruiker toegang tot een eindpunt van GraphQL hebben om de vragen 
 
 GraphQL is een sterk getypeerde API, wat betekent dat de gegevens duidelijk gestructureerd en ingedeeld moeten zijn per type.
 
-De GraphQL-specificatie biedt een aantal richtlijnen voor het maken van een robuuste API voor het ondervragen van gegevens over een bepaalde instantie. Om dit te doen, moet een cliënt het [ Schema ](#schema-generation) halen, dat alle types noodzakelijk voor een vraag bevat.
+De GraphQL-specificatie biedt een aantal richtlijnen voor het maken van een robuuste API voor het ondervragen van gegevens over een bepaalde instantie. Om dit te doen, moet een cliënt het [&#x200B; Schema &#x200B;](#schema-generation) halen, dat alle types noodzakelijk voor een vraag bevat.
 
-Voor Inhoudsfragmenten, zijn de schema&#39;s van GraphQL (structuur en types) gebaseerd op **Toegelaten** [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) en hun gegevenstypes.
+Voor Inhoudsfragmenten, zijn de schema&#39;s van GraphQL (structuur en types) gebaseerd op **Toegelaten** [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) en hun gegevenstypes.
 
 >[!CAUTION]
 >
->Alle schema&#39;s van GraphQL (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die ****) zijn toegelaten zijn leesbaar door het eindpunt van GraphQL.
+>Alle schema&#39;s van GraphQL (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **&#x200B;**) zijn toegelaten zijn leesbaar door het eindpunt van GraphQL.
 >
 >Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden uitgelekt; dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
 
@@ -185,18 +185,18 @@ Als een gebruiker bijvoorbeeld een Content Fragment Model met de naam `Article` 
 
 1. A Content Fragment Model:
 
-   ![ Model van het Fragment van de Inhoud voor gebruik met GraphQL ](assets/cfm-graphqlapi-01.png " Model van het Fragment van de Inhoud voor gebruik met GraphQL ")
+   ![&#x200B; Model van het Fragment van de Inhoud voor gebruik met GraphQL &#x200B;](assets/cfm-graphqlapi-01.png " Model van het Fragment van de Inhoud voor gebruik met GraphQL ")
 
 1. Het corresponderende GraphQL-schema (uitvoer van de automatische documentatie GraphiQL):
-   ![ het Schema van GraphQL dat op het Model van het Fragment van de Inhoud ](assets/cfm-graphqlapi-02.png " wordt gebaseerd GraphQL Schema op het Model van het Fragment van de Inhoud ") wordt gebaseerd
+   ![&#x200B; het Schema van GraphQL dat op het Model van het Fragment van de Inhoud &#x200B;](assets/cfm-graphqlapi-02.png " wordt gebaseerd GraphQL Schema op het Model van het Fragment van de Inhoud ") wordt gebaseerd
 
-   Dit toont aan dat het geproduceerde type `ArticleModel` verscheidene [ gebieden ](#fields) bevat.
+   Dit toont aan dat het geproduceerde type `ArticleModel` verscheidene [&#x200B; gebieden &#x200B;](#fields) bevat.
 
    * Drie ervan zijn door de gebruiker beheerd: `author`, `main` en `referencearticle` .
 
-   * De andere gebieden werden automatisch toegevoegd door AEM, en vertegenwoordigen nuttige methodes om informatie over een bepaald Fragment van de Inhoud te verstrekken; in dit voorbeeld, (de [ helpergebieden ](#helper-fields)) `_path`, `_metadata`, `_variations`.
+   * De andere gebieden werden automatisch toegevoegd door AEM, en vertegenwoordigen nuttige methodes om informatie over een bepaald Fragment van de Inhoud te verstrekken; in dit voorbeeld, (de [&#x200B; helpergebieden &#x200B;](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
-1. Nadat een gebruiker een inhoudsfragment heeft gemaakt op basis van het artikelmodel, kan het vervolgens worden ondervraagd via GraphQL. Voor voorbeelden, zie de [ Vragen van de Steekproef ](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries) (die op de structuur van het Fragment van de a [ steekproefInhoud voor gebruik met GraphQL ](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql) worden gebaseerd).
+1. Nadat een gebruiker een inhoudsfragment heeft gemaakt op basis van het artikelmodel, kan het vervolgens worden ondervraagd via GraphQL. Voor voorbeelden, zie de [&#x200B; Vragen van de Steekproef &#x200B;](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries) (die op de structuur van het Fragment van de a [&#x200B; steekproefInhoud voor gebruik met GraphQL &#x200B;](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql) worden gebaseerd).
 
 In GraphQL for AEM is het schema flexibel. Dit betekent dat deze telkens automatisch wordt gegenereerd wanneer een inhoudsfragmentmodel wordt gemaakt, bijgewerkt of verwijderd. De caches voor het gegevensschema worden ook vernieuwd wanneer u een model van het inhoudsfragment bijwerkt.
 
@@ -242,11 +242,11 @@ Binnen het schema zijn er afzonderlijke velden, van twee basiscategorieën:
 
 * Velden die u genereert.
 
-  Een selectie van [ Types van Gegevens ](#Data-types) wordt gebruikt om gebieden tot stand te brengen die op worden gebaseerd hoe u uw Model van het Fragment van de Inhoud vormt. De gebiedsnamen worden genomen van het **gebied van de Naam van het Bezit** van het **Type van Gegevens** tabel.
+  Een selectie van [&#x200B; Types van Gegevens &#x200B;](#Data-types) wordt gebruikt om gebieden tot stand te brengen die op worden gebaseerd hoe u uw Model van het Fragment van de Inhoud vormt. De gebiedsnamen worden genomen van het **gebied van de Naam van het Bezit** van het **Type van Gegevens** tabel.
 
    * Er is ook **teruggeeft als** plaatsen om in overweging te nemen, aangezien de gebruikers bepaalde gegevenstypes kunnen vormen. Een tekstveld met één regel kan bijvoorbeeld worden geconfigureerd voor meerdere tekstregels door `multifield` te kiezen in de vervolgkeuzelijst.
 
-* GraphQL voor AEM produceert ook verscheidene [ helpergebieden ](#helper-fields).
+* GraphQL voor AEM produceert ook verscheidene [&#x200B; helpergebieden &#x200B;](#helper-fields).
 
 ### Gegevenstypen {#data-types}
 
@@ -272,7 +272,7 @@ GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen
 
 Naast de gegevenstypes voor gebruiker geproduceerde gebieden, produceert GraphQL voor AEM ook verscheidene *helper* gebieden helpen een Fragment van de Inhoud identificeren, of om extra informatie over een Fragment van de Inhoud te verstrekken.
 
-Deze [ helpergebieden ](#helper-fields) zijn duidelijk met een voorafgaande `_` om tussen te onderscheiden wat door de gebruiker is bepaald en wat auto-geproduceerd is.
+Deze [&#x200B; helpergebieden &#x200B;](#helper-fields) zijn duidelijk met een voorafgaande `_` om tussen te onderscheiden wat door de gebruiker is bepaald en wat auto-geproduceerd is.
 
 #### Pad {#path}
 
@@ -307,7 +307,7 @@ Als u één inhoudsfragment van een bepaald type wilt ophalen, moet u ook eerst 
 }
 ```
 
-Zie [ Vraag van de Steekproef - Één enkel Specifiek Fragment van de Stad ](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment).
+Zie [&#x200B; Vraag van de Steekproef - Één enkel Specifiek Fragment van de Stad &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment).
 
 #### ID (UUID) {#id-uuid}
 
@@ -379,7 +379,7 @@ U kunt alle GraphQL-typen voor metagegevens weergeven als u het schema Gegeneree
 >
 >Als u bijvoorbeeld het veld `stringMetadata` aanroept, ontvangt u een array van alle metagegevens die als `String` in de opslagplaats zijn opgeslagen. Als u `stringArrayMetadata` aanroept, ontvangt u een array van alle metagegevens die als `String[]` in de opslagplaats zijn opgeslagen.
 
-Zie [ Vraag van de Steekproef voor Meta-gegevens - maak een lijst van de Meta-gegevens voor Uitreiking genoemd GB ](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb).
+Zie [&#x200B; Vraag van de Steekproef voor Meta-gegevens - maak een lijst van de Meta-gegevens voor Uitreiking genoemd GB &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb).
 
 #### Variaties {#variations}
 
@@ -399,7 +399,7 @@ Het veld `_variations` is geïmplementeerd om het opvragen van variaties in een 
 >
 >Het `_variations` gebied bevat geen a `master` variatie, aangezien technisch de originele gegevens (die als *Hoofd* in UI worden van verwijzingen voorzien) niet als expliciete variatie wordt beschouwd.
 
-Zie [ Vraag van de Steekproef - Alle Plaatsen met een Benoemde Variatie ](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
+Zie [&#x200B; Vraag van de Steekproef - Alle Plaatsen met een Benoemde Variatie &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
 >[!NOTE]
 >
@@ -411,11 +411,11 @@ Zie [ Vraag van de Steekproef - Alle Plaatsen met een Benoemde Variatie ](/help/
 
 ## GraphQL-variabelen {#graphql-variables}
 
-GraphQL staat toe dat variabelen in de query worden geplaatst. Voor meer informatie, zie [ documentatie van GraphQL voor Variabelen ](https://graphql.org/learn/queries/#variables).
+GraphQL staat toe dat variabelen in de query worden geplaatst. Voor meer informatie, zie [&#x200B; documentatie van GraphQL voor Variabelen &#x200B;](https://graphql.org/learn/queries/#variables).
 
 Als u bijvoorbeeld alle inhoudsfragmenten van het type `Author` in een specifieke variatie wilt ophalen (indien beschikbaar), kunt u het argument `variation` in GraphiQL opgeven.
 
-![ de Variabelen van GraphQL ](assets/cfm-graphqlapi-03.png " de Variabelen van GraphQL ")
+![&#x200B; de Variabelen van GraphQL &#x200B;](assets/cfm-graphqlapi-03.png " de Variabelen van GraphQL ")
 
 **Vraag**:
 
@@ -441,7 +441,7 @@ query($variation: String!) {
 
 Deze query retourneert de volledige lijst met auteurs. Auteurs zonder de `another` variatie worden teruggeplaatst naar de oorspronkelijke gegevens (`_variation` rapporteert `master` in dit geval).
 
-Pas a [ filter ](#filtering) toe, als u de lijst tot auteurs wilt beperken die de gespecificeerde variatie (en overslaan auteurs verstrekken die terug naar de originele gegevens zouden vallen):
+Pas a [&#x200B; filter &#x200B;](#filtering) toe, als u de lijst tot auteurs wilt beperken die de gespecificeerde variatie (en overslaan auteurs verstrekken die terug naar de originele gegevens zouden vallen):
 
 ```graphql
 query($variation: String!) {
@@ -467,7 +467,7 @@ In GraphQL bestaat de mogelijkheid om de query te wijzigen op basis van variabel
 
 Hier kunt u bijvoorbeeld het veld `adventurePrice` opnemen in een query voor alle `AdventureModels` , op basis van een variabele `includePrice` .
 
-![ de Richtlijnen van GraphQL ](assets/cfm-graphqlapi-04.png " de Richtlijnen van GraphQL ")
+![&#x200B; de Richtlijnen van GraphQL &#x200B;](assets/cfm-graphqlapi-04.png " de Richtlijnen van GraphQL ")
 
 **Vraag**:
 
@@ -584,11 +584,11 @@ U kunt ook filteren op geneste velden, maar dit wordt afgeraden omdat dit tot pr
 
 Zie voor meer voorbeelden:
 
-* details van [ GraphQL voor de uitbreidingen van AEM ](#graphql-extensions)
+* details van [&#x200B; GraphQL voor de uitbreidingen van AEM &#x200B;](#graphql-extensions)
 
 * [Voorbeeldquery&#39;s met deze voorbeeldinhoud en -structuur](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries-sample-content-fragment-structure)
 
-   * En de [ Inhoud en de Structuur van de Steekproef ](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql) voorbereid voor gebruik in steekproefvragen
+   * En de [&#x200B; Inhoud en de Structuur van de Steekproef &#x200B;](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql) voorbereid voor gebruik in steekproefvragen
 
 * [Voorbeeldquery&#39;s op basis van het WKND-project](/help/headless/graphql-api/sample-queries.md#sample-queries-using-wknd-project)
 
@@ -596,7 +596,7 @@ Zie voor meer voorbeelden:
 
 >[!NOTE]
 >
->Voor beste prestaties overweeg [ Bijwerkend uw Fragmenten van de Inhoud voor het pagineren en het Sorteren in het Filtreren van GraphQL ](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Voor beste prestaties overweeg [&#x200B; Bijwerkend uw Fragmenten van de Inhoud voor het pagineren en het Sorteren in het Filtreren van GraphQL &#x200B;](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Met deze functie kunt u de zoekresultaten sorteren op basis van een opgegeven veld.
 
@@ -663,7 +663,7 @@ query {
 
 >[!NOTE]
 >
->Voor beste prestaties overweeg [ Bijwerkend uw Fragmenten van de Inhoud voor het pagineren en het Sorteren in het Filtreren van GraphQL ](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Voor beste prestaties overweeg [&#x200B; Bijwerkend uw Fragmenten van de Inhoud voor het pagineren en het Sorteren in het Filtreren van GraphQL &#x200B;](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Met deze functie kunt u pagineren uitvoeren op querytypen die een lijst retourneren. Er zijn twee methoden:
 
@@ -704,7 +704,7 @@ query {
 
 ### Gepagineerde query - eerste en volgende {#paginated-first-after}
 
-Het `...Paginated` vraagtype gebruikt de meeste `...List` vraagtype eigenschappen (het filtreren, het sorteren) opnieuw, maar in plaats van het gebruiken van `offset`/ `limit` argumenten, gebruikt het `first`/ `after` argumenten zoals die door [ worden bepaald de Specificatie van de Verbindingen van de Curseur van GraphQL ](https://relay.dev/graphql/connections.htm). U kunt een minder formele inleiding in de [ inleiding van GraphQL ](https://graphql.org/learn/pagination/#pagination-and-edges) vinden.
+Het `...Paginated` vraagtype gebruikt de meeste `...List` vraagtype eigenschappen (het filtreren, het sorteren) opnieuw, maar in plaats van het gebruiken van `offset`/ `limit` argumenten, gebruikt het `first`/ `after` argumenten zoals die door [&#x200B; worden bepaald de Specificatie van de Verbindingen van de Curseur van GraphQL &#x200B;](https://relay.dev/graphql/connections.htm). U kunt een minder formele inleiding in de [&#x200B; inleiding van GraphQL &#x200B;](https://graphql.org/learn/pagination/#pagination-and-edges) vinden.
 
 * `first`: De `n` eerste items die moeten worden geretourneerd.
 De standaardwaarde is `50` .
@@ -743,7 +743,7 @@ query {
 
 Met webgeoptimaliseerde afbeeldingslevering kunt u een grafische query gebruiken:
 
-* Vraag een URL aan een element DAM beeld (die door de Verwijzing van de Inhoud van a **** wordt van verwijzingen voorzien)
+* Vraag een URL aan een element DAM beeld (die door de Verwijzing van de Inhoud van a **&#x200B;**&#x200B;wordt van verwijzingen voorzien)
 
 * Geef parameters door met de query, zodat er automatisch een specifieke uitvoering van de afbeelding wordt gegenereerd en geretourneerd
 
@@ -755,7 +755,7 @@ Met webgeoptimaliseerde afbeeldingslevering kunt u een grafische query gebruiken
 
 Met AEM kunt u:
 
-* Geef [ Web-Geoptimaliseerde Levering van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) in de vragen van GraphQL door.
+* Geef [&#x200B; Web-Geoptimaliseerde Levering van het Beeld &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) in de vragen van GraphQL door.
 
 Dit betekent dat de opdrachten worden toegepast tijdens de uitvoering van de query, op dezelfde manier als URL-parameters bij GET-aanvragen voor die afbeeldingen.
 
@@ -774,7 +774,7 @@ Met de oplossing in GraphQL kunt u:
 >* `_dynamicUrl` : een DAM-element
 >* `_dmS7Url` : een dynamisch media-element
 > 
->Als het element waarnaar wordt verwezen een DAM-element is, is de waarde voor `_dmS7Url` `null` . Zie [ Dynamische levering van Media door URL in GraphQL vragen ](#dynamic-media-asset-delivery-by-url).
+>Als het element waarnaar wordt verwezen een DAM-element is, is de waarde voor `_dmS7Url` `null` . Zie [&#x200B; Dynamische levering van Media door URL in GraphQL vragen &#x200B;](#dynamic-media-asset-delivery-by-url).
 
 ### Structuur van het transformatieverzoek {#structure-transformation-request}
 
@@ -919,19 +919,19 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 ### Voor het web geoptimaliseerde aanvraag voor het leveren van afbeeldingen via URL {#web-optimized-image-delivery-request-url}
 
-Als u uw vraag als voortgeduurde vraag (bijvoorbeeld, met de naam `dynamic-url-x`) opslaat kunt u [ de voortgeduurde vraag direct ](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query) dan uitvoeren.
+Als u uw vraag als voortgeduurde vraag (bijvoorbeeld, met de naam `dynamic-url-x`) opslaat kunt u [&#x200B; de voortgeduurde vraag direct &#x200B;](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query) dan uitvoeren.
 
 Gebruik bijvoorbeeld de volgende URL&#39;s om de vorige voorbeelden (opgeslagen als voortgeduurde query&#39;s) rechtstreeks uit te voeren:
 
-* [ Enige Parameter ](#dynamic-image-delivery-single-specified-parameter); Verblijfsde Vraag genoemd `dynamic-url-x`
+* [&#x200B; Enige Parameter &#x200B;](#dynamic-image-delivery-single-specified-parameter); Verblijfsde Vraag genoemd `dynamic-url-x`
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
      Het antwoord ziet er als volgt uit:
 
-     ![ Levering van het Beeld gebruikend parameters ](assets/cfm-graphiql-sample-image-delivery.png " Levering van het Beeld gebruikend parameters ")
+     ![&#x200B; Levering van het Beeld gebruikend parameters &#x200B;](assets/cfm-graphiql-sample-image-delivery.png " Levering van het Beeld gebruikend parameters ")
 
-* [ Veelvoudige Parameters ](#dynamic-image-delivery-multiple-specified-parameters); Verlengde Vraag genoemd `dynamic`
+* [&#x200B; Veelvoudige Parameters &#x200B;](#dynamic-image-delivery-multiple-specified-parameters); Verlengde Vraag genoemd `dynamic`
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
@@ -952,24 +952,24 @@ De volgende beperkingen bestaan:
 
 ## Dynamische levering van media-elementen via URL in GraphQL-query&#39;s{#dynamic-media-asset-delivery-by-url}
 
-GraphQL voor de Fragmenten van de Inhoud van AEM staat u toe om een URL aan een activa van AEM te verzoeken Dynamische Media (Scene7) (die door de Verwijzing van de Inhoud van a **** worden van verwijzingen voorzien).
+GraphQL voor de Fragmenten van de Inhoud van AEM staat u toe om een URL aan een activa van AEM te verzoeken Dynamische Media (Scene7) (die door de Verwijzing van de Inhoud van a **&#x200B;**&#x200B;worden van verwijzingen voorzien).
 
 Met de oplossing in GraphQL kunt u:
 
 * gebruik `_dmS7Url` op de `ImageRef` -referentie
-   * zie [ vraag van de Steekproef voor Dynamische levering van Media door URL - de Verwijzing van het Beeld ](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+   * zie [&#x200B; vraag van de Steekproef voor Dynamische levering van Media door URL - de Verwijzing van het Beeld &#x200B;](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 * gebruik `_dmS7Url` op meerdere referenties; `ImageRef` , `MultimediaRef` en `DocumentRef`
-   * zie [ vraag van de Steekproef voor Dynamische levering van Media door URL - Veelvoudige Verwijzingen ](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+   * zie [&#x200B; vraag van de Steekproef voor Dynamische levering van Media door URL - Veelvoudige Verwijzingen &#x200B;](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 * gebruik van `_dmS7Url` met de functie Slim uitsnijden
 
    * De eigenschap `_smartCrops` stelt de configuraties voor slim uitsnijden beschikbaar voor een specifiek element
 
-   * zie [ vraag van de Steekproef voor Dynamische de activalevering van Media door URL - met Slim Gewas ](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * zie [&#x200B; vraag van de Steekproef voor Dynamische de activalevering van Media door URL - met Slim Gewas &#x200B;](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
->Voor dit moet u de Configuratie van de Wolk van a [ Dynamische Media ](/help/assets/dynamic-media/config-dm.md) hebben.
+>Voor dit moet u de Configuratie van de Wolk van a [&#x200B; Dynamische Media &#x200B;](/help/assets/dynamic-media/config-dm.md) hebben.
 >
 >Hiermee voegt u de kenmerken `dam:scene7File` en `dam:scene7Domain` toe aan de metagegevens van het element wanneer het wordt gemaakt.
 
@@ -980,7 +980,7 @@ Met de oplossing in GraphQL kunt u:
 >* `_dmS7Url` : een dynamisch media-element
 >* `_dynamicUrl` : een DAM-element
 > 
->Als het element waarnaar wordt verwezen een Dynamic Media-element is, is de waarde voor `_dynamicURL` `null` . Zie [ Web-geoptimaliseerde beeldlevering in de vragen van GraphQL ](#web-optimized-image-delivery-in-graphql-queries).
+>Als het element waarnaar wordt verwezen een Dynamic Media-element is, is de waarde voor `_dynamicURL` `null` . Zie [&#x200B; Web-geoptimaliseerde beeldlevering in de vragen van GraphQL &#x200B;](#web-optimized-image-delivery-in-graphql-queries).
 
 ### Voorbeeldquery voor dynamische levering van media-elementen via URL - Afbeeldingsverwijzing{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
@@ -1084,7 +1084,7 @@ query allTeams {
 
 ## Dynamische media voor ondersteuning voor OpenAPI-middelen (Remote Assets) {#dynamic-media-for-openapi-asset-support}
 
-[ Verre activa ](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) integratie staat u toe om Assets van verwijzingen te voorzien, die niet lokaal aan de huidige instantie van AEM, van de Redacteur van het Fragment van de Inhoud zijn. Dynamic Media for OpenAPI biedt ondersteuning voor elementen in de Content Fragment Editor en GraphQL JSON.
+[&#x200B; Verre activa &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) integratie staat u toe om Assets van verwijzingen te voorzien, die niet lokaal aan de huidige instantie van AEM, van de Redacteur van het Fragment van de Inhoud zijn. Dynamic Media for OpenAPI biedt ondersteuning voor elementen in de Content Fragment Editor en GraphQL JSON.
 
 ### Voorbeeldquery voor Dynamic Media voor ondersteuning van OpenAPI-elementen (Remote Assets) {#sample-query-dynamic-media-for-openapi-asset-support}
 
@@ -1178,13 +1178,13 @@ De huidige beperkingen zijn:
 
   >[!NOTE]
   >
-  >Volledige URL moet dan op de cliëntkant worden geconstrueerd, die op de [ levering API van Activa ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) wordt gebaseerd.
+  >Volledige URL moet dan op de cliëntkant worden geconstrueerd, die op de [&#x200B; levering API van Activa &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) wordt gebaseerd.
 
 * Slechts *goedgekeurde* activa zullen voor verwijzing van de verre bewaarplaatsen beschikbaar zijn
 * Als een element waarnaar wordt verwezen, wordt verwijderd uit de externe opslagplaats, resulteert dit in een verbroken verwijzing naar Content Fragment Asset.
 * Alle opslagplaatsen voor leveringsmiddelen waartoe de gebruiker toegang heeft, zijn beschikbaar voor selectie. De beschikbare lijst kan niet worden beperkt.
 * Zowel de AEM-instantie als de Remote Asset Repository-instanties moeten dezelfde versie hebben.
-* Geen Metagegevens van Activa worden blootgesteld via [ de Plaatsen API van het Beheer ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) en de [ Levering van het Fragment van de Inhoud van AEM met OpenAPI ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). U moet de API voor metagegevens van middelen gebruiken om de metagegevens van de elementen op te halen.
+* Geen Metagegevens van Activa worden blootgesteld via [&#x200B; de Plaatsen API van het Beheer &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) en de [&#x200B; Levering van het Fragment van de Inhoud van AEM met OpenAPI &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). U moet de API voor metagegevens van middelen gebruiken om de metagegevens van de elementen op te halen.
 
 ## GraphQL for AEM - Overzicht van extensies {#graphql-extensions}
 
@@ -1195,7 +1195,7 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
 
 * Als u een lijst met resultaten verwacht:
    * `List` toevoegen aan de modelnaam, bijvoorbeeld `cityList`
-   * Zie [ Vraag van de Steekproef - Al Informatie over Alle Plaatsen ](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+   * Zie [&#x200B; Vraag van de Steekproef - Al Informatie over Alle Plaatsen &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
   U kunt dan:
 
@@ -1209,11 +1209,11 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
       * [Een lijstvraag met compensatie en grens](#list-offset-limit)
       * [Een gepagineerde query met eerste en volgende](#paginated-first-after)
 
-   * Zie [ Vraag van de Steekproef - Al Informatie over Alle Plaatsen ](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+   * Zie [&#x200B; Vraag van de Steekproef - Al Informatie over Alle Plaatsen &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * Het filter `includeVariations` wordt opgenomen in de querytypen `List` en `Paginated` .  Als u Variaties in inhoudsfragmenten in de queryresultaten wilt ophalen, moet het filter `includeVariations` zijn ingesteld op `true` .
 
-   * Zie [ Vraag van de Steekproef voor veelvoudige Fragmenten van de Inhoud, en hun Variaties, van een bepaald Model ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   * Zie [&#x200B; Vraag van de Steekproef voor veelvoudige Fragmenten van de Inhoud, en hun Variaties, van een bepaald Model &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
   >
@@ -1221,36 +1221,36 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
 
 * Als u logische OR wilt gebruiken:
    * use `_logOp: OR`
-   * Zie [ Vraag van de Steekproef - Alle Personen die een naam van &quot;Banen&quot;of &quot;Smith&quot;hebben ](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
+   * Zie [&#x200B; Vraag van de Steekproef - Alle Personen die een naam van &quot;Banen&quot;of &quot;Smith&quot;hebben &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * Logische AND bestaat ook, maar is (vaak) impliciet
 
 * U kunt zoeken naar veldnamen die overeenkomen met de velden in het model van het inhoudsfragment
-   * Zie [ Vraag van de Steekproef - Volledige Details van CEO en Werknemers van een Bedrijf ](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
+   * Zie [&#x200B; Vraag van de Steekproef - Volledige Details van CEO en Werknemers van een Bedrijf &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
 
 * Naast de velden van uw model zijn er velden die door het systeem worden gegenereerd (voorafgegaan door een onderstrepingsteken):
 
    * Voor inhoud:
 
       * `_locale` : om de taal te onthullen; gebaseerd op Taalbeheer
-         * Zie [ Vraag van de Steekproef voor veelvoudige Fragmenten van de Inhoud van een bepaalde scène ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
+         * Zie [&#x200B; Vraag van de Steekproef voor veelvoudige Fragmenten van de Inhoud van een bepaalde scène &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
 
       * `_metadata` : om metagegevens voor het fragment weer te geven
-         * Zie [ Vraag van de Steekproef voor Meta-gegevens - maak een lijst van de Meta-gegevens voor Uitreiking genoemd GB ](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+         * Zie [&#x200B; Vraag van de Steekproef voor Meta-gegevens - maak een lijst van de Meta-gegevens voor Uitreiking genoemd GB &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
 
       * `_model` : zoeken naar een inhoudsfragmentmodel toestaan (pad en titel)
-         * Zie [ Vraag van de Steekproef voor een Model van het Fragment van de Inhoud van een Model ](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
+         * Zie [&#x200B; Vraag van de Steekproef voor een Model van het Fragment van de Inhoud van een Model &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
 
       * `_path` : het pad naar het inhoudsfragment in de opslagplaats
-         * Zie [ Vraag van de Steekproef - Één enkel Specifiek Fragment van de Stad ](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+         * Zie [&#x200B; Vraag van de Steekproef - Één enkel Specifiek Fragment van de Stad &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
       * `_id` : de UUID voor het inhoudsfragment in de opslagplaats
 
-         * Zie [ Vraag van de Steekproef voor een Fragment van de Inhoud van een specifiek Model met verwijzingen UID ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+         * Zie [&#x200B; Vraag van de Steekproef voor een Fragment van de Inhoud van een specifiek Model met verwijzingen UID &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
          * [Zie Voorbeeldquery voor inhoudsfragmenten op UUID-verwijzing](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference` : om verwijzingen weer te geven; inclusief inline-verwijzingen in de Rich Text Editor
-         * Zie [ Vraag van de Steekproef voor de veelvoudige Fragmenten van de Inhoud met Vooraf ingestelde Verwijzingen ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
+         * Zie [&#x200B; Vraag van de Steekproef voor de veelvoudige Fragmenten van de Inhoud met Vooraf ingestelde Verwijzingen &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
 
       * `_variation` : specifieke variaties in het inhoudsfragment weergeven
 
@@ -1262,14 +1262,14 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
         >
         >Het door het systeem gegenereerde veld `_variation` kan niet samen met het filter `includeVariations` worden gebruikt.
 
-         * Zie [ Vraag van de Steekproef - Alle Steden met een Benoemde Variatie ](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+         * Zie [&#x200B; Vraag van de Steekproef - Alle Steden met een Benoemde Variatie &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
    * Voor levering van de afbeelding:
 
       * `_authorURL`: de volledige URL naar het afbeeldingselement op AEM Author
       * `_publishURL`: de volledige URL naar het afbeeldingselement in AEM Publish
 
-      * Voor [ Web-geoptimaliseerde beeldlevering ](#web-optimized-image-delivery-in-graphql-queries) (van activa DAM):
+      * Voor [&#x200B; Web-geoptimaliseerde beeldlevering &#x200B;](#web-optimized-image-delivery-in-graphql-queries) (van activa DAM):
 
          * `_dynamicUrl`: de volledige URL naar het voor het web geoptimaliseerde DAM-element op de `ImageRef` -referentie
 
@@ -1285,18 +1285,18 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
 
             * [Voorbeeldquery voor voor voor het web geoptimaliseerde afbeeldingslevering met één opgegeven parameter](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`: op de `ImageRef` verwijzing voor de levering van URL aan a [ Dynamische activa van Media ](#dynamic-media-asset-delivery-by-url)
+      * `_dmS7Url`: op de `ImageRef` verwijzing voor de levering van URL aan a [&#x200B; Dynamische activa van Media &#x200B;](#dynamic-media-asset-delivery-by-url)
 
-         * Zie [ vraag van de Steekproef voor Dynamische levering van Media door URL - ImageRef ](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+         * Zie [&#x200B; vraag van de Steekproef voor Dynamische levering van Media door URL - ImageRef &#x200B;](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-         * Zie [ vraag van de Steekproef voor de Dynamische levering van Media door URL - Veelvoudige Verwijzingen ](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+         * Zie [&#x200B; vraag van de Steekproef voor de Dynamische levering van Media door URL - Veelvoudige Verwijzingen &#x200B;](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
    * `_tags` : om de id&#39;s weer te geven van inhoudsfragmenten of variaties die tags bevatten. Dit is een array van `cq:tags` -id&#39;s.
 
-      * Zie [ Vraag van de Steekproef - Namen van Alle Plaatsen die als de Breuken van de Stad ](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks) worden geëtiketteerd
-      * Zie [ Vraag van de Steekproef voor de Variaties van het Fragment van Inhoud van een bepaald Model dat een specifieke markering in bijlage ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag) heeft
-      * Zie [ Vraag van de Steekproef met het filtreren door _tags identiteitskaart en exclusief variaties ](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
-      * Zie [ Vraag van de Steekproef met het filtreren door _tags identiteitskaart en met inbegrip van variaties ](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+      * Zie [&#x200B; Vraag van de Steekproef - Namen van Alle Plaatsen die als de Breuken van de Stad &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks) worden geëtiketteerd
+      * Zie [&#x200B; Vraag van de Steekproef voor de Variaties van het Fragment van Inhoud van een bepaald Model dat een specifieke markering in bijlage &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag) heeft
+      * Zie [&#x200B; Vraag van de Steekproef met het filtreren door _tags identiteitskaart en exclusief variaties &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Zie [&#x200B; Vraag van de Steekproef met het filtreren door _tags identiteitskaart en met inbegrip van variaties &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
      >[!NOTE]
      >
@@ -1305,19 +1305,19 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
    * En bewerkingen:
 
       * `_operator` : specifieke operatoren toepassen; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
-         * Zie [ Vraag van de Steekproef - Alle Personen die geen naam van &quot;Banen&quot;hebben ](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
-         * Zie [ Vraag van de Steekproef - Alle avonturen waar `_path` met een specifieke prefix ](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter) begint
+         * Zie [&#x200B; Vraag van de Steekproef - Alle Personen die geen naam van &quot;Banen&quot;hebben &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
+         * Zie [&#x200B; Vraag van de Steekproef - Alle avonturen waar `_path` met een specifieke prefix &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter) begint
 
       * `_apply` : specifieke voorwaarden toepassen, bijvoorbeeld `AT_LEAST_ONCE`
-         * Zie [ Vraag van de Steekproef - filter op een serie met een punt dat minstens eens ](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once) moet voorkomen
+         * Zie [&#x200B; Vraag van de Steekproef - filter op een serie met een punt dat minstens eens &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once) moet voorkomen
 
       * `_ignoreCase` : de kwestie negeren bij het opvragen
-         * Zie [ Steekproefvraag - Alle steden met San in de naam, ongeacht geval ](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+         * Zie [&#x200B; Steekproefvraag - Alle steden met San in de naam, ongeacht geval &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
 
 * GraphQL-union-typen worden ondersteund:
 
    * use `... on`
-      * Zie [ Vraag van de Steekproef voor een Fragment van de Inhoud van een specifiek Model met een Verwijzing van de Inhoud ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
+      * Zie [&#x200B; Vraag van de Steekproef voor een Fragment van de Inhoud van een specifiek Model met een Verwijzing van de Inhoud &#x200B;](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
 
 * Extra fallback bij het opvragen van geneste fragmenten:
 
@@ -1332,7 +1332,7 @@ Om tot het eindpunt van GraphQL van een externe website toegang te hebben moet u
 
 ## Verificatie {#authentication}
 
-Zie [ Authentificatie voor de Verre Vraag van AEM GraphQL op de Fragmenten van de Inhoud ](/help/headless/security/authentication.md).
+Zie [&#x200B; Authentificatie voor de Verre Vraag van AEM GraphQL op de Fragmenten van de Inhoud &#x200B;](/help/headless/security/authentication.md).
 
 ## Automatisch testen {#automated-testing}
 
@@ -1340,7 +1340,7 @@ Wanneer het runnen van een plaatsingspijpleiding in AEM Cloud Manager, worden de
 
 Om nauwkeurige resultaten te verstrekken, zou uw milieu van het Stadium van AEM as a Cloud Service **uw** milieu van de Productie **zo dicht mogelijk moeten spiegelen.** Dit is vooral belangrijk voor de inhoud.
 
-U kunt dit bereiken door het Hulpmiddel van het Exemplaar van de Inhoud van AEM as a Cloud Service [ te gebruiken ](/help/implementing/developing/tools/content-copy.md) om uw inhoud van de Productie aan het milieu van het Stadium te kopiëren.
+U kunt dit bereiken door het Hulpmiddel van het Exemplaar van de Inhoud van AEM as a Cloud Service [&#x200B; te gebruiken &#x200B;](/help/implementing/developing/tools/content-copy.md) om uw inhoud van de Productie aan het milieu van het Stadium te kopiëren.
 
 ## Beperkingen {#limitations}
 
@@ -1387,4 +1387,4 @@ AEM is van plan om in de AEM GraphQL API te investeren.*&quot;
 
 ## Zelfstudie - Aan de slag met AEM Headless en GraphQL {#tutorial}
 
-Op zoek naar een praktische zelfstudie? Controle uit [ Begonnen het Worden met de Zwaartepunt van AEM en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend AEM GraphQL APIs en verbruikt door een externe app, in een headless scenario van CMS.
+Op zoek naar een praktische zelfstudie? Controle uit [&#x200B; Begonnen het Worden met de Zwaartepunt van AEM en GraphQL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend AEM GraphQL APIs en verbruikt door een externe app, in een headless scenario van CMS.

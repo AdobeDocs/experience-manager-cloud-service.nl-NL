@@ -41,11 +41,11 @@ Voordat u begint, moet u controleren of:
 * **AEM Forms as a Cloud Service** - het milieu van de auteur van de productie met de AanpassingsComponenten van de Kern van Forms
 * **Basis begrip** - vertrouwdheid met vormconcepten en bedrijfsvereisten
 
-Voor gedetailleerde technische opstellingsvereisten en omgevingsconfiguratie, zie [ opstellen en de Bouwer van de Ervaring van Forms vormen ](deploy-forms-experience-builder.md).
+Voor gedetailleerde technische opstellingsvereisten en omgevingsconfiguratie, zie [&#x200B; opstellen en de Bouwer van de Ervaring van Forms vormen &#x200B;](deploy-forms-experience-builder.md).
 
 ## Manieren om formulieren te maken {#two-ways-to-create-forms}
 
-Nadat u de Tovenaar van Forms gebruikt om het malplaatje van de Componenten van de a [ Kern ](/help/forms/creating-adaptive-form-core-components.md) of [ Edge Delivery Services ](/help/edge/docs/forms/universal-editor/create-forms.md) malplaatje, thema, en andere opties te selecteren, biedt de Bouwer van de Ervaring van Forms twee primaire benaderingen voor vormverwezenlijking aan:
+Nadat u de Tovenaar van Forms gebruikt om het malplaatje van de Componenten van de a [&#x200B; Kern &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; Edge Delivery Services &#x200B;](/help/edge/docs/forms/universal-editor/create-forms.md) malplaatje, thema, en andere opties te selecteren, biedt de Bouwer van de Ervaring van Forms twee primaire benaderingen voor vormverwezenlijking aan:
 
 ### &#x200B;1. Geheel nieuw maken {#create-from-scratch}
 
@@ -62,10 +62,10 @@ Formulieren samenstellen met behulp van beschrijvingen van uw eigen taal.
 **Voorbeeld:**
 
      creeer een klant terugkoppelt vorm met:
-     - de Rating van het Product (1-5 sterren) 
-     - het gebied van de Commentaar voor gedetailleerde terugkoppelt 
-     - de e-mail van de Klant (facultatief) 
-     - voorlegt aan e-mailbericht 
+     &#x200B;- de Rating van het Product (1-5 sterren) 
+     &#x200B;- het gebied van de Commentaar voor gedetailleerde terugkoppelt 
+     &#x200B;- de e-mail van de Klant (facultatief) 
+     &#x200B;- voorlegt aan e-mailbericht 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +75,7 @@ Formulieren samenstellen met behulp van beschrijvingen van uw eigen taal.
 
 Bestaande documenten transformeren in interactieve digitale formulieren.
 
-Voordat u deze optie gebruikt, uploadt u uw PDF-bestand of een afbeelding van het formulier. De PDF kan een AcroForm- of een XFA-gebaseerd PDF-formulier zijn. Voor [ andere types van PDF forms ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), gebruik [ Voorbereiden de optie van de Vorm ](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat om hen in een AcroForm om te zetten
+Voordat u deze optie gebruikt, uploadt u uw PDF-bestand of een afbeelding van het formulier. De PDF kan een AcroForm- of een XFA-gebaseerd PDF-formulier zijn. Voor [&#x200B; andere types van PDF forms &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), gebruik [&#x200B; Voorbereiden de optie van de Vorm &#x200B;](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat om hen in een AcroForm om te zetten
 
 **Wanneer te gebruiken:**
 
@@ -104,7 +104,7 @@ Beginnen met een basisformulierbeschrijving:
 
 Hiermee maakt u een formulier met drie essentiële velden.
 
-![ Vorm met drie essentieel gebied - gecreeerd gebruikend natuurlijke taalherinnering ](/help/forms/assets/forms-experience-builder-contact-us-form.png)
+![&#x200B; Vorm met drie essentieel gebied - gecreeerd gebruikend natuurlijke taalherinnering &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form.png)
 
 ### Stap 2: Voeg validatie en vereisten toe {#step-2-add-validation}
 
@@ -114,7 +114,7 @@ Het formulier verbeteren met validatieregels:
 
 Het symbool `@` verwijst naar specifieke velden voor doelwijzigingen.
 
-![ Toegevoegde bevestiging in de bouwer van de vormervaring gebruikend natuurlijke taalherinnering ](/help/forms/assets/forms-experience-builder-contact-us-form-add-validation.png)
+![&#x200B; Toegevoegde bevestiging in de bouwer van de vormervaring gebruikend natuurlijke taalherinnering &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-validation.png)
 
 
 ### Stap 3: De gebruikerservaring verbeteren {#step-3-improve-ux}
@@ -123,7 +123,7 @@ Voeg nuttige plaatsaanduidingstekst en begeleiding toe:
 
      voegt placeholder tekst toe: @name &quot;Uw volledige naam&quot;, @email &quot;your.email@company.com&quot;, @message &quot;vertelt ons hoe wij kunnen helpen&quot;
 
-![ Toegevoegde bevestiging die natuurlijke taalherinneringen in de bouwer van de vormervaring gebruikt ](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
+![&#x200B; Toegevoegde bevestiging die natuurlijke taalherinneringen in de bouwer van de vormervaring gebruikt &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
 
 ### Stap 4: Geavanceerde functies toevoegen {#step-4-advanced-features}
 
@@ -133,10 +133,10 @@ Inclusief extra functionaliteit:
     
      toe - vraagType met opties: &quot;Algemene Vraag&quot;, &quot;Verzoek van de Steun&quot;, &quot;Onderzoek van de Verkoop&quot;, &quot;Partnerschap&quot;
     
-     - urgentLevel met opties (Laag, Medium, Hoog) 
+     &#x200B;- urgentLevel met opties (Laag, Medium, Hoog) 
 
 
-![ toegevoegde een dropdown componenten gebruikend natuurlijke taalherinneringen in de bouwer van de vormervaring ](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
+![&#x200B; toegevoegde een dropdown componenten gebruikend natuurlijke taalherinneringen in de bouwer van de vormervaring &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
 
 
 ### Stap 5: Voorwaardelijke logica implementeren {#step-5-conditional-logic}
@@ -167,10 +167,10 @@ Gebruik `@fieldName` om te verwijzen naar specifieke velden:
 
 Beschrijf wat u in duidelijk Engels wilt:
 
-     - voeg een sectie voor bedrijfsinformatie 
+     &#x200B;- voeg een sectie voor bedrijfsinformatie 
      toe - creeer een dropdown voor afdelingsselectie 
-     - omvat een dossier uploadt voor hervat 
-     - opstelling e-mailberichten wanneer de vorm wordt voorgelegd 
+     &#x200B;- omvat een dossier uploadt voor hervat 
+     &#x200B;- opstelling e-mailberichten wanneer de vorm wordt voorgelegd 
 
 ### Stapsgewijs opbouwen {#build-incrementally}
 
@@ -190,55 +190,55 @@ Begin eenvoudig en voeg geleidelijk complexiteit toe:
 **Basis contactvorm:**
 
      creeer een contactvorm met:
-     - Naam (vereist) 
-     - E-mail (vereist, bevestigd) 
-     - Onderwerp dropdown (Algemeen, Steun, Verkoop, Partnerschap) 
-     - Bericht (vereist, multi-lijn) 
-     - voorlegt knoop 
+     &#x200B;- Naam (vereist) 
+     &#x200B;- E-mail (vereist, bevestigd) 
+     &#x200B;- Onderwerp dropdown (Algemeen, Steun, Verkoop, Partnerschap) 
+     &#x200B;- Bericht (vereist, multi-lijn) 
+     &#x200B;- voorlegt knoop 
 
 **Klantenfeedback vorm:**
 
      creeer een klant terugkoppelt vorm met:
-     - de Rating van het Product (1-5 sterren) 
-     - het gebied van de Commentaar voor gedetailleerde terugkoppelt 
-     - de e-mail van de Klant (facultatief) 
-     - voorlegt aan e-mailbericht 
+     &#x200B;- de Rating van het Product (1-5 sterren) 
+     &#x200B;- het gebied van de Commentaar voor gedetailleerde terugkoppelt 
+     &#x200B;- de e-mail van de Klant (facultatief) 
+     &#x200B;- voorlegt aan e-mailbericht 
 
 ### Registratie- en instapformulieren {#registration-onboarding-forms}
 
 **de registratie van de Gebruiker:**
 
      creeer een vorm van de gebruikersregistratie met:
-     - Persoonlijke informatie (naam, e-mail, telefoon) 
-     - de voorkeur van de Rekening (bulletin, berichten) 
-     - de Termijnen en voorwaardenaanvaarding 
-     - de verwezenlijking van het Wachtwoord met sterktebevestiging 
+     &#x200B;- Persoonlijke informatie (naam, e-mail, telefoon) 
+     &#x200B;- de voorkeur van de Rekening (bulletin, berichten) 
+     &#x200B;- de Termijnen en voorwaardenaanvaarding 
+     &#x200B;- de verwezenlijking van het Wachtwoord met sterktebevestiging 
 
 **Werknemer op het instappen:**
 
      creeer een werknemer op het instappen vorm met:
-     - Persoonlijke details en contactinformatie 
-     - de informatie van de Werkgelegenheid en begindatum 
-     - het Document uploadt (hervat, identiteitskaart, belastingvormen) 
-     - de selectie en voorkeur van Voordelen 
+     &#x200B;- Persoonlijke details en contactinformatie 
+     &#x200B;- de informatie van de Werkgelegenheid en begindatum 
+     &#x200B;- het Document uploadt (hervat, identiteitskaart, belastingvormen) 
+     &#x200B;- de selectie en voorkeur van Voordelen 
 
 ### Beoordeling- en beoordelingsformulieren {#survey-assessment-forms}
 
 **het Tevredenheidsonderzoek van de Klant:**
 
      creeer een onderzoek van de klantentevredenheid met:
-     - Algemene classificatie (1-10 schaal) 
-     - de ratings van de Categorie (product, de dienst, steun) 
-     - Open-eind koppelt secties 
-     - Demografische informatie (facultatief) 
+     &#x200B;- Algemene classificatie (1-10 schaal) 
+     &#x200B;- de ratings van de Categorie (product, de dienst, steun) 
+     &#x200B;- Open-eind koppelt secties 
+     &#x200B;- Demografische informatie (facultatief) 
 
 **beoordeling van Vaardigheden:**
 
      creeer een vorm van de vaardigheidsbeoordeling met:
-     - de categorieën van de Vaardigheid met bekwaamheidsniveaus 
-     - de duur van de Ervaring voor elke vaardigheid 
-     - Certificatie en opleidingsinformatie 
-     - Zelfbeoordeling en doelstellingen 
+     &#x200B;- de categorieën van de Vaardigheid met bekwaamheidsniveaus 
+     &#x200B;- de duur van de Ervaring voor elke vaardigheid 
+     &#x200B;- Certificatie en opleidingsinformatie 
+     &#x200B;- Zelfbeoordeling en doelstellingen 
 
 ## Testen en valideren {#testing-validation}
 

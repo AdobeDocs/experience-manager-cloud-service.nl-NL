@@ -17,7 +17,7 @@ Leer over de verschillende gebeurtenissen die de Universele Redacteur verzendt d
 
 ## Inleiding {#introduction}
 
-Toepassingen kunnen verschillende vereisten hebben voor pagina- of componentupdates. Daarom verzendt de Universele Redacteur bepaalde gebeurtenissen naar verre toepassingen. In het geval dat de verre toepassing geen luisteraar van de douanegebeurtenis voor de verzonden gebeurtenis heeft, wordt de luisteraar van de a [ fallback gebeurtenis ](#fallback-listeners) verstrekt door het `universal-editor-cors` pakket uitgevoerd.
+Toepassingen kunnen verschillende vereisten hebben voor pagina- of componentupdates. Daarom verzendt de Universele Redacteur bepaalde gebeurtenissen naar verre toepassingen. In het geval dat de verre toepassing geen luisteraar van de douanegebeurtenis voor de verzonden gebeurtenis heeft, wordt de luisteraar van de a [&#x200B; fallback gebeurtenis &#x200B;](#fallback-listeners) verstrekt door het `universal-editor-cors` pakket uitgevoerd.
 
 Alle gebeurtenissen worden aangeroepen op het betrokken DOM-element van de externe pagina. Gebeurtenissen beluisteren omhoog naar het element `BODY` waar de standaardgebeurtenislistener die door het `universal-editor-cors` -pakket wordt geboden, wordt geregistreerd. Er zijn gebeurtenissen voor de inhoud en de gebeurtenissen voor UI.
 
@@ -27,7 +27,7 @@ Alle gebeurtenissen volgen een naamgevingsconventie.
 
 `aue:content-update` en `aue:ui-select`
 
-De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor verdere details over vraag en voorbeelden van hun ladingen, gelieve te zien de de Universele Vraag van de Redacteur van het document [ ](/help/implementing/universal-editor/calls.md).
+De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor verdere details over vraag en voorbeelden van hun ladingen, gelieve te zien de de Universele Vraag van de Redacteur van het document [&#x200B; &#x200B;](/help/implementing/universal-editor/calls.md).
 
 ## Gebeurtenissen voor bijwerken van inhoud {#content-events}
 
