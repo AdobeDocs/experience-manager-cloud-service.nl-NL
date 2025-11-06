@@ -97,7 +97,7 @@ Bepaal waar de informatie vandaan komt en bestudeer de details van de metagegeve
 
 >[!NOTE]
 >
->Leer hoe te [&#x200B; meta-gegevens van uw digitale activa &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html) beheren.
+>Leer hoe te [&#x200B; meta-gegevens van uw digitale activa &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=nl-NL) beheren.
 
 ### Verenigbaar zijn met de metagegevensstrategie
 
@@ -138,7 +138,7 @@ U kunt meerdere trefwoorden toevoegen en deze rangschikken naar prioriteit.
    1. Klik op **[!UICONTROL Save & Close]** .
 Zoek het element met de trefwoorden die u hebt toegevoegd. Het element wordt weergegeven in de bovenste zoekresultaten.
 
-  Leer hoe te om [&#x200B; onderzoek in Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html) op te voeren.
+  Leer hoe te om [&#x200B; onderzoek in Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=nl-NL) op te voeren.
 
 * **de meta-gegevensgebieden van de Douane:** pas uw meta-gegevensgebieden aan om extra informatie over activa te vangen. Voeg bijvoorbeeld specifieke velden toe voor projectdetails, copyrightinformatie of andere relevante gegevens die de zoekmogelijkheden verbeteren. Leer [&#x200B; om douanemetagegevens &#x200B;](meta-edit.md) in Experience Manager Assets uit te geven of toe te voegen.
 
@@ -168,4 +168,4 @@ Onderzoek de inhoud supply chain om meta-gegevensbronnen te vinden en alle belan
 
 Geef vroegtijdig informatie over doelstellingen, vooruitgang, mijlpalen en uitdagingen, zodat alle belanghebbenden er hun bijdrage aan kunnen leveren en kunnen samenwerken. Stimuleer samenwerking in de hele organisatie om efficiënte processen en waardevolle metagegevens te maken.
 
-Leer meer over [&#x200B; meta-gegevens en zijn verwante concepten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) om uw meta-gegevens van Experience Manager effectief te beheren.
+Leer meer over [&#x200B; meta-gegevens en zijn verwante concepten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=nl-NL) om uw meta-gegevens van Experience Manager effectief te beheren.

@@ -98,9 +98,9 @@ Integreren met Assets core:
 
 >[!CAUTION]
 >
->De [&#x200B; component van het Fragment van de Inhoud is een deel van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html). Zie [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor meer details.
+>De [&#x200B; component van het Fragment van de Inhoud is een deel van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL). Zie [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL) voor meer details.
 
-Vanuit AEM-pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM verstrekt de **[kerncomponent van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [&#x200B; component die u inhoudsfragmenten op uw pagina&#39;s &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page) laat omvatten. U kunt dit **[de kerncomponent van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** ook uitbreiden.
+Vanuit AEM-pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM verstrekt de **[kerncomponent van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL)** - a [&#x200B; component die u inhoudsfragmenten op uw pagina&#39;s &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page) laat omvatten. U kunt dit **[de kerncomponent van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL)** ook uitbreiden.
 
 * De component gebruikt de eigenschap `fragmentPath` om naar het daadwerkelijke inhoudsfragment te verwijzen. De eigenschap `fragmentPath` wordt op dezelfde manier afgehandeld als soortgelijke eigenschappen van andere elementtypen, bijvoorbeeld wanneer het inhoudsfragment naar een andere locatie wordt verplaatst.
 
@@ -350,4 +350,4 @@ Bijvoorbeeld:
 
 Zie voor meer informatie
 
-* [&#x200B; Componenten van de Kern - de Component van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) (geadviseerd)
+* [&#x200B; Componenten van de Kern - de Component van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL) (geadviseerd)

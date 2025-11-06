@@ -30,7 +30,7 @@ Als u bijvoorbeeld de extensie wilt gebruiken met AJO:
 
 >[!NOTE]
 >
->Zie ook [&#x200B; de Integratie van AJO &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
+>Zie ook [&#x200B; de Integratie van AJO &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/integrations/aem-fragments).
 
 1. Open de [&#x200B; Console van de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 

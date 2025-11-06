@@ -70,7 +70,7 @@ Voor een vloeiende en geslaagde ervaring met Edge Delivery Services for AEM Form
 
 >[!TIP]
 >
-> Nieuw bij AEM? Begin met [&#x200B; AEM Sites die Begonnen Gids &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html) wordt.
+> Nieuw bij AEM? Begin met [&#x200B; AEM Sites die Begonnen Gids &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=nl-NL) wordt.
 
 ## Pad A: Een nieuw project maken met Forms
 

@@ -92,7 +92,7 @@ Ga aan de slag met AEM authoring met de Universal Editor en Edge Delivery Servic
 
 Edge Delivery Services maakt deel uit van Adobe Experience Manager. Op die manier kunnen Edge Delivery Services en AEM Sites op hetzelfde domein naast elkaar bestaan, wat een veelvoorkomend geval is voor grotere websites. Bovendien kunnen uw AEM Sites-pagina&#39;s naadloos inhoud uit Edge Delivery Services verbruiken en het omgekeerde geldt ook.
 
-U kunt Edge Delivery Services met [&#x200B; Adobe Target &#x200B;](https://www.aem.live/developer/target-integration) en [&#x200B; Lancering ook gebruiken.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+U kunt Edge Delivery Services met [&#x200B; Adobe Target &#x200B;](https://www.aem.live/developer/target-integration) en [&#x200B; Lancering ook gebruiken.](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/home)
 
 ## Help van Adobe opvragen {#getting-help}
 

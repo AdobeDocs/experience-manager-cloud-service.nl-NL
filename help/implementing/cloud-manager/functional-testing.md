@@ -58,7 +58,7 @@ Het volgende diagram verstrekt een gedetailleerde mening van beschikbare kwalite
 
 U wordt aangemoedigd om de eenheidstests voor uw toepassing van AEM te verstrekken, die de basis van elke teststrategie vormen. Ze zijn bedoeld om snel en vaak te draaien en snel feedback te geven. Ze zijn nauw geïntegreerd in de workflows voor ontwikkelaars, uw eigen CI/CD en de implementatiepijplijnen voor de cloudservice van AEM.
 
-Ze worden geïmplementeerd met JUnit en uitgevoerd met Maven. Zie de [&#x200B; kernmodule van het Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) voor een test van de voorbeeldeenheid voor AEM en begonnen worden.
+Ze worden geïmplementeerd met JUnit en uitgevoerd met Maven. Zie de [&#x200B; kernmodule van het Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) voor een test van de voorbeeldeenheid voor AEM en begonnen worden.
 
 ### Codekwaliteit
 

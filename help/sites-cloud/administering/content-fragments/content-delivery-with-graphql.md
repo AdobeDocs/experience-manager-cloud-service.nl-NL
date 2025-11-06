@@ -115,4 +115,4 @@ Zie [&#x200B; Lerend om GraphQL met AEM te gebruiken - de Inhoud en Vragen van d
 
 ## Zelfstudie - Aan de slag met AEM Headless en GraphQL
 
-Op zoek naar een praktische zelfstudie? Controle uit [&#x200B; Begonnen het Worden met de Hoofdloze AEM en GraphQL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend GraphQL APIs van AEM en verbruikt door een externe app, in een headless scenario van CMS.
+Op zoek naar een praktische zelfstudie? Controle uit [&#x200B; Begonnen het Worden met de Hoofdloze AEM en GraphQL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend GraphQL APIs van AEM en verbruikt door een externe app, in een headless scenario van CMS.

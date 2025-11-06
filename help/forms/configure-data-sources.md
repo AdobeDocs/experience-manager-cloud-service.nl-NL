@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 ![&#x200B; de integratie van Gegevens &#x200B;](do-not-localize/data-integeration.png)
@@ -40,8 +40,8 @@ De integratie van gegevens steunt OAuth2.0 ([&#x200B; Code van de Vergunning &#x
 
 Voordat u relationele databases configureert met gebruik van de [!DNL Experience Manager] webconsoleconfiguratie, moet u:
 
-* [&#x200B; laat geavanceerd voorzien van een netwerk door wolkenmanager API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html) toe, aangezien de havens door gebrek worden onbruikbaar gemaakt.
-* [&#x200B; voeg JDBC bestuurdersgebiedsdelen in Geweven &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies) toe.
+* [&#x200B; laat geavanceerd voorzien van een netwerk door wolkenmanager API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=nl-NL) toe, aangezien de havens door gebrek worden onbruikbaar gemaakt.
+* [&#x200B; voeg JDBC bestuurdersgebiedsdelen in Geweven &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=nl-NL#mysql-driver-dependencies) toe.
 
 
 ### Stappen om een relationele database te configureren
@@ -73,7 +73,7 @@ U kunt relationele databases configureren met [!DNL Experience Manager] Web Cons
 
    >[!NOTE]
    >
-   > Zie [&#x200B; SQL verbindingen gebruikend JDBC DataSourcePool &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) voor meer gedetailleerde informatie.
+   > Zie [&#x200B; SQL verbindingen gebruikend JDBC DataSourcePool &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=nl-NL) voor meer gedetailleerde informatie.
 
 1. Selecteer **[!UICONTROL Save]** om de configuratie op te slaan.
 
@@ -109,7 +109,7 @@ Alle configuraties van de cloudservice in [!DNL Experience Manager] worden gecon
 De map configureren voor configuraties van cloudservices:
 
 1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** .
-   * Zie Browser van de Configuratie [&#x200B; documentatie 0&rbrace; &lbrace;voor meer informatie.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html)
+   * Zie Browser van de Configuratie [&#x200B; documentatie 0&rbrace; &lbrace;voor meer informatie.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=nl-NL)
 1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
    1. Selecteer in **[!UICONTROL Configuration Browser]** de map `global` en selecteer **[!UICONTROL Properties]** .
@@ -288,7 +288,7 @@ Stel de eigenschap `importAllowlistPattern` van de **[!UICONTROL Form Data Model
 }
 ```
 
-Om waarden van een configuratie te plaatsen, [&#x200B; produceer OSGi Configuraties gebruikend AEM SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [&#x200B; stel de configuratie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van Cloud Service op.
+Om waarden van een configuratie te plaatsen, [&#x200B; produceer OSGi Configuraties gebruikend AEM SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [&#x200B; stel de configuratie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL#deployment-process) aan uw instantie van Cloud Service op.
 
 ## OData-services configureren {#config-odata}
 
@@ -320,7 +320,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

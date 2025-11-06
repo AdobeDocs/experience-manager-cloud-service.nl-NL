@@ -56,7 +56,7 @@ Met pagina-eigenschappen kunt u vele aspecten van een pagina beheren, van de tit
 
 ### Branding {#branding}
 
-Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [&#x200B; Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [&#x200B; Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 
 * **Merk Slug**
 
@@ -219,7 +219,7 @@ In deze sectie wordt de miniatuur van de afbeelding voor de pagina geselecteerd 
 
 ## Machtigingen {#permissions}
 
-Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [&#x200B; gesloten gebruikersgroepen (CUGs) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) tot de pagina kunnen toegang hebben en/of wijzigen.
+Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [&#x200B; gesloten gebruikersgroepen (CUGs) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=nl-NL) tot de pagina kunnen toegang hebben en/of wijzigen.
 
 * **voeg Toestemmingen** toe
 * **geeft Gesloten Groep van de Gebruiker uit**

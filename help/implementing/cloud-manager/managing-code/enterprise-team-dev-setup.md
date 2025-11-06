@@ -54,7 +54,7 @@ Voor het instappen van een nieuw project moet in het projectbestand Maven van de
 
 ![&#x200B; diagram van het Werkschema &#x200B;](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-De bewaarplaats van het Git voor elk wordt opstelling gebruikend het [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview) en volgt derhalve de beste praktijken voor vestiging de Projecten van AEM. De enige uitzondering hierop is de Dispatcher-configuratie, die wordt uitgevoerd in de gedeelde Git-opslagplaats, zoals hierboven beschreven.
+De bewaarplaats van het Git voor elk wordt opstelling gebruikend het [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/overview) en volgt derhalve de beste praktijken voor vestiging de Projecten van AEM. De enige uitzondering hierop is de Dispatcher-configuratie, die wordt uitgevoerd in de gedeelde Git-opslagplaats, zoals hierboven beschreven.
 
 Elk team gebruikt een vereenvoudigde Git-workflow met twee vertakkingen + N, volgens het Git-flowmodel:
 
@@ -93,7 +93,7 @@ Deze real-world opstelling kan als blauwdruk worden gebruikt en dan aan de behoe
 
 >[!TIP]
 >
->Zie [&#x200B; het Werk met de Veelvoudige Opslagplaatsen van de Plaats van de it van Source &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) om meer over deze opstelling te leren.
+>Zie [&#x200B; het Werk met de Veelvoudige Opslagplaatsen van de Plaats van de it van Source &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) om meer over deze opstelling te leren.
 
 ### Overwegingen bij de installatie van meerdere teams {#considerations}
 

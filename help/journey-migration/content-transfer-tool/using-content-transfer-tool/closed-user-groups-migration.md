@@ -20,7 +20,7 @@ ht-degree: 0%
 >id="aemcloud_cug_migration"
 >title="Migratie van gesloten gebruikersgroepen"
 >abstract="De migratie van Gesloten Gebruikersgroepen (CUG) vereist momenteel een paar controles en stappen om het na een migratie operationeel te maken."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="Gesloten gebruikersgroepen in AEM"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=nl-NL" text="Gesloten gebruikersgroepen in AEM"
 
 Momenteel, hebben de Gesloten Gebruikersgroepen (CUG) sommige extra stappen nodig om in het bestemmingsmilieu van een migratie functioneel te zijn. Dit document verklaart het scenario, en de stappen die worden vereist om hen te hebben knopen op de voorgenomen manier beschermen.
 
@@ -37,4 +37,4 @@ Het gedrag CUG&#39;s inschakelen voor de instantie Publiceren
 1. De pagina&#39;s die met het beleid van CUGs worden beschermd moeten dan worden gepubliceerd (dat de Publish instantie toelaat en het beleid registreert).
 1. Nadat alle pagina&#39;s zijn gepubliceerd, controleert u de functionaliteit voor elke pagina die met CUG is beveiligd.
 
-Voor extra informatie, zie [&#x200B; Gesloten Gebruikersgroepen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html).
+Voor extra informatie, zie [&#x200B; Gesloten Gebruikersgroepen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=nl-NL).

@@ -96,6 +96,6 @@ Adobe Experience Manager kan zo worden geconfigureerd dat de naverwerkingsworkfl
 >
 >* [Aan de slag met microservices voor assets](asset-microservices-configure-and-use.md)
 >* [Ondersteunde bestandsindelingen](file-format-support.md)
->* [&#x200B; de Verbinding van Activa van Adobe &#x200B;](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [&#x200B; de Verbinding van Activa van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL)
 >* [&#x200B; Apache Oak documentatie op directe binaire toegang &#x200B;](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

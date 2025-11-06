@@ -29,7 +29,7 @@ Bekijk de video Overzicht van de release van augustus 2023 voor een overzicht va
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] {#sites-features}
 
-* De [&#x200B; Console van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) staat nu gebruikers toe om markeringen en onderzoek door markeringen te bekijken die als meta-gegevens op de Fragmenten van de Inhoud worden toegepast. Gebruikers hoeven voor deze functie niet meer over te schakelen op de gebruikersinterface van Assets, waardoor contextomschakeling wordt beperkt en de efficiëntie wordt verbeterd.
+* De [&#x200B; Console van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=nl-NL) staat nu gebruikers toe om markeringen en onderzoek door markeringen te bekijken die als meta-gegevens op de Fragmenten van de Inhoud worden toegepast. Gebruikers hoeven voor deze functie niet meer over te schakelen op de gebruikersinterface van Assets, waardoor contextomschakeling wordt beperkt en de efficiëntie wordt verbeterd.
 
   ![&#x200B; Tags toevoegen in de Console van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments-console-tags.png)
 * De nieuwe Content Fragment Editor is nu beschikbaar in AEM as a Cloud Service. Het stelt inhoudsauteurs in staat productiever te zijn door hun ontwerptaken te stroomlijnen en de noodzaak om tussen verschillende apps te schakelen tijdens het bewerken van inhoud te verminderen.
@@ -135,7 +135,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
 
-Het gebruik [&#x200B; Zwaardeloze Aanpassings Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) om uw ontwikkelaars toe te laten om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking getreden. Met behulp van hoofdloze adaptieve formulieren kunt u:
+Het gebruik [&#x200B; Zwaardeloze Aanpassings Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=nl-NL) om uw ontwikkelaars toe te laten om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking getreden. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
 * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
 * U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen

@@ -68,7 +68,7 @@ Voer de volgende stappen uit om AEM Forms te integreren met de service hCaptcha�
    >[!NOTE]
    > De gebruikers moeten niet [&#x200B; cliënt-zijbevestiging URL van JavaScript &#x200B;](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) en [&#x200B; server-zijbevestiging URL &#x200B;](https://docs.hcaptcha.com/#verify-the-user-response-server-side) wijzigen aangezien zij reeds voor bevestiging hCaptcha® worden voorgevuld.
 
-   Zodra de dienst hCAPTCHA wordt gevormd, is het beschikbaar voor gebruik in een [&#x200B; Aangepaste Vorm die op de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) wordt gebaseerd.
+   Zodra de dienst hCAPTCHA wordt gevormd, is het beschikbaar voor gebruik in een [&#x200B; Aangepaste Vorm die op de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction) wordt gebaseerd.
 
 ## Gebruik hCaptcha® in een adaptieve Forms Core-component {#using-hCaptcha&reg;-core-components}
 

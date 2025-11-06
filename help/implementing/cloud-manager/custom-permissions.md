@@ -110,7 +110,7 @@ U kunt nu gebruikers toewijzen aan het nieuwe productprofiel dat u met aangepast
 
 1. Selecteer **toevoegen Gebruikers** knoop en wijs gebruikers aan uw nieuw productprofiel met douanetoestemmingen toe.
 
-Zie de sectie **gebruikers en gebruikersgroepen aan een productprofiel** van het document [&#x200B; toevoegen productprofielen voor ondernemingsgebruikers &#x200B;](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) voor meer details op hoe te om Admin Console te gebruiken.
+Zie de sectie **gebruikers en gebruikersgroepen aan een productprofiel** van het document [&#x200B; toevoegen productprofielen voor ondernemingsgebruikers &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html) voor meer details op hoe te om Admin Console te gebruiken.
 
 ## Configureerbare machtigingen {#configurable-permissions}
 

@@ -25,7 +25,7 @@ Define what is not included
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=en) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 [!DNL Adobe Experience Manager] biedt verschillende mogelijkheden om elementen te beheren. Met de mediabibliotheek kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken uitvoeren voor middelenbeheer op de middelen.
@@ -116,5 +116,5 @@ U kunt geen slimme tags, [!DNL Asset] koppeling, [!DNL Asset] kiezer, bulksgewij
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; DAM eigenschappen in  [!DNL Experience Manager Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
->* [[!DNL Experience Manager]  als a [!DNL Cloud Service]  productbeschrijving &#x200B;](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [&#x200B; DAM eigenschappen in  [!DNL Experience Manager Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=nl-NL)
+>* [[!DNL Experience Manager]  als a [!DNL Cloud Service]  productbeschrijving &#x200B;](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

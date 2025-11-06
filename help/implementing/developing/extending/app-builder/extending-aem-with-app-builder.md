@@ -27,7 +27,7 @@ App Builder biedt klanten de mogelijkheid om Adobe Experience Manager in verschi
 
 >[!NOTE]
 >
-> Voor AEM 6.5 klanten die App Builder willen gebruiken, zie [&#x200B; Uitbreidend Adobe Experience Manager 6.5 gebruikend Adobe Developer App Builder &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> Voor AEM 6.5 klanten die App Builder willen gebruiken, zie [&#x200B; Uitbreidend Adobe Experience Manager 6.5 gebruikend Adobe Developer App Builder &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=nl-NL).
 
 ## Architectuur {#architecture}
 

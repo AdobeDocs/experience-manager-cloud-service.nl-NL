@@ -69,7 +69,7 @@ AEM as a Cloud Service verstrekt het [&#x200B; Hulpmiddel van de Prestaties van 
 * Het toont reeds uitgevoerde vragen met hun relevante prestatieskenmerken en het vraagplan.
 * Het staat het uitvoeren van ad hoc vragen op diverse niveaus toe, die van enkel het tonen van het vraagplan tot het uitvoeren van de volledige vraag beginnen.
 
-Het hulpmiddel van de Prestaties van de Vraag is bereikbaar via [&#x200B; Developer Console in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries). AEM as a Cloud Service AEM het Hulpmiddel van de Prestaties van de Vraag levert meer informatie over de details van de vraaguitvoering over 6.x versie.
+Het hulpmiddel van de Prestaties van de Vraag is bereikbaar via [&#x200B; Developer Console in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=nl-NL#queries). AEM as a Cloud Service AEM het Hulpmiddel van de Prestaties van de Vraag levert meer informatie over de details van de vraaguitvoering over 6.x versie.
 
 Dit diagram illustreert de algemene stroom om het Hulpmiddel van de Prestaties van de Vraag te gebruiken om vragen te optimaliseren.
 
@@ -111,7 +111,7 @@ Zie de sectie [&#x200B; Vragen met grote resultaatreeksen &#x200B;](#queries-wit
 
 ## Query-prestaties {#query-performance-tool}
 
-Het Hulpmiddel van de Prestaties van de Vraag (dat bij `/libs/granite/operations/content/diagnosistools/queryPerformance.html` wordt gevestigd en beschikbaar via [&#x200B; Developer Console in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)) verstrekt -
+Het Hulpmiddel van de Prestaties van de Vraag (dat bij `/libs/granite/operations/content/diagnosistools/queryPerformance.html` wordt gevestigd en beschikbaar via [&#x200B; Developer Console in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=nl-NL#queries)) verstrekt -
 
 * Een lijst met &#39;Trage query&#39;s&#39;; wordt momenteel gedefinieerd als het lezen/scannen van meer dan 5000 rijen.
 * Een lijst met &#39;Populaire vragen&#39;
@@ -262,7 +262,7 @@ Als u de prestaties van deze tweede query wilt optimaliseren, maakt u een aangep
 
 ## JCR-query - Cheat Sheet {#jcr-query-cheatsheet}
 
-Om de verwezenlijking van efficiënte vragen JCR en indexdefinities te steunen, is het [&#x200B; JCR- Cheat Sheet van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) beschikbaar voor download en gebruik als verwijzing tijdens ontwikkeling.
+Om de verwezenlijking van efficiënte vragen JCR en indexdefinities te steunen, is het [&#x200B; JCR- Cheat Sheet van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=nl-NL#jcrquerycheatsheet) beschikbaar voor download en gebruik als verwijzing tijdens ontwikkeling.
 
 Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van Oak te bouwen of aan te passen. De inhoud van dit controleblad is van toepassing op AEM as a Cloud Service en AEM 6.5.
 

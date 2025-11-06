@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Referentiehandleiding voor componenten {#components-reference-guide}
 
-Componenten vormen de kern van het opbouwen van een ervaring in AEM. De [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) maken het eenvoudig om met een hulpmiddelreeks kant van kant-en-klare, robuuste componenten te beginnen. Het [&#x200B; WKND Leerprogramma &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) neemt de ontwikkelaar door hoe te om deze hulpmiddelen te gebruiken en hoe te om douanecomponenten te bouwen om een plaats van AEM tot stand te brengen.
+Componenten vormen de kern van het opbouwen van een ervaring in AEM. De [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) maken het eenvoudig om met een hulpmiddelreeks kant van kant-en-klare, robuuste componenten te beginnen. Het [&#x200B; WKND Leerprogramma &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) neemt de ontwikkelaar door hoe te om deze hulpmiddelen te gebruiken en hoe te om douanecomponenten te bouwen om een plaats van AEM tot stand te brengen.
 
 >[!TIP]
 >
->Alvorens verwijzingen dit document, zorg ervoor u de [&#x200B; Zelfstudie van WKND &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) hebt voltooid en zo vertrouwd met de [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) bent.
+>Alvorens verwijzingen dit document, zorg ervoor u de [&#x200B; Zelfstudie van WKND &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) hebt voltooid en zo vertrouwd met de [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) bent.
 
 Omdat de WKND-zelfstudie betrekking heeft op de meeste gevallen van gebruik, is dit document alleen bedoeld als aanvulling op deze bronnen. Het geeft diepgaande technische details over hoe de componenten in AEM gestructureerd en gevormd zijn en is niet bedoeld als begonnen gids.
 
@@ -39,11 +39,11 @@ Voordat u begint met het configureren of coderen van uw component, moet u het vo
 
 ### Bestaande componenten opnieuw gebruiken {#reusing-components}
 
-Voordat u tijd investeert in het maken van een geheel nieuwe component, kunt u het aanpassen of uitbreiden van bestaande componenten overwegen. [&#x200B; de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieden een reeks van flexibele, robuuste, en goed-geteste productie-klaar componenten aan.
+Voordat u tijd investeert in het maken van een geheel nieuwe component, kunt u het aanpassen of uitbreiden van bestaande componenten overwegen. [&#x200B; de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) bieden een reeks van flexibele, robuuste, en goed-geteste productie-klaar componenten aan.
 
 #### Uitbreiding van kerncomponenten {#extending-core-components}
 
-De Componenten van de Kern bieden ook [&#x200B; duidelijke aanpassingspatronen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) aan die u kunt gebruiken om hen aan de behoeften van uw eigen project aan te passen.
+De Componenten van de Kern bieden ook [&#x200B; duidelijke aanpassingspatronen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=nl-NL) aan die u kunt gebruiken om hen aan de behoeften van uw eigen project aan te passen.
 
 #### Onderdelen bedekken {#overlying-components}
 
@@ -61,12 +61,12 @@ Uw component wordt teruggegeven met [&#x200B; HTML &#x200B;](https://www.w3schoo
 
 Het wordt aanbevolen de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
-Deze filosofie wordt gesteund door [&#x200B; HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), een het malplaatjetaal die opzettelijk wordt beperkt om een echte programmeertaal te verzekeren wordt gebruikt om de onderliggende bedrijfslogica te bepalen. Dit mechanisme benadrukt de code die voor een bepaalde mening wordt geroepen en, indien nodig, staat specifieke logica voor verschillende meningen van de zelfde component toe.
+Deze filosofie wordt gesteund door [&#x200B; HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL), een het malplaatjetaal die opzettelijk wordt beperkt om een echte programmeertaal te verzekeren wordt gebruikt om de onderliggende bedrijfslogica te bepalen. Dit mechanisme benadrukt de code die voor een bepaalde mening wordt geroepen en, indien nodig, staat specifieke logica voor verschillende meningen van de zelfde component toe.
 
 Deze (facultatieve) logica kan op verschillende manieren worden uitgevoerd en wordt aangehaald van HTML met specifieke bevelen:
 
-* Gebruikend Java - [&#x200B; HTML Java gebruiken-API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) laat een HTML- dossier toe om helpermethodes in een klasse van douaneJava toegang te hebben. Hiermee kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
-* Gebruikend JavaScript - [&#x200B; gebruiken-API van HTML JavaScript &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) laat een HTML- dossier toe om tot helpercode toegang te hebben die in JavaScript wordt geschreven. Hiermee kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
+* Gebruikend Java - [&#x200B; HTML Java gebruiken-API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=nl-NL) laat een HTML- dossier toe om helpermethodes in een klasse van douaneJava toegang te hebben. Hiermee kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
+* Gebruikend JavaScript - [&#x200B; gebruiken-API van HTML JavaScript &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=nl-NL) laat een HTML- dossier toe om tot helpercode toegang te hebben die in JavaScript wordt geschreven. Hiermee kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 * Het gebruik van Client-Side Libraries - Moderne websites vertrouwen sterk op client-side verwerking door complexe JavaScript- en CSS-code. Zie het document [&#x200B; Gebruikend cliënt-Kant Bibliotheken op AEM as a Cloud Service &#x200B;](/help/implementing/developing/introduction/clientlibs.md) voor meer informatie.
 
 ## Componentstructuur {#structure}

@@ -22,7 +22,7 @@ Met dit document krijgt u meer inzicht in het maken en beheren van kanalen voor 
 
 * begrijpen hoe kanalen naar Screens Content Provider kunnen worden gemaakt
 * inhoud in uw kanalen beheren en bewerken
-* beheer taak en activeringsprogramma voor uw kanalen in [&#x200B; de Dienstverlener van Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
+* beheer taak en activeringsprogramma voor uw kanalen in [&#x200B; de Dienstverlener van Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=nl-NL)
 
 ## Stappen voor het maken van een nieuw sequentiekanaal in Screens as a Cloud Service {#create-new-channel}
 

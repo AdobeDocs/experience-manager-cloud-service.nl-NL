@@ -82,4 +82,4 @@ Terwijl het wordt geadviseerd dat u zich op het volgende deel van de hoofdloze v
 
 * [&#x200B; MSM en Vertaling &#x200B;](/help/sites-cloud/administering/msm-and-translation.md) - de details van de Manager van de Multisite van AEM en hoe het met zijn vertaalhulpmiddelen werkt
 * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
-* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)

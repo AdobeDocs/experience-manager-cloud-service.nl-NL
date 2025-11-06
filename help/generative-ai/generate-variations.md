@@ -163,7 +163,7 @@ Selecteer een variatie, die door **wordt gevolgd produceert Beeld**, om **Tekst 
 
 U kunt verdere wijzigingen aanbrengen:
 
-* [&#x200B; schrijft uw eigen herinnering in Adobe Express &#x200B;](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) door te beschrijven wat u zou willen zien,
+* [&#x200B; schrijft uw eigen herinnering in Adobe Express &#x200B;](https://helpx.adobe.com/nl/firefly/using/tips-and-tricks.html) door te beschrijven wat u zou willen zien,
 * Pas de **Tekst aan beeld** opties aan,
 * dan **verfrist zich** de geproduceerde beelden.
 
@@ -182,7 +182,7 @@ Hier kunt u de muis boven de afbeelding houden om actiepunten weer te geven voor
 
 >[!NOTE]
 >
->[&#x200B; geloofsbrieven van de Inhoud &#x200B;](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) worden niet voortgeduurd wanneer gebruikt in op document-gebaseerd schrijven.
+>[&#x200B; geloofsbrieven van de Inhoud &#x200B;](https://helpx.adobe.com/nl/creative-cloud/help/content-credentials.html) worden niet voortgeduurd wanneer gebruikt in op document-gebaseerd schrijven.
 
 ### Inhoud gebruiken {#use-content}
 
@@ -355,13 +355,13 @@ Het selecteren van een **Adobe Target** publiek in de herinnering staat voor de 
 
    >[!NOTE]
    >
-   >Om een **Adobe Target** publiek te gebruiken moet het beschrijvingsgebied worden ingevuld. Als dat niet het geval is, wordt in de vervolgkeuzelijst aangegeven dat het publiek niet beschikbaar is. Om een beschrijving toe te voegen, ga naar Doel en [&#x200B; voeg een publieksbeschrijving &#x200B;](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) toe.
+   >Om een **Adobe Target** publiek te gebruiken moet het beschrijvingsgebied worden ingevuld. Als dat niet het geval is, wordt in de vervolgkeuzelijst aangegeven dat het publiek niet beschikbaar is. Om een beschrijving toe te voegen, ga naar Doel en [&#x200B; voeg een publieksbeschrijving &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/audiences/create-audiences) toe.
 
    ![&#x200B; produceer Variaties - publieksbron - Adobe Target &#x200B;](assets/generate-variations-audiences-adobe-target.png)
 
 #### Adobe Target-publiek toevoegen {#add-adobe-target-audience}
 
-Zie [&#x200B; publiek &#x200B;](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) creëren om een publiek in Adobe Target tot stand te brengen.
+Zie [&#x200B; publiek &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/audiences/create-audiences) creëren om een publiek in Adobe Target tot stand te brengen.
 
 ### Publiek - CSV-bestand {#audience-csv-file}
 
@@ -412,11 +412,11 @@ Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
 
   >[!NOTE]
   >
-  >Zie [&#x200B; Adobe Experience Manager: Cloud Service | Productbeschrijving &#x200B;](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
+  >Zie [&#x200B; Adobe Experience Manager: Cloud Service | Productbeschrijving &#x200B;](https://helpx.adobe.com/nl/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
 
 * Adobe Express
 
-  Het gebruik van de de generatie van het beeld wordt behandeld door de aanspraken van Adobe Express en [&#x200B; generatieve kredieten &#x200B;](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+  Het gebruik van de de generatie van het beeld wordt behandeld door de aanspraken van Adobe Express en [&#x200B; generatieve kredieten &#x200B;](https://helpx.adobe.com/nl/firefly/using/generative-credits-faq.html).
 
 ## Toegang genereert variaties {#access-generate-variations}
 

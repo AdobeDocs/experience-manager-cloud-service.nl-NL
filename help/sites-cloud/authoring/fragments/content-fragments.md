@@ -39,7 +39,7 @@ De fragmenten van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Voor meer informatie, zie [&#x200B; Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>Voor meer informatie, zie [&#x200B; Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=nl-NL#content-fragments).
 
 Met de inhoudsfragmenten kunt u:
 
@@ -89,7 +89,7 @@ Open de dialoog van de Configuratie van het fragment **&#x200B;**&#x200B;om het 
 
 >[!NOTE]
 >
->Zie ook {de Componenten van 0} Kern, de Component van het Fragment van de Inhoud [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+>Zie ook {de Componenten van 0} Kern, de Component van het Fragment van de Inhoud [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL)
 
 In het juiste configuratiedialoogvenster kunt u de beschikbare parameters selecteren, waaronder:
 

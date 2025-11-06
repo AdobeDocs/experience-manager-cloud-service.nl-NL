@@ -46,7 +46,7 @@ Enkele belangrijkste elementen van Dynamische Media omvatten het volgende:
 * **de bibliotheek van de kijker van de Ervaring:** pas en merk ervaringskijkers voor beelden en video&#39;s aan. Deze viewers integreren naadloos in uw digitale ervaringen.
 * **Ontkomende formaatsteun:** De Dynamische Media laat de levering van 3D en panoramische ervaringen toe.
 
-Aangezien u de [&#x200B; Dynamische Reis van Media &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1) verkent, die de geconsolideerde lijst van beste praktijken hieronder herzien kan u helpen het grootste deel van zijn mogelijkheden maken. Pas deze best practices voor dynamische media aan aan uw specifieke context- en projectvereisten aan, zodat u uw ervaringen op verschillende kanalen en apparaten kunt optimaliseren.
+Aangezien u de [&#x200B; Dynamische Reis van Media &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1) verkent, die de geconsolideerde lijst van beste praktijken hieronder herzien kan u helpen het grootste deel van zijn mogelijkheden maken. Pas deze best practices voor dynamische media aan aan uw specifieke context- en projectvereisten aan, zodat u uw ervaringen op verschillende kanalen en apparaten kunt optimaliseren.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -94,9 +94,9 @@ Gebruik de component Afbeelding v3 voor slim uitsnijden om de presentatie van af
 Neem alleen het JavaScript-bestand van de primaire viewer op uw pagina. Verwijs niet naar extra JavaScript-bestanden die de runtimelogica van de viewer kan downloaden. Maak met name geen directe koppeling naar de HTML5 SDK `Utils.js` -bibliotheek vanuit het `/s7viewers` -contextpad (ook wel SDK-include-bestanden genoemd). De logica van de viewer beheert de locatie van `Utils.js` of soortgelijke runtimeviewerbibliotheken, die tussen releases kunnen worden gewijzigd. Adobe houdt geen oudere versies van secundaire viewer-include-bestanden op de server bij, zodat het rechtstreeks verwijzen naar deze versies de viewerfunctionaliteit in toekomstige updates kan onderbreken.
 * **Inbeddende Richtlijnen:**
 Gebruik de documentatie voor het insluiten van richtlijnen die specifiek zijn voor elke kijker.
-Meer informatie? Ga naar [&#x200B; Kijkers voor AEM Assets &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+Meer informatie? Ga naar [&#x200B; Kijkers voor AEM Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
 * **Zelfstudie en Voorbeelden van SDK:**
-Herzie het [&#x200B; Zelfstudie van SDK van de Kijker &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) en [&#x200B; HTML5 de toepassingsvoorbeelden van SDK &#x200B;](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) voor een grondig inzicht in de component APIs van SDK.
+Herzie het [&#x200B; Zelfstudie van SDK van de Kijker &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/c-tutorial) en [&#x200B; HTML5 de toepassingsvoorbeelden van SDK &#x200B;](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) voor een grondig inzicht in de component APIs van SDK.
 
 
 ## Elementen voorbereiden voor levering
@@ -132,7 +132,7 @@ Meer informatie? Ga naar [&#x200B; Beste praktijken voor het optimaliseren van d
 
 Omdat de perceptie van beeldkwaliteit van persoon tot persoon verschilt, is soms een systematische benadering van experimenten essentieel voor het bereiken van gewenste resultaten. Adobe Experience Manager ondersteunt dit proces met meer dan 100 opdrachten voor dynamische media voor het verbeteren van afbeeldingen.
 
-Meer informatie? Controle [&#x200B; Dynamische Momentopname van Media &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuten, 17 seconden).
+Meer informatie? Controle [&#x200B; Dynamische Momentopname van Media &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuten, 17 seconden).
 
 Als u de invloed van deze verschillende opdrachten op de afbeeldingskwaliteit wilt beoordelen, kunt u een afbeelding uploaden naar Dynamische media, de interface van het gereedschap gebruiken bij de opgegeven URL en de opdrachten toepassen die u wilt uitproberen.
 
@@ -154,7 +154,7 @@ Smart Crop is een functie in Dynamic Media die gebruikmaakt van Adobe Sensei, Ad
 
 U kunt het beste een afbeeldingsprofiel maken met Slim uitsnijden. In het profiel kunt u verschillende schermgrootten definiëren en Adobe Sensei de rest laten doen, zodat uw afbeeldingen en video&#39;s altijd zijn geoptimaliseerd voor het apparaat van de viewer.
 
-Meer informatie? Controle [&#x200B; Gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuten, 35 seconden) en [&#x200B; Gebruikend Dynamische Slimme Uitsnede van Media voor Video &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minuten, 22 seconden).
+Meer informatie? Controle [&#x200B; Gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuten, 35 seconden) en [&#x200B; Gebruikend Dynamische Slimme Uitsnede van Media voor Video &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minuten, 22 seconden).
 
 ### SEO-waarderingen verbeteren
 
@@ -182,7 +182,7 @@ Leer hoe u URL&#39;s voorwaardelijk kunt transformeren op basis van verschillend
 Meer informatie? Ga naar [&#x200B; regelreeksen van het Gebruik om URLs &#x200B;](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md) om te zetten.
 * **Slimme Beeldvorming en Slim Gewas:**
 Gebruik de functies Slim beeld en Slim uitsnijden in dynamische media voor geoptimaliseerde en responsieve afbeeldingen. Hierdoor worden niet alleen de laadtijden van de pagina verbeterd, maar wordt ook een positieve bijdrage geleverd aan SEO-waarderingen.
-Meer informatie? Ga naar [&#x200B; Slimme Beeldvorming &#x200B;](/help/assets/dynamic-media/imaging-faq.md), of bekijk [&#x200B; Gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuten, 35 seconden).
+Meer informatie? Ga naar [&#x200B; Slimme Beeldvorming &#x200B;](/help/assets/dynamic-media/imaging-faq.md), of bekijk [&#x200B; Gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuten, 35 seconden).
 
 Houd er rekening mee dat deze aanbevolen procedures goed overeenkomen met de SEO-tips voor Google-afbeeldingen. Dergelijke praktijken benadrukken het belang om context en helderheid aan onderzoeksmotoren door juiste noemende overeenkomsten, gestructureerde gegevens, en geoptimaliseerde beeldlevering te verstrekken.
 
@@ -224,7 +224,7 @@ Als u een logo of pictogram op een bestaande afbeelding wilt plaatsen, biedt Dyn
 | **uploadt en publiceert het embleem of pictogrambeeld** | Vervolgens uploadt en publiceert u de afbeelding die u over de basisafbeelding wilt plaatsen. Deze afbeelding moet een transparant PNG-bestand zijn met het logo of pictogram dat u wilt bedekken.<br> hier is het transparante beeld PNG van een stervoorwerp met transparantiegevolgen die zullen worden bovenop gelegd:<br>[&#x200B; https://s7g2.scene7.com/is/image/genaibeta/decorate-star &#x200B;](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **pas Dynamische Media URL** toe | Maak nu een URL voor dynamische media waarin de basisafbeelding en het logo of de pictogramafbeelding worden gecombineerd. U kunt URL-opdrachten gebruiken om dit effect te bereiken.<br> de structuur URL kijkt iets als dit:<br>[&#x200B; https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png &#x200B;](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png) <br> waar de activa<ul><li> `hotspotRetailBaseImage` is de basisafbeelding.</li><li> `starxp` is de afbeelding van het logo/pictogram.</li><li> `layer=1` geeft aan dat het logo of pictogram in een laag over de basisafbeelding moet worden geplaatst.</li><li> `scale=1.25` past de grootte van het logo/pictogram aan.</li><li> `posN=0.33,-.25` bepaalt de positie van het logo/pictogram ten opzichte van de basisafbeelding.</li><li> `fmt=png` zorgt ervoor dat de uitvoer de PNG-indeling heeft.</li></ul> |
 
-Meer informatie? Ga naar [&#x200B; src &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) voor meer details op het `src` bevel en andere Dynamische bevelen van Media URL.
+Meer informatie? Ga naar [&#x200B; src &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) voor meer details op het `src` bevel en andere Dynamische bevelen van Media URL.
 
 
 #### Promotietekst overschrijven
@@ -276,7 +276,7 @@ Voortgekomen uit de oorspronkelijke afbeelding, waarbij de ruimte wordt benadruk
   [&#x200B; https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 Voel u vrij om deze variaties voor uw specifieke behoeften te onderzoeken.
-Wilt u meer weten over de opdrachten in een URL? Ga naar [&#x200B; verwijzing van het Bevel &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+Wilt u meer weten over de opdrachten in een URL? Ga naar [&#x200B; verwijzing van het Bevel &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
 ### GIF-afbeeldingen leveren
 
@@ -320,7 +320,7 @@ Gebruik de opgegeven URL om rechtstreeks te koppelen aan de video. Hyperlink het
    * **bed de video in:**
 Kopieer de ingesloten code en plak deze in de HTML van de webpagina waar u de video wilt weergeven. Hierdoor kan de video rechtstreeks op uw site worden afgespeeld.
 
-Meer informatie? Ga naar [&#x200B; Video &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
+Meer informatie? Ga naar [&#x200B; Video &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
 ### Video&#39;s configureren voor optimale kwaliteit en betrokkenheid
 

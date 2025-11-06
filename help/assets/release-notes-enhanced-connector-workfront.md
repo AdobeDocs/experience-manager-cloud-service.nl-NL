@@ -29,7 +29,7 @@ De meest recente versie van [!DNL Workfront for Experience Manager enhanced conn
 
 >[!NOTE]
 >
->AEM 6.4 heeft het einde bereikt van de uitgebreide steun. Zie onze [&#x200B; technische steunperiodes &#x200B;](https://helpx.adobe.com/support/programs/eol-matrix.html). Vind de gesteunde versies [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/?lang=en).
+>AEM 6.4 heeft het einde bereikt van de uitgebreide steun. Zie onze [&#x200B; technische steunperiodes &#x200B;](https://helpx.adobe.com/nl/support/programs/eol-matrix.html). Vind de gesteunde versies [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/?lang=nl-NL).
 
 >[!IMPORTANT]
 >
@@ -65,9 +65,9 @@ De meest recente versie van [!DNL Workfront for Experience Manager enhanced conn
 
 ### Release januari 2024 {#january-2024-release}
 
-* In de [!DNL Workfront] -configuratie in [!DNL CRX DE] wordt de `project ID` momenteel niet opgeslagen. Dit leidt tot fouten bij het toepassen van alleen-lezen bevoegdheden. Leer meer over hoe te [&#x200B; toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders) vormen.
+* In de [!DNL Workfront] -configuratie in [!DNL CRX DE] wordt de `project ID` momenteel niet opgeslagen. Dit leidt tot fouten bij het toepassen van alleen-lezen bevoegdheden. Leer meer over hoe te [&#x200B; toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=nl-NL#linked-folders) vormen.
 
-* Geen openbare documentatie over hoe te om douanebezit aan uit de definitie van de kaderindex toe te voegen. Leer meer over [&#x200B; toevoegend douanebezit &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+* Geen openbare documentatie over hoe te om douanebezit aan uit de definitie van de kaderindex toe te voegen. Leer meer over [&#x200B; toevoegend douanebezit &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=nl-NL#metadata-schema-mapping).
 
 * Het verwijderen van verbindingsconfiguraties op de verbeterde connector heeft een aanzienlijke invloed op gebeurtenisabonnementen en andere opgeslagen configuraties, waardoor deze naar een oude URL verwijzen.
 
@@ -270,4 +270,4 @@ De meest recente versie van [!DNL Workfront for Experience Manager enhanced conn
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; integreer  [!DNL Workfront for Experience Manager enhanced connector]  met Experience Manager 6.5 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
+>* [&#x200B; integreer  [!DNL Workfront for Experience Manager enhanced connector]  met Experience Manager 6.5 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=nl-NL)

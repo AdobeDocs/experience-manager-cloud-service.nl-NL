@@ -35,4 +35,4 @@ Voor nadere informatie:
 * De AEM App Builder
 
    * [AEM uitbreiden met de Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
-   * [&#x200B; de rekbaarheid van UI van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)
+   * [&#x200B; de rekbaarheid van UI van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)

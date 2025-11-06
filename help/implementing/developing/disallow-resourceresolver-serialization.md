@@ -43,7 +43,7 @@ Dit logbericht betekent dat tijdens het proces van het serialiseren van `/conten
 
 >[!NOTE]
 >
->{de Componenten van de Kern van 0} AEM [&#x200B; zijn bevestigd om niet door dit probleem worden beïnvloed.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction)
+>{de Componenten van de Kern van 0} AEM [&#x200B; zijn bevestigd om niet door dit probleem worden beïnvloed.](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/introduction)
 
 ## Aangevraagde actie {#requested-action}
 

@@ -14,19 +14,19 @@ ht-degree: 2%
 
 # Inhoudsfragmenten met Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}
 
-[&#x200B; Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) helpt u verbonden, contextafhankelijke, en gepersonaliseerde ervaringen aan uw klanten leveren. Door Adobe Experience Manager (AEM) as a Cloud Service te integreren met Adobe Journey Optimizer (AJO), kunt u AEM-inhoud hergebruiken in uw inkomende AJO-kanalen en in uw uitgaande AJO-kanalen, zoals web, SMS, e-mail en andere kanalen.
+[&#x200B; Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/get-started/get-started) helpt u verbonden, contextafhankelijke, en gepersonaliseerde ervaringen aan uw klanten leveren. Door Adobe Experience Manager (AEM) as a Cloud Service te integreren met Adobe Journey Optimizer (AJO), kunt u AEM-inhoud hergebruiken in uw inkomende AJO-kanalen en in uw uitgaande AJO-kanalen, zoals web, SMS, e-mail en andere kanalen.
 
 U kunt bijvoorbeeld:
 
-* neem naadloos uw [&#x200B; Fragmenten van de Inhoud van AEM &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) in uw [&#x200B; e-mailinhoud van Journey Optimizer &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-landing-page) op
+* neem naadloos uw [&#x200B; Fragmenten van de Inhoud van AEM &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) in uw [&#x200B; e-mailinhoud van Journey Optimizer &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/channels/email/email-landing-page) op
 * rechtstreeks vanuit AEM een voorbeeld van de AJO-ervaring bekijken
 
 De verbinding tussen Content Fragments en AJO vereenvoudigt het proces van toegang tot en hefboomwerking van de inhoud van AEM, toelatend de verwezenlijking van gepersonaliseerde en dynamische campagnes en reizen.
 
 Voor meer informatie start u met de documentatie van AJO:
 
-* [&#x200B; Gebruikend Inhoudsfragmenten in AJO &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
-* [&#x200B; de Aanbiedingen van AJO van de Integratie met het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
+* [&#x200B; Gebruikend Inhoudsfragmenten in AJO &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html?lang=nl-NL#integrations)
+* [&#x200B; de Aanbiedingen van AJO van de Integratie met het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
 ## Dispatcher-configuratie {#dispatcher-configuration}
 

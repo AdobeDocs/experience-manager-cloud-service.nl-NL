@@ -59,7 +59,7 @@ Als een API door AEM wordt verstrekt, verkies het over Sling, JCR, en OSGi. Als 
 
 >[!TIP]
 >
->Voor details van deze richtlijnen, zie het document [&#x200B; de Beste praktijken van Java API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html) begrijpen.
+>Voor details van deze richtlijnen, zie het document [&#x200B; de Beste praktijken van Java API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=nl-NL) begrijpen.
 
 ## AEM Delivery and Content Management Services en API&#39;s {#delivery-apis}
 
@@ -67,7 +67,7 @@ AEM biedt aanpasbare componenten en leveringsopties voor inhoud.
 
 | Functie | Beschrijving |
 |---|---|
-| [&#x200B; de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | De gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken |
+| [&#x200B; de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) | De gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken |
 | [&#x200B; JSON Exporter &#x200B;](/help/implementing/developing/components/json-exporter.md) | De inhoud van AEM-pagina&#39;s afleveren in JSON-gegevensmodelindeling |
 | [&#x200B; toelatend de Uitvoer JSON voor een Component &#x200B;](/help/implementing/developing/components/enabling-json-exporter.md) | JSON-export van componentinhoud genereren op basis van een modellerframework |
 | [&#x200B; het Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud &#x200B;](/help/headless/content-fragment-openapis.md) | Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s |
@@ -76,7 +76,7 @@ AEM biedt aanpasbare componenten en leveringsopties voor inhoud.
 |  |  |
 | [&#x200B; Assets API &#x200B;](/help/assets/mac-api-assets.md) | Hiermee kunt u CRUD-bewerkingen (read-read-update-delete) maken voor elementen, waaronder binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie AEM Assets HTTP API |
 | [&#x200B; de Fragmenten van de Inhoud HTTP API &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md) | Inhoud rechtstreeks benaderen via de HTTP-API via CRUD-bewerkingen |
-| [&#x200B; de Fragmenten van de Inhoud Assets HTTP API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Exacte indeling van ondersteunde HTTP-elementaanvragen |
+| [&#x200B; de Fragmenten van de Inhoud Assets HTTP API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=nl-NL) | Exacte indeling van ondersteunde HTTP-elementaanvragen |
 
 >[!NOTE]
 >

@@ -35,7 +35,7 @@ De gebieden moeten specifiek worden gevormd als om het even welke verandering wo
 
 >[!TIP]
 >
->Zie het [&#x200B; Uitbreiden van de zelfstudie van de Eigenschappen van de Pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) voor een gids aan het aanpassen van paginaeigenschappen.
+>Zie het [&#x200B; Uitbreiden van de zelfstudie van de Eigenschappen van de Pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=nl-NL) voor een gids aan het aanpassen van paginaeigenschappen.
 
 ## De pagina-eigenschappen configureren {#configuring-your-page-properties}
 

@@ -17,7 +17,7 @@ ht-degree: 8%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 In dit artikel wordt beschreven hoe u elementen in [!DNL Adobe Experience Manager Assets] kunt beheren en bewerken. Zie [!DNL Content Fragments] elementen voor informatie over het beheren van [[!DNL Content Fragments]](content-fragments/content-fragments.md) .
@@ -657,7 +657,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Om meer te weten, zie hoe te [&#x200B; activa doorbladeren DAM gebruikend Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [&#x200B; hoe te om de Verbinding van Activa van Adobe te gebruiken &#x200B;](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Om meer te weten, zie hoe te [&#x200B; activa doorbladeren DAM gebruikend Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#browse-search-preview-assets) en [&#x200B; hoe te om de Verbinding van Activa van Adobe te gebruiken &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **zie ook**
 
