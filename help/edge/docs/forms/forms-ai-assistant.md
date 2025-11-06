@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -46,14 +46,14 @@ U hebt toegang tot de AI Assistant vanaf drie verschillende locaties in AEM Form
    - Zoeken naar het AI-assistent-pictogram links van de interface
    - Klik op het pictogram om het deelvenster AI Assistant te openen
 
-   ![&#x200B; AI Hulp pictogram* &#x200B;](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
+   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
 
 2. **de AanpassingsRedacteur van Forms**
    - Ga naar: Adobe Experience Manager > Forms > Forms &amp; Documents
    - Een formulier selecteren en openen om te bewerken
    - Klik op het pictogram AI Assistant in de editor-interface
 
-   ![&#x200B; AI Hulp pictogram* &#x200B;](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
+   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
 3. **Universele Redacteur**
 
@@ -170,9 +170,11 @@ Hier zijn echte voorbeelden van wat u met eenvoudige, natuurlijke taal kunt verw
 "Update the layout to match the attached wireframe"
 ```
 
-### Indiening en integratie
+<!-- 
 
-**Basisvoorlegging:**
+### Submission and Integration
+
+**Basic submission:**
 
 ```
 "Send form data to our email"
@@ -180,13 +182,15 @@ Hier zijn echte voorbeelden van wat u met eenvoudige, natuurlijke taal kunt verw
 "Redirect to a thank you page"
 ```
 
-**Geavanceerde integratie:**
+**Advanced integration:**
 
 ```
 "Send form submissions to hr@company.com and create a case in our CRM system"
 "Submit data to our REST API endpoint and trigger the new customer workflow"
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
+
+-->
 
 ## Werken met bijlagen
 
@@ -281,8 +285,11 @@ Typ `/` om de beschikbare sneltoetsen weer te geven:
 | `/update-field` | Veldeigenschappen wijzigen | `/update-field @email to be required` |
 | `/create-rule` | Dynamisch gedrag toevoegen | `/create-rule show @spouse if married` |
 | `/create-panel` | Veldcontainers toevoegen | `/create-panel Personal Information` |
-| `/configure-submit` | Formulierverzending instellen | `/configure-submit to email support` |
 | `/help` | Hulp vragen | `/help multi-step forms` |
+
+<!-- 
+| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
+-->
 
 ### Veldverwijzingssyntaxis
 
