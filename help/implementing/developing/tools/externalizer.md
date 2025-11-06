@@ -3,8 +3,8 @@ title: URL's extern maken
 description: ExternalAlizer is de dienst OSGi die u programmatically een middelweg in een externe en absolute URL laat omzetten.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -17,7 +17,7 @@ In AEM, is **externalizer** de dienst OSGi die u programmatically een middelweg 
 
 Omdat een instantie van AEM as a Cloud Service zijn extern zichtbare URL niet kan kennen en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
-Dit artikel verklaart hoe te om de dienst te vormen Externalzer en hoe te om het te gebruiken. Voor technische details van de dienst, zie [&#x200B; JavaDocs &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+Dit artikel verklaart hoe te om de dienst te vormen Externalzer en hoe te om het te gebruiken. Voor technische details van de dienst, zie [ JavaDocs ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Standaardgedrag van Externalzer en Hoe te om met voeten te treden {#default-behavior}
 
@@ -54,7 +54,7 @@ De dienst ExternalAlizer laat u centraal het domein bepalen dat aan programmatic
 
 >[!NOTE]
 >
->Zoals wanneer het toepassen van om het even welke [&#x200B; configuraties OSGi voor AEM as a Cloud Service &#x200B;](/help/implementing/deploying/overview.md#osgi-configuration), zouden de volgende stappen op een lokale ontwikkelaarinstantie moeten worden uitgevoerd en dan aan uw projectcode voor plaatsing geëngageerd.
+>Zoals wanneer het toepassen van om het even welke [ configuraties OSGi voor AEM as a Cloud Service ](/help/implementing/deploying/overview.md#osgi-configuration), zouden de volgende stappen op een lokale ontwikkelaarinstantie moeten worden uitgevoerd en dan aan uw projectcode voor plaatsing geëngageerd.
 
 Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 
@@ -64,7 +64,7 @@ Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 
 1. Klik **Dag CQ Verbinding Externalzer** om de doos van de configuratiedialoog te openen.
 
-   ![&#x200B; de configuratie ExternalExternalSGi &#x200B;](./assets/externalizer-osgi.png)
+   ![ de configuratie ExternalExternalSGi ](./assets/externalizer-osgi.png)
 
    >[!NOTE]
    >
@@ -151,4 +151,4 @@ Deze sectie toont een paar voorbeelden van hoe de dienst Externalzer kan worden 
 
 >[!TIP]
 >
->U kunt meer voorbeelden in [&#x200B; JavaDocs &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html) vinden.
+>U kunt meer voorbeelden in [ JavaDocs ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html) vinden.

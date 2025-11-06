@@ -1,11 +1,11 @@
 ---
-title: Hoe te om installatie en configuratiekwesties voor het as a Cloud Service milieu van AEM Forms problemen op te lossen?
-description: Installatie en configuratie van AEM Forms as a Cloud Service-omgeving oplossen.
+title: Hoe kan ik problemen met de installatie en configuratie voor de AEM Forms as a Cloud Service-omgeving oplossen?
+description: Installatie en configuratie van de AEM Forms as a Cloud Service-omgeving oplossen.
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -14,23 +14,24 @@ ht-degree: 0%
 
 # Configuratie {#installation-and-configuration}
 
-U kunt een aantal van de volgende kwesties ontmoeten terwijl het vormen van een milieu van de Cloud Service:
+U kunt enkele van de volgende problemen tegenkomen tijdens het configureren van een Cloud Service-omgeving:
 
 ## Forms-optie is niet beschikbaar
 
 De optie **[!UICONTROL Forms]** is niet beschikbaar op de pagina van **[!UICONTROL Navigation]** .
 
-![&#x200B; de optie van Forms is niet beschikbaar &#x200B;](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
+![ de optie van Forms is niet beschikbaar ](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
 
 De optie **[!UICONTROL Forms]** inschakelen:
 
-1. Login aan [&#x200B; Cloud Manager &#x200B;](https://experience.adobe.com/)
-1. Bepaal de plaats van uw programma en klik de ![&#x200B; optie van Forms is niet beschikbaar &#x200B;](assets/Smock_Edit_18_N.svg) pictogram. Hiermee wordt de pagina Programma bewerken voor uw programma geopend.
+1. Login aan [ Cloud Manager ](https://experience.adobe.com/)
+1. Bepaal de plaats van uw programma en klik de ![ optie van Forms is niet beschikbaar ](assets/Smock_Edit_18_N.svg) pictogram. Hiermee wordt de pagina Programma bewerken voor uw programma geopend.
 1. Open de tab **[!UICONTROL Solutions & Add-ons]** .
 1. Selecteer de optie **[!UICONTROL Forms]** en klik op **[!UICONTROL Save]** .
 
-   ![&#x200B; selecteer de optie van Forms &#x200B;](assets/installation-configuration-select-forms-option.png)
-1. [&#x200B; creeer &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=nl-NL#how-to-use) en [&#x200B; stel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=nl-NL) zowel productie als niet-productie pijpleidingen in werking.
+   ![ selecteer de optie van Forms ](assets/installation-configuration-select-forms-option.png)
+
+1. [ creeer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) en [ stel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) zowel productie als niet-productie pijpleidingen in werking.
 
 Nadat de pijpleiding wordt gebouwd en opgesteld, de **[!UICONTROL Forms]** optie op de **[!UICONTROL Navigation]** pagina.
 
@@ -59,7 +60,7 @@ Als u het probleem wilt oplossen, opent u Cloud Manager, selecteert u de optie *
 
 Voer de volgende stappen uit om het probleem op te lossen:
 
-1. Start AEM en wacht tot het programma volledig is gestart tot alle bundels zijn opgestart.
+1. Start AEM en wacht tot het volledig is gestart totdat alle bundels zijn opgestart.
 1. Stop AEM (Ctrl + C).
 1. Plaats het Forms `.far` -bestand in de installatiemap.
-1. Start de AEM server opnieuw.
+1. Start de AEM-server opnieuw.

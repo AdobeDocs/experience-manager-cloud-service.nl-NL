@@ -4,9 +4,9 @@ description: Operationele telemetrie voor Edge Delivery Services for AEM Forms a
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 0%
@@ -26,7 +26,7 @@ U kunt het dashboard voor toezicht op Edge Delivery Services for AEM Forms as a 
 
 https://data.aem.live/?ext=forms
 
-![&#x200B; het Operationele Login van de Telemetrie Scherm voor Edge Delivery Services voor Forms &#x200B;](/help/edge/assets/rum-login-screen.png)
+![ het Operationele Login van de Telemetrie Scherm voor Edge Delivery Services voor Forms ](/help/edge/assets/rum-login-screen.png)
 
 Voer de volgende gegevens in om u aan te melden bij het dashboard voor Edge Delivery Services for AEM Forms as a Cloud Service:
 
@@ -40,7 +40,7 @@ Nadat u de URL- en domeinsleutels hebt ingevoerd in het aanmeldingsscherm, krijg
 
 In de onderstaande afbeelding ziet u het dashboard voor Edge Delivery Services for AEM Forms as a Cloud Service:
 
-![&#x200B; Operationeel het dashboard van de Telemetrie Forms &#x200B;](/help/edge/assets/rum-forms-dashboard.png)
+![ Operationeel het dashboard van de Telemetrie Forms ](/help/edge/assets/rum-forms-dashboard.png)
 
 ### Verschillende maatstaven van het dashboard voor Forms {#different-metrics-operational-telemetry-dashboard-forms}
 

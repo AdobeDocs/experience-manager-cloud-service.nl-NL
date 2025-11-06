@@ -1,11 +1,11 @@
 ---
 title: Sneltoetsen voor de console van inhoudsfragmenten
-description: Er zijn verschillende sneltoetsen beschikbaar voor AEM, waaronder een selectie voor het beheer van inhoudsfragmenten.
+description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder een selectie voor het beheer van inhoudsfragmenten.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 Een selectie van toetsenbordkortere weg is beschikbaar voor gebruik in de console van de Fragmenten van de Inhoud.
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing wanneer [&#x200B; het uitgeven pagina&#39;s &#x200B;](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), anderen op het [&#x200B; algemene gebruik van consoles &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing wanneer [ het uitgeven pagina&#39;s ](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), anderen op het [ algemene gebruik van consoles ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->De [&#x200B; bepalingssleutels &#x200B;](#os-specific-modifier-keys) die voor AEM toetsenbordkortere weg worden vereist variëren afhankelijk van werkend systeem.
+>De [ bepalingssleutels ](#os-specific-modifier-keys) die voor de toetsenbordkortere weg van AEM worden vereist variëren afhankelijk van werkend systeem.
 
 ## Console met inhoudsfragmenten - sneltoetsen {#content-fragments-console-keyboard-shortcuts}
 
@@ -39,11 +39,11 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing 
 | Selecteer een of meer inhoudsfragmenten | `u` | Het dialoogvenster Publiceren nu ongedaan maken openen |
 | Willekeurig geopend dialoogvenster | `esc` | Dialoogvenster wordt gesloten |
 
-Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers. Sommigen zijn van toepassing wanneer [&#x200B; het uitgeven pagina&#39;s &#x200B;](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), anderen op het algemene [&#x200B; gebruik van consoles &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers. Sommigen zijn van toepassing wanneer [ het uitgeven pagina&#39;s ](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), anderen op het algemene [ gebruik van consoles ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->De toetsenbordkortere weg van de redacteur is altijd actief ongeacht als de [&#x200B; consolekortere weg &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) is gedeactiveerd.
+>De toetsenbordkortere weg van de redacteur is altijd actief ongeacht als de [ consolekortere weg ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) is gedeactiveerd.
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 

@@ -3,9 +3,9 @@ title: SPA-pagina-component
 description: In een KUUROORD verstrekt de paginacomponent niet de elementen van HTML van zijn kindcomponenten, maar in plaats daarvan delegeert dit aan het kader van het KUUROORD. Dit document verklaart hoe dit tot de paginacomponent van een SPA uniek maakt.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -69,7 +69,7 @@ De eigenschappen van het meta-middel die de inhoud van het KUUROORD beschrijven:
 >
 >De standaardmodelkiezer wordt statisch ingesteld bij het aanvragen van de representatie van een component in het verkoopmodel.
 
-## Eigenschappen van meta {#meta-properties}
+## Meta-eigenschappen {#meta-properties}
 
 * `cq:wcmmode`: WCM-modus van de editors (bijvoorbeeld pagina, sjabloon)
 * `cq:pagemodel_root_url`: URL van het basismodel van de app. Cruciaal bij directe toegang tot een onderliggende pagina, aangezien het onderliggende paginamodel een fragment is van het basismodel van de app. Vervolgens stelt `PageModelManager` het oorspronkelijke toepassingsmodel systematisch opnieuw samen als het invoeren van de toepassing vanaf het hoofdinvoerpunt.

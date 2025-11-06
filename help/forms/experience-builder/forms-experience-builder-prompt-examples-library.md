@@ -4,15 +4,14 @@ description: Verzameling van bewezen snelle patronen en voorbeelden voor het bou
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 0%
 
 ---
-
 
 # Forms Experience Builder - Snelle bibliotheek
 
@@ -28,7 +27,7 @@ Verzameling herbruikbare snelle patronen en voorbeelden die zijn geoptimaliseerd
 
 ## Deze Promptbibliotheek gebruiken
 
-Deze bibliotheek verstrekt herbruikbare snelle patronen voor gemeenschappelijke vorm-bouwende scenario&#39;s. Voor uitvoerige beste praktijken, zie de [&#x200B; Begonnen Gids van de Bouwer van de Ervaring van Forms &#x200B;](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
+Deze bibliotheek verstrekt herbruikbare snelle patronen voor gemeenschappelijke vorm-bouwende scenario&#39;s. Voor uitvoerige beste praktijken, zie de [ Begonnen Gids van de Bouwer van de Ervaring van Forms ](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
 ### Snelle tips voor deze bibliotheek
 
@@ -99,7 +98,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
 
 **wanneer te gebruiken:** wanneer u nieuwe vormen moet creëren of bestaande degenen wijzigen.
 
-**hoe te gebruiken:** kies één van twee benaderingen: creeer van Scratch of de Invoer &amp; zet (zie [&#x200B; Begonnen Gids &#x200B;](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
+**hoe te gebruiken:** kies één van twee benaderingen: creeer van Scratch of de Invoer &amp; zet (zie [ Begonnen Gids ](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
 **Vragen van het Voorbeeld - Eenvoudige Making van de Vorm:**
 
@@ -142,7 +141,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      - de formaatbevestiging van het aantal van de telefoon 
      - de Leeftijd moet 18 zijn of ouder 
      - Alle vereiste documenten moeten worden geupload 
-     - de Algemene voorwaarden worden goedgekeurd 27&rbrace;**Submit Acties:** 
+     - de Algemene voorwaarden worden goedgekeurd 27}**Submit Acties:** 
     
      - verzend bevestigingsmail naar nieuwe werknemer 
      - de afdeling van u op de hoogte brengen 
@@ -224,7 +223,6 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      omvat een daling van Canadese provincies en gebieden 
      een gebied voor de districten van het VK en postgebieden 
  toe
-
 ### Gegevens voor bedrijven en de industrie
 
 **Classificaties van het Bedrijf:**
@@ -280,7 +278,6 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      voegt een gebied voor conferentiezaal het boeken met beschikbaarheid 
      tot een selectie voor terugkomende vergaderingspatronen 
  toe
-
 ### Product- en servicecategorieën
 
 **E-commerce Classificaties:**
@@ -330,7 +327,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      - als @age minder dan 18 is:
      - toon de sectie van ouder/van de Bewaakzame informatie 
      - maak ouder handtekeningupload verplicht 
-     - vervang- Verzenden de Verandert de tekst aan &quot;Voorlegt knooptekst voor Overzicht&quot; 14&rbrace; - als @age 65 of ouder is:
+     - vervang- Verzenden de Verandert de tekst aan &quot;Voorlegt knooptekst voor Overzicht&quot; 14} - als @age 65 of ouder is:
      - toon senior kortingsopties 
      - voeg de sectie van toegankelijkheidsvoorkeuren toe 
     
@@ -375,7 +372,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      - de gegevens van het Formaat zoals JSON met genestelde voorwerpen voor adres en werkgelegenheid 
      - de succesvolle reactie van de Handle (201) door te tonen dank bericht 
     
-     &#x200B;* Secundair Handelingen:** 
+     * Secundair Handelingen:** 
      - verzend bericht e-mail naar aanvrager op @email adres 
      - de toepassingsgegevens van het Exemplaar aan het volgen systeem 
      - de werkschema van de trekker voor goedkeuringsproces 
@@ -492,6 +489,6 @@ Gebruik de syntaxis `@fieldName` om te verwijzen naar bestaande velden in uw vra
 
 ### Controlelijst voor validatie
 
-Voor uitvoerige beste praktijken en bevestigingsrichtlijnen, zie de [&#x200B; Begonnen Gids van de Bouwer van de Ervaring van Forms &#x200B;](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
+Voor uitvoerige beste praktijken en bevestigingsrichtlijnen, zie de [ Begonnen Gids van de Bouwer van de Ervaring van Forms ](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
-*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en de nieuwe mogelijkheden van de Bouwer van de Ervaring van Forms. Voor de recentste eigenschappen en de voorbeelden, controleer de [&#x200B; documentatie van AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL).*
+*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en de nieuwe mogelijkheden van de Bouwer van de Ervaring van Forms. Voor de recentste eigenschappen en de voorbeelden, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html).*

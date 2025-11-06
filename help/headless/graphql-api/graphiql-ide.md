@@ -4,16 +4,16 @@ description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
 
 # GraphiQL IDE gebruiken {#graphiql-ide}
 
-Een implementatie van standaard [&#x200B; GraphiQL &#x200B;](https://graphql.org/learn/serving-over-http/#graphiql) winde is beschikbaar voor gebruik met GraphQL API van as a Cloud Service Adobe Experience Manager (AEM).
+Een implementatie van standaard [ GraphiQL ](https://graphql.org/learn/serving-over-http/#graphiql) winde is beschikbaar voor gebruik met GraphQL API van Adobe Experience Manager (AEM) as a Cloud Service.
 
 >[!NOTE]
 >
@@ -22,16 +22,17 @@ Een implementatie van standaard [&#x200B; GraphiQL &#x200B;](https://graphql.org
 >In vorige versies was een pakket nodig om de GraphiQL IDE te installeren. Als u deze installatie hebt, kunt u deze nu verwijderen.
 
 >[!NOTE]
->U moet [&#x200B; gevormd hebben uw eindpunten &#x200B;](/help/headless/graphql-api/graphql-endpoint.md) in [&#x200B; configuratiebrowser &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) alvorens IDE GraphiQL te gebruiken.
+>U moet [ gevormd hebben uw eindpunten ](/help/headless/graphql-api/graphql-endpoint.md) in [ configuratiebrowser ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) alvorens IDE GraphiQL te gebruiken.
 
 Het **GraphiQL** hulpmiddel laat u testen en zuivert uw vragen van GraphQL door u toe te laten:
+
 * selecteer het **Eindpunt** aangewezen aan de configuratie van Plaatsen die u voor uw vragen wilt gebruiken
 * direct nieuwe query&#39;s invoeren
 * creeer, en toegang, **[Verlengde Vragen](/help/headless/graphql-api/persisted-queries.md)**
 * stel uw vragen in werking om de resultaten onmiddellijk te zien
 * beheer **Variabelen van de Vraag**
 * sparen, en beheer **Verlengde Vragen**
-* publiceer, of unpublish, **Persisted Vragen**, aan of uw **Publish** of **Voorproef** dienst; bijvoorbeeld, aan/van `dev-publish`
+* publiceer, of unpublish, **Persisted Vragen**, aan of uw **publiceren** of **Voorproef** dienst; bijvoorbeeld, aan/van `dev-publish`
 * zie de **Geschiedenis** van uw vorige vragen
 * gebruik de **Ontdekkingsreiziger van de Documentatie** om tot de documentatie toegang te hebben; het helpen u leren en begrijpen welke methodes beschikbaar zijn.
 
@@ -40,9 +41,9 @@ U kunt tot de vraagredacteur van één van beiden toegang hebben:
 * **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**
 * direct; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
-![&#x200B; GraphiQL Interface &#x200B;](assets/cfm-graphiql-interface.png " GraphiQL Interface ")
+![ GraphiQL Interface ](assets/cfm-graphiql-interface.png " GraphiQL Interface ")
 
-U kunt GraphiQL op uw systeem gebruiken zodat de vragen door uw cliënttoepassing kunnen worden gevraagd gebruikend verzoeken, en voor het publiceren van vragen. Voor productiegebruik, kunt u uw vragen dan [&#x200B; bewegen aan uw productiemilieu &#x200B;](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Aanvankelijk aan productieauteur voor het bevestigen van onlangs authored inhoud met de vragen, en productie publiceren voor levende consumptie.
+U kunt GraphiQL op uw systeem gebruiken zodat de vragen door uw cliënttoepassing kunnen worden gevraagd gebruikend GET verzoeken, en voor het publiceren van vragen. Voor productiegebruik, kunt u uw vragen dan [ bewegen aan uw productiemilieu ](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Aanvankelijk aan productieauteur voor het bevestigen van onlangs authored inhoud met de vragen, en productie publiceren voor levende consumptie.
 
 ## Het selecteren van uw eindpunt {#selecting-endpoint}
 
@@ -88,23 +89,23 @@ In beide gevallen is de query die in het editorpaneel wordt weergegeven, de quer
 
 ## Query-variabelen {#query-variables}
 
-GrahiQL winde laat u ook uw [&#x200B; Variabelen van de Vraag &#x200B;](/help/headless/graphql-api/content-fragments.md#graphql-variables) beheren.
+GrahiQL winde laat u ook uw [ Variabelen van de Vraag ](/help/headless/graphql-api/content-fragments.md#graphql-variables) beheren.
 
 Bijvoorbeeld:
 
-![&#x200B; de Variabelen van GraphQL &#x200B;](assets/cfm-graphqlapi-03.png " de Variabelen van GraphQL ")
+![ de Variabelen van GraphQL ](assets/cfm-graphqlapi-03.png " de Variabelen van GraphQL ")
 
 ## Het beheren van geheime voorgeheugen voor uw persistente vragen {#managing-cache}
 
-[&#x200B; Verblijfsde vragen &#x200B;](/help/headless/graphql-api/persisted-queries.md) worden geadviseerd aangezien zij bij de verzender en CDN lagen kunnen worden in het voorgeheugen ondergebracht, uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing. Standaard maakt AEM de CDN-cache (Content Delivery Network) ongeldig op basis van een standaardtijd tot live (TTL).
+[ Verblijfsde vragen ](/help/headless/graphql-api/persisted-queries.md) worden geadviseerd aangezien zij bij de verzender en CDN lagen kunnen worden in het voorgeheugen ondergebracht, uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing. AEM maakt standaard de CDN-cache (Content Delivery Network) ongeldig op basis van een standaardtijd om te leven (TTL).
 
 >[!NOTE]
 >
->Zie [&#x200B; Caching van uw gepresteerde vragen &#x200B;](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Zie [ Caching van uw gepresteerde vragen ](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
->Aangepaste herschrijfregels voor de Dispatcher kunnen de standaardinstellingen van AEM publicatie overschrijven.
+>Aangepaste herschrijfregels op de Dispatcher kunnen de standaardinstellingen van AEM-publicatie overschrijven.
 >
 >Als u op TTL gebaseerde op cache gebaseerde headers van de verzender verzendt, op basis van een patroon van locatieovereenkomst, wilt u `/graphql/execute.json/*` indien nodig uitsluiten van de overeenkomsten.
 
@@ -112,11 +113,11 @@ Gebruikend GraphQL kunt u de Kopballen van het Geheime voorgeheugen van HTTP vor
 
 1. De **Kopballen** optie is toegankelijk via de drie verticale punten rechts van de voortgeduurde vraagnaam (ver linkerpaneel):
 
-   ![ de Verblijfsde Kopballen van het Geheime voorgeheugen van HTTP van de Vraag 1&rbrace; de Verblijfsde Kopballen van HTTP van de Vraag ")] (assets/cfm-graphqlapi-headers-01.png "
+   ![ de Verblijfsde Kopballen van het Geheime voorgeheugen van HTTP van de Vraag 1} de Verblijfsde Kopballen van HTTP van de Vraag ](assets/cfm-graphqlapi-headers-01.png "")
 
 1. Het selecteren van dit opent de **dialoogdoos van de Configuratie van het Geheime voorgeheugen**:
 
-   ![ de Verblijfsde Montages van de Kopbal van HTTP- Geheime voorgeheugen van de Vraag 1&rbrace; de Verblijfsde Montages van de Kopbal van HTTP van de Vraag ")] (assets/cfm-graphqlapi-headers-02.png "
+   ![ de Verblijfsde Montages van de Kopbal van HTTP- Geheime voorgeheugen van de Vraag 1} de Verblijfsde Montages van de Kopbal van HTTP van de Vraag ](assets/cfm-graphqlapi-headers-02.png "")
 
 1. Selecteer de gewenste parameter en pas vervolgens de gewenste waarde aan:
 
@@ -133,21 +134,21 @@ In geval van een fout of een fout van de oorsprong kan het optreden van een cach
 
 ## Doorlopende query&#39;s publiceren en voorvertonen {#publishing-previewing-persisted-queries}
 
-Zodra u uw voortgezette vraag van de lijst (linkerpaneel) hebt geselecteerd kunt u de **Publish** actie gebruiken.
+Zodra u uw voortgezette vraag van de lijst (linkerpaneel) hebt geselecteerd kunt u **gebruiken publiceer** actie.
 
-Hierdoor wordt de query geactiveerd naar de omgeving die u selecteert. U kunt of uw **milieu van Publish** kiezen (bijvoorbeeld, `dev-publish`), of uw **milieu van de Voorproef** voor gemakkelijke toegang door uw toepassingen wanneer het testen.
+Hierdoor wordt de query geactiveerd naar de omgeving die u selecteert. U kunt of uw **kiezen publiceert** milieu (bijvoorbeeld, `dev-publish`), of uw **milieu van de Voorproef** voor gemakkelijke toegang door uw toepassingen wanneer het testen.
 
-![&#x200B; GraphiQL - Gepubliceerde Verlengde Vraag &#x200B;](assets/cfm-graphiql-publish.png " GraphiQL - Publish Verlengde Vraag ")
+![ GraphiQL - Gepubliceerde Verlengde Vraag ](assets/cfm-graphiql-publish.png " GraphiQL - publiceer Verlengde Vraag ")
 
 >[!NOTE]
 >
->De definitie van het cache `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} van de aanblijvende query heeft een standaardwaarde van 2 uur (7200 seconden).
+>De definitie van het voorgeheugen `Time To Live` {&quot;cache-control&quot;: &quot;parameter&quot;:value heeft een standaardwaarde van 2 uur (7200 seconden).
 
 ## Publiceren van doorlopende query&#39;s ongedaan maken {#unpublishing-persisted-queries}
 
 Zoals wanneer het publiceren, zodra u uw voortgezette vraag van de lijst (linkerpaneel) hebt geselecteerd kunt u **gebruiken unpublish** actie.
 
-Dit zal de vraag van het milieu deactiveren u selecteert; of uw **milieu van Publish**, of uw **milieu van de Voorproef**.
+Dit zal de vraag van het milieu deactiveren u selecteert; of uw **publiceer** milieu, of uw **milieu van de Voorproef**.
 
 >[!NOTE]
 >
@@ -171,11 +172,11 @@ Bijvoorbeeld:
 
 Door deze URL in browser te gebruiken, kunt u de resultaten bevestigen:
 
-![&#x200B; GraphiQL - Exemplaar URL &#x200B;](assets/cfm-graphiql-copy-url.png " GraphiQL - Exemplaar URL ")
+![ GraphiQL - Exemplaar URL ](assets/cfm-graphiql-copy-url.png " GraphiQL - Exemplaar URL ")
 
 De **optie van het Exemplaar URL** is toegankelijk via de drie verticale punten rechts van de voortgeduurde vraagnaam (ver linkerpaneel):
 
-![&#x200B; GraphiQL - Exemplaar URL &#x200B;](assets/cfm-graphiql-persisted-query-options.png " GraphiQL - Exemplaar URL ")
+![ GraphiQL - Exemplaar URL ](assets/cfm-graphiql-persisted-query-options.png " GraphiQL - Exemplaar URL ")
 
 ## Doorlopende query&#39;s verwijderen {#deleting-persisted-queries}
 
@@ -186,7 +187,7 @@ De **schrapping** optie is ook toegankelijk via de drie verticale punten rechts 
 
 ## Uw blijvende query installeren op productie {#installing-persisted-query-production}
 
-Na het ontwikkelen van en het testen van uw persistente vraag met GraphiQL, is het definitieve doel het [&#x200B; over te brengen naar uw productiemilieu &#x200B;](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) voor gebruik door uw toepassingen.
+Na het ontwikkelen van en het testen van uw persistente vraag met GraphiQL, is het definitieve doel het [ over te brengen naar uw productiemilieu ](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) voor gebruik door uw toepassingen.
 
 ## Sneltoetsen {#keyboard-shortcuts}
 

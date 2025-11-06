@@ -3,8 +3,8 @@ title: Universal Editor-verificatie
 description: Leer hoe de Universele Redacteur het Systeem van Adobe Identity Management (IMS) voor authentificatie gebruikt.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Om de Universele Redacteur te gebruiken, moet de gebruiker in Verenigde Shell wo
 
 Wanneer een gebruiker een CRUD verrichting uitvoert, wordt een vraag verzonden naar de Universele dienst van de Redacteur met het IMS dragerteken in de kopbal van HTTP. De universele dienst van de Redacteur gebruikt dan het dragerteken om het verzoek tegen het AEM backend systeem voor authentiek te verklaren om verrichtingen in de naam van de gebruiker uit te voeren.
 
-![&#x200B; Standaard authentificatiestroom &#x200B;](assets/standard-flow.png)
+![ Standaard authentificatiestroom ](assets/standard-flow.png)
 
 Dit diagram en artikel beschrijven de interne authentificatie van de Universele Redacteur zelf.
 

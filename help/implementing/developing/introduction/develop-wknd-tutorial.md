@@ -3,9 +3,9 @@ title: Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie
 description: Nieuw bij het ontwikkelen van AEM? Wilt u een vernieuwde versie van de beste praktijken? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar van AEM te leren hoe hij een website in AEM implementeert met behulp van de nieuwste standaarden en technologieën.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -25,17 +25,17 @@ Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar van AEM te
 
 ## Zelfstudie voor WKND-ontwikkelaars {#wknd-developer-tutorial}
 
-![&#x200B; WKND &#x200B;](assets/wknd-tutorial-homepage.png)
+![ WKND ](assets/wknd-tutorial-homepage.png)
 
-[&#x200B; het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) en leidt u door het creëren van een project van AEM gebruikend de recentste technologieën en beste praktijken.
+[ het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) en leidt u door het creëren van een project van AEM gebruikend de recentste technologieën en beste praktijken.
 
 ## Basisconcepten {#core-concepts}
 
 De zelfstudie-implementatie gebruikt veel krachtige functies van AEM. De site wordt geïmplementeerd met:
 
-* [&#x200B; Gemaakt AEM Project Archetype &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
-* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-* [&#x200B; HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=nl-NL)
-* [&#x200B; Sling Models &#x200B;](https://sling.apache.org/documentation/bundles/models.html)
-* [&#x200B; Bewerkbare Malplaatjes &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=nl-NL)
-* [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=nl-NL)
+* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
+* [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
+* [ Bewerkbare Malplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)

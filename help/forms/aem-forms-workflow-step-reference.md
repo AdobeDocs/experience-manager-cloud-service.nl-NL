@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: De werkschema's van AEM van het gebruik, het gebruiken van taakstappen, zet in stap PDF/A om, produceer document van geregistreerde stap, gebruikwerkschema's, de stap van het Document van het Ondertekenen, produceer gedrukte outputstap, produceer niet interactieve PDF output
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '6760'
 ht-degree: 0%
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [&#x200B; diverse stappen van het Werkschema van AEM in een model omvatten om de bedrijfslogica &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) te bereiken.
+U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse stappen van het Werkschema van AEM in een model omvatten om de bedrijfslogica ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) te bereiken.
 
 ## Forms-centric stappen {#forms-workflow-steps}
 
@@ -98,7 +98,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
     
     -->
 
-   * **[!UICONTROL Request Attribute Mapping]**: Gebruik de sectie van de Toewijzing van Attributen van het Verzoek om de [&#x200B; naam en waarde van de verzoekattributen &#x200B;](work-with-form-data-model.md#bindargument) te bepalen. Haal de details van de gegevensbron op die op de attributennaam en waarde wordt gebaseerd in het verzoek wordt gespecificeerd. U kunt een waarde van een aanvraagkenmerk definiëren met een letterlijke waarde of een variabele van het gegevenstype String.
+   * **[!UICONTROL Request Attribute Mapping]**: Gebruik de sectie van de Toewijzing van Attributen van het Verzoek om de [ naam en waarde van de verzoekattributen ](work-with-form-data-model.md#bindargument) te bepalen. Haal de details van de gegevensbron op die op de attributennaam en waarde wordt gebaseerd in het verzoek wordt gespecificeerd. U kunt een waarde van een aanvraagkenmerk definiëren met een letterlijke waarde of een variabele van het gegevenstype String.
 
   <!--  
      
@@ -121,7 +121,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
     -->
 
 * **[!UICONTROL Assignee]** > **[!UICONTROL Assign options]** : geef de methode op die u aan een gebruiker wilt toewijzen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM-gebruiker of -groep.
-* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [&#x200B; Creërend een stap van de Dynamische Deelnemer van de douaneAdobe Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL&CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ Creërend een stap van de Dynamische Deelnemer van de douaneAdobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participants]**: Het veld is beschikbaar wanneer de optie **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** is geselecteerd in het veld **[!UICONTROL Participant Chooser]** . In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
 
@@ -177,6 +177,7 @@ De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 **[!UICONTROL Input Document]**: Het invoerdocument kan relatief zijn ten opzichte van de lading, een absoluut pad hebben, als een lading kunnen worden verstrekt of in een variabele van het gegevenstype Document worden opgeslagen.
 
 **[!UICONTROL Conversion Options]**: Met deze eigenschap worden de instellingen opgegeven voor het converteren van PDF-documenten naar PDF/A-documenten. Onder dit tabblad zijn verschillende opties beschikbaar:
+
 * **[!UICONTROL Compliance]** - Geeft de standaard aan waaraan het PDF/A-uitvoerdocument moet voldoen. Het steunt verschillende normen van PDF zoals PDF/A-1b, PDF/A-2b, of PDF/A-3b.
 * **[!UICONTROL Result Level]** - Geeft het resultaatniveau op als PassFail, Summary of Gedetailleerd voor de conversie-uitvoer.
 * **[!UICONTROL Color Space]**: geeft de vooraf gedefinieerde kleurruimte op als S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED of SWOP, die kan worden gebruikt voor uitvoer van PDF/A-bestanden.
@@ -187,9 +188,9 @@ De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
 ## E-mailstap verzenden {#send-email-step}
 
-Met de stap E-mail kunt u bijvoorbeeld een e-mail verzenden met een document of record, een koppeling naar een adaptief formulier <!-- , link of an interactive communication--> of een bijgevoegd PDF-document. Verzend E-mailstap steunt [&#x200B; e-mail van HTML &#x200B;](https://en.wikipedia.org/wiki/HTML_email). HTML-e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. U kunt een HTML-e-mailsjabloon gebruiken om de weergave, het kleurenschema en het gedrag van de e-mail te definiëren.
+Met de stap E-mail kunt u bijvoorbeeld een e-mail verzenden met een document of record, een koppeling naar een adaptief formulier <!-- , link of an interactive communication--> of een bijgevoegd PDF-document. Verzend E-mailstap steunt [ e-mail van HTML ](https://en.wikipedia.org/wiki/HTML_email). HTML-e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. U kunt een HTML-e-mailsjabloon gebruiken om de weergave, het kleurenschema en het gedrag van de e-mail te definiëren.
 
-In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [&#x200B; contacteer het steunteam &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=nl-NL#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
+In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
 
 De e-mailstap heeft de volgende eigenschappen:
 
@@ -207,7 +208,7 @@ De e-mailstap heeft de volgende eigenschappen:
 
 **[!UICONTROL Email Template Metadata]**: de waarde van de sjabloonvariabelen voor e-mail kan een door de gebruiker opgegeven waarde zijn, het pad van een element op de auteur of de publicatieserver, afbeelding of eigenschap voor metagegevens van de workflow.
 
-* **[!UICONTROL Literal]**: gebruik de optie wanneer u precies weet welke waarde moet worden opgegeven. Bijvoorbeeld, [&#x200B; example@example.com &#x200B;](mailto:example@example.com).
+* **[!UICONTROL Literal]**: gebruik de optie wanneer u precies weet welke waarde moet worden opgegeven. Bijvoorbeeld, [ example@example.com ](mailto:example@example.com).
 
 * **[!UICONTROL Workflow Metadata]**: gebruik de optie wanneer de te gebruiken waarde wordt opgeslagen in een eigenschap voor metagegevens van de workflow. Nadat u de optie hebt geselecteerd, typt u de naam van de eigenschap metadata in het lege tekstvak onder de optie Metagegevens werkstroom. Bijvoorbeeld emailAddress.
 
@@ -250,16 +251,18 @@ Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechts
 
 ## DDX-stap aanroepen {#invokeddx}
 
-XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX definieert een set bewerkingen die op een of meer invoerdocumenten kan worden toegepast om een of meer uitvoerdocumenten te genereren. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de ***aanhalen stap DDX*** in een Werkschema van AEM gebruiken om diverse verrichtingen uit te voeren, zoals het assembleren van documenten, het Creëren van, en het wijzigen van Acrobat en XFA Forms, en anderen die in de [&#x200B; documentatie van de Verwijzing DDX &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) worden beschreven.
+XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX definieert een set bewerkingen die op een of meer invoerdocumenten kan worden toegepast om een of meer uitvoerdocumenten te genereren. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de ***aanhalen stap DDX*** in een Werkschema van AEM gebruiken om diverse verrichtingen uit te voeren, zoals het assembleren van documenten, het Creëren van, en het wijzigen van Acrobat en XFA Forms, en anderen die in de [ documentatie van de Verwijzing DDX ](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) worden beschreven.
 
 De aanroepende DDX-stap heeft de volgende eigenschappen:
 
 **[!UICONTROL Input Documents]**: wordt gebruikt om eigenschappen van een invoerdocument in te stellen. Onder dit tabblad zijn verschillende opties beschikbaar:
+
 * **[!UICONTROL Specify DDX Using]** - Geeft het invoerdocument op dat relatief is ten opzichte van de payload, een absoluut pad heeft, kan worden opgegeven als een payload of kan worden opgeslagen in een variabele van het gegevenstype Document.
 * **[!UICONTROL Create Map from Payload]**: voeg alle documenten onder de ladingsomslag aan de Kaart van het Document van de Input voor aan te halen API in Assembler. De knooppuntnaam voor elk document wordt gebruikt als sleutel in de kaart.
 * **[!UICONTROL Input Document's Map]**: de optie wordt gebruikt om meerdere items toe te voegen met de knop **[!UICONTROL ADD]** . Elk item vertegenwoordigt de sleutel van het document in de kaart en de bron van het document.
 
 **[!UICONTROL Environment Options]**: deze optie wordt gebruikt om verwerkingsinstellingen in te stellen voor het aanroepen van de API. Onder dit tabblad zijn verschillende opties beschikbaar:
+
 * **[!UICONTROL Validate Only]**: hiermee wordt de geldigheid van het invoer-DDX-document gecontroleerd.
 * **[!UICONTROL Fail on Error]**: Booleaanse waarde die aangeeft of de API-service aanroepen mislukt, als er een fout is of niet. De standaardwaarde is False.
 * **[!UICONTROL First Bates Number]** - Geeft het getal op dat automatisch wordt verhoogd. Dit zelf-stijgende aantal wordt automatisch getoond op elke opeenvolgende pagina.
@@ -270,12 +273,13 @@ De aanroepende DDX-stap heeft de volgende eigenschappen:
 >Omgevingsopties blijven gesynchroniseerd met HTTP API&#39;s.
 
 **[!UICONTROL Output Documents]** - Geeft de locatie op waar het uitvoerbestand moet worden opgeslagen. Onder dit tabblad zijn verschillende opties beschikbaar:
+
 * **[!UICONTROL Save Output in Payload]**: slaat uitvoerdocumenten op onder de payload-map of overschrijft de payload, voor het geval dat de payload een bestand is.
 * **[!UICONTROL Output Document's Map]** - Geeft de locatie op waar elk documentbestand expliciet moet worden opgeslagen door één item per document toe te voegen. Elk item vertegenwoordigt het document en de locatie waar het moet worden opgeslagen. Als er meerdere uitvoerdocumenten zijn, wordt deze optie gebruikt.
 
 ## FDM-service (Form Data Model) aanroepen {#invoke-form-data-model-service-step}
 
-U kunt [[!DNL AEM Forms]  Integratie van Gegevens gebruiken &#x200B;](data-integration.md) om te vormen en met ongelijksoortige gegevensbronnen te verbinden. Deze gegevensbronnen kunnen de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. [!DNL AEM Forms] De Integratie van gegevens laat u een Model van de Gegevens van de Vorm (FDM) tot stand brengen dat de diverse diensten omvat om gegevensherwinning uit te voeren, toevoeging, het bijwerken verrichtingen op het gevormde gegevensbestand. U kunt **[!UICONTROL Invoke Data Model Service step]** gebruiken om een Model van de Gegevens van de Vorm (FDM) te selecteren en de diensten van FDM te gebruiken om, gegevens terug te winnen bij te werken of toe te voegen om gegevensbronnen te verdelen.
+U kunt [[!DNL AEM Forms]  Integratie van Gegevens gebruiken ](data-integration.md) om te vormen en met ongelijksoortige gegevensbronnen te verbinden. Deze gegevensbronnen kunnen de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. [!DNL AEM Forms] De Integratie van gegevens laat u een Model van de Gegevens van de Vorm (FDM) tot stand brengen dat de diverse diensten omvat om gegevensherwinning uit te voeren, toevoeging, het bijwerken verrichtingen op het gevormde gegevensbestand. U kunt **[!UICONTROL Invoke Data Model Service step]** gebruiken om een Model van de Gegevens van de Vorm (FDM) te selecteren en de diensten van FDM te gebruiken om, gegevens terug te winnen bij te werken of toe te voegen om gegevensbronnen te verdelen.
 
 Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbestandlijst en het dossier JSON gebruikt als voorbeeld:
 
@@ -337,7 +341,7 @@ De stap FDM (Invoke Form Data Model)-service bevat de onderstaande velden om FDM
 
 * **[!UICONTROL Form Data Model Path]**: blader en selecteer een Model van de Gegevens van het Vorm (FDM) aanwezig op de server.
 
-* **[!UICONTROL Errors and Validations]**: met deze optie kunt u foutberichten vastleggen en validatieopties opgeven voor gegevens die zijn opgehaald en naar gegevensbronnen worden verzonden. Met deze veranderingen, kunt u gegevens verzekeren die tot de Invoke stap van de Dienst van de Gegevens van de Vorm van de Vorm (FDM) worden overgegaan voldoet aan de gegevensbeperkingen die door de gegevensbron worden bepaald. Voor meer details, zie [&#x200B; Geautomatiseerde bevestiging van inputgegevens &#x200B;](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Errors and Validations]**: met deze optie kunt u foutberichten vastleggen en validatieopties opgeven voor gegevens die zijn opgehaald en naar gegevensbronnen worden verzonden. Met deze veranderingen, kunt u gegevens verzekeren die tot de Invoke stap van de Dienst van de Gegevens van de Vorm van de Vorm (FDM) worden overgegaan voldoet aan de gegevensbeperkingen die door de gegevensbron worden bepaald. Voor meer details, zie [ Geautomatiseerde bevestiging van inputgegevens ](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Validation level]**: Er zijn drie validatiecategorieën: Standaard, Volledig en UIT:
 
@@ -347,11 +351,11 @@ De stap FDM (Invoke Form Data Model)-service bevat de onderstaande velden om FDM
 
 * **[!UICONTROL Terminate Workflow on Failure]**: Wanneer een beperking niet kan worden gevalideerd, wordt de workflow gestopt.
 
-* **[!UICONTROL Store Error Code in Variable]**: U kunt een foutencode in a [&#x200B; het type van Koord variabele &#x200B;](variable-in-aem-workflows.md) opslaan.
+* **[!UICONTROL Store Error Code in Variable]**: U kunt een foutencode in a [ het type van Koord variabele ](variable-in-aem-workflows.md) opslaan.
 
-* **[!UICONTROL Store Error Message in Variable]**: U kunt een foutenmelding in a [&#x200B; typevariabele van het Type van Koord &#x200B;](variable-in-aem-workflows.md) opslaan.
+* **[!UICONTROL Store Error Message in Variable]**: U kunt een foutenmelding in a [ typevariabele van het Type van Koord ](variable-in-aem-workflows.md) opslaan.
 
-* **[!UICONTROL Store Error Details in Variable]**: U kunt een foutendetail in a [&#x200B; opslaan JSON type variabele &#x200B;](variable-in-aem-workflows.md).
+* **[!UICONTROL Store Error Details in Variable]**: U kunt een foutendetail in a [ opslaan JSON type variabele ](variable-in-aem-workflows.md).
 
 * **[!UICONTROL Service]**: Lijst met services die door het geselecteerde formuliergegevensmodel (FDM) worden geboden.
 * **[!UICONTROL Input for services]** > **[!UICONTROL Provide input data using literal, variable, or workflow metadata, and a JSON file]**: een service kan meerdere argumenten hebben. Selecteer de optie om de waarde van de de dienstargumenten van een werkschemabezit, een voorwerp JSON, een variabele te verkrijgen, of direct de waarde in het verstrekte tekstvakje in te gaan:
@@ -364,8 +368,8 @@ De stap FDM (Invoke Form Data Model)-service bevat de onderstaande velden om FDM
 
      >[!NOTE]
      >
-     > De **aanroepende Model van de Gegevens van de Vorm** werkschemastap steunt werkschemagegevens voor Base64 gecodeerde gehechtheidsseries in [&#x200B; de Lijst gebaseerde Modellen van de Gegevens van de Vorm &#x200B;](/help/forms/connect-forms-to-sharepoint-list.md) en laat werkschema&#39;s overgaan, opslaan, en terugwinnen meta-gegevens zoals dossiernaam, MIME type, of douaneeigenschappen voor de gehechtheid.
-     > ![&#x200B; de Bijlagen van de Lijst van SP &#x200B;](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     > De **aanroepende Model van de Gegevens van de Vorm** werkschemastap steunt werkschemagegevens voor Base64 gecodeerde gehechtheidsseries in [ de Lijst gebaseerde Modellen van de Gegevens van de Vorm ](/help/forms/connect-forms-to-sharepoint-list.md) en laat werkschema&#39;s overgaan, opslaan, en terugwinnen meta-gegevens zoals dossiernaam, MIME type, of douaneeigenschappen voor de gehechtheid.
+     > ![ de Bijlagen van de Lijst van SP ](/help/edge/docs/forms/assets/workflow-sp-list.png)
      >
      > De map Relatief aan Payload bevat een bestandsbijlage op de `attachment` -locatie. Geef `attachment` op in het tekstvak nadat u de optie **[!UICONTROL Relative to Payload]** hebt geselecteerd.
 
@@ -387,7 +391,7 @@ De stap FDM (Invoke Form Data Model)-service bevat de onderstaande velden om FDM
 
 Met de stap Document ondertekenen kunt u [!DNL Adobe Sign] gebruiken om documenten te ondertekenen. Wanneer u de workflowstap van [!DNL Adobe Sign] gebruikt om een adaptief formulier te ondertekenen, kan het formulier tussen ontvangers worden doorgegeven of tegelijkertijd naar alle ontvangers worden verzonden, afhankelijk van de configuratie van de workflowstap. [!DNL Adobe Sign] Aangepaste Forms die is ingeschakeld, worden alleen naar Experience Manager Forms Server verzonden nadat alle ontvangers het ondertekeningsproces hebben voltooid.
 
-Standaard controleert de [!DNL Adobe Sign] Scheduler-service (opiniepeilingen) de reacties van de ontvanger na elke 24 uur. U kunt [&#x200B; het standaardinterval voor uw milieu &#x200B;](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status) veranderen.
+Standaard controleert de [!DNL Adobe Sign] Scheduler-service (opiniepeilingen) de reacties van de ontvanger na elke 24 uur. U kunt [ het standaardinterval voor uw milieu ](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status) veranderen.
 
 De stap Document ondertekenen heeft de volgende eigenschappen:
 
@@ -395,7 +399,7 @@ De stap Document ondertekenen heeft de volgende eigenschappen:
 
 * **[!UICONTROL Locale]**: geef de taal op voor de opties voor e-mail en verificatie. U kunt de landinstelling opslaan in een variabele van het gegevenstype String of **[!UICONTROL Literal]** selecteren om de landinstelling te kiezen in de lijst met beschikbare opties. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **[!UICONTROL en_US]** op voor Engels en **[!UICONTROL fr_FR]** voor Frans.
 
-* **[!UICONTROL Adobe Sign Cloud Configuration]**: kies een [!DNL Adobe Sign] cloudconfiguratie. Als u niet [!DNL Adobe Sign] voor [!DNL AEM Forms] hebt gevormd, zie [&#x200B; het Teken van Adobe met  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) integreren.
+* **[!UICONTROL Adobe Sign Cloud Configuration]**: kies een [!DNL Adobe Sign] cloudconfiguratie. Als u niet [!DNL Adobe Sign] voor [!DNL AEM Forms] hebt gevormd, zie [ het Teken van Adobe met  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) integreren.
 
 * **[!UICONTROL Select Document to be signed using]**: U kunt een document kiezen op een locatie die relatief is ten opzichte van de lading, de lading gebruiken als het document, een absoluut pad van het document opgeven of het document ophalen dat is opgeslagen in een variabele van het gegevenstype Document.
 * **[!UICONTROL Days Until Deadline]**: Een document is gemarkeerd als vervallen (verstreken deadline) nadat de taak gedurende het opgegeven aantal dagen niet is geactiveerd in het veld **[!UICONTROL Days Until Deadline]** . Het aantal dagen wordt geteld nadat de documentatie aan een gebruiker is toegewezen voor ondertekening.
@@ -559,7 +563,7 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 
 * **[!UICONTROL Locale]** - Geeft de taal aan die wordt gebruikt voor het genereren van het PDF-document. Als u een letterlijke waarde opgeeft, selecteert u een taal in de lijst of selecteert u een van de volgende waarden:
    * **[!UICONTROL To use server default]** :
-(Standaard) Gebruik de landinstelling die op de [!DNL AEM Forms] -server is geconfigureerd. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [&#x200B; Hulp van Designer &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
+(Standaard) Gebruik de landinstelling die op de [!DNL AEM Forms] -server is geconfigureerd. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [ Hulp van Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
    * **[!UICONTROL To use custom value]** :
 Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvariabele die de landinstellingscode bevat. Ga naar https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html voor een volledige lijst met ondersteunde landinstellingscodes.

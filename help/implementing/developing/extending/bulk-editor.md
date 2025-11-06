@@ -3,8 +3,8 @@ title: Bulk bewerken van pagina-eigenschappen configureren
 description: Leer hoe u bulkbewerking kunt configureren, zodat u de eigenschappen van meerdere pagina's tegelijk kunt bewerken.
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bulk bewerken van pagina-eigenschappen configureren {#configuring-bulk-editing-of-page-properties}
 
-[&#x200B; Bulk het uitgeven van paginaeigenschappen &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#from-the-sites-console-multiple-pages) laat u de eigenschappen van veelvoudige pagina&#39;s in één keer uitgeven.
+[ Bulk het uitgeven van paginaeigenschappen ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#from-the-sites-console-multiple-pages) laat u de eigenschappen van veelvoudige pagina&#39;s in één keer uitgeven.
 
 ## Overwegingen {#considerations}
 
@@ -35,7 +35,7 @@ Vanwege de mogelijkheid van meerdere waarden wordt aangeraden alleen de volgende
 
 ## Veld inschakelen {#enabling-a-field}
 
-Deze stappen gebruiken `/apps/core/wcm/components/page/v1/page` van de [&#x200B; WKND steekproefinhoud &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als voorbeeld om bulkhet uitgeven op een gebied in een ontwikkelomgeving toe te laten.
+Deze stappen gebruiken `/apps/core/wcm/components/page/v1/page` van de [ WKND steekproefinhoud ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als voorbeeld om bulkhet uitgeven op een gebied in een ontwikkelomgeving toe te laten.
 
 1. Met CRXDE opent u de pagina-component.
 1. Navigeer naar het vereiste veld binnen de definitie van `cq:dialog` .

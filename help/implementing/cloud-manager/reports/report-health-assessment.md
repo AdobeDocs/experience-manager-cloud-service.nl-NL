@@ -3,8 +3,8 @@ title: Health Assessment for Production and Stage Environment
 description: Leer hoe u Cloud Manager Health Assessment gebruikt. U kunt AEM-omgevingen scannen, rapporten uitvoeren en reviseren, details van problemen bekijken, PDF's exporteren en vorige uitvoeringen beheren.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1406'
 ht-degree: 0%
@@ -27,42 +27,42 @@ De gezondheidsbeoordelingsdienst doet het volgende:
 
 Bij elke uitvoering worden problemen weergegeven op basis van ernst, koppelingen naar richtlijnen en aanbevolen oplossingen en wordt een PDF-export van het rapport ondersteund. U kunt de **Meest recente mening van het Rapport** voor de huidige staat gebruiken en **Verouderde Rapporten** om looppas te vergelijken.
 
-Zie ook {de patronen van de Beoordeling van de Gezondheid 0} [&#x200B; voor regeldefinities en saneringsdetails.](#ha-patterns)
+Zie ook {de patronen van de Beoordeling van de Gezondheid 0} [ voor regeldefinities en saneringsdetails.](#ha-patterns)
 
 ## Toegang tot de pagina Health Assessment {#access-health-assessment}
 
-1. Teken in Cloud Manager bij [&#x200B; experience.adobe.com &#x200B;](https://experience.adobe.com).
+1. Teken in Cloud Manager bij [ experience.adobe.com ](https://experience.adobe.com).
 1. In de **Snelle toegang** sectie, klik **Experience Manager**.
 1. In het linkerzijpaneel, klik **Cloud Manager**.
 1. Selecteer de gewenste organisatie. De onderstaande afbeelding is ter illustratie. Selecteer uw eigen organisatie.
 
-   ![&#x200B; Selecterend een organisatie in Cloud Manager &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-org.png)
+   ![ Selecterend een organisatie in Cloud Manager ](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
 1. Op de **Mijn console van Programma&#39;s**, klik het programma waarvoor u zijn rapport wilt bekijken.
 
 1. Voer een van de volgende handelingen uit:
-   * In de **kaart van Milieu**, rechts van een milieunaam, klik ![&#x200B; het pictogram van de Ellipsis of Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg), dan kies **Beoordeling van de Gezondheid** van het menu.
+   * In de **kaart van Milieu**, rechts van een milieunaam, klik ![ het pictogram van de Ellipsis of Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg), dan kies **Beoordeling van de Gezondheid** van het menu.
 
-     ![&#x200B; het Selecteren van de Beoordeling van de Gezondheid van het ellipsmenu in de kaart van Milieu &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png)
+     ![ het Selecteren van de Beoordeling van de Gezondheid van het ellipsmenu in de kaart van Milieu ](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png)
 
-   * Van het linkerzijmenu, onder **Diensten**, klik ![&#x200B; het pictogram van Gegevens &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**. Voor de pagina van Milieu, rechts van een milieunaam, klik ![&#x200B; het pictogram van de Ellipsis of Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg), dan kies **de Beoordeling van de Gezondheid** van het menu.
+   * Van het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**. Voor de pagina van Milieu, rechts van een milieunaam, klik ![ het pictogram van de Ellipsis of Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg), dan kies **de Beoordeling van de Gezondheid** van het menu.
 
-     ![&#x200B; het Selecteren van de Beoordeling van de Gezondheid van het ellipsmenu op de pagina van Milieu&#39;s &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png)
+     ![ het Selecteren van de Beoordeling van de Gezondheid van het ellipsmenu op de pagina van Milieu&#39;s ](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png)
 
 ## Een nieuw rapport uitvoeren voor een geselecteerde omgeving {#run-report}
 
-1. [&#x200B; toegang tot de pagina van de Beoordeling van de Gezondheid &#x200B;](#access-health-assessment).
+1. [ toegang tot de pagina van de Beoordeling van de Gezondheid ](#access-health-assessment).
 1. In de hoger-juiste hoek van de **pagina van de Beoordeling van de Gezondheid**, bevestig het doelmilieu dat u op het punt staat te beoordelen.
 
-   Als het milieu onjuist is, klik ![&#x200B; onderaan of drop-down menu aan geselecteerd een verschillend milieu &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) om het correcte milieu van de lijst te kiezen.
+   Als het milieu onjuist is, klik ![ onderaan of drop-down menu aan geselecteerd een verschillend milieu ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) om het correcte milieu van de lijst te kiezen.
 
 1. Klik **Rapport van de Looppas**.
 
-   ![&#x200B; klik de Generate nieuwe rapportknoop op de pagina van de Beoordeling van de Gezondheid &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
+   ![ klik de Generate nieuwe rapportknoop op de pagina van de Beoordeling van de Gezondheid ](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
 
    Terwijl een rapport voor het geselecteerde milieu loopt, **looppas Gehandicapte de verblijven van het Rapport** tot het eindigt.
 
-   ![&#x200B; Rapport in het midden van het lopen &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
+   ![ Rapport in het midden van het lopen ](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
    Wanneer het rapport volledig is, verschijnt het rapport op de **pagina van de Beoordeling van de Gezondheid**, in de **Laatste sectie van het Rapport**.
 
@@ -76,11 +76,11 @@ Zie ook {de patronen van de Beoordeling van de Gezondheid 0} [&#x200B; voor rege
    * Belangrijkste punten.
    * Acties: **[details van de Mening](#view-report-details)** of **[Download PDF](#download-pdf-report)** van alle kwesties.
 
-  ![&#x200B; de Meest recente pagina van de Beoordeling na de generatie van een nieuw rapport voor een geselecteerd milieu &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-latest-report-page.png)
+  ![ de Meest recente pagina van de Beoordeling na de generatie van een nieuw rapport voor een geselecteerd milieu ](/help/implementing/cloud-manager/reports/assets/ha-latest-report-page.png)
 
 ### Bekijk de meest recente rapportdetails {#view-report-details}
 
-* Op de **pagina van de Beoordeling van de Gezondheid**, rechts van de **Meest recente titel van het Rapport**, klik ![&#x200B; het pictogram van de Ellipsis of Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg), dan klik **Details van de Mening** of **Download**.
+* Op de **pagina van de Beoordeling van de Gezondheid**, rechts van de **Meest recente titel van het Rapport**, klik ![ het pictogram van de Ellipsis of Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg), dan klik **Details van de Mening** of **Download**.
 
   De **optie van de Details van de Mening** toont u het volgende:
 
@@ -88,11 +88,11 @@ Zie ook {de patronen van de Beoordeling van de Gezondheid 0} [&#x200B; voor rege
    * Mogelijkheid om bevindingen en beschrijvingen weer te geven.
    * Mogelijkheid om documentatie met mogelijke oplossingen te bekijken.
 
-     ![&#x200B; de beschrijvingen en het vinden van de kwestie &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-issue-descriptions-and-findings.png)
+     ![ de beschrijvingen en het vinden van de kwestie ](/help/implementing/cloud-manager/reports/assets/ha-issue-descriptions-and-findings.png)
 
    * De **optie van de Download** geeft u de capaciteit om individuele uitgifterapporten in PDF te downloaden.
 
-     ![&#x200B; Download PDF van individuele uitgifterapporten &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-details-page-doc-links.png)
+     ![ Download PDF van individuele uitgifterapporten ](/help/implementing/cloud-manager/reports/assets/ha-details-page-doc-links.png)
 
 
 ### PDF van volledig rapport downloaden {#download-pdf-report}
@@ -101,7 +101,7 @@ Zie ook {de patronen van de Beoordeling van de Gezondheid 0} [&#x200B; voor rege
 
   Er wordt een ZIP-bestand gegenereerd dat PDF&#39;s bevat voor alle problemen die in dat rapport worden gedetecteerd.
 
-  ![&#x200B; Download PDF van alle kwesties die in een rapport &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-download-pdf.png) worden gevonden
+  ![ Download PDF van alle kwesties die in een rapport ](/help/implementing/cloud-manager/reports/assets/ha-download-pdf.png) worden gevonden
 
 
 ## Eerdere rapporten bekijken {#review-past-reports}
@@ -113,10 +113,10 @@ Op de **pagina van de Beoordeling van de Gezondheid**, herzie de **Oudere sectie
 * Download een PDF voor elk rapport.
 * Sorteren op datum, aantal uitgaven of omgeving.
 
-![&#x200B; Overzicht voorbij rapporten &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
+![ Overzicht voorbij rapporten ](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
 
-* Aan het recht van de **Oude rubriek van Rapporten**, klik ![&#x200B; onderaan of drop-down menu aan geselecteerd een verschillend milieu &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) om voorbij rapporten door datum te sorteren.
-* Helemaal rechts van een rapport, klik ![&#x200B; het pictogram van de Ellipse of Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg), dan klik **de details van de Mening** of **Download**.
+* Aan het recht van de **Oude rubriek van Rapporten**, klik ![ onderaan of drop-down menu aan geselecteerd een verschillend milieu ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) om voorbij rapporten door datum te sorteren.
+* Helemaal rechts van een rapport, klik ![ het pictogram van de Ellipse of Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg), dan klik **de details van de Mening** of **Download**.
 
 
 ## Health Assessment Patronen {#ha-patterns}
@@ -125,12 +125,12 @@ Hieronder volgt een volledige lijst van antipatronen en problemen die door Healt
 
 | Patroonnaam | Categorie | Type | Beschrijving | Gevolgen | Automatisch gecorrigeerd? |
 | --- | --- | --- | --- | --- | --- |
-| Aangepaste AEM-groepen met directe gebruikerstoevoeging | Beveiliging | Inhoudsanalyse | Gebruikers die rechtstreeks aan AEM-groepen zijn toegevoegd in plaats van IMS-groepen als leden toe te voegen. | Het beheer van machtigingen en het beheer van de beveiliging kunnen ingewikkeld worden. [&#x200B; IMS Steun &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/ims-support) | Nee |
-| Ontbrekend JCR-inhoudsknooppunt op pagina&#39;s | Structuur opslagplaats | Inhoudsanalyse | Het knooppunt `jcr:content` ontbreekt op de pagina. | Functionele beperkingen in Experience Manager as a Cloud Service. [&#x200B; de opsporing van het Patroon - ACV &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-pattern-detection/table-of-contents/acv) | Nee |
-| Ontbrekend brontype op pagina&#39;s | Structuur opslagplaats | Inhoudsanalyse | Ontbrekende `sling:resourceType` op pagina. | Functionele beperkingen in Experience Manager as a Cloud Service. [&#x200B; de opsporing van het Patroon - ACV &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-pattern-detection/table-of-contents/acv) | Nee |
-| Pagina&#39;s met te veel knooppunten | Prestaties | Inhoudsanalyse | Pagina&#39;s bevatten een groot aantal knooppunten in hun structuur. | Trage laadtijden voor pagina&#39;s en slechte gebruikerservaring. [&#x200B; de opsporing van het Patroon - PCX &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-pattern-detection/table-of-contents/pcx) | Nee |
-| Buitengewone werkstroominstanties | Prestaties | Inhoudsanalyse | Er zijn te veel workflowinstanties actief. | Algemene verslechtering van de systeemprestaties. [&#x200B; de taken van het Onderhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/maintenance) | Nee |
-| Niet-gezuiverde voltooide workflowinstanties | Prestaties | Inhoudsanalyse | Oudere voltooide workflowexemplaren worden niet gewist. | Minder systeemefficiëntie en hogere opslagkosten. [&#x200B; de taken van het Onderhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/maintenance) | Nee |
+| Aangepaste AEM-groepen met directe gebruikerstoevoeging | Beveiliging | Inhoudsanalyse | Gebruikers die rechtstreeks aan AEM-groepen zijn toegevoegd in plaats van IMS-groepen als leden toe te voegen. | Het beheer van machtigingen en het beheer van de beveiliging kunnen ingewikkeld worden. [ IMS Steun ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/ims-support) | Nee |
+| Ontbrekend JCR-inhoudsknooppunt op pagina&#39;s | Structuur opslagplaats | Inhoudsanalyse | Het knooppunt `jcr:content` ontbreekt op de pagina. | Functionele beperkingen in Experience Manager as a Cloud Service. [ de opsporing van het Patroon - ACV ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | Nee |
+| Ontbrekend brontype op pagina&#39;s | Structuur opslagplaats | Inhoudsanalyse | Ontbrekende `sling:resourceType` op pagina. | Functionele beperkingen in Experience Manager as a Cloud Service. [ de opsporing van het Patroon - ACV ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | Nee |
+| Pagina&#39;s met te veel knooppunten | Prestaties | Inhoudsanalyse | Pagina&#39;s bevatten een groot aantal knooppunten in hun structuur. | Trage laadtijden voor pagina&#39;s en slechte gebruikerservaring. [ de opsporing van het Patroon - PCX ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | Nee |
+| Buitengewone werkstroominstanties | Prestaties | Inhoudsanalyse | Er zijn te veel workflowinstanties actief. | Algemene verslechtering van de systeemprestaties. [ de taken van het Onderhoud ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) | Nee |
+| Niet-gezuiverde voltooide workflowinstanties | Prestaties | Inhoudsanalyse | Oudere voltooide workflowexemplaren worden niet gewist. | Minder systeemefficiëntie en hogere opslagkosten. [ de taken van het Onderhoud ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) | Nee |
 | Statistieken inhoudsfragmentgebruik | Statistieken | Inhoudsanalyse | Tracks the number of Content Fragments in use. | NVT | NVT |
 | Gebruiksstatistieken inhoudsfragmentmodel | Statistieken | Inhoudsanalyse | Tracks the number of Content Fragment Models in use. | NVT | NVT |
 | MSM groot aantal blauwdrukken | Statistieken | Inhoudsanalyse | Traceert het aantal blauwdrukken. | Het kan de complexiteit van het beheer vergroten en het beheer van de inhoud bemoeilijken. | NVT |

@@ -2,9 +2,9 @@
 title: Source voor inhoud configureren
 description: Leer hoe u de inhoudsbron voor uw Edge Delivery-site configureert. Gebruik "fstab.yaml"met de architectuur van Helix 4, of gebruik de geleide tovenaar in Cloud Manager (of de Dienst API van de Configuratie) met de architectuur van Helix 5.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: 71618a5603328990603db2ee7554048c9020a883
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 0%
@@ -30,12 +30,12 @@ Dit artikel biedt uitgebreide configuratiestappen, voorbeelden en validatie-inst
 
 **alvorens u** begint
 
-Als u [&#x200B; gebruikt één klik Edge Delivery in Cloud Manager &#x200B;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), gebruikt uw plaats Helix 5 met één enkele bewaarplaats. [&#x200B; volg Helix 5 instructies &#x200B;](#config-helix5) en gebruik de verstrekte versie van Helix 4 YAML van de instructies als reserve.
+Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), gebruikt uw plaats Helix 5 met één enkele bewaarplaats. [ volg Helix 5 instructies ](#config-helix5) en gebruik de verstrekte versie van Helix 4 YAML van de instructies als reserve.
 
 **Bepaal uw versie van de Helix**
 
 * Helix 4 - Uw project bevat een `fstab.yaml` -bestand.
-* Helix 5 - Uw project *gebruikt* niet `fstab.yaml` en werd opstelling door [&#x200B; Cloud Manager gebruikend de geleide tovenaar &#x200B;](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) of API.
+* Helix 5 - Uw project *gebruikt* niet `fstab.yaml` en werd opstelling door [ Cloud Manager gebruikend de geleide tovenaar ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) of API.
 
 Bevestig de gegevens in de gegevensopslagruimte of raadpleeg uw beheerder als u nog niet zeker weet.
 

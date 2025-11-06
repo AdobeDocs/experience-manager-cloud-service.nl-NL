@@ -4,14 +4,14 @@ description: Leer hoe u intelligente formuliervelden maakt met vooraf ingevulde 
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 0%
 
 ---
-
 
 # Slimme velden met LLM-functionaliteit in Forms Experience Builder {#llm-enhanced-smart-fields}
 
@@ -230,7 +230,6 @@ Slimme velden werken uitzonderlijk goed met voorwaardelijke regels:
      worden gebaseerd voeg een stadsgebied toe dat de filters die op het geselecteerde land 
      worden gebaseerd een universitair gebied omvatten dat zich op het gekozen gebied van studie 
  aanpast
-
 ### Valideren en aanpassen
 
 Hoewel velden met LLM-ondersteuning uitgebreide gegevens bieden, moet u altijd:
@@ -250,7 +249,6 @@ Velden maken die worden aangepast op basis van andere formulierselecties:
      worden georganiseerd leidt tot een professionele certificatiedropdown die relevante opties toont die op baantitel 
      worden gebaseerd omvatten een stadsgebied dat filters die op geselecteerd land en gebied 
  worden gebaseerd
-
 ### Classificaties op meerdere niveaus
 
 hiërarchische gegevensstructuren maken:
@@ -267,7 +265,6 @@ Combineer LLM-kennis met de gegevens van uw organisatie:
      omvat tot een productgebied leiden dat industrie-standaardcategorieën met uw productcatalogus 
      omvat een plaatsgebied dat geografische gegevens met uw bureauplaatsen 
  samenvoegt
-
 ## Problemen met slimme velden oplossen {#troubleshooting-smart-fields}
 
 ### Gemeenschappelijke problemen en oplossingen
@@ -299,4 +296,3 @@ Combineer LLM-kennis met de gegevens van uw organisatie:
 * [Formulier maken met AI](forms-experience-builder-prompt-examples-library.md)
 * [Regels maken en bedrijfslogica](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [Formulierverzending en integratie](form-submission-integration.md)
-

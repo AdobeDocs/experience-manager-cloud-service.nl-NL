@@ -1,13 +1,13 @@
 ---
 title: Aanbevolen werkwijzen voor query en indexering
-description: Leer hoe u indexen en query's optimaliseert op basis van de richtlijnen die de Adobe hanteert.
+description: Leer hoe u indexen en query's optimaliseert op basis van de richtlijnen voor beste praktijken van Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3086'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Ook, wanneer het ontwerpen van een taxonomie, is het belangrijk om te overwegen 
 
 ### Zoekopdrachten in componenten {#queries-in-components}
 
-Aangezien de vragen één van de meer het belasten verrichtingen op een AEM systeem kunnen zijn, is het een goed idee om hen in uw componenten te vermijden. Als u meerdere query&#39;s hebt uitgevoerd telkens wanneer een pagina wordt gerenderd, kan dit vaak de prestaties van het systeem nadelig beïnvloeden. Er zijn twee strategieën die kunnen worden gebruikt om het uitvoeren van vragen te vermijden wanneer het teruggeven van componenten: **[het oversteken van knopen](#traversing-nodes)** en **[het prefetching resultaten](#prefetching-results)**.
+Aangezien query&#39;s een van de meer belastende bewerkingen op een AEM-systeem kunnen zijn, is het raadzaam deze te vermijden in uw componenten. Als u meerdere query&#39;s hebt uitgevoerd telkens wanneer een pagina wordt gerenderd, kan dit vaak de prestaties van het systeem nadelig beïnvloeden. Er zijn twee strategieën die kunnen worden gebruikt om het uitvoeren van vragen te vermijden wanneer het teruggeven van componenten: **[het oversteken van knopen](#traversing-nodes)** en **[het prefetching resultaten](#prefetching-results)**.
 
 ### Doorlopende knooppunten {#traversing-nodes}
 
@@ -62,24 +62,24 @@ Een vergelijkbare strategie kan worden gebruikt om het resultaat in een cache in
 
 ## Zoekopdrachten optimaliseren {#optimizing-queries}
 
-De documentatie van Oak verstrekt a [&#x200B; overzicht op hoog niveau hoe de vragen &#x200B;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) worden uitgevoerd. Dit vormt de basis van alle optimalisatieactiviteiten die in dit document worden beschreven.
+De documentatie van Oak verstrekt a [ overzicht op hoog niveau hoe de vragen ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) worden uitgevoerd. Dit vormt de basis van alle optimalisatieactiviteiten die in dit document worden beschreven.
 
-AEM as a Cloud Service verstrekt het [&#x200B; Hulpmiddel van de Prestaties van de Vraag &#x200B;](#query-performance-tool), dat wordt ontworpen om het uitvoeren van efficiënte vragen te steunen.
+AEM as a Cloud Service verstrekt het [ Hulpmiddel van de Prestaties van de Vraag ](#query-performance-tool), dat wordt ontworpen om het uitvoeren van efficiënte vragen te steunen.
 
 * Het toont reeds uitgevoerde vragen met hun relevante prestatieskenmerken en het vraagplan.
 * Het staat het uitvoeren van ad hoc vragen op diverse niveaus toe, die van enkel het tonen van het vraagplan tot het uitvoeren van de volledige vraag beginnen.
 
-Het hulpmiddel van de Prestaties van de Vraag is bereikbaar via [&#x200B; Developer Console in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=nl-NL#queries). Het Hulpmiddel van de Prestaties van de Vraag van AEM as a Cloud Service levert meer informatie over de details van de vraaguitvoering over de AEM 6.x versie.
+Het hulpmiddel van de Prestaties van de Vraag is bereikbaar via [ Developer Console in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries). AEM as a Cloud Service AEM het Hulpmiddel van de Prestaties van de Vraag levert meer informatie over de details van de vraaguitvoering over 6.x versie.
 
 Dit diagram illustreert de algemene stroom om het Hulpmiddel van de Prestaties van de Vraag te gebruiken om vragen te optimaliseren.
 
-![&#x200B; stroom van de Optimalisering van de Vraag &#x200B;](assets/query-optimization-flow.png)
+![ stroom van de Optimalisering van de Vraag ](assets/query-optimization-flow.png)
 
 ### Een index gebruiken {#use-an-index}
 
 Elke vraag zou een index moeten gebruiken om optimale prestaties te leveren. In de meeste gevallen, zouden de bestaande out-of-box indexen moeten voldoende zijn om vragen te behandelen.
 
-Soms moeten aangepaste eigenschappen worden toegevoegd aan een bestaande index, zodat aanvullende beperkingen kunnen worden gevraagd met de index. Zie het document [&#x200B; Inhoud Onderzoek en het Indexeren &#x200B;](/help/operations/indexing.md#changing-an-index) voor meer details. De [&#x200B; sectie van het Cheatsheet van de Vraag JCR &#x200B;](#jcr-query-cheatsheet) van dit document beschrijft hoe een bezitsdefinitie op een index moet kijken om een specifiek vraagtype te steunen.
+Soms moeten aangepaste eigenschappen worden toegevoegd aan een bestaande index, zodat aanvullende beperkingen kunnen worden gevraagd met de index. Zie het document [ Inhoud Onderzoek en het Indexeren ](/help/operations/indexing.md#changing-an-index) voor meer details. De [ sectie van het Cheatsheet van de Vraag JCR ](#jcr-query-cheatsheet) van dit document beschrijft hoe een bezitsdefinitie op een index moet kijken om een specifiek vraagtype te steunen.
 
 ### De juiste criteria gebruiken {#use-the-right-criteria}
 
@@ -87,7 +87,7 @@ De primaire beperking op om het even welke vraag zou een bezitsgelijke moeten zi
 
 De query-engine beschouwt slechts één index. Dat betekent dat een bestaande index kan en moet worden aangepast door er meer aangepaste indexeigenschappen aan toe te voegen.
 
-De [&#x200B; sectie van de Vraag JCR &#x200B;](#jcr-query-cheatsheet) van dit document maakt een lijst van de beschikbare beperkingen en ook schetst hoe een indexdefinitie moet kijken zodat het opnam. Gebruik het [&#x200B; Hulpmiddel van de Prestaties van de Vraag &#x200B;](#query-performance-tool) om de vraag te testen en ervoor te zorgen dat de juiste index wordt gebruikt en dat de vraagmotor geen beperkingen buiten de index moet evalueren.
+De [ sectie van de Vraag JCR ](#jcr-query-cheatsheet) van dit document maakt een lijst van de beschikbare beperkingen en ook schetst hoe een indexdefinitie moet kijken zodat het opnam. Gebruik het [ Hulpmiddel van de Prestaties van de Vraag ](#query-performance-tool) om de vraag te testen en ervoor te zorgen dat de juiste index wordt gebruikt en dat de vraagmotor geen beperkingen buiten de index moet evalueren.
 
 ### Volgorde {#ordering}
 
@@ -103,22 +103,24 @@ Als een specifieke orde van het resultaat wordt gevraagd, zijn er twee manieren 
 
 De teruggewonnen grootte van het vraagresultaat is een belangrijke factor in vraagprestaties. Aangezien het resultaat op een luie manier wordt gehaald, is er een verschil in enkel het halen van de eerste 20 resultaten in vergelijking met het halen van 10.000 resultaten, zowel in runtime als geheugengebruik.
 
-Dit betekent ook dat de grootte van de resultaatset alleen correct kan worden bepaald als alle resultaten worden opgehaald. Om deze reden, zou de gehaalde resultaatreeks altijd moeten worden beperkt, of door de vraag (zie de [&#128279;](#jcr-query-cheatsheet) sectie van de Vraag 0&rbrace; te verhogen JCR van dit document voor details) of door de gelezen resultaten van de resultaten te beperken.
+Dit betekent ook dat de grootte van de resultaatset alleen correct kan worden bepaald als alle resultaten worden opgehaald. Om deze reden, zou de gehaalde resultaatreeks altijd moeten worden beperkt, of door de vraag (zie de [ sectie van de Vraag 0} te verhogen JCR van dit document voor details) of door de gelezen resultaten van de resultaten te beperken.](#jcr-query-cheatsheet)
 
 Zulk een grens verhindert ook de vraagmotor de **doorlopende grens** van 100.000 knopen te raken, die tot een gedwongen einde van de vraag leidt.
 
-Zie de sectie [&#x200B; Vragen met grote resultaatreeksen &#x200B;](#queries-with-large-result-sets) van dit document als een potentieel grote resultaatreeks volledig moet worden verwerkt.
+Zie de sectie [ Vragen met grote resultaatreeksen ](#queries-with-large-result-sets) van dit document als een potentieel grote resultaatreeks volledig moet worden verwerkt.
 
 ## Query-prestaties {#query-performance-tool}
 
-Het Hulpmiddel van de Prestaties van de Vraag (dat bij `/libs/granite/operations/content/diagnosistools/queryPerformance.html` wordt gevestigd en beschikbaar via [&#x200B; Developer Console in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=nl-NL#queries)) verstrekt -
+Het Hulpmiddel van de Prestaties van de Vraag (dat bij `/libs/granite/operations/content/diagnosistools/queryPerformance.html` wordt gevestigd en beschikbaar via [ Developer Console in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)) verstrekt -
+
 * Een lijst met &#39;Trage query&#39;s&#39;; wordt momenteel gedefinieerd als het lezen/scannen van meer dan 5000 rijen.
 * Een lijst met &#39;Populaire vragen&#39;
 * Het hulpmiddel van de Vraag van het &quot;verklaart&quot;voor het begrip hoe een bepaalde vraag door Oak zal worden uitgevoerd.
 
-![&#x200B; Hulpmiddel van de Prestaties van de Vraag &#x200B;](assets/query-performance-tool.png)
+![ Hulpmiddel van de Prestaties van de Vraag ](assets/query-performance-tool.png)
 
 De tabellen &#39;Trage query&#39;s&#39; en &#39;Populaire query&#39;s&#39; bevatten:
+
 * De query-instructie zelf.
 * Details van de laatste Draad die de vraag uitvoerde, toestaand de pagina of toepassingseigenschap die de vraag uitvoeren om worden geïdentificeerd.
 * De score &#39;Leesoptimalisatie&#39; voor de query.
@@ -128,13 +130,13 @@ De tabellen &#39;Trage query&#39;s&#39; en &#39;Populaire query&#39;s&#39; bevat
    * Lezen - geeft aan dat een rij is opgenomen als onderdeel van een resultaatset.
    * Gescand - erop wijzend dat een rij in de resultaten van de onderliggende indexvraag (in het geval van een geïndexeerde vraag) werd omvat of van het nodestore (in het geval van een bewaarplaats traversal) werd gelezen.
 
-Deze lijsten helpen het identificeren van vragen die niet volledig worden geïndexeerd (zie [&#x200B; Gebruik een Index &#x200B;](#use-an-index) of lees teveel knopen (zie ook [&#x200B; Traversal van de Bewaarplaats &#x200B;](#repository-traversal) en [&#x200B; Traversal van de Index &#x200B;](#index-traversal)). Dergelijke vragen zullen worden benadrukt - de aangewezen gebieden van zorg worden gemerkt rood.
+Deze lijsten helpen het identificeren van vragen die niet volledig worden geïndexeerd (zie [ Gebruik een Index ](#use-an-index) of lees teveel knopen (zie ook [ Traversal van de Bewaarplaats ](#repository-traversal) en [ Traversal van de Index ](#index-traversal)). Dergelijke vragen zullen worden benadrukt - de aangewezen gebieden van zorg worden gemerkt rood.
 
 De optie `Reset Statistics` is bedoeld om alle bestaande statistieken te verwijderen die in de tabellen worden verzameld. Dit staat de uitvoering van een bepaalde vraag (of via de toepassing zelf of het Uitleg hulpmiddel van de Vraag) en de analyse van de uitvoeringsstatistieken toe.
 
 ### Query uitvoeren
 
-Het Uitdrukkelijke hulpmiddel van de Vraag staat ontwikkelaars toe om het Plan van de Uitvoering van de Vraag te begrijpen (zie [&#x200B; die het Plan van de Uitvoering van de Vraag &#x200B;](#reading-query-execution-plan) leest), met inbegrip van details van om het even welke indexen die wanneer het uitvoeren van de vraag worden gebruikt. Dit kan worden gebruikt om te begrijpen hoe effectief een vraag wordt geïndexeerd om te voorspellen, of met terugwerkende kracht zijn prestaties te analyseren.
+Het Uitdrukkelijke hulpmiddel van de Vraag staat ontwikkelaars toe om het Plan van de Uitvoering van de Vraag te begrijpen (zie [ die het Plan van de Uitvoering van de Vraag ](#reading-query-execution-plan) leest), met inbegrip van details van om het even welke indexen die wanneer het uitvoeren van de vraag worden gebruikt. Dit kan worden gebruikt om te begrijpen hoe effectief een vraag wordt geïndexeerd om te voorspellen, of met terugwerkende kracht zijn prestaties te analyseren.
 
 #### Een query verklaren
 
@@ -147,17 +149,18 @@ Ga als volgt te werk om een query uit te leggen:
    * Er zijn drie opties beschikbaar voor het uitvoeren van de query -
       * `Include Execution Time` - voer de query uit, maar probeer geen resultaten te lezen.
       * `Read first page of results` - voer de vraag uit en lees de eerste &quot;pagina&quot;van 20 resultaten (het herhalen van de beste praktijken voor het uitvoeren van vragen).
-      * `Include Node Count` - voer de vraag uit en lees de volledige resultaatreeks (over het algemeen wordt dit niet geadviseerd - zie [&#x200B; Traversal van de Index &#x200B;](#index-traversal)).
+      * `Include Node Count` - voer de vraag uit en lees de volledige resultaatreeks (over het algemeen wordt dit niet geadviseerd - zie [ Traversal van de Index ](#index-traversal)).
 
 #### Pop-up Query-uitleg {#query-explanation-popup}
 
-![&#x200B; Pop-up van de Verklaring van de Vraag &#x200B;](./assets/query-explanation-popup.png)
+![ Pop-up van de Verklaring van de Vraag ](./assets/query-explanation-popup.png)
 
 Na het selecteren van `Explain`, wordt de gebruiker voorgesteld met een pop-up beschrijvend het resultaat van de vraag verklaart (en uitvoering, als geselecteerd).
 Deze pop-up bevat gegevens van -
-* De indexen gebruikte toen het uitvoeren van de vraag (of geen index als de vraag gebruikend [&#x200B; Traversal van de Bewaarplaats &#x200B;](#repository-traversal) zou worden uitgevoerd).
+
+* De indexen gebruikte toen het uitvoeren van de vraag (of geen index als de vraag gebruikend [ Traversal van de Bewaarplaats ](#repository-traversal) zou worden uitgevoerd).
 * De uitvoeringstijd (als het selectievakje `Include Execution Time` was ingeschakeld) en het aantal resultaten dat is gelezen (als de selectievakjes `Read first page of results` of `Include Node Count` zijn ingeschakeld).
-* Het uitvoeringsplan, dat gedetailleerde analyse toestaat van hoe de vraag wordt uitgevoerd - zie [&#x200B; die het Plan van de Uitvoering van de Vraag &#x200B;](#reading-query-execution-plan) leest voor hoe te om dit te interpreteren.
+* Het uitvoeringsplan, dat gedetailleerde analyse toestaat van hoe de vraag wordt uitgevoerd - zie [ die het Plan van de Uitvoering van de Vraag ](#reading-query-execution-plan) leest voor hoe te om dit te interpreteren.
 * De paden van de eerste 20 queryresultaten (als het selectievakje `Read first page of results` was ingeschakeld)
 * De volledige logboeken van de vraagplanning, die de relatieve kosten van de indexen tonen die voor de uitvoering van deze vraag werden overwogen (de index met de laagste kosten zal worden gekozen).
 
@@ -172,6 +175,7 @@ Kijk eens naar de volgende query -
 ```
 
 ... bevat
+
 * 3 beperkingen
    * nodeType (`dam:Asset`)
    * Pad (onderliggende elementen van `/content/dam`)
@@ -191,11 +195,12 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 In dit deel van het plan staat: -
+
 * Er wordt een index gebruikt om deze query uit te voeren -
    * In dit geval zal de index van Lucene `/oak:index/damAssetLucene-9` worden gebruikt, zodat is de resterende informatie in de Syntaxis van de Vraag van Lucene.
 * Alle 3 beperkingen worden afgehandeld door de index -
    * De nodetype-beperking
-      * impliciet, omdat `damAssetLucene-9` alleen knooppunten van het type dam:Asset indexeert.
+      * impliciet, omdat `damAssetLucene-9` slechts knopen van type dam :Asset indexeert.
    * De padbeperking
       * omdat `+:ancestors:/content/dam` wordt weergegeven in de Lucene-query.
    * De eigenschapsbeperking
@@ -203,7 +208,7 @@ In dit deel van het plan staat: -
 * De volgorde wordt afgehandeld door de index
    * omdat `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]` wordt weergegeven in de Lucene-query.
 
-Zulk een vraag zal waarschijnlijk goed presteren, aangezien de resultaten die van de indexvraag zijn teruggekeerd niet verder in de vraagmotor (behalve het filtreren van de Controle van de Toegang) zullen worden gefiltreerd. Nochtans, is het nog mogelijk voor zulk een vraag om langzaam uit te voeren als de beste praktijken niet worden gevolgd - zie [&#128279;](#index-traversal) hieronder Traversal van de Index van 0&rbrace;.
+Zulk een vraag zal waarschijnlijk goed presteren, aangezien de resultaten die van de indexvraag zijn teruggekeerd niet verder in de vraagmotor (behalve het filtreren van de Controle van de Toegang) zullen worden gefiltreerd. Nochtans, is het nog mogelijk voor zulk een vraag om langzaam uit te voeren als de beste praktijken niet worden gevolgd - zie [ hieronder Traversal van de Index van 0}.](#index-traversal)
 
 Een andere query overwegen -
 
@@ -212,6 +217,7 @@ Een andere query overwegen -
 ```
 
 ... bevat
+
 * 3 beperkingen
    * nodeType (`dam:Asset`)
    * Pad (onderliggende elementen van `/content/dam`)
@@ -231,9 +237,10 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 In dit deel van het plan staat: -
+
 * Slechts 2 (van de 3) beperkingen worden door de index afgehandeld -
    * De nodetype-beperking
-      * impliciet, omdat `damAssetLucene-9` alleen knooppunten van het type dam:Asset indexeert.
+      * impliciet, omdat `damAssetLucene-9` slechts knopen van type dam :Asset indexeert.
    * De padbeperking
       * omdat `+:ancestors:/content/dam` wordt weergegeven in de Lucene-query.
 * De bezitsbeperking `jcr:content/metadata/myProperty = "My Property Value"` wordt niet uitgevoerd bij de index, maar eerder zal als het filtreren van de Motor van de Vraag op de resultaten van de onderliggende vraag van Lucene worden toegepast.
@@ -241,7 +248,7 @@ In dit deel van het plan staat: -
 
 Dit plan van de vraaguitvoering zal ertoe leiden dat elk element onder `/content/dam` van de index wordt gelezen, en dan verder gefilterd door de vraagmotor (die slechts die zal omvatten die de niet-geïndexeerde bezitsbeperking in de resultaatreeks aanpassen).
 
-Zelfs als slechts een klein percentage van activa de beperking `jcr:content/metadata/myProperty = "My Property Value"` aanpast, moet de vraag een groot aantal knopen lezen (poging om) de gevraagde &quot;pagina&quot;van resultaten te vullen. Dit kan in slecht uitvoerend vraag resulteren, die zal worden getoond zoals hebbend een lage `Read Optimization` score in het hulpmiddel van de Prestaties van de Vraag) en kan tot WARN berichten leiden die erop wijzen dat de grote aantallen knopen (zie [&#x200B; het Doorlopen van de Index &#x200B;](#index-traversal)) worden overgestoken.
+Zelfs als slechts een klein percentage van activa de beperking `jcr:content/metadata/myProperty = "My Property Value"` aanpast, moet de vraag een groot aantal knopen lezen (poging om) de gevraagde &quot;pagina&quot;van resultaten te vullen. Dit kan in slecht uitvoerend vraag resulteren, die zal worden getoond zoals hebbend een lage `Read Optimization` score in het hulpmiddel van de Prestaties van de Vraag) en kan tot WARN berichten leiden die erop wijzen dat de grote aantallen knopen (zie [ het Doorlopen van de Index ](#index-traversal)) worden overgestoken.
 
 Als u de prestaties van deze tweede query wilt optimaliseren, maakt u een aangepaste versie van de `damAssetLucene-9` index (`damAssetLucene-9-custom-1` ) en voegt u de volgende eigenschapdefinitie toe -
 
@@ -255,7 +262,7 @@ Als u de prestaties van deze tweede query wilt optimaliseren, maakt u een aangep
 
 ## JCR-query - Cheat Sheet {#jcr-query-cheatsheet}
 
-Om de verwezenlijking van efficiënte vragen JCR en indexdefinities te steunen, is het [&#x200B; JCR- Cheat Sheet van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=nl-NL#jcrquerycheatsheet) beschikbaar voor download en gebruik als verwijzing tijdens ontwikkeling.
+Om de verwezenlijking van efficiënte vragen JCR en indexdefinities te steunen, is het [ JCR- Cheat Sheet van de Vraag ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) beschikbaar voor download en gebruik als verwijzing tijdens ontwikkeling.
 
 Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van Oak te bouwen of aan te passen. De inhoud van dit controleblad is van toepassing op AEM as a Cloud Service en AEM 6.5.
 
@@ -264,7 +271,7 @@ Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige s
 Hieronder volgen enkele aanbevolen procedures voor het definiëren of uitbreiden van indexen.
 
 * Voor nodetypes die bestaande indexen (zoals `dam:Asset` of `cq:Page`) hebben, verkies uitbreiding van indexen OOTB aan de toevoeging van nieuwe indexen.
-   * Het toevoegen van nieuwe indexen - vooral fulltext indexen - op `dam:Asset` nodetype wordt sterk ontmoedigd (zie [&#x200B; deze nota &#x200B;](/help/operations/indexing.md##index-names-index-names)).
+   * Het toevoegen van nieuwe indexen - vooral fulltext indexen - op `dam:Asset` nodetype wordt sterk ontmoedigd (zie [ deze nota ](/help/operations/indexing.md##index-names-index-names)).
 * Nieuwe indexen toevoegen
    * Definieer altijd indexen van het type &#39;lucene&#39;.
    * Gebruik een indexmarkering in de indexdefinitie (en bijbehorende vraag) en `selectionPolicy = tag` om ervoor te zorgen dat de index slechts voor de voorgenomen vragen wordt gebruikt.
@@ -276,7 +283,7 @@ Hieronder volgen enkele aanbevolen procedures voor het definiëren of uitbreiden
 
 >[!NOTE]
 >
->Voor meer informatie, zie {de documentatie van de Index van 0} Oak Lucene [&#128279;](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+>Voor meer informatie, zie {de documentatie van de Index van 0} Oak Lucene [.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 De geautomatiseerde Cloud Manager pijpleidingscontroles zullen enkele hierboven beschreven beste praktijken afdwingen.
 
@@ -284,8 +291,8 @@ De geautomatiseerde Cloud Manager pijpleidingscontroles zullen enkele hierboven 
 
 Hoewel het wordt geadviseerd om vragen met grote resultaatreeksen te vermijden, zijn er geldige gevallen waar de grote resultaatreeksen moeten worden verwerkt. Vaak is de omvang van het resultaat niet vooraf bekend, dus moeten er voorzorgsmaatregelen worden genomen om de verwerking betrouwbaar te maken.
 
-* De query moet niet worden uitgevoerd binnen een aanvraag. In plaats daarvan moet de query worden uitgevoerd als onderdeel van een Sling Job of een AEM workflow. Deze hebben geen beperkingen in hun totale runtime, en zijn opnieuw begonnen voor het geval de instantie tijdens de verwerking van de vraag en zijn resultaten daalt.
-* Om de vraaggrens van 100.000 knopen te overwinnen, zou u het gebruiken van [&#x200B; de Paginering van de Hoofdtelefoon &#x200B;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) moeten overwegen en de vraag in veelvoudige subquery&#39;s verdelen.
+* De query moet niet worden uitgevoerd binnen een aanvraag. In plaats daarvan moet de query worden uitgevoerd als onderdeel van een Sling Job- of AEM-workflow. Deze hebben geen beperkingen in hun totale runtime, en zijn opnieuw begonnen voor het geval de instantie tijdens de verwerking van de vraag en zijn resultaten daalt.
+* Om de vraaggrens van 100.000 knopen te overwinnen, zou u het gebruiken van [ de Paginering van de Hoofdtelefoon ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) moeten overwegen en de vraag in veelvoudige subquery&#39;s verdelen.
 
 ## Repository traversal {#repository-traversal}
 
@@ -300,7 +307,7 @@ Met dit logboekfragment kunt u bepalen:
 * De query zelf: `//*`
 * De Java-code die deze query heeft uitgevoerd: `com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics` om de maker van de query te identificeren.
 
-Met deze informatie, is het mogelijk om deze vraag te optimaliseren gebruikend de methodes die in [&#x200B; worden beschreven Optimizing de sectie van Vragen &#x200B;](#optimizing-queries) van dit document.
+Met deze informatie, is het mogelijk om deze vraag te optimaliseren gebruikend de methodes die in [ worden beschreven Optimizing de sectie van Vragen ](#optimizing-queries) van dit document.
 
 ### Indextraversal {#index-traversal}
 
@@ -328,6 +335,6 @@ Dit kan om verschillende redenen voorkomen -
 | Het gebruik van het filtreren predikt in de Bouwer van de Vraag die grote aantallen resultaten van de onderliggende vraag JCR filtreert | Filtervoorspelling vervangen door beperkingen die kunnen worden toegepast in de onderliggende JCR-query |
 | Het gebruik van een op vergelijker-gebaseerde sortering in QueryBuilder | Vervangen door op eigenschappen gebaseerde volgorde in de onderliggende JCR-query (met eigenschappen die zijn geïndexeerd zoals geordend) |
 | Filteren van grote aantallen resultaten als gevolg van toegangsbeheer | Pas extra geïndexeerde bezit of wegbeperking op de vraag toe om het Toegangsbeheer te weerspiegelen |
-| Het gebruik van &#39;offsetpaginering&#39; met een grote verschuiving | Overweeg het gebruiken van [&#x200B; Paginering Keyset &#x200B;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
-| Herhaling van grote of onbegrensde aantallen resultaten | Overweeg het gebruiken van [&#x200B; Paginering Keyset &#x200B;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Het gebruik van &#39;offsetpaginering&#39; met een grote verschuiving | Overweeg het gebruiken van [ Paginering Keyset ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Herhaling van grote of onbegrensde aantallen resultaten | Overweeg het gebruiken van [ Paginering Keyset ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
 | Onjuiste index gekozen | Tags gebruiken in vraag- en indexdefinitie om te controleren of de verwachte index wordt gebruikt |

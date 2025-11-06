@@ -4,8 +4,8 @@ description: Leer over het gebruiken van verwijzingen in de Fragmenten van de In
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [&#x200B; Reis van de Auteur van de Inhoud van AEM Headless &#x200B;](overview.md) de [&#x200B; Inleiding &#x200B;](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
 U hebt de grondbeginselen geleerd van Headless CMS Authoring, met een inleiding tot het ontwerpen met AEMaaCS en in het bijzonder, het ontwerpen van Inhoudsfragmenten.
 
@@ -38,7 +38,7 @@ Verwijzingen zijn gewoon een mechanisme om uw bronnen aan te sluiten, of het nu 
 
 Sommige verwijzingen hebben specifieke gegevenstypen (bijvoorbeeld Content References en Fragmentverwijzingen), terwijl andere eenvoudig worden toegevoegd als een verwijzing binnen een tekstblok (elementverwijzingen en geïmproviseerde verwijzingen).
 
-![&#x200B; de Fragmenten van de Inhoud - Verwijzingen &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![ de Fragmenten van de Inhoud - Verwijzingen ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Content References {#content-references}
 
@@ -55,7 +55,7 @@ Er zijn twee typen:
 
 Assets (bijvoorbeeld, beelden of media) kan binnen een blok van de Tekst van verwijzingen worden voorzien door de **activa van het Tussenvoegsel** optie te gebruiken. Hiermee opent u een browser waarin u het element kunt selecteren.
 
-![&#x200B; de Fragmenten van de Inhoud - Tussenvoegsel Activa &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![ de Fragmenten van de Inhoud - Tussenvoegsel Activa ](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## Fragmentverwijzingen {#fragment-references}
 
@@ -94,7 +94,7 @@ Er zijn twee soorten:
 
 Het ontwerpen van de Verwijzingen van het Fragment is vrij ongecompliceerd (hoewel gewoonlijk zal het gebied niet als **Verwijzing van het Fragment** worden geëtiketteerd). U kunt de verwijzing rechtstreeks invoeren of (waarschijnlijker) het mappictogram selecteren om een browser te openen waarin u door het gewenste fragment kunt navigeren en het gewenste fragment kunt selecteren.
 
-![&#x200B; de Fragmenten van de Inhoud - Verwijzingen &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![ de Fragmenten van de Inhoud - Verwijzingen ](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
 De definitie van de besturingselementen van het inhoudsfragmentmodel:
 
@@ -105,17 +105,17 @@ De definitie van de besturingselementen van het inhoudsfragmentmodel:
 
 Gebruikend het **lusje van de Boom van de Structuur** van de Redacteur van het Fragment van de Inhoud kunt u door de fragmenten navigeren die door uw fragment van verwijzingen worden voorzien, en dan door om het even welke verwijzingen zij kunnen bevatten. Als u een verwijzing selecteert, wordt dat fragment geopend voor bewerking.
 
-![&#x200B; de Structuur van het Fragment van de Inhoud Boom &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
+![ de Structuur van het Fragment van de Inhoud Boom ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## Ad-hocverwijzingen {#adhoc-references}
 
 De verbeterde verwijzingen kunnen als eenvoudige verbinding binnen een blok van tekst worden toegevoegd:
 
-![&#x200B; de Fragmenten van de Inhoud - ad hoc Verwijzingen &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![ de Fragmenten van de Inhoud - ad hoc Verwijzingen ](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
 ## Volgende functies {#whats-next}
 
-Nu u over verwijzingen en structuur in de Fragmenten van de Inhoud hebt geleerd, moet de volgende stap [&#x200B; leren hoe over Meta-gegevens en het Tags &#x200B;](metadata-tagging.md). Zo leert en bespreekt u hoe u metagegevens en tags voor de inhoudsfragmenten kunt definiëren.
+Nu u over verwijzingen en structuur in de Fragmenten van de Inhoud hebt geleerd, moet de volgende stap [ leren hoe over Meta-gegevens en het Tags ](metadata-tagging.md). Zo leert en bespreekt u hoe u metagegevens en tags voor de inhoudsfragmenten kunt definiëren.
 
 ## Aanvullende bronnen {#additional-resources}
 

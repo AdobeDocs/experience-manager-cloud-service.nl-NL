@@ -3,8 +3,8 @@ title: Aan de slag met Forms op AEM Edge Delivery Services
 description: Leer hoe u hoogwaardige formulieren maakt en levert op Adobe Experience Manager Edge Delivery Services, met de nadruk op de Universal Editor-ontwerpaanpak.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Aan de slag met Forms op AEM Edge Delivery Services
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 Met Adobe Experience Manager (AEM) Edge Delivery Services (EDS) kunt u vanaf de rand genieten van supersnelle, zeer schaalbare webbeleving. Deze gids verklaart **hoe te om vormen voor die ervaringen** te bouwen en te publiceren—met een duidelijke aanbevelingshiërarchie:
@@ -88,10 +88,10 @@ Document Authoring (DA) is ontworpen voor het maken van gestructureerde pagina-i
 
 ## Volgende stappen
 
-1. **Begin met Universele Redacteur:** zie de [&#x200B; Universele Redacteur begonnen gids &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) beginnen creërende vormen te beginnen.
-2. **vormVerzending:** selecteer en opstelling uw aangewezen voorleggingsmethode. Verwijs naar [&#x200B; de Dienst van de Verzending van Forms &#x200B;](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) of AEM publiceer acties voor configuratieinstructies.
-3. **pas Beste praktijken toe:** Overzicht [&#x200B; beste praktijken van het vormontwerp &#x200B;](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md) om toegankelijkheid en prestaties te verzekeren.
-4. **Gebruik op document-Gebaseerde Authoring:** om vormen met Microsoft Excel of de Bladen van Google tot stand te brengen, volg het [&#x200B; op document-Gebaseerde Authoring leerprogramma &#x200B;](/help/edge/docs/forms/tutorial.md).
-5. **bedt Forms in Document Authoring in:** als u pagina&#39;s in Document Authoring bouwt, raadpleeg het [&#x200B; DA leerprogramma &#x200B;](https://www.aem.live/developer/da-tutorial) voor instructies over het inbedden van gepubliceerde vormen.
+1. **Begin met Universele Redacteur:** zie de [ Universele Redacteur begonnen gids ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) beginnen creërende vormen te beginnen.
+2. **vormVerzending:** selecteer en opstelling uw aangewezen voorleggingsmethode. Verwijs naar [ de Dienst van de Verzending van Forms ](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) of AEM publiceer acties voor configuratieinstructies.
+3. **pas Beste praktijken toe:** Overzicht [ beste praktijken van het vormontwerp ](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md) om toegankelijkheid en prestaties te verzekeren.
+4. **Gebruik op document-Gebaseerde Authoring:** om vormen met Microsoft Excel of de Bladen van Google tot stand te brengen, volg het [ op document-Gebaseerde Authoring leerprogramma ](/help/edge/docs/forms/tutorial.md).
+5. **bedt Forms in Document Authoring in:** als u pagina&#39;s in Document Authoring bouwt, raadpleeg het [ DA leerprogramma ](https://www.aem.live/developer/da-tutorial) voor instructies over het inbedden van gepubliceerde vormen.
 
 > **u bent nu klaar om uw eerste krachtige vorm met AEM Edge Delivery Services tot stand te brengen.**

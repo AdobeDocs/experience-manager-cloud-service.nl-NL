@@ -3,8 +3,8 @@ title: Modeldefinities, velden en componenttypen
 description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Dit document biedt een overzicht van een modeldefinitie en van de velden en comp
 
 >[!TIP]
 >
->Als u niet vertrouwd met bent hoe te om uw app voor de Universele Redacteur van een instrument te voorzien, te zien gelieve het document [&#x200B; Universele Overzicht van de Redacteur voor de Ontwikkelaars van AEM &#x200B;](/help/implementing/universal-editor/developer-overview.md).
+>Als u niet vertrouwd met bent hoe te om uw app voor de Universele Redacteur van een instrument te voorzien, te zien gelieve het document [ Universele Overzicht van de Redacteur voor de Ontwikkelaars van AEM ](/help/implementing/universal-editor/developer-overview.md).
 
 ## Modeldefinitiestructuur {#model-structure}
 
@@ -43,7 +43,7 @@ De modeldefinitie is een JSON-structuur, te beginnen met een array van modellen.
 
 Zie de **[sectie van Gebieden](#fields)** van dit document voor meer informatie over hoe te om uw `fields` serie te bepalen.
 
-U kunt een model aan een component op twee manieren verbinden: het gebruiken van de [&#x200B; componentendefinitie &#x200B;](#component-definition) of [&#x200B; via de instrumentatie.](#instrumentation)
+U kunt een model aan een component op twee manieren verbinden: het gebruiken van de [ componentendefinitie ](#component-definition) of [ via de instrumentatie.](#instrumentation)
 
 ### Koppelen met gebruik van componentdefinitie {#component-definition}
 
@@ -51,7 +51,7 @@ Dit is de voorkeursmethode voor het koppelen van het model aan de component. Hie
 
 Neem gewoon de eigenschap `model` op in het componentobject in de `components` -array in het `component-definition.json` -bestand.
 
-Voor details, gelieve te zien de document [&#x200B; Definitie van de Component.](/help/implementing/universal-editor/component-definition.md)
+Voor details, gelieve te zien de document [ Definitie van de Component.](/help/implementing/universal-editor/component-definition.md)
 
 ### Koppeling met behulp van instrumentatie {#instrumentation}
 
@@ -66,7 +66,7 @@ Als u de modeldefinitie met een component wilt gebruiken, kunt u het attribuut `
 >De Universele Redacteur controleert eerst of een model via de instrumentatie wordt verbonden en gebruikt dat alvorens de componentendefinitie te controleren. Dit betekent:
 >
 >* Projecten die de koppeling naar het model via de instrumenten hebben geïmplementeerd, zullen ongewijzigd blijven werken en hoeven niet te worden gewijzigd.
->* Als u het model in de [&#x200B; componentendefinitie &#x200B;](#component-definition) evenals in de instrumentatie bepaalt, zal de instrumentatie altijd worden gebruikt.
+>* Als u het model in de [ componentendefinitie ](#component-definition) evenals in de instrumentatie bepaalt, zal de instrumentatie altijd worden gebruikt.
 
 ## Modeldefinitie laden {#loading-model}
 
@@ -91,7 +91,7 @@ Een veldobject heeft de volgende typedefinitie.
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
 | `component` | `ComponentType` | Renderer van de component | Ja |
-| `name` | `string` | Bezit [&#x200B; of weg &#x200B;](#nesting) waar de gegevens zullen worden voortgeduurd | Ja |
+| `name` | `string` | Bezit [ of weg ](#nesting) waar de gegevens zullen worden voortgeduurd | Ja |
 | `label` | `FieldLabel` | Label van het veld | Ja |
 | `description` | `FieldDescription` | Beschrijving van het veld | Nee |
 | `value` | `FieldValue` | Dit is een standaardwaarde die als plaatsaanduiding fungeert. Deze waarde heeft geen invloed op updates van inhoud. Het is slechts een vertegenwoordiging in UI. | Nee |
@@ -99,7 +99,7 @@ Een veldobject heeft de volgende typedefinitie.
 | `required` | `boolean` | Is het vereiste veld | Nee |
 | `readOnly` | `boolean` | Is het veld alleen-lezen | Nee |
 | `hidden` | `boolean` | Is het veld standaard verborgen | Nee |
-| `condition` | `RulesLogic` | Regel om het gebied te tonen of te verbergen dat op a [&#x200B; wordt gebaseerd voorwaarde &#x200B;](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Nee |
+| `condition` | `RulesLogic` | Regel om het gebied te tonen of te verbergen dat op a [ wordt gebaseerd voorwaarde ](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Nee |
 | `multi` | `boolean` | Is het gebied een multi gebied <br/> Nota dat container het nesten niet voor multi-gebieden in het eigenschappen paneel wordt toegelaten | Nee |
 | `validation` | `ValidationType` | Validatieregel(s) voor het veld | Nee |
 | `raw` | `unknown` | Onbewerkte gegevens die door de component kunnen worden gebruikt | Nee |
@@ -118,22 +118,22 @@ Hieronder vindt u de componenttypen die u kunt gebruiken voor het weergeven van 
 
 | Beschrijving | Componenttype |
 |---|---|
-| [&#x200B; de Markering van AEM &#x200B;](#aem-tag) | `aem-tag` |
-| [&#x200B; Inhoud AEM &#x200B;](#aem-content) | `aem-content` |
-| [&#x200B; Van Boole &#x200B;](#boolean) | `boolean` |
-| [&#x200B; Checkbox Groep &#x200B;](#checkbox-group) | `checkbox-group` |
-| [&#x200B; Container &#x200B;](#container) | `container` |
-| [&#x200B; het Fragment van de Inhoud &#x200B;](#content-fragment) | `aem-content-fragment` |
-| [&#x200B; Tijd van de Datum &#x200B;](#date-time) | `date-time` |
-| [&#x200B; Fragment van de Ervaring &#x200B;](#experience-fragment) | `aem-experience-fragment` |
-| [&#x200B; Multiselect &#x200B;](#multiselect) | `multiselect` |
-| [&#x200B; Aantal &#x200B;](#number) | `number` |
-| [&#x200B; Groep van de Keuzerondjes &#x200B;](#radio-group) | `radio-group` |
-| [&#x200B; Verwijzing &#x200B;](#reference) | `reference` |
-| [&#x200B; Rijke Tekst &#x200B;](#rich-text) | `richtext` |
-| [&#x200B; Uitgezocht &#x200B;](#select) | `select` |
-| [&#x200B; Lusje &#x200B;](#tab) | `tab` |
-| [&#x200B; Tekst &#x200B;](#text) | `text` |
+| [ de Markering van AEM ](#aem-tag) | `aem-tag` |
+| [ Inhoud AEM ](#aem-content) | `aem-content` |
+| [ Van Boole ](#boolean) | `boolean` |
+| [ Checkbox Groep ](#checkbox-group) | `checkbox-group` |
+| [ Container ](#container) | `container` |
+| [ het Fragment van de Inhoud ](#content-fragment) | `aem-content-fragment` |
+| [ Tijd van de Datum ](#date-time) | `date-time` |
+| [ Fragment van de Ervaring ](#experience-fragment) | `aem-experience-fragment` |
+| [ Multiselect ](#multiselect) | `multiselect` |
+| [ Aantal ](#number) | `number` |
+| [ Groep van de Keuzerondjes ](#radio-group) | `radio-group` |
+| [ Verwijzing ](#reference) | `reference` |
+| [ Rijke Tekst ](#rich-text) | `richtext` |
+| [ Uitgezocht ](#select) | `select` |
+| [ Lusje ](#tab) | `tab` |
+| [ Tekst ](#text) | `text` |
 
 #### AEM-tag {#aem-tag}
 
@@ -159,17 +159,17 @@ Een AEM-tagcomponenttype maakt een AEM-tagkiezer mogelijk, die kan worden gebrui
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Screenshot van het type van de markeringscomponent van AEM &#x200B;](assets/component-types/aem-tag-picker.png)
+![ Screenshot van het type van de markeringscomponent van AEM ](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
 >[!TIP]
 >
->Gelieve te zien het document [&#x200B; Leiden Gegevens van de Taxonomie &#x200B;](https://www.aem.live/docs/authoring-taxonomy) voor meer informatie over hoe u spreadsheets kunt gebruiken om uw taxonomiegegevens voor uw project van Edge Delivery Services te beheren.
+>Gelieve te zien het document [ Leiden Gegevens van de Taxonomie ](https://www.aem.live/docs/authoring-taxonomy) voor meer informatie over hoe u spreadsheets kunt gebruiken om uw taxonomiegegevens voor uw project van Edge Delivery Services te beheren.
 
 #### AEM Content {#aem-content}
 
-Een AEM-inhoudcomponenttype maakt een AEM-inhoudkiezer mogelijk, die kan worden gebruikt om een willekeurige AEM-bron te selecteren. In tegenstelling tot de [&#x200B; verwijzingscomponent &#x200B;](#reference), die slechts activa kan selecteren, kan de de inhoudscomponent van AEM van verwijzingen voorzien de inhoud van AEM. Het biedt een aanvullend validatietype aan.
+Een AEM-inhoudcomponenttype maakt een AEM-inhoudkiezer mogelijk, die kan worden gebruikt om een willekeurige AEM-bron te selecteren. In tegenstelling tot de [ verwijzingscomponent ](#reference), die slechts activa kan selecteren, kan de de inhoudscomponent van AEM van verwijzingen voorzien de inhoud van AEM. Het biedt een aanvullend validatietype aan.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -199,7 +199,7 @@ Een AEM-inhoudcomponenttype maakt een AEM-inhoudkiezer mogelijk, die kan worden 
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van het type van de inhoudscomponent van AEM &#x200B;](assets/component-types/aem-content-picker.png)
+![ Schermafbeelding van het type van de inhoudscomponent van AEM ](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
@@ -250,7 +250,7 @@ Een type van booleaanse component slaat een eenvoudige waar/vals waarde op die a
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van componenttype boolean &#x200B;](assets/component-types/boolean.png)
+![ Schermafbeelding van componenttype boolean ](assets/component-types/boolean.png)
 
 >[!ENDTABS]
 
@@ -282,7 +282,7 @@ Net als bij een booleaanse component staat een componenttype voor selectievakjes
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van het type van checkbox component van de groep &#x200B;](assets/component-types/checkbox-group.png)
+![ Schermafbeelding van het type van checkbox component van de groep ](assets/component-types/checkbox-group.png)
 
 >[!ENDTABS]
 
@@ -329,7 +329,7 @@ Met een containercomponenttype kunnen componenten worden gegroepeerd, inclusief 
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Screenshot van het type van containercomponent &#x200B;](assets/component-types/container.png)
+![ Screenshot van het type van containercomponent ](assets/component-types/container.png)
 
 >[!TAB  Multifield Steun ]
 
@@ -364,7 +364,7 @@ Met een containercomponenttype kunnen componenten worden gegroepeerd, inclusief 
 
 #### Inhoudsfragment {#content-fragment}
 
-De plukker van het Fragment van de Inhoud kan worden gebruikt om a [&#x200B; het Fragment van de Inhoud &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
+De plukker van het Fragment van de Inhoud kan worden gebruikt om a [ het Fragment van de Inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -378,7 +378,7 @@ Het biedt ook een aanvullend validatietype.
 
 >[!NOTE]
 >
->De Universele Redacteur [&#x200B; bevestigt de gebieden van het Fragment van de Inhoud die op hun modellen &#x200B;](/help/assets/content-fragments/content-fragments-models.md#validation) worden gebaseerd die u toestaan om de regels van de gegevensintegriteit zoals regex patronen en uniqueness beperkingen af te dwingen.
+>De Universele Redacteur [ bevestigt de gebieden van het Fragment van de Inhoud die op hun modellen ](/help/assets/content-fragments/content-fragments-models.md#validation) worden gebaseerd die u toestaan om de regels van de gegevensintegriteit zoals regex patronen en uniqueness beperkingen af te dwingen.
 >
 >Dit zorgt ervoor dat uw inhoud aan specifieke bedrijfsvereisten alvorens het wordt gepubliceerd voldoet.
 
@@ -408,7 +408,7 @@ Het biedt ook een aanvullend validatietype.
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van de plukker van het Fragment van de Inhoud &#x200B;](assets/component-types/aem-content-fragment.png)
+![ Schermafbeelding van de plukker van het Fragment van de Inhoud ](assets/component-types/aem-content-fragment.png)
 
 >[!ENDTABS]
 
@@ -499,13 +499,13 @@ Het biedt ook een aanvullend validatietype.
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van het type van de component van de datumtijd &#x200B;](assets/component-types/date-time.png)
+![ Schermafbeelding van het type van de component van de datumtijd ](assets/component-types/date-time.png)
 
 >[!ENDTABS]
 
 #### Ervaar fragment {#experience-fragment}
 
-De plukker van het Fragment van de Ervaring kan worden gebruikt om een [&#x200B; Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/fragments/experience-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
+De plukker van het Fragment van de Ervaring kan worden gebruikt om een [ Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/experience-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -543,7 +543,7 @@ Het biedt ook een aanvullend validatietype.
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van de plukker van het Fragment van de Ervaring &#x200B;](assets/component-types/aem-experience-fragment.png)
+![ Schermafbeelding van de plukker van het Fragment van de Ervaring ](assets/component-types/aem-experience-fragment.png)
 
 >[!ENDTABS]
 
@@ -611,8 +611,8 @@ Een multiselect componenttype stelt veelvoudige punten voor selectie in een drop
 
 >[!TAB  Screenshots ]
 
-![&#x200B; Schermafbeelding van multiselect componenttype &#x200B;](assets/component-types/multiselect.png)
-![&#x200B; Schermafbeelding van multiselect componenttype met groepering &#x200B;](assets/component-types/multiselect-group.png)
+![ Schermafbeelding van multiselect componenttype ](assets/component-types/multiselect.png)
+![ Schermafbeelding van multiselect componenttype met groepering ](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
 
@@ -671,7 +671,7 @@ Een type van aantalcomponent staat voor de input van een aantal toe. Er zijn aan
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van type van aantalcomponent &#x200B;](assets/component-types/number.png)
+![ Schermafbeelding van type van aantalcomponent ](assets/component-types/number.png)
 
 >[!ENDTABS]
 
@@ -703,13 +703,13 @@ Een componenttype voor een groep keuzerondjes maakt het mogelijk om meerdere opt
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van het type van de component van de radiagroep &#x200B;](assets/component-types/radio.png)
+![ Schermafbeelding van het type van de component van de radiagroep ](assets/component-types/radio.png)
 
 >[!ENDTABS]
 
 #### Referentie {#reference}
 
-Een type van verwijzingscomponent laat een de activakiezer van AEM toe, die kan worden gebruikt om om het even welk element van AEM te selecteren waarnaar te verwijzen. In tegenstelling tot de [&#x200B; de inhoudscomponent van AEM &#x200B;](#aem-content), die om het even welk middel van AEM kan selecteren, kan de verwijzingscomponent slechts activa van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
+Een type van verwijzingscomponent laat een de activakiezer van AEM toe, die kan worden gebruikt om om het even welk element van AEM te selecteren waarnaar te verwijzen. In tegenstelling tot de [ de inhoudscomponent van AEM ](#aem-content), die om het even welk middel van AEM kan selecteren, kan de verwijzingscomponent slechts activa van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
 
 Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject van het huidige object mogelijk.
 
@@ -733,7 +733,7 @@ Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject 
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van type van verwijzingscomponent &#x200B;](assets/component-types/reference.png)
+![ Schermafbeelding van type van verwijzingscomponent ](assets/component-types/reference.png)
 
 >[!ENDTABS]
 
@@ -761,7 +761,7 @@ RTF-tekst staat toe dat tekst met meerdere regels wordt ingevoerd.
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van het type van de component van het tekstgebied &#x200B;](assets/component-types/richtext.png)
+![ Schermafbeelding van het type van de component van het tekstgebied ](assets/component-types/richtext.png)
 
 >[!ENDTABS]
 
@@ -793,7 +793,7 @@ Met een componenttype select kunt u één optie selecteren in een lijst met voor
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van uitgezochte componenttype &#x200B;](assets/component-types/select.png)
+![ Schermafbeelding van uitgezochte componenttype ](assets/component-types/select.png)
 
 >[!ENDTABS]
 
@@ -841,7 +841,7 @@ Als u items boven alle tabbladen wilt weergeven, moet u deze vóór alle tabblad
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van type van lusjescomponent &#x200B;](assets/component-types/tab.png)
+![ Schermafbeelding van type van lusjescomponent ](assets/component-types/tab.png)
 
 >[!ENDTABS]
 
@@ -901,6 +901,6 @@ Met tekst kunt u één regel tekst invoeren.  Het bevat aanvullende validatietyp
 
 >[!TAB  Screenshot ]
 
-![&#x200B; Schermafbeelding van type van tekstcomponent &#x200B;](assets/component-types/simpletext.png)
+![ Schermafbeelding van type van tekstcomponent ](assets/component-types/simpletext.png)
 
 >[!ENDTABS]

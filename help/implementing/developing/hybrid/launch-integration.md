@@ -3,9 +3,9 @@ title: Integratie van SPA en Adobe Experience Platform Launch
 description: Adobe Experience Platform Launch is de geadviseerde manier om Analytics, Doel, en Audience Manager binnen SPAs uit te voeren.
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Adobe Experience Platform Launch is de geadviseerde manier om Analytics, Doel, e
 
 ## Zelfstudie {#tutorial}
 
-Om te begrijpen hoe te om uw KUUROORD met Adobe Experience Platform Launch te integreren, zie dit [&#x200B; artikel van de kennisbasis en leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=nl-NL). Deze begeleidt u door de installatie en implementatie van Experience Cloud die is gebouwd met Angular of React.
+Om te begrijpen hoe te om uw KUUROORD met Adobe Experience Platform Launch te integreren, zie dit [ artikel van de kennisbasis en leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). Deze begeleidt u door de installatie en implementatie van Experience Cloud die is gebouwd met Angular of React.
 
 >[!NOTE]
 >

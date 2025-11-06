@@ -3,9 +3,9 @@ title: Instelbare pushvalidatie voor een Edge Delivery-site
 description: Ontdek hoe u pushvalidatie voor een Edge Delivery-site configureert voor efficiënte updates van inhoud en caching.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -27,6 +27,6 @@ De volgende configuratieeigenschappen bepalen de naam van de productiegastheer e
 | `cdn.prod.host` | `<Production Host>` | Hostnaam van de productiesite. Bijvoorbeeld `www.example.com` . |
 | `cdn.prod.type` | beheerd |   |
 
-Zodra de veranderingen in het configuratieblad worden aangebracht, moeten de gebruikers hen voorproef en activeren gebruikend het [&#x200B; hulpmiddel van Sidekick &#x200B;](https://www.aem.live/docs/sidekick) om de updates toe te passen.
+Zodra de veranderingen in het configuratieblad worden aangebracht, moeten de gebruikers hen voorproef en activeren gebruikend het [ hulpmiddel van Sidekick ](https://www.aem.live/docs/sidekick) om de updates toe te passen.
 
-Zie ook [&#x200B; Ongeveer Edge Delivery om lijst in Cloud Manager &#x200B;](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) te doen.
+Zie ook [ Ongeveer Edge Delivery om lijst in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) te doen.

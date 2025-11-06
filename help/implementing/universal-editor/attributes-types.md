@@ -3,8 +3,8 @@ title: Kenmerken en itemtypen
 description: Leer over de gegevensattributen en de punttypes die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -28,9 +28,9 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 
 | Eigenschap gegevens | Beschrijving |
 |---|---|
-| `data-aue-resource` | URL aan het middel, zie het sectie [&#x200B; Instrument de Pagina van het document dat met de Universele Redacteur in AEM &#x200B;](getting-started.md#instrument-thepage) wordt begonnen |
-| `data-aue-prop` | Attribuut van het middel, zie het sectie [&#x200B; Instrument de Pagina van het document dat met de Universele Redacteur in AEM &#x200B;](getting-started.md#instrument-thepage) wordt begonnen |
-| `data-aue-type` | [&#x200B; Type van het editable punt &#x200B;](#item-types) (bijvoorbeeld, tekst, beeld, en verwijzing) |
+| `data-aue-resource` | URL aan het middel, zie het sectie [ Instrument de Pagina van het document dat met de Universele Redacteur in AEM ](getting-started.md#instrument-thepage) wordt begonnen |
+| `data-aue-prop` | Attribuut van het middel, zie het sectie [ Instrument de Pagina van het document dat met de Universele Redacteur in AEM ](getting-started.md#instrument-thepage) wordt begonnen |
+| `data-aue-type` | [ Type van het editable punt ](#item-types) (bijvoorbeeld, tekst, beeld, en verwijzing) |
 | `data-aue-filter` | Bepaalt:<br> - welke functies RTE <br> - welke componenten aan een container <br> kunnen worden toegevoegd - welke activa aan een media type kunnen worden toegevoegd |
 | `data-aue-label` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven |
 | `data-aue-model` | Definieert een model dat wordt gebruikt voor formulierbewerkingen in het deelvenster Eigenschappen |

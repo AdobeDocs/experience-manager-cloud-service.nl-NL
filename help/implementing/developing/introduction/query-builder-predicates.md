@@ -3,8 +3,8 @@ title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 0%
@@ -27,8 +27,8 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag; het is impliciet.
 * **`p.limit`** - getal dat het paginaformaat aangeeft.
 * **`p.guessTotal`** - aanbevolen: u kunt het volledige resultaattotaal niet berekenen, wat kostbaar kan zijn. Of een aantal die op het maximumtotaal om te tellen tot (bijvoorbeeld, 1000, een aantal wijst dat gebruikers genoeg terugkoppelt op de ruwe grootte en nauwkeurige aantallen voor kleinere resultaten). Of `true` om alleen tot het minimaal vereiste aantal `p.offset` + `p.limit` te tellen.
 * **`p.excerpt`** - als de waarde is ingesteld op `true` , neemt u het volledige tekstfragment op in het resultaat.
-* **`p.indexTag`** - als de reeks een optie van de indexmarkering in de vraag zal omvatten (zie {de Markering van de Index van de Optie van de 1} Vraag [&#128279;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
-* **`p.facetStrategy`** - als reeks aan `oak`, zal de Bouwer van de Vraag facetextractie aan Oak (zie [&#x200B; Facetten &#x200B;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)) afvaardigen.
+* **`p.indexTag`** - als de reeks een optie van de indexmarkering in de vraag zal omvatten (zie {de Markering van de Index van de Optie van de 1} Vraag [).](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)
+* **`p.facetStrategy`** - als reeks aan `oak`, zal de Bouwer van de Vraag facetextractie aan Oak (zie [ Facetten ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)) afvaardigen.
 * **`p.hits`** - (alleen voor het JSON-servlet) selecteer de manier waarop de treffers als JSON worden geschreven, met deze standaardresultaten (uitbreidbaar via de service ResultHitWriter).
    * **`simple`** - minimale items zoals `path` , `title` , `lastmodified` en `excerpt` (indien ingesteld).
    * **`full`** - hiermee wordt JSON-rendering van het knooppunt weergegeven, waarbij `jcr:path` het pad van de hit aangeeft. Standaard worden alleen de directe eigenschappen van het knooppunt weergegeven. Neem een diepere structuur met `p.nodedepth=N` op, waarbij 0 de volledige, oneindige substructuur betekent. Voeg `p.acls=true` toe om de JCR-machtigingen van de huidige sessie voor het opgegeven resultaatitem op te nemen (toewijzingen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
@@ -171,7 +171,7 @@ Het ondersteunt geen facetextractie.
 
 ### hasPermission {#haspermission}
 
-Dit voorspelt beperkt het resultaat tot punten waar de huidige zitting de gespecificeerde [&#x200B; voorrechten JCR &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) heeft.
+Dit voorspelt beperkt het resultaat tot punten waar de huidige zitting de gespecificeerde [ voorrechten JCR ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) heeft.
 
 Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken. Het ondersteunt geen facetextractie.
 
@@ -181,7 +181,7 @@ Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken. Het ondersteun
 
 ### taal {#language}
 
-Dit voorspelt vindt AEM pagina&#39;s in een specifieke taal. Hierbij wordt zowel naar de eigenschap language van de pagina als naar het paginapad gekeken. Deze eigenschap bevat vaak de taal of landinstelling in een sitestructuur op hoofdniveau.
+Met deze voorspelling worden AEM-pagina&#39;s in een specifieke taal gevonden. Hierbij wordt zowel naar de eigenschap language van de pagina als naar het paginapad gekeken. Deze eigenschap bevat vaak de taal of landinstelling in een sitestructuur op hoofdniveau.
 
 Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken.
 
@@ -205,7 +205,7 @@ Zij ondersteunt facetextractie en voorziet in twee emmers voor hoofd- en subacti
 
 ### lidOf {#memberof}
 
-Dit voorspelt vondsten punten die lid van een specifieke [&#x200B; sling middelinzameling &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
+Dit voorspelt vondsten punten die lid van een specifieke [ sling middelinzameling ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
 
 Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken.
 

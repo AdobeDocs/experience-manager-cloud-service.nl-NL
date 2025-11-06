@@ -2,9 +2,9 @@
 title: Een formulier maken met een adaptief Forms-blok
 description: Ga aan de slag met Edge Delivery Services voor AEM Forms. Creëer snelle perfecte formulieren! AEM Forms Edge Delivery-authoring op documentbasis = ultrahoge snelheid en SEO-vriendelijke formulieren voor gelukkigere gebruikers en zoekmachines.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -15,20 +15,20 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
-AEM Forms Edge Delivery biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt [&#x200B; tot een nieuw project van AEM leiden dat met het AanpassingsBlok van Forms &#x200B;](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [&#x200B; het Aangepaste Blok van Forms aan een bestaand project van AEM &#x200B;](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
+AEM Forms Edge Delivery biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt [ tot een nieuw project van AEM leiden dat met het AanpassingsBlok van Forms ](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [ het Aangepaste Blok van Forms aan een bestaand project van AEM ](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft SharePoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
-![&#x200B; op document-gebaseerde het Authoring ecosysteem &#x200B;](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![ op document-gebaseerde het Authoring ecosysteem ](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## Vereisten
 
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
-- Opstelling een [&#x200B; project van AEM gebruikend AEM Forms boilerplate &#x200B;](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [&#x200B; toevoegde Aangepast Blok van Forms aan uw bestaand Project van AEM &#x200B;](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine.
+- Opstelling een [ project van AEM gebruikend AEM Forms boilerplate ](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [ toevoegde Aangepast Blok van Forms aan uw bestaand Project van AEM ](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-- Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Aan opstelling Microsoft SharePoint als uw inhoudsbron, zie [&#x200B; hoe te SharePoint &#x200B;](https://www.aem.live/docs/setup-customer-sharepoint) gebruiken.
+- Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Aan opstelling Microsoft SharePoint als uw inhoudsbron, zie [ hoe te SharePoint ](https://www.aem.live/docs/setup-customer-sharepoint) gebruiken.
 
 
 
@@ -62,11 +62,11 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 +++ Stap 1: Een formulier ontwerpen met Microsoft Excel of Google Sheet.
 
-In plaats van door complexe processen te navigeren, kunt u zonder problemen een formulier maken met behulp van een spreadsheet. U kunt de rijen en kolommen definiëren die de formulierstructuur vormen. Elke rij vertegenwoordigt een individueel [&#x200B; vormgebied &#x200B;](/help/edge/docs/forms/form-components.md#available-components) en de kolomkopballen bepalen de overeenkomstige [&#x200B; gebiedseigenschappen &#x200B;](/help/edge/docs/forms/form-components.md#components-properties).
+In plaats van door complexe processen te navigeren, kunt u zonder problemen een formulier maken met behulp van een spreadsheet. U kunt de rijen en kolommen definiëren die de formulierstructuur vormen. Elke rij vertegenwoordigt een individueel [ vormgebied ](/help/edge/docs/forms/form-components.md#available-components) en de kolomkopballen bepalen de overeenkomstige [ gebiedseigenschappen ](/help/edge/docs/forms/form-components.md#components-properties).
 
-Bijvoorbeeld, overweeg het volgende spreadsheet waar de rijen gebieden voor a [&#x200B; vraag &#x200B;](/help/edge/assets/enquiry.xlsx) spreadsheet en kolomkopballen hun eigenschappen bepalen:
+Bijvoorbeeld, overweeg het volgende spreadsheet waar de rijen gebieden voor a [ vraag ](/help/edge/assets/enquiry.xlsx) spreadsheet en kolomkopballen hun eigenschappen bepalen:
 
-![&#x200B; Opiniepeiling spreadsheet &#x200B;](/help/edge/assets/enquiry-form-spreadsheet.png)
+![ Opiniepeiling spreadsheet ](/help/edge/assets/enquiry-form-spreadsheet.png)
 
 Ga als volgt te werk om het formulier te maken:
 
@@ -76,27 +76,27 @@ Ga als volgt te werk om het formulier te maken:
 
    <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
-1. Zorg ervoor dat het blad met de aangewezen gebruiker van AEM (bijvoorbeeld `forms@adobe.com`) [&#x200B; zoals per de configuraties wordt gedeeld die voor uw project &#x200B;](https://www.aem.live/docs/setup-customer-sharepoint) worden gespecificeerd. Hiermee geeft u de gebruiker bewerkingsmachtigingen voor het blad.
+1. Zorg ervoor dat het blad met de aangewezen gebruiker van AEM (bijvoorbeeld `forms@adobe.com`) [ zoals per de configuraties wordt gedeeld die voor uw project ](https://www.aem.live/docs/setup-customer-sharepoint) worden gespecificeerd. Hiermee geeft u de gebruiker bewerkingsmachtigingen voor het blad.
 
 1. Open het gemaakte werkblad en wijzig de naam van het standaardwerkblad in &quot;shared-name&quot;.
 
-   ![&#x200B; anders noem standaardblad aan &quot;gedeeld-gebrek&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
+   ![ anders noem standaardblad aan &quot;gedeeld-gebrek&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
    >[!IMPORTANT]
    >
    >**het blad waar de vorm wordt authored heeft beperkingen op wat het kan worden genoemd. Alleen `helix-default` en `shared-aem` kunnen als bladnamen worden gebruikt.**
 
-1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;shared-name&#39; blad in. Elke rij zou a [&#x200B; vormgebied &#x200B;](/help/edge/docs/forms/form-components.md#available-components), met kolomkopballen moeten vertegenwoordigen die de overeenkomstige gebied [&#x200B; eigenschappen &#x200B;](/help/edge/docs/forms/form-components.md#components-properties) bepalen.
+1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;shared-name&#39; blad in. Elke rij zou a [ vormgebied ](/help/edge/docs/forms/form-components.md#available-components), met kolomkopballen moeten vertegenwoordigen die de overeenkomstige gebied [ eigenschappen ](/help/edge/docs/forms/form-components.md#components-properties) bepalen.
 
 
-   Voor een snel begin, overweeg het kopiëren van de inhoud van het [&#x200B; Onderzoek spreadsheet &#x200B;](/help/edge/assets/enquiry.xlsx) in uw spreadsheet. Sla het werkblad op nadat u de inhoud hebt gekopieerd.
+   Voor een snel begin, overweeg het kopiëren van de inhoud van het [ Onderzoek spreadsheet ](/help/edge/assets/enquiry.xlsx) in uw spreadsheet. Sla het werkblad op nadat u de inhoud hebt gekopieerd.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 
-1. Het gebruik [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef het blad.
+1. Het gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef het blad.
 
-   ![&#x200B; Gebruik AEM Sidekick om voorproef het blad &#x200B;](/help/edge/assets/preview-form.png)
+   ![ Gebruik AEM Sidekick om voorproef het blad ](/help/edge/assets/preview-form.png)
 
    Als u een voorbeeld bekijkt, wordt de inhoud van het blad op de tabbladen van de nieuwe browser in JSON-indeling weergegeven. Zorg ervoor dat u de voorbeeld-URL vastlegt, zoals dit is vereist voor het weergeven van het formulier in de volgende sectie. De URL-indeling is als volgt:
 
@@ -126,7 +126,7 @@ Tot nu toe hebt u de structuur van het formulier voorbereid. Nu een voorbeeld va
 
 
 
-1. Open een documentbestand (bijvoorbeeld een indexbestand) om het formulier in te sluiten. Alternatief, kunt u [&#x200B; tot een nieuw document &#x200B;](/help/edge/assets/enquiry-form.docx) leiden.
+1. Open een documentbestand (bijvoorbeeld een indexbestand) om het formulier in te sluiten. Alternatief, kunt u [ tot een nieuw document ](/help/edge/assets/enquiry-form.docx) leiden.
 
 1. Ga naar de gewenste locatie in het document waar u het formulier wilt toevoegen.
 
@@ -137,7 +137,7 @@ Tot nu toe hebt u de structuur van het formulier voorbereid. Nu een voorbeeld va
    | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
-   ![&#x200B; voeg Aangepast Forms Blok aan uw webpagina toe &#x200B;](/help/edge/assets/enquiry-doc-to-embed-form.png)
+   ![ voeg Aangepast Forms Blok aan uw webpagina toe ](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    Dit blok fungeert als tijdelijke aanduiding voor het ingesloten formulier. Voeg in de tweede rij van het blok de voorbeeld-URL van het `<form>.json` -bestand toe als hyperlink.
 
@@ -147,20 +147,20 @@ Tot nu toe hebt u de structuur van het formulier voorbereid. Nu een voorbeeld va
    > Zorg ervoor dat de URL is opgemaakt als een hyperlink en niet wordt weergegeven als onbewerkte tekst.
 
 
-1. Gebruik [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om het document voor te vertonen. Het formulier wordt nu weergegeven op de pagina. Bijvoorbeeld, hier is de vorm die op [&#x200B; wordt gebaseerd onderzoeksspreadsheet &#x200B;](/help/edge/assets/enquiry-form.docx):
+1. Gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om het document voor te vertonen. Het formulier wordt nu weergegeven op de pagina. Bijvoorbeeld, hier is de vorm die op [ wordt gebaseerd onderzoeksspreadsheet ](/help/edge/assets/enquiry-form.docx):
 
 
-   [![&#x200B; de vorm van steekproefEDS van A &#x200B;](/help/edge/assets/updated-form.png) &#x200B;](https://main--wefinance--wkndform.aem.page/enquiry-form)
+   [![ de vorm van steekproefEDS van A ](/help/edge/assets/updated-form.png) ](https://main--wefinance--wkndform.aem.page/enquiry-form)
 
    Vul nu het formulier in en klik op de knop Verzenden. Er treedt een fout op, die lijkt op het volgende, omdat het werkblad nog niet is ingesteld op het accepteren van de gegevens.
 
-   ![&#x200B; fout op vormvoorlegging &#x200B;](/help/edge/assets/form-error.png)
+   ![ fout op vormvoorlegging ](/help/edge/assets/form-error.png)
 
 +++
 
 
 ## Volgende stap
 
-[&#x200B; bereidt uw spreadsheet &#x200B;](/help/edge/docs/forms/submit-forms.md) voor beginnen goedkeurend gegevens op vormvoorlegging.
+[ bereidt uw spreadsheet ](/help/edge/docs/forms/submit-forms.md) voor beginnen goedkeurend gegevens op vormvoorlegging.
 
 

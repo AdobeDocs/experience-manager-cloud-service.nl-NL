@@ -5,10 +5,10 @@ keywords: AEM Forms REST Endpoint, Submit aan REST Endpoint, Post Gegevens aan R
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Gebruik de handeling **[!UICONTROL Submit to REST Endpoint]** om de verzonden gegevens naar een REST-URL te verzenden. De URL kan van een interne (de server waarop het formulier wordt gegenereerd) of van een externe server zijn.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [&#x200B; AanpassingsVorm voorlegt Artikel van de Actie &#x200B;](/help/forms/aem-forms-submit-action.md).
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/aem-forms-submit-action.md).
 
 ## Voordelen
 
@@ -40,12 +40,12 @@ Verzendactie configureren op basis van de Swagger Open API-specificatie voor Ada
 1. Open het Adaptief formulier voor bewerking en ga naar de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Submit to Rest endpoint]**.
 
-   ![&#x200B; configuratie van de Actie van voorleggen aan het eindpunt van het Rest &#x200B;](/help/forms/assets/submit-action-restendpoint.png)
+   ![ configuratie van de Actie van voorleggen aan het eindpunt van het Rest ](/help/forms/assets/submit-action-restendpoint.png)
 
    Om gegevens aan een interne server te posten, verstrek weg van het middel. De gegevens worden gepost de weg van het middel. Bijvoorbeeld `/content/restEndPoint` . Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
 Deze optie staat u toe om het doelREST eindpunt direct in te gaan.
 Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point` . Zorg ervoor dat u de weg vormt om het POST- verzoek anoniem te behandelen.
-   ![&#x200B; Toewijzing voor gebiedswaarden die als Dank worden overgegaan de parameters van de Pagina &#x200B;](assets/post-enabled-actionconfig.png)
+   ![ Toewijzing voor gebiedswaarden die als Dank worden overgegaan de parameters van de Pagina ](assets/post-enabled-actionconfig.png)
 
    In het bovenstaande voorbeeld wordt door de gebruiker ingevoerde informatie in `textbox` vastgelegd met parameter `param1` . De syntaxis voor het posten van gegevens die zijn vastgelegd met `param1` is:
 
@@ -64,7 +64,7 @@ Met de handeling **[!UICONTROL Submit to REST endpoint]** Verzenden worden de ge
 
    Zoals aangetoond in het beeld hieronder, `param1` en `param2` worden overgegaan als parameters met waarden die van **worden gekopieerd textbox** en **numericbox** gebieden voor de volgende actie.
 
-   ![&#x200B; Vormend Rest Eindpunt legt Actie &#x200B;](assets/action-config.png) voor
+   ![ Vormend Rest Eindpunt legt Actie ](assets/action-config.png) voor
 
    U kunt ook **[!UICONTROL Enable POST request]** opgeven en een URL opgeven om de aanvraag te verzenden. Als u gegevens wilt verzenden naar de AEM-server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM-server. Bijvoorbeeld `/content/forms/af/SampleForm.html` . Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
@@ -75,11 +75,11 @@ Met de handeling **[!UICONTROL Submit to REST endpoint]** Verzenden worden de ge
 Verzendactie configureren op basis van de Swagger Open API-specificatie voor Adaptief formulier op basis van Core Components:
 
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op de tab **[!UICONTROL Submission]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Submit to Rest endpoint]**.
 
-   ![&#x200B; Vormend Rest Endpoint &#x200B;](assets/rest-service-endpoint-config.png)
+   ![ Vormend Rest Endpoint ](assets/rest-service-endpoint-config.png)
 
    Om gegevens aan een interne server te posten, verstrek weg van het middel. De gegevens worden gepost de weg van het middel. Bijvoorbeeld `/content/restEndPoint` . Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
 
@@ -90,7 +90,7 @@ Verzendactie configureren op basis van de Swagger Open API-specificatie voor Ada
    Deze optie staat u toe om het doelREST eindpunt direct in te gaan.
 Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point` . Zorg ervoor dat u de weg vormt om het POST- verzoek anoniem te behandelen.
 
-   ![&#x200B; Toewijzing voor gebiedswaarden die als Dank worden overgegaan de parameters van de Pagina &#x200B;](assets/post-enabled-actionconfig.png)
+   ![ Toewijzing voor gebiedswaarden die als Dank worden overgegaan de parameters van de Pagina ](assets/post-enabled-actionconfig.png)
 
    In het bovenstaande voorbeeld wordt door de gebruiker ingevoerde informatie in `textbox` vastgelegd met parameter `param1` . De syntaxis voor het posten van gegevens die zijn vastgelegd met `param1` is:
 
@@ -111,15 +111,15 @@ Geef een URL op om gegevens naar een externe server te posten. De opmaak van de 
 
    Zoals aangetoond in het beeld hieronder, `param1` en `param2` worden overgegaan als parameters met waarden die van **worden gekopieerd textbox** en **numericbox** gebieden voor de volgende actie.
 
-   ![&#x200B; Vormend Rest Eindpunt legt Actie &#x200B;](assets/action-config.png) voor
+   ![ Vormend Rest Eindpunt legt Actie ](assets/action-config.png) voor
 
    U kunt ook **[!UICONTROL Enable POST request]** opgeven en een URL opgeven om de aanvraag te verzenden. Als u gegevens wilt verzenden naar de AEM-server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM-server. Bijvoorbeeld `/content/forms/af/SampleForm.html` . Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
    +++
 
-   +++Configuration
+   +++Configuratie
 
-   Met deze optie kunt u een vooraf gedefinieerde HTTP-configuratie toevoegen die via de AEM Configuration Browser wordt beheerd. U kunt de Configuratie selecteren die voor uw Type van Authentificatie van het Eindpunt van de Rest van de Dienst en de Types van Inhoud wordt gecreeerd. Om meer over het Type van Authentificatie en de Types van Inhoud te weten, bezoek [&#x200B; vormen gegevensbronnen &#x200B;](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
+   Met deze optie kunt u een vooraf gedefinieerde HTTP-configuratie toevoegen die via de AEM Configuration Browser wordt beheerd. U kunt de Configuratie selecteren die voor uw Type van Authentificatie van het Eindpunt van de Rest van de Dienst en de Types van Inhoud wordt gecreeerd. Om meer over het Type van Authentificatie en de Types van Inhoud te weten, bezoek [ vormen gegevensbronnen ](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
    +++
 
@@ -131,11 +131,14 @@ Verzendactie configureren op basis van de Swagger Open API-specificatie voor Ada
 
 1. Open het adaptieve formulier voor bewerking.
 1. Klik **uitgeven de uitbreiding van de Eigenschappen van de Vorm** op de redacteur.
-Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
+
+   Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
+
    >[!NOTE]
    >
-   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [&#x200B; artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
 1. Klik **Verzending** lusje en selecteer **[!UICONTROL Submit to Rest endpoint]** voorlegt actie.
 
    Om gegevens aan een interne server te posten, verstrek weg van het middel. De gegevens worden gepost de weg van het middel. Bijvoorbeeld `/content/restEndPoint` . Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
@@ -147,7 +150,7 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
    Deze optie staat u toe om het doelREST eindpunt direct in te gaan.
 Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point` . Zorg ervoor dat u de weg vormt om het POST- verzoek anoniem te behandelen.
 
-   ![&#x200B; Toewijzing voor gebiedswaarden die als Dank worden overgegaan de parameters van de Pagina &#x200B;](assets/post-enabled-actionconfig.png)
+   ![ Toewijzing voor gebiedswaarden die als Dank worden overgegaan de parameters van de Pagina ](assets/post-enabled-actionconfig.png)
 
    In het bovenstaande voorbeeld wordt door de gebruiker ingevoerde informatie in `textbox` vastgelegd met parameter `param1` . De syntaxis voor het posten van gegevens die zijn vastgelegd met `param1` is:
 
@@ -168,15 +171,15 @@ Geef een URL op om gegevens naar een externe server te posten. De opmaak van de 
 
    Zoals aangetoond in het beeld hieronder, `param1` en `param2` worden overgegaan als parameters met waarden die van **worden gekopieerd textbox** en **numericbox** gebieden voor de volgende actie.
 
-   ![&#x200B; Vormend Rest Eindpunt legt Actie &#x200B;](/help/forms/assets/submit-to-rest-endpoint-ue.png) voor
+   ![ Vormend Rest Eindpunt legt Actie ](/help/forms/assets/submit-to-rest-endpoint-ue.png) voor
 
    U kunt ook **[!UICONTROL Enable POST request]** opgeven en een URL opgeven om de aanvraag te verzenden. Als u gegevens wilt verzenden naar de AEM-server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM-server. Bijvoorbeeld `/content/forms/af/SampleForm.html` . Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
    +++
 
-   +++Configuration
+   +++Configuratie
 
-   Met deze optie kunt u een vooraf gedefinieerde HTTP-configuratie toevoegen die via de AEM Configuration Browser wordt beheerd. U kunt de Configuratie selecteren die voor uw Type van Authentificatie van het Eindpunt van de Rest van de Dienst en de Types van Inhoud wordt gecreeerd. Om meer over het Type van Authentificatie en de Types van Inhoud te weten, bezoek [&#x200B; vormen gegevensbronnen &#x200B;](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
+   Met deze optie kunt u een vooraf gedefinieerde HTTP-configuratie toevoegen die via de AEM Configuration Browser wordt beheerd. U kunt de Configuratie selecteren die voor uw Type van Authentificatie van het Eindpunt van de Rest van de Dienst en de Types van Inhoud wordt gecreeerd. Om meer over het Type van Authentificatie en de Types van Inhoud te weten, bezoek [ vormen gegevensbronnen ](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
    +++
 

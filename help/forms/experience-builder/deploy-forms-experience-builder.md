@@ -4,20 +4,20 @@ description: Leer hoe u met de Forms Experience Builder formulieren met progress
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1404'
 ht-degree: 0%
 
 ---
 
-
 # Forms Experience Builder implementeren en configureren
 
 >[!NOTE]
 >
-> De Forms Experience Builder is beschikbaar via een programma voor vroege toegang. Controleer voordat u begint of u toegang hebt aangevraagd en gekregen. Voor volledige instructies, zie [&#x200B; onboarding &#x200B;](product-overview.md#onboarding) informatie.
+> De Forms Experience Builder is beschikbaar via een programma voor vroege toegang. Controleer voordat u begint of u toegang hebt aangevraagd en gekregen. Voor volledige instructies, zie [ onboarding ](product-overview.md#onboarding) informatie.
 
 >[!IMPORTANT]
 >
@@ -37,7 +37,7 @@ Voordat u Forms Experience Builder gaat gebruiken, moet u controleren of:
 
 ### Controleren of formulieren zijn ingeschakeld
 
-Alvorens de Bouwer van de Ervaring van Forms te gebruiken, zorg ervoor [&#x200B; AEM Forms voor uw milieu &#x200B;](/help/forms/setup-forms-cloud-service.md) wordt toegelaten.
+Alvorens de Bouwer van de Ervaring van Forms te gebruiken, zorg ervoor [ AEM Forms voor uw milieu ](/help/forms/setup-forms-cloud-service.md) wordt toegelaten.
 
 ### Uw omgeving instellen
 
@@ -45,11 +45,11 @@ Uw installatieproces is afhankelijk van uw AEM Forms-implementatie. Kies het pad
 
 **voor Edge Delivery Services**
 
-Als u Edge Delivery Services Forms gebruikt en vooral de Universal Editor. [&#x200B; bereidt uw project voor Edge Delivery Services Forms &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) voor. Dit is een eenmalige installatie om de Forms Experience Builder te kunnen gebruiken.
+Als u Edge Delivery Services Forms gebruikt en vooral de Universal Editor. [ bereidt uw project voor Edge Delivery Services Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) voor. Dit is een eenmalige installatie om de Forms Experience Builder te kunnen gebruiken.
 
 **voor op componenten-Gebaseerde vormen van de Kern**
 
-Als u Aangepaste Forms gebruikt die op de Componenten van de Kern in het auteursmilieu van AEM wordt gebaseerd, zorg [&#x200B; de Aangepaste Componenten van de Kern van Forms &#x200B;](/help/forms/enable-adaptive-forms-core-components.md) voor uw milieu wordt toegelaten.
+Als u Aangepaste Forms gebruikt die op de Componenten van de Kern in het auteursmilieu van AEM wordt gebaseerd, zorg [ de Aangepaste Componenten van de Kern van Forms ](/help/forms/enable-adaptive-forms-core-components.md) voor uw milieu wordt toegelaten.
 
 
 
@@ -65,23 +65,23 @@ U hebt toegang tot de Forms Experience Builder vanaf drie primaire locaties, afh
 U kunt de builder rechtstreeks starten terwijl u een specifiek formulier bewerkt.
 
 1. Navigeer aan **AEM > Forms > Forms &amp; Documenten**.
-1. [&#x200B; creeer een nieuwe vorm gebruikend een malplaatje van de Componenten van de Kern &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of open bestaande.
+1. [ creeer een nieuwe vorm gebruikend een malplaatje van de Componenten van de Kern ](/help/forms/creating-adaptive-form-core-components.md) of open bestaande.
 1. Selecteer het **pictogram van de Bouwer van de Ervaring van Forms** in de toolbar van de redacteur om de gespreksinterface te openen.
 
-   ![&#x200B; AI Hulp pictogram* &#x200B;](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
+   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
 **1. Universele Redacteur (voor Edge Delivery Services Forms)**
 
 Voor formulieren die via Edge Delivery Services worden geleverd, is de builder geïntegreerd in de Universal Editor.
 
 1. Open uw Edge Delivery Services-formulier in de Universal Editor.
-2. Selecteer het **pictogram van de Bouwer van de Ervaring van 0&rbrace; Forms &lbrace;in het juiste paneel om de gespreksinterface te lanceren.**
+2. Selecteer het **pictogram van de Bouwer van de Ervaring van 0} Forms {in het juiste paneel om de gespreksinterface te lanceren.**
 
 ### Uw eerste formulier
 
 | Voorbeeld van gesprek |   |
 |--------------------------------------------------------------------------------------------------------------------------------------------|---|
-| **probeer dit gesprek om een uitvoerige contactvorm tot stand te brengen (die op de demo van de Top wordt gebaseerd):**<br><br>**u:** &quot;creeer een contactvorm om persoonlijke informatie met inbegrip van volledige naam, e-mailadres, telefoonaantal, bedrijfsnaam, baantitel, en een berichtgebied voor onderzoeken&quot;AI te vangen:<br><br>**selecteer een malplaatje**    Een drop-down om een malplaatje <br> AI te selecteren:<br><br>**selecteer een thema**    Een drop-down om een thema <br> AI te selecteren:<br><br>**creeer Vorm** | ![&#x200B; Uw Eerste Vorm &#x200B;](/help/edge/docs/forms/assets/create-form.png) |
+| **probeer dit gesprek om een uitvoerige contactvorm tot stand te brengen (die op de demo van de Top wordt gebaseerd):**<br><br>**u:** &quot;creeer een contactvorm om persoonlijke informatie met inbegrip van volledige naam, e-mailadres, telefoonaantal, bedrijfsnaam, baantitel, en een berichtgebied voor onderzoeken&quot;AI te vangen:<br><br>**selecteer een malplaatje**    Een drop-down om een malplaatje <br> AI te selecteren:<br><br>**selecteer een thema**    Een drop-down om een thema <br> AI te selecteren:<br><br>**creeer Vorm** | ![ Uw Eerste Vorm ](/help/edge/docs/forms/assets/create-form.png) |
 | <br>**AI:** Open Gemaakt Vorm | </br> Het formulier wordt gemaakt en geopend in de editor |
 
 
@@ -265,4 +265,4 @@ De Forms Experience Builder kan u ook leren over AEM Forms-functies:
 * Problemen met algemene problemen oplossen
 
 
-Voor extra steun, verwijs naar de belangrijkste [&#x200B; Snelle Bibliotheek van de Bouwer van de Ervaring van Forms &#x200B;](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md) of contacteer uw systeembeheerder voor technische bijstand.
+Voor extra steun, verwijs naar de belangrijkste [ Snelle Bibliotheek van de Bouwer van de Ervaring van Forms ](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md) of contacteer uw systeembeheerder voor technische bijstand.

@@ -3,9 +3,9 @@ title: Architectuur van  [!DNL Assets]
 description: Architectuur van Adobe Experience Manager Assets als a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
-role: Architect
+role: Developer
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 [!DNL Experience Manager Assets] als a [!DNL Cloud Service] is gebaseerd op [!DNL Adobe Experience Manager] en vergelijkt goed met de nieuwste versie van [!DNL Experience Manager] 6.5. De [!DNL Cloud Service] -aanbieding heeft een aangepaste architectuur en functionaliteit die een service in de cloud kunnen worden. Door wijzigingen in de onderliggende architectuur kunnen niet alle Experience Manager 6.5-functies deel uitmaken van de [!DNL Cloud Service] .
 
-Om architectuuroverzicht van activa microdiensten te zien zie dit [&#x200B; overzicht van activa microservices &#x200B;](asset-microservices-overview.md#asset-microservices-architecture).
+Om architectuuroverzicht van activa microdiensten te zien zie dit [ overzicht van activa microservices ](asset-microservices-overview.md#asset-microservices-architecture).
 
 **zie ook**
 
@@ -37,5 +37,5 @@ Om architectuuroverzicht van activa microdiensten te zien zie dit [&#x200B; over
 >[!MORELIKETHIS]
 >
 >* [Overzicht en nieuwe functies](/help/assets/overview.md)
->* [&#x200B; Gesteunde dossierformaten en types MIME &#x200B;](file-format-support.md)
+>* [ Gesteunde dossierformaten en types MIME ](file-format-support.md)
 >* [Overzicht van microservices voor assets](asset-microservices-overview.md)

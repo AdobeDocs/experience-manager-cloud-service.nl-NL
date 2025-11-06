@@ -1,27 +1,27 @@
 ---
-title: Technische stichtingen AEM
-description: Een overzicht van de technische fundamenten van AEM, inclusief hoe AEM is gestructureerd en fundamentele technologieën zoals JCR, Sling en OSGi.
+title: Technische stichtingen van AEM
+description: Een overzicht van de technische fundamenten van AEM, waaronder de structuur van AEM en fundamentele technologieën zoals JCR, Sling en OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2130'
+source-wordcount: '2129'
 ht-degree: 0%
 
 ---
 
-# Technische stichtingen AEM {#aem-technical-foundations}
+# Technische stichtingen van AEM {#aem-technical-foundations}
 
-AEM is een robuust platform dat op bewezen, scalable, en flexibele technologieën wordt voortgebouwd. Dit document biedt een gedetailleerd overzicht van de verschillende onderdelen die AEM vormen en is bedoeld als een technisch aanhangsel voor een ontwikkelaar van een complete AEM. Het is niet bedoeld als gids aan de slag. Als u nieuw aan AEM ontwikkeling bent, zie [&#x200B; Begonnen het Ontwikkelen AEM Sites - WKND Leerprogramma &#x200B;](develop-wknd-tutorial.md) als eerste stap.
+AEM is een robuust platform dat is gebaseerd op bewezen, schaalbare en flexibele technologieën. Dit document geeft een gedetailleerd overzicht van de verschillende onderdelen waaruit AEM bestaat en is bedoeld als een technische bijlage voor een AEM-ontwikkelaar in volledige stapel. Het is niet bedoeld als gids aan de slag. Als u aan de ontwikkeling van AEM nieuw bent, zie [ Begonnen het Ontwikkelen van AEM Sites - WKND Leerprogramma ](develop-wknd-tutorial.md) als eerste stap.
 
 >[!TIP]
 >
->Alvorens in de kerntechnologieën van AEM te duiken, adviseert de Adobe de voltooiing van [&#x200B; Begonnen het Ontwikkelen van AEM Sites - WKND Leerprogramma &#x200B;](develop-wknd-tutorial.md).
+>Alvorens in de kerntechnologieën van AEM te duiken, adviseert Adobe de voltooiing van [ Begonnen het Ontwikkelen van AEM Sites - WKND Leerprogramma ](develop-wknd-tutorial.md).
 
 ## Grondbeginselen {#fundamentals}
 
-Als een modern contentbeheersysteem is AEM gebaseerd op standaardwebtechnologieën:
+AEM is een modern contentbeheersysteem en is hiervoor aangewezen op standaard webtechnologieën:
 
 * De aanvraagresponscyclus (XMLHttpRequest / XMLHttpResponse)
 * HTML
@@ -36,21 +36,21 @@ De onderliggende inhoudopslagplaats en de bedrijfslogische lagen worden gebouwd 
 
 ## Java™ Content Repository {#java-content-repository}
 
-De norm van de Bewaarplaats van de Inhoud Java™ (JCR), [&#x200B; JSR 283 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), specificeert een verkoper-onafhankelijke en implementatie-onafhankelijke manier om tot inhoud bidirectioneel op een korrelig niveau binnen een inhoudsbewaarplaats toegang te hebben. Het productdossier is in het bezit van Adobe Research (Zwitserland) AG.
+De norm van de Bewaarplaats van de Inhoud Java™ (JCR), [ JSR 283 ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), specificeert een verkoper-onafhankelijke en implementatie-onafhankelijke manier om tot inhoud bidirectioneel op een korrelig niveau binnen een inhoudsbewaarplaats toegang te hebben. Het productdossier is in het bezit van Adobe Research (Zwitserland) AG.
 
-Het [&#x200B; JCR API 2.0 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, `javax.jcr.*` wordt gebruikt voor de directe toegang en de manipulatie van bewaarplaatsinhoud.
+Het [ JCR API 2.0 ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, `javax.jcr.*` wordt gebruikt voor de directe toegang en de manipulatie van bewaarplaatsinhoud.
 
 AEM is gebaseerd op een JCR.
 
 ## Apache Jackrabbit Oak {#jackrabbit-oak}
 
-[&#x200B; Apache Jackrabbit Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/) is een implementatie van een scalable en krachtige hiërarchische inhoudsbewaarplaats voor gebruik als stichting van moderne websites van wereldklasse en andere veeleisende inhoudstoepassingen, in overeenstemming met de norm JCR.
+[ Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/) is een implementatie van een scalable en krachtige hiërarchische inhoudsbewaarplaats voor gebruik als stichting van moderne websites van wereldklasse en andere veeleisende inhoudstoepassingen, in overeenstemming met de norm JCR.
 
-Jackrabbit Oak (ook gewoon Oak genoemd) is de toepassing van de JCR-norm waarop AEM wordt gebouwd.
+Jackrabbit Oak (ook wel Oak genoemd) is de toepassing van de JCR-norm waarop AEM is gebouwd.
 
 ## Verwerking van aanvraag voor verzending {#sling-request-processing}
 
-AEM wordt gebouwd gebruikend [&#x200B; het Schuiven &#x200B;](https://sling.apache.org/index.html), een de toepassingskader van het Web dat op de beginselen van REST wordt gebaseerd die gemakkelijke ontwikkeling van op inhoud-georiënteerde toepassingen verstrekt. Sling gebruikt een JCR-opslagplaats, zoals Apache Jackrabbit Oak, als gegevensopslagplaats. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
+AEM wordt gebouwd gebruikend [ het Verdelen ](https://sling.apache.org/index.html), een de toepassingskader van het Web dat op de principes van REST wordt gebaseerd die gemakkelijke ontwikkeling van op inhoud-georiënteerde toepassingen verstrekken. Sling gebruikt een JCR-opslagplaats, zoals Apache Jackrabbit Oak, als gegevensopslagplaats. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
 
 ### Inleiding tot verkoop {#introduction-to-sling}
 
@@ -58,15 +58,15 @@ Met Verschuiving is het type inhoud dat moet worden gerenderd niet de eerste ver
 
 De voordelen van deze flexibiliteit worden duidelijk in toepassingen met een groot aantal verschillende inhoudselementen, of wanneer u pagina&#39;s nodig hebt die gemakkelijk kunnen worden aangepast. Met name bij de implementatie van een systeem voor webcontentbeheer, zoals AEM.
 
-Zie [&#x200B; ontdekken Sling in 15 minuten &#x200B;](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) voor de eerste stappen voor het ontwikkelen met het Verschilderen.
+Zie [ ontdekken Sling in 15 minuten ](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) voor de eerste stappen voor het ontwikkelen met het Verschilderen.
 
 In het volgende diagram wordt de resolutie van het script Sling uitgelegd. Het toont hoe te om van HTTP- verzoek aan inhoudsknoop, van inhoudsknoop aan middeltype, van middeltype aan manuscript te krijgen en welke scripting variabelen beschikbaar zijn.
 
-![&#x200B; Begrijpend Apache die manuscriptresolutie verdeelt &#x200B;](assets/sling-cheatsheet-01.png)
+![ Begrijpend Apache die manuscriptresolutie verdeelt ](assets/sling-cheatsheet-01.png)
 
-In het volgende diagram worden de verborgen, maar krachtige, aanvraagparameters uitgelegd die u met `SlingPostServlet` kunt gebruiken, de standaardhandler voor alle verzoeken om POST. De manager geeft u eindeloze opties voor het creëren van, het wijzigen van, het schrappen van, het kopiëren van, en het bewegen van knopen in de bewaarplaats.
+In het volgende diagram worden de verborgen, maar krachtige, aanvraagparameters uitgelegd die u met `SlingPostServlet` kunt gebruiken, de standaardhandler voor alle POST-aanvragen. De manager geeft u eindeloze opties voor het creëren van, het wijzigen van, het schrappen van, het kopiëren van, en het bewegen van knopen in de bewaarplaats.
 
-![&#x200B; Gebruikend SlingPostServlet &#x200B;](assets/sling-cheatsheet-02.png)
+![ Gebruikend SlingPostServlet ](assets/sling-cheatsheet-02.png)
 
 ### Verdelen is Content Centric {#sling-is-content-centric}
 
@@ -117,7 +117,7 @@ De beginselen van URL-decompositie gebruiken:
 
 De volgende afbeelding illustreert het gebruikte mechanisme, dat in de volgende secties nader wordt besproken.
 
-![&#x200B; URL toewijzingsmechanisme &#x200B;](assets/url-mapping.png)
+![ URL toewijzingsmechanisme ](assets/url-mapping.png)
 
 Met Sling geeft u op welk script een bepaalde entiteit wordt gerenderd (door de eigenschap `sling:resourceType` in het knooppunt JCR in te stellen). Dit mechanisme biedt meer vrijheid dan één waarin het script de gegevensentiteiten benadert (zoals een SQL-instructie in een PHP-script zou doen) omdat een resource meerdere uitvoeringen kan hebben.
 
@@ -142,13 +142,13 @@ Het pad dat door `sling:resourceType` wordt opgegeven, kan als volgt zijn:
 
 >[!TIP]
 >
->Relatieve paden worden door de Adobe aanbevolen omdat ze de draagbaarheid verhogen.
+>Relatieve paden worden aanbevolen door Adobe omdat ze de draagbaarheid vergroten.
 
 Alle Sling-scripts worden opgeslagen in submappen van `/apps` (mutable, user scripts) of `/libs` (imutable, system scripts), die in deze volgorde worden doorzocht.
 
 Een paar andere punten die u kunt opmerken zijn:
 
-* Wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters opgegeven, bijvoorbeeld volgens de HTTP-specificatie. `jobs.POST.esp`
+* Wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters opgegeven zoals in de HTTP-specificatie, bijvoorbeeld: `jobs.POST.esp`
 * Verschillende scriptengines worden ondersteund, maar de gebruikelijke, aanbevolen scripts zijn HTL en JavaScript.
 
 De lijst met scriptengines die door de opgegeven instantie van AEM worden ondersteund, wordt weergegeven in de Felix Management Console ( `http://<host>:<port>/system/console/slingscripting` ).
@@ -157,8 +157,8 @@ Wanneer u het vorige voorbeeld gebruikt, is `sling:resourceType` `hr/jobs` dan f
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen in `.html` (standaardaanvraagtypen, standaardindeling)
    * Het script is `/apps/hr/jobs/jobs.esp` . De laatste sectie van `sling:resourceType` vormt de bestandsnaam.
-* Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
-   * POST wordt gebruikt in de manuscriptnaam.
+* POST-aanvragen (alle aanvraagtypen behalve GET/HEAD, de methodenaam moet in hoofdletters staan)
+   * POST wordt gebruikt in de scriptnaam.
    * Het script is `/apps/hr/jobs/jobs.POST.esp` .
 * URL&#39;s in andere indelingen, niet eindigend met `.html`
    * Bijvoorbeeld: `../content/corporate/jobs/developer.pdf`
@@ -237,7 +237,7 @@ Binnen Verschuiving, kunnen de manuscripten niet direct worden geroepen omdat he
 Als u de vertegenwoordiging (het manuscript) direct roept u het middel binnen uw manuscript verbergt, zodat weet het kader (het Schrapen) niet meer over het. Zo verliest u bepaalde eigenschappen:
 
 * Automatische afhandeling van andere http-methoden dan GET, waaronder:
-   * POST, PUT, DELETE die met een sling standaardimplementatie wordt behandeld
+   * POST, PUT, DELETE, die wordt afgehandeld met een sling-standaardimplementatie
    * Het `POST.jsp` -script op uw `sling:resourceType` -locatie
 * Uw codearchitectuur is niet meer zo schoon en zo duidelijk gestructureerd als het zou moeten zijn; van primordiaal belang voor grootschalige ontwikkeling
 
@@ -245,7 +245,7 @@ Als u de vertegenwoordiging (het manuscript) direct roept u het middel binnen uw
 
 Gebruikt het pakket Sling API, `org.apache.sling.*`, en markeringsbibliotheken.
 
-### Verwijzen naar bestaande elementen met gebruik van sling:include {#referencing-existing-elements-using-sling-include}
+### Verwijzen naar bestaande elementen met gebruik van sling :include {#referencing-existing-elements-using-sling-include}
 
 Een laatste overweging is de noodzaak om naar bestaande elementen in de scripts te verwijzen.
 
@@ -266,11 +266,11 @@ Een OSGi-framework biedt u vervolgens dynamisch laden/verwijderen, configureren 
 
 >[!NOTE]
 >
->De volledige informatie over technologie OSGi kan bij de [&#x200B; website OSGi &#x200B;](https://www.osgi.org) worden gevonden.
+>De volledige informatie over technologie OSGi kan bij de [ website OSGi ](https://www.osgi.org) worden gevonden.
 >
 >De pagina Basisonderwijs bevat met name een verzameling presentaties en zelfstudies.
 
-Deze architectuur laat u het Verkopen met toepassing-specifieke modules uitbreiden. Sling, en daarom AEM, gebruikt de [&#128279;](https://felix.apache.org/documentation/index.html) implementatie van de Felix van 0&rbrace; Apache &lbrace;van OSGi.  Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
+Deze architectuur laat u het Verkopen met toepassing-specifieke modules uitbreiden. Sling, en daarom AEM, gebruikt de [ implementatie van de Felix van 0} Apache {van OSGi. ](https://felix.apache.org/documentation/index.html) Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
 
 Met deze functionaliteit kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw installatie:
 
@@ -282,7 +282,7 @@ Met deze functionaliteit kunt u de volgende handelingen uitvoeren op elk van de 
 * Zie laatste status
 * Meer gedetailleerde informatie over specifieke bundels, bijvoorbeeld symbolische naam, versie en locatie, bekijken
 
-Zie [&#x200B; Vormend OSGi voor AEM as a Cloud Service &#x200B;](/help/implementing/deploying/configuring-osgi.md) voor meer informatie.
+Zie [ Vormend OSGi voor AEM as a Cloud Service ](/help/implementing/deploying/configuring-osgi.md) voor meer informatie.
 
 ## Structuur in de opslagplaats {#structure-within-the-repository}
 
@@ -292,7 +292,7 @@ De volgende lijst geeft een overzicht van de structuur die u in de repository zi
 * `/content` - Inhoud die voor uw website is gemaakt.
 * `/etc`
 * `/home` - Informatie over gebruikers en groepen.
-* `/libs` - Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen de functies die buiten het AEM vallen. De inhoud in `/libs` kan niet worden gewijzigd. Functies die specifiek zijn voor uw website, moeten worden uitgevoerd onder `/apps` .
+* `/libs` - Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen de AEM-functies die buiten de box vallen. De inhoud in `/libs` kan niet worden gewijzigd. Functies die specifiek zijn voor uw website, moeten worden uitgevoerd onder `/apps` .
 * `/tmp` - Tijdelijk werkgebied.
 * `/var` - Bestanden die door het systeem worden gewijzigd en bijgewerkt, zoals auditlogboeken, statistieken, gebeurtenisafhandeling.
 

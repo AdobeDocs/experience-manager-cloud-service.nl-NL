@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service en de Web Accessibility Guide
 description: Een inleiding in Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 91%
@@ -64,6 +64,6 @@ Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webco
   Adobe Experience Manager (AEM) includes several features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
 
-## Toegankelijkheid bij Adobe {#accessibility-at-adobe}
+## Toegankelijkheid in Adobe {#accessibility-at-adobe}
 
-Voor extra informatie, zie het [&#x200B; Centrum van het Middel van het Middel van de Toegankelijkheid van de Adobe &#x200B;](https://www.adobe.com/accessibility/).
+Voor extra informatie, zie het [ Centrum van het Middel van het Middel van de Toegankelijkheid van Adobe ](https://www.adobe.com/accessibility/).

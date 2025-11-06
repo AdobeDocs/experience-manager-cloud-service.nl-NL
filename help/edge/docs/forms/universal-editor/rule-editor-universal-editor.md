@@ -2,10 +2,10 @@
 title: Regeleditor voor Edge Delivery Services Forms
 description: Maak dynamische, intelligente formulieren met de Rule Editor in de Universal Editor. Voorwaardelijke logica, berekeningen en interactief gedrag toevoegen zonder codering.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 0%
@@ -97,14 +97,14 @@ Een regel definieert wat er moet gebeuren als aan een voorwaarde wordt voldaan. 
 
 - **AEM as a Cloud Service**: De auteurstoegang met vorm het uitgeven toestemmingen
 - **Universele Redacteur**: Geïnstalleerd en gevormd op uw milieu
-- **de uitbreiding van de Redacteur van de Regel**: Toegelaten via [&#x200B; Extension Manager &#x200B;](/help/implementing/developing/extending/extension-manager.md)
+- **de uitbreiding van de Redacteur van de Regel**: Toegelaten via [ Extension Manager ](/help/implementing/developing/extending/extension-manager.md)
 - **Vorm het uitgeven toestemmingen**: Mogelijkheid om vormcomponenten in Universele Redacteur tot stand te brengen en te wijzigen
 
 **stappen van de Verificatie**:
 
 1. Bevestig dat u vanuit uw AEM Sites-console toegang hebt tot Universal Editor
 2. Controleren of u formuliercomponenten kunt maken en bewerken
-3. Controle dat het pictogram van de Redacteur van de Regel ![&#x200B; uitgeven-regels &#x200B;](/help/forms/assets/edit-rules-icon.svg) wanneer het selecteren van vormcomponenten verschijnt
+3. Controle dat het pictogram van de Redacteur van de Regel ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg) wanneer het selecteren van vormcomponenten verschijnt
 
 +++
 
@@ -135,16 +135,16 @@ Een regel definieert wat er moet gebeuren als aan een voorwaarde wordt voldaan. 
 
 **de stappen van de Activering**:
 
-1. Ga aan [&#x200B; Extension Manager &#x200B;](/help/implementing/developing/extending/extension-manager.md) in uw milieu van AEM
+1. Ga aan [ Extension Manager ](/help/implementing/developing/extending/extension-manager.md) in uw milieu van AEM
 2. Zoek de extensie &quot;Regel-editor&quot; in de lijst met beschikbare extensies
 3. Klik **toelaten** en bevestig de activering
 4. Wacht tot het systeem is vernieuwd (kan 1-2 minuten duren)
 
 **Verificatie**:
 
-- Na het toelaten, verschijnt het pictogram van de Redacteur van de Regel wanneer u een vormcomponent selecteert: ![&#x200B; geef-regels uit &#x200B;](/help/forms/assets/edit-rules-icon.svg)
+- Na het toelaten, verschijnt het pictogram van de Redacteur van de Regel wanneer u een vormcomponent selecteert: ![ geef-regels uit ](/help/forms/assets/edit-rules-icon.svg)
 
-![&#x200B; Universele redacteur van de Regel van de Redacteur &#x200B;](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
+![ Universele redacteur van de Regel van de Redacteur ](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 Figuur: Het pictogram van de Redacteur van de Regel verschijnt wanneer u vormcomponenten selecteert
 
 U opent als volgt de regeleditor:
@@ -153,7 +153,7 @@ U opent als volgt de regeleditor:
 2. Klik op het pictogram Regeleditor.
 3. De redacteur van de Regel opent in een zijpaneel.
 
-![&#x200B; gebruikersinterface van de Redacteur van de Regel &#x200B;](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+![ gebruikersinterface van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor-for-field.png)
 Figuur: De interface van de Redacteur van de regel voor het uitgeven componentenregels
 
 >[!NOTE]
@@ -162,7 +162,7 @@ Figuur: De interface van de Redacteur van de regel voor het uitgeven componenten
 
 ## Overzicht van de interface van Rule Editor
 
-![&#x200B; het gebruikersinterface van de Redacteur van de Regel &#x200B;](/help/edge/docs/forms/assets/rule-editor-interface.png)
+![ het gebruikersinterface van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor-interface.png)
 Figuur: Volledige interface van de Redacteur van de Regel met genummerde componenten
 
 1. **de titel van de Component en regeltype**: Bevestigt de geselecteerde component en het actieve regeltype.
@@ -256,7 +256,7 @@ Kies het regeltype dat het meest overeenkomt met uw intentie.
 
 In dit voorbeeld ziet u voorwaardelijke zichtbaarheid en automatische berekeningen.
 
-![&#x200B; Schermafbeelding van de interface die van de Redacteur van de Regel de verwezenlijking van een voorwaardelijke regel met wanneer-toen logica voor het zicht van het vormgebied toont &#x200B;](/help/edge/docs/forms/assets/rule-editor-1.png)
+![ Schermafbeelding van de interface die van de Redacteur van de Regel de verwezenlijking van een voorwaardelijke regel met wanneer-toen logica voor het zicht van het vormgebied toont ](/help/edge/docs/forms/assets/rule-editor-1.png)
 Afbeelding: Formulier voor belastingberekening met intelligente voorwaardelijke velden
 
 U maakt een formulier dat:
@@ -310,7 +310,7 @@ U maakt een formulier dat:
 
 1. **Open Universele Redacteur**:
    - Navigeer aan de console van AEM Sites, selecteer uw pagina, klik **uitgeven**
-   - Verzeker u de [&#x200B; Universele Redacteur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) behoorlijk gevormd hebt
+   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) behoorlijk gevormd hebt
 
 2. **voeg vormcomponenten in deze orde** toe:
    - Titel (H2): &quot;Formulier voor de berekening van belastingen&quot;
@@ -324,7 +324,7 @@ U maakt een formulier dat:
    - &quot;Extra aftrek&quot; verbergen (instellen op Zichtbaar: Nee in deelvenster Eigenschappen)
    - Stel &quot;Belastbaar inkomen&quot; en &quot;Belastbaar inkomen&quot; in op alleen-lezen: Ja
 
-![&#x200B; Schermafbeelding van een vorm van de belastingberekening met inputgebieden voor bruto salaris, huwelijkse status, en afhankelijke kinderen, die de vormstructuur aantonen alvorens de regels worden toegepast &#x200B;](/help/edge/docs/forms/assets/rule-editor2.png)
+![ Schermafbeelding van een vorm van de belastingberekening met inputgebieden voor bruto salaris, huwelijkse status, en afhankelijke kinderen, die de vormstructuur aantonen alvorens de regels worden toegepast ](/help/edge/docs/forms/assets/rule-editor2.png)
 Afbeelding: Oorspronkelijke formulierstructuur met basiscomponenten geconfigureerd
 
 **Controlepunt**: U zou een vorm met alle vereiste gebieden moeten hebben waar de &quot;Extra Vermindering&quot;verborgen is en de berekende gebieden read-only zijn.
@@ -335,7 +335,7 @@ Afbeelding: Oorspronkelijke formulierstructuur met basiscomponenten geconfiguree
 
 **Doel**: toon &quot;Extra Vermindering&quot;gebied slechts wanneer het Bruto Salaris $50.000 overschrijdt.
 
-1. **selecteer het Bruto gebied van het Salaris** en klik het pictogram van de Redacteur van de Regel ![&#x200B; uitgeven-regels &#x200B;](/help/forms/assets/edit-rules-icon.svg)
+1. **selecteer het Bruto gebied van het Salaris** en klik het pictogram van de Redacteur van de Regel ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg)
 2. **creeer een nieuwe regel**:
    - Klik **creëren**
    - Wijzig het regeltype van &quot;Waarde instellen van&quot; in **&quot;Wanneer&quot;**
@@ -401,7 +401,7 @@ Afbeelding: Oorspronkelijke formulierstructuur met basiscomponenten geconfiguree
    - Belastbaar inkomen verifiëren = `55000` (60000 - 5000)
    - Betaalbare belasting verifiëren = `5500` (55000 × 10%)
 
-![&#x200B; Voorproef een vorm &#x200B;](/help/edge/docs/forms/assets/rule-editor-form.png)
+![ Voorproef een vorm ](/help/edge/docs/forms/assets/rule-editor-form.png)
 Afbeelding: Voltooide belastingcalculator met voorwaardelijke velden en automatische berekeningen
 
 **criteria van het Succes**: De vorm zou velden dynamisch tonen/verbergen en waarden in real time moeten berekenen aangezien de gebruikers typen.
@@ -503,7 +503,7 @@ function days(endDate, startDate) {
 export { getFullName, days };
 ```
 
-![&#x200B; Toevoegend douanefunctie &#x200B;](/help/edge/docs/forms/assets/create-custom-function.png)
+![ Toevoegend douanefunctie ](/help/edge/docs/forms/assets/create-custom-function.png)
 Afbeelding: aangepaste functies toevoegen aan het bestand functions.js
 
 +++
@@ -532,12 +532,12 @@ Afbeelding: aangepaste functies toevoegen aan het bestand functions.js
    - Testen met verschillende invoercombinaties, inclusief randbehuizingen
    - De invloed van prestaties op het laden van formulieren en interactie controleren
 
-![&#x200B; Functie van de Douane in de Redacteur van de Regel &#x200B;](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+![ Functie van de Douane in de Redacteur van de Regel ](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figuur: Het selecteren en het vormen van douanefuncties in de interface van de Redacteur van de Regel
 
+>[!NOTE]
 >
->
-> De verbeteringen aan de Redacteur van de Regel, met inbegrip van douane op gebeurtenis-gebaseerde regels, steun voor dynamische variabelen, en API integratie, zijn ook beschikbaar voor Edge Delivery Services Forms. Meer over deze verhogingen leren en hoe te om hen te gebruiken, zie de [&#x200B; Verbeteringen van de Redacteur van de Regel en het Artikel van de Gevallen van het Gebruik &#x200B;](/help/forms/rule-editor-enhancements-use-cases.md).
+> De verbeteringen aan de Redacteur van de Regel, met inbegrip van douane op gebeurtenis-gebaseerde regels, steun voor dynamische variabelen, en API integratie, zijn ook beschikbaar voor Edge Delivery Services Forms. Meer over deze verhogingen leren en hoe te om hen te gebruiken, zie de [ Verbeteringen van de Redacteur van de Regel en het Artikel van de Gevallen van het Gebruik ](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Beste praktijken voor functiegebruik**:
 
@@ -592,7 +592,7 @@ U kunt verschillende sets functies maken in afzonderlijke bestanden of mappen en
 
 - Als het tekstvak voor het pad leeg blijft, worden in de Regeleditor standaardfuncties geladen van `/blocks/form/functions.js`
 
-![&#x200B; Functie van de Douane in UE &#x200B;](/help/forms/assets/custom-function-in-ue.png){width=50%}
+![ Functie van de Douane in UE ](/help/forms/assets/custom-function-in-ue.png){width=50%}
 
 In de bovenstaande schermafbeelding wordt het pad van de aangepaste functie toegevoegd in het tekstvak Pad aangepaste functie. De aangepaste functies voor dit formulier worden vanuit het opgegeven bestand (`cc_function.js`) geladen.
 
@@ -732,7 +732,7 @@ Forms wordt een krachtig hulpmiddel voor gegevensverzameling, kwalificatie van l
 
 **Extra middelen**:
 
-- [&#x200B; Universele documentatie van de Redacteur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) voor bredere context
-- [&#x200B; de gids van Extension Manager &#x200B;](/help/implementing/developing/extending/extension-manager.md) voor het toelaten van extra mogelijkheden
-- [&#x200B; de vormen van Edge Delivery Services &#x200B;](/help/edge/docs/forms/overview.md) voor uitvoerige begeleiding van de vormontwikkeling
+- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) voor bredere context
+- [ de gids van Extension Manager ](/help/implementing/developing/extending/extension-manager.md) voor het toelaten van extra mogelijkheden
+- [ de vormen van Edge Delivery Services ](/help/edge/docs/forms/overview.md) voor uitvoerige begeleiding van de vormontwikkeling
 

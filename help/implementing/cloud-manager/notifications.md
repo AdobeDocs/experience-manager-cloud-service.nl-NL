@@ -4,8 +4,8 @@ description: Leer hoe te om informatie over pijpleidingsplaatsingen te ontvangen
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -25,15 +25,15 @@ Deze berichten worden verzonden door het [!UICONTROL Experience Cloud] berichtsy
 
 De meldingen worden weergegeven in een zijbalk in [!UICONTROL Cloud Manager] en in de hele Adobe [!UICONTROL Experience Cloud] . Het belpictogram in de koptekst is gemarkeerd wanneer u nieuwe meldingen hebt.
 
-![&#x200B; pictogram van Meldingen &#x200B;](assets/notifications-bell-badged.png)
+![ pictogram van Meldingen ](assets/notifications-bell-badged.png)
 
 Klik op het belpictogram om de zijbalk te openen en de meldingen weer te geven. Het **lusje van Meldingen** in sidebar maakt een lijst van de meest recente berichten zoals plaatsingsbevestigingen. Meldingen betreffen uw omgeving.
 
-![&#x200B; Notifications sidebar &#x200B;](assets/notifications-activities.png)
+![ Notifications sidebar ](assets/notifications-activities.png)
 
-Het **lusje van Mededelingen** &lbrace;omvat het productaankondigingen van Adobe. Aankondigingen betreffen het product.
+Het **lusje van Mededelingen** {omvat het productaankondigingen van Adobe. Aankondigingen betreffen het product.
 
-![&#x200B; Notifications sidebar &#x200B;](assets/notificaitons-announcements.png)
+![ Notifications sidebar ](assets/notificaitons-announcements.png)
 
 Klik op een melding of aankondiging om de details weer te geven. De berichten verbonden aan activiteiten zoals pijpleidingsplaatsingen nemen u aan het detail van die activiteit zoals het venster van de pijpleidingsuitvoering.
 
@@ -47,23 +47,23 @@ U kunt aanpassen hoe u meldingen ontvangt en welke meldingen u ontvangt.
 
 Klik het tandwielpictogram bij de bovenkant van de berichten sidebar om het **voorkeurenvenster van Experience Cloud** te openen. Van hieruit kunt u uw meldingsabonnementen definiëren en bepalen hoe u uw meldingen ontvangt.
 
-![&#x200B; pictogram van de montages van het Bericht &#x200B;](assets/notifications-configuration.png)
+![ pictogram van de montages van het Bericht ](assets/notifications-configuration.png)
 
 ### Abonnementen {#subscriptions}
 
 In abonnementen wordt gedefinieerd voor welke producten u meldingen ontvangt en welke meldingen.
 
-![&#x200B; abonnementen van het Bericht &#x200B;](assets/notifications-subscriptions.png)
+![ abonnementen van het Bericht ](assets/notifications-subscriptions.png)
 
 Standaard ontvangt u alle meldingen voor alle producten, zowel in de toepassing als via e-mail. Klik op het pictogram naast een productnaam om de gedetailleerde opties weer te geven en de typen meldingen te definiëren die u voor dat product ontvangt. U kunt ook de opties op productniveau in- of uitschakelen om alle opties voor het product in of uit te schakelen.
 
-![&#x200B; aanpassing van het abonnement van het Bericht &#x200B;](assets/notifications-subscriptions-customize.png)
+![ aanpassing van het abonnement van het Bericht ](assets/notifications-subscriptions-customize.png)
 
 ### Prioriteit {#priority}
 
 Het prioritaire alarm wordt duidelijk met a **HOGE** markering. U kunt hen vormen om uitsluitend als alarm worden ontvangen. In de **Prioriteit** sectie, kunt u bepalen welke categorieën als prioritaire berichten kwalificeren.
 
-![&#x200B; prioriteit van het Bericht &#x200B;](assets/notifications-priority.png)
+![ prioriteit van het Bericht ](assets/notifications-priority.png)
 
 Gebruik de vervolgkeuzelijst om aan de lijst met categorieën toe te voegen die als prioriteit worden aangemerkt. Klik op de X naast de categorienamen om deze te verwijderen.
 
@@ -71,7 +71,7 @@ Gebruik de vervolgkeuzelijst om aan de lijst met categorieën toe te voegen die 
 
 Er worden enkele seconden waarschuwingen weergegeven in de rechterbovenhoek van het venster. Gebruik de **sectie van Alarm** om te bepalen voor welke berichten u alarm ontvangt.
 
-![&#x200B; alarm van het Bericht &#x200B;](assets/notifications-alerts.png)
+![ alarm van het Bericht ](assets/notifications-alerts.png)
 
 U kunt het gedrag van de waarschuwingen definiëren.
 
@@ -83,7 +83,7 @@ U kunt het gedrag van de waarschuwingen definiëren.
 
 Meldingen zijn beschikbaar in de webgebruikersinterface van alle Adobe [!UICONTROL Experience Cloud] -oplossingen. U kunt voor deze berichten ook kiezen om door e-mail in de **E-mail** sectie worden verzonden.
 
-![&#x200B; E-mails van het Bericht &#x200B;](assets/notifications-emails.png)
+![ E-mails van het Bericht ](assets/notifications-emails.png)
 
 Standaard worden geen e-mails verzonden. U kunt e-mails ontvangen als:
 

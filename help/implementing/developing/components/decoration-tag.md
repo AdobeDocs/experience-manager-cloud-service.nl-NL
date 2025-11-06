@@ -1,10 +1,10 @@
 ---
 title: Decoratietag
-description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component binnen zichzelf wordt verpakt. Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten.
+description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component binnen zichzelf wordt verpakt. Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt waarin componenten worden verpakt.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -16,16 +16,16 @@ ht-degree: 0%
 Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component binnen zichzelf wordt verpakt. Dit heeft hoofdzakelijk twee doelen:
 
 * Een component kan alleen worden bewerkt wanneer deze is verpakt met een HTML-element.
-* Het element wrapping wordt gebruikt om de klassen van HTML toe te passen die verstrekken:
+* Het element wrapping wordt gebruikt om HTML-klassen toe te passen die het volgende bieden:
    * Indelingsgegevens
    * Informatie over stijlen
 
-Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten. Of en hoe de versietag wordt teruggegeven wordt bepaald door de combinatie twee factoren, die deze pagina in duiken:
+Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt waarin componenten worden verpakt. Of en hoe de versietag wordt teruggegeven wordt bepaald door de combinatie twee factoren, die deze pagina in duiken:
 
 * De component zelf kan zijn versietag met een reeks eigenschappen vormen.
 * De manuscripten die componenten omvatten kunnen de aspecten van de decoratietag met omvatten parameters bepalen.
 
-## Recommendations {#recommendations}
+## Aanbevelingen {#recommendations}
 
 Hier zijn sommige algemene aanbevelingen van wanneer om het omslagelement te omvatten dat in het vermijden zou moeten helpen lopen in onverwachte kwesties:
 
@@ -57,13 +57,13 @@ Het gedrag van de omslag kan ook volledig worden geregeld.
 
 Het is mogelijk om het gedrag van de omsluitende tags van HTML-scripts en de bijbehorende logica volledig te bepalen.
 
-Voor meer informatie over het ontwikkelen in HTML zie de [&#x200B; documentatie HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=nl-NL).
+Voor meer informatie over het ontwikkelen in HTML zie de [ documentatie HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
 
 ### Beslissingsboom {#decision-tree}
 
 Deze beslissingsstructuur geeft een overzicht van de logica die het gedrag van de omsluitende tags bepaalt.
 
-![&#x200B; de boom van het Besluit &#x200B;](assets/decoration-tag-decision-tree.png)
+![ de boom van het Besluit ](assets/decoration-tag-decision-tree.png)
 
 ### Gevallen gebruiken {#use-cases}
 

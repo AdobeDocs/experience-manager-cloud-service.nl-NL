@@ -1,37 +1,37 @@
 ---
 title: Consoles aanpassen
-description: Leer over de verschillende opties die AEM verstrekt om de consoles van uw auteursinstantie aan te passen.
+description: Leer meer over de verschillende opties die AEM biedt om de consoles van uw ontwerpinstantie aan te passen.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Consoles aanpassen {#customizing-consoles}
 
-AEM verstrekt opties om de consoles (en de [&#x200B; pagina auteursfunctionaliteit &#x200B;](/help/implementing/developing/extending/page-authoring.md)) van uw auteursinstantie aan te passen.
+AEM verstrekt opties om de consoles (en de [ pagina auteursfunctionaliteit ](/help/implementing/developing/extending/page-authoring.md)) van uw auteursinstantie aan te passen.
 
 ## Clientlibs {#clientlibs}
 
 Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit aan te bieden, terwijl het hergebruiken van standaardfuncties, voorwerpen, en methodes. Wanneer u clientlibs aanpast, kunt u onder `/apps.` bijvoorbeeld uw eigen clientlib maken die de code bevat die is vereist voor uw aangepaste component.
 
-Zie [&#x200B; Gebruikend cliënt-Kant Bibliotheken op AEM as a Cloud Service &#x200B;](/help/implementing/developing/introduction/clientlibs.md).
+Zie [ Gebruikend cliënt-Kant Bibliotheken op AEM as a Cloud Service ](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Bedekkingen {#overlays}
 
-Bedekkingen zijn gebaseerd op knooppuntdefinities en maken het mogelijk om de standaardfunctionaliteit onder `/libs` te bedekken met uw eigen aangepaste functionaliteit onder `/apps` . Wanneer het creëren van een bekleding, wordt een 1:1 exemplaar van origineel niet vereist, aangezien [&#x200B; het Schuiven middelfusie &#x200B;](/help/implementing/developing/introduction/sling-resource-merger.md) voor overerving toestaat.
+Bedekkingen zijn gebaseerd op knooppuntdefinities en maken het mogelijk om de standaardfunctionaliteit onder `/libs` te bedekken met uw eigen aangepaste functionaliteit onder `/apps` . Wanneer het creëren van een bekleding, wordt een 1 :1 exemplaar van origineel niet vereist, aangezien [ het Schrapen middelfusie ](/help/implementing/developing/introduction/sling-resource-merger.md) voor overerving toestaat.
 
-Bedekkingen kunnen op verschillende manieren worden gebruikt om uw AEM uit te breiden. In de volgende secties worden verschillende voorbeelden gegeven.
+Bedekkingen kunnen op verschillende manieren worden gebruikt om uw AEM-consoles uit te breiden. In de volgende secties worden verschillende voorbeelden gegeven.
 
-Zie ook [&#x200B; Bekledingen voor Adobe Experience Manager as a Cloud Service &#x200B;](/help/implementing/developing/introduction/overlays.md).
+Zie ook [ Bekledingen voor Adobe Experience Manager as a Cloud Service ](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->Als u in opties geinteresseerd bent om de auteurservaring aan te passen, zie [&#x200B; Aanpassend de Authoring van de Pagina &#x200B;](/help/implementing/developing/extending/page-authoring.md).
+>Als u in opties geinteresseerd bent om de auteurservaring aan te passen, zie [ Aanpassend de Authoring van de Pagina ](/help/implementing/developing/extending/page-authoring.md).
 
 ## De standaardweergave voor een console aanpassen {#customizing-the-default-view-for-a-console}
 
@@ -109,7 +109,7 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
 1. Voeg uw nieuwe kolommen toe of verwijder bestaande kolommen.
 
-Als u extra gegevens wilt opnemen, moet u a [&#x200B; PageInfoProvider &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a `pageInfoProviderType` bezit schrijven.
+Als u extra gegevens wilt opnemen, moet u a [ PageInfoProvider ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a `pageInfoProviderType` bezit schrijven.
 
 >[!NOTE]
 >
@@ -119,4 +119,4 @@ Als u extra gegevens wilt opnemen, moet u a [&#x200B; PageInfoProvider &#x200B;]
 
 Wanneer het gebruiken van een console, moet een gebruiker vaak uit middelen zoals pagina&#39;s, componenten, of activa selecteren. Dit kan de vorm hebben van een lijst waaruit de auteur een punt moet kiezen.
 
-Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [&#x200B; het Aanpassen van de Authoring van de Pagina &#x200B;](/help/implementing/developing/extending/page-authoring.md#filtering-resources) voor details.
+Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [ het Aanpassen van de Authoring van de Pagina ](/help/implementing/developing/extending/page-authoring.md#filtering-resources) voor details.

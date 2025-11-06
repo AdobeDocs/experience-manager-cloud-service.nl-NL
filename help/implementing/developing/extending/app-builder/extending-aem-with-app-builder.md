@@ -3,8 +3,8 @@ title: Uitbreidend  [!DNL Adobe Experience Manager]  as a Cloud Service gebruike
 description: Uitbreidend  [!DNL Adobe Experience Manager]  as a Cloud Service gebruikend Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -27,7 +27,7 @@ App Builder biedt klanten de mogelijkheid om Adobe Experience Manager in verschi
 
 >[!NOTE]
 >
-> Voor AEM 6.5 klanten die App Builder willen gebruiken, zie [&#x200B; Uitbreidend Adobe Experience Manager 6.5 gebruikend Adobe Developer App Builder &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=nl-NL).
+> Voor AEM 6.5 klanten die App Builder willen gebruiken, zie [ Uitbreidend Adobe Experience Manager 6.5 gebruikend Adobe Developer App Builder ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Architectuur {#architecture}
 
@@ -42,23 +42,23 @@ In het volgende diagram ziet u hoe een standaardtoepassing die op App Builder is
 
 ![Architectuur](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
-Voor meer details over de architectuur van App Builder, heb een blik bij [&#x200B; Overzicht van de Architectuur.](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview)
+Voor meer details over de architectuur van App Builder, heb een blik bij [ Overzicht van de Architectuur.](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview)
 
 ## Aan de slag met App Builder {#additional-resources}
 
 Adobe heeft de Getting Started-documentatie gemaakt, zodat u aan de slag kunt met App Builder:
 
-* [&#x200B; Aan de slag App Builder &#x200B;](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [ Aan de slag App Builder ](https://developer.adobe.com/app-builder/docs/getting_started/)
 
 ## Doorgaan met leren met documentatie {#appbuilder-documentation}
 
 App Builder biedt video&#39;s en documentatie voor ontwikkelaars, waaronder hulplijnen en documentatie voor naslagwerken, waarmee u uw eigen aangepaste toepassingen kunt ontwikkelen:
 
-* [&#x200B; documentatie van App Builder &#x200B;](https://developer.adobe.com/app-builder/docs/overview/)
-* [&#x200B; de video&#39;s van App Builder &#x200B;](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
+* [ documentatie van App Builder ](https://developer.adobe.com/app-builder/docs/overview/)
+* [ de video&#39;s van App Builder ](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## Een van de voorbeeldtoepassingen uitproberen {#appbuilder-codesamples}
 
 Klaar om te beginnen met ontwikkelen? Adobe heeft veel voorbeeldtoepassingen waarmee u snel aan de slag kunt:
 
-* [&#x200B; de Etiketten van de Code van App Builder op de Website van Adobe Developer &#x200B;](https://developer.adobe.com/app-builder/docs/resources/)
+* [ de Etiketten van de Code van App Builder op de Website van Adobe Developer ](https://developer.adobe.com/app-builder/docs/resources/)

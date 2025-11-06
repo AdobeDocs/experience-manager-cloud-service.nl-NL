@@ -3,8 +3,8 @@ title: Universal Editor-aanroepen
 description: Leer over de verschillende soorten vraag die door de Universele Redacteur aan uw app wordt gemaakt om u te helpen wanneer het zuiveren.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -22,12 +22,12 @@ De Universele Redacteur communiceert met uw van instrumenten voorzien app door e
 
 Voor de ontwikkelaar, echter, kan het begrip van deze vraag en wat zij doen waardevol zijn wanneer het zuiveren van uw toepassing wanneer het gebruiken van de Universele Redacteur. Als u van instrumenten uw app hebt voorzien en het zich niet zoals voorzien gedraagt, kan het nuttig zijn om het **lusje van het Netwerk** van de ontwikkelaarshulpmiddelen in uw browser te openen en de vraag te inspecteren aangezien u inhoud in uw app uitgeeft.
 
-![&#x200B; Voorbeeld van een detailvraag op het lusje van het Netwerk van de ontwikkelaarshulpmiddelen van browser &#x200B;](assets/calls-network-tab.png)
+![ Voorbeeld van een detailvraag op het lusje van het Netwerk van de ontwikkelaarshulpmiddelen van browser ](assets/calls-network-tab.png)
 
 * De **nuttige lading** van de vraag bevat details van wat door de redacteur met inbegrip van het identificeren van wat wordt bijgewerkt en hoe te om het bij te werken.
 * De **Reactie** omvat details van wat precies door de redacteursdienst werd bijgewerkt. Hiermee kunt u het vernieuwen van de inhoud in de editor vereenvoudigen. In bepaalde gevallen, zoals bij een `move` -aanroep, moet de gehele pagina worden vernieuwd.
 
-Zodra een vraag met succes wordt voltooid, worden de gebeurtenissen teweeggebracht die de lading van het verzoek en van de reactie omvatten, die voor uw eigen app kan worden aangepast. Gelieve te zien de de gebeurtenissen van de Universele Redacteur van het document [&#128279;](/help/implementing/universal-editor/events.md) voor meer details.
+Zodra een vraag met succes wordt voltooid, worden de gebeurtenissen teweeggebracht die de lading van het verzoek en van de reactie omvatten, die voor uw eigen app kan worden aangepast. Gelieve te zien de de gebeurtenissen van de Universele Redacteur van het document [ ](/help/implementing/universal-editor/events.md) voor meer details.
 
 Hieronder volgt een lijst met de typen aanroepen die de Universal Editor naar uw app uitvoert, samen met voorbeeldladingen en reacties.
 
@@ -150,7 +150,7 @@ Er treedt een `add` -aanroep op wanneer u een nieuwe component in uw app plaatst
 
 De lading ervan bevat een `path` -object dat de locatie bevat waar de inhoud moet worden toegevoegd.
 
-Het omvat ook een `content` voorwerp met extra voorwerpen voor eindpunt-specifieke details van de inhoud die [&#x200B; voor elke stop &#x200B;](/help/implementing/universal-editor/architecture.md) moet worden opgeslagen. Als uw app bijvoorbeeld is gebaseerd op inhoud van AEM en Magento, bevat de payload voor elk systeem een gegevensobject.
+Het omvat ook een `content` voorwerp met extra voorwerpen voor eindpunt-specifieke details van de inhoud die [ voor elke stop ](/help/implementing/universal-editor/architecture.md) moet worden opgeslagen. Als uw app bijvoorbeeld is gebaseerd op inhoud van AEM en Magento, bevat de payload voor elk systeem een gegevensobject.
 
 >[!BEGINTABS]
 
@@ -308,7 +308,7 @@ De lading ervan bevat het pad van het object dat is verwijderd.
 
 >[!ENDTABS]
 
-## Publish {#publish}
+## Publiceren {#publish}
 
 Een `publish` vraag komt voor wanneer u de **Publish** knoop in de Universele Redacteur klikt om de inhoud te publiceren die u hebt uitgegeven.
 

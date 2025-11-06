@@ -3,8 +3,8 @@ title: Voorbeeld van ContextHub Store-kandidaten
 description: ContextHub verstrekt verscheidene kandidaten van de steekproefopslag die u in uw oplossingen kunt gebruiken
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 1%
@@ -105,9 +105,9 @@ De opslag gebruikt een gegevensboom die aan het volgende voorbeeld gelijkaardig 
 
 >[!NOTE]
 >
->Een veiligheidsbeleid dat in Chrome 50.x wordt geïntroduceerd vereist dat alle aan geolocatie gerelateerde vraag over een beveiligde verbinding wordt gemaakt. AEM forceert daarom https-gebruik voor geolocatie-API-aanroepen als AEM ook over https wordt uitgevoerd. Anders wordt http gebruikt om te voldoen aan het beleid van dezelfde oorsprong.
+>Een veiligheidsbeleid dat in Chrome 50.x wordt geïntroduceerd vereist dat alle aan geolocatie gerelateerde vraag over een beveiligde verbinding wordt gemaakt. Daarom dwingt AEM het gebruik van https voor geolocatie-API-aanroepen af als AEM ook op https draait. Anders wordt http gebruikt om te voldoen aan het beleid van dezelfde oorsprong.
 >
->Zie [&#x200B; dit Google blogbericht &#x200B;](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) voor meer details over de verandering in Chrome.
+>Zie [ dit Google blogbericht ](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) voor meer details over de verandering in Chrome.
 
 ## contexthub.surferinfo Sample Store Candidate {#contexthub-surferinfo-sample-store-candidate}
 

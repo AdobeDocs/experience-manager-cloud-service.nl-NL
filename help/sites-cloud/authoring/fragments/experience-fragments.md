@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 2%
@@ -41,17 +41,18 @@ Zonder Fragments van de Ervaring, zou de auteur dat fragment moeten kopiëren en
 De Fragmenten van de ervaring elimineren de behoefte aan exemplaar/deeg.
 * Om de hoofdloze CMS-use-case te ondersteunen.
 Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan de klant. Een systeem/aanraakpunt van derden zou deze ervaring gebruiken en vervolgens leveren aan de gebruiker.
-* Met [&#x200B; Multisite Beheer (MSM) &#x200B;](/help/sites-cloud/administering/msm/overview.md); als Fragment van de Ervaring maakt deel uit van een pagina. Dit geldt zowel voor de afzonderlijke fragmenten als voor de mappen waarin deze zich bevinden.
+* Met [ Multisite Beheer (MSM) ](/help/sites-cloud/administering/msm/overview.md); als Fragment van de Ervaring maakt deel uit van een pagina. Dit geldt zowel voor de afzonderlijke fragmenten als voor de mappen waarin deze zich bevinden.
 
 >[!NOTE]
 >
 >**[de Fragmenten van de Inhoud](/help/sites-cloud/authoring/fragments/content-fragments.md)** en **Fragmenten van de Ervaring** zijn verschillende eigenschappen binnen AEM:
+>
 >* **de Fragmenten van de Inhoud** zijn redactionele inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, cijfers en datums.
 >* **de Fragmenten van de Ervaring** zijn volledig opgemaakt inhoud; een fragment van een Web-pagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Voor meer informatie, zie [&#x200B; Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=nl-NL#content-fragments).
+>Voor meer informatie, zie [ Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >
@@ -79,9 +80,9 @@ Er moeten ervaringsfragmenten worden gebruikt:
 ## Fragmenten voor uw ervaring ordenen {#organizing-your-experience-fragments}
 
 Het wordt aanbevolen:
-* mappen gebruiken om uw fragmenten van de ervaring te ordenen,
 
-* [&#x200B; vormt de toegestane malplaatjes op deze omslagen &#x200B;](#configure-allowed-templates-folder).
+* mappen gebruiken om uw fragmenten van de ervaring te ordenen,
+* [ vormt de toegestane malplaatjes op deze omslagen ](#configure-allowed-templates-folder).
 
 Door mappen te maken kunt u:
 
@@ -95,7 +96,7 @@ Door mappen te maken kunt u:
 
   >[!NOTE]
   >
-  >U kunt de [&#x200B; malplaatjeredacteur &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) gebruiken om uw eigen malplaatje tot stand te brengen.
+  >U kunt de [ malplaatjeredacteur ](/help/sites-cloud/authoring/page-editor/templates.md) gebruiken om uw eigen malplaatje tot stand te brengen.
 
 Het WKND-project structureert een aantal Experience Fragments volgens `Contributors` . De gebruikte structuur illustreert ook hoe andere functies, zoals beheer voor meerdere sites (inclusief taalkopieën), kunnen worden gebruikt.
 
@@ -103,19 +104,19 @@ Zie:
 
 `http://localhost:4502/aem/experience-fragments.html/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master`
 
-![&#x200B; Omslagen voor de Fragmenten van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/xf-folders.png)
+![ Omslagen voor de Fragmenten van de Ervaring ](/help/sites-cloud/authoring/assets/xf-folders.png)
 
 ## Het creëren van en het Vormen van een Omslag voor uw Fragmenten van de Ervaring {#creating-and-configuring-a-folder-for-your-experience-fragments}
 
 Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vormen wordt het geadviseerd:
 
-1. [&#x200B; creeer een omslag &#x200B;](/help/sites-cloud/authoring/sites-console/managing-pages.md#creating-a-new-folder).
+1. [ creeer een omslag ](/help/sites-cloud/authoring/sites-console/managing-pages.md#creating-a-new-folder).
 
-1. [&#x200B; vormt de toegestane malplaatjes van het Fragment van de Ervaring voor die omslag &#x200B;](#configure-allowed-templates-folder).
+1. [ vormt de toegestane malplaatjes van het Fragment van de Ervaring voor die omslag ](#configure-allowed-templates-folder).
 
 >[!NOTE]
 >
->Het is ook mogelijk om de [&#x200B; Toegestane Malplaatjes voor uw instantie &#x200B;](#configure-allowed-templates-instance) te vormen, maar deze methode wordt **niet** geadviseerd aangezien de waarden op verbetering kunnen worden beschreven.
+>Het is ook mogelijk om de [ Toegestane Malplaatjes voor uw instantie ](#configure-allowed-templates-instance) te vormen, maar deze methode wordt **niet** geadviseerd aangezien de waarden op verbetering kunnen worden beschreven.
 
 ### Configureer de toegestane sjablonen voor uw map {#configure-allowed-templates-folder}
 
@@ -135,11 +136,11 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
    Zie:
    `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
 
-   ![&#x200B; Eigenschappen van het Fragment van de Ervaring - Toegestane Malplaatjes &#x200B;](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
+   ![ Eigenschappen van het Fragment van de Ervaring - Toegestane Malplaatjes ](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
    >
-   >Zie [&#x200B; Malplaatjes voor de Fragmenten van de Ervaring &#x200B;](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) voor verdere details.
+   >Zie [ Malplaatjes voor de Fragmenten van de Ervaring ](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) voor verdere details.
 
 1. Selecteer **sparen en Sluiten**.
 
@@ -155,15 +156,15 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
 
 1. Selecteer **de opties van de Configuratie**:
 
-   ![&#x200B; knoop van de Configuratie &#x200B;](/help/sites-cloud/authoring/assets/xf-18.png)
+   ![ knoop van de Configuratie ](/help/sites-cloud/authoring/assets/xf-18.png)
 
 1. Specificeer de vereiste malplaatjes in **vormen de Fragmenten van de Ervaring** dialoog:
 
-   ![&#x200B; vorm de Fragmenten van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/xf-19.png)
+   ![ vorm de Fragmenten van de Ervaring ](/help/sites-cloud/authoring/assets/xf-19.png)
 
    >[!NOTE]
    >
-   >Zie [&#x200B; Malplaatjes voor de Fragmenten van de Ervaring &#x200B;](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) voor verdere details.
+   >Zie [ Malplaatjes voor de Fragmenten van de Ervaring ](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) voor verdere details.
 
 1. Selecteer **sparen**.
 
@@ -173,24 +174,24 @@ Een ervaringsfragment maken:
 
 1. Selecteer **Fragmenten van de Ervaring** van de Globale Navigatie.
 
-   ![&#x200B; Fragmenten van de Ervaring in het paneel van de Navigatie &#x200B;](/help/sites-cloud/authoring/assets/xf-01.png)
+   ![ Fragmenten van de Ervaring in het paneel van de Navigatie ](/help/sites-cloud/authoring/assets/xf-01.png)
 
 1. Navigeer aan de vereiste omslag en selecteer **creeer**:
 
-   ![&#x200B; Creërend een omslag voor de Fragmenten van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/xf-02.png)
+   ![ Creërend een omslag voor de Fragmenten van de Ervaring ](/help/sites-cloud/authoring/assets/xf-02.png)
 
 1. Selecteer **Fragment van de Ervaring** om **te openen creeer de tovenaar van het Fragment van de Ervaring**.
 
    Selecteer de vereiste **sjabloon** en kies vervolgens **Volgende**:
 
-   ![&#x200B; Selecterend een malplaatje van het Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/xf-03.png)
+   ![ Selecterend een malplaatje van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/xf-03.png)
 
 
 1. Voer de **Eigenschappen** voor uw **Experience-fragment** in.
 
    A **Titel** is verplicht. Als de **Naam** leeg wordt verlaten wordt het afgeleid uit de **Titel**.
 
-   ![&#x200B; de eigenschappen van het Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/xf-04.png)
+   ![ de eigenschappen van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/xf-04.png)
 
    >[!NOTE]
    >
@@ -211,11 +212,11 @@ De Experience Fragment Editor biedt u vergelijkbare mogelijkheden als de normale
 
 >[!NOTE]
 >
->Zie [&#x200B; het Uitgeven van de Inhoud van de Pagina &#x200B;](/help/sites-cloud/authoring/page-editor/edit-content.md) voor meer informatie over hoe te om de paginaredacteur te gebruiken.
+>Zie [ het Uitgeven van de Inhoud van de Pagina ](/help/sites-cloud/authoring/page-editor/edit-content.md) voor meer informatie over hoe te om de paginaredacteur te gebruiken.
 
 De volgende voorbeeldprocedure laat zien hoe u een gummetje voor een product kunt maken:
 
-1. De belemmering en laat vallen de vereiste component van [&#x200B; Browser van Componenten &#x200B;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
+1. De belemmering en laat vallen de vereiste component van [ Browser van Componenten ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
 
 1. Afhankelijk van de component:
    * Voeg naar wens inhoud en/of elementen toe.
@@ -225,16 +226,16 @@ De volgende voorbeeldprocedure laat zien hoe u een gummetje voor een product kun
 
 Bijvoorbeeld: `http://<host>:<port>/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master.html`
 
-![&#x200B; Fragment van de Ervaring op pagina &#x200B;](/help/sites-cloud/authoring/assets/xf-05.png)
+![ Fragment van de Ervaring op pagina ](/help/sites-cloud/authoring/assets/xf-05.png)
 
 ## Een ervaringsfragmentvariatie maken {#creating-an-experience-fragment-variation}
 
 U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk van uw behoeften:
 
-1. Open uw fragment voor [&#x200B; het uitgeven &#x200B;](#editing-your-experience-fragment).
+1. Open uw fragment voor [ het uitgeven ](#editing-your-experience-fragment).
 1. Open het **lusje van Variaties**.
 
-   ![&#x200B; Creërend een variatie van het Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/xf-06.png)
+   ![ Creërend een variatie van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/xf-06.png)
 
 1. **creeer** laat u tot stand brengen:
 
@@ -255,7 +256,7 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
 
    Bijvoorbeeld:
 
-   ![&#x200B; eigenschappen van de Variatie &#x200B;](/help/sites-cloud/authoring/assets/xf-07.png)
+   ![ eigenschappen van de Variatie ](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
 1. Bevestig met **Gedaan**, wordt de nieuwe variatie getoond in het paneel.
@@ -283,7 +284,7 @@ U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pa
 
 Bijvoorbeeld: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/about-us.html`
 
-![&#x200B; Fragment van de Ervaring in de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/assets/xf-08.png)
+![ Fragment van de Ervaring in de Redacteur van de Pagina ](/help/sites-cloud/authoring/assets/xf-08.png)
 
 ## Bouwstenen {#building-blocks}
 
@@ -295,19 +296,19 @@ Een bouwblok maken:
 
 1. In de redacteur van het Fragment van de Ervaring, selecteer de componenten u wilt hergebruiken:
 
-   ![&#x200B; Uitgezochte component voor het Blok van de Bouw &#x200B;](/help/sites-cloud/authoring/assets/xf-09.png)
+   ![ Uitgezochte component voor het Blok van de Bouw ](/help/sites-cloud/authoring/assets/xf-09.png)
 
 1. Van de componententoolbar, uitgezochte **Bekeerling aan bouwsteen**:
 
-   ![&#x200B; knoop van het Blok van de Bouw &#x200B;](/help/sites-cloud/authoring/assets/xf-10.png)
+   ![ knoop van het Blok van de Bouw ](/help/sites-cloud/authoring/assets/xf-10.png)
 
 1. Voer de naam van de **bouwsteen** in en bevestig dit met **Converteren**:
 
-   ![&#x200B; het Blok van de Bouw van de Naam &#x200B;](/help/sites-cloud/authoring/assets/xf-11.png)
+   ![ het Blok van de Bouw van de Naam ](/help/sites-cloud/authoring/assets/xf-11.png)
 
 1. Het **Blok van de Bouw** wordt getoond in het linkerlusje (**Lokale**), en kan voor verdere actie worden geselecteerd:
 
-   ![&#x200B; Blok van de Bouw in spoorstaaf &#x200B;](/help/sites-cloud/authoring/assets/xf-12.png)
+   ![ Blok van de Bouw in spoorstaaf ](/help/sites-cloud/authoring/assets/xf-12.png)
 
 #### Een bouwblok beheren {#managing-a-building-block}
 
@@ -317,7 +318,7 @@ Uw bouwsteen is zichtbaar in de **Blokken van de Bouw** tabel. Voor elk blok zij
 * **anders noemen**
 * **Schrapping**
 
-![&#x200B; het Leiden de Blokken van de Bouw &#x200B;](/help/sites-cloud/authoring/assets/xf-13.png)
+![ het Leiden de Blokken van de Bouw ](/help/sites-cloud/authoring/assets/xf-13.png)
 
 #### Een bouwsteen gebruiken {#using-a-building-block}
 
@@ -328,7 +329,7 @@ Als u een Experience Fragment bewerkt, worden de beschikbare bouwstenen weergege
 * **Lokale** - de Blokken van de bouw van het huidige Fragment van de Ervaring
 * **allen** - de Blokken van de bouw van alle fragmenten
 
-![&#x200B; het Selecteren van Bouwstenen &#x200B;](/help/sites-cloud/authoring/assets/xf-14.png)
+![ het Selecteren van Bouwstenen ](/help/sites-cloud/authoring/assets/xf-14.png)
 
 ## Personalization op uw Experience Fragment {#personalization-experience-fragment}
 
@@ -357,7 +358,7 @@ Het fragment aanpassen:
 
 1. Open het **Personalization** lusje om uw montages te bepalen en te bewaren. Bijvoorbeeld in een map:
 
-   ![&#x200B; Fragment van de Ervaring - de Eigenschappen van de Personalisatie &#x200B;](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
+   ![ Fragment van de Ervaring - de Eigenschappen van de Personalisatie ](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
 
    >[!CAUTION]
    >
@@ -385,22 +386,22 @@ Het fragment aanpassen:
 
 Nadat de verpersoonlijkingseigenschappen worden gevormd, is de het richten wijze beschikbaar wanneer het fragment voor het uitgeven wordt geopend.
 
-![&#x200B; de Redacteur van het Fragment van de Ervaring - het richten wijze &#x200B;](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+![ de Redacteur van het Fragment van de Ervaring - het richten wijze ](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
-Deze modus werkt op dezelfde manier als bij paginabewerking. Zie [&#x200B; het richten wijze voor de Redacteur van de Pagina &#x200B;](/help/sites-cloud/authoring/personalization/targeted-content.md) voor meer details.
+Deze modus werkt op dezelfde manier als bij paginabewerking. Zie [ het richten wijze voor de Redacteur van de Pagina ](/help/sites-cloud/authoring/personalization/targeted-content.md) voor meer details.
 
 ## Details van uw ervaringsfragment {#details-of-your-experience-fragment}
 
 Details van het fragment kunt u zien:
 
 1. Navigeer naar de locatie van uw ervaringsfragmenten (navigeer niet verder naar beneden naar de variaties in het fragment).
-De details worden getoond in alle meningen van de **console van Fragmenten van de 1&rbrace; Ervaring, met de** Mening van de Lijst **met inbegrip van details van een** uitvoer naar Doel [:](/help/sites-cloud/integrating/integrating-adobe-target.md)
+De details worden getoond in alle meningen van de **console van Fragmenten van de 1} Ervaring, met de** Mening van de Lijst **met inbegrip van details van een** uitvoer naar Doel [:](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
-   ![&#x200B; de details van het Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/xf-15.png)
+   ![ de details van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/xf-15.png)
 
 1. Wanneer u **Eigenschappen** van het Fragment van de Ervaring opent:
 
-   ![&#x200B; knoop van Eigenschappen &#x200B;](/help/sites-cloud/authoring/assets/xf-16.png)
+   ![ knoop van Eigenschappen ](/help/sites-cloud/authoring/assets/xf-16.png)
 
    De eigenschappen zijn beschikbaar op verschillende tabbladen:
 
@@ -410,7 +411,7 @@ De details worden getoond in alle meningen van de **console van Fragmenten van d
    >
    >Als u **Eigenschappen opent** tijdens het bewerken van een Experience-fragment, worden de juiste [Pagina-eigenschappen](/help/sites-cloud/authoring/sites-console/page-properties.md) weergegeven.
 
-   ![&#x200B; de eigenschappen van het Fragment van de Ervaring &#x200B;](/help/sites-cloud/authoring/assets/xf-17.png)
+   ![ de eigenschappen van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/xf-17.png)
 
    * **Basis**
       * **Titel** - verplicht
@@ -438,13 +439,13 @@ Met de kiezer `.plain.` in de URL hebt u vanuit de browser toegang tot de normal
 
 >[!NOTE]
 >
->Hoewel dit direct beschikbaar van browser is, [&#x200B; het primaire doel is andere toepassingen (bijvoorbeeld, derdeWeb apps, douane mobiele implementaties) toe te staan om tot de inhoud van het Fragment van de Ervaring direct toegang te hebben, gebruikend slechts URL &#x200B;](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Hoewel dit direct beschikbaar van browser is, [ het primaire doel is andere toepassingen (bijvoorbeeld, derdeWeb apps, douane mobiele implementaties) toe te staan om tot de inhoud van het Fragment van de Ervaring direct toegang te hebben, gebruikend slechts URL ](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Fragmenten voor publicatie-ervaring {#publishing-experience-fragments}
 
-Het publiceren van uw Fragment van de Ervaring is fundamenteel het zelfde als [&#x200B; het publiceren van een pagina &#x200B;](/help/sites-cloud/authoring/sites-console/publishing-pages.md) (hoewel van de console of de redacteur van de Fragmenten van de Ervaring).
+Het publiceren van uw Fragment van de Ervaring is fundamenteel het zelfde als [ het publiceren van een pagina ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) (hoewel van de console of de redacteur van de Fragmenten van de Ervaring).
 
-Alternatief kunt u [&#x200B; ook publiceren aan Voorproef &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md) (opnieuw van de console of de redacteur van de Fragmenten van de Ervaring).
+Alternatief kunt u [ ook publiceren aan Voorproef ](/help/sites-cloud/authoring/sites-console/previewing-content.md) (opnieuw van de console of de redacteur van de Fragmenten van de Ervaring).
 
 >[!CAUTION]
 >

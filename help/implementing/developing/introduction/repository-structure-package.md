@@ -1,23 +1,23 @@
 ---
-title: Structuurpakket projectopslagplaats AEM
+title: Structuurpakket voor AEM-projectopslagplaats
 description: Gemaakte projecten op Adobe Experience Manager as a Cloud Service vereisen een definitie van subpakket van de Structuur van de Bewaarplaats met als enig doel de wortels van de bewaarplaats van JCR te bepalen waarin de Codepakketten van het project in subpakketten van de Code van het project opstellen.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
-# Structuurpakket projectopslagplaats AEM
+# Structuurpakket voor AEM-projectopslagplaats
 
-Gemaakte projecten voor Adobe Experience Manager as a Cloud Service vereisen een definitie van het subpakket van de opslagplaats met als enig doel het bepalen van de wortels van de bewaarplaats JCR waarin de code van het project subpackages opstelt. Deze methode verzekert de installatie van pakketten in Experience Manager as a Cloud Service automatisch door JCR middelgebiedsdelen wordt bevolen. Ontbrekende afhankelijkheden kunnen leiden tot scenario&#39;s waarbij substructuren worden geïnstalleerd vóór hun bovenliggende structuren en daarom onverwacht worden verwijderd, waardoor de implementatie wordt verbroken.
+Gemaakte projecten voor Adobe Experience Manager as a Cloud Service vereisen een definitie van het subpakket van de opslagplaats met als enig doel het bepalen van de wortels van de bewaarplaats JCR waarin de code van het project subpackages opstelt. Deze methode zorgt ervoor dat pakketten in Experience Manager as a Cloud Service automatisch worden geïnstalleerd door JCR-bronafhankelijkheden. Ontbrekende afhankelijkheden kunnen leiden tot scenario&#39;s waarbij substructuren worden geïnstalleerd vóór hun bovenliggende structuren en daarom onverwacht worden verwijderd, waardoor de implementatie wordt verbroken.
 
 Als uw codepakket in een plaats **opstelt niet die** door het codepakket wordt behandeld, dan moeten om het even welke vooroudermiddelen (middelen JCR dichter bij de wortel JCR) in het pakket van de opslagplaatsstructuur worden opgesomd. Dit proces is noodzakelijk om deze gebiedsdelen te vestigen.
 
-![&#x200B; Pakket van de Structuur van de Bewaarplaats &#x200B;](./assets/repository-structure-packages.png)
+![ Pakket van de Structuur van de Bewaarplaats ](./assets/repository-structure-packages.png)
 
 Het opslagplaatsstructuurpakket definieert de verwachte, algemene status van `/apps` die door de pakketvalidator wordt gebruikt om te bepalen welke gebieden &#39;veilig zijn tegen potentiële conflicten&#39;, aangezien ze de standaardwortels hebben.
 
@@ -184,4 +184,4 @@ Deze fout geeft aan dat het pakket voor het afbreken van code geen `<repositoryS
 
 ## Aanvullende bronnen
 
-+ [&#x200B; Geproduceerde Plug-in van het Pakket van de Inhoud FileVault &#x200B;](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [ Geproduceerde Plug-in van het Pakket van de Inhoud FileVault ](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

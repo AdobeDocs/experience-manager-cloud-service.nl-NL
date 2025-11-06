@@ -4,14 +4,14 @@ description: Leer hoe u de opties en instellingen voor de Forms Experience Build
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikersopties voor Forms Experience Builder configureren
 
@@ -99,8 +99,8 @@ Ontruim het huidige gesprek terwijl het houden van de gespreksdraad:
 
 Voor extra steun met configuratie UI:
 
-- Controle [&#x200B; Veelgestelde vragen van de Bouwer van de Ervaring van Forms &#x200B;](forms-experience-builder-frequently-asked-questions.md)
-- Herzie [&#x200B; Begonnen gids &#x200B;](forms-experience-builder-getting-started.md)
+- Controle [ Veelgestelde vragen van de Bouwer van de Ervaring van Forms ](forms-experience-builder-frequently-asked-questions.md)
+- Herzie [ Begonnen gids ](forms-experience-builder-getting-started.md)
 - Neem contact op met de systeembeheerder voor technische ondersteuning
 
 ## Verwante artikelen

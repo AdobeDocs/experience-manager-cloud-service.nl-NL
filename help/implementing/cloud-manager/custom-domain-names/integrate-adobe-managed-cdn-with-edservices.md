@@ -3,10 +3,10 @@ title: Edge Delivery Services integreren met door Adobe beheerde CDN in Cloud Ma
 description: null
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -45,8 +45,8 @@ Edge Delivery Services kan worden ingesteld op basis van een van de volgende twe
 
 |  | Implementatieoptie | Toetsdocument | Capaciteit | Best voor |
 | --- | --- | --- | --- | --- |
-| Optie 1 | *met* een bestaand milieu van AEM as a Cloud Service (AEMaaCS) | [&#x200B; opstelling een volmacht van een bestaand milieu &#x200B;](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | Config Pipeline is doorgaans beschikbaar voor AEMaaCS-omgevingen | Teams die al Sites uitvoeren in Cloud Manager en die een snelle prestatieverhoging met lage risico&#39;s willen. |
-| Optie 2 | *zonder* een bestaand milieu AEMaaCS; gekend als standalone &quot;milieu van Edge.&quot; | [&#x200B; Opstelling een plaats van Edge Delivery zonder een bestaand milieu &#x200B;](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | Config Pipeline is momenteel alleen beschikbaar voor Edge-omgevingen via het beperkte Beta-programma.<br> zie [&#x200B; toevoegen de Pijpleiding van Edge Delivery Config &#x200B;](help/implementing/cloud-manager/release-notes/current.md##add-eds-pipeline). | Nieuwe builds of migraties die de volledige Edge Delivery architectuur en granulaire routering willen omarmen. |
+| Optie 1 | *met* een bestaand milieu van AEM as a Cloud Service (AEMaaCS) | [ opstelling een volmacht van een bestaand milieu ](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | Config Pipeline is doorgaans beschikbaar voor AEMaaCS-omgevingen | Teams die al Sites uitvoeren in Cloud Manager en die een snelle prestatieverhoging met lage risico&#39;s willen. |
+| Optie 2 | *zonder* een bestaand milieu AEMaaCS; gekend als standalone &quot;milieu van Edge.&quot; | [ Opstelling een plaats van Edge Delivery zonder een bestaand milieu ](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | Config Pipeline is momenteel alleen beschikbaar voor Edge-omgevingen via het beperkte Beta-programma.<br> zie [ toevoegen de Pijpleiding van Edge Delivery Config ](/help/implementing/cloud-manager/release-notes/current.md#add-eds-pipeline). | Nieuwe builds of migraties die de volledige Edge Delivery architectuur en granulaire routering willen omarmen. |
 
 <!-- Ultimately this URL above will need to be updated on GA -->
 
@@ -57,7 +57,7 @@ Edge Delivery Services kan worden ingesteld op basis van een van de volgende twe
 
 >[!TIP]
 >
->Onzeker welk pad moet worden gekozen? Zie [&#x200B; kiezen een plaatsingsmodel &#x200B;](#choose-deployment-model) hieronder voor besluitvormingsrichtlijnen.
+>Onzeker welk pad moet worden gekozen? Zie [ kiezen een plaatsingsmodel ](#choose-deployment-model) hieronder voor besluitvormingsrichtlijnen.
 
 ## Kies een implementatiemodel {#choose-deployment-model}
 

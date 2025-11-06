@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -35,13 +35,13 @@ De functie `GOOGLETRANSLATE` in Google-bladen vertaalt formulieren door te tikke
 U kunt een formule gebruiken om de inhoud van cel D2 van het `shared-en` blad in het Frans te vertalen binnen het `shared-default` blad. Hier volgt de formule:
    `=GOOGLETRANSLATE('shared-en'!D2,"en","fr")`
 
-   ![&#x200B; Vertaal de vraag spreadsheet &#x200B;](/help/forms/assets/translate-enquiry-spreadsheet.png)
+   ![ Vertaal de vraag spreadsheet ](/help/forms/assets/translate-enquiry-spreadsheet.png)
 
-5. Voorproef en publiceer het blad gebruikend [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+5. Voorproef en publiceer het blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-U kunt naar het [&#x200B; spreadsheet &#x200B;](/help/forms/assets/enquirytranslate.xlsx) verwijzen die de vormdefinitie voor een `enquiry` vorm bevat die van het Engels aan de Franse taal wordt vertaald.
+U kunt naar het [ spreadsheet ](/help/forms/assets/enquirytranslate.xlsx) verwijzen die de vormdefinitie voor een `enquiry` vorm bevat die van het Engels aan de Franse taal wordt vertaald.
 
-![&#x200B; Vertaalde Vorm van de vraag &#x200B;](/help/forms/assets/translate-form-french.png)
+![ Vertaalde Vorm van de vraag ](/help/forms/assets/translate-form-french.png)
 
 Raadpleeg de onderstaande URL waar u het formulier kunt bekijken met de Franse vertaling:
 https://main—portal—wkndforms.hlx.live/enquirytranslate
@@ -55,13 +55,13 @@ Als u de formulieren wilt vertalen op de Microsoft® SharePoint-site, moet u de 
 3. Voeg een werkblad met de naam `shared-default` toe. Het `shared-default` -blad bevat de inhoud die u wilt lokaliseren naar een bepaalde taal.
 4. Voeg de gelokaliseerde inhoud handmatig toe aan het `shared-default` -werkblad.
 
-   ![&#x200B; Vertaal de vraag spreadsheet &#x200B;](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
+   ![ Vertaal de vraag spreadsheet ](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
 
-5. Voorproef en publiceer het blad gebruikend [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+5. Voorproef en publiceer het blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-Verwijs naar [&#x200B; spreadsheet &#x200B;](/help/forms/assets/enquirytranslate-sp.xlsx) die de vormdefinitie voor een `enquiry` vorm bevat die van het Engels aan de Franse taal wordt vertaald.
+Verwijs naar [ spreadsheet ](/help/forms/assets/enquirytranslate-sp.xlsx) die de vormdefinitie voor een `enquiry` vorm bevat die van het Engels aan de Franse taal wordt vertaald.
 
-![&#x200B; Vertaalde Vorm van de vraag &#x200B;](/help/forms/assets/translate-form-french.png)
+![ Vertaalde Vorm van de vraag ](/help/forms/assets/translate-form-french.png)
 
 Raadpleeg de onderstaande URL waar u het formulier kunt bekijken met de Franse vertaling:
 https://main—wefinance—wkndforms.hlx.live/enquirytranslate
@@ -70,11 +70,11 @@ https://main—wefinance—wkndforms.hlx.live/enquirytranslate
 
 - De labels van het formulier worden vertaald naar de opgegeven gelokaliseerde taal op het `shared-default` -blad, maar de foutberichten worden weergegeven in de standaardtaal van de browser.
 
-  ![&#x200B; het bericht van de Fout &#x200B;](/help/forms/assets/translate-error-message.png)
+  ![ het bericht van de Fout ](/help/forms/assets/translate-error-message.png)
 
 - Wanneer u de kalender opent, wordt de kalenderdrop-down getoond in de standaardtaal van browser.
 
-  ![&#x200B; het bericht van de Fout &#x200B;](/help/forms/assets/translate-calender-display.png)
+  ![ het bericht van de Fout ](/help/forms/assets/translate-calender-display.png)
 
 
 ## Veelgestelde vragen {#faq}
@@ -83,13 +83,13 @@ https://main—wefinance—wkndforms.hlx.live/enquirytranslate
 
 **A**: Aan inputtekst in een specifieke gelokaliseerde taal, pas de toetsenbordmontages op uw apparaat aan. Raadpleeg de volgende koppelingen voor instructies over hoe u dit kunt doen:
 
-- [&#x200B; opstelling uw Mac om input in een andere taal &#x200B;](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac) te nemen
-- [&#x200B; opstelling uw Vensters om input in een andere taal &#x200B;](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options) te nemen
-- [&#x200B; Opstelling uw Android of iPhones/iPads om input in een andere taal &#x200B;](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid) te nemen
+- [ opstelling uw Mac om input in een andere taal ](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac) te nemen
+- [ opstelling uw Vensters om input in een andere taal ](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options) te nemen
+- [ Opstelling uw Android of iPhones/iPads om input in een andere taal ](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid) te nemen
 
 
 **Q**: Hoe kan ik een lijst van scènes terugwinnen die in de `GOOGLETRANSLATE` functie worden gebruikt?
 
-**A**: U kunt naar de [&#x200B; officiële documentatie van Google &#x200B;](https://cloud.google.com/translate/docs/languages) voor een uitvoerige lijst van scènes verwijzen die in GOOGLETRANSLATE worden gebruikt.
+**A**: U kunt naar de [ officiële documentatie van Google ](https://cloud.google.com/translate/docs/languages) voor een uitvoerige lijst van scènes verwijzen die in GOOGLETRANSLATE worden gebruikt.
 
 

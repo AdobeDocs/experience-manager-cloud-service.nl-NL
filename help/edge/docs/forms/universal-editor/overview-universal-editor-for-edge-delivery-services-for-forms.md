@@ -2,9 +2,9 @@
 title: Universal Editor voor Edge Delivery Services voor Forms
 description: Met Universal Editor voor Edge Delivery Services for Forms kunt u Adaptive Forms maken.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -20,33 +20,33 @@ Met de Universal Editor kunt u snel responsieve, interactieve formulieren ontwer
 
 Of u nu lichtgewicht weergave op de client beheert, compatibiliteit tussen browsers garandeert of voldoet aan strenge toegankelijkheidsnormen, de Universal Editor biedt een gestroomlijnde oplossing voor het maken en beheren van formulieren.
 
-![&#x200B; Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## Belangrijke functies van de Universal Editor voor Edge Delivery Services for Forms
 
 
 
-| ![&#x200B; Interface van WYSIWYG &#x200B;](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![&#x200B; Redacteur van de Regel &#x200B;](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![&#x200B; legt Acties &#x200B;](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) voor |
+| ![ Interface van WYSIWYG ](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![ Redacteur van de Regel ](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![ legt Acties ](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) voor |
 |:-------------:|:-------------:|:-------------:|
 | [**Interface van WYSIWYG**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**Redacteur van de Regel**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**legt Acties**](/help/edge/docs/forms/universal-editor/submit-action.md) voor |
 | De Universal Editor biedt een WYSIWYG-interface voor formulierontwerp met een vooraf gebouwde componentbibliotheek, een responsief ontwerp, een op een sjabloon gebaseerd ontwerp en realtime veldwijzigingen. | Met de regeleditor kunnen gebruikers dynamische formulierinteracties maken aan de hand van gebeurtenisgestuurde regels, directe validatie en foutafhandeling via lichtgewichtJavaScript en JSON. | Verstuur Acties steunen achterste integratie, voorwaardelijke voorleggingslogica, veilige eindpunten, en pre-bewerkers, stroomlijnend voorleggingswerkschema&#39;s. |
 
-| ![&#x200B; het Publiceren/Unpublishing &#x200B;](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![&#x200B; Responsieve Wijze &#x200B;](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![&#x200B; de Componenten van de Douane &#x200B;](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
+| ![ het Publiceren/Unpublishing ](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![ Responsieve Wijze ](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![ de Componenten van de Douane ](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
 | [**het Publiceren/Unpublishing**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**Responsieve Wijze**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**de Componenten van de Douane**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | U kunt gemakkelijk de zichtbaarheid van uw formulieren bepalen door de formulieren te publiceren of de publicatie ervan rechtstreeks vanuit de editor ongedaan te maken met slechts een paar klikken. | Formulieren ontwerpen die zich naadloos aanpassen op verschillende apparaten (desktops, tablets en mobiele apparaten). In de responsieve modus kunt u formulieren voor verschillende schermgrootten voorvertonen en testen. | Met aangepaste componenten kunnen ontwikkelaars de formuliermogelijkheden uitbreiden door unieke elementen te maken die zijn afgestemd op specifieke gevallen van organisatiegebruik. |
 
-| ![&#x200B; het Stijlen &#x200B;](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![&#x200B; prefill de Diensten &#x200B;](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![&#x200B; het Testen A/B &#x200B;](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
+| ![ het Stijlen ](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![ prefill de Diensten ](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![ het Testen A/B ](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**het Stijlen**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Vul vormen](/help/edge/docs/forms/universal-editor/prefill-form.md)** vooraf in | [**het Testen A/B** &#x200B;](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**het Stijlen**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Vul vormen](/help/edge/docs/forms/universal-editor/prefill-form.md)** vooraf in | [**het Testen A/B** ](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Met CSS opmaken kunnen ontwikkelaars de weergave van formulierelementen aanpassen en een visueel aantrekkelijk ontwerp maken dat wordt uitgelijnd op de esthetiek van de website. | Pre-fill Services vult formuliervelden automatisch met relevante gebruikersgegevens uit verschillende bronnen, waardoor de handmatige invoer wordt verminderd en de gebruikerservaring wordt verbeterd. | Met A/B-tests kunnen organisaties experimenteren met verschillende formulierontwerpen, indelingen en functies om de best presterende varianten te identificeren. |
 
-| ![&#x200B; Analytics &amp; het Volgen &#x200B;](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![&#x200B; Fragmenten van de Vorm &#x200B;](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![&#x200B; Gegevens die &#x200B;](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) binden |
+| ![ Analytics &amp; het Volgen ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ Fragmenten van de Vorm ](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![ Gegevens die ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) binden |
 |:-------------:|:-------------:|:-------------:|
-| [**Analytics &amp; het Volgen** &#x200B;](https://www.aem.live/developer/martech-integration) | **Fragmenten van de Vorm** (Binnenkort komend) | [**Gegevens die**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) binden |
+| [**Analytics &amp; het Volgen** ](https://www.aem.live/developer/martech-integration) | **Fragmenten van de Vorm** (Binnenkort komend) | [**Gegevens die**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) binden |
 | Bekijk meer inzicht in gebruikersgedrag, formulierinteracties en verzendingssnelheden met ingebouwde analyses en tracering om gegevensgestuurde optimalisatie van formulieren mogelijk te maken. | Met formulierfragmenten kunt u hergebruik mogelijk maken door veelgebruikte secties één keer te maken en opnieuw te gebruiken in meerdere formulieren. Dit zorgt voor consistentie en vermindert de onderhoudsinspanning. | Gegevensbinding maakt directe verbindingen mogelijk tussen formuliervelden en achterwaartse gegevensbronnen, met ondersteuning voor realtime updates en geavanceerde gegevenstoewijzing. |
 
-| ![&#x200B; CAPTCHA &#x200B;](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![&#x200B; Inbeddend Forms &#x200B;](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![&#x200B; Dank u Configuratie &#x200B;](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
+| ![ CAPTCHA ](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![ Inbeddend Forms ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![ Dank u Configuratie ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
 | [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Inbeddend Forms** (Binnenkort komend) | [**Dank u Configuratie**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Gebruik reCAPTCHA om formulieren te beschermen tegen geautomatiseerde bots, zodat u verzekerd bent van een veilige en betrouwbare gegevensverzameling. | U kunt formulieren rechtstreeks insluiten in Edge Delivery Services-sitepagina&#39;s met de ingebouwde insluitcomponent van de Universal Editor. | Pas eenvoudig het bevestigingsbericht of de pagina aan die aan gebruikers na succesvolle vormverzending worden getoond. |

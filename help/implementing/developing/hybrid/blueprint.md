@@ -3,9 +3,9 @@ title: SPA-blauwdruk
 description: Dit document beschrijft het algemene, kader-onafhankelijke contract dat om het even welk kader van het KUUROORD zou moeten vervullen zodat kunt u editable componenten van het KUUROORD binnen AEM uitvoeren.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -41,11 +41,11 @@ De `PageModelManager` bibliotheek wordt verstrekt als pakket NPM dat door een pr
 
 Namens het KUUROORD, onttrekt het de herwinning en het beheer van de structuur JSON die de daadwerkelijke inhoudsstructuur vertegenwoordigt. Het is ook verantwoordelijk voor het synchroniseren met het KUUROORD om het te laten weten wanneer het zijn componenten moet opnieuw teruggeven.
 
-Zie het NPM-pakket [@adobe/aem-spa-model-manager &#x200B;](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
+Zie het NPM-pakket [@adobe/aem-spa-model-manager ](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
 Wanneer u `PageModelManager` initialiseert, laadt de bibliotheek eerst het opgegeven hoofdmodel van de app (via parameter, meta-eigenschap of huidige URL). Als in de bibliotheek wordt aangegeven dat het model van de huidige pagina geen deel uitmaakt van het hoofdmodel, wordt het opgehaald en opgenomen als het model van een onderliggende pagina.
 
-![&#x200B; de modelconsolidatie van de Pagina &#x200B;](assets/page-model-consolidation.png)
+![ de modelconsolidatie van de Pagina ](assets/page-model-consolidation.png)
 
 ### ComponentMapping {#componentmapping}
 
@@ -55,7 +55,7 @@ Elke item in het model bevat een veld `:type` dat een AEM-brontype weergeeft. Al
 
 #### Dynamisch model naar componenttoewijzing {#dynamic-model-to-component-mapping}
 
-Voor details over hoe het dynamische model aan componentenafbeelding in JavaScript SPA SDK voor AEM voorkomt zie het artikel [&#x200B; Dynamische Model aan Component Mapping voor SPAs &#x200B;](model-to-component-mapping.md).
+Voor details over hoe het dynamische model aan componentenafbeelding in JavaScript SPA SDK voor AEM voorkomt zie het artikel [ Dynamische Model aan Component Mapping voor SPAs ](model-to-component-mapping.md).
 
 ### Framework-specifieke laag {#framework-specific-layer}
 
@@ -73,7 +73,7 @@ De componenten van het KUUROORD moeten synchroon met het paginamodel zijn en met
 
 ### Meta-velden {#meta-fields}
 
-Het paginamodel gebruikt de JSON ModelExporter, die zelf op het [&#x200B; Verschuivende Model &#x200B;](https://sling.apache.org/documentation/bundles/models.html) API gebaseerd is. De exporteerbare kiesmodellen geven de volgende lijst met velden weer, zodat de onderliggende bibliotheken het gegevensmodel kunnen interpreteren:
+Het paginamodel gebruikt de JSON ModelExporter, die zelf op het [ Verschuivende Model ](https://sling.apache.org/documentation/bundles/models.html) API gebaseerd is. De exporteerbare kiesmodellen geven de volgende lijst met velden weer, zodat de onderliggende bibliotheken het gegevensmodel kunnen interpreteren:
 
 * `:type`: Type van de AEM-bron (standaardwaarde = type resource)
 * `:children`: Hierarchische onderliggende elementen van de huidige bron. Onderliggende items maken geen deel uit van de binneninhoud van de huidige bron (vindt u bij items die een pagina vertegenwoordigen)
@@ -83,7 +83,7 @@ Het paginamodel gebruikt de JSON ModelExporter, die zelf op het [&#x200B; Versch
 * `:itemsOrder`: geordende lijst met de onderliggende items. Het JSON-toewijzingsobject garandeert de volgorde van de velden niet. Door zowel de kaart als de huidige array te hebben, heeft de consument van de API de voordelen van beide structuren
 * `:path`: Inhoudspad van een item (aanwezig op items die een pagina vertegenwoordigen)
 
-Zie ook [&#x200B; Begonnen het Worden met de Diensten van de Inhoud van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL).
+Zie ook [ Begonnen het Worden met de Diensten van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html).
 
 ### Framework-Specific Module {#framework-specific-module}
 
@@ -91,18 +91,18 @@ Het scheiden van zorgen helpt de uitvoering van het project te vergemakkelijken.
 
 Om de interoperabiliteit van de bibliotheken te vergemakkelijken, adviseert Adobe de specifieke module voor het framework om de volgende bibliotheken te bundelen. Indien nodig, kan de laag onderliggende APIs inkapselen en aanpassen alvorens hen aan het project bloot te stellen.
 
-* [@adobe/aem-spa-model-manager &#x200B;](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
-* [@adobe/aem-spa-component-mapping &#x200B;](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+* [@adobe/aem-spa-model-manager ](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
+* [@adobe/aem-spa-component-mapping ](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### Implementaties {#implementations}
 
 #### Reageren {#react}
 
-npm-module: [@adobe/aem-response-editable-components &#x200B;](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+npm-module: [@adobe/aem-response-editable-components ](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Angular {#angular}
 
-npm-module: [@adobe/aem-angular-editable-components &#x200B;](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+npm-module: [@adobe/aem-angular-editable-components ](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Belangrijkste services en componenten {#main-services-and-components}
 
@@ -161,7 +161,7 @@ De component Responsief raster moet vooraf worden toegewezen aan de AEM-tegenhan
 * `gridClassNames:` Klassenamen opgeven voor het responsieve raster
 * `columnClassNames:` Geleverde klassennamen voor de responsieve kolom
 
-Zie ook de npm-bron [@adobe/aem-response-editable-components &#x200B;](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+Zie ook de npm-bron [@adobe/aem-response-editable-components ](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Plaatsaanduiding van het responsieve raster {#placeholder-of-the-responsive-grid}
 
@@ -205,7 +205,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de leegheidsfunctionaliteit alvorens eigenlijk in de [&#x200B; opslag van de Afbeelding van de Component 1&rbrace; wordt geregistreerd. &#x200B;](#componentmapping) Dit gebeurt door de [`ComponentMapping`](#componentmapping) -bibliotheek in te kapselen en uit te breiden en de ondersteuning van het `EditConfig` -configuratieobject te introduceren:
+In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de leegheidsfunctionaliteit alvorens eigenlijk in de [ opslag van de Afbeelding van de Component 1} wordt geregistreerd. ](#componentmapping) Dit gebeurt door de [`ComponentMapping`](#componentmapping) -bibliotheek in te kapselen en uit te breiden en de ondersteuning van het `EditConfig` -configuratieobject te introduceren:
 
 ```javascript
 /**
@@ -247,7 +247,7 @@ Het volgende fragment illustreert de typische HTML-representatie van een pagina-
 * Het responsieve rasterelement bevat vooraf gedefinieerde klassenamen `aem-Grid--`
 * Het responsieve kolomelement bevat vooraf ingestelde klassenamen `aem-GridColumn--`
 * Een responsief raster dat ook de kolom van een bovenliggend raster is, wordt omlopen, zoals de twee vorige voorvoegsels, worden niet op hetzelfde element weergegeven
-* Elementen die overeenkomen met bewerkbare bronnen hebben een eigenschap `data-cq-data-path` . Zie [&#x200B; Slinken met de sectie van de Redacteur van de Pagina &#x200B;](#contract-with-the-page-editor) van dit document.
+* Elementen die overeenkomen met bewerkbare bronnen hebben een eigenschap `data-cq-data-path` . Zie [ Slinken met de sectie van de Redacteur van de Pagina ](#contract-with-the-page-editor) van dit document.
 
 ```javascript
 <div data-cq-data-path="/content/page">
@@ -271,17 +271,17 @@ De onderliggende [`PageModelManager`](#pagemodelmanager) -bibliotheek en de bijb
 
 De twee entiteiten hebben betrekking op het begrip &#39;routering&#39;, maar de [`ModelRouter`](routing.md) is alleen verantwoordelijk voor het laden van de [`PageModelManager`](#pagemodelmanager) met een gegevensmodel dat is gestructureerd in synchronisatie met de huidige toepassingsstatus.
 
-Zie het artikel [&#x200B; Model dat van het KUUROORD &#x200B;](routing.md) voor meer informatie verplettert.
+Zie het artikel [ Model dat van het KUUROORD ](routing.md) voor meer informatie verplettert.
 
 ## SPA in actie {#spa-in-action}
 
 Zie hoe een eenvoudige KUUROORD werkt en met een KUUROORD zelf experimenteert door op de volgende documenten verder te gaan:
 
-* [&#x200B; Begonnen het Worden met SPAs in AEM die React &#x200B;](getting-started-react.md) gebruiken.
-* [&#x200B; Begonnen het Worden met SPAs in AEM gebruikend Angular &#x200B;](getting-started-angular.md).
+* [ Begonnen het Worden met SPAs in AEM die React ](getting-started-react.md) gebruiken.
+* [ Begonnen het Worden met SPAs in AEM gebruikend Angular ](getting-started-angular.md).
 
 ## Verdere lezing {#further-reading}
 
 Voor meer informatie over SPAs in AEM, zie de volgende documenten:
 
-* [&#x200B; het Overzicht van de Redacteur van het KUUROORD &#x200B;](editor-overview.md) voor een overzicht van SPAs in AEM en het communicatie model
+* [ het Overzicht van de Redacteur van het KUUROORD ](editor-overview.md) voor een overzicht van SPAs in AEM en het communicatie model

@@ -1,10 +1,10 @@
 ---
 title: Afbeeldingseditor
-description: De Afbeeldingseditor is een AEM en kan door componenten worden gebruikt om het bewerken van afbeeldingen door makers van inhoud te vergemakkelijken.
+description: De Afbeeldingseditor is een kernstuk van AEM en kan door componenten worden gebruikt om het bewerken van afbeeldingen door makers van inhoud te vergemakkelijken.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Afbeeldingseditor {#image-editor}
 
-De Afbeeldingseditor is een AEM en kan door componenten worden gebruikt om het bewerken van afbeeldingen door makers van inhoud te vergemakkelijken.
+De Afbeeldingseditor is een kernstuk van AEM en kan door componenten worden gebruikt om het bewerken van afbeeldingen door makers van inhoud te vergemakkelijken.
 
 ## Relatieve eenheden voor afbeelding met hyperlinks {#relative-units-for-image-map}
 
@@ -40,7 +40,7 @@ Voorbeeld:
 
 Scalable Vector Graphics (SVG) wordt ondersteund door de Afbeeldingseditor.
 
-* De belemmering-en-daling van SVG activa van DAM en het uploaden van een SVG dossier van een lokaal dossiersysteem worden allebei gesteund.
+* Het slepen en neerzetten van een SVG-element van DAM en het uploaden van een SVG-bestandsupload vanuit een lokaal bestandssysteem worden beide ondersteund.
 
 ## Plug-ins inschakelen op basis van MIME-type {#enabling-plugins-by-mime-type}
 

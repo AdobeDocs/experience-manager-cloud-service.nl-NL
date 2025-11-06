@@ -3,8 +3,8 @@ title: Inhoudsfragmenten die componenten voor rendering configureren
 description: Inhoudsfragmenten die componenten voor rendering configureren
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Inhoudsfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
 
-Er zijn verscheidene [&#x200B; geavanceerde diensten &#x200B;](#definition-of-advanced-services-that-need-configuration) met betrekking tot het teruggeven van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
+Er zijn verscheidene [ geavanceerde diensten ](#definition-of-advanced-services-that-need-configuration) met betrekking tot het teruggeven van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
 
-Dit wordt gedaan door de [&#x200B; Dienst OSGi te vormen - de Configuratie van de Component van het Fragment van de Inhoud &#x200B;](#osgi-service-content-fragment-component-configuration).
+Dit wordt gedaan door de [ Dienst OSGi te vormen - de Configuratie van de Component van het Fragment van de Inhoud ](#osgi-service-content-fragment-component-configuration).
 
 Deze informatie is vereist wanneer:
 
@@ -26,7 +26,7 @@ Adobe raadt u aan de Core Components (Basiscomponenten) te gebruiken.
 
 >[!CAUTION]
 >
->* **als u niet de [&#x200B; geavanceerde hieronder beschreven diensten](#definition-of-advanced-services-that-need-configuration)** nodig hebt, kunt u deze configuratie negeren.
+>* **als u niet de [ geavanceerde hieronder beschreven diensten](#definition-of-advanced-services-that-need-configuration)** nodig hebt, kunt u deze configuratie negeren.
 >
 >* **wanneer u uitbreidt of de uit-van-de-doos component(s)** gebruikt, wordt het niet geadviseerd om de configuratie te veranderen OSGi.
 >
@@ -55,11 +55,11 @@ De configuratie moet aan de OSGi dienst **Configuratie van de Component van het 
 
 >[!NOTE]
 >
->Zie [&#x200B; Configuratie OSGi &#x200B;](/help/implementing/deploying/overview.md#osgi-configuration) voor verdere details.
+>Zie [ Configuratie OSGi ](/help/implementing/deploying/overview.md#osgi-configuration) voor verdere details.
 
 Bijvoorbeeld:
 
-![&#x200B; Configuratie van de Component van het Fragment van de Inhoud van de Configuratie OSGi &#x200B;](assets/cf-component-configuration-osgi.png)
+![ Configuratie van de Component van het Fragment van de Inhoud van de Configuratie OSGi ](assets/cf-component-configuration-osgi.png)
 
 De configuratie OSGi is:
 
@@ -136,7 +136,7 @@ Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde co
 
 ## Voorbeeld {#example}
 
-Zie bijvoorbeeld het volgende (op een uit-van-de-doos AEM instantie):
+Zie bijvoorbeeld het volgende (op een AEM-instantie buiten de box):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config

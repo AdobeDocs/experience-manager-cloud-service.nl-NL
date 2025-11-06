@@ -3,8 +3,8 @@ title: Data Protection and Data Privacy Regulations - Adobe Experience Manager a
 description: Meer informatie over Adobe Experience Manager as a Cloud Service Foundation-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations. Dit artikel omvat de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act, en de manier waarop een nieuw AEM as a Cloud Service-project moet worden uitgevoerd.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat het voor u als Adobe klant betekent, zie [&#128279;](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0&rbrace; &lbrace;.
+>Voor meer informatie over de reactie van Adobe op privacykwesties, en wat het voor u als klant van Adobe betekent, zie [ het Centrum van de Privacy van Adobe ](https://www.adobe.com/privacy.html).
 
-## Ondersteuning voor gegevensprivacy en -bescherming van AEM Stichting {#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation - ondersteuning voor gegevensbescherming en -bescherming {#aem-foundation-data-privacy-and-protection-support}
 
-Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt opgeslagen gehouden in het Profiel van de Gebruiker. Daarom richt de informatie in dit artikel hoofdzakelijk hoe te om tot gebruikersprofielen toegang te hebben en te schrappen, zodat kunt u de toegang richten, en verzoeken schrappen, respectievelijk.
+Op het niveau van de Stichting van AEM, worden de Persoonlijke Gegevens die wordt opgeslagen gehouden in het Profiel van de Gebruiker. Daarom richt de informatie in dit artikel hoofdzakelijk hoe te om tot gebruikersprofielen toegang te hebben en te schrappen, zodat kunt u de toegang richten, en verzoeken schrappen, respectievelijk.
 
 ## Een gebruikersprofiel openen {#accessing-a-user-profile}
 
@@ -39,15 +39,15 @@ Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt op
 
 1. Zoek vervolgens naar de desbetreffende gebruiker door de naam in de zoekbalk boven aan de pagina te typen:
 
-   ![&#x200B; onderzoek naar rekening &#x200B;](assets/dpp-foundation-01.png)
+   ![ onderzoek naar rekening ](assets/dpp-foundation-01.png)
 
 1. Open ten slotte het gebruikersprofiel door erop te klikken en controleer het vervolgens onder de tab **[!UICONTROL Details]** .
 
-   ![&#x200B; gebruikersprofiel &#x200B;](assets/dpp-foundation-02.png)
+   ![ gebruikersprofiel ](assets/dpp-foundation-02.png)
 
 ### HTTP-API {#http-api}
 
-Zoals vermeld, verstrekt de Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
+Zoals vermeld, verstrekt Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
 
 **UserProperties API**
 
@@ -85,13 +85,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 3. In het hogere menu, klik **onbruikbaar maken** om (draai weg) de gebruiker onbruikbaar te maken:
 
-   ![&#x200B; maak rekening &#x200B;](assets/dpp-foundation-03.png) onbruikbaar
+   ![ maak rekening ](assets/dpp-foundation-03.png) onbruikbaar
 
 4. Ten slotte, bevestig de actie.
 
    De gebruikersinterface geeft aan dat de gebruikersaccount is gedeactiveerd door uit te schakelen en een vergrendeling toe te voegen aan de profielkaart:
 
-   ![&#x200B; gehandicapte rekening &#x200B;](assets/dpp-foundation-04.png)
+   ![ gehandicapte rekening ](assets/dpp-foundation-04.png)
 
 ### Gebruikersprofielgegevens verwijderen {#delete-user-profile-information}
 

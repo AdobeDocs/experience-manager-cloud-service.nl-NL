@@ -4,7 +4,7 @@ description: Opmerkingen bij de release voor  [!DNL Workfront for Experience Man
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1658'
 ht-degree: 0%
@@ -29,11 +29,11 @@ De meest recente versie van [!DNL Workfront for Experience Manager enhanced conn
 
 >[!NOTE]
 >
->AEM 6.4 heeft het einde bereikt van de uitgebreide steun. Zie onze [&#x200B; technische steunperiodes &#x200B;](https://helpx.adobe.com/nl/support/programs/eol-matrix.html). Vind de gesteunde versies [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/?lang=nl-NL).
+>AEM 6.4 heeft het einde bereikt van de uitgebreide steun. Zie onze [ technische steunperiodes ](https://helpx.adobe.com/support/programs/eol-matrix.html). Vind de gesteunde versies [ hier ](https://experienceleague.adobe.com/docs/?lang=en).
 
 >[!IMPORTANT]
 >
->Adobe adviseert u [&#x200B; verbetering aan de recentste versie 1.9.20 &#x200B;](/help/assets/workfront-connector-install.md) van [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe adviseert u [ verbetering aan de recentste versie 1.9.20 ](/help/assets/workfront-connector-install.md) van [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekende problemen {#known-issues}
 
@@ -65,9 +65,9 @@ De meest recente versie van [!DNL Workfront for Experience Manager enhanced conn
 
 ### Release januari 2024 {#january-2024-release}
 
-* In de [!DNL Workfront] -configuratie in [!DNL CRX DE] wordt de `project ID` momenteel niet opgeslagen. Dit leidt tot fouten bij het toepassen van alleen-lezen bevoegdheden. Leer meer over hoe te [&#x200B; toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=nl-NL#linked-folders) vormen.
+* In de [!DNL Workfront] -configuratie in [!DNL CRX DE] wordt de `project ID` momenteel niet opgeslagen. Dit leidt tot fouten bij het toepassen van alleen-lezen bevoegdheden. Leer meer over hoe te [ toestemmingen ](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders) vormen.
 
-* Geen openbare documentatie over hoe te om douanebezit aan uit de definitie van de kaderindex toe te voegen. Leer meer over [&#x200B; toevoegend douanebezit &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=nl-NL#metadata-schema-mapping).
+* Geen openbare documentatie over hoe te om douanebezit aan uit de definitie van de kaderindex toe te voegen. Leer meer over [ toevoegend douanebezit ](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
 
 * Het verwijderen van verbindingsconfiguraties op de verbeterde connector heeft een aanzienlijke invloed op gebeurtenisabonnementen en andere opgeslagen configuraties, waardoor deze naar een oude URL verwijzen.
 
@@ -201,13 +201,13 @@ De meest recente versie van [!DNL Workfront for Experience Manager enhanced conn
          Zorg ervoor dat de inhoud tussen `"objId": "",` en `"url"` overeenkomt met het JSON-antwoord. De geadviseerde methode om dit te doen is van om het even welk Abonnement van de Gebeurtenis te kopiëren dat `objId` heeft en dan het aantal te schrappen.
 
       1. Noteer de abonnements-id.
-
       1. Verwijder het verkeerde gebeurtenisabonnement. Maak een Delete API-aanroep aan `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          `200` als de antwoordcode aangeeft dat onjuiste gebeurtenisabonnementen met succes zijn verwijderd.
-  >[!NOTE]
-  >
-  >Als u reeds de verkeerde gebeurtenisabonnementen vóór het uitvoeren van de stappen hebt geschrapt die in deze procedure worden vermeld, kunt u de laatste stap van deze procedure overslaan.
+
+         >[!NOTE]
+         >
+         >Als u reeds de verkeerde gebeurtenisabonnementen vóór het uitvoeren van de stappen hebt geschrapt die in deze procedure worden vermeld, kunt u de laatste stap van deze procedure overslaan.
 
 ### Release oktober 2022 {#october-2022-release}
 
@@ -270,4 +270,4 @@ De meest recente versie van [!DNL Workfront for Experience Manager enhanced conn
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; integreer  [!DNL Workfront for Experience Manager enhanced connector]  met Experience Manager 6.5 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=nl-NL)
+>* [ integreer  [!DNL Workfront for Experience Manager enhanced connector]  met Experience Manager 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)

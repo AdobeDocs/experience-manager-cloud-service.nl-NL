@@ -2,9 +2,9 @@
 title: Het vormen van RTE voor de Universele Redacteur
 description: Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redacteur kunt vormen.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
@@ -17,13 +17,13 @@ Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redacteur kunt vorm
 
 >[!NOTE]
 >
->Deze documentatie is op nieuwe RTE voor de Universele Redacteur van toepassing, die als vroege adoptereigenschap beschikbaar is. Als u in het testen van deze nieuwe eigenschap geinteresseerd bent, [&#x200B; te zien gelieve de versienota&#39;s voor details.](/help/release-notes/universal-editor/current.md#new-rte)
+>Deze documentatie is op nieuwe RTE voor de Universele Redacteur van toepassing, die als vroege adoptereigenschap beschikbaar is. Als u in het testen van deze nieuwe eigenschap geinteresseerd bent, [ te zien gelieve de versienota&#39;s voor details.](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## Overzicht {#overview}
 
 De Universele Redacteur verstrekt een rijke tekstredacteur (RTE) zowel op zijn plaats als in het eigenschappenpaneel om auteurs toe te staan om het formatteren veranderingen toe te passen aangezien zij hun tekst uitgeven.
 
-Dit RTE is configureerbaar gebruikend [&#x200B; componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
+Dit RTE is configureerbaar gebruikend [ componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
 
 ## Configuratiestructuur {#structure}
 
@@ -32,7 +32,7 @@ De configuratie van RTE bestaat uit twee delen:
 * [`toolbar`](#toolbar): In de werkbalkconfiguratie wordt bepaald welke bewerkingsopties beschikbaar zijn in de gebruikersinterface en hoe deze zijn ingedeeld.
 * [`actions`](#actions): Met de configuratie van handelingen kunt u het gedrag en de weergave van afzonderlijke bewerkingsacties aanpassen.
 
-Deze configuraties kunnen als deel van a [&#x200B; componentenfilter &#x200B;](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
+Deze configuraties kunnen als deel van a [ componentenfilter ](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
 
 ```json
 [

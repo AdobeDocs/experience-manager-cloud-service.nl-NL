@@ -1,11 +1,11 @@
 ---
 title: Inhoudsfragmenten - Overwegingen verwijderen
-description: Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
+description: Bekijk deze belangrijke overwegingen voordat u uw beleid voor het verwijderen van inhoudsfragmenten in AEM definieert. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Overwegingen voor inhoudsfragmenten verwijderen {#delete-considerations-content-fragments}
 
-Herzie deze belangrijke overwegingen alvorens uw schrappingsbeleid voor de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
+Bekijk deze belangrijke overwegingen voordat u uw verwijderingsbeleid voor inhoudsfragmenten in AEM definieert. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
 
 ## Machtigingen - Verwijderen of Niet verwijderen {#permissions-delete-or-not-delete}
 
@@ -32,7 +32,7 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
    Voor de basisbewerking van de editor voor inhoudsfragmenten moeten dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties, ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
    * **Geval van het Gebruik**: Een gebruiker die een Fragment van de Inhoud moet uitgeven/bijwerken - **zonder het worden toegestaan om een volledig fragment** te schrappen.
-   * **Toestemmingen**: Zie [&#x200B; Toestemmingen die voor de Functionaliteit van de Redacteur slechts &#x200B;](#permissions-required-for-editor-functionality-only) worden vereist.
+   * **Toestemmingen**: Zie [ Toestemmingen die voor de Functionaliteit van de Redacteur slechts ](#permissions-required-for-editor-functionality-only) worden vereist.
 
 >[!NOTE]
 >

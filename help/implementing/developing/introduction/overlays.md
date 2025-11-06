@@ -3,10 +3,10 @@ title: Bedekkingen voor Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service gebruikt het principe van overlays om consoles en andere functies uit te breiden en aan te passen
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ Adobe Experience Manager as a Cloud Service gebruikt het principe van overlays o
 
 Bedekking is een term die in veel contexten kan worden gebruikt. In dit verband betekent het uitbreiden van AEM as a Cloud Service dat een overlay de vooraf gedefinieerde functionaliteit overneemt en er uw eigen definities op legt om de standaardfunctionaliteit aan te passen.
 
-In een standaardinstantie, wordt de vooraf bepaalde functionaliteit gehouden onder `/libs` en het wordt geadviseerd praktijk om uw bekleding (aanpassingen) onder de `/apps` tak te bepalen (gebruikend a [&#x200B; onderzoekspad &#x200B;](#search-paths) om de middelen) op te lossen.
+In een standaardinstantie, wordt de vooraf bepaalde functionaliteit gehouden onder `/libs` en het wordt geadviseerd praktijk om uw bekleding (aanpassingen) onder de `/apps` tak te bepalen (gebruikend a [ onderzoekspad ](#search-paths) om de middelen) op te lossen.
 
-* Het aanraking-toegelaten gebruikersinterface gebruikt [&#x200B; graniet &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) - verwante overlays:
+* Het aanraking-toegelaten gebruikersinterface gebruikt [ graniet ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) - verwante overlays:
 
    * Methode
 
       * Reconstrueer de juiste `/libs` -structuur onder `/apps` .
 
-        Deze herstructurering vereist geen 1:1 exemplaar omdat de [&#x200B; Verzameling Fusie van het Middel &#x200B;](/help/implementing/developing/introduction/sling-resource-merger.md) wordt gebruikt om de originele definities van verwijzingen te voorzien die worden vereist. De het Verdelen Fusie van het Middel verleent de diensten om tot middelen met (het onderscheiden) mechanismen toegang te hebben en samen te voegen.
+        Deze herstructurering vereist geen 1 :1 exemplaar omdat de [ Verschuivende Fusie van het Middel ](/help/implementing/developing/introduction/sling-resource-merger.md) wordt gebruikt om de originele definities van verwijzingen te voorzien die worden vereist. De het Verdelen Fusie van het Middel verleent de diensten om tot middelen met (het onderscheiden) mechanismen toegang te hebben en samen te voegen.
 
       * Breng wijzigingen aan onder `/apps` .
 
@@ -36,7 +36,7 @@ In een standaardinstantie, wordt de vooraf bepaalde functionaliteit gehouden ond
 
 >[!CAUTION]
 >
->De [&#x200B; Verschuivende Fusie van het Middel &#x200B;](/help/implementing/developing/introduction/sling-resource-merger.md) en de verwante methodes kunnen slechts met [&#x200B; Graniet &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) worden gebruikt. Deze regel houdt in dat het maken van een overlay met een skeletstructuur alleen geschikt is voor de standaardgebruikersinterface met aanraakbediening.
+>De [ Verschuivende Fusie van het Middel ](/help/implementing/developing/introduction/sling-resource-merger.md) en de verwante methodes kunnen slechts met [ Graniet ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) worden gebruikt. Deze regel houdt in dat het maken van een overlay met een skeletstructuur alleen geschikt is voor de standaardgebruikersinterface met aanraakbediening.
 
 Bedekkingen zijn de aanbevolen methode voor veel wijzigingen. Stel bijvoorbeeld dat u de consoles configureert of dat u de selectiecategorie maakt in de middelenbrowser in het zijpaneel (gebruikt bij het ontwerpen van pagina&#39;s). Zij zijn vereist als:
 

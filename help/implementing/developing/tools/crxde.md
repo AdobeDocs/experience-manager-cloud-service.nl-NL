@@ -1,19 +1,19 @@
 ---
 title: CRXDE Lite gebruiken
-description: CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toegang te krijgen tot en wijzigingen aan te brengen in de opslagruimte in uw lokale ontwikkelomgevingen in de browser.
+description: CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor toegang tot en wijziging van de opslagplaats in uw lokale ontwikkelomgevingen in de browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
 
 # CRXDE Lite gebruiken {#using-crxde-lite}
 
-CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toegang te krijgen tot en wijzigingen aan te brengen in de opslagruimte in uw lokale ontwikkelomgevingen in de browser. Met CRXDE Lite kunt u bestanden, mappen, knooppunten en eigenschappen bewerken. De gehele opslagplaats is voor u toegankelijk in deze gebruiksvriendelijke interface.
+CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor toegang tot en wijziging van de opslagplaats in uw lokale ontwikkelomgevingen in de browser. Met CRXDE Lite kunt u bestanden, mappen, knooppunten en eigenschappen bewerken. De gehele opslagplaats is voor u toegankelijk in deze gebruiksvriendelijke interface.
 
 >[!NOTE]
 >
@@ -21,16 +21,16 @@ CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toeg
 
 ## Aan de slag met CRXDE Lite {#getting-started-with-crxde-lite}
 
-Aan de slag met CRXDE Lite:
+Ga als volgt te werk om aan de slag te gaan met CRXDE Lite:
 
-1. Start uw lokale AEM-ontwikkeling snel.
+1. Start uw lokale AEM-ontwikkelingstoepassing snel.
 1. Open de URL `https://<host>:<port>/crx/de` in uw browser.
 1. Ga uw **gebruikersbenaming** en **wachtwoord** in.
 1. Klik **OK**.
 
-De gebruikersinterface van CRXDE Lite wordt als volgt weergegeven in uw browser:
+De CRXDE Lite-gebruikersinterface wordt als volgt weergegeven in uw browser:
 
-![&#x200B; de interface van CRXDE Lite &#x200B;](assets/crxde-lite.png)
+![ de interface van CRXDE Lite ](assets/crxde-lite.png)
 
 >[!TIP]
 >
@@ -42,7 +42,7 @@ CRXDE Lite-gebruikersinterface bevat veel onderdelen en functies.
 
 ### Bovenste schakelbalk {#top-switcher-bar}
 
-De hoogste bar van de Schakelaar laat u snel tussen CRXDE Lite en [&#x200B; de Manager van het Pakket &#x200B;](package-manager.md) schakelen.
+De hoogste bar van de Schakelaar laat u snel tussen de Manager van het Pakket van CRXDE Lite en [ schakelen ](package-manager.md).
 
 ### Knooppuntwidget {#node-path-widget}
 
@@ -64,7 +64,7 @@ Met het structuurnavigatiefilter (het binoculars-pictogram) kunt u de knooppunte
 
 **geeft Pane** uit laat u de inhoud van het momenteel-geselecteerde dossier in de bewaarplaats bekijken. Elk geopend bestand wordt in het deelvenster weergegeven als een eigen tabblad.
 
-Het **lusje van het Huis** &lbrace;laat u inhoud en/of documentatie en toegangsontwikkelaardocumentatie en Adobe steun zoeken.
+Het **lusje van het Huis** laat u inhoud en/of documentatie zoeken en tot de documentatie van de toegangsontwikkelaar en de steun van Adobe toegang hebben.
 
 Dubbelklik een dossier in de **Ruit van de Ontdekkingsreiziger** om zijn inhoud in **te tonen geef Pane** uit. U kunt het dan wijzigen en de veranderingen bewaren.
 
@@ -91,7 +91,7 @@ De machtigingen zijn onderverdeeld in de volgende categorieën.
 
 >[!NOTE]
 >
->Om toegangsbeheerinformatie te kunnen zien, moet de gebruiker het programma opent aan CRXDE Lite rechten hebben om ACL ingangen te lezen.
+>Om toegangsbeheerinformatie te kunnen zien, moet de gebruiker die aan CRXDE Lite wordt aangemeld rechten hebben om ACL ingangen te lezen.
 
 ### Tabblad Replicatie {#replication-tab}
 
@@ -121,7 +121,7 @@ De **verfrist Knoop** verfrist de huidige selectie. Wijzigingen van andere gebru
 **creeer Knoop** is een drop-down menu om het volgende onder de geselecteerde knoop tot stand te brengen:
 
 * Node - een knoop met een willekeurig knooptype
-* File - an `nt:file` node and its nt:resource subnode
+* File - an `nt:file` node and its nt :resource subnode
 * Map - een knooppunt `nt:folder`
 
 ### Knop Verwijderen {#delete-button}
@@ -169,7 +169,7 @@ De **optie van de Voorkeur** kan worden gebruikt om uw taal te plaatsen UI en de
 
 ## Een map maken {#creating-a-folder}
 
-Een map met CRXDE Lite maken:
+Een map maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
 1. In de ruit van de Navigatie, klik de omslag met de rechtermuisknop aan waaronder u de nieuwe omslag wilt tot stand brengen, creeert de uitgezochte **...**, dan **leidt tot Omslag...**.
@@ -220,9 +220,9 @@ Een bestand maken met CRXDE Lite:
 
 ## Nodetypen exporteren en importeren {#exporting-and-importing-node-types}
 
-Met CRXDE Lite kunt u knooptype definities in [&#x200B; Compacte Namespace en van het Type van Knoop (CND) notatie invoeren en/of uitvoeren &#x200B;](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Met CRXDE Lite kunt u knooptype definities in [ Compacte Namespace invoeren en/of uitvoeren en de notatie van het Type van Knoop (CND) ](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
-Een definitie van een knooptype exporteren in CRXDE Lite:
+Een definitie van het knooptype exporteren in CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
 1. Selecteer het vereiste knooppunt.
@@ -241,7 +241,7 @@ Een definitie van het knooppunttype importeren:
 
 ## Logboekregistratie {#logging}
 
-Met CRXDE Lite kunt u het bestand `error.log` weergeven dat zich in het bestandssysteem op `<aem-install-dir>/crx-quickstart/logs` bevindt en dit filteren met het juiste logniveau. Ga als volgt te werk:
+Met CRXDE Lite kunt u het bestand `error.log` weergeven dat zich op het bestandssysteem bevindt op `<aem-install-dir>/crx-quickstart/logs` en dit filteren met het juiste logniveau. Ga als volgt te werk:
 
 1. Open CRXDE Lite in uw browser.
 1. In het drop-down menu op het recht van het [**Lusje van de Console**](#console-tab) bij de bodem van het venster, uitgezochte **Logboeken van de Server**.

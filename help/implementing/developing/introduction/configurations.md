@@ -3,8 +3,8 @@ title: Configuraties en de Configuratiebrowser
 description: Begrijp Adobe Experience Manager (AEM) configuraties en hoe zij werkruimtemontages in AEM beheren.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%
@@ -19,8 +19,8 @@ Adobe Experience Manager (AEM)-configuraties dienen voor het beheer van instelli
 
 Een configuratie kan vanuit twee verschillende gezichtspunten worden overwogen.
 
-* [&#x200B; een beheerder &#x200B;](#configurations-administrator) gebruikt configuraties als werkruimten binnen AEM om groepen montages te bepalen en te beheren.
-* [&#x200B; de ontwikkelaar van A &#x200B;](#configurations-developer) gebruikt het onderliggende configuratiemechanisme dat configuraties uitvoert om montages in AEM voort te zetten en op te zoeken.
+* [ een beheerder ](#configurations-administrator) gebruikt configuraties als werkruimten binnen AEM om groepen montages te bepalen en te beheren.
+* [ de ontwikkelaar van A ](#configurations-developer) gebruikt het onderliggende configuratiemechanisme dat configuraties uitvoert om montages in AEM voort te zetten en op te zoeken.
 
 Samengevat: vanuit het standpunt van de beheerder zijn configuraties hoe u werkruimten maakt voor het beheer van instellingen in AEM, terwijl de ontwikkelaar moet begrijpen hoe AEM deze configuraties in de opslagplaats gebruikt en beheert.
 
@@ -74,11 +74,11 @@ Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Brow
 1. Selecteer **creeer**.
 1. Verstrek a **Titel** en a **Naam** voor uw configuratie.
 
-   ![&#x200B; creeer configuratie &#x200B;](assets/configuration-create.png)
+   ![ creeer configuratie ](assets/configuration-create.png)
 
    * De **Titel** zou beschrijvend moeten zijn.
    * De **Naam** wordt de knoopnaam in de bewaarplaats.
-      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [&#x200B; AEM noemende overeenkomsten &#x200B;](naming-conventions.md).
+      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [ AEM noemende overeenkomsten ](naming-conventions.md).
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -104,13 +104,13 @@ Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die 
    >Het is niet mogelijk om een functie uit te schakelen wanneer de configuratie is gemaakt.
 
 1. Gebruik de **Efficiënte knoop van Toestemmingen** om een matrijs van rollen te bekijken en welke toestemmingen zij momenteel aan configuraties worden verleend.
-   ![&#x200B; Effectieve toestemmingenvenster &#x200B;](assets/configuration-effective-permissions.png)
+   ![ Effectieve toestemmingenvenster ](assets/configuration-effective-permissions.png)
 1. Om nieuwe toestemmingen toe te wijzen, ga de gebruiker of groepsnaam in het **Uitgezochte gebruiker of groep** gebied in **toevoegen Nieuwe Toestemmingen** sectie.
    * Het **Uitgezochte gebruiker of groep** gebied biedt auto-voltooiing aan die op bestaande gebruikers en rollen wordt gebaseerd.
 1. Selecteer de gewenste gebruiker of rol in de resultaten die automatisch worden voltooid.
    * U kunt meerdere gebruikers of rollen selecteren.
 1. Controleer de toegangsopties die één of meerdere geselecteerde gebruikers of rollen zouden moeten hebben en **klikken** toevoegen.
-   ![&#x200B; voegt toegangsrechten aan een configuratie &#x200B;](assets/configuration-edit.png) toe
+   ![ voegt toegangsrechten aan een configuratie ](assets/configuration-edit.png) toe
 1. Herhaal de stappen zodat u gebruikers of rollen kunt selecteren en zonodig extra toegangsrechten kunt toewijzen.
 1. Selecteer **sparen &amp; dicht** wanneer gebeëindigd.
 
@@ -120,7 +120,7 @@ Als ontwikkelaar, is het belangrijk om te weten hoe AEM as a Cloud Service met c
 
 ### Scheiding van configuratie en inhoud {#separation-of-config-and-content}
 
-Hoewel de [&#x200B; beheerder en de gebruikers aan configuraties als werkplaatsen &#x200B;](#configurations-administrator) kunnen denken om verschillende montages en inhoud te beheren, is het belangrijk om te begrijpen dat de configuraties en de inhoud afzonderlijk door AEM in de bewaarplaats worden opgeslagen en beheerd.
+Hoewel de [ beheerder en de gebruikers aan configuraties als werkplaatsen ](#configurations-administrator) kunnen denken om verschillende montages en inhoud te beheren, is het belangrijk om te begrijpen dat de configuraties en de inhoud afzonderlijk door AEM in de bewaarplaats worden opgeslagen en beheerd.
 
 * `/content` staat voor alle inhoud.
 * `/conf` is de thuisbasis van alle configuraties.
@@ -198,15 +198,15 @@ AEM heeft een overervings- en terugvalmechanisme in de volgende volgorde van voo
 
 ### Configuraties gebruiken {#using-configurations}
 
-Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Context-bewuste configuraties zijn configuraties die met een inhoudsmiddel of een middelboom verwant zijn zoals [&#x200B; in het vorige voorbeeld &#x200B;](#developer-example) werd beschreven.
+Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Context-bewuste configuraties zijn configuraties die met een inhoudsmiddel of een middelboom verwant zijn zoals [ in het vorige voorbeeld ](#developer-example) werd beschreven.
 
-Voor meer details over Context-Aware Configuraties, voorbeelden, en hoe te om hen te gebruiken, zie de [&#x200B; het Schipen documentatie &#x200B;](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
+Voor meer details over Context-Aware Configuraties, voorbeelden, en hoe te om hen te gebruiken, zie de [ het Schipen documentatie ](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr-webconsole {#confmgr-web-console}
 
 Voor het zuiveren en het testen doeleinden, is er a **ConfMgr** Webconsole bij `https://<host>:<port>/system/console/conf`, die configuraties voor een bepaalde weg/een punt kan tonen.
 
-![&#x200B; ConfMgr &#x200B;](assets/configuration-confmgr.png)
+![ ConfMgr ](assets/configuration-confmgr.png)
 
 Verstrek eenvoudig:
 
@@ -220,7 +220,7 @@ Klik **oplossen** zodat kunt u zien welke configuraties worden opgelost en codes
 
 Voor het zuiveren en het testen doeleinden, is er a **context-Aware Configuratie** Webconsole bij `https://<host>:<port>/system/console/slingcaconfig`, die het vragen van context-bewuste configuraties in de bewaarplaats en het bekijken van hun eigenschappen toestaat.
 
-![&#x200B; Context-Aware het Webconsole van de Configuratie &#x200B;](assets/configuration-context-aware-console.png)
+![ Context-Aware het Webconsole van de Configuratie ](assets/configuration-context-aware-console.png)
 
 Verstrek eenvoudig:
 

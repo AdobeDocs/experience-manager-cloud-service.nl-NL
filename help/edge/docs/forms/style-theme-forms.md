@@ -3,8 +3,8 @@ title: Thema en stijlen aanpassen voor Edge Delivery Services for AEM Forms
 description: Thema en stijlen aanpassen voor Edge Delivery Services for AEM Forms
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-role: Admin, Architect, Developer
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Aan het einde van het artikel zult u:
 
 ## Werken met formulierveldtypen
 
-Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [&#x200B; gebiedstypes &#x200B;](/help/edge/docs/forms/form-components.md) die door het AanpassingsBlok van Forms worden gesteund:
+Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [ gebiedstypes ](/help/edge/docs/forms/form-components.md) die door het AanpassingsBlok van Forms worden gesteund:
 
 - Invoervelden: dit zijn tekstinvoer, e-mailinvoer, wachtwoordinvoer en meer
 - Selectievakjesgroepen: gebruikt voor het selecteren van meerdere opties
@@ -39,18 +39,18 @@ Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [&#x200B;
 
 ## Basisbeginselen voor stijlen
 
-Het begrip van [&#x200B; fundamentele CSS concepten &#x200B;](https://www.w3schools.com/css/css_intro.asp) is essentieel alvorens specifieke vormgebieden te stileren:
+Het begrip van [ fundamentele CSS concepten ](https://www.w3schools.com/css/css_intro.asp) is essentieel alvorens specifieke vormgebieden te stileren:
 
-- [&#x200B; Kiezers &#x200B;](https://www.w3schools.com/css/css_selectors.asp): CSS de Kiezers staan u toe om specifieke elementen van HTML voor het stileren te richten. U kunt elementkiezers, klassekiezers of id-kiezers gebruiken
-- [&#x200B; Eigenschappen &#x200B;](https://www.w3schools.com/css/css_syntax.asp): CSS de eigenschappen bepalen de visuele verschijning van elementen. Veelvoorkomende eigenschappen voor het opmaken van formuliervelden zijn kleur, achtergrondkleur, rand, opvulling, marge en meer
-- [&#x200B; Model van de Doos &#x200B;](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd
-- Flexbox/Net: CSS [&#x200B; Flexbox &#x200B;](https://www.w3schools.com/css/css3_flexbox.asp) en [&#x200B; de lay-outs van het Net &#x200B;](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen te creëren
+- [ Kiezers ](https://www.w3schools.com/css/css_selectors.asp): CSS de Kiezers staan u toe om specifieke elementen van HTML voor het stileren te richten. U kunt elementkiezers, klassekiezers of id-kiezers gebruiken
+- [ Eigenschappen ](https://www.w3schools.com/css/css_syntax.asp): CSS de eigenschappen bepalen de visuele verschijning van elementen. Veelvoorkomende eigenschappen voor het opmaken van formuliervelden zijn kleur, achtergrondkleur, rand, opvulling, marge en meer
+- [ Model van de Doos ](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd
+- Flexbox/Net: CSS [ Flexbox ](https://www.w3schools.com/css/css3_flexbox.asp) en [ de lay-outs van het Net ](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen te creëren
 
 ## Een formulier opmaken voor Adaptief Forms-blok
 
 Het Adaptive Forms Block biedt een gestandaardiseerde HTML-structuur waarmee het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
 
-- **Update standaardstijlen**: U kunt de standaardstijlen van een vorm wijzigen door het `/blocks/form/form.css` dossier uit te geven. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Voor instructies bij het toevoegen van het AanpassingsBlok van Forms aan uw project, verwijs naar [&#x200B; creeer een vorm &#x200B;](/help/edge/docs/forms/create-forms.md).
+- **Update standaardstijlen**: U kunt de standaardstijlen van een vorm wijzigen door het `/blocks/form/form.css` dossier uit te geven. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Voor instructies bij het toevoegen van het AanpassingsBlok van Forms aan uw project, verwijs naar [ creeer een vorm ](/help/edge/docs/forms/create-forms.md).
 
 - **Aanpassing**: Gebruik het gebrek `forms.css` als basis en pas het aan om de blik en het gevoel van uw vormcomponenten te wijzigen, die hen visueel aantrekkelijk en gebruikersvriendelijk maken. De bestandsstructuur stimuleert de organisatie en handhaaft stijlen voor formulieren, waardoor consistente ontwerpen op uw website worden bevorderd.
 
@@ -240,7 +240,7 @@ Voor vervolgkeuzemenu&#39;s wordt het element `select` gebruikt in plaats van he
 
 Keuzerondjes hebben een eigen HTML-structuur en CSS-structuur, net als vervolgkeuzecomponenten:
 
-+++ HTML-structuur van groep keuzerondjes
++++ HTML-structuur van groep keuzerondjes 
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -308,11 +308,11 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 }
 ```
 
-+++
++++ 
 
 ### Selectievakjesgroepen
 
-+++ HTML-structuur van Checkbox-groep
++++ HTML-structuur van Checkbox-groep 
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -434,7 +434,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
      }
   ```
 
-+++
++++ 
 
 ### Deelvenster/Containercomponenten
 
@@ -480,7 +480,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 - Binnen de veldset, meerdere.{Type} -wrapper-elementen (.text-wrapper en .password-wrapper in dit geval) vertegenwoordigen afzonderlijke formuliervelden in het deelvenster.
 - Elke omslag bevat een etiket, een inputgebied, en een beschrijving, gelijkend op de vorige voorbeelden.
 
-+++
++++ 
 
 +++ Voorbeeld-CSS-kiezers voor component Panel/Container
 
@@ -608,7 +608,7 @@ Elk deelvenster heeft dezelfde structuur als het voorbeeld van één deelvenster
 
 - Unieke IDs en namen: Elk element binnen het paneel heeft een unieke identiteitskaart (bijvoorbeeld, naam-1, e-mail-1) en naamattributen die op de index van het paneel (bijvoorbeeld, name= &quot;contacten [ 0 ].name&quot;) worden gebaseerd. Op deze manier kunnen de gegevens correct worden verzameld wanneer meerdere deelvensters worden verzonden.
 
-+++
++++ 
 
 +++ CSS-kiezers voor een herhaalbaar deelvenster
 
@@ -698,7 +698,7 @@ Met deze kiezer worden alle veldomlooptekens binnen een herhaalbaar deelvenster 
 - De id- en naamkenmerken van het invoerelement komen overeen met de naam van de bestandsbijlage (claim_form).
 - De sectie voor de bestandenlijst is aanvankelijk leeg. Deze wordt dynamisch gevuld met JavaScript wanneer bestanden worden geüpload.
 
-+++
++++ 
 
 +++ CSS-kiezers voor de component Bestandsbijlage
 
@@ -816,7 +816,7 @@ U kunt CSS-kiezers gebruiken om specifieke veldtypen als doel in te stellen en s
 - Elk veld heeft een overeenkomstig label, invoerelement en mogelijke aanvullende elementen, zoals plaatsaanduidingen en beschrijvingen.
 
 
-+++
++++ 
 
 
 +++ Voorbeeld-CSS-kiezers
@@ -864,7 +864,7 @@ U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe
 </div>
 ```
 
-+++
++++ 
 
 +++ Voorbeeld-CSS-kiezer
 
@@ -878,5 +878,5 @@ U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe
 
 Deze CSS richt zich op alle inputelementen die binnen een element worden gevestigd dat de klasse `field-otp` heeft. De HTML-structuur van uw formulier volgt de conventies van het Adaptive Forms Block. Dit houdt in dat er een container is gemarkeerd met de klasse &quot;field-otp&quot; die het veld bevat met de naam &quot;otp&quot;.
 
-+++
++++ 
 

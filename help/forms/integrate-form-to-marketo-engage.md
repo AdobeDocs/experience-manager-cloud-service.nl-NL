@@ -5,7 +5,7 @@ keywords: Hoe kan ik een Marketo-exemplaar verbinden met formulier? Een formulie
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 <span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-Het integreren AEM Forms met [&#x200B; Adobe Marketo Engage &#x200B;](https://experienceleague.adobe.com/nl/docs/marketo/using/home) laat gebruikers toe om de mogelijkheden van Marketo Engage te gebruiken om bedrijfslogica van gevangen gegevens tot stand te brengen en werkschema&#39;s, met inbegrip van slimme campagnes en e-mailautomatisering te automatiseren. Het geconfigureerde formulier kan vastgelegde gegevens naar Marketo Engage verzenden voor verwerking.
+Het integreren AEM Forms met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/en/docs/marketo/using/home) laat gebruikers toe om de mogelijkheden van Marketo Engage te gebruiken om bedrijfslogica van gevangen gegevens tot stand te brengen en werkschema&#39;s, met inbegrip van slimme campagnes en e-mailautomatisering te automatiseren. Het geconfigureerde formulier kan vastgelegde gegevens naar Marketo Engage verzenden voor verwerking.
 
 ## Voordelen van de integratie van Marketo Engage met formulieren
 
@@ -52,7 +52,7 @@ In de onderstaande tabel worden de weinige redenen beschreven waarom u AEM Forms
 Enkele overwegingen bij de integratie van Marketo Engage met AEM Forms:
 
 * AEM ondersteunt alleen de People(Leads)-database tussen de verschillende Marketo-databases.
-* Marketo staat de [&#x200B; verwezenlijking van 10 douanevoorwerpen &#x200B;](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) als user-defined voorwerpen toe om gespecialiseerde gegevens voorbij de standaardgebieden in Leads op te slaan, ondersteunend unieke bedrijfsbehoeften.
+* Marketo staat de [ verwezenlijking van 10 douanevoorwerpen ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) als user-defined voorwerpen toe om gespecialiseerde gegevens voorbij de standaardgebieden in Leads op te slaan, ondersteunend unieke bedrijfsbehoeften.
 * AEM heeft alleen toegang tot aangepaste objecten als deze zijn gekoppeld aan de Lead-database
 
 ## Vereisten voor de integratie van Marketo Engage met formulieren
@@ -60,7 +60,7 @@ Enkele overwegingen bij de integratie van Marketo Engage met AEM Forms:
 Hieronder vindt u de voorwaarden voor het maken van een verbinding tussen Marketo Engage en AEM Forms:
 
 * Een geldige Adobe Marketo Engage-licentie
-* Een werkende instantie van Marketo Engage [&#x200B; wint identiteitskaart van de Cliënt en Geheime Cliënt &#x200B;](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) terug om een wolkenconfiguratie tot stand te brengen.
+* Een werkende instantie van Marketo Engage [ wint identiteitskaart van de Cliënt en Geheime Cliënt ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) terug om een wolkenconfiguratie tot stand te brengen.
 
 ## Cloudserviceconfiguratie maken om AEM Forms (Adaptive Forms) te verbinden met Marketo Engage
 
@@ -74,28 +74,30 @@ De Cloud-configuratie maakt een verbinding tussen uw Experience Manager-instanti
 
 1. Ga naar **Hulpmiddelen** > **de Diensten van de Wolk** > **Marketo Engage**.
 
-   ![&#x200B; Marketo Engage &#x200B;](/help/forms/assets/marketo-engage.png)
+   ![ Marketo Engage ](/help/forms/assets/marketo-engage.png)
 
-2. Open een omslag om de configuratie te ontvangen en **te klikken creeert**. **creeer het venster van de Configuratie van Marketo Engage** verschijnt.
+1. Open een omslag om de configuratie te ontvangen en **te klikken creeert**. **creeer het venster van de Configuratie van Marketo Engage** verschijnt.
 
    >[!NOTE]
    >
-   > U kunt ook [&#x200B; omslag voor de configuraties van de wolkendienst &#x200B;](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations) vormen.
+   > U kunt ook [ omslag voor de configuraties van de wolkendienst ](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations) vormen.
 
-3. Specificeer de **Titel** van de configuratie en de geloofsbrieven om met de dienst te verbinden. U kunt de verificatiegegevens ophalen van het Adobe Marketo Engage-dashboard:
+1. Specificeer de **Titel** van de configuratie en de geloofsbrieven om met de dienst te verbinden. U kunt de verificatiegegevens ophalen van het Adobe Marketo Engage-dashboard:
+
    * **identiteitskaart van de Cliënt** en **Geheime Cliënt** zijn beschikbaar in **Admin** > **Integratie** > **LaunchPoint** door de douanedienst te selecteren en **Details van de Mening te klikken**.
    * **Identiteit URL** is beschikbaar in **Admin** > **Integratie** > **Diensten van het Web** als **Identiteit** in de **REST API** sectie.
 
-4. Klik **verbinden**.  Bij een geslaagde verbinding wordt het bericht `Authentication Successful` weergegeven.
-5. Klik op **[!UICONTROL Create]** om de instellingen voor de cloudconfiguratie op te slaan.
+1. Klik **verbinden**.  Bij een geslaagde verbinding wordt het bericht `Authentication Successful` weergegeven.
+1. Klik op **[!UICONTROL Create]** om de instellingen voor de cloudconfiguratie op te slaan.
 
-![&#x200B; Configuratie van de Wolk van Marketo Engage &#x200B;](/help/forms/assets/marketo-engage-cloud-configuration.png)
+![ Configuratie van de Wolk van Marketo Engage ](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
 Nu kunt u de gemaakte cloudserviceconfiguratie gebruiken om de Marketo Engage-gegevensbron aan te sluiten op een adaptief formulier.
 
 ## Volgende stap
 
 U hebt de configuratie van de cloudservice gemaakt om Adobe Marketo Engage te integreren met AEM Forms. Nu kunt u integreren:
+
 * [Nieuw adaptief formulier met Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
 * [Bestaand adaptief formulier met Marketo Engage](/help/forms/use-marketo-engage-data-source-in-form.md)
 

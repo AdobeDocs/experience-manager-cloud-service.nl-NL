@@ -1,21 +1,21 @@
 ---
-title: Tags samenstellen in AEM toepassingen
-description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM.
+title: Tags maken in AEM-toepassingen
+description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM-toepassing
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
 
 ---
 
-# Tags samenstellen in AEM toepassingen {#building-tagging-into-aem-applications}
+# Tags maken in AEM-toepassingen {#building-tagging-into-aem-applications}
 
-In dit document wordt beschreven hoe u programmatisch kunt werken met tags of tags wilt uitbreiden binnen een aangepaste AEM.
+Voor programmatisch werken met tags of tags uitbreiden binnen een aangepaste AEM-toepassing, wordt in dit document het gebruik van de opdracht
 
-* [&#x200B; Tagging API &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
+* [ Tagging API ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
 
 die met de
 
@@ -23,12 +23,12 @@ die met de
 
 Voor gerelateerde informatie over codering:
 
-* Zie [&#x200B; Gebruikend Markeringen &#x200B;](/help/sites-cloud/authoring/sites-console/tags.md) voor informatie over het etiketteren van inhoud als inhoudauteur.
+* Zie [ Gebruikend Markeringen ](/help/sites-cloud/authoring/sites-console/tags.md) voor informatie over het etiketteren van inhoud als inhoudauteur.
 * Zie Tags beheren voor een beheerder. Het standpunt van de beheerder over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
 
 ## Overzicht van de API voor tags {#overview-of-the-tagging-api}
 
-De implementatie van het [&#x200B; etiketterende kader &#x200B;](tagging-framework.md) in AEM staat beheer van markeringen en markeringsinhoud toe gebruikend JCR API. `TagManager` zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array, niet worden gedupliceerd, `TagID` verwijdert het aanwijzen van niet-bestaande tags en werkt `TagID` s bij voor verplaatste of samengevoegde tags. `TagManager` gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen zijn in het [&#x200B; com.day.cq.tagging &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) pakket:
+De implementatie van het [ etiketterende kader ](tagging-framework.md) in AEM staat beheer van markeringen en markeringsinhoud toe gebruikend JCR API. `TagManager` zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array, niet worden gedupliceerd, `TagID` verwijdert het aanwijzen van niet-bestaande tags en werkt `TagID` s bij voor verplaatste of samengevoegde tags. `TagManager` gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen zijn in het [ com.day.cq.tagging ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) pakket:
 
 * `JcrTagManagerFactory` - retourneert een op JCR gebaseerde implementatie van een `TagManager` . Dit is de referentie-implementatie van de API voor labelen.
 * `TagManager` - Hiermee kunt u tags oplossen en maken op basis van paden en namen.
@@ -155,7 +155,7 @@ De server-side API heeft gelokaliseerde `title` -gerelateerde methoden:
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
 
-In AEM kan de taal worden opgehaald uit de paginataal of uit de taal van de gebruiker.
+In AEM kunt u de taal opvragen in de paginataal of in de taal van de gebruiker.
 
 Bij het labelen hangt de lokalisatie af van de context, aangezien de tag `titles` kan worden weergegeven in de paginataal, in de gebruikerstaal of in een andere taal.
 
@@ -170,4 +170,4 @@ Het Fins is nu beschikbaar in de markeringsdialoog van de paginaeigenschappen en
 
 >[!NOTE]
 >
->De nieuwe taal moet een van de AEM erkende talen zijn. Dit wil zeggen dat de code beschikbaar moet zijn als een knooppunt onder `/libs/wcm/core/resources/languages` .
+>De nieuwe taal moet een van de door AEM erkende talen zijn. Dit wil zeggen dat de code beschikbaar moet zijn als een knooppunt onder `/libs/wcm/core/resources/languages` .

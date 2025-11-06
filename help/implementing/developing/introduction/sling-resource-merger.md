@@ -3,8 +3,8 @@ title: Het gebruiken van de Verzameling van Middel in Adobe Experience Manager a
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Sling Resource Merger verleent de diensten om tot middelen toegang te hebben en samen te voegen. Het verstrekt afdiff (differentiërende) mechanismen voor allebei:
 
-* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)** van middelen die de [&#x200B; onderzoekspaden &#x200B;](/help/implementing/developing/introduction/overlays.md#search-paths) gebruiken.
+* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)** van middelen die de [ onderzoekspaden ](/help/implementing/developing/introduction/overlays.md#search-paths) gebruiken.
 
 * **treedt** van componentendialogen voor aanraking-toegelaten UI (`cq:dialog`) met voeten, gebruikend de hiërarchie van het middeltype (door middel van het bezit `sling:resourceSuperType`).
 
@@ -25,7 +25,7 @@ Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getred
 
 * De inhoud van de aangepaste definitie heeft een hogere prioriteit dan die van origineel (namelijk het *bekledingen* of *met voeten treedt* het).
 
-* Waar noodzakelijk, [&#x200B; eigenschappen &#x200B;](#properties) die in de aanpassing worden bepaald, wijzen erop hoe de inhoud die van origineel wordt samengevoegd moet worden gebruikt.
+* Waar noodzakelijk, [ eigenschappen ](#properties) die in de aanpassing worden bepaald, wijzen erop hoe de inhoud die van origineel wordt samengevoegd moet worden gebruikt.
 
 >[!CAUTION]
 >
@@ -33,7 +33,7 @@ Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getred
 
 ### Doelen voor AEM {#goals-for-aem}
 
-De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel in AEM zijn:
+De doelstellingen voor het gebruiken van de Verschuivende Fusie van Middel in AEM zijn:
 
 * zorgt u ervoor dat er geen wijzigingen in de aanpassing worden aangebracht in `/libs` .
 * reduceert de structuur die wordt gerepliceerd vanuit `/libs` .
@@ -46,7 +46,7 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 >
 >De reden hiervoor is dat de inhoud van `/libs` kan worden overschreven wanneer upgrades op uw instantie worden toegepast.
 >
->* De bekledingen zijn afhankelijk van [&#x200B; onderzoekspaden &#x200B;](/help/implementing/developing/introduction/overlays.md#search-paths).
+>* De bekledingen zijn afhankelijk van [ onderzoekspaden ](/help/implementing/developing/introduction/overlays.md#search-paths).
 >
 >* Overschrijvingen zijn niet afhankelijk van de zoekpaden, maar maken de verbinding met de eigenschap `sling:resourceSuperType` .
 >
@@ -198,7 +198,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
       * type: `String[]`
       * waarde: een lijst met onderliggende knooppunten (zoals gedefinieerd in `/libs`) die moeten worden verborgen of genegeerd
 
-      Jokerteken&ast; kan worden gebruikt om alle onderliggende knooppunten te verbergen/te negeren.
+      Jokerteken&amp;ast; kan worden gebruikt om alle onderliggende knooppunten te verbergen/te negeren.
 
 * **opnieuw ordenen knopen**
 

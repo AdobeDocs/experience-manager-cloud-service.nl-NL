@@ -3,8 +3,8 @@ title: Uw eigen Universal Editor-service uitvoeren
 description: Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lokale ontwikkeling of als onderdeel van uw eigen infrastructuur.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%
@@ -45,15 +45,15 @@ Binnen een buitenframe dat is beveiligd met HTTPS, kan een onbeveiligd HTTP-fram
 
 Hiervoor moet u AEM instellen om op HTTPS te kunnen worden uitgevoerd. Voor ontwikkelingsdoeleinden kunt u zelfondertekend certificaat gebruiken.
 
-[&#x200B; zie dit document &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=nl-NL) op hoe te opstelling AEM die op HTTPS met inbegrip van een zelf-ondertekend certificaat loopt u kunt gebruiken.
+[ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) op hoe te opstelling AEM die op HTTPS met inbegrip van een zelf-ondertekend certificaat loopt u kunt gebruiken.
 
 ## De Universal Editor-service installeren {#install-ue-service}
 
 De Universele Dienst van de Redacteur is geen volledig exemplaar van de Universele Redacteur, maar slechts een ondergroep van zijn eigenschappen om ervoor te zorgen dat de vraag van uw lokale milieu van AEM niet over Internet wordt verpletterd, maar van een bepaald eindpunt u controleert.
 
-[&#x200B; versie NodeJS 20 &#x200B;](https://nodejs.org/en/download/releases) wordt vereist om een lokaal exemplaar van de Universele Dienst van de Redacteur in werking te stellen.
+[ versie NodeJS 20 ](https://nodejs.org/en/download/releases) wordt vereist om een lokaal exemplaar van de Universele Dienst van de Redacteur in werking te stellen.
 
-De Universal Editor Service is beschikbaar via Software Distribution. Gelieve te zien de [&#x200B; documentatie van de Distributie van de Software &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL) voor details op hoe te om tot het toegang te hebben.
+De Universal Editor Service is beschikbaar via Software Distribution. Gelieve te zien de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) voor details op hoe te om tot het toegang te hebben.
 
 Sla het `universal-editor-service.cjs` -bestand op van Softwaredistributie naar uw lokale ontwikkelomgeving.
 
@@ -73,7 +73,7 @@ De opdracht genereert een `key.pem` - en een `certificate.pem` -bestand. Sla dez
 
 Een aantal omgevingsvariabelen moet in NodeJS worden ingesteld om de Universal Editor Service lokaal uit te voeren.
 
-Maak een `.env` -bestand met de volgende inhoud op hetzelfde pad als de `universal-editor-service.cjs` -, `key.pem` - en `certificate.pem` -bestanden.
+Maak een `universal-editor-service.cjs` -bestand met de volgende inhoud op hetzelfde pad als de `key.pem` -, `certificate.pem` - en `.env` -bestanden.
 
 ```text
 UES_PORT=8000
@@ -87,7 +87,7 @@ Dit zijn de minimumwaarden die vereist zijn voor lokale ontwikkeling in ons voor
 
 >[!NOTE]
 >
->Als u versie 130+ van Chrome in werking stelt, moet u het verzenden van de kopballen van CORS voor [&#x200B; privé netwerktoegang &#x200B;](https://wicg.github.io/private-network-access/#private-network-request) toelaten gebruikend de `UES_CORS_PRIVATE_NETWORK` optie.
+>Als u versie 130+ van Chrome in werking stelt, moet u het verzenden van de kopballen van CORS voor [ privé netwerktoegang ](https://wicg.github.io/private-network-access/#private-network-request) toelaten gebruikend de `UES_CORS_PRIVATE_NETWORK` optie.
 
 
 In de volgende tabel worden deze en aanvullende waarden beschreven.
@@ -105,11 +105,11 @@ In de volgende tabel worden deze en aanvullende waarden beschreven.
 | `UES_SPLUNK_TOKEN` | Ja | Geen | Splunk-token |
 | `UES_SPLUNK_INDEX` | Ja | Geen | Index die moet worden gebruikt voor het schrijven van logbestanden naar |
 | `UES_SPLUNK_SOURCE` | Ja | `universal-editor-service` | Naam van de bron in de splunklogboeken |
-| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Laat het verzenden van kopballen CORS toe om [&#x200B; Privé netwerk &#x200B;](https://wicg.github.io/private-network-access/#private-network-request) toe te staan. Vereist voor gebruikers van Chrome versie 130+ |
+| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Laat het verzenden van kopballen CORS toe om [ Privé netwerk ](https://wicg.github.io/private-network-access/#private-network-request) toe te staan. Vereist voor gebruikers van Chrome versie 130+ |
 
 >[!NOTE]
 >
->Voorafgaand aan de [&#x200B; versie 2024.08.13 &#x200B;](/help/release-notes/universal-editor/current.md) van de Universele Redacteur, werden de volgende variabelen vereist in het `.env` dossier. Deze waarden worden tot 1 oktober 2024 ondersteund voor achterwaartse compatibiliteit.
+>Voorafgaand aan de [ versie 2024.08.13 ](/help/release-notes/universal-editor/current.md) van de Universele Redacteur, werden de volgende variabelen vereist in het `.env` dossier. Deze waarden worden tot 1 oktober 2024 ondersteund voor achterwaartse compatibiliteit.
 >
 >`EXPRESS_PORT=8000`
 >`EXPRESS_PRIVATE_KEY=./key.pem`
@@ -148,17 +148,17 @@ Als deze eenmaal is ingesteld, wordt elke aanroep van de inhoudsupdate weergegev
 >
 >Wanneer u probeert rechtstreeks toegang te krijgen tot `https://localhost:8000` , treedt er een `404` -fout op. Dit wordt verwacht.
 >
->Gebruik `https://localhost:8000/corslib/LATEST` om de toegang tot uw lokale Universal Editor-service te testen. Zie de [&#x200B; volgende sectie &#x200B;](#editing) voor details.
+>Gebruik `https://localhost:8000/corslib/LATEST` om de toegang tot uw lokale Universal Editor-service te testen. Zie de [ volgende sectie ](#editing) voor details.
 
 >[!TIP]
 >
->Voor meer details op hoe de pagina&#39;s van instrumenten worden voorzien om de Globale Universele Dienst van de Redacteur te gebruiken, zie het document [&#x200B; Begonnen het worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md#instrument-page)
+>Voor meer details op hoe de pagina&#39;s van instrumenten worden voorzien om de Globale Universele Dienst van de Redacteur te gebruiken, zie het document [ Begonnen het worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#instrument-page)
 
 ## Een pagina bewerken met de lokale universele editor {#editing}
 
-Met de [&#x200B; Universele dienst die van de Redacteur &#x200B;](#running-ue) en uw [&#x200B; inhoudspagina plaatselijk in werking stelt van instrumenten om de lokale dienst &#x200B;](/help/implementing/universal-editor/getting-started.md) te gebruiken, kunt u de redacteur nu beginnen.
+Met de [ Universele dienst die van de Redacteur ](#running-ue) en uw [ inhoudspagina plaatselijk in werking stelt van instrumenten om de lokale dienst ](/help/implementing/universal-editor/getting-started.md) te gebruiken, kunt u de redacteur nu beginnen.
 
 1. Open uw browser naar `https://localhost:8000/ping` .
-1. Verricht uw browser om [&#x200B; uw zelf-ondertekend certificaat &#x200B;](#ue-https) goed te keuren.
+1. Verricht uw browser om [ uw zelf-ondertekend certificaat ](#ue-https) goed te keuren.
 1. Zodra het zelfondertekende certificaat wordt vertrouwd, kunt u de pagina bewerken met uw lokale Universal Editor-service.
 

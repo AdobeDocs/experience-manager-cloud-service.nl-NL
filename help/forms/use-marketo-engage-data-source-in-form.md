@@ -5,7 +5,7 @@ keywords: 'Marketo Engage-gegevensbron gebruiken in Adaptive Forms: Hoe kan ik e
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 Nadat u de configuratie van de cloudservice hebt gemaakt om Marketo Engage te integreren met de bestaande AEM Forms, kunt u de gegevensbron voor formulieren configureren.
 
-Door gegevensintegratie te configureren, kunnen gebruikers verbinding maken met verschillende gegevensbronnen of schema&#39;s. Door te integreren met de Marketo Engage-gegevensbron en deze in verschillende formulieren te gebruiken, kunt u bewerkingen op die gegevens uitvoeren. Om de gesteunde uit-van-de-doos gegevensbronnen voor een Aanpassings Vorm te onderzoeken, verwijs naar [&#x200B; vormen Gegevensbronnen &#x200B;](/help/forms/configure-data-sources.md) artikel.
+Door gegevensintegratie te configureren, kunnen gebruikers verbinding maken met verschillende gegevensbronnen of schema&#39;s. Door te integreren met de Marketo Engage-gegevensbron en deze in verschillende formulieren te gebruiken, kunt u bewerkingen op die gegevens uitvoeren. Om de gesteunde uit-van-de-doos gegevensbronnen voor een Aanpassings Vorm te onderzoeken, verwijs naar [ vormen Gegevensbronnen ](/help/forms/configure-data-sources.md) artikel.
 
 ## Vereiste om Marketo Engage-gegevensbron voor formulieren te gebruiken
 
 Vereiste om Marketo Engage-gegevensbron met formulieren te gebruiken:
 
-* Creeer de [&#x200B; configuratie van de wolkendienst om Marketo Engage met vormen &#x200B;](/help/forms/integrate-form-to-marketo-engage.md) te integreren.
+* Creeer de [ configuratie van de wolkendienst om Marketo Engage met vormen ](/help/forms/integrate-form-to-marketo-engage.md) te integreren.
 
 ## Hoe te om bestaand Aangepast Vorm voor de gegevensbron van Marketo Engage te vormen?
 
@@ -45,11 +45,11 @@ Voer de volgende stappen uit om een adaptief formulier te configureren op basis 
 1. Selecteer de **[!UICONTROL Connector]** in de vervolgkeuzelijst.
 1. Nadat u **[!UICONTROL Connector]** hebt geselecteerd, kunt u de cloudconfiguratie selecteren.
 
-   ![&#x200B; Uitgezochte Verbinding van Marketo &#x200B;](/help/forms/assets/select-marketo-connector-af1.png){width=50%, height=50%}
+   ![ Uitgezochte Verbinding van Marketo ](/help/forms/assets/select-marketo-connector-af1.png){width=50%, height=50%}
 
    Op basis van de geselecteerde Marketo Engage-configuratie worden de formulierelementen weergegeven op het tabblad **[!UICONTROL Data Model Objects]** van de **[!UICONTROL Content Browser]** in de zijbalk. U kunt deze elementen slepen en neerzetten om het adaptieve formulier te maken.
 
-   ![&#x200B; Source van Gegevens van Marketo &#x200B;](/help/forms/assets/marketo-engage-data-source-af1.png){width=50%, height=50%}
+   ![ Source van Gegevens van Marketo ](/help/forms/assets/marketo-engage-data-source-af1.png){width=50%, height=50%}
 
 1. Klik op **[!UICONTROL Done]**.
 
@@ -65,17 +65,17 @@ Voer de volgende stappen uit om een adaptief formulier te configureren op basis 
 
 1. Open het adaptieve formulier voor bewerking.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Guide Container]** .
-1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![&#x200B; AanpassingsContainer eigenschappen &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend om de gegevensbron te configureren.
+1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![ AanpassingsContainer eigenschappen ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend om de gegevensbron te configureren.
 1. Open het **[!UICONTROL Data Model]** lusje en selecteer een vormmodel als **Schakelaar**.
 1. Selecteer de **[!UICONTROL Connector]** in de vervolgkeuzelijst.
 
 1. Nadat u **[!UICONTROL Connector]** hebt geselecteerd, kunt u de cloudconfiguratie selecteren.
 
-   ![&#x200B; Uitgezochte Verbinding van Marketo &#x200B;](/help/forms/assets/select-marketo-connector.png){width=50%, height=50%}
+   ![ Uitgezochte Verbinding van Marketo ](/help/forms/assets/select-marketo-connector.png){width=50%, height=50%}
 
    Op basis van de geselecteerde Marketo Engage-configuratie worden de formulierelementen weergegeven op het tabblad **[!UICONTROL Data Model Objects]** van de **[!UICONTROL Content Browser]** in de zijbalk. U kunt deze elementen slepen en neerzetten om het adaptieve formulier te maken.
 
-   ![&#x200B; Source van Gegevens van Marketo &#x200B;](/help/forms/assets/marketo-engage-data-source.png){width=50%, height=50%}
+   ![ Source van Gegevens van Marketo ](/help/forms/assets/marketo-engage-data-source.png){width=50%, height=50%}
 
 1. Klik op **[!UICONTROL Done]**.
 
@@ -92,13 +92,13 @@ Voer de volgende stappen uit om een adaptief formulier te configureren dat in de
 1. Selecteer **Schakelaar** van **[!UICONTROL Form Model]**.
 1. Nadat u **[!UICONTROL Connector]** hebt geselecteerd, kunt u de cloudconfiguratie selecteren.
 
-   ![&#x200B; Uitgezochte Verbinding van Marketo &#x200B;](/help/forms/assets/select-marketo-connector-ue.png)
+   ![ Uitgezochte Verbinding van Marketo ](/help/forms/assets/select-marketo-connector-ue.png)
 
 1. Klik op **[!UICONTROL Save & Close]**.
 
 Op basis van de geselecteerde Marketo Engage-configuratie worden de formulierelementen weergegeven op het tabblad **[!UICONTROL Datasource]** van de Inhoudsbrowser in het deelvenster Eigenschappen. U kunt deze elementen slepen en neerzetten om het adaptieve formulier te maken.
 
-![&#x200B; Source van Gegevens van Marketo &#x200B;](/help/forms/assets/marketo-engage-data-source-ue.png)
+![ Source van Gegevens van Marketo ](/help/forms/assets/marketo-engage-data-source-ue.png)
 
 Het formulier is nu geconfigureerd met de gegevensbron van het aangesloten Marketo Engage-exemplaar. Configureer het nu om gegevens naar Adobe Marketo Engage te verzenden.
 
@@ -109,15 +109,17 @@ Het formulier is nu geconfigureerd met de gegevensbron van het aangesloten Marke
 **Q: Wat gebeurt wanneer u de schakelaar van de vorm verandert?**\
 **A:** als u de schakelaar van de vorm verandert, worden de bestaande banden ongeldig.
 
-**Q: Wat zijn de drie verrichtingen beschikbaar in de Invoke Dienst van de Redacteur van de Regel voor vormen die met Marketo Engage worden geïntegreerd?**\
+**Q: Wat zijn de drie verrichtingen beschikbaar in de Invoke Dienst van de Redacteur van de Regel voor vormen die met Marketo Engage worden geïntegreerd?**
+
 **A:** de drie uit-van-de-doos verrichtingen beschikbaar in **roepen de Dienst** voor vormen die met Marketo Engage worden geïntegreerd zijn:
+
 * Lead synchroniseren
 * Lead ophalen op id
 * Regelafstand op filtertype ophalen
 
 ## Volgende stap
 
-Nu hebt u de Marketo Engage-gegevensbron geconfigureerd voor Adaptive Forms. Daarna, kunt u [&#x200B; een Aangepast Vorm vormen om gegevens naar Marketo Engage &#x200B;](/help/forms/submit-adaptive-form-to-marketo-engage.md) te verzenden.
+Nu hebt u de Marketo Engage-gegevensbron geconfigureerd voor Adaptive Forms. Daarna, kunt u [ een Aangepast Vorm vormen om gegevens naar Marketo Engage ](/help/forms/submit-adaptive-form-to-marketo-engage.md) te verzenden.
 
 ## Verwante artikelen
 

@@ -4,9 +4,9 @@ description: Leer hoe u aan de slag kunt met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1653'
 ht-degree: 2%
 
 ---
@@ -21,10 +21,10 @@ ht-degree: 2%
 >id="aemcloud_ctt_download"
 >title="Downloaden"
 >abstract="Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw Adobe Experience Manager-bronexemplaar (AEM). Download de nieuwste versie."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=nl-NL" text="Release-opmerkingen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release-opmerkingen"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket als [&#x200B; Manager van het Pakket &#x200B;](/help/implementing/developing/tools/package-manager.md) op uw bronAdobe Experience Manager (AEM) instantie installeren. Download de nieuwste versie. Voor meer details op de recentste versie, zie [&#x200B; de Nota&#39;s van de Versie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=nl-NL).
+Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket als [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op uw bronAdobe Experience Manager (AEM) instantie installeren. Download de nieuwste versie. Voor meer details op de recentste versie, zie [ de Nota&#39;s van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 Alleen versie 2.0.0 en hoger wordt ondersteund en het is raadzaam de meest recente versie te gebruiken.
 
@@ -49,7 +49,7 @@ De AEM-broninstantie wordt mogelijk achter een firewall uitgevoerd, waarbij deze
 Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optreden. Als u verbindingsproblemen wilt oplossen tijdens een extractieproces, kunt u SSL-registratie inschakelen via de System Console van de AEM-bronomgeving door de volgende stappen uit te voeren:
 
 1. Navigeer aan de Console van het Web van Adobe Experience Manager op uw broninstantie, door **Hulpmiddelen > Verrichtingen > de Console van het Web** of direct aan URL in *https://serveraddress :serverport te gaan/system/console/configMgr*
-1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud **&#x200B;**
+1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud ****
 1. Gebruik de knop voor het potloodpictogram om de configuratiewaarden ervan te bewerken
 1. Laat **toe het registreren ssl voor extractie** plaatsen, dan druk **sparen**:
 
@@ -66,7 +66,7 @@ Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optred
 >title="Gereedschap Inhoud overbrengen uitvoeren"
 >abstract="Leer hoe u Content Transfer Tool gebruikt om de inhoud te migreren naar AEM as a Cloud Service (auteur/publiceren)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Zie demo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=nl-NL#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
 De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inhoud overbrengen. Ga als volgt te werk om te leren hoe u inhoud kunt migreren naar AEM as a Cloud Service met het gereedschap Inhoud overbrengen:
 
@@ -76,13 +76,13 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 >id="aemcloud_ctt_extraction_setup"
 >title="Installatiefase voor extractie"
 >abstract="Leer hoe u een migratieset maakt en beheert en hoe u de extractiesleutel kopieert."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=nl-NL#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
 1. Meld u aan bij Cloud Acceleration Manager (CAM) en klik op het CAM-project dat u eerder hebt gemaakt om te beoordelen of u klaar bent om naar AEM as a Cloud Service te gaan. Als u geen CAM project hebt gecreeerd, verwijs naar het Creëren van en het Leiden van een Project in CAM.
 
-1. Klik de **kaart van de Overdracht van de Inhoud 0&rbrace; &lbrace;om de Vastgestelde mening van de Lijst van de Migratie te openen.**
+1. Klik de **kaart van de Overdracht van de Inhoud 0} {om de Vastgestelde mening van de Lijst van de Migratie te openen.**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -94,7 +94,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   Het volgende dialoogvenster wordt weergegeven. Een migratieset verloopt na een langdurige periode van inactiviteit. Nadat de waarschuwingen op de projectkaart en de rijen van de migratietabel voor een tijdspanne worden getoond, zal de migratiereeks verlopen en zijn gegevens zullen niet meer beschikbaar zijn. Het overzicht [&#x200B; Vastgestelde Verval van de Migratie &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor details.
+   Het volgende dialoogvenster wordt weergegeven. Een migratieset verloopt na een langdurige periode van inactiviteit. Nadat de waarschuwingen op de projectkaart en de rijen van de migratietabel voor een tijdspanne worden getoond, zal de migratiereeks verlopen en zijn gegevens zullen niet meer beschikbaar zijn. Het overzicht [ Vastgestelde Verval van de Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor details.
 
    Tijdens het maken van de migratieset kunt u het geografische gebied kiezen waarin de tijdelijke migratiegegevens worden opgeslagen.  U wordt aangeraden het gebied te kiezen dat het dichtst bij uw doelcloud-omgeving ligt om optimale prestaties tijdens inname te garanderen.  U kunt de regio niet wijzigen nadat u de migratieset hebt gemaakt. Als u een ander gebied wilt gebruiken, moet u een nieuwe migratieset maken.
 
@@ -118,7 +118,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 >id="aemcloud_ctt_populate_migrationset"
 >title="Migratieset vullen"
 >abstract="Nadat u een migratieset hebt gemaakt, moet deze zijn gevuld met de inhoud van de broninstantie die naar de AEM as a Cloud Service-omgeving moet worden verplaatst. Hiervoor moet het gereedschap Inhoud overbrengen op de broninstantie zijn geïnstalleerd."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=nl-NL" text="Inhoud uitnemen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Inhoud uitnemen"
 
 Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt vullen, installeert u de nieuwste versie van het Content Transfer Tool op uw Adobe Experience Manager-bronexemplaar (AEM). Volg deze sectie voor informatie over het vullen van de migratieset.
 
@@ -132,7 +132,7 @@ Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt v
 
    >[!NOTE]
    >
-   >Zorg ervoor dat de extractietoets geldig is en niet bij het verlopen ervan is. U kunt deze informatie in **krijgen creeer de Reeks van de Migratie** dialoog nadat u de extractiesleutel kleeft. Als u een verbindingsfout krijgt, zie [&#x200B; Connectiviteit van het Milieu van Source &#x200B;](#source-environment-connectivity) voor meer informatie.
+   >Zorg ervoor dat de extractietoets geldig is en niet bij het verlopen ervan is. U kunt deze informatie in **krijgen creeer de Reeks van de Migratie** dialoog nadat u de extractiesleutel kleeft. Als u een verbindingsfout krijgt, zie [ Connectiviteit van het Milieu van Source ](#source-environment-connectivity) voor meer informatie.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
@@ -149,8 +149,10 @@ Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt v
       >Vanaf CTT-versie (3.0.24) zijn er nieuwe functies toegevoegd aan het gereedschap Inhoud overbrengen, waardoor het proces voor het opnemen en uitsluiten van paden is verbeterd. Eerder moesten paden een voor een worden geselecteerd, wat vervelend en tijdrovend was. Gebruikers kunnen nu paden rechtstreeks vanuit de gebruikersinterface opnemen of een CSV-bestand uploaden, afhankelijk van hun voorkeur.  Het CSV-bestand moet één pad per regel hebben en geen komma.
 
    1. **Wegen om** te omvatten: De wegbrowser van het gebruik om wegen te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren. Gebruikers kunnen slechts één optie selecteren om paden op te nemen: in de gebruikersinterface of door een CSV-bestand te uploaden.
+
       >[!IMPORTANT]
       >Voor de volgende paden gelden beperkingen bij het maken van een migratieset:
+      >
       >* `/apps`
       >* `/libs`
       >* `/home`
@@ -178,7 +180,7 @@ Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt v
 
       ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
-1. Klik **sparen** nadat u alle gebieden in **bevolkt creeer het 3&rbrace; detailsscherm van de Plaats van de Migratie**.
+1. Klik **sparen** nadat u alle gebieden in **bevolkt creeer het 3} detailsscherm van de Plaats van de Migratie**.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
@@ -231,4 +233,4 @@ Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Alvorens u deze processen leert, moet u [&#x200B; Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) herzien om de extractie en inname fasen van de activiteit van de inhoudsoverdracht beduidend te versnellen om inhoud naar AEM as a Cloud Service te bewegen.
+Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Alvorens u deze processen leert, moet u [ Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) herzien om de extractie en inname fasen van de activiteit van de inhoudsoverdracht beduidend te versnellen om inhoud naar AEM as a Cloud Service te bewegen.

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt ondersteuning voor elementaire mogelijkheden voor inhoudsbeheer, zoals online opslag, beheer van metagegevens, versioning, uploaden en downloaden, enzovoort, voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
-Daarnaast biedt [!DNL Experience Manager Assets] uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide steun wordt verleend gebruikend [&#x200B; activa microservices &#x200B;](asset-microservices-configure-and-use.md).
+Daarnaast biedt [!DNL Experience Manager Assets] uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide steun wordt verleend gebruikend [ activa microservices ](asset-microservices-configure-and-use.md).
 
 De hoogtepunten voor activaomzetting die de diensten van activa microservices gebruiken omvatten:
 
-* Zeer belangrijke [&#x200B; Adobe dossierformaten &#x200B;](#adobe-formats) die door de toepassingen en de diensten van Adobe, met inbegrip van [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF worden geproduceerd.
-* Belangrijke [&#x200B; beeldende dossierformaten &#x200B;](#image-formats).
-* [&#x200B; Camera Raw dossierformaten &#x200B;](#camera-raw-formats) voor een brede waaier van camera&#39;s, met inbegrip van Canon, Nikon, Fujifilm, Olympus, en andere fabrikanten (aangedreven door Adobe Camera Raw).
-* Gemeenschappelijke [&#x200B; documentformaten &#x200B;](#document-formats), met inbegrip van Microsoft® Office en Open formaten van het Document.
-* Brede waaier van [&#x200B; video &#x200B;](#video-formats) en [&#x200B; audio &#x200B;](#audio-formats) formaten.
+* Zeer belangrijke [ Adobe dossierformaten ](#adobe-formats) die door de toepassingen en de diensten van Adobe, met inbegrip van [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF worden geproduceerd.
+* Belangrijke [ beeldende dossierformaten ](#image-formats).
+* [ Camera Raw dossierformaten ](#camera-raw-formats) voor een brede waaier van camera&#39;s, met inbegrip van Canon, Nikon, Fujifilm, Olympus, en andere fabrikanten (aangedreven door Adobe Camera Raw).
+* Gemeenschappelijke [ documentformaten ](#document-formats), met inbegrip van Microsoft® Office en Open formaten van het Document.
+* Brede waaier van [ video ](#video-formats) en [ audio ](#audio-formats) formaten.
 
 De volgende legenda beschrijft het niveau van steun voor elk formaat.
 
@@ -37,8 +37,8 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] ondersteunt alleen de bestandsindelingen die in dit artikel worden vermeld.
->&#x200B;>Sommige functies werken mogelijk met andere indelingen, maar deze indelingen worden officieel niet ondersteund. De resultaten kunnen inconsistent zijn en de functies werken mogelijk niet zoals verwacht.
->&#x200B;>Gebruik alleen de ondersteunde indelingen voor consistente en betrouwbare resultaten.
+>Sommige functies werken mogelijk met andere indelingen, maar deze indelingen worden officieel niet ondersteund. De resultaten kunnen inconsistent zijn en de functies werken mogelijk niet zoals verwacht.
+>Gebruik alleen de ondersteunde indelingen voor consistente en betrouwbare resultaten.
 
 ## Adobe-indelingen {#adobe-formats}
 
@@ -79,7 +79,7 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 
 De volgende 3D-indelingen worden ondersteund.
 
-Zie ook [&#x200B; Werk met 3D activa in Dynamische Media &#x200B;](/help/assets/dynamic-media/assets-3d.md).
+Zie ook [ Werk met 3D activa in Dynamische Media ](/help/assets/dynamic-media/assets-3d.md).
 
 | Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamische media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -235,15 +235,15 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden | Typen instellen die deze indeling ondersteunen |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | - | - | - | ✓ | - | - |
-| BMP | ✓ | - | - | - | - | [&#x200B; Beeld &#x200B;](/help/assets/dynamic-media/image-sets.md), [&#x200B; Gemengde Media &#x200B;](/help/assets/dynamic-media/mixed-media-sets.md), en [&#x200B; Spin &#x200B;](/help/assets/dynamic-media/spin-sets.md) |
-| [&#x200B; EPS &#x200B;](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| BMP | ✓ | - | - | - | - | [ Beeld ](/help/assets/dynamic-media/image-sets.md), [ Gemengde Media ](/help/assets/dynamic-media/mixed-media-sets.md), en [ Spin ](/help/assets/dynamic-media/spin-sets.md) |
+| [ EPS ](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | HEIC | - | - | - | ✓ | - | - |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [&#x200B; Beeld &#x200B;](/help/assets/dynamic-media/image-sets.md), [&#x200B; Gemengde Media &#x200B;](/help/assets/dynamic-media/mixed-media-sets.md), en [&#x200B; Spin &#x200B;](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [ Beeld ](/help/assets/dynamic-media/image-sets.md), [ Gemengde Media ](/help/assets/dynamic-media/mixed-media-sets.md), en [ Spin ](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [&#x200B; Beeld &#x200B;](/help/assets/dynamic-media/image-sets.md), [&#x200B; Gemengde Media &#x200B;](/help/assets/dynamic-media/mixed-media-sets.md), en [&#x200B; Spin &#x200B;](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [ Beeld ](/help/assets/dynamic-media/image-sets.md), [ Gemengde Media ](/help/assets/dynamic-media/mixed-media-sets.md), en [ Spin ](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | - | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [&#x200B; Beeld &#x200B;](/help/assets/dynamic-media/image-sets.md), [&#x200B; Gemengde Media &#x200B;](/help/assets/dynamic-media/mixed-media-sets.md), en [&#x200B; Spin &#x200B;](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [ Beeld ](/help/assets/dynamic-media/image-sets.md), [ Gemengde Media ](/help/assets/dynamic-media/mixed-media-sets.md), en [ Spin ](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | - | - | - | ✓ | - | - |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
@@ -263,7 +263,7 @@ De volgende subtypes van het dossierformaten van het roosterbeeld die *niet* in 
 
 ## Dynamische media - Ondersteunde 3D-bestandsindelingen {#support-3d-formats-dynamic-media}
 
-Zie ook [&#x200B; 3D gesteunde formaten &#x200B;](/help/assets/file-format-support.md#support-3d-formats)
+Zie ook [ 3D gesteunde formaten ](/help/assets/file-format-support.md#support-3d-formats)
 
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
@@ -289,5 +289,5 @@ Zie ook [&#x200B; 3D gesteunde formaten &#x200B;](/help/assets/file-format-suppo
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; verwerking van Activa gebruikend activa microservices &#x200B;](asset-microservices-overview.md).
->* [&#x200B; Gesteunde dossierformaten voor slimme het etiketteren van op tekst-gebaseerde activa &#x200B;](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [ verwerking van Activa gebruikend activa microservices ](asset-microservices-overview.md).
+>* [ Gesteunde dossierformaten voor slimme het etiketteren van op tekst-gebaseerde activa ](/help/assets/smart-tags.md#smart-tags-supported-file-formats)

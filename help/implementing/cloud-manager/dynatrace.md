@@ -4,8 +4,8 @@ description: Meer informatie over het gebruik van Dynatrace met AEM as a Cloud S
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -18,9 +18,9 @@ Adobe biedt de mogelijkheid om Dynatrace te gebruiken om AEM as a Cloud Service 
 
 Met Dynatrace kunt u naadloze waarneming krijgen voor al uw AEM-toepassingen. Dynatrace ontdekt uw AEM-apps en toont hun paden, van website tot container tot cloudservice, om de gebruikerservaring te onthullen. Intertwined met end-to-end sporen over elke rij en Reëel Toezicht van het Gebruik, neem uw AEM inhoud-geleide ervaringen tot het volgende niveau zonder hiaten of dode vlekken. Als er anomalieën optreden, stelt Dynatrace deze in real-time vast met de Davis AI-engine. Het benadrukt de worteloorzaak neer aan de gebroken code alvorens uw klanten worden beïnvloed, die de gemiddelde tijd minimaliseren om te herstellen.
 
-Meer over Dynatrace leren, zie de [&#x200B; integratie van de Dienst van de Wolk van Adobe AEM &#x200B;](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
+Meer over Dynatrace leren, zie de [ integratie van de Dienst van de Wolk van Adobe AEM ](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
-![&#x200B; de auteur en de metriek van uitgeversprestaties van AEM &#x200B;](/help/implementing/cloud-manager/assets/dynatrace-performance-metrics.png)
+![ de auteur en de metriek van uitgeversprestaties van AEM ](/help/implementing/cloud-manager/assets/dynatrace-performance-metrics.png)
 
 ## Dynatrace integreren met AEM as a Cloud Service {#integrating-dynatrace-with-aem-as-a-cloud-service}
 
@@ -31,11 +31,11 @@ De details die voor connectiviteitsverzoeken worden vereist worden hieronder bes
 | **Gebied** | **Beschrijving** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | URL voor uw Dynatrace-omgeving.<br><br> voor klanten van Dynatrace SaaS, is het formaat `https://<your-environment-id>.live.dynatrace.com`.<br><br> Voor Dynatrace Managed-klanten is de indeling `https://<your-managed-url>/e/<environmentId>` |
-| [!DNL Dynatrace Environment ID] | Je Dynatrace-omgeving-id. Zie [&#x200B; hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u het kunt ophalen. |
-| [!DNL Dynatrace Environment Token] | Uw Dynatrace-omgevingstoken. Zie [&#x200B; hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u het kunt ophalen.<br><br> Dit teken zou als geheim moeten worden beschouwd, zodat gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien. |
-| [!DNL Dynatrace API access token] | Het API toegangstoken van uw milieu van Dynatrace. Zie [&#x200B; tot een de toegangstoken van Dynatrace API &#x200B;](#create-dynatrace-access-token) voor hoe te om het tot stand te brengen.<br><br> Dit teken zou als geheim moeten worden beschouwd zodat gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien.<br> |
+| [!DNL Dynatrace Environment ID] | Je Dynatrace-omgeving-id. Zie [ hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u het kunt ophalen. |
+| [!DNL Dynatrace Environment Token] | Uw Dynatrace-omgevingstoken. Zie [ hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u het kunt ophalen.<br><br> Dit teken zou als geheim moeten worden beschouwd, zodat gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien. |
+| [!DNL Dynatrace API access token] | Het API toegangstoken van uw milieu van Dynatrace. Zie [ tot een de toegangstoken van Dynatrace API ](#create-dynatrace-access-token) voor hoe te om het tot stand te brengen.<br><br> Dit teken zou als geheim moeten worden beschouwd zodat gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien.<br> |
 | [!DNL Dynatrace ActiveGate Port] | De Dynatrace ActiveGate-poort waarmee de AEM-integratie verbinding moet maken.<br><br> Deze haven wordt slechts vereist voor Beheerde Dynatrace. |
-| [!DNL Dynatrace ActiveGate Network Zone] | Uw [&#x200B; het netwerkstreek van Dynatrace ActiveGate &#x200B;](https://docs.dynatrace.com/docs/manage/network-zones) om AEM controlegegevens over gegevenscentra en netwerkgebieden efficiënt te leiden.<br><br> Nota: Een het netwerkstreek van Dynatrace ActiveGate is facultatief. |
+| [!DNL Dynatrace ActiveGate Network Zone] | Uw [ het netwerkstreek van Dynatrace ActiveGate ](https://docs.dynatrace.com/docs/manage/network-zones) om AEM controlegegevens over gegevenscentra en netwerkgebieden efficiënt te leiden.<br><br> Nota: Een het netwerkstreek van Dynatrace ActiveGate is facultatief. |
 | [!DNL AEM Environment IDs] | De AEM-omgeving-id of -id&#39;s die Dynatrace moet controleren. |
 
 >[!NOTE]
@@ -46,14 +46,14 @@ De details die voor connectiviteitsverzoeken worden vereist worden hieronder bes
 
 ### Welke licentie heb ik nodig voor Dynatrace AEM Monitoring? {#which-license-do-i-need-for-AEM-monitoring}
 
-Voor Dynatrace AEM-bewaking is een Dynatrace-licentie vereist. Het verlenen van vergunningen van Dynatrace AEM is gebaseerd op [&#x200B; volledig-stapel controle voor containers Kubernetes &#x200B;](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). De geheugengrootten van gecontroleerde AEM-containers (auteur- en uitgeversservices) worden automatisch gedetecteerd.
+Voor Dynatrace AEM-bewaking is een Dynatrace-licentie vereist. Het verlenen van vergunningen van Dynatrace AEM is gebaseerd op [ volledig-stapel controle voor containers Kubernetes ](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). De geheugengrootten van gecontroleerde AEM-containers (auteur- en uitgeversservices) worden automatisch gedetecteerd.
 
 De Adobe-implementatiespecificaties per AEM-omgeving zijn:
 
 * Productie: gemiddeld 4 containers, 16 GB geheugen elk
 * Niet-productie: gemiddeld 4 containers, 8 GB geheugen elk
 
-Meer over Dynatrace verlenen van vergunningen, zie het [&#x200B; Abonnement van het Platform van Dynatrace &#x200B;](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
+Meer over Dynatrace verlenen van vergunningen, zie het [ Abonnement van het Platform van Dynatrace ](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
 
 ### Hoe krijg ik mijn Dynatrace Connection Details? {#how-do-i-get-my-dynatrace-connection-details}
 

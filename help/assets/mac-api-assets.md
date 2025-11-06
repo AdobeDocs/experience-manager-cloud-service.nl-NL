@@ -3,9 +3,9 @@ title: ASSETS HTTP API
 description: Creeer, lees, update, schrap, beheer digitale activa gebruikend HTTP API in  [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 0%
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Aan de slag met de AEM [!DNL Assets] HTTP API {#overview}
 
-Met de AEM [!DNL Assets] HTTP API zijn CRUD-bewerkingen (maken, lezen, bijwerken en verwijderen) op digitale elementen mogelijk via een REST-interface die beschikbaar is op /`api/assets` . Deze bewerkingen zijn van toepassing op metagegevens van elementen, uitvoeringen en opmerkingen. Het omvat [&#x200B; steun voor de Fragmenten van de Inhoud &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md).
+Met de AEM [!DNL Assets] HTTP API zijn CRUD-bewerkingen (maken, lezen, bijwerken en verwijderen) op digitale elementen mogelijk via een REST-interface die beschikbaar is op /`api/assets` . Deze bewerkingen zijn van toepassing op metagegevens van elementen, uitvoeringen en opmerkingen. Het omvat [ steun voor de Fragmenten van de Inhoud ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
-> Er is een gemoderniseerde OpenAPI-implementatie van de API voor contentfragmentbeheer beschikbaar. Voor volledige documentatie zie [&#x200B; Beheer API van het Fragment van de Inhoud &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Het wordt aanbevolen de nieuwe OpenAPI-implementatie te gebruiken. Het bestaande gebruik van Assets HTTP API voor inhoudsfragmenten moet worden gemigreerd naar de nieuwe OpenAPI voor contentfragmentbeheer.
+> Er is een gemoderniseerde OpenAPI-implementatie van de API voor contentfragmentbeheer beschikbaar. Voor volledige documentatie zie [ Beheer API van het Fragment van de Inhoud ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Het wordt aanbevolen de nieuwe OpenAPI-implementatie te gebruiken. Het bestaande gebruik van Assets HTTP API voor inhoudsfragmenten moet worden gemigreerd naar de nieuwe OpenAPI voor contentfragmentbeheer.
 
 De API openen:
 
@@ -36,27 +36,27 @@ De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode v
 
 >[!NOTE]
 >
->Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van elementen of binaire bestanden in het algemeen (zoals uitvoeringen), zijn voor [!DNL Experience Manager] vervangen als een [!DNL Cloud Service] -implementatie. Voor het uploaden van binaire getallen, gebruik [&#x200B; directe binaire upload APIs &#x200B;](developer-reference-material-apis.md#asset-upload) in plaats daarvan.
+>Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van elementen of binaire bestanden in het algemeen (zoals uitvoeringen), zijn voor [!DNL Experience Manager] vervangen als een [!DNL Cloud Service] -implementatie. Voor het uploaden van binaire getallen, gebruik [ directe binaire upload APIs ](developer-reference-material-apis.md#asset-upload) in plaats daarvan.
 
 ## Inhoudsfragmenten beheren {#content-fragments}
 
-A [&#x200B; het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments.md) is een gestructureerd middel dat tekst, aantallen, en data opslaat. Aangezien er verschillende verschillen zijn tussen `standard` -elementen (zoals afbeeldingen of documenten), zijn er enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
+A [ het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments.md) is een gestructureerd middel dat tekst, aantallen, en data opslaat. Aangezien er verschillende verschillen zijn tussen `standard` -elementen (zoals afbeeldingen of documenten), zijn er enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
-Voor meer informatie, zie [&#x200B; de steun van de Fragmenten van de Inhoud in  [!DNL Experience Manager Assets]  HTTP API &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md).
+Voor meer informatie, zie [ de steun van de Fragmenten van de Inhoud in  [!DNL Experience Manager Assets]  HTTP API ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
->Zie [&#x200B; AEM APIs voor Gestructureerde Inhoudslevering en Beheer &#x200B;](/help/headless/apis-headless-and-content-fragments.md) voor een overzicht van diverse beschikbare APIs en vergelijking van sommige betrokken concepten.
+>Zie [ AEM APIs voor Gestructureerde Inhoudslevering en Beheer ](/help/headless/apis-headless-and-content-fragments.md) voor een overzicht van diverse beschikbare APIs en vergelijking van sommige betrokken concepten.
 >
->Het [&#x200B; Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud &#x200B;](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
+>Het [ Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 ## Onderzoek het gegevensmodel {#data-model}
 
-De [!DNL Assets] HTTP API stelt hoofdzakelijk twee elementen bloot: omslagen en standaardactiva. Het biedt ook gedetailleerde elementen voor aangepaste gegevensmodellen die in Inhoudsfragmenten worden gebruikt. Zie Gegevensmodellen van inhoudsfragmenten voor meer informatie. Zie {de gegevensmodellen van het Fragment van 0} Inhoud [&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor verdere informatie.
+De [!DNL Assets] HTTP API stelt hoofdzakelijk twee elementen bloot: omslagen en standaardactiva. Het biedt ook gedetailleerde elementen voor aangepaste gegevensmodellen die in Inhoudsfragmenten worden gebruikt. Zie Gegevensmodellen van inhoudsfragmenten voor meer informatie. Zie {de gegevensmodellen van het Fragment van 0} Inhoud [ voor verdere informatie.](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)
 
 >[!NOTE]
 >
->Het [&#x200B; Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud &#x200B;](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
+>Het [ Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 ### Mappen beheren {#folders}
 
@@ -88,11 +88,11 @@ In [!DNL Experience Manager] bevat een element de volgende elementen:
 * **Vertoningen:** Veelgevormde vertoningen (zoals, beelden in diverse grootte, verschillende videocoderingen, of gehaalde pagina&#39;s van Pdfs/Adobe InDesign dossiers).
 * **Commentaren (facultatief):** user-provided commentaren.
 
-Voor informatie over elementen in de Fragmenten van de Inhoud zie [&#x200B; de Steun van de Fragmenten van de Inhoud in HTTP van Experience Manager Assets API &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md).
+Voor informatie over elementen in de Fragmenten van de Inhoud zie [ de Steun van de Fragmenten van de Inhoud in HTTP van Experience Manager Assets API ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
->Het [&#x200B; Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud &#x200B;](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
+>Het [ Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 In [!DNL Experience Manager] heeft een map de volgende componenten:
 
@@ -104,21 +104,21 @@ In [!DNL Experience Manager] heeft een map de volgende componenten:
 
 De [!DNL Assets] HTTP API bevat de volgende functies:
 
-* [&#x200B; wint een omslaglijst &#x200B;](#retrieve-a-folder-listing) terug.
-* [&#x200B; creeer een omslag &#x200B;](#create-a-folder).
+* [ wint een omslaglijst ](#retrieve-a-folder-listing) terug.
+* [ creeer een omslag ](#create-a-folder).
 * [Een element maken (afgekeurd)](#create-an-asset)
-* [&#x200B; de activa binaire van de Update (afgekeurd) &#x200B;](#update-asset-binary).
-* [&#x200B; de activameta-gegevens van de Update &#x200B;](#update-asset-metadata).
-* [&#x200B; creeer een activa vertoning &#x200B;](#create-an-asset-rendition).
-* [&#x200B; werk een activavertoning &#x200B;](#update-an-asset-rendition) bij.
-* [&#x200B; creeer een activacommentaar &#x200B;](#create-an-asset-comment).
-* [&#x200B; Kopieer een omslag of activa &#x200B;](#copy-a-folder-or-asset).
-* [&#x200B; Beweeg een omslag of activa &#x200B;](#move-a-folder-or-asset).
-* [&#x200B; Schrap een omslag, activa, of vertoning &#x200B;](#delete-a-folder-asset-or-rendition).
+* [ de activa binaire van de Update (afgekeurd) ](#update-asset-binary).
+* [ de activameta-gegevens van de Update ](#update-asset-metadata).
+* [ creeer een activa vertoning ](#create-an-asset-rendition).
+* [ werk een activavertoning ](#update-an-asset-rendition) bij.
+* [ creeer een activacommentaar ](#create-an-asset-comment).
+* [ Kopieer een omslag of activa ](#copy-a-folder-or-asset).
+* [ Beweeg een omslag of activa ](#move-a-folder-or-asset).
+* [ Schrap een omslag, activa, of vertoning ](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
->Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notaties weggelaten. De aantekening correleert met [&#x200B; Herstel &#x200B;](https://github.com/micha/resty) dat een manuscriptomslag voor cURL is.
+>Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notaties weggelaten. De aantekening correleert met [ Herstel ](https://github.com/micha/resty) dat een manuscriptomslag voor cURL is.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -170,11 +170,11 @@ Een API-aanroep mislukt met een antwoordcode `500` als het bovenliggende knooppu
 
 ## Een element maken {#create-an-asset}
 
-Het maken van elementen wordt niet ondersteund via deze HTTP-API. Voor activa verwezenlijking, gebruik [&#x200B; activa uploadt &#x200B;](developer-reference-material-apis.md) API.
+Het maken van elementen wordt niet ondersteund via deze HTTP-API. Voor activa verwezenlijking, gebruik [ activa uploadt ](developer-reference-material-apis.md) API.
 
 ## Elementbinair bijwerken {#update-asset-binary}
 
-Zie [&#x200B; activa uploaden &#x200B;](developer-reference-material-apis.md) voor informatie over hoe te om activa binaries bij te werken. U kunt een element binair niet bijwerken gebruikend HTTP API.
+Zie [ activa uploaden ](developer-reference-material-apis.md) voor informatie over hoe te om activa binaries bij te werken. U kunt een element binair niet bijwerken gebruikend HTTP API.
 
 ## Metagegevens van een element bijwerken {#update-asset-metadata}
 
@@ -315,4 +315,4 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; de verwijzingsdocumenten van de Ontwikkelaar voor  [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* [ de verwijzingsdocumenten van de Ontwikkelaar voor  [!DNL Assets]](/help/assets/developer-reference-material-apis.md)

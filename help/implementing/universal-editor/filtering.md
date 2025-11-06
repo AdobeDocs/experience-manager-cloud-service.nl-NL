@@ -2,9 +2,9 @@
 title: Componenten filteren
 description: Leer hoe u de toegestane componenten per container in de Universele Redacteur kunt beperken gebruikend componentenfilters.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 0%
@@ -55,5 +55,5 @@ Als u het kenmerk `components` in een filterdefinitie instelt op `null` , worden
 >
 >Meer informatie over andere opties voor aanpassing en extensie die beschikbaar zijn in de Universal Editor vindt u in de documenten:
 >
->* [&#x200B; het Aanpassen van de Universele Redacteur &#x200B;](/help/implementing/universal-editor/customizing.md)
->* [&#x200B; Uitbreidend de Universele Redacteur &#x200B;](/help/implementing/universal-editor/extending.md)
+>* [ het Aanpassen van de Universele Redacteur ](/help/implementing/universal-editor/customizing.md)
+>* [ Uitbreidend de Universele Redacteur ](/help/implementing/universal-editor/extending.md)

@@ -4,8 +4,8 @@ description: Leer hoe u Cloud Manager git-opslagruimten kunt gebruiken en hoe u 
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 80206fc1396896fe45e2c959c78a0bf30eba71c5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Deze videoreeks verkent verschillende gebruiksgevallen bij de integratie van een
 * [Implementatie van productie](#production-deployment)
 * [Releasetags synchroniseren](#sync-tags)
 
-De videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie de [&#x200B; extra middelen hieronder &#x200B;](#additional-resources) voor meer details op git.
+De videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie de [ extra middelen hieronder ](#additional-resources) voor meer details op git.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
@@ -66,6 +66,6 @@ Synchroniseer releasetags van een Cloud Manager-it-opslagplaats naar een door de
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [&#x200B; Middelen GitHub &#x200B;](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
-* [&#x200B; Atlassian Tutorials van het Git &#x200B;](https://www.atlassian.com/git/tutorials/what-is-version-control)
-* [&#x200B; Git Cheat Sheet &#x200B;](https://education.github.com/git-cheat-sheet-education.pdf)
+* [ Middelen GitHub ](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
+* [ Atlassiaanse Zelfstudies van de Git ](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [ Git Cheat Sheet ](https://education.github.com/git-cheat-sheet-education.pdf)

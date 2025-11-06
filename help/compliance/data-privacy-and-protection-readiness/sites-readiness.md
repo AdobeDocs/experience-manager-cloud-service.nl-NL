@@ -3,8 +3,8 @@ title: Regels voor gegevensbescherming en gegevensbescherming - AEM Sites-gereed
 description: Meer informatie over Experience Manager as a Cloud Service Sites-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations, waaronder de EU General Data Protection Regulation (GDPR), de California Consumer Privacy Act en hoe u aan deze regels moet voldoen bij de implementatie van een nieuw AEM as a Cloud Service-project.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -21,23 +21,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over de reactie van Adobe op privacykwesties, en wat dit voor u als klant van Adobe betekent, zie [&#x200B; het Centrum van de Privacy van Adobe &#x200B;](https://www.adobe.com/privacy.html).
+>Voor meer informatie over de reactie van Adobe op privacykwesties, en wat dit voor u als klant van Adobe betekent, zie [ het Centrum van de Privacy van Adobe ](https://www.adobe.com/privacy.html).
 
 Adobe Experience Manager as a Cloud Service Sites is klaar om klanten te helpen bij hun verplichtingen inzake privacy en bescherming van gegevens. Deze pagina begeleidt klanten door de procedures om dergelijke verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
-Voor meer informatie, zie het [&#x200B; Centrum van de Privacy van Adobe &#x200B;](https://www.adobe.com/privacy.html).
+Voor meer informatie, zie het [ Centrum van de Privacy van Adobe ](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Zie [&#x200B; Adobe Experience Manager as a Cloud Service Readiness voor de Regels van de Privacy van Gegevens en van Gegevens &#x200B;](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) voor verdere details.
+>Zie [ Adobe Experience Manager as a Cloud Service Readiness voor de Regels van de Privacy van Gegevens en van Gegevens ](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) voor verdere details.
 
 ## AEM-auteurlaag {#aem-author-tier}
 
-De rekeningen van de gebruiker en de inhoud UGC op de auteurserver worden behandeld in de [&#x200B; documentatie van de Stichting van AEM &#x200B;](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
+De rekeningen van de gebruiker en de inhoud UGC op de auteurserver worden behandeld in de [ documentatie van de Stichting van AEM ](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
 
 ## AEM-publicatielaag {#aem-publish-tier}
 
-De rekeningen van de gebruiker worden gebruikt om bezoekers op de plaats voor authentiek te verklaren, en de inhoud UGC op publiceer server wordt behandeld in de [&#x200B; documentatie van de Stichting van AEM &#x200B;](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
+De rekeningen van de gebruiker worden gebruikt om bezoekers op de plaats voor authentiek te verklaren, en de inhoud UGC op publiceer server wordt behandeld in de [ documentatie van de Stichting van AEM ](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
 
 Standaard slaan AEM Sites-componenten geen formuliergegevens op die bezoekers op de publicatieserver hebben ingevoerd. Het wordt aanbevolen de gegevens naar een systeem van derden of naar Adobe Campaign te sturen voor verdere verwerking.
 
@@ -52,7 +52,7 @@ Adobe Experience Manager is onderworpen aan een cookie-uitschakelservice die wor
 Naar Weigeren:
 
 1. Navigeren naar:
-   [&#x200B; het Centrum van de Privacy van Adobe - Opt-uit &#x200B;](https://www.adobe.com/privacy/opt-out.html)
+   [ het Centrum van de Privacy van Adobe - Opt-uit ](https://www.adobe.com/privacy/opt-out.html)
 
 1. De rol neer aan **Diensten** - **gegevens van het de dienstgebruik van Experience Cloud**.
 
@@ -72,19 +72,19 @@ Naar Weigeren:
 
    >[!NOTE]
    >
-   > Er is een verdere beschrijving in **2. Privacy.** sectie van de [&#x200B; Algemene Voorwaarden van Adobe van Gebruik &#x200B;](https://www.adobe.com/legal/terms.html).
+   > Er is een verdere beschrijving in **2. Privacy.** sectie van de [ Algemene Voorwaarden van Adobe van Gebruik ](https://www.adobe.com/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sites biedt een optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Voor meer informatie bij het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Analytics zie [&#x200B; Adobe Analytics en de Privacy van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=nl-NL).
+Voor meer informatie bij het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Analytics zie [ Adobe Analytics en de Privacy van Gegevens ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites bevat een optionele integratie met Personalization Foundation by Target, die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Voor informatie over het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Target zie [&#x200B; Adobe Target - de Privacy en Algemene Verordening van de Bescherming van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=nl-NL).
+Voor informatie over het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Target zie [ Adobe Target - de Privacy en Algemene Verordening van de Bescherming van Gegevens ](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 

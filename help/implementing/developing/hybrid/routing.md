@@ -3,9 +3,9 @@ title: SPA Model Routing
 description: Voor toepassingen van één pagina in AEM, is app verantwoordelijk voor het verpletteren. Dit document beschrijft het verpletterende mechanisme, het contract, en beschikbare opties.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -25,7 +25,7 @@ App bezit het verpletteren en dan uitgevoerd door de ontwikkelaars van het proje
 
 ## Architectuur {#architecture}
 
-Voor een gedetailleerde beschrijving, zie [&#x200B; PageModelManager &#x200B;](blueprint.md#pagemodelmanager) sectie van het document van de Vervaging van het KUUROORD.
+Voor een gedetailleerde beschrijving, zie [ PageModelManager ](blueprint.md#pagemodelmanager) sectie van het document van de Vervaging van het KUUROORD.
 
 ## ModelRouter {#modelrouter}
 
@@ -33,7 +33,7 @@ Voor een gedetailleerde beschrijving, zie [&#x200B; PageModelManager &#x200B;](b
 
 ## Handmatig versus automatisch model routeren {#manual-vs-automatic-model-routing}
 
-Met `ModelRouter` worden fragmenten van het model automatisch opgehaald. Maar zoals elk geautomatiseerd gereedschap ook met beperkingen gepaard gaat. Wanneer nodig `ModelRouter` kan worden onbruikbaar gemaakt of worden gevormd om wegen te negeren gebruikend meta-eigenschappen (zie de sectie van Eigenschappen van Meta van het [&#x200B; document van de Component van de Pagina van het KUUROORD &#x200B;](page-component.md)). Ontwikkelaars aan de voorzijde kunnen vervolgens hun eigen model voor het routeren van lagen implementeren door `PageModelManager` te vragen een bepaald fragment van een model te laden met de functie `getData()` .
+Met `ModelRouter` worden fragmenten van het model automatisch opgehaald. Maar zoals elk geautomatiseerd gereedschap ook met beperkingen gepaard gaat. Wanneer nodig `ModelRouter` kan worden onbruikbaar gemaakt of worden gevormd om wegen te negeren gebruikend meta-eigenschappen (zie de sectie van Eigenschappen van Meta van het [ document van de Component van de Pagina van het KUUROORD ](page-component.md)). Ontwikkelaars aan de voorzijde kunnen vervolgens hun eigen model voor het routeren van lagen implementeren door `PageModelManager` te vragen een bepaald fragment van een model te laden met de functie `getData()` .
 
 >[!CAUTION]
 >

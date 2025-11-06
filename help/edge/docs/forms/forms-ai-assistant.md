@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -46,14 +46,14 @@ U hebt toegang tot de AI Assistant vanaf drie verschillende locaties in AEM Form
    - Zoeken naar het AI-assistent-pictogram links van de interface
    - Klik op het pictogram om het deelvenster AI Assistant te openen
 
-   ![&#x200B; AI Hulp pictogram* &#x200B;](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
+   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
 
 2. **de AanpassingsRedacteur van Forms**
    - Ga naar: Adobe Experience Manager > Forms > Forms &amp; Documents
    - Een formulier selecteren en openen om te bewerken
    - Klik op het pictogram AI Assistant in de editor-interface
 
-   ![&#x200B; AI Hulp pictogram* &#x200B;](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
+   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
 3. **Universele Redacteur**
 
@@ -345,4 +345,4 @@ Help ons de AI-assistent te verbeteren:
 
 ## Gerelateerde bronnen
 
-[AEM Forms AI Assistant - Promptbibliotheek](help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+[AEM Forms AI Assistant - Promptbibliotheek](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)

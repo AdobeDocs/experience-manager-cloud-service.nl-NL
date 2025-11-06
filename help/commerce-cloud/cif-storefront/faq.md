@@ -3,8 +3,8 @@ title: AEM - Commerce-integratie met Commerce integration framework - Veelgestel
 description: AEM - Commerce-integratie met Commerce integration framework - Veelgestelde vragen
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
-role: Admin, Architect, User
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+role: Admin, Developer, User
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Adobe heeft de GraphQL API&#39;s van Adobe Commerce aangenomen als de officiële
 
 ## &#x200B;2. Kunnen de activa van het Product (beelden) van AEM via Adobe Commerce worden opgeslagen en van verwijzingen voorzien? Hoe kunnen middelen van Dynamische Media worden verbruikt? {#faq-2}
 
-Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op de [&#x200B; markt.](https://commercemarketplace.adobe.com)
+Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op de [ markt.](https://commercemarketplace.adobe.com)
 
 Of als tijdelijke oplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Adobe Commerce. Dynamic Media maakt nu deel uit van AEM Assets en werkt op dezelfde manier.
 
@@ -50,7 +50,7 @@ Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen o
 
 ## &#x200B;9. Hoe werkt cachevalidatie voor AEM Dispatcher met AEM en handel? {#faq-9}
 
-Adobe raadt aan om op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt Adobe aan de gegevensclient-kant weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenbevestiging, zie [&#x200B; Optimizing het geheime voorgeheugen van Dispatcher.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=nl-NL)
+Adobe raadt aan om op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt Adobe aan de gegevensclient-kant weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenbevestiging, zie [ Optimizing het geheime voorgeheugen van Dispatcher.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
 
 ## &#x200B;10. Is er een aanbeveling voor een uniforme zoekactie in AEM-inhoud met Commerce? {#faq-10}
 
@@ -70,7 +70,7 @@ Adobe raadt aan om marketinggerelateerde gegevens en inhoud in AEM te beheren. D
 
 ## &#x200B;14. Hoe kan naleving PCI worden gewaarborgd wanneer het gebruiken van AEM voor de volledige presentatielaag? {#faq-14}
 
-Adobe raadt aan om onttrekkende betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over de naleving van Adobe Commerce PCI, zie [&#x200B; Vereisten van de Naleving PCI.](https://business.adobe.com/nl/products/magento/pci-compliance.html)
+Adobe raadt aan om onttrekkende betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over de naleving van Adobe Commerce PCI, zie [ Vereisten van de Naleving PCI.](https://business.adobe.com/products/magento/pci-compliance.html)
 
 ## &#x200B;15. Als ik AEM- en Adobe Commerce-cloudversies gebruik, is deze gezamenlijke oplossing PCI-compatibel? {#faq-15}
 
@@ -78,4 +78,4 @@ Ja, de zelfbeoordelingsvragenlijst D en de verklaring van naleving zijn op verzo
 
 ## &#x200B;16. Hoe kan ik een proeflicentie voor I/O-runtime aanvragen? {#faq-16}
 
-Zie [&#x200B; het Krijgen Toegang &#x200B;](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) voor details van het verzoeken van een proefvergunning om I/O Runtime te gebruiken.
+Zie [ het Krijgen Toegang ](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) voor details van het verzoeken van een proefvergunning om I/O Runtime te gebruiken.

@@ -3,12 +3,12 @@ title: Splitsen van alleen-werkgebied- en alleen-productie-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: 890d18778273ce60a676cb74fa8025d6b48dc70d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Staging- en productieomgevingen zijn nauw aan elkaar gekoppeld. Door gebrek, wor
 
 * Als u aan stadium-slechts wilt opstellen, verwerpt u **bevorderen aan Prod** stap in de pijpleiding. De uitvoering wordt echter gemarkeerd als geannuleerd.
 * Als u de recentste code in een het opvoeren milieu aan productie wilt opstellen, moet u de volledige pijpleiding met inbegrip van de het opvoeren plaatsing opnieuw opstellen alhoewel geen code daar werd veranderd.
-* De milieu&#39;s kunnen niet tijdens plaatsingen worden bijgewerkt. Als u de testomgeving enkele dagen lang pauzeert voordat u de productie promoot, blijft de productieomgeving vergrendeld en kan deze niet worden bijgewerkt. Dit scenario maakt niet-afhankelijke taken zoals het bijwerken van [&#x200B; milieuvariabelen &#x200B;](/help/implementing/cloud-manager/environment-variables.md) onmogelijk.
+* De milieu&#39;s kunnen niet tijdens plaatsingen worden bijgewerkt. Als u de testomgeving enkele dagen lang pauzeert voordat u de productie promoot, blijft de productieomgeving vergrendeld en kan deze niet worden bijgewerkt. Dit scenario maakt niet-afhankelijke taken zoals het bijwerken van [ milieuvariabelen ](/help/implementing/cloud-manager/environment-variables.md) onmogelijk.
 
 De fase-slechts en prod-slechts pijpleidingen bieden oplossingen aan deze gebruiksgevallen door specifieke plaatsingsopties te verstrekken.
 
@@ -51,14 +51,14 @@ Deze speciale pijpleidingen bieden meer flexibiliteit, maar u zou de volgende de
 
 ## Pipetontwerp {#pipeline-creation}
 
-Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardige manier aan de standaard gekoppelde [&#x200B; productiepijpleidingen &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [&#x200B; niet productiepijpleidingen &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Zie deze documenten voor meer informatie.
+Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardige manier aan de standaard gekoppelde [ productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [ niet productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Zie deze documenten voor meer informatie.
 
 1. In het **venster van Pijpleidingen**, klik **toevoegen Pijpleiding**.
 
-   * Selecteer **toevoegen de niet-Productiepijpleiding** aan [&#x200B; een stadium-slechts pijpleiding &#x200B;](#stage-only) creëren.
-   * Selecteer **Voeg slechts de Pijpleiding van de Productie** toe om [&#x200B; tot een pro-enige pijpleiding &#x200B;](#prod-only) te leiden.
+   * Selecteer **toevoegen de niet-Productiepijpleiding** aan [ een stadium-slechts pijpleiding ](#stage-only) creëren.
+   * Selecteer **Voeg slechts de Pijpleiding van de Productie** toe om [ tot een pro-enige pijpleiding ](#prod-only) te leiden.
 
-![&#x200B; Creërend een prod/stadium-enige pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-stage-pipeline.png)
+![ Creërend een prod/stadium-enige pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-stage-pipeline.png)
 
 >[!NOTE]
 >
@@ -70,11 +70,11 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 ### Een alleen-werkgebiedpijpleiding maken {#stage-only}
 
-1. In **voeg niet-Productie pijplijn** dialoogdoos, op het **3&rbrace; lusje van de Configuratie toe, selecteer het** gebied van de Pijpleiding van de Plaatsing **voor uw pijpleiding.**
+1. In **voeg niet-Productie pijplijn** dialoogdoos, op het **3} lusje van de Configuratie toe, selecteer het** gebied van de Pijpleiding van de Plaatsing **voor uw pijpleiding.**
 1. Voer in het veld Naam niet-productiepijplijn een naam in voor vrije tekst.
 1. Selecteer de gewenste plaatsingsopties, dan klik **verdergaan**.
 
-   ![&#x200B; het lusje van de Configuratie in Add niet-Productie de dialoogdoos van de Pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
+   ![ het lusje van de Configuratie in Add niet-Productie de dialoogdoos van de Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
 1. Op het **lusje van de Code van Source**, uitgezochte **Volledige Code van de Stapel**. Met deze optie wordt de volledige AEM-toepassing (back-end, Dispatcher/web tier config en alle front-end modules in de repo) samengesteld en geïmplementeerd.
 
@@ -82,15 +82,15 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 1. Selecteer uw **Bewaarplaats** en **Tak van het Git** in de respectieve drop-down lijsten, dan klik **verdergaan**.
 
-   ![&#x200B; het lusje van de Code van Source in Add niet-Productie de dialoogdoos van de Pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
+   ![ het lusje van de Code van Source in Add niet-Productie de dialoogdoos van de Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
 1. Op het **lusje van de Controle van de Ervaring**, is de gespecificeerde Plaats URL gepubliceerde URL die Cloud Manager voor paginakwaliteit controleert.
 
-1. Op het **gebied van de Weg van de Pagina 0&rbrace; &lbrace;, specificeer welke pagina&#39;s u wilt controleren, dan klikken** pictogram **![toevoegen Pagina &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg).**
+1. Op het **gebied van de Weg van de Pagina 0} {, specificeer welke pagina&#39;s u wilt controleren, dan klikken** pictogram **![toevoegen Pagina ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg).**
 
-   In de Experience Audit wordt elk pad geanalyseerd dat u toevoegt voor prestaties, toegankelijkheid, progressieve webapps, aanbevolen werkwijzen, SEO en andere kwaliteitscontroles. U kunt veelvoudige wegen toevoegen en om het even welk verwijderen door ![&#x200B; Grootte 400 te klikken pictogram &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
+   In de Experience Audit wordt elk pad geanalyseerd dat u toevoegt voor prestaties, toegankelijkheid, progressieve webapps, aanbevolen werkwijzen, SEO en andere kwaliteitscontroles. U kunt veelvoudige wegen toevoegen en om het even welk verwijderen door ![ Grootte 400 te klikken pictogram ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
-   ![&#x200B; het lusje van de Controle van de Ervaring in Add niet-Productie de dialoogdoos van de Pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
+   ![ het lusje van de Controle van de Ervaring in Add niet-Productie de dialoogdoos van de Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
 1. Klik **sparen**.
 
@@ -107,11 +107,11 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 1. Klik **sparen** om de productie-enige pijpleiding met deze opties tot stand te brengen.
 
-   ![&#x200B; Creërend een productie-enige pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-production-only-pipeline.png)
+   ![ Creërend een productie-enige pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-production-only-pipeline.png)
 
 ## Pijpleidingen met alleen het werkgebied en met alleen het profiel uitvoeren {#running}
 
-U kunt de nieuwe pijpleidingen [&#x200B; als een andere pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) beginnen. U kunt een productie-enige pijpleiding rechtstreeks van de uitvoeringsdetails van een stadium-enige pijpleiding teweegbrengen.
+U kunt de nieuwe pijpleidingen [ als een andere pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) beginnen. U kunt een productie-enige pijpleiding rechtstreeks van de uitvoeringsdetails van een stadium-enige pijpleiding teweegbrengen.
 
 <!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
@@ -130,20 +130,20 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 In de uitvoeringsdetails, a **bevorderen bouwt** knoop na de het testen stappen. Klik het om een productie-enige pijpleiding teweeg te brengen die de het werkgebiedartefacten van deze looppas aan productie opstelt. De knop wordt alleen weergegeven bij de laatste geslaagde uitvoering van het werkgebied.
 
-![&#x200B; werkgebied-enige pijpleiding loopt &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
+![ werkgebied-enige pijpleiding loopt ](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
 Wanneer u **bevordert bouw** klikt, opent een dialoogdoos voor u om de looppas van de verwante productie-enige pijpleiding te bevestigen. Klik **Looppas** om het te beginnen.
 
-![&#x200B; bevordert bouw - de dialoogdoos van de Pijpleiding van de Looppas &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
+![ bevordert bouw - de dialoogdoos van de Pijpleiding van de Looppas ](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
 Als er geen installatieprogramma is, wordt u gevraagd om er een te maken.
 
-![&#x200B; Bevorderen bouwt - Geen geldig vakje van de pijpleidingsdialoog &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-no-valid-pipeline.png)
+![ Bevorderen bouwt - Geen geldig vakje van de pijpleidingsdialoog ](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-no-valid-pipeline.png)
 
 
 ### Pijpleidingen met alleen profielen uitvoeren {#prod-only-run}
 
-Voor a **productie-enige** pijpleiding, toont Cloud Manager de bronartefacten die aan productie worden opgesteld. Controleer de **stap van de Voorbereiding van het 0&rbrace; Artefact voor de bronuitvoering, dan open het om details en logboeken te bekijken.**
+Voor a **productie-enige** pijpleiding, toont Cloud Manager de bronartefacten die aan productie worden opgesteld. Controleer de **stap van de Voorbereiding van het 0} Artefact voor de bronuitvoering, dan open het om details en logboeken te bekijken.**
 
 
-![&#x200B; details Artefact &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
+![ details Artefact ](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)

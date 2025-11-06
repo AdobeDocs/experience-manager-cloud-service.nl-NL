@@ -3,8 +3,8 @@ title: Inhoudsfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit. Leer hoe u ze kunt aanpassen.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 In Adobe Experience Manager as a Cloud Service breidt een inhoudsfragment een standaard element uit. Zie:
 
-* [&#x200B; Creërend en het Leiden de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) en [&#x200B; Pagina Authoring met de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md) voor verdere informatie over inhoudsfragmenten.
+* [ Creërend en het Leiden de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) en [ Pagina Authoring met de Fragmenten van de Inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) voor verdere informatie over inhoudsfragmenten.
 
-* [&#x200B; het Leiden Assets &#x200B;](/help/assets/manage-digital-assets.md) voor verdere informatie over standaardactiva.
+* [ het Leiden Assets ](/help/assets/manage-digital-assets.md) voor verdere informatie over standaardactiva.
 
 ## Architectuur {#architecture}
 
-De basis [&#x200B; samenstellende delen &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) van een inhoudsfragment zijn het volgende:
+De basis [ samenstellende delen ](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) van een inhoudsfragment zijn het volgende:
 
 * A *het Fragment van de Inhoud* zelf
 * Het bestaat uit één of meerdere *Elementen van de Inhoud*
@@ -56,14 +56,13 @@ Inhoudsfragmenten worden als een AEM Sites-functie beschouwd:
 
 #### Inhoudsfragmenten toewijzen aan Assets {#mapping-content-fragments-to-assets}
 
-![&#x200B; inhoudsfragment aan activa &#x200B;](assets/content-fragment-to-assets.png)
+![ inhoudsfragment aan activa ](assets/content-fragment-to-assets.png)
 
 Inhoudsfragmenten, gebaseerd op een inhoudsfragmentmodel, worden toegewezen aan één element:
 
 * Alle inhoud wordt opgeslagen onder het knooppunt `jcr:content/data` van het element:
 
    * De elementgegevens worden opgeslagen onder het hoofdsubknooppunt:
-
      `jcr:content/data/master`
 
    * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie:
@@ -83,7 +82,7 @@ Net als bij standaardelementen wordt een inhoudsfragment opgeslagen onder:
 
 #### Elementmachtigingen {#asset-permissions}
 
-Zie [&#x200B; het Fragment van de Inhoud - Schrap Overwegingen &#x200B;](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
+Zie [ het Fragment van de Inhoud - Schrap Overwegingen ](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### Functie-integratie {#feature-integration}
 
@@ -99,9 +98,9 @@ Integreren met Assets core:
 
 >[!CAUTION]
 >
->De [&#x200B; component van het Fragment van de Inhoud is een deel van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL). Zie [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL) voor meer details.
+>De [ component van het Fragment van de Inhoud is een deel van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html). Zie [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor meer details.
 
-Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM verstrekt de **[kerncomponent van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL)** - a [&#x200B; component die u inhoudsfragmenten op uw pagina&#39;s &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page) laat omvatten. U kunt dit **[de kerncomponent van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL)** ook uitbreiden.
+Vanuit AEM-pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM verstrekt de **[kerncomponent van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [ component die u inhoudsfragmenten op uw pagina&#39;s ](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page) laat omvatten. U kunt dit **[de kerncomponent van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** ook uitbreiden.
 
 * De component gebruikt de eigenschap `fragmentPath` om naar het daadwerkelijke inhoudsfragment te verwijzen. De eigenschap `fragmentPath` wordt op dezelfde manier afgehandeld als soortgelijke eigenschappen van andere elementtypen, bijvoorbeeld wanneer het inhoudsfragment naar een andere locatie wordt verplaatst.
 
@@ -133,7 +132,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 * **Vertalingen**
 
-  De Fragmenten van de inhoud zijn volledig geïntegreerd met het [&#x200B; AEM vertaalwerkschema &#x200B;](/help/sites-cloud/administering/translation/overview.md). Op architectonisch niveau betekent dit:
+  De Fragmenten van de inhoud zijn volledig geïntegreerd met het [ de vertaalwerkschema van AEM ](/help/sites-cloud/administering/translation/overview.md). Op architectonisch niveau betekent dit:
 
    * De afzonderlijke vertalingen van een inhoudsfragment zijn afzonderlijke fragmenten, bijvoorbeeld:
 
@@ -149,13 +148,13 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
   >[!NOTE]
   >
-  >De AEM vertaalworkflow werkt met `/content` :
+  >De AEM-vertaalworkflow werkt met `/content` :
   >
   >* Aangezien de modellen van het inhoudsfragment in `/conf` verblijven, zijn deze niet inbegrepen in dergelijke vertalingen. U kunt de UI-tekenreeksen internationaliseren.
 
 * **schema&#39;s van Meta-gegevens**
 
-   * De fragmenten van de inhoud gebruiken en hergebruiken de [&#x200B; meta-gegevensschema&#39;s &#x200B;](/help/assets/metadata-schemas.md) die met standaardactiva kunnen worden bepaald.
+   * De fragmenten van de inhoud gebruiken en hergebruiken de [ meta-gegevensschema&#39;s ](/help/assets/metadata-schemas.md) die met standaardactiva kunnen worden bepaald.
 
    * CFM biedt een eigen, specifiek schema:
 
@@ -169,7 +168,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebben; zie:
 
-[&#x200B; com.adobe.cq.dam.cfm &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[ com.adobe.cq.dam.cfm ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -179,7 +178,7 @@ U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebbe
 
 De volgende drie interfaces kunnen als ingangspunten dienen:
 
-* **Fragment van de Inhoud** ([&#x200B; ContentFragment &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Fragment van de Inhoud** ([ ContentFragment ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   Met deze interface kunt u op abstracte wijze met een inhoudsfragment werken.
 
@@ -191,7 +190,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
       * Lijstelementen
       * Elementen op naam ophalen
-      * Creeer elementen (zie [&#x200B; Gebieden &#x200B;](#caveats))
+      * Creeer elementen (zie [ Gebieden ](#caveats))
 
       * Gegevens over toegangselementen (zie `ContentElement`)
 
@@ -207,7 +206,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
   De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
-   * **Element van de Inhoud** ([&#x200B; ContentElement &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Element van de Inhoud** ([ ContentElement ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
@@ -215,13 +214,13 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
          * Variaties weergeven
          * Variaties ophalen op naam
-         * Creeer variaties (zie [&#x200B; Beveats &#x200B;](#caveats))
-         * Verwijder variaties (zie [&#x200B; Gebieden &#x200B;](#caveats))
+         * Creeer variaties (zie [ Beveats ](#caveats))
+         * Verwijder variaties (zie [ Gebieden ](#caveats))
          * Toegang krijgen tot variatiegegevens (zie `ContentVariation`)
 
       * Sneltoets voor het oplossen van variaties (door een aanvullende, implementatiespecifieke fallback-logica toe te passen als de opgegeven variatie niet beschikbaar is voor een element)
 
-   * **de Variatie van de Inhoud** ([&#x200B; ContentVariation &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **de Variatie van de Inhoud** ([ ContentVariation ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
@@ -245,7 +244,7 @@ Het volgende kan worden aangepast:
 
 * `ContentElement` kan worden aangepast aan:
 
-   * [`ElementTemplate` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - voor de toegang tot van de structurele informatie van het element.
+   * [`ElementTemplate` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - voor de toegang tot van de structurele informatie van het element.
 
 * [`FragmentTemplate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
@@ -285,11 +284,11 @@ Zie het volgende:
 >
 >Overweeg deze achtergrondinformatie. U wordt verondersteld om niets hier te veranderen (aangezien het als a *privé gebied* in de bewaarplaats) duidelijk is, maar het zou soms kunnen helpen om te begrijpen hoe de dingen onder de kap werken.
 
-Het bewerken van een inhoudsfragment, dat meerdere weergaven kan beslaan (= HTML pagina&#39;s), is atomisch. Als zulk atoommulti-mening uitgeeft mogelijkheden zijn geen typisch AEM concept, gebruiken de inhoudsfragmenten wat een *het uitgeven zitting* wordt genoemd.
+Het bewerken van een inhoudsfragment, dat meerdere weergaven kan beslaan (= HTML-pagina&#39;s), is atomisch. Als zulk atoommulti-mening uitgeeft mogelijkheden zijn geen typisch concept van AEM, gebruiken de inhoudsfragmenten wat een *het uitgeven zitting* wordt genoemd.
 
 Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment in de editor opent. De het uitgeven zitting wordt gebeëindigd wanneer de gebruiker de redacteur door of **te selecteren sparen** of **annuleert**.
 
-Technisch, worden alle uitgeeft gedaan op *levende* inhoud, zoals met alle andere AEM het uitgeven. Wanneer de bewerkingssessie wordt gestart, wordt een versie van de huidige, onbewerkte status gemaakt. Als een gebruiker een bewerking annuleert, wordt die versie hersteld. Als de gebruiker **sparen** klikt, wordt niets specifiek gedaan, omdat het uitgeven op *levende* inhoud in werking werd gesteld, daarom worden alle veranderingen reeds voortgeduurd. Ook, leidt het klikken **sparen** sommige achtergrondverwerking zoals het creëren van volledige informatie van het tekstonderzoek, of het behandelen van gemengde-media activa, of allebei.
+Technisch, worden alle uitgeeft gedaan op *levende* inhoud, zoals met alle andere AEM die uitgeven. Wanneer de bewerkingssessie wordt gestart, wordt een versie van de huidige, onbewerkte status gemaakt. Als een gebruiker een bewerking annuleert, wordt die versie hersteld. Als de gebruiker **sparen** klikt, wordt niets specifiek gedaan, omdat het uitgeven op *levende* inhoud in werking werd gesteld, daarom worden alle veranderingen reeds voortgeduurd. Ook, leidt het klikken **sparen** sommige achtergrondverwerking zoals het creëren van volledige informatie van het tekstonderzoek, of het behandelen van gemengde-media activa, of allebei.
 
 Er zijn enkele veiligheidsmaatregelen voor randgevallen, bijvoorbeeld als de gebruiker de editor probeert te verlaten zonder de bewerkingssessie op te slaan of te annuleren. Er is ook een periodieke automatische opslag beschikbaar om gegevensverlies te voorkomen.
 Twee gebruikers kunnen hetzelfde inhoudsfragment gelijktijdig bewerken en daarom elkaars wijzigingen overschrijven. Om dit te verhinderen, moet het inhoudsfragment worden gesloten door de handeling van de Controle van DAM van het beleid ** op het fragment toe te passen.
@@ -328,7 +327,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Voorbeeld: het interval voor automatisch opslaan opgeven {#example-specifying-the-auto-save-interval}
 
-Het [&#x200B; auto-sparen interval &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (die in seconden wordt gemeten) kan worden bepaald gebruikend de configuratiemanager (ConfMgr):
+Het [ auto-sparen interval ](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (die in seconden wordt gemeten) kan worden bepaald gebruikend de configuratiemanager (ConfMgr):
 
 * Knooppunt: `<conf-root>/settings/dam/cfm/jcr:content`
 * Eigenschapnaam: `autoSaveInterval`
@@ -351,4 +350,4 @@ Bijvoorbeeld:
 
 Zie voor meer informatie
 
-* [&#x200B; Componenten van de Kern - de Component van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL) (geadviseerd)
+* [ Componenten van de Kern - de Component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) (geadviseerd)

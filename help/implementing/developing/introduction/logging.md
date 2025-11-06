@@ -3,8 +3,8 @@ title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 0%
@@ -101,7 +101,7 @@ De niveaus van het Logboek van AEM worden geplaatst per milieutype via configura
 
 >[!NOTE]
 >
->Om efficiënte controle van klantenmilieu&#39;s te verzekeren, verander niet het standaardlogboekniveau. Wijzig bovendien niet de standaardregistrerenformaat. De output van het logboek moet aan de standaarddossiers worden geleid. Zie [&#x200B; de sectie hieronder &#x200B;](#configuration-loggers) voor specifieke richtlijnen.
+>Om efficiënte controle van klantenmilieu&#39;s te verzekeren, verander niet het standaardlogboekniveau. Wijzig bovendien niet de standaardregistrerenformaat. De output van het logboek moet aan de standaarddossiers worden geleid. Zie [ de sectie hieronder ](#configuration-loggers) voor specifieke richtlijnen.
 
 **Uitvoer van het Logboek van het Voorbeeld**
 
@@ -158,6 +158,7 @@ Configureer Java-logboekregistratie voor aangepaste Java-pakketten via OSGi-conf
 Het veranderen van andere Logmanager OSGi configuratieeigenschappen kan in beschikbaarheidskwesties in AEM as a Cloud Service resulteren.
 
 Zoals vermeld in een vorige sectie, om efficiënte controle van klantenmilieu&#39;s te verzekeren:
+
 * Het logniveau van de standaardlogboekconfiguratie van AEM (Apache Sling Logging Configuration) mag niet worden gewijzigd ten opzichte van de standaardwaarde van &quot;INFO&quot;.
 * Het is aanvaardbaar om de logboekniveaus aan DEBUG voor individuele pakketten van productcode (gebruikend instanties van de &quot;Apache Sling Logging Logger van de Logger van de Logger van de Logboekconfiguratie&quot;OSGi configuratiemotor) te plaatsen, maar het te gebruiken spaarzaam om prestatiesdegradatie te verhinderen en terug naar INFO te herstellen wanneer het niet meer nodig is.
 * Het is aanvaardbaar om logboekniveaus voor klant-ontwikkelde code aan te passen.
@@ -165,8 +166,10 @@ Zoals vermeld in een vorige sectie, om efficiënte controle van klantenmilieu&#3
 * De output van het logboek moet aan het standaarddossier &quot;logs/error.log&quot;worden geleid.
 
 Daartoe mogen de volgende OSGi-eigenschappen niet worden gewijzigd:
+
 * **Apache Sling Logconfiguratie** (PID: `org.apache.sling.commons.log.LogManager`) — *alle eigenschappen*
 * **Apache Sling Logging Logger Configuratie** (PID van de Fabriek: `org.apache.sling.commons.log.LogManager.factory.config`):
+
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
@@ -309,7 +312,7 @@ Deze set logbestanden biedt inzichten in HTTP-aanvragen bij de AEM as a Cloud Se
 
 Het toegangslogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke HTTP- aanvraag die de Publish server van het Web van de rij/Dispatcher bereikt. De verzoeken die van upstream CDN worden gediend worden niet weerspiegeld in deze logboeken.
 
-Zie informatie over het formaat van het foutenlogboek in de [&#x200B; officiële documentatie van de pijn &#x200B;](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
+Zie informatie over het formaat van het foutenlogboek in de [ officiële documentatie van de pijn ](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
 **Uitvoer van het Logboek van het Voorbeeld**
 
@@ -378,7 +381,7 @@ Dit logboek kan niet worden geconfigureerd in AEM as a Cloud Service.
 
 Het foutenlogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke fout in de Publish server van het Web van de rij/Dispatcher.
 
-Zie informatie over het formaat van het foutenlogboek in de [&#x200B; officiële documentatie van de pijn &#x200B;](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
+Zie informatie over het formaat van het foutenlogboek in de [ officiële documentatie van de pijn ](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
 **Uitvoer van het Logboek van het Voorbeeld**
 
@@ -419,9 +422,9 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 De mod_rewrite logboekniveaus worden bepaald door veranderlijke REWRITE_LOG_LEVEL in het dossier `conf.d/variables/global.var`.
 
-Het kan aan fout worden geplaatst, waarschuwen, info, zuiveren en spoor1 - trace8, met een standaardwaarde van waarschuwen. Om uw te zuiveren RewriteRules, wordt het geadviseerd om het logboekniveau aan trace2 op te heffen. Het wordt geadviseerd om te zuiveren herschrijft regels gebruikend [&#x200B; Dispatcher SDK &#x200B;](../../dispatcher/validation-debug.md). Het maximale logniveau voor AEM as a Cloud Service is `debug` . Op dit moment is het dus niet effectief mogelijk om fouten op te sporen in herschrijfregels in de cloud.
+Het kan aan fout worden geplaatst, waarschuwen, info, zuiveren en spoor1 - trace8, met een standaardwaarde van waarschuwen. Om uw te zuiveren RewriteRules, wordt het geadviseerd om het logboekniveau aan trace2 op te heffen. Het wordt geadviseerd om te zuiveren herschrijft regels gebruikend [ Dispatcher SDK ](../../dispatcher/validation-debug.md). Het maximale logniveau voor AEM as a Cloud Service is `debug` . Op dit moment is het dus niet effectief mogelijk om fouten op te sporen in herschrijfregels in de cloud.
 
-Zie [&#x200B; mod_rewrite moduledocumentatie &#x200B;](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) voor meer informatie.
+Zie [ mod_rewrite moduledocumentatie ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) voor meer informatie.
 
 Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het bestand global.var, zoals hieronder wordt beschreven:
 
@@ -557,7 +560,7 @@ De logboeken CDN zijn verschillend van de andere logboeken in die dat het aan ee
 | *timestamp* | De tijd waarop de aanvraag is gestart, na beëindiging van TLS |
 | *ttfb* | Afkorting voor *Tijd aan Eerste Byte*. Het tijdinterval tussen het verzoek begon tot het punt alvorens het reactiekarakter begon te worden gestroomd. |
 | *cli_ip* | Het client-IP-adres. |
-| *cli_country* | Twee-brief [&#x200B; ISO 3166-1 &#x200B;](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 landcode voor het cliëntland. |
+| *cli_country* | Twee-brief [ ISO 3166-1 ](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 landcode voor het cliëntland. |
 | *rid* | De waarde van de verzoekkopbal die wordt gebruikt om het verzoek uniek te identificeren. |
 | *req_ua* | De gebruikersagent die verantwoordelijk is voor het indienen van een bepaalde HTTP-aanvraag. |
 | *gastheer* | De autoriteit waarvoor het verzoek is bestemd. |
@@ -568,15 +571,15 @@ De logboeken CDN zijn verschillend van de andere logboeken in die dat het aan ee
 | *status* | De HTTP-statuscode als een geheel getal. |
 | *res_age* | De hoeveelheid tijd (in seconden) dat een reactie in de cache is geplaatst (in alle knooppunten). |
 | *pop* | Datacenter van de CDN-cacheserver. |
-| *regels* | De namen van om het even welke passende [&#x200B; regels van de verkeersfilter &#x200B;](/help/security/traffic-filter-rules-including-waf.md) en de vlaggen van WAF, die ook erop wijzen als de gelijke in een blok resulteerde. Leeg als geen regels overeenkomen. |
+| *regels* | De namen van om het even welke passende [ regels van de verkeersfilter ](/help/security/traffic-filter-rules-including-waf.md) en de vlaggen van WAF, die ook erop wijzen als de gelijke in een blok resulteerde. Leeg als geen regels overeenkomen. |
 
-De logboeken CDN kunnen met uw eigen eigenschappen worden uitgebreid gebruikend [&#x200B; verzoek/reactietransformaties &#x200B;](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
+De logboeken CDN kunnen met uw eigen eigenschappen worden uitgebreid gebruikend [ verzoek/reactietransformaties ](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
 
 ## Hoe te om Logs toegang te hebben {#how-to-access-logs}
 
 ### Cloud-omgevingen {#cloud-environments}
 
-AEM as a Cloud Service-logbestanden voor cloudservices kunnen worden geopend door ze te downloaden via de Cloud Manager-interface of door ze via de Adobe I/O-opdrachtregelinterface op de opdrachtregel te staart. Voor meer informatie, zie de [&#x200B; het registreren van Cloud Manager documentatie &#x200B;](/help/implementing/cloud-manager/manage-logs.md).
+AEM as a Cloud Service-logbestanden voor cloudservices kunnen worden geopend door ze te downloaden via de Cloud Manager-interface of door ze via de Adobe I/O-opdrachtregelinterface op de opdrachtregel te staart. Voor meer informatie, zie de [ het registreren van Cloud Manager documentatie ](/help/implementing/cloud-manager/manage-logs.md).
 
 ### Logboeken voor extra publicatieregio&#39;s {#logs-for-additional-publish-regions}
 
@@ -598,7 +601,7 @@ AEM-logbestanden bevinden zich in de map `crx-quickstart/logs` , waar de volgend
 * AEM HTTP-aanvraaglogboek: `request.log`
 * AEM HTTP Access-logboek: `access.log`
 
-Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Zie de [&#x200B; documentatie van Dispatcher &#x200B;](/help/implementing/dispatcher/disp-overview.md) voor informatie over hoe te om Dispatcher te beginnen.
+Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Zie de [ documentatie van Dispatcher ](/help/implementing/dispatcher/disp-overview.md) voor informatie over hoe te om Dispatcher te beginnen.
 
 De logbestanden ophalen:
 
@@ -636,7 +639,7 @@ Hoewel de logboeken van Cloud Manager kunnen worden gedownload, vinden sommige o
 * Elasticsearch (en OpenSearch)
 * Splunk
 
-Verwijs naar het [&#x200B; Logboek door:sturen artikel &#x200B;](/help/implementing/developing/introduction/log-forwarding.md) voor details op hoe te om deze eigenschap te vormen.
+Verwijs naar het [ Logboek door:sturen artikel ](/help/implementing/developing/introduction/log-forwarding.md) voor details op hoe te om deze eigenschap te vormen.
 
 >[!NOTE]
 >

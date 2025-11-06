@@ -3,8 +3,8 @@ title: Snelgids voor WCAG 2.1
 description: A Quick Guide to the Web Content Accessibility Guidelines (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 86%
@@ -23,9 +23,9 @@ De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/T
 
 >[!NOTE]
 >
->Aangezien deze documenten de [&#x200B; bijgewerkte versie van de richtsnoeren werden geschreven, WCAG 2.2 &#x200B;](https://www.w3.org/TR/WCAG/) werd ter beschikking gesteld in oktober 2023.
+>Aangezien deze documenten de [ bijgewerkte versie van de richtsnoeren werden geschreven, WCAG 2.2 ](https://www.w3.org/TR/WCAG/) werd ter beschikking gesteld in oktober 2023.
 >
->Zie [&#x200B; Vergelijking met WCAG 2.1 &#x200B;](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) en [&#x200B; Nieuwe Eigenschappen in WCAG 2.2 &#x200B;](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
+>Zie [ Vergelijking met WCAG 2.1 ](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) en [ Nieuwe Eigenschappen in WCAG 2.2 ](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap. Zij adviseren auteurs, ontwerpers en ontwikkelaars van webcontent om ervoor te zorgen dat de bronnen die zij produceren, zo toegankelijk mogelijk zijn voor zoveel mogelijk mensen, ongeacht hun handicap, bijvoorbeeld een visuele handicap, gehoorverlies, leermoeilijkheden of leeftijdsgebonden beperkingen.
 
@@ -66,8 +66,8 @@ WCAG 2.1 bestaat uit vier basisbeginselen voor toegankelijk ontwerp, waarnaar so
 1. **Robust (robuust)**: is de webcontent op de beoogde manier beschikbaar in een voldoende breed scala aan bladeromgevingen , waaronder verouderde en opkomende bladeromgevingen ?
 
 Iets meer uitgewerkt:
-* Elk **beginsel** bestaat uit een of meer **richtlijnen**.
 
+* Elk **beginsel** bestaat uit een of meer **richtlijnen**.
 * Richtlijnen worden geformuleerd als instructies, die ofwel positief (&quot;Doe dit...&quot;) of negatief (&quot;Doe dit niet...&quot;) zijn.
 * De richtlijnen zijn genummerd van 1.1 tot en met 4.1, waarbij het eerste nummer overeenkomt met het hoofdbeginsel.
 * Elke richtlijn bestaat uit een of meer **succescriteria**.
@@ -85,6 +85,7 @@ Hoewel WCAG 2.1 zelf een stabiel document is en niet zal veranderen, zijn de mee
 ### WCAG 2.1-bronnen {#wcag-resources}
 
 Deze lijst is niet uitvoerig, en is bedoeld als een inleiding op de beschikbare bronnen:
+
 * [Een overzicht van alle WCAG-gerelateerde documenten](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Een samenvatting van de verschillende documenten](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
@@ -107,7 +108,7 @@ Technieken voor WCAG 2.1 zijn beschikbaar op de pagina [Technieken voor WCAG 2.1
 
 **Technieken** vormen het niveau onder succescriteria in de hiërarchie van WCAG 2.1. Ze worden door WAI geclassificeerd als informatief, niet als normatief. Met andere woorden, een specifieke techniek hoeft niet te worden gevolgd om een bron in overeenstemming te brengen met WCAG 2.1.
 
-Omdat technieken veel specifieker zijn dan succescriteria, verwijzen zij gewoonlijk naar een bepaald technologie of inhoudstype (bijvoorbeeld, HTML, of video), of situatie (bijvoorbeeld, e-commerce of e-learningtoepassing). U kunt technieken zien als bewezen voorbeelden van hoe specifieke richtlijnen en succescriteria kunnen worden nageleefd, zodat ze nuttig zijn voor auteurs en ontwikkelaars die in bepaalde situaties werken.
+Omdat technieken veel specifieker zijn dan succescriteria, verwijzen ze meestal naar een bepaald technologie- of inhoudstype (bijvoorbeeld HTML of video) of naar een situatie (bijvoorbeeld e-commerce of e-learningtoepassing). U kunt technieken zien als bewezen voorbeelden van hoe specifieke richtlijnen en succescriteria kunnen worden nageleefd, zodat ze nuttig zijn voor auteurs en ontwikkelaars die in bepaalde situaties werken.
 
 U hebt op de volgende manieren toegang tot technieken:
 
@@ -148,7 +149,7 @@ Een voorbeeld is te vinden op: [Succescriterium 1.1.1 (&quot;Niet-tekstuele cont
 
 ### Hoe te om WCAG 2.1 te ontmoeten {#how-to-meet-wcag}
 
-De &quot;hoe te&quot;sectie is beschikbaar op [&#x200B; hoe te WCAG 2.1 &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/) pagina ontmoeten. Deze sectie biedt een alternatieve presentatie van WCAG, waardoor lezers de content van de richtlijnen kunnen verfijnen tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
+De &quot;hoe te&quot;sectie is beschikbaar op [ hoe te WCAG 2.1 ](https://www.w3.org/WAI/WCAG21/quickref/) pagina ontmoeten. Deze sectie biedt een alternatieve presentatie van WCAG, waardoor lezers de content van de richtlijnen kunnen verfijnen tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
 
 Zonder filteren biedt deze bron alle succescriteria gegroepeerd op richtlijn. Voor elk succescriterium wordt het volgende verstrekt:
 

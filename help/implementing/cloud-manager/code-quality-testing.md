@@ -4,8 +4,8 @@ description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 0%
@@ -25,17 +25,17 @@ Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de k
 
 Bij het testen van de codekwaliteit wordt uw toepassingscode geëvalueerd op basis van een set kwaliteitsregels. Het is het primaire doel van een code-kwaliteit slechts pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle productie en niet-productiepijpleidingen.
 
-Zie [&#x200B; Vormend Uw CI-CD Pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) om meer over verschillende soorten pijpleidingen te leren.
+Zie [ Vormend Uw CI-CD Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) om meer over verschillende soorten pijpleidingen te leren.
 
 ## Codekwaliteitsregels {#understanding-code-quality-rules}
 
-Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Deze stap wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met OakPAL. Er zijn meer dan 100 regels, die generieke regels van Java en AEM-specifieke regels combineren. Sommige AEM-specifieke regels zijn gebaseerd op beste praktijken van AEM Techniek en zijn gekend als [&#x200B; de kwaliteitsregels van de douanecode &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Deze stap wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met OakPAL. Er zijn meer dan 100 regels, die generieke Java-regels en AEM-specifieke regels combineren. Sommige AEM-specifieke regels zijn gebaseerd op beste praktijken van de Techniek van AEM en zijn gekend als [ de kwaliteitsregels van de douanecode ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
-U kunt de huidige volledige lijst van regels [&#x200B; downloaden gebruikend deze verbinding &#x200B;](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+U kunt de huidige volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 >[!IMPORTANT]
 >
->Beginnend Donderdag, 13 Februari, 2025 (Cloud Manager 2025.2.0), gebruikt de Kwaliteit van de Code van Cloud Manager een bijgewerkte versie SonarQube 9.9 en een bijgewerkte lijst van regels die u hier [&#x200B; kunt downloaden &#x200B;](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
+>Beginnend Donderdag, 13 Februari, 2025 (Cloud Manager 2025.2.0), gebruikt de Kwaliteit van de Code van Cloud Manager een bijgewerkte versie SonarQube 9.9 en een bijgewerkte lijst van regels die u hier [ kunt downloaden ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Waarderingen met drie lagen {#three-tiered-gate}
 
@@ -66,15 +66,15 @@ De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor
 | Overgeslagen eenheidstests | Aantal overgeslagen eenheidstests | Info | > 1 |
 | Problemen openen | Algemene uitgiftypen - Vulnerabilities, Bugs en Codefragmenten | Info | > 0 |
 | Gedupliceerde lijnen | Gedefinieerd als het aantal regels dat is betrokken bij gedupliceerde blokken. Een codeblok wordt als gedupliceerd beschouwd onder de volgende omstandigheden.<br> niet-Java Projecten:<ul><li>Er moeten ten minste 100 opeenvolgende en gedupliceerde tokens zijn.</li><li>Deze tokens moeten ten minste worden verspreid over: </li><li>30 regels code voor COBOL </li><li>20 coderegels voor ABAP </li><li>10 coderegels voor andere talen</li></ul>Java-projecten:<ul></li><li> Er moeten minstens tien opeenvolgende en gedupliceerde instructies zijn, ongeacht het aantal tokens en regels.</li></ul>Verschillen in inspringing en in letterlijke tekenreeksen worden genegeerd wanneer duplicaten worden gedetecteerd. | Info | > 1% |
-| Compatibiliteit met Cloud Service | Aantal geïdentificeerde compatibiliteitsproblemen met cloudservices | Info | > 0 |
+| Cloud Service-compatibiliteit | Aantal geïdentificeerde compatibiliteitsproblemen met cloudservices | Info | > 0 |
 
 >[!NOTE]
 >
->Zie {de Metrische Definities van 0} SonarQube [&#128279;](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/) voor meer gedetailleerde definities.
+>Zie {de Metrische Definities van 0} SonarQube [ voor meer gedetailleerde definities.](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/)
 
 >[!NOTE]
 >
->Meer over de de kwaliteitsregels van de douanecode leren die door [!UICONTROL Cloud Manager] worden in werking gesteld, zie [&#x200B; de Regels van de Kwaliteit van de Code van de Douane &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>Meer over de de kwaliteitsregels van de douanecode leren die door [!UICONTROL Cloud Manager] worden in werking gesteld, zie [ de Regels van de Kwaliteit van de Code van de Douane ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Werken met valse positieven {#dealing-with-false-positives}
 
@@ -82,7 +82,7 @@ Het kwaliteitscontroleproces is niet perfect en identificeert soms problemen die
 
 In deze gevallen kan de broncode worden geannoteerd met de standaard Java `@SuppressWarnings` -annotatie die de regel-id opgeeft als het annotatiekenmerk. Bijvoorbeeld, één gemeenschappelijk vals positief is dat de regel SonarQube om hardcoded wachtwoorden te ontdekken agressief kan zijn over hoe een hard - gecodeerd wachtwoord wordt geïdentificeerd.
 
-De volgende code is vrij gemeenschappelijk in een AEM project, dat code heeft om met één of andere externe dienst te verbinden.
+De volgende code is vrij algemeen in een project van AEM, dat code heeft om met één of andere externe dienst te verbinden.
 
 ```java
 @Property(label = "Service Password")
@@ -111,7 +111,7 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 >Hoewel het aan te raden is de annotatie `@SuppressWarnings` zo specifiek mogelijk te maken (bijvoorbeeld alleen de instructie of het blok dat de uitgave veroorzaakt aanwijzen), is het ook mogelijk om een annotatie op klasseniveau te maken.
 
 >[!NOTE]
->Terwijl er geen expliciete veiligheidsteststap is, zijn er veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Zie [&#x200B; Overzicht van de Veiligheid voor AEM as a Cloud Service &#x200B;](/help/security/cloud-service-security-overview.md) om meer over veiligheid in Cloud Service te leren.
+>Terwijl er geen expliciete veiligheidsteststap is, zijn er veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Zie [ Overzicht van de Veiligheid voor AEM as a Cloud Service ](/help/security/cloud-service-security-overview.md) om meer over veiligheid in Cloud Service te leren.
 
 ## Optimalisatie van inhoudspakketscannen {#content-package-scanning-optimization}
 
@@ -129,5 +129,5 @@ Een speciaal geval kan voorkomen wanneer het &quot;alle&quot;inhoudspakket een c
 
 >[!NOTE]
 >
->* Deze optimalisatie heeft geen invloed op de pakketten die worden geïmplementeerd op AEM.
+>* Deze optimalisatie heeft geen invloed op de pakketten die naar AEM worden geïmplementeerd.
 >* De overeenkomst tussen ingesloten inhoudspakketten en overgeslagen inhoudspakketten is afhankelijk van bestandsnamen. Deze optimalisatie kan niet optreden als meerdere overgeslagen pakketten dezelfde bestandsnaam hebben of als de bestandsnaam tijdens het insluiten verandert.

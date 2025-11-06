@@ -2,15 +2,15 @@
 title: De extensie Externe referenties van AJO voor inhoudsfragmenten gebruiken
 description: Meer informatie over de extensie Externe referenties van het inhoudsfragment AJO
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
-source-git-commit: f755a5c621b68b3110642e6cfe150798555b6707
+exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
 
 ---
-
 
 # De extensie Externe referenties van het inhoudsfragment AJO {#content-fragment-external-references-extension}
 
@@ -24,23 +24,23 @@ Voor een integratie met Adobe Journey Optimizer (AJO) zijn de details bijvoorbee
 
 >[!NOTE]
 >
->Voor details van hoe te om de uitbreiding toe te laten, zie [&#x200B; Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+>Voor details van hoe te om de uitbreiding toe te laten, zie [ Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 Als u bijvoorbeeld de extensie wilt gebruiken met AJO:
 
 >[!NOTE]
 >
->Zie ook [&#x200B; de Integratie van AJO &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/integrations/aem-fragments).
+>Zie ook [ de Integratie van AJO ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
 
-1. Open de [&#x200B; Console van de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
+1. Open de [ Console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
 1. Navigeer naar het inhoudsfragment - het fragment dat is gemaakt en dat wordt gebruikt via verschillende AJO-kanalen.
 
-1. Open uw Fragment van de Inhoud in de [&#x200B; redacteur &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#editing-the-content-of-your-fragment).
+1. Open uw Fragment van de Inhoud in de [ redacteur ](/help/sites-cloud/administering/content-fragments/managing.md#editing-the-content-of-your-fragment).
 
 1. De extensie Externe AJO-verwijzingen is beschikbaar als een tabblad in het rechterdeelvenster. Selecteer het tabblad waarop u de extensie wilt openen:
 
-   ![&#x200B; de Externe uitbreiding van Verwijzingen van AJO &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
+   ![ de Externe uitbreiding van Verwijzingen van AJO ](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
 
    Nadat een referentietype is geselecteerd, worden de bijbehorende externe verwijzingen als een tabel met de kolommen weergegeven:
 

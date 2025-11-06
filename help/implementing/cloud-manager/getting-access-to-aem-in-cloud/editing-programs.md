@@ -4,8 +4,8 @@ description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de 
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # Programma&#39;s bewerken {#editing-programs}
 
-Om programma&#39;s te beheren en uit te geven, begin bij [**Mijn Programma&#39;s** console &#x200B;](/help/implementing/cloud-manager/navigation.md). De **Mijn pagina van Programma&#39;s** verstrekt een overzicht van alle programma&#39;s waartot u toegang hebt. Wanneer het selecteren van een individueel programma, verstrekt de **pagina van het Overzicht van het 0&rbrace; Programma details van het programma in een blik.**
+Om programma&#39;s te beheren en uit te geven, begin bij [**Mijn Programma&#39;s** console ](/help/implementing/cloud-manager/navigation.md). De **Mijn pagina van Programma&#39;s** verstrekt een overzicht van alle programma&#39;s waartot u toegang hebt. Wanneer het selecteren van een individueel programma, verstrekt de **pagina van het Overzicht van het 0} Programma details van het programma in een blik.**
 
-Van het **Overzicht van het Programma**, kunnen de gebruikers met de vereiste toestemmingen [&#x200B; productieprogramma&#39;s uitgeven die in uw organisatie &#x200B;](creating-production-programs.md) worden gecreeerd en [&#x200B; zandbakprogramma&#39;s die in uw organisatie &#x200B;](creating-sandbox-programs.md) worden gecreeerd. Door een programma te bewerken kunt u:
+Van het **Overzicht van het Programma**, kunnen de gebruikers met de vereiste toestemmingen [ productieprogramma&#39;s uitgeven die in uw organisatie ](creating-production-programs.md) worden gecreeerd en [ zandbakprogramma&#39;s die in uw organisatie ](creating-sandbox-programs.md) worden gecreeerd. Door een programma te bewerken kunt u:
 
 * Voeg Sites-oplossing toe aan een bestaand programma met Assets en omgekeerd.
 * Sites of Assets verwijderen uit een bestaand programma met zowel Sites als Assets.
@@ -34,21 +34,21 @@ Telkens wanneer een programma wordt uitgegeven, met inbegrip van het toevoegen v
 
 **om een programma uit te geven:**
 
-1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Voor **[Mijn pagina van Programma&#39;s](#my-programs)**, klik het programma dat u wilt uitgeven om zijn details te tonen.
 
 1. Klik de naam van uw programma in upper-left van de pagina en selecteer **programma** uitgeven.
 
-   ![&#x200B; geef programmaoptie &#x200B;](assets/edit-program-overview.png) uit
+   ![ geef programmaoptie ](assets/edit-program-overview.png) uit
 
 1. De **geeft de pagina van het Programma** uit opent aan **Algemene** tabel.
 
-   ![&#x200B; Algemene tabel &#x200B;](assets/edit-program-prod1.png)
+   ![ Algemene tabel ](assets/edit-program-prod1.png)
 
 1. De opties die beschikbaar zijn voor het bewerken van het programma zijn dezelfde opties voor het maken van programma&#39;s.
-   * Zie [&#x200B; tot de Programma&#39;s van de Productie &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) leiden en [&#x200B; Sandbox Programma&#39;s &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) voor details op de individuele opties.
-   * [&#x200B; de Extra opties &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) kunnen voor uw productieprogramma afhankelijk van de aanspraken van uw organisatie beschikbaar zijn.
+   * Zie [ tot de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) leiden en [ Sandbox Programma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) voor details op de individuele opties.
+   * [ de Extra opties ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) kunnen voor uw productieprogramma afhankelijk van de aanspraken van uw organisatie beschikbaar zijn.
 
 1. Klik **Update** om uw veranderingen in het programma te bewaren.
 
@@ -62,17 +62,17 @@ Als u een sandboxprogramma verwijdert, worden alle bijbehorende omgevingen en pi
 
 **om een zandbakprogramma te schrappen:**
 
-1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Voor **[Mijn pagina van Programma&#39;s](#my-programs)**, klik het programma dat u wilt uitgeven om zijn details te tonen.
 
 1. Klik de naam van uw programma in upper-left van de pagina en selecteer **Programma van de Schrapping**.
 
-   ![&#x200B; de programmaoptie van de Schrapping &#x200B;](assets/delete-sandbox1.png)
+   ![ de programmaoptie van de Schrapping ](assets/delete-sandbox1.png)
 
-Alternatief, kunt u ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) op de kaart van uw programma van de overzichtspagina van Cloud Manager klikken en **Programma van de Schrapping** selecteren.
+Alternatief, kunt u ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) op de kaart van uw programma van de overzichtspagina van Cloud Manager klikken en **Programma van de Schrapping** selecteren.
 
-![&#x200B; Schrap zandbak van programmakaart &#x200B;](assets/delete-sandbox2.png)
+![ Schrap zandbak van programmakaart ](assets/delete-sandbox2.png)
 
 >[!NOTE]
 >

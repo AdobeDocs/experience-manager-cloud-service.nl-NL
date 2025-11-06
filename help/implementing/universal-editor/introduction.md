@@ -3,8 +3,8 @@ title: Introductie van Universal Editor
 description: De Universele Redacteur is een modern visueel auteursgereedschap dat wordt ontworpen om uw marketing organisatie te machtigen om uitvoerbare Webervaringen te produceren.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -24,14 +24,14 @@ De Universal Editor is een veelzijdige visuele editor die deel uitmaakt van Adob
 * **Visuele het Uitgeven**: Terwijl het aanbrengen van veranderingen, zien de auteurs onmiddellijk hoe zij de daadwerkelijke bezoekerservaring beïnvloeden, minimaliserend wrijving.
 * **Ontdekking Opties**: Duidelijk geëtiketteerde opties en een intuïtieve UI machtigen auteurs om meta-gegevens te vormen en lay-outs samen te stellen met gemak.
 * **niet-Technisch**: Geen gespecialiseerde deskundigheid wordt vereist om uit te geven, terwijl de collectieve merkrichtlijnen automatisch worden afgedwongen, die het schrapen van inhoudstaken over uw organisatie vergemakkelijken.
-* **Integratie en Uitbreidbaarheid**: Volledig geïntegreerd met AEM, staan de flexibele [&#x200B; uitbreidingspunten van de Universele Redacteur &#x200B;](#extensibility) alle essentiële hulpmiddelen toe om binnen één enkele, samenhangende interface worden verenigd. Van AI-functies tot aangepaste extensies die zijn afgestemd op uw unieke bedrijfsbehoeften, stelt het teams in staat werkstromen te stroomlijnen en de productiviteit moeiteloos te verbeteren.
+* **Integratie en Uitbreidbaarheid**: Volledig geïntegreerd met AEM, staan de flexibele [ uitbreidingspunten van de Universele Redacteur ](#extensibility) alle essentiële hulpmiddelen toe om binnen één enkele, samenhangende interface worden verenigd. Van AI-functies tot aangepaste extensies die zijn afgestemd op uw unieke bedrijfsbehoeften, stelt het teams in staat werkstromen te stroomlijnen en de productiviteit moeiteloos te verbeteren.
 
 Samenvattend:
 
 * **de Auteurs profiteren** van de flexibiliteit van de Universele Redacteur aangezien het het zelfde verenigbare visuele uitgeven voor alle vormen van de inhoud van AEM steunt.
 * **de Ontwikkelaars profiteren** van de veelzijdigheid van de Universele Redacteur aangezien het ware ontkoppeling van de implementatie steunt.
 
-Omdat ware redacteur-a-a-dienst en over het algemeen flexibeler is, is de Universele Redacteur van plan om uiteindelijk de [&#x200B; Redacteur van de Pagina te vervangen.](/help/sites-cloud/authoring/page-editor/introduction.md)
+Omdat ware redacteur-a-a-dienst en over het algemeen flexibeler is, is de Universele Redacteur van plan om uiteindelijk de [ Redacteur van de Pagina te vervangen.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ## Ondersteunde architecturen {#supported-architectures}
 
@@ -42,16 +42,16 @@ De Universal Editor ondersteunt de volgende twee primaire AEM-instellingen:
 
 >[!TIP]
 >
->Gelieve te zien het document [&#x200B; Universele Gevallen van het Gebruik van de Redacteur en het Leren Wegen &#x200B;](/help/implementing/universal-editor/use-cases.md) voor meer details op de gesteunde architectuur.
+>Gelieve te zien het document [ Universele Gevallen van het Gebruik van de Redacteur en het Leren Wegen ](/help/implementing/universal-editor/use-cases.md) voor meer details op de gesteunde architectuur.
 
 ## Ondersteunde AEM-versies {#aem-versions}
 
 De Universal Editor wordt ondersteund door:
 
 * AEM as a Cloud Service (release `2023.8.13099` of hoger)
-* [&#x200B; AEM 6.5 LTS &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+* [ AEM 6.5 LTS ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
    * Zowel on-premisse als AMS hosting worden gesteund.
-* [&#x200B; AEM 6.5 &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* [ AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * Zowel on-premisse als AMS hosting worden gesteund.
 
 Deze documentatie is bedoeld voor gebruik van de Universal Editor met AEM as a Cloud Service.
@@ -67,9 +67,9 @@ De Universele Redacteur biedt vele eigenschappen aan om een brede waaier van geb
 * **Omnichannel**: Hergebruik zowel gestructureerde als ongestructureerde inhoud over veelvoudige kanalen.
 * **[Localization](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: De werkschema&#39;s van de de inhoudvertaling van de stroomlijn en behandelt efficiënt gelokaliseerde inhoudsovererving met de Manager van de multi-Plaats.
 * **Consistentie**: Verzeker naleving van merkrichtlijnen en handhaaf uniformiteit over alle inhoud.
-* **Veiligheid**: [&#x200B; dwingt toegangscontrole &#x200B;](/help/implementing/universal-editor/authentication.md) af, beschermt inhoudsintegriteit, en spoorveranderingen met [&#x200B; robuuste versioning.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* **Veiligheid**: [ dwingt toegangscontrole ](/help/implementing/universal-editor/authentication.md) af, beschermt inhoudsintegriteit, en spoorveranderingen met [ robuuste versioning.](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * **[het Publiceren](/help/sites-cloud/authoring/universal-editor/publishing.md)**: Integreer overzicht, goedkeuring, en publicatiewerkschema&#39;s direct binnen de redacteur.
-* **verenigd**: integreert volledig met de hulpmiddelen van AEM zoals de [&#x200B; Console van Plaatsen, &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md) [&#x200B; de Redacteur van het Fragment van de Inhoud, &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) en vele meer, die een samenhangende auteurservaring verstrekken.
+* **verenigd**: integreert volledig met de hulpmiddelen van AEM zoals de [ Console van Plaatsen, ](/help/sites-cloud/authoring/sites-console/introduction.md) [ de Redacteur van het Fragment van de Inhoud, ](/help/sites-cloud/administering/content-fragments/overview.md) en vele meer, die een samenhangende auteurservaring verstrekken.
 
 ## Uitbreidbaarheid {#extensibility}
 
@@ -81,7 +81,7 @@ De Universele Redacteur is niet alleen zeer geschikt uit-van-de-doos, maar biedt
 
 >[!TIP]
 >
->Voor meer informatie over de rekbaarheid van de Universele Redacteur, te zien gelieve het document [&#x200B; Uitbreidend de Universele Redacteur.](/help/implementing/universal-editor/extending.md)
+>Voor meer informatie over de rekbaarheid van de Universele Redacteur, te zien gelieve het document [ Uitbreidend de Universele Redacteur.](/help/implementing/universal-editor/extending.md)
 
 ## De Universal Editor en de Content Fragment Editor {#universal-editor-content-fragment-editor}
 
@@ -104,14 +104,14 @@ Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van ee
 Houd rekening met de volgende beperkingen wanneer u de Universal Editor verkent en de implementatie ervan in uw eigen projecten doorvoert.
 
 * Niet meer dan 25 AEM-bronnen (Content Fragments, pages, Experience Fragments, Assets, enz.) mogen als instrumentatie op één pagina worden gebruikt.
-* AEM as a Cloud Service, [&#x200B; AEM 6.5 LTS &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction), en [&#x200B; AEM 6.5 &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) zijn de enige gesteunde AEM achtergronden.
+* AEM as a Cloud Service, [ AEM 6.5 LTS ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction), en [ AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) zijn de enige gesteunde AEM achtergronden.
 * Release `2023.8.13099` of hoger is vereist voor AEM as a Cloud Service.
 * Inhoudsauteurs moeten een eigen Experience Cloud-account hebben.
-* Als deel van AEM, steunt de Universele Redacteur [&#x200B; zelfde Desktopbrowsers zoals AEM.](/help/overview/supported-platforms.md)
+* Als deel van AEM, steunt de Universele Redacteur [ zelfde Desktopbrowsers zoals AEM.](/help/overview/supported-platforms.md)
    * Mobiele versies van deze browsers worden niet ondersteund.
 
 {{ip-allow-lists-ue}}
 
 ## Volgende stappen {#next-steps}
 
-Gelieve te zien het document [&#x200B; Universele Gevallen van het Gebruik van de Redacteur en het Leren Wegen &#x200B;](/help/implementing/universal-editor/use-cases.md) om meer over gemeenschappelijke gebruiksgevallen voor de Universele Redacteur te leren en de juiste documentatiemiddelen te ontdekken om u in uw project te steunen.
+Gelieve te zien het document [ Universele Gevallen van het Gebruik van de Redacteur en het Leren Wegen ](/help/implementing/universal-editor/use-cases.md) om meer over gemeenschappelijke gebruiksgevallen voor de Universele Redacteur te leren en de juiste documentatiemiddelen te ontdekken om u in uw project te steunen.

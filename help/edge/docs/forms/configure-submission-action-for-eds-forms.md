@@ -2,9 +2,9 @@
 title: Verzendacties voor AEM Forms configureren met Edge Delivery Services
 description: Leer hoe u verzendacties in AEM Forms configureert met Edge Delivery Services. Kies tussen Forms-verzendservice en AEM-publicatieactie voor verzending om formuliergegevens veilig en efficiënt te verwerken.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -65,7 +65,7 @@ De Forms-verzendservice is een door Adobe gehost eindpunt dat ideaal is voor een
 - E-mailmeldingen worden direct na het verzenden van het formulier verzonden
 - De bevestiging van gegevens komt op de dienstniveau voor
 
-![&#x200B; de Stroom van de Dienst van de Verzending van Forms &#x200B;](/help/forms/assets/eds-fss.png)
+![ de Stroom van de Dienst van de Verzending van Forms ](/help/forms/assets/eds-fss.png)
 
 +++
 
@@ -94,7 +94,7 @@ Verzend formuliergegevens rechtstreeks naar uw AEM as a Cloud Service-publicatie
 - [Verzenden naar Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 - [Verzenden naar Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-![&#x200B; AEM publiceert de Stroom van de Verzending &#x200B;](/help/forms/assets/eds-aem-publish.png)
+![ AEM publiceert de Stroom van de Verzending ](/help/forms/assets/eds-aem-publish.png)
 
 ### Configuratievereisten
 
@@ -150,7 +150,7 @@ Configureer het filter Referrer om uw specifieke Edge Delivery-sitedomeinen toe 
 
 3. De configuratie implementeren via Cloud Manager
 
-Voor gedetailleerde configuratie van de Filter OSGi Referrer, verwijs naar de [&#x200B; Gids van de Filter van de Verwijzer 0&rbrace;.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+Voor gedetailleerde configuratie van de Filter OSGi Referrer, verwijs naar de [ Gids van de Filter van de Verwijzer 0}.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 #### &#x200B;3. Problemen met CORS (Cross Origin Resource Sharing)
 
@@ -180,10 +180,10 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Vervang `main--abc--adobe.aem.live` en `main--abc1--adobe.aem.live` door de werkelijke sitedomeinen. Voor elke site die vanuit dezelfde opslagplaats wordt gehost, is een apart CORS-configuratieitem vereist.
 
-Voor gedetailleerde configuratie CORS, verwijs naar de [&#x200B; Gids van de Configuratie van CORS &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Voor gedetailleerde configuratie CORS, verwijs naar de [ Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 
-Om CORS voor uw lokale ontwikkelomgeving toe te laten, verwijs naar [&#x200B; het Delen van het Middel van de Cross-Origin (CORS) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) artikel begrijpen.
+Om CORS voor uw lokale ontwikkelomgeving toe te laten, verwijs naar [ het Delen van het Middel van de Cross-Origin (CORS) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) artikel begrijpen.
 
 <!--
 #### 4. CDN Redirect Rules

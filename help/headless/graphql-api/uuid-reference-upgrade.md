@@ -4,7 +4,7 @@ description: Leer hoe u de inhoudsfragmenten kunt upgraden voor geoptimaliseerde
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Als u bestaande inhoudsfragmenten en -modellen wilt bijwerken, kunt u de hier be
 
 >[!CAUTION]
 >
->Alvorens de verbeteringsprocedure in werking te stellen zou u [&#x200B; een droge looppas &#x200B;](#execute-a-dry-run) altijd moeten uitvoeren om het even welke potentiële kwesties met uw inhoud te benadrukken.
+>Alvorens de verbeteringsprocedure in werking te stellen zou u [ een droge looppas ](#execute-a-dry-run) altijd moeten uitvoeren om het even welke potentiële kwesties met uw inhoud te benadrukken.
 
 ## Wat is bijgewerkt {#what-is-upgraded}
 
@@ -50,7 +50,7 @@ De volgende referenties worden niet bijgewerkt:
 
    * Ongeldige verwijzingen worden niet bijgewerkt, alsof het pad van het inhoudsfragment of het middelenpad ongeldig is. Er is geen overeenkomstige UUID die moet worden toegewezen. De oorspronkelijke verwijzing blijft ongewijzigd.
 
-   * Gebruik a [&#x200B; droge looppas &#x200B;](#execute-a-dry-run) om het even welke ongeldige verwijzingen te ontmoedigen.
+   * Gebruik a [ droge looppas ](#execute-a-dry-run) om het even welke ongeldige verwijzingen te ontmoedigen.
 
   >[!NOTE]
   >
@@ -91,7 +91,7 @@ Voer de upgrade van de inhoud in de modus `dryRun` uit naar:
 * eventuele ongeldige verwijzingen identificeren; door deze weer te geven in de logbestanden
 U kunt deze verwijzingen vervolgens corrigeren voordat u de daadwerkelijke upgrade van de inhoud uitvoert.
 * alle paginaverwijzingen identificeren; door deze weer te geven in de logbestanden
-Wanneer de paginaverwijzingen worden ontdekt zou u [&#x200B; niet de inhoudsverbetering &#x200B;](#when-you-should-not-upgrade) in werking moeten stellen.
+Wanneer de paginaverwijzingen worden ontdekt zou u [ niet de inhoudsverbetering ](#when-you-should-not-upgrade) in werking moeten stellen.
 
 
 ### Inhoud bevriezen {#enforce-a-content-freeze}
@@ -128,7 +128,7 @@ De inhoudsupgrade kan worden beheerd met behulp van het eindpunt: `/libs/dam/cfm
 
 ### Aanvraag voor upgrade van inhoud {#example-content-upgrade-request}
 
-+++verzoek
++++Verzoek
 
 ```http
 POST http://localhost:4502/libs/dam/cfm/maintenance.json
@@ -149,7 +149,7 @@ Accept: application/json
 
 +++
 
-+++Response
++++Antwoord
 
 ```http
 HTTP/1.1 200 OK
@@ -191,7 +191,7 @@ Content-Length: 386
 
 ### Voorbeeld van statusaanvraag voor upgrade van inhoud {#example-content-upgrade-status-request}
 
-+++verzoek
++++Verzoek
 
 ```http
 GET http://localhost:4502/libs/dam/cfm/maintenance.json?action=status&jobId=91af43a6-63ff-45e5-ac7b-06ccf565bdfa
@@ -201,7 +201,7 @@ Accept: application/json
 
 +++
 
-+++Response
++++Antwoord
 
 ```http
 HTTP/1.1 200 OK
@@ -260,7 +260,7 @@ Content-Length: 1116
 
 +++
 
-+++Voorbeeld van logbestanden
++++Voorbeeldlogbestanden
 
 Naast de status van een actieve inhoudsupgrade die wordt verkregen van het HTTP-eindpunt, bieden AEM-logboeken gedetailleerde informatie over de voortgang op het inhoudsniveau. Bijvoorbeeld:
 
@@ -308,7 +308,7 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 
 ### Voorbeeld Een aanvraag voor een upgrade van inhoud afbreken {#example-abort-content-upgrade-request}
 
-+++verzoek
++++Verzoek
 
 ```http
 POST http://localhost:4502/libs/dam/cfm/maintenance.json
@@ -325,7 +325,7 @@ Accept: application/json
 
 +++
 
-+++Response
++++Antwoord
 
 ```http
 HTTP/1.1 200 OK

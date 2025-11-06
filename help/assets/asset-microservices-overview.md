@@ -3,9 +3,9 @@ title: Elementen verwerken met behulp van asset-microservices
 description: Verwerk uw digitale middelen met gebruik van cloudnative en schaalbare services voor het verwerken van bedrijfsmiddelen.
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
-role: Architect, Admin
+role: Developer, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Adobe Experience Manager als [!DNL Cloud Service] biedt een methode in de cloud 
 * Verbeterde veerkracht van de verwerking van bedrijfsmiddelen. Mogelijke problemen bij het verwerken van atypische bestanden, zoals beschadigde bestanden of extreem grote bestanden, hebben geen gevolgen meer voor de prestaties van de implementatie.
 * Vereenvoudigde configuratie van middelenverwerking voor beheerders.
 * Assets-verwerkingsinstellingen worden beheerd en onderhouden door Adobe om de best bekende configuratie te bieden voor de verwerking van uitvoeringen, metagegevens en tekstextractie voor verschillende bestandstypen
-* De inheemse diensten van de het dossierverwerking van Adobe worden gebruikt waar toepasselijk, die high-fidelity output en [&#x200B; efficiënte behandeling van merkgebonden formaten van Adobe verstrekken &#x200B;](file-format-support.md).
+* De inheemse diensten van de het dossierverwerking van Adobe worden gebruikt waar toepasselijk, die high-fidelity output en [ efficiënte behandeling van merkgebonden formaten van Adobe verstrekken ](file-format-support.md).
 * Mogelijkheid om een workflow voor naverwerking te configureren om gebruikersspecifieke acties en integratie toe te voegen.
 
 Met Asset microservices voorkomt u de behoefte aan renderingtools en -methoden van derden (zoals [!DNL ImageMagick] en MPEG-transcodering) en vereenvoudigt u configuraties, terwijl u standaard basisfunctionaliteit voor de algemene bestandsindelingen biedt.
@@ -36,7 +36,7 @@ Een architectuurdiagram op hoog niveau geeft de belangrijkste elementen weer van
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![&#x200B; Inname van activa en verwerking met activa microservices &#x200B;](assets/asset-microservices-overview.png " Inname van Activa en verwerking met activa microservices ")
+![ Inname van activa en verwerking met activa microservices ](assets/asset-microservices-overview.png " Inname van Activa en verwerking met activa microservices ")
 
 De belangrijkste stappen van de opname en verwerking met behulp van asset microservices zijn:
 
@@ -60,10 +60,10 @@ Experience Manager-clients, die onderdeel zijn van productaanbiedingen, bieden s
 
 U kunt aangepaste uploadgereedschappen gebruiken die rechtstreeks werken met [!DNL Experience Manager] HTTP-API&#39;s. U kunt deze APIs direct gebruiken, of de volgende open-bronprojecten gebruiken en uitbreiden die het uploadprotocol uitvoeren:
 
-* [&#x200B; open-bron uploadt bibliotheek &#x200B;](https://github.com/adobe/aem-upload)
-* [&#x200B; open-bron bevel-lijn hulpmiddel &#x200B;](https://github.com/adobe/aio-cli-plugin-aem)
+* [ open-bron uploadt bibliotheek ](https://github.com/adobe/aem-upload)
+* [ open-bron bevel-lijn hulpmiddel ](https://github.com/adobe/aio-cli-plugin-aem)
 
-Voor meer informatie, zie [&#x200B; activa &#x200B;](add-assets.md) uploaden.
+Voor meer informatie, zie [ activa ](add-assets.md) uploaden.
 
 ## Aangepaste naverwerking van elementen toevoegen {#add-custom-asset-post-processing}
 
@@ -96,6 +96,6 @@ Adobe Experience Manager kan zo worden geconfigureerd dat de naverwerkingsworkfl
 >
 >* [Aan de slag met microservices voor assets](asset-microservices-configure-and-use.md)
 >* [Ondersteunde bestandsindelingen](file-format-support.md)
->* [&#x200B; de Verbinding van Activa van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL)
->* [&#x200B; Apache Oak documentatie op directe binaire toegang &#x200B;](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
+>* [ de Verbinding van Activa van Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [ Apache Oak documentatie op directe binaire toegang ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

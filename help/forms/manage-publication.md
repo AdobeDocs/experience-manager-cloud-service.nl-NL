@@ -7,7 +7,7 @@ feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manag
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: d8294c358bcc31b7c5e41e3103ec73adc05da6d9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -20,7 +20,8 @@ ht-degree: 0%
 Als Adobe Experience Manager (AEM) Forms-beheerder kunt u formulieren publiceren van uw auteur naar Experience Manager Forms. U kunt de publicatie van een formulier of map ook voor een latere datum of tijd plannen. Na publicatie kunnen gebruikers de formulieren openen en invullen.
 
 In Experience Manager Forms kunt u een formulier op een van de volgende manieren publiceren:
-* [&#x200B; publiceer optie &#x200B;](#publish-forms-using-the-publish-option)
+
+* [ publiceer optie ](#publish-forms-using-the-publish-option)
 * [Publicatie beheren, optie](#publish-forms-using-the-manage-publication-option)
 
 ## Onthouden
@@ -36,12 +37,12 @@ De **publiceer** optie laat u onmiddellijk een vorm publiceren. Om een Vorm van 
 1. Klik **publiceren** optie van de toolbar, neem een blik bij alle verwijzingsactiva die met vorm zouden worden gepubliceerd.
 1. Klik op **[!UICONTROL Publish]**.
 
-   ![&#x200B; publiceer en maak vorm &#x200B;](/help/edge/docs/forms/assets/publish-form-option.png) ongedaan
+   ![ publiceer en maak vorm ](/help/edge/docs/forms/assets/publish-form-option.png) ongedaan
 
-   Zodra de vorm en zijn verwante activa met succes worden gepubliceerd, verschijnt de dialoog van het Succes van a **&#x200B;**.
+   Zodra de vorm en zijn verwante activa met succes worden gepubliceerd, verschijnt de dialoog van het Succes van a ****.
 1. Klik **dicht**.
 
-   ![&#x200B; de dialoog van het Succes &#x200B;](/help/forms/assets/publish-success1.png)
+   ![ de dialoog van het Succes ](/help/forms/assets/publish-success1.png)
 
 ### Publicatie van het formulier ongedaan maken
 
@@ -52,12 +53,12 @@ Na met succes het publiceren van de vorm gebruikend **publiceer** optie en zijn 
    Wanneer u de **[!UICONTROL Unpublish]** knoop klikt, verschijnt de **Unpublish dialoog van Activa**.
 1. Klik op **[!UICONTROL Unpublish]** om het publicatieproces te starten
 
-   ![&#x200B; Unplish dialoog &#x200B;](/help/forms/assets/unpublish-asset.png)
+   ![ Unplish dialoog ](/help/forms/assets/unpublish-asset.png)
 
-   Zodra de vorm en zijn verwante activa met succes unpublished zijn, verschijnt de dialoog van het Succes van a **&#x200B;**.
+   Zodra de vorm en zijn verwante activa met succes unpublished zijn, verschijnt de dialoog van het Succes van a ****.
 1. Klik **dicht**.
 
-   ![&#x200B; unpublish succesvol &#x200B;](/help/forms/assets/unpublishing-start.png)
+   ![ unpublish succesvol ](/help/forms/assets/unpublishing-start.png)
 
 ## Formulieren publiceren met de optie Publicatie beheren
 
@@ -66,11 +67,11 @@ Met Publicatie beheren kunt u inhoud publiceren naar of verwijderen uit het gese
 1. Navigeer in de Experience Manager Forms-console naar de bovenliggende map en selecteer een formulier dat u wilt publiceren.
 1. Klik op de optie **[!UICONTROL Manage Publication]** op de werkbalk.
 
-   ![&#x200B; beheer de optie van de Publicatie &#x200B;](/help/forms/assets/manage-publication-option.png)
+   ![ beheer de optie van de Publicatie ](/help/forms/assets/manage-publication-option.png)
 
    **leidt Publicatie** UI verschijnt:
 
-   ![&#x200B; beheer publicatie &#x200B;](/help/forms/assets/manage-publication.png)
+   ![ beheer publicatie ](/help/forms/assets/manage-publication.png)
 
    De volgende opties zijn beschikbaar in **leiden Publicatie** UI:
 
@@ -90,10 +91,10 @@ Met Publicatie beheren kunt u inhoud publiceren naar of verwijderen uit het gese
       * **later**: Publiceer vormen die op de **datum van de Activering** of tijd worden gebaseerd
 
 1. Klik **daarna** om verder te gaan.
-1. (Facultatief) in het **Gebied** lusje, gebruik [&#x200B; voeg Inhoud &#x200B;](#add-content) optie toe om meer inhoud voor het publiceren toe te voegen. U kunt bijvoorbeeld meer Forms- of Document met recordbestanden toevoegen.
-   ![&#x200B; werkingsgebied tabel &#x200B;](/help/forms/assets/scope-tab.png)
+1. (Facultatief) in het **Gebied** lusje, gebruik [ voeg Inhoud ](#add-content) optie toe om meer inhoud voor het publiceren toe te voegen. U kunt bijvoorbeeld meer Forms- of Document met recordbestanden toevoegen.
+   ![ werkingsgebied tabel ](/help/forms/assets/scope-tab.png)
 1. Klik op **[!UICONTROL Publish]** om de formulieren en gerelateerde elementen te publiceren en het bericht verschijnt als een bericht dat is gelukt.
-   ![&#x200B; publiceer succesvol bericht &#x200B;](/help/forms/assets/publish-successful.png)
+   ![ publiceer succesvol bericht ](/help/forms/assets/publish-successful.png)
 
 ### Inhoud toevoegen
 
@@ -102,11 +103,11 @@ Meer formulieren toevoegen voor publicatie:
 
 1. Klik **toevoegen Inhoud** knoop om meer inhoud toe te voegen.
 
-   ![&#x200B; voeg inhoud &#x200B;](/help/forms/assets/add-content.png) toe
+   ![ voeg inhoud ](/help/forms/assets/add-content.png) toe
 
-2. Selecteer de vorm van het **Uitgezochte 1&rbrace; scherm van de Weg.**
+2. Selecteer de vorm van het **Uitgezochte 1} scherm van de Weg.**
 
-   ![&#x200B; voeg inhoud &#x200B;](/help/forms/assets/add-assets.png) toe
+   ![ voeg inhoud ](/help/forms/assets/add-assets.png) toe
 
    >[!NOTE]
    >
@@ -114,10 +115,10 @@ Meer formulieren toevoegen voor publicatie:
 
 3. Selecteer het formulier en klik op **[!UICONTROL Published References]** om de referenties te configureren die u wilt publiceren voor een formulier.
 
-   ![&#x200B; gepubliceerde verwijzingen &#x200B;](/help/forms/assets/published-references.png)
+   ![ gepubliceerde verwijzingen ](/help/forms/assets/published-references.png)
 
 4. In het **Gepubliceerde de dialoogvakje van Verwijzingen**, uncheck de activa u van plan bent niet-te publiceren en te klikken **[!UICONTROL Done]**.
-   ![&#x200B; gepubliceerde verwijzingendialoog &#x200B;](/help/forms/assets/published-references-dialog.png)
+   ![ gepubliceerde verwijzingendialoog ](/help/forms/assets/published-references-dialog.png)
 
 <!--
 ### Include Folder Settings
@@ -153,26 +154,26 @@ Een formulier plannen voor publiceren of verwijderen:
 1. Navigeer in de Experience Manager Forms-console naar de bovenliggende map en selecteer het formulier dat u wilt plannen voor publicatie.
 1. Klik op de optie **[!UICONTROL Manage Publication]** op de werkbalk.
 
-   ![&#x200B; beheer publicatie &#x200B;](/help/forms/assets/manage-publication.png)
+   ![ beheer publicatie ](/help/forms/assets/manage-publication.png)
 
 1. Klik **publiceren** of **unpublish** van **[!UICONTROL Action]**.
 1. Selecteer de locatie **[!UICONTROL Destination]** waar u de inhoud wilt publiceren of de publicatie ervan wilt opheffen.
-   * **Voorproef**: Gebruik de **3&rbrace; optie van de Voorproef &lbrace;om aan een de voorproefmilieu van Experience Manager Forms te publiceren of unpublish.** De Experience Manager Forms-voorbeeldomgevingen worden gebruikt om formulieren te testen onder ontwikkelaars.
+   * **Voorproef**: Gebruik de **3} optie van de Voorproef {om aan een de voorproefmilieu van Experience Manager Forms te publiceren of unpublish.** De Experience Manager Forms-voorbeeldomgevingen worden gebruikt om formulieren te testen onder ontwikkelaars.
    * **publiceer**: Gebruik Experience Manager Forms **publiceren** optie om de vorm naar Experience Manager Forms te verzenden publiceert milieu nadat de vorm klaar is om in een productiemilieu te gebruiken.
 
 1. Selecteer **[!UICONTROL Later]** van **Plannend**.
 
-   ![&#x200B; beheer Publicatie later &#x200B;](/help/forms/assets/manage-publication-later.png)
+   ![ beheer Publicatie later ](/help/forms/assets/manage-publication-later.png)
 
 1. Selecteer een **[!UICONTROL Activation date]** en geef de datum en tijd op.
 1. Klik op **[!UICONTROL Next]** .
 1. (Facultatief) in het **Reikwijdte** lusje, voeg inhoud toe gebruikend **[!UICONTROL Add Content]**.
-   ![&#x200B; beheer Publicatie toevoegen later inhoud &#x200B;](/help/forms/assets/publish-later-add-content.png)
+   ![ beheer Publicatie toevoegen later inhoud ](/help/forms/assets/publish-later-add-content.png)
 1. Klik op **[!UICONTROL Next]**.
 1. In het **lusje van Werkschema&#39;s**, specificeer a **[!UICONTROL Workflow title]**.
 1. Klik op **[!UICONTROL Publish Later]** .
 
-   ![&#x200B; beheer het werkschema van de Publicatie &#x200B;](/help/forms/assets/manage-publication-workflows.png)
+   ![ beheer het werkschema van de Publicatie ](/help/forms/assets/manage-publication-workflows.png)
 
 ## Publicatiestatus bepalen
 
