@@ -37,7 +37,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](
 
 Bekijk de video Overzicht van de release van april 2025 voor een overzicht van de functies die zijn toegevoegd in de release van 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464008?captions=dut&quality=12)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 

@@ -37,7 +37,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](
 
 Bekijk de video Overzicht van de release van mei 2025 voor een overzicht van de functies die in de release van 2025.5.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464356?captions=dut&quality=12)
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -108,7 +108,7 @@ Heb toegang tot al uw [&#x200B; Dynamische vooraf ingestelde vertoningen van Med
 
 [&#x200B; Inheemse integratie van de Dynamische Media van Experience Manager (AEM) met Journey Optimizer (AJO) B2C &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/combine/aem-dynamic), toelatend marketers om AEM Dynamic Media activa (vertoning en Malplaatje DM) in de inhoud van AJO gemakkelijk in te bedden en updates in real time en hyper-gepersonaliseerde ervaringen over kanalen te leveren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463788/?captions=dut&learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
