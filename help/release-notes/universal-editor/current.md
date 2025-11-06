@@ -1,33 +1,28 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.10.30
-description: Dit zijn de releaseopmerkingen voor de release 2025.10.30 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.11.06
+description: Dit zijn de releaseopmerkingen voor de release 2025.11.06 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
+source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.10.30 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.11.06 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 30 oktober 2025 van de Universal Editor.
-
->[!TIP]
->
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+Dit zijn de versienota&#39;s voor de 6 november 2025 versie van de Universele Redacteur.
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
 
-## Wat is er nieuw? {#what-is-new}
-
-* [&#x200B; nieuwe RTE &#x200B;](#new-rte) kan beelden nu opnemen.
-   * Deze eigenschap is gehandicapt OoTB en moet uitdrukkelijk via a [&#x200B; filterdefinitie worden toegelaten.](/help/implementing/universal-editor/configure-rte.md#toolbar)
+>[!TIP]
+>
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -35,14 +30,16 @@ Als u deze functies wilt testen en feedback wilt delen, stuurt u een e-mail naar
 
 ### Nieuwe RTE {#new-rte}
 
-De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [&#x200B; dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
+De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [ dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
 
 ## Overige verbeteringen {#other-improvements}
 
-* De gebeurtenis Update wordt nu geïnformeerd als de handeling ongedaan is gemaakt.
-* De tekenreeks `No results` is nu afhankelijk van de landinstelling van de browser in de tags van de Universal Editor.
-* Oplossing voor een extra regeleinde in de publicatieknop van de Universal Editor.
-* Overbodig verwijderen van de patch-API.
-* De knop Inhoud selecteren is nu zichtbaar in Safari.
-* De RPM-build is hersteld.
-* CORS-update om te voorkomen dat tekst die is bewerkt na het opslaan opnieuw wordt bijgewerkt.
+* U kunt metagegevensvelden van `og:title` nu op de juiste wijze verwijderen.
+* Een navigatieprobleem is opgelost wanneer een gebruiker de locatiebalk in de editor van de browser bewerkt, zodat deze wijzigingen correct worden doorgevoerd en de editor en/of app nu naar de gewenste URL navigeert.
+* De resolutie van het veldmodel is gecorrigeerd en de editor gebruikt het model van de component, indien aanwezig.
+* ComponentId is nu inbegrepen op /add actie.
+* De mogelijkheid om bepaalde eigenschappen van metagegevens te verwijderen die voorheen niet konden worden verwijderd, is hersteld.
+* De ophaalfunctie voor Raw wordt nu voorwaardelijk uitgevoerd voor xwalk wanneer deze niet is ingesteld door de AEM-insteekmodule.
+* De verwerking van MSM-fragmenten van het inhoudsfragment met RTE is verbeterd.
+* Afbeeldingsmarkering in een afbeelding wordt nu ondersteund.
+
