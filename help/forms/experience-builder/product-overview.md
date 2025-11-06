@@ -55,20 +55,20 @@ Bestaande documenten omzetten in interactieve digitale ervaringen. De Forms Expe
 
 ## Aan boord nemen en voorwaarden
 
-De Forms Experience Builder is momenteel beschikbaar via een programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officiële E-mailidentiteitskaart
+De Forms Experience Builder is momenteel beschikbaar via een programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) van uw officiële E-mailidentiteitskaart
 
-De Bouwer van de ervaring vereist het milieu van de de productiepauteur van AEM Forms as a Cloud Service met [ Aangepaste Componenten van de Kern van Forms ](/help/forms/enable-adaptive-forms-core-components.md).
+De Bouwer van de ervaring vereist het milieu van de de productiepauteur van AEM Forms as a Cloud Service met [&#x200B; Aangepaste Componenten van de Kern van Forms &#x200B;](/help/forms/enable-adaptive-forms-core-components.md).
 
 ## Ga naar de Forms Experience Builder
 
 
 1. Navigeer aan **AEM > Forms > Forms &amp; Documenten**.
 1. Klik **creëren** en selecteren **AanpassingsVorm**
-1. Gebruik de Tovenaar om een nieuwe vorm tot stand te brengen gebruikend het malplaatje van de Componenten van de a [ Kern ](/help/forms/creating-adaptive-form-core-components.md) of [ Edge Delivery Services ](/help/edge/docs/forms/universal-editor/create-forms.md), afhankelijk van uw vereiste en open de vorm voor het uitgeven.
+1. Gebruik de Tovenaar om een nieuwe vorm tot stand te brengen gebruikend het malplaatje van de Componenten van de a [&#x200B; Kern &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; Edge Delivery Services &#x200B;](/help/edge/docs/forms/universal-editor/create-forms.md), afhankelijk van uw vereiste en open de vorm voor het uitgeven.
 1. Selecteer het **pictogram van de Bouwer van de Ervaring van Forms** in de toolbar van de redacteur om de de bouwerinterface van de Ervaring van Forms te openen om vormen tot stand te brengen gebruikend natuurlijke taal.
 
 
-| ![ de Aangepaste Redacteur van Forms - de Bouwer van de Ervaring van Forms ](/help/edge/docs/forms/assets/adaptive-forms-editor.gif " Aangepaste Redacteur van Forms - de Bouwer van de Ervaring van Forms ") | ![ Universele Redacteur - de Bouwer van de Ervaring van Forms ](/help/forms/assets/ue-forms-experience-builder.gif " Universele Redacteur - de Bouwer van de Ervaring van Forms ") |
+| ![&#x200B; de Aangepaste Redacteur van Forms - de Bouwer van de Ervaring van Forms &#x200B;](/help/edge/docs/forms/assets/adaptive-forms-editor.gif " Aangepaste Redacteur van Forms - de Bouwer van de Ervaring van Forms ") | ![&#x200B; Universele Redacteur - de Bouwer van de Ervaring van Forms &#x200B;](/help/forms/assets/ue-forms-experience-builder.gif " Universele Redacteur - de Bouwer van de Ervaring van Forms ") |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | *de AanpassingsRedacteur van Forms* | *Universele Redacteur* |
 
@@ -184,13 +184,13 @@ Configure form submissions to integrate with your existing business systems:
 
 Hier volgen enkele manieren waarop u de Forms Experience Builder kunt verkennen:
 
-- **bouwt vormen incrementeel**: Begin met een eenvoudige vorm en voeg ingewikkeldheid stap voor stap toe. Maak bijvoorbeeld een standaardcontactformulier en voeg vervolgens validatieregels, plaatsaanduidingstekst en voorwaardelijke logica toe. [ leer meer ](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#incremental-development-examples).
+- **bouwt vormen incrementeel**: Begin met een eenvoudige vorm en voeg ingewikkeldheid stap voor stap toe. Maak bijvoorbeeld een standaardcontactformulier en voeg vervolgens validatieregels, plaatsaanduidingstekst en voorwaardelijke logica toe. [&#x200B; leer meer &#x200B;](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#incremental-development-examples).
 
-- **creeer slimme gebieden**: Hefboomwerking de kennis van AI om gebieden met pre-bevolkte, context-bewuste opties, zoals een drop-down lijst van alle landen, belangrijke luchthavens, of industrie-standaardbaantitels tot stand te brengen. [ leer meer ](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#llm-enhanced-smart-fields).
+- **creeer slimme gebieden**: Hefboomwerking de kennis van AI om gebieden met pre-bevolkte, context-bewuste opties, zoals een drop-down lijst van alle landen, belangrijke luchthavens, of industrie-standaardbaantitels tot stand te brengen. [&#x200B; leer meer &#x200B;](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#llm-enhanced-smart-fields).
 
-- **voert complexe bedrijfslogica** uit: Bepaal voorwaardelijke regels die tonen of vormsecties verbergen die op gebruikersinput worden gebaseerd. U kunt bijvoorbeeld een regel maken die alleen een sectie &#39;Informatie over echtgenoot&#39; weergeeft wanneer de burgerlijke staat van een gebruiker &#39;Gehuwd&#39; is. [ leer meer ](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic).
+- **voert complexe bedrijfslogica** uit: Bepaal voorwaardelijke regels die tonen of vormsecties verbergen die op gebruikersinput worden gebaseerd. U kunt bijvoorbeeld een regel maken die alleen een sectie &#39;Informatie over echtgenoot&#39; weergeeft wanneer de burgerlijke staat van een gebruiker &#39;Gehuwd&#39; is. [&#x200B; leer meer &#x200B;](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic).
 
-- **integreer met uw systemen**: Vorm indieningen om met uw bestaande bedrijfswerkschema&#39;s te verbinden, of het gegevens naar REST API verzendt, creërend een nieuwe lood in uw CRM, of het opslaan van documenten aan wolkenopslag. [ leer meer ](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#data-integration--submission).
+- **integreer met uw systemen**: Vorm indieningen om met uw bestaande bedrijfswerkschema&#39;s te verbinden, of het gegevens naar REST API verzendt, creërend een nieuwe lood in uw CRM, of het opslaan van documenten aan wolkenopslag. [&#x200B; leer meer &#x200B;](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#data-integration--submission).
 
 <!-- ## Onboarding
 
