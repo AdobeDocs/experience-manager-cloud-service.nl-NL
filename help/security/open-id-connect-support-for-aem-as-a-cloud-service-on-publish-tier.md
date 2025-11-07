@@ -45,15 +45,15 @@ Informatie van de Configuratie IdP:
 
 Zoek onder een lijst met bestanden die moeten worden geconfigureerd:
 
-1. **OIDC Verbinding**: dit zal door `OidcAuthenticationHandler` worden gebruikt om de gebruikers voor authentiek te verklaren, of door andere componenten om [ toegang tot middelen toe te staan die door IdP worden beschermd gebruikend OAuth ](https://github.com/apache/sling-org-apache-sling-auth-oauth-client)
+1. **OIDC Verbinding**: dit zal door `OidcAuthenticationHandler` worden gebruikt om de gebruikers voor authentiek te verklaren, of door andere componenten om [&#x200B; toegang tot middelen toe te staan die door IdP worden beschermd gebruikend OAuth &#x200B;](https://github.com/apache/sling-org-apache-sling-auth-oauth-client)
 1. **OIDC de Handler van de Authentificatie**: Dit is de authentificatiemanager wordt gebruikt om gebruikers voor authentiek te verklaren die toegang tot de gevormde wegen
 1. **UserInfoProcessor**: Deze component verwerkt de informatie die door IdP wordt ontvangen. Het kan door klanten worden uitgebreid om douanelogica uit te voeren
-1. [**StandaardHandler van de Synchronisatie** ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html): Deze component leidt tot de gebruiker in de bewaarplaats
-1. [**ExternalLoginModule** ](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html): Deze component verklaart de gebruiker in de lokale eik bewaarplaats voor authentiek.
+1. [**StandaardHandler van de Synchronisatie** &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html): Deze component leidt tot de gebruiker in de bewaarplaats
+1. [**ExternalLoginModule** &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html): Deze component verklaart de gebruiker in de lokale eik bewaarplaats voor authentiek.
 
 Het volgende diagram toont hoe de vermelde configuratieelementen verbonden zijn. Aangezien dit `ServiceFactory` -componenten zijn, kan `~uniqueid` elke willekeurige unieke tekenreeks zijn:
 
-![ OIDC configuratiediagram ](/help/security/assets/oidc-diagram.png)
+![&#x200B; OIDC configuratiediagram &#x200B;](/help/security/assets/oidc-diagram.png)
 
 ### De OIDC-verbinding configureren {#configure-the-oidc-connection}
 
@@ -81,7 +81,7 @@ Eerst, moeten wij de verbinding vormen OIDC. De veelvoudige verbindingen OIDC ku
 
 ### OIDC-verificatiehandler configureren {#configure-oidc-authentication-handler}
 
-Nu, vorm de OIDC authentificatiemanager. Er kunnen meerdere OIDC-verbindingen worden geconfigureerd. Elke naam moet een andere naam hebben. Als zij de zelfde [ Externe Leverancier van de Identiteit van OAK ](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html) delen, kunnen zij gebruikers delen.
+Nu, vorm de OIDC authentificatiemanager. Er kunnen meerdere OIDC-verbindingen worden geconfigureerd. Elke naam moet een andere naam hebben. Als zij de zelfde [&#x200B; Externe Leverancier van de Identiteit van OAK &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html) delen, kunnen zij gebruikers delen.
 
 1. Maak het configuratiebestand. Voor dit voorbeeld gebruiken we `org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json` . Het achtervoegsel `azure` moet een unieke id zijn. Zie een voorbeeld van het configuratiedossier hieronder:
 
@@ -100,7 +100,7 @@ Nu, vorm de OIDC authentificatiemanager. Er kunnen meerdere OIDC-verbindingen wo
    * `callbackUri`: aan het te beveiligen pad voegt u het achtervoegsel toe: `/j_security_check`
    * `defaultConnectionName`: configureren met dezelfde naam die is gedefinieerd voor de OIDC-verbinding in de vorige stap+
    * `pkceEnabled`: `true` Proefsleutel voor Codeuitwisseling (PKCE) op de stroom van de machtigingscode
-   * `idp`: de naam van de [ Externe Leverancier van de Identiteit van OAK ](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Houd er rekening mee dat verschillende OAK IDP geen gebruikers of groepen kan delen
+   * `idp`: de naam van de [&#x200B; Externe Leverancier van de Identiteit van OAK &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Houd er rekening mee dat verschillende OAK IDP geen gebruikers of groepen kan delen
 
 ### SlingUserInfoProcessor configureren
 
@@ -127,9 +127,9 @@ Merk op dat de Token van de Toegang en van het Vernieuwen worden opgeslagen geco
 
 ### Synchronisatiehandler configureren {#configure-the-synchronization-handler}
 
-Minstens één manager van de Synchronisatie moet me gevormd om de gebruikers te synchroniseren die in eikel voor authentiek worden verklaard. Voor meer details, zie [ deze ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html) pagina.
+Minstens één manager van de Synchronisatie moet me gevormd om de gebruikers te synchroniseren die in eikel voor authentiek worden verklaard. Voor meer details, zie [&#x200B; deze &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html) pagina.
 
-Maak een bestand met de naam `org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json` . Het **azure** achtervoegsel moet een uniek herkenningsteken zijn. Voor meer informatie over hoe te om zijn eigenschappen te vormen, raadpleeg de [ documentatie van de Synchronisatie van de Gebruiker van Oak en van de Groep ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html). Hieronder vindt u een voorbeeldconfiguratie:
+Maak een bestand met de naam `org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json` . Het **azure** achtervoegsel moet een uniek herkenningsteken zijn. Voor meer informatie over hoe te om zijn eigenschappen te vormen, raadpleeg de [&#x200B; documentatie van de Synchronisatie van de Gebruiker van Oak en van de Groep &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html). Hieronder vindt u een voorbeeldconfiguratie:
 
 ```
 {
@@ -179,19 +179,19 @@ Tot slot moet u de Externe Module van de Aanmelding vormen.
 
 ### Optioneel: een aangepaste UserInfoProcessor implementeren {#implement-a-custom-userinfoprocessor}
 
-De gebruiker wordt voor authentiek verklaard door een Symbolisch van identiteitskaart, en de extra attributen worden gehaald in het `userInfo` eindpunt dat voor IdP wordt bepaald. Als de extra niet-standaardverrichtingen moeten worden uitgevoerd, is een douaneimplementatie van [ UserInfoProcessor ](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) de standaardimplementatie van het Verdelen.
+De gebruiker wordt voor authentiek verklaard door een Symbolisch van identiteitskaart, en de extra attributen worden gehaald in het `userInfo` eindpunt dat voor IdP wordt bepaald. Als de extra niet-standaardverrichtingen moeten worden uitgevoerd, is een douaneimplementatie van [&#x200B; UserInfoProcessor &#x200B;](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) de standaardimplementatie van het Verdelen.
 
 ## Voorbeeld: OIDC-verificatie configureren met Azure Active Directory
 
 ### Vorm een nieuwe Toepassing in Azure Actieve Folder {#configure-a-new-application-in-azure-ad}
 
-1. Creeer een nieuwe toepassing in Azure Actieve Folder door de [ Azure Actieve documentatie van de Folder ](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings#create-an-app-registration-in-azure) te volgen.  Hieronder ziet u hoe het scherm met het toepassingsoverzicht eruit moet zien:
+1. Creeer een nieuwe toepassing in Azure Actieve Folder door de [&#x200B; Azure Actieve documentatie van de Folder &#x200B;](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings#create-an-app-registration-in-azure) te volgen.  Hieronder ziet u hoe het scherm met het toepassingsoverzicht eruit moet zien:
 
-   ![ Overzicht van de Toepassing ](/help/security/assets/odic-application-overview.png)
+   ![&#x200B; Overzicht van de Toepassing &#x200B;](/help/security/assets/odic-application-overview.png)
 
-1. Als de Groepen of de toepassingsrollen worden vereist, volg de [ documentatie ](https://learn.microsoft.com/en-us/entra/external-id/customers/how-to-use-app-roles-customers) om hen voor de toepassing toe te laten en hen in het Symbolische van identiteitskaart te verzenden. Onder een voorbeeld van gevormde groepen:
+1. Als de Groepen of de toepassingsrollen worden vereist, volg de [&#x200B; documentatie &#x200B;](https://learn.microsoft.com/en-us/entra/external-id/customers/how-to-use-app-roles-customers) om hen voor de toepassing toe te laten en hen in het Symbolische van identiteitskaart te verzenden. Onder een voorbeeld van gevormde groepen:
 
-![ OIDC de Symbolische identiteitskaart van de Claim ](/help/security/assets/oidc-claim-id-token.png)
+![&#x200B; OIDC de Symbolische identiteitskaart van de Claim &#x200B;](/help/security/assets/oidc-claim-id-token.png)
 
 1. Volg de eerder gedocumenteerde stappen om de vereiste configuratiedossiers tot stand te brengen. Onder een voorbeeld specifiek voor Azure AD waarin:
    * De namen Verbinding, Verificatiehandler en DefaultSyncHandler worden gedefinieerd als: `azure`
@@ -275,11 +275,11 @@ De gebruiker wordt voor authentiek verklaard door een Symbolisch van identiteits
 
 Om een groep aan voor de ondernemingstoepassing in Microsoft Azure Portal te vormen, moet u de toepassing zoeken: **Toepassingen van de Onderneming** en de groepen toevoegen: <!-- Alexandru: this bit cound be clearer-->
 
-![ OIDC Groep voegt toe ](/help/security/assets/oidc-ad-additional-info.png)
+![&#x200B; OIDC Groep voegt toe &#x200B;](/help/security/assets/oidc-ad-additional-info.png)
 
 Om de groepseis in het Token van identiteitskaart toe te laten, voeg de eis in de **Symbolische sectie van de Configuratie** van Microsoft Azure Portal toe: <!-- Alexandru: this bit cound be clearer as well-->
 
-![ OIDC de Symbolische identiteitskaart van de Claim ](/help/security/assets/oidc-claim-id-token.png)
+![&#x200B; OIDC de Symbolische identiteitskaart van de Claim &#x200B;](/help/security/assets/oidc-claim-id-token.png)
 
 De configuratie van `SlingUserInfoProcessor` moet worden gewijzigd zoals in het onderstaande voorbeeld.
 

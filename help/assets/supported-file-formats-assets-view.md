@@ -16,11 +16,11 @@ ht-degree: 0%
 
 [!DNL Assets view] ondersteunt een groot aantal bestandsindelingen en elke functie biedt verschillende ondersteuning voor verschillende bestandstypen.
 
-* ![ het type van beelddossier pictogram ](assets/image-icon.svg) Beelden: JPG, PNG, GIF, TIFF, en anderen
-* ![ creatief wolkentypepictogram ](assets/creative-cloud-files.svg) de dossiers van Creative Cloud: PSD, PSB, AI, en INDD
-* ![ het pictogram van het cameratype ](assets/camera-icon.svg) Camera Raw dossiers: CR2/CR3, NEF, SRW/SRF, en anderen
-* ![ pictogram van het documenttype ](assets/document-icon.svg) Documenten: DOCX, PDF, PPTX, en XLSX
-* ![ het type van videodossier pictogram ](assets/video-icon.svg) Video&#39;s: MP4
+* ![&#x200B; het type van beelddossier pictogram &#x200B;](assets/image-icon.svg) Beelden: JPG, PNG, GIF, TIFF, en anderen
+* ![&#x200B; creatief wolkentypepictogram &#x200B;](assets/creative-cloud-files.svg) de dossiers van Creative Cloud: PSD, PSB, AI, en INDD
+* ![&#x200B; het pictogram van het cameratype &#x200B;](assets/camera-icon.svg) Camera Raw dossiers: CR2/CR3, NEF, SRW/SRF, en anderen
+* ![&#x200B; pictogram van het documenttype &#x200B;](assets/document-icon.svg) Documenten: DOCX, PDF, PPTX, en XLSX
+* ![&#x200B; het type van videodossier pictogram &#x200B;](assets/video-icon.svg) Video&#39;s: MP4
 
 [!DNL Assets view] ondersteunt elke binaire bestandsindeling met basisservices, zoals opslag, uploaden, kopiëren, verplaatsen, verwijderen en toevoegen van metagegevens.
 
@@ -39,7 +39,7 @@ De verschillende bestandstypen bieden verschillende mate van ondersteuning voor 
 <!-- TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
 -->
 
-| Type element | [ doorbladeren ](/help/assets/navigate-assets-view.md) | Kopiëren | [ uploadt ](/help/assets/add-delete-assets-view.md) | Maken | [ Schrapping ](/help/assets/add-delete-assets-view.md#delete-assets) | Details | Zoomen op afbeelding | [ onlangs Bekeken ](/help/assets/navigate-assets-view.md) |
+| Type element | [&#x200B; doorbladeren &#x200B;](/help/assets/navigate-assets-view.md) | Kopiëren | [&#x200B; uploadt &#x200B;](/help/assets/add-delete-assets-view.md) | Maken | [&#x200B; Schrapping &#x200B;](/help/assets/add-delete-assets-view.md#delete-assets) | Details | Zoomen op afbeelding | [&#x200B; onlangs Bekeken &#x200B;](/help/assets/navigate-assets-view.md) |
 |-------------------|----------|----------|----------|----------|----------|-------------------|------------|-----------------|
 | Rasterafbeeldingen | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ |
 | RAW-bestanden | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ |
@@ -57,7 +57,7 @@ De verschillende bestandstypen bieden verschillende mate van ondersteuning voor 
 
 <!--writer - please check RAW files row below. There was an extra column, so I deleted a duplicate section. I think I did it right. -->
 
-| Type element | [ Download ](/help/assets/manage-organize-assets-view.md#download) | Slepen en slepen | [ redacteur van het Beeld ](/help/assets/edit-images-assets-view.md) | [Zoeken](/help/assets/search-assets-view.md) | [ Slimme Markeringen ](/help/assets/metadata-assets-view.md#tags) | [ anders noemen ](/help/assets/manage-organize-assets-view.md) | [ Versies ](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
+| Type element | [&#x200B; Download &#x200B;](/help/assets/manage-organize-assets-view.md#download) | Slepen en slepen | [&#x200B; redacteur van het Beeld &#x200B;](/help/assets/edit-images-assets-view.md) | [Zoeken](/help/assets/search-assets-view.md) | [&#x200B; Slimme Markeringen &#x200B;](/help/assets/metadata-assets-view.md#tags) | [&#x200B; anders noemen &#x200B;](/help/assets/manage-organize-assets-view.md) | [&#x200B; Versies &#x200B;](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | Rasterafbeeldingen | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | RAW-bestanden | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -93,7 +93,7 @@ De verschillende bestandstypen bieden verschillende mate van ondersteuning voor 
 
 ## Overige taken voor vermogensbeheer {#support-to-manage-assets}
 
-| Type element | [ Metagegevens ](/help/assets/metadata-assets-view.md) | [ Vertoningen ](/help/assets/add-delete-assets-view.md#renditions) | [ Afval ](/help/assets/add-delete-assets-view.md#delete-assets) | Kopiëren | Verplaatsen |
+| Type element | [&#x200B; Metagegevens &#x200B;](/help/assets/metadata-assets-view.md) | [&#x200B; Vertoningen &#x200B;](/help/assets/add-delete-assets-view.md#renditions) | [&#x200B; Afval &#x200B;](/help/assets/add-delete-assets-view.md#delete-assets) | Kopiëren | Verplaatsen |
 |---------------|-------------------|------------|----------|----------|----------|
 | Rasterafbeeldingen | ✓ | ✓ | ✓ | ✓ | ✓ |
 | RAW-bestanden | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -128,6 +128,6 @@ Gebruikers van [!DNL Adobe Asset Link] kunnen bestanden uploaden en inchecken (e
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)
