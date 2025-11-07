@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Inhoudsverzoeken omvatten aanvragen die naar AEM Sites worden verzonden. Deze verzoeken kunnen door Edge Delivery Services of klant-verstrekt caching systemen zoals een Netwerk van de Levering van de Inhoud (CDN) leiden. Deze verzoeken leveren gestructureerde gegevens in HTML- of JSON-indeling en ondersteunen paginaweergaven (bijvoorbeeld pagina&#39;s en ervaringsfragmenten) of JSON retourneert zonder kop via API&#39;s.
 
-Het systeem telt inhoudsverzoeken wanneer een gebruiker een pagina gebruikend HTML of JSON bekijkt. Het meet het verzoek op het punt waar het eerste caching systeem het ontvangt. Bepaalde HTTP-aanvragen worden opgenomen of uitgesloten voor het tellen van inhoudsaanvragen. Zie de volledige lijst van HTTP [&#x200B; inbegrepen inhoudsverzoeken &#x200B;](#included-content-requests) en [&#x200B; uitgesloten inhoudsverzoeken &#x200B;](#excluded-content-request).
+Het systeem telt inhoudsverzoeken wanneer een gebruiker een pagina gebruikend HTML of JSON bekijkt. Het meet het verzoek op het punt waar het eerste caching systeem het ontvangt. Bepaalde HTTP-aanvragen worden opgenomen of uitgesloten voor het tellen van inhoudsaanvragen. Zie de volledige lijst van HTTP [ inbegrepen inhoudsverzoeken ](#included-content-requests) en [ uitgesloten inhoudsverzoeken ](#excluded-content-request).
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Inhoudsverzoeken kunnen variaties hebben binnen de analytische rapportagehulppro
 | Verkeersblokkers | Privacy-functies in de browser of bedrijfsfirewalls kunnen het laden van analysescripts blokkeren. Deze gebruikers genereren nog steeds verzoeken om inhoud op de server. |
 | Firewalls | Met bedrijfsfirewalls of regionale firewalls kan worden voorkomen dat analytische aanroepen Adobe-servers bereiken, wat leidt tot onderrapportage in analyses, terwijl het aantal aan de serverzijde ongewijzigd blijft. |
 
-Zie het [&#x200B; dashboard van de Vergunning &#x200B;](/help/implementing/cloud-manager/license-dashboard.md) voor informatie over het bekijken en het volgen gebruik van de inhoudsverzoek tegen uw vergunningsgrenzen.
+Zie het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) voor informatie over het bekijken en het volgen gebruik van de inhoudsverzoek tegen uw vergunningsgrenzen.
 
 ## Regels voor verzamelingen op de server {#serverside-collection}
 
@@ -77,12 +77,12 @@ In de volgende tabellen worden de typen opgenomen en uitgesloten inhoudsaanvrage
 | Type aanvraag | Content Request | Beschrijving |
 | --- | --- | --- |
 | HTTP-code 100-299 | Opgenomen | Omvat succesvolle verzoeken die volledige of gedeeltelijke HTML of inhoud JSON terugkeren.<br> Code 206 van HTTP: Deze verzoeken leveren slechts een gedeelte van de volledige inhoud. Bijvoorbeeld een video of een grote afbeelding. Gedeeltelijke inhoudsaanvragen worden opgenomen wanneer ze een deel van een HTML- of JSON-reactie leveren die wordt gebruikt bij het renderen van pagina-inhoud. |
-| HTTP-bibliotheken voor automatisering | Opgenomen | Verzoeken die zijn gemaakt door gereedschappen of bibliotheken die pagina-inhoud ophalen. Voorbeelden zijn: <br>・ Amazon CloudFront <br>・ Apache Http Client <br>・ Asynchronous HTTP Client <br>・ Axios <br>・ Azureus <br>・ Curl <br>・ GitHub Node Fetch <br>・ Guzzle <br>・ Go-http-client <br>・ Headless Chrome <br>・ Java™ Client &lbrace;1 <br>・ Jersey <br>・ Node Oembed <br>・ okhttp<br>・ Python-verzoeken <br>・ Reactor Netty <br>・ Wget <br>・ WinHTTP <br>・ Fast HTTP <br>・ GitHub Node Fetch <br>・ Reactor Netty |
-| Gereedschappen voor toezicht en gezondheidscontrole | Opgenomen | Verzoeken die worden gebruikt om de gezondheid of beschikbaarheid van pagina&#39;s te controleren.<br> zie [&#x200B; Types van uitgesloten inhoudsverzoeken &#x200B;](#excluded-content-request).<br> Voorbeelden omvatten het volgende:<br>・ `Amazon-Route53-Health-Check-Service`<br>・ EyeMonIT_bot_version_0.1_[&#x200B; (https://eyemonit.com/) &#x200B;](https://eyemonit.com/) <br>・ Investis-Site24x7 <br>・ Mozilla/5.0+ (compatibel; UptimeRobot/2.0; [&#x200B; https://uptimerobot.com/ &#x200B;](https://uptimerobot.com/)) <br>・ ThousandEyes-gonfly-x1 <br>・ OmtrBot/1.0 <br>・ WebMon/2.0.0 |
+| HTTP-bibliotheken voor automatisering | Opgenomen | Verzoeken die zijn gemaakt door gereedschappen of bibliotheken die pagina-inhoud ophalen. Voorbeelden zijn: <br>・ Amazon CloudFront <br>・ Apache Http Client <br>・ Asynchronous HTTP Client <br>・ Axios <br>・ Azureus <br>・ Curl <br>・ GitHub Node Fetch <br>・ Guzzle <br>・ Go-http-client <br>・ Headless Chrome <br>・ Java™ Client {1 <br>・ Jersey <br>・ Node Oembed <br>・ okhttp<br>・ Python-verzoeken <br>・ Reactor Netty <br>・ Wget <br>・ WinHTTP <br>・ Fast HTTP <br>・ GitHub Node Fetch <br>・ Reactor Netty |
+| Gereedschappen voor toezicht en gezondheidscontrole | Opgenomen | Verzoeken die worden gebruikt om de gezondheid of beschikbaarheid van pagina&#39;s te controleren.<br> zie [ Types van uitgesloten inhoudsverzoeken ](#excluded-content-request).<br> Voorbeelden omvatten het volgende:<br>・ `Amazon-Route53-Health-Check-Service`<br>・ EyeMonIT_bot_version_0.1_[ (https://eyemonit.com/) ](https://eyemonit.com/) <br>・ Investis-Site24x7 <br>・ Mozilla/5.0+ (compatibel; UptimeRobot/2.0; [ https://uptimerobot.com/ ](https://uptimerobot.com/)) <br>・ ThousandEyes-gonfly-x1 <br>・ OmtrBot/1.0 <br>・ WebMon/2.0.0 |
 | `<link rel="prefetch">` aanvragen | Opgenomen | Wanneer klanten vooraf inhoud laden of vooraf instellen (bijvoorbeeld met `<link rel="prefetch">`), telt het systeem die serververzoeken. Let erop dat deze benadering het verkeer kan verhogen, afhankelijk van het aantal van deze pagina&#39;s dat vooraf is ingesteld. |
 | Verkeer dat Adobe Analytics- of Google Analytics-rapportage blokkeert | Opgenomen | Het is meer gebruikelijk dat bezoekers van sites privacysoftware (Ad-blockers, enzovoort) hebben geïnstalleerd die van invloed is op de nauwkeurigheid van Google Analytics of Adobe Analytics. AEM as a Cloud Service telt verzoeken op het eerste toegangspunt tot de door Adobe geëxploiteerde infrastructuur en niet op de client. |
 
-Zie ook [&#x200B; Dashboard van de Vergunning &#x200B;](/help/implementing/cloud-manager/license-dashboard.md).
+Zie ook [ Dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md).
 
 ### Typen verzoeken om uitgesloten inhoud {#excluded-content-request}
 
@@ -95,8 +95,7 @@ Zie ook [&#x200B; Dashboard van de Vergunning &#x200B;](/help/implementing/cloud
 | Verkeer van aanvallen DDOS | Uitgesloten | DDOS-bescherming. AEM detecteert sommige DDOS-aanvallen automatisch en blokkeert deze. DDOS-aanvallen indien gedetecteerd, kunnen niet worden opgeladen. |
 | AEM as a Cloud Service New Relic Monitoring | Uitgesloten | AEM as a Cloud Service global monitoring. |
 | URL voor klanten om hun Cloud Service-programma te controleren | Uitgesloten | Adobe adviseert dat u URL gebruikt om de beschikbaarheid of de gezondheidscontrole uiterlijk te controleren.<br><br>`/system/probes/health` |
-| AEM as a Cloud Service Pod Warm-up Service | Uitgesloten |
-| Agent: skyline-service-warmup/1.* |
+| AEM as a Cloud Service Pod Warm-up Service | Uitgesloten | Agent: skyline-service-warmup/1.* |
 | Bekende zoekmachines, sociale netwerken en HTTP-bibliotheken (getagd door Snelst) | Uitgesloten | De bekende diensten die de plaats regelmatig bezoeken om hun onderzoeksindex of de dienst te verfrissen:<br><br> Voorbeelden:<br>・ AddSearchBot <br>・ AhrefsBot <br>・ Applebot <br>・ Vraag Jeeves Corporate Spider <br>・ Bingbot <br>・ BingPreview <br>・ BLEXBot <br>・ BouwtWith <br> <br>・ CrawlerKengo <br>・ Facebookexternalhit <br>・ Google AdsBot <br>・ Google AdsBot Mobile <br>・ Googlebot <br>・ Googlebot Mobile <br>・ lmspin <br>・ LucidWorks <br>・ `MJ12bot`<br> Pinterest <br>・ SembrushBot <br>・ SiteImproved <br>・ StashBot <br>・ StatusCake <br>・ YandexBot <br>・ ContentKing <br>・ Claudebot |
 | Commerce integration framework-oproepen uitsluiten | Uitgesloten | Verzoeken die zijn ingediend bij AEM en die worden doorgestuurd naar de Commerce integration framework—de URL begint met `/api/graphql`—om dubbeltellingen te voorkomen, kunnen niet worden gefactureerd voor Cloud Service. |
 | Uitsluiten `manifest.json` | Uitgesloten | Manifest is geen API-oproep. Hier vindt u informatie over het installeren van websites op een desktopcomputer of mobiele telefoon. Adobe moet JSON-aanvraag niet tellen naar `/etc.clientlibs/*/manifest.json` |
@@ -105,7 +104,7 @@ Zie ook [&#x200B; Dashboard van de Vergunning &#x200B;](/help/implementing/cloud
 
 ## Inhoudsverzoeken beheren {#managing-content-requests}
 
-Zoals vermeld in de bovengenoemde sectie [&#x200B; Varianties van de inhoudsverzoeken van Cloud Service &#x200B;](#content-requests-variances), kunnen de inhoudsverzoeken hoger zijn dan verwacht toe te schrijven aan een aantal redenen, met een gemeenschappelijke draad die verkeer dat CDN raakt.  Het is voor u als AEM-klant nuttig om uw inhoudsaanvragen te controleren en te beheren om binnen uw licentiebudget te passen.  Het beheren van inhoudverzoeken is over het algemeen een combinatie implementatietechnieken en [&#x200B; regels van de verkeersfilter &#x200B;](/help/security/traffic-filter-rules-including-waf.md).
+Zoals vermeld in de bovengenoemde sectie [ Varianties van de inhoudsverzoeken van Cloud Service ](#content-requests-variances), kunnen de inhoudsverzoeken hoger zijn dan verwacht toe te schrijven aan een aantal redenen, met een gemeenschappelijke draad die verkeer dat CDN raakt.  Het is voor u als AEM-klant nuttig om uw inhoudsaanvragen te controleren en te beheren om binnen uw licentiebudget te passen.  Het beheren van inhoudverzoeken is over het algemeen een combinatie implementatietechnieken en [ regels van de verkeersfilter ](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementatietechnieken voor het beheer van inhoudsaanvragen {#implementation-techniques-to-manage-crs}
 
@@ -117,7 +116,7 @@ Zoals vermeld in de bovengenoemde sectie [&#x200B; Varianties van de inhoudsverz
 
 ### De filterregels van het verkeer om inhoudsverzoeken te beheren {#traffic-filter-rules-to-manage-crs}
 
-* Een gemeenschappelijk beide patroon is het gebruiken van een lege gebruikersagent.  U zult uw implementatie en verkeerspatronen moeten herzien om te zien of is de lege gebruikersagent nuttig of niet.  Als u dit verkeer zou willen blokkeren, geadviseerde [&#x200B; syntaxis &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) is:
+* Een gemeenschappelijk beide patroon is het gebruiken van een lege gebruikersagent.  U zult uw implementatie en verkeerspatronen moeten herzien om te zien of is de lege gebruikersagent nuttig of niet.  Als u dit verkeer zou willen blokkeren, geadviseerde [ syntaxis ](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) is:
 
 ```
 trafficFilters:
@@ -130,4 +129,4 @@ trafficFilters:
       action: block
 ```
 
-* Sommige brouten raakten op een dag erg zwaar en verdwijnen de volgende.  Dit kan om het even welke pogingen om een specifiek IP adres of een gebruikersagent te blokkeren dwarsbomen.  Één generische benadering moet de regel van de a [&#x200B; tariefgrens &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) introduceren.  Herzie de [&#x200B; voorbeelden &#x200B;](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) en vecht een regel die uw tolerantie voor een snel tarief van verzoeken aanpast.  Herzie de [&#x200B; syntaxis van de Structuur van de Voorwaarde &#x200B;](/help/security/traffic-filter-rules-including-waf.md#condition-structure) voor om het even welke uitzonderingen u aan een generische tariefgrens kunt wensen toe te staan.
+* Sommige brouten raakten op een dag erg zwaar en verdwijnen de volgende.  Dit kan om het even welke pogingen om een specifiek IP adres of een gebruikersagent te blokkeren dwarsbomen.  Één generische benadering moet de regel van de a [ tariefgrens ](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) introduceren.  Herzie de [ voorbeelden ](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) en vecht een regel die uw tolerantie voor een snel tarief van verzoeken aanpast.  Herzie de [ syntaxis van de Structuur van de Voorwaarde ](/help/security/traffic-filter-rules-including-waf.md#condition-structure) voor om het even welke uitzonderingen u aan een generische tariefgrens kunt wensen toe te staan.

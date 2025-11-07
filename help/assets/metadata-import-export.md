@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -25,14 +25,14 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
 >Registreer de naamruimten eerst om metagegevens in aangepaste naamruimten te importeren.
 
 1. Navigeer naar de gebruikersinterface van [!DNL Assets] , selecteer **[!UICONTROL Create]** op de werkbalk en kies **[!UICONTROL Metadata]** in het menu.
-1. Klik op **[!UICONTROL Select File]** op de pagina **[!UICONTROL Metadata Import]** . Selecteer het CSV-bestand met de metadata.
+1. Klik op **[!UICONTROL Metadata Import]** op de pagina **[!UICONTROL Select File]** . Selecteer het CSV-bestand met de metadata.
 1. Geef de volgende parameters op:
 
    | Parameter | Beschrijving |
    | ---------------------- | ------- |
    | Batchgrootte | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
    | Veldscheider | De standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
-   | Scheidingsteken voor meerdere waarden | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|` . |
+   | Scheidingsteken voor meerdere waarden | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `\|` . |
    | Workflows starten | Standaard false. Wanneer deze eigenschap is ingesteld op `true` en de standaardinstellingen zijn van kracht voor de DAM Metadata WriteBack-workflow (die metagegevens naar de binaire XMP-gegevens schrijft). Als u de workflows inschakelt, wordt het systeem trager. |
    | Kolomnaam elementpad | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
@@ -68,7 +68,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 1. Selecteer de elementenmap die elementen bevat waarvoor u metagegevens wilt exporteren. Selecteer **[!UICONTROL Export metadata]** in de werkbalk.
 1. Geef in het dialoogvenster Metagegevens exporteren een naam op voor het CSV-bestand. Selecteer **[!UICONTROL Include assets in subfolders]** als u metagegevens voor elementen in submappen wilt exporteren.
 
-   ![&#x200B; Interface en opties om meta-gegevens van alle activa in een omslag &#x200B;](assets/export_metadata_page.png " Interface en opties uit te voeren om meta-gegevens van alle activa in een omslag ") uit te voeren
+   ![ Interface en opties om meta-gegevens van alle activa in een omslag ](assets/export_metadata_page.png " Interface en opties uit te voeren om meta-gegevens van alle activa in een omslag ") uit te voeren
 
 1. Selecteer de gewenste opties. Geef een bestandsnaam en zo nodig een datum op.
 
@@ -77,7 +77,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 1. Selecteer **[!UICONTROL Export]** in de werkbalk. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
 1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Open]** op de werkbalk. Als u het CSV-bestand met de metagegevens wilt downloaden, selecteert u **[!UICONTROL CSV Download]** op de werkbalk. Klik op **[!UICONTROL Close]**.
 
-   ![&#x200B; Dialoog om het Csv- dossier te downloaden dat meta-gegevens bevat die in bulk worden uitgevoerd &#x200B;](assets/csv_download.png)
+   ![ Dialoog om het Csv- dossier te downloaden dat meta-gegevens bevat die in bulk worden uitgevoerd ](assets/csv_download.png)
 
    *Cijfer: Dialoog om het Csv- dossier te downloaden dat meta-gegevens bevat die in bulk worden uitgevoerd.*
 
@@ -98,4 +98,4 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; de meta-gegevens van de Invoer wanneer het invoeren van activa in bulk &#x200B;](/help/assets/add-assets.md#asset-bulk-ingestor)
+>* [ de meta-gegevens van de Invoer wanneer het invoeren van activa in bulk ](/help/assets/add-assets.md#asset-bulk-ingestor)

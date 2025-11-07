@@ -1,24 +1,24 @@
 ---
-title: Problemen met Dynamic Media oplossen
-description: Meer informatie over tips voor het oplossen van problemen die u kunt proberen wanneer u werkt met afbeeldingen, sets en viewers in Dynamic Media.
+title: Problemen met dynamische media oplossen
+description: Leer meer over het oplossen van problemenuiteinden u kunt proberen wanneer u met beelden, reeksen, en kijkers in Dynamische Media werkt.
 contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1138'
 ht-degree: 0%
 
 ---
 
-# Problemen met Dynamic Media oplossen {#troubleshooting-dynamic-media-scene-mode}
+# Problemen met dynamische media oplossen {#troubleshooting-dynamic-media-scene-mode}
 
-In het volgende onderwerp wordt het oplossen van problemen voor Dynamic Media beschreven.
+Het volgende onderwerp beschrijft het oplossen van problemen voor Dynamische Media.
 
-## Nieuwe Dynamic Media-configuratie {#new-dm-config}
+## Nieuwe dynamische mediasconfiguratie {#new-dm-config}
 
-Zie [&#x200B; problemen oplossen een nieuwe configuratie van Dynamic Media &#x200B;](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
+Zie [ problemen oplossen een nieuwe Dynamische configuratie van Media ](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## Algemeen (alle Assets) {#general-all-assets}
 
@@ -26,26 +26,26 @@ Hier volgen enkele algemene tips en trucs voor alle elementen.
 
 ### Eigenschappen van de status van de activasynchronisatie {#asset-synchronization-status-properties}
 
-De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleerd om te bevestigen dat de middelen van Adobe Experience Manager naar Dynamic Media zijn gesynchroniseerd:
+De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleerd om de geslaagde synchronisatie van het element van Adobe Experience Manager naar Dynamic Media te bevestigen:
 
 | **Bezit** | **Voorbeeld** | **Beschrijving** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Algemene indicator dat de knoop met Dynamic Media wordt verbonden. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Algemene indicator dat de knoop met Dynamische Media wordt verbonden. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** of foutentekst | Status van het uploaden van middelen naar Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Moet zijn gevuld om URL&#39;s te genereren naar externe middelen van Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Moet worden gevuld om URLs aan ver middel van Dynamische Media te produceren. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **succes** of **ontbroken:`<error text>`** | Synchronisatiestatus van sets (centrifuges, afbeeldingssets, enzovoort), voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, updates van afbeeldingen met hyperlinks voor een element of afbeeldingen die zijn bewerkt. |
 
 ### Synchronisatie-logboekregistratie {#synchronization-logging}
 
-Synchronisatiefouten en -problemen worden aangemeld `error.log` (servermap Experience Manager `/crx-quickstart/logs/` ). Het voldoende registreren is beschikbaar om de worteloorzaak van de meeste kwesties te bepalen, nochtans kunt u het registreren aan DEBUG op het `com.adobe.cq.dam.ips` pakket door de Verschuivende Console ([&#x200B; https://localhost:4502/system/console/slinglog &#x200B;](https://localhost:4502/system/console/slinglog)) verhogen om meer informatie te verzamelen.
+Synchronisatiefouten en -problemen worden aangemeld `error.log` (Experience Manager-servermap `/crx-quickstart/logs/` ). Voldoende het registreren is beschikbaar om de worteloorzaak van de meeste kwesties te bepalen, nochtans kunt u het registreren aan DEBUG op het `com.adobe.cq.dam.ips` pakket door de Verlenen Console ([ https://localhost :4502/system/console/slinglog ](https://localhost:4502/system/console/slinglog)) verhogen om meer informatie te verzamelen.
 
 ### Versiebeheer {#version-control}
 
-Wanneer u een bestaand Dynamic Media-element vervangt (dezelfde naam en locatie), kunt u beide elementen behouden of een versie vervangen/maken:
+Wanneer u een bestaand dynamisch media-element (dezelfde naam en locatie) vervangt, kunt u beide elementen behouden of een versie vervangen/maken:
 
 * Als u beide instellingen behoudt, wordt een element gemaakt met een unieke naam voor de URL van het gepubliceerde element. `image.jpg` is bijvoorbeeld het oorspronkelijke element en `image1.jpg` is het net geüploade element.
 
-* Het maken van een versie wordt niet ondersteund in Dynamic Media. De nieuwe versie vervangt het bestaande element in levering.
+* Het maken van een versie wordt niet ondersteund in Dynamische media. De nieuwe versie vervangt het bestaande element in levering.
 
 ## Afbeeldingen en sets {#images-and-sets}
 
@@ -70,7 +70,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     </ol> </td>
    <td><p>Pagina vernieuwen/naar een andere pagina navigeren en terugkeren (JSP voor side rail moet opnieuw worden samengesteld)</p> <p>Als dat niet werkt:</p>
     <ul>
-     <li>Publish asset.</li>
+     <li>Middelen publiceren.</li>
      <li>Elementen opnieuw laden en publiceren.</li>
     </ul> </td>
   </tr>
@@ -80,8 +80,8 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td><p>Gebruik voor de carrousel alleen afbeeldingen met dezelfde grootte.</p> </td>
   </tr>
   <tr>
-   <td>De afbeelding wordt niet voorvertoond met de Dynamic Media-viewer</td>
-   <td><p>Controleer of het element <code>dam:scene7File</code> bevat in de eigenschappen van metagegevens (CRXDE Lite)</p> </td>
+   <td>Afbeelding geeft geen voorvertoning weer met de Dynamic Media-viewer</td>
+   <td><p>Controleer of het element <code>dam:scene7File</code> bevat in de metagegevenseigenschappen (CRXDE Lite)</p> </td>
    <td><p>Controleer of alle elementen zijn verwerkt.</p> </td>
   </tr>
   <tr>
@@ -126,7 +126,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
      <li>Wijs een videoprofiel toe aan de map.</li>
      <li>Bewerk het videoprofiel om meerdere coderingsvoorinstellingen op te nemen.</li>
      <li>Wacht tot de video is verwerkt.</li>
-     <li>Voordat u de video opnieuw laadt, moet u ervoor zorgen dat de Dynamic Media Encode Video-workflow niet wordt uitgevoerd.<br/> </li>
+     <li>Alvorens u de video herlaadt, zorg ervoor dat de Dynamische Media coderen Video werkschema niet loopt.<br/> </li>
      <li>Laad de video opnieuw.</li>
     </ol> </td>
   </tr>
@@ -139,7 +139,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     </ul> </td>
    <td>
     <ol>
-     <li>Controleer of de Dynamic Media Configuration onder Cloud Servicen correct is ingesteld.</li>
+     <li>Controleer of de Configuratie van dynamische media onder de Diensten van de Wolk behoorlijk opstelling is.</li>
      <li>Controleer of de map een videoprofiel heeft. Controleer ook het videoprofiel.</li>
     </ol> </td>
   </tr>
@@ -180,23 +180,23 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
 
    >[!NOTE]
    >
-   >Het kan ongeveer 10 minuten duren nadat de Dynamic Media-cloudinstellingen zijn geconfigureerd voor synchronisatie van de viewerelementen.
+   >Het kan ongeveer 10 minuten duren nadat de instellingen voor de dynamische mediolcloud zijn geconfigureerd voor synchronisatie van de viewerelementen.
 
 1. Als de niet-geactiveerde activa blijven, selecteer één van beide **Lijst alle Unactivated knopen van Assets** om details te zien.
 
 **Oplossing**
 
 1. Navigeer naar de lijst met voorinstellingen voor viewers in beheergereedschappen: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
-1. Selecteer alle kijker vooraf instelt, dan uitgezochte **Publish**.
+1. Selecteer alle kijker vooraf instelt, dan uitgezocht **publiceren**.
 1. Navigeer terug naar voorbeeldbeheer en controleer of het aantal niet-geactiveerde elementen nu nul is.
 
 ### Probleem: met vooraf ingestelde illustraties van de viewer wordt 404 geretourneerd vanuit Voorvertoning in gegevens over elementen of via URL kopiëren/code insluiten {#viewer-preset-404}
 
 **hoe te om** te zuiveren
 
-Ga als volgt te werk bij CRXDE Lite:
+Ga in CRXDE Lite als volgt te werk:
 
-1. Navigeer naar de map `<sync-folder>/_CSS/_OOTB` in de Dynamic Media-synchronisatiemap (bijvoorbeeld `/content/dam/_CSS/_OOTB` ).
+1. Navigeer naar de map `<sync-folder>/_CSS/_OOTB` in de map Dynamic Media sync (bijvoorbeeld `/content/dam/_CSS/_OOTB` ).
 1. Zoek het metagegevensknooppunt van het problematische element (bijvoorbeeld `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/` ).
 1. Controleer op de aanwezigheid van `dam:scene7*` -eigenschappen. Als de activa met succes werden gesynchroniseerd en gepubliceerd, ziet u `dam:scene7FileStatus` reeks is aan **PublishComplete**.
 1. Poging om de illustratie rechtstreeks via Dynasmic Media aan te vragen door de waarden van de volgende eigenschappen en letterlijke tekenreeksen samen te voegen:
@@ -216,7 +216,7 @@ Als de voorbeeldbestanden of de vooraf ingestelde illustratie van de viewer niet
 1. Ga naar CRX Package Manager: `https://localhost:4502/crx/packmgr/` .
 1. Zoeken naar een viewerpakket in de lijst; het begint met `cq-dam-scene7-viewers-content` .
 1. Selecteer **opnieuw installeren**.
-1. Onder Cloud Servicen, navigeer aan de pagina van de Configuratie van Dynamic Media, dan open de doos van de configuratiedialoog voor uw configuratie Dynamic Media - S7.
+1. Onder de Diensten van de Wolk, navigeer aan de Dynamische pagina van de Configuratie van Media, dan open de doos van de configuratiedialoog voor uw Dynamische Media - S7 configuratie.
 1. Breng geen veranderingen aan, uitgezocht **sparen**.
 Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CSS met voorinstellingen voor viewers en de illustraties te maken en te synchroniseren.
 
@@ -224,7 +224,7 @@ Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CS
 
 **Oplossing**
 
-1. Selecteer in Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]** .
+1. Selecteer in Experience Manager het Experience Manager-logo voor toegang tot de algemene navigatieconsole en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]** .
 1. Navigeer in de linkertrack naar de map met voorbeeldinhoud op de volgende locatie:
 
    `/content/dam/_DMSAMPLE`
@@ -235,6 +235,6 @@ Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CS
    `/conf/global/settings/dam/dm/presets/viewer`
 
 1. Verwijder de map `viewer` .
-1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van de pagina CRXDE Lite.
-1. In de upper-left hoek van de pagina van de CRXDE Lite, selecteer het **Terug Home** pictogram.
-1. Maak de Configuratie van a [&#x200B; Dynamic Media in Cloud Servicen &#x200B;](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) opnieuw.
+1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van de CRXDE Lite-pagina.
+1. In de upper-left hoek van de pagina van CRXDE Lite, selecteer het **Terug Home** pictogram.
+1. Maak opnieuw a [ Dynamische Configuratie van Media in de Diensten van de Wolk ](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).

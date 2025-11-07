@@ -4,7 +4,7 @@ description: Meer informatie over belangrijke aspecten van Assets Ultimate, zoal
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Assets] as a Cloud Service Ultimate {#assets-ultimate-user-types-privileges}
 
-![&#x200B; Assets as a Cloud Service Ultimate &#x200B;](/help/assets/assets/aem-assets-ultimate-banner.png)
+![ Assets as a Cloud Service Ultimate ](/help/assets/assets/aem-assets-ultimate-banner.png)
 
 Assets as a Cloud Service Ultimate biedt geavanceerde DAM-mogelijkheden. AEM Assets Ultimate is ontworpen voor het beheer van complexe toeleveringsketens voor inhoud en zorgt ervoor dat alle inhoud goed functioneert op alle kanalen.
 
@@ -55,7 +55,7 @@ Met Assets as a Cloud Service Ultimate kunt u verschillende belangrijke bewerkin
 
 * **de Automatisering van de Inhoud (toe:voegen-op)**: Hulpmiddelen om het werkbeheer te verenigen en de werkschema&#39;s van de digitale activatransformatie voor inhoudsproductie bij schaal te automatiseren.
 
-De bewerkingen die u kunt uitvoeren in Assets as a Cloud Service, zijn afhankelijk van het type gebruiker. Zie [&#x200B; Beschikbare gebruikerstypes &#x200B;](#available-user-types) voor meer informatie.
+De bewerkingen die u kunt uitvoeren in Assets as a Cloud Service, zijn afhankelijk van het type gebruiker. Zie [ Beschikbare gebruikerstypes ](#available-user-types) voor meer informatie.
 
 
 ## Wat zijn de beschikbare gebruikerstypen en rechten? {#available-user-types}
@@ -84,26 +84,26 @@ Assets as a Cloud Service biedt vier gebruikerstypen. Elk gebruikerstype verstre
 
    * Gebruik AEM Assets Content Hub Portal voor toegang tot en gebruik goedgekeurde middelen van uw organisatie.
 
-  ![&#x200B; Assets as a Cloud Service de gebruiker van de Macht &#x200B;](/help/assets/assets/assets-cs-power-users.png)
+  ![ Assets as a Cloud Service de gebruiker van de Macht ](/help/assets/assets/assets-cs-power-users.png)
 
 De volgende tabel geeft een overzicht van de beschikbare AEM Assets-gebruikerstypen, de rechten waarover deze beschikken en de productprofielen die zijn vereist om deze rechten te verkrijgen:
 
 
 | Gebruikersrol | Beperkte gebruikers | Deelnemers | Energiegebruikers | Beheerders |
 |---------------|----------|----------|-------------------------|---|
-| **Mogelijkheden** |
+| **Mogelijkheden** |  |  |  |  |
 | Gebruik merkgoedgekeurde middelen op de Content Hub-portal | ✓ | ✓ | ✓ | ✓ |
 | Elementen maken en bewerken met ingebouwde Adobe Express en Firefly | - | ✓ | ✓ | ✓ |
 | Integratie van middelen binnen uw organisatie met Adobe- en niet-Adobe-toepassingen | - | ✓ | ✓ | ✓ |
 | Toegang tot alle AEM Assets-mogelijkheden, zoals het beheer van middelen, metagegevens en het algemene beheer en de automatisering | - | - | ✓ | ✓ |
 | Machtigingen beheren voor inhoud in de AEM Assets-auteuromgeving | - | - | - | ✓ |
-| **Gebruiker moet in deze productprofielen (Admin Console) zijn** |
+| **Gebruiker moet in deze productprofielen (Admin Console) zijn** |  |  |  |  |
 | AEM > Delivery Instance > AEM Assets Limited Users | ✓ | ✓ | ✓ | ✓ |
 | AEM > Production Author Instance > AEM Assets Collaborator Users | - | ✓ | - | - |
 | AEM > Production Author Instance > AEM Assets Power Users | - | - | ✓ | - |
 | AEM > Production Author instance > AEM Administrators | - | - | - | ✓ |
-| **Meer informatie** | Zie [&#x200B; Content Hub &#x200B;](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) toelaten | Zie [&#x200B; Gebruikers van de Medewerker On-board &#x200B;](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Zie [&#x200B; De Gebruikers van de Macht aan boord &#x200B;](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
+| **Meer informatie** | Zie [ Content Hub ](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) toelaten | Zie [ Gebruikers van de Medewerker On-board ](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Zie [ De Gebruikers van de Macht aan boord ](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-Voor informatie over hoe te beginnen met Assets Ultimate, zie [&#x200B; AEM Assets Ultimate &#x200B;](/help/assets/enable-assets-ultimate.md) toelaten. Als bestaande AEM Assets-gebruikers vragen hebben over wanneer u een upgrade naar Assets Ultimate kunt uitvoeren, neemt u contact op met uw Adobe-accountvertegenwoordiger. U kunt [&#x200B; ook zien toelaten Assets Ultimate voor bestaande klanten &#x200B;](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) voor meer informatie.
+Voor informatie over hoe te beginnen met Assets Ultimate, zie [ AEM Assets Ultimate ](/help/assets/enable-assets-ultimate.md) toelaten. Als bestaande AEM Assets-gebruikers vragen hebben over wanneer u een upgrade naar Assets Ultimate kunt uitvoeren, neemt u contact op met uw Adobe-accountvertegenwoordiger. U kunt [ ook zien toelaten Assets Ultimate voor bestaande klanten ](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) voor meer informatie.
 
-AEM Assets biedt ook een lichtere DAM voor klanten die niet beschikken over geavanceerde vereisten zoals UI-uitbreidbaarheid, API-gestuurde automatisering en aangepaste code-implementatie. Voor meer informatie, zie [&#x200B; AEM Assets Prime &#x200B;](/help/assets/assets-prime.md).
+AEM Assets biedt ook een lichtere DAM voor klanten die niet beschikken over geavanceerde vereisten zoals UI-uitbreidbaarheid, API-gestuurde automatisering en aangepaste code-implementatie. Voor meer informatie, zie [ AEM Assets Prime ](/help/assets/assets-prime.md).
