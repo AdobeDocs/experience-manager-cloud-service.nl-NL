@@ -4,9 +4,9 @@ description: Met dynamische paginanummering in de interactieve communicatie-edit
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,25 @@ ht-degree: 0%
 ## Inleiding
 
 Met de functie Dynamische paginanummering in Interactieve communicatie (IC) kunnen auteurs automatisch paginanummers weergeven in hun PDF-uitvoer. Paginanummering kan worden ingeschakeld op het niveau van de basispagina, zodat de nummering op alle bijbehorende ontwerppagina&#39;s consistent blijft. Zo blijven duidelijke paginatracering en een professionele lay-out behouden voor alle communicatie met meerdere pagina&#39;s.
+
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/dynamic-page.png)
+
+## Dynamische paginanummering gebruiken in de interactieve communicatie-editor
+
+1. De interactieve communicatie-editor openen
+Open uw Interactieve Communicatie project in de Redacteur van IC.
+
+1. Ga naar stramienpagina
+Paginanummering kan alleen worden ingeschakeld in de stramienpagina. Navigeer naar de stramienpagina van uw communicatie.
+
+1. Paginanummering inschakelen
+Schakel in het deelvenster Eigenschappen de schakeloptie Paginanummer inschakelen in. Hiermee worden automatisch paginanummers aan alle gekoppelde pagina&#39;s toegevoegd.
+
+1. Plaatsing aanpassen
+De component Paginanummer kan overal op het canvas worden geplaatst nadat deze is neergezet en kan vrij worden aangepast met behulp van standaardeigenschappen voor tekst.
+
+1. Voorvertoning in PDF
+Paginanummers worden alleen weergegeven tijdens de voorvertoning van PDF. Op elke pagina wordt een dynamische nummering weergegeven.
 
 ## Belangrijkste mogelijkheden
 

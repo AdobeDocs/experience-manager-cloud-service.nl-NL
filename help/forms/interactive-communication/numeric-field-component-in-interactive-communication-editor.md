@@ -1,10 +1,10 @@
 ---
-title: Numeriek veldobject in interactieve communicatie-editor
-description: Numeriek veldobject in de interactieve communicatie-editor van AEM Forms stelt auteurs in staat numerieke invoer van gebruikers in een gecontroleerde indeling te verzamelen.
+title: Component Numeriek veld in interactieve communicatie-editor
+description: Numerieke veldcomponent in de Interactive Communication Editor in AEM Forms stelt auteurs in staat numerieke invoer van gebruikers in een gecontroleerde indeling te verzamelen.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Numeriek veldobject in interactieve communicatie-editor
+# Component Numeriek veld in interactieve communicatie-editor
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Met de component Numeriek veld in de IC-editor (Interactive Communication) kunnen auteurs numerieke invoer van gebruikers verzamelen in een gecontroleerde indeling. Of u nu telefoonnummers, pincodes, beleids-id&#39;s of financiële cijfers vastlegt, dit veld zorgt ervoor dat alleen numerieke waarden worden geaccepteerd. De component steunt ook het stileren, het formatteren, bevestiging, en gegevensband, die het voor gestructureerde mededelingen essentieel maken.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/numericfield.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/numericfield.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -130,6 +130,6 @@ Auteurs kunnen numerieke velden in lay-outcontainers of subformulieren plaatsen 
 
 - Houd een consistent uiterlijk en typografie in overeenstemming met de richtlijnen voor merken.
 
-Het **Numerieke voorwerp van het Gebied** in de Interactieve Communicatie redacteur is een nauwkeurig, betrouwbaar hulpmiddel voor op cijfer-gebaseerde gegevensinzameling. Met robuuste opties voor opmaak, zichtbaarheid en gegevensbinding zorgt deze ervoor dat numerieke invoer probleemloos wordt vastgelegd en naadloos wordt geïntegreerd in digitale formulieren. Als de stijl correct is ingesteld en geconfigureerd, verbetert deze aanzienlijk de bruikbaarheid van formulieren en de algehele gegevensnauwkeurigheid.
+De **Numerieke component van het Gebied** in de Interactieve Communicatie redacteur is een nauwkeurig, betrouwbaar hulpmiddel voor op cijfer-gebaseerde gegevensinzameling. Met robuuste opties voor opmaak, zichtbaarheid en gegevensbinding zorgt deze ervoor dat numerieke invoer probleemloos wordt vastgelegd en naadloos wordt geïntegreerd in digitale formulieren. Als de stijl correct is ingesteld en geconfigureerd, verbetert deze aanzienlijk de bruikbaarheid van formulieren en de algehele gegevensnauwkeurigheid.
 
 

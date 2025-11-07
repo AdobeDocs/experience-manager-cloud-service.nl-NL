@@ -4,9 +4,9 @@ description: De verwerking van de Overloop van de inhoud in Interactieve Communi
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,35 @@ ht-degree: 0%
 ## Inleiding
 
 Met de functie voor de afhandeling van overloop bij inhoud in de Interactieve communicatie-editor kunt u beter bepalen hoe tekst zich gedraagt binnen de indelingen Overlopen en Geplaatst. Het zorgt voor vloeiende inhoudscontinuïteit voor stroombare lay-outs en biedt visuele waarschuwingen voor gepositioneerde lay-outs, waardoor auteurs beter controle en flexibiliteit hebben bij het ontwerpen van communicatie.
+
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/content-overflow.png)
+
+## Hoe te om de Behandeling van de Overloop van de Inhoud in Interactieve Communicatie Redacteur te gebruiken
+
+1. De interactieve communicatie-editor openen
+Open uw communicatie in de Editor van IC om de lay-out en inhoud te bewerken.
+
+1. Selecteer het type layout
+Kies de gewenste indeling voor het subformulier, de optie Overlopen of de optie Geplaatst op basis van het gedrag van de inhoud.
+
+1. Voor stroombare indelingen
+
+   1. Zorg ervoor dat de bovenliggende subformulierhiërarchie is ingesteld op Overlopen.
+
+   1. Schakel in het deelvenster Eigenschappen de optie Pagina-einden binnen inhoud toestaan in (alleen zichtbaar als de optie Pagina-einden toestaan van het bovenliggende subformulier is ingeschakeld).
+
+   1. Voeg of plak tekst toe wanneer de inhoud groter is dan één pagina, dan gaat deze automatisch door op de volgende pagina.
+
+1. Voor gepositioneerde layouts
+
+   1. Voeg tekst toe of bewerk tekst in een vaste container.
+
+   1. Als de inhoud de containerhoogte overschrijdt, wordt onderaan een rode rand weergegeven om overloop aan te geven.
+
+   1. Wijzig de grootte van de container handmatig om ruimte te maken voor de extra inhoud.
+
+1. Voorbeeld van communicatie bekijken
+Met de optie PDF-voorbeeld kunt u controleren hoe de inhoud over pagina&#39;s loopt of hoe deze over beide lay-outtypen loopt.
 
 ## Belangrijkste mogelijkheden
 

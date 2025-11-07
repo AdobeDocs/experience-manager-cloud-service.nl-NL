@@ -4,9 +4,9 @@ description: Dankzij de ondersteuning voor XDP-bewerking in de Interactive Commu
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,20 @@ ht-degree: 0%
 ## Inleiding
 
 De Interactieve Communicatie (IC) Redacteur biedt nu naadloze **steun voor het uitgeven van XDP (het Pakket van Gegevens van XML) dossiers** binnen het auteursmilieu aan. Dankzij deze uitbreiding kunnen auteurs XDP-sjablonen moeiteloos beheren, wijzigen en onderhouden, zonder dat ze hiervoor externe tools nodig hebben. Met deze mogelijkheid kunnen gebruikers XDP-bestanden rechtstreeks uploaden, weergeven en bewerken in de IC Editor, waardoor een uniforme en efficiënte workflow voor ontwerp en levering mogelijk wordt.
+
+## Hoe te om Steun XDP het Uitgeven in Interactieve Communicatie Redacteur te gebruiken
+
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/support-xdp.png)
+
+1. Navigeer aan **Forms > Forms &amp; Documenten**.
+
+1. Upload uw .xdp- dossier gebruikend **creeer > Dossier uploadt** optie.
+
+1. Open XDP in **Interactieve Communicatie Redacteur**.
+
+1. Maak noodzakelijk **ontwerp of gegeven-bindende** veranderingen.
+
+1. Sla uw wijzigingen op. Updates worden automatisch weergegeven in het XDP-bronbestand.
 
 ## Belangrijkste mogelijkheden
 
@@ -46,18 +60,6 @@ Als een fragment mist, toont de redacteur a **waarschuwend bericht** erop wijzen
 - **hergebruik van het fragment in Redacteur:**
 Alle bestaande fragmenten XDP verschijnen in het **Comité van Fragmenten** van de Redacteur van IC.
 De auteurs kunnen **slepen en** deze fragmenten direct op het canvas laten vallen. De verwijzingen worden bewaard, ervoor zorgend dat de updates aan fragmenten zich over alle XDPs gebruikend hen verspreiden.
-
-## Voorbeeld van gebruik
-
-1. Navigeer aan **Forms > Forms &amp; Documenten**.
-
-1. Upload uw .xdp- dossier gebruikend **creeer > Dossier uploadt** optie.
-
-1. Open XDP in **Interactieve Communicatie Redacteur**.
-
-1. Maak noodzakelijk **ontwerp of gegeven-bindende** veranderingen.
-
-1. Sla uw wijzigingen op. Updates worden automatisch weergegeven in het XDP-bronbestand.
 
 ## Voordelen
 

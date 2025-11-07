@@ -4,9 +4,9 @@ description: Sjabloonvergrendeling in de interactieve communicatie-editor biedt 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ ht-degree: 0%
 Met de functie Sjabloonvergrendeling in de Editor voor interactieve communicatie (IC) kunnen sjabloonauteurs wijzigingen beperken tot specifieke elementen van een communicatiesjabloon. Dit verzekert ontwerpconsistentie, beschermt kritieke inhoud, en handhaaft bestuur over teams die malplaatjes opnieuw gebruiken om gepersonaliseerde mededelingen tot stand te brengen.
 
 Wanneer toegepast, verschijnen de gesloten componenten visueel verschillend en kunnen niet door stroomafwaartse auteurs of contribuanten, afhankelijk van het slottype worden gewijzigd. Deze eigenschap helpt merknormen, gegevensintegriteit, en lay-outuniformiteit over alle afgeleide mededelingen handhaven.
+
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. Vergrendeltypen
 
@@ -56,15 +58,29 @@ Wanneer toegepast, kunnen auteurs niet:
 
 - De breedte of hoogte van het element vergroten of verkleinen
 
-## &#x200B;3. Gedrag in afgeleide communicatie
+## &#x200B;3. Hoe te om Sjabloonslot in Interactieve Communicatie Redacteur te gebruiken
 
-- Wanneer een mededeling van een gesloten malplaatje wordt gecreeerd, verschijnen de gesloten elementen als read-only in de Redacteur van IC voor communicatie auteurs.
+Voer de volgende stappen uit om inhoud- of lay-outsluizen toe te passen in de sjabloon Interactieve communicatie (IC):
 
-- De binneneigenschappen of bindingen van componenten met inhoudsvergrendeling kunnen niet worden gewijzigd.
+1. Uw sjabloon openen
+Open of creeer een Malplaatje, volg de gids [ creeer een Interactief Communicatie Malplaatje ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
-- Componenten met een lay-outvergrendeling kunnen niet worden verplaatst of vergroot of verkleind.
+1. De component selecteren
+Klik op de component (tekstvak, afbeelding of subformulier) die u wilt beperken.
 
-Hierdoor kunnen sjabloonmakers het ontwerp en de structuur blijven beheren en kunnen andere gebruikers zich richten op variabele inhoud en op gegevensgestuurde aanpassing.
+1. Opties voor toegang vergrendelen
+Ga in het deelvenster Eigenschappen naar de sectie Vergrendelen.
+
+1. Vergrendelingen toepassen
+
+   1. Inhoud vergrendelen: voorkomt tekst, stijl en gegevensbewerkingen.
+
+   1. Lay-outvergrendeling: hiermee beperkt u de verplaatsing en het formaat.
+
+   1. U kunt beide voor volledige bescherming inschakelen.
+
+1. Opslaan en verifiëren
+Sla de sjabloon op en maak een nieuwe IC op basis hiervan om te bevestigen dat vergrendelde elementen niet kunnen worden gewijzigd.
 
 ## &#x200B;4. Beste praktijken
 
