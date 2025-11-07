@@ -73,8 +73,8 @@ Eerst, bekijk de documentatie detailleert het basistooling, en begin het refacto
 
 
 * Tijdens planning, is het een goed idee om een lijst van gebieden te hebben die moeten worden bewaakt om met AEM as a Cloud Service compatibel te zijn. U kunt [&#x200B; Richtlijnen van de Ontwikkeling &#x200B;](/help/implementing/developing/introduction/development-guidelines.md) voor meer details over herzien en code voor Cloud Service optimaliseren.
-* Lees omhoog op hoe te [&#x200B; te leiden Configuraties &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) in AEM as a Cloud Service.
-* Leer hoe te opstelling een Lokale Milieu van de Ontwikkeling door [&#x200B; AEM as a Cloud Service SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html) te downloaden
+* Lees omhoog op hoe te [&#x200B; te leiden Configuraties &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=nl-NL#what-is-a-configuration) in AEM as a Cloud Service.
+* Leer hoe te opstelling een Lokale Milieu van de Ontwikkeling door [&#x200B; AEM as a Cloud Service SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL) te downloaden
 * Tot slot vertrouwd maken met [&#x200B; AEM as a Cloud Service Java API &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Ook kunt u het volgende doen:
@@ -106,8 +106,8 @@ Adobe biedt verschillende gereedschappen waarmee u bepaalde taken voor het verni
 
 * [&#x200B; Migratie van het Werkschema van Activa &#x200B;](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), een hulpmiddel dat wordt gebruikt om de werkschema&#39;s van de activaverwerking automatisch te migreren
 * [&#x200B; de Convertor van Dispatcher &#x200B;](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), een hulpmiddel dat uw bestaande configuraties van Dispatcher in een formaat omzet dat voor AEM as a Cloud Service klaar is.
-* [&#x200B; Modernizer van de Bewaarplaats &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), een hulpmiddel dat een project van AEM Multimode als input neemt en het in AEM as a Cloud Service één omzet
-* [&#x200B; Omzetter van de Index &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), een hulpmiddel dat indexen in een vorm compatibel met AEM as a Cloud Service omzet
+* [&#x200B; Modernizer van de Bewaarplaats &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=nl-NL), een hulpmiddel dat een project van AEM Multimode als input neemt en het in AEM as a Cloud Service één omzet
+* [&#x200B; Omzetter van de Index &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=nl-NL), een hulpmiddel dat indexen in een vorm compatibel met AEM as a Cloud Service omzet
 * [&#x200B; Moderniseringshulpmiddelen &#x200B;](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), een reeks nut die kan worden gebruikt om erfenisAEM eigenschappen in de moderne en gesteunde mogelijkheden van AEM as a Cloud Service om te zetten.
 
 Zodra u opstelling het lokale ontwikkelmilieu hebt, wordt vertrouwd met AEM as a Cloud Service SDK door de [&#x200B; documentatie &#x200B;](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) te raadplegen.
@@ -132,9 +132,9 @@ Volg de aanbevolen procedures in de onderstaande documenten met betrekking tot h
 
 ## Voorbereiden op Go-Live {#preparing-for-go-live}
 
-Als u het bronsysteem op migratie voorbereidt, zijn er systeemtaken en taken op het niveau van AEM-beheerders nodig. U kunt beginnen door te verifiëren dat de inhoudsbewaarplaats in een goed onderhouden staat is door de [&#x200B; revisie schoonmaakbeurt &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) en de [&#x200B; status van de de huisvuilinzameling &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) taak van de gegevensopslag te controleren. Als u AEM versie 6.3 uitvoert (aangezien het Hulpmiddel van de Overdracht van de Inhoud vanaf versie 6.3 compatibel is), wordt het geadviseerd om off-line compensatie uit te voeren, die door de inzameling van het huisvuil van de Opslag van Gegevens wordt gevolgd.
+Als u het bronsysteem op migratie voorbereidt, zijn er systeemtaken en taken op het niveau van AEM-beheerders nodig. U kunt beginnen door te verifiëren dat de inhoudsbewaarplaats in een goed onderhouden staat is door de [&#x200B; revisie schoonmaakbeurt &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=nl-NL) en de [&#x200B; status van de de huisvuilinzameling &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=nl-NL) taak van de gegevensopslag te controleren. Als u AEM versie 6.3 uitvoert (aangezien het Hulpmiddel van de Overdracht van de Inhoud vanaf versie 6.3 compatibel is), wordt het geadviseerd om off-line compensatie uit te voeren, die door de inzameling van het huisvuil van de Opslag van Gegevens wordt gevolgd.
 
-[&#x200B; de consistentiecontrole van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) wordt geadviseerd over alle versies van AEM om ervoor te zorgen dat de inhoudsbewaarplaats in een goede staat om migratieactiviteiten in werking te stellen.
+[&#x200B; de consistentiecontrole van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=nl-NL) wordt geadviseerd over alle versies van AEM om ervoor te zorgen dat de inhoudsbewaarplaats in een goede staat om migratieactiviteiten in werking te stellen.
 
 De toegang van het de beheerderniveau van het systeem wordt vereist om [&#x200B; AZCopy &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) te installeren en te vormen
 
