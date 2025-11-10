@@ -17,7 +17,7 @@ ht-degree: 0%
 >id="assets_search"
 >title="Zoeken in Assets"
 >abstract="Zoek naar activa door een sleutelwoord in de bar van het Onderzoek te specificeren of door activa te filtreren die op hun status, dossiertype, MIME type, grootte, verwezenlijking, wijziging, en vervaldata worden gebaseerd. Naast de standaardfilters kunt u ook aangepaste filters toepassen. U kunt de gefilterde resultaten opslaan als een opgeslagen zoekopdracht of als een slimme verzameling."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=en#manage-smart-collection" text="Slimme verzamelingen maken"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=nl-NL#manage-smart-collection" text="Slimme verzamelingen maken"
 
 [!DNL Assets view] biedt een effectieve zoekfunctie die standaard werkt. De zoekopdracht is uitgebreid omdat het een zoekopdracht in volledige tekst betreft. Met de krachtige zoekfunctionaliteit kunt u snel de juiste middelen vinden en de snelheid van de inhoud verbeteren. [!DNL Assets view] biedt zoekopdrachten in volledige tekst en zoekopdrachten via metagegevens, zoals slimme tags, titel, gemaakte datum en copyright.
 
@@ -245,7 +245,7 @@ U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de
 
 * **Wijs Taken** toe: Wijs taken aan gebruikers voor een activa toe.
 
-* **Controle**: [&#x200B; controleert de verrichtingen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets) die op activa worden uitgevoerd.
+* **Controle**: [&#x200B; controleert de verrichtingen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/search-assets) die op activa worden uitgevoerd.
 
 ## Eerste homepage van zoekopdracht configureren {#configuring-search-first-homepage}
 
@@ -366,13 +366,13 @@ Als u moet verstrekken terugkoppelt op de Contextuele eigenschap van het Onderzo
 
 ## Volgende stappen {#next-steps}
 
-* [&#x200B; bekijk een video aan onderzoeksactiva in de mening van Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
+* [&#x200B; bekijk een video aan onderzoeksactiva in de mening van Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=nl-NL)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar.
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
 
 
 
