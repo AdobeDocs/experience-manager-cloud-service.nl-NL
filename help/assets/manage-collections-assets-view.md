@@ -4,9 +4,9 @@ description: Een verzameling is een set elementen in de weergave Experience Mana
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ You can share collections with various users that are assigned different levels 
 
 U kunt meerdere verzamelingen delen met een gebruiker. Elke verzameling bevat verwijzingen naar elementen. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.
 
-![&#x200B; Inzamelingen &#x200B;](assets/collections.png)
+![ Inzamelingen ](assets/collections.png)
 
 U kunt de volgende taken uitvoeren om inzamelingen te beheren en te gebruiken:
 
@@ -37,6 +37,8 @@ U kunt de volgende taken uitvoeren om inzamelingen te beheren en te gebruiken:
 * [Elementen toevoegen aan een verzameling](#add-assets-to-collection)
 
 * [Elementen uit een verzameling verwijderen](#remove-assets-from-collection)
+
+* [Zoeken in verzamelingen](#search-collection)
 
 * [Een slimme verzameling maken](#create-smart-collection)
 
@@ -64,7 +66,7 @@ Een verzameling maken:
 
 1. Klik op **[!UICONTROL Create]** om de verzameling te maken.
 
-![&#x200B; creeer inzameling &#x200B;](assets/create-collection.png)
+![ creeer inzameling ](assets/create-collection.png)
 
 <!--
    
@@ -94,6 +96,32 @@ Elementen uit een verzameling verwijderen:
 
 1. Klik op **[!UICONTROL Remove]**.
 
+## Zoeken in verzamelingen {#search-collection}
+
+U kunt in een verzameling zoeken naar relevante elementen. Voer daartoe de volgende stappen uit:
+
+* Navigeer naar **[!DNL Collections]** . Voer in de zoekbalk een trefwoord in om de gewenste verzameling te zoeken. De zoekbalk geeft de locatie van de geselecteerde verzameling weer.
+
+* Als u de zoekresultaten wilt verfijnen, opent u **[!DNL Filters]** en selecteert u **[!DNL Collections]** onder **[!DNL Asset Type]** .
+
+* Kies in het vervolgkeuzemenu **[!DNL Collection Visibility]** een van de volgende opties:
+
+   * **[!DNL All]:** toont alle inzamelingen, ongeacht zicht.
+   * **[!DNL Public Collection]:** toont slechts inzamelingen die aan alle gebruikers zichtbaar zijn.
+   * **[!DNL Private Collection]:** toont slechts inzamelingen die aan specifieke gebruikers of groepen beperkt of zichtbaar zijn.
+
+* Kies in het vervolgkeuzemenu [!DNL Collection Type] een van de volgende opties:
+
+   * **[!DNL All]:** toont zowel regelmatige als slimme inzamelingen.
+   * **[!DNL Collection]:** toont manueel gecreeerde inzamelingen waar de activa individueel worden toegevoegd.
+   * **[!DNL Smart Collection]:** toont inzamelingen die automatisch activa omvatten die onder [ Slimme Inzamelingen ](#manage-smart-collection) worden bewaard.
+
+* Met het vervolgkeuzemenu **[!DNL Created Date]** kunt u verzamelingen filteren op basis van het tijdstip waarop ze zijn gemaakt. U kunt een datumbereik opgeven om recent gemaakte of oudere verzamelingen te zoeken.
+
+  ![ de inzameling van het Onderzoek ](assets/search-collection.png)
+
+Voor meer informatie, zie [ onderzoeksactiva ](search-assets-view.md), [ resultaten van het filteronderzoek ](search-assets-view.md#refine-search-results), of [ bewaarde onderzoeken ](search-assets-view.md##saved-search) beheren.
+
 ## Een slimme verzameling beheren {#manage-smart-collection}
 
 Sla de zoekresultaten op als een slimme verzameling om de inhoud van de verzameling dynamisch bij te werken. Als er elementen zijn toegevoegd aan de Assets-weergaveopslagplaats die voldoen aan de zoekcriteria die zijn gedefinieerd tijdens het maken van de slimme verzameling, wordt de inhoud van de slimme verzameling automatisch bijgewerkt wanneer u een slimme verzameling opent.
@@ -102,11 +130,11 @@ Sla de zoekresultaten op als een slimme verzameling om de inhoud van de verzamel
 
 Een slimme verzameling maken:
 
-1. Klik **[!UICONTROL Filter]** en [&#x200B; bepalen de onderzoekscriteria &#x200B;](search-assets-view.md#refine-search-results).
+1. Klik **[!UICONTROL Filter]** en [ bepalen de onderzoekscriteria ](search-assets-view.md#refine-search-results).
 
 1. Klik op **[!UICONTROL Save as]** en selecteer vervolgens **[!UICONTROL Smart Collection]** .
 
-   ![&#x200B; creeer slimme inzameling &#x200B;](assets/create-smart-collection.png)
+   ![ creeer slimme inzameling ](assets/create-smart-collection.png)
 
 1. Geef in het dialoogvenster [!UICONTROL Create Smart Collection] een titel en een beschrijving op voor de slimme verzameling.
 
@@ -122,7 +150,7 @@ Een slimme verzameling bewerken:
 
 1. Klik op **[!UICONTROL Edit Smart Collection]**.
 
-1. Voor het [!UICONTROL Edit Smart Collection Filters] dialoogvakje, [&#x200B; werk de onderzoekscriteria &#x200B;](search-assets-view.md#refine-search-results) voor de Slimme Inzameling bij.
+1. Voor het [!UICONTROL Edit Smart Collection Filters] dialoogvakje, [ werk de onderzoekscriteria ](search-assets-view.md#refine-search-results) voor de Slimme Inzameling bij.
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -158,15 +186,15 @@ Metagegevens van verzamelingen weergeven en bewerken:
 1. De metagegevens van de verzameling weergeven met het tabblad **[!UICONTROL Basic]** .
 1. Wijzig desgewenst de metagegevensvelden. U kunt de velden [!UICONTROL Title] en [!UICONTROL Description] wijzigen.
 
-![&#x200B; meta-gegevens van de Inzameling &#x200B;](assets/collection-metadata.png)
+![ meta-gegevens van de Inzameling ](assets/collection-metadata.png)
 
 ## Koppelingen voor verzamelingen delen {#share-collection-links}
 
 Met [!DNL Assets view] kunt u een koppeling genereren en verzamelingen en elementen in verzamelingen delen met externe belanghebbenden die geen toegang hebben tot de [!DNL Assets view] -toepassing. U kunt een vervaldatum voor de verbinding bepalen en dan het delen met anderen gebruikend uw aangewezen communicatie methode zoals e-mail of overseinendiensten. Ontvangers van de koppeling kunnen een voorbeeld van de elementen bekijken en deze downloaden.
 
-![&#x200B; verbinding van het Aandeel voor activa &#x200B;](assets/share-link-collections.png)
+![ verbinding van het Aandeel voor activa ](assets/share-link-collections.png)
 
-Voor meer informatie over hoe te om inzamelingsverbindingen met externe belanghebbenden te delen, zie [&#x200B; verbindingen voor activa &#x200B;](/help/assets/share-links-for-assets-view.md) delen.
+Voor meer informatie over hoe te om inzamelingsverbindingen met externe belanghebbenden te delen, zie [ verbindingen voor activa ](/help/assets/share-links-for-assets-view.md) delen.
 
 ## Een verzameling downloaden {#download-collection}
 
@@ -192,20 +220,20 @@ Een verzameling verwijderen:
 
 ## Rechten voor een privéverzameling beheren{#manage-permissions-private-collection}
 
-U kunt beheerders toestaan om [&#x200B; toegangsniveaus &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) voor privé inzamelingen te beheren beschikbaar in de bewaarplaats. U kunt machtigingen zoals `Can View` en `Can Edit` toewijzen aan gebruikersgroepen of gebruikers. U kunt toestemmingsbeheervoorrechten aan gebruikersgroepen ook delegeren. De gebruikers die privé inzamelingen tot stand brengen zijn de eigenaars van die inzamelingen. Ze kunnen de handeling [!UICONTROL Manage Permissions] gebruiken om toegang te verlenen aan andere gebruikers. Bovendien kunnen beheerders machtigingen van de privéverzamelingen in de [!DNL Experience Manager] -opslagplaats weergeven en beheren.
+U kunt beheerders toestaan om [ toegangsniveaus ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) voor privé inzamelingen te beheren beschikbaar in de bewaarplaats. U kunt machtigingen zoals `Can View` en `Can Edit` toewijzen aan gebruikersgroepen of gebruikers. U kunt toestemmingsbeheervoorrechten aan gebruikersgroepen ook delegeren. De gebruikers die privé inzamelingen tot stand brengen zijn de eigenaars van die inzamelingen. Ze kunnen de handeling [!UICONTROL Manage Permissions] gebruiken om toegang te verlenen aan andere gebruikers. Bovendien kunnen beheerders machtigingen van de privéverzamelingen in de [!DNL Experience Manager] -opslagplaats weergeven en beheren.
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-Voor informatie over hoe te om de beschikbare toestemmingen aan gebruikersgroepen toe te wijzen, zie [&#x200B; toestemmingen aan gebruikersgroepen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) toevoegen.
+Voor informatie over hoe te om de beschikbare toestemmingen aan gebruikersgroepen toe te wijzen, zie [ toestemmingen aan gebruikersgroepen ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) toevoegen.
 
-Voor meer informatie over het werkschema van begin tot eind, zie [&#x200B; toestemmingen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) beheren.
+Voor meer informatie over het werkschema van begin tot eind, zie [ toestemmingen ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) beheren.
 
 ## Volgende stappen {#next-steps}
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)
