@@ -46,7 +46,7 @@ Een batchbewerking is een proces waarbij meerdere documenten van een vergelijkba
 
 **Partij APIs**: Laat u een partijconfiguraties tot stand brengen en de partijlooppas uitvoeren die op deze configuraties wordt gebaseerd om een PDF of een malplaatje XDP met gegevens samen te voegen en output in PDF, PS, PCL, DPL, IPL en formaten te produceren ZPL. De mededelingen verstrekken partij APIs voor configuratiebeheer en partijuitvoering.
 
-![ gegeven-fusie-lijst ](assets/communications-batch-structure.png)
+![&#x200B; gegeven-fusie-lijst &#x200B;](assets/communications-batch-structure.png)
 
 **Opslag**: Communicatie APIs gebruikt klant bezeten Microsoft Azure Cloud opslag om klantenverslagen te halen en geproduceerde documenten op te slaan. U configureert Microsoft Azure Storage in Experience Manager Cloud Service Configuration.
 
@@ -58,13 +58,13 @@ U kunt batchbewerkingen gebruiken om meerdere documenten met een gepland interva
 
 >[!VIDEO](https://video.tv.adobe.com/v/338349)
 
-U kunt de video bekijken of de onderstaande instructies uitvoeren om te leren hoe u documenten kunt genereren met behulp van batchbewerkingen. De API verwijzingsdocumentatie die in video wordt gebruikt is beschikbaar in het formaat .yaml. U kunt het [ Band APIs ](assets/batch-api.yaml) dossier downloaden en het uploaden aan Postman om functionaliteit van APIs te controleren en langs de video te volgen.
+U kunt de video bekijken of de onderstaande instructies uitvoeren om te leren hoe u documenten kunt genereren met behulp van batchbewerkingen. De API verwijzingsdocumentatie die in video wordt gebruikt is beschikbaar in het formaat .yaml. U kunt het [&#x200B; Band APIs &#x200B;](assets/batch-api.yaml) dossier downloaden en het uploaden aan Postman om functionaliteit van APIs te controleren en langs de video te volgen.
 
 ### Voorwaarden {#pre-requisites}
 
 Voor het gebruik van de batch-API is het volgende vereist:
 
-* [ Microsoft Azure-opslagaccount ](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
+* [&#x200B; Microsoft Azure-opslagaccount &#x200B;](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
 * PDF- of XDP-sjablonen
 * [Gegevens die met sjablonen moeten worden samengevoegd](#form-data)
 * Gebruikers met Experience Manager-beheerdersrechten
@@ -80,7 +80,7 @@ Voordat u een batchbewerking gebruikt:
 
 ### Klantgegevens (XML-bestanden) uploaden naar Azure Storage
 
-Op uw Microsoft Azure Opslag, creeer [ containers ](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) en [ upload klantengegevens (XML) ](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) aan de [ omslagen ](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) binnen de containers.
+Op uw Microsoft Azure Opslag, creeer [&#x200B; containers &#x200B;](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) en [&#x200B; upload klantengegevens (XML) &#x200B;](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) aan de [&#x200B; omslagen &#x200B;](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) binnen de containers.
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Met de Cloud-configuratie wordt uw Experience Manager-instantie verbonden met Mi
 
 1. Ga naar Extra > Cloud Services > Azure Storage
 1. Open een map als host voor de configuratie en klik op Maken. U gebruikt de algemene map of maakt een map.
-1. Geef een naam op voor de configuratie en referenties waarmee u verbinding wilt maken met de service. U kunt [ deze geloofsbrieven van uw portaal van de Opslag van Microsoft Azure ](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys) terugwinnen.
+1. Geef een naam op voor de configuratie en referenties waarmee u verbinding wilt maken met de service. U kunt [&#x200B; deze geloofsbrieven van uw portaal van de Opslag van Microsoft Azure &#x200B;](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys) terugwinnen.
 1. Klik op Maken.
 
 Uw Experience Manager-exemplaar is nu gereed om verbinding te maken met Microsoft Azure Storage en deze te gebruiken voor het opslaan en lezen van inhoud, indien nodig.
@@ -124,7 +124,7 @@ Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaat
 
 ## batch-API gebruiken om documenten te genereren {#use-batch-API-to-generate-documents}
 
-Als u een batch-API wilt gebruiken, maakt u een batchconfiguratie en voert u op basis van die configuratie een uitvoering uit. De API-documentatie biedt informatie over API&#39;s voor het maken en uitvoeren van een batch, overeenkomende parameters en mogelijke fouten. U kunt het [ API definitiedossier ](assets/batch-api.yaml) downloaden en het uploaden aan [ Postman ](https://go.postman.co/home) of gelijkaardige software om APIs te testen om een partijverrichting tot stand te brengen en in werking te stellen.
+Als u een batch-API wilt gebruiken, maakt u een batchconfiguratie en voert u op basis van die configuratie een uitvoering uit. De API-documentatie biedt informatie over API&#39;s voor het maken en uitvoeren van een batch, overeenkomende parameters en mogelijke fouten. U kunt het [&#x200B; API definitiedossier &#x200B;](assets/batch-api.yaml) downloaden en het uploaden aan [&#x200B; Postman &#x200B;](https://go.postman.co/home) of gelijkaardige software om APIs te testen om een partijverrichting tot stand te brengen en in werking te stellen.
 
 ### Een batch maken {#create-a-batch}
 
@@ -173,12 +173,12 @@ Laten we het met behulp van een voorbeeld begrijpen: neem aan dat er een invoerg
 
 ## API-naslagdocumentatie
 
-De API verwijzingsdocumentatie verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is beschikbaar in de indeling .yaml. U kunt het [ Band APIs ](assets/batch-api.yaml) dossier downloaden en het uploaden aan Postman om functionaliteit van APIs te controleren.
+De API verwijzingsdocumentatie verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is beschikbaar in de indeling .yaml. U kunt het [&#x200B; Band APIs &#x200B;](assets/batch-api.yaml) dossier downloaden en het uploaden aan Postman om functionaliteit van APIs te controleren.
 
 >[!MORELIKETHIS]
 >
->* [ Inleiding aan de Mededelingen van AEM Forms as a Cloud Service ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [ de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
->* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
->* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [ Communicatie Verwerking - Op bestelling APIs ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [&#x200B; Inleiding aan de Mededelingen van AEM Forms as a Cloud Service &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [&#x200B; de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs &#x200B;](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [&#x200B; Communicatie Verwerking - Synchrone APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications.md)
+>* [&#x200B; Communicatie Verwerking - Partij APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [&#x200B; Communicatie Verwerking - Op bestelling APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

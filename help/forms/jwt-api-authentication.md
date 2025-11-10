@@ -20,16 +20,16 @@ JWT-verificatie in AEM Forms, met name voor integratie aan de serverzijde met AE
 
 ## Overwegingen
 
-De toegangstoken die door JWT wordt geproduceerd zal niet werken nadat huidige certificaten verlopen of 1 Maart, 2026, welke vroeger is. Daarom moet u uw integratie migreren om de nieuwe [ Server-aan-Server referentie ](/help/forms/oauth-api-authetication.md) te gebruiken.
+De toegangstoken die door JWT wordt geproduceerd zal niet werken nadat huidige certificaten verlopen of 1 Maart, 2026, welke vroeger is. Daarom moet u uw integratie migreren om de nieuwe [&#x200B; Server-aan-Server referentie &#x200B;](/help/forms/oauth-api-authetication.md) te gebruiken.
 
-Het migreren van uw projecten aan de Server-aan-Server referentie OAuth is een eenvoudig proces in twee stappen dat een nul onderbreking migratie voor uw toepassingen en integratie toelaat. Gelieve te lezen de [ migratiegids ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration) om aan de referentie van Server-aan-Server OAuth te migreren.
+Het migreren van uw projecten aan de Server-aan-Server referentie OAuth is een eenvoudig proces in twee stappen dat een nul onderbreking migratie voor uw toepassingen en integratie toelaat. Gelieve te lezen de [&#x200B; migratiegids &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration) om aan de referentie van Server-aan-Server OAuth te migreren.
 
 
 ## Vereisten
 
 Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-* Zorg ervoor dat u toegang tot [ Adobe Cloud Manager ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specifiek voor het milieu hebt u gebruikt.
+* Zorg ervoor dat u toegang tot [&#x200B; Adobe Cloud Manager &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specifiek voor het milieu hebt u gebruikt.
 * Wijs de rol Systeembeheerder of -ontwikkelaar toe aan toegang tot Adobe Cloud Manager.
 
 ## Hoe te om een Token van de Toegang te produceren gebruikend geloofsbrieven JWT?
@@ -38,10 +38,10 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
 
 1. **Adobe Cloud Manager**
 
-   1. Login aan uw [ rekening van Cloud Manager ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html).
+   1. Login aan uw [&#x200B; rekening van Cloud Manager &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html).
    2. Klik op **[!UICONTROL Program Overview]** voor het geselecteerde programma.
 
-      ![ Cloud Manager- Rekening ](/help/forms/assets/jwt-cloud-manager-landing.png)
+      ![&#x200B; Cloud Manager- Rekening &#x200B;](/help/forms/assets/jwt-cloud-manager-landing.png)
 
    3. Klik in uw programma op het menu met drie puntjes en selecteer **[!UICONTROL Developer Console]** .
 
@@ -51,15 +51,15 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
    1. Aanmelden bij AEM Developer Console
    2. Klik op **[!UICONTROL Integrations]** in de bovenste menubalk.
 
-      ![ Integraties ](/help/forms/assets/jwt-integrations.png)
+      ![&#x200B; Integraties &#x200B;](/help/forms/assets/jwt-integrations.png)
 
    3. Klik op de optie om **[!UICONTROL Create new technical account]** te gebruiken.
 
-      ![ creeer nieuwe technische rekening ](/help/forms/assets/jwt-creae-new-tech-account.png)
+      ![&#x200B; creeer nieuwe technische rekening &#x200B;](/help/forms/assets/jwt-creae-new-tech-account.png)
 
    Nadat u op een nieuwe technische account hebt geklikt, wordt de vereiste informatie voor het genereren van een toegangstoken gegenereerd, zoals de client-id en het clientgeheim, samen met andere technische accountgegevens, zoals de persoonlijke sleutel, de openbare sleutel en de vervaldatum.
 
-   ![ JWT Credentials ](/help/forms/assets/jwt-credentials.png)
+   ![&#x200B; JWT Credentials &#x200B;](/help/forms/assets/jwt-credentials.png)
 
 
 3. Credentials genereren en opslaan
