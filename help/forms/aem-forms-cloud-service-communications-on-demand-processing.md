@@ -4,9 +4,9 @@ description: Ontwikkelomgeving instellen voor interactieve communicatie-synchron
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Zorg ervoor u de vereiste toegangsrechten en toestemmingen hebt alvorens u begin
 
 **Gebruiker en roltoestemmingen**
 
-- Adobe ID die in [&#x200B; https://account.adobe.com/ &#x200B;](https://account.adobe.com/) wordt gecreeerd
+- Adobe ID die in [ https://account.adobe.com/ ](https://account.adobe.com/) wordt gecreeerd
 - Adobe ID die is gekoppeld aan de e-mail van uw organisatie
 - Adobe Managed Services-productcontext toegewezen
 - Ontwikkelaarsrol toegewezen in Adobe Admin Console
@@ -38,11 +38,11 @@ Zorg ervoor u de vereiste toegangsrechten en toestemmingen hebt alvorens u begin
 
 >[!NOTE]
 >
-> Meer leren over het toewijzen van rollen en het verlenen van toegang tot gebruikers, verwijs naar het artikel [&#x200B; gebruikers en rollen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) toevoegen.
+> Meer leren over het toewijzen van rollen en het verlenen van toegang tot gebruikers, verwijs naar het artikel [ gebruikers en rollen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) toevoegen.
 
 **Toegang van Cloud Manager**
 
-- Login geloofsbrieven voor [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com)
+- Login geloofsbrieven voor [ Cloud Manager ](https://my.cloudmanager.adobe.com)
 - Toegang tot het weergeven en beheren van de omgevingen van uw programma
 - Toestemming om CI/CD-pijpleidingen te creëren en te leiden
 - Toegang tot omgevingsdetails en configuratie
@@ -71,7 +71,7 @@ Laten we nu elke stap in detail begrijpen.
 Het AEM-exemplaar bijwerken:
 
 1. **Logboek in Adobe Cloud Manager**
-   1. Ga aan [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com)
+   1. Ga aan [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com)
    2. Meld u aan bij uw Adobe ID
 
 2. **ga aan het Overzicht van het Programma**
@@ -81,14 +81,14 @@ Het AEM-exemplaar bijwerken:
    1. Selecteer het `ellipsis` (...) pictogram naast de milieunaam en klik **Update**
    2. Klik **voorleggen** knoop en stel de voorgestelde FullstackPipeline in werking.
 
-      ![&#x200B; Milieu van de Update &#x200B;](/help/forms/assets/update-env.png)
+      ![ Milieu van de Update ](/help/forms/assets/update-env.png)
 
 ### Stap 2: gegevensopslagruimte voor klonen
 
 Kloont de Cloud Manager Git Repository om uw API-configuratiebestanden te beheren.
 
 1. **plaats van de Sectie van de Bewaarplaats**
-   1. Op de **pagina van het Overzicht van het 0&rbrace; Programma, klik de** Bewaarplaatsen **tabel**
+   1. Op de **pagina van het Overzicht van het 0} Programma, klik de** Bewaarplaatsen **tabel**
    2. Zoek de naam van de opslagplaats en klik op het weglatingenmenu (...)
    3. De URL van de gegevensopslagruimte kopiëren
 
@@ -115,10 +115,10 @@ Kloont de Cloud Manager Git Repository om uw API-configuratiebestanden te behere
       https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanity-p43162-uk59167/
       ```
 
-      ![&#x200B; Klonend de Bewaarplaats van de it &#x200B;](/help/forms/assets/repo-clone.png)
+      ![ Klonend de Bewaarplaats van de it ](/help/forms/assets/repo-clone.png)
 
 
-### Opties voor integratie van Git-opslagplaats
+**de Opties van de Integratie van de Bewaarplaats van de it**
 
 Adobe Cloud Manager biedt ondersteuning voor beide opslagplaatsingsopties:
 
@@ -137,7 +137,7 @@ Meer leren op hoe te om Adobe Cloud Manager en Adobe Cloud Manager te integreren
 Open de omgevingsgegevens van de AEM Cloud Service om de URL&#39;s en id&#39;s te verkrijgen die nodig zijn voor de API-configuratie.
 
 1. **Logboek in Adobe Cloud Manager**
-   1. Ga aan [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com)
+   1. Ga aan [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com)
    2. Meld u aan bij uw Adobe ID
 
 2. **ga aan het Overzicht van het Programma**
@@ -152,11 +152,11 @@ Selecteer uw programma in de lijst. U wordt omgeleid naar de pagina Program Over
       1. Op de **pagina van het Overzicht van het Programma**
       2. Klik **&quot;Milieu&#39;s&quot;** in het linkerzijmenu.  U ziet een lijst met alle omgevingen
 
-         ![&#x200B; Mening Alle Milieu&#39;s &#x200B;](/help/forms/assets/all-env.png)
+         ![ Mening Alle Milieu&#39;s ](/help/forms/assets/all-env.png)
 
       3. Klik op de naam van de specifieke omgeving om details weer te geven
 
-         ![&#x200B; Optie1-Milieu Details &#x200B;](/help/forms/assets/option1-env.png)
+         ![ Optie1-Milieu Details ](/help/forms/assets/option1-env.png)
 
    - **Optie 2: Van de Sectie van Milieu&#39;s**
 
@@ -164,10 +164,10 @@ Selecteer uw programma in de lijst. U wordt omgeleid naar de pagina Program Over
       2. Bepaal de plaats van de **sectie van Milieu&#39;s**
       3. Klik **&quot;tonen allen&quot;** om alle milieu&#39;s te bekijken
       4. Klik het **weglatingsmenu (...)** naast het milieu
-         ![&#x200B; Optie1-Milieu Details &#x200B;](/help/forms/assets/option2-env-details.png)
+         ![ Optie1-Milieu Details ](/help/forms/assets/option2-env-details.png)
       5. Selecteer **&quot;Details van de Mening&quot;**
 
-         ![&#x200B; Optie1-Milieu Details &#x200B;](/help/forms/assets/option1-env.png)
+         ![ Optie1-Milieu Details ](/help/forms/assets/option1-env.png)
 
 4. **vind Uw Eindpunt van AEM Forms**
 
@@ -187,7 +187,7 @@ Voorbeeld: `https://publish-author-p43162-e177398.adobeaemcloud.com`
 
 >[!NOTE]
 >
-> Om te zien hoe te om tot het Milieu van de Dienst van de Wolk van de Toegang AEM en Eindpunt van AEM Forms toegang te hebben, zie [&#x200B; het Leiden Documentatie van Milieu&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL).
+> Om te zien hoe te om tot het Milieu van de Dienst van de Wolk van de Toegang AEM en Eindpunt van AEM Forms toegang te hebben, zie [ het Leiden Documentatie van Milieu&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ### Stap 4: API Access Configuration
 
@@ -196,23 +196,23 @@ Voer de volgende stappen uit om AEM Forms Communications API&#39;s te configurer
 #### 4.1 Adobe Developer Console Project Setup
 
 1. **Toegang Adobe Developer Console**
-   1. Ga aan [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console)
+   1. Ga aan [ Adobe Developer Console ](https://developer.adobe.com/console)
    2. Meld u aan bij uw Adobe ID
 
 2. **creeer Nieuw Project**
    1. Van de **Snelle sectie van het Begin**, klik **creeer nieuw project**
    2. Een nieuw project wordt gecreeerd met een standaardnaam
 
-      ![&#x200B; creeer ADC Project &#x200B;](/help/forms/assets/adc-home.png)
+      ![ creeer ADC Project ](/help/forms/assets/adc-home.png)
 
    3. Klik **uitgeven project** in de hoogste juiste hoek
 
-      ![&#x200B; geef Project &#x200B;](/help/forms/assets/adc-edit-project.png) uit
+      ![ geef Project ](/help/forms/assets/adc-edit-project.png) uit
 
    4. Geef een betekenisvolle naam op (bijvoorbeeld &quot;formsproject&quot;)
    5. Klik **sparen**
 
-      ![&#x200B; geef de Naam van het Project uit &#x200B;](/help/forms/assets/adc-edit-projectname.png)
+      ![ geef de Naam van het Project uit ](/help/forms/assets/adc-edit-projectname.png)
 
 #### 4.2 Communicatie-API&#39;s van Forms toevoegen
 
@@ -222,39 +222,39 @@ Afhankelijk van uw vereisten kunt u verschillende AEM Forms Communications API&#
 
 1. Klik **toevoegen API**
 
-   ![&#x200B; voeg api &#x200B;](/help/forms/assets/adc-add-api.png) toe
+   ![ voeg api ](/help/forms/assets/adc-add-api.png) toe
 
 2. Selecteer **Communicatie APIs van Forms**
    1. In _voeg API_ dialoog toe, filter door **Experience Cloud**
    2. Selecteer **&quot;Communicatie APIs van Forms&quot;**
 
-   ![&#x200B; voeg Communicatie API van Forms toe &#x200B;](/help/forms/assets/adc-add-forms-api.png)
+   ![ voeg Communicatie API van Forms toe ](/help/forms/assets/adc-add-forms-api.png)
 
 
 3. Selecteer **Server-aan-Server** authentificatiemethode
 
-   ![&#x200B; Uitgezochte methode van de Authentificatie &#x200B;](/help/forms/assets/adc-add-authentication-method.png)
+   ![ Uitgezochte methode van de Authentificatie ](/help/forms/assets/adc-add-authentication-method.png)
 
 **B. Voor Forms Runtime API&#39;s**
 
 1. **klik toevoegen API**
    - In uw project, klik **toevoegen API** knoop
 
-   ![&#x200B; voeg api &#x200B;](/help/forms/assets/adc-add-api.png) toe
+   ![ voeg api ](/help/forms/assets/adc-add-api.png) toe
 
 2. **Uitgezochte AEM Forms Levering en Runtime API**
    - In _voeg API_ dialoog toe, filter door **Experience Cloud**
    - Selecteer **&quot;AEM Forms Delivery and Runtime API&quot;**
    - Klik **daarna**
 
-   ![&#x200B; voeg runtime API &#x200B;](/help/forms/assets/add-runtime-api.png) toe
+   ![ voeg runtime API ](/help/forms/assets/add-runtime-api.png) toe
 
 
 3. **Methode van de Authentificatie**
    - Selecteer **Server-aan-Server** authentificatiemethode.
 
 
-   ![&#x200B; Uitgezochte methode van de Authentificatie &#x200B;](/help/forms/assets/add-authentication-for-runtime-apis.png)
+   ![ Uitgezochte methode van de Authentificatie ](/help/forms/assets/add-authentication-for-runtime-apis.png)
 
 #### 4.3 Productprofiel toevoegen
 
@@ -272,7 +272,7 @@ Ga als volgt te werk om het productprofiel toe te voegen:
 
 3. Klik **sparen gevormde API**. De API en het Profiel van het Product worden toegevoegd aan uw project
 
-   ![&#x200B; Uitgezochte Configuratie van het Project &#x200B;](/help/forms/assets/adc-add-product-profile.png)
+   ![ Uitgezochte Configuratie van het Project ](/help/forms/assets/adc-add-product-profile.png)
 
 #### 4.4 Referenties genereren en opslaan
 
@@ -282,7 +282,7 @@ Ga als volgt te werk om het productprofiel toe te voegen:
    2. Klik op **Server-aan-Server** referentie
    3. Bekijk de **Credentials details** sectie
 
-   ![&#x200B; Credentials van de Mening &#x200B;](/help/forms/assets/adc-view-credential.png)
+   ![ Credentials van de Mening ](/help/forms/assets/adc-view-credential.png)
 
 2. **Opname API geloofsbrieven**
 
@@ -310,7 +310,7 @@ Handmatig toegangstokens genereren in Adobe Developer Console:
    1. Klik **&quot;produceer toegangstoken&quot;** knoop in de API van uw project sectie
    2. Het gegenereerde toegangstoken kopiëren
 
-   ![&#x200B; produceer het Token van de Toegang &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ produceer het Token van de Toegang ](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
@@ -404,7 +404,7 @@ Om identiteitskaart van de Cliënt van uw ADC Project toe te laten om met de ins
 
    Voeg bijvoorbeeld `allowedClientIDs` as `6bc4589785e246eda29a545d3ca55980` en envTypes als `dev` toe:
 
-   ![&#x200B; Toevoegend het dossier Config &#x200B;](/help/forms/assets/create-api-yaml-file.png)
+   ![ Toevoegend het dossier Config ](/help/forms/assets/create-api-yaml-file.png)
 
 4. **zet en duw Veranderingen** vast
 
@@ -417,13 +417,13 @@ Om identiteitskaart van de Cliënt van uw ADC Project toe te laten om met de ins
        git push origin <your-branch>
    ```
 
-   ![&#x200B; de Veranderingen van de Git van de Duw &#x200B;](/help/forms/assets/push-yaml-changes-in-git.png)
+   ![ de Veranderingen van de Git van de Duw ](/help/forms/assets/push-yaml-changes-in-git.png)
 
 
 5. **Opstelling Config Pipeline**
 
    1. **Logboek in Cloud Manager**
-      1. Ga aan [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com)
+      1. Ga aan [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com)
       2. Meld u aan bij uw Adobe ID
 
    2. **ga aan Uw Programma**
@@ -464,11 +464,11 @@ Selecteer uw programma in de lijst en u wordt omgeleid op de pagina van het Over
 
       e. Klik **&quot;ga&quot;** verder om aan het **Source Code** lusje te werk te gaan
 
-      ![&#x200B; Config Pijpleiding &#x200B;](/help/forms/assets/add-config-pipeline.png)
+      ![ Config Pijpleiding ](/help/forms/assets/add-config-pipeline.png)
 
    6. **vorm Pijpleiding - het Lusje van de Code van Source**
 
-      In het **lusje van de Code van 0&rbrace; Source:**
+      In het **lusje van de Code van 0} Source:**
 
       a. **Type van Plaatsing**
       - Selecteer **&quot;gerichte plaatsing&quot;**
@@ -487,7 +487,7 @@ Selecteer uw programma in de lijst en u wordt omgeleid op de pagina van het Over
 
       e. Klik **&quot;sparen&quot;** om de pijpleiding tot stand te brengen
 
-      ![&#x200B; Config Pijpleiding &#x200B;](/help/forms/assets/confirm-pipeline-1.png)
+      ![ Config Pijpleiding ](/help/forms/assets/confirm-pipeline-1.png)
 
 6. **stelt Configuratie** op
 
@@ -501,48 +501,48 @@ Selecteer uw programma in de lijst en u wordt omgeleid op de pagina van het Over
       1. Klik **&quot;bouwen&quot;** knoop (of speel pictogram ▶) naast uw pijpleiding
       2. Bevestig de plaatsing indien ertoe aangezet en de pijpleidingsuitvoering begint
 
-      ![&#x200B; stel de pijpleiding &#x200B;](/help/forms/assets/run-config-pipeline.png) in werking
+      ![ stel de pijpleiding ](/help/forms/assets/run-config-pipeline.png) in werking
 
    3. **verifieer Succesvolle Plaatsing**
       - Wacht op de pijpleiding om te voltooien.
          - Als dit lukt, verandert de status in &quot;Succes&quot; (groen vinkje ✓ ).
          - Als dit mislukt, verandert de status in &#39;&#39;Mislukt&#39;&#39; (rood kruis ✗ ). Klik **Logboeken van de Download** om de foutendetails te bekijken.
 
-           ![&#x200B; Succes van de Pijpleiding &#x200B;](/help/forms/assets/pipeline-suceess.png)
+           ![ Succes van de Pijpleiding ](/help/forms/assets/pipeline-suceess.png)
 
       U kunt nu de Forms Communications API&#39;s testen. Voor testdoeleinden kunt u de API&#39;s aanroepen met de Postman, curl of een andere REST-client.
 
 ### Stap 5: API-specificaties en tests
 
-Nu uw milieu wordt gevormd, kunt u beginnen de Communicatie van AEM Forms APIs te testen of gebruikend [&#x200B; Vwagen UI &#x200B;](#a-using-swagger-ui-for-api-testing) of programmatically door toepassing te ontwikkelen NodeJS.
+Nu uw milieu wordt gevormd, kunt u beginnen de Communicatie van AEM Forms APIs te testen of gebruikend [ Vwagen UI ](#a-using-swagger-ui-for-api-testing) of programmatically door toepassing te ontwikkelen NodeJS.
 
 In dit voorbeeld kunnen we een PDF genereren met behulp van de Document Services API&#39;s met de sjabloon en het XDP-bestand.
 
 #### A. Het gebruiken van Swagger UI voor API het Testen
 
-De wagger UI verstrekt een interactieve interface voor het testen APIs zonder code te schrijven.Gebruik **probeert het** eigenschap om [&#x200B; te roepen en te testen produceert de Dienst API van het Document van PDF &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
+De wagger UI verstrekt een interactieve interface voor het testen APIs zonder code te schrijven.Gebruik **probeert het** eigenschap om [ te roepen en te testen produceert de Dienst API van het Document van PDF ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 
 1. Navigeren naar API-documentatie
-   - Forms API: [&#x200B; Forms API Verwijzing &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-   - Document Services: [&#x200B; de Verwijzing van de Diensten API van het Document &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-Open de [&#x200B; Document Services APIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) documentatie in uw browser.
-2. Breid de **sectie van de Generatie van het 0&rbrace; Document uit en selecteer** produceert een invulbare vorm van PDF van een malplaatje XDP of van PDF, naar keuze met gegevens die [&#x200B; samenvoegen.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm)
+   - Forms API: [ Forms API Verwijzing ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+   - Document Services: [ de Verwijzing van de Diensten API van het Document ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+Open de [ Document Services APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) documentatie in uw browser.
+2. Breid de **sectie van de Generatie van het 0} Document uit en selecteer** produceert een invulbare vorm van PDF van een malplaatje XDP of van PDF, naar keuze met gegevens die [ samenvoegen.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm)
 3. In de juiste ruit, klik **probeert het**.
 
-   ![&#x200B; Testen van de Wagger voor API &#x200B;](/help/forms/assets/api-doc-generation.png)
+   ![ Testen van de Wagger voor API ](/help/forms/assets/api-doc-generation.png)
 4. Voer de volgende waarden in:
 
    | **Sectie** | **Parameter** | **Waarde** |
    |--------------|---------------|------------|
    | emmer | AEM-exemplaar | AEM-instantienaam zonder de Adobe-domeinnaam (`.adobeaemcloud.com`). Gebruik bijvoorbeeld `p43162-e177398` als emmertje. |
    | Beveiliging | Dragertoken | Gebruik het toegangstoken van de Server-aan-Server referentie van het Project van Adobe Developer Console |
-   | Lichaam | template | Upload een XDP om het PDF-formulier te genereren. Bijvoorbeeld, kunt u [&#x200B; dit XDP &#x200B;](/help/forms/assets/ClosingForm.xdp) gebruiken om een PDF te produceren. |
-   | Lichaam | data | Een optioneel XML-bestand met de gegevens die met de sjabloon moeten worden samengevoegd om een voorgevuld PDF-formulier te genereren. Bijvoorbeeld, kunt u [&#x200B; dit XML &#x200B;](/help/forms/assets/ClosingForm.xml) gebruiken om een PDF te produceren. |
+   | Lichaam | template | Upload een XDP om het PDF-formulier te genereren. Bijvoorbeeld, kunt u [ dit XDP ](/help/forms/assets/ClosingForm.xdp) gebruiken om een PDF te produceren. |
+   | Lichaam | data | Een optioneel XML-bestand met de gegevens die met de sjabloon moeten worden samengevoegd om een voorgevuld PDF-formulier te genereren. Bijvoorbeeld, kunt u [ dit XML ](/help/forms/assets/ClosingForm.xml) gebruiken om een PDF te produceren. |
    | Parameters | X-Adobe-Accept-Experimental | 1 |
 
 5. Klik **verzenden** om API aan te halen
 
-   ![&#x200B; verzend API &#x200B;](/help/forms/assets/api-send.png)
+   ![ verzend API ](/help/forms/assets/api-send.png)
 
 6. Controleer de reactie in het **lusje van de Reactie**:
    - Als de antwoordcode `200` is, betekent dit dat de PDF is gemaakt.
@@ -551,15 +551,15 @@ Open de [&#x200B; Document Services APIs &#x200B;](https://developer.adobe.com/e
 
    In dit geval is de antwoordcode `200` , hetgeen betekent dat de PDF is gegenereerd:
 
-   ![&#x200B; Reactie van het Overzicht &#x200B;](/help/forms/assets/api-success.png)
+   ![ Reactie van het Overzicht ](/help/forms/assets/api-success.png)
 
-   Nu, kunt u [&#x200B; gecreeerde PDF &#x200B;](/help/forms/assets/create-pdf.pdf) downloaden gebruikend de **3&rbrace; knoop van de Download &lbrace;en het bekijken in de kijker van PDF:**
+   Nu, kunt u [ gecreeerde PDF ](/help/forms/assets/create-pdf.pdf) downloaden gebruikend de **3} knoop van de Download {en het bekijken in de kijker van PDF:**
 
-   ![&#x200B; Mening PDF &#x200B;](/help/forms/assets/create-pdf.png)
+   ![ Mening PDF ](/help/forms/assets/create-pdf.png)
 
 >[!NOTE]
 >
-> Voor testende doeleinden, kunt u [&#x200B; Postman &#x200B;](https://www.postman.com/), [&#x200B; krullen &#x200B;](https://curl.se/), of een andere cliënt van de WEERSTING ook gebruiken om AEM APIs aan te halen.
+> Voor testende doeleinden, kunt u [ Postman ](https://www.postman.com/), [ krullen ](https://curl.se/), of een andere cliënt van de WEERSTING ook gebruiken om AEM APIs aan te halen.
 
 #### B. Programmaticaal door de Toepassing van NodeJS te ontwikkelen
 
@@ -570,8 +570,8 @@ Ontwikkel een toepassing Node.js om een invulbare vorm van PDF van een **XDP** m
 - Knooppunt.js geïnstalleerd op uw systeem
 - Active AEM as a Cloud Service-exemplaar
 - Dragertoken voor API-verificatie van Adobe Developer Console
-- Voorbeeld-XDP-bestand: [&#x200B; ClosingForm.xdp &#x200B;](/help/forms/assets/ClosingForm.xdp)
-- Het Dossier van XML van de steekproef: [&#x200B; ClosingForm.xml &#x200B;](/help/forms/assets/ClosingForm.xml)
+- Voorbeeld-XDP-bestand: [ ClosingForm.xdp ](/help/forms/assets/ClosingForm.xdp)
+- Het Dossier van XML van de steekproef: [ ClosingForm.xml ](/help/forms/assets/ClosingForm.xml)
 
 Als u de toepassing Node.js wilt ontwikkelen, volgt u de stapsgewijze ontwikkeling:
 
@@ -588,7 +588,7 @@ cd demo-nodejs-generate-pdf
 npm init -y
 ```
 
-![&#x200B; creeer nieuw knoop js project &#x200B;](/help/forms/assets/api-1.png)
+![ creeer nieuw knoop js project ](/help/forms/assets/api-1.png)
 
 ##### Stap 2: Vereiste afhankelijkheden installeren
 
@@ -600,7 +600,7 @@ npm install dotenv
 npm install form-data
 ```
 
-![&#x200B; installeer npm gebiedsdelen &#x200B;](/help/forms/assets/api-2.png)
+![ installeer npm gebiedsdelen ](/help/forms/assets/api-2.png)
 
 ##### Stap 3: Update package.json
 
@@ -610,7 +610,7 @@ npm install form-data
    code .
    ```
 
-   ![&#x200B; open project in redacteur &#x200B;](/help/forms/assets/api-3.png)
+   ![ open project in redacteur ](/help/forms/assets/api-3.png)
 
    Het opent het project in de coderedacteur.
 
@@ -625,7 +625,7 @@ npm install form-data
    }
    ```
 
-   ![&#x200B; update pakketdossier &#x200B;](/help/forms/assets/api-4.png)
+   ![ update pakketdossier ](/help/forms/assets/api-4.png)
 
 ##### Stap 4: Een .env-bestand maken
 
@@ -638,7 +638,7 @@ npm install form-data
    SCOPES=<ADC Project OAuth Server-to-Server credential Scopes>
    ```
 
-   ![&#x200B; creeer env- dossier &#x200B;](/help/forms/assets/api-5.png)
+   ![ creeer env- dossier ](/help/forms/assets/api-5.png)
 
    >[!NOTE]
    >
@@ -737,7 +737,7 @@ const generatePDF = async () => {
 generatePDF();
 ```
 
-![&#x200B; creeer index.js &#x200B;](/help/forms/assets/api-6.png)
+![ creeer index.js ](/help/forms/assets/api-6.png)
 
 ##### Stap 6: Voer de toepassing uit
 
@@ -745,13 +745,13 @@ generatePDF();
 node src/index.js
 ```
 
-![&#x200B; looppas toepassing &#x200B;](/help/forms/assets/api-7.png)
+![ looppas toepassing ](/help/forms/assets/api-7.png)
 
 De PDF wordt gemaakt in de map `demo-nodejs-generate-pdf` . Navigeer naar de map om het gegenereerde bestand met de naam `generatedForm.pdf` te zoeken.
 
-![&#x200B; mening creeerde pdf &#x200B;](/help/forms/assets/api-8.png)
+![ mening creeerde pdf ](/help/forms/assets/api-8.png)
 
-U kunt [&#x200B; geproduceerde PDF &#x200B;](/help/forms/assets/create-pdf.png) openen om het te bekijken.
+U kunt [ geproduceerde PDF ](/help/forms/assets/create-pdf.png) openen om het te bekijken.
 
 ## Problemen oplossen
 
@@ -822,4 +822,4 @@ U kunt [&#x200B; geproduceerde PDF &#x200B;](/help/forms/assets/create-pdf.png) 
 
 ## Verwante artikelen
 
-Leren hoe te opstellingsmilieu voor Partij (Asynchrone APIs), zie [&#x200B; AEM Forms as a Cloud Service Communicatie Batch-verwerking &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+Leren hoe te opstellingsmilieu voor Partij (Asynchrone APIs), zie [ AEM Forms as a Cloud Service Communicatie Batch-verwerking ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).

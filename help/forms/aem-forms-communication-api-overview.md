@@ -4,9 +4,9 @@ description: Overzicht van AEM Forms Communications API's, inclusief verificatie
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 69704ca8de41c655b59ce6652a4a43b788ba75ec
+source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 0%
@@ -20,11 +20,11 @@ AEM Forms Communications API&#39;s bieden een uitgebreide suite van in de cloud 
 
 AEM Forms API&#39;s zijn gestructureerd en toegankelijk via twee primaire consoles:
 
-* [&#x200B; Adobe Developer Console (ADC) &#x200B;](https://developer.adobe.com/developer-console/) - Adobe Developer Console is de gateway aan Adobe APIs, Gebeurtenissen, Runtime en App Builder.
+* [ Adobe Developer Console (ADC) ](https://developer.adobe.com/developer-console/) - Adobe Developer Console is de gateway aan Adobe APIs, Gebeurtenissen, Runtime en App Builder.
 
-* [&#x200B; AEM Developer Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console verstrekt hulpmiddelen om milieu&#39;s van AEM as a Cloud Service te zuiveren en te inspecteren.
+* [ AEM Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console verstrekt hulpmiddelen om milieu&#39;s van AEM as a Cloud Service te zuiveren en te inspecteren.
 
-Elke console biedt toegang tot verschillende API&#39;s en services voor documentverwerking, genereren, converteren, coderen en communicatietaken. APIs steunt verschillende [&#x200B; authentificatiemethodes &#x200B;](#authentication-methods).
+Elke console biedt toegang tot verschillende API&#39;s en services voor documentverwerking, genereren, converteren, coderen en communicatietaken. APIs steunt verschillende [ authentificatiemethodes ](#authentication-methods).
 
 ## Verificatiemethoden
 
@@ -44,8 +44,8 @@ API&#39;s ondersteunen meerdere verificatiemethoden voor een veilige integratie 
 >
 > Klik op de onderstaande koppelingen voor meer informatie over :-
 > 
-> * [&#x200B; OAuth server-aan-Server (Geadviseerd) &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
-> * [&#x200B; JWT (Token van het Web JSON) &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/)
+> * [ OAuth server-aan-Server (Geadviseerd) ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+> * [ JWT (Token van het Web JSON) ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/)
 
 <!--### Execution Models
 
@@ -64,7 +64,7 @@ The following table highlights the key differences between Synchronous (On-Deman
 
 Alle AEM Forms API&#39;s zijn verdeeld in twee hoofdonderdelen:
 
-* [&#x200B; Aangepaste Levering van de Vorm &amp; Runtime APIs &#x200B;](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+* [ Aangepaste Levering van de Vorm &amp; Runtime APIs ](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
 
 * [AEM Forms Communication-API&#39;s](#aem-forms-communications-apis)
 
@@ -78,69 +78,69 @@ Alle AEM Forms API&#39;s zijn verdeeld in twee hoofdonderdelen:
 
 Communicatie-API&#39;s vormen de belangrijkste focus voor documentgerichte bewerkingen.
 
-De lijst hieronder maakt een lijst van alle [&#x200B; Communicatie APIs van AEM Forms &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) samen met hun gesteunde authentificatiemethodes en uitvoeringsmodellen:
+De lijst hieronder maakt een lijst van alle [ Communicatie APIs van AEM Forms ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) samen met hun gesteunde authentificatiemethodes en uitvoeringsmodellen:
 
 #### API&#39;s voor het genereren van documenten
 
 | API-eindpunt | Uitvoeringsmodel | Verificatiemethode |
 | ------------------ | ---------------- | --------------------------- |
-| [&#x200B; /adobe/forms/batch/output/config &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig) | Asynchroon/Batch | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/batch/output/config/{configName} &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetBatchConfigbyName) | Asynchroon/Batch | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/batch/output/config/configs &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetAllBatchConfigs) | Asynchroon/Batch | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/batch/output/config/{configName}/executing](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | Asynchroon/Batch | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/batch/output/config/{configName} /executing/{executionId} &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | Asynchroon/Batch | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/batch/output/config/{configName} /Executions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Asynchroon/Batch | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/doc/v1/generatePDFOutput &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Synchroon | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/doc/v1/generatePrintedOutput &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Synchroon | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/doc/v1/generate/afp &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Synchroon | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/document/generate/pdfform &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/generate/pdfform/jobs/{id} /status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/generate/pdfform/jobs/{id} /result &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/forms/batch/output/config ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig) | Asynchroon/Batch | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/batch/output/config/{configName} ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetBatchConfigbyName) | Asynchroon/Batch | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/batch/output/config/configs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetAllBatchConfigs) | Asynchroon/Batch | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/batch/output/config/{configName}/executing](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | Asynchroon/Batch | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/batch/output/config/{configName} /executing/{executionId} ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | Asynchroon/Batch | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/batch/output/config/{configName} /Executions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Asynchroon/Batch | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/doc/v1/generatePDFOutput ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Synchroon | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/doc/v1/generatePrintedOutput ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Synchroon | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/doc/v1/generate/afp ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Synchroon | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/document/generate/pdfform ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/generate/pdfform/jobs/{id} /status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/generate/pdfform/jobs/{id} /result ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
 
 
 #### Documentmanipulatie-API&#39;s
 
 | API-eindpunt | Uitvoeringsmodel | Verificatiemethode |
 | ------------------ | ---------------- | --------------------------- |
-| [&#x200B; /adobe/forms/assembler/ddx/invoke &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/DDX-execution/operation/InvokeDDX) | Synchroon | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/assembler/pdfa/convert](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA) | Synchroon | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
-| [&#x200B; /adobe/forms/assembler/pdfa/validate &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-validation/operation/CheckIsPDFA) | Synchroon | [&#x200B; OAuth Server aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[&#x200B; JWT &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/assembler/ddx/invoke ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/DDX-execution/operation/InvokeDDX) | Synchroon | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/assembler/pdfa/convert](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA) | Synchroon | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
+| [ /adobe/forms/assembler/pdfa/validate ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-validation/operation/CheckIsPDFA) | Synchroon | [ OAuth Server aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)/[ JWT ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) |
 
 #### Documentconversie-API&#39;s
 
 | API-eindpunt | Uitvoeringsmodel | Verificatiemethode |
 |----------------|---------|----------------------|
-| [&#x200B; /adobe/document/convert/pdftoxdp &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Conversion/paths/~1convert~1pdftoxdp/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/convert/pdftoxdp ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Conversion/paths/~1convert~1pdftoxdp/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
 
 #### Extractie-API&#39;s voor documenten
 
 | API-eindpunt | Uitvoeringsmodel | Verificatiemethode |
 |----------------|---------|----------------------|
-| [&#x200B; /adobe/forms/doc/v1/extract/pdfproperties &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1pdfproperties/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/forms/doc/v1/extract/usagerights &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/extractUsageRights) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/forms/doc/v1/extract/metadata &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1metadata/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/forms/doc/v1/extract/data &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/exportData) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/extract/security](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1security/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/forms/doc/v1/extract/pdfproperties ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1pdfproperties/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/forms/doc/v1/extract/usagerights ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/extractUsageRights) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/forms/doc/v1/extract/metadata ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1metadata/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/forms/doc/v1/extract/data ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/exportData) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/extract/security](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1security/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
 
 #### API&#39;s voor documenttransformatie
 
 
 | API-eindpunt | Uitvoeringsmodel | Verificatiemethode |
 |----------------|---------|----------------------|
-| [&#x200B; /adobe/document/transform/metadata &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1transform~1metadata/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/field/signature/add](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1add/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/field/signature/clear &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1clear/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/field/signature/remove](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1remove/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/transform/metadata ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1transform~1metadata/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/field/signature/add](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1add/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/field/signature/clear ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1clear/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/field/signature/remove](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1remove/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
 
 #### Document Assurance API&#39;s
 
 | API-eindpunt | Uitvoeringsmodel | Verificatiemethode |
 |----------------|---------|----------------------|
-| [&#x200B; /adobe/document/sure/usagerights &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/applyUsageRights) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/confirm/encrypt &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1encrypt/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/sure/decrypt &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1decrypt/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/confirm/sign](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1sign/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
-| [&#x200B; /adobe/document/confirm/certify](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1certify/post) | Synchroon | [&#x200B; Server OAuth aan Server &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/sure/usagerights ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/applyUsageRights) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/confirm/encrypt ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1encrypt/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/sure/decrypt ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1decrypt/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/confirm/sign](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1sign/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
+| [ /adobe/document/confirm/certify](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1certify/post) | Synchroon | [ Server OAuth aan Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) |
 
 
 ## Volgende stappen
@@ -203,8 +203,8 @@ Leer hoe u een omgeving instelt voor synchrone (On-Demand) en asynchrone (Batch)
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Inleiding aan de Mededelingen van AEM Forms as a Cloud Service &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [&#x200B; de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs &#x200B;](/help/forms/aem-forms-cloud-service-architecture.md)
->* [&#x200B; Communicatie Verwerking - Synchrone APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications.md)
->* [&#x200B; Communicatie Verwerking - Partij APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [&#x200B; Communicatie Verwerking - Op bestelling APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [ Inleiding aan de Mededelingen van AEM Forms as a Cloud Service ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [ de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
+>* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [ Communicatie Verwerking - Op bestelling APIs ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

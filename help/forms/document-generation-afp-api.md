@@ -4,16 +4,16 @@ description: Leer hoe u de AFP Output Sync API gebruikt om uitvoeruitvoeruitvoer
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
 # AFP-uitvoer genereren met de AEM Forms API
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [&#x200B; pre-vrijgavekanaal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Advanced Function Presentation (AFP) is een krachtige documentindeling die voornamelijk voor afdrukdoeleinden is ontworpen.\
 In deze handleiding worden alle stappen en configuraties beschreven die nodig zijn om AFP-uitvoer met AEM Forms te genereren.
@@ -39,12 +39,12 @@ Genereert een AFP-bestand (Advanced Function Presentation) met een XDP-sjabloon 
 
 ### Toestemming
 
-U kunt of **BasicAuth** gebruiken (geloofsbrieven Admin) voor lokale milieu&#39;s of **&#x200B;**&#x200B;vergunning BeveelAuth voor de instanties van de Wolk van AEM.
+U kunt of **BasicAuth** gebruiken (geloofsbrieven Admin) voor lokale milieu&#39;s of **OAuth Server-aan-Server** vergunning voor de instanties van de Wolk van AEM.
 
 ### Verzoek
 
 **Eindpunt:**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[ https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post)
 
 ### Kopteksten
 
@@ -97,8 +97,8 @@ curl --location 'http://<server>:<port>/adobe/forms/document/generate/afp' \
 
 U kunt het .yaml-bestand downloaden en uploaden naar Postman om de functionaliteit van de API&#39;s te controleren.
 
-![&#x200B; AFP Postman beeld &#x200B;](/help/forms/assets/afp-postman.png)
+![ AFP Postman beeld ](/help/forms/assets/afp-postman.png)
 
 U kunt het antwoord opslaan en het opgeslagen bestand openen in de AFP-lezer om het weer te geven.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/introimg.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/introimg.png)
