@@ -22,7 +22,7 @@ AEM Forms API&#39;s zijn gestructureerd en toegankelijk via twee primaire consol
 
 * [&#x200B; Adobe Developer Console (ADC) &#x200B;](https://developer.adobe.com/developer-console/) - Adobe Developer Console is de gateway aan Adobe APIs, Gebeurtenissen, Runtime en App Builder.
 
-* [&#x200B; AEM Developer Console &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console verstrekt hulpmiddelen om milieu&#39;s van AEM as a Cloud Service te zuiveren en te inspecteren.
+* [&#x200B; AEM Developer Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console verstrekt hulpmiddelen om milieu&#39;s van AEM as a Cloud Service te zuiveren en te inspecteren.
 
 Elke console biedt toegang tot verschillende API&#39;s en services voor documentverwerking, genereren, converteren, coderen en communicatietaken. APIs steunt verschillende [&#x200B; authentificatiemethodes &#x200B;](#authentication-methods).
 
