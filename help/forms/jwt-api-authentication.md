@@ -116,7 +116,7 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
 
 >[!NOTE]
 >
-> Meer over de dienstgeloofsbrieven leren en hoe te om een toegangstoken te produceren gebruikend Adobe IMS API, [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Meer over de dienstgeloofsbrieven leren en hoe te om een toegangstoken te produceren gebruikend Adobe IMS API, [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 U kunt het gegenereerde toegangstoken nu gebruiken om API-aanroepen te maken voor ontwikkelings-, stage- of productieomgevingen.
 
