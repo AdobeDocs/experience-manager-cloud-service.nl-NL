@@ -18,17 +18,17 @@ Dit zijn de releaseopmerkingen voor de release van 13 november 2025 van de Unive
 
 >[!TIP]
 >
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
 * Contextuele handelingen zijn verplaatst naar een vervolgkeuzemenu.
 * json - schema &#39; s worden nu ter validatie aangeboden .
-* [ Lokale ontwikkelaarlogin ](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) is nu een kerndeel van de Universele Redacteur en de uitbreiding is niet meer nodig.
+* [&#x200B; Lokale ontwikkelaarlogin &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) is nu een kerndeel van de Universele Redacteur en de uitbreiding is niet meer nodig.
 * De juiste spoorweg werd gemigreerd naar een nieuwe UI.
 * Items in de inhoudsstructuur worden nu automatisch uitgevouwen.
 
@@ -38,7 +38,7 @@ Als u deze functies wilt testen en feedback wilt delen, stuurt u een e-mail naar
 
 ### Nieuwe RTE {#new-rte}
 
-De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [ dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
+De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [&#x200B; dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
 
 ## Overige verbeteringen {#other-improvements}
 
