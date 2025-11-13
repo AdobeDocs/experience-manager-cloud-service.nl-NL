@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
+source-git-commit: 39993d115d58d9dfe1f9328c5ceba0d30a78569d
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 23320 {#23320}
+## Release 23385 {#23385}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 23320 samengevat, die op 12 november 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 2943.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 23385 samengevat, die op 13 november 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 2943.
 
-De activering van de 2025.11.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.11.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 >[!NOTE]
 >
->Release 2312 is op 3 november privé gemaakt.
+>De releases 23320 en 23122 zijn privé gemaakt.
 
-### Verbeteringen {#enhancements-23320}
+### Verbeteringen {#enhancements-23385}
 
 * CQ-4361363: Nieuwste vertalingen van AEM en Granite.
 * FORMS-21594: Vergrendeling van interactieve communicatiesjablooninhoud en -lay-out voor auteurs van inhoud inschakelen.
@@ -61,7 +61,7 @@ De activering van de 2025.11.0-functie biedt de volledige functie die is ingeste
 * SKYOPS-118390: Update JCR Resource aan 3.3.6.
 * SKYOPS-121082: Update-versies van `org.apache.sling.discovery.standalone`-, `org.apache.sling.jcr.packageinit` - en `org.apache.sling.commons.fsclassloader` -bundels.
 
-### Opgeloste problemen {#fixed-issues-23320}
+### Opgeloste problemen {#fixed-issues-23385}
 
 * ASSETS-58926: Verbeter de miniatuurfunctie voor het wijzigen van video in DM.
 * ASSETS-58623: Los npe in alinstanceSearch wanneer config bestaat.
@@ -88,41 +88,42 @@ De activering van de 2025.11.0-functie biedt de volledige functie die is ingeste
 * SITES-35409: Het probleem waarbij aangepaste fragmenten niet opnieuw werden gepubliceerd tijdens het verplaatsen van een pagina, is opgelost.
 * SITES-15757: Het probleem waarbij het opnieuw publiceren van aangepaste pagina&#39;s tijdens het verplaatsen van een pagina werd voorkomen, is opgelost.
 * SITES-34638: Oplossing voor een probleem waarbij eigenschappen van bovenliggende pagina&#39;s bij het maken van nieuwe versies niet werden opgenomen.
+* SITES-35226: Probleem verholpen waarbij de functie voor het selecteren van elementen in de pagina-editor onder bepaalde omstandigheden niet kon worden geladen.
 * SITES-35071: CSV-export retourneert ongefilterde resultaten wanneer het algemene onderzoek gebruik maakt van de vermelde uitdrukking.
 * SITES-32182: Edge Delivery met Universal Editor - verhelpt coderingsproblemen met URL&#39;s die al gecodeerde aanvraagparameters bevatten.
 * SITES-34324: Edge Delivery met Universal Editor - repareer rendering van koppelingen met een tel:-protocol.
 * SITES-35333: Edge Delivery met Universal Editor - verhelpt selectie van elementuitvoering voor afbeeldingen in metagegevens van pagina&#39;s.
 * SITES-35549: Edge Delivery met Universal Editor - repareer dubbelgecodeerde HTML-entiteiten in metagegevens van pagina&#39;s.
 
-#### AEM Guides {#guides-23320}
+#### AEM Guides {#guides-23385}
 
 * GUIDEN-33597: Als een leeg `prop` -element zonder kenmerken of waarden wordt toegevoegd aan een DITAVAL-bestand, kunnen geen aanvullende `prop` -elementen worden toegevoegd.
 * GUIDES-33693: Wanneer u een bewerkte afbeelding opnieuw uploadt via de gebruikersinterface van Experience Manager Guides, wordt de oorspronkelijke uitvoering van de afbeelding bijgewerkt, maar wordt de vorige versie van de afbeelding wel weergegeven door de bijbehorende DITA-inhoud.
 * GUIDEN-35607: De logboeken van de fout die terwijl het uploaden van een middel via de UI van Assets of het creëren van een nieuw dossier van de interface van de Redacteur worden geproduceerd, gebruiken verkeerd de term `predecessor` in plaats van `successor` in het logboekbericht.
 * GUIDEN-37649: Wanneer het publiceren van een kaart DITA gebruikend basislijn op AEM Sites (met erfeniscomponentenafbeelding), worden de kaartelementen met het attribuut `processing-role = resource-only` ook gepubliceerd.
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [&#x200B; versie van Experience Manager Guides roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 
-### Bekende problemen {#known-issues-23320}
+### Bekende problemen {#known-issues-23385}
 
 * FORMS-22633: het verzenden van formulieren kan mislukken wanneer aangepaste code wordt gebruikt die op de GuideBridge-API&#39;s (`getData` of `getDataXML` ) vertrouwt. Neem contact op met Adobe Support voor hulp als dit probleem zich voordoet.
 
-### Verouderde functies en API&#39;s {#deprecated-23320}
+### Verouderde functies en API&#39;s {#deprecated-23385}
 
-Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [&#x200B; Vervangen en Verwijderde Eigenschappen en APIs &#x200B;](/help/release-notes/deprecated-removed-features.md) document.
+Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-23320}
+### Beveiligingsproblemen {#security-23385}
 
 AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 31 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-23320}
+### Ingesloten technologieën {#embedded-tech-23385}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 88,0 | [&#x200B; Oak 1.88.0 API &#x200B;](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88/index.html) |
-| AEM SLING-API | 2,27,6 | [&#x200B; Apache Sling API 2.27.6 API &#x200B;](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTML | 1.4.28-1.4.0 | [&#x200B; Specificatie van de Taal van het Malplaatje van HTML &#x200B;](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2,4,65 | [&#x200B; Apache Httpd 2.4.65 &#x200B;](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM-kerncomponenten | 2.30.2. | [&#x200B; AEM WCM de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (standaard) | [&#x200B; Ondersteunde versies Node.js &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| AEM Oak | 1 88,0 | [ Oak 1.88.0 API ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88/index.html) |
+| AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
+| Apache HTTP Server | 2,4,65 | [ Apache Httpd 2.4.65 ](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
+| AEM-kerncomponenten | 2.30.2. | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
+| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
