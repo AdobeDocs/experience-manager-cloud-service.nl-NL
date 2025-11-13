@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ Hiervoor verschaft de Universal Editor de auteur van inhoud een intuïtieve gebr
 
 >[!TIP]
 >
->* Voor details bij het ontwerpen die de Universele Redacteur gebruiken, zie het document [&#x200B; Authoring Inhoud met de Universele Redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md).
->* Voor een meer gedetailleerde inleiding aan de Universele Redacteur, zie [&#x200B; Universele Inleiding van de Redacteur &#x200B;](/help/implementing/universal-editor/introduction.md).
+>* Voor details bij het ontwerpen die de Universele Redacteur gebruiken, zie het document [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).
+>* Voor een meer gedetailleerde inleiding aan de Universele Redacteur, zie [ Universele Inleiding van de Redacteur ](/help/implementing/universal-editor/introduction.md).
 
 ## De app voorbereiden {#prepare-app}
 
@@ -34,7 +34,7 @@ Als u inhoud voor een app wilt ontwerpen met de Universal Editor, moet de app va
 
 >[!TIP]
 >
->Zie [&#x200B; Begonnen het Worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md) voor een voorbeeld van hoe te om een toepassing van AEM te vormen om met de Universele Redacteur te werken.
+>Zie [ Begonnen het Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md) voor een voorbeeld van hoe te om een toepassing van AEM te vormen om met de Universele Redacteur te werken.
 
 ## De universele editor openen {#accessing}
 
@@ -43,19 +43,19 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 ### Toegang tot AEM as a Cloud Service {#accessing-aem}
 
 1. Meld u aan bij uw AEM as a Cloud Service-ontwerpinstantie.
-1. Gebruik de [**console van 1&rbrace; Plaatsen** om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Gebruik de [**console van 1} Plaatsen** om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Bewerk de pagina.
 1. De Universal Editor wordt geopend om de geselecteerde pagina te bewerken.
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de [**console van Plaatsen**, zal de console de redacteur aangewezen aan het 3&rbrace; malplaatje van de pagina &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [&#x200B; paginaredacteur &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md).[&#128279;](/help/sites-cloud/authoring/page-editor/introduction.md)
+>Wanneer het uitgeven van een pagina in de [**console van Plaatsen**, zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/sites-console/introduction.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/templates.md).[](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### Direct toegang {#accessing-directly}
 
-1. Meld u aan bij de Universal Editor. U hebt een Adobe ID nodig om binnen te ondertekenen en [&#x200B; heeft toegang tot de Universele Redacteur &#x200B;](/help/implementing/universal-editor/getting-started.md#request-access).
+1. Meld u aan bij de Universal Editor. U hebt een Adobe ID nodig om binnen te ondertekenen en [ heeft toegang tot de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md#request-access).
 
-1. Nadat u binnen wordt ondertekend, ga URL van de pagina in u in de [&#x200B; plaats bar &#x200B;](#location-bar) wilt uitgeven, zodat kunt u beginnen inhoud zoals tekstinhoud of media inhoud uit te geven.
+1. Nadat u binnen wordt ondertekend, ga URL van de pagina in u in de [ plaats bar ](#location-bar) wilt uitgeven, zodat kunt u beginnen inhoud zoals tekstinhoud of media inhoud uit te geven.
 
 ## De gebruikersinterface begrijpen {#ui}
 
@@ -66,49 +66,49 @@ De interface is verdeeld in deze hoofdgebieden.
 * [De editor](#editor)
 * [Het deelvenster Eigenschappen](#properties-rail)
 
-![&#x200B; Universele Redacteur UI &#x200B;](assets/ui.png)
+![ Universele Redacteur UI ](assets/ui.png)
 
 >[!TIP]
 >
->De Universele Redacteur biedt een aantal [&#x200B; aanpassingsopties &#x200B;](/help/implementing/universal-editor/customizing.md) en [&#x200B; uitbreidingspunten &#x200B;](/help/implementing/universal-editor/extending.md) aan die kunnen wijzigen en aan de functionaliteit van de redacteur toevoegen. Daarom ziet u mogelijk andere opties dan de hier beschreven standaardopties.
+>De Universele Redacteur biedt een aantal [ aanpassingsopties ](/help/implementing/universal-editor/customizing.md) en [ uitbreidingspunten ](/help/implementing/universal-editor/extending.md) aan die kunnen wijzigen en aan de functionaliteit van de redacteur toevoegen. Daarom ziet u mogelijk andere opties dan de hier beschreven standaardopties.
 
 ### Experience Platform-navigatiebalk boven {#experience-cloud-header}
 
 De bovenste navigatiebalk van Experience Platform bevindt zich altijd boven in het scherm. Het is een anker dat u vertelt waar u zich in Experience Cloud bevindt en dat u helpt naar andere Experience Cloud-toepassingen te navigeren.
 
-![&#x200B; de kopbal van Experience Cloud &#x200B;](assets/experience-cloud-header.png)
+![ de kopbal van Experience Cloud ](assets/experience-cloud-header.png)
 
-Voor details op de hoogste navigatiebar van Experience Platform, gelieve te zien de [&#x200B; gids UI van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Voor details op de hoogste navigatiebar van Experience Platform, gelieve te zien de [ gids UI van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Account {#user-properties}
 
 Als u op het accountpictogram tikt of erop klikt, wordt een menu met uw gebruikersinstellingen geopend.
 
-![&#x200B; Schakelaar van het Milieu &#x200B;](assets/environment-switcher.png)
+![ Schakelaar van het Milieu ](assets/environment-switcher.png)
 
 Voor de Universele Redacteur, onder de rubriek **Montages van het Product**, is er een optie om tussen de huidige productieversie van de Universele Redacteur en de aanstaande voorproefversie te schakelen.
 
 ### De werkbalk Universele editor {#universal-editor-toolbar}
 
-De Universele toolbar van de Redacteur is altijd aanwezig bij de bovenkant van het scherm enkel onder [&#x200B; de kopbal van Experience Cloud &#x200B;](#experience-cloud-header). Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
+De Universele toolbar van de Redacteur is altijd aanwezig bij de bovenkant van het scherm enkel onder [ de kopbal van Experience Cloud ](#experience-cloud-header). Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
 
-Afhankelijk van de configuratie van uw programma, kan het [&#x200B; extra eigenschappen ook voorstellen die als uitbreidingen door uw beheerder zijn toegelaten.](#additional-toolbar-buttons)
+Afhankelijk van de configuratie van uw programma, kan het [ extra eigenschappen ook voorstellen die als uitbreidingen door uw beheerder zijn toegelaten.](#additional-toolbar-buttons)
 
-![&#x200B; de Universele toolbar van de Redacteur &#x200B;](assets/universal-editor-toolbar.png)
+![ de Universele toolbar van de Redacteur ](assets/universal-editor-toolbar.png)
 
 #### De knop Home {#home-button}
 
 Met de knop Home keert u terug naar de startpagina van de Universal Editor
 
-![&#x200B; het menu van de Hamburger &#x200B;](assets/home-button.png)
+![ het menu van de Hamburger ](assets/home-button.png)
 
 Op de startpagina kunt u de URL invoeren van de site die u wilt bewerken met de Universal Editor.
 
-![&#x200B; pagina van het Begin &#x200B;](assets/start-page.png)
+![ pagina van het Begin ](assets/start-page.png)
 
 >[!NOTE]
 >
->Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [&#x200B; van instrumenten worden voorzien om de Universele Redacteur &#x200B;](/help/implementing/universal-editor/getting-started.md) te steunen.
+>Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [ van instrumenten worden voorzien om de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md) te steunen.
 
 A **Snelle Verbindingen** sectie verstrekt u van hulpmiddelen en de sectie van de a **Recenten** verstrekt verbindingen aan pagina&#39;s u onlangs met de Universele Redacteur opende.
 
@@ -116,7 +116,7 @@ A **Snelle Verbindingen** sectie verstrekt u van hulpmiddelen en de sectie van d
 
 Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze optie om het adres in te voeren van een andere pagina die u wilt bewerken.
 
-![&#x200B; bar van de Plaats &#x200B;](assets/location-bar.png)
+![ bar van de Plaats ](assets/location-bar.png)
 
 >[!TIP]
 >
@@ -124,14 +124,14 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze o
 
 >[!NOTE]
 >
->Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [&#x200B; van instrumenten worden voorzien om de Universele Redacteur &#x200B;](/help/implementing/universal-editor/getting-started.md) te steunen.
+>Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [ van instrumenten worden voorzien om de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md) te steunen.
 
 #### Ongedaan maken en Opnieuw {#undo-redo}
 
-Selecteer de knoppen Ongedaan maken of Opnieuw om de laatste bewerking in de editor ongedaan te maken of opnieuw uit te voeren. Gelieve te zien het document [&#x200B; Authoring Inhoud met de Universele Redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) voor meer informatie.
+Selecteer de knoppen Ongedaan maken of Opnieuw om de laatste bewerking in de editor ongedaan te maken of opnieuw uit te voeren. Gelieve te zien het document [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) voor meer informatie.
 
-![&#x200B; ongedaan maken pictogram &#x200B;](assets/undo.png)
-![&#x200B; opnieuw pictogram &#x200B;](assets/redo.png)
+![ ongedaan maken pictogram ](assets/undo.png)
+![ opnieuw pictogram ](assets/redo.png)
 
 >[!TIP]
 >
@@ -139,19 +139,25 @@ Selecteer de knoppen Ongedaan maken of Opnieuw om de laatste bewerking in de edi
 
 #### Verificatiekoppen {#authentication-settings}
 
-Selecteer het pictogram van authentificatiekopballen als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden [&#x200B; moet plaatsen. &#x200B;](/help/implementing/universal-editor/developer-overview.md#auth-header)
+Selecteer het pictogram van authentificatiekopballen als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden [ moet plaatsen. ](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
-![&#x200B; knoop van de kopbalmontages van de Authentificatie &#x200B;](assets/authentication-header-settings.png)
+![ knoop van de kopbalmontages van de Authentificatie ](assets/authentication-header-settings.png)
+
+#### Aanmelden bij lokale ontwikkelaar {#local-developer-login}
+
+Selecteer het lokale ontwikkelaarlogin pictogram als u aan uw lokale AEM SDK [ gemakkelijk moet voor authentiek verklaren wanneer het ontwikkelen plaatselijk.](/help/implementing/universal-editor/local-dev.md)
+
+![ Lokale ontwikkelaarslogin knoop ](assets/local-developer-login.png)
 
 #### Responsieve modus {#emulator}
 
 Selecteer het pictogram van de responsieve modus om te bepalen hoe de Universal Editor de pagina weergeeft.
 
-![&#x200B; Responsief wijzepictogram &#x200B;](assets/emulator.png)
+![ Responsief wijzepictogram ](assets/emulator.png)
 
 Als u op het pictogram van de responsieve modus tikt of erop klikt, worden de opties weergegeven.
 
-![&#x200B; Responsieve wijzeopties &#x200B;](assets/emulation-options.png)
+![ Responsieve wijzeopties ](assets/emulation-options.png)
 
 Standaard wordt de editor geopend in de computerlay-out, waarbij de hoogte en breedte automatisch door de browser worden gedefinieerd.
 
@@ -165,7 +171,7 @@ U kunt er ook voor kiezen om een mobiel apparaat te emuleren en in de Universele
 
 In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op uw gepubliceerde dienst zou worden gezien. Hierdoor kan de auteur van de inhoud door de inhoud navigeren door op koppelingen te klikken, enzovoort.
 
-![&#x200B; wijze van de Voorproef &#x200B;](assets/preview-mode.png)
+![ wijze van de Voorproef ](assets/preview-mode.png)
 
 >[!TIP]
 >
@@ -175,7 +181,7 @@ In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op
 
 Selecteer het pictogram van de open pagina om de pagina te openen u momenteel in zijn eigen browser lusje uitgeeft, vrij van de redacteur om uw inhoud te bekijken.
 
-![&#x200B; Open app voorproef &#x200B;](assets/open-app-preview.png)
+![ Open app voorproef ](assets/open-app-preview.png)
 
 >[!TIP]
 >
@@ -183,67 +189,67 @@ Selecteer het pictogram van de open pagina om de pagina te openen u momenteel in
 
 >[!TIP]
 >
->De voorproef URL voor uw app [&#x200B; kan worden aangepast &#x200B;](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
+>De voorproef URL voor uw app [ kan worden aangepast ](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 >[!NOTE]
 >
->De open paginaknoop [&#x200B; kan &#x200B;](/help/implementing/universal-editor/customizing.md#open-page) worden onbruikbaar gemaakt en zou daarom niet in uw redacteur kunnen verschijnen.
+>De open paginaknoop [ kan ](/help/implementing/universal-editor/customizing.md#open-page) worden onbruikbaar gemaakt en zou daarom niet in uw redacteur kunnen verschijnen.
 
 #### Publiceren {#publish}
 
 Selecteer de knop Publiceren, zodat u de wijzigingen in de live inhoud kunt publiceren voor gebruik door uw lezers of voor een voorbeeldomgeving ter controle.
 
-![&#x200B; publiceer knoop &#x200B;](assets/publish.png)
+![ publiceer knoop ](assets/publish.png)
 
 >[!TIP]
 >
->Zie het document [&#x200B; het Publiceren Inhoud met de Universele Redacteur &#x200B;](publishing.md) voor meer informatie bij het publiceren met de Universele Redacteur.
+>Zie het document [ het Publiceren Inhoud met de Universele Redacteur ](publishing.md) voor meer informatie bij het publiceren met de Universele Redacteur.
 
 >[!NOTE]
 >
->De publiceerknoop [&#x200B; kan &#x200B;](/help/implementing/universal-editor/customizing.md#disable-publish) worden onbruikbaar gemaakt en zou daarom niet in uw redacteur kunnen verschijnen.
+>De publiceerknoop [ kan ](/help/implementing/universal-editor/customizing.md#disable-publish) worden onbruikbaar gemaakt en zou daarom niet in uw redacteur kunnen verschijnen.
 
 #### Weglatingsteken {#ellipsis}
 
 Aanvullende standaardopties zijn toegankelijk met de knop Ovaal.
 
-![&#x200B; knoop van de Ellipsis &#x200B;](assets/ellipsis.png)
+![ knoop van de Ellipsis ](assets/ellipsis.png)
 
-Bijvoorbeeld, is de capaciteit om een pagina (d.w.z. omgekeerd de actie van [**publiceren** knoop &#x200B;](#publish)) toegankelijk via de ellipsieknoop.
+Bijvoorbeeld, is de capaciteit om een pagina (d.w.z. omgekeerd de actie van [**publiceren** knoop ](#publish)) toegankelijk via de ellipsieknoop.
 
 #### Aanvullende knoppen {#additional-toolbar-buttons}
 
 De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als er extra knoppen op de werkbalk staan, is de Universal Editor uitgebreid.
 
-* Voor details op hoe een individuele uitbreiding werkt, [&#x200B; gelieve te zien de Universele het auteursdocumentatie van de Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
-* Voor details op uitbreidingsmogelijkheden, gelieve te zien [&#x200B; Uitbreidend de Universele Redacteur.](/help/implementing/universal-editor/extending.md)
-* Voor details op hoe te om een individuele uitbreiding te installeren, te zien gelieve de [&#x200B; documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Voor details op hoe een individuele uitbreiding werkt, [ gelieve te zien de Universele het auteursdocumentatie van de Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
+* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Uitbreidend de Universele Redacteur.](/help/implementing/universal-editor/extending.md)
+* Voor details op hoe te om een individuele uitbreiding te installeren, te zien gelieve de [ documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### De Editor {#editor}
 
-De redacteur bezet het grootste deel van het venster en is waar de pagina die in [&#x200B; wordt gespecificeerd de plaatsbar &#x200B;](#location-bar) wordt teruggegeven.
+De redacteur bezet het grootste deel van het venster en is waar de pagina die in [ wordt gespecificeerd de plaatsbar ](#location-bar) wordt teruggegeven.
 
-![&#x200B; Redacteur &#x200B;](assets/editor.png)
+![ Redacteur ](assets/editor.png)
 
-Als de redacteur op [&#x200B; voorproefwijze &#x200B;](#preview-mode) is, zal de inhoud navigeerbaar zijn en u kunt verbindingen volgen, maar u kunt niet de inhoud uitgeven.
+Als de redacteur op [ voorproefwijze ](#preview-mode) is, zal de inhoud navigeerbaar zijn en u kunt verbindingen volgen, maar u kunt niet de inhoud uitgeven.
 
 ### Deelvenster Eigenschappen {#properties-rail}
 
 Het deelvenster Eigenschappen is altijd aanwezig aan de rechterkant van de editor. Afhankelijk van de modus, kunnen er details worden weergegeven voor een component die is geselecteerd in de inhoud of de hiërarchie van de pagina-inhoud.
 
-![&#x200B; het eigenschappen paneel &#x200B;](assets/properties-rail.png)
+![ het eigenschappen paneel ](assets/properties-rail.png)
 
-Afhankelijk van de configuratie van uw programma, kan het [&#x200B; extra eigenschappen ook voorstellen die als uitbreidingen door uw beheerder zijn toegelaten.](#additional-properties-panel-buttons)
+Afhankelijk van de configuratie van uw programma, kan het [ extra eigenschappen ook voorstellen die als uitbreidingen door uw beheerder zijn toegelaten.](#additional-properties-panel-buttons)
 
 #### Eigenschappenmodus {#properties-mode}
 
 In de modus Eigenschappen toont het deelvenster de eigenschappen van de component die momenteel in de editor is geselecteerd. Dit is de standaardmodus van het deelvenster Eigenschappen wanneer een pagina wordt geladen.
 
-![&#x200B; wijze van Eigenschappen &#x200B;](assets/properties-mode.png)
+![ wijze van Eigenschappen ](assets/properties-mode.png)
 
 Afhankelijk van het type component dat u selecteert, kunnen details worden weergegeven en gewijzigd in het deelvenster Eigenschappen.
 
-![&#x200B; de details van de Component &#x200B;](assets/component-details.png)
+![ de details van de Component ](assets/component-details.png)
 
 Niet alle componenten hebben details die kunnen worden getoond en/of worden uitgegeven.
 
@@ -255,12 +261,12 @@ Niet alle componenten hebben details die kunnen worden getoond en/of worden uitg
 
 In de modus Inhoudsboomstructuur wordt in het deelvenster de hiërarchie van de pagina-inhoud weergegeven.
 
-![&#x200B; de boomwijze van de Inhoudsboom &#x200B;](assets/content-tree-mode.png)
+![ de boomwijze van de Inhoudsboom ](assets/content-tree-mode.png)
 
 * Wanneer het selecteren van een punt in de inhoudsboom, scrolt de redacteur aan die inhoud en selecteert het.
-* Wanneer het tweemaal klikken van een punt in de inhoudsboom, scrolt de redacteur aan die inhoud en selecteert het en opent ook de bijbehorende eigenschappen op [&#x200B; eigenschappen wijze.](#properties-mode)
+* Wanneer het tweemaal klikken van een punt in de inhoudsboom, scrolt de redacteur aan die inhoud en selecteert het en opent ook de bijbehorende eigenschappen op [ eigenschappen wijze.](#properties-mode)
 
-![&#x200B; de boom van de Inhoud &#x200B;](assets/content-tree.png)
+![ de boom van de Inhoud ](assets/content-tree.png)
 
 >[!TIP]
 >
@@ -270,9 +276,9 @@ In de modus Inhoudsboomstructuur wordt in het deelvenster de hiërarchie van de 
 
 Tijdens het bewerken worden de opties voor de geselecteerde component weergegeven in het deelvenster Eigenschappen, waar u de geselecteerde component kunt bewerken. Als de geselecteerde component een Fragment van de Inhoud is, kunt u **Open in de redacteur van het CF** knoop ook selecteren.
 
-![&#x200B; Open in het pictogram van de Redacteur van CF &#x200B;](assets/open-in-cf-editor.png)
+![ Open in het pictogram van de Redacteur van CF ](assets/open-in-cf-editor.png)
 
-Tapping of het klikken van **Open in de redacteur van het CF** knoop opent de [&#x200B; redacteur van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in een nieuw lusje. Op deze manier hebt u toegang tot alle mogelijkheden van de editor voor inhoudsfragmenten om het bijbehorende inhoudsfragment te bewerken.
+Tapping of het klikken van **Open in de redacteur van het CF** knoop opent de [ redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in een nieuw lusje. Op deze manier hebt u toegang tot alle mogelijkheden van de editor voor inhoudsfragmenten om het bijbehorende inhoudsfragment te bewerken.
 
 Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht bewerken in de universele editor of rechtstreeks in de editor voor inhoudsfragmenten.
 
@@ -284,11 +290,11 @@ Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht
 
 Als u een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de optie Toevoegen weergegeven in het deelvenster Eigenschappen.
 
-![&#x200B; voeg pictogram &#x200B;](assets/ue-add-component-icon.png) toe
+![ voeg pictogram ](assets/ue-add-component-icon.png) toe
 
-Tapping of het klikken van toevoegt knoop opent een drop-down menu van componenten die beschikbaar zijn aan [&#x200B; toevoegen aan de geselecteerde container &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components).
+Tapping of het klikken van toevoegt knoop opent een drop-down menu van componenten die beschikbaar zijn aan [ toevoegen aan de geselecteerde container ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components).
 
-![&#x200B; voeg contextmenu &#x200B;](assets/add-context-menu.png) toe
+![ voeg contextmenu ](assets/add-context-menu.png) toe
 
 >[!TIP]
 >
@@ -298,17 +304,17 @@ Tapping of het klikken van toevoegt knoop opent een drop-down menu van component
 
 Als u een component binnen een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de optie Dupliceren weergegeven in het deelvenster Eigenschappen.
 
-![&#x200B; Dupliceer pictogram &#x200B;](assets/duplicate.png)
+![ Dupliceer pictogram ](assets/duplicate.png)
 
-Tapping of het klikken van de dubbele knoop [&#x200B; dupliceert de geselecteerde component &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
+Tapping of het klikken van de dubbele knoop [ dupliceert de geselecteerde component ](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
 ##### Verwijderen {#delete}
 
 Als u een component binnen een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de verwijderingsoptie weergegeven in het deelvenster Eigenschappen.
 
-![&#x200B; pictogram van de Schrapping &#x200B;](assets/ue-delete-component-icon.png)
+![ pictogram van de Schrapping ](assets/ue-delete-component-icon.png)
 
-Tapping of het klikken van de schrappingsknoop [&#x200B; schrapt de component &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components).
+Tapping of het klikken van de schrappingsknoop [ schrapt de component ](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components).
 
 >[!TIP]
 >
@@ -316,25 +322,25 @@ Tapping of het klikken van de schrappingsknoop [&#x200B; schrapt de component &#
 
 ##### Kopiëren en plakken {#copy-paste}
 
-U kunt componenten kopiëren en kleven die binnen [&#x200B; containers zijn.](/help/implementing/universal-editor/field-types.md#container)
+U kunt componenten kopiëren en kleven die binnen [ containers zijn.](/help/implementing/universal-editor/field-types.md#container)
 
-![&#x200B; pictogram van het Exemplaar &#x200B;](assets/copy.png)
-![&#x200B; het pictogram van het Deeg &#x200B;](assets/paste.png)
+![ pictogram van het Exemplaar ](assets/copy.png)
+![ het pictogram van het Deeg ](assets/paste.png)
 
 >[!TIP]
 >
 >Gebruik de sneltoets `Command-C` of `Command-V` om respectievelijk te kopiëren of te plakken.
 
-Gelieve te zien het document [&#x200B; Authoring Inhoud met de Universele Redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) voor meer informatie.
+Gelieve te zien het document [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) voor meer informatie.
 
 #### Aanvullende knoppen {#additional-properties-panel-buttons}
 
 De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als u extra knoppen ziet in het deelvenster Eigenschappen, is de Universal Editor uitgebreid.
 
-* Voor details op hoe een individuele uitbreiding werkt, [&#x200B; gelieve te zien de Universele het auteursdocumentatie van de Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
-* Voor details op uitbreidingsmogelijkheden, gelieve te zien [&#x200B; Uitbreidend de Universele Redacteur.](/help/implementing/universal-editor/extending.md)
-* Voor details op hoe te om een individuele uitbreiding te installeren, te zien gelieve de [&#x200B; documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Voor details op hoe een individuele uitbreiding werkt, [ gelieve te zien de Universele het auteursdocumentatie van de Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Uitbreidend de Universele Redacteur.](/help/implementing/universal-editor/extending.md)
+* Voor details op hoe te om een individuele uitbreiding te installeren, te zien gelieve de [ documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## Volgende stappen {#next-steps}
 
-Nu u weet om tot de Universele Redacteur toegang te hebben en te navigeren, bent u klaar aan [&#x200B; auteursinhoud gebruikend het &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md).
+Nu u weet om tot de Universele Redacteur toegang te hebben en te navigeren, bent u klaar aan [ auteursinhoud gebruikend het ](/help/sites-cloud/authoring/universal-editor/authoring.md).
