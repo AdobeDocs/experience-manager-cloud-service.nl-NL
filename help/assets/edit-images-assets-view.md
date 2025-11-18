@@ -26,7 +26,7 @@ Na het bewerken van een afbeelding kun je de nieuwe afbeelding als een nieuwe ve
 ## Afbeelding bewerken {#edit-image}
 
 Ga naar de gebruikersinterface van Assets View, gebruik de link - Assets View[&#x200B; en &#x200B;](https://experience.adobe.com/#/assets)selecteer de juiste repository. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
-Voor aanvullende referentiegegevens zie - [Begin met Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Understand the Assets view gebruikersinterface](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) en [Assets View use cases](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Voor aanvullende referentiegegevens zie - [Begin met Adobe Experience Manager Assets View](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Understand the Assets view gebruikersinterface](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) en [Assets View use cases](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -154,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/nl/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
