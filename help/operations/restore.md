@@ -1,164 +1,199 @@
 ---
-title: Inhoud herstellen in AEM as a Cloud Service
-description: Leer hoe u uw AEM as a Cloud Service-inhoud kunt herstellen vanaf een back-up met Cloud Manager.
+title: Herstel inhoud in AEM als een cloudservice
+description: Leer hoe je de inhoud van je AEM als Cloud Service kunt herstellen vanuit een back-up met Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
+source-git-commit: e6bd71cc56db766fcbab3a925baabb5901c97ee8
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1610'
 ht-degree: 0%
 
 ---
 
 
-# Inhoud herstellen in AEM as a Cloud Service {#content-restore}
+# Herstel inhoud in AEM als een Cloud Service {#content-restore}
 
-U kunt uw AEM as a Cloud Service-inhoud vanaf een back-up herstellen met Cloud Manager.
+Je kunt de inhoud van je AEM als Cloud Service herstellen vanuit een back-up met Cloud Manager.
 
 
 
-Cloud Manager-proces voor het terugzetten van zelfbediening kopieert gegevens van Adobe-systeemback-ups en herstelt deze in de oorspronkelijke omgeving. Herstel wordt uitgevoerd om gegevens terug te keren die zijn verloren, beschadigd of per ongeluk verwijderd.
+Het zelfbedieningsherstelproces van Cloud Manager kopieert gegevens van Adobe-systeemback-ups en herstelt deze naar de oorspronkelijke omgeving. Een herstel wordt uitgevoerd om gegevens die verloren, beschadigd of per ongeluk verwijderd zijn terug te brengen naar de oorspronkelijke staat.
 
-Het herstelproces heeft alleen invloed op inhoud, zodat uw code en versie van AEM ongewijzigd blijven. U kunt op elk gewenst moment een herstelbewerking van afzonderlijke omgevingen starten.
+Het herstelproces beïnvloedt alleen de inhoud, waardoor je code en versie van AEM ongewijzigd blijven. Je kunt op elk moment een hersteloperatie van individuele omgevingen starten.
 
-Als u eerder opgestelde broncode op een gemakkelijke en snelle manier moet herstellen, zonder de behoefte om een nieuwe pijpleidingsuitvoering te beginnen, kunt u [&#x200B; gebruiken herstelt de Vorige Gestelde Code &#x200B;](/help/operations/restore-previous-code-deployed.md).
+Als je eerder geïmplementeerde broncode op een eenvoudige en snelle manier wilt herstellen, zonder een nieuwe pipeline-uitvoering te hoeven starten, kun je Restore the Previous Code Deployed[ gebruiken](/help/operations/restore-previous-code-deployed.md).
 
-Cloud Manager biedt twee typen back-ups waarvan u de inhoud kunt herstellen.
+Cloud Manager biedt twee soorten back-ups waarmee je content kunt herstellen.
 
-* **punt-in-tijd (PIT):** Deze optie herstelt ononderbroken steunen die binnen de afgelopen 24 uren worden gevangen.
-* **Vorige week:** Dit type herstelt van systeemsteunen in de laatste zeven dagen exclusief vorige 24 uren.
+* **Point-In-Time (PIT):** Deze optie herstelt continue back-ups die in de afgelopen 24 uur zijn gemaakt.
+* **Vorige week:** Dit type herstelt van systeemback-ups in de afgelopen zeven dagen, exclusief de afgelopen 24 uur.
 
-In beide gevallen blijven de versie van uw aangepaste code en de AEM-versie ongewijzigd.
+In beide gevallen blijven de versie van je aangepaste code en de AEM-versie ongewijzigd.
 
 >[!TIP]
 >
->Het is ook mogelijk om steunen [&#x200B; te herstellen gebruikend openbare API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
+>Het is ook mogelijk om back-ups [te herstellen met behulp van de publieke API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
 
 >[!WARNING]
 >
->* Deze functie mag alleen worden gebruikt bij ernstige problemen met code of inhoud.
->* Bij het herstellen van een back-up worden alle gegevens verwijderd die na de back-up zijn toegevoegd. Staging wordt ook teruggezet naar de vorige versie.
->* Overweeg andere selectieve herstelopties voor inhoud voordat u begint met het herstellen van inhoud.
+>* Deze functie mag alleen worden gebruikt als er ernstige problemen zijn met code of content.
+>* Het herstellen van een back-up verwijdert alle data die na die back-up is toegevoegd. De enscenering keert ook terug naar de vorige versie.
+>* Voordat je een contentherstel start, overweeg andere selectieve contentherstelopties.
 
-## Opties voor het herstellen van selectieve inhoud {#selective-options}
+## Selectieve contentherstelopties {#selective-options}
 
-Overweeg deze opties om de inhoud eenvoudiger te herstellen voordat u de inhoud volledig herstelt.
+Voordat u een volledige contentrestauratie herstelt, overweeg deze opties om uw inhoud gemakkelijker te herstellen.
 
-* Als een pakket voor de geschrapte weg beschikbaar is, installeer opnieuw het pakket gebruikend de [&#x200B; Manager van het Pakket &#x200B;](/help/implementing/developing/tools/package-manager.md).
-* Als de geschrapte weg een pagina in Plaatsen was, gebruik [&#x200B; herstellen de functie van de Boom &#x200B;](/help/sites-cloud/authoring/sites-console/page-versions.md).
-* Als de geschrapte weg een activa omslag was en de originele dossiers beschikbaar zijn, herupload hen via [&#x200B; de console van Assets &#x200B;](/help/assets/add-assets.md).
-* Als de schrappingsinhoud activa was, overweeg [&#x200B; terugstellend vorige versies van de activa &#x200B;](/help/assets/manage-digital-assets.md).
+* Als er een pakket voor het verwijderde pad beschikbaar is, installeer het pakket opnieuw met behulp van de [Package Manager](/help/implementing/developing/tools/package-manager.md).
+* Als het verwijderde pad een pagina in Sites was, gebruik dan de [functie](/help/sites-cloud/authoring/sites-console/page-versions.md) Restore Tree.
+* Als het verwijderde pad een asset-map was en de originele bestanden beschikbaar zijn, upload ze dan opnieuw via [de Assets-console](/help/assets/add-assets.md).
+* Als de verwijderde inhoud assets waren, overweeg [dan het herstellen van eerdere versies van de assets](/help/assets/manage-digital-assets.md).
 
-Als geen van de bovenstaande opties werkt en de inhoud van het verwijderde pad significant is, voert u een inhoudsherstel uit zoals in de volgende secties wordt beschreven.
+Als geen van bovenstaande opties werkt en de inhoud van het verwijderde pad significant is, voer dan een inhoudsherstel uit zoals beschreven in de volgende secties.
 
-## Gebruikersrol maken {#user-role}
+## Aanmaken van gebruikersrol {#user-role}
 
-Standaard heeft geen enkele gebruiker toestemming om inhoud te herstellen in ontwikkelings-, productie- of staging-omgevingen. Gebruik de volgende algemene stappen om deze machtiging te delegeren aan specifieke gebruikers of groepen.
+Standaard heeft geen enkele gebruiker toestemming om contentherstels uit te voeren in ontwikkel-, productie- of stagingomgevingen. Om deze toestemming te delegeren aan specifieke gebruikers of groepen, gebruik je de volgende algemene stappen.
 
-1. Maak een productprofiel met een expressieve naam die verwijst naar het herstellen van inhoud.
-1. Verstrek de **toestemming van de Toegang van het Programma 0&rbrace; &lbrace;op het vereiste programma.**
-1. Verstrek het **Milieu herstellen creeert** toestemming op het vereiste milieu of alle milieu&#39;s van het programma, afhankelijk van uw gebruiksgeval.
+1. Maak een productprofiel met een expressieve naam die verwijst naar contentherstel.
+1. Geef de **Programmatoegangstoestemming** voor het vereiste programma.
+1. Geef de **Environment Restore Create-toestemming** voor de vereiste omgeving of alle omgevingen van het programma, afhankelijk van je gebruikssituatie.
 1. Wijs gebruikers toe aan dat profiel.
 
-Voor details bij het beheren van toestemmingen, zie [&#x200B; de Toestemmingen van de Douane &#x200B;](/help/implementing/cloud-manager/custom-permissions.md).
+Voor details over het beheren van permissies, zie [Aangepaste Rechten](/help/implementing/cloud-manager/custom-permissions.md).
 
-## De inhoud van een omgeving herstellen {#restoring-content}
+## Herstel de inhoud van een omgeving {#restoring-content}
 
 >[!NOTE]
 >
->Een gebruiker moet [&#x200B; aangewezen toestemmingen &#x200B;](#user-role) hebben om in werking te stellen herstelt verrichting.
+>Een gebruiker moet over de juiste rechten[ beschikken om ](#user-role)een hersteloperatie te starten.
 
-**om de inhoud van een milieu te herstellen:**
+**Om de inhoud van een omgeving te herstellen:**
 
-1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Log in op Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteer de juiste organisatie.
 
-1. Klik op het programma waarvoor u een herstelbewerking wilt starten.
+1. Klik op het programma waarvoor je een herstel wilt starten.
 
-1. Maak een lijst van alle milieu&#39;s voor het programma door één van het volgende te doen:
+1. Vermeld alle omgevingen voor het programma door een van de volgende te doen:
 
-   * Van het linkerzijmenu, onder **Diensten**, klik ![&#x200B; het pictogram van Gegevens &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**.
+   * Klik in het linkermenu, onder Services, op **Data-icoon** ![Omgevingen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg).****
 
-     ![&#x200B; Milieu&#39;s tabel &#x200B;](assets/environments-1.png)
+     ![Tabblad Omgevingen](assets/environments-1.png)
 
-   * Van het linkerzijmenu, onder **Programma**, klik **Overzicht**, dan van de **Milieu** kaart, klik ![&#x200B; pictogram van het Werkschema &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **tonen allen**.
+   * Klik in het linkermenu, onder **Programma, op** Overzicht **, en klik vervolgens vanaf de** kaart Omgevingen **op het pictogram** Workflow Toon ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) Alles **.**
 
-     ![&#x200B; toon alle optie &#x200B;](assets/environments-2.png)
+     ![Toon alle optie](assets/environments-2.png)
 
      >[!NOTE]
      >
-     >De **kaart van milieu&#39;s** &lbrace;maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
+     >De **Omgevingen-kaart** vermeldt slechts drie omgevingen. Klik op **&#39;Alles** weergeven&#39; op de kaart om alle *omgevingen van het programma te zien*.
 
-1. In de lijst van Milieu&#39;s, rechts van een milieu waarvan inhoud u wilt herstellen, klik ![&#x200B; Meer pictogram of ellipse menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **herstellen Inhoud**.
+1. In de tabel Omgevingen, rechts van een omgeving waarvan je de inhoud wilt herstellen, klik ![je op het pictogram Meer of het ellipsmenu-icoon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en vervolgens op **Inhoud herstellen**.
 
-   ![&#x200B; herstelt inhoudsoptie van het ellipsmenu &#x200B;](/help/operations/assets/environments-ellipsis-menu.png)
+   ![Optie Inhoud herstellen vanuit het ellipsmenu](/help/operations/assets/environments-ellipsis-menu.png)
 
-1. Op het **herstellen Inhoud** lusje van de pagina van het milieu, in de **Tijd om** drop-down lijst te herstellen, selecteer het tijdkader van herstellen.
+1. Op het **tabblad Inhoud herstellen** op de pagina van de omgeving, selecteer je in de **keuzelijst Tijd om te herstellen** het tijdsbestek van het herstel.
 
-   ![&#x200B; herstelt het lusje van de Inhoud van een milieu &#x200B;](/help/operations/assets/environments-content-restore-tab.png)
+   ![Bestand Inhoud herstellen van een omgeving](/help/operations/assets/environments-content-restore-tab.png)
 
-   * Als u **Laatste 24 uren** koos, op het aangrenzende **gebied van de Tijd**, specificeer de nauwkeurige tijd binnen de laatste 24 te herstellen uren.
-   * Als u **Vorige week** koos, op het aangrenzende **gebied van de Dag**, selecteer een datum binnen de afgelopen zeven dagen, exclusief de vorige 24 uren.
+   * Als je Laatste 24 uur **kiest**, geef je in het aangrenzende **Tijdveld** de exacte tijd aan binnen de laatste 24 uur om te herstellen.
+   * Als je Vorige week **kiest**, kies je in het aangrenzende **dagveld** een datum binnen de afgelopen zeven dagen, exclusief de voorgaande 24 uur.
 
-1. Zodra u een datum selecteert of een tijd specificeert, toont de **beschikbare Steunen** sectie hieronder een lijst van beschikbare steunen die kunnen worden hersteld
+1. Zodra je een datum hebt geselecteerd of een tijd hebt opgegeven, toont het **gedeelte Beschikbare** back-ups hieronder een lijst van beschikbare back-ups die kunnen worden hersteld
 
-1. Klik ![&#x200B; pictogram van de Informatie &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) naast een steun om zijn codeversie en versie van AEM te zien, dan wegen terugzeteffect alvorens een steun te selecteren (zie [&#x200B; kiezen de juiste steun &#x200B;](#choosing-backup)).
+1. Klik op ![het Informatie-icoon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) naast een back-up om de codeversie en AEM-release te zien, en weeg vervolgens de impact op herstel af voordat je een back-up selecteert (zie [Kies de juiste back-up](#choosing-backup)).
 
-   ![&#x200B; Steun info &#x200B;](assets/backup-info.png)
+   ![Back-upinformatie](assets/backup-info.png)
 
-   De tijdstempel die voor de terugzetopties wordt weergegeven, is gebaseerd op de tijdzone van de computer van de gebruiker.
+   De tijdstempel die wordt weergegeven voor de herstelopties is gebaseerd op de tijdzone van de gebruiker van de computer.
 
-1. Aan het rechtereind van de rij die de steun vertegenwoordigen u wilt herstellen, ![&#x200B; roteren gewaagd CCW, of herstellen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RotateCCWBold_18_N.svg) om te beginnen herstelt proces.
+1. Aan het rechteruiteinde van de rij die de back-up vertegenwoordigt die je wilt herstellen, klik op ![Rotate CCW bold of restore](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RotateCCWBold_18_N.svg) om het herstelproces te starten.
 
-1. Herzie de details in **herstellen Inhoud** dialoogdoos, dan klik **herstellen**.
+1. Bekijk de details in het **dialoogvenster Inhoud herstellen** en klik dan op **Herstellen**.
 
-   ![&#x200B; bevestigt herstel &#x200B;](assets/backup-restore.png)
+   ![Bevestig herstel](assets/backup-restore.png)
 
-Het back-upproces wordt gestart. U kunt zijn status in de **[bekijken herstelt Activiteit](#restore-activity)** lijst. De tijd die nodig is om een terugzetbewerking te voltooien, is afhankelijk van de grootte en het profiel van de inhoud die wordt teruggezet.
+Het back-upproces wordt gestart. Je kunt de status bekijken in de **[lijst Activiteit](#restore-activity)** herstellen. De tijd die nodig is voor een hersteloperatie hangt af van de grootte en het profiel van de te herstellende inhoud.
 
-Wanneer de herstelbewerking met succes is voltooid, doet de omgeving het volgende:
+Wanneer het herstel succesvol is voltooid, doet de omgeving het volgende:
 
-* Hiermee worden dezelfde code en AEM-release uitgevoerd als op het moment dat de herstelbewerking wordt gestart.
-* Deze heeft dezelfde inhoud die beschikbaar was op het tijdstempel van de gekozen opname, waarbij de indexen opnieuw zijn samengesteld en overeenkomen met de huidige code.
+* Voert dezelfde code en AEM-release uit als op het moment van het starten van de hersteloperatie.
+* Het bevat dezelfde inhoud die beschikbaar was op het tijdstempel van de gekozen snapshot, waarbij de indexen zijn aangepast aan de huidige code.
 
-## Kies de juiste reservekopie {#choosing-backup}
+## Kies de juiste back-up {#choosing-backup}
 
-Cloud Manager-proces voor zelfherstel herstelt alleen inhoud naar AEM. Daarom moet u zorgvuldig rekening houden met wijzigingen in de code die zijn aangebracht tussen het gewenste herstelpunt en de huidige tijd. Controleer de commit geschiedenis tussen huidige begaat identiteitskaart en terug te zetten aan.
+Het zelfbedieningsherstelproces van Cloud Manager herstelt alleen inhoud in AEM. Om deze reden moet je zorgvuldig rekening houden met codewijzigingen die zijn aangebracht tussen het gewenste herstelpunt en het huidige tijdstip. Bekijk de commitgeschiedenis tussen de huidige commit-ID en de account die wordt hersteld.
 
 Er zijn verschillende scenario&#39;s.
 
-* De omgevingsaangepaste code en de terugzetbewerking bevinden zich in dezelfde opslagplaats en dezelfde vertakking.
-* De milieu douanecode en herstellen delen één bewaarplaats, gebruiken een afzonderlijke tak, en komen van gemeenschappelijk voort.
-* De aangepaste code voor de omgeving en het terugzetten bevinden zich in verschillende opslagruimten.
-   * In dit geval wordt een id voor vastleggen niet weergegeven.
-   * Adobe raadt u ten zeerste aan beide opslagruimten te klonen en een hulpprogramma voor bestandsdeling te gebruiken om de vertakkingen te vergelijken.
+* De aangepaste code van de omgeving en het herstel staan in dezelfde repository en dezelfde branch.
+* De aangepaste code van de omgeving en de restore delen één repository, gebruiken een aparte branch en komen voort uit een gemeenschappelijke commit.
+* De aangepaste code van de omgeving en het herstel bevinden zich in verschillende repositories.
+   * In dit geval wordt geen commit-ID weergegeven.
+   * Adobe raadt sterk aan om beide repositories te klonen en een verschillende tool te gebruiken om de takken te vergelijken.
 
-Houd er ook rekening mee dat een herstelbewerking ertoe kan leiden dat uw productie- en testomgevingen niet meer synchroon zijn. U bent verantwoordelijk voor de gevolgen van het herstellen van inhoud.
+Houd er ook rekening mee dat een herstel ervoor kan zorgen dat je productie- en stagingomgevingen uit elkaar raken. U bent verantwoordelijk voor de gevolgen van het herstellen van content.
 
 ## Herstelactiviteit {#restore-activity}
 
-De **herstel de lijst van de Activiteit** toont het statuut van tien meest recente herstelt verzoeken met inbegrip van om het even welke actieve herstelt verrichtingen.
+De **lijst met Herstelactiviteit** toont de status van de tien meest recente herstelverzoeken, inclusief alle actieve hersteloperaties.
 
-![&#x200B; herstel activiteit &#x200B;](assets/backup-activity.png)
+![Herstelactiviteit](assets/backup-activity.png)
 
-Door ![&#x200B; het pictogram van de Informatie &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) voor een steun te klikken, kunt u logboeken voor die steun downloaden en de codedetails met inbegrip van de verschillen tussen de momentopname en gegevens inspecteren op het ogenblik in werking werd gesteld herstelt.
+Door op het Informatie-icoon![ te klikken ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)voor een back-up, kun je logs van die back-up downloaden en de codedetails bekijken, inclusief de verschillen tussen de snapshot en de data op het moment dat het herstel werd gestart.
 
-## Offsite back-up {#offsite-backup}
+## Back-up buiten locatie {#offsite-backup}
 
-Regelmatige back-ups dekken het risico van onopzettelijke verwijderingen of technische storingen in AEM Cloud Services, maar extra risico&#39;s kunnen het gevolg zijn van een fout in een regio. Naast beschikbaarheid is het grootste risico in dergelijke regionale uitvallen een gegevensverlies.
+Reguliere back-ups dekken het risico op per ongeluk verwijderingen of technische storingen binnen AEM Cloud Services, maar er kunnen extra risico&#39;s ontstaan door het falen van een regio. Naast beschikbaarheid is het grootste risico bij dergelijke regionale uitval het verlies van data.
 
-AEM as a Cloud Service beperkt dit risico voor alle AEM-productieomgevingen. Dat wil zeggen dat alle AEM-inhoud voortdurend wordt gekopieerd naar een extern gebied. Met dit proces wordt de inhoud drie maanden beschikbaar voor herstel. Deze mogelijkheid wordt een externe back-up genoemd.
+AEM als Cloud Service beperkt dit risico voor alle AEM-productieomgevingen. Dat wil zeggen, het kopieert continu alle AEM-inhoud naar een afgelegen regio. Dit proces maakt de inhoud drie maanden beschikbaar voor herstel. Deze mogelijkheid staat bekend als een offsite back-up.
 
-AEM Service Reliability Engineering herstelt de AEM Cloud Service-omgeving voor opslag en productie van externe back-ups tijdens uitval in gegevensregio.
+AEM Service Reliability Engineering herstelt staging- en productieomgevingen van AEM Cloud Service-omgevingen uit off-site back-ups tijdens dataregio-uitvallen.
+
+## Principes van Dataregio-mapping {#data-region-mapping-principles}
+
+Adobe volgt een reeks interne richtlijnen om dataregio-mappings voor AEM als Cloud Service **te** bepalen. Deze richtlijnen zijn ontworpen om operationele efficiëntie te ondersteunen, naleving van regionale regelgeving te waarborgen en een consistente klantervaring te bieden op wereldmarkten.
+
+### Transparantie van regiomapping {#region-mapping-transparency}
+
+Adobe maakt geen gedetailleerde regio-tot-regio kaartinformatie openbaar.\
+Als klanten specifieke of gerechtvaardigde vragen hebben over regionale implementatie, gegevensresidentie of compliance-implicaties, wordt aanbevolen rechtstreeks contact op te nemen met Adobe via officiële support- of accountkanalen.
+
+### Kernprincipes voor het toewijzen van dataregio&#39;s {#core-principles}
+
+Bij het bepalen van een geschikte dataregio-mapping hanteert Adobe verschillende geprioriteerde criteria:
+
+1. **Verlaat de wereldregio niet**\
+   Uitzendingen blijven binnen een van de belangrijkste wereldregio&#39;s: **APAC,****EMEA** en **de Amerika&#39;s**.
+
+2. **Verlaat het continent niet.**\
+   Waar mogelijk blijven datareplicatie en failover op hetzelfde continent.
+
+3. **Verlaat het land niet**\
+   Als het technisch mogelijk is, blijven gegevens binnen dezelfde nationale grenzen.
+
+### Afhandelingsuitzonderingen {#handling-exceptions}
+
+Wanneer aan bovenstaande criteria niet wordt voldaan vanwege technische of infrastructurele beperkingen, past Adobe aanvullende overwegingen toe:
+
+* **Europa-specifieke richtlijn**\
+  Back-up- of secundaire regio&#39;s mogen zich niet in niet-EU-landen bevinden.\
+  (Het omgekeerde—een EU-land als backup gebruiken voor een niet-EU-voorverkiezing—kan acceptabel zijn als er geen betere optie voor hetzelfde land bestaat.)
+
+* **Vermijd bepaalde regio&#39;s**\
+  Regio&#39;s met beperkende databeleid of verhoogd regelgevingsrisico moeten worden vermeden als back-up- of failoverlocaties.
+
+Als klanten verduidelijking nodig hebben of compliance-gedreven behoeften hebben, raadt Adobe aan contact op te nemen met het Adobe-accountteam of de supportorganisatie voor advies dat is afgestemd op hun specifieke situatie.
 
 ## Beperkingen {#limitations}
 
-Het gebruik van het mechanisme voor zelfherstel is onderworpen aan de volgende beperkingen.
+Het gebruik van het selfserviceherstelmechanisme is onderhevig aan de volgende beperkingen.
 
-* Herstelbewerkingen zijn beperkt tot zeven dagen, wat betekent dat het niet mogelijk is om een momentopname ouder dan zeven dagen te herstellen.
-* In een programma per kalendermaand zijn maximaal tien succesvolle herstelbewerkingen toegestaan in alle omgevingen.
-* Nadat de omgeving is gemaakt, duurt het zes uur voordat de eerste back-upmomentopname is gemaakt. Totdat deze momentopname is gemaakt, kan geen herstel worden uitgevoerd op de omgeving.
-* Een terugzetbewerking wordt niet geïnitieerd als er een volledige stack of web tier config-pijplijn is die momenteel voor de omgeving wordt uitgevoerd.
-* Een terugzetprocedure kan niet worden gestart als een andere terugzetbewerking al op dezelfde omgeving wordt uitgevoerd.
-* In zeldzame gevallen kan de geselecteerde back-up vanwege de limiet van 24 uur/7 dagen voor het maken van back-ups niet langer beschikbaar zijn vanwege een vertraging tussen de datum waarop deze is geselecteerd en het moment waarop de terugzetprocedure wordt gestart.
+* Herstelbewerkingen zijn beperkt tot zeven dagen, wat betekent dat het niet mogelijk is om een snapshot ouder dan zeven dagen te herstellen.
+* Maximaal tien succesvolle herstelopdrachten zijn toegestaan in alle omgevingen van een programma per kalendermaand.
+* Na het aanmaken van de omgeving duurt het zes uur voordat de eerste back-upsnapshot wordt gemaakt. Totdat deze snapshot is gemaakt, kan er geen herstel worden uitgevoerd in de omgeving.
+* Een hersteloperatie wordt niet gestart als er momenteel een full stack- of webtier-configuratiepijplijn draait voor de omgeving.
+* Een herstel kan niet worden gestart als er al een andere restore op dezelfde omgeving draait.
+* In zeldzame gevallen kan de geselecteerde back-up vanwege de 24 uur/zeven dagen limiet op back-ups onbeschikbaar worden door een vertraging tussen het moment waarop deze werd geselecteerd en het starten van het herstel.
 * Gegevens uit verwijderde omgevingen gaan permanent verloren en kunnen niet worden hersteld.
