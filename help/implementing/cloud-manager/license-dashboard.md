@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 4bebe8a3a283711a053320bfda4a8aac32096aa6
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Cloud Manager biedt een dashboard waarmee u eenvoudig de productrechten van Adob
 
 >[!IMPORTANT]
 >
->Het licentiedashboard is alleen van toepassing op de AEM as a Cloud Service-programma&#39;s. [&#x200B; de programma&#39;s van AMS &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het dashboard van de Vergunning.
+>Het licentiedashboard is alleen van toepassing op de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het dashboard van de Vergunning.
 >
->Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie [&#x200B; Navigerend Cloud Manager UI &#x200B;](/help/implementing/cloud-manager/navigation.md#program-cards).
+>Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie [ Navigerend Cloud Manager UI ](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Overzicht {#overview}
 
-Het Cloud Manager-licentiedashboard biedt eenvoudig toegang tot de oplossingsrechten die beschikbaar zijn in al uw programma&#39;s, inclusief wat er wordt gebruikt en wat er beschikbaar is. En, de metriek van de het verbruiksvraag van de inhoud die door maand voor de oplossing van Plaatsen wordt trended.
+Het Cloud Manager-licentiedashboard biedt eenvoudig toegang tot de oplossingsrechten die beschikbaar zijn in al uw programma&#39;s, inclusief hoeveel wordt gebruikt en hoeveel beschikbaar is. En, de metriek van de het verbruiksvraag van de inhoud die door maand voor de oplossing van Plaatsen wordt trended.
 
 ## Het licentiedashboard openen {#using-dashboard}
 
@@ -33,17 +33,17 @@ Het Cloud Manager-licentiedashboard biedt eenvoudig toegang tot de oplossingsrec
 >
 >Een gebruiker in de **rol van de BedrijfsEigenaar** moet worden het programma geopend om het dashboard van de Vergunning te bekijken.
 
-1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) op de [&#x200B; Kopbal van Cloud Manager &#x200B;](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Deze actie onthult de lusjes.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) op de [ Kopbal van Cloud Manager ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Deze actie onthult de lusjes.
 1. Klik de **optie van de Vergunning** in het lusje.
 
-![&#x200B; Dashboard van de Vergunning &#x200B;](assets/license-dashboard.png)
+![ Dashboard van de Vergunning ](assets/license-dashboard.png)
 
 Het dashboard bestaat uit drie gedeelten die u laten zien:
 
 * **Oplossingen** - welke oplossingen die u vergunning hebt gegeven. Bijvoorbeeld Sites, Edge Delivery Services en Assets.
 
-  ![&#x200B; lijst van Oplossingen &#x200B;](assets/solutions.png)
+  ![ lijst van Oplossingen ](assets/solutions.png)
 
 * **toe:voegen-ons** - welke toe:voegen-ons aan uw vergunning gegeven oplossingen die u beschikbaar hebt.
 * **Andere Entitlements** - welke zandbak en dev milieu en andere rechten die binnen uw huurder kunnen worden verbruikt.
@@ -55,11 +55,11 @@ Elke sectie vat samen wat beschikbaar is en hoe het, als bij allen wordt gebruik
    * Een machtiging wordt alleen als gebruikt beschouwd wanneer een productieomgeving wordt gecreëerd. Of, als één bestaat, als een updatepijpleiding op het is in werking gesteld.
    * Slechts een beperkt aantal programma&#39;s wordt afzonderlijk vermeld in de kolom, de rest wordt vertegenwoordigd door een `+x` -item.
    * Houd de muisaanwijzer boven de `+x` -vermelding om een pop-up met gegevens over alle programma&#39;s weer te geven.
-* De **kolom van het Gebruik** &lbrace;toont a **[het gebruiksdetails van de Mening](#view-usage-details)** knoop om gebruiksstatistieken voor de oplossing te tonen.
+* De **kolom van het Gebruik** {toont a **[het gebruiksdetails van de Mening](#view-usage-details)** knoop om gebruiksstatistieken voor de oplossing te tonen.
 
 >[!TIP]
 >
->Leren hoe te om uw rechten van Adobe over uw volledige organisatie van Admin Console te beheren, zie het [&#x200B; overzicht van Admin Console &#x200B;](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
+>Leren hoe te om uw rechten van Adobe over uw volledige organisatie van Admin Console te beheren, zie het [ overzicht van Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
 
 ## Gebruiksdetails weergeven {#view-usage-details}
 
@@ -68,11 +68,20 @@ The **View usage details** button gives access to the chosen solution's **Usage 
 
 De **knoop van de het gebruikdetails van de Mening** in het gebied van de Vergunning van Cloud Manager verstrekt een gedetailleerde uitsplitsing van uw huidige middelgebruik. Wanneer geklikt, opent het een rapport of dashboard dat belangrijke metriek met betrekking tot uw vergunning toont. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Deze functionaliteit helpt u te controleren en ervoor te zorgen dat u binnen de grenzen van uw contract blijft terwijl u inzichten voor betere middelplanning en optimalisering aanbiedt.
 
+De **het gebruiksdetails van de Mening** knoop is *gehandicapt* (uitgezet) in de volgende gevallen:
+
+* De Oplossing maakt geen deel uit van uw contract en heeft geen kredieten. De knop blijft beschikbaar als er credits zijn, zelfs als alle credits worden verbruikt.
+* Geen programma van Cloud Manager wordt gevormd voor die Oplossing.
+* Een functiemarkering die de gebruiksdetails regelt, is uitgeschakeld. Het moet *worden toegelaten* (aangezet) voor uw organisatie alvorens de knoop beschikbaar wordt.
+* Het gebruik wordt uitdrukkelijk onbruikbaar gemaakt voor de Oplossing. Op dit moment geldt deze situatie alleen voor Edge Delivery Services.
+
+
+
 ### Gebruiksgegevens voor sites {#sites-usage-details}
 
-Het **het gebruikdetails van Plaatsen** venster stelt grafieken voor die een overzicht van het gebruik van uw vergunningen geven van Plaatsen die op [&#x200B; worden gebaseerd inhoudsverzoeken &#x200B;](#what-is-a-content-request).
+Het **het gebruikdetails van Plaatsen** venster stelt grafieken voor die een overzicht van het gebruik van uw vergunningen geven van Plaatsen die op [ worden gebaseerd inhoudsverzoeken ](#what-is-a-content-request).
 
-![&#x200B; het venster van de het gebruikdetails van Plaatsen &#x200B;](assets/sites-usage-details.png)
+![ het venster van de het gebruikdetails van Plaatsen ](assets/sites-usage-details.png)
 
 De linkerkant van het venster stelt een cirkeldiagram voor dat de contractverdeling voor het contractjaar toont dat in het **het contractjaar van de Mening** dropdown wordt geselecteerd.
 
@@ -113,7 +122,7 @@ Een inhoudsverzoek is elke aanvraag die is gericht aan AEM Sites of een door de 
 
 Inhoudsverzoeken sluiten verzoeken of activiteiten uit die door of namens Adobe worden geïnitieerd met als enig doel het aanbieden van producten en diensten. Ook het door Adobe geïdentificeerde verkeer van gebruikersagenten van bots, krawlers, en spinnen met betrekking tot gemeenschappelijke onderzoeksmotoren en sociale media wordt uitgesloten.
 
-Zie ook [&#x200B; de inhoudsverzoeken van Cloud Service &#x200B;](/help/implementing/cloud-manager/content-requests.md) begrijpen.
+Zie ook [ de inhoudsverzoeken van Cloud Service ](/help/implementing/cloud-manager/content-requests.md) begrijpen.
 
 ### Hoe meet Adobe Experience Manager verzoeken om inhoud?{#how-are-content-requests-measured}
 
@@ -121,11 +130,11 @@ Aanvragen voor inhoud worden bijgehouden op AEM as a Cloud Service Edge-servers.
 
 AEM beschikt ook over regels om bekende bots uit te sluiten, waaronder bekende diensten die regelmatig de site bezoeken om hun zoekindex of service te vernieuwen.
 
-Zie ook [&#x200B; Begrip van de Verzoeken van de Inhoud van Cloud Service &#x200B;](/help/implementing/cloud-manager/content-requests.md).
+Zie ook [ Begrip van de Verzoeken van de Inhoud van Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
 
 ### Waarom geeft mijn Analytics-rapport andere resultaten dan de AEM-inhoudaanvragen?{#why-are-reports-different}
 
-Aanvragen voor inhoud kunnen variaties hebben met de rapportagehulpprogramma&#39;s Analytics van een organisatie. Voor meer informatie, zie [&#x200B; Begrijpend de Verzoeken van de Inhoud van Cloud Service &#x200B;](/help/implementing/cloud-manager/content-requests.md).
+Aanvragen voor inhoud kunnen variaties hebben met de rapportagehulpprogramma&#39;s Analytics van een organisatie. Voor meer informatie, zie [ Begrijpend de Verzoeken van de Inhoud van Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
 
 ### Wat als ik meer over mijn volume van de inhoudshulp zou willen leren?{#current-request-volumes}
 
