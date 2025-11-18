@@ -22,7 +22,7 @@ Het zelfbedieningsherstelproces van Cloud Manager kopieert gegevens van Adobe-sy
 
 Het herstelproces beïnvloedt alleen de inhoud, waardoor je code en versie van AEM ongewijzigd blijven. Je kunt op elk moment een hersteloperatie van individuele omgevingen starten.
 
-Als je eerder geïmplementeerde broncode op een eenvoudige en snelle manier wilt herstellen, zonder een nieuwe pipeline-uitvoering te hoeven starten, kun je Restore the Previous Code Deployed[ gebruiken](/help/operations/restore-previous-code-deployed.md).
+Als je eerder geïmplementeerde broncode op een eenvoudige en snelle manier wilt herstellen, zonder een nieuwe pipeline-uitvoering te hoeven starten, kun je Restore the Previous Code Deployed[&#x200B; gebruiken](/help/operations/restore-previous-code-deployed.md).
 
 Cloud Manager biedt twee soorten back-ups waarmee je content kunt herstellen.
 
@@ -67,7 +67,7 @@ Voor details over het beheren van permissies, zie [Aangepaste Rechten](/help/imp
 
 >[!NOTE]
 >
->Een gebruiker moet over de juiste rechten[ beschikken om ](#user-role)een hersteloperatie te starten.
+>Een gebruiker moet over de juiste rechten[&#x200B; beschikken om &#x200B;](#user-role)een hersteloperatie te starten.
 
 **Om de inhoud van een omgeving te herstellen:**
 
@@ -77,7 +77,7 @@ Voor details over het beheren van permissies, zie [Aangepaste Rechten](/help/imp
 
 1. Vermeld alle omgevingen voor het programma door een van de volgende te doen:
 
-   * Klik in het linkermenu, onder Services, op **Data-icoon** ![Omgevingen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg).****
+   * Klik in het linkermenu, onder Services, op **Data-icoon** ![Omgevingen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg).**&#x200B;**
 
      ![Tabblad Omgevingen](assets/environments-1.png)
 
@@ -141,7 +141,7 @@ De **lijst met Herstelactiviteit** toont de status van de tien meest recente her
 
 ![Herstelactiviteit](assets/backup-activity.png)
 
-Door op het Informatie-icoon![ te klikken ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)voor een back-up, kun je logs van die back-up downloaden en de codedetails bekijken, inclusief de verschillen tussen de snapshot en de data op het moment dat het herstel werd gestart.
+Door op het Informatie-icoon![&#x200B; te klikken &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)voor een back-up, kun je logs van die back-up downloaden en de codedetails bekijken, inclusief de verschillen tussen de snapshot en de data op het moment dat het herstel werd gestart.
 
 ## Back-up buiten locatie {#offsite-backup}
 
@@ -165,7 +165,7 @@ Als klanten specifieke of gerechtvaardigde vragen hebben over regionale implemen
 Bij het bepalen van een geschikte dataregio-mapping hanteert Adobe verschillende geprioriteerde criteria:
 
 1. **Verlaat de wereldregio niet**\
-   Uitzendingen blijven binnen een van de belangrijkste wereldregio&#39;s: **APAC,****EMEA** en **de Amerika&#39;s**.
+   Uitzendingen blijven binnen een van de belangrijkste wereldregio&#39;s: **APAC,**&#x200B;**EMEA** en **de Amerika&#39;s**.
 
 2. **Verlaat het continent niet.**\
    Waar mogelijk blijven datareplicatie en failover op hetzelfde continent.
