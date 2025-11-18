@@ -25,7 +25,7 @@ Na het bewerken van een afbeelding kun je de nieuwe afbeelding als een nieuwe ve
 
 ## Afbeelding bewerken {#edit-image}
 
-Ga naar de gebruikersinterface van Assets View, gebruik de link - Assets View[ en ](https://experience.adobe.com/#/assets)selecteer de juiste repository. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
+Ga naar de gebruikersinterface van Assets View, gebruik de link - Assets View[&#x200B; en &#x200B;](https://experience.adobe.com/#/assets)selecteer de juiste repository. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
 Voor aanvullende referentiegegevens zie - [Begin met Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Understand the Assets view gebruikersinterface](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) en [Assets View use cases](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -90,7 +90,7 @@ Gebruikers met Express-recht kunnen de ingebouwde Express-editor vanuit de Asset
 ![express in essentials UI](/help/assets/assets/express-in-essentials-ui.jpg)
 Om afbeeldingen te bewerken met [!DNL Adobe Express] een ingebedde editor, volgt u de onderstaande stappen:
 
-1. Ga naar AEM Assets View via de link - AEM Assets View[ en ](https://experience.adobe.com/#/assets)selecteer de juiste repository.
+1. Ga naar AEM Assets View via de link - AEM Assets View[&#x200B; en &#x200B;](https://experience.adobe.com/#/assets)selecteer de juiste repository.
 1. Klik op **Assets**, open een map en selecteer een afbeelding.
 1. Klik op **Openen in Adobe Express**. Het beeld opent op een expressdoek.
 1. Maak de vereiste aanpassingen aan de afbeelding.
@@ -122,7 +122,7 @@ Om afbeeldingen te bewerken met [!DNL Adobe Express] een ingebedde editor, volgt
 [!DNL Assets view] Stelt je in staat om een nieuw sjabloon vanaf nul te maken met behulp van [!DNL Adobe Express] een embedded editor. Om een nieuw asset te creëren met [!DNL Adobe Express], voer je de onderstaande stappen uit:
 
 1. Navigeer naar **[!UICONTROL My Workspace]** en klik **[!UICONTROL Create]** binnen de Adobe Express-banner die bovenaan wordt weergegeven. [!DNL Adobe Express] Leeg canvas wordt weergegeven binnen de [!DNL Assets view] gebruikersinterface.
-1. Maak je content met behulp van [](https://helpx.adobe.com/in/express/using/work-with-templates.html)sjablonen. Anders navigeer naar **[!UICONTROL Your Stuff]** om bestaande inhoud aan te passen.
+1. Maak je content met behulp van [&#128279;](https://helpx.adobe.com/in/express/using/work-with-templates.html)sjablonen. Anders navigeer naar **[!UICONTROL Your Stuff]** om bestaande inhoud aan te passen.
 1. Zodra je het bewerken hebt afgerond, klik **[!UICONTROL Save]** je op .
 1. Geef het bestemmingspad voor het aangemaakte asset aan en klik **[!UICONTROL Save as new asset]** op .
 
