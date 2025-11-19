@@ -4,7 +4,7 @@ description: Leer hoe te om de standaardfoutenpagina met voeten te treden door s
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # CDN-foutpagina&#39;s configureren {#cdn-error-pages}
 
-In de onwaarschijnlijke gebeurtenis dat [&#x200B; Adobe-Beheerde CDN &#x200B;](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) niet de oorsprong van AEM kan bereiken, dient CDN door gebrek unbranded, generische foutenpagina die erop wijst dat de server niet kan worden bereikt. U kunt de standaardfoutenpagina met voeten treden door statische dossiers in zelf-ontvangen opslag zoals de Opslag van Amazon S3 of van Azure Blob te ontvangen, en hen van verwijzingen te voorzien in een configuratiedossier dat door de Cloud Manager [&#x200B; config pijpleiding &#x200B;](/help/operations/config-pipeline.md#managing-in-cloud-manager) te gebruiken wordt opgesteld.
+In de onwaarschijnlijke gebeurtenis dat [ Adobe-Beheerde CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) niet de oorsprong van AEM kan bereiken, dient CDN door gebrek unbranded, generische foutenpagina die erop wijst dat de server niet kan worden bereikt. U kunt de standaardfoutenpagina met voeten treden door statische dossiers in zelf-ontvangen opslag zoals de Opslag van Amazon S3 of van Azure Blob te ontvangen, en hen van verwijzingen te voorzien in een configuratiedossier dat door de Cloud Manager [ config pijpleiding ](/help/operations/config-pipeline.md#managing-in-cloud-manager) te gebruiken wordt opgesteld.
 
 ## Instellen {#setup}
 
@@ -22,9 +22,9 @@ Voordat u de standaardfoutpagina kunt overschrijven, moet u het volgende doen:
 
 1. Maak een bestand met de naam `cdn.yaml` of een vergelijkbaar bestand en verwijs naar de onderstaande syntaxissectie.
 
-1. Plaats het dossier ergens onder een top niveauomslag genoemd *config* of gelijkaardig, zoals die in [&#x200B; wordt beschreven Gebruikend Pijpleidingen Config &#x200B;](/help/operations/config-pipeline.md#folder-structure).
+1. Plaats het dossier ergens onder een top niveauomslag genoemd *config* of gelijkaardig, zoals die in [ wordt beschreven Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
 
-1. Creeer een configuratiepijpleiding in Cloud Manager, zoals die in [&#x200B; wordt beschreven Gebruikend Pijpleidingen Config &#x200B;](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Creeer een configuratiepijpleiding in Cloud Manager, zoals die in [ wordt beschreven Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Implementeer de configuratie.
 
@@ -37,8 +37,6 @@ Voorbeeld van configuratie:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:
@@ -48,7 +46,7 @@ data:
       jsUrl: https://www.example.com/error.js
 ```
 
-Zie [&#x200B; Gebruikend Pijpleidingen Config &#x200B;](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de gegevensknoop. De waarde van het typebezit zou *CDN* moeten zijn en het `version` bezit zou aan *1* moeten worden geplaatst.
+Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de gegevensknoop. De waarde van het typebezit zou *CDN* moeten zijn en het `version` bezit zou aan *1* moeten worden geplaatst.
 
 
 | Naam | Toegestane eigenschappen | Betekenis |
@@ -93,6 +91,6 @@ Op deze manier activeert u rechtstreeks de fouthandler van de CDN om de syntheti
 
 ### Zelfstudie
 
-Verwijs naar de [&#x200B; CDN foutenpagina&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) leerprogramma voor geleidelijke instructies op om tot stand te brengen, op te stellen en te testen CDN diende foutenpagina&#39;s.
+Verwijs naar de [ CDN foutenpagina&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) leerprogramma voor geleidelijke instructies op om tot stand te brengen, op te stellen en te testen CDN diende foutenpagina&#39;s.
 
 
