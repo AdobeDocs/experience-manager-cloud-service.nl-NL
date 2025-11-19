@@ -4,7 +4,7 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 0%
@@ -14,24 +14,24 @@ ht-degree: 0%
 
 # Het vormen van Verkeer bij CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service biedt een inzameling van eigenschappen aan configureerbaar bij de [&#x200B; Adobe-Beheerde CDN &#x200B;](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) laag die de aard van of inkomende verzoeken of uitgaande reacties wijzigen. De volgende regels, die in detail in deze pagina worden beschreven, kunnen worden verklaard om het volgende gedrag te bereiken:
+AEM as a Cloud Service biedt een inzameling van eigenschappen aan configureerbaar bij de [ Adobe-Beheerde CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) laag die de aard van of inkomende verzoeken of uitgaande reacties wijzigen. De volgende regels, die in detail in deze pagina worden beschreven, kunnen worden verklaard om het volgende gedrag te bereiken:
 
-* [&#x200B; de transformaties van het Verzoek &#x200B;](#request-transformations) - wijzig aspecten van inkomende verzoeken, met inbegrip van kopballen, wegen en parameters.
-* [&#x200B; transformaties van de Reactie &#x200B;](#response-transformations) - wijzig kopballen die op de manier terug naar de cliënt (bijvoorbeeld, Webbrowser) zijn.
-* [&#x200B; server-kant richt &#x200B;](#server-side-redirectors) opnieuw - teweegbrengt browser omleiding.
-* [&#x200B; de selecteurs van de Oorsprong &#x200B;](#origin-selectors) - volmacht aan een verschillende oorsprong achterkant.
+* [ de transformaties van het Verzoek ](#request-transformations) - wijzig aspecten van inkomende verzoeken, met inbegrip van kopballen, wegen en parameters.
+* [ transformaties van de Reactie ](#response-transformations) - wijzig kopballen die op de manier terug naar de cliënt (bijvoorbeeld, Webbrowser) zijn.
+* [ server-kant richt ](#server-side-redirectors) opnieuw - teweegbrengt browser omleiding.
+* [ de selecteurs van de Oorsprong ](#origin-selectors) - volmacht aan een verschillende oorsprong achterkant.
 
-Ook configureerbaar bij CDN zijn de Regels van de Filter van het Verkeer (met inbegrip van WAF), die controleert welk verkeer door CDN wordt toegestaan of wordt ontkend. Deze eigenschap wordt reeds vrijgegeven en u kunt meer over het in de [&#x200B; Regels van de Filter van het Verkeer leren met inbegrip van WAF regels &#x200B;](/help/security/traffic-filter-rules-including-waf.md) pagina.
+Ook configureerbaar bij CDN zijn de Regels van de Filter van het Verkeer (met inbegrip van WAF), die controleert welk verkeer door CDN wordt toegestaan of wordt ontkend. Deze eigenschap wordt reeds vrijgegeven en u kunt meer over het in de [ Regels van de Filter van het Verkeer leren met inbegrip van WAF regels ](/help/security/traffic-filter-rules-including-waf.md) pagina.
 
-Bovendien, als CDN niet zijn oorsprong kan contacteren, kunt u een regel schrijven die verwijzingen een zelf-ontvangen pagina van de douanefout (die dan wordt teruggegeven). Leer meer over dit door [&#x200B; te lezen Vormend CDN foutenpagina&#39;s &#x200B;](/help/implementing/dispatcher/cdn-error-pages.md) artikel.
+Bovendien, als CDN niet zijn oorsprong kan contacteren, kunt u een regel schrijven die verwijzingen een zelf-ontvangen pagina van de douanefout (die dan wordt teruggegeven). Leer meer over dit door [ te lezen Vormend CDN foutenpagina&#39;s ](/help/implementing/dispatcher/cdn-error-pages.md) artikel.
 
-Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door de Cloud Manager [&#x200B; te gebruiken config pijpleiding &#x200B;](/help/operations/config-pipeline.md). Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
+Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door de Cloud Manager [ te gebruiken config pijpleiding ](/help/operations/config-pipeline.md). Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
 
 ## Evaluatievolgorde {#order-of-evaluation}
 
 Functioneel worden de verschillende eerder vermelde functies in de volgende volgorde geëvalueerd:
 
-![&#x200B; Orde van evaluatie &#x200B;](/help/implementing/dispatcher/assets/order.png)
+![ Orde van evaluatie ](/help/implementing/dispatcher/assets/order.png)
 
 ## Instellen {#initial-setup}
 
@@ -39,18 +39,16 @@ Alvorens u verkeer bij CDN kunt vormen moet u het volgende doen:
 
 1. Maak een bestand met de naam `cdn.yaml` of een vergelijkbaar bestand, waarbij u verwijst naar de verschillende configuratiefragmenten in de onderstaande secties.
 
-   Alle fragmenten hebben deze gemeenschappelijke eigenschappen, die onder [&#x200B; worden beschreven Config Pijpleiding &#x200B;](/help/operations/config-pipeline.md#common-syntax). De `kind` bezitswaarde zou *CDN* moeten zijn en het `version` bezit zou aan *1* moeten worden geplaatst.
+   Alle fragmenten hebben deze gemeenschappelijke eigenschappen, die onder [ worden beschreven Config Pijpleiding ](/help/operations/config-pipeline.md#common-syntax). De `kind` bezitswaarde zou *CDN* moeten zijn en het `version` bezit zou aan *1* moeten worden geplaatst.
 
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    ```
 
-1. Plaats het dossier ergens onder een top niveauomslag genoemd *config* of gelijkaardig, zoals die onder [&#x200B; wordt beschreven Pijpleiding Config &#x200B;](/help/operations/config-pipeline.md#folder-structure).
+1. Plaats het dossier ergens onder een top niveauomslag genoemd *config* of gelijkaardig, zoals die onder [ wordt beschreven Pijpleiding Config ](/help/operations/config-pipeline.md#folder-structure).
 
-1. Creeer een Pijpleiding Config in Cloud Manager, zoals die onder [&#x200B; wordt beschreven Config Pijpleiding &#x200B;](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Creeer een Pijpleiding Config in Cloud Manager, zoals die onder [ wordt beschreven Config Pijpleiding ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Implementeer de configuratie.
 
@@ -60,7 +58,7 @@ De regeltypen in de onderstaande secties hebben dezelfde syntaxis.
 
 Een regel wordt van verwijzingen voorzien door een naam, een voorwaardelijk &quot;wanneer clausule&quot;, en acties.
 
-De clausule &quot;wanneer&quot;bepaalt of een regel, gebaseerd op eigenschappen met inbegrip van domein, weg, vraagkoorden, kopballen, en koekjes zal worden geëvalueerd. De syntaxis is het zelfde over regeltypes; voor details, zie de [&#x200B; sectie van de Structuur van de Voorwaarde in het artikel van de Regels van de Filter van het Verkeer.](/help/security/traffic-filter-rules-including-waf.md#condition-structure)
+De clausule &quot;wanneer&quot;bepaalt of een regel, gebaseerd op eigenschappen met inbegrip van domein, weg, vraagkoorden, kopballen, en koekjes zal worden geëvalueerd. De syntaxis is het zelfde over regeltypes; voor details, zie de [ sectie van de Structuur van de Voorwaarde in het artikel van de Regels van de Filter van het Verkeer.](/help/security/traffic-filter-rules-including-waf.md#condition-structure)
 
 De details van het actieknooppunt verschillen per regeltype en worden in de afzonderlijke secties hieronder beschreven.
 
@@ -79,8 +77,6 @@ Voorbeeld van configuratie:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: true
@@ -220,15 +216,13 @@ actions:
 
 ### Variabelen {#variables}
 
-U kunt variabelen tijdens de verzoektransformatie plaatsen en dan van verwijzingen voorzien hen later in de evaluatiereeks. Zie de [&#x200B; orde van evaluatie &#x200B;](#order-of-evaluation) diagram voor verdere details.
+U kunt variabelen tijdens de verzoektransformatie plaatsen en dan van verwijzingen voorzien hen later in de evaluatiereeks. Zie de [ orde van evaluatie ](#order-of-evaluation) diagram voor verdere details.
 
 Voorbeeld van configuratie:
 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   requestTransformations:
     rules:
@@ -313,8 +307,6 @@ Voorbeeld van configuratie:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   responseTransformations:
     rules:
@@ -397,8 +389,6 @@ Voorbeeld van configuratie:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -449,15 +439,13 @@ Verbindingen met oorsprong zijn alleen SSL en gebruiken poort 443.
 
 ### Aangepast domein uitbreiden naar statische AEM-laag {#proxy-custom-domain-static}
 
-De selecteurs van de oorsprong kunnen worden gebruikt om AEM te leiden publiceren verkeer aan AEM statische inhoud die gebruikend de [&#x200B; front eindpijpleiding &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) wordt opgesteld. De gevallen van het gebruik omvatten het dienen van statische middelen op het zelfde domein zoals de pagina (b.v., example.com/static) of op een uitdrukkelijk verschillend domein (b.v., static.example.com).
+De selecteurs van de oorsprong kunnen worden gebruikt om AEM te leiden publiceren verkeer aan AEM statische inhoud die gebruikend de [ front eindpijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) wordt opgesteld. De gevallen van het gebruik omvatten het dienen van statische middelen op het zelfde domein zoals de pagina (b.v., example.com/static) of op een uitdrukkelijk verschillend domein (b.v., static.example.com).
 
 Hier volgt een voorbeeld van een regel voor de oorspronkelijke kiezer waarmee u dit kunt bereiken:
 
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -483,8 +471,6 @@ Hier volgt een voorbeeld van een regel voor de oorspronkelijke kiezer waarmee u 
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -507,7 +493,7 @@ data:
 
 >[!NOTE]
 >
->Omdat Adobe Beheerde CDN wordt gebruikt, zorg ervoor om pushongeldigverklaring op **beheerde** wijze te vormen, door de de duw van de Opstelling van Edge Delivery Services [&#x200B; documentatie van de ongeldigverklaring &#x200B;](https://www.aem.live/docs/byo-dns#setup-push-invalidation) te volgen.
+>Omdat Adobe Beheerde CDN wordt gebruikt, zorg ervoor om pushongeldigverklaring op **beheerde** wijze te vormen, door de de duw van de Opstelling van Edge Delivery Services [ documentatie van de ongeldigverklaring ](https://www.aem.live/docs/byo-dns#setup-push-invalidation) te volgen.
 
 
 ## Server-side omleidingen {#server-side-redirectors}
@@ -523,8 +509,6 @@ Voorbeeld van configuratie:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   redirects:
     rules:
