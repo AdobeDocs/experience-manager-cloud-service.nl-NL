@@ -91,6 +91,6 @@ Op deze manier activeert u rechtstreeks de fouthandler van de CDN om de syntheti
 
 ### Zelfstudie
 
-Verwijs naar de [&#x200B; CDN foutenpagina&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) leerprogramma voor geleidelijke instructies op om tot stand te brengen, op te stellen en te testen CDN diende foutenpagina&#39;s.
+Verwijs naar de [&#x200B; CDN foutenpagina&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) leerprogramma voor geleidelijke instructies op om tot stand te brengen, op te stellen en te testen CDN diende foutenpagina&#39;s.
 
 

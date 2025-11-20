@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De gebruikersinterface van de Assets-weergave maakt basisbewerkingen van afbeeldingen mogelijk die door Adobe Express worden ondersteund en die zijn geïntegreerd in de gebruikersinterface. Deze bewerking omvat het wijzigen van het formaat, het verwijderen van de achtergrond, het bijsnijden, en het omzetten tussen JPEG en PNG formaten. Bovendien is geavanceerde bewerking mogelijk via de Adobe Express-interface die is ingesloten in de interface van de Assets-weergave.
 
-Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een nieuwe versie. Met Versioning kunt u het oorspronkelijke element later herstellen als dat nodig is. Om een beeld uit te geven, [&#x200B; open zijn voorproef &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) en klik **geef Beeld** uit.
+Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een nieuwe versie. Met Versioning kunt u het oorspronkelijke element later herstellen als dat nodig is. Om een beeld uit te geven, [&#x200B; open zijn voorproef &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) en klik **geef Beeld** uit.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een
 ## Afbeelding bewerken {#edit-image}
 
 Ga naar de mening UI van Assets, gebruikend de verbinding - [&#x200B; Mening van Assets &#x200B;](https://experience.adobe.com/#/assets) en het selecteren van de juiste bewaarplaats. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
-Voor om het even welke extra verwijzingsinformatie verwijs - [&#x200B; begonnen worden gebruikend de Mening van Adobe Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [&#x200B; het gebruikersinterface van de mening van Assets &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) begrijpen, en [&#x200B; het gebruiksgevallen van de Mening van Assets &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Voor om het even welke extra verwijzingsinformatie verwijs - [&#x200B; begonnen worden gebruikend de Mening van Adobe Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [&#x200B; het gebruikersinterface van de mening van Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) begrijpen, en [&#x200B; het gebruiksgevallen van de Mening van Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -154,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/nl/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -197,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar.
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
