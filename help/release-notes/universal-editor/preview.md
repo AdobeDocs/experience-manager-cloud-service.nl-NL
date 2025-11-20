@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Universal Editor Preview
 description: Dit zijn de releaseopmerkingen voor de voorvertoningsversie van de Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
+source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Opmerkingen bij de release Universal Editor Preview {#preview}
 
-Dit zijn de versienota&#39;s voor de **voorproefversie** van de Universele Redacteur. Deze eigenschappen zijn momenteel beschikbaar in het 0&rbrace; voorproefmilieu van uw Universele Redacteur **.** Deze functies zullen naar verwachting op 20 november 2025 beschikbaar komen.
+Dit zijn de versienota&#39;s voor de **voorproefversie** van de Universele Redacteur. Deze eigenschappen zijn momenteel beschikbaar in het 0} voorproefmilieu van uw Universele Redacteur **.** Deze functies zullen naar verwachting op 27 november 2025 beschikbaar komen.
 
-Deze **voorproef** versienota&#39;s worden verstrekt als gemak zodat weet u welke veranderingen in de Universele Redacteur aanstaande zijn en u kunt hen testen door [&#x200B; omschakeling aan uw voorproefmilieu.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
+Deze **voorproef** versienota&#39;s worden verstrekt als gemak zodat weet u welke veranderingen in de Universele Redacteur aanstaande zijn en u kunt hen testen door [ omschakeling aan uw voorproefmilieu.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
 >[!TIP]
 >
->Voor de **huidige versienota&#39;s** voor de Universele Redacteur, zie gelieve de Nota&#39;s van de Versie van de Redacteur van het document [&#x200B; Universele &#x200B;](/help/release-notes/universal-editor/current.md).
+>Voor de **huidige versienota&#39;s** voor de Universele Redacteur, zie gelieve de Nota&#39;s van de Versie van de Redacteur van het document [ Universele ](/help/release-notes/universal-editor/current.md).
 
 >[!NOTE]
 >
@@ -27,11 +27,11 @@ Deze **voorproef** versienota&#39;s worden verstrekt als gemak zodat weet u welk
 
 ## Nieuwe functies {#what-is-new}
 
-* De toesten zijn gemigreerd naar een nieuwe gebruikersinterface.
+* Er is nu een contextueel menu beschikbaar in de gestructureerde structuur wanneer u met de rechtermuisknop klikt.
+* Een sneltoets is toegevoegd aan dubbele componenten.
 
 ## Aankomende verbeteringen {#other-improvements}
 
-* De verwerking van RTE-waarden is vereenvoudigd.
-* Een zeldzame werkbalkzeldzame rasvoorwaarde is opgelost.
-* De ongebruikte functiegereedschappen zijn verwijderd.
-* Afhankelijkheden zijn bijgewerkt.
+* Een probleem met de RTE die niet correct op canvas opslaat, is opgelost.
+* Het uitknippen van de mapstructuur van de inhoudkiezer is opgelost.
+* `componentId` wordt nu opgegeven tijdens een handeling voor toevoegen.
