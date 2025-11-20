@@ -354,12 +354,12 @@ De bestandsnaam die moet worden gewijzigd, is `org.apache.sling.auth.oauth_clien
 
 ## Hoe te van de Handler van de Authentificatie van Saml aan de Handler van de Authentificatie Oidc migreren
 
-Wanneer AEM reeds met een Handler van de Authentificatie van SAML wordt gevormd, en de gebruikers in de bewaarplaats met [&#x200B; toegelaten gegevenssynchronisatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) aanwezig zijn, kunnen de conflicten tussen de originele gebruikers van SAML en de nieuwe gebruikers OIDC voorkomen.
+Wanneer AEM reeds met een Handler van de Authentificatie van SAML wordt gevormd, en de gebruikers in de bewaarplaats met [&#x200B; toegelaten gegevenssynchronisatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) aanwezig zijn, kunnen de conflicten tussen de originele gebruikers van SAML en de nieuwe gebruikers OIDC voorkomen.
 
 1. Vorm [&#x200B; OidcAuthenticationHandler &#x200B;](#configure-oidc-authentication-handler) en laat `idpNameInPrincipals` in [&#x200B; SlingUserInfoProcessor &#x200B;](#configure-slinguserinfoprocessor) configuratie toe
 1. Opstelling [&#x200B; ACL voor externe groepen &#x200B;](#configure-acl-for-external-groups).
 1. Na login van gebruikers, kunnen de oude gebruikers die door de steekproef authentificatiemanager worden gecreeerd worden geschrapt.
 
 >[!NOTE]
->Zodra de manager van de Authentificatie SAML wordt onbruikbaar gemaakt en de handler OIDC van de Authentificatie wordt toegelaten, als [&#x200B; gegevenssynchronisatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) niet wordt toegelaten, worden de bestaande zittingen ongeldig. Gebruikers moeten opnieuw verifiëren, wat resulteert in het maken van nieuwe OIDC-gebruikersknooppunten in de opslagplaats.
+>Zodra de manager van de Authentificatie SAML wordt onbruikbaar gemaakt en de handler OIDC van de Authentificatie wordt toegelaten, als [&#x200B; gegevenssynchronisatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) niet wordt toegelaten, worden de bestaande zittingen ongeldig. Gebruikers moeten opnieuw verifiëren, wat resulteert in het maken van nieuwe OIDC-gebruikersknooppunten in de opslagplaats.
 
