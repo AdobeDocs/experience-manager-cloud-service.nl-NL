@@ -39,7 +39,7 @@ Voer de volgende stappen uit om AEM Assets in Adobe Express Editor te gaan gebru
    >
    >Filteren op dimensie is niet van toepassing op video&#39;s.
 
-   ![ omvat activa van Assets toe:voegen-op ](assets/adobe-express-native-integration.png)
+   ![&#x200B; omvat activa van Assets toe:voegen-op &#x200B;](assets/adobe-express-native-integration.png)
 
 ### Afbeelding vervangen met AEM-upload {#replace-image-using-aem-upload}
 
@@ -49,7 +49,7 @@ Bovendien kunt u de toegevoegde afbeeldingen vervangen met **[!UICONTROL AEM Upl
 
 1. Selecteer de afbeelding die u wilt vervangen. Klik op **[!UICONTROL Replace]** en selecteer **[!UICONTROL AEM Assets]** onder verschillende andere opties.
 
-   ![ AEM vervangt ](assets/aem-replace.png)
+   ![&#x200B; AEM vervangt &#x200B;](assets/aem-replace.png)
 
 1. **[!UICONTROL AEM Upload]** wordt geopend in het linkernavigatievenster. In Adobe Express wordt de lijst met opslagplaatsen weergegeven die u kunt openen, samen met de lijst met elementen en mappen die beschikbaar zijn op hoofdniveau. Selecteer een element om een voorvertoning van de vervanging op het canvas weer te geven en klik vervolgens op **[!UICONTROL Replace]** om te bevestigen.
 
@@ -63,18 +63,18 @@ Nadat u de juiste wijzigingen hebt aangebracht in het Express-canvas, kunt u het
 
 1. Klik op **[!UICONTROL Share]** om het dialoogvenster **[!UICONTROL Share]** te openen.
 
-   ![ sparen activa in AEM ](assets/adobe-express-share.png)
+   ![&#x200B; sparen activa in AEM &#x200B;](assets/adobe-express-share.png)
 
 2. Van de **[!UICONTROL Recommended]** sectie in de juiste ruit, uitgezochte **AEM Assets**. Adobe Express geeft het dialoogvenster voor uploaden weer.
 
-   ![ sparen activa in AEM ](assets/adobe-express-aem.png)
+   ![&#x200B; sparen activa in AEM &#x200B;](assets/adobe-express-aem.png)
 
 3. Selecteer of **Huidige Pagina** of **Alle Pagina&#39;s**. Geef een naam en indeling op voor de elementen die u wilt exporteren. U kunt de inhoud van het canvas exporteren in de indelingen PNG, JPEG, PDF, MP4, MP4+PNG of MP4+JPEG. De opmaak wordt automatisch aangepast op basis van de elementen op de canvaspagina(&#39;s).
 Het selecteren van **Huidige Pagina** slaat de activa op uw huidige pagina aan uw bestemmingsomslag op. Als u **Alle Pagina&#39;s** selecteert en het uitvoerformaat niet PDF is, worden alle canvaspagina&#39;s bewaard als afzonderlijke dossiers in een nieuwe omslag binnen uw bestemmingsomslag. Als de exportindeling PDF is, worden alle canvaspagina&#39;s als één PDF-bestand opgeslagen in de doelmap.
 
 4. Klik het omslagpictogram onder **Omslag van de Bestemming** om een plaats te selecteren en de activa te bewaren.
 
-   ![ sparen activa in AEM ](/help/assets/assets/page-selection-and-destination-folder.svg)
+   ![&#x200B; sparen activa in AEM &#x200B;](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. Facultatief: U kunt campagnemetagegevens voor uw toevoegen gebruikend het **project of campagnenaam** gebied. U kunt een bestaande naam gebruiken of een nieuwe naam maken. U kunt meerdere project- of campagnenamen definiëren voor het uploaden. Als u de naam wilt registreren, typt u gewoon de naam en klikt u op Enter.
 Het wordt aanbevolen dat Adobe waarden opgeeft in de rest van de velden en een verbeterde zoekervaring maakt voor uw geüploade elementen.
