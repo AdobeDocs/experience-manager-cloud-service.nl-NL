@@ -26,7 +26,7 @@ AEM Sites as a Cloud Service biedt mogelijkheden voor ervaringsbeheer als onderd
 >* [Belangrijke wijzigingen in AEM as a Cloud Service (releaseopmerkingen)](/help/release-notes/aem-cloud-changes.md)
 >* [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 >* [Inleiding tot AEM Assets as a Cloud Service](/help/assets/overview.md)
->* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=nl-NL)
 
 De wijzigingen en toevoegingen in AEM Sites as a Cloud Service zijn als volgt:
 
@@ -52,9 +52,9 @@ U kunt het statuut van asynchrone banen van het [&#x200B; dashboard van de Verri
 
 ## Nieuwe naslagsite en zelfstudie {#new-reference-site-and-tutorial}
 
-[&#x200B; WKND &#x200B;](https://wknd.site/), een nieuwe de verwijzingsplaats van AEM, is bijgewerkt en gepubliceerd om op beste praktijken te wijzen om een website met AEM, en met de uitvoerige reeks mogelijkheden, componenten, en plaatsingsmodellen te bouwen die in AEM beschikbaar zijn. De nieuwe verwijzingsplaats en [&#x200B; begeleidende leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) behandelen fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, editable malplaatjes, cliëntbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
+[&#x200B; WKND &#x200B;](https://wknd.site/), een nieuwe de verwijzingsplaats van AEM, is bijgewerkt en gepubliceerd om op beste praktijken te wijzen om een website met AEM, en met de uitvoerige reeks mogelijkheden, componenten, en plaatsingsmodellen te bouwen die in AEM beschikbaar zijn. De nieuwe verwijzingsplaats en [&#x200B; begeleidende leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) behandelen fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, editable malplaatjes, cliëntbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
 
-Eerder, werd We.Retail geïnstalleerd door gebrek met AEM (behalve wanneer begonnen op productiemodus). In AEM as a Cloud Service is een referentiesite niet standaard geïnstalleerd. In plaats daarvan wordt de [&#x200B; git repo &#x200B;](https://github.com/adobe/aem-guides-wknd/) en [&#x200B; begeleidende zelfstudie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) met de bijgewerkte code van de WKND verwijzingsplaats verstrekt.
+Eerder, werd We.Retail geïnstalleerd door gebrek met AEM (behalve wanneer begonnen op productiemodus). In AEM as a Cloud Service is een referentiesite niet standaard geïnstalleerd. In plaats daarvan wordt de [&#x200B; git repo &#x200B;](https://github.com/adobe/aem-guides-wknd/) en [&#x200B; begeleidende zelfstudie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) met de bijgewerkte code van de WKND verwijzingsplaats verstrekt.
 
 ## Mogelijkheden niet beschikbaar bij uitvoering {#capabilities-not-available-at-runtime}
 
