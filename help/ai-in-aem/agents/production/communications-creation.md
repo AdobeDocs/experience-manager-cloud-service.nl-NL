@@ -64,5 +64,5 @@ Nadat u de initiële communicatiestructuur hebt gemaakt met gebruik van AI Assis
 * *Werk de groepering van het gebied van het beleidsaantal bij om* te centreren
 * *verander de lijn het uit elkaar plaatsen van de termijnen en voorwaardensectie in 1.5*
 
-Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [ Interactieve Communicatie documentatie ](/help/forms/introduction-to-interactive-communication.md).
+Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [&#x200B; Interactieve Communicatie documentatie &#x200B;](/help/forms/introduction-to-interactive-communication.md).
 
