@@ -21,12 +21,12 @@ AEM Sites as a Cloud Service biedt mogelijkheden voor ervaringsbeheer als onderd
 >In dit document worden de belangrijkste wijzigingen in AEM Sites gemarkeerd. Zie voor algemene wijzigingen in AEM as a Cloud Service en andere modules:
 >
 >* [Inleiding tot Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* Een [&#x200B; Overzicht van AEM as a Cloud Service - wat Nieuw is en wat verschillend is &#x200B;](/help/overview/what-is-new-and-different.md)
+>* Een [ Overzicht van AEM as a Cloud Service - wat Nieuw is en wat verschillend is ](/help/overview/what-is-new-and-different.md)
 >* De [architectuur](/help/overview/architecture.md) van Adobe Experience Manager as a Cloud Service
 >* [Belangrijke wijzigingen in AEM as a Cloud Service (releaseopmerkingen)](/help/release-notes/aem-cloud-changes.md)
 >* [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 >* [Inleiding tot AEM Assets as a Cloud Service](/help/assets/overview.md)
->* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=nl-NL)
+>* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 De wijzigingen en toevoegingen in AEM Sites as a Cloud Service zijn als volgt:
 
@@ -44,7 +44,7 @@ In de AEM Cloud-service zijn bewerkingen die de gebruikersinterface van oudsher 
 The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 -->
 
-U kunt het statuut van asynchrone banen van het [&#x200B; dashboard van de Verrichtingen van de Achtergrond &#x200B;](/help/operations/asynchronous-jobs.md) bekijken.
+U kunt het statuut van asynchrone banen van het [ dashboard van de Verrichtingen van de Achtergrond ](/help/operations/asynchronous-jobs.md) bekijken.
 
 >[!NOTE]
 >
@@ -52,13 +52,13 @@ U kunt het statuut van asynchrone banen van het [&#x200B; dashboard van de Verri
 
 ## Nieuwe naslagsite en zelfstudie {#new-reference-site-and-tutorial}
 
-[&#x200B; WKND &#x200B;](https://wknd.site/), een nieuwe de verwijzingsplaats van AEM, is bijgewerkt en gepubliceerd om op beste praktijken te wijzen om een website met AEM, en met de uitvoerige reeks mogelijkheden, componenten, en plaatsingsmodellen te bouwen die in AEM beschikbaar zijn. De nieuwe verwijzingsplaats en [&#x200B; begeleidende leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) behandelen fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, editable malplaatjes, cliëntbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
+[ WKND ](https://wknd.site/), een nieuwe de verwijzingsplaats van AEM, is bijgewerkt en gepubliceerd om op beste praktijken te wijzen om een website met AEM, en met de uitvoerige reeks mogelijkheden, componenten, en plaatsingsmodellen te bouwen die in AEM beschikbaar zijn. De nieuwe verwijzingsplaats en [ begeleidende leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) behandelen fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, editable malplaatjes, cliëntbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
 
-Eerder, werd We.Retail geïnstalleerd door gebrek met AEM (behalve wanneer begonnen op productiemodus). In AEM as a Cloud Service is een referentiesite niet standaard geïnstalleerd. In plaats daarvan wordt de [&#x200B; git repo &#x200B;](https://github.com/adobe/aem-guides-wknd/) en [&#x200B; begeleidende zelfstudie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) met de bijgewerkte code van de WKND verwijzingsplaats verstrekt.
+Eerder, werd We.Retail geïnstalleerd door gebrek met AEM (behalve wanneer begonnen op productiemodus). In AEM as a Cloud Service is een referentiesite niet standaard geïnstalleerd. In plaats daarvan wordt de [ git repo ](https://github.com/adobe/aem-guides-wknd/) en [ begeleidende zelfstudie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) met de bijgewerkte code van de WKND verwijzingsplaats verstrekt.
 
 ## Mogelijkheden niet beschikbaar bij uitvoering {#capabilities-not-available-at-runtime}
 
-AEM as a Cloud Service is altijd actief en altijd up-to-date. Om dit te bereiken, moet de AEM-opslagplaats worden gescheiden in onveranderbare en veranderbare inhoud en moet toegang tot onveranderlijke inhoud tijdens runtime worden verboden. Voor meer details op mutable versus onveranderlijke inhoud zie [&#x200B; Mutable versus Immuable Gebieden van de Bewaarplaats &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
+AEM as a Cloud Service is altijd actief en altijd up-to-date. Om dit te bereiken, moet de AEM-opslagplaats worden gescheiden in onveranderbare en veranderbare inhoud en moet toegang tot onveranderlijke inhoud tijdens runtime worden verboden. Voor meer details op mutable versus onveranderlijke inhoud zie [ Mutable versus Immuable Gebieden van de Bewaarplaats ](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
 
 Aangezien onveranderlijke inhoud niet toegankelijk is bij uitvoering, zijn de volgende AEM Sites-bewerkingen niet beschikbaar bij uitvoering:
 

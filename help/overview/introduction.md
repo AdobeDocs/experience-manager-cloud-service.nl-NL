@@ -77,10 +77,10 @@ AEM bereikt deze doelstellingen door de belangrijkste kenmerken van moderne clou
 * [Opvallende wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Opvallende wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Introductie van Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=nl-NL)
+* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 >[!TIP]
 >
->Zodra u een overzicht van AEM as a Cloud Service hebt, kunt u aan boord snel door de [&#x200B; Onboarding Reis &#x200B;](/help/journey-onboarding/overview.md) te herzien.
+>Zodra u een overzicht van AEM as a Cloud Service hebt, kunt u aan boord snel door de [ Onboarding Reis ](/help/journey-onboarding/overview.md) te herzien.
 >
->Hebt u al een functie voor het testen van AEM-functies? Installeer de [&#x200B; toe:voegen-aan van de Demos van de Verwijzing van AEM &#x200B;](/help/journey-sites/demos-add-on/overview.md) om de krachtige eigenschappen van AEM te onderzoeken gebruikend rijke voorbeelden.
+>Hebt u al een functie voor het testen van AEM-functies? Installeer de [ toe:voegen-aan van de Demos van de Verwijzing van AEM ](/help/journey-sites/demos-add-on/overview.md) om de krachtige eigenschappen van AEM te onderzoeken gebruikend rijke voorbeelden.
