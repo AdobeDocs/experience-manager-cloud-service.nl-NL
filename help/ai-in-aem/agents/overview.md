@@ -28,23 +28,23 @@ Deze zakelijke agents zijn beschikbaar in Adobe Experience Manager (AEM) as a Cl
 
 ## Experience Production Agent {#experience-production-agent}
 
-De [ Agent van de Productie van de Ervaring ](/help/ai-in-aem/agents/production/overview.md) automatiseert hoge inspanning en hoog-volumetaken. Teams monteren en handmatige, wekenlange processen veranderen in snelle, AI-ondersteunde workflows die elke ervaring actueel en consistent houden en het bedrijf helpen zijn doelen te bereiken.
+De [&#x200B; Agent van de Productie van de Ervaring &#x200B;](/help/ai-in-aem/agents/production/overview.md) automatiseert hoge inspanning en hoog-volumetaken. Teams monteren en handmatige, wekenlange processen veranderen in snelle, AI-ondersteunde workflows die elke ervaring actueel en consistent houden en het bedrijf helpen zijn doelen te bereiken.
 
 ## Content Optimization Agent {#content-optimization-agent}
 
-De [ Agent van de Optimalisering van de Inhoud ](/help/ai-in-aem/agents/content-optimization/using.md) zet om hoe de gebruikers verfijnen en activa aanpassen door natuurlijke taalinstructies toe te passen om kanaal-klaar variaties tot stand te brengen. De agent interpreteert gebruikersintentie en voert complexe bewerkingstaken automatisch uit om taken uit te voeren zoals het genereren van nieuwe uitvoeringen, het aanpassen van visuele eigenschappen, het wijzigen van achtergronden of het voorbereiden van middelen voor specifieke digitale kanalen.
+De [&#x200B; Agent van de Optimalisering van de Inhoud &#x200B;](/help/ai-in-aem/agents/content-optimization/using.md) zet om hoe de gebruikers verfijnen en activa aanpassen door natuurlijke taalinstructies toe te passen om kanaal-klaar variaties tot stand te brengen. De agent interpreteert gebruikersintentie en voert complexe bewerkingstaken automatisch uit om taken uit te voeren zoals het genereren van nieuwe uitvoeringen, het aanpassen van visuele eigenschappen, het wijzigen van achtergronden of het voorbereiden van middelen voor specifieke digitale kanalen.
 
 ## Detectieagent {#discovery-agent}
 
-De [ Agent van de Ontdekking ](/help/ai-in-aem/agents/discovery/using.md) levert de inhoud van AEM voor een gestroomlijnde, klik-vrije ontdekkingservaring. In Assets, Content Fragments en Adaptive Forms wordt op intelligente wijze gezocht naar relevante materialen, zoals afbeeldingen, video&#39;s, PDF-documenten, artikelen en formuliersjablonen.
+De [&#x200B; Agent van de Ontdekking &#x200B;](/help/ai-in-aem/agents/discovery/using.md) levert de inhoud van AEM voor een gestroomlijnde, klik-vrije ontdekkingservaring. In Assets, Content Fragments en Adaptive Forms wordt op intelligente wijze gezocht naar relevante materialen, zoals afbeeldingen, video&#39;s, PDF-documenten, artikelen en formuliersjablonen.
 
 ## Ontwikkelingsagent {#development-agent}
 
-De [ Agent van de Ontwikkeling ](/help/ai-in-aem/agents/development/overview.md) machtigt de technische rollen (ontwikkelaars en beheerders), door de verwezenlijking, het zuiveren, de plaatsing, en de optimalisering van code te stroomlijnen.
+De [&#x200B; Agent van de Ontwikkeling &#x200B;](/help/ai-in-aem/agents/development/overview.md) machtigt de technische rollen (ontwikkelaars en beheerders), door de verwezenlijking, het zuiveren, de plaatsing, en de optimalisering van code te stroomlijnen.
 
 ## Governance Agent {#governance-agent}
 
-De [ Agent van de Governance ](/help/ai-in-aem/agents/governance/overview.md) beschermt brandintegriteit en naleving over AEM. Door veiligheid, regelgevende, en merkbeleid te handhaven zorgt de agent ervoor dat elke interactie en activering aan gevestigde normen voldoet.
+De [&#x200B; Agent van de Governance &#x200B;](/help/ai-in-aem/agents/governance/overview.md) beschermt brandintegriteit en naleving over AEM. Door veiligheid, regelgevende, en merkbeleid te handhaven zorgt de agent ervoor dat elke interactie en activering aan gevestigde normen voldoet.
 
 ## Beperkingen {#limitations}
 

@@ -23,7 +23,7 @@ Logboeken worden zeven dagen bewaard.
 
 ## Logbestanden downloaden {#download-logs}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
@@ -31,21 +31,21 @@ Logboeken worden zeven dagen bewaard.
 
 1. Selecteer **Logboeken van de Download** van het ellipsmenu.
 
-   ![ Logboekmenupunt van de Download logboeken ](assets/download-logs1.png)
+   ![&#x200B; Logboekmenupunt van de Download logboeken &#x200B;](assets/download-logs1.png)
 
 1. In de **Logboeken van de Download** dialoog, selecteer de aangewezen **Dienst** van het drop-down menu
 
-   ![ de dialoog van Logboeken van de Download ](assets/download-preview.png)
+   ![&#x200B; de dialoog van Logboeken van de Download &#x200B;](assets/download-preview.png)
 
-   In het geval dat [ de Extra Publish Gebieden ](/help/operations/additional-publish-regions.md) voor uw milieu worden toegelaten, kunt u elk gebied selecteren en zijn logboeken afzonderlijk downloaden, zoals hieronder getoond:
+   In het geval dat [&#x200B; de Extra Publish Gebieden &#x200B;](/help/operations/additional-publish-regions.md) voor uw milieu worden toegelaten, kunt u elk gebied selecteren en zijn logboeken afzonderlijk downloaden, zoals hieronder getoond:
 
-   ![ Logboeken van de Download voor extra publiceer gebieden ](assets/download-publish-region-logs.png)
+   ![&#x200B; Logboeken van de Download voor extra publiceer gebieden &#x200B;](assets/download-publish-region-logs.png)
 
 1. Nadat u de service hebt geselecteerd, klikt u op het downloadpictogram naast het logbestand dat u wilt ophalen.
 
-U kunt tot uw logboeken van de **pagina van Milieu {ook toegang hebben.**
+U kunt tot uw logboeken van de **pagina van Milieu &lbrace;ook toegang hebben.**
 
-![ Logs van het scherm van Milieu&#39;s ](assets/download-logs.png)
+![&#x200B; Logs van het scherm van Milieu&#39;s &#x200B;](assets/download-logs.png)
 
 ## Hiermee wordt de API gebruikt {#logs-through-api}
 
@@ -90,14 +90,14 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Controle uit [ dit videomiddel ](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) om meer over het zuiveren van AEM as a Cloud Service te leren.
+>Controle uit [&#x200B; dit videomiddel &#x200B;](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) om meer over het zuiveren van AEM as a Cloud Service te leren.
 
 Zie de volgende aanvullende bronnen voor meer informatie over de Cloud Manager API en de Adobe I/O CLI:
 
-* [ Cloud Manager API Documentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/)
-* [ Adobe I/O CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [&#x200B; Cloud Manager API Documentatie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [&#x200B; Adobe I/O CLI &#x200B;](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 Zie de volgende aanvullende bronnen voor meer informatie over logbestanden in AEM as a Cloud Service:
 
-* [ Wolk 5 de Dossiers van het Logboek van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [ het Zuiveren AEM as a Cloud Service gebruikend logboeken ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [&#x200B; Wolk 5 de Dossiers van het Logboek van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [&#x200B; het Zuiveren AEM as a Cloud Service gebruikend logboeken &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

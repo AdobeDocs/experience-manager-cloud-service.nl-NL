@@ -23,7 +23,7 @@ Adobe legt de nadruk op de bewaking, beschikbaarheid en prestaties van uw toepas
 
 In dit document wordt beschreven hoe u de toegang tot APM-functies (Application Performance Monitoring) van New Relic One in AEM as a Cloud Service-omgevingen kunt beheren. Een effectief beheer van deze functies ondersteunt optimale prestaties en maximaliseert de voordelen van AEM as a Cloud Service.
 
-Wanneer een nieuw productieprogramma wordt gemaakt, wordt automatisch de New Relic One-subaccount gemaakt die aan uw AEM as a Cloud Service-programma is gekoppeld. [ Deze sub-account moet ](#activate-sub-account) worden geactiveerd beginnen het opnemen gegevens.
+Wanneer een nieuw productieprogramma wordt gemaakt, wordt automatisch de New Relic One-subaccount gemaakt die aan uw AEM as a Cloud Service-programma is gekoppeld. [&#x200B; Deze sub-account moet &#x200B;](#activate-sub-account) worden geactiveerd beginnen het opnemen gegevens.
 
 ## Functies {#transaction-monitoring}
 
@@ -45,17 +45,17 @@ Voor een nieuw gemaakt programma wordt een New Relic One-subaccount voor u gemaa
 >
 >Een gebruiker in de **rol van de BedrijfsEigenaar** moet worden het programma geopend om subaccount van New Relic One te beheren.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik het programma waarvoor u uw gebruikers van New Relic One wilt beheren.
 
-1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteer **New Relic** activeren.
+1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteer **New Relic** activeren.
 
-   ![ beheert gebruikers ](assets/newrelic-activate-sub-account.png)
+   ![&#x200B; beheert gebruikers &#x200B;](assets/newrelic-activate-sub-account.png)
 
-   * U kunt tot **toegang hebben leidt gebruikers** optie. Bij de bovenkant van het **scherm van Milieu&#39;s** van uw programma, klik ![ Smock meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+   * U kunt tot **toegang hebben leidt gebruikers** optie. Bij de bovenkant van het **scherm van Milieu&#39;s** van uw programma, klik ![&#x200B; Smock meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
-1. [ stel een pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) voor het zelfde milieu in werking aan succesvolle voltooiing om de subrekeningsactivering te voltooien.
+1. [&#x200B; stel een pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) voor het zelfde milieu in werking aan succesvolle voltooiing om de subrekeningsactivering te voltooien.
 
 Wanneer de subaccount wordt gedeactiveerd, worden geen gegevens ingevoerd.
 
@@ -67,19 +67,19 @@ Voer de volgende stappen uit om de gebruikers van uw New Relic One-subaccount vo
 >
 >Een gebruiker in de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** moet worden het programma geopend om de gebruikers van New Relic One te beheren.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Klik op het programma waarvoor u de New Relic One-gebruikers wilt beheren.
 
-1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteer **leiden gebruikers**.
+1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteer **leiden gebruikers**.
 
-   ![ beheert gebruikers ](assets/newrelic-manage-users.png)
+   ![&#x200B; beheert gebruikers &#x200B;](assets/newrelic-manage-users.png)
 
-   * U kunt tot **toegang hebben leidt gebruikers** optie. Bij de bovenkant van het **scherm van Milieu&#39;s** van uw programma, klik ![ Smock meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+   * U kunt tot **toegang hebben leidt gebruikers** optie. Bij de bovenkant van het **scherm van Milieu&#39;s** van uw programma, klik ![&#x200B; Smock meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
 1. In **beheer de gebruikers van New Relic** dialoogdoos, ga de eerste en achternaam van de gebruiker in u wilt toevoegen, en klik **toevoegen** knoop. Herhaal deze stap voor alle gebruikers die u wilt toevoegen.
 
-   ![ voeg gebruikers ](assets/newrelic-add-users.png) toe
+   ![&#x200B; voeg gebruikers &#x200B;](assets/newrelic-add-users.png) toe
 
 1. Als u een New Relic One-gebruiker wilt verwijderen, klikt u op de verwijderknop aan de rechterkant van de rij die de gebruiker vertegenwoordigt.
 
@@ -93,7 +93,7 @@ Nadat de gebruikers zijn gedefinieerd, stuurt New Relic een bevestigingsbericht 
 
 ## Je New Relic One-gebruikersaccount activeren {#activate-user-account}
 
-Zodra een gebruikersrekening van New Relic One zoals die in de voorproefsectie [ wordt beschreven de Gebruikers van New Relic One beheren ](#manage-users) wordt gecreeerd, verzendt New Relic die gebruikers een bevestigingsmail naar het verstrekte adres. Als gebruikers deze accounts willen gebruiken, moeten ze eerst hun accounts bij New Relic activeren door hun wachtwoorden opnieuw in te stellen.
+Zodra een gebruikersrekening van New Relic One zoals die in de voorproefsectie [&#x200B; wordt beschreven de Gebruikers van New Relic One beheren &#x200B;](#manage-users) wordt gecreeerd, verzendt New Relic die gebruikers een bevestigingsmail naar het verstrekte adres. Als gebruikers deze accounts willen gebruiken, moeten ze eerst hun accounts bij New Relic activeren door hun wachtwoorden opnieuw in te stellen.
 
 **om uw New Relic One gebruikersrekening te activeren:**
 
@@ -101,37 +101,37 @@ Zodra een gebruikersrekening van New Relic One zoals die in de voorproefsectie [
 
 1. Voor New Relic binnen pagina, klik **vergeten uw wachtwoord?**
 
-   ![ login van New Relic ](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+   ![&#x200B; login van New Relic &#x200B;](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
 1. Ga het e-mailadres in waar u bevestigingse-mail ontving, en selecteer **verzend mijn terugstellings verbinding**.
 
-   ![ ga e-mailadres ](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png) in
+   ![&#x200B; ga e-mailadres &#x200B;](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png) in
 
 1. New Relic stuurt je een e-mail met een koppeling om de account te bevestigen.
 
-Als u geen bevestigingse-mail van New Relic ontvangt, zie de [ het oplossen van problemensectie ](#troubshooting).
+Als u geen bevestigingse-mail van New Relic ontvangt, zie de [&#x200B; het oplossen van problemensectie &#x200B;](#troubshooting).
 
 ## Toegang tot New Relic One {#accessing-new-relic}
 
-Zodra u [ uw rekening van New Relic ](#activate-account) hebt geactiveerd, kunt u tot New Relic One als Cloud Manager of direct toegang hebben.
+Zodra u [&#x200B; uw rekening van New Relic &#x200B;](#activate-account) hebt geactiveerd, kunt u tot New Relic One als Cloud Manager of direct toegang hebben.
 
 **om tot New Relic One als Cloud Manager toegang te hebben:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Klik op het programma waartoe u New Relic One wilt openen.
 
-1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteer **Open New Relic**.
+1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteer **Open New Relic**.
 
-   ![ beheert gebruikers ](assets/newrelic-access.png)
+   ![&#x200B; beheert gebruikers &#x200B;](assets/newrelic-access.png)
 
-   * U kunt ook New Relic openen. Bij de bovenkant van het **scherm van Milieu&#39;s** van uw programma, klik ![ Smock meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+   * U kunt ook New Relic openen. Bij de bovenkant van het **scherm van Milieu&#39;s** van uw programma, klik ![&#x200B; Smock meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
 1. Meld u aan bij New Relic One op het nieuwe browsertabblad dat wordt geopend.
 
 **om tot New Relic One direct toegang te hebben:**
 
-1. Ga naar de aanmeldingspagina van New Relic op [`https://login.newrelic.com/login` ](https://login.newrelic.com/login)
+1. Ga naar de aanmeldingspagina van New Relic op [`https://login.newrelic.com/login` &#x200B;](https://login.newrelic.com/login)
 
 1. Meld u aan bij New Relic One.
 
@@ -141,47 +141,47 @@ Als u wordt gevraagd uw e-mail te verifiëren tijdens het aanmelden bij New Reli
 
 Als u uw e-mailadres niet verifieert, probeert New Relic u aan te melden met de meest recente gebruikersrecord die aan uw e-mailadres is gekoppeld. Vermijd het verifiëren van uw e-mail tijdens elke login, klik **me** checkbox in het login scherm herinneren.
 
-Voor meer hulp, open een steunkaartje als [ Portaal van de Steun van AEM ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Voor meer hulp, open een steunkaartje als [&#x200B; Portaal van de Steun van AEM &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Problemen met New Relic One-gebruikerstoegang oplossen {#troubleshooting}
 
-Als u als gebruiker van New Relic One werd toegevoegd, zoals die in [ wordt beschreven beheer New Relic One Gebruikers ](#manage-users), en niet van de originele van de rekeningsbevestiging e-mail kan de plaats bepalen, kunt u de volgende het oplossen van problemenstappen doen.
+Als u als gebruiker van New Relic One werd toegevoegd, zoals die in [&#x200B; wordt beschreven beheer New Relic One Gebruikers &#x200B;](#manage-users), en niet van de originele van de rekeningsbevestiging e-mail kan de plaats bepalen, kunt u de volgende het oplossen van problemenstappen doen.
 
 **om de gebruikerstoegang van New Relic One problemen op te lossen:**
 
-1. Navigeer naar de aanmeldingspagina van New Relic op [`login.newrelic.com/login` ](https://login.newrelic.com/login) .
+1. Navigeer naar de aanmeldingspagina van New Relic op [`login.newrelic.com/login` &#x200B;](https://login.newrelic.com/login) .
 
 1. Klik op **[!UICONTROL Forgot your password?]**.
 
-   ![ login van New Relic ](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+   ![&#x200B; login van New Relic &#x200B;](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
 1. Ga het e-mailadres in dat werd gebruikt om uw rekening tot stand te brengen, en selecteer **verzend mijn terugstellings verbinding**.
 
-   ![ ga e-mailadres ](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png) in
+   ![&#x200B; ga e-mailadres &#x200B;](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png) in
 
 1. New Relic stuurt je een e-mail met een koppeling om de account te bevestigen.
 
-Als u het aanmeldingsproces voltooit en niet aan uw rekening wegens e-mail of wachtwoordfoutenmeldingen kan aanmelden, registreer een steunkaartje als [ Admin Console ](https://adminconsole.adobe.com/).
+Als u het aanmeldingsproces voltooit en niet aan uw rekening wegens e-mail of wachtwoordfoutenmeldingen kan aanmelden, registreer een steunkaartje als [&#x200B; Admin Console &#x200B;](https://adminconsole.adobe.com/).
 
 Ga als volgt te werk als je geen e-mail van New Relic ontvangt:
 
-* Controleer uw [ spamfilters ](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
-* Indien van toepassing, [ voeg New Relic aan uw e-maillijst van gewenste personen ](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist) toe.
+* Controleer uw [&#x200B; spamfilters &#x200B;](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
+* Indien van toepassing, [&#x200B; voeg New Relic aan uw e-maillijst van gewenste personen &#x200B;](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist) toe.
 * Als geen van beide suggesties helpt, geef terugkoppelen op het steunkaartje.
 
 ## Gebruiksnotities {#usage-notes}
 
 * Er kunnen maximaal 30 gebruikers worden toegevoegd. Als het maximumaantal gebruikers is bereikt, verwijdert u gebruikers om nieuwe gebruikers toe te voegen.
-* De gebruikers die aan New Relic worden toegevoegd zijn van het type **Basis**. Zie de [ documentatie van New Relic voor details ](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
+* De gebruikers die aan New Relic worden toegevoegd zijn van het type **Basis**. Zie de [&#x200B; documentatie van New Relic voor details &#x200B;](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
 * AEM as a Cloud Service biedt alleen de New Relic One APM-oplossing en biedt geen ondersteuning voor waarschuwingen, logboekregistratie of API-integratie.
 
 >[!NOTE]
 >
 >Als geen **gebruikerslogin** activiteit in uw sub-rekening van New Relic One 30 dagen of meer wordt ontdekt, wordt de agent APM tegengehouden. Er worden geen gegevens verzonden van AEM Cloud Service naar New Relic. *Gegevens wordt niet opnieuw verzonden tot uw sub-account wordt opnieuw geactiveerd.*
 >
->Volg de zelfde stappen in [ activeer Uw sub-Rekening van New Relic One ](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
+>Volg de zelfde stappen in [&#x200B; activeer Uw sub-Rekening van New Relic One &#x200B;](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
 
-Voor meer hulp of extra begeleiding op het dienstenaanbod van New Relic One voor uw Programma van AEM as a Cloud Service, open een steunkaartje als [ Portaal van de Steun van AEM ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Voor meer hulp of extra begeleiding op het dienstenaanbod van New Relic One voor uw Programma van AEM as a Cloud Service, open een steunkaartje als [&#x200B; Portaal van de Steun van AEM &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Veelgestelde vragen {#faqs}
 
@@ -205,7 +205,7 @@ Opmerking:
 
 +++**verzendt Adobe waakzame berichten van New Relic One?**
 
-Adobe biedt New Relic One alleen toegang voor waarneembare doeleinden en gebruikt deze niet voor klantwaarschuwingen of interne operationele waarschuwingen. De berichten voor om het even welke incidenten worden verzonden gebruikend [ profielen van het gebruikersbericht ](/help/journey-onboarding/notification-profiles.md).
+Adobe biedt New Relic One alleen toegang voor waarneembare doeleinden en gebruikt deze niet voor klantwaarschuwingen of interne operationele waarschuwingen. De berichten voor om het even welke incidenten worden verzonden gebruikend [&#x200B; profielen van het gebruikersbericht &#x200B;](/help/journey-onboarding/notification-profiles.md).
 +++
 
 +++**wie tot de gegevens van de de wolkendienst van New Relic One kan toegang hebben?**
@@ -234,5 +234,5 @@ Adobe-ondersteuning bewaakt AEM as a Cloud Service met New Relic One en andere t
 
 +++**de agent APM voor mijn rekening van New Relic One wordt tegengehouden. Wat is er gebeurd?**
 
-[ de agenten van APM worden tegengehouden ](#limitations) als geen activiteit voor 30 dagen of meer wordt ontdekt. Volg de zelfde stappen in [ activeer Uw sub-Rekening van New Relic One ](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
+[&#x200B; de agenten van APM worden tegengehouden &#x200B;](#limitations) als geen activiteit voor 30 dagen of meer wordt ontdekt. Volg de zelfde stappen in [&#x200B; activeer Uw sub-Rekening van New Relic One &#x200B;](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
 +++

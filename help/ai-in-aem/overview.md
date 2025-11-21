@@ -18,13 +18,13 @@ Kunstmatige intelligentie (AI) is een integraal onderdeel van Adobe Experience M
 
 ## AI-assistent {#ai-assistant}
 
-De [ Medewerker AI in Adobe Experience Manager ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) biedt een gespreksinterface aan die wordt ontworpen om het vinden van antwoorden aan uw op AEM betrekking hebbende vragen te stroomlijnen.
+De [&#x200B; Medewerker AI in Adobe Experience Manager &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md) biedt een gespreksinterface aan die wordt ontworpen om het vinden van antwoorden aan uw op AEM betrekking hebbende vragen te stroomlijnen.
 
 ## Agentische AI in AEM {#agentic-ai-in-aem}
 
-AEM verstrekt een waaier van [ bedrijfsagenten ](/help/ai-in-aem/agents/overview.md) om uw inhoudsverwezenlijking te versnellen en automatisch veranderingen te ordenen:
+AEM verstrekt een waaier van [&#x200B; bedrijfsagenten &#x200B;](/help/ai-in-aem/agents/overview.md) om uw inhoudsverwezenlijking te versnellen en automatisch veranderingen te ordenen:
 
-* [ de Agent van de Productie ](/help/ai-in-aem/agents/production/overview.md)
+* [&#x200B; de Agent van de Productie &#x200B;](/help/ai-in-aem/agents/production/overview.md)
 * [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using.md)
 * [Detectieagent](/help/ai-in-aem/agents/discovery/using.md)
 * [Ontwikkelingsagent](/help/ai-in-aem/agents/development/overview.md)
@@ -45,11 +45,11 @@ Generatieve AI wordt in heel AEM gebruikt:
 
   Bij Variaties genereren wordt gebruikgemaakt van generatieve AI om inhoudvariaties te maken op basis van uw invoer. Nadat u variaties hebt gemaakt, kunt u de inhoud van uw website gebruiken en ook het succes ervan meten met de functie Experimenteren van Edge Delivery Services.
 
-   * [ de vorige versie produceert Variaties ](/help/generative-ai/generate-variations.md) buiten de redacteur blijft beschikbaar.
+   * [&#x200B; de vorige versie produceert Variaties &#x200B;](/help/generative-ai/generate-variations.md) buiten de redacteur blijft beschikbaar.
 
      >[!NOTE]
      >
-     >Het wordt geadviseerd dat u tot [ toegang hebt produceert Variaties die in de redacteurs van AEM ](/help/generative-ai/generate-variations-integrated-editor.md) worden geïntegreerd, aangezien de vorige versie in de toekomst zal worden afgekeurd.
+     >Het wordt geadviseerd dat u tot [&#x200B; toegang hebt produceert Variaties die in de redacteurs van AEM &#x200B;](/help/generative-ai/generate-variations-integrated-editor.md) worden geïntegreerd, aangezien de vorige versie in de toekomst zal worden afgekeurd.
 
    * [Opmerkingen bij de release voor het genereren van variaties](/help/generative-ai/release-notes-generate-variations.md)
 
@@ -69,10 +69,10 @@ Generatieve AI wordt in heel AEM gebruikt:
 
 Er zijn veel beschikbare bronnen, waaronder:
 
-* [ Adobe AI Overzicht ](https://www.adobe.com/ai/overview.html)
+* [&#x200B; Adobe AI Overzicht &#x200B;](https://www.adobe.com/ai/overview.html)
 
-* [ Verantwoordelijke AI bij Adobe ](https://www.adobe.com/trust/responsible-ai.html)
+* [&#x200B; Verantwoordelijke AI bij Adobe &#x200B;](https://www.adobe.com/trust/responsible-ai.html)
 
-* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+* [&#x200B; Generatieve AI in de producten van Experience Cloud &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+   * [&#x200B; Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
