@@ -65,5 +65,5 @@ Nadat u de initiële communicatiestructuur hebt gemaakt met gebruik van AI Assis
 
 * **Multikanaaloutput**: Vorm zowel druk als Webkanaalversies, die optimale presentatie over leveringsformaten verzekeren.
 
-Voor meer informatie, zie [ Interactieve Communicatie documentatie ](/help/forms/introduction-to-interactive-communication.md).
+Voor meer informatie, zie [&#x200B; Interactieve Communicatie documentatie &#x200B;](/help/forms/introduction-to-interactive-communication.md).
 
