@@ -3,9 +3,9 @@ title: Communicatievermogen
 description: Leer over de vaardigheid van de Communicatie van de Agent van de Productie van de Ervaring en hoe te om natuurlijke taal te gebruiken om interactieve mededelingen tot stand te brengen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Interactieve communicatie is gepersonaliseerde, gegevensgestuurde documenten die zijn ontworpen voor zakelijke correspondentie, zoals accountverklaringen, beleidsdocumenten, rekeningen, welkomstkits en kennisgevingen van voordelen. In tegenstelling tot formulieren die invoer van gebruikers verzamelen, genereren Interactieve communicatie uitvoerdocumenten met dynamische, specifieke inhoud voor de ontvanger.
 
-De vaardigheid van de verwezenlijking van de Communicatie is een vermogen van de Agent van de Productie van de Ervaring die wordt ontworpen om interactieve mededelingen te ontwikkelen gebruikend natuurlijke taalinteractie. Hiermee kunnen gebruikers gepersonaliseerde, gegevensgestuurde correspondentie maken zonder traditionele handmatige processen. Deze vaardigheid elimineert de ingewikkeldheid van communicatie ontwerp door gespreksherinneringen te interpreteren en automatisch aangewezen documentstructuren, lay-outs, en gegevensbanden te produceren. De vaardigheid wordt opgezocht door AI medewerker en Experience Hub.
+De vaardigheid van de verwezenlijking van de Communicatie is een vermogen van de Agent van de Productie van de Ervaring die wordt ontworpen om interactieve mededelingen te ontwikkelen gebruikend natuurlijke taalherinneringen. Deze vaardigheid produceert automatisch gepersonaliseerde, gegeven-gedreven correspondentie voor druk (in formaat PDF). De vaardigheid wordt gesurft door AI Medewerker.
 
 Enkele belangrijke voordelen van de vaardigheid van de verwezenlijking van de Communicatie omvatten:
 
@@ -23,13 +23,16 @@ Enkele belangrijke voordelen van de vaardigheid van de verwezenlijking van de Co
 * **Consistente en on-brand correspondentie**: Creeer mededelingen die branding van uw organisatie, malplaatjes, en stijlrichtlijnen door goedgekeurde malplaatjes en stijlen te gebruiken volgen.
 * **Lagere technische barrière**: Staat bedrijfsgebruikers toe om mededelingen gemakkelijk tot stand te brengen, zonder het vereisen van geavanceerde technische of diepe productdeskundigheid.
 
-## Gebruik gevallen en voorbeeldaanwijzingen {#use-cases-prompts}
+## Mogelijkheden {#capabilities}
 
-Dankzij de vaardigheden voor het maken van communicatie kunt u online correspondentie maken door uw vereisten in gewone taal in te dienen.
+* **creeer gepersonaliseerde mededelingen met duidelijke tekstherinnering**: U kunt communicatie documenten voor druk (in formaat PDF) tot stand brengen door uw vereisten in gewone taal voor te leggen. De agent genereert automatisch de juiste documentstructuren, lay-outs en gegevensbindingen op basis van uw beschrijving in de natuurlijke taal.
 
-U wordt gevraagd uw sjabloon op te geven, het voorkeurspad voor het opslaan van de communicatie aan te geven en gegevens over de gegevensbron te verstrekken. Gebaseerd op deze selecties, produceert de de schepingsvaardigheid van de Communicatie automatisch het aangewezen document.
+* **creeer van malplaatjes**: U kunt goedgekeurde organisatorische malplaatjes gebruiken om merkconsistentie en nalevingsnormen te verzekeren. De agent gebruikt uw bestaande malplaatjes en stijlrichtlijnen om online correspondentie tot stand te brengen die aan regelgevende vereisten voldoet.
 
-### Voorbeeldaanwijzingen {#sample-prompts}
+* **de Invoer en zet bestaande documenten in interactieve mededelingen** om: U kunt bestaande documenten invoeren en omzetten in interactieve mededelingen. De agent analyseert geüploade inhoud om velden te detecteren, lay-outs te behouden en gegevensgestuurde correspondentie met dynamische inhoudmogelijkheden te maken. Tot de ondersteunde indelingen behoren PDF&#39;s, XDP-bestanden, afbeeldingen (JPG, PNG) en met de hand getekende sjablonen.
+
+
+## Voorbeeldaanwijzingen {#sample-prompts}
 
 * *creeer een verklaring van de bankrekening met de lijst van de transactiegeschiedenis en saldografiek*
 * *produceer een overzicht van de investeringsportefeuille met prestatiesgrafieken en activaverdeling*
@@ -48,6 +51,8 @@ U wordt gevraagd uw sjabloon op te geven, het voorkeurspad voor het opslaan van 
 
 Nadat u de initiële communicatiestructuur hebt gemaakt met gebruik van AI Assistant of Experience Hub, kunt u de Interactieve Communicatieeditor gebruiken om uw document te verfijnen en te verbeteren:
 
+* **geeft gebieden uit gebruikend natuurlijke taalherinneringen**: U kunt gemakkelijk toevoegen, bijwerken, en verwijderen gebieden en hun eigenschappen binnen documenten gebruikend herinneringen. De agent interpreteert uw instructies en brengt de aangewezen wijzigingen in documentstructuur en gebiedsconfiguraties aan.
+
 * **Incrementele component die** bouwt: voeg of wijzig individuele componenten zoals tekst, beelden, grafieken, lijsten, en barcodes door de visuele redacteur toe.
 
 * **Dynamische gegevensband**: Vorm gegevensbronnen, de afbeeldingen van het opstellingsgebied, en verbind componenten aan achterste deelgegevens voor verpersoonlijking.
@@ -60,5 +65,5 @@ Nadat u de initiële communicatiestructuur hebt gemaakt met gebruik van AI Assis
 
 * **Multikanaaloutput**: Vorm zowel druk als Webkanaalversies, die optimale presentatie over leveringsformaten verzekeren.
 
-Voor meer informatie, zie [&#x200B; Interactieve Communicatie documentatie &#x200B;](/help/forms/introduction-to-interactive-communication.md).
+Voor meer informatie, zie [ Interactieve Communicatie documentatie ](/help/forms/introduction-to-interactive-communication.md).
 
