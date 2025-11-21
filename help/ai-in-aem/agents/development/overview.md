@@ -1,0 +1,94 @@
+---
+title: Overzicht van de Experience Development Agent
+description: Leer hoe de Agent van de Ontwikkeling van de Ervaring in AEM ontbroken pijpleidingen in Cloud Manager analyseert en logboeken bouwt om codemoeilijke situaties voor te stellen en het zuiveren te versnellen.
+feature: Edge Delivery Services, Agentic AI
+role: User, Admin, Architect, Developer
+source-git-commit: 1f20d2825befa0345f9ebde3a9854cab591de0f6
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 0%
+
+---
+
+
+# Overzicht van Experience Development Agent {#development-agent-overview}
+
+Met de Experience Development Agent kunnen ontwikkelaars en beheerders van AEM code efficiënter maken, debuggen, implementeren en optimaliseren.
+
+Momenteel, kan de agent pijpleidingsstatussen terugwinnen en u helpen het ontbreken oplossen van bouwstijlstappen problemen door moeilijke situaties voor te stellen, bespaart tijd wanneer het zuiveren van de plaatsingen van AEM as a Cloud Service aan ontwikkelings, stadium, en productiemilieu&#39;s. Het onderzoekt bouwlogboeken en verwante code om een moeilijke situatie aan te bevelen die u manueel kunt toepassen.
+
+>[!IMPORTANT]
+>
+>Door AI gegenereerde reacties kunnen onjuist of misleidend zijn. Controleer de voorgestelde oplossingen en reacties met twee controles.
+>
+>Zie ook [ Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+<!-- 
+## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
+-->
+
+## Toegang tot de Experience Development Agent via Cloud Manager {#how-to-access-the-agent}
+
+U hebt toegang tot de Experience Development Agent via de AI Assistant die u vindt in gebruikersinterfaces, waaronder Cloud Manager of Experience Hub.
+
+**om tot de Agent van de Ontwikkeling van de Ervaring door Cloud Manager toegang te hebben:**
+
+1. Om begonnen te worden, klik [ Adobe Experience Cloud ](https://experience.adobe.com/#/@foundationinternal/home) om zijn homepage te openen.
+
+   ![ Adobe Experience Cloud homepage ](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+
+1. In het linkerspoor, onder de **rubriek van de Diensten**, klik **Cloud Manager**.
+
+   ![ de drop-down lijst die de vooraf ingestelde Schrijver toont van de Inhoud wordt geselecteerd ](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
+
+   >[!IMPORTANT]
+   >
+   >De weergegeven widgets, gereedschappen en artefacten zijn afhankelijk van de persoon van de gebruiker, de rechten en het AEM-implementatietype (AEM as a Cloud Service of Managed Services 6.5/6.5 LTS).
+
+1. In het linkerspoor, onder **Programma**, klik **![pictogram van het Overzicht ](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) Overzicht**.
+
+1. Voor de **pagina van het Overzicht van het 0} Programma, in de** Pijpleidingen **kaart, klik een pijpleiding.**
+
+   ![ Geselecteerde pijpleiding ](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
+
+1. In de **Bouwstijl en het Scannen van de Code** pagina, neem nota van de ontbroken pijpleiding.
+
+   ![ de mislukking van de Pijpleiding zoals gezien in de Bouwstijl en Code het Scannen pagina ](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-failure.png)
+
+1. Vlak de hoger-juiste hoek van het gebruikersinterface van AEM (of van de pagina&#39;s van Cloud Manager of de auteursinstantie van de milieu&#39;s van AEM), klik het **AI Hulp** pictogram.
+
+   ![ AI Hulp pictogram op de toolbar ](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
+
+   Zie ook [ AI Medewerker in AEM ](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
+1. In het **AI Medewerker** vakje van de paneeltekst dichtbij de bodem, typ uw vraag of herinnering, dan druk `Enter` of klik ![ verzend pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+
+   Bijvoorbeeld:
+   *in het &quot;eda-org-01-geen-toegang&quot;programma, analyseer het gebrek aan de &quot;no-access&quot;pijpleiding en los problemen op.*
+
+   De vraag resulteert in de volgende reactie.
+
+   ![ AI Hulp herinnering en resulterende reactie ](/help/ai-in-aem/agents/development/assets/dev-agent-prompt-response.png)
+
+
+## Machtigingen {#permissions}
+
+De het oplossen van problemenbaan van de Agent van de Ontwikkeling van de Ervaring vereist of de Cloud Manager - rol van de Ontwikkelaar of de Cloud Manager - rol van de Manager van het Programma.
+
+
+
+## Voorbeeldaanwijzingen {#sample-prompts}
+
+| Vragen | Resultaat |
+| --- | --- |
+| *maak een lijst van mijn ontbroken pijpleidingen voor programma HoofdProgramma.* | Terwijl de resultaten kunnen variëren, zou deze herinnering een lijst van ontbroken pijpleidingen, met een vervolgsuggestie moeten uitvoeren om een specifieke pijpleiding te verwijzen om te analyseren. |
+| *analyseer mijn ontbroken pijpleiding genoemd &quot;Dev Pijpleiding.&quot;* | Deze herinnering zou in een analyse van de ontbroken pijpleiding met suggesties moeten resulteren om te bevestigen. |
+
+## Functies buiten bereik {#out-of-scope-features}
+
+Het oplossen van problemen van de pijpleiding werkt op de de bouwstijlstap van de full-Stack pijpleiding. Voor andere pijpleidingstypes en stappen, zuivert mislukkingen door het downloaden en inspecteren van de logboeken.
+
+Zie [ Logboeken van de Toegang en van de Download ](/help/implementing/cloud-manager/manage-logs.md).
+
+Het oplossen van problemen met pijpleidingen wordt niet ondersteund voor programma&#39;s die gebruikmaken van BYOGIT (breng uw eigen gang van zaken).
+
