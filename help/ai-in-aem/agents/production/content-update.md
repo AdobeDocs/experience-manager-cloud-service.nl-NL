@@ -3,9 +3,9 @@ title: Vaardigheid voor bijwerken van inhoud
 description: Leer wat de inhoud van de Agent van de Productie van de Ervaring bijwerkt vaardigheid is en wat het voor u kan doen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -35,21 +35,23 @@ Via de AI Assistant hebt u toegang tot AEM Business Agents.
 
 Open de AI Assistant vanaf experience.adobe.com en begin met interactie door uw vraag in natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
 
-![&#x200B; de Agent van de Ontdekking van de Toegang &#x200B;](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
+![ de Agent van de Ontdekking van de Toegang ](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
-<!--
-### Sample Prompts {#sample-prompts}
+### Voorbeeldvragen {#sample-prompts}
 
-To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
+Om inhoudsupdates in werking te stellen kunt u een brede waaier van natuurlijke taalherinneringen geven. U moet ook de openbare URL opgeven van de pagina die u wilt bijwerken. Bijvoorbeeld:
 
-* Change your headlines
+* Wijzig de volgende pagina https://www.your-url.com/sale De hoofdhoofdhoofdhoofdkop bijwerken naar &quot;Black Vrijdag Mega Sale Sale - Tot 70% korting&quot;, wijzig de afteltimer om &quot;Eindigt binnen 48 uur&quot; te tonen, Verwijdert &quot;Aanmelden voor updates&quot;, wijzig alle knoppen &quot;Nu winkelen&quot; in &quot;De deal regelen&quot;
 
-  * On your-URL change the headline from X to Y
--->
+* https://www.your-url.com/laptops/your-laptop-model De bannerkopie van de update naar "Bespaar vandaag slechts 300 USD", werk de prijzen van 1.299 USD aan 999 USD bij, verwijder de banner van de financieringsoptie
+
+* https://www.your-url.com/your-sneaker Werk de voorraadstatus bij van "Low Stock" in "Back in Stock - Limited Quantities", wijzig de formaatkiezer om de beschikbare formaten in groen te markeren. Verwijder het logo "Komende binnenkort"
+
+* https://www.your-url.com/your-sneaker Werk de productafbeeldingen bij om nieuwe kleuren weer te geven
 
 >[!NOTE]
 >
->Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund met AI Medewerker.
+>Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [ Jira ](#jira), maar wordt niet gesteund met AI Medewerker.
 
 ## Jira {#jira}
 
@@ -105,11 +107,11 @@ Als de opdracht `process` updates activeert, volgen de reacties mogelijk de volg
 
 * Het volgende beeld toont een voorbeeldJira die het `process` bevel voor de vaardigheid van de inhoudsupdate teweegbrengt:
 
-  ![&#x200B; Jira van het Voorbeeld gebruikend de vaardigheid van de inhoudsupdate van de Agent van de Productie van de Ervaring &#x200B;](assets/content-update-jira-example.png)
+  ![ Jira van het Voorbeeld gebruikend de vaardigheid van de inhoudsupdate van de Agent van de Productie van de Ervaring ](assets/content-update-jira-example.png)
 
 ### Activering {#activation}
 
-Als u met Jira toegang wilt krijgen tot de Production Agent, moet u een e-mail sturen naar Adobe. U kunt contact opnemen met:
+Als u de Experience Production Agent wilt activeren en openen met Jira, moet u een e-mail sturen naar Adobe. U kunt contact opnemen met:
 
 * `experience-production-agent@adobe.com`
 * of neem contact op met uw accountteam
@@ -143,4 +145,4 @@ Bijvoorbeeld: <https://adminconsole.adobe.com/products/profiles/users>
 
 De beperkingen voor de Content Updater zijn momenteel:
 
-* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [&#x200B; Medewerker AI &#x200B;](#ai-assistant).
+* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [ Jira ](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [ Medewerker AI ](#ai-assistant).
