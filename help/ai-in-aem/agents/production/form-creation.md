@@ -3,9 +3,9 @@ title: Formulierontwerpvaardigheden
 description: Leer meer over de vaardigheden van de Experience Production Agent bij het maken van formulieren en hoe u natuurlijke taal kunt gebruiken om nieuwe formulieren te maken.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ eenvoudige natuurlijke taalbevelen, die de behoefte elimineren om traditionele p
 
 * **creeer een nieuwe vorm met duidelijke tekstherinnering**: U kunt een vorm tot stand brengen door uw vereisten in gewone taal voor te leggen. De agent genereert automatisch de juiste formulierstructuur, veldtypen en ervaringen van het merk op basis van uw natuurlijke taalbeschrijving en opgegeven sjabloon. Deze mogelijkheid versnelt het maken van formulieren en zorgt ervoor dat de standaarden voor merk en naleving worden gehandhaafd.
 
-* **de Invoer een PDF of beeld en zet het in vorm** om: U kunt bestaand beeld of documenten van PDF in vormen invoeren en omzetten. De agent analyseert geüploade inhoud om veldtypen te detecteren, lay-outs te behouden en formulieren te verbeteren met responsieve ontwerp- en validatielogica en er tegelijkertijd voor te zorgen dat de standaarden voor merk en compatibiliteit worden gehandhaafd. Tot de ondersteunde indelingen behoren PDF-documenten, -afbeeldingen (JPG, PNG) en handgetekende formulierfoto&#39;s.
+* **de Invoer een document van PDF en zet het in vorm** om: U kunt bestaande documenten van PDF in vormen invoeren en omzetten. De agent analyseert geüploade inhoud om veldtypen te detecteren, lay-outs te behouden en formulieren te verbeteren met responsieve ontwerp- en validatielogica en er tegelijkertijd voor te zorgen dat de standaarden voor merk en compatibiliteit worden gehandhaafd.
 
   Wanneer u een van de bovenstaande mogelijkheden gebruikt, wordt u gevraagd het type formulier te kiezen dat u wilt maken, een sjabloon voor op kerncomponenten gebaseerde adaptieve formulieren of een sjabloon voor op Edge Delivery Services gebaseerde adaptieve formulieren op te geven en het voorkeurspad voor het opslaan van het formulier aan te geven. Als u een formulier maakt dat is gebaseerd op Edge Delivery Services, kunt u ook de GitHub-URL van de gegevensopslagruimte opgeven.
 
@@ -40,7 +40,7 @@ eenvoudige natuurlijke taalbevelen, die de behoefte elimineren om traditionele p
 * *creeer een vorm van de creditcardtoepassing door het dossier van PDF beschikbaar in &quot;https://[ te importeren aem-auteur-url ]/path/to/pdf/file*
 * *creeer een terugkoppel vorm gebruikend boilerplate bij &quot;<https://github.com/wkndforms/wesecure> &quot;*
 
-## Volgende stappen {#refine-with-forms-experience-builder}
+## Uw formulier verfijnen {#refine-with-forms-experience-builder}
 
 Nadat u de initiële formulierstructuur hebt gemaakt met AI Assistant, kunt u de Forms Experience Builder gebruiken om:
 
