@@ -22,13 +22,13 @@ AEM Screens as a Cloud Service is een oplossing voor digitale handtekeningen waa
 
 Screens as a Cloud Service bestaat uit twee hoofdonderdelen:
 
-* **[Tevreden Leverancier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)**, die Screens toe:voegen-op lopend op de Dienst van de Wolk AEM of op Adobe Managed Services (AMS) is. Met Screens Content Provider kan de auteur van de inhoud kanalen maken en beheren. De auteurs van de inhoud kunnen nieuwe inhoud toevoegen, de inhoud bewerken zonder zich zorgen te maken over de details van het maken van weergaven of spelerregistratie. De Content Provider biedt een abstractie van de onderliggende details van het ontwikkelen van inhoud, weergaven of spelerregistratie.
+* **[Tevreden Leverancier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)**, die Screens toe:voegen-op lopend op de Dienst van de Wolk AEM of op Adobe Managed Services (AMS) is. Met Screens Content Provider kan de auteur van de inhoud kanalen maken en beheren. De auteurs van de inhoud kunnen nieuwe inhoud toevoegen, de inhoud bewerken zonder zich zorgen te maken over de details van het maken van weergaven of spelerregistratie. De Content Provider biedt een abstractie van de onderliggende details van het ontwikkelen van inhoud, weergaven of spelerregistratie.
 
-* **[Dienstverlener van de Diensten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)**, die de digitale dienst van het signaalbeheer is die op Adobe I/O Runtime loopt. Met Screens Services Provider kunnen auteurs, ontwikkelaars en beheerders van inhoud weergaven en spelers voor het afspelen van inhoud beheren zodra de inhoud aan de kanalen is toegevoegd. De Screens Services Provider informeert de organisator ook waar en wanneer inhoud op hoog niveau wordt afgespeeld.
+* **[Dienstverlener van de Diensten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)**, die de digitale dienst van het signaalbeheer is die op Adobe I/O Runtime loopt. Met Screens Services Provider kunnen auteurs, ontwikkelaars en beheerders van inhoud weergaven en spelers voor het afspelen van inhoud beheren zodra de inhoud aan de kanalen is toegevoegd. De Screens Services Provider informeert de organisator ook waar en wanneer inhoud op hoog niveau wordt afgespeeld.
 
 
 ## Overzicht van architectuur {#architectural-overview}
 
 Als AEM Screens as a Cloud Service-gebruiker kunt u inhoud toevoegen en beheren in kanalen. U kunt vertoningen en spelers van de interfaces registreren en beheren die specifiek voor Screens as a Cloud Service worden ontworpen, namelijk, **de Dienstverlener van Screens** en **Screens Content Provider**.
 
-![ Architecturaal Overzicht ](/help/screens-cloud/assets/architecture-screenscloud.png)
+![&#x200B; Architecturaal Overzicht &#x200B;](/help/screens-cloud/assets/architecture-screenscloud.png)
