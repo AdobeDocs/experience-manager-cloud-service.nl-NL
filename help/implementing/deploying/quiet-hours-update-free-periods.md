@@ -29,7 +29,7 @@ U kunt deze tijdkaders vormen door twee het plannen opties te gebruiken:
 
 De functies voor vrije perioden en stille uren voor updates zijn geconfigureerd op basis van &quot;per programma&quot;. Houd in mening dat slechts de gebruikers met de &quot;gebruikersrol&quot;van **BedrijfsEigenaar** en **Manager van de Plaatsing** deze eigenschappen kunnen bekijken en gebruiken.
 
-Bovendien, voor informatie over geplande automatische onderhoudsperiodes van AEM as a Cloud Service, gelieve te verwijzen naar de [&#x200B; Uitgeven Roadmap van Experience Manager &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina.
+Bovendien, voor informatie over geplande automatische onderhoudsperiodes van AEM as a Cloud Service, gelieve te verwijzen naar de [&#x200B; Uitgeven Roadmap van Experience Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina.
 
 ## Stil uur {#quiet-hours}
 
@@ -79,7 +79,7 @@ Een **Actief** pictogram zal dichtbij de momenteel actieve update vrije periode 
 
 ## Geplande uitsluitingsperiode voor onderhoud {#planned-maintenance}
 
-Adobe heeft een aantal geplande uitsluitingsperioden voor onderhoudsverplichtingen. Deze perioden worden door Adobe gedefinieerd om risico&#39;s rond kritieke gebeurtenissen tot een minimum te beperken en komen gewoonlijk twee of drie keer per jaar voor. U kunt het nauwkeurige programma voor de periodes van de onderhoudsuitsluiting op de [&#x200B; Roadmap van de Versie van het Onderhoud &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina bekijken.
+Adobe heeft een aantal geplande uitsluitingsperioden voor onderhoudsverplichtingen. Deze perioden worden door Adobe gedefinieerd om risico&#39;s rond kritieke gebeurtenissen tot een minimum te beperken en komen gewoonlijk twee of drie keer per jaar voor. U kunt het nauwkeurige programma voor de periodes van de onderhoudsuitsluiting op de [&#x200B; Roadmap van de Versie van het Onderhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina bekijken.
 
 Om u te helpen uw update-vrije periodes nauwkeurig vormen, worden de periodes van de onderhoudsuitsluiting ook getoond in de Quiet Uren en Vrije Periode van de Update gebruikersinterface.
 
