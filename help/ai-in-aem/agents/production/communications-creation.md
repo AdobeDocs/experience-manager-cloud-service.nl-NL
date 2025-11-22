@@ -3,15 +3,19 @@ title: Communicatievermogen
 description: Leer over de vaardigheid van de Communicatie van de Agent van de Productie van de Ervaring en hoe te om natuurlijke taal te gebruiken om interactieve mededelingen tot stand te brengen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
 # Communicatievermogen {#ic-creation-skill}
+
+>[!NOTE]
+>
+> De communicatieve vaardigheid van de Aanmaak is momenteel in alpha. Als u zou willen deelnemen, gelieve een verzoek van uw officieel e-mailadres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) te verzenden.
 
 Interactieve communicatie is gepersonaliseerde, gegevensgestuurde documenten die zijn ontworpen voor zakelijke correspondentie, zoals accountverklaringen, beleidsdocumenten, rekeningen, welkomstkits en kennisgevingen van voordelen. In tegenstelling tot formulieren die invoer van gebruikers verzamelen, genereren Interactieve communicatie uitvoerdocumenten met dynamische, specifieke inhoud voor de ontvanger.
 
@@ -39,7 +43,9 @@ Enkele belangrijke voordelen van de vaardigheid van de verwezenlijking van de Co
 * *creeer een mededeling van beelddossier in https://[ aem-auteur-url ]/path/to/image/file*
 * Creeer een brief gebruikend het dossier van PDF in https://[ aem-auteur-url ]/path/to/pdf/file
 
+
 ## Verfijn uw communicatie {#refine-with-ic-editor}
+
 
 Nadat u de initiële communicatiestructuur hebt gemaakt met gebruik van AI Assistant, kunt u de Interactieve Communicatieeditor gebruiken om uw document te verfijnen en te verbeteren. In de Interactieve Communicatie Redacteur, kunt u herinneringen in natuurlijke taal verstrekken aan:
 
@@ -64,5 +70,4 @@ Nadat u de initiële communicatiestructuur hebt gemaakt met gebruik van AI Assis
 * *Werk de groepering van het gebied van het beleidsaantal bij om* te centreren
 * *verander de lijn het uit elkaar plaatsen van de termijnen en voorwaardensectie in 1.5*
 
-Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [&#x200B; Interactieve Communicatie documentatie &#x200B;](/help/forms/introduction-to-interactive-communication.md).
-
+Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [ Interactieve Communicatie documentatie ](/help/forms/introduction-to-interactive-communication.md).
