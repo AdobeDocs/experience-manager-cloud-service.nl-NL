@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De communicatieve vaardigheid van de Aanmaak is momenteel in alpha. Als u zou willen deelnemen, gelieve een verzoek van uw officieel e-mailadres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) te verzenden.
+> De communicatieve vaardigheid van de Aanmaak is momenteel in alpha. Als u zou willen deelnemen, gelieve een verzoek van uw officieel e-mailadres naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) te verzenden.
 
 Interactieve communicatie is gepersonaliseerde, gegevensgestuurde documenten die zijn ontworpen voor zakelijke correspondentie, zoals accountverklaringen, beleidsdocumenten, rekeningen, welkomstkits en kennisgevingen van voordelen. In tegenstelling tot formulieren die invoer van gebruikers verzamelen, genereren Interactieve communicatie uitvoerdocumenten met dynamische, specifieke inhoud voor de ontvanger.
 
@@ -70,4 +70,4 @@ Nadat u de initiële communicatiestructuur hebt gemaakt met gebruik van AI Assis
 * *Werk de groepering van het gebied van het beleidsaantal bij om* te centreren
 * *verander de lijn het uit elkaar plaatsen van de termijnen en voorwaardensectie in 1.5*
 
-Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [ Interactieve Communicatie documentatie ](/help/forms/introduction-to-interactive-communication.md).
+Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [&#x200B; Interactieve Communicatie documentatie &#x200B;](/help/forms/introduction-to-interactive-communication.md).
