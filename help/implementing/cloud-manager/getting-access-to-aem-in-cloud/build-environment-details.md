@@ -19,7 +19,7 @@ Meer informatie over de Cloud Manager-ontwikkelomgeving en hoe deze uw code bouw
 
 >[!TIP]
 >
->In dit document wordt de Cloud Manager-ontwikkelomgeving besproken voor het ontwikkelen van uw AEM as a Cloud Service-project. Voor details op cliëntplatforms die door AEM as a Cloud Service voor inhoud creatie worden gesteund, zie [ Gesteunde Platforms van de Cliënt ](/help/overview/supported-platforms.md).
+>In dit document wordt de Cloud Manager-ontwikkelomgeving besproken voor het ontwikkelen van uw AEM as a Cloud Service-project. Voor details op cliëntplatforms die door AEM as a Cloud Service voor inhoud creatie worden gesteund, zie [&#x200B; Gesteunde Platforms van de Cliënt &#x200B;](/help/overview/supported-platforms.md).
 
 ## Omgevingsdetails samenstellen {#build-environment-details}
 
@@ -27,25 +27,25 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
 * Apache Maven 3.9.4 is geïnstalleerd.
-   * Adobe adviseert gebruikers [ hun Geweven bewaarplaatsen bij te werken om HTTPS in plaats van HTTP ](#https-maven) te gebruiken.
+   * Adobe adviseert gebruikers [&#x200B; hun Geweven bewaarplaatsen bij te werken om HTTPS in plaats van HTTP &#x200B;](#https-maven) te gebruiken.
 <!-- OLD Removed 1/16/25 * The Java versions installed are Oracle JDK 11.0.22 and Oracle JDK 8u401. -->
 * De geïnstalleerde Java-versies zijn Oracle JDK 11.0.22, Oracle JDK 17.0.10 en Oracle JDK 21.0.4.
 
 <!-- OLD Removed 1/16/25 * **IMPORTANT:** By default, the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. This default should be overridden for AEM Cloud Projects to use JDK 11. See the Setting the Maven JDK Version section for more details. -->
-* **BELANGRIJK:** Door gebrek, wordt de `JAVA_HOME` milieuvariabele geplaatst aan `/usr/lib/jvm/jdk1.8.0_401`, die Oracle JDK 8u401 bevat. ***Dit gebrek zou voor de Projecten van de Wolk van AEM moeten worden met voeten getreden om JDK 21 (aangewezen), 17, of 11*** te gebruiken. Zie [ Plaatsend de Geweven sectie van de Versie JDK ](#alternate-maven-jdk-version) voor meer details.
+* **BELANGRIJK:** Door gebrek, wordt de `JAVA_HOME` milieuvariabele geplaatst aan `/usr/lib/jvm/jdk1.8.0_401`, die Oracle JDK 8u401 bevat. ***Dit gebrek zou voor de Projecten van de Wolk van AEM moeten worden met voeten getreden om JDK 21 (aangewezen), 17, of 11*** te gebruiken. Zie [&#x200B; Plaatsend de Geweven sectie van de Versie JDK &#x200B;](#alternate-maven-jdk-version) voor meer details.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn.
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Andere pakketten kunnen bij bouwstijltijd zoals die in de sectie [ wordt beschreven worden geïnstalleerd die de Extra Pakketten van het Systeem ](#installing-additional-system-packages) installeert.
+* Andere pakketten kunnen bij bouwstijltijd zoals die in de sectie [&#x200B; wordt beschreven worden geïnstalleerd die de Extra Pakketten van het Systeem &#x200B;](#installing-additional-system-packages) installeert.
 * Elke bouwstijl loopt in een schone milieu, met de bouwstijlcontainer die geen staat tussen uitvoeringen behoudt.
 * Maven wordt altijd uitgevoerd met de volgende drie opdrachten.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* Maven wordt geconfigureerd op systeemniveau met een `settings.xml` -bestand. Dit bestand bevat automatisch de openbare Adobe-gegevensopslagruimte met een profiel met de naam `adobe-public` . (Zie [ Openbare Bewaarplaats van Adobe ](https://repo1.maven.org/) voor meer details).
+* Maven wordt geconfigureerd op systeemniveau met een `settings.xml` -bestand. Dit bestand bevat automatisch de openbare Adobe-gegevensopslagruimte met een profiel met de naam `adobe-public` . (Zie [&#x200B; Openbare Bewaarplaats van Adobe &#x200B;](https://repo1.maven.org/) voor meer details).
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 ## Door HTTPS aangebrachte opslagruimten {#https-maven}
 
-Cloud Manager [ versie 2023.10.0 ](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [ Gemaakt versienota&#39;s ](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291) worden geschetst.
+Cloud Manager [&#x200B; versie 2023.10.0 &#x200B;](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [&#x200B; Gemaakt versienota&#39;s &#x200B;](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291) worden geschetst.
 
 Als gevolg van deze beveiligingsuitbreiding kunnen sommige gebruikers problemen ondervinden tijdens de constructiestap, met name wanneer ze artefacten downloaden van Geweven opslagplaatsen die onveilige HTTP-verbindingen gebruiken.
 
@@ -84,7 +84,7 @@ Als u de Git-uitvoeringsmodus JDK wilt instellen, maakt u een bestand met de naa
 
 #### Vereisten voor migratie naar gebouwen met Java 21 of Java 17 {#prereq-for-building}
 
-Cloud Manager gebruikt nu SonarQube 9.9 om te bouwen met Java 21 of Java 17. Dit is compatibel met deze Java-versies. Deze wijziging is geïntroduceerd in Cloud Manager release 2025.1.0. Er is geen actie van de klant vereist om SonarQube te upgraden. Voor meer details en om de verandering te begrijpen, zie de [ Nota&#39;s van de Versie voor Cloud Manager 2025.1.0 ](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
+Cloud Manager gebruikt nu SonarQube 9.9 om te bouwen met Java 21 of Java 17. Dit is compatibel met deze Java-versies. Deze wijziging is geïntroduceerd in Cloud Manager release 2025.1.0. Er is geen actie van de klant vereist om SonarQube te upgraden. Voor meer details en om de verandering te begrijpen, zie de [&#x200B; Nota&#39;s van de Versie voor Cloud Manager 2025.1.0 &#x200B;](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
 
 Wanneer u uw toepassing naar een nieuwe Java-versie (build) en een nieuwe runtimeversie migreert, moet u deze grondig testen in ontwikkelings- en werkgebiedomgevingen voordat u de toepassing implementeert naar productie.
 
@@ -125,7 +125,7 @@ Wanneer AEM lokaal wordt uitgevoerd met Java 21, mislukken de beginscripts ( `cr
 
 >[!IMPORTANT]
 >
->Als een omgeving nog niet automatisch is bijgewerkt naar de Java 21-runtime, kunt u deze activeren door te bouwen met Java 17 of 21. Dit doet u door `.cloudmanager/java-version` in te stellen op `21` of `17` . Contact Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) als u vragen hebt.
+>Als een omgeving nog niet automatisch is bijgewerkt naar de Java 21-runtime, kunt u deze activeren door te bouwen met Java 17 of 21. Dit doet u door `.cloudmanager/java-version` in te stellen op `21` of `17` . Contact Adobe in [&#x200B; aemcs-java-adopter@adobe.com &#x200B;](mailto:aemcs-java-adopter@adobe.com) als u vragen hebt.
 
 #### Vereisten voor de buildtijd {#build-time-reqs}
 
@@ -208,11 +208,11 @@ Om dit te steunen, voegt Cloud Manager deze standaardmilieuvariabelen aan de bou
 
 Uw bouwstijlproces zou specifieke configuratievariabelen kunnen vereisen die niet in de bewaarplaats van het Git zouden moeten worden opgeslagen. Bovendien, kunt u deze variabelen tussen pijpleidingsuitvoeringen moeten aanpassen gebruikend de zelfde tak.
 
-Zie ook [ vormen de Variabelen van de Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) voor meer informatie.
+Zie ook [&#x200B; vormen de Variabelen van de Pijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) voor meer informatie.
 
 ## Extra systeempakketten installeren {#installing-additional-system-packages}
 
-Sommige bouwstijlen vereisen extra systeempakketten om volledig te functioneren. Een build kan bijvoorbeeld een Python- of Ruby-script aanroepen en moet een geschikte taalinterpreter hebben geïnstalleerd. Dit installatieproces kan worden beheerd door [`exec-maven-plugin` ](https://www.mojohaus.org/exec-maven-plugin/) in uw `pom.xml` te roepen om APT aan te roepen. Deze uitvoering moet doorgaans worden opgenomen in een Cloud Manager-specifiek Maven-profiel. In dit voorbeeld wordt Python geïnstalleerd.
+Sommige bouwstijlen vereisen extra systeempakketten om volledig te functioneren. Een build kan bijvoorbeeld een Python- of Ruby-script aanroepen en moet een geschikte taalinterpreter hebben geïnstalleerd. Dit installatieproces kan worden beheerd door [`exec-maven-plugin` &#x200B;](https://www.mojohaus.org/exec-maven-plugin/) in uw `pom.xml` te roepen om APT aan te roepen. Deze uitvoering moet doorgaans worden opgenomen in een Cloud Manager-specifiek Maven-profiel. In dit voorbeeld wordt Python geïnstalleerd.
 
 ```xml
         <profile>
@@ -273,4 +273,4 @@ Dezelfde techniek kan worden gebruikt om taalspecifieke pakketten te installeren
 
 >[!TIP]
 >
->Voor details over het front-end bouwt milieu, zie [ het Ontwikkelen Plaatsen met de Voorste-Eind Pijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+>Voor details over het front-end bouwt milieu, zie [&#x200B; het Ontwikkelen Plaatsen met de Voorste-Eind Pijpleiding &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
