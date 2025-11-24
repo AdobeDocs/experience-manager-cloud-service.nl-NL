@@ -67,7 +67,7 @@ De eerste is de bovenste navigatiebalk van Experience Platform, die blijvend is 
 * Het ![&#x200B; menupictogram van de Show &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (toon of verberg zijmenu) geeft u toegang tot een verscheidenheid van lusjes die u aan specifieke delen van een individueel programma kunnen nemen. Of, kunt u tussen het [&#x200B; dashboard van de Vergunning &#x200B;](/help/implementing/cloud-manager/license-dashboard.md) en de **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van de context schakelen.
 * Het ![&#x200B; pictogram van de Bell &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([&#x200B; Meldingen &#x200B;](/help/implementing/cloud-manager/notifications.md)) geeft u toegang tot berichten en aankondigingen, onder andere.
 
-Voor meer details op de hoogste navigatiebar van Experience Platform, zie de [&#x200B; gids UI van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
+Voor meer details op de hoogste navigatiebar van Experience Platform, zie de [&#x200B; gids UI van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
 
 #### Programmawerkbalk {#program-toolbar}
 
@@ -122,7 +122,7 @@ Een kaart (of rij in een tabel) vertegenwoordigt elk programma en biedt een over
 * Naam die aan het Programma wordt toegewezen. In de bovenstaande afbeelding ziet u &quot;SecurBank Sample&quot; als de naam van het programma.
 * Servicetype:
    * **Experience Manager Cloud** — voor de programma&#39;s van AEM as a Cloud Service
-   * **Experience Manager** — voor [&#x200B; AMS (Adobe Managed Services) programma&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — voor [&#x200B; AMS (Adobe Managed Services) programma&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/introduction)
 * [&#x200B; Type van Programma &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Productie
