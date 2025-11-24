@@ -35,7 +35,7 @@ Via de AI Assistant hebt u toegang tot AEM Business Agents.
 
 Open de AI Assistant vanaf experience.adobe.com en begin met interactie door uw vraag in natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
 
-![ de Agent van de Ontdekking van de Toegang ](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
+![&#x200B; de Agent van de Ontdekking van de Toegang &#x200B;](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
 ### Voorbeeldvragen {#sample-prompts}
 
@@ -51,7 +51,7 @@ Om inhoudsupdates in werking te stellen kunt u een brede waaier van natuurlijke 
 
 >[!NOTE]
 >
->Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [ Jira ](#jira), maar wordt niet gesteund met AI Medewerker.
+>Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund met AI Medewerker.
 
 ## Jira {#jira}
 
@@ -107,7 +107,7 @@ Als de opdracht `process` updates activeert, volgen de reacties mogelijk de volg
 
 * Het volgende beeld toont een voorbeeldJira die het `process` bevel voor de vaardigheid van de inhoudsupdate teweegbrengt:
 
-  ![ Jira van het Voorbeeld gebruikend de vaardigheid van de inhoudsupdate van de Agent van de Productie van de Ervaring ](assets/content-update-jira-example.png)
+  ![&#x200B; Jira van het Voorbeeld gebruikend de vaardigheid van de inhoudsupdate van de Agent van de Productie van de Ervaring &#x200B;](assets/content-update-jira-example.png)
 
 ## Activering {#activation}
 
@@ -145,4 +145,4 @@ Bijvoorbeeld: <https://adminconsole.adobe.com/products/profiles/users>
 
 De beperkingen voor de Content Updater zijn momenteel:
 
-* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [ Jira ](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [ Medewerker AI ](#ai-assistant).
+* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [&#x200B; Medewerker AI &#x200B;](#ai-assistant).
