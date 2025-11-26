@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
+source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ In deze video ziet u hoe u SSL-certificaten (Secure Socket Layer) installeert en
 >id="aemcloud_golive_sslcert"
 >title="SSL-certificaten beheren"
 >abstract="Leer hoe Cloud Manager functies voor zelfbediening heeft om SSL-certificaten te installeren en te beheren om uw site te beveiligen voor uw gebruikers. Cloud Manager gebruikt een platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die zijn verkregen van certificeringsinstanties van derden."
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Status van een SSL-certificaat controleren"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Status van een SSL-certificaat controleren"
 
 ## Wat zijn SSL-certificaten? {#overview}
 
@@ -51,11 +51,11 @@ Beide modellen bieden de volgende algemene functies voor het beheer van uw certi
 
 >[!IMPORTANT]
 >
->[&#x200B; om een douanedomein met een milieu &#x200B;](/help/implementing/cloud-manager/custom-domain-names/introduction.md) toe te voegen en te associëren, moet u een geldig SSL certificaat hebben dat het domein behandelt.
+>[ om een douanedomein met een milieu ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) toe te voegen en te associëren, moet u een geldig SSL certificaat hebben dat het domein behandelt.
 
 ### Door Adobe beheerde SSL-certificaten (DV) {#adobe-managed}
 
-DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [&#x200B; productieprogramma&#39;s als zandbakprogramma&#39;s &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [ productieprogramma&#39;s als zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 Nadat het DV-certificaat is gemaakt, wordt dit door Adobe automatisch elke drie maanden vernieuwd, tenzij het wordt verwijderd.
 
@@ -164,12 +164,12 @@ Als u de limiet hebt bereikt, controleert u uw certificaten en kunt u eventueel 
 
 ### Laten we tarieflimieten coderen voor DV-certificaten die door Adobe worden beheerd
 
-Adobe-beheerde DV-certificaten vertrouwen op Let&#39;s Encrypt. Naast de Cloud Manager-limiet voor geïnstalleerde certificaten, dwingt Encrypt zijn eigen tarieflimieten af. Één zeer belangrijke grens is **Nieuwe Certificaten per Exacte Reeks van Herkenningstekens**: tot 5 certificaten kunnen voor de zeer zelfde reeks hostnames binnen om het even welke periode van 7 dagen worden uitgegeven. Als deze limiet is bereikt, geeft Cloud Manager de corresponderende fout Let&#39;s Encrypt weer en kunnen er geen certificaten meer worden gemaakt voor de hostnaam die is ingesteld totdat het snelheidslimietvenster opnieuw is ingesteld. Voor de recentste waarden en andere verwante grenzen, zie [&#x200B; tarief-grenzen documentatie &#x200B;](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers) van de Encrypt.
+Adobe-beheerde DV-certificaten vertrouwen op Let&#39;s Encrypt. Naast de Cloud Manager-limiet voor geïnstalleerde certificaten, dwingt Encrypt zijn eigen tarieflimieten af. Één zeer belangrijke grens is **Nieuwe Certificaten per Exacte Reeks van Herkenningstekens**: tot 5 certificaten kunnen voor de zeer zelfde reeks hostnames binnen om het even welke periode van 7 dagen worden uitgegeven. Als deze limiet is bereikt, wordt een fout weergegeven en kunnen er geen certificaten meer worden gemaakt voor de hostnaam die is ingesteld totdat het snelheidslimietvenster opnieuw is ingesteld. Voor de recentste waarden en andere verwante grenzen, zie [ tarief-grenzen documentatie ](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers) van de Encrypt.
 
 ## Meer informatie {#learn-more}
 
 Een gebruiker met de vereiste machtigingen kan Cloud Manager gebruiken om SSL-certificaten voor een programma te beheren. Raadpleeg de volgende documenten voor meer informatie over het gebruik van deze functies.
 
-* [&#x200B; voeg een SSL certificaat toe &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
-* [&#x200B; beheer SSL certificaten &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
+* [ voeg een SSL certificaat toe ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
+* [ beheer SSL certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
 
