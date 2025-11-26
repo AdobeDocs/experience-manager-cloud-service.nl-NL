@@ -51,11 +51,11 @@ Beide modellen bieden de volgende algemene functies voor het beheer van uw certi
 
 >[!IMPORTANT]
 >
->[ om een douanedomein met een milieu ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) toe te voegen en te associëren, moet u een geldig SSL certificaat hebben dat het domein behandelt.
+>[&#x200B; om een douanedomein met een milieu &#x200B;](/help/implementing/cloud-manager/custom-domain-names/introduction.md) toe te voegen en te associëren, moet u een geldig SSL certificaat hebben dat het domein behandelt.
 
 ### Door Adobe beheerde SSL-certificaten (DV) {#adobe-managed}
 
-DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [ productieprogramma&#39;s als zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [&#x200B; productieprogramma&#39;s als zandbakprogramma&#39;s &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 Nadat het DV-certificaat is gemaakt, wordt dit door Adobe automatisch elke drie maanden vernieuwd, tenzij het wordt verwijderd.
 
@@ -164,12 +164,12 @@ Als u de limiet hebt bereikt, controleert u uw certificaten en kunt u eventueel 
 
 ### Laten we tarieflimieten coderen voor DV-certificaten die door Adobe worden beheerd
 
-Adobe-beheerde DV-certificaten vertrouwen op Let&#39;s Encrypt. Naast de Cloud Manager-limiet voor geïnstalleerde certificaten, dwingt Encrypt zijn eigen tarieflimieten af. Één zeer belangrijke grens is **Nieuwe Certificaten per Exacte Reeks van Herkenningstekens**: tot 5 certificaten kunnen voor de zeer zelfde reeks hostnames binnen om het even welke periode van 7 dagen worden uitgegeven. Als deze limiet is bereikt, wordt een fout weergegeven en kunnen er geen certificaten meer worden gemaakt voor de hostnaam die is ingesteld totdat het snelheidslimietvenster opnieuw is ingesteld. Voor de recentste waarden en andere verwante grenzen, zie [ tarief-grenzen documentatie ](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers) van de Encrypt.
+Adobe-beheerde DV-certificaten vertrouwen op Let&#39;s Encrypt. Naast de Cloud Manager-limiet voor geïnstalleerde certificaten, dwingt Encrypt zijn eigen tarieflimieten af. Één zeer belangrijke grens is **Nieuwe Certificaten per Exacte Reeks van Herkenningstekens**: tot 5 certificaten kunnen voor de zeer zelfde reeks hostnames binnen om het even welke periode van 7 dagen worden uitgegeven. Als deze limiet is bereikt, wordt een fout weergegeven en kunnen er geen certificaten meer worden gemaakt voor de hostnaam die is ingesteld totdat het snelheidslimietvenster opnieuw is ingesteld. Voor de recentste waarden en andere verwante grenzen, zie [&#x200B; tarief-grenzen documentatie &#x200B;](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers) van de Encrypt.
 
 ## Meer informatie {#learn-more}
 
 Een gebruiker met de vereiste machtigingen kan Cloud Manager gebruiken om SSL-certificaten voor een programma te beheren. Raadpleeg de volgende documenten voor meer informatie over het gebruik van deze functies.
 
-* [ voeg een SSL certificaat toe ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
-* [ beheer SSL certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
+* [&#x200B; voeg een SSL certificaat toe &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
+* [&#x200B; beheer SSL certificaten &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
 
