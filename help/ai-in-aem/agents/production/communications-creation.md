@@ -3,9 +3,9 @@ title: Communicatievermogen
 description: Leer over de vaardigheid van de Communicatie van de Agent van de Productie van de Ervaring en hoe te om natuurlijke taal te gebruiken om interactieve mededelingen tot stand te brengen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De communicatieve vaardigheid van de Aanmaak is momenteel in alpha. Als u zou willen deelnemen, gelieve een verzoek van uw officieel e-mailadres naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) te verzenden.
+> De communicatieve vaardigheid van de Aanmaak is momenteel in alpha. Als u zou willen deelnemen, gelieve een verzoek van uw officieel e-mailadres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) te verzenden.
 
 Interactieve communicatie is gepersonaliseerde, gegevensgestuurde documenten die zijn ontworpen voor zakelijke correspondentie, zoals accountverklaringen, beleidsdocumenten, rekeningen, welkomstkits en kennisgevingen van voordelen. In tegenstelling tot formulieren die invoer van gebruikers verzamelen, genereren Interactieve communicatie uitvoerdocumenten met dynamische, specifieke inhoud voor de ontvanger.
 
@@ -70,4 +70,40 @@ Nadat u de initiële communicatiestructuur hebt gemaakt met gebruik van AI Assis
 * *Werk de groepering van het gebied van het beleidsaantal bij om* te centreren
 * *verander de lijn het uit elkaar plaatsen van de termijnen en voorwaardensectie in 1.5*
 
-Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [&#x200B; Interactieve Communicatie documentatie &#x200B;](/help/forms/introduction-to-interactive-communication.md).
+Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [ Interactieve Communicatie documentatie ](/help/forms/introduction-to-interactive-communication.md).
+
+## Activering {#activation}
+
+Als u de Experience Production Agent voor uw organisatie wilt inschakelen, moet de activering worden gestart via Adobe. Begin het proces door uit te reiken via:
+
+* E-mail: `experience-production-agent@adobe.com`
+* Of neem contact op met het aangewezen Adobe-accountteam.
+
+Voor een efficiënte ervaring bij het instappen moet u de volgende gegevens opstellen en verstrekken:
+
+Voor **AEM as a Cloud Service**, deel de volgende herkenningstekens:
+
+* Organisatie-id
+* `product_id`
+* `profile_id`
+
+Uw AEM-beheerder kan deze vinden door:
+
+1. Navigeren naar <https://adminconsole.adobe.com/>
+1. Selecterend **Adobe Experience Manager as a Cloud Service**
+1. De juiste AEM-instantie in uw omgeving kiezen
+1. Een profiel selecteren met lees-/schrijfmachtigingen voor relevante inhoud
+1. De volledige URL van de browser van deze pagina kopiëren
+1. De waarden `product_id` en `profile_id` extraheren van de URL\
+   (Een URL zoals `https://adminconsole.adobe.com/products/profiles/users` bevat bijvoorbeeld deze parameters).
+
+Voor **het Authoring van het Document van Edge Delivery**, leverde uw team van Adobe van:
+
+* Domeinen voor uw Edge Delivery Services-omgeving
+* Overeenkomende GitHub-gegevens:
+   * Organisatie (organisatie)
+   * Repository (Repo)
+   * Branch
+
+Het verstrekken van volledige en nauwkeurige informatie versnelt het activeringsproces en verzekert tijdige levering van de Agent van de Productie van de Ervaring.
+

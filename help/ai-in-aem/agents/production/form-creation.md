@@ -3,9 +3,9 @@ title: Formulierontwerpvaardigheden
 description: Leer meer over de vaardigheden van de Experience Production Agent bij het maken van formulieren en hoe u natuurlijke taal kunt gebruiken om nieuwe formulieren te maken.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,42 @@ Nadat u de initiële formulierstructuur hebt gemaakt met AI Assistant, kunt u de
 * **vorm voorlegging**: Vorm waar de vormgegevens, met inbegrip van vestiging e-mailberichten, integratie met werkschema&#39;s, of verbindingen aan externe systemen worden voorgelegd.
 
 Voor meer informatie, zie {de documentatie van de Bouwer van de Ervaring van 0} Forms [.](/help/forms/experience-builder/product-overview.md)
+
+
+## Activering {#activation}
+
+Als u de Experience Production Agent voor uw organisatie wilt inschakelen, moet de activering worden gestart via Adobe. Begin het proces door uit te reiken via:
+
+* E-mail: `experience-production-agent@adobe.com`
+* Of neem contact op met het aangewezen Adobe-accountteam.
+
+Voor een efficiënte ervaring bij het instappen moet u de volgende gegevens opstellen en verstrekken:
+
+Voor **AEM as a Cloud Service**, deel de volgende herkenningstekens:
+
+* Organisatie-id
+* `product_id`
+* `profile_id`
+
+Uw AEM-beheerder kan deze vinden door:
+
+1. Navigeren naar <https://adminconsole.adobe.com/>
+1. Selecterend **Adobe Experience Manager as a Cloud Service**
+1. De juiste AEM-instantie in uw omgeving kiezen
+1. Een profiel selecteren met lees-/schrijfmachtigingen voor relevante inhoud
+1. De volledige URL van de browser van deze pagina kopiëren
+1. De waarden `product_id` en `profile_id` extraheren van de URL\
+   (Een URL zoals `https://adminconsole.adobe.com/products/profiles/users` bevat bijvoorbeeld deze parameters).
+
+Voor **het Authoring van het Document van Edge Delivery**, leverde uw team van Adobe van:
+
+* Domeinen voor uw Edge Delivery Services-omgeving
+* Overeenkomende GitHub-gegevens:
+   * Organisatie (organisatie)
+   * Repository (Repo)
+   * Branch
+
+Het verstrekken van volledige en nauwkeurige informatie versnelt het activeringsproces en verzekert tijdige levering van de Agent van de Productie van de Ervaring.
 
 <!-- 
 #### Import and convert {#import-and-convert}
