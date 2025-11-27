@@ -37,7 +37,7 @@ HTML5-formulieren kunnen de volgende topologieën gebruiken om verbinding te mak
 * Een topologie waarbij AEM Server- of HTML5-formulieren gegevens via POST naar de server verzenden.
 * Een topologie waar de volmachtsserver POST gegevens naar de server verzendt.
 
-![ HTML5 de topologieën van de de dienstvolmacht van vormen ](assets/topology.png)
+![&#x200B; HTML5 de topologieën van de de dienstvolmacht van vormen &#x200B;](assets/topology.png)
 
 HTML5 de volmachtstopologieën van de vormendienst
 

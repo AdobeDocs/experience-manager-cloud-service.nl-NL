@@ -43,7 +43,7 @@ Een HTML5-formulier kan meerdere externe bronnen bevatten, zoals afbeeldings-, J
 
 Daarom is het verkleinen van de omvang van de externe middelen en het gebruik van alleen de absoluut noodzakelijke middelen de voorkeursmethode om de prestaties van de formulieren te verbeteren. U kunt de volgende optimalisaties uitvoeren op een XFA-formulier om de grootte van externe bronnen van een formulier te beperken:
 
-* Gebruik [ samengeperste beelden ](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md). Het vermindert de netwerkactiviteit en de hoeveelheid geheugen die nodig is om een formulier te genereren. Daarom neemt de laadtijd van het formulier aanzienlijk af.
+* Gebruik [&#x200B; samengeperste beelden &#x200B;](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md). Het vermindert de netwerkactiviteit en de hoeveelheid geheugen die nodig is om een formulier te genereren. Daarom neemt de laadtijd van het formulier aanzienlijk af.
 * Gebruik de minify-optie in AEM Configuration Manager (Day CQ HTML Library Manager) om JavaScript- en CSS-bestanden te comprimeren. Voor details, zie {de Montages van de Configuratie 0} OSGi [.](/help/implementing/deploying/configuring-osgi.md)
 * Webcompressie inschakelen. Hiermee verkleint u de grootte van de aanvragen en reacties die afkomstig zijn van een formulier. <!-- For details, see [Performance tuning of AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html)-->
 
@@ -87,4 +87,4 @@ Met Adobe Experience Manager (AEM)-formulieren kunt u complexe transacties trans
 ## Snelle referentiekaart {#quick-reference-card}
 
 U kunt de volgende kaart afdrukken (klik op de kaart om een versie met hoge resolutie te downloaden) en deze voor een snelle referentie op uw bureau houden:
-[![ HTML5 Forms beste praktijken snelle verwijzingskaart ](assets/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![&#x200B; HTML5 Forms beste praktijken snelle verwijzingskaart &#x200B;](assets/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

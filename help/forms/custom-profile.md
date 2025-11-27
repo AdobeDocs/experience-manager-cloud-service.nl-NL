@@ -20,7 +20,7 @@ ht-degree: 0%
 <span class="preview"> De HTML5 Forms-functionaliteit wordt aangeboden als onderdeel van het programma voor vroege toegang. Als u toegang wilt aanvragen, stuurt u een e-mail van uw officiële (werk)e-mailadres naar aem-forms-ea@adobe.com.
 </span>
 
-Een profiel is een middelknoop in [ Apache Sling ](https://sling.apache.org/). Deze vertegenwoordigt een aangepaste versie van de renderingsservice voor HTML5-formulieren. Met de service HTML5 Forms Rendition kunt u de weergave, het gedrag en de interacties van de HTML5-formulieren aanpassen. Er bestaat een profielknooppunt in de `/content` -map in de JCR-opslagplaats. U kunt het knooppunt rechtstreeks in de map `/content` of in een submap van de map `/content` plaatsen.
+Een profiel is een middelknoop in [&#x200B; Apache Sling &#x200B;](https://sling.apache.org/). Deze vertegenwoordigt een aangepaste versie van de renderingsservice voor HTML5-formulieren. Met de service HTML5 Forms Rendition kunt u de weergave, het gedrag en de interacties van de HTML5-formulieren aanpassen. Er bestaat een profielknooppunt in de `/content` -map in de JCR-opslagplaats. U kunt het knooppunt rechtstreeks in de map `/content` of in een submap van de map `/content` plaatsen.
 
 De profielknoop heeft het **sling:resourceSuperType** bezit en de standaardwaarde is **xfaforms/profiel**. Het renderscript voor het knooppunt staat op /libs/xfaforms/profile.
 
@@ -84,4 +84,4 @@ Nadat u een aangepast profiel hebt gemaakt, voegt u renderinformatie toe aan dit
 
 1. Open URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html` om te controleren of het profiel is gemaakt.
 
-Om uw vormen te verifiëren, **voer uw formulieren** van uw lokaal dossiersysteem in AEM Forms in en [ voorproef de vorm ](/help/forms/previewing-forms.md) op de instantie van de de serverauteur van AEM.
+Om uw vormen te verifiëren, **voer uw formulieren** van uw lokaal dossiersysteem in AEM Forms in en [&#x200B; voorproef de vorm &#x200B;](/help/forms/previewing-forms.md) op de instantie van de de serverauteur van AEM.

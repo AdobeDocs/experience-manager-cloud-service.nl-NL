@@ -33,7 +33,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    1. Meld u aan met beheerdersreferenties.
    1. Maak een profiel of kies een bestaand profiel.
 
-      Voor details op hoe te om een profiel tot stand te brengen, zie [ Creërend een Profiel ](/help/forms/custom-profile.md).
+      Voor details op hoe te om een profiel tot stand te brengen, zie [&#x200B; Creërend een Profiel &#x200B;](/help/forms/custom-profile.md).
 
 1. **wijzig het Profiel van HTML**
 
@@ -86,7 +86,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    >
    >De volgende schermafbeelding laat zien hoe het formulier in een browser wordt weergegeven.
 
-   ![ portaal ](assets/portal.jpg)
+   ![&#x200B; portaal &#x200B;](assets/portal.jpg)
 
    De linkerkant is een deel van de **pagina van HTML**. De juiste kant die de gebieden bevat is de **xfa vorm**.
 
@@ -94,7 +94,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
 
    Hier volgt een voorbeeldscript dat u kunt toevoegen om waarden in een formulierveld in te stellen.
 
-   Bijvoorbeeld, als u **EmployeeName** wilt plaatsen gebruikend de waarden op de Voornaam van Gebieden **** en **Familienaam**, roep de {**functie 6} window.formBridge.setFieldValue.**
+   Bijvoorbeeld, als u **EmployeeName** wilt plaatsen gebruikend de waarden op de Voornaam van Gebieden **&#x200B;**&#x200B;en **Familienaam**, roep de {**functie 6} window.formBridge.setFieldValue.**
 
    Op dezelfde manier kunt u de waarde lezen door **window.formBridge.getFieldValue** API te roepen.
 
