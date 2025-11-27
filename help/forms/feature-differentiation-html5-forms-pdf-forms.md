@@ -3,14 +3,12 @@ title: Verschil tussen HTML5-formulieren en PDF forms
 description: Meer informatie over de functieverschillen tussen HTML5-formulieren en PDF forms.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 1%
@@ -38,7 +36,7 @@ In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HT
   </tr>
   <tr>
    <td>Handtekeningveld <br /> </td>
-   <td><strong> Digitale Handtekeningen </strong> worden niet gesteund maar een nieuw <strong> Krabbelt gebied van de Handtekening </strong> wordt toegevoegd voor papier als handtekeningen. Men kan hun handtekening op de vorm krabbelen gebruikend het <strong> gebied van de Handtekening van 0&rbrace; Krabbelen. </strong> De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt geolocatieinformatie op het <strong> Krabbelen </strong> gebied van de Handtekening bewaren.</td>
+   <td><strong> Digitale Handtekeningen </strong> worden niet gesteund maar een nieuw <strong> Krabbelt gebied van de Handtekening </strong> wordt toegevoegd voor papier als handtekeningen. Men kan hun handtekening op de vorm krabbelen gebruikend het <strong> gebied van de Handtekening van 0} Krabbelen. </strong> De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt geolocatieinformatie op het <strong> Krabbelen </strong> gebied van de Handtekening bewaren.</td>
    <td>Het gebied van de handtekening beschikbaar voor <strong> Digitale Handtekeningen </strong>.</td>
   </tr>
   <tr>

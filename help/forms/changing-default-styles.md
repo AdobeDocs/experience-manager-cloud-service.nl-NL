@@ -2,16 +2,14 @@
 title: Standaardstijlen van HTML5-formulieren wijzigen
 description: HTML5-formulierstijlen zijn gebaseerd op CSS. U kunt de standaardstijlen van het formulier wijzigen.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -23,17 +21,17 @@ ht-degree: 0%
 
 HTML5-formulieren worden gegenereerd met HTML5-mogelijkheden en de opmaak van het gegenereerde formulier wordt uitgevoerd met CSS. De standaardweergave van een HTML5-formulier is vergelijkbaar met de PDF-uitvoering ervan. Ontwikkelaars kunnen aangepaste CSS gebruiken om de standaardweergave van HTML5-formulieren te wijzigen.
 
-Dit artikel verstrekt geleidelijke informatie om stijl van een vorm te veranderen HTML5 en [&#x200B; Inleiding aan het artikel van Stijlen &#x200B;](/help/forms/css-styles.md) bevat gedetailleerde informatie over diverse het stileren aspecten van HTML5 vormen. Zorg ervoor dat u Inleiding aan stijlartikel leest alvorens stappen uit te voeren die in dit artikel worden vermeld.
+Dit artikel verstrekt geleidelijke informatie om stijl van een vorm te veranderen HTML5 en [ Inleiding aan het artikel van Stijlen ](/help/forms/css-styles.md) bevat gedetailleerde informatie over diverse het stileren aspecten van HTML5 vormen. Zorg ervoor dat u Inleiding aan stijlartikel leest alvorens stappen uit te voeren die in dit artikel worden vermeld.
 
 De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aangepaste stijlen.
 
-![&#x200B; beelden-002-klein &#x200B;](assets/pictures-002-small.png)
+![ beelden-002-klein ](assets/pictures-002-small.png)
 
 ## Uw formulieren opmaken {#style-your-forms}
 
 1. **kies een profiel om douanestijlen** toe te voegen
 
-   Heb toegang tot de interface van CRX DE bij URL: **https://&lt;server>:&lt;port>/crx/de** en creeer een profiel of kies een bestaand profiel. Om te weten hoe te om een profiel tot stand te brengen, zie [&#x200B; Creërend een Profiel &#x200B;](/help/forms/custom-profile.md)
+   Heb toegang tot de interface van CRX DE bij URL: **https://&lt;server>:&lt;port>/crx/de** en creeer een profiel of kies een bestaand profiel. Om te weten hoe te om een profiel tot stand te brengen, zie [ Creërend een Profiel ](/help/forms/custom-profile.md)
 
 1. **creeer een CSS stijlblad voor het stileren van de vormen HTML5**
 
@@ -45,7 +43,7 @@ De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aan
    1. Open vanuit het navigatievenster het CSS-bestand dat u hebt gemaakt.
    1. Definieer de CSS-klassen van de componenten die u wilt opmaken en voeg stijlen toe in die klassen.
 
-   Om te weten welke CSS klassen om voor een bepaalde component in uw vormen te creëren HTML5, zie [&#x200B; Inleiding aan Stijlen &#x200B;](/help/forms/css-styles.md).
+   Om te weten welke CSS klassen om voor een bepaalde component in uw vormen te creëren HTML5, zie [ Inleiding aan Stijlen ](/help/forms/css-styles.md).
 
 1. **omvat het stijlblad in Renderer van het Profiel**
 

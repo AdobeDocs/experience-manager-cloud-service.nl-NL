@@ -2,14 +2,13 @@
 title: Schermlezers voor HTML5-formulieren
 description: Hier worden de schermlezers weergegeven die met HTML5-formulieren worden ondersteund.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: HTML5 Forms,Mobile Forms
 exl-id: 07d20c2f-7d13-48ac-8d58-b367eb194558
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -27,7 +26,7 @@ HTML5-formulieren maken gebruik van standaard HTML-constructies die het gebruik 
 
 ## Toegankelijkheidsnormen {#accessibility-standards}
 
-HTML5-formulieren voldoen aan sectie 508 voor toegankelijkheid, met bekende uitzonderingen. Zie [&#x200B; VPAT voor vormen HTML5 &#x200B;](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) voor details.
+HTML5-formulieren voldoen aan sectie 508 voor toegankelijkheid, met bekende uitzonderingen. Zie [ VPAT voor vormen HTML5 ](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) voor details.
 
 ## Gecertificeerde schermlezers voor HTML5-formulieren {#certified-screen-readers-for-html-forms}
 
@@ -36,11 +35,11 @@ HTML5-formulieren voldoen aan sectie 508 voor toegankelijkheid, met bekende uitz
 
 ### JAWS {#jaws}
 
-Alle standaardtoetsaanslagen en -sneltoetsen werken voor HTML5-formulieren. Voor meer informatie bij het gebruiken van JAWS, bezoek [&#x200B; https://www.freedomscientific.com/jaws-hq.asp &#x200B;](https://www.freedomscientific.com/jaws-hq.asp).
+Alle standaardtoetsaanslagen en -sneltoetsen werken voor HTML5-formulieren. Voor meer informatie bij het gebruiken van JAWS, bezoek [ https://www.freedomscientific.com/jaws-hq.asp ](https://www.freedomscientific.com/jaws-hq.asp).
 
 ### VoiceOver {#voiceover}
 
-HTML5-formulieren ondersteunen alle standaardtoetsaanslagen en -bewegingen van Voice over. Voor meer informatie bij vestiging en het gebruiken van VoiceOver, zie [&#x200B; https://www.apple.com/accessibility/vision/ &#x200B;](https://www.apple.com/accessibility/vision/).
+HTML5-formulieren ondersteunen alle standaardtoetsaanslagen en -bewegingen van Voice over. Voor meer informatie bij vestiging en het gebruiken van VoiceOver, zie [ https://www.apple.com/accessibility/vision/ ](https://www.apple.com/accessibility/vision/).
 
 ## Bekende problemen {#known-issues}
 

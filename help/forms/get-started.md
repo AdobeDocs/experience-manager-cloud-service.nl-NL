@@ -2,14 +2,13 @@
 title: Aan de slag met HTML5-formulieren
 description: Om aan de slag te gaan, implementeert u het AEM Forms-add-onpakket en importeert u bestaande HTML5-formulieren naar AEM.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: HTML5 Forms,Mobile Forms
 exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -23,7 +22,7 @@ ht-degree: 0%
 
 HTML5-formulieren bieden talrijke mogelijkheden die geschikt zijn voor mobiele apparaten. Het helpt u uw huidige oplossingen en workflows aan tablets of smartphones apparaten met browsers uit te breiden HTML5. Enkele mogelijkheden omvatten:
 
-* **op HTML5-Gebaseerde teruggeven van XFA vormmalplaatjes:** Naast regelmatige PDF forms, kunt u uw bestaande op XFA-Gebaseerde vormen in formaat nu teruggeven HTML5. Hiermee kunt u uw clientplatform uitbreiden naar mobiele apparaten (Apple iPad, Android-tablet, smartphones enzovoort) die HTML5 ondersteunen en Adobe Reader niet met XFA Forms ondersteunen. Voor meer informatie over op HTML5-Gebaseerd teruggevend vermogen, zie [&#x200B; Inleiding aan HTML5 vormen &#x200B;](/help/forms/introductionhtml5.md).
+* **op HTML5-Gebaseerde teruggeven van XFA vormmalplaatjes:** Naast regelmatige PDF forms, kunt u uw bestaande op XFA-Gebaseerde vormen in formaat nu teruggeven HTML5. Hiermee kunt u uw clientplatform uitbreiden naar mobiele apparaten (Apple iPad, Android-tablet, smartphones enzovoort) die HTML5 ondersteunen en Adobe Reader niet met XFA Forms ondersteunen. Voor meer informatie over op HTML5-Gebaseerd teruggevend vermogen, zie [ Inleiding aan HTML5 vormen ](/help/forms/introductionhtml5.md).
 
 * **Beherend Forms:** bovendien omvat AEM nieuwe mogelijkheden om het proces te vereenvoudigen om vormen te organiseren en te beheren. U kunt formulieren activeren, deactiveren, publiceren en hiervan een voorbeeld weergeven.<!--For more information, see [Introduction to managing forms](/help/forms/using/introduction-managing-forms.md).-->
 

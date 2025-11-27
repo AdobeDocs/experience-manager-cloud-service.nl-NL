@@ -2,14 +2,13 @@
 title: Formuliersjabloon weergeven voor HTML5-formulieren
 description: HTML5-formulierprofielen zijn gekoppeld aan profielrenderingen. Profielrendering zijn JSP-pagina's die verantwoordelijk zijn voor het genereren van HTML-representatie van het formulier door de Forms OSGi-service aan te roepen.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 HTML5 de vormen hebben het begrip van **Profielen** die als Eindpunten van REST worden blootgesteld om Mobiele Rendering van de Malplaatjes van de Vorm toe te laten. Deze Profielen hebben **Renderer van het Profiel** geassocieerd. Ze zijn JSP-pagina&#39;s die verantwoordelijk zijn voor het genereren van HTML-representatie van het formulier door de Forms OSGi-service aan te roepen. Het JCR-pad van het knooppunt Profile bepaalt de URL van het eindpunt van de renderbewerking. Het standaardrendereindpunt van het formulier dat verwijst naar het standaardprofiel ziet er als volgt uit:
 
-https://&lt;*gastheer*>:&lt; *haven*>/content/xfaforms/profiles/default.html?contentRoot=&lt; *weg van de omslag die vorm xdp* bevat>&amp;template=&lt; *naam van xdp*>
+https://<*gastheer*>:< *haven*>/content/xfaforms/profiles/default.html?contentRoot=< *weg van de omslag die vorm xdp* bevat>&template=< *naam van xdp*>
 
 Bijvoorbeeld: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

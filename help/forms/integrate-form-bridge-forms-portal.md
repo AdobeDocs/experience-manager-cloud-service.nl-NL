@@ -2,16 +2,14 @@
 title: Form Bridge integreren met aangepaste portal voor HTML5-formulieren
 description: U kunt de FormBridge-API gebruiken om de waarden van formuliervelden op de HTML-pagina op te halen of in te stellen en het formulier te verzenden.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 0%
 <span class="preview"> De HTML5 Forms-functionaliteit wordt aangeboden als onderdeel van het programma voor vroege toegang. Als u toegang wilt aanvragen, stuurt u een e-mail van uw officiële (werk)e-mailadres naar aem-forms-ea@adobe.com.
 </span>
 
-FormBridge is een bridge-API voor HTML5-formulieren waarmee u kunt communiceren met een formulier. Voor de verwijzing FormBridge API, zie [&#x200B; FormBridge API verwijzing &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).
+FormBridge is een bridge-API voor HTML5-formulieren waarmee u kunt communiceren met een formulier. <!--For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).-->
 
 U kunt de FormBridge-API gebruiken om de waarden van formuliervelden op de HTML-pagina op te halen of in te stellen en het formulier te verzenden. U kunt bijvoorbeeld de API gebruiken om een wizards-achtige ervaring op te bouwen.
 
@@ -35,7 +33,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    1. Meld u aan met beheerdersreferenties.
    1. Maak een profiel of kies een bestaand profiel.
 
-      Voor details op hoe te om een profiel tot stand te brengen, zie [&#x200B; Creërend een Profiel &#x200B;](/help/forms/custom-profile.md).
+      Voor details op hoe te om een profiel tot stand te brengen, zie [ Creërend een Profiel ](/help/forms/custom-profile.md).
 
 1. **wijzig het Profiel van HTML**
 
@@ -88,7 +86,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    >
    >De volgende schermafbeelding laat zien hoe het formulier in een browser wordt weergegeven.
 
-   ![&#x200B; portaal &#x200B;](assets/portal.jpg)
+   ![ portaal ](assets/portal.jpg)
 
    De linkerkant is een deel van de **pagina van HTML**. De juiste kant die de gebieden bevat is de **xfa vorm**.
 
@@ -96,7 +94,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
 
    Hier volgt een voorbeeldscript dat u kunt toevoegen om waarden in een formulierveld in te stellen.
 
-   Bijvoorbeeld, als u **EmployeeName** wilt plaatsen gebruikend de waarden op de Voornaam van Gebieden **&#x200B;**&#x200B;en **Familienaam**, roep de {**functie 6} window.formBridge.setFieldValue.**
+   Bijvoorbeeld, als u **EmployeeName** wilt plaatsen gebruikend de waarden op de Voornaam van Gebieden **** en **Familienaam**, roep de {**functie 6} window.formBridge.setFieldValue.**
 
    Op dezelfde manier kunt u de waarde lezen door **window.formBridge.getFieldValue** API te roepen.
 

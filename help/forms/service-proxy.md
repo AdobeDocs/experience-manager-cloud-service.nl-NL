@@ -2,14 +2,12 @@
 title: HTML5-proxy voor formulierservice
 description: HTML5 Forms Service Proxy is een configuratie om een proxy voor de verzendservice te registreren. Om de Volmacht van de Dienst te vormen, specificeer URL van de voorleggingsdienst door request parameter submissionServiceProxy.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -39,7 +37,7 @@ HTML5-formulieren kunnen de volgende topologieën gebruiken om verbinding te mak
 * Een topologie waarbij AEM Server- of HTML5-formulieren gegevens via POST naar de server verzenden.
 * Een topologie waar de volmachtsserver POST gegevens naar de server verzendt.
 
-![&#x200B; HTML5 de topologieën van de de dienstvolmacht van vormen &#x200B;](assets/topology.png)
+![ HTML5 de topologieën van de de dienstvolmacht van vormen ](assets/topology.png)
 
 HTML5 de volmachtstopologieën van de vormendienst
 
