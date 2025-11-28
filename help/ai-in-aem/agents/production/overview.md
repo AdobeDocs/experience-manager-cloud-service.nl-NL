@@ -28,27 +28,27 @@ De agent biedt de volgende taken:
 >
 >Door AI gegenereerde reacties kunnen onjuist of misleidend zijn. Controleer de voorgestelde oplossingen en reacties met twee controles.
 >
->Zie ook [ Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Zie ook [&#x200B; Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
 ### Inhoud bijwerken {#content-update}
 
-De [ Update van de Inhoud ](/help/ai-in-aem/agents/production/content-update.md) werkt bestaande inhoud — met inbegrip van inhoudsfragmenten, pagina&#39;s, vormen en activa bij — met gemak. De agent kan acties uitvoeren zoals het bijwerken, verwijderen, vervangen of toevoegen van inhoudselementen om ervaringen nauwkeurig en actueel te houden. Invoer kan een natuurlijke taalbeschrijving zijn en bij Jira PDF&#39;s en screenshots kan ook invoer worden geleverd.
+De [&#x200B; Update van de Inhoud &#x200B;](/help/ai-in-aem/agents/production/content-update.md) werkt bestaande inhoud — met inbegrip van inhoudsfragmenten, pagina&#39;s, vormen en activa bij — met gemak. De agent kan acties uitvoeren zoals het bijwerken, verwijderen, vervangen of toevoegen van inhoudselementen om ervaringen nauwkeurig en actueel te houden. Invoer kan een natuurlijke taalbeschrijving zijn en bij Jira PDF&#39;s en screenshots kan ook invoer worden geleverd.
 
 ### Formulier maken {#form-creation}
 
-De [ vaardigheid van de Aanmaak van de Vorm 0} laat gebruikers toe om adaptieve vormen door natuurlijke taalherinneringen zonder afhankelijkheid van ontwikkeling of de teams van IT te bouwen. ](/help/ai-in-aem/agents/production/form-creation.md) Deze mogelijkheid versnelt de ontwikkeling van formulieren met behoud van de consistentie van merken en stelt zakelijke gebruikers in staat formulieren te maken zonder diepgaande technische productkennis.
+De [&#x200B; vaardigheid van de Aanmaak van de Vorm 0&rbrace; laat gebruikers toe om adaptieve vormen door natuurlijke taalherinneringen zonder afhankelijkheid van ontwikkeling of de teams van IT te bouwen. &#x200B;](/help/ai-in-aem/agents/production/form-creation.md) Deze mogelijkheid versnelt de ontwikkeling van formulieren met behoud van de consistentie van merken en stelt zakelijke gebruikers in staat formulieren te maken zonder diepgaande technische productkennis.
 
 ### Communicatie maken {#communications-creation}
 
-De [ vaardigheid van de Aanmaak van de Communicatie van 0} {machtigt bedrijfsgebruikers om gepersonaliseerde, gegeven-gedreven correspondentie bij schaal te produceren. ](/help/ai-in-aem/agents/production/communications-creation.md) Van accountverklaringen en beleidsdocumenten tot rekeningen en welkomstkits, zet de agent de eisen van de natuurlijke taal in professionele mededelingen om.
+De [&#x200B; vaardigheid van de Aanmaak van de Communicatie van 0&rbrace; &lbrace;machtigt bedrijfsgebruikers om gepersonaliseerde, gegeven-gedreven correspondentie bij schaal te produceren. &#x200B;](/help/ai-in-aem/agents/production/communications-creation.md) Van accountverklaringen en beleidsdocumenten tot rekeningen en welkomstkits, zet de agent de eisen van de natuurlijke taal in professionele mededelingen om.
 
 >[!NOTE]
 >
-> De communicatieve vaardigheid van de Aanmaak is momenteel in alpha. Als u zou willen deelnemen, gelieve een verzoek van uw officieel e-mailadres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) te verzenden.
+> De communicatieve vaardigheid van de Aanmaak is momenteel in alpha. Als u zou willen deelnemen, gelieve een verzoek van uw officieel e-mailadres naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) te verzenden.
 
 ### Site-migratie {#site-migration}
 
-De [ migratie van de Plaats ](/help/ai-in-aem/agents/production/site-migration.md) migreert foutloos niet-AEM plaatsen in de milieu&#39;s van de Levering van de Ervaring (van de Diensten van de Levering van de Ervaring), die ervoor zorgen zij, volgzaam, en agent-klaar zijn. De agent stroomlijnt opstelling en transformatie, verminderend handeninspanning en tijd aan waarde.
+De [&#x200B; migratie van de Plaats &#x200B;](/help/ai-in-aem/agents/production/site-migration.md) migreert foutloos niet-AEM plaatsen in de milieu&#39;s van de Levering van de Ervaring (van de Diensten van de Levering van de Ervaring), die ervoor zorgen zij, volgzaam, en agent-klaar zijn. De agent stroomlijnt opstelling en transformatie, verminderend handeninspanning en tijd aan waarde.
 
 De agent zou met andere agentenvaardigheden moeten kunnen werken, omvatten voorbeelden:
 
