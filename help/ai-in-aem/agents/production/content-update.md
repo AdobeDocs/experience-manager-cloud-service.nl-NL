@@ -3,9 +3,9 @@ title: Vaardigheid voor bijwerken van inhoud
 description: Leer wat de inhoud van de Agent van de Productie van de Ervaring bijwerkt vaardigheid is en wat het voor u kan doen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: 437da39f61d7af2fe01a1617d3299fd60ee38ad5
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De content update-vaardigheid van de Experience Production Agent automatiseert de content productie om dagelijkse taken voor Adobe Experience Manager (AEM) as a Cloud Service en Edge Delivery Services te versnellen.
 
-De inhoud werkt bestaande inhoud in de CMS bij, waaronder inhoudsfragmenten, pagina&#39;s, formulieren en elementen. De agent kan acties uitvoeren zoals het bijwerken, verwijderen, vervangen of toevoegen van inhoudselementen om ervaringen nauwkeurig en actueel te houden. Invoer kan een natuurlijke taalbeschrijving zijn en bij Jira PDF&#39;s en screenshots kan ook invoer worden geleverd.
+De inhoud werkt bestaande inhoud bij, inclusief inhoudsfragmenten, pagina&#39;s, formulieren en elementen. De agent kan acties uitvoeren zoals het bijwerken, verwijderen, vervangen of toevoegen van inhoudselementen om ervaringen nauwkeurig en actueel te houden. Invoer kan een natuurlijke taalbeschrijving zijn en bij Jira PDF&#39;s en screenshots kan ook invoer worden geleverd.
 
 ## Overzicht {#overview}
 
@@ -35,7 +35,7 @@ Via de AI-assistent hebt u toegang tot de agents in AEM.
 
 Open de AI Assistant vanaf experience.adobe.com en begin met interactie door uw vraag in natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
 
-![&#x200B; de Agent van de Ontdekking van de Toegang &#x200B;](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
+![ de Agent van de Ontdekking van de Toegang ](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
 ### Voorbeeldvragen {#sample-prompts}
 
@@ -51,7 +51,7 @@ Om inhoudsupdates in werking te stellen kunt u een brede waaier van natuurlijke 
 
 >[!NOTE]
 >
->Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund met AI Medewerker.
+>Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [ Jira ](#jira), maar wordt niet gesteund met AI Medewerker.
 
 ## Jira {#jira}
 
@@ -107,7 +107,7 @@ Als de opdracht `process` updates activeert, volgen de reacties mogelijk de volg
 
 * Het volgende beeld toont een voorbeeldJira die het `process` bevel voor de vaardigheid van de inhoudsupdate teweegbrengt:
 
-  ![&#x200B; Jira van het Voorbeeld gebruikend de vaardigheid van de inhoudsupdate van de Agent van de Productie van de Ervaring &#x200B;](assets/content-update-jira-example.png)
+  ![ Jira van het Voorbeeld gebruikend de vaardigheid van de inhoudsupdate van de Agent van de Productie van de Ervaring ](assets/content-update-jira-example.png)
 
 ## Activering {#activation}
 
@@ -145,4 +145,4 @@ Bijvoorbeeld: <https://adminconsole.adobe.com/products/profiles/users>
 
 De beperkingen voor de Content Updater zijn momenteel:
 
-* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [&#x200B; Medewerker AI &#x200B;](#ai-assistant).
+* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [ Jira ](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [ Medewerker AI ](#ai-assistant).
