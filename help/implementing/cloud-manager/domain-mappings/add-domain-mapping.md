@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 4935fbf5f0eb10f2f17280fb32f07d99f69eb875
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -21,43 +21,58 @@ Voor door Adobe beheerde CDN&#39;s zijn bij gebruik van een DV SSL-certificaat a
 
 >[!IMPORTANT]
 >
->Hebt u [&#x200B; een naam van het douanedomein &#x200B;](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toegevoegd en [&#x200B; een SSL certificaat &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toegevoegd, respectievelijk? Als niet, moet u deze twee taken voltooien alvorens u een configuratie kunt toevoegen CDN.
+>Hebt u [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toegevoegd en [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toegevoegd, respectievelijk? Als niet, moet u deze twee taken voltooien alvorens u een configuratie kunt toevoegen CDN.
 
-Zie ook [&#x200B; Adobe Beheerde CDN &#x200B;](https://www.aem.live/docs/byo-cdn-adobe-managed).
+Zie ook [ Adobe Beheerde CDN ](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
 **om een domeinafbeelding toe te voegen:**
 
-1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Voer afhankelijk van uw gebruiksgeval een van de volgende handelingen uit:
 
    | Hoofdletters gebruiken | Stappen |
    | --- | --- |
-   | Ik wil een configuratie CDN aan een *bestaande* plaats van Edge Delivery in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![&#x200B; pictogram Webpagina&#39;s &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.<br> b. In de lijst van Edge Delivery, aan het eind van een rij die geen domein verbonden aan het heeft, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br> c. Klik **vormen CDN**. |
-   | Ik wil een configuratie CDN in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![&#x200B; het pictogram van het Sociale netwerk &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.<br> b. Bij de hoger-juiste hoek van de pagina van Toewijzingen van het Domein, voegt de klik **&#x200B;**&#x200B;toe. |
+   | Ik wil een configuratie CDN aan een *bestaande* plaats van Edge Delivery in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![ pictogram Webpagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.<br> b. In de lijst van Edge Delivery, aan het eind van een rij die geen domein verbonden aan het heeft, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br> c. Klik **vormen CDN**. |
+   | Ik wil een configuratie CDN in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van het Sociale netwerk ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.<br> b. Bij de hoger-juiste hoek van de pagina van Toewijzingen van het Domein, voegt de klik **** toe. |
 
-1. In het **Domein van de Kaart aan CDN** dialoogvakje, selecteer uw type CDN en bijbehorende configuratie door één van het volgende te selecteren:
+1. In het **Domein van de Kaart aan CDN** dialoogvakje, selecteer één van de volgende types CDN:
 
-   | CDN-type | Configuratiedetails |
-   | --- | --- |
-   | Door Adobe beheerde CDN (aanbevolen) | Onder **details van de Configuratie**, doe het volgende:<br> a. In de **drop-down van het Domein** lijst, selecteer de domeinnaam die u wilt gebruiken.<br> Geen geverifieerde domeinen beschikbaar in de drop-down lijst? Zie [&#x200B; een naam van het douanedomein &#x200B;](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen.<br> b.<!-- In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).--> |
-   | Andere CDN-provider | Selecteer deze optie als u uw eigen CDN-provider gebruikt en niet de door Adobe beheerde CDN die voor u beschikbaar is.<br> onder **details van de Configuratie**, in de **drop-down lijst van het Domein**, selecteer de domeinnaam die u wilt gebruiken.<br> Geen geverifieerde domeinen beschikbaar in de drop-down lijst? Zie [&#x200B; een naam van het douanedomein &#x200B;](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. |
+   * **Adobe Beheerde CDN (geadviseerd)** - Adobe beheerde CDN wordt gebruikt voor deze configuratie. Het omvat geautomatiseerde opstelling en beheer, en ingebouwde veiligheidseigenschappen.
+   * **Andere leverancier CDN** - een zelf-beheerd CDN leveranciersnetwerk wordt gebruikt voor deze configuratie.
 
-   ![&#x200B; Domein van de Kaart aan CDN dialoogdoos met Adobe beheerde geselecteerde Keuzerondje CDN &#x200B;](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
+1. Gebaseerd op het geselecteerde type CDN in de vorige stap, doe het volgende:
+
+   * **Adobe beheerde CDN**
+
+     ![ Domein van de Kaart aan CDN dialoogdoos met Adobe beheerde geselecteerde Keuzerondje CDN ](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-adobe-managed.png)
+
+      1. In de **drop-down lijst van de Oorsprong 0}, selecteer één van het volgende:**
+
+         | Vervolgkeuzelijst Oorsprong | Beschrijving |
+         | --- | --- |
+         | Sites | Selecteer een Edge Delivery-site. |
+         | Omgeving | Selecteer een specifieke Cloud Service-omgeving waarop u zich wilt richten in uw AEM-configuratie.<br> in de **Rij** drop-down lijst, selecteer één van het volgende:<br>・ Selecteer **publiceren** om een levende, productiemilieu te richten waar de inhoud aan eind - gebruikers wordt geleverd.<br>・ Selecteer **Voorproef** voor het opvoeren of niet-productie milieu&#39;s waar u veranderingen test alvorens zij levend gaan. |
+
+      1. In de **drop-down lijst van het Domein**, selecteer de domeinnaam die u wilt gebruiken.<br> Geen geverifieerde domeinen beschikbaar in de drop-down lijst? Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen.
+
+      1. In de **SSL certificaat** drop-down lijst, selecteer een certificaat dat u wilt gebruiken.<br> Geen SSL certificaten beschikbaar in de drop-down lijst? Zie [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen.
+
+      1. Klik **sparen**.
+
+   * **Andere leverancier CDN**
+
+     ![ Domein van de Kaart aan CDN dialoogdoos met Adobe beheerde geselecteerde Keuzerondje CDN ](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-other-provider.png)
+
+     Gebruik de vermelde configuratiestappen om de vereiste montages in uw CDN toe te passen en de afbeelding te bevestigen. Zie ook [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen.
+
+      1. Klik **ik heb Mijn CDN** gevormd.
 
    <!-- OLD IMAGE/UI (/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)-->
 
-1. Op het **gebied van het Domein**, ga klant-Onder ogen ziet hostname in u (bijvoorbeeld, `www.example.com`) wilt dienen
-1. in de **drop-down lijst van de Oorsprong 0&rbrace;, selecteer één van het volgende:**
+   <!-- In the **Domain** field, enter the customer-facing hostname you want to serve (for example, `www.example.com`) -->
 
-   | Vervolgkeuzelijst Oorsprong | Beschrijving |
-   | --- | --- |
-   | Sites | Selecteer een Edge Delivery-site. |
-   | Omgeving | Selecteer een specifieke Cloud Service-omgeving waarop u zich wilt richten in uw AEM-configuratie.<br> in de **Rij** drop-down lijst, selecteer één van het volgende:<br>・ Selecteer **publiceren** om een levende, productiemilieu te richten waar de inhoud aan eind - gebruikers wordt geleverd.<br>・ Selecteer **Voorproef** voor het opvoeren of niet-productie milieu&#39;s waar u veranderingen test alvorens zij levend gaan. |
-
-1. Klik **sparen Configuratie**.
-
-   Adobe raadt u aan de domeintoewijzing te testen.
+1. Adobe raadt u aan de domeintoewijzing te testen.
 
 ## De domeintoewijzing testen {#test-domain-mapping}
 
