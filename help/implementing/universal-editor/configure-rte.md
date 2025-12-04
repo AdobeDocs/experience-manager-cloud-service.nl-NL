@@ -19,7 +19,7 @@ Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redacteur kunt vorm
 
 De Universele Redacteur verstrekt een rijke tekstredacteur (RTE) zowel op zijn plaats als in het eigenschappenpaneel om auteurs toe te staan om het formatteren veranderingen toe te passen aangezien zij hun tekst uitgeven.
 
-Dit RTE is configureerbaar gebruikend [ componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
+Dit RTE is configureerbaar gebruikend [&#x200B; componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
 
 ## Configuratiestructuur {#structure}
 
@@ -28,7 +28,7 @@ De configuratie van RTE bestaat uit twee delen:
 * [`toolbar`](#toolbar): In de werkbalkconfiguratie wordt bepaald welke bewerkingsopties beschikbaar zijn in de gebruikersinterface en hoe deze zijn ingedeeld.
 * [`actions`](#actions): Met de configuratie van handelingen kunt u het gedrag en de weergave van afzonderlijke bewerkingsacties aanpassen.
 
-Deze configuraties kunnen als deel van a [ componentenfilter ](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
+Deze configuraties kunnen als deel van a [&#x200B; componentenfilter &#x200B;](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
 
 ```json
 [
