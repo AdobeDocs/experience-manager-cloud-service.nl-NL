@@ -4,9 +4,9 @@ description: Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redact
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0557379b8d70205043ed87e104d9576ed40a13ce
+source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 0%
 
 Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redacteur kunt vormen.
 
->[!NOTE]
->
->Deze documentatie is op nieuwe RTE voor de Universele Redacteur van toepassing, die als vroege adoptereigenschap beschikbaar is. Als u in het testen van deze nieuwe eigenschap geinteresseerd bent, [&#x200B; te zien gelieve de versienota&#39;s voor details.](/help/release-notes/universal-editor/current.md#new-rte)
-
 ## Overzicht {#overview}
 
 De Universele Redacteur verstrekt een rijke tekstredacteur (RTE) zowel op zijn plaats als in het eigenschappenpaneel om auteurs toe te staan om het formatteren veranderingen toe te passen aangezien zij hun tekst uitgeven.
 
-Dit RTE is configureerbaar gebruikend [&#x200B; componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
+Dit RTE is configureerbaar gebruikend [ componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
 
 ## Configuratiestructuur {#structure}
 
@@ -32,7 +28,7 @@ De configuratie van RTE bestaat uit twee delen:
 * [`toolbar`](#toolbar): In de werkbalkconfiguratie wordt bepaald welke bewerkingsopties beschikbaar zijn in de gebruikersinterface en hoe deze zijn ingedeeld.
 * [`actions`](#actions): Met de configuratie van handelingen kunt u het gedrag en de weergave van afzonderlijke bewerkingsacties aanpassen.
 
-Deze configuraties kunnen als deel van a [&#x200B; componentenfilter &#x200B;](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
+Deze configuraties kunnen als deel van a [ componentenfilter ](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
 
 ```json
 [
