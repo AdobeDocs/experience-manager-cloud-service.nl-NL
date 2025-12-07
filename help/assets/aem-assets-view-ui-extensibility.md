@@ -19,7 +19,7 @@ U kunt uw uitbreidingen aan **Activa** toevoegen, **Omslag** en **het niveau van
 >[!IMPORTANT]
 >
 > * [!DNL AEM Assets View] De uitbreidbaarheid van de gebruikersinterface is beschikbaar in [[!DNL Assets Ultimate]](/help/assets/assets-ultimate-overview.md) .
-> * Om toegang tot [!DNL Assets view] uitbreidbaarheid UI te krijgen, [&#x200B; creeer en voorleg het geval van de Steun van de a [!DNL Adobe]  Klant &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> * Om toegang tot [!DNL Assets view] uitbreidbaarheid UI te krijgen, [&#x200B; creeer en voorleg het geval van de Steun van de a [!DNL Adobe]  Klant &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 > * U kunt documentfeedback opgeven door **[!UICONTROL Detailed Feedback options]** uit te vouwen en op **[!UICONTROL Report an issue]** te klikken.
 
 ## <a id="1"></a> Toegang tot de weergave Assets {#add-UI-Extensibility-in-AEM-Assets-View}
