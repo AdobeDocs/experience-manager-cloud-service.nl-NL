@@ -63,7 +63,7 @@ Wanneer toegepast, kunnen auteurs niet:
 Voer de volgende stappen uit om inhoud- of lay-outsluizen toe te passen in de sjabloon Interactieve communicatie (IC):
 
 1. Uw sjabloon openen
-Open of creeer een Malplaatje, volg de gids [&#x200B; creeer een Interactief Communicatie Malplaatje &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Open of creeer een Malplaatje, volg de gids [&#x200B; creeer een Interactief Communicatie Malplaatje &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. De component selecteren
 Klik op de component (tekstvak, afbeelding of subformulier) die u wilt beperken.

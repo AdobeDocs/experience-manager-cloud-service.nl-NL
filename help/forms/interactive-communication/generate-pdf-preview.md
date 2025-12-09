@@ -50,7 +50,7 @@ Voorproef Interactieve Mededelingen die geen gegevens, lokale gegevens, of steek
 
 +++&#x200B;2. Voorvertoning met lokale JSON-gegevens
 
-2.1. Een gestructureerd JSON-bestand voorbereiden. Ter verwijzing, kunt u de steekproefgegevens kopiëren van het schema JSON [&#x200B; (FDM) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) dat voor de mededeling wordt gebruikt.
+2.1. Een gestructureerd JSON-bestand voorbereiden. Ter verwijzing, kunt u de steekproefgegevens kopiëren van het schema JSON [&#x200B; (FDM) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) dat voor de mededeling wordt gebruikt.
 
 2.2. In de Redacteur van IC, ga **Voorproef van PDF** > Gebruikend Lokale Gegevens.
 

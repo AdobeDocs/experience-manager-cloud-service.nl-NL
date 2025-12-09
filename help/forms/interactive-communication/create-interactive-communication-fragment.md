@@ -41,7 +41,7 @@ Voer de volgende stappen uit om een interactief communicatiefragment te maken:
 
 1. Als u Interactief communicatiefragment selecteert, verschijnt er een scherm waarin u de belangrijkste fragmentdetails definieert, zoals titel, naam, beschrijving, gegevensmodel (een gestructureerde weergave van de gegevens op de achtergrond) en tags.
 
-   Meer leren, verwijs naar de [&#x200B; Gids van de Configuratie van het Model van Gegevens &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Meer leren, verwijs naar de [&#x200B; Gids van de Configuratie van het Model van Gegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
