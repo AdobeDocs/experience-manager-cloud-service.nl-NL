@@ -16,9 +16,9 @@ ht-degree: 0%
 
 # Navigeren door de Universal Editor-interface voor AEM Forms
 
-De [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) verstrekt een visuele interface voor het creëren van AEM Forms met Edge Delivery Services. Het biedt a **What You See Is What You Get (WYSIWYG)** ervaring aan die precies toont hoe uw vormen aan gebruikers zullen verschijnen.
+De [&#x200B; Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) verstrekt een visuele interface voor het creëren van AEM Forms met Edge Delivery Services. Het biedt a **What You See Is What You Get (WYSIWYG)** ervaring aan die precies toont hoe uw vormen aan gebruikers zullen verschijnen.
 
-![ Universeel Overzicht van de Interface van de Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
+![&#x200B; Universeel Overzicht van de Interface van de Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
 Deze handleiding helpt u de interface te begrijpen voor het efficiënt samenstellen van formulieren. Of u nu nieuw bent in het formuliergebouw of een ervaren ontwikkelaar, deze handleiding helpt u:
 
@@ -40,21 +40,21 @@ Deze handleiding helpt u de interface te begrijpen voor het efficiënt samenstel
 
 ## Snel aan de slag
 
-**Begin met** Essentiële Hulpmiddelen [ om de kerneigenschappen te leren u het vaakst zult gebruiken.](#essential-tools-for-form-building)
+**Begin met** Essentiële Hulpmiddelen [&#x200B; om de kerneigenschappen te leren u het vaakst zult gebruiken.](#essential-tools-for-form-building)
 
-**ervaren gebruikers:** sprong aan [ Geavanceerde Eigenschappen ](#advanced-features-and-integrations) voor gespecialiseerde hulpmiddelen en integratie.
+**ervaren gebruikers:** sprong aan [&#x200B; Geavanceerde Eigenschappen &#x200B;](#advanced-features-and-integrations) voor gespecialiseerde hulpmiddelen en integratie.
 
-**Snelle verwijzing:** gebruik het [ Overzicht van de Interface ](#interface-overview) en [ Sneltoetsen ](#keyboard-shortcuts) secties van Sneltoetsen voor snelle raadplegingen.
+**Snelle verwijzing:** gebruik het [&#x200B; Overzicht van de Interface &#x200B;](#interface-overview) en [&#x200B; Sneltoetsen &#x200B;](#keyboard-shortcuts) secties van Sneltoetsen voor snelle raadplegingen.
 
 >[!NOTE]
 >
-> Nieuw bij het ontwerpen van formulieren? Zie [ Begonnen Worden met Edge Delivery Services voor AEM Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) voor de geleidelijke begeleiding van de vormverwezenlijking.
+> Nieuw bij het ontwerpen van formulieren? Zie [&#x200B; Begonnen Worden met Edge Delivery Services voor AEM Forms &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) voor de geleidelijke begeleiding van de vormverwezenlijking.
 
 ## Overzicht van interface
 
 De interface van de Universele Redacteur wordt georganiseerd in vier hoofdgebieden, elk die voor specifieke taken worden ontworpen:
 
-![ Universele Lay-out van de Interface van de Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
+![&#x200B; Universele Lay-out van de Interface van de Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
 
 | **Gebied** | **Doel** | **Primair Gebruik** |
 |----------|-------------|----------------|
@@ -73,7 +73,7 @@ Begin hier als u nog geen ervaring hebt met de Universal Editor. Dit zijn de bel
 
 Het **Canvas van de Redacteur** is waar u uw vormen visueel bouwt. Het toont precies hoe uw formulier er voor gebruikers uitziet.
 
-![ het Canvas van de Redacteur ](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+![&#x200B; het Canvas van de Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
 **Zeer belangrijke Acties:**
 
@@ -86,7 +86,7 @@ Het **Canvas van de Redacteur** is waar u uw vormen visueel bouwt. Het toont pre
 
 Het **Comité van Eigenschappen** (juiste kant) is waar u geselecteerde componenten aanpast en uw vormstructuur beheert.
 
-![ het Comité van Eigenschappen ](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![&#x200B; het Comité van Eigenschappen &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
 
 **Essentiële Eigenschappen:**
 
@@ -99,11 +99,11 @@ Het **Comité van Eigenschappen** (juiste kant) is waar u geselecteerde componen
 
 De **Universele Toolbar van de Redacteur** verstrekt zeer belangrijke acties voor het testen en het publiceren van uw vormen.
 
-![ Universele Toolbar van de Redacteur ](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
+![&#x200B; Universele Toolbar van de Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
 **moet-kent Hulpmiddelen:**
 
-- **de Wijze van de Voorproef van 0} (** kortere weg) - test uw vorm aangezien de gebruikers het zullen zien`p`
+- **de Wijze van de Voorproef van 0&rbrace; (** kortere weg) - test uw vorm aangezien de gebruikers het zullen zien`p`
 - **Responsieve Wijze** - controleer hoe uw vorm op mobiele apparaten kijkt
 - **Open Pagina** (`o` kortere weg) - de vorm van de mening in een nieuw lusje
 - **publiceer** - maak uw vorm voor gebruikers levend
@@ -113,7 +113,7 @@ De **Universele Toolbar van de Redacteur** verstrekt zeer belangrijke acties voo
 **voor uw eerste vorm:**
 
 1. **voeg een Aangepaste component van de Vorm** toe - neem de `Adaptive Form` component in een sectie op.
-2. **Begin bouwend** - voeg componenten toe gebruikend **** knoop (`a`) toevoegt
+2. **Begin bouwend** - voeg componenten toe gebruikend **&#x200B;**&#x200B;knoop (`a`) toevoegt
 3. **vorm gebieden** - selecteer componenten en gebruik **Wijze van Eigenschappen** (`d`)
 4. **Test uw vorm** - Gebruik **Wijze van de Voorproef** (`p`) om met uw vorm in wisselwerking te staan
 5. **de mobiele mening van de Controle** - Schakelaar aan **Responsieve Wijze** voor mobiele het testen
@@ -121,7 +121,7 @@ De **Universele Toolbar van de Redacteur** verstrekt zeer belangrijke acties voo
 
 >[!NOTE]
 >
-> Om de gedetailleerde stappen voor het creëren van vormen in Universele Redacteur te leren, zie [ Aangepaste Forms met Edge Delivery Services creëren en publiceren ](/help/edge/docs/forms/universal-editor/create-forms.md).
+> Om de gedetailleerde stappen voor het creëren van vormen in Universele Redacteur te leren, zie [&#x200B; Aangepaste Forms met Edge Delivery Services creëren en publiceren &#x200B;](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Controlepunten van de Bevestiging:**
 
@@ -134,7 +134,7 @@ De **Universele Toolbar van de Redacteur** verstrekt zeer belangrijke acties voo
 
 De **Kopbal van Experience Cloud** verstrekt navigatie en rekeningsbeheerhulpmiddelen. De meeste formulierbuilders gebruiken dit soms voor het schakelen tussen Adobe-gereedschappen of het openen van Help.
 
-![ Kopbal van Experience Cloud ](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
+![&#x200B; Kopbal van Experience Cloud &#x200B;](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
 **Zeer belangrijke Elementen:**
 
@@ -156,18 +156,18 @@ De **Kopbal van Experience Cloud** verstrekt navigatie en rekeningsbeheerhulpmid
 
 De **Universele Toolbar van de Redacteur** bevat uw primaire vorm het uitgeven en het publiceren hulpmiddelen. Deze worden georganiseerd door frequentie van gebruik en typisch werkschema.
 
-![ Universele Toolbar van de Redacteur ](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
+![&#x200B; Universele Toolbar van de Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
 ### **Dagelijkse Hulpmiddelen van het Werkschema**
 
 **Deze hulpmiddelen worden gebruikt in meeste vorm-bouwende zittingen:**
 
-#### **de Wijze van de Voorproef van 0} (** kortere weg)`p`
+#### **de Wijze van de Voorproef van 0&rbrace; (** kortere weg)`p`
 
 **Doel:** test uw vorm precies aangezien de gebruikers het zullen ervaren\
 **wanneer te gebruiken:** alvorens te publiceren, na het aanbrengen van veranderingen, om vormfunctionaliteit te testen
 
-![ Modus van de Voorproef 0}](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
+![&#x200B; Modus van de Voorproef 0&rbrace;](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
 **Beste praktijken:** Voorproef na elke belangrijke verandering om kwesties vroeg te vangen.
 
@@ -176,7 +176,7 @@ De **Universele Toolbar van de Redacteur** bevat uw primaire vorm het uitgeven e
 **Doel:** controleer hoe uw vorm op mobiele apparaten toont\
 **wanneer te gebruiken:** na het bouwen van uw vorm, alvorens te publiceren
 
-![ Responsieve Wijze ](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
+![&#x200B; Responsieve Wijze &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
 
 **Beste praktijken:** test altijd mobiele mening - vele gebruikers zullen tot vormen op telefoons toegang hebben.
 
@@ -185,14 +185,14 @@ De **Universele Toolbar van de Redacteur** bevat uw primaire vorm het uitgeven e
 **Doel:** bekijk uw vorm in een nieuw lusje zonder de redacteursinterface\
 **wanneer te gebruiken:** voor het volledige scherm testen, die met belanghebbenden voor overzicht delen
 
-![ Open Pagina ](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![&#x200B; Open Pagina &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **publiceer**
 
 **Doel:** maak uw vorm levend en toegankelijk voor gebruikers\
 **wanneer te gebruiken:** Na grondig het testen in Voorproef en Responsieve wijzen
 
-![ publiceer ](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![&#x200B; publiceer &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 **Controlelijst van de Bevestiging alvorens te publiceren:**
 
@@ -208,14 +208,14 @@ De **Universele Toolbar van de Redacteur** bevat uw primaire vorm het uitgeven e
 **Doel:** terugkeer aan Universele het begin pagina van de Redacteur\
 **wanneer te gebruiken:** het Beginnen werk op een verschillende vorm
 
-![ Knop van het Huis ](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
+![&#x200B; Knop van het Huis &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
 
 #### **de Bar van de Plaats** (`l` kortere weg)
 
 **Doel:** navigeer direct aan om het even welke vorm door URL\
 **wanneer te gebruiken:** omschakeling tussen specifieke vormen snel
 
-![ de Bar van de Plaats ](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
+![&#x200B; de Bar van de Plaats &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
 
 ### **Geavanceerde Hulpmiddelen van de Configuratie**
 
@@ -226,48 +226,48 @@ De **Universele Toolbar van de Redacteur** bevat uw primaire vorm het uitgeven e
 **Doel:** vorm-vlakke montages zoals het Model van de Gegevens van de Vorm (FDM), vormend voorlegt acties en publicatiedata\
 **wanneer te gebruiken:** De integratie van opstellings gegevens, die publicatie plannen
 
-![ Eigenschappen van de Vorm ](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+![&#x200B; Eigenschappen van de Vorm &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
 
-![ tovenaar van de Eigenschappen van 0} Vorm](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+![&#x200B; tovenaar van de Eigenschappen van 0&rbrace; Vorm](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
 Het deelvenster Formuliereigenschappen bevat de volgende secties:
 
-- **Verzending**: Bepaal wat gebeurt nadat een gebruiker de vorm voorlegt. U kunt kiezen uit meerdere verzendacties, zoals het verzenden van gegevens via e-mail, het verzenden naar SharePoint, het gebruik van een formuliergegevensmodel of integratie met services zoals Adobe Experience Platform of Microsoft Power Automate. Voor een volledige lijst van gesteunde voorlegt acties, verwijs naar [ voorlegt het artikel van de Actie ](/help/edge/docs/forms/universal-editor/submit-action.md).
+- **Verzending**: Bepaal wat gebeurt nadat een gebruiker de vorm voorlegt. U kunt kiezen uit meerdere verzendacties, zoals het verzenden van gegevens via e-mail, het verzenden naar SharePoint, het gebruik van een formuliergegevensmodel of integratie met services zoals Adobe Experience Platform of Microsoft Power Automate. Voor een volledige lijst van gesteunde voorlegt acties, verwijs naar [&#x200B; voorlegt het artikel van de Actie &#x200B;](/help/edge/docs/forms/universal-editor/submit-action.md).
 
-- **vooraf invullen**: Vorm hoe de vormgebieden automatisch bevolkt zijn alvorens de gebruiker met de vorm in wisselwerking staat. U kunt verbinding maken met gegevensbronnen zoals een FDM (Form Data Model) of URL-parameters gebruiken om velden vooraf in te vullen, waardoor de gebruikerservaring wordt verbeterd en handmatige invoer wordt verminderd. Om meer te leren, zie [ artikel van de Dienst van 0} Vooraf ingevulde.](/help/edge/docs/forms/universal-editor/prefill-form.md)
+- **vooraf invullen**: Vorm hoe de vormgebieden automatisch bevolkt zijn alvorens de gebruiker met de vorm in wisselwerking staat. U kunt verbinding maken met gegevensbronnen zoals een FDM (Form Data Model) of URL-parameters gebruiken om velden vooraf in te vullen, waardoor de gebruikerservaring wordt verbeterd en handmatige invoer wordt verminderd. Om meer te leren, zie [&#x200B; artikel van de Dienst van 0&rbrace; Vooraf ingevulde.](/help/edge/docs/forms/universal-editor/prefill-form.md)
 
-- **Dank u**: Pas aan wat de gebruikers na het voorleggen van de vorm zien. U kunt een bevestigingsbericht weergeven of deze omleiden naar een andere webpagina voor een vloeiende en professionele voltooiing. Leren hoe te om een dank-u bericht voor vormen te vormen, zie [ vormen Dank u het artikel van het Bericht ](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
+- **Dank u**: Pas aan wat de gebruikers na het voorleggen van de vorm zien. U kunt een bevestigingsbericht weergeven of deze omleiden naar een andere webpagina voor een vloeiende en professionele voltooiing. Leren hoe te om een dank-u bericht voor vormen te vormen, zie [&#x200B; vormen Dank u het artikel van het Bericht &#x200B;](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
 
 #### **Redacteur van de Regel** (Vroege Toegang)
 
 **Doel:** voeg dynamisch gedrag, bevestigingen, en voorwaardelijke logica toe\
 **wanneer te gebruiken:** Creërend interactieve vormen met complexe bedrijfslogica
 
-![ Redacteur van de Regel ](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
+![&#x200B; Redacteur van de Regel &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
 
 >[!IMPORTANT]
 >
-> **leer Meer:** zie [ Gids van de Redacteur van de Regel ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) voor gedetailleerde instructies.
+> **leer Meer:** zie [&#x200B; Gids van de Redacteur van de Regel &#x200B;](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) voor gedetailleerde instructies.
 
 #### **Montages van de Kopbal van de Authentificatie**
 
 **Doel:** plaats de kopballen van de douaneauthentificatie voor het ontwikkelen testen\
 **wanneer te gebruiken:** Lokale ontwikkeling met authentificatie-vereiste vormen
 
-![ Kopballen van de Authentificatie ](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
+![&#x200B; Kopballen van de Authentificatie &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
 
 #### **Extra Opties** (het Menu van de Ellipse)
 
 **Doel:** toegang minder gemeenschappelijke acties zoals unpublishing\
 **Wanneer te gebruiken:** Gebruikend vormen offline, die tot geavanceerde opties toegang hebben
 
-![ Extra Opties ](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
+![&#x200B; Extra Opties &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
 
 ## Deelvenster Eigenschappen
 
 Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bouw van en het vormen van vormen. Het verandert op basis van wat u selecteert en verstrekt verschillende hulpmiddelen voor verschillende taken.
 
-![ het Comité van Eigenschappen ](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
+![&#x200B; het Comité van Eigenschappen &#x200B;](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **de Hulpmiddelen van de Bouw van de Vorm van de Kern**
 
@@ -278,7 +278,7 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 **Doel:** neem nieuwe vormgebieden en elementen op\
 **hoe het werkt:** toont beschikbare componenten voor de geselecteerde container
 
-![ voegt Componenten ](/help/edge/docs/forms/universal-editor/assets/ue-add.png) toe
+![&#x200B; voegt Componenten &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-add.png) toe
 
 **Gemeenschappelijke Componenten:**
 
@@ -292,7 +292,7 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 **Doel:** vorm montages voor geselecteerde componenten\
 **Wanneer te gebruiken:** na het toevoegen van om het even welke component om zijn gedrag aan te passen
 
-![ de Wijze van Eigenschappen ](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
+![&#x200B; de Wijze van Eigenschappen &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
 
 **Zeer belangrijke Montages:**
 
@@ -306,7 +306,7 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 **Doel:** Navigeer en organiseer uw vormstructuur\
 **wanneer te gebruiken:** Complexe vormen met veelvoudige secties, die specifieke componenten vinden
 
-![ de Boom van de Inhoud ](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
+![&#x200B; de Boom van de Inhoud &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
 
 **Voordelen:**
 
@@ -319,8 +319,8 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 **Doel:** beheer bestaande componenten\
 **Beschikbare acties:**
 
-- **Dupliceer** - snel de componenten van het Exemplaar ![ ](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
-- **Schrapping** - verwijder componenten (geen bevestigingsherinnering) ![ Schrapping ](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
+- **Dupliceer** - snel de componenten van het Exemplaar ![&#x200B; &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+- **Schrapping** - verwijder componenten (geen bevestigingsherinnering) ![&#x200B; Schrapping &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
 
 ### **Geavanceerde Eigenschappen en Integraties**
 
@@ -333,7 +333,7 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 **Doel:** verbind vormen met achterste gegevenssystemen\
 **wanneer te gebruiken:** Forms die aan gegevensbestanden of externe diensten moet lezen/schrijven
 
-![ Gegevens Source ](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
+![&#x200B; Gegevens Source &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
 
 **Mogelijkheden:**
 
@@ -352,14 +352,14 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 
     ![Variaties genereren](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**Leer meer:** [ produceer de Gids van Variaties ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**Leer meer:** [&#x200B; produceer de Gids van Variaties &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **Inhoudsconcepten**
 
 **Doel:** creeer en bewaar voorlopige tekstversies\
 **wanneer te gebruiken:** herhalend op vormexemplaar, sparen alternatieve tekstopties
 
-![ Inhoudsconcepten ](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
+![&#x200B; Inhoudsconcepten &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
 
 +++
 
@@ -370,7 +370,7 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 **Doel:** vergelijk vormvariaties om prestaties te optimaliseren\
 **wanneer te gebruiken:** Optimaliseert omzettingspercentages, testend verschillende ontwerpen
 
-![ het Testen A/B ](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
+![&#x200B; het Testen A/B &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
 
 #### **Experimentatie**
 
@@ -388,7 +388,7 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 **Doel:** organiseer teamwerkschema voor vormprojecten\
 **wanneer te gebruiken:** multi-persoonvormontwikkeling, project het volgen
 
-![ Het Beheer van de Taak ](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
+![&#x200B; Het Beheer van de Taak &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
 
 #### **Personalization**
 
@@ -403,7 +403,7 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 
 Het **Canvas van de Redacteur** is uw belangrijkste werkruimte waar u visueel vormen bouwt. Het toont precies hoe uw formulier er voor gebruikers uitziet en geeft real-time feedback wanneer u wijzigingen aanbrengt.
 
-![ het Canvas van de Redacteur ](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+![&#x200B; het Canvas van de Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
 **Zeer belangrijke Eigenschappen:**
 
@@ -510,7 +510,7 @@ Stel deze sneltoetsen in om formulieren sneller en efficiënter te maken:
 - **Plan alvorens** te bouwen - schets uw vormstructuur alvorens te beginnen
 - **houd het eenvoudig** - vermijd overweldigende gebruikers met teveel gebieden
 
-### **Ervaring van 0} Gebruiker**
+### **Ervaring van 0&rbrace; Gebruiker**
 
 - **Test vaak** - de Wijze van de Voorproef van het gebruik na elke belangrijke verandering
 - **denk als gebruikers** - overweeg de volledige vorm-vullende ervaring
@@ -530,7 +530,7 @@ Nu u de interface van de Universele Redacteur begrijpt:
 
 1. **Praktijk met een eenvoudige vorm** - Begin met basisgebieden om comfortabel te worden
 2. **verken geavanceerde eigenschappen** - probeer AI-Gerichte hulpmiddelen en integratie wanneer klaar
-3. **leer vorm creatie** - zie [ Begonnen Gids ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-4. **Hoofdregelredacteur** - voeg dynamisch gedrag met de [ Gids van de Redacteur van de Regel ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) toe
+3. **leer vorm creatie** - zie [&#x200B; Begonnen Gids &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+4. **Hoofdregelredacteur** - voeg dynamisch gedrag met de [&#x200B; Gids van de Redacteur van de Regel &#x200B;](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) toe
 
 **Herinner me:** De Universele Redacteur wordt ontworpen om vorm te maken die intuïtief bouwt. Begin met de essentiële onderdelen en verken geleidelijk de geavanceerde functies naarmate uw behoeften toenemen.
