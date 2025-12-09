@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Met de functie voor de afhandeling van overloop bij inhoud in de Interactieve communicatie-editor kunt u beter bepalen hoe tekst zich gedraagt binnen de indelingen Overlopen en Geplaatst. Het zorgt voor vloeiende inhoudscontinuïteit voor stroombare lay-outs en biedt visuele waarschuwingen voor gepositioneerde lay-outs, waardoor auteurs beter controle en flexibiliteit hebben bij het ontwerpen van communicatie.
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/content-overflow.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/content-overflow.png)
 
 ## Hoe te om de Behandeling van de Overloop van de Inhoud in Interactieve Communicatie Redacteur te gebruiken
 

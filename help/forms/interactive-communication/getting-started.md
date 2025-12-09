@@ -33,7 +33,7 @@ Om Interactieve Communicatie te gebruiken, verzeker uw milieu van AEM Forms as a
 
 ### Browser verifiëren
 
-Om gesteunde browsers en cliëntplatforms te kennen, volg het verbonden artikel, [ Gesteunde Platforms van de Cliënt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+Om gesteunde browsers en cliëntplatforms te kennen, volg het verbonden artikel, [&#x200B; Gesteunde Platforms van de Cliënt &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
@@ -42,14 +42,14 @@ Om gesteunde browsers en cliëntplatforms te kennen, volg het verbonden artikel,
 
 ### Gebruikersrollen en -machtigingen configureren
 
-De toegang tot eigenschappen van de Redacteur van IC wordt geregeerd door [ gebruikersrollen binnen AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions). Hieronder worden de sleutelfuncties beschreven die bij het maken en beheren van interactieve communicatie betrokken zijn:
+De toegang tot eigenschappen van de Redacteur van IC wordt geregeerd door [&#x200B; gebruikersrollen binnen AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions). Hieronder worden de sleutelfuncties beschreven die bij het maken en beheren van interactieve communicatie betrokken zijn:
 
 | **Rol** | **Beschrijving** | **Zeer belangrijke Toestemmingen** |
 | --------------------- | ---------------------------------------------------------- | -------------------------------------------- |
 | **Auteur van de Vorm** | Creeert en geeft Interactieve Mededelingen uit. | IC&#39;s maken, bewerken, voorvertonen en publiceren. |
 | **Auteur van het Malplaatje** | Ontwerpen herbruikbare malplaatjes voor Interactieve Mededelingen. | Sjablonen maken en vergrendelen, lay-outs definiëren. |
 | **Beheerder** | Beheert gebruikerstoegang, machtigingen en configuraties. | Rollen toewijzen, sjablonen beheren, IC&#39;s publiceren. |
-| **FDM Auteur** | [ creeert en beheert de Modellen van de Gegevens van de Vorm (FDM) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) voor gegevensintegratie. | Creeer, geef, en vorm gegevensbronnen en modellen uit. |
+| **FDM Auteur** | [&#x200B; creeert en beheert de Modellen van de Gegevens van de Vorm (FDM) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) voor gegevensintegratie. | Creeer, geef, en vorm gegevensbronnen en modellen uit. |
 
 >[!NOTE]
 >
@@ -68,11 +68,11 @@ De redacteur verstrekt een verenigde milieu aan ontwerp, voorproef, en beheer zo
 
 De **Interactieve Communicatie interface van de Redacteur** wordt ontworpen om auteurs intuïtieve toegang tot alle ontwerphulpmiddelen en configuratieopties te verlenen.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/navigate-the-interface.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/navigate-the-interface.png)
 
 ### &#x200B;1. Werkbalk boven
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/tool-bar.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/tool-bar.png)
 
 **Plaats:** Bovenste sectie
 
@@ -84,7 +84,7 @@ Toont het **milieu van Adobe Experience Cloud** (b.v., het Opvoeren), samen met 
 
 ### &#x200B;2. Tabbalk (tabbladen ontwerp/stramien en Besturingselementen voor bestanden)
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/tab-bar.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/tab-bar.png)
 
 **Plaats:** onder de hoogste kopbal
 
@@ -100,7 +100,7 @@ Toont het **milieu van Adobe Experience Cloud** (b.v., het Opvoeren), samen met 
 
 ### &#x200B;3. Linkerpaneel (navigatie- en componentgereedschappen)
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/left-panel.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/left-panel.png)
 
 **Plaats:** linkerkant van de interface
 
@@ -122,7 +122,7 @@ Toont het **milieu van Adobe Experience Cloud** (b.v., het Opvoeren), samen met 
 
 ### &#x200B;4. Midden-Workspace (ontwerpcanvas)
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/canvas.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/canvas.png)
 
 **Plaats:** Centrum van de interface
 
@@ -142,7 +142,7 @@ Toont het **milieu van Adobe Experience Cloud** (b.v., het Opvoeren), samen met 
 
 ### &#x200B;5. Rechterdeelvenster (deelvenster Eigenschappen)
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/right-panel.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/right-panel.png)
 
 **Plaats:** Juiste kant van het scherm
 

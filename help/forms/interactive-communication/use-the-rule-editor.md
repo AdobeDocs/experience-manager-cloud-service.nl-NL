@@ -34,7 +34,7 @@ De Redacteur van de regel in de Interactieve Communicatie Redacteur staat auteur
 Van eenvoudige zichtbaarheidsinstellingen tot complexe voorwaardelijke logica, regels stellen auteurs in staat om ervaringen te leveren die in real time worden aangepast, waardoor bruikbaarheid, nauwkeurigheid en betrokkenheid worden verbeterd.
 
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/rule-creation.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/rule-creation.png)
 
 
 ## &#x200B;2. Eigenschappen
@@ -64,7 +64,7 @@ Van eenvoudige zichtbaarheidsinstellingen tot complexe voorwaardelijke logica, r
 - **Voorwaardelijke Acties:** bepaal trekkers die aan gebruikersinput of gegevenswaarden, zoals het toelaten/onbruikbaar maken van gebieden, het tonen van berichten, of het vertakken aan verschillende secties antwoorden.
 
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/rule-creation1.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/rule-creation1.png)
 
 
 ## &#x200B;3. Gebruik

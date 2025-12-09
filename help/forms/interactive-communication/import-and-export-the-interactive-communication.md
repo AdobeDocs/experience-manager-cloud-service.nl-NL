@@ -36,11 +36,11 @@ Creeer een Interactieve Communicatie (IC) in één milieu en gebruik het in een 
 
 +++&#x200B;1. Interactieve communicatie exporteren
 
-1.1. Selecteer a [ gecreeerd Interactieve Communicatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
+1.1. Selecteer a [&#x200B; gecreeerd Interactieve Communicatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
 1.2. Klik de **optie van de Download** om het als dossier van het PIT uit te voeren.
 1.3. Het gedownloade dossier van het PIT omvat IC samen met zijn geselecteerde **malplaatje**, **fragmenten**, en **gegevensmodel**.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/downloadic.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/downloadic.png)
 +++
 
 +++&#x200B;2. Interactieve communicatie importeren
@@ -49,11 +49,11 @@ Creeer een Interactieve Communicatie (IC) in één milieu en gebruik het in een 
 2.2. Navigeer aan **Forms > Forms en de Documenten > creëren > Dossier uploadt**.
 2.3. Upload het dossier van het PIT aan **invoer** IC.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/uploadfile.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/uploadfile.png)
 
 2.4. Na het uploaden wordt het IC weergegeven samen met de bijbehorende fragmenten en gegevensmodel.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/importfragment.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/importfragment.png)
 +++
 
 +++&#x200B;3. Fragment importeren en exporteren

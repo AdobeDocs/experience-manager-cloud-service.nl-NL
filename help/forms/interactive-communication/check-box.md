@@ -28,7 +28,7 @@ Met de component Check Box in de Editor Interactive Communication (IC) kunnen ge
 
 Het selectievakje ondersteunt flexibele stijlen, opties voor gegevensbinding en zichtbaarheidsregels, waardoor het een licht maar krachtig hulpmiddel wordt voor het ontwerpen van interactieve, gebruikersvriendelijke formulieren.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/checkbox.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/checkbox.png)
 
 ## &#x200B;2. Eigenschappen
 
