@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
@@ -27,7 +27,7 @@ De interactieve mededeling laat u toe om, gepersonaliseerde en interactieve mede
 
 Stel dat u een bankafschrift, een verzekeringspolis of een nutsrekening naar duizenden klanten moet sturen. Elk bestand heeft dezelfde indeling, maar is gepersonaliseerd. Interactieve communicatie (IC) maakt dat mogelijk efficiënt.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/introimg.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/introduction.png)
 
 Het handmatig maken van deze documenten kan tijdrovend zijn en leidt vaak tot inconsistenties, vooral wanneer personalisatie en gegevensintegratie vereist zijn. Met de Interactieve Communicatie Redacteur, kunnen de gebruikers het proces stroomlijnen om Interactieve mededeling tot stand te brengen.
 
@@ -48,11 +48,11 @@ Te volgen stappen:
 1. Navigeer aan **Forms > Forms &amp; Documenten**.
 1. Klik **creëren > Interactieve Communicatie**.
 
-   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/comm.png)
+   ![ vind IC Docu ](/help/forms/interactive-communication/assets/comm.png)
 
 1. In het verwezenlijking scherm, verlaat het **Malplaatje** gebiedsspatie.
 
-   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/create-ic-document.png)
+   ![ vind IC Docu ](/help/forms/interactive-communication/assets/create-ic-document.png)
 
 1. Vul andere gegevens in, zoals Titel, Naam, Auteur, enz.
 1. Klik **creeer** om Interactieve Communicatie Redacteur UI in te gaan en begin het ontwerpen.
@@ -86,12 +86,12 @@ Ideaal voor instructies, facturen of berichten waarbij de structuur constant bli
 1. De voorproef die **Voorproef van PDF** gebruikt en voltooit de mededeling voor levering.
 1. Het opent de Redacteur van IC, waar u kunt beginnen ontwerpend uw mededeling.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/ic-ui.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/ic-ui.png)
 +++
 
 Begin de bouw van Interactieve Mededelingen om uw werkschema&#39;s te stroomlijnen en impacttieve, gebruiker-specifieke ervaringen te leveren.
 
 ## Volgende stappen
 
-[&#x200B; creeer een interactief communicatieMalplaatje &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md)
-[&#x200B; creeer een interactief communicatieFragment &#x200B;](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[ creeer een interactief communicatieMalplaatje ](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[ creeer een interactief communicatieFragment ](/help/forms/interactive-communication/create-interactive-communication-fragment.md)

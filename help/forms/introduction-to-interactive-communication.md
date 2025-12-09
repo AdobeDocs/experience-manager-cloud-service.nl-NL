@@ -7,12 +7,13 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
-source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
+source-git-commit: 3a4119cfddda5d2d55f9a74848afe59eb0c1b709
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
+
 
 # Interactieve communicatie
 
@@ -22,10 +23,9 @@ U kunt met ons intuïtieve gereedschap voor point-and-click grafische ontwerpen 
 
 In tegenstelling tot de Desktop Designer van AEM Forms die slechts op de machines van Vensters kan worden geïnstalleerd, loopt de **Interactieve Communicatie redacteur in om het even welke moderne browser zonder vereiste installatie**. Met deze cloudgebaseerde aanpak worden installatieproblemen voorkomen, wordt toegankelijkheid tussen verschillende platforms mogelijk gemaakt en kan vanaf elke locatie worden samengewerkt met internettoegang.
 
-![&#x200B; Interactieve Communicatie Redacteur &#x200B;](/help/forms/assets/ic-editor.png)
+![ Interactieve Communicatie Redacteur ](/help/forms/assets/ic-editor.png)
 
 Van financiële instellingen die rekeningoverzichten aan overheidsagentschappen produceren die voordeelberichten stroomlijnen, is de Interactieve Mededelingen het goto hulpmiddel om kwalitatief hoogstaande, veilige, en wettelijk conforme correspondentie met gemak en efficiency tot stand te brengen.
-
 
 ## Kernmogelijkheden
 
@@ -49,9 +49,9 @@ De kernmogelijkheden van de Interactieve Communicatie redacteur zijn:
 
 ## Onboarding
 
-De Interactive Communications-editor is beschikbaar in het kader van het programma Vroege toegang voor Forms as a Cloud Service-implementaties. Om toegang te verzoeken e-mail uw organisatie identiteitskaart, en programmatiedetails voor uw plaatsingen van Forms as a Cloud Service aan [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) van uw officieel adres.
+De Interactive Communications-editor is beschikbaar in het kader van het programma Vroege toegang voor Forms as a Cloud Service-implementaties. Om toegang te verzoeken e-mail uw organisatie identiteitskaart, en programmatiedetails voor uw plaatsingen van Forms as a Cloud Service aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officieel adres.
 
-Zodra u toegang wordt verleend, begin [&#x200B; creërend uw eerste correspondentie &#x200B;](https://video.tv.adobe.com/v/3444094/).
+Zodra u toegang wordt verleend, begin [ creërend uw eerste correspondentie ](https://video.tv.adobe.com/v/3444094/).
 
 <!-- 
 
