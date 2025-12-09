@@ -352,7 +352,7 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 
     ![Variaties genereren](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**Leer meer:** [&#x200B; produceer de Gids van Variaties &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**Leer meer:** [&#x200B; produceer de Gids van Variaties &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **Inhoudsconcepten**
 
