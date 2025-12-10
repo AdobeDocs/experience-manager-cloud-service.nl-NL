@@ -16,7 +16,7 @@ ht-degree: 0%
 
 De workflowconsole biedt verschillende gereedschappen voor het beheer van workflowinstanties om ervoor te zorgen dat deze naar behoren worden uitgevoerd.
 
-Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Gebruik de [ globale navigatie ](/help/sites-cloud/authoring/basic-handling.md#global-navigation) om de **ruit van Hulpmiddelen** te openen, dan uitgezocht **Werkschema**:
+Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Gebruik de [&#x200B; globale navigatie &#x200B;](/help/sites-cloud/authoring/basic-handling.md#global-navigation) om de **ruit van Hulpmiddelen** te openen, dan uitgezocht **Werkschema**:
 
 * **Modellen**: Beheer werkschemadefinities
 * **Instanties**: De mening en beheert het runnen werkschemainstanties
@@ -33,29 +33,29 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 1. **Lopende werkschema&#39;s** toont het aantal lopende werkschema&#39;s, en hun status. bijvoorbeeld, in de bepaalde getoonde beelden, zijn het aantal **Lopende werkschema&#39;s** en de **Status** van de instantie van AEM:
 
    * **Status: Gezonde**
-     ![ status-gezond ](/help/sites-cloud/administering/assets/status-healthy.png)
+     ![&#x200B; status-gezond &#x200B;](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Status: Ongezond**
-     ![ status-ongezond ](/help/sites-cloud/administering/assets/status-unhealthy.png)
+     ![&#x200B; status-ongezond &#x200B;](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Voor **de details van de Status** van werkschemainstanties, klik **Details**, om het **aantal lopende werkstroominstanties**, **voltooide werkschemainstanties**, **geaborteerde werkschemainstanties**, **ontbroken werkschemainstanties** te tonen, etc. bijvoorbeeld, hieronder zijn de bepaalde beelden die **details van de Status** met tonen:
 
    * **de details van de Status: Gezonde**
-     ![ status-details-gezond ](/help/sites-cloud/administering/assets/status-details-healthy.png)
+     ![&#x200B; status-details-gezond &#x200B;](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **de details van de Status: Ongezond**
-     ![ status-details-ongezond ](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+     ![&#x200B; status-details-ongezond &#x200B;](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Om werkschemainstantie gezond te handhaven, volg beste praktijken bij [ regelmatig het zuiveren van werkschemainstanties ](#regular-purging-of-workflow-instances) of [ werkschemabeste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
+   > Om werkschemainstantie gezond te handhaven, volg beste praktijken bij [&#x200B; regelmatig het zuiveren van werkschemainstanties &#x200B;](#regular-purging-of-workflow-instances) of [&#x200B; werkschemabeste praktijken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Workflowinstanties zoeken {#search-workflow-instances}
 
 1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
 1. Selecteer **Instanties** om de lijst van werkschemainstanties te tonen momenteel lopend. Op het hoogste spoor, in de linkerhoek, uitgezochte **Filters**. U kunt ook de toetsaanslagen alt+1 gebruiken. Het volgende dialoogvenster wordt weergegeven:
 
-   ![ wf-99-1 ](/help/sites-cloud/administering/assets/wf-99-1.png)
+   ![&#x200B; wf-99-1 &#x200B;](/help/sites-cloud/administering/assets/wf-99-1.png)
 
 1. Selecteer de zoekcriteria voor de workflow in het dialoogvenster Filter. U kunt zoeken op basis van de volgende gegevens:
 
@@ -75,11 +75,11 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
 1. Selecteer **Instanties** om de lijst van werkschemainstanties te tonen momenteel lopend.
 
-   ![ wf-96-1 ](/help/sites-cloud/administering/assets/wf-96-1.png)
+   ![&#x200B; wf-96-1 &#x200B;](/help/sites-cloud/administering/assets/wf-96-1.png)
 
 1. Selecteer een specifiek punt, dan gebruik **beëindigt**, **Schorsing**, of **hervat**, zoals aangewezen; bevestiging, en/of verdere details worden vereist:
 
-   ![ wf-97-1 ](/help/sites-cloud/administering/assets/wf-97-1.png)
+   ![&#x200B; wf-97-1 &#x200B;](/help/sites-cloud/administering/assets/wf-97-1.png)
 
    >[!NOTE]
    >
@@ -93,7 +93,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 1. Selecteer **Archief** om de lijst van werkschemainstanties te tonen die met succes voltooiden.
 
-   ![ archived-instances ](/help/sites-cloud/administering/assets/archived-instances.png)
+   ![&#x200B; archived-instances &#x200B;](/help/sites-cloud/administering/assets/archived-instances.png)
 
    >[!NOTE]
    >
@@ -105,14 +105,14 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 1. Selecteer een specifiek punt, dan **Open Geschiedenis** om meer details te zien:
 
-   ![ wf-99 ](/help/sites-cloud/administering/assets/wf-99.png)
+   ![&#x200B; wf-99 &#x200B;](/help/sites-cloud/administering/assets/wf-99.png)
 
 ## Fouten in werkstroominstantie herstellen {#fixing-workflow-instance-failures}
 
 Wanneer een werkschema ontbreekt, verstrekt AEM de **console van Mislukt** om u toe te staan om aangewezen actie te onderzoeken en te nemen zodra de originele oorzaak is behandeld:
 
 * **Details van de Mislukking**
-Opent een venster om het **Bericht van de Mislukking**, **Stap, en **Stapel van de Mislukking** te tonen.
+Opent een venster om het **Bericht van de Mislukking**, **Stap, en &#x200B;** Stapel van de Mislukking** te tonen.
 
 * **Open Geschiedenis**
 Geeft details van de workflowgeschiedenis weer.
@@ -128,7 +128,7 @@ Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, 
 1. Selecteer **Mislukt** om de lijst van werkschemainstanties te tonen die niet met succes voltooiden.
 1. Selecteer een specifiek item en voer de gewenste actie uit:
 
-![ werkschema-mislukking ](/help/sites-cloud/administering/assets/workflow-failure.png)
+![&#x200B; werkschema-mislukking &#x200B;](/help/sites-cloud/administering/assets/workflow-failure.png)
 
 ## Regelmatig leegmaken van workflowinstanties {#regular-purging-of-workflow-instances}
 
@@ -138,7 +138,7 @@ Vorm **de Configuratie van de Woorden van het Werkschema van Adobe Granite** om 
 
 U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel zuivert wanneer deze veel langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na enkele dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
 
-Om de dienst te vormen, kunt u de OSGi- Dossiers van de Configuratie vormen zie [ OSGi configuratiedossiers ](/help/implementing/deploying/configuring-osgi.md). In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt.
+Om de dienst te vormen, kunt u de OSGi- Dossiers van de Configuratie vormen zie [&#x200B; OSGi configuratiedossiers &#x200B;](/help/implementing/deploying/configuring-osgi.md). In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt.
 
 >[!NOTE]
 >Voor het toevoegen van de configuratie aan de repository is de service-PID:
@@ -157,7 +157,7 @@ Om de dienst te vormen, kunt u de OSGi- Dossiers van de Configuratie vormen zie 
 
 ## De maximale grootte van het Postvak IN instellen {#setting-the-maximum-size-of-the-inbox}
 
-U kunt de maximumgrootte van inbox plaatsen door de **Dienst van het Werkschema van Adobe Granite** te vormen, zie [ een configuratie OSGi aan de bewaarplaats ](/help/implementing/deploying/configuring-osgi.md) toevoegen. De volgende lijst beschrijft het bezit dat u vormt.
+U kunt de maximumgrootte van inbox plaatsen door de **Dienst van het Werkschema van Adobe Granite** te vormen, zie [&#x200B; een configuratie OSGi aan de bewaarplaats &#x200B;](/help/implementing/deploying/configuring-osgi.md) toevoegen. De volgende lijst beschrijft het bezit dat u vormt.
 
 >[!NOTE]
 >Voor het toevoegen van de configuratie aan de repository is de service-PID:
@@ -179,7 +179,7 @@ Het bezit *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr :content 
 
 In de onderstaande afbeelding ziet u hoe u de markering op een workflow instelt.
 
-![ werkschema-externalize-config ](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
+![&#x200B; werkschema-externalize-config &#x200B;](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### API&#39;s voor metagegevens in externe opslag {#apis-for-metadata-external-storage}
 
