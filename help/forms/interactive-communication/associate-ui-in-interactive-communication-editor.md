@@ -4,9 +4,9 @@ description: Ontdek associatieve UI in Interactieve Communicatie Redacteur door 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 56e4195016c06177822ea31aa87ed4dfa24dc748
+source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **associeerde UI** is een gespecialiseerde, vereenvoudigde interface die bovenop de Interactieve Communicatie (IC) redacteur wordt gebouwd. Het wordt ontworpen voor klant-onder ogen ziet beroeps, zoals gebiedsassociaties en de dienstagenten om gepersonaliseerde, volgzame, en nauwkeurige mededelingen in real time tijdens levende interactie te produceren.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/associate-ui-preview.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
 ## UI-interface koppelen
 
@@ -97,7 +97,7 @@ De auteur kan de hieronder stappen volgen om een Interactieve Communicatie (IC) 
 
 >[!NOTE]
 >
-> Ondersteunde componenten voor koppeling.
+> Ondersteunde componenten voor de koppeling: Datumveld, Numeriek veld, Tekstveld.
 
 ### IC maken
 
