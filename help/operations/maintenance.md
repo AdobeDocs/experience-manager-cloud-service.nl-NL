@@ -228,11 +228,11 @@ Declareer een configuratiedossier en stel het op zoals die in de volgende stappe
 
 1. Maak een bestand met de naam `mt.yaml` of een vergelijkbaar bestand.
 
-1. Plaats het dossier ergens onder een top niveauomslag genoemd `config` of gelijkaardig, zoals die onder [ wordt beschreven Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
+1. Plaats het dossier ergens onder een top niveauomslag genoemd `config` of gelijkaardig, zoals die onder [&#x200B; wordt beschreven Gebruikend Pijpleidingen Config &#x200B;](/help/operations/config-pipeline.md#folder-structure).
 
 1. Declareer eigenschappen in het configuratiedossier, die omvatten:
 
-   * a paar eigenschappen boven de gegevensknoop — zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving. De `kind` bezitswaarde zou *MaintenanceTasks* moeten zijn en de versie zou aan *1* moeten worden geplaatst.
+   * a paar eigenschappen boven de gegevensknoop — zie [&#x200B; Gebruikend Pijpleidingen Config &#x200B;](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving. De `kind` bezitswaarde zou *MaintenanceTasks* moeten zijn en de versie zou aan *1* moeten worden geplaatst.
 
    * een gegevensobject met zowel `versionPurge` - als `auditLogPurge` -objecten.
 
@@ -273,7 +273,7 @@ Declareer een configuratiedossier en stel het op zoals die in de volgende stappe
    * alle eigenschappen moeten worden gedefinieerd. Er zijn geen overgeërfde standaardinstellingen.
    * de typen (gehele getallen, tekenreeksen, booleans, enz.) in de onderstaande eigenschappentabellen moeten in acht worden genomen.
 
-1. Creeer een config pijpleiding in Cloud Manager, zoals die in het [ wordt beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Creeer een config pijpleiding in Cloud Manager, zoals die in het [&#x200B; wordt beschreven config pijpleidingsartikel &#x200B;](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Versie wissen {#version-purge}
 
