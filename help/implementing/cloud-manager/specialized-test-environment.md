@@ -41,7 +41,7 @@ Een gespecialiseerde het Testen Milieu wordt gebouwd om de grootte, scalability,
 | `IP Allow List` | Hetzelfde als de ontwikkelomgeving. |
 | Netwerken | Hetzelfde als de ontwikkelomgeving (Services, domeinnaam, SSL-certificaten, Advanced Network). |
 
-Zie ook [ Milieu ](/help/implementing/cloud-manager/manage-environments.md) beheren.
+Zie ook [&#x200B; Milieu &#x200B;](/help/implementing/cloud-manager/manage-environments.md) beheren.
 
 ## Een speciale testomgeving toevoegen {#add-specialized-testing-environment}
 
@@ -49,20 +49,20 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
 **om een Gespecialiseerde het Testen Milieu toe te voegen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik het programma waarvoor u een milieu wilt toevoegen.
 
 1. Voer een van de volgende handelingen uit:
 
-   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **** kaart van Milieu&#39;s, klik **voegt Milieu** toe.
+   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik **voegt Milieu** toe.
 Als **toevoegt milieu** optie (gehandicapt) wordt gedimd, kan het aan een gebrek aan toestemmingen of afhankelijk van de vergunning gegeven middelen zijn.
 
-     ![ kaart van Milieu&#39;s ](assets/no-environments.png)
+     ![&#x200B; kaart van Milieu&#39;s &#x200B;](assets/no-environments.png)
 
-   * Op het linkerzijpaneel, klik ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) Milieu&#39;s **van Gegevens 0} {, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik** toevoegt Milieu **.**
+   * Op het linkerzijpaneel, klik ![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) Milieu&#39;s **van Gegevens 0&rbrace; &lbrace;, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik** toevoegt Milieu **.**
 
-     ![ Milieu&#39;s tabel ](assets/environments-tab.png)
+     ![&#x200B; Milieu&#39;s tabel &#x200B;](assets/environments-tab.png)
 
 1. In **voeg milieu** dialoogdoos toe, doe het volgende:
 
@@ -71,14 +71,14 @@ Als **toevoegt milieu** optie (gehandicapt) wordt gedimd, kan het aan een gebrek
    * (Facultatief) verstrek a **Beschrijving** voor het milieu.
    * Selecteer a **Primair gebied** van de drop-down lijst. Zodra gecreeerd, is het primaire gebied van het Gespecialiseerde het Testen Milieu (bijvoorbeeld, *Verenigd Koninkrijk (Zuid)*) gesloten en kan niet worden veranderd.
 
-     ![ voeg milieu dialoogdoos met Gespecialiseerde het Testen van Milieu geselecteerde radioknoop ](assets/specialized-test-environment.png) toe
+     ![&#x200B; voeg milieu dialoogdoos met Gespecialiseerde het Testen van Milieu geselecteerde radioknoop &#x200B;](assets/specialized-test-environment.png) toe
 
 1. Klik **sparen**.
 
-   De **pagina van het Overzicht** toont nu uw nieuw milieu in de **** kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
+   De **pagina van het Overzicht** toont nu uw nieuw milieu in de **&#x200B;**&#x200B;kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* Video: [ Begrijpend milieutypes in AEM Cloud Manager ](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* Video: [&#x200B; Begrijpend milieutypes in AEM Cloud Manager &#x200B;](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
 * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md)
 
