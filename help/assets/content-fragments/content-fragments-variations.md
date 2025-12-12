@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Variaties - Fragmentinhoud ontwerpen{#variations-authoring-fragment-content}
 
-[ de Variaties ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een significante eigenschap van de Fragmenten van de Inhoud in Adobe Experience Manager (AEM) as a Cloud Service. Dit is omdat zij u exemplaren van de **Hoofd** inhoud voor gebruik op specifieke kanalen en scenario&#39;s laten tot stand brengen en uitgeven. Dit maakt met name de levering van inhoud zonder kop nog flexibeler.
+[&#x200B; de Variaties &#x200B;](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een significante eigenschap van de Fragmenten van de Inhoud in Adobe Experience Manager (AEM) as a Cloud Service. Dit is omdat zij u exemplaren van de **Hoofd** inhoud voor gebruik op specifieke kanalen en scenario&#39;s laten tot stand brengen en uitgeven. Dit maakt met name de levering van inhoud zonder kop nog flexibeler.
 
 >[!NOTE]
 >
@@ -22,24 +22,24 @@ ht-degree: 4%
 >
 >Er zijn twee redacteurs voor het ontwerpen van de Fragmenten van de Inhoud - de nieuwe redacteur en de originele redacteur. De nieuwe redacteur is het gebrek. Hoewel de basisfunctionaliteit hetzelfde is, zijn er enkele verschillen.
 >
->In deze sectie wordt de oorspronkelijke editor beschreven. Dit wordt [ geopend via de nieuwe redacteur ](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>In deze sectie wordt de oorspronkelijke editor beschreven. Dit wordt [&#x200B; geopend via de nieuwe redacteur &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
 >
->Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor volledige details van de nieuwe redacteur.
+>Zie de documentatie van Plaatsen, [&#x200B; de Fragmenten van de Inhoud - Authoring &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md), voor volledige details van de nieuwe redacteur.
 
 Van het **lusje van Variaties** kunt u het volgende doen:
 
-* [ ga de inhoud ](#authoring-your-content) voor uw fragment in,
-* [ creeer en beheer variaties ](#managing-variations) van de **Hoofd** inhoud,
+* [&#x200B; ga de inhoud &#x200B;](#authoring-your-content) voor uw fragment in,
+* [&#x200B; creeer en beheer variaties &#x200B;](#managing-variations) van de **Hoofd** inhoud,
 
 Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt bewerkt, bijvoorbeeld:
 
-* [ Tussenvoegsel visuele activa in uw fragment ](#inserting-assets-into-your-fragment) (beelden)
+* [&#x200B; Tussenvoegsel visuele activa in uw fragment &#x200B;](#inserting-assets-into-your-fragment) (beelden)
 
-* Selecteer tussen [ Rijke Tekst ](#rich-text), [ Onbewerkte Tekst ](#plain-text), en [ Markdown ](#markdown) voor het uitgeven
+* Selecteer tussen [&#x200B; Rijke Tekst &#x200B;](#rich-text), [&#x200B; Onbewerkte Tekst &#x200B;](#plain-text), en [&#x200B; Markdown &#x200B;](#markdown) voor het uitgeven
 
 * [Inhoud uploaden](#uploading-content)
 
-* [ de belangrijkste statistieken van de Mening ](#viewing-key-statistics) (over multi-lijntekst)
+* [&#x200B; de belangrijkste statistieken van de Mening &#x200B;](#viewing-key-statistics) (over multi-lijntekst)
 
 * [Tekst samenvatten](#summarizing-text)
 
@@ -55,25 +55,25 @@ Wanneer u uw inhoudsfragment voor het uitgeven in de originele redacteur opent, 
 
 Bijvoorbeeld:
 
-![ volledige het schermredacteur ](assets/cfm-variations-02.png)
+![&#x200B; volledige het schermredacteur &#x200B;](assets/cfm-variations-02.png)
 
 U kunt:
 
 * Maak direct aan uw inhoud in het **lusje van Variaties** uitgeeft; elk gegevenstype verstrekt verschillende het uitgeven opties, bijvoorbeeld:
 
-   * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **** instanties van het relevante gebied toevoegen
+   * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **&#x200B;**&#x200B;instanties van het relevante gebied toevoegen
 
-   * voor **multi-line tekst** gebieden, kunt u [ het volledig-schermredacteur ](#full-screen-editor) ook openen:
+   * voor **multi-line tekst** gebieden, kunt u [&#x200B; het volledig-schermredacteur &#x200B;](#full-screen-editor) ook openen:
 
-      * selecteren het [ Formaat ](#formats)
-      * zie meer het uitgeven opties (voor [ Rich Text ](#rich-text) formaat)
-      * toegang tot een waaier van [ acties ](#actions)
+      * selecteren het [&#x200B; Formaat &#x200B;](#formats)
+      * zie meer het uitgeven opties (voor [&#x200B; Rich Text &#x200B;](#rich-text) formaat)
+      * toegang tot een waaier van [&#x200B; acties &#x200B;](#actions)
 
-   * Voor **gebieden van de Verwijzing van het 0} Fragment {, kan de** Edit optie van het Fragment van de Inhoud [, afhankelijk van de modeldefinitie beschikbaar zijn.](#fragment-references-edit-content-fragment)
+   * Voor **gebieden van de Verwijzing van het 0&rbrace; Fragment &lbrace;, kan de** Edit optie van het Fragment van de Inhoud [, afhankelijk van de modeldefinitie beschikbaar zijn.](#fragment-references-edit-content-fragment)
 
 * Wijs **Markeringen** aan de huidige variatie toe; de markeringen kunnen worden toegevoegd, worden bijgewerkt en, worden verwijderd.
 
-   * [ de Markeringen ](/help/sites-cloud/authoring/sites-console/tags.md) zijn krachtig wanneer het organiseren van uw fragmenten aangezien zij voor inhoudsclassificatie en taxonomie kunnen worden gebruikt. Tags kunnen worden gebruikt voor het zoeken naar inhoud (door tags) en het toepassen van bulkbewerkingen.
+   * [&#x200B; de Markeringen &#x200B;](/help/sites-cloud/authoring/sites-console/tags.md) zijn krachtig wanneer het organiseren van uw fragmenten aangezien zij voor inhoudsclassificatie en taxonomie kunnen worden gebruikt. Tags kunnen worden gebruikt voor het zoeken naar inhoud (door tags) en het toepassen van bulkbewerkingen.
 
       * Zoekt naar een tag en retourneert het fragment, waarbij de tagvariatie is gemarkeerd.
       * Variatietags kunnen ook worden gebruikt om variaties te groeperen voor een specifiek CDN-profiel (Content Delivery Network) (voor CDN-caching) in plaats van de variatienaam te gebruiken.
@@ -82,40 +82,40 @@ U kunt:
 
   >[!NOTE]
   >
-  >**de Markeringen** kunnen ook worden toegevoegd (aan de **Hoofd** variatie) als deel van [ Meta-gegevens ](/help/assets/content-fragments/content-fragments-metadata.md)
+  >**de Markeringen** kunnen ook worden toegevoegd (aan de **Hoofd** variatie) als deel van [&#x200B; Meta-gegevens &#x200B;](/help/assets/content-fragments/content-fragments-metadata.md)
 
-* [ creeer en beheer variaties ](#managing-variations) van de **Hoofd** inhoud.
+* [&#x200B; creeer en beheer variaties &#x200B;](#managing-variations) van de **Hoofd** inhoud.
 
 >[!NOTE]
 >
->Afhankelijk van definities in het onderliggende model, kunnen de gebieden aan bepaalde types van [ Bevestiging ](/help/assets/content-fragments/content-fragments-models.md#validation) onderworpen zijn.
+>Afhankelijk van definities in het onderliggende model, kunnen de gebieden aan bepaalde types van [&#x200B; Bevestiging &#x200B;](/help/assets/content-fragments/content-fragments-models.md#validation) onderworpen zijn.
 
 ### Volledige schermeditor {#full-screen-editor}
 
 Wanneer u een tekstveld met meerdere regels bewerkt, kunt u de volledige schermeditor openen. Selecteer de gewenste tekst en selecteer vervolgens het volgende actiepictogram:
 
-![ volledig het pictogram van de het schermredacteur ](assets/cfm-variations-03.png)
+![&#x200B; volledig het pictogram van de het schermredacteur &#x200B;](assets/cfm-variations-03.png)
 
 Hiermee opent u de teksteditor voor het volledige scherm:
 
-![ volledige het schermredacteur ](assets/cfm-variations-fullscreentexteditor.png)
+![&#x200B; volledige het schermredacteur &#x200B;](assets/cfm-variations-fullscreentexteditor.png)
 
 De teksteditor voor volledig scherm biedt de volgende mogelijkheden:
 
-* Toegang tot diverse [ acties ](#actions)
-* Afhankelijk van het [ formaat ](#formats), extra het formatteren opties ([ Rijke Tekst ](#rich-text))
+* Toegang tot diverse [&#x200B; acties &#x200B;](#actions)
+* Afhankelijk van het [&#x200B; formaat &#x200B;](#formats), extra het formatteren opties ([&#x200B; Rijke Tekst &#x200B;](#rich-text))
 
 ### Handelingen {#actions}
 
-De volgende acties zijn ook beschikbaar (voor alle [ formaten ](#formats)) wanneer de volledig-schermredacteur (namelijk multi-line tekst) open is:
+De volgende acties zijn ook beschikbaar (voor alle [&#x200B; formaten &#x200B;](#formats)) wanneer de volledig-schermredacteur (namelijk multi-line tekst) open is:
 
-* Selecteer het [ formaat ](#formats) ([ Rijke Tekst ](#rich-text), [ Onbewerkte Tekst ](#plain-text), [ Markdown ](#markdown))
+* Selecteer het [&#x200B; formaat &#x200B;](#formats) ([&#x200B; Rijke Tekst &#x200B;](#rich-text), [&#x200B; Onbewerkte Tekst &#x200B;](#plain-text), [&#x200B; Markdown &#x200B;](#markdown))
 
 * [Inhoud uploaden](#uploading-content)
 
 * [Tekststatistieken tonen](#viewing-key-statistics)
 
-* [ synchroniseer met Hoofd ](#synchronizing-with-master) (wanneer het uitgeven van een variatie)
+* [&#x200B; synchroniseer met Hoofd &#x200B;](#synchronizing-with-master) (wanneer het uitgeven van een variatie)
 
 * [Tekst samenvatten](#summarizing-text)
 
@@ -150,13 +150,13 @@ Met RTF-bewerking kunt u opmaken:
    * Zoeken/vervangen
    * Spellingcontrole
    * [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [ het Fragment van de Inhoud van het Tussenvoegsel ](#inserting-content-fragment-into-your-fragment); beschikbaar wanneer uw **multi-line tekst** gebied met **wordt gevormd staat de Verwijzing van het Fragment** toe.
+* [&#x200B; het Fragment van de Inhoud van het Tussenvoegsel &#x200B;](#inserting-content-fragment-into-your-fragment); beschikbaar wanneer uw **multi-line tekst** gebied met **wordt gevormd staat de Verwijzing van het Fragment** toe.
 
-De [ acties ](#actions) zijn ook toegankelijk van de het volledig-schermredacteur.
+De [&#x200B; acties &#x200B;](#actions) zijn ook toegankelijk van de het volledig-schermredacteur.
 
 ### Onbewerkte tekst {#plain-text}
 
-Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegevens. U kunt de het volledig-schermredacteur voor verdere [ acties ](#actions) ook openen.
+Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegevens. U kunt de het volledig-schermredacteur voor verdere [&#x200B; acties &#x200B;](#actions) ook openen.
 
 >[!CAUTION]
 >
@@ -166,7 +166,7 @@ Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegeven
 
 >[!NOTE]
 >
->Voor volledige informatie, zie de [ documentatie van de Vermindering ](/help/assets/content-fragments/content-fragments-markdown.md).
+>Voor volledige informatie, zie de [&#x200B; documentatie van de Vermindering &#x200B;](/help/assets/content-fragments/content-fragments-markdown.md).
 
 Hiermee kunt u de tekst opmaken met behulp van een markering. U kunt het volgende definiëren:
 
@@ -180,7 +180,7 @@ Hiermee kunt u de tekst opmaken met behulp van een markering. U kunt het volgend
 * Codeblokken
 * backslash-eces
 
-U kunt de het volledig-schermredacteur voor verdere [ acties ](#actions) ook openen.
+U kunt de het volledig-schermredacteur voor verdere [&#x200B; acties &#x200B;](#actions) ook openen.
 
 >[!CAUTION]
 >
@@ -193,7 +193,7 @@ Als het Content Fragment-model fragmentverwijzingen bevat, hebben de auteurs van
 * [Inhoudsfragment bewerken](#fragment-references-edit-content-fragment)
 * [Nieuw inhoudsfragment](#fragment-references-new-content-fragment)
 
-![ Verwijzingen van het Fragment ](assets/cfm-variations-12.png)
+![&#x200B; Verwijzingen van het Fragment &#x200B;](assets/cfm-variations-12.png)
 
 #### Inhoudsfragment bewerken {#fragment-references-edit-content-fragment}
 
@@ -201,7 +201,7 @@ De optie **geeft het Fragment van de Inhoud uit** opent dat fragment in een nieu
 
 Het selecteren van het originele lusje opnieuw (bijvoorbeeld, **Kleine Pony Inc.**) sluit dit secundaire lusje (in dit geval, **Adam Smith**).
 
-![ Verwijzingen van het Fragment ](assets/cfm-variations-editreference.png)
+![&#x200B; Verwijzingen van het Fragment &#x200B;](assets/cfm-variations-editreference.png)
 
 #### Nieuw inhoudsfragment {#fragment-references-new-content-fragment}
 
@@ -227,7 +227,7 @@ Wanneer de volledig-schermredacteur open is, toont de actie **Statistieken van d
 
 Bijvoorbeeld:
 
-![ statistieken ](assets/cfm-variations-04.png)
+![&#x200B; statistieken &#x200B;](assets/cfm-variations-04.png)
 
 ### Inhoud uploaden {#uploading-content}
 
@@ -255,10 +255,10 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 >
 >Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van Software Distributie:
 >
->* [ Frans (fr) ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [ Duits (de) ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [ Italiaans (het) ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [ Spaans (es) ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [&#x200B; Frans (fr) &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [&#x200B; Duits (de) &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [&#x200B; Italiaans (het) &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [&#x200B; Spaans (es) &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. Selecteer **Meester** of de vereiste variatie.
@@ -266,7 +266,7 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 
 1. Selecteer **vatten tekst** van de toolbar samen.
 
-   ![ samenvatting ](assets/cfm-variations-05.png)
+   ![&#x200B; samenvatting &#x200B;](assets/cfm-variations-05.png)
 
 1. Specificeer het doelaantal woorden en selecteer **Begin**:
 1. De oorspronkelijke tekst wordt naast de voorgestelde samenvatting weergegeven:
@@ -285,7 +285,7 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
    * De samenvattingsstatistieken worden getoond: **Ware** en **Doel** -
    * U kunt **Voorproef** de veranderingen.
 
-   ![ samenvattingsvergelijking ](assets/cfm-variations-06.png)
+   ![&#x200B; samenvattingsvergelijking &#x200B;](assets/cfm-variations-06.png)
 
 ### Een inhoudsfragment annoteren {#annotating-a-content-fragment}
 
@@ -297,19 +297,19 @@ Een fragment annoteren:
 
 1. Het **annoteert** pictogram is beschikbaar in de hoogste toolbar. U kunt desgewenst tekst selecteren.
 
-   ![ annoteren ](assets/cfm-variations-07.png)
+   ![&#x200B; annoteren &#x200B;](assets/cfm-variations-07.png)
 
 1. Er wordt een dialoogvenster geopend. Hier kunt u uw annotatie invoeren.
 
-   ![ annoteren ](assets/cfm-variations-07a.png)
+   ![&#x200B; annoteren &#x200B;](assets/cfm-variations-07a.png)
 
 1. Selecteer **toepassen** op de dialoog.
 
-   ![ annoteren ](assets/cfm-variations-annotations-apply-icon.png)
+   ![&#x200B; annoteren &#x200B;](assets/cfm-variations-annotations-apply-icon.png)
 
    Als de annotatie is toegepast op de geselecteerde tekst, blijft die tekst gemarkeerd.
 
-   ![ annoteren ](assets/cfm-variations-07b.png)
+   ![&#x200B; annoteren &#x200B;](assets/cfm-variations-07b.png)
 
 1. Sluit de volledige-schermredacteur, de annotaties worden nog benadrukt. Als deze optie is geselecteerd, wordt een dialoogvenster geopend waarin u de annotatie verder kunt bewerken.
 
@@ -317,11 +317,11 @@ Een fragment annoteren:
 
 1. Sluit de volledige-schermredacteur, de annotaties worden nog benadrukt. Als deze optie is geselecteerd, wordt een dialoogvenster geopend waarin u de annotatie verder kunt bewerken.
 
-   ![ annoteren ](assets/cfm-variations-07c.png)
+   ![&#x200B; annoteren &#x200B;](assets/cfm-variations-07c.png)
 
 >[!NOTE]
 >
->De eigenschap van Annotaties toont geen commentaren ingegaan in de nieuwe [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
+>De eigenschap van Annotaties toont geen commentaren ingegaan in de nieuwe [&#x200B; redacteur van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 ### Annotaties weergeven, bewerken, verwijderen {#viewing-editing-deleting-annotations}
 
@@ -339,28 +339,28 @@ Annotaties:
 
   ![annotaties](assets/cfm-variations-08.png)
 
-* Het kan, in de [ Chronologie ](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) voor het geselecteerde fragment worden bekeken en worden geschrapt.
+* Het kan, in de [&#x200B; Chronologie &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) voor het geselecteerde fragment worden bekeken en worden geschrapt.
 
 ### Assets invoegen in uw fragment {#inserting-assets-into-your-fragment}
 
-Om het proces te verlichten om inhoudsfragmenten te ontwerpen, kunt u [ Assets ](/help/assets/manage-digital-assets.md) (beelden) direct aan het fragment toevoegen.
+Om het proces te verlichten om inhoudsfragmenten te ontwerpen, kunt u [&#x200B; Assets &#x200B;](/help/assets/manage-digital-assets.md) (beelden) direct aan het fragment toevoegen.
 
-Zij worden toegevoegd aan de paragraafopeenvolging van het fragment zonder enige het formatteren; het formatteren kan worden gedaan wanneer het [ fragment wordt gebruikt/op een pagina ](/help/sites-cloud/authoring/fragments/content-fragments.md) van verwijzingen wordt voorzien.
+Zij worden toegevoegd aan de paragraafopeenvolging van het fragment zonder enige het formatteren; het formatteren kan worden gedaan wanneer het [&#x200B; fragment wordt gebruikt/op een pagina &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md) van verwijzingen wordt voorzien.
 
 >[!CAUTION]
 >
 >Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
 >
->Nochtans, moet het formatteren van de activa (bijvoorbeeld, grootte) in de [ paginaredacteur ](/help/sites-cloud/authoring/fragments/content-fragments.md) worden gedaan. De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
+>Nochtans, moet het formatteren van de activa (bijvoorbeeld, grootte) in de [&#x200B; paginaredacteur &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md) worden gedaan. De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
 >
->Er zijn diverse methodes om [ beelden ](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
+>Er zijn diverse methodes om [&#x200B; beelden &#x200B;](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
 
 1. Plaats de cursor op de positie waar u de afbeelding wilt toevoegen.
 1. Gebruik het pictogram **Asset invoegen** om het zoekdialoogvenster te openen.
 
-   ![ pictogram van het tussenvoegselmiddel ](assets/cfm-variations-09.png)
+   ![&#x200B; pictogram van het tussenvoegselmiddel &#x200B;](assets/cfm-variations-09.png)
 
 1. In het dialoogvenster kunt u naar het vereiste element navigeren in DAM of het element zoeken in DAM.
 
@@ -389,16 +389,16 @@ Ze worden als een referentie toegevoegd op de huidige locatie in het fragment.
 >
 >Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
 >
->Nochtans, moet het formatteren van de activa (bijvoorbeeld, grootte) in de [ paginaredacteur ](/help/sites-cloud/authoring/fragments/content-fragments.md) worden gedaan. De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
+>Nochtans, moet het formatteren van de activa (bijvoorbeeld, grootte) in de [&#x200B; paginaredacteur &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md) worden gedaan. De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
 >
->Er zijn diverse methodes om [ beelden ](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
+>Er zijn diverse methodes om [&#x200B; beelden &#x200B;](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
 
 1. Plaats de cursor op de positie waar u het fragment wilt toevoegen.
 1. Gebruik het **pictogram van het Fragment van de Inhoud van het Tussenvoegsel** om de onderzoeksdialoog te openen.
 
-   ![ pictogram van het Fragment van de Tussenvoegsel Inhoud ](assets/cfm-variations-13.png)
+   ![&#x200B; pictogram van het Fragment van de Tussenvoegsel Inhoud &#x200B;](assets/cfm-variations-13.png)
 
 1. In het dialoogvenster kunt u naar het gewenste fragment in de Assets-map navigeren of naar het fragment zoeken.
 
@@ -415,21 +415,21 @@ Ze worden als een referentie toegevoegd op de huidige locatie in het fragment.
 
 ## Overerving {#inheritance}
 
-Overerving is het mechanisme waarbij inhoud automatisch van het ene naar het andere fragment kan worden verplaatst. De overerfde gebieden, en de variaties, kunnen het product van [ Beheer van meerdere plaatsen ](/help/assets/content-fragments/content-fragments-msm.md) zijn.
+Overerving is het mechanisme waarbij inhoud automatisch van het ene naar het andere fragment kan worden verplaatst. De overerfde gebieden, en de variaties, kunnen het product van [&#x200B; Beheer van meerdere plaatsen &#x200B;](/help/assets/content-fragments/content-fragments-msm.md) zijn.
 
 U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk van de context, kan dit voor een variatie, of een individueel gebied, beschikbaar zijn als het fragment deel van een levende kopie uitmaakt.
 
-![ een Fragment van de Inhoud die overervingsverhouding toont ](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+![&#x200B; een Fragment van de Inhoud die overervingsverhouding toont &#x200B;](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
 
 Bijvoorbeeld:
 
 * Overerving annuleren
 
-  ![ annuleert Overerving knoop ](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+  ![&#x200B; annuleert Overerving knoop &#x200B;](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
 
 * Overerving opnieuw inschakelen (als overerving al is geannuleerd)
 
-  ![ re-Enable de knoop van de Overerving ](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+  ![&#x200B; re-Enable de knoop van de Overerving &#x200B;](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
 
 <!--
 * Rollout action is also available in Live Copy source
@@ -449,7 +449,7 @@ De variaties laten u de **Hoofd** inhoud nemen en het variëren volgens doel (in
 1. Selecteer **Variaties** van de pictogrambar in het zijpaneel.
 1. Selecteer **creeer Variatie**.
 1. Een dialoogdoos opent zodat kunt u de **Titel** en **Beschrijving** voor de nieuwe variatie specificeren.
-1. Selecteer **toevoegen**; het fragment **Hoofd** wordt gekopieerd aan de nieuwe variatie, die nu open voor [ het uitgeven ](#editing-a-variation) is.
+1. Selecteer **toevoegen**; het fragment **Hoofd** wordt gekopieerd aan de nieuwe variatie, die nu open voor [&#x200B; het uitgeven &#x200B;](#editing-a-variation) is.
 
    >[!NOTE]
    >
@@ -463,16 +463,16 @@ De variaties laten u de **Hoofd** inhoud nemen en het variëren volgens doel (in
 
 U kunt de variatie-inhoud wijzigen na:
 
-* [ Creërend uw variatie ](#creating-a-variation).
+* [&#x200B; Creërend uw variatie &#x200B;](#creating-a-variation).
 * Een bestaand fragment openen en vervolgens de gewenste variant in het zijpaneel selecteren.
 
-![ het uitgeven van een variatie ](assets/cfm-variations-10.png)
+![&#x200B; het uitgeven van een variatie &#x200B;](assets/cfm-variations-10.png)
 
 ### De naam van een variatie wijzigen {#renaming-a-variation}
 
 1. Open uw fragment en selecteer **Variaties** van het zijpaneel.
 1. Selecteer de gewenste variatie.
-1. Selecteer **anders noemen** van **** drop-down Acties.
+1. Selecteer **anders noemen** van **&#x200B;**&#x200B;drop-down Acties.
 
 1. Voer in het dialoogvenster dat verschijnt de nieuwe **titel** en/of **beschrijving** in.
 
@@ -502,7 +502,7 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
 
 >[!CAUTION]
 >
->De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
+>De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**&#x200B;naar de variatie* te kopiëren.
 >
 >Alleen het huidige element van de variatie wordt gesynchroniseerd.
 >
@@ -516,11 +516,11 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
 
    * de **drop-down selecteur van de Acties** **synchroniseer huidig element met meester**
 
-     ![ synchroniserend met meester ](assets/cfm-variations-11a.png)
+     ![&#x200B; synchroniserend met meester &#x200B;](assets/cfm-variations-11a.png)
 
    * de toolbar van de het volledig-schermredacteur - **Synchronisatie met meester**
 
-     ![ synchroniserend met meester ](assets/cfm-variations-11b.png)
+     ![&#x200B; synchroniserend met meester &#x200B;](assets/cfm-variations-11b.png)
 
 1. Stramien en variaties worden naast elkaar weergegeven:
 
@@ -528,6 +528,6 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
    * rood geeft aan dat inhoud is verwijderd (uit de variatie)
    * blauw geeft vervangen tekst aan
 
-   ![ synchroniserend met meester ](assets/cfm-variations-11c.png)
+   ![&#x200B; synchroniserend met meester &#x200B;](assets/cfm-variations-11c.png)
 
 1. Selecteer **Synchroniseer**, wordt de variatie bijgewerkt en getoond.

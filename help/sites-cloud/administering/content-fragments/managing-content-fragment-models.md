@@ -14,78 +14,78 @@ ht-degree: 0%
 
 # Modellen voor inhoudsfragmenten beheren {#managing-content-fragment-models}
 
-Van de console van het Fragment van de Inhoud kunt u uw Modellen van het Fragment van de Inhoud beheren, dan [ open de redacteur ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) om de structuur te bepalen.
+Van de console van het Fragment van de Inhoud kunt u uw Modellen van het Fragment van de Inhoud beheren, dan [&#x200B; open de redacteur &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) om de structuur te bepalen.
 
-De Modellen van het Fragment van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service bepalen de structuur voor de inhoud van uw [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md). Deze fragmenten kunnen vervolgens worden gebruikt als basis voor inhoud zonder kop of voor het ontwerpen van pagina&#39;s.
+De Modellen van het Fragment van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service bepalen de structuur voor de inhoud van uw [&#x200B; Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md). Deze fragmenten kunnen vervolgens worden gebruikt als basis voor inhoud zonder kop of voor het ontwerpen van pagina&#39;s.
 
 >[!NOTE]
 >
->Ben me bewust van de [ Beste praktijken ](/help/sites-cloud/administering/content-fragments/overview.md) wanneer het werken met uw Modellen van het Fragment van de Inhoud en de Fragmenten van de Inhoud.
+>Ben me bewust van de [&#x200B; Beste praktijken &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) wanneer het werken met uw Modellen van het Fragment van de Inhoud en de Fragmenten van de Inhoud.
 
 >[!NOTE]
 >
 >Deze pagina behandelt de sectie van de console die (slechts) de Modellen van het Fragment van de Inhoud toont. Zie voor andere deelvensters:
 >
 >* [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/managing.md)
->* [ het Bekijken van en het Leiden Assets in de Console van Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+>* [&#x200B; het Bekijken van en het Leiden Assets in de Console van Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 >[!NOTE]
 >
->De Fragmenten van de inhoud worden opgeslagen als **Assets**. De Modellen van het Fragment van de inhoud worden hoofdzakelijk geleid van de **console van de Fragmenten van de Inhoud**, maar kunnen ook van de [ Assets ](/help/assets/content-fragments/content-fragments-managing.md) console en de optie [ Modellen van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md) worden geleid die van **Hulpmiddelen** - **Algemene** beschikbaar is.
+>De Fragmenten van de inhoud worden opgeslagen als **Assets**. De Modellen van het Fragment van de inhoud worden hoofdzakelijk geleid van de **console van de Fragmenten van de Inhoud**, maar kunnen ook van de [&#x200B; Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md) console en de optie [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-models.md) worden geleid die van **Hulpmiddelen** - **Algemene** beschikbaar is.
 
 ## Werken met modellen van inhoudsfragmenten {#how-to-work-with-content-fragment-models}
 
 Als een zeer snel overzicht, om met de Modellen van het Fragment van de Inhoud te werken u:
 
 1. [Functionaliteit van inhoudsfragmentmodel inschakelen voor uw instantie](/help/sites-cloud/administering/content-fragments/setup.md)
-1. [ creeer ](#creating-a-content-fragment-model) uw Model van het Fragment van de Inhoud.
-   * Op dit punt kunt u **** het model (voor gebruik ook toelaten wanneer het creëren van de Fragmenten van de Inhoud).
-1. [ bepaal ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model) de structuur van uw model.
-1. [ laat uw Model van het Fragment van de Inhoud ](#enabling-a-content-fragment-model) toe, als nog niet gedaan.
-1. [ sta uw Modellen van het Fragment van de Inhoud op de vereiste omslagen van Assets ](#allowing-content-fragment-models-assets-folder) toe door **Beleid** te vormen.
+1. [&#x200B; creeer &#x200B;](#creating-a-content-fragment-model) uw Model van het Fragment van de Inhoud.
+   * Op dit punt kunt u **&#x200B;**&#x200B;het model (voor gebruik ook toelaten wanneer het creëren van de Fragmenten van de Inhoud).
+1. [&#x200B; bepaal &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model) de structuur van uw model.
+1. [&#x200B; laat uw Model van het Fragment van de Inhoud &#x200B;](#enabling-a-content-fragment-model) toe, als nog niet gedaan.
+1. [&#x200B; sta uw Modellen van het Fragment van de Inhoud op de vereiste omslagen van Assets &#x200B;](#allowing-content-fragment-models-assets-folder) toe door **Beleid** te vormen.
 
 ## Basisstructuur en verwerking van modellen van inhoudsfragmenten in de console {#basic-structure-handling-content-fragment-models-console}
 
-U kunt het uiterst linkerpaneel van de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) gebruiken om **Modellen van het Fragment van de Inhoud te selecteren** als middeltype aan mening, doorbladeren en leiden:
+U kunt het uiterst linkerpaneel van de [&#x200B; console van de Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) gebruiken om **Modellen van het Fragment van de Inhoud te selecteren** als middeltype aan mening, doorbladeren en leiden:
 
-![ de console van Fragmenten van de Inhoud - navigatie ](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
+![&#x200B; de console van Fragmenten van de Inhoud - navigatie &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 Hiermee wordt de weergave voor Modellen van inhoudsfragmenten geopend:
 
-![ de console van Fragmenten van de Inhoud - het Leiden Modellen van het Fragment van de Inhoud ](assets/cf-managing-content-fragment-models.png)
+![&#x200B; de console van Fragmenten van de Inhoud - het Leiden Modellen van het Fragment van de Inhoud &#x200B;](assets/cf-managing-content-fragment-models.png)
 
 Hier kunt u zien dat er drie hoofdgebieden zijn:
 
 * De bovenste werkbalk
    * Biedt standaard AEM-functionaliteit
    * Toont uw IMS-organisatie
-   * Verstrekt diverse [ acties ](#actions-unselected), die [ kunnen veranderen wanneer u één, of meer, modellen ](#actions-selected-content-fragment-models) selecteert
+   * Verstrekt diverse [&#x200B; acties &#x200B;](#actions-unselected), die [&#x200B; kunnen veranderen wanneer u één, of meer, modellen &#x200B;](#actions-selected-content-fragment-models) selecteert
 * Het linkerdeelvenster
-   * Toont de [ wegen aan alle configuraties ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) die als omslagen worden vermeld
+   * Toont de [&#x200B; wegen aan alle configuraties &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) die als omslagen worden vermeld
    * Hier kunt u de mappenstructuur verbergen of weergeven
    * U kunt een specifieke map van de boomstructuur selecteren
    * Dit kan worden aangepast om geneste mappen (subconfiguraties) weer te geven
-   * Naast de Modellen van het Fragment van de Inhoud, kunt u [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md) of [ Assets ](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) bekijken; u kunt, verbindingen aan de panelen ook comprimeren of uitbreiden
+   * Naast de Modellen van het Fragment van de Inhoud, kunt u [&#x200B; Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md) of [&#x200B; Assets &#x200B;](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) bekijken; u kunt, verbindingen aan de panelen ook comprimeren of uitbreiden
 * Het hoofd-/rechterdeelvenster - vanaf hier kunt u:
    * Zie de lijst met alle modellen van inhoudsfragmenten in de geselecteerde map:
       * De Modellen van het Fragment van de inhoud van de geselecteerde omslag, en alle subfolders zullen worden getoond:
          * De plaats wordt aangegeven door de broodkruimels; deze kunnen ook worden gebruikt om de plaats te veranderen:
       * [Informatie wordt over elk model weergegeven](#information-content-fragment-models)
          * [U kunt selecteren welke kolommen u wilt weergeven](#select-columns-console)
-      * [ de Diverse gebieden van informatie ](#information-content-fragment-models) over een Model van het Fragment van de Inhoud verstrekken verbindingen; afhankelijk van het gebied, kunnen deze:
+      * [&#x200B; de Diverse gebieden van informatie &#x200B;](#information-content-fragment-models) over een Model van het Fragment van de Inhoud verstrekken verbindingen; afhankelijk van het gebied, kunnen deze:
          * Open het juiste model in de editor
          * Informatie weergeven over het pad naar de configuratie
          * Informatie weergeven over de status van het model
-      * [ Bepaalde andere gebieden van informatie ](#information-content-fragments) over een Model van het Fragment van de Inhoud kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt:
+      * [&#x200B; Bepaalde andere gebieden van informatie &#x200B;](#information-content-fragments) over een Model van het Fragment van de Inhoud kan voor [&#x200B; Snelle het Filtreren &#x200B;](#fast-filtering) worden gebruikt:
          * Selecteer een waarde in de kolom en deze wordt direct toegepast als filter
          * Het snelle filtreren wordt gesteund voor **Gewijzigd door**, **Gepubliceerd door** en **Status** kolommen.
       * Als u de muisaanwijzer op de kolomkoppen gebruikt, worden een vervolgkeuzelijst met handelingen en schuifregelaars voor de breedte weergegeven. Met deze opties kunt u:
          * Sorteren - selecteer de gewenste actie voor oplopend of aflopend
 Hiermee wordt de hele tabel gesorteerd op basis van die kolom. Sorteren is alleen beschikbaar voor de desbetreffende kolommen.
          * De grootte van de kolom wijzigen - met de actie of de breedtegraadregelaars
-      * Selecteer één, of meer, modellen voor verdere [ actie ](#actions-selected-content-fragment-models)
-   * Open het [ paneel van de Filter ](#filter-content-fragment-models)
-   * Een selectie van [ toetsenbordkortere weg ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) is beschikbaar voor gebruik in deze console
+      * Selecteer één, of meer, modellen voor verdere [&#x200B; actie &#x200B;](#actions-selected-content-fragment-models)
+   * Open het [&#x200B; paneel van de Filter &#x200B;](#filter-content-fragment-models)
+   * Een selectie van [&#x200B; toetsenbordkortere weg &#x200B;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) is beschikbaar voor gebruik in deze console
 
 ## De informatie over uw modellen van het Fragment van de Inhoud wordt verstrekt die {#information-content-fragment-models}
 
@@ -100,36 +100,36 @@ Het hoofd/juiste paneel (lijstmening) van de console verstrekt een waaier van in
 Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 * **Status**
    * Alleen informatie.
-   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt
+   * Kan voor [&#x200B; Snelle het Filtreren &#x200B;](#fast-filtering) worden gebruikt
 * **Status van de Replicatie**
    * Alleen informatie.
-   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
+   * Kan voor [&#x200B; Snelle het Filtreren &#x200B;](#fast-filtering) worden gebruikt.
 * **Voorproef**
    * Alleen informatie.
 * **gewijzigd bij**
    * Alleen informatie.
-   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
+   * Kan voor [&#x200B; Snelle het Filtreren &#x200B;](#fast-filtering) worden gebruikt.
 * **gewijzigd door**
    * Alleen informatie.
-   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
+   * Kan voor [&#x200B; Snelle het Filtreren &#x200B;](#fast-filtering) worden gebruikt.
 * **Markeringen**
    * Alleen informatie.
    * Hiermee opent u een dialoogvenster met alle codes die betrekking hebben op het model.
-   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
+   * Kan voor [&#x200B; Snelle het Filtreren &#x200B;](#fast-filtering) worden gebruikt.
 * **die bij** wordt gepubliceerd
    * Alleen informatie.
-   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
+   * Kan voor [&#x200B; Snelle het Filtreren &#x200B;](#fast-filtering) worden gebruikt.
 * **die door** wordt gepubliceerd
    * Alleen informatie.
-   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
+   * Kan voor [&#x200B; Snelle het Filtreren &#x200B;](#fast-filtering) worden gebruikt.
 * **die door** wordt gebruikt
    * Hiermee opent u een dialoogvenster met de inhoudsfragmenten die op het model zijn gebaseerd. De lijst bevat koppelingen waarmee u fragmenten rechtstreeks kunt openen.
 
 ## Modeleigenschappen {#model-properties}
 
-Wanneer u een specifiek model selecteert, worden de eigenschappen van dat model getoond (zoals bepaald wanneer [ creërend het model ](#creating-a-content-fragment-model)). Als het model niet **Vergrendeld** is, dan kunnen sommige punten worden bijgewerkt. U kunt het informatiepictogram (naast de model **Titel**) ook gebruiken om dit informatiepaneel te openen en te sluiten.
+Wanneer u een specifiek model selecteert, worden de eigenschappen van dat model getoond (zoals bepaald wanneer [&#x200B; creërend het model &#x200B;](#creating-a-content-fragment-model)). Als het model niet **Vergrendeld** is, dan kunnen sommige punten worden bijgewerkt. U kunt het informatiepictogram (naast de model **Titel**) ook gebruiken om dit informatiepaneel te openen en te sluiten.
 
-![ de console van Fragmenten van de Inhoud - Informatie voor een geselecteerd Model van het Fragment van de Inhoud ](assets/cf-managing-content-fragment-models-selected.png)
+![&#x200B; de console van Fragmenten van de Inhoud - Informatie voor een geselecteerd Model van het Fragment van de Inhoud &#x200B;](assets/cf-managing-content-fragment-models-selected.png)
 
 * **[Weg](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Status](#enabling-a-content-fragment-model)**
@@ -155,8 +155,8 @@ Wanneer u een specifiek model selecteert, worden de eigenschappen van dat model 
 
 Nadat u een map hebt geselecteerd (in het linkerdeelvenster), kunt u een reeks handelingen gebruiken, rechtstreeks of na het selecteren van een specifiek model:
 
-* De diverse acties zijn direct [ beschikbaar bij de console ](#actions-unselected)
-* U kunt [ selecteren één, of meer, Modellen van het Fragment van de Inhoud om aangewezen acties ](#actions-selected-content-fragment) te tonen
+* De diverse acties zijn direct [&#x200B; beschikbaar bij de console &#x200B;](#actions-unselected)
+* U kunt [&#x200B; selecteren één, of meer, Modellen van het Fragment van de Inhoud om aangewezen acties &#x200B;](#actions-selected-content-fragment) te tonen
 
 ### Handelingen (niet geselecteerd) {#actions-unselected}
 
@@ -169,22 +169,22 @@ Bepaalde acties zijn beschikbaar op de console - nadat u een map hebt geselectee
 Als u een specifiek model selecteert, wordt een werkbalk geopend die is toegespitst op de acties die beschikbaar zijn voor dat model. U kunt ook meerdere modellen selecteren. De beschikbare acties worden dienovereenkomstig aangepast.
 
 * **[geeft](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)** uit om uw Model van het Fragment van de Inhoud te bepalen.
-* **[publiceer](#publishing-a-content-fragment-model)** en **[unpublish](#unpublishing-a-content-fragment-model)** aan of [ publiceer ](/help/implementing/cloud-manager/manage-environments.md#environment-types) of [ Voorproef ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) rijen.
+* **[publiceer](#publishing-a-content-fragment-model)** en **[unpublish](#unpublishing-a-content-fragment-model)** aan of [&#x200B; publiceer &#x200B;](/help/implementing/cloud-manager/manage-environments.md#environment-types) of [&#x200B; Voorproef &#x200B;](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) rijen.
 * **Slot**/**ontgrendelt** om te controleren of een gebruiker wordt toegestaan om het Model te wijzigen.
 * **Exemplaar** uw model.
-* **[laat](#enabling-a-content-fragment-model)** toe/**[](#disabling-a-content-fragment-model)** onbruikbaar maken om te controleren of een gebruiker wordt toegestaan om tot Inhoudsfragmenten te leiden die op dit model worden gebaseerd.
+* **[laat](#enabling-a-content-fragment-model)** toe/**[&#128279;](#disabling-a-content-fragment-model)** onbruikbaar maken om te controleren of een gebruiker wordt toegestaan om tot Inhoudsfragmenten te leiden die op dit model worden gebaseerd.
 
-Het selecteren van één enkel model toont ook de [ modeleigenschappen ](#properties) in het juiste paneel.
+Het selecteren van één enkel model toont ook de [&#x200B; modeleigenschappen &#x200B;](#properties) in het juiste paneel.
 
 ## Kolommen selecteren die worden weergegeven in de console {#select-columns-console}
 
 Zoals met andere consoles kunt u de kolommen vormen die zichtbaar, en beschikbaar voor actie zijn:
 
-![ de console van Fragmenten van de Inhoud - kolomconfiguratie ](assets/cf-managing-console-column-icon.png)
+![&#x200B; de console van Fragmenten van de Inhoud - kolomconfiguratie &#x200B;](assets/cf-managing-console-column-icon.png)
 
 Dit zal een lijst van kolommen voorstellen die u kunt verbergen of tonen:
 
-![ de console van Fragmenten van de Inhoud - kolomconfiguratie ](assets/cf-managing-content-fragment-models-column-selection.png)
+![&#x200B; de console van Fragmenten van de Inhoud - kolomconfiguratie &#x200B;](assets/cf-managing-content-fragment-models-column-selection.png)
 
 ## Filtercontentfragmentmodellen {#filter-content-fragment-models}
 
@@ -201,13 +201,13 @@ Het deelvenster Filter biedt de volgende opties:
 
 Zodra geselecteerd, wordt het **Filtreren door** opties getoond (bij de bovenkant van het belangrijkste paneel). Ze kunnen van daaruit worden geschrapt. Bijvoorbeeld:
 
-![ de console van Fragmenten van de Inhoud - het Filtreren Modellen van het Fragment van de Inhoud ](assets/cf-managing-content-fragment-models-filter.png)
+![&#x200B; de console van Fragmenten van de Inhoud - het Filtreren Modellen van het Fragment van de Inhoud &#x200B;](assets/cf-managing-content-fragment-models-filter.png)
 
 ### Snel filteren {#fast-filtering}
 
 U kunt ook een voorspelling selecteren door op een specifieke kolomwaarde in de lijst te klikken. U kunt een of meer waarden selecteren om voorspellingen te combineren.
 
-Bijvoorbeeld, selecteer **Toegelaten** in de **3} kolom van de Status {.** Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspelling en wordt de lijst dienovereenkomstig gefilterd.
+Bijvoorbeeld, selecteer **Toegelaten** in de **3&rbrace; kolom van de Status &lbrace;.** Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspelling en wordt de lijst dienovereenkomstig gefilterd.
 
 >[!NOTE]
 >
@@ -215,18 +215,18 @@ Bijvoorbeeld, selecteer **Toegelaten** in de **3} kolom van de Status {.** Wanne
 
 >[!NOTE]
 >
->Het snelle Filteren werkt op de zelfde manier zoals voor [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#fast-filtering) in de console.
+>Het snelle Filteren werkt op de zelfde manier zoals voor [&#x200B; Fragmenten van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#fast-filtering) in de console.
 
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
-1. Navigeer aan de omslag aangewezen aan uw [ configuratie, of subconfiguration ](/help/sites-cloud/administering/content-fragments/setup.md).
+1. Navigeer aan de omslag aangewezen aan uw [&#x200B; configuratie, of subconfiguration &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md).
 1. Het gebruik **creeert** om de dialoog te openen.
 
    >[!CAUTION]
    >
    >**creeer** optie zal slechts beschikbaar zijn:
    >
-   >* Als het [ gebruik van de Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/setup.md) is toegelaten
+   >* Als het [&#x200B; gebruik van de Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md) is toegelaten
    >* als u de map hebt geselecteerd waarin u het model wilt maken.
 
 1. Selecteer het **Weg** aan de configuratie en specificeer de **Naam**.
@@ -242,13 +242,13 @@ Bijvoorbeeld, selecteer **Toegelaten** in de **3} kolom van de Status {.** Wanne
    * **Titel**
 Als u eerst de **Titel** ingaat, zal de **Naam** van dat worden geproduceerd.
    * a **Beschrijving**
-   * **laat model** toe [ laat het model ](#enabling-disabling-a-content-fragment-model) toe
+   * **laat model** toe [&#x200B; laat het model &#x200B;](#enabling-disabling-a-content-fragment-model) toe
 
    >[!NOTE]
    >
-   >Zie [ Model van het Fragment van de Inhoud - Eigenschappen ](#model-properties) voor volledige details.
+   >Zie [&#x200B; Model van het Fragment van de Inhoud - Eigenschappen &#x200B;](#model-properties) voor volledige details.
 
-   ![ Titel en beschrijving ](assets/cf-managing-content-fragment-models-create.png)
+   ![&#x200B; Titel en beschrijving &#x200B;](assets/cf-managing-content-fragment-models-create.png)
 
 1. Het gebruik **creeert** om het lege model te bewaren, of **creeert en opent**.
 
@@ -260,11 +260,11 @@ Nadat een model is gemaakt, moet het zijn ingeschakeld zodat het:
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
 * Is beschikbaar aan GraphQL; zo wordt het schema geproduceerd.
 
-U kunt **** een model toelaten:
+U kunt **&#x200B;**&#x200B;een model toelaten:
 
 * Bij het maken van een nieuw model
    * Er wordt een optie weergegeven in het dialoogvenster.
-* Wanneer een model **** specifiek is onbruikbaar gemaakt
+* Wanneer een model **&#x200B;**&#x200B;specifiek is onbruikbaar gemaakt
    * Wanneer het vereiste Model wordt geselecteerd, **laat** actie toe is beschikbaar in de hoogste toolbar.
 
 ### Een inhoudsfragmentmodel uitschakelen {#disabling-a-content-fragment-model}
@@ -287,7 +287,7 @@ Om inhoudsbeheer uit te voeren, kunt u **Beleid** op de omslag van Assets vormen
 
 >[!NOTE]
 >
->Het mechanisme is gelijkaardig aan [ toestaand paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) voor een pagina, en zijn kinderen, in geavanceerde eigenschappen van een pagina.
+>Het mechanisme is gelijkaardig aan [&#x200B; toestaand paginasjablonen &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) voor een pagina, en zijn kinderen, in geavanceerde eigenschappen van een pagina.
 
 Om het **Beleid** voor **toegelaten Modellen van het Fragment van de Inhoud te vormen**:
 
@@ -307,7 +307,7 @@ Om het **Beleid** voor **toegelaten Modellen van het Fragment van de Inhoud te v
 
      U kunt meerdere modellen toestaan.
 
-   ![ Beleid van het Model van het Fragment van de Inhoud ](assets/cf-cfmodels-policy-assets-folder.png)
+   ![&#x200B; Beleid van het Model van het Fragment van de Inhoud &#x200B;](assets/cf-cfmodels-policy-assets-folder.png)
 
 1. **sparen** om het even welke veranderingen.
 
@@ -369,7 +369,7 @@ De gepubliceerde status wordt vermeld in de console.
 
 1. De workflow voor het ongedaan maken van de publicatie van de geselecteerde modellen en de bijbehorende referenties wordt gestart. De niet gepubliceerde status wordt dan getoond in de console.
 
-Als u de publicatie probeert ongedaan te maken van een model dat momenteel wordt gebruikt door een of meer fragmenten, wordt een foutwaarschuwing weergegeven. Het bericht stelt voor dat u het [ paneel van Verwijzingen ](/help/sites-cloud/authoring/basic-handling.md#references) controleert om verder te onderzoeken:
+Als u de publicatie probeert ongedaan te maken van een model dat momenteel wordt gebruikt door een of meer fragmenten, wordt een foutwaarschuwing weergegeven. Het bericht stelt voor dat u het [&#x200B; paneel van Verwijzingen &#x200B;](/help/sites-cloud/authoring/basic-handling.md#references) controleert om verder te onderzoeken:
 
 ## Vergrendelde modellen van inhoudsfragmenten {#locked-content-fragment-models}
 
@@ -409,7 +409,7 @@ U kunt **Vergrendelde** modellen van of de console, of modelredacteur beheren:
 
    * U kunt **een model ontgrendelen** om uitgeeft toe te laten.
 
-     Als u **** selecteert ontgrendel wordt een waarschuwing getoond, en u moet de **ontgrendelen** actie bevestigen.
+     Als u **&#x200B;**&#x200B;selecteert ontgrendel wordt een waarschuwing getoond, en u moet de **ontgrendelen** actie bevestigen.
 
      Vervolgens kunt u het model openen en bewerken.
 
@@ -424,7 +424,7 @@ U kunt **Vergrendelde** modellen van of de console, of modelredacteur beheren:
 
    * Als u **uitgezocht geef** uit, kunt u uw updates uitgeven en opslaan:
 
-     ![ geef uit - het gesloten Model van het Fragment van de Inhoud ](assets/cf-cfmodels-editor-locked-edit.png)
+     ![&#x200B; geef uit - het gesloten Model van het Fragment van de Inhoud &#x200B;](assets/cf-cfmodels-editor-locked-edit.png)
 
      >[!NOTE]
      >
