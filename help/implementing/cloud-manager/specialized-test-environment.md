@@ -79,6 +79,6 @@ Als **toevoegt milieu** optie (gehandicapt) wordt gedimd, kan het aan een gebrek
 
 ## Aanvullende bronnen {#additional-resources}
 
-* Video: [&#x200B; Begrijpend milieutypes in AEM Cloud Manager &#x200B;](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* Video: [&#x200B; Begrijpend milieutypes in AEM Cloud Manager &#x200B;](https://experienceleague.adobe.com/nl/perspectives/cloud-manager-environment-types)
 * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md)
 
