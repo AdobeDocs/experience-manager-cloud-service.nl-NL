@@ -1,20 +1,18 @@
 ---
-title: De huidige Nota's van de Versie voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Huidige versienota's voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Nota's van de versie voor 2025.11.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2025.11.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: 2cc6f1bea3fc9cd56a20048db0ce5357dbb5ee0e
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1461'
 ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2025.11.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de functierelease voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2025.11.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.12.0) is 11 december 2025. De volgende release met functies (2026.1.0) is gepland voor 29 januari 2026.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.11.0) is 20 november 2025. De volgende release met functies (2025.12.0) is gepland voor 11 december 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -46,7 +44,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## Medewerkers in AEM {#agents-in-aem}
 
-AEM biedt een reeks agents waarmee u het maken van inhoud kunt versnellen en wijzigingen automatisch kunt ordenen. Voor meer informatie, zie [ Overzicht van Agenten in AEM ](/help/ai-in-aem/agents/overview.md).
+AEM biedt een reeks agents waarmee u het maken van inhoud kunt versnellen en wijzigingen automatisch kunt ordenen. Voor meer informatie, zie [ het Overzicht van Agenten ](/help/ai-in-aem/agents/overview.md).
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -111,7 +109,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Opkomende Java API-implementaties {#java-api-deprecation}
 
-Verschillende vervangen API&#39;s zijn gemarkeerd voor verwijdering op 31 augustus en moeten daarom niet langer worden vermeld. U ontvangt meldingen van Actions Center als verouderd API-gebruik in uw code wordt gedetecteerd. Na 29 januari worden tijdens Cloud Manager builds berichten weergegeven om het belang van het verwijderen van het gebruik te versterken. Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
+Verschillende vervangen API&#39;s zijn gemarkeerd voor verwijdering op 31 augustus en moeten daarom niet langer worden vermeld. U ontvangt meldingen van het Actions Center als verouderd API-gebruik in uw code wordt gedetecteerd. Na 3 december verschijnen er berichten tijdens Cloud Manager-builds om het belang van het verwijderen van het gebruik te versterken. Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
 
 +++ Uitvouwen om de afgekeurde Java API&#39;s weer te geven
 
@@ -156,7 +154,7 @@ Adobe bevorderde **het Stadium** en **de milieu&#39;s van de Productie** aan hoo
 
 Zoals vermeld in de opmerkingen bij de release van april, moeten AEM Java-logboeken een standaardindeling gebruiken voor betrouwbare bewaking in alle klantomgevingen. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [ Registreren artikel ](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Beginnend op **Januari 29th**, zullen om het even welke niet gestaafde overrides van het douaneregistreren worden genegeerd. Op basis van onze analyse zullen de meeste klanten niet worden beïnvloed en heeft Adobe contact opgenomen met klanten van wie de huidige configuratie mogelijk wordt beïnvloed.
+Beginnend op **10th van 10 december {, zullen om het even welke niet gestaafde overrides van het douaneregistreren worden genegeerd.** Op basis van onze analyse zullen de meeste klanten niet worden beïnvloed en heeft Adobe contact opgenomen met klanten van wie de huidige configuratie mogelijk wordt beïnvloed.
 
 Gelieve te herzien en bij te werken om het even welke stroomafwaartse processen die zich op het gedrag van het douaneregistreren baseren. Bijvoorbeeld:
 
@@ -198,6 +196,15 @@ Met Edge-verificatie kunt u de toegang tot Edge Delivery Services-pagina&#39;s b
 
 Als geinteresseerd, gelieve [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval en om het even welke vragen te e-mailen u kunt hebben.
 
+<!--
+#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
+
 #### Kanarische productie-inzetposten naar testcode vóór toelating van het verkeer (Beta-programma) {#canary-beta}
 
 Valideer een productie bouwt met intern-slechts testverkeer alvorens het aan eind - gebruikers bloot te stellen. Schip aan productie, route slechts kanarieverkeer (gebruikend een speciale kopbal), monitorgedrag, dan of bevordert aan levend verkeer of rol terug-zonder klanten te beïnvloeden.
@@ -215,17 +222,17 @@ We bereiden ons voor op het starten van het AI Answers Beta-programma en nodigen
 
 Om participatie te verzoeken of updates te ontvangen, gelieve [ feedback-ai-answers@adobe.com ](mailto:feedback-ai-answers@adobe.com) te contacteren.
 
-#### Momentopnamen voor RDE&#39;s (Beta-programma) {#rde-snapshot-program}
-
-In bèta, steunen de Snelle Milieu&#39;s van de Ontwikkeling (RDEs) nu een eigenschap om een momentopname van de huidige staat van code en inhoud te nemen, die op een recentere tijd kan worden hersteld. Dit kan nuttig zijn wanneer het synchroniseren van code die kan moeten worden teruggekeerd, of wanneer het schakelen tussen ontwikkeling van verschillende eigenschappen. Het is ook mogelijk om alleen de veranderbare inhoud te herstellen als een bekend beginpunt voor het testen.
-
-Gelieve te e-mail [ aemcs-rde-support@adobe.com ](mailto:aemcs-rde-support@adobe.com) als er in het gebruiken van en het verstrekken van terugkoppelt op deze eigenschap interesseert.
-
-#### AEM-ontwikkeling versnellen met AI (Alpha-programma) {#ai-dev-alpha}
+#### AEM-ontwikkeling versnellen met AI (Alpha-programma)  {#ai-dev-alpha}
 
 AEM Java-Stapel de teams gebruiken meer en meer de AI-bijgewoonde ontwikkeling in hulpmiddelen zoals Cursor, de Code van Claude, Visual Studio, en IntelliJ om eigenschaplevering te versnellen en codekwaliteit te verbeteren. We verzamelen praktijkervaringen om toekomstige door Adobe ondersteunde AI-mogelijkheden vorm te geven.
 
 Deel wat voor uw team-en wat u Adobe zou willen verstrekken-door [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) te e-mailen.
+
+#### Momentopnamen voor RDE&#39;s (Alpha-programma) {#rde-snapshot-program}
+
+In alfa, steunen de Snelle Milieu&#39;s van de Ontwikkeling (RDEs) nu een eigenschap om een momentopname van de huidige staat van code en inhoud te nemen, die op een recentere tijd kan worden hersteld. Dit kan nuttig zijn wanneer het synchroniseren van code die kan moeten worden teruggekeerd, of wanneer het schakelen tussen ontwikkeling van verschillende eigenschappen. Het is ook mogelijk om alleen de veranderbare inhoud te herstellen als een bekend beginpunt voor het testen.
+
+Gelieve te e-mail [ aemcs-rde-support@adobe.com ](mailto:aemcs-rde-support@adobe.com) als er belang in het verstrekken van terugkoppelt op deze eigenschap is.
 
 #### Uitgebreide Application Performance Monitoring (APM) (Alpha-programma) {#apm-alpha}
 
