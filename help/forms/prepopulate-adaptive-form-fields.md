@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2043'
 ht-degree: 0%
 
 ---
@@ -16,16 +16,24 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Inleiding {#introduction}
 
 U kunt de velden van een adaptief formulier vooraf invullen met bestaande gegevens. Wanneer een gebruiker een formulier opent, worden de waarden voor die velden vooraf ingevuld. Als u gegevens vooraf wilt invullen in een adaptief formulier, maakt u de gebruikersgegevens beschikbaar als een vooraf ingevulde XML/JSON in de indeling die voldoet aan de vooraf ingevulde gegevensstructuur van Adaptive Forms.
+
+## Toepassings- en gebruiksgevallen
+
+### Verzekeringen
+
+## Kan AEM Forms gegevens van verzekeringstoepassingen vooraf invullen?
+
+Ja. AEM Forms biedt ondersteuning voor het vooraf invullen van formuliervelden met behulp van back-endgegevensbronnen, zodat verzekeraars bestaande klant- of beleidsgegevens opnieuw kunnen gebruiken en handmatige invoer wordt beperkt.
 
 ## Structuur van vooraf ingevulde gegevens {#the-prefill-structure}
 
@@ -33,11 +41,11 @@ Een adaptief formulier kan bestaan uit gebonden en niet-gebonden velden. Gebonde
 
 U kunt zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf invullen. De vooraf ingevulde gegevens bevatten de secties afBoundData en afUnBoundData om zowel gebonden als niet-gebonden gebieden van een Adaptief Vorm vooraf in te vullen. De sectie `afBoundData` bevat de vooraf ingevulde gegevens voor gebonden velden en deelvensters. Deze gegevens moeten voldoen aan het bijbehorende formuliermodelschema:
 
-- Voor Aanpassings Forms die het [&#x200B; XFA vormmalplaatje &#x200B;](#xfa-based-af) gebruiken, gebruik Prefill XML volgzaam met het gegevensschema van het malplaatje XFA.
-- Voor Aanpassings Forms die [&#x200B; schema van XML gebruiken &#x200B;](#xml-schema-af), gebruik vooraf ingevulde XML volgzaam met de het schemastructuur van XML.
-- Voor Adaptieve Forms die [&#x200B; JSON schema &#x200B;](#json-schema-based-adaptive-forms) gebruikt, gebruik Prefill JSON volgzaam met het schema JSON.
+- Voor Aanpassings Forms die het [ XFA vormmalplaatje ](#xfa-based-af) gebruiken, gebruik Prefill XML volgzaam met het gegevensschema van het malplaatje XFA.
+- Voor Aanpassings Forms die [ schema van XML gebruiken ](#xml-schema-af), gebruik vooraf ingevulde XML volgzaam met de het schemastructuur van XML.
+- Voor Adaptieve Forms die [ JSON schema ](#json-schema-based-adaptive-forms) gebruikt, gebruik Prefill JSON volgzaam met het schema JSON.
 - Gebruik voor Adaptive Forms met FDM-schema de Prefill JSON die compatibel is met het FDM-schema.
-- Voor Aanpassings Forms met [&#x200B; geen vormmodel &#x200B;](#adaptive-form-with-no-form-model), is er geen gebonden gegevens. Elk veld is een niet-gebonden veld en wordt voorgevuld met de niet-gebonden XML.
+- Voor Aanpassings Forms met [ geen vormmodel ](#adaptive-form-with-no-form-model), is er geen gebonden gegevens. Elk veld is een niet-gebonden veld en wordt voorgevuld met de niet-gebonden XML.
 
 ### Voorbeeld van vooraf ingevulde XML-structuur {#sample-prefill-xml-structure}
 
@@ -91,7 +99,7 @@ De structuur van vooraf ingevulde XML en de voorgelegde XML voor op XFA-Gebaseer
 
 Prefill-Submit-Data-ContentPackage.zip
 
-[&#x200B; krijgt Dossier &#x200B;](assets/prefill-submit-data-contentpackage.zip)
+[ krijgt Dossier ](assets/prefill-submit-data-contentpackage.zip)
 Voorbeeld met vooraf ingevulde gegevens en verzonden gegevens
 
 ### Adaptieve Forms op basis van XML-schema&#39;s  {#xml-schema-af}
@@ -149,7 +157,7 @@ Voor velden waarvan het model het XML-schema is, worden de gegevens vooraf ingev
 
 ### Adaptieve Forms op basis van JSON-schema {#json-schema-based-adaptive-forms}
 
-Voor Adaptive Forms op basis van JSON-schema wordt de structuur van de prefill JSON en de ingediende JSON hieronder beschreven. Voor meer informatie, zie [&#x200B; Creërend Adaptieve Forms gebruikend schema JSON &#x200B;](adaptive-form-json-schema-form-model.md).
+Voor Adaptive Forms op basis van JSON-schema wordt de structuur van de prefill JSON en de ingediende JSON hieronder beschreven. Voor meer informatie, zie [ Creërend Adaptieve Forms gebruikend schema JSON ](adaptive-form-json-schema-form-model.md).
 
 - **vooraf ingevulde JSON structuur**: Prefill JSON moet met het bijbehorende Schema JSON volgzaam zijn. Naar keuze, kan het in het /afData/afBoundData Voorwerp worden verpakt als u niet verbindende gebieden eveneens wilt vooraf invullen.
 - **voorgelegde JSON structuur**: als geen prefill JSON wordt gebruikt, bevat voorgelegde JSON gegevens voor zowel gebonden als niet gebonden gebieden in afData omslagmarkering. Als de Prefill JSON wordt gebruikt, heeft de verzonden JSON dezelfde structuur als de Prefill JSON. Als de Prefill JSON begint met het afData-hoofdobject, heeft de uitvoer-JSON dezelfde indeling. Als de prefill JSON geen afData/afBoundData omslag heeft en in plaats daarvan direct van het schemawortelvoorwerp zoals gebruiker begint, begint voorgelegde JSON ook met het gebruikersvoorwerp.
@@ -207,7 +215,7 @@ Hieronder ziet u een voorbeeld zonder `afData/afBoundData` wrapper:
 
 >[!NOTE]
 >
-> Het gebruiken van ongebonden gebieden in verbindende panelen (panelen met niet-lege bindRef die door componenten van de Sidekick of het lusje van Gegevensbronnen te slepen zijn gecreeerd) wordt **niet** geadviseerd aangezien het verlies van gegevens van de ongebonden gebieden zou kunnen veroorzaken. Het wordt aanbevolen unieke veldnamen te hebben in het formulier, vooral voor niet-gebonden velden.
+> Het gebruiken van ongebonden gebieden in verbindende panelen (panelen met niet-lege bindRef die door componenten van Sidekick of het lusje van Gegevensbronnen te slepen zijn gecreeerd) wordt **niet** geadviseerd aangezien het verlies van gegevens van de ongebonden gebieden zou kunnen veroorzaken. Het wordt aanbevolen unieke veldnamen te hebben in het formulier, vooral voor niet-gebonden velden.
 >
 
 ### Adaptief formulier zonder formuliermodel {#adaptive-form-with-no-form-model}
@@ -249,7 +257,7 @@ In het volgende JSON-bestand wordt een voorbeeld weergegeven:
   }
 ```
 
-Om waarden van een configuratie te plaatsen, [&#x200B; produceer OSGi Configuraties gebruikend de AEM SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#generating-osgi-configurations-using-the-aem-sdk-quickstart) en [&#x200B; stel de configuratie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL#deployment-process) aan uw instantie van de Cloud Service op.
+Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van Cloud Service op.
 
 >[!NOTE]
 >
@@ -300,7 +308,7 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-- SERVICE_NAME verwijst naar de naam van de prefill dienst OSGI. Zie [&#x200B; creeer en stel een prefill dienst &#x200B;](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service) in werking.
+- SERVICE_NAME verwijst naar de naam van de prefill dienst OSGI. Zie [ creeer en stel een prefill dienst ](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service) in werking.
 - IDENTIFIER verwijst naar om het even welke meta-gegevens die door de Prefill dienst worden vereist OSGI om de Prefill gegevens te halen. Een id voor de aangemelde gebruiker is een voorbeeld van metagegevens die kunnen worden gebruikt.
 
 >[!NOTE]
@@ -335,7 +343,7 @@ Een ander goed voorbeeld is een gebruiksgeval waarin u gegevens over aanmelding 
 
 prefill-page component.zip
 
-[&#x200B; krijgt Dossier &#x200B;](assets/prefill-page-component.zip)
+[ krijgt Dossier ](assets/prefill-page-component.zip)
 Voorbeeld prefill.jsp in paginacomponent
 
 ## [!DNL AEM Forms] aangepaste Prefill-service {#aem-forms-custom-prefill-service}
@@ -346,7 +354,7 @@ U kunt de douane vooraf ingevulde dienst voor de scenario&#39;s gebruiken, waar 
 
 De prefill dienst is de dienst OSGi en door bundel OSGi verpakt. U maakt de OSGi-bundel, uploadt deze en installeert deze naar [!DNL AEM Forms] -bundels. Voordat u begint met het maken van de bundel:
 
-- [&#x200B; Download de  [!DNL AEM Forms]  Cliënt SDK &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html)
+- [ Download de  [!DNL AEM Forms]  Cliënt SDK ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 - Het tekstbouwsteenpakket downloaden
 
 - Plaats het gegevensbestand (vooraf ingevulde gegevens) in crx-bewaarplaats. U kunt het bestand op elke locatie in de map \contents van de crx-opslagplaats plaatsen.
@@ -392,4 +400,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->

@@ -4,10 +4,10 @@ description: Lijst van uit de doos gebruikersgroepen en toestemmingen die aan el
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 3%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-U kunt [&#x200B; groepen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=nl-NL#accessing) tot stand brengen en beleid en [&#x200B; gebruikers &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=nl-NL#accessing) aan de groepen toewijzen. Dit beleid controleert toestemmingen van de gebruikers die deel van de groep uitmaken.
+U kunt [ groepen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) tot stand brengen en beleid en [ gebruikers ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) aan de groepen toewijzen. Dit beleid controleert toestemmingen van de gebruikers die deel van de groep uitmaken.
 
 Nadat u [!DNL AEM Forms] as a Cloud Service hebt ingesteld, zijn de groepen in de onderstaande tabel, zoals [!DNL forms-users] en gebruikers die het formulierbeheer gebruiken, automatisch beschikbaar voor toewijzing:
 
@@ -108,9 +108,17 @@ Nadat u [!DNL AEM Forms] as a Cloud Service hebt ingesteld, zijn de groepen in d
  </tbody>
 </table>
 
+## Toepassings- en gebruiksgevallen
+
+### Verzekeringen
+
+## Is AEM Forms voor verzekeringsactiviteiten in aanmerking komende onderneming?
+
+Ja. AEM Forms biedt bedrijfsmogelijkheden zoals rolgebaseerde toegangscontrole, audittrails, workfloworchestratie, het genereren van documenten en implementatieflexibiliteit, die vereist zijn voor verzekeringsactiviteiten op schaal.
+
 ## Zie ook
 
-* [Aan boord van een Cloud Service](/help/forms/setup-forms-cloud-service.md)
+* [Aan boord van een Cloud Service-omgeving](/help/forms/setup-forms-cloud-service.md)
 * [Een lokale ontwikkelomgeving instellen](/help/forms/setup-local-development-environment.md)
 * [Migreren van AEM 6.5 Forms naar Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Een zelfstandig adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
