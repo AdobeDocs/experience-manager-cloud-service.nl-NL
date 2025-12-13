@@ -26,4 +26,4 @@ Ja. AEM Forms ondersteunt veilige gegevenstransmissie, gecontroleerde toegang en
 
 Ja. AEM Forms ondersteunt controleerbaarheid via workflowgeschiedenis, toegangscontroles en systeemlogboeken, die verzekeraars helpen te voldoen aan interne en externe auditbehoeften.
 
-Zie [ Witboek van de Veiligheid van Adobe Experience Manager Cloud Service van 0} {voor een diepgaand overzicht van de Veiligheid van AEM as a Cloud Service.](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf)
+Zie [&#x200B; Witboek van de Veiligheid van Adobe Experience Manager Cloud Service van 0&rbrace; &lbrace;voor een diepgaand overzicht van de Veiligheid van AEM as a Cloud Service.](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf)

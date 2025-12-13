@@ -15,20 +15,20 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Service is een &#39;cloud-native&#39; oplossing voor bedrijven om complexe digitale formulieren en communicatie te maken, beheren, publiceren en bijwerken terwijl ingediende gegevens worden geïntegreerd met back-endprocessen, bedrijfsregels en gegevens worden opgeslagen in een externe gegevensopslag. Het breidt [!DNL Adobe Experience Manager as a Cloud Service] uit. Meer over het schrapen, plaatsing, milieu&#39;s en andere infrastructuur leren, zie [ Een Inleiding aan de Architectuur van  [!DNL Adobe Experience Manager as a Cloud Service] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
+[!DNL Adobe Experience Manager Forms] as a Cloud Service is een &#39;cloud-native&#39; oplossing voor bedrijven om complexe digitale formulieren en communicatie te maken, beheren, publiceren en bijwerken terwijl ingediende gegevens worden geïntegreerd met back-endprocessen, bedrijfsregels en gegevens worden opgeslagen in een externe gegevensopslag. Het breidt [!DNL Adobe Experience Manager as a Cloud Service] uit. Meer over het schrapen, plaatsing, milieu&#39;s en andere infrastructuur leren, zie [&#x200B; Een Inleiding aan de Architectuur van  [!DNL Adobe Experience Manager as a Cloud Service] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
 
 AEM Forms as a Cloud Service biedt ondersteuning voor twee belangrijke gebruiksscenario&#39;s: Digital Enrollment en Customer Communications. In de volgende afbeeldingen ziet u de architectuur voor beide gebruiksgevallen.
 
 ## Forms Digital Enrollment
 
-![ Forms-Digitale Inschrijving ](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
+![&#x200B; Forms-Digitale Inschrijving &#x200B;](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
 
 ## Forms Communications
 
-![ Forms-Communication ](assets/forms-cloud-service-architecture-forms-communications.svg)
+![&#x200B; Forms-Communication &#x200B;](assets/forms-cloud-service-architecture-forms-communications.svg)
 
 ## Toepassings- en gebruiksgevallen
 
@@ -48,7 +48,7 @@ Forms as a Cloud Service bestaat uit meerdere onderdelen:
 
 ### CDN (Content Delivery Network)
 
-Elk programma van AEM Forms as a Cloud Service heeft toegang tot [ ingebouwde dienst CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). Het is opgenomen in de licentie van Forms als Cloud Services.
+Elk programma van AEM Forms as a Cloud Service heeft toegang tot [&#x200B; ingebouwde dienst CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). Het is opgenomen in de licentie van Forms als Cloud Services.
 
 ### Auteur
 
@@ -77,13 +77,13 @@ De omgekeerde Replicatie is niet beschikbaar op AEM as a Cloud Service om inhoud
 
 #### Dispatcher
 
-[ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) is het caching van Adobe Experience Manager en/of lading-in evenwicht brengend hulpmiddel dat met een onderneming-klasse Webserver kan worden gebruikt.
+[&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) is het caching van Adobe Experience Manager en/of lading-in evenwicht brengend hulpmiddel dat met een onderneming-klasse Webserver kan worden gebruikt.
 
 ### Adobe Services
 
 **Geautomatiseerde Dienst van de Omzetting van Vormen**
 
-[ de Geautomatiseerde dienst van de Omzetting van Vormen ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) zet automatisch uw vormen PDF en XFA in apparaat-vriendelijk, ontvankelijk, en op HTML5-Gebaseerde adaptieve vormen om.
+[&#x200B; de Geautomatiseerde dienst van de Omzetting van Vormen &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) zet automatisch uw vormen PDF en XFA in apparaat-vriendelijk, ontvankelijk, en op HTML5-Gebaseerde adaptieve vormen om.
 
 **Teken van Adobe**
 
@@ -110,17 +110,17 @@ Documentdiensten zijn:
 
 ### Cloud Manager
 
-Cloud Manager is een essentiële component aan [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). Het is het enig-ingangspunt voor de verrichtingen en ontwikkelaarspersoonlijkheid van onze klanten. Het is de plaats waar de AEM-programma&#39;s en -omgevingen kunnen worden beheerd. Cloud Manager is geëvolueerd als een zelfbedieningsportaal waar de belangrijkste componenten van AEM as a Cloud Service kunnen worden gecreeerd en worden gevormd:
+Cloud Manager is een essentiële component aan [&#x200B; AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). Het is het enig-ingangspunt voor de verrichtingen en ontwikkelaarspersoonlijkheid van onze klanten. Het is de plaats waar de AEM-programma&#39;s en -omgevingen kunnen worden beheerd. Cloud Manager is geëvolueerd als een zelfbedieningsportaal waar de belangrijkste componenten van AEM as a Cloud Service kunnen worden gecreeerd en worden gevormd:
 
 * Programma&#39;s maken en beheren
 * AEM-omgevingen maken en beheren binnen de programma&#39;s
 * Het creëren van en het leiden van de pijpleidingen voor het opstellen van de klantencode en configuratie aan een bepaalde milieu
 * Informatie ontvangen over belangrijke levenscyclusgebeurtenissen voor deze componenten (bijvoorbeeld productupdates)
-Voor meer informatie over Cloud Manager, zie [ Adobe Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) begrijpen en [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+Voor meer informatie over Cloud Manager, zie [&#x200B; Adobe Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) begrijpen en [&#x200B; Inleiding aan Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
 
 ### Developer Console
 
-Een Developer Console biedt verschillende details over elke Forms die wordt uitgevoerd als een Cloud Service-omgeving. Deze details zijn nuttig in het zuiveren van het milieu. Voor details, zie [ het Zuiveren AEM as a Cloud Service met Developer Console ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
+Een Developer Console biedt verschillende details over elke Forms die wordt uitgevoerd als een Cloud Service-omgeving. Deze details zijn nuttig in het zuiveren van het milieu. Voor details, zie [&#x200B; het Zuiveren AEM as a Cloud Service met Developer Console &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
 
 <!--
 
@@ -203,15 +203,15 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 
 ### Adaptief ontwerpen van formulieren {#local-development}
 
-Wanneer u een [!DNL AEM Forms] as a Cloud Service-omgeving instelt en configureert, stelt u ontwikkelings-, staging- en productieomgevingen in. Bovendien moet u een lokale ontwikkelomgeving instellen en configureren voor snelle iteraties en ontwikkeling. U kunt AEM SDK en het archief met [!DNL AEM Forms] add-onfuncties downloaden en instellen om een lokale [!DNL Forms] as a Cloud Service-ontwikkelomgeving in te stellen.  Voor gedetailleerde instructies, zie [ Opstelling een lokale ontwikkelomgeving ](setup-local-development-environment.md).
+Wanneer u een [!DNL AEM Forms] as a Cloud Service-omgeving instelt en configureert, stelt u ontwikkelings-, staging- en productieomgevingen in. Bovendien moet u een lokale ontwikkelomgeving instellen en configureren voor snelle iteraties en ontwikkeling. U kunt AEM SDK en het archief met [!DNL AEM Forms] add-onfuncties downloaden en instellen om een lokale [!DNL Forms] as a Cloud Service-ontwikkelomgeving in te stellen.  Voor gedetailleerde instructies, zie [&#x200B; Opstelling een lokale ontwikkelomgeving &#x200B;](setup-local-development-environment.md).
 
 ## Foutopsporing {#debugging}
 
-AEM as a Cloud Service draait op zelfbediening, schaalbare cloudinfrastructuur. AEM-ontwikkelaars moeten verschillende facetten van AEM as a Cloud Service begrijpen en debuggen, van het bouwen en implementeren tot het verkrijgen van details over het uitvoeren van AEM-toepassingen. Voor gedetailleerde informatie, zie [ het Zuiveren AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
+AEM as a Cloud Service draait op zelfbediening, schaalbare cloudinfrastructuur. AEM-ontwikkelaars moeten verschillende facetten van AEM as a Cloud Service begrijpen en debuggen, van het bouwen en implementeren tot het verkrijgen van details over het uitvoeren van AEM-toepassingen. Voor gedetailleerde informatie, zie [&#x200B; het Zuiveren AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
 
 
 >[!MORELIKETHIS]
 >
->* [ Inleiding aan de Mededelingen van AEM Forms as a Cloud Service ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [ AEM Forms as a Cloud Service Communicatie Batch-verwerking ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
+>* [&#x200B; Inleiding aan de Mededelingen van AEM Forms as a Cloud Service &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [&#x200B; AEM Forms as a Cloud Service Communicatie Batch-verwerking &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [&#x200B; Communicatie Verwerking - Synchrone APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications.md)

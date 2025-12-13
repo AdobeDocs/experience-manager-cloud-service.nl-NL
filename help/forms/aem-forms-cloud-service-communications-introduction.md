@@ -17,7 +17,7 @@ ht-degree: 0%
 
 > **Beschikbaarheid van de Versie**
 >
-> * **AEM 6.5**: [ Overzicht van de Diensten van het Document van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
+> * **AEM 6.5**: [&#x200B; Overzicht van de Diensten van het Document van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: Dit artikel
 
 ## Inleiding
@@ -40,7 +40,7 @@ Communicatie-API&#39;s bieden een uitgebreide set mogelijkheden voor documentver
 |---------------------|----------------------|---------------------|---------------------|-------------------|
 | Genereer gepersonaliseerde documenten door sjablonen samen te voegen met gegevens in verschillende indelingen, waaronder PDF en afdrukindelingen. | U kunt PDF-documenten programmatisch combineren, herschikken en valideren om nieuwe documentpakketten te maken. | Eigenschappen, metagegevens en inhoud uit PDF-documenten extraheren voor verdere verwerking. | Documenten converteren naar andere indelingen, waaronder PDF/A-compatibiliteitsvalidatie voor archiveringsbehoeften. | Digitale handtekeningen, certificering en versleuteling toepassen om documenten te beveiligen en te beveiligen. |
 
-De [ API verwijzingsdocumentatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt de .yaml downloaden en uploaden naar Postman om de functionaliteit van de API&#39;s te controleren.
+De [&#x200B; API verwijzingsdocumentatie &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt de .yaml downloaden en uploaden naar Postman om de functionaliteit van de API&#39;s te controleren.
 
 ## Toepassings- en gebruiksgevallen
 
@@ -56,11 +56,11 @@ Ja. Als AEM Forms wordt geïmplementeerd met aanbevolen architecturen op Adobe M
 
 ## Document genereren
 
-Via API&#39;s voor het genereren van communicatiedocumenten kunt u een sjabloon (XFA of PDF) combineren met klantgegevens (XML) om documenten te genereren in de indelingen PDF, AFP (Advanced Function Presentation) en Afdrukformaten zoals PS, PCL, DPL, IPL en ZPL. Deze APIs gebruiken PDF en de malplaatjes XFA met [ gegevens van XML ](communications-known-issues-limitations.md#form-data) om één enkel document op bestelling of veelvoudige documenten te produceren die een partijbaan gebruiken.
+Via API&#39;s voor het genereren van communicatiedocumenten kunt u een sjabloon (XFA of PDF) combineren met klantgegevens (XML) om documenten te genereren in de indelingen PDF, AFP (Advanced Function Presentation) en Afdrukformaten zoals PS, PCL, DPL, IPL en ZPL. Deze APIs gebruiken PDF en de malplaatjes XFA met [&#x200B; gegevens van XML &#x200B;](communications-known-issues-limitations.md#form-data) om één enkel document op bestelling of veelvoudige documenten te produceren die een partijbaan gebruiken.
 
-Typisch, creeert u een malplaatje gebruikend [ Designer ](use-forms-designer.md) en gebruikt Mededelingen APIs om gegevens met het malplaatje samen te voegen. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
+Typisch, creeert u een malplaatje gebruikend [&#x200B; Designer &#x200B;](use-forms-designer.md) en gebruikt Mededelingen APIs om gegevens met het malplaatje samen te voegen. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
 
-![ Communicatie Werkschema van de documentgeneratie ](assets/communicaions-workflow.png)
+![&#x200B; Communicatie Werkschema van de documentgeneratie &#x200B;](assets/communicaions-workflow.png)
 
 Afhankelijk van het gebruiksgeval kunt u deze documenten ook beschikbaar stellen voor downloaden via uw website of een opslagserver.
 
@@ -70,7 +70,7 @@ Afhankelijk van het gebruiksgeval kunt u deze documenten ook beschikbaar stellen
 
 Met de API&#39;s voor het genereren van documenten kunt u een document maken in PDF- of AFP-indeling die is gebaseerd op een formulierontwerp en XML-formuliergegevens. De uitvoer is een niet-interactief document. Met andere woorden, gebruikers kunnen de formuliergegevens niet invoeren of wijzigen. Een basisworkflow is het samenvoegen van XML-formuliergegevens met een formulierontwerp om een document te maken. In de volgende afbeelding ziet u hoe een formulierontwerp en XML-formuliergegevens worden samengevoegd om een PDF-document te maken.
 
-![ creeer PDF documenten ](assets/outPutPDF_popup.png)
+![&#x200B; creeer PDF documenten &#x200B;](assets/outPutPDF_popup.png)
 Afbeelding: Standaardworkflow voor het maken van een document
 
 In de onderstaande tabel ziet u het verschil tussen de AFP- en PDF-indelingen:
@@ -89,7 +89,7 @@ In de onderstaande tabel ziet u het verschil tussen de AFP- en PDF-indelingen:
 
 De API voor het genereren van documenten retourneert het gegenereerde PDF-document of AFP-document. U kunt de gegenereerde PDF&#39;s optioneel ook uploaden naar Azure Blob Storage.
 
-<span class="preview"> Het uploaden van geproduceerde PDFs die de generatie API van het document aan het vermogen van de Opslag van Azure Blob gebruiken is onder [ Vroege Programma van de Aannemer ](/help/forms/early-access-ea-features.md). U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
+<span class="preview"> Het uploaden van geproduceerde PDFs die de generatie API van het document aan het vermogen van de Opslag van Azure Blob gebruiken is onder [&#x200B; Vroege Programma van de Aannemer &#x200B;](/help/forms/early-access-ea-features.md). U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
 #### PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL)-document maken {#create-PS-PCL-ZPL-documents}
 
@@ -99,11 +99,11 @@ U kunt API&#39;s voor het genereren van documenten gebruiken om een PostScript-d
 
 Met API&#39;s voor het genereren van documenten kunt u afzonderlijke documenten maken voor elke record in een XML-batchgegevensbron. U kunt documenten bulksgewijs en asynchroon genereren. U kunt diverse parameters voor de omzetting vormen en dan het partijproces beginnen.
 
-![ creeer PDF Documenten ](assets/ou_OutputBatchMany_popup.png)
+![&#x200B; creeer PDF Documenten &#x200B;](assets/ou_OutputBatchMany_popup.png)
 
 ## Documentmanipulatie
 
-Met API&#39;s voor het manipuleren van communicatiedocumenten (Document Transformation) kunt u PDF-documenten combineren en opnieuw rangschikken. Doorgaans maakt u een DDX en verzendt u deze naar API&#39;s voor documentmanipulatie om een document samen te stellen of opnieuw te rangschikken. Het [ DDX- document ](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) verstrekt instructies op hoe te om de brondocumenten te gebruiken om een reeks vereiste documenten te veroorzaken. De DDX-referentiedocumentatie biedt gedetailleerde informatie over alle ondersteunde bewerkingen.
+Met API&#39;s voor het manipuleren van communicatiedocumenten (Document Transformation) kunt u PDF-documenten combineren en opnieuw rangschikken. Doorgaans maakt u een DDX en verzendt u deze naar API&#39;s voor documentmanipulatie om een document samen te stellen of opnieuw te rangschikken. Het [&#x200B; DDX- document &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) verstrekt instructies op hoe te om de brondocumenten te gebruiken om een reeks vereiste documenten te veroorzaken. De DDX-referentiedocumentatie biedt gedetailleerde informatie over alle ondersteunde bewerkingen.
 
 ### Belangrijkste mogelijkheden voor documentmanipulatie
 
@@ -117,7 +117,7 @@ U kunt de API&#39;s voor documentmanipulatie gebruiken om twee of meer PDF- of X
 * Documenten samenstellen met Bates-nummering
 * Documenten samenvoegen en samenvoegen
 
-![ samenstellend een eenvoudig document van PDF van veelvoudige documenten van PDF ](assets/as_document_assembly.png)
+![&#x200B; samenstellend een eenvoudig document van PDF van veelvoudige documenten van PDF &#x200B;](assets/as_document_assembly.png)
 Afbeelding: Een eenvoudig PDF-document samenstellen op basis van meerdere PDF-documenten
 
 #### PDF-documenten demonteren
@@ -127,12 +127,12 @@ U kunt de API&#39;s voor documentmanipulatie gebruiken om een PDF-document te de
 * Pagina&#39;s uit een brondocument extraheren
 * Een brondocument splitsen op basis van bladwijzers
 
-![ het Verdelen van een brondocument dat op referenties in veelvoudige documenten wordt gebaseerd ](assets/as_intro_pdfsfrombookmarks.png)
+![&#x200B; het Verdelen van een brondocument dat op referenties in veelvoudige documenten wordt gebaseerd &#x200B;](assets/as_intro_pdfsfrombookmarks.png)
 Afbeelding: Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten
 
 >[!NOTE]
 >
-> AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. Om de lijst van gesteunde doopvonten te zien, [ klik hier ](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. Om de lijst van gesteunde doopvonten te zien, [&#x200B; klik hier &#x200B;](/help/forms/supported-out-of-the-box-fonts.md).
 
 ## Document uitnemen
 
@@ -144,7 +144,7 @@ Met de service Documentextractie kunt u de eigenschappen van een PDF-document op
 * Haal de gebruiksrechten uit die in een PDF-document zijn ingeschakeld, gebruikers halen de gebruiksrechten op die voor Adobe Acrobat Reader-uitbreidbaarheid zijn in- of uitgeschakeld.
 * Haal de metagegevens op die aanwezig zijn in een PDF-document. De metagegevens zijn informatie over het document (zoals die wordt onderscheiden van de inhoud van het document, zoals tekst en afbeeldingen). Het Adobe Extensible Metadata Platform (XMP) is een standaard voor de verwerking van metagegevens van documenten. De XMP Utilities-service kan XMP-metagegevens ophalen uit PDF-documenten en XMP-metagegevens exporteren naar PDF-documenten.
 
-De [ API verwijzingsdocumentatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en de diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt de .yaml downloaden en uploaden naar Postman om de functionaliteit van API&#39;s te controleren.
+De [&#x200B; API verwijzingsdocumentatie &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en de diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt de .yaml downloaden en uploaden naar Postman om de functionaliteit van API&#39;s te controleren.
 
 ## Documentconversie
 
@@ -186,7 +186,7 @@ U kunt deze taken uitvoeren met de API&#39;s voor codering:
 * Haal het type beveiliging op dat op een PDF-document is toegepast.
 * Retourneer het beveiligingstype dat op een PDF-document is toegepast.
 
-Zowel handtekening APIs als encryptie APIs zijn [ Synchrone APIs ](#types-of-communications-apis-types).
+Zowel handtekening APIs als encryptie APIs zijn [&#x200B; Synchrone APIs &#x200B;](#types-of-communications-apis-types).
 
 ### Documenthulpprogramma {#doc-utility}
 
@@ -248,9 +248,9 @@ De verschillende gebruiksrechtenmogelijkheden voor de uitbreiding van PDF Reader
 
 Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag en in batches:
 
-* **[Synchrone APIs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor op bestelling, lage latentie, en enige scenario&#39;s van de verslagdocumentgeneratie. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op handelingen van gebruikers. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
+* **[Synchrone APIs &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor op bestelling, lage latentie, en enige scenario&#39;s van de verslagdocumentgeneratie. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op handelingen van gebruikers. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
 
-* **[Partij APIs (Asynchrone APIs) ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** is geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Met deze API&#39;s worden documenten batchgewijs gegenereerd. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
+* **[Partij APIs (Asynchrone APIs) &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** is geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Met deze API&#39;s worden documenten batchgewijs gegenereerd. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
 
 ## Onboarding
 
@@ -262,11 +262,11 @@ Na het instappen, om Communicatie vermogen voor uw milieu van Forms as a Cloud S
 
 1. Open de optie Programma bewerken, ga naar het tabblad Oplossingen en invoegtoepassingen en selecteer de optie **[!UICONTROL Forms - Communications]** .
 
-   ![ Mededelingen ](assets/communications.png)
+   ![&#x200B; Mededelingen &#x200B;](assets/communications.png)
 
    Als u de optie **[!UICONTROL Forms - Digital Enrollment]** al hebt ingeschakeld, selecteert u de optie **[!UICONTROL Forms - Communications Add-On]** .
 
-   ![ Addon ](assets/add-on.png)
+   ![&#x200B; Addon &#x200B;](assets/add-on.png)
 
 1. Klik op **[!UICONTROL Update]**.
 
@@ -274,7 +274,7 @@ Na het instappen, om Communicatie vermogen voor uw milieu van Forms as a Cloud S
 
 >[!NOTE]
 >
-> Om documentmanipulatie APIs toe te laten en te vormen, voeg de volgende regel aan de [ configuratie van Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) toe:
+> Om documentmanipulatie APIs toe te laten en te vormen, voeg de volgende regel aan de [&#x200B; configuratie van Dispatcher &#x200B;](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) toe:
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
@@ -284,5 +284,5 @@ Na het instappen, om Communicatie vermogen voor uw milieu van Forms as a Cloud S
 * [Communicatieverwerking - synchrone API&#39;s](/help/forms/aem-forms-cloud-service-communications.md)
 * [Communicatieverwerking - Batch-API&#39;s](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 * [AEM Forms as a Cloud Service-architectuur](/help/forms/aem-forms-cloud-service-architecture.md)
-* [ API de Documentatie van de Verwijzing ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [&#x200B; API de Documentatie van de Verwijzing &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 * [Functies van programma voor vroege adoptie](/help/forms/early-access-ea-features.md)
