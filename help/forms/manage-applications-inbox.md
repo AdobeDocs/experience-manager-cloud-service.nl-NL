@@ -23,7 +23,7 @@ Een van de vele manieren om een Forms-centric workflow te starten of activeren i
 
 Daarnaast consolideert AEM Inbox meldingen en taken van verschillende AEM-componenten, waaronder Forms-workflows. Wanneer een Forms Workflow die een taakstap toewijzen bevat, wordt geactiveerd, wordt de bijbehorende toepassing weergegeven als een taak in het Postvak In van de ontvanger. Als de toegewezen persoon een groep is, wordt de taak in het Postvak In van alle groepsleden weergegeven totdat een persoon de taak aanvraagt of delegeert.
 
-De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Voor meer informatie over mening en filters, zie [&#x200B; Uw Inbox &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
+De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Voor meer informatie over mening en filters, zie [&#x200B; Uw Inbox &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=nl-NL#inbox-in-the-header).
 
 Samenvattend kunt u met Inbox een toepassing maken en toegewezen taken beheren.
 
@@ -97,7 +97,7 @@ De gedetailleerde taakmening omvat de volgende secties:
 
 #### Taakdetails {#task-details}
 
-In de sectie Taakdetails wordt informatie over de taak weergegeven. De getoonde informatie hangt van de configuratiemontages van [&#x200B; af wijst taakstap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) in het werkschema toe. In het bovenstaande voorbeeld worden de beschrijving, de status, de begindatum en de workflow weergegeven die voor de taak worden gebruikt. U kunt ook een bestand aan de taak koppelen.
+In de sectie Taakdetails wordt informatie over de taak weergegeven. De getoonde informatie hangt van de configuratiemontages van [&#x200B; af wijst taakstap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem) in het werkschema toe. In het bovenstaande voorbeeld worden de beschrijving, de status, de begindatum en de workflow weergegeven die voor de taak worden gebruikt. U kunt ook een bestand aan de taak koppelen.
 
 #### Formulier {#form}
 
@@ -105,7 +105,7 @@ Op het tabblad Formulier in het hoofdinhoudsgebied worden het verzonden formulie
 
 #### Workflowdetails {#workflow-details}
 
-Het tabblad Workflowdetails bovenaan geeft de voortgang van de taak in verschillende fasen van de workflow weer. Het toont voltooide, huidige, en hangende stadia voor de taak. De stadia voor een werkschema worden bepaald in [&#x200B; wijs taakstap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) van het bijbehorende werkschema toe.
+Het tabblad Workflowdetails bovenaan geeft de voortgang van de taak in verschillende fasen van de workflow weer. Het toont voltooide, huidige, en hangende stadia voor de taak. De stadia voor een werkschema worden bepaald in [&#x200B; wijs taakstap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem) van het bijbehorende werkschema toe.
 
 Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebied in de workflow. U kunt **[!UICONTROL View Details]** selecteren voor een voltooid werkgebied om details over dat werkgebied te kennen. Er worden opmerkingen, formulier- en taakbijlagen, status, begin- en einddatums enzovoort over de taak weergegeven.
 
@@ -113,7 +113,7 @@ Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebie
 
 #### Werkbalk Handelingen {#actions-toolbar}
 
-Op de werkbalk Handelingen staan alle beschikbare opties voor de taak. Terwijl sparen, het Terugstellen, en de Afgevaardigde standaardacties zijn, worden andere beschikbare acties gevormd in [&#x200B; toewijzen taakstap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). In het bovenstaande voorbeeld worden Goedkeuren en Afwijzen geconfigureerd in de workflow.
+Op de werkbalk Handelingen staan alle beschikbare opties voor de taak. Terwijl sparen, het Terugstellen, en de Afgevaardigde standaardacties zijn, worden andere beschikbare acties gevormd in [&#x200B; toewijzen taakstap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem). In het bovenstaande voorbeeld worden Goedkeuren en Afwijzen geconfigureerd in de workflow.
 
 Als u de taak uitvoert, gaat deze verder in de workflow.
 
@@ -128,7 +128,7 @@ In AEM Inbox worden alleen actieve taken weergegeven. Voltooide taken worden nie
 
 1. Selecteer deze optie om een taak te selecteren en klik op **[!UICONTROL Open]** .
 
-De taak wordt geopend om het document of het adaptieve formulier weer te geven dat aan de taak is gekoppeld. Voor Aanpassings Vorm, toont de taak de read-only Aanpassings Vorm of zijn Document van PDF van Verslag zoals gevormd in het lusje van de Vorm/van het Document van de [&#x200B; werkschemastap van de Taak toewijzen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem).
+De taak wordt geopend om het document of het adaptieve formulier weer te geven dat aan de taak is gekoppeld. Voor Aanpassings Vorm, toont de taak de read-only Aanpassings Vorm of zijn Document van PDF van Verslag zoals gevormd in het lusje van de Vorm/van het Document van de [&#x200B; werkschemastap van de Taak toewijzen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem).
 
 In de sectie met taakdetails wordt informatie weergegeven zoals de ondernomen actie, taakstatus, begindatum en einddatum.
 
@@ -157,7 +157,7 @@ Een eigenaar van een workflowmodel kan geen items weergeven die gerelateerd zijn
      | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Implementeer de indices via een AEM-pakket. U kunt een [&#x200B; Archetype van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) project gebruiken om een plaatsbaar pakket van AEM tot stand te brengen. Gebruik de volgende voorbeeldcode om indexen toe te voegen aan een AEM Archetype-project:
+   * Implementeer de indices via een AEM-pakket. U kunt een [&#x200B; Archetype van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) project gebruiken om een plaatsbaar pakket van AEM tot stand te brengen. Gebruik de volgende voorbeeldcode om indexen toe te voegen aan een AEM Archetype-project:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -167,6 +167,6 @@ Een eigenaar van een workflowmodel kan geen items weergeven die gerelateerd zijn
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [&#x200B; creeer een Index van het Bezit en plaats het aan waar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=en#the-property-index).
+1. [&#x200B; creeer een Index van het Bezit en plaats het aan waar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=nl-NL#the-property-index).
 
 1. Na het configureren van indices in CRX DE of het implementeren via een pakket, dient u de repository opnieuw te indexeren.

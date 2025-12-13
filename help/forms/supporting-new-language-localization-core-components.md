@@ -125,7 +125,7 @@ Ga als volgt te werk om ondersteuning voor nieuwe landinstellingen toe te voegen
 
    **waar om deze informatie te vinden?**
 
-   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[&#x200B; Toegang tot Git &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[&#x200B; Toegang tot Git &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git)&quot;.
 
    **Uw project is klaar!**
 
@@ -381,9 +381,9 @@ U bent nu klaar om de nieuwe landinstelling te gebruiken met uw Adaptive Forms. 
 
    1. Implementeer de bijgewerkte code:
 
-      Trigger een plaatsing van uw code door de [&#x200B; bestaande volledig-stapelpijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd met de nieuwe ondersteuning voor landinstellingen.
+      Trigger een plaatsing van uw code door de [&#x200B; bestaande volledig-stapelpijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline). Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd met de nieuwe ondersteuning voor landinstellingen.
 
-      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [&#x200B; hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [&#x200B; hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
 
 
 ## Een voorbeeld bekijken van een adaptief formulier met de nieuwe landinstelling
@@ -402,7 +402,7 @@ Deze stappen begeleiden u door een voorbeeld weer te geven van een adaptief form
 ## Aanbevolen procedures voor ondersteuning van nieuwe lokalisatie {#best-practices}
 
 * Adobe raadt u aan een vertaalproject te maken nadat u een adaptief formulier hebt gemaakt. Dit stroomlijnt het lokalisatieproces.
-* Wanneer de componenten Numeriek vak en Datumkiezer naar een specifieke landinstelling worden vertaald, kunnen er opmaakproblemen optreden. Om dit te verlichten, is de optie van de Taal van a **opgenomen in de Configure dialoog van** de plukker van de Datum component [&#x200B; en &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) Numerieke component van de Doos [.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)
+* Wanneer de componenten Numeriek vak en Datumkiezer naar een specifieke landinstelling worden vertaald, kunnen er opmaakproblemen optreden. Om dit te verlichten, is de optie van de Taal van a **opgenomen in de Configure dialoog van** de plukker van de Datum component [&#x200B; en &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) Numerieke component van de Doos [.](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)
 
 
 * Nieuwe velden verwerken:
