@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 0%
@@ -23,23 +23,23 @@ Er zijn twee editors beschikbaar voor inhoudsfragmenten. De editor die in deze s
 
 Deze editor biedt:
 
-* [&#x200B; auto-sparen &#x200B;](#saving-autosaving), om toevallig verlies van uitgeeft te verhinderen.
-* [&#x200B; In-line het uploaden van activa als inhoudsverwijzingen &#x200B;](#reference-images), zonder het moeten hen aan Activa DAM eerst uploaden.
-* [&#x200B; produceer Variaties &#x200B;](#generate-variations-ai) om Generatieve AI te gebruiken om inhoudsverwezenlijking te versnellen die op herinneringen wordt gebaseerd.
-* [&#x200B; Voorproef &#x200B;](#preview-content-fragment) van de teruggegeven ervaring die door het Fragment van de Inhoud wordt geleverd.
-* Capaciteit om [&#x200B; te publiceren &#x200B;](#publish-content-fragment) en [&#x200B; &#x200B;](#unpublish-content-fragment) van de redacteur ongedaan te maken.
-* Capaciteit aan [&#x200B; mening, en open, bijbehorende taalexemplaren &#x200B;](#view-language-copies) in de redacteur.
-* Mogelijkheid aan [&#x200B; details van de meningsversie &#x200B;](#view-version-history) in de redacteur. U kunt ook terugkeren naar een geselecteerde versie.
-* Capaciteit aan [&#x200B; mening, en open, ouderverwijzingen &#x200B;](#view-parent-references).
-* Een hiërarchische mening van het Fragment van de Inhoud, en zijn verwijzingen, gebruikend de [&#x200B; boom van de Structuur &#x200B;](#structure-tree).
+* [ auto-sparen ](#saving-autosaving), om toevallig verlies van uitgeeft te verhinderen.
+* [ In-line het uploaden van activa als inhoudsverwijzingen ](#reference-images), zonder het moeten hen aan Activa DAM eerst uploaden.
+* [ produceer Variaties ](#generate-variations-ai) om Generatieve AI te gebruiken om inhoudsverwezenlijking te versnellen die op herinneringen wordt gebaseerd.
+* [ Voorproef ](#preview-content-fragment) van de teruggegeven ervaring die door het Fragment van de Inhoud wordt geleverd.
+* Capaciteit om [ te publiceren ](#publish-content-fragment) en [ ](#unpublish-content-fragment) van de redacteur ongedaan te maken.
+* Capaciteit aan [ mening, en open, bijbehorende taalexemplaren ](#view-language-copies) in de redacteur.
+* Mogelijkheid aan [ details van de meningsversie ](#view-version-history) in de redacteur. U kunt ook terugkeren naar een geselecteerde versie.
+* Capaciteit aan [ mening, en open, ouderverwijzingen ](#view-parent-references).
+* Een hiërarchische mening van het Fragment van de Inhoud, en zijn verwijzingen, gebruikend de [ boom van de Structuur ](#structure-tree).
 
 >[!NOTE]
 >
->Ben me bewust van de [&#x200B; Beste praktijken &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) wanneer het werken met uw Modellen van het Fragment van de Inhoud en de Fragmenten van de Inhoud.
+>Ben me bewust van de [ Beste praktijken ](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) wanneer het werken met uw Modellen van het Fragment van de Inhoud en de Fragmenten van de Inhoud.
 
 >[!WARNING]
 >
->De redacteur die in deze sectie wordt beschreven is *slechts* beschikbaar in [&#x200B; Verenigde Shell &#x200B;](/help/overview/aem-cloud-service-on-unified-shell.md); zo *online* Adobe Experience Manager (AEM) as a Cloud Service, niet een lokale instantie.
+>De redacteur die in deze sectie wordt beschreven is *slechts* beschikbaar in [ Verenigde Shell ](/help/overview/aem-cloud-service-on-unified-shell.md); zo *online* Adobe Experience Manager (AEM) as a Cloud Service, niet een lokale instantie.
 
 ## Inhoudsfragmenteditor {#content-fragment-editor}
 
@@ -48,8 +48,8 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
 * bovenste werkbalk: voor belangrijke informatie en handelingen
    * een koppeling naar de Content Fragment Console (pictogram Start)
    * informatie over het model en de map
-   * verbindingen aan [&#x200B; Voorproef &#x200B;](#preview-content-fragment); als het StandaardPatroon van de Voorproef URL voor het model wordt gevormd
-   * [&#x200B; publiceer &#x200B;](#publish-content-fragment), en [&#x200B; unpublish &#x200B;](#unpublish-content-fragment) acties
+   * verbindingen aan [ Voorproef ](#preview-content-fragment); als het StandaardPatroon van de Voorproef URL voor het model wordt gevormd
+   * [ publiceer ](#publish-content-fragment), en [ unpublish ](#unpublish-content-fragment) acties
    * een optie om alle **Verwijzingen van de Ouder** (verbindingspictogram) te tonen
    * het fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, en laatst bewaarde informatie
    * een schakeloptie voor het overschakelen naar de oorspronkelijke (op Assets gebaseerde) editor
@@ -59,22 +59,22 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
      >De oorspronkelijke editor wordt op hetzelfde tabblad geopend. Het wordt afgeraden beide editors tegelijk te openen.
 
 * linkerpaneel: toont de **[Variaties](#variations)** voor het Fragment van de Inhoud, en zijn **Gebieden**:
-   * deze verbindingen kunnen worden gebruikt om [&#x200B; de structuur van het Fragment van de Inhoud te navigeren &#x200B;](#navigate-structure)
-* juist paneel: stelt lusjes [&#x200B; voor die de eigenschappen (meta-gegevens) en markeringen &#x200B;](#view-properties-tags) tonen, informatie over de [&#x200B; versiegeschiedenis &#x200B;](#view-version-history), en informatie met betrekking tot om het even welke [&#x200B; taalexemplaren &#x200B;](#view-language-copies)
+   * deze verbindingen kunnen worden gebruikt om [ de structuur van het Fragment van de Inhoud te navigeren ](#navigate-structure)
+* juist paneel: stelt lusjes [ voor die de eigenschappen (meta-gegevens) en markeringen ](#view-properties-tags) tonen, informatie over de [ versiegeschiedenis ](#view-version-history), en informatie met betrekking tot om het even welke [ taalexemplaren ](#view-language-copies)
    * in het **lusje van Eigenschappen** kunt u de **Titel** en **Beschrijving** voor het fragment bijwerken, of **Variatie**
    * In het **lusje van Commentaren** kunt u toevoegen, en lezen, commentaren helpen u met andere auteurs samenwerken
 * centraal deelvenster: geeft de daadwerkelijke velden en inhoud van de geselecteerde variatie weer
    * kunt u de inhoud bewerken
-      * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **&#x200B;**&#x200B;instanties van het relevante gebied toevoegen
+      * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **** instanties van het relevante gebied toevoegen
    * als **de gebieden van Tijdelijke aanduiding van het Lusje** worden bepaald binnen het model zij hier en worden getoond:
       * kan worden gebruikt voor navigatie
       * wordt horizontaal weergegeven of als een vervolgkeuzelijst
 
   >[!NOTE]
   >
-  >Afhankelijk van definities in het onderliggende model, kunnen de gebieden aan bepaalde types van [&#x200B; Bevestiging &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation) onderworpen zijn.
+  >Afhankelijk van definities in het onderliggende model, kunnen de gebieden aan bepaalde types van [ Bevestiging ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation) onderworpen zijn.
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Overzicht &#x200B;](assets/cf-authoring-overview.png)
+![ de Redacteur van het Fragment van de Inhoud - Overzicht ](assets/cf-authoring-overview.png)
 
 ## Navigeren door de structuur van het inhoudsfragment {#navigate-structure}
 
@@ -93,10 +93,10 @@ In het linkerpaneel kunt u zien:
 
 * de lijst van **[Variaties](#variations)** die voor dit fragment zijn gecreeerd:
    * **Hoofd** is de Variatie die aanwezig is wanneer het Fragment van de Inhoud eerst wordt gecreeerd, kunt u anderen later toevoegen
-   * u kunt [&#x200B; gebruiken produceert Variaties &#x200B;](#generate-variations-ai) om een herinnering gebaseerd malplaatje te gebruiken dat Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
-   * u kunt ook [&#x200B; tot een Variatie &#x200B;](#create-variation) leiden
+   * u kunt [ gebruiken produceert Variaties ](#generate-variations-ai) om een herinnering gebaseerd malplaatje te gebruiken dat Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
+   * u kunt ook [ tot een Variatie ](#create-variation) leiden
 * de **Gebieden** binnen het fragment, en zijn variaties:
-   * het pictogram wijst op het [&#x200B; Type van Gegevens &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
+   * het pictogram wijst op het [ Type van Gegevens ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
    * de tekst is de veldnaam
    * deze vormen samen een directe koppeling naar de inhoud van het veld in het centrale venster (voor de huidige variatie)
 
@@ -104,17 +104,17 @@ In het linkerpaneel kunt u zien:
 
 In verschillende delen van de editor ziet u het koppelingspictogram. Dit pictogram kan worden gebruikt om het weergegeven item te openen, bijvoorbeeld een Content Fragment Model, een Parent Reference of een fragment waarnaar wordt verwezen:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Pictogram van de Verbinding &#x200B;](assets/cf-authoring-link-icon.png)
+![ de Redacteur van het Fragment van de Inhoud - Pictogram van de Verbinding ](assets/cf-authoring-link-icon.png)
 
 ### Structuurelboom {#structure-tree}
 
 Open het **lusje van de boom van de Structuur** van de redacteurstoolbar om de hiërarchische structuur van het Fragment van de Inhoud, en zijn verwijzingen te tonen. Gebruik de koppelingspictogrammen om naar de referenties te navigeren.
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - de boom van de Structuur &#x200B;](assets/cf-authoring-structure-tree.png)
+![ de Redacteur van het Fragment van de Inhoud - de boom van de Structuur ](assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
->Zie [&#x200B; Analyserend de Structuur van het Fragment van de Inhoud - de boom van de Structuur &#x200B;](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) voor meer details.
+>Zie [ Analyserend de Structuur van het Fragment van de Inhoud - de boom van de Structuur ](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) voor meer details.
 
 ## Opslaan en automatisch opslaan {#saving-autosaving}
 
@@ -124,13 +124,13 @@ Bij elke update die u maakt, wordt het inhoudsfragment automatisch opgeslagen. D
 
 ## Variaties {#variations}
 
-[&#x200B; de Variaties &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) zijn een significante eigenschap van de Fragmenten van de Inhoud van AEM. Zij staan u toe om exemplaren van de **Belangrijkste** inhoud voor gebruik op specifieke kanalen, en scenario&#39;s tot stand te brengen en uit te geven, makend koploze inhoudslevering en pagina het schrijven nog flexibeler.
+[ de Variaties ](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) zijn een significante eigenschap van de Fragmenten van de Inhoud van AEM. Zij staan u toe om exemplaren van de **Belangrijkste** inhoud voor gebruik op specifieke kanalen, en scenario&#39;s tot stand te brengen en uit te geven, makend koploze inhoudslevering en pagina het schrijven nog flexibeler.
 
 Vanuit de editor kunt u:
 
-* [&#x200B; creeer variaties &#x200B;](#create-variation) van de **Belangrijkste** inhoud
+* [ creeer variaties ](#create-variation) van de **Belangrijkste** inhoud
 
-* [&#x200B; het Gebruik produceert Variaties AI &#x200B;](#generate-variations-ai) om Generatieve AI te gebruiken om een snel gebaseerd malplaatje te gebruiken dat Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
+* [ het Gebruik produceert Variaties AI ](#generate-variations-ai) om Generatieve AI te gebruiken om een snel gebaseerd malplaatje te gebruiken dat Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
 
 * Selecteer de gewenste variatie voor het bewerken van de inhoud
 
@@ -148,11 +148,11 @@ Een variatie van het inhoudsfragment maken:
    >
    >Nadat u de eerste variatie hebt gemaakt, worden bestaande variaties in hetzelfde deelvenster weergegeven.
 
-   ![&#x200B; de Redacteur van het Fragment van de Inhoud - creeer uw eerste Variatie &#x200B;](assets/cf-authoring-create-variation-01.png)
+   ![ de Redacteur van het Fragment van de Inhoud - creeer uw eerste Variatie ](assets/cf-authoring-create-variation-01.png)
 
 1. In de dialoog, ga a **Titel** voor uw variatie in, en a **Beschrijving** als gewild:
 
-   ![&#x200B; de Redacteur van het Fragment van de Inhoud - creeer de dialoog van de Variatie &#x200B;](assets/cf-authoring-create-variation-02.png)
+   ![ de Redacteur van het Fragment van de Inhoud - creeer de dialoog van de Variatie ](assets/cf-authoring-create-variation-02.png)
 
 1. **creeer** de variatie. De naam wordt weergegeven in de lijst.
 
@@ -174,7 +174,7 @@ Gebruik Generatieve variaties om generatieve AI te gebruiken om het maken van in
 
 Open de Inhoudsfragmenteditor om het ingangspunt te zoeken voor het genereren van variaties.
 
-Zie [&#x200B; Variaties produceren - in AEM Editors &#x200B;](/help/generative-ai/generate-variations-integrated-editor.md) geïntegreerd om meer te leren.
+Zie [ Variaties produceren - in AEM Editors ](/help/generative-ai/generate-variations-integrated-editor.md) geïntegreerd om meer te leren.
 
 ### Een wijziging verwijderen {#delete-variation}
 
@@ -188,13 +188,13 @@ Een variatie van het inhoudsfragment verwijderen:
 
 1. In het **paneel van de Variatie**, selecteer het schrappingspictogram (het Afval kan):
 
-   ![&#x200B; de Redacteur van het Fragment van de Inhoud - het pictogram van de Variatie van de Schrapping &#x200B;](assets/cf-authoring-delete-variation.png)
+   ![ de Redacteur van het Fragment van de Inhoud - het pictogram van de Variatie van de Schrapping ](assets/cf-authoring-delete-variation.png)
 
 1. Er wordt een dialoogvenster geopend. Selecteer **Schrapping** om de actie te bevestigen.
 
 ## Tekstvelden met meerdere regels bewerken - Onbewerkte tekst of Markering {#edit-multi-line-text-fields-plaintext-markdown}
 
-**[de gebieden van de 0&rbrace; Meerdere lijntekst &lbrace;kunnen één van drie formaten hebben:](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**
+**[de gebieden van de 0} Meerdere lijntekst {kunnen één van drie formaten hebben:](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**
 
 * Onbewerkte tekst
 * [Markering](/help/sites-cloud/administering/content-fragments/markdown.md)
@@ -202,7 +202,7 @@ Een variatie van het inhoudsfragment verwijderen:
 
 Velden die zijn gedefinieerd als Onbewerkte tekst of Markeringen, hebben een eenvoudig tekstvak, zonder opmaakopties (op het scherm):
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Meerdere lijntekst - volledig scherm &#x200B;](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![ de Redacteur van het Fragment van de Inhoud - Meerdere lijntekst - volledig scherm ](assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
 ## Tekstvelden met meerdere regels bewerken - RTF {#edit-multi-line-text-fields-rich-text}
 
@@ -222,17 +222,17 @@ Voor **[Meerdere lijntekst](/help/sites-cloud/administering/content-fragments/co
    * Koppelingen invoegen
    * Verwijzingen naar afbeeldingselementen selecteren en invoegen
    * Speciale tekens toevoegen
-* [&#x200B; volledig-het schermredacteur &#x200B;](#full-screen-editor-rich-text) - knevel tussen volledig-scherm en in-stroom
+* [ volledig-het schermredacteur ](#full-screen-editor-rich-text) - knevel tussen volledig-scherm en in-stroom
 * [Statistieken](#statistics-rich-text)
 * [Vergelijken en synchroniseren](#compare-and-synchronize-rich-text)
 
 Bijvoorbeeld:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Meerdere lijntekst - het volledig schermknevel &#x200B;](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![ de Redacteur van het Fragment van de Inhoud - Meerdere lijntekst - het volledig schermknevel ](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
->De veelvoudige gebieden van de lijntekst worden ook vermeld door het aangewezen [&#x200B; pictogram &#x200B;](#fields-datatypes-icons) in het **paneel van Gebieden**.
+>De veelvoudige gebieden van de lijntekst worden ook vermeld door het aangewezen [ pictogram ](#fields-datatypes-icons) in het **paneel van Gebieden**.
 
 ### Volledige schermeditor - RTF-tekst {#full-screen-editor-rich-text}
 
@@ -240,7 +240,7 @@ De volledige-schermredacteur biedt de zelfde het uitgeven opties aan zoals wanne
 
 Bijvoorbeeld:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Meerdere lijntekst - volledig scherm &#x200B;](assets/cf-authoring-multilinetext-fullscreen.png)
+![ de Redacteur van het Fragment van de Inhoud - Meerdere lijntekst - volledig scherm ](assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### Statistieken - RTF {#statistics-rich-text}
 
@@ -248,11 +248,11 @@ De actie **Statistieken** toont een waaier van informatie over de tekst op een M
 
 Bijvoorbeeld:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Statistieken &#x200B;](assets/cf-authoring-multilinetext-statistics.png)
+![ de Redacteur van het Fragment van de Inhoud - Statistieken ](assets/cf-authoring-multilinetext-statistics.png)
 
 ### Vergelijken en synchroniseren - RTF-tekst {#compare-and-synchronize-rich-text}
 
-De actie **vergelijkt** is beschikbaar voor Meerdere lijngebieden wanneer u open de Verandering van de a **&#x200B;**&#x200B;hebt.
+De actie **vergelijkt** is beschikbaar voor Meerdere lijngebieden wanneer u open de Verandering van de a **** hebt.
 
 Hiermee opent u het veld Meerdere regels op volledig scherm en:
 
@@ -271,19 +271,19 @@ Hiermee opent u het veld Meerdere regels op volledig scherm en:
 
   >[!CAUTION]
   >
-  >De synchronisatie is slechts beschikbaar om veranderingen *van **Hoofd**&#x200B;aan de variatie* te kopiëren.
+  >De synchronisatie is slechts beschikbaar om veranderingen *van **Hoofd**aan de variatie* te kopiëren.
   >
   >Het overbrengen van veranderingen *van een variatie aan **Hoofd*** is niet beschikbaar als optie.
 
 Bijvoorbeeld, een scenario waar de variatieinhoud volledig was herschreven, zodat zal een synchronisatie die nieuwe inhoud met de inhoud van **Hoofd** vervangen:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - vergelijk en synchroniseer &#x200B;](assets/cf-authoring-multilinetext-compare.png)
+![ de Redacteur van het Fragment van de Inhoud - vergelijk en synchroniseer ](assets/cf-authoring-multilinetext-compare.png)
 
 ## Referenties beheren {#manage-references}
 
 ### Fragmentverwijzingen {#fragment-references}
 
-[&#x200B; de Verwijzingen van het Fragment &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments) kunnen worden gebruikt om:
+[ de Verwijzingen van het Fragment ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments) kunnen worden gebruikt om:
 
 * [een verwijzing naar een bestaand inhoudsfragment maken](#create-reference-existing-content-fragment)
 * [een inhoudsfragment maken en ernaar verwijzen](#create-reference-content-fragment)
@@ -302,11 +302,11 @@ Een verwijzing naar een bestaand inhoudsfragment maken:
 
 #### Een inhoudsfragment en verwijzing maken {#create-reference-content-fragment}
 
-Alternatief kunt u [&#x200B; selecteren **nieuw fragment** creëren om **te openen creeer** dialoog &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). Wanneer het fragment is gemaakt, wordt er naar dit fragment verwezen.
+Alternatief kunt u [ selecteren **nieuw fragment** creëren om **te openen creeer** dialoog ](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). Wanneer het fragment is gemaakt, wordt er naar dit fragment verwezen.
 
 ### Content References {#content-references}
 
-[&#x200B; Verwijzingen van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) worden gebruikt om andere inhoudstypes van AEM, zoals beelden, pagina&#39;s, en de Fragmenten van de Ervaring van verwijzingen te voorzien.
+[ Verwijzingen van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) worden gebruikt om andere inhoudstypes van AEM, zoals beelden, pagina&#39;s, en de Fragmenten van de Ervaring van verwijzingen te voorzien.
 
 #### Referentieafbeeldingen {#reference-images}
 
@@ -318,9 +318,9 @@ In **de gebieden van de Verwijzing van de Inhoud** kunt u:
 
   >[!NOTE]
   >
-  >Om een beeld aan het **gebied van de Verwijzing van de Inhoud direct te uploaden**, moet het **&#x200B;**:
+  >Om een beeld aan het **gebied van de Verwijzing van de Inhoud direct te uploaden**, moet het ****:
   >
-  >* hebben a **Weg van de Weg van de Weg van de Wortel** bepaald (in het [&#x200B; Model van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Hiermee geeft u aan waar de afbeelding wordt opgeslagen.
+  >* hebben a **Weg van de Weg van de Weg van de Wortel** bepaald (in het [ Model van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Hiermee geeft u aan waar de afbeelding wordt opgeslagen.
   >* omvat **Beeld** in de lijst van toegelaten inhoudstypes
 
 ##### Referentie lokale Assets {#reference-local-assets}
@@ -330,7 +330,7 @@ Als u naar een lokaal element wilt verwijzen, kunt u:
 * belemmering en laat vallen het nieuwe activadossier direct (bijvoorbeeld, van uw dossiersysteem) in het **gebied van de Verwijzing van de Inhoud**
 * gebruik **activa** actie toevoegen, dan uitgezocht of **doorbladeren Assets** of **uploadt** om de aangewezen selecteur voor u te openen om te gebruiken:
 
-  ![&#x200B; de Redacteur van het Fragment van de Inhoud - voeg activaopties &#x200B;](assets/cf-authoring-add-asset-options.png) toe
+  ![ de Redacteur van het Fragment van de Inhoud - voeg activaopties ](assets/cf-authoring-add-asset-options.png) toe
 
 ##### Referentie externe Assets {#reference-remote-assets}
 
@@ -338,17 +338,17 @@ Verwijzen naar externe elementen:
 
 1. Specificeer de verre **Bewaarplaats** wanneer het doorbladeren voor activa:
 
-   ![&#x200B; de Redacteur van het Fragment van de Inhoud - Uitgezochte Activa van ver &#x200B;](assets/cf-authoring-remote-asset-01.png)
+   ![ de Redacteur van het Fragment van de Inhoud - Uitgezochte Activa van ver ](assets/cf-authoring-remote-asset-01.png)
 
 2. Na de selectie kunt u de locatie zien in de elementgegevens:
 
-   ![&#x200B; de Redacteur van het Fragment van de Inhoud - Activa van verre bewaarplaats &#x200B;](assets/cf-authoring-remote-asset-02.png)
+   ![ de Redacteur van het Fragment van de Inhoud - Activa van verre bewaarplaats ](assets/cf-authoring-remote-asset-02.png)
 
 ###### Externe Assets - Beperkingen {#remote-assets-limitations}
 
 Er zijn enkele beperkingen wanneer wordt verwezen naar externe middelen:
 
-* Slechts [&#x200B; goedgekeurde &#x200B;](/help/assets/approve-assets.md) activa zijn beschikbaar voor verwijzing van een verre bewaarplaats van Activa.
+* Slechts [ goedgekeurde ](/help/assets/approve-assets.md) activa zijn beschikbaar voor verwijzing van een verre bewaarplaats van Activa.
 
 * Als een element waarnaar wordt verwezen, wordt verwijderd uit de externe opslagplaats, resulteert dit in een verbroken Content Reference.
 
@@ -358,13 +358,13 @@ Er zijn enkele beperkingen wanneer wordt verwezen naar externe middelen:
 
 * Er worden geen metagegevens van middelen weergegeven via de API voor beheer of de API voor levering. U moet de API voor metagegevens van middelen gebruiken om de metagegevens van de elementen op te halen:
 
-   * de individuele activa meta-gegevens: [&#x200B; https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
+   * de individuele activa meta-gegevens: [ https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * krijg bulkmeta-gegevensinformatie gebruikend (experimenteel) onderzoek API: [&#x200B; https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
+   * krijg bulkmeta-gegevensinformatie gebruikend (experimenteel) onderzoek API: [ https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
->Zie ook [&#x200B; AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Dynamische Media voor OpenAPI activa steun (Verre Assets) &#x200B;](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
+>Zie ook [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Dynamische Media voor OpenAPI activa steun (Verre Assets) ](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### Referentiepagina&#39;s {#reference-pages}
 
@@ -380,8 +380,8 @@ Verwijzingen naar AEM-pagina&#39;s, Experience Fragments of andere soorten inhou
 >
 >Dit mag niet worden gebruikt voor verwijzingen naar:
 >
->* De Fragmenten van de inhoud - gebruik de Verwijzing van het a [&#x200B; Fragment &#x200B;](#fragment-references)
->* Beelden - gebruik [&#x200B; Beelden van de Verwijzing &#x200B;](#reference-images)
+>* De Fragmenten van de inhoud - gebruik de Verwijzing van het a [ Fragment ](#fragment-references)
+>* Beelden - gebruik [ Beelden van de Verwijzing ](#reference-images)
 
 ### Bovenliggende verwijzingen weergeven {#view-parent-references}
 
@@ -389,13 +389,13 @@ Als u het koppelingspictogram op de bovenste werkbalk selecteert, wordt een lijs
 
 Bijvoorbeeld:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - toon Verwijzingen &#x200B;](assets/cf-authoring-show-references-link.png)
+![ de Redacteur van het Fragment van de Inhoud - toon Verwijzingen ](assets/cf-authoring-show-references-link.png)
 
 Er wordt een venster geopend met een overzicht van alle verwante referenties. Als u een verwijzing wilt openen, selecteert u de naam of titel of het koppelingspictogram.
 
 Bijvoorbeeld:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - toon Verwijzingen &#x200B;](assets/cf-authoring-show-references.png)
+![ de Redacteur van het Fragment van de Inhoud - toon Verwijzingen ](assets/cf-authoring-show-references.png)
 
 ## Eigenschappen en labels weergeven {#view-properties-tags}
 
@@ -404,7 +404,7 @@ Op het tabblad Eigenschappen van het rechterdeelvenster kunnen eigenschappen (me
 * voor het **Fragment van de Inhoud** - als **Hoofd** momenteel wordt geselecteerd
 * voor een specifieke **Variatie**
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Eigenschappen &#x200B;](assets/cf-authoring-properties.png)
+![ de Redacteur van het Fragment van de Inhoud - Eigenschappen ](assets/cf-authoring-properties.png)
 
 ### Eigenschappen en tags bewerken {#edit-properties-tags}
 
@@ -414,7 +414,7 @@ Op het tabblad Eigenschappen (rechterdeelvenster) kunt u ook het volgende bewerk
 * **Beschrijving**
 * **Markeringen**: het gebruiken van de drop-down lijst, of de selectiedialoog
 
-  ![&#x200B; de Redacteur van het Fragment van de Inhoud - leidt Markeringen &#x200B;](assets/cf-authoring-edit-tags.png)
+  ![ de Redacteur van het Fragment van de Inhoud - leidt Markeringen ](assets/cf-authoring-edit-tags.png)
 
 ### Het model van het inhoudsfragment openen {#open-content-fragment-model}
 
@@ -422,7 +422,7 @@ Wanneer u **Hoofd** hebt geselecteerd, wordt de naam van het onderliggende Model
 
 Bijvoorbeeld:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - open Model van het Fragment van de Inhoud &#x200B;](assets/cf-authoring-open-model.png)
+![ de Redacteur van het Fragment van de Inhoud - open Model van het Fragment van de Inhoud ](assets/cf-authoring-open-model.png)
 
 ## Versiehistorie weergeven {#view-version-history}
 
@@ -432,7 +432,7 @@ In het **de geschiedenislusje van de Versie** van het juiste paneel, worden de d
 >
 >Er wordt een nieuwe versie gemaakt wanneer het inhoudsfragment wordt gepubliceerd.
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - het Overzicht van de Geschiedenis van de Versie &#x200B;](assets/cf-authoring-version-history-overview.png)
+![ de Redacteur van het Fragment van de Inhoud - het Overzicht van de Geschiedenis van de Versie ](assets/cf-authoring-version-history-overview.png)
 
 ### Versie vergelijken {#compare-version}
 
@@ -444,7 +444,7 @@ Een vorige versie vergelijken met de huidige versie:
 
 1. Selecteer **vergelijken**.
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - de Geschiedenis van de Versie vergelijkt &#x200B;](assets/cf-authoring-version-history-compare.png)
+![ de Redacteur van het Fragment van de Inhoud - de Geschiedenis van de Versie vergelijkt ](assets/cf-authoring-version-history-compare.png)
 
 Hiermee opent u een weergave waarin de verschillen tussen de huidige versie van de inhoud en de geselecteerde vorige versie van het inhoudsfragment worden weergegeven. Van de **Variaties met veranderingen** drop-down, kunt u selecteren om verschillen van de Belangrijkste inhoud en/of inhoud van een Variatie te zien.
 
@@ -453,7 +453,7 @@ Verschillen worden aangegeven met kleur:
 * Groen: geeft inhoud aan die is toegevoegd (aan de huidige versie)
 * Rood: geeft aan dat inhoud is verwijderd (uit de huidige versie)
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - de Geschiedenis van de Versie vergelijkt Versies &#x200B;](assets/cf-authoring-version-history-compare-versions.png)
+![ de Redacteur van het Fragment van de Inhoud - de Geschiedenis van de Versie vergelijkt Versies ](assets/cf-authoring-version-history-compare-versions.png)
 
 ### Versie herstellen {#revert-version}
 
@@ -465,7 +465,7 @@ Een specifieke versie herstellen:
 
 1. Selecteer **terugkeren**.
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - de Geschiedenis van de Versie terugkeert &#x200B;](assets/cf-authoring-version-history-revert.png)
+![ de Redacteur van het Fragment van de Inhoud - de Geschiedenis van de Versie terugkeert ](assets/cf-authoring-version-history-revert.png)
 
 ## De taalkopieën bekijken {#view-language-copies}
 
@@ -473,11 +473,11 @@ In de **eigenschappen van de Taal** lusjedetails van om het even welke verwante 
 
 Bijvoorbeeld:
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - open Exemplaar van de Taal &#x200B;](assets/cf-authoring-open-language-copies.png)
+![ de Redacteur van het Fragment van de Inhoud - open Exemplaar van de Taal ](assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
->Voor meer details over het vertalen van een Fragment van de Inhoud, en het creëren van taalexemplaren, zie de [&#x200B; Hoofdloze Vertaalreis van AEM &#x200B;](/help/journey-headless/translation/overview.md).
+>Voor meer details over het vertalen van een Fragment van de Inhoud, en het creëren van taalexemplaren, zie de [ Hoofdloze Vertaalreis van AEM ](/help/journey-headless/translation/overview.md).
 
 ## Opmerkingen over het fragment {#commenting-on-your-fragment}
 
@@ -493,11 +493,11 @@ Om u toe te laten om in-product en in-context samen te werken, verstrekt het **l
 * Een bestaande opmerking bewerken
 * Opmerkingen verwijderen
 
-![&#x200B; de Redacteur van het Fragment van de Inhoud - Commentaren tabel &#x200B;](assets/cf-authoring-comments.png)
+![ de Redacteur van het Fragment van de Inhoud - Commentaren tabel ](assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >
->Deze commentaren zijn niet zichtbaar als [&#x200B; Annotaties in de originele redacteur &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment), noch in de [&#x200B; Chronologie van de console van Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+>Deze commentaren zijn niet zichtbaar als [ Annotaties in de originele redacteur ](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment), noch in de [ Chronologie van de console van Assets ](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Voorvertoning van fragment weergeven {#preview-content-fragment}
 
@@ -510,7 +510,7 @@ U kunt **publiceren** uw fragment aan of uw:
 * Voorbeeldexemplaar
 * Instantie publiceren
 
-U kunt het fragment publiceren vanuit de editor of de console. Zie [&#x200B; het Publiceren en het Voorvertonen van een Fragment &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) voor volledige details.
+U kunt het fragment publiceren vanuit de editor of de console. Zie [ het Publiceren en het Voorvertonen van een Fragment ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) voor volledige details.
 
 ## Publicatie van het fragment ongedaan maken {#unpublish-content-fragment}
 
@@ -519,7 +519,7 @@ U kunt **ook unpublish** uw fragment van of uw:
 * Voorbeeldexemplaar
 * Instantie publiceren
 
-U kunt de publicatie van het fragment ongedaan maken vanuit de editor of de console. Zie [&#x200B; Unpublishing een fragment &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) voor volledige details.
+U kunt de publicatie van het fragment ongedaan maken vanuit de editor of de console. Zie [ Unpublishing een fragment ](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) voor volledige details.
 
 ## Velden, gegevenstypen en pictogrammen {#fields-datatypes-icons}
 
@@ -576,7 +576,7 @@ Het **paneel van Gebieden** maakt een lijst van alle gebieden binnen het Fragmen
 
 ## Goed om te weten {#good-to-know}
 
-* Om een Fragment van de Inhoud uit te geven hebt u [&#x200B; de aangewezen toestemmingen &#x200B;](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
+* Om een Fragment van de Inhoud uit te geven hebt u [ de aangewezen toestemmingen ](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
   Als u bijvoorbeeld geen `edit` -machtigingen hebt, is de editor alleen-lezen.
 
@@ -584,6 +584,6 @@ Het **paneel van Gebieden** maakt een lijst van alle gebieden binnen het Fragmen
 
   Het tevreden Fragment, en zijn variaties, hebben ook meta-gegevensgebieden (de eigenschappen van de Variatie) geroepen **Titel** en **Beschrijving**. Deze velden maken integraal deel uit van elk inhoudsfragment en worden in eerste instantie gedefinieerd wanneer het fragment wordt gemaakt. Zij kunnen in het *juiste paneel* worden bijgewerkt wanneer het uitgeven van het fragment.
 
-* Zie de documentatie van Assets voor volledige informatie over de [&#x200B; originele redacteur van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-variations.md) - het is beschikbaar van zowel de **Assets** console als de **console van de Fragmenten van de Inhoud**.
+* Zie de documentatie van Assets voor volledige informatie over de [ originele redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-variations.md) - het is beschikbaar van zowel de **Assets** console als de **console van de Fragmenten van de Inhoud**.
 
-* Uw projectteam kan de redacteur indien nodig aanpassen. Zie [&#x200B; het Aanpassen van de Console en de Redacteur van het Fragment van de Inhoud &#x200B;](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor verdere details.
+* Uw projectteam kan de redacteur indien nodig aanpassen. Zie [ het Aanpassen van de Console en de Redacteur van het Fragment van de Inhoud ](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor verdere details.
