@@ -4,7 +4,7 @@ description: Leer over de verschillende opties om de Universele Redacteur aan te
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer over de verschillende opties om de Universele Redacteur aan te passen om de
 
 >[!TIP]
 >
->De Universele Redacteur biedt ook vele [&#x200B; uitbreidingspunten aan, &#x200B;](/help/implementing/universal-editor/extending.md) toestaand u om zijn functionaliteit uit te breiden om aan uw projectbehoeften te voldoen.
+>De Universele Redacteur biedt ook vele [ uitbreidingspunten aan, ](/help/implementing/universal-editor/extending.md) toestaand u om zijn functionaliteit uit te breiden om aan uw projectbehoeften te voldoen.
 
 ## Meta Config-tags gebruiken {#meta-tags}
 
@@ -36,28 +36,28 @@ Hieronder vindt u de ondersteunde waarden voor `content` , dat wil zeggen de fun
 
 | Inhoudswaarde | Beschrijving |
 |---|---|
-| `publish` | Maak al [&#x200B; het publiceren &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md) functionaliteit onbruikbaar, d.w.z. [&#x200B; publiceer knoop &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) en [&#x200B; unpublish knoop &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
-| `publish-live` | Maak live [&#x200B; het publiceren &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md) onbruikbaar |
-| `publish-preview` | Maak voorproef het publiceren onbruikbaar (als de [&#x200B; voorproefdienst &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar is) |
-| `unpublish` | Maak [&#x200B; unpublish knoop &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) onbruikbaar |
-| `copy` | Maakt [&#x200B; exemplaar en deegknopen &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) onbruikbaar |
-| `duplicate` | Schakelt [&#x200B; dubbele knoop &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) onbruikbaar |
-| `header-open-page` | Maakt [&#x200B; open paginaknoop &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) onbruikbaar |
-| `dev-login` | Maakt de [&#x200B; ontwikkelaarslogin knoop &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) onbruikbaar |
+| `publish` | Maak al [ het publiceren ](/help/sites-cloud/authoring/universal-editor/publishing.md) functionaliteit onbruikbaar, d.w.z. [ publiceer knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) en [ unpublish knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
+| `publish-live` | Maak live [ het publiceren ](/help/sites-cloud/authoring/universal-editor/publishing.md) onbruikbaar |
+| `publish-preview` | Maak voorproef het publiceren onbruikbaar (als de [ voorproefdienst ](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar is) |
+| `unpublish` | Maak [ unpublish knoop ](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) onbruikbaar |
+| `copy` | Maakt [ exemplaar en deegknopen ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) onbruikbaar |
+| `duplicate` | Schakelt [ dubbele knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) onbruikbaar |
+| `header-open-page` | Maakt [ open paginaknoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) onbruikbaar |
+| `aem-dev-login` | Maakt de [ ontwikkelaarslogin knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) onbruikbaar |
 
 ## Het veranderen van Uw Eindpunt {#custom-endpoint}
 
-Als u de Universal Editor-service, die door Adobe wordt gehost, maar uw eigen gehoste versie niet wilt gebruiken, kunt u dit instellen in een metatag. Gelieve te zien het document [&#x200B; Begonnen het worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md##configuration-settings) voor details.
+Als u de Universal Editor-service, die door Adobe wordt gehost, maar uw eigen gehoste versie niet wilt gebruiken, kunt u dit instellen in een metatag. Gelieve te zien het document [ Begonnen het worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md##configuration-settings) voor details.
 
 ## Componenten filteren {#filtering-components}
 
-U kunt de toegestane componenten per container in de Universele Redacteur beperken gebruikend componentenfilters. Gelieve te zien het document [&#x200B; Filtrerend Componenten &#x200B;](/help/implementing/universal-editor/filtering.md) voor meer informatie.
+U kunt de toegestane componenten per container in de Universele Redacteur beperken gebruikend componentenfilters. Gelieve te zien het document [ Filtrerend Componenten ](/help/implementing/universal-editor/filtering.md) voor meer informatie.
 
 ## Componenten voorwaardelijk tonen en verbergen in deelvenster Eigenschappen {#conditionally-hide}
 
-Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen, kunt u componenten in het eigenschappen paneel verbergen door a `condition` attributen aan de [&#x200B; gebieden van het componentenmodel &#x200B;](/help/implementing/universal-editor/field-types.md#fields) toe te voegen.
+Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen, kunt u componenten in het eigenschappen paneel verbergen door a `condition` attributen aan de [ gebieden van het componentenmodel ](/help/implementing/universal-editor/field-types.md#fields) toe te voegen.
 
-De voorwaarden kunnen worden bepaald gebruikend [&#x200B; schema JsonLogic &#x200B;](https://jsonlogic.com/). Als de voorwaarde waar is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
+De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic ](https://jsonlogic.com/). Als de voorwaarde waar is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
 
 >[!BEGINTABS]
 
@@ -86,17 +86,17 @@ De voorwaarden kunnen worden bepaald gebruikend [&#x200B; schema JsonLogic &#x20
 
 >[!TAB  Onwaar van de Voorwaarde ]
 
-![&#x200B; Verborgen tekstgebied &#x200B;](assets/hidden.png)
+![ Verborgen tekstgebied ](assets/hidden.png)
 
->[!TAB  de Toestand van 0&rbrace; Waar &lbrace;]
+>[!TAB  de Toestand van 0} Waar {]
 
-![&#x200B; Getoonde tekstgebied &#x200B;](assets/shown.png)
+![ Getoonde tekstgebied ](assets/shown.png)
 
 >[!ENDTABS]
 
 ## Aangepaste voorbeeld-URL&#39;s {#custom-preview-urls}
 
-U kunt een douanevoorproef URL via a `urn:adobe:aue:config:preview` metaconfiguratie specificeren, die wanneer het klikken van de **Open pagina** knoop in de [&#x200B; top-right toolbar van de redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) zal openen.
+U kunt een douanevoorproef URL via a `urn:adobe:aue:config:preview` metaconfiguratie specificeren, die wanneer het klikken van de **Open pagina** knoop in de [ top-right toolbar van de redacteur ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) zal openen.
 
 Hiervoor neemt u gewoon de gewenste voorvertoning-URL op in een metatag van de van instrumenten voorziene app, zoals in het volgende voorbeeld.
 
