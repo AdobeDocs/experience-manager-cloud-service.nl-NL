@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**Geldigheid van certificaten
++++Geldigheid van certificaat
 
 ## Geldigheid van certificaat {#validity}
 
@@ -138,16 +138,16 @@ Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is van
 
 +++
 
-+++**Onjuist SAN-certificaat is toegepast op mijn domein
++++Onjuist SAN-certificaat is toegepast op mijn domein
 
 ## Onjuist SAN-certificaat is toegepast op mijn domein {#wrong-san-cert}
 
 Laten we zeggen dat u `dev.yoursite.com` en `stage.yoursite.com` wilt koppelen aan uw niet-productieomgeving en `prod.yoursite.com` aan uw productieomgeving.
 
-Als u de CDN voor deze domeinen wilt configureren, hebt u een certificaat nodig dat voor elk domein is geïnstalleerd. U installeert dus één certificaat dat `*.yoursite.com` voor de niet-productiedomeinen dekt en een ander certificaat dat `*.yoursite.com` ook voor uw productiedomeinen dekt.
+Als u de CDN voor deze domeinen wilt configureren, hebt u een certificaat nodig dat voor elk domein is geïnstalleerd. U installeert dus één certificaat dat `*.yoursite.com` voor de niet-productiedomeinen dekt en een ander certificaat dat `*.yoursite.com` ook voor uw productiedomeinen omvat.
 
-Deze configuratie is geldig. Wanneer u echter een van de certificaten bijwerkt, omdat beide certificaten dezelfde SAN-invoer dekken, installeert de CDN het meest recente certificaat op alle toepasselijke domeinen, wat onverwacht kan lijken.
+Deze configuratie is geldig. Als u echter een van de certificaten bijwerkt, hebben beide certificaten nog steeds betrekking op hetzelfde SAN-item. Dientengevolge, installeert CDN het meest recente certificaat op alle toepasselijke domeinen, die onverwacht kunnen schijnen.
 
-Hoewel dit onverwacht kan zijn, is dit geen fout en is het standaardgedrag van onderliggende CDN. Als u twee of meer SAN-certificaten hebt die betrekking hebben op hetzelfde SAN-domeinitem en dat domein wordt gedekt door één certificaat en het andere wordt bijgewerkt, wordt het laatste domein nu geïnstalleerd voor het domein.
+Hoewel dit scenario onverwacht kan zijn, is het geen fout en is het standaardgedrag van onderliggende CDN. Als u twee of meer SAN-certificaten hebt die betrekking hebben op hetzelfde SAN-domeinitem, installeert de CDN het meest recente bijgewerkte certificaat voor dat domein. Dit gebeurt zelfs wanneer een ander certificaat al op hetzelfde domeinitem van toepassing is.
 
 +++
