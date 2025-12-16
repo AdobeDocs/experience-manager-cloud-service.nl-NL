@@ -18,19 +18,19 @@ Dit zijn de opmerkingen bij de release van 12 december 2025 van de Universal Edi
 
 >[!TIP]
 >
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* De steun is toegevoegd aan bestaande lijsten in de [ rijke tekstredacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* De lusjesleutel is toegelaten voor het nestelen van lijsten in de [ rijke tekstredacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* De ontwikkelaarlogin eigenschap kan nu via de [ meta markering `aem-dev-login` worden onbruikbaar gemaakt.](/help/implementing/universal-editor/customizing.md#meta-tags)
-* Een klik in de bekledingssectie met de rechtermuisknop toont nu a [ contextafhankelijke optiemenu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
-* [ Scoped indentation ](/help/implementing/universal-editor/configure-rte.md#indentation) wordt nu gesteund in de [ rijke tekstredacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* De steun is toegevoegd aan bestaande lijsten in de [&#x200B; rijke tekstredacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* De lusjesleutel is toegelaten voor het nestelen van lijsten in de [&#x200B; rijke tekstredacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* De ontwikkelaarlogin eigenschap kan nu via de [&#x200B; meta markering `aem-dev-login` worden onbruikbaar gemaakt.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* Een klik in de bekledingssectie met de rechtermuisknop toont nu a [&#x200B; contextafhankelijke optiemenu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
+* [&#x200B; Scoped indentation &#x200B;](/help/implementing/universal-editor/configure-rte.md#indentation) wordt nu gesteund in de [&#x200B; rijke tekstredacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
 ## Functies voor vroege adoptie {#early-adopter}
 
