@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Inhoud beter detecteren met door AI gegenereerde metagegevens {#ai-smart-tags}
 
-In plaats van handmatig in te voeren, wijst AI automatisch beschrijvende tags toe aan digitale elementen. Deze door AI gegenereerde tags verbeteren de kwaliteit van de metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, gecategoriseerd en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud. Als het element bijvoorbeeld een afbeelding is, kan AI objecten, scènes, emoties of zelfs merklogo&#39;s in het element herkennen en relevante tags genereren, zoals &quot;zonsondergang&quot;, &quot;strand&quot;, &quot;vakantie&quot; of &quot;glimlachen&quot;. Door AI gegenereerde inhoud kan het zoeken naar elementen verbeteren door gebruik te maken van zowel semantische als lexicale zoektechnieken. Zie meer [ Onderzoek Assets ](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+In plaats van handmatig in te voeren, wijst AI automatisch beschrijvende tags toe aan digitale elementen. Deze door AI gegenereerde tags verbeteren de kwaliteit van de metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, gecategoriseerd en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud. Als het element bijvoorbeeld een afbeelding is, kan AI objecten, scènes, emoties of zelfs merklogo&#39;s in het element herkennen en relevante tags genereren, zoals &quot;zonsondergang&quot;, &quot;strand&quot;, &quot;vakantie&quot; of &quot;glimlachen&quot;. Door AI gegenereerde inhoud kan het zoeken naar elementen verbeteren door gebruik te maken van zowel semantische als lexicale zoektechnieken. Zie meer [&#x200B; Onderzoek Assets &#x200B;](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![ AI Gegenereerde meta-gegevens ](/help/assets/assets/enhanced-smart-tags.png)
+![&#x200B; AI Gegenereerde meta-gegevens &#x200B;](/help/assets/assets/enhanced-smart-tags.png)
 
 ## Hoe kan ik door AI gegenereerde metagegevens inschakelen? {#enable-ai-generated-metadata}
 
@@ -43,4 +43,4 @@ Voer de volgende stappen uit om de verbeterde functie Slimme tags te gebruiken:
 
 1. [ Facultatief ] u kunt extra markeringen toevoegen of uw creëren als u om het even welke relevante markeringen voelt ontbreken. U doet dit door uw tags in het veld **[!UICONTROL Generated keywords]** te schrijven en op **[!UICONTROL Save]** te klikken.
 
-Voor informatie over hoe te om AI-Gegenereerde meta-gegevens onbruikbaar te maken, zie [ AI-Gegenereerde meta-gegevens ](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata) onbruikbaar maken.
+Voor informatie over hoe te om AI-Gegenereerde meta-gegevens onbruikbaar te maken, zie [&#x200B; AI-Gegenereerde meta-gegevens &#x200B;](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata) onbruikbaar maken.
