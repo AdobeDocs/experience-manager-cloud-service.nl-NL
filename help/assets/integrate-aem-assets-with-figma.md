@@ -40,13 +40,13 @@ U kunt ook de [[!DNL Adobe Experience Manager (AEM) Assets Connector] &#x200B;](
 
 >[!NOTE]
 >
-> [&#x200B; de Steun van Adobe van het Contact &#x200B;](https://helpx.adobe.com/contact.html) voor hulp als u een **[!UICONTROL Network Error]** bericht na het programma openen aan uw [!DNL AEM] milieu ziet.
+> [&#x200B; de Steun van Adobe van het Contact &#x200B;](https://helpx.adobe.com/nl/contact.html) voor hulp als u een **[!UICONTROL Network Error]** bericht na het programma openen aan uw [!DNL AEM] milieu ziet.
 
 ## [!DNL AEM] -elementen importeren in [!DNL Figma] canvas{#import-aem-assets-into-figma-workflow}
 
 [&#x200B; toegang [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] paneel &#x200B;](#access-aem-assets-connector) binnen uw [!DNL Figma] ontwerpinterface en doe het volgende:
 
-1. Zoeken naar elementen in het deelvenster [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] . Voor meer informatie, zie [&#x200B; gebruikend de Selecteur van Activa &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Zoeken naar elementen in het deelvenster [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] . Voor meer informatie, zie [&#x200B; gebruikend de Selecteur van Activa &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Sleep het element naar het canvas of selecteer het element en klik op **[!UICONTROL Select]** om het element op het canvas te plaatsen.
 
