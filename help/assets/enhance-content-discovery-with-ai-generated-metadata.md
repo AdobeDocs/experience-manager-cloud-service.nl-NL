@@ -3,9 +3,9 @@ title: Verbeter de detectie van inhoud met door AI gegenereerde metagegevens in 
 description: Leer hoe u de detectie van inhoud kunt verbeteren met metagegevens die door AI zijn gegenereerd in de beheerweergave
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 | UI&#39;s | Artikelkoppeling |
 | -------- | ---------------------------- |
-| Assets View | [&#x200B; klik hier &#x200B;](/help/assets/ai-generated-metadata-assets-view.md) |
+| Assets View | [ klik hier ](/help/assets/ai-generated-metadata-assets-view.md) |
 | Admin View | Dit artikel |
 
-In plaats van handmatig in te voeren, wijst AI automatisch beschrijvende tags toe aan digitale elementen. Deze door AI gegenereerde tags verbeteren de kwaliteit van de metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, gecategoriseerd en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud. Als het element bijvoorbeeld een afbeelding is, kan AI objecten, scènes, emoties of zelfs merklogo&#39;s in het element herkennen en relevante tags genereren, zoals &quot;zonsondergang&quot;, &quot;strand&quot;, &quot;vakantie&quot; of &quot;glimlachen&quot;. Door AI gegenereerde inhoud kan het zoeken naar elementen verbeteren door gebruik te maken van zowel semantische als lexicale zoektechnieken. Zie meer [&#x200B; Onderzoek Assets &#x200B;](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+In plaats van handmatig in te voeren, wijst AI automatisch beschrijvende tags toe aan digitale elementen. Deze door AI gegenereerde tags verbeteren de kwaliteit van de metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, gecategoriseerd en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud. Als het element bijvoorbeeld een afbeelding is, kan AI objecten, scènes, emoties of zelfs merklogo&#39;s in het element herkennen en relevante tags genereren, zoals &quot;zonsondergang&quot;, &quot;strand&quot;, &quot;vakantie&quot; of &quot;glimlachen&quot;. Door AI gegenereerde inhoud kan het zoeken naar elementen verbeteren door gebruik te maken van zowel semantische als lexicale zoektechnieken. Zie meer [ Onderzoek Assets ](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![&#x200B; Verbeterde slimme markeringen &#x200B;](assets/enhanced-smart-tags1.png)
+![ Verbeterde slimme markeringen ](assets/enhanced-smart-tags1.png)
 
 ## Hoe kan ik door AI gegenereerde metagegevens inschakelen? {#enable-ai-generated-metadata}
 
@@ -44,7 +44,7 @@ Door AI gegenereerde titels configureren:
 
    * **AI-Gegenereerde Titel van de Vertoning slechts als Titel van gelijkstroom niet** bestaat: AEM Assets toont de AI-Gegenereerde titel slechts als de activatitel niet voor activa wordt bepaald.
 
-     ![&#x200B; vorm AI-Gegenereerde titels &#x200B;](assets/configure-title-ai-generated.png)
+     ![ vorm AI-Gegenereerde titels ](assets/configure-title-ai-generated.png)
 
 ## Door AI gegenereerde metagegevens gebruiken {#using-ai-generated-smart-tags}
 
@@ -69,7 +69,9 @@ Voer de volgende stappen uit om de verbeterde functie Slimme tags te gebruiken:
 
 ## Door AI gegenereerde metagegevens uitschakelen {#disable-ai-generated-metadata}
 
-Door AI gegenereerde metagegevens uitschakelen:
+U kunt door AI gegenereerde metagegevens uitschakelen voor uw AEM as a Cloud Service-omgeving of u kunt deze uitschakelen op mapniveau.
+
+Door AI gegenereerde metagegevens uitschakelen voor de AEM as a Cloud Service-omgeving:
 
 1. Navigeer naar **[!UICONTROL Tools > Assets > Assets Configurations > Smart Tag Enhancement Configuration]** .
 
@@ -78,3 +80,15 @@ Door AI gegenereerde metagegevens uitschakelen:
 1. Klik op **[!UICONTROL Save]** .
 
 De door AI gegenereerde metagegevens worden uitgeschakeld voor de nieuwe elementen of mappen die u uploadt naar AEM Assets. Deze velden worden nog steeds weergegeven in de bestaande elementen of mappen waarin al door AI gegenereerde metagegevensvelden staan.
+
+### Door AI gegenereerde metagegevens voor mappen uitschakelen {#disable-ai-generated-metadata-folder-level}
+
+Door AI gegenereerde metagegevens op mapniveau uitschakelen:
+
+1. Selecteer de map en klik op **[!UICONTROL Properties]** .
+
+1. Selecteer **[!UICONTROL Asset Processing]** tab.
+
+1. Selecteer in de sectie **[!UICONTROL Smart Tags Enhancements for images]** de optie **[!UICONTROL Disable]** in de vervolgkeuzelijst.
+
+1. Klik op **[!UICONTROL Save & Close]** om door AI gegenereerde metagegevens voor de geselecteerde map uit te schakelen.
