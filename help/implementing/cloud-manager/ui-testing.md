@@ -26,7 +26,7 @@ Het testen UI van de douane is een facultatieve eigenschap die u toelaat om test
 
 AEM verstrekt een geïntegreerde reeks van [&#x200B; de kwaliteitsgates van Cloud Manager &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md) om vlotte updates aan douanetoepassingen te verzekeren. Met name de testpoorten van IT ondersteunen al het maken en automatiseren van aangepaste tests met AEM API&#39;s.
 
-De tests UI worden verpakt in een beeld van de Docker om een brede keus in taal en kaders (zoals Cypress, Selenium, Java en Maven, en JavaScript) toe te staan. Ook, kan een UI testproject gemakkelijk worden geproduceerd door [&#x200B; het Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview) te gebruiken.
+De tests UI worden verpakt in een beeld van de Docker om een brede keus in taal en kaders (zoals Cypress, Selenium, Java en Maven, en JavaScript) toe te staan. Ook, kan een UI testproject gemakkelijk worden geproduceerd door [&#x200B; het Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/overview) te gebruiken.
 
 Adobe moedigt het gebruik van Cypress aan, aangezien het in real time herladen en automatisch wachten aanbiedt, die helpt tijd te besparen en productiviteit tijdens het testen verbetert. Cypress biedt ook een eenvoudige en intuïtieve syntaxis, waardoor het gemakkelijk is om te leren en te gebruiken, zelfs voor gebruikers die nog niet aan tests hebben gewerkt.
 
@@ -274,7 +274,7 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 | Aanbevolen duur | 15 m | Adobe beveelt aan dat de tests binnen deze termijn worden gehouden. |
 
 * Als het doel Auteur/publiceer door IP voegend op lijst van gewenste personen wordt beschermd, moet de de testinfrastructuur van de pijpleiding UI worden gevoegd op lijst van gewenste personen of de tests UI kunnen met 403 Verboden ontbreken.
-Zie ook [&#x200B; UI testmislukking in AEMaaCS toe te schrijven aan IP Voegend op lijst van gewenste personen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) en [&#x200B; Inleiding aan IP Lijsten van gewenste personen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Zie ook [&#x200B; UI testmislukking in AEMaaCS toe te schrijven aan IP Voegend op lijst van gewenste personen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-26654#) en [&#x200B; Inleiding aan IP Lijsten van gewenste personen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
