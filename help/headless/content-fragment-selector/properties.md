@@ -3,9 +3,9 @@ title: Eigenschappen van Micro-Frontend-inhoudsfragmentkiezer voor Adobe Experie
 description: Eigenschappen om de Micro-Front Content Fragment Selector te configureren voor het zoeken, zoeken en ophalen van inhoudsfragmenten van uw toepassing.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
+source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -20,22 +20,28 @@ U kunt de volgende eigenschappen gebruiken om aan te passen hoe de Content Fragm
 
 | Eigenschap | Type | Vereist | Standaard | Beschrijving |
 |--- |--- |--- |--- |--- |
-| `imsToken` | string | Nee | | IMS-token gebruikt voor verificatie. |
-| `repoId` | string | Nee | | ID opslagplaats gebruikt voor verificatie. |
-| `orgId` | string | Ja | | Organisatie-id gebruikt voor verificatie. |
-| `locale` | string | Nee | | Lokale gegevens. |
-| `env` | Omgeving | Nee | | Implementatieomgeving van Content Fragment Selector. |
-| `filters` | FragmentFilter | Nee | | Filters die moeten worden toegepast voor de lijst met inhoudsfragmenten. Fragmenten onder `/content/dam` worden standaard weergegeven. Standaardwaarde: `{ folder: "/content/dam" }` |
-| `isOpen` | boolean | Ja | `false` | Markering om het openen of sluiten van de kiezer te activeren. |
-| `onDismiss` | () => void | Ja | | Functie die moet worden geroepen wanneer **Ontkenning** wordt geselecteerd. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]` , domainNames: `string[]` }) => void | Ja | | Functie die moet worden geroepen wanneer **Uitgezocht** na het selecteren van één of meerdere Fragments van de Inhoud wordt gebruikt. <br><br> de functie zal ontvangen:<br><ul><li> de geselecteerde inhoudsfragmenten met `id` - en `path` -velden</li><li>en domeinnamen die gerelateerd zijn aan de programma-id van de repository en de omgeving-id, die de status `ready` en `tier` Publish hebben</li></ul><br> als er geen domeinnamen zijn zal het de Publish instantie als reserve domein gebruiken. |
-| `theme` | &quot;licht&quot; of &quot;donker&quot; | Nee | | Thema van de kiezer voor inhoudsfragmenten. Het standaardthema wordt geplaatst aan het thema van het milieu UnifiedShell. |
-| `selectionType` | &quot;single&quot; of &quot;multiple&quot; | Nee | `single` | Selectietype dat kan worden gebruikt om de selectie voor de FragmentSelector te beperken. |
-| `dialogSize` | &quot;fullscreen&quot; of &quot;fullscreenTakOP&quot; | Nee | `fullscreen` | Optionele eigenschap om de grootte van het dialoogvenster te bepalen. |
-| `waitForImsToken` | boolean | Nee | `false` | Geeft aan of de Content Fragment Selector wordt gerenderd in de context van SUSI flow en moet wachten tot `imsToken` gereed is. |
-| `imsAuthInfo` | ImsAuthInfo | Nee | | Object met de IMS-verificatiegegevens van de aangemelde gebruiker. |
-| `runningInUnifiedShell` | boolean | Nee | | Wijst erop of de Selector van het Fragment van de Inhoud onder UnifiedShell of standalone loopt. |
-| `readonlyFilters` | ResourceReadFiltersField | Nee | | Alleen-lezen filters die kunnen worden toegepast op de lijst met inhoud en die niet kunnen worden verwijderd. |
+| `ref` | FragmentSelectorRef | | | Verwijzing naar de instantie `ContentFragmentSelector` , waarmee toegang wordt verleend tot beschikbare functionaliteit zoals `reload` . |
+| `imsToken` | string | Nee | | IMS-token gebruikt voor verificatie. Indien niet opgegeven, wordt de IMS-aanmeldstroom gestart. |
+| `repoId` | string | Nee | | Repository-id gebruikt voor de fragmentkiezer. Indien beschikbaar maakt de kiezer automatisch verbinding met de opgegeven opslagplaats en is het vervolgkeuzemenu van de opslagplaats verborgen. Indien niet opgegeven, kan de gebruiker een opslagplaats selecteren in de lijst met beschikbare opslagplaatsen waartoe hij toegang heeft. |
+| `defaultRepoId` | string | Nee | | Opslagplaats-id die standaard wordt geselecteerd wanneer de gegevensopslagkiezer wordt weergegeven. Wordt alleen gebruikt als `repoId` niet is opgegeven. Als `repoId` is ingesteld, wordt de gegevensopslagkiezer verborgen en wordt deze waarde genegeerd. |
+| `orgId` | string | Nee | | Organisatie-id gebruikt voor verificatie. Als deze optie niet wordt opgegeven, kan de gebruiker een opslagplaats selecteren van verschillende organisaties tot wie de gebruiker toegang heeft. Als de gebruiker geen toegang heeft tot een opslagplaats of organisatie, wordt de inhoud niet geladen. |
+| `locale` | string | Nee | &quot;en-US&quot; | Landinstelling. |
+| `env` | string | Nee | | Implementatieomgeving. Zie het type `Env` voor toegestane omgevingsnamen. |
+| `filters` | FragmentFilter | Nee | `{ folder: "/content/dam" }` | Filters die moeten worden toegepast op de lijst met inhoudsfragmenten. Fragmenten onder `/content/dam` worden standaard weergegeven. |
+| `isOpen` | boolean | Nee | `false` | Vlag om te controleren of de selecteur open of gesloten is. |
+| `noWrap` | boolean | Nee | `false` | Hiermee wordt bepaald of de fragmentkiezer wordt weergegeven zonder een dialoogvenster voor terugloop. Wanneer ingesteld op `true` , wordt de fragmentkiezer rechtstreeks ingesloten in de bovenliggende container. Nuttig voor het integreren van de kiezer in aangepaste indelingen of workflows. |
+| `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, huurderInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Nee | | Callback-functie die wordt geactiveerd wanneer de selectie van inhoudsfragmenten verandert. Verstrekt de momenteel geselecteerde fragmenten, domeinnaam, huurdersinfo, bewaarplaats identiteitskaart, en leveringsbewaarplaatsen. |
+| `onDismiss` | () => void | Nee | | Callback-functie die wordt geactiveerd wanneer de ontslagactie wordt uitgevoerd (bijvoorbeeld het sluiten van de kiezer). |
+| `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, huurderInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Nee | | Callback functie teweeggebracht wanneer de gebruiker hun selectie bevestigt. Ontvangt de geselecteerde inhoudsfragmenten, de domeinnaam, huurdersinformatie, bewaarplaats-id, en leveringsbewaarplaatsen. |
+| `theme` | &quot;licht&quot; of &quot;donker&quot; | Nee | | Thema voor de fragmentkiezer. Door gebrek, wordt het geplaatst aan het UnifiedShell omgevingsthema. |
+| `selectionType` | &quot;single&quot; of &quot;multiple&quot; | Nee | `single` | U kunt selectietype gebruiken om de selectie voor de fragmentkiezer te beperken. |
+| `dialogSize` | &quot;fullscreen&quot; of &quot;fullscreenTakOP&quot; | Nee | `fullscreen` | Optionele proxy om de grootte van het dialoogvenster te bepalen. |
+| `runningInUnifiedShell` | boolean | Nee | | Of DestinationSelector onder UnifiedShell of standalone loopt. |
+| `readonlyFilters` | ResourceReadonlyFiltersField [] | Nee | | Alleen-lezen filters die worden toegepast op de lijst met inhoudsfragmenten. Deze filters kunnen niet door de gebruiker worden verwijderd. |
+| `selectedFragments` | ContentFragmentIdentifier [] | Nee | `[]` | Eerste selectie van inhoudsfragmenten die moet worden vooraf geselecteerd wanneer de kiezer wordt geopend. |
+| `hipaaEnabled` | boolean | Nee | `false` | Geeft aan of HIPAA-compatibiliteit is ingeschakeld. |
+| `inventoryView` | InventoryViewType | Nee | `table` | Standaardweergavetype inventarisatie dat in de kiezer moet worden gebruikt. |
+| `inventoryViewToggleEnabled` | boolean | Nee | `false` | Hiermee wordt aangegeven of de voorraadweergave is ingeschakeld, zodat de gebruiker kan schakelen tussen tabel- en rasterweergave. |
 
 ## Eigenschappen van ImsAuthProps {#imsauthprops-properties}
 
