@@ -3,9 +3,9 @@ title: Eigenschappen van Micro-Frontend-inhoudsfragmentkiezer voor Adobe Experie
 description: Eigenschappen om de Micro-Front Content Fragment Selector te configureren voor het zoeken, zoeken en ophalen van inhoudsfragmenten van uw toepassing.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ U kunt de volgende eigenschappen gebruiken om aan te passen hoe de Content Fragm
 | `repoId` | string | Nee | | Repository-id gebruikt voor de fragmentkiezer. Indien beschikbaar maakt de kiezer automatisch verbinding met de opgegeven opslagplaats en is het vervolgkeuzemenu van de opslagplaats verborgen. Indien niet opgegeven, kan de gebruiker een opslagplaats selecteren in de lijst met beschikbare opslagplaatsen waartoe hij toegang heeft. |
 | `defaultRepoId` | string | Nee | | Opslagplaats-id die standaard wordt geselecteerd wanneer de gegevensopslagkiezer wordt weergegeven. Wordt alleen gebruikt als `repoId` niet is opgegeven. Als `repoId` is ingesteld, wordt de gegevensopslagkiezer verborgen en wordt deze waarde genegeerd. |
 | `orgId` | string | Nee | | Organisatie-id gebruikt voor verificatie. Als deze optie niet wordt opgegeven, kan de gebruiker een opslagplaats selecteren van verschillende organisaties tot wie de gebruiker toegang heeft. Als de gebruiker geen toegang heeft tot een opslagplaats of organisatie, wordt de inhoud niet geladen. |
-| `locale` | string | Nee | &quot;en-US&quot; | Landinstelling. |
+| `locale` | string | Nee | `en-US` | Landinstelling. |
 | `env` | string | Nee | | Implementatieomgeving. Zie het type `Env` voor toegestane omgevingsnamen. |
 | `filters` | FragmentFilter | Nee | `{ folder: "/content/dam" }` | Filters die moeten worden toegepast op de lijst met inhoudsfragmenten. Fragmenten onder `/content/dam` worden standaard weergegeven. |
 | `isOpen` | boolean | Nee | `false` | Vlag om te controleren of de selecteur open of gesloten is. |
 | `noWrap` | boolean | Nee | `false` | Hiermee wordt bepaald of de fragmentkiezer wordt weergegeven zonder een dialoogvenster voor terugloop. Wanneer ingesteld op `true` , wordt de fragmentkiezer rechtstreeks ingesloten in de bovenliggende container. Nuttig voor het integreren van de kiezer in aangepaste indelingen of workflows. |
 | `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, huurderInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Nee | | Callback-functie die wordt geactiveerd wanneer de selectie van inhoudsfragmenten verandert. Verstrekt de momenteel geselecteerde fragmenten, domeinnaam, huurdersinfo, bewaarplaats identiteitskaart, en leveringsbewaarplaatsen. |
-| `onDismiss` | () => void | Nee | | Callback-functie die wordt geactiveerd wanneer de ontslagactie wordt uitgevoerd (bijvoorbeeld het sluiten van de kiezer). |
+| `onDismiss` | () => void | Nee | | Callback functie teweeggebracht wanneer de ontslagactie wordt uitgevoerd; bijvoorbeeld, sluitend de selecteur. |
 | `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, huurderInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Nee | | Callback functie teweeggebracht wanneer de gebruiker hun selectie bevestigt. Ontvangt de geselecteerde inhoudsfragmenten, de domeinnaam, huurdersinformatie, bewaarplaats-id, en leveringsbewaarplaatsen. |
 | `theme` | &quot;licht&quot; of &quot;donker&quot; | Nee | | Thema voor de fragmentkiezer. Door gebrek, wordt het geplaatst aan het UnifiedShell omgevingsthema. |
 | `selectionType` | &quot;single&quot; of &quot;multiple&quot; | Nee | `single` | U kunt selectietype gebruiken om de selectie voor de fragmentkiezer te beperken. |
