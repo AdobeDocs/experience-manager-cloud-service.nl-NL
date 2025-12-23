@@ -4,10 +4,10 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 68444ac15513bad7c1eaee97c474e21d36992d49
+source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 1%
+source-wordcount: '1080'
+ht-degree: 0%
 
 ---
 
@@ -16,67 +16,98 @@ ht-degree: 1%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 23482 {#23482}
+## Release 23862 {#23862}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 23482 samengevat, die op 3 december 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 23385.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 23862 samengevat, die op 23 december 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 23482.
 
-De activering van de 2025.12.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2026.1.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
+### Verbeteringen {#enhancements-23862}
 
-### Verbeteringen {#enhancements-23482}
+* CQ-4361812: Toegevoegde ondersteuning voor optioneel param folderPath in rest api. Beschrijving: Er wordt een nieuw vertaalproject gemaakt door de API en geplaatst binnen het pad dat is opgegeven door de optionele parameter `folderPath` , anders wordt het standaard het hoofdprojectpad `/content/projects` .
+* FORMS-21960: extra ondersteuning voor canvas bewerken op lokaal niveau voor interactieve communicatie, vergelijkbaar met formulierspa.
+* FORMS-2001: richtlijnen toegevoegd voor het reduceren van grote aantallen `/etc.clientlibs/toggles.json` -aanvragen in AEM Forms as a Cloud Service.
+* FORMS-22496: Maak Raw ResponseBody beschikbaar in Invoke Service.
+* FORMS-22495: voeg placeholder bezit in SetProperty regel toe.
+* FORMS-21925: opmaken van UBS-voetnoten: alle voetnoten in het formulier weergeven tijdens het laden van het formulier.
+* FORMS-20536: Stel een optie van volledige reactie in eventPayload in regel redacteur zonder afbeelding bloot.
+* SITES-37199: Annotatiefunctie zorgt ervoor dat de repository doorloopt via een niet-gevalideerde `authorizables.json` aanroep die prestatievermindering veroorzaakt.
+* SITES-37118: Commerce Optimizer-ondersteuning in Product Cockpit.
+* SITES-38029: Voeg logboeken voor het vinden MSM duw op toe wijzigt gebeurtenissen.
+* SITES-37050: Ondersteuning voor &#39;force unpublish&#39;, waarmee u de publicatie van inhoudsfragmenten waarnaar wordt verwezen door andere gepubliceerde bronnen, ongedaan kunt maken.
+* SITES-37142: extra mogelijkheid voor het checken/uitchecken van een inhoudsfragment via content fragment PATCH.
+* SITES-37613: In het CF API toestemmingeneindpunt terugkeer controlerend als de gebruiker een inhoudsfragment kan controleren, of controle als de gebruiker een inhoudsfragment kan controleren.
+* SITES-37835: Wanneer u meerdere inhoudsfragmenten met dezelfde titel, maar zonder opgegeven naam wilt maken, genereert u automatisch een nieuwe naam in plaats van dat deze mislukt als gevolg van een conflict.
+* SITES-36823: Edge Delivery met Universal Editor: verwijder de noodzaak van reverse-toewijzingen voor indexen.
+* SITES-34751: Edge Delivery met Universal Editor: mislukt bij publiceren (Vroege toegang) voor niet-ondersteunde bestandstypen en paden.
+* SITES-37888: Edge Delivery met Universal Editor: gebruik het Alt-achtervoegsel als synoniem voor Tekst voor koppelingen.
+* SITES-19850: Edge Delivery met Universal Editor: voeg ondersteuning toe voor meerdere bladen in spreadsheets.
+* SITES-32490: Edge Delivery met Universal Editor: voeg ondersteuning toe voor data-aue-component en door de gebruiker gedefinieerde data-aue-label voor blokken en standaardinhoud.
+* SITES-37794: Edge Delivery met Universal Editor: wizard Pagina maken vereenvoudigen.
+* SITES-36963: Migrate Audience/Segment Endpoint to Target API v3 for Workspace Support.
 
-* ASSETS-49770: Voeg quarantainemeldingen voor malware-scanresultaten toe.
-* ASSETS-54079: Pas aangepaste metagegevens toe voor de quarantainemap.
-* ASSETS-54083: Maak een gepland quarantainemechanisme.
-* ASSETS-54278: verwijder de eigenschap `dam:avScanTime` uit elementen.
-* ASSETS-57284: bestanden uploaden naar de map Quarantine beperken (slepen en neerzetten uitschakelen).
-* ASSETS-57428: Verberg de quarantainemap in de gebruikersinterface van de Assets View.
-* ASSETS-57626: Verbeter het gedrag voor opnieuw uitproberen van taken voor async assets.
-* ASSETS-57879: Voeg samenvoegoptie toe voor async move/copy assets taken.
-* ASSETS-58099: voeg config toe om verbeterde slimme markeringen voor volledige milieu onbruikbaar te maken.
-* ASSETS-58136: Implementeer pagineringsfeedback in Search OpenAPI.
-* ASSETS-59402: voeg asynchrone taakeindpunten toe voor map delete API: exporteer pakketten naar intern gebied.
-* ASSETS-59966: Wijzig de naam van de groep Malware Administrators in Quarantine-beheerders.
-* ASSETS-60166: gebruik VideoViewer.js in plaats van op iframe gebaseerde URL&#39;s.
-* GRANITE-61378: hulpprogramma voor foutopsporing van machtigingen - ListPrincipals-API.
-* GRANITE-63235: Vraag om sites te identificeren met de eigenschap `cq:conf` , ondersteunt detectie van oude pagina&#39;s/versies.
-* SITES-30452: Content API met ASO - Titel &amp; Description Suggestions, XWalk-ondersteuning, JSON Patch-bewerkingen, IMS Service Principal Binding.
+### Opgeloste problemen {#fixed-issues-23862}
 
-### Opgeloste problemen {#fixed-issues-23482}
+* CQ-4361831: Het probleem met genai_dropdown_span is niet opgelost.
+* CQ-4360895: Correctie aantal onnauwkeurige vertaaltaken in project tijdens gelijktijdige updates.
+* CQ-4361599: Oplossing voor het overslaan van contentfragmenten van vertaaltaken na 2025.7-upgrade.
+* CQ-4360747: Vaste herhaalbare vertaaltaken maken te vaak lege ladingen en trigger (NullPointerException in ScheduleRepeatTranslationProject).
+* CQ-4359994: Fixed destinationLanguage field type inconsistence for single and multi-language project.
+* SITES-38153: Fix cf publish reference provider for uid based references.
+* SITES-37594: Prestatieverbeteringen voor model door tagfunctionaliteit.
+* SITES-37337: FragmentCreateProcessor: geef aanvullende foutdetails op in logboeken.
+* SITES-33666: Ongelokaliseerd foutbericht &#39;Kan Json van fragment niet afdrukken&#39; in de Content Fragment Editor.
+* SITES-33675: Hardcoded &#39;undefined&#39;-tekenreeks in de Content Fragment Editor > Associated Content.
+* SITES-30715: Niet-gelokaliseerde tekenreeks Algemeen in de Content Fragment Editor.
+* SITES-28592: Niet-gelokaliseerde tekenreeksen in de modeleditor voor inhoudsfragmenten > Dialoogvenster &#39;Model is vergrendeld&#39;.
+* SITES-977: Tekenreeksen &quot;Tags&quot; en &quot;verzamelingen&quot; zijn niet gelokaliseerd op de pagina met inhoudsfragmenten bewerken.
+* SITES-29699: Niet-gelokaliseerde typen toegestane elementen in de Content Fragment Editor.
+* SITES-25240: Call to action-velden in de Teaser Modal hebben geen zichtbaar label.
+* SITES-24869: Afgeknot tooltip in de Redacteur van het Malplaatje > Scheidingsteken > Beleid.
+* SITES-19313: De fout is unlocalized wanneer belemmering en laat vallen een component aan geschrapte malplaatje in de Redacteur van het Malplaatje.
+* SITES-18103: Niet-gelokaliseerde tekenreeksen in Page Editor > Workflow.
+* SITES-17501: Niet-gelokaliseerde tekenreeksen in de Redacteur van het Malplaatje > de redacteur van het Beleid van de Component.
+* SITES-15091: Tekenreeksen zijn niet-gelokaliseerd voor de eigenschappen van tekstcomponenten van het Experience-fragment.
+* SITES-8113: Tekenreeks &#39;Assets&#39; is niet gelokaliseerd in het dialoogvenster Afbeelding selecteren voor &#39;Sjablonen&#39; in het menu Opties.
+* SITES-37587: Het maken van live kopieën mislukt nog steeds in PROD met NPE in RolloutManagerImpl.
+* SITES-37335: Live Copy Pagina-eigenschappen geven fout weer in console met betrekking tot cq-tags.
+* SITES-36972: De knop &quot;Rollout&quot; ontbreekt in de bewerkbare werkbalk.
+* SITES-36570: Het maken van actieve kopieën mislukt nadat de schakeloptie Live kopie maken is geactiveerd.
+* SITES-36158: De uitrol mislukt bij Taak vanwege een uitzondering.
+* SITES-35655: De nieuwe redacteur van CF toont actieve overerving nadat het werd gebroken.
+* SITES-31425: Niet-gelokaliseerde foutmelding &quot;Error: {} field is required&quot; wordt weergegeven in de workflow Start in sites.
+* SITES-19802: Knopinfo is niet gelokaliseerd op de site Core Components > Inhoudsopgave.
+* SITES-36543: Probleem opgelost waarbij beheerders uitgecheckte inhoudsfragmenten konden bewerken.
+* SITES-36967: Fixed NullPointerExceptions that occur when try to generate thumbnail data for broken content fragments.
+* SITES-37791: Probleem verholpen waarbij het aanroepen van FindAndReplace voor tekenreeksen die `$` bevatten, zou mislukken.
+* SITES-37018: Leeg foutbericht bij kopiëren van pagina met niet-toegestaan sjabloonpad.
+* SITES-36243: Edge Delivery met Universal Editor: verbeter 404s tijdens het publiceren van `sling:OrderedFolder` .
+* SITES-37684: Edge Delivery met Universal Editor: verbeter de prestatievermindering in omgevingen met veel sites.
+* SITES-37840: Edge Delivery met Universal Editor: verhelpt publicatiefouten die zijn ontstaan door verouderde toegangstoken voor Edge Delivery.
+* SITES-37933: Edge Delivery met Universal Editor: repareer (un)publicatiefouten voor verwijderde bronnen in Launches.
+* SITES-37870: Edge Delivery met Universal Editor: Fix broken rendering van metagegevens van aangepaste pagina&#39;s met ondersteuning voor meerdere velden ingeschakeld.
+* SITES-37349: Edge Delivery met Universal Editor: geef meerdere velden met één item als lijst weer met één lijstitem.
+* SITES-36148: Edge Delivery with Universal Editor: Fix data-aue-label for compound multi-fields.
 
-* ASSETS-57430: Fix Assets View upload skipping preprocessing: export `repoapi.preprocessing` package, update RAPI to latest.
-* ASSETS-58190: Reduceer onnodig hoog goktotaal in de gebruikersinterface voor verzamelingen.
-* ASSETS-58866: Fix Asset title/description/ID returned in OpenAPI responses.
-* ASSETS-58868: Pagina corrigeren wanneer sorteervelden ontbreken op elementen.
-* ASSETS-58920: Probleem met voorbewerken van bulkmiddelen bij het importeren.
-* ASSETS-59168: Verbeter de start- en eindtijd van de scan met een onjuiste tijdzone.
-* ASSETS-59702: Gebeurtenisvolgorde corrigeren wanneer status van element is ingesteld op Geen status.
-* ASSETS-59830: async-taken opnieuw in de wachtrij gestopt tijdens podbeëindiging.
-* ASSETS-49757: Oplossingen voor Malware Detection-scangebeurtenissen.
-* GRANITE-61019: Fix `gcMonitor` wordt niet op de hoogte gebracht van de eerste uitvoering na het opnieuw opstarten van AEM.
-* GRANITE-62717: repareer `JSafe` de wachtwoordverwerking met niet-ASCII-tekens.
-* SITES-34331: Oplossing voor een implementatieoverlay van 503 time-out voor gebruikers die geen beheerder zijn (`cqLiveSyncCancelled index`).
-
-### Bekende problemen {#known-issues-23482}
+### Bekende problemen {#known-issues-23862}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-23482}
+### Verouderde functies en API&#39;s {#deprecated-23862}
 
-Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [&#x200B; Vervangen en Verwijderde Eigenschappen en APIs &#x200B;](/help/release-notes/deprecated-removed-features.md) document.
+Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-23482}
+### Beveiligingsproblemen {#security-23862}
 
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 4 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 23 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-23482}
+### Ingesloten technologieën {#embedded-tech-23862}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 88,0 | [&#x200B; Oak 1.88.0 API &#x200B;](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88/index.html) |
-| AEM SLING-API | 2,27,6 | [&#x200B; Apache Sling API 2.27.6 API &#x200B;](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTML | 1.4.28-1.4.0 | [&#x200B; Specificatie van de Taal van het Malplaatje van HTML &#x200B;](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2,4,65 | [&#x200B; Apache Httpd 2.4.65 &#x200B;](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM-kerncomponenten | 2.30.2. | [&#x200B; AEM WCM de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (standaard) | [&#x200B; Ondersteunde versies Node.js &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-
+| AEM Oak | 1 88,0 | [ Oak 1.88.0 API ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html) |
+| AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
+| Apache HTTP Server | 2,4,65 | [ Apache Httpd 2.4.65 ](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
+| AEM-kerncomponenten | 2.30.2. | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
+| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
