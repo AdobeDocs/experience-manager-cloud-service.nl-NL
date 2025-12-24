@@ -163,7 +163,7 @@ Dit proces staat controle van details zoals de gastheerwaarden, de configuratie 
 >U kunt een Snelle Milieu van de Ontwikkeling (RDE) gebruiken om, uw configuratie op te stellen en te testen:
 >
 >* [&#x200B; Snelle Milieu&#39;s van de Ontwikkeling &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [&#x200B; hoe te om het Snelle Milieu van de Ontwikkeling te gebruiken &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [&#x200B; hoe te om het Snelle Milieu van de Ontwikkeling te gebruiken &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Voorbeeld-CDN-leveranciersconfiguraties {#sample-configurations}
 
