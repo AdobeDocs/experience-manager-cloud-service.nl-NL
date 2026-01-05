@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **associeerde UI** is een gespecialiseerde, vereenvoudigde interface die bovenop de Interactieve Communicatie (IC) redacteur wordt gebouwd. Het wordt ontworpen voor klant-onder ogen ziet beroeps, zoals gebiedsassociaties en de dienstagenten om gepersonaliseerde, volgzame, en nauwkeurige mededelingen in real time tijdens levende interactie te produceren.
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/associate-ui-preview.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
 ## UI-interface koppelen
 
