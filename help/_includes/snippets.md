@@ -11,14 +11,14 @@ ht-degree: 0%
 
 ## Edge Delivery Services Authoring {#edge-delivery-authoring}
 
-[!BADGE  voor het ontwerpen van de inhoud van AEM voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM-inhoud ontwerpen voor Edge Delivery Services"}
+[!BADGE &#x200B; voor het ontwerpen van de inhoud van AEM voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM-inhoud ontwerpen voor Edge Delivery Services"}
 
 ## Zie ook {#see-also}
 
 * [Een AEM-adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
 * [Een AEM Adaptive Form toevoegen aan de AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Thema&#39;s toepassen op een AEM-adaptief formulier](/help/forms/using-themes-in-core-components.md)
-* [ voegt componenten aan een Aangepaste Vorm van AEM toe ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [&#x200B; voegt componenten aan een Aangepaste Vorm van AEM toe &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [CAPTCHA gebruiken in een AEM-adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Een PDF-versie (DoR) van een AEM Adaptive Form genereren](/help/forms/generate-document-of-record-core-components.md)
 * [Een AEM adaptief formulier vertalen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -30,7 +30,7 @@ ht-degree: 0%
 * [Aangepast formulier verbinden met Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Aanmelden bij AEM Adaptief formulier gebruiken](/help/forms/working-with-adobe-sign.md)
 * [Een nieuwe landinstelling toevoegen voor een adaptief formulier](/help/forms/supporting-new-language-localization-core-components.md)
-* [ verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [&#x200B; verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Verzend AanpassingsGegevens van de Vorm naar een eindpunt REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Adaptieve formuliergegevens verzenden naar AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Forms Portal gebruiken om AEM Adaptive Forms weer te geven op een AEM-website](/help/forms/configure-forms-portal.md)
@@ -93,7 +93,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
   <tr>
     <td>De vervolgkeuzelijst met opties instellen </td>
     <td>De drop-down lijst van opties wordt geplaatst gebruikend de ReeksOpties van de Redacteur van de Regel <b> van </b> bezit.</td>
-    <td>De drop-down lijst van opties wordt geplaatst gebruikend het 1} bezit van de Dienst van de Redacteur van de Regel <b> haalt van de Dienst {.</b> 
+    <td>De drop-down lijst van opties wordt geplaatst gebruikend het 1&rbrace; bezit van de Dienst van de Redacteur van de Regel <b> haalt van de Dienst &lbrace;.</b> 
    </td>
    </tr>
      </tr>
@@ -119,7 +119,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
    <tr>
    <td>Service-uitvoereigenschap</td>
    <td> Het de outputbezit van de Dienst wordt gesteund in de <b> Vastgestelde Waarde van </b> optie van de Redacteur van de Regel. </td>
-   <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3} bezit van de output van de Dienst {voor het aanhalen van APIs in de Redacteur van de Regel.</b>
+   <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3&rbrace; bezit van de output van de Dienst &lbrace;voor het aanhalen van APIs in de Redacteur van de Regel.</b>
    </td>
    </tr>
    <tr>
@@ -158,7 +158,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 ## Marketo Engage{#marketo-engage-see-also}
 
 * [Marketo Engage integreren met AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-* [ vorm vormen om met Marketo Engage te integreren ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [&#x200B; vorm vormen om met Marketo Engage te integreren &#x200B;](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
 * [Marketo Engage-gegevensbron configureren voor bestaande Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [De verzendactie naar Marketo Engage configureren voor bestaande formulieren](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
@@ -167,7 +167,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >[!IMPORTANT]
 >
 >De front-end pijpleiding vereist dat de volgende IP Lijst van gewenste personen vooraf aan Cloud Manager wordt toegevoegd.
->Indien nodig, [ voeg de IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) toe door het blok van hieronder adressen te kopiëren. Elk adres wordt gescheiden door een komma. Plak het blok in het **IP adres/CIDR.** gebied van **voeg IP de dialoogdoos van de Lijst van gewenste personen** toe. Plaats de curseur enkel na de eerste komma in de adreslijst en druk **binnengaan**. Sla de lijst op.
+>Indien nodig, [&#x200B; voeg de IP Lijst van gewenste personen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) toe door het blok van hieronder adressen te kopiëren. Elk adres wordt gescheiden door een komma. Plak het blok in het **IP adres/CIDR.** gebied van **voeg IP de dialoogdoos van de Lijst van gewenste personen** toe. Plaats de curseur enkel na de eerste komma in de adreslijst en druk **binnengaan**. Sla de lijst op.
 >Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze IP Lijst van gewenste personen aan Cloud Manager *wordt toegevoegd alvorens* u de pijpleiding toelaat.
 >
 >**Cloud Manager IP Lijst van gewenste personen**
@@ -179,48 +179,48 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >[!IMPORTANT]
 >
 >Als u gebruikt-of van plan bent te gebruiken-front-end pijpleiding om plaatsen te ontwikkelen, moet de Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
->Zie [ Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Zie [&#x200B; Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## IP Lijsten van gewenste personen en de Universele Redacteur {#ip-allow-lists-ue}
 
 >[!IMPORTANT]
 >
->Als u [ de Universele Redacteur voor inhoud creatie gebruikt, ](/help/implementing/universal-editor/introduction.md) en wenst om [ IP lijsten van gewenste personen ook te gebruiken, ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) u moet [ een lijst van gewenste personen met de IP adressen van de Universele Dienst van de Redacteur ook toevoegen en toepassen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>Als u [&#x200B; de Universele Redacteur voor inhoud creatie gebruikt, &#x200B;](/help/implementing/universal-editor/introduction.md) en wenst om [&#x200B; IP lijsten van gewenste personen ook te gebruiken, &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) u moet [&#x200B; een lijst van gewenste personen met de IP adressen van de Universele Dienst van de Redacteur ook toevoegen en toepassen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Werken met dynamische media {#work-with-dynamic-media}
 
 >[!TIP]
 >
->Bent u nieuw aan Dynamische Media? Voor een snel, overzicht op hoog niveau van Dynamische Media, zie [ Werk met Dynamische Media ](/help/assets/dynamic-media/dynamic-media.md).
+>Bent u nieuw aan Dynamische Media? Voor een snel, overzicht op hoog niveau van Dynamische Media, zie [&#x200B; Werk met Dynamische Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md).
 
 ## Zie ook voor dynamische media {#see-also-dm}
 
 >[!NOTE]
 >
->* Bent u nieuw aan Dynamische Media? Voor een snel, overzicht op hoog niveau van Dynamische Media, zie [ Werk met Dynamische Media ](/help/assets/dynamic-media/dynamic-media.md).
+>* Bent u nieuw aan Dynamische Media? Voor een snel, overzicht op hoog niveau van Dynamische Media, zie [&#x200B; Werk met Dynamische Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md).
 >
->* Volg [ Dynamische Beste praktijken van Media ](/help/assets/dynamic-media/dm-best-practices.md) om de meeste waarde te krijgen.
+>* Volg [&#x200B; Dynamische Beste praktijken van Media &#x200B;](/help/assets/dynamic-media/dm-best-practices.md) om de meeste waarde te krijgen.
 >
->* Probeer uit Dynamische het beeldmogelijkheden van Media met het [ hulpmiddel van de Momentopname ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Probeer uit Dynamische het beeldmogelijkheden van Media met het [&#x200B; hulpmiddel van de Momentopname &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
->* Verzeker vlotte videoplayback met [ adaptieve video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>* Verzeker vlotte videoplayback met [&#x200B; adaptieve video &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
->* Automatiseer het bebouwen van [ beelden met het Slimme Gewas ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>* Automatiseer het bebouwen van [&#x200B; beelden met het Slimme Gewas &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 >
->* Automatiseer het bebouwen van [ video&#39;s met het Slimme Gewas ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>* Automatiseer het bebouwen van [&#x200B; video&#39;s met het Slimme Gewas &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Lever een [ interactieve 3D-Aangedreven ervaring ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Andere [ Dynamische middelbank van Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Lever een [&#x200B; interactieve 3D-Aangedreven ervaring &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Andere [&#x200B; Dynamische middelbank van Media &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
 ## Een ondersteuningsticket vastleggen {#support-ticket}
 
 Als een productkwestie extra onderzoek en het oplossen van problemen vereist en reactie SLTs moet ontmoeten, kunt u een steunkaartje voorleggen.
 
-Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-site registreren in Cloud Manager. Het registreren van uw website bij Cloud Manager wordt geadviseerd aan alle gebruikers van AEM as a Cloud Service en [ brengt een aantal voordelen ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Zie [ de documentatie van Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) voor details als u nog niet uw plaats hebt geregistreerd.
+Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-site registreren in Cloud Manager. Het registreren van uw website bij Cloud Manager wordt geadviseerd aan alle gebruikers van AEM as a Cloud Service en [&#x200B; brengt een aantal voordelen &#x200B;](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Zie [&#x200B; de documentatie van Cloud Manager &#x200B;](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) voor details als u nog niet uw plaats hebt geregistreerd.
 
 **om een steunkaartje te registreren:**
 
-1. [ volg het standaardsteunproces ](https://experienceleague.adobe.com/?support-tab=home#support) en creeer een kaartje.
+1. [&#x200B; volg het standaardsteunproces &#x200B;](https://experienceleague.adobe.com/?support-tab=home#support) en creeer een kaartje.
 1. Voeg **Edge Delivery** in de titel van het kaartje toe.
 1. Geef in de beschrijving naast de beschrijving van het probleem ook de volgende gegevens op:
 
@@ -231,10 +231,10 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
 
 >[!IMPORTANT]
 >
->De redacteur van het KUUROORD [ is afgekeurd ](/help/implementing/developing/hybrid/spa-editor-deprecation.md) voor nieuwe projecten. Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
+>De redacteur van het KUUROORD [&#x200B; is afgekeurd &#x200B;](/help/implementing/developing/hybrid/spa-editor-deprecation.md) voor nieuwe projecten. Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 >
->* [ de Universele Redacteur ](https://www.aem.live/docs/aem-authoring) voor visueel het uitgeven van hoofdloze inhoud.
->* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Universele Redacteur &#x200B;](https://www.aem.live/docs/aem-authoring) voor visueel het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.
 
 ## Universele editor{#ue-see-also}
 
@@ -268,7 +268,7 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
 
 >[!IMPORTANT]
 >
->De progressieve Web app (PWA) eigenschappen voor AEM Sites [ is afgekeurd ](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>De progressieve Web app (PWA) eigenschappen voor AEM Sites [&#x200B; is afgekeurd &#x200B;](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
 >Bestaande projecten die gebruikmaken van deze functie blijven ondersteund, maar nieuwe projecten moeten deze functie niet gebruiken.
 
@@ -278,12 +278,12 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
 >
 >**hebt u Edge Delivery Services voor AEM overwogen?**
 >
->U kunt de methoden die in dit document worden beschreven, blijven gebruiken voor bestaande projecten. Nochtans voor nieuwe projecten, adviseert Adobe leveraging [ Edge Delivery Services.](/help/edge/overview.md)
+>U kunt de methoden die in dit document worden beschreven, blijven gebruiken voor bestaande projecten. Nochtans voor nieuwe projecten, adviseert Adobe leveraging [&#x200B; Edge Delivery Services.](/help/edge/overview.md)
 
 ## Door Adobe verschafte sitesjablonen {#adobe-templates}
 
 Adobe biedt een aantal sjablonen die geschikt zijn voor verschillende doeleinden om het maken van sites te versnellen.
 
-* [ Plaats van AEM met Edge Delivery Services ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - voor het ontwerpen van de pagina&#39;s van AEM met de Universele Redacteur en het leveren door [ randlevering ](/help/edge/overview.md)
-* [ Edge Delivery Services met het Authoring van AEM voor Commerce ](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - voor het ontwerpen van AEM-pagina&#39;s met de Universal Editor voor handelsprojecten en levering door [ randlevering ](/help/edge/overview.md)
-* [ StandaardMalplaatje van de Plaats van AEM ](https://github.com/adobe/aem-site-template-standard/releases) - voor het ontwerpen van traditionele AEM pagina&#39;s en het leveren door [ publiceren levering ](/help/sites-cloud/authoring/author-publish.md)
+* [&#x200B; Plaats van AEM met Edge Delivery Services &#x200B;](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - voor het ontwerpen van de pagina&#39;s van AEM met de Universele Redacteur en het leveren door [&#x200B; randlevering &#x200B;](/help/edge/overview.md)
+* [&#x200B; Edge Delivery Services met het Authoring van AEM voor Commerce &#x200B;](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - voor het ontwerpen van AEM-pagina&#39;s met de Universal Editor voor handelsprojecten en levering door [&#x200B; randlevering &#x200B;](/help/edge/overview.md)
+* [&#x200B; StandaardMalplaatje van de Plaats van AEM &#x200B;](https://github.com/adobe/aem-site-template-standard/releases) - voor het ontwerpen van traditionele AEM pagina&#39;s en het leveren door [&#x200B; publiceren levering &#x200B;](/help/sites-cloud/authoring/author-publish.md)

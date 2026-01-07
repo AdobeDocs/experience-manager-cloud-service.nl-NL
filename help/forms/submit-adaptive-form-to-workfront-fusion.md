@@ -17,7 +17,7 @@ ht-degree: 1%
 
 <span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-[ de Fusie van Adobe Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiseert het proces om de zelfde taken, zoals de werkschema&#39;s van de documentgoedkeuring, e-mailfiltreren en het sorteren te herhalen, toestaand u om zich op nieuwe taken in plaats van terugkomende degenen te concentreren. Adobe Workfront Fusion bevat meerdere scenario&#39;s. Een scenario bestaat uit een reeks modules die gegevensoverdracht tussen toepassingen en Webdiensten uitvoert. In een scenario, voegt u diverse stappen (modules) toe om een taak te automatiseren.
+[&#x200B; de Fusie van Adobe Workfront &#x200B;](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiseert het proces om de zelfde taken, zoals de werkschema&#39;s van de documentgoedkeuring, e-mailfiltreren en het sorteren te herhalen, toestaand u om zich op nieuwe taken in plaats van terugkomende degenen te concentreren. Adobe Workfront Fusion bevat meerdere scenario&#39;s. Een scenario bestaat uit een reeks modules die gegevensoverdracht tussen toepassingen en Webdiensten uitvoert. In een scenario, voegt u diverse stappen (modules) toe om een taak te automatiseren.
 
 Met Workfront Fusion kunt u bijvoorbeeld een scenario maken voor het verzamelen van gegevens met Adaptief formulier, het verwerken van de gegevens en het verzenden van de gegevens naar een gegevensopslagruimte voor archivering. Wanneer een scenario is ingesteld, voert Workfront Fusion automatisch de taken uit wanneer een gebruiker een formulier invult en de gegevensopslag naadloos bijwerkt.
 
@@ -38,8 +38,8 @@ AEM Forms as a Cloud Service beschikt over een OOTB-connector om een adaptief fo
 
 Voor het tot stand brengen van een verbinding tussen Workfront Fusion en AEM Forms is het volgende noodzakelijk:
 
-* Een geldige [ Workfront en de vergunning van de Fusie van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-* Een gebruiker van AEM met recht op toegang tot [ Dev Console ](https://my.cloudmanager.adobe.com/) om [ de de dienstgeloofsbrieven ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) terug te winnen.
+* Een geldige [&#x200B; Workfront en de vergunning van de Fusie van Workfront &#x200B;](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Een gebruiker van AEM met recht op toegang tot [&#x200B; Dev Console &#x200B;](https://my.cloudmanager.adobe.com/) om [&#x200B; de de dienstgeloofsbrieven &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) terug te winnen.
 
 ## AEM Forms integreren met Adobe Workfront Fusion
 
@@ -55,13 +55,13 @@ Voer de volgende stappen uit om een Workfront-scenario te maken:
 
 Een scenario maken:
 
-1. Teken in uw [ rekening van de Fusie van Workfront ](https://app-qa.workfrontfusion.com/).
-1. Klik **[!UICONTROL Scenarios]** ![ pictogram van het Aandeel ](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in het linkerpaneel.
+1. Teken in uw [&#x200B; rekening van de Fusie van Workfront &#x200B;](https://app-qa.workfrontfusion.com/).
+1. Klik **[!UICONTROL Scenarios]** ![&#x200B; pictogram van het Aandeel &#x200B;](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in het linkerpaneel.
 1. Klik op **[!UICONTROL Create a new scenario]** rechtsboven op de pagina. Op het scherm verschijnt een pagina waarop u een nieuw scenario kunt maken.
 1. Selecteer **[!UICONTROL New scenario]** in de linkerbovenhoek van de pagina en typ een juiste naam voor het scenario.
 1. Klik op het vraagteken en controleer of u de eerste module als **[!UICONTROL AEM Forms]** toevoegt.
 
-   ![ voeg een module van AEM Forms toe ](/help/forms/assets/workfront-aemforms.png)
+   ![&#x200B; voeg een module van AEM Forms toe &#x200B;](/help/forms/assets/workfront-aemforms.png)
 
    Het dialoogvenster **[!UICONTROL Watch for Form Events]** wordt weergegeven.
 
@@ -73,7 +73,7 @@ Een scenario maken:
 
 #### Webhaak toevoegen {#add-webhook}
 
-![ voeg een webhaak ](/help/forms/assets/workfront-add-webhook.png) toe
+![&#x200B; voeg een webhaak &#x200B;](/help/forms/assets/workfront-add-webhook.png) toe
 
 Een webhaak toevoegen:
 
@@ -88,11 +88,11 @@ Een webhaak toevoegen:
 
 >[!NOTE]
 >
-> Zorg ervoor dat de Technische Rekening een lid van de **vorm-gebruikers** groep is; anders, ontbreekt het toevoegen van een webhaak. Om de technische rekening aan de vorm-gebruikers groep in AEM toe te voegen, [ klik hier ](#add-technical-account-to-the-forms-users-group).
+> Zorg ervoor dat de Technische Rekening een lid van de **vorm-gebruikers** groep is; anders, ontbreekt het toevoegen van een webhaak. Om de technische rekening aan de vorm-gebruikers groep in AEM toe te voegen, [&#x200B; klik hier &#x200B;](#add-technical-account-to-the-forms-users-group).
 
 #### Een verbinding met een webhaak toevoegen {#add-connection}
 
-![ voeg een verbinding ](/help/forms/assets/workfront-add-connection.png) toe
+![&#x200B; voeg een verbinding &#x200B;](/help/forms/assets/workfront-add-connection.png) toe
 
 Een verbinding toevoegen:
 
@@ -106,7 +106,7 @@ Een verbinding toevoegen:
    >
    > Instance-URL is het unieke webadres dat verwijst naar een specifieke AEM Forms-instantie.
 
-   U kunt de [ dienstgeloofsbrieven van de console van de Ontwikkelaar terugwinnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) wordt vereist om een verbinding tot stand te brengen die.
+   U kunt de [&#x200B; dienstgeloofsbrieven van de console van de Ontwikkelaar terugwinnen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) wordt vereist om een verbinding tot stand te brengen die.
 
 1. Vervang `ims-na1.adobelogin.com` in het **IMS eindpunt** met de waarde van **imsEndpoint** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
 
@@ -157,7 +157,7 @@ Verzendactie van een adaptief formulier configureren op basis van Foundation Com
 
 1. Open het Adaptief formulier voor bewerking en ga naar de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Invoke a WorkFront Fusion Scenario]**.
-   ![ voorlegt actie voor de Fusie van Workfront ](/help/forms/assets/workfront-fusion-fc.png)
+   ![&#x200B; voorlegt actie voor de Fusie van Workfront &#x200B;](/help/forms/assets/workfront-fusion-fc.png)
 
 1. Selecteer **[!UICONTROL Workfront Fusion scenario]** in de vervolgkeuzelijst.
 1. Klik op **[!UICONTROL Done]**.
@@ -168,11 +168,11 @@ Verzendactie van een adaptief formulier configureren op basis van Foundation Com
 Verzendactie configureren op basis van kerncomponenten voor Workfront Fusion:
 
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op de tab **[!UICONTROL Submission]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Invoke a WorkFront Fusion Scenario]**.
 
-   ![ voorlegt actie voor de Fusie van Workfront ](/help/forms/assets/workfront-scenario-existing-af.png)
+   ![&#x200B; voorlegt actie voor de Fusie van Workfront &#x200B;](/help/forms/assets/workfront-scenario-existing-af.png)
 1. Selecteer **[!UICONTROL Workfront Fusion scenario]** in de vervolgkeuzelijst.
 1. Klik op **[!UICONTROL Done]**.
 
@@ -186,12 +186,12 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
 
    >[!NOTE]
    >
-   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
+   > * Verwijs naar het [&#x200B; artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 1. Klik **Verzending** lusje en selecteer **[!UICONTROL Invoke a WorkFront Fusion Scenario]** voorlegt actie.
 
-   ![ voorlegt actie voor de Fusie van Workfront ](/help/forms/assets/workfront-fusion-ue.png)
+   ![&#x200B; voorlegt actie voor de Fusie van Workfront &#x200B;](/help/forms/assets/workfront-fusion-ue.png)
 
 1. Selecteer **[!UICONTROL Workfront Fusion scenario]** in de vervolgkeuzelijst.
 1. Klik op **[!UICONTROL Save&Close]**.
@@ -209,7 +209,7 @@ Voer de volgende stappen uit om de technische account toe te voegen aan `forms-u
 1. Selecteer `forms-users` in de vervolgkeuzelijst **[!UICONTROL Select Group]** .
 1. Klik **sparen &amp; Sluiten**.
 
-![ voeg technische rekening aan groep ](/help/forms/assets/add-technical-account.png) toe
+![&#x200B; voeg technische rekening aan groep &#x200B;](/help/forms/assets/add-technical-account.png) toe
 
 U kunt het lidmaatschap van de Groep voor de gebruiker ook verifiëren:
 
@@ -217,7 +217,7 @@ U kunt het lidmaatschap van de Groep voor de gebruiker ook verifiëren:
 1. Zoek naar de `forms-users` groep.
 1. Open de groep en ga naar het **lusje van Leden** en bevestig dat de gebruiker in de lijst van groepsleden verschijnt.
 
-![ verifieer-groep ](/help/forms/assets/verify-group.png)
+![&#x200B; verifieer-groep &#x200B;](/help/forms/assets/verify-group.png)
 
 ## Aanbevolen procedures {#best-practices}
 
