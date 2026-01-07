@@ -26,24 +26,24 @@ Het doet dit door een standaardvoorbeeld te nemen dat de meeste ontwikkelaars va
 >
 >Dit document neemt extra stappen om te illustreren hoe de Universele Redacteur werkt en is bedoeld om het begrip van de ontwikkelaar van de redacteur te verdiepen. Het is dus niet de meest directe manier om een app van instrumenten te voorzien, maar de meest illustratieve van de Universal Editor en hoe deze werkt.
 >
->Als u omhoog-en-lopende zo snel mogelijk wilt worden, gelieve te zien [ Begonnen het worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md) document.
+>Als u omhoog-en-lopende zo snel mogelijk wilt worden, gelieve te zien [&#x200B; Begonnen het worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md) document.
 
 ## Vereisten {#prerequisites}
 
 Om dit overzicht te volgen, hebt u het volgende beschikbaar nodig.
 
-* [ een lokale ontwikkelingsinstantie van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * Uw lokale ontwikkelingsinstantie moet [ worden gevormd met HTTPS voor ontwikkelingsdoel op `localhost` ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
-   * [ De WKND demoplaats moet ](https://github.com/adobe/aem-guides-wknd) worden geïnstalleerd.
-* [ Toegang tot de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md#onboarding).
-* [ de lokale Universele dienst van de Redacteur van A ](/help/implementing/universal-editor/local-dev.md) lopend voor ontwikkelingsdoeleinden.
-   * Zorg ervoor om uw browser aan [ te leiden goedkeurt de lokale diensten zelf-ondertekend certificaat ](/help/implementing/universal-editor/local-dev.md#editing).
+* [&#x200B; een lokale ontwikkelingsinstantie van AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+   * Uw lokale ontwikkelingsinstantie moet [&#x200B; worden gevormd met HTTPS voor ontwikkelingsdoel op `localhost` &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
+   * [&#x200B; De WKND demoplaats moet &#x200B;](https://github.com/adobe/aem-guides-wknd) worden geïnstalleerd.
+* [&#x200B; Toegang tot de Universele Redacteur &#x200B;](/help/implementing/universal-editor/getting-started.md#onboarding).
+* [&#x200B; de lokale Universele dienst van de Redacteur van A &#x200B;](/help/implementing/universal-editor/local-dev.md) lopend voor ontwikkelingsdoeleinden.
+   * Zorg ervoor om uw browser aan [&#x200B; te leiden goedkeurt de lokale diensten zelf-ondertekend certificaat &#x200B;](/help/implementing/universal-editor/local-dev.md#editing).
 
-Dit document is niet alleen algemeen bekend met de ontwikkeling van het web, maar gaat ook uit van basiskennis van de ontwikkeling van AEM. Als u niet met de ontwikkeling van AEM wordt ervaren, overweeg het herzien van [ het leerprogramma WKND alvorens ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) verder te gaan.
+Dit document is niet alleen algemeen bekend met de ontwikkeling van het web, maar gaat ook uit van basiskennis van de ontwikkeling van AEM. Als u niet met de ontwikkeling van AEM wordt ervaren, overweeg het herzien van [&#x200B; het leerprogramma WKND alvorens &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) verder te gaan.
 
 ## AEM starten en aanmelden bij de Universal Editor {#sign-in}
 
-Als u niet reeds hebt, moet u uw lokale ontwikkelingsinstantie hebben die van AEM met geïnstalleerde WKND en HTTPS loopt die als [ worden toegelaten in de eerste vereisten ](#prerequisites) wordt gedetailleerd. In dit overzicht wordt ervan uitgegaan dat de instantie wordt uitgevoerd op `https://localhost:8443` .
+Als u niet reeds hebt, moet u uw lokale ontwikkelingsinstantie hebben die van AEM met geïnstalleerde WKND en HTTPS loopt die als [&#x200B; worden toegelaten in de eerste vereisten &#x200B;](#prerequisites) wordt gedetailleerd. In dit overzicht wordt ervan uitgegaan dat de instantie wordt uitgevoerd op `https://localhost:8443` .
 
 1. Open de hoofdstramienpagina voor de WKND-Engelse taal in de AEM Editor.
 
@@ -67,13 +67,13 @@ Als u niet reeds hebt, moet u uw lokale ontwikkelingsinstantie hebben die van AE
 
 1. Plak de verbinding die u eerder van de inhoud WKND in het **gebied van de Plaats URL** van de Universele Redacteur kopieerde en **Open** klik.
 
-   ![ open de pagina WKND in de Universele Redacteur ](assets/dev-ue-open.png)
+   ![&#x200B; open de pagina WKND in de Universele Redacteur &#x200B;](assets/dev-ue-open.png)
 
 ## De universele editor probeert de inhoud te laden {#sameorigin}
 
 De Universal Editor laadt inhoud die in een frame moet worden bewerkt. De standaardinstellingen van AEM voor X-Frame-opties verhinderen dit. Dit kan in de browser duidelijk worden gezien als een fout en in de consoleuitvoer worden weergegeven wanneer u probeert uw lokale kopie van WKND te laden.
 
-![ Browser fout toe te schrijven aan optie SAMEORIGIN ](assets/dev-sameorigin.png)
+![&#x200B; Browser fout toe te schrijven aan optie SAMEORIGIN &#x200B;](assets/dev-sameorigin.png)
 
 Met de optie X-Frame `sameorigin` voorkomt u dat AEM-pagina&#39;s binnen een frame worden weergegeven. U moet deze koptekst verwijderen om de pagina&#39;s te kunnen laden in de Universal Editor.
 
@@ -85,7 +85,7 @@ Met de optie X-Frame `sameorigin` voorkomt u dat AEM-pagina&#39;s binnen een fra
 
 1. De OSGi-configuratie bewerken `org.apache.sling.engine.impl.SlingMainServlet`
 
-   ![ bezit OSGi voor SAMEORIGIN ](assets/dev-sameorigin-osgi.png)
+   ![&#x200B; bezit OSGi voor SAMEORIGIN &#x200B;](assets/dev-sameorigin-osgi.png)
 
 1. Schrap het bezit `X-Frame-Options=SAMEORIGIN` van het bezit **Extra reactiekopballen**.
 
@@ -95,8 +95,8 @@ Als u nu de Universal Editor opnieuw laadt, ziet u dat de AEM-pagina wordt gelad
 
 >[!TIP]
 >
->* Zie het document [ Begonnen Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#sameorigin) voor meer details op deze configuratie OSGi.
->* Zie het document [ Vormend OSGi voor Adobe Experience Manager as a Cloud Service ](/help/implementing/deploying/configuring-osgi.md) voor details op OSGi in AEM.
+>* Zie het document [&#x200B; Begonnen Worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md#sameorigin) voor meer details op deze configuratie OSGi.
+>* Zie het document [&#x200B; Vormend OSGi voor Adobe Experience Manager as a Cloud Service &#x200B;](/help/implementing/deploying/configuring-osgi.md) voor details op OSGi in AEM.
 
 ## Zelfde sitecookies verwerken {#samesite-cookies}
 
@@ -104,7 +104,7 @@ Wanneer de Universal Editor uw pagina laadt, wordt deze geladen naar de AEM-aanm
 
 U kunt zich echter niet aanmelden. Als u de browserconsole weergeeft, ziet u dat de browser invoer in het frame heeft geblokkeerd
 
-![ Geblokkeerde Invoer ](assets/dev-cross-origin.png)
+![&#x200B; Geblokkeerde Invoer &#x200B;](assets/dev-cross-origin.png)
 
 De token-cookie voor aanmelding wordt als een extern domein naar AEM verzonden. Daarom moeten cookies op dezelfde locatie worden toegestaan in AEM.
 
@@ -116,7 +116,7 @@ De token-cookie voor aanmelding wordt als een extern domein naar AEM verzonden. 
 
 1. De OSGi-configuratie bewerken `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 
-   ![ bezit OSGi voor de koekjes van de zelfde-plaats ](assets/dev-cross-origin-osgi.png)
+   ![&#x200B; bezit OSGi voor de koekjes van de zelfde-plaats &#x200B;](assets/dev-cross-origin-osgi.png)
 
 1. Verander het bezit **attribuut SameSite voor het login-symbolische koekje** aan `Partitioned`.
 
@@ -126,14 +126,14 @@ Als u de Universal Editor nu opnieuw laadt, kunt u zich nu aanmelden bij AEM en 
 
 >[!TIP]
 >
->* Zie het document [ Begonnen Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#samesite-cookies) voor meer details op deze configuratie OSGi.
->* Zie het document [ Vormend OSGi voor Adobe Experience Manager as a Cloud Service ](/help/implementing/deploying/configuring-osgi.md) voor details op OSGi in AEM.
+>* Zie het document [&#x200B; Begonnen Worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md#samesite-cookies) voor meer details op deze configuratie OSGi.
+>* Zie het document [&#x200B; Vormend OSGi voor Adobe Experience Manager as a Cloud Service &#x200B;](/help/implementing/deploying/configuring-osgi.md) voor details op OSGi in AEM.
 
 ## Universele editor maakt verbinding met het externe frame {#ue-connect-remote-frame}
 
 Wanneer de pagina in de Universal Editor is geladen en u zich hebt aangemeld bij AEM, probeert de Universal Editor verbinding te maken met het externe frame. Dit gebeurt via een JavaScript-bibliotheek die in het externe frame moet worden geladen. Als de JavaScript-bibliotheek niet aanwezig is, maakt de pagina uiteindelijk een time-outfout in de console.
 
-![ fout van de Onderbreking ](assets/dev-timeout.png)
+![&#x200B; fout van de Onderbreking &#x200B;](assets/dev-timeout.png)
 
 U moet de benodigde JavaScript-bibliotheek toevoegen aan de paginacomponent van de WKND-app.
 
@@ -145,7 +145,7 @@ U moet de benodigde JavaScript-bibliotheek toevoegen aan de paginacomponent van 
 
 1. Bewerk het bestand `/apps/wknd/components/page` onder `customheaderlibs.html` .
 
-   ![ Uitgevend het aangepaste headerlibs.html- dossier ](assets/dev-customheaderlibs.png)
+   ![&#x200B; Uitgevend het aangepaste headerlibs.html- dossier &#x200B;](assets/dev-customheaderlibs.png)
 
 1. Voeg de JavaScript-bibliotheek toe aan het einde van het bestand.
 
@@ -181,7 +181,7 @@ U ziet waarschijnlijk echter dat u niet kunt communiceren met de pagina in de Un
 
 1. Bewerk het bestand `/apps/wknd/components/page` onder `customheaderlibs.html` .
 
-   ![ Uitgevend het aangepaste headerlibs.html- dossier ](assets/dev-instrument-app.png)
+   ![&#x200B; Uitgevend het aangepaste headerlibs.html- dossier &#x200B;](assets/dev-instrument-app.png)
 
 1. Voeg de benodigde metagegevens voor de verbinding met uw lokale AEM-instantie toe aan het einde van het bestand.
 
@@ -189,7 +189,7 @@ U ziet waarschijnlijk echter dat u niet kunt communiceren met de pagina in de Un
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * De nieuwste versie van de bibliotheek wordt altijd aanbevolen. Als u een vroegere versie nodig hebt, te zien gelieve het document [ Begonnen het worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#alternative).
+   * De nieuwste versie van de bibliotheek wordt altijd aanbevolen. Als u een vroegere versie nodig hebt, te zien gelieve het document [&#x200B; Begonnen het worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md#alternative).
 
 1. Voeg de vereiste metagegevens toe voor de verbinding met uw lokale Universal Editor-service aan het einde van het bestand.
 
@@ -203,9 +203,9 @@ De Universal Editor kan nu niet alleen de inhoud laden van uw lokale AEM-ontwikk
 
 >[!TIP]
 >
->* Zie het document [ Begonnen Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#connection) voor meer details over de verbindingsmeta-gegevens.
->* Zie het document [ Universele Architectuur van de Redacteur ](/help/implementing/universal-editor/architecture.md#service) voor meer details over de structuur van de Universele Redacteur.
->* Zie het document [ Lokale Ontwikkeling van AEM met de Universele Redacteur ](/help/implementing/universal-editor/local-dev.md) voor meer details op hoe te met een zelf-ontvangen versie van de Universele Redacteur te verbinden.
+>* Zie het document [&#x200B; Begonnen Worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md#connection) voor meer details over de verbindingsmeta-gegevens.
+>* Zie het document [&#x200B; Universele Architectuur van de Redacteur &#x200B;](/help/implementing/universal-editor/architecture.md#service) voor meer details over de structuur van de Universele Redacteur.
+>* Zie het document [&#x200B; Lokale Ontwikkeling van AEM met de Universele Redacteur &#x200B;](/help/implementing/universal-editor/local-dev.md) voor meer details op hoe te met een zelf-ontvangen versie van de Universele Redacteur te verbinden.
 
 ## Instrumentele onderdelen {#instrumenting-components}
 
@@ -223,7 +223,7 @@ Uw componenten moeten ook van instrumenten voorzien zijn om met de Universele Re
 
 1. Met `/apps/` geselecteerd als **de Plaats van de Bedekking**, klik **O.K.**.
 
-   ![ Bedekking teaser ](assets/dev-overlay-teaser.png)
+   ![&#x200B; Bedekking teaser &#x200B;](assets/dev-overlay-teaser.png)
 
 1. Selecteer de `teaser` knoop onder `/libs/core/wcm/components` en klik **Exemplaar** in de toolbar.
 
@@ -231,7 +231,7 @@ Uw componenten moeten ook van instrumenten voorzien zijn om met de Universele Re
 
 1. Dubbelklik op het bestand `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` om het te bewerken.
 
-   ![ het Uitgeven van het bestand teaser.html ](assets/dev-edit-teaser.png)
+   ![&#x200B; het Uitgeven van het bestand teaser.html &#x200B;](assets/dev-edit-teaser.png)
 
 1. Voeg aan het einde van de eerste `div` bij ongeveer regel 26 de instrumentatiedetails voor de component toe.
 
@@ -247,11 +247,11 @@ Uw componenten moeten ook van instrumenten voorzien zijn om met de Universele Re
 
 1. Als u het **pictogram van de boom van de Inhoud** in het eigenschappenpaneel van de Universele Redacteur klikt, kunt u zien dat de redacteur alle tellers op de pagina erkende nu dat u het van instrumenten voorzien hebt. Het geselecteerde tasje is gemarkeerd.
 
-   ![ het Selecteren van de van instrumenten voorzien lasercomponent ](assets/dev-select-teaser.png)
+   ![&#x200B; het Selecteren van de van instrumenten voorzien lasercomponent &#x200B;](assets/dev-select-teaser.png)
 
 >[!TIP]
 >
->Zie het document [ Gebruikend de Verzameling van het Middel in Adobe Experience Manager as a Cloud Service ](/help/implementing/developing/introduction/sling-resource-merger.md) voor meer details over het bedekken van knopen.
+>Zie het document [&#x200B; Gebruikend de Verzameling van het Middel in Adobe Experience Manager as a Cloud Service &#x200B;](/help/implementing/developing/introduction/sling-resource-merger.md) voor meer details over het bedekken van knopen.
 
 ## Instrumentsubcomponenten van de taser {#subcomponents}
 
@@ -265,7 +265,7 @@ U kunt het gummetje nu selecteren, maar nog steeds niet bewerken. Dit komt doord
 
 1. Selecteer het knooppunt `/apps/core/wcm/components/teaser/v2/teaser/` en dubbelklik op het bestand `title.html` .
 
-   ![ geef het title.html- dossier ](assets/dev-edit-title.png) uit
+   ![&#x200B; geef het title.html- dossier &#x200B;](assets/dev-edit-title.png) uit
 
 1. Voeg de volgende eigenschappen in aan het einde van de tag `h2` (bij regel 17).
 
@@ -279,7 +279,7 @@ U kunt het gummetje nu selecteren, maar nog steeds niet bewerken. Dit komt doord
 
 1. Klik op de titel van dezelfde lasercomponent boven aan de pagina en controleer of u deze nu kunt selecteren. In de inhoudsstructuur wordt de titel ook weergegeven als onderdeel van de geselecteerde tasercomponent.
 
-   ![ Uitgezochte titel binnen het meetapparaat ](assets/dev-select-title.png)
+   ![&#x200B; Uitgezochte titel binnen het meetapparaat &#x200B;](assets/dev-select-title.png)
 
 U kunt nu de titel van de lasercomponent bewerken!
 
@@ -302,13 +302,13 @@ U hebt ook de titelcomponent binnen de teaser component van instrumenten voorzie
 
 Nu kunt u de titel van het gummetje online bewerken en worden de wijzigingen in de browser doorgevoerd.
 
-![ uitgegeven titel van het meetapparaat ](assets/dev-edited-title.png)
+![&#x200B; uitgegeven titel van het meetapparaat &#x200B;](assets/dev-edited-title.png)
 
 Als u de browser echter opnieuw laadt, wordt de vorige titel opnieuw geladen. Hoewel de Universal Editor weet hoe u verbinding kunt maken met uw AEM-instantie, kan deze editor zich nog niet verifiëren bij uw AEM-instantie om wijzigingen in het JCR terug te schrijven.
 
 Als u het netwerktabblad van de browsergereedschappen voor ontwikkelaars weergeeft en naar `update` zoekt, wordt een fout van 401 aangetroffen wanneer u de titel probeert te bewerken.
 
-![ Fout wanneer het proberen om de titel uit te geven ](assets/dev-edit-error.png)
+![&#x200B; Fout wanneer het proberen om de titel uit te geven &#x200B;](assets/dev-edit-error.png)
 
 Wanneer u de Universal Editor gebruikt om uw productie-AEM-inhoud te bewerken, gebruikt de Universal Editor dezelfde IMS-token die u hebt gebruikt om u aan te melden bij de editor voor verificatie naar AEM, zodat u gemakkelijker naar de JCR kunt schrijven.
 
@@ -318,7 +318,7 @@ Wanneer u zich plaatselijk ontwikkelt, kunt u niet de identiteitsleverancier van
 
 1. Kopieer in de noodzakelijke authentificatiekopbal om aan uw lokale instantie van AEM voor authentiek te verklaren en **te klikken sparen**.
 
-   ![ Vormende authentificatiekopballen ](assets/dev-authentication-headers.png)
+   ![&#x200B; Vormende authentificatiekopballen &#x200B;](assets/dev-authentication-headers.png)
 
 1. Laad de Universal Editor opnieuw en bewerk nu de titel van het taser.
 
@@ -326,7 +326,7 @@ Er zijn geen fouten meer gemeld in de browserconsole en de wijzigingen worden do
 
 Als u het verkeer in de browserontwikkelaarsgereedschappen onderzoekt en de `update` -gebeurtenissen zoekt, kunt u de details van de update zien.
 
-![ met succes het uitgeven van de teaser titel ](assets/dev-edit-title-successfully.png)
+![&#x200B; met succes het uitgeven van de teaser titel &#x200B;](assets/dev-edit-title-successfully.png)
 
 ```json
 {
@@ -352,7 +352,7 @@ Als u het verkeer in de browserontwikkelaarsgereedschappen onderzoekt en de `upd
 
 U kunt zien dat de wijziging aanhoudt in het JCR.
 
-![ Update in JCR ](assets/dev-write-back-jcr.png)
+![&#x200B; Update in JCR &#x200B;](assets/dev-write-back-jcr.png)
 
 >[!TIP]
 >
@@ -376,7 +376,7 @@ Ga terug naar het koptekstbestand van de paginacomponent van uw app om de app bi
 
 1. Bewerk het bestand `/apps/wknd/components/page` onder `customheaderlibs.html` .
 
-   ![ Uitgevend het aangepaste headerlibs.html- dossier ](assets/dev-instrument-properties-rail.png)
+   ![&#x200B; Uitgevend het aangepaste headerlibs.html- dossier &#x200B;](assets/dev-instrument-properties-rail.png)
 
 1. Voeg aan het einde van het bestand het script toe dat nodig is om de componenten te definiëren.
 
@@ -504,7 +504,7 @@ U moet ook definiëren op componentniveau, welk model de component moet gebruike
 
 1. Dubbelklik op het bestand `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` om het te bewerken.
 
-   ![ het Uitgeven van het bestand teaser.html ](assets/dev-edit-teaser.png)
+   ![&#x200B; het Uitgeven van het bestand teaser.html &#x200B;](assets/dev-edit-teaser.png)
 
 1. Voeg aan het einde van de eerste `div` op ongeveer regel 32, na de eigenschappen die u eerder hebt toegevoegd, de instrumentatiedetails toe voor het model dat de teaser-component gebruikt.
 
@@ -520,7 +520,7 @@ Nu kunt u het deelvenster Eigenschappen uittesten dat van instrumenten is voorzi
 
 1. Klik op het deelvenster Eigenschappen om het tabblad Eigenschappen weer te geven en de velden weer te geven waarop u net hebt geïnstrueerd.
 
-   ![ het van instrumenten voorzien eigenschappen paneel ](assets/dev-properties-rail-instrumented.png)
+   ![&#x200B; het van instrumenten voorzien eigenschappen paneel &#x200B;](assets/dev-properties-rail-instrumented.png)
 
 U kunt de titel van het gummetje nu in line bewerken zoals u eerder had, of in het deelvenster Eigenschappen. In beide gevallen worden de wijzigingen doorgevoerd in uw lokale AEM-ontwikkelingsexemplaar.
 
@@ -538,7 +538,7 @@ U kunt bijvoorbeeld een veld toevoegen om de opmaak van de component aan te pass
 
 1. Bewerk het bestand `/apps/wknd/components/page` onder `customheaderlibs.html` .
 
-   ![ Uitgevend het aangepaste headerlibs.html- dossier ](assets/dev-instrument-styles.png)
+   ![&#x200B; Uitgevend het aangepaste headerlibs.html- dossier &#x200B;](assets/dev-instrument-styles.png)
 
 1. In het modeldefinitiescript, voeg een extra punt aan de `fields` serie voor het stijlgebied toe. Vergeet niet na het laatste veld een komma toe te voegen voordat u de nieuwe invoegt.
 
@@ -562,7 +562,7 @@ U kunt bijvoorbeeld een veld toevoegen om de opmaak van de component aan te pass
 
 1. Klik op het deelvenster Eigenschappen en controleer of er een nieuw veld is waarin u de stijl van de component kunt aanpassen.
 
-   ![ het van instrumenten voorzien eigenschappen paneel met het stijlgebied ](assets/dev-style-instrumented.png)
+   ![&#x200B; het van instrumenten voorzien eigenschappen paneel met het stijlgebied &#x200B;](assets/dev-style-instrumented.png)
 
 Elk veld in het JCR voor de component kan op deze manier worden weergegeven in de Universal Editor.
 
@@ -572,21 +572,21 @@ Gefeliciteerd! Nu kunt u uw eigen AEM-apps gebruiken om met de Universal Editor 
 
 Wanneer u uw eigen app van instrumenten begint te voorzien, moet u rekening houden met de basisstappen die u in dit voorbeeld hebt uitgevoerd.
 
-1. [ u opstelling uw ontwikkelomgeving ](#prerequisites).
+1. [&#x200B; u opstelling uw ontwikkelomgeving &#x200B;](#prerequisites).
    * AEM die lokaal wordt uitgevoerd op HTTPS terwijl WKND is geïnstalleerd
    * Universal Editor Service die lokaal wordt uitgevoerd op HTTPS
 1. U hebt de OSGi-instellingen van AEM bijgewerkt zodat de inhoud op afstand kan worden geladen.
    * [` org.apache.sling.engine.impl.SlingMainServlet`](#sameorigin)
    * [` com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`](#samesite-cookies)
-1. [ u voegde de `universal-editor-embedded.js` bibliotheek aan het `customheaderlibs.html` dossier van de paginacomponent van app ](#ue-connect-remote-frame) toe.
-1. [ u bepaalde een verbinding om veranderingen in het `customheaderlibs.html` dossier van de paginacomponent van app ](#connection) voort te zetten.
+1. [&#x200B; u voegde de `universal-editor-embedded.js` bibliotheek aan het `customheaderlibs.html` dossier van de paginacomponent van app &#x200B;](#ue-connect-remote-frame) toe.
+1. [&#x200B; u bepaalde een verbinding om veranderingen in het `customheaderlibs.html` dossier van de paginacomponent van app &#x200B;](#connection) voort te zetten.
    * U hebt een verbinding met de lokale AEM-ontwikkelingsinstantie gedefinieerd.
    * U hebt ook een verbinding met de lokale Universal Editor-service gedefinieerd.
-1. [ u van instrumenten de teaser component ](#instrumenting-components).
-1. [ u van instrumenten de subcomponenten van het meetapparaat ](#subcomponents).
-1. [ u bepaalde een kopbal van de douaneauthentificatie zodat kon u veranderingen bewaren gebruikend uw lokale Universele dienst van de Redacteur ](#auth-header).
-1. [ u van instrumenten de app om het eigenschappenpaneel ](#properties-rail) te gebruiken.
-1. [ u van instrumenten de lasercomponent om het eigenschappen paneel ](#properties-rail-component) te gebruiken.
+1. [&#x200B; u van instrumenten de teaser component &#x200B;](#instrumenting-components).
+1. [&#x200B; u van instrumenten de subcomponenten van het meetapparaat &#x200B;](#subcomponents).
+1. [&#x200B; u bepaalde een kopbal van de douaneauthentificatie zodat kon u veranderingen bewaren gebruikend uw lokale Universele dienst van de Redacteur &#x200B;](#auth-header).
+1. [&#x200B; u van instrumenten de app om het eigenschappenpaneel &#x200B;](#properties-rail) te gebruiken.
+1. [&#x200B; u van instrumenten de lasercomponent om het eigenschappen paneel &#x200B;](#properties-rail-component) te gebruiken.
 
 U kunt dezelfde stappen volgen om uw eigen app te gebruiken met de Universal Editor. Alle eigenschappen in het JCR kunnen worden weergegeven in de Universal Editor.
 
@@ -594,10 +594,10 @@ U kunt dezelfde stappen volgen om uw eigen app te gebruiken met de Universal Edi
 
 Bekijk de volgende documenten voor meer informatie en details over de functies van de Universal Editor.
 
-* Als u omhoog-en-lopende zo snel mogelijk wilt worden, gelieve te zien [ Begonnen het worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md) document.
-* Zie het document [ Begonnen Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#sameorigin) voor meer details op de noodzakelijke configuraties OSGi.
-* Zie het document [ Begonnen Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#connection) voor meer details over de verbindingsmeta-gegevens.
-* Zie het document [ Universele Architectuur van de Redacteur ](/help/implementing/universal-editor/architecture.md#service) voor meer details over de structuur van de Universele Redacteur.
-* Zie het document [ Lokale Ontwikkeling van AEM met de Universele Redacteur ](/help/implementing/universal-editor/local-dev.md) voor meer details op hoe te met een zelf-ontvangen versie van de Universele Redacteur te verbinden.
-* Zie het document [ Gebruikend de Verzameling van het Middel in Adobe Experience Manager as a Cloud Service ](/help/implementing/developing/introduction/sling-resource-merger.md) voor meer details over het bedekken van knopen.
+* Als u omhoog-en-lopende zo snel mogelijk wilt worden, gelieve te zien [&#x200B; Begonnen het worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md) document.
+* Zie het document [&#x200B; Begonnen Worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md#sameorigin) voor meer details op de noodzakelijke configuraties OSGi.
+* Zie het document [&#x200B; Begonnen Worden met de Universele Redacteur in AEM &#x200B;](/help/implementing/universal-editor/getting-started.md#connection) voor meer details over de verbindingsmeta-gegevens.
+* Zie het document [&#x200B; Universele Architectuur van de Redacteur &#x200B;](/help/implementing/universal-editor/architecture.md#service) voor meer details over de structuur van de Universele Redacteur.
+* Zie het document [&#x200B; Lokale Ontwikkeling van AEM met de Universele Redacteur &#x200B;](/help/implementing/universal-editor/local-dev.md) voor meer details op hoe te met een zelf-ontvangen versie van de Universele Redacteur te verbinden.
+* Zie het document [&#x200B; Gebruikend de Verzameling van het Middel in Adobe Experience Manager as a Cloud Service &#x200B;](/help/implementing/developing/introduction/sling-resource-merger.md) voor meer details over het bedekken van knopen.
 
