@@ -18,7 +18,7 @@ ht-degree: 0%
 * [Een AEM-adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
 * [Een AEM Adaptive Form toevoegen aan de AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Thema&#39;s toepassen op een AEM-adaptief formulier](/help/forms/using-themes-in-core-components.md)
-* [&#x200B; voegt componenten aan een Aangepaste Vorm van AEM toe &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [&#x200B; voegt componenten aan een Aangepaste Vorm van AEM toe &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [CAPTCHA gebruiken in een AEM-adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Een PDF-versie (DoR) van een AEM Adaptive Form genereren](/help/forms/generate-document-of-record-core-components.md)
 * [Een AEM adaptief formulier vertalen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -30,7 +30,7 @@ ht-degree: 0%
 * [Aangepast formulier verbinden met Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Aanmelden bij AEM Adaptief formulier gebruiken](/help/forms/working-with-adobe-sign.md)
 * [Een nieuwe landinstelling toevoegen voor een adaptief formulier](/help/forms/supporting-new-language-localization-core-components.md)
-* [&#x200B; verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [&#x200B; verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Verzend AanpassingsGegevens van de Vorm naar een eindpunt REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Adaptieve formuliergegevens verzenden naar AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Forms Portal gebruiken om AEM Adaptive Forms weer te geven op een AEM-website](/help/forms/configure-forms-portal.md)
@@ -201,16 +201,16 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >
 >* Volg [&#x200B; Dynamische Beste praktijken van Media &#x200B;](/help/assets/dynamic-media/dm-best-practices.md) om de meeste waarde te krijgen.
 >
->* Probeer uit Dynamische het beeldmogelijkheden van Media met het [&#x200B; hulpmiddel van de Momentopname &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Probeer uit Dynamische het beeldmogelijkheden van Media met het [&#x200B; hulpmiddel van de Momentopname &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
->* Verzeker vlotte videoplayback met [&#x200B; adaptieve video &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>* Verzeker vlotte videoplayback met [&#x200B; adaptieve video &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
->* Automatiseer het bebouwen van [&#x200B; beelden met het Slimme Gewas &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>* Automatiseer het bebouwen van [&#x200B; beelden met het Slimme Gewas &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 >
->* Automatiseer het bebouwen van [&#x200B; video&#39;s met het Slimme Gewas &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>* Automatiseer het bebouwen van [&#x200B; video&#39;s met het Slimme Gewas &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Lever een [&#x200B; interactieve 3D-Aangedreven ervaring &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Andere [&#x200B; Dynamische middelbank van Media &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Lever een [&#x200B; interactieve 3D-Aangedreven ervaring &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Andere [&#x200B; Dynamische middelbank van Media &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
 ## Een ondersteuningsticket vastleggen {#support-ticket}
 
@@ -220,7 +220,7 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
 
 **om een steunkaartje te registreren:**
 
-1. [&#x200B; volg het standaardsteunproces &#x200B;](https://experienceleague.adobe.com/?support-tab=home#support) en creeer een kaartje.
+1. [&#x200B; volg het standaardsteunproces &#x200B;](https://experienceleague.adobe.com/nl?support-tab=home#support) en creeer een kaartje.
 1. Voeg **Edge Delivery** in de titel van het kaartje toe.
 1. Geef in de beschrijving naast de beschrijving van het probleem ook de volgende gegevens op:
 

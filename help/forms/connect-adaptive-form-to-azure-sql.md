@@ -40,7 +40,7 @@ De integratie van Adaptive Forms met Azure SQL biedt verschillende voordelen:
 
   ![&#x200B; creeer Azure Db &#x200B;](/help/forms/assets/create-azure-db.png)
 
-* Laat [&#x200B; Gevorderde voorzien van een netwerk toe dat gebruikend een specifiek uitgang IP &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) voor het gecreeerde Azure gegevensbestand wordt gevormd.
+* Laat [&#x200B; Gevorderde voorzien van een netwerk toe dat gebruikend een specifiek uitgang IP &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) voor het gecreeerde Azure gegevensbestand wordt gevormd.
 
   >[!NOTE]
   >
@@ -72,7 +72,7 @@ Bijvoorbeeld: `portOrigin: 30433 → portDest: 1433`
 
    **waar om deze informatie te vinden?**
 
-   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[&#x200B; Toegang tot Git &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[&#x200B; Toegang tot Git &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git)&quot;.
 
    Wanneer de opdracht met succes is voltooid, ziet u een nieuwe map die in uw lokale map is gemaakt. Deze map krijgt de naam van uw toepassing.
 
@@ -84,7 +84,7 @@ Omvat het [&#x200B; SQL bestuurdersgebiedsdeel &#x200B;](https://central.sonatyp
 
 >[!NOTE]
 >
-> Om het SQL gebiedsdeel in uw project te omvatten, verwijs naar de [&#x200B; SQL sectie van bestuurdersgebiedsdelen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Om het SQL gebiedsdeel in uw project te omvatten, verwijs naar de [&#x200B; SQL sectie van bestuurdersgebiedsdelen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Stap 3: Voeg Configuratie JDBC** toe
 
