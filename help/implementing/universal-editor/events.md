@@ -4,9 +4,9 @@ description: Leer over de verschillende gebeurtenissen die de Universele Redacte
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: ac361c31b116466cc9a718640c1de4e4ef396fba
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Leer over de verschillende gebeurtenissen die de Universele Redacteur verzendt d
 
 ## Inleiding {#introduction}
 
-Toepassingen kunnen verschillende vereisten hebben voor pagina- of componentupdates. Daarom verzendt de Universele Redacteur bepaalde gebeurtenissen naar verre toepassingen. In het geval dat de verre toepassing geen luisteraar van de douanegebeurtenis voor de verzonden gebeurtenis heeft, wordt de luisteraar van de a [&#x200B; fallback gebeurtenis &#x200B;](#fallback-listeners) verstrekt door het `universal-editor-cors` pakket uitgevoerd.
+Toepassingen kunnen verschillende vereisten hebben voor pagina- of componentupdates. Daarom verzendt de Universele Redacteur bepaalde gebeurtenissen naar verre toepassingen. In het geval dat de verre toepassing geen luisteraar van de douanegebeurtenis voor de verzonden gebeurtenis heeft, wordt de luisteraar van de a [ fallback gebeurtenis ](#fallback-listeners) verstrekt door het `universal-editor-cors` pakket uitgevoerd.
 
 Alle gebeurtenissen worden aangeroepen op het betrokken DOM-element van de externe pagina. Gebeurtenissen beluisteren omhoog naar het element `BODY` waar de standaardgebeurtenislistener die door het `universal-editor-cors` -pakket wordt geboden, wordt geregistreerd. Er zijn gebeurtenissen voor de inhoud en de gebeurtenissen voor UI.
 
@@ -27,11 +27,11 @@ Alle gebeurtenissen volgen een naamgevingsconventie.
 
 `aue:content-update` en `aue:ui-select`
 
-De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor verdere details over vraag en voorbeelden van hun ladingen, gelieve te zien de de Universele Vraag van de Redacteur van het document [&#x200B; &#x200B;](/help/implementing/universal-editor/calls.md).
+De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor verdere details over vraag en voorbeelden van hun ladingen, gelieve te zien de de Universele Vraag van de Redacteur van het document [ ](/help/implementing/universal-editor/calls.md).
 
 ## Gebeurtenissen voor bijwerken van inhoud {#content-events}
 
-### aue :content-add {#content-add}
+### aue&amp;dubbelepunt;content-add {#content-add}
 
 De gebeurtenis `aue:content-add` wordt geactiveerd wanneer een nieuwe component aan een container wordt toegevoegd.
 
@@ -53,7 +53,7 @@ De nuttige lading is inhoud van de Universele dienst van de Redacteur, met reser
 }
 ```
 
-### aue :content-details {#content-details}
+### aue&amp;colon;content-details {#content-details}
 
 De gebeurtenis `aue:content-details` wordt geactiveerd wanneer een component in het deelvenster Eigenschappen wordt geladen.
 
@@ -70,7 +70,7 @@ De nuttige lading is de inhoud van de component en naar keuze zijn schema.
 }
 ```
 
-### aue :content-move {#content-move}
+### aub&amp;colon;content-move {#content-move}
 
 De gebeurtenis `aue:content-move` wordt geactiveerd wanneer een component wordt verplaatst.
 
@@ -89,7 +89,7 @@ De nuttige lading is de component, broncontainer, en doelcontainer.
 }
 ```
 
-### aue :content-patch {#content-patch}
+### aue&amp;colon;content-patch {#content-patch}
 
 De gebeurtenis `aue:content-patch` wordt geactiveerd wanneer de gegevens van een component worden bijgewerkt in het deelvenster Eigenschappen.
 
@@ -108,7 +108,7 @@ De payload is een JSON-patch van de bijgewerkte eigenschappen.
 }
 ```
 
-### aue :content-remove {#content-remove}
+### aub&amp;dubbelepunt;content-remove {#content-remove}
 
 De gebeurtenis `aue:content-remove` wordt geactiveerd wanneer een component uit een container wordt verwijderd.
 
@@ -124,7 +124,7 @@ De lading is item-id van de verwijderde component.
 }
 ```
 
-### aue :content-update {#content-update}
+### aue&amp;dubbelepunt;content-update {#content-update}
 
 De gebeurtenis `aue:content-update` wordt geactiveerd wanneer de eigenschappen van een component in de context worden bijgewerkt.
 
@@ -180,7 +180,7 @@ Respons Payload
 
 ## UI-gebeurtenissen {#ui-events}
 
-### aue :ui-preview {#ui-preview}
+### aue&amp;dubbelepunt;ui-voorvertoning {#ui-preview}
 
 De `aue:ui-preview` gebeurtenis wordt teweeggebracht wanneer de het uitgeven wijze van de pagina in **Voorproef** wordt veranderd.
 
@@ -192,7 +192,7 @@ De payload is leeg voor deze gebeurtenis.
 }
 ```
 
-### aue :ui-edit {#ui-edit}
+### aue&amp;dubbelepunt;ui-bewerking {#ui-edit}
 
 De `aue:ui-edit` gebeurtenis wordt teweeggebracht wanneer de het uitgeven wijze van de pagina wordt veranderd in **geeft** uit.
 
@@ -204,7 +204,7 @@ De payload is leeg voor deze gebeurtenis.
 }
 ```
 
-### aue :ui-viewport-change {#ui-viewport-change}
+### aue&amp;colon;ui-viewport-change {#ui-viewport-change}
 
 De gebeurtenis `aue:ui-viewport-change` wordt geactiveerd wanneer de grootte van de viewport wordt gewijzigd.
 
@@ -219,7 +219,7 @@ De nuttige lading is de afmetingen van viewport.
 }
 ```
 
-### aue :initialized {#initialized}
+### aue&amp;dubbelepunt;geïnitialiseerd {#initialized}
 
 De gebeurtenis `aue:initialized` wordt geactiveerd om de externe pagina te laten weten dat deze is geladen in de Universal Editor.
 
@@ -257,4 +257,3 @@ De payload is leeg voor deze gebeurtenis.
 ## Aanvullende bronnen {#additional-resources}
 
 * [Universal Editor-aanroepen](/help/implementing/universal-editor/calls.md)
-
