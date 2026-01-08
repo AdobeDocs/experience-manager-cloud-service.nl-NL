@@ -199,5 +199,5 @@ In Content Hub kunt u verzamelingen als favoriet markeren, zodat u ze eenvoudige
 
 >[!NOTE]
 >
->[&#x200B; Vastzetten of de inzameling van de speld &#x200B;](#pin-unpin-collection) en [&#x200B; Verzamelingen van het Teken als Favorieten &#x200B;](#favorite-collection) zijn beperkte beschikbaarheidseigenschappen. U kunt [&#x200B; een geval van de Steun van de Klant van Adobe tot stand brengen en voorleggen om hen voor uw plaatsing toe te laten.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
+>[&#x200B; Vastzetten of de inzameling van de speld &#x200B;](#pin-unpin-collection) en [&#x200B; Verzamelingen van het Teken als Favorieten &#x200B;](#favorite-collection) zijn beperkte beschikbaarheidseigenschappen. U kunt [&#x200B; een geval van de Steun van de Klant van Adobe tot stand brengen en voorleggen om hen voor uw plaatsing toe te laten.](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html)
 
