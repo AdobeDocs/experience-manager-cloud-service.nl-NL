@@ -23,7 +23,7 @@ JWT server-aan-server authentificatie in AEM Forms, vooral voor server-zijintegr
 Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
 * Zorg ervoor dat u toegang tot [&#x200B; Adobe Cloud Manager &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specifiek voor het milieu hebt u gebruikt.
-* Wijs de [&#x200B; rol van de Beheerder of van de Ontwikkelaar van het Systeem aan toegang Adobe Cloud Manager &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) toe.
+* Wijs de [&#x200B; rol van de Beheerder of van de Ontwikkelaar van het Systeem aan toegang Adobe Cloud Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/access-rights) toe.
 
 ## Hoe te om een Token van de Toegang te produceren gebruikend geloofsbrieven JWT?
 
@@ -109,7 +109,7 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
 
 >[!NOTE]
 >
-> Meer over de dienstgeloofsbrieven leren en hoe te om een toegangstoken te produceren gebruikend Adobe IMS API, [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Meer over de dienstgeloofsbrieven leren en hoe te om een toegangstoken te produceren gebruikend Adobe IMS API, [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 U kunt het gegenereerde toegangstoken nu gebruiken om API-aanroepen te maken voor ontwikkelings-, stage- of productieomgevingen.
 
