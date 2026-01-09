@@ -6,31 +6,24 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 
-# JWT-verificatie (JSON Web Token) - Vervangen
+# JWT (JSON Web Token) Server-aan-server Authentificatie
 
-JWT-verificatie in AEM Forms, met name voor integratie aan de serverzijde met AEM as a Cloud Service, omvat een specifiek proces voor veilige interactie met AEM-services.
-
-## Overwegingen
-
-De toegangstoken die door JWT wordt geproduceerd zal niet werken nadat huidige certificaten verlopen of 1 Maart, 2026, welke vroeger is. Daarom moet u uw integratie migreren om de nieuwe [&#x200B; Server-aan-Server referentie &#x200B;](/help/forms/oauth-api-authetication.md) te gebruiken.
-
-Het migreren van uw projecten aan de Server-aan-Server referentie OAuth is een eenvoudig proces in twee stappen dat een nul onderbreking migratie voor uw toepassingen en integratie toelaat. Gelieve te lezen de [&#x200B; migratiegids &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration) om aan de referentie van Server-aan-Server OAuth te migreren.
-
+JWT server-aan-server authentificatie in AEM Forms, vooral voor server-zijintegratie met AEM as a Cloud Service, impliceert een specifiek proces om veilig met de diensten van AEM in wisselwerking te staan. JWT-verificatie van server naar server wordt ondersteund door AEM Developer Console.
 
 ## Vereisten
 
 Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-* Zorg ervoor dat u toegang tot [&#x200B; Adobe Cloud Manager &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specifiek voor het milieu hebt u gebruikt.
-* Wijs de rol Systeembeheerder of -ontwikkelaar toe aan toegang tot Adobe Cloud Manager.
+* Zorg ervoor dat u toegang tot [ Adobe Cloud Manager ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specifiek voor het milieu hebt u gebruikt.
+* Wijs de [ rol van de Beheerder of van de Ontwikkelaar van het Systeem aan toegang Adobe Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) toe.
 
 ## Hoe te om een Token van de Toegang te produceren gebruikend geloofsbrieven JWT?
 
@@ -38,10 +31,10 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
 
 1. **Adobe Cloud Manager**
 
-   1. Login aan uw [&#x200B; rekening van Cloud Manager &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html).
+   1. Login aan uw [ rekening van Cloud Manager ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html).
    2. Klik op **[!UICONTROL Program Overview]** voor het geselecteerde programma.
 
-      ![&#x200B; Cloud Manager- Rekening &#x200B;](/help/forms/assets/jwt-cloud-manager-landing.png)
+      ![ Cloud Manager- Rekening ](/help/forms/assets/jwt-cloud-manager-landing.png)
 
    3. Klik in uw programma op het menu met drie puntjes en selecteer **[!UICONTROL Developer Console]** .
 
@@ -51,18 +44,18 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
    1. Aanmelden bij AEM Developer Console
    2. Klik op **[!UICONTROL Integrations]** in de bovenste menubalk.
 
-      ![&#x200B; Integraties &#x200B;](/help/forms/assets/jwt-integrations.png)
+      ![ Integraties ](/help/forms/assets/jwt-integrations.png)
 
    3. Klik op de optie om **[!UICONTROL Create new technical account]** te gebruiken.
 
-      ![&#x200B; creeer nieuwe technische rekening &#x200B;](/help/forms/assets/jwt-creae-new-tech-account.png)
+      ![ creeer nieuwe technische rekening ](/help/forms/assets/jwt-creae-new-tech-account.png)
 
    Nadat u op een nieuwe technische account hebt geklikt, wordt de vereiste informatie voor het genereren van een toegangstoken gegenereerd, zoals de client-id en het clientgeheim, samen met andere technische accountgegevens, zoals de persoonlijke sleutel, de openbare sleutel en de vervaldatum.
 
-   ![&#x200B; JWT Credentials &#x200B;](/help/forms/assets/jwt-credentials.png)
+   ![ JWT Credentials ](/help/forms/assets/jwt-credentials.png)
 
 
-3. Credentials genereren en opslaan
+3. **produceer en sparen Referenties**
 
    1. Opname API-referenties
 
@@ -76,7 +69,7 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
       Scopes: AdobeID,openid,read_organizations
       ```
 
-4. Tokengeneratie openen
+4. **Symbolische Generatie van de Toegang**
 
    Tkens programmatisch genereren met de opdracht cURL:
 
@@ -116,11 +109,11 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
 
 >[!NOTE]
 >
-> Meer over de dienstgeloofsbrieven leren en hoe te om een toegangstoken te produceren gebruikend Adobe IMS API, [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Meer over de dienstgeloofsbrieven leren en hoe te om een toegangstoken te produceren gebruikend Adobe IMS API, [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 U kunt het gegenereerde toegangstoken nu gebruiken om API-aanroepen te maken voor ontwikkelings-, stage- of productieomgevingen.
 
-## Volgende stappen
+## Verwante artikelen
 
 Leer hoe u een omgeving instelt voor synchrone (On-Demand) en asynchrone (Batch) Forms Communications API&#39;s:
 
