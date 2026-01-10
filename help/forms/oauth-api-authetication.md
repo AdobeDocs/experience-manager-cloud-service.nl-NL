@@ -22,8 +22,8 @@ Met verificatie van server naar server kunt u veilige, tokengebaseerde toegang t
 
 Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-* Zorg ervoor dat u [&#x200B; toegang tot Adobe Developer Console &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) specifiek voor het milieu hebt u gebruikt.
-* [&#x200B; wijs de rol van de Beheerder of van de Ontwikkelaar van het Systeem in Adobe Admin Console &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) toe om toegang tot Adobe Developer Console toe te laten.
+* Zorg ervoor dat u [&#x200B; toegang tot Adobe Developer Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/access-rights) specifiek voor het milieu hebt u gebruikt.
+* [&#x200B; wijs de rol van de Beheerder of van de Ontwikkelaar van het Systeem in Adobe Admin Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) toe om toegang tot Adobe Developer Console toe te laten.
 
 ## Hoe te om een Token van de Toegang te produceren die de Server-aan-server Authentificatie van OAuth gebruikt?
 
@@ -180,7 +180,7 @@ Handmatig toegangstokens genereren in Adobe Developer Console:
 
 >[!TAB  voor Productie ]
 
-Genereer programmatically tokens gebruikend [&#x200B; IMS van Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API:
+Genereer programmatically tokens gebruikend [&#x200B; IMS van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API:
 
 **Vereiste Referenties:**
 
