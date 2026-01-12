@@ -3,10 +3,7 @@ title: Hoe instellen van JWT-verificatie (JSON Web Token)?
 description: Leer hoe u JWT-verificatie (JSON Web Token) voor Adobe Experience Manager Forms as a Cloud Service configureert
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -22,8 +19,8 @@ JWT server-aan-server authentificatie in AEM Forms, vooral voor server-zijintegr
 
 Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-* Zorg ervoor dat u toegang tot [&#x200B; Adobe Cloud Manager &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specifiek voor het milieu hebt u gebruikt.
-* Wijs de [&#x200B; rol van de Beheerder of van de Ontwikkelaar van het Systeem aan toegang Adobe Cloud Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/access-rights) toe.
+* Zorg ervoor dat u toegang tot [ Adobe Cloud Manager ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specifiek voor het milieu hebt u gebruikt.
+* Wijs de [ rol van de Beheerder of van de Ontwikkelaar van het Systeem aan toegang Adobe Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) toe.
 
 ## Hoe te om een Token van de Toegang te produceren gebruikend geloofsbrieven JWT?
 
@@ -31,10 +28,10 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
 
 1. **Adobe Cloud Manager**
 
-   1. Login aan uw [&#x200B; rekening van Cloud Manager &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html).
+   1. Login aan uw [ rekening van Cloud Manager ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html).
    2. Klik op **[!UICONTROL Program Overview]** voor het geselecteerde programma.
 
-      ![&#x200B; Cloud Manager- Rekening &#x200B;](/help/forms/assets/jwt-cloud-manager-landing.png)
+      ![ Cloud Manager- Rekening ](/help/forms/assets/jwt-cloud-manager-landing.png)
 
    3. Klik in uw programma op het menu met drie puntjes en selecteer **[!UICONTROL Developer Console]** .
 
@@ -44,15 +41,15 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
    1. Aanmelden bij AEM Developer Console
    2. Klik op **[!UICONTROL Integrations]** in de bovenste menubalk.
 
-      ![&#x200B; Integraties &#x200B;](/help/forms/assets/jwt-integrations.png)
+      ![ Integraties ](/help/forms/assets/jwt-integrations.png)
 
    3. Klik op de optie om **[!UICONTROL Create new technical account]** te gebruiken.
 
-      ![&#x200B; creeer nieuwe technische rekening &#x200B;](/help/forms/assets/jwt-creae-new-tech-account.png)
+      ![ creeer nieuwe technische rekening ](/help/forms/assets/jwt-creae-new-tech-account.png)
 
    Nadat u op een nieuwe technische account hebt geklikt, wordt de vereiste informatie voor het genereren van een toegangstoken gegenereerd, zoals de client-id en het clientgeheim, samen met andere technische accountgegevens, zoals de persoonlijke sleutel, de openbare sleutel en de vervaldatum.
 
-   ![&#x200B; JWT Credentials &#x200B;](/help/forms/assets/jwt-credentials.png)
+   ![ JWT Credentials ](/help/forms/assets/jwt-credentials.png)
 
 
 3. **produceer en sparen Referenties**
@@ -109,7 +106,7 @@ Volg de stappen hieronder die u tonen hoe te om een toegangstoken van de geloofs
 
 >[!NOTE]
 >
-> Meer over de dienstgeloofsbrieven leren en hoe te om een toegangstoken te produceren gebruikend Adobe IMS API, [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Meer over de dienstgeloofsbrieven leren en hoe te om een toegangstoken te produceren gebruikend Adobe IMS API, [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 U kunt het gegenereerde toegangstoken nu gebruiken om API-aanroepen te maken voor ontwikkelings-, stage- of productieomgevingen.
 
