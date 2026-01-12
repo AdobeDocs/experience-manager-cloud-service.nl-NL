@@ -4,9 +4,9 @@ description: Definieer de structuur van de inhoud die u wilt maken en gebruiken 
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp va
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
-[&#x200B; nu dat u een configuratie &#x200B;](create-configuration.md) hebt gecreeerd, kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
+[ nu dat u een configuratie ](create-configuration.md) hebt gecreeerd, kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
 
 Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u maakt en beheert in AEM. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een model voor inhoudsfragmenten dat u definieert en dat hen bij het maken van inhoud begeleidt.
 
@@ -34,11 +34,11 @@ U moet de volgende stappen uitvoeren om een gebruiksklaar model te maken:
 
 ## Volgende stappen {#next-steps}
 
-Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [&#x200B; creeert omslagen waar u de fragmenten zelf &#x200B;](create-assets-folder.md) zult opslaan.
+Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [ creeert omslagen waar u de fragmenten zelf ](create-assets-folder.md) zult opslaan.
 
 >[!TIP]
 >
 >Zie voor volledige informatie over modellen van inhoudsfragmenten:
 >
->* [&#x200B; het Leiden Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
->* [&#x200B; het bepalen van Modellen van het Fragment van Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+>* [ het Leiden Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [ het bepalen van Modellen van het Fragment van Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
