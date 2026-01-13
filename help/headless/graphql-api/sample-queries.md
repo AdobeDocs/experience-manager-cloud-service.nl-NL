@@ -4,7 +4,7 @@ description: Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6f90bfebf2c9898bf8c1ad2643f8edc4ff4dda53
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 0%
@@ -21,15 +21,15 @@ Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen
 >
 >* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 >* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
->* [&#x200B; AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud &#x200B;](/help/headless/graphql-api/content-fragments.md)
+>* [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](/help/headless/graphql-api/content-fragments.md)
 
 Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, helpt het om enkele praktische voorbeelden te zien.
 
 Zie voor hulp bij dit:
 
-* A [&#x200B; structuur van het Fragment van de steekproefinhoud &#x200B;](#content-fragment-structure-graphql)
+* A [ structuur van het Fragment van de steekproefinhoud ](#content-fragment-structure-graphql)
 
-* En sommige [&#x200B; vragen van de steekproefGraphQL &#x200B;](#graphql-sample-queries), die op de structuur van het Fragment van de steekproefinhoud (de Modellen van het Fragment van de Inhoud en verwante Fragments van de Inhoud) wordt gebaseerd.
+* En sommige [ vragen van de steekproefGraphQL ](#graphql-sample-queries), die op de structuur van het Fragment van de steekproefinhoud (de Modellen van het Fragment van de Inhoud en verwante Fragments van de Inhoud) wordt gebaseerd.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -42,7 +42,7 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 
 >[!NOTE]
 >
->Afhankelijk van uw instantie, kunt u tot de [&#x200B; interface toegang hebben GraphiQL inbegrepen met AEM GraphQL API &#x200B;](/help/headless/graphql-api/graphiql-ide.md) voor het voorleggen en het testen van vragen.
+>Afhankelijk van uw instantie, kunt u tot de [ interface toegang hebben GraphiQL inbegrepen met AEM GraphQL API ](/help/headless/graphql-api/graphiql-ide.md) voor het voorleggen en het testen van vragen.
 >
 >U kunt tot de vraagredacteur van één van beiden toegang hebben:
 >
@@ -51,7 +51,7 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 
 >[!NOTE]
 >
->De steekproefvragen zijn gebaseerd op de [&#x200B; Structuur van het Fragment van de Inhoud van de Steekproef voor gebruik met GraphQL &#x200B;](#content-fragment-structure-graphql)
+>De steekproefvragen zijn gebaseerd op de [ Structuur van het Fragment van de Inhoud van de Steekproef voor gebruik met GraphQL ](#content-fragment-structure-graphql)
 
 ### Voorbeeldquery - Alle beschikbare schema&#39;s en datatypen {#sample-all-schemes-datatypes}
 
@@ -374,7 +374,7 @@ Dan kunt u een vraag gebruiken om details van `name` en `tags` van alle ingangen
 
 **de Vraag van de Steekproef**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -390,7 +390,7 @@ query {
 
 **Resultaten van de Steekproef**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -1636,7 +1636,7 @@ Deze query vraagt om:
 
 >[!NOTE]
 >
->Deze vraag toont reserve voor de Fragmenten van de Inhoud aan die a [&#x200B; Variatie &#x200B;](/help/headless/graphql-api/content-fragments.md#variations) van de gespecificeerde naam niet hebben.
+>Deze vraag toont reserve voor de Fragmenten van de Inhoud aan die a [ Variatie ](/help/headless/graphql-api/content-fragments.md#variations) van de gespecificeerde naam niet hebben.
 
 **de Vraag van de Steekproef**
 
@@ -1662,7 +1662,7 @@ Deze query vraagt om:
 
 **de Vraag van de Steekproef**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1689,7 +1689,7 @@ Deze query vraagt om:
 
 **de Vraag van de Steekproef**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
@@ -1877,29 +1877,29 @@ Voor voor het web geoptimaliseerde afbeeldingslevering (van DAM-middelen):
 
 Voor de levering van URL aan een Dynamisch middel
 
-* Zie [&#x200B; vraag van de Steekproef voor Dynamische levering van Media door URL - de Verwijzing van het Beeld &#x200B;](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* Zie [ vraag van de Steekproef voor Dynamische levering van Media door URL - de Verwijzing van het Beeld ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* Zie [&#x200B; vraag van de Steekproef voor de Dynamische levering van Media door URL - Veelvoudige Verwijzingen &#x200B;](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* Zie [ vraag van de Steekproef voor de Dynamische levering van Media door URL - Veelvoudige Verwijzingen ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 Voor de levering van externe elementen die niet lokaal zijn voor de huidige AEM-instantie, vanuit de Inhoudsfragmenteditor.
 
-* Zie [&#x200B; vraag van de Steekproef voor Dynamische Media voor OpenAPI activa steun (Verre Assets) &#x200B;](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
+* Zie [ vraag van de Steekproef voor Dynamische Media voor OpenAPI activa steun (Verre Assets) ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## De structuur voor het voorbeeldinhoudfragment (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
 
 De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
-* Één, of meer, [&#x200B; Modellen van het Fragment van de Inhoud van de Steekproef &#x200B;](#sample-content-fragment-models-schemas) - vorm de basis voor de schema&#39;s van GraphQL
+* Één, of meer, [ Modellen van het Fragment van de Inhoud van de Steekproef ](#sample-content-fragment-models-schemas) - vorm de basis voor de schema&#39;s van GraphQL
 
-* [&#x200B; de Fragmenten van de Inhoud van de Steekproef &#x200B;](#sample-content-fragments) die op de bovengenoemde modellen worden gebaseerd
+* [ de Fragmenten van de Inhoud van de Steekproef ](#sample-content-fragments) die op de bovengenoemde modellen worden gebaseerd
 
 ### Voorbeeld van modellen van inhoudsfragmenten (schema&#39;s) {#sample-content-fragment-models-schemas}
 
 Voor de steekproefvragen, gebruikt u de volgende Modellen van Inhoud, en hun onderlinge relaties (verwijzingen ->):
 
-* [&#x200B; Bedrijf &#x200B;](#model-company)
--> [&#x200B; Persoon &#x200B;](#model-person)
-    -> [&#x200B; Uitreiking &#x200B;](#model-award)
+* [ Bedrijf ](#model-company)
+-> [ Persoon ](#model-person)
+    -> [ Uitreiking ](#model-award)
 
 * [Plaats](#model-city)
 
@@ -1910,8 +1910,8 @@ De basisvelden voor het bedrijf zijn:
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
 | Bedrijfsnaam | Tekst met één regel | |
-| CEO | Fragmentverwijzing (enkele) | [&#x200B; Persoon &#x200B;](#model-person) |
-| Werknemers | Fragmentverwijzing (meerdere velden) | [&#x200B; Persoon &#x200B;](#model-person) |
+| CEO | Fragmentverwijzing (enkele) | [ Persoon ](#model-person) |
+| Werknemers | Fragmentverwijzing (meerdere velden) | [ Persoon ](#model-person) |
 
 #### Persoon {#model-person}
 
@@ -1921,7 +1921,7 @@ De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
 |--- |--- |--- |
 | Naam | Tekst met één regel | |
 | Voornaam | Tekst met één regel | |
-| Uitreiking | Fragmentverwijzing (meerdere velden) | [&#x200B; Uitreiking &#x200B;](#model-award) |
+| Uitreiking | Fragmentverwijzing (meerdere velden) | [ Uitreiking ](#model-award) |
 
 #### Uitreiking {#model-award}
 
