@@ -25,9 +25,9 @@ Volg deze sectie voor meer informatie over wat nieuw is en de updates voor AEM S
 
 ### Wat is er nieuw? {#whats-new-2020.6.0}
 
-Versie 2.9.0 van de [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is nu beschikbaar als deel van AEM Sites met inbegrip van:
+Versie 2.9.0 van de [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is nu beschikbaar als deel van AEM Sites met inbegrip van:
 
-* Integratie tussen [ de Laag van Gegevens van de Cliënt van Adobe ](https://github.com/adobe/adobe-client-data-layer) en de Componenten van de Kern
+* Integratie tussen [&#x200B; de Laag van Gegevens van de Cliënt van Adobe &#x200B;](https://github.com/adobe/adobe-client-data-layer) en de Componenten van de Kern
 * Configureerbare HTML-id-kenmerken voor alle componenten
 * Een nieuwe component ProgressBar
 * Veel opgeloste problemen
@@ -60,17 +60,17 @@ Volg deze sectie voor meer informatie over wat nieuw is en de updates voor Cloud
 
 ### Wat is er nieuw? {#what-is-new-cloud-manager}
 
-* Een gebruiker in de *rol van 0} BedrijfsEigenaar {in Cloud Manager kan nu een Programma Sandbox van de landende pagina (via snelle actieknoop op de kaart van het Programma) of van binnen het programma schrappen.*
+* Een gebruiker in de *rol van 0&rbrace; BedrijfsEigenaar &lbrace;in Cloud Manager kan nu een Programma Sandbox van de landende pagina (via snelle actieknoop op de kaart van het Programma) of van binnen het programma schrappen.*
 
-  Zie [ het Schrappen van een Programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer details.
+  Zie [&#x200B; het Schrappen van een Programma Sandbox &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer details.
 
-* Een gebruiker van het Programma van Sandbox in *BedrijfsEigenaar* of *de rol van de Manager van de Plaatsing* in Cloud Manager kan nu hun Productie en milieu schrappen van het Stadium dat via Cloud Manager UI wordt geplaatst. De schrappingsoptie is nu beschikbaar van zowel de kaart van het Milieu op de **pagina van het Overzicht van Programma&#39;s 0} als de** pagina van Milieu **.** Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
+* Een gebruiker van het Programma van Sandbox in *BedrijfsEigenaar* of *de rol van de Manager van de Plaatsing* in Cloud Manager kan nu hun Productie en milieu schrappen van het Stadium dat via Cloud Manager UI wordt geplaatst. De schrappingsoptie is nu beschikbaar van zowel de kaart van het Milieu op de **pagina van het Overzicht van Programma&#39;s 0&rbrace; als de** pagina van Milieu **.** Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
 
-  Zie [ het Schrappen van een Programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer details.
+  Zie [&#x200B; het Schrappen van een Programma Sandbox &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer details.
 
 * Op de landingspagina worden de aanvoermarkeringen aangebracht om de gebruiker te informeren en te informeren over de basisnavigatie.
 
-* De tekens van de cokes op de **pagina van het Overzicht van het 0} Programma om de gebruiker over basisnavigatie binnen Cloud Manager te informeren en te instrueren om hen te krijgen begonnen.**
+* De tekens van de cokes op de **pagina van het Overzicht van het 0&rbrace; Programma om de gebruiker over basisnavigatie binnen Cloud Manager te informeren en te instrueren om hen te krijgen begonnen.**
 
 * A **LEARN** pagina is nu beschikbaar in Cloud Manager, toegankelijk via de hoogste navigatie. Deze pagina bevat bronnen die gebruikers helpen bij het leren van de meestgebruikte workflows die relevant zijn voor hun rollen die in Cloud Manager zijn toegewezen.
 
@@ -78,11 +78,11 @@ Volg deze sectie voor meer informatie over wat nieuw is en de updates voor Cloud
 
 * Een gebruiker in de rol SysAdmin heeft nu met één klik toegang tot de plaats in Admin Console van waar de gebruikersrollen of de toestemmingen aan Cloud Manager kunnen worden beheerd. A **beheert de knoop van de Toegang** is nu beschikbaar op de het landen pagina naast **voeg Programma** knoop toe.
 
-  Zie {de Taken SysAdmin [ voor meer details.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)
+  Zie &lbrace;de Taken SysAdmin [&#x200B; voor meer details.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)
 
 * Een gebruiker met de rol SysAdmin heeft nu met één klik rechtstreeks vanuit Cloud Manager toegang tot de instantie van de auteur.
 
-  Zie [ het Leiden Toegang tot de Instantie van de Auteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) voor meer details.
+  Zie [&#x200B; het Leiden Toegang tot de Instantie van de Auteur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) voor meer details.
 
 * Het logbestand Build bevat nu een lijst met ontdekte artefacten, waaronder overgeslagen inhoudspakketten.
 
@@ -111,15 +111,15 @@ Volg deze sectie voor meer informatie over wat nieuw is en de updates voor Cloud
 Met verbeterde slimme tags kunnen organisaties slimme-tagmodellen trainen om images te herkennen op basis van klantspecifieke bedrijfstags, naast algemene slimme tags.
 
 Met deze release is er een nieuwe, geleide gebruikerservaring die helpt slimme tags te trainen voor sets klantspecifieke tags en deze te trainen met middelen die in de toekomst moeten worden herkend en gecodeerd. De ervaring is nu intuïtiever.
-Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [ hoe te om slimme markeringen aan activa ](/help/assets/smart-tags.md) toe te voegen.
+Verbeterde slimme tags voor meer intuïtieve training voor slimme tags. Zie [&#x200B; hoe te om slimme markeringen aan activa &#x200B;](/help/assets/smart-tags.md) toe te voegen.
 
 **Steun voor opname, voorproef, en levering van 3D inhoud**
 
-Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met de toevoeging van [!DNL Dynamic Media] kunt u 3D-ervaringen configureren en leveren met behulp van agnostische URL&#39;s of viewers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [ Werkend met 3D activa in Dynamische Media ](/help/assets/dynamic-media/assets-3d.md).
+Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM Assets. De gebruiker kan diverse 3D-kernbestanden uploaden, voorvertonen en gebruiken, waaronder OBJ-, STL-, GLTF- en GLB-bestanden. Met de toevoeging van [!DNL Dynamic Media] kunt u 3D-ervaringen configureren en leveren met behulp van agnostische URL&#39;s of viewers. Dit omvat een [!DNL Dynamic Media] 3D Experience Viewer, de component Sites 3D Viewer en de mogelijkheid om 3D-bestanden te leveren via [!DNL Dynamic Media] (AR/VR). Zie [&#x200B; Werkend met 3D activa in Dynamische Media &#x200B;](/help/assets/dynamic-media/assets-3d.md).
 
 **de steun van de Verbinding van de Activa van Adobe voor Adobe XD**
 
-Met de nieuwste versie ondersteunt [!DNL Experience Manager Assets] een nieuwe [!DNL Adobe Asset Link] -plug-in die wordt losgelaten met [!DNL Adobe XD] v29.3. Dankzij de integratie hebben ontwerpers toegang tot elementen van [!DNL Experience Manager] in hun ontwerpen en kunnen ze deze gebruiken zonder dat ze [!DNL Adobe XD] hoeven te verlaten. Zie [ de Verbinding van Activa van Adobe voor de documentatie van Adobe XD ](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+Met de nieuwste versie ondersteunt [!DNL Experience Manager Assets] een nieuwe [!DNL Adobe Asset Link] -plug-in die wordt losgelaten met [!DNL Adobe XD] v29.3. Dankzij de integratie hebben ontwerpers toegang tot elementen van [!DNL Experience Manager] in hun ontwerpen en kunnen ze deze gebruiken zonder dat ze [!DNL Adobe XD] hoeven te verlaten. Zie [&#x200B; de Verbinding van Activa van Adobe voor de documentatie van Adobe XD &#x200B;](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
 Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middelen die worden beheerd in [!DNL AEM Assets] via [!DNL Adobe Asset Link] in een aantal Creative Cloud-bureaubladtoepassingen, zoals [!DNL Adobe XD] , [!DNL Photoshop] , [!DNL Illustrator] en [!DNL InDesign] .
 
@@ -177,8 +177,8 @@ De release biedt de volgende andere verbeteringen:
 
 * Mogelijkheid om elementen opnieuw te verwerken met profielen voor middelenverwerking, zodat gebruikers volledige controle hebben over het proces (volledige verwerking van bedrijfsmiddelen uitvoeren, gewoon een specifiek verwerkingsprofiel toepassen en beslissen of de naverwerkingsworkflow moet worden uitgevoerd).
 * Zoekopdrachten retourneren nu sneller resultaten wanneer de onderliggende clusterinstantie achter de schermen opnieuw is gestart (de eerste zoekopdracht kan in een dergelijk geval langer duren).
-* Sorteren op &#39;Naam&#39; wanneer elementen in de lijstweergave in de Assets-interface en in de zoekresultaten worden weergegeven. Zie [ onderzoeksactiva ](/help/assets/search-assets.md#sort).
-* Sorteer op &#39;Gemaakt&#39; (Datum) wanneer u elementen weergeeft in de lijstweergave in de Assets-interface en in de zoekresultaten. Zie [ onderzoeksactiva ](/help/assets/search-assets.md#sort).
+* Sorteren op &#39;Naam&#39; wanneer elementen in de lijstweergave in de Assets-interface en in de zoekresultaten worden weergegeven. Zie [&#x200B; onderzoeksactiva &#x200B;](/help/assets/search-assets.md#sort).
+* Sorteer op &#39;Gemaakt&#39; (Datum) wanneer u elementen weergeeft in de lijstweergave in de Assets-interface en in de zoekresultaten. Zie [&#x200B; onderzoeksactiva &#x200B;](/help/assets/search-assets.md#sort).
 * Ondersteuning voor het converteren van EPS-bestanden naar afbeeldingen met behulp van de asset microservices.
 
 ### Opgeloste problemen {#assets-bug-fixes}

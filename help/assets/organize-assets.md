@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft® Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Het onderzoek staat verfijnd het filtreren op activa toe en eerbiedigt volledig de juiste toestemmingen. Metagegevens worden in detail besproken in Metagegevens in Digital Asset Management.
@@ -59,7 +59,7 @@ Date24/08/2021
 
 ## Elementen in mappen ordenen {#organize-using-folders}
 
-De eenvoudigste manier om elementen te ordenen is het opslaan van de elementen in mappen. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Voor meer informatie over om omslagen tot stand te brengen en te beheren, zie [ activa ](manage-digital-assets.md) beheren. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
+De eenvoudigste manier om elementen te ordenen is het opslaan van de elementen in mappen. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Voor meer informatie over om omslagen tot stand te brengen en te beheren, zie [&#x200B; activa &#x200B;](manage-digital-assets.md) beheren. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
 
 * Gewoonlijk groeit de opslagplaats voor digitale middelen altijd. Daarom is het belangrijk om het gebruik van metagegevens, de mapstructuur en de naamgeving van bestanden vroegtijdig te formaliseren in de cyclus waarin de inhoud wordt gemaakt.
 * Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Deze consistentie helpt uw proces en beheert uw activa beter. Met middelen die bijvoorbeeld in de volgende typen mappen worden geplaatst, kunt u uw elementen segregeren:
@@ -92,7 +92,7 @@ Hieronder vindt u de stappen voor het toevoegen van codes aan een element:
 
    U kunt de codestructuur in oplopende of aflopende volgorde sorteren op basis van de datum **[!UICONTROL Name]** (alfabetische volgorde), **[!UICONTROL Created]** date of **[!UICONTROL Modified]** . In de volgende afbeelding wordt de codestructuur alfabetisch gesorteerd op basis van de **[!UICONTROL Name]** .
 
-   ![ toe:voegen-markeringen ](assets/add-tags-to-asset.png)
+   ![&#x200B; toe:voegen-markeringen &#x200B;](assets/add-tags-to-asset.png)
 
 1. Klik **sparen** om de veranderingen van activa meta-gegevens bij te werken.
 
@@ -106,7 +106,7 @@ Raadpleeg de volgende artikelen voor meer informatie:
 
 Met de functie voor het verzamelen van middelen in [!DNL Experience Manager Assets] kunt u de mogelijkheid om elementen te maken, te bewerken en te delen, stroomlijnen tussen gebruikers. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen die een statische referentielijst met elementen, mappen en verzamelingen bevatten, en verzamelingen die op basis van zoekcriteria elementen in elementen trekken. U kunt verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
 
-Voor meer informatie, zie [ inzamelingen ](manage-collections.md) beheren
+Voor meer informatie, zie [&#x200B; inzamelingen &#x200B;](manage-collections.md) beheren
 
 
 ## Profielen gebruiken om uw elementen te ordenen {#organize-to-use-profiles}
@@ -133,8 +133,8 @@ Als u het gebruik van metagegevens, de naamgeving van bestanden en de mapstructu
 
 >[!MORELIKETHIS]
 >
->* [ de activa microservices en verwerkingsprofielen van het Gebruik ](asset-microservices-configure-and-use.md)
+>* [&#x200B; de activa microservices en verwerkingsprofielen van het Gebruik &#x200B;](asset-microservices-configure-and-use.md)
 >* [Metadataprofielen](metadata-profiles.md)
->* [ Videoprofielen ](/help/assets/dynamic-media/video-profiles.md)
->* [ Dynamische het beeldprofielen van Media ](/help/assets/dynamic-media/image-profiles.md)
+>* [&#x200B; Videoprofielen &#x200B;](/help/assets/dynamic-media/video-profiles.md)
+>* [&#x200B; Dynamische het beeldprofielen van Media &#x200B;](/help/assets/dynamic-media/image-profiles.md)
 

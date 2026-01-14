@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Kleurlabels voor afbeeldingen {#color-tag-images}
 
-![ de Tagging van de Kleur Banner ](assets/banner-image.png)
+![&#x200B; de Tagging van de Kleur Banner &#x200B;](assets/banner-image.png)
 
 Adobe Experience Manager (AEM) Assets gebruikt Adobe AI-mogelijkheden om kleuren in een afbeelding van elkaar te onderscheiden en deze automatisch als tags toe te passen bij opname. Deze tags maken een verbeterde zoekervaring mogelijk op basis van de compositie van de afbeeldingskleur.
 
@@ -21,7 +21,7 @@ U kunt het aantal kleuren binnen een bereik van 1 tot 40 configureren dat aan ee
 
 In de volgende afbeelding ziet u de volgorde van taken die u uitvoert voor het configureren en beheren van kleurlabels voor afbeeldingen in Experience Manager Assets:
 
-![ Tags voor de Kleur ](assets/color-tagging-dfd.gif)
+![&#x200B; Tags voor de Kleur &#x200B;](assets/color-tagging-dfd.gif)
 
 ## Ondersteunde bestandsindelingen {#supported-file-formats-color-tags}
 
@@ -40,7 +40,7 @@ De eigenschappen voor kleurlabels voor afbeeldingen beheren:
 
 1. Navigeer naar **[!UICONTROL Tools > Assets > Color Tagging]** .
 
-   ![ het Tags toevoegen van de Kleur Eigenschappen ](assets/color-tag-settings.png)
+   ![&#x200B; het Tags toevoegen van de Kleur Eigenschappen &#x200B;](assets/color-tag-settings.png)
 
 1. Geef in het veld **[!UICONTROL Display Format]** een weergave-indeling voor de kleurtag op. Mogelijke opties zijn de kleurnaam, de RGB- of de HEX-indeling.
 
@@ -78,7 +78,7 @@ Kleurlabelen op mapniveau uitschakelen:
 
    * Uitschakelen - Schakelt kleurcodering voor de geselecteerde map uit.
 
-   ![ het Tags toevoegen van de Kleur Montages ](assets/color-tags-folder.png)
+   ![&#x200B; het Tags toevoegen van de Kleur Montages &#x200B;](assets/color-tags-folder.png)
 
 ## Metagegevensschema configureren om component voor slimme kleurcodes toe te voegen {#configure-metadata-schema}
 
@@ -118,7 +118,7 @@ Voer de volgende stappen uit als u afbeeldingen met kleurcodes of mappen (inclus
 
 1. Selecteer de volledige map of specifieke afbeeldingen.
 
-1. Selecteer ![ opnieuw verwerken activa pictogram ](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] pictogram en selecteer de [!UICONTROL Full Process] optie.
+1. Selecteer ![&#x200B; opnieuw verwerken activa pictogram &#x200B;](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] pictogram en selecteer de [!UICONTROL Full Process] optie.
 
 Wanneer het proces is voltooid, navigeert u naar de pagina [!UICONTROL Properties] van een willekeurige afbeelding in de map. De automatisch toegevoegde tags worden weergegeven in de sectie [!UICONTROL Smart Color Tags] op het tabblad [!UICONTROL Basic] .
 
@@ -133,7 +133,7 @@ Slimme-kleurtags voor afbeeldingen weergeven:
 
 1. Selecteer **[!UICONTROL Properties]** en bekijk de tags in het veld **[!UICONTROL Smart Color Tags]** .
 
-   ![ de Markeringen van de Kleur van de Mening ](assets/view-color-tags.png)
+   ![&#x200B; de Markeringen van de Kleur van de Mening &#x200B;](assets/view-color-tags.png)
 
    Houd de muis boven een kleurtag zodat u de **[!UICONTROL Coverage/Dominance Threshold %]** -kleur van een afbeelding kunt bekijken.
 
@@ -165,22 +165,22 @@ U configureert als volgt het zoekfilter:
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-Na het vormen van alle kleur etiketterend eigenschappen en [ vormend de kleur van Assets voorspellen ](#search-images-based-on-colors), kunt u beelden zoeken die op een kleur als filter worden gebaseerd.
+Na het vormen van alle kleur etiketterend eigenschappen en [&#x200B; vormend de kleur van Assets voorspellen &#x200B;](#search-images-based-on-colors), kunt u beelden zoeken die op een kleur als filter worden gebaseerd.
 
 Zo zoekt u afbeeldingen op basis van kleuren:
 
 1. Navigeer naar **[!UICONTROL Assets > Files]** .
 
 1. Selecteer **[!UICONTROL Filter]** in de vervolgkeuzelijst.
-   ![ Filter Assets ](assets/filter-assets.png)
+   ![&#x200B; Filter Assets &#x200B;](assets/filter-assets.png)
 
-1. Selecteer het [ de kleurenpredikaat van AEM Assets ](#configure-search-predicate).
+1. Selecteer het [&#x200B; de kleurenpredikaat van AEM Assets &#x200B;](#configure-search-predicate).
 
 1. Sleep de kleurkiezer om de gewenste kleur te selecteren. De geselecteerde kleur wordt weergegeven in het alleen-lezen veld dat beschikbaar is onder de kleurkiezer. U kunt RGB of HEX selecteren als de weergave-indeling voor de kleur.
 
-   ![ de Plukker van de Kleur ](assets/color-picker-color-tags.png)
+   ![&#x200B; de Plukker van de Kleur &#x200B;](assets/color-picker-color-tags.png)
 
-   U kunt afbeeldingen filteren op basis van de selectie van één kleur. De beelden die de geselecteerde kleur als één van de slimme kleurenmarkeringen en boven [ Coverage/de Verschijning % van de Dominantie ](#manage-color-tagging-settings) vertoning in de juiste ruit hebben.
+   U kunt afbeeldingen filteren op basis van de selectie van één kleur. De beelden die de geselecteerde kleur als één van de slimme kleurenmarkeringen en boven [&#x200B; Coverage/de Verschijning % van de Dominantie &#x200B;](#manage-color-tagging-settings) vertoning in de juiste ruit hebben.
 
 1. Wis de filter door X in de bar van het Onderzoek te klikken.
 

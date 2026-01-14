@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Training voor slimme tags
 
-Met training voor slimme tags kunt u tags trainen, zodat u de gegevens kunt opgeven als de relevante tags niet aanwezig zijn. Het gebruikt een kunstmatig intelligent kader van [ Adobe AI ](https://business.adobe.com/ai/adobe-genai.html) om zijn algoritme van de beelderkenning op uw markeringsstructuur en bedrijfstaxonomie te trainen. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op geüploade elementen.
+Met training voor slimme tags kunt u tags trainen, zodat u de gegevens kunt opgeven als de relevante tags niet aanwezig zijn. Het gebruikt een kunstmatig intelligent kader van [&#x200B; Adobe AI &#x200B;](https://business.adobe.com/ai/adobe-genai.html) om zijn algoritme van de beelderkenning op uw markeringsstructuur en bedrijfstaxonomie te trainen. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op geüploade elementen.
 
 ## Bepalen van de vereiste van training voor slimme tags {#smart-tag-training-requirement}
 
@@ -42,7 +42,7 @@ Slimme tags training is vereist in de volgende scenario&#39;s:
 
 Een labelmodel is een groep gerelateerde tags die zijn gekoppeld aan verschillende visuele aspecten van afbeeldingen die worden gecodeerd. Tags hebben betrekking op de duidelijk verschillende visuele aspecten van afbeeldingen, zodat de tags, wanneer deze worden toegepast, helpen bij het zoeken naar specifieke typen afbeeldingen. Een schoenenverzameling kan bijvoorbeeld verschillende tags hebben, maar alle tags zijn gerelateerd aan schoenen en kunnen tot hetzelfde tagmodel behoren. Wanneer de labels worden toegepast, kunt u verschillende soorten schoenen vinden, bijvoorbeeld op basis van ontwerp of gebruik.
 
-Voordat u een tagmodel maakt en de service traint, moet u een set unieke tags identificeren die de objecten in de afbeeldingen het beste beschrijven in de context van uw bedrijf. Zorg ervoor dat de activa in uw gekrulde reeks aan [ de opleidingsrichtlijnen ](#training-guidelines) bevestigen.
+Voordat u een tagmodel maakt en de service traint, moet u een set unieke tags identificeren die de objecten in de afbeeldingen het beste beschrijven in de context van uw bedrijf. Zorg ervoor dat de activa in uw gekrulde reeks aan [&#x200B; de opleidingsrichtlijnen &#x200B;](#training-guidelines) bevestigen.
 
 ### Richtlijnen voor training {#training-guidelines}
 
@@ -137,12 +137,12 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
 
 1. Klik in het dialoogvenster **[!UICONTROL Select Assets]** op **[!UICONTROL Add Assets]** voor elke tag. Zoek in de DAM-opslagplaats of blader door de opslagplaats om ten minste 10 en ten hoogste 50 afbeeldingen te selecteren. Selecteer elementen en niet de map. Als u de afbeeldingen hebt geselecteerd, klikt u op **[!UICONTROL Select]** .
 
-   ![ de opleidingsstatus van de Mening ](assets/smart-tags-training-status.png)
+   ![&#x200B; de opleidingsstatus van de Mening &#x200B;](assets/smart-tags-training-status.png)
 
 1. Als u een voorvertoning van de miniaturen van de geselecteerde afbeeldingen wilt weergeven, klikt u op de accordeon vóór een tag. U kunt de selectie wijzigen door op **[!UICONTROL Add Assets]** te klikken. Klik op **[!UICONTROL Submit]** als u tevreden bent met de selectie. In de gebruikersinterface wordt onder aan de pagina een melding weergegeven dat de training wordt gestart.
 1. Controleer de status van de training in de kolom **[!UICONTROL Status]** voor elk tagmodel. Mogelijke statussen zijn [!UICONTROL Pending] , [!UICONTROL Trained] en [!UICONTROL Failed] .
 
-![ Werkschema om het etiketteren model voor Slimme Markeringen te trainen ](assets/smart-tag-model-training-flow.png)
+![&#x200B; Werkschema om het etiketteren model voor Slimme Markeringen te trainen &#x200B;](assets/smart-tag-model-training-flow.png)
 
 *Cijfer: Stappen van het opleidingswerkschema om het etiketteren model te trainen.*
 
