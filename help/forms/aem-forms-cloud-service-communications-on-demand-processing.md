@@ -35,7 +35,7 @@ Zorg ervoor u de vereiste toegangsrechten en toestemmingen hebt alvorens u begin
 
 >[!NOTE]
 >
-> Meer leren over het toewijzen van rollen en het verlenen van toegang tot gebruikers, verwijs naar het artikel [&#x200B; gebruikers en rollen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) toevoegen.
+> Meer leren over het toewijzen van rollen en het verlenen van toegang tot gebruikers, verwijs naar het artikel [&#x200B; gebruikers en rollen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) toevoegen.
 
 **Toegang van de Bewaarplaats van de it**
 
@@ -122,7 +122,7 @@ Van de **pagina van de Milieu** details, neem nota van uw instantie van AEM URL.
 
 >[!NOTE]
 >
-> Om te zien hoe te om tot het Milieu van de Dienst van de Wolk van de Toegang AEM en Eindpunt van AEM Forms toegang te hebben, zie [&#x200B; het Leiden Documentatie van Milieu&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+> Om te zien hoe te om tot het Milieu van de Dienst van de Wolk van de Toegang AEM en Eindpunt van AEM Forms toegang te hebben, zie [&#x200B; het Leiden Documentatie van Milieu&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL).
 
 ### Stap 2: gegevensopslagruimte voor klonen
 
@@ -261,7 +261,7 @@ Handmatig toegangstokens genereren in Adobe Developer Console:
 
 >[!TAB  voor Productie ]
 
-Genereer programmatically tokens gebruikend [&#x200B; IMS van Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API:
+Genereer programmatically tokens gebruikend [&#x200B; IMS van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API:
 
 **Vereiste Referenties:**
 

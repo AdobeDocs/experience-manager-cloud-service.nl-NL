@@ -17,7 +17,7 @@ ht-degree: 0%
 
 > **Beschikbaarheid van de Versie**
 >
-> * **AEM 6.5**: [&#x200B; Overzicht van de Diensten van het Document van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
+> * **AEM 6.5**: [&#x200B; Overzicht van de Diensten van het Document van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=nl-NL)
 > * **AEM as a Cloud Service**: Dit artikel
 
 ## Inleiding

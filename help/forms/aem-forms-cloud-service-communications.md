@@ -47,11 +47,11 @@ API-bewerkingen van één gebruiker ondersteunen twee verificatietypen:
 
 * **op token-gebaseerde authentificatie:** Op token-gebaseerde authentificatie gebruikt een toegangstoken (het teken van de authentificatie van de Drager) om verzoeken aan Experience Manager as a Cloud Service te doen. AEM Forms as a Cloud Service biedt API&#39;s om het toegangstoken veilig op te halen. Om het teken terug te winnen en te gebruiken om een verzoek voor authentiek te verklaren:
 
-   1. [&#x200B; wint de credentie van Experience Manager as a Cloud Service van Developer Console &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) terug.
-   1. [&#x200B; installeer de credentie van Experience Manager as a Cloud Service op uw milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (De Server van de Toepassing, de Server van het Web, of andere servers niet-AEM) die worden gevormd om verzoeken naar (maken vraag) de wolkendienst te verzenden.
-   1. [&#x200B; produceer een teken JWT en ruilde het met Adobe IMS APIs voor een toegangstoken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [&#x200B; wint de credentie van Experience Manager as a Cloud Service van Developer Console &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL) terug.
+   1. [&#x200B; installeer de credentie van Experience Manager as a Cloud Service op uw milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL). (De Server van de Toepassing, de Server van het Web, of andere servers niet-AEM) die worden gevormd om verzoeken naar (maken vraag) de wolkendienst te verzenden.
+   1. [&#x200B; produceer een teken JWT en ruilde het met Adobe IMS APIs voor een toegangstoken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL).
    1. Voer de Experience Manager API met het toegangstoken als token voor Dragerverificatie uit.
-   1. [&#x200B; plaats aangewezen toestemmingen voor de technische rekeningsgebruiker in het milieu van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. [&#x200B; plaats aangewezen toestemmingen voor de technische rekeningsgebruiker in het milieu van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL#configure-access-in-aem).
 
   >[!NOTE]
   >
