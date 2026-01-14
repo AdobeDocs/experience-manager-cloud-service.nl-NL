@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -155,7 +155,7 @@ De Releasedatum voor AEM Screens as a Cloud Service is 24 juni 2021.
 ### Wat is er nieuw? {#what-is-new-screens-june}
 
 >[!NOTE]
->Zie {de 1} Gids van as a Cloud Service van 0&rbrace; AEM Screens voor stichtingskennis die voor met succes wordt vereist het installeren, het vormen, en het runnen van Screens as a Cloud Service en verbinding uit aan gedetailleerde concepten technische documentatie.[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html)
+>Zie {de 1} Gids van as a Cloud Service van 0&rbrace; AEM Screens voor stichtingskennis die voor met succes wordt vereist het installeren, het vormen, en het runnen van Screens as a Cloud Service en verbinding uit aan gedetailleerde concepten technische documentatie.[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=nl-NL)
 
 * Bulk Device Registration Management betekent dat het provisioning van enorme hoeveelheden spelerapparaten sneller en efficiënter verloopt.
 
@@ -184,7 +184,7 @@ De releasedatum voor Content Transfer Tool v1.5.4 is 28 juni 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt-latest}
 
-* Steun voor een facultatieve [&#x200B; pre-exemplaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) stap die aan gebruik met CTT wordt toegevoegd. De pre-kopiestap kan worden gebruikt om de extractie- en insluitingsfasen van de activiteit van de inhoudsoverdracht aanzienlijk te versnellen wanneer de bron-AEM-instantie is geconfigureerd voor het gebruik van een gegevensopslag van Amazon S3 of Azure Blob Storage.
+* Steun voor een facultatieve [&#x200B; pre-exemplaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL) stap die aan gebruik met CTT wordt toegevoegd. De pre-kopiestap kan worden gebruikt om de extractie- en insluitingsfasen van de activiteit van de inhoudsoverdracht aanzienlijk te versnellen wanneer de bron-AEM-instantie is geconfigureerd voor het gebruik van een gegevensopslag van Amazon S3 of Azure Blob Storage.
 
 * Guardrail toegevoegd aan CTT om te voorkomen dat gebruikers een opname stoppen en mogelijk gegevens beschadigen zodra deze het kritieke punt tijdens de innamefase heeft bereikt.
 

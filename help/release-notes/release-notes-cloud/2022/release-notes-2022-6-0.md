@@ -21,7 +21,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 
 >[!NOTE]
 >
->Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -43,7 +43,7 @@ Bekijk de video Overzicht van de release van juni 2022 voor een overzicht van de
 
   ![&#x200B; de Console van het Fragment van de Inhoud &#x200B;](/help/release-notes/assets/cf-ui.png)
 
-* De nieuwe [&#x200B; Component van de Inhoudsopgave &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) werkt niet alleen met de Componenten van de Kern maar met alle componenten, automatisch teruggevend ToCs op inhoudspagina&#39;s. En omdat het server-kant wordt teruggegeven en volledig in het voorgeheugen ondergebracht door de verzender, is het ook efficiënt te laden.
+* De nieuwe [&#x200B; Component van de Inhoudsopgave &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=nl-NL) werkt niet alleen met de Componenten van de Kern maar met alle componenten, automatisch teruggevend ToCs op inhoudspagina&#39;s. En omdat het server-kant wordt teruggegeven en volledig in het voorgeheugen ondergebracht door de verzender, is het ook efficiënt te laden.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 

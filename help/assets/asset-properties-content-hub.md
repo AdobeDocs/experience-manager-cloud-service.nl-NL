@@ -111,7 +111,7 @@ Sommige eigenschappen voor elementen die worden weergegeven in [!DNL Content Hub
 
 * **Slimme Markeringen:** [!DNL The Content Hub] gebruikt de slimme inhoudsdiensten van Adobe AI om activa te trainen gebruikend herkenningsalgoritme op de op markeringen-gebaseerde structuur. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. Met slimme tags verhoogt u de snelheid van de inhoud van uw projecten doordat u snel relevante middelen kunt vinden. De slimme tags zijn een voorbeeld van informatie over elementen die niet in de afbeelding voorkomen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op elementen.
 
-* **de Markeringen van de Kleur:** [&#x200B; de markeringen van de Kleur &#x200B;](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helpen u activa herkennen gebruikend kleuren die automatisch in activa gebruikend Adobe AI mogelijkheden worden geïdentificeerd.
+* **de Markeringen van de Kleur:** [&#x200B; de markeringen van de Kleur &#x200B;](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=nl-NL) helpen u activa herkennen gebruikend kleuren die automatisch in activa gebruikend Adobe AI mogelijkheden worden geïdentificeerd.
 
 * Uploaddatum
 

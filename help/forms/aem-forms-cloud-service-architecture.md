@@ -15,10 +15,10 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Service is een &#39;cloud-native&#39; oplossing voor bedrijven om complexe digitale formulieren en communicatie te maken, beheren, publiceren en bijwerken terwijl ingediende gegevens worden geïntegreerd met back-endprocessen, bedrijfsregels en gegevens worden opgeslagen in een externe gegevensopslag. Het breidt [!DNL Adobe Experience Manager as a Cloud Service] uit. Meer over het schrapen, plaatsing, milieu&#39;s en andere infrastructuur leren, zie [&#x200B; Een Inleiding aan de Architectuur van  [!DNL Adobe Experience Manager as a Cloud Service] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
+[!DNL Adobe Experience Manager Forms] as a Cloud Service is een &#39;cloud-native&#39; oplossing voor bedrijven om complexe digitale formulieren en communicatie te maken, beheren, publiceren en bijwerken terwijl ingediende gegevens worden geïntegreerd met back-endprocessen, bedrijfsregels en gegevens worden opgeslagen in een externe gegevensopslag. Het breidt [!DNL Adobe Experience Manager as a Cloud Service] uit. Meer over het schrapen, plaatsing, milieu&#39;s en andere infrastructuur leren, zie [&#x200B; Een Inleiding aan de Architectuur van  [!DNL Adobe Experience Manager as a Cloud Service] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=nl-NL).
 
 AEM Forms as a Cloud Service biedt ondersteuning voor twee belangrijke gebruiksscenario&#39;s: Digital Enrollment en Customer Communications. In de volgende afbeeldingen ziet u de architectuur voor beide gebruiksgevallen.
 
@@ -48,7 +48,7 @@ Forms as a Cloud Service bestaat uit meerdere onderdelen:
 
 ### CDN (Content Delivery Network)
 
-Elk programma van AEM Forms as a Cloud Service heeft toegang tot [&#x200B; ingebouwde dienst CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). Het is opgenomen in de licentie van Forms als Cloud Services.
+Elk programma van AEM Forms as a Cloud Service heeft toegang tot [&#x200B; ingebouwde dienst CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=nl-NL). Het is opgenomen in de licentie van Forms als Cloud Services.
 
 ### Auteur
 
@@ -77,13 +77,13 @@ De omgekeerde Replicatie is niet beschikbaar op AEM as a Cloud Service om inhoud
 
 #### Dispatcher
 
-[&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) is het caching van Adobe Experience Manager en/of lading-in evenwicht brengend hulpmiddel dat met een onderneming-klasse Webserver kan worden gebruikt.
+[&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=nl-NL) is het caching van Adobe Experience Manager en/of lading-in evenwicht brengend hulpmiddel dat met een onderneming-klasse Webserver kan worden gebruikt.
 
 ### Adobe Services
 
 **Geautomatiseerde Dienst van de Omzetting van Vormen**
 
-[&#x200B; de Geautomatiseerde dienst van de Omzetting van Vormen &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) zet automatisch uw vormen PDF en XFA in apparaat-vriendelijk, ontvankelijk, en op HTML5-Gebaseerde adaptieve vormen om.
+[&#x200B; de Geautomatiseerde dienst van de Omzetting van Vormen &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=nl-NL) zet automatisch uw vormen PDF en XFA in apparaat-vriendelijk, ontvankelijk, en op HTML5-Gebaseerde adaptieve vormen om.
 
 **Teken van Adobe**
 
@@ -110,17 +110,17 @@ Documentdiensten zijn:
 
 ### Cloud Manager
 
-Cloud Manager is een essentiële component aan [&#x200B; AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). Het is het enig-ingangspunt voor de verrichtingen en ontwikkelaarspersoonlijkheid van onze klanten. Het is de plaats waar de AEM-programma&#39;s en -omgevingen kunnen worden beheerd. Cloud Manager is geëvolueerd als een zelfbedieningsportaal waar de belangrijkste componenten van AEM as a Cloud Service kunnen worden gecreeerd en worden gevormd:
+Cloud Manager is een essentiële component aan [&#x200B; AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=nl-NL). Het is het enig-ingangspunt voor de verrichtingen en ontwikkelaarspersoonlijkheid van onze klanten. Het is de plaats waar de AEM-programma&#39;s en -omgevingen kunnen worden beheerd. Cloud Manager is geëvolueerd als een zelfbedieningsportaal waar de belangrijkste componenten van AEM as a Cloud Service kunnen worden gecreeerd en worden gevormd:
 
 * Programma&#39;s maken en beheren
 * AEM-omgevingen maken en beheren binnen de programma&#39;s
 * Het creëren van en het leiden van de pijpleidingen voor het opstellen van de klantencode en configuratie aan een bepaalde milieu
 * Informatie ontvangen over belangrijke levenscyclusgebeurtenissen voor deze componenten (bijvoorbeeld productupdates)
-Voor meer informatie over Cloud Manager, zie [&#x200B; Adobe Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) begrijpen en [&#x200B; Inleiding aan Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+Voor meer informatie over Cloud Manager, zie [&#x200B; Adobe Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html?lang=nl-NL) begrijpen en [&#x200B; Inleiding aan Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=nl-NL).
 
 ### Developer Console
 
-Een Developer Console biedt verschillende details over elke Forms die wordt uitgevoerd als een Cloud Service-omgeving. Deze details zijn nuttig in het zuiveren van het milieu. Voor details, zie [&#x200B; het Zuiveren AEM as a Cloud Service met Developer Console &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
+Een Developer Console biedt verschillende details over elke Forms die wordt uitgevoerd als een Cloud Service-omgeving. Deze details zijn nuttig in het zuiveren van het milieu. Voor details, zie [&#x200B; het Zuiveren AEM as a Cloud Service met Developer Console &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=nl-NL).
 
 <!--
 
@@ -164,19 +164,19 @@ A Document of Record is a PDF version of a form. It provides an ability to keep 
 
 <!-- ## Cloud Manager{#cloud-manager}
 
-Cloud Manager is an essential component to [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en). Each new tenant of the [!DNL AEM Forms] as a Cloud Service is first provisioned for Cloud Manager access. Cloud Manager is the single-entry point for the operations and developer persona of our customers. It is the place from where the AEM programs and environments can be managed. Cloud Manager has evolved as a self-service portal where the main components of the AEM as a Cloud Service can be created and configured:
+Cloud Manager is an essential component to [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=nl-NL). Each new tenant of the [!DNL AEM Forms] as a Cloud Service is first provisioned for Cloud Manager access. Cloud Manager is the single-entry point for the operations and developer persona of our customers. It is the place from where the AEM programs and environments can be managed. Cloud Manager has evolved as a self-service portal where the main components of the AEM as a Cloud Service can be created and configured:
 
 * Creating and managing programs
 * Creating and managing the AEM environments within the programs
 * Creating and managing the pipelines for deploying the customer code and configuration to a particular environment
 * Getting notified of important lifecycle events for these components (for example, product updates)
-For more information about Cloud Manager, see [Understand Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) and [Introduction to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+For more information about Cloud Manager, see [Understand Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html?lang=nl-NL) and [Introduction to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=nl-NL).
 
 ## Users and Authentication {#users-and-authentication}
 
-AEM as a Cloud Service includes Admin Console support for AEM instances and Adobe Identity Management System (IMS) based authentication. The Admin Console allows administrators to centrally manage all Experience Cloud users. Users and Groups can be assigned to product profiles associated with AEM as a Cloud Service instances, allowing them to log in to that instance. For more information about users, authentication, and, and accessing an instance of AEM as a Cloud Service, see [IMS Support for [!DNL Adobe Experience Manager] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction).
+AEM as a Cloud Service includes Admin Console support for AEM instances and Adobe Identity Management System (IMS) based authentication. The Admin Console allows administrators to centrally manage all Experience Cloud users. Users and Groups can be assigned to product profiles associated with AEM as a Cloud Service instances, allowing them to log in to that instance. For more information about users, authentication, and, and accessing an instance of AEM as a Cloud Service, see [IMS Support for [!DNL Adobe Experience Manager] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=nl-NL#introduction).
 
-Various personas are involved in a typical [!DNL AEM Forms] project. After you log in to your [!DNL AEM Forms] as a Cloud Service instance, you can [add users in admin console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html) for personas applicable to your organization or project and [assign users to built-in groups](forms-groups-privileges-tasks.md) to provide them required privileges.
+Various personas are involved in a typical [!DNL AEM Forms] project. After you log in to your [!DNL AEM Forms] as a Cloud Service instance, you can [add users in admin console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=nl-NL) for personas applicable to your organization or project and [assign users to built-in groups](forms-groups-privileges-tasks.md) to provide them required privileges.
 
 To learn various in-built [!DNL AEM Forms] specific user groups and privileges available on [!DNL AEM Forms] as a Cloud Services instance, see [Configure, user, roles and groups](forms-groups-privileges-tasks.md). 
 
@@ -199,7 +199,7 @@ Also, one of the most common requirements for developers is quick access to the 
 * Search index definitions
 * ACLs and permissions
 * Service users and user groups
-Set up your development environment, [Configure your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html), and learn to [deploy your code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) on the environment. -->
+Set up your development environment, [Configure your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=nl-NL), and learn to [deploy your code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=nl-NL) on the environment. -->
 
 ### Adaptief ontwerpen van formulieren {#local-development}
 
@@ -207,7 +207,7 @@ Wanneer u een [!DNL AEM Forms] as a Cloud Service-omgeving instelt en configuree
 
 ## Foutopsporing {#debugging}
 
-AEM as a Cloud Service draait op zelfbediening, schaalbare cloudinfrastructuur. AEM-ontwikkelaars moeten verschillende facetten van AEM as a Cloud Service begrijpen en debuggen, van het bouwen en implementeren tot het verkrijgen van details over het uitvoeren van AEM-toepassingen. Voor gedetailleerde informatie, zie [&#x200B; het Zuiveren AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
+AEM as a Cloud Service draait op zelfbediening, schaalbare cloudinfrastructuur. AEM-ontwikkelaars moeten verschillende facetten van AEM as a Cloud Service begrijpen en debuggen, van het bouwen en implementeren tot het verkrijgen van details over het uitvoeren van AEM-toepassingen. Voor gedetailleerde informatie, zie [&#x200B; het Zuiveren AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=nl-NL).
 
 
 >[!MORELIKETHIS]

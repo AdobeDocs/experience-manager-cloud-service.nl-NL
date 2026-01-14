@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -85,7 +85,7 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* U kunt de Geautomatiseerde dienst van de Omzetting van Vormen nu gebruiken om [&#x200B; PDF forms in het Frans, Duits, en Spaans taal &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in aanpassingsvormen om te zetten.
+* U kunt de Geautomatiseerde dienst van de Omzetting van Vormen nu gebruiken om [&#x200B; PDF forms in het Frans, Duits, en Spaans taal &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=nl-NL&#language-specific-meta-model) in aanpassingsvormen om te zetten.
 * Er is een apart deelvenster toegevoegd aan de sjablooneditor om fouten weer te geven met betrekking tot adaptieve formuliercomponenten. Hiermee kunt u alle adaptieve formulierfouten op één locatie consolideren en de resolutietijd verminderen.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#beta-features-forms}
@@ -97,9 +97,9 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
 
 * **Variabele die Extern van Gegevens**: U kunt gegevens van de variabelen van het Werkschema van AEM op een extern opslagsysteem bewaren door uw organisatie wordt beheerd.
 
-* **op acroform-Gebaseerd Document van Verslag**: U kunt ook [&#x200B; Adobe Acrobat Vorm PDF (Acroform PDF) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje gebruiken.
+* **op acroform-Gebaseerd Document van Verslag**: U kunt ook [&#x200B; Adobe Acrobat Vorm PDF (Acroform PDF) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje gebruiken.
 
-* **Microsoft® Azure schakelaar van de gegevensopslag**: U kunt [&#x200B; het Model van de Gegevens van de Vorm aan Microsoft® Azure Opslag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
+* **Microsoft® Azure schakelaar van de gegevensopslag**: U kunt [&#x200B; het Model van de Gegevens van de Vorm aan Microsoft® Azure Opslag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=nl-NL) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
@@ -191,7 +191,7 @@ De releasedatum voor Cloud Acceleration Manager is 15 juli 2021.
 
 ### Nieuwe functies {#what-is-new-cam}
 
-Cloud Acceleration Manager is een cloudgebaseerde toepassing die is ontworpen om uw IT-teams te begeleiden tijdens de transitietraject, van de planning tot het live gaan op Cloud Service. Stel uw team in voor een geslaagde migratie met door Adobe aanbevolen tips, documentatie en tools voor elke fase van de reis naar AEM als Cloud Service. Leer meer [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
+Cloud Acceleration Manager is een cloudgebaseerde toepassing die is ontworpen om uw IT-teams te begeleiden tijdens de transitietraject, van de planning tot het live gaan op Cloud Service. Stel uw team in voor een geslaagde migratie met door Adobe aanbevolen tips, documentatie en tools voor elke fase van de reis naar AEM als Cloud Service. Leer meer [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=nl-NL).
 
 >[!NOTE]
 >
