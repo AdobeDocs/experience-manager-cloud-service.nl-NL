@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2021.10.0 versie van  [!DNL Adobe Experie
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -30,7 +30,7 @@ De volgende release (2021.11.0) is op 2 december 2021.
 
 ## Video vrijgeven {#release-video}
 
-Heb een blik bij de [&#128279;](https://video.tv.adobe.com/v/338253) video van het Overzicht van de Versie van 0&rbrace; Oktober 2021 &lbrace;voor een samenvatting van de toegevoegde eigenschappen.
+Heb een blik bij de [ video van het Overzicht van de Versie van 0} Oktober 2021 {voor een samenvatting van de toegevoegde eigenschappen.](https://video.tv.adobe.com/v/338253)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -42,11 +42,11 @@ Heb een blik bij de [&#128279;](https://video.tv.adobe.com/v/338253) video van h
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] biedt nu ondersteuning voor het automatisch genereren van teksttranscripties vanaf de ondersteunde audio- en video-elementen via een ingebouwde connector naar [!DNL Azure Media Services] . De [&#x200B; gesteunde dossiertypes &#x200B;](/help/assets/file-format-support.md#audio-video-transcription-formats) worden automatisch getranscripeerd en de tekst wordt opgeslagen in formaat WebVTT. De WebVTT-bijschriften worden gebruikt voor effectievere zoekacties, ondertiteling of vertaling. Bovendien verbetert de functie de toegankelijkheid, de ontdekkingsmogelijkheden en de lokalisatie van de middelen.
+* [!DNL Experience Manager] biedt nu ondersteuning voor het automatisch genereren van teksttranscripties vanaf de ondersteunde audio- en video-elementen via een ingebouwde connector naar [!DNL Azure Media Services] . De [ gesteunde dossiertypes ](/help/assets/file-format-support.md#audio-video-transcription-formats) worden automatisch getranscripeerd en de tekst wordt opgeslagen in formaat WebVTT. De WebVTT-bijschriften worden gebruikt voor effectievere zoekacties, ondertiteling of vertaling. Bovendien verbetert de functie de toegankelijkheid, de ontdekkingsmogelijkheden en de lokalisatie van de middelen.
 
 ### Nieuwe functie in het [!DNL Assets] prereleasekanaal {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Smart Crop and Swatch van afbeeldingen wordt nu aangedreven door de nieuwste Sensei-services, die verbeterde gewassen en stalen genereert. Er is ook een verbetering gestart om verschillende uitsnijdinhoud te genereren, voor dezelfde hoogte-breedteverhouding maar voor verschillende resoluties. Bovendien blijven eventuele handmatige bewerkingen behouden bij het opwerken als de breedte en hoogte in het afbeeldingsprofiel niet worden gewijzigd.
+* [!DNL Dynamic Media] Smart Crop and Swatch van afbeeldingen wordt nu aangedreven door de nieuwste AI-services, die verbeterde uitsnijdingen en stalen genereren. Er is ook een verbetering gestart om verschillende uitsnijdinhoud te genereren, voor dezelfde hoogte-breedteverhouding maar voor verschillende resoluties. Bovendien blijven eventuele handmatige bewerkingen behouden bij het opwerken als de breedte en hoogte in het afbeeldingsprofiel niet worden gewijzigd.
 
 * Slimme tags worden automatisch toegepast op de elementen met behulp van asset-microservices in plaats van Smart Content Services. Het onderliggende model wordt bijgewerkt om de coderingsresultaten te verbeteren en afwijking te verminderen. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -64,28 +64,28 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#prerelease-features-forms-oct-2021}
 
-* **externaliseer AEM gegevens van het Werkschema voor veilige verwerking**: U kunt in-proces AEM gegevens van de Werkschema&#39;s (AEM gegevens van de Variabelen van het Werkschema) opslaan die Gevoelige Persoonlijke Gegevens (SPD) elementen in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
+* **externaliseer de gegevens van het Werkschema van AEM voor veilige verwerking**: U kunt de gegevens van de Werkschema&#39;s van AEM in-proces (de gegevens van de Variabelen van het Werkschema van AEM) opslaan die Gevoelige Persoonlijke Gegevens (SPD) elementen in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in de gegevensopslagruimte van AEM en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
 
-### Beta-functies van [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### Beta-functies van [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [&#x200B; Communicatie APIs &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=nl-NL) hulp u een malplaatje en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) hulp u een malplaatje en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Genereer documenten door sjabloonbestanden (PDF en XDP) te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
 
 U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
 
-## CIF invoegtoepassing {#cloud-services-cif}
+## CIF-invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* De CIF invoegtoepassing ondersteunt de nieuwste Commerce v2.4.3 met nieuwe GraphQL API&#39;s en schema&#39;s
+* De invoegtoepassing CIF ondersteunt de nieuwste Commerce v2.4.3 met nieuwe GraphQL API&#39;s en schema&#39;s
 
-* Auteurs kunnen koppelingen naar product- en cataloguspagina&#39;s in tekstvelden toevoegen met de RTE (RTE). Er is een CIF pictogram toegevoegd aan de RTE-werkbalk waarmee de kiezers snel het product of de categorie kunnen zoeken en selecteren zonder de context te verlaten.
+* Auteurs kunnen koppelingen naar product- en cataloguspagina&#39;s in tekstvelden toevoegen met de RTE (RTE). Er is een CIF-pictogram toegevoegd aan de RTE-werkbalk waarmee de kiezers snel het product of de categorie kunnen zoeken en selecteren zonder de context te verlaten.
 
-* Bestaande pop-up winkelwagentje en kassa zijn vervangen door speciale AEM winkelwagentje en afhandelingspagina&#39;s. De componenten op deze pagina&#39;s worden samengesteld met behulp van uitbreidbare Peregrine-onderdelen van Adobe Commerce
+* Bestaande pop-up winkelwagentje en afhandeling zijn vervangen door speciale AEM-winkelwagentje en afhandelingspagina&#39;s. De componenten op deze pagina&#39;s worden samengesteld met behulp van uitbreidbare Peregrine-onderdelen van Adobe Commerce
 
-* Met de Commerce-backend kunnen verkopers bepaalde productcataloguscategorieën in de navigatie verbergen. De CIF component van de Kern van de Navigatie eerbiedigt de handel achterste configuratie &quot;omvat in menu&quot;om categorieën in navigatie te tonen/te verbergen
+* Met de Commerce-backend kunnen verkopers bepaalde productcataloguscategorieën in de navigatie verbergen. De CIF Navigation Core Component respecteert de Commentaar configuratie &quot;omvat in menu&quot;om categorieën in navigatie te tonen/te verbergen
 
 * AEM Storefront Venia retourneert de HTTP 404-fout als de categorie of productpagina niet wordt gevonden
 
@@ -100,12 +100,12 @@ De volgende release is gepland voor 9 december 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-nov}
 
-* De gebruikers kunnen nieuwe pijpleidingen van het Eind van de Voorzijde nu gebruiken om vooreind code op een versnelde manier uitsluitend op te stellen. Zie [&#x200B; Cloud Manager Voorste Pijpleidingen van het Eind &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) om meer te leren.
+* De gebruikers kunnen nieuwe pijpleidingen van het Eind van de Voorzijde nu gebruiken om vooreind code op een versnelde manier uitsluitend op te stellen. Zie [ Cloud Manager Voorste Pijpleidingen van het Eind ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) om meer te leren.
 
   >[!IMPORTANT]
-  >U moet AEM versie `2021.10.5933.20211012T154732Z` zijn om nieuwe Front End pijpleidingen te gebruiken.
+  >U moet op AEM versie `2021.10.5933.20211012T154732Z` zijn om nieuwe Front End pijpleidingen te gebruiken.
 
-* De duur van de pijpleiding van de Kwaliteit van de code wordt beduidend verminderd door de codeanalyse op een efficiëntere manier uit te voeren zonder de behoefte om een volledig AEM beeld te bouwen. Deze verandering zal geleidelijk plaatsvinden in de weken na de release.
+* De duur van de pijpleiding van de Kwaliteit van de code wordt beduidend verminderd door de codeanalyse op een efficiëntere manier uit te voeren zonder de behoefte om een volledig beeld van AEM te bouwen. Deze verandering zal geleidelijk plaatsvinden in de weken na de release.
 
 * De Vastleggingsidentiteitskaart van het Git zal nu in de details van de pijpleidingsuitvoering worden getoond die het gemakkelijker maken om de code te volgen die werd gebouwd.
 
@@ -113,7 +113,7 @@ De volgende release is gepland voor 9 december 2021.
 
 * Environment Creation is nu beschikbaar via openbare API.
 
-* De `x-request-id` antwoordkopbal is nu zichtbaar in API Playground op [&#x200B; www.adobe.io &#x200B;](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
+* De `x-request-id` antwoordkopbal is nu zichtbaar in API Playground op [ www.adobe.io ](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
 
 * Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij van de juiste begeleiding voorziet.
 
@@ -146,7 +146,7 @@ De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 okt
 
 ### Wat is er nieuw? {#what-is-new-cm-oct}
 
-* In voorbereiding op sommige aanstaande veranderingen, zullen de bestaande plaatsingspijpleidingen nu van verwijzingen worden voorzien en geëtiketteerd in het gebruikersinterface als **Volledige 1&rbrace; pijpleidingen van de Stapel &lbrace;.**
+* In voorbereiding op sommige aanstaande veranderingen, zullen de bestaande plaatsingspijpleidingen nu van verwijzingen worden voorzien en geëtiketteerd in het gebruikersinterface als **Volledige 1} pijpleidingen van de Stapel {.**
 
 * De kaart van de pijpleiding is verfrist om één enkel, geïntegreerd gezicht te tonen dat zowel productie als niet productiepijpleidingen toont, en de gebruiker kan Looppas/pauze direct selecteren/hervat van het actiemenu verbonden aan elke pijpleiding.
 
@@ -156,23 +156,23 @@ De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 okt
 
 * De gebruikers van Cloud Manager kunnen nu voorleggen terugkoppelt direct van het gebruikersinterface via de **Terugkoppeling** knoop op bovenkant recht van de het landen pagina.
 
-* De jaarlijkse SLA Grafieken kunnen nu van de Cloud Manager gebruikersinterface worden gedownload.
+* SLA Graphs kunnen nu worden gedownload vanuit de Cloud Manager-gebruikersinterface.
 
 * De kwaliteit van de code en de niet-productiepijpleiding zullen nu een efficiënter oppervlakkig klonen proces tijdens de bouwstijlstap gebruiken, die tot een snellere bouwtijd voor klanten met bijzonder grote git bewaarplaatsen leidt.
 
 * Voeg IP de tovenaar van de Lijst van gewenste personen nu toe zal de gebruiker informeren als maximum toegestaan aantal IP Lijsten van gewenste personen is bereikt.
 
-* De Cloud Manager API-documentatie bevat nu een interactieve afspeelruimte waarmee aangemelde gebruikers vanuit hun browser kunnen experimenteren met de API. Zie [&#x200B; de Playground van Cloud Manager API &#x200B;](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) voor meer details.
+* De Cloud Manager API-documentatie bevat nu een interactieve afspeelruimte waarmee aangemelde gebruikers vanuit hun browser kunnen experimenteren met de API. Zie [ de Playground van Cloud Manager API ](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) voor meer details.
 
 * De knopinfo op de programmakaart is beschrijfbaarder als een selectieoptie onder &#39;Navigeren naar&#39; is uitgeschakeld. Het toont nu &quot;een productiemilieu bestaat niet.&quot;
 
 ### Opgeloste problemen {#bug-fixes-cm-oct}
 
-* In zeldzame situaties, wanneer een personeel van de Adobe het milieu van een klant zou herstellen, werd het herstel als volledig beschouwd alvorens het milieu volledig operationeel was.
+* In zeldzame situaties, wanneer een personeel van Adobe de omgeving van een klant zou herstellen, werd het herstel als volledig beschouwd alvorens het milieu volledig operationeel was.
 
 * Bepaalde interne verzoeken die tijdens het creëren van het milieu werden gedaan, werden niet opnieuw beproefd.
 
-* Als de plaatsing mislukte fout na de controle van de domeinnaam voorkomt, is het foutenbericht verbeterd om de klant te verzoeken om hun Adobe te contacteren vertegenwoordiger.
+* Als de implementatie is mislukt na de verificatie van de domeinnaam, is het foutbericht gecorrigeerd en is de klant gevraagd contact op te nemen met zijn Adobe-vertegenwoordiger.
 
 ## Analysator van best practices {#best-practices-analyzer}
 

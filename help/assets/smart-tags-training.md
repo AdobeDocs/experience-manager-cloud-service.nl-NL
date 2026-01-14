@@ -1,19 +1,19 @@
 ---
-title: Auto-markering activa met  [!DNL Adobe Sensei]  slimme dienst
-description: Elementen labelen met een kunstmatig intelligente service die contextuele en beschrijvende bedrijfstags toepast.
+title: Auto-markering activa met  [!DNL Adobe AI]  slimme dienst
+description: Voorzie assets van tags met een AI-service die contextuele en beschrijvende bedrijfstags toepast.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: a579e2e25ecff93f6f1487ec0bcd317df09751cf
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1465'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 
 # Training voor slimme tags
 
-Met training voor slimme tags kunt u tags trainen, zodat u de gegevens kunt opgeven als de relevante tags niet aanwezig zijn. Het gebruikt een kunstmatig intelligent kader van [&#x200B; Adobe Sensei &#x200B;](https://business.adobe.com/nl/why-adobe/experience-cloud-artificial-intelligence.html) om zijn algoritme van de beelderkenning op uw markeringsstructuur en bedrijfstaxonomie te trainen. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op geüploade elementen.
+Met training voor slimme tags kunt u tags trainen, zodat u de gegevens kunt opgeven als de relevante tags niet aanwezig zijn. Het gebruikt een kunstmatig intelligent kader van [ Adobe AI ](https://business.adobe.com/ai/adobe-genai.html) om zijn algoritme van de beelderkenning op uw markeringsstructuur en bedrijfstaxonomie te trainen. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op geüploade elementen.
 
 ## Bepalen van de vereiste van training voor slimme tags {#smart-tag-training-requirement}
 
@@ -42,7 +42,7 @@ Slimme tags training is vereist in de volgende scenario&#39;s:
 
 Een labelmodel is een groep gerelateerde tags die zijn gekoppeld aan verschillende visuele aspecten van afbeeldingen die worden gecodeerd. Tags hebben betrekking op de duidelijk verschillende visuele aspecten van afbeeldingen, zodat de tags, wanneer deze worden toegepast, helpen bij het zoeken naar specifieke typen afbeeldingen. Een schoenenverzameling kan bijvoorbeeld verschillende tags hebben, maar alle tags zijn gerelateerd aan schoenen en kunnen tot hetzelfde tagmodel behoren. Wanneer de labels worden toegepast, kunt u verschillende soorten schoenen vinden, bijvoorbeeld op basis van ontwerp of gebruik.
 
-Voordat u een tagmodel maakt en de service traint, moet u een set unieke tags identificeren die de objecten in de afbeeldingen het beste beschrijven in de context van uw bedrijf. Zorg ervoor dat de activa in uw gekrulde reeks aan [&#x200B; de opleidingsrichtlijnen &#x200B;](#training-guidelines) bevestigen.
+Voordat u een tagmodel maakt en de service traint, moet u een set unieke tags identificeren die de objecten in de afbeeldingen het beste beschrijven in de context van uw bedrijf. Zorg ervoor dat de activa in uw gekrulde reeks aan [ de opleidingsrichtlijnen ](#training-guidelines) bevestigen.
 
 ### Richtlijnen voor training {#training-guidelines}
 
@@ -118,14 +118,14 @@ Zorg ervoor dat de afbeeldingen in de trainingsset voldoen aan de volgende richt
 >[!NOTE]
 >
 >U kunt dezelfde afbeeldingen gebruiken om verschillende tagmodellen te trainen. Koppel een afbeelding echter niet aan meerdere tags in een labelmodel. U kunt dezelfde afbeelding labelen met verschillende tags die bij verschillende labelmodellen horen.
->&#x200B;>U kunt de training niet ongedaan maken. Aan de hand van de bovenstaande richtlijnen kunt u goede afbeeldingen kiezen om te trainen.
+>U kunt de training niet ongedaan maken. Aan de hand van de bovenstaande richtlijnen kunt u goede afbeeldingen kiezen om te trainen.
 
 ## Het model trainen voor uw douanetags {#train-model}
 
 Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te maken en op te leiden:
 
 1. Maak de benodigde labels en de juiste codestructuur. Upload de relevante afbeeldingen in de DAM-opslagplaats.
-1. Open **[!UICONTROL Assets]** > **[!UICONTROL Smart Tag Training]** in de [!DNL Experience Manager Cloud Service] -gebruikersinterface.
+1. Open [!DNL Experience Manager Cloud Service] > **[!UICONTROL Assets]** in de **[!UICONTROL Smart Tag Training]** -gebruikersinterface.
 1. Klik op **[!UICONTROL Create]**. Geef een waarde op **[!UICONTROL Title]** , **[!UICONTROL Description]** .
 1. Klik op het mappictogram in het veld **[!UICONTROL Tags]** . Er wordt een pop-upvenster geopend.
 1. Zoek of selecteer de juiste tags van de bestaande tags in `cq-tags` die u aan het model wilt toevoegen. Klik op **[!UICONTROL Next]**.
@@ -137,12 +137,12 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
 
 1. Klik in het dialoogvenster **[!UICONTROL Select Assets]** op **[!UICONTROL Add Assets]** voor elke tag. Zoek in de DAM-opslagplaats of blader door de opslagplaats om ten minste 10 en ten hoogste 50 afbeeldingen te selecteren. Selecteer elementen en niet de map. Als u de afbeeldingen hebt geselecteerd, klikt u op **[!UICONTROL Select]** .
 
-   ![&#x200B; de opleidingsstatus van de Mening &#x200B;](assets/smart-tags-training-status.png)
+   ![ de opleidingsstatus van de Mening ](assets/smart-tags-training-status.png)
 
 1. Als u een voorvertoning van de miniaturen van de geselecteerde afbeeldingen wilt weergeven, klikt u op de accordeon vóór een tag. U kunt de selectie wijzigen door op **[!UICONTROL Add Assets]** te klikken. Klik op **[!UICONTROL Submit]** als u tevreden bent met de selectie. In de gebruikersinterface wordt onder aan de pagina een melding weergegeven dat de training wordt gestart.
 1. Controleer de status van de training in de kolom **[!UICONTROL Status]** voor elk tagmodel. Mogelijke statussen zijn [!UICONTROL Pending] , [!UICONTROL Trained] en [!UICONTROL Failed] .
 
-![&#x200B; Werkschema om het etiketteren model voor Slimme Markeringen te trainen &#x200B;](assets/smart-tag-model-training-flow.png)
+![ Werkschema om het etiketteren model voor Slimme Markeringen te trainen ](assets/smart-tag-model-training-flow.png)
 
 *Cijfer: Stappen van het opleidingswerkschema om het etiketteren model te trainen.*
 
@@ -151,7 +151,7 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
 Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de trainingsset met elementen, raadpleegt u het workflowrapport voor training in de rapportconsole.
 
 1. Ga in de [!DNL Experience Manager Cloud Service] -interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]** .
-1. Klik op **[!UICONTROL Create]** op de pagina **[!UICONTROL Asset Reports]** .
+1. Klik op **[!UICONTROL Asset Reports]** op de pagina **[!UICONTROL Create]** .
 1. Selecteer het rapport **[!UICONTROL Smart Tags Training]** en klik vervolgens op **[!UICONTROL Next]** op de werkbalk.
 1. Geef een titel en beschrijving voor het rapport op. Laat onder **[!UICONTROL Schedule Report]** de optie **[!UICONTROL Now]** ingeschakeld. Als u het rapport voor later wilt plannen, selecteert u **[!UICONTROL Later]** en geeft u een datum en tijd op. Klik vervolgens op **[!UICONTROL Create]** op de werkbalk.
 1. Selecteer op de pagina **[!UICONTROL Asset Reports]** het rapport dat u hebt gegenereerd. Klik op **[!UICONTROL View]** op de werkbalk om het rapport weer te geven.
@@ -161,15 +161,15 @@ Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de 
 >[!NOTE]
 >
 >Wat gebeurt er als ik de training Slimme tags van de ene instantie naar de andere wil overbrengen via een exportbewerking?
->&#x200B;>U hoeft de training Slimme tags niet te exporteren als de omgeving tot dezelfde IMS org behoort. Deze wordt automatisch gedeeld. Als de omgeving zich in verschillende IMS-organisaties bevindt, is het niet mogelijk om training voor slimme tags te delen of te exporteren.
+>U hoeft de training Slimme tags niet te exporteren als de omgeving tot dezelfde IMS org behoort. Deze wordt automatisch gedeeld. Als de omgeving zich in verschillende IMS-organisaties bevindt, is het niet mogelijk om training voor slimme tags te delen of te exporteren.
 
 ## Beperkingen en aanbevolen procedures met betrekking tot slimme tags {#limitations-smart-tags-training}
 
 * Gebruik de meest geschikte afbeeldingen om het model op te leiden. De training kan niet worden teruggezet of het trainingsmodel kan niet worden verwijderd. De nauwkeurigheid van de tags is afhankelijk van de huidige training, dus doe dit zorgvuldig.
-* U kunt de service die slimme tags toepast op video&#39;s niet trainen met behulp van specifieke video&#39;s. Dit werkt met de standaardinstellingen van [!DNL Adobe Sensei] .
+* U kunt de service die slimme tags toepast op video&#39;s niet trainen met behulp van specifieke video&#39;s. Dit werkt met de standaardinstellingen van [!DNL Adobe AI] .
 
 
 >[!NOTE]
 >
 >Of u met slimme tags op uw tags kunt trainen en deze kunt toepassen op andere afbeeldingen, is afhankelijk van de kwaliteit van de afbeeldingen die u gebruikt voor training.
->&#x200B;>Voor de beste resultaten raadt Adobe aan visueel vergelijkbare afbeeldingen te gebruiken om de service voor elke tag op te leiden.
+>Voor de beste resultaten raadt Adobe aan visueel vergelijkbare afbeeldingen te gebruiken om de service voor elke tag op te leiden.

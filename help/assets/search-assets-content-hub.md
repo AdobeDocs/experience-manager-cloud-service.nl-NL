@@ -3,7 +3,7 @@ title: Middelen zoeken in Content Hub
 description: Leer hoe te om activa in  [!DNL Content Hub] te zoeken
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Als u een groot aantal middelen in uw opslagplaats hebt, is het tijdrovend om na
 
 ## Vereisten {#prerequisites}
 
-[&#x200B; de gebruikers van Content Hub &#x200B;](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
+[ de gebruikers van Content Hub ](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
 
 ## Wat u kunt zoeken  {#what-you-can-search}
 
@@ -26,7 +26,7 @@ De zoekopdracht [!DNL Content Hub] biedt resultaten op basis van:
 
 * **het Aanpassen context:** [!DNL Content Hub] de lijst van onderzoeksresultaten bevat geschatte resultaten van activa die u op de passende context wordt gebaseerd. Als u bijvoorbeeld `cool` typt in de zoekbalk, worden de elementen die verwant zijn aan `winter` , `snow` en `cold surroundings` weergegeven in de zoeklijst.
 
-* **informatie van Activa (titel, markeringen, of slimme markeringen):** [!DNL Content Hub] gebruikt slim onderzoeksalgoritme om onderzoeksresultaten nauwkeurig en als relevant te rangschikken als mogelijk. [&#x200B; Meta-gegevens &#x200B;](#asset-properties.md) is de inzameling van alle gegevens beschikbaar voor activa, maar het kan niet noodzakelijk in dat activa worden bevat. [&#x200B; het helpt u verder categoriseren activa en is nuttig aangezien de hoeveelheid digitale informatie &#x200B;](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub) groeit.
+* **informatie van Activa (titel, markeringen, of slimme markeringen):** [!DNL Content Hub] gebruikt slim onderzoeksalgoritme om onderzoeksresultaten nauwkeurig en als relevant te rangschikken als mogelijk. [ Meta-gegevens ](#asset-properties.md) is de inzameling van alle gegevens beschikbaar voor activa, maar het kan niet noodzakelijk in dat activa worden bevat. [ het helpt u verder categoriseren activa en is nuttig aangezien de hoeveelheid digitale informatie ](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub) groeit.
 
 * **Laatste gewijzigde datum:** De activa die onlangs werden gewijzigd verschijnen op de bovenkant van de lijst van onderzoeksresultaten. U kunt het datumbereik naar wens filteren.
 
@@ -48,13 +48,13 @@ Zoek bijvoorbeeld naar alle **[!UICONTROL JPEG]** -afbeeldingen met trefwoord `a
 
 1. Navigeer naar **[!UICONTROL Modified]** > geef het datumbereik op.
 
-   ![&#x200B; Basis onderzoek &#x200B;](assets/basic-search.png)
+   ![ Basis onderzoek ](assets/basic-search.png)
 
 ## De zoekresultaten verfijnen met filters {#narrow-down-search-results}
 
 Gebruik het deelvenster Filters om te zoeken naar elementen op basis van metagegevens. U kunt zoekresultaten filteren op basis van verschillende zoekvoorspelling. U kunt alle geschikte voorspelling selecteren om uw zoekresultaten te minimaliseren of te verkleinen. U kunt meer dan 10 voorspelden kiezen terwijl het filtreren van uw onderzoeksresultaten. Wanneer u meerdere opties in een filter selecteert, geeft Content Hub de elementen weer die overeenkomen met een van de opties die in een filter zijn geselecteerd. Wanneer u echter meerdere opties voor meerdere filters selecteert, geeft Content Hub alleen de elementen weer die overeenkomen met alle opties die voor de verschillende filters zijn geselecteerd om de zoekresultaten te beperken.
 
-De standaardfilters bevatten bestandsindeling, goedgekeurd op, datum van goedkeuring, verlopen en niet verlopen elementen en vervaldatum. Beheerders kunnen ook de filters configureren die in de lijst met filters worden weergegeven. Voor meer informatie, zie [&#x200B; Content Hub gebruikersinterface &#x200B;](configure-content-hub-ui-options.md#configure-filters-content-hub) vormen.
+De standaardfilters bevatten bestandsindeling, goedgekeurd op, datum van goedkeuring, verlopen en niet verlopen elementen en vervaldatum. Beheerders kunnen ook de filters configureren die in de lijst met filters worden weergegeven. Voor meer informatie, zie [ Content Hub gebruikersinterface ](configure-content-hub-ui-options.md#configure-filters-content-hub) vormen.
 
 <!--
 
@@ -140,7 +140,7 @@ De standaardfilters bevatten bestandsindeling, goedgekeurd op, datum van goedkeu
      </tr>
      <tr>
       <td> Colors </td>
-      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's Sensei AI capabilities.</td>
+      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's AI capabilities.</td>
       <td>NA</td>
      </tr>  
     </tbody>
@@ -152,20 +152,20 @@ De standaardfilters bevatten bestandsindeling, goedgekeurd op, datum van goedkeu
 
 Met Bulk zoeken op elementen kunt u meerdere elementen tegelijk opzoeken door een lijst met id&#39;s (zoals namen, bestandsindelingen, kleuren, tags en meer) in te voeren. In plaats van elementen één voor één te zoeken, maakt [!DNL Content Hub] Bulk Search het sneller om de middelen te ontdekken u wenst. Met dit vermogen, kunt u veelvoudige waarden voor om het even welk filterbezit-door een scheidingsteken (bijvoorbeeld, veelvoudige SKU IDs)-en onmiddellijk terugwinnen alle passende activa met één enkel onderzoek.
 
-Als u naar meerdere elementen tegelijk wilt zoeken, voert u meerdere waarden in één query in door deze te scheiden met scheidingstekens ` [ , | \t | \r | \n | \r\n ]` . U kunt ook meer scheidingstekens toevoegen, afhankelijk van uw gebruiksscenario. Zie [&#x200B; BulkOnderzoek &#x200B;](configure-content-hub-ui-options.md#bulk-search-configuration) vormen.
+Als u naar meerdere elementen tegelijk wilt zoeken, voert u meerdere waarden in één query in door deze te scheiden met scheidingstekens ` [ , | \t | \r | \n | \r\n ]` . U kunt ook meer scheidingstekens toevoegen, afhankelijk van uw gebruiksscenario. Zie [ BulkOnderzoek ](configure-content-hub-ui-options.md#bulk-search-configuration) vormen.
 
 Voer de volgende stappen uit om Bulk zoeken uit te voeren in de [!DNL Content Hub] :
 
-1. Zodra het BulkOnderzoek [&#x200B; wordt gevormd &#x200B;](configure-content-hub-ui-options.md#bulk-search-configuration), kunt u de knevel van het Onderzoek van het Bulk op de [!DNL Content Hub] filtereigenschappen zien die u vormde. U kunt deze naar wens in- of uitschakelen.
+1. Zodra het BulkOnderzoek [ wordt gevormd ](configure-content-hub-ui-options.md#bulk-search-configuration), kunt u de knevel van het Onderzoek van het Bulk op de [!DNL Content Hub] filtereigenschappen zien die u vormde. U kunt deze naar wens in- of uitschakelen.
 
 1. Voeg een onderzoeksvraag toe die afbakeningen bevat die in de configuratie worden gespecificeerd. De zoekquery moet een tekenreeks bevatten die vergezeld gaat van meerdere door komma&#39;s gescheiden waarden.
 
-![&#x200B; BulkOnderzoek UI &#x200B;](assets/bulk-search-ui.png)
+![ BulkOnderzoek UI ](assets/bulk-search-ui.png)
 
 ## Doe meer met zoeken {#do-more-with-search}
 
-[!DNL The Content Hub] is niet beperkt tot onderzoek, in plaats daarvan staat het u toe om extra acties uit te voeren, zoals [&#x200B; download &#x200B;](download-assets-content-hub.md), [&#x200B; aandeel &#x200B;](share-assets-content-hub.md), en [&#x200B; voegt activa aan inzameling &#x200B;](collections-content-hub.md), recht van het onderzoek of voorproefinterface toe. Selecteer de elementen op de pagina met zoekresultaten om deze opties weer te geven.
+[!DNL The Content Hub] is niet beperkt tot onderzoek, in plaats daarvan staat het u toe om extra acties uit te voeren, zoals [ download ](download-assets-content-hub.md), [ aandeel ](share-assets-content-hub.md), en [ voegt activa aan inzameling ](collections-content-hub.md), recht van het onderzoek of voorproefinterface toe. Selecteer de elementen op de pagina met zoekresultaten om deze opties weer te geven.
 
-Leer meer over [&#x200B; het vormen activa in  [!DNL Content Hub]](configure-content-hub-ui-options.md).
+Leer meer over [ het vormen activa in  [!DNL Content Hub]](configure-content-hub-ui-options.md).
 
 

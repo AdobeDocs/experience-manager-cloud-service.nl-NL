@@ -4,9 +4,9 @@ description: Inleiding tot de architectuur van Adobe Experience Manager as a Clo
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2710'
 ht-degree: 8%
 
 ---
@@ -29,7 +29,7 @@ AEM as a Cloud Service bestaat uit oplossingen op hoog niveau, zoals AEM Sites, 
 
 ### Programma&#39;s {#programs}
 
-De toepassingen van AEM worden materialized in de vorm van a [&#x200B; Programma &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) dat u in de toepassing van Cloud Manager, volgens uw vergunningsrechten creeert. Deze programma&#39;s geven u volledige controle over hoe de bijbehorende toepassing van AEM wordt genoemd, gevormd en hoe de toestemmingen, in de context van een bepaald project worden toegewezen.
+De toepassingen van AEM worden materialized in de vorm van a [ Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) dat u in de toepassing van Cloud Manager, volgens uw vergunningsrechten creeert. Deze programma&#39;s geven u volledige controle over hoe de bijbehorende toepassing van AEM wordt genoemd, gevormd en hoe de toestemmingen, in de context van een bepaald project worden toegewezen.
 
 Als klant, wordt u gewoonlijk geïdentificeerd door Adobe als a **huurder**, ook gekend als een *organisatie IMS* (het Systeem van Identity Management). Een huurder kan zo vele programma&#39;s hebben zoals nodig, en vergunning hebben. Het is bijvoorbeeld gebruikelijk om een centraal programma voor AEM Assets te zien, terwijl AEM Sites kan worden gebruikt in meerdere programma&#39;s die aansluiten op meerdere online ervaringen.
 
@@ -39,13 +39,13 @@ Als klant, wordt u gewoonlijk geïdentificeerd door Adobe als a **huurder**, ook
 
 Een programma kan met om het even welke combinatie oplossingen op hoog niveau worden gevormd, en elke oplossing kan van één aan vele toe:voegen-ons steunen. Bijvoorbeeld Commerce of Screens voor AEM Sites, Dynamic Media of Brand Portal voor AEM Assets.
 
-![&#x200B; AEM as a Cloud Service - Programma&#39;s &#x200B;](assets/architecture-aem-edge-programs.png " AEM as a Cloud Service - de Architectuur van de Plaatsing ")
+![ AEM as a Cloud Service - Programma&#39;s ](assets/architecture-aem-edge-programs.png " AEM as a Cloud Service - de Architectuur van de Plaatsing ")
 
 ### Omgevingen {#environments}
 
 Zodra een programma met de oplossingen van AEM Sites, AEM Assets of AEM Forms wordt gecreeerd, zullen de bijbehorende instanties van AEM in de vorm van AEM milieu&#39;s in dit programma worden vertegenwoordigd.
 
-Er zijn vier soorten [&#x200B; milieu &#x200B;](/help/implementing/cloud-manager/manage-environments.md) beschikbaar met AEM as a Cloud Service:
+Er zijn vier soorten [ milieu ](/help/implementing/cloud-manager/manage-environments.md) beschikbaar met AEM as a Cloud Service:
 
 * Productieomgeving:
 
@@ -68,7 +68,7 @@ Er zijn vier soorten [&#x200B; milieu &#x200B;](/help/implementing/cloud-manager
 
 ### Edge Delivery Services {#logical-architecture-edge-delivery-services}
 
-Een programma van AEM kan ook met [&#x200B; Edge Delivery Services &#x200B;](/help/edge/overview.md) worden gevormd.
+Een programma van AEM kan ook met [ Edge Delivery Services ](/help/edge/overview.md) worden gevormd.
 
 Zodra gevormd, kan AEM GitHub codebewaarplaatsen van verwijzingen voorzien die voor de bouw van de ervaringen met Edge Delivery Services worden gebruikt. Dientengevolge, worden de nieuwe configuratieopties beschikbaar voor de bijbehorende ervaringen. Dit zijn onder andere het instellen van de door Adobe beheerde CDN en het benaderen van licentiemetriek of SLA-rapporten.
 
@@ -76,7 +76,7 @@ Zodra gevormd, kan AEM GitHub codebewaarplaatsen van verwijzingen voorzien die v
 
 De lijst met services op hoog niveau die in AEM as a Cloud Service kunnen worden samengesteld, kan in twee segmenten worden weergegeven: Inhoudsbeheer en Ervaring Aflevering:
 
-![&#x200B; AEM as a Cloud Service Overzicht - met het Overzicht van Edge Delivery Services &#x200B;](assets/architecture-aem-edge.png " AEM as a Cloud Service - met Edge Delivery Services ")
+![ AEM as a Cloud Service Overzicht - met het Overzicht van Edge Delivery Services ](assets/architecture-aem-edge.png " AEM as a Cloud Service - met Edge Delivery Services ")
 
 Voor inhoudsbeheer, zijn er twee belangrijkste reeksen diensten voor het ontwerpen van inhoud, allebei die als *inhoudsbronnen* worden vertegenwoordigd:
 
@@ -141,7 +141,7 @@ Er zijn andere aangrenzende services:
 * De operationele telemetrieservice:
    * Is verantwoordelijk voor het verzamelen van zeer belangrijke metriek van een klantenervaring (zoals paginameningen, kernWeb vitals, omzettingsgebeurtenissen), en het antwoorden aan bijbehorende vragen (bijvoorbeeld, hoogste paginameningen voor een bepaald domein in de laatste 7 dagen).
 * De Assets Compute-service:
-   * is verantwoordelijk voor het verwerken van geüploade afbeeldingen, video&#39;s en documenten, bijvoorbeeld PDF- en Adobe Photoshop-bestanden. Bij verwerking kunt u Adobe Sensei gebruiken om metagegevens van afbeeldingen en video te extraheren (zoals beschrijvende tags of primaire kleurtonen) en vervolgens uitvoeringen genereren (zoals verschillende formaten of formaten), met toegang tot API&#39;s zoals de Adobe Photoshop- en Adobe Lightroom-API&#39;s.
+   * is verantwoordelijk voor het verwerken van geüploade afbeeldingen, video&#39;s en documenten, bijvoorbeeld PDF- en Adobe Photoshop-bestanden. Bij verwerking kunt u Adobe AI gebruiken om metagegevens van afbeeldingen en video te extraheren (zoals beschrijvende tags of primaire kleurtonen) en vervolgens uitvoeringen genereren (zoals verschillende formaten of formaten), met toegang tot API&#39;s zoals de Adobe Photoshop- en Adobe Lightroom-API&#39;s.
 * De Identity Management Service (IMS):
    * Is de centrale plaats verantwoordelijk voor het leiden en voor authentiek verklaren van gebruikers en gebruikersgroepen voor een bepaalde toepassing van Adobe Experience Cloud (bijvoorbeeld, de Cloud Manager of de auteursrij van AEM).
    * Wordt benaderd via de Adobe Admin Console.
@@ -166,7 +166,7 @@ De conversie naar semantische HTML vindt plaats op basis van de gepubliceerde in
 
 In het volgende diagram ziet u hoe u Sites-inhoud in Microsoft Word (Document-based Authoring) kunt bewerken en naar Edge Delivery kunt publiceren. Ook wordt met de verschillende editors de traditionele AEM-publicatiemethode weergegeven.
 
-![&#x200B; AEM Sites as a Cloud Service - met Edge Delivery Services &#x200B;](assets/architecture-aem-edge-author-publish.png " AEM Sites as a Cloud Service - met Edge Delivery Services ")
+![ AEM Sites as a Cloud Service - met Edge Delivery Services ](assets/architecture-aem-edge-author-publish.png " AEM Sites as a Cloud Service - met Edge Delivery Services ")
 
 Aangezien Edge Delivery Services deel uitmaakt van Adobe Experience Manager en als zodanig kunnen Edge Delivery, AEM Sites en AEM Assets op hetzelfde domein naast elkaar bestaan. Dit is een veelvoorkomend geval voor het gebruik van grotere websites. Een klant kan bijvoorbeeld een bepaalde pagina met veel verkeer naar Edge Delivery Services migreren, terwijl alle andere pagina&#39;s op de AEM-publicatielijst blijven staan.
 
@@ -180,7 +180,7 @@ De code en de configuratie voor de projecten van AEM wordt opgeslagen in een cod
    * Voor het opslaan van Java-code en OSGI-configuraties aan de serverzijde voor de AEM-auteur en -publicatielagen.
 * AEM front end:
    * Voor het opslaan van client-side JS-, CSS- en HTML-code voor de AEM-auteur- en -publicatielagen.
-Voor meer details op clientlibs, zie [&#x200B; Gebruikend cliënt-Kant Bibliotheken op AEM as a Cloud Service &#x200B;](/help/implementing/developing/introduction/clientlibs.md).
+Voor meer details op clientlibs, zie [ Gebruikend cliënt-Kant Bibliotheken op AEM as a Cloud Service ](/help/implementing/developing/introduction/clientlibs.md).
 * AEM-weblaag:
    * Hiermee slaat u de configuratiebestanden van de verzender op voor de AEM-publicatielijst.
 * AEM-configuratie:
@@ -239,4 +239,4 @@ De nieuwste architectuur voor AEM as a Cloud Service introduceert enkele fundame
 * Edge Delivery Services:
    * [AEM as a Cloud Service - Overzicht - met Edge Delivery Services](/help/edge/overview.md)
    * [Edge Delivery Services gebruiken](/help/edge/overview.md)
-   * [&#x200B; Onderzoek de onderliggende architectuur en belangrijke stukken van AEM as a Cloud Service met Edge Delivery Services &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=nl-NL)
+   * [ Onderzoek de onderliggende architectuur en belangrijke stukken van AEM as a Cloud Service met Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

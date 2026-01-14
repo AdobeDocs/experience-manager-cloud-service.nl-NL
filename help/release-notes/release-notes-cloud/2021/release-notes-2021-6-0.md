@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2021.6.0 versie van  [!DNL Adobe Experien
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 0%
@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [&#x200B; Recente Updates van de Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -30,14 +30,14 @@ De volgende release (2021.7.0) vindt plaats op 29 juli 2021.
 
 ## Video vrijgeven {#release-video}
 
-Heb een blik bij de [&#x200B; Juni 2021 video van het Overzicht van de Versie &#x200B;](https://video.tv.adobe.com/v/334296) voor een samenvatting van de toegevoegde eigenschappen.
+Heb een blik bij de [ Juni 2021 video van het Overzicht van de Versie ](https://video.tv.adobe.com/v/334296) voor een samenvatting van de toegevoegde eigenschappen.
 
-## XML Documentation for AEM as a cloud Service {#xml-documentation}
+## XML Documentation voor AEM als cloudservice {#xml-documentation}
 
 ### Wat is er nieuw? {#what-is-new-xml-documentation}
 
 * XML Documentation for AEM as a Cloud Service is nu GA.
-* Hierdoor kunnen bestaande AEM Cloud Service-klanten XML Documentation-addon aanschaffen voor het importeren, maken, beheren en leveren van technische inhoud op meerdere kanalen, waaronder AEM sites
+* Hierdoor kunnen bestaande klanten van AEM Cloud Service XML Documentation-addon aanschaffen voor het importeren, maken, beheren en leveren van technische inhoud op meerdere kanalen, waaronder AEM-sites
 
 ## Cloud Manager {#cloud-manager}
 
@@ -50,7 +50,7 @@ De volgende release is gepland voor 15 juli 2021.
 
 ### Wat is er nieuw? {#what-is-new-junecm}
 
-* De Voorproefdienst zal op rolbasis aan alle Programma&#39;s worden opgesteld. Klanten worden in-product op de hoogte gebracht wanneer hun Programma voor de Dienst van de Voorproef wordt toegelaten. Zie [&#x200B; Toegang hebbend tot de Dienst van de Voorproef &#x200B;](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) voor meer details.
+* De Voorproefdienst zal op rolbasis aan alle Programma&#39;s worden opgesteld. Klanten worden in-product op de hoogte gebracht wanneer hun Programma voor de Dienst van de Voorproef wordt toegelaten. Zie [ Toegang hebbend tot de Dienst van de Voorproef ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) voor meer details.
 
 * Geweven Gedeelten die tijdens de bouwstijlstap worden gedownload zullen nu in het voorgeheugen ondergebracht tussen pijpleidinguitvoeringen worden. Deze functie wordt de komende weken ingeschakeld voor klanten.
 
@@ -62,15 +62,15 @@ De volgende release is gepland voor 15 juli 2021.
 
 * De kwaliteitsregel `ImmutableMutableMixCheck` is bijgewerkt om `/oak:index` -knooppunten te classificeren als zijnde onveranderlijk.
 
-* De kwaliteitsregels `CQBP-84` en `CQBP-84--dependencies` zijn samengevoegd tot één regel. Als onderdeel van deze consolidatie, identificeert het aftasten van gebiedsdelen nauwkeuriger kwesties in derdegebiedsdelen die aan AEM runtime worden opgesteld.
+* De kwaliteitsregels `CQBP-84` en `CQBP-84--dependencies` zijn samengevoegd tot één regel. Als onderdeel van deze consolidatie, identificeert het aftasten van gebiedsdelen nauwkeuriger kwesties in derdegebiedsdelen die aan runtime van AEM worden opgesteld.
 
-* Om verwarring te voorkomen, zijn de rijen van de segmenten Publish AEM en Publish Dispatcher op de pagina Environment Details geconsolideerd.
+* Om verwarring te voorkomen zijn de segmentrijen AEM publiceren en Dispatcher publiceren op de pagina Environment Details geconsolideerd.
 
-  ![&#x200B; de milieu&#39;s van Dispatcher &#x200B;](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![ de milieu&#39;s van Dispatcher ](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* Er is een nieuwe code kwaliteitsregel toegevoegd om de structuur van `damAssetLucene` indexen te valideren. Zie {de Indexen van Oak van het Activa van 10} Douane DAM [&#128279;](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) voor meer details.
+* Er is een nieuwe code kwaliteitsregel toegevoegd om de structuur van `damAssetLucene` indexen te valideren. Zie {de Indexen van Oak van het Activa van 10} Douane DAM [ voor meer details.](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)
 
-* De pagina met omgevingsdetails geeft nu meerdere domeinnamen weer voor Publish en de voorvertoningsservices (indien van toepassing). Zie [&#x200B; Details van het Milieu &#x200B;](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) aan meer details.
+* De pagina met omgevingsdetails geeft nu meerdere domeinnamen weer voor de services Publiceren en Voorvertonen (al naargelang van toepassing). Zie [ Details van het Milieu ](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) aan meer details.
 
 ### Opgeloste problemen {#bug-fixes-junecm}
 
@@ -104,7 +104,7 @@ De volgende release is gepland voor 15 juli 2021.
 * De weergave-instellingen worden verbeterd zodat gebruikers een standaardweergave en een standaardsorteerparameter kunnen kiezen.
 * De downloadfunctionaliteit van Linkshare gebruikt asynchrone downloads die de downloadsnelheid verhogen.
 * Gebruikers kunnen de mappen zoeken en filteren op basis van voorspelden van eigenschappen.
-* [!DNL Experience Manager Assets] sluit de PDF Viewer van [!DNL Adobe Document Cloud] in voor een voorvertoning van de ondersteunde documenten. Met deze functie kunnen gebruikers PDF- en andere bestanden met meerdere pagina&#39;s voorvertonen zonder dat er sprake is van complexe verwerking. Dit verbetert de eigenschappariteit met [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] sluit de PDF Viewer van [!DNL Adobe Document Cloud] in om een voorvertoning van de ondersteunde documenten weer te geven. Met deze functie kunnen gebruikers PDF en andere bestanden met meerdere pagina&#39;s voorvertonen zonder dat er een complexe verwerking nodig is. Dit verbetert de eigenschappariteit met [!DNL Experience Manager] 6.5.
 
 ### Buizen gecorrigeerd in [!DNL Assets] {#bugs-fixed-assets}
 
@@ -116,33 +116,33 @@ De volgende release is gepland voor 15 juli 2021.
 
 ### Nieuwe functies in [!DNL Sites] {#ga-features-sites}
 
-* Publish naar voorvertoningsniveau wordt nu weergegeven als paginastatus in Sites Admin UI
-* Publish to Preview Tier bekijkt nu de URL van de voorvertoning aan het einde van de handeling en houdt de URL in pagina-eigenschappen voor latere referentie aan
+* Publiceren naar voorvertoningsniveau wordt nu weergegeven als paginastatus in de gebruikersinterface voor Sitebeheer
+* Publiceren op Voorvertoning van niveau surfact nu de URL van de voorvertoning aan het einde van de handeling en doorgaan met de URL in pagina-eigenschappen voor latere referentie
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* Toegevoegde mogelijkheid om aangepaste kolommen in AEM Inbox te filteren.
+* Aangepaste kolommen filteren in AEM Inbox toegevoegd.
 * Mogelijkheid toegevoegd om de themaeditor en stijllaag van een aangepaste formuliereditor te gebruiken voor het opmaken van de component captcha.
-* Verbeterde snelheid en nauwkeurigheid voor het automatisch detecteren van logische secties in de PDF forms van de bron en het converteren van deze secties naar overeenkomstige adaptieve formulierdeelvensters.
+* Verbeterde snelheid en nauwkeurigheid voor het automatisch detecteren van logische secties in de bron-PDF forms en het converteren van deze secties naar overeenkomstige adaptieve formulierdeelvensters.
 * Toegevoegde verplaatsingsactie om een PDF- of XDP-bestand van de ene map naar de andere te verplaatsen.
 
-### Beta-functie van [!DNL Forms] {#what-is-new-forms-prerelease}
+### Beta-functie van [!DNL Forms]  {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: Met communicatie-API&#39;s kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    * Definitieve formulierdocumenten genereren door sjabloonbestanden te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
-   * Afdruk-PDF genereren op basis van een XFA-formulier PDF en een Adobe Acrobat-formulier (AcroForm).
+   * Afdruk-PDF&#39;s genereren op basis van een XFA-formulier, PDF en Adobe Acrobat-formulier (AcroForm).
 
-* **Variabele die Extern van Gegevens**: U kunt gegevens van AEM variabelen van het Werkschema op een extern opslagsysteem bewaren door uw organisatie wordt geleid.
+* **Variabele die Extern van Gegevens**: U kunt gegevens van de variabelen van het Werkschema van AEM op een extern opslagsysteem bewaren door uw organisatie wordt beheerd.
 
 U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
 
 ### Buizen gecorrigeerd in [!DNL Forms] {#forms-bugs-fixed}
 
 * Wanneer een veld wordt gevalideerd voordat gegevens via FDM (Form Data Model) naar de service Backend worden verzonden, slagen validaties erin, maar wordt postvalidatie niet aangeroepen door de service Form Data Model.
-* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 byte ontvangen. Dit is een bekend probleem in Apple iOS. [&#x200B; FB9117687 &#x200B;](https://feedbackassistant.apple.com/feedback/9117687)
+* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 byte ontvangen. Dit is een bekend probleem in Apple iOS. [ FB9117687 ](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Experience Manager Screens] als een [!DNL Cloud Service] {#screens}
 
@@ -155,7 +155,7 @@ De Releasedatum voor AEM Screens as a Cloud Service is 24 juni 2021.
 ### Wat is er nieuw? {#what-is-new-screens-june}
 
 >[!NOTE]
->Zie {de as a Cloud Service 1} Gids van 0&rbrace; AEM Screens voor stitionele kennis die voor met succes wordt vereist het installeren, het vormen, en het runnen van as a Cloud Service verbinding van Screens uit aan gedetailleerde concepten technische documentatie.[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=nl-NL)
+>Zie {de 1} Gids van as a Cloud Service van 0} AEM Screens voor stichtingskennis die voor met succes wordt vereist het installeren, het vormen, en het runnen van Screens as a Cloud Service en verbinding uit aan gedetailleerde concepten technische documentatie.[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html)
 
 * Bulk Device Registration Management betekent dat het provisioning van enorme hoeveelheden spelerapparaten sneller en efficiënter verloopt.
 
@@ -165,14 +165,14 @@ De Releasedatum voor AEM Screens as a Cloud Service is 24 juni 2021.
 
 * De pagina met objectdetails bevat een overzicht van de meest relevante informatie voor elk object in uw project.
 
-## CIF invoegtoepassing {#cloud-services-cif}
+## CIF-invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* Nieuwe CIF product- en categoriereferentietypen voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
+* Nieuwe CIF-product- en categoriereferentiegegevenstypen voor Content Fragments (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
 * Nieuwe Commerce Content Fragment Core-component
-* Full-text zoekopdracht ondersteund in AEM achterkant
-* Commerce Core Components ondersteunt Adobe Commerce Sensei Recs gegevensverzameling
+* Full-text handelzoekopdracht ondersteund in AEM-achtergrond
+* Commerce Core Components biedt ondersteuning voor Adobe Commerce AI Recs-gegevensverzameling
 * Verbeterde SEO-vriendelijke URL&#39;s voor categoriepagina&#39;s
 * Ondersteuning voor aangepaste HTTP-headers per site/config
 
@@ -184,7 +184,7 @@ De releasedatum voor Content Transfer Tool v1.5.4 is 28 juni 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt-latest}
 
-* Steun voor een facultatieve [&#x200B; pre-exemplaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL) stap die aan gebruik met CTT wordt toegevoegd. De pre-exemplaarstap kan worden gebruikt om de extractie en inname fasen van de activiteit van de inhoudoverdracht beduidend te versnellen wanneer de bron AEM instantie wordt gevormd om een gegevensbestand van de Opslag van Amazon S3 of van Azure Blob te gebruiken.
+* Steun voor een facultatieve [ pre-exemplaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) stap die aan gebruik met CTT wordt toegevoegd. De pre-kopiestap kan worden gebruikt om de extractie- en insluitingsfasen van de activiteit van de inhoudsoverdracht aanzienlijk te versnellen wanneer de bron-AEM-instantie is geconfigureerd voor het gebruik van een gegevensopslag van Amazon S3 of Azure Blob Storage.
 
 * Guardrail toegevoegd aan CTT om te voorkomen dat gebruikers een opname stoppen en mogelijk gegevens beschadigen zodra deze het kritieke punt tijdens de innamefase heeft bereikt.
 
@@ -194,7 +194,7 @@ De releasedatum voor Content Transfer Tool v1.5.4 is 28 juni 2021.
 
 ### Opgeloste problemen {#bug-fixes-ctt-latest}
 
-* Terwijl een opname op de instantie Auteur wordt gestopt, overschrijft de interface een eerder voltooide opname op de instantie Publish naar `STOPPED` van `FINISHED` . Dit is opgelost.
+* Terwijl een opname op de instantie Auteur stopt, overschrijft de interface een eerder voltooide opname op de instantie Publish naar `STOPPED` van `FINISHED` . Dit is opgelost.
 
 ## Analysator van best practices {#best-practices-analyzer}
 
