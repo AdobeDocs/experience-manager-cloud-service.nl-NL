@@ -47,11 +47,11 @@ API-bewerkingen van één gebruiker ondersteunen twee verificatietypen:
 
 * **op token-gebaseerde authentificatie:** Op token-gebaseerde authentificatie gebruikt een toegangstoken (het teken van de authentificatie van de Drager) om verzoeken aan Experience Manager as a Cloud Service te doen. AEM Forms as a Cloud Service biedt API&#39;s om het toegangstoken veilig op te halen. Om het teken terug te winnen en te gebruiken om een verzoek voor authentiek te verklaren:
 
-   1. [ wint de credentie van Experience Manager as a Cloud Service van Developer Console ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) terug.
-   1. [ installeer de credentie van Experience Manager as a Cloud Service op uw milieu ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (De Server van de Toepassing, de Server van het Web, of andere servers niet-AEM) die worden gevormd om verzoeken naar (maken vraag) de wolkendienst te verzenden.
-   1. [ produceer een teken JWT en ruilde het met Adobe IMS APIs voor een toegangstoken ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [&#x200B; wint de credentie van Experience Manager as a Cloud Service van Developer Console &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) terug.
+   1. [&#x200B; installeer de credentie van Experience Manager as a Cloud Service op uw milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (De Server van de Toepassing, de Server van het Web, of andere servers niet-AEM) die worden gevormd om verzoeken naar (maken vraag) de wolkendienst te verzenden.
+   1. [&#x200B; produceer een teken JWT en ruilde het met Adobe IMS APIs voor een toegangstoken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. Voer de Experience Manager API met het toegangstoken als token voor Dragerverificatie uit.
-   1. [ plaats aangewezen toestemmingen voor de technische rekeningsgebruiker in het milieu van Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. [&#x200B; plaats aangewezen toestemmingen voor de technische rekeningsgebruiker in het milieu van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
   >[!NOTE]
   >
@@ -59,7 +59,7 @@ API-bewerkingen van één gebruiker ondersteunen twee verificatietypen:
 
   >[!IMPORTANT]
   >
-  > Voor meer informatie, zie [ OAuth server-aan-server authentificatie ](/help/forms/oauth-api-authetication.md) en [ server-aan-server authentificatie JWT ](/help/forms/jwt-api-authentication.md).
+  > Voor meer informatie, zie [&#x200B; OAuth server-aan-server authentificatie &#x200B;](/help/forms/oauth-api-authetication.md) en [&#x200B; server-aan-server authentificatie JWT &#x200B;](/help/forms/jwt-api-authentication.md).
 <!-- 
 
 ### Authenticate a multi-tenant API
@@ -140,18 +140,18 @@ Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaat
 
 ### Een API aanroepen
 
-De [ API verwijzingsdocumentatie ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie biedt ook een API-definitiebestand in de indeling .yaml. U kunt het .yaml dossier downloaden en het uploaden aan [ Postman ](https://www.postman.com/) om functionaliteit van APIs te controleren.
+De [&#x200B; API verwijzingsdocumentatie &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie biedt ook een API-definitiebestand in de indeling .yaml. U kunt het .yaml dossier downloaden en het uploaden aan [&#x200B; Postman &#x200B;](https://www.postman.com/) om functionaliteit van APIs te controleren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
 >[!NOTE]
 >
-> Leer de gedetailleerde stappen om Communicatie APIs van AEM Forms aan te halen, zie [ de Communicatie APIs van AEM Forms aanhalen gebruikend het Server-aan-Server 1} artikel van de Authentificatie van OAuth.](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+> Leer de gedetailleerde stappen om Communicatie APIs van AEM Forms aan te halen, zie [&#x200B; de Communicatie APIs van AEM Forms aanhalen gebruikend het Server-aan-Server 1&rbrace; artikel van de Authentificatie van OAuth.](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
 
 >[!MORELIKETHIS]
 >
->* [ Inleiding aan de Mededelingen van AEM Forms as a Cloud Service ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [ de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
->* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
->* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [ Communicatie API van Forms - Leerprogramma ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [&#x200B; Inleiding aan de Mededelingen van AEM Forms as a Cloud Service &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [&#x200B; de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs &#x200B;](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [&#x200B; Communicatie Verwerking - Synchrone APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications.md)
+>* [&#x200B; Communicatie Verwerking - Partij APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [&#x200B; Communicatie API van Forms - Leerprogramma &#x200B;](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
