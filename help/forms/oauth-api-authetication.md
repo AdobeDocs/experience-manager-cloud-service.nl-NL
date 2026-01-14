@@ -3,9 +3,9 @@ title: Hoe instellen van OAuth Server-to-Server verificatie?
 description: Leer hoe u OAuth Server-to-Server verificatie voor Adobe Experience Manager Forms as a Cloud Service configureert
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Met verificatie van server naar server kunt u veilige, tokengebaseerde toegang t
 
 Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-* Zorg ervoor dat u [&#x200B; toegang tot Adobe Developer Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/access-rights) specifiek voor het milieu hebt u gebruikt.
-* [&#x200B; wijs de rol van de Beheerder of van de Ontwikkelaar van het Systeem in Adobe Admin Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) toe om toegang tot Adobe Developer Console toe te laten.
+* Zorg ervoor dat u [ toegang tot Adobe Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) specifiek voor het milieu hebt u gebruikt.
+* [ wijs de rol van de Beheerder of van de Ontwikkelaar van het Systeem in Adobe Admin Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) toe om toegang tot Adobe Developer Console toe te laten.
 
 ## Hoe te om een Token van de Toegang te produceren die de Server-aan-server Authentificatie van OAuth gebruikt?
 
@@ -28,38 +28,38 @@ Volg de onderstaande stappen om een toegangstoken van de console van Adobe Devel
 
 ### 1. Adobe Developer Console Project Setup
 
-1. Ga aan [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console)
+1. Ga aan [ Adobe Developer Console ](https://developer.adobe.com/console)
 2. Meld u aan bij uw Adobe ID
 
 3. Nieuw project maken of naar een bestaand project navigeren
 
 >[!BEGINTABS]
 
->[!TAB om een nieuw project  te creëren]
+>[!TAB  om een nieuw project ] te creëren
 
 1. Van de **Snelle sectie van het Begin**, klik **creeer nieuw project**
 2. Een nieuw project wordt gecreeerd met een standaardnaam
 
-   ![&#x200B; creeer ADC Project &#x200B;](/help/forms/assets/adc-home.png)
+   ![ creeer ADC Project ](/help/forms/assets/adc-home.png)
 
 3. Klik **uitgeven project** in de hoogste juiste hoek
 
-   ![&#x200B; geef Project &#x200B;](/help/forms/assets/adc-edit-project.png) uit
+   ![ geef Project ](/help/forms/assets/adc-edit-project.png) uit
 
 4. Geef een betekenisvolle naam op (bijvoorbeeld &quot;formsproject&quot;)
 5. Klik **sparen**
 
-   ![&#x200B; geef de Naam van het Project uit &#x200B;](/help/forms/assets/adc-edit-projectname.png)
+   ![ geef de Naam van het Project uit ](/help/forms/assets/adc-edit-projectname.png)
 
->[!TAB om aan uw bestaand project  te navigeren]
+>[!TAB  om aan uw bestaand project ] te navigeren
 
 1. Klik **Alle Projecten** van Adobe Developer Console
 
-   ![&#x200B; Projecten van het Onderzoek &#x200B;](/help/forms/assets/search-adc-project.png)
+   ![ Projecten van het Onderzoek ](/help/forms/assets/search-adc-project.png)
 
 2. Zoek uw project en klik om het te openen.
 
-   ![&#x200B; plaats Projecten &#x200B;](/help/forms/assets/locate-adc-project.png)
+   ![ plaats Projecten ](/help/forms/assets/locate-adc-project.png)
 
 >[!ENDTABS]
 
@@ -76,38 +76,38 @@ Voeg Forms API&#39;s toe op basis van wat u wilt doen:
 
 1. Klik **toevoegen API**
 
-   ![&#x200B; voeg api &#x200B;](/help/forms/assets/adc-add-api.png) toe
+   ![ voeg api ](/help/forms/assets/adc-add-api.png) toe
 
 2. Selecteer **Communicatie APIs van Forms**
    1. In _voeg API_ dialoog toe, filter door **Experience Cloud**
    2. Selecteer **&quot;Communicatie APIs van Forms&quot;**
 
-      ![&#x200B; voeg Communicatie API van Forms toe &#x200B;](/help/forms/assets/adc-add-forms-api.png)
+      ![ voeg Communicatie API van Forms toe ](/help/forms/assets/adc-add-forms-api.png)
 
    3. Klik **daarna**
    4. Selecteer **Server-aan-Server** authentificatiemethode
 
-      ![&#x200B; Uitgezochte methode van de Authentificatie &#x200B;](/help/forms/assets/adc-add-authentication-method.png)
+      ![ Uitgezochte methode van de Authentificatie ](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!TAB  voor AanpassingsForms Runtime APIs ]
 
 1. **klik toevoegen API**
 
-   ![&#x200B; voeg api &#x200B;](/help/forms/assets/adc-add-api.png) toe
+   ![ voeg api ](/help/forms/assets/adc-add-api.png) toe
 
 2. **Uitgezochte AEM Forms Levering en Runtime API**
    1. In _voeg API_ dialoog toe, filter door **Experience Cloud**
    2. Selecteer **&quot;AEM Forms Delivery and Runtime API&quot;**
-      ![&#x200B; voeg Communicatie API van Forms toe &#x200B;](/help/forms/assets/adc-add-runtime-api.png)
+      ![ voeg Communicatie API van Forms toe ](/help/forms/assets/adc-add-runtime-api.png)
 
    3. Klik **daarna**
    4. Selecteer **Server-aan-Server** authentificatiemethode.
-      ![&#x200B; Uitgezochte methode van de Authentificatie &#x200B;](/help/forms/assets/adc-add-authentication-method.png)
+      ![ Uitgezochte methode van de Authentificatie ](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!ENDTABS]
 
 U kunt API en authentificatiemethode aan uw bestaand project ook toevoegen door **te klikken toevoegt aan Project** > **API**\
-![&#x200B; voeg API aan bestaand Project &#x200B;](/help/forms/assets/add-api-existing-project.png) toe
+![ voeg API aan bestaand Project ](/help/forms/assets/add-api-existing-project.png) toe
 
 ### &#x200B;3. Productprofiel toevoegen
 
@@ -129,7 +129,7 @@ Het productprofiel bevat machtigingen (of autorisaties) voor referenties om toeg
 
 2. Klik **sparen gevormde API**. De API en het Profiel van het Product worden toegevoegd aan uw project
 
-   ![&#x200B; Uitgezochte Configuratie van het Project &#x200B;](/help/forms/assets/adc-add-product-profile.png)
+   ![ Uitgezochte Configuratie van het Project ](/help/forms/assets/adc-add-product-profile.png)
 
 ### &#x200B;4. Referenties genereren en opslaan
 
@@ -137,7 +137,7 @@ Het productprofiel bevat machtigingen (of autorisaties) voor referenties om toeg
 2. Klik **Server-aan-Server** referentie
 3. Bekijk de **Credentials details** sectie
 
-   ![&#x200B; Credentials van de Mening &#x200B;](/help/forms/assets/adc-view-credential.png)
+   ![ Credentials van de Mening ](/help/forms/assets/adc-view-credential.png)
 
 **Opname API geloofsbrieven**
 
@@ -169,7 +169,7 @@ Handmatig toegangstokens genereren in Adobe Developer Console:
    1. Klik **&quot;produceer toegangstoken&quot;** knoop in de API van uw project sectie
    2. Het gegenereerde toegangstoken kopiëren
 
-   ![&#x200B; produceer het Token van de Toegang &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ produceer het Token van de Toegang ](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
@@ -177,7 +177,7 @@ Handmatig toegangstokens genereren in Adobe Developer Console:
 
 >[!TAB  voor Productie ]
 
-Genereer programmatically tokens gebruikend [&#x200B; IMS van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API:
+Genereer programmatically tokens gebruikend [ IMS van Adobe ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API:
 
 **Vereiste Referenties:**
 
@@ -228,7 +228,7 @@ U kunt het gegenereerde toegangstoken nu gebruiken om API-aanroepen te maken voo
 
 ## Volgende stappen
 
-Leren hoe te opstellingsmilieu voor Synchrone Communicatie APIs van Forms, zie [&#x200B; Communicatie van AEM Forms as a Cloud Service Synchrone Verwerking &#x200B;](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md).
+Leren hoe te opstellingsmilieu voor Synchrone Communicatie APIs van Forms, zie [ Communicatie van AEM Forms as a Cloud Service Synchrone Verwerking ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md).
 
 
 ## Verwante artikelen
@@ -288,4 +288,10 @@ Leer hoe u een omgeving instelt voor synchrone (On-Demand) en asynchrone (Batch)
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
+>[!MORELIKETHIS]
+>
+>* [ Inleiding aan de Mededelingen van AEM Forms as a Cloud Service ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [ de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
+>* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [ Communicatie API van Forms - Leerprogramma ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

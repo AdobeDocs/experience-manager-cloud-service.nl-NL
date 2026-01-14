@@ -1,12 +1,12 @@
 ---
-title: Hoe te om Forms as a Cloud Service te gebruiken om gegevens met malplaatjes samen te voegen XDP en PDF of output in PCL, ZPL, en de formaten van PostScript te produceren?
+title: Hoe kan Forms as a Cloud Service gebruiken om gegevens samen te voegen met XDP- en PDF-sjablonen of om uitvoer te genereren in PCL-, ZPL- en PostScript-indelingen?
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Synchrone verwerking gebruiken {#sync-processing-introduction}
 
-Met Forms as a Cloud Service - Communicatie-API&#39;s kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, aanvraagverwerkingsbrieven, aankondigingen van voordelen, aanvraagverwerkingsbrieven, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
+Forms as a Cloud Service - Met communicatie-API&#39;s kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, aanvraagverwerkingsbrieven, aankondigingen van voordelen, claimverwerkingsbrieven, maandelijkse facturen en welkomstkits. Met communicatie-API&#39;s kunt u een sjabloon (XFA of PDF) combineren met klantgegevens om documenten te genereren in de indelingen PDF, PS, PCL, DPL, IPL en ZPL.
 
-Overweeg een scenario waar u één of meerdere malplaatjes en veelvoudige verslagen van de gegevens van XML voor elke malplaatje hebt. U kunt communicatie-API&#39;s gebruiken om een afdrukdocument te genereren voor elke record. <!-- You can also combine the records into a single document. --> Het resultaat is een niet-interactief PDF-document. In een niet-interactief PDF-document kunnen gebruikers geen gegevens invoeren in de desbetreffende velden.
+Overweeg een scenario waar u één of meerdere malplaatjes en veelvoudige verslagen van de gegevens van XML voor elke malplaatje hebt. U kunt communicatie-API&#39;s gebruiken om een afdrukdocument te genereren voor elke record. <!-- You can also combine the records into a single document. --> Het resultaat is een niet-interactief PDF-document. In een niet-interactief PDF-document kunnen gebruikers geen gegevens invoeren in de bijbehorende velden.
 
 Forms as a Cloud Service - Communications biedt op aanvraag API&#39;s (asynchrone API&#39;s) voor het genereren van geplande documenten:
 
@@ -43,20 +43,23 @@ Een synchrone bewerking is een proces waarbij documenten lineair worden gegenere
 
 API-bewerkingen van één gebruiker ondersteunen twee verificatietypen:
 
-* **Basisauthentificatie**: De basisauthentificatie is een eenvoudige authentificatieregeling die in het protocol van HTTP wordt gebouwd. De client verzendt HTTP-aanvragen met de machtigingsheader die het woord Basic bevat, gevolgd door een spatie en een base64-coded tekenreeks username:password. Bijvoorbeeld, om als admin/admin toe te staan verzendt de cliënt Basis [ base64-gecodeerde koordgebruikersbenaming ]: [ base64-gecodeerde koordwachtwoord ].
+* **Basisauthentificatie**: De basisauthentificatie is een eenvoudige authentificatieregeling die in het protocol van HTTP wordt gebouwd. De cliënt verzendt HTTP- verzoeken met de kopbal van de Vergunning die het woord Basis bevat dat door een ruimte en een base64-gecodeerde koordgebruikersbenaming :password wordt gevolgd. Bijvoorbeeld, om als admin/admin toe te staan verzendt de cliënt Basis [ base64-gecodeerde koordgebruikersbenaming ]: [ base64-gecodeerde koordwachtwoord ].
 
-* **op token-gebaseerde authentificatie:** Op token-gebaseerde authentificatie gebruikt een toegangstoken (het teken van de authentificatie van de Drager) om verzoeken aan Experience Manager as a Cloud Service te maken. AEM Forms as a Cloud Service verstrekt APIs om het toegangstoken veilig terug te winnen. Om het teken terug te winnen en te gebruiken om een verzoek voor authentiek te verklaren:
+* **op token-gebaseerde authentificatie:** Op token-gebaseerde authentificatie gebruikt een toegangstoken (het teken van de authentificatie van de Drager) om verzoeken aan Experience Manager as a Cloud Service te doen. AEM Forms as a Cloud Service biedt API&#39;s om het toegangstoken veilig op te halen. Om het teken terug te winnen en te gebruiken om een verzoek voor authentiek te verklaren:
 
-   1. [&#x200B; wint as a Cloud Service credentie van de Experience Manager van Developer Console &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL) terug.
-   1. [&#x200B; installeer as a Cloud Service credentie van de Experience Manager op uw milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL). (De Server van de Toepassing, de Server van het Web, of andere niet-AEM servers) die worden gevormd om verzoeken naar (maken vraag) de wolkendienst te verzenden.
-   1. [&#x200B; produceer een teken JWT en ruilde het met Adobe IMS APIs voor een toegangstoken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL).
-   1. Voer de Experience Manager-API met het toegangstoken uit als een token voor Dragerverificatie.
-   1. [&#x200B; plaats aangewezen toestemmingen voor de technische rekeningsgebruiker in het milieu van de Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL#configure-access-in-aem).
+   1. [ wint de credentie van Experience Manager as a Cloud Service van Developer Console ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) terug.
+   1. [ installeer de credentie van Experience Manager as a Cloud Service op uw milieu ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (De Server van de Toepassing, de Server van het Web, of andere servers niet-AEM) die worden gevormd om verzoeken naar (maken vraag) de wolkendienst te verzenden.
+   1. [ produceer een teken JWT en ruilde het met Adobe IMS APIs voor een toegangstoken ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. Voer de Experience Manager API met het toegangstoken als token voor Dragerverificatie uit.
+   1. [ plaats aangewezen toestemmingen voor de technische rekeningsgebruiker in het milieu van Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
   >[!NOTE]
   >
-  >Adobe raadt aan tokengebaseerde verificatie op een productieomgeving te gebruiken.
+  >Adobe raadt aan tokenverificatie te gebruiken in een productieomgeving.
 
+  >[!IMPORTANT]
+  >
+  > Voor meer informatie, zie [ OAuth server-aan-server authentificatie ](/help/forms/oauth-api-authetication.md) en [ server-aan-server authentificatie JWT ](/help/forms/jwt-api-authentication.md).
 <!-- 
 
 ### Authenticate a multi-tenant API
@@ -123,31 +126,32 @@ While it is possible to do the entire JWT generation and exchange process in cus
 
 Voor het gebruik van synchrone API&#39;s is het volgende vereist:
 
-* Gebruikers met beheerdersrechten voor Experience Managers
+* Gebruikers met Experience Manager-beheerdersrechten
 * Sjablonen en andere elementen uploaden naar uw Experience Manager Forms Cloud Service-exemplaar
 
-### (Alleen voor API&#39;s voor documentgeneratie) Sjablonen en andere elementen uploaden naar uw Experience Manager-instantie
+### (Alleen voor API&#39;s voor documentgeneratie) Sjablonen en andere middelen uploaden naar uw Experience Manager-instantie
 
-Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaatje elk voor creditcardverklaringen, voordelenverklaringen, en claimtoepassingen. Upload al dergelijke XDP en PDF malplaatjes aan uw instantie van de Experience Manager. Een sjabloon uploaden:
+Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaatje elk voor creditcardverklaringen, voordelenverklaringen, en claimtoepassingen. Upload dergelijke XDP- en PDF-sjablonen naar uw Experience Manager-exemplaar. Een sjabloon uploaden:
 
-1. Open een Experience Manager-instantie.
+1. Open je Experience Manager-exemplaar.
 1. Ga naar Forms > Forms en Documenten
 1. Klik op Maken > Map en maak een map. Open de map.
 1. Klik op Maken > Bestand uploaden en upload de sjablonen.
 
 ### Een API aanroepen
 
-De [&#x200B; API verwijzingsdocumentatie &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie biedt ook een API-definitiebestand in de indeling .yaml. U kunt het .yaml dossier downloaden en het uploaden aan [&#x200B; Postman &#x200B;](https://www.postman.com/) om functionaliteit van APIs te controleren.
+De [ API verwijzingsdocumentatie ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie biedt ook een API-definitiebestand in de indeling .yaml. U kunt het .yaml dossier downloaden en het uploaden aan [ Postman ](https://www.postman.com/) om functionaliteit van APIs te controleren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
 >[!NOTE]
 >
->Alleen leden van een groep met formuliergebruikers hebben toegang tot communicatie-API&#39;s.
+> Leer de gedetailleerde stappen om Communicatie APIs van AEM Forms aan te halen, zie [ de Communicatie APIs van AEM Forms aanhalen gebruikend het Server-aan-Server 1} artikel van de Authentificatie van OAuth.](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Inleiding aan de as a Cloud Service Mededelingen van AEM Forms &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [&#x200B; as a Cloud Service Architectuur van AEM Forms voor Adaptieve Forms en Communicatie APIs &#x200B;](/help/forms/aem-forms-cloud-service-architecture.md)
->* [&#x200B; Communicatie Verwerking - Synchrone APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications.md)
->* [&#x200B; Communicatie Verwerking - Partij APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [ Inleiding aan de Mededelingen van AEM Forms as a Cloud Service ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [ de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
+>* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [ Communicatie API van Forms - Leerprogramma ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
