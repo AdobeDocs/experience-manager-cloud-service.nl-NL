@@ -1,36 +1,35 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.12.12
-description: Dit zijn de releaseopmerkingen voor de release 2025.12.11 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2026.01.15
+description: Dit zijn de releaseopmerkingen voor de release 2026.01.15 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.12.12 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2026.01.15 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 12 december 2025 van de Universal Editor.
-
->[!TIP]
->
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+Dit zijn de releaseopmerkingen voor de release van 15 januari 2026 van de Universal Editor.
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+
+>[!TIP]
+>
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* De steun is toegevoegd aan bestaande lijsten in de [&#x200B; rijke tekstredacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* De lusjesleutel is toegelaten voor het nestelen van lijsten in de [&#x200B; rijke tekstredacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* De ontwikkelaarlogin eigenschap kan nu via de [&#x200B; meta markering `aem-dev-login` worden onbruikbaar gemaakt.](/help/implementing/universal-editor/customizing.md#meta-tags)
-* Een klik in de bekledingssectie met de rechtermuisknop toont nu a [&#x200B; contextafhankelijke optiemenu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
-* [&#x200B; Scoped indentation &#x200B;](/help/implementing/universal-editor/configure-rte.md#indentation) wordt nu gesteund in de [&#x200B; rijke tekstredacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* De steun voor het plaatsen en het voortbestaan [ standaardwaarden van modelgebieden is toegevoegd.](/help/implementing/universal-editor/field-types.md)
+   * Als er geen waarde is ingesteld, blijft de Universal Editor behouden wat in de modeldefinitie is gedefinieerd als `value` .
+   * Dit zorgt ervoor dat wat u ziet zal aanpassen wat in het achterste gedeelte voortduurt.
+   * Dit is een baanbrekende verandering.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -40,13 +39,6 @@ Als u de volgende functies wilt testen en uw feedback wilt delen, stuurt u een e
 
 ## Overige verbeteringen {#other-improvements}
 
-* De eigenschappen per spoor worden nu gesynchroniseerd wanneer meerdere velden in context veranderen.
-* De kiezer voor inhoudsfragmenten wordt nu zoals verwacht geopend in AEM 6.5-instanties.
-* Met de escape-toets worden nu dialoogvensters in de RTF-editor gesloten.
-* De **verwijdert component** actie is nu slechts beschikbaar wanneer een component wordt geselecteerd.
-* De juiste (oude of nieuwe) editor voor inhoudsfragmenten wordt nu geopend op basis van de gebruikte instantie (als de hostnaam het AEM as a Cloud Service-patroon is, gebruikt u de nieuwe editor anders de oude editor).
-* De filtervalidatie wordt toegevoegd aan de gedupliceerde actie.
-* Lange titels worden nu afgekapt in de eigenschappen rail.
-* Arrays voor meerdere sitebeheerprogramma&#39;s met meer dan 10 waarden worden nu op de juiste wijze afgehandeld.
-* Conflictfouten bij het maken van meerdere componenten met dezelfde naam worden nu correct verwerkt.
-* Arrayverwerking op meerdere locaties voor beheer met waarden > 10 is toegevoegd.
+* Het opschonen van gegevens wordt nu correct uitgevoerd op inhoudsomschakeling.
+* Meerdere bewerkingen in de update van extensies worden nu ondersteund.
+* De knop Sluiten voor aanmelden bij ontwikkelaar functioneert nu naar behoren.
