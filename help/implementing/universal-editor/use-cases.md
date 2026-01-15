@@ -4,7 +4,7 @@ description: Leer over de belangrijkste gebruiksgevallen van de Universele Redac
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 0%
@@ -23,14 +23,14 @@ Dit document verklaart deze twee gebruiksgevallen in detail en toont u hoe u mee
 
 >[!TIP]
 >
->Als u niet reeds hebt, te herzien gelieve de document [&#x200B; Universele Inleiding van de Redacteur &#x200B;](/help/implementing/universal-editor/introduction.md) voor een volledig overzicht en waarde van de Universele Redacteur.
+>Als u niet reeds hebt, te herzien gelieve de document [ Universele Inleiding van de Redacteur ](/help/implementing/universal-editor/introduction.md) voor een volledig overzicht en waarde van de Universele Redacteur.
 
 ## Gevallen gebruiken {#use-cases}
 
 De Universal Editor biedt een handige, intuïtieve visuele editor aan de auteurs van de inhoud, ongeacht het type inhoud dat ze maken. De twee belangrijkste gebruiksgevallen zijn:
 
-* [&#x200B; Authoring van WYSIWYG &#x200B;](#wysiwyg-authoring) - Gebruik de AEM Sites-console om uw inhoud en auteurspagina&#39;s binnen AEM te beheren met behulp van de Universal Editor
-* [&#x200B; Koploze Authoring &#x200B;](#headless-authoring) - Inhoud van de Auteur in uw eigen toepassing zonder kop gebruikend de Universele Redacteur.
+* [ Authoring van WYSIWYG ](#wysiwyg-authoring) - Gebruik de AEM Sites-console om uw inhoud en auteurspagina&#39;s binnen AEM te beheren met behulp van de Universal Editor
+* [ Koploze Authoring ](#headless-authoring) - Inhoud van de Auteur in uw eigen toepassing zonder kop gebruikend de Universele Redacteur.
 
 ### WYSIWYG Authoring {#wysiwyg-authoring}
 
@@ -40,9 +40,9 @@ Op deze manier kunt u profiteren van de gereedschappen die beschikbaar zijn in d
 
 Als dit uw gebruiksgeval is, als onmiddellijke volgende stap, gelieve de volgende documenten voor een volledig overzicht van hoe te om met de Universele Redacteur in AEM in gebruik te worden.
 
-1. [&#x200B; Begonnen Begeleidende Gids van de Ontwikkelaar voor het schrijven van WYSIWYG met Edge Delivery Services &#x200B;](https://www.aem.live/developer/ue-tutorial) - begin met uw eerste Universeel project van de Redacteur in AEM
-1. [&#x200B; Creërend Blokken Instrumented voor gebruik met de Universele Redacteur &#x200B;](https://www.aem.live/developer/universal-editor-blocks) - leer hoe te instrumentblokken om uw inhoud in de Universele Redacteur editable te maken
-1. [&#x200B; de Modellering van de Inhoud voor WYSIWYG authoring met de Projecten van Edge Delivery Services &#x200B;](https://www.aem.live/developer/component-model-definitions) - leer de details van hoe de blokken gestructureerd zijn om uw inhoud voor gebruik met de Universele Redacteur effectief te modelleren.
+1. [ Begonnen Begeleidende Gids van de Ontwikkelaar voor het schrijven van WYSIWYG met Edge Delivery Services ](https://www.aem.live/developer/ue-tutorial) - begin met uw eerste Universeel project van de Redacteur in AEM
+1. [ Creërend Blokken Instrumented voor gebruik met de Universele Redacteur ](https://www.aem.live/developer/universal-editor-blocks) - leer hoe te instrumentblokken om uw inhoud in de Universele Redacteur editable te maken
+1. [ de Modellering van de Inhoud voor WYSIWYG authoring met de Projecten van Edge Delivery Services ](https://www.aem.live/developer/component-model-definitions) - leer de details van hoe de blokken gestructureerd zijn om uw inhoud voor gebruik met de Universele Redacteur effectief te modelleren.
 
 Nadat u deze documenten hebt gelezen, kunt u terugkeren naar deze pagina voor meer informatie over het gebruik van koploze ontwerpen en over de algemene werking van de universele editor.
 
@@ -65,23 +65,23 @@ De macht van de Universele Redacteur is zijn capaciteit aan auteur om het even w
 De Universal Editor werkt als volgt.
 
 1. Een ontwikkelaar stuurt de app of pagina om de Universal Editor te gebruiken. Deze instrumentatie vertelt de redacteur welke inhoud editable is en hoe te om het voort te zetten.
-   * Als u de [&#x200B; Begonnen Gids van de Ontwikkelaar die voor de Authoring van WYSIWYG met Edge Delivery Services &#x200B;](https://www.aem.live/developer/ue-tutorial) documentatie volgt, worden uw pagina&#39;s automatisch van instrumenten voorzien.
+   * Als u de [ Begonnen Gids van de Ontwikkelaar die voor de Authoring van WYSIWYG met Edge Delivery Services ](https://www.aem.live/developer/ue-tutorial) documentatie volgt, worden uw pagina&#39;s automatisch van instrumenten voorzien.
    * Voor ontwerpen zonder kop kan uw app eenvoudig van instrumenten worden voorzien.
 1. De auteur van de inhoud laadt de Universal Editor, die op zijn beurt de pagina voor bewerking laadt. Omdat het van instrumenten wordt voorzien, weet het welke inhoud editable is en hoe het moet worden vertegenwoordigd en voortgeduurd.
 1. De auteur van de inhoud bewerkt de pagina-inhoud in een intuïtieve WYSIWYG-interface en bewerkt deze op locatie.
 1. De Universal Editor houdt de wijzigingen automatisch opnieuw in op de gegevensbron.
 
-Als u meer over de architectuur van de Universele Redacteur zou willen leren, te zien gelieve het document [&#x200B; Universele Architectuur van de Redacteur &#x200B;](/help/implementing/universal-editor/architecture.md).
+Als u meer over de architectuur van de Universele Redacteur zou willen leren, te zien gelieve het document [ Universele Architectuur van de Redacteur ](/help/implementing/universal-editor/architecture.md).
 
 ## Universal Editor Concepts {#concepts}
 
 Een pagina of toepassing kan alleen worden bewerkt met de Universal Editor als deze correct van instrumenten is voorzien.
 
-* [&#x200B; Attributen en Types &#x200B;](/help/implementing/universal-editor/attributes-types.md) - opdat een app of een pagina door de Universele Redacteur editable zijn, moet het behoorlijk van instrumenten voorzien zijn. Dit omvat onder andere de juiste metagegevens, zodat de editor de inhoud van de app kan bewerken.
-* [&#x200B; Modeldefinities, Gebieden, en de Types van Component &#x200B;](/help/implementing/universal-editor/field-types.md) - Zodra de meta-gegevens aanwezig zijn om het uitgeven van een component toe te laten, bepaalt u welke gebieden en componententypes zij in het eigenschappen paneel van de redacteur kunnen manipuleren.
-* [&#x200B; Universele Gebeurtenissen van de Redacteur &#x200B;](/help/implementing/universal-editor/events.md) - u kunt uw app verder aanpassen door de het uitgeven ervaring in uw app te verbeteren door gebeurtenissen te verbruiken de Universele Redacteur op inhoud of UI interactie uitgeeft.
+* [ Attributen en Types ](/help/implementing/universal-editor/attributes-types.md) - opdat een app of een pagina door de Universele Redacteur editable zijn, moet het behoorlijk van instrumenten voorzien zijn. Dit omvat onder andere de juiste metagegevens, zodat de editor de inhoud van de app kan bewerken.
+* [ Modeldefinities, Gebieden, en de Types van Component ](/help/implementing/universal-editor/field-types.md) - Zodra de meta-gegevens aanwezig zijn om het uitgeven van een component toe te laten, bepaalt u welke gebieden en componententypes zij in het eigenschappen paneel van de redacteur kunnen manipuleren.
+* [ Universele Gebeurtenissen van de Redacteur ](/help/implementing/universal-editor/events-universal-editor.md) - u kunt uw app verder aanpassen door de het uitgeven ervaring in uw app te verbeteren door gebeurtenissen te verbruiken de Universele Redacteur op inhoud of UI interactie uitgeeft.
 
 De universele editor kan ook worden aangepast aan uw projectbehoeften.
 
-* [&#x200B; het Aanpassen van de Universele Redacteur &#x200B;](/help/implementing/universal-editor/customizing.md) - de Universele ervaring van de Redacteur kan worden aangepast door diverse aspecten van de redacteur te filtreren of door de functionaliteit van de redacteur uit te breiden.
-* [&#x200B; Uitbreidend de Universele Redacteur &#x200B;](/help/implementing/universal-editor/extending.md) - UI van de Universele Redacteur kan zich uitbreiden om zijn mogelijkheden uit te breiden om aan uw projectbehoeften te voldoen.
+* [ het Aanpassen van de Universele Redacteur ](/help/implementing/universal-editor/customizing.md) - de Universele ervaring van de Redacteur kan worden aangepast door diverse aspecten van de redacteur te filtreren of door de functionaliteit van de redacteur uit te breiden.
+* [ Uitbreidend de Universele Redacteur ](/help/implementing/universal-editor/extending.md) - UI van de Universele Redacteur kan zich uitbreiden om zijn mogelijkheden uit te breiden om aan uw projectbehoeften te voldoen.
