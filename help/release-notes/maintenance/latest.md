@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
+source-git-commit: be61c21e111e1655921325a35da6fa88545fb39f
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 23862 {#23862}
+## Release 23963 {#23963}
 
->[!CAUTION]
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 23963 samengevat, die op 19 januari 2026 openbaar werd gemaakt. De vorige onderhoudsrelease was release 23482.
+
+De activering van de 2026.1.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+
+>[!NOTE]
 >
-> Release 23862 is privé gemaakt. Binnenkort wordt een nieuwe onderhoudrelease beschikbaar.
+>Release 23862 is privé gemaakt.
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 23862 samengevat, die op 23 december 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 23482.
-
-De activering van de 2026.1.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudrelease. Zie [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
-
-### Verbeteringen {#enhancements-23862}
+### Verbeteringen {#enhancements-23963}
 
 * CQ-4361812: Toegevoegde ondersteuning voor optioneel param folderPath in rest api. Beschrijving: Er wordt een nieuw vertaalproject gemaakt door de API en geplaatst binnen het pad dat is opgegeven door de optionele parameter `folderPath` , anders wordt het standaard het hoofdprojectpad `/content/projects` .
 * FORMS-21960: extra ondersteuning voor canvas bewerken op lokaal niveau voor interactieve communicatie, vergelijkbaar met formulierspa.
@@ -50,13 +50,14 @@ De activering van de 2026.1.0-functie biedt de volledige functionaliteit die is 
 * SITES-37794: Edge Delivery met Universal Editor: wizard Pagina maken vereenvoudigen.
 * SITES-36963: Migrate Audience/Segment Endpoint to Target API v3 for Workspace Support.
 
-### Opgeloste problemen {#fixed-issues-23862}
+### Opgeloste problemen {#fixed-issues-23963}
 
 * CQ-4361831: Het probleem met genai_dropdown_span is niet opgelost.
 * CQ-4360895: Correctie aantal onnauwkeurige vertaaltaken in project tijdens gelijktijdige updates.
 * CQ-4361599: Oplossing voor het overslaan van contentfragmenten van vertaaltaken na 2025.7-upgrade.
 * CQ-4360747: Vaste herhaalbare vertaaltaken maken te vaak lege ladingen en trigger (NullPointerException in ScheduleRepeatTranslationProject).
 * CQ-4359994: Fixed destinationLanguage field type inconsistence for single and multi-language project.
+* FORMS-23557: De oorzaken van de Rhino-update `*.js` kunnen niet correct worden geïnstantieerd door de Use API.
 * SITES-38153: Fix cf publish reference provider for uid based references.
 * SITES-37594: Prestatieverbeteringen voor model door tagfunctionaliteit.
 * SITES-37337: FragmentCreateProcessor: geef aanvullende foutdetails op in logboeken.
@@ -93,25 +94,25 @@ De activering van de 2026.1.0-functie biedt de volledige functionaliteit die is 
 * SITES-37349: Edge Delivery met Universal Editor: geef meerdere velden met één item als lijst weer met één lijstitem.
 * SITES-36148: Edge Delivery with Universal Editor: Fix data-aue-label for compound multi-fields.
 
-### Bekende problemen {#known-issues-23862}
+### Bekende problemen {#known-issues-23963}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-23862}
+### Verouderde functies en API&#39;s {#deprecated-23963}
 
-Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [&#x200B; Vervangen en Verwijderde Eigenschappen en APIs &#x200B;](/help/release-notes/deprecated-removed-features.md) document.
+Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-23862}
+### Beveiligingsproblemen {#security-23963}
 
 AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 23 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-23862}
+### Ingesloten technologieën {#embedded-tech-23963}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 88,0 | [&#x200B; Oak 1.88.0 API &#x200B;](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html) |
-| AEM SLING-API | 2,27,6 | [&#x200B; Apache Sling API 2.27.6 API &#x200B;](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTML | 1.4.28-1.4.0 | [&#x200B; Specificatie van de Taal van het Malplaatje van HTML &#x200B;](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2,4,65 | [&#x200B; Apache Httpd 2.4.65 &#x200B;](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM-kerncomponenten | 2.30.2. | [&#x200B; AEM WCM de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (standaard) | [&#x200B; Ondersteunde versies Node.js &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| AEM Oak | 1 88,0 | [ Oak 1.88.0 API ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html) |
+| AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
+| Apache HTTP Server | 2,4,65 | [ Apache Httpd 2.4.65 ](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
+| AEM-kerncomponenten | 2.30.2. | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
+| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
