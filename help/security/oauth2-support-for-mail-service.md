@@ -18,15 +18,15 @@ AEM as a Cloud Service biedt OAuth2-ondersteuning voor de geïntegreerde e-mails
 
 U kunt OAuth voor veelvoudige e-mailleveranciers vormen. Hieronder vindt u stapsgewijze instructies voor het configureren van de AEM Mail Service voor verificatie via OAuth2 met Microsoft® Office 365 Outlook. Andere verkopers kunnen op een gelijkaardige manier worden gevormd.
 
-Voor meer informatie over de Dienst van de Post van AEM as a Cloud Service, zie [ Verzendend E-mail ](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
+Voor meer informatie over de Dienst van de Post van AEM as a Cloud Service, zie [&#x200B; Verzendend E-mail &#x200B;](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
 
 ## Microsoft® Outlook {#microsoft-outlook}
 
-1. Ga naar [ https://portal.azure.com/ ](https://portal.azure.com/) en login.
-1. Onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat. Alternatief, kunt u direct aan [ https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
-1. Klik **>** Nieuwe Registratie **van de Toepassing van 0} {.**
+1. Ga naar [&#x200B; https://portal.azure.com/ &#x200B;](https://portal.azure.com/) en login.
+1. Onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat. Alternatief, kunt u direct aan [&#x200B; https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview &#x200B;](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
+1. Klik **>** Nieuwe Registratie **van de Toepassing van 0&rbrace; &lbrace;.**
 
-   ![ App registratieproces van het Begin ](assets/oauth-outlook1.png)
+   ![&#x200B; App registratieproces van het Begin &#x200B;](assets/oauth-outlook1.png)
 
 1. Vul de informatie volgens uw vereisten in, dan klik **Register**.
 1. Ga naar gecreeerde app, en selecteer **API Toestemmingen**.
@@ -113,9 +113,9 @@ Alvorens te werk te gaan om OAuth op de kant van AEM te vormen, zorg ervoor om z
 
 >[!NOTE]
 >
-> U kunt de Postman API inzameling van [ deze plaats ](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow) krijgen.
+> U kunt de Postman API inzameling van [&#x200B; deze plaats &#x200B;](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow) krijgen.
 >
-> Zie de [ documentatie MSFT OAuth ](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) voor meer details.
+> Zie de [&#x200B; documentatie MSFT OAuth &#x200B;](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) voor meer details.
 
 ### Integratie met AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
@@ -150,7 +150,7 @@ Alvorens te werk te gaan om OAuth op de kant van AEM te vormen, zorg ervoor om z
    * `email`
    * `profile`
 1. Een OSGI-eigenschappenbestand maken `called com.day.cq.mailer.DefaultMailService.cfg.json`
-onder `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `smtp.host` en `smtp.port` waarden wijzen op geavanceerde voorzien van een netwerkconfiguratie, zoals die in het [ e-mailleerprogramma van de Dienst ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service) wordt beschreven.
+onder `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `smtp.host` en `smtp.port` waarden wijzen op geavanceerde voorzien van een netwerkconfiguratie, zoals die in het [&#x200B; e-mailleerprogramma van de Dienst &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service) wordt beschreven.
 
    ```
    {
@@ -168,7 +168,7 @@ onder `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `s
    ```
 
 1. Voor de toekomst is de configuratiewaarde `smtp.host` `smtp.office365.com`
-1. Bij runtime, ga in `refreshToken values` en `clientSecret` geheimen over gebruikend [ de variabelen API van Cloud Manager ](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) of door [ Cloud Manager te gebruiken om variabelen ](/help/implementing/cloud-manager/environment-variables.md) toe te voegen. De waarden voor de variabelen `SECRET_SMTP_OAUTH_REFRESH_TOKEN` en `SECRET_SMTP_OAUTH_CLIENT_SECRET` moeten worden gedefinieerd.
+1. Bij runtime, ga in `refreshToken values` en `clientSecret` geheimen over gebruikend [&#x200B; de variabelen API van Cloud Manager &#x200B;](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) of door [&#x200B; Cloud Manager te gebruiken om variabelen &#x200B;](/help/implementing/cloud-manager/environment-variables.md) toe te voegen. De waarden voor de variabelen `SECRET_SMTP_OAUTH_REFRESH_TOKEN` en `SECRET_SMTP_OAUTH_CLIENT_SECRET` moeten worden gedefinieerd.
 
 ### Problemen oplossen {#troubleshooting}
 
