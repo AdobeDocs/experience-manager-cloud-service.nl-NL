@@ -4,7 +4,7 @@ description: OAuth2 Support for the Mail Service in Adobe Experience Manager as 
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: f924c2ee18017c7cf7b7cbdca5ce26174b2457ab
+source-git-commit: 8ceca10cc581c4b8e577ddd0a964a707c226c7fc
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -18,15 +18,15 @@ AEM as a Cloud Service biedt OAuth2-ondersteuning voor de geïntegreerde e-mails
 
 U kunt OAuth voor veelvoudige e-mailleveranciers vormen. Hieronder vindt u stapsgewijze instructies voor het configureren van de AEM Mail Service voor verificatie via OAuth2 met Microsoft® Office 365 Outlook. Andere verkopers kunnen op een gelijkaardige manier worden gevormd.
 
-Voor meer informatie over de Dienst van de Post van AEM as a Cloud Service, zie [&#x200B; Verzendend E-mail &#x200B;](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
+Voor meer informatie over de Dienst van de Post van AEM as a Cloud Service, zie [ Verzendend E-mail ](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
 
 ## Microsoft® Outlook {#microsoft-outlook}
 
-1. Ga naar [&#x200B; https://portal.azure.com/ &#x200B;](https://portal.azure.com/) en login.
-1. Onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat. Alternatief, kunt u direct aan [&#x200B; https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview &#x200B;](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
-1. Klik **>** Nieuwe Registratie **van de Toepassing van 0&rbrace; &lbrace;.**
+1. Ga naar [ https://portal.azure.com/ ](https://portal.azure.com/) en login.
+1. Onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat. Alternatief, kunt u direct aan [ https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
+1. Klik **>** Nieuwe Registratie **van de Toepassing van 0} {.**
 
-   ![&#x200B; App registratieproces van het Begin &#x200B;](assets/oauth-outlook1.png)
+   ![ App registratieproces van het Begin ](assets/oauth-outlook1.png)
 
 1. Vul de informatie volgens uw vereisten in, dan klik **Register**.
 1. Ga naar gecreeerde app, en selecteer **API Toestemmingen**.
@@ -83,6 +83,7 @@ Daarna, vernieuw symbolisch, dat een deel van de configuratie OSGi in een verder
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
    --data-urlencode 'client_id=<clientID>' \
+   --data-urlencode 'scope=https://outlook.office.com/SMTP.Send email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=authorization_code' \
    --data-urlencode 'client_secret=<clientSecret>' \
@@ -102,7 +103,7 @@ Alvorens te werk te gaan om OAuth op de kant van AEM te vormen, zorg ervoor om z
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
    --data-urlencode 'client_id=<client_id>' \
-   --data-urlencode 'scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
+   --data-urlencode 'scope=https://outlook.office.com/SMTP.Send email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=refresh_token' \
    --data-urlencode 'client_secret=<client_secret>' \
@@ -113,9 +114,9 @@ Alvorens te werk te gaan om OAuth op de kant van AEM te vormen, zorg ervoor om z
 
 >[!NOTE]
 >
-> U kunt de Postman API inzameling van [&#x200B; deze plaats &#x200B;](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow) krijgen.
+> U kunt de Postman API inzameling van [ deze plaats ](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow) krijgen.
 >
-> Zie de [&#x200B; documentatie MSFT OAuth &#x200B;](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) voor meer details.
+> Zie de [ documentatie MSFT OAuth ](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) voor meer details.
 
 ### Integratie met AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
@@ -150,7 +151,7 @@ Alvorens te werk te gaan om OAuth op de kant van AEM te vormen, zorg ervoor om z
    * `email`
    * `profile`
 1. Een OSGI-eigenschappenbestand maken `called com.day.cq.mailer.DefaultMailService.cfg.json`
-onder `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `smtp.host` en `smtp.port` waarden wijzen op geavanceerde voorzien van een netwerkconfiguratie, zoals die in het [&#x200B; e-mailleerprogramma van de Dienst &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/examples/email-service) wordt beschreven.
+onder `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `smtp.host` en `smtp.port` waarden wijzen op geavanceerde voorzien van een netwerkconfiguratie, zoals die in het [ e-mailleerprogramma van de Dienst ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service) wordt beschreven.
 
    ```
    {
@@ -168,7 +169,7 @@ onder `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `s
    ```
 
 1. Voor de toekomst is de configuratiewaarde `smtp.host` `smtp.office365.com`
-1. Bij runtime, ga in `refreshToken values` en `clientSecret` geheimen over gebruikend [&#x200B; de variabelen API van Cloud Manager &#x200B;](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) of door [&#x200B; Cloud Manager te gebruiken om variabelen &#x200B;](/help/implementing/cloud-manager/environment-variables.md) toe te voegen. De waarden voor de variabelen `SECRET_SMTP_OAUTH_REFRESH_TOKEN` en `SECRET_SMTP_OAUTH_CLIENT_SECRET` moeten worden gedefinieerd.
+1. Bij runtime, ga in `refreshToken values` en `clientSecret` geheimen over gebruikend [ de variabelen API van Cloud Manager ](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) of door [ Cloud Manager te gebruiken om variabelen ](/help/implementing/cloud-manager/environment-variables.md) toe te voegen. De waarden voor de variabelen `SECRET_SMTP_OAUTH_REFRESH_TOKEN` en `SECRET_SMTP_OAUTH_CLIENT_SECRET` moeten worden gedefinieerd.
 
 ### Problemen oplossen {#troubleshooting}
 
