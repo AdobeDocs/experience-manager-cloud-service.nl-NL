@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
+source-git-commit: bc9fa030aeab4f2dddafc2241fade7b5d0689926
 workflow-type: tm+mt
-source-wordcount: '3105'
+source-wordcount: '3078'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -28,7 +28,7 @@ Met de AEM Page Editor kunt u snel meerdere formulieren insluiten op uw AEM Site
 
 AEM Forms biedt **[!UICONTROL Adaptive Form Container]** - en **[!UICONTROL Adaptive Forms – Embed(v2)]** -componenten. U kunt **[!UICONTROL Adaptive Forms – Embed(v2)]** gebruiken om een bestaand adaptief formulier toe te voegen of een formulier te maken met de Adaptive Forms Editor, terwijl **[!UICONTROL Adaptive Form Container]** nieuwe formulieren maakt in een Experience-fragment of AEM Sites-pagina.
 
-![&#x200B; een voorbeeld van een AanpassingsVorm in een pagina van AEM Sites &#x200B;](/help/forms/assets/adaptive-form-in-sites-page.png)
+![ een voorbeeld van een AanpassingsVorm in een pagina van AEM Sites ](/help/forms/assets/adaptive-form-in-sites-page.png)
 
 <!-- For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). 
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -52,15 +52,15 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
-* **[creeer een Aangepast Vorm gebruikend goedgekeurde malplaatjes en bedt het aan een pagina van AEM Sites &#x200B;](#embed-form-using-adaptive-form-wizzard-aem-sites) in:** u kunt vooraf goedgekeurde malplaatjes gebruiken om Aangepast Forms snel tot stand te brengen en in te bedden die zich met de brandende richtlijnen van uw organisatie en ontwerpnormen richt.
+* **[creeer een Aangepast Vorm gebruikend goedgekeurde malplaatjes en bedt het aan een pagina van AEM Sites ](#embed-form-using-adaptive-form-wizzard-aem-sites) in:** u kunt vooraf goedgekeurde malplaatjes gebruiken om Aangepast Forms snel tot stand te brengen en in te bedden die zich met de brandende richtlijnen van uw organisatie en ontwerpnormen richt.
 
-* **[bed bestaande vormen aan een pagina van AEM Sites &#x200B;](#embed-an-adaptive-form-in-sites-editor) in:** u kunt vormen gemakkelijk integreren die u reeds in uw websites hebt gecreeerd, toelatend bezoekers om met hen direct in wisselwerking te staan.
+* **[bed bestaande vormen aan een pagina van AEM Sites ](#embed-an-adaptive-form-in-sites-editor) in:** u kunt vormen gemakkelijk integreren die u reeds in uw websites hebt gecreeerd, toelatend bezoekers om met hen direct in wisselwerking te staan.
 
-* **[zet een ingebedde AanpassingsVorm in het Fragment van de Ervaring &#x200B;](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment) om:** zet een ingebedde AanpassingsVorm die aan een pagina van AEM Sites wordt toegevoegd in een Fragment van de Ervaring om de vorm over veelvoudige pagina&#39;s van AEM Sites opnieuw te gebruiken.
+* **[zet een ingebedde AanpassingsVorm in het Fragment van de Ervaring ](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment) om:** zet een ingebedde AanpassingsVorm die aan een pagina van AEM Sites wordt toegevoegd in een Fragment van de Ervaring om de vorm over veelvoudige pagina&#39;s van AEM Sites opnieuw te gebruiken.
 
-* **[creeer en voeg een douane Aangepaste Vorm aan een pagina van AEM Sites toe &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** u kunt de **[!UICONTROL Adaptive Form Container]** component gebruiken om een gloednieuwe vorm van kras te bouwen, die het specifiek aan uw vereisten en ontwerpvoorkeur aanpast.
+* **[creeer en voeg een douane Aangepaste Vorm aan een pagina van AEM Sites toe ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** u kunt de **[!UICONTROL Adaptive Form Container]** component gebruiken om een gloednieuwe vorm van kras te bouwen, die het specifiek aan uw vereisten en ontwerpvoorkeur aanpast.
 
-* **[creeer en voeg een douane Aangepaste Vorm aan een Fragmenten van de Ervaring toe &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** u kunt het bereik van uw vormen uitbreiden door hen aan de Fragmenten van de Ervaring van AEM toe te voegen, die voor naadloos hergebruik over veelvoudige pagina&#39;s of plaatsen toestaan.
+* **[creeer en voeg een douane Aangepaste Vorm aan een Fragmenten van de Ervaring toe ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** u kunt het bereik van uw vormen uitbreiden door hen aan de Fragmenten van de Ervaring van AEM toe te voegen, die voor naadloos hergebruik over veelvoudige pagina&#39;s of plaatsen toestaan.
 
 * **voeg veelvoudige vormen aan een de pagina of Fragment van de Ervaring van AEM Sites toe:** u kunt veelvoudige AanpassingsForms tot stand brengen of toevoegen aan een pagina van AEM Sites om veelvoudige keuzen aan gebruikers te verstrekken die op hun voorkeur en vereisten worden gebaseerd. Met de AEM Page Editor kunt u snel meerdere formulieren insluiten op uw AEM Sites-pagina&#39;s. U kunt de component **[!UICONTROL Adaptive Form Container]** meerdere keren gebruiken om Adaptieve Forms toe te voegen aan een AEM Sites-pagina. U kunt de component **[!UICONTROL Adaptive Forms - Embed]** meerdere keren gebruiken op een AEM Sites-pagina, alleen als de optie **[!UICONTROL Form covers entire width of the frame]** is geselecteerd. Als de optie **[!UICONTROL Form covers entire width of the frame]** niet is ingeschakeld, ondersteunt de AEM Sites-pagina slechts één adaptief formulier dat zonder iframe kan worden gebruikt. Als u meer Adaptieve Forms wilt toevoegen met de component **[!UICONTROL Adaptive Forms - Embed]** , selecteert u de optie **[!UICONTROL Form covers entire width of the frame]** .
 
@@ -75,21 +75,21 @@ U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
 Alvorens u begint een nieuwe Aangepaste Vorm of een reeds bestaand Aangepast Vorm in te bedden gebruikend **[!UICONTROL Adaptive Forms – Embed(v2)]**, laat **Aangepaste Componenten van de Kern van Forms** toe en voeg **Aangepaste Bibliotheken van de Cliënt van Forms** aan uw pagina van AEM Sites toe:
 
-### Adaptieve Forms Core-componenten inschakelen voor uw AEM Cloud Service-omgeving
+<!--### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
 
-Installeer de nieuwste versie om Adaptive Forms Core Components in te schakelen voor uw AEM Cloud Service-omgeving.
+Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.-->
 
 ### Adaptieve Forms-clientbibliotheken toevoegen aan uw AEM Sites-pagina of Experience Fragment
 
 Als de optie **[!UICONTROL When form covers entire width of a page]** is geselecteerd in het dialoogvenster **[!UICONTROL Form Containers]** configureren en als Adaptieve Forms met Core Components wordt gebruikt, moeten de clientbibliotheken op de bijbehorende sitepagina worden geplaatst.
 
-![&#x200B; wanneer de vorm de volledige breedte van een paginaoptie behandelt wordt geselecteerd en de adaptieve vorm met kerncomponenten wordt gebruikt &#x200B;](/help/forms/assets/overlaycorecomponent.gif)
+![ wanneer de vorm de volledige breedte van een paginaoptie behandelt wordt geselecteerd en de adaptieve vorm met kerncomponenten wordt gebruikt ](/help/forms/assets/overlaycorecomponent.gif)
 
 **Geval 1: Het gebruiken van Afzonderlijke Componenten van de Pagina van Plaatsen**
 
 Voeg de **Klantenkopballen** en **Customfooterlibs** cliëntbibliotheken aan uw pagina van AEM Sites toe gebruikend de plaatsingspijpleiding. De clientbibliotheken toevoegen:
 
-1. De toegang en kloon uw [&#x200B; Bewaarplaats van de Bewaarplaats van het Bezit van de Bedieningsruimte van de Dienst van de Wolk van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=nl-NL).
+1. De toegang en kloon uw [ Bewaarplaats van de Bewaarplaats van het Bezit van de Bedieningsruimte van de Dienst van de Wolk van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
 2. Open de map AEM Cloud Service Git Repository in een abonnementsteksteditor. Bijvoorbeeld Microsoft® Visual Code.
 3. Open het bestand `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` en voeg de volgende code toe aan het bestand:
 
@@ -127,7 +127,7 @@ Voeg de **Klantenkopballen** en **Customfooterlibs** cliëntbibliotheken aan uw 
        </sly> 
    ```
 
-7. [&#x200B; stel de plaatsingspijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=nl-NL) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
+7. [ stel de plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
 
 >[!NOTE]
 >
@@ -138,8 +138,8 @@ Voeg de **Klantenkopballen** en **Customfooterlibs** cliëntbibliotheken aan uw 
 Neem de runtimeclientbibliotheken of aangepaste functiebibliotheken op in het paginabeleid van de sjabloon die wordt gebruikt voor het maken van pagina&#39;s met formulieren.
 
 1. Open de AEM Sites-pagina of Experience Fragment om te bewerken. Als u de pagina wilt openen om te bewerken, selecteert u de pagina en klikt u op **[!UICONTROL Edit]** .
-2. Open de sjabloon van de pagina Sites of Experience Fragment. Om het malplaatje te openen, ga naar **[!UICONTROL Page Information]** ![&#x200B; de Informatie van de Pagina &#x200B;](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Edit Template]**. De bijbehorende sjabloon wordt geopend in de sjablooneditor.
-3. Ga naar de **[!UICONTROL Page Information]** ![&#x200B; sectie van de Informatie van de Pagina &#x200B;](/help/forms/assets/Smock_Properties_18_N.svg) van het malplaatje en selecteer de **[!UICONTROL Page Policy]** optie. Hierdoor worden de eigenschappen van de AEM Sites-sjabloon geopend, waarin u aangepaste functies of clientbibliotheken bij uitvoering kunt definiëren.
+2. Open de sjabloon van de pagina Sites of Experience Fragment. Om het malplaatje te openen, ga naar **[!UICONTROL Page Information]** ![ de Informatie van de Pagina ](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Edit Template]**. De bijbehorende sjabloon wordt geopend in de sjablooneditor.
+3. Ga naar de **[!UICONTROL Page Information]** ![ sectie van de Informatie van de Pagina ](/help/forms/assets/Smock_Properties_18_N.svg) van het malplaatje en selecteer de **[!UICONTROL Page Policy]** optie. Hierdoor worden de eigenschappen van de AEM Sites-sjabloon geopend, waarin u aangepaste functies of clientbibliotheken bij uitvoering kunt definiëren.
 4. Klik op de knop **[!UICONTROL Add]** op het tabblad **[!UICONTROL Properties]** om nieuwe aangepaste functiebibliotheken of runtimebibliotheken toe te voegen.
 5. Klik **[Gedaan]**.
 
@@ -150,8 +150,8 @@ Neem de runtimeclientbibliotheken of aangepaste functiebibliotheken op in het pa
 Voer de volgende stappen uit om **[!UICONTROL Adaptive Forms – Embed(v2)]** -component in sjabloonbeleid in te schakelen:
 
 1. Open de AEM Sites-pagina of Experience Fragment om te bewerken. Als u de pagina wilt openen om te bewerken, selecteert u de pagina en klikt u op **[!UICONTROL Edit]** .
-1. Open de sjabloon van de pagina Sites of Experience Fragment. Om het malplaatje te openen, ga naar **[!UICONTROL Page Information]** ![&#x200B; de Informatie van de Pagina &#x200B;](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Edit Template]**. De bijbehorende sjabloon wordt geopend in de sjablooneditor.
-1. In de mening van de Structuur, klik het **[!UICONTROL Policy]** ![&#x200B; Beleid &#x200B;](/help/forms/assets/Smock_FeedManagement_18_N.svg) pictogram in de menubar. In de **[!UICONTROL Allowed Components]** lijst en selecteer **[!UICONTROL Adaptive Forms – Embed(v2)]** checkbox onder de **[Naam van het Project van de Archetype van AEM ] - Aangepaste Vorm**.
+1. Open de sjabloon van de pagina Sites of Experience Fragment. Om het malplaatje te openen, ga naar **[!UICONTROL Page Information]** ![ de Informatie van de Pagina ](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Edit Template]**. De bijbehorende sjabloon wordt geopend in de sjablooneditor.
+1. In de mening van de Structuur, klik het **[!UICONTROL Policy]** ![ Beleid ](/help/forms/assets/Smock_FeedManagement_18_N.svg) pictogram in de menubar. In de **[!UICONTROL Allowed Components]** lijst en selecteer **[!UICONTROL Adaptive Forms – Embed(v2)]** checkbox onder de **[Naam van het Project van de Archetype van AEM ] - Aangepaste Vorm**.
 1. Klik op **[!UICONTROL Done]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
@@ -168,7 +168,7 @@ Met **[!UICONTROL Adaptive Forms - Embed(v2)]** kunt u:
 * [Nieuw formulier insluiten met de wizard Adaptieve Forms in een ervaringsfragment](#embed-form-using-adaptive-form-wizzard-experience-fragment)
 * [Een bestaand adaptief formulier insluiten in een AEM Sites-pagina](#embed-an-adaptive-form-in-sites-editor)
 * [Een bestaand formulier insluiten in een ervaringsfragment](#embed-an-adaptive-form-in-experience-fragment)
-* [&#x200B; zet een Aangepast Vorm in de pagina van AEM Sites in een Fragment van de Ervaring om &#x200B;](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
+* [ zet een Aangepast Vorm in de pagina van AEM Sites in een Fragment van de Ervaring om ](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### Nieuw formulier insluiten met de wizard Adaptive Forms in AEM Sites Page {#embed-form-using-adaptive-form-wizzard-aem-sites}
 
@@ -178,7 +178,7 @@ De stappen voor het insluiten van een nieuw formulier op een AEM Sites-pagina zi
 1. Sleep de component **[!UICONTROL Adaptive Forms - Embed(v2)]** vanuit het deelvenster Componentbrowser naar de pagina.
 1. Klik **plus** pictogram en u wordt opnieuw gericht aan de tovenaar van de vormverwezenlijking.
 
-   ![&#x200B; Aangepaste Forms - bed Component &#x200B;](/help/forms/assets/aemformcontainer.png) in
+   ![ Aangepaste Forms - bed Component ](/help/forms/assets/aemformcontainer.png) in
 
 1. Maak een nieuw adaptief formulier via de wizard **[!UICONTROL Form Creation]** .
 Het **[!UICONTROL Asset Path]** bevat al het pad van een gemaakt adaptief formulier
@@ -186,7 +186,7 @@ Het **[!UICONTROL Asset Path]** bevat al het pad van een gemaakt adaptief formul
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
-Daarna, kunt u [&#x200B; plaatsen de Submit Actie &#x200B;](/help/forms/configuring-submit-actions.md) en geavanceerde eigenschappen van een ingebedde AanpassingsVorm gebruikend de tovenaar van de creatie van de Vorm.
+Daarna, kunt u [ plaatsen de Submit Actie ](/help/forms/configuring-submit-actions.md) en geavanceerde eigenschappen van een ingebedde AanpassingsVorm gebruikend de tovenaar van de creatie van de Vorm.
 
 
 ### Nieuw formulier insluiten met de wizard Adaptieve Forms in een ervaringsfragment {#embed-form-using-adaptive-form-wizzard-experience-fragment}
@@ -197,13 +197,13 @@ De stappen voor het insluiten van een nieuw formulier in een ervaringsfragment z
 1. Sleep de component **[!UICONTROL Adaptive Forms - Embed(v2)]** vanuit het deelvenster Componentbrowser naar de pagina.
 1. Klik **plus** pictogram en u wordt opnieuw gericht aan de tovenaar van de vormverwezenlijking.
 
-   ![&#x200B; Aangepaste Forms - bed Component &#x200B;](/help/forms/assets/aemformcontainer.png) in
+   ![ Aangepaste Forms - bed Component ](/help/forms/assets/aemformcontainer.png) in
 
 1. Maak een nieuw adaptief formulier via de wizard **[!UICONTROL Form Creation]** .
 Het **[!UICONTROL Asset Path]** bevat al het pad van een gemaakt adaptief formulier
 1. Sla de instellingen op. Het adaptieve formulier is nu ingesloten in het ervaringsfragment.
 
-Daarna, kunt u [&#x200B; plaatsen de Submit Actie &#x200B;](/help/forms/configuring-submit-actions.md) en geavanceerde eigenschappen van een ingebedde AanpassingsVorm gebruikend de tovenaar van de creatie van de Vorm.
+Daarna, kunt u [ plaatsen de Submit Actie ](/help/forms/configuring-submit-actions.md) en geavanceerde eigenschappen van een ingebedde AanpassingsVorm gebruikend de tovenaar van de creatie van de Vorm.
 
 ### Een bestaand adaptief formulier insluiten in een AEM Sites-pagina {#embed-an-adaptive-form-in-sites-editor}
 
@@ -213,13 +213,13 @@ Een bestaand adaptief formulier insluiten in een sitepagina:
 
 1. Open de AEM Sites-pagina in de bewerkingsmodus.
 1. Sleep de component **[!UICONTROL Adaptive Forms - Embed(v2)]** van de Componentbrowser naar de pagina Sites.
-1. Selecteer de **[!UICONTROL Adaptive Forms - Embed]** component in de pagina van Plaatsen en selecteer ![&#x200B; de Adaptieve eigenschappen van de Container van de Vorm &#x200B;](/help/forms/assets/configure-icon.svg) op de actiebar. Het dialoogvenster **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** wordt geopend.
+1. Selecteer de **[!UICONTROL Adaptive Forms - Embed]** component in de pagina van Plaatsen en selecteer ![ de Adaptieve eigenschappen van de Container van de Vorm ](/help/forms/assets/configure-icon.svg) op de actiebar. Het dialoogvenster **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** wordt geopend.
 1. Blader naar het adaptieve formulier dat u wilt insluiten in het **[!UICONTROL Asset Path]** en selecteer dit.
 1. Sla de instellingen op. Het adaptieve formulier is nu ingesloten in de pagina.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
 
-Daarna, kunt u [&#x200B; plaatsen de Submit Actie &#x200B;](/help/forms/configuring-submit-actions.md) en geavanceerde eigenschappen van een ingebedde AanpassingsVorm gebruikend de tovenaar van de creatie van de Vorm.
+Daarna, kunt u [ plaatsen de Submit Actie ](/help/forms/configuring-submit-actions.md) en geavanceerde eigenschappen van een ingebedde AanpassingsVorm gebruikend de tovenaar van de creatie van de Vorm.
 
 ### Een bestaand adaptief formulier insluiten in een ervaringsfragment {#embed-an-adaptive-form-in-experience-fragment}
 
@@ -227,11 +227,11 @@ U kunt de toegankelijkheid van uw formulieren ook uitbreiden door deze in te slu
 
 1. Open een Experience Fragment in de bewerkingsmodus.
 1. Sleep de component **[!UICONTROL Adaptive Forms - Embed(v2)]** van de Componentbrowser naar het fragment van de Experience.
-1. Selecteer de **[!UICONTROL Adaptive Forms - Embed]** component in het Fragment van de Ervaring en selecteer ![&#x200B; de Adaptieve eigenschappen van de Container van de Vorm &#x200B;](/help/forms/assets/configure-icon.svg) op de actiebar. Het dialoogvenster **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** wordt geopend.
+1. Selecteer de **[!UICONTROL Adaptive Forms - Embed]** component in het Fragment van de Ervaring en selecteer ![ de Adaptieve eigenschappen van de Container van de Vorm ](/help/forms/assets/configure-icon.svg) op de actiebar. Het dialoogvenster **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** wordt geopend.
 1. Blader naar het adaptieve formulier dat u wilt insluiten in het **[!UICONTROL Asset Path]** en selecteer dit.
 1. Sla de instellingen op. Het adaptieve formulier is nu ingesloten in het ervaringsfragment.
 
-Daarna, kunt u [&#x200B; plaatsen de Submit Actie &#x200B;](/help/forms/configuring-submit-actions.md) en geavanceerde eigenschappen van een ingebedde AanpassingsVorm gebruikend de tovenaar van de creatie van de Vorm.
+Daarna, kunt u [ plaatsen de Submit Actie ](/help/forms/configuring-submit-actions.md) en geavanceerde eigenschappen van een ingebedde AanpassingsVorm gebruikend de tovenaar van de creatie van de Vorm.
 
 ### Een formulier in een AEM Sites-pagina converteren naar een Experience-fragment {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
@@ -241,9 +241,9 @@ Een adaptief formulier in AEM Sites-pagina converteren naar een Experience-fragm
 
 1. Open de AEM Sites-pagina met het adaptieve formulier (in de Adaptive Forms Container-component) in de bewerkingsmodus.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Adaptive Forms Container]** die als host fungeert voor het adaptieve formulier. Een AEM Sites-pagina kan meerdere Adaptive Forms hosten. Selecteer dus zorgvuldig de juiste adaptieve Forms-container.
-1. Voor de menubar, selecteer ![&#x200B; Bekeerling om het pictogram van de fragmentvariatie &#x200B;](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Omzetten in het de variatiepictogram van het Fragment van de Ervaring te ervaren.
+1. Voor de menubar, selecteer ![ Bekeerling om het pictogram van de fragmentvariatie ](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Omzetten in het de variatiepictogram van het Fragment van de Ervaring te ervaren.
 
-   ![&#x200B; klik het embleem van het dossierkabinet om een Aangepast Vorm in de pagina van AEM Sites in een Fragment van de Ervaring om te zetten &#x200B;](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![ klik het embleem van het dossierkabinet om een Aangepast Vorm in de pagina van AEM Sites in een Fragment van de Ervaring om te zetten ](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Er wordt een dialoogvenster weergegeven waarin u de container Adaptief formulier kunt converteren naar een nieuw Erviteitsfragment of een bestaand Erviteitsfragment kunt toevoegen.
 
@@ -251,7 +251,7 @@ Een adaptief formulier in AEM Sites-pagina converteren naar een Experience-fragm
 
    * **Actie:** Uitgezocht om een Fragment van de Ervaring tot stand te brengen of aan een bestaand Fragment van de Ervaring toe te voegen.
    * **de weg van de Ouder:** specificeer weg van de omslag om het Fragment van de Ervaring binnen te ontvangen. De optie is alleen beschikbaar voor het maken van een nieuw ervaringsfragment.
-   * **Malplaatje:** specificeer weg van het malplaatje van het Fragment van de Ervaring. Als u geen malplaatje van het Fragment van de Ervaring hebt, [&#x200B; creeer het &#x200B;](/help/implementing/developing/extending/experience-fragments.md). De optie is alleen beschikbaar als u een adaptief formulier toevoegt aan een bestaand ervaringsfragment.
+   * **Malplaatje:** specificeer weg van het malplaatje van het Fragment van de Ervaring. Als u geen malplaatje van het Fragment van de Ervaring hebt, [ creeer het ](/help/implementing/developing/extending/experience-fragments.md). De optie is alleen beschikbaar als u een adaptief formulier toevoegt aan een bestaand ervaringsfragment.
    * **titel van het Fragment:** specificeer titel van het Fragment van de Ervaring. De titel identificeert uniek een Fragment van de Ervaring.
    * **de markeringen van het Fragment:** specificeer markering van het Fragment van de Ervaring. De tag geeft een unieke categorie van een ervaringsfragment aan.
 
