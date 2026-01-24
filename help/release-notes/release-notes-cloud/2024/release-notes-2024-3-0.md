@@ -49,7 +49,7 @@ AEM Sites kan nu worden gebruikt als inhoudsbron voor Edge Delivery Services. Au
 
 ![&#x200B; AEM Authoring &#x200B;](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Voor meer informatie, zie de [&#x200B; documentatie &#x200B;](/help/edge/overview.md) en bekijk [&#x200B; AEM Gems - die met de Authoring van AEM en Edge Delivery Services &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905) worden begonnen
+Voor meer informatie, zie de [&#x200B; documentatie &#x200B;](/help/edge/overview.md) en bekijk [&#x200B; AEM Gems - die met de Authoring van AEM en Edge Delivery Services &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=nl#M43905) worden begonnen
 
 **Universele Redacteur voor Hoofdloze Implementaties**
 

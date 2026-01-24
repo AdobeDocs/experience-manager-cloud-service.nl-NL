@@ -106,7 +106,7 @@ Zie voor zelfhulp bronnen over het configureren en implementeren van AEM as a Cl
 > Voor extra hulp, kunt u willen:
 >
 >1. [&#x200B; contacteer het Team van de Steun van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=nl-NL)
->1. Onderzoek [&#x200B; de Gemeenschappen &amp; de Forums van Experience Manager &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+>1. Onderzoek [&#x200B; de Gemeenschappen &amp; de Forums van Experience Manager &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=nl)
 
 <br>
 
@@ -219,4 +219,4 @@ In de fase na Go-Live moet u ervoor zorgen dat tijdelijke bestanden worden opges
 > Voor extra hulp, kunt u willen:
 >
 >1. [&#x200B; contacteer het Team van de Steun van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=nl-NL)
->1. Onderzoek [&#x200B; de Gemeenschappen &amp; de Forums van Experience Manager &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+>1. Onderzoek [&#x200B; de Gemeenschappen &amp; de Forums van Experience Manager &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=nl)

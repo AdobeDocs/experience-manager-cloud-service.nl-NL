@@ -567,7 +567,7 @@ Solutions:
 **Kanalen van de Steun:**
 
 - **API Documentatie:** [&#x200B; Verwijzing van de Ontwikkelaar &#x200B;](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **Communautaire Steun:** [&#x200B; Gemeenschap van de Liga van de Ervaring van Adobe &#x200B;](https://experienceleaguecommunities.adobe.com/)
+- **Communautaire Steun:** [&#x200B; Gemeenschap van de Liga van de Ervaring van Adobe &#x200B;](https://experienceleaguecommunities.adobe.com/?profile.language=nl)
 
 +++
 
