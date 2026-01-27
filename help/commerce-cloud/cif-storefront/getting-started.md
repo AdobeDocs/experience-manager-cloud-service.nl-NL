@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Aan de slag met AEM Commerce as a Cloud Service {#start}
 
-Als u aan de slag wilt met Adobe Experience Manager (AEM) Commerce as a Cloud Service, moet uw Experience Manager Cloud Service zijn ingericht met de invoegtoepassing Commerce integration framework (CIF). CIF toe:voegen-op is een extra module bovenop [&#x200B; AEM Sites as a Cloud Service.](/help/sites-cloud/sites-cloud-changes.md)
+Als u aan de slag wilt met Adobe Experience Manager (AEM) Commerce as a Cloud Service, moet uw Experience Manager Cloud Service zijn ingericht met de invoegtoepassing Commerce integration framework (CIF). CIF toe:voegen-op is een extra module bovenop [ AEM Sites as a Cloud Service.](/help/sites-cloud/sites-cloud-changes.md)
 
 >[!TIP]
 >
 >**hebt u Edge Delivery Services overwogen?**
 >
->Edge Delivery Services is de Adobe-voorkeursoplossing voor het maken van een winkel. Gelieve te zien het document [&#x200B; Inleiding en overzicht &#x200B;](/help/commerce-cloud/introduction.md) voor meer informatie.
+>Edge Delivery Services is de Adobe-voorkeursoplossing voor het maken van een winkel. Gelieve te zien het document [ Inleiding en overzicht ](/help/commerce-cloud/introduction.md) voor meer informatie.
 
 ## Onboarding {#onboarding}
 
@@ -36,13 +36,13 @@ De instapprocedure voor AEM Commerce as a Cloud Service bestaat uit twee stappen
 
 De eerste instapstap wordt uitgevoerd door Adobe. Voor meer informatie over prijzen en provisioning moet u contact opnemen met uw verkoper.
 
-Nadat u de invoegtoepassing CIF hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u er een maken. Voor meer details, zie [&#x200B; Opstelling uw Programma.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=nl-NL)
+Nadat u de invoegtoepassing CIF hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u er een maken. Voor meer details, zie [ Opstelling uw Programma.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
 
 De tweede stap is zelfbediening voor elke AEM as a Cloud Service-omgeving. Er zijn enkele aanvullende configuraties die u moet uitvoeren na de eerste provisioning van de CIF-invoegtoepassing.
 
 ## AEM verbinden met een Commerce-oplossing {#solution}
 
-Om CIF toe:voegen-op &amp; de [&#x200B; componenten van de Kern van AEM CIF &#x200B;](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing te verbinden, moet u het eindpunt URL van GraphQL als milieuvariabele van Cloud Manager verstrekken. De variabelenaam is `COMMERCE_ENDPOINT` . Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
+Om CIF toe:voegen-op &amp; de [ componenten van de Kern van AEM CIF ](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing te verbinden, moet u het eindpunt URL van GraphQL als milieuvariabele van Cloud Manager verstrekken. De variabelenaam is `COMMERCE_ENDPOINT` . Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
 
 Deze omgevingsvariabele wordt op twee plaatsen gebruikt:
 
@@ -61,15 +61,15 @@ Er zijn twee opties om het eindpunt te vormen:
 
 Deze configuratie kan worden gedaan gebruikend een dialoogdoos op de pagina van de Details van het Milieu. Wanneer het bekijken van deze pagina voor een Commerce-Toegelaten programma, wordt een knoop getoond als het eindpunt momenteel niet wordt gevormd:
 
-![&#x200B; Informatie van het Milieu van CM &#x200B;](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
+![ de Informatie van het Milieu van CM ](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
 
 Als u op deze knop klikt, wordt een dialoogvenster geopend:
 
-![&#x200B; Commerce Eindpunt van CM &#x200B;](/help/commerce-cloud/cif-storefront/assets/commerce-cm-endpoint.png)
+![ Commerce Eindpunt van CM ](/help/commerce-cloud/cif-storefront/assets/commerce-cm-endpoint.png)
 
 Nadat het eindpunt en naar keuze een vergunningskopbal voor gefaseerde catalogussteun wordt geplaatst, wordt het eindpunt getoond op de detailpagina. Klik op het pictogram Bewerken om hetzelfde dialoogvenster te openen waarin u indien nodig het eindpunt kunt bewerken.
 
-![&#x200B; Informatie van het Milieu van CM &#x200B;](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
+![ de Informatie van het Milieu van CM ](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
 
 ### Als Adobe I/O CLI  {#adobe-cli}
 
@@ -77,7 +77,7 @@ Ga als volgt te werk als u AEM via Adobe I/O CLI wilt verbinden met een handelso
 
 1. Kies voor de Adobe I/O CLI met de Cloud Manager-insteekmodule.
 
-   * Controleer de [&#x200B; documentatie van Adobe Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL) op hoe te om, opstelling te downloaden, en [&#x200B; Adobe I/O CLI &#x200B;](https://github.com/adobe/aio-cli) met de [&#x200B; stop van Cloud Manager CLI te gebruiken.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * Controleer de [ documentatie van Adobe Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) op hoe te om, opstelling te downloaden, en [ Adobe I/O CLI ](https://github.com/adobe/aio-cli) met de [ stop van Cloud Manager CLI te gebruiken.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. Verifieer Adobe I/O CLI met het programma van AEM as a Cloud Service.
 
@@ -87,7 +87,7 @@ Ga als volgt te werk als u AEM via Adobe I/O CLI wilt verbinden met een handelso
    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable COMMERCE_ENDPOINT "<Magento GraphQL endpoint URL>"
    ```
 
-   * Zie [&#x200B; CLI documenten &#x200B;](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor details.
+   * Zie [ CLI documenten ](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor details.
 
    * De handel GraphQL eindpunt URL moet aan de dienst van GraphQl van de handel richten en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://<yourcommercesystem>/graphql` .
 
@@ -95,7 +95,7 @@ Ga als volgt te werk als u AEM via Adobe I/O CLI wilt verbinden met een handelso
 
    >[!NOTE]
    >
-   >Deze functie is alleen beschikbaar in Adobe Commerce Enterprise of Cloud Edition. Zie [&#x200B; op token-gebaseerde authentificatie &#x200B;](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) voor details.
+   >Deze functie is alleen beschikbaar in Adobe Commerce Enterprise of Cloud Edition. Zie [ op token-gebaseerde authentificatie ](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) voor details.
 
    * Stel de geheim variabele `COMMERCE_AUTH_HEADER` in Cloud Manager in:
 
@@ -111,7 +111,7 @@ U kunt AEM Commerce as a Cloud Service gebruiken en uw project implementeren via
 
 ## Opslaan en catalogi configureren {#catalog}
 
-CIF toe:voegen-op en de [&#x200B; Componenten van de Kern van CIF &#x200B;](https://github.com/adobe/aem-core-cif-components) kunnen op veelvoudige de plaatsstructuren worden gebruikt van AEM die met verschillende handelshoudingen (of opslagmeningen, etc. worden verbonden). Standaard wordt de invoegtoepassing CIF geïmplementeerd met een standaardconfiguratie die verbinding maakt met de standaardwinkel en catalogus van Adobe Commerce.
+CIF toe:voegen-op en de [ Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components) kunnen op veelvoudige de plaatsstructuren worden gebruikt van AEM die met verschillende handelshoudingen (of opslagmeningen, etc. worden verbonden). Standaard wordt de invoegtoepassing CIF geïmplementeerd met een standaardconfiguratie die verbinding maakt met de standaardwinkel en catalogus van Adobe Commerce.
 
 Deze configuratie kan voor het project door CIF Cloud Service worden aangepast config die deze stappen volgt:
 
@@ -121,7 +121,7 @@ Deze configuratie kan voor het project door CIF Cloud Service worden aangepast c
 
 1. Open de configuratie-eigenschappen via de actiebalk.
 
-![&#x200B; Configuratie van de Diensten van de Wolk van CIF &#x200B;](/help/commerce-cloud/cif-storefront/assets/cif-cloud-service-config.png)
+![ Configuratie van de Diensten van de Wolk van CIF ](/help/commerce-cloud/cif-storefront/assets/cif-cloud-service-config.png)
 
 De volgende eigenschappen kunnen worden geconfigureerd:
 
@@ -147,11 +147,11 @@ De volgende eigenschappen kunnen worden geconfigureerd:
 
 De configuratie hierboven wordt getoond is voor verwijzing. De projecten zouden hun eigen configuraties moeten verstrekken.
 
-Voor complexere montages, die veelvoudige de plaatsstructuren gebruiken van AEM die met verschillende handelscatalogi worden gecombineerd zien het [&#x200B; leerprogramma van de Opstelling van de multi-Opslag van 0&rbrace; Commerce &lbrace;.](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
+Voor complexere montages, die veelvoudige de plaatsstructuren gebruiken van AEM die met verschillende handelscatalogi worden gecombineerd zien het [ leerprogramma van de Opstelling van de multi-Opslag van 0} Commerce {.](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype)
-* [&#x200B; de Opslag van de Verwijzing van AEM Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia)
+* [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype)
+* [ de Opslag van de Verwijzing van AEM Venia ](https://github.com/adobe/aem-cif-guides-venia)
 * [Commerce Multi-Store Setup](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
 * [Meerdere Commerce Systems-instellingen](/help/commerce-cloud/cif-storefront/configuring/multiple-commerce-systems-setup.md)
