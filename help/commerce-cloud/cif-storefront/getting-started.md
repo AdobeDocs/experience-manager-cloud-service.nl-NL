@@ -36,7 +36,7 @@ De instapprocedure voor AEM Commerce as a Cloud Service bestaat uit twee stappen
 
 De eerste instapstap wordt uitgevoerd door Adobe. Voor meer informatie over prijzen en provisioning moet u contact opnemen met uw verkoper.
 
-Nadat u de invoegtoepassing CIF hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u er een maken. Voor meer details, zie [&#x200B; Opstelling uw Programma.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
+Nadat u de invoegtoepassing CIF hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u er een maken. Voor meer details, zie [&#x200B; Opstelling uw Programma.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=nl-NL)
 
 De tweede stap is zelfbediening voor elke AEM as a Cloud Service-omgeving. Er zijn enkele aanvullende configuraties die u moet uitvoeren na de eerste provisioning van de CIF-invoegtoepassing.
 
@@ -77,7 +77,7 @@ Ga als volgt te werk als u AEM via Adobe I/O CLI wilt verbinden met een handelso
 
 1. Kies voor de Adobe I/O CLI met de Cloud Manager-insteekmodule.
 
-   * Controleer de [&#x200B; documentatie van Adobe Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) op hoe te om, opstelling te downloaden, en [&#x200B; Adobe I/O CLI &#x200B;](https://github.com/adobe/aio-cli) met de [&#x200B; stop van Cloud Manager CLI te gebruiken.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * Controleer de [&#x200B; documentatie van Adobe Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL) op hoe te om, opstelling te downloaden, en [&#x200B; Adobe I/O CLI &#x200B;](https://github.com/adobe/aio-cli) met de [&#x200B; stop van Cloud Manager CLI te gebruiken.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. Verifieer Adobe I/O CLI met het programma van AEM as a Cloud Service.
 

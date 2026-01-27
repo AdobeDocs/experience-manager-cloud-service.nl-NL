@@ -45,7 +45,7 @@ De krachtige hulpmiddelen van CIF in AEM laten inhoudsmakers toe om rijke en gep
 
 ### Tijd-aan-Waarde (TTV) {#ttv}
 
-CIF versnelt projectontwikkeling met [&#x200B; de Componenten van de Kern van AEM &#x200B;](https://www.aemcomponents.dev/), [&#x200B; AEM Venia verwijzingsstorefront &#x200B;](https://github.com/adobe/aem-cif-guides-venia), [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), en integratiepatronen voor PWAs (Zwaardeloze inhoud en handel).
+CIF versnelt projectontwikkeling met [&#x200B; de Componenten van de Kern van AEM &#x200B;](https://www.aemcomponents.dev/), [&#x200B; AEM Venia verwijzingsstorefront &#x200B;](https://github.com/adobe/aem-cif-guides-venia), [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL), en integratiepatronen voor PWAs (Zwaardeloze inhoud en handel).
 
 CIF is gebouwd voor voortdurende innovatie met een altijd up-to-date invoegtoepassing, zodat u toegang hebt tot nieuwe en verbeterde functies.
 

@@ -21,7 +21,7 @@ In dit onderwerp wordt beschreven hoe u een AEM CIF-component kunt gebruiken om 
 
 ## Vereisten {#prerequisites}
 
-Dit onderwerp veronderstelt u een lokale [&#x200B; milieu van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) opstelling hebt.
+Dit onderwerp veronderstelt u een lokale [&#x200B; milieu van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL) opstelling hebt.
 
 De component PLP vereist [[!DNL Live Search]  Popover de component van CIF &#x200B;](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md) om worden geïnstalleerd. Voor de PLP-widget is een browsersessievariabele nodig die door de pop-over wordt gegenereerd.
 
