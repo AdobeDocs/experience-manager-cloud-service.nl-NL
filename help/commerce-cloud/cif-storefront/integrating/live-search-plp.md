@@ -21,9 +21,9 @@ In dit onderwerp wordt beschreven hoe u een AEM CIF-component kunt gebruiken om 
 
 ## Vereisten {#prerequisites}
 
-Dit onderwerp veronderstelt u een lokale [ milieu van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) opstelling hebt.
+Dit onderwerp veronderstelt u een lokale [&#x200B; milieu van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) opstelling hebt.
 
-De component PLP vereist [[!DNL Live Search]  Popover de component van CIF ](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md) om worden geïnstalleerd. Voor de PLP-widget is een browsersessievariabele nodig die door de pop-over wordt gegenereerd.
+De component PLP vereist [[!DNL Live Search]  Popover de component van CIF &#x200B;](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md) om worden geïnstalleerd. Voor de PLP-widget is een browsersessievariabele nodig die door de pop-over wordt gegenereerd.
 
 ## Composer bijwerken {#update-composer}
 
@@ -341,12 +341,12 @@ Er kunnen categorieën zijn waarin de standaardcategorie of cataloguspagina gewe
 
 1. Selecteer op de pagina Auteur een paginasjabloon voor een categorie. _Winkel van Venia - Huis_ > _de Pagina van de Catalogus_ > _Winkel van Venia - de Pagina van de Categorie_ en selecteert &quot;Schaf de blik&quot;of creeer een nieuw paginamalplaatje.
 
-![ selecteer het malplaatje ](../assets/cif-widget-1.jpg)
+![&#x200B; selecteer het malplaatje &#x200B;](../assets/cif-widget-1.jpg)
 
 1. Klik de _sectie van Eigenschappen_ en selecteer _Commerce_ tabel.
 
-![ kies Eigenschappen ](../assets/cif-widget-2.jpg)
+![&#x200B; kies Eigenschappen &#x200B;](../assets/cif-widget-2.jpg)
 
 1. Kies de categorie die u wilt weergeven met de geselecteerde paginasjabloon voor rubrieken.
 
-![ selecteer de categorie ](../assets/cif-widget-3.jpg)
+![&#x200B; selecteer de categorie &#x200B;](../assets/cif-widget-3.jpg)

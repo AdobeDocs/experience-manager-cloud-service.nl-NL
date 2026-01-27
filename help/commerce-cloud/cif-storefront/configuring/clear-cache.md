@@ -41,13 +41,13 @@ De functie clear-cache wordt standaard uitgeschakeld in de CIF-configuratie. Om 
 
    * Zorg er ook voor dat u het overeenkomende patroon opgeeft dat bij het product, de categorie en de CMS-pagina past, en dat u deze aan het bovenstaande configuratiebestand toevoegt om het uit de verzendcache te verwijderen.
 
-* Als u de prestaties van SQL-query&#39;s wilt verbeteren om de bijbehorende pagina te zoeken die betrekking heeft op product en categorie, voegt u de corresponderende index toe aan uw project (aanbevolen). Voor meer informatie, zie [ cifCacheInvalidationSupport.](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)
+* Als u de prestaties van SQL-query&#39;s wilt verbeteren om de bijbehorende pagina te zoeken die betrekking heeft op product en categorie, voegt u de corresponderende index toe aan uw project (aanbevolen). Voor meer informatie, zie [&#x200B; cifCacheInvalidationSupport.](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)
 
 ## Cache-functie wissen verifiëren {#verify-clear-cache}
 
 Om te controleren of alles correct is ingesteld:
 
-* Trigger overeenkomstige servlet aan de Instantie AEM van de Auteur, bijvoorbeeld [ http://localhost :4502/bin/cif/invalidate-cache ](http://localhost:4502/bin/cif/invalidate-cache) en u zou een reactie van 200 HTTP moeten krijgen.
+* Trigger overeenkomstige servlet aan de Instantie AEM van de Auteur, bijvoorbeeld [&#x200B; http://localhost :4502/bin/cif/invalidate-cache &#x200B;](http://localhost:4502/bin/cif/invalidate-cache) en u zou een reactie van 200 HTTP moeten krijgen.
 * Controleer of er een knooppunt is gemaakt onder het volgende pad in auteurinstanties: `/var/cif/cacheinvalidation` . De knooppuntnaam volgt dit patroon: `cmd_{{timestamp}}`.
 * Verifieer dat de zelfde knoop in elke publicatieinstantie is gecreeerd.
 
@@ -129,14 +129,14 @@ Deze functie biedt niet alleen de kernfunctionaliteit, maar ook uitbreidbaarheid
 
 ### Het bestaande kenmerk uitbreiden {#existing-attribute}
 
-In gevallen waar het geheime voorgeheugen moet worden ontruimd die momenteel niet door de bestaande op attributen-gebaseerde functionaliteit (zoals `categoryUids`) worden behandeld, kunt u naar [ verwijzen dit verwijzingsdossier ](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/ExtendedCategoryUidInvalidation.java) om nieuwe patronen toe te voegen en extra `invalidatePaths` te bepalen die van het geheime voorgeheugen voorbij wat de huidige implementatiehandvatten zouden moeten worden ontruimd.
+In gevallen waar het geheime voorgeheugen moet worden ontruimd die momenteel niet door de bestaande op attributen-gebaseerde functionaliteit (zoals `categoryUids`) worden behandeld, kunt u naar [&#x200B; verwijzen dit verwijzingsdossier &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/ExtendedCategoryUidInvalidation.java) om nieuwe patronen toe te voegen en extra `invalidatePaths` te bepalen die van het geheime voorgeheugen voorbij wat de huidige implementatiehandvatten zouden moeten worden ontruimd.
 
 ### Nieuw aangepast kenmerk toevoegen {#new-custom-attribute}
 
 Als, bijvoorbeeld, u niet de bestaande attributen voor het ontruimen van het geheime voorgeheugen wilt gebruiken, dan hebt u de flexibiliteit om uw eigen attribuut tot stand te brengen en zijn overeenkomstige functionaliteit te bepalen.
 
-* Als u slechts geheim voorgeheugen van het interne geheugen van AEM (de grafische reactie) moet ontruimen, dan moet u [ deze verwijzing volgen.](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java)
-* Als u geheim voorgeheugen van het interne geheugen en het verzenders geheime voorgeheugen moet ontruimen, dan moet u [ deze verwijzing volgen.](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)
+* Als u slechts geheim voorgeheugen van het interne geheugen van AEM (de grafische reactie) moet ontruimen, dan moet u [&#x200B; deze verwijzing volgen.](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java)
+* Als u geheim voorgeheugen van het interne geheugen en het verzenders geheime voorgeheugen moet ontruimen, dan moet u [&#x200B; deze verwijzing volgen.](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)
 
   >[!NOTE]
   >
