@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=nl-NL) |
 | AEM as a Cloud Service (Foundation Components) | [&#x200B; klik hier &#x200B;](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
 
@@ -58,7 +58,7 @@ De indeling van deelvensters is handig om verwante velden zo te ordenen dat u ge
 
 Layout deelvenster
 
-U kunt de [&#x200B; paneelcomponent &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [&#x200B; artikel van de paneelcomponent &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+U kunt de [&#x200B; paneelcomponent &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [&#x200B; artikel van de paneelcomponent &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 >[!TAB  Lay-out van de Tovenaar ]
 
@@ -68,7 +68,7 @@ De indeling van de wizard helpt een complex formulier te vereenvoudigen door het
 
 Wizard Layout
 
-U kunt de [&#x200B; tovenaar component &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [&#x200B; artikel van de tovenaarscomponent &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+U kunt de [&#x200B; tovenaar component &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [&#x200B; artikel van de tovenaarscomponent &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 >[!TAB  Verticale Lay-out van Lusjes ]
 
@@ -78,7 +78,7 @@ De lay-out van verticale tabbladen wordt ook wel tabbladen in de linkerlay-out g
 
 Lay-out verticale tabs
 
-U kunt de [&#x200B; verticale component van lusjes &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) gebruiken om de verticale lusjelay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de verticale component van lusjes te vormen, verwijs naar het [&#x200B; verticale artikel van de luscomponent van lusjes &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
+U kunt de [&#x200B; verticale component van lusjes &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) gebruiken om de verticale lusjelay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de verticale component van lusjes te vormen, verwijs naar het [&#x200B; verticale artikel van de luscomponent van lusjes &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
 
 
 >[!TAB  Horizontale Lay-out van Lusjes ]
@@ -90,7 +90,7 @@ De lay-out Horizontale tabbladen wordt ook wel Tabs in de bovenste lay-out genoe
 
 Lay-out horizontale tabs
 
-U kunt de [&#x200B; horizontale component van lusjes &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) gebruiken om de horizontale lusjelay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de horizontale component van lusjes te vormen, verwijs naar het [&#x200B; horizontale artikel van de lussencomponent &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+U kunt de [&#x200B; horizontale component van lusjes &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) gebruiken om de horizontale lusjelay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de horizontale component van lusjes te vormen, verwijs naar het [&#x200B; horizontale artikel van de lussencomponent &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB  Lay-out van de Accordeon ]
@@ -101,7 +101,7 @@ De accordeonindeling geeft de inhoud in inklapbare secties of deelvensters weer 
 
 Accordeonlay-out
 
-U kunt de [&#x200B; accordeoncomponent &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [&#x200B; artikel van de component 0&rbrace; accordeon &lbrace;.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)
+U kunt de [&#x200B; accordeoncomponent &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [&#x200B; artikel van de component 0&rbrace; accordeon &lbrace;.](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)
 
 >[!ENDTABS]
 
