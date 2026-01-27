@@ -19,20 +19,20 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Aangepaste beschikbaarheid van Forms Core-componenten
 
-Alle **AEM Forms as a Cloud Service** milieu&#39;s omvatten inheemse steun voor het creëren van Aanpassings Forms gebruikend de Componenten van de Kern. Voor geleidelijke instructies op vormverwezenlijking, verwijs naar [ creeer een Aangepaste Vorm ](/help/forms/create-an-adaptive-form.md).
+Alle **AEM Forms as a Cloud Service** milieu&#39;s omvatten inheemse steun voor het creëren van Aanpassings Forms gebruikend de Componenten van de Kern. Voor geleidelijke instructies op vormverwezenlijking, verwijs naar [&#x200B; creeer een Aangepaste Vorm &#x200B;](/help/forms/create-an-adaptive-form.md).
 
 ### Adaptieve Forms Core-componenten inschakelen voor AEM 6.5
 
 Voor **AEM 6.5 Forms** en **AEM 6.5 LTS Forms** milieu&#39;s, worden de Adaptieve Componenten van de Kern van Forms niet toegelaten door gebrek. U moet het AEM Archetype gebruiken om Adaptive Forms-mogelijkheden aan uw omgeving toe te voegen.
 
 Volg de relevante handleidingen:
-- Voor AEM 6.5 Forms: [ laat de Aangepaste Componenten van de Kern van Forms op AEM 6.5 Forms ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) toe.
-- Voor AEM 6.5 LTS Forms: [ laat de Aangepaste Componenten van de Kern van Forms op AEM 6.5 LTS Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) toe.
+- Voor AEM 6.5 Forms: [&#x200B; laat de Aangepaste Componenten van de Kern van Forms op AEM 6.5 Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) toe.
+- Voor AEM 6.5 LTS Forms: [&#x200B; laat de Aangepaste Componenten van de Kern van Forms op AEM 6.5 LTS Forms &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) toe.
 
 **Nota:** als om het even welke stappen voor het toelaten van de Adaptieve Componenten van de Kern van Forms in oudere milieu&#39;s AEM 6.5 onduidelijk zijn of milieu-specifieke eerste vereisten bestaan, deze vereisten verduidelijken alvorens toe te laten.
 

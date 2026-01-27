@@ -43,51 +43,51 @@ Voer de volgende stappen uit om een adaptief formulier te maken met behulp van X
 1. Meld u aan bij de auteurinstantie van [!DNL Experience Manager Forms] .
 1. Voer uw referenties in op de Experience Manager-aanmeldingspagina. Nadat u zich hebt aangemeld, selecteert u in de linkerbovenhoek **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
-   ![ Forms en Documenten ](/help/forms/assets/create-fdm.png)
+   ![&#x200B; Forms en Documenten &#x200B;](/help/forms/assets/create-fdm.png)
 
 1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** .
 
-   ![ creeer Aangepaste Vorm ](/help/forms/assets/create-af.png)
+   ![&#x200B; creeer Aangepaste Vorm &#x200B;](/help/forms/assets/create-af.png)
 
    De wizard Formulier maken wordt geopend.
 1. In het **Source** lusje, selecteer een malplaatje dat op de Componenten van de Kern wordt gebaseerd.
 
-   ![ Uitgezochte malplaatje ](/help/forms/assets/select-template.png)
+   ![&#x200B; Uitgezochte malplaatje &#x200B;](/help/forms/assets/select-template.png)
 
    Wanneer u een sjabloon selecteert, wordt de in de sjabloon opgegeven actie voor het thema en het verzenden automatisch geselecteerd en wordt de knop **[!UICONTROL Create]** ingeschakeld.
 
-   ![ Uitgezochte thema ](/help/forms/assets/select-form-theme.png)
+   ![&#x200B; Uitgezochte thema &#x200B;](/help/forms/assets/select-form-theme.png)
 
 1. Selecteer **[!UICONTROL Create]**. Er wordt een dialoogvenster weergegeven waarin u de titel, naam en locatie voor het opslaan van het adaptieve formulier kunt opgeven.
 1. Geef de titel, naam en locatie op.
 1. Selecteer **[!UICONTROL Create]** .
-   ![ verstrekken naam en titel ](/help/forms/assets/create-form.png)
+   ![&#x200B; verstrekken naam en titel &#x200B;](/help/forms/assets/create-form.png)
 
    Er wordt een adaptief formulier gemaakt en geopend in de Adaptive Forms-editor. De redacteur toont de inhoud beschikbaar in het malplaatje.
-1. Selecteer ![ de informatie van de Pagina ](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Open Properties]**.
+1. Selecteer ![&#x200B; de informatie van de Pagina &#x200B;](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Open Properties]**.
 
-   ![ Open eigenschappen ](/help/forms/assets/form-properties.png)
+   ![&#x200B; Open eigenschappen &#x200B;](/help/forms/assets/form-properties.png)
 
    De pagina Formuliereigenschappen wordt geopend.
 1. Ga naar het **[!UICONTROL Form Model]** lusje en kies **Malplaatjes van de Vorm**.
 1. Selecteer het .xdp- dossier van de dropdown lijst.
 
-   ![ Uitgezochte XDP dossier ](/help/forms/assets/select-xdp-file.png)
+   ![&#x200B; Uitgezochte XDP dossier &#x200B;](/help/forms/assets/select-xdp-file.png)
 
    Er verschijnt een waarschuwingsvenster op het scherm. Klik **O.K.** om verder te gaan.
 
-   ![ de Dialoog van de Waarschuwing ](/help/forms/assets/fdm-warning.png)
+   ![&#x200B; de Dialoog van de Waarschuwing &#x200B;](/help/forms/assets/fdm-warning.png)
 
 1. Selecteer **[!UICONTROL Save & Close]** om de eigenschappen op te slaan.
 
    >[!NOTE]
    >
-   > Na het selecteren van **Malplaatjes van de Vorm** in het 2} Model **lusje van de Vorm, kan het niet worden veranderd.**
+   > Na het selecteren van **Malplaatjes van de Vorm** in het 2&rbrace; Model **lusje van de Vorm, kan het niet worden veranderd.**
 
 
 Er wordt een adaptief formulier gemaakt en geopend in de Adaptive Forms-editor. De redacteur toont de inhoud beschikbaar in het malplaatje.  Op basis van het type adaptief formulier worden de formulierelementen in de bijbehorende XFA-formuliersjabloon weergegeven op het tabblad **[!UICONTROL Data Model Objects]** van de **[!UICONTROL Content Browser]** in de zijbalk. U kunt deze elementen ook slepen en neerzetten om het adaptieve formulier te maken.
 
 >[!NOTE]
 >
-> U kunt scripts voor XDP-formuliervelden uitschakelen met de paneelwerkbalk van het toegevoegde veld. Creeer logics voor de toegevoegde gebieden gebruikend de [ Visuele Redacteur van de Regel ](/help/forms/rule-editor-core-components.md).
+> U kunt scripts voor XDP-formuliervelden uitschakelen met de paneelwerkbalk van het toegevoegde veld. Creeer logics voor de toegevoegde gebieden gebruikend de [&#x200B; Visuele Redacteur van de Regel &#x200B;](/help/forms/rule-editor-core-components.md).
 
