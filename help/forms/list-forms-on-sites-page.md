@@ -4,9 +4,9 @@ description: Leer hoe u formulieren kunt weergeven op een AEM Sites-pagina.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -17,40 +17,8 @@ Stel je voor dat een gebruiker de website van de bank bezoekt op zoek naar een f
 
 De **Onderzoek &amp; van het Registreren** component van het Portaal van Forms staat u toe om vormen op een pagina van Plaatsen te tonen en te maken. Gebruikers kunnen een uitgebreide lijst met formulieren configureren en presenteren op basis van specifieke criteria om aan de organisatorische vereisten te voldoen. Anonieme gebruikers kunnen de pagina Sites bezoeken om de beschikbare formulieren weer te geven en te bladeren. De vermelde vormen kunnen in stijgende of dalende orde worden gesorteerd gebruikend de **Soort door** drop-down optie die in de hoger-juiste hoek van het scherm wordt gevestigd.
 
-![&#x200B; Onderzoek en het pictogram van de Registratie &#x200B;](assets/search-and-lister-component.png)
+![ Onderzoek en het pictogram van de Registratie ](assets/search-and-lister-component.png)
 
-## Voorwaarde
-
-Voordat u de verschillende mogelijkheden van een Forms Portal-component gaat verkennen, moet u ervoor zorgen dat Core Components geschikt zijn voor uw omgeving. Installeer de nieuwste versie om Adaptive Forms Core Components in te schakelen voor uw AEM Cloud Service-omgeving.
-
-<!--
-## Enable Forms Portal components for your existing environment
-
-To enable out-of-the-box Forms Portal components on existing AEM Forms as a Cloud Service, perform the following steps:
-
-1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=nl-NL).  
-
-1. **Create [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create [!DNL Experience Manager Forms] as a [Cloud Service] project based on [AEM Archetype 50](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-50) or later. The archetype help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
-
-    To create [!DNL Experience Manager Forms] as a Cloud Service project, open the command prompt and run the below command. To include [!DNL Forms] specific configurations, themes, and templates, set `includeForms=y`.  
-
-    ```shell
-    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
-    ```
-
-    Also, change `appTitle`, `appId`, and `groupId`, in the above command to reflect your environment.
-
-    After the project is ready, update the `<core.forms.components.version>x.y.z</core.forms.components.version>` property in the top-level `pom.xml` of the Archetype project to reflect the latest version of [core-forms-components](https://github.com/adobe/aem-core-forms-components) in your `AEM Archetype` project. 
- 
-1. **Deploy the project to your local development environment:** You can use the following command to deploy to your local development environment
-
-    `mvn -PautoInstallPackage clean install`
-
-    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=nl-NL#building-and-installing)
-
-1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#embeddeds). -->
-
-Nadat u de nieuwste Core Components in uw omgeving hebt geïmplementeerd, zijn de Forms Portal-componenten toegankelijk in uw ontwerpomgeving.
 
 ## Formulieren weergeven op de sitepagina
 
@@ -58,11 +26,11 @@ Om de **Onderzoek &amp; van het Registreren** poortcomponent aan uw pagina van P
 
 1. Open de pagina van AEM Sites op een **geeft** wijze uit.
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
-   ![&#x200B; geef malplaatjebeleid &#x200B;](/help/forms/assets/save-form-as-draft-edit-template.png) uit
+   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png) uit
 
 1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Search & Lister]** checkbox onder de **[Naam van het Project van het Archetype van AEM ] - Forms en Communicatie Portaal**.
 
-   ![&#x200B; de Selectie van het Beleid &#x200B;](/help/forms/assets/search-lister-enable-policy.png)
+   ![ de Selectie van het Beleid ](/help/forms/assets/search-lister-enable-policy.png)
 
 1. Klik op **[!UICONTROL Done]**.
 1. Open nu de AEM Sites-pagina opnieuw in de ontwerpmodus.
@@ -78,17 +46,17 @@ Om de **Onderzoek &amp; van het Registreren** poortcomponent aan uw pagina van P
 
 1. Blader door de beschikbare componenten in het dialoogvenster en selecteer de gewenste component in de lijst. Bijvoorbeeld, selecteer het **Onderzoek en de component van het Registreren** van de lijst om het **Onderzoek &amp; van het Registreertoestel** Forms Portal component toe te voegen.
 
-   ![&#x200B; Onderzoek &amp; component van de Registratie &#x200B;](/help/forms/assets/add-search-lister.png)
+   ![ Onderzoek &amp; component van de Registratie ](/help/forms/assets/add-search-lister.png)
 
 Nu, vorm de eigenschappen van het **Onderzoek en de component van het Registreren**.
 
 ## De eigenschappen van de component Search en Lister begrijpen
 
-U kunt **Onderzoek en 1&rbrace; componenteneigenschappen gemakkelijk aanpassen Lister gebruikend de Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![&#x200B; pictogram &#x200B;](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Search and Lister]** wordt geopend.
+U kunt **Onderzoek en 1} componenteneigenschappen gemakkelijk aanpassen Lister gebruikend de Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Search and Lister]** wordt geopend.
 
 ### Tabblad Weergave
 
-![&#x200B; het Lusje van de Vertoning &#x200B;](/help/forms/assets/search-and-lister-display-tab.png)
+![ het Lusje van de Vertoning ](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. Geef in **[!UICONTROL Title]** de titel op voor de component Zoeken &amp; register. Een indicatieve titel biedt de gebruikers de mogelijkheid snel te zoeken in de formulierlijst.
 1. Selecteer in de lijst **[!UICONTROL Layout]** de indeling die u wilt gebruiken voor de weergave van de formulieren in de kaart- of lijstindeling.
@@ -97,14 +65,14 @@ U kunt **Onderzoek en 1&rbrace; componenteneigenschappen gemakkelijk aanpassen L
 
 ### Tabblad Element
 
-![&#x200B; het lusje van Activa &#x200B;](/help/forms/assets/search-and-lister-asset-tab.png)
+![ het lusje van Activa ](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. Geef op het tabblad **[!UICONTROL Asset Folder]** de locatie op vanwaar de formulieren worden opgehaald en weergegeven op de pagina.
 1. Met de **[!UICONTROL Add another location]** kunt u meerdere maplocaties configureren.
 
 ### Resultaten, tabblad
 
-![&#x200B; het Lusje van de Vertoning &#x200B;](/help/forms/assets/search-and-lister-result-tab.png)
+![ het Lusje van de Vertoning ](/help/forms/assets/search-and-lister-result-tab.png)
 
 Configureer op het tabblad **[!UICONTROL Results]** het maximum aantal formulieren dat per pagina wordt weergegeven. Standaard zijn dit acht formulieren per pagina.
 
@@ -112,7 +80,7 @@ Configureer op het tabblad **[!UICONTROL Results]** het maximum aantal formulier
 
 Om de lijst van vormen te bekijken, gebruik het **Onderzoek &amp; van het Registreren** de Portaalcomponent van Forms. Voorproef de pagina van AEM Sites om de lijst van vormen van de **omslag van Assets** te zien die op het scherm wordt getoond. U kunt ook naar een specifiek formulier zoeken met de zoekbalk.
 
-![&#x200B; Onderzoek en het pictogram van de Registratie &#x200B;](assets/search-and-lister-component.png)
+![ Onderzoek en het pictogram van de Registratie ](assets/search-and-lister-component.png)
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}
@@ -139,7 +107,7 @@ Perform the following steps to configure Unified Storage Connector for AEM Workf
 
 ## Enable Forms Portal Components {#enable-forms-portal-components}
 
-To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=nl-NL#create-proxy-components). 
+To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components). 
 
 Once a portal component is enabled, you can use it in the author instance of your sites page.
 
@@ -223,7 +191,7 @@ You can configure the auto-save feature for an adaptive form as follows:
 
 ## Volgende stappen
 
-In het volgende artikel, laat ons [&#x200B; leren hoe te om vormen als concepten te bewaren en hen op een pagina van Plaatsen te vermelden gebruikend de Concepten &amp; de component van het Portaal van Forms van de Verzending &#x200B;](/help/forms/save-core-component-based-form-as-draft.md).
+In het volgende artikel, laat ons [ leren hoe te om vormen als concepten te bewaren en hen op een pagina van Plaatsen te vermelden gebruikend de Concepten &amp; de component van het Portaal van Forms van de Verzending ](/help/forms/save-core-component-based-form-as-draft.md).
 
 ## Verwante artikelen
 
