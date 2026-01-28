@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Aangepaste beschikbaarheid van Forms Core-componenten
@@ -32,8 +32,8 @@ Voor **AEM 6.5 Forms** en **AEM 6.5 LTS Forms** milieu&#39;s, worden de Adaptiev
 
 Volg de relevante handleidingen:
 
-- Voor AEM 6.5 Forms: [&#x200B; laat de Aangepaste Componenten van de Kern van Forms op AEM 6.5 Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) toe.
-- Voor AEM 6.5 LTS Forms: [&#x200B; laat de Aangepaste Componenten van de Kern van Forms op AEM 6.5 LTS Forms &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) toe.
+- Voor AEM 6.5 Forms: [&#x200B; laat de Aangepaste Componenten van de Kern van Forms op AEM 6.5 Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=nl-NL) toe.
+- Voor AEM 6.5 LTS Forms: [&#x200B; laat de Aangepaste Componenten van de Kern van Forms op AEM 6.5 LTS Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) toe.
 
 **Nota:** als om het even welke stappen voor het toelaten van de Adaptieve Componenten van de Kern van Forms in oudere milieu&#39;s AEM 6.5 onduidelijk zijn of milieu-specifieke eerste vereisten bestaan, deze vereisten verduidelijken alvorens toe te laten.
 
