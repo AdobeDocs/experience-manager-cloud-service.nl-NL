@@ -42,7 +42,7 @@ De Componenten van de kern gebruiken een gestandaardiseerde, modulaire component
 - **het Stijlen Methodologie**: BEM (de Modifier van het Element van het Blok) CSS overeenkomsten
 - **Opslag van de Inhoud**: Opslag JCR met gestructureerde inhoudsknopen
 - **teruggevend**: Server-kant teruggevend in AEM met facultatieve cliënt-zij hoofdloze teruggeven
-- **Source**: Open-source (beschikbaar op [ GitHub ](https://github.com/adobe/aem-core-forms-components))
+- **Source**: Open-source (beschikbaar op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-core-forms-components))
 
 ### Rendermodel
 
@@ -415,4 +415,4 @@ De volgende gebieden hebben onvolledige of dubbelzinnige documentatie:
 - [Aan de slag met de universele editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
 - [Zelfstudie over ontwerpen op basis van documenten](/help/edge/docs/forms/tutorial.md)
 - [Hulpprogramma voor migratie](/help/forms/migration-utility-tool-for-af-core-components.md)
-- [ de Componenten van de Kern van AEM Forms op GitHub ](https://github.com/adobe/aem-core-forms-components)
+- [&#x200B; de Componenten van de Kern van AEM Forms op GitHub &#x200B;](https://github.com/adobe/aem-core-forms-components)
