@@ -1,15 +1,15 @@
 ---
 title: Toegankelijkheid in dynamische media
-description: Leer hoe u met video werkt in Dynamic Media, zoals aanbevolen procedures voor het coderen van video's, het publiceren van video's naar YouTube en het weergeven van videoverslagen. Leer ook hoe u ondertiteling, ondertitels of hoofdstukmarkeringen aan video's kunt toevoegen.
+description: Leer hoe u met video werkt in Dynamic Media, zoals aanbevolen methoden voor het coderen van video's en het publiceren van video's naar YouTube. Leer ook hoe u ondertiteling, ondertitels of hoofdstukmarkeringen aan video's kunt toevoegen.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 4a09e74ae62dba40deb192b1dfe38860bdb43921
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Dynamische media ondersteunt toetsenbordbesturing en ondersteunende technologie�
 
 ## Ondersteuning voor toetsenbordtoegankelijkheid in dynamische media {#keyboard-support-in-dm}
 
-Omdat Dynamische media een plug-in in [!DNL Experience Manager Assets] is, is het meeste toetsenbordbesturingsgedrag hetzelfde als in [!DNL Experience Manager Assets] . De knop `Cancel` in Dynamische media heeft bijvoorbeeld dezelfde focusmarkering als in [!DNL Experience Manager Assets] . Deze reageert ook op de `Spacebar` -toets zoals in [!DNL Experience Manager Assets] . Zie [&#x200B; toetsenbordkortere weg in Assets &#x200B;](/help/assets/accessibility.md#keyboard-shortcuts).
+Omdat Dynamische media een plug-in in [!DNL Experience Manager Assets] is, is het meeste toetsenbordbesturingsgedrag hetzelfde als in [!DNL Experience Manager Assets] . De knop `Cancel` in Dynamische media heeft bijvoorbeeld dezelfde focusmarkering als in [!DNL Experience Manager Assets] . Deze reageert ook op de `Spacebar` -toets zoals in [!DNL Experience Manager Assets] . Zie [ toetsenbordkortere weg in Assets ](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Toetsen die worden ondersteund door afzonderlijke gebruikersinterface-elementen in dynamische media zijn meestal duidelijk en gemakkelijk te vinden. Het besturingselement Keyboard in Dynamic Media heeft betrekking op het volgende:
 
@@ -37,7 +37,7 @@ Het focustraversal volgt de natuurlijke locatie van het interface-element op het
    * Gebruik de pijltoetsen om de framegrootte bij te snijden, of om de positie van de afbeelding te wijzigen, of beide.
    * Bij de eerste stop van `Tab` wordt het hele afbeeldingskader gemarkeerd. Vervolgens kunt u het kader verplaatsen met de pijltoetsen op het toetsenbord.
    * De volgende vier `Tab` stops zijn de vier hoeken van het frame. Wanneer de focus op een kaderhoek wordt geplaatst, wordt de hoek gemarkeerd. U kunt ook de pijltoetsen op het toetsenbord gebruiken om de gefocuste hoek te verplaatsen.
-Zie [&#x200B; Uitgevend het slimme gewas of slim monster van één enkel beeld &#x200B;](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+Zie [ Uitgevend het slimme gewas of slim monster van één enkel beeld ](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (Experience Manager 6.5) or Coral Spectrum (in Skyline)) as entire Experience Manager Assets.  -->
 
@@ -55,21 +55,21 @@ Dynamische media-gebruikersinterface-elementen werken met ondersteunende hulpmid
 
 Alle dynamische media-viewercomponenten die niet in de verpakking staan, ondersteunen toetsenbordtoegankelijkheid voor uw klanten.
 
-Zie [&#x200B; de toegankelijkheid van het Toetsenbord en navigatie &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=nl-NL) in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
+Zie [ de toegankelijkheid van het Toetsenbord en navigatie ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility#) in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
 
-## Technische ondersteuning in Dynamic Media-viewers {#assistive-technology=support-for-dm-viewers}
+## Ondersteunende technologie in Dynamic Media-viewers {#assistive-technology=support-for-dm-viewers}
 
 Alle Dynamic Media Viewer-componenten ondersteunen de rollen en kenmerken van ARIA (Accessible Rich Internet Applications) om de integratie met ondersteunende hulpmiddelen, zoals schermlezers, te verbeteren.
-Zie het **onderwerp van de Hulp van de technologiesteun 0&rbrace; {in om het even welk het aanpassen kijkersonderwerp in de Dynamische Gids van de Verwijzing van de Kijkers van Media.** Bijvoorbeeld, zie [&#128279;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=nl-NL) de technologiesteun van 0} Hulpmiddelen &lbrace;voor de Videokijker, of [&#x200B; de technologiesteun van de Hulp &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=nl-NL#viewers-for-aem-assets-only) voor de Interactieve kijker van het Beeld.
+Zie het **onderwerp van de Hulp van de technologiesteun 0} {in om het even welk het aanpassen kijkersonderwerp in de Dynamische Gids van de Verwijzing van de Kijkers van Media.** Bijvoorbeeld, zie [ de technologiesteun van 0} Hulpmiddelen {voor de Videokijker, of ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive#) de technologiesteun van de Hulp [ voor de Interactieve kijker van het Beeld.](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive#viewers-for-aem-assets-only)
 
 ## Ondersteuning voor Closed Caption in [!DNL Dynamic Media] {#closed-caption-support}
 
 Dynamische media ondersteunt de levering van video&#39;s en adaptieve videosets met ondertiteling. De bijschriften moeten vóór de video-inhoud worden weergegeven.
 
-Zie [&#x200B; Video in Dynamische Media - voeg gesloten titels aan video &#x200B;](/help/assets/dynamic-media/video.md#adding-captions-to-video) toe.
+Zie [ Video in Dynamische Media - voeg gesloten titels aan video ](/help/assets/dynamic-media/video.md#adding-captions-to-video) toe.
 
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Toegankelijkheid voor de oplossingen van Adobe &#x200B;](https://www.adobe.com/accessibility.html)
->* [&#x200B; Toegankelijkheid in Experience Manager Assets &#x200B;](/help/assets/dynamic-media/accessibility-dm.md)
+>* [ Toegankelijkheid voor de oplossingen van Adobe ](https://www.adobe.com/trust/accessibility.html)
+>* [ Toegankelijkheid in Experience Manager Assets ](/help/assets/dynamic-media/accessibility-dm.md)
