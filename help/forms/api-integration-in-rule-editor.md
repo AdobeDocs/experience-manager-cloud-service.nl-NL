@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: integreren API in regeleditor, serviceverbeteringen aanroepen
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De visuele Redacteur van de Regel steunt API integratie in Adaptief Forms die op de Componenten van de Kern en [&#x200B; Forms wordt gebaseerd die in Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) wordt authored.
+> De visuele Redacteur van de Regel steunt API integratie in Adaptief Forms die op de Componenten van de Kern en [ Forms wordt gebaseerd die in Universele Redacteur ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) wordt authored.
 
 De Visual Rule Editor in Adaptive Forms ondersteunt directe API-integratie zonder een Form Data Model te maken. U kunt verbinding maken met een API-eindpunt door de API-URL (in JSON-indeling) in te voeren of de configuratie te importeren via een cURL-opdracht. Zodra geïntegreerd, kan de **Invoke Actie van de Dienst** worden gebruikt om API te roepen.
 
@@ -40,7 +40,7 @@ Bovendien, laat de Visuele Redacteur van de Regel u **succes** en **mislukkingsm
 
 In de onderstaande schermafbeelding wordt het configuratievenster voor API-integratie weergegeven:
 
-![&#x200B; API de Configuratie van de Integratie &#x200B;](/help/forms/assets/api-integration-configuration.png)
+![ API de Configuratie van de Integratie ](/help/forms/assets/api-integration-configuration.png)
 
 ### Opties voor sleutelconfiguratie
 
@@ -99,11 +99,11 @@ Hierdoor wordt gewaarborgd dat aanvragers altijd een actuele en nauwkeurige lijs
 
 U kunt API integreren zonder een Model van de Gegevens van de Vorm tot stand te brengen door **te klikken creeert API Integratie** knoop in de Redacteur van de Regel.
 
-![&#x200B; creeer API Integratie &#x200B;](/help/forms/assets/create-api-integration.png)
+![ creeer API Integratie ](/help/forms/assets/create-api-integration.png)
 
 Een API dienst genoemd **getcountry** wordt gevormd onder **API de Configuratie van de Integratie** in de Redacteur van de Regel:
 
-![&#x200B; API de Configuratie van het eindpunt van het rustpunt &#x200B;](/help/forms/assets/api-restendpoint.png)
+![ API de Configuratie van het eindpunt van het rustpunt ](/help/forms/assets/api-restendpoint.png)
 
 * **API Eindpunt URL** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **Methode van HTTP** → GET
@@ -117,11 +117,15 @@ Wanneer de vorm laadt, **haalt de Dienst** de lijst van landen van API aan. De r
 
 Bijvoorbeeld, wanneer de gebruiker **Land van Burgerschap** opent, wordt de lijst van landen dynamisch getoond van de API reactie.
 
-![&#x200B; aanhalen-dienst-api-integratie &#x200B;](/help/forms/assets/invoke-service-api-integration.png)
+![ aanhalen-dienst-api-integratie ](/help/forms/assets/invoke-service-api-integration.png)
 
-![&#x200B; API integratieoutput &#x200B;](/help/forms/assets/api-integration-output.png)
+![ API integratieoutput ](/help/forms/assets/api-integration-output.png)
 
 Op dezelfde manier gebruiken het **Land van de Uitgave van het Paspoort** en **Land van de Bestemming** de zelfde API vraag, die verenigbare en bijgewerkte gegevens over alle drie gebieden verzekert.
+
+>
+>
+> U kunt [ bezitswaarden van een serie terugwinnen JSON door API aan te halen en een douanefunctie ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array) te gebruiken. Met deze methode kunt u waarden extraheren en rechtstreeks binden aan formuliervelden.
 
 ## Opnieuw proberen voor API-fouten implementeren
 
@@ -194,11 +198,7 @@ function retryHandler(requestFn) {
 }
 ```
 
-In de bovengenoemde code, beheert de **functie 0&rbrace; retryHandler API verzoeken met automatische herpogingen in het geval van mislukking.** Er wordt een aanvraagfunctie (requestFn) gebruikt en de aanvraag wordt maximaal twee keer uitgevoerd, waarbij metagegevens worden toegevoegd voor elke nieuwe poging.
-
->[!NOTE]
->
-> Voor gedetailleerde stappen op hoe te om douanefuncties toe te voegen, verwijs naar de [&#x200B; Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de 1&rbrace; artikel van de Componenten van de Kern wordt gebaseerd.](/help/forms/create-and-use-custom-functions.md)
+In de bovengenoemde code, beheert de **functie 0} retryHandler API verzoeken met automatische herpogingen in het geval van mislukking.** Er wordt een aanvraagfunctie (requestFn) gebruikt en de aanvraag wordt maximaal twee keer uitgevoerd, waarbij metagegevens worden toegevoegd voor elke nieuwe poging.
 
 ## Veelgestelde vragen
 
