@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -101,11 +101,11 @@ Voor meer informatie, zie AI Onderzoek in [&#x200B; mening van Assets &#x200B;](
 
 **App 3.0.1 van de Desktop versie**
 
-[&#x200B; App 3.0.1 van de Desktop (December 20, 2025) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) verbetert betrouwbaarheid, prestaties, en stabiliteit over zeer belangrijke werkschema&#39;s. Deze release zorgt voor consistente mapnaamgeving door synchronisatieproblemen met AEM Author te verhelpen, maakt het ononderbroken gebruik van de app tijdens actieve overdrachten mogelijk, verbetert de reactiesnelheid van de gebruikersinterface via asynchrone verwerking, optimaliseert grote bestandsoverdrachten met paginering en verhelpt stabiliteitsproblemen, zoals opnieuw opstarten en vastlopen van de auteurserver tijdens grote uploads en downloads van mappen.
+[&#x200B; App 3.0.1 van de Desktop (December 20, 2025) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/release-notes) verbetert betrouwbaarheid, prestaties, en stabiliteit over zeer belangrijke werkschema&#39;s. Deze release zorgt voor consistente mapnaamgeving door synchronisatieproblemen met AEM Author te verhelpen, maakt het ononderbroken gebruik van de app tijdens actieve overdrachten mogelijk, verbetert de reactiesnelheid van de gebruikersinterface via asynchrone verwerking, optimaliseert grote bestandsoverdrachten met paginering en verhelpt stabiliteitsproblemen, zoals opnieuw opstarten en vastlopen van de auteurserver tijdens grote uploads en downloads van mappen.
 
 **Adobe Asset Link CEP versie 2026.01.0**
 
-[&#x200B; Adobe Asset Link CEP 2026.01.0 &#x200B;](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) introduceert een nieuwe optie Ontbrekende koppelingen opnieuw koppelen in InDesign die automatisch andere ontbrekende elementen van dezelfde AEM-map opnieuw koppelt. De functie komt overeen met elementen op basis van de bestandsnaam, waardoor de handmatige inspanning aanzienlijk wordt verminderd wanneer verbroken koppelingen worden hersteld.
+[&#x200B; Adobe Asset Link CEP 2026.01.0 &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html) introduceert een nieuwe optie Ontbrekende koppelingen opnieuw koppelen in InDesign die automatisch andere ontbrekende elementen van dezelfde AEM-map opnieuw koppelt. De functie komt overeen met elementen op basis van de bestandsnaam, waardoor de handmatige inspanning aanzienlijk wordt verminderd wanneer verbroken koppelingen worden hersteld.
 
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
@@ -298,11 +298,11 @@ E-mail [&#x200B; aemcs-java-adopter@adobe.com &#x200B;](mailto:aemcs-java-adopte
 
 #### Uitgebreide Application Performance Monitoring (APM) (Alpha-programma) {#apm-alpha}
 
-Voor waarneming, steunt de Dienst van de Wolk AEM momenteel Adobe-Geleverde [&#x200B; New Relic One &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) en klant-geleide [&#x200B; Dynatrace &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Aangezien wij steun voor extra opties van APM onderzoeken, gelieve ons in [&#x200B; aemcs-apm-beta@adobe.com &#x200B;](mailto:aemcs-apm-beta@adobe.com) met uw aangewezen verkoper of technologie, samen met gebruiksgevallen te e-mailen.
+Voor waarneming, steunt de Dienst van de Wolk AEM momenteel Adobe-Geleverde [&#x200B; New Relic One &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) en klant-geleide [&#x200B; Dynatrace &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Aangezien wij steun voor extra opties van APM onderzoeken, gelieve ons in [&#x200B; aemcs-apm-beta@adobe.com &#x200B;](mailto:aemcs-apm-beta@adobe.com) met uw aangewezen verkoper of technologie, samen met gebruiksgevallen te e-mailen.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -322,4 +322,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [&#x200B; hier 
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
