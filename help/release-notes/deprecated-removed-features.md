@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 2923a79a69ae537eaad591035e4fce9f3c593b23
 workflow-type: tm+mt
-source-wordcount: '3194'
+source-wordcount: '3434'
 ht-degree: 0%
 
 ---
@@ -29,27 +29,37 @@ Tijdens het venster met de verouderingstijd herinnert Adobe klanten aan de actie
 >
 >In sommige gevallen is verwijdering van een functie vereist voordat een nieuwe Cloud Manager-build of upgrade naar de nieuwste versie van AEM as a Cloud Service wordt geïmplementeerd.
 
+>[!IMPORTANT]
+>  Verscheidene [ afgekeurde APIs ](#aem-apis) richten verwijdering op **26 Februari, 2026**. Wijzig deze belangrijkste datums en effecten:
+>
+> * **Beginnend Januari 26, 2026**: Het bericht van het Centrum van acties e-mails wordt verzonden **wekelijks per milieu** als herinnering om gebruik van deze APIs te verwijderen.
+> * **februari 26, 2026**: De pijpleidingen van Cloud Manager die code bevatten die deze APIs gebruiken zullen **pauzeren** tijdens de **Kwaliteit van de Code** stap. Een Manager van de Plaatsing, de Manager van het Project, of BedrijfsEigenaar kunnen de kwestie met voeten treden om de pijpleiding toe te staan om te werk te gaan.
+> * **Maart 26, 2026**: De pijpleidingen van Cloud Manager die code bevatten die deze APIs gebruiken zullen **** tijdens de **Kwaliteit van de Code** stap ontbreken, **blokkerend plaatsingen** van nieuwe code tot het gebruik wordt verwijderd.
+> * **April 30, 2026**: De milieu&#39;s die nog deze APIs gebruiken kunnen **niet meer kritieke de releaseupdates van Adobe ontvangen**.
+>
+> Als u implementatieblokken wilt voorkomen, verwijdert u het API-gebruik vóór 26 maart 2026.
+
 ## Verouderde functionaliteit {#deprecated-features}
 
 De functionaliteit in de onderstaande tabel is aangekondigd als afgekeurd, maar is nog niet verwijderd.  Het gebruik van de functionaliteit moet worden beëindigd vóór de verwijderingsdatum van het doel of u riskeert problemen met betrekking tot prestaties, beschikbaarheid en beveiliging.
 
 | Mogelijkheden | Verouderde functie | Vervanging |
 | ------------ | ------------------ | ----------- |
-| Sites | [&#x200B; de Steun van het Fragment van de Inhoud in HTTP API van Assets &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md) | [&#x200B; Levering van het Fragment van de Inhoud met OpenAPI &#x200B;](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br> samen met <br> [&#x200B; de Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud Management OpenAPIs &#x200B;](/help/headless/content-fragment-openapis.md) |
-| Sites | [&#x200B; Eigenschappen van PWA &#x200B;](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Geen |
-| Sites | [&#x200B; Redacteur van het KUUROORD &#x200B;](/help/implementing/developing/hybrid/introduction.md) | De aangewezen redacteurs voor het beheren van hoofdloze inhoud in AEM zijn:<br> - [&#x200B; de Universele Redacteur &#x200B;](https://www.aem.live/docs/aem-authoring) voor het visuele uitgeven.<br> - [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven. |
-| [!DNL Sites] | [&#x200B; Gebruik API van JavaScript &#x200B;](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [&#x200B; Gebruik API van Java &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-htl/content/java-use-api) |
+| Sites | [ de Steun van het Fragment van de Inhoud in HTTP API van Assets ](/help/assets/content-fragments/assets-api-content-fragments.md) | [ Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br> samen met <br> [ de Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud Management OpenAPIs ](/help/headless/content-fragment-openapis.md) |
+| Sites | [ Eigenschappen van PWA ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Geen |
+| Sites | [ Redacteur van het KUUROORD ](/help/implementing/developing/hybrid/introduction.md) | De aangewezen redacteurs voor het beheren van hoofdloze inhoud in AEM zijn:<br> - [ de Universele Redacteur ](https://www.aem.live/docs/aem-authoring) voor het visuele uitgeven.<br> - [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven. |
+| [!DNL Sites] | [ Gebruik API van JavaScript ](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [ Gebruik API van Java ](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | De eigenschappen van Fragmenten van de ervaring voor **Sociale Status van Media**. | De functie wordt binnenkort verwijderd. |
-| Sites | [&#x200B; de Automatisering van de Opstelling van Experience Cloud &#x200B;](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Geen |
-| [!DNL Sites] | Eenvoudige inhoudsfragmenten op basis van een sjabloon. | [&#x200B; Model-Gebaseerde gestructureerde inhoudsfragmenten &#x200B;](/help/assets/content-fragments/content-fragments-models.md) nu. |
-| [!DNL Assets] | `DAM Asset Update` gebruiken om opgenomen afbeeldingen te verwerken. | De opname van activa gebruikt [&#x200B; activa microservices &#x200B;](/help/assets/asset-microservices-overview.md) nu. |
-| [!DNL Assets] | Upload elementen rechtstreeks naar [!DNL Experience Manager] . Zie [&#x200B; afgekeurde activa uploaden APIs &#x200B;](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Het gebruik [&#x200B; Directe binaire upload &#x200B;](/help/assets/add-assets.md). Voor technische details, zie [&#x200B; directe upload APIs &#x200B;](/help/assets/developer-reference-material-apis.md#upload-binary). |
-| [!DNL Assets] | [&#x200B; Bepaalde werkschemasstappen &#x200B;](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` werkschema worden niet gesteund, met inbegrip van het roepen van bevel-lijn hulpmiddelen zoals [!DNL ImageMagick]. | [&#x200B; microservices van Activa &#x200B;](/help/assets/asset-microservices-overview.md) verstrekken een vervanging voor vele werkschema&#39;s. Voor douaneverwerking, gebruik [&#x200B; post-verwerkings werkschema&#39;s &#x200B;](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
-| [!DNL Assets] | MPEG-transcodering van video&#39;s. | Voor de duimnagelgeneratie van MPEG, gebruik [&#x200B; microservices van Activa &#x200B;](/help/assets/asset-microservices-overview.md). Voor transcodering MPEG, gebruik [&#x200B; Dynamische Media &#x200B;](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | De replicatie UI van de boom onder de replicatieagenten &quot;verdelen&quot;tabel (verwijdering na 30 September, 2021) | [&#x200B; beheer publicatie &#x200B;](/help/operations/replication.md#manage-publication) of [&#x200B; Stap van het Werkschema van de Activering van de Boom &#x200B;](/help/operations/replication.md#tree-activation) benaderingen. |
-| [!DNL Foundation] | Het tabblad Distribueren van het scherm van de replicatieagent en de API voor replicatie kunnen geen inhoudspakketten repliceren die groter zijn dan 10 MB. | [&#x200B; beheer publicatie &#x200B;](/help/operations/replication.md#manage-publication) of [&#x200B; Stap van het Werkschema van de Activering van de Boom &#x200B;](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | Integraties die gebruik maken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning voor JWT-referenties (Service Account). Vanaf 1 mei 2024 kunnen geen JWT-referenties (New Service Account) meer worden gemaakt in Adobe Developer Console. De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) blijven bruikbaar voor gevormde integratie tot 1 Januari, 2025, waarna zij ophouden werkend, die klanten vereisen om aan Server-aan-Server geloofsbrieven van OAuth te migreren. [&#x200B; leer meer &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [&#x200B; migreer &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) aan OAuth server-aan-Server geloofsbrieven. |
-| [!DNL Foundation] | De workflow van de inhoudsstructuur publiceren en de gerelateerde workflowstap voor de publicatiestructuur, die werd gebruikt voor replicaties van hiërarchieën van inhoud. | De Stap van het Werkschema van de Activering van de Boom van het gebruik [&#x200B; &#x200B;](/help/operations/replication.md#tree-activation), die uitvoeriger is. |
+| Sites | [ de Automatisering van de Opstelling van Experience Cloud ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Geen |
+| [!DNL Sites] | Eenvoudige inhoudsfragmenten op basis van een sjabloon. | [ Model-Gebaseerde gestructureerde inhoudsfragmenten ](/help/assets/content-fragments/content-fragments-models.md) nu. |
+| [!DNL Assets] | `DAM Asset Update` gebruiken om opgenomen afbeeldingen te verwerken. | De opname van activa gebruikt [ activa microservices ](/help/assets/asset-microservices-overview.md) nu. |
+| [!DNL Assets] | Upload elementen rechtstreeks naar [!DNL Experience Manager] . Zie [ afgekeurde activa uploaden APIs ](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Het gebruik [ Directe binaire upload ](/help/assets/add-assets.md). Voor technische details, zie [ directe upload APIs ](/help/assets/developer-reference-material-apis.md#upload-binary). |
+| [!DNL Assets] | [ Bepaalde werkschemasstappen ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` werkschema worden niet gesteund, met inbegrip van het roepen van bevel-lijn hulpmiddelen zoals [!DNL ImageMagick]. | [ microservices van Activa ](/help/assets/asset-microservices-overview.md) verstrekken een vervanging voor vele werkschema&#39;s. Voor douaneverwerking, gebruik [ post-verwerkings werkschema&#39;s ](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| [!DNL Assets] | MPEG-transcodering van video&#39;s. | Voor de duimnagelgeneratie van MPEG, gebruik [ microservices van Activa ](/help/assets/asset-microservices-overview.md). Voor transcodering MPEG, gebruik [ Dynamische Media ](/help/assets/manage-video-assets.md). |
+| [!DNL Foundation] | De replicatie UI van de boom onder de replicatieagenten &quot;verdelen&quot;tabel (verwijdering na 30 September, 2021) | [ beheer publicatie ](/help/operations/replication.md#manage-publication) of [ Stap van het Werkschema van de Activering van de Boom ](/help/operations/replication.md#tree-activation) benaderingen. |
+| [!DNL Foundation] | Het tabblad Distribueren van het scherm van de replicatieagent en de API voor replicatie kunnen geen inhoudspakketten repliceren die groter zijn dan 10 MB. | [ beheer publicatie ](/help/operations/replication.md#manage-publication) of [ Stap van het Werkschema van de Activering van de Boom ](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | Integraties die gebruik maken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning voor JWT-referenties (Service Account). Vanaf 1 mei 2024 kunnen geen JWT-referenties (New Service Account) meer worden gemaakt in Adobe Developer Console. De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) blijven bruikbaar voor gevormde integratie tot 1 Januari, 2025, waarna zij ophouden werkend, die klanten vereisen om aan Server-aan-Server geloofsbrieven van OAuth te migreren. [ leer meer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [ migreer ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) aan OAuth server-aan-Server geloofsbrieven. |
+| [!DNL Foundation] | De workflow van de inhoudsstructuur publiceren en de gerelateerde workflowstap voor de publicatiestructuur, die werd gebruikt voor replicaties van hiërarchieën van inhoud. | De Stap van het Werkschema van de Activering van de Boom van het gebruik [ ](/help/operations/replication.md#tree-activation), die uitvoeriger is. |
 | [!DNL Foundation] | Met YUI JavaScript-clientbibliotheken comprimeren/miniaturen maken. Adobe is niet van plan de YUI-bibliotheek verder bij te werken. | Adobe raadt klanten aan over te schakelen op de Google Closure Compiler (GCC) voor hun implementatie. |
 
 ## Verwijderde functionaliteit {#removed-features}
@@ -58,21 +68,32 @@ Deze sectie bevat een lijst met functies die zijn verwijderd.
 
 | Gebied | Functie | Vervanging | Datum van verwijderen doel |
 | ------------ | ------------------ | ----------- | ------------------- |
-| Gebruikersinterface | Klassieke UI wordt verwijderd uit het product gebruikersinterface. Er zijn enkele klassieke UI-dialoogvensters beschikbaar voor een paar geselecteerde mogelijkheden, zoals Koppelingencontrole, Versiegroepering en sommige Cloud Service-configuraties. De komende [&#x200B; productupdates &#x200B;](/help/release-notes/home.md) kunnen Klassieke beschikbaarheid verder verwijderen UI. | Standaardinterface | Verwijderd |
-| [!DNL Dynamic Media] | De vorige integraties met [&#x200B; Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) en [&#x200B; Dynamische Hybride wijze van Media &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) zijn niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. | Het gebruik [&#x200B; Dynamische Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md) van [!DNL Experience Manager] als a [!DNL Cloud Service] wordt voorzien die. | Verwijderd |
+| Gebruikersinterface | Klassieke UI wordt verwijderd uit het product gebruikersinterface. Er zijn enkele klassieke UI-dialoogvensters beschikbaar voor een paar geselecteerde mogelijkheden, zoals Koppelingencontrole, Versiegroepering en sommige Cloud Service-configuraties. De komende [ productupdates ](/help/release-notes/home.md) kunnen Klassieke beschikbaarheid verder verwijderen UI. | Standaardinterface | Verwijderd |
+| [!DNL Dynamic Media] | De vorige integraties met [ Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) en [ Dynamische Hybride wijze van Media ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) zijn niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. | Het gebruik [ Dynamische Media ](/help/assets/dynamic-media/dynamic-media.md) van [!DNL Experience Manager] als a [!DNL Cloud Service] wordt voorzien die. | Verwijderd |
 | [!DNL Sites] | Portal Director en Portlet-component | Deze functies zijn vervangen in [!DNL Experience Manager] 6.4 en zijn nu verwijderd uit [!DNL Experience Manager] . | Verwijderd |
 | [!DNL Sites] | Design Importer | Deze mogelijkheid is verwijderd omdat onveranderlijke gedeelten van de [!DNL Experience Manager] -opslagplaats niet toegankelijk zijn tijdens runtime. | Verwijderd |
-| [!DNL Assets] | [!DNL Assets] Delen met Assets Core Service en Creative Cloud-services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [&#x200B; de Verbinding van Activa van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html). | Verwijderd |
+| [!DNL Assets] | [!DNL Assets] Delen met Assets Core Service en Creative Cloud-services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [ de Verbinding van Activa van Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor Apache Sling-gegevensbronnen (OSGi bundle org.apache.sling.datasource) | NVT | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor JST-scriptsjablonen (OSGi bundle org.apache.sling.scripting.jst) | NVT | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor het Apache Felix Http-whiteboard | OSGi Http-whiteboard | maart 2022 |
 | [!DNL Foundation] | Ondersteuning voor com.adobe.granite.oauth.server | Adobe IMS-integratie | maart 2023 |
-| [!DNL Foundation] | Steun voor org.apache.sling.usermapping eigenschap aan [&#x200B; krijgt de identiteitskaart van de dienstgebruiker &#x200B;](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | NVT | 30-08-24 |
-| [!DNL Foundation] | Java 11-runtime is vervangen door Adobe door Java 21-runtime. Het is acceptabel dat code nog steeds in Java 11 wordt samengesteld (Java 17 en 21 zijn de andere opties) | Java 21-runtime wordt toegepast. Om verenigbaarheid te verzekeren, is het essentieel om bibliotheekversies bij te werken zoals die in [&#x200B; runtime vereisten &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) worden geschetst | 29 maart 25 |
+| [!DNL Foundation] | Steun voor org.apache.sling.usermapping eigenschap aan [ krijgt de identiteitskaart van de dienstgebruiker ](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | NVT | 30-08-24 |
+| [!DNL Foundation] | Java 11-runtime is vervangen door Adobe door Java 21-runtime. Het is acceptabel dat code nog steeds in Java 11 wordt samengesteld (Java 17 en 21 zijn de andere opties) | Java 21-runtime wordt toegepast. Om verenigbaarheid te verzekeren, is het essentieel om bibliotheekversies bij te werken zoals die in [ runtime vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) worden geschetst | 29 maart 25 |
 
 ## Verouderde API&#39;s {#aem-apis}
 
 De API&#39;s in de onderstaande tabel (klik om deze uit te vouwen) zijn aangekondigd als afgekeurd, maar zijn nog niet verwijderd.  Het gebruik van deze API&#39;s moet worden beëindigd vóór de verwijderingsdatum van het doel, anders loopt u risico&#39;s met betrekking tot prestaties, beschikbaarheid en beveiliging. Sommige API&#39;s verwijzen hieronder naar de sectie API Removal Guidance.
+
+>[!IMPORTANT]
+> Verscheidene APIs is gepland voor verwijdering op **26 Februari, 2026**. Wijzig deze belangrijkste datums en effecten:
+>
+> * **Beginnend Januari 26, 2026**: Het bericht van het Centrum van acties e-mails wordt verzonden **wekelijks per milieu** als herinnering om gebruik van deze APIs te verwijderen.
+> * **februari 26, 2026**: De pijpleidingen van Cloud Manager die code bevatten die deze APIs gebruiken zullen **pauzeren** tijdens de **Kwaliteit van de Code** stap. Een Manager van de Plaatsing, de Manager van het Project, of BedrijfsEigenaar kunnen de kwestie met voeten treden om de pijpleiding toe te staan om te werk te gaan.
+> * **Maart 26, 2026**: De pijpleidingen van Cloud Manager die code bevatten die deze APIs gebruiken zullen **** tijdens de **Kwaliteit van de Code** stap ontbreken, **blokkerend plaatsingen** van nieuwe code tot het gebruik wordt verwijderd.
+> * **April 30, 2026**: De milieu&#39;s die nog deze APIs gebruiken kunnen **niet meer kritieke de releaseupdates van Adobe ontvangen**.
+>
+> Als u implementatieblokken wilt voorkomen, verwijdert u het API-gebruik vóór 26 maart 2026.
+
 
 <details>
   <summary>Vouw uit om de lijst met verouderde API's weer te geven.</summary>
@@ -88,100 +109,100 @@ De API&#39;s in de onderstaande tabel (klik om deze uit te vouwen) zijn aangekon
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
     <td>De interfaces van de Kern/van de Kern van de Auth van Sling van het gebruik als alternatief. <a href="#org.apache.sling.commons.auth"> zie hieronder verwijderingsnota's.</a></td>
     <td>2015</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>De pakketten Eclipse Jetty en Felix HTTP Jetty worden niet meer ondersteund. <a href="#org.eclipse.jetty"> zie hieronder verwijderingsnota's.</a></td>
     <td>27-05-2021</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>Gebruik van deze API wordt niet ondersteund in AEM as a Cloud Service. <a href="#com.mongodb"> zie hieronder verwijderingsnota's.</a></td>
     <td>27-05-2021</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
    <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>Deze API is verouderd omdat Apache Abdera sinds 2017 een gepensioneerd project is. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib"> zie hieronder verwijderingsnota's.</a></td>
     <td>29-07-2021</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>Deze API is verouderd omdat Apache Abdera sinds 2017 een gepensioneerd project is. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib"> zie hieronder verwijderingsnota's.</a></td>
     <td>08-04-2019</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>Het Apache Felix Http-whiteboard wordt niet meer ondersteund. Migreer uw code naar het whiteboard van OSGi Http. <a href="#org.apache.felix.http.whiteboard"> zie hieronder verwijderingsnota's.</a></td>
     <td>27-01-2022</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
     <td>Deze API is vervangen. Migreer uw code naar de XML APIs die door JDK worden verstrekt.</td>
     <td>27-01-2022</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
     <td>AEM as a Cloud Service ondersteunt deze interne log back-API niet. <a href="#ch.qos.logback"> zie hieronder verwijderingsnota's.</a></td>
     <td>27-01-2022</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
     <td>AEM as a Cloud Service biedt geen ondersteuning voor deze interne log4j-API. <a href="#org.slf4j"> zie hieronder verwijderingsnota's.</a></td>
     <td>27-01-2022</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 heeft zijn einde in 2015 bereikt en wordt niet meer ondersteund. <a href="#org.apache.log4j"> zie hieronder verwijderingsnota's.</a></td>
     <td>27-01-2022</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>De Google Guava Core Libraries zijn verouderd in Cloud Service. <a href="#com.google.common"> zie hieronder verwijderingsnota's.</a></td>
     <td>15-05-2023</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
     <td>org.slf4j.event</td>
     <td>AEM as a Cloud Service biedt geen ondersteuning voor deze interne slf4j API. <a href="#org.slf4j"> zie hieronder verwijderingsnota's.</a></td>
     <td>11-04-2022</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr> 
     <tr>
     <td>com.drew.*</td>
     <td>Metagegevens uit afbeeldingen en video's worden geëxtraheerd via Asset Compute in Cloud Service of via Apache POI of Apache Tika.</td>
     <td>17-09-2024</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
     <td>Deze API is alleen voor intern gebruik.</td>
     <td>23-09-2024</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>Deze API is alleen voor intern gebruik.</td>
     <td>23-09-2024</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>De Felix-webconsole wordt niet ondersteund in Cloud-omgevingen. <a href="#org.apache.felix.webconsole"> zie hieronder verwijderingsnota's.</a></td>
     <td>30-04-2021</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>Gebruik van deze API wordt niet ondersteund in AEM as a Cloud Service.</td>
     <td>31-10-2022</td>
-    <td>31-08-2025</td>
+    <td>26-02-2026</td>
   </tr>  
   <tr>
     <td>org.apache.sling.runmode</td>
@@ -323,7 +344,7 @@ In deze sectie worden API-verwijderingshulplijnen voor verschillende API&#39;s i
 
 ### Verwijderen van `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
-Als u `org.apache.sling.commons.auth` of `org.apache.sling.commons.auth.spi` of beide gebruikt, kunt u het gebruik vervangen door de code naar resp. `org.apache.sling.auth` te migreren. `org.apache.sling.auth.spi`. Als u een oude versie van [&#x200B; ACS AEM Commons &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
+Als u `org.apache.sling.commons.auth` of `org.apache.sling.commons.auth.spi` of beide gebruikt, kunt u het gebruik vervangen door de code naar resp. `org.apache.sling.auth` te migreren. `org.apache.sling.auth.spi`. Als u een oude versie van [ ACS AEM Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
 
 Handelingenlijst:
 
@@ -368,7 +389,7 @@ Afhankelijk van uw vereisten kunt u een andere versie kiezen.
 
 ### Verwijderen van `com.google.common*` {#com.google.common}
 
-Verwijder het gebruik van Google Guava Core Libraries of neem een aangewezen versie in uw project op. In veel gevallen kan het gebruik van deze bibliotheek worden vervangen door verzamelingsklassen uit de JDK- of Apache Commons Collections4. Als u geen vervanging vindt, neemt u de nieuwste versie van de Google Guave Core Library in uw project op. Als u een oude versie van [&#x200B; ACS AEM Commons &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
+Verwijder het gebruik van Google Guava Core Libraries of neem een aangewezen versie in uw project op. In veel gevallen kan het gebruik van deze bibliotheek worden vervangen door verzamelingsklassen uit de JDK- of Apache Commons Collections4. Als u geen vervanging vindt, neemt u de nieuwste versie van de Google Guave Core Library in uw project op. Als u een oude versie van [ ACS AEM Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
 
 Handelingenlijst:
 
@@ -379,7 +400,7 @@ Handelingenlijst:
 
 ### Verwijderen van `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}
 
-Verwijder het gebruik van de niet-onderhouden Apache Commons-bibliotheken en vervang deze door het gebruik van de supportversies. In de meeste gevallen hoeft u alleen de pakketimport aan te passen, maar in sommige gevallen is de naam van klassen of methoden gewijzigd. Als u een oude versie van [&#x200B; ACS AEM Commons &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
+Verwijder het gebruik van de niet-onderhouden Apache Commons-bibliotheken en vervang deze door het gebruik van de supportversies. In de meeste gevallen hoeft u alleen de pakketimport aan te passen, maar in sommige gevallen is de naam van klassen of methoden gewijzigd. Als u een oude versie van [ ACS AEM Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
 
 Handelingenlijst:
 
@@ -397,15 +418,15 @@ Handelingenlijst:
 
 ### Gebruik van `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard}
 
-Vervang het gebruik van `org.apache.felix.http.whiteboard` met [&#x200B; OSGi Whiteboard Http &#x200B;](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html). De officiële OSGi API heeft gelijkaardige mogelijkheden en het vervangen vereist vaak slechts om de eigenschappen van de de dienstregistratie te veranderen.
+Vervang het gebruik van `org.apache.felix.http.whiteboard` met [ OSGi Whiteboard Http ](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html). De officiële OSGi API heeft gelijkaardige mogelijkheden en het vervangen vereist vaak slechts om de eigenschappen van de de dienstregistratie te veranderen.
 
 Handelingenlijst:
 
-* Vervang het gebruik van `org.apache.felix.http.whiteboard` met [&#x200B; OSGi Whiteboard Http &#x200B;](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)
+* Vervang het gebruik van `org.apache.felix.http.whiteboard` met [ OSGi Whiteboard Http ](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)
 
 ### Gebruik van `ch.qos.logback*` {#ch.qos.logback}
 
-Logback wordt niet ondersteund in Cloud Service. Verwijder alle gebruiksmogelijkheden. Als u een oude versie van [&#x200B; ACS AEM Commons &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
+Logback wordt niet ondersteund in Cloud Service. Verwijder alle gebruiksmogelijkheden. Als u een oude versie van [ ACS AEM Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
 
 Handelingenlijst:
 
@@ -414,7 +435,7 @@ Handelingenlijst:
 
 ### Gebruik van `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
 
-Als u `org.slf4j.event` of `org.slf4j.spi` gebruikt, verwijdert u het volledige gebruik ervan. Als u een oude versie van [&#x200B; ACS AEM Commons &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
+Als u `org.slf4j.event` of `org.slf4j.spi` gebruikt, verwijdert u het volledige gebruik ervan. Als u een oude versie van [ ACS AEM Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/) gebruikt, zorg ervoor om aan de recentste versie bij te werken.
 
 Handelingenlijst:
 
@@ -438,9 +459,9 @@ De secties hieronder wijzen op de AEM as a Cloud Service OSGi configuratieopperv
 
 De code van de klant kan om het even welke configuratie vormen OSGi niet vermeld.
 
-Deze regels worden gevalideerd tijdens het Cloud Manager-ontwikkelproces. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, treden fouten op in het Cloud Manager-constructieproces. Gemaakte projecten zouden [&#x200B; AEM as a Cloud Service SDK moeten omvatten bouwt Analysator Gemaakte Insteekmodule &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) om configuratiefouten te markeren OSGI tijdens de lokale ontwikkeling van SDK.
+Deze regels worden gevalideerd tijdens het Cloud Manager-ontwikkelproces. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, treden fouten op in het Cloud Manager-constructieproces. Gemaakte projecten zouden [ AEM as a Cloud Service SDK moeten omvatten bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) om configuratiefouten te markeren OSGI tijdens de lokale ontwikkeling van SDK.
 
-De extra informatie over configuratie OSGI kan bij [&#x200B; worden gevonden deze plaats &#x200B;](/help/implementing/deploying/configuring-osgi.md).
+De extra informatie over configuratie OSGI kan bij [ worden gevonden deze plaats ](/help/implementing/deploying/configuring-osgi.md).
 
 ### Vervangen OSGi-eigenschappen (binnenkort niet te wijzigen) {#deprecated-unmodifiable-osgi-properties}
 
@@ -559,5 +580,5 @@ De waarden van deze OSGi-eigenschappen zijn beperkt tot de hieronder beschreven 
 
 ## Java-runtime-update naar versie 21 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service heeft een overgang gemaakt naar de Java 21-runtime. Om verenigbaarheid te verzekeren, is het bijwerken van bibliotheekversies zoals die in [&#x200B; runtime vereisten &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) worden geschetst essentieel.
+Adobe Experience Manager as a Cloud Service heeft een overgang gemaakt naar de Java 21-runtime. Om verenigbaarheid te verzekeren, is het bijwerken van bibliotheekversies zoals die in [ runtime vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) worden geschetst essentieel.
 
