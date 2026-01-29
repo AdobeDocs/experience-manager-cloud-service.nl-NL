@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Voetnootcomponent {#footnotecomponent}
 
-Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 **[!UICONTROL Footnote]** is het extra beetje informatie of nota&#39;s die aan het eind van de pagina verschijnen. [!UICONTROL Footnote] bestaat uit de notities die in de tekst worden aangegeven met getallen als superscript.
 
@@ -28,7 +28,7 @@ Voetnoten worden opeenvolgend genummerd in de volgorde waarin ze op de pagina wo
 * Verstrekt extra informatie die de normale stroom van de belangrijkste informatie kan onderbreken.
 * Biedt ronde informatie of copyrightmachtigingen.
 
-In Adaptive Forms wordt [!UICONTROL footnote] gebruikt om informatie weer te geven over het invullen of gebruiken van het formulier. Voor informatie over hoe te om een Aanpassings Forms tot stand te brengen, zie [&#x200B; Creërend een AanpassingsVorm &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
+In Adaptive Forms wordt [!UICONTROL footnote] gebruikt om informatie weer te geven over het invullen of gebruiken van het formulier. Voor informatie over hoe te om een Aanpassings Forms tot stand te brengen, zie [&#x200B; Creërend een AanpassingsVorm &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=nl-NL).
 
 ## Voetnoot in Adaptive Forms {#using-footnote-adaptiveforms}
 
