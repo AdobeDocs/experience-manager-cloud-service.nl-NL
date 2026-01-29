@@ -139,7 +139,7 @@ Als u wordt gevraagd uw e-mail te verifiëren tijdens het aanmelden bij New Reli
 
 Als u uw e-mailadres niet verifieert, probeert New Relic u aan te melden met de meest recente gebruikersrecord die aan uw e-mailadres is gekoppeld. Vermijd het verifiëren van uw e-mail tijdens elke login, klik **me** checkbox in het login scherm herinneren.
 
-Voor meer hulp, open een steunkaartje als [&#x200B; Portaal van de Steun van AEM &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Voor meer hulp, open een steunkaartje als [&#x200B; Portaal van de Steun van AEM &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 
 ## Problemen met New Relic One-gebruikerstoegang oplossen {#troubleshooting}
 
@@ -179,7 +179,7 @@ Ga als volgt te werk als je geen e-mail van New Relic ontvangt:
 >
 >Volg de zelfde stappen in [&#x200B; activeer Uw sub-Rekening van New Relic One &#x200B;](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
 
-Voor meer hulp of extra begeleiding op het dienstenaanbod van New Relic One voor uw Programma van AEM as a Cloud Service, open een steunkaartje als [&#x200B; Portaal van de Steun van AEM &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Voor meer hulp of extra begeleiding op het dienstenaanbod van New Relic One voor uw Programma van AEM as a Cloud Service, open een steunkaartje als [&#x200B; Portaal van de Steun van AEM &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 
 ## Veelgestelde vragen {#faqs}
 
