@@ -119,19 +119,19 @@ Hieronder ziet u voorbeelden van hoe dit er in elke ondersteunde toepassing op e
 
 **ChatGPT**
 
-![ vorm ChatGPT Stap 1 ](assets/chatgpt-1.png)
+![&#x200B; vorm ChatGPT Stap 1 &#x200B;](assets/chatgpt-1.png)
 
-![ vorm ChatGPT Stap 2 ](assets/chatgpt-2.png)
+![&#x200B; vorm ChatGPT Stap 2 &#x200B;](assets/chatgpt-2.png)
 
-![ vorm ChatGPT Stap 3 ](assets/chatgpt-3.png)
+![&#x200B; vorm ChatGPT Stap 3 &#x200B;](assets/chatgpt-3.png)
 
-![ vorm ChatGPT Stap 4 ](assets/chatgpt-4.png)
+![&#x200B; vorm ChatGPT Stap 4 &#x200B;](assets/chatgpt-4.png)
 
-![ vorm ChatGPT Stap 5 ](assets/chatgpt-5.png)
+![&#x200B; vorm ChatGPT Stap 5 &#x200B;](assets/chatgpt-5.png)
 
-![ vorm ChatGPT Stap 6 ](assets/chatgpt-6.png)
+![&#x200B; vorm ChatGPT Stap 6 &#x200B;](assets/chatgpt-6.png)
 
-![ vorm ChatGPT Stap 7 ](assets/chatgpt-7.png)
+![&#x200B; vorm ChatGPT Stap 7 &#x200B;](assets/chatgpt-7.png)
 
 * Voeg de URL&#39;s van de AEM MCP-server toe in het gebied waar MCP-verbindingen of -gereedschappen zijn geconfigureerd
 * De verbinding activeren en u aanmelden bij uw Adobe ID bij omleiding
@@ -141,19 +141,19 @@ Hieronder ziet u voorbeelden van hoe dit er in elke ondersteunde toepassing op e
 
 **Claude**
 
-![ vorm Claude Step 1 ](assets/claude-1.png)
+![&#x200B; vorm Claude Step 1 &#x200B;](assets/claude-1.png)
 
-![ vorm Claude Stap 2 ](assets/claude-2.png)
+![&#x200B; vorm Claude Stap 2 &#x200B;](assets/claude-2.png)
 
-![ vorm Claude Step 3 ](assets/claude-3.png)
+![&#x200B; vorm Claude Step 3 &#x200B;](assets/claude-3.png)
 
-![ vorm Claude Stap 4 ](assets/claude-4.png)
+![&#x200B; vorm Claude Stap 4 &#x200B;](assets/claude-4.png)
 
-![ vorm Claude Stap 5 ](assets/claude-5.png)
+![&#x200B; vorm Claude Stap 5 &#x200B;](assets/claude-5.png)
 
-![ vorm Claude Stap 6 ](assets/claude-6.png)
+![&#x200B; vorm Claude Stap 6 &#x200B;](assets/claude-6.png)
 
-![ vorm Claude Stap 7 ](assets/claude-7.png)
+![&#x200B; vorm Claude Stap 7 &#x200B;](assets/claude-7.png)
 
 * Registreer de URL(s) van de AEM MCP-server in de MCP-configuratie van Claude
 * De Adobe-aanmeldstroom voltooien
@@ -163,15 +163,15 @@ Hieronder ziet u voorbeelden van hoe dit er in elke ondersteunde toepassing op e
 
 **Cursor**
 
-![ Vorm Stap 1 van de Curseur ](assets/cursor-1.png)
+![&#x200B; Vorm Stap 1 van de Curseur &#x200B;](assets/cursor-1.png)
 
-![ Vorm Stap 2 van de Curseur ](assets/cursor-2.png)
+![&#x200B; Vorm Stap 2 van de Curseur &#x200B;](assets/cursor-2.png)
 
-![ Vorm Stap 3 van de Curseur ](assets/cursor-3.png)
+![&#x200B; Vorm Stap 3 van de Curseur &#x200B;](assets/cursor-3.png)
 
-![ Vorm Stap 4 van de Curseur ](assets/cursor-4.png)
+![&#x200B; Vorm Stap 4 van de Curseur &#x200B;](assets/cursor-4.png)
 
-![ Vorm Stap 5 van de Curseur ](assets/cursor-5.png)
+![&#x200B; Vorm Stap 5 van de Curseur &#x200B;](assets/cursor-5.png)
 
 * Maak in de MCP-instellingen van de cursor een nieuw MCP-serveritem met de AEM MCP-URL(&#39;s)
 * Verifiëren met uw Adobe ID wanneer hierom wordt gevraagd
@@ -180,25 +180,25 @@ Hieronder ziet u voorbeelden van hoe dit er in elke ondersteunde toepassing op e
 
 **Microsoft Copilot Studio**
 
-![ vorm Copilot Stap 1 ](assets/copilot-1.png)
+![&#x200B; vorm Copilot Stap 1 &#x200B;](assets/copilot-1.png)
 
-![ vorm Copilot Stap 2 ](assets/copilot-2.png)
+![&#x200B; vorm Copilot Stap 2 &#x200B;](assets/copilot-2.png)
 
-![ vorm Copilot Stap 3 ](assets/copilot-3.png)
+![&#x200B; vorm Copilot Stap 3 &#x200B;](assets/copilot-3.png)
 
-![ vorm Copilot Stap 4 ](assets/copilot-4.png)
+![&#x200B; vorm Copilot Stap 4 &#x200B;](assets/copilot-4.png)
 
-![ vorm Copilot Stap 5 ](assets/copilot-5.png)
+![&#x200B; vorm Copilot Stap 5 &#x200B;](assets/copilot-5.png)
 
-![ vorm Copilot Stap 6 ](assets/copilot-6.png)
+![&#x200B; vorm Copilot Stap 6 &#x200B;](assets/copilot-6.png)
 
-![ vorm Copilot Stap 7 ](assets/copilot-7.png)
+![&#x200B; vorm Copilot Stap 7 &#x200B;](assets/copilot-7.png)
 
-![ vorm Copilot Stap 8 ](assets/copilot-8.png)
+![&#x200B; vorm Copilot Stap 8 &#x200B;](assets/copilot-8.png)
 
-![ vorm Copilot Stap 9 ](assets/copilot-9.png)
+![&#x200B; vorm Copilot Stap 9 &#x200B;](assets/copilot-9.png)
 
-![ vorm Copilot Stap 10 ](assets/copilot-10.png)
+![&#x200B; vorm Copilot Stap 10 &#x200B;](assets/copilot-10.png)
 
 * Een nieuwe agent maken
 * Navigeer aan de hulpmiddelsectie en klik **toevoegen hulpmiddel**
@@ -216,7 +216,7 @@ De door Adobe gehoste MCP-servers implementeren OAuth en zijn geïntegreerd met 
 * Wanneer een MCP cliënttoepassing met een server van AEM MCP verbindt, zien de gebruikers een login van Adobe dialoog en voor authentiek verklaren met hun **Adobe ID**
 * Na succesvolle login, verifieert het systeem dat de MCP cliënttoepassing in uw organisatie wordt toegelaten en dat de gevraagde server MCP wordt toegestaan. Als één van beide controle ontbreekt, wordt een foutenmelding getoond.
 
-![ MCP Cliënt niet toegelaten fout ](assets/MCP-Client-not-permitted.png)
+![&#x200B; MCP Cliënt niet toegelaten fout &#x200B;](assets/MCP-Client-not-permitted.png)
 
 * Zodra geverifieerd, geeft de server MCP tekenen uit die de toepassing voor verdere hulpmiddelvraag gebruikt
 * De hulpmiddelen MCP respecteren de toestemmingen van AEM van de gebruiker. Een gebruiker zonder toestemming om een inhoudsfragment in AEM te wijzigen, kan het ook niet via MCP wijzigen.
