@@ -110,7 +110,7 @@ Voor meer informatie, zie AI Onderzoek in [&#x200B; mening van Assets &#x200B;](
 
 **Adobe Asset Link CEP versie 2026.01.0**
 
-[&#x200B; Adobe Asset Link CEP 2026.01.0 &#x200B;](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) introduceert een nieuwe optie Ontbrekende koppelingen opnieuw koppelen in InDesign die automatisch andere ontbrekende elementen van dezelfde AEM-map opnieuw koppelt. De functie komt overeen met elementen op basis van de bestandsnaam, waardoor de handmatige inspanning aanzienlijk wordt verminderd wanneer verbroken koppelingen worden hersteld.
+[&#x200B; Adobe Asset Link CEP 2026.01.0 &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html) introduceert een nieuwe optie Ontbrekende koppelingen opnieuw koppelen in InDesign die automatisch andere ontbrekende elementen van dezelfde AEM-map opnieuw koppelt. De functie komt overeen met elementen op basis van de bestandsnaam, waardoor de handmatige inspanning aanzienlijk wordt verminderd wanneer verbroken koppelingen worden hersteld.
 
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
