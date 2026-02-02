@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Assets] as a Cloud Service Prime  {#assets-prime}
 
-![ AEM Assets Prime banner image ](/help/assets/assets/aem-assets-prime-package-banner.png)
+![&#x200B; AEM Assets Prime banner image &#x200B;](/help/assets/assets/aem-assets-prime-package-banner.png)
 
 Assets as a Cloud Service Prime bevat een lichtgewicht DAM waarmee u verschillende belangrijke functies kunt uitvoeren, zoals:
 
@@ -37,7 +37,7 @@ Assets as a Cloud Service Prime bevat een lichtgewicht DAM waarmee u verschillen
   >
   >Dynamische media met OpenAPI-mogelijkheden, die u toegang bieden tot basisopties voor afbeeldingen zoals roteren, uitsnijden (alleen handmatig - geen slim uitsnijden), spiegelen, hoogte, breedte, kwaliteit, indeling en adaptieve videostreaming, is ook beschikbaar in Assets Prime. Neem contact op met het Adobe-accountteam voor meer informatie.
 
-Nochtans, aangezien uw DAM behoeften groeien en u meer mogelijkheden, zoals, uitbreidbaarheid UI, API-gedreven automatisering, en plaatsing van de douanecode nodig hebt, moet u overwegen bevordering aan [ Assets Ultimate ](/help/assets/assets-ultimate-overview.md).
+Nochtans, aangezien uw DAM behoeften groeien en u meer mogelijkheden, zoals, uitbreidbaarheid UI, API-gedreven automatisering, en plaatsing van de douanecode nodig hebt, moet u overwegen bevordering aan [&#x200B; Assets Ultimate &#x200B;](/help/assets/assets-ultimate-overview.md).
 
 Dit artikel biedt een end-to-end workflow om Assets as a Cloud Service Prime in te schakelen.
 
@@ -49,13 +49,13 @@ Schakel Assets Prime in tijdens het maken van een nieuw programma met Cloud Mana
 
    >[!NOTE]
    >
-   >Voeg een nieuw programma toe aan het juiste Cloud Manager-productprofiel. Voor meer informatie, zie [ Rol Gebaseerde Toestemmingen in Cloud Manager ](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
+   >Voeg een nieuw programma toe aan het juiste Cloud Manager-productprofiel. Voor meer informatie, zie [&#x200B; Rol Gebaseerde Toestemmingen in Cloud Manager &#x200B;](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
-1. [ creeer een nieuw programma ](/help/journey-onboarding/create-program.md).
+1. [&#x200B; creeer een nieuw programma &#x200B;](/help/journey-onboarding/create-program.md).
 
-   Selecteer **[!UICONTROL Solutions & Add-ons]** op het tabblad **[!UICONTROL Assets Prime]** tijdens het maken van het nieuwe programma. U kunt **[!UICONTROL Assets Prime]** ook uitbreiden en selecteren **[!UICONTROL Content Hub]** om [ Content Hub ](/help/assets/product-overview.md) voor activadistributie toe te laten.
+   Selecteer **[!UICONTROL Solutions & Add-ons]** op het tabblad **[!UICONTROL Assets Prime]** tijdens het maken van het nieuwe programma. U kunt **[!UICONTROL Assets Prime]** ook uitbreiden en selecteren **[!UICONTROL Content Hub]** om [&#x200B; Content Hub &#x200B;](/help/assets/product-overview.md) voor activadistributie toe te laten.
 
-   ![ AEM Assets Ultimate ](assets/aem-assets-prime.png)
+   ![&#x200B; AEM Assets Ultimate &#x200B;](assets/aem-assets-prime.png)
 
 
 1. Klik op **[!UICONTROL Create]** om het programma te maken.
@@ -64,7 +64,7 @@ Schakel Assets Prime in tijdens het maken van een nieuw programma met Cloud Mana
 
 1. Geef de naam van de omgeving op, definieer een gebied en klik op **[!UICONTROL Save]** om de omgeving te maken.
 
-   ![ voeg milieu aan Assets Prime ](assets/aem-assets-prime-add-environment.png) toe
+   ![&#x200B; voeg milieu aan Assets Prime &#x200B;](assets/aem-assets-prime-add-environment.png) toe
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Schakel Assets Prime in tijdens het maken van een nieuw programma met Cloud Mana
 
 Assets Prime is nu ingeschakeld voor Experience Manager Assets as a Cloud Service.
 
-![ AEM Assets Prime is beschikbaar ](assets/aem-assets-prime-setup-complete.png)
+![&#x200B; AEM Assets Prime is beschikbaar &#x200B;](assets/aem-assets-prime-setup-complete.png)
 
 Systeembeheerder heeft automatisch de machtiging als AEM-beheerder en ontvangt een e-mail om naar Admin Console te navigeren om productprofielen te beheren.
 
@@ -88,13 +88,13 @@ Uw AEM as a Cloud Service-exemplaar op Admin Console bestaat uit de volgende pro
 * [AEM Assets Power Users](#onboard-power-users)
 
 
-![ Profielen van het Product van AEM Assets ](assets/aem-assets-product-profiles.png)
+![&#x200B; Profielen van het Product van AEM Assets &#x200B;](assets/aem-assets-product-profiles.png)
 
-U kunt gebruikers of gebruikersgroepen toevoegen aan de productprofielen AEM Assets Collaborator Users en AEM Assets Power Users. Voor meer informatie, zie [ aan boord de gebruikers van de Medewerker van AEM Assets ](#onboard-collaborator-users) en [ aan boord van de Macht van AEM Assets gebruikers ](#onboard-power-users).
+U kunt gebruikers of gebruikersgroepen toevoegen aan de productprofielen AEM Assets Collaborator Users en AEM Assets Power Users. Voor meer informatie, zie [&#x200B; aan boord de gebruikers van de Medewerker van AEM Assets &#x200B;](#onboard-collaborator-users) en [&#x200B; aan boord van de Macht van AEM Assets gebruikers &#x200B;](#onboard-power-users).
 
 Als u Content Hub for Assets as a Cloud Service hebt ingeschakeld, wordt in AEM Assets as a Cloud Service op Admin Console een nieuwe instantie gemaakt met `delivery` als achtervoegsel:
 
-![ Nieuwe instantie voor Content Hub ](assets/new-instance-content-hub.png)
+![&#x200B; Nieuwe instantie voor Content Hub &#x200B;](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ De instantienaam voor Content Hub bevat geen `author` of `publish` .
 
 Klik op de instantienaam om het `AEM Assets Limited Users` Content Hub-productprofiel te bekijken.
 
-![ het productprofiel van Content Hub ](assets/content-hub-product-profile.png)
+![&#x200B; het productprofiel van Content Hub &#x200B;](assets/content-hub-product-profile.png)
 
 U kunt gebruikers of gebruikersgroepen aan dit productprofiel toevoegen om hen toegang tot Content Hub te verlenen.
 
@@ -121,16 +121,16 @@ Aan boord van Collaborator-gebruikers:
 1. Open Experience Manager Assets-productprofielen door op de AEM as a Cloud Service-productnaam in de lijst met producten op Admin Console te klikken.
 
 1. Klik op de productieauteur-instantie voor AEM as a Cloud Service:
-   ![ de profielen van het Product voor AEM as a Cloud Service ](assets/aem-cloud-service-instances.png)
+   ![&#x200B; de profielen van het Product voor AEM as a Cloud Service &#x200B;](assets/aem-cloud-service-instances.png)
 
 1. Klik op het gebruikersprofiel van Medewerkers en klik op **[!UICONTROL Add users]** om de gebruiker aan het productprofiel toe te voegen.
-   ![ het productprofiel van de Gebruiker ](assets/aem-assets-collaborator-user-permissions.png)
+   ![&#x200B; het productprofiel van de Gebruiker &#x200B;](assets/aem-assets-collaborator-user-permissions.png)
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
 U kunt ook toegang krijgen tot de services die zijn toegewezen aan gebruikers van Medewerkers, zoals wordt weergegeven in de volgende afbeelding:
 
-![ de Diensten voor de gebruikers van de Medewerker ](assets/aem-assets-collaborator-users.png)
+![&#x200B; de Diensten voor de gebruikers van de Medewerker &#x200B;](assets/aem-assets-collaborator-users.png)
 
 `Adobe Express` - en `AEM Assets Collaborator Users` -services zijn standaard ingeschakeld. U kunt de schakeloptie naar wens in- en uitschakelen. Adobe raadt echter aan de standaardservices te gebruiken die zijn ingeschakeld voor de productprofielen.
 
@@ -143,15 +143,15 @@ Aan boord van stroomgebruikers:
 1. Open Experience Manager Assets-productprofielen door op de AEM as a Cloud Service-productnaam in de lijst met producten op Admin Console te klikken.
 
 1. Klik op de productieauteur-instantie voor AEM as a Cloud Service:
-   ![ de profielen van het Product voor AEM as a Cloud Service ](assets/aem-cloud-service-instances.png)
+   ![&#x200B; de profielen van het Product voor AEM as a Cloud Service &#x200B;](assets/aem-cloud-service-instances.png)
 
 1. Klik op het productprofiel voor Power-gebruikers en klik op **[!UICONTROL Add users]** om de gebruiker aan het productprofiel toe te voegen.
-   ![ het productprofiel van de Gebruiker ](assets/aem-assets-power-user-permissions.png)
+   ![&#x200B; het productprofiel van de Gebruiker &#x200B;](assets/aem-assets-power-user-permissions.png)
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
 U kunt ook toegang krijgen tot de services die zijn toegewezen aan Power-gebruikers en deze weergeven, zoals in de volgende afbeelding wordt getoond:
 
-![ de Diensten voor de gebruikers van de Macht ](assets/aem-assets-power-users.png)
+![&#x200B; de Diensten voor de gebruikers van de Macht &#x200B;](assets/aem-assets-power-users.png)
 
 `Adobe Express` - en `AEM Assets Power Users` -services zijn standaard ingeschakeld. U kunt de schakeloptie naar wens in- en uitschakelen. Adobe raadt echter aan de standaardservices te gebruiken die zijn ingeschakeld voor de productprofielen.
