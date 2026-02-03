@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: be61c21e111e1655921325a35da6fa88545fb39f
+source-git-commit: a842a5f0bd5561563a86f6f0b6e8abf8cfd679ec
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -16,103 +16,110 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 23963 {#23963}
+## Release 24222 {#24222}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 23963 samengevat, die op 19 januari 2026 openbaar werd gemaakt. De vorige onderhoudsrelease was release 23482.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 24222 samengevat, die op 3 februari 2026 openbaar werd gemaakt. De vorige onderhoudsrelease was release 23963.
 
-De activering van de 2026.1.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudrelease. Zie [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2026.2.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
->[!NOTE]
->
->Release 23862 is privé gemaakt.
+### Verbeteringen {#enhancements-24222}
 
-### Verbeteringen {#enhancements-23963}
+* CNTBF-604: Maak een nieuwe versie van de contentbackflow-bundel.
+* CQ-4361592: Voeg ondersteuning voor TypeHint toe voor het maken en bijwerken van projecten.
+* CQ-4362198: Nieuwste vertalingen van AEM- en Granite-pakketten.
+* GRANITE-36205: interne Oak-releaseversie bijwerken naar de nieuwste versie.
+* GRANITE-59211: OPTEL: Toegevoegde nonce steun en zelfbediening configuratie.
+* GRANITE-62166: Werk de migratiebundel bij om migratiestaten van migratiehulpmiddel opnieuw te gebruiken.
+* GRANITE-62598: Verwijder overtollige bezit sluit van de filter van het inhoudspakket uit.
+* GRANITE-62684: Maak de onderbreking van de cliëntcontactdoos configureerbaar door skyline-ops.
+* GRANITE-62702: Vervang &#39;sling discovery&#39; door standalone implementatie voor online migratie.
+* GRANITE-62763: Update Guava-afbrekingslijst op basis van ASSETS-rotatie.
+* GRANITE-62771: De mislukte bouw van QuickStart wanneer de nieuwe verouderde gebiedsdelen Commons-Lang worden geïntroduceerd.
+* GRANITE-62987: Werk de Felix-webconsole bij naar versie 5.0.18.
+* GRANITE-6339: Verbetering van het leasemechanisme voor Azure migration-state blob.
+* GRANITE-63343: voeg steun voor de recentste versie van de Sling API bundel in workflow.core toe.
+* GRANITE-63799: Bump OIDC Authentication Bundle version.
+* GRANITE-63821: Update QuickStart aan filevault versie fixend JCRVLT-831/JCRVLT-839.
+* GRANITE-63827: Update QuickStart aan de recentste openbare versie van Oak (1.90.0).
+* GRANITE-63888: Update QuickStart aan Jackrabbit 2.22.3.
+* GRANITE-64030: Voeg sleutelwoorden en patronen aan de lijst van gewenste personen voor Validator van de Taal van de Uitdrukking toe.
+* GRANITE-64050: Sta voor verborgen conf omslagen toe om externe productfunctionaliteit te verbergen.
+* SITES-30452: Content API met ASO - Title and Description Suggestions.
+* SITES-38099: Update `testing-model.txt` als u een hogere versie van de controles op de hygiëne wilt gebruiken.
+* SKYOPS-43616: Migreer Jenkins-gegevens naar Vault in verzendopslagplaatsen.
+* SKYOPS-108584: FABRIKANT van 0.6.0 tot 0.6.10.
+* SKYOPS-115691: Upgrade de filterbundel CORS om de kopbal van de Oorsprong van de Varkenshaar op Preflight verzoeken toe te voegen.
+* SKYOPS-123094: Werk Apache HTTP-componenten bij in Quickstart.
+* SKYOPS-123236: Neem `rep:cugPolicy` op in het replicatiepakket.
+* SKYOPS-123240: Werk CRXDE gebiedsdelen in QuickStart bij.
+* SKYOPS-123247: Update Sling XSS bundle in QuickStart.
+* SKYOPS-123250: Update Sling security bundle in Quickstart.
+* SKYOPS-123327: Java 21 vereist voor AEM-CS SDK.
+* SKYOPS-125574: Werk netcentric AC Tool bundles bij in QuickStart.
+* SKYOPS-126150: Verbeter hoogste bevel voor de generatormanuscript van de draaddumps.
 
-* CQ-4361812: Toegevoegde ondersteuning voor optioneel param folderPath in rest api. Beschrijving: Er wordt een nieuw vertaalproject gemaakt door de API en geplaatst binnen het pad dat is opgegeven door de optionele parameter `folderPath` , anders wordt het standaard het hoofdprojectpad `/content/projects` .
-* FORMS-21960: extra ondersteuning voor canvas bewerken op lokaal niveau voor interactieve communicatie, vergelijkbaar met formulierspa.
-* FORMS-2001: richtlijnen toegevoegd voor het reduceren van grote aantallen `/etc.clientlibs/toggles.json` -aanvragen in AEM Forms as a Cloud Service.
-* FORMS-22496: Maak Raw ResponseBody beschikbaar in Invoke Service.
-* FORMS-22495: voeg placeholder bezit in SetProperty regel toe.
-* FORMS-21925: opmaken van UBS-voetnoten: alle voetnoten in het formulier weergeven tijdens het laden van het formulier.
-* FORMS-20536: Stel een optie van volledige reactie in eventPayload in regel redacteur zonder afbeelding bloot.
-* SITES-37199: Annotatiefunctie zorgt ervoor dat de repository doorloopt via een niet-gevalideerde `authorizables.json` aanroep die prestatievermindering veroorzaakt.
-* SITES-37118: Commerce Optimizer-ondersteuning in Product Cockpit.
-* SITES-38029: Voeg logboeken voor het vinden MSM duw op toe wijzigt gebeurtenissen.
-* SITES-37050: Ondersteuning voor &#39;force unpublish&#39;, waarmee u de publicatie van inhoudsfragmenten waarnaar wordt verwezen door andere gepubliceerde bronnen, ongedaan kunt maken.
-* SITES-37142: extra mogelijkheid voor het checken/uitchecken van een inhoudsfragment via content fragment PATCH.
-* SITES-37613: In het CF API toestemmingeneindpunt terugkeer controlerend als de gebruiker een inhoudsfragment kan controleren, of controle als de gebruiker een inhoudsfragment kan controleren.
-* SITES-37835: Wanneer u meerdere inhoudsfragmenten met dezelfde titel, maar zonder opgegeven naam wilt maken, genereert u automatisch een nieuwe naam in plaats van dat deze mislukt als gevolg van een conflict.
-* SITES-36823: Edge Delivery met Universal Editor: verwijder de noodzaak van reverse-toewijzingen voor indexen.
-* SITES-34751: Edge Delivery met Universal Editor: mislukt bij publiceren (Vroege toegang) voor niet-ondersteunde bestandstypen en paden.
-* SITES-37888: Edge Delivery met Universal Editor: gebruik het Alt-achtervoegsel als synoniem voor Tekst voor koppelingen.
-* SITES-19850: Edge Delivery met Universal Editor: voeg ondersteuning toe voor meerdere bladen in spreadsheets.
-* SITES-32490: Edge Delivery met Universal Editor: voeg ondersteuning toe voor data-aue-component en door de gebruiker gedefinieerde data-aue-label voor blokken en standaardinhoud.
-* SITES-37794: Edge Delivery met Universal Editor: wizard Pagina maken vereenvoudigen.
-* SITES-36963: Migrate Audience/Segment Endpoint to Target API v3 for Workspace Support.
+### Opgeloste problemen {#fixed-issues-24222}
 
-### Opgeloste problemen {#fixed-issues-23963}
+* FORMS-23687: Los de mislukking van de bevestiging SSV wanneer bevat regel zonder standaardwaarde wordt gebruikt.
+* GRANITE-48472: Fout bij het wijzigen van het wachtwoord op het tabblad Gebruikersinstellingen bewerken.
+* GRANITE-50286: Los het lay-outprobleem in de statuskolom van Gebruikersbeheer modaal op.
+* GRANITE-52301: Lokaliseren Kan wijzigingen in sessietekenreeks niet vastleggen in beveiligingsgroepen.
+* GRANITE-52920: lokaliseer fout wanneer het creëren van gebruiker in Veiligheid leidt tot Nieuwe Gebruiker.
+* GRANITE-54654: tekenreeks lokaliseren in het dialoogvenster Adobe IMS Configurations Check van Security.
+* GRANITE-56371: Corrigeer onjuiste gegevensindeling in Security Trust Store.
+* GRANITE-62717: Upgrade crypto keystore for JSafe password handling with non-ASCII characters.
+* GRANITE-62789: Update overseinen-cliënt om geen herpogingswijze op inhoudsdistributie te steunen.
+* GRANITE-62824: Repareren `NullPointerException` wanneer het toegang tot van het lusje van Groepen in de Redacteur van de Gebruiker.
+* GRANITE-63080: maak het importeren van `org.slf4j.spi` compatibel met `slf4j 2.x` .
+* GRANITE-63210: Werk de distributiekernis bij om de validatie van de verzender bij het publiceren op te lossen.
+* GRANITE-63293: Corrigeer het verplichte pathfield waarbij de vereiste asterisk na de eerste ontwerpfase verloren gaat.
+* GRANITE-63360: Corrigeer onjuiste informatie die wordt weergegeven wanneer meerdere paden zijn geselecteerd.
+* SITES-36242: Npijl-omlaag GraphQL voert regex uit om de bypass van het verzendingsfilter te corrigeren.
+* SKYOPS-84379: Gebruik het recentste hulpmiddel van de FEITEN voor juiste eigenschapknevel opname door RDEs.
+* SKYOPS-121216: herstel update naar Jackson 2.20.0-bibliotheken.
 
-* CQ-4361831: Het probleem met genai_dropdown_span is niet opgelost.
-* CQ-4360895: Correctie aantal onnauwkeurige vertaaltaken in project tijdens gelijktijdige updates.
-* CQ-4361599: Oplossing voor het overslaan van contentfragmenten van vertaaltaken na 2025.7-upgrade.
-* CQ-4360747: Vaste herhaalbare vertaaltaken maken te vaak lege ladingen en trigger (NullPointerException in ScheduleRepeatTranslationProject).
-* CQ-4359994: Fixed destinationLanguage field type inconsistence for single and multi-language project.
-* FORMS-23557: De oorzaken van de Rhino-update `*.js` kunnen niet correct worden geïnstantieerd door de Use API.
-* SITES-38153: Fix cf publish reference provider for uid based references.
-* SITES-37594: Prestatieverbeteringen voor model door tagfunctionaliteit.
-* SITES-37337: FragmentCreateProcessor: geef aanvullende foutdetails op in logboeken.
-* SITES-33666: Ongelokaliseerd foutbericht &#39;Kan Json van fragment niet afdrukken&#39; in de Content Fragment Editor.
-* SITES-33675: Hardcoded &#39;undefined&#39;-tekenreeks in de Content Fragment Editor > Associated Content.
-* SITES-30715: Niet-gelokaliseerde tekenreeks Algemeen in de Content Fragment Editor.
-* SITES-28592: Niet-gelokaliseerde tekenreeksen in de modeleditor voor inhoudsfragmenten > Dialoogvenster &#39;Model is vergrendeld&#39;.
-* SITES-977: Tekenreeksen &quot;Tags&quot; en &quot;verzamelingen&quot; zijn niet gelokaliseerd op de pagina met inhoudsfragmenten bewerken.
-* SITES-29699: Niet-gelokaliseerde typen toegestane elementen in de Content Fragment Editor.
-* SITES-25240: Call to action-velden in de Teaser Modal hebben geen zichtbaar label.
-* SITES-24869: Afgeknot tooltip in de Redacteur van het Malplaatje > Scheidingsteken > Beleid.
-* SITES-19313: De fout is unlocalized wanneer belemmering en laat vallen een component aan geschrapte malplaatje in de Redacteur van het Malplaatje.
-* SITES-18103: Niet-gelokaliseerde tekenreeksen in Page Editor > Workflow.
-* SITES-17501: Niet-gelokaliseerde tekenreeksen in de Redacteur van het Malplaatje > de redacteur van het Beleid van de Component.
-* SITES-15091: Tekenreeksen zijn niet-gelokaliseerd voor de eigenschappen van tekstcomponenten van het Experience-fragment.
-* SITES-8113: Tekenreeks &#39;Assets&#39; is niet gelokaliseerd in het dialoogvenster Afbeelding selecteren voor &#39;Sjablonen&#39; in het menu Opties.
-* SITES-37587: Het maken van live kopieën mislukt nog steeds in PROD met NPE in RolloutManagerImpl.
-* SITES-37335: Live Copy Pagina-eigenschappen geven fout weer in console met betrekking tot cq-tags.
-* SITES-36972: De knop &quot;Rollout&quot; ontbreekt in de bewerkbare werkbalk.
-* SITES-36570: Het maken van actieve kopieën mislukt nadat de schakeloptie Live kopie maken is geactiveerd.
-* SITES-36158: De uitrol mislukt bij Taak vanwege een uitzondering.
-* SITES-35655: De nieuwe redacteur van CF toont actieve overerving nadat het werd gebroken.
-* SITES-31425: Unlocalized Error message `Error: {} field is required` weergegeven in de workflow Start in sites.
-* SITES-19802: Knopinfo is niet gelokaliseerd op de site Core Components > Inhoudsopgave.
-* SITES-36543: Probleem opgelost waarbij beheerders uitgecheckte inhoudsfragmenten konden bewerken.
-* SITES-36967: Fixed NullPointerExceptions that occur when try to generate thumbnail data for broken content fragments.
-* SITES-37791: Probleem verholpen waarbij het aanroepen van FindAndReplace voor tekenreeksen die `$` bevatten, zou mislukken.
-* SITES-37018: Leeg foutbericht bij kopiëren van pagina met niet-toegestaan sjabloonpad.
-* SITES-36243: Edge Delivery met Universal Editor: verbeter 404s tijdens het publiceren van `sling:OrderedFolder` .
-* SITES-37684: Edge Delivery met Universal Editor: verbeter de prestatievermindering in omgevingen met veel sites.
-* SITES-37840: Edge Delivery met Universal Editor: verhelpt publicatiefouten die zijn ontstaan door verouderde toegangstoken voor Edge Delivery.
-* SITES-37933: Edge Delivery met Universal Editor: repareer (un)publicatiefouten voor verwijderde bronnen in Launches.
-* SITES-37870: Edge Delivery met Universal Editor: Fix broken rendering van metagegevens van aangepaste pagina&#39;s met ondersteuning voor meerdere velden ingeschakeld.
-* SITES-37349: Edge Delivery met Universal Editor: geef meerdere velden met één item als lijst weer met één lijstitem.
-* SITES-36148: Edge Delivery with Universal Editor: Fix data-aue-label for compound multi-fields.
+#### AEM Guides {#guides-24222}
 
-### Bekende problemen {#known-issues-23963}
+* GUIDEN-38198: Wanneer het bijwerken van een gealigneerde vergelijking van MathML gebruikend de Edit optie van MathML van het contextmenu, wordt de bijgewerkte waarde niet weerspiegeld tot de pagina wordt verfrist.
+* GUIDEN-38276: Kan versielabels niet verwijderen uit het deelvenster Versiegeschiedenis in de gebruikersinterface van Assets.
+* GUIDEN-36641: Wanneer het produceren van de output van AEM Sites, de kaarttitels die sleutelwoorden en onderwerptitels met `<ph>` element bevatten worden niet inbegrepen in de gepubliceerde output.
+* GUIDEN-37837: Wanneer het proberen om een onderwerp of een kaart te bewaren, kan de verrichting met een Mislukt om dossierfout, vooral tijdens intensieve taken van de activaverwerking of vertaalwerkschema&#39;s die op de achtergrond lopen periodiek ontbreken op te slaan.
+* GUIDEN-2774: Het verbroken lijstrapport bevat onjuist externe koppelingen, geldig `keyrefs` en trefwoorden die correct zijn opgelost binnen het bereik van de huidige kaart.
+
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+
+### Bekende problemen {#known-issues-24222}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-23963}
+### Verouderde functies en API&#39;s {#deprecated-24222}
 
-Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [&#x200B; Vervangen en Verwijderde Eigenschappen en APIs &#x200B;](/help/release-notes/deprecated-removed-features.md) document.
+* AEMSRE-2896: verbeter aangepaste logmanager configuratie behandeling.
+* GRANITE-62802: verwijderde `commons-lang` afhankelijkheid verwijderen uit `granite.auth.saml` .
+* GRANITE-62805: verwijderde `commons-lang` afhankelijkheid verwijderen uit `granite.httpcache.core` .
+* GRANITE-62864: verwijderde `commons-lang` afhankelijkheid verwijderen uit `granite.jobs.async` .
+* GRANITE-62865: verwijderde `commons-lang` afhankelijkheid verwijderen uit `granite.replication.core` .
+* GRANITE-62868: verwijderde `commons-lang` afhankelijkheid verwijderen uit `granite.rest.api` .
+* GRANITE-62895: verwijderde `commons-lang` afhankelijkheid verwijderen uit `translation.connector.msft.core` .
+* GRANITE-63069: Afgekeurd `com.adobe.granite.httpcache.core` .
+* GRANITE-63179: verwijderde `commons-lang` afhankelijkheid verwijderen uit `cq-workflow-impl` .
+* GRANITE-63180: verwijderde `commons.lang` export uit `cq-mailer` bundle verwijderen.
+* SKYOPS-123329: Drop Java 11-ondersteuning voor AEM Ethos-implementaties en -updates `commons-lang3` .
+* SKYOPS-124983: Vervangen `nashorn.args` verwijderen uit opstartscripts van AEM.
 
-### Beveiligingsproblemen {#security-23963}
+Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 23 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
+### Beveiligingsproblemen {#security-24222}
 
-### Ingesloten technologieën {#embedded-tech-23963}
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 10 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
+
+### Ingesloten technologieën {#embedded-tech-24222}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 88,0 | [&#x200B; Oak 1.88.0 API &#x200B;](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html) |
-| AEM SLING-API | 2,27,6 | [&#x200B; Apache Sling API 2.27.6 API &#x200B;](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTML | 1.4.28-1.4.0 | [&#x200B; Specificatie van de Taal van het Malplaatje van HTML &#x200B;](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2,4,65 | [&#x200B; Apache Httpd 2.4.65 &#x200B;](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM-kerncomponenten | 2.30.2. | [&#x200B; AEM WCM de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (standaard) | [&#x200B; Ondersteunde versies Node.js &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| AEM Oak | 1 90,0 | [ Oak 1.90.0 API ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.90.0/index.html) |
+| AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
+| Apache HTTP Server | 2,4,65 | [ Apache Httpd 2.4.65 ](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
+| AEM-kerncomponenten | 2.30.2. | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
+| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
