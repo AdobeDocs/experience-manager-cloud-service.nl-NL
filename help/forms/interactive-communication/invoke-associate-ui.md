@@ -37,11 +37,11 @@ Voordat u de gekoppelde interface integreert met uw toepassing, moet u controler
 - Interactieve communicatie gemaakt en gepubliceerd in AEM
 - Browser met popup-ondersteuning ingeschakeld
 - De geassocieerde gebruikers moeten deel van de **vormen-geassocieerde** groep uitmaken
-- De authentificatie vormde - [&#x200B; SAML 2.0 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- De authentificatie vormde - [&#x200B; SAML 2.0 &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [&#x200B; wordt verklaard SAML 2.0 authentificatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [&#x200B; Extra configuraties van SAML voor Associate UI &#x200B;](#additional-saml-configurations-for-associate-ui) sectie voor details.
+> Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [&#x200B; wordt verklaard SAML 2.0 authentificatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [&#x200B; Extra configuraties van SAML voor Associate UI &#x200B;](#additional-saml-configurations-for-associate-ui) sectie voor details.
 
 ### Aanvullende SAML-configuraties voor Associatieve UI
 
