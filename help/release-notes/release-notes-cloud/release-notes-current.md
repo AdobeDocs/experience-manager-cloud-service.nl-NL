@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 47e77f65a997b93ed71f58f873d8fcfa17c88382
+source-git-commit: 5d9d9455f47145f190bfba01c52478b2a302c439
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2009'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [&#x200B; Update van het Product van de Prioriteit Adobe &#x200B;](https://www.adobe.com/subscription/priority-product-update.html).
+>Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Releasedatum {#release-date}
 
@@ -32,7 +32,7 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](/help/release-notes/maintenance/latest.md) vinden.
+U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
 
 <!-- 
 
@@ -40,7 +40,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?captions=dut&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -60,11 +60,11 @@ In de volgende secties worden actieve bètaprogramma&#39;s weergegeven.
 
 ### Medewerkers in AEM (Beta-programma) {#agents-in-aem-beta-program}
 
-Verbeter vroege toegang tot krachtige, nieuwe AEM agentic mogelijkheden over productie, bestuur, optimalisering, ontdekking, en ontwikkeling. Je feedback geeft direct vorm aan de wegenkaart en de uiteindelijke functies van Adobe. Zie [&#x200B; Overzicht van Agenten in AEM &#x200B;](/help/ai-in-aem/agents/overview.md) om meer te leren.
+Verbeter vroege toegang tot krachtige, nieuwe AEM agentic mogelijkheden over productie, bestuur, optimalisering, ontdekking, en ontwikkeling. Je feedback geeft direct vorm aan de wegenkaart en de uiteindelijke functies van Adobe. Zie [ Overzicht van Agenten in AEM ](/help/ai-in-aem/agents/overview.md) om meer te leren.
 
 Dit programma duurt doorgaans 4 tot 6 weken, maar kan op maat worden gemaakt om flexibel te zijn met betrekking tot uw mogelijkheden om actief deel te nemen.
 
-Om binnen te kiezen om aan dit programma deel te nemen, e-mail [&#x200B; aemagentsteam@adobe.com &#x200B;](mailto:aemagentsteam@adobe.com) en omvat de volgende details voor zover mogelijk:
+Om binnen te kiezen om aan dit programma deel te nemen, e-mail [ aemagentsteam@adobe.com ](mailto:aemagentsteam@adobe.com) en omvat de volgende details voor zover mogelijk:
 
 * Namen en Adobe ID van teamleden die actief agenten zullen gebruiken.
 * Lijst Specifieke agenten die u of uw team zullen willen gebruiken. Of zeg gewoon &quot;Alle agenten.&quot;
@@ -94,7 +94,7 @@ AEM biedt twee servers:
 
 Deze servers MCP omvatten hulpmiddelen om met **Pagina&#39;s** te werken, **de Fragmenten van de Inhoud**, en **Assets**, en kunnen van de volgende cliënten worden gebruikt MCP: **ChatGPT**, **Claude**, **Cursor**, en **de Studio van Microsoft Copilot**.
 
-Leer meer in [&#x200B; Gebruikend MCP met de Dienst van de Wolk AEM &#x200B;](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). Voor vragen of terugkoppelen, e-mail [&#x200B; aemcs-mcp-feedback@adobe.com &#x200B;](mailto:aemcs-mcp-feedback@adobe.com).
+Leer meer in [ Gebruikend MCP met de Dienst van de Wolk AEM ](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). Voor vragen of terugkoppelen, e-mail [ aemcs-mcp-feedback@adobe.com ](mailto:aemcs-mcp-feedback@adobe.com).
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -102,34 +102,34 @@ Leer meer in [&#x200B; Gebruikend MCP met de Dienst van de Wolk AEM &#x200B;](/h
 
 AI Onderzoek introduceert een intelligente, context-bewuste onderzoekservaring die verder gaat dan traditionele sleutelwoordaanpassing door de betekenis en de intentie achter gebruikersvragen te begrijpen. Dankzij AI en het leren van machines levert het meer nauwkeurige resultaten zelfs wanneer vragen verschillend worden beschreven, misspellingen bevatten, synoniemen gebruiken, of in verschillende talen worden voorgelegd, helpen de gebruikers relevante inhoud sneller vinden met minder moeite.
 
-Voor meer informatie, zie AI Onderzoek in [&#x200B; mening van Assets &#x200B;](/help/assets/search-assets-view.md#ai-search) en [&#x200B; mening Admin &#x200B;](/help/assets/search-assets.md#ai-search).
+Voor meer informatie, zie AI Onderzoek in [ mening van Assets ](/help/assets/search-assets-view.md#ai-search) en [ mening Admin ](/help/assets/search-assets.md#ai-search).
 
 **App 3.0.1 van de Desktop versie**
 
-[&#x200B; App 3.0.1 van de Desktop (December 20, 2025) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/release-notes) verbetert betrouwbaarheid, prestaties, en stabiliteit over zeer belangrijke werkschema&#39;s. Deze release zorgt voor consistente mapnaamgeving door synchronisatieproblemen met AEM Author te verhelpen, maakt het ononderbroken gebruik van de app tijdens actieve overdrachten mogelijk, verbetert de reactiesnelheid van de gebruikersinterface via asynchrone verwerking, optimaliseert grote bestandsoverdrachten met paginering en verhelpt stabiliteitsproblemen, zoals opnieuw opstarten en vastlopen van de auteurserver tijdens grote uploads en downloads van mappen.
+[ App 3.0.1 van de Desktop (December 20, 2025) ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) verbetert betrouwbaarheid, prestaties, en stabiliteit over zeer belangrijke werkschema&#39;s. Deze release zorgt voor consistente mapnaamgeving door synchronisatieproblemen met AEM Author te verhelpen, maakt het ononderbroken gebruik van de app tijdens actieve overdrachten mogelijk, verbetert de reactiesnelheid van de gebruikersinterface via asynchrone verwerking, optimaliseert grote bestandsoverdrachten met paginering en verhelpt stabiliteitsproblemen, zoals opnieuw opstarten en vastlopen van de auteurserver tijdens grote uploads en downloads van mappen.
 
 **Adobe Asset Link CEP versie 2026.01.0**
 
-[&#x200B; Adobe Asset Link CEP 2026.01.0 &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html) introduceert een nieuwe optie Ontbrekende koppelingen opnieuw koppelen in InDesign die automatisch andere ontbrekende elementen van dezelfde AEM-map opnieuw koppelt. De functie komt overeen met elementen op basis van de bestandsnaam, waardoor de handmatige inspanning aanzienlijk wordt verminderd wanneer verbroken koppelingen worden hersteld.
+[ Adobe Asset Link CEP 2026.01.0 ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) introduceert een nieuwe optie Ontbrekende koppelingen opnieuw koppelen in InDesign die automatisch andere ontbrekende elementen van dezelfde AEM-map opnieuw koppelt. De functie komt overeen met elementen op basis van de bestandsnaam, waardoor de handmatige inspanning aanzienlijk wordt verminderd wanneer verbroken koppelingen worden hersteld.
 
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 **Verbeteringen aan de Placeholder van het Voetnoot in Aangepaste Forms (de Componenten van de Stichting)**
 
-* Toegevoegde [&#x200B; multi-line steun met lijnonderbrekingen &#x200B;](/help/forms/footnotes-richtextsupport.md), toelatend duidelijkere en uitdrukkelijker presentatie van voetnootinhoud.
+* Toegevoegde [ multi-line steun met lijnonderbrekingen ](/help/forms/footnotes-richtextsupport.md), toelatend duidelijkere en uitdrukkelijker presentatie van voetnootinhoud.
 * Voetnoten blijven nu blijvend zichtbaar binnen de plaatsaanduiding voor voetnoten, ongeacht de zichtbaarheid van de desbetreffende deelvensters, zodat consistente toegang tot kritieke informatie wordt gewaarborgd.
-  ![&#x200B; Beschrijving van voetnoten &#x200B;](/help/forms/assets/footnote-description.png){height=50%}
+  ![ Beschrijving van voetnoten ](/help/forms/assets/footnote-description.png){height=50%}
 
 ### Nieuwe functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
 **wint waarden van een serie JSON** terug
 
-De uitgebreide mogelijkheden van de douanefunctie aan [&#x200B; extractiewaarden van JSON series &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), die via een API vraag worden ontvangen, en binden hen direct aan de Adaptieve gebieden van de Vorm. U kunt nu bedrijfslogica en regels met minimale handmatige gegevenstoewijzing ontwikkelen.
+De uitgebreide mogelijkheden van de douanefunctie aan [ extractiewaarden van JSON series ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), die via een API vraag worden ontvangen, en binden hen direct aan de Adaptieve gebieden van de Vorm. U kunt nu bedrijfslogica en regels met minimale handmatige gegevenstoewijzing ontwikkelen.
 
 **stel Associate UI op een Publish instantie in werking**
 
-U kunt [&#x200B; associate UI &#x200B;](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) nu in werking stellen direct op Publish instanties. Dit staat uw agenten toe om tot Associate UI toegang te hebben en gemakkelijk mededelingen voor uw klanten te personaliseren.
+U kunt [ associate UI ](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) nu in werking stellen direct op Publish instanties. Dit staat uw agenten toe om tot Associate UI toegang te hebben en gemakkelijk mededelingen voor uw klanten te personaliseren.
 
 <!--
 **Forms Optimization opportunities**
@@ -158,10 +158,10 @@ De vervangen API&#39;s die 2/26/2026 verwijderen, mogen niet langer in de code w
 
 * **Beginnend Januari 26, 2026**: Het bericht van het Centrum van acties e-mails wordt verzonden **wekelijks per milieu** als herinnering om gebruik van deze APIs te verwijderen.
 * **februari 26, 2026**: De pijpleidingen van Cloud Manager die code bevatten die deze APIs gebruiken zullen **pauzeren** tijdens de **Kwaliteit van de Code** stap. Een Manager van de Plaatsing, de Manager van het Project, of BedrijfsEigenaar kunnen de kwestie met voeten treden om de pijpleiding toe te staan om te werk te gaan.
-* **Maart 26, 2026**: De pijpleidingen van Cloud Manager die code bevatten die deze APIs gebruiken zullen **&#x200B;**&#x200B;tijdens de **Kwaliteit van de Code** stap ontbreken, **blokkerend plaatsingen** van nieuwe code tot het gebruik wordt verwijderd.
+* **Maart 26, 2026**: De pijpleidingen van Cloud Manager die code bevatten die deze APIs gebruiken zullen **** tijdens de **Kwaliteit van de Code** stap ontbreken, **blokkerend plaatsingen** van nieuwe code tot het gebruik wordt verwijderd.
 * **April 30, 2026**: De milieu&#39;s die nog deze APIs gebruiken kunnen **niet meer kritieke de releaseupdates van Adobe ontvangen**.
 
-Zie het [&#x200B; afgekeuringsartikel &#x200B;](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
+Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
 
 +++ Uitvouwen om de afgekeurde Java API&#39;s weer te geven
 
@@ -199,12 +199,12 @@ Adobe bevorderde **het Stadium** en **de milieu&#39;s van de Productie** aan hoo
 
 >[!NOTE]
 >
-> Als u wilt profiteren van de nieuwste prestatieoptimalisaties en taalverbeteringen, kunt u het beste bouwen met Java 17 of Java 21 (voorkeur). Samenstellen met Java 8 en Java 11 blijft voorlopig ondersteund, maar wordt in een volgende release vervangen. Een afzonderlijke mededeling zal vóór afschrijving worden uitgegeven. Zie *vereisten van de bouwstijltijd* sectie van [&#x200B; dit artikel &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+> Als u wilt profiteren van de nieuwste prestatieoptimalisaties en taalverbeteringen, kunt u het beste bouwen met Java 17 of Java 21 (voorkeur). Samenstellen met Java 8 en Java 11 blijft voorlopig ondersteund, maar wordt in een volgende release vervangen. Een afzonderlijke mededeling zal vóór afschrijving worden uitgegeven. Zie *vereisten van de bouwstijltijd* sectie van [ dit artikel ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 >
 
 #### Handhaving van het configuratiebeleid van AEM Java Logs {#logconfig-policy}
 
-AEM Java-logboeken moeten een standaardindeling hebben om ervoor te zorgen dat alle klantomgevingen betrouwbaar worden gecontroleerd. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [&#x200B; Registreren artikel &#x200B;](/help/implementing/developing/introduction/logging.md#configuration-loggers).
+AEM Java-logboeken moeten een standaardindeling hebben om ervoor te zorgen dat alle klantomgevingen betrouwbaar worden gecontroleerd. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [ Registreren artikel ](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
 Om het even welke niet gestaafde douane registreren treedt met voeten *worden nu genegeerd*. De meeste klanten werden niet beïnvloed en Adobe heeft contact opgenomen met klanten van wie de huidige configuratie mogelijk beïnvloed wordt.
 
@@ -217,7 +217,7 @@ Gelieve te herzien en bij te werken om het even welke stroomafwaartse processen 
 
 #### Updates voor automatisch onderhoud pauzeren {#pause-updates}
 
-Go-live dagen, live gebeurtenissen, piekverkoop-deze momenten kunnen niet breken. [&#x200B; onze nieuwe zelfbediening eigenschappen &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md) stoppen automatische onderhoudsupdates wanneer het van belang is, zodat blijven uw teams geconcentreerd.
+Go-live dagen, live gebeurtenissen, piekverkoop-deze momenten kunnen niet breken. [ onze nieuwe zelfbediening eigenschappen ](/help/implementing/deploying/quiet-hours-update-free-periods.md) stoppen automatische onderhoudsupdates wanneer het van belang is, zodat blijven uw teams geconcentreerd.
 
 * Quiet Hours: Blokkeer automatisch onderhoud tijdens ingestelde tijden elke dag. Ideaal voor arbeidsuren, nachtelijke ritten of ochtendcutovers.
 * Periode zonder update: automatisch onderhoud gedurende een volledige week blokkeren. Gebruik deze optie voor lanceringen, promoties of jaarlijkse vastlopen.
@@ -225,7 +225,7 @@ Go-live dagen, live gebeurtenissen, piekverkoop-deze momenten kunnen niet breken
 >[!NOTE]
 >
 >Beschikbaar als Beperkte Beschikbaarheid eigenschap op 25 september.
->E-mail [&#x200B; aemcs-update-free@adobe.com &#x200B;](mailto:aemcs-update-free@adobe.com) om het op uw programma&#39;s te krijgen geactiveerd.
+>E-mail [ aemcs-update-free@adobe.com ](mailto:aemcs-update-free@adobe.com) om het op uw programma&#39;s te krijgen geactiveerd.
 >
 
 #### AEM Edge-functies (Beta-programma) {#edge-functions}
@@ -240,13 +240,13 @@ Vaak voorkomende gevallen van gebruik zijn:
 * Door de server gerenderde HTML aan de rand samenstellen en bedienen met inhoud die vanuit verschillende achtergronden is geplaatst
 * Het blootstellen van een server MCP voor LLMs zoals ChatGPT en Claude om tot douanegereedschappen toegang te hebben
 
-We hebben een beperkt aantal mogelijkheden voor AEM Publish Delivery- of Edge Delivery Services-projecten voor live productiesites. Als u in het deelnemen geinteresseerd bent of meer wilt leren, gelieve [&#x200B; aemcs-edgecompute-feedback@adobe.com &#x200B;](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval te e-mailen.
+We hebben een beperkt aantal mogelijkheden voor AEM Publish Delivery- of Edge Delivery Services-projecten voor live productiesites. Als u in het deelnemen geinteresseerd bent of meer wilt leren, gelieve [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval te e-mailen.
 
 #### Edge-verificatie voor Edge Delivery Services (Beta-programma) {#edge-authentication}
 
 Met Edge-verificatie kunt u de toegang tot Edge Delivery Services-pagina&#39;s beperken tot gebruikers die zijn geverifieerd bij uw identiteitsprovider (IdP). Dit wordt bereikt door het implementeren van een YAML-bestand met OpenID Connect-configuratie (OIDC).
 
-Als geinteresseerd, gelieve [&#x200B; aemcs-edgecompute-feedback@adobe.com &#x200B;](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval en om het even welke vragen te e-mailen u kunt hebben.
+Als geinteresseerd, gelieve [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval en om het even welke vragen te e-mailen u kunt hebben.
 
 #### Kanarische productie-inzetposten naar testcode vóór toelating van het verkeer (Beta-programma) {#canary-beta}
 
@@ -254,21 +254,13 @@ Valideer een productie bouwt met intern-slechts testverkeer alvorens het aan ein
 
 Stel uw code versies aan productie op, maar beperkt het tot slechts intern testverkeer alvorens te beslissen of om levend verkeer tegenover het rollen terug te nemen.
 
-E-mail [&#x200B; aemcs-canary-deployments-beta@adobe.com &#x200B;](mailto:aemcs-canary-deployments-beta@adobe.com) om toegang te verzoeken en terugkoppelen te delen.
-
-#### AI-antwoorden - slimmere, contextbewuste reacties voor AEM Sites (Beta-programma) {#ai-answers-beta}
-
-AI-antwoorden introduceert een nieuwe manier voor bezoekers om te communiceren met uw inhoud. Met behulp van de RAG-technologie (Retrieval-Augmented Generation) maakt het gebruik van uw door AEM beheerde gegevens om nauwkeurige, merkbestendige antwoorden direct in uw digitale ervaringen te leveren.
-
-We bereiden ons voor op het starten van het AI Answers Beta-programma en nodigen klanten nu uit om hun interesse te laten registreren. Omdat de bèta slechts over zeer beperkte capaciteit beschikt, zullen vroegtijdige aanmeldingen bij voorrang in overweging worden genomen. Als u deelneemt aan de bètaversie, kunt u de mogelijkheden van AI-antwoorden in uw AEM Cloud Service-omgeving verkennen, prestaties en nauwkeurigheid valideren en de toekomstige ervaring vormgeven voordat deze algemeen beschikbaar wordt.
-
-Om participatie te verzoeken of updates te ontvangen, gelieve [&#x200B; feedback-ai-answers@adobe.com &#x200B;](mailto:feedback-ai-answers@adobe.com) te contacteren.
+E-mail [ aemcs-canary-deployments-beta@adobe.com ](mailto:aemcs-canary-deployments-beta@adobe.com) om toegang te verzoeken en terugkoppelen te delen.
 
 #### Momentopnamen voor RDE&#39;s (Beta-programma) {#rde-snapshot-program}
 
 In bèta, steunen de Snelle Milieu&#39;s van de Ontwikkeling (RDEs) nu een eigenschap om een momentopname van de huidige staat van code en inhoud te nemen, die op een recentere tijd kan worden hersteld. Dit kan nuttig zijn wanneer het synchroniseren van code die kan moeten worden teruggekeerd, of wanneer het schakelen tussen ontwikkeling van verschillende eigenschappen. Het is ook mogelijk om alleen de veranderbare inhoud te herstellen als een bekend beginpunt voor het testen.
 
-Gelieve te e-mail [&#x200B; aemcs-rde-support@adobe.com &#x200B;](mailto:aemcs-rde-support@adobe.com) als er in het gebruiken van en het verstrekken van terugkoppelt op deze eigenschap interesseert.
+Gelieve te e-mail [ aemcs-rde-support@adobe.com ](mailto:aemcs-rde-support@adobe.com) als er in het gebruiken van en het verstrekken van terugkoppelt op deze eigenschap interesseert.
 
 #### AI-tools voor IDE&#39;s voor AEM Java en Dispatcher Development (Beta-programma) {#ai-dev-beta}
 
@@ -277,32 +269,32 @@ Java-Stapel de teams gebruiken meer en meer de AI-bijgewoonde ontwikkeling in hu
 * Deel praktijkervaringen om toekomstige door Adobe ondersteunde AI-mogelijkheden vorm te geven
 * Probeer de hulpmiddelen van winde uit die door AI agenten kunnen worden gebruikt om de code en de berichtconfiguratie van AEM te produceren en te zuiveren
 
-E-mail [&#x200B; aemcs-java-adopter@adobe.com &#x200B;](mailto:aemcs-java-adopter@adobe.com) voor meer informatie.
+E-mail [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) voor meer informatie.
 
 #### Uitgebreide Application Performance Monitoring (APM) (Alpha-programma) {#apm-alpha}
 
-Voor waarneming, steunt de Dienst van de Wolk AEM momenteel Adobe-Geleverde [&#x200B; New Relic One &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) en klant-geleide [&#x200B; Dynatrace &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Aangezien wij steun voor extra opties van APM onderzoeken, gelieve ons in [&#x200B; aemcs-apm-beta@adobe.com &#x200B;](mailto:aemcs-apm-beta@adobe.com) met uw aangewezen verkoper of technologie, samen met gebruiksgevallen te e-mailen.
+Voor waarneming, steunt de Dienst van de Wolk AEM momenteel Adobe-Geleverde [ New Relic One ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) en klant-geleide [ Dynatrace ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Aangezien wij steun voor extra opties van APM onderzoeken, gelieve ons in [ aemcs-apm-beta@adobe.com ](mailto:aemcs-apm-beta@adobe.com) met uw aangewezen verkoper of technologie, samen met gebruiksgevallen te e-mailen.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
-U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [&#x200B; hier &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) vinden.
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [&#x200B; hier &#x200B;](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
 
 ## Universele editor {#universal-editor}
 
-U kunt een volledige lijst van Universele versies van de Redacteur [&#x200B; hier &#x200B;](/help/release-notes/universal-editor/current.md) vinden.
+U kunt een volledige lijst van Universele versies van de Redacteur [ hier ](/help/release-notes/universal-editor/current.md) vinden.
 
 ## Variaties genereren {#generate-variations}
 
-U kunt een volledige lijst van Generate de versies van Variaties [&#x200B; hier &#x200B;](/help/generative-ai/release-notes-generate-variations.md) vinden.
+U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/generative-ai/release-notes-generate-variations.md) vinden.
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
