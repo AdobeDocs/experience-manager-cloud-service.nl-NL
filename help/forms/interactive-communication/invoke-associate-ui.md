@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
+source-git-commit: bfee883205f81012fea75cbd7dc5fddd7169fdbb
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,13 @@ Voordat u de gekoppelde interface integreert met uw toepassing, moet u controler
 
 - Interactieve communicatie gemaakt en gepubliceerd
 - Browser met popup-ondersteuning ingeschakeld
-- De geassocieerde [&#x200B; gebruikers moeten deel van de vorm-geassocieerde groep &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) uitmaken
-- De authentificatie vormde - [&#x200B; SAML 2.0 &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- De geassocieerde [ gebruikers moeten deel van de vorm-geassocieerde groep ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) uitmaken
+- De authentificatie vormde gebruikend om het even welk [ authentificatiemechanisme dat door AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) wordt gesteund (bijvoorbeeld, SAML 2.0, OAuth, of de managers van de douaneauthentificatie)
 
 >[!NOTE]
 >
-> Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [&#x200B; wordt verklaard SAML 2.0 authentificatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [&#x200B; Extra configuraties van SAML voor Associate UI &#x200B;](#additional-saml-configurations-for-associate-ui) sectie voor details.
+>- Dit artikel toont authentificatieconfiguratie gebruikend SAML 2.0 met [ Microsoft Entra identiteitskaart (Azure AD) als Identiteitskaart ](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings) aan.
+>- Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [ wordt verklaard SAML 2.0 authentificatie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [ Extra configuraties van SAML voor Associate UI ](#additional-saml-configurations-for-associate-ui) sectie voor details.
 
 ### Aanvullende SAML-configuraties voor Associatieve UI
 
@@ -54,7 +55,7 @@ Maak het bestand `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg
   {
     "path": ["/libs/fd/associate"],
     "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
-    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
+    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login"
     "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
     "idpCertAlias": "{your-certificate-alias}",
     "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
@@ -122,6 +123,8 @@ const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/
 ```
 
 Vervang `{program-id}` en `{env-id}` door de werkelijke omgevingswaarden.
+
+Om veiligheidsredenen, worden de parameters zoals Interactieve Communicatie identiteitskaart, de prefill dienst, en de dienstparameters niet overgegaan door URL. In plaats daarvan worden deze parameters veilig doorgegeven via een JavaScript-functie die communiceert met de Associate UI via de postMessage-API van de browser.
 
 ### Stap 2: De gegevenslading voorbereiden
 
@@ -204,13 +207,13 @@ Roep de functie aan met de juiste parameters:
 launchAssociateUI('12345', '', {}, {});
 
 // With prefill service
-launchAssociateUI('12345', 'FdmTestData', 
+launchAssociateUI('12345', 'IC_FDM', 
   { customerId: '101'}, {});
 
 // With all parameters
-launchAssociateUI('12345', 'FdmTestData', 
-  { policyNumber: 'POL-123' }, 
-  { locale: 'en', acrobatVersion: 'Acrobat_11' });
+launchAssociateUI('12345', 'IC_FDM', 
+  { customerId: "101" }, 
+  { locale: 'en', includeAttachments: "true" });
 ```
 
 ## Uw integratie testen met een voorbeeld-HTML-pagina
