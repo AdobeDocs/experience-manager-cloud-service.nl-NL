@@ -35,12 +35,12 @@ Voordat u de gekoppelde interface integreert met uw toepassing, moet u controler
 
 - Interactieve communicatie gemaakt en gepubliceerd
 - Browser met popup-ondersteuning ingeschakeld
-- De geassocieerde [&#x200B; gebruikers moeten deel van de vorm-geassocieerde groep &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) uitmaken
-- De authentificatie vormde - [&#x200B; SAML 2.0 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- De geassocieerde [&#x200B; gebruikers moeten deel van de vorm-geassocieerde groep &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) uitmaken
+- De authentificatie vormde - [&#x200B; SAML 2.0 &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [&#x200B; wordt verklaard SAML 2.0 authentificatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [&#x200B; Extra configuraties van SAML voor Associate UI &#x200B;](#additional-saml-configurations-for-associate-ui) sectie voor details.
+> Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [&#x200B; wordt verklaard SAML 2.0 authentificatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [&#x200B; Extra configuraties van SAML voor Associate UI &#x200B;](#additional-saml-configurations-for-associate-ui) sectie voor details.
 
 ### Aanvullende SAML-configuraties voor Associatieve UI
 
