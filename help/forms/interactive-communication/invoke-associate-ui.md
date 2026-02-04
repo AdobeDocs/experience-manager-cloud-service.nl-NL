@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 6b90e8f2d26d6bfd22fbd94af0d6c68466c69bbb
+source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,14 @@ De onderstaande lijst toont de diverse scenario&#39;s in real-world waar de Venn
 
 Voordat u de gekoppelde interface integreert met uw toepassing, moet u controleren of:
 
-- AEM Forms Cloud Service Publish-exemplaar
-- Interactieve communicatie gemaakt en gepubliceerd in AEM
+- Interactieve communicatie gemaakt en gepubliceerd
 - Browser met popup-ondersteuning ingeschakeld
-- De geassocieerde gebruikers moeten deel van de **vormen-geassocieerde** groep uitmaken
-- De authentificatie vormde - [&#x200B; SAML 2.0 &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- De geassocieerde [ gebruikers moeten deel van de vorm-geassocieerde groep ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) uitmaken
+- De authentificatie vormde - [ SAML 2.0 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [&#x200B; wordt verklaard SAML 2.0 authentificatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [&#x200B; Extra configuraties van SAML voor Associate UI &#x200B;](#additional-saml-configurations-for-associate-ui) sectie voor details.
+> Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [ wordt verklaard SAML 2.0 authentificatie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [ Extra configuraties van SAML voor Associate UI ](#additional-saml-configurations-for-associate-ui) sectie voor details.
 
 ### Aanvullende SAML-configuraties voor Associatieve UI
 
@@ -144,10 +143,10 @@ const data = {
 | Component | Vereist | Beschrijving |
 |-----------|----------|-------------|
 | `id` | Ja | De id van de te laden interactieve communicatie (IC) |
-| `prefill` | Nee | Bevat de dienstconfiguratie voor gegevens prefilling. |
-| `prefill.serviceName` | Nee | Naam van de service Formuliergegevensmodel die moet worden aangeroepen voor het vooraf invullen van gegevens |
-| `prefill.serviceParams` | Nee | Sleutelwaardeparen die tot de vooraf ingevulde dienst worden overgegaan |
-| `options` | Nee | Aanvullende eigenschappen die worden ondersteund voor PDF-rendering - locale, includeAttachments, embedFonts, makeAccessible |
+| `prefill` | Optioneel | Bevat de dienstconfiguratie voor gegevens prefilling. |
+| `prefill.serviceName` | Optioneel | Naam van de service Formuliergegevensmodel die moet worden aangeroepen voor het vooraf invullen van gegevens |
+| `prefill.serviceParams` | Optioneel | Sleutelwaardeparen die tot de vooraf ingevulde dienst worden overgegaan |
+| `options` | Optioneel | Aanvullende eigenschappen die worden ondersteund voor PDF-rendering - locale, includeAttachments, embedFonts, makeAccessible |
 
 ### Stap 3: Implementeer de integratiefunctie
 
@@ -409,7 +408,7 @@ Gebruik dit om IC met klantengegevens dynamisch te bevolken:
 {
   "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
+    "serviceName": "IC_FDM",
     "serviceParams": {
       "customerId": "101",
       "accountNumber": "ACC-98765"
@@ -425,11 +424,12 @@ Gebruik deze optie om extra renderopties op te geven:
 
 ```json
 {
-  "id": "12345ß",
+  "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
-    "serviceParams": { 
-      "policyNumber": "POL-123" 
+    "serviceName": "IC_FDM",
+    "serviceParams": {
+      "customerId": "101",
+      "accountNumber": "ACC-98765"
     }
   },
   "options": { 
@@ -481,16 +481,16 @@ Gebruik deze optie om extra renderopties op te geven:
 - Voor productie: geef de exacte oorspronkelijke URL van uw toepassing op
 - Zorg ervoor dat de CORS-instellingen voor de publicatie-instantie uw toepassingsdomein toestaan
 
-## Aanbevolen procedures
+<!--## Best Practices
 
-Volg de volgende aanbevolen procedures bij het implementeren van de integratie met de Associate UI:
+When implementing the Associate UI integration, follow these best practices:
 
-1. **Bevestiging**: Bevestig altijd identiteitskaart van IC en JSON nuttige lading alvorens te verzenden
-2. **de Behandeling van de Fout**: Voer juiste fout behandeling voor `window.open()` mislukkingen uit
-3. **Ervaring van de Gebruiker**: Vertoning een ladingsindicator terwijl Associate UI initialiseert
-4. **Beheer van het Geheugen**: Verwijder gebeurtenisluisteraars na initialisering om geheugenlekken te verhinderen
-5. **het Testen**: Test de integratie met popup die blockers worden toegelaten om graceful behandeling te verzekeren
-6. **de Toestemmingen van de Gebruiker**: Verifieer de gebruikers aangewezen toegang tot de vorm-geassocieerde groep hebben
+1. **Validation**: Always validate the IC ID and JSON payload before sending
+2. **Error Handling**: Implement proper error handling for `window.open()` failures
+3. **User Experience**: Display a loading indicator while the Associate UI initializes
+4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
+5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
 
 ## Zie ook
 
