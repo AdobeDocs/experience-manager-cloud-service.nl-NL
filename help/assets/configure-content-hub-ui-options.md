@@ -35,7 +35,7 @@ Met Experience Manager Assets kunnen beheerders de opties configureren die besch
 
 * Aangepaste koppelingen die u op Content Hub moet opnemen, naast elementen, verzamelingen en inzichten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472952/?captions=dut&learn=on&enablevpops){transcript=true}
 
 ## Vereisten {#prerequisites-configuration-ui}
 

@@ -30,7 +30,7 @@ Met [!DNL Content Hub] kunt u openbare verzamelingen maken. Deze verzamelingen z
 
 Hiermee kunnen gebruikers eenvoudig toegang krijgen tot de verschillende middelen die beschikbaar zijn in [!DNL Content Hub] en deze beheren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445306/?captions=dut&learn=on){transcript=true}
 
 ## Vereisten {#prerequisites}
 

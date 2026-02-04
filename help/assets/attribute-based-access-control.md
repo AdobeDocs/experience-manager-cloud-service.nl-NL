@@ -28,7 +28,7 @@ Enkele zeer belangrijke voordelen van op attribuut-gebaseerde toegangsbeheer omv
 
 * Vermindert het aantal duplicaten - verbetert de integriteit van elementen. Er zijn dubbele machtigingen nodig in op mappen gebaseerde machtigingen wanneer dezelfde elementen met verschillende groepen worden gedeeld.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475420/?captions=dut&learn=on&enablevpops){transcript=true}
 
 ## Hoe te om op Attribuut-Gebaseerd toegangsbeheer toe te laten? {#enable-attribute-based-access-control}
 

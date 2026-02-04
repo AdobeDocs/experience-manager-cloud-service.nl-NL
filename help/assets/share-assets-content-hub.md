@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Maak een koppeling naar geselecteerde elementen zodat u deze gemakkelijk met anderen kunt delen. Als geautoriseerde gebruiker van [!DNL Content Hub] selecteert u een of meer middelen die beschikbaar zijn in uw [!DNL Content Hub] -omgeving, genereert u een koppeling en stuurt u deze naar andere gebruikers van het type private of public.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474925/?captions=dut&learn=on&enablevpops=on){transcript=true}
 
 ## Vereisten {#prerequisites}
 
