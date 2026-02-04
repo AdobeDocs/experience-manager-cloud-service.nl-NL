@@ -2,9 +2,9 @@
 title: Introductie van Assets as a Cloud Service voor Digital Asset Management in AEM
 description: Introductie van Assets as a Cloud Service voor Digital Asset Management in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
+source-git-commit: 5606d66dfa9c7d11063eea495088e1263a2cc5fb
 workflow-type: tm+mt
-source-wordcount: '5626'
+source-wordcount: '5642'
 ht-degree: 0%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 AEM Assets as a Cloud Service biedt een geïntegreerde, PaaS-oplossing in de cloud voor bedrijven, niet alleen om hun Digital Asset Management en Dynamic Media-bewerkingen uit te voeren, maar ook om slimme mogelijkheden van de volgende generatie te gebruiken, zoals AI/ML. Allemaal vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerend is.
 
-Adobe biedt robuuste DAM-oplossingen (Digital Asset Management) waarmee u optimaal kunt profiteren van uw digitale middelen. Adobe Experience Manager Assets heeft twee aparte ervaringen die dezelfde Cloud Services-opslagplaats gebruiken om aan uw vereisten te voldoen. Voor informatie over op persona-Gebaseerde ervaringen voor AEM Assets, zie [&#x200B; Beschikbare op persona-Gebaseerde ervaringen voor het Digitale Beheer van Activa &#x200B;](#persona-based-experiences).
+Adobe biedt robuuste DAM-oplossingen (Digital Asset Management) waarmee u optimaal kunt profiteren van uw digitale middelen. Adobe Experience Manager Assets heeft twee aparte ervaringen die dezelfde Cloud Services-opslagplaats gebruiken om aan uw vereisten te voldoen. Voor informatie over op persona-Gebaseerde ervaringen voor AEM Assets, zie [ Beschikbare op persona-Gebaseerde ervaringen voor het Digitale Beheer van Activa ](#persona-based-experiences).
 
-Voor informatie over het dienstenaanbod van AEM Assets Ultimate en AEM Assets Prime, zie [&#x200B; Assets as a Cloud Service Ultimate &#x200B;](/help/assets/assets-ultimate-overview.md) en [&#x200B; Assets as a Cloud Service &#x200B;](/help/assets/assets-prime.md).
+Voor informatie over het dienstenaanbod van AEM Assets Ultimate en AEM Assets Prime, zie [ Assets as a Cloud Service Ultimate ](/help/assets/assets-ultimate-overview.md) en [ Assets as a Cloud Service ](/help/assets/assets-prime.md).
 
 Enkele van de belangrijkste functies van Adobe Digital Asset Management zijn:
 
-![&#x200B; toe:voegen-markeringen &#x200B;](assets/aem-assets-features-landing-page.png)
+![ toe:voegen-markeringen ](assets/aem-assets-features-landing-page.png)
 
 
 >[!BEGINTABS]
 
->[!TAB  Ingestie van Activa ]
+>[!TAB  Ingestie ]
 
 ## Inname van bedrijfsmiddelen {#asset-ingestion}
 
@@ -57,12 +57,12 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/get-started">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
    <img alt="AEM-bureaubladtoepassing gebruiken" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/get-started">
-      <strong> Desktop app van AEM van het Gebruik &lbrace;</strong>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+      <strong> Desktop app van AEM van het Gebruik {</strong>
       </a>
    </div>
    <p>
@@ -70,11 +70,11 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
    <img alt="Adobe Asset Link gebruiken" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
       <strong> de Verband van Activa van Adobe van het Gebruik </strong>
       </a>
    </div>
@@ -92,7 +92,7 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
 
 **AI-Gegenereerde meta-gegevens**: AEM Assets gebruikt AI om meta-gegevens, met inbegrip van Titel, Beschrijving, en Sleutelwoorden automatisch te produceren. Deze door AI gegenereerde velden verbeteren de nauwkeurigheid van metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, ingedeeld en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud.
 
-**AI-Gerichte activa bulksgewijs anders noemen**: [&#x200B; de mening van Assets staat u toe om veelvoudige activa in één keer anders te noemen gebruikend de Kunstmatige Intelligentie &#x200B;](/help/assets/bulk-rename-assets-view.md). U kunt meerdere bestanden tegelijk selecteren en de naam van alle bestanden tegelijk wijzigen. Sommige van het voorbeeld omzettend anders noemen herinneringen omvatten *Verandering alle dossiers in &quot;my-file&quot;en voeg een het stijgen aantal* toe en *Prefix de dossiers met 001, 002, enz. en vertaal in het Engels*.
+**AI-Gerichte activa bulksgewijs anders noemen**: [ de mening van Assets staat u toe om veelvoudige activa in één keer anders te noemen gebruikend de Kunstmatige Intelligentie ](/help/assets/bulk-rename-assets-view.md). U kunt meerdere bestanden tegelijk selecteren en de naam van alle bestanden tegelijk wijzigen. Sommige van het voorbeeld omzettend anders noemen herinneringen omvatten *Verandering alle dossiers in &quot;my-file&quot;en voeg een het stijgen aantal* toe en *Prefix de dossiers met 001, 002, enz. en vertaal in het Engels*.
 
 <table>
 <td>
@@ -212,11 +212,11 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
    <img alt="Slim uitsnijden" src="./assets/smart-cropping.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
       <strong> Slim Uitsnijden </strong>
       </a>
    </div>
@@ -239,7 +239,7 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
 </td>
 </table>
 
->[!TAB  Ontdekking van activa ]
+>[!TAB  Ontdekking ]
 
 ## Detectie van middelen {#asset-discovery}
 
@@ -269,11 +269,11 @@ AEM Assets biedt functies die u helpen snel de juiste middelen te vinden. Deze f
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=nl">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Best practices op het gebied van metagegevensbeheer" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=nl">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong> het beheer beste praktijken van Meta-gegevens </strong>
       </a>
    </div>
@@ -346,7 +346,7 @@ AEM Assets biedt functies die u helpen snel de juiste middelen te vinden. Deze f
 </td>
 </table>
 
->[!TAB  Beheer van activa ]
+>[!TAB  Governance ]
 
 ## Beheer en beheer van bedrijfsmiddelen {#asset-management-governance}
 
@@ -463,7 +463,7 @@ AEM Assets kan naadloos worden geïntegreerd met verschillende Adobe- en niet-Ad
 
 +++**Integratie met Adobe en niet-Adobe toepassingen**
 
-* **Dynamische Media met mogelijkheden OpenAPI**: [&#x200B; Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) biedt een uitvoerige reeks [&#x200B; onderzoek &#x200B;](/help/assets/search-assets-api.md) en [&#x200B; levering &#x200B;](/help/assets/deliver-assets-apis.md) APIs aan. Hierdoor kunnen uw ontwikkelaars de levering van middelen eenvoudig integreren met hun toepassingen. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt een Micro Frontend activa selecteerde gebruikersinterface om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
+* **Dynamische Media met mogelijkheden OpenAPI**: [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) biedt een uitvoerige reeks [ onderzoek ](/help/assets/search-assets-api.md) en [ levering ](/help/assets/deliver-assets-apis.md) APIs aan. Hierdoor kunnen uw ontwikkelaars de levering van middelen eenvoudig integreren met hun toepassingen. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt een Micro Frontend activa selecteerde gebruikersinterface om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
 
 * **Micro-Frontend de Selector van Activa**: Micro-Frontend de Selecteur van Activa verstrekt een gebruikersinterface die met de bewaarplaats van Experience Manager Assets integreert zodat u kunt doorbladeren of digitale activa zoeken beschikbaar in de bewaarplaats. Vervolgens kunt u deze gebruiken in de ontwerpervaring van de toepassing.
 U kunt Asset Selector integreren met een Adobe- of een niet-Adobe-toepassing.
@@ -518,9 +518,9 @@ U kunt Asset Selector integreren met een Adobe- of een niet-Adobe-toepassing.
 
 * **Integratie met Adobe Workfront**: [!DNL Adobe Workfront] is een het werkbeheertoepassing die u helpt de volledige levenscyclus van het werk in één plaats beheren. Dankzij de integratie tussen [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] kunnen organisaties de snelheid en tijd-aan-markt van inhoud verbeteren door het werk en het beheer van digitale elementen intrinsiek met elkaar te verbinden. In het kader van het beheer van hun werk in Workfront hebben gebruikers toegang tot de vereiste documenten en afbeeldingen.
 
-  Adobe biedt aan [&#x200B;  [!DNL Workfront]  te integreren en  [!DNL Adobe Experience Manager Assets]  &#x200B;](https://experienceleague.adobe.com/nl/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
+  Adobe biedt aan [  [!DNL Workfront]  te integreren en  [!DNL Adobe Experience Manager Assets]  ](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
 
-* **Integratie met Cijfer**: AEM Assets integreert binnen met Cijfer, dat ontwerpers toestaat om tot de activa toegang te hebben die direct in AEM Assets van binnen het Gebruikersinterface van Figma worden opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, op het Figma-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud in de AEM Assets-opslagplaats opslaan. Om tot de Schakelaar van AEM Assets toegang te hebben beschikbaar op de Communautaire pagina van Figma, klik [&#x200B; hier &#x200B;](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
+* **Integratie met Cijfer**: AEM Assets integreert binnen met Cijfer, dat ontwerpers toestaat om tot de activa toegang te hebben die direct in AEM Assets van binnen het Gebruikersinterface van Figma worden opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, op het Figma-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud in de AEM Assets-opslagplaats opslaan. Om tot de Schakelaar van AEM Assets toegang te hebben beschikbaar op de Communautaire pagina van Figma, klik [ hier ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
 * **Inheemse integratie met Adobe Express**: AEM Assets integreert binnen met Adobe Express, die u toestaat om tot de activa toegang te hebben die direct in AEM Assets van binnen het gebruikersinterface van Adobe Express worden opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, op het Express-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in een AEM Assets-opslagplaats.
 
@@ -575,20 +575,20 @@ U kunt Asset Selector integreren met een Adobe- of een niet-Adobe-toepassing.
 
 * **Integratie met Commerce**: De Integratie van Adobe Experience Manager (AEM) Assets voor Commerce combineert de robuuste mogelijkheden van AEM als systeem van het Beheer van Digitale Activa (DAM) met Adobe Commerce om eCommerce ervaringen te verbeteren. Deze mogelijkheden worden geleverd door Commerce-projecten aan te sluiten op een krachtige omgeving voor middelenbeheer van AEM, zodat u over een naadloze, schaalbare en efficiënte manier beschikt om bedrijfsmiddelen te beheren en te leveren in verschillende winkelomgevingen.
 * **Integrating AEM Assets met op document-Gebaseerde Authoring stromen voor Edge Delivery Services**: Wanneer [!DNL AEM Assets] met uw op document-Gebaseerde Authoring hulpmiddelen, zoals [!DNL Microsoft Word] of [!DNL Google Docs] integreert, verstrekt het een Selecteur van Activa in uw auteursgereedschap. Gebruik deze Asset Selector om [!DNL AEM Assets] te openen en de goedgekeurde elementen in uw inhoud in te voegen.
-Als u reeds een [!DNL Edge Delivery Services] website hebt, zie [[!DNL AEM Assets]  insteekmodule &#x200B;](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) documentatie leren hoe te om [!DNL AEM Assets] met uw bestaand [!DNL AEM] project te integreren.
+Als u reeds een [!DNL Edge Delivery Services] website hebt, zie [[!DNL AEM Assets]  insteekmodule ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) documentatie leren hoe te om [!DNL AEM Assets] met uw bestaand [!DNL AEM] project te integreren.
 
 * **Integreer [!DNL AEM Assets] met [!DNL Universal Editor] gebaseerde ontwerpstromen voor[!DNL Edge Delivery Services]**: opstelling [!DNL Universal Editor] om met [!DNL AEM Assets] te integreren. Dankzij deze integratie kunt u [!DNL Dynamic Media with OpenAPI capabilities] gebruiken om elementen te leveren.
 
-   * Zie [&#x200B; Configuratie in  [!DNL Edge Delivery]  Plaats &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) leren hoe te om een functie van de plukker van douaneactiva in [!DNL Universal Editor] toe te voegen. Met de aangepaste elementkiezer kunt u elementen rechtstreeks in uw [!DNL Universal Editor] -inhoud invoegen.
-   * Zie het [&#x200B; overzicht van de Uitbreiding &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) leren hoe te om tot [!DNL AEM Assets] toegang te hebben en de activa op te nemen terwijl het ontwerpen in [!DNL Universal Editor].
+   * Zie [ Configuratie in  [!DNL Edge Delivery]  Plaats ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) leren hoe te om een functie van de plukker van douaneactiva in [!DNL Universal Editor] toe te voegen. Met de aangepaste elementkiezer kunt u elementen rechtstreeks in uw [!DNL Universal Editor] -inhoud invoegen.
+   * Zie het [ overzicht van de Uitbreiding ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) leren hoe te om tot [!DNL AEM Assets] toegang te hebben en de activa op te nemen terwijl het ontwerpen in [!DNL Universal Editor].
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integratie met Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
       <strong> Integratie met Adobe Journey Optimizer </strong>
       </a>
    </div>
@@ -597,11 +597,11 @@ Als u reeds een [!DNL Edge Delivery Services] website hebt, zie [[!DNL AEM Asset
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
    <img alt="Integratie met Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
       <strong> Integratie met Commerce </strong>
       </a>
    </div>
@@ -668,10 +668,10 @@ De **Agent van de Optimalisering van de Inhoud** hulp verfijnen en past activa a
 
 **Vragen van de Steekproef:**
 
-* `Create a 2000px JPEG rendition.`
-* `Sharpen the image.`
-* `Change background color to #ff8932.`
-* `Create a rendition for an Instagram story.`
+* Maak een JPEG-uitvoering van 2000 px.
+* Verscherp de afbeelding.
+* Wijzig de achtergrondkleur in #ff8932.
+* Maak een vertoning voor een Instagram-artikel.
 
 **Beperkingen:** Sommige optimalisaties worden niet gesteund voor activa PNG.
 
@@ -697,11 +697,11 @@ Enkele belangrijke voordelen van de Governance Agent omvatten:
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-   <img alt="Overzicht van zoekagent" src="./assets/discovery-agent-overview.jpeg" />
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Overzicht van zoekagent" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong> Overzicht van de Agent van de Ontdekking </strong>
       </a>
    </div>
@@ -711,11 +711,11 @@ Enkele belangrijke voordelen van de Governance Agent omvatten:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="Overzicht van de optimalisatie van inhoud" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong> Overzicht van de Agent van de Optimalisatie van de Inhoud </strong>
       </a>
    </div>
@@ -725,11 +725,11 @@ Enkele belangrijke voordelen van de Governance Agent omvatten:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Overzicht van de bestuursagent" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong> Overzicht van de Agent van de Governance </strong>
       </a>
    </div>
@@ -741,9 +741,9 @@ Enkele belangrijke voordelen van de Governance Agent omvatten:
 
 ### **hoe te om tot Agenten in AEM** toegang te hebben
 
-De agenten zijn toegankelijk via de **Medewerker AI** in de Dienst van de Wolk AEM. Login aan [&#x200B; experience.adobe.com &#x200B;](https://experience.adobe.com/) en interactie met AI Medewerker gebruikend natuurlijke taalherinneringen.
+De agenten zijn toegankelijk via de **Medewerker AI** in de Dienst van de Wolk AEM. Login aan [ experience.adobe.com ](https://experience.adobe.com/) en interactie met AI Medewerker gebruikend natuurlijke taalherinneringen.
 
->[!TAB  Activatie van Activa ]
+>[!TAB  Activering ]
 
 ## Activering van element {#asset-activation}
 
@@ -829,7 +829,7 @@ Dynamische media biedt de volgende sleutelfuncties:
 
 * **AI-Gegenereerde videotitels**: AI-Gegenereerde videotitels in Adobe Dynamische het gebruiks kunstmatige intelligentie om titels voor videoinhoud automatisch te produceren. Met ondersteuning voor meer dan 60 talen kunt u bijschriften reviseren en een voorvertoning weergeven voordat u de video publiceert.
 
-Voor informatie over beschikbaar Dynamisch dienstenaanbod van Media, zie [&#x200B; Dynamische Media Prime en Ultimate &#x200B;](/help/assets/dynamic-media/dm-prime-ultimate.md).
+Voor informatie over beschikbaar Dynamisch dienstenaanbod van Media, zie [ Dynamische Media Prime en Ultimate ](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 
 
@@ -887,21 +887,21 @@ Dynamische media met OpenAPI-mogelijkheden zetten DAM centraal in een flexibel e
 
 Dynamische media met OpenAPI-mogelijkheden bieden de volgende belangrijke voordelen:
 
-* **Naadloze integraties**: De dynamische Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om de levering van activa met hun toepassingen [&#x200B; gemakkelijk &#x200B;](/help/assets/integrate-dynamic-media-open-apis.md) te integreren. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt a [&#x200B; Micro Frontend activa selecteerde gebruikersinterface &#x200B;](/help/assets/overview-asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
+* **Naadloze integraties**: De dynamische Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om de levering van activa met hun toepassingen [ gemakkelijk ](/help/assets/integrate-dynamic-media-open-apis.md) te integreren. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt a [ Micro Frontend activa selecteerde gebruikersinterface ](/help/assets/overview-asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
 
 * **Gecentraliseerd beheer van digitale activa**: DAM is de enige bron van waarheid voor alle digitale activa. Uw digitale middelen worden centraal beheerd in AEM Assets en worden aan verbruikende toepassingen geleverd door verwijzing gebruikend levering URLs, zonder activa te kopiëren binaries.
 
 * **updates in real time**: Om het even welke veranderingen die in goedgekeurde activa in DAM, met inbegrip van versieupdates en meta-gegevenswijzigingen worden aangebracht, worden automatisch weerspiegeld in levering URLs. Met een korte tijd-aan-Levende (TTL) waarde van 10 minuten die voor Dynamische Media met mogelijkheden OpenAPI via CDN wordt gevormd, worden de updates zichtbaar over alle creatie en gepubliceerde interfaces binnen 10 minuten.
 
-* **de consistentie van het Merk**: Slechts [&#x200B; merk-goedgekeurde activa &#x200B;](/help/assets/approve-assets.md) worden blootgesteld aan stroomafwaartse toepassingen. [&#x200B; de Managers en de Marketers van de Merk handhaven strikte controle over merkactiva &#x200B;](/help/assets/restrict-assets-delivery.md). Alleen de goedgekeurde en laatste versie van het middel is beschikbaar voor gebruik, zodat alle kanalen en toepassingen consistent blijven.
+* **de consistentie van het Merk**: Slechts [ merk-goedgekeurde activa ](/help/assets/approve-assets.md) worden blootgesteld aan stroomafwaartse toepassingen. [ de Managers en de Marketers van de Merk handhaven strikte controle over merkactiva ](/help/assets/restrict-assets-delivery.md). Alleen de goedgekeurde en laatste versie van het middel is beschikbaar voor gebruik, zodat alle kanalen en toepassingen consistent blijven.
 
 * **Web-geoptimaliseerde levering**: De digitale activa worden geleverd in Web-geoptimaliseerde formaten om de Velen van het Web van de Kern van uw digitale ervaringen te verbeteren. Deze optimalisatie omvat ondersteuning voor WebP-uitvoeringen voor afbeeldingen, adaptieve streaming via HLS- of DASH-protocollen voor video&#39;s en originele uitvoeringen voor documenten.
 
-* **Dynamische activa transformatie**: Het systeem staat voor de transformatie van het beeld toe het gebruiken van parameters URL die als beeldbepalingen worden bekend. [&#x200B; bijvoorbeeld, breedte, hoogte, roteert, keert, kwaliteit, gewas, formaat, en slimme gewas &#x200B;](/help/assets/deliver-assets-apis.md) om. Transformeerde uitvoeringen worden dynamisch gegenereerd en naadloos via de CDN geleverd.
+* **Dynamische activa transformatie**: Het systeem staat voor de transformatie van het beeld toe het gebruiken van parameters URL die als beeldbepalingen worden bekend. [ bijvoorbeeld, breedte, hoogte, roteert, keert, kwaliteit, gewas, formaat, en slimme gewas ](/help/assets/deliver-assets-apis.md) om. Transformeerde uitvoeringen worden dynamisch gegenereerd en naadloos via de CDN geleverd.
 
-* **Veilige levering van activa**: De dynamische Media met mogelijkheden OpenAPI verstrekt een mechanisme voor controle over toegang tot uw digitale activa. U kunt gebruikersrollen of groepen als meta-gegevens voor te beveiligen activa specificeren en een vooraf bepaald tijdskader plaatsen waarin [&#x200B; slechts geautoriseerde gebruikers tot deze activa &#x200B;](/help/assets/restrict-assets-delivery.md) kunnen toegang hebben. De leverings-URL&#39;s voor beveiligde elementen worden tijdens de beperkte periode niet opgelost voor onbevoegde gebruikers.
+* **Veilige levering van activa**: De dynamische Media met mogelijkheden OpenAPI verstrekt een mechanisme voor controle over toegang tot uw digitale activa. U kunt gebruikersrollen of groepen als meta-gegevens voor te beveiligen activa specificeren en een vooraf bepaald tijdskader plaatsen waarin [ slechts geautoriseerde gebruikers tot deze activa ](/help/assets/restrict-assets-delivery.md) kunnen toegang hebben. De leverings-URL&#39;s voor beveiligde elementen worden tijdens de beperkte periode niet opgelost voor onbevoegde gebruikers.
 
-Voor informatie over beschikbaar Dynamisch dienstenaanbod van Media, zie [&#x200B; Dynamische Media Prime en Ultimate &#x200B;](/help/assets/dynamic-media/dm-prime-ultimate.md).
+Voor informatie over beschikbaar Dynamisch dienstenaanbod van Media, zie [ Dynamische Media Prime en Ultimate ](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 <table>
 <td>
@@ -1017,14 +1017,14 @@ Adobe biedt robuuste DAM-oplossingen (Digital Asset Management) waarmee u optima
 
 * **de Mening van Assets**: Adobe de lichte ervaring van het activabeheer om, digitale activa op te slaan te beheren, te ontdekken en te gebruiken. Gestroomlijnde gebruikersinterface met essentiële mogelijkheden voor beheer van digitale bedrijfsmiddelen. Ontworpen voor de lichtgewicht DAM-gebruikers met focus op uploaden, metagegevensbeheer, zoeken, downloaden en delen.
 
-![&#x200B; toe:voegen-markeringen &#x200B;](assets/newui-overview.svg)
+![ toe:voegen-markeringen ](assets/newui-overview.svg)
 
 Gebruikers met toegang tot de beheerweergave hebben ook toegang tot de Assets-weergave. Assets View biedt een vereenvoudigde gebruikersinterface waarmee u uw digitale middelen eenvoudig kunt beheren, ontdekken en distribueren. Een brede reeks gebruikers van verschillende functies, waaronder creatieve, marketing- en brancheteams, kan samenwerken aan middelen en toegang krijgen tot de juiste, goedgekeurde middelen wanneer en waar ze deze nodig hebben. Veel gebruikers van DAM geven de voorkeur aan de Assets-weergave omdat deze alleen een subset functies bevat. De ervaring is gericht op creatieve personen, alleen-lezen klanten en minder belangrijke DAM-gebruikers.
 
 DAM-bibliotheken, ontwikkelaars en supergebruikers kunnen de Admin-weergave blijven gebruiken of, indien nodig, schakelen tussen de gebruikersinterfaces. U kunt de ervaring selecteren die het beste voor uw rol werkt.
 
-Voor informatie over hoe te om tot de mening van Assets en sommige vereenvoudigingen toegang te hebben die het over de mening Admin aanbiedt, zie [&#x200B; Inleiding aan de mening van Assets &#x200B;](/help/assets/assets-view-introduction.md).
+Voor informatie over hoe te om tot de mening van Assets en sommige vereenvoudigingen toegang te hebben die het over de mening Admin aanbiedt, zie [ Inleiding aan de mening van Assets ](/help/assets/assets-view-introduction.md).
 
 ## AI Assistant in AEM
 
-Voor klanten die [&#x200B; voltooide noodzakelijke criteria &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) hebben, is de Medewerker AI in AEM beschikbaar aan gebruikers van hun organisatie. Zie [&#x200B; Medewerker AI in AEM &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Voor klanten die [ voltooide noodzakelijke criteria ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) hebben, is de Medewerker AI in AEM beschikbaar aan gebruikers van hun organisatie. Zie [ Medewerker AI in AEM ](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
