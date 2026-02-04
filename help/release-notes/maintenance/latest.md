@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a842a5f0bd5561563a86f6f0b6e8abf8cfd679ec
+source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 24222 {#24222}
+## Release 24288 {#24288}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 24222 samengevat, die op 3 februari 2026 openbaar werd gemaakt. De vorige onderhoudsrelease was release 23963.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 24288 samengevat, die op 4 februari 2026 openbaar werd gemaakt. De vorige onderhoudsrelease was release 23963.
 
-De activering van de 2026.2.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2026.2.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-24222}
+>[!NOTE]
+>
+>Release 2422 is privé gemaakt.
+
+### Verbeteringen {#enhancements-24288}
 
 * CNTBF-604: Maak een nieuwe versie van de contentbackflow-bundel.
 * CQ-4361592: Voeg ondersteuning voor TypeHint toe voor het maken en bijwerken van projecten.
@@ -58,7 +62,7 @@ De activering van de 2026.2.0-functie biedt de volledige functie die is ingestel
 * SKYOPS-125574: Werk netcentric AC Tool bundles bij in QuickStart.
 * SKYOPS-126150: Verbeter hoogste bevel voor de generatormanuscript van de draaddumps.
 
-### Opgeloste problemen {#fixed-issues-24222}
+### Opgeloste problemen {#fixed-issues-24288}
 
 * FORMS-23687: Los de mislukking van de bevestiging SSV wanneer bevat regel zonder standaardwaarde wordt gebruikt.
 * GRANITE-48472: Fout bij het wijzigen van het wachtwoord op het tabblad Gebruikersinstellingen bewerken.
@@ -75,10 +79,11 @@ De activering van de 2026.2.0-functie biedt de volledige functie die is ingestel
 * GRANITE-63293: Corrigeer het verplichte pathfield waarbij de vereiste asterisk na de eerste ontwerpfase verloren gaat.
 * GRANITE-63360: Corrigeer onjuiste informatie die wordt weergegeven wanneer meerdere paden zijn geselecteerd.
 * SITES-36242: Npijl-omlaag GraphQL voert regex uit om de bypass van het verzendingsfilter te corrigeren.
+* SITES-40122: Oplossing voor Edge Delivery-integratie met ImsService voor distributie van inhoud.
 * SKYOPS-84379: Gebruik het recentste hulpmiddel van de FEITEN voor juiste eigenschapknevel opname door RDEs.
 * SKYOPS-121216: herstel update naar Jackson 2.20.0-bibliotheken.
 
-#### AEM Guides {#guides-24222}
+#### AEM Guides {#guides-24288}
 
 * GUIDEN-38198: Wanneer het bijwerken van een gealigneerde vergelijking van MathML gebruikend de Edit optie van MathML van het contextmenu, wordt de bijgewerkte waarde niet weerspiegeld tot de pagina wordt verfrist.
 * GUIDEN-38276: Kan versielabels niet verwijderen uit het deelvenster Versiegeschiedenis in de gebruikersinterface van Assets.
@@ -86,13 +91,13 @@ De activering van de 2026.2.0-functie biedt de volledige functie die is ingestel
 * GUIDEN-37837: Wanneer het proberen om een onderwerp of een kaart te bewaren, kan de verrichting met een Mislukt om dossierfout, vooral tijdens intensieve taken van de activaverwerking of vertaalwerkschema&#39;s die op de achtergrond lopen periodiek ontbreken op te slaan.
 * GUIDEN-2774: Het verbroken lijstrapport bevat onjuist externe koppelingen, geldig `keyrefs` en trefwoorden die correct zijn opgelost binnen het bereik van de huidige kaart.
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [&#x200B; versie van Experience Manager Guides roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Bekende problemen {#known-issues-24222}
+### Bekende problemen {#known-issues-24288}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-24222}
+### Verouderde functies en API&#39;s {#deprecated-24288}
 
 * AEMSRE-2896: verbeter aangepaste logmanager configuratie behandeling.
 * GRANITE-62802: verwijderde `commons-lang` afhankelijkheid verwijderen uit `granite.auth.saml` .
@@ -107,19 +112,19 @@ Geen.
 * SKYOPS-123329: Drop Java 11-ondersteuning voor AEM Ethos-implementaties en -updates `commons-lang3` .
 * SKYOPS-124983: Vervangen `nashorn.args` verwijderen uit opstartscripts van AEM.
 
-Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [&#x200B; Vervangen en Verwijderde Eigenschappen en APIs &#x200B;](/help/release-notes/deprecated-removed-features.md) document.
+Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-24222}
+### Beveiligingsproblemen {#security-24288}
 
 AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 10 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-24222}
+### Ingesloten technologieën {#embedded-tech-24288}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 90,0 | [&#x200B; Oak 1.90.0 API &#x200B;](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.90.0/index.html) |
-| AEM SLING-API | 2,27,6 | [&#x200B; Apache Sling API 2.27.6 API &#x200B;](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTML | 1.4.28-1.4.0 | [&#x200B; Specificatie van de Taal van het Malplaatje van HTML &#x200B;](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2,4,65 | [&#x200B; Apache Httpd 2.4.65 &#x200B;](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM-kerncomponenten | 2.30.2. | [&#x200B; AEM WCM de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (standaard) | [&#x200B; Ondersteunde versies Node.js &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| AEM Oak | 1 90,0 | [ Oak 1.90.0 API ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.90.0/index.html) |
+| AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
+| Apache HTTP Server | 2,4,65 | [ Apache Httpd 2.4.65 ](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
+| AEM-kerncomponenten | 2.30.2. | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
+| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
