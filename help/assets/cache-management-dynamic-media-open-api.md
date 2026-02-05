@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Effectief cachebeheer is essentieel voor het leveren van krachtige, schaalbare en up-to-date digitale middelen. In Dynamische Media met Open APIs, bepaalt het geheim voorgeheugenbeheer hoe de inhoud wordt opgeslagen, verfrist, en over de diverse lagen van de leveringspijpleiding geleverd. Antwoorden voor de levering van middelen worden in cache geplaatst op meerdere lagen voor optimale prestaties en snelle levering van inhoud.
 
-Het verlengde caching in Dynamische Media met Open APIs bestaat uit [ CDN Laag Caching ](#cdn-layer-caching) en [ Externe Controle van het Geheime voorgeheugen (BYOCDN &amp; Browser Caching) ](#byocdn-browser-caching).
+Het verlengde caching in Dynamische Media met Open APIs bestaat uit [&#x200B; CDN Laag Caching &#x200B;](#cdn-layer-caching) en [&#x200B; Externe Controle van het Geheime voorgeheugen (BYOCDN &amp; Browser Caching) &#x200B;](#byocdn-browser-caching).
 
 ## CDN-laag in cache plaatsen {#cdn-layer-caching}
 
-De leveringsreacties van activa worden in het voorgeheugen ondergebracht bij [ Adobe Beheerde CDN ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) voor een uitgebreide periode om prestaties te maximaliseren en lading op de oorsprong te minimaliseren. Deze caching wordt volledig beheerd door Adobe om ervoor te zorgen dat eindgebruikers een consistente ervaring van hoge kwaliteit hebben. De duur van de cache is opzettelijk geoptimaliseerd voor prestaties en kan niet door gebruikers worden aangepast om betrouwbaarheid en efficiënte levering van inhoud voor alle klanten te garanderen.
+De leveringsreacties van activa worden in het voorgeheugen ondergebracht bij [&#x200B; Adobe Beheerde CDN &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) voor een uitgebreide periode om prestaties te maximaliseren en lading op de oorsprong te minimaliseren. Deze caching wordt volledig beheerd door Adobe om ervoor te zorgen dat eindgebruikers een consistente ervaring van hoge kwaliteit hebben. De duur van de cache is opzettelijk geoptimaliseerd voor prestaties en kan niet door gebruikers worden aangepast om betrouwbaarheid en efficiënte levering van inhoud voor alle klanten te garanderen.
 
 Alle bezorgings-URL&#39;s worden gedurende langere tijd in de cache geplaatst bij de rand (snelst) voor optimale prestaties. De leveringsobjecten in de cache omvatten statische vertoningen, video&#39;s, binaire afbeeldingen van originele afbeeldingen en dynamisch getransformeerde afbeeldingen, zoals elementen waarvan de grootte is gewijzigd of die opnieuw zijn opgemaakt met URL-parameters. <!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
@@ -27,7 +27,7 @@ De antwoorden van de levering van activa omvatten a `Cache-Control` kopbal met e
 
 ### De koppen van Cache Control aanpassen {#customizing-cache-control-headers}
 
-Het verhogen van geheim voorgeheugentijd aan levende waarden voorbij de standaardconfiguratie verhoogt de waarschijnlijkheid van het dienen van statische inhoud, die de zichtbaarheid van inhoudsupdates in de eindgebruikerervaring kan vertragen. Als u het gedrag van de geheim voorgeheugencontrole voor uw specifiek gebruiksgeval moet wijzigen, kunt u de regels van douaneCDN vormen om reactiekopballen aan te passen. Op deze manier kunt u op basis van uw vereisten een andere tijdsduur voor de cache instellen. Verwijs naar [ Aangepaste CDN van AEM Regels voor de Kopballen van de Reactie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
+Het verhogen van geheim voorgeheugentijd aan levende waarden voorbij de standaardconfiguratie verhoogt de waarschijnlijkheid van het dienen van statische inhoud, die de zichtbaarheid van inhoudsupdates in de eindgebruikerervaring kan vertragen. Als u het gedrag van de geheim voorgeheugencontrole voor uw specifiek gebruiksgeval moet wijzigen, kunt u de regels van douaneCDN vormen om reactiekopballen aan te passen. Op deze manier kunt u op basis van uw vereisten een andere tijdsduur voor de cache instellen. Verwijs naar [&#x200B; Aangepaste CDN van AEM Regels voor de Kopballen van de Reactie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
 
 ```
 responseTransformations:
@@ -53,13 +53,13 @@ Wanneer een middel wordt bijgewerkt, geschrapt, of gewijzigd (om het even welke 
 
 ### Handmatig leegmaken van cache {#manual-cache-purging}
 
-Als cacheinhoud handmatig moet worden leeggemaakt, kunt u dit doen met de AEM-mogelijkheden voor het ongeldig maken van cache. Voor gedetailleerde instructies op hoe te om specifieke geheime voorgeheugen URLs te zuiveren, verwijs naar [ de Invalidatie van het Geheime voorgeheugen van AEM CDN ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
+Als cacheinhoud handmatig moet worden leeggemaakt, kunt u dit doen met de AEM-mogelijkheden voor het ongeldig maken van cache. Voor gedetailleerde instructies op hoe te om specifieke geheime voorgeheugen URLs te zuiveren, verwijs naar [&#x200B; de Invalidatie van het Geheime voorgeheugen van AEM CDN &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
 
 ## Veelgestelde vragen{#faq-cache-management}
 
 +++**hoe beïnvloedt het geheim voorgeheugenbeheer bestaande integratie?**
 
-Middel URLs blijft onveranderd, en de kopbal van de geheim voorgeheugencontrole die naar browsers (en andere stroomafwaartse intermediairs) van Adobe Beheerde CDN wordt verzonden blijft 10 minuten met a [`stale-while-revalidate directive` ](https://web.dev/articles/stale-while-revalidate#whats_it_mean) zijn, die ervoor zorgen dat stroomafwaartse systemen hun geheime voorgeheugens optimaal blijven gebruiken.
+Middel URLs blijft onveranderd, en de kopbal van de geheim voorgeheugencontrole die naar browsers (en andere stroomafwaartse intermediairs) van Adobe Beheerde CDN wordt verzonden blijft 10 minuten met a [`stale-while-revalidate directive` &#x200B;](https://web.dev/articles/stale-while-revalidate#whats_it_mean) zijn, die ervoor zorgen dat stroomafwaartse systemen hun geheime voorgeheugens optimaal blijven gebruiken.
 
 +++
 
@@ -101,12 +101,12 @@ De langdurige caching met gebeurtenisgestuurde actieve cachevalidatie is van toe
 
 +++ **kan ik uit lang-levend caching voor mijn bewaarplaats opteren?**
 
-U kunt [ Steun van Adobe ](https://helpx.adobe.com/in/contact.html) contacteren die de grondgedachte verklaart en Adobe zal in contact met u voor bespreking krijgen.
+U kunt [&#x200B; Steun van Adobe &#x200B;](https://helpx.adobe.com/in/contact.html) contacteren die de grondgedachte verklaart en Adobe zal in contact met u voor bespreking krijgen.
 
 +++
 
 
 >[!MORELIKETHIS]
 >
->- [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
->- [ Vanity URLs ](/help/assets/vanity-urls.md)
+>- [&#x200B; integreer de Selector van Activa met diverse toepassingen &#x200B;](/help/assets/integrate-asset-selector.md)
+>- [&#x200B; Vanity URLs &#x200B;](/help/assets/vanity-urls.md)
