@@ -3,9 +3,9 @@ title: MCP gebruiken met AEM as a Cloud Service
 description: Leer hoe u het modelcontextprotocol met AEM as a Cloud Service kunt gebruiken
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
+source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -117,21 +117,21 @@ Deze stap wordt uitgevoerd door elke gebruiker (of door een beheerder van de MCP
 
 Hieronder ziet u voorbeelden van hoe dit er in elke ondersteunde toepassing op een hoog niveau uitziet.
 
-**ChatGPT**
+### ChatGPT {#chatgpt}
 
-![&#x200B; vorm ChatGPT - Montages &#x200B;](assets/chatgpt-1.png)
+![ vorm ChatGPT - Montages ](assets/chatgpt-1.png)
 
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - Geavanceerde Montages &#x200B;](assets/chatgpt-2.png)
+![ vorm ChatGPT - Apps &amp; Connectors - Geavanceerde Montages ](assets/chatgpt-2.png)
 
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - de wijze van de Ontwikkelaar &#x200B;](assets/chatgpt-3.png)
+![ vorm ChatGPT - Apps &amp; Connectors - de wijze van de Ontwikkelaar ](assets/chatgpt-3.png)
 
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - creeer app &#x200B;](assets/chatgpt-4.png)
+![ vorm ChatGPT - Apps &amp; Connectors - creeer app ](assets/chatgpt-4.png)
 
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - Nieuwe app &#x200B;](assets/chatgpt-5.png)
+![ vorm ChatGPT - Apps &amp; Connectors - Nieuwe app ](assets/chatgpt-5.png)
 
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - de Dienst van MCP van de Inhoud van AEM &#x200B;](assets/chatgpt-6.png)
+![ vorm ChatGPT - Apps &amp; Connectors - de Dienst van MCP van de Inhoud van AEM ](assets/chatgpt-6.png)
 
-![&#x200B; vorm ChatGPT - vraag de Dienst van MCP van de Inhoud van AEM &#x200B;](assets/chatgpt-7.png)
+![ vorm ChatGPT - vraag de Dienst van MCP van de Inhoud van AEM ](assets/chatgpt-7.png)
 
 * Voeg de URL&#39;s van de AEM MCP-server toe in het gebied waar MCP-verbindingen of -gereedschappen zijn geconfigureerd
 * De verbinding activeren en u aanmelden bij uw Adobe ID bij omleiding
@@ -139,21 +139,21 @@ Hieronder ziet u voorbeelden van hoe dit er in elke ondersteunde toepassing op e
 
   *&quot;Gebruikend de gevormde hulpmiddelen van AEM MCP, maak een lijst van alle plaatsen in onze auteursmilieu.&quot;*
 
-**Claude**
+### Claude {#claude}
 
-![&#x200B; vorm Claude - Montages &#x200B;](assets/claude-1.png)
+![ vorm Claude - Montages ](assets/claude-1.png)
 
-![&#x200B; vorm Claude - Schakelaars &#x200B;](assets/claude-2.png)
+![ vorm Claude - Schakelaars ](assets/claude-2.png)
 
-![&#x200B; vorm Claude - Verbindingen - voeg douaneschakelaar &#x200B;](assets/claude-3.png) toe
+![ vorm Claude - Verbindingen - voeg douaneschakelaar ](assets/claude-3.png) toe
 
-![&#x200B; vorm Claude - Verbindingen - verbind douaneschakelaar &#x200B;](assets/claude-4.png)
+![ vorm Claude - Verbindingen - verbind douaneschakelaar ](assets/claude-4.png)
 
-![&#x200B; vorm Claude - Verbindingen - Vorm douaneschakelaar &#x200B;](assets/claude-5.png)
+![ vorm Claude - Verbindingen - Vorm douaneschakelaar ](assets/claude-5.png)
 
-![&#x200B; vorm Claude - Verbindingen - de toestemmingen van het Aangepast schakelaarhulpmiddel &#x200B;](assets/claude-6.png)
+![ vorm Claude - Verbindingen - de toestemmingen van het Aangepast schakelaarhulpmiddel ](assets/claude-6.png)
 
-![&#x200B; vorm Claude - vraag de Dienst van MCP van de Inhoud van AEM &#x200B;](assets/claude-7.png)
+![ vorm Claude - vraag de Dienst van MCP van de Inhoud van AEM ](assets/claude-7.png)
 
 * Registreer de URL(s) van de AEM MCP-server in de MCP-configuratie van Claude
 * De Adobe-aanmeldstroom voltooien
@@ -161,44 +161,44 @@ Hieronder ziet u voorbeelden van hoe dit er in elke ondersteunde toepassing op e
 * Verzeker de server MCP alvorens uw gesprek te beginnen wordt geselecteerd
 * Vraag Claude om AEM-gerelateerde taken uit te voeren; Claude zal AEM-gereedschappen selecteren die door de MCP-server worden weergegeven op basis van uw vraag.
 
-**Cursor**
+### Cursor {#cursor}
 
-![&#x200B; vorm Cursor - Montages &#x200B;](assets/cursor-1.png)
+![ vorm Cursor - Montages ](assets/cursor-1.png)
 
-![&#x200B; vorm Cursor - Hulpmiddelen &amp; MCP - voeg Douane MCP &#x200B;](assets/cursor-2.png) toe
+![ vorm Cursor - Hulpmiddelen &amp; MCP - voeg Douane MCP ](assets/cursor-2.png) toe
 
-![&#x200B; vorm Cursor - voeg de montages van Aangepast MCP &#x200B;](assets/cursor-3.png) toe
+![ vorm Cursor - voeg de montages van Aangepast MCP ](assets/cursor-3.png) toe
 
-![&#x200B; vorm Cursor - verbind &#x200B;](assets/cursor-4.png)
+![ vorm Cursor - verbind ](assets/cursor-4.png)
 
-![&#x200B; vorm Cursor - vraag de nieuwe dienst &#x200B;](assets/cursor-5.png)
+![ vorm Cursor - vraag de nieuwe dienst ](assets/cursor-5.png)
 
 * Maak in de MCP-instellingen van de cursor een nieuw MCP-serveritem met de AEM MCP-URL(&#39;s)
 * Verifiëren met uw Adobe ID wanneer hierom wordt gevraagd
 * U kunt desgewenst afzonderlijke gereedschappen in- of uitschakelen door op de naam van het gereedschap te klikken. Alle gereedschappen zijn standaard ingeschakeld.
 * Gebruik de cursoreditor of -chat om AEM-gereedschappen aan te roepen als onderdeel van ontwikkelings- of inhoudsworkflows.
 
-**Microsoft Copilot Studio**
+### Microsoft Copilot Studio {#microsoft-copilot-studio}
 
-![&#x200B; vorm Copilot - Agenten &#x200B;](assets/copilot-1.png)
+![ vorm Copilot - Agenten ](assets/copilot-1.png)
 
-![&#x200B; vorm Copilot - voeg hulpmiddel &#x200B;](assets/copilot-2.png) toe
+![ vorm Copilot - voeg hulpmiddel ](assets/copilot-2.png) toe
 
-![&#x200B; vorm Copilot - voeg hulpmiddel toe - modelprotocol van de Context &#x200B;](assets/copilot-3.png)
+![ vorm Copilot - voeg hulpmiddel toe - modelprotocol van de Context ](assets/copilot-3.png)
 
-![&#x200B; vorm Copilot - voeg een modelserver van het Protocol van de Context (voorproef) toe &#x200B;](assets/copilot-4.png)
+![ vorm Copilot - voeg een modelserver van het Protocol van de Context (voorproef) toe ](assets/copilot-4.png)
 
-![&#x200B; vorm Copilot - voeg hulpmiddel toe - creeer nieuwe verbinding &#x200B;](assets/copilot-5.png)
+![ vorm Copilot - voeg hulpmiddel toe - creeer nieuwe verbinding ](assets/copilot-5.png)
 
-![&#x200B; vorm Copilot - voeg hulpmiddel toe - voeg toe en vorm &#x200B;](assets/copilot-6.png)
+![ vorm Copilot - voeg hulpmiddel toe - voeg toe en vorm ](assets/copilot-6.png)
 
-![&#x200B; vorm Copilot - voeg hulpmiddel toe - vorm &#x200B;](assets/copilot-7.png)
+![ vorm Copilot - voeg hulpmiddel toe - vorm ](assets/copilot-7.png)
 
-![&#x200B; vorm Copilot - de verbinding van de Test &#x200B;](assets/copilot-8.png)
+![ vorm Copilot - de verbinding van de Test ](assets/copilot-8.png)
 
-![&#x200B; vorm Copilot - beheer Verbindingen &#x200B;](assets/copilot-9.png)
+![ vorm Copilot - beheer Verbindingen ](assets/copilot-9.png)
 
-![&#x200B; vorm Copilot - de Agent van de Test &#x200B;](assets/copilot-10.png)
+![ vorm Copilot - de Agent van de Test ](assets/copilot-10.png)
 
 * Een nieuwe agent maken
 * Navigeer aan de hulpmiddelsectie en klik **toevoegen hulpmiddel**
@@ -216,7 +216,7 @@ De door Adobe gehoste MCP-servers implementeren OAuth en zijn geïntegreerd met 
 * Wanneer een MCP cliënttoepassing met een server van AEM MCP verbindt, zien de gebruikers een login van Adobe dialoog en voor authentiek verklaren met hun **Adobe ID**
 * Na succesvolle login, verifieert het systeem dat de MCP cliënttoepassing in uw organisatie wordt toegelaten en dat de gevraagde server MCP wordt toegestaan. Als één van beide controle ontbreekt, wordt een foutenmelding getoond.
 
-![&#x200B; MCP Cliënt niet toegelaten fout &#x200B;](assets/MCP-Client-not-permitted.png)
+![ MCP Cliënt niet toegelaten fout ](assets/MCP-Client-not-permitted.png)
 
 * Zodra geverifieerd, geeft de server MCP tekenen uit die de toepassing voor verdere hulpmiddelvraag gebruikt
 * De hulpmiddelen MCP respecteren de toestemmingen van AEM van de gebruiker. Een gebruiker zonder toestemming om een inhoudsfragment in AEM te wijzigen, kan het ook niet via MCP wijzigen.
