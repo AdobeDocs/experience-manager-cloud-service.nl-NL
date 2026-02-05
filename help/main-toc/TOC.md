@@ -314,7 +314,7 @@ ht-degree: 1%
 + Experience Hub {#experience-hub}
    + [Informatie over Experience Hub](/help/experience-hub.md)
 + Onboarding {#onboarding}
-   + [&#x200B; Begin hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + [&#x200B; Begin hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=nl-NL)
    + Onboarding Journaal {#journey}
       + [Reisoverzicht aan boord](/help/journey-onboarding/overview.md)
       + [Voorbereiding aan boord](/help/journey-onboarding/preparation.md)
@@ -539,7 +539,7 @@ ht-degree: 1%
                + [Vertaalregels configureren](/help/journey-sites/translation/translation-rules.md)
                + [Inhoud vertalen](/help/journey-sites/translation/translate-content.md)
                + [Vertaalde inhoud publiceren](/help/journey-sites/translation/publish-content.md)
-            + [&#x200B; Zwaardeloze Vertaalreis &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
+            + [&#x200B; Zwaardeloze Vertaalreis &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=nl-NL)
             + [Inhoud vertalen voor meertalige sites](/help/sites-cloud/administering/translation/overview.md)
             + [Inhoud voorbereiden voor vertaling](/help/sites-cloud/administering/translation/preparation.md)
             + [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -559,7 +559,7 @@ ht-degree: 1%
       + [Inhoudsfragmenten exporteren naar Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exporteren van ervaringsfragmenten naar Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integreren met Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [&#x200B; Gebruikend Inhoudsfragmenten in Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
+      + [&#x200B; Gebruikend Inhoudsfragmenten in Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=nl-NL)
    + [Operationele telemetrie voor AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [Contextafhankelijke experimenten](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
@@ -643,7 +643,7 @@ ht-degree: 1%
    + Elementen delen en distribueren {#brand-portal}
       + [Vorm  [!DNL Assets]  met  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Elementen publiceren naar  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [&#x200B; publiceer activa van  [!DNL Brand Portal]  aan  [!DNL Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+      + [&#x200B; publiceer activa van  [!DNL Brand Portal]  aan  [!DNL Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=nl-NL)
    + Inhoudsfragmenten {#content-fragments}
       + [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
       + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -917,9 +917,9 @@ ht-degree: 1%
                + [Formulierkoppelingen aan de pagina Sites toevoegen met de component Link](/help/forms/add-form-link-to-aem-sites-page.md)
       + Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + PDF forms converteren naar Adaptieve Forms {#afcs}
-            + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-            + [&#x200B; zet een bestaande Vorm van PDF in een AanpassingsVorm  om](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
-            + [Geconverteerde formulieren controleren en corrigeren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
+            + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=nl-NL)
+            + [&#x200B; zet een bestaande Vorm van PDF in een AanpassingsVorm  om](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=nl-NL)
+            + [Geconverteerde formulieren controleren en corrigeren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=nl-NL#welcome-to-review-and-correct-editor)
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Inleiding tot het ontwerpen van een adaptieve Forms](/help/forms/introduction-forms-authoring.md)
             + [Contextassistentie voor het ontwerpen van formuliervelden](/help/forms/authoring-in-field-help.md)
@@ -937,7 +937,7 @@ ht-degree: 1%
             + [CAPTCHA gebruiken in een adaptieve vorm](/help/forms/captcha-adaptive-forms.md)
             + [Captcha gebruiken in een adaptieve vorm](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [Turnstile CAPTCHA gebruiken in een adaptieve vorm](/help/forms/integrate-adaptive-forms-turnstile.md)
-            + [&#x200B; Componenten van de Kern van het Gebruik &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+            + [&#x200B; Componenten van de Kern van het Gebruik &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
             + [Krabbelen toepassen](/help/forms/signing-forms-using-scribble.md)
             + [Een tabel toevoegen aan een adaptief formulier](/help/forms/adaptive-forms-tables.md)
             + [Ondersteuning voor voetnoten toevoegen aan een adaptief formulier](/help/forms/footnotes-richtextsupport.md)
@@ -1259,7 +1259,7 @@ ht-degree: 1%
 + Koploos {#headless}
    + [Wat is een Headless CMS?](/help/headless/what-is-headless.md)
    + [Inleiding tot AEM Headless](/help/headless/introduction.md)
-   + [&#x200B; Portaal van de Ontwikkelaar (Aanvullende Middelen) &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [&#x200B; Portaal van de Ontwikkelaar (Aanvullende Middelen) &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
    + [Beste praktijken - Opstelling en Gebruik](/help/headless/best-practices-setup-use.md)
    + Instellen {#setup}
       + [Inleiding](/help/headless/setup/introduction.md)
@@ -1269,14 +1269,14 @@ ht-degree: 1%
       + [Inhoudsfragment](/help/headless/setup/create-content-fragment.md)
       + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
    + Inhoudsfragmenten {#content-fragments}
-      + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
-      + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
-      + [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
+      + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=nl-NL)
+      + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=nl-NL)
+      + [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=nl-NL)
       + Authoring{#authoring}
-         + [&#x200B; Authoring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
-         + [&#x200B; de redacteur van de Prijsverlaging &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
-      + [&#x200B; previewing Fragments &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
-      + [&#x200B; de Boom van de Structuur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+         + [&#x200B; Authoring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=nl-NL)
+         + [&#x200B; de redacteur van de Prijsverlaging &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=nl-NL)
+      + [&#x200B; previewing Fragments &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=nl-NL)
+      + [&#x200B; de Boom van de Structuur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=nl-NL)
    + Selector inhoudfragment {#content-fragment-selector}
       + [Micro-Frontend Content Fragment selecteren - Overzicht](/help/headless/content-fragment-selector/overview.md)
       + [Content Fragment Selector - Gerelateerde eigenschappen](/help/headless/content-fragment-selector/properties.md)
@@ -1293,7 +1293,7 @@ ht-degree: 1%
       + [GraphQL-query&#39;s oplossen](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [AEM Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [Content Fragments and Models OpenAPIs](/help/headless/content-fragment-openapis.md)
-   + [&#x200B; de steun van de Fragmenten van de Inhoud in HTTP API van Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+   + [&#x200B; de steun van de Fragmenten van de Inhoud in HTTP API van Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=nl-NL)
    + Beveiliging {#security}
       + [Machtigingen](/help/headless/security/permissions.md)
       + [Verificatie](/help/headless/security/authentication.md)
@@ -1315,7 +1315,7 @@ ht-degree: 1%
          + [Hoe kan ik het allemaal samenbrengen?](/help/journey-headless/developer/put-it-all-together.md)
          + [Live gaan met uw toepassing zonder kop](/help/journey-headless/developer/go-live.md)
          + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](/help/journey-headless/developer/create-spa.md)
-         + [&#x200B; Portaal van de Ontwikkelaar (Aanvullende Middelen) &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [&#x200B; Portaal van de Ontwikkelaar (Aanvullende Middelen) &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
       + Reis voor architect zonder hoofdinhoud {#architect}
          + [AEM Headless Content Architect Reis Overzicht](/help/journey-headless/architect/overview.md)
          + [Content Modeling for Headless met AEM - Een introductie](/help/journey-headless/architect/introduction.md)
@@ -1395,7 +1395,7 @@ ht-degree: 1%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Meldingen](/help/implementing/cloud-manager/notifications.md)
-      + [&#x200B; Geavanceerde Voorzien van een netwerk &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
+      + [&#x200B; Geavanceerde Voorzien van een netwerk &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=nl-NL)
       + Edge Delivery-sites {#edge-delivery-sites}
          + [Inleiding tot Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Een Edge Delivery-site toevoegen aan Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
@@ -1462,8 +1462,8 @@ ht-degree: 1%
          + Componenten en sjablonen {#components-templates}
             + [Overzicht van componenten](/help/implementing/developing/components/overview.md)
             + [Sjablonen](/help/implementing/developing/components/templates.md)
-            + [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-            + [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
+            + [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+            + [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=nl-NL)
             + [JSON-exportfunctie voor services voor inhoud](/help/implementing/developing/components/json-exporter.md)
             + [JSON-export inschakelen voor een component](/help/implementing/developing/components/enabling-json-exporter.md)
             + [Afbeeldingseditor](/help/implementing/developing/components/image-editor.md)
@@ -1498,10 +1498,10 @@ ht-degree: 1%
          + [Overzicht van ontwikkelaars](/help/implementing/universal-editor/developer-overview.md)
          + [Lokale AEM-ontwikkeling](/help/implementing/universal-editor/local-dev.md)
          + [&#x200B; SecurBank Steekproef App &#x200B;](/help/implementing/universal-editor/securbank.md)
-      + [&#x200B; het Beheer van de Ervaring zonder hoofd &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
+      + [&#x200B; het Beheer van de Ervaring zonder hoofd &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=nl-NL)
       + Hybride en SBZ-ontwikkeling {#hybrid}
          + [&#x200B; Hybride en KUUROORD met AEM &#x200B;](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [&#x200B; toelatend de Uitvoer JSON voor een Component &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [&#x200B; toelatend de Uitvoer JSON voor een Component &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=nl-NL)
          + [Veroudering van SPA-editor](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [Introductie van het KUUROORD en Analyse](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND-zelfstudie](/help/implementing/developing/hybrid/wknd-tutorial.md)
@@ -1516,7 +1516,7 @@ ht-degree: 1%
          + [De RemotePage-component](/help/implementing/developing/hybrid/remote-page.md)
          + [Een externe SPA bewerken in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [Samengestelde componenten in SPA&#39;s](/help/implementing/developing/hybrid/composite-components.md)
-         + [&#x200B; toelatend de Uitvoer JSON voor een Component &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [&#x200B; toelatend de Uitvoer JSON voor een Component &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=nl-NL)
          + [Integratie starten](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA-referentiedocumenten](/help/implementing/developing/hybrid/reference-materials.md)
    + Gereedschappen voor ontwikkelaars {#developer-tools}
@@ -1538,7 +1538,7 @@ ht-degree: 1%
       + [ContextHub Diagnostics](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [ContextHub uitbreiden](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub-API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [&#x200B; het Vormen Segmentatie met ContextHub &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
+      + [&#x200B; het Vormen Segmentatie met ContextHub &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=nl-NL)
    + AEM as a Cloud Service configureren en uitbreiden {#configuring-and-extending}
       + AEM uitbreiden met App Builder {#app-builder}
          + [AEM uitbreiden met Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
