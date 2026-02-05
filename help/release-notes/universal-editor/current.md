@@ -18,16 +18,16 @@ Dit zijn de releaseopmerkingen voor de release van 5 februari 2026 van de Univer
 
 >[!TIP]
 >
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* De bewegingsactie is nu beschikbaar binnen [ het contextmenu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
-* RTE steunt nu [ deeg als tekst.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
+* De bewegingsactie is nu beschikbaar binnen [&#x200B; het contextmenu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* RTE steunt nu [&#x200B; deeg als tekst.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -37,4 +37,4 @@ Als u de volgende functies wilt testen en uw feedback wilt delen, stuurt u een e
 
 ## Overige verbeteringen {#other-improvements}
 
-* Publiceren naar voorvertoning is ingeschakeld voor AEM 6.5 bij gebruik van de [`xwalk` -plug-in. ](/help/implementing/universal-editor/component-definition.md#plugins)
+* Publiceren naar voorvertoning is ingeschakeld voor AEM 6.5 bij gebruik van de [`xwalk` -plug-in. &#x200B;](/help/implementing/universal-editor/component-definition.md#plugins)
