@@ -4,9 +4,9 @@ description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerst
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f73316b16b0fb90e225b954ba614008d734b8918
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van
 
 >[!TIP]
 >
->Als u in een voorbeeld zou verkiezen te duiken, kunt u de [&#x200B; Universele SteekproefApp van de Redacteur op GitHub &#x200B;](https://github.com/adobe/universal-editor-sample-editable-app) herzien.
+>Als u in een voorbeeld zou verkiezen te duiken, kunt u de [ Universele SteekproefApp van de Redacteur op GitHub ](https://github.com/adobe/universal-editor-sample-editable-app) herzien.
 
 Hoewel de Universal Editor inhoud uit elke bron kan bewerken, wordt in dit document een AEM-app als voorbeeld gebruikt. Dit document begeleidt u door deze stappen.
 
@@ -26,7 +26,7 @@ Hoewel de Universal Editor inhoud uit elke bron kan bewerken, wordt in dit docum
 
 De Universal Editor heeft een JavaScript-bibliotheek nodig om de pagina in de editor te kunnen renderen en bewerken.
 
-Bovendien vereist de Universele dienst van de Redacteur a [&#x200B; eenvormige middelnaam (URN) &#x200B;](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het correcte backendesysteem voor de inhoud in app te identificeren en te gebruiken die wordt uitgegeven. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
+Bovendien vereist de Universele dienst van de Redacteur a [ eenvormige middelnaam (URN) ](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het correcte backendesysteem voor de inhoud in app te identificeren en te gebruiken die wordt uitgegeven. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
 
 ### Inclusief de Universal Editor CORS-bibliotheek {#cors-library}
 
@@ -46,7 +46,7 @@ Verbindingen die in de app worden gebruikt, worden als `<meta>` -tags opgeslagen
 
 * `<category>` - Dit is een classificatie van de verbinding met twee opties.
    * `system` - Voor eindpunten van verbindingen
-   * `config` - voor [&#x200B; bepalend facultatieve configuratiemontages &#x200B;](#configuration-settings)
+   * `config` - voor [ bepalend facultatieve configuratiemontages ](#configuration-settings)
 * `<referenceName>` - Dit is een korte naam die opnieuw wordt gebruikt in het document om de verbinding te identificeren. Bijvoorbeeld: `aemconnection`
 * `<protocol>` - Hiermee wordt aangegeven welke persistentie-insteekmodule van de Universal Editor Persistence Service moet worden gebruikt. Bijvoorbeeld: `aem`
 * `<url>` - Dit is de URL naar het systeem waar de wijzigingen moeten worden voortgezet. Bijvoorbeeld: `http://localhost:4502`
@@ -64,7 +64,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 >[!TIP]
 >
->Zie het document [&#x200B; Attributen en Types &#x200B;](attributes-types.md) voor verdere details over de gegevensattributen en de types die de Universele Redacteur vereist.
+>Zie het document [ Attributen en Types ](attributes-types.md) voor verdere details over de gegevensattributen en de types die de Universele Redacteur vereist.
 
 ### Voorbeeldverbinding {#example}
 
@@ -118,24 +118,29 @@ Als u alleen bepaalde extensies wilt inschakelen voor een pagina, kunt u dit ins
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
-## Bepaal waarvoor inhoudswegen of `sling:resourceType` s de Universele Redacteur zullen worden geopend. (Optioneel) {#content-paths}
+## Bepaal waarvoor inhoudswegen of `sling:resourceType` s de Universele Redacteur zullen worden geopend en hoe. (Optioneel) {#content-paths}
 
-Als u een bestaand project van AEM gebruikend [&#x200B; de paginaredacteur &#x200B;](/help/sites-cloud/authoring/page-editor/introduction.md) hebt, wanneer de inhoudsauteurs pagina&#39;s uitgeven, worden de pagina&#39;s automatisch geopend met de paginaredacteur. U kunt definiëren welke editor AEM moet openen op basis van de inhoudspaden of de `sling:resourceType` . Hierdoor verloopt de ervaring naadloos voor de auteurs, ongeacht de editor die nodig is voor de geselecteerde inhoud.
+Als u een bestaand project van AEM gebruikend [ de paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md) hebt, wanneer de inhoudsauteurs pagina&#39;s uitgeven, worden de pagina&#39;s automatisch geopend met de paginaredacteur. U kunt definiëren welke editor AEM moet openen op basis van de inhoudspaden of de `sling:resourceType` en hoe deze moet worden geopend. Hierdoor verloopt de bewerking naadloos voor de auteurs, ongeacht de editor die vereist is voor de geselecteerde inhoud.
 
 1. Open de Manager van de Configuratie.
 
    `http://<host>:<port>/system/console/configMgr`
 
-1. Bepaal de plaats van **Universele Dienst URL van de Redacteur** in de lijst en klik **geef de configuratiewaarden** uit.
+1. Bepaal de plaats **`Universal Editor URL Service`** in de lijst en klik **geef de configuratiewaarden** uit.
 
 1. Bepaal waarvoor inhoudswegen of `sling:resourceType` s de Universele Redacteur zullen worden geopend.
 
-   * Op het **Universele gebied van de Toewijzing van de Redacteur die** opent, verstrek de wegen waarvoor de Universele Redacteur wordt geopend.
-   * In het **Verdelen :resourceTypes dat door Universele gebied van de Redacteur** zal worden geopend, verstrek een lijst van middelen die direct door de Universele Redacteur worden geopend.
+   * Geef in het veld **`mappings`** de paden op waarvoor de universele editor is geopend.
+   * Geef in het veld **`resourcetypes`** een lijst met bronnen op die rechtstreeks door de Universal Editor worden geopend.
+
+1. Bepaal hoe de redacteur zou moeten worden geopend.
+
+   * Schakel de optie **`aemdomain`** in om de editor te openen onder uw AEM-domein, zoals `https://author-pXX-eYYY.adobeaemcloud.com...` , anders wordt deze geopend onder `https://experience.adobe.com...` .
+   * Controleer de **`editorreleasepreview`** optie om de Universele Redacteur in het [ voorproefmilieu automatisch te openen, ](/help/release-notes/universal-editor/preview.md) anders zal het in het huidige versiemilieu openen.
 
 1. Klik **sparen**.
 
-1. Controleer uw [&#x200B; externalizer configuratie &#x200B;](/help/implementing/developing/tools/externalizer.md) en zorg bij een minimum u de lokale, auteur, en publiceer milieu&#39;s hebt die zoals in het volgende voorbeeld worden geplaatst.
+1. Controleer uw [ externalizer configuratie ](/help/implementing/developing/tools/externalizer.md) en zorg bij een minimum u de lokale, auteur, en publiceer milieu&#39;s hebt die zoals in het volgende voorbeeld worden geplaatst.
 
    ```text
    "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
@@ -149,7 +154,7 @@ Zodra deze configuratiestappen volledig zijn, zal AEM de Universele Redacteur vo
 1. Voor inhoud niet onder wegen die in `Universal Editor Opening Mapping` worden bepaald, controleert AEM als `resourceType` van de inhoud die in **worden bepaald het Verdelen :resourceTypes aanpast die door Universele Redacteur** zullen worden geopend en als de inhoud één van die types aanpast, wordt de Universele Redacteur voor het bij `${author}${path}.html` geopend.
 1. Anders opent AEM de Pagina-editor.
 
-De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele het Openen van de Redacteur 1&rbrace; gebied van de Afbeelding te bepalen.**
+De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele het Openen van de Redacteur 1} gebied van de Afbeelding te bepalen.**
 
 * `path`: Inhoudspad van de bron die moet worden geopend
 * `localhost`: ExternalAlizer-item voor `localhost` zonder schema, bijvoorbeeld `localhost:4502`
@@ -175,7 +180,7 @@ De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele h
 
 Uw app is nu van instrumenten voorzien om de Universal Editor te gebruiken.
 
-Zie [&#x200B; Authoring Inhoud met de Universele Redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md) om te leren hoe gemakkelijk en intuïtief het voor inhoudsauteurs is om inhoud tot stand te brengen gebruikend de Universele Redacteur.
+Zie [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) om te leren hoe gemakkelijk en intuïtief het voor inhoudsauteurs is om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 
 {{ue-headless-auth}}
 
@@ -183,10 +188,10 @@ Zie [&#x200B; Authoring Inhoud met de Universele Redacteur &#x200B;](/help/sites
 
 Zie deze documenten voor meer informatie over de Universal Editor.
 
-* [&#x200B; Universele Inleiding van de Redacteur &#x200B;](introduction.md) - Leer hoe de Universele Redacteur het uitgeven om het even welk aspect van om het even welke inhoud in om het even welke implementatie toelaat zodat kunt u uitzonderlijke ervaringen leveren, inhoudssnelheid verhogen, en een ervaring van de allernieuwste ontwikkelaar verstrekken.
-* [&#x200B; Authoring Inhoud met de Universele Redacteur &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md) - Leer hoe gemakkelijk en intuïtief het voor inhoudsauteurs is om inhoud tot stand te brengen gebruikend de Universele Redacteur.
-* [&#x200B; het Publiceren Inhoud met de Universele Redacteur &#x200B;](/help/implementing/universal-editor/publishing.md) - leer hoe de Universele Redacteur inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen behandelen.
-* [&#x200B; Universele Architectuur van de Redacteur &#x200B;](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
-* [&#x200B; Attributen en Types &#x200B;](attributes-types.md) - leer over de gegevensattributen en de types die de Universele Redacteur vereist.
-* [&#x200B; Universele Authentificatie van de Redacteur &#x200B;](authentication.md) - leer hoe de Universele Redacteur voor authentiek verklaart.
+* [ Universele Inleiding van de Redacteur ](introduction.md) - Leer hoe de Universele Redacteur het uitgeven om het even welk aspect van om het even welke inhoud in om het even welke implementatie toelaat zodat kunt u uitzonderlijke ervaringen leveren, inhoudssnelheid verhogen, en een ervaring van de allernieuwste ontwikkelaar verstrekken.
+* [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) - Leer hoe gemakkelijk en intuïtief het voor inhoudsauteurs is om inhoud tot stand te brengen gebruikend de Universele Redacteur.
+* [ het Publiceren Inhoud met de Universele Redacteur ](/help/implementing/universal-editor/publishing.md) - leer hoe de Universele Redacteur inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen behandelen.
+* [ Universele Architectuur van de Redacteur ](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
+* [ Attributen en Types ](attributes-types.md) - leer over de gegevensattributen en de types die de Universele Redacteur vereist.
+* [ Universele Authentificatie van de Redacteur ](authentication.md) - leer hoe de Universele Redacteur voor authentiek verklaart.
 

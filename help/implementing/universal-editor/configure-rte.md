@@ -4,9 +4,9 @@ description: Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redact
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redacteur kunt vorm
 
 De Universele Redacteur verstrekt een rijke tekstredacteur (RTE) zowel op zijn plaats als in het eigenschappenpaneel om auteurs toe te staan om het formatteren veranderingen toe te passen aangezien zij hun tekst uitgeven.
 
-Dit RTE is configureerbaar gebruikend [&#x200B; componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
+Dit RTE is configureerbaar gebruikend [ componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ De configuratie van RTE bestaat uit twee delen:
 * [`toolbar`](#toolbar): In de werkbalkconfiguratie wordt bepaald welke bewerkingsopties beschikbaar zijn in de gebruikersinterface en hoe deze zijn ingedeeld.
 * [`actions`](#actions): Met de configuratie van handelingen kunt u het gedrag en de weergave van afzonderlijke bewerkingsacties aanpassen.
 
-Deze configuraties kunnen als deel van a [&#x200B; componentenfilter &#x200B;](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
+Deze configuraties kunnen als deel van a [ componentenfilter ](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
 
 ```json
 [
@@ -220,6 +220,28 @@ De inspringing heeft een eigenschap-vlakke configuratie die het werkingsgebied v
 >[!NOTE]
 >
 >Het nesten van lijsten via Tab/Shift+Tab toetsen werkt onafhankelijk van de algemene inspringingsinstellingen.
+
+### Plakken als tekst {#paste-as-text}
+
+Met de editoractie `paste_text` wordt een standaardworkflow voor plakken als normale tekst ingeschakeld.
+
+* **Standaard kortere weg:** Mod-Shift-v (Cmd+Shift+V op macOS, Ctrl+Shift+V op Vensters/Linux)
+* **Gedrag:** Deegden van tekst/onbewerkt (bron het formatteren wordt genegeerd)
+   * Nieuwe regels maken nieuwe lijstitems in lijsten.
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### Overige handelingen {#other}
 
