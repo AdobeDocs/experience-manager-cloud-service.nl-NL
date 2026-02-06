@@ -1,33 +1,24 @@
 ---
-title: Een gekoppelde gebruikersinterface aanroepen bij instantie Publiceren
-description: Leer hoe te om de Associate UI van AEM Forms op Publish instanties te integreren en aan te halen om klant-onder ogen ziet beroeps toe te laten om gepersonaliseerde Interactieve Mededelingen in real time te produceren.
+title: Associate UI voor interactieve communicatie bij uitvoering integreren
+description: Leer hoe te om AEM Forms te integreren associate UI met uw toepassing om klant-onder ogen ziet beroeps toe te laten om gepersonaliseerde Interactieve Mededelingen in real time op Publish instanties te produceren.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: bfee883205f81012fea75cbd7dc5fddd7169fdbb
+source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
 
 
-# Genereer Persoonlijke Mededelingen met Associate UI
+# Associatieve UI integreren in uw toepassing
 
 <span> De interactieve communicatiemogelijkheid is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.</span>
 
-Associate UI kan direct op Publish instanties worden aangehaald, toelatend klant-onder ogen ziet beroeps zoals gebiedvenates en de dienstagenten om gepersonaliseerde mededelingen in real time tijdens klanteninteractie te produceren.
-
-De onderstaande lijst toont de diverse scenario&#39;s in real-world waar de Vennoot UI kan worden gebruikt om gepersonaliseerde berichten naar klanten te verzenden:
-
-| Industrie | Hoofdletters gebruiken |
-|----------|----------|
-| **Financiële Diensten** | Redenen in real-time aanmaningen voor het bevestigen van leningen, accountinstructies en samenvattingen van risicoprofielen genereren tijdens vergaderingen van klanten |
-| **Verzekering** | Onmiddellijk een bewijs van verzekering overleggen en een overzicht van de regeling van aanvragen bij de loketten van de dienst overleggen |
-| **Gezondheidszorg** | Samenvattingen van patiëntenbehandelingsplannen maken met berekende afnamegrootten en -schema&#39;s |
-| **Regering** | Verzamel controleverslagen van de politie, ontvangstbewijzen van de burgerdienst, en samenvattingen van de gevallenupdate ter plaatse |
+Dit artikel verklaart hoe te om Associate UI met uw toepassing te integreren, toelatend klant-onder ogen ziet beroeps zoals gebiedsassociaties en de dienstagenten om gepersonaliseerde Interactieve Mededelingen in real time op te produceren publiceert instanties.
 
 ## Vereisten
 
@@ -35,19 +26,21 @@ Voordat u de gekoppelde interface integreert met uw toepassing, moet u controler
 
 - Interactieve communicatie gemaakt en gepubliceerd
 - Browser met popup-ondersteuning ingeschakeld
-- De geassocieerde [&#x200B; gebruikers moeten deel van de vorm-geassocieerde groep &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) uitmaken
-- De authentificatie vormde gebruikend om het even welk [&#x200B; authentificatiemechanisme dat door AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/authentication) wordt gesteund (bijvoorbeeld, SAML 2.0, OAuth, of de managers van de douaneauthentificatie)
+- De geassocieerde [ gebruikers moeten deel van de vorm-geassocieerde groep ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) uitmaken
+- De authentificatie vormde gebruikend om het even welk [ authentificatiemechanisme dat door AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) wordt gesteund (bijvoorbeeld, SAML 2.0, OAuth, of de managers van de douaneauthentificatie)
 
 >[!NOTE]
 >
->- Dit artikel toont authentificatieconfiguratie gebruikend SAML 2.0 met [&#x200B; Microsoft Entra identiteitskaart (Azure AD) als Identiteitskaart &#x200B;](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings) aan.
->- Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [&#x200B; wordt verklaard SAML 2.0 authentificatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [&#x200B; Extra configuraties van SAML voor Associate UI &#x200B;](#additional-saml-configurations-for-associate-ui) sectie voor details.
+>- Dit artikel toont authentificatieconfiguratie gebruikend SAML 2.0 met [ Microsoft Entra identiteitskaart (Azure AD) als Identiteitskaart ](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings) aan.
+>- Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [ wordt verklaard SAML 2.0 authentificatie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [ Extra configuraties van SAML voor Associate UI ](#additional-saml-configurations-for-associate-ui) sectie voor details.
 
 ### Aanvullende SAML-configuraties voor Associatieve UI
 
 Wanneer het vormen van SAML 2.0 authentificatie voor Associate UI, moet u de volgende specifieke montages in uw OSGi configuratiedossiers toepassen.
 
 #### SAML-verificatiehandler
+
+De manager van de Authentificatie van SAML is een OSGi fabrieksconfiguratie die veelvoudige configuraties SAML voor verschillende middelbomen toestaat. Dit maakt de implementatie van AEM op meerdere locaties mogelijk en stelt u in staat gekoppelde UI-bronnen toe te voegen aan uw bestaande SAML-installatie.
 
 Maak het bestand `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish` :
 
@@ -85,6 +78,8 @@ Maak het bestand `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg
 
 #### Sling Authenticator
 
+De Sling Authenticator dwingt authentificatie voor de toegang tot van de Medewerkende middelen UI op Publish af.
+
 Werk het bestand `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.json` bij in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish` :
 
 ```json
@@ -95,6 +90,8 @@ Werk het bestand `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.
 ```
 
 #### Dispatcher-filter
+
+Voeg de volgende regels toe om ervoor te zorgen dat Interactieve Mededelingen APIs en Associate UI correct op de Publish instantie functioneren.
 
 Voeg de volgende regels toe aan uw `dispatcher/src/conf.dispatcher.d/filters/filters.any` -bestand als dit nog niet het geval is:
 
@@ -112,23 +109,248 @@ Voeg de volgende regels toe aan uw `dispatcher/src/conf.dispatcher.d/filters/fil
 
 ## Associate UI aanroepen bij publicatie-instantie
 
-Om Associate UI van uw toepassing aan te halen, vorm de Publish instantie URL, bereidt de gegevenslading voor, en gebruik de integratiefunctie om Associate UI in een nieuw browser venster te lanceren.
+Deze sectie begeleidt u door het lanceren van Associate UI van uw eigen toepassing. Voer de volgende stappen uit om snel aan de slag te gaan—te beginnen met een gebruiksklare HTML-voorbeeldpagina en deze vervolgens voor uw omgeving te configureren.
 
-### Stap 1: Vorm de Publish Instantie URL
+### Stap 1: Beginnen met de HTML-voorbeeldpagina
 
-De Associate UI wordt betreden via een specifiek eindpunt op uw de Publish instantie van AEM Forms Cloud Service:
+Gebruik de volgende voorbeeldpagina van HTML om snel te testen en te begrijpen hoe de integratie met de Associate UI werkt. Kopieer deze code naar een HTML-bestand en open deze in uw browser.
+
+Dit voorbeeld biedt een eenvoudige formulierinterface waarin u uw interactieve communicatiedetails kunt invoeren en de interface voor koppelen met één klik kunt starten.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Associate UI Integration</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin: 20px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 80px;
+      font-family: monospace;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-primary {
+      background: #007bff;
+      color: white;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #0056b3;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Launch Associate UI</h1>
+
+  <form id="form">
+    <div class="form-group">
+      <label>IC ID *</label>
+      <input type="text" id="icId" placeholder="Enter Interactive Communication ID" required>
+    </div>
+
+    <div class="form-group">
+      <label>Prefill Service</label>
+      <input type="text" id="serviceName" placeholder="e.g., CustomerDataService">
+    </div>
+
+    <div class="form-group">
+      <label>Service Parameters (JSON)</label>
+      <textarea id="serviceParams" placeholder='{"customerId": "12345"}'>{}</textarea>
+      <span id="paramsError" class="error">Invalid JSON format</span>
+    </div>
+
+    <div class="form-group">
+      <label>Options (JSON)</label>
+      <textarea id="options" placeholder='{"mode": "edit", "locale": "en_US"}'>{}</textarea>
+      <span id="optionsError" class="error">Invalid JSON format</span>
+    </div>
+
+    <button type="button" onclick="reset()">Reset</button>
+    <button type="button" class="btn-primary" onclick="launch()">Launch Associate UI</button>
+  </form>
+
+  <script>
+    // Replace with your AEM Publish instance URL
+    const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
+
+    function validateJSON(str, errorId) {
+      const err = document.getElementById(errorId);
+      try {
+        const obj = JSON.parse(str || '{}');
+        err.style.display = 'none';
+        return obj;
+      } catch (e) {
+        err.style.display = 'block';
+        return null;
+      }
+    }
+
+    function launch() {
+      const icId = document.getElementById('icId').value.trim();
+      if (!icId) {
+        alert('IC ID is required');
+        return;
+      }
+
+      const params = validateJSON(document.getElementById('serviceParams').value, 'paramsError');
+      const opts = validateJSON(document.getElementById('options').value, 'optionsError');
+
+      if (!params || !opts) {
+        alert('Please fix JSON errors before launching');
+        return;
+      }
+
+      const data = {
+        id: icId,
+        prefill: {
+          serviceName: document.getElementById('serviceName').value.trim(),
+          serviceParams: params
+        },
+        options: opts
+      };
+
+      const win = window.open(AEM_URL, '_blank');
+      if (!win) {
+        alert('Pop-up blocked. Please enable pop-ups for this site.');
+        return;
+      }
+
+      const handler = (e) => {
+        if (e.data && e.data.type === 'READY' && e.data.source === 'APP') {
+          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
+          window.removeEventListener('message', handler);
+        }
+      };
+
+      window.addEventListener('message', handler);
+
+      // Fallback timeout in case READY message is missed
+      setTimeout(() => {
+        if (win && !win.closed) {
+          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
+          window.removeEventListener('message', handler);
+        }
+      }, 1000);
+    }
+
+    function reset() {
+      document.getElementById('form').reset();
+      document.getElementById('serviceParams').value = '{}';
+      document.getElementById('options').value = '{}';
+      document.getElementById('paramsError').style.display = 'none';
+      document.getElementById('optionsError').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+```
+
+### Stap 2: Vorm Uw Publish Instantie URL
+
+Voordat u de gebruikersinterface voor koppelen kunt starten, moet u het voorbeeld naar de publicatie-instantie van AEM Forms Cloud Service sturen.
+
+Zoek in het bovenstaande HTML-voorbeeld de volgende regel in de sectie `<script>` :
 
 ```javascript
 const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
 ```
 
-Vervang `{program-id}` en `{env-id}` door de werkelijke omgevingswaarden.
+Vervang de plaatsaanduidingswaarden door de werkelijke omgevingsdetails:
+- `{program-id}`: uw programma-id voor AEM Cloud-service
+- `{env-id}`: uw milieu-id
 
-Om veiligheidsredenen, worden de parameters zoals Interactieve Communicatie identiteitskaart, de prefill dienst, en de dienstparameters niet overgegaan door URL. In plaats daarvan worden deze parameters veilig doorgegeven via een JavaScript-functie die communiceert met de Associate UI via de postMessage-API van de browser.
+Als uw programma-id bijvoorbeeld `12345` is en de omgeving-id `67890` , wordt de URL:
 
-### Stap 2: De gegevenslading voorbereiden
+```javascript
+const AEM_URL = 'https://publish-p12345`-e67890.adobeaemcloud.com/libs/fd/associate/ui.html';
+```
 
-U kunt de gegevenslading structureren met de volgende indeling:
+>[!NOTE]
+>
+> Om veiligheidsredenen, worden de parameters zoals Interactieve Communicatie identiteitskaart, de prefill dienst, en de dienstparameters niet overgegaan door URL. In plaats daarvan worden deze parameters veilig doorgegeven met de JavaScript `postMessage` -API.
+
+### Stap 3: Inzicht in de JavaScript-integratiefunctie
+
+Het voorbeeld HTML gebruikt de volgende JavaScript-functie om de Associate UI te starten. Deze functie valideert de IC-id, construeert de gegevenslading, opent de Associate UI in een nieuw browservenster en verzendt de gegevens met behulp van de `postMessage` -API van de browser.
+
+```javascript
+function launchAssociateUI(icId, prefillService, prefillParams, options) {
+  if (!icId) {
+    console.error('IC ID required');
+    return;
+  }
+
+  const data = {
+    id: icId,
+    prefill: {
+      serviceName: prefillService || '',
+      serviceParams: prefillParams || {}
+    },
+    options: options || {}
+  };
+
+  const AEM_URL = 'https://your-aem.adobeaemcloud.com/libs/fd/associate/ui.html';
+  const win = window.open(AEM_URL, '_blank');
+
+  if (!win) {
+    alert('Please enable pop-ups for this site');
+    return;
+  }
+
+  const readyHandler = (event) => {
+    if (event.data && event.data.type === 'READY' && event.data.source === 'APP') {
+      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
+      window.removeEventListener('message', readyHandler);
+    }
+  };
+
+  window.addEventListener('message', readyHandler);
+
+  // Fallback timeout in case READY message is missed
+  setTimeout(() => {
+    if (win && !win.closed) {
+      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
+      window.removeEventListener('message', readyHandler);
+    }
+  }, 1000);
+}
+```
+
+De functie accepteert vier parameters: de (vereiste) IC-id, de Prefill-servicenaam, Prefill-serviceparameters en aanvullende opties. Deze parameters zijn gestructureerd in de gegevenslading zoals hieronder beschreven.
+
+### Stap 4: Begrijp de gegevensladingsstructuur
+
+**formaat van de Payload:**
 
 ```javascript
 const data = {
@@ -146,249 +368,14 @@ const data = {
 | Component | Vereist | Beschrijving |
 |-----------|----------|-------------|
 | `id` | Ja | De id van de te laden interactieve communicatie (IC) |
-| `prefill` | Optioneel | Bevat de dienstconfiguratie voor gegevens prefilling. |
+| `prefill` | Optioneel | Bevat de dienstconfiguratie voor gegevens prefilling |
 | `prefill.serviceName` | Optioneel | Naam van de service Formuliergegevensmodel die moet worden aangeroepen voor het vooraf invullen van gegevens |
 | `prefill.serviceParams` | Optioneel | Sleutelwaardeparen die tot de vooraf ingevulde dienst worden overgegaan |
-| `options` | Optioneel | Aanvullende eigenschappen die worden ondersteund voor PDF-rendering - locale, includeAttachments, embedFonts, makeAccessible |
+| `options` | Optioneel | Extra eigenschappen die worden ondersteund voor PDF-rendering: locale, includeAttachments, embedFonts, makeAccessible |
 
-### Stap 3: Implementeer de integratiefunctie
+#### Voorbeelden van gegevensdoorvoer
 
-Maak een JavaScript-functie om de koppelingsinterface te starten en de berichtcommunicatie af te handelen:
-
-```javascript
-function launchAssociateUI(icId, prefillService, prefillParams, options) {
-  if (!icId) {
-    console.error('IC ID required');
-    return;
-  }
-   
-  const data = {
-    id: icId,
-    prefill: {
-      serviceName: prefillService || '',
-      serviceParams: prefillParams || {}
-    },
-    options: options || {}
-  };
-   
-  const AEM_URL = 'https://your-aem.adobeaemcloud.com/libs/fd/associate/ui.html';
-  const win = window.open(AEM_URL, '_blank');
-   
-  if (!win) {
-    alert('Please enable pop-ups for this site');
-    return;
-  }
-   
-  const readyHandler = (event) => {
-    if (event.data && event.data.type === 'READY' && event.data.source === 'APP') {
-      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
-      window.removeEventListener('message', readyHandler);
-    }
-  };
-   
-  window.addEventListener('message', readyHandler);
-   
-  // Fallback timeout in case READY message is missed
-  setTimeout(() => {
-    if (win && !win.closed) {
-      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
-      window.removeEventListener('message', readyHandler);
-    }
-  }, 1000);
-}
-```
-
-### Stap 4: De functie aanroepen
-
-Roep de functie aan met de juiste parameters:
-
-```javascript
-// Basic invocation with IC ID only
-launchAssociateUI('12345', '', {}, {});
-
-// With prefill service
-launchAssociateUI('12345', 'IC_FDM', 
-  { customerId: '101'}, {});
-
-// With all parameters
-launchAssociateUI('12345', 'IC_FDM', 
-  { customerId: "101" }, 
-  { locale: 'en', includeAttachments: "true" });
-```
-
-## Uw integratie testen met een voorbeeld-HTML-pagina
-
-Hier volgt een eenvoudig HTML-voorbeeld om te zien hoe de Associate UI op de voorgrond wordt weergegeven en om uw integratie te testen. Op deze voorbeeldpagina kunt u de IC-id invoeren, vooraf ingevulde serviceparameters configureren, PDF-opties instellen en de interface voor koppelen op uw publicatie-instantie starten.
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Associate UI Integration</title>
-  <style>
-    body { 
-      font-family: sans-serif; 
-      max-width: 600px; 
-      margin: 50px auto; 
-      padding: 20px; 
-    }
-    .form-group { 
-      margin: 20px 0; 
-    }
-    label { 
-      display: block; 
-      margin-bottom: 5px; 
-      font-weight: bold; 
-    }
-    input, textarea { 
-      width: 100%; 
-      padding: 8px; 
-      border: 1px solid #ccc; 
-      border-radius: 4px; 
-      box-sizing: border-box;
-    }
-    textarea { 
-      height: 80px; 
-      font-family: monospace; 
-    }
-    button { 
-      padding: 10px 20px; 
-      margin: 5px; 
-      cursor: pointer; 
-      border-radius: 4px;
-    }
-    .btn-primary { 
-      background: #007bff; 
-      color: white; 
-      border: none; 
-    }
-    .btn-primary:hover {
-      background: #0056b3;
-    }
-    .error { 
-      color: red; 
-      font-size: 12px; 
-      display: none; 
-    }
-  </style>
-</head>
-<body>
-  <h1>Launch Associate UI</h1>
-  
-  <form id="form">
-    <div class="form-group">
-      <label>IC ID *</label>
-      <input type="text" id="icId" placeholder="Enter Interactive Communication ID" required>
-    </div>
-    
-    <div class="form-group">
-      <label>Prefill Service</label>
-      <input type="text" id="serviceName" placeholder="e.g., CustomerDataService">
-    </div>
-    
-    <div class="form-group">
-      <label>Service Parameters (JSON)</label>
-      <textarea id="serviceParams" placeholder='{"customerId": "12345"}'>{}</textarea>
-      <span id="paramsError" class="error">Invalid JSON format</span>
-    </div>
-    
-    <div class="form-group">
-      <label>Options (JSON)</label>
-      <textarea id="options" placeholder='{"mode": "edit", "locale": "en_US"}'>{}</textarea>
-      <span id="optionsError" class="error">Invalid JSON format</span>
-    </div>
-    
-    <button type="button" onclick="reset()">Reset</button>
-    <button type="button" class="btn-primary" onclick="launch()">Launch Associate UI</button>
-  </form>
-
-  <script>
-    // Replace with your AEM Publish instance URL
-    const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
-    
-    function validateJSON(str, errorId) {
-      const err = document.getElementById(errorId);
-      try {
-        const obj = JSON.parse(str || '{}');
-        err.style.display = 'none';
-        return obj;
-      } catch (e) {
-        err.style.display = 'block';
-        return null;
-      }
-    }
-    
-    function launch() {
-      const icId = document.getElementById('icId').value.trim();
-      if (!icId) { 
-        alert('IC ID is required'); 
-        return; 
-      }
-      
-      const params = validateJSON(document.getElementById('serviceParams').value, 'paramsError');
-      const opts = validateJSON(document.getElementById('options').value, 'optionsError');
-      
-      if (!params || !opts) { 
-        alert('Please fix JSON errors before launching'); 
-        return; 
-      }
-      
-      const data = {
-        id: icId,
-        prefill: {
-          serviceName: document.getElementById('serviceName').value.trim(),
-          serviceParams: params
-        },
-        options: opts
-      };
-      
-      const win = window.open(AEM_URL, '_blank');
-      if (!win) { 
-        alert('Pop-up blocked. Please enable pop-ups for this site.'); 
-        return; 
-      }
-      
-      const handler = (e) => {
-        if (e.data && e.data.type === 'READY' && e.data.source === 'APP') {
-          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
-          window.removeEventListener('message', handler);
-        }
-      };
-      
-      window.addEventListener('message', handler);
-      
-      // Fallback timeout in case READY message is missed
-      setTimeout(() => {
-        if (win && !win.closed) {
-          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
-          window.removeEventListener('message', handler);
-        }
-      }, 1000);
-    }
-    
-    function reset() {
-      document.getElementById('form').reset();
-      document.getElementById('serviceParams').value = '{}';
-      document.getElementById('options').value = '{}';
-      document.getElementById('paramsError').style.display = 'none';
-      document.getElementById('optionsError').style.display = 'none';
-    }
-  </script>
-</body>
-</html>
-```
-
-### Hoe het monster werkt
-
-1. **identiteitskaart van IC Gebied**: Ga het Interactieve (vereiste) Communicatie herkenningsteken in
-2. **vooraf ingevulde Dienst**: specificeer de de dienstnaam van het Model van Gegevens van de Vorm voor het vooraf invullen van gegevens
-3. **Parameters van de Dienst**: Ga JSON voorwerp met parameters in om tot de prefill dienst over te gaan
-4. **Opties**: Ga configuratieopties voor PDF, bijvoorbeeld, scène, includeAttachments, embedFonts, makeAccessible in
-5. **Knoop van de Lancering**: Opent Associate UI in een nieuw venster en verzendt de initialisatiegegevens
-
-## Voorbeelden van gegevensdoorvoer
-
-### Minimale nuttige last (alleen IC)
+**Minimale Payload (identiteitskaart van IC slechts)**
 
 Gebruik deze optie wanneer geen vooraf ingevulde gegevens vereist zijn:
 
@@ -403,7 +390,7 @@ Gebruik deze optie wanneer geen vooraf ingevulde gegevens vereist zijn:
 }
 ```
 
-### Met vooraf ingevulde gegevens
+**met vooraf ingevulde Gegevens**
 
 Gebruik dit om IC met klantengegevens dynamisch te bevolken:
 
@@ -421,7 +408,7 @@ Gebruik dit om IC met klantengegevens dynamisch te bevolken:
 }
 ```
 
-### Met optieconfiguratie
+**met PDF die Opties teruggeven**
 
 Gebruik deze optie om extra renderopties op te geven:
 
@@ -436,14 +423,36 @@ Gebruik deze optie om extra renderopties op te geven:
     }
   },
   "options": { 
-      locale: "en_US",
-      includeAttachments: "true",
-      webOptimized: "false",
-      embedFonts: "false",
-      makeAccessible: "false"
+      "locale": "en_US",
+      "includeAttachments": "true",
+      "webOptimized": "false",
+      "embedFonts": "false",
+      "makeAccessible": "false"
   }
 }
 ```
+
+### Stap 5: Ga identiteitskaart van IC in en lanceer Associate UI
+
+Nu kunt u de gebruikersinterface voor koppelen starten met de voorbeeldpagina van HTML:
+
+1. **ga identiteitskaart van IC** in: Op het **identiteitskaart van IC** gebied, ga het herkenningsteken van uw gepubliceerde Interactieve Mededeling in. Dit is het enige vereiste veld.
+
+2. **vormt de Vooraf ingevulde Dienst** (facultatief): Als u IC met dynamische gegevens wilt vooraf invullen, ga de modeldienstnaam van de Gegevens van de Vorm in de **Prefill 3} gebied van de Dienst {in.** Gebruik bijvoorbeeld `FdmTestData` voor voorbeeldgegevens of `IC-FDM` voor testgegevens.
+
+3. **voegt de Parameters van de Dienst** (facultatief) toe: op het **gebied van de Parameters van de Dienst (JSON)**, ga een voorwerp JSON met de parameters in uw prefill dienst vereist. Bijvoorbeeld:
+
+   ```json
+   {"customerId": "101", "accountNumber": "ACC-98765"}
+   ```
+
+4. **plaats de Opties van PDF** (facultatief): Op het **gebied van Opties (JSON)**, vorm het teruggeven opties zoals scène, gehechtheid, of toegankelijkheidsmontages.
+
+5. **klik Lanceer Geassocieerde UI**: Klik de **Lanceer Associate knoop UI**. Er wordt een nieuw browservenster geopend met de Associate UI, die vooraf is geladen met uw interactieve communicatie.
+
+>[!NOTE]
+>
+> Als het venster niet wordt geopend, controleert u of uw browser pop-ups voor deze site toestaat.
 
 ## Problemen oplossen
 
