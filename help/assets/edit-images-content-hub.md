@@ -29,7 +29,7 @@ Afbeeldingen bewerken met Content Hub:
 
 1. Klik op **[!DNL Open in Adobe Express]** op de elementenkaart van de afbeelding die u wilt bewerken. U kunt ook op de afbeelding klikken om de details ervan te openen en vervolgens op het logo [!DNL Adobe Express] klikken. De ingesloten editor voor Adobe Express wordt vervolgens geladen zonder Content Hub te verlaten.
 
-   U kunt hefboomwerking de [!DNL Adobe Express] functionaliteit om alle beeld-uitgevende verwante acties uit te voeren, zoals [&#x200B; resize beeld &#x200B;](https://helpx.adobe.com/nl/express/using/resize-image.html), [&#x200B; verwijderen of achtergrondkleur veranderen &#x200B;](https://helpx.adobe.com/express/using/remove-background.html), [&#x200B; bijsnijdbeeld &#x200B;](https://helpx.adobe.com/nl/express/using/crop-image.html), combineer het beeld met AI geproduceerd beeld of tekst, en veel meer.
+   U kunt hefboomwerking de [!DNL Adobe Express] functionaliteit om alle beeld-uitgevende verwante acties uit te voeren, zoals [&#x200B; resize beeld &#x200B;](https://helpx.adobe.com/nl/express/using/resize-image.html), [&#x200B; verwijderen of achtergrondkleur veranderen &#x200B;](https://helpx.adobe.com/nl/express/using/remove-background.html), [&#x200B; bijsnijdbeeld &#x200B;](https://helpx.adobe.com/nl/express/using/crop-image.html), combineer het beeld met AI geproduceerd beeld of tekst, en veel meer.
 
 1. Voer uw wijzigingen uit en klik op **[!UICONTROL Save]** om het bewerkte element op te slaan in een van de volgende notatietypen:
 
