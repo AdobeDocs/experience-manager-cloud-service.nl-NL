@@ -787,6 +787,6 @@ Voordat u migratieserves naar productie gaat implementeren:
 ## Aanvullende bronnen {#additional-resources}
 
 * [User and Group Sync for Publish Tier](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-* [&#x200B; SAML 2.0 de Handler van de Authentificatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
+* [&#x200B; SAML 2.0 de Handler van de Authentificatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=nl-NL)
 * [&#x200B; Externe Leverancier van de Identiteit &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
 * [&#x200B; Dynamisch Lidmaatschap van de Groep &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)

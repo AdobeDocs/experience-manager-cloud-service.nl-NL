@@ -82,17 +82,17 @@ De klanten kunnen op SAML-Gebaseerde authentificatie via hun aangewezen SAML IdP
 >
 >Alleen de initiële verificatie van de gebruikersgegevens wordt geverifieerd door de IdP en volgende aanvragen naar AEM worden uitgevoerd met een AEM-inlogtoken, zolang het cookie beschikbaar is.
 
-Zie documentatie voor meer informatie over [&#x200B; SAML 2.0 de Handler van de Authentificatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
+Zie documentatie voor meer informatie over [&#x200B; SAML 2.0 de Handler van de Authentificatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=nl-NL).
 
 **OAuth/SSO**
 
-Zie het [&#x200B; Enige Sign On (SSO) documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html) voor informatie over het gebruiken van de Dienst van de Handler van de Authentificatie van AEM SSO.
+Zie het [&#x200B; Enige Sign On (SSO) documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=nl-NL) voor informatie over het gebruiken van de Dienst van de Handler van de Authentificatie van AEM SSO.
 
 De interface `com.adobe.granite.auth.oauth.provider` kan met de leverancier OAuth van uw keus worden uitgevoerd.
 
 **Vereiste:**
 
-Als beste praktijken, baseer altijd op idP (de Leverancier van de Identiteit) als één enkel punt van waarheid wanneer het opslaan van gebruiker-specifieke gegevens. Als de extra gebruikersinformatie in de lokale bewaarplaats wordt opgeslagen, die geen deel van idP uitmaakt, gelieve [&#x200B; gegevenssynchronisatie &#x200B;](#data-synchronization-data-synchronization) toe te laten door een verzoek aan de Steun van de Klant voor te leggen die op het aangewezen programma en de milieu&#39;s wijst. Naast [&#x200B; gegevenssynchronisatie &#x200B;](#data-synchronization-data-synchronization), in het geval van de de authentificatieleverancier van SAML, zorg ervoor dat [&#x200B; dynamisch groepslidmaatschap &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) wordt toegelaten.
+Als beste praktijken, baseer altijd op idP (de Leverancier van de Identiteit) als één enkel punt van waarheid wanneer het opslaan van gebruiker-specifieke gegevens. Als de extra gebruikersinformatie in de lokale bewaarplaats wordt opgeslagen, die geen deel van idP uitmaakt, gelieve [&#x200B; gegevenssynchronisatie &#x200B;](#data-synchronization-data-synchronization) toe te laten door een verzoek aan de Steun van de Klant voor te leggen die op het aangewezen programma en de milieu&#39;s wijst. Naast [&#x200B; gegevenssynchronisatie &#x200B;](#data-synchronization-data-synchronization), in het geval van de de authentificatieleverancier van SAML, zorg ervoor dat [&#x200B; dynamisch groepslidmaatschap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) wordt toegelaten.
 
 ### Vaste sessies en ingekapselde tokens {#sticky-sessions-and-encapsulated-tokens}
 
@@ -109,7 +109,7 @@ Afhankelijk van de aard van de gegevens zijn er verschillende benaderingen voor 
 Gebruikersprofielgegevens kunnen op twee manieren worden geschreven en gelezen:
 
 * Gebruik op de server met de interface `com.adobe.granite.security.user` Interface UserPropertiesManager, die gegevens onder het knooppunt van de gebruiker in `/home/users` plaatst. Zorg ervoor dat de pagina&#39;s die per gebruiker uniek zijn niet in het voorgeheugen onder worden gebracht.
-* Cliënt-kant die ContextHub gebruiken, zoals die door [&#x200B; wordt beschreven de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
+* Cliënt-kant die ContextHub gebruiken, zoals die door [&#x200B; wordt beschreven de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=nl-NL#personalization).
 
 **Vereiste:**
 
@@ -129,7 +129,7 @@ een verzoek aan de Klantenondersteuning met vermelding van het juiste programma 
 
 ## Machtigingen (gesloten gebruikersgroepen) {#permissions-closed-user-groups}
 
-Publiceer-rij toegangsbeleid, ook genoemd Gesloten Gebruikersgroepen (CUGs), wordt bepaald in de auteur van AEM, zie [&#x200B; Creërend een Gesloten Groep van de Gebruiker &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Als u bepaalde secties of pagina&#39;s van een website van bepaalde gebruikers wilt beperken, past u de CUG&#39;s waar nodig toe met de AEM-auteur, zoals hier beschreven, en repliceert u deze naar de publicatielijst.
+Publiceer-rij toegangsbeleid, ook genoemd Gesloten Gebruikersgroepen (CUGs), wordt bepaald in de auteur van AEM, zie [&#x200B; Creërend een Gesloten Groep van de Gebruiker &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=nl-NL#applying-your-closed-user-group-to-content-pages). Als u bepaalde secties of pagina&#39;s van een website van bepaalde gebruikers wilt beperken, past u de CUG&#39;s waar nodig toe met de AEM-auteur, zoals hier beschreven, en repliceert u deze naar de publicatielijst.
 
 * Als de gebruikers login door met een identiteitsleverancier (IdP) het gebruiken van SAML voor authentiek te verklaren, zal de authentificatiemanager de groepslidmaatschappen van de gebruiker identificeren (die CUGs op publiceren rij zouden moeten aanpassen), en zal de vereniging tussen de gebruiker en de groep door een verslag van de bewaarplaats aanhouden
 * Als login zonder integratie IdP wordt verwezenlijkt, kan de douanecode de zelfde de structuurverhoudingen van de bewaarplaats toepassen.
