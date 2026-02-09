@@ -4,7 +4,7 @@ description: Technische handleiding voor het migreren van lokale gebruikers en g
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
-source-git-commit: bb4b60523f60b1285c5f2fd2e49f6cc8cff24324
+source-git-commit: 1f8bd9eea249e0b2242f3fbe1490b3d51052f546
 workflow-type: tm+mt
 source-wordcount: '2232'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Wanneer [&#x200B; Synchronisatie van Gegevens &#x200B;](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) in AEM as a Cloud Service wordt toegelaten, kan de manager van de Authentificatie van SAML worden gevormd om automatisch aan externe identiteiten met dynamisch groepslidmaatschap te migreren wanneer het gebruiker en groepsverwezenlijking beheert. Als uw project douanecode gebruikt om gebruikers of groepen tot stand te brengen, moet u het bijwerken om externe gebruikers en groepen tot stand te brengen, in tegenstelling tot lokale gebruikers en groepen.
+Wanneer [ Synchronisatie van Gegevens ](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) in AEM as a Cloud Service wordt toegelaten, kan de manager van de Authentificatie van SAML worden gevormd om automatisch aan externe identiteiten met dynamisch groepslidmaatschap te migreren wanneer het gebruiker en groepsverwezenlijking beheert. Als uw project douanecode gebruikt om gebruikers of groepen tot stand te brengen, moet u het bijwerken om externe gebruikers en groepen tot stand te brengen, in tegenstelling tot lokale gebruikers en groepen.
 
 ### Waarom externe gebruikers en groepen vereist zijn {#why-external-required}
 
@@ -68,7 +68,7 @@ Bijvoorbeeld: `content-authors;saml-idp`
 
 ### Dynamisch groepslidmaatschap {#dynamic-group-membership}
 
-In plaats van directe user-to-group relaties die in de repository zijn opgeslagen, gebruikt dynamisch groepslidmaatschap de eigenschap `rep:externalPrincipalNames` op het gebruikersknooppunt. Wanneer een gebruiker een externe belangrijkste naam heeft die identiteitskaart van een externe groep aanpast, worden zij automatisch een lid van die groep. Voor meer informatie, zie de [&#x200B; documentatie van Apache Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html).
+In plaats van directe user-to-group relaties die in de repository zijn opgeslagen, gebruikt dynamisch groepslidmaatschap de eigenschap `rep:externalPrincipalNames` op het gebruikersknooppunt. Wanneer een gebruiker een externe belangrijkste naam heeft die identiteitskaart van een externe groep aanpast, worden zij automatisch een lid van die groep. Voor meer informatie, zie de [ documentatie van Apache Oak ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html).
 
 **Voordelen:**
 
@@ -363,7 +363,7 @@ Als lokale gebruikers en groepen reeds in de bewaarplaats zijn voortgeduurd en h
 
 >[!IMPORTANT]
 >
->Alle migratiestappen moeten worden uitgevoerd met een correct geconfigureerde servicegebruiker (bijvoorbeeld `group-provisioner` ) die machtigingen heeft gekregen om de beveiliging voor `rep:externalId` - en `rep:externalPrincipalNames` -eigenschappen te omzeilen. Zie [&#x200B; de Configuratie van de Gebruiker van de Dienst van 0&rbrace; voor meer details.](#service-user-configuration)
+>Alle migratiestappen moeten worden uitgevoerd met een correct geconfigureerde servicegebruiker (bijvoorbeeld `group-provisioner` ) die machtigingen heeft gekregen om de beveiliging voor `rep:externalId` - en `rep:externalPrincipalNames` -eigenschappen te omzeilen. Zie [ de Configuratie van de Gebruiker van de Dienst van 0} voor meer details.](#service-user-configuration)
 
 ### Stap 1: Externe groepsstructuur maken {#step-1-create-external-group-structure}
 
@@ -576,14 +576,14 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### Controlelijst voor migratie {#pre-migration-checklist}
 
-* [ ] **vormt de Gebruiker van de Dienst**: Creeer en vorm de de dienstgebruiker (bijvoorbeeld, `group-provisioner`) met juiste toestemmingen
-* [ ] **verifieer Configuratie ExternalPrincipal**: Zorg ervoor de de dienstgebruiker wordt gevormd om bescherming op `rep:externalId` en `rep:externalPrincipalNames` over te slaan
-* [ ] **de Toestemmingen van de Gebruiker van de Dienst van de Test**: Verifieer de de dienstgebruiker externe identiteitseigenschappen in ontwikkeling kan plaatsen
-* [ ] Alle aangepaste code identificeren waarmee gebruikers of groepen worden gemaakt
-* [ ] Aangepaste code controleren en bijwerken voor gebruik van extern identiteitsmodel
-* [ ] Bijgewerkte code testen in de ontwikkelomgeving
-* [ ] Alle bestaande lokale gebruikers en groepen inventariseren voor migratie
-* [ ] Het migratieproces testen in lagere omgevingen
+* **vormt de Gebruiker van de Dienst**: Creeer en vorm de de dienstgebruiker (bijvoorbeeld, `group-provisioner`) met juiste toestemmingen
+* **verifieer Configuratie ExternalPrincipal**: Zorg ervoor de de dienstgebruiker wordt gevormd om bescherming op `rep:externalId` en `rep:externalPrincipalNames` te mijden
+* **de Toestemmingen van de Gebruiker van de Dienst van de Test**: Verifieer de de dienstgebruiker externe identiteitseigenschappen in ontwikkeling kan plaatsen
+* Alle aangepaste code identificeren waarmee gebruikers of groepen worden gemaakt
+* Aangepaste code controleren en bijwerken om extern identiteitsmodel te gebruiken
+* Bijgewerkte code in de ontwikkelomgeving testen
+* Alle bestaande lokale gebruikers en groepen inventariseren voor migratie
+* Het migratieproces testen in lagere omgevingen
 
 ### Uitvoeringsstappen {#execution-steps}
 
@@ -658,7 +658,7 @@ De migratie controleren:
 1. **verifieer configuratie ExternalPrincipal**: Zorg ervoor `org.apache.jackrabbit.oak.spi.security.authentication.external.impl.principal.ExternalPrincipalConfiguration` behoorlijk wordt gevormd
 1. **de toestemmingen van de de dienstgebruiker van de Controle**: De de dienstgebruiker vereist `rep:write` en `rep:userManagement` toestemmingen op `/home/users` en `/home/groups`
 
-Zie [&#x200B; de Configuratie van de Gebruiker van de Dienst van 0&rbrace; voor volledige opstellingsinstructies.](#service-user-configuration)
+Zie [ de Configuratie van de Gebruiker van de Dienst van 0} voor volledige opstellingsinstructies.](#service-user-configuration)
 
 **Uitgave:`OakConstraint0072: Property 'rep:externalPrincipalNames' requires 'rep:externalId' to be present`**
 
@@ -675,7 +675,7 @@ Zie [&#x200B; de Configuratie van de Gebruiker van de Dienst van 0&rbrace; voor 
 
 **Uitgave: De externe groepslidmaatschappen worden onverwacht verwijderd na gebruikerslogin (OAK-12079)**
 
-**Probleem**: Wegens Oak insect [&#x200B; OAK-12079 &#x200B;](https://issues.apache.org/jira/browse/OAK-12079), kan het de synchronisatiemechanisme van Oak externe groepslidmaatschappen voortijdig opschonen die op `rep:lastSynced` en `rep:lastDynamicSync` worden gebaseerd timestamps.
+**Probleem**: Wegens Oak insect [ OAK-12079 ](https://issues.apache.org/jira/browse/OAK-12079), kan het de synchronisatiemechanisme van Oak externe groepslidmaatschappen voortijdig opschonen die op `rep:lastSynced` en `rep:lastDynamicSync` worden gebaseerd timestamps.
 
 **Oplossing**: Plaats `rep:lastSynced` en `rep:lastDynamicSync` timestamps aan een verre toekomstige datum (10 jaar van nu) in plaats van de huidige tijd. Hierdoor wordt voorkomen dat het synchronisatieproces het externe groepslidmaatschap verwijdert.
 
@@ -728,10 +728,10 @@ De aanbevolen methode is om deze servers te beveiligen met behulp van de integra
 
 #### Stap 1: Een technische account maken in AEM Developer Console {#create-a-technical-account-in-aem-developer-console}
 
-1. Navigeer aan [&#x200B; Experience Manager &#x200B;](https://experience.adobe.com/) en dan **Cloud Manager**
+1. Navigeer aan [ Experience Manager ](https://experience.adobe.com/) en dan **Cloud Manager**
 1. Selecteer uw programma en klik vervolgens in de omgeving waar u de technische account wilt maken
 1. Klik **Developer Console** in het de ellips van het milieu menu
-1. In AEM Developer Console, ga naar het **1&rbrace; lusje van de Integraties &lbrace;**
+1. In AEM Developer Console, ga naar het **1} lusje van de Integraties {**
 1. Klik **creëren nieuwe technische rekening**
 1. Geef een naam op voor de integratie (bijvoorbeeld &quot;Migratieserviceaccount&quot;)
 1. Klik **creëren**
@@ -740,7 +740,7 @@ De aanbevolen methode is om deze servers te beveiligen met behulp van de integra
    * **Geheim van de Cliënt**
    * **Technische identiteitskaart van de Rekening** (dit zal gebruiker - identiteitskaart zijn die tot uw servlets toegang heeft - formaat: `XXXXXXXXXXXXXXXXXXXXXXXX@techacct.adobe.com`)
 
-Voor gedetailleerde instructies, zie [&#x200B; Genererend de Tokens van de Toegang voor server-zij APIs documentatie &#x200B;](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md).
+Voor gedetailleerde instructies, zie [ Genererend de Tokens van de Toegang voor server-zij APIs documentatie ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md).
 
 Voorbeeldcode om te controleren of de aanroeper is geautoriseerd:
 
@@ -773,12 +773,12 @@ Als extra laag van veiligheid, kunt u CDN regels vormen om toegang tot migratiee
 
 Voordat u migratieserves naar productie gaat implementeren:
 
-* [ ] IMS-integratie maken in AEM Developer Console
-* [ ] Serlets configureren om de technische account-id te valideren
-* [ ] Verificatiestroom testen in ontwikkelings-/testomgevingen
-* [ ] Overweeg extra op IP-Gebaseerde beperkingen op CDN niveau
-* [ ] Plan om migratieserlets uit te schakelen of te verwijderen nadat de migratie is voltooid
-* [ ] Alle toegang tot migratie-eindpunten controleren en registreren
+* IMS-integratie maken in AEM Developer Console
+* Serlets configureren om de technische account-id te valideren
+* Verificatiestroom testen in ontwikkelings-/testomgevingen
+* Overweeg extra op IP-Gebaseerde beperkingen op CDN niveau
+* Plan om migratieserlets uit te schakelen of te verwijderen nadat de migratie is voltooid
+* Alle toegang tot migratie-eindpunten controleren en registreren
 
 >[!IMPORTANT]
 >
@@ -787,6 +787,6 @@ Voordat u migratieserves naar productie gaat implementeren:
 ## Aanvullende bronnen {#additional-resources}
 
 * [User and Group Sync for Publish Tier](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-* [&#x200B; SAML 2.0 de Handler van de Authentificatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=nl-NL)
-* [&#x200B; Externe Leverancier van de Identiteit &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
-* [&#x200B; Dynamisch Lidmaatschap van de Groep &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
+* [ SAML 2.0 de Handler van de Authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
+* [ Externe Leverancier van de Identiteit ](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
+* [ Dynamisch Lidmaatschap van de Groep ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
