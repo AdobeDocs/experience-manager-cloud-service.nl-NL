@@ -3,9 +3,10 @@ title: Functie in-/uitschakelen inschakelen om functies voor vroege adoptie en p
 description: Functieschakeloptie is een functionaliteit in AEM waarmee beheerders nieuwe functies kunnen inschakelen in een runtimeomgeving.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
-source-git-commit: cc4fccc51f487170bf6c14e4b302a8d5912c33a0
+exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
+source-git-commit: c1d62f0dd5a25da7fbeef537e1c28fa8421f42cd
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -34,9 +35,9 @@ Controleer het volgende voordat u functieschakelingen inschakelt in uw AEM SDK-c
 
 * Gebruiker is lid van de `forms-users` -groep.
 
-* Navigeer naar `http://<author-instance-url>:portnumber/system/console/bundles` en controleer of **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** bundel aanwezig is of niet. Voor het geval dat het niet aanwezig [&#x200B; is download de bundel van de verbinding &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+* Navigeer naar `http://<author-instance-url>:portnumber/system/console/bundles` en controleer of **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** bundel aanwezig is of niet. Voor het geval dat het niet aanwezig [ is download de bundel van de verbinding ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]s/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
-  ![&#x200B; Toggle van de Eigenschap &#x200B;](/help/forms/assets/aem-web-console-bundle.png)
+  ![ Toggle van de Eigenschap ](/help/forms/assets/aem-web-console-bundle.png)
 
 ### Functie in-/uitschakelen
 
@@ -48,12 +49,12 @@ Ga als volgt te werk om functieschakelingen in te schakelen in uw AEM SDK-exempl
 
 1. Zoek naar Adobe Granite Dynamic Toggle Provider in Configuration Manager.
 
-   ![&#x200B; Toggle van de Eigenschap &#x200B;](/help/forms/assets/aem-web-console-confi.png)
+   ![ Toggle van de Eigenschap ](/help/forms/assets/aem-web-console-confi.png)
 
 1. Klik op het pictogram ✏️ .
 1. Klik in de sectie Ingeschakelde schakelopties op ➕ .
 1. Voeg de functie-schakelings-id toe voor de functie, zoals in de onderstaande afbeelding wordt getoond.
-   ![&#x200B; Toggle van de Eigenschap &#x200B;](/help/forms/assets/feature-toggle.png)
+   ![ Toggle van de Eigenschap ](/help/forms/assets/feature-toggle.png)
 
 1. Klik op Opslaan
 
@@ -73,7 +74,7 @@ Voer de onderstaande stappen uit om de functieschakeloptie(s) uit te schakelen v
 1. Klik in de sectie Uitgeschakelde schakelingen op ➕ .
 1. Voeg het wisselnummer toe voor de functie die moet worden uitgeschakeld.
 
-   ![&#x200B; Toggle van de Eigenschap &#x200B;](/help/forms/assets/disable-toggle-feature.png)
+   ![ Toggle van de Eigenschap ](/help/forms/assets/disable-toggle-feature.png)
 
 ### Technische overweging
 
@@ -82,4 +83,3 @@ De knevels van de eigenschap zijn runtime-beheerd en het meest geschikt voor ont
 >[!NOTE]
 >
 > Neem contact op met het Adobe-ondersteuningsteam om de functieknop in te schakelen voor de productieomgeving.
-
