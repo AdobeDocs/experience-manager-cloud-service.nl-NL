@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
+source-git-commit: e58e1355b923e1da447e3dbcfd0a81086aee3e66
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 24288 samengevat, die op 4 februari 2026 openbaar werd gemaakt. De vorige onderhoudsrelease was release 23963.
 
-De activering van de 2026.2.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2026.2.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 >[!NOTE]
 >
@@ -91,7 +91,11 @@ De activering van de 2026.2.0-functie biedt de volledige functie die is ingestel
 * GUIDEN-37837: Wanneer het proberen om een onderwerp of een kaart te bewaren, kan de verrichting met een Mislukt om dossierfout, vooral tijdens intensieve taken van de activaverwerking of vertaalwerkschema&#39;s die op de achtergrond lopen periodiek ontbreken op te slaan.
 * GUIDEN-2774: Het verbroken lijstrapport bevat onjuist externe koppelingen, geldig `keyrefs` en trefwoorden die correct zijn opgelost binnen het bereik van de huidige kaart.
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [&#x200B; versie van Experience Manager Guides roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+>[!NOTE]
+>
+> Er is een het breken verandering in AEM Guides om zich van bewust te zijn: [ Verbeterde behandeling voor Gelezen slechts dossiers ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
+
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Bekende problemen {#known-issues-24288}
 
@@ -112,7 +116,7 @@ Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die 
 * SKYOPS-123329: Drop Java 11-ondersteuning voor AEM Ethos-implementaties en -updates `commons-lang3` .
 * SKYOPS-124983: Vervangen `nashorn.args` verwijderen uit opstartscripts van AEM.
 
-Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [&#x200B; Vervangen en Verwijderde Eigenschappen en APIs &#x200B;](/help/release-notes/deprecated-removed-features.md) document.
+Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
 ### Beveiligingsproblemen {#security-24288}
 
@@ -122,9 +126,9 @@ AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en pre
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 90,0 | [&#x200B; Oak 1.90.0 API &#x200B;](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.90.0/index.html) |
-| AEM SLING-API | 2,27,6 | [&#x200B; Apache Sling API 2.27.6 API &#x200B;](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTML | 1.4.28-1.4.0 | [&#x200B; Specificatie van de Taal van het Malplaatje van HTML &#x200B;](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2,4,65 | [&#x200B; Apache Httpd 2.4.65 &#x200B;](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM-kerncomponenten | 2.30.2. | [&#x200B; AEM WCM de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (standaard) | [&#x200B; Ondersteunde versies Node.js &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| AEM Oak | 1 90,0 | [ Oak 1.90.0 API ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.90.0/index.html) |
+| AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
+| Apache HTTP Server | 2,4,65 | [ Apache Httpd 2.4.65 ](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
+| AEM-kerncomponenten | 2.30.2. | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
+| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
