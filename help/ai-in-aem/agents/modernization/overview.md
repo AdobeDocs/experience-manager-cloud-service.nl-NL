@@ -3,7 +3,8 @@ title: Overzicht van de Experience Moderation Agent
 description: Leer hoe de Experience Modernization Agent met behulp van AI nieuwe websites naar Edge Delivery Services stuurt.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: a19b17517a096c93609cd5637deee9e04eb6ac37
+exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
@@ -17,19 +18,19 @@ Leer hoe de Experience Modernization Agent websites naar Edge Delivery Services 
 
 >[!NOTE]
 >
->De agent van de Modernisering van de Ervaring vervangt de vroegere migratievaardigheid van de [&#x200B; Agent van de Productie van de Ervaring.](/help/ai-in-aem/agents/production/overview.md)
+>De agent van de Modernisering van de Ervaring vervangt de vroegere migratievaardigheid van de [ Agent van de Productie van de Ervaring.](/help/ai-in-aem/agents/production/overview.md)
 
 ## Inleiding {#introduction}
 
 De Experience Modernization Agent ontgrendelt de volledige waarde van Edge Delivery Services (inclusief AEM authoring) door websitemigraties en doorlopende evolutie snel en onwrikbaar te maken.
 
-Het combineert [&#x200B; de creatie van de plaats en migratievaardigheden &#x200B;](#creation-migration) voor aanvankelijke website onboarding en [&#x200B; blokontwikkelingsmogelijkheden &#x200B;](#block-development) voor ononderbroken ervaringsontwikkeling (stijlupdates, malplaatjeverfijningen, het landen paginaverwezenlijking). Bovendien biedt het de [&#x200B; Console van de Modernisering van de Ervaring &#x200B;](#console) als ontvangen AI-Gesteunde ontwikkelomgeving aan beschikbaar rechtstreeks aan u. Terwijl de gebruikers de agent direct door die console kunnen in werking stellen, behouden de ontwikkelaars volledige controle over welke schepen.
+Het combineert [ de creatie van de plaats en migratievaardigheden ](#creation-migration) voor aanvankelijke website onboarding en [ blokontwikkelingsmogelijkheden ](#block-development) voor ononderbroken ervaringsontwikkeling (stijlupdates, malplaatjeverfijningen, het landen paginaverwezenlijking). Bovendien biedt het de [ Console van de Modernisering van de Ervaring ](#console) als ontvangen AI-Gesteunde ontwikkelomgeving aan beschikbaar rechtstreeks aan u. Terwijl de gebruikers de agent direct door die console kunnen in werking stellen, behouden de ontwikkelaars volledige controle over welke schepen.
 
-Bovendien, om het succes van complexe migraties te verzekeren, biedt Adobe het [&#x200B; AgenticOutcome Engineer (AOE) leveringsmodel &#x200B;](#delivery-model) aan. Deze optie kan als accelerator of als tactische dienst worden gebruikt helpen specifieke projectuitdagingen ontsluiten.
+Bovendien, om het succes van complexe migraties te verzekeren, biedt Adobe het [ AgenticOutcome Engineer (AOE) leveringsmodel ](#delivery-model) aan. Deze optie kan als accelerator of als tactische dienst worden gebruikt helpen specifieke projectuitdagingen ontsluiten.
 
 ## Voordelen {#benefits}
 
-De agent van de Modernisering van de Ervaring versnelt de tijd aan waarde voor [&#x200B; Edge Delivery Services &#x200B;](/help/edge/overview.md) goedkeuring en geeft u de behendigheid om het Webervaring van uw merk aan te passen.
+De agent van de Modernisering van de Ervaring versnelt de tijd aan waarde voor [ Edge Delivery Services ](/help/edge/overview.md) goedkeuring en geeft u de behendigheid om het Webervaring van uw merk aan te passen.
 
 * **Hoge snelheid**: AI de automatiseringshandvatten het herhalende migratiewerk (inhoudsimport, blokafbeelding, ontwerpsysteemtoepassing), die maanden van inspanning in weken comprimeren
 * **rendabel**: De automatisering behandelt het herhaalde werk, bevrijdend de professionele diensten voor hoogwaardige taken zoals integratie en strategische besluiten
@@ -52,7 +53,7 @@ Gedetailleerde vaardigheden zijn onder andere paginamigratie, bulkimport, ontwer
 De Experience Modernization Agent maakt gebruik van algemene Edge Delivery Services-ontwikkelingsmogelijkheden die verschillende ontwikkelingstaken leveren, en biedt ononderbroken waarde die verder gaat dan de initiële creatie of migratie van de site.
 
 * Volg de CDD-methode (Content-Driven Development) voor gebruiksvriendelijke inhoudsmodellen
-* Hefboomwerkingen de [&#x200B; Inzameling van het Blok &#x200B;](https://www.aem.live/developer/block-collection) en [&#x200B; Partij van het Blok &#x200B;](https://www.aem.live/developer/block-party/) om verwijzingsimplementaties en beste praktijken te vinden
+* Hefboomwerkingen de [ Inzameling van het Blok ](https://www.aem.live/developer/block-collection) en [ Partij van het Blok ](https://www.aem.live/developer/block-party/) om verwijzingsimplementaties en beste praktijken te vinden
 * Ondersteunt workflows voor het testen en opsporen van fouten voor het valideren van wijzigingen vóór de implementatie
 
 De gedetailleerde mogelijkheden omvatten blokontwikkeling, inhoud modellering, verwijzingsblokontdekking, het testen, en het zuiveren.

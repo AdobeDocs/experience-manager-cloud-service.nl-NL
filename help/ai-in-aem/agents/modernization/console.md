@@ -3,7 +3,8 @@ title: Experience Moderation Console
 description: Referentiehandleiding voor de interface en mogelijkheden van de Experience Moderation Console
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c2f258bfcfff8392af2863d874d4a4235f042193
+exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
@@ -25,7 +26,7 @@ De Experience Modernization Console is een gehoste, door AI ondersteunde ontwikk
 
 >[!TIP]
 >
->Als u in het worden bent begonnen onmiddellijk met de console, controleer het document [&#x200B; Begonnen Worden met de Agent van de Modernisering van de Ervaring.](/help/ai-in-aem/agents/modernization/getting-started.md)
+>Als u in het worden bent begonnen onmiddellijk met de console, controleer het document [ Begonnen Worden met de Agent van de Modernisering van de Ervaring.](/help/ai-in-aem/agents/modernization/getting-started.md)
 
 ## Mogelijkheden {#capabilities}
 
@@ -34,7 +35,7 @@ Kernmogelijkheden van de console:
 * Interactief chatsbord met de agent en zijn vaardigheden
 * Live AEM-voorvertoning voor directe visuele feedback over wijzigingen
 * Browser voor inhoudsbestanden en viewer voor markeringen
-* De synchronisatie van de inhoud met [&#x200B; Authoring van het Document &#x200B;](https://da.live)
+* De synchronisatie van de inhoud met [ Authoring van het Document ](https://da.live)
 * De browser van de code en diff kijker voor het herzien van aangebrachte veranderingen
 * De integratie van GitHub met capaciteit om trekkingsverzoeken van veranderingen te creëren
 
@@ -42,9 +43,9 @@ Ontwikkelaars behouden de volledige controle over welke schepen. Alle wijziginge
 
 ## Navigatie {#navigation}
 
-Na het ondertekenen in de console bij [`aemcoder.adobe.io`, &#x200B;](https://aemcoder.adobe.io) u op het huisscherm van de console aankomt.
+Na het ondertekenen in de console bij [`aemcoder.adobe.io`, ](https://aemcoder.adobe.io) u op het huisscherm van de console aankomt.
 
-![&#x200B; het scherm van het Huis van console &#x200B;](assets/console-home.png)
+![ het scherm van het Huis van console ](assets/console-home.png)
 
 ### Menubalk {#menu-bar}
 
@@ -64,9 +65,9 @@ Met de linkerzijbalk hebt u snel toegang tot belangrijke weergaven van de consol
 
 ## Home View {#home-view}
 
-De **1&rbrace; mening van het Huis &lbrace;is uw uitgangspunt voor het gebruiken van de console.**
+De **1} mening van het Huis {is uw uitgangspunt voor het gebruiken van de console.**
 
-* Bij de bovenkant is a [&#x200B; snel paneel &#x200B;](#prompt-panel) voor het doen van verzoeken van de console.
+* Bij de bovenkant is a [ snel paneel ](#prompt-panel) voor het doen van verzoeken van de console.
 * Onder het snelle paneel wordt voorgesteld herinneringen te gebruiken om uw project te beginnen.
 
 ### Deelvenster Vragen {#prompt-panel}
@@ -88,7 +89,7 @@ De **mening van de Inhoud** verstrekt hulpmiddelen om te doorbladeren en inhoud 
 * De browser van het dossier voor een overzicht van uw inhoudsdossiers (knevel die dit paneel met het chevron pictogram toont)
 * Deelvenster Voorvertoning voor het visualiseren van inhoud die is geselecteerd in de bestandsbrowser
 
-![&#x200B; mening van de Inhoud &#x200B;](assets/content-imported.png)
+![ mening van de Inhoud ](assets/content-imported.png)
 
 Het deelvenster Voorvertoning bevat drie modi:
 
@@ -104,7 +105,7 @@ De **uploadt inhoud** knoop opent een modaal venster om dossiers aan de Authorin
 * Bestandsselectie biedt bewerkbare doelpaden
 * Uploaden naar JCR (voor Universal Editor) wordt niet ondersteund
 
-![&#x200B; uploadt inhoud &#x200B;](assets/upload-content.png)
+![ uploadt inhoud ](assets/upload-content.png)
 
 ## Codeweergave {#code-view}
 
@@ -114,7 +115,7 @@ De **mening van de Code** verstrekt hulpmiddelen om code te doorbladeren en code
 * De browser van het dossier voor een overzicht van uw codedossiers of verandert als diffuse
 * Deelvenster Voorvertoning voor het weergeven van een codebestand of bestandsdiff dat is geselecteerd in de bestandsbrowser
 
-![&#x200B; mening van de Code &#x200B;](assets/code-view.png)
+![ mening van de Code ](assets/code-view.png)
 
 Het deelvenster Voorvertoning beschikt over twee verschillende modi:
 
@@ -136,13 +137,13 @@ Het **GitHub acties** menu (hoogste recht) verstrekt bewaarplaatsverrichtingen.
 
 Wanneer u wijzigingen aanbrengt, moet u eerst gefaseerde wijzigingen hebben aangebracht om deze in de push-modus op te nemen. Wanneer u drukt, kunt u een nieuwe PR maken of rechtstreeks naar de huidige vertakking duwen
 
-![&#x200B; de veranderingen van de Duw &#x200B;](assets/push-changes.png)
+![ de veranderingen van de Duw ](assets/push-changes.png)
 
 ## Instellingenweergave {#settings-view}
 
 In de weergave Instellingen kunt u de basisinstellingen van de console beheren.
 
-![&#x200B; mening van Montages &#x200B;](assets/settings-view.png)
+![ mening van Montages ](assets/settings-view.png)
 
 * **Geloofsbrieven** staat u toe om een persoonlijk toegangstoken voor Figma te specificeren zodat kan de console tot ontwerpblokken voor uw project toegang hebben.
 * **de werkruimte van het Terugstellen** keert de console aan zijn beginnende staat terug en alle niet-geduwde of niet-geuploade veranderingen zullen worden verloren.
