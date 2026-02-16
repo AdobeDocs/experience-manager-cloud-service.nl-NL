@@ -24,13 +24,13 @@ Voordat u de gekoppelde interface integreert met uw toepassing, moet u controler
 
 - Interactieve communicatie gemaakt en gepubliceerd
 - Browser met popup-ondersteuning ingeschakeld
-- De geassocieerde [ gebruikers moeten deel van de vorm-geassocieerde groep ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) uitmaken
-- De authentificatie vormde gebruikend om het even welk [ authentificatiemechanisme dat door AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) wordt gesteund (bijvoorbeeld, SAML 2.0, OAuth, of de managers van de douaneauthentificatie)
+- De geassocieerde [&#x200B; gebruikers moeten deel van de vorm-geassocieerde groep &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) uitmaken
+- De authentificatie vormde gebruikend om het even welk [&#x200B; authentificatiemechanisme dat door AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) wordt gesteund (bijvoorbeeld, SAML 2.0, OAuth, of de managers van de douaneauthentificatie)
 
 >[!NOTE]
 >
->- Dit artikel toont authentificatieconfiguratie gebruikend SAML 2.0 met [ Microsoft Entra identiteitskaart (Azure AD) als Identiteitskaart ](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings) aan.
->- Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [ wordt verklaard SAML 2.0 authentificatie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [ Extra configuraties van SAML voor Associate UI ](#additional-saml-configurations-for-associate-ui) sectie voor details.
+>- Dit artikel toont authentificatieconfiguratie gebruikend SAML 2.0 met [&#x200B; Microsoft Entra identiteitskaart (Azure AD) als Identiteitskaart &#x200B;](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings) aan.
+>- Voor Geassocieerde UI, worden de extra configuraties van SAML vereist voorbij de standaardopstelling die in [&#x200B; wordt verklaard SAML 2.0 authentificatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) artikel. Zie de [&#x200B; Extra configuraties van SAML voor Associate UI &#x200B;](#additional-saml-configurations-for-associate-ui) sectie voor details.
 
 ### Aanvullende SAML-configuraties voor Associatieve UI
 
@@ -440,15 +440,15 @@ Nu kunt u de gebruikersinterface voor koppelen starten met de voorbeeldpagina va
 
 1. **ga identiteitskaart van IC** in: Op het **identiteitskaart van IC** gebied, ga het herkenningsteken van uw gepubliceerde Interactieve Mededeling in. Dit is het enige vereiste veld.
 
-1. **vormt de Vooraf ingevulde Dienst**: Als u IC met dynamische gegevens wilt vooraf invullen, ga de modeldienstnaam van de Gegevens van de Vorm in de **Prefill 3} gebied van de Dienst {in.** Gebruik bijvoorbeeld `FdmTestData` voor voorbeeldgegevens.
+1. **vormt de Vooraf ingevulde Dienst**: Als u IC met dynamische gegevens wilt vooraf invullen, ga de modeldienstnaam van de Gegevens van de Vorm in de **Prefill 3&rbrace; gebied van de Dienst &lbrace;in.** Gebruik bijvoorbeeld `FdmTestData` voor voorbeeldgegevens.
 
-   ![ Steekproef HTML UI ](/help/forms/assets/samplehtmlui.png)
+   ![&#x200B; Steekproef HTML UI &#x200B;](/help/forms/assets/samplehtmlui.png)
 
 1. **klik Lanceer Geassocieerde UI**: Klik de **Lanceer Associate knoop UI**. Er wordt een nieuw browservenster geopend met de Associate UI, die vooraf is geladen met uw interactieve communicatie.
 
 Voer de gegevens in en de bijbehorende interface wordt weergegeven zoals hieronder wordt getoond:
 
-![ Associate UI ](/help/forms/assets/associateui.png)
+![&#x200B; Associate UI &#x200B;](/help/forms/assets/associateui.png)
 
 >[!NOTE]
 >
