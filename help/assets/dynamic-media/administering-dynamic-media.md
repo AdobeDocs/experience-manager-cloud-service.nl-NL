@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{work-with-dynamic-media}}
 
-[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/nl/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
