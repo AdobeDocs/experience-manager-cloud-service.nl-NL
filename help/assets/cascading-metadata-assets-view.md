@@ -28,7 +28,7 @@ Hier volgen enkele gebruiksgevallen waarvoor u trapsgewijze metagegevens kunt de
 
 >[!IMPORTANT]
 >
->De functie Trapsgewijze metagegevens is beschikbaar als functies voor beperkte beschikbaarheid. U kunt [&#x200B; tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
+>De functie Trapsgewijze metagegevens is beschikbaar als functies voor beperkte beschikbaarheid. U kunt [&#x200B; tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
 
 ## Metagegevens met trapsgewijze opmaak configureren in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
@@ -146,15 +146,15 @@ Voer de volgende stappen uit om een bestaand metagegevensformulier te wijzigen:
 
 >[!NOTE]
 > 
->Om vroege toegang tot de Cascading Meta-gegevens op uw rekening van de Mening van Assets te krijgen, [&#x200B; creeer en verzend een geval van de Steun van de Klant van Adobe &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>Om vroege toegang tot de Cascading Meta-gegevens op uw rekening van de Mening van Assets te krijgen, [&#x200B; creeer en verzend een geval van de Steun van de Klant van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 
 ## Volgende stappen {#next-steps}
 
-* [&#x200B; bekijk een video om meta-gegevensvormen in de mening van Assets te beheren &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
+* [&#x200B; bekijk een video om meta-gegevensvormen in de mening van Assets te beheren &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=nl-NL)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
 
