@@ -1,11 +1,12 @@
 ---
 title: Dynamische media instellen
 description: Als u dynamische media wilt instellen, moet u Dynamische media configureren en voorinstellingen voor afbeeldingen en viewers beheren.
+mini-toc-levels: 3
 contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 8a8f3d7b17d79791a3ebf6b583ffcccfcf214470
+source-git-commit: bd43f86c9d3ad017a5e963800938e3ead98b7441
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 {{work-with-dynamic-media}}
 
-[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/nl/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[ Dynamische Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -44,7 +45,7 @@ Zie ook de volgende onderwerpen:
 >
 >**als u bevordert:**
 >
->* Nadat u Adobe [!DNL Experience Manager] hebt gestart en uitgevoerd, wordt Dynamische media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u zich op een geüpgrade instantie van [!DNL Experience Manager] en een nieuwe versie van Dynamic Media bevindt, moet u uw elementen waarschijnlijk opnieuw verwerken om ze voor Dynamic Media in te schakelen. Zie [&#x200B; activa in een omslag &#x200B;](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
+>* Nadat u Adobe [!DNL Experience Manager] hebt gestart en uitgevoerd, wordt Dynamische media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u zich op een geüpgrade instantie van [!DNL Experience Manager] en een nieuwe versie van Dynamic Media bevindt, moet u uw elementen waarschijnlijk opnieuw verwerken om ze voor Dynamic Media in te schakelen. Zie [ activa in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
 
 
 ## Eenmalige DNS-update vereist voor dynamische vernieuwing van mediacertificaten {#dns-update-dynamic-media-certificate-renewals}
@@ -59,6 +60,6 @@ Voeg de volgende CAA-record toe aan de hoofdmap (apex) van uw domein:
 
 Dit is een eenmalige wijziging.
 
-U kunt verifiëren of een verslag van de CAA gebruikend uw DNS leveranciershulpmiddelen of a [&#x200B; opzoeknut van de CAA &#x200B;](https://caatest.co.uk/) bestaat.
+U kunt verifiëren of een verslag van de CAA gebruikend uw DNS leveranciershulpmiddelen of a [ opzoeknut van de CAA ](https://caatest.co.uk/) bestaat.
 
 Als een CAA-record bestaat en DigiCert niet is geautoriseerd, mislukt het vernieuwen van het certificaat wanneer het huidige certificaat verloopt. Dit kan downtime veroorzaken voor het afspelen van afbeeldingen en video. Als er geen CAA-record voor uw domein bestaat, is geen actie vereist.
