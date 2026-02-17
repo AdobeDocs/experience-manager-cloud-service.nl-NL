@@ -61,7 +61,7 @@ Inhoudsfragmenten bevatten gestructureerde inhoud:
 Inhoudsfragmenten kunnen ook in JSON-indeling worden geleverd, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM-kerncomponenten. Deze leveringsvorm:
 
 * biedt u de mogelijkheid om de component te gebruiken om te beheren welke elementen van een fragment moeten worden geleverd
-* staat bulklevering toe; door de veelvoudige [&#x200B; Componenten van de Kern van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) op de pagina toe te voegen die voor API levering wordt gebruikt
+* staat bulklevering toe; door de veelvoudige [&#x200B; Componenten van de Kern van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL) op de pagina toe te voegen die voor API levering wordt gebruikt
 
 Het aantal communicatiekanalen neemt jaarlijks toe. Doorgaans verwijzen kanalen naar het leveringsmechanisme, als:
 
@@ -90,7 +90,7 @@ Deze inhoudsfragmenten kunnen vervolgens worden samengesteld om ervaringen via v
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Voor verdere informatie, zie [&#x200B; Begrijpend de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>Voor verdere informatie, zie [&#x200B; Begrijpend de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=nl-NL#content-fragments).
 
 Deze pagina&#39;s en de volgende pagina&#39;s bevatten de taken voor het maken, configureren, onderhouden en gebruiken van de inhoudsfragmenten:
 
@@ -190,7 +190,7 @@ Inhoudsfragmenten zijn:
 
 * Beschikbaar in de [&#x200B; paginaredacteur door de component van het Fragment van de Inhoud te gebruiken &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md) (van verwijzingen voorzien component):
 
-   * De [&#x200B; Component van de Kern van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) is beschikbaar aan paginaauteurs. Hiermee kunnen ze naar het vereiste inhoudsfragment in HTML- of JSON-indeling verwijzen en dit leveren.
+   * De [&#x200B; Component van de Kern van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL) is beschikbaar aan paginaauteurs. Hiermee kunnen ze naar het vereiste inhoudsfragment in HTML- of JSON-indeling verwijzen en dit leveren.
 
 Inhoudsfragmenten zijn inhoudsstructuren die:
 
@@ -277,7 +277,7 @@ Als u de Content Fragments wilt gebruiken voor het ontwerpen van pagina&#39;s, h
    * Verantwoordelijk voor de lay-out en levering van een fragment, bijvoorbeeld kanalen.
    * Fragmenten hebben een of meer specifieke componenten nodig om de lay-out te definiëren en om enkele of alle elementen/variaties en bijbehorende inhoud te leveren.
    * Wanneer u een fragment naar een pagina sleept in de ontwerpfase, wordt de vereiste component automatisch gekoppeld.
-   * Zie de [&#x200B; Component van de Kern van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html).
+   * Zie de [&#x200B; Component van de Kern van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL).
 
 ## De console met inhoudsfragmenten {#content-fragments-console}
 
