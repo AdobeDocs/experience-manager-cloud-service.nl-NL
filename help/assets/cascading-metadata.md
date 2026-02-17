@@ -1,11 +1,10 @@
 ---
 title: Trapsgewijze metagegevens
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
-contentOwner: AG
 feature: Metadata
 role: Admin, User
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8d1744ca10ecce8637d9f9ff37eba05d2ca09ca4
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 4%
@@ -39,17 +38,17 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 1. Selecteer het [!DNL Experience Manager] -logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** .
 1. Selecteer op de pagina **[!UICONTROL Schema Forms]** een schema en selecteer vervolgens **[!UICONTROL Edit]** in de werkbalk om het schema te bewerken.
 
-   ![&#x200B; select_form &#x200B;](assets/select_form.png)
+   ![ select_form ](assets/select_form.png)
 
 1. (Optioneel) Maak in de Schema-editor voor metagegevens een veld dat u wilt conditionaliseren. Geef een naam- en eigenschapspad op het tabblad **[!UICONTROL Settings]** op.
 
    Als u een tabblad wilt maken, selecteert u `+` om een tabblad toe te voegen en voegt u vervolgens een metagegevensveld toe.
 
-   ![&#x200B; add_tab &#x200B;](assets/add_tab.png)
+   ![ add_tab ](assets/add_tab.png)
 
 1. Voeg een vervolgkeuzeveld toe voor het elementtype. Geef een naam- en eigenschapspad op het tabblad **[!UICONTROL Settings]** op. Voeg een optionele beschrijving toe.
 
-   ![&#x200B; asset_type_field &#x200B;](assets/asset_type_field.png)
+   ![ asset_type_field ](assets/asset_type_field.png)
 
 1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
 
@@ -59,7 +58,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    Beide opties sluiten elkaar uit. U kunt de opties niet importeren uit een JSON-bestand en handmatig bewerken.
 
-   ![&#x200B; add_choice &#x200B;](assets/add_choice.png)
+   ![ add_choice ](assets/add_choice.png)
 
    >[!NOTE]
    >
@@ -73,16 +72,16 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    Op dezelfde manier voegt u afhankelijke velden toe voor andere elementtypen. Voeg bijvoorbeeld het aantal pagina&#39;s en de auteur van velden toe voor documentelementen, zoals PDF- en Word-bestanden.
 
-   ![&#x200B; video_dependent_fields &#x200B;](assets/video_dependent_fields.png)
+   ![ video_dependent_fields ](assets/video_dependent_fields.png)
 
 1. Als u een afhankelijkheid wilt maken tussen het elementtypeveld en andere velden, kiest u het afhankelijke veld en opent u het tabblad **[!UICONTROL Rules]** .
 
-   ![&#x200B; select_dependentfield &#x200B;](assets/select_dependentfield.png)
+   ![ select_dependentfield ](assets/select_dependentfield.png)
 
 1. Kies onder **[!UICONTROL Requirement]** de optie **[!UICONTROL Required, based on new rule]**.
 1. Selecteer **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Selecteer **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
-   ![&#x200B; define_rule &#x200B;](assets/define_rule.png)
+   ![ define_rule ](assets/define_rule.png)
 
    >[!NOTE]
    >
@@ -92,7 +91,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
 1. Selecteer **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Selecteer **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
-   ![&#x200B; define_visibilityrule &#x200B;](assets/define_visibilityrule.png)
+   ![ define_visibilityrule ](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
@@ -108,10 +107,10 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
 1. Navigeer naar de map waarop u het metagegevensschema hebt toegepast en open de pagina met eigenschappen van een element. Afhankelijk van uw keuze in het veld Type element worden relevante trapsgewijze metagegevensvelden weergegeven.
 
-   ![&#x200B; Cascading meta-gegevens voor Video activa &#x200B;](assets/video_asset.png)
+   ![ Cascading meta-gegevens voor Video activa ](assets/video_asset.png)
    *Cijferend Cijferend meta-gegevens voor Video activa*
 
-   ![&#x200B; Cascading meta-gegevens voor documentactiva &#x200B;](assets/doc_type_fields.png)
+   ![ Cascading meta-gegevens voor documentactiva ](assets/doc_type_fields.png)
    *Cijfer: Cascading meta-gegevens voor documentactiva*
 
 **zie ook**
