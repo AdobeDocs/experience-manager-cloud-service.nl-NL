@@ -22,7 +22,7 @@ Zie ook [&#x200B; AEM Experience Hub &#x200B;](https://developer.adobe.com/uix/d
 
 Bekijk een snelle rondleiding door de nieuwe AEM Experience Hub-werkruimte (2 minuten, 40 seconden).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475198/?captions=dut&learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
