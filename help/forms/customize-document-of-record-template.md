@@ -85,7 +85,7 @@ Voor Adaptive Forms op basis van Core Components:
 1. Blader naar de geüploade aangepaste XDP-sjabloon en selecteer deze.
 1. Selecteer het vinkje dat u wilt opslaan.
 
-   ![ Document van de eigenschappen van het Verslag - Malplaatje dat aan Douane (de Componenten van de Kern) wordt geplaatst ](/help/forms/assets/submission-pdf-dor-custom-template.png)
+   ![&#x200B; Document van de eigenschappen van het Verslag - Malplaatje dat aan Douane (de Componenten van de Kern) wordt geplaatst &#x200B;](/help/forms/assets/submission-pdf-dor-custom-template.png)
 
 >[!TAB  Componenten van de Stichting ]
 
@@ -98,7 +98,7 @@ Voor Adaptive Forms op basis van Foundation Components:
 1. Blader naar de geüploade aangepaste XDP-sjabloon en selecteer deze.
 1. Selecteer **[!UICONTROL Done]** voor opslaan.
 
-   ![ Document van de eigenschappen van het Verslag - Malplaatje dat aan Douane (de Componenten van de Stichting) wordt geplaatst ](/help/forms/assets/dor-custom-template-foundation-components.png)
+   ![&#x200B; Document van de eigenschappen van het Verslag - Malplaatje dat aan Douane (de Componenten van de Stichting) wordt geplaatst &#x200B;](/help/forms/assets/dor-custom-template-foundation-components.png)
 
 >[!ENDTABS]
 
@@ -118,7 +118,7 @@ Bevestig dat de aangepaste sjabloon correct is toegepast:
 |---|---|
 | De aangepaste sjabloon uploadt niet. | Controleer of het XDP-bestand geldig en niet beschadigd is. Controleer of u de vereiste machtigingen hebt om bestanden te uploaden naar AEM Forms. |
 | Aanpassingen worden niet weergegeven in het gegenereerde document met opnamen. | Bevestig dat u de juiste aangepaste sjabloon hebt geselecteerd in de sectie **[!UICONTROL Document of Record Template Configuration]** van de formuliereigenschappen. |
-| Problemen met lay-out of opmaak in de gegenereerde PDF. | Verifieer dat de aanpassingen in Adobe Forms Designer de [ overeenkomsten van het basissjabloon ](/help/forms/generate-document-of-record-core-components.md#base-template-conventions) volgen. Zorg ervoor dat alle elementen correct zijn gepositioneerd binnen de sjabloonstructuur. |
+| Problemen met lay-out of opmaak in de gegenereerde PDF. | Verifieer dat de aanpassingen in Adobe Forms Designer de [&#x200B; overeenkomsten van het basissjabloon &#x200B;](/help/forms/generate-document-of-record-core-components.md#base-template-conventions) volgen. Zorg ervoor dat alle elementen correct zijn gepositioneerd binnen de sjabloonstructuur. |
 
 ## Zie ook {#see-also}
 
