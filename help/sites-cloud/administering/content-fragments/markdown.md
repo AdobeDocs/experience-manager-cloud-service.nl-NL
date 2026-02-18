@@ -14,9 +14,9 @@ ht-degree: 2%
 
 # Markering {#markdown}
 
-Wanneer u [ de Fragmenten van de Inhoud creeert ](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) kunt u [ Multiline tekstgebieden ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) hebben die met het **StandaardType** van **worden bepaald Markdown**. De redacteur van het Fragment van de Inhoud gebruikt *syntaxis van de prijsdaling* om u toe te staan om inhoud voor zowel pagina auteursrecht als hoofdloze levering gemakkelijk te schrijven:
+Wanneer u [&#x200B; de Fragmenten van de Inhoud creeert &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) kunt u [&#x200B; Multiline tekstgebieden &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) hebben die met het **StandaardType** van **worden bepaald Markdown**. De redacteur van het Fragment van de Inhoud gebruikt *syntaxis van de prijsdaling* om u toe te staan om inhoud voor zowel pagina auteursrecht als hoofdloze levering gemakkelijk te schrijven:
 
-![ de Meerdere gebieden van de Prijsverhoging van de lijntekst in de redacteur ](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
+![&#x200B; de Meerdere gebieden van de Prijsverhoging van de lijntekst in de redacteur &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 U kunt het volgende definiëren:
 
@@ -126,7 +126,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-Als u een ongeordende lijst wilt maken, gebruikt u het symbool &amp;ast; (sterretje) vóór de items in de lijst. Bijvoorbeeld:
+Als u een ongeordende lijst wilt maken, gebruikt u het symbool &ast; (sterretje) vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 

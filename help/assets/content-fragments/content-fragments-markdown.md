@@ -14,15 +14,15 @@ ht-degree: 2%
 
 # Markering {#markdown}
 
-Wanneer u [ creatie ](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de redacteur van het inhoudsfragment *prijsdown* syntaxis om u toe te staan om inhoud voor of hoofdloze levering of pagina het schrijven van creatie gemakkelijk te schrijven:
+Wanneer u [&#x200B; creatie &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de redacteur van het inhoudsfragment *prijsdown* syntaxis om u toe te staan om inhoud voor of hoofdloze levering of pagina het schrijven van creatie gemakkelijk te schrijven:
 
 >[!NOTE]
 >
 >De Fragmenten van de inhoud zijn een eigenschap van Plaatsen, maar worden opgeslagen als **Assets**.
 >
->Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3} console van de Fragmenten van de Inhoud {).**
+>Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [&#x200B; de Fragmenten van de Inhoud - Authoring &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3&rbrace; console van de Fragmenten van de Inhoud &lbrace;).**
 
-![ de redacteur van de Prijsverlaging ](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![&#x200B; de redacteur van de Prijsverlaging &#x200B;](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 U kunt het volgende definiëren:
 
@@ -132,7 +132,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-Als u een ongeordende lijst wilt maken, gebruikt u het symbool &amp;ast; (sterretje) vóór de items in de lijst. Bijvoorbeeld:
+Als u een ongeordende lijst wilt maken, gebruikt u het symbool &ast; (sterretje) vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 
