@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Wanneer een formulier wordt ingevuld of verzonden, kunt u het formulier afdrukken of in documentindeling registreren. Deze record wordt een Submission PDF (voorheen Document of Record, of DoR) genoemd. Het is een afdrukvriendelijke PDF van het ingediende formulier. U kunt ook naar de verzendversie van PDF verwijzen voor de informatie die klanten op een latere datum hebben ingevuld. Met de verzendversie van PDF kunt u formulieren en inhoud in PDF-indeling archiveren.
 
-![ Verzending PDF (vroeger Document van Verslag) ](assets/document-of-record.png)
+![&#x200B; Verzending PDF (vroeger Document van Verslag) &#x200B;](assets/document-of-record.png)
 
 ## Toepassings- en gebruiksgevallen
 
@@ -43,7 +43,7 @@ U kunt:
 
 Voordat u de vereiste middelen voor een PDF voor verzending leert en gereed maakt:
 
-**malplaatje van de Basis:** Een malplaatje XFA (XDP dossier) dat in Forms Designer of een Vorm van Acrobat (AcroForm) wordt gecreeerd. [ het malplaatje van de Basis ](#base-template-of-a-document-of-record) wordt gebruikt om het stileren en het brandmerken informatie voor een Verzending PDF te specificeren. Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie eerder.
+**malplaatje van de Basis:** Een malplaatje XFA (XDP dossier) dat in Forms Designer of een Vorm van Acrobat (AcroForm) wordt gecreeerd. [&#x200B; het malplaatje van de Basis &#x200B;](#base-template-of-a-document-of-record) wordt gebruikt om het stileren en het brandmerken informatie voor een Verzending PDF te specificeren. Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie eerder.
 
 **Aangepaste Vorm:** Een Aangepaste Vorm waarvoor de Verzending PDF moet worden geproduceerd.
 
@@ -58,7 +58,7 @@ Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie. Voer de volgen
 1. In het Document van de sectie van de Configuratie van het Malplaatje van het Verslag van het Model van de Vorm, uitgezochte **Vennoot het Malplaatje van de Vorm als Document van het Malplaatje van het Verslag**. Als u deze optie selecteert, worden alle XFA-sjablonen (XDP-bestanden) die op uw computer beschikbaar zijn, weergegeven. Selecteer het juiste bestand. Zorg er ook voor dat hetzelfde schema (gegevensschema) wordt gebruikt voor Adaptief formulier en geselecteerde XFA-sjabloon (XDP-bestand).
 1. Klikken **[!UICONTROL Done]**
 
-Uw adaptieve formulier is nu geconfigureerd voor het gebruik van een XDP-bestand als sjabloon voor verzending naar PDF. De volgende stap moet [ de Aangepaste componenten van de Vorm met overeenkomstige malplaatjegebieden ](#bind-adaptive-form-components-with-template-fields) binden.
+Uw adaptieve formulier is nu geconfigureerd voor het gebruik van een XDP-bestand als sjabloon voor verzending naar PDF. De volgende stap moet [&#x200B; de Aangepaste componenten van de Vorm met overeenkomstige malplaatjegebieden &#x200B;](#bind-adaptive-form-components-with-template-fields) binden.
 
 ## Een op acroform gebaseerde verzending PDF genereren {#generate-an-Acroform-based-document-of-record}
 
@@ -71,7 +71,7 @@ Upload uw Adobe Acrobat PDF (Acrobat) naar uw AEM Forms-exemplaar. Voer de volge
 1. In het Document van de sectie van de Configuratie van het Malplaatje van het Verslag van het Model van de Vorm, uitgezochte **Vennoot het Malplaatje van de Vorm als Document van het Malplaatje van het Verslag**. Als u deze optie selecteert, worden alle Acrobat PDF (Acroform) die op uw computer beschikbaar zijn, weergegeven. Selecteer het formulier dat u wilt gebruiken.
 1. Klikken **[!UICONTROL Done]**
 
-Uw adaptieve formulier is nu geconfigureerd voor het gebruik van een Acrobat-formulier als sjabloon voor verzending naar PDF. De volgende stap moet [ de Aangepaste componenten van de Vorm met overeenkomstige malplaatjegebieden ](#bind-adaptive-form-components-with-template-fields) binden.
+Uw adaptieve formulier is nu geconfigureerd voor het gebruik van een Acrobat-formulier als sjabloon voor verzending naar PDF. De volgende stap moet [&#x200B; de Aangepaste componenten van de Vorm met overeenkomstige malplaatjegebieden &#x200B;](#bind-adaptive-form-components-with-template-fields) binden.
 
 ## Automatisch een PDF voor verzending genereren {#auto-generate-a-document-of-record}
 
@@ -98,7 +98,7 @@ Adaptief-formuliervelden binden met sjabloonvelden om vastgelegde formuliergegev
 
 1. Open het adaptieve formulier, geconfigureerd om een aangepaste formuliersjabloon te gebruiken voor bewerken.
 
-1. Selecteer een Adaptieve component van de Vorm en klik open vormen ![ ](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend.
+1. Selecteer een Adaptieve component van de Vorm en klik open vormen ![&#x200B; &#x200B;](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend.
 
 1. Blader in de eigenschappenbrowser naar een veld en selecteer dit.
 
@@ -111,8 +111,8 @@ Adaptief-formuliervelden binden met sjabloonvelden om vastgelegde formuliergegev
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-U kunt verzendacties zoals &quot;verzenden E-mail&quot;, &quot;aanhalen een werkschema van AEM&quot;gebruiken, &quot;aanhalen een Macht automatisch stroom&quot;, en andere [ verzendt Acties ](configuring-submit-actions.md) om een Verzending PDF te ontvangen.
-![ Beeld legt Acties ](/help/forms/assets/submit-actions-img.png) voor
+U kunt verzendacties zoals &quot;verzenden E-mail&quot;, &quot;aanhalen een werkschema van AEM&quot;gebruiken, &quot;aanhalen een Macht automatisch stroom&quot;, en andere [&#x200B; verzendt Acties &#x200B;](configuring-submit-actions.md) om een Verzending PDF te ontvangen.
+![&#x200B; Beeld legt Acties &#x200B;](/help/forms/assets/submit-actions-img.png) voor
 
 
 >[!NOTE]
@@ -127,11 +127,11 @@ Wanneer u een Submission PDF-sjabloon wijzigt en de gewijzigde sjabloon uploadt 
 
 Bijvoorbeeld, heeft een Organisatie, *We.Retail*, een op AcroForm-Gebaseerde malplaatje van PDF van de Verzending, *wij-retail-factuur.pdf*. De sjabloon ziet er als volgt uit:
 
-![ Origineel Malplaatje ](assets/we-retail-invoice.png)
+![&#x200B; Origineel Malplaatje &#x200B;](assets/we-retail-invoice.png)
 
 Nadat de sjabloon enige tijd is gebruikt, besluit de organisatie het veld `invoice-number` te hernoemen naar het veld `bill-number` en het e-mailadres van kopers vast te leggen. Een ontwikkelaar werkt de naam van het veld `invoice-number` bij en voegt een e-mailveld aan de sjabloon toe. Hij leidt ook tot een nieuwe versie van het malplaatje genoemd *wij-retail-factuur-v2.pdf*.
 
-![ Bijgewerkt Malplaatje ](assets/we-retail-new-invoice.png)
+![&#x200B; Bijgewerkt Malplaatje &#x200B;](assets/we-retail-new-invoice.png)
 
 <!--
 
@@ -147,7 +147,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 Wanneer het adaptieve formulier wordt verzonden, wordt nu een bijgewerkte verzendings-PDF gegenereerd.
 
-![ Bijgewerkt - ](assets/we-retail-new-invoice-sent-to-customer.png)
+![&#x200B; Bijgewerkt - &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Belangrijkste overwegingen bij het werken met de PDF voor verzending {#key-considerations-when-working-with-document-of-record}
 
@@ -286,7 +286,7 @@ Het malplaatje van de basis verstrekt het stileren en verschijningsinformatie aa
 
 De basispagina van een basissjabloon wordt gebruikt als basispagina voor de PDF-sjabloon Verzenden. De hoofdpagina kan informatie bevatten zoals een paginakoptekst, voettekst en paginanummer die u kunt toepassen op de verzendende PDF. U kunt dergelijke informatie op de Verzending PDF toepassen gebruikend het basissjabloon voor autogeneratie van de Verzending PDF. Met een basissjabloon kunt u de standaardeigenschappen van velden wijzigen.
 
-Volg altijd [ de overeenkomsten van het malplaatje van de Basis ](#base-template-conventions) wanneer u basissjabloon ontwerpt.
+Volg altijd [&#x200B; de overeenkomsten van het malplaatje van de Basis &#x200B;](#base-template-conventions) wanneer u basissjabloon ontwerpt.
 
 ## Basissjabloonconventies {#base-template-conventions}
 
@@ -317,7 +317,7 @@ Ga als volgt te werk in Forms Designer om een basissjabloon te maken.
 
 1. (Optioneel) Wijzig de opmaak en weergave van velden die u wilt toepassen op de velden in de PDF Verzenden.
 1. Sla het formulier op.
-   ![ Basiseigenschappen ](/help/forms/assets/form-designer-dor-img.png)
+   ![&#x200B; Basiseigenschappen &#x200B;](/help/forms/assets/form-designer-dor-img.png)
 
 U kunt het opgeslagen formulier nu gebruiken als een basissjabloon voor een verzendende PDF. Wijzig of verwijder geen scripts in de basissjabloon.
 
@@ -334,8 +334,8 @@ Wanneer u een PDF voor verzending genereert, kunt u de brandinggegevens voor de 
 
 Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt lokaliseren, moet u controleren of de landinstelling van de browser correct is ingesteld. Voer de volgende stappen uit om de brandinggegevens van Submission PDF aan te passen:
 
-1. Selecteer een paneel (wortelpaneel) in de Verzending PDF en selecteer dan ![ vormen ](assets/configure.png).
-1. Selecteer ![ dortab ](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
+1. Selecteer een paneel (wortelpaneel) in de Verzending PDF en selecteer dan ![&#x200B; vormen &#x200B;](assets/configure.png).
+1. Selecteer ![&#x200B; dortab &#x200B;](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
 1. Selecteer de standaardsjabloon of een aangepaste sjabloon voor het renderen van de verzendings-PDF. Als u de standaardsjabloon selecteert, wordt onder de vervolgkeuzelijst Sjabloon een miniatuurvoorvertoning van de PDF voor verzending weergegeven.
 1. Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon selecteert, worden enkele van de volgende eigenschappen of alle eigenschappen weergegeven op het tabblad Document of Record. Geef de hieronder vermelde eigenschappen op om de weergave van de verzendende PDF te definiëren:
 
@@ -346,7 +346,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 
         >[!NOTE]
         >
-        > AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. Om de lijst van gesteunde doopvonten te zien, [ klik hier ](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. Om de lijst van gesteunde doopvonten te zien, [&#x200B; klik hier &#x200B;](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **omvat vormvoorwerpen die niet verbindend aan gegevensmodel** zijn: Het plaatsen van het bezit omvat ongebonden gebieden van Schema gebaseerde Adaptieve Vorm in de Verzending PDF.
 
@@ -408,11 +408,11 @@ Het adaptieve formulier kan lang zijn en meerdere formuliervelden bevatten. U ku
 
 Voordat u een PDF voor verzending genereert, kiest u in de instellingen van een deelvenster de optie Layout voor het document van record voor dat deelvenster als tabel of kolom. De velden in het deelvenster worden op basis hiervan ingedeeld in Verzending PDF.
 
-![ Gebieden in een paneel dat in een lijstlay-out in de Verzending PDF ](assets/dortablelayout.png) wordt teruggegeven
+![&#x200B; Gebieden in een paneel dat in een lijstlay-out in de Verzending PDF &#x200B;](assets/dortablelayout.png) wordt teruggegeven
 
 Velden in een deelvenster die zijn gerenderd in een tabellay-out in de PDF Verzenden
 
-![ Gebieden in een paneel dat in een kolomlay-out in de Verzending PDF ](assets/dorcolumnlayout.png) wordt teruggegeven
+![&#x200B; Gebieden in een paneel dat in een kolomlay-out in de Verzending PDF &#x200B;](assets/dorcolumnlayout.png) wordt teruggegeven
 
 Velden in een deelvenster die zijn gerenderd in een kolomlay-out in de Verzending-PDF
 
@@ -420,7 +420,7 @@ Velden in een deelvenster die zijn gerenderd in een kolomlay-out in de Verzendin
 
 Met de PDF-instellingen voor verzending kunt u opties kiezen die u wilt opnemen in de PDF voor verzending. Een bank accepteert bijvoorbeeld naam, leeftijd, socialezekerheidsnummer en telefoonnummer in een formulier. Het formulier genereert een bankrekeningnummer en filiaalgegevens. U kunt ervoor kiezen alleen de naam, het socialezekerheidsnummer, de bankrekening en de filiaalgegevens weer te geven in Verzending PDF.
 
-De instelling van de component Document of Record is beschikbaar onder de eigenschappen. Om tot de eigenschappen toegang te hebben een component, selecteer de component en klik ![ cmp ](assets/cmppr.png) in de bekleding. De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
+De instelling van de component Document of Record is beschikbaar onder de eigenschappen. Om tot de eigenschappen toegang te hebben een component, selecteer de component en klik ![&#x200B; cmp &#x200B;](assets/cmppr.png) in de bekleding. De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
 
 **het niveaumontages van het Gebied**
 
