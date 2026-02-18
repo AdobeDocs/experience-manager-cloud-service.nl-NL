@@ -1,24 +1,24 @@
 ---
-title: Ondersteunde HTML-opmaakcodes in Document of Record
-description: Referentiegids voor HTML-opmaaktags die nu worden ondersteund in Document of Record genereren, inclusief het rendergedrag en toegankelijkheidsoverwegingen
+title: Ondersteunde HTML-opmaaktags in Verzending PDF (voorheen Document of Record)
+description: Referentiegids voor HTML-opmaaktags die worden ondersteund bij het genereren van een Verzending PDF (voorheen Document of Record), inclusief het rendergedrag en toegankelijkheidsoverwegingen.
 feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
+source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
 
-# Ondersteunde HTML-opmaakcodes in Document of Record
+# Ondersteunde HTML-opmaaktags in Verzending PDF (voorheen Document of Record)
 
 ## Waar gaat het om?
 
-AEM Forms ondersteunt nu HTML-opmaakcodes in RTF-velden bij het genereren van Document of Record (DoR) PDF&#39;s. In deze handleiding wordt uitgelegd welke HTML-opmaaktags u veilig kunt gebruiken in Adaptive Forms en hoe deze worden weergegeven in de gegenereerde documenten.
+AEM Forms ondersteunt nu HTML-opmaaktags in RTF-velden wanneer een PDF-verzending (voorheen Document of Record) PDF wordt gegenereerd. In deze handleiding wordt uitgelegd welke HTML-opmaaktags u veilig kunt gebruiken in Adaptive Forms en hoe deze worden weergegeven in de gegenereerde Verzending PDF.
 
-Als u RTF-inhoud (zoals vet opmaken, lijsten of koppelingen) toevoegt aan uw formulieren, is het belangrijk dat u weet welke tags worden ondersteund en welke beperkingen ze kunnen hebben. Met deze verwijzing kunt u de juiste codes kiezen om ervoor te zorgen dat de inhoud correct wordt weergegeven en toegankelijk blijft in het Document of Record.
+Als u RTF-inhoud (zoals vet opmaken, lijsten of koppelingen) toevoegt aan uw formulieren, is het belangrijk dat u weet welke tags worden ondersteund en welke beperkingen ze kunnen hebben. Met deze verwijzing kunt u de juiste codes kiezen om ervoor te zorgen dat de inhoud correct wordt weergegeven en toegankelijk blijft in de verzendende PDF.
 
 ## Voordat u begint
 
@@ -27,18 +27,18 @@ Als u RTF-inhoud (zoals vet opmaken, lijsten of koppelingen) toevoegt aan uw for
 U zou vertrouwd met moeten zijn:
 
 - Standaard HTML-markeringssyntaxis
-- [Document met grondbeginselen van records](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Basisprincipes van het verzenden van PDF (voorheen Document of Record)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - Toegankelijkheidsbeginselen en WCAG-richtsnoeren
 - Toegankelijkheidsvereisten voor PDF
 - Aangepaste formuliercomponenten die HTML-opmaak accepteren
 
 ### Overwegingen
 
-Het Document of Record (DoR) kan een gelabelde PDF zijn die de toegankelijkheid en juiste structuur voor ondersteunende hulpmiddelen helpt te garanderen. Om geëtiketteerde output van PDF toe te laten, [&#x200B; plaats het bezit XCI `config/present/pdf/tagged` aan `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nadat u de PDF hebt gegenereerd, is het belangrijk te controleren of toegankelijkheidstags correct zijn toegepast. U kunt [&#x200B; Adobe Acrobat gebruiken om toegankelijkheidstags &#x200B;](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) te controleren en uw document te verzekeren voldoet aan toegankelijkheidsnormen.
+De PDF voor verzending (voorheen Document of Record) kan een gelabelde PDF zijn, die de toegankelijkheid en juiste structuur voor ondersteunende hulpmiddelen helpt te garanderen. Om geëtiketteerde output van PDF toe te laten, [ plaats het bezit XCI `config/present/pdf/tagged` aan `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nadat u de PDF hebt gegenereerd, is het belangrijk te controleren of toegankelijkheidstags correct zijn toegepast. U kunt [ Adobe Acrobat gebruiken om toegankelijkheidstags ](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) te controleren en uw document te verzekeren voldoet aan toegankelijkheidsnormen.
 
 ### Nieuwe functies
 
-RTF-ondersteuning in Document of Record is een recente verbetering. Eerder werd RTF-inhoud weergegeven als onbewerkte tekst in gegenereerde documenten. Dankzij deze nieuwe functie kan geformatteerde inhoud op de juiste wijze worden weergegeven in PDF-uitvoerbestanden.
+RTF-ondersteuning in Verzending PDF is een recente verbetering. Eerder werd RTF-inhoud weergegeven als onbewerkte tekst in gegenereerde documenten. Dankzij deze nieuwe functie kan geformatteerde inhoud op de juiste wijze worden weergegeven in PDF-uitvoerbestanden.
 
 ## Referentie voor HTML-ondersteuning
 
@@ -46,7 +46,7 @@ RTF-ondersteuning in Document of Record is een recente verbetering. Eerder werd 
 
 Deze codes worden volledig ondersteund en het maken van toegankelijkheidsknooppunten is correct:
 
-| HTML-tag | Beschrijving | Document met ondersteuning van records | Toegankelijkheid | Voorbeeld |
+| HTML-tag | Beschrijving | PDF-ondersteuning voor verzending | Toegankelijkheid | Voorbeeld |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | Alinea | Ja | Volledig ondersteund - knooppunt corrigeren `<P>` | `<p>This is a paragraph.</p>` |
 | `<br/>` | Regeleinde | Ja | Volledig ondersteund - binnen knooppunt `<P>` | `<p>Line 1<br/>Line 2</p>` |
@@ -135,7 +135,7 @@ Deze tags worden niet ondersteund en worden niet correct weergegeven:
 ## Gerelateerde inhoud
 
 
-- [Document met record genereren voor adaptieve Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [Document met record genereren voor kerncomponenten](/help/forms/generate-document-of-record-core-components.md)
-- [Document van de malplaatjeaanpassing van het Verslag](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [PDF (voorheen Document of Record) verzenden voor Adaptive Forms genereren](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [PDF voor kerncomponenten verzenden genereren](/help/forms/generate-document-of-record-core-components.md)
+- [Aanpassing PDF-sjabloon verzenden](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 
