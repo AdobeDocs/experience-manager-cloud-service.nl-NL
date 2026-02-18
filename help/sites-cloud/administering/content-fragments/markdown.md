@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 2%
@@ -14,9 +14,9 @@ ht-degree: 2%
 
 # Markering {#markdown}
 
-Wanneer u [&#x200B; de Fragmenten van de Inhoud creeert &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) kunt u [&#x200B; Multiline tekstgebieden &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) hebben die met het **StandaardType** van **worden bepaald Markdown**. De redacteur van het Fragment van de Inhoud gebruikt *syntaxis van de prijsdaling* om u toe te staan om inhoud voor zowel pagina auteursrecht als hoofdloze levering gemakkelijk te schrijven:
+Wanneer u [ de Fragmenten van de Inhoud creeert ](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) kunt u [ Multiline tekstgebieden ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) hebben die met het **StandaardType** van **worden bepaald Markdown**. De redacteur van het Fragment van de Inhoud gebruikt *syntaxis van de prijsdaling* om u toe te staan om inhoud voor zowel pagina auteursrecht als hoofdloze levering gemakkelijk te schrijven:
 
-![&#x200B; de Meerdere gebieden van de Prijsverhoging van de lijntekst in de redacteur &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
+![ de Meerdere gebieden van de Prijsverhoging van de lijntekst in de redacteur ](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 U kunt het volgende definiëren:
 
@@ -32,7 +32,7 @@ U kunt het volgende definiëren:
 
 ## Kop {#heading-notation}
 
-Een koptekst maken door een hashtag (#) vóór de kop te plaatsen. Een hashtag (#) geeft een H1-, twee hash-tags (##) aan voor een H2-tag, enzovoort. U kunt maximaal 6 hashtags gebruiken. Bijvoorbeeld:
+Als u een koptekst wilt maken, plaatst u een hash-symbool (#) vóór de kop. Één knoeiboelsymbool (#) wijst op H1, twee knoeiboelsymbolen (##) voor H2 etc. U kunt maximaal zes hashsymbolen gebruiken. Bijvoorbeeld:
 
     `## This is an H2`
 
@@ -110,17 +110,13 @@ U kunt tekst aanhalen door het symbool > vóór de tekst toe te voegen. Bijvoorb
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -130,7 +126,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-Als u een niet-geordende lijst wilt maken, gebruikt u het symbool &ast; vóór de items in de lijst. Bijvoorbeeld:
+Als u een ongeordende lijst wilt maken, gebruikt u het symbool &amp;ast; (sterretje) vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 

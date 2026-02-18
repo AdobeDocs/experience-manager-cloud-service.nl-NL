@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 2%
@@ -14,15 +14,15 @@ ht-degree: 2%
 
 # Markering {#markdown}
 
-Wanneer u [&#x200B; creatie &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de redacteur van het inhoudsfragment *prijsdown* syntaxis om u toe te staan om inhoud voor of hoofdloze levering of pagina het schrijven van creatie gemakkelijk te schrijven:
+Wanneer u [ creatie ](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de redacteur van het inhoudsfragment *prijsdown* syntaxis om u toe te staan om inhoud voor of hoofdloze levering of pagina het schrijven van creatie gemakkelijk te schrijven:
 
 >[!NOTE]
 >
 >De Fragmenten van de inhoud zijn een eigenschap van Plaatsen, maar worden opgeslagen als **Assets**.
 >
->Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [&#x200B; de Fragmenten van de Inhoud - Authoring &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3&rbrace; console van de Fragmenten van de Inhoud &lbrace;).**
+>Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3} console van de Fragmenten van de Inhoud {).**
 
-![&#x200B; de redacteur van de Prijsverlaging &#x200B;](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![ de redacteur van de Prijsverlaging ](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 U kunt het volgende definiëren:
 
@@ -38,7 +38,7 @@ U kunt het volgende definiëren:
 
 ## Kop {#heading-notation}
 
-Een koptekst maken door een hashtag (#) vóór de kop te plaatsen. Eén hashtag (#) wordt gebruikt voor een H1-, twee hash-tags (##) voor een H2-tag enzovoort. U kunt maximaal 6 hashtags gebruiken. Bijvoorbeeld:
+Als u een koptekst wilt maken, plaatst u een hash-symbool (#) vóór de kop. Één knoeiboelsymbool (#) wordt gebruikt voor H1, twee knoeiboelsymbolen (##) voor H2 etc. U kunt maximaal zes hashsymbolen gebruiken. Bijvoorbeeld:
 
     `## This is an H2`
 
@@ -116,17 +116,13 @@ U kunt tekst aanhalen door het symbool > vóór de tekst toe te voegen. Bijvoorb
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -136,7 +132,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-Als u een niet-geordende lijst wilt maken, gebruikt u het symbool &ast; vóór de items in de lijst. Bijvoorbeeld:
+Als u een ongeordende lijst wilt maken, gebruikt u het symbool &amp;ast; (sterretje) vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 
