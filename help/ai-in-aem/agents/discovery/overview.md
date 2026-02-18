@@ -3,13 +3,13 @@ title: Overzicht van zoekagent
 description: Leer hoe u de Discovery Agent kunt gebruiken om relevante AEM-inhoud op aanvraag te leveren via natuurlijke, conversationele herinneringen voor een gestroomlijnde, klikvrije ontdekkingservaring.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d0c683d20f8932683d3d0aa11a67be92d35b725c
+exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
+source-git-commit: 5488fdb1ffc9c65ef2b569627f9a2ef414181290
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 0%
 
 ---
-
 
 # Detectieagent {#discovery-agent}
 
@@ -29,7 +29,9 @@ Enkele belangrijke voordelen van Discovery Agent zijn:
 >
 >Door AI gegenereerde reacties kunnen onjuist of misleidend zijn. Controleer de voorgestelde oplossingen en reacties met twee controles.
 >
->Zie ook [&#x200B; Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Zie ook [ Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479983)
 
 ## Vaardigheden {#skills-discovery-agent}
 
@@ -67,7 +69,7 @@ Agentschappen en partners kunnen eenvoudig door een merk goedgekeurde middelen v
 
 Via de AI-assistent hebt u toegang tot de agents in AEM. Meld u aan bij experience.adobe.com en u kunt interactie aangaan met AI Assistant door de vraag in de natuurlijke taal op te geven met behulp van het zoekvak:
 
-![&#x200B; de Agent van de Ontdekking van de Toegang &#x200B;](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
+![ de Agent van de Ontdekking van de Toegang ](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
 Voor informatie over het MCP eindpunt om tot de Agent van de Ontdekking toegang te hebben, contacteer de Steun van Adobe.
 
@@ -142,23 +144,23 @@ Opmerking: formulierdetectie ondersteunt momenteel alleen Edge Delivery Services
 
 De agent van de Ontdekking keert de hoogste resultaten voor elke vraag terug, die door relevantie wordt gesorteerd om ervoor te zorgen dat de nauwkeurige gelijken eerst verschijnen. De agent combineert meta-gegeven-gedreven vragen met semantische onderzoek om een geconcentreerde reeks waarschijnlijke gelijken samen te stellen, dan gebruikt een LLM om hen te rangschikken die op gebruikersintent worden gebaseerd. Deze overvloeimethode levert nauwkeurige, contextbewuste resultaten zonder dat deze volledig afhankelijk zijn van een directe trefwoordovereenkomst.
 
-Elk resultaat omvat activa naam samen met zeer belangrijke activa meta-gegevens zoals de activaweg, de schepper, aanmaakdatum, titel, beschrijving, formaat, laatste bepaling, laatste gewijzigde datum, dossiergrootte, dimensies, [&#x200B; Dynamische Media URL &#x200B;](/help/assets/dynamic-media/dynamic-media.md), en bijbehorende markeringen. Als een activa in goedgekeurde staat is, omvatten de resultaten ook [&#x200B; Dynamische Media met OpenAPI URL &#x200B;](/help/assets/dynamic-media-open-apis-overview.md).
+Elk resultaat omvat activa naam samen met zeer belangrijke activa meta-gegevens zoals de activaweg, de schepper, aanmaakdatum, titel, beschrijving, formaat, laatste bepaling, laatste gewijzigde datum, dossiergrootte, dimensies, [ Dynamische Media URL ](/help/assets/dynamic-media/dynamic-media.md), en bijbehorende markeringen. Als een activa in goedgekeurde staat is, omvatten de resultaten ook [ Dynamische Media met OpenAPI URL ](/help/assets/dynamic-media-open-apis-overview.md).
 
 U kunt op het middelenpad klikken om naadloos naar de middelenlocatie in AEM te navigeren.
 
-![&#x200B; activa van het Onderzoek gebruikend de Agent van de Ontdekking &#x200B;](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
+![ activa van het Onderzoek gebruikend de Agent van de Ontdekking ](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
 
 U kunt deze elementdetails gebruiken om snel te evalueren of een element aan de vereisten voldoet zonder naar elk element te navigeren om deze details weer te geven.
 
 >[!NOTE]
 >
->Het [&#x200B; Dynamische media URL &#x200B;](/help/assets/dynamic-media/dynamic-media.md) gebiedsvertoningen in de onderzoeksresultaten slechts als de activa wordt gepubliceerd en u een geldige Dynamische vergunning van Media hebt. Op dezelfde manier [&#x200B; Dynamische Media met OpenAPI URL &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) gebiedsvertoningen slechts als u een geldige Dynamische vergunning van Media hebt en Dynamische Media met OpenAPI wordt toegelaten voor uw instantie van AEM as a Cloud Service.
+>Het [ Dynamische media URL ](/help/assets/dynamic-media/dynamic-media.md) gebiedsvertoningen in de onderzoeksresultaten slechts als de activa wordt gepubliceerd en u een geldige Dynamische vergunning van Media hebt. Op dezelfde manier [ Dynamische Media met OpenAPI URL ](/help/assets/dynamic-media-open-apis-overview.md) gebiedsvertoningen slechts als u een geldige Dynamische vergunning van Media hebt en Dynamische Media met OpenAPI wordt toegelaten voor uw instantie van AEM as a Cloud Service.
 
 ### Inhoudsfragmenten {#discovery-agent-search-results-content-fragments}
 
 De zoekagent biedt zoekmogelijkheden met volledige tekst voor inhoudsfragmenten, waarbij de hoogste resultaten worden geretourneerd die het best overeenkomen met de opgegeven prompt. Elk resultaat bevat de naam van het inhoudsfragment en belangrijke metagegevensvelden, zoals het pad naar het inhoudsfragment, de maker, de aanmaakdatum, variaties, de laatste modifier en de laatst gewijzigde datumvelden.
 
-![&#x200B; Fragmenten van de Inhoud van het Onderzoek gebruikend de Agent van de Ontdekking &#x200B;](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
+![ Fragmenten van de Inhoud van het Onderzoek gebruikend de Agent van de Ontdekking ](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
 U kunt op het pad Inhoudsfragment klikken om naadloos naar de locatie Inhoudsfragment in AEM te navigeren.
 
