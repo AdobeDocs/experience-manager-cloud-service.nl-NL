@@ -4,13 +4,13 @@ description: De Component van het Gebied van het beeld in Interactieve Communica
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
-
 
 # Component Afbeeldingsveld in interactieve communicatie-editor
 
@@ -18,17 +18,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 Met de component Afbeeldingsveld in de interactieve communicatieeditor kunnen auteurs afbeeldingen invoegen in een communicatielay-out. Het is ideaal voor gebruik in gevallen zoals foto-identificatie, documentverificatie of visuele validatie, waarbij het van essentieel belang is een afbeelding aan de eindgebruiker weer te geven.
 
 Ondersteunend gemeenschappelijke formaten zoals **JPEG** en **PNG**, biedt deze component flexibele configuratieopties aan om te bepalen hoe het beeld wordt getoond, opgeslagen, en gestileerd. De auteurs kunnen ook **een naam of een etiket** aan het beeldgebied toewijzen, die lay-outduidelijkheid en organisatie verbeteren.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/imagefield.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/imagefield.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -111,7 +107,3 @@ Auteurs kunnen het veld in subformulieren of lay-outcontainers plaatsen voor uit
 - Het veld binden aan een betekenisvol schemapad bij integratie met back-end
 
 De component van het Gebied van het Beeld in interactieve communicatie redacteur is een veelzijdige component die vorm interactiviteit verbetert door visuele inhoud toe te laten uploadt. Als deze optie is ontworpen met stijlen, validatie en gegevensbinding, ondersteunt deze een naadloze gebruikerservaring en efficiënte gegevensvastlegging voor op afbeeldingen gebaseerde verzendingen.
-
-
-
-

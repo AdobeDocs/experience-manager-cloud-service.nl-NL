@@ -4,13 +4,13 @@ description: De component van het Gebied van de tekst in Interactieve Communicat
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
-
 
 # Component Tekstveld in interactieve communicatie-editor
 
@@ -18,15 +18,11 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 Met de component Tekstveld in de IC-editor (Interactive Communication) kunnen auteurs informatie weergeven zoals namen, adressen, opmerkingen of numerieke id&#39;s. De waarde in het tekstveld is vooraf gedefinieerd (statisch) of dynamisch gevuld met gegevensbinding. Het steunt single-line ingangen, bevestigingsregels, en flexibele het formatteren, die tot het één van de meest gebruikte en veelzijdige elementen in gepersonaliseerde mededelingen maken.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/textfield.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/textfield.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -133,5 +129,3 @@ Auteurs kunnen het veld in subformulieren of indelingsrasters plaatsen voor uitl
 - Sluit waar mogelijk rechtstreeks aan op het gegevensmodel voor eenvoudiger onderhoud.
 
 De component van het Gebied van de Tekst in de redacteur IC is een veelzijdige bouwsteen die gegevens stroomlijnt vangen. Als deze optie goed is geconfigureerd, met goed gekozen typografie, duidelijke labels, correcte validatie en solide gegevensbinding, biedt deze een naadloze, gebruiksvriendelijke ervaring en betrouwbare gegevens voor downstreamverwerking.
-
-

@@ -4,13 +4,13 @@ description: Sjabloonvergrendeling in de interactieve communicatie-editor biedt 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
-
 
 # Sjabloonvergrendeling in interactieve communicatie-editor
 
@@ -18,17 +18,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 Met de functie Sjabloonvergrendeling in de Editor voor interactieve communicatie (IC) kunnen sjabloonauteurs wijzigingen beperken tot specifieke elementen van een communicatiesjabloon. Dit verzekert ontwerpconsistentie, beschermt kritieke inhoud, en handhaaft bestuur over teams die malplaatjes opnieuw gebruiken om gepersonaliseerde mededelingen tot stand te brengen.
 
 Wanneer toegepast, verschijnen de gesloten componenten visueel verschillend en kunnen niet door stroomafwaartse auteurs of contribuanten, afhankelijk van het slottype worden gewijzigd. Deze eigenschap helpt merknormen, gegevensintegriteit, en lay-outuniformiteit over alle afgeleide mededelingen handhaven.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/template-lock.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. Vergrendeltypen
 
@@ -63,7 +59,7 @@ Wanneer toegepast, kunnen auteurs niet:
 Voer de volgende stappen uit om inhoud- of lay-outsluizen toe te passen in de sjabloon Interactieve communicatie (IC):
 
 1. Uw sjabloon openen
-Open of creeer een Malplaatje, volg de gids [&#x200B; creeer een Interactief Communicatie Malplaatje &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Open of creeer een Malplaatje, volg de gids [ creeer een Interactief Communicatie Malplaatje ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. De component selecteren
 Klik op de component (tekstvak, afbeelding of subformulier) die u wilt beperken.

@@ -4,13 +4,13 @@ description: De Component van het beeld in Interactieve Communicatie Redacteur i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
+exl-id: 247dcd95-9429-4fe9-88fc-c02b93b2f7e0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
-
 
 # Afbeeldingscomponent in de interactieve communicatie-editor
 
@@ -18,15 +18,11 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 Met de component Afbeelding in de Interactieve communicatie-editor kunnen auteurs communicatielay-outs verbeteren door statische afbeeldingen in te voegen. Deze component is essentieel voor het maken van visueel aantrekkelijke lay-outs en het opnemen van brandingelementen zoals logo&#39;s of visuele pictogrammen. Auteurs kunnen deze zowel in de stramienpagina&#39;s als in de ontwerpweergave plaatsen om ervoor te zorgen dat de weergave in verschillende uitvoerindelingen, zoals PDF, consistent is.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/image.1.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/image.1.png)
 
 ## 2.Properties
 

@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 7f366823e1baeda8eacd8c92fe23300d10ec828a
+exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
-
 
 # Versioning en opmerkingen in de interactieve communicatie-editor
 
 >[!NOTE]
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
-
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
 
 De interactieve Mededelingen (IC) staan organisaties toe om dynamische, gegeven-gedreven documenten voor gepersonaliseerde klantenmededeling tot stand te brengen. Om betere samenwerking, bestuur, en gecontroleerde het publiceren werkschema&#39;s te steunen, verstrekt de Interactieve Communicatie Redacteur versioning, het herzien, en het becommentariëren mogelijkheden.
 

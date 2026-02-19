@@ -4,13 +4,13 @@ description: Met de component Check Box in de Interactive Communication Editor i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
-
 
 # Component selectievakje in interactieve communicatie-editor
 
@@ -18,17 +18,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 Met de component Check Box in de Editor Interactive Communication (IC) kunnen gebruikers een of meer binaire selecties maken (ja/nee, true/false). Deze methode wordt vaak gebruikt voor voorwaarden, voorkeuren, toestemmingsvelden en opt-ins en biedt een snelle manier om Booleaanse invoer in een communicatieformulier vast te leggen.
 
 Het selectievakje ondersteunt flexibele stijlen, opties voor gegevensbinding en zichtbaarheidsregels, waardoor het een licht maar krachtig hulpmiddel wordt voor het ontwerpen van interactieve, gebruikersvriendelijke formulieren.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/checkbox.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/checkbox.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -123,5 +119,3 @@ Selectievakjes kunnen in layoutrasters of deelvensters worden geplaatst en worde
 - Gebruik zichtbaarheidsregels wanneer selectievakjes afhankelijk zijn van eerdere invoer of voorwaarden.
 
 De component van de Doos van de Controle in de Interactieve Communicatie redacteur is een eenvoudige nog essentiële component voor binaire input. Met ondersteuning voor opmaak, voorwaardelijke aanwezigheid en flexibele gegevensbinding speelt deze functie een belangrijke rol bij het verbeteren van interactiviteit en gebruikerscontrole in slimme digitale formulieren. Als selectievakjes zijn geïmplementeerd met doordachte labels, consistente opmaak en een zinvolle gegevensintegratie, dragen ze aanzienlijk bij aan een vloeiende en intuïtieve formulierervaring.
-
-

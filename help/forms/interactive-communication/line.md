@@ -4,13 +4,13 @@ description: De Component van de lijn in Interactieve Communicatie Redacteur in 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
-
 
 # Line Component in Interactive Communication Editor
 
@@ -18,15 +18,11 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 De Component van de Lijn in de Interactieve Communicatie (IC) redacteur staat auteurs toe om horizontale of verticale lijnen binnen een communicatie lay-out op te nemen. Deze regels helpen u bij het visueel segmenteren van inhoud, het verbeteren van de leesbaarheid of het benadrukken van de formulierstructuur. Met aanpasbare stijlen, zoals ononderbroken lijnen of onderstrepingen en flexibele positionering, kan de lijncomponent zowel voor functionele als voor esthetische doeleinden in formulierontwerp worden gebruikt.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/line.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/line.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -113,5 +109,3 @@ De component Line wordt vaak gebruikt om:
 - Verberg overbodige regels om afleiding te voorkomen en de ruimte tussen de layout te behouden.
 
 De component van de Lijn in de Interactieve Communicatie redacteur is een eenvoudig maar krachtig ontwerpelement. Wanneer strategisch gebruikt, verbetert het de visuele structuur van communicatie documenten, die gebruikers helpen om inhoud beter te navigeren en een schonere, meer gepolijste lay-out te verzekeren.
-
-

@@ -4,13 +4,13 @@ description: Met de Rectangle Component in Interactive Communication Editor in A
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
-
 
 # Rechthoekcomponent in interactieve communicatie-editor
 
@@ -18,16 +18,12 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 Met de component Rectangle in de IC-editor (Interactive Communication) kunnen auteurs gevormde grafische elementen toevoegen die fungeren als lay-outscheidingslijnen, visuele accenten of inhoudscontainers. Met rechthoeken wordt de visuele hiërarchie verbeterd en wordt de aandacht van gebruikers gevestigd op gestructureerde communicatielay-outs.
 Deze component is niet gekoppeld aan gegevens, maar draagt bij tot een betere ontwerphelderheid, het groeperen van verwante velden en het verbeteren van de algehele presentatie.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/rectangle.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/rectangle.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -112,5 +108,3 @@ Rechthoeken kunnen worden gecombineerd met andere indelingselementen, zoals subf
 - Verberg rechthoeken als deze alleen nodig zijn voor ontwerpdoeleinden tijdens het bewerken maar niet voor de uiteindelijke uitvoer.
 
 De component Rectangle is een niet-interactief maar toch krachtig gereedschap in de IC-editor. Als de stijl en positie effectief zijn, verbetert deze de precisie van de layout, de visuele stroom en de gebruikerservaring zonder dat de gegevensbinding of de interactiviteit complexer wordt.
-
-

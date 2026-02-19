@@ -4,13 +4,13 @@ description: Creeer Interactieve Communicatie Fragments in AEM Forms om modulair
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
+exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
-
 
 # Gegevensbinding in interactieve communicatie-editor
 
@@ -18,17 +18,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 Gegevensbinding in de Interactieve Communicatie Redacteur verbindt op-canvasgebieden met een beheerde gegevenslaag zodat de mededelingen met echte, contextafhankelijke informatie teruggeven. Door componenten aan een Model van de Gegevens van de Vorm (FDM) te verbinden, kunnen de auteurs nauwkeurigheid verzekeren, handwerk verminderen, en dynamische, gepersonaliseerde ervaringen leveren.
 
 Naast het eenvoudig verbinden van waarden, steunt de Bindingen van Gegevens in IC visuele afbeelding, vooraf ingevulde, en synchronisatie, toelatend auteurs om sneller te ontwerpen terwijl het blijven gericht aan achterste deelsystemen en gegevensmodellen.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/data-binding1.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/data-binding1.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -83,4 +79,3 @@ Auteurs selecteren doorgaans de FDM vroeg in het project, wijzen visueel velden 
 - **Veilige gevoelige gegevens:** pas het maskeren, encryptie, en minst-voorrecht toegang voor PII of betalingsdetails toe.
 
 Door de Bindende gegevens van Gegevens zorgvuldig te vormen, creëren de auteurs een betrouwbare brug tussen ontwerp en gegeven-versnellend communicatie creatie, die nauwkeurigheid verzekeren, en hoogst gepersonaliseerde ervaringen bij schaal leveren.
-

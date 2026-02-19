@@ -4,23 +4,19 @@ description: PDF Preview in Interactive Communication Editor met verschillende g
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
-
 
 # PDF Preview in Interactive Communication Editor
 
 >[!NOTE]
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
-
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
 
 Met de voorvertoningsfunctie van PDF kunnen gebruikers op drie verschillende manieren interactieve communicatie voorvertonen: zonder gegevens, met lokale JSON-gegevens of met voorbeeldgegevens van het geconfigureerde gegevensmodel.
 
@@ -44,19 +40,19 @@ Voorproef Interactieve Mededelingen die geen gegevens, lokale gegevens, of steek
 
 1.2. Gebruik de optie van de Voorproef van PDF en selecteer **Geen Gegevens** optie om een mededeling zonder gegevens te bekijken.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/nodata.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/nodata.png)
 
 +++
 
 +++&#x200B;2. Voorvertoning met lokale JSON-gegevens
 
-2.1. Een gestructureerd JSON-bestand voorbereiden. Ter verwijzing, kunt u de steekproefgegevens kopiëren van het schema JSON [&#x200B; (FDM) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) dat voor de mededeling wordt gebruikt.
+2.1. Een gestructureerd JSON-bestand voorbereiden. Ter verwijzing, kunt u de steekproefgegevens kopiëren van het schema JSON [ (FDM) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) dat voor de mededeling wordt gebruikt.
 
 2.2. In de Redacteur van IC, ga **Voorproef van PDF** > Gebruikend Lokale Gegevens.
 
 2.3. Selecteer en upload uw JSON-bestand om een PDF-voorvertoning weer te geven met de verschafte gegevens.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/localdata.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/localdata.png)
 
 +++
 
@@ -66,7 +62,6 @@ Voorproef Interactieve Mededelingen die geen gegevens, lokale gegevens, of steek
 
 3.2. In de voorvertoning worden automatisch gegevens uit modelvelden ingevuld. Zorg ervoor dat de voorbeeldgegevens bij het eerste gebruik in FDM worden opgeslagen of dat de voorvertoning als geen gegevens wordt weergegeven.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/datamodel.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
-

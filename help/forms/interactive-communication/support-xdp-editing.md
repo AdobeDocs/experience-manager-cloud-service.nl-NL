@@ -4,13 +4,13 @@ description: Dankzij de ondersteuning voor XDP-bewerking in de Interactive Commu
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # Ondersteuning voor XDP-bewerking in de Interactive Communication Editor
 
@@ -18,17 +18,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## Inleiding
 
 De Interactieve Communicatie (IC) Redacteur biedt nu naadloze **steun voor het uitgeven van XDP (het Pakket van Gegevens van XML) dossiers** binnen het auteursmilieu aan. Dankzij deze uitbreiding kunnen auteurs XDP-sjablonen moeiteloos beheren, wijzigen en onderhouden, zonder dat ze hiervoor externe tools nodig hebben. Met deze mogelijkheid kunnen gebruikers XDP-bestanden rechtstreeks uploaden, weergeven en bewerken in de IC Editor, waardoor een uniforme en efficiënte workflow voor ontwerp en levering mogelijk wordt.
 
 ## Hoe te om Steun XDP het Uitgeven in Interactieve Communicatie Redacteur te gebruiken
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/support-xdp.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/support-xdp.png)
 
 1. Navigeer aan **Forms > Forms &amp; Documenten**.
 
@@ -76,4 +72,3 @@ De auteurs kunnen **slepen en** deze fragmenten direct op het canvas laten valle
 - Gebruik versiebeheer voor het beheer van updates voor XDP- en fragmentafhankelijkheden.
 
 - Valideer gegevensbindingen na bewerking om de juiste rendering te bevestigen.
-

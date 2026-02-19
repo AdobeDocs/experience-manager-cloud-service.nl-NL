@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fe99fc4ddc1e2b3bdd1b2a5b583f2b4cb681dee9
+exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
-
 
 # Kopiëren en plakken in de interactieve communicatie-editor
 
 >[!NOTE]
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
-
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
 
 Met de functie Kopiëren en plakken in de IC-editor (Interactive Communication) kunnen auteurs een bestaande interactieve communicatie dupliceren en opnieuw gebruiken in een andere map of locatie. Dit vermogen helpt teams efficiënt werken door veelvoudige variaties van IC toe te laten zonder de originele versie te wijzigen.
 
@@ -45,7 +41,7 @@ Wanneer u een Interactieve Communicatie kopieert, worden de volgende elementen g
 
 ## Interactieve communicatie kopiëren
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/copy-in-ic.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/copy-in-ic.png)
 
 Ga als volgt te werk om een interactieve communicatie te kopiëren:
 
@@ -65,7 +61,7 @@ Ga als volgt te werk om een interactieve communicatie te kopiëren:
 
 ## De gekopieerde interactieve communicatie bewerken en opnieuw gebruiken
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/paste-in-ic.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/paste-in-ic.png)
 
 Na het plakken van de Interactieve Communicatie:
 
@@ -88,4 +84,3 @@ Na het plakken van de Interactieve Communicatie:
 - Controleer gegevensbindingen en uitvoerkanalen na het kopiëren om de juistheid te waarborgen.
 
 De eigenschap van het Exemplaar en van het Deeg in Interactieve Communicatie vereenvoudigt hergebruik en aanpassing door auteurs toe te staan om bestaande ICs te dupliceren en hen onafhankelijk te wijzigen. Het laat snellere ontwikkeling, veiliger experimenteren, en verenigbare mededeling toe levering-zonder veranderingen in de originele Interactieve Mededeling riskeren.
-

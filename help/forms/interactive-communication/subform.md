@@ -4,13 +4,13 @@ description: Met de subformuliercomponent in de Interactive Communication Editor
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
-
 
 # Subformuliercomponent in interactieve communicatie-editor
 
@@ -18,17 +18,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 De **component Subform** in de Interactieve Communicatie (IC) redacteur doet dienst als dynamische lay-outcontainer die u toestaat om veelvoudige vormelementen op een flexibele en gestructureerde manier te organiseren. Het wordt doorgaans gebruikt om verwante velden te groeperen, herhalende secties te maken of geneste gegevensstructuren te definiëren voor een betere gebruikerservaring en gegevensbinding.
 
 Subformulieren kunnen zo worden geconfigureerd dat ze in verschillende indelingen lopen, zoals van boven naar beneden of van links naar rechts, waardoor ze ideaal zijn voor complexe formulierontwerpen en herbruikbare secties.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/subform.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/subform.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -110,5 +106,3 @@ Subformulieren kunnen ook worden gebruikt als containers voor het uitlijnen van 
 - Pas voorwaardelijke zichtbaarheidsregels toe om de gebruikerservaring in complexe formulieren te optimaliseren.
 
 De **component Subform** in de Interactieve Communicatie redacteur verstrekt een krachtige manier om complexe vormlay-outs te structureren en te controleren. Of subformulieren nu invoervelden ordenen, dynamische inhoud beheren of modulair ontwerp mogelijk maken, ze verbeteren zowel de bruikbaarheid als de houdbaarheid in alle documentsjablonen.
-
-

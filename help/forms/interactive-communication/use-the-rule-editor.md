@@ -4,13 +4,13 @@ description: Creeer Regels in Interactieve Communicatie Redacteur staat auteurs 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: b2b85d1e802c7f287b875d53a9347ca07ea2b806
+exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # De Redacteur van de regel in Interactieve Communicatie Redacteur
 
@@ -18,11 +18,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
-
-
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
 
 
 ## &#x200B;1. Inleiding
@@ -34,7 +29,7 @@ De Redacteur van de regel in de Interactieve Communicatie Redacteur staat auteur
 Van eenvoudige zichtbaarheidsinstellingen tot complexe voorwaardelijke logica, regels stellen auteurs in staat om ervaringen te leveren die in real time worden aangepast, waardoor bruikbaarheid, nauwkeurigheid en betrokkenheid worden verbeterd.
 
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/rule-creation.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/rule-creation.png)
 
 
 ## &#x200B;2. Eigenschappen
@@ -64,7 +59,7 @@ Van eenvoudige zichtbaarheidsinstellingen tot complexe voorwaardelijke logica, r
 - **Voorwaardelijke Acties:** bepaal trekkers die aan gebruikersinput of gegevenswaarden, zoals het toelaten/onbruikbaar maken van gebieden, het tonen van berichten, of het vertakken aan verschillende secties antwoorden.
 
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/rule-creation1.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/rule-creation1.png)
 
 
 ## &#x200B;3. Gebruik
@@ -110,6 +105,3 @@ De Redacteur van de regel wordt wijd gebruikt om ervoor te zorgen de vormen en d
 
 
 Door regels zorgvuldig te vormen, kunnen de auteurs mededelingen bouwen die intelligent aan gegevens en gebruiker actie-stroomlijnende processen antwoorden, die fouten verminderen, en een naadloze, gepersonaliseerde ervaring leveren.
-
-
-

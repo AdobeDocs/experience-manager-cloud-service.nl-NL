@@ -4,13 +4,13 @@ description: De verwerking van de Overloop van de inhoud in Interactieve Communi
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: f19abed5-34a1-4c26-9e92-e219da798dab
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
-
 
 # De Behandeling van de Overstroming van de inhoud in Interactieve Communicatie Redacteur
 
@@ -18,15 +18,11 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## Inleiding
 
 Met de functie voor de afhandeling van overloop bij inhoud in de Interactieve communicatie-editor kunt u beter bepalen hoe tekst zich gedraagt binnen de indelingen Overlopen en Geplaatst. Het zorgt voor vloeiende inhoudscontinuïteit voor stroombare lay-outs en biedt visuele waarschuwingen voor gepositioneerde lay-outs, waardoor auteurs beter controle en flexibiliteit hebben bij het ontwerpen van communicatie.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/content-overflow.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/content-overflow.png)
 
 ## Hoe te om de Behandeling van de Overloop van de Inhoud in Interactieve Communicatie Redacteur te gebruiken
 

@@ -4,13 +4,13 @@ description: Met de component RadioButton in de Interactive Communication Editor
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
-
 
 # Component Radio Button in Interactive Communication Editor
 
@@ -18,16 +18,12 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 De **component van de Keuzerondje** in de Interactieve Communicatie (IC) redacteur staat auteurs toe om een reeks wederzijds exclusieve keuzen aan gebruikers-betekenis slechts één optie voor te stellen kan tegelijkertijd worden geselecteerd. Dit maakt het ideaal voor gebruiksgevallen zoals ja/neen vragen, geslachtsselectie, beoordelingsniveaus of vooraf gedefinieerde categoriale reacties.
 Keuzerondjes zijn intuïtief, eenvoudig te configureren en kunnen worden gebonden aan back-end gegevensmodellen voor naadloze gegevensvastlegging en -integratie.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/radio.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/radio.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -118,5 +114,3 @@ Auteurs kunnen gerelateerde keuzerondjes groeperen en deze in lay-outcontainers 
 - Pas consistente spatiëring en uitlijning toe voor meer visuele duidelijkheid, met name in mobiele lay-outs.
 
 De component RadioButton in de Interactieve Communicatie redacteur is een fundamentele inputcomponent die schone, gestructureerde besluitvorming voor eind - gebruikers aanbiedt. Als deze optie is geconfigureerd met duidelijke labels, doordachte spatiëring en gegevensbinding, zorgt deze voor een betrouwbare gegevensverzameling en een vloeiender gebruikerservaring voor formulieren, enquêtes en instapworkflows.
-
-

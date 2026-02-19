@@ -4,23 +4,19 @@ description: Met interactieve communicatie kunnen organisaties gepersonaliseerde
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
+exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met de Editor voor interactieve communicatie (IC)
 
 >[!NOTE]
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
-
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
 
 De **Interactieve Communicatie (IC) Redacteur** in Adobe Experience Manager (AEM) Forms staat organisaties toe om gepersonaliseerde, gegeven-gedreven mededelingen zoals verklaringen, facturen, en brieven over digitale en drukkanalen te ontwerpen en te leveren. Deze gids verstrekt een overzicht van hoe te beginnen - van aan boord gaan tot het navigeren van de interface van de Redacteur IC.
 
@@ -33,7 +29,7 @@ Om Interactieve Communicatie te gebruiken, verzeker uw milieu van AEM Forms as a
 
 ### Browser verifiëren
 
-Om gesteunde browsers en cliëntplatforms te kennen, volg het verbonden artikel, [&#x200B; Gesteunde Platforms van de Cliënt &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+Om gesteunde browsers en cliëntplatforms te kennen, volg het verbonden artikel, [ Gesteunde Platforms van de Cliënt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
@@ -42,14 +38,14 @@ Om gesteunde browsers en cliëntplatforms te kennen, volg het verbonden artikel,
 
 ### Gebruikersrollen en -machtigingen configureren
 
-De toegang tot eigenschappen van de Redacteur van IC wordt geregeerd door [&#x200B; gebruikersrollen binnen AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions). Hieronder worden de sleutelfuncties beschreven die bij het maken en beheren van interactieve communicatie betrokken zijn:
+De toegang tot eigenschappen van de Redacteur van IC wordt geregeerd door [ gebruikersrollen binnen AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions). Hieronder worden de sleutelfuncties beschreven die bij het maken en beheren van interactieve communicatie betrokken zijn:
 
 | **Rol** | **Beschrijving** | **Zeer belangrijke Toestemmingen** |
 | --------------------- | ---------------------------------------------------------- | -------------------------------------------- |
 | **Auteur van de Vorm** | Creeert en geeft Interactieve Mededelingen uit. | IC&#39;s maken, bewerken, voorvertonen en publiceren. |
 | **Auteur van het Malplaatje** | Ontwerpen herbruikbare malplaatjes voor Interactieve Mededelingen. | Sjablonen maken en vergrendelen, lay-outs definiëren. |
 | **Beheerder** | Beheert gebruikerstoegang, machtigingen en configuraties. | Rollen toewijzen, sjablonen beheren, IC&#39;s publiceren. |
-| **FDM Auteur** | [&#x200B; creeert en beheert de Modellen van de Gegevens van de Vorm (FDM) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) voor gegevensintegratie. | Creeer, geef, en vorm gegevensbronnen en modellen uit. |
+| **FDM Auteur** | [ creeert en beheert de Modellen van de Gegevens van de Vorm (FDM) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) voor gegevensintegratie. | Creeer, geef, en vorm gegevensbronnen en modellen uit. |
 
 >[!NOTE]
 >
@@ -68,11 +64,11 @@ De redacteur verstrekt een verenigde milieu aan ontwerp, voorproef, en beheer zo
 
 De **Interactieve Communicatie interface van de Redacteur** wordt ontworpen om auteurs intuïtieve toegang tot alle ontwerphulpmiddelen en configuratieopties te verlenen.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/navigate-the-interface.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/navigate-the-interface.png)
 
 ### &#x200B;1. Werkbalk boven
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/tool-bar.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/tool-bar.png)
 
 **Plaats:** Bovenste sectie
 
@@ -84,7 +80,7 @@ Toont het **milieu van Adobe Experience Cloud** (b.v., het Opvoeren), samen met 
 
 ### &#x200B;2. Tabbalk (tabbladen ontwerp/stramien en Besturingselementen voor bestanden)
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/tab-bar.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/tab-bar.png)
 
 **Plaats:** onder de hoogste kopbal
 
@@ -100,7 +96,7 @@ Toont het **milieu van Adobe Experience Cloud** (b.v., het Opvoeren), samen met 
 
 ### &#x200B;3. Linkerpaneel (navigatie- en componentgereedschappen)
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/left-panel.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/left-panel.png)
 
 **Plaats:** linkerkant van de interface
 
@@ -122,7 +118,7 @@ Toont het **milieu van Adobe Experience Cloud** (b.v., het Opvoeren), samen met 
 
 ### &#x200B;4. Midden-Workspace (ontwerpcanvas)
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/canvas.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/canvas.png)
 
 **Plaats:** Centrum van de interface
 
@@ -142,7 +138,7 @@ Toont het **milieu van Adobe Experience Cloud** (b.v., het Opvoeren), samen met 
 
 ### &#x200B;5. Rechterdeelvenster (deelvenster Eigenschappen)
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/right-panel.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/right-panel.png)
 
 **Plaats:** Juiste kant van het scherm
 

@@ -4,13 +4,13 @@ description: Met de component Tekstvak in de interactieve communicatie-editor in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 6bed824c-b959-4882-a5aa-dbb7fbf2f8a0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
-
 
 # Component Tekstvak in interactieve communicatie-editor
 
@@ -18,17 +18,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
-De **component van het Doos van de Tekst van 0&rbrace; &lbrace;in de Interactieve Communicatie Redacteur staat auteurs toe om tekstinhoud binnen een mededeling in te voeren en te tonen.** Het is één van de meest fundamentele en wijdverbreide componenten, algemeen gebruikt om namen, commentaren, terugkoppelen, of douanegegevens te verzamelen wanneer het ontwerpen van interactieve mededelingen of communicatie fragmenten.
+De **component van het Doos van de Tekst van 0} {in de Interactieve Communicatie Redacteur staat auteurs toe om tekstinhoud binnen een mededeling in te voeren en te tonen.** Het is één van de meest fundamentele en wijdverbreide componenten, algemeen gebruikt om namen, commentaren, terugkoppelen, of douanegegevens te verzamelen wanneer het ontwerpen van interactieve mededelingen of communicatie fragmenten.
 
 Het Doos van de Tekst steunt **gegevensband**, toelatend auteurs om statische en dynamische inhoud naadloos te combineren, bijvoorbeeld: *** de &quot;naam van de Gebruiker: @name&quot;***, waar @name een verbindend gegevensgebied is dat dynamisch bevolkt wanneer het document als PDF wordt bewaard. Bovendien worden RTF-opmaak en flexibele positionering ondersteund voor nauwkeurige controle van de layout.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/textbox.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/textbox.png)
 
 ## &#x200B;2. Eigenschappen
 

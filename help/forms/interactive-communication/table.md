@@ -4,13 +4,13 @@ description: De Component van de lijst in Interactieve Communicatie Redacteur in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
-
 
 # Tabelcomponent in de interactieve communicatie-editor
 
@@ -18,17 +18,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 De Component van de Lijst in de Interactive Communication (IC) redacteur laat auteurs toe om klantgerichte lijsten in communicatie malplaatjes met gemak op te nemen. Deze component ondersteunt tabelgegevensrepresentatie voor gebruik in gevallen zoals samenvattingen, itemlijsten, gestructureerde invoer of vergelijkingsindelingen.
 
 Auteurs kunnen de tabelcomponent naar het canvas slepen, het aantal rijen en kolommen configureren en opties kiezen, zoals kop- en voettekstrijen, of de lay-outrichting instellen. De lijsten kunnen als standaardmalplaatjes voor consistentie over veelvoudige mededelingen worden bepaald.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/table.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/table.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -118,5 +114,3 @@ Auteurs kunnen het aantal rijen en kolommen configureren, voorwaardelijke zichtb
 - Standaardsjablonen gebruiken om tabelinhoud in alle documenten te standaardiseren.
 
 De Component van de Lijst in de redacteur IC is een flexibele, gegeven-vriendelijke component die wordt ontworpen om gestructureerde inhoud in uw mededelingen te steunen. Met aanpasbare layoutopties, opmaakfuncties en krachtige gegevensbinding kunnen auteurs informatie duidelijk en effectief presenteren.
-
-

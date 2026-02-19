@@ -4,13 +4,13 @@ description: De Component van de streepjescode in Interactieve Communicatie Reda
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
-
 
 # Streepjescode-component in interactieve communicatie-editor
 
@@ -18,17 +18,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 ## &#x200B;1. Inleiding
 
 De component van de Streepjescode in de Interactieve Communicatie redacteur laat auteurs toe om gecodeerde gegevens binnen communicatie malplaatjes visueel te vertegenwoordigen. Dit is met name handig voor toepassingen die tracking, identificatie, facturering of automatisering bevatten. Met ondersteuning voor verschillende streepjescodenormen, zoals Code 128, QR en meer, biedt deze component flexibele opties voor opmaak, positionering en gegevensbinding die aansluiten bij een groot aantal zakelijke behoeften.
 
 Of u nu klantfacturen, verzendlabels of lidmaatschapskaarten maakt, de component Barcode vereenvoudigt het proces door machineleesbare gegevens rechtstreeks in uw document in te sluiten.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/barcode.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/barcode.png)
 
 ## &#x200B;2. Eigenschappen
 

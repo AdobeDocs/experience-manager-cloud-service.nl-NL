@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -19,17 +19,13 @@ ht-degree: 0%
 >
 > De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
 
->[!IMPORTANT]
->
-> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
-
 Met interactieve communicatiesjablonen in AEM kunnen gebruikers opnieuw bruikbare layoutstructuren definiëren, zoals kop- en voetteksten, logo&#39;s en standaardstijlen. Deze malplaatjes dienen als basis om verenigbare, branded, en efficiënte mededelingen tot stand te brengen.
 
 ## Vereisten
 
 * [Zorg ervoor dat de auteur lid is van de groep met formuliergebruikers en de groep met sjabloonauteurs.](/help/forms/setup-forms-cloud-service.md#configure-users)
 
-* Zorg ervoor dat [&#x200B; versie van Archetype van AEM 55 &#x200B;](https://github.com/adobe/aem-project-archetype) of later geïnstalleerd is.
+* Zorg ervoor dat [ versie van Archetype van AEM 55 ](https://github.com/adobe/aem-project-archetype) of later geïnstalleerd is.
 
 ## Een interactieve communicatiesjabloon maken
 
@@ -39,23 +35,23 @@ Voer de volgende stappen uit om een interactieve communicatiesjabloon te maken:
 
 1. Ga aan **Hulpmiddelen**
 
-   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/aem.png)
+   ![ vind IC Docu ](/help/forms/interactive-communication/assets/aem.png)
 
 1. Ga naar **Hulpmiddelen > Algemeen > Malplaatjes**.
 
-   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/template.png)
+   ![ vind IC Docu ](/help/forms/interactive-communication/assets/template.png)
 
 1. Een map maken of kiezen
 
    Maak een nieuwe map of kies een bestaande map waarin u de interactieve communicatiesjabloon wilt maken.
 
-   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/choosefolder.png)
+   ![ vind IC Docu ](/help/forms/interactive-communication/assets/choosefolder.png)
 
 1. Creeer een Nieuw Malplaatje, klik **creeer** en selecteer Interactieve Communicatie Generische Malplaatje.
 
-   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/create1.png)
+   ![ vind IC Docu ](/help/forms/interactive-communication/assets/create1.png)
 
-   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/choose.png)
+   ![ vind IC Docu ](/help/forms/interactive-communication/assets/choose.png)
 
 1. Ga het **Malplaatje** in, zoals:
 
@@ -63,19 +59,19 @@ Voer de volgende stappen uit om een interactieve communicatiesjabloon te maken:
    * Naam
    * Beschrijving (optioneel)
 
-   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/create2.png)
+   ![ vind IC Docu ](/help/forms/interactive-communication/assets/create2.png)
 
 1. Klik **creeer** Knoop, Interactieve Communicatie met succes gecreeerd malplaatje.
 
-   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/enabled.png)
+   ![ vind IC Docu ](/help/forms/interactive-communication/assets/enabled.png)
 
 1. Laat het **Malplaatje** toe, staat deze actie de gebruiker toe om malplaatje te gebruiken voor het creëren van Interactieve Mededelingen.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/enable.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/enable.png)
 
 Door de bovenstaande stappen te volgen, kunt u een Interactieve Communicatie Malplaatje met succes tot stand brengen. Zodra toegelaten, kunnen deze malplaatjes worden opnieuw gebruikt om verenigbare, gepersonaliseerde communicatie documenten efficiënt te bouwen.
 
 ## Volgende stappen
 
-[&#x200B; creeer een interactieve mededeling &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md)
-[&#x200B; creeer een interactief communicatieFragment &#x200B;](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[ creeer een interactieve mededeling ](/help/forms/interactive-communication/create-interactive-communication.md)
+[ creeer een interactief communicatieFragment ](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
