@@ -18,20 +18,20 @@ Dit zijn de opmerkingen bij de release van 19 februari 2026 van de Universal Edi
 
 >[!TIP]
 >
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
 * De RTE is verbeterd.
-   * [ het Verbergen van toolbarpunten in in contextRTE ](/help/implementing/universal-editor/configure-rte.md#common-action-options) wordt nu gesteund.
-   * [ Wrapping tekst binnen lijsten met paragrafen ](/help/implementing/universal-editor/configure-rte.md#table-actions) wordt nu gesteund.
-   * [ Niet gestaafde markeringen van HTML ](/help/implementing/universal-editor/configure-rte.md#unsupported-html) kunnen nu door RTE worden bewaard.
+   * [&#x200B; het Verbergen van toolbarpunten in in contextRTE &#x200B;](/help/implementing/universal-editor/configure-rte.md#common-action-options) wordt nu gesteund.
+   * [&#x200B; Wrapping tekst binnen lijsten met paragrafen &#x200B;](/help/implementing/universal-editor/configure-rte.md#table-actions) wordt nu gesteund.
+   * [&#x200B; Niet gestaafde markeringen van HTML &#x200B;](/help/implementing/universal-editor/configure-rte.md#unsupported-html) kunnen nu door RTE worden bewaard.
    * De logica van RTE wordt nu gediend van een afzonderlijk dossier.
-   * [ Lijsten kunnen nu worden gecreeerd ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) evenals worden uitgegeven gebruikend RTE.
+   * [&#x200B; Lijsten kunnen nu worden gecreeerd &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) evenals worden uitgegeven gebruikend RTE.
 * Wanneer geen label is ingesteld, wordt de componenttitel uit de componentdefinitie nu gebruikt.
 * `setEditorMode` is nu beschikbaar via extensies.
 
