@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Met de functie Dynamische paginanummering in Interactieve communicatie (IC) kunnen auteurs automatisch paginanummers weergeven in hun PDF-uitvoer. Paginanummering kan worden ingeschakeld op het niveau van de basispagina, zodat de nummering op alle bijbehorende ontwerppagina&#39;s consistent blijft. Zo blijven duidelijke paginatracering en een professionele lay-out behouden voor alle communicatie met meerdere pagina&#39;s.
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/dynamic-page.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/dynamic-page.png)
 
 ## Dynamische paginanummering gebruiken in de interactieve communicatie-editor
 

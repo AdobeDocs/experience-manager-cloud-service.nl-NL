@@ -23,7 +23,7 @@ De interactieve mededeling laat u toe om, gepersonaliseerde en interactieve mede
 
 Stel dat u een bankafschrift, een verzekeringspolis of een nutsrekening naar duizenden klanten moet sturen. Elk bestand heeft dezelfde indeling, maar is gepersonaliseerd. Interactieve communicatie (IC) maakt dat mogelijk efficiënt.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/introduction.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/introduction.png)
 
 Het handmatig maken van deze documenten kan tijdrovend zijn en leidt vaak tot inconsistenties, vooral wanneer personalisatie en gegevensintegratie vereist zijn. Met de Interactieve Communicatie Redacteur, kunnen de gebruikers het proces stroomlijnen om Interactieve mededeling tot stand te brengen.
 
@@ -44,11 +44,11 @@ Te volgen stappen:
 1. Navigeer aan **Forms > Forms &amp; Documenten**.
 1. Klik **creëren > Interactieve Communicatie**.
 
-   ![ vind IC Docu ](/help/forms/interactive-communication/assets/comm.png)
+   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/comm.png)
 
 1. In het verwezenlijking scherm, verlaat het **Malplaatje** gebiedsspatie.
 
-   ![ vind IC Docu ](/help/forms/interactive-communication/assets/create-ic-document.png)
+   ![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/create-ic-document.png)
 
 1. Vul andere gegevens in, zoals Titel, Naam, Auteur, enz.
 1. Klik **creeer** om Interactieve Communicatie Redacteur UI in te gaan en begin het ontwerpen.
@@ -82,12 +82,12 @@ Ideaal voor instructies, facturen of berichten waarbij de structuur constant bli
 1. De voorproef die **Voorproef van PDF** gebruikt en voltooit de mededeling voor levering.
 1. Het opent de Redacteur van IC, waar u kunt beginnen ontwerpend uw mededeling.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/ic-ui.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/ic-ui.png)
 +++
 
 Begin de bouw van Interactieve Mededelingen om uw werkschema&#39;s te stroomlijnen en impacttieve, gebruiker-specifieke ervaringen te leveren.
 
 ## Volgende stappen
 
-[ creeer een interactief communicatieMalplaatje ](/help/forms/interactive-communication/create-interactive-communication-template.md)
-[ creeer een interactief communicatieFragment ](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[&#x200B; creeer een interactief communicatieMalplaatje &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[&#x200B; creeer een interactief communicatieFragment &#x200B;](/help/forms/interactive-communication/create-interactive-communication-fragment.md)

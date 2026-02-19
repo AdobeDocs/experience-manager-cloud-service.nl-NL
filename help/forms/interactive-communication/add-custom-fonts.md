@@ -32,5 +32,5 @@ Met de functie voor aangepaste lettertypen kunt u de vormgeving van uw interacti
 
 >[!NOTE]
 >
-> Voor gedetailleerde configuratiestappen, kunnen de gebruikers de gids [ douanedoopvonten van het Gebruik ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) volgen
+> Voor gedetailleerde configuratiestappen, kunnen de gebruikers de gids [&#x200B; douanedoopvonten van het Gebruik &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) volgen
 >Na de voltooiing van de stappen en het in werking stellen van de pijpleiding, zijn de douanedoopvonten beschikbaar voor gebruik direct in de Interactieve Communicatie Redacteur.

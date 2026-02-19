@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## &#x200B;1. Inleiding
 
-De **component van het Doos van de Tekst van 0} {in de Interactieve Communicatie Redacteur staat auteurs toe om tekstinhoud binnen een mededeling in te voeren en te tonen.** Het is één van de meest fundamentele en wijdverbreide componenten, algemeen gebruikt om namen, commentaren, terugkoppelen, of douanegegevens te verzamelen wanneer het ontwerpen van interactieve mededelingen of communicatie fragmenten.
+De **component van het Doos van de Tekst van 0&rbrace; &lbrace;in de Interactieve Communicatie Redacteur staat auteurs toe om tekstinhoud binnen een mededeling in te voeren en te tonen.** Het is één van de meest fundamentele en wijdverbreide componenten, algemeen gebruikt om namen, commentaren, terugkoppelen, of douanegegevens te verzamelen wanneer het ontwerpen van interactieve mededelingen of communicatie fragmenten.
 
 Het Doos van de Tekst steunt **gegevensband**, toelatend auteurs om statische en dynamische inhoud naadloos te combineren, bijvoorbeeld: *** de &quot;naam van de Gebruiker: @name&quot;***, waar @name een verbindend gegevensgebied is dat dynamisch bevolkt wanneer het document als PDF wordt bewaard. Bovendien worden RTF-opmaak en flexibele positionering ondersteund voor nauwkeurige controle van de layout.
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/textbox.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/textbox.png)
 
 ## &#x200B;2. Eigenschappen
 

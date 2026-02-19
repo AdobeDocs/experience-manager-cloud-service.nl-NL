@@ -24,7 +24,7 @@ De **component Subform** in de Interactieve Communicatie (IC) redacteur doet die
 
 Subformulieren kunnen zo worden geconfigureerd dat ze in verschillende indelingen lopen, zoals van boven naar beneden of van links naar rechts, waardoor ze ideaal zijn voor complexe formulierontwerpen en herbruikbare secties.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/subform.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/subform.png)
 
 ## &#x200B;2. Eigenschappen
 

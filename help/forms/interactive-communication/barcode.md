@@ -24,7 +24,7 @@ De component van de Streepjescode in de Interactieve Communicatie redacteur laat
 
 Of u nu klantfacturen, verzendlabels of lidmaatschapskaarten maakt, de component Barcode vereenvoudigt het proces door machineleesbare gegevens rechtstreeks in uw document in te sluiten.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/barcode.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/barcode.png)
 
 ## &#x200B;2. Eigenschappen
 

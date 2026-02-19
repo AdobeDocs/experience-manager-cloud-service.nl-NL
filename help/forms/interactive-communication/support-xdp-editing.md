@@ -24,7 +24,7 @@ De Interactieve Communicatie (IC) Redacteur biedt nu naadloze **steun voor het u
 
 ## Hoe te om Steun XDP het Uitgeven in Interactieve Communicatie Redacteur te gebruiken
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/support-xdp.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/support-xdp.png)
 
 1. Navigeer aan **Forms > Forms &amp; Documenten**.
 

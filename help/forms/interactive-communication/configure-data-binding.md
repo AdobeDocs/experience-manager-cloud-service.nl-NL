@@ -24,7 +24,7 @@ Gegevensbinding in de Interactieve Communicatie Redacteur verbindt op-canvasgebi
 
 Naast het eenvoudig verbinden van waarden, steunt de Bindingen van Gegevens in IC visuele afbeelding, vooraf ingevulde, en synchronisatie, toelatend auteurs om sneller te ontwerpen terwijl het blijven gericht aan achterste deelsystemen en gegevensmodellen.
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/data-binding1.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/data-binding1.png)
 
 ## &#x200B;2. Eigenschappen
 

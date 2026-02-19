@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Met de component Afbeelding in de Interactieve communicatie-editor kunnen auteurs communicatielay-outs verbeteren door statische afbeeldingen in te voegen. Deze component is essentieel voor het maken van visueel aantrekkelijke lay-outs en het opnemen van brandingelementen zoals logo&#39;s of visuele pictogrammen. Auteurs kunnen deze zowel in de stramienpagina&#39;s als in de ontwerpweergave plaatsen om ervoor te zorgen dat de weergave in verschillende uitvoerindelingen, zoals PDF, consistent is.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/image.1.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/image.1.png)
 
 ## 2.Properties
 

@@ -24,7 +24,7 @@ Met de component Afbeeldingsveld in de interactieve communicatieeditor kunnen au
 
 Ondersteunend gemeenschappelijke formaten zoals **JPEG** en **PNG**, biedt deze component flexibele configuratieopties aan om te bepalen hoe het beeld wordt getoond, opgeslagen, en gestileerd. De auteurs kunnen ook **een naam of een etiket** aan het beeldgebied toewijzen, die lay-outduidelijkheid en organisatie verbeteren.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/imagefield.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/imagefield.png)
 
 ## &#x200B;2. Eigenschappen
 

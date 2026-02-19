@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Met de component Tekstveld in de IC-editor (Interactive Communication) kunnen auteurs informatie weergeven zoals namen, adressen, opmerkingen of numerieke id&#39;s. De waarde in het tekstveld is vooraf gedefinieerd (statisch) of dynamisch gevuld met gegevensbinding. Het steunt single-line ingangen, bevestigingsregels, en flexibele het formatteren, die tot het één van de meest gebruikte en veelzijdige elementen in gepersonaliseerde mededelingen maken.
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/textfield.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/textfield.png)
 
 ## &#x200B;2. Eigenschappen
 

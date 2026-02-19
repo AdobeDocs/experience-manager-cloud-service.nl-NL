@@ -24,7 +24,7 @@ De Component van de Lijst in de Interactive Communication (IC) redacteur laat au
 
 Auteurs kunnen de tabelcomponent naar het canvas slepen, het aantal rijen en kolommen configureren en opties kiezen, zoals kop- en voettekstrijen, of de lay-outrichting instellen. De lijsten kunnen als standaardmalplaatjes voor consistentie over veelvoudige mededelingen worden bepaald.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/table.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/table.png)
 
 ## &#x200B;2. Eigenschappen
 

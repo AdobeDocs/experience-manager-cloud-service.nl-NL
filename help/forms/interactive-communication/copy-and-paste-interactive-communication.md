@@ -41,7 +41,7 @@ Wanneer u een Interactieve Communicatie kopieert, worden de volgende elementen g
 
 ## Interactieve communicatie kopiëren
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/copy-in-ic.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/copy-in-ic.png)
 
 Ga als volgt te werk om een interactieve communicatie te kopiëren:
 
@@ -61,7 +61,7 @@ Ga als volgt te werk om een interactieve communicatie te kopiëren:
 
 ## De gekopieerde interactieve communicatie bewerken en opnieuw gebruiken
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/paste-in-ic.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/paste-in-ic.png)
 
 Na het plakken van de Interactieve Communicatie:
 

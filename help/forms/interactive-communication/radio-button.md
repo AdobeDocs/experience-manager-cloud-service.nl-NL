@@ -23,7 +23,7 @@ ht-degree: 0%
 De **component van de Keuzerondje** in de Interactieve Communicatie (IC) redacteur staat auteurs toe om een reeks wederzijds exclusieve keuzen aan gebruikers-betekenis slechts één optie voor te stellen kan tegelijkertijd worden geselecteerd. Dit maakt het ideaal voor gebruiksgevallen zoals ja/neen vragen, geslachtsselectie, beoordelingsniveaus of vooraf gedefinieerde categoriale reacties.
 Keuzerondjes zijn intuïtief, eenvoudig te configureren en kunnen worden gebonden aan back-end gegevensmodellen voor naadloze gegevensvastlegging en -integratie.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/radio.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/radio.png)
 
 ## &#x200B;2. Eigenschappen
 

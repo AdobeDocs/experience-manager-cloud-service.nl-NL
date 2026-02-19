@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## &#x200B;1. Inleiding
 
-De **component van het Gebied van de Datum/van de Tijd** {in de Interactieve Communicatie (IC) redacteur laat auteurs toe om gebieden op te nemen waar de gebruikers datum en/of tijdwaarden kunnen selecteren of ingaan. Deze component wordt doorgaans gebruikt voor het vastleggen van gegevens zoals geboortedatum, afstellingsschema&#39;s, boekingssleuven of datum van afgifte/vervaldatum van documenten.
+De **component van het Gebied van de Datum/van de Tijd** &lbrace;in de Interactieve Communicatie (IC) redacteur laat auteurs toe om gebieden op te nemen waar de gebruikers datum en/of tijdwaarden kunnen selecteren of ingaan. Deze component wordt doorgaans gebruikt voor het vastleggen van gegevens zoals geboortedatum, afstellingsschema&#39;s, boekingssleuven of datum van afgifte/vervaldatum van documenten.
 
 Het veld ondersteunt diverse opmaakopties (bijvoorbeeld DD/MM/JJJJ, 24-uurs of 12-uursnotaties), validatiebeperkingen en aanpassing van weergave aan het communicatieontwerp. Het verbetert gebruikerservaring door handinputfouten te verminderen en consistentie in gegevensinzameling te bevorderen.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/datetime.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/datetime.png)
 
 ## &#x200B;2. Eigenschappen
 
