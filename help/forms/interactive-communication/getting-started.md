@@ -29,7 +29,7 @@ Om Interactieve Communicatie te gebruiken, verzeker uw milieu van AEM Forms as a
 
 ### Browser verifiëren
 
-Om gesteunde browsers en cliëntplatforms te kennen, volg het verbonden artikel, [&#x200B; Gesteunde Platforms van de Cliënt &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+Om gesteunde browsers en cliëntplatforms te kennen, volg het verbonden artikel, [&#x200B; Gesteunde Platforms van de Cliënt &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
@@ -38,14 +38,14 @@ Om gesteunde browsers en cliëntplatforms te kennen, volg het verbonden artikel,
 
 ### Gebruikersrollen en -machtigingen configureren
 
-De toegang tot eigenschappen van de Redacteur van IC wordt geregeerd door [&#x200B; gebruikersrollen binnen AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions). Hieronder worden de sleutelfuncties beschreven die bij het maken en beheren van interactieve communicatie betrokken zijn:
+De toegang tot eigenschappen van de Redacteur van IC wordt geregeerd door [&#x200B; gebruikersrollen binnen AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions). Hieronder worden de sleutelfuncties beschreven die bij het maken en beheren van interactieve communicatie betrokken zijn:
 
 | **Rol** | **Beschrijving** | **Zeer belangrijke Toestemmingen** |
 | --------------------- | ---------------------------------------------------------- | -------------------------------------------- |
 | **Auteur van de Vorm** | Creeert en geeft Interactieve Mededelingen uit. | IC&#39;s maken, bewerken, voorvertonen en publiceren. |
 | **Auteur van het Malplaatje** | Ontwerpen herbruikbare malplaatjes voor Interactieve Mededelingen. | Sjablonen maken en vergrendelen, lay-outs definiëren. |
 | **Beheerder** | Beheert gebruikerstoegang, machtigingen en configuraties. | Rollen toewijzen, sjablonen beheren, IC&#39;s publiceren. |
-| **FDM Auteur** | [&#x200B; creeert en beheert de Modellen van de Gegevens van de Vorm (FDM) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) voor gegevensintegratie. | Creeer, geef, en vorm gegevensbronnen en modellen uit. |
+| **FDM Auteur** | [&#x200B; creeert en beheert de Modellen van de Gegevens van de Vorm (FDM) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) voor gegevensintegratie. | Creeer, geef, en vorm gegevensbronnen en modellen uit. |
 
 >[!NOTE]
 >
