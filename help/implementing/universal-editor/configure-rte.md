@@ -4,9 +4,9 @@ description: Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redact
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Begrijp hoe u de rijke tekstredacteur (RTE) in de Universele Redacteur kunt vorm
 
 De Universele Redacteur verstrekt een rijke tekstredacteur (RTE) zowel op zijn plaats als in het eigenschappenpaneel om auteurs toe te staan om het formatteren veranderingen toe te passen aangezien zij hun tekst uitgeven.
 
-Dit RTE is configureerbaar gebruikend [&#x200B; componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
+Dit RTE is configureerbaar gebruikend [ componentenfilters.](/help/implementing/universal-editor/filtering.md) In dit document wordt beschreven welke configuratieopties beschikbaar zijn en worden voorbeelden gegeven.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ De configuratie van RTE bestaat uit twee delen:
 * [`toolbar`](#toolbar): In de werkbalkconfiguratie wordt bepaald welke bewerkingsopties beschikbaar zijn in de gebruikersinterface en hoe deze zijn ingedeeld.
 * [`actions`](#actions): Met de configuratie van handelingen kunt u het gedrag en de weergave van afzonderlijke bewerkingsacties aanpassen.
 
-Deze configuraties kunnen als deel van a [&#x200B; componentenfilter &#x200B;](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
+Deze configuraties kunnen als deel van a [ componentenfilter ](/help/implementing/universal-editor/filtering.md) met het bezit `rte` worden bepaald.
 
 ```json
 [
@@ -87,9 +87,29 @@ De controles van de toolbarconfiguratie die het uitgeven opties in UI beschikbaa
 }
 ```
 
-## Configuratie van handelingen {#actions}
+## Configuratie van handelingen {#action}
 
 Met de configuratie van handelingen kunt u het gedrag en de weergave van afzonderlijke bewerkingsacties aanpassen. Dit zijn de beschikbare secties.
+
+### Algemene actieopties {#common-action-options}
+
+De meeste acties ondersteunen de volgende algemene opties:
+
+* `shortcut?`: tekenreeks - Overschrijft de standaardsneltoets voor de handeling (indien van toepassing)
+* `label?`: tekenreeks - Hiermee wordt het label voor de handeling in de gebruikersinterface genegeerd
+* `hideInline?`: Boolean - Verbergt deze handeling in `true` vanuit de werkbalk van de in-context (inline) RTE-editor
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### Handelingen opmaken {#format}
 
@@ -134,6 +154,56 @@ De acties van de lijst steunen inhoud het verpakken om de structuur van HTML te 
   }
 }
 ```
+
+### Tabelhandelingen {#table-actions}
+
+De acties van de lijst steunen inhoud het verpakken om de structuur van HTML in lijstcellen te controleren:
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### de Opties van de Configuratie van de Lijst  {#table-configuration-options}
+
+* `wrapInParagraphs`: `false` (standaardwaarde) - Tabelcellen bevatten inhoud zonder tekstomloop
+* `wrapInParagraphs`: `true` - Tabelcellen laten de inhoud van alinealabels omlopen
+
+Monsters:
+
+Wanneer `wrapInParagraphs`: `false`
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+Wanneer `wrapInParagraphs`: `true`
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>Bij het opheffen van alinea&#39;s (`wrapInParagraphs`: `false` ) voegt de sanitizer automatisch `<br>` -tags in tussen meerdere alinea&#39;s om visuele regeleinden te behouden. Dit volgt de normen van HTML en gemeenschappelijke praktijk over belangrijke rijke teksteditors.
 
 ### Handelingen koppelen {#link}
 
@@ -487,3 +557,20 @@ Sneltoetsen gebruiken de notatie `Mod-Key`(s) waarbij:
 
 * `Mod` = `Cmd` op Mac, `Ctrl` op Windows/Linux
 * Voorbeelden: `Mod-B` , `Mod-Shift-8` , `Mod-Alt-1`
+
+## Niet-ondersteunde HTML {#unsupported-html}
+
+Onbekende HTML-tags worden standaard verwijderd wanneer deze door de editor worden geparseerd. Als u ze wilt behouden, meldt u zich aan via de configuratieoptie `unsupportedHtml` :
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+| Waarde | Gedrag |
+|---|---|
+| `false` (standaardwaarde) | Onbekende HTML-tags vervallen tijdens parseren. |
+| `true` | Onbekende HTML-tags worden verpakt in een aangepast blokknooppunt zonder ondersteuning, zodat de inhoud veilig kan worden teruggedraaid. |
+
+Wanneer deze optie is ingeschakeld, rendert de editor niet-ondersteunde knooppunten met een `rte-unsupported-block` -klasse. Consumenten-apps moeten de opmaak voor deze klasse (bijvoorbeeld rand, opvulling, achtergrond) bieden. Het labellabel in het blok gebruikt `rte-unsupported-label` , dat ook kan worden aangepast.
