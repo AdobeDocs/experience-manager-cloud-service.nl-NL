@@ -4,7 +4,7 @@ description: Leer hoe u de Content Optimization Agent kunt gebruiken om te trans
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: 36cc0cd44a77554c58cec13d6478271d5ee4165c
+source-git-commit: af85d06d95cf2676cc558071ac8dfe54b67dc8f1
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Content Optimization Agent {#content-optimization-agent}
 
-De Content Optimization Agent transformeert hoe gebruikers elementen verfijnen en aanpassen door natuurlijke taalinstructies toe te passen om kanaalklare variaties te maken. Of het produceren van nieuwe vertoningen, het aanpassen van visuele eigenschappen, het veranderen van achtergronden, of het voorbereiden van activa voor specifieke digitale kanalen, de agent interpreteert gebruikersintent en voert complexe het uitgeven taken automatisch uit. Het werkt naadloos met de Agent van de Ontdekking, die de activa neemt en geoptimaliseerde variaties produceert gebruikend kern [&#x200B; Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) die merk, kanaal, en campagnevereisten zonder handontwerpinspanning ontmoeten.
+De Content Optimization Agent transformeert hoe gebruikers elementen verfijnen en aanpassen door natuurlijke taalinstructies toe te passen om kanaalklare variaties te maken. Of het produceren van nieuwe vertoningen, het aanpassen van visuele eigenschappen, het veranderen van achtergronden, of het voorbereiden van activa voor specifieke digitale kanalen, de agent interpreteert gebruikersintent en voert complexe het uitgeven taken automatisch uit. Het werkt naadloos met de Agent van de Ontdekking, die de activa neemt en geoptimaliseerde variaties produceert gebruikend kern [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) die merk, kanaal, en campagnevereisten zonder handontwerpinspanning ontmoeten.
 
 Tot de belangrijkste voordelen van Inhoud optimaliseren behoren:
 
-* **de krachtige activatransformatie van 0&rbrace;: Zet eenvoudige, conversationele herinneringen in nauwkeurige beeldverrichtingen, zoals het resizing, het scherpen, het weerspiegelen, of het opnieuw kleuren om, die de behoefte aan gespecialiseerde het uitgeven hulpmiddelen elimineren.**
+* **de krachtige activatransformatie van 0}: Zet eenvoudige, conversationele herinneringen in nauwkeurige beeldverrichtingen, zoals het resizing, het scherpen, het weerspiegelen, of het opnieuw kleuren om, die de behoefte aan gespecialiseerde het uitgeven hulpmiddelen elimineren.**
 
 * **kanaal-geoptimaliseerde output**: produceert snel vertoningen die voor specifieke platforms zoals de Artikelen van het Installagram, Webbanners, of andere marketing touchpoints worden gemaakt, die activa voor onmiddellijk gebruik klaar verzekeren.
 
@@ -29,7 +29,9 @@ Tot de belangrijkste voordelen van Inhoud optimaliseren behoren:
 >
 >Door AI gegenereerde reacties kunnen onjuist of misleidend zijn. Controleer de voorgestelde oplossingen en reacties met twee controles.
 >
->Zie ook [&#x200B; Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Zie ook [ Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480078)
 
 ## Vereisten {#prerequisites-content-optimization-agent}
 
@@ -39,7 +41,7 @@ Variaties of optimalisaties genereren voor afbeeldingselementen. U moet:
 
 * Dynamic Media met OpenAPI ingeschakeld in een AEM as a Cloud Service-omgeving.
 
-* De activa in [&#x200B; erkende staat &#x200B;](/help/assets/manage-organize-assets-view.md#manage-asset-status) in uw milieu van AEM as a Cloud Service.
+* De activa in [ erkende staat ](/help/assets/manage-organize-assets-view.md#manage-asset-status) in uw milieu van AEM as a Cloud Service.
 
 
 ## Vaardigheden {#skills-content-optimization-agent}
@@ -72,11 +74,11 @@ De regionale Marketers en de Werknemers van het Agentschap kunnen de Agent van d
 
 Via de AI-assistent hebt u toegang tot de agents in AEM. Meld u aan bij experience.adobe.com en u kunt interactie aangaan met AI Assistant door de vraag in de natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
 
-![&#x200B; de Agent van de Ontdekking van de Toegang &#x200B;](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
+![ de Agent van de Ontdekking van de Toegang ](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
 ## Gebruikskwesties en voorbeeldaanwijzingen {#use-cases-prompts}
 
-De herinneringen van de Optimalisering van de Inhoud van het gebruik door naar de juiste activa door de [&#x200B; Agent van de Ontdekking &#x200B;](/help/ai-in-aem/agents/discovery/overview.md) te zoeken. Wanneer de relevante afbeeldingen zijn weergegeven, kunnen gebruikers rechtstreeks uit de zoekresultaten geoptimaliseerde of kanaalspecifieke varianten voor een of meerdere elementen genereren. Deze workflow garandeert input van hoge kwaliteit en consistent betere optimalisatieresultaten. [&#x200B; zie de volledige lijst van beschikbare optimalisaties &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
+De herinneringen van de Optimalisering van de Inhoud van het gebruik door naar de juiste activa door de [ Agent van de Ontdekking ](/help/ai-in-aem/agents/discovery/overview.md) te zoeken. Wanneer de relevante afbeeldingen zijn weergegeven, kunnen gebruikers rechtstreeks uit de zoekresultaten geoptimaliseerde of kanaalspecifieke varianten voor een of meerdere elementen genereren. Deze workflow garandeert input van hoge kwaliteit en consistent betere optimalisatieresultaten. [ zie de volledige lijst van beschikbare optimalisaties ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
 
 * **de verwezenlijking van de vertoning van de hoge resolutie**
 
@@ -87,7 +89,7 @@ De herinneringen van de Optimalisering van de Inhoud van het gebruik door naar d
 
   Maak een `2000px` -uitvoering als `JPEG` met `80%` -kwaliteit.
 
-  Onderzoek naar het juiste middel gebruikend de [&#x200B; agent van de Ontdekking &#x200B;](/help/ai-in-aem/agents/discovery/overview.md) en gebruik dan de volgende herinneringen in het geval van veelvoudige onderzoeksresultaten:
+  Onderzoek naar het juiste middel gebruikend de [ agent van de Ontdekking ](/help/ai-in-aem/agents/discovery/overview.md) en gebruik dan de volgende herinneringen in het geval van veelvoudige onderzoeksresultaten:
 
   Voor het derde zoekresultaat maakt u een `2000px` vertoning `JPEG` met `80%` kwaliteit.
 
@@ -151,7 +153,7 @@ Wanneer u een optimalisatieverzoek opgeeft, retourneert de Content Optimization 
 
 * **Video&#39;s**: De reactie verstrekt opties om Dynamische Media URL te openen of de geoptimaliseerde video te downloaden.
 
-![&#x200B; de resultaten van de Optimalisering van de Inhoud &#x200B;](/help/ai-in-aem/agents/content-optimization/assets/download-content-optimization.png)
+![ de resultaten van de Optimalisering van de Inhoud ](/help/ai-in-aem/agents/content-optimization/assets/download-content-optimization.png)
 
 Deze resultaten maken het gemakkelijk om de geoptimaliseerde output te herzien en onmiddellijk het over stroomafwaartse kanalen of werkschema&#39;s te gebruiken.
 
