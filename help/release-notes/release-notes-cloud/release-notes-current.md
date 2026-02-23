@@ -38,7 +38,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](
 
 Bekijk de video Overzicht van de release van januari 2026 voor een overzicht van de functies die in de release van 2026.1.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479795/?captions=dut&quality=12)
 
 
 ## AEM Beta-programma&#39;s {#aem-beta-programs}
