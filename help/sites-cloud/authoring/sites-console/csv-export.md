@@ -1,14 +1,15 @@
 ---
 title: Exporteren naar CSV
 description: Informatie over uw pagina's exporteren naar een CSV-bestand op uw lokale systeem
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 14%
+source-wordcount: '203'
+ht-degree: 13%
 
 ---
 
@@ -53,12 +54,12 @@ Een CSV-export maken:
    * De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites**-console bladert (in de lijstweergave)
    * Het is een optie van **creeer** drop-down menu:
 
-     ![&#x200B; creeer optie CSV &#x200B;](/help/sites-cloud/authoring/assets/csv-create.png)
+     ![ creeer optie CSV ](/help/sites-cloud/authoring/assets/csv-create.png)
 
 1. Selecteer op de werkbalk de optie **Maken** en vervolgens **CSV-rapport** om de wizard te openen:
 
-   ![&#x200B; CSV de uitvoeropties &#x200B;](/help/sites-cloud/authoring/assets/csv-options.png)
+   ![ CSV de uitvoeropties ](/help/sites-cloud/authoring/assets/csv-options.png)
 
 1. Selecteer de eigenschappen die u wilt exporteren.
 1. Selecteer **creeer**.
-   ![&#x200B; Resulterende uitvoer CSV in Excel &#x200B;](/help/sites-cloud/authoring/assets/csv-example.png)
+   ![ Resulterende uitvoer CSV in Excel ](/help/sites-cloud/authoring/assets/csv-example.png)

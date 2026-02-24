@@ -3,11 +3,12 @@ title: Problemen met MSM en veelgestelde vragen oplossen
 description: Kom te weten hoe te om de gemeenschappelijkste MSM-verwante kwesties problemen op te lossen en antwoorden op de gemeenschappelijkste MSM-verwante vragen te krijgen.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -18,8 +19,8 @@ ht-degree: 0%
 
 Als u ervaart wat u denkt is onjuist gedrag of een fout in MSM, alvorens en het gedetailleerde oplossen van problemen zeker te zijn:
 
-* Controleer [&#x200B; Veelgestelde vragen MSM &#x200B;](#faq) omdat uw problemen of vragen daar kunnen reeds worden gericht.
-* Controle [&#x200B; MSM beste praktijken &#x200B;](best-practices.md) voor verscheidene uiteinden, samen met verduidelijking van bepaalde misconcepties.
+* Controleer [ Veelgestelde vragen MSM ](#faq) omdat uw problemen of vragen daar kunnen reeds worden gericht.
+* Controle [ MSM beste praktijken ](best-practices.md) voor verscheidene uiteinden, samen met verduidelijking van bepaalde misconcepties.
 
 ## Geavanceerde informatie over uw blauwdruk en status van Live Copy zoeken {#advanced-info}
 
@@ -28,13 +29,11 @@ MSM registreert verscheidene servers die met selecteurs op middel URLs kunnen wo
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Gebruik deze optie op een blauwdrukpagina om de lijst op te halen met alle Live-kopieën die eraan zijn gekoppeld, met extra statusinformatie voor Live Copy.
    * bijvoorbeeld:
-
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Gebruik deze optie op Live Copy-pagina&#39;s om geavanceerde informatie op te halen over de verbinding met de bijbehorende pagina&#39;s. Als de pagina geen live kopie is, wordt er niets geretourneerd.
    * bijvoorbeeld:
-
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Deze servers genereren FOUTOPSPORING-logberichten via het logbestand `com.day.cq.wcm.msm` dat ook nuttig kan zijn.
@@ -70,11 +69,11 @@ Hier volgen enkele veelgestelde vragen over MSM en Live Copy.
 
 De acties van de synchronisatie MSM zijn hoogst configureerbaar. Welke eigenschappen of componenten tijdens rollouts direct worden gewijzigd hangt van de eigenschappen van die configuraties af.
 
-Zie [&#x200B; MSM Beste praktijken &#x200B;](best-practices.md) voor meer informatie over dit onderwerp.
+Zie [ MSM Beste praktijken ](best-practices.md) voor meer informatie over dit onderwerp.
 
 ### Hoe kan ik rollout toestemmingen voor een groep auteurs verwijderen? {#remove-rollout-permissions}
 
-Er is geen **voorrecht van 0&rbrace; rollout &lbrace;dat voor de hoofden van Adobe Experience Manager (gebruikers of groepen) kan worden geplaatst of worden verwijderd.**
+Er is geen **voorrecht van 0} rollout {dat voor de hoofden van Adobe Experience Manager (gebruikers of groepen) kan worden geplaatst of worden verwijderd.**
 
 Als alternatief kunt u:
 
@@ -93,4 +92,4 @@ Als er een zelfstandige pagina wordt gevonden, kiest MSM ervoor de naam van deze
 
 Zulk een standalone pagina in Levende subtree van het Exemplaar is typisch het resultaat van a **ontkoppel** verrichting, of de vroegere Levende pagina van het Exemplaar werd manueel geschrapt door een auteur en toen opnieuw gecreeerd met de zelfde naam.
 
-Om dit te vermijden, gebruik Levend Exemplaar **Uitstel** eigenschap in plaats van **losmaken**. Meer details op **ontkoppelen** actie kan in [&#x200B; dit artikel &#x200B;](creating-live-copies.md) worden gevonden.
+Om dit te vermijden, gebruik Levend Exemplaar **Uitstel** eigenschap in plaats van **losmaken**. Meer details op **ontkoppelen** actie kan in [ dit artikel ](creating-live-copies.md) worden gevonden.

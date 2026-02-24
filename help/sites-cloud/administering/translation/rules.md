@@ -3,11 +3,12 @@ title: Te vertalen inhoud identificeren
 description: Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -18,13 +19,13 @@ De vertaalregels identificeren de inhoud om voor pagina&#39;s, componenten, en a
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie [&#128279;](/help/journey-sites/translation/overview.md) de Vertaalreis van 0&rbrace; Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.
+>Als u aan het vertalen van inhoud nieuw bent, zie [ de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend de krachtige vertaalhulpmiddelen van AEM, ideaal voor die zonder AEM of vertaalervaring.](/help/journey-sites/translation/overview.md)
 
 ## Inhoudsfragmenten en vertaalregels {#content-fragments}
 
-De vertaalregels die in dit document worden beschreven zijn op de Fragmenten van de Inhoud slechts van toepassing als **de ModelGebieden van de Inhoud voor Vertaling** optie niet op het [&#x200B; configuratieniveau van het vertaalintegratiekader &#x200B;](integration-framework.md#assets-configuration-properties) zijn geactiveerd.
+De vertaalregels die in dit document worden beschreven zijn op de Fragmenten van de Inhoud slechts van toepassing als **de ModelGebieden van de Inhoud voor Vertaling** optie niet op het [ configuratieniveau van het vertaalintegratiekader ](integration-framework.md#assets-configuration-properties) zijn geactiveerd.
 
-Als **laat de ModelGebieden van de Inhoud voor Vertaling** optie toe actief is, AEM zal het **Vertaalbare** gebied op [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) gebruiken om te bepalen als het gebied moet worden vertaald en creeert automatisch vertaalregels dienovereenkomstig. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
+Als **laat de ModelGebieden van de Inhoud voor Vertaling** optie toe actief is, zal AEM het **Vertaalbare** gebied op [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) gebruiken om te bepalen als het gebied moet worden vertaald en creeert automatisch vertaalregels dienovereenkomstig. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
 
 Als u vertaalregels voor het vertalen van uw Fragmenten van de Inhoud wilt gebruiken, **laat de ModelGebieden van de Inhoud voor Vertaling** optie op de configuratie van het het kader van de vertaalintegratie toe moet worden onbruikbaar gemaakt en u moet de hieronder geschetste stappen volgen om uw regels tot stand te brengen.
 
@@ -49,9 +50,9 @@ De regels omvatten de volgende informatie:
 
 U kunt bijvoorbeeld een regel maken die de inhoud vertaalt die auteurs aan alle tekstcomponenten op uw pagina&#39;s toevoegen. De regel kan de node `/content` en de eigenschap `text` voor de component `core/wcm/components/text/v2/text` identificeren.
 
-Er is a [&#x200B; console &#x200B;](#translation-rules-ui) die voor het vormen vertaalregels is toegevoegd. De definities in UI zullen het dossier voor u bevolken.
+Er is a [ console ](#translation-rules-ui) die voor het vormen vertaalregels is toegevoegd. De definities in UI zullen het dossier voor u bevolken.
 
-Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](overview.md).
+Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](overview.md).
 
 >[!NOTE]
 >
@@ -122,7 +123,7 @@ In het volgende voorbeeld worden afbeeldingen uit de afbeeldingscomponent geëxt
 
 ## Regels overschrijven {#overriding-rules}
 
-Het `translation_rules.xml` -bestand bestaat uit een `nodelist` -element met verschillende onderliggende `node` elementen. AEM leest de nodenlijst van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels zorgen er bijvoorbeeld voor dat alle inhoud in `text` -eigenschappen wordt vertaald, behalve de `/content/mysite/en` -vertakking van pagina&#39;s:
+Het `translation_rules.xml` -bestand bestaat uit een `nodelist` -element met verschillende onderliggende `node` elementen. AEM leest de lijst met knooppunten van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels zorgen er bijvoorbeeld voor dat alle inhoud in `text` -eigenschappen wordt vertaald, behalve de `/content/mysite/en` -vertakking van pagina&#39;s:
 
 ```xml
 <nodelist>
@@ -166,15 +167,15 @@ In de interface met vertaalregels kunt u:
 
 1. **voegt Context** toe, die u een weg laat toevoegen.
 
-   ![&#x200B; voeg vertaalcontext &#x200B;](../assets/add-translation-context.png) toe
+   ![ voeg vertaalcontext ](../assets/add-translation-context.png) toe
 
 1. Gebruik wegbrowser om de vereiste context te selecteren en **te selecteren bevestigen** knoop om te bewaren.
 
-   ![&#x200B; Uitgezochte context &#x200B;](../assets/select-context.png)
+   ![ Uitgezochte context ](../assets/select-context.png)
 
 1. Dan moet u uw context selecteren en dan **klikken geeft** uit. Hiermee opent u de Editor voor vertaalregels.
 
-   ![&#x200B; Redacteur van de Regels van de Vertaling &#x200B;](../assets/translation-rules-editor.png)
+   ![ Redacteur van de Regels van de Vertaling ](../assets/translation-rules-editor.png)
 
 Er zijn vier attributen die u via UI kunt veranderen:
 
@@ -191,7 +192,7 @@ Onderliggende knooppunten worden bijvoorbeeld toegevoegd aan een vertaaltaak, ze
 
 In de redacteur, kunt u controleren/uncheck **is Diep** in de **Filters** tabel.
 
-![&#x200B; de regels van de Filter &#x200B;](../assets/translation-rules-editor-filters.png)
+![ de regels van de Filter ](../assets/translation-rules-editor-filters.png)
 
 Hier is een voorbeeld van resulterende XML wanneer **Diep** is ongecontroleerd in UI:
 
@@ -221,7 +222,7 @@ In UI, kunt u **controleren/uncheck** in het **lusje van Eigenschappen** om deze
 
 Voor meer duidelijkheid over het verschil tussen `updateDestinationLanguage` en `translate` is dit een eenvoudig voorbeeld van een context met slechts twee regels:
 
-![&#x200B; updateDestinationLanguage voorbeeld &#x200B;](../assets/translation-rules-updatedestinationlanguage.png)
+![ updateDestinationLanguage voorbeeld ](../assets/translation-rules-updatedestinationlanguage.png)
 
 Het resultaat in de xml ziet er als volgt uit:
 
@@ -232,9 +233,9 @@ Het resultaat in de xml ziet er als volgt uit:
 
 ## Het bestand Regels handmatig bewerken {#editing-the-rules-file-manually}
 
-Het `translation_rules.xml` -bestand dat met AEM is geïnstalleerd, bevat een standaardset vertaalregels. U kunt het bestand bewerken ter ondersteuning van de vereisten van uw vertaalprojecten. U kunt bijvoorbeeld regels toevoegen zodat de inhoud van uw aangepaste componenten wordt vertaald.
+Het `translation_rules.xml` -bestand dat met AEM wordt geïnstalleerd, bevat een standaardset vertaalregels. U kunt het bestand bewerken ter ondersteuning van de vereisten van uw vertaalprojecten. U kunt bijvoorbeeld regels toevoegen zodat de inhoud van uw aangepaste componenten wordt vertaald.
 
-Als u het `translation_rules.xml` -bestand bewerkt, moet u een reservekopie bewaren in een inhoudspakket. Als u bepaalde AEM opnieuw installeert, wordt het huidige `translation_rules.xml` -bestand vervangen door het origineel. Om uw regels in deze situatie te herstellen, kunt u het pakket installeren dat uw reservekopie bevat.
+Als u het `translation_rules.xml` -bestand bewerkt, moet u een reservekopie bewaren in een inhoudspakket. Als u bepaalde AEM-pakketten opnieuw installeert, wordt het huidige `translation_rules.xml` -bestand vervangen door het origineel. Om uw regels in deze situatie te herstellen, kunt u het pakket installeren dat uw reservekopie bevat.
 
 >[!NOTE]
 >

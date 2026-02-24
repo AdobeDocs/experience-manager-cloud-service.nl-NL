@@ -1,13 +1,14 @@
 ---
 title: Aanbevolen werkwijzen voor vertaling
-description: Leer over beste praktijken die door Adobe engineering en raadplegende teams worden samengesteld om u te helpen met vertaalprojecten op de proppen komen.
+description: Leer over beste praktijken die door de ingenieurs en de raadplegende teams van Adobe worden samengesteld om u te helpen met vertaalprojecten op de proppen komen.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -16,11 +17,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie [&#128279;](/help/journey-sites/translation/overview.md) de Vertaalreis van 0&rbrace; Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.
+>Als u aan het vertalen van inhoud nieuw bent, zie [ de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend de krachtige vertaalhulpmiddelen van AEM, ideaal voor die zonder AEM of vertaalervaring.](/help/journey-sites/translation/overview.md)
 
 ## Algemeen {#general}
 
-Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een complex proces zijn, maar met goede voorspelling en goede planning kunnen AEM uw inspanningen vereenvoudigen en uw wereldwijde bedrijfsdoelstellingen ondersteunen.
+Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een complex proces zijn, maar met goede voorspelling en planning kan AEM uw inspanningen vereenvoudigen en uw wereldwijde bedrijfsdoelstellingen ondersteunen.
 
 * **Plan voor globale uitbreiding** alvorens uw eerste plaats uit te voeren. Het aanpassen van een bestaande site voor wereldwijde dekking op het moment dat de site op korte termijn werd geïmplementeerd, is doorgaans moeilijker dan aan het begin plannen voor wereldwijde uitbreiding:
    * Evalueer de huidige staat van de de localisatierijpheid van uw organisatie. Bepaal of u de **hulpmiddelen** hebt, **processen** en **middelen** op zijn plaats om globale uitbreiding te steunen.
@@ -36,8 +37,8 @@ Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een comp
 * Gebruik een taal/landsite noemende overeenkomst die **[normen W3C](/help/sites-cloud/authoring/page-editor/accessible-content.md)** volgt.
 * Bepaal hoe inhoud wordt verdeeld over regio&#39;s en landen. Bedenk welke landen talen delen. U wordt aangeraden om taalstramienen te maken, een laag van niet-geactiveerde pagina&#39;s, waarin vertaalde inhoud kan worden gecontroleerd en gewijzigd en vervolgens kan worden geduwd of naar een landsite met dezelfde taal kan worden gesleept.
 * Er zijn twee manieren om taalmeesters te maken: het gebruiken van taalexemplaren, en het gebruiken van MSM/levende exemplaren.
-   * De taalkopieeraanpak wordt gebruikt door het integratiekader voor vertalen buiten de doos te AEM en daarom is het de eenvoudigste manier om aan de slag te gaan. Het framework biedt een gebruikersinterface waarmee u in eerste instantie gemakkelijk inhoudwijzigingen van de hoofdtaal (bijvoorbeeld het Engels) kunt doorgeven en vertalen naar de hoofdtaal. Naarmate het project groeit, wordt workflowautomatisering echter steeds noodzakelijker om de vertaling van het toegenomen aantal pagina&#39;s en/of talen te beheren.
-   * De MSM/levende exemplaarbenadering kan een alternatief voor geavanceerde gebruiksgevallen zijn, waar de plaatsen groter en complexer zijn. Sterk bestuur en automatisering van de workflow zijn van meet af aan nodig om de complexe overervingsrelaties tussen Engelse en taalmeesters aan te pakken en om het risico van het overschrijven van bestaande vertalingen te verminderen. Deze behandeling kan met de hulp van sommige vertaalschakelaars worden verwezenlijkt. Zie [&#x200B; MSM en Meertalige Plaatsen &#x200B;](/help/sites-cloud/administering/msm/best-practices.md#msm-and-multilingual-websites) voor meer informatie.
+   * De taalkopieerbenadering is die welke door AEM wordt gebruikt buiten de doos vertaalintegratiekader, en daarom is het de gemakkelijkste manier om aan de slag te gaan. Het framework biedt een gebruikersinterface waarmee u in eerste instantie gemakkelijk inhoudwijzigingen van de hoofdtaal (bijvoorbeeld het Engels) kunt doorgeven en vertalen naar de hoofdtaal. Naarmate het project groeit, wordt workflowautomatisering echter steeds noodzakelijker om de vertaling van het toegenomen aantal pagina&#39;s en/of talen te beheren.
+   * De MSM/levende exemplaarbenadering kan een alternatief voor geavanceerde gebruiksgevallen zijn, waar de plaatsen groter en complexer zijn. Sterk bestuur en automatisering van de workflow zijn van meet af aan nodig om de complexe overervingsrelaties tussen Engelse en taalmeesters aan te pakken en om het risico van het overschrijven van bestaande vertalingen te verminderen. Deze behandeling kan met de hulp van sommige vertaalschakelaars worden verwezenlijkt. Zie [ MSM en Meertalige Plaatsen ](/help/sites-cloud/administering/msm/best-practices.md#msm-and-multilingual-websites) voor meer informatie.
 * Als uw hoofdtaal globale variaties heeft, is een optie MSM te gebruiken om een levende kopie van het globale stramien tot stand te brengen voor vertaling. Als bijvoorbeeld wereldwijd schrijven wordt uitgevoerd in een Amerikaanse Engelse master, maakt u een internationale Engelse master als een live kopie en basis voor vertaling naar andere talen.
 * Gebruik MSM om landsites te maken van de vertaalde taalstramienen en om inhoud te implementeren voor sites die dezelfde taal delen. De Franse taalmaster kan bijvoorbeeld worden uitgerold naar sites in Frankrijk, België en Zwitserland.
 * Plan, prototype en test eerst, alvorens implementatie te beginnen.
@@ -46,8 +47,8 @@ Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een comp
 
 * Neem de dienstverlener van de a **localisatiedienst (LSP)** met deskundigheid in vertaling en verwante localisatieactiviteiten in dienst. LSPs kan helpen om uw globale zaken te schrapen door een breedte van middelen en technologieën te verstrekken om efficiency te verbeteren en vertaalkosten te besparen:
    * Sommige LSPs is zowel dienst als technologieleveranciers. Er zijn ook standalone technologieleveranciers die vele LSPs toestaan om aan hun vertaalplatforms deel te nemen.
-   * Het **AEM Kader van de Vertaling** steunt integratie met een verscheidenheid van leveranciers van vertaaltechnologie voor zowel machine als menselijke vertaling.
-   * Leer hoe te [&#x200B; LSP schakelaars in uw AEM systeem &#x200B;](integration-framework.md) integreren om inhoudsomzetting te automatiseren, of hoe te om de Projecten van de Vertaling manueel tot stand te brengen, uit te voeren en in te voeren voor het testen en in gevallen waar er geen LSP of vertaaltechnologieleverancier is.
+   * Het **Kader van de Vertaling van AEM** steunt integratie met een verscheidenheid van leveranciers van vertaaltechnologie voor zowel machine als menselijke vertaling.
+   * Leer hoe te [ LSP schakelaars in uw systeem van AEM ](integration-framework.md) integreren om inhoudsomzetting te automatiseren, of hoe te om manueel om OmzettingsProjecten voor het testen en in te voeren en in gevallen waar er geen LSP of vertaaltechnologieleverancier is.
 * Kies de methode van de a **vertaling** die het best de inhoud aanpast.
    * **de Menselijke vertaling** is best-geschikt voor inhoud waar het overseinen en de kwaliteitsverwachtingen hoog zijn en de inhoud voor wat tijd op de plaats, zoals de pagina&#39;s van de Marketing zal leven.
    * **de vertaling van de Machine** kan een goede keus voor massavolumes van vertaling zijn wanneer de tijd om te publiceren kritiek is, kwaliteitsverwachtingen worden versoepeld, of de menselijke vertaalkosten zijn belemmerend. De kennisbasis van de steun en door de gebruiker geproduceerde inhoud worden algemeen machine-vertaald.

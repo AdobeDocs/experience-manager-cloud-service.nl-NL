@@ -1,13 +1,14 @@
 ---
 title: Integreren met Adobe Analytics
-description: Leer hoe u Adobe Analytics kunt integreren met AEM as a Cloud Service met de Touch-gebruikersinterface en het starten van de Adobe.
+description: Leer hoe u Adobe Analytics met AEM as a Cloud Service kunt integreren met de Touch-gebruikersinterface en Adobe Launch.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 solution: Experience Manager Sites
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -17,19 +18,19 @@ ht-degree: 0%
 Door Adobe Analytics en AEM as a Cloud Service te integreren, kunt u de activiteiten van uw webpagina bijhouden. De integratie vereist:
 
 * met de Touch-gebruikersinterface een analytische configuratie in AEM as a Cloud Service maken. IMS-verificatie is vereist voor integratie van Adobe Analytics met AEM as a Cloud Service.
-* het toevoegen van en het vormen van Adobe Analytics als uitbreiding in [&#x200B; Lancering van de Adobe &#x200B;](#analytics-launch). Voor meer details over de Lancering van de Adobe, kunt u met de [&#x200B; gids van QuickStart &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=nl-NL) beginnen.
+* het toevoegen van en het vormen van Adobe Analytics als uitbreiding in [ de Lancering van Adobe ](#analytics-launch). Voor meer details over de Lancering van Adobe, kunt u met de [ gids van QuickStart ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) beginnen.
 
-In vergelijking met eerdere versies van AEM wordt frameondersteuning niet geleverd in de Analytics Configuration in AEM as a Cloud Service. In plaats daarvan gebeurt dit nu via het starten van de Adobe. Dit is het feitelijke hulpmiddel voor het instrumenteren van een AEM site met analysemogelijkheden (JS-bibliotheken). In de Lancering van de Adobe, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
+In vergelijking met eerdere versies van AEM wordt frameworkondersteuning niet geleverd in de Analytics Configuration in AEM as a Cloud Service. In plaats daarvan gebeurt dit nu via Adobe Launch, het defacto instrument voor het instrumenteren van een AEM-site met analysemogelijkheden (JS-bibliotheken). In Adobe Launch, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service-klanten die geen bestaande account voor Analytics hebben, kunnen toegang aanvragen tot het Analytics Foundation Pack voor Experience Cloud. This Foundation Pack provided volume limited use of Analytics.
+>Adobe Experience Manager as a Cloud Service-klanten die geen bestaande Analytics-account hebben, kunnen toegang aanvragen tot het Analytics Foundation Pack voor Experience Cloud. This Foundation Pack provided volume limited use of Analytics.
 
 ## Adobe Analytics-configuratie maken {#analytics-configuration}
 
-1. Navigeer aan **Hulpmiddelen** → **Cloud Servicen**.
+1. Navigeer aan **Hulpmiddelen** → **de Diensten van de Wolk**.
 2. Selecteer **Adobe Analytics**.
-   ![&#x200B; Adobe Analytics Venster &#x200B;](assets/analytics_screen2.png " Adobe Analytics Venster ")
+   ![ Adobe Analytics Venster ](assets/analytics_screen2.png " Adobe Analytics Venster ")
 3. Selecteer **creeer** knoop.
 4. Vul de details (zie hieronder) in, en klik **verbinden**.
 
@@ -37,38 +38,38 @@ In vergelijking met eerdere versies van AEM wordt frameondersteuning niet geleve
 
 De velden in het configuratievenster zijn als volgt:
 
-![&#x200B; Parameters van de Configuratie &#x200B;](assets/properties_field2.png " de Parameters van de Configuratie ")
+![ Parameters van de Configuratie ](assets/properties_field2.png " de Parameters van de Configuratie ")
 
 | Eigenschap | Beschrijving |
 |---|---|
 | Titel | De configuratienaam |
 | IMS-configuratie | De IMS-configuratie selecteren (zie het hoofdstuk hieronder) |
-| Segment | Optie voor het gebruik van een analysesegment dat is gedefinieerd in de huidige rapporteringssuite. De analyserapporten worden gefilterd op basis van het segment. Zie [&#x200B; Ongeveer segmenten &#x200B;](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=nl-NL) voor extra details. |
+| Segment | Optie voor het gebruik van een analysesegment dat is gedefinieerd in de huidige rapporteringssuite. De analyserapporten worden gefilterd op basis van het segment. Zie [ Ongeveer segmenten ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) voor extra details. |
 | Rapportageopties | Een opslagplaats waar u gegevens en trekkingsrapporten verzendt. Een rapportsuite definieert de volledige, onafhankelijke rapportage op een gekozen website, een set websites of een subset van websitepagina&#39;s. U kunt de rapporten bekijken die van één enkele rapportreeks worden gehaald en kunt dit gebied in een configuratie op elk ogenblik overeenkomstig uw vereisten uitgeven. |
 
 ### Adobe Analytics met IMS-verificatie {#configuration-parameters-ims}
 
 Voor de integratie van Adobe Experience Manager as a Cloud Service (AEMaaCS) met Adobe Analytics via de API voor Analytics Standard is de configuratie van Adobe IMS (Identity Management System) vereist.
 
-Zie [&#x200B; Instelling IMS Integraties voor AEM as a Cloud Service &#x200B;](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) leren hoe te om de configuratie tot stand te brengen IMS.
+Zie [ Instelling IMS Integraties voor AEM as a Cloud Service ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) leren hoe te om de configuratie tot stand te brengen IMS.
 
 >[!NOTE]
 >
->[&#x200B; IMS de integratie wordt nu gevormd met S2S OAuth &#x200B;](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[ IMS de integratie wordt nu gevormd met S2S OAuth ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
 >
->De vorige configuraties werden gemaakt met [&#x200B; geloofsbrieven JWT die nu onderworpen aan verval in Adobe Developer Console &#x200B;](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) zijn.
+>De vorige configuraties werden gemaakt met [ geloofsbrieven JWT die nu onderworpen aan verval in Adobe Developer Console ](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) zijn.
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
 
 Om een configuratie van de Aanraking UI op een plaats toe te passen, ga naar: **Plaatsen** → **selecteer om het even welke plaatspagina** → **Eigenschappen** → **Geavanceerd** → **Configuratie** → selecteer de configuratiehuurder.
 
-## Adobe Analytics integreren op AEM sites met behulp van Adobe Launch {#analytics-launch}
+## Adobe Analytics integreren op AEM-sites met Adobe Launch {#analytics-launch}
 
 Adobe Analytics kan als extensie worden toegevoegd aan de eigenschap Launch. De regels kunnen worden bepaald om afbeelding uit te voeren en een postvraag aan Adobe Analytics te maken:
 
-* Controle [&#x200B; deze video &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html?lang=nl-NL) leren hoe te om de uitbreiding van Analytics in Lancering voor een basisplaats te vormen.
+* Controle [ deze video ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) leren hoe te om de uitbreiding van Analytics in Lancering voor een basisplaats te vormen.
 
-* Zie [&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=nl-NL) voor details op toevoegen hoe te om regels tot stand te brengen en gegevens naar Adobe Analytics te verzenden.
+* Zie [ Adobe Analytics ](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) voor details op toevoegen hoe te om regels tot stand te brengen en gegevens naar Adobe Analytics te verzenden.
 
 >[!NOTE]
 >

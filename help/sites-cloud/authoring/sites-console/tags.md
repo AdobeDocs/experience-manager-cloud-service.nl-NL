@@ -1,13 +1,14 @@
 ---
 title: Tags gebruiken
 description: Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '566'
 ht-degree: 6%
 
 ---
@@ -16,8 +17,8 @@ ht-degree: 6%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie [&#x200B; het Beheer Markeringen &#x200B;](/help/sites-cloud/administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
-* Zie [&#x200B; Tags voor Ontwikkelaars &#x200B;](/help/implementing/developing/introduction/tagging-framework.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
+* Zie [ het Beheer Markeringen ](/help/sites-cloud/administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
+* Zie [ Tags voor Ontwikkelaars ](/help/implementing/developing/introduction/tagging-framework.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
 
 ## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
 
@@ -29,7 +30,7 @@ Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te class
 1. **Verbeterd het Zoeken** - de standaardonderzoekscomponent in AEM omvat globaal gecreeerde markeringen en toegepaste markeringen waarop de filters kunnen worden toegepast om de resultaten aan die te beperken die relevant zijn.
 1. **SEO die** toelaat - de Markeringen die als paginaeigenschappen worden toegepast zullen automatisch in de metatags van de pagina verschijnen die het zichtbaar maken aan onderzoeksmotoren.
 1. **Eenvoudige Verfijning** - de markeringen kunnen eenvoudig van een woord en de aanraking van een knoop worden gecreeerd. Daarna kunt u een titel, beschrijving en een onbeperkt label toevoegen om meer semantiek aan de tag toe te voegen.
-1. **Consistentie van de Kern** - het etiketterende systeem is een kerncomponent van AEM en door alle AEM mogelijkheden gebruikt om inhoud te categoriseren. Verder is de API voor codering beschikbaar voor ontwikkelaars die toepassingen met codering willen maken die toegang hebben tot dezelfde taxonomieën.
+1. **Consistentie van de Kern** - het etiketterende systeem is een kerncomponent van AEM en door alle mogelijkheden van AEM gebruikt om inhoud te categoriseren. Verder is de API voor codering beschikbaar voor ontwikkelaars die toepassingen met codering willen maken die toegang hebben tot dezelfde taxonomieën.
 1. **combineert Structuur &amp; Flexibiliteit** - AEM is ideaal voor het werken met gestructureerde informatie, toe te schrijven aan het nesten van pagina&#39;s en wegen. Het is even krachtig wanneer het werken met ongestructureerde informatie, toe te schrijven aan de ingebouwde full-text onderzoek. Tags combineren de sterke punten van structuur en flexibiliteit.
 
 Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor elementen ontwerpt, moet u rekening houden met de lichte en toegankelijke manier waarop u tags kunt toewijzen.
@@ -40,7 +41,7 @@ In het auteursmilieu, kunnen de auteurs markeringen toepassen door tot de pagina
 
 Als u vooraf gedefinieerde tags wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** het veld **Tags** en het venster **Tags selecteren**. Het tabblad **Standaardtags** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` als voorvoegsel is voor de taxonomie. <!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
 
-![&#x200B; Uitgezochte veelvoudige markeringen &#x200B;](/help/sites-cloud/authoring/assets/tags-select.png)
+![ Uitgezochte veelvoudige markeringen ](/help/sites-cloud/authoring/assets/tags-select.png)
 
 ## Codes publiceren {#publishing-tags}
 

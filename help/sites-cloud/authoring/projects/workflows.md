@@ -1,13 +1,14 @@
 ---
 title: Werken met projectworkflows
 description: Een verscheidenheid van projectwerkschema's is beschikbaar uit de doos.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '455'
 ht-degree: 3%
 
 ---
@@ -30,12 +31,12 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 | Verzoek starten | x |  |
 | Openingspagina aanvragen | x |  |
 | E-mail aanvragen | x | |
-| DAM Create Language Copy&ast; |  | x |
+| DAM Create Language Copy&amp;ast; |  | x |
 | DAM &amp;Create and Translate Language Copy;ast; |   | x |
 
 >[!NOTE]
 >
->&ast; Deze werkschema&#39;s zijn niet begonnen van de **tegel van het Werkschema** in Projecten. Zie [&#x200B; Creërend de Kopieën van de Taal voor Assets &#x200B;](/help/sites-cloud/administering/translation/managing-projects.md).
+>&amp;ast; Deze werkschema&#39;s zijn niet begonnen van de **tegel van het Werkschema** in Projecten. Zie [ Creërend de Kopieën van de Taal voor Assets ](/help/sites-cloud/administering/translation/managing-projects.md).
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
@@ -56,9 +57,9 @@ In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een geb
 1. In uw Eenvoudig project, selecteer het **`+`** teken in de **werkschema&#39;s** tegel en selecteer **Werkstroom van de Goedkeuring van het Project**.
 1. Ga een titel in en selecteer aan wie om het van de lijst van het Team toe te wijzen. Voer, indien van toepassing, een beschrijving, een inhoudspad, een taakprioriteit en een vervaldatum in.
 
-   ![&#x200B; Goedkeuring van het Verzoek &#x200B;](/help/sites-cloud/authoring/assets/projects-approval.png)
+   ![ Goedkeuring van het Verzoek ](/help/sites-cloud/authoring/assets/projects-approval.png)
 
-1. Klik **creëren**. De workflow wordt gestart. De taak verschijnt in de **tegel van 0&rbrace; Taken &lbrace;.**
+1. Klik **creëren**. De workflow wordt gestart. De taak verschijnt in de **tegel van 0} Taken {.**
 
 ## Verzoek indienen om workflow te starten {#request-launch-workflow}
 
@@ -67,10 +68,10 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 1. Selecteer in uw Simple-project het **+**-teken in de tegel **Workflows** en selecteer **Workflow voor lancering aanvragen**.
 1. Voer een titel in voor de opstart en geef het bronpad op. U kunt ook een beschrijving en live datum toevoegen, indien van toepassing. Selecteer Live-gegevens van bronpagina overnemen of subpagina&#39;s uitsluiten, afhankelijk van de manier waarop u de opstart wilt laten uitvoeren.
 
-   ![&#x200B; de lancering van het Verzoek &#x200B;](/help/sites-cloud/authoring/assets/projects-request-launch.png)
+   ![ de lancering van het Verzoek ](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Klik **creëren**. De workflow wordt gestart. Het werkschema verschijnt in de **lijst van Werkschema&#39;s** (klik ellipsen **..** op de **&#x200B;**&#x200B;tegel van Werkschema&#39;s om tot deze lijst toegang te hebben).
+1. Klik **creëren**. De workflow wordt gestart. Het werkschema verschijnt in de **lijst van Werkschema&#39;s** (klik ellipsen **..** op de **** tegel van Werkschema&#39;s om tot deze lijst toegang te hebben).
 
 ## Workflow voor taalkopieën maken (en vertalen) voor Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-**creeer het Exemplaar van de Taal** en **creeer en vertaalde 3&rbrace; werkschema&#39;s van het Exemplaar van de Taal &lbrace;zijn in detail behandeld in [&#x200B; creërend taalexemplaren voor activa &#x200B;](/help/assets/translate-assets.md).**
+**creeer het Exemplaar van de Taal** en **creeer en vertaalde 3} werkschema&#39;s van het Exemplaar van de Taal {zijn in detail behandeld in** creërend taalexemplaren voor activa [.](/help/assets/translate-assets.md)

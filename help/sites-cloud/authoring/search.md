@@ -1,13 +1,14 @@
 ---
 title: Zoeken
 description: Vind sneller uw inhoud dankzij uitgebreide zoekopdracht
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '498'
 ht-degree: 6%
 
 ---
@@ -20,13 +21,13 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 
 Zoeken is beschikbaar op de bovenste werkbalk:
 
-![&#x200B; het pictogram van het Onderzoek &#x200B;](/help/sites-cloud/authoring/assets/search-icon.png)
+![ het pictogram van het Onderzoek ](/help/sites-cloud/authoring/assets/search-icon.png)
 
 Met de zoekrail kunt u:
 
 * Zoeken naar een specifiek trefwoord, pad of tag
 * Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte enzovoort.
-* Bepaal en gebruik a [&#x200B; bewaarde onderzoek &#x200B;](#saved-searches) - gebaseerd op de bovengenoemde criteria
+* Bepaal en gebruik a [ bewaarde onderzoek ](#saved-searches) - gebaseerd op de bovengenoemde criteria
 
 >[!NOTE]
 >
@@ -38,22 +39,22 @@ U kunt als volgt uw bronnen zoeken en filteren:
 
 1. Open **Onderzoek** (met het vergrootglas in de toolbar) en ga uw onderzoekstermijn in. Er worden suggesties gedaan en deze kunnen worden geselecteerd:
 
-   ![&#x200B; termijn van het Onderzoek &#x200B;](/help/sites-cloud/authoring/assets/search-term.png)
+   ![ termijn van het Onderzoek ](/help/sites-cloud/authoring/assets/search-term.png)
 
    Door gebrek zijn de onderzoeksresultaten beperkt tot uw huidige plaats (namelijk console en verwant middeltype):
 
-   ![&#x200B; plaats van het Onderzoek &#x200B;](/help/sites-cloud/authoring/assets/search-term-location.png)
+   ![ plaats van het Onderzoek ](/help/sites-cloud/authoring/assets/search-term-location.png)
 
 1. Indien nodig, kunt u de plaatsfilter (uitgezochte **X** op de filter verwijderen u) over alle consoles/middeltypes zoeken.
 1. De resultaten worden getoond, gegroepeerd volgens console en verwant middeltype.
 
    U kunt of een specifiek middel (voor verdere actie) selecteren, of neer boren door het vereiste middeltype te selecteren; bijvoorbeeld, **Mening Alle Plaatsen**:
 
-   ![&#x200B; resultaten van het Onderzoek &#x200B;](/help/sites-cloud/authoring/assets/search-results.png)
+   ![ resultaten van het Onderzoek ](/help/sites-cloud/authoring/assets/search-results.png)
 
 1. Als u verder naar beneden wilt boren, selecteer het symbool van het Spoorstaaf (linksboven) om het zijpaneel **Filters &amp; Opties** te openen.
 
-   ![&#x200B; knoop van het Spoorspoor &#x200B;](/help/sites-cloud/authoring/assets/rail-button.png)
+   ![ knoop van het Spoorspoor ](/help/sites-cloud/authoring/assets/rail-button.png)
 
    Volgens het middeltypeOnderzoek zal een vooraf bepaalde selectie van onderzoek/filtercriteria tonen.
 
@@ -62,20 +63,20 @@ U kunt als volgt uw bronnen zoeken en filteren:
    * Opgeslagen zoekopdrachten
    * Zoekdirectory
    * Tags
-   * Zoekcriteria, bijvoorbeeld Gewijzigde datums, Publish-status, LiveCopy-status
+   * Zoekcriteria, bijvoorbeeld Gewijzigde datums, Publicatiestatus, LiveCopy-status
 
    >[!NOTE]
    >
    >De zoekcriteria kunnen variëren:
    >
    >* Afhankelijk van het type bron dat u hebt geselecteerd, zijn bijvoorbeeld de criteria Assets en Communities begrijpelijk gespecialiseerd.
-   >* Uw exemplaar als Zoeken in Forms kan worden aangepast (afhankelijk van de locatie in AEM).
+   >* U kunt uw exemplaar als Zoeken in Forms aanpassen (afhankelijk van de locatie in AEM).
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
 
-![&#x200B; Onderzoek zijpaneel &#x200B;](/help/sites-cloud/authoring/assets/search-side-panel.png)
+![ Onderzoek zijpaneel ](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
 1. U kunt ook extra zoektermen toevoegen.
 
@@ -93,15 +94,15 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
 
 1. Bepaal uw onderzoekscriteria en selecteer **sparen**.
 
-   ![&#x200B; het Opslaan van een onderzoek &#x200B;](/help/sites-cloud/authoring/assets/search-side-panel.png)
+   ![ het Opslaan van een onderzoek ](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
 1. Wijs een naam toe, dan gebruik **sparen** om te bevestigen:
 
-   ![&#x200B; het Opslaan van een onderzoek met een naam &#x200B;](/help/sites-cloud/authoring/assets/search-save-name.png)
+   ![ het Opslaan van een onderzoek met een naam ](/help/sites-cloud/authoring/assets/search-save-name.png)
 
 1. De volgende keer dat u het deelvenster Zoeken opent, kunt u de opgeslagen zoekopdracht vanuit de kiezer openen:
 
-   ![&#x200B; Bewaarde onderzoeken &#x200B;](/help/sites-cloud/authoring/assets/saved-searches.png)
+   ![ Bewaarde onderzoeken ](/help/sites-cloud/authoring/assets/saved-searches.png)
 
 1. Nadat u het bestand hebt opgeslagen, kunt u:
 
@@ -110,4 +111,4 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
 
 Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder aan het zoekvenster op **Opgeslagen zoekopdracht bewerken** te klikken.
 
-![&#x200B; Wijzend een bewaard onderzoek &#x200B;](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
+![ Wijzend een bewaard onderzoek ](/help/sites-cloud/authoring/assets/saved-searches-modify.png)

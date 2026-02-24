@@ -3,11 +3,12 @@ title: Inhoudsfragmenten - Overwegingen verwijderen
 description: Bekijk deze belangrijke overwegingen voordat u uw beleid voor het verwijderen van inhoudsfragmenten in AEM definieert. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
    Voor de basisbewerking van de editor voor inhoudsfragmenten moeten dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties, ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
    * **Geval van het Gebruik**: Een gebruiker die een Fragment van de Inhoud moet uitgeven/bijwerken - **zonder het worden toegestaan om een volledig fragment** te schrappen.
-   * **Toestemmingen**: Zie [&#x200B; Toestemmingen die voor de Functionaliteit van de Redacteur slechts &#x200B;](#permissions-required-for-editor-functionality-only) worden vereist.
+   * **Toestemmingen**: Zie [ Toestemmingen die voor de Functionaliteit van de Redacteur slechts ](#permissions-required-for-editor-functionality-only) worden vereist.
 
 >[!NOTE]
 >

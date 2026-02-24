@@ -1,13 +1,14 @@
 ---
 title: Uw accountomgeving configureren
 description: Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '507'
 ht-degree: 4%
 
 ---
@@ -18,7 +19,7 @@ Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde
 
 Met de optie [Gebruiker](#user-settings) in de [koptekst](/help/sites-cloud/authoring/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#my-preferences) kunt u uw gebruikersopties wijzigen, zoals
 
-Begin door tot de [&#x200B; optie van de Gebruiker &#x200B;](#user-settings) in de kopbal toegang te hebben.
+Begin door tot de [ optie van de Gebruiker ](#user-settings) in de kopbal toegang te hebben.
 
 ## Gebruikersinstellingen {#user-settings}
 
@@ -31,15 +32,15 @@ Het **de montagedialoog van de Gebruiker** geeft u toegang tot:
 * [Mijn voorkeuren](#my-preferences)
    * Verschillende voorkeursinstellingen opgeven die uniek zijn voor uw gebruiker
 
-![&#x200B; montages van de Gebruiker &#x200B;](/help/sites-cloud/authoring/assets/user-settings.png)
+![ montages van de Gebruiker ](/help/sites-cloud/authoring/assets/user-settings.png)
 
 ### Mijn voorkeuren {#my-preferences}
 
-Het **Mijn de dialoogvakje van de Voorkeur** wordt betreden als [&#x200B; gebruiker &#x200B;](#user-settings) optie in de kopbal.
+Het **Mijn de dialoogvakje van de Voorkeur** wordt betreden als [ gebruiker ](#user-settings) optie in de kopbal.
 
 Elke gebruiker kan zijn eigen voorkeurseigenschappen instellen.
 
-![&#x200B; Mijn Voorkeur &#x200B;](/help/sites-cloud/authoring/assets/user-preferences.png)
+![ Mijn Voorkeur ](/help/sites-cloud/authoring/assets/user-preferences.png)
 
 * **Taal**
 
@@ -70,7 +71,7 @@ Elke gebruiker kan zijn eigen voorkeurseigenschappen instellen.
 
 * **Relatieve Presentatie van de Datum**
 
-  Om de leesbaarheid te verbeteren, worden AEM datums binnen de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
+  Om de leesbaarheid te verbeteren, geeft AEM datums binnen de laatste zeven dagen weer als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
   Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
@@ -83,7 +84,7 @@ Elke gebruiker kan zijn eigen voorkeurseigenschappen instellen.
 
 * **laat Kortere weg** toe
 
-  AEM ondersteunt verschillende sneltoetsen die het ontwerpen efficiënter maken.
+  AEM biedt ondersteuning voor verschillende sneltoetsen die het ontwerpen efficiënter maken.
 
    * [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
    * [Sneltoetsen voor consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
@@ -96,4 +97,4 @@ Elke gebruiker kan zijn eigen voorkeurseigenschappen instellen.
 
 * **Configuratie van de Beeld**
 
-  Deze optie laat u de aangewezen configuratie van Adobe Stock specificeren en is slechts beschikbaar als uw systeembeheerder [&#x200B; integratie van Adobe Stock &#x200B;](/help/assets/aem-assets-adobe-stock.md) heeft toegelaten.
+  Deze optie laat u de aangewezen configuratie van Adobe Stock specificeren en is slechts beschikbaar als uw systeembeheerder [ integratie van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md) heeft toegelaten.

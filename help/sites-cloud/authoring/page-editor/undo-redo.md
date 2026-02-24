@@ -1,20 +1,21 @@
 ---
 title: Beperkingen ongedaan maken en opnieuw uitvoeren
-description: Leer meer over de beperkingen van de opties voor Ongedaan maken en Opnieuw in de paginaeditor AEM.
+description: Meer informatie over de beperkingen van de opties voor Ongedaan maken en Opnieuw in de AEM-pagina-editor.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # Beperkingen ongedaan maken en opnieuw uitvoeren {#undo-redo}
 
-AEM slaat een geschiedenis van acties op die u uitvoert en de opeenvolging waarin u hen uitvoerde zodat u veelvoudige acties in de orde ongedaan kunt maken dat u hen uitvoerde en hen opnieuw doet om één of meerdere acties indien nodig opnieuw toe te passen.
+AEM slaat een geschiedenis op van handelingen die u uitvoert en de volgorde waarin u deze hebt uitgevoerd, zodat u meerdere handelingen ongedaan kunt maken in de volgorde waarin u deze hebt uitgevoerd en deze opnieuw kunt uitvoeren om een of meer handelingen indien nodig opnieuw toe te passen.
 
 Als een element op de inhoudspagina wordt geselecteerd (zoals een tekstcomponent), dan is het ongedaan maken en opnieuw bevel op het geselecteerde punt van toepassing.
 
@@ -24,7 +25,7 @@ U kunt bijvoorbeeld:
 
 * Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u Ongedaan maken hebt gebruikt.
 * U kunt maximaal 20 bewerkingen ongedaan maken (standaardinstelling).
-* Gebruik ook [&#x200B; kortere weg van het Toetsenbord &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) voor ongedaan maken en opnieuw doen.
+* Gebruik ook [ kortere weg van het Toetsenbord ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) voor ongedaan maken en opnieuw doen.
 
 U kunt de volgende typen paginawijzigingen ongedaan maken en opnieuw uitvoeren:
 

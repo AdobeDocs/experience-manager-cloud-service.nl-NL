@@ -3,11 +3,12 @@ title: Inhoud voorbereiden voor vertaling
 description: Leer hoe u inhoud voorbereidt voor vertaling bij het ontwikkelen van meertalige websites.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="van toepassing op AEM Sites)."
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ Meertalige websites bieden over het algemeen inhoud in meerdere talen. De site i
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie [&#128279;](/help/journey-sites/translation/overview.md) de Vertaalreis van 0&rbrace; Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.
+>Als u aan het vertalen van inhoud nieuw bent, zie [ de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend de krachtige vertaalhulpmiddelen van AEM, ideaal voor die zonder AEM of vertaalervaring.](/help/journey-sites/translation/overview.md)
 
-De [&#x200B; plaats van het WKND leerprogramma &#x200B;](/help/implementing/developing/introduction/develop-wknd-tutorial.md) omvat verscheidene taaltakken en gebruikt de volgende structuur:
+De [ plaats van het WKND leerprogramma ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) omvat verscheidene taaltakken en gebruikt de volgende structuur:
 
 ```text
 /content
@@ -53,15 +54,15 @@ De [&#x200B; plaats van het WKND leerprogramma &#x200B;](/help/implementing/deve
 
 De taalkopie waarvoor u oorspronkelijk site-inhoud hebt gemaakt, is de hoofdtaal. De taalmaster is de bron die in andere talen wordt vertaald.
 
-Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. `/content/wknd/fr` is bijvoorbeeld de hoofdtaal van de Franse taalkopie. De exemplaren van de taal moeten a [&#x200B; correct gevormde taalwortel &#x200B;](preparation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van een bronplaats worden uitgevoerd.
+Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. `/content/wknd/fr` is bijvoorbeeld de hoofdtaal van de Franse taalkopie. De exemplaren van de taal moeten a [ correct gevormde taalwortel ](preparation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van een bronplaats worden uitgevoerd.
 
 Gebruik de volgende stappen om uw site voor te bereiden op vertaling:
 
-1. Maak de hoofdmap van de taal van het stramien. De hoofdtaalsite van de Engelse WKND-demosite is bijvoorbeeld `/content/wknd/language-masters/en` . Zorg ervoor dat de taalwortel correct volgens de informatie in [&#x200B; Creërend een Wortel van de Taal &#x200B;](preparation.md#creating-a-language-root) wordt gevormd.
+1. Maak de hoofdmap van de taal van het stramien. De hoofdtaalsite van de Engelse WKND-demosite is bijvoorbeeld `/content/wknd/language-masters/en` . Zorg ervoor dat de taalwortel correct volgens de informatie in [ Creërend een Wortel van de Taal ](preparation.md#creating-a-language-root) wordt gevormd.
 1. Ontwerp de inhoud van uw taalstramien.
 1. Maak de hoofdmap van elke taalkopie voor uw site. De Franse taalkopie van de WKND-voorbeeldsite is bijvoorbeeld `/content/wknd/language-masters/fr` .
 
-Nadat u de inhoud hebt voorbereid voor vertaling, kunt u automatisch ontbrekende pagina&#39;s maken in uw taalkopieën en bijbehorende vertaalprojecten. (Zie [&#x200B; Creërend een Project van de Vertaling &#x200B;](managing-projects.md).) voor een overzicht van het proces van de inhoudsomzetting in AEM, zie [&#x200B; Vertaalende Inhoud voor Meertalige Websites &#x200B;](overview.md).
+Nadat u de inhoud hebt voorbereid voor vertaling, kunt u automatisch ontbrekende pagina&#39;s maken in uw taalkopieën en bijbehorende vertaalprojecten. (Zie [ Creërend een Project van de Vertaling ](managing-projects.md).) voor een overzicht van het proces van de inhoudsomzetting in AEM, zie [ Vertaalende Inhoud voor Meertalige Websites ](overview.md).
 
 ## Een hoofdmap voor talen maken {#creating-a-language-root}
 
@@ -78,12 +79,12 @@ U kunt beide indelingen gebruiken op basis van de structuur die u voor uw global
 1. Selecteer de site waarvoor u een taalkopie wilt maken.
 1. Selecteer **creeer**, en selecteer dan **Pagina**.
 
-   ![&#x200B; creeer pagina &#x200B;](../assets/create-page.png)
+   ![ creeer pagina ](../assets/create-page.png)
 
 1. Selecteer het paginamalplaatje en selecteer dan **daarna**.
 1. In het **gebied van de Naam** type de landcode in het formaat van `<language-code>` of `<language-code>_<country-code>`, bijvoorbeeld, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Typ een titel voor de pagina.
 
-   ![&#x200B; creeer de pagina van de taalwortel &#x200B;](../assets/create-language-root.png)
+   ![ creeer de pagina van de taalwortel ](../assets/create-language-root.png)
 
 1. Selecteer **Maken**. In de bevestigingsdialoogdoos, selecteer of **Gedaan** om aan de console van Plaatsen terug te keren, of **Open** om het taalexemplaar te openen.
 
@@ -91,13 +92,13 @@ U kunt beide indelingen gebruiken op basis van de structuur die u voor uw global
 
 AEM verstrekt a **spoor van Verwijzingen** dat een lijst van taalwortels toont die zijn gecreeerd.
 
-![&#x200B; wortels van de Taal &#x200B;](../assets/language-roots.png)
+![ wortels van de Taal ](../assets/language-roots.png)
 
-Gebruik de volgende proceduremening de taalexemplaren voor een pagina gebruikend de [&#x200B; spoorselecteur &#x200B;](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+Gebruik de volgende proceduremening de taalexemplaren voor een pagina gebruikend de [ spoorselecteur ](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 1. Voor de plaatsenconsole, selecteer een pagina van de plaats en selecteer dan **Verwijzingen**.
 
-   ![&#x200B; Open verwijzingen spoorstaaf &#x200B;](../assets/opening-references-rail.png)
+   ![ Open verwijzingen spoorstaaf ](../assets/opening-references-rail.png)
 
 1. In de verwijzingenspoorstaaf, de uitgezochte **Kopieën van de Taal**. De spoorstaaf toont de taalexemplaren van de website.
 
