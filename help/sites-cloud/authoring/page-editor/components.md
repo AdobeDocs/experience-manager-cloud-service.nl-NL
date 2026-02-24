@@ -43,11 +43,11 @@ De [&#x200B; Console van Componenten &#x200B;](/help/sites-cloud/authoring/compo
 
 ## Kernonderdelen {#core-components}
 
-De [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan, die essentiële inhoudstypes verstrekken om pagina&#39;s tot stand te brengen.
+De [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan, die essentiële inhoudstypes verstrekken om pagina&#39;s tot stand te brengen.
 
 Ze zijn gebouwd met de beste praktijken van AEM en vormen de basis van de AEM-ontwerpervaring. De Componenten van de kern kunnen gemakkelijk door ontwikkelaars worden uitgebreid om aan specifieke projectbehoeften te voldoen.
 
-Samen met de Componenten van de Kern WCM, kunt u [&#x200B; Aangepaste Componenten van de Kern van Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) ook gebruiken. Deze Componenten van Kern verstrekken een standaard en gemakkelijkere methodes om [&#x200B; tot stand te brengen of vormen aan een Pagina van AEM Sites toe te voegen &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Samen met de Componenten van de Kern WCM, kunt u [&#x200B; Aangepaste Componenten van de Kern van Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL#features) ook gebruiken. Deze Componenten van Kern verstrekken een standaard en gemakkelijkere methodes om [&#x200B; tot stand te brengen of vormen aan een Pagina van AEM Sites toe te voegen &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Sjablonen configureren {#configuring-templates}
 

@@ -96,7 +96,7 @@ Bij het maken van een bewerkbare sjabloon:
 >
 >Ga nooit om het even welke informatie in die [&#x200B; &#x200B;](/help/implementing/developing/extending/i18n/dev.md) in een malplaatje moet worden geinternationaliseerd.
 >
->Voor malplaatjeelementen zoals kopballen en footers die moeten worden gelokaliseerd, gebruik de [&#x200B; localisatieeigenschappen van de kerncomponenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Voor malplaatjeelementen zoals kopballen en footers die moeten worden gelokaliseerd, gebruik de [&#x200B; localisatieeigenschappen van de kerncomponenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=nl-NL).
 
 ### Sjabloonmap maken - Beheer {#creating-a-template-folder-admin}
 
@@ -519,7 +519,7 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 >
 >De eerste inhoud is bedoeld voor het voorbereiden van componenten en de paginalay-out die als uitgangspunt dienen voor het maken van de inhoud. Het is niet de bedoeling om de inhoud te zijn die ongewijzigd blijft. Daarom kan de initiële inhoud niet worden vertaald.
 >
->Als u vertaalbare tekst in uw malplaatje zoals in kopballen of footers moet omvatten, kunt u de [&#x200B; localisatieeigenschappen van de kerncomponenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) gebruiken.
+>Als u vertaalbare tekst in uw malplaatje zoals in kopballen of footers moet omvatten, kunt u de [&#x200B; localisatieeigenschappen van de kerncomponenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=nl-NL) gebruiken.
 
 ### Een sjabloon bewerken - Layout - Sjabloonauteur {#editing-a-template-layout-template-author}
 

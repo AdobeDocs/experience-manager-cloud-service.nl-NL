@@ -137,7 +137,7 @@ Er zijn verschillende stappen en definities vereist voor het leveren van uw gepe
 
 1. Configureer het publiek.
 
-   1. Afhankelijk van uw het richten motor, bepaal het [&#x200B; publiek van het Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) of [&#x200B; segment ContextHub &#x200B;](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md), samen met de regels.
+   1. Afhankelijk van uw het richten motor, bepaal het [&#x200B; publiek van het Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=nl-NL) of [&#x200B; segment ContextHub &#x200B;](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md), samen met de regels.
 
 1. Creeer uw [&#x200B; Merk en Activiteiten &#x200B;](/help/sites-cloud/authoring/personalization/activities.md).
 

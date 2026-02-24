@@ -15,10 +15,10 @@ ht-degree: 0%
 
 # Integreren met Adobe Target{#integrating-with-adobe-target}
 
-Als deel van Adobe Experience Cloud, [&#x200B; Adobe Target &#x200B;](https://experienceleague.adobe.com/en/docs/target) laat u inhoudsrelevantie door het richten en het meten over alle kanalen verhogen. Voor de integratie van Adobe Target en AEM as a Cloud Service zijn:
+Als deel van Adobe Experience Cloud, [&#x200B; Adobe Target &#x200B;](https://experienceleague.adobe.com/nl/docs/target) laat u inhoudsrelevantie door het richten en het meten over alle kanalen verhogen. Voor de integratie van Adobe Target en AEM as a Cloud Service zijn:
 
 * via de aanraakinterface een doelconfiguratie in AEM as a Cloud Service (vereiste IMS-configuratie) maken.
-* het toevoegen van en het vormen van Adobe Target als uitbreiding in [&#x200B; de Lancering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* het toevoegen van en het vormen van Adobe Target als uitbreiding in [&#x200B; de Lancering van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=nl-NL).
 
 Adobe Launch is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM-pagina&#39;s (JS-bibliotheken/tags). Dat gezegd hebbende, is de integratie met Lancering nodig voor &quot;Ervaring gericht&quot;.
 
@@ -30,7 +30,7 @@ Voor de uitvoer van de Fragmenten van de Ervaring en/of de Fragmenten van de Inh
 
 >[!NOTE]
 >
->Zie ook de documentatie van Adobe Target: [&#x200B; integreer Doel met Adobe Experience Manager (AEM) &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration).
+>Zie ook de documentatie van Adobe Target: [&#x200B; integreer Doel met Adobe Experience Manager (AEM) &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/integrate/aem/aem-target-integration).
 
 ## Adobe Target-configuratie maken {#create-configuration}
 
@@ -44,7 +44,7 @@ Voor de uitvoer van de Fragmenten van de Ervaring en/of de Fragmenten van de Inh
 
 ### IMS-configuratie {#ims-configuration}
 
-Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) vereist. De IMS-configuratie van het doel moet worden gemaakt (nadat het doel is ingericht). Zie [&#x200B; Instelling IMS Integraties voor AEM as a Cloud Service &#x200B;](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) en de video [&#x200B; Integrating de Lancering van het Platform van de Ervaring en AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) leren hoe te om de configuratie van Doel te creëren IMS.
+Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) vereist. De IMS-configuratie van het doel moet worden gemaakt (nadat het doel is ingericht). Zie [&#x200B; Instelling IMS Integraties voor AEM as a Cloud Service &#x200B;](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) en de video [&#x200B; Integrating de Lancering van het Platform van de Ervaring en AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=nl-NL) leren hoe te om de configuratie van Doel te creëren IMS.
 
 >[!NOTE]
 >
