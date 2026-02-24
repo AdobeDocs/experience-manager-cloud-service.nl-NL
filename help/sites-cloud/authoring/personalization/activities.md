@@ -15,7 +15,7 @@ ht-degree: 14%
 
 # Beheersactiviteiten {#managing-activities}
 
-De console van Activiteiten laat u toe om, de marketing [ activiteiten ](/help/sites-cloud/authoring/personalization/overview.md#activities) van uw merken tot stand te brengen te organiseren en te beheren:
+De console van Activiteiten laat u toe om, de marketing [&#x200B; activiteiten &#x200B;](/help/sites-cloud/authoring/personalization/overview.md#activities) van uw merken tot stand te brengen te organiseren en te beheren:
 
 * Brandmerken toevoegen
 * Voor elk merk, voeg en vorm activiteiten toe
@@ -23,11 +23,11 @@ De console van Activiteiten laat u toe om, de marketing [ activiteiten ](/help/s
 
 >[!TIP]
 >
->Als u Adobe Target als uw het richten motor gebruikt, kunt u prestaties gegevens van uw activiteiten [ ook ](#viewing-performance-and-converting-winning-experiences-a-b-test) bekijken. Als u A/B het testen gebruikt, kunt u [ winnaars ](#viewing-performance-and-converting-winning-experiences-a-b-test) omzetten.
+>Als u Adobe Target als uw het richten motor gebruikt, kunt u prestaties gegevens van uw activiteiten [&#x200B; ook &#x200B;](#viewing-performance-and-converting-winning-experiences-a-b-test) bekijken. Als u A/B het testen gebruikt, kunt u [&#x200B; winnaars &#x200B;](#viewing-performance-and-converting-winning-experiences-a-b-test) omzetten.
 
 Op de Activity Console worden de activiteiten georganiseerd door merk. U kunt merken en mappen gebruiken om uw activiteiten te structureren. U navigeert aan de console van Activiteiten door **Personalization** te tikken of te klikken en **Activiteiten** te tikken/te klikken.
 
-De activiteiten zijn beschikbaar op het richten wijze voor [ creërend gerichte inhoud ](/help/sites-cloud/authoring/personalization/targeted-content.md), waar u activiteiten kunt ook tot stand brengen. De activiteiten die u op het richten wijze creeert verschijnen in de console van Activiteiten.
+De activiteiten zijn beschikbaar op het richten wijze voor [&#x200B; creërend gerichte inhoud &#x200B;](/help/sites-cloud/authoring/personalization/targeted-content.md), waar u activiteiten kunt ook tot stand brengen. De activiteiten die u op het richten wijze creeert verschijnen in de console van Activiteiten.
 
 De activiteiten worden getoond met een etiket beschrijvend welke soort activiteit wordt bepaald:
 
@@ -35,7 +35,7 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 * A/B - Adobe Target A/B-tests
 * AEM - Adobe Experience Manager gericht (dat wil zeggen, ContextHub gedreven)
 
-![ types van Activiteit ](/help/sites-cloud/authoring/assets/activities-types.png)
+![&#x200B; types van Activiteit &#x200B;](/help/sites-cloud/authoring/assets/activities-types.png)
 
 >[!NOTE]
 >
@@ -60,13 +60,13 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 
 Maak een merk waarvoor u marketingactiviteiten wilt beheren.
 
-Wanneer u een merk gebruikend de console van Activiteiten creeert, verschijnt het ook in de [ console van Aanbiedingen ](/help/sites-cloud/authoring/personalization/offers.md) waar u aanbiedingen voor de ervaringen van uw activiteiten kunt tot stand brengen.
+Wanneer u een merk gebruikend de console van Activiteiten creeert, verschijnt het ook in de [&#x200B; console van Aanbiedingen &#x200B;](/help/sites-cloud/authoring/personalization/offers.md) waar u aanbiedingen voor de ervaringen van uw activiteiten kunt tot stand brengen.
 
 1. In de console van de Navigatie, uitgezochte **Personalization**. Selecteer **Activiteiten**.
 
-   ![ het navigeren aan activiteiten ](/help/sites-cloud/authoring/assets/activities-navigation.png)
+   ![&#x200B; het navigeren aan activiteiten &#x200B;](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
-1. In de console van Activiteiten, creeer de uitgezochte **** toen **merk** creëren.
+1. In de console van Activiteiten, creeer de uitgezochte **&#x200B;**&#x200B;toen **merk** creëren.
 1. Selecteer het merkmalplaatje en selecteer **daarna**.
 1. Typ een titel voor het merk zoals u deze wilt weergeven in de consoles Activiteiten en Aanbiedingen. Typ of selecteer eventueel een of meer tags die u aan het merk wilt koppelen.
 1. Selecteer **Maken**. Uw merk wordt weergegeven in de Activiteitenconsole.
@@ -122,7 +122,7 @@ Als u Adobe Target A/B Testen gebruikt:
    * **wanneer Gedeactiveerd**: De activiteit beëindigt wanneer de pagina die de gerichte inhoud bevat wordt gedeactiveerd.
    * **specificeerde Datum &amp; Tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, selecteert u het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
 1. Om een prioriteit voor de activiteit te specificeren, gebruik de schuif om of **Laag**, **Normaal**, of **Hoog** te selecteren.
-1. Als u Adobe Target gebruikt als de doelengine, selecteert u wat u met deze activiteit wilt meten. Zie [ Vormend de Activiteit en Plaatsende Doelstellingen ](/help/sites-cloud/authoring/personalization/targeted-content.md) voor meer informatie over de beschikbare succesmetriek. Selecteer ten minste één doel.
+1. Als u Adobe Target gebruikt als de doelengine, selecteert u wat u met deze activiteit wilt meten. Zie [&#x200B; Vormend de Activiteit en Plaatsende Doelstellingen &#x200B;](/help/sites-cloud/authoring/personalization/targeted-content.md) voor meer informatie over de beschikbare succesmetriek. Selecteer ten minste één doel.
 1. Selecteer **sparen**.
 
    >[!NOTE]
@@ -142,9 +142,9 @@ Om activiteiten te publiceren of unpublish:
 1. Selecteer het merk en vervolgens het gebied dat de activiteit bevat die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken.
 1. Selecteer het pictogram naast de activiteit of de activiteiten u wilt publiceren of unpublish.
 
-   ![ het Publiceren van activiteitenconsole ](/help/sites-cloud/authoring/assets/activities-console.png)
+   ![&#x200B; het Publiceren van activiteitenconsole &#x200B;](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Om te publiceren, publiceert de uitgezochte ****. Om unpublish, uitgezochte **unpublish**. Uw activiteit of activiteiten worden gepubliceerd of niet gepubliceerd en hun statusveranderingen in de console van de Activiteiten (kan vereisen verfrissen).
+1. Om te publiceren, publiceert de uitgezochte **&#x200B;**. Om unpublish, uitgezochte **unpublish**. Uw activiteit of activiteiten worden gepubliceerd of niet gepubliceerd en hun statusveranderingen in de console van de Activiteiten (kan vereisen verfrissen).
 
 ## Activiteiten met betrekking tot instanties Auteur en Publiceren {#activities-on-author-and-publish-instances}
 
@@ -163,7 +163,7 @@ Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te ze
 1. Selecteer het merk waarvoor u activiteiten wilt zien.
 1. Selecteer de activiteit en selecteer **Eigenschappen van de Mening** en klik het **lusje van Rapporten** en selecteer de activiteit die u prestaties voor wilt bekijken/het winnen ervaringen voor omzetten. Prestatiedata worden weergegeven.
 
-   ![ het Controleren activiteitenprestaties ](/help/sites-cloud/authoring/assets/activities-performance.png)
+   ![&#x200B; het Controleren activiteitenprestaties &#x200B;](/help/sites-cloud/authoring/assets/activities-performance.png)
 
 1. Selecteer de **Push winnaar** verbinding om die ervaring als standaardervaring te duwen.
 
@@ -172,7 +172,7 @@ Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te ze
    * De huidige activiteit wordt uitgeschakeld
    * Hiermee wijzigt u alle pagina&#39;s en vervangt u de doelinhoud door de feitelijke inhoud van de winnende ervaring. De inhoud van de het winnen ervaring wordt een deel van de normale pagina **zonder** het richten.
 
-   ![ Omzettend winnaar ](/help/sites-cloud/authoring/assets/activities-reports.png)
+   ![&#x200B; Omzettend winnaar &#x200B;](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    Een winnende ervaring is de ervaring die meer Lift in de rapporten produceert, die op de omrekeningskoers gebaseerd is.
 
@@ -193,7 +193,7 @@ Wanneer een activiteit wordt gesynchroniseerd, wordt een overeenkomstige campagn
 * De activiteiten op het publicatieexemplaar hebben de zelfde naam zoals de overeenkomstige campagne van Adobe Target.
 * De activiteiten op de auteurinstantie komen overeen met doelcampagnes met dezelfde naam en het achtervoegsel `_author` .
 
-![ Synchroon met Adobe Target ](/help/sites-cloud/authoring/assets/activities-synch.png)
+![&#x200B; Synchroon met Adobe Target &#x200B;](/help/sites-cloud/authoring/assets/activities-synch.png)
 
 De activiteiten van de auteur worden meteen gesynchroniseerd wanneer de activiteit wordt gewijzigd. De directe synchronisatie laat de simulatie van activiteiten met ContextHub toe.
 

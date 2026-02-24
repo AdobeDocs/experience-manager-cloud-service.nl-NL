@@ -19,17 +19,17 @@ Met de componentenconsole kunt u door alle componenten bladeren die voor uw inst
 
 Het kan van **Hulpmiddelen worden betreden >** **Algemeen >** **Componenten**. Omdat er geen boomstructuur voor componenten is, is alleen de lijstweergave beschikbaar.
 
-![ de Console van Componenten ](/help/sites-cloud/authoring/assets/components-console.png)
+![&#x200B; de Console van Componenten &#x200B;](/help/sites-cloud/authoring/assets/components-console.png)
 
 >[!NOTE]
 >
->In de Componentenconsole worden alle componenten in het systeem weergegeven. Browser van de Component [ toont componenten die aan auteurs beschikbaar zijn en verbergt om het even welke componentengroepen die met een periode ( ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)) beginnen.`.`
+>In de Componentenconsole worden alle componenten in het systeem weergegeven. Browser van de Component [&#x200B; toont componenten die aan auteurs beschikbaar zijn en verbergt om het even welke componentengroepen die met een periode ( &#x200B;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)) beginnen.`.`
 
 ## Zoeken {#search-field}
 
 Met het pictogram **Alleen content** (linksboven) kunt u het deelvenster **Zoeken** openen om de componenten te zoeken en/of te filteren:
 
-![ zoekend in de Console van Componenten ](/help/sites-cloud/authoring/assets/components-console-search.png)
+![&#x200B; zoekend in de Console van Componenten &#x200B;](/help/sites-cloud/authoring/assets/components-console-search.png)
 
 ### Componentdetails {#component-details}
 
@@ -37,7 +37,7 @@ Als u details over een bepaalde component wilt weergeven, selecteert u de gewens
 
 * **Eigenschappen**
 
-  ![ eigenschappen van de Console van Componenten ](/help/sites-cloud/authoring/assets/components-console-properties.png)
+  ![&#x200B; eigenschappen van de Console van Componenten &#x200B;](/help/sites-cloud/authoring/assets/components-console-properties.png)
 
   Op het tabblad Eigenschappen kunt u het volgende doen:
 
@@ -53,11 +53,11 @@ Als u details over een bepaalde component wilt weergeven, selecteert u de gewens
 
 * **Beleid**
 
-  ![ Beleid van de Console van de Component ](/help/sites-cloud/authoring/assets/components-console-policies.png)
+  ![&#x200B; Beleid van de Console van de Component &#x200B;](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **Levend Gebruik**
 
-  ![ Levend gebruik van componenten ](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+  ![&#x200B; Levend gebruik van componenten &#x200B;](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
 
   >[!CAUTION]
   >
@@ -67,4 +67,4 @@ Als u details over een bepaalde component wilt weergeven, selecteert u de gewens
 
   Als de ontwikkelaar documentatie voor de component heeft verstrekt, zal het op de **Documentatie** tabel verschijnen. Als er geen beschikbare documentatie is, zal het **Documentatie** lusje niet worden getoond. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-  ![ documentatie van de Component ](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+  ![&#x200B; documentatie van de Component &#x200B;](/help/sites-cloud/authoring/assets/components-console-documentation.png)

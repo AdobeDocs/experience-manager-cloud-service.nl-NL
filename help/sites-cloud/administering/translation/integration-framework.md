@@ -17,23 +17,23 @@ ht-degree: 0%
 
 Het vertaalintegratiekader integreert met vertaalservices van derden om de vertaling van AEM-inhoud te ordenen. Het gaat om drie basisstappen.
 
-1. [ verbind met uw leverancier van de vertaaldienst ](#connecting-to-a-translation-service-provider).
-1. [ creeer een configuratie van het Kader van de Integratie van de Vertaling ](#creating-a-translation-integration-configuration).
-1. [ associeer de wolkenconfiguraties met uw pagina&#39;s ](#configuring-pages-for-translation).
+1. [&#x200B; verbind met uw leverancier van de vertaaldienst &#x200B;](#connecting-to-a-translation-service-provider).
+1. [&#x200B; creeer een configuratie van het Kader van de Integratie van de Vertaling &#x200B;](#creating-a-translation-integration-configuration).
+1. [&#x200B; associeer de wolkenconfiguraties met uw pagina&#39;s &#x200B;](#configuring-pages-for-translation).
 
-Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](overview.md).
+Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](overview.md).
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie [ de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend de krachtige vertaalhulpmiddelen van AEM, ideaal voor die zonder AEM of vertaalervaring.](/help/journey-sites/translation/overview.md)
+>Als u aan het vertalen van inhoud nieuw bent, zie [&#x200B; de Vertaalreis van 0&rbrace; Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend de krachtige vertaalhulpmiddelen van AEM, ideaal voor die zonder AEM of vertaalervaring.](/help/journey-sites/translation/overview.md)
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 
 Maak een cloudconfiguratie die AEM verbindt met uw vertaalserviceprovider.
 
-AEM omvat het vermogen om [ met Vertaler Microsoft® ](connect-ms-translator.md) door gebrek te verbinden. Andere verkopers van vertaaltechnologie met de schakelaars van AEM die lid van het de partnerprogramma van Adobe Exchange zijn kunnen [ hier ](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE) worden gevonden.
+AEM omvat het vermogen om [&#x200B; met Vertaler Microsoft® &#x200B;](connect-ms-translator.md) door gebrek te verbinden. Andere verkopers van vertaaltechnologie met de schakelaars van AEM die lid van het de partnerprogramma van Adobe Exchange zijn kunnen [&#x200B; hier &#x200B;](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE) worden gevonden.
 
-Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar creëren. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een wolkenconfiguratie voor de Vertaalschakelaar Microsoft®, zie [ Integrerend met Vertaler Microsoft® ](connect-ms-translator.md).
+Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar creëren. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een wolkenconfiguratie voor de Vertaalschakelaar Microsoft®, zie [&#x200B; Integrerend met Vertaler Microsoft® &#x200B;](connect-ms-translator.md).
 
 Indien nodig kunt u meerdere cloudconfiguraties voor dezelfde aansluiting maken. U kunt bijvoorbeeld één configuratie maken voor elk van de accounts of projecten die u bij dezelfde leverancier hebt.
 
@@ -51,15 +51,15 @@ Nadat u een kaderconfiguratie creeert, associeert u de wolkenconfiguratie met de
 
 Wanneer verschillende gedeelten van uw website verschillende vertaalvereisten hebben, kunt u overeenkomstig meerdere frameworkconfiguraties maken. Een meertalige website kan bijvoorbeeld kopieën in de Engelse, Spaanse en Japanse taal bevatten. De eigenaar van de site gebruikt twee verschillende vertaalserviceproviders voor Spaanse en Japanse vertalingen. Daarom worden twee configuraties van het kader gevormd. Elke configuratie gebruikt een verschillende leverancier van vertaaldiensten.
 
-Nadat u een kader van de vertaalintegratie vormt, kunt u het [ associëren met de pagina&#39;s ](preparation.md) die het gebruiken.
+Nadat u een kader van de vertaalintegratie vormt, kunt u het [&#x200B; associëren met de pagina&#39;s &#x200B;](preparation.md) die het gebruiken.
 
 >[!TIP]
 >
->Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](overview.md).
+>Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](overview.md).
 
 Eén configuratie van het framework bepaalt hoe pagina-inhoud en elementen worden vertaald. Een vertaalconfiguratie maken:
 
-1. In het [ globale navigatiemenu ](/help/sites-cloud/authoring/basic-handling.md#global-navigation), uitgezochte **Hulpmiddelen > de Diensten van de Wolk &amp; de Diensten van de Wolk van de Vertaling**.
+1. In het [&#x200B; globale navigatiemenu &#x200B;](/help/sites-cloud/authoring/basic-handling.md#global-navigation), uitgezochte **Hulpmiddelen > de Diensten van de Wolk &amp; de Diensten van de Wolk van de Vertaling**.
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt creëren. Dit is vaak gebaseerd op een bepaalde site of kan globaal zijn.
 1. Verstrek de volgende informatie op de gebieden en selecteer dan **creëren**:
    1. Selecteer **Type van Configuratie** in drop-down.
@@ -71,7 +71,7 @@ Eén configuratie van het framework bepaalt hoe pagina-inhoud en elementen worde
 
 Het **lusje van Plaatsen** controleert hoe de vertaling van paginainhoud wordt uitgevoerd.
 
-![ de configuratie van de Vertaling voor Plaatsen ](../assets/translation-configuration.png)
+![&#x200B; de configuratie van de Vertaling voor Plaatsen &#x200B;](../assets/translation-configuration.png)
 
 | Eigenschap | Beschrijving |
 |---|---|
@@ -85,9 +85,9 @@ Het **lusje van Plaatsen** controleert hoe de vertaling van paginainhoud wordt u
 
 ### Assets-configuratieeigenschappen {#assets-configuration-properties}
 
-Assets-eigenschappen bepalen hoe elementen moeten worden geconfigureerd. Voor meer informatie over het vertalen van activa, zie [ Creërend de Kopieën van de Taal voor Assets ](/help/assets/translate-assets.md).
+Assets-eigenschappen bepalen hoe elementen moeten worden geconfigureerd. Voor meer informatie over het vertalen van activa, zie [&#x200B; Creërend de Kopieën van de Taal voor Assets &#x200B;](/help/assets/translate-assets.md).
 
-![ de configuratie van de Vertaling voor Plaatsen ](../assets/translation-configuration-assets.png)
+![&#x200B; de configuratie van de Vertaling voor Plaatsen &#x200B;](../assets/translation-configuration-assets.png)
 
 | Eigenschap | Beschrijving |
 |---|---|
@@ -99,7 +99,7 @@ Assets-eigenschappen bepalen hoe elementen moeten worden geconfigureerd. Voor me
 | Tags vertalen | Activeer deze eigenschap zodat u tags kunt vertalen die aan het element zijn gekoppeld. |
 | Vertaling automatisch uitvoeren | Selecteer deze eigenschap zodat u na het maken van vertaalprojecten automatisch vertaaltaken kunt uitvoeren. U hebt geen gelegenheid om de vertaalbaan te herzien of te behandelen wanneer u deze optie selecteert. |
 | Alleen-bijwerken translatie uitschakelen | Als deze optie is ingeschakeld, worden bij het bijwerken van het vertaalproject alle vertaalbare velden voor vertaling ingediend, niet alleen de velden die zijn gewijzigd sinds de laatste vertaling. |
-| Velden voor inhoudsmodellen inschakelen voor vertaling | Het toelaten van deze optie gebruikt het **Vertaalbare** gebied op [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) om te bepalen als het gebied wordt vertaald en creeert automatisch [ vertaalregels ](rules.md) dienovereenkomstig. Deze optie vervangt de vertaalregels die u hebt gemaakt. |
+| Velden voor inhoudsmodellen inschakelen voor vertaling | Het toelaten van deze optie gebruikt het **Vertaalbare** gebied op [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) om te bepalen als het gebied wordt vertaald en creeert automatisch [&#x200B; vertaalregels &#x200B;](rules.md) dienovereenkomstig. Deze optie vervangt de vertaalregels die u hebt gemaakt. |
 
 ## Pagina&#39;s voor omzetting configureren {#configuring-pages-for-translation}
 
@@ -119,7 +119,7 @@ Indien nodig, kunt u de koppeling op een afstammende pagina overschrijven. De in
 Koppel een pagina aan de vertaalprovider die u gebruikt om de pagina en afstammende pagina&#39;s te vertalen.
 
 1. In de plaatsenconsole, selecteer de pagina om **Eigenschappen van de Mening** te vormen en te selecteren.
-1. Selecteer de **tabel van de Diensten van de Wolk 0} {.**
+1. Selecteer de **tabel van de Diensten van de Wolk 0&rbrace; &lbrace;.**
 1. In **voeg de drop-down lijst van de Configuratie** toe, selecteer de configuratie.
 1. Selecteer **sparen &amp; Sluiten**.
 
@@ -128,6 +128,6 @@ Koppel een pagina aan de vertaalprovider die u gebruikt om de pagina en afstamme
 Koppel een pagina aan het vertaalintegratieframework dat definieert hoe u de vertaling van de pagina en afstammende pagina&#39;s wilt uitvoeren.
 
 1. In de plaatsenconsole, selecteer de pagina om **Eigenschappen van de Mening** te vormen en te selecteren.
-1. Selecteer de **tabel van de Diensten van de Wolk 0} {.**
+1. Selecteer de **tabel van de Diensten van de Wolk 0&rbrace; &lbrace;.**
 1. In **voeg de drop-down lijst van de Configuratie** toe, selecteer de configuratie.
 1. Selecteer **sparen &amp; Sluiten**.

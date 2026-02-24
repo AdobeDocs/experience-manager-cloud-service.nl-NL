@@ -22,16 +22,16 @@ Automatiseer de vertaling van pagina-inhoud en -elementen om meertalige websites
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie [ de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend de krachtige vertaalhulpmiddelen van AEM, ideaal voor die zonder AEM of vertaalervaring.](/help/journey-sites/translation/overview.md)
+>Als u aan het vertalen van inhoud nieuw bent, zie [&#x200B; de Vertaalreis van 0&rbrace; Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend de krachtige vertaalhulpmiddelen van AEM, ideaal voor die zonder AEM of vertaalervaring.](/help/journey-sites/translation/overview.md)
 
 Voor het vertalen van inhoud worden de volgende stappen uitgevoerd:
 
-1. [ verbind AEM met uw leverancier van de vertaaldienst ](integration-framework.md#connecting-to-a-translation-service-provider) en [ creeer configuraties van het kader van de vertaalintegratie ](integration-framework.md).
-1. [ associeer de pagina&#39;s van uw taalmeester ](integration-framework.md#configuring-pages-for-translation) met de vertaaldienst en kaderconfiguraties.
-1. [ identificeer het type van inhoud ](rules.md) om te vertalen.
-1. [ bereidt de inhoud voor vertaling ](preparation.md) voor door de taalmeester te ontwerpen en de wortelpagina&#39;s van taalexemplaren te creëren.
-1. [ creeer vertaalprojecten ](managing-projects.md) om de inhoud te verzamelen om te vertalen en het vertaalproces voor te bereiden.
-1. Gebruik de vertaalprojecten om [ het proces van de inhoudvertaling ](managing-projects.md) te beheren.
+1. [&#x200B; verbind AEM met uw leverancier van de vertaaldienst &#x200B;](integration-framework.md#connecting-to-a-translation-service-provider) en [&#x200B; creeer configuraties van het kader van de vertaalintegratie &#x200B;](integration-framework.md).
+1. [&#x200B; associeer de pagina&#39;s van uw taalmeester &#x200B;](integration-framework.md#configuring-pages-for-translation) met de vertaaldienst en kaderconfiguraties.
+1. [&#x200B; identificeer het type van inhoud &#x200B;](rules.md) om te vertalen.
+1. [&#x200B; bereidt de inhoud voor vertaling &#x200B;](preparation.md) voor door de taalmeester te ontwerpen en de wortelpagina&#39;s van taalexemplaren te creëren.
+1. [&#x200B; creeer vertaalprojecten &#x200B;](managing-projects.md) om de inhoud te verzamelen om te vertalen en het vertaalproces voor te bereiden.
+1. Gebruik de vertaalprojecten om [&#x200B; het proces van de inhoudvertaling &#x200B;](managing-projects.md) te beheren.
 
 Als uw vertaalserviceprovider geen aansluiting voor integratie met AEM biedt, biedt AEM ondersteuning voor het handmatig extraheren en opnieuw invoegen van vertaalinhoud in XML-indeling.
 
@@ -41,4 +41,4 @@ Als uw vertaalserviceprovider geen aansluiting voor integratie met AEM biedt, bi
 
 ## Aanbevolen procedures {#best-practices}
 
-De [ pagina van de Beste praktijken van de Vertaling ](best-practices.md) bevat belangrijke informatie betreffende uw implementatie.
+De [&#x200B; pagina van de Beste praktijken van de Vertaling &#x200B;](best-practices.md) bevat belangrijke informatie betreffende uw implementatie.
