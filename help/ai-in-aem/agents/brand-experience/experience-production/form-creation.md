@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Taak voor maken van formulier {#form-creation-job}
 
-De baan van de vormverwezenlijking is een vermogen van de [ Agent van de Ervaring van het Merk ](/help/ai-in-aem/agents/brand-experience/overview.md) die wordt ontworpen om vormen te ontwikkelen gebruikend natuurlijke taalherinneringen. Deze taak genereert automatisch de juiste formulierstructuur en veldtypen. De taak wordt weergegeven via AI Assistant.
+De baan van de vormverwezenlijking is een vermogen van de [&#x200B; Agent van de Ervaring van het Merk &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) die wordt ontworpen om vormen te ontwikkelen gebruikend natuurlijke taalherinneringen. Deze taak genereert automatisch de juiste formulierstructuur en veldtypen. De taak wordt weergegeven via AI Assistant.
 
 Enkele belangrijke voordelen van het maken van formulieren zijn onder andere:
 
@@ -52,11 +52,11 @@ Nadat u de initiële formulierstructuur hebt gemaakt met de AI Assistant, kunt u
 
 * **vorm voorlegging**: Vorm waar de vormgegevens, met inbegrip van vestiging e-mailberichten, integratie met werkschema&#39;s, of verbindingen aan externe systemen worden voorgelegd.
 
-Voor meer informatie, zie {de documentatie van de Bouwer van de Ervaring van 0} Forms.[](/help/forms/experience-builder/product-overview.md)
+Voor meer informatie, zie {de documentatie van de Bouwer van de Ervaring van 0} Forms.[&#128279;](/help/forms/experience-builder/product-overview.md)
 
 ## Activering {#activation}
 
-U kunt de Agenten van AEM door [ Playground ](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.
+U kunt de Agenten van AEM door [&#x200B; Playground &#x200B;](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.
 
 <!-- 
 #### Import and convert {#import-and-convert}
