@@ -18,7 +18,7 @@ ht-degree: 0%
 
 De baan kan pijpleidingsstatussen terugwinnen en u helpen het ontbreken problemen oplossen bouwt stappen door moeilijke situaties voor te stellen, die tijd besparen wanneer het zuiveren van de plaatsingen van AEM as a Cloud Service aan ontwikkelings, stadium, en productiemilieu&#39;s. Het onderzoekt bouwlogboeken en verwante code om een moeilijke situatie aan te bevelen die u manueel kunt toepassen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478013?captions=dut&quality=12&learn=on)
 
 >[!IMPORTANT]
 >
