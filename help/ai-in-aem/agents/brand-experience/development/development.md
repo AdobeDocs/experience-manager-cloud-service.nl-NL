@@ -32,7 +32,7 @@ De baan kan pijpleidingsstatussen terugwinnen en u helpen het ontbreken probleme
 
 Om tot deze baan toegang te hebben, gelieve te verwijzen naar de [&#x200B; versienota&#39;s &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) voor instructies op hoe te in het bètaprogramma inschrijven, die zeker zijn om op uw interesse in de ontwikkelingstaak te wijzen. U kunt ontwikkelt ook bericht-specifieke terugkoppelen aan [&#x200B; aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[&#x200B; volg langs een leerprogramma &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) om te leren hoe te om de Agent van de Ontwikkeling te gebruiken om pijpleidingsmislukkingen problemen op te lossen.
+[&#x200B; volg langs een leerprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) om te leren hoe te om de Agent van de Ontwikkeling te gebruiken om pijpleidingsmislukkingen problemen op te lossen.
 
 ## Toegang tot de ontwikkelingsbaan via Cloud Manager {#how-to-access-the-job}
 
