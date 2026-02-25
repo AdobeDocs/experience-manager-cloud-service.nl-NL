@@ -4,9 +4,9 @@ description: Leer wat de de inhoudsupdate van de Agent van de Merk is en wat het
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Taak voor bijwerken van inhoud {#content-update}
 
-De baan van de inhoudsupdate van de [&#x200B; Agent van de Ervaring van het Merk &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert inhoudsproductie om dagelijkse taken voor Adobe Experience Manager (AEM) as a Cloud Service en Edge Delivery Services te versnellen.
+De baan van de inhoudsupdate van de [ Agent van de Ervaring van het Merk ](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert inhoudsproductie om dagelijkse taken voor Adobe Experience Manager (AEM) as a Cloud Service en Edge Delivery Services te versnellen.
 
 ## Overzicht {#overview}
 
 De inhoudsupdate-taak werkt bestaande inhoud bij, inclusief inhoudsfragmenten, pagina&#39;s, formulieren en elementen. De taak kan handelingen uitvoeren zoals het bijwerken, verwijderen, vervangen of toevoegen van inhoudselementen om ervaringen nauwkeurig en actueel te houden. Invoer kan een natuurlijke taalbeschrijving zijn en bij Jira PDF&#39;s en screenshots kan ook invoer worden geleverd.
 
-De functie voor het bijwerken van de inhoud verandert de gegevens die u opgeeft, in de natuurlijke taal of de visuele weergave, in de inhoud van de pagina-updates. U verstrekt URL van een pagina die moet bijwerken, samen met details van wat bijwerken vereist, en de agentenvaardigheid voltooit uw taak.
+De functie voor het bijwerken van de inhoud verandert de gegevens die u opgeeft, in de natuurlijke taal of de visuele weergave, in de inhoud van de pagina-updates. U verstrekt URL van een pagina die moet bijwerken, samen met details van wat bijwerken vereist, en de agentenvaardigheid voltooit uw taak. Wanneer gebruikt met Adobe Experience Manager (AEM) as a Cloud Service, leidt de baan tot een nieuwe [ lancering ](/help/sites-cloud/authoring/launches/overview.md) zodat kunt u de updates herzien alvorens toe te passen. Wanneer gebruikt met het auteursrecht van het Document, leidt de baan tot een nieuwe [ versie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Mogelijkheden {#capabilities}
 
@@ -33,25 +33,44 @@ U hebt toegang tot de vaardigheden voor het bijwerken van inhoud via:
 
 U kunt de taak in AEM openen via de AI-assistent.
 
-Open de AI-assistent vanuit [`experience.adobe.com` &#x200B;](https://experience.adobe.com) en begin vervolgens met interactie door de vraag in de natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
+Open de AI-assistent vanuit [`experience.adobe.com` ](https://experience.adobe.com) en begin vervolgens met interactie door de vraag in de natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
 
-![&#x200B; Baan van de Update van de Inhoud &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
+![ Baan van de Update van de Inhoud ](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
-### Voorbeeldvragen {#sample-prompts}
+### De publicatie-URL configureren {#configuring-the-publish-url}
 
-Om inhoudsupdates in werking te stellen kunt u een brede waaier van natuurlijke taalherinneringen geven. U moet ook de openbare URL opgeven van de pagina die u wilt bijwerken. Bijvoorbeeld:
+Voor het gebruik van een publicatie-URL (public Onder ogen zien) moet een eenmalige configuratie worden uitgevoerd:
 
-* Wijzig de volgende pagina `https://www.your-url.com/sale` De hoofdhoofdhoofdhoofdhoofdhoofdhoofdkop bijwerken naar &quot;Zwarte Vrijdag - Schaal - tot 70% korting&quot;, wijzig de afteltimer om &quot;Eindigt binnen 48 uur&quot; te tonen, verwijder &quot;Aanmelden voor updates&quot;, wijzig alle knoppen &quot;Nu winkelen&quot; in &quot;De deal regelen&quot;
+* Vereisten:
 
-* `https://www.your-url.com/laptops/your-laptop-model` Update banner copy to &quot;Save 300 USD Today Only&quot;, Update pricing from 1.299 USD to 99 USD, Remove finance option banner
+   * Om de configuratie te kunnen maken, moet de gebruiker over System Admin of Product Admin-rechten beschikken.
 
-* `https://www.your-url.com/your-sneaker` Werk de voorraadstatus bij van &quot;Low Stock&quot; naar &quot;Back in Stock - Limited Quantities&quot;. Wijzig de formaatkiezer om de beschikbare formaten in groen te markeren. Verwijder de badge &quot;Binnenkort&quot;
+* Configuratie:
 
-* `https://www.your-url.com/your-sneaker` Werk de productafbeeldingen bij om nieuwe kleuren weer te geven
+   1. Roep de vaardigheid van de Update van de Inhoud aan door een inhoudsupdate voor URL te verzoeken.
+   1. De medewerker zal u door de configuratie, door u een aantal vragen te stellen lopen.
+   1. Nadat de publicatie-URL is voltooid, is deze geconfigureerd en kan deze worden gebruikt.
+
+Bijvoorbeeld:
+
+![ de vaardigheid van de Update van de Inhoud - vorm publiceer URL ](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
+
+### Vragen {#prompts}
+
+Om inhoudsupdates in werking te stellen kunt u een brede waaier van natuurlijke taalherinneringen geven. U moet het openbare onder ogen ziende (publiceren) URL, of auteur milieu URL, van de pagina specificeren u wilt bijwerken. Sommige, maar niet alle, werkwoorden die worden ondersteund; vervangen, bijwerken, verwijderen, wijzigen, herzien, aanpassen, verwijderen.
 
 >[!NOTE]
 >
->Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund met AI Medewerker.
+>Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [ Jira ](#jira), maar wordt niet gesteund met AI Medewerker.
+
+### Voorbeeldvragen {#sample-prompts}
+
+Voorbeelden hiervan zijn:
+
+* op `<your-publish-URL>` update &quot;Uw perfecte koffie is vier vragen verderop!&quot; tot &quot;Uw koffie, jouw weg!&quot;
+* op `<your-author-env-URL>` vervangt u de afbeelding van &quot;holdingcup.png&quot; in &quot;stairhead.png&quot;
+* on `<your-publish-URL>` change &quot;Take our Coffee Quiz&quot; button to a boeiender version&quot;
+* op `<your-author-env-URL>` de sectie &quot;Rewards unclaimis a Cadeautje gemist!&quot; te verwijderen
 
 ## Jira {#jira}
 
@@ -79,17 +98,11 @@ Maak een Jira-ticket (van elk type). Er zijn twee essentiële details nodig op h
 
 ### De taak aanroepen vanaf uw ticket {#invoke-the-job-from-your-ticket}
 
-Als u de taak wilt gebruiken, voegt u een opmerking toe aan uw ticket. In de opmerking wordt de taak vermeld met het symbool `@` en de opdracht die moet worden uitgevoerd, bijvoorbeeld:
+Als u de taak wilt gebruiken, voegt u een opmerking toe aan uw ticket. Vermeld in de opmerking de taak met het symbool `@` , samen met de instructies.
 
-* `@aemagent@adobe.com process`
+Bijvoorbeeld:
 
-Op dit moment begrijpt de taak de opdrachten:
-
-* `process` - de aanvraag verwerken
-* `cancel` - een verwerkingsverzoek annuleren
-* `retry` - een aanvraag opnieuw verwerken
-* `feedback` - feedback toepassen op een vorige generatie
-* `reprocess` - de oorspronkelijke aanvraag opnieuw verwerken
+* `@aemagent@adobe.com process this ticket`
 
 ### Hoe de baan interactie heeft {#how-the-agent-interacts}
 
@@ -105,41 +118,14 @@ Als de opdracht `process` updates activeert, volgen de reacties mogelijk de volg
 
 * De volgende afbeelding toont een voorbeeld-Jira die het `process` bevel voor de baan van de inhoudsupdate in werking stelt:
 
-  ![&#x200B; Jira van het Voorbeeld gebruikend de baan van de inhoudsupdate van de Agent van de Productie van de Ervaring &#x200B;](assets/content-update-jira-example.png)
+  ![ Jira van het Voorbeeld gebruikend de baan van de inhoudsupdate van de Agent van de Productie van de Ervaring ](assets/content-update-jira-example.png)
 
 ## Activering {#activation}
 
-Neem contact op met Adobe als u de communicatietaak wilt activeren en toegang wilt krijgen tot de communicatietaak. Om aan de slag te gaan kunt u:
-
-* Contact `experience-production-agent@adobe.com`
-* Of ga naar uw accountteam
-
-Om het proces te versnellen helpt het om de volgende informatie te verstrekken:
-
-* Voor AEM as a Cloud Service moet u het volgende opgeven:
-   * Organisatie-id
-   * `product_id`
-   * `profile_id`
-
-   * U vindt deze waarden als volgt:
-      1. Uw beheerder moet [`https://adminconsole.adobe.com` bezoeken &#x200B;](https://adminconsole.adobe.com)
-      1. Selecteer **Adobe Experience Manager as a Cloud Service**
-      1. Selecteer de juiste AEM-instantie
-      1. Selecteer het profiel dat lees- en schrijfbewerkingen toestaat voor de desbetreffende inhoud
-      1. De URL van de browser ophalen
-      1. Extraheer `product_id` en `profile_id` uit de URL.
-Bijvoorbeeld: `https://adminconsole.adobe.com/products/profiles/users`
-
-* Authoring in Edge Delivery-documenten
-   * Geef uw Adobe-team de volgende informatie:
-      * Relevante domeinen
-      * Relevante Github-informatie:
-         * Org
-         * Repo
-         * Branch
+U kunt de Agenten van AEM door [ Playground ](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.
 
 ## Beperkingen {#limitations}
 
 Houd rekening met de volgende beperkingen:
 
-* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [&#x200B; AI Medewerker.](#ai-assistant)
+* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [ Jira ](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [ AI Medewerker.](#ai-assistant)

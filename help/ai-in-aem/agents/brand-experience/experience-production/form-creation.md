@@ -4,9 +4,9 @@ description: Leer meer over de functie voor het maken van formulieren door de Br
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Taak voor maken van formulier {#form-creation-job}
 
-De baan van de vormverwezenlijking is een vermogen van de [&#x200B; Agent van de Ervaring van het Merk &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) die wordt ontworpen om vormen te ontwikkelen gebruikend natuurlijke taalherinneringen. Deze taak genereert automatisch de juiste formulierstructuur en veldtypen. De taak wordt weergegeven via AI Assistant.
+De baan van de vormverwezenlijking is een vermogen van de [ Agent van de Ervaring van het Merk ](/help/ai-in-aem/agents/brand-experience/overview.md) die wordt ontworpen om vormen te ontwikkelen gebruikend natuurlijke taalherinneringen. Deze taak genereert automatisch de juiste formulierstructuur en veldtypen. De taak wordt weergegeven via AI Assistant.
 
 Enkele belangrijke voordelen van het maken van formulieren zijn onder andere:
 
@@ -52,17 +52,11 @@ Nadat u de initiële formulierstructuur hebt gemaakt met de AI Assistant, kunt u
 
 * **vorm voorlegging**: Vorm waar de vormgegevens, met inbegrip van vestiging e-mailberichten, integratie met werkschema&#39;s, of verbindingen aan externe systemen worden voorgelegd.
 
-Voor meer informatie, zie {de documentatie van de Bouwer van de Ervaring van 0} Forms.[&#128279;](/help/forms/experience-builder/product-overview.md)
-
+Voor meer informatie, zie {de documentatie van de Bouwer van de Ervaring van 0} Forms.[](/help/forms/experience-builder/product-overview.md)
 
 ## Activering {#activation}
 
-Als u de functie voor het maken van formulieren wilt inschakelen voor uw organisatie, moet de activering worden gestart via Adobe. Begin het proces door uit te reiken via:
-
-* E-mail: `experience-production-agent@adobe.com`
-* Of neem contact op met het aangewezen Adobe-accountteam.
-
-Geef bij het uitkomen uw AEM as a Cloud Service-organisatie-id op.
+U kunt de Agenten van AEM door [ Playground ](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.
 
 <!-- 
 #### Import and convert {#import-and-convert}
