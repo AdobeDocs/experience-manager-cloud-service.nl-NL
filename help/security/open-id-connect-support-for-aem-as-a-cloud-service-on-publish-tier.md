@@ -4,9 +4,9 @@ description: Meer informatie over het instellen van Open ID Connect (OIDC) voor 
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
+source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '2153'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Naarmate organisaties hun digitale ervaringen moderniseren, wordt een veilig en schaalbaar identiteitsbeheer een fundamentele vereiste. Adobe Experience Manager (AEM) Cloud Service biedt nu ondersteuning voor OpenID Connect (OIDC) op de publicatielaag, zodat naadloze en op standaarden gebaseerde integratie met toonaangevende identiteitsproviders (IdPs) mogelijk is, zoals Enterprise ID (Azure AD), Google, Okta, Auth0, Ping Identity, ForgeRock en OIDC ondersteunde IDP&#39;s.
+Naarmate organisaties hun digitale ervaringen moderniseren, wordt een veilig en schaalbaar identiteitsbeheer een fundamentele vereiste. Adobe Experience Manager (AEM) Cloud Service biedt nu ondersteuning voor OpenID Connect (OIDC) op de publicatielaag, zodat naadloze en op standaarden gebaseerde integratie met toonaangevende identiteitsproviders (IdPs) mogelijk is, zoals EnterpriseID (Azure AD), Google, Okta, Auth0, Ping Identity, ForgeRock en OIDC ondersteunde IDP&#39;s.
 
 OIDC is een identiteitslaag bovenop het protocol OAuth 2.0 dat robuuste gebruikersauthentificatie terwijl het handhaven van eenvoud voor ontwikkelaars toelaat. Het wordt wijd goedgekeurd voor zaken-aan-consument (B2C), Intranet, en partnerportalscenario&#39;s, waar veilige gebruikerslogin en identiteitsfederaties worden vereist.
 
@@ -45,15 +45,15 @@ Informatie van de Configuratie IdP:
 
 Zoek onder een lijst met bestanden die moeten worden geconfigureerd:
 
-1. **OIDC Verbinding**: dit zal door `OidcAuthenticationHandler` worden gebruikt om de gebruikers voor authentiek te verklaren, of door andere componenten om [&#x200B; toegang tot middelen toe te staan die door IdP worden beschermd gebruikend OAuth &#x200B;](https://github.com/apache/sling-org-apache-sling-auth-oauth-client)
+1. **OIDC Verbinding**: dit zal door `OidcAuthenticationHandler` worden gebruikt om de gebruikers voor authentiek te verklaren, of door andere componenten om [ toegang tot middelen toe te staan die door IdP worden beschermd gebruikend OAuth ](https://github.com/apache/sling-org-apache-sling-auth-oauth-client)
 1. **OIDC de Handler van de Authentificatie**: Dit is de authentificatiemanager wordt gebruikt om gebruikers voor authentiek te verklaren die toegang tot de gevormde wegen
 1. **UserInfoProcessor**: Deze component verwerkt de informatie die door IdP wordt ontvangen. Het kan door klanten worden uitgebreid om douanelogica uit te voeren
-1. [**StandaardHandler van de Synchronisatie** &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html): Deze component leidt tot de gebruiker in de bewaarplaats
-1. [**ExternalLoginModule** &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html): Deze component verklaart de gebruiker in de lokale eik bewaarplaats voor authentiek.
+1. [**StandaardHandler van de Synchronisatie** ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html): Deze component leidt tot de gebruiker in de bewaarplaats
+1. [**ExternalLoginModule** ](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html): Deze component verklaart de gebruiker in de lokale eik bewaarplaats voor authentiek.
 
 Het volgende diagram toont hoe de vermelde configuratieelementen verbonden zijn. Aangezien dit `ServiceFactory` -componenten zijn, kan `~uniqueid` elke willekeurige unieke tekenreeks zijn:
 
-![&#x200B; OIDC configuratiediagram &#x200B;](/help/security/assets/oidc-diagram.png)
+![ OIDC configuratiediagram ](/help/security/assets/oidc-diagram.png)
 
 ### De OIDC-verbinding configureren {#configure-the-oidc-connection}
 
@@ -92,7 +92,7 @@ In deze configuratiemodus mag de eigenschap `baseUrl` niet worden ingesteld.
 
 ### OIDC-verificatiehandler configureren {#configure-oidc-authentication-handler}
 
-Nu, vorm de OIDC authentificatiemanager. Er kunnen meerdere OIDC-verbindingen worden geconfigureerd. Elke naam moet een andere naam hebben. Als zij de zelfde [&#x200B; Externe Leverancier van de Identiteit van OAK &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html) delen, kunnen zij gebruikers delen.
+Nu, vorm de OIDC authentificatiemanager. Er kunnen meerdere OIDC-verbindingen worden geconfigureerd. Elke naam moet een andere naam hebben. Als zij de zelfde [ Externe Leverancier van de Identiteit van OAK ](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html) delen, kunnen zij gebruikers delen.
 
 1. Maak het configuratiebestand. Voor dit voorbeeld gebruiken we `org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json` . Het achtervoegsel `azure` moet een unieke id zijn. Zie een voorbeeld van het configuratiedossier hieronder:
 
@@ -111,11 +111,11 @@ Nu, vorm de OIDC authentificatiemanager. Er kunnen meerdere OIDC-verbindingen wo
    * `callbackUri` : het pad dat moet worden beveiligd, waarbij het achtervoegsel `/j_security_check` wordt toegevoegd. Dat zelfde callbackUri ook in verre IdP als redirect url moet worden gevormd.
    * `defaultConnectionName`: configureren met dezelfde naam die is gedefinieerd voor de OIDC-verbinding in de vorige stap+
    * `pkceEnabled`: `true` Proefsleutel voor Codeuitwisseling (PKCE) op de stroom van de machtigingscode
-   * `idp`: de naam van de [&#x200B; Externe Leverancier van de Identiteit van OAK &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Houd er rekening mee dat verschillende OAK IDP geen gebruikers of groepen kan delen
+   * `idp`: de naam van de [ Externe Leverancier van de Identiteit van OAK ](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Houd er rekening mee dat verschillende OAK IDP geen gebruikers of groepen kan delen
 
 ### SlingUserInfoProcessor configureren {#configure-slinguserinfoprocessor}
 
-1. Maak het configuratiebestand. Voor dit voorbeeld gebruiken we `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json` . Het achtervoegsel `azure` moet een unieke id zijn. Zie een voorbeeld van het configuratiedossier hieronder:
+1. Maak het configuratiebestand. Voor dit voorbeeld gebruiken we `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json` . Het achtervoegsel `azure` moet een unieke id zijn. Zie een voorbeeld van het configuratiedossier hieronder:
 
    ```
    {
@@ -140,9 +140,9 @@ Merk op dat de Token van de Toegang en van het Vernieuwen worden opgeslagen geco
 
 ### Synchronisatiehandler configureren {#configure-the-synchronization-handler}
 
-Minstens één manager van de Synchronisatie moet me gevormd om de gebruikers te synchroniseren die in eikel voor authentiek worden verklaard. Voor meer details, zie [&#x200B; deze &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html) pagina.
+Minstens één manager van de Synchronisatie moet me gevormd om de gebruikers te synchroniseren die in eikel voor authentiek worden verklaard. Voor meer details, zie [ deze ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html) pagina.
 
-Maak een bestand met de naam `org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json` . Het **azure** achtervoegsel moet een uniek herkenningsteken zijn. Voor meer informatie over hoe te om zijn eigenschappen te vormen, raadpleeg de [&#x200B; documentatie van de Synchronisatie van de Gebruiker van Oak en van de Groep &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html). Hieronder vindt u een voorbeeldconfiguratie:
+Maak een bestand met de naam `org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json` . Het **azure** achtervoegsel moet een uniek herkenningsteken zijn. Voor meer informatie over hoe te om zijn eigenschappen te vormen, raadpleeg de [ documentatie van de Synchronisatie van de Gebruiker van Oak en van de Groep ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html). Hieronder vindt u een voorbeeldconfiguratie:
 
 ```
 {
@@ -195,7 +195,7 @@ Tot slot moet u de Externe Module van de Aanmelding vormen.
 
 ### Optioneel: een aangepaste UserInfoProcessor implementeren {#implement-a-custom-userinfoprocessor}
 
-De gebruiker wordt voor authentiek verklaard door een Symbolisch van identiteitskaart, en de extra attributen worden gehaald in het `userInfo` eindpunt dat voor IdP wordt bepaald. Als de extra niet-standaardverrichtingen moeten worden uitgevoerd, is een douaneimplementatie van [&#x200B; UserInfoProcessor &#x200B;](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) de standaardimplementatie van het Verdelen.
+De gebruiker wordt voor authentiek verklaard door een Symbolisch van identiteitskaart, en de extra attributen worden gehaald in het `userInfo` eindpunt dat voor IdP wordt bepaald. Als de extra niet-standaardverrichtingen moeten worden uitgevoerd, is een douaneimplementatie van [ UserInfoProcessor ](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) de standaardimplementatie van het Verdelen.
 
 ### ACL voor externe groepen configureren {#configure-acl-for-external-groups}
 
@@ -208,12 +208,14 @@ Er zijn twee primaire benaderingen beschikbaar.
 ### Optie 1 — Lokale groepen
 
 De externe groep kan als lid van een lokale groep worden toegevoegd die reeds vereiste ACLs heeft.
+
 * De externe groep moet bestaan in de opslagplaats, die automatisch plaatsvindt wanneer een gebruiker die tot die groep behoort zich voor het eerst aanmeldt.
 * Deze optie heeft over het algemeen de voorkeur wanneer Gesloten Gebruikersgroepen (CUGs) in gebruik zijn, aangezien de lokale groep op zowel auteur als publicatiemilieu&#39;s bestaat.
 
 ### Optie 2 — Directe ACLs op Externe Groepen via RepoInit
 
 ACLs kan rechtstreeks op externe groepen worden toegepast gebruikend manuscripten RepoInit.
+
 * Deze aanpak is efficiënter en heeft de voorkeur wanneer CUG&#39;s niet worden gebruikt.
 * In het volgende voorbeeld ziet u een RepoInit-configuratie die leesmachtigingen toewijst aan een externe groep. Met de optie `ignoreMissingPrincipal` kunt u ACL maken, zelfs als de groep nog niet bestaat in de gegevensopslagruimte:
 
@@ -230,17 +232,17 @@ ACLs kan rechtstreeks op externe groepen worden toegepast gebruikend manuscripte
 
 ## Voorbeeld: OIDC-verificatie configureren met Azure Active Directory
 
-### Vorm een nieuwe Toepassing in Azure Actieve Folder {#configure-a-new-application-in-azure-ad}
+### Een nieuwe toepassing configureren in de Active Directory van Azure {#configure-a-new-application-in-azure-ad}
 
-1. Creeer een nieuwe toepassing in Azure Actieve Folder door de [&#x200B; Azure Actieve documentatie van de Folder &#x200B;](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings#create-an-app-registration-in-azure) te volgen.  Hieronder ziet u hoe het scherm met het toepassingsoverzicht eruit moet zien:
+1. Creeer een nieuwe toepassing in de Actieve Folder van Azure door de [ documentatie van de Folder van Azure Actieve ](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings#create-an-app-registration-in-azure) te volgen.  Hieronder ziet u hoe het scherm met het toepassingsoverzicht eruit moet zien:
 
-   ![&#x200B; Overzicht van de Toepassing &#x200B;](/help/security/assets/odic-application-overview.png)
+   ![ Overzicht van de Toepassing ](/help/security/assets/odic-application-overview.png)
 
-1. Als de Groepen of de toepassingsrollen worden vereist, volg de [&#x200B; documentatie &#x200B;](https://learn.microsoft.com/en-us/entra/external-id/customers/how-to-use-app-roles-customers) om hen voor de toepassing toe te laten en hen in het Symbolische van identiteitskaart te verzenden. Onder een voorbeeld van gevormde groepen:
+1. Als de Groepen of de toepassingsrollen worden vereist, volg de [ documentatie ](https://learn.microsoft.com/en-us/entra/external-id/customers/how-to-use-app-roles-customers) om hen voor de toepassing toe te laten en hen in het Symbolische van identiteitskaart te verzenden. Onder een voorbeeld van gevormde groepen:
 
-![&#x200B; OIDC de Symbolische identiteitskaart van de Claim &#x200B;](/help/security/assets/oidc-claim-id-token.png)
+![ OIDC de Symbolische identiteitskaart van de Claim ](/help/security/assets/oidc-claim-id-token.png)
 
-1. Volg de eerder gedocumenteerde stappen om de vereiste configuratiedossiers tot stand te brengen. Onder een voorbeeld specifiek voor Azure AD waarin:
+1. Volg de eerder gedocumenteerde stappen om de vereiste configuratiedossiers tot stand te brengen. Onder een specifiek voorbeeld voor Azure AD waarin:
    * De namen Verbinding, Verificatiehandler en DefaultSyncHandler worden gedefinieerd als: `azure`
    * De website-URL is: `www.mywebsite.com`
    * Het pad `/content/wknd/us/en/adventures` dat alleen toegankelijk is voor geverifieerde gebruikers in de groep, wordt beveiligd `adventures`
@@ -329,15 +331,15 @@ ACLs kan rechtstreeks op externe groepen worden toegepast gebruikend manuscripte
 }
 ```
 
-### Aanvullende informatie over Azure AD groups {#additional-information-about-azure-ad-groups}
+### Aanvullende informatie over Azure AD-groepen {#additional-information-about-azure-ad-groups}
 
 Om een groep aan voor de ondernemingstoepassing in Microsoft Azure Portal te vormen, moet u de toepassing zoeken: **Toepassingen van de Onderneming** en de groepen toevoegen: <!-- Alexandru: this bit cound be clearer-->
 
-![&#x200B; OIDC Groep voegt toe &#x200B;](/help/security/assets/oidc-ad-additional-info.png)
+![ OIDC Groep voegt toe ](/help/security/assets/oidc-ad-additional-info.png)
 
-Om de groepseis in het Token van identiteitskaart toe te laten, voeg de eis in de **Symbolische sectie van de Configuratie** van Microsoft Azure Portal toe: <!-- Alexandru: this bit cound be clearer as well-->
+Om de groepseis in het Token van identiteitskaart toe te laten, voeg de eis in de **Symbolische sectie van de Configuratie** van het Portaal van Microsoft Azure toe: <!-- Alexandru: this bit cound be clearer as well-->
 
-![&#x200B; OIDC de Symbolische identiteitskaart van de Claim &#x200B;](/help/security/assets/oidc-claim-id-token.png)
+![ OIDC de Symbolische identiteitskaart van de Claim ](/help/security/assets/oidc-claim-id-token.png)
 
 De configuratie van `SlingUserInfoProcessor` moet worden gewijzigd zoals in het onderstaande voorbeeld.
 
@@ -352,14 +354,58 @@ De bestandsnaam die moet worden gewijzigd, is `org.apache.sling.auth.oauth_clien
 }
 ```
 
+## Aangepaste omleiding na verificatie {#custom-redirect-after-authentication}
+
+Standaard worden gebruikers na geslaagde OIDC-verificatie weer omgeleid naar de oorspronkelijk aangevraagde URL. U kunt dit gedrag echter aanpassen met de parameter `redirect` query.
+
+### Parameter omleiden gebruiken
+
+Wanneer u verificatie start, kunt u een aangepaste omleidings-URL opgeven door de parameter `redirect` toe te voegen aan uw verificatieaanvraag:
+
+```
+/content/wknd/us/en/adventures?redirect=/content/wknd/us/en/welcome
+```
+
+In dit voorbeeld wordt de gebruiker, nadat de verificatie is voltooid, omgeleid naar `/content/wknd/us/en/welcome` in plaats van naar de oorspronkelijk aangevraagde pagina.
+
+### Beveiligingsbeperkingen
+
+Om veiligheidsredenen heeft de parameter `redirect` de volgende beperkingen:
+
+* **moet een relatieve weg** zijn: Redirect URL moet met `/` beginnen (b.v., `/content/mysite/dashboard`)
+* **geen dwars-plaats richt**: Absolute URLs (b.v., `https://external-site.com`) wordt niet toegestaan
+* **Geen protocol-relatieve URLs**: URLs die met `//` beginnen wordt verworpen om protocol-relatieve omleidingen te verhinderen
+
+Als een ongeldige omleidings-URL wordt opgegeven, mislukt de verificatie met een fout.
+
+### Voorbeelden van gevallen
+
+1. **Welkome pagina na login**: Richt gebruikers aan een gepersonaliseerde welkomstpagina na hun eerste login opnieuw
+
+   ```
+   /content/mysite/secure-area?redirect=/content/mysite/welcome
+   ```
+
+2. **Dashboard richt** opnieuw: Directe gebruikers aan een specifiek dashboard na authentificatie
+
+   ```
+   /content/mysite/login?redirect=/content/mysite/user/dashboard
+   ```
+
+3. **Deep die** verbindt: Sta gebruikers toe om voor authentiek te verklaren en dan tot een specifiek middel toegang te hebben
+
+   ```
+   /content/mysite/protected?redirect=/content/mysite/protected/specific-document
+   ```
+
 ## Hoe te van de Handler van de Authentificatie van Saml aan de Handler van de Authentificatie Oidc migreren
 
-Wanneer AEM reeds met een Handler van de Authentificatie van SAML wordt gevormd, en de gebruikers in de bewaarplaats met [&#x200B; toegelaten gegevenssynchronisatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) aanwezig zijn, kunnen de conflicten tussen de originele gebruikers van SAML en de nieuwe gebruikers OIDC voorkomen.
+Wanneer AEM reeds met een Handler van de Authentificatie van SAML wordt gevormd, en de gebruikers in de bewaarplaats met [ toegelaten gegevenssynchronisatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) aanwezig zijn, kunnen de conflicten tussen de originele gebruikers van SAML en de nieuwe gebruikers OIDC voorkomen.
 
-1. Vorm [&#x200B; OidcAuthenticationHandler &#x200B;](#configure-oidc-authentication-handler) en laat `idpNameInPrincipals` in [&#x200B; SlingUserInfoProcessor &#x200B;](#configure-slinguserinfoprocessor) configuratie toe
-1. Opstelling [&#x200B; ACL voor externe groepen &#x200B;](#configure-acl-for-external-groups).
+1. Vorm [ OidcAuthenticationHandler ](#configure-oidc-authentication-handler) en laat `idpNameInPrincipals` in [ SlingUserInfoProcessor ](#configure-slinguserinfoprocessor) configuratie toe
+1. Opstelling [ ACL voor externe groepen ](#configure-acl-for-external-groups).
 1. Na login van gebruikers, kunnen de oude gebruikers die door de steekproef authentificatiemanager worden gecreeerd worden geschrapt.
 
 >[!NOTE]
->Zodra de manager van de Authentificatie SAML wordt onbruikbaar gemaakt en de handler OIDC van de Authentificatie wordt toegelaten, als [&#x200B; gegevenssynchronisatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) niet wordt toegelaten, worden de bestaande zittingen ongeldig. Gebruikers moeten opnieuw verifiëren, wat resulteert in het maken van nieuwe OIDC-gebruikersknooppunten in de opslagplaats.
+>Zodra de manager van de Authentificatie SAML wordt onbruikbaar gemaakt en de handler OIDC van de Authentificatie wordt toegelaten, als [ gegevenssynchronisatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) niet wordt toegelaten, worden de bestaande zittingen ongeldig. Gebruikers moeten opnieuw verifiëren, wat resulteert in het maken van nieuwe OIDC-gebruikersknooppunten in de opslagplaats.
 
