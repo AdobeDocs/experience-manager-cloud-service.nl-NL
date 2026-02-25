@@ -3,7 +3,8 @@ title: Overzicht van de bestuursagent
 description: Leer hoe de AEM Governance Agent de integriteit van merken en de naleving van regels in AEM beschermt
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 9b26cd1f30ad6fa23e28c9f36fe48091e069962e
+exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
+source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Door deze functies te combineren, verkleint de Governance Agent het risico en ma
 >
 >Door AI gegenereerde reacties kunnen onjuist of misleidend zijn. Controleer de voorgestelde oplossingen en reacties met twee controles.
 >
->Zie ook [&#x200B; Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Zie ook [ Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
 ## Vaardigheden in AEM Governance Agent {#skills-in-aem-governance-agent}
 
@@ -34,7 +35,7 @@ Door deze functies te combineren, verkleint de Governance Agent het risico en ma
 
 De governanceagent kan inhoud valideren aan de hand van merkrichtlijnen om consistentie in alle digitale ervaringen te garanderen. Het gebruikt vooraf opgenomen merkregels, zoals toon, beweringen, logogebruik, typografie, en beelden. De toepassing werkt in real-time in de chat, editors en batchmodus in Experience Hub, waardoor deze ideaal is voor door AI gegenereerde inhoud, sitemigraties en het maken van korte sites.
 
-![&#x200B; Overzicht van het Merk Bestuur &#x200B;](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
+![ Overzicht van het Merk Bestuur ](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
 
 **Snelle Voorbeelden:**
 
@@ -49,7 +50,7 @@ De governanceagent kan inhoud valideren aan de hand van merkrichtlijnen om consi
 
 In Content Hub zorgt de bestuursagent ervoor dat alleen de juiste mensen op het juiste moment toegang hebben tot de juiste middelen. Door korrelige, op attributen-gebaseerde controles en gebruiksrechten toe te passen, beschermt het gevoelige inhoud terwijl het toelaten van veilige samenwerking. Dit betekent minder nalevingsrisico, sterkere merkintegriteit, en snellere werkschema&#39;s, kunnen de teams activa zonder onbevoegde toegang of ongewenst gebruik met vertrouwen delen en hergebruiken. Dit evenwicht van veiligheid en flexibiliteit vertaalt zich in hogere operationele efficiency en vertrouwen over de organisatie.
 
-![&#x200B; Overzicht van het Beheer van de Toestemming &#x200B;](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+![ Overzicht van het Beheer van de Toestemming ](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
 **Snelle Voorbeelden:**
 
@@ -63,7 +64,7 @@ In Content Hub zorgt de bestuursagent ervoor dat alleen de juiste mensen op het 
 
 Met de agent kunt u de digitale Assets-rechten beheren in het ecosysteem van uw inhoud. Het controleert toestemmingen en gebruiksrechten op korrelig niveau, die ervoor zorgen dat de activa worden betreden en slechts binnen bepaalde nalevingsgrenzen worden gebruikt. Dit zorgt voor gemoedsrust, bescherming van intellectuele eigendom, vermindering van het risico van regelgeving en behoud van de brandintegriteit. Door de handhaving van rechten te automatiseren, kunnen de teams veilig en vertrouwelijk samenwerken, die inhoudsdistributie versnellen zonder veiligheid of naleving te compromitteren.
 
-![&#x200B; DRM het Overzicht van het Beheer &#x200B;](/help/ai-in-aem/agents/governance/assets/drm-management.png)
+![ DRM het Overzicht van het Beheer ](/help/ai-in-aem/agents/governance/assets/drm-management.png)
 
 **Snelle Voorbeelden:**
 
@@ -72,4 +73,3 @@ Met de agent kunt u de digitale Assets-rechten beheren in het ecosysteem van uw 
 * *Welke activa onlangs verliepen?*
 * *vind me activa zonder een vervaldatum*
 * *toon me alle activa in /content/dam/products die in de volgende 14 dagen op het punt staan te verlopen*
-
