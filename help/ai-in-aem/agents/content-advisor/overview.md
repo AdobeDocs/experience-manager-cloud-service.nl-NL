@@ -28,15 +28,15 @@ De Content Advisor Agent stelt teams in staat handmatige, lange processen om te 
 >
 >Door AI gegenereerde reacties kunnen onjuist of misleidend zijn. Controleer de voorgestelde oplossingen en reacties met twee controles.
 >
->Zie ook [ Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Zie ook [&#x200B; Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Content Discovery Job {#discovery}
 
-[ de baan van de inhoudsontdekking ](/help/ai-in-aem/agents/content-advisor/discovery.md) interpreteert gebruikersintent, onderzoeken over AEM naar de meest relevante, goedgekeurde inhoud, en oppervlakten het voor hergebruik, verbindend de juiste activa aan het juiste moment.
+[&#x200B; de baan van de inhoudsontdekking &#x200B;](/help/ai-in-aem/agents/content-advisor/discovery.md) interpreteert gebruikersintent, onderzoeken over AEM naar de meest relevante, goedgekeurde inhoud, en oppervlakten het voor hergebruik, verbindend de juiste activa aan het juiste moment.
 
 ### Taak voor optimalisatie van inhoud {#optimization}
 
-[ de baan van de inhoudoptimalisering ](/help/ai-in-aem/agents/content-advisor/content-optimization.md) personaliseert en past beelden, beelden, en video&#39;s voor verschillende kanalen aan, die overeenkomst en omzetting over de ervaringslevenscyclus verbeteren.
+[&#x200B; de baan van de inhoudoptimalisering &#x200B;](/help/ai-in-aem/agents/content-advisor/content-optimization.md) personaliseert en past beelden, beelden, en video&#39;s voor verschillende kanalen aan, die overeenkomst en omzetting over de ervaringslevenscyclus verbeteren.
 
 ## Gebruik met andere middelen {#other-agents}
 

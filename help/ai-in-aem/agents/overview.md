@@ -25,11 +25,11 @@ Deze agents zijn beschikbaar in Adobe Experience Manager (AEM) as a Cloud Servic
 
 >[!IMPORTANT]
 >
->Om de agenten te gebruiken moet u in het Programma van de Ontdekkingsreiziger inschrijven. U kunt meer informatie over het Programma van de Ontdekkingsreiziger van de Ontdekkingsreiziger van AEM [ hier vinden.](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
+>Om de agenten te gebruiken moet u in het Programma van de Ontdekkingsreiziger inschrijven. U kunt meer informatie over het Programma van de Ontdekkingsreiziger van de Ontdekkingsreiziger van AEM [&#x200B; hier vinden.](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
 ## Merk Experience Agent {#brand-experience-agent}
 
-De [ Agent van de Ervaring van het Merk ](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert hoge inspanning en high-volume banen.
+De [&#x200B; Agent van de Ervaring van het Merk &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert hoge inspanning en high-volume banen.
 
 * **Update van de Inhoud** - werk een pagina of een Fragment van de Inhoud bij
 * **Van de Vorm creatie** - creeer een vorm of voer een vorm in
@@ -39,7 +39,7 @@ De merkervaring Agent machtigt teams om handmatige, weken-lange processen in sne
 
 ## Content Advisor Agent {#content-advisor-agent}
 
-De [ Agent van de Adviseur van de Inhoud ](/help/ai-in-aem/agents/content-advisor/overview.md) transformeert hoe de gebruikers, activa ontdekken verfijnen en aanpassen door natuurlijke taalinstructies toe te passen om kanaal-klaar variaties tot stand te brengen, die de volgende banen vereenvoudigen.
+De [&#x200B; Agent van de Adviseur van de Inhoud &#x200B;](/help/ai-in-aem/agents/content-advisor/overview.md) transformeert hoe de gebruikers, activa ontdekken verfijnen en aanpassen door natuurlijke taalinstructies toe te passen om kanaal-klaar variaties tot stand te brengen, die de volgende banen vereenvoudigen.
 
 * **Ontdekking** - lever de inhoud van AEM voor een gestroomlijnde, klik-vrije ontdekkingservaring. U kunt op intelligente wijze zoeken in Assets, Content Fragments en Adaptive Forms om relevante materialen te leveren, zoals afbeeldingen, video&#39;s, PDF-documenten, artikelen en formuliersjablonen.
 * **Optimalisering van de Inhoud** - Transformeer hoe de gebruikers activa verfijnen en aanpassen door natuurlijke taalinstructies toe te passen om kanaal-klaar variaties tot stand te brengen. De bedoeling van de gebruiker interpreteren en voert complexe bewerkingstaken automatisch uit om taken uit te voeren zoals het genereren van nieuwe vertoningen, het aanpassen van visuele eigenschappen, het wijzigen van achtergronden of het voorbereiden van middelen voor specifieke digitale kanalen.
@@ -48,11 +48,11 @@ De agent interpreteert de gebruikersintentie en voert complexe bewerkingstaken a
 
 ## Experience Moderation Agent {#site-modernization}
 
-De [ Agent van de Modernisering van de Ervaring ](/help/ai-in-aem/agents/modernization/overview.md) ontgrendelt de volledige waarde van Edge Delivery Services (met inbegrip van het auteursrecht van AEM) door de baan van websitemigraties en aan de gang zijnde evolutie snel en onwrikbaar te maken.
+De [&#x200B; Agent van de Modernisering van de Ervaring &#x200B;](/help/ai-in-aem/agents/modernization/overview.md) ontgrendelt de volledige waarde van Edge Delivery Services (met inbegrip van het auteursrecht van AEM) door de baan van websitemigraties en aan de gang zijnde evolutie snel en onwrikbaar te maken.
 
 ## Governance Agent {#governance-agent}
 
-De [ Agent van de Governance ](/help/ai-in-aem/agents/governance/overview.md) beschermt brandintegriteit en naleving over AEM. Door beveiliging, regelgeving en merkbeleid te handhaven, voert de agent de noodzakelijke taken uit om ervoor te zorgen dat elke interactie en activering aan vastgestelde normen voldoet.
+De [&#x200B; Agent van de Governance &#x200B;](/help/ai-in-aem/agents/governance/overview.md) beschermt brandintegriteit en naleving over AEM. Door beveiliging, regelgeving en merkbeleid te handhaven, voert de agent de noodzakelijke taken uit om ervoor te zorgen dat elke interactie en activering aan vastgestelde normen voldoet.
 
 ## Beperkingen {#limitations}
 

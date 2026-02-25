@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Taak voor bijwerken van inhoud {#content-update}
 
-De baan van de inhoudsupdate van de [ Agent van de Ervaring van het Merk ](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert inhoudsproductie om dagelijkse taken voor Adobe Experience Manager (AEM) as a Cloud Service en Edge Delivery Services te versnellen.
+De baan van de inhoudsupdate van de [&#x200B; Agent van de Ervaring van het Merk &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert inhoudsproductie om dagelijkse taken voor Adobe Experience Manager (AEM) as a Cloud Service en Edge Delivery Services te versnellen.
 
 ## Overzicht {#overview}
 
@@ -33,9 +33,9 @@ U hebt toegang tot de vaardigheden voor het bijwerken van inhoud via:
 
 U kunt de taak in AEM openen via de AI-assistent.
 
-Open de AI-assistent vanuit [`experience.adobe.com` ](https://experience.adobe.com) en begin vervolgens met interactie door de vraag in de natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
+Open de AI-assistent vanuit [`experience.adobe.com` &#x200B;](https://experience.adobe.com) en begin vervolgens met interactie door de vraag in de natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
 
-![ Baan van de Update van de Inhoud ](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
+![&#x200B; Baan van de Update van de Inhoud &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
 ### Voorbeeldvragen {#sample-prompts}
 
@@ -51,7 +51,7 @@ Om inhoudsupdates in werking te stellen kunt u een brede waaier van natuurlijke 
 
 >[!NOTE]
 >
->Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [ Jira ](#jira), maar wordt niet gesteund met AI Medewerker.
+>Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund met AI Medewerker.
 
 ## Jira {#jira}
 
@@ -105,7 +105,7 @@ Als de opdracht `process` updates activeert, volgen de reacties mogelijk de volg
 
 * De volgende afbeelding toont een voorbeeld-Jira die het `process` bevel voor de baan van de inhoudsupdate in werking stelt:
 
-  ![ Jira van het Voorbeeld gebruikend de baan van de inhoudsupdate van de Agent van de Productie van de Ervaring ](assets/content-update-jira-example.png)
+  ![&#x200B; Jira van het Voorbeeld gebruikend de baan van de inhoudsupdate van de Agent van de Productie van de Ervaring &#x200B;](assets/content-update-jira-example.png)
 
 ## Activering {#activation}
 
@@ -122,7 +122,7 @@ Om het proces te versnellen helpt het om de volgende informatie te verstrekken:
    * `profile_id`
 
    * U vindt deze waarden als volgt:
-      1. Uw beheerder moet [`https://adminconsole.adobe.com` bezoeken ](https://adminconsole.adobe.com)
+      1. Uw beheerder moet [`https://adminconsole.adobe.com` bezoeken &#x200B;](https://adminconsole.adobe.com)
       1. Selecteer **Adobe Experience Manager as a Cloud Service**
       1. Selecteer de juiste AEM-instantie
       1. Selecteer het profiel dat lees- en schrijfbewerkingen toestaat voor de desbetreffende inhoud
@@ -142,4 +142,4 @@ Bijvoorbeeld: `https://adminconsole.adobe.com/products/profiles/users`
 
 Houd rekening met de volgende beperkingen:
 
-* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [ Jira ](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [ AI Medewerker.](#ai-assistant)
+* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [&#x200B; AI Medewerker.](#ai-assistant)

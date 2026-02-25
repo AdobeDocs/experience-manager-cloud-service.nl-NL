@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Content Discovery Job {#discovery-job}
 
-Als deel van de Agent van de Adviseur van de Inhoud van AEM [, ](/help/ai-in-aem/agents/content-advisor/overview.md) levert de baan van de inhoudsontdekking de inhoud van AEM op bestelling door natuurlijke, conversationele herinneringen voor een gestroomlijnde, klik-vrije ontdekkingservaring. In Assets, Content Fragments en Adaptive Forms wordt op intelligente wijze gezocht naar relevante materialen, zoals afbeeldingen, video&#39;s, PDF-documenten, artikelen en formuliersjablonen. Met de natuurlijke taal kunt u naar inhoud zoeken zonder complexe query&#39;s te maken of filters toe te passen in de AEM Assets-interface. Op basis van uw vraag retourneert de taak gekromde resultaten samen met metagegevens van elementen en URL&#39;s van levering die klaar zijn om te worden ingesloten in andere toepassingen.
+Als deel van de Agent van de Adviseur van de Inhoud van AEM [, &#x200B;](/help/ai-in-aem/agents/content-advisor/overview.md) levert de baan van de inhoudsontdekking de inhoud van AEM op bestelling door natuurlijke, conversationele herinneringen voor een gestroomlijnde, klik-vrije ontdekkingservaring. In Assets, Content Fragments en Adaptive Forms wordt op intelligente wijze gezocht naar relevante materialen, zoals afbeeldingen, video&#39;s, PDF-documenten, artikelen en formuliersjablonen. Met de natuurlijke taal kunt u naar inhoud zoeken zonder complexe query&#39;s te maken of filters toe te passen in de AEM Assets-interface. Op basis van uw vraag retourneert de taak gekromde resultaten samen met metagegevens van elementen en URL&#39;s van levering die klaar zijn om te worden ingesloten in andere toepassingen.
 
 Enkele belangrijke voordelen van de functie voor het detecteren van inhoud zijn:
 
@@ -32,7 +32,7 @@ Enkele belangrijke voordelen van de functie voor het detecteren van inhoud zijn:
 >
 >Door AI gegenereerde reacties kunnen onjuist of misleidend zijn. Controleer de voorgestelde oplossingen en reacties met twee controles.
 >
->Zie ook [ Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud.](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Zie ook [&#x200B; Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud.](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Vaardigheden {#skills-discovery-agent}
 
@@ -68,9 +68,9 @@ Agentschappen en partners kunnen in Content Hub eenvoudig door een merk goedgeke
 
 ## Toegang verkrijgen {#access}
 
-U hebt toegang tot de functie voor het detecteren van inhoud in AEM via de AI Assistant. Logon aan [`experience.adobe.com` ](https://experience.adobe.com) en u kunt beginnen met interactie met AI Medewerker door uw herinnering in natuurlijke taal te specificeren gebruikend het onderzoeksvakje:
+U hebt toegang tot de functie voor het detecteren van inhoud in AEM via de AI Assistant. Logon aan [`experience.adobe.com` &#x200B;](https://experience.adobe.com) en u kunt beginnen met interactie met AI Medewerker door uw herinnering in natuurlijke taal te specificeren gebruikend het onderzoeksvakje:
 
-![ de baan van de de inhoudsontdekking van de Toegang ](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
+![&#x200B; de baan van de de inhoudsontdekking van de Toegang &#x200B;](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
 
 Voor informatie over het MCP eindpunt om tot de baan van de inhoudsontdekking toegang te hebben, contacteer de Steun van Adobe.
 
@@ -145,23 +145,23 @@ Opmerking: formulierdetectie ondersteunt momenteel alleen Edge Delivery Services
 
 De functie voor het detecteren van inhoud retourneert de hoogste resultaten voor elke query, gesorteerd op relevantie om ervoor te zorgen dat de exacte overeenkomsten als eerste worden weergegeven. De baan combineert meta-gegeven-gedreven vragen met semantische onderzoek om een gerichte reeks waarschijnlijke gelijken samen te stellen, dan gebruikt een LLM om hen te rangschikken die op gebruikersintent worden gebaseerd. Deze overvloeimethode levert nauwkeurige, contextbewuste resultaten zonder dat deze volledig afhankelijk zijn van een directe trefwoordovereenkomst.
 
-Elk resultaat omvat activa naam samen met zeer belangrijke activa meta-gegevens zoals de activaweg, de schepper, aanmaakdatum, titel, beschrijving, formaat, laatste bepaling, laatste gewijzigde datum, dossiergrootte, dimensies, [ Dynamische Media URL ](/help/assets/dynamic-media/dynamic-media.md), en bijbehorende markeringen. Als een activa in goedgekeurde staat is, omvatten de resultaten ook [ Dynamische Media met OpenAPI URL ](/help/assets/dynamic-media-open-apis-overview.md).
+Elk resultaat omvat activa naam samen met zeer belangrijke activa meta-gegevens zoals de activaweg, de schepper, aanmaakdatum, titel, beschrijving, formaat, laatste bepaling, laatste gewijzigde datum, dossiergrootte, dimensies, [&#x200B; Dynamische Media URL &#x200B;](/help/assets/dynamic-media/dynamic-media.md), en bijbehorende markeringen. Als een activa in goedgekeurde staat is, omvatten de resultaten ook [&#x200B; Dynamische Media met OpenAPI URL &#x200B;](/help/assets/dynamic-media-open-apis-overview.md).
 
 U kunt op het middelenpad klikken om naadloos naar de middelenlocatie in AEM te navigeren.
 
-![ de activa van het Onderzoek gebruikend de baan van de inhoudsontdekking ](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+![&#x200B; de activa van het Onderzoek gebruikend de baan van de inhoudsontdekking &#x200B;](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
 
 U kunt deze elementdetails gebruiken om snel te evalueren of een element aan de vereisten voldoet zonder naar elk element te navigeren om deze details weer te geven.
 
 >[!NOTE]
 >
->Het [ Dynamische media URL ](/help/assets/dynamic-media/dynamic-media.md) gebiedsvertoningen in de onderzoeksresultaten slechts als de activa wordt gepubliceerd en u een geldige Dynamische vergunning van Media hebt. Op dezelfde manier [ Dynamische Media met OpenAPI URL ](/help/assets/dynamic-media-open-apis-overview.md) gebiedsvertoningen slechts als u een geldige Dynamische vergunning van Media hebt en Dynamische Media met OpenAPI wordt toegelaten voor uw instantie van AEM as a Cloud Service.
+>Het [&#x200B; Dynamische media URL &#x200B;](/help/assets/dynamic-media/dynamic-media.md) gebiedsvertoningen in de onderzoeksresultaten slechts als de activa wordt gepubliceerd en u een geldige Dynamische vergunning van Media hebt. Op dezelfde manier [&#x200B; Dynamische Media met OpenAPI URL &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) gebiedsvertoningen slechts als u een geldige Dynamische vergunning van Media hebt en Dynamische Media met OpenAPI wordt toegelaten voor uw instantie van AEM as a Cloud Service.
 
 ### Inhoudsfragmenten {#discovery-agent-search-results-content-fragments}
 
 De functie voor het detecteren van inhoud biedt zoekmogelijkheden met volledige tekst voor inhoudsfragmenten, waarbij de hoogste resultaten worden geretourneerd die het best overeenkomen met de opgegeven vraag. Elk resultaat bevat de naam van het inhoudsfragment en belangrijke metagegevensvelden, zoals het pad naar het inhoudsfragment, de maker, de aanmaakdatum, variaties, de laatste modifier en de laatst gewijzigde datumvelden.
 
-![ de Fragmenten van de Inhoud van het Onderzoek gebruikend de baan van de inhoudsontdekking ](/help/ai-in-aem/agents/content-advisor/assets/search-content-fragments-discovery-agent.png)
+![&#x200B; de Fragmenten van de Inhoud van het Onderzoek gebruikend de baan van de inhoudsontdekking &#x200B;](/help/ai-in-aem/agents/content-advisor/assets/search-content-fragments-discovery-agent.png)
 
 U kunt op het pad Inhoudsfragment klikken om naadloos naar de locatie Inhoudsfragment in AEM te navigeren.
 
