@@ -1,39 +1,34 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2026.02.19
-description: Dit zijn de releaseopmerkingen voor de release 2026.02.19 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2026.02.26
+description: Dit zijn de releaseopmerkingen voor de release 2026.02.26 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2026.02.19 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2026.02.26 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 19 februari 2026 van de Universal Editor.
-
->[!TIP]
->
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+Dit zijn de releaseopmerkingen voor de release van 26 februari 2026 van de Universal Editor.
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+
+>[!TIP]
+>
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* De RTE is verbeterd.
-   * [&#x200B; het Verbergen van toolbarpunten in in contextRTE &#x200B;](/help/implementing/universal-editor/configure-rte.md#common-action-options) wordt nu gesteund.
-   * [&#x200B; Wrapping tekst binnen lijsten met paragrafen &#x200B;](/help/implementing/universal-editor/configure-rte.md#table-actions) wordt nu gesteund.
-   * [&#x200B; Niet gestaafde markeringen van HTML &#x200B;](/help/implementing/universal-editor/configure-rte.md#unsupported-html) kunnen nu door RTE worden bewaard.
-   * De logica van RTE wordt nu gediend van een afzonderlijk dossier.
-   * [&#x200B; Lijsten kunnen nu worden gecreeerd &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) evenals worden uitgegeven gebruikend RTE.
-* Wanneer geen label is ingesteld, wordt de componenttitel uit de componentdefinitie nu gebruikt.
-* `setEditorMode` is nu beschikbaar via extensies.
+* Er zijn beschrijvingen toegevoegd aan alle schemavelden, zodat ontwikkelaars definitiebestanden voor modellen/filters/componenten kunnen genereren.
+* Updates met meerdere velden voor inhoudsfragmenten worden nu ondersteund voor in-context-bewerkingen.
+
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -43,7 +38,7 @@ Als u de volgende functies wilt testen en uw feedback wilt delen, stuurt u een e
 
 ## Overige verbeteringen {#other-improvements}
 
-* De eindpunten van RTE worden nu gediend voor de op zijn plaats redacteur.
-* Het bewerken van geneste velden leidt niet langer tot het overschrijven van gelijkwaardige items uit die structuren.
-* Verplichte RTE-velden kunnen niet meer als leeg worden opgeslagen.
-* De opmaak op de plaats wordt niet meer onjuist toegepast wanneer u koppelingen na de opmaak toevoegt.
+* In de Editor wordt inhoud niet meer standaard ingesteld op `{}` voordat de inhoud wordt ontvangen, zodat gegevensverlies in bepaalde situaties wordt voorkomen.
+* Persistentie van gegevens wanneer het veld de focus heeft, is robuuster gemaakt.
+* Wijzigingen gaan in bepaalde situaties niet meer verloren wanneer u ze bewerkt in het linkerdeelvenster en vervolgens een ander item selecteert in het editorvenster.
+* Een persistentieprobleem met RTE-velden voor inhoudsfragmenten bij gebruik van de OpenAPI-eindpunten is opgelost.
