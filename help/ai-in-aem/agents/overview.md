@@ -4,9 +4,9 @@ description: Leer over de Agenten beschikbaar in AEM om uw inhoudsverwezenlijkin
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 4070808ad3ac99f6112cb748a1f4288ffa974915
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,19 @@ Deze agents zijn beschikbaar in Adobe Experience Manager (AEM) as a Cloud Servic
 >* Deze zijn momenteel niet beschikbaar voor AEM 6.5 en AEM 6.5 LTS.
 >* Ze zijn niet beschikbaar op AEM On-Prem, noch op Managed Services.
 
->[!IMPORTANT]
->
->Om de agenten te gebruiken moet u in het Programma van de Ontdekkingsreiziger inschrijven. U kunt meer informatie over het Programma van de Ontdekkingsreiziger van de Ontdekkingsreiziger van AEM [&#x200B; hier vinden.](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
+## Toegang verkrijgen tot agents {#accessing-agents}
+
+U hebt drie opties om tot agenten toegang te hebben.
+
+1. U kunt de optie hebben om tot de Agenten van AEM door [ toegang te hebben probeert alvorens u programma koopt, ](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) dat in fasen voortschrijdt. Uw CSM of TAM kan helpen beschikbaarheid voor uw organisatie bevestigen.
+1. Onderzoek de agenten van AEM [ door een proef.](https://www.aem.live/developer/aem-playground)
+1. Verbind met uw CSM of TAM om toegang via het Bureau te bespreken SKU als dat zich aan uw roadmap en evaluatieplannen richt.
+
+Naarmate nieuwe vaardigheden beschikbaar komen in een vroege release, bieden we extra mogelijkheden om deel te nemen en feedback te delen. Wij moedigen u aan om [ deze pagina ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) voor updates te letten.
 
 ## Merk Experience Agent {#brand-experience-agent}
 
-De [&#x200B; Agent van de Ervaring van het Merk &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert hoge inspanning en high-volume banen.
+De [ Agent van de Ervaring van het Merk ](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert hoge inspanning en high-volume banen.
 
 * **Update van de Inhoud** - werk een pagina of een Fragment van de Inhoud bij
 * **Van de Vorm creatie** - creeer een vorm of voer een vorm in
@@ -39,7 +45,7 @@ De merkervaring Agent machtigt teams om handmatige, weken-lange processen in sne
 
 ## Content Advisor Agent {#content-advisor-agent}
 
-De [&#x200B; Agent van de Adviseur van de Inhoud &#x200B;](/help/ai-in-aem/agents/content-advisor/overview.md) transformeert hoe de gebruikers, activa ontdekken verfijnen en aanpassen door natuurlijke taalinstructies toe te passen om kanaal-klaar variaties tot stand te brengen, die de volgende banen vereenvoudigen.
+De [ Agent van de Adviseur van de Inhoud ](/help/ai-in-aem/agents/content-advisor/overview.md) transformeert hoe de gebruikers, activa ontdekken verfijnen en aanpassen door natuurlijke taalinstructies toe te passen om kanaal-klaar variaties tot stand te brengen, die de volgende banen vereenvoudigen.
 
 * **Ontdekking** - lever de inhoud van AEM voor een gestroomlijnde, klik-vrije ontdekkingservaring. U kunt op intelligente wijze zoeken in Assets, Content Fragments en Adaptive Forms om relevante materialen te leveren, zoals afbeeldingen, video&#39;s, PDF-documenten, artikelen en formuliersjablonen.
 * **Optimalisering van de Inhoud** - Transformeer hoe de gebruikers activa verfijnen en aanpassen door natuurlijke taalinstructies toe te passen om kanaal-klaar variaties tot stand te brengen. De bedoeling van de gebruiker interpreteren en voert complexe bewerkingstaken automatisch uit om taken uit te voeren zoals het genereren van nieuwe vertoningen, het aanpassen van visuele eigenschappen, het wijzigen van achtergronden of het voorbereiden van middelen voor specifieke digitale kanalen.
@@ -48,11 +54,11 @@ De agent interpreteert de gebruikersintentie en voert complexe bewerkingstaken a
 
 ## Experience Moderation Agent {#site-modernization}
 
-De [&#x200B; Agent van de Modernisering van de Ervaring &#x200B;](/help/ai-in-aem/agents/modernization/overview.md) ontgrendelt de volledige waarde van Edge Delivery Services (met inbegrip van het auteursrecht van AEM) door de baan van websitemigraties en aan de gang zijnde evolutie snel en onwrikbaar te maken.
+De [ Agent van de Modernisering van de Ervaring ](/help/ai-in-aem/agents/modernization/overview.md) ontgrendelt de volledige waarde van Edge Delivery Services (met inbegrip van het auteursrecht van AEM) door de baan van websitemigraties en aan de gang zijnde evolutie snel en onwrikbaar te maken.
 
 ## Governance Agent {#governance-agent}
 
-De [&#x200B; Agent van de Governance &#x200B;](/help/ai-in-aem/agents/governance/overview.md) beschermt brandintegriteit en naleving over AEM. Door beveiliging, regelgeving en merkbeleid te handhaven, voert de agent de noodzakelijke taken uit om ervoor te zorgen dat elke interactie en activering aan vastgestelde normen voldoet.
+De [ Agent van de Governance ](/help/ai-in-aem/agents/governance/overview.md) beschermt brandintegriteit en naleving over AEM. Door beveiliging, regelgeving en merkbeleid te handhaven, voert de agent de noodzakelijke taken uit om ervoor te zorgen dat elke interactie en activering aan vastgestelde normen voldoet.
 
 ## Beperkingen {#limitations}
 
