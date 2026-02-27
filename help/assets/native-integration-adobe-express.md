@@ -154,7 +154,7 @@ Klik het ![&#x200B; pictogram van de voorproef &#x200B;](assets/do-not-localize/
 
 ![&#x200B; de Dynamische vertoningen van Media van de Voorproef &#x200B;](assets/native-express-dynamic-media-preview.png)
 
-Klik op **[!UICONTROL Add Modifiers]**, geef een modifier op in het tekstvak en druk op Enter om de transformatie in real-time toe te passen op de uitvoeringen. Op dezelfde manier kunt u meerdere modifiers toevoegen aan een uitvoering en een voorvertoning van die transformaties weergeven. Sleep het element van de voorvertoning naar het canvas. De vertoning na het toepassen van deze modifiers wordt niet opgeslagen. Zie de lijst van gesteunde bepalingen voor [&#x200B; Dynamische Media Scene7 &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) en [&#x200B; Dynamische Media met OpenAPI &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Klik op **[!UICONTROL Add Modifiers]**, geef een modifier op in het tekstvak en druk op Enter om de transformatie in real-time toe te passen op de uitvoeringen. Op dezelfde manier kunt u meerdere modifiers toevoegen aan een uitvoering en een voorvertoning van die transformaties weergeven. Sleep het element van de voorvertoning naar het canvas. De vertoning na het toepassen van deze modifiers wordt niet opgeslagen. Zie de lijst van gesteunde bepalingen voor [&#x200B; Dynamische Media Scene7 &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) en [&#x200B; Dynamische Media met OpenAPI &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -250,7 +250,7 @@ Het wordt aanbevolen dat Adobe waarden opgeeft in de rest van de velden en een v
 
 ## Ondersteunde bestandsindelingen {#supported-file-formats-import-assets}
 
-Adobe Express steunt nationaal de formaten beschikbaar bij [&#x200B; Overzicht de minimumbeeldvereisten &#x200B;](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets ondersteunt echter de volgende indelingstypen:
+Adobe Express steunt nationaal de formaten beschikbaar bij [&#x200B; Overzicht de minimumbeeldvereisten &#x200B;](https://helpx.adobe.com/nl/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets ondersteunt echter de volgende indelingstypen:
 
 | Ondersteunde indeling | Max. afmetingen/resolutie | Max. bestandsgrootte |
 |------------------|---------------------------------------------|---------------|
