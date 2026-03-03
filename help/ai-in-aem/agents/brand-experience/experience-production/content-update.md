@@ -4,7 +4,7 @@ description: Leer wat de de inhoudsupdate van de Agent van de Merk is en wat het
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: a3b00916c0d949fe9fac50bc0c3056b0a1b05358
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Taak voor bijwerken van inhoud {#content-update}
 
-De baan van de inhoudsupdate van de [&#x200B; Agent van de Ervaring van het Merk &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert inhoudsproductie om dagelijkse taken voor Adobe Experience Manager (AEM) as a Cloud Service en Edge Delivery Services te versnellen.
+De baan van de inhoudsupdate van de [ Agent van de Ervaring van het Merk ](/help/ai-in-aem/agents/brand-experience/overview.md) automatiseert inhoudsproductie om dagelijkse taken voor Adobe Experience Manager (AEM) as a Cloud Service en Edge Delivery Services te versnellen.
 
 ## Overzicht {#overview}
 
 De inhoudsupdate-taak werkt bestaande inhoud bij, inclusief inhoudsfragmenten, pagina&#39;s, formulieren en elementen. De taak kan handelingen uitvoeren zoals het bijwerken, verwijderen, vervangen of toevoegen van inhoudselementen om ervaringen nauwkeurig en actueel te houden. Invoer kan een natuurlijke taalbeschrijving zijn en bij Jira PDF&#39;s en screenshots kan ook invoer worden geleverd.
 
-De functie voor het bijwerken van de inhoud verandert de gegevens die u opgeeft, in de natuurlijke taal of de visuele weergave, in de inhoud van de pagina-updates. U verstrekt URL van een pagina die moet bijwerken, samen met details van wat bijwerken vereist, en de agentenvaardigheid voltooit uw taak. Wanneer gebruikt met Adobe Experience Manager (AEM) as a Cloud Service, leidt de baan tot een nieuwe [&#x200B; lancering &#x200B;](/help/sites-cloud/authoring/launches/overview.md) zodat kunt u de updates herzien alvorens toe te passen. Wanneer gebruikt met het auteursrecht van het Document, leidt de baan tot een nieuwe [&#x200B; versie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+De functie voor het bijwerken van de inhoud verandert de gegevens die u opgeeft, in de natuurlijke taal of de visuele weergave, in de inhoud van de pagina-updates. U verstrekt URL van een pagina die moet bijwerken, samen met details van wat bijwerken vereist, en de agentenvaardigheid voltooit uw taak. Wanneer gebruikt met Adobe Experience Manager (AEM) as a Cloud Service, leidt de baan tot een nieuwe [ lancering ](/help/sites-cloud/authoring/launches/overview.md) zodat kunt u de updates herzien alvorens toe te passen. Wanneer gebruikt met het auteursrecht van het Document, leidt de baan tot een nieuwe [ versie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Mogelijkheden {#capabilities}
 
@@ -33,9 +33,9 @@ U hebt toegang tot de vaardigheden voor het bijwerken van inhoud via:
 
 U kunt de taak in AEM openen via de AI-assistent.
 
-Open de AI-assistent vanuit [`experience.adobe.com` &#x200B;](https://experience.adobe.com) en begin vervolgens met interactie door de vraag in de natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
+Open de AI-assistent vanuit [`experience.adobe.com` ](https://experience.adobe.com) en begin vervolgens met interactie door de vraag in de natuurlijke taal op te geven met behulp van het veld `Ask AI Assistant anything` :
 
-![&#x200B; Baan van de Update van de Inhoud &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
+![ Baan van de Update van de Inhoud ](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
 ### De publicatie-URL configureren {#configuring-the-publish-url}
 
@@ -53,7 +53,7 @@ Voor het gebruik van een publicatie-URL (public Onder ogen zien) moet een eenmal
 
 Bijvoorbeeld:
 
-![&#x200B; de vaardigheid van de Update van de Inhoud - vorm publiceer URL &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
+![ de vaardigheid van de Update van de Inhoud - vorm publiceer URL ](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
 
 ### Vragen {#prompts}
 
@@ -61,7 +61,7 @@ Om inhoudsupdates in werking te stellen kunt u een brede waaier van natuurlijke 
 
 >[!NOTE]
 >
->Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund met AI Medewerker.
+>Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan gebruikend [ Jira ](#jira), maar wordt niet gesteund met AI Medewerker.
 
 ### Voorbeeldvragen {#sample-prompts}
 
@@ -118,14 +118,14 @@ Als de opdracht `process` updates activeert, volgen de reacties mogelijk de volg
 
 * De volgende afbeelding toont een voorbeeld-Jira die het `process` bevel voor de baan van de inhoudsupdate in werking stelt:
 
-  ![&#x200B; Jira van het Voorbeeld gebruikend de baan van de inhoudsupdate van de Agent van de Productie van de Ervaring &#x200B;](assets/content-update-jira-example.png)
+  ![ Jira van het Voorbeeld gebruikend de baan van de inhoudsupdate van de Agent van de Ervaring van het Merk ](assets/content-update-jira-example.png)
 
 ## Activering {#activation}
 
-U kunt de Agenten van AEM door [&#x200B; Playground &#x200B;](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.
+U kunt de Agenten van AEM door [ Playground ](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.
 
 ## Beperkingen {#limitations}
 
 Houd rekening met de volgende beperkingen:
 
-* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [&#x200B; Jira &#x200B;](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [&#x200B; AI Medewerker.](#ai-assistant)
+* Het dossier uploadt kan worden gebruikt wanneer het in wisselwerking staan met [ Jira ](#jira), maar wordt niet gesteund wanneer het in wisselwerking staan met de [ AI Medewerker.](#ai-assistant)
