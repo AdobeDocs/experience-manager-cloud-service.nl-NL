@@ -38,7 +38,7 @@ Als het bijvoorbeeld mei is, kunt u komende functies evalueren die in een volgen
 
 Deze ervaring biedt u een rolvenster om het effect van om het even welke aanstaande eigenschappen aan uw projecten en aanpassingen te beoordelen en de introductie van plannen van dergelijke eigenschappen, het testen, en gebruikersopleiding te plannen.
 
-Controleer de [&#x200B; versies van Experience Manager roadmap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) voor details over aanstaande versies.
+Controleer de [&#x200B; versies van Experience Manager roadmap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL#aem-as-cloud-service) voor details over aanstaande versies.
 
 ## Hoe te om voor een Versie voor te bereiden {#how-to-prepare}
 
@@ -51,7 +51,7 @@ Een release voorbereiden:
 
 ## Uw kalenders markeren {#mark-calendars}
 
-De versies van de eigenschap zijn gepland goed van tevoren en de data van de activering van de eigenschapversie worden gepubliceerd op [&#x200B; de Liga van de Ervaring van Adobe.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+De versies van de eigenschap zijn gepland goed van tevoren en de data van de activering van de eigenschapversie worden gepubliceerd op [&#x200B; de Liga van de Ervaring van Adobe.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL#aem-as-cloud-service)
 
 Neem nota van de versiedata zodat kunt u tijd plannen om aanstaande eigenschappen te herzien en te testen.
 
@@ -81,8 +81,8 @@ Nadat u de volgende functies hebt getest en hebt besloten deze te gebruiken in u
 
 Adobe Experience League biedt veel bronnen om AEMaaCS te leren.
 
-* [&#x200B; de documentatie AEMaaCS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
-* [&#x200B; Zelfstudies &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
+* [&#x200B; de documentatie AEMaaCS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL)
+* [&#x200B; Zelfstudies &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=nl-NL)
 * [&#x200B; de maandversie overzichtsvideo &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video) in de versienota&#39;s
 
 ## Informatie over sleutelrelease {#key-articles}

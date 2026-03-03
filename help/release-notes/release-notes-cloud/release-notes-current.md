@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [&#x200B; Experience Manager geeft Roadmap &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Op attributen-gebaseerde toegangsbeheer (ABAC) laat beheerders toe om toegang to
 
 >[!NOTE]
 >
->Op kenmerken gebaseerde toegangsbeheer (ABAC) voor dynamische media met OpenAPI is een beperkte beschikbaarheidsfunctie. U kunt het krijgen toegelaten door a [&#x200B; steunkaartje &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te creëren.
+>Op kenmerken gebaseerde toegangsbeheer (ABAC) voor dynamische media met OpenAPI is een beperkte beschikbaarheidsfunctie. U kunt het krijgen toegelaten door a [&#x200B; steunkaartje &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) te creëren.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -104,7 +104,7 @@ Op attributen-gebaseerde toegangsbeheer (ABAC) laat beheerders toe om toegang to
 
 * **de etiketten van de Vertoning voor multi-uitgezochte drop-down in Verzending PDF**: De multi-uitgezochte dropdown componenten in Aangepast Forms geven nu hun geselecteerde vertoningsetiketten in de [&#x200B; geproduceerde Verzending PDF &#x200B;](/help/forms/generate-document-of-record-core-components.md) terug, die het document verzekeren wijst nauwkeurig op wat de gebruikers op de vorm zien.
 
-* **Verbeterde toegankelijkheid voor controledoos, radioknoop, en paneelcomponenten**: De Aangepaste Componenten van de Kern van Forms introduceren WCAG 2.2 - volgzame semantische prijsverhoging voor [&#x200B; checkbox groepen (v2) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [&#x200B; radioknoopgroepen (v2) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button), en de [&#x200B; component van het Comité &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Deze componenten gebruiken `<fieldset>` en `<legend>` HTML-elementen om duidelijke relaties tot stand te brengen tussen groepslabels en hun opties, waardoor schermlezers en andere ondersteunende hulpmiddelen nauwkeurige interpretaties kunnen geven.
+* **Verbeterde toegankelijkheid voor controledoos, radioknoop, en paneelcomponenten**: De Aangepaste Componenten van de Kern van Forms introduceren WCAG 2.2 - volgzame semantische prijsverhoging voor [&#x200B; checkbox groepen (v2) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [&#x200B; radioknoopgroepen (v2) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button), en de [&#x200B; component van het Comité &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Deze componenten gebruiken `<fieldset>` en `<legend>` HTML-elementen om duidelijke relaties tot stand te brengen tussen groepslabels en hun opties, waardoor schermlezers en andere ondersteunende hulpmiddelen nauwkeurige interpretaties kunnen geven.
 
 * **de steun van de Versioning in de Manager van Forms**: De Manager van Forms steunt nu het versioning voor Aangepaste Forms (de Componenten van de Kern en de Componenten van de Stichting), vormfragmenten, thema&#39;s, malplaatjes XDP, en binaire activa. Maak versies, bekijk de volledige versiegeschiedenis en herstel eerdere statussen van uw formulierelementen rechtstreeks vanuit de Forms &amp; Documents-console.
 
@@ -239,11 +239,11 @@ Gelieve te e-mail [&#x200B; aemcs-rde-support@adobe.com &#x200B;](mailto:aemcs-r
 
 #### Uitgebreide Application Performance Monitoring (APM) (Alpha-programma) {#apm-alpha}
 
-Voor waarneming, steunt de Dienst van de Wolk AEM momenteel Adobe-Geleverde [&#x200B; New Relic One &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) en klant-geleide [&#x200B; Dynatrace &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Aangezien wij steun voor extra opties van APM onderzoeken, gelieve ons in [&#x200B; aemcs-apm-beta@adobe.com &#x200B;](mailto:aemcs-apm-beta@adobe.com) met uw aangewezen verkoper of technologie, samen met gebruiksgevallen te e-mailen.
+Voor waarneming, steunt de Dienst van de Wolk AEM momenteel Adobe-Geleverde [&#x200B; New Relic One &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) en klant-geleide [&#x200B; Dynatrace &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Aangezien wij steun voor extra opties van APM onderzoeken, gelieve ons in [&#x200B; aemcs-apm-beta@adobe.com &#x200B;](mailto:aemcs-apm-beta@adobe.com) met uw aangewezen verkoper of technologie, samen met gebruiksgevallen te e-mailen.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -263,4 +263,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [&#x200B; hier 
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
