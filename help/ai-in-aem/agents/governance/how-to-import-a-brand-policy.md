@@ -48,19 +48,19 @@ Een merk importeren in de Governance Agent:
 
 1. Maak een merk door een naam en een hoofddomein te geven. U kunt dit doen door op de **knoop van de Context van de Governance** op de linkernavigatie in uw huis van Experience Manager te klikken, dan druk **+ voeg merk** knoop toe, zoals hieronder getoond:
 
-   ![ Toevoegend een nieuw merk ](/help/ai-in-aem/agents/governance/assets/add_brand.png){width="70%"}
+   ![&#x200B; Toevoegend een nieuw merk &#x200B;](/help/ai-in-aem/agents/governance/assets/add_brand.png){width="70%"}
 
 1. De naam van het merk en een beschrijving instellen in het volgende venster
 
-   ![ noemend het merk ](/help/ai-in-aem/agents/governance/assets/add_brand_dialogue.png){width="60%"}
+   ![&#x200B; noemend het merk &#x200B;](/help/ai-in-aem/agents/governance/assets/add_brand_dialogue.png){width="60%"}
 
 1. Nieuwe merken worden gemaakt in conceptstatus. Zorg ervoor u uw pas gecreeerd merk in een Actieve status verandert, door op de kaart van uw merk te klikken, geef (potlood) in de hoogste juiste hoek van het scherm uit, plaats de **Status** aan **Actief** in het volgende venster, en klik **sparen Veranderingen**. U moet de merken toelaten door hen aan Actief te plaatsen alvorens hen te kunnen gebruiken.
 
-   ![ plaats de status van het merk aan Actief ](/help/ai-in-aem/agents/governance/assets/set_brand_active.png){width="60%"}
+   ![&#x200B; plaats de status van het merk aan Actief &#x200B;](/help/ai-in-aem/agents/governance/assets/set_brand_active.png){width="60%"}
 
-1. Zodra het merk wordt gecreeerd, creeer een belangrijkste domein in het volgende venster door de **1} verbinding van Domeinen {op de linkerzijde te drukken:**
+1. Zodra het merk wordt gecreeerd, creeer een belangrijkste domein in het volgende venster door de **1&rbrace; verbinding van Domeinen &lbrace;op de linkerzijde te drukken:**
 
-   ![ Vormend een domein voor het merk ](/help/ai-in-aem/agents/governance/assets/add_domain.png)
+   ![&#x200B; Vormend een domein voor het merk &#x200B;](/help/ai-in-aem/agents/governance/assets/add_domain.png)
 
    >[!IMPORTANT]
    >
@@ -68,41 +68,41 @@ Een merk importeren in de Governance Agent:
 
 1. Nadat u het belangrijkste domein hebt gevormd, kunt u uw document van het merkbeleid door te gaan uploaden aan **Beleid** in de hogere linkerhoek van het venster, en drukkend **+ voeg de knoop van het Beleid** toe.
 
-   ![ Toevoegend een beleid van de kaart van het Merk ](/help/ai-in-aem/agents/governance/assets/add_policy_treeview.png)
+   ![&#x200B; Toevoegend een beleid van de kaart van het Merk &#x200B;](/help/ai-in-aem/agents/governance/assets/add_policy_treeview.png)
 
    >[!NOTE]
    >
-   >Alternatief, kunt u beleid ook toevoegen door over te schakelen naar het **1} lusje van Beleid {en het drukken van** + voegt het Beleid **verbinding toe.**
+   >Alternatief, kunt u beleid ook toevoegen door over te schakelen naar het **1&rbrace; lusje van Beleid &lbrace;en het drukken van** + voegt het Beleid **verbinding toe.**
 
 1. In het volgende venster, druk op **upload PDFs** en selecteer uw document(s) van het merkbeleid in formaat PDF
 
-   ![ upload uw document van het merkbeleid ](/help/ai-in-aem/agents/governance/assets/upload_brand_policy_document.png){width="70%"}
+   ![&#x200B; upload uw document van het merkbeleid &#x200B;](/help/ai-in-aem/agents/governance/assets/upload_brand_policy_document.png){width="70%"}
 
    De Governance Agent zal uw merkbeleidsrichtsnoer ontleden met natuurlijke taal, en het zal de controles uit het document halen en hen vertalen in daadwerkelijke taken. Nadat het document is verwerkt, kunt u een overzicht van de import weergeven, inclusief het aantal controles en de status van het beleid, zoals hieronder wordt getoond:
 
-   ![ een overzichtsvenster van de status van het merkbeleid ](/help/ai-in-aem/agents/governance/assets/policy_status.png)
+   ![&#x200B; een overzichtsvenster van de status van het merkbeleid &#x200B;](/help/ai-in-aem/agents/governance/assets/policy_status.png)
 
 1. Zodra uw merk wordt gecreeerd, en uw beleidsdocument wordt geupload, kunt u een gedetailleerde per-merkmening krijgen door naar het **Merken** lusje te gaan, en op de kaart van een merk te klikken. Dit is de mening u voor het creëren van categorieën van controles zult willen gebruiken, door de drie punten naast een bestaande categorie te drukken, en **+ te selecteren voeg Categorie** toe, zoals aangetoond in het hieronder screenshot:
 
-   ![ voeg categorie ](/help/ai-in-aem/agents/governance/assets/add_category.png) toe
+   ![&#x200B; voeg categorie &#x200B;](/help/ai-in-aem/agents/governance/assets/add_category.png) toe
 
    U kunt deze weergave ook gebruiken om controles te maken, te bewerken en te verwijderen, die we in de onderstaande stappen nader zullen toelichten.
 
 1. Voor een meer korrelige mening van elke individuele controle, kunt u op het **lusje van Controles** overschakelen, en een lijst van elke individuele controle bekijken die uit uw richtsnoerdocumenten wordt gehaald. U kunt controles filteren op basis van merk of status:
 
-   ![ zie individuele merkcontroles ](/help/ai-in-aem/agents/governance/assets/see_brand_checks.png)
+   ![&#x200B; zie individuele merkcontroles &#x200B;](/help/ai-in-aem/agents/governance/assets/see_brand_checks.png)
 
    Bovendien, kunt u extra details op elke individuele controle bekijken door de drie punten (**te klikken...**) links van de controle, en het drukken van **details van de Mening**. Hiermee wordt een nieuw venster geopend met meer informatie over de controle:
 
-   ![ Bekijk individuele controledetails ](/help/ai-in-aem/agents/governance/assets/view_check_details.png)
+   ![&#x200B; Bekijk individuele controledetails &#x200B;](/help/ai-in-aem/agents/governance/assets/view_check_details.png)
 
    U kunt controles ook schrappen door **Schrapping** van de zelfde menuplaats te drukken, of hen uit te geven door **te drukken geeft** uit:
 
-   ![ Uitgevend een controle ](/help/ai-in-aem/agents/governance/assets/edit_check.png)
+   ![&#x200B; Uitgevend een controle &#x200B;](/help/ai-in-aem/agents/governance/assets/edit_check.png)
 
 1. U kunt een controle manueel toevoegen door **te drukken voegt Controle** in de hogere linkerhoek van het venster van Controles toe:
 
-   ![ Toevoegend een controle ](/help/ai-in-aem/agents/governance/assets/add_check.png)
+   ![&#x200B; Toevoegend een controle &#x200B;](/help/ai-in-aem/agents/governance/assets/add_check.png)
 
    In het volgende scherm, kunt u details zoals vormen:
 
@@ -111,7 +111,7 @@ Een merk importeren in de Governance Agent:
    * De categorie
    * De werkingssfeer(en) waarop het van toepassing is
 
-   ![ Vormend de controledetails ](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
+   ![&#x200B; Vormend de controledetails &#x200B;](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 
 1. Tot slot voor een lijst van domeinen en de merken zij met worden geassocieerd, kunt u de **Domeinen** tabel drukken. Met deze sectie kunt u domeinen toevoegen, verwijderen of wijzigen in uw lijst.
 

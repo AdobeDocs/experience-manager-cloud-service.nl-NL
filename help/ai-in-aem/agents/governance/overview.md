@@ -27,7 +27,7 @@ Door deze functies te combineren, verkleint de Governance Agent het risico en ma
 >
 >Door AI gegenereerde reacties kunnen onjuist of misleidend zijn. Controleer de voorgestelde oplossingen en reacties met twee controles.
 >
->Zie ook [ Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Zie ook [&#x200B; Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
 ## Vaardigheden in AEM Governance Agent {#skills-in-aem-governance-agent}
 
@@ -35,7 +35,7 @@ Door deze functies te combineren, verkleint de Governance Agent het risico en ma
 
 De governanceagent kan inhoud valideren aan de hand van merkrichtlijnen om consistentie in alle digitale ervaringen te garanderen. Het gebruikt vooraf opgenomen merkregels, zoals toon, beweringen, logogebruik, typografie, en beelden. De toepassing werkt in real-time in de chat, editors en batchmodus in Experience Hub, waardoor deze ideaal is voor door AI gegenereerde inhoud, sitemigraties en het maken van korte sites.
 
-![ Overzicht van het Merk Bestuur ](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
+![&#x200B; Overzicht van het Merk Bestuur &#x200B;](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
 
 **Snelle Voorbeelden:**
 
@@ -44,7 +44,7 @@ De governanceagent kan inhoud valideren aan de hand van merkrichtlijnen om consi
 * *Controle als `https://www.website/homepage` merkrichtlijnen* volgt
 * *toon me mijn merkrichtlijnen*
 
-De governanceagent bevat ook een door AI aangedreven importmogelijkheid voor merkbeleid die AI gebruikt om de bestaande merkrichtdocumenten van klanten om te zetten in gestructureerde, afdwingbare beleidscontroles die automatisch het maken van compatibele inhoud besturen, valideren en begeleiden. Voor meer informatie, zie [ hoe te om een Beleid van het Merk ](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md) in te voeren.
+De governanceagent bevat ook een door AI aangedreven importmogelijkheid voor merkbeleid die AI gebruikt om de bestaande merkrichtdocumenten van klanten om te zetten in gestructureerde, afdwingbare beleidscontroles die automatisch het maken van compatibele inhoud besturen, valideren en begeleiden. Voor meer informatie, zie [&#x200B; hoe te om een Beleid van het Merk &#x200B;](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md) in te voeren.
 
 ### Machtiging en Digital Rights Management {#permission-and-digital-rights-management}
 
@@ -52,7 +52,7 @@ De governanceagent bevat ook een door AI aangedreven importmogelijkheid voor mer
 
 In Content Hub zorgt de bestuursagent ervoor dat alleen de juiste mensen op het juiste moment toegang hebben tot de juiste middelen. Door korrelige, op attributen-gebaseerde controles en gebruiksrechten toe te passen, beschermt het gevoelige inhoud terwijl het toelaten van veilige samenwerking. Dit betekent minder nalevingsrisico, sterkere merkintegriteit, en snellere werkschema&#39;s, kunnen de teams activa zonder onbevoegde toegang of ongewenst gebruik met vertrouwen delen en hergebruiken. Dit evenwicht van veiligheid en flexibiliteit vertaalt zich in hogere operationele efficiency en vertrouwen over de organisatie.
 
-![ Overzicht van het Beheer van de Toestemming ](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+![&#x200B; Overzicht van het Beheer van de Toestemming &#x200B;](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
 **Snelle Voorbeelden:**
 
@@ -66,7 +66,7 @@ In Content Hub zorgt de bestuursagent ervoor dat alleen de juiste mensen op het 
 
 Met de agent kunt u de digitale Assets-rechten beheren in het ecosysteem van uw inhoud. Het controleert toestemmingen en gebruiksrechten op korrelig niveau, die ervoor zorgen dat de activa worden betreden en slechts binnen bepaalde nalevingsgrenzen worden gebruikt. Dit zorgt voor gemoedsrust, bescherming van intellectuele eigendom, vermindering van het risico van regelgeving en behoud van de brandintegriteit. Door de handhaving van rechten te automatiseren, kunnen de teams veilig en vertrouwelijk samenwerken, die inhoudsdistributie versnellen zonder veiligheid of naleving te compromitteren.
 
-![ DRM het Overzicht van het Beheer ](/help/ai-in-aem/agents/governance/assets/drm-management.png)
+![&#x200B; DRM het Overzicht van het Beheer &#x200B;](/help/ai-in-aem/agents/governance/assets/drm-management.png)
 
 **Snelle Voorbeelden:**
 
