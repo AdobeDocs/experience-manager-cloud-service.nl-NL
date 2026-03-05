@@ -20,9 +20,9 @@ De Brand Experience Agent versnelt de modernisering en evolutie van digitale erv
 
 De merkervaring Agent levert zijn resultaten door de volgende agenten, elk die in een specifieke reeks banen specialiseren:
 
-* [ Agent van de Modernisering van de Ervaring ](#experience-modernization) - Migreert websites aan cloud-klaar formaten
-* [ Agent van de Productie van de Ervaring ](#experience-production) - vermindert tijd-aan-markt met inhoudsupdates, vormverwezenlijking, en mededelingen
-* [ Agent van de Ontwikkeling ](#development) - verstrekt het AI-Geassisteerde oplossen van problemen en bouwt automatisering
+* [&#x200B; Agent van de Modernisering van de Ervaring &#x200B;](#experience-modernization) - Migreert websites aan cloud-klaar formaten
+* [&#x200B; Agent van de Productie van de Ervaring &#x200B;](#experience-production) - vermindert tijd-aan-markt met inhoudsupdates, vormverwezenlijking, en mededelingen
+* [&#x200B; Agent van de Ontwikkeling &#x200B;](#development) - verstrekt het AI-Geassisteerde oplossen van problemen en bouwt automatisering
 
 Door deze agenten, absorbeert de Agent van de Ervaring van het Merk het zware operationele werk achter updates en modernisering, die teams helpen veranderingen sneller en met groter vertrouwen in het AI tijdperk van vandaag leveren.
 
@@ -30,11 +30,11 @@ Door deze agenten, absorbeert de Agent van de Ervaring van het Merk het zware op
 >
 >Door AI gegenereerde reacties kunnen onjuist of misleidend zijn. Controleer de voorgestelde oplossingen en reacties met twee controles.
 >
->Zie ook [ Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Zie ook [&#x200B; Generatieve AI de Richtlijnen van de Gebruiker van Adobe Experience Cloud &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Experience Moderation Agent {#experience-modernization}
 
-[ de Agent van de Modernisering van de Ervaring ](/help/ai-in-aem/agents/brand-experience/modernization/overview.md) ontgrendelt de volledige waarde van Edge Delivery Services (met inbegrip van het auteursrecht van AEM) door websitemigraties en aan de gang zijnde evolutie snel en onwrikbaar te maken.
+[&#x200B; de Agent van de Modernisering van de Ervaring &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/overview.md) ontgrendelt de volledige waarde van Edge Delivery Services (met inbegrip van het auteursrecht van AEM) door websitemigraties en aan de gang zijnde evolutie snel en onwrikbaar te maken.
 
 ### Geniet van moderniseringstaak {#modernization-job}
 
@@ -42,23 +42,23 @@ De Modernisering van de Ervaring verwijdert de wrijving van grootschalige plaats
 
 ## Experience Production Agent {#experience-production}
 
-[ de Agent van de Productie van de Ervaring ](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automatiseert hoge inspanning en hoog-volumetaken. Het machtigt teams en verandert handmatige, weken-lange processen in snelle, AI-gesteunde werkschema&#39;s die elke ervaring actueel en verenigbaar houden, die het zaken helpen zijn doelstellingen bereiken.
+[&#x200B; de Agent van de Productie van de Ervaring &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automatiseert hoge inspanning en hoog-volumetaken. Het machtigt teams en verandert handmatige, weken-lange processen in snelle, AI-gesteunde werkschema&#39;s die elke ervaring actueel en verenigbaar houden, die het zaken helpen zijn doelstellingen bereiken.
 
 ### Taak voor bijwerken van inhoud {#content-update}
 
-[ de baan van de Update van de Inhoud ](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) werkt bestaande inhoud — met inbegrip van inhoudsfragmenten, pagina&#39;s, vormen en activa bij - met gemak. De agent kan acties uitvoeren zoals het bijwerken, verwijderen, vervangen of toevoegen van inhoudselementen om ervaringen nauwkeurig en actueel te houden. Invoer kan een natuurlijke taalbeschrijving zijn en bij Jira PDF&#39;s en screenshots kan ook invoer worden geleverd.
+[&#x200B; de baan van de Update van de Inhoud &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) werkt bestaande inhoud — met inbegrip van inhoudsfragmenten, pagina&#39;s, vormen en activa bij - met gemak. De agent kan acties uitvoeren zoals het bijwerken, verwijderen, vervangen of toevoegen van inhoudselementen om ervaringen nauwkeurig en actueel te houden. Invoer kan een natuurlijke taalbeschrijving zijn en bij Jira PDF&#39;s en screenshots kan ook invoer worden geleverd.
 
 ### Forms-ontwerptaak {#forms-creation}
 
-[ de baan van de Aanmaak van Forms ](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) verwijdert de wrijving van de bouw van adaptieve vormen en gepersonaliseerde correspondentie door natuurlijke taalvereisten in volledig gestructureerde, merkoutput om te zetten, die bedrijfsgebruikers machtigen om scalable, gegeven-gedreven ervaringen zonder afhankelijkheid van ontwikkeling of de teams van IT tot stand te brengen.
+[&#x200B; de baan van de Aanmaak van Forms &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) verwijdert de wrijving van de bouw van adaptieve vormen en gepersonaliseerde correspondentie door natuurlijke taalvereisten in volledig gestructureerde, merkoutput om te zetten, die bedrijfsgebruikers machtigen om scalable, gegeven-gedreven ervaringen zonder afhankelijkheid van ontwikkeling of de teams van IT tot stand te brengen.
 
 ### Aanmaaktaak voor communicatie {#communication-creation}
 
-[ de baan van de communicatie creatie ](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md) leidt tot Interactieve Mededelingen gebruikend natuurlijke taalherinneringen en produceert automatisch gepersonaliseerde, gegeven-gedreven correspondentie voor druk (in het formaat van PDF). De taak wordt weergegeven via AI Assistant.
+[&#x200B; de baan van de communicatie creatie &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md) leidt tot Interactieve Mededelingen gebruikend natuurlijke taalherinneringen en produceert automatisch gepersonaliseerde, gegeven-gedreven correspondentie voor druk (in het formaat van PDF). De taak wordt weergegeven via AI Assistant.
 
 ## Experience Development Agent {#experience-development}
 
-[ de Agent van de Ontwikkeling van de Ervaring ](/help/ai-in-aem/agents/brand-experience/development/development.md) stroomlijnt technische evolutie binnen AEM door met malplaatjeupdates, componentenconfiguratie, en het oplossen van problemen te helpen, die gebiedsdeel op lange ontwikkelingscycli verminderen.
+[&#x200B; de Agent van de Ontwikkeling van de Ervaring &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md) stroomlijnt technische evolutie binnen AEM door met malplaatjeupdates, componentenconfiguratie, en het oplossen van problemen te helpen, die gebiedsdeel op lange ontwikkelingscycli verminderen.
 
 ### Oplossen van problemen met pijplijn {#pipeline-troubleshooting}
 
@@ -72,4 +72,4 @@ De agent kan met andere agentenvaardigheden werken, omvatten voorbeelden:
 
 ## Activering {#activation}
 
-U kunt de Agenten van AEM door [ Playground ](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.
+U kunt de Agenten van AEM door [&#x200B; Playground &#x200B;](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.

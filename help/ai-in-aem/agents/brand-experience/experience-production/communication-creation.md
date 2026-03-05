@@ -18,11 +18,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De baan van de communicatie creatie is momenteel in alpha. Als u zou willen deelnemen, gelieve een verzoek van uw officieel e-mailadres naar [ aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
+> De baan van de communicatie creatie is momenteel in alpha. Als u zou willen deelnemen, gelieve een verzoek van uw officieel e-mailadres naar [&#x200B; aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
 
-[ Interactieve Mededelingen ](/help/forms/introduction-to-interactive-communication.md) zijn gepersonaliseerde, gegeven-gedreven documenten die voor bedrijfscorrespondentie zoals rekeningsverklaringen, beleidsdocumenten, rekeningen, welkomstkits, en voordeelberichten worden ontworpen. In tegenstelling tot formulieren die invoer van gebruikers verzamelen, genereren Interactieve communicatie uitvoerdocumenten met dynamische, specifieke inhoud voor de ontvanger.
+[&#x200B; Interactieve Mededelingen &#x200B;](/help/forms/introduction-to-interactive-communication.md) zijn gepersonaliseerde, gegeven-gedreven documenten die voor bedrijfscorrespondentie zoals rekeningsverklaringen, beleidsdocumenten, rekeningen, welkomstkits, en voordeelberichten worden ontworpen. In tegenstelling tot formulieren die invoer van gebruikers verzamelen, genereren Interactieve communicatie uitvoerdocumenten met dynamische, specifieke inhoud voor de ontvanger.
 
-De baan van de communicatie creatie maakt deel uit van de [ Agent van de Productie van de Ervaring ](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) die wordt ontworpen om Interactieve Mededelingen te ontwikkelen gebruikend natuurlijke taalherinneringen. Deze taak genereert automatisch gepersonaliseerde, gegevensgestuurde correspondentie voor afdrukken (in PDF-indeling). De taak wordt weergegeven via AI Assistant.
+De baan van de communicatie creatie maakt deel uit van de [&#x200B; Agent van de Productie van de Ervaring &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) die wordt ontworpen om Interactieve Mededelingen te ontwikkelen gebruikend natuurlijke taalherinneringen. Deze taak genereert automatisch gepersonaliseerde, gegevensgestuurde correspondentie voor afdrukken (in PDF-indeling). De taak wordt weergegeven via AI Assistant.
 
 Enkele belangrijke voordelen van het creëren van banen van de mededeling omvatten:
 
@@ -70,7 +70,7 @@ Nadat u de initiële communicatiestructuur hebt gemaakt met gebruik van AI Assis
 * *Werk de groepering van het gebied van het beleidsaantal bij om* te centreren
 * *verander de lijn het uit elkaar plaatsen van de termijnen en voorwaardensectie in 1.5*
 
-Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [ Interactieve Communicatie documentatie.](/help/forms/introduction-to-interactive-communication.md)
+Voor meer informatie over mogelijkheden van Interactieve Communicatie redacteur, zie [&#x200B; Interactieve Communicatie documentatie.](/help/forms/introduction-to-interactive-communication.md)
 
 <!-- UNCOMMENT ONCE NO LONGER ALPHA -->
 
