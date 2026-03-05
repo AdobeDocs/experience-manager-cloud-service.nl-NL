@@ -4,9 +4,9 @@ description: Leer meer over de functie voor het maken van formulieren door de Br
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Taak voor maken van formulier {#form-creation-job}
 
-De baan van de vormverwezenlijking is een vermogen van de [&#x200B; Agent van de Ervaring van het Merk &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) die wordt ontworpen om vormen te ontwikkelen gebruikend natuurlijke taalherinneringen. Deze taak genereert automatisch de juiste formulierstructuur en veldtypen. De taak wordt weergegeven via AI Assistant.
+De baan van de vormverwezenlijking maakt deel uit van de [ Agent van de Productie van de Ervaring ](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) die wordt ontworpen om vormen te ontwikkelen gebruikend natuurlijke taalherinneringen. Deze taak genereert automatisch de juiste formulierstructuur en veldtypen. De taak wordt weergegeven via AI Assistant.
 
 Enkele belangrijke voordelen van het maken van formulieren zijn onder andere:
 
@@ -52,11 +52,11 @@ Nadat u de initiële formulierstructuur hebt gemaakt met de AI Assistant, kunt u
 
 * **vorm voorlegging**: Vorm waar de vormgegevens, met inbegrip van vestiging e-mailberichten, integratie met werkschema&#39;s, of verbindingen aan externe systemen worden voorgelegd.
 
-Voor meer informatie, zie {de documentatie van de Bouwer van de Ervaring van 0} Forms.[&#128279;](/help/forms/experience-builder/product-overview.md)
+Voor meer informatie, zie {de documentatie van de Bouwer van de Ervaring van 0} Forms.[](/help/forms/experience-builder/product-overview.md)
 
 ## Activering {#activation}
 
-U kunt de Agenten van AEM door [&#x200B; Playground &#x200B;](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.
+U kunt de Agenten van AEM door [ Playground ](https://www.aem.live/developer/aem-playground) onderzoeken, of met uw CSM of TAM verbinden om toegang via Agentic SKU te bespreken.
 
 <!-- 
 #### Import and convert {#import-and-convert}
