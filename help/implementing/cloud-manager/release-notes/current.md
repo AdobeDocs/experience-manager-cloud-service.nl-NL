@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Meer informatie over de release van Cloud Manager 2026.3.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Zie ook de [&#x200B; huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Releasedatums {#release-date}
 
@@ -28,16 +28,16 @@ De volgende geplande release is donderdag 2 april 2026.
 
 ## Nieuwe functies - Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Manager steunt nu a** Sluitereffect **optie voor** de invoer van het Exemplaar van de Inhoud ****
+* **Cloud Manager steunt nu a** Sluitereffect **optie voor** de invoer van het Exemplaar van de Inhoud **&#x200B;**
 
   Wanneer u **Sluitereffect** toelaat, schrapt Cloud Manager de bestaande inhoud bij de bestemming alvorens de invoer te beginnen, zodat kunt u van een schone lei beginnen en conflicten met reeds bestaande inhoud vermijden. Als u **Wipe** gehandicapt verlaat, voert Cloud Manager de nieuwe inhoud bovenop de bestaande bestemmingsinhoud in. Er wordt een bevestigingsbericht weergegeven voordat het sluitereffect begint en Cloud Manager geeft een logboek van de sluiteractie en de importgegevens voor traceerbaarheid.
 
-  Zie ook [ inhoud van het Exemplaar ](/help/implementing/developing/tools/content-copy.md#copy-content).
+  Zie ook [&#x200B; inhoud van het Exemplaar &#x200B;](/help/implementing/developing/tools/content-copy.md#copy-content).
 
 * **Steun voor rekbaarheid UI in AEM Experience Hub**
-De steun voor Uitbreidingen UI in [ AEM Experience Hub ](https://experience.adobe.com/experiencemanager) wordt nu toegelaten, latend ontwikkelaars de interface met douanefunctionaliteit uitbreiden en widgets die gebruikend Adobe App Builder worden gebouwd.
+De steun voor Uitbreidingen UI in [&#x200B; AEM Experience Hub &#x200B;](https://experience.adobe.com/experiencemanager) wordt nu toegelaten, latend ontwikkelaars de interface met douanefunctionaliteit uitbreiden en widgets die gebruikend Adobe App Builder worden gebouwd.
 
-  Meer leren, zie [ AEM Experience Hub ](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
+  Meer leren, zie [&#x200B; AEM Experience Hub &#x200B;](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
 * **Verbeterde stabiliteit, prestaties, en betrouwbaarheid**
 
@@ -52,7 +52,7 @@ Neem deel aan bètaprogramma&#39;s van Cloud Manager om exclusieve toegang te kr
 >
 >Beta-releases kunnen defecten bevatten en worden geleverd als &quot;AS IS&quot; zonder enige garantie. Adobe is niet verplicht de bètareleases te onderhouden, te corrigeren, bij te werken, te wijzigen, te wijzigen of anderszins te ondersteunen (via Adobe Support Services of anderszins). Adobe raadt klanten aan voorzichtig te zijn en zich niet te verlaten op de juiste werking of prestaties van bètareleases of op begeleidende documentatie of materialen. Functies en API&#39;s in bèta kunnen zonder voorafgaande kennisgeving worden gewijzigd. Bijgevolg is elk gebruik van de bètareleases volledig op eigen risico van de klant.
 
-Zie ook [ de programma&#39;s van Beta van AEM ](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
+Zie ook [&#x200B; de programma&#39;s van Beta van AEM &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
 De volgende mogelijkheden zijn momenteel beschikbaar:
 <!--
@@ -64,11 +64,11 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 U kunt nu een server proberen MCP (ModelContext Protocol) die Cloud Manager Openbare APIs als hulpmiddelen voor AI-Toegelaten windes (zoals Cursor) blootstelt. Nadat u het aansluit, kunt u conversationele herinneringen gebruiken om programma&#39;s, pijpleidingen, milieu&#39;s, en bewaarplaatsen een lijst te maken en te beheren, die u helpen sneller bewegen zonder uw redacteur te verlaten.
 
-Zie de documentatie [ Gebruik MCP met AEM as a Cloud Service ](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+Zie de documentatie [&#x200B; Gebruik MCP met AEM as a Cloud Service &#x200B;](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
 Zie het leerprogramma {de Server van 0} Cloud Manager MCP [.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#)
 
-Geïnteresseerd in de bèta? E-mail [ GRP-AEM-CM-MCP-FEEDBACK@adobe.com ](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma.
+Geïnteresseerd in de bèta? E-mail [&#x200B; GRP-AEM-CM-MCP-FEEDBACK@adobe.com &#x200B;](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma.
 
 
 <!--
@@ -87,7 +87,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 Een nieuw bouwstijlmodel compileert slechts veranderde modules (eerder dan de volledige repo) gebruikend module-vlakke caching om bouwstijltijden te verkorten. Het is van toepassing op code-kwaliteit, volledig-stapel, en stadium-slechts pijpleidingen.
 
-![ geeft de Dialoogvenster van de Pijpleiding van de Niet-Productie uit die de twee opties van de Strategie van de Bouwstijl tonen die Volledige Bouwstijl en Slimme zijn ](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
+![&#x200B; geeft de Dialoogvenster van de Pijpleiding van de Niet-Productie uit die de twee opties van de Strategie van de Bouwstijl tonen die Volledige Bouwstijl en Slimme zijn &#x200B;](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
 *geef de de dialoogdoos uit van de Pijpleiding van de Niet-Productie die de twee opties toont van de Strategie van de Bouwstijl die Volledig zijn bouwt en Smart bouwt.*
 
 In **voeg/geef de dialoogdoos van de Pijpleiding** toe, onder het **lusje van de Code van Source**, laat een nieuwe **Bouw Strategie** sectie u één van de volgende bouwstijlopties kiezen:
@@ -95,9 +95,9 @@ In **voeg/geef de dialoogdoos van de Pijpleiding** toe, onder het **lusje van de
 * **Volledig bouwt** — bouwt alle modules in de bewaarplaats op elke looppas.
 * **Slim bouwt** — bouwt slechts modules die sinds laatste worden veranderd begaan, die algemene bouwtijd verkort.
 
-U controleert welke pijpleidingen gebruiken **Slimme bouwstijl**. Tijdens bèta, verschijnt deze optie slechts voor **Kwaliteit van de Code** en **Dev de 3} pijpleidingen van de Plaatsing.**
+U controleert welke pijpleidingen gebruiken **Slimme bouwstijl**. Tijdens bèta, verschijnt deze optie slechts voor **Kwaliteit van de Code** en **Dev de 3&rbrace; pijpleidingen van de Plaatsing.**
 
-Geïnteresseerd? E-mail [ beta_quickbuild_cmpipelines@adobe.com ](mailto:beta_quickbuild_cmpipelines@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma.
+Geïnteresseerd? E-mail [&#x200B; beta_quickbuild_cmpipelines@adobe.com &#x200B;](mailto:beta_quickbuild_cmpipelines@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
