@@ -18,16 +18,16 @@ Dit zijn de releaseopmerkingen voor de release van 5 maart 2026 van de Universal
 
 >[!TIP]
 >
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* [ de componentenplukker ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) heeft een nieuw ontwerp.
-* [ de kleurkiezer van A ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) voor RTE is nu beschikbaar.
+* [&#x200B; de componentenplukker &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) heeft een nieuw ontwerp.
+* [&#x200B; de kleurkiezer van A &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) voor RTE is nu beschikbaar.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -37,5 +37,5 @@ Als u de volgende functies wilt testen en uw feedback wilt delen, stuurt u een e
 
 ## Overige verbeteringen {#other-improvements}
 
-* De groepering, de tekstrichting, en de inkeping opties worden nu [ toegelaten door gebrek in RTE ](/help/implementing/universal-editor/configure-rte.md) op voorwaarde dat uw achterste eind hen steunt.
+* De groepering, de tekstrichting, en de inkeping opties worden nu [&#x200B; toegelaten door gebrek in RTE &#x200B;](/help/implementing/universal-editor/configure-rte.md) op voorwaarde dat uw achterste eind hen steunt.
 * Tabs worden nu gerenderd bij gebruik van een inhoudsfragment met een Open API- en UI-schema.
