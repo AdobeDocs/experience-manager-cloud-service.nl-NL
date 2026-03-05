@@ -36,7 +36,7 @@ De agent kan pijpleidingsstatussen terugwinnen en u helpen het ontbreken problem
 
 Om tot deze agent toegang te hebben, gelieve te verwijzen naar de [&#x200B; versienota&#39;s &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) voor instructies op hoe te in het bètaprogramma inschrijven, die zeker zijn om op uw interesse in de Agent van de Ontwikkeling te wijzen. U kunt ontwikkelaar agent-specifiek ook e-mailen terugkoppelt aan [&#x200B; aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[&#x200B; volg langs een leerprogramma &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) om te leren hoe te om de Agent van de Ontwikkeling te gebruiken om pijpleidingsmislukkingen problemen op te lossen.
+[&#x200B; volg langs een leerprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) om te leren hoe te om de Agent van de Ontwikkeling te gebruiken om pijpleidingsmislukkingen problemen op te lossen.
 
 ## Toegang tot de ontwikkelingsagent via Cloud Manager {#how-to-access-the-agent}
 
