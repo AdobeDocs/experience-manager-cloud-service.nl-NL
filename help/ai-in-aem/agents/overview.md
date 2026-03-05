@@ -27,11 +27,11 @@ Deze agents zijn beschikbaar in Adobe Experience Manager (AEM) as a Cloud Servic
 
 U hebt drie opties om tot agenten toegang te hebben.
 
-1. U kunt de optie hebben om tot de Agenten van AEM door [&#x200B; toegang te hebben probeert alvorens u programma koopt, &#x200B;](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) dat in fasen voortschrijdt. Uw CSM of TAM kan helpen beschikbaarheid voor uw organisatie bevestigen.
+1. U kunt de optie hebben om tot de Agenten van AEM door [&#x200B; toegang te hebben probeert alvorens u programma koopt, &#x200B;](http://experienceleague.adobe.com/nl/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) dat in fasen voortschrijdt. Uw CSM of TAM kan helpen beschikbaarheid voor uw organisatie bevestigen.
 1. Onderzoek de agenten van AEM [&#x200B; door een proef.](https://www.aem.live/developer/aem-playground)
 1. Verbind met uw CSM of TAM om toegang via het Bureau te bespreken SKU als dat zich aan uw roadmap en evaluatieplannen richt.
 
-Naarmate nieuwe vaardigheden beschikbaar komen in een vroege release, bieden we extra mogelijkheden om deel te nemen en feedback te delen. Wij moedigen u aan om [&#x200B; deze pagina &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) voor updates te letten.
+Naarmate nieuwe vaardigheden beschikbaar komen in een vroege release, bieden we extra mogelijkheden om deel te nemen en feedback te delen. Wij moedigen u aan om [&#x200B; deze pagina &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) voor updates te letten.
 
 ## Merk Experience Agent {#brand-experience-agent}
 
