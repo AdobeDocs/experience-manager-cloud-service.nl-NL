@@ -20,7 +20,7 @@ Dit artikel biedt een end-to-end workflow om Content Hub toegang te bieden aan g
 
 Bekijk deze video voor informatie over hoe u Content Hub for Experience Manager Assets kunt inschakelen:
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472941/?captions=dut&learn=on){transcript=true}
 
 De verschillende privileges in Content Hub zijn onder meer:
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [&#x200B; de gebruikers van Content Hub met rechten om activa &#x200B;](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen activa aan Content Hub of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445382/?captions=dut&learn=on){transcript=true}
 
 De elementen die in Assets as a Cloud Service als `Approved` zijn gemarkeerd, zijn automatisch beschikbaar in Content Hub. Voor meer informatie, zie [&#x200B; activa voor Content Hub &#x200B;](/help/assets/approve-assets-content-hub.md) goedkeuren.
 
