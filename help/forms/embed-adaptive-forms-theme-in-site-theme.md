@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Een Adaptief Forms-thema insluiten in een AEM Sites-thema
 
-U kunt een Adaptief thema van Forms (zoals het [&#x200B; thema van het Canvas van AEM Forms &#x200B;](https://github.com/adobe/aem-forms-theme-canvas)) in uw thema van AEM Sites inbedden. Die manier, drijft één enkel thema zowel uw plaatspagina&#39;s als om het even welke Aangepaste Forms ingebed op die pagina&#39;s, met één bouwstijl en één plaatsing via de [&#x200B; Voorste-EindPijpleiding van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html).
+U kunt een Adaptief thema van Forms (zoals het [&#x200B; thema van het Canvas van AEM Forms &#x200B;](https://github.com/adobe/aem-forms-theme-canvas)) in uw thema van AEM Sites inbedden. Die manier, drijft één enkel thema zowel uw plaatspagina&#39;s als om het even welke Aangepaste Forms ingebed op die pagina&#39;s, met één bouwstijl en één plaatsing via de [&#x200B; Voorste-EindPijpleiding van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=nl-NL).
 
 Dit artikel is bedoeld voor ontwikkelaars die het standaard (of aangepaste) AEM Sites-thema onderhouden of aanpassen en die adaptieve formulieropmaak willen opnemen zonder een aparte Forms-themaimplementatie te beheren.
 
@@ -22,7 +22,7 @@ Dit artikel is bedoeld voor ontwikkelaars die het standaard (of aangepaste) AEM 
 
 Voordat u begint, moet u controleren of:
 
-* **AEM as a Cloud Service** met [&#x200B; Voorste-Eind Pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) die voor uw plaatsthema wordt gevormd.
+* **AEM as a Cloud Service** met [&#x200B; Voorste-Eind Pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=nl-NL) die voor uw plaatsthema wordt gevormd.
 * **het themabronnen van de Plaats** - bijvoorbeeld, het [&#x200B; standaardthema van het plaatsmalplaatje &#x200B;](https://github.com/adobe/aem-site-template-standard) (het antwoord dat `theme/` met `src/theme.scss`, `src/components/`, etc. bevat).
 * **de themabronnen van Forms** - het [&#x200B; thema van het Canvas van AEM Forms &#x200B;](https://github.com/adobe/aem-forms-theme-canvas) (of een ander compatibel Adaptief thema van Forms) gekloond of plaatselijk gedownload.
 * **Node.js en npm** - om het plaatsthema (zie themaREADME voor gesteunde versies) te bouwen.
@@ -213,7 +213,7 @@ Dit is de enige vereiste wijziging in de bestaande sitethemastructuur. Alle form
 
    ![&#x200B; looppas bouwt &#x200B;](/help/forms/assets/theme-mpm-run-build.png)
 
-2. Stel via uw bestaande [&#x200B; voor-EindPijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) op. Na de implementatie wordt hetzelfde thema-CSS toegepast op zowel sitepagina&#39;s als ingesloten Adaptive Forms.
+2. Stel via uw bestaande [&#x200B; voor-EindPijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=nl-NL) op. Na de implementatie wordt hetzelfde thema-CSS toegepast op zowel sitepagina&#39;s als ingesloten Adaptive Forms.
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -228,4 +228,4 @@ Dit is de enige vereiste wijziging in de bestaande sitethemastructuur. Alle form
 ## Zie ook {#see-also}
 
 * [Thema&#39;s gebruiken om adaptieve Forms op basis van kerncomponenten te maken](/help/forms/using-themes-in-core-components.md)
-* [&#x200B; ontwikkelt zich met Voorste-Eind Pijpleidingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)
+* [&#x200B; ontwikkelt zich met Voorste-Eind Pijpleidingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=nl-NL)
