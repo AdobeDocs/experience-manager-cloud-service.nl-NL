@@ -4,10 +4,11 @@ description: Leer hoe te om regelreeksen in Dynamische Media op te stellen om UR
 contentOwner: Rick Brough
 feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -19,11 +20,11 @@ U kunt regelsets implementeren in dynamische media om URL&#39;s te transformeren
 * Een MIME-achtervoegsel toevoegen. Voor veel services en websites zijn afbeeldingsachtervoegsels vereist, zoals het toevoegen van `.jpg` aan een URL.
 * Een mappad naar de URL maken voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s).
 
-  Zie [&#x200B; hoe Adobe Dynamic Media Classic SEO &#x200B;](/help/assets/dynamic-media/assets/s7_seo.pdf) steunt.
+  Zie [ hoe Adobe Dynamic Media Classic SEO ](/help/assets/dynamic-media/assets/s7_seo.pdf) steunt.
 
 * Metagegevens toevoegen aan de URL voor SEO-doeleinden (Search Engine Optimization).
 
-  Zie [&#x200B; hoe Adobe Dynamic Media Classic SEO &#x200B;](/help/assets/dynamic-media/assets/s7_seo.pdf) steunt.
+  Zie [ hoe Adobe Dynamic Media Classic SEO ](/help/assets/dynamic-media/assets/s7_seo.pdf) steunt.
 
 * Door de positie van de inhoud in te stellen om een download te activeren.
 * Vereenvoudig URL&#39;s met sjablonen voor beeldweergave voor personalisatie. Draai `rgb{XX,YY,ZZ}` bijvoorbeeld om in RTF-ready `\redXX\greenYY\blueZZ`
@@ -37,14 +38,14 @@ In de context van Dynamic Media kunnen websites die een op XML gebaseerd systeem
 >Wees voorzichtig bij het gebruik van linialen; u kunt voorkomen dat dynamische media-inhoud op uw website wordt weergegeven.
 
 Er zijn voorbeeldregels beschikbaar die u kunnen helpen uw eigen regelset te maken.
-Zie [&#x200B; de vastgestelde verwijzing van de Regel &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
+Zie [ de vastgestelde verwijzing van de Regel ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
 
 Net als bij het maken van alle regelsets moet u ervoor zorgen dat uw XML-bestand geldig is voordat u het uploadt met een XML-validatieprogramma zoals xmlvalid.
 
 Zorg er ook voor dat u eerst de regel test die is ingesteld in een testomgeving die geen invloed heeft op uw live productieomgeving.
 Productieomgevingen en staging-omgevingen vereisen doorgaans verschillende logins.
 
-Zie de [&#x200B; Desktoptoepassing van Adobe Dynamic Media Classic voor login informatie &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out).
+Zie de [ Desktoptoepassing van Adobe Dynamic Media Classic voor login informatie ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out).
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -54,14 +55,14 @@ Zie de [&#x200B; Desktoptoepassing van Adobe Dynamic Media Classic voor login in
 
 ## XML-regelsets implementeren {#deploy-xml-rule-sets}
 
-1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out), dan login aan uw rekening.
+1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out), dan login aan uw rekening.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens opgegeven op het moment van de levering. Neem contact op met de Klantenondersteuning als u deze informatie niet hebt.
 
 1. Upload het bestand met de regelset als volgt:
 
    * Selecteer **[!UICONTROL Upload]** op de algemene navigatiebalk.
-   * Selecteer **[!UICONTROL Browse]** op de pagina **[!UICONTROL Upload]** in de linkerbovenhoek.
+   * Selecteer **[!UICONTROL Upload]** op de pagina **[!UICONTROL Browse]** in de linkerbovenhoek.
    * Blader in het dialoogvenster **[!UICONTROL Open]** naar het bestand met de regelset (XML).
    * Selecteer het bestand en selecteer vervolgens **[!UICONTROL Open]** .
    * Selecteer rechts van de pagina **[!UICONTROL Upload]** een doelmap voor het bestand met regelsets.

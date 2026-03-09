@@ -2,10 +2,11 @@
 title: Elementen goedkeuren in Experience Manager
 description: Leer hoe te om activa in  [!DNL Experience Manager] goed te keuren.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Als u de eigenschap wilt weergeven waaraan het veld **[!UICONTROL Review Status]
 1. Sleep een **[!UICONTROL Dropdown]** -veld van de sectie **[!UICONTROL Build Form]** naar de rechterkant van de sectie Metagegevens in het formulier.
 1. Klik op het veld dat u zojuist hebt toegevoegd en voer de volgende updates uit in het deelvenster **[!UICONTROL Settings]** :
    1. Verander **[!UICONTROL Field Label]** in _Doel van de Goedkeuring_.
-   1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:activationTarget_.
+   1. Werk **[!UICONTROL Map to property]** aan _ bij./jcr :content/metadata/dam :activationTarget_.
    1. Voeg de opties toe met `contenthub` en `delivery` als optiewaarden.
 
    >[!NOTE]
@@ -51,14 +52,14 @@ Als u de eigenschap wilt weergeven waaraan het veld **[!UICONTROL Review Status]
 Voer de volgende stappen uit om elementen in [!DNL Experience Manager Admin view] goed te keuren:
 
 1. Selecteer de elementen en klik op **[!UICONTROL Properties]** in het bovenste deelvenster.
-1. Schuif omlaag naar **[!UICONTROL Review Status]** op het tabblad **[!UICONTROL Basic]** .
+1. Schuif omlaag naar **[!UICONTROL Basic]** op het tabblad **[!UICONTROL Review Status]** .
 1. Wijzig de revisiestatus in **[!UICONTROL Approved]** .
    ![afbeelding](/help/assets/assets/approve-old-ui.png)
 1. Klik op **[!UICONTROL Save & Close]**.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   Op dezelfde manier kunt u activa goedkeuren gebruikend de [&#x200B; nieuwe mening van Assets &#x200B;](/help/assets/manage-organize-assets-view.md).
+   Op dezelfde manier kunt u activa goedkeuren gebruikend de [ nieuwe mening van Assets ](/help/assets/manage-organize-assets-view.md).
 
 ## Elementen in bulk goedkeuren {#bulk-approve-assets}
 
@@ -73,13 +74,13 @@ Stroomlijn uw workflow door snel meerdere middelen tegelijk goed te keuren. U ku
 1. Sleep een **[!UICONTROL Single Line Text Field]** van de sectie **[!UICONTROL Build Form]** naar de rechterkant van de sectie Metagegevens in het formulier.
 1. Klik op het veld dat u zojuist hebt toegevoegd en voer de volgende updates uit in het deelvenster **[!UICONTROL Settings]** :
    1. Verander **[!UICONTROL Field Label]** in _Goedgekeurde Assets_.
-   1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:status_.
+   1. Werk **[!UICONTROL Map to property]** aan _ bij./jcr :content/metadata/dam :status_.
    1. Verander de Standaardwaarde in _goedgekeurd_.
 
 1. Sleep een **[!UICONTROL Dropdown]** -veld van de sectie **[!UICONTROL Build Form]** naar de rechterkant van de sectie Metagegevens in het formulier.
 1. Klik op het veld dat u zojuist hebt toegevoegd en voer de volgende updates uit in het deelvenster **[!UICONTROL Settings]** :
    1. Verander **[!UICONTROL Field Label]** in _Doel van de Goedkeuring_.
-   1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:activationTarget_.
+   1. Werk **[!UICONTROL Map to property]** aan _ bij./jcr :content/metadata/dam :activationTarget_.
    1. Voeg de opties toe met `contenthub` en `delivery` als optiewaarden.
 
    >[!NOTE]
@@ -103,14 +104,14 @@ En als u een grote hoeveelheid gegevens in een map in de Assets-weergave wilt se
 
 1. Selecteer **[!UICONTROL Approved]** in het **[!UICONTROL Status]** -veld dat beschikbaar is in de sectie [!UICONTROL Properties] in het rechterdeelvenster.
 
-   Als u de status als `Approved` selecteert, en als [&#x200B; Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) of [&#x200B; Content Hub &#x200B;](/help/assets/product-overview.md), of allebei voor uw Experience Manager Assets worden toegelaten, kunt u `Delivery` bekijken en `Content Hub` opties beschikbaar op het **[!UICONTROL Approval Target]** gebied.
+   Als u de status als `Approved` selecteert, en als [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) of [ Content Hub ](/help/assets/product-overview.md), of allebei voor uw Experience Manager Assets worden toegelaten, kunt u `Delivery` bekijken en `Content Hub` opties beschikbaar op het **[!UICONTROL Approval Target]** gebied.
 
    * Selecteer **[!UICONTROL Delivery]** om de middelen beschikbaar te maken voor zowel Dynamic Media met OpenAPI-mogelijkheden als Content Hub. Als Content Hub niet is ingeschakeld, maakt u met deze optie de middelen alleen beschikbaar voor Dynamic Media met OpenAPI-mogelijkheden.
    * Selecteer **[!UICONTROL Content Hub]** om de middelen beschikbaar te maken voor Content Hub.
 
-   ![&#x200B; de status van de Goedkeuring &#x200B;](/help/assets/assets/approval-status-delivery.png)
+   ![ de status van de Goedkeuring ](/help/assets/assets/approval-status-delivery.png)
 
-   Als u niet de standaardmeta-gegevensvorm gebruikt en niet het **[!UICONTROL Approval Target]** gebied kunt bekijken, [&#x200B; geef uw meta-gegevensvorm &#x200B;](/help/assets/metadata-assets-view.md#metadata-forms) uit om het **[!UICONTROL Approval for]** gebied van de beschikbare componenten aan uw meta-gegevensvorm te slepen en klik **[!UICONTROL Save]**.
+   Als u niet de standaardmeta-gegevensvorm gebruikt en niet het **[!UICONTROL Approval Target]** gebied kunt bekijken, [ geef uw meta-gegevensvorm ](/help/assets/metadata-assets-view.md#metadata-forms) uit om het **[!UICONTROL Approval for]** gebied van de beschikbare componenten aan uw meta-gegevensvorm te slepen en klik **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
@@ -131,10 +132,10 @@ Om levering URL voor een goedgekeurd middel binnen de bewaarplaats te kopiëren:
 1. Selecteer **[!UICONTROL Dynamic Media with OpenAPI]** beschikbaar in het deelvenster **[!UICONTROL Dynamic Media]** .
 
 1. Klik op **[!UICONTROL Copy URL]** om de URL van de levering van het element te kopiëren.
-   ![&#x200B; dynamische vertoningen &#x200B;](/help/assets/assets/dm-with-openapi-non-image-assets.png)
+   ![ dynamische vertoningen ](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
 
-Voor informatie over andere vertoningen die binnen het Dynamische paneel van Media tonen, zie [&#x200B; Mening en download Dynamische vertoningen van Media &#x200B;](/help/assets/renditions.md#view-download-dm-renditions).
+Voor informatie over andere vertoningen die binnen het Dynamische paneel van Media tonen, zie [ Mening en download Dynamische vertoningen van Media ](/help/assets/renditions.md#view-download-dm-renditions).

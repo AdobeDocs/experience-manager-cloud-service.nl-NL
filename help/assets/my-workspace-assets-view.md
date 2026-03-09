@@ -1,12 +1,13 @@
 ---
 title: Weergave Mijn Workspace voor Assets
 description: Mijn Workspace is een pagina die aanpasbare visuele modules biedt voor eenvoudige toegang tot belangrijke gebieden van de Assets-gebruikersinterface en informatie die het meest relevant is voor de gebruiker.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -48,11 +49,11 @@ Een element, map of verzameling vastzetten:
 
 1. Selecteer deze optie als u het item alleen voor u, voor de hele organisatie of voor geselecteerde groepen wilt vastzetten. Als u **[!UICONTROL For groups]** selecteert, kiest u een bestaande groepsnaam in het veld **[!UICONTROL Pin for groups]** .
 
-   ![&#x200B; Vastzetten punten voor groepen &#x200B;](assets/pin-items-for-groups.png)
+   ![ Vastzetten punten voor groepen ](assets/pin-items-for-groups.png)
 1. Klik op **[!UICONTROL Pin]**.
 
    Het geselecteerde item wordt weergegeven in de sectie **[!UICONTROL Quick Access]** van Mijn Workspace.
-   ![&#x200B; Taken in Workspace &#x200B;](assets/quick-access.png)
+   ![ Taken in Workspace ](assets/quick-access.png)
 
 **Inzichten**
 
@@ -60,13 +61,13 @@ Beheerders kunnen een overzicht weergeven van het aantal downloads en uploads da
 
 U kunt hoogste gezochte termijnen samen met het aantal tijden ook bekijken die termijnen binnen uw de meningsplaatsing van Assets gebruikend de **sectie van Inzichten** van Mijn Workspace worden gezocht. U kunt ook naar gedetailleerde inzichten navigeren om de belangrijkste zoekopdrachten in de afgelopen 30 dagen of 12 maanden weer te geven.
 
-![&#x200B; Inzichten in Workspace &#x200B;](assets/insights.png)
+![ Inzichten in Workspace ](assets/insights.png)
 
 **Taken**
 
 Hiermee geeft u op het tabblad **[!UICONTROL My Tasks]** de lijst weer met taken die u momenteel hebt toegewezen, die u hebt gemaakt op het tabblad **[!UICONTROL Assigned tasks]** en de taken die u al hebt voltooid op het tabblad **[!UICONTROL Completed tasks]** . U kunt een taak selecteren en op **[!UICONTROL Complete ask]** klikken om een taak goed te keuren of af te wijzen. U kunt ook een taak selecteren en op **[!UICONTROL Open Task Details]** klikken om de taak weer te geven en deze goed te keuren, af te wijzen, te bewerken of te verwijderen.
 
-![&#x200B; Taken in Workspace &#x200B;](assets/tasks-workspace.png)
+![ Taken in Workspace ](assets/tasks-workspace.png)
 
 >[!NOTE]
 >
@@ -78,7 +79,7 @@ Hiermee geeft u een overzicht weer van de elementen, inclusief de lijst met elem
 
 Op het tabblad **[!UICONTROL Top Downloads]** worden de tien meest gedownloade elementen weergegeven die beschikbaar zijn in uw Assets-weergaveomgeving. U kunt selecteren om elementen weer te geven in de Lijstweergave of de Rasterweergave. In beide weergaven worden het indelingstype en het aantal downloads voor elk element weergegeven. U kunt ook een element selecteren en op **[!UICONTROL Details]** klikken om de eigenschappen ervan weer te geven.
 
-![&#x200B; Inhoud widget in Workspace &#x200B;](assets/workspace-content.png)
+![ Inhoud widget in Workspace ](assets/workspace-content.png)
 
 ## Mijn Workspace aanpassen {#configure-widgets}
 
@@ -90,4 +91,4 @@ Alle widgets worden standaard weergegeven, maar u kunt de widgets die in Mijn Wo
 
 1. Klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
-   ![&#x200B; pas widgets in Workspace &#x200B;](assets/customize-workspace.png) aan
+   ![ pas widgets in Workspace ](assets/customize-workspace.png) aan

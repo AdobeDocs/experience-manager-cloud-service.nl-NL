@@ -2,10 +2,11 @@
 title: Dynamische media met OpenAPI-mogelijkheden
 description: Leer belangrijke concepten zoals waarom Dynamic Media met OpenAPI-mogelijkheden wordt gebruikt en hoe u deze kunt inschakelen.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -14,31 +15,31 @@ ht-degree: 0%
 
 In de snelle digitale wereld van vandaag, is het ontsluiten van het volledige potentieel van de digitale activa van uw merk cruciaal om voor de concurrentie te blijven. Een holistische DAM-oplossing (Digital Assets Management) vereenvoudigt het beheer van bedrijfsmiddelen, bevordert de consistentie van merken en versnelt de levering van inhoud, waarbij de integriteit van merken en uitzonderlijke ervaringen met klanten worden gegarandeerd.
 
-Dynamische media met OpenAPI-mogelijkheden zetten DAM tot de kern van een flexibel en efficiënt systeem van de toeleveringsketen voor inhoud om het beheer en de levering van middelen te garanderen.
+Dynamische media met OpenAPI-mogelijkheden zetten DAM centraal in een flexibel en efficiënt content-ecosysteem van supply chain om beheer en levering van middelen te garanderen.
 
 ## Waarom Dynamic Media gebruiken met OpenAPI-mogelijkheden? {#dynamic-media-open-api-features}
 
 Dynamische media met OpenAPI-mogelijkheden bieden de volgende belangrijke voordelen:
 
-* **Naadloze integraties**: De dynamische Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om levering van activa met hun toepassingen [&#x200B; gemakkelijk &#x200B;](/help/assets/integrate-dynamic-media-open-apis.md) te integreren. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt a [&#x200B; Micro Frontend activa selecteerde gebruikersinterface &#x200B;](/help/assets/overview-asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
+* **Naadloze integraties**: De dynamische Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om levering van activa met hun toepassingen [ gemakkelijk ](/help/assets/integrate-dynamic-media-open-apis.md) te integreren. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt a [ Micro Frontend activa selecteerde gebruikersinterface ](/help/assets/overview-asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
 
 * **Gecentraliseerd beheer van digitale activa**: DAM is de enige bron van waarheid voor alle digitale activa. Uw digitale middelen worden centraal beheerd in AEM Assets en worden aan verbruikende toepassingen geleverd door verwijzing gebruikend levering URLs, zonder activa te kopiëren binaries.
 
 * **updates in real time**: Om het even welke veranderingen die in goedgekeurde activa in DAM, met inbegrip van versieupdates en meta-gegevenswijzigingen worden aangebracht, worden automatisch weerspiegeld in levering URLs. Met een korte tijd-aan-Levende (TTL) waarde van 10 minuten die voor Dynamische Media met mogelijkheden OpenAPI via CDN wordt gevormd, worden de updates zichtbaar over alle creatie en gepubliceerde interfaces binnen 10 minuten.
 
-* **de consistentie van het Merk**: Slechts [&#x200B; merk-goedgekeurde activa &#x200B;](/help/assets/approve-assets.md) worden blootgesteld aan stroomafwaartse toepassingen. [&#x200B; de Managers en de Marketers van de Merk handhaven strikte controle over merkactiva &#x200B;](/help/assets/restrict-assets-delivery.md). Alleen goedgekeurde en nieuwste versie van het middel is beschikbaar voor gebruik, zodat alle kanalen en toepassingen consistent blijven.
+* **de consistentie van het Merk**: Slechts [ merk-goedgekeurde activa ](/help/assets/approve-assets.md) worden blootgesteld aan stroomafwaartse toepassingen. [ de Managers en de Marketers van de Merk handhaven strikte controle over merkactiva ](/help/assets/restrict-assets-delivery.md). Alleen goedgekeurde en nieuwste versie van het middel is beschikbaar voor gebruik, zodat alle kanalen en toepassingen consistent blijven.
 
 * **Web-geoptimaliseerde levering**: De digitale activa worden geleverd in Web-geoptimaliseerde formaten om de Velen van het Web van de Kern van uw digitale ervaringen te verbeteren. Dit omvat ondersteuning voor WebP-uitvoeringen voor afbeeldingen, adaptieve streaming via HLS- of DASH-protocollen voor video&#39;s en originele uitvoeringen voor documenten.
 
-* [&#x200B; Dynamische activa transformatie &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis): Ons systeem staat voor de transformatie van het beeld toe het gebruiken van parameters URL die als beeldbepalingen worden bekend. Breedte, hoogte, roteren, spiegelen, kwaliteit, uitsnijden, opmaken en slim uitsnijden. Transformeerde uitvoeringen worden dynamisch gegenereerd en naadloos via de CDN geleverd.
+* [ Dynamische activa transformatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis): Ons systeem staat voor de transformatie van het beeld toe het gebruiken van parameters URL die als beeldbepalingen worden bekend. Breedte, hoogte, roteren, spiegelen, kwaliteit, uitsnijden, opmaken en slim uitsnijden. Transformeerde uitvoeringen worden dynamisch gegenereerd en naadloos via de CDN geleverd.
 
-* **Veilige levering van activa**: De dynamische Media met mogelijkheden OpenAPI verstrekt een mechanisme voor controle over toegang tot uw digitale activa. U kunt gebruikersrollen of groepen als meta-gegevens voor te beveiligen activa specificeren en een vooraf bepaald tijdskader plaatsen waarin [&#x200B; slechts geautoriseerde gebruikers tot deze activa &#x200B;](/help/assets/restrict-assets-delivery.md) kunnen toegang hebben. De leverings-URL&#39;s voor beveiligde elementen worden tijdens de beperkte periode niet opgelost voor onbevoegde gebruikers.
+* **Veilige levering van activa**: De dynamische Media met mogelijkheden OpenAPI verstrekt een mechanisme voor controle over toegang tot uw digitale activa. U kunt gebruikersrollen of groepen als meta-gegevens voor te beveiligen activa specificeren en een vooraf bepaald tijdskader plaatsen waarin [ slechts geautoriseerde gebruikers tot deze activa ](/help/assets/restrict-assets-delivery.md) kunnen toegang hebben. De leverings-URL&#39;s voor beveiligde elementen worden tijdens de beperkte periode niet opgelost voor onbevoegde gebruikers.
 
 * **Inzichten van Gegevens om geïnformeerde besluiten (aanstaande) te nemen**: Buiten activabeheer en levering, vangt het de inzichten van leveringsgegevens in activa leveranties bij CDN die de managers van het Merk toestaan om leveringsmetriek over kanalen te volgen. Het stelt hen in staat gegevensgestuurde beslissingen te nemen met het oog op een continue optimalisering van het beheer en de leveringsstrategieën van activa.
 
-![&#x200B; Dynamische Media Open API gegevensstroomdiagram &#x200B;](assets/dm-openapi-dfd.png)
+![ Dynamische Media Open API gegevensstroomdiagram ](assets/dm-openapi-dfd.png)
 
-Voor informatie over het beschikbare Dynamische dienstenaanbod van Media en hun mogelijkheden, zie [&#x200B; Dynamische Media Prime en Ultimate &#x200B;](/help/assets/dynamic-media/dm-prime-ultimate.md).
+Voor informatie over het beschikbare Dynamische dienstenaanbod van Media en hun mogelijkheden, zie [ Dynamische Media Prime en Ultimate ](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 >[!NOTE]
 >
@@ -57,7 +58,7 @@ Voor toegang tot Dynamic Media met OpenAPI-mogelijkheden hebt u licenties nodig 
 
 Voordat u een aanvraag indient om Dynamic Media met OpenAPI-mogelijkheden op AEM as a Cloud Service in te schakelen, moet u controleren of dit nog niet het geval is.
 
-Zodra de [&#x200B; Eerste vereisten &#x200B;](#prerequisites-dynaminc-media-open-apis) worden voldaan en als de Dynamische Media met mogelijkheden OpenAPI op uw instantie van AEM as a Cloud Service wordt toegelaten, is er een Levering URL beschikbaar voor elk goedgekeurd middel in de bewaarplaats. Voor informatie over hoe te om levering URL te kopiëren, zie [&#x200B; levering URL van het Exemplaar voor goedgekeurde activa &#x200B;](approve-assets.md#copy-delivery-url-approved-assets). Adobe raadt u aan deze methode te gebruiken om te controleren of Dynamic Media met OpenAPI-mogelijkheden is ingeschakeld op AEM as a Cloud Service voordat een ondersteuningsticket wordt verzonden om dit in te schakelen.
+Zodra de [ Eerste vereisten ](#prerequisites-dynaminc-media-open-apis) worden voldaan en als de Dynamische Media met mogelijkheden OpenAPI op uw instantie van AEM as a Cloud Service wordt toegelaten, is er een Levering URL beschikbaar voor elk goedgekeurd middel in de bewaarplaats. Voor informatie over hoe te om levering URL te kopiëren, zie [ levering URL van het Exemplaar voor goedgekeurde activa ](approve-assets.md#copy-delivery-url-approved-assets). Adobe raadt u aan deze methode te gebruiken om te controleren of Dynamic Media met OpenAPI-mogelijkheden is ingeschakeld op AEM as a Cloud Service voordat een ondersteuningsticket wordt verzonden om dit in te schakelen.
 
 Als u Dynamic Media met OpenAPI-mogelijkheden op AEM as a Cloud Service wilt inschakelen, verzendt u een Adobe Support-ticket met de volgende gegevens:
 

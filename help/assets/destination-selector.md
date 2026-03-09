@@ -3,11 +3,12 @@ title: Doelkiezer voor AEM as a Cloud Service
 description: Met de AEM-doelkiezer kunt u elementen weergeven en selecteren die u als een kopie van het oorspronkelijke element kunt gebruiken.
 contentOwner: Adobe
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1880'
 ht-degree: 0%
 
 ---
@@ -48,7 +49,7 @@ De integratie wordt gedaan door het pakket van de Selecteur van de Bestemming in
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
 
-* U integreert een [!DNL Adobe] toepassing op [&#x200B; Verenigde Shell &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=nl-NL).
+* U integreert een [!DNL Adobe] toepassing op [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
 * Er is al een IMS-token gegenereerd voor verificatie.
 
 ## Vereisten {#prerequisites}
@@ -61,7 +62,7 @@ Definieer de voorwaarden in het `index.html` -bestand of een vergelijkbaar besta
 
 ## Installatie {#installation}
 
-De Selecteur van de bestemming is beschikbaar via zowel ESM CDN (bijvoorbeeld, [&#x200B; esm.sh &#x200B;](https://esm.sh/)/[&#x200B; kabel &#x200B;](https://www.skypack.dev/)) als [&#x200B; UMD &#x200B;](https://github.com/umdjs/umd) versie.
+De Selecteur van de bestemming is beschikbaar via zowel ESM CDN (bijvoorbeeld, [ esm.sh ](https://esm.sh/)/[ kabel ](https://www.skypack.dev/)) als [ UMD ](https://github.com/umdjs/umd) versie.
 
 In browsers die {versie 0} gebruiken UMD **(geadviseerd):**
 
@@ -132,24 +133,24 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het geselecteer
 | *repo:id* | string | Unieke id voor het element. |
 | *repo:assetClass* | string | De classificatie van het element (bijvoorbeeld afbeelding, video, document). |
 | *repo:name* | string | De naam van het element, inclusief de bestandsextensie. |
-| *repo:grootte* | getal | De grootte van het element in bytes. |
-| *repo:weg* | string | De locatie van het middel in de opslagplaats. |
-| *repo:voorouders* | `Array<string>` | Een array van bovenliggende items voor het middel in de repository. |
-| *repo:staat* | string | Huidige status van het middel in de repository (bijvoorbeeld actief, verwijderd enzovoort). |
+| *repo:size* | getal | De grootte van het element in bytes. |
+| *repo:path* | string | De locatie van het middel in de opslagplaats. |
+| *repo:ancestors* | `Array<string>` | Een array van bovenliggende items voor het middel in de repository. |
+| *repo:state* | string | Huidige status van het middel in de repository (bijvoorbeeld actief, verwijderd enzovoort). |
 | *repo:createdBy* | string | De gebruiker of het systeem dat het element heeft gemaakt. |
-| *reactie:createDate* | string | De datum en tijd waarop het element is gemaakt. |
+| *repo:createDate* | string | De datum en tijd waarop het element is gemaakt. |
 | *repo:modifiedBy* | string | De gebruiker of het systeem dat het element als laatste heeft gewijzigd. |
-| *reactie:modifyDate* | string | De datum en het tijdstip waarop het element voor het laatst is gewijzigd. |
-| *dc:formaat* | string | De indeling van het element. |
+| *repo:modifyDate* | string | De datum en het tijdstip waarop het element voor het laatst is gewijzigd. |
+| *dc:format* | string | De indeling van het element. |
 | *_page* | orderBy: string; count: number; order | Hiermee neemt u het paginanummer van het document op. |
 
-Voor een volledige lijst van eigenschappen en gedetailleerd voorbeeld, bezoek [&#x200B; het Voorbeeld van de Code van de Selecteur van de Bestemming &#x200B;](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+Voor een volledige lijst van eigenschappen en gedetailleerd voorbeeld, bezoek [ het Voorbeeld van de Code van de Selecteur van de Bestemming ](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 ### Voorbeeld voor de niet-SUSI-stroom {#non-ims-vanilla}
 
 In dit voorbeeld wordt getoond hoe u de doelkiezer kunt gebruiken met een niet-SUSI-flow wanneer u een [!DNL Adobe] -toepassing uitvoert onder Unified Shell of wanneer u `imsToken` al hebt gegenereerd voor verificatie.
 
-Omvat het pakket van de Selecteur van de Bestemming in uw code gebruikend de `script` markering, zoals aangetoond in _lijnen 6-15_ van het hieronder voorbeeld. Nadat het script is geladen, is de algemene variabele `PureJSSelectors` beschikbaar voor gebruik. Bepaal de Eigenschappen van de Selecteur van de Bestemming [&#128279;](#destination-selector-properties) zoals aangetoond in _lijnen 16-23_. De eigenschappen `imsOrg` en `imsToken` zijn beide vereist voor verificatie in niet-SUSI-stroom. De eigenschap `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Om de Selector van de Bestemming terug te geven, roep de `renderDestinationSelector` functie zoals vermeld in _lijn 17_. De selecteur van de Bestemming wordt getoond in het `<div>` containerelement, zoals aangetoond in _lijnen 21 en 22_.
+Omvat het pakket van de Selecteur van de Bestemming in uw code gebruikend de `script` markering, zoals aangetoond in _lijnen 6-15_ van het hieronder voorbeeld. Nadat het script is geladen, is de algemene variabele `PureJSSelectors` beschikbaar voor gebruik. Bepaal de Eigenschappen van de Selecteur van de Bestemming [ ](#destination-selector-properties) zoals aangetoond in _lijnen 16-23_. De eigenschappen `imsOrg` en `imsToken` zijn beide vereist voor verificatie in niet-SUSI-stroom. De eigenschap `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Om de Selector van de Bestemming terug te geven, roep de `renderDestinationSelector` functie zoals vermeld in _lijn 17_. De selecteur van de Bestemming wordt getoond in het `<div>` containerelement, zoals aangetoond in _lijnen 21 en 22_.
 
 Als u deze stappen uitvoert, kunt u de doelkiezer gebruiken met een niet-SUSI-stroom in de [!DNL Adobe] -toepassing.
 
@@ -182,7 +183,7 @@ Als u deze stappen uitvoert, kunt u de doelkiezer gebruiken met een niet-SUSI-st
 </html>
 ```
 
-Voor gedetailleerd voorbeeld, bezoek {het Voorbeeld van de Code van de Selecteur van de Bestemming 0} [&#128279;](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+Voor gedetailleerd voorbeeld, bezoek {het Voorbeeld van de Code van de Selecteur van de Bestemming 0} [.](https://github.com/adobe/aem-assets-selectors-mfe-examples)
 
 ## Eigenschappen doelkiezer gebruiken {#destination-selector-properties}
 
@@ -203,46 +204,46 @@ U kunt de eigenschappen van de Selector van de Bestemming gebruiken om de manier
 | *viewType* | string | Nee | | De eigenschap `viewType` wordt gebruikt om de weergaven op te geven die u gebruikt om elementen weer te geven. |
 | *viewTypeOptions* | string | Nee | | Deze eigenschap is gerelateerd aan de eigenschap `viewType` . u kunt een of meer weergaven opgeven om elementen weer te geven. Beschikbare viewTypeOptions zijn: Lijstweergave, Rasterweergave, Galerieweergave, Watervalweergave en Boomweergave. |
 | *itemNameFormatter* | string | Nee | | Met deze eigenschap kunt u de itemnaam opmaken |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |  | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen gelokaliseerde aangepaste waarden kunt doorgeven via de `i18nSymbols` -proxy. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Om de opheffing uit te voeren, moet u een geldig [&#128279;](https://formatjs.io/docs/react-intl/api/#message-descriptor) voorwerp van de Beschrijver van het Bericht  tot de sleutel van `i18nSymbols` overgaan die u wilt met voeten treden. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |  | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen gelokaliseerde aangepaste waarden kunt doorgeven via de `i18nSymbols` -proxy. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Om de opheffing uit te voeren, moet u een geldig [ voorwerp van de Beschrijver van het Bericht ](https://formatjs.io/docs/react-intl/api/#message-descriptor) tot de sleutel van `i18nSymbols` overgaan die u wilt met voeten treden. |
 | *inlineAlertSetup* | string | Nee | | Er wordt een waarschuwingsbericht toegevoegd dat u in de toepassing wilt doorgeven. U kunt bijvoorbeeld een waarschuwingsbericht toevoegen dat u geen toestemming hebt om deze map te openen. |
-| *intl* | Object | Nee | | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via de eigenschap `intl.locale` . Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> de gesteunde scènekoorden volgen [&#x200B; ISO 639 - Codes &#x200B;](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
+| *intl* | Object | Nee | | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via de eigenschap `intl.locale` . Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> de gesteunde scènekoorden volgen [ ISO 639 - Codes ](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 
 ## Voorbeelden voor het gebruik van de eigenschappen van de doelkiezer {#usage-examples}
 
-U kunt de Eigenschappen van de Selecteur van de Bestemming [&#128279;](#destination-selector-properties) in het `index.html` dossier bepalen om de vertoning van de Selecteur van de Bestemming binnen uw toepassing aan te passen.
+U kunt de Eigenschappen van de Selecteur van de Bestemming [ ](#destination-selector-properties) in het `index.html` dossier bepalen om de vertoning van de Selecteur van de Bestemming binnen uw toepassing aan te passen.
 
 ### Voorbeeld 1: Een map maken in de doelkiezer
 
 Met Doelkiezer kunt u een map maken om elementen op de desbetreffende locatie te uploaden, verplaatsen of kopiëren.
 
-![&#x200B; creeer-omslag-bestemming-selecteur &#x200B;](assets/create-folder-destination-selector.png)
+![ creeer-omslag-bestemming-selecteur ](assets/create-folder-destination-selector.png)
 
 ### Voorbeeld 2: weergavetype van doelkiezer opgeven
 
 Met Doelselectie wordt een grote verscheidenheid aan elementen in vier verschillende weergaven weergegeven, waaronder de lijstweergave, de rasterweergave, de galerijweergave en de watervalweergave. U kunt de eigenschap `viewType` gebruiken om het standaardweergavetype op te geven. De eigenschap `viewTypeOptions` wordt samen met de eigenschap `viewType` gebruikt om andere weergavetypen op te geven, zodat andere opties voor weergavetype in een vervolgkeuzelijst kunnen worden weergegeven. Er kan één argument worden gebruikt voor het geval u slechts één optie wilt weergeven.
 
-![&#x200B; viewtype-bestemming-selecteur &#x200B;](assets/viewtype-destination-selector.png)
+![ viewtype-bestemming-selecteur ](assets/viewtype-destination-selector.png)
 
 ### Voorbeeld 3: Pad initialiseren van Assets-map
 
 Gebruik de eigenschap `path` om de mapnaam te definiëren die automatisch wordt weergegeven wanneer de doelkiezer wordt weergegeven.
 
-![&#x200B; initialize-folder-weg &#x200B;](assets/initialize-folder-path.png)
+![ initialize-folder-weg ](assets/initialize-folder-path.png)
 
 ## Doelselectie gebruiken {#using-destination-selector}
 
 Als de doelkiezer is ingesteld en u bent geverifieerd dat u de doelkiezer als [!DNL Adobe Experience Manager] -toepassing kunt gebruiken, kunt u elementen selecteren of verschillende andere bewerkingen uitvoeren om te zoeken naar uw elementen in de opslagplaats. [!DNL Cloud Service]
 
-![&#x200B; gebruiken-bestemming-selecteur &#x200B;](assets/using-destination-selector.png)
+![ gebruiken-bestemming-selecteur ](assets/using-destination-selector.png)
 
-* **A**: [&#x200B; bar van het Onderzoek &#x200B;](#search-bar)
-* **B**: [&#x200B; Sorterend &#x200B;](#sorting)
-* **C**: [&#x200B; Assets &#x200B;](#assets-repo)
-* **D**: [&#x200B; voeg achtervoegsel of prefix &#x200B;](#add-suffix-or-prefix) toe
-* **E**: [&#x200B; creeer nieuwe omslag &#x200B;](#create-new-folder)
-* **F**: [&#x200B; Mening &#x200B;](#types-of-view)
-* **G**: [&#x200B; Info &#x200B;](#info)
-* **H**: [&#x200B; Uitgezochte omslag &#x200B;](#select-folder)
+* **A**: [ bar van het Onderzoek ](#search-bar)
+* **B**: [ Sorterend ](#sorting)
+* **C**: [ Assets ](#assets-repo)
+* **D**: [ voeg achtervoegsel of prefix ](#add-suffix-or-prefix) toe
+* **E**: [ creeer nieuwe omslag ](#create-new-folder)
+* **F**: [ Mening ](#types-of-view)
+* **G**: [ Info ](#info)
+* **H**: [ Uitgezochte omslag ](#select-folder)
 
 ### Zoekbalk {#search-bar}
 
@@ -262,16 +263,16 @@ Dit is een voorbeeld van de eigenschap `optionsFormSetup` . U kunt dit gebruiken
 
 ### Een map maken {#create-new-folder}
 
-Hiermee kunt u als [!DNL Cloud Service] een map maken in de doelmap van de [!DNL Adobe Experience Manager] -map.
+Hiermee kunt u als [!DNL Adobe Experience Manager] een map maken in de doelmap van de [!DNL Cloud Service] -map.
 
 ### Weergavetypen {#types-of-view}
 
 Met de optie Doelselectie kunt u het element in vier verschillende weergaven weergeven:
 
-* ![&#x200B; lijstmening &#x200B;](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**]: De lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
-* ![&#128279;](assets/do-not-localize/grid-view.png) [!UICONTROL **de Mening van het Net**] van de netmening &lbrace;: De netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
-* ![&#x200B; galeriemening &#x200B;](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**]: De galeriemening toont dossiers of omslagen in een centrum-gesloten horizontale lijst.
-* ![&#x200B; watervalmening &#x200B;](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Mening van de Waterval**]: De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
+* ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**]: De lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
+* ![ ](assets/do-not-localize/grid-view.png) de Mening van het Net [!UICONTROL **van de netmening {: De netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.**]
+* ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**]: De galeriemening toont dossiers of omslagen in een centrum-gesloten horizontale lijst.
+* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Mening van de Waterval**]: De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
 
 ### Info {#info}
 
@@ -279,4 +280,4 @@ Met het informatie- of infopictogram kunt u metagegevens van het geselecteerde e
 
 ### Map selecteren {#select-folder}
 
-De Uitgezochte omslagknoop laat u activa selecteren voor diverse verrichtingen verbonden aan [&#x200B; eigenschappen &#x200B;](#destination-selector-properties) op bestemmingsselecteur uitvoeren.
+De Uitgezochte omslagknoop laat u activa selecteren voor diverse verrichtingen verbonden aan [ eigenschappen ](#destination-selector-properties) op bestemmingsselecteur uitvoeren.

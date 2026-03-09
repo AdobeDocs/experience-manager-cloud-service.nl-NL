@@ -4,10 +4,11 @@ description: Meer informatie over de metagegevensstandaard van XMP (Extensible M
 contentOwner: AG
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1017'
 ht-degree: 13%
 
 ---
@@ -16,12 +17,12 @@ ht-degree: 13%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 XMP (Extensible Metadata Platform) is de metagegevensstandaard die Experience Manager Assets gebruikt voor alle metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 
-Naast het aanbieden van universele meta-gegevens het coderen die in alle dossierformaten kunnen worden ingebed, verstrekt XMP een rijk [&#x200B; inhoudsmodel &#x200B;](#xmp-core-concepts) en wordt [&#x200B; gesteund door Adobe &#x200B;](#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met [!DNL Assets] een krachtig platform hebben om op te bouwen.
+Naast het aanbieden van universele meta-gegevens het coderen die in alle dossierformaten kunnen worden ingebed, verstrekt XMP een rijk [ inhoudsmodel ](#xmp-core-concepts) en wordt [ gesteund door Adobe ](#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met [!DNL Assets] een krachtig platform hebben om op te bouwen.
 
 ## Overzicht en ecosysteem van XMP {#xmp-ecosystem}
 
@@ -83,15 +84,15 @@ Wanneer u de metagegevens van een element wijzigt vanuit [!DNL Assets] of wannee
 
 Neem bijvoorbeeld een scenario waarin u de eigenschap [!UICONTROL Title] van het element met de naam `Classic Leather` to `Nylon` wijzigt.
 
-![&#x200B; meta-gegevens &#x200B;](assets/metadata.png)
+![ meta-gegevens ](assets/metadata.png)
 
 In dit geval slaat [!DNL Assets] de wijzigingen in de eigenschap **[!UICONTROL Title]** op in de parameter `dc:title` voor de metagegevens van de elementen die zijn opgeslagen in de elementenhiërarchie.
 
-![&#x200B; die meta-gegevens in activaknoop in de bewaarplaats worden opgeslagen &#x200B;](assets/metadata_stored.png)
+![ die meta-gegevens in activaknoop in de bewaarplaats worden opgeslagen ](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->De functie Terugschrijven is niet standaard ingeschakeld in [!DNL Assets] . Zie hoe te [&#x200B; meta-gegevensschrijver &#x200B;](#enable-xmp-writeback) toelaten. MSM voor digitale elementen werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
+>De functie Terugschrijven is niet standaard ingeschakeld in [!DNL Assets] . Zie hoe te [ meta-gegevensschrijver ](#enable-xmp-writeback) toelaten. MSM voor digitale elementen werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
 
 ### Terugschrijven naar XMP inschakelen {#enable-xmp-writeback}
 
@@ -106,7 +107,7 @@ Voer de volgende stappen uit als u Launchers wilt gebruiken:
 1. Als beheerder opent u **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]** .
 1. Selecteer de [!UICONTROL Launcher] waarvoor de **[!UICONTROL Workflow]** kolom **[!UICONTROL DAM MetaData Writeback]** wordt weergegeven. Klik op **[!UICONTROL Properties]** op de werkbalk.
 
-   ![&#x200B; Uitgezochte DAM de lancerer van de meta-gegevensbrief om zijn eigenschappen te wijzigen en het te activeren &#x200B;](assets/launcher-properties-metadata-writeback1.png)
+   ![ Uitgezochte DAM de lancerer van de meta-gegevensbrief om zijn eigenschappen te wijzigen en het te activeren ](assets/launcher-properties-metadata-writeback1.png)
 
 1. Selecteer **[!UICONTROL Activate]** op de **[!UICONTROL Launcher Properties]** -pagina. Klik op **[!UICONTROL Save & Close]**.
 

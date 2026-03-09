@@ -4,10 +4,11 @@ description: Leer hoe u hotlinkbeveiliging activeert in Dynamic Media.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. De hotlink *bescherming* is een methode om andere websites te verhinderen direct met beelden, CSS, of JavaScript op uw Web-pagina&#39;s te verbinden. Dit soort schild helpt onnodig bandbreedtegebruik onder uw Dynamic Media-account te verminderen.
 
-[&#x200B; de Klantenondersteuning van Adobe &#x200B;](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager#home) kan een verwijzerfilter op het niveau vormen CDN. Zo zorgt u ervoor dat de inhoud van dynamische media alleen wordt verzonden naar websites in uw lijst met toegestane websites voor het domein.
+[ de Klantenondersteuning van Adobe ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) kan een verwijzerfilter op het niveau vormen CDN. Zo zorgt u ervoor dat de inhoud van dynamische media alleen wordt verzonden naar websites in uw lijst met toegestane websites voor het domein.
 
 >[!NOTE]
 >

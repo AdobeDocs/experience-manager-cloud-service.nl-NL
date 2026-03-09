@@ -4,10 +4,11 @@ description: Leer hoe u een voorvertoning van 3D-middelen in Experience Manager 
 contentOwner: Rick Brough
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Experience Manager Assets ondersteunt het opnemen, beheren, voorvertonen en leveren van 3D-elementen.
@@ -69,19 +70,19 @@ Bovendien zijn de mogelijkheden van de clientcomputer - zoals een werkstation, l
 **aan voorproef 3D activa in Experience Manager:**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar Experience Manager.
-Zie [&#x200B; Gesteunde formaten voor 3D voorproef &#x200B;](#supported-3d-previewing-assets) en [&#x200B; activa &#x200B;](/help/assets/manage-digital-assets.md#uploading-assets) uploaden.
+Zie [ Gesteunde formaten voor 3D voorproef ](#supported-3d-previewing-assets) en [ activa ](/help/assets/manage-digital-assets.md#uploading-assets) uploaden.
 1. Ga vanuit Experience Manager op de pagina **[!UICONTROL Navigation]** naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** .
 
-   ![&#x200B; pagina van de Navigatie &#x200B;](/help/assets/dynamic-media/assets/navigation-assets.png)
+   ![ pagina van de Navigatie ](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. Selecteer in de rechterbovenhoek van de pagina in de vervolgkeuzelijst Weergave de optie **[!UICONTROL Card View]** en navigeer naar een 3D-element waarvan u een voorvertoning wilt weergeven.
 
-   ![&#x200B; Selectie van de 3D kaart &#x200B;](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![ Selectie van de 3D kaart ](/help/assets/dynamic-media/assets/3d-card-select.png)
    _in de Mening van de Kaart, selecteer de kaart van 3D activa u voorproef wilt._
 
 1. Selecteer de kaart van het 3D-element.
 
-   ![&#x200B; Interactieve 3D voorproef &#x200B;](/help/assets/dynamic-media/assets/3d-preview.png)
+   ![ Interactieve 3D voorproef ](/help/assets/dynamic-media/assets/3d-preview.png)
    _Interactieve voorproef van een 3D activa in de pagina van de de meningsmening van activadetails._
 1. Voer een van de volgende handelingen uit op de pagina met de elementdetails voor het 3D-element:
 

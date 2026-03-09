@@ -4,10 +4,11 @@ description: Leer over activa meta-gegevens in  [!DNL Experience Manager Assets]
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 Metagegevens zijn aanvullende informatie over het element die kan worden doorzocht. Deze wordt automatisch uitgepakt wanneer u een afbeelding uploadt. U kunt de bestaande metagegevens bewerken of nieuwe eigenschappen van metagegevens toevoegen aan bestaande velden (bijvoorbeeld wanneer een metagegevensveld leeg is).
 
-Omdat bedrijven gecontroleerde en betrouwbare taalwoordenboeken voor metagegevens nodig hebben, staat [!DNL Experience Manager Assets] niet toe dat op aanvraag nieuwe eigenschappen voor metagegevens worden toegevoegd. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [&#x200B; Creërend Nieuw Bezit van Meta-gegevens voor Assets &#x200B;](meta-edit.md#editing-metadata-schema).
+Omdat bedrijven gecontroleerde en betrouwbare taalwoordenboeken voor metagegevens nodig hebben, staat [!DNL Experience Manager Assets] niet toe dat op aanvraag nieuwe eigenschappen voor metagegevens worden toegevoegd. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [ Creërend Nieuw Bezit van Meta-gegevens voor Assets ](meta-edit.md#editing-metadata-schema).
 
 ## Metagegevens voor een element bewerken {#editing-metadata-for-an-asset}
 
@@ -42,7 +43,7 @@ Eventuele wijzigingen in de metagegevens van een element worden teruggeschreven 
 
 ## Metagegevensschema bewerken {#editing-metadata-schema}
 
-Voor details op hoe te om meta-gegevensschema uit te geven, zie [&#x200B; het Uitgeven van de vormen van het meta-gegevensschema &#x200B;](metadata-schemas.md#edit-metadata-schema-forms).
+Voor details op hoe te om meta-gegevensschema uit te geven, zie [ het Uitgeven van de vormen van het meta-gegevensschema ](metadata-schemas.md#edit-metadata-schema-forms).
 
 ## Een aangepaste naamruimte registreren in Experience Manager {#registering-a-custom-namespace-within-aem}
 

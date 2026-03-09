@@ -4,17 +4,18 @@ description: Variaties van elementen genereren met Creative Cloud-integratie
 contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # Variaties van elementen genereren met [!DNL Adobe Creative Cloud] -integratie {#content-automation}
 
-Inhoudsautomatiseringsinvoegtoepassing integreert [!DNL Adobe Experience Manager Assets] als een [!DNL Cloud Service] - en [!DNL Adobe Creative Cloud] -API om uw elementen op schaal creatief te verwerken. [!DNL Experience Manager] gebruikt cloud-based [&#x200B; activa microservices &#x200B;](/help/assets/asset-microservices-overview.md) om de [!DNL Adobe Creative Cloud] eigenschappen te gebruiken en de activa verwezenlijking en media behandeling te automatiseren.
+Inhoudsautomatiseringsinvoegtoepassing integreert [!DNL Adobe Experience Manager Assets] als een [!DNL Cloud Service] - en [!DNL Adobe Creative Cloud] -API om uw elementen op schaal creatief te verwerken. [!DNL Experience Manager] gebruikt cloud-based [ activa microservices ](/help/assets/asset-microservices-overview.md) om de [!DNL Adobe Creative Cloud] eigenschappen te gebruiken en de activa verwezenlijking en media behandeling te automatiseren.
 
 Als u elementen wilt bewerken in [!DNL Adobe Photoshop] en [!DNL Adobe Lightroom] , hoeft u geen elementen te downloaden van [!DNL Experience Manager Assets] , te bewerken en opnieuw te uploaden. U maakt en configureert een verwerkingsprofiel in [!DNL Experience Manager], past het profiel toe op een map en uploadt de middelen naar de map. De geüploade elementen worden opnieuw verwerkt op basis van de verwerkingsprofielen en deze elementen kunnen variëren. De consequente en moeiteloze bulkverwerking bespaart handmatige inspanningen en verhoogt de snelheid van de inhoud, ook zonder de behoefte aan uitstekende creatieve vaardigheden. Ook, kunnen de ontwikkelaars en de partners de activa microservices met directe toegang tot deze APIs uitbreiden en douanelogica omvatten.
 
@@ -24,31 +25,31 @@ Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkinge
 
 * **auto-rechtop**: Gebruikt kunstmatige intelligentie om de inhoud van het beeld te analyseren en scheefgetrokken perspectief in beelden te verbeteren. Bijvoorbeeld om niveauhorizonten te maken.
 
-  ![&#x200B; autotoon &#x200B;](/help/assets/assets/content-automation-autotone.png)
+  ![ autotoon ](/help/assets/assets/content-automation-autotone.png)
 
   *Cijfer: Auto-toon en auto-recht kunnen helpen scheefgetrokken beelden verbeteren.*
 
 * **Lightroom stelt** vooraf in: Past een user-defined blik op beelden toe om een verenigbare verschijning te bereiken gebruikend douane-made vooraf instelt.
 
-  ![&#x200B; Lightroom vooraf ingesteld &#x200B;](/help/assets/assets/content-automation-lrpresets.png)
+  ![ Lightroom vooraf ingesteld ](/help/assets/assets/content-automation-lrpresets.png)
 
   *Cijfer: Adobe Lightroom vooraf ingesteld om beeldkwaliteit op een verenigbare manier voor vele beelden te verbeteren.*
 
 * **Knipsel van het Beeld**: Gebruikt kunstmatige intelligentie om selectie rond aliente voorwerpen tot stand te brengen en achtergrond met één enkel bevel te verwijderen.
 
-  ![&#x200B; verwijdert achtergrond en snijdt een beeld uit een foto &#x200B;](/help/assets/assets/content-automation-backgroundremove.png)
+  ![ verwijdert achtergrond en snijdt een beeld uit een foto ](/help/assets/assets/content-automation-backgroundremove.png)
 
 * **Masker van het Beeld**: Gebruikt kunstmatige intelligentie om masker rond aliente voorwerpen met één enkel bevel tot stand te brengen.
 
-  ![&#x200B; Masker een beeld gebruikend AI &#x200B;](/help/assets/assets/content-automation-mask.png)
+  ![ Masker een beeld gebruikend AI ](/help/assets/assets/content-automation-mask.png)
 
 * **Acties van Photoshop**: Past een reeks [!DNL Adobe Photoshop] taken op een dossier of een partij van dossiers toe.
 
-  ![&#x200B; de acties van Photoshop &#x200B;](/help/assets/assets/content-automation-psactions.png)
+  ![ de acties van Photoshop ](/help/assets/assets/content-automation-psactions.png)
 
 * **Slimme Vervanging van Objecten**: Doet verpersoonlijking bij schaal door u toe te staan om beelden te ruilen terwijl het behouden van alle gevolgen en aanpassing die binnen een dossier van PSD worden toegepast.
 
-  ![&#x200B; vervang voorwerpen slim &#x200B;](/help/assets/assets/content-automation-objectreplace.png)
+  ![ vervang voorwerpen slim ](/help/assets/assets/content-automation-objectreplace.png)
 
 ## Enable Content Automation for AEM as a Cloud Service program {#enable-content-automation}
 
@@ -60,7 +61,7 @@ De add-on voor automatisering van inhoud inschakelen voor AEM as a Cloud Service
 1. Klik op **[!UICONTROL Continue]**.
 1. Vouw **[!UICONTROL Assets]** uit en selecteer **[!UICONTROL Content Automation]** .
 1. Klik op **[!UICONTROL Create]**.
-1. Stel de pijpleiding in werking om [&#x200B; de veranderingen in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) op te stellen.
+1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) op te stellen.
 
 Als u de add-on voor automatisering van inhoud wilt toevoegen aan een bestaand AEM as a Cloud Service-programma in Cloud Manager:
 
@@ -70,7 +71,7 @@ Als u de add-on voor automatisering van inhoud wilt toevoegen aan een bestaand A
 
 1. Vouw **[!UICONTROL Assets]** uit en selecteer **[!UICONTROL Content Automation]** .
 1. Klik op **[!UICONTROL Update]**.
-1. Stel de pijpleiding in werking om [&#x200B; de veranderingen in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) op te stellen.
+1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) op te stellen.
 
 ## Een verwerkingsprofiel gebruiken om uw creatieve middelen bulksgewijs te bewerken {#process-assets}
 
@@ -90,7 +91,7 @@ Ga als volgt te werk als u verwerkingsprofielen wilt gebruiken om automatisch va
 
 1. Voeg meer creatieve bewerkingen toe als onderdeel van hetzelfde verwerkingsprofiel of sla het profiel op.
 
-1. Pas het verwerkingsprofiel toe op een map. Selecteer **[!UICONTROL Asset Processing]** op de pagina **[!UICONTROL Properties]** van een map en selecteer het verwerkingsprofiel dat u wilt toepassen.
+1. Pas het verwerkingsprofiel toe op een map. Selecteer **[!UICONTROL Properties]** op de pagina **[!UICONTROL Asset Processing]** van een map en selecteer het verwerkingsprofiel dat u wilt toepassen.
 
 Nadat u het verwerkingsprofiel op een DAM-map hebt toegepast, worden naast de standaardverwerking ook de gedefinieerde bewerkingen uitgevoerd door alle elementen die in deze map zijn geüpload of bijgewerkt. De submappen overerven dezelfde profielen als die zijn toegepast op de bovenliggende mappen. Gebruikers kunnen deze overerving overschrijven.
 
@@ -121,6 +122,6 @@ Als u de bestaande elementen wilt verwerken, selecteert u de elementen, selectee
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; vorm en gebruik activa microdiensten via verwerkingsprofielen &#x200B;](/help/assets/asset-microservices-configure-and-use.md).
->* [&#x200B; integreer  [!DNL Experience Manager]  met  [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
->* [&#x200B; Inname van activa en verwerking met activa microservices: Een overzicht &#x200B;](/help/assets/asset-microservices-overview.md).
+>* [ vorm en gebruik activa microdiensten via verwerkingsprofielen ](/help/assets/asset-microservices-configure-and-use.md).
+>* [ integreer  [!DNL Experience Manager]  met  [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [ Inname van activa en verwerking met activa microservices: Een overzicht ](/help/assets/asset-microservices-overview.md).

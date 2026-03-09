@@ -1,19 +1,20 @@
 ---
-title: Eindbericht voor Flash Viewers
-description: Vanaf 31 januari 2017 is de ondersteuning voor het Flash viewer Platform officieel levenseinde.
+title: Eindbericht voor Flash-viewers
+description: Vanaf 31 januari 2017 is de ondersteuning voor het Flash-viewerplatform officieel levenseinde.
 contentOwner: Rick Brough
 feature: FAQ,Dynamic Media,Troubleshooting
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
 
-# Einde van levensduur van Flash Viewers {#flash-viewers-end-of-life-notice}
+# Einde levensduur van Flash-viewers {#flash-viewers-end-of-life-notice}
 
-Vanaf 31 januari 2017 is de ondersteuning voor het Flash viewer Platform officieel levenseinde.
+Vanaf 31 januari 2017 is de ondersteuning voor het Flash-viewerplatform officieel levenseinde.
 
-Zie de [&#x200B; Gids van de Verwijzing van de Kijkers van Dynamic Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL) voor de recentste gesteunde kijkers.
+Zie de [ Dynamische Gids van de Verwijzing van de Kijkers van Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) voor de recentste gesteunde kijkers.

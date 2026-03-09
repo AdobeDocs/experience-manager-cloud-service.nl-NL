@@ -1,12 +1,13 @@
 ---
 title: Hoe kan ik koppelingen naar elementen delen?
 description: Produceer een verbinding en deel activa met anderen die geen toegang tot de  [!DNL Assets view]  toepassing hebben.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
 feature: Adobe Asset Link, Link Sharing
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Een koppeling genereren voor een element of een map met elementen:
 
 1. Kopieer de koppeling vanuit het veld **[!UICONTROL Share Link]** .
 
-   ![&#x200B; Optie om uit te snijden en te rechttrekken &#x200B;](assets/share-asset-link.png)
+   ![ Optie om uit te snijden en te rechttrekken ](assets/share-asset-link.png)
 
 1. Klik op **[!UICONTROL Close]** en deel de koppeling via e-mail of andere samenwerkingsprogramma&#39;s.
 
@@ -41,14 +42,14 @@ U kunt ook meerdere elementen selecteren en op **[!UICONTROL Download]** klikken
 
 Als u alle elementen tegelijk wilt downloaden, schakelt u over naar de **[!UICONTROL List view]** -component, klikt u op **[!UICONTROL Select all]** en vervolgens op **[!UICONTROL Download]** .
 
-![&#x200B; Voorproef gedeelde activa &#x200B;](assets/preview-shared-assets.png)
+![ Voorproef gedeelde activa ](assets/preview-shared-assets.png)
 
 ## Volgende stappen {#next-steps}
 
-* [&#x200B; bekijk een video om verbindingen voor activa in de mening van Assets te delen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=nl-NL)
+* [ bekijk een video om verbindingen voor activa in de mening van Assets te delen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)

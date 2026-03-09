@@ -4,11 +4,12 @@ description: Publiceer assets, mappen en verzamelingen naar Brand Portal.
 contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 80%
+source-wordcount: '1160'
+ht-degree: 79%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 80%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | Dit artikel |
 
 Als beheerder van AEM Assets (Adobe Experience Manager) kunt u assets, mappen en verzamelingen publiceren naar de AEM Assets Brand Portal-instantie. Bovendien kunt u de publicatieworkflow van een asset of map op een latere datum of tijd plannen. Na publicatie krijgen de Brand Portal-gebruikers toegang tot de assets, mappen en verzamelingen en kunnen ze deze naar andere gebruikers distribueren.
@@ -32,8 +33,8 @@ Als u volgende wijzigingen aanbrengt in de oorspronkelijke asset, map of verzame
 >[!NOTE]
 >
 >Adobe raadt gefaseerde publicatie aan, bij voorkeur niet tijdens piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
->&#x200B;>Assets moet in partijen worden gepubliceerd. De aanbeveling voor de partijgrootte is 15K.
->&#x200B;> Voor [!DNL Experience Manager Assets] als a [!DNL Cloud Service], is de overdrachtsnelheid die onder laboratoriumvoorwaarde wordt waargenomen 1000 activa per uur. De snelheid wordt waargenomen met een gemiddelde grootte van 10 MB activa.
+>Assets moet in partijen worden gepubliceerd. De aanbeveling voor de partijgrootte is 15K.
+> Voor [!DNL Experience Manager Assets] als a [!DNL Cloud Service], is de overdrachtsnelheid die onder laboratoriumvoorwaarde wordt waargenomen 1000 activa per uur. De snelheid wordt waargenomen met een gemiddelde grootte van 10 MB activa.
 
 ## Elementen publiceren naar Brand Portal {#publish-assets-to-bp}
 
@@ -77,7 +78,7 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 
    <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
 
-   ![&#x200B; publiceer later &#x200B;](assets/publish-later.png)
+   ![ publiceer later ](assets/publish-later.png)
 
 1. Selecteer een **[!UICONTROL Activation date]** en geef de tijd op. Klik op **[!UICONTROL Next]**.
 
@@ -87,18 +88,18 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 
    <!--![publishworkflow](assets/publishworkflow.png)-->
 
-   ![&#x200B; publiceer werkschema &#x200B;](assets/publish-workflow.png)
+   ![ publiceer werkschema ](assets/publish-workflow.png)
 
 >[!NOTE]
 >
 > * Het bestaande gebruikersonderdeel van de groep DAM-Users heeft leestoegang op het pad &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
 > * De nieuwe gebruikers (of gebruikers die geen beheerder zijn) hebben de volgende rechten nodig om op het merkportaal te publiceren.
->   &#x200B;> Paden:
->   &#x200B;> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->   &#x200B;>`/libs : jcr:read`
->   &#x200B;>`/conf : jcr:read`
->   &#x200B;>`/content : jcr:read, crx:replicate`
->   &#x200B;>`/content/dam/ : jcr:read,modify, crx:replicate`
+> Paden:
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 
@@ -142,7 +143,7 @@ U kunt als volgt de mappen met elementen op een latere datum of tijd publiceren:
 
       <!--![publishlaterbp](assets/publishlaterbp.png)-->
 
-   ![&#x200B; publiceer recentere omslag &#x200B;](assets/publish-later-folder.png)
+   ![ publiceer recentere omslag ](assets/publish-later-folder.png)
 
    1. Bevestig uw selectie in **[!UICONTROL Scope]**. Klik op **[!UICONTROL Next]**.
 
@@ -150,19 +151,19 @@ U kunt als volgt de mappen met elementen op een latere datum of tijd publiceren:
 
       <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
-   ![&#x200B; publiceer werkschema &#x200B;](assets/publish-workflow.png)
+   ![ publiceer werkschema ](assets/publish-workflow.png)
 
 ### Gepubliceerd bestand of map weergeven op Brand Portal {#view-published-file-folder}
 
 1. Meld u aan bij de Brand Portal-interface om de gepubliceerde assets te bekijken (afhankelijk van uw geplande datum of tijd).
 
-   ![&#x200B; bp_landingpage &#x200B;](assets/bp_landingpage.png)
+   ![ bp_landingpage ](assets/bp_landingpage.png)
 
-1. De schakelaar aan de mening van de Lijst ![&#x200B; mening van de Lijst &#x200B;](assets/list-view.svg) om de huidige te zien publiceert status van de activa.
+1. De schakelaar aan de mening van de Lijst ![ mening van de Lijst ](assets/list-view.svg) om de huidige te zien publiceert status van de activa.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
-![&#x200B; geproduceerde rapportstatus &#x200B;](assets/report-status.JPG)
+![ geproduceerde rapportstatus ](assets/report-status.JPG)
 
 ### Mappen uit Brand Portal verwijderen {#unpublish-folders-from-brand-portal}
 
@@ -258,11 +259,11 @@ Hier volgen de stappen voor het ongedaan maken van de publicatie van een verzame
 
 Naast het bovenstaande kunt u ook schema&#39;s voor metadata, voorinstellingen voor afbeeldingen, zoekfacetten en tags van AEM Assets naar Brand Portal publiceren.
 
-* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=nl-NL)
-* [Tags publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=nl-NL)
+* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Tags publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-Raadpleeg de [Brand Portal-documentatie](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=nl-NL) voor meer informatie.
+Raadpleeg de [Brand Portal-documentatie](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) voor meer informatie.
 
 
 <!--

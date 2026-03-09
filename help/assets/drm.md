@@ -4,10 +4,11 @@ description: Leer hoe te om activa te beheren vervalsen staten en informatie voo
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1319'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Digitale middelen zijn vaak gekoppeld aan een licentie waarin de gebruiksvoorwaarden en -duur zijn vastgelegd. Met het [!DNL Experience Manager] -platform kunt u op efficiënte wijze informatie over het verlopen van bedrijfsmiddelen en licentiegegevens beheren.
@@ -34,7 +35,7 @@ U kunt de vervalstatus van een element op de volgende plaatsen bekijken:
 
 Ga als volgt te werk om het verwijzen naar webpagina&#39;s en samengestelde elementen voor een element weer te geven:
 
-1. Navigeer aan de activa, selecteer de activa, en klik ![&#x200B; linker pictogram van de spoorinhoudsverwijzingen &#x200B;](assets/do-not-localize/content-rail-icon.png). De linkerspoorstaaf opent.
+1. Navigeer aan de activa, selecteer de activa, en klik ![ linker pictogram van de spoorinhoudsverwijzingen ](assets/do-not-localize/content-rail-icon.png). De linkerspoorstaaf opent.
 1. Selecteer **[!UICONTROL References]** in het linkerspoor.
 1. Voor verlopen elementen geeft [!UICONTROL References] de vervalstatus weer als **[!UICONTROL Asset is Expired]** . Als het element verlopen subassets heeft, geeft de [!UICONTROL References] -rail de status **[!UICONTROL Asset has Expired Sub-Assets]** weer.
 
@@ -54,7 +55,7 @@ Het is mogelijk om de vervaldatum van een gepubliceerd actief te wijzigen in een
 
 Bovendien als een fout de planner verhindert verlopen activa in de huidige cyclus te ontdekken, onderzoekt de planner deze activa in de volgende cyclus opnieuw en ontdekt hun verlopen status.
 
-Configureer **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] om de [!DNL Assets] -console in staat te stellen om de samengestelde elementen die naar verwijzen samen met de verlopen subelementen weer te geven. De op tijd-gebaseerde planner plant een baan om op een specifiek ogenblik te controleren of een activa verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
+Configureer [!DNL Assets] workflow in **[!UICONTROL Adobe CQ DAM Expiry Notification]** om de [!DNL Experience Manager] -console in staat te stellen om de samengestelde elementen die naar verwijzen samen met de verlopen subelementen weer te geven. De op tijd-gebaseerde planner plant een baan om op een specifiek ogenblik te controleren of een activa verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
 
 1. Open de [!DNL Cloud Manager] Git-gegevensopslagruimte die aan uw omgeving is gekoppeld.
 1. Leg een bestand met de naam `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` vast in de opslagplaats met de volgende inhoud.
@@ -65,7 +66,7 @@ Configureer **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL 
    }
    ```
 
-1. Volg de instructies van [&#x200B; hoe te om configuratie OSGi in  [!DNL Experience Manager]  als a  [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) te doen.
+1. Volg de instructies van [ hoe te om configuratie OSGi in  [!DNL Experience Manager]  als a  [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) te doen.
 
 U kunt de planner vormen gebruikend de volgende eigenschappen:
 
@@ -147,7 +148,7 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 
 1. Selecteer in de kaartweergave de elementen die u wilt downloaden en selecteer **[!UICONTROL Download]** .
 1. Selecteer op de pagina **[!UICONTROL Copyright Management]** de asset die u uit de lijst wilt downloaden.
-1. Kies **[!UICONTROL Agree]** in het deelvenster [!UICONTROL License] . Naast het element wordt een vinkje weergegeven. Selecteer de optie **[!UICONTROL Download]** .
+1. Kies [!UICONTROL License] in het deelvenster **[!UICONTROL Agree]** . Naast het element wordt een vinkje weergegeven. Selecteer de optie **[!UICONTROL Download]** .
 
    >[!NOTE]
    >

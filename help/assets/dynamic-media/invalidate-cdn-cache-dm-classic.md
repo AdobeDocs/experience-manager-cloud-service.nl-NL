@@ -4,10 +4,11 @@ description: Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network)
 contentOwner: Rick Brough
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '638'
 ht-degree: 13%
 
 ---
@@ -28,7 +29,7 @@ Dynamische media-elementen worden in het cachegeheugen opgeslagen door de CDN (C
 
 **om uw CDN geheime voorgeheugen als Dynamic Media Classic ongeldig te maken:**
 
-1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
+1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dan login aan uw rekening.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens opgegeven op het moment van de levering. Neem contact op met de Klantenondersteuning als u deze informatie niet hebt.
 

@@ -2,12 +2,13 @@
 title: Het zoeken beste praktijken voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
 description: Aanbevolen procedures voor het zoeken, zoeken en ophalen van metagegevens van elementen in uw toepassing.
 contentOwner: KK
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2437'
+source-wordcount: '2443'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ In de **mening van Assets**, is de onderzoeksbar zichtbaar op de bovenkant en ka
 
 **Scenario 1: Voer een basisonderzoek uit gebruikend a `classic car` als onderzoekssleutelwoord.**
 
-Het sleutelwoordonderzoek is niet case-sensitive en is een full-text onderzoek over de meta-gegevensgebieden die in het volledige de tekstonderzoek van Activa *index van 0&rbrace; inbegrepen zijn (configureerbaar in de indexdefinitie).* Als meer dan één sleutelwoord wordt gebruikt, **EN is de standaardexploitant tussen de sleutelwoorden, aldus, overweegt het een onderzoek naar &quot;klassieke auto&quot;om &quot;klassieke EN auto&quot;te zijn**.
+Het sleutelwoordonderzoek is niet case-sensitive en is een full-text onderzoek over de meta-gegevensgebieden die in het volledige de tekstonderzoek van Activa *index van 0} inbegrepen zijn (configureerbaar in de indexdefinitie).* Als meer dan één sleutelwoord wordt gebruikt, **EN is de standaardexploitant tussen de sleutelwoorden, aldus, overweegt het een onderzoek naar &quot;klassieke auto&quot;om &quot;klassieke EN auto&quot;te zijn**.
 
 De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. De weergavevolgorde van zoekresultaten is bij benadering:
 
@@ -81,23 +82,23 @@ Als u het bovenstaande scenario in **[!UICONTROL Admin view]** wilt uitvoeren, k
 
 AND operator is de standaardoperator tussen twee trefwoorden in Universeel zoeken. Wanneer u bijvoorbeeld `classic car` in de zoekbalk typt, worden de resultaten met `classic` - en `car` -trefwoorden standaard in de zoekresultaten weergegeven.
 
-![&#x200B; Onderzoek gebruikend EN Exploitant &#x200B;](assets/simple-search-1.png)
+![ Onderzoek gebruikend EN Exploitant ](assets/simple-search-1.png)
 
 ### OR, operator {#or-operator}
 
 Als u specifiek wilt zijn voor de zoekresultaten en een optie wilt opnemen in de zoekresultaten, kunt u de operator OR gebruiken. Het trefwoord `classic OR car` biedt bijvoorbeeld zoekresultaten met de twee trefwoorden in de metagegevens.
 
-![&#x200B; Onderzoek gebruikend OF Exploitant &#x200B;](assets/or-operator.png)
+![ Onderzoek gebruikend OF Exploitant ](assets/or-operator.png)
 
 ### NOT, operator {#not-operator}
 
 Wanneer u resultaten wilt terugwinnen exclusief sommige sleutelwoorden, kunt u de NOT exploitant gebruiken. De operator NOT gebruikt het koppelteken (-) om AEM te laten zoeken wat van de zoekresultaten moet worden uitgesloten. De zoekquery van `car - classic` die bijvoorbeeld metagegevens opgeeft die `car` bevatten maar `classic` niet.
 
-![&#x200B; Onderzoek gebruikend NIET exploitant &#x200B;](assets/not-operator.png)
+![ Onderzoek gebruikend NIET exploitant ](assets/not-operator.png)
 
 Op dezelfde manier kun je naar alle auto&#39;s zoeken, maar niet naar jeep. De query ziet er als volgt uit: `car - jeep`. Alle elementen worden weergegeven met metagegevens `car` , maar elementen met metagegevens `jeep` worden uitgesloten.
 
-![&#x200B; Onderzoek gebruikend NIET exploitant &#x200B;](assets/images-jeep.png)
+![ Onderzoek gebruikend NIET exploitant ](assets/images-jeep.png)
 
 **[!UICONTROL Assets view]** biedt geen ondersteuning voor het gebruik van operatoren.
 
@@ -129,7 +130,7 @@ Sterretje is een jokertekenoperator die wordt gebruikt om uw zoekopdracht uit te
 
 Adobe Experience Manager biedt verschillende zoekfilters waarmee u de zoekopdracht kunt verfijnen en segmenteren met behulp van een bereikquery. Wanneer u niet zeker weet wat de titel of de meta-beschrijving van een element is, kunt u verschillende zoekfilters gebruiken om de zoekopdracht relevanter te maken. U kunt zoekfilters gebruiken met of zonder een trefwoord te typen. Om het filterenpaneel in **[!UICONTROL Admin view]** te openen, klik het **GlobalNav** pictogram en selecteer **[!UICONTROL Filters]**. Als u het deelvenster Filters in **[!UICONTROL Assets view]** wilt openen, klikt u op [!UICONTROL Filters] naast de zoekbalk.
 
-![&#x200B; het paneel van Filters &#x200B;](assets/filters.png)
+![ het paneel van Filters ](assets/filters.png)
 
 U kunt een of meer filters selecteren om uw zoekopdracht in Adobe Experience Manager te verfijnen.
 <!--The following filters are available out of the box for all the users of Experience Manager:
@@ -162,7 +163,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 Voer de volgende stappen uit in **[!UICONTROL Admin view]** :
 
 1. Typ `classic car` in de zoekbalk.
-1. Ga naar Filters. Vouw [!UICONTROL Documents] onder [!UICONTROL File Type] verder uit [!UICONTROL Word Processing] .
+1. Ga naar Filters. Vouw [!UICONTROL File Type] onder [!UICONTROL Documents] verder uit [!UICONTROL Word Processing] .
 1. Selecteer [!UICONTROL PDF] .
 1. Ga naar [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Unpublished] .
 
@@ -179,7 +180,7 @@ Voer de volgende stappen uit in **[!UICONTROL Assets view]** :
 Wanneer u niet zeker weet wat de titel of de meta-beschrijving van een element is, kunt u verschillende zoekfilters gebruiken om de zoekopdracht relevanter te maken. Als u bijvoorbeeld elementen wilt zoeken in **[!UICONTROL Admin view]** , voert u de volgende stappen uit:
 
 1. Ga naar zoekfilters.
-1. Ga naar Filters. Vouw [!UICONTROL Images] uit onder [!UICONTROL File Type] en selecteer [!UICONTROL Web enabled]
+1. Ga naar Filters. Vouw [!UICONTROL File Type] uit onder [!UICONTROL Images] en selecteer [!UICONTROL Web enabled]
 1. Schakel PNG uit.
 
 <!--![Search all images except jeep](assets/images-png.png)-->
@@ -256,7 +257,7 @@ Wanneer u een zoekopdracht uitvoert op AEM, kunt u de resultaten filteren door v
 of
 Selecteer het element > navigeer naar de ellips rechtsboven > selecteer [!UICONTROL Find Similar] .
 
-   ![&#x200B; vind gelijkaardig &#x200B;](assets/find-similar.png)
+   ![ vind gelijkaardig ](assets/find-similar.png)
 
 1. Let op de zoekbalk. De miniatuur van het geselecteerde element verschijnt op de zoekbalk om aan te geven dat u een zoekopdracht wilt uitvoeren. Hierdoor worden elementen met vergelijkbare slimme tags geretourneerd.
 
@@ -268,7 +269,7 @@ U gaat naar de verzameling elementen met vergelijkbare kleuren en metagegevens.
 
 ## Aangepaste zoekfacetten {#custom-search-facets}
 
-Met zoekfacetten in Adobe Experience Manager kunt u op meerdere manieren zoeken naar elementen in plaats van in één, vooraf bepaalde of taxonomische volgorde. U kunt zoekfacetten aanpassen en voorspelden toevoegen naar wens. Lees [&#x200B; Facetten van het Onderzoek &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL#) voor de geleidelijke gids over het toevoegen van een douane predikaat.
+Met zoekfacetten in Adobe Experience Manager kunt u op meerdere manieren zoeken naar elementen in plaats van in één, vooraf bepaalde of taxonomische volgorde. U kunt zoekfacetten aanpassen en voorspelden toevoegen naar wens. Lees [ Facetten van het Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) voor de geleidelijke gids over het toevoegen van een douane predikaat.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -278,7 +279,7 @@ to be added later
 
 Met datumbeperkingen kunt u uw aangepaste zoekopdracht beperken tot een bepaalde periode, bijvoorbeeld met de zoekfilters voor de tijdsperiode. Typ `classic car` in de zoekbalk om naar de bovenstaande vereiste te zoeken. Selecteer het datumbereik in de datumfilters [!UICONTROL Created Date] en [!UICONTROL Last Modified] .
 
-![&#x200B; de filters van de Datum &#x200B;](assets/date-filters.png)
+![ de filters van de Datum ](assets/date-filters.png)
 
 De zoekopdracht geeft vergelijkbare resultaten als u ook in de [!UICONTROL Assets view] werkt.
 
@@ -316,7 +317,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> Aangepaste facetten </td>
-        <td> U kunt <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL"> facetten van het douaneonderzoek toevoegen zoals door het vereiste.</td>
+        <td> U kunt <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en"> facetten van het douaneonderzoek toevoegen zoals door het vereiste.</td>
         <td> De aangepaste facetten worden gedeeltelijk ondersteund in de Assets-weergave. De ondersteunde facetten zijn:
             <ul>
             <li> Voorspelde labels
@@ -430,5 +431,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [Assets doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=nl-NL)
->* [Facetten doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL)
+>* [Assets doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
+>* [Facetten doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)

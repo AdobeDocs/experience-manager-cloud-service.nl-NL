@@ -2,17 +2,18 @@
 title: Toepassing Asset Selector aanpassen
 description: Gebruik functies om de kiezer van het element in uw toepassing aan te passen.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1252'
 ht-degree: 0%
 
 ---
 
 # Aanpassingen voor Asset Selector {#asset-selector-customization}
 
-Met Asset Selector kunt u verschillende componenten aanpassen op basis van voorkeuren, vereisten of functionele behoeften. U kunt de volgende componenten aanpassen [&#x200B; Micro-Frontend de Selector van Activa &#x200B;](#overview-asset-selector.md):
+Met Asset Selector kunt u verschillende componenten aanpassen op basis van voorkeuren, vereisten of functionele behoeften. U kunt de volgende componenten aanpassen [ Micro-Frontend de Selector van Activa ](#overview-asset-selector.md):
 
 * [Deelvenster Filter aanpassen](#customize-filter-panel)
 * [Informatie aanpassen in de modale weergave](#customize-info-in-modal-view)
@@ -88,7 +89,7 @@ filterSchema: [
 
 ## Informatie aanpassen in de modale weergave {#customize-info-in-modal-view}
 
-U kunt de detailmening van activa aanpassen wanneer u het ![&#x200B; infopictogram &#x200B;](assets/info-icon.svg) pictogram klikt. Voer de onderstaande code uit:
+U kunt de detailmening van activa aanpassen wanneer u het ![ infopictogram ](assets/info-icon.svg) pictogram klikt. Voer de onderstaande code uit:
 
 ```
 // Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
@@ -198,7 +199,7 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het object Sele
 
 De eigenschap `handleSelection` wordt gebruikt om één of meerdere selecties van Assets in Assets Selector af te handelen. In het onderstaande voorbeeld wordt de gebruikssyntaxis van `handleSelection` weergegeven.
 
-![&#x200B; handvat-selectie &#x200B;](assets/handling-selection.png)
+![ handvat-selectie ](assets/handling-selection.png)
 
 ### Selectie van Assets uitschakelen {#disable-selection}
 
@@ -405,7 +406,7 @@ const filterSchema = useMemo ((); => {
 }, [selectedTags]);
 ```
 
-![&#x200B; filter van de markeringsgroep &#x200B;](assets/tag-group.gif)
+![ filter van de markeringsgroep ](assets/tag-group.gif)
 
 ## Uploaden in Asset Selector {#upload-in-asset-selector}
 
@@ -469,7 +470,7 @@ uploadConfig: {
      }, 
 ```
 
-*Meer eigenschappen zijn `metadataSchema` , `onMetadataFormChange` , `targetUploadPath` , `hideUploadButton` , `onUploadStart` , `importSettings` `onUploadComplete` , `onFilesChange` ,`uploadingPlaceholder`* . Zie [&#x200B; de eigenschappen van de Selecteur van Activa &#x200B;](#asset-selector-properties.md) voor meer informatie.
+*Meer eigenschappen zijn `metadataSchema` , `onMetadataFormChange` , `targetUploadPath` , `hideUploadButton` , `onUploadStart` , `importSettings` `onUploadComplete` , `onFilesChange` ,`uploadingPlaceholder`* . Zie [ de eigenschappen van de Selecteur van Activa ](#asset-selector-properties.md) voor meer informatie.
 
 ### Uploaden met metagegevens {#upload-with-metadata}
 
@@ -642,7 +643,7 @@ dragOptions: {
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Eigenschappen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-properties.md)
->* [&#x200B; integreer de Selector van Activa met diverse toepassingen &#x200B;](/help/assets/integrate-asset-selector.md)
->* [&#x200B; Eigenschappen van de Selecteur van Activa &#x200B;](/help/assets/asset-selector-properties.md)
->* [&#x200B; integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
+>* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
+>* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
+>* [ integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

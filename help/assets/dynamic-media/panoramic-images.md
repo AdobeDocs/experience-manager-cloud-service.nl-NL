@@ -4,11 +4,12 @@ description: Leer hoe u met panoramische afbeeldingen werkt in Dynamic Media.
 contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 13%
+source-wordcount: '155'
+ht-degree: 12%
 
 ---
 
@@ -16,9 +17,9 @@ ht-degree: 13%
 
 In deze sectie wordt beschreven hoe u met de Panorama-viewer werkt om bolvormige panoramische afbeeldingen te renderen voor een indrukwekkende kijkervaring van 360 graden van een kamer, eigenschap, locatie of landschap.
 
-Zie ook [&#x200B; vooraf instelt van de kijker beheren &#x200B;](/help/assets/dynamic-media/managing-viewer-presets.md).
+Zie ook [ vooraf instelt van de kijker beheren ](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![&#x200B; panoramisch-image2 &#x200B;](assets/panoramic-image2.png)
+![ panoramisch-image2 ](assets/panoramic-image2.png)
 
 ## Elementen uploaden voor gebruik met de Panorama-viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
@@ -27,11 +28,11 @@ Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeel
 * Een hoogte-breedteverhouding van 2.
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Gelabeld met de trefwoorden `equirectangular` of `spherical` en `panorama` of `spherical` en `panoramic` . Zie [&#x200B; Markeringen van het Gebruik &#x200B;](/help/sites-cloud/authoring/sites-console/tags.md).
+* Gelabeld met de trefwoorden `equirectangular` of `spherical` en `panorama` of `spherical` en `panoramic` . Zie [ Markeringen van het Gebruik ](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van toepassing op panoramische assets voor de pagina met assetdetails en de `Panoramic Media` WCM-component.
 
-Om activa voor gebruik met de kijker van het Beeld te uploaden Panorama, zie [&#x200B; activa &#x200B;](/help/assets/manage-digital-assets.md#uploading-assets) uploaden.
+Om activa voor gebruik met de kijker van het Beeld te uploaden Panorama, zie [ activa ](/help/assets/manage-digital-assets.md#uploading-assets) uploaden.
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -39,7 +40,7 @@ Om activa voor gebruik met de kijker van het Beeld te uploaden Panorama, zie [&#
 
 For the Panoramic Image viewer to work properly within AEM, you must synchronize the Panoramic Image viewer presets with Dynamic Media Classic (Scene7) and Dynamic Media Classic (Scene7)-specific metadata so the viewer presets get updated in the JCR. To accomplish this, configure Dynamic Media Classic (Scene7) in the following manner:
 
-1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), then sign in to your account.
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
 1. Near the upper-right corner of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
@@ -78,8 +79,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## Voorvertoning panorama-afbeeldingen {#previewing-panoramic-images}
 
-Zie [&#x200B; activa van de Voorproef &#x200B;](/help/assets/dynamic-media/previewing-assets.md).
+Zie [ activa van de Voorproef ](/help/assets/dynamic-media/previewing-assets.md).
 
 ## Panorama-afbeeldingen publiceren {#publishing-panoramic-images}
 
-Zie [&#x200B; activa &#x200B;](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.
+Zie [ activa ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.

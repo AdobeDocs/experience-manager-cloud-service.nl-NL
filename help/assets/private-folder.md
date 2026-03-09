@@ -4,10 +4,11 @@ description: Leer hoe te om een privé omslag in  [!DNL Adobe Experience Manager
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 In de gebruikersinterface van [!DNL Adobe Experience Manager Assets] kunt u een persoonlijke map maken die exclusief voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de elementen in de map weergeven of de elementen bewerken.
@@ -33,21 +34,21 @@ Een persoonlijke map maken en delen:
 
 1. Klik in de [!DNL Assets] -console op de knop **[!UICONTROL Create]** op de werkbalk en selecteer vervolgens **[!UICONTROL Folder]** in het menu.
 
-   ![&#x200B; creeer activa omslag &#x200B;](assets/create-folder.png)
+   ![ creeer activa omslag ](assets/create-folder.png)
 
 1. Voer in het dialoogvenster **[!UICONTROL Create Folder]** een `Title` en `Name` (optioneel) voor de map in.
 
    Selecteer het selectievakje **[!UICONTROL Private]** en klik op **[!UICONTROL Create]** .
 
-   ![&#x200B; chlimage_1-413 &#x200B;](assets/create-private-folder.png)
+   ![ chlimage_1-413 ](assets/create-private-folder.png)
 
-   Er wordt een persoonlijke map gemaakt. U kunt nu [&#x200B; activa &#x200B;](add-assets.md#upload-assets) aan de omslag toevoegen en de omslag met andere gebruikers of groepen delen. De map is pas zichtbaar voor andere gebruikers als u deze deelt en er rechten aan toewijst.
+   Er wordt een persoonlijke map gemaakt. U kunt nu [ activa ](add-assets.md#upload-assets) aan de omslag toevoegen en de omslag met andere gebruikers of groepen delen. De map is pas zichtbaar voor andere gebruikers als u deze deelt en er rechten aan toewijst.
 
 1. Als u de map wilt delen, selecteert u de map en klikt u op **[!UICONTROL Properties]** op de werkbalk.
 
 1. Selecteer op de pagina **[!UICONTROL Folder Properties]** een gebruiker of groep in de lijst **[!UICONTROL Add User]** , wijs een rol ( `Viewer` , `Editor` of `Owner` ) toe aan uw persoonlijke map en klik op **[!UICONTROL Add]** .
 
-   ![&#x200B; wijs-gebruiker-groep &#x200B;](assets/assign-permissions-private-folder.png) toe
+   ![ wijs-gebruiker-groep ](assets/assign-permissions-private-folder.png) toe
 
    U kunt verschillende rollen, zoals `Editor` , `Owner` of `Viewer` , toewijzen aan de gebruiker met wie u de map deelt. Als u een `Owner` rol aan de gebruiker toewijst, heeft de gebruiker `Editor` voorrechten op de omslag. Bovendien kan de gebruiker de map met anderen delen. Als u een `Editor` rol toewijst, kan de gebruiker de activa in uw privé omslag uitgeven. Als u een viewerrol toewijst, kan de gebruiker alleen de elementen in uw persoonlijke map bekijken.
 
@@ -61,7 +62,7 @@ Een persoonlijke map maken en delen:
 
 1. Klik op [!UICONTROL Notifications] om een lijst met meldingen te openen.
 
-   ![&#x200B; bericht &#x200B;](assets/notification-icon.png)
+   ![ bericht ](assets/notification-icon.png)
 
 1. Klik op de vermelding voor de privémap die door de beheerder wordt gedeeld om de map te openen.
 
@@ -69,7 +70,7 @@ Een persoonlijke map maken en delen:
 
 U kunt een map verwijderen door de map te selecteren en de optie [!UICONTROL Delete] te selecteren in het bovenste menu of door de Backspace-toets op het toetsenbord te gebruiken.
 
-![&#x200B; schrappingsoptie in hoogste menu &#x200B;](assets/delete-option.png)
+![ schrappingsoptie in hoogste menu ](assets/delete-option.png)
 
 >[!CAUTION]
 >

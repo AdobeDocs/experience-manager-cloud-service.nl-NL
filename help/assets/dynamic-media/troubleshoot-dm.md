@@ -4,10 +4,11 @@ description: Leer meer over het oplossen van problemenuiteinden u kunt proberen 
 contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Het volgende onderwerp beschrijft het oplossen van problemen voor Dynamische Med
 
 ## Nieuwe dynamische mediasconfiguratie {#new-dm-config}
 
-Zie [&#x200B; problemen oplossen een nieuwe Dynamische configuratie van Media &#x200B;](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
+Zie [ problemen oplossen een nieuwe Dynamische configuratie van Media ](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## Algemeen (alle Assets) {#general-all-assets}
 
@@ -37,7 +38,7 @@ De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleer
 
 ### Synchronisatie-logboekregistratie {#synchronization-logging}
 
-Synchronisatiefouten en -problemen worden aangemeld `error.log` (Experience Manager-servermap `/crx-quickstart/logs/` ). Voldoende het registreren is beschikbaar om de worteloorzaak van de meeste kwesties te bepalen, nochtans kunt u het registreren aan DEBUG op het `com.adobe.cq.dam.ips` pakket door de Verlenen Console ([&#x200B; https://localhost :4502/system/console/slinglog &#x200B;](https://localhost:4502/system/console/slinglog)) verhogen om meer informatie te verzamelen.
+Synchronisatiefouten en -problemen worden aangemeld `error.log` (Experience Manager-servermap `/crx-quickstart/logs/` ). Voldoende het registreren is beschikbaar om de worteloorzaak van de meeste kwesties te bepalen, nochtans kunt u het registreren aan DEBUG op het `com.adobe.cq.dam.ips` pakket door de Verlenen Console ([ https://localhost :4502/system/console/slinglog ](https://localhost:4502/system/console/slinglog)) verhogen om meer informatie te verzamelen.
 
 ### Versiebeheer {#version-control}
 
@@ -237,4 +238,4 @@ Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CS
 1. Verwijder de map `viewer` .
 1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van de CRXDE Lite-pagina.
 1. In de upper-left hoek van de pagina van CRXDE Lite, selecteer het **Terug Home** pictogram.
-1. Maak opnieuw a [&#x200B; Dynamische Configuratie van Media in de Diensten van de Wolk &#x200B;](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. Maak opnieuw a [ Dynamische Configuratie van Media in de Diensten van de Wolk ](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).

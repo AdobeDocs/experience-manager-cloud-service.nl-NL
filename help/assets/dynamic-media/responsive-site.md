@@ -4,11 +4,12 @@ description: Leer hoe u de functie voor responsieve code gebruikt om geoptimalis
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 9%
+source-wordcount: '328'
+ht-degree: 8%
 
 ---
 
@@ -18,19 +19,19 @@ Gebruik de functie Responsieve code wanneer u de code wilt delen voor responsiev
 
 Deze functie is handig als uw website zich op een WCM van derden bevindt. Als uw website zich echter op Adobe Experience Manager bevindt, wordt de afbeelding door een externe afbeeldingsserver gerenderd en aan de webpagina geleverd.
 
-Zie ook [&#x200B; bed de VideoKijker op een Web-pagina &#x200B;](embed-code.md) in.
+Zie ook [ bed de VideoKijker op een Web-pagina ](embed-code.md) in.
 
-Zie ook [&#x200B; Verbinding URLs aan uw Webtoepassing &#x200B;](linking-urls-to-yourwebapplication.md).
+Zie ook [ Verbinding URLs aan uw Webtoepassing ](linking-urls-to-yourwebapplication.md).
 
 **om geoptimaliseerde beelden voor een ontvankelijke plaats te leveren:**
 
 1. Navigeer naar de afbeelding waarvoor u responsieve code wilt opgeven en selecteer **[!UICONTROL Renditions]** in het keuzemenu.
 
-   ![&#x200B; chlimage_1-408 &#x200B;](assets/chlimage_1-408.png)
+   ![ chlimage_1-408 ](assets/chlimage_1-408.png)
 
 1. Selecteer een responsieve voorinstelling voor de afbeelding. De knoppen **[!UICONTROL URL]** en **[!UICONTROL RESS]** worden weergegeven.
 
-   ![&#x200B; chlimage_1-409 &#x200B;](assets/chlimage_1-409.png)
+   ![ chlimage_1-409 ](assets/chlimage_1-409.png)
 
    >[!NOTE]
    >
@@ -40,7 +41,7 @@ Zie ook [&#x200B; Verbinding URLs aan uw Webtoepassing &#x200B;](linking-urls-to
 
 1. Selecteer **[!UICONTROL RESS]** .
 
-   ![&#x200B; chlimage_1-410 &#x200B;](assets/chlimage_1-410.png)
+   ![ chlimage_1-410 ](assets/chlimage_1-410.png)
 
 1. Selecteer in het dialoogvenster **[!UICONTROL Embed Responsive Image]** de tekst van de responsieve code, kopieer deze en plak deze in uw website om het responsieve element te openen.
 1. Bewerk de standaardonderbrekingspunten in de insluitcode zodat deze overeenkomen met de standaardonderbrekingspunten op de responsieve website, rechtstreeks in de code. Test bovendien de verschillende afbeeldingsresoluties die op verschillende pagina-onderbrekingspunten worden weergegeven.
@@ -49,4 +50,4 @@ Zie ook [&#x200B; Verbinding URLs aan uw Webtoepassing &#x200B;](linking-urls-to
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijden biedt.
 
-Zie [&#x200B; HTTP2 Levering van Inhoud &#x200B;](http2faq.md) voor volledige details bij het worden begonnen HTTP/2 met uw Dynamische rekening van Media te gebruiken.
+Zie [ HTTP2 Levering van Inhoud ](http2faq.md) voor volledige details bij het worden begonnen HTTP/2 met uw Dynamische rekening van Media te gebruiken.

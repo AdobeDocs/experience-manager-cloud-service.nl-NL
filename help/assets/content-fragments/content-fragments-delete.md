@@ -1,20 +1,21 @@
 ---
 title: Inhoudsfragmenten - Overwegingen verwijderen (Assets - Inhoudsfragmenten)
-description: Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
+description: Bekijk deze belangrijke overwegingen voordat u uw beleid voor het verwijderen van inhoudsfragmenten in AEM definieert. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 8%
+source-wordcount: '476'
+ht-degree: 7%
 
 ---
 
 # Inhoudsfragmenten - Overwegingen verwijderen {#content-fragments-delete-considerations}
 
-Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
+Bekijk deze belangrijke overwegingen voordat u uw beleid voor het verwijderen van inhoudsfragmenten in AEM definieert. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
 
 ## Machtigingen - Verwijderen of Niet verwijderen {#permissions-delete-or-not-delete}
 
@@ -32,7 +33,7 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
    De basiswerking van de inhoudfragment-editor vereist dat dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties, ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
    * **geval van het Gebruik**: Een gebruiker die een inhoudsfragment moet uitgeven/bijwerken - **zonder het worden toegestaan om een volledig fragment** te schrappen.
-   * **Toestemmingen**: Zie [&#x200B; Toestemmingen die voor de Functionaliteit van de Redacteur slechts &#x200B;](#permissions-required-for-editor-functionality-only) worden vereist.
+   * **Toestemmingen**: Zie [ Toestemmingen die voor de Functionaliteit van de Redacteur slechts ](#permissions-required-for-editor-functionality-only) worden vereist.
 
 >[!NOTE]
 >

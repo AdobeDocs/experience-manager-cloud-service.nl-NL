@@ -4,10 +4,11 @@ description: Leer hoe u de afbeeldingsset automatiseert en het maken van een cen
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3192'
+source-wordcount: '3198'
 ht-degree: 0%
 
 ---
@@ -22,12 +23,12 @@ Gebruik **[!UICONTROL Batch Set Presets]** om meerdere elementen te maken en te 
 
 **Beste praktijken** - wanneer het werken met partijreeks vooraf instelt Adobe adviseert het volgende werkschema:
 
-1. Maak een voorinstelling voor een batchset. Zie [&#x200B; een partijreeks tot stand brengen vooraf ingesteld voor een beeldreeks of een spin reeks &#x200B;](#creating-bsp).
-1. Maak een elementmap of gebruik een bestaande elementmap en zorg ervoor dat deze is gesynchroniseerd met [!DNL Dynamic Media] . Zie [&#x200B; omslagen &#x200B;](/help/assets/manage-digital-assets.md#creating-folders) creëren.
-1. Pas de voorinstelling voor de batchset toe op de map met elementen. Zie [&#x200B; Ongeveer het toepassen van partij vastgestelde vooraf instelt op omslagen &#x200B;](#apply-bsp).
-1. Afbeeldingen uploaden naar de elementmap. Zie [&#x200B; activa voor de Reeksen van het Beeld &#x200B;](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets) uploaden, [&#x200B; activa voor de Reeksen van de Rotatie &#x200B;](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets), of [&#x200B; voeg digitale activa aan Adobe Experience Manager &#x200B;](/help/assets/add-assets.md#add-assets-to-experience-manager) toe.
+1. Maak een voorinstelling voor een batchset. Zie [ een partijreeks tot stand brengen vooraf ingesteld voor een beeldreeks of een spin reeks ](#creating-bsp).
+1. Maak een elementmap of gebruik een bestaande elementmap en zorg ervoor dat deze is gesynchroniseerd met [!DNL Dynamic Media] . Zie [ omslagen ](/help/assets/manage-digital-assets.md#creating-folders) creëren.
+1. Pas de voorinstelling voor de batchset toe op de map met elementen. Zie [ Ongeveer het toepassen van partij vastgestelde vooraf instelt op omslagen ](#apply-bsp).
+1. Afbeeldingen uploaden naar de elementmap. Zie [ activa voor de Reeksen van het Beeld ](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets) uploaden, [ activa voor de Reeksen van de Rotatie ](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets), of [ voeg digitale activa aan Adobe Experience Manager ](/help/assets/add-assets.md#add-assets-to-experience-manager) toe.
 1. Afbeeldingsset of centrifugeerset wordt automatisch gegenereerd in de gewenste map.
-1. Publiceer de afbeeldingsset of de centrifugeset. Zie [&#x200B; Dynamische Media Assets &#x200B;](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.
+1. Publiceer de afbeeldingsset of de centrifugeset. Zie [ Dynamische Media Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.
 
 ## Een voorinstelling voor een batch-set maken voor een afbeeldingsset of een spin-set {#creating-bsp}
 
@@ -60,7 +61,7 @@ Met betrekking tot volgorde die automatisering ordent, geeft u regels op om elem
 
 Hoewel een geforceerde sorteervolgorde mogelijk is, is het beter om zoveel mogelijk te vertrouwen op alfanumerieke nummering voor volgordevolgorde. Bovendien kunt u de set afbeeldingen of de gereedschappen voor de editor van de spin-set in [!DNL Dynamic Media] gebruiken om de volgorde van elementen te wijzigen, of nieuwe elementen aan de set toevoegen en verwijderen met behulp van slepen en neerzetten.
 
-Wanneer u klaar bent met het maken van een voorinstelling voor een batch-set, past u deze toe op een of meer mappen die u hebt gemaakt. Zie [&#x200B; Ongeveer het toepassen van partij vastgestelde vooraf instelt op omslagen &#x200B;](#apply-bsp).
+Wanneer u klaar bent met het maken van een voorinstelling voor een batch-set, past u deze toe op een of meer mappen die u hebt gemaakt. Zie [ Ongeveer het toepassen van partij vastgestelde vooraf instelt op omslagen ](#apply-bsp).
 
 <!-- See also [Creating a batch set preset for the auto generation of a 2D Spin Set](application-setup.md#creating_a_batch_set_preset_for_the_auto_generation_of_a_2d_spin_set). -->
 
@@ -68,17 +69,17 @@ Wanneer u klaar bent met het maken van een voorinstelling voor een batch-set, pa
 
 1. Selecteer het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]** .
 
-   ![&#x200B; bsp-create1.png &#x200B;](/help/assets/assets-dm/bsp-create1.png)
+   ![ bsp-create1.png ](/help/assets/assets-dm/bsp-create1.png)
 
-1. Selecteer **[!UICONTROL Create]** op de pagina **[!UICONTROL Batch Set Presets]** in de rechterbovenhoek.
-1. Voer in het tekstveld **[!UICONTROL Preset Name]** in het dialoogvenster **[!UICONTROL Create Batch Set Preset]** een beschrijvende naam in. De naam van de voorinstelling kan niet worden bewerkt als u deze later wijzigt.
+1. Selecteer **[!UICONTROL Batch Set Presets]** op de pagina **[!UICONTROL Create]** in de rechterbovenhoek.
+1. Voer in het tekstveld **[!UICONTROL Create Batch Set Preset]** in het dialoogvenster **[!UICONTROL Preset Name]** een beschrijvende naam in. De naam van de voorinstelling kan niet worden bewerkt als u deze later wijzigt.
 
-1. Selecteer **[!UICONTROL ImageSet]** of **[!UICONTROL SpinSet]** in de vervolgkeuzelijst **[!UICONTROL Preset Type]** . Zorg ervoor dat u het juiste type voorinstelling kiest; het kan later niet worden bewerkt.
+1. Selecteer **[!UICONTROL Preset Type]** of **[!UICONTROL ImageSet]** in de vervolgkeuzelijst **[!UICONTROL SpinSet]** . Zorg ervoor dat u het juiste type voorinstelling kiest; het kan later niet worden bewerkt.
 1. Selecteer **[!UICONTROL Create]** .
 1. Rechts van de pagina **[!UICONTROL Edit Batch Set Preset]** stelt u de gewenste bewerkbare opties in onder de koppen **[!UICONTROL Preset Details]** en **[!UICONTROL Set Naming Convention]** .
-Meer over de editable opties leren die aan u beschikbaar zijn, zie [&#x200B; vooraf ingestelde Details, Vastgestelde het Noemen Overeenkomst, en de Resultaten van de Regel - opties RegX &#x200B;](#features-options-bsp).
+Meer over de editable opties leren die aan u beschikbaar zijn, zie [ vooraf ingestelde Details, Vastgestelde het Noemen Overeenkomst, en de Resultaten van de Regel - opties RegX ](#features-options-bsp).
 
-   ![&#x200B; bsp-create4.png &#x200B;](/help/assets/assets-dm/bsp-create4.png)
+   ![ bsp-create4.png ](/help/assets/assets-dm/bsp-create4.png)
 
 1. Maak een of meer reguliere-expressiegroepen.
 
@@ -91,26 +92,26 @@ Meer over de editable opties leren die aan u beschikbaar zijn, zie [&#x200B; voo
 
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer **[!UICONTROL Add Group]** onder **[!UICONTROL Match]** , **[!UICONTROL Base Name]** of **[!UICONTROL Sequencing Order]** om nog een nieuwe groep toe te voegen. Maak een andere reguliere-expressiegroep zoals u in de vorige stap hebt gedaan.
+   * Selecteer **[!UICONTROL Match]** onder **[!UICONTROL Base Name]** , **[!UICONTROL Sequencing Order]** of **[!UICONTROL Add Group]** om nog een nieuwe groep toe te voegen. Maak een andere reguliere-expressiegroep zoals u in de vorige stap hebt gedaan.
    * Controleer de syntaxis van de reguliere expressie in het gebied **[!UICONTROL Rule Results - RegX]** . Als u de syntaxis moet wijzigen, voert u de bewerkingen uit in de desbetreffende groep links op de pagina.
    * Ga door met de volgende stap als u klaar bent met het maken van expressiegroepen.
 
 1. Selecteer **[!UICONTROL Save]** rechtsboven op de pagina.
 
-U kunt nu de voorinstelling voor de batchset toepassen op een elementmap. Vervolgens uploadt u elementen naar die map. Deze workflow resulteert in het automatisch genereren van uw afbeeldingsset of centrifugeset. Zie [&#x200B; Ongeveer het toepassen van batch plaatste vooraf instelt op activa omslagen &#x200B;](#apply-bsp).
+U kunt nu de voorinstelling voor de batchset toepassen op een elementmap. Vervolgens uploadt u elementen naar die map. Deze workflow resulteert in het automatisch genereren van uw afbeeldingsset of centrifugeset. Zie [ Ongeveer het toepassen van batch plaatste vooraf instelt op activa omslagen ](#apply-bsp).
 
 ### Details voorinstelling, Naamgevingsconventie instellen en Regelresultaten - RegX-opties {#features-options-bsp}
 
 Deze opties zijn beschikbaar op de pagina **[!UICONTROL Edit Batch Set Preset]** wanneer u een voorinstelling voor een batch-set maakt of bewerkt.
 
-Zie [&#x200B; een batch tot stand brengen vooraf ingesteld voor een beeld of een spin reeks &#x200B;](#creating-bsp) of [&#x200B; een vooraf ingestelde partijreeks &#x200B;](#edit-bsp) uitgeven.
+Zie [ een batch tot stand brengen vooraf ingesteld voor een beeld of een spin reeks ](#creating-bsp) of [ een vooraf ingestelde partijreeks ](#edit-bsp) uitgeven.
 
 | **[!UICONTROL Preset Details]** | Beschrijving |
 | --- | --- |
-| Naam voorinstelling | Alleen-lezen. De naam die u hebt opgegeven toen u de batch-set voor het eerst maakte. Als u de naam van de voorinstelling moet wijzigen, kunt u de bestaande voorinstelling voor een batch-set kopiëren en een nieuwe naam opgeven. Zie [&#x200B; Exemplaar een bestaande vooraf ingestelde partijreeks &#x200B;](#copy-bsp). |
+| Naam voorinstelling | Alleen-lezen. De naam die u hebt opgegeven toen u de batch-set voor het eerst maakte. Als u de naam van de voorinstelling moet wijzigen, kunt u de bestaande voorinstelling voor een batch-set kopiëren en een nieuwe naam opgeven. Zie [ Exemplaar een bestaande vooraf ingestelde partijreeks ](#copy-bsp). |
 | Type | Alleen-lezen. Het type is opgegeven toen u de batch-set voor het eerst hebt gemaakt. Als u een bestaande voorinstelling voor een batch-set kopieert, kunt u de [!UICONTROL Type] ervan niet wijzigen. In plaats daarvan moet u een voorinstelling maken. |
 | Inclusief afgeleide Assets | Optioneel. Als u wilt dat [!DNL Dynamic Media]&#39;s IPS (Image Production System) gegenereerde of &#39;afgeleide&#39; afbeeldingen met uw Spin-set of Afbeeldingsset bevat, selecteert u **[!UICONTROL Yes]** (standaard). Een afgeleid element is een afbeelding die niet rechtstreeks door een gebruiker is geüpload. In plaats daarvan, werd de activa geproduceerd door IPS toen een hoofdactiva werd geupload. Een afbeeldingselement dat IPS bijvoorbeeld genereert op basis van een pagina in een PDF, op het moment dat de PDF werd geüpload in [!DNL Dynamic Media] , wordt beschouwd als een afgeleid element. |
-| Doelmap | Optioneel. Als u grote aantallen afbeeldingssets of centrifuges definieert, raadt Adobe u aan deze sets los te houden van de mappen die de elementen zelf bevatten. Als dusdanig, denk na creërend een Reeksen van het Beeld of de omslag van de Reeksen van de Rotatie en richt de toepassing om partij te plaatsen geproduceerde reeksen hier.<br> in zulk geval, specificeer welke omslag binnen de de omslagstructuur van Experience Manager Assets (`/content/dam`) vooraf ingestelde partij actief heeft. Zorg ervoor dat de map is ingeschakeld voor [!DNL Dynamic Media] -synchronisatie om deze als doelmap toe te staan. Zie [&#x200B; selectieve het publiceren op het omslagniveau in Dynamische Media &#x200B;](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) vormen.<br> meer dan één omslag kan een bepaalde vooraf ingestelde partijreeks hebben die aan het wordt toegewezen, als u vooraf ingesteld door de omslag **[!UICONTROL Properties]** toepast. Zie [&#x200B; partij toepassen vooraf instelt van de Eigenschappen van een activaomslag &#x200B;](#apply-bsp-to-folders-via-properties) vooraf instelt.<br> als u geen omslag specificeert, wordt de vooraf ingestelde partij geproduceerde beeld wordt geplaatst of de spin reeks gecreeerd in de zelfde omslag zoals de activaomslag u uploadde aan. |
+| Doelmap | Optioneel. Als u grote aantallen afbeeldingssets of centrifuges definieert, raadt Adobe u aan deze sets los te houden van de mappen die de elementen zelf bevatten. Als dusdanig, denk na creërend een Reeksen van het Beeld of de omslag van de Reeksen van de Rotatie en richt de toepassing om partij te plaatsen geproduceerde reeksen hier.<br> in zulk geval, specificeer welke omslag binnen de de omslagstructuur van Experience Manager Assets (`/content/dam`) vooraf ingestelde partij actief heeft. Zorg ervoor dat de map is ingeschakeld voor [!DNL Dynamic Media] -synchronisatie om deze als doelmap toe te staan. Zie [ selectieve het publiceren op het omslagniveau in Dynamische Media ](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) vormen.<br> meer dan één omslag kan een bepaalde vooraf ingestelde partijreeks hebben die aan het wordt toegewezen, als u vooraf ingesteld door de omslag **[!UICONTROL Properties]** toepast. Zie [ partij toepassen vooraf instelt van de Eigenschappen van een activaomslag ](#apply-bsp-to-folders-via-properties) vooraf instelt.<br> als u geen omslag specificeert, wordt de vooraf ingestelde partij geproduceerde beeld wordt geplaatst of de spin reeks gecreeerd in de zelfde omslag zoals de activaomslag u uploadde aan. |
 | **[!UICONTROL Set Naming Convention]** |  |
 | Prefix <br> of <br> Achtervoegsel | Optioneel. Voer een voor- of achtervoegsel of beide in de desbetreffende velden in.<br> de prefix en achtervoegselgebieden laten u vele partijreeks tot stand brengen vooraf instelt gebruikend een afwisselende, douanedossier noemende overeenkomst voor een bepaalde reeks inhoud. Deze methode is vooral handig in gevallen waarin er een uitzondering is op de standaardnaamgevingsregeling van een bedrijf.<br> het voor- of achtervoegsel wordt toegevoegd aan **[!UICONTROL Base Name]** u in het **[!UICONTROL Asset Naming Convention]** gebied bepaalt. Door een voor- of achtervoegsel toe te voegen, zorgt u ervoor dat de set afbeeldingen of de set met centrifuges uitsluitend en onafhankelijk van andere elementen wordt gemaakt. Het kan ook worden gebruikt om anderen te helpen dossiertypes identificeren. Als u bijvoorbeeld een gebruikte kleurmodus wilt bepalen, kunt u een voor- of achtervoegsel `rgb` of `cmyk` toevoegen.<br> terwijl het specificeren van een vastgestelde noemende overeenkomst niet wordt vereist om partij te gebruiken vooraf ingestelde functionaliteit, adviseren de beste praktijken dat u de reeks noemende overeenkomst gebruikt. Op deze manier kunt u zoveel elementen van uw naamgevingsconventie definiëren als u wilt groeperen in een set om het maken van batchsets te stroomlijnen. |
 | **[!UICONTROL Rule Results - RegX]** |  |
@@ -128,8 +129,8 @@ Mappen waaraan een voorinstelling voor een batch is toegewezen, worden in de geb
 
 Als u voorinstellingen voor batchsets wilt toepassen op mappen met elementen, gebruikt u een van de volgende twee methoden:
 
-* [&#x200B; pas partijreeks vooraf instelt op activaomslagen van de Reeks van de Partij vooraf ingestelde pagina &#x200B;](#apply-bsp-to-folders-via-bsp-page) toe - Deze methode biedt u de meeste flexibiliteit aan. U kunt één voorinstelling of meerdere voorinstellingen toepassen op één map of op meerdere mappen.
-* [&#x200B; pas partijreeks vooraf instelt van de Pagina van Eigenschappen van een activa omslag &#x200B;](#apply-bsp-to-folders-via-properties) toe - Deze methode laat u één of meerdere partijreeks vooraf instelt op één enkele omslag toepassen.
+* [ pas partijreeks vooraf instelt op activaomslagen van de Reeks van de Partij vooraf ingestelde pagina ](#apply-bsp-to-folders-via-bsp-page) toe - Deze methode biedt u de meeste flexibiliteit aan. U kunt één voorinstelling of meerdere voorinstellingen toepassen op één map of op meerdere mappen.
+* [ pas partijreeks vooraf instelt van de Pagina van Eigenschappen van een activa omslag ](#apply-bsp-to-folders-via-properties) toe - Deze methode laat u één of meerdere partijreeks vooraf instelt op één enkele omslag toepassen.
 
 U kunt het beste controleren of de mappen met elementen zijn gesynchroniseerd [!DNL Dynamic Media] en vervolgens de gewenste voorinstellingen toepassen.
 
@@ -146,7 +147,7 @@ Elementen in een map opnieuw verwerken als u een van de volgende twee situaties 
 1. Schakel op de pagina **[!UICONTROL Batch Set Presets]** links van de kolom **[!UICONTROL Preset Name]** het selectievakje in van elke voorinstelling voor batchsets die u op mappen wilt toepassen.
 1. Selecteer **[!UICONTROL Apply Batch Preset to Folders]** in de werkbalk.
 1. Schakel op de pagina **[!UICONTROL Select Folders]** het selectievakje in van elke map waarop de voorinstellingen voor batchsets moeten worden toegepast.
-1. Selecteer **[!UICONTROL Apply]** in de rechterbovenhoek van de pagina **[!UICONTROL Select Folders]** .
+1. Selecteer **[!UICONTROL Select Folders]** in de rechterbovenhoek van de pagina **[!UICONTROL Apply]** .
 
 ### Voorinstellingen voor batchsets toepassen vanaf de pagina Eigenschappen van een elementmap {#apply-bsp-to-folders-via-properties}
 
@@ -156,11 +157,11 @@ Elementen in een map opnieuw verwerken als u een van de volgende twee situaties 
 1. Selecteer **[!UICONTROL Properties]** in de werkbalk.
 1. Selecteer de tab **[!UICONTROL Dynamic Media Processing]** op de pagina Eigenschappen van de map.
 
-   ![&#x200B; bsp-apply-via-properties2.png &#x200B;](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
+   ![ bsp-apply-via-properties2.png ](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
 1. Selecteer onder **[!UICONTROL Batch Set Presets]** in de vervolgkeuzelijst **[!UICONTROL Preset Name]** de naam van een voorinstelling voor een batch-set die u wilt toepassen. In de bovenstaande schermafbeelding ziet u twee geselecteerde voorinstellingen voor batchsets die op de elementenmap zijn toegepast.
 
-   Als het vervolgkeuzemenu **[!UICONTROL Preset Name]** geen naam bevat voor voorinstellingen van batchsets, betekent dit dat u nog geen voorinstellingen van batchsets hebt gemaakt. Zie [&#x200B; een partijreeks tot stand brengen vooraf ingesteld voor een beeldreeks of een spin reeks &#x200B;](#creating-bsp).
+   Als het vervolgkeuzemenu **[!UICONTROL Preset Name]** geen naam bevat voor voorinstellingen van batchsets, betekent dit dat u nog geen voorinstellingen van batchsets hebt gemaakt. Zie [ een partijreeks tot stand brengen vooraf ingesteld voor een beeldreeks of een spin reeks ](#creating-bsp).
 
    Als u een toegepaste voorinstelling voor een batch-set wilt verwijderen, selecteert u **[!UICONTROL X]** rechts van het type voorinstelling.
 
@@ -170,7 +171,7 @@ Elementen in een map opnieuw verwerken als u een van de volgende twee situaties 
 
 U kunt een bestaande voorinstelling voor een batch-set bewerken die u hebt gemaakt. U kunt om het even welke uitdrukkingsgroepen veranderen u voor de activa noemende overeenkomst of opeenvolgingsorde creeerde. Indien nodig kunt u ook de doelmap bijwerken en naamgevingsconventies instellen.
 
-U kunt de naam of het type voorinstelling (Afbeeldingsset of Draaiset) echter niet wijzigen. Als de naam van een voorinstelling moet worden gewijzigd, kopieert u de bestaande voorinstelling en geeft u een nieuwe naam op. Zie [&#x200B; vooraf ingesteld exemplaar van een partijreeks &#x200B;](#copy-bsp).
+U kunt de naam of het type voorinstelling (Afbeeldingsset of Draaiset) echter niet wijzigen. Als de naam van een voorinstelling moet worden gewijzigd, kopieert u de bestaande voorinstelling en geeft u een nieuwe naam op. Zie [ vooraf ingesteld exemplaar van een partijreeks ](#copy-bsp).
 
 Als u een vooraf ingestelde batch-set bewerkt die eerder op een map is toegepast, wordt de opnieuw bewerkte voorinstelling voor een batch-set alleen toegepast op nieuwe elementen die naar die map zijn geüpload.
 
@@ -182,7 +183,7 @@ Als u de zojuist bewerkte voorinstelling opnieuw wilt toepassen op de bestaande 
 1. Controleer op de pagina **[!UICONTROL Batch Set Presets]** links van de kolom **[!UICONTROL Preset Name]** de voorinstelling voor batchsets die u wilt wijzigen.
 1. Selecteer **[!UICONTROL Edit Batch Set Preset]** in de werkbalk.
 1. Bewerk de voorinstelling naar wens.
-1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina **[!UICONTROL Batch Set Preset]** .
+1. Selecteer **[!UICONTROL Batch Set Preset]** in de rechterbovenhoek van de pagina **[!UICONTROL Save]** .
 
 ## Een bestaande voorinstelling voor een batchset kopiëren {#copy-bsp}
 
@@ -195,9 +196,9 @@ Als u een bestaande voorinstelling kopieert die door elementmappen wordt gebruik
 1. Selecteer het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]** .
 1. Schakel op de pagina **[!UICONTROL Batch Set Presets]** links van de kolom **[!UICONTROL Preset Name]** het selectievakje in van de batch-set met voorinstellingen die u wilt kopiëren.
 1. Selecteer **[!UICONTROL Copy]** in de werkbalk.
-1. Typ in het tekstvak **[!UICONTROL Title]** van het dialoogvenster **[!UICONTROL Copy Batch Set Preset]** een nieuwe naam voor de voorinstelling.
+1. Typ in het tekstvak **[!UICONTROL Copy Batch Set Preset]** van het dialoogvenster **[!UICONTROL Title]** een nieuwe naam voor de voorinstelling.
 
-   ![&#x200B; bsp-copy2.png &#x200B;](/help/assets/assets-dm/bsp-copy2.png)
+   ![ bsp-copy2.png ](/help/assets/assets-dm/bsp-copy2.png)
 
 1. Selecteer **[!UICONTROL Copy]** .
 
@@ -205,12 +206,12 @@ Als u een bestaande voorinstelling kopieert die door elementmappen wordt gebruik
 
 Wanneer u voorinstellingen voor batchsets uit mappen verwijdert, wordt de batchset niet toegepast op nieuwe elementen die u uploadt naar deze mappen. Bestaande elementen in de map die al zijn toegevoegd aan de afbeeldingsset of de spint-set op basis van een batchset-voorinstelling die is toegepast op de map en die ongewijzigd worden weergegeven.
 
-Als u *wilt schrappen* vooraf instelt van omslagen in plaats daarvan, zie [&#x200B; partij plaatsen schrappen vooraf instelt &#x200B;](#delete-bsp).
+Als u *wilt schrappen* vooraf instelt van omslagen in plaats daarvan, zie [ partij plaatsen schrappen vooraf instelt ](#delete-bsp).
 
 Er zijn twee methoden waarmee u voorinstellingen voor batchsets kunt verwijderen uit mappen.
 
-* [&#x200B; verwijdert partijreeks vooraf instelt van omslagen als de Reeks van de Partij vooraf instelt pagina &#x200B;](#remove-bsp-from-folders-via-bsp-page) - Deze methode biedt u de meeste flexibiliteit aan. U kunt één voorinstelling of meerdere voorinstellingen uit één map of uit meerdere mappen verwijderen.
-* [&#x200B; verwijdert partijreeks vooraf instelt van de pagina van Eigenschappen van een omslag &#x200B;](#remove-bsp-from-folders-via-properties) - Deze methode laat u één of meerdere partijreeks verwijderen vooraf instelt van één enkele omslag slechts.
+* [ verwijdert partijreeks vooraf instelt van omslagen als de Reeks van de Partij vooraf instelt pagina ](#remove-bsp-from-folders-via-bsp-page) - Deze methode biedt u de meeste flexibiliteit aan. U kunt één voorinstelling of meerdere voorinstellingen uit één map of uit meerdere mappen verwijderen.
+* [ verwijdert partijreeks vooraf instelt van de pagina van Eigenschappen van een omslag ](#remove-bsp-from-folders-via-properties) - Deze methode laat u één of meerdere partijreeks verwijderen vooraf instelt van één enkele omslag slechts.
 
 ### Voorinstellingen voor batchsets uit mappen verwijderen op basis van de pagina Voorinstelling voor batchset {#remove-bsp-from-folders-via-bsp-page}
 
@@ -219,11 +220,11 @@ Er zijn twee methoden waarmee u voorinstellingen voor batchsets kunt verwijderen
 1. Selecteer **[!UICONTROL Remove Batch Preset from Folders]** in de werkbalk.
 
 1. Selecteer op de pagina **[!UICONTROL Select Folders]** een of meer mappen waarin u de voorinstellingen van de batchset wilt verwijderen.
-1. Selecteer **[!UICONTROL Remove]** in de rechterbovenhoek van de pagina **[!UICONTROL Select Folders]** .
+1. Selecteer **[!UICONTROL Select Folders]** in de rechterbovenhoek van de pagina **[!UICONTROL Remove]** .
 
-   ![&#x200B; bsp-remove-from-folders3.png &#x200B;](/help/assets/assets-dm/bsp-remove-from-folders3.png)
+   ![ bsp-remove-from-folders3.png ](/help/assets/assets-dm/bsp-remove-from-folders3.png)
 
-1. Selecteer **[!UICONTROL Remove]** in het dialoogvenster **[!UICONTROL Remove profile]** .
+1. Selecteer **[!UICONTROL Remove profile]** in het dialoogvenster **[!UICONTROL Remove]** .
 
 ### Voorinstellingen voor batchsets verwijderen uit de eigenschappenpagina van een map {#remove-bsp-from-folders-via-properties}
 
@@ -233,7 +234,7 @@ Er zijn twee methoden waarmee u voorinstellingen voor batchsets kunt verwijderen
 1. Selecteer **[!UICONTROL Properties]** in de werkbalk.
 1. Selecteer **[!UICONTROL Dynamic Media Processing]** op de pagina Eigenschappen van de map.
 
-   ![&#x200B; bsp-apply-via-properties2.png &#x200B;](/help/assets/assets-dm/bsp-remove-via-properties2.png)
+   ![ bsp-apply-via-properties2.png ](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
 1. Selecteer onder **[!UICONTROL Batch Set Presets]** de optie **[!UICONTROL X]** rechts van het type voorinstelling.
 
@@ -245,7 +246,7 @@ U kunt voorinstellingen van batchsets verwijderen om deze permanent uit [!DNL Dy
 
 Als u een voorinstelling verwijdert die eerder op een of meer mappen is toegepast, worden alle sets afbeeldingen of centrifuges die op basis van elementen in die mappen zijn gemaakt, ongewijzigd weergegeven.
 
-Als u *wilt verwijderen* vooraf instelt van omslagen in plaats daarvan, zie [&#x200B; partij verwijderen vooraf instelt van omslagen &#x200B;](#remove-bsp-from-folder).
+Als u *wilt verwijderen* vooraf instelt van omslagen in plaats daarvan, zie [ partij verwijderen vooraf instelt van omslagen ](#remove-bsp-from-folder).
 
 **om partijreeks te schrappen vooraf instelt:**
 
@@ -253,17 +254,17 @@ Als u *wilt verwijderen* vooraf instelt van omslagen in plaats daarvan, zie [&#x
 1. Schakel op de pagina **[!UICONTROL Batch Set Presets]** links van de kolom **[!UICONTROL Preset Name]** het selectievakje in van een of meer voorinstellingen voor batchsets die u wilt verwijderen.
 1. Selecteer **[!UICONTROL Delete Batch Set Presets]** in de werkbalk.
 
-   ![&#x200B; bsp-delete2.png &#x200B;](/help/assets/assets-dm/bsp-delete2.png)
+   ![ bsp-delete2.png ](/help/assets/assets-dm/bsp-delete2.png)
 
-1. Selecteer **[!UICONTROL Delete]** in het dialoogvenster **[!UICONTROL Delete Batch Set Presets]** .
+1. Selecteer **[!UICONTROL Delete Batch Set Presets]** in het dialoogvenster **[!UICONTROL Delete]** .
 
    Als in een elementmap naar de voorinstelling die u verwijdert, wordt verwezen, selecteert u **[!UICONTROL Force Delete]** .
 
-   ![&#x200B; bsp-delete3.png &#x200B;](/help/assets/assets-dm/bsp-delete3.png)
+   ![ bsp-delete3.png ](/help/assets/assets-dm/bsp-delete3.png)
 
 >[!MORELIKETHIS]
 >
 >* [Image Sets](/help/assets/dynamic-media/image-sets.md)
 >* [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
->* [&#x200B; vorm selectief het publiceren op het omslagniveau in Dynamische Media &#x200B;](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - zie &quot;Wijze van de Synchronisatie&quot;in het onderwerp als u meer over het synchroniseren van één enkele omslag aan [!DNL Dynamic Media] wilt leren.
->* [&#x200B; creeer een Dynamische Configuratie van Media in de Diensten van de Wolk &#x200B;](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - zie &quot;Dynamische de synchronisatiemodus van Media&quot;in het onderwerp als u meer over het synchroniseren van alle omslagen aan [!DNL Dynamic Media] wilt leren.
+>* [ vorm selectief het publiceren op het omslagniveau in Dynamische Media ](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - zie &quot;Wijze van de Synchronisatie&quot;in het onderwerp als u meer over het synchroniseren van één enkele omslag aan [!DNL Dynamic Media] wilt leren.
+>* [ creeer een Dynamische Configuratie van Media in de Diensten van de Wolk ](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - zie &quot;Dynamische de synchronisatiemodus van Media&quot;in het onderwerp als u meer over het synchroniseren van alle omslagen aan [!DNL Dynamic Media] wilt leren.

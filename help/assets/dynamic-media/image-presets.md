@@ -4,10 +4,11 @@ description: Leer hoe u voorinstellingen voor afbeeldingen kunt toepassen in Dyn
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '300'
 ht-degree: 2%
 
 ---
@@ -18,11 +19,11 @@ Met Voorinstellingen voor afbeeldingen kunnen elementen dynamisch afbeeldingen v
 
 Daarnaast kunt u een voorinstelling voor een afbeelding kiezen die reageert (aangeduid met de knop **[!UICONTROL RESS]** nadat u deze hebt geselecteerd).
 
-[&#x200B; de Beheerders kunnen beeld tot stand brengen en vormen vooraf instelt &#x200B;](managing-image-presets.md).
+[ de Beheerders kunnen beeld tot stand brengen en vormen vooraf instelt ](managing-image-presets.md).
 
 >[!NOTE]
 >
->Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [&#x200B; Slimme Beeldvorming &#x200B;](imaging-faq.md) voor meer informatie.
+>Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [ Slimme Beeldvorming ](imaging-faq.md) voor meer informatie.
 
 U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen.
 
@@ -34,9 +35,9 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
    >
    >* Statische vertoningen worden weergegeven in de bovenste helft van het epaan. Dynamische uitvoeringen worden weergegeven in de onderste helft. Alleen bij dynamische uitvoeringen kunt u de URL gebruiken om de afbeelding weer te geven. De knop **[!UICONTROL URL]** wordt alleen weergegeven als u een dynamische uitvoering selecteert. De knop **[!UICONTROL RESS]** wordt alleen weergegeven als u een voorinstelling voor een responsieve afbeelding selecteert.
    >
-   >* Het systeem toont talrijke vertoningen wanneer u **[!UICONTROL Renditions]** in de mening van het Detail van activa selecteert. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [&#x200B; Verhoogend het aantal beeld vooraf instelt dat vertoning &#x200B;](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >* Het systeem toont talrijke vertoningen wanneer u **[!UICONTROL Renditions]** in de mening van het Detail van activa selecteert. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [ Verhoogend het aantal beeld vooraf instelt dat vertoning ](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-   ![&#x200B; chlimage_1-208 &#x200B;](assets/chlimage_1-208.png)
+   ![ chlimage_1-208 ](assets/chlimage_1-208.png)
 
 1. Voer een van de volgende handelingen uit:
 

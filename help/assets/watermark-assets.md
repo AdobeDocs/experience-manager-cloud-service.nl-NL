@@ -4,10 +4,11 @@ description: Leer hoe u een digitaal watermerk aan uw middelen in AEM kunt toevo
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '317'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met [!DNL Adobe Experience Manager Assets] kunt u een digitaal watermerk toevoegen aan afbeeldingen en video&#39;s. [!DNL Assets] ondersteunt het toepassen van een afbeelding als watermerk op andere afbeeldingsbestanden. Met watermerken kunnen gebruikers de authenticiteit en de copyrighteigendom van de elementen controleren. Een watermerk kan ook worden gebruikt om de status van een document aan te geven als vertrouwelijk, concept, geldigheid enzovoort.
@@ -35,20 +36,20 @@ U configureert [!DNL Experience Manager] als volgt voor watermerkelementen:
 
 1. Klik op **[!UICONTROL Save]**.
 
-   ![&#x200B; Detector van de Duplicatie van Activa &#x200B;](assets/system-watermarking-profile.png)
+   ![ Detector van de Duplicatie van Activa ](assets/system-watermarking-profile.png)
 
    >[!NOTE]
    >
    >Als u System Watermarking Profile (Systeemwatermerkprofiel) hebt geconfigureerd met het configuratiebestand van `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` (OSGi-configuratie), kunt u dit blijven gebruiken, maar Adobe raadt u aan de nieuwe methode te gebruiken.
 
 
-1. [&#x200B; creeer een verwerkingsprofiel &#x200B;](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) om activa microservices te gebruiken om het watermerk toe te passen.
+1. [ creeer een verwerkingsprofiel ](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) om activa microservices te gebruiken om het watermerk toe te passen.
 
-   ![&#x200B; de verwerkingsprofiel van activa om watermerk &#x200B;](assets/watermark-processing-profile.png) te creëren
+   ![ de verwerkingsprofiel van activa om watermerk ](assets/watermark-processing-profile.png) te creëren
 
    Zorg ervoor dat u de schakeloptie **[!UICONTROL Watermark]** inschakelt tijdens het maken van het verwerkingsprofiel.
 
-1. [&#x200B; pas de verwerkingsprofielen op een omslag &#x200B;](/help/assets/asset-microservices-configure-and-use.md#use-profiles) toe om watermerken activa tot stand te brengen.
+1. [ pas de verwerkingsprofielen op een omslag ](/help/assets/asset-microservices-configure-and-use.md#use-profiles) toe om watermerken activa tot stand te brengen.
 
 ## Tips en beperkingen {#tips-limitations-bestpractices}
 
@@ -74,5 +75,5 @@ U configureert [!DNL Experience Manager] als volgt voor watermerkelementen:
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; overzicht van de microdiensten van Activa &#x200B;](/help/assets/asset-microservices-overview.md).
->* [&#x200B; de activa microdiensten van het Gebruik met verwerkingsprofielen &#x200B;](/help/assets/asset-microservices-configure-and-use.md).
+>* [ overzicht van de microdiensten van Activa ](/help/assets/asset-microservices-overview.md).
+>* [ de activa microdiensten van het Gebruik met verwerkingsprofielen ](/help/assets/asset-microservices-configure-and-use.md).

@@ -4,10 +4,11 @@ description: Leer hoe u middelen in Dynamic Media kunt voorvertonen, zodat u kun
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -27,11 +28,11 @@ Naast het gebruik van de specifieke functie Voorvertoning voor video, centrifuge
 >
 >Wanneer u op een webpagina (Sites) in Adobe Experience Manager werkt, kunt u geen voorvertoning van elementen weergeven in de modus **[!UICONTROL Edit]** . Ga in plaats daarvan naar de modus Voorbeeld door **[!UICONTROL Preview]** in de rechterbovenhoek van de pagina te selecteren.
 
-Om kijkersvoorinstellingen in of onbruikbaar te maken in het gebruikersinterface, zie [&#x200B; het Leiden Kijker vooraf instelt &#x200B;](/help/assets/dynamic-media/managing-viewer-presets.md).
+Om kijkersvoorinstellingen in of onbruikbaar te maken in het gebruikersinterface, zie [ het Leiden Kijker vooraf instelt ](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 **aan voorproefactiva:**
 
-1. Selecteer op de **[!UICONTROL Navigation]** pagina in **[!UICONTROL Experience Manager]** de optie **[!UICONTROL Assets]** en **[!UICONTROL Files]** vervolgens de optie voor toegang tot elementen.
+1. Selecteer op de **[!UICONTROL Experience Manager]** pagina in **[!UICONTROL Navigation]** de optie **[!UICONTROL Assets]** en **[!UICONTROL Files]** vervolgens de optie voor toegang tot elementen.
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL View]** rechtsboven op de pagina de optie **[!UICONTROL List View]** .
 1. (Optioneel) Gebruik de kolom **[!UICONTROL Type]** om de elementen te sorteren op het type waarvan u een voorvertoning wilt weergeven.
 1. Selecteer onder de kolom **[!UICONTROL Title]** de titelnaam (niet de miniatuurafbeelding) van het element waarvan u een voorvertoning wilt weergeven.
