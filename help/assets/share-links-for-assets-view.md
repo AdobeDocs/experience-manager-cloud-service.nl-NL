@@ -26,7 +26,7 @@ Een koppeling genereren voor een element of een map met elementen:
 
 1. Kopieer de koppeling vanuit het veld **[!UICONTROL Share Link]** .
 
-   ![ Optie om uit te snijden en te rechttrekken ](assets/share-asset-link.png)
+   ![&#x200B; Optie om uit te snijden en te rechttrekken &#x200B;](assets/share-asset-link.png)
 
 1. Klik op **[!UICONTROL Close]** en deel de koppeling via e-mail of andere samenwerkingsprogramma&#39;s.
 
@@ -42,14 +42,14 @@ U kunt ook meerdere elementen selecteren en op **[!UICONTROL Download]** klikken
 
 Als u alle elementen tegelijk wilt downloaden, schakelt u over naar de **[!UICONTROL List view]** -component, klikt u op **[!UICONTROL Select all]** en vervolgens op **[!UICONTROL Download]** .
 
-![ Voorproef gedeelde activa ](assets/preview-shared-assets.png)
+![&#x200B; Voorproef gedeelde activa &#x200B;](assets/preview-shared-assets.png)
 
 ## Volgende stappen {#next-steps}
 
-* [ bekijk een video om verbindingen voor activa in de mening van Assets te delen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
+* [&#x200B; bekijk een video om verbindingen voor activa in de mening van Assets te delen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![&#x200B; uitgeeft de pagina &#x200B;](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![&#x200B; creeer een kwestie GitHub &#x200B;](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)

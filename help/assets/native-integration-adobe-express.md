@@ -20,7 +20,7 @@ Content Advisor transformeert hoe u middelen ontdekt en gebruikt in Adobe Expres
 
 Met slimme suggesties, toegang tot dynamische media-uitvoeringen en volledige zichtbaarheid in metagegevens van elementen kunt u met Content Advisor op efficiënte wijze elementen van AEM Assets zoeken, evalueren en gebruiken zonder Adobe Express te verlaten. Dit zorgt voor snellere content creation, beter hergebruik van bedrijfsmiddelen en een consistent gebruik van goedgekeurde, merkconforme middelen.
 
-![ de bannerbeeld van de Adviseur van de Inhoud ](assets/content-advisor-banner-image.png)
+![&#x200B; de bannerbeeld van de Adviseur van de Inhoud &#x200B;](assets/content-advisor-banner-image.png)
 
 U kunt ook elementen op het Express-canvas plaatsen en nieuwe of bewerkte inhoud terugzetten naar AEM Assets, zodat u verzekerd bent van gecentraliseerd beheer van bedrijfsmiddelen en beheer. Native integratie met Adobe Express biedt de volgende belangrijke voordelen:
 
@@ -44,31 +44,31 @@ Voer de volgende stappen uit om AEM Assets in Adobe Express Editor te gaan gebru
 
 2. Open een nieuw leeg canvas door een nieuwe sjabloon of een project te laden of door een element te maken.
 
-3. Klik op **[!UICONTROL Assets]** in het navigatievenster aan de linkerkant. De vertoningen van Adobe Express [ Adviseur van de Inhoud ](#intelligent-asset-discovery-content-advisor), die van de bewaarplaatsen een lijst maakt die u gerechtigd bent tot toegang samen met de lijst van activa en omslagen beschikbaar op wortel-niveau.
+3. Klik op **[!UICONTROL Assets]** in het navigatievenster aan de linkerkant. De vertoningen van Adobe Express [&#x200B; Adviseur van de Inhoud &#x200B;](#intelligent-asset-discovery-content-advisor), die van de bewaarplaatsen een lijst maakt die u gerechtigd bent tot toegang samen met de lijst van activa en omslagen beschikbaar op wortel-niveau.
 
-4. Blader of onderzoek naar activa in uw bewaarplaats gebruikend [ Adviseur van de Inhoud ](#intelligent-asset-discovery-content-advisor), dan sleep en laat vallen hen op het canvas. U kunt ook op de elementen klikken om deze op het canvas te plaatsen. U kunt ![ filter ](assets/do-not-localize/filter.svg) activa door diverse criteria, zoals goedkeuringsstatus, dossiertype, MIME type, en afmetingen ook filtreren.
+4. Blader of onderzoek naar activa in uw bewaarplaats gebruikend [&#x200B; Adviseur van de Inhoud &#x200B;](#intelligent-asset-discovery-content-advisor), dan sleep en laat vallen hen op het canvas. U kunt ook op de elementen klikken om deze op het canvas te plaatsen. U kunt ![&#x200B; filter &#x200B;](assets/do-not-localize/filter.svg) activa door diverse criteria, zoals goedkeuringsstatus, dossiertype, MIME type, en afmetingen ook filtreren.
 
    >[!NOTE]
    >
    >Filteren op dimensie is niet van toepassing op video&#39;s.
 
-   ![ omvat activa van Assets toe:voegen-op ](assets/native-express-content-advisor-home.png)
+   ![&#x200B; omvat activa van Assets toe:voegen-op &#x200B;](assets/native-express-content-advisor-home.png)
 
 ## Intelligente assetdetectie met Content Advisor {#intelligent-asset-discovery-content-advisor}
 
 Met de Content Advisor kunt u relevante elementen detecteren aan de hand van intelligente, contextbewuste aanbevelingen die zijn gebaseerd op uw inhoud of campagnecorrectie van het canvas. Hiermee kunt u ook dynamische media-uitvoeringen selecteren die geschikt zijn voor gebruik.
 
 
-De Adviseur van de inhoud toont de lijst van dossiers, omslagen, en inzamelingen in de meningen van de Lijst en van het Net. Hiermee kunt u elementen in de indelingen PNG, JPEG, PSD, MP4, SVG en PDF toevoegen aan het Express-canvas. U kunt de scrollable dossiers van PDF of een andere formaattypes ook voorproef door het ![ pictogram van Info ](assets/info-icon.svg) te klikken beschikbaar op de activakaart.
+De Adviseur van de inhoud toont de lijst van dossiers, omslagen, en inzamelingen in de meningen van de Lijst en van het Net. Hiermee kunt u elementen in de indelingen PNG, JPEG, PSD, MP4, SVG en PDF toevoegen aan het Express-canvas. U kunt de scrollable dossiers van PDF of een andere formaattypes ook voorproef door het ![&#x200B; pictogram van Info &#x200B;](assets/info-icon.svg) te klikken beschikbaar op de activakaart.
 
-Klik het ![ pictogram van Info ](assets/info-icon.svg) pictogram om activa meta-gegevens ook te bekijken beschikbaar in het **[!UICONTROL Basic]** lusje of mening Dynamische vertoningen van Media beschikbaar in de [ Dynamische Media ](#dynamic-media-renditions-content-advisor) tabel. Sleep de voorgestelde inhoud naar het canvas. U kunt ook op het element klikken om deze automatisch op het canvas te plaatsen.
+Klik het ![&#x200B; pictogram van Info &#x200B;](assets/info-icon.svg) pictogram om activa meta-gegevens ook te bekijken beschikbaar in het **[!UICONTROL Basic]** lusje of mening Dynamische vertoningen van Media beschikbaar in de [&#x200B; Dynamische Media &#x200B;](#dynamic-media-renditions-content-advisor) tabel. Sleep de voorgestelde inhoud naar het canvas. U kunt ook op het element klikken om deze automatisch op het canvas te plaatsen.
 
-![ meta-gegevens van Activa in Adobe Express ](assets/express-native-integration-metadata.png)
+![&#x200B; meta-gegevens van Activa in Adobe Express &#x200B;](assets/express-native-integration-metadata.png)
 
 
 >[!IMPORTANT]
 > 
->Zorg ervoor dat u een **auteur** bewaarplaats van de **3} drop-down lijst van de Bewaarplaats {selecteert.** A **levering** bewaarplaats toont de eigenschappen van de Adviseur van de Inhoud niet.
+>Zorg ervoor dat u een **auteur** bewaarplaats van de **3&rbrace; drop-down lijst van de Bewaarplaats &lbrace;selecteert.** A **levering** bewaarplaats toont de eigenschappen van de Adviseur van de Inhoud niet.
 >
 > Bovendien heeft de **levering** bewaarplaats geen activa die in omslagen en inzamelingen worden georganiseerd. Alle elementen worden weergegeven op het hoofdniveau in een platte structuur.
 
@@ -96,7 +96,7 @@ De Adviseur van de inhoud gebruikt een geavanceerd onderzoeksvermogen dat de bet
 
 In tegenstelling tot de traditionele op trefwoorden gebaseerde zoekopdracht, waarbij naar exacte termen wordt gezocht, worden in AI-zoekopdrachten de relaties tussen woorden, concepten en gebruikersintentie geïnterpreteerd. Dit zorgt ervoor dat de gebruikers vinden wat zij-zelfs als hun vraag verschillend wordt gephrased, typos bevat, of in een andere taal is.
 
-![ AI Onderzoek naar activa in Adobe Express ](assets/express-native-integration-ai-search.png)
+![&#x200B; AI Onderzoek naar activa in Adobe Express &#x200B;](assets/express-native-integration-ai-search.png)
 
 Sommige hiervan zijn de belangrijkste voordelen:
 
@@ -117,7 +117,7 @@ Sommige hiervan zijn de belangrijkste voordelen:
 
 In Content Advisor worden slimme suggesties weergegeven op basis van de context en intentie van de inhoud in het Express canvas. Hierdoor kunt u snel middelen vinden en gebruiken die op uw inhoudsbehoeften zijn afgestemd zonder tijdrovende handmatige zoekopdracht.
 
-![ Voorgestelde inhoud van de Adviseur van de Inhoud in Adobe Express ](assets/express-native-integration-suggested-content.png)
+![&#x200B; Voorgestelde inhoud van de Adviseur van de Inhoud in Adobe Express &#x200B;](assets/express-native-integration-suggested-content.png)
 
 >[!IMPORTANT]
 > 
@@ -130,7 +130,7 @@ In Content Advisor worden slimme suggesties weergegeven op basis van de context 
 
 Met Content Advisor kunt u een kort campagneretablet uploaden om relevante elementen te detecteren zonder handmatig zoektrefwoorden in te voeren. Content Advisor analyseert de informatie in de campagneresamenvatting om inzicht te krijgen in de intentie van de campagne en raadt relevante middelen aan die beschikbaar zijn in AEM Assets.
 
-![ omvat activa van Assets toe:voegen-op ](assets/upload-brief-native-express.png)
+![&#x200B; omvat activa van Assets toe:voegen-op &#x200B;](assets/upload-brief-native-express.png)
 
 >[!IMPORTANT]
 >
@@ -141,21 +141,21 @@ Met Content Advisor kunt u een kort campagneretablet uploaden om relevante eleme
 
 ### Dynamische media-elementuitvoeringen beschikbaar voor gebruik {#dynamic-media-renditions-content-advisor}
 
-De dynamische vertoningen van Media verstrekken klaar-aan-gebruik, kanaal-geoptimaliseerde versies van activa, met inbegrip van [ beeld vooraf instelt ](/help/assets/dynamic-media/managing-image-presets.md), [ Slimme Uitsnijdingen ](/help/assets/dynamic-media/image-profiles.md), formaattypes, en kleurenprofielen. Deze uitvoeringen helpen u ervoor te zorgen dat het geselecteerde element voldoet aan de vereisten voor kanalen en ontwerpen zonder dat handmatig bewerken of het dupliceren van middelen vereist is.
+De dynamische vertoningen van Media verstrekken klaar-aan-gebruik, kanaal-geoptimaliseerde versies van activa, met inbegrip van [&#x200B; beeld vooraf instelt &#x200B;](/help/assets/dynamic-media/managing-image-presets.md), [&#x200B; Slimme Uitsnijdingen &#x200B;](/help/assets/dynamic-media/image-profiles.md), formaattypes, en kleurenprofielen. Deze uitvoeringen helpen u ervoor te zorgen dat het geselecteerde element voldoet aan de vereisten voor kanalen en ontwerpen zonder dat handmatig bewerken of het dupliceren van middelen vereist is.
 
 U kunt de opties Dynamische media ook toepassen om aanpassingen in real-time voor te vertonen voordat u de vertoning op het Express-canvas plaatst, zodat u sneller de meest geschikte vertoning kunt selecteren en tegelijkertijd de consistentie en kwaliteit van de elementen behoudt.
 
-Klik het ![ pictogram van Info ](assets/info-icon.svg) pictogram op de activakaart en selecteer het **[!UICONTROL Dynamic Media]** lusje om de beschikbare vertoningen voor een activa te bekijken. U kunt selecteren om [ Dynamische Media Scene7 ](/help/assets/dynamic-media/dynamic-media.md) vertoningen of [ Dynamische Media met OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) vertoningen te bekijken. Wanneer u **[!UICONTROL OpenAPI]** selecteert voor een element, worden de beschikbare uitvoeringen alleen weergegeven als het element is goedgekeurd en beschikbaar is voor Dynamic Media met OpenAPI.
+Klik het ![&#x200B; pictogram van Info &#x200B;](assets/info-icon.svg) pictogram op de activakaart en selecteer het **[!UICONTROL Dynamic Media]** lusje om de beschikbare vertoningen voor een activa te bekijken. U kunt selecteren om [&#x200B; Dynamische Media Scene7 &#x200B;](/help/assets/dynamic-media/dynamic-media.md) vertoningen of [&#x200B; Dynamische Media met OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) vertoningen te bekijken. Wanneer u **[!UICONTROL OpenAPI]** selecteert voor een element, worden de beschikbare uitvoeringen alleen weergegeven als het element is goedgekeurd en beschikbaar is voor Dynamic Media met OpenAPI.
 
 U moet een geldige AEM Dynamic Media-licentie hebben om het tabblad Dynamische media weer te geven.
 
-![ de Dynamische vertoningen van Media van de Mening Dynamische ](assets/native-express-dynamic-media.png)
+![&#x200B; de Dynamische vertoningen van Media van de Mening Dynamische &#x200B;](assets/native-express-dynamic-media.png)
 
-Klik het ![ pictogram van de voorproef ](assets/do-not-localize/preview-icon.svg) pictogram aan voorproef de vertoning of klik de vertoningsnaam om hen automatisch op het canvas te plaatsen. U kunt ook een voorvertoning van de vertoning weergeven en deze vervolgens slepen en neerzetten om de afbeelding op het canvas te plaatsen.
+Klik het ![&#x200B; pictogram van de voorproef &#x200B;](assets/do-not-localize/preview-icon.svg) pictogram aan voorproef de vertoning of klik de vertoningsnaam om hen automatisch op het canvas te plaatsen. U kunt ook een voorvertoning van de vertoning weergeven en deze vervolgens slepen en neerzetten om de afbeelding op het canvas te plaatsen.
 
-![ de Dynamische vertoningen van Media van de Voorproef ](assets/native-express-dynamic-media-preview.png)
+![&#x200B; de Dynamische vertoningen van Media van de Voorproef &#x200B;](assets/native-express-dynamic-media-preview.png)
 
-Klik op **[!UICONTROL Add Modifiers]**, geef een modifier op in het tekstvak en druk op Enter om de transformatie in real-time toe te passen op de uitvoeringen. Op dezelfde manier kunt u meerdere modifiers toevoegen aan een uitvoering en een voorvertoning van die transformaties weergeven. Sleep het element van de voorvertoning naar het canvas. De vertoning na het toepassen van deze modifiers wordt niet opgeslagen. Zie de lijst van gesteunde bepalingen voor [ Dynamische Media Scene7 ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) en [ Dynamische Media met OpenAPI ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Klik op **[!UICONTROL Add Modifiers]**, geef een modifier op in het tekstvak en druk op Enter om de transformatie in real-time toe te passen op de uitvoeringen. Op dezelfde manier kunt u meerdere modifiers toevoegen aan een uitvoering en een voorvertoning van die transformaties weergeven. Sleep het element van de voorvertoning naar het canvas. De vertoning na het toepassen van deze modifiers wordt niet opgeslagen. Zie de lijst van gesteunde bepalingen voor [&#x200B; Dynamische Media Scene7 &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) en [&#x200B; Dynamische Media met OpenAPI &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -165,9 +165,9 @@ Klik op **[!UICONTROL Add Modifiers]**, geef een modifier op in het tekstvak en 
 
 Content Advisor biedt toegang tot de eigenschappen van middelen die in AEM Assets zijn gedefinieerd, inclusief metagegevens die beschikbaar zijn in de Assets-weergave. Content Advisor gebruikt dezelfde configuratie van metagegevens als in Assets View, waarbij de lijst met tabbladen voor metagegevens en de inhoud wordt herhaald in de pagina met informatie over elementen in de Assets-weergave. Op deze manier kunt u belangrijke gegevens over elementen, zoals titel, beschrijving, indeling, grootte en andere metagegevens, controleren voordat u een element selecteert. Toegang tot de eigenschappen van elementen zorgt ervoor dat u het juiste en goedgekeurde middel voor uw inhoud kiest.
 
-![ de meningsmeta-gegevens van Assets in de Adviseur van de Inhoud ](assets/native-express-asset-metadata.png)
+![&#x200B; de meningsmeta-gegevens van Assets in de Adviseur van de Inhoud &#x200B;](assets/native-express-asset-metadata.png)
 
-Klik het ![ pictogram van Info ](assets/info-icon.svg) pictogram op de activakaart en selecteer het **[!UICONTROL Basic]** lusje om activa meta-gegevens te bekijken. U kunt ook andere tabbladen met metagegevens over elementen, zoals Product, Campagne en Tags, weergeven, in overeenstemming met de metagegevens over elementen die in de Assets-weergave worden weergegeven.
+Klik het ![&#x200B; pictogram van Info &#x200B;](assets/info-icon.svg) pictogram op de activakaart en selecteer het **[!UICONTROL Basic]** lusje om activa meta-gegevens te bekijken. U kunt ook andere tabbladen met metagegevens over elementen, zoals Product, Campagne en Tags, weergeven, in overeenstemming met de metagegevens over elementen die in de Assets-weergave worden weergegeven.
 
 In Content Advisor worden eigenschappen (metagegevens) voor bestanden in een alleen-lezen weergave weergegeven. De eigenschappen worden niet weergegeven voor verzamelingen en mappen.
 
@@ -189,9 +189,9 @@ U slaat de veelgebruikte zoekopdracht op met Content Advisor:
 
 1. Klik het filterpictogram > **beheert bewaarde onderzoeken** > **creeer nieuw Bewaarde Onderzoek**.
 
-1. Specificeer de naam van het onderzoek en klik ![ pictogram van Info ](assets/do-not-localize/checkmark-icon.svg) om het te bewaren. De zoekopdracht wordt weergegeven in de lijst met items.
+1. Specificeer de naam van het onderzoek en klik ![&#x200B; pictogram van Info &#x200B;](assets/do-not-localize/checkmark-icon.svg) om het te bewaren. De zoekopdracht wordt weergegeven in de lijst met items.
 
-   ![ Opgeslagen Adviseur van de Inhoud van Zoekopdrachten ](assets/native-express-saved-searches.png)
+   ![&#x200B; Opgeslagen Adviseur van de Inhoud van Zoekopdrachten &#x200B;](assets/native-express-saved-searches.png)
 
 Als u een van de opgeslagen zoekopdrachten wilt toepassen, klikt u op het pictogram met filters, selecteert u het zoekitem in de vervolgkeuzelijst **[!UICONTROL Saved Searches]** en klikt u op **[!UICONTROL Apply]** .
 
@@ -213,9 +213,9 @@ Bovendien kunt u de toegevoegde afbeeldingen vervangen met **[!UICONTROL AEM Upl
 
 1. Selecteer de afbeelding die u wilt vervangen. Klik op **[!UICONTROL Replace]** en selecteer **[!UICONTROL AEM Assets]** onder verschillende andere opties.
 
-   ![ AEM vervangt ](assets/aem-replace.png)
+   ![&#x200B; AEM vervangt &#x200B;](assets/aem-replace.png)
 
-1. [ Adviseur van de Inhoud ](#intelligent-asset-discovery-content-advisor) opent in de linkernavigatieruit. In Adobe Express wordt de lijst met opslagplaatsen weergegeven die u kunt openen, samen met de lijst met elementen en mappen die beschikbaar zijn op hoofdniveau. Selecteer een element om een voorvertoning van de vervanging op het canvas weer te geven en klik vervolgens op **[!UICONTROL Replace]** om te bevestigen.
+1. [&#x200B; Adviseur van de Inhoud &#x200B;](#intelligent-asset-discovery-content-advisor) opent in de linkernavigatieruit. In Adobe Express wordt de lijst met opslagplaatsen weergegeven die u kunt openen, samen met de lijst met elementen en mappen die beschikbaar zijn op hoofdniveau. Selecteer een element om een voorvertoning van de vervanging op het canvas weer te geven en klik vervolgens op **[!UICONTROL Replace]** om te bevestigen.
 
    >[!NOTE]
    >
@@ -227,7 +227,7 @@ Nadat u de gewenste wijzigingen hebt aangebracht in het Express-canvas, kunt u h
 
 1. Klik op **[!UICONTROL Share]** om het dialoogvenster **[!UICONTROL Share]** te openen.
 
-   ![ sparen activa in AEM ](assets/adobe-express-share.png)
+   ![&#x200B; sparen activa in AEM &#x200B;](assets/adobe-express-share.png)
 
 2. Selecteer **AEM Assets**. Adobe Express geeft het dialoogvenster voor uploaden weer.
 
@@ -236,7 +236,7 @@ Het selecteren van **Huidige Pagina** slaat de activa op uw huidige pagina aan u
 
 4. Klik het omslagpictogram onder **Omslag van de Bestemming** om een plaats te selecteren en de activa te bewaren.
 
-   ![ sparen activa in AEM ](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![&#x200B; sparen activa in AEM &#x200B;](/help/assets/assets/page-selection-and-destination-folder.png)
 
 5. Facultatief: U kunt campagnemetagegevens voor uw toevoegen gebruikend het **project of campagnenaam** gebied. U kunt een bestaande naam gebruiken of een nieuwe naam maken. U kunt meerdere project- of campagnenamen definiëren voor het uploaden. Als u de naam wilt registreren, typt u gewoon de naam en klikt u op Enter.
 Het wordt aanbevolen dat Adobe waarden opgeeft in de rest van de velden en een verbeterde zoekervaring maakt voor uw geüploade elementen.
@@ -251,7 +251,7 @@ Het wordt aanbevolen dat Adobe waarden opgeeft in de rest van de velden en een v
 
 ## Ondersteunde bestandsindelingen {#supported-file-formats-import-assets}
 
-Adobe Express steunt nationaal de formaten beschikbaar bij [ Overzicht de minimumbeeldvereisten ](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets ondersteunt echter de volgende indelingstypen:
+Adobe Express steunt nationaal de formaten beschikbaar bij [&#x200B; Overzicht de minimumbeeldvereisten &#x200B;](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets ondersteunt echter de volgende indelingstypen:
 
 | Ondersteunde indeling | Max. afmetingen/resolutie | Max. bestandsgrootte |
 |------------------|---------------------------------------------|---------------|
