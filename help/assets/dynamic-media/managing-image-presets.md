@@ -61,7 +61,7 @@ Met voorinstellingen voor afbeeldingen wordt gedefinieerd hoe Dynamic Media afbe
 
 ### Vertoning genereren in AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-In AEM as a Cloud Service, worden de vertoningen geproduceerd gebruikend [&#x200B; Microservices van Activa &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). De DAM Update Asset-workflow is niet beschikbaar voor aanpassing in Cloud Service.
+In AEM as a Cloud Service, worden de vertoningen geproduceerd gebruikend [&#x200B; Microservices van Activa &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). De DAM Update Asset-workflow is niet beschikbaar voor aanpassing in Cloud Service.
 
 Belangrijke overwegingen zijn onder andere:
 
@@ -73,7 +73,7 @@ Voorinstellingen voor afbeeldingen verwijzen naar beschikbare uitvoeringen op he
 
 **om te controleren welke vertoningen worden geproduceerd:**
 
-1. Creeer of geef a [&#x200B; het Profiel van de Verwerking &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) uit.
+1. Creeer of geef a [&#x200B; het Profiel van de Verwerking &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) uit.
 2. Configureer de vereiste vertoningsdefinities.
 3. Pas het verwerkingsprofiel toe op de juiste map.
 
@@ -327,7 +327,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     </ul>
     <div>
       Verscherpen wordt beschreven in
-     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media"> Gebruikend Beeld dat met Experience Manager Dynamische Media </a> video verscherpt, in <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files"> het verscherpen van een beeld </a> online Help onderwerp, en in <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf"> Beste praktijken voor het verscherpen van beelden in Dynamic Media Classic </a> downloadbare PDF.
+     <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media"> Gebruikend Beeld dat met Experience Manager Dynamische Media </a> video verscherpt, in <a href="https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files"> het verscherpen van een beeld </a> online Help onderwerp, en in <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=nl-NL"> Beste praktijken voor het verscherpen van beelden in Dynamic Media Classic </a> downloadbare PDF.
     </div> </td>
   </tr>
   <tr>
@@ -347,7 +347,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
   </tr>
   <tr>
    <td><strong>Afbeelding wijzigen</strong></td>
-   <td><p>Buiten de gemeenschappelijke beeldmontages beschikbaar in UI, steunt de Dynamische Media talrijke geavanceerde beeldwijzigingen die u in het <strong> gebied van de Modifiers van het Beeld </strong> kunt specificeren. Deze parameters worden bepaald in de <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview"> het bevelverwijzing van het Protocol van de Server van het Beeld </a>.</p> <p>Belangrijk: de volgende functionaliteit die in de API wordt vermeld, wordt niet ondersteund:</p>
+   <td><p>Buiten de gemeenschappelijke beeldmontages beschikbaar in UI, steunt de Dynamische Media talrijke geavanceerde beeldwijzigingen die u in het <strong> gebied van de Modifiers van het Beeld </strong> kunt specificeren. Deze parameters worden bepaald in de <a href="https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview"> het bevelverwijzing van het Protocol van de Server van het Beeld </a>.</p> <p>Belangrijk: de volgende functionaliteit die in de API wordt vermeld, wordt niet ondersteund:</p>
     <ul>
      <li>Standaardopdrachten voor sjablonen en tekstrendering: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> en <code>textPs=</code></li>
      <li>Localisatie-opdrachten: <code>locale=</code> en <code>req=xlate</code></li>
@@ -364,7 +364,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 
 ## Voorinstellingsopties voor afbeeldingen definiëren met afbeeldingsopties {#defining-image-preset-options-with-image-modifiers}
 
-Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook afbeeldingsopties definiëren waarmee u meer opties hebt bij het definiëren van voorinstellingen voor afbeeldingen. Het beeld dat op het Dynamische Beeld teruggeeft van Media baseert API en in detail in de [&#x200B; Verwijzing van het Protocol van HTTP &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api) wordt bepaald.
+Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook afbeeldingsopties definiëren waarmee u meer opties hebt bij het definiëren van voorinstellingen voor afbeeldingen. Het beeld dat op het Dynamische Beeld teruggeeft van Media baseert API en in detail in de [&#x200B; Verwijzing van het Protocol van HTTP &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api) wordt bepaald.
 
 Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoetsen voor afbeeldingen.
 
@@ -372,7 +372,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 >
 >Sommige beeldbepalingen [&#x200B; kunnen niet in Experience Manager &#x200B;](#advanced-tab-options) worden gebruikt.
 
-* [&#x200B; op_invert &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - keert elke kleurencomponent voor een negatief beeldeffect om.
+* [&#x200B; op_invert &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - keert elke kleurencomponent voor een negatief beeldeffect om.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -380,7 +380,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
   ![&#x200B; 6_5_imagepreset-edit-invert &#x200B;](assets/6_5_imagepreset-edit-invert.png)
 
-* [&#x200B; op_blur &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - past een vervagend filter op het beeld toe.
+* [&#x200B; op_blur &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - past een vervagend filter op het beeld toe.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -396,7 +396,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
   ![&#x200B; chlimage_1-80 &#x200B;](assets/chlimage_1-501.png)
 
-* [&#x200B; op_brightness &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - vermindert of verhoogt de helderheid.
+* [&#x200B; op_brightness &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - vermindert of verhoogt de helderheid.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -404,7 +404,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
   ![&#x200B; 6_5_imagepreset-geef-helderheid uit &#x200B;](assets/6_5_imagepreset-edit-brightness.png)
 
-* [&#x200B; opac &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - Past beelddekking aan. Hiermee kunt u de dekking van de voorgrond verlagen.
+* [&#x200B; opac &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - Past beelddekking aan. Hiermee kunt u de dekking van de voorgrond verlagen.
 
   ```xml {.line-numbers}
   opac=29

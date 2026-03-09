@@ -17,4 +17,4 @@ ht-degree: 0%
 
 Met ingang van 31 januari 2014 is het DHTML-viewerplatform officieel levenseinde.
 
-Zie de [&#x200B; Dynamische Gids van de Verwijzing van de Kijkers van Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) voor de recentste gesteunde kijkers.
+Zie de [&#x200B; Dynamische Gids van de Verwijzing van de Kijkers van Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=nl-NL) voor de recentste gesteunde kijkers.

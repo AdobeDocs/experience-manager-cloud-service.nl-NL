@@ -125,7 +125,7 @@ Als u [&#x200B; gevormde Dynamische Media &#x200B;](/help/assets/dynamic-media/c
 
 Zie ook:
 
-* [&#x200B; Videozelfstudie op hoe te om CC Gesloten Bijschrift aan Dynamische video van Media toe te voegen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
+* [&#x200B; Videozelfstudie op hoe te om CC Gesloten Bijschrift aan Dynamische video van Media toe te voegen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=nl-NL#add-cc-closed-captioning-to-dynamic-media-video)
 * [Dynamische media-video&#39;s publiceren naar YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 In de volgende afbeelding geeft de URL het bijschriftgedeelte weer dat naar de transcriptie (.vtt-bestand) verwijst. De video weerspiegelt de gesproken taal (getranscripte tekst) als een **[!UICONTROL Closed Caption]** op het opgegeven tijdstempel in de video. De gebruiker kan het bijschrift in- of uitschakelen met de knop **[!UICONTROL CC]** .

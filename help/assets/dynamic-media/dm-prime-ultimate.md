@@ -55,8 +55,8 @@ Naast de Dynamic Media Prime-functies, zoals AEM Assets-integratie met Adobe- of
 * [&#x200B; Dynamische oplossing van Media in AEM as a Cloud Service &#x200B;](/help/assets/dynamic-media/dynamic-media.md), die ook de volgende belangrijkste mogelijkheden omvat:
 
    * [Dynamische mediasjablonen](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [&#x200B; Grondbeginselen van het Malplaatje &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [&#x200B; Visuele Configuratie &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [&#x200B; Grondbeginselen van het Malplaatje &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [&#x200B; Visuele Configuratie &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Vereisten {#pre-requisites-dm-ultimate}
 

@@ -207,8 +207,8 @@ U kunt de volgende instellingen voor dynamische media bewerken door **[!UICONTRO
 
   Met vieweropties kunt u bijvoorbeeld het volgende doen:
 
-   * Koppel een bijschriftdossier met een video: [&#x200B; titel &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Koppel een navigatiedossier met een video: [&#x200B; navigatie &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Koppel een bijschriftdossier met een video: [&#x200B; titel &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=nl-NL)
+   * Koppel een navigatiedossier met een video: [&#x200B; navigatie &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=nl-NL)
 
      U kunt de volgende geavanceerde instellingen bewerken door **[!UICONTROL Edit]** te selecteren in de component.
 
@@ -222,7 +222,7 @@ U kunt de volgende instellingen voor dynamische media bewerken door **[!UICONTRO
 
 Met de component Dynamische media kunt u SmartCrop-afbeeldingselementen toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
 
-Zie [&#x200B; Slim Uitsnijden van het Gebruik met de Dynamische Media van Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
+Zie [&#x200B; Slim Uitsnijden van het Gebruik met de Dynamische Media van Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html?lang=nl-NL)
 
 Zie ook [&#x200B; Profielen van het Beeld &#x200B;](/help/assets/dynamic-media/image-profiles.md).
 
@@ -357,9 +357,9 @@ Zie [&#x200B; HTTP2 Levering van Inhoud &#x200B;](/help/assets/dynamic-media/htt
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Gebruik de Videospeler in Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
->* [&#x200B; Interactieve Video van het Gebruik met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
->* [&#x200B; Begrijp de Kijker van Activa met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
->* [&#x200B; de Videominiatuur van de Douane van het Gebruik met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
->* [&#x200B; Begrijp het Beheer van de Kleur met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
->* [&#x200B; Beeld van het Gebruik het Verscherpen met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)
+>* [&#x200B; Gebruik de Videospeler in Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html?lang=nl-NL)
+>* [&#x200B; Interactieve Video van het Gebruik met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html?lang=nl-NL)
+>* [&#x200B; Begrijp de Kijker van Activa met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html?lang=nl-NL)
+>* [&#x200B; de Videominiatuur van de Douane van het Gebruik met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html?lang=nl-NL)
+>* [&#x200B; Begrijp het Beheer van de Kleur met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html?lang=nl-NL#dynamic-media)
+>* [&#x200B; Beeld van het Gebruik het Verscherpen met de Dynamische Media van Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html?lang=nl-NL)

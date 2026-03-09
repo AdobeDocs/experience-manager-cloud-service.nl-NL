@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html?lang=en) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met [!DNL Adobe Experience Manager Assets] kunt u elementen uitchecken en deze opnieuw inchecken nadat u alle wijzigingen hebt aangebracht. Nadat u een element hebt uitgecheckt, kunt u het element alleen bewerken, annoteren, publiceren, verplaatsen of verwijderen. Als u een element uitcheckt, vergrendelt u het element. Andere gebruikers kunnen geen van deze bewerkingen op het element uitvoeren totdat u het element weer incheckt bij [!DNL Assets] . Ze kunnen echter wel de metagegevens van het vergrendelde element wijzigen.
@@ -80,5 +80,5 @@ Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheck
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Begrijp controle binnen en controle in  [!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [&#x200B; Videozelfstudie om controle binnen te begrijpen en uit te checken  [!DNL Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [&#x200B; Begrijp controle binnen en controle in  [!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#how-app-works2)
+>* [&#x200B; Videozelfstudie om controle binnen te begrijpen en uit te checken  [!DNL Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html?lang=nl-NL)

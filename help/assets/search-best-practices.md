@@ -269,7 +269,7 @@ U gaat naar de verzameling elementen met vergelijkbare kleuren en metagegevens.
 
 ## Aangepaste zoekfacetten {#custom-search-facets}
 
-Met zoekfacetten in Adobe Experience Manager kunt u op meerdere manieren zoeken naar elementen in plaats van in één, vooraf bepaalde of taxonomische volgorde. U kunt zoekfacetten aanpassen en voorspelden toevoegen naar wens. Lees [&#x200B; Facetten van het Onderzoek &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) voor de geleidelijke gids over het toevoegen van een douane predikaat.
+Met zoekfacetten in Adobe Experience Manager kunt u op meerdere manieren zoeken naar elementen in plaats van in één, vooraf bepaalde of taxonomische volgorde. U kunt zoekfacetten aanpassen en voorspelden toevoegen naar wens. Lees [&#x200B; Facetten van het Onderzoek &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL#) voor de geleidelijke gids over het toevoegen van een douane predikaat.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -317,7 +317,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> Aangepaste facetten </td>
-        <td> U kunt <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en"> facetten van het douaneonderzoek toevoegen zoals door het vereiste.</td>
+        <td> U kunt <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL"> facetten van het douaneonderzoek toevoegen zoals door het vereiste.</td>
         <td> De aangepaste facetten worden gedeeltelijk ondersteund in de Assets-weergave. De ondersteunde facetten zijn:
             <ul>
             <li> Voorspelde labels
@@ -431,5 +431,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [Assets doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
->* [Facetten doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)
+>* [Assets doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=nl-NL)
+>* [Facetten doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL)

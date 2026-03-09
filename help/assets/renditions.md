@@ -50,7 +50,7 @@ Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimal
    * [Voorinstellingen voor afbeeldingen](/help/assets/dynamic-media/managing-image-presets.md)
 
   U kunt [&#x200B; schakelaar de mening &#x200B;](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later aan voorproef dynamische vertoningen in de mening van Assets.
-* Publiceer elementen naar Dynamic Media om dynamische media-uitvoeringen beschikbaar te maken in de Assets-weergave. Voor meer informatie, zie [&#x200B; publiceren Assets aan AEM en Dynamische Media &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publiceer elementen naar Dynamic Media om dynamische media-uitvoeringen beschikbaar te maken in de Assets-weergave. Voor meer informatie, zie [&#x200B; publiceren Assets aan AEM en Dynamische Media &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Dynamische media-uitvoeringen weergeven en downloaden {#view-download-dm-renditions}
