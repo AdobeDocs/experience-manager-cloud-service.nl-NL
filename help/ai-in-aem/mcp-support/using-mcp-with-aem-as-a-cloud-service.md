@@ -4,9 +4,9 @@ description: Leer hoe u het modelcontextprotocol met AEM as a Cloud Service kunt
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 5cbe2ae5afd6b6052f486cccc245fbc14e9569aa
+source-git-commit: 8b77b992171623dcf7b065079d72992a5da3a01d
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '1757'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Veel Adobe Experience Manager (AEM)-teams werken nu in Integrated Development Environment (IDE&#39;s) en chattoepassingen zoals Cursor, ChatGPT, Anthropic Claude en Microsoft Copilot Studio. Deze toepassingen steunen het ModelProtocol van de Context (MCP), dat toepassingen toestaat om achterste-eindhulpmiddelen aan grote taalmodellen (LLMs) op een gestandaardiseerde manier bloot te stellen.
+Veel Adobe Experience Manager (AEM)-teams werken nu in Integrated Development Environment (IDE&#39;s) en chattoepassingen zoals Cursor, OpenAI ChatGPT, Anthropic Claude en Microsoft Copilot Studio. Deze toepassingen steunen het ModelProtocol van de Context (MCP), dat toepassingen toestaat om achterste-eindhulpmiddelen aan grote taalmodellen (LLMs) op een gestandaardiseerde manier bloot te stellen.
 
 Met AEM MCP-integratie kunnen verschillende personen samenwerken rond dezelfde inhoud:
 
@@ -24,14 +24,14 @@ Met AEM MCP-integratie kunnen verschillende personen samenwerken rond dezelfde i
 
 >[!IMPORTANT]
 >
-> Voor scenario&#39;s die inhoud wijzigen of schrappen, zouden de artsen de AI Hulpinterface eerder moeten gebruiken dan direct het aanhalen van hulpmiddelen MCP, omdat de Agenten van AEM die door AI Medewerker worden in werking gesteld ingebouwde waarborgen omvatten.
+> Voor scenario&#39;s die inhoud wijzigen of schrappen, zouden de artsen de AI Hulp interface eerder moeten gebruiken dan direct het aanhalen van hulpmiddelen MCP. De AEM Agents die door AI Assistant worden uitgevoerd, bevatten ingebouwde beveiligingsinstellingen.
 >
 
 Dit artikel verklaart welke functionaliteit AEM MCP verstrekt, welke toepassingen MCP worden gesteund, hoe te om het te vormen, en hoe te om het in de praktijk te gebruiken.
 
 ## Waarom MCP nuttig is voor klanten van AEM {#why-mcp-is-useful-for-aem-customers}
 
-Moderne winde en praatjetoepassingen gebruiken MCP als manier voor een LLM om hulpmiddelen te roepen die achter servers MCP worden blootgesteld. In plaats van het schrijven van code tegen laag-vlakke API specificaties, kunnen de klanten hun intent in natuurlijke taal (*&quot;bijwerken de heldenbanner voor deze campagne over alle pagina&#39;s&quot;*) en LLM laten aanhalen de aangewezen hulpmiddelen MCP, die beurtelings met AEM APIs in wisselwerking staan.
+Moderne winde en praatjetoepassingen gebruiken MCP als manier voor een LLM om hulpmiddelen te roepen die achter servers MCP worden blootgesteld. Klanten kunnen hun intentie in natuurlijke taal beschrijven in plaats van code te schrijven tegen API-specificaties op laag niveau. Bijvoorbeeld, laat een herinnering zoals *&quot;de heldenbanner voor deze campagne over alle pagina&#39;s&quot;bijwerken* LLM de aangewezen hulpmiddelen aanhalen MCP, die dan met AEM APIs in wisselwerking staan.
 
 Belangrijkste voordelen zijn:
 
@@ -54,24 +54,41 @@ AEM stelt MCP-servers beschikbaar als HTTP-eindpunten. De hieronder vermelde ein
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **Inhoud** | `/content` | Alle inhoudsbewerkingen op laag niveau, inclusief maken, lezen, bijwerken en verwijderen (CRUD) voor pagina&#39;s, fragmenten en elementen. |
 | **Inhoud (read-only)** | `/content-readonly` | Alleen-lezen inhoudsbewerkingen (Ophalen, Lijst/Zoeken) voor pagina&#39;s, fragmenten en elementen. |
-| **Cloud Manager** | `/cloudmanager` | Cloud Manager-entiteiten beheren, waaronder programma&#39;s, omgevingen, opslagruimten en pijpleidingen, die ook kunnen worden geactiveerd. <br><br>*Deze Server MCP is nu in **bèta**; om toegang, e-mail [&#x200B; aemcs-mcp-feedback@adobe.com &#x200B;](mailto:aemcs-mcp-feedback@adobe.com) met een beschrijving van uw gebruiksgeval te verzoeken.* |
+| **Cloud Manager** | `/cloudmanager` | Cloud Manager-entiteiten beheren, waaronder programma&#39;s, omgevingen, opslagruimten en pijpleidingen, die ook kunnen worden geactiveerd. <br><br>*Deze server MCP is nu in **bèta**; om toegang, e-mail [ aemcs-mcp-feedback@adobe.com ](mailto:aemcs-mcp-feedback@adobe.com) met een beschrijving van uw gebruiksgeval te verzoeken.* |
 
 De specifieke hulpmiddelen die door elke server MCP worden blootgesteld kunnen in tijd evolueren. In de praktijk kunt u uw MCP-Toegelaten toepassing vragen om hulpmiddelen via een herinnering zoals te ontdekken:
 
-*&quot;maak een lijst van alle hulpmiddelen MCP van AEM beschikbaar bij deze server en beschrijf wat zij doen.&quot;*
+```
+"List all AEM MCP tools available from this server and describe what they do."
+```
 
-De cliënt MCP zal het protocol gebruiken MCP om de hulpmiddellijst en schema&#39;s terug te winnen, die LLM dan kan gebruiken.
+De cliënt MCP gebruikt het protocol MCP om de hulpmiddellijst en schema&#39;s terug te winnen, die LLM dan kan gebruiken.
 
 ## Ondersteunde MCP-toepassingen {#supported-mcp-applications}
 
-AEM MCP-servers zijn ontworpen voor gebruik met een gedefinieerde set MCP-compatibele toepassingen. De volgende toepassingen worden ondersteund:
+AEM MCP-servers zijn ontworpen voor gebruik met een gedefinieerde set MCP-compatibele toepassingen. Elke toepassing biedt een eigen configuratievenis, maar de stappen op hoog niveau zijn vergelijkbaar.
+
+### Chattoepassingen (web en bureaublad) {#chat-applications}
 
 * Anthropic Claude
-* Cursor
 * OpenAI ChatGPT
-* Microsoft Copilot Studio
 
-Elke toepassing biedt een eigen configuratievenis, maar de stappen op hoog niveau zijn vergelijkbaar.
+### Gereedschappen voor ontwikkelaars (IDE-extensies, bureaubladtoepassingen, CLI&#39;s) {#developer-tools}
+
+* Anthropic Claude Code (CLI, JetBrains, VS Code, Cursor)
+* Augment Code (CLI, JetBrains, VS Code, Cursor)
+* Augment Indent Desktop App
+* Cline (JetBrains, VS Code, Cursor)
+* Cursor
+* GitHub Copilot (VS Code)
+* Kiro (Desktop App, CLI)
+* OpenAI Codex (Desktop App)
+* OpenAI Codex CLI
+* Windsurf
+
+### Enterprise-platforms {#enterprise-platforms}
+
+* Microsoft Copilot Studio
 
 ## Overzicht van setup {#setup-overview}
 
@@ -82,20 +99,29 @@ Het vormen MCP voor AEM impliceert twee belangrijkste delen:
 
 ### AEM-configuratie {#aem-configuration}
 
-Standaard wordt de toegang tot AEM MCP-servers bepaald door de machtigingen die afzonderlijke gebruikers in AEM hebben. Wanneer een gebruiker door een MCP cliënttoepassing voor authentiek verklaart, dwingen de hulpmiddelen MCP de zelfde toegangsregels zoals handverrichtingen in AEM af. Een gebruiker kan alleen handelingen uitvoeren die al zijn geautoriseerd om uit te voeren.
+De rechten die individuele gebruikers in AEM hebben, zijn standaard van toepassing op de toegang tot AEM MCP-servers. Wanneer een gebruiker door een MCP cliënttoepassing voor authentiek verklaart, dwingen de hulpmiddelen MCP de zelfde toegangsregels zoals handverrichtingen in AEM af. Een gebruiker kan alleen handelingen uitvoeren die al zijn geautoriseerd om uit te voeren.
 
 #### Toegestane MCP-clienttoepassingen {#permitted-mcp-client-applications}
 
 De volgende MCP cliënttoepassingen worden toegelaten door gebrek:
 
-* ChatGPT
-* Claude
-* MS Copilot Studio
+* Anthropic Claude
+* Anthropic Claude Code
+* Augmentcode
+* Augment Indent
+* Cline
 * Cursor
+* GitHub Copilot
+* Kiro
+* Microsoft Copilot Studio
+* OpenAI ChatGPT
+* OpenAI Codex
+* OpenAI Codex CLI
+* Windsurf
 
 #### MCP-servers beperken {#restricting-mcp-servers}
 
-Alle servers MCP worden gevoegd op lijst van gewenste personen door gebrek. Als beheerder, hebt u de optie om toegang tot specifieke servers MCP op de organisatie, het programma, of het milieuniveau te beperken. Dit geeft u korrelige controle over welke mogelijkheden MCP aan gebruikers binnen uw organisatie beschikbaar zijn.
+Alle servers MCP worden gevoegd op lijst van gewenste personen door gebrek. Als beheerder, hebt u de optie om toegang tot specifieke servers MCP op de organisatie, het programma, of het milieuniveau te beperken. Deze beperking geeft u korrelige controle over welke mogelijkheden MCP aan gebruikers binnen uw organisatie beschikbaar zijn.
 
 #### De Toegang van de Cliënt MCP beheren {#managing-mcp-client-access}
 
@@ -105,110 +131,40 @@ Voor alle MCP server verwante verzoeken, voel vrij om ons in **aemcs-mcp-feedbac
 
 ### Configuratie van MCP-clienttoepassing {#mcp-client-application-configuration}
 
-Deze stap wordt uitgevoerd door elke gebruiker (of door een beheerder van de MCP cliënttoepassing, waar gesteund). De details van de configuratie variëren lichtjes tussen toepassingen. De cliënten MCP evolueren snel, en de steun voor verre servers MCP wordt actief ontwikkeld. Mogelijk moet u de ontwikkelaarsmodus inschakelen voor toegang tot de functionaliteit voor het toevoegen van externe servers, maar het algemene proces is:
+Elke gebruiker voert deze stap uit, of een beheerder van de MCP cliënttoepassing kan het uitvoeren waar gesteund. De details van de configuratie variëren lichtjes tussen toepassingen. De cliënten MCP evolueren snel, en de steun voor verre servers MCP wordt actief ontwikkeld. Mogelijk moet u de ontwikkelaarsmodus inschakelen voor toegang tot de functionaliteit voor het toevoegen van externe servers, maar het algemene proces is:
 
-1. De URL(s) van de AEM MCP-server toevoegen
-   * Vorm het MCP eindpunt (s) van de lijst hierboven. Bijvoorbeeld:`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
+1. Een of meer URL&#39;s van AEM MCP-servers toevoegen
+   * Vorm één of meerdere eindpunten MCP van de lijst hierboven. Bijvoorbeeld:`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
 1. De verbinding activeren
    * Sla de configuratie op of activeer de configuratie zodat de MCP-clienttoepassing verbinding probeert te maken met de AEM MCP-server
 1. Aanmelden met Adobe ID
    * Voltooi desgevraagd de Adobe-aanmeldstroom, zodat de toepassing OAuth-tokens kan ophalen die aan uw Adobe ID zijn gekoppeld
 1. Onontdekte gereedschappen controleren
-   * Zodra voor authentiek verklaard, zal de toepassing hulpmiddelen MCP van de server ontdekken. Vervolgens kunt u de LLM vragen om AEM-bewerkingen uit te voeren.
+   * Zodra voor authentiek verklaard, ontdekt de toepassing hulpmiddelen MCP van de server. Vervolgens kunt u de LLM vragen om AEM-bewerkingen uit te voeren.
 
-Hieronder ziet u voorbeelden van hoe dit er in elke ondersteunde toepassing op een hoog niveau uitziet.
+Hieronder vindt u stapsgewijze hulplijnen voor elke ondersteunde toepassing:
 
-### ChatGPT {#chatgpt}
+#### Chattoepassingen (web en bureaublad) {#setup-chat-applications}
 
-![&#x200B; vorm ChatGPT - Montages &#x200B;](assets/chatgpt-1.png)
+* [Anthropic Claude](setup-claude.md)
+* [OpenAI ChatGPT](setup-chatgpt.md)
 
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - Geavanceerde Montages &#x200B;](assets/chatgpt-2.png)
+#### Gereedschappen voor ontwikkelaars (IDE-extensies, bureaubladtoepassingen, CLI&#39;s) {#setup-developer-tools}
 
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - de wijze van de Ontwikkelaar &#x200B;](assets/chatgpt-3.png)
+* Anthropic Claude Code (CLI, JetBrains, VS Code, Cursor)
+* Augment Code (CLI, JetBrains, VS Code, Cursor)
+* Augment Indent Desktop App
+* Cline (JetBrains, VS Code, Cursor)
+* [Cursor](setup-cursor.md)
+* GitHub Copilot (VS Code)
+* Kiro (Desktop App, CLI)
+* OpenAI Codex (Desktop App)
+* OpenAI Codex CLI
+* Windsurf
 
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - creeer app &#x200B;](assets/chatgpt-4.png)
+#### Enterprise-platforms {#setup-enterprise-platforms}
 
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - Nieuwe app &#x200B;](assets/chatgpt-5.png)
-
-![&#x200B; vorm ChatGPT - Apps &amp; Connectors - de Dienst van MCP van de Inhoud van AEM &#x200B;](assets/chatgpt-6.png)
-
-![&#x200B; vorm ChatGPT - vraag de Dienst van MCP van de Inhoud van AEM &#x200B;](assets/chatgpt-7.png)
-
-* Voeg de URL&#39;s van de AEM MCP-server toe in het gebied waar MCP-verbindingen of -gereedschappen zijn geconfigureerd
-* De verbinding activeren en u aanmelden bij uw Adobe ID bij omleiding
-* Verwijs in een praatje, de gevormde hulpmiddelen van AEM in uw herinneringen, bijvoorbeeld:
-
-  *&quot;Gebruikend de gevormde hulpmiddelen van AEM MCP, maak een lijst van alle plaatsen in onze auteursmilieu.&quot;*
-
-### Claude {#claude}
-
-![&#x200B; vorm Claude - Montages &#x200B;](assets/claude-1.png)
-
-![&#x200B; vorm Claude - Schakelaars &#x200B;](assets/claude-2.png)
-
-![&#x200B; vorm Claude - Verbindingen - voeg douaneschakelaar &#x200B;](assets/claude-3.png) toe
-
-![&#x200B; vorm Claude - Verbindingen - verbind douaneschakelaar &#x200B;](assets/claude-4.png)
-
-![&#x200B; vorm Claude - Verbindingen - Vorm douaneschakelaar &#x200B;](assets/claude-5.png)
-
-![&#x200B; vorm Claude - Verbindingen - de toestemmingen van het Aangepast schakelaarhulpmiddel &#x200B;](assets/claude-6.png)
-
-![&#x200B; vorm Claude - vraag de Dienst van MCP van de Inhoud van AEM &#x200B;](assets/claude-7.png)
-
-* Registreer de URL(s) van de AEM MCP-server in de MCP-configuratie van Claude
-* De Adobe-aanmeldstroom voltooien
-* Schakel desgewenst automatische bevestiging in voor bepaalde gereedschappen in het configuratiegebied. Dit wordt aanbevolen voor zoek- of alleen-lezen bewerkingen.
-* Verzeker de server MCP alvorens uw gesprek te beginnen wordt geselecteerd
-* Vraag Claude om AEM-gerelateerde taken uit te voeren; Claude zal AEM-gereedschappen selecteren die door de MCP-server worden weergegeven op basis van uw vraag.
-
-### Cursor {#cursor}
-
-![&#x200B; vorm Cursor - Montages &#x200B;](assets/cursor-1.png)
-
-![&#x200B; vorm Cursor - Hulpmiddelen &amp; MCP - voeg Douane MCP &#x200B;](assets/cursor-2.png) toe
-
-![&#x200B; vorm Cursor - voeg de montages van Aangepast MCP &#x200B;](assets/cursor-3.png) toe
-
-![&#x200B; vorm Cursor - verbind &#x200B;](assets/cursor-4.png)
-
-![&#x200B; vorm Cursor - vraag de nieuwe dienst &#x200B;](assets/cursor-5.png)
-
-* Maak in de MCP-instellingen van de cursor een nieuw MCP-serveritem met de AEM MCP-URL(&#39;s)
-* Verifiëren met uw Adobe ID wanneer hierom wordt gevraagd
-* U kunt desgewenst afzonderlijke gereedschappen in- of uitschakelen door op de naam van het gereedschap te klikken. Alle gereedschappen zijn standaard ingeschakeld.
-* Gebruik de cursoreditor of -chat om AEM-gereedschappen aan te roepen als onderdeel van ontwikkelings- of inhoudsworkflows.
-
-### Microsoft Copilot Studio {#microsoft-copilot-studio}
-
-![&#x200B; vorm Copilot - Agenten &#x200B;](assets/copilot-1.png)
-
-![&#x200B; vorm Copilot - voeg hulpmiddel &#x200B;](assets/copilot-2.png) toe
-
-![&#x200B; vorm Copilot - voeg hulpmiddel toe - modelprotocol van de Context &#x200B;](assets/copilot-3.png)
-
-![&#x200B; vorm Copilot - voeg een modelserver van het Protocol van de Context (voorproef) toe &#x200B;](assets/copilot-4.png)
-
-![&#x200B; vorm Copilot - voeg hulpmiddel toe - creeer nieuwe verbinding &#x200B;](assets/copilot-5.png)
-
-![&#x200B; vorm Copilot - voeg hulpmiddel toe - voeg toe en vorm &#x200B;](assets/copilot-6.png)
-
-![&#x200B; vorm Copilot - voeg hulpmiddel toe - vorm &#x200B;](assets/copilot-7.png)
-
-![&#x200B; vorm Copilot - de verbinding van de Test &#x200B;](assets/copilot-8.png)
-
-![&#x200B; vorm Copilot - beheer Verbindingen &#x200B;](assets/copilot-9.png)
-
-![&#x200B; vorm Copilot - de Agent van de Test &#x200B;](assets/copilot-10.png)
-
-* Een nieuwe agent maken
-* Navigeer aan de hulpmiddelsectie en klik **toevoegen hulpmiddel**
-* Een bestaand gereedschap selecteren of een nieuw gereedschap maken
-* Een nieuw MCP-hulpprogramma configureren dat verwijst naar de URL(s) van de AEM MCP-server
-* Vestig een verbinding, die kan worden gedeeld of tussen agenten worden gewijd
-* Meld u aan met behulp van uw Adobe ID wanneer u omgeleid bent
-* Schakel desgewenst de modus voor automatisch bevestigen in of zorg dat de eindgebruiker dit bevestigt voor alle gereedschapsinteracties
-* Wanneer het testen van uw agent, open eerst de verbindingsmanager om een verbinding aan uw zitting toe te wijzen, dan druk **opnieuw**.
+* [Microsoft Copilot Studio](setup-microsoft-copilot-studio.md)
 
 ## Verificatie {#authentication}
 
@@ -217,12 +173,12 @@ De door Adobe gehoste MCP-servers implementeren OAuth en zijn geïntegreerd met 
 * Wanneer een MCP cliënttoepassing met een server van AEM MCP verbindt, zien de gebruikers een login van Adobe dialoog en voor authentiek verklaren met hun **Adobe ID**
 * Na succesvolle login, verifieert het systeem dat de MCP cliënttoepassing in uw organisatie wordt toegelaten en dat de gevraagde server MCP wordt toegestaan. Als één van beide controle ontbreekt, wordt een foutenmelding getoond.
 
-![&#x200B; MCP Cliënt niet toegelaten fout &#x200B;](assets/MCP-Client-not-permitted.png)
+![ MCP Cliënt niet toegelaten fout ](assets/MCP-Client-not-permitted.png)
 
 * Zodra geverifieerd, geeft de server MCP tekenen uit die de toepassing voor verdere hulpmiddelvraag gebruikt
-* De hulpmiddelen MCP respecteren de toestemmingen van AEM van de gebruiker. Een gebruiker zonder toestemming om een inhoudsfragment in AEM te wijzigen, kan het ook niet via MCP wijzigen.
+* De hulpmiddelen MCP respecteren de toestemmingen van AEM van de gebruiker. Alleen gebruikers die gemachtigd zijn om een inhoudsfragment in AEM te wijzigen, kunnen het wijzigen via MCP.
 
-Dit zorgt ervoor dat AI-ondersteunde bewerkingen voldoen aan uw bestaande AEM-model voor beveiliging en bestuur.
+Deze benadering zorgt ervoor dat AI-ondersteunde bewerkingen voldoen aan uw bestaande AEM-model voor beveiliging en bestuur.
 
 ## MCP gebruiken met AEM {#using-mcp-with-aem}
 
@@ -230,7 +186,7 @@ Zodra AEM en uw MCP cliënttoepassingen worden gevormd, kunt u in uw toepassing 
 
 >[!IMPORTANT]
 >
->Voor beste resultaten, vooral met herinneringen die veelvoudige stappen bevatten of verschillende inhoudstypes zoals beelden en tekst richten, laat een denkmodel toe of selecteer de het Vinden optie in uw cliënt MCP eerder dan het baseren op Auto wijze.
+>Prompts die meerdere stappen bevatten of verschillende inhoudstypen als doel hebben, zoals afbeeldingen en tekst, werken het beste met een denkmodel. Laat een denkmodel toe of selecteer de het Vinden optie in uw cliënt MCP in plaats van het vertrouwen op Auto wijze.
 
 ### Voorbeeld van gebruik {#example-usecases}
 
@@ -272,7 +228,9 @@ De volgende voorbeelden illustreren hoe een LLM hulpmiddelen MCP samen zou kunne
 
 Vanuit het perspectief van de gebruiker, kunnen deze werkschema&#39;s met herinneringen zoals worden in werking gesteld:
 
-*&quot;Creeer een nieuw inhoudsfragment voor de lentecampagne die op ons model van heldenbanner wordt gebaseerd en vul zijn gebieden van dit korte in.&quot;*
+```
+"Create a new content fragment for the spring campaign based on our hero banner model and fill in its fields from this brief."
+```
 
 LLM kiest en coördineert automatisch de noodzakelijke hulpmiddelen MCP.
 
@@ -286,14 +244,14 @@ LLM&#39;s kunnen complexe taken uitvoeren, maar zijn soms vatbaar voor fouten. D
 * **het evolueren mogelijkheden**
 LLM-modellen worden voortdurend verbeterd. In tijd, worden zij slimmer in het ontdekken van nieuwe manieren om hulpmiddelen te combineren MCP om uw doelstellingen te bereiken. Een taak die vandaag meerdere herinneringen vereiste, kan naadloos met één enkele herinnering morgen werken.
 
-* **Het menselijke toezicht is essentieel**
+* **het menselijke toezicht is essentieel:**
 Beschouw de LLM als een deskundige assistent die toezicht nodig heeft. Het heeft brede kennis en kan creatieve oplossingen bedenken, maar het profiteert van uw begeleiding en overzicht. Verifieer resultaten, vooral voor kritieke verrichtingen, en verstrek terugkoppel wanneer de output niet uw verwachtingen aanpast.
 
 * **ben voorzichtig met auto-erkennende hulpmiddeluitvoeringen**
-Sommige MCP cliënttoepassingen, zoals Claude, bieden de optie aan auto-erkende hulpmiddeluitvoeringen die door LLM worden gevraagd. Hoewel dit handig kan zijn voor alleen-lezen bewerkingen, zoals het zoeken naar of ophalen van inhoud, moet u voorzichtig zijn met gereedschappen die inhoud bijwerken of verwijderen. Bekijk elk verzoek tot uitvoering van een gereedschap voordat u handelingen bevestigt die uw AEM-omgeving wijzigen.
+Sommige MCP cliënttoepassingen, zoals Claude, bieden de optie aan auto-erkende hulpmiddeluitvoeringen die door LLM worden gevraagd. Hoewel deze optie handig kan zijn voor alleen-lezen bewerkingen zoals het zoeken of ophalen van inhoud, is het verstandig om voorzichtig te zijn met gereedschappen die inhoud bijwerken of verwijderen. Bekijk elk verzoek tot uitvoering van een gereedschap voordat u handelingen bevestigt die uw AEM-omgeving wijzigen.
 
 ## Beperkingen {#limitations}
 
-AEM MCP-servers moeten momenteel worden geconfigureerd in ChatGPT, Claude, Cursor en Microsoft Copilot Studio.
+AEM steunt momenteel het vormen MCP servers in de toepassingen die onder [ worden vermeld Gesteunde Toepassingen MCP ](#supported-mcp-applications).
 
 Als u een verschillende MCP cliënttoepassing zou willen gebruiken, voel vrij om uit in **aemcs-mcp-feedback@adobe.com** te bereiken om steun voor extra cliënten te verzoeken of een douane te lijsten van gewenste personen.
