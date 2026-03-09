@@ -26,7 +26,7 @@ De Experience Modernization Console is een gehoste, door AI ondersteunde ontwikk
 
 >[!TIP]
 >
->Als u in het worden bent begonnen onmiddellijk met de console, controleer het document [ Begonnen Worden met de Agent van de Modernisering van de Ervaring.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+>Als u in het worden bent begonnen onmiddellijk met de console, controleer het document [&#x200B; Begonnen Worden met de Agent van de Modernisering van de Ervaring.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
 
 ## Mogelijkheden {#capabilities}
 
@@ -35,7 +35,7 @@ Kernmogelijkheden van de console:
 * Interactief chatsbord met de agent en zijn vaardigheden
 * Live AEM-voorvertoning voor directe visuele feedback over wijzigingen
 * Browser voor inhoudsbestanden en viewer voor markeringen
-* De synchronisatie van de inhoud met [ Authoring van het Document ](https://da.live)
+* De synchronisatie van de inhoud met [&#x200B; Authoring van het Document &#x200B;](https://da.live)
 * De browser van de code en diff kijker voor het herzien van aangebrachte veranderingen
 * De integratie van GitHub met capaciteit om trekkingsverzoeken van veranderingen te creëren
 
@@ -43,9 +43,9 @@ Ontwikkelaars behouden de volledige controle over welke schepen. Alle wijziginge
 
 ## Navigatie {#navigation}
 
-Na het ondertekenen in de console bij [`aemcoder.adobe.io`, ](https://aemcoder.adobe.io) u op het huisscherm van de console aankomt.
+Na het ondertekenen in de console bij [`aemcoder.adobe.io`, &#x200B;](https://aemcoder.adobe.io) u op het huisscherm van de console aankomt.
 
-![ het scherm van het Huis van console ](assets/console-home.png)
+![&#x200B; het scherm van het Huis van console &#x200B;](assets/console-home.png)
 
 ### Menubalk {#menu-bar}
 
@@ -65,9 +65,9 @@ Met de linkerzijbalk hebt u snel toegang tot belangrijke weergaven van de consol
 
 ## Home View {#home-view}
 
-De **1} mening van het Huis {is uw uitgangspunt voor het gebruiken van de console.**
+De **1&rbrace; mening van het Huis &lbrace;is uw uitgangspunt voor het gebruiken van de console.**
 
-* Bij de bovenkant is a [ snelle input ](#prompt-input) voor het doen van verzoeken van de console.
+* Bij de bovenkant is a [&#x200B; snelle input &#x200B;](#prompt-input) voor het doen van verzoeken van de console.
 * Onder het snelle paneel wordt voorgesteld herinneringen om met uw project te beginnen.
 
 ### Vragen om invoer {#prompt-input}
@@ -87,11 +87,11 @@ De **mening van de Inhoud** verstrekt hulpmiddelen om te doorbladeren en inhoud 
 * De browser van het dossier voor een overzicht van uw inhoudsdossiers (knevel die dit paneel met het chevron pictogram toont)
 * Deelvenster Voorvertoning voor het visualiseren van inhoud die is geselecteerd in de bestandsbrowser
 
-![ mening van de Inhoud ](assets/content-imported.png)
+![&#x200B; mening van de Inhoud &#x200B;](assets/content-imported.png)
 
 ### Deelvenster Chatten {#chat-panel}
 
-Het praatjepaneel staat u toe om uw gesprek met de agent van de Modernisering van de Ervaring te bekijken en voort te zetten. Het praatjepaneel omvat de geschiedenis van het praatjebericht en a [ snelle input ](#prompt-input) voor het maken van extra verzoeken van de console.
+Het praatjepaneel staat u toe om uw gesprek met de agent van de Modernisering van de Ervaring te bekijken en voort te zetten. Het praatjepaneel omvat de geschiedenis van het praatjebericht en a [&#x200B; snelle input &#x200B;](#prompt-input) voor het maken van extra verzoeken van de console.
 
 * **de Acties van het Praatje**
    * **Duidelijke praatje**: Dit stelt het gesprek terug en ontruimt het de contextvenster van AI. Gebruik deze optie wanneer het beginnen van een nieuwe taak los van het vorige gesprek.
@@ -120,7 +120,7 @@ De **uploadt inhoud** knoop opent een modaal venster om dossiers aan AEM te uplo
 * Bestandsselectie biedt bewerkbare doelpaden
 * Uploaden naar JCR (voor Universal Editor) wordt niet ondersteund
 
-![ uploadt inhoud ](assets/upload-content.png)
+![&#x200B; uploadt inhoud &#x200B;](assets/upload-content.png)
 
 ## Codeweergave {#code-view}
 
@@ -130,7 +130,7 @@ De **mening van de Code** verstrekt hulpmiddelen om code te doorbladeren en code
 * De browser van het dossier voor een overzicht van uw codedossiers of verandert als diffuse
 * Deelvenster Voorvertoning voor het weergeven van een codebestand of geselecteerde wijzigingen in de bestandsbrowser
 
-![ mening van de Code ](assets/code-view.png)
+![&#x200B; mening van de Code &#x200B;](assets/code-view.png)
 
 Het deelvenster Voorvertoning beschikt over twee verschillende modi:
 
@@ -153,17 +153,17 @@ Het **GitHub acties** menu (hoogste recht) verstrekt bewaarplaatsverrichtingen.
 
 Wanneer u wijzigingen aanbrengt, moet u eerst gefaseerde wijzigingen hebben aangebracht om deze in de push-modus op te nemen. Wanneer u drukt, kunt u een nieuwe PR maken of rechtstreeks naar de huidige vertakking duwen
 
-![ de veranderingen van de Duw ](assets/push-changes.png)
+![&#x200B; de veranderingen van de Duw &#x200B;](assets/push-changes.png)
 
 ## Instellingenweergave {#settings-view}
 
 In de weergave Instellingen kunt u de basisinstellingen van de console beheren.
 
-![ mening van Montages ](assets/settings-view.png)
+![&#x200B; mening van Montages &#x200B;](assets/settings-view.png)
 
 * **Project** staat u toe om projectmontages zoals het aanpassen van de bibliotheek URL te bekijken en uit te geven.
 * **Steun** staat u toe om hulp van het de steunteam van AEM te verzoeken.
-* **Geloofsbrieven** staat u toe om een persoonlijk toegangstoken voor Figma te specificeren zodat kan de [ console tot ontwerpblokken voor uw project toegang hebben.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+* **Geloofsbrieven** staat u toe om een persoonlijk toegangstoken voor Figma te specificeren zodat kan de [&#x200B; console tot ontwerpblokken voor uw project toegang hebben.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * Het token vereist het volgende bereik (alleen-lezen):
       * `file_content:read`
       * `file_metadata:read`
@@ -172,5 +172,5 @@ In de weergave Instellingen kunt u de basisinstellingen van de console beheren.
       * `team_library_content:read`
       * `file_dev_resources:read`
       * `projects:read`
-   * [ zie de documentatie van Figma ](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) voor meer informatie over vestiging persoonlijke toegangstokens.
+   * [&#x200B; zie de documentatie van Figma &#x200B;](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) voor meer informatie over vestiging persoonlijke toegangstokens.
 * **de werkruimte van het Terugstellen** keert de console aan zijn beginnende staat terug en alle niet-geduwde of niet-geuploade veranderingen zullen worden verloren.
