@@ -1,14 +1,14 @@
 ---
 title: Micro-Frontend Inhoud selecteren voor Adobe Experience Manager as a Cloud Service
 description: Met de Micro-Front Content Fragment Selector kunt u inhoudsfragmenten zoeken, zoeken en ophalen vanuit uw toepassing.
-role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+role: Admin, User, Developer
+exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
+source-git-commit: 006bfe9067267da1524ab456605a956162c889e3
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
-
 
 # Micro-front-Content Fragment selecteren {#micro-frontend-content-fragment-selector}
 
@@ -16,7 +16,7 @@ De Micro-Front Content Fragment Selector biedt een gebruikersinterface die eenvo
 
 De gebruikersinterface Micro-Frontend wordt beschikbaar gesteld in uw toepassing gebruikend het pakket van de Selector van het Fragment van de Inhoud. Alle updates van het pakket worden automatisch geïmporteerd en in de toepassing geladen.
 
-![&#x200B; Micro-Front de Selector van het Fragment van de Inhoud - Overzicht &#x200B;](/help/headless/assets/content-fragment-selector-overview.png)
+![ Micro-Front de Selector van het Fragment van de Inhoud - Overzicht ](/help/headless/assets/content-fragment-selector-overview.png)
 
 De kiezer voor het inhoudsfragment biedt veel voordelen, zoals:
 
@@ -69,9 +69,11 @@ Gebruik de component `ContentFragmentSelector` . Er zijn verschillende installat
 
 Als de Content Fragment Selector is ingesteld en geverifieerd voor gebruik van de Content Fragment Selector met uw AEM as a Cloud Service-toepassing, kunt u Content Fragments selecteren of verschillende andere bewerkingen uitvoeren om te zoeken naar uw fragmenten in de dataopslag:
 
-![&#x200B; de Selector van het Fragment van de Inhoud &#x200B;](/help/headless/assets/content-fragment-selector-using.png)
+![ de Selector van het Fragment van de Inhoud ](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* Met de **1&rbrace; selecteur van de Bewaarplaats &lbrace;bij het hoogste recht, kunt u de bewaarplaats selecteren u wilt gebruiken**
+* Vanaf de bovenste werkbalk kunt u:
+   * Gebruik de **1} selecteur van de Bewaarplaats {bij het hoogste recht, om de bewaarplaats te selecteren u wilt gebruiken**
+   * Selecteer de indeling; lijst of raster
 * In het linkerdeelvenster kunt u:
    * Mappen verbergen of weergeven in de geselecteerde opslagplaats
    * Selecteer een specifieke map om inhoudsfragmenten in die map weer te geven
@@ -81,6 +83,9 @@ Als de Content Fragment Selector is ingesteld en geverifieerd voor gebruik van d
    * De huidige lijst sorteren op basis van verschillende kolommen; beide oplopend of aflopend
    * Zie de weergaveformaat-indicator
    * Filters weergeven, verbergen en opgeven
+* In het meest rechtse venster kunt u:
+   * Eigenschappen weergeven
+   * Referenties weergeven
 
 ### Deelvenster verbergen/tonen {#hide-show-panel}
 
@@ -92,7 +97,7 @@ Met de Content Fragment Selector kunt u een opslagplaats voor fragmentselectie s
 
 U kunt de bewaarplaats van uw keus van **Repository** drop-down selecteren, beschikbaar bij de bovenkant van het belangrijkste paneel.
 
-![&#x200B; de Selector van het Fragment van de Inhoud &#x200B;](/help/headless/assets/content-fragment-repository-selector.png)
+![ de Selector van het Fragment van de Inhoud ](/help/headless/assets/content-fragment-repository-selector.png)
 
 De opslagruimteopties in de vervolgkeuzelijst zijn gebaseerd op de eigenschap `repositoryId` die is gedefinieerd in het `index.html` -bestand. Deze eigenschap is gebaseerd op de omgeving van de geselecteerde IMS-org die wordt benaderd door de gebruiker die momenteel is aangemeld.
 
@@ -113,7 +118,7 @@ De kiezer voor inhoudsfragmenten beschikt ook over filteropties buiten de doos o
 * Gebruikers
 * Termijnen en data
 
-![&#x200B; de opties van de Filter &#x200B;](/help/headless/assets/content-selector-filters.png)
+![ de opties van de Filter ](/help/headless/assets/content-selector-filters.png)
 
 U kunt ook een standaardzoekfilter maken om op te slaan voor toekomstig gebruik. U kunt de eigenschap `filterSchema` gebruiken om aangepaste zoekfilters voor uw inhoudsfragmenten te maken.
 
@@ -130,3 +135,16 @@ U kunt fragmenten in de Inhoudsfragmentkiezer op verschillende eigenschappen sor
 Met de optie Selector voor inhoudsfragment kunt u het fragment weergeven in het volgende:
 
 * **Mening van de Lijst**
+* **de Mening van het Net**
+
+U kunt de gewenste weergave selecteren met de pictogrammen in de bovenste werkbalk:
+
+![ de Selector van het Fragment van de Inhoud - Type van Mening ](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## Integreer de kiezer voor het inhoudsfragment met toepassingen {#integrate-the-content-fragment-selector-with-applications}
+
+U kunt de kiezer voor inhoudsfragmenten integreren met verschillende toepassingen, zoals:
+
+* [ integreer de Selector van het Fragment van de Inhoud met een toepassing van Adobe ](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+* [De Content Fragment Selector integreren met een toepassing van een andere fabrikant dan Adobe of een andere fabrikant](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [De Content Fragment Selector integreren met Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
