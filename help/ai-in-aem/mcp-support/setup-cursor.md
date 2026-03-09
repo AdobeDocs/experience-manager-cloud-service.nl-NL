@@ -19,12 +19,12 @@ Voer de volgende stappen uit om de cursor te verbinden met AEM MCP-servers.
 * U kunt desgewenst afzonderlijke gereedschappen in- of uitschakelen door op de naam van het gereedschap te klikken. Alle gereedschappen zijn standaard ingeschakeld.
 * Gebruik de cursoreditor of -chat om AEM Tools aan te roepen als onderdeel van ontwikkelings- of inhoudsworkflows.
 
-![ de dialoog van de Montages van de Curseur.](assets/cursor-1.png)
+![&#x200B; de dialoog van de Montages van de Curseur.](assets/cursor-1.png)
 
-![ Hulpmiddelen en MCP paneel met de optie om een douane MCP server toe te voegen.](assets/cursor-2.png)
+![&#x200B; Hulpmiddelen en MCP paneel met de optie om een douane MCP server toe te voegen.](assets/cursor-2.png)
 
-![ de montages van de douane MCP server vormen in Cursor.](assets/cursor-3.png)
+![&#x200B; de montages van de douane MCP server vormen in Cursor.](assets/cursor-3.png)
 
-![ de verbindingsdialoog voor de nieuwe server MCP in Cursor.](assets/cursor-4.png)
+![&#x200B; de verbindingsdialoog voor de nieuwe server MCP in Cursor.](assets/cursor-4.png)
 
-![ het Aansporen van Curseur om de nieuwe dienst van AEM MCP te gebruiken.](assets/cursor-5.png)
+![&#x200B; het Aansporen van Curseur om de nieuwe dienst van AEM MCP te gebruiken.](assets/cursor-5.png)

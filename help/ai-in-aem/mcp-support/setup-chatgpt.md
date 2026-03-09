@@ -22,16 +22,16 @@ Voer de volgende stappen uit om OpenAI ChatGPT te verbinden met AEM MCP-servers.
   "Using the configured AEM MCP tools, list all sites in the author environment."
   ```
 
-![ de dialoog van Montages ChatGPT.](assets/chatgpt-1.png)
+![&#x200B; de dialoog van Montages ChatGPT.](assets/chatgpt-1.png)
 
-![ Apps en het paneel van Verbindingen Geavanceerde Montages in ChatGPT.](assets/chatgpt-2.png)
+![&#x200B; Apps en het paneel van Verbindingen Geavanceerde Montages in ChatGPT.](assets/chatgpt-2.png)
 
-![ toelatend de wijze van de Ontwikkelaar in de Apps en sectie van Verbindingen.](assets/chatgpt-3.png)
+![&#x200B; toelatend de wijze van de Ontwikkelaar in de Apps en sectie van Verbindingen.](assets/chatgpt-3.png)
 
-![ de dialoog voor het creëren van een nieuwe app in ChatGPT.](assets/chatgpt-4.png)
+![&#x200B; de dialoog voor het creëren van een nieuwe app in ChatGPT.](assets/chatgpt-4.png)
 
-![ de Nieuwe vorm van de toepassingsconfiguratie in ChatGPT.](assets/chatgpt-5.png)
+![&#x200B; de Nieuwe vorm van de toepassingsconfiguratie in ChatGPT.](assets/chatgpt-5.png)
 
-![ de dienst van MCP van de Inhoud van AEM die in Apps en Verbindingen wordt vermeld.](assets/chatgpt-6.png)
+![&#x200B; de dienst van MCP van de Inhoud van AEM die in Apps en Verbindingen wordt vermeld.](assets/chatgpt-6.png)
 
-![ het Vragen ChatGPT om de Dienst van MCP van de Inhoud van AEM te gebruiken.](assets/chatgpt-7.png)
+![&#x200B; het Vragen ChatGPT om de Dienst van MCP van de Inhoud van AEM te gebruiken.](assets/chatgpt-7.png)
