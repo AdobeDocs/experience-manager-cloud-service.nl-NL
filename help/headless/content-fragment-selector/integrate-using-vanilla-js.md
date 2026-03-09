@@ -21,5 +21,5 @@ De integratie wordt uitgevoerd door het pakket Content Fragment Selector te impo
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als u:
 
-* integreren een toepassing van Adobe op [&#x200B; Verenigde Shell &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
+* integreren een toepassing van Adobe op [&#x200B; Verenigde Shell &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
 * Er is al een IMS-token gegenereerd voor verificatie
