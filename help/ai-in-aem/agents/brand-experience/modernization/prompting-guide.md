@@ -67,7 +67,7 @@ Gebruik deze prompt wanneer u inhoud van een bestaande website naar Edge Deliver
 * De agent analyseert pagina&#39;s gebruikend een hiërarchie op twee niveaus:
    * Eerst worden de sectiegrenzen geïdentificeerd (wijzigingen in de achtergrond, verschuivingen in de tussenruimte)
    * Vervolgens worden de inhoudsreeksen binnen elke sectie geïdentificeerd.
-* De auteursanalyse volgt [ Model van David.](https://www.aem.live/docs/davidsmodel)
+* De auteursanalyse volgt [&#x200B; Model van David.](https://www.aem.live/docs/davidsmodel)
    * voor elke inhoudsequentie controleert het eerst &quot;Kan een auteur dit door normaal typen tot stand brengen?&quot;
    * De standaardinhoud (koppen, alinea&#39;s, lijsten, inline-afbeeldingen) heeft de voorkeur boven blokken.
 * De agent probeert bestaande blokken uit de blokbibliotheek van de repository opnieuw te gebruiken voordat er nieuwe worden gemaakt.
@@ -80,7 +80,7 @@ Gebruik deze prompt wanneer u inhoud van een bestaande website naar Edge Deliver
 
 ### Bulkimport {#bulk-import}
 
-Gebruik deze herinnering om vele pagina&#39;s van het zelfde malplaatje na de voltooiing van een [ aanvankelijke enig-paginamigratie in te voeren.](#migrate-a-site)
+Gebruik deze herinnering om vele pagina&#39;s van het zelfde malplaatje na de voltooiing van een [&#x200B; aanvankelijke enig-paginamigratie in te voeren.](#migrate-a-site)
 
 #### Voorbeeld vragen {#example-prompts-bulk-import}
 
@@ -192,7 +192,7 @@ Gebruik deze prompt om afzonderlijke gemigreerde blokken te valideren en te verf
    1. Hiermee worden elementen vergeleken en wordt een score voor gelijkenis gegenereerd met CSS-correcties.
    1. Het past fixes toe en herinspecteert tot het doel van 85% wordt bereikt.
 * Elke herhaling toont een volledig kritiek rapport met alle verschillen, past alle CSS moeilijke situaties (die door visueel effect worden voorrang gegeven) toe, verifieert in voorproef, herinspecteert, en toont verbeteringsmetriek.
-* Gebruik de blokkritiek nadat [ ontwerpmigratie ](#design-migration) volledig is.
+* Gebruik de blokkritiek nadat [&#x200B; ontwerpmigratie &#x200B;](#design-migration) volledig is.
 
 ### Paginantiek {#page-critique}
 
@@ -214,7 +214,7 @@ Gebruik deze prompt om gehele gemigreerde pagina&#39;s te valideren op basis van
    1. Het past fixes toe en herinspecteert tot het doel van 85% wordt bereikt.
 * Voor een paginacritique zijn de URL van de bronpagina en het gemigreerde pad (bijvoorbeeld &quot;/about&quot;) vereist als invoer.
 * Gebruik paginacritique bij het valideren van de algehele paginafrouwbaarheid of bij het gelijktijdig valideren van meerdere blokken.
-* [ blokkritiek van het Gebruik ](#block-critique) voor geconcentreerde bevestiging op specifieke componenten.
+* [&#x200B; blokkritiek van het Gebruik &#x200B;](#block-critique) voor geconcentreerde bevestiging op specifieke componenten.
 * De volgende workflow wordt aanbevolen:
    1. Een pagina migreren.
    1. Pas een ontwerp toe.
@@ -225,7 +225,7 @@ Gebruik deze prompt om gehele gemigreerde pagina&#39;s te valideren op basis van
 
 Gebruik deze aanwijzing om een blok van Figma-ontwerp naar Edge Delivery Services te migreren.
 
-Merk op dat u opstelling uw details van Figuren in [ de Console van de Modernisering van de Ervaring ](/help/ai-in-aem/agents/brand-experience/modernization/console.md) moet om deze herinnering te gebruiken.
+Merk op dat u opstelling uw details van Figuren in [&#x200B; de Console van de Modernisering van de Ervaring &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/console.md) moet om deze herinnering te gebruiken.
 
 #### Voorbeeld vragen {#example-figma}
 
@@ -299,7 +299,7 @@ Gebruik deze herinnering om nieuwe blokken tot stand te brengen of bestaande te 
    * PR-validatiekoppelingen voor PSI-controles
    * Levende documentatie voor auteurs
    * Detectie van randgevallen waarbij code-first-benaderingen ontbreken
-* De agent zal naar gelijkaardige blokken in de [ Inzameling van het Blok ](https://www.aem.live/developer/block-collection) zoeken en [ Partij van het Blok ](https://www.aem.live/developer/block-party/) alvorens uit te voeren, om patronen en herbruikbare code te vinden.
+* De agent zal naar gelijkaardige blokken in de [&#x200B; Inzameling van het Blok &#x200B;](https://www.aem.live/developer/block-collection) zoeken en [&#x200B; Partij van het Blok &#x200B;](https://www.aem.live/developer/block-party/) alvorens uit te voeren, om patronen en herbruikbare code te vinden.
 * Sla CDD alleen over voor triviale CSS-alleen-tweaks (maar identificeer nog steeds testinhoud voor validatie).
 
 ### Inhoud modelleren {#content-modeling}
@@ -324,7 +324,7 @@ Met deze prompt kunt u de tabelstructuur ontwerpen waarmee auteurs werken bij he
 * Er geldt een limiet van vier cellen per rij.
    * Groepeer verwante elementen in cellen.
 * Voorkeur voor blokvarianten boven configuratiecellen voor opmaakverschillen.
-* [ volg de Wet van Postel ](https://en.wikipedia.org/wiki/Robustness_principle): ben flexibel over inputstructuur.
+* [&#x200B; volg de Wet van Postel &#x200B;](https://en.wikipedia.org/wiki/Robustness_principle): ben flexibel over inputstructuur.
    * Een hoofdblok moet werken of de inhoud zich in één cel bevindt, over twee cellen wordt gesplitst of in afzonderlijke rijen.
 * Deze vaardigheid wordt gewoonlijk aangehaald automatisch door inhoud-gedreven Ontwikkeling tijdens blokverwezenlijking.
 
@@ -340,9 +340,9 @@ Gebruik deze herinnering om bestaande implementaties te zoeken als uitgangspunt 
 
 #### Wat u moet weten {#wtk-reference}
 
-* De [ Inzameling van het Blok ](https://www.aem.live/developer/block-collection) is Adobe-gehandhaafd en voor beste praktijken, uitstekende inhoud modellering, hoge prestaties, en toegankelijkheid gecontroleerd.
+* De [&#x200B; Inzameling van het Blok &#x200B;](https://www.aem.live/developer/block-collection) is Adobe-gehandhaafd en voor beste praktijken, uitstekende inhoud modellering, hoge prestaties, en toegankelijkheid gecontroleerd.
    * Het is beperkt tot blokken die vaak nodig zijn. Begin hier.
-* De [ Partij van het Blok ](https://www.aem.live/developer/block-party/) is gemeenschap-gedreven en biedt een bredere verscheidenheid met inbegrip van experimentele benaderingen aan.
+* De [&#x200B; Partij van het Blok &#x200B;](https://www.aem.live/developer/block-party/) is gemeenschap-gedreven en biedt een bredere verscheidenheid met inbegrip van experimentele benaderingen aan.
    * Het omvat ook secundaire plug-ins, buildtools (webpack, vite, sass) en integratie.
    * Gebruik wanneer de Inzameling van het Blok niet heeft wat u nodig hebt.
 * Denk na over alternatieve namen wanneer het zoeken
@@ -362,7 +362,7 @@ Gebruik deze prompt om informatie te zoeken over Edge Delivery Services-functies
 
 #### Wat u moet weten {#wtk-documentation}
 
-* Het zoekt specifiek de {[ documentatie 0} aem.live (documenten en blogberichten).](https://aem.live)
+* Het zoekt specifiek de {[&#x200B; documentatie 0} aem.live (documenten en blogberichten).](https://aem.live)
 * Gebruik specifieke trefwoorden (&quot;block decoration&quot;,&quot;sidekick plugin&quot;,&quot;metadata&quot;) in plaats van algemene termen (&quot;aem&quot;,&quot;website&quot;,&quot;how to build&quot;).
 * Voor codevoorbeelden en verwijzingsimplementaties, gebruik &quot;vind verwijzingsblokken&quot;in plaats daarvan.
 * De tien belangrijkste resultaten die standaard worden geretourneerd.
