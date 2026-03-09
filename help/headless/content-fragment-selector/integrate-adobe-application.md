@@ -29,7 +29,7 @@ In het volgende voorbeeld wordt het gebruik van de Content Fragment Selector get
 Neem het pakket Content Fragment Selector in uw code op met de tag `script` , zoals in het onderstaande voorbeeld wordt getoond.
 
 * Wanneer het script is geladen, is de algemene variabele `PureJSContentFragmentSelectors` beschikbaar voor gebruik.
-* Bepaal de Eigenschappen van de Selecteur van het Fragment van de Inhoud [ ](/help/headless/content-fragment-selector/properties.md):
+* Bepaal de Eigenschappen van de Selecteur van het Fragment van de Inhoud [&#x200B; &#x200B;](/help/headless/content-fragment-selector/properties.md):
 
    * de eigenschappen `imsOrg` en `imsToken` zijn beide vereist voor verificatie in een Adobe-toepassing
    * de eigenschap `handleSelection` wordt gebruikt om de geselecteerde fragmenten af te handelen.
@@ -72,13 +72,13 @@ Als u dergelijke stappen uitvoert, kunt u de Content Fragment Selector gebruiken
 
 Met de eigenschappen `ImsAuthProps` worden de verificatiegegevens en de stroom gedefinieerd die de kiezer voor het inhoudsfragment gebruikt om een `imsToken` -element te verkrijgen. Door deze eigenschappen te plaatsen, kunt u controleren hoe de authentificatiestroom zich gedraagt en luisteraars voor diverse authentificatiegebeurtenissen registreert.
 
-Voor bezitsdetails zie [ Eigenschappen ImsAuthProps ](/help/headless/content-fragment-selector/properties.md#imsauthprops-properties)
+Voor bezitsdetails zie [&#x200B; Eigenschappen ImsAuthProps &#x200B;](/help/headless/content-fragment-selector/properties.md#imsauthprops-properties)
 
 ### ImsAuthService {#imsauthservice}
 
 `ImsAuthService` -klasse handelt de verificatiestroom voor de fragmentkiezer af. Het is verantwoordelijk voor het verkrijgen van een `imsToken` van de Adobe IMS-verificatieservice. `imsToken` wordt gebruikt om de gebruiker te verifiëren en toegang tot de AEM as a Cloud Service-opslagplaats te verlenen. `ImsAuthService` gebruikt de `ImsAuthProps` -eigenschappen om de verificatiestroom te beheren en listeners voor verschillende verificatiegebeurtenissen te registreren. U kunt de functie `registerFragmentsSelectorsAuthService` gebruiken om de instantie `ImsAuthService` te registreren bij de fragmentkiezer. De volgende functies zijn beschikbaar voor de `ImsAuthService` -klasse. Als u echter de functie `registerFragmentsSelectorsAuthService` gebruikt, hoeft u deze functies niet rechtstreeks aan te roepen.
 
-Voor bezitsdetails zie [ Eigenschappen ImsAuthService ](/help/headless/content-fragment-selector/properties.md#imsauthservice-properties)
+Voor bezitsdetails zie [&#x200B; Eigenschappen ImsAuthService &#x200B;](/help/headless/content-fragment-selector/properties.md#imsauthservice-properties)
 
 ### Validatie met opgegeven IMS-token {#validation-with-provided-ims-token}
 

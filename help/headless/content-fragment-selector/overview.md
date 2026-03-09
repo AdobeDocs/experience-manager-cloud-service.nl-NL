@@ -16,7 +16,7 @@ De Micro-Front Content Fragment Selector biedt een gebruikersinterface die eenvo
 
 De gebruikersinterface Micro-Frontend wordt beschikbaar gesteld in uw toepassing gebruikend het pakket van de Selector van het Fragment van de Inhoud. Alle updates van het pakket worden automatisch geïmporteerd en in de toepassing geladen.
 
-![ Micro-Front de Selector van het Fragment van de Inhoud - Overzicht ](/help/headless/assets/content-fragment-selector-overview.png)
+![&#x200B; Micro-Front de Selector van het Fragment van de Inhoud - Overzicht &#x200B;](/help/headless/assets/content-fragment-selector-overview.png)
 
 De kiezer voor het inhoudsfragment biedt veel voordelen, zoals:
 
@@ -69,10 +69,10 @@ Gebruik de component `ContentFragmentSelector` . Er zijn verschillende installat
 
 Als de Content Fragment Selector is ingesteld en geverifieerd voor gebruik van de Content Fragment Selector met uw AEM as a Cloud Service-toepassing, kunt u Content Fragments selecteren of verschillende andere bewerkingen uitvoeren om te zoeken naar uw fragmenten in de dataopslag:
 
-![ de Selector van het Fragment van de Inhoud ](/help/headless/assets/content-fragment-selector-unwrapped.png)
+![&#x200B; de Selector van het Fragment van de Inhoud &#x200B;](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
 * Vanaf de bovenste werkbalk kunt u:
-   * Gebruik de **1} selecteur van de Bewaarplaats {bij het hoogste recht, om de bewaarplaats te selecteren u wilt gebruiken**
+   * Gebruik de **1&rbrace; selecteur van de Bewaarplaats &lbrace;bij het hoogste recht, om de bewaarplaats te selecteren u wilt gebruiken**
    * Selecteer de indeling; lijst of raster
 * In het linkerdeelvenster kunt u:
    * Mappen verbergen of weergeven in de geselecteerde opslagplaats
@@ -97,7 +97,7 @@ Met de Content Fragment Selector kunt u een opslagplaats voor fragmentselectie s
 
 U kunt de bewaarplaats van uw keus van **Repository** drop-down selecteren, beschikbaar bij de bovenkant van het belangrijkste paneel.
 
-![ de Selector van het Fragment van de Inhoud ](/help/headless/assets/content-fragment-repository-selector.png)
+![&#x200B; de Selector van het Fragment van de Inhoud &#x200B;](/help/headless/assets/content-fragment-repository-selector.png)
 
 De opslagruimteopties in de vervolgkeuzelijst zijn gebaseerd op de eigenschap `repositoryId` die is gedefinieerd in het `index.html` -bestand. Deze eigenschap is gebaseerd op de omgeving van de geselecteerde IMS-org die wordt benaderd door de gebruiker die momenteel is aangemeld.
 
@@ -118,7 +118,7 @@ De kiezer voor inhoudsfragmenten beschikt ook over filteropties buiten de doos o
 * Gebruikers
 * Termijnen en data
 
-![ de opties van de Filter ](/help/headless/assets/content-selector-filters.png)
+![&#x200B; de opties van de Filter &#x200B;](/help/headless/assets/content-selector-filters.png)
 
 U kunt ook een standaardzoekfilter maken om op te slaan voor toekomstig gebruik. U kunt de eigenschap `filterSchema` gebruiken om aangepaste zoekfilters voor uw inhoudsfragmenten te maken.
 
@@ -139,12 +139,12 @@ Met de optie Selector voor inhoudsfragment kunt u het fragment weergeven in het 
 
 U kunt de gewenste weergave selecteren met de pictogrammen in de bovenste werkbalk:
 
-![ de Selector van het Fragment van de Inhoud - Type van Mening ](/help/headless/assets/content-fragment-selector-view-type.png)
+![&#x200B; de Selector van het Fragment van de Inhoud - Type van Mening &#x200B;](/help/headless/assets/content-fragment-selector-view-type.png)
 
 ## Integreer de kiezer voor het inhoudsfragment met toepassingen {#integrate-the-content-fragment-selector-with-applications}
 
 U kunt de kiezer voor inhoudsfragmenten integreren met verschillende toepassingen, zoals:
 
-* [ integreer de Selector van het Fragment van de Inhoud met een toepassing van Adobe ](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+* [&#x200B; integreer de Selector van het Fragment van de Inhoud met een toepassing van Adobe &#x200B;](/help/headless/content-fragment-selector/integrate-adobe-application.md)
 * [De Content Fragment Selector integreren met een toepassing van een andere fabrikant dan Adobe of een andere fabrikant](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
 * [De Content Fragment Selector integreren met Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
