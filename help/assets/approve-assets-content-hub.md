@@ -3,22 +3,22 @@ title: Assets goedkeuren voor Content Hub
 description: Leer hoe u middelen in Assets as a Cloud Service goedkeurt om ze beschikbaar te maken in Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1673'
 ht-degree: 0%
 
 ---
 
 # Assets goedkeuren voor Content Hub {#approve-assets-content-hub}
 
-![&#x200B; keur activa voor Content Hub &#x200B;](assets/content-hub-approve-assets.png) goed
+![ keur activa voor Content Hub ](assets/content-hub-approve-assets.png) goed
 
 >[!AVAILABILITY]
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Merkbeheerders en marketeers houden strikte controle over merkmiddelen. Alleen goedgekeurde en nieuwste versie van het middel is beschikbaar voor gebruik in Content Hub, zodat alle kanalen en toepassingen consistent zijn.
 
@@ -30,7 +30,7 @@ Voordat u begint, moet u beschikken over:
 
 * Toegang tot AEM Assets as a Cloud Service
 
-* Schrijf toestemmingen om activa meta-gegevens uit te geven om het **[!UICONTROL Status]** gebied beschikbaar in [&#x200B; activa eigenschappen &#x200B;](/help/assets/manage-organize-assets-view.md##manage-asset-status) voor een activa uit te geven.
+* Schrijf toestemmingen om activa meta-gegevens uit te geven om het **[!UICONTROL Status]** gebied beschikbaar in [ activa eigenschappen ](/help/assets/manage-organize-assets-view.md##manage-asset-status) voor een activa uit te geven.
 
 ## Assets goedkeuren voor Content Hub{#approve-assets-for-content-hub}
 
@@ -49,7 +49,7 @@ De elementstatus instellen op `approved` in de Assets-weergave in AEM as a Cloud
 
    >[!VIDEO](https://video.tv.adobe.com/v/3433172)
 
-Als u activa gebruikend mening Admin moet goedkeuren, zie [&#x200B; activa goedkeuren gebruikend mening Admin &#x200B;](/help/assets/approve-assets.md#approve-assets).
+Als u activa gebruikend mening Admin moet goedkeuren, zie [ activa goedkeuren gebruikend mening Admin ](/help/assets/approve-assets.md#approve-assets).
 
 ## Bulk activa voor Content Hub goedkeuren met de Assets-weergave {#bulk-approve-assets-content-hub}
 
@@ -75,22 +75,22 @@ Goedkeuringsdoel instellen:
 
 1. Als u **Goedgekeurd** in stap 2 selecteert, selecteer een goedkeuringsdoel. Mogelijke waarden zijn Delivery en Content Hub.
 
-   * **Levering** is de standaardoptie die in het drop-down menu wordt geselecteerd en het publiceert de activa aan zowel [&#x200B; Dynamische Media met OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) en [&#x200B; Content Hub &#x200B;](/help/assets/product-overview.md), als allebei voor Experience Manager Assets worden toegelaten.
+   * **Levering** is de standaardoptie die in het drop-down menu wordt geselecteerd en het publiceert de activa aan zowel [ Dynamische Media met OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) en [ Content Hub ](/help/assets/product-overview.md), als allebei voor Experience Manager Assets worden toegelaten.
 
    * Het selecteren van **Content Hub** publiceert enkel de activa aan Content Hub. Content Hub wordt alleen weergegeven als een optie als deze is ingeschakeld voor Experience Manager Assets.
 
    * Als u geen optie selecteert in de vervolgkeuzelijst, wordt de voor uw AEM as a Cloud Service-omgeving ingeschakelde standaardoptie automatisch toegepast op het element.
 
 
-   Voor meer informatie over de beschikbare opties, zie [&#x200B; StandaardDoel van de Goedkeuring en publiceer bestemmingen voor goedgekeurde activa &#x200B;](#default-approval-target-options-publish-destinations).
+   Voor meer informatie over de beschikbare opties, zie [ StandaardDoel van de Goedkeuring en publiceer bestemmingen voor goedgekeurde activa ](#default-approval-target-options-publish-destinations).
 
-   ![&#x200B; de status van de Goedkeuring &#x200B;](/help/assets/assets/approval-status-delivery.png)
+   ![ de status van de Goedkeuring ](/help/assets/assets/approval-status-delivery.png)
 
 1. Geef andere elementeigenschappen op en klik op **[!UICONTROL Save]** .
 
 Enkele extra punten die u wilt noteren zijn:
 
-* Wanneer u niet de standaardmeta-gegevensvorm gebruikt en niet het **[!UICONTROL Approval Target]** gebied kunt bekijken, [&#x200B; geef uw meta-gegevensvorm &#x200B;](/help/assets/metadata-assets-view.md#metadata-forms) uit om het **[!UICONTROL Approval for]** gebied van de beschikbare componenten aan uw meta-gegevensvorm te slepen en klik **[!UICONTROL Save]**.
+* Wanneer u niet de standaardmeta-gegevensvorm gebruikt en niet het **[!UICONTROL Approval Target]** gebied kunt bekijken, [ geef uw meta-gegevensvorm ](/help/assets/metadata-assets-view.md#metadata-forms) uit om het **[!UICONTROL Approval for]** gebied van de beschikbare componenten aan uw meta-gegevensvorm te slepen en klik **[!UICONTROL Save]**.
 
 * Wanneer u het goedkeuringsdoel selecteert als `Content Hub` in de Assets-weergave, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie.
 
@@ -110,7 +110,7 @@ In de volgende tabel worden de voorwaarden weergegeven voor de weergave van de v
 Nadat u van de Assets-weergave naar de Admin-weergave bent overgeschakeld, kunt u mapinstellingen zodanig instellen dat alle nieuwe elementen die aan de map zijn toegevoegd, automatisch worden goedgekeurd.
 
 U kunt op de volgende manieren schakelen tussen de weergaven Beheer en Assets:
-![&#x200B; Mijn overzicht van Workspace &#x200B;](assets/assets-view.png)
+![ Mijn overzicht van Workspace ](assets/assets-view.png)
 
 Voer de volgende stappen uit om goedkeuring voor nieuw opgenomen elementen in [!DNL Experience Manager Admin view] te automatiseren:
 
@@ -145,51 +145,51 @@ Voer de volgende stappen uit om goedkeuring voor nieuw opgenomen elementen in [!
 
 ## Middelen beheren die met Content Hub zijn geüpload {#manage-assets-uploaded-using-content-hub}
 
-[&#x200B; de gebruikers van Content Hub met rechten om activa &#x200B;](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen [&#x200B; activa aan Content Hub &#x200B;](/help/assets/upload-brand-approved-assets.md) of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
+[ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen [ activa aan Content Hub ](/help/assets/upload-brand-approved-assets.md) of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
 
-De vertoning van activa die gebruikend Content Hub worden geupload hangt af van als u [&#x200B; de auto-goedkeuringsknevel &#x200B;](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) hebt toegelaten:
+De vertoning van activa die gebruikend Content Hub worden geupload hangt af van als u [ de auto-goedkeuringsknevel ](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) hebt toegelaten:
 
 * Als de schakeloptie **[!UICONTROL Auto-approval]** is ingeschakeld, zijn de elementen die u uploadt met Content Hub automatisch beschikbaar.
 
-* Als de schakeloptie **[!UICONTROL Auto-approval]** is uitgeschakeld, worden de elementen die u uploadt met Content Hub niet automatisch weergegeven. De middelen zijn beschikbaar in de map `hydrated-assets` van uw Assets as a Cloud Service-omgeving. Navigeer aan de omslag en [&#x200B; bulkgeef &#x200B;](#bulk-approve-assets-content-hub) het statuut van die activa `Approved` voor die activa uit om in Content Hub te tonen.
+* Als de schakeloptie **[!UICONTROL Auto-approval]** is uitgeschakeld, worden de elementen die u uploadt met Content Hub niet automatisch weergegeven. De middelen zijn beschikbaar in de map `hydrated-assets` van uw Assets as a Cloud Service-omgeving. Navigeer aan de omslag en [ bulkgeef ](#bulk-approve-assets-content-hub) het statuut van die activa `Approved` voor die activa uit om in Content Hub te tonen.
 
-![&#x200B; Content Hub goedkeuringsproces &#x200B;](/help/assets/assets/content-hub-approval.png)
+![ Content Hub goedkeuringsproces ](/help/assets/assets/content-hub-approval.png)
 
 ## Veelgestelde vragen {#faqs-content-hub-approved-assets}
 
-### Wat is het doel van de goedkeuring van activa voor Content Hub in Experience Manager as a Cloud Service? {#approving-assets-content-hub}
+### Wat is het doel van de goedkeuring van activa voor AEM Assets Content Hub in Experience Manager as a Cloud Service? {#approving-assets-content-hub}
 
-Goedkeuring van middelen zorgt ervoor dat alleen de nieuwste en goedgekeurde versies beschikbaar zijn voor gebruik in Content Hub en zorgt voor een strikte merkconsistentie tussen alle kanalen en toepassingen. Dit gecontroleerde proces stroomlijnt het beheer van bedrijfsmiddelen voor merkmanagers en marketeers.
+Goedkeuring van middelen zorgt ervoor dat alleen de nieuwste en goedgekeurde versies beschikbaar zijn voor gebruik in AEM Assets Content Hub en zorgt voor een strikte merkconsistentie tussen alle kanalen en toepassingen. Dit gecontroleerde proces stroomlijnt het beheer van bedrijfsmiddelen voor merkmanagers en marketeers.
 
-### Wat zijn de vereisten om activa voor Content Hub goed te keuren?
+### Wat zijn de voorwaarden voor het goedkeuren van middelen voor AEM Assets Content Hub?
 
 U moet toegang tot AEM Assets as a Cloud Service hebben en toestemmingen schrijven om activa meta-gegevens, specifiek het **gebied van de Status** in activa eigenschappen uit te geven.
 
-### Hoe keurt u één middel goed gebruikend de mening van Assets in AEM as a Cloud Service?
+### Hoe keurt u één middel goed gebruikend de mening van Assets in AEM as a Cloud Service zodat het in AEM Assets Content Hub beschikbaar is?
 
-Selecteer de activa, klik **Details** in de toolbar, navigeer aan het **Basis** lusje, kies **Goedgekeurd** van de **drop-down lijst van de Status**, en klik **sparen**. Het middel wordt beschikbaar gesteld in Content Hub.
+Selecteer de activa, klik **Details** in de toolbar, navigeer aan het **Basis** lusje, kies **Goedgekeurd** van de **drop-down lijst van de Status**, en klik **sparen**. Het middel wordt beschikbaar gesteld in AEM Assets Content Hub.
 
-### Kunnen activa voor Content Hub in bulk worden goedgekeurd, en zo ja, hoe?
+### Kunnen activa voor AEM Assets Content Hub in bulk worden goedgekeurd, en zo ja, hoe?
 
-Ja, activa kunnen bulksgewijs worden goedgekeurd. In de mening van Assets, selecteer veelvoudige activa, klik **BulkMeta-gegevens uitgeven**, uitgezocht **Goedgekeurd** in het **5&rbrace; gebied van de Status &lbrace;onder Eigenschappen, en klik** sparen **.** Alle geselecteerde middelen zijn beschikbaar in Content Hub.
+Ja, activa kunnen bulksgewijs worden goedgekeurd. In de mening van Assets, selecteer veelvoudige activa, klik **BulkMeta-gegevens uitgeven**, uitgezocht **Goedgekeurd** in het **5} gebied van de Status {onder Eigenschappen, en klik** sparen **.** Alle geselecteerde middelen zijn beschikbaar in AEM Assets Content Hub.
 
-### Hoe werkt het goedkeuringsproces voor bedrijfsmiddelen in Content Hub? {#asset-approval-content-hub}
+### Hoe werkt het goedkeuringsproces voor bedrijfsmiddelen in AEM Assets Content Hub? {#asset-approval-content-hub}
 
-Als de schakeloptie Automatische goedkeuring is ingeschakeld, worden elementen die met Content Hub zijn geüpload automatisch beschikbaar. Als het gehandicapt is, worden de geuploade activa geplaatst in de **hydrated-activa** omslag in Assets as a Cloud Service, en u moet hun status aan **manueel in bulk uitgeven Goedgekeurd** om hen te maken tonen in Content Hub.
+Als de schakeloptie Automatische goedkeuring is ingeschakeld, worden elementen die met AEM Assets Content Hub zijn geüpload automatisch beschikbaar. Als het gehandicapt is, worden de geuploade activa geplaatst in de **hydrated-activa** omslag in Assets as a Cloud Service, en u moet hun status aan **manueel in bulk uitgeven Goedgekeurd** om hen te maken tonen in Content Hub.
 
-### Wat is het gebied van het Doel van de Goedkeuring en hoe beïnvloedt het activa het publiceren?
+### Wat is het gebied van het Doel van de Goedkeuring in de mening van AEM Assets en hoe beïnvloedt het activa het publiceren?
 
-Het **gebied van het Doel van de Goedkeuring** op de pagina van de Details van Activa laat u kiezen waar de goedgekeurde activa worden gepubliceerd. De opties omvatten **Levering** (publiceert aan zowel Dynamische Media met OpenAPI en Content Hub) of **slechts Content Hub**. Als er geen optie is geselecteerd, wordt de standaardinstelling voor de Assets as a Cloud Service-omgeving toegepast. Zie [&#x200B; StandaardDoel van de Goedkeuring en publiceer bestemmingen voor goedgekeurde activa &#x200B;](#default-approval-target-options-publish-destinations) voor meer informatie.
+Het **gebied van het Doel van de Goedkeuring** op de pagina van de Details van Activa laat u kiezen waar de goedgekeurde activa worden gepubliceerd. De opties omvatten **Levering** (publiceert aan zowel Dynamische Media met OpenAPI en Content Hub) of **slechts Content Hub**. Als er geen optie is geselecteerd, wordt de standaardinstelling voor de Assets as a Cloud Service-omgeving toegepast. Zie [ StandaardDoel van de Goedkeuring en publiceer bestemmingen voor goedgekeurde activa ](#default-approval-target-options-publish-destinations) voor meer informatie.
 
 
-### Wat gebeurt er als het veld Approval Target niet wordt weergegeven op de pagina met gegevens over Assets View-middelen?
+### Wat gebeurt er als het veld Approval Target niet wordt weergegeven op de pagina met gegevens over AEM Assets View-middelen?
 
 Als het **gebied van het Doel van de Goedkeuring** op de de activadetailpagina van de Mening van Assets mist, zou u uw meta-gegevensvorm moeten uitgeven, **Goedkeuring voor** gebied van beschikbare componenten aan uw vorm slepen, en **sparen** klikken. Op deze manier kunt u goedkeuringsdoelen voor elementen instellen.
 
-### Hoe kunt u goedkeuring voor nieuw opgenomen elementen in de beheerweergave automatiseren?
+### Hoe kunt u goedkeuring voor nieuw opgenomen elementen automatiseren in de AEM Assets Admin-weergave?
 
 Creeer een omslag in het auteursmilieu, navigeer aan **Hulpmiddelen** > **Assets** > **Profielen van Meta-gegevens**, creeer en geef een meta-gegevensprofiel uit. Voeg één enkel Gebied van de Tekst van de Lijn toe, etiketteer het **Goedgekeurde Assets**, kaart het aan &#39;./jcr :content/metadata/dam :status&#39;, en plaats zijn standaardwaarde aan `approved`. Pas het metagegevensprofiel toe op de map. Hiermee worden automatisch nieuwe elementen die aan de map zijn toegevoegd, goedgekeurd.
 
-### Wie heeft toegang tot goedgekeurde middelen in Content Hub en welke controles zijn er?
+### Wie heeft toegang tot goedgekeurde middelen in AEM Assets Content Hub en welke controles zijn er?
 
-Goedgekeurde middelen zijn beschikbaar voor gebruikers die deel uitmaken van dezelfde organisatie in Content Hub. Strikte controles zorgen ervoor dat alleen de nieuwste, goedgekeurde versies toegankelijk zijn, waardoor de consistentie en beveiliging van merken behouden blijven.
+Goedgekeurde middelen zijn beschikbaar voor gebruikers die deel uitmaken van dezelfde organisatie in AEM Assets Content Hub. Strikte controles zorgen ervoor dat alleen de nieuwste, goedgekeurde versies toegankelijk zijn, waardoor de consistentie en beveiliging van merken behouden blijven.

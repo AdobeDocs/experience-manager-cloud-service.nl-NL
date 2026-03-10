@@ -4,9 +4,9 @@ description: Leer hoe u een of meer middelen en de bijbehorende uitvoeringen dow
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1342'
 ht-degree: 0%
 
 ---
@@ -19,20 +19,20 @@ Met [!DNL Content Hub] kunt u uw elementen downloaden en delen. In de gebruikers
 
 U kunt één of meerdere activa en hun beschikbare vertoningen downloaden gebruikend [!DNL Content Hub].
 
-Zie de [&#x200B; types van vertoningen beschikbaar in Content Hub &#x200B;](#types-of-renditions).
+Zie de [ types van vertoningen beschikbaar in Content Hub ](#types-of-renditions).
 
 ## Een of meer elementen en de bijbehorende uitvoeringen downloaden {#download-asset-renditions}
 
 Voer de volgende stappen uit om een of meer elementen en de bijbehorende uitvoeringen te downloaden:
 
 * Eén element en de bijbehorende uitvoeringen downloaden:
-   1. Selecteer ![&#x200B; download &#x200B;](/help/assets/assets/download-icon.svg) beschikbaar op de activakaart om voorproef de activa en zijn beschikbare vertoningen.
+   1. Selecteer ![ download ](/help/assets/assets/download-icon.svg) beschikbaar op de activakaart om voorproef de activa en zijn beschikbare vertoningen.
    1. Selecteer de beschikbare uitvoeringen en klik op de optie **[!UICONTROL Download]** in het dialoogvenster om de geselecteerde uitvoeringen als een ZIP-bestand te downloaden. Als in het dialoogvenster een licentie voor middelen wordt weergegeven (voor onder licentie gegeven middelen), accepteert u de licentievoorwaarden en klikt u op **[!UICONTROL Download]** .
-      ![&#x200B; download een activa &#x200B;](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
-Alternatief, klik de activaduimnagel en klik dan ![&#x200B; download &#x200B;](/help/assets/assets/download-icon.svg) om de beschikbare vertoningen op de dialoogdoos te selecteren en te bekijken alvorens hen te downloaden.
+      ![ download een activa ](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+Alternatief, klik de activaduimnagel en klik dan ![ download ](/help/assets/assets/download-icon.svg) om de beschikbare vertoningen op de dialoogdoos te selecteren en te bekijken alvorens hen te downloaden.
 
 * Meerdere elementen en de bijbehorende uitvoeringen downloaden:
-   1. Selecteer de activa, klik ![&#x200B; download &#x200B;](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** en herzie de lijst van geselecteerde activa in het **[!UICONTROL Download assets]** dialoogvakje. Klik ![&#x200B; unselect &#x200B;](/help/assets/assets/Close.svg) naast een activa om het van de lijst ongedaan te maken.
+   1. Selecteer de activa, klik ![ download ](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** en herzie de lijst van geselecteerde activa in het **[!UICONTROL Download assets]** dialoogvakje. Klik ![ unselect ](/help/assets/assets/Close.svg) naast een activa om het van de lijst ongedaan te maken.
    1. Selecteer een of meer uitvoeringen om deze als ZIP-bestand te downloaden. Als u **[!UICONTROL Smart Crop]** en **[!UICONTROL Static Renditions]** selecteert, worden alle beschikbare statische en slimme uitsnijduitvoeringen van elk geselecteerd element gedownload.
    1. Optioneel: Hef de selectie van **[!UICONTROL Create a separate folder for each asset]** op om de geselecteerde elementen en hun uitvoeringen te downloaden als een platte hiërarchie in een map in het ZIP-bestand. Standaard downloadt [!DNL Content Hub] de geselecteerde elementen en hun uitvoeringen in afzonderlijke mappen in een ZIP-bestand.
 
@@ -42,18 +42,18 @@ Alternatief, klik de activaduimnagel en klik dan ![&#x200B; download &#x200B;](/
       > * **[!UICONTROL Create a separate folder for each asset]** is alleen beschikbaar voor geverifieerde [!DNL Content Hub] -gebruikers. Met [!DNL Content Hub] kunnen openbare gebruikers elementen downloaden als afzonderlijke elementen.
 
    1. Klik op **[!UICONTROL Download]** om de geselecteerde elementen en de bijbehorende uitvoeringen te downloaden.
-      ![&#x200B; download veelvoudige activa &#x200B;](/help/assets/assets/bulk-asset-download-content-hub.png)
+      ![ download veelvoudige activa ](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 U kunt [!DNL Content Hub] blijven gebruiken terwijl het downloaden bezig is. Content Hub onderbreekt uw workflow niet tijdens het downloadproces.
-![&#x200B; download veelvoudige activa &#x200B;](/help/assets/assets/download-assets-notification-ch.png)
+![ download veelvoudige activa ](/help/assets/assets/download-assets-notification-ch.png)
 Als in het dialoogvenster **[!UICONTROL Download assets]** licenties voor elementen worden weergegeven, selecteert u elke licentie in het linkerdeelvenster ([!UICONTROL T&C Documents] -sectie) om een voorvertoning van de licentie weer te geven en de geselecteerde elementen die aan de licentie zijn gekoppeld, in het middelste deelvenster van het dialoogvenster weer te geven. Nadat u elke licentie hebt bekeken, selecteert u de uitvoeringen, klikt u op **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** en selecteert u **[!UICONTROL Download]** om deze te downloaden.
-![&#x200B; download veelvoudige activa &#x200B;](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+![ download veelvoudige activa ](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
 >
 >* De vertoningen van vertoningen slechts als hun zicht gebruikend het [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) Gebruikersinterface wordt toegelaten.
 >* Gebruikers met toegang tot [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) kunnen dynamische en slimme uitsnijduitvoeringen weergeven en downloaden.
->* De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de [!DNL Assets as a Cloud Service] -ontwerpomgeving. Voor meer informatie, zie [&#x200B; Gelicentieerde activa op Content Hub &#x200B;](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
+>* De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de [!DNL Assets as a Cloud Service] -ontwerpomgeving. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
 
 <!--
 
@@ -140,19 +140,19 @@ The dialog box that displays depends on whether the download list includes expir
 
 Elementuitvoeringen zijn verschillende weergaven van het oorspronkelijke bestand van een element. Deze uitvoeringen kunnen miniaturen, geoptimaliseerde versies voor web of mobiele apparaten, bestanden met watermerken of DRM-beveiliging of zelfs dynamische elementen zoals slimme gewassen bevatten. Ze hoeven niet overeen te komen met het oorspronkelijke bestandstype, maar ze dienen om het element in verschillende gebruiksgevallen weer te geven.
 
-Leer meer over [&#x200B; mening en beheer vertoningen in  [!DNL Experience Manager Assets]](/help/assets/renditions.md).
+Leer meer over [ mening en beheer vertoningen in  [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
 [!DNL Experience Manager Assets] ondersteunt de volgende typen uitvoeringen:
 
-* [&#x200B; Statische vertoningen &#x200B;](/help/assets/renditions.md#static-renditions): De statische vertoningen zijn pre-gecreeerde versies van digitale activa, typisch geproduceerd tijdens de activaopname of de wijziging. Deze zijn geoptimaliseerd voor specifieke toepassingen en platforms, zoals webminiaturen, mobiele indelingen voor responsieve ontwerpen of bestanden met hoge resolutie voor afdrukken, zodat u over een gestroomlijnde en consistente ervaring beschikt.
+* [ Statische vertoningen ](/help/assets/renditions.md#static-renditions): De statische vertoningen zijn pre-gecreeerde versies van digitale activa, typisch geproduceerd tijdens de activaopname of de wijziging. Deze zijn geoptimaliseerd voor specifieke toepassingen en platforms, zoals webminiaturen, mobiele indelingen voor responsieve ontwerpen of bestanden met hoge resolutie voor afdrukken, zodat u over een gestroomlijnde en consistente ervaring beschikt.
 
-* [&#x200B; Dynamische vertoningen &#x200B;](/help/assets/renditions.md#dynamic-renditions): De dynamische vertoningen zijn in real time, aangepaste versies van activa om diverse acties uit te voeren, zoals het resizing van beelden voor verschillende apparatenresoluties of het bebouwen om diverse aspectverhoudingen te passen. Met deze uitvoeringen kunt u persoonlijke en geoptimaliseerde ervaringen bieden voor bredere vereisten. Dynamische uitvoeringen van elementen worden gemaakt in de [!DNL Adobe Experience Manager Assets] -auteursomgeving. Voor informatie over stappen die worden vereist om Dynamische vertoningen toe te laten, zie [&#x200B; Dynamische vertoningen &#x200B;](#enable-dynamic-media-renditions) toelaten.
+* [ Dynamische vertoningen ](/help/assets/renditions.md#dynamic-renditions): De dynamische vertoningen zijn in real time, aangepaste versies van activa om diverse acties uit te voeren, zoals het resizing van beelden voor verschillende apparatenresoluties of het bebouwen om diverse aspectverhoudingen te passen. Met deze uitvoeringen kunt u persoonlijke en geoptimaliseerde ervaringen bieden voor bredere vereisten. Dynamische uitvoeringen van elementen worden gemaakt in de [!DNL Adobe Experience Manager Assets] -auteursomgeving. Voor informatie over stappen die worden vereist om Dynamische vertoningen toe te laten, zie [ Dynamische vertoningen ](#enable-dynamic-media-renditions) toelaten.
 
-* [&#x200B; Slimme gewas &#x200B;](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamic Media Smart snijdt kunstmatige intelligentie uit, aangedreven door Adobe AI, om het interessepunt bij te houden, zodat onze middelen er optimaal uitzien op alle schermgrootten. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [&#x200B; gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [ Slimme gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamic Media Smart snijdt kunstmatige intelligentie uit, aangedreven door Adobe AI, om het interessepunt bij te houden, zodat onze middelen er optimaal uitzien op alle schermgrootten. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [ gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
-  De slimme vertoning van de Uitsnijdvertoning van het Gewas en is beschikbaar voor download slechts als u toegang tot [&#x200B; Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) hebt. Slimme uitsnijduitvoeringen zijn alleen beschikbaar voor afbeeldingselementen.
+  De slimme vertoning van de Uitsnijdvertoning van het Gewas en is beschikbaar voor download slechts als u toegang tot [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) hebt. Slimme uitsnijduitvoeringen zijn alleen beschikbaar voor afbeeldingselementen.
 
-  ![&#x200B; de types van Uitvoeringen &#x200B;](/help/assets/assets/renditions-types.png)
+  ![ de types van Uitvoeringen ](/help/assets/assets/renditions-types.png)
 
   >[!NOTE]
   > 
@@ -162,13 +162,13 @@ Leer meer over [&#x200B; mening en beheer vertoningen in  [!DNL Experience Manag
 
 Dynamische uitvoeringen inschakelen:
 
-1. Zorg ervoor dat u toegang tot [&#x200B; Dynamische Media met mogelijkheden OpenAPI &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) hebt.
+1. Zorg ervoor dat u toegang tot [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) hebt.
 
    Zodra u toegang hebt tot Dynamic Media met OpenAPI-mogelijkheden, zijn alle als `Approved` gemarkeerde middelen beschikbaar voor openbare levering met behulp van Dynamic Media.
 
-1. Plaats het [&#x200B; goedkeuringsdoel van de activa &#x200B;](/help/assets/approve-assets-content-hub.md#set-approval-target) aan Content Hub om activa slechts voor Content Hub goed te keuren.
+1. Plaats het [ goedkeuringsdoel van de activa ](/help/assets/approve-assets-content-hub.md#set-approval-target) aan Content Hub om activa slechts voor Content Hub goed te keuren.
 
-1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [&#x200B; 3&rbrace; Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
+1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3} Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
 
 1. Sla de bestaande voorinstellingen voor afbeeldingen opnieuw op om deze beschikbaar te maken op Content Hub. Deze optie is alleen van toepassing als u onlangs bent aangemeld bij Dynamic Media met OpenAPI.
 
@@ -184,7 +184,7 @@ Dynamische uitvoeringen inschakelen:
 
 ### Hoe kan ik één middel of meerdere activa van AEM Assets Content Hub downloaden?
 
-Als u één element wilt downloaden, klikt u op het downloadpictogram op de elementenkaart. Selecteer meerdere elementen en klik op Downloaden op de actiebalk. Content Hub begint de elementen in de oorspronkelijke uitvoering te downloaden als downloaden is ingeschakeld door de beheerder. Als er elementuitvoeringen beschikbaar zijn, kunt u specifieke uitvoeringen selecteren voordat u gaat downloaden.
+Als u één element wilt downloaden in AEM Assets Content Hub, klikt u op het downloadpictogram op de elementenkaart. Selecteer meerdere elementen en klik op Downloaden op de actiebalk. Content Hub begint de elementen in de oorspronkelijke uitvoering te downloaden als downloaden is ingeschakeld door de beheerder. Als er elementuitvoeringen beschikbaar zijn, kunt u specifieke uitvoeringen selecteren voordat u gaat downloaden.
 
 ### Is er een configuratie die door de beheerder in AEM Assets Content Hub wordt beheerd om Gebruikers toe te staan originele activa te downloaden of beschikbaarheid van vertoningen toe te laten?
 
@@ -192,15 +192,15 @@ Ja, kunnen de beheerders **toelaten of onbruikbaar maken toelaten beschikbaarhei
 
 ### Wat zijn asset renditions en welke typen zijn er beschikbaar in AEM Assets Content Hub?
 
-Elementuitvoeringen zijn verschillende weergaven van het oorspronkelijke elementbestand, op maat gemaakt voor verschillende gebruiksgevallen. Tot de typen behoren statische uitvoeringen (zoals miniaturen, geoptimaliseerde versies voor het web of voor mobiele apparaten of bestanden met hoge resolutie voor afdrukken), aangepaste statische uitvoeringen en dynamische uitvoeringen (inclusief versies voor slim uitsnijden). Statische uitvoeringen worden vooraf gegenereerd, terwijl dynamische uitvoeringen in real-time worden gemaakt op basis van een aanvraag.
+Elementuitvoeringen in AEM Assets Content Hub zijn verschillende weergaven van het oorspronkelijke elementbestand, op maat gemaakt voor verschillende gebruiksgevallen. Tot de typen behoren statische uitvoeringen (zoals miniaturen, geoptimaliseerde versies voor het web of voor mobiele apparaten of bestanden met hoge resolutie voor afdrukken), aangepaste statische uitvoeringen en dynamische uitvoeringen (inclusief versies voor slim uitsnijden). Statische uitvoeringen worden vooraf gegenereerd, terwijl dynamische uitvoeringen in real-time worden gemaakt op basis van een aanvraag.
 
 ### Hoe werkt Smart Crop met middelen in AEM Assets Content Hub?
 
-Slim uitsnijden is een door AI aangedreven functie die het belangrijkste deel van een afbeelding identificeert en er op intelligente wijze omheen uitsnijdt. Dit zorgt ervoor dat visuele weergave op verschillende schermen en indelingen geweldig is. Smart Crop-uitvoeringen zijn beschikbaar voor afbeeldingselementen als uw organisatie ondersteuning biedt voor dynamische mediamogelijkheden.
+Smart Crop in AEM Assets Content Hub is een door AI aangedreven functie die het belangrijkste deel van een afbeelding identificeert en er op intelligente wijze omheen bijsnijdt. Dit zorgt ervoor dat visuele weergave op verschillende schermen en indelingen geweldig is. Smart Crop-uitvoeringen zijn beschikbaar voor afbeeldingselementen als uw organisatie ondersteuning biedt voor dynamische mediamogelijkheden.
 
 ### Hoe schakel ik Dynamische uitvoeringen in AEM Assets Content Hub in?
 
-Dynamische uitvoeringen inschakelen:
+Dynamische uitvoeringen inschakelen in AEM Assets Content Hub:
 
 * Zorg ervoor dat Dynamische media met OpenAPI-mogelijkheden is ingeschakeld. Goedgekeurde middelen zijn dan beschikbaar voor openbare levering.
 
@@ -212,9 +212,9 @@ Dynamische uitvoeringen inschakelen:
 
 Dynamische uitvoeringen worden alleen ondersteund voor afbeeldingselementen.
 
-### Hoe kan ik elementuitvoeringen downloaden in Content Hub?
+### Hoe kan ik de uitvoeringen van middelen downloaden in AEM Assets Content Hub?
 
-Als u uitvoeringen wilt downloaden, selecteert u het element en klikt u op de downloadactie. Als uitvoeringen zijn ingeschakeld door de beheerder, wordt een dialoogvenster weergegeven waarin u kunt kiezen welke uitvoeringen u wilt downloaden. Accepteer de licentievoorwaarden voor gelicentieerde activa voordat u deze downloadt. Voor meerdere elementen selecteert u de elementen, kiest u uitvoeringen en downloadt u deze als ZIP-bestand. U kunt alle beschikbare uitvoeringen selecteren of specifieke uitvoeringen zoals statische of dynamische uitvoeringen.
+Als u uitvoeringen in AEM Assets Content Hub wilt downloaden, selecteert u het element en klikt u op de downloadactie. Als uitvoeringen zijn ingeschakeld door de beheerder, wordt een dialoogvenster weergegeven waarin u kunt kiezen welke uitvoeringen u wilt downloaden. Accepteer de licentievoorwaarden voor gelicentieerde activa voordat u deze downloadt. Voor meerdere elementen selecteert u de elementen, kiest u uitvoeringen en downloadt u deze als ZIP-bestand. U kunt alle beschikbare uitvoeringen selecteren of specifieke uitvoeringen zoals statische of dynamische uitvoeringen.
 
 
 

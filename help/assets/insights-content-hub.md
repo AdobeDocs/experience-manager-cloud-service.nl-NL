@@ -4,28 +4,28 @@ description: Leer hoe u inzicht in elementen kunt weergeven in  [!DNL Content Hu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
 
 # Assets Insights in [!DNL Content Hub] {#assets-insights}
 
-![&#x200B; de inzichten van Assets &#x200B;](assets/asset-insights-banner.jpg)
+![ de inzichten van Assets ](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] biedt waardevolle inzichten in middelen, waarmee een veelvoorkomende uitdaging wordt aangepakt die marketingbelanghebbenden vaak ondervinden - statistieken over het gebruik van bedrijfsmiddelen die worden gebruikt in marketingcampagnes, kanalen en verschillende regio&#39;s. Door een duidelijk inzicht te krijgen in de prestaties en populariteit van de middelen, biedt het actioneerbare inzichten die essentieel zijn voor het verbeteren van de gebruikerservaring.
 
 ## Vereisten {#prerequisites}
 
-[&#x200B; de gebruikers van Content Hub &#x200B;](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
+[ de gebruikers van Content Hub ](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
 
 ## Statistieken voor geüploade elementen weergeven{#view-statistics-for-uploaded-assets}
 
 U kunt statistieken van de geüploade elementen en verzamelingen weergeven door naar het tabblad **[!UICONTROL Insights]** te navigeren. Volg de uploadgeschiedenis van uw activa met de jaarlijkse, maandelijkse, en dagelijkse activa uploadt mening.
 
-![&#x200B; upload activa statistieken &#x200B;](assets/assets-insights.jpg)
+![ upload activa statistieken ](assets/assets-insights.jpg)
 
 <!-- You can track the upload history of your assets over the past 30 days or gain a more comprehensive view with data spanning the last 12 months. This feature enables you to evaluate the upload count of assets.  -->
 
@@ -43,7 +43,7 @@ De tabel bevat een gedetailleerd overzicht van de verschillende activa, met inbe
 
 Het cirkeldiagram geeft visueel de totale telling van activa door dossierformaat weer, die een duidelijke illustratie van individuele activa en hun overeenkomstige percentages verstrekken.
 
-![&#x200B; telling van activa door activa type statistieken &#x200B;](assets/insights-categorial-view.jpg)
+![ telling van activa door activa type statistieken ](assets/insights-categorial-view.jpg)
 
 U kunt ook het volgende weergeven:
 
@@ -58,18 +58,18 @@ U kunt ook het volgende weergeven:
 
 Assets Insights in AEM Assets Content Hub biedt waardevolle gegevens over statistieken over het gebruik van bedrijfsmiddelen in verschillende campagnes, kanalen en regio&#39;s, zodat marketingbelanghebbenden de prestaties en populariteit van bedrijfsmiddelen beter kunnen begrijpen voor een betere gebruikerservaring.
 
-### Wie heeft toegang tot de functies die worden beschreven in Assets Insights?
+### Wie heeft toegang tot de functies die worden beschreven in Assets Insights in AEM Assets Content Hub?
 
-Content Hub-gebruikers kunnen de handelingen uitvoeren en toegang krijgen tot de functies die worden vermeld in de sectie Assets Insights.
+AEM Assets Content Hub-gebruikers kunnen de handelingen uitvoeren en toegang krijgen tot de functies die worden vermeld in de sectie Assets Insights.
 
-### Welke elementinzichten zijn beschikbaar op het tabblad Inzichten?
+### Welke inzichten van middelen zijn beschikbaar op het tabblad Insights van AEM Assets Content Hub?
 
-U kunt het aantal middelen in de bewaarplaats, het aantal inzamelingen bekijken, uploadt Assets door jaar, maand, of dag, actieve gebruikers door dag of maand, en activa classificatie gebaseerd op dossierformaten.
+U kunt het aantal middelen in de bewaarplaats, het aantal inzamelingen bekijken, uploadt Assets door jaar, maand, of dag, actieve gebruikers door dag of maand, en activa classificatie die op dossierformaten binnen AEM Assets Content Hub wordt gebaseerd.
 
 ### Hoe kan ik statistieken bekijken voor geüploade activa in AEM Assets Content Hub?
 
-U kunt statistieken voor geüploade activa en inzamelingen bekijken door aan het lusje van Inzichten te navigeren, waar u de uploadgeschiedenis door jaar, maand, of dag kunt volgen.
+U kunt statistieken voor geüploade elementen en verzamelingen in AEM Assets Content Hub bekijken door naar het tabblad Inzichten te navigeren. Hier kunt u de uploadgeschiedenis per jaar, maand of dag bijhouden.
 
-### Welke metriek kan ik met betrekking tot gebruikersactiviteit in Content Hub analyseren?
+### Welke meetgegevens kan ik analyseren met betrekking tot gebruikersactiviteit in AEM Assets Content Hub?
 
-U kunt het aantal actieve gebruikers per dag of per maand analyseren, die visueel wordt vertegenwoordigd door een lijngrafiek te gebruiken.
+U kunt het aantal actieve gebruikers per dag of per maand analyseren. Dit wordt visueel weergegeven met een lijngrafiek in AEM Assets Content Hub.

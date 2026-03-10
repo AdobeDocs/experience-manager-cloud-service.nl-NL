@@ -4,9 +4,9 @@ description: Leer hoe te om op Attributen-gebaseerde toegangsbeheer toe te laten
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Op attributen-gebaseerde toegangsbeheer (ABAC) staat de Beheerders van Content Hub toe om op meta-gegevens-gebaseerde regels te bepalen om het niveau van toegang tot activa te bepalen beschikbaar in Content Hub.
 
-De beheerders voor een organisatie bepalen regels voor gebruikersgroepen, die aan een identiteitskaart van de Groep in kaart worden gebracht. De regels zijn een mengeling van [&#x200B; logische en vergelijkingsexploitanten &#x200B;](#supported-rule-constructs) en Admins kunnen zo vele regels bepalen aangezien zij activa toegang binnen Content Hub moeten beheren.
+De beheerders voor een organisatie bepalen regels voor gebruikersgroepen, die aan een identiteitskaart van de Groep in kaart worden gebracht. De regels zijn een mengeling van [ logische en vergelijkingsexploitanten ](#supported-rule-constructs) en Admins kunnen zo vele regels bepalen aangezien zij activa toegang binnen Content Hub moeten beheren.
 
 De regels zijn gebaseerd op metagegevens en als de voorwaarden die in de regel zijn gedefinieerd overeenkomen met de metagegevens van het element, wordt het element weergegeven aan de gebruikersgroep. Content Hub scant de activa meta-gegevens met inbegrip van de douanemetagegevens voor alle activa beschikbaar binnen **Alle Assets** en **Inzamelingen** om de resultaten aan gebruikersgroepen te tonen.
 
@@ -29,7 +29,7 @@ Enkele zeer belangrijke voordelen van op attribuut-gebaseerde toegangsbeheer omv
 
 * Vermindert het aantal duplicaten - verbetert de integriteit van elementen. Er zijn dubbele machtigingen nodig in op mappen gebaseerde machtigingen wanneer dezelfde elementen met verschillende groepen worden gedeeld.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475420/?captions=dut&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Hoe te om op Attribuut-Gebaseerd toegangsbeheer toe te laten? {#enable-attribute-based-access-control}
 
@@ -37,7 +37,7 @@ Op dit moment kunt u op kenmerken gebaseerde toegangsbeheerregels niet zelf make
 
 Klik **Spreadsheet van de Download** om regels in een spreadsheet te downloaden en te bepalen. Maak een Adobe-ondersteuningsticket en verstrek de regels die in het spreadsheet zijn gedefinieerd aan Adobe.
 
-[!BADGE &#x200B; Spreadsheet van de Download &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
+[!BADGE  Spreadsheet van de Download ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Definieer regels in het werkblad aan de hand van de richtlijnen die in dit artikel zijn gedefinieerd.
@@ -71,7 +71,7 @@ Met deze regels hebben Content Hub-beheerders het volgende:
 
 >[!IMPORTANT]
 >
-> Door gebrek, worden alle andere gebruikersgroepen, die niet met om het even welke regels in het [&#x200B; spreadsheet &#x200B;](#enable-attribute-based-access-control) worden gespecificeerd, ontzegd toegang. Als een gebruiker geen deel van om het even welke groep uitmaakt waarvoor de regels ABAC worden bepaald, kunnen zij tot geen activa toegang hebben. Als u sommige gebruikers toegang tot alle activa (bijvoorbeeld, Admins) moet hebben, moet een groep met een groepsidentiteitskaart in spreadsheet met de details worden vermeld die deze bepaalde groep toegang tot alle activa vereist en Adobe zal het voor u vormen.
+> Door gebrek, worden alle andere gebruikersgroepen, die niet met om het even welke regels in het [ spreadsheet ](#enable-attribute-based-access-control) worden gespecificeerd, ontzegd toegang. Als een gebruiker geen deel van om het even welke groep uitmaakt waarvoor de regels ABAC worden bepaald, kunnen zij tot geen activa toegang hebben. Als u sommige gebruikers toegang tot alle activa (bijvoorbeeld, Admins) moet hebben, moet een groep met een groepsidentiteitskaart in spreadsheet met de details worden vermeld die deze bepaalde groep toegang tot alle activa vereist en Adobe zal het voor u vormen.
 
 
 ## Ondersteunde regelconstructies {#supported-rule-constructs}
@@ -89,14 +89,14 @@ Hierdoor kunt u eenvoudige en expressieve regels schrijven, zoals: ALLOW if regi
 
 ## Richtsnoeren {#guidelines-attribute-based-access-control}
 
-* De ABAC-regels zijn alleen van toepassing op activa die zijn goedgekeurd voor Content Hub. Voor meer informatie, zie [&#x200B; Assets voor Content Hub &#x200B;](/help/assets/approve-assets-content-hub.md) goedkeuren.
+* De ABAC-regels zijn alleen van toepassing op activa die zijn goedgekeurd voor Content Hub. Voor meer informatie, zie [ Assets voor Content Hub ](/help/assets/approve-assets-content-hub.md) goedkeuren.
 
 * Geef geen DENY-regels, maar zet DENY altijd om in ALLOW-regel. `ALLOW if region = <user-region> DENY if assetType = prototype AND confidential = yes` kan bijvoorbeeld worden omgezet in `ALLOW if region = <user-region> AND (assetType != prototype OR confidential != yes)` .
 
 * ABAC-regels worden toegepast op gebruikersgroepen met behulp van de IMS Group ID, die beschikbaar is in de Admin Console.
 
 
-* U kunt het [&#x200B; Doel van de Goedkeuring &#x200B;](/help/assets/approve-assets-content-hub.md#set-approval-target) voor activa plaatsen gebruikend het auteursmilieu van AEM as a Cloud Service. ABAC-regels worden toegepast op elementen die zijn goedgekeurd met Goedkeuringsdoel = `Content Hub` , aangezien Goedkeuringsdoel = `Delivery` is voor elementen die beschikbaar zijn voor `Delivery` + `Content Hub` . Assets gemarkeerd als Approval Target = `Delivery` zijn zichtbaar voor alle gebruikers in de inhoudshub.
+* U kunt het [ Doel van de Goedkeuring ](/help/assets/approve-assets-content-hub.md#set-approval-target) voor activa plaatsen gebruikend het auteursmilieu van AEM as a Cloud Service. ABAC-regels worden toegepast op elementen die zijn goedgekeurd met Goedkeuringsdoel = `Content Hub` , aangezien Goedkeuringsdoel = `Delivery` is voor elementen die beschikbaar zijn voor `Delivery` + `Content Hub` . Assets gemarkeerd als Approval Target = `Delivery` zijn zichtbaar voor alle gebruikers in de inhoudshub.
 
 * Zorg ervoor dat de metagegevensschema&#39;s die in ABAC-regels worden gebruikt, correct zijn gedefinieerd en beschikbaar zijn in AEM. Geef het volledige pad op van de metagegevensschema&#39;s in AEM die eigenschappen definiëren waarnaar in ABAC-regels wordt verwezen. U kunt desgewenst een testmap maken met een paar voorbeeldbestanden met metagegevenswaarden die overeenkomen met de ABAC-voorwaarden. Dit helpt bij het verifiëren van regelgedrag en het nauwkeurig evalueren van toegang.
 
@@ -114,7 +114,7 @@ Op attributen-gebaseerde Toegangscontrole (ABAC) in AEM Assets Content Hub staat
 
 Beheerders definiëren toegangsregels door voorwaarden te maken op basis van metagegevens van elementen, zoals merk of regio, en deze aan specifieke gebruikersgroep-id&#39;s te koppelen. Deze regels gebruiken logische (AND, OR) en vergelijkingsexploitanten (evenaart, niet evenaart) om precies te specificeren welke activa zichtbaar zijn aan welke gebruikersgroepen.
 
-### Wat zijn de belangrijkste voordelen om ABAC over traditionele op omslag-gebaseerde toestemmingen te gebruiken?
+### Wat zijn de belangrijkste voordelen van ABAC over traditionele op omslag-gebaseerde toestemmingen in AEM Assets Content Hub?
 
 ABAC elimineert de afhankelijkheid van omslagstructuren voor toestemmingen, staat beheerders toe om activa te uploaden en toestemmingen retroactief toe te wijzen, en vermindert het aantal dubbele noodzakelijke activa. Dit verbetert de integriteit van elementen en vereenvoudigt het beheer van machtigingen, vooral wanneer elementen met meerdere groepen moeten worden gedeeld.
 
@@ -130,7 +130,7 @@ ABAC-regels in AEM Assets Content Hub kunnen logische operatoren zoals AND en OR
 
 ABAC is nuttig voor organisaties met grote teams omdat het korrelige, op regel-gebaseerde toegang tot activa toelaat die op gebruikersrollen, gebieden, of merken wordt gebaseerd. Het zorgt ervoor dat gebruikers alleen activa zien die relevant zijn voor hun verantwoordelijkheden, zonder handmatige toewijzingen of buitensporige duplicatie van activa.
 
-### Hoe moeten beheerders de ABAC-spreadsheet voorbereiden voordat ze deze naar Adobe Support verzenden?
+### Hoe moeten beheerders het ABAC-spreadsheet voorbereiden voor AEM Assets Content Hub voordat ze het indienen bij Adobe Support?
 
 Beheerders moeten gebruikersgroepen maken in de Adobe Admin Console, hun groep-id&#39;s noteren en de machtigingen en voorwaarden voor elke groep in het werkblad duidelijk definiëren. Zij zouden ervoor moeten zorgen alle meta-gegevenseigenschappen correct aan de aangewezen schema&#39;s in kaart worden gebracht, en de kolom van Commentaren gebruiken om de bedrijfsintentie van elke regel te verduidelijken, die het voor Adobe gemakkelijker maken om de regels te bevestigen en uit te voeren.
 

@@ -4,9 +4,9 @@ description: Leer hoe u uw door een merk goedgekeurde middelen uploadt naar Cont
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 0%
 >title="Door een merk goedgekeurde middelen uploaden naar Content Hub"
 >abstract="Voeg goedgekeurde middelen toe aan Content Hub via een lokaal bestandssysteem of importeer elementen van OneDrive- of Dropbox-gegevensbronnen. Alle middelen worden op het hoogste niveau in Content Hub weergegeven, ongeacht de mapstructuur, om de zoekmogelijkheden te verbeteren."
 
-[&#x200B; de gebruikers van Content Hub met rechten om activa &#x200B;](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen activa aan Content Hub of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
+[ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen activa aan Content Hub of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445382/?captions=dut&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
-De elementen die in Assets as a Cloud Service als `Approved` zijn gemarkeerd, zijn automatisch beschikbaar in Content Hub. Voor meer informatie, zie [&#x200B; activa voor Content Hub &#x200B;](/help/assets/approve-assets-content-hub.md) goedkeuren.
+De elementen die in Assets as a Cloud Service als `Approved` zijn gemarkeerd, zijn automatisch beschikbaar in Content Hub. Voor meer informatie, zie [ activa voor Content Hub ](/help/assets/approve-assets-content-hub.md) goedkeuren.
 
 Content Hub biedt u de volgende mogelijkheden om uw assetzoekopdracht verder te verbeteren:
 
@@ -30,15 +30,15 @@ Content Hub biedt u de volgende mogelijkheden om uw assetzoekopdracht verder te 
 
 * Automatisch meer eigenschappen genereren voor elk element bij een correct geüpload object, zoals bestandsgrootte, indeling, resolutie en enkele andere eigenschappen.
 
-* Gebruik de kunstmatige intelligentie die door [&#x200B; wordt verstrekt Adobe AI &#x200B;](https://business.adobe.com/ai/adobe-genai.html) om relevante markeringen op al uw geupload activa automatisch toe te passen. Deze labels, met de juiste naam Slimme tags, verhogen de snelheid van de inhoud van uw projecten door u te helpen snel relevante elementen te vinden.
+* Gebruik de kunstmatige intelligentie die door [ wordt verstrekt Adobe AI ](https://business.adobe.com/ai/adobe-genai.html) om relevante markeringen op al uw geupload activa automatisch toe te passen. Deze labels, met de juiste naam Slimme tags, verhogen de snelheid van de inhoud van uw projecten door u te helpen snel relevante elementen te vinden.
 
-Zorg ervoor dat u slechts uw [&#x200B; merk goedgekeurde activa aan Content Hub &#x200B;](/help/assets/approve-assets.md) uploadt.
+Zorg ervoor dat u slechts uw [ merk goedgekeurde activa aan Content Hub ](/help/assets/approve-assets.md) uploadt.
 
-![&#x200B; uploadt brand goedgekeurde activa &#x200B;](assets/upload-brand-approved-assets.png)
+![ uploadt brand goedgekeurde activa ](assets/upload-brand-approved-assets.png)
 
 ## Vereisten {#prerequisites-add-assets}
 
-[&#x200B; de gebruikers van Content Hub met rechten om activa toe te voegen &#x200B;](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) kan activa aan Content Hub uploaden.
+[ de gebruikers van Content Hub met rechten om activa toe te voegen ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) kan activa aan Content Hub uploaden.
 
 ## Elementen toevoegen aan Content Hub vanuit een lokaal bestandssysteem {#add-assets-local-file-system}
 
@@ -53,7 +53,7 @@ Voer de volgende stappen uit om elementen aan Content Hub toe te voegen:
 
    Als u het uploadproces wilt voltooien en **[!UICONTROL Upload button]** wilt inschakelen, moet u uw elementen groeperen onder een campagnenaam.
 
-   ![&#x200B; upload activa aan Content Hub &#x200B;](assets/upload-assets-content-hub.png)
+   ![ upload activa aan Content Hub ](assets/upload-assets-content-hub.png)
 
 1. Definieer de naam voor het uploaden met behulp van het veld **[!UICONTROL Campaign name]** . U kunt een bestaande naam gebruiken of een nieuwe naam maken. De Content Hub biedt u meer opties terwijl u de naam typt. <!--You can define multiple Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.-->
 
@@ -65,43 +65,43 @@ Voer de volgende stappen uit om elementen aan Content Hub toe te voegen:
 
 1. Assets begint met uploaden. Klik op [!UICONTROL New Upload] om de uploadprocedure opnieuw te starten. Klik op [!UICONTROL Done] om het uploaden te voltooien.
 
-Beheerders kunnen ook de verplichte en optionele velden configureren die worden weergegeven tijdens het uploaden van elementen, zoals de naam van een campagne, trefwoorden, kanalen enzovoort. Voor meer informatie, zie [&#x200B; het gebruikersinterface van Content Hub &#x200B;](configure-content-hub-ui-options.md#configure-upload-options-content-hub) vormen.
+Beheerders kunnen ook de verplichte en optionele velden configureren die worden weergegeven tijdens het uploaden van elementen, zoals de naam van een campagne, trefwoorden, kanalen enzovoort. Voor meer informatie, zie [ het gebruikersinterface van Content Hub ](configure-content-hub-ui-options.md#configure-upload-options-content-hub) vormen.
 
 ## Middelen beheren die met Content Hub zijn geüpload {#manage-assets-uploaded-using-content-hub}
 
-[&#x200B; de gebruikers van Content Hub met rechten om activa &#x200B;](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen [&#x200B; activa aan Content Hub &#x200B;](/help/assets/upload-brand-approved-assets.md) of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
+[ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen [ activa aan Content Hub ](/help/assets/upload-brand-approved-assets.md) of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
 
-De vertoning van activa die gebruikend Content Hub worden geupload hangt af van als u [&#x200B; de auto-goedkeuringsknevel &#x200B;](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) hebt toegelaten:
+De vertoning van activa die gebruikend Content Hub worden geupload hangt af van als u [ de auto-goedkeuringsknevel ](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) hebt toegelaten:
 
 * Als de schakeloptie **[!UICONTROL Auto-approval]** is ingeschakeld, zijn de elementen die u uploadt met Content Hub automatisch beschikbaar.
 
-* Als de schakeloptie **[!UICONTROL Auto-approval]** is uitgeschakeld, worden de elementen die u uploadt met Content Hub niet automatisch weergegeven. De middelen zijn beschikbaar in de map `hydrated-assets` van uw Assets as a Cloud Service-omgeving. Navigeer aan de omslag en [&#x200B; bulkgeef &#x200B;](#bulk-approve-assets-content-hub) het statuut van die activa `Approved` voor die activa uit om in Content Hub te tonen.
+* Als de schakeloptie **[!UICONTROL Auto-approval]** is uitgeschakeld, worden de elementen die u uploadt met Content Hub niet automatisch weergegeven. De middelen zijn beschikbaar in de map `hydrated-assets` van uw Assets as a Cloud Service-omgeving. Navigeer aan de omslag en [ bulkgeef ](#bulk-approve-assets-content-hub) het statuut van die activa `Approved` voor die activa uit om in Content Hub te tonen.
 
-![&#x200B; Content Hub goedkeuringsproces &#x200B;](/help/assets/assets/content-hub-approval.png)
+![ Content Hub goedkeuringsproces ](/help/assets/assets/content-hub-approval.png)
 
 ## Veelgestelde vragen {#faqs-content-hub-upload-assets}
 
-### Welke typen middelen kan ik uploaden naar Content Hub en vanaf waar? {#asset-types-upload-to-content-hub}
+### Welke typen middelen kan ik uploaden naar AEM Assets Content Hub en vanaf waar? {#asset-types-upload-to-content-hub}
 
-Content Hub-gebruikers met rechten om elementen toe te voegen, kunnen via hun lokale bestandssysteem goedgekeurde middelen uploaden. Alle geüploade middelen, ongeacht de oorspronkelijke mapstructuur, worden op het hoogste niveau in Content Hub weergegeven om de zoekmogelijkheden te verbeteren.
+AEM Assets Content Hub-gebruikers met rechten om elementen toe te voegen, kunnen via hun lokale bestandssysteem goedgekeurde middelen uploaden. Alle geüploade middelen, ongeacht de oorspronkelijke mapstructuur, worden op het hoogste niveau in Content Hub weergegeven om de zoekmogelijkheden te verbeteren.
 
-### Hoe verbetert Content Hub het zoeken naar en de organisatie van bedrijfsmiddelen? {#search-content-hub}
+### Hoe verbetert AEM Assets Content Hub het zoeken naar en de organisatie van bedrijfsmiddelen? {#search-content-hub}
 
-Content Hub verbetert het zoeken naar middelen en de organisatie ervan door gebruikers toe te staan om belangrijke details voor elke upload, zoals campagnenaam, sleutelwoorden, kanalen, timeframe, en gebied te bepalen. Er worden ook automatisch aanvullende eigenschappen voor elk element gegenereerd (zoals bestandsgrootte, indeling en resolutie) en Adobe AI wordt gebruikt om slimme tags toe te passen, waardoor het eenvoudiger en sneller wordt om relevante elementen te zoeken.
+AEM Assets Content Hub verbetert het zoeken naar middelen en de organisatie ervan door gebruikers toe te staan om belangrijke details voor elke upload, zoals campagnenaam, sleutelwoorden, kanalen, timeframe, en regio te bepalen. Er worden ook automatisch aanvullende eigenschappen voor elk element gegenereerd (zoals bestandsgrootte, indeling en resolutie) en Adobe AI wordt gebruikt om slimme tags toe te passen, waardoor het eenvoudiger en sneller wordt om relevante elementen te zoeken.
 
-### Hoe kan ik middelen van mijn lokale bestandssysteem uploaden naar Content Hub? {#upload-assets-content-hub}
+### Hoe kan ik middelen van mijn lokale bestandssysteem uploaden naar AEM Assets Content Hub? {#upload-assets-content-hub}
 
-Om activa van uw lokaal dossiersysteem te uploaden, klik **toevoegen Assets** om de upload dialoog te openen. U kunt bestanden of mappen slepen en neerzetten, of handmatig bladeren om ze te selecteren. U moet uw elementen groeperen onder een naam van een campagne en u kunt het beste andere velden, zoals trefwoorden, kanalen, tijdframes en regio, invullen voor een betere organisatie. Zodra klaar, klik **uploaden**, herzie de details, en bevestig om te beginnen uploaden.
+Om activa van uw lokaal dossiersysteem aan AEM Assets Content Hub te uploaden, klik **voeg Assets** toe om de upload dialoog te openen. U kunt bestanden of mappen slepen en neerzetten, of handmatig bladeren om ze te selecteren. U moet uw elementen groeperen onder een naam van een campagne en u kunt het beste andere velden, zoals trefwoorden, kanalen, tijdframes en regio, invullen voor een betere organisatie. Zodra klaar, klik **uploaden**, herzie de details, en bevestig om te beginnen uploaden.
 
-### Hoe werkt het goedkeuringsproces voor bedrijfsmiddelen in Content Hub? {#asset-approval-content-hub}
+### Hoe werkt het goedkeuringsproces voor bedrijfsmiddelen in AEM Assets Content Hub? {#asset-approval-content-hub}
 
-Als de schakeloptie Automatische goedkeuring is ingeschakeld, worden elementen die met Content Hub zijn geüpload automatisch beschikbaar. Als het gehandicapt is, worden de geuploade activa geplaatst in de **hydrated-activa** omslag in Assets as a Cloud Service, en u moet hun status aan **manueel in bulk uitgeven Goedgekeurd** om hen te maken tonen in Content Hub.
+Als de schakeloptie Automatische goedkeuring is ingeschakeld, worden elementen die met AEM Assets Content Hub zijn geüpload automatisch beschikbaar. Als het gehandicapt is, worden de geuploade activa geplaatst in de **hydrated-activa** omslag in Assets as a Cloud Service, en u moet hun status aan **manueel in bulk uitgeven Goedgekeurd** om hen te maken tonen in Content Hub.
 
-### Kan ik de velden configureren die verplicht of optioneel zijn tijdens het uploaden van elementen naar Content Hub? {#available-fields-while-uploading-assets-to-content-hub}
+### Kan ik de velden configureren die verplicht of optioneel zijn tijdens het uploaden van elementen naar AEM Assets Content Hub? {#available-fields-while-uploading-assets-to-content-hub}
 
-Beheerders kunnen de gebruikersinterface van Configuratie gebruiken om de velden te definiëren die verplicht of optioneel zijn tijdens het uploaden van elementen naar Content Hub.
+Beheerders kunnen de gebruikersinterface van de Configuratie gebruiken om de velden te definiëren die verplicht of optioneel zijn tijdens het uploaden van elementen naar AEM Assets Content Hub.
 
-### Wat moet ik doen als mijn geüploade middelen niet automatisch worden weergegeven in Content Hub? {#assets-do-not-display-in-content-hub}
+### Wat moet ik doen als mijn geüploade middelen niet automatisch worden weergegeven in AEM Assets Content Hub? {#assets-do-not-display-in-content-hub}
 
-Als elementen niet automatisch worden weergegeven, betekent dit dat de schakeloptie voor automatische goedkeuring is uitgeschakeld. De activa worden gevestigd in de **hydrated-activa** omslag van uw milieu van Assets as a Cloud Service. U moet in bulk hun status aan **Goedgekeurd** voor hen uitgeven om in Content Hub te verschijnen.
+Als elementen niet automatisch worden weergegeven in AEM Assets Content Hub, betekent dit dat de schakeloptie voor automatische goedkeuring is uitgeschakeld. De activa worden gevestigd in de **hydrated-activa** omslag van uw milieu van Assets as a Cloud Service. U moet in bulk hun status aan **Goedgekeurd** voor hen uitgeven om in Content Hub te verschijnen.
 

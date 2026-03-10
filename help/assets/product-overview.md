@@ -3,9 +3,9 @@ title: Content Hub - Overzicht
 description: Lees meer over Content Hub, de belangrijkste voordelen, hoe u er toegang toe krijgt en hoe u feedback kunt geven over de beschikbare opties in Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="van toepassing op AEM Assets)."
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
@@ -18,13 +18,13 @@ Content Hub is beschikbaar als onderdeel van Experience Manager Assets as a Clou
 
 >[!IMPORTANT]
 >
->[&#x200B; Assets Ultimate &#x200B;](/help/assets/assets-ultimate-overview.md) en Assets as a Cloud Service omvatten 250 Beperkte gebruikers van Content Hub. [&#x200B; Assets Prime &#x200B;](/help/assets/assets-prime.md) omvat 50 Beperkte gebruikers van Content Hub.
+>[ Assets Ultimate ](/help/assets/assets-ultimate-overview.md) en Assets as a Cloud Service omvatten 250 Beperkte gebruikers van Content Hub. [ Assets Prime ](/help/assets/assets-prime.md) omvat 50 Beperkte gebruikers van Content Hub.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
-## Waarom Content Hub?
+## Waarom AEM Assets Content Hub?
 
-Content Hub biedt de volgende belangrijke voordelen:
+AEM Assets Content Hub biedt de volgende belangrijke voordelen:
 
 **vind en deel alle merk goedgekeurde activa beschikbaar in een intuïtief portaal**
 
@@ -42,19 +42,19 @@ Met Content Hub kunt u nieuwe inhoud maken met Adobe Express (als u Adobe Expres
 
 Content Hub vereist een productieontwerpomgeving van Experience Manager as a Cloud Service, versie 2024.6 of hoger (minimale versie is 2024.6.16799).
 
-## Hoe kan ik Content Hub openen? {#access-content-hub}
+## Hoe kan ik AEM Assets Content Hub benaderen? {#access-content-hub}
 
-[&#x200B; na vestiging Content Hub &#x200B;](/help/assets/deploy-content-hub.md) en het toevoegen van een gebruiker aan het [&#x200B; het productprofiel van Content Hub &#x200B;](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), kan Content Hub worden betreden gebruikend de volgende manieren:
+[ na vestiging Content Hub ](/help/assets/deploy-content-hub.md) en het toevoegen van een gebruiker aan het [ het productprofiel van Content Hub ](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), kan Content Hub worden betreden gebruikend de volgende manieren:
 
 * Gebruik de volgende koppeling om Content Hub te openen:
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* Logon aan [&#x200B; experience.adobe.com &#x200B;](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=exc_app&scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&locale=en_GB&flow_type=token&dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&idp_flow_type=login&response_type=token&profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&use_ms_for_expiry=true#/) en klik **[!UICONTROL Experience Manager Assets Content Hub]** beschikbaar in de **[!UICONTROL Quick access]** sectie:
-  ![&#x200B; Toegang van Content Hub &#x200B;](assets/access-content-hub.png)
+* Logon aan [ experience.adobe.com ](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=exc_app&scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&locale=en_GB&flow_type=token&dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&idp_flow_type=login&response_type=token&profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&use_ms_for_expiry=true#/) en klik **[!UICONTROL Experience Manager Assets Content Hub]** beschikbaar in de **[!UICONTROL Quick access]** sectie:
+  ![ Toegang van Content Hub ](assets/access-content-hub.png)
 
-* Logon aan [&#x200B; experience.adobe.com &#x200B;](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=exc_app&scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&locale=en_GB&flow_type=token&dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&idp_flow_type=login&response_type=token&profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&use_ms_for_expiry=true#/) en klik **[!UICONTROL Experience Manager Assets Content Hub]** beschikbaar in de productschakelaar:
-  ![&#x200B; methode 3 van de Toegang van Content Hub &#x200B;](assets/access-content-hub-alternate.png)
+* Logon aan [ experience.adobe.com ](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=exc_app&scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&locale=en_GB&flow_type=token&dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&idp_flow_type=login&response_type=token&profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&use_ms_for_expiry=true#/) en klik **[!UICONTROL Experience Manager Assets Content Hub]** beschikbaar in de productschakelaar:
+  ![ methode 3 van de Toegang van Content Hub ](assets/access-content-hub-alternate.png)
 
 ## Feedback op Content Hub geven {#provide-content-hub-feedback}
 
@@ -62,57 +62,57 @@ Als u productgerelateerde verbeteringen wilt aanbevelen, klikt u op **[!UICONTRO
 
 Geef een onderwerp, een beschrijving van de aanbeveling en voeg zo nodig bestanden bij. Klik op **[!UICONTROL Submit]** om de feedback naar Adobe te verzenden.
 
-![&#x200B; Content Hub terugkoppelt &#x200B;](assets/content-hub-feedback.png)
+![ Content Hub terugkoppelt ](assets/content-hub-feedback.png)
 
 ## Content Hub instellen voor uw team {#setup-content-hub}
 
 Ga als volgt te werk om Content Hub voor uw team in te stellen:
 
-1. [&#x200B; laat Content Hub voor Experience Manager Assets toe gebruikend Cloud Manager &#x200B;](deploy-content-hub.md#enable-content-hub).
+1. [ laat Content Hub voor Experience Manager Assets toe gebruikend Cloud Manager ](deploy-content-hub.md#enable-content-hub).
 
-1. [&#x200B; de beheerder van Content Hub aan boord &#x200B;](deploy-content-hub.md#onboard-content-hub-administrator).
+1. [ de beheerder van Content Hub aan boord ](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [&#x200B; voeg zeer belangrijke gebruikers van Content Hub toe &#x200B;](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [ voeg zeer belangrijke gebruikers van Content Hub toe ](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
-1. [&#x200B; Goedgekeurde activa in Experience Manager Assets als auteur DAM of beheerder &#x200B;](approve-assets.md).
+1. [ Goedgekeurde activa in Experience Manager Assets als auteur DAM of beheerder ](approve-assets.md).
 
-1. [&#x200B; vorm Content Hub gebruikersinterface voor andere gebruikers als beheerder &#x200B;](configure-content-hub-ui-options.md).
+1. [ vorm Content Hub gebruikersinterface voor andere gebruikers als beheerder ](configure-content-hub-ui-options.md).
 
-1. [&#x200B; de toegang van Content Hub van de Verlening tot meer gebruikers van het team &#x200B;](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [ de toegang van Content Hub van de Verlening tot meer gebruikers van het team ](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
-1. [&#x200B; toegang Content Hub portaal &#x200B;](#access-content-hub).
+1. [ toegang Content Hub portaal ](#access-content-hub).
 
-1. [&#x200B; verstrekken Content Hub terugkoppelt &#x200B;](#provide-content-hub-feedback).
+1. [ verstrekken Content Hub terugkoppelt ](#provide-content-hub-feedback).
 
 ## Veelgestelde vragen {#faqs-content-hub-overview}
 
-### Wat is Content Hub? {#what-is-content-hub}
+### Wat is AEM Assets Content Hub? {#what-is-content-hub}
 
-Content Hub is een Adobe Experience Manager as a Cloud Service-functie waarmee breder opgezette teams eenvoudig relevante, goedgekeurde middelen kunnen detecteren via een intuïtief portaal en deze snel aan hun behoeften kunnen aanpassen. Het maakt het mogelijk om activa op grote schaal te distribueren en vergemakkelijkt het maken van varianten van on-brand-inhoud om de marketingflexibiliteit te verbeteren.
+AEM Assets Content Hub is een Adobe Experience Manager as a Cloud Service-functie waarmee breder opgezette teams eenvoudig relevante, goedgekeurde middelen kunnen detecteren via een intuïtief portaal en deze snel aan hun behoeften kunnen aanpassen. Het maakt het mogelijk om activa op grote schaal te distribueren en vergemakkelijkt het maken van varianten van on-brand-inhoud om de marketingflexibiliteit te verbeteren.
 
-### Wat zijn de eerste vereisten voor toegang tot Content Hub? {#prerequisites-for-content-hub}
+### Wat zijn de voorwaarden om toegang te krijgen tot AEM Assets Content Hub? {#prerequisites-for-content-hub}
 
 Content Hub heeft een productieontwerpomgeving van Experience Manager as a Cloud Service nodig, met name de release 2024.6 of hoger (minimale versie 2024.6.16799).
 
-### Hoe verbetert Content Hub de zoekervaring met merkgoedgekeurde middelen? {#content-hub-improves-search-experience}
+### Hoe verbetert AEM Assets Content Hub de zoekervaring met merkgoedgekeurde middelen? {#content-hub-improves-search-experience}
 
-Content Hub presenteert alle goedgekeurde bedrijfsmiddelen in een platte hiërarchie, waardoor het gemakkelijker wordt om door middel van een intuïtief portaal goedgekeurde bedrijfsmiddelen te vinden en te delen. Deze instelling stroomlijnt het zoekproces en zorgt ervoor dat gebruikers op efficiënte wijze de benodigde middelen kunnen vinden.
+AEM Assets Content Hub presenteert alle goedgekeurde bedrijfsmiddelen in een platte hiërarchie, waardoor het gemakkelijker wordt om door middel van een intuïtief portaal goedgekeurde bedrijfsmiddelen te vinden en te delen. Deze instelling stroomlijnt het zoekproces en zorgt ervoor dat gebruikers op efficiënte wijze de benodigde middelen kunnen vinden.
 
-### Wie kan de Content Hub-gebruikersinterface configureren en welke aspecten kunnen worden geconfigureerd? {#content-hub-configuration}
+### Wie kan de AEM Assets Content Hub-gebruikersinterface configureren en welke aspecten kunnen worden geconfigureerd? {#content-hub-configuration}
 
-Een beheerder kan de Content Hub-gebruikersinterface configureren, waaronder zoekfilters, velden voor het toevoegen of importeren van elementen, eigenschappen van elementen en bannerinhoud voor branding. Dit staat aanpassing toe die op organisatorische vereisten wordt gebaseerd.
+Een beheerder kan de AEM Assets Content Hub-gebruikersinterface configureren, waaronder zoekfilters, velden voor het toevoegen of importeren van elementen, eigenschappen van elementen en bannerinhoud voor branding. Dit staat aanpassing toe die op organisatorische vereisten wordt gebaseerd.
 
-### Hoe machtigt Content Hub niet-creatieven om inhoud te bewerken en opnieuw te mixen? {#content-hub-edit-remix-content}
+### Hoe machtigt AEM Assets Content Hub niet-creatieven om inhoud te bewerken en opnieuw te mixen? {#content-hub-edit-remix-content}
 
 Met Content Hub kunnen niet-creatieve gebruikers bestaande inhoud bewerken en nieuwe, onmerkbare variaties maken met gebruiksvriendelijke gereedschappen, sjablonen en merkelementen. Als gebruikers Adobe Express-rechten hebben, kunnen ze ook gebruikmaken van Adobe Firefly GenAI-mogelijkheden voor het maken van geavanceerde inhoud.
 
-### Hoe hebben gebruikers toegang tot Content Hub? {#content-hub-access}
+### Hoe kunnen gebruikers toegang krijgen tot AEM Assets Content Hub? {#content-hub-access}
 
-Gebruikers kunnen Content Hub openen via directe koppelingen (https://experience.adobe.com/#/assets/contenthub) of door zich aan te melden bij experience.adobe.com en Experience Manager Assets Content Hub te selecteren in de sectie Snelle toegang.
+Gebruikers kunnen AEM Assets Content Hub openen via directe koppelingen (https://experience.adobe.com/#/assets/contenthub) of door zich aan te melden bij experience.adobe.com en Experience Manager Assets Content Hub te selecteren in de sectie Snelle toegang.
 
 ### Hoeveel gebruikers van Content Hub Limited zijn inbegrepen bij AEM Assets? {#content-hub-limited-users-with-aem-assets}
 
-[&#x200B; Assets Ultimate &#x200B;](/help/assets/assets-ultimate-overview.md) en Assets as a Cloud Service elk omvatten 250 Beperkte gebruikers van Content Hub, terwijl [&#x200B; Assets Prime &#x200B;](/help/assets/assets-prime.md) 50 beperkte gebruikers van Content Hub omvat.
+[ Assets Ultimate ](/help/assets/assets-ultimate-overview.md) en Assets as a Cloud Service elk omvatten 250 Beperkte gebruikers van Content Hub, terwijl [ Assets Prime ](/help/assets/assets-prime.md) 50 beperkte gebruikers van Content Hub omvat.
 
 
 ## Meer informatie over sleutelmogelijkheden {#key-capabilities-content-module}
