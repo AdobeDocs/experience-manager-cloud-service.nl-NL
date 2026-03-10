@@ -4,9 +4,9 @@ description: Leer hoe u het modelcontextprotocol met AEM as a Cloud Service kunt
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 2cbbb53c1bf5277ab54e6731152c0400b4e67aba
+source-git-commit: b3704dad066b66b103fdec849879f889e895c09d
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ AEM stelt MCP-servers beschikbaar als HTTP-eindpunten. De hieronder vermelde ein
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **Inhoud** | `/content` | Alle inhoudsbewerkingen op laag niveau, inclusief maken, lezen, bijwerken en verwijderen (CRUD) voor pagina&#39;s, fragmenten en elementen. |
 | **Inhoud (read-only)** | `/content-readonly` | Alleen-lezen inhoudsbewerkingen (Ophalen, Lijst/Zoeken) voor pagina&#39;s, fragmenten en elementen. |
-| **Cloud Manager** | `/cloudmanager` | Cloud Manager-entiteiten beheren, waaronder programma&#39;s, omgevingen, opslagruimten en pijpleidingen, die ook kunnen worden geactiveerd. <br><br>*Deze server MCP is nu in **bèta**; om toegang, e-mail [&#x200B; aemcs-mcp-feedback@adobe.com &#x200B;](mailto:aemcs-mcp-feedback@adobe.com) met een beschrijving van uw gebruiksgeval te verzoeken.* |
+| **Cloud Manager** | `/cloudmanager` | Cloud Manager-entiteiten beheren, waaronder programma&#39;s, omgevingen, opslagruimten en pijpleidingen, die ook kunnen worden geactiveerd. <br><br>*Deze server MCP is nu in **bèta**; om toegang, e-mail [ aemcs-mcp-feedback@adobe.com ](mailto:aemcs-mcp-feedback@adobe.com) met een beschrijving van uw gebruiksgeval te verzoeken.* |
 
 De specifieke hulpmiddelen die door elke server MCP worden blootgesteld kunnen in tijd evolueren. In de praktijk kunt u uw MCP-Toegelaten toepassing vragen om hulpmiddelen via een herinnering zoals te ontdekken:
 
@@ -142,7 +142,7 @@ Elke gebruiker voert deze stap uit, of een beheerder van de MCP cliënttoepassin
 1. Onontdekte gereedschappen controleren
    * Zodra voor authentiek verklaard, ontdekt de toepassing hulpmiddelen MCP van de server. Vervolgens kunt u de LLM vragen om AEM-bewerkingen uit te voeren.
 
-Hieronder vindt u stapsgewijze hulplijnen voor elke ondersteunde toepassing:
+Hieronder vindt u een overzicht van de ondersteunde toepassingen, waarvan enkele zijn gekoppeld aan stapsgewijze hulplijnen:
 
 #### Chattoepassingen (web en bureaublad) {#setup-chat-applications}
 
@@ -173,7 +173,7 @@ De door Adobe gehoste MCP-servers implementeren OAuth en zijn geïntegreerd met 
 * Wanneer een MCP cliënttoepassing met een server van AEM MCP verbindt, zien de gebruikers een login van Adobe dialoog en voor authentiek verklaren met hun **Adobe ID**
 * Na succesvolle login, verifieert het systeem dat de MCP cliënttoepassing in uw organisatie wordt toegelaten en dat de gevraagde server MCP wordt toegestaan. Als één van beide controle ontbreekt, wordt een foutenmelding getoond.
 
-![&#x200B; MCP Cliënt niet toegelaten fout &#x200B;](assets/MCP-Client-not-permitted.png)
+![ MCP Cliënt niet toegelaten fout ](assets/MCP-Client-not-permitted.png)
 
 * Zodra geverifieerd, geeft de server MCP tekenen uit die de toepassing voor verdere hulpmiddelvraag gebruikt
 * De hulpmiddelen MCP respecteren de toestemmingen van AEM van de gebruiker. Alleen gebruikers die gemachtigd zijn om een inhoudsfragment in AEM te wijzigen, kunnen het wijzigen via MCP.
@@ -252,6 +252,6 @@ Sommige MCP cliënttoepassingen, zoals Claude, bieden de optie aan auto-erkende 
 
 ## Beperkingen {#limitations}
 
-AEM steunt momenteel het vormen MCP servers in de toepassingen die onder [&#x200B; worden vermeld Gesteunde Toepassingen MCP &#x200B;](#supported-mcp-applications).
+AEM steunt momenteel het vormen MCP servers in de toepassingen die onder [ worden vermeld Gesteunde Toepassingen MCP ](#supported-mcp-applications).
 
 Als u een verschillende MCP cliënttoepassing zou willen gebruiken, voel vrij om uit in **aemcs-mcp-feedback@adobe.com** te bereiken om steun voor extra cliënten te verzoeken of een douane te lijsten van gewenste personen.
