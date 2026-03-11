@@ -35,7 +35,7 @@ Kies de onderdelen die u nodig hebt, van eenvoudige formulierontwerpen tot compl
 **pre-Release Eigenschappen:**
 
 - **de Steun van het Formaat van AFP** - Onderneming-rang drukmogelijkheden met Communicatie APIs
-- **de Verbeteringen van de Redacteur van 0} Regel {de Moderne steun van JavaScript en dynamische variabelen**
+- **de Verbeteringen van de Redacteur van 0&rbrace; Regel &lbrace;de Moderne steun van JavaScript en dynamische variabelen**
 - **Verbeterde Methoden van de Bevestiging** - Comité, gebied, en vorm-vlakke bevestigingsverbeteringen
 
 [Volledige releaseopmerkingen weergeven →](/help/release-notes/release-notes-cloud/release-notes-current.md#forms)
@@ -49,7 +49,7 @@ Exclusieve toegang tot geavanceerde AEM Forms-innovaties:
 - **🔗Direct API-integratie** - Verbinding maken met API&#39;s zonder formuliergegevensmodel instellen
 - **📊Forms Optimization** (Optimalisatie van) - Verbeteringen voor prestatieanalyse en -conversie op basis van AI
 
-[ Toegang van het verzoek →](mailto:aem-forms-ea@adobe.com) | [ Leer meer → ](/help/forms/early-access-ea-features.md)
+[&#x200B; Toegang van het verzoek →](mailto:aem-forms-ea@adobe.com) | [&#x200B; Leer meer → &#x200B;](/help/forms/early-access-ea-features.md)
 
 ## 📋 Formulier maken en ontwerpen {#form-creation}
 
@@ -63,7 +63,7 @@ Stel formulieren samen met de ontwerpaanpak die het beste aansluit bij uw behoef
 | **wat het doet:** Visuele belemmering-en-dalingsvormbouwer met moderne componenten, automatisch ontvankelijk ontwerp, en ingebouwde toegankelijkheidseigenschappen. |
 | **wanneer te gebruiken:** Nieuwe projecten, moderne Webervaringen, hoofdloze vormlevering, mobiel-eerste ontwerp. |
 | ✅ Responsief ontwerp ✅ Compatibiliteit met toegankelijkheid ✅ Koploze mogelijkheden ✅ Moderne UI-componenten |
-| [ wordt begonnen met de Componenten van de Kern → ](/help/forms/creating-adaptive-form-core-components.md) |
+| [&#x200B; wordt begonnen met de Componenten van de Kern → &#x200B;](/help/forms/creating-adaptive-form-core-components.md) |
 
 ### Foundation Component Forms {#foundation-components}
 
@@ -73,7 +73,7 @@ Stel formulieren samen met de ontwerpaanpak die het beste aansluit bij uw behoef
 | **wat het doet:** Traditioneel adaptief vormgebouw met uitvoerige componentenbibliotheek en uitgebreide aanpassingsmogelijkheden. |
 | **wanneer te gebruiken:** Bestaande projecten, de integratie van het erfenissysteem, specifieke aanpassingsvereisten, gevestigde werkschema&#39;s. |
 | ✅ Uitgebreide componentenbibliotheek ✅ Diepe aanpassing ✅ Verouderde compatibiliteit ✅ Bewezen stabiliteit |
-| [ wordt begonnen met de Componenten van de Stichting → ](/help/forms/creating-adaptive-form.md) |
+| [&#x200B; wordt begonnen met de Componenten van de Stichting → &#x200B;](/help/forms/creating-adaptive-form.md) |
 
 ### Edge Delivery Forms {#edge-delivery}
 
@@ -83,7 +83,7 @@ Stel formulieren samen met de ontwerpaanpak die het beste aansluit bij uw behoef
 | **wat het doet:** creeer vormen gebruikend de spreadsheets van Excel, publiceer aan het krachtige netwerk van de randlevering met de optimale scores van de Lighthouse van Google. |
 | **wanneer te gebruiken:** prestaties-kritieke toepassingen, op SEO-Gericht projecten, tevreden auteur-gedreven vormverwezenlijking, globale inhoudslevering. |
 | ⚡ Ontwerpen op basis van Excel ⚡ Snel blikken ⚡ Optimale SEO ⚡ Algemene CDN-levering |
-| [ worden begonnen met Edge Delivery → ](/help/edge/docs/forms/overview.md) |
+| [&#x200B; worden begonnen met Edge Delivery → &#x200B;](/help/edge/docs/forms/overview.md) |
 
 ### HTML5 Forms {#html5-forms}
 
@@ -93,7 +93,7 @@ Stel formulieren samen met de ontwerpaanpak die het beste aansluit bij uw behoef
 | **wat het doet:** zet XFA vormmalplaatjes in HTML5 vormen met inheemse mobiele ervaring en dwars-browser verenigbaarheid om. |
 | **wanneer te gebruiken:** XFA vormmodernisering, mobiele optimalisering, erfenisbrowser steun, bestaande investeringen XDP. |
 | 📱 XFA-compatibiliteit 📱 Mobiele optimalisatie 📱 Ondersteuning voor verschillende browsers 📱 Geen insteekmodules |
-| [ worden begonnen met HTML5 Forms → ](/help/forms/introductionhtml5.md) |
+| [&#x200B; worden begonnen met HTML5 Forms → &#x200B;](/help/forms/introductionhtml5.md) |
 
 ### Interactieve communicatie {#interactive-communications}
 
@@ -103,7 +103,7 @@ Stel formulieren samen met de ontwerpaanpak die het beste aansluit bij uw behoef
 | **wat het doet:** Ontwerp gepersonaliseerde mededelingen die statische inhoud met dynamische gegevens voor druk en digitale kanalen combineren. |
 | **wanneer te gebruiken:** de verklaringen van de Klant, facturen, berichten, gepersonaliseerde mededelingen, document-zware werkschema&#39;s. |
 | 📄 Visueel documentontwerp 📄 Dynamische gegevensintegratie 📄 Multikanaaluitvoer 📄 Personalization |
-| [ worden begonnen met Interactieve Mededelingen → ](/help/forms/interactive-communication/create-interactive-communication.md) |
+| [&#x200B; worden begonnen met Interactieve Mededelingen → &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗 Gegevens en integratie {#data-integration}
 
@@ -117,7 +117,7 @@ Sluit formulieren aan op back-endsystemen en gegevensbronnen voor een naadloze i
 | **wat het doet:** creeer een verenigde gegevenslaag die vormen met veelvoudige achtergrondsystemen met verenigbare interface en gegevensstroombeheer verbindt. |
 | **wanneer te gebruiken:** Veelvoudige gegevensbronintegratie, complexe gegevensverhoudingen, pre-bevolkingsvereisten, bevestiging tegen levende gegevens. |
 | 🔄 Integratie met meerdere bronnen 🔄 Gegevensmodellering 🔄 Vóór de populatie 🔄 Validatieregels 🔄 Verenigde interface |
-| [ krijgen begonnen met het Model van de Gegevens van de Vorm → ](/help/forms/create-form-data-models.md) |
+| [&#x200B; krijgen begonnen met het Model van de Gegevens van de Vorm → &#x200B;](/help/forms/create-form-data-models.md) |
 
 ### RESTful Connectors {#restful-connectors}
 
@@ -127,7 +127,7 @@ Sluit formulieren aan op back-endsystemen en gegevensbronnen voor een naadloze i
 | **wat het doet:** laat directe API vraag van vormen door acties of gegevensintegratie voor connectiviteit in real time aan de Webdiensten toe te dienen. |
 | **wanneer te gebruiken:** de integratie van de Douane API, de connectiviteit van de Webdienst, gegevensuitwisseling in real time, de integratie van de derdendienst. |
 | 🌐 Direct API roept 🌐 Real-time connectiviteit 🌐 Flexibele integratie 🌐 Aangepaste ondersteuning voor services aan |
-| [ vorm REST eindpunten →](/help/forms/configure-submit-action-restpoint.md) \| [ de integratieopstelling van Gegevens → ](/help/forms/data-integration.md) |
+| [&#x200B; vorm REST eindpunten →](/help/forms/configure-submit-action-restpoint.md) \| [&#x200B; de integratieopstelling van Gegevens → &#x200B;](/help/forms/data-integration.md) |
 
 ### Salesforce Connector {#salesforce-connector}
 
@@ -137,7 +137,7 @@ Sluit formulieren aan op back-endsystemen en gegevensbronnen voor een naadloze i
 | **wat het doet:** pre-gebouwde schakelaar voor Salesforce met de synchronisatie van vormgegevens, lood verwezenlijking, en het beheer van het klantenverslag. |
 | **wanneer te gebruiken:** integratie van Salesforce CRM, de vormen van de loodgeneratie, het beheer van klantengegevens, de automatisering van het verkoopproces. |
 | 🏢 Vooraf gebouwde connector 🏢 Lead Management 🏢 Gegevenssynchronisatie 🏢 Verkoop automatiseren |
-| [ vorm de integratie van Salesforce → ](/help/forms/configure-salesforce.md) |
+| [&#x200B; vorm de integratie van Salesforce → &#x200B;](/help/forms/configure-salesforce.md) |
 
 ### Microsoft Dynamics Connector {#dynamics-connector}
 
@@ -147,7 +147,7 @@ Sluit formulieren aan op back-endsystemen en gegevensbronnen voor een naadloze i
 | **wat het doet:** verbind vormen met Microsoft Dynamics voor klantenbeheer, bedrijfsprocesintegratie, en de stroom van ondernemingsgegevens. |
 | **wanneer te gebruiken:** de integratie van Microsoft Dynamics, ondernemingswerkschema&#39;s, klantenbeheer, bedrijfsprocesautomatisering. |
 | 🏭 Bedrijfsconnectiviteit 🏭 Integratie van bedrijfsprocessen 🏭 Klantenbeheer 🏭 Gegevenssynchronisatie |
-| [ vormt de integratie van de Dynamica → ](/help/forms/configure-msdynamics.md) |
+| [&#x200B; vormt de integratie van de Dynamica → &#x200B;](/help/forms/configure-msdynamics.md) |
 
 ### SharePoint Connector {#sharepoint-connector}
 
@@ -157,7 +157,7 @@ Sluit formulieren aan op back-endsystemen en gegevensbronnen voor een naadloze i
 | **wat het doet:** sla vormvoorlegging en geproduceerde documenten in SharePoint met geautomatiseerd documentbeheer en samenwerkingseigenschappen op. |
 | **wanneer te gebruiken:** het beheer van het Document, teamsamenwerking, dossieropslag, op SharePoint-Gebaseerde werkschema&#39;s. |
 | 📁 Documentopslag 📁 Collaboration-functies 📁 Geautomatiseerde workflows 📁 Integratie met SharePoint |
-| [ vorm de integratie van SharePoint → ](/help/forms/connect-forms-to-sharepoint-document-library.md) |
+| [&#x200B; vorm de integratie van SharePoint → &#x200B;](/help/forms/connect-forms-to-sharepoint-document-library.md) |
 
 ## Proces en workflow {#process-workflow}
 
@@ -297,53 +297,53 @@ Kies uw beginpunt op basis van uw directe behoeften en technische vereisten.
 
 ### Snel aan de slag met formulier maken {#form-creation-start}
 
-**voor moderne projecten:** Begin met [ Component Forms van de Kern ](/help/forms/creating-adaptive-form-core-components.md)
+**voor moderne projecten:** Begin met [&#x200B; Component Forms van de Kern &#x200B;](/help/forms/creating-adaptive-form-core-components.md)
 
-**voor hoge prestaties:** Begin met [ Edge Delivery Forms ](/help/edge/docs/forms/overview.md)
+**voor hoge prestaties:** Begin met [&#x200B; Edge Delivery Forms &#x200B;](/help/edge/docs/forms/overview.md)
 
-**voor bestaande projecten:** Begin met [ Component Forms van de Stichting ](/help/forms/creating-adaptive-form.md)
+**voor bestaande projecten:** Begin met [&#x200B; Component Forms van de Stichting &#x200B;](/help/forms/creating-adaptive-form.md)
 
-**voor modernisering XFA:** Begin met [ HTML5 Forms ](/help/forms/introductionhtml5.md)
+**voor modernisering XFA:** Begin met [&#x200B; HTML5 Forms &#x200B;](/help/forms/introductionhtml5.md)
 
-**voor documentmededelingen:** Begin met [ Interactieve Mededelingen ](/help/forms/interactive-communication/create-interactive-communication.md)
+**voor documentmededelingen:** Begin met [&#x200B; Interactieve Mededelingen &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### Gegevensintegratie - snel aan de slag {#integration-start}
 
-**voor veelvoudige gegevensbronnen:** Begin met [ Model van de Gegevens van de Vorm ](/help/forms/create-form-data-models.md)
+**voor veelvoudige gegevensbronnen:** Begin met [&#x200B; Model van de Gegevens van de Vorm &#x200B;](/help/forms/create-form-data-models.md)
 
-**voor Salesforce CRM:** Begin met [ Schakelaar van Salesforce ](/help/forms/configure-salesforce.md)
+**voor Salesforce CRM:** Begin met [&#x200B; Schakelaar van Salesforce &#x200B;](/help/forms/configure-salesforce.md)
 
-**voor Microsoft Dynamics:** Begin met [ Schakelaar van de Dynamiek ](/help/forms/configure-msdynamics.md)
+**voor Microsoft Dynamics:** Begin met [&#x200B; Schakelaar van de Dynamiek &#x200B;](/help/forms/configure-msdynamics.md)
 
-**voor douane APIs:** Begin met [ RESTful Connectors ](/help/forms/configure-submit-action-restpoint.md)
+**voor douane APIs:** Begin met [&#x200B; RESTful Connectors &#x200B;](/help/forms/configure-submit-action-restpoint.md)
 
-**voor documentopslag:** Begin met [ Verbinding van SharePoint ](/help/forms/connect-forms-to-sharepoint-document-library.md)
+**voor documentopslag:** Begin met [&#x200B; Verbinding van SharePoint &#x200B;](/help/forms/connect-forms-to-sharepoint-document-library.md)
 
 ### Procesautomatisering, snel aan de slag {#workflow-start}
 
-**voor goedkeuringsprocessen:** Begin met [ de Werkschema&#39;s van AEM ](/help/forms/aem-forms-workflow.md)
+**voor goedkeuringsprocessen:** Begin met [&#x200B; de Werkschema&#39;s van AEM &#x200B;](/help/forms/aem-forms-workflow.md)
 
-**voor e-handtekeningen:** Begin met [ de Integratie van het Teken van Adobe ](/help/forms/working-with-adobe-sign.md)
+**voor e-handtekeningen:** Begin met [&#x200B; de Integratie van het Teken van Adobe &#x200B;](/help/forms/working-with-adobe-sign.md)
 
-**voor voorlegging behandeling:** Begin met [ legt Acties ](/help/forms/configure-submit-actions-core-components.md) voor
+**voor voorlegging behandeling:** Begin met [&#x200B; legt Acties &#x200B;](/help/forms/configure-submit-actions-core-components.md) voor
 
-**voor documentgeneratie:** Begin met [ Communicatie APIs ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+**voor documentgeneratie:** Begin met [&#x200B; Communicatie APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md)
 
 ### Analyse - snel aan de slag {#analytics-start}
 
-**voor prestaties het volgen:** Begin met [ de Integratie van Adobe Analytics ](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+**voor prestaties het volgen:** Begin met [&#x200B; de Integratie van Adobe Analytics &#x200B;](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
 
-**voor gebruik controle:** Begin met [ Rapporten van de Transactie ](/help/forms/transaction-reports-billable-apis.md)
+**voor gebruik controle:** Begin met [&#x200B; Rapporten van de Transactie &#x200B;](/help/forms/transaction-reports-billable-apis.md)
 
-**voor optimalisatieinzichten:** Begin met [ Rapporten van Analytics ](/help/forms/view-understand-aem-forms-analytics-reports.md)
+**voor optimalisatieinzichten:** Begin met [&#x200B; Rapporten van Analytics &#x200B;](/help/forms/view-understand-aem-forms-analytics-reports.md)
 
 ### Beheer snel starten {#management-start}
 
-**voor vormontdekking:** Begin met [ Portaal van Forms ](/help/forms/configure-forms-portal.md)
+**voor vormontdekking:** Begin met [&#x200B; Portaal van Forms &#x200B;](/help/forms/configure-forms-portal.md)
 
-**voor toegangsbeheer:** Begin met [ Gebruikersbeheer ](/help/forms/forms-groups-privileges-tasks.md)
+**voor toegangsbeheer:** Begin met [&#x200B; Gebruikersbeheer &#x200B;](/help/forms/forms-groups-privileges-tasks.md)
 
-**voor verandering het volgen:** Begin met [ Controle van de Versie ](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+**voor verandering het volgen:** Begin met [&#x200B; Controle van de Versie &#x200B;](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
 
 ## Architectuur en implementatie {#architecture}
 

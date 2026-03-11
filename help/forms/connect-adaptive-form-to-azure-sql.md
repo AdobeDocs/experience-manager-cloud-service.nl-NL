@@ -34,21 +34,21 @@ De integratie van Adaptive Forms met Azure SQL biedt verschillende voordelen:
 
 ## Vereisten
 
-* Creeer [ SQL Gegevensbestand van Azure SQL ](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) en verzeker **volmachtsverbinding** wordt toegelaten.
+* Creeer [&#x200B; SQL Gegevensbestand van Azure SQL &#x200B;](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) en verzeker **volmachtsverbinding** wordt toegelaten.
 
   >[!NOTE]
   >
   > Navigeer aan: `Azure Portal → SQL Server → Security → Networking → Connectivity` om **volmachtsverbinding** toe te laten.
 
-  ![ creeer Azure DB ](/help/forms/assets/create-azure-db.png)
+  ![&#x200B; creeer Azure DB &#x200B;](/help/forms/assets/create-azure-db.png)
 
-* Laat [ Gevorderde voorzien van een netwerk toe dat gebruikend een specifiek uitgang IP ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) voor het gecreeerde gegevensbestand van Azure wordt gevormd.
+* Laat [&#x200B; Gevorderde voorzien van een netwerk toe dat gebruikend een specifiek uitgang IP &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) voor het gecreeerde gegevensbestand van Azure wordt gevormd.
 
   >[!NOTE]
   >
   >    Na het toelaten van specifieke uitgang IP. Ga naar `Azure Portal → SQL Server → Security → Networking → Public Access` en voeg IP van de uitgang aan de firewallregels toe.
 
-  ![ IP van de Eis ](/help/forms/assets/cretae-azure-db-egress-ip.png)
+  ![&#x200B; IP van de Eis &#x200B;](/help/forms/assets/cretae-azure-db-egress-ip.png)
 
 * Plaats haven door:sturen in het wolkenmilieu met:
    * **portOrigin**: Tussen `30000–30999`
@@ -74,7 +74,7 @@ Bijvoorbeeld: `portOrigin: 30433 → portDest: 1433`
 
    **waar om deze informatie te vinden?**
 
-   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[ Toegang tot Git ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[&#x200B; Toegang tot Git &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    Wanneer de opdracht met succes is voltooid, ziet u een nieuwe map die in uw lokale map is gemaakt. Deze map krijgt de naam van uw toepassing.
 
@@ -82,11 +82,11 @@ Bijvoorbeeld: `portOrigin: 30433 → portDest: 1433`
 
 **Step2: Voeg Vereiste JARs** toe
 
-Omvat het [ SQL bestuurdersgebiedsdeel ](https://central.sonatype.com/artifact/com.microsoft.sqlserver/mssql-jdbc/12.8.0.jre11?smo=true) aan het project van AEM via het `all` pakket.:
+Omvat het [&#x200B; SQL bestuurdersgebiedsdeel &#x200B;](https://central.sonatype.com/artifact/com.microsoft.sqlserver/mssql-jdbc/12.8.0.jre11?smo=true) aan het project van AEM via het `all` pakket.:
 
 >[!NOTE]
 >
-> Om het SQL gebiedsdeel in uw project te omvatten, verwijs naar de [ SQL sectie van bestuurdersgebiedsdelen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Om het SQL gebiedsdeel in uw project te omvatten, verwijs naar de [&#x200B; SQL sectie van bestuurdersgebiedsdelen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Stap 3: Voeg Configuratie JDBC** toe
 
@@ -146,17 +146,17 @@ Nadat de AEM- en Azure-configuratie is voltooid en de codewijzigingen zijn geïm
 1. In het **lusje van Gegevensbronnen**, selecteer de gecreeerde configuratie JDBC.
 1. Klik op **[!UICONTROL Create]** en controleer de verbinding.
 
-![ creeer het Model van de Gegevens van de Vorm ](/help/forms/assets/create-azure-sql-fdm.png)
+![&#x200B; creeer het Model van de Gegevens van de Vorm &#x200B;](/help/forms/assets/create-azure-sql-fdm.png)
 
 **Stap 8: Gebruik gecreeerde FDM in een Aangepaste Vorm**
 
 1. Open een adaptief formulier in de bewerkingsmodus.
 1. Selecteer de FDM die in de vorige stap als gegevensmodel is gemaakt.
-1. Het gebruik [ gegevensbindingen om vormgebieden met de gegevensbron van Azure te verbinden SQL ](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) en voorleggingsactie te vormen.
+1. Het gebruik [&#x200B; gegevensbindingen om vormgebieden met de gegevensbron van Azure te verbinden SQL &#x200B;](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) en voorleggingsactie te vormen.
 
 ## Aanbevolen procedures
 
-* Het geheime beheer van het gebruik **** om hardcoding wachtwoorden in configuratiedossiers te vermijden.
+* Het geheime beheer van het gebruik **&#x200B;**&#x200B;om hardcoding wachtwoorden in configuratiedossiers te vermijden.
 * Regelmatig roteer gegevensbestandgeloofsbrieven en werk veilig config bij.
 * De verbindingslogboeken van JDBC van de monitor voor mislukkingen en latentie.
 * Volg de best practices van Azure voor het beveiligen van SQL-databases en firewallconfiguraties.

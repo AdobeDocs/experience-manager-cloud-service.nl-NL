@@ -56,20 +56,20 @@ Bestaande documenten omzetten in interactieve digitale ervaringen. De Forms Expe
 
 ## Aan boord nemen en voorwaarden
 
-De Forms Experience Builder is momenteel beschikbaar via een programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officiële E-mailidentiteitskaart
+De Forms Experience Builder is momenteel beschikbaar via een programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) van uw officiële E-mailidentiteitskaart
 
-De Bouwer van de ervaring vereist het milieu van de de productiepauteur van AEM Forms as a Cloud Service met [ Aangepaste Componenten van de Kern van Forms ](/help/forms/enable-adaptive-forms-core-components.md).
+De Bouwer van de ervaring vereist het milieu van de de productiepauteur van AEM Forms as a Cloud Service met [&#x200B; Aangepaste Componenten van de Kern van Forms &#x200B;](/help/forms/enable-adaptive-forms-core-components.md).
 
 ## Ga naar de Forms Experience Builder
 
 
 1. Navigeer aan **AEM > Forms > Forms &amp; Documenten**.
 1. Klik **creëren** en selecteren **AanpassingsVorm**
-1. Gebruik de Tovenaar om een nieuwe vorm tot stand te brengen gebruikend het malplaatje van de Componenten van de a [ Kern ](/help/forms/creating-adaptive-form-core-components.md) of [ Edge Delivery Services ](/help/edge/docs/forms/universal-editor/create-forms.md), afhankelijk van uw vereiste en open de vorm voor het uitgeven.
+1. Gebruik de Tovenaar om een nieuwe vorm tot stand te brengen gebruikend het malplaatje van de Componenten van de a [&#x200B; Kern &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; Edge Delivery Services &#x200B;](/help/edge/docs/forms/universal-editor/create-forms.md), afhankelijk van uw vereiste en open de vorm voor het uitgeven.
 1. Selecteer het **pictogram van de Bouwer van de Ervaring van Forms** in de toolbar van de redacteur om de de bouwerinterface van de Ervaring van Forms te openen om vormen tot stand te brengen gebruikend natuurlijke taal.
 
 
-| ![ de Aangepaste Redacteur van Forms - de Bouwer van de Ervaring van Forms ](/help/edge/docs/forms/assets/adaptive-forms-editor.gif " Aangepaste Redacteur van Forms - de Bouwer van de Ervaring van Forms ") | ![ Universele Redacteur - de Bouwer van de Ervaring van Forms ](/help/forms/assets/ue-forms-experience-builder.gif " Universele Redacteur - de Bouwer van de Ervaring van Forms ") |
+| ![&#x200B; de Aangepaste Redacteur van Forms - de Bouwer van de Ervaring van Forms &#x200B;](/help/edge/docs/forms/assets/adaptive-forms-editor.gif " Aangepaste Redacteur van Forms - de Bouwer van de Ervaring van Forms ") | ![&#x200B; Universele Redacteur - de Bouwer van de Ervaring van Forms &#x200B;](/help/forms/assets/ue-forms-experience-builder.gif " Universele Redacteur - de Bouwer van de Ervaring van Forms ") |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | *de AanpassingsRedacteur van Forms* | *Universele Redacteur* |
 

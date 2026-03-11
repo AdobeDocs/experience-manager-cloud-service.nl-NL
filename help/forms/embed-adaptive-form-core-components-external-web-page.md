@@ -19,18 +19,18 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dit artikel |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) |
 
 
-U kunt [ aangepaste vormen in een pagina van AEM Sites ](/help/forms/embed-adaptive-form-aem-sites.md) of een Web-pagina inbedden die buiten AEM wordt ontvangen. Het ingesloten adaptieve formulier is volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hierdoor kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd met het formulier communiceren.
+U kunt [&#x200B; aangepaste vormen in een pagina van AEM Sites &#x200B;](/help/forms/embed-adaptive-form-aem-sites.md) of een Web-pagina inbedden die buiten AEM wordt ontvangen. Het ingesloten adaptieve formulier is volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hierdoor kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd met het formulier communiceren.
 
 ## Vereisten {#prerequisites}
 
 Voer de volgende stappen uit voordat u een adaptief formulier insluit op een externe website
 
 * Publiceer het adaptieve formulier dat moet worden ingesloten op de publicatieversie van de AEM Forms-server.
-* Maak of identificeer een webpagina op uw website om het adaptieve formulier te hosten. Zorg ervoor dat webpage jQuery- dossiers van CDN [ kan ](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) lezen of een lokaal exemplaar van ingebedde jQuery heeft. jQuery is vereist om een adaptief formulier te genereren.
-* Wanneer de server van AEM en de Web-pagina op verschillende domeinen zijn, voer de stappen in sectie worden vermeld uit, [ laat AEM Forms toe om adaptieve vormen aan een dwars domeinplaats ](#cross-site) te dienen.
+* Maak of identificeer een webpagina op uw website om het adaptieve formulier te hosten. Zorg ervoor dat webpage jQuery- dossiers van CDN [&#x200B; kan &#x200B;](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) lezen of een lokaal exemplaar van ingebedde jQuery heeft. jQuery is vereist om een adaptief formulier te genereren.
+* Wanneer de server van AEM en de Web-pagina op verschillende domeinen zijn, voer de stappen in sectie worden vermeld uit, [&#x200B; laat AEM Forms toe om adaptieve vormen aan een dwars domeinplaats &#x200B;](#cross-site) te dienen.
 
 ## Aangepast formulier insluiten {#embed-adaptive-form}
 
@@ -153,7 +153,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 Houd bij het insluiten van een adaptief formulier in een webpagina rekening met de volgende aanbevolen procedures:
 
-* Zorg ervoor dat de opmaakregels die zijn gedefinieerd in de CSS van de webpagina geen conflict veroorzaken met de CSS van het formulierobject. Om conflicten te voorkomen, kunt u de CSS van de webpagina in het adaptieve formulierthema hergebruiken met de AEM-clientbibliotheek. Voor informatie over het gebruiken van cliëntbibliotheek in adaptieve vormthema&#39;s, zie [ Thema&#39;s in AEM Forms ](/help/forms/using-themes-in-core-components.md).
+* Zorg ervoor dat de opmaakregels die zijn gedefinieerd in de CSS van de webpagina geen conflict veroorzaken met de CSS van het formulierobject. Om conflicten te voorkomen, kunt u de CSS van de webpagina in het adaptieve formulierthema hergebruiken met de AEM-clientbibliotheek. Voor informatie over het gebruiken van cliëntbibliotheek in adaptieve vormthema&#39;s, zie [&#x200B; Thema&#39;s in AEM Forms &#x200B;](/help/forms/using-themes-in-core-components.md).
 * Zorg dat de formuliercontainer op de webpagina de volledige vensterbreedte gebruikt. Hiermee zorgt u ervoor dat de CSS-regels die voor mobiele apparaten zijn geconfigureerd, zonder wijzigingen werken. Als de formuliercontainer niet de volledige vensterbreedte heeft, moet u aangepaste CSS schrijven om het formulier aan te passen aan verschillende mobiele apparaten.
 * Gebruik `[getData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` API om de XML- of JSON-weergave van formuliergegevens op de client op te halen.
 * Gebruik de `[unloadAdaptiveForm](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` -API om het adaptieve formulier te verwijderen uit HTML DOM.
@@ -162,7 +162,7 @@ Houd bij het insluiten van een adaptief formulier in een webpagina rekening met 
 ## AEM Forms toestaan om aangepaste formulieren te gebruiken voor een interdomeinsite {#cross-site}
 
 1. Ga in AEM-publicatieexemplaar naar AEM Web Console Configuration Manager op `https://'[server]:[port]'/system/console/configMgr` .
-1. Zoek en open de **configuratie van de Filter van de Verwijzing van 0} Apache het Verdelen.**
+1. Zoek en open de **configuratie van de Filter van de Verwijzing van 0&rbrace; Apache het Verdelen.**
 1. Geef in het veld Toegestane gastheren het domein op waar de webpagina zich bevindt. Hiermee kan de host POST-aanvragen indienen bij de AEM-server. U kunt ook de reguliere expressie gebruiken om een reeks externe toepassingsdomeinen op te geven.
 
 <!--

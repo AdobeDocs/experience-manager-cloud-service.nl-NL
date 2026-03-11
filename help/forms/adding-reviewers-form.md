@@ -58,17 +58,17 @@ Het schema voor metagegevens bewerken:
 Als u revisoren wilt koppelen aan een adaptief formulier, maakt u een revisorgroep en voegt u gebruikers toe. Voeg de gemaakte revisorgroep toe onder het veld revisor voor formulierverzending in de geavanceerde eigenschappen van het formulier.
 Met gebruikersgroepen kunt u verschillende sets revisoren aan verschillende Adaptieve Forms koppelen. Met deze functie voorkomt u dat een niet-geautoriseerde gebruiker een verzendcontrole uitvoert.
 
-Alvorens u de volgende stappen uitvoert, zie [ Vereiste ](adding-reviewers-form.md#prerequisite).
+Alvorens u de volgende stappen uitvoert, zie [&#x200B; Vereiste &#x200B;](adding-reviewers-form.md#prerequisite).
 
 Om een groep tot stand te brengen en leden aan het toe te voegen, navigeer aan **Hulpmiddelen** > **Verrichtingen** > **Veiligheid** > **Groepen**.
-Voor meer informatie, zie [ Beleid van de Gebruiker en de Diensten ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+Voor meer informatie, zie [&#x200B; Beleid van de Gebruiker en de Diensten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 Zorg ervoor dat u de groep toevoegt u als lid van de uit-van-de-doos gebruikersgroep creeert: **vorm-voorlegging-recensenten**. Deze gebruikersgroep wordt geleverd met [!DNL AEM Forms] en zorgt ervoor dat gebruikers worden toegevoegd als revisoren voor verzending.
 
 Gebruikersgroepen koppelen aan een adaptief formulier:
 
 1. Op de auteurswijze, navigeer aan **Forms** > **Forms &amp; Documenten**.
-1. Gebruik **Selecteer **optie om een Aangepaste Vorm te selecteren, en **Eigenschappen van de Mening** te klikken.
-1. In het venster van Eigenschappen van de vorm, geeft de klik **** uit, en klikt dan **GEAVANCEERD**.
+1. Gebruik **Selecteer &#x200B;** optie om een Aangepaste Vorm te selecteren, en **Eigenschappen van de Mening** te klikken.
+1. In het venster van Eigenschappen van de vorm, geeft de klik **&#x200B;**&#x200B;uit, en klikt dan **GEAVANCEERD**.
 1. Ga de groep op het gebied van de de vraagcontroleersgroep in, en klik **Gereed**.
 
    Het groepsveld Verzendrevisor wordt weergegeven met de naam die u hebt opgegeven in het bewerkte metagegevensschema van Adaptive Forms.
@@ -81,5 +81,5 @@ Gebruikersgroepen koppelen aan een adaptief formulier:
 
 >[!MORELIKETHIS]
 >
->* [ Creërend en het leiden overzichten aan vormen ](/help/forms/create-reviews-forms.md)
->* [ creeer en beheer overzichten voor een Aanpassings Vorm ](/help/forms/review-adaptiveforms-in-sites-page.md)
+>* [&#x200B; Creërend en het leiden overzichten aan vormen &#x200B;](/help/forms/create-reviews-forms.md)
+>* [&#x200B; creeer en beheer overzichten voor een Aanpassings Vorm &#x200B;](/help/forms/review-adaptiveforms-in-sites-page.md)

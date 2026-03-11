@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Een Adaptief Forms-thema insluiten in een AEM Sites-thema
 
-U kunt een Adaptief thema van Forms (zoals het [ thema van het Canvas van AEM Forms ](https://github.com/adobe/aem-forms-theme-canvas)) in uw thema van AEM Sites inbedden. Die manier, drijft één enkel thema zowel uw plaatspagina&#39;s als om het even welke Aangepaste Forms ingebed op die pagina&#39;s, met één bouwstijl en één plaatsing via de [ Voorste-EindPijpleiding van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html).
+U kunt een Adaptief thema van Forms (zoals het [&#x200B; thema van het Canvas van AEM Forms &#x200B;](https://github.com/adobe/aem-forms-theme-canvas)) in uw thema van AEM Sites inbedden. Die manier, drijft één enkel thema zowel uw plaatspagina&#39;s als om het even welke Aangepaste Forms ingebed op die pagina&#39;s, met één bouwstijl en één plaatsing via de [&#x200B; Voorste-EindPijpleiding van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html).
 
 Dit artikel is bedoeld voor ontwikkelaars die het standaard (of aangepaste) AEM Sites-thema onderhouden of aanpassen en die adaptieve formulieropmaak willen opnemen zonder een aparte Forms-themaimplementatie te beheren.
 
@@ -23,9 +23,9 @@ Dit artikel is bedoeld voor ontwikkelaars die het standaard (of aangepaste) AEM 
 
 Voordat u begint, moet u controleren of:
 
-* **AEM as a Cloud Service** met [ Voorste-Eind Pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) die voor uw plaatsthema wordt gevormd.
-* **het themabronnen van de Plaats** - bijvoorbeeld, het [ standaardthema van het plaatsmalplaatje ](https://github.com/adobe/aem-site-template-standard) (het antwoord dat `theme/` met `src/theme.scss`, `src/components/`, etc. bevat).
-* **de themabronnen van Forms** - het [ thema van het Canvas van AEM Forms ](https://github.com/adobe/aem-forms-theme-canvas) (of een ander compatibel Adaptief thema van Forms) gekloond of plaatselijk gedownload.
+* **AEM as a Cloud Service** met [&#x200B; Voorste-Eind Pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) die voor uw plaatsthema wordt gevormd.
+* **het themabronnen van de Plaats** - bijvoorbeeld, het [&#x200B; standaardthema van het plaatsmalplaatje &#x200B;](https://github.com/adobe/aem-site-template-standard) (het antwoord dat `theme/` met `src/theme.scss`, `src/components/`, etc. bevat).
+* **de themabronnen van Forms** - het [&#x200B; thema van het Canvas van AEM Forms &#x200B;](https://github.com/adobe/aem-forms-theme-canvas) (of een ander compatibel Adaptief thema van Forms) gekloond of plaatselijk gedownload.
 * **Node.js en npm** - om het plaatsthema (zie themaREADME voor gesteunde versies) te bouwen.
 * **Gemaakt** - als u het volledige pakket van het plaatsmalplaatje (facultatief voor thema-slechts werk) bouwt.
 
@@ -59,7 +59,7 @@ Gebruikend uw **thema van Forms** (bijvoorbeeld, `aem-forms-theme-canvas`) en uw
    … (one folder per component)
    ```
 
-   ![ voeg adaptieve vormcomponenten ](/help/forms/assets/theme-add-adaptiveform-component.png) toe
+   ![&#x200B; voeg adaptieve vormcomponenten &#x200B;](/help/forms/assets/theme-add-adaptiveform-component.png) toe
 
 2. **beelden van het Exemplaar**\
    Kopieer de Forms-themaafbeeldingen naar het sitethema:
@@ -71,7 +71,7 @@ Gebruikend uw **thema van Forms** (bijvoorbeeld, `aem-forms-theme-canvas`) en uw
 
    Maak `theme/src/components/adaptiveform/resources/images/` als dit niet het geval is en kopieer vervolgens alle afbeeldingselementen (bijvoorbeeld `question.svg` , `Chevron-Left.svg` , `busy-state.gif` , enzovoort).
 
-   ![ voeg beelden ](/help/forms/assets/theme-add-images.png) toe
+   ![&#x200B; voeg beelden &#x200B;](/help/forms/assets/theme-add-images.png) toe
 
 ## Stap 3: Variabelen en combinaties kopiëren {#step-3-copy-variables-and-mixins}
 
@@ -82,9 +82,9 @@ In het Forms-thema worden gedeelde variabelen en combinaties gebruikt onder `src
 | `src/site/_variables.scss` | `theme/src/components/adaptiveform/_variables.scss` |
 | `src/site/_mixin.scss` | `theme/src/components/adaptiveform/_mixin.scss` |
 
-Kopieer **** niet de rest van de omslag van het thema van Forms `src/site/`; slechts worden deze twee dossiers vereist voor de ingebedde vormstijlen.
+Kopieer **&#x200B;**&#x200B;niet de rest van de omslag van het thema van Forms `src/site/`; slechts worden deze twee dossiers vereist voor de ingebedde vormstijlen.
 
-![ voegt variabelen en mengen ](/help/forms/assets/theme-add-mixin-variable.png) toe
+![&#x200B; voegt variabelen en mengen &#x200B;](/help/forms/assets/theme-add-mixin-variable.png) toe
 
 ## Stap 4: Afbeeldingspaden corrigeren in SCSS {#step-4-fix-image-paths}
 
@@ -117,7 +117,7 @@ Het **standaardthema van het plaatssjabloon** gebruikt Pakket, dat `url()` wegen
 }
 ```
 
-![ de beelden URL van de Verandering ](/help/forms/assets/theme-change-url.png)
+![&#x200B; de beelden URL van de Verandering &#x200B;](/help/forms/assets/theme-change-url.png)
 
 Herhaal dit voor elk SCSS-bestand onder `adaptiveform/` dat verwijst naar afbeeldingen (knop, accordeon, wizard, container, krabbel en andere). Het wordt aanbevolen om in uw IDE via `theme/src/components/adaptiveform/` een zoek-/vervangactie voor het hele project uit te voeren.
 
@@ -169,9 +169,9 @@ Gebruik het volgende als het volledige ingangspunt (komt overeen met de standaar
 @import './datetime/_datetime.scss';
 ```
 
-![ adaptieve vorm scss ](/help/forms/assets/theme-adaptive-form-scss.png)
+![&#x200B; adaptieve vorm scss &#x200B;](/help/forms/assets/theme-adaptive-form-scss.png)
 
-Als uw Forms-thema bepaalde componenten weglaat (bijvoorbeeld geen krabbels of captcha), verwijdert of maakt u opmerkingen over de overeenkomende `@import` -regels om bouwfouten te voorkomen. De lijst hierboven past de [ het themastructuur van het Canvas ](https://github.com/adobe/aem-forms-theme-canvas) aan.
+Als uw Forms-thema bepaalde componenten weglaat (bijvoorbeeld geen krabbels of captcha), verwijdert of maakt u opmerkingen over de overeenkomende `@import` -regels om bouwfouten te voorkomen. De lijst hierboven past de [&#x200B; het themastructuur van het Canvas &#x200B;](https://github.com/adobe/aem-forms-theme-canvas) aan.
 
 ## Stap 6: Importeer het adaptieve formulierthema in het site-thema {#step-6-import-in-theme-scss}
 
@@ -194,7 +194,7 @@ In **`theme/src/theme.scss`**, voeg één enkele invoer bij het **eind** van het
 @import './components/adaptiveform/_adaptiveform.scss';
 ```
 
-![ voeg adaptieve vormCSS ](/help/forms/assets/theme-add-adaptive-form-scss-theme.png) toe
+![&#x200B; voeg adaptieve vormCSS &#x200B;](/help/forms/assets/theme-add-adaptive-form-scss-theme.png) toe
 
 Dit is de enige vereiste wijziging in de bestaande sitethemastructuur. Alle formulierspecifieke code blijft onder `src/components/adaptiveform/` staan.
 
@@ -208,9 +208,9 @@ Dit is de enige vereiste wijziging in de bestaande sitethemastructuur. Alle form
    npm run build
    ```
 
-   ![ looppas bouwt ](/help/forms/assets/theme-mpm-run-build.png)
+   ![&#x200B; looppas bouwt &#x200B;](/help/forms/assets/theme-mpm-run-build.png)
 
-2. Stel via uw bestaande [ voor-EindPijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) op. Na de implementatie wordt hetzelfde thema-CSS toegepast op zowel sitepagina&#39;s als ingesloten Adaptive Forms.
+2. Stel via uw bestaande [&#x200B; voor-EindPijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) op. Na de implementatie wordt hetzelfde thema-CSS toegepast op zowel sitepagina&#39;s als ingesloten Adaptive Forms.
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -225,4 +225,4 @@ Dit is de enige vereiste wijziging in de bestaande sitethemastructuur. Alle form
 ## Zie ook {#see-also}
 
 * [Thema&#39;s gebruiken om adaptieve Forms op basis van kerncomponenten te maken](/help/forms/using-themes-in-core-components.md)
-* [ ontwikkelt zich met Voorste-Eind Pijpleidingen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)
+* [&#x200B; ontwikkelt zich met Voorste-Eind Pijpleidingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)

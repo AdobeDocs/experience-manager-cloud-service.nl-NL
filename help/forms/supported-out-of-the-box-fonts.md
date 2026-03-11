@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Door OOTB ondersteunde lettertypen voor PDF Generation op Forms as a Cloud Service  {#ootb-supported-fonts-overview}
 
-AEM Forms as a Cloud Service biedt diverse ingebouwde OOTB gesteunde doopvonten aan die foutloos kunnen worden gebruikt binnen [ Communicatie APIs ](/help/forms/aem-forms-cloud-service-communications-introduction.md), [ Document van Verslag voor de Componenten van de Kern ](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), en [ Document van Verslag voor de Componenten van de Stichting ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+AEM Forms as a Cloud Service biedt diverse ingebouwde OOTB gesteunde doopvonten aan die foutloos kunnen worden gebruikt binnen [&#x200B; Communicatie APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md), [&#x200B; Document van Verslag voor de Componenten van de Kern &#x200B;](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), en [&#x200B; Document van Verslag voor de Componenten van de Stichting &#x200B;](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
 <!--
 
@@ -53,5 +53,5 @@ De volgende lettertypen worden door OOTB ondersteund:
 * eurosign.ttf
 
 
-Naast de bovengenoemde lettertypen kunt u aangepaste lettertypen gebruiken om de PDF&#39;s een specifieke vormgeving te geven. Om douanedoopvonten toe te laten, voegt u [ douanedoopvonten aan uw milieu van Forms as a Cloud Service ](/help/forms/use-custom-fonts.md) met een geldige vergunning toe.
+Naast de bovengenoemde lettertypen kunt u aangepaste lettertypen gebruiken om de PDF&#39;s een specifieke vormgeving te geven. Om douanedoopvonten toe te laten, voegt u [&#x200B; douanedoopvonten aan uw milieu van Forms as a Cloud Service &#x200B;](/help/forms/use-custom-fonts.md) met een geldige vergunning toe.
 
