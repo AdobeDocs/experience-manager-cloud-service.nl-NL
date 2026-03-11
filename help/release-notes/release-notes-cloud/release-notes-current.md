@@ -38,7 +38,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [&#x200B; hier &#x200B;](
 
 Bekijk de video Overzicht van de release van februari 2026 voor een overzicht van de functies die in de release van 2026.2.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480405/?captions=dut&quality=12)
 
 
 ## AEM Beta-programma&#39;s {#aem-beta-programs}
@@ -191,7 +191,7 @@ We hebben een beperkt aantal mogelijkheden voor AEM Publish Delivery- of Edge De
 
 #### Cloud Manager MCP Server (Beta-programma) {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480348/?captions=dut&quality=12)
 
 Moderne IDEs gebruikt het ModelProtocol van de Context (MCP) om grote taalmodellen (LLMs) toe te laten om hulpmiddelen aan te halen die door servers MCP worden blootgesteld. In plaats van rechtstreeks te integreren met API-specificaties op laag niveau, kunnen ontwikkelaars hun intentie eenvoudig in natuurlijke taal beschrijven.
 
