@@ -30,7 +30,7 @@ De Nieuwe Video Viewer is bedoeld voor organisaties die een verbeterde en uitbre
 
 > **NOTA**
 >
-> De nieuwe video-viewer is een beperkte beschikbaarheidsfunctie. U kunt het krijgen toegelaten door a [&#x200B; steunkaartje &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te creëren.
+> De nieuwe video-viewer is een beperkte beschikbaarheidsfunctie. U kunt het krijgen toegelaten door a [&#x200B; steunkaartje &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) te creëren.
 
 
 ## De werking van de nieuwe video-viewer {#how-it-works}
@@ -175,7 +175,7 @@ Adobe raadt aan de oorsprong van het bericht te valideren om ervoor te zorgen da
 
 Het rapport Videobetrokkenheid bevat analysemetriek voor video&#39;s die worden afgespeeld met de nieuwe video-viewer in dynamische media. Het rapport levert geaggregeerde prestatiegegevens voor de opgegeven maand en ondersteunt maandelijkse rapportage.
 
-Rapporten worden op verzoek gegenereerd. Om een rapport te verzoeken, creeer a [&#x200B; steunkaartje &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) en verstrek de volgende details:
+Rapporten worden op verzoek gegenereerd. Om een rapport te verzoeken, creeer a [&#x200B; steunkaartje &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) en verstrek de volgende details:
 
 * Maand van rapport - Geef de maand op waarvoor het rapport vereist is (bijvoorbeeld januari 2026).
 * E-mailadres van levering - E-mailadres van de groep (aanbevolen) of persoon om het rapport te verzenden
