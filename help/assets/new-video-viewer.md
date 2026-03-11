@@ -30,7 +30,7 @@ De Nieuwe Video Viewer is bedoeld voor organisaties die een verbeterde en uitbre
 
 > **NOTA**
 >
-> De nieuwe video-viewer is een beperkte beschikbaarheidsfunctie. U kunt het krijgen toegelaten door a [ steunkaartje ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te creëren.
+> De nieuwe video-viewer is een beperkte beschikbaarheidsfunctie. U kunt het krijgen toegelaten door a [&#x200B; steunkaartje &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te creëren.
 
 
 ## De werking van de nieuwe video-viewer {#how-it-works}
@@ -75,7 +75,7 @@ Voer de volgende stappen uit om een voorvertoning van de nieuwe video-viewer wee
 3. In het linkerpaneel, klik **Kijkers**.
 4. In het **paneel van Kijkers**, uitgezochte **Video (nieuw)**.
 5. Klik **URL** om de voorproefverbinding te kopiëren.
-   ![ Exemplaar URL ](assets/Copy-url1.jpg)
+   ![&#x200B; Exemplaar URL &#x200B;](assets/Copy-url1.jpg)
 
 ## De nieuwe video-viewer op sites gebruiken {#use-in-sites}
 
@@ -91,7 +91,7 @@ Voer de volgende stappen uit om een video toe te voegen met behulp van de Dynami
 4. Klik op de component om de elementenkiezer te openen.
 5. Selecteer een video-element.
 
-![ de Dynamische component van Media van de belemmering ](assets/drag-component.jpeg)
+![&#x200B; de Dynamische component van Media van de belemmering &#x200B;](assets/drag-component.jpeg)
 
 ### De viewer configureren
 
@@ -99,13 +99,13 @@ Voer de volgende stappen uit om de viewer-voorinstelling te configureren:
 
 1. Selecteer de **Dynamische component van Media** op de pagina.
 2. Klik **vormen** in de componententoolbar.
-   ![ Open Dynamische montages van Media ](assets/configure-asset.png)
+   ![&#x200B; Open Dynamische montages van Media &#x200B;](assets/configure-asset.png)
 
 3. In de **Dynamische de montagedialoog van Media**, uitgezochte **Video (nieuw)** van de **Vooraf ingestelde Kijker** drop-down lijst.
-   ![ Uitgezochte Video (nieuwe) vooraf ingestelde kijker ](assets/viewer-preset.jpeg)
+   ![&#x200B; Uitgezochte Video (nieuwe) vooraf ingestelde kijker &#x200B;](assets/viewer-preset.jpeg)
 
-4. Ga om het even welke vereiste bepalingen op het **Gewijzigde 1} gebied van de Kijker in {(bijvoorbeeld,**).`autoplay=true&muted=true`
-   ![ de bepalingen van de Kijker ](assets/additional-modifiers.jpeg)
+4. Ga om het even welke vereiste bepalingen op het **Gewijzigde 1&rbrace; gebied van de Kijker in &lbrace;(bijvoorbeeld,**).`autoplay=true&muted=true`
+   ![&#x200B; de bepalingen van de Kijker &#x200B;](assets/additional-modifiers.jpeg)
 
 5. Sla de wijzigingen op.
 
@@ -175,7 +175,7 @@ Adobe raadt aan de oorsprong van het bericht te valideren om ervoor te zorgen da
 
 Het rapport Videobetrokkenheid bevat analysemetriek voor video&#39;s die worden afgespeeld met de nieuwe video-viewer in dynamische media. Het rapport levert geaggregeerde prestatiegegevens voor de opgegeven maand en ondersteunt maandelijkse rapportage.
 
-Rapporten worden op verzoek gegenereerd. Om een rapport te verzoeken, creeer a [ steunkaartje ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) en verstrek de volgende details:
+Rapporten worden op verzoek gegenereerd. Om een rapport te verzoeken, creeer a [&#x200B; steunkaartje &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) en verstrek de volgende details:
 
 * Maand van rapport - Geef de maand op waarvoor het rapport vereist is (bijvoorbeeld januari 2026).
 * E-mailadres van levering - E-mailadres van de groep (aanbevolen) of persoon om het rapport te verzenden
