@@ -29,7 +29,7 @@ Ja, u kunt een op XFA gebaseerd adaptief formulier maken op een Cloud Service-in
 * **kan ik inhoud van een op-gebouw of [!DNL Adobe-Managed Services] milieu&#39;s aan [!DNL Forms] milieu van as a Cloud Service migreren?**
 Ja, u kunt uw aangepaste code, inhoud en elementen migreren van [!DNL Adobe-Managed Services] -omgevingen naar [!DNL Forms] as a Cloud Service-omgevingen. Voor gedetailleerde instructies, zie [&#x200B; migreren aan Forms as a Cloud Service &#x200B;](migrate-to-forms-as-a-cloud-service.md).
 
-<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
+<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=nl-NL#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/nl-NL/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
 * **Waar kan ik API-naslagdocumentatie voor AEM [!DNL Forms] as a Cloud Service [!DNL Java™] ophalen?**
 U kunt de referentiedocumentatie voor Java™ API downloaden van [!DNL Maven Central Repository] . Downloaden:
@@ -59,7 +59,7 @@ Ja, u kunt Adaptive Forms maken om schemaconforme gegevens te produceren.
 Custom parameters are planned for an upcoming release. -->
 
 * **Kan ik beveiligde inhoud in cache plaatsen?**
-Functies voor beveiligde inhoud die in de cache worden geplaatst, zijn standaard uitgeschakeld. Om de eigenschap toe te laten, kunt u de instructies uitvoeren die bij [&#x200B; in het voorgeheugen onderbrengend Beveiligde Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) worden verstrekt.
+Functies voor beveiligde inhoud die in de cache worden geplaatst, zijn standaard uitgeschakeld. Om de eigenschap toe te laten, kunt u de instructies uitvoeren die bij [&#x200B; in het voorgeheugen onderbrengend Beveiligde Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=nl-NL) worden verstrekt.
 
 * **ik heb een gelokaliseerde Aangepaste Vorm; het geeft gelokaliseerde versie niet terug? Wat zou de oorzaak en hoe te om het op te lossen kunnen zijn?**
 
@@ -105,7 +105,7 @@ Creeer de Adaptieve Vorm die op het schema JSON op Experience Manager 6.5 wordt 
 
   You can get started with Adobe Experience Manager easily with just a few steps:
 
-  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?#generate-service-credentials) the service credentials.  
+  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL&#generate-service-credentials) the service credentials.  
   
   1. Setup your connection: Add your service credentials to the Adobe Experience Manager Connector. You can get crdential from service credential JSON and copy these credential details to your one-time connection setup:
 

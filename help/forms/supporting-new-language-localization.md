@@ -16,12 +16,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=nl-NL) |
 | Kernonderdelen | [&#x200B; klik hier &#x200B;](supporting-new-language-localization-core-components.md) |
 | Elementaire componenten | Dit artikel |
 
@@ -57,7 +57,7 @@ Ondersteuning voor een nieuwe landinstelling toevoegen in de Adaptive Forms-runt
 #### &#x200B;1. Kloont de repository {#clone-the-repository}
 
 1. Navigeer vanaf de opdrachtregel naar de locatie waar u de Forms Cloud Service-opslagplaats wilt klonen.
-1. Voer het bevel uit dat u [&#x200B; van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) wordt teruggewonnen. Dit lijkt op `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` .
+1. Voer het bevel uit dat u [&#x200B; van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git) wordt teruggewonnen. Dit lijkt op `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` .
 1. Gebruik de gebruikersnaam en het wachtwoord van de it om de repository te klonen.
 1. Open de gekloonde Forms Cloud Service-opslagmap in de gewenste editor.
 
@@ -116,11 +116,11 @@ Voer deze stap alleen uit als de `<locale>` die u toevoegt, niet behoort tot `en
    <filter root="/etc/languages"/>
    ```
 
-Alvorens de veranderingen in de bewaarplaats van het Git van AEM vast te leggen, moet u tot uw [&#x200B; bewaarplaats van de Git toegang hebben &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+Alvorens de veranderingen in de bewaarplaats van het Git van AEM vast te leggen, moet u tot uw [&#x200B; bewaarplaats van de Git toegang hebben &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git).
 
 #### &#x200B;5. Leg de wijzigingen in de opslagplaats vast en implementeer de pijpleiding {#commit-changes-in-repo-deploy-pipeline}
 
-Leg de wijzigingen vast in de GIT-opslagplaats nadat u een ondersteuning voor landinstellingen hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Leer [&#x200B; hoe te opstelling een pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om nieuwe scènesteun toe te voegen.
+Leg de wijzigingen vast in de GIT-opslagplaats nadat u een ondersteuning voor landinstellingen hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Leer [&#x200B; hoe te opstelling een pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline) om nieuwe scènesteun toe te voegen.
 Zodra de pijpleiding volledig is, verschijnt de onlangs toegevoegde scène in het milieu van AEM.
 
 ### Toegevoegde landinstelling gebruiken in Adaptive Forms {#use-added-locale-in-af}

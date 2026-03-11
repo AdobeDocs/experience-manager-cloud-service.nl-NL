@@ -69,7 +69,7 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
    >
    > Gebruikers hoeven de URL voor JavaScript-validatie aan de clientzijde en de URL voor validatie aan de serverzijde niet aan te passen, omdat deze al zijn voorgevuld voor Microsoft-validatie.
 
-   Zodra de Turnstile dienst Captcha wordt gevormd, is het beschikbaar voor gebruik in een [&#x200B; Aangepaste Vorm die op de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) wordt gebaseerd.
+   Zodra de Turnstile dienst Captcha wordt gevormd, is het beschikbaar voor gebruik in een [&#x200B; Aangepaste Vorm die op de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction) wordt gebaseerd.
 
 ## Draaien in een adaptieve vorm gebruiken {#using-turnstile-core-components}
 

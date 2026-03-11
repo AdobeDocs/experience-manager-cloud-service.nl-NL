@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Dankzij de integratie van Adobe Experience Manager (AEM) Forms met Salesforce kunnen organisaties processen stroomlijnen door hun mogelijkheden voor het maken en beheren van formulieren te verbinden met het Salesforce-platform. Als u een adaptief formulier aansluit op Salesforce, kunt u naadloze gegevensuitwisseling tussen de twee platforms tot stand brengen. Wanneer gebruikers formulieren verzenden, worden de gegevens automatisch gesynchroniseerd met Salesforce. Het zorgt ervoor dat alle klanteninformatie bijgewerkt en binnen het systeem gecentraliseerd is.
@@ -41,7 +41,7 @@ Voordat u de communicatie tussen een Salesforce-toepassing en een AEM-omgeving i
 
 * Creeer a [&#x200B; Salesforce verbonden app met OAuth 2.0 cliëntcredentiële stroom &#x200B;](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) en een API-enige gebruiker voor uw organisatie en verkrijg de consumentensleutel en het consumentengeheim voor app.
 
-* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. Alternatief, kunt u verkiezen om [&#x200B; tot een dossier van de Swagger &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) van het kras te leiden, dat voor gebruik in uw milieu van AEM wordt gemaakt.
+* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. Alternatief, kunt u verkiezen om [&#x200B; tot een dossier van de Swagger &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=nl-NL) van het kras te leiden, dat voor gebruik in uw milieu van AEM wordt gemaakt.
 
 
 ## Salesforce-toepassing configureren met OAuth 2.0 Client Credential-stroom {#steps-to-create-aem-datasource-configuration}

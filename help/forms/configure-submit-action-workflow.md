@@ -19,7 +19,7 @@ Met de handeling **[!UICONTROL Invoke an AEM Workflow]** Verzenden wordt een ada
 
 >[!NOTE]
 >
->  Leer hoe te [&#x200B; een werkschemamodel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) creëren om de reeks uitgevoerde stappen te bepalen wanneer een gebruiker het werkschema begint. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
+>  Leer hoe te [&#x200B; een werkschemamodel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) creëren om de reeks uitgevoerde stappen te bepalen wanneer een gebruiker het werkschema begint. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
 
 AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [&#x200B; AanpassingsVorm voorlegt Artikel van de Actie &#x200B;](/help/forms/configure-submit-actions-core-components.md).
 
@@ -48,7 +48,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 >[!TAB  Component van de Stichting ]
 
-Aan opstelling geautomatiseerd proces met [&#x200B; het Werkschema van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor een Aanpassings Vorm die op de Componenten van de Stichting wordt gebaseerd, voer de volgende stappen uit:
+Aan opstelling geautomatiseerd proces met [&#x200B; het Werkschema van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) voor een Aanpassings Vorm die op de Componenten van de Stichting wordt gebaseerd, voer de volgende stappen uit:
 
 1. Open het Adaptief formulier voor bewerking en ga naar de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
 1. Van de **[!UICONTROL Submit Action]** drop-down lijst, uitgezochte **legt Actie** als **[!UICONTROL Invoke an AEM workflow]** voor.
@@ -74,7 +74,7 @@ Aan opstelling geautomatiseerd proces met [&#x200B; het Werkschema van AEM &#x20
 
 >[!TAB  Component van de Kern ]
 
-Aan opstelling geautomatiseerd proces met [&#x200B; het Werkschema van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor een Aanpassings Vorm die op de Componenten van de Kern wordt gebaseerd, voer de volgende stappen uit:
+Aan opstelling geautomatiseerd proces met [&#x200B; het Werkschema van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) voor een Aanpassings Vorm die op de Componenten van de Kern wordt gebaseerd, voer de volgende stappen uit:
 
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
 1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
@@ -103,7 +103,7 @@ Aan opstelling geautomatiseerd proces met [&#x200B; het Werkschema van AEM &#x20
 
 >[!TAB  Universele Redacteur ]
 
-Aan opstelling geautomatiseerd proces met [&#x200B; het Werkschema van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor een Aangepaste Vorm authored in Universele Redacteur, voer de volgende stappen uit:
+Aan opstelling geautomatiseerd proces met [&#x200B; het Werkschema van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) voor een Aangepaste Vorm authored in Universele Redacteur, voer de volgende stappen uit:
 
 1. Open het adaptieve formulier voor bewerking.
 1. Klik **uitgeven de uitbreiding van de Eigenschappen van de Vorm** op de redacteur.

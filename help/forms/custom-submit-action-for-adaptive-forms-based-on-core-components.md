@@ -48,7 +48,7 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
 
    **waar om deze informatie te vinden?**
 
-   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[&#x200B; Toegang tot Git &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[&#x200B; Toegang tot Git &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git)&quot;.
 
    **Uw project is klaar!**
 
@@ -215,9 +215,9 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
    1. De bijgewerkte code implementeren:
 
-      Trigger een plaatsing van uw code door de [&#x200B; bestaande volledig-stapelpijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Het bouwt en stelt automatisch de bijgewerkte code met de nieuwe douane op om actiessteun voor te leggen.
+      Trigger een plaatsing van uw code door de [&#x200B; bestaande volledig-stapelpijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline). Het bouwt en stelt automatisch de bijgewerkte code met de nieuwe douane op om actiessteun voor te leggen.
 
-      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [&#x200B; hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [&#x200B; hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
 
       ![&#x200B; Plaatsing van de Wolk &#x200B;](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 

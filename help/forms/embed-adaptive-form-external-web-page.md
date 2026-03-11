@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=en) |
+| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt [&#x200B; aangepaste vormen in een pagina van AEM Sites &#x200B;](/help/forms/embed-adaptive-form-aem-sites.md) of een Web-pagina inbedden die buiten AEM wordt ontvangen. Het ingesloten adaptieve formulier is volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hierdoor kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd met het formulier communiceren.
@@ -160,8 +160,8 @@ Houd bij het insluiten van een adaptief formulier in een webpagina rekening met 
 
 * Zorg ervoor dat de opmaakregels die zijn gedefinieerd in de CSS van de webpagina geen conflict veroorzaken met de CSS van het formulierobject. Om conflicten te voorkomen, kunt u de CSS van de webpagina in het adaptieve formulierthema hergebruiken met de AEM-clientbibliotheek. Voor informatie over het gebruiken van de cliëntbibliotheek in adaptieve vormthema&#39;s, zie [&#x200B; Thema&#39;s in AEM Forms &#x200B;](/help/forms/themes.md).
 * Zorg dat de formuliercontainer op de webpagina de volledige vensterbreedte gebruikt. Hiermee zorgt u ervoor dat de CSS-regels die voor mobiele apparaten zijn geconfigureerd, zonder wijzigingen werken. Als de formuliercontainer niet de volledige vensterbreedte heeft, moet u aangepaste CSS schrijven om het formulier aan te passen aan verschillende mobiele apparaten.
-* Gebruik `[getData](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API om de XML- of JSON-weergave van formuliergegevens op de client op te halen.
-* Gebruik de `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` -API om het adaptieve formulier te verwijderen uit HTML DOM.
+* Gebruik `[getData](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API om de XML- of JSON-weergave van formuliergegevens op de client op te halen.
+* Gebruik de `[unloadAdaptiveForm](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` -API om het adaptieve formulier te verwijderen uit HTML DOM.
 * Opstelling de toegang-controle-oorsprong kopbal wanneer het verzenden van een reactie van een server van AEM.
 
 ## AEM Forms toestaan om adaptieve formulieren te gebruiken voor een interdomeinsite {#cross-site}

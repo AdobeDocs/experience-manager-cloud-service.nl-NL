@@ -121,7 +121,7 @@ Voer de volgende stappen uit om uit-van-de-doos aangepaste verzendactie en DocuS
 
    Na het uitvoeren van deze stappen, kunt u een nieuwe douane bekijken voorlegt actie [&#x200B; met elektronische handtekeningen DocuSign &#x200B;](#enabledocusign) beschikbaar in de lijst van voorstellingsopties voor een adaptieve vorm en de configuratie van de a [&#x200B; de wolkendienst DocuSign &#x200B;](#configure-docusign-with-aem-forms) in uw lokale ontwikkelomgeving.
 
-1. Compileer en [&#x200B; stel de code aan uw  [!DNL AEM Forms]  milieu van as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases) op.
+1. Compileer en [&#x200B; stel de code aan uw  [!DNL AEM Forms]  milieu van as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#customer-releases) op.
 
 ## [!DNL DocuSign] integreren met [!DNL AEM Forms] {#configure-docusign-with-aem-forms}
 

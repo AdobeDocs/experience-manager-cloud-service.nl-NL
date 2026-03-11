@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Workflow](/help/forms/assets/workflow-marketo-3.png)
 
-De adaptieve redacteur van Forms verstrekt **voorleggen aan Marketo Engage** actie om de Adaptieve gegevens van Forms naar Adobe Marketo Engage voor verwerking te verzenden. U kunt een bestaande Aangepaste Vorm vormen om gegevens aan [&#x200B; Adobe Marketo Engage &#x200B;](https://experienceleague.adobe.com/en/docs/marketo/using/home) op voorlegging voor te leggen.
+De adaptieve redacteur van Forms verstrekt **voorleggen aan Marketo Engage** actie om de Adaptieve gegevens van Forms naar Adobe Marketo Engage voor verwerking te verzenden. U kunt een bestaande Aangepaste Vorm vormen om gegevens aan [&#x200B; Adobe Marketo Engage &#x200B;](https://experienceleague.adobe.com/nl/docs/marketo/using/home) op voorlegging voor te leggen.
 
 Er zijn verschillende verzendacties beschikbaar die niet in de verpakking staan en waarmee formulierverzendingen kunnen worden verwerkt. U kunt meer over deze opties leren in het [&#x200B; AanpassingsVorm voorlegt Artikel van de Actie &#x200B;](/help/forms/configure-submit-actions-core-components.md).
 
@@ -98,7 +98,7 @@ Na het vormen van voorlegt actie voor de Aangepaste Vorm als **voorleggen aan Ma
 
 ## Volgende stap
 
-U kunt een AanpassingsVorm met de [&#x200B; bibliotheek van Munchkin &#x200B;](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
+U kunt een AanpassingsVorm met de [&#x200B; bibliotheek van Munchkin &#x200B;](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
 
 ## Verwante artikelen
 
