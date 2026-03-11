@@ -5,12 +5,13 @@ contentOwner: robhagat
 content-type: reference
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '661'
 ht-degree: 3%
 
 ---
@@ -26,9 +27,9 @@ U kunt het hulpprogramma Logger configureren om logboeken te maken voor HTML5-fo
 
 Voer de volgende stappen uit om logbestanden aan de serverzijde te configureren:
 
-1. Ga naar `https://'[server]:[port]'/system/console/configMgr` . Bepaal en open de *van de het Registreren registrerenconfiguratie van de PlaatsING van de Plaatsing de 1&rbrace; optie.* Er wordt een dialoogvenster weergegeven:
+1. Ga naar `https://'[server]:[port]'/system/console/configMgr` . Bepaal en open de *van de het Registreren registrerenconfiguratie van de PlaatsING van de Plaatsing de 1} optie.* Er wordt een dialoogvenster weergegeven:
 
-   ![&#x200B; Het dialoogvenster voor de configuratieoptie van het logbestand voor spellingcontrole van Apace &#x200B;](assets/logconfig.png)
+   ![ Het dialoogvenster voor de configuratieoptie van het logbestand voor spellingcontrole van Apace ](assets/logconfig.png)
 
    Configuratieoptie Apace Sling-logboekregistratie
 
@@ -182,7 +183,7 @@ Als u de Manager van de Configuratie voor het toelaten van registreren gebruikt,
 1. Zoek naar en klik **Mobiele Configuraties van Forms**.
 1. In het Debug de tekstvakje van Opties, ga de logboekconfiguraties in zoals die in de vorige sectie bijvoorbeeld worden beschreven, **2-a4-b5-c6**
 
-   ![&#x200B; Configuratie van Forms &#x200B;](assets/forms_configuration.png)
+   ![ Configuratie van Forms ](assets/forms_configuration.png)
 
    Forms-configuratie
 
@@ -197,7 +198,7 @@ De locatie en naam van het logbestand wijzigen:
 1. Meld u aan bij Configuratiebeheer als beheerder. De standaard-URL van Configuration Manager is `https://'[server]:[port]'/system/console/configMgr` .
 1. Klik **Apache Sling Logging Logger Configuratie van het Logboek**. Er wordt een dialoogvenster weergegeven.
 
-   ![&#x200B; logconfig-1 &#x200B;](assets/logconfig-1.png)
+   ![ logconfig-1 ](assets/logconfig-1.png)
 
 1. Verander het **Niveau van het Logboek** om te zuiveren.
 

@@ -1,12 +1,13 @@
 ---
 title: Wat zijn overwegingen, bekende kwesties en beste praktijken in AEM Forms?
 description: Bekende problemen en best practices voor AEM Forms Communication API's in overweging nemen.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Communicatie-API&#39;s accepteren zowel een formulierontwerp dat gewoonlijk in D
 
 Bekijk het volgende voorbeeld van een aanvraagformulier voor een lening:
 
-![&#x200B; de toepassingsVorm van de Lening &#x200B;](assets/loanFormData.png)
+![ de toepassingsVorm van de Lening ](assets/loanFormData.png)
 
 Als u gegevens wilt samenvoegen in dit formulierontwerp, maakt u een XML-gegevensbron die overeenkomt met het formulier. De volgende XML vertegenwoordigt een XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassingsformulier.
 
@@ -62,7 +63,7 @@ Als u gegevens wilt samenvoegen in dit formulierontwerp, maakt u een XML-gegeven
 
 Voor volledige toegang tot de renderingmogelijkheden van de communicatie-API&#39;s wordt aanbevolen een XDP-bestand als invoer te gebruiken. Soms kan een PDF-bestand worden gebruikt. Het gebruik van een PDF-bestand als invoer heeft echter de volgende beperkingen:
 
-Een PDF-document dat geen XFA-stream bevat, kan niet worden gerenderd als PostScript, PCL of ZPL. Communicatie-API&#39;s kunnen PDF-documenten met XFA-streams (dat wil zeggen, formulieren die zijn gemaakt in Designer) weergeven in laser- en labelindelingen. Als het PDF-document is ondertekend, gecertificeerd of gebruiksrechten bevat (toegepast met de AEM Forms Reader Extensions-service), kan het niet worden gerenderd naar deze afdrukindelingen.
+Een PDF-document dat geen XFA-stream bevat, kan niet worden gerenderd als PostScript, PCL of ZPL. Communicatie-API&#39;s kunnen PDF-documenten met XFA-streams (dat wil zeggen, formulieren die in Designer zijn gemaakt) weergeven in laser- en labelindelingen. Als het PDF-document is ondertekend, gecertificeerd of gebruiksrechten bevat (toegepast met de AEM Forms Reader Extensions-service), kan het niet worden gerenderd naar deze afdrukindelingen.
 
 
 ### Afdrukbare gebieden {#printable-areas}
@@ -73,7 +74,7 @@ Zorg altijd dat u het juiste XDC-bestand voor de printer gebruikt. Vermijd bijvo
 
 ### Scripts voor alleen XFA-formulieren (XDP/PDF) {#scripts}
 
-Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Voor informatie over het creëren van manuscripten van het vormontwerp, zie [&#x200B; Hulp van Designer &#x200B;](use-forms-designer.md).
+Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Voor informatie over het creëren van manuscripten van het vormontwerp, zie [ Hulp van Designer ](use-forms-designer.md).
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
@@ -84,7 +85,7 @@ Als u een formulier wilt ontwerpen waarin printerresidente lettertypen worden ge
 
 Als een lettertype op een clientcomputer is geïnstalleerd, is het beschikbaar in de vervolgkeuzelijst in Designer. Als het lettertype niet is geïnstalleerd, moet u de lettertypenaam handmatig opgeven. De optie Niet-beschikbare lettertypen permanent vervangen in Designer kan zijn uitgeschakeld. Als het XDP-bestand in Designer wordt opgeslagen, wordt de naam van het vervangende font naar het XDP-bestand geschreven. Dit betekent dat het printerresidente lettertype niet wordt gebruikt.
 
-Er zijn twee typen OpenType®-lettertypen. Eén type is een TrueType OpenType®-font dat door PCL wordt ondersteund. Het andere is CFF OpenType®. PDF- en PostScript-uitvoer ondersteunen ingesloten Type-1-, TrueType- en OpenType®-lettertypen. PCL-uitvoer ondersteunt ingesloten TrueType-fonts.
+Er zijn twee typen OpenType®-lettertypen. Een type is een TrueType OpenType®-font dat door PCL wordt ondersteund. Het andere is CFF OpenType®. PDF- en PostScript-uitvoer ondersteunt ingesloten Type-1-, TrueType- en OpenType®-lettertypen. PCL-uitvoer ondersteunt ingesloten TrueType-fonts.
 
 Type-1- en OpenType®-lettertypen worden niet ingesloten in PCL-uitvoer. Inhoud die is opgemaakt met Type-1- en OpenType®-lettertypen wordt gerasterd en gegenereerd als een bitmapafbeelding die groot en langzamer kan zijn om te genereren.
 
@@ -137,8 +138,8 @@ In de volgende tabel worden XCI-opties opgegeven.
 
 | XCI, optie | Beschrijving |
 | ------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| config/present/pdf/creator | Hiermee wordt de maker van het document geïdentificeerd met het item Maker in het documentgegevenswoordenboek. Zie de handleiding PDF Reference voor meer informatie over dit woordenboek. |
-| config/present/pdf/producer | Hiermee wordt de documentproducent geïdentificeerd met behulp van het Producent-item in het documentinformatiewoordenboek. Zie de handleiding PDF Reference voor meer informatie over dit woordenboek. |
+| config/present/pdf/creator | Hiermee wordt de maker van het document geïdentificeerd met het item Maker in het documentgegevenswoordenboek. Zie de handleiding PDF Reference voor informatie over dit woordenboek. |
+| config/present/pdf/producer | Hiermee wordt de documentproducent geïdentificeerd met behulp van het Producent-item in het documentinformatiewoordenboek. Zie de handleiding PDF Reference voor informatie over dit woordenboek. |
 | config/present/layout | Hiermee bepaalt u of de uitvoer één deelvenster is of gepagineerd. |
 | config/present/pdf/compression/level | Hiermee geeft u de mate van compressie op die moet worden gebruikt bij het genereren van een PDF-document. |
 | config/present/pdf/scriptModel | Bepaalt of XFA-specifieke informatie wordt opgenomen in het PDF-uitvoerdocument. |
@@ -153,15 +154,15 @@ In de volgende tabel worden XCI-opties opgegeven.
 | config/present/output/to | Controls the location that log data or output data is written to. |
 | config/present/script/currentPage | Hiermee geeft u de eerste pagina op wanneer het document wordt geopend. |
 | config/present/script/exclude | Meldt aan de server/Communicatie APIs van AEM Forms welke gebeurtenissen om te negeren. |
-| config/present/pdf/linearized | Controls whether the output PDF document is linearized. |
+| config/present/pdf/linearized | Bepaalt of het PDF-uitvoerdocument lineair is. |
 | config/present/script/runScripts | Hiermee bepaalt u welke set scripts AEM Forms uitvoert. |
-| config/present/pdf/tagged | Controls the include of tags into the output PDF document. Codes, in de context van PDF, zijn aanvullende informatie die in een document is opgenomen om de logische structuur van het document zichtbaar te maken. Tags zijn handig voor toegankelijkheidshulpmiddelen en voor het opnieuw opmaken. Een paginanummer kan bijvoorbeeld als een artefact worden gecodeerd, zodat een schermlezer het niet in het midden van de tekst activeert. Hoewel codes een document nuttiger maken, verhogen zij ook de grootte van het document en de verwerkingstijd om het tot stand te brengen. |
+| config/present/pdf/tagged | Hiermee bepaalt u de opname van codes in het PDF-uitvoerdocument. In de context van PDF zijn codes aanvullende informatie die in een document wordt opgenomen om de logische structuur van het document zichtbaar te maken. Tags zijn handig voor toegankelijkheidshulpmiddelen en voor het opnieuw opmaken. Een paginanummer kan bijvoorbeeld als een artefact worden gecodeerd, zodat een schermlezer het niet in het midden van de tekst activeert. Hoewel codes een document nuttiger maken, verhogen zij ook de grootte van het document en de verwerkingstijd om het tot stand te brengen. |
 | config/present/pdf/version | Hiermee geeft u de versie op van het PDF-document dat moet worden gegenereerd. |
 
 
 ## Bekende problemen
 
-* U kunt een specifiek rendertype (PDF, AFDRUKKEN) slechts eenmaal gebruiken in de lijst met afdrukopties. U kunt bijvoorbeeld niet beschikken over twee PRINT-opties die elk een PCL-rendertype opgeven.
+* U kunt een specifiek rendertype (PDF, PRINT) slechts eenmaal gebruiken in de lijst met afdrukopties. U kunt bijvoorbeeld niet beschikken over twee PRINT-opties die elk een PCL-rendertype opgeven.
 
 * Voor een batchconfiguratie is slechts één instantie van combinatie van waarden van OutputType (PDF, PRINT) en RenderType (PostScript, PCL, IPL, ZPL, enzovoort) toegestaan.
 
@@ -179,19 +180,19 @@ In de volgende tabel worden XCI-opties opgegeven.
 
 **kan ik een gecontroleerde omslag of andere opslagmechanismen gebruiken om input en output op te slaan?**
 
-Op dit moment kunt u Microsoft Azure Storage gebruiken om invoergegevens en gegenereerde documenten op te slaan. De opslag van Microsoft Azure verstrekt diverse opties om [&#x200B; verrichtingen van de gegevensbeweging &#x200B;](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) te automatiseren.
+Op dit moment kunt u Microsoft Azure Storage gebruiken om invoergegevens en gegenereerde documenten op te slaan. De opslag van Microsoft Azure verstrekt diverse opties om [ verrichtingen van de gegevensbeweging ](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) te automatiseren.
 
-**is een Microsoft Azure rekening van de Opslag inbegrepen met de vergunning van de Cloud Service van Experience Manager Forms?**
+**is een rekening van de Opslag van Microsoft Azure inbegrepen met de vergunning van Experience Manager Forms Cloud Service?**
 
 Microsoft Azure Storage account is onafhankelijk van Experience Manager Forms Cloud Service license.
 
-**slaat Communicatie APIs gegevens op de servers van de Cloud Service van Experience Manager Forms op?**
+**slaat Communicatie APIs gegevens op de servers van Experience Manager Forms Cloud Service op?**
 
 Invoer- en uitvoergegevens worden alleen opgeslagen op Microsoft Azure Storage.
 
-**Zijn Communicatie APIs beschikbaar slechts voor de Cloud Service van Experience Manager Forms? Kan ik gelijkaardige functionaliteit op-gebouw milieu krijgen?**
+**Zijn Communicatie APIs beschikbaar slechts voor Experience Manager Forms Cloud Service? Kan ik gelijkaardige functionaliteit op-gebouw milieu krijgen?**
 
-U kunt de dienst van de Output van AEM Forms gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, en formaten te produceren ZPL.
+Met de AEM Forms Output-service kunt u een sjabloon (XFA of PDF) combineren met klantgegevens om documenten te genereren in de indelingen PDF, PS, PCL en ZPL.
 
 In vergelijking met een omgeving op locatie biedt de Cloud Service extra voordelen van automatisch schalen en kosteneffectiviteit.
 
@@ -208,8 +209,8 @@ Ja, u kunt meerdere batchbewerkingen tegelijk uitvoeren. Gebruik altijd verschil
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Inleiding aan de as a Cloud Service Mededelingen van AEM Forms &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [&#x200B; as a Cloud Service Architectuur van AEM Forms voor Adaptieve Forms en Communicatie APIs &#x200B;](/help/forms/aem-forms-cloud-service-architecture.md)
->* [&#x200B; Communicatie Verwerking - Synchrone APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications.md)
->* [&#x200B; Communicatie Verwerking - Partij APIs &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [ Inleiding aan de Mededelingen van AEM Forms as a Cloud Service ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [ de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
+>* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

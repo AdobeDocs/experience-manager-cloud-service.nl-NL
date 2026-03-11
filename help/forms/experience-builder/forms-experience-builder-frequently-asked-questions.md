@@ -6,10 +6,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ Voordat u Forms Experience Builder gaat gebruiken, moet u controleren of:
 - AEM Forms as a Cloud Service met Adaptive Forms Core-componenten
 - Basiskennis van formulierconcepten en bedrijfsvereisten
 
-Voor gedetailleerde technische opstellingsvereisten, zie [&#x200B; opstellen en vormen de Bouwer van de Ervaring van Forms &#x200B;](deploy-forms-experience-builder.md).
+Voor gedetailleerde technische opstellingsvereisten, zie [ opstellen en vormen de Bouwer van de Ervaring van Forms ](deploy-forms-experience-builder.md).
 
 ### Hoe kan ik Forms Experience Builder inschakelen in mijn omgeving?
 
@@ -111,7 +112,6 @@ Validatie toevoegen met opdrachten voor natuurlijke talen:
      toevoegen de formaatbevestiging van het Amerikaanse telefoonaantal aan @phoneNumber 
      vastgestelde leeftijdsbevestiging: moet 18 of ouder voor @dateOfBirth 
  zijn
-
 ## Geavanceerde functies
 
 ### Wat zijn LLM-Verbeterde slimme gebieden?
@@ -232,8 +232,8 @@ Ja, u kunt verschillende aspecten configureren:
 
 Voor extra ondersteuning:
 
-- Controle de [&#x200B; Begonnen gids &#x200B;](forms-experience-builder-getting-started.md)
-- Herzie [&#x200B; opstellen en gids &#x200B;](deploy-forms-experience-builder.md) vormen
+- Controle de [ Begonnen gids ](forms-experience-builder-getting-started.md)
+- Herzie [ opstellen en gids ](deploy-forms-experience-builder.md) vormen
 - Neem contact op met de systeembeheerder
 - Neem contact op met Adobe voor technische problemen
 

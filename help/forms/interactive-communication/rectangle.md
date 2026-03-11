@@ -4,10 +4,11 @@ description: Met de Rectangle Component in Interactive Communication Editor in A
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 0%
 Met de component Rectangle in de IC-editor (Interactive Communication) kunnen auteurs gevormde grafische elementen toevoegen die fungeren als lay-outscheidingslijnen, visuele accenten of inhoudscontainers. Met rechthoeken wordt de visuele hiërarchie verbeterd en wordt de aandacht van gebruikers gevestigd op gestructureerde communicatielay-outs.
 Deze component is niet gekoppeld aan gegevens, maar draagt bij tot een betere ontwerphelderheid, het groeperen van verwante velden en het verbeteren van de algehele presentatie.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/rectangle.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/rectangle.png)
 
 ## &#x200B;2. Eigenschappen
 

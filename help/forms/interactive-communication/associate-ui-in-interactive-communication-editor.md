@@ -4,13 +4,14 @@ description: Ontdek associatieve UI in Interactieve Communicatie Redacteur door 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 234b6dc747bbba21e9249d526bf894860572dfe5
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
-
 
 # UI koppelen in de Interactive Communication Editor
 
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 **associeerde UI** is een gespecialiseerde, vereenvoudigde interface die bovenop de Interactieve Communicatie (IC) redacteur wordt gebouwd. Het wordt ontworpen voor klant-onder ogen ziet beroeps, zoals gebiedsassociaties en de dienstagenten om gepersonaliseerde, volgzame, en nauwkeurige mededelingen in real time tijdens levende interactie te produceren.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/associate-ui-preview.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
 ## UI-interface koppelen
 
@@ -73,7 +74,7 @@ Gebruikt Associate UI om klanten bij te staan, informatie bij te werken en volgz
 |---------------|-------|
 | Gegevensbevestiging | Hiermee vult of valideert u klantgegevens via het linkervenster voor invoer. |
 | Voorvertoning en validatie | Zorgt voor nauwkeurigheid met behulp van het voorvertoningsvenster in real-time. |
-| Aflevering | Genereert de PDF/e-mail en verzendt deze via goedgekeurde kanalen. |
+| Levering | Genereert de PDF/e-mail en verzendt deze via goedgekeurde kanalen. |
 
 >[!NOTE]
 >

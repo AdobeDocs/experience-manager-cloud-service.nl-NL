@@ -4,10 +4,11 @@ description: Creeer Interactieve Communicatie Fragments in AEM Forms om modulair
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Gegevensbinding in de Interactieve Communicatie Redacteur verbindt op-canvasgebi
 
 Naast het eenvoudig verbinden van waarden, steunt de Bindingen van Gegevens in IC visuele afbeelding, vooraf ingevulde, en synchronisatie, toelatend auteurs om sneller te ontwerpen terwijl het blijven gericht aan achterste deelsystemen en gegevensmodellen.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/data-binding1.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/data-binding1.png)
 
 ## &#x200B;2. Eigenschappen
 

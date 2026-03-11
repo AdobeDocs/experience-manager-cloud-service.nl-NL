@@ -4,10 +4,11 @@ description: De Component van de lijn in Interactieve Communicatie Redacteur in 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 De Component van de Lijn in de Interactieve Communicatie (IC) redacteur staat auteurs toe om horizontale of verticale lijnen binnen een communicatie lay-out op te nemen. Deze regels helpen u bij het visueel segmenteren van inhoud, het verbeteren van de leesbaarheid of het benadrukken van de formulierstructuur. Met aanpasbare stijlen, zoals ononderbroken lijnen of onderstrepingen en flexibele positionering, kan de lijncomponent zowel voor functionele als voor esthetische doeleinden in formulierontwerp worden gebruikt.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/line.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/line.png)
 
 ## &#x200B;2. Eigenschappen
 

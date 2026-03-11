@@ -3,11 +3,12 @@ title: Hoe een e-mail verzenden bij het verzenden van een adaptief formulier?
 description: Ontdek het proces voor het instellen van e-mailmeldingen bij het verzenden van een adaptief formulier.
 keywords: hoe u een e-mail verzendt voor een formulier, een handeling voor e-mail verzenden, een adaptief formulier per e-mail, een formulierverzending per e-mail, een verzendgids
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 79046330f5c3fe3b19ac35200ef0750f28ba31c4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '898'
 ht-degree: 1%
 
 ---
@@ -47,7 +48,7 @@ Een Send Email Submit Handeling voor de Component van de Stichting vormen:
 1. Open het Adaptief formulier voor bewerking en ga naar de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Send email]**.
 
-   ![&#x200B; configuratie van de Actie van Send E-mail &#x200B;](/help/forms/assets/send-email-fc.png)
+   ![ configuratie van de Actie van Send E-mail ](/help/forms/assets/send-email-fc.png)
 
 1. Geef de e-mailid van de afzender op in het tekstvak **[!UICONTROL From]** .
 1. Voeg de e-mailid van de ontvanger toe in het tekstvak **[!UICONTROL To]** . U kunt meerdere ontvangers toevoegen door op de knop **[!UICONTROL Add]** te klikken.
@@ -59,9 +60,9 @@ Een Send Email Submit Handeling voor de Component van de Stichting vormen:
 
    >[!NOTE]
    >
-   > U kunt **[!UICONTROL Use HTML Template]** ook inschakelen om e-mailberichten te verzenden met een aangepaste HTML-indeling in plaats van de standaardsjabloon. Wanneer deze optie wordt toegelaten, specificeer het dossier van HTML op het **Externe gebied van de Weg van het Malplaatje**. Deze functie is beschikbaar via het programma Vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com).
+   > U kunt **[!UICONTROL Use HTML Template]** ook inschakelen om e-mailberichten te verzenden met een aangepaste HTML-indeling in plaats van de standaardsjabloon. Wanneer deze optie wordt toegelaten, specificeer het dossier van HTML op het **Externe gebied van de Weg van het Malplaatje**. Deze functie is beschikbaar via het programma Vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com).
 
-1. [ Facultatieve ] **[!UICONTROL Send Email]** legt Actie voor verstrekt de optie om gehechtheid en a [&#x200B; Document van Verslag (DoR) &#x200B;](generate-document-of-record-core-components.md) met e-mail te omvatten.
+1. [ Facultatieve ] **[!UICONTROL Send Email]** legt Actie voor verstrekt de optie om gehechtheid en a [ Document van Verslag (DoR) ](generate-document-of-record-core-components.md) met e-mail te omvatten.
 1. Klik op **[!UICONTROL Done]**.
 
 >[!TAB  Component van de Kern ]
@@ -69,11 +70,11 @@ Een Send Email Submit Handeling voor de Component van de Stichting vormen:
 De handeling E-mail verzenden voor kerncomponent configureren:
 
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op de tab **[!UICONTROL Submission]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Send email]**.
 
-   ![&#x200B; configuratie van de Actie van Send E-mail &#x200B;](/help/forms/assets/send-email-action-configuration.gif)
+   ![ configuratie van de Actie van Send E-mail ](/help/forms/assets/send-email-action-configuration.gif)
 1. Geef de e-mailid van de afzender op in het tekstvak **[!UICONTROL From]** .
 1. Voeg de e-mailid van de ontvanger toe in het tekstvak **[!UICONTROL To]** . U kunt meerdere ontvangers toevoegen door op de knop **[!UICONTROL Add]** te klikken.
 1. [ Facultatieve ] voeg de ontvanger voor CC en BCC toe door de **[!UICONTROL Add]** knoop te klikken.
@@ -84,9 +85,9 @@ De handeling E-mail verzenden voor kerncomponent configureren:
 
    >[!NOTE]
    >
-   > U kunt **[!UICONTROL Use HTML Template]** ook inschakelen om e-mailberichten te verzenden met een aangepaste HTML-indeling in plaats van de standaardsjabloon. Wanneer deze optie wordt toegelaten, specificeer het dossier van HTML op het **Externe gebied van de Weg van het Malplaatje**. Deze functie is beschikbaar via het programma Vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com).
+   > U kunt **[!UICONTROL Use HTML Template]** ook inschakelen om e-mailberichten te verzenden met een aangepaste HTML-indeling in plaats van de standaardsjabloon. Wanneer deze optie wordt toegelaten, specificeer het dossier van HTML op het **Externe gebied van de Weg van het Malplaatje**. Deze functie is beschikbaar via het programma Vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com).
 
-1. [ Facultatieve ] **[!UICONTROL Send Email]** legt Actie voor verstrekt de optie om gehechtheid en a [&#x200B; Document van Verslag (DoR) &#x200B;](generate-document-of-record-core-components.md) met e-mail te omvatten.
+1. [ Facultatieve ] **[!UICONTROL Send Email]** legt Actie voor verstrekt de optie om gehechtheid en a [ Document van Verslag (DoR) ](generate-document-of-record-core-components.md) met e-mail te omvatten.
 1. Klik op **[!UICONTROL Done]**.
 
 >[!TAB  Universele Redacteur ]
@@ -99,13 +100,13 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
 
    >[!NOTE]
    >
-   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [&#x200B; artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 
 1. Klik **Verzending** lusje en selecteer **[!UICONTROL Send email]** voorlegt actie.
 
-   ![&#x200B; verzend E-mail Universele Redacteur &#x200B;](/help/forms/assets/send-email-ue.png)
+   ![ verzend E-mail Universele Redacteur ](/help/forms/assets/send-email-ue.png)
 
 1. Geef de e-mailid van de afzender op in het tekstvak **[!UICONTROL From]** .
 1. Voeg de e-mailid van de ontvanger toe in het tekstvak **[!UICONTROL To]** . U kunt meerdere ontvangers toevoegen door op de knop **[!UICONTROL Add]** te klikken.
@@ -115,7 +116,7 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
    * Met de optie **[!UICONTROL External Template Path]** kunt u het pad naar de externe e-mailsjabloon opgeven die is opgeslagen in uw AEM-elementen.
    * U kunt ook een aangepaste e-mailsjabloon toevoegen voor het verzenden van het formulier in het tekstvak **[!UICONTROL Email Template]** .
 
-1. [ Facultatieve ] **[!UICONTROL Send Email]** legt Actie voor verstrekt de optie om gehechtheid en a [&#x200B; Document van Verslag (DoR) &#x200B;](generate-document-of-record-core-components.md) met e-mail te omvatten.
+1. [ Facultatieve ] **[!UICONTROL Send Email]** legt Actie voor verstrekt de optie om gehechtheid en a [ Document van Verslag (DoR) ](generate-document-of-record-core-components.md) met e-mail te omvatten.
 1. Klik op **[!UICONTROL Save&Close]**.
 
 >[!ENDTABS]
@@ -124,7 +125,7 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
 
 * Het wordt aanbevolen de e-mailinhoud duidelijk en beknopt te houden. Gebruikers dienen inzicht te hebben in het doel van de e-mail en in de acties die ze moeten ondernemen.
 * Het wordt aanbevolen dat alle formuliervelden unieke elementnamen hebben, zelfs als ze op verschillende deelvensters in een adaptief formulier zijn geplaatst.
-* Bij gebruik van AEM as a Cloud Service is codering vereist voor uitgaande e-mail. Standaard is de functie voor uitgaande e-mail uitgeschakeld. Om het te activeren, leg een steunkaartje voor aan [&#x200B; verzoektoegang &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=nl-NL#sending-email).
+* Bij gebruik van AEM as a Cloud Service is codering vereist voor uitgaande e-mail. Standaard is de functie voor uitgaande e-mail uitgeschakeld. Om het te activeren, leg een steunkaartje voor aan [ verzoektoegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 ## Verwante artikelen
 

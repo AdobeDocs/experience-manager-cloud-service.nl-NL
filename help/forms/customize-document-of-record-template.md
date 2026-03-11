@@ -3,13 +3,14 @@ title: Hoe te om automatisch geproduceerd Document van het malplaatje van het Ve
 description: Leer het automatisch gegenereerde Document of Record (DoR)-sjabloon voor Adaptive Forms downloaden, aanpassen en opnieuw uploaden met Adobe Forms Designer.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
-source-git-commit: 51ec9ef76a8f3f9b7bf2cdc25b03f72e286f586f
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: 2416add3-0b9d-4a8d-a84d-d65c0762d8e8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
-
 
 # Het automatisch gegenereerde document van de recordsjabloon aanpassen
 
@@ -85,7 +86,7 @@ Voor Adaptive Forms op basis van Core Components:
 1. Blader naar de geüploade aangepaste XDP-sjabloon en selecteer deze.
 1. Selecteer het vinkje dat u wilt opslaan.
 
-   ![&#x200B; Document van de eigenschappen van het Verslag - Malplaatje dat aan Douane (de Componenten van de Kern) wordt geplaatst &#x200B;](/help/forms/assets/submission-pdf-dor-custom-template.png)
+   ![ Document van de eigenschappen van het Verslag - Malplaatje dat aan Douane (de Componenten van de Kern) wordt geplaatst ](/help/forms/assets/submission-pdf-dor-custom-template.png)
 
 >[!TAB  Componenten van de Stichting ]
 
@@ -98,7 +99,7 @@ Voor Adaptive Forms op basis van Foundation Components:
 1. Blader naar de geüploade aangepaste XDP-sjabloon en selecteer deze.
 1. Selecteer **[!UICONTROL Done]** voor opslaan.
 
-   ![&#x200B; Document van de eigenschappen van het Verslag - Malplaatje dat aan Douane (de Componenten van de Stichting) wordt geplaatst &#x200B;](/help/forms/assets/dor-custom-template-foundation-components.png)
+   ![ Document van de eigenschappen van het Verslag - Malplaatje dat aan Douane (de Componenten van de Stichting) wordt geplaatst ](/help/forms/assets/dor-custom-template-foundation-components.png)
 
 >[!ENDTABS]
 
@@ -118,7 +119,7 @@ Bevestig dat de aangepaste sjabloon correct is toegepast:
 |---|---|
 | De aangepaste sjabloon uploadt niet. | Controleer of het XDP-bestand geldig en niet beschadigd is. Controleer of u de vereiste machtigingen hebt om bestanden te uploaden naar AEM Forms. |
 | Aanpassingen worden niet weergegeven in het gegenereerde document met opnamen. | Bevestig dat u de juiste aangepaste sjabloon hebt geselecteerd in de sectie **[!UICONTROL Document of Record Template Configuration]** van de formuliereigenschappen. |
-| Problemen met lay-out of opmaak in de gegenereerde PDF. | Verifieer dat de aanpassingen in Adobe Forms Designer de [&#x200B; overeenkomsten van het basissjabloon &#x200B;](/help/forms/generate-document-of-record-core-components.md#base-template-conventions) volgen. Zorg ervoor dat alle elementen correct zijn gepositioneerd binnen de sjabloonstructuur. |
+| Problemen met lay-out of opmaak in de gegenereerde PDF. | Verifieer dat de aanpassingen in Adobe Forms Designer de [ overeenkomsten van het basissjabloon ](/help/forms/generate-document-of-record-core-components.md#base-template-conventions) volgen. Zorg ervoor dat alle elementen correct zijn gepositioneerd binnen de sjabloonstructuur. |
 
 ## Zie ook {#see-also}
 
@@ -126,4 +127,3 @@ Bevestig dat de aangepaste sjabloon correct is toegepast:
 * [Document met records genereren voor adaptieve Forms (Foundation Components)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Basissjabloon van een document van record](/help/forms/generate-document-of-record-core-components.md#base-template-of-a-document-of-record)
 * [De brandinggegevens aanpassen in Document of Record](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)
-

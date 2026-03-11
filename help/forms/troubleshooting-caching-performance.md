@@ -4,10 +4,11 @@ description: Problemen met caching oplossen voor AEM Forms as a Cloud Service.
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Wanneer de URL van het adaptieve formulier geen lokalisatiegegevens bevat en de 
 
 Voer de volgende stappen uit om het probleem op te lossen:
 
-1. Open uw project van de Experience Manager.
+1. Open uw Experience Manager-project.
 1. Open de `dispatcher/scr/conf.d/rewrites/rewrite.rules` voor bewerking.
 1. Open het `conf.d/httpd-dispatcher.conf` -configuratiebestand of een ander configuratiebestand dat is geconfigureerd om tijdens de runtime te laden.
 1. Voeg de volgende code toe aan het bestand en sla deze op. Dit is een voorbeeldcode die u kunt aanpassen aan uw omgeving.

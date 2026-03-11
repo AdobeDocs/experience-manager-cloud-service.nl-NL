@@ -4,10 +4,11 @@ description: Met dynamische paginanummering in de interactieve communicatie-edit
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 Met de functie Dynamische paginanummering in Interactieve communicatie (IC) kunnen auteurs automatisch paginanummers weergeven in hun PDF-uitvoer. Paginanummering kan worden ingeschakeld op het niveau van de basispagina, zodat de nummering op alle bijbehorende ontwerppagina&#39;s consistent blijft. Zo blijven duidelijke paginatracering en een professionele lay-out behouden voor alle communicatie met meerdere pagina&#39;s.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/dynamic-page.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/dynamic-page.png)
 
 ## Dynamische paginanummering gebruiken in de interactieve communicatie-editor
 

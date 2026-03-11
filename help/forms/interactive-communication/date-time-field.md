@@ -4,10 +4,11 @@ description: De Component van het Gebied van de datum/van de Tijd in Interactiev
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 0%
 
 ## &#x200B;1. Inleiding
 
-De **component van het Gebied van de Datum/van de Tijd** &lbrace;in de Interactieve Communicatie (IC) redacteur laat auteurs toe om gebieden op te nemen waar de gebruikers datum en/of tijdwaarden kunnen selecteren of ingaan. Deze component wordt doorgaans gebruikt voor het vastleggen van gegevens zoals geboortedatum, afstellingsschema&#39;s, boekingssleuven of datum van afgifte/vervaldatum van documenten.
+De **component van het Gebied van de Datum/van de Tijd** {in de Interactieve Communicatie (IC) redacteur laat auteurs toe om gebieden op te nemen waar de gebruikers datum en/of tijdwaarden kunnen selecteren of ingaan. Deze component wordt doorgaans gebruikt voor het vastleggen van gegevens zoals geboortedatum, afstellingsschema&#39;s, boekingssleuven of datum van afgifte/vervaldatum van documenten.
 
 Het veld ondersteunt diverse opmaakopties (bijvoorbeeld DD/MM/JJJJ, 24-uurs of 12-uursnotaties), validatiebeperkingen en aanpassing van weergave aan het communicatieontwerp. Het verbetert gebruikerservaring door handinputfouten te verminderen en consistentie in gegevensinzameling te bevorderen.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/datetime.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/datetime.png)
 
 ## &#x200B;2. Eigenschappen
 

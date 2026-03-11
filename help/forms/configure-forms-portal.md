@@ -2,11 +2,12 @@
 title: Hoe maak je een Forms Portal op een Experience Manager Sites-pagina?
 description: Leer hoe u een Forms Portal maakt en offline Core-componenten gebruikt op een AEM Sites-pagina.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
 
 Forms Portal biedt een efficiënte manier om Adaptief Forms weer te geven en weer te geven op een AEM Sites-pagina. Het is nuttig voor organisaties die een platform vereisen om verschillende formulieren systematisch aan hun gebruikers voor te leggen.
@@ -32,7 +33,7 @@ De componenten Form Portal bieden de volgende functionaliteit:
 
 ## Componenten van een Forms Portal
 
-![&#x200B; Componenten van het Portaal van Forms &#x200B;](/help/forms/assets/forms-portal.png)
+![ Componenten van het Portaal van Forms ](/help/forms/assets/forms-portal.png)
 
 AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 
@@ -42,7 +43,7 @@ AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 
 ## Volgende stappen
 
-In het volgende artikel, laten wij [&#x200B; leren hoe te om van vormen op de pagina van Plaatsen een lijst te maken gebruikend het Onderzoek &amp; van de Schrijver Forms Portal component &#x200B;](/help/forms/list-forms-on-sites-page.md).
+In het volgende artikel, laten wij [ leren hoe te om van vormen op de pagina van Plaatsen een lijst te maken gebruikend het Onderzoek &amp; van de Schrijver Forms Portal component ](/help/forms/list-forms-on-sites-page.md).
 
 ## Verwante artikelen
 

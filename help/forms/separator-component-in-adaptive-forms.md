@@ -3,13 +3,14 @@ title: Wat is een scheidingscomponent in Adaptive Forms?
 description: De scheidingscomponent in Adaptief Forms helpt om delen van een formulier visueel te scheiden.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
-
 
 # Scheidingscomponent in Adaptieve Forms{#separator-component-in-adaptive-forms}
 
@@ -22,11 +23,11 @@ Met de scheidingscomponent kunt u deelvensters van een formulier visueel van elk
 
 * **Gealigneerde stijlen:** met [!DNL AEM Forms], kunt u gealigneerde CSS stijlen nu toepassen op individuele Aangepaste componenten van de Vorm en voorproef de veranderingen in real time.
 
-U kunt de modus Lay-out gebruiken om het aantal kolommen te definiëren waaraan de scheidingscomponent zich uitstrekt. Voor meer informatie, zie {de wijze van de Lay-out van het 0} Gebruik om componenten [&#128279;](resize-using-layout-mode.md) te resize.
+U kunt de modus Lay-out gebruiken om het aantal kolommen te definiëren waaraan de scheidingscomponent zich uitstrekt. Voor meer informatie, zie {de wijze van de Lay-out van het 0} Gebruik om componenten [ te resize.](resize-using-layout-mode.md)
 
 De eigenschappen van een scheidingscomponent opgeven:
 
-1. Selecteer een separatorcomponent en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png). De eigenschappen worden geopend in het zijpaneel.
+1. Selecteer een separatorcomponent en selecteer ![ cmp ](assets/cmppr.png). De eigenschappen worden geopend in het zijpaneel.
 1. Klik op een tabblad in de sectie Inline CSS-eigenschappen zodat u CSS-eigenschappen kunt opgeven. Bijvoorbeeld a. Op het lusje van het Gebied, klik **Punt** toevoegen. Er wordt een rij met twee velden toegevoegd.
 1. Geef in het eerste veld links een CSS3-eigenschap op die u wilt toepassen. Bijvoorbeeld, **grens**. U kunt een eigenschap ook selecteren door op de knop pijl-omlaag te klikken. De vervolgkeuzelijst is niet uitputtend en u kunt elke ondersteunde CSS3-eigenschapnaam opgeven in dit veld.
 1. Geef in het aangrenzende veld een geldige waarde op voor de opgegeven CSS3-eigenschap. Bijvoorbeeld, **3 pixel stevige zwarte**.
@@ -35,4 +36,3 @@ De eigenschappen van een scheidingscomponent opgeven:
 1. Voer een van de volgende handelingen uit:
    * Bevestig de veranderingen door **O.K.** te klikken
    * Sluit de dialoogdoos zonder enige veranderingen door **te klikken annuleert**.
-

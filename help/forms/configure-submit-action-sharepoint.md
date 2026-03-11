@@ -3,11 +3,12 @@ title: Hoe kan ik gegevens naar een SharePoint-opslagplaats verzenden na verzend
 description: Leer hoe u gegevens van uw Adaptief formulier naar een SharePoint-opslagruimte verzendt, zoals een SharePoint-lijst of documentbibliotheek wanneer u het formulier verzendt.
 keywords: Hoe verbindt u SharePoint-lijst met een adaptief formulier?, Hoe verbindt u een SharePoint-documentbibliotheek met een adaptief formulier, Verzenden naar SharePoint, Een SharePoint-documentbibliotheekconfiguratie maken, Verzenden naar SharePoint gebruiken in een adaptief formulier, Een adaptief formulier verbinden met Microsoft&reg; SharePoint-lijst.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 Met de verzendactie van **[!UICONTROL Submit to SharePoint]** kunt u uw Adaptief formulier naadloos verbinden met een Microsoft® SharePoint-opslag. Nadat u het formulier hebt verzonden, worden de formuliergegevens naar de SharePoint-opslagruimte van uw keuze verzonden.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [&#x200B; AanpassingsVorm voorlegt Artikel van de Actie &#x200B;](/help/forms/aem-forms-submit-action.md).
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/aem-forms-submit-action.md).
 
 ## Voordelen
 

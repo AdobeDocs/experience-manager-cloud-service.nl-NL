@@ -7,10 +7,11 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Wanneer u een Interactieve Communicatie kopieert, worden de volgende elementen g
 
 ## Interactieve communicatie kopiëren
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/copy-in-ic.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/copy-in-ic.png)
 
 Ga als volgt te werk om een interactieve communicatie te kopiëren:
 
@@ -61,7 +62,7 @@ Ga als volgt te werk om een interactieve communicatie te kopiëren:
 
 ## De gekopieerde interactieve communicatie bewerken en opnieuw gebruiken
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/paste-in-ic.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/paste-in-ic.png)
 
 Na het plakken van de Interactieve Communicatie:
 

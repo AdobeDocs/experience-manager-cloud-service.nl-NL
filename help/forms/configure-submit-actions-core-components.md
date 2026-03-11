@@ -3,11 +3,12 @@ title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken
 keywords: hoe u verzendactie voor een adaptief formulier selecteert, een adaptief formulier koppelt aan een SharePoint-lijst, een adaptief formulier aansluit op een SharePoint-documentbibliotheek, een adaptief formulier aansluit op het formuliergegevensmodel (FDM)
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -15,17 +16,17 @@ ht-degree: 0%
 
 # Ondersteunde acties verzenden in Adaptive Forms op basis van kerncomponenten
 
-<span class="preview"> Adobe adviseert het gebruiken van de Componenten van de Kern om [&#x200B; Aangepaste Forms aan een Pagina van AEM Sites toe te voegen &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) of [&#x200B; standalone Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) tot stand te brengen. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de Componenten van de Kern om [ Aangepaste Forms aan een Pagina van AEM Sites toe te voegen ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) of [ standalone Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) tot stand te brengen. </span>
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
-| AEM as a Cloud Service (Foundation Components) | [&#x200B; klik hier &#x200B;](/help/forms/configuring-submit-actions.md) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
-| AEM as a Cloud Service (Edge Delivery Services) | [&#x200B; klik hier &#x200B;](/help/forms/configure-submit-action-eds-forms.md) |
+| AEM as a Cloud Service (Edge Delivery Services) | [ klik hier ](/help/forms/configure-submit-action-eds-forms.md) |
 
-Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier klikt. De adaptieve Forms die op de Component van de Kern wordt gebaseerd steunt diverse [&#x200B; uit-van-de-doos acties &#x200B;](#submit-actions-supported-by-adaptive-forms-based-on-core-components) voorleggen.
+Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier klikt. De adaptieve Forms die op de Component van de Kern wordt gebaseerd steunt diverse [ uit-van-de-doos acties ](#submit-actions-supported-by-adaptive-forms-based-on-core-components) voorleggen.
 
 <!--You can also configure different actions for an Adaptive Form submissions.
 
@@ -46,14 +47,14 @@ De volgende verzendacties worden ondersteund door Adaptive Forms op basis van Co
 * [Verzenden naar OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Een AEM-workflow aanroepen](/help/forms/configure-submit-action-workflow.md)
 * [Verzenden naar Marketo-pagina](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [&#x200B; voorleggen aan Adobe Experience Platform (AEP) &#x200B;](/help/forms/aem-forms-aep-connector.md)
+* [ voorleggen aan Adobe Experience Platform (AEP) ](/help/forms/aem-forms-aep-connector.md)
 
 U kunt ook een adaptief formulier op basis van kerncomponenten verzenden naar andere opslagconfiguraties:
 
 * [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/aem-forms-salesforce-integration.md)
 * [Een adaptief formulier verbinden met Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-Bovendien, kunt u [&#x200B; aanpassen het gebrek verzendt Acties &#x200B;](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) om met specifieke organisatorische vereisten te richten.
+Bovendien, kunt u [ aanpassen het gebrek verzendt Acties ](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) om met specifieke organisatorische vereisten te richten.
 
 
 ### Een verzendhandeling configureren voor een adaptief formulier op basis van kerncomponenten
@@ -66,9 +67,9 @@ Bovendien, kunt u [&#x200B; aanpassen het gebrek verzendt Acties &#x200B;](/help
   ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
 -->
 
-U kunt de eigenschappen van de Container van de Vorm bepalen gebruikend het lusje van de Verzending van Configure Dialoog. Meer over Configure Dialoog van een component van de Container van de Vorm leren, [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=nl-NL).
+U kunt de eigenschappen van de Container van de Vorm bepalen gebruikend het lusje van de Verzending van Configure Dialoog. Meer over Configure Dialoog van een component van de Container van de Vorm leren, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html).
 
-![&#x200B; klik het pictogram van de Sleutel om de Adaptieve de dialoogdoos van de Container van de Vorm te openen om een verzendactie te vormen &#x200B;](/help/forms/assets/adaptive-forms-submit-message.png)
+![ klik het pictogram van de Sleutel om de Adaptieve de dialoogdoos van de Container van de Vorm te openen om een verzendactie te vormen ](/help/forms/assets/adaptive-forms-submit-message.png)
 
 <!--To select and configure a Submit Action for your form:
 
@@ -126,7 +127,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -142,7 +143,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 

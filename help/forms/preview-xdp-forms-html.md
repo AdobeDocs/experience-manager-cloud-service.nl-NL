@@ -3,12 +3,13 @@ title: HTML5-voorbeeld van een XDP-formulier genereren
 description: Het tabblad Voorbeeld-HTML in LiveCycle Designer kan worden gebruikt voor een voorbeeld van formulieren zoals deze in een browser worden weergegeven.
 topic-tags: author
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -68,7 +69,7 @@ De **beschermde wijze** is, door gebrek. Houd het ingeschakeld voor de productie
 ### Geef details van de AEM Forms-server op {#provide-details-of-aem-forms-server}
 
 1. In Designer, ga naar **Hulpmiddelen** > **Opties**.
-1. In het venster van Opties, uitgezochte **pagina van de Opties van de Server 0&rbrace; &lbrace;, verstrek de volgende details, en klik** O.K. **.**
+1. In het venster van Opties, uitgezochte **pagina van de Opties van de Server 0} {, verstrek de volgende details, en klik** O.K. **.**
 
    * **Server URL**: De server URL van AEM Forms.
 
@@ -88,7 +89,7 @@ De **beschermde wijze** is, door gebrek. Houd het ingeschakeld voor de productie
    >
    >Zorg ervoor dat de AEM Forms-server actief is. De voorproef van HTML verbindt met de server van CRX *produceert* een voorproef.
 
-   ![&#x200B; AEM Forms Designer-opties &#x200B;](assets/server_options.png)
+   ![ AEM Forms Designer-opties ](assets/server_options.png)
 
    AEM Forms Designer-opties
 
@@ -112,7 +113,7 @@ De **beschermde wijze** is, door gebrek. Houd het ingeschakeld voor de productie
 
 Met Designer kunt u een voorbeeld van een formulier bekijken en het formulier testen met XML-voorbeeldgegevens. Het wordt aanbevolen om regelmatig uw formulier te testen met voorbeeldgegevens om te controleren of het formulier correct wordt weergegeven.
 
-Als u geen voorbeeldgegevens hebt, kan Designer deze maken of deze zelf maken. (Zie [&#x200B; om steekproefgegevens automatisch te produceren om uw vorm &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) voor te vertonen en [&#x200B; om steekproefgegevens tot stand te brengen om uw vorm &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2) voor te vertonen.)
+Als u geen voorbeeldgegevens hebt, kan Designer deze maken of deze zelf maken. (Zie [ om steekproefgegevens automatisch te produceren om uw vorm ](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) voor te vertonen en [ om steekproefgegevens tot stand te brengen om uw vorm ](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2) voor te vertonen.)
 
 Als u het formulier test met een voorbeeldgegevensbron, weet u zeker dat de gegevens en velden zijn toegewezen en dat herhalende subformulieren op de verwachte manier worden herhaald. U kunt een evenwichtige formulierindeling maken die de juiste ruimte biedt voor elk object om de samengevoegde gegevens weer te geven.
 

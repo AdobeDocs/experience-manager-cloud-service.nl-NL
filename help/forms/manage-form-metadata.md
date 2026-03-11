@@ -2,11 +2,12 @@
 title: Hoe kunnen we metagegevens voor AEM Forms beheren?
 description: Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1720'
 ht-degree: 0%
 
 ---
@@ -15,12 +16,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
@@ -39,7 +40,7 @@ De volgende elementtypen worden ondersteund in [!DNL AEM Forms] :
 
 * Formuliersjablonen (XFA-formulieren)
 * PDF forms
-* Document (platte PDF)
+* Document (vlakke PDF&#39;s)
 * Adaptieve Forms
 * Forms-gegevensmodel
 * XFS
@@ -93,7 +94,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
    <td>Alles behalve bron</td> 
    <td><p>Een alleen-lezen waarde die automatisch wordt berekend op basis van het formuliertype.</p> 
     <ul> 
-     <li>PDF/Formuliersjabloon/Document - opgehaald uit het geüploade binaire bestand.</li> 
+     <li>PDF/Form template/Document - opgehaald uit het geüploade binaire bestand.</li> 
      <li>Adaptief formulier - Wordt bij het maken van het formulier aangemeld bij de gebruiker.</li> 
     </ul> </td> 
   </tr> 
@@ -113,12 +114,12 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
    <td>Een alleen-lezen waarde die aangeeft op welk tijdstip het formulier het laatst is gepubliceerd.</td> 
   </tr> 
   <tr> 
-   <td>Publish aan/uit-tijd</td> 
+   <td>Aan/uit-tijd publiceren</td> 
    <td>Alles behalve bron</td> 
    <td><p>Tijdstip waarop het formulier volgens de planning automatisch moet worden gepubliceerd/gepubliceerd. De gebruiker stelt deze waarde in bij het bewerken van metagegevens.</p> 
     <ul> 
-     <li>Zowel Publish Aan als Uit moet langer zijn dan de huidige datum. </li> 
-     <li>Publish Off time dient na publicatie On time te zijn. </li> 
+     <li>Zowel de functie Publiceren aan als de functie Uittijd moet na de huidige datum vallen. </li> 
+     <li>Publiceren buiten de tijd moet na publicatie op tijd plaatsvinden. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -186,14 +187,14 @@ Assets heeft bestaande eigenschapswaarden die kunnen worden weergegeven in de al
 
 1. Open de eigenschappenpagina op een van de volgende manieren:
 
-   * Klik het **[!UICONTROL Properties]** ![&#x200B; pictogram van Eigenschappen &#x200B;](assets/Smock_Info_18_N.svg) van Snelle Acties.
+   * Klik het **[!UICONTROL Properties]** ![ pictogram van Eigenschappen ](assets/Smock_Info_18_N.svg) van Snelle Acties.
 
      >[!NOTE]
      >
      >Snelle acties zijn de actiepunten die over een duimnagel worden getoond wanneer de muiswijzer.
 
-   * Selecteer de vorm en klik het **[!UICONTROL Properties]** ![&#x200B; Eigenschappen &#x200B;](assets/Smock_Info_18_N.svg) pictogram dat in de toolbar verschijnt.
-   * Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het ![&#128279;](assets/Smock_Info_18_N.svg) oogpictogram van Eigenschappen 0&rbrace; &lbrace;op het hogere recht, en klik dan Eigenschappen in de lijst onder het.
+   * Selecteer de vorm en klik het **[!UICONTROL Properties]** ![ Eigenschappen ](assets/Smock_Info_18_N.svg) pictogram dat in de toolbar verschijnt.
+   * Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het ![ oogpictogram van Eigenschappen 0} {op het hogere recht, en klik dan Eigenschappen in de lijst onder het.](assets/Smock_Info_18_N.svg)
 
 1. De bezitspagina die opent toont een schema dat slechts die meta-gegevenseigenschappen bevat die één of andere waarde houden.
 
@@ -266,7 +267,7 @@ Er is een hulpprogramma (de Editor voor metagegevensschema&#39;s) beschikbaar wa
 
 1. Elk type element waarop u klikt, opent een lijst met de optie `extendedmetadata` . Bewerk dit schema.
 
-1. Selecteer checkbox naast `extendedmetadata` en klik dan uitgeven ![&#x200B; &#x200B;](assets/Smock_Edit_18_N.svg) pictogram dat in de toolbar verschijnt.
+1. Selecteer checkbox naast `extendedmetadata` en klik dan uitgeven ![ ](assets/Smock_Edit_18_N.svg) pictogram dat in de toolbar verschijnt.
 
 1. [!DNL AEM Forms] opent de editor/formulierbuilder voor het metagegevensschema van het geselecteerde elementtype (in dit geval Adaptief formulier).
 
@@ -294,16 +295,16 @@ Er is een hulpprogramma (de Editor voor metagegevensschema&#39;s) beschikbaar wa
 1. Klik op een component die u net hebt gesleept. Vul op het tabblad Instellingen dat in het rechterdeelvenster wordt geopend de gegevens in voor de volgende velden:
 
    1. Geef een veldlabel op dat als een weergavenaam boven het veld in het schema moet worden gebruikt (bijvoorbeeld: Department)
-   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde zien **&#39;./jcr:content/metadata/default&#39;**. Verander het &quot;**gebrek**&quot;in een gewenste bezitsnaam, die wordt gebruikt om het bezit in crx bewaarplaats (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
+   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde zien **&#39;./jcr :content/metadata/default&#39;**. Verander het &quot;**gebrek**&quot;in een gewenste bezitsnaam, die wordt gebruikt om het bezit in crx bewaarplaats (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >Wijzig het voorvoegsel &#39; niet./jcr:content/metadata/&#39; zoals deze het pad definieert waar de eigenschap wordt opgeslagen.
+      >Wijzig het voorvoegsel &#39; niet./jcr :content/metadata/&#39; aangezien het de weg bepaalt waar het bezit wordt opgeslagen.
       >
       >De eigenschapsnaam moet ook uniek zijn om te voorkomen dat waarden worden geschreven voor twee of meer eigenschappen op dezelfde locatie in de opslagplaats. Het wordt daarom aanbevolen de waarde &#39;default&#39; te wijzigen.
 
    1. Vul andere instellingen in op basis van vereisten. Selecteer bijvoorbeeld de optie Vereist als u het veld verplicht wilt maken.
-   1. Om een gebied te schrappen u toevoegde, selecteer het gebied en klik dan schrapping ![&#x200B; schrap &#x200B;](assets/Smock_Delete_18_N.svg) pictogram.
+   1. Om een gebied te schrappen u toevoegde, selecteer het gebied en klik dan schrapping ![ schrap ](assets/Smock_Delete_18_N.svg) pictogram.
 
 1. Voer indien nodig stap 1-3 uit om een andere eigenschap toe te voegen.
 1. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht.

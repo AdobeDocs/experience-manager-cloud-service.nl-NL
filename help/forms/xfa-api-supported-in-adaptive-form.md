@@ -8,13 +8,14 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
-
 
 # XFA-ondersteuning in adaptieve Forms op basis van XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -101,7 +102,7 @@ Wanneer een adaptief formulier wordt gemaakt met een XDP-bestand, kunt u een XFA
  </tbody>
 </table>
 
-### Eigenschappen {#properties}
+### Properties {#properties}
 
 In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XDP-bestanden zijn gedefinieerd, zich gedragen in Adaptive Forms.
 
@@ -267,4 +268,3 @@ In de volgende tabel wordt vastgelegd hoe XFA-validaties worden toegewezen aan v
 >[!NOTE]
 >
 >U kunt de verplichte eigenschap voor het keuzerondje Adaptief formulier en de groep selectievakjes die zijn gebonden aan XFA-knoppen, niet overschrijven.
-

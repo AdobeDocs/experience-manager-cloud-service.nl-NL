@@ -3,28 +3,29 @@ title: Vergelijk twee verschillende adaptieve formulieren.
 description: Vergelijk twee verschillende formulieren op basis van de velden, inhoud en formuliercomponenten.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
 # Adaptieve Forms vergelijken {#compare-two-forms}
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [&#x200B; pre-vrijgavekanaal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Wanneer formulierauteurs twee verschillende formulieren moeten vergelijken op basis van de velden, inhoud en formuliercomponenten, vergelijken ze de twee formulieren. De auteur van het formulier moet ervoor zorgen dat de twee formulieren zich in dezelfde map of map bevinden om ze te kunnen vergelijken. Voer de volgende stappen uit om twee verschillende adaptieve formulieren te vergelijken:
 
 1. Selecteer aangepaste formulieren en klik op **[!UICONTROL Compare]** .
 
-   ![&#x200B; vergelijk adaptieve vormen &#x200B;](compare-two-forms.png)
+   ![ vergelijk adaptieve vormen ](compare-two-forms.png)
 
 1. Als u klikt, ziet u twee formulieren in de voorbeeldmodus. Het eerste formulier wordt geselecteerd als het basisformulier dat moet worden vergeleken met het tweede formulier, en de inhoud wordt vergeleken tussen de twee formulieren, die vergelijkbaar en gedifferentieerd zijn. De gedifferentieerde inhoud van het eerste formulier wordt als groen gemarkeerd, zoals in de afbeelding wordt getoond.
 
-   ![&#x200B; Vergelijkte vormen &#x200B;](compared-forms.png)
+   ![ Vergelijkte vormen ](compared-forms.png)
 
 ## Zie ook {#see-also}
 

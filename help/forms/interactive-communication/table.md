@@ -4,10 +4,11 @@ description: De Component van de lijst in Interactieve Communicatie Redacteur in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ De Component van de Lijst in de Interactive Communication (IC) redacteur laat au
 
 Auteurs kunnen de tabelcomponent naar het canvas slepen, het aantal rijen en kolommen configureren en opties kiezen, zoals kop- en voettekstrijen, of de lay-outrichting instellen. De lijsten kunnen als standaardmalplaatjes voor consistentie over veelvoudige mededelingen worden bepaald.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/table.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/table.png)
 
 ## &#x200B;2. Eigenschappen
 

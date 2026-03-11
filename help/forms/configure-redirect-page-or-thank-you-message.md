@@ -4,24 +4,25 @@ description: Leer hoe gebruikers een bedankt-uw-bericht kunnen worden getoond of
 feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
 # Omleidingspagina configureren {#configuring-redirect-page}
 
-Op voorlegging van a [&#x200B; de Componenten van de Kern gebaseerde Aangepaste Vorm &#x200B;](creating-adaptive-form-core-components.md), kunt u de gebruiker aan een andere webpage opnieuw richten of een bericht tonen. U kunt als volgt de omleidingspagina of het bedankbericht configureren:
+Op voorlegging van a [ de Componenten van de Kern gebaseerde Aangepaste Vorm ](creating-adaptive-form-core-components.md), kunt u de gebruiker aan een andere webpage opnieuw richten of een bericht tonen. U kunt als volgt de omleidingspagina of het bedankbericht configureren:
 
 1. Open het adaptieve formulier voor bewerking.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Guide Container]** .
-1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![&#x200B; AanpassingsContainer eigenschappen &#x200B;](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
+1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![ AanpassingsContainer eigenschappen ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
 1. Open de tab **[!UICONTROL Submission]** . De opties om een omleidingspagina of een bericht te vormen worden getoond:
 
-   ![&#x200B; de dialoog van de Verzending van de Contaner van de Gids om een omleidingspagina of een bericht te vormen &#x200B;](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
+   ![ de dialoog van de Verzending van de Contaner van de Gids om een omleidingspagina of een bericht te vormen ](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
    * Als u een omleidings-URL wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Redirect to URL option]** en geeft u een absoluut adres, een omleidings-URL of een relatief pad van een AEM Sites-pagina op.
 
@@ -35,7 +36,7 @@ Formulierauteurs kunnen een pagina configureren voor elk formulier, waarnaar de 
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; vorm een Redirect Pagina &#x200B;](/help/forms/configuring-redirect-page.md)
+>* [ vorm een Redirect Pagina ](/help/forms/configuring-redirect-page.md)
 
 ## Zie ook {#see-also}
 

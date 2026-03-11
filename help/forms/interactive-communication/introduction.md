@@ -4,10 +4,11 @@ description: Ontdek de Interactieve Communicatie Redacteur in AEM Forms. Leer ze
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ De Editor voor interactieve communicatie (IC) is een intuïtieve visuele ontwerp
 
 U kunt componenten zoals tekst, afbeeldingen, grafieken, tabellen en streepjescodes integreren en elk element aan gestructureerde gegevensbronnen binden. Deze dynamische band zorgt ervoor dat de mededelingen automatisch voor elke ontvanger worden gemaakt.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/introduction.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/introduction.png)
 
 ## Onderwerp en gebruik
 
@@ -54,13 +55,13 @@ De Editor voor interactieve communicatie (IC) is ontworpen voor efficiëntie, br
 
 ## Onboarding
 
-Het interactieve communicatiemogelijkheid (IC) is beschikbaar via het Early Access-programma (EA). Om toegang te verzoeken, e-mail [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com) van uw officiële e-mailidentiteitskaart met uw identiteitskaart van het Milieu en van de Organisatie. Zodra Adobe uw inschrijving bevestigt, volg [&#x200B; Onboard aan de documentatie van de Dienst &#x200B;](/help/forms/setup-forms-cloud-service.md) om Interactieve Communicatie in uw milieu van AEM Forms toe te laten.
+Het interactieve communicatiemogelijkheid (IC) is beschikbaar via het Early Access-programma (EA). Om toegang te verzoeken, e-mail [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officiële e-mailidentiteitskaart met uw identiteitskaart van het Milieu en van de Organisatie. Zodra Adobe uw inschrijving bevestigt, volg [ Onboard aan de documentatie van de Dienst ](/help/forms/setup-forms-cloud-service.md) om Interactieve Communicatie in uw milieu van AEM Forms toe te laten.
 
 ## Volgende stappen
 
-[&#x200B; creeer een interactieve mededeling &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md)
-[&#x200B; creeer een interactief communicatieMalplaatje &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md)
-[&#x200B; creeer een interactief communicatieFragment &#x200B;](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[ creeer een interactieve mededeling ](/help/forms/interactive-communication/create-interactive-communication.md)
+[ creeer een interactief communicatieMalplaatje ](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[ creeer een interactief communicatieFragment ](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
 
 <!-- 
 ## Where to Find IC Documentation, Samples, and Tutorials

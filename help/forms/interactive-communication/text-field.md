@@ -4,10 +4,11 @@ description: De component van het Gebied van de tekst in Interactieve Communicat
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 Met de component Tekstveld in de IC-editor (Interactive Communication) kunnen auteurs informatie weergeven zoals namen, adressen, opmerkingen of numerieke id&#39;s. De waarde in het tekstveld is vooraf gedefinieerd (statisch) of dynamisch gevuld met gegevensbinding. Het steunt single-line ingangen, bevestigingsregels, en flexibele het formatteren, die tot het één van de meest gebruikte en veelzijdige elementen in gepersonaliseerde mededelingen maken.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/textfield.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/textfield.png)
 
 ## &#x200B;2. Eigenschappen
 

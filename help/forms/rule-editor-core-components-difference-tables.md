@@ -4,10 +4,11 @@ description: Dit artikel verklaart het verschil tussen de de regeleditors van de
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 0feef02c-6186-45f2-9929-07120126c596
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Dit artikel biedt een uitgebreide vergelijking van de verschillende edities, waa
 
 >[!NOTE]
 >
-> Leren om douanefuncties tot stand te brengen en in detail te gebruiken, verwijs naar [&#x200B; functies van de Douane in Aanpassings Forms (de Componenten van de Kern) &#x200B;](/help/forms/create-and-use-custom-functions.md) artikel.
+> Leren om douanefuncties tot stand te brengen en in detail te gebruiken, verwijs naar [ functies van de Douane in Aanpassings Forms (de Componenten van de Kern) ](/help/forms/create-and-use-custom-functions.md) artikel.
 
 
 ## Zie ook

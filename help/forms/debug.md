@@ -7,19 +7,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '817'
 ht-degree: 0%
 
 ---
 
 # Fouten opsporen in HTML5-formulieren {#debugging-html-forms}
 
-Dit document bevat verschillende scenario&#39;s voor probleemoplossing. Voor elk scenario, worden sommige stappen verstrekt om het probleem problemen op te lossen. Volg deze stappen en, als het probleem voortduurt, vorm Logger om logboeken voor fouten/waarschuwingen te krijgen en te herzien. Voor meer details over HTML5 vormen registreren, zie [&#x200B; het Produceren Logs voor HTML5 vormen &#x200B;](/help/forms/enable-logs.md).
+Dit document bevat verschillende scenario&#39;s voor probleemoplossing. Voor elk scenario, worden sommige stappen verstrekt om het probleem problemen op te lossen. Volg deze stappen en, als het probleem voortduurt, vorm Logger om logboeken voor fouten/waarschuwingen te krijgen en te herzien. Voor meer details over HTML5 vormen registreren, zie [ het Produceren Logs voor HTML5 vormen ](/help/forms/enable-logs.md).
 
 ## Probleem: bij het weergeven van het formulier zie ik de pagina met uitzonderingen org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
@@ -56,7 +57,7 @@ Controleer de volgende parameters:
 
 ## Probleem: Kan een formulier niet genereren (er wordt een foutbericht weergegeven) {#problem-unable-to-render-form}
 
-1. Controleer of de opgegeven parameters correct zijn. Voor gedetailleerde informatie over parameters, zie [&#x200B; Parameters &#x200B;](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page) teruggeven.
+1. Controleer of de opgegeven parameters correct zijn. Voor gedetailleerde informatie over parameters, zie [ Parameters ](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page) teruggeven.
 1. Meld u aan bij CRX Package Manager (op https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) en controleer of de volgende pakketten correct zijn geïnstalleerd:
 
    * adobe-lc-forms-content-pkg-&lt;version>.zip
@@ -107,7 +108,7 @@ Controleer de volgende parameters:
 
 1. Voeg in de formulier-URL een queryparameter debugClientLibs toe en stel de waarde ervan in op true (bijvoorbeeld: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Ga in de desktopbrowser, zoals chroom, naar Developer Tools > Console.
-1. Open de logboeken om het type van fout te identificeren. Voor gedetailleerde informatie over logboeken, zie [&#x200B; logboeken voor vormen HTML5 &#x200B;](/help/forms/enable-logs.md).
+1. Open de logboeken om het type van fout te identificeren. Voor gedetailleerde informatie over logboeken, zie [ logboeken voor vormen HTML5 ](/help/forms/enable-logs.md).
 1. Ga naar Developer Tools > Console. Gebruik stacktracering om de code te zoeken die de fout veroorzaakt. Foutopsporing de fout om het probleem op te lossen.
 
    >[!NOTE]
@@ -118,8 +119,8 @@ Controleer de volgende parameters:
 
 1. Zorg ervoor dat u toegangsrechten hebt tot de AEM-server en dat u verbinding hebt met de server.
 1. Controleer of de parameter submitUrl correct is.
-1. Laat de cliënt zijlogboeken zoals vermeld bij [&#x200B; Logboeken voor de vormen HTML5 &#x200B;](/help/forms/enable-logs.md) toe gebruikend zuiveren optie zoals **1-a5-b5-c5**. Geef het formulier vervolgens weer en klik op Verzenden. Open browser zuivert console en controleer als er een fout is.
-1. Zoek de serverlogboeken zoals vermeld bij [&#x200B; Logboeken voor de vormen HTML5 &#x200B;](/help/forms/enable-logs.md). Controleer of er tijdens de verzending een fout is opgetreden in de serverlogboeken.
+1. Laat de cliënt zijlogboeken zoals vermeld bij [ Logboeken voor de vormen HTML5 ](/help/forms/enable-logs.md) toe gebruikend zuiveren optie zoals **1-a5-b5-c5**. Geef het formulier vervolgens weer en klik op Verzenden. Open browser zuivert console en controleer als er een fout is.
+1. Zoek de serverlogboeken zoals vermeld bij [ Logboeken voor de vormen HTML5 ](/help/forms/enable-logs.md). Controleer of er tijdens de verzending een fout is opgetreden in de serverlogboeken.
 
 ## Probleem: gelokaliseerde foutberichten worden niet weergegeven {#problem-localized-error-messages-do-not-display}
 

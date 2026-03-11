@@ -4,13 +4,14 @@ description: Leer hoe u 502 foutpagina's kunt identificeren en oplossen die optr
 feature: Adaptive Forms, Core Components
 role: Developer
 level: Intermediate
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: a7469926-7059-4aca-90ff-2554d14c3944
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
-
 
 # Problemen oplossen: 502 foutpagina in Aangepaste verzendhandeling
 
@@ -26,4 +27,4 @@ Wanneer het werken met Adaptieve Forms (de Componenten van de Kern), kunt u a **
 
 Als u de 502-foutpagina wilt voorkomen, plaatst u de logica voor verzending tussen blokken die de fout proberen af te vangen.
 
-Voor gedetailleerde stappen, zie [&#x200B; een douane aanmaken voorlegt actie voor Adaptieve Forms (de Componenten van de Kern) &#x200B;](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md).
+Voor gedetailleerde stappen, zie [ een douane aanmaken voorlegt actie voor Adaptieve Forms (de Componenten van de Kern) ](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md).

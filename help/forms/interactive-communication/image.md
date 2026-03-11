@@ -4,10 +4,11 @@ description: De Component van het beeld in Interactieve Communicatie Redacteur i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 247dcd95-9429-4fe9-88fc-c02b93b2f7e0
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 Met de component Afbeelding in de Interactieve communicatie-editor kunnen auteurs communicatielay-outs verbeteren door statische afbeeldingen in te voegen. Deze component is essentieel voor het maken van visueel aantrekkelijke lay-outs en het opnemen van brandingelementen zoals logo&#39;s of visuele pictogrammen. Auteurs kunnen deze zowel in de stramienpagina&#39;s als in de ontwerpweergave plaatsen om ervoor te zorgen dat de weergave in verschillende uitvoerindelingen, zoals PDF, consistent is.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/image.1.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/image.1.png)
 
 ## 2.Properties
 

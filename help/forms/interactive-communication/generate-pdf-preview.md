@@ -4,10 +4,11 @@ description: PDF Preview in Interactive Communication Editor met verschillende g
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -40,19 +41,19 @@ Voorproef Interactieve Mededelingen die geen gegevens, lokale gegevens, of steek
 
 1.2. Gebruik de optie van de Voorproef van PDF en selecteer **Geen Gegevens** optie om een mededeling zonder gegevens te bekijken.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/nodata.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/nodata.png)
 
 +++
 
 +++&#x200B;2. Voorvertoning met lokale JSON-gegevens
 
-2.1. Een gestructureerd JSON-bestand voorbereiden. Ter verwijzing, kunt u de steekproefgegevens kopiëren van het schema JSON [&#x200B; (FDM) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) dat voor de mededeling wordt gebruikt.
+2.1. Een gestructureerd JSON-bestand voorbereiden. Ter verwijzing, kunt u de steekproefgegevens kopiëren van het schema JSON [ (FDM) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) dat voor de mededeling wordt gebruikt.
 
 2.2. In de Redacteur van IC, ga **Voorproef van PDF** > Gebruikend Lokale Gegevens.
 
 2.3. Selecteer en upload uw JSON-bestand om een PDF-voorvertoning weer te geven met de verschafte gegevens.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/localdata.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/localdata.png)
 
 +++
 
@@ -62,6 +63,6 @@ Voorproef Interactieve Mededelingen die geen gegevens, lokale gegevens, of steek
 
 3.2. In de voorvertoning worden automatisch gegevens uit modelvelden ingevuld. Zorg ervoor dat de voorbeeldgegevens bij het eerste gebruik in FDM worden opgeslagen of dat de voorvertoning als geen gegevens wordt weergegeven.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/datamodel.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++

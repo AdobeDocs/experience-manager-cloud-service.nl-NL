@@ -1,13 +1,14 @@
 ---
 title: Hoe kan Forms Designer worden gedownload en geïnstalleerd om Document of Record-sjablonen te maken?
-description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die fungeren als sjabloon voor een document of record.
+description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die fungeren als sjabloon voor een Document of Record.
 keywords: Designer installeren, Forms-ontwerper installeren, Vereisten voor de installatie van Forms Designer
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
@@ -17,9 +18,9 @@ ht-degree: 1%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dit artikel |
-| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
-Designer is een toepassing waarmee u eenvoudig grafische formulieren kunt ontwerpen en waarmee u eenvoudig XDP- en PDF-formuliersjablonen kunt maken. U kunt een formuliersjabloon ontwerpen, de logica ervan definiëren en aan strikte wettelijke vereisten voldoen. Een XDP- en PDF-formulier fungeren als een Document of Record-sjabloon in een adaptief formulier. Deze vormenmalplaatjes zijn verschillend van [&#x200B; Aangepaste malplaatjes van de Vorm &#x200B;](template-editor.md).
+Designer is een toepassing waarmee u eenvoudig grafische formulieren kunt ontwerpen en waarmee u eenvoudig XDP- en PDF-formuliersjablonen kunt maken. U kunt een formuliersjabloon ontwerpen, de logica ervan definiëren en aan strikte wettelijke vereisten voldoen. Een XDP- en PDF-formulier fungeren als een Document of Record-sjabloon in een adaptief formulier. Deze vormenmalplaatjes zijn verschillend van [ Aangepaste malplaatjes van de Vorm ](template-editor.md).
 
 ## Voorwaarden {#pre-requisites}
 
@@ -63,7 +64,7 @@ Als u de nieuwste versie van AEM Forms Designer 64-bits of 32-bits wilt installe
 
 Voer de volgende stappen uit om Designer te installeren:
 
-1. Download Designer van [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/downloads).
+1. Download Designer van [ Distributie van de Software ](https://experience.adobe.com/downloads).
 1. Dubbelklik op setup.exe om het installatieprogramma uit te voeren.
 1. Ga verder en geef uw gegevens op het Personalization-scherm op.
 1. Als u de licentieovereenkomst accepteert, klikt u op **[!UICONTROL Next]** om door te gaan.

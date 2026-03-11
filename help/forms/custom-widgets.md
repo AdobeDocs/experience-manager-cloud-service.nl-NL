@@ -7,12 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -22,9 +23,9 @@ ht-degree: 0%
 <span class="preview"> De HTML5 Forms-functionaliteit wordt aangeboden als onderdeel van het programma voor vroege toegang. Als u toegang wilt aanvragen, stuurt u een e-mail van uw officiële (werk)e-mailadres naar aem-forms-ea@adobe.com.
 </span>
 
-U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De motor XFA gebruikt diverse widgets, zie [&#x200B; Kader van de Verschijning voor aanpassings en vormen HTML5 &#x200B;](/help/forms/custom-widgets.md) voor gedetailleerde informatie.
+U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De motor XFA gebruikt diverse widgets, zie [ Kader van de Verschijning voor aanpassings en vormen HTML5 ](/help/forms/custom-widgets.md) voor gedetailleerde informatie.
 
-![&#x200B; Een voorbeeld van gebrek en douane widget &#x200B;](assets/custom-widgets.jpg)
+![ Een voorbeeld van gebrek en douane widget ](assets/custom-widgets.jpg)
 
 Een voorbeeld van de standaard- en aangepaste widget
 
@@ -32,7 +33,7 @@ Een voorbeeld van de standaard- en aangepaste widget
 
 ### Een profiel maken  {#create-a-profile-nbsp}
 
-U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Voor meer informatie bij het creëren van profielen, zie [&#x200B; Creërend douaneProfiel &#x200B;](/help/forms/custom-profile.md).
+U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Voor meer informatie bij het creëren van profielen, zie [ Creërend douaneProfiel ](/help/forms/custom-profile.md).
 
 ### Een widget maken {#create-a-widget}
 
@@ -79,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Aangepaste widget registreren met XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wanneer de code van de douanewidget klaar is, registreer widget met de scripting motor door `registerConfig` API voor [&#x200B; Vorm Bridge &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) te gebruiken. Het neemt widgetConfigObject als input.
+Wanneer de code van de douanewidget klaar is, registreer widget met de scripting motor door `registerConfig` API voor [ Vorm Bridge ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) te gebruiken. Het neemt widgetConfigObject als input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

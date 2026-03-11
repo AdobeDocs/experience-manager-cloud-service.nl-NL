@@ -4,10 +4,11 @@ description: Met de component Tekstvak in de interactieve communicatie-editor in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 6bed824c-b959-4882-a5aa-dbb7fbf2f8a0
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 0%
 
 ## &#x200B;1. Inleiding
 
-De **component van het Doos van de Tekst van 0&rbrace; &lbrace;in de Interactieve Communicatie Redacteur staat auteurs toe om tekstinhoud binnen een mededeling in te voeren en te tonen.** Het is één van de meest fundamentele en wijdverbreide componenten, algemeen gebruikt om namen, commentaren, terugkoppelen, of douanegegevens te verzamelen wanneer het ontwerpen van interactieve mededelingen of communicatie fragmenten.
+De **component van het Doos van de Tekst van 0} {in de Interactieve Communicatie Redacteur staat auteurs toe om tekstinhoud binnen een mededeling in te voeren en te tonen.** Het is één van de meest fundamentele en wijdverbreide componenten, algemeen gebruikt om namen, commentaren, terugkoppelen, of douanegegevens te verzamelen wanneer het ontwerpen van interactieve mededelingen of communicatie fragmenten.
 
 Het Doos van de Tekst steunt **gegevensband**, toelatend auteurs om statische en dynamische inhoud naadloos te combineren, bijvoorbeeld: *** de &quot;naam van de Gebruiker: @name&quot;***, waar @name een verbindend gegevensgebied is dat dynamisch bevolkt wanneer het document als PDF wordt bewaard. Bovendien worden RTF-opmaak en flexibele positionering ondersteund voor nauwkeurige controle van de layout.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/textbox.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/textbox.png)
 
 ## &#x200B;2. Eigenschappen
 

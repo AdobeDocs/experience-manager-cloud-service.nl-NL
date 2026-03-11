@@ -4,10 +4,11 @@ description: De Component van de streepjescode in Interactieve Communicatie Reda
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ De component van de Streepjescode in de Interactieve Communicatie redacteur laat
 
 Of u nu klantfacturen, verzendlabels of lidmaatschapskaarten maakt, de component Barcode vereenvoudigt het proces door machineleesbare gegevens rechtstreeks in uw document in te sluiten.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/barcode.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/barcode.png)
 
 ## &#x200B;2. Eigenschappen
 

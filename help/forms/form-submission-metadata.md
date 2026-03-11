@@ -6,13 +6,14 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
-
 
 # Informatie uit gebruikersgegevens toevoegen aan metagegevens voor het verzenden van formulieren {#adding-information-from-user-data-to-form-submission-metadata}
 
@@ -30,7 +31,7 @@ Voer de volgende stappen uit om een element toe te voegen aan de metagegevens:
 
 1. Open het adaptieve formulier in de bewerkingsmodus.\
    Als u het formulier wilt openen in de bewerkingsmodus, selecteert u in het formulierbeheer het formulier en selecteert u **[!UICONTROL Open]** .
-1. Op geef wijze uit, selecteer een component, uitgezocht ![&#x200B; gebied-niveau &#x200B;](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**, en selecteer dan ![&#x200B; cmp &#x200B;](assets/configure-icon.svg).
+1. Op geef wijze uit, selecteer een component, uitgezocht ![ gebied-niveau ](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**, en selecteer dan ![ cmp ](assets/configure-icon.svg).
 1. Klik op **[!DNL Metadata]** in het zijpaneel.
 1. Klik in de sectie Metagegevens op **[!DNL Add]** .
 1. Voeg scripts toe in het veld Waarde van het tabblad Metagegevens. Met de scripts die u toevoegt, worden gegevens verzameld uit elementen op het formulier en worden waarden berekend die worden doorgegeven aan de metagegevens.
@@ -39,7 +40,7 @@ Voer de volgende stappen uit om een element toe te voegen aan de metagegevens:
 
    `(agebox.value >= 21) ? true : false`
 
-   ![&#x200B; manuscript van Meta-gegevens &#x200B;](assets/add-element-metadata.png)
+   ![ manuscript van Meta-gegevens ](assets/add-element-metadata.png)
 
    Script ingevoerd op het tabblad Metagegevens
 
@@ -51,15 +52,15 @@ Nadat een gebruiker gegevens in het element invoert dat als meta-gegevensgebied 
 
 In het bovenstaande voorbeeld worden de metagegevens opgeslagen in de CRX-opslagplaats. De metagegevens zien er als volgt uit:
 
-![&#x200B; Metagegevens &#x200B;](assets/metadata_entry_new.png)
+![ Metagegevens ](assets/metadata_entry_new.png)
 
 Als u een element van het controlevakje in de meta-gegevens toevoegt, worden de geselecteerde waarden opgeslagen als komma-gescheiden koord. U voegt bijvoorbeeld een component CheckBox toe aan het formulier en geeft de naam op als `checkbox1` . In de eigenschappen van de component van het controlevakje, voegt u de punten Rijvergunning, het Aantal van de Sociale Veiligheid, en Paspoort voor waarden 0, 1, en 2 toe.
 
-![&#x200B; Opstellend veelvoudige waarden van een controledoos &#x200B;](assets/checkbox-metadata.png)
+![ Opstellend veelvoudige waarden van een controledoos ](assets/checkbox-metadata.png)
 
 U selecteert de container Adaptief formulier en in de formuliereigenschappen voegt u een metagegevenssleutel `cb1` toe waarin `checkbox1.value` wordt opgeslagen, en publiceert u het formulier. Wanneer een klant het formulier invult, selecteert de klant de opties Paspoort en burgerservicenummer in het veld Selectievakje. De waarden 1 en 2 worden opgeslagen als 1, 2 in het cb1-veld van de metagegevens voor verzending.
 
-![&#x200B; de ingang van Meta-gegevens voor veelvoudige waarden die op een checkbox gebied &#x200B;](assets/metadata-entry.png) worden geselecteerd
+![ de ingang van Meta-gegevens voor veelvoudige waarden die op een checkbox gebied ](assets/metadata-entry.png) worden geselecteerd
 
 >[!NOTE]
 >

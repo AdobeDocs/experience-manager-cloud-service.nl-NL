@@ -5,10 +5,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '827'
 ht-degree: 0%
 
 ---
@@ -259,8 +260,8 @@ Voegt automatisch de juiste validatie toe:
 
 Voor conversieproblemen:
 
-- Controle [&#x200B; Veelgestelde vragen van de Bouwer van de Ervaring van Forms &#x200B;](forms-experience-builder-frequently-asked-questions.md)
-- Herzie [&#x200B; Begonnen gids &#x200B;](forms-experience-builder-getting-started.md)
+- Controle [ Veelgestelde vragen van de Bouwer van de Ervaring van Forms ](forms-experience-builder-frequently-asked-questions.md)
+- Herzie [ Begonnen gids ](forms-experience-builder-getting-started.md)
 - Neem contact op met de systeembeheerder voor technische ondersteuning
 
 ## Verwante artikelen

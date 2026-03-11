@@ -4,10 +4,11 @@ description: De Component van het Gebied van het beeld in Interactieve Communica
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Met de component Afbeeldingsveld in de interactieve communicatieeditor kunnen au
 
 Ondersteunend gemeenschappelijke formaten zoals **JPEG** en **PNG**, biedt deze component flexibele configuratieopties aan om te bepalen hoe het beeld wordt getoond, opgeslagen, en gestileerd. De auteurs kunnen ook **een naam of een etiket** aan het beeldgebied toewijzen, die lay-outduidelijkheid en organisatie verbeteren.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/imagefield.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/imagefield.png)
 
 ## &#x200B;2. Eigenschappen
 

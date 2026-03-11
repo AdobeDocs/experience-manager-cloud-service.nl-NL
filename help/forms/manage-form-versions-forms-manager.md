@@ -3,17 +3,18 @@ title: Formulierversies beheren in Forms Manager
 description: Leer om versies van Adaptive Forms, formulierfragmenten, thema's en andere middelen te maken en te beheren in de gebruikersinterface van Forms Manager.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
-source-git-commit: 52d6e8163ef24d362287cbedf54c2977fff9c87b
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
-
 # Assets-versies van formulieren beheren in de gebruikersinterface van Forms Manager
 
-<span class="preview"> Deze functie is beschikbaar via het programma Vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar [&#x200B; aem-forms-ea@adobe.com &#x200B;](mailto:aem-forms-ea@adobe.com). </span>
+<span class="preview"> Deze functie is beschikbaar via het programma Vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com). </span>
 
 Forms Manager ondersteunt nu versioning voor formulierelementen. U kunt versies maken, versiehistorie weergeven en eerdere versies van uw elementen herstellen via de gebruikersinterface van Forms Manager.
 
@@ -38,10 +39,10 @@ Een versie van een formulierelement maken:
 1. Selecteer het formulier of element.
 1. Selecteer **[!UICONTROL Timeline]** in het linkerdeelvenster.
 1. Klik op **[!UICONTROL Save as Version]** op de tijdlijnwerkbalk.
-   ![&#x200B; sparen als Versie &#x200B;](/help/forms/assets/create-version.png)
+   ![ sparen als Versie ](/help/forms/assets/create-version.png)
 1. Voer een **[!UICONTROL Label]** en een optioneel **[!UICONTROL Comment]** in om de wijzigingen te beschrijven.
 1. Klik op **[!UICONTROL Create]**.
-   ![&#x200B; sparen als Version2 &#x200B;](/help/forms/assets/create-version1.png)
+   ![ sparen als Version2 ](/help/forms/assets/create-version1.png)
 
 De versie wordt in het tijdlijndeelvenster weergegeven met het label, de opmerking en het tijdstempel.
 
@@ -51,7 +52,7 @@ Wanneer u activa met de zelfde naam zoals bestaand activa uploadt, toont de Mana
 
 Wanneer al een element met dezelfde naam bestaat, wordt het bestaande element vervangen door de upload en wordt automatisch een nieuwe versie gemaakt. U kunt de gemaakte versie weergeven in de tijdlijn.
 
-![&#x200B; Dossier uploadt dialoog die versioned toont upload &#x200B;](/help/forms/assets/version-upload.png)
+![ Dossier uploadt dialoog die versioned toont upload ](/help/forms/assets/version-upload.png)
 
 ## Versiehistorie weergeven {#view-version-history}
 
@@ -59,7 +60,7 @@ De versiegeschiedenis van een element weergeven:
 
 1. Selecteer het element in Forms Manager.
 1. Selecteer **[!UICONTROL Timeline]** in het linkerdeelvenster.
-   ![&#x200B; Geschiedenis van de Versie &#x200B;](/help/forms/assets/version-history.png)
+   ![ Geschiedenis van de Versie ](/help/forms/assets/version-history.png)
 
 In de tijdlijn worden alle versie-items samen met activity-gebeurtenissen weergegeven. Elke ingang toont het etiket, de commentaar, de auteur, en timestamp.
 
@@ -71,7 +72,7 @@ Een element terugzetten naar een eerdere versie:
 1. Selecteer **[!UICONTROL Timeline]** in het linkerdeelvenster.
 1. Selecteer de versie die u wilt herstellen.
 1. Klik op **[!UICONTROL Revert to this Version]**.
-   ![&#x200B; keert Versie &#x200B;](/help/forms/assets/revert-version.png) terug
+   ![ keert Versie ](/help/forms/assets/revert-version.png) terug
 
 >[!NOTE]
 >

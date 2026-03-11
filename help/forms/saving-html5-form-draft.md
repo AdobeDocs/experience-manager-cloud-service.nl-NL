@@ -5,14 +5,15 @@ content-type: reference
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ U kunt een HTML5-formulier opslaan als concept en het invullen van het formulier
 
 Uit de doos, verstrekt AEM Forms a **sparen als Ontwerp** profiel. U kunt een formulier weergeven met het profiel Opslaan als concept om de conceptfunctionaliteit voor een HTML5-formulier in te schakelen. U kunt HTML specificeren teruggeeft profiel voor een vorm in **Manager van Forms**.
 
-Om sparen als functionaliteit van het Ontwerp voor uw bestaand [&#x200B; douaneprofiel &#x200B;](/help/forms/custom-profile.md) toe te laten, voeg de volgende eigenschappen aan uw knoop van het douaneprofiel toe:
+Om sparen als functionaliteit van het Ontwerp voor uw bestaand [ douaneprofiel ](/help/forms/custom-profile.md) toe te laten, voeg de volgende eigenschappen aan uw knoop van het douaneprofiel toe:
 
 <table>
  <tbody>
@@ -77,4 +78,4 @@ Voeg de volgende eigenschap toe aan het profielknooppunt om formuliervermelding 
  </tbody>
 </table>
 
-Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt uw leverancier van de douaneopslag toevoegen, voor details zie [&#x200B; de opslag van de Douane voor de componenten van Concepten en van Verzending &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt uw leverancier van de douaneopslag toevoegen, voor details zie [ de opslag van de Douane voor de componenten van Concepten en van Verzending ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).

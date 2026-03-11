@@ -3,13 +3,14 @@ title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
-
 
 # Handelingen verzenden die worden ondersteund door Adaptive Forms
 
@@ -37,7 +38,7 @@ AEM-formulieren bieden de volgende verzendacties uit de verpakking:
 * [Verzenden naar OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Een AEM-workflow aanroepen](/help/forms/configure-submit-action-workflow.md)
 * [Verzenden naar Marketo-pagina](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [&#x200B; voorleggen aan Adobe Experience Platform (AEP) &#x200B;](/help/forms/aem-forms-aep-connector.md)
+* [ voorleggen aan Adobe Experience Platform (AEP) ](/help/forms/aem-forms-aep-connector.md)
 * [Verzenden naar werkblad](/help/forms/forms-submission-service.md)
 
 U kunt ook een adaptief formulier verzenden naar andere opslagconfiguraties:
@@ -49,7 +50,7 @@ U kunt ook een adaptief formulier verzenden naar andere opslagconfiguraties:
 
 In de volgende tabel wordt aangegeven welke verzendacties worden ondersteund op basis van de in AEM Forms gebruikte methode voor het schrijven van formulieren:
 
-| Handeling verzenden | [&#x200B; Componenten van de Stichting &#x200B;](/help/forms/configuring-submit-actions.md) | [&#x200B; Componenten van de Kern &#x200B;](/help/forms/configure-submit-actions-core-components.md) | [&#x200B; Universele Redacteur &#x200B;](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [&#x200B; op document-Gebaseerde Forms &#x200B;](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
+| Handeling verzenden | [ Componenten van de Stichting ](/help/forms/configuring-submit-actions.md) | [ Componenten van de Kern ](/help/forms/configure-submit-actions-core-components.md) | [ Universele Redacteur ](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [ op document-Gebaseerde Forms ](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
 |----------------------------|------------------------|------------------|------------------|------------------------|
 | E-mail verzenden | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
 | Power Automated Flow | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
@@ -57,7 +58,7 @@ In de volgende tabel wordt aangegeven welke verzendacties worden ondersteund op 
 | Workfront Fusion | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
 | Verzenden met FDM | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
 | Verzenden naar AEP | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
-| Azure Blob Storage | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
+| Azure Blob-opslag | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
 | Verzenden naar REST-eindpunt | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
 | Verzenden naar Marketo Engage | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
 | Verzenden naar OneDrive | ✅ Ondersteund | ✅ Ondersteund | ✅ Ondersteund |                        |
@@ -82,7 +83,7 @@ Alle OOTB-veldvalidaties (out-of-box) van een adaptief formulier die opnieuw wor
 
 Gebruik de **[!UICONTROL Revalidate on server]** onder Adaptief formuliercontainer in de zijbalk om validatie op de server in of uit te schakelen voor het huidige formulier.
 
-![&#x200B; toelatend server-zijBevestiging &#x200B;](assets/revalidate-on-server.png)
+![ toelatend server-zijBevestiging ](assets/revalidate-on-server.png)
 
 **toelatend server-zijBevestiging**
 
@@ -118,4 +119,3 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 ## Zie ook
 
 {{af-submit-action}}
-

@@ -4,10 +4,11 @@ description: Leer Adaptief Forms, PDF forms, thema's en andere ondersteunende mi
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1031'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt Adaptief Forms en gerelateerde elementen, zoals Adaptief formulierthema&#39;s, Formuliergegevensmodel (FDM), Aangepaste formuliersjablonen, Fragmenten en PDF forms, tussen [!DNL AEM Forms] -instanties verplaatsen.
@@ -28,15 +29,15 @@ Formulieren of gerelateerde elementen downloaden:
 1. Meld u aan bij uw [!DNL Experience Manager Forms] -instantie.
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
-   ![&#x200B; Uitgezochte Forms &#x200B;](/help/forms/assets/select-forms.png)
+   ![ Uitgezochte Forms ](/help/forms/assets/select-forms.png)
 
 1. Selecteer de elementen en klik op het pictogram **[!UICONTROL Download]** in de bovenste track.
 
-   ![&#x200B; Download Forms &#x200B;](/help/forms/assets/download-form.png)
+   ![ Download Forms ](/help/forms/assets/download-form.png)
 
    Wanneer u het formulier downloadt, wordt het dialoogvenster **[!UICONTROL Download Asset(s)]** weergegeven.
 
-   ![&#x200B; Download vormenactiva &#x200B;](/help/forms/assets/download-form-assets.png)
+   ![ Download vormenactiva ](/help/forms/assets/download-form-assets.png)
 
 1. Klik op **[!UICONTROL Download]**.
 
@@ -50,11 +51,11 @@ Een formulier of een verwant element uploaden:
 1. Meld u aan bij uw [!DNL Experience Manager Forms] -instantie.
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
-   ![&#x200B; Uitgezochte Forms &#x200B;](/help/forms/assets/select-forms.png)
+   ![ Uitgezochte Forms ](/help/forms/assets/select-forms.png)
 
 1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL File Upload]** . Er wordt een dialoogvenster weergegeven.
 
-   ![&#x200B; upload Forms &#x200B;](/help/forms/assets/form-upload.png)
+   ![ upload Forms ](/help/forms/assets/form-upload.png)
 
 1. Blader in het dialoogvenster naar het pakket of het archief dat u wilt importeren en selecteer dit. U kunt ook andere ondersteunde bestandstypen selecteren. Selecteer **[!UICONTROL Open]**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
 
@@ -74,15 +75,15 @@ Een thema downloaden:
 1. Meld u aan bij de [!DNL Experience Manager Forms] Author-instantie.
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Themes]** .
 
-   ![&#x200B; Uitgezochte Thema &#x200B;](/help/forms/assets/select-theme.png)
+   ![ Uitgezochte Thema ](/help/forms/assets/select-theme.png)
 
 1. Selecteer het thema op de pagina Thema&#39;s en klik op het pictogram **[!UICONTROL Download]** in de bovenste track.
 
-   ![&#x200B; Thema van de Download &#x200B;](/help/forms/assets/download-theme.png)
+   ![ Thema van de Download ](/help/forms/assets/download-theme.png)
 
    Wanneer u het thema downloadt, verschijnt het dialoogvenster **[!UICONTROL Download Asset(s)]** .
 
-   ![&#x200B; Download themaactiva &#x200B;](/help/forms/assets/download-theme-asset.png)
+   ![ Download themaactiva ](/help/forms/assets/download-theme-asset.png)
 
 1. Klik op **[!UICONTROL Download]**.
 
@@ -96,11 +97,11 @@ Een thema uploaden:
 1. Meld u aan bij uw [!DNL Experience Manager Forms] -instantie.
 1. Navigeer in Experience Manager naar **[!UICONTROL Forms]** > **[!UICONTROL Themes]** .
 
-   ![&#x200B; Uitgezochte Thema &#x200B;](/help/forms/assets/select-theme.png)
+   ![ Uitgezochte Thema ](/help/forms/assets/select-theme.png)
 
 1. Klik op de pagina Themes op **[!UICONTROL Create]** > **[!UICONTROL File Upload]** .
 
-   ![&#x200B; upload Thema &#x200B;](/help/forms/assets/theme-upload.png)
+   ![ upload Thema ](/help/forms/assets/theme-upload.png)
 
 1. Blader naar een themapakket op uw computer en selecteer dit pakket. Klik vervolgens op **[!UICONTROL Upload]** . Het geüploade thema wordt beschikbaar op de pagina Themes.
 
@@ -115,16 +116,16 @@ Een map maken:
 1. Meld u aan bij uw [!DNL Experience Manager Forms] -instantie.
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
-   ![&#x200B; Uitgezochte Vorm &#x200B;](/help/forms/assets/select-forms.png)
+   ![ Uitgezochte Vorm ](/help/forms/assets/select-forms.png)
 
 1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Folder]** .
 
-   ![&#x200B; creeer Omslag &#x200B;](/help/forms/assets/create-folder.png)
+   ![ creeer Omslag ](/help/forms/assets/create-folder.png)
 
    Het dialoogvenster **[!UICONTROL Add Folder]** wordt weergegeven.
 1. Voer de **[!UICONTROL Title]** in. De **[!UICONTROL Name]** wordt automatisch gevuld wanneer u de **[!UICONTROL Title]** typt.
 
-   ![&#x200B; voeg Omslag &#x200B;](/help/forms/assets/add-folder.png) toe
+   ![ voeg Omslag ](/help/forms/assets/add-folder.png) toe
 
 1. Klik op **[!UICONTROL Create]**.
 
@@ -134,7 +135,7 @@ Een map maken:
 
 Er wordt een nieuwe map met de door u gedefinieerde titel weergegeven op de huidige locatie in de lijst met elementen.
 
-Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutenbericht bekijken door over het fout ![&#x200B; aem6forms_error_alert &#x200B;](assets/Smock_Alert_18_N.svg) pictogram te bewegen dat naast het naamgebied verschijnt.
+Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutenbericht bekijken door over het fout ![ aem6forms_error_alert ](assets/Smock_Alert_18_N.svg) pictogram te bewegen dat naast het naamgebied verschijnt.
 
 U kunt de gemaakte map selecteren om naar de map te gaan en elementen of mappen in de map te maken. Bovendien kunt u een map selecteren en ervoor kiezen deze in de wachtrij te plaatsen voor downloaden, te verwijderen of de naam ervan te bewerken.
 
@@ -146,20 +147,20 @@ Kopieën van elementen maken:
 
 1. Meld u aan bij uw [!DNL Experience Manager Forms] -instantie.
 1. Selecteer een of meer elementen op de relevante elementenpagina. In de gebruikersinterface wordt het pictogram **[!UICONTROL Copy]** weergegeven.
-1. Selecteer **[!UICONTROL Copy]**. UI toont het ![&#x200B; pictogram van het Deeg &#x200B;](/help/forms/assets/Smock_Paste_18_N.svg) pictogram.
+1. Selecteer **[!UICONTROL Copy]**. UI toont het ![ pictogram van het Deeg ](/help/forms/assets/Smock_Paste_18_N.svg) pictogram.
 
-   ![&#x200B; activa van het Exemplaar &#x200B;](/help/forms/assets/copy-asset.png)
+   ![ activa van het Exemplaar ](/help/forms/assets/copy-asset.png)
 
-   U kunt er ook voor kiezen om in een map te navigeren voordat u gaat plakken. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over omslagen, zie [&#x200B; Omslagen en het organiseren van activa &#x200B;](#folders-and-organizing-assets).
+   U kunt er ook voor kiezen om in een map te navigeren voordat u gaat plakken. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over omslagen, zie [ Omslagen en het organiseren van activa ](#folders-and-organizing-assets).
 1. Selecteer **[!UICONTROL Paste]** .
 
-   ![&#x200B; activa van het Deeg &#x200B;](/help/forms/assets/paste-asset.png)
+   ![ activa van het Deeg ](/help/forms/assets/paste-asset.png)
 
 1. Het dialoogvenster **[!UICONTROL Paste]** wordt weergegeven. Het systeem genereert automatisch namen en titels voor de nieuwe exemplaren van elementen, maar u kunt de titels en namen van de elementen bewerken.
 
    Als u de elementen op dezelfde plaats kopieert en plakt, wordt het achtervoegsel &quot;-CopyXX&quot; toegevoegd aan de bestaande naam van de `asset` . Als er geen titel voor het gekopieerde element bestaat, blijft het automatisch gegenereerde titelveld leeg.
 
-   ![&#x200B; Deeg activa bij nieuwe plaats &#x200B;](/help/forms/assets/paste-click-asset.png)
+   ![ Deeg activa bij nieuwe plaats ](/help/forms/assets/paste-click-asset.png)
 
    Bewerk indien nodig de **[!UICONTROL Title]** waarmee u de kopie van het element wilt opslaan. De **[!UICONTROL Name]** wordt automatisch gevuld wanneer u de **[!UICONTROL Title]** typt.
 1. Selecteer **[!UICONTROL Paste]**. Er worden nieuwe kopieën van de gekopieerde elementen gemaakt.
@@ -171,9 +172,9 @@ Als u een groot aantal middelen hebt, kost het veel tijd om naar het juiste midd
 Het element doorzoeken:
 
 1. Meld u aan bij uw [!DNL Experience Manager Forms] -instantie.
-1. Klik het ![&#x200B; pictogram van het onderzoekspictogram &#x200B;](assets/folder-search-icon.svg) onderzoekspictogram.
+1. Klik het ![ pictogram van het onderzoekspictogram ](assets/folder-search-icon.svg) onderzoekspictogram.
 
-   ![&#x200B; Vorm van het Onderzoek &#x200B;](/help/forms/assets/search-form.png)
+   ![ Vorm van het Onderzoek ](/help/forms/assets/search-form.png)
 
 1. Voer in de zoekbalk de naam in van het element dat u wilt zoeken.
 
@@ -181,7 +182,7 @@ Het element doorzoeken:
 
    ![Assets doorzoeken](/help/forms/assets/search-bar.png)
 
-Voor meer informatie en instructies bij het gebruiken van onderzoek, zie [&#x200B; Onderzoek &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=nl-NL).
+Voor meer informatie en instructies bij het gebruiken van onderzoek, zie [ Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html).
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

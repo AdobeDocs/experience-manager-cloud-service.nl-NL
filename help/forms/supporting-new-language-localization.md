@@ -2,11 +2,12 @@
 title: Hoe voeg ik steun voor nieuwe scènes aan een Aangepast Vorm toe dat op de Componenten van de Stichting wordt gebaseerd?
 description: Voor Adaptief Forms kunt u naast de landinstellingen uit het tekstvak ook landinstellingen voor meer talen toevoegen.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -15,13 +16,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/creating-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=nl-NL) |
-| Kernonderdelen | [&#x200B; klik hier &#x200B;](supporting-new-language-localization-core-components.md) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| Kernonderdelen | [ klik hier ](supporting-new-language-localization-core-components.md) |
 | Elementaire componenten | Dit artikel |
 
 AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR). U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN).
@@ -32,7 +33,7 @@ De lokalisatie van adaptieve formulieren is afhankelijk van twee typen taalwoord
 
 * **vorm-specifiek woordenboek** bevat koorden die in adaptieve vormen worden gebruikt. Bijvoorbeeld labels, veldnamen, foutberichten en Help-beschrijvingen. Het wordt beheerd als een set XLIFF-bestanden voor elke landinstelling en u hebt toegang tot dit bestand via `[author-instance]/libs/cq/i18n/gui/translator.html` .
 
-* **Globale woordenboeken** Er zijn twee globale woordenboeken, die als voorwerpen JSON, in de AEM cliëntbibliotheek worden beheerd. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken op `[author-instance]/libs/fd/xfaforms/clientlibs/I18N` . Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling in cache te houden en het gebruik van de netwerkbandbreedte verminderen wanneer ze verschillende adaptieve formulieren op dezelfde server gebruiken.
+* **Globale woordenboeken** Er zijn twee globale woordenboeken, die als voorwerpen JSON, in de de cliëntbibliotheek van AEM worden beheerd. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken op `[author-instance]/libs/fd/xfaforms/clientlibs/I18N` . Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling in cache te houden en het gebruik van de netwerkbandbreedte verminderen wanneer ze verschillende adaptieve formulieren op dezelfde server gebruiken.
 
 ## Ondersteuning voor nieuwe landinstellingen toevoegen {#add-support-for-new-locales}
 
@@ -53,14 +54,14 @@ Ondersteuning voor een nieuwe landinstelling toevoegen in de Adaptive Forms-runt
 1. [Ondersteuning voor landinstellingen toevoegen voor het woordenboek](#add-locale-support-for-the-dictionary)
 1. [Leg de wijzigingen in de opslagplaats vast en implementeer de pijpleiding](#commit-changes-in-repo-deploy-pipeline)
 
-#### 1. Kloont de repository {#clone-the-repository}
+#### &#x200B;1. Kloont de repository {#clone-the-repository}
 
 1. Navigeer vanaf de opdrachtregel naar de locatie waar u de Forms Cloud Service-opslagplaats wilt klonen.
-1. Voer het bevel uit dat u [&#x200B; van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git) wordt teruggewonnen. Dit lijkt op `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` .
+1. Voer het bevel uit dat u [ van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) wordt teruggewonnen. Dit lijkt op `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` .
 1. Gebruik de gebruikersnaam en het wachtwoord van de it om de repository te klonen.
-1. Open de gekloonde opslagmap voor Forms Cloud Service in de voorkeurseditor.
+1. Open de gekloonde Forms Cloud Service-opslagmap in de gewenste editor.
 
-#### 2. Voeg een landinstelling toe aan de Guide Localization-service {#add-a-locale-to-the-guide-localization-service}
+#### &#x200B;2. Voeg een landinstelling toe aan de Guide Localization-service {#add-a-locale-to-the-guide-localization-service}
 
 1. Zoek het `Guide Localization Service.cfg.json` -bestand en voeg de landinstelling toe die u wilt toevoegen aan de lijst met ondersteunde landinstellingen.
 
@@ -68,7 +69,7 @@ Ondersteuning voor een nieuwe landinstelling toevoegen in de Adaptive Forms-runt
    >
    > Maak een bestand met de naam `Guide Localization Service.cfg.json` als dat nog niet het geval is.
 
-#### 3. Voeg een locale-name specifieke mapclientbibliotheek toe {#add-locale-name-specific-folder}
+#### &#x200B;3. Voeg een locale-name specifieke mapclientbibliotheek toe {#add-locale-name-specific-folder}
 
 1. Maak `etc/clientlibs` -map in de map UI.content.
 1. Maak verder een map met de naam `locale-name` under `etc/clientlibs` als container voor xfa- en af-clientlibs.
@@ -88,7 +89,7 @@ I18N.js
 1. Maak een knooppunt met de naam `[locale-name]_af` en typ als `cq:ClientLibraryFolder` onder `etc/clientlibs/locale_name` , met categorie als `guides.I18N.<locale>` en afhankelijkheden als `xfaforms.3rdparty` , `xfaforms.I18N.<locale>` en `guide.common` .
 1. Maak een map met de naam `javascript` en voeg de volgende bestanden toe:
 
-   * **i18n.js** het bepalen `guidelib.i18n`, die patronen van &quot;agendaSymbols&quot;hebben, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` voor `<locale>` volgens de XFA specificaties in [&#x200B; Vastgestelde Specificatie van de Landinstelling &#x200B;](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf) worden beschreven.
+   * **i18n.js** het bepalen `guidelib.i18n`, die patronen van &quot;agendaSymbols&quot;hebben, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` voor `<locale>` volgens de XFA specificaties in [ Vastgestelde Specificatie van de Landinstelling ](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf) worden beschreven.
    * **LogMessages.js** definiërend `guidelib.i18n.strings` en `guidelib.i18n.LogMessages` voor `<locale>` zoals die in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js` wordt bepaald.
 
 1. Voeg **js.txt** toe die het volgende bevatten:
@@ -98,7 +99,7 @@ I18N.js
      LogMessages.js
    ```
 
-#### 4. Ondersteuning voor landinstellingen toevoegen voor het woordenboek {#add-locale-support-for-the-dictionary}
+#### &#x200B;4. Ondersteuning voor landinstellingen toevoegen voor het woordenboek {#add-locale-support-for-the-dictionary}
 
 Voer deze stap alleen uit als de `<locale>` die u toevoegt, niet behoort tot `en` , `de` , `es` , `fr` , `it` , `pt-br` , `zh-cn` , `zh-tw` , `ja` , `ko-kr` .
 
@@ -108,25 +109,25 @@ Voer deze stap alleen uit als de `<locale>` die u toevoegt, niet behoort tot `en
 1. Voeg de `<locale-name>` standaardwaarden voor de landinstelling `de` , `es` , `fr` , `it` , `pt-br` , `zh-cn` , `zh-tw` , `ja` en `ko-kr` toe als deze nog niet aanwezig zijn.
 
 1. Voeg de waarde `<locale>` toe aan de waarden van de eigenschap `languages` van `/etc/languages` .
-1. Voeg de gecreeerde omslagen in `filter.xml` onder etc/META-INF/[ omslaghiërarchie ] toe als:
+1. Voeg de gecreeerde omslagen in `filter.xml` onder etc/META-INF/[ omslaghiërarchie ] als toe:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
    <filter root="/etc/languages"/>
    ```
 
-Alvorens de veranderingen in de AEM bewaarplaats van het Git vast te leggen, moet u tot uw [&#x200B; informatie van de bewaarplaats van de Git toegang hebben &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git).
+Alvorens de veranderingen in de bewaarplaats van het Git van AEM vast te leggen, moet u tot uw [ bewaarplaats van de Git toegang hebben ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-#### 5. Leg de wijzigingen in de opslagplaats vast en implementeer de pijpleiding {#commit-changes-in-repo-deploy-pipeline}
+#### &#x200B;5. Leg de wijzigingen in de opslagplaats vast en implementeer de pijpleiding {#commit-changes-in-repo-deploy-pipeline}
 
-Leg de wijzigingen vast in de GIT-opslagplaats nadat u een ondersteuning voor landinstellingen hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Leer [&#x200B; hoe te opstelling een pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline) om nieuwe scènesteun toe te voegen.
-Zodra de pijpleiding volledig is, verschijnt de onlangs toegevoegde scène in het AEM milieu.
+Leg de wijzigingen vast in de GIT-opslagplaats nadat u een ondersteuning voor landinstellingen hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Leer [ hoe te opstelling een pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om nieuwe scènesteun toe te voegen.
+Zodra de pijpleiding volledig is, verschijnt de onlangs toegevoegde scène in het milieu van AEM.
 
 ### Toegevoegde landinstelling gebruiken in Adaptive Forms {#use-added-locale-in-af}
 
 Voer de volgende stappen uit om een adaptief formulier te gebruiken en weer te geven met de nieuwe landinstelling:
 
-1. Meld u aan bij de AEM auteur.
+1. Meld u aan bij de AEM-auteur.
 1. Ga naar **Forms** > **Forms en Documenten**.
 1. Selecteer een AanpassingsVorm en klik **toevoegen Woordenboek** en **voeg Woordenboek aan de tovenaar van het Project van de Vertaling** verschijnt.
 1. Specificeer de **Titel van het Project** en selecteer de **Talen van het Doel** van het drop-down menu in **Woordenboek aan de tovenaar van het Project van de Vertaling** toevoegen.
@@ -154,7 +155,7 @@ Nadat de landinstelling is geïdentificeerd, wordt in het adaptieve formulier he
 
 Als er geen landinstellingsgegevens aanwezig zijn, wordt het adaptieve formulier geleverd in de oorspronkelijke taal van het formulier. De oorspronkelijke taal is de taal die wordt gebruikt bij het ontwikkelen van het adaptieve formulier.
 
-Krijg de bibliotheek van de a [&#x200B; steekproefcliënt &#x200B;](/help/forms/assets/locale-support-sample.zip) om steun voor nieuwe scène toe te voegen. U moet de inhoud van de map wijzigen in de vereiste landinstelling.
+Krijg de bibliotheek van de a [ steekproefcliënt ](/help/forms/assets/locale-support-sample.zip) om steun voor nieuwe scène toe te voegen. U moet de inhoud van de map wijzigen in de vereiste landinstelling.
 
 ## Aanbevolen procedures voor ondersteuning van nieuwe lokalisatie {#best-practices}
 

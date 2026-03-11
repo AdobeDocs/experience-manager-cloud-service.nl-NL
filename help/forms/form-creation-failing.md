@@ -1,19 +1,20 @@
 ---
 title: Hoe kan ik fouten bij het maken van formulieren oplossen?
-description: Problemen met het maken van formulieren in AEM Forms as a Cloud Service-omgeving oplossen.
+description: Problemen met het maken van formulieren in de AEM Forms as a Cloud Service-omgeving oplossen.
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 # Probleem tijdens het publiceren van formulieren{#form-creation-fails}
 
-Nadat gebruikers een update naar AEM Forms as a Cloud Service uitvoeren `2024.5.16461` :
+Nadat gebruikers een update naar AEM Forms as a Cloud Service-versie uitvoeren `2024.5.16461` :
 
 **Sommige gebruikers** kunnen met probleem worden geconfronteerd terwijl het creëren van vormen, is de kwestie dusdanig dat wanneer een gebruiker een vorm creeert, het volgende foutenbericht omhoog in de doos van de aanmaakdialoog springt:
 
@@ -28,9 +29,9 @@ De kwestie komt voor omdat de auteur de vorm zonder **publiceert eerst het malpl
 Voer de volgende stappen uit om het probleem op te lossen:
 
 1. Zorg ervoor dat de sjabloon die u in het formulier gebruikt, niet de `jcr:uuid` -eigenschappen en andere door het systeem gegenereerde beveiligde eigenschappen op het pad heeft `<template-path>/initial/jcr:content node` .
-1. Publish de sjabloon expliciet met behulp van de sjabloonconsole.
+1. Publiceer uitdrukkelijk het malplaatje gebruikend de malplaatjeconsole.
 1. Wanneer de sjabloon wordt gepubliceerd, kunt u nu nieuwe formulieren maken met de sjabloon.
-1. Als de sjabloon die u hebt gebruikt in de toekomstige versies bijwerkt, Publish de sjabloon opnieuw (zoals beschreven in stap 2) om problemen met het maken van formulieren te voorkomen.
+1. Als de sjabloon die u hebt gebruikt in de toekomstige versies bijwerkt, publiceert u de sjabloon opnieuw (zoals beschreven in stap 2) om problemen met het maken van formulieren te voorkomen.
 
 
 <!--

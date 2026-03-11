@@ -3,10 +3,11 @@ title: Hoe kan ik formulieren op een Adobe Experience Manager Sites-pagina weerg
 description: Leer hoe u formulieren kunt weergeven op een AEM Sites-pagina.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Stel je voor dat een gebruiker de website van de bank bezoekt op zoek naar een f
 
 De **Onderzoek &amp; van het Registreren** component van het Portaal van Forms staat u toe om vormen op een pagina van Plaatsen te tonen en te maken. Gebruikers kunnen een uitgebreide lijst met formulieren configureren en presenteren op basis van specifieke criteria om aan de organisatorische vereisten te voldoen. Anonieme gebruikers kunnen de pagina Sites bezoeken om de beschikbare formulieren weer te geven en te bladeren. De vermelde vormen kunnen in stijgende of dalende orde worden gesorteerd gebruikend de **Soort door** drop-down optie die in de hoger-juiste hoek van het scherm wordt gevestigd.
 
-![&#x200B; Onderzoek en het pictogram van de Registratie &#x200B;](assets/search-and-lister-component.png)
+![ Onderzoek en het pictogram van de Registratie ](assets/search-and-lister-component.png)
 
 
 ## Formulieren weergeven op de sitepagina
@@ -26,11 +27,11 @@ Om de **Onderzoek &amp; van het Registreren** poortcomponent aan uw pagina van P
 
 1. Open de pagina van AEM Sites op een **geeft** wijze uit.
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
-   ![&#x200B; geef malplaatjebeleid &#x200B;](/help/forms/assets/save-form-as-draft-edit-template.png) uit
+   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png) uit
 
 1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Search & Lister]** checkbox onder de **[Naam van het Project van het Archetype van AEM ] - Forms en Communicatie Portaal**.
 
-   ![&#x200B; de Selectie van het Beleid &#x200B;](/help/forms/assets/search-lister-enable-policy.png)
+   ![ de Selectie van het Beleid ](/help/forms/assets/search-lister-enable-policy.png)
 
 1. Klik op **[!UICONTROL Done]**.
 1. Open nu de AEM Sites-pagina opnieuw in de ontwerpmodus.
@@ -46,17 +47,17 @@ Om de **Onderzoek &amp; van het Registreren** poortcomponent aan uw pagina van P
 
 1. Blader door de beschikbare componenten in het dialoogvenster en selecteer de gewenste component in de lijst. Bijvoorbeeld, selecteer het **Onderzoek en de component van het Registreren** van de lijst om het **Onderzoek &amp; van het Registreertoestel** Forms Portal component toe te voegen.
 
-   ![&#x200B; Onderzoek &amp; component van de Registratie &#x200B;](/help/forms/assets/add-search-lister.png)
+   ![ Onderzoek &amp; component van de Registratie ](/help/forms/assets/add-search-lister.png)
 
 Nu, vorm de eigenschappen van het **Onderzoek en de component van het Registreren**.
 
 ## De eigenschappen van de component Search en Lister begrijpen
 
-U kunt **Onderzoek en 1&rbrace; componenteneigenschappen gemakkelijk aanpassen Lister gebruikend de Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![&#x200B; pictogram &#x200B;](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Search and Lister]** wordt geopend.
+U kunt **Onderzoek en 1} componenteneigenschappen gemakkelijk aanpassen Lister gebruikend de Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Search and Lister]** wordt geopend.
 
 ### Tabblad Weergave
 
-![&#x200B; het Lusje van de Vertoning &#x200B;](/help/forms/assets/search-and-lister-display-tab.png)
+![ het Lusje van de Vertoning ](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. Geef in **[!UICONTROL Title]** de titel op voor de component Zoeken &amp; register. Een indicatieve titel biedt de gebruikers de mogelijkheid snel te zoeken in de formulierlijst.
 1. Selecteer in de lijst **[!UICONTROL Layout]** de indeling die u wilt gebruiken voor de weergave van de formulieren in de kaart- of lijstindeling.
@@ -65,14 +66,14 @@ U kunt **Onderzoek en 1&rbrace; componenteneigenschappen gemakkelijk aanpassen L
 
 ### Tabblad Element
 
-![&#x200B; het lusje van Activa &#x200B;](/help/forms/assets/search-and-lister-asset-tab.png)
+![ het lusje van Activa ](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. Geef op het tabblad **[!UICONTROL Asset Folder]** de locatie op vanwaar de formulieren worden opgehaald en weergegeven op de pagina.
 1. Met de **[!UICONTROL Add another location]** kunt u meerdere maplocaties configureren.
 
 ### Resultaten, tabblad
 
-![&#x200B; het Lusje van de Vertoning &#x200B;](/help/forms/assets/search-and-lister-result-tab.png)
+![ het Lusje van de Vertoning ](/help/forms/assets/search-and-lister-result-tab.png)
 
 Configureer op het tabblad **[!UICONTROL Results]** het maximum aantal formulieren dat per pagina wordt weergegeven. Standaard zijn dit acht formulieren per pagina.
 
@@ -80,7 +81,7 @@ Configureer op het tabblad **[!UICONTROL Results]** het maximum aantal formulier
 
 Om de lijst van vormen te bekijken, gebruik het **Onderzoek &amp; van het Registreren** de Portaalcomponent van Forms. Voorproef de pagina van AEM Sites om de lijst van vormen van de **omslag van Assets** te zien die op het scherm wordt getoond. U kunt ook naar een specifiek formulier zoeken met de zoekbalk.
 
-![&#x200B; Onderzoek en het pictogram van de Registratie &#x200B;](assets/search-and-lister-component.png)
+![ Onderzoek en het pictogram van de Registratie ](assets/search-and-lister-component.png)
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}
@@ -107,7 +108,7 @@ Perform the following steps to configure Unified Storage Connector for AEM Workf
 
 ## Enable Forms Portal Components {#enable-forms-portal-components}
 
-To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=nl-NL#create-proxy-components). 
+To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components). 
 
 Once a portal component is enabled, you can use it in the author instance of your sites page.
 
@@ -191,7 +192,7 @@ You can configure the auto-save feature for an adaptive form as follows:
 
 ## Volgende stappen
 
-In het volgende artikel, laat ons [&#x200B; leren hoe te om vormen als concepten te bewaren en hen op een pagina van Plaatsen te vermelden gebruikend de Concepten &amp; de component van het Portaal van Forms van de Verzending &#x200B;](/help/forms/save-core-component-based-form-as-draft.md).
+In het volgende artikel, laat ons [ leren hoe te om vormen als concepten te bewaren en hen op een pagina van Plaatsen te vermelden gebruikend de Concepten &amp; de component van het Portaal van Forms van de Verzending ](/help/forms/save-core-component-based-form-as-draft.md).
 
 ## Verwante artikelen
 

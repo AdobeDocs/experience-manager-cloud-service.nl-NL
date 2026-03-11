@@ -3,10 +3,11 @@ title: Hoe start u AEM SDK opnieuw?
 description: Aanbevolen procedures voor het opnieuw opstarten van AEM SDK
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Als u de AEM SDK opnieuw start door de Java™-processen te stoppen, kan dit lei
 
 `javax.jcr.RepositoryException: Applying repoinit operation failed despite retry; set loglevel to DEBUG to see all exceptions. Last exception message was: Failed to set ACL (javax.jcr.ValueFormatException: Invalid type: 0) AclLine ALLOW {principals=[forms-xfa-writers], privileges=[jcr:modifyProperties]} restrictions=[rep:glob=[*/jcr:content/*], rep:itemNames=[xfaForm], fd:condition=[xfaForm, 1]]`
 
-![&#x200B; nieuw begin-naam-sdk-fout &#x200B;](/help/forms/assets/restart-sdk-error.png)
+![ nieuw begin-naam-sdk-fout ](/help/forms/assets/restart-sdk-error.png)
 
 ## Oplossing
 

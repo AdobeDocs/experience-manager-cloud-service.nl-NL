@@ -5,18 +5,20 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
 # E-mailsjablonen in Adaptieve Forms
 
-Met Adaptive Forms kunt u e-mailsjablonen voor HTML en normale tekst gebruiken. Met e-mailsjablonen voor HTML kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+Met Adaptive Forms kunt u HTML en gewone e-mailsjablonen gebruiken. Met HTML-e-mailsjablonen kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
 
-![&#x200B; HTML e-mailmalplaatjes &#x200B;](/help/forms/assets/html-email.png)
+![ HTML e-mailmalplaatjes ](/help/forms/assets/html-email.png)
 
 Met dit artikel kunt u e-mailsjablonen configureren en gebruiken in Adaptive Forms. Tegen het einde kunt u het volgende doen:
 
@@ -28,13 +30,13 @@ Met dit artikel kunt u e-mailsjablonen configureren en gebruiken in Adaptive For
 Hier volgt een kort overzicht van de betrokken stappen:
 
 1. Open het adaptieve formulier voor bewerking.
-1. Vorm [&#x200B; verzenden E-mail &#x200B;](/help/forms/configure-submit-action-send-email.md) voorlegt actie.
+1. Vorm [ verzenden E-mail ](/help/forms/configure-submit-action-send-email.md) voorlegt actie.
 1. Selecteer of upload een HTML-sjabloon of voer de e-mailsjabloon handmatig in.
 1. Test uw e-mailconfiguratie.
 
 ## Een HTML-sjabloon configureren voor een adaptief formulier
 
-U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie &#x200B;](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een malplaatje van HTML te vormen:
+U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie ](/help/forms/configure-submit-action-send-email.md). De handeling biedt twee methoden voor het configureren van een HTML-sjabloon:
 
 ### Optie 1: Een bestand selecteren dat de HTML-sjabloon bevat
 
@@ -44,10 +46,10 @@ Voordat u verdergaat, moet u ervoor zorgen dat u de HTML-sjabloon hebt geüpload
 1. Ga naar **Browser van de Inhoud**, selecteer de **Container van de Gids**, en tik het eigenschappen pictogram. Er wordt een dialoogvenster met de titel `Adaptive Form Container` weergegeven.
 1. Ga naar het **lusje van de Verzending** en selecteer **verzenden e-mail** voorlegt actie.
 
-   ![&#x200B; verzend e-mail verzendt actie &#x200B;](/help/forms/assets/send-email-action.png)
+   ![ verzend e-mail verzendt actie ](/help/forms/assets/send-email-action.png)
 
 1. Laat de **externe malplaatje van het Gebruik** optie toe.
-1. Laat de **HTML malplaatje van het Gebruik** optie toe.
+1. Laat de **het malplaatje van HTML van het Gebruik** optie toe.
 1. Klik op het mappictogram voor de optie Extern sjabloonpad en blader naar de gewenste HTML-sjabloon.
 1. Klik **Gedaan** om de configuratie te bewaren.
 
@@ -58,13 +60,13 @@ Uw HTML-sjabloon is nu geconfigureerd voor het adaptieve formulier.
 1. Open het adaptieve formulier voor bewerking.
 1. Ga naar **Browser van de Inhoud**, selecteer de **Container van de Gids**, en tik het eigenschappen pictogram. Er wordt een dialoogvenster met de titel `Adaptive Form Container` weergegeven.
 1. Ga naar het **lusje van de Verzending** en selecteer **verzenden e-mail** voorlegt actie.
-1. Laat de **HTML malplaatje van het Gebruik** optie toe.
-1. Type of deeg direct uw code van HTML in de verstrekte **E-mailMalplaatje** doos.
+1. Laat de **het malplaatje van HTML van het Gebruik** optie toe.
+1. Typ of plak direct uw code van HTML in de verstrekte **doos van het Malplaatje E-mail**.
 
 
 ## Een sjabloon voor normale tekst configureren voor een adaptief formulier
 
-U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie &#x200B;](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een onbewerkte-tekstmalplaatje te vormen:
+U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie ](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een onbewerkte-tekstmalplaatje te vormen:
 
 ### Optie 1: Een bestand selecteren dat de sjabloon bevat
 
@@ -94,9 +96,9 @@ U kunt formuliergegevens in uw e-mailsjablonen opnemen met plaatsaanduidingen. D
 * $ {email}: De waarde van het gebied genoemd &quot;e-mail.&quot;
 * $ {message}: De waarde van het gebied genoemd &quot;bericht.&quot;
 
-### Voorbeeld van HTML-e-mailsjabloon
+### Voorbeeld HTML-e-mailsjabloon
 
-Hier is een voorbeeld van een HTML e-mailsjabloon waarin plaatsaanduidingen voor formuliergegevens worden gebruikt:
+Hier volgt een voorbeeld van een HTML-e-mailsjabloon waarin plaatsaanduidingen voor formuliergegevens worden gebruikt:
 
 ```HTML
     <!DOCTYPE html>
@@ -158,5 +160,5 @@ Hier volgt een voorbeeld van een sjabloon voor normale e-mail:
 * Laat uw sjabloon reageren voor een betere ervaring op mobiele apparaten.
 * Gebruik gereedschappen zoals Litmus of E-mail op zuur om een voorbeeld van uw e-mail te bekijken voor verschillende e-mailclients.
 * Zorg ervoor dat de namen van de plaatsaanduidingen exact overeenkomen met de namen van de formuliervelden.
-* Controleer of er ontbrekende of onjuiste tags voorkomen in uw HTML-sjabloon.
-* Verifieer dat [&#x200B; verzendt e-mail &#x200B;](/help/forms/configure-submit-action-send-email.md) verzendt actie correct wordt gevormd.
+* Controleer op ontbrekende of onjuiste tags in uw HTML-sjabloon.
+* Verifieer dat [ verzendt e-mail ](/help/forms/configure-submit-action-send-email.md) verzendt actie correct wordt gevormd.

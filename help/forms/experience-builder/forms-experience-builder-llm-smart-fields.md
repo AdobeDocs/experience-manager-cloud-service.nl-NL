@@ -5,10 +5,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1480'
 ht-degree: 0%
 
 ---
@@ -230,7 +231,6 @@ Slimme velden werken uitzonderlijk goed met voorwaardelijke regels:
      worden gebaseerd voeg een stadsgebied toe dat de filters die op het geselecteerde land 
      worden gebaseerd een universitair gebied omvatten dat zich op het gekozen gebied van studie 
  aanpast
-
 ### Valideren en aanpassen
 
 Hoewel velden met LLM-ondersteuning uitgebreide gegevens bieden, moet u altijd:
@@ -250,7 +250,6 @@ Velden maken die worden aangepast op basis van andere formulierselecties:
      worden georganiseerd leidt tot een professionele certificatiedropdown die relevante opties toont die op baantitel 
      worden gebaseerd omvatten een stadsgebied dat filters die op geselecteerd land en gebied 
  worden gebaseerd
-
 ### Classificaties op meerdere niveaus
 
 hiërarchische gegevensstructuren maken:
@@ -267,7 +266,6 @@ Combineer LLM-kennis met de gegevens van uw organisatie:
      omvat tot een productgebied leiden dat industrie-standaardcategorieën met uw productcatalogus 
      omvat een plaatsgebied dat geografische gegevens met uw bureauplaatsen 
  samenvoegt
-
 ## Problemen met slimme velden oplossen {#troubleshooting-smart-fields}
 
 ### Gemeenschappelijke problemen en oplossingen

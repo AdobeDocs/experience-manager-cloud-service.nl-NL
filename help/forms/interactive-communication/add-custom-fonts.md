@@ -4,10 +4,11 @@ description: Voeg Aangepaste lettertypen toe in de Interactieve communicatie-edi
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -32,5 +33,5 @@ Met de functie voor aangepaste lettertypen kunt u de vormgeving van uw interacti
 
 >[!NOTE]
 >
-> Voor gedetailleerde configuratiestappen, kunnen de gebruikers de gids [&#x200B; douanedoopvonten van het Gebruik &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) volgen
+> Voor gedetailleerde configuratiestappen, kunnen de gebruikers de gids [ douanedoopvonten van het Gebruik ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) volgen
 >Na de voltooiing van de stappen en het in werking stellen van de pijpleiding, zijn de douanedoopvonten beschikbaar voor gebruik direct in de Interactieve Communicatie Redacteur.

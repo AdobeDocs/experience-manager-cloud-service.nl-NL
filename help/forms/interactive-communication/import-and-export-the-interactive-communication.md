@@ -4,10 +4,11 @@ description: De invoer en de Uitvoer Interactieve Communicatie laat gebruikers t
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -32,11 +33,11 @@ Creeer een Interactieve Communicatie (IC) in één milieu en gebruik het in een 
 
 +++&#x200B;1. Interactieve communicatie exporteren
 
-1.1. Selecteer a [&#x200B; gecreeerd Interactieve Communicatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
+1.1. Selecteer a [ gecreeerd Interactieve Communicatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
 1.2. Klik de **optie van de Download** om het als dossier van het PIT uit te voeren.
 1.3. Het gedownloade dossier van het PIT omvat IC samen met zijn geselecteerde **malplaatje**, **fragmenten**, en **gegevensmodel**.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/downloadic.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/downloadic.png)
 +++
 
 +++&#x200B;2. Interactieve communicatie importeren
@@ -45,11 +46,11 @@ Creeer een Interactieve Communicatie (IC) in één milieu en gebruik het in een 
 2.2. Navigeer aan **Forms > Forms en de Documenten > creëren > Dossier uploadt**.
 2.3. Upload het dossier van het PIT aan **invoer** IC.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/uploadfile.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/uploadfile.png)
 
 2.4. Na het uploaden wordt het IC weergegeven samen met de bijbehorende fragmenten en gegevensmodel.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/importfragment.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/importfragment.png)
 +++
 
 +++&#x200B;3. Fragment importeren en exporteren

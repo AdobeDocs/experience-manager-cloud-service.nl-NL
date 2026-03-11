@@ -4,10 +4,11 @@ description: Dankzij de ondersteuning voor XDP-bewerking in de Interactive Commu
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ De Interactieve Communicatie (IC) Redacteur biedt nu naadloze **steun voor het u
 
 ## Hoe te om Steun XDP het Uitgeven in Interactieve Communicatie Redacteur te gebruiken
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/support-xdp.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/support-xdp.png)
 
 1. Navigeer aan **Forms > Forms &amp; Documenten**.
 

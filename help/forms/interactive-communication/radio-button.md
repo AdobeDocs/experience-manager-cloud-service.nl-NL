@@ -4,10 +4,11 @@ description: Met de component RadioButton in de Interactive Communication Editor
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 0%
 De **component van de Keuzerondje** in de Interactieve Communicatie (IC) redacteur staat auteurs toe om een reeks wederzijds exclusieve keuzen aan gebruikers-betekenis slechts één optie voor te stellen kan tegelijkertijd worden geselecteerd. Dit maakt het ideaal voor gebruiksgevallen zoals ja/neen vragen, geslachtsselectie, beoordelingsniveaus of vooraf gedefinieerde categoriale reacties.
 Keuzerondjes zijn intuïtief, eenvoudig te configureren en kunnen worden gebonden aan back-end gegevensmodellen voor naadloze gegevensvastlegging en -integratie.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/radio.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/radio.png)
 
 ## &#x200B;2. Eigenschappen
 

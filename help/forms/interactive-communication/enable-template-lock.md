@@ -4,10 +4,11 @@ description: Sjabloonvergrendeling in de interactieve communicatie-editor biedt 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Met de functie Sjabloonvergrendeling in de Editor voor interactieve communicatie
 
 Wanneer toegepast, verschijnen de gesloten componenten visueel verschillend en kunnen niet door stroomafwaartse auteurs of contribuanten, afhankelijk van het slottype worden gewijzigd. Deze eigenschap helpt merknormen, gegevensintegriteit, en lay-outuniformiteit over alle afgeleide mededelingen handhaven.
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/template-lock.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. Vergrendeltypen
 
@@ -59,7 +60,7 @@ Wanneer toegepast, kunnen auteurs niet:
 Voer de volgende stappen uit om inhoud- of lay-outsluizen toe te passen in de sjabloon Interactieve communicatie (IC):
 
 1. Uw sjabloon openen
-Open of creeer een Malplaatje, volg de gids [&#x200B; creeer een Interactief Communicatie Malplaatje &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Open of creeer een Malplaatje, volg de gids [ creeer een Interactief Communicatie Malplaatje ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. De component selecteren
 Klik op de component (tekstvak, afbeelding of subformulier) die u wilt beperken.

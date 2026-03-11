@@ -4,12 +4,13 @@ description: Leer om een schema van XML voor een Adaptief Vorm tot stand te bren
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 Wanneer u een adaptief formulier maakt met een XML-schema als formuliermodel, hebt u basiskennis van XML-schema&#39;s nodig. Bovendien wordt aangeraden de volgende inhoud vóór dit artikel te lezen.
 
 * [Een adaptief formulier maken](creating-adaptive-form.md)
-* [&#x200B; schema van XML &#x200B;](https://www.w3.org/TR/xmlschema-2/)
+* [ schema van XML ](https://www.w3.org/TR/xmlschema-2/)
 
 ## Een XML-schema gebruiken als formuliermodel {#using-an-xml-schema-as-form-model}
 
@@ -303,4 +304,4 @@ In een herhaalbaar subformulier moet u het subformulier Voltooien gebruiken. Als
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Schema van JSON van het Ontwerp voor een AanpassingsVorm &#x200B;](/help/forms/adaptive-form-json-schema-form-model.md)
+>* [ Schema van JSON van het Ontwerp voor een AanpassingsVorm ](/help/forms/adaptive-form-json-schema-form-model.md)

@@ -3,10 +3,11 @@ title: Hoe te om Verenigde Schakelaar van de Opslag (USC) voor AEM Forms te vorm
 description: Leer hoe te om Verenigde Schakelaar van de Opslag (USC) voor AEM Forms te beheren. Gebruik de Unified Storage Connector (USC) om AEM Forms te verbinden met externe gegevensopslag.
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ U kunt bijvoorbeeld waarden invullen voor velden in een adaptief formulier en de
 
 ## AEM Workflows verbinden met een Microsoft Azure-opslagserver {#connect-workflows-with-azure}
 
-Creeer een Azure opslagconfiguratie en verwijs naar die configuratie gebruikend de Verenigde Schakelaar van de Opslag (USC). Vervolgens kunt u AEM Workflow-modellen configureren om de gegevensopslag te extern te maken en deze aan te sluiten op een Azure-opslagserver.
+Creeer een de opslagconfiguratie van Azure en verwijs naar die configuratie gebruikend de Verenigde Schakelaar van de Opslag (USC). Vervolgens kunt u AEM Workflowmodellen configureren om de gegevensopslag te extern te maken en deze aan te sluiten op een Azure-opslagserver.
 
 ### [!DNL Azure] opslagconfiguratie maken {#create-azure-storage-configuration}
 
@@ -31,7 +32,7 @@ Voer de volgende stappen uit om een [!DNL Azure] opslagconfiguratie te maken:
 1. Selecteer een map om de configuratie te maken en selecteer **[!UICONTROL Create]** .
 1. Geef een titel voor de configuratie op in het veld **[!UICONTROL Title]** .
 1. Geef de naam van de [!DNL Azure] -opslagaccount op in het veld **[!UICONTROL Azure Storage Account]** .
-1. Geef in het veld **[!UICONTROL Azure Access Key]** de sleutel op voor toegang tot Azure-opslagaccount en selecteer **[!UICONTROL Save]** .
+1. Geef in het veld **[!UICONTROL Azure Access Key]** de sleutel voor toegang tot de Azure-opslagaccount op en selecteer **[!UICONTROL Save]** .
 
 ### Unified Storage Connector (USC) voor AEM Workflows configureren {#configure-unified-storage-connector-workflows}
 
@@ -40,7 +41,7 @@ Voer de volgende stappen uit om Unified Storage Connector (USC) voor AEM Workflo
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]** .
 
 1. Selecteer in de sectie **[!UICONTROL Workflow]** de optie **[!UICONTROL Azure]** in de vervolgkeuzelijst Opslag.
-1. Specificeer de [&#x200B; configuratieweg voor de Azure opslagconfiguratie &#x200B;](#create-azure-storage-configuration) op het **[!UICONTROL Storage Configuration Path]** gebied.
+1. Specificeer de [ configuratiepad voor de de opslagconfiguratie van Azure ](#create-azure-storage-configuration) op het **[!UICONTROL Storage Configuration Path]** gebied.
 1. Selecteer **[!UICONTROL Publish]** en selecteer vervolgens **[!UICONTROL Save]** om de configuratie op te slaan.
 
 ### Een AEM-workflowmodel configureren voor externe gegevensopslag {#configure-workflow-external-data-storage}
@@ -59,19 +60,19 @@ Voer de volgende stappen uit om een AEM Workflowmodel voor externe gegevensopsla
 
 ### Richtlijnen voor AEM-workflows voor externe gegevensopslag {#guidelines-workflows-external-data-storage}
 
-Hieronder volgen de richtlijnen voor het gebruik van AEM Workflows en het opslaan van gegevens naar externe gegevensopslagsystemen, zoals Microsoft Azure-opslagserver:
+Hieronder volgen de richtlijnen voor het gebruik van AEM Workflows en het opslaan van gegevens naar externe gegevensopslag, zoals Microsoft Azure Storage Server:
 
-* Gebruik variabelen om gegevens op te slaan tijdens het definiëren van invoer- en uitvoergegevensbestanden en bijlagen in stappen van het workflowmodel. Selecteer geen opties **[!UICONTROL Relative to Payload]** en **[!UICONTROL Available at an absolute path]** . De **[!UICONTROL Relative to Payload]** en **[!UICONTROL Available at an absolute path]** opties tonen automatisch niet zodra u [&#x200B; een model van het Werkschema van AEM voor externe gegevensopslag &#x200B;](#configure-workflow-external-data-storage) vormt.
+* Gebruik variabelen om gegevens op te slaan tijdens het definiëren van invoer- en uitvoergegevensbestanden en bijlagen in stappen van het workflowmodel. Selecteer geen opties **[!UICONTROL Relative to Payload]** en **[!UICONTROL Available at an absolute path]** . De **[!UICONTROL Relative to Payload]** en **[!UICONTROL Available at an absolute path]** opties tonen automatisch niet zodra u [ een model van het Werkschema van AEM voor externe gegevensopslag ](#configure-workflow-external-data-storage) vormt.
 
-* Gebruik variabelen om gegevensbestanden en bijlagen op te slaan wanneer u een adaptief formulier naar een AEM Workflow verzendt. Selecteer de optie **[!UICONTROL Relative to Payload]** niet als u een adaptief formulier naar een AEM-workflow verzendt. De **[!UICONTROL Relative to Payload]** optie toont automatisch niet zodra u [&#x200B; een model van het Werkschema van AEM voor externe gegevensopslag &#x200B;](#configure-workflow-external-data-storage) vormt.
+* Gebruik variabelen om gegevensbestanden en bijlagen op te slaan wanneer u een adaptief formulier naar een AEM Workflow verzendt. Selecteer de optie **[!UICONTROL Relative to Payload]** niet als u een adaptief formulier naar een AEM-workflow verzendt. De **[!UICONTROL Relative to Payload]** optie toont automatisch niet zodra u [ een model van het Werkschema van AEM voor externe gegevensopslag ](#configure-workflow-external-data-storage) vormt.
 
 * Gebruik geen aangepaste AEM Workflow-stap in een workflowmodel voor het opslaan van gegevens in de CRX DE-opslagruimte.
 
-* Wanneer u [&#x200B; een model van het Werkschema van AEM voor externe gegevensopslag &#x200B;](#configure-workflow-external-data-storage) vormt, creeer geen douanekolommen voor AEM Inbox aangezien de waarden van de douanekolommen niet worden gehaald als het werkpunt in AEM Inbox tot een werkschema behoort dat voor externe opslag duidelijk is.
+* Wanneer u [ een model van het Werkschema van AEM voor externe gegevensopslag ](#configure-workflow-external-data-storage) vormt, creeer geen douanekolommen voor AEM Inbox aangezien de waarden van de douanekolommen niet worden gehaald als het werkpunt in AEM Inbox tot een werkschema behoort dat voor externe opslag duidelijk is.
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; vorm gegevensbronnen voor AEM Forms &#x200B;](/help/forms/configure-data-sources.md)
->* [&#x200B; vorm Azure opslag voor AEM Forms &#x200B;](/help/forms/configure-azure-storage.md)
->* [&#x200B; integreer Microsoft Dynamics 365 &#x200B;](/help/forms/configure-msdynamics.md)
->  [Forms Portal toevoegen aan een AEM Sites-pagina &#x200B;](/help/forms/configure-forms-portal.md)
+>* [ vorm gegevensbronnen voor AEM Forms ](/help/forms/configure-data-sources.md)
+>* [ vorm de opslag van Azure voor AEM Forms ](/help/forms/configure-azure-storage.md)
+>* [ integreer Microsoft Dynamics 365 ](/help/forms/configure-msdynamics.md)
+>  [Forms Portal toevoegen aan een AEM Sites-pagina ](/help/forms/configure-forms-portal.md)

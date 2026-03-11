@@ -4,10 +4,11 @@ description: Met de subformuliercomponent in de Interactive Communication Editor
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ De **component Subform** in de Interactieve Communicatie (IC) redacteur doet die
 
 Subformulieren kunnen zo worden geconfigureerd dat ze in verschillende indelingen lopen, zoals van boven naar beneden of van links naar rechts, waardoor ze ideaal zijn voor complexe formulierontwerpen en herbruikbare secties.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/subform.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/subform.png)
 
 ## &#x200B;2. Eigenschappen
 

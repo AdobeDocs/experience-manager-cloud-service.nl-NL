@@ -4,10 +4,11 @@ description: Met Date Field Object in Interactive Communication Editor kunnen au
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 0%
 
 ## &#x200B;1. Inleiding
 
-De **component van het Gebied van de Datum** &lbrace;in de Interactieve Communicatie (IC) redacteur laat auteurs toe om een op kalender-gebaseerd gebied van de datumselectie in een document op te nemen. Op deze manier kunnen gebruikers gemakkelijk een datum uit een datumkiezer kiezen of deze handmatig invoeren in een vooraf gedefinieerde notatie.
+De **component van het Gebied van de Datum** {in de Interactieve Communicatie (IC) redacteur laat auteurs toe om een op kalender-gebaseerd gebied van de datumselectie in een document op te nemen. Op deze manier kunnen gebruikers gemakkelijk een datum uit een datumkiezer kiezen of deze handmatig invoeren in een vooraf gedefinieerde notatie.
 
 Het datumveld is ideaal voor het vastleggen van geboortedatums, afstellingsschema&#39;s, toepassingsdatums of begin- en einddatums van het beleid. Hierdoor wordt de nauwkeurigheid verbeterd en worden invoerfouten verminderd. Deze ondersteunt opmaak, opmaak en gegevensbinding voor naadloze integratie met gegevensmodellen en back-endsystemen.
 
-![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/date.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/date.png)
 
 ## &#x200B;2. Eigenschappen
 
@@ -134,4 +135,4 @@ Auteurs kunnen het datumveld in lay-outcontainers of subformulieren plaatsen en 
 
 - Niet-relevante datumvelden dynamisch verbergen met behulp van zichtbaarheidsregels.
 
-Het **voorwerp van het Gebied van de Datum** &lbrace;in de Interactieve Communicatie redacteur is een krachtig hulpmiddel om tijd-gevoelige gegevens met nauwkeurigheid en gemak te vangen. Als de vormgeving doordacht is en verbinding maakt met betekenisvolle gegevenspaden, biedt deze ondersteuning voor een naadloze gebruikerservaring en een efficiënte verwerking van op tijd gebaseerde items.
+Het **voorwerp van het Gebied van de Datum** {in de Interactieve Communicatie redacteur is een krachtig hulpmiddel om tijd-gevoelige gegevens met nauwkeurigheid en gemak te vangen. Als de vormgeving doordacht is en verbinding maakt met betekenisvolle gegevenspaden, biedt deze ondersteuning voor een naadloze gebruikerservaring en een efficiënte verwerking van op tijd gebaseerde items.

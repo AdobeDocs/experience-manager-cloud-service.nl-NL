@@ -4,10 +4,11 @@ description: Creeer Regels in Interactieve Communicatie Redacteur staat auteurs 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ De Redacteur van de regel in de Interactieve Communicatie Redacteur staat auteur
 Van eenvoudige zichtbaarheidsinstellingen tot complexe voorwaardelijke logica, regels stellen auteurs in staat om ervaringen te leveren die in real time worden aangepast, waardoor bruikbaarheid, nauwkeurigheid en betrokkenheid worden verbeterd.
 
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/rule-creation.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/rule-creation.png)
 
 
 ## &#x200B;2. Eigenschappen
@@ -59,7 +60,7 @@ Van eenvoudige zichtbaarheidsinstellingen tot complexe voorwaardelijke logica, r
 - **Voorwaardelijke Acties:** bepaal trekkers die aan gebruikersinput of gegevenswaarden, zoals het toelaten/onbruikbaar maken van gebieden, het tonen van berichten, of het vertakken aan verschillende secties antwoorden.
 
 
-![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/rule-creation1.png)
+![ vinden IC Doc ](/help/forms/interactive-communication/assets/rule-creation1.png)
 
 
 ## &#x200B;3. Gebruik

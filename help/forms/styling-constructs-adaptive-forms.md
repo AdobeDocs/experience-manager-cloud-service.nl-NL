@@ -3,13 +3,14 @@ title: Hoe kan ik de vormgeving van adaptieve formulieren aanpassen?
 description: Gebruik het LESS-framework voor Adaptive Forms om de weergave van Adaptive Forms aan te passen.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 0%
+source-wordcount: '2313'
+ht-degree: 1%
 
 ---
-
 
 # Stijlconstructies voor adaptieve Forms{#styling-constructs-for-adaptive-forms}
 
@@ -19,7 +20,7 @@ Kennis van CSS en het LESS-framework.
 
 ## Wat kan worden aangepast {#what-can-be-customized}
 
-Het artikel bevat een lijst met algemeen beschikbare CSS-klassen van Adaptive Forms. Met deze klassen kunt u diverse componenten van een adaptief formulier opmaken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze het stileren constructs om stijlen (het gebruiken van CSS of Minder) tot stand te brengen slechts wanneer u componenten niet kunt stileren gebruikend [&#x200B; themaredacteur &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/themes.html).
+Het artikel bevat een lijst met algemeen beschikbare CSS-klassen van Adaptive Forms. Met deze klassen kunt u diverse componenten van een adaptief formulier opmaken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze het stileren constructs om stijlen (het gebruiken van CSS of Minder) tot stand te brengen slechts wanneer u componenten niet kunt stileren gebruikend [ themaredacteur ](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Stijlen aanpassen in Adaptive Forms {#customizing-styles-in-adaptive-forms}
 
@@ -134,7 +135,7 @@ Velden zijn labels, widgets, Help-beschrijving (zowel lange als korte beschrijvi
 
 ## Labelstijl {#label-styling}
 
-Het HTML element **etiket** dat voor het gebied wordt gebruikt omvat linker **klassen** of **bovenkant** afhankelijk van of het etiket bij de bovenkant of de linkerzijde is.
+Het element van HTML **etiket** dat voor het gebied wordt gebruikt omvat linker **klassen** of **bovenkant** afhankelijk van of het etiket bij de bovenkant of de linkerzijde is.
 
 <table>
  <tbody>
@@ -352,7 +353,7 @@ Knoppen zijn ook widgets. Hun opmaak wijkt echter enigszins af van die van de wi
 * knop
 * element with class.button
 
-HTML code voor knop:
+HTML-code voor knop:
 
 `<button type="button" >`
 
@@ -555,7 +556,7 @@ Met de widget Bestandsbijlage van Adaptive Forms kunt u bestanden uploaden. U ku
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
-   <td><p>Kleur voor het voorvertoningspictogram (Bootstrap-pictogram) in de widget</p> </td>
+   <td><p>Kleur voor het pictogram Voorvertoning (Bootstrap-pictogram) in de widget</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
@@ -593,7 +594,7 @@ Er zijn vier typen navigatortabs. Deze omvatten lusjes op de linkerzijde, bovenk
  </tbody>
 </table>
 
-Hieronder ziet u de HTML-code voor het tabnavigatorelement (vergelijkbaar met de tabbladen):
+Hieronder ziet u de HTML-code voor het element tabnavigator (vergelijkbaar met de tabbladen):
 
 `<li>`
 
@@ -1124,4 +1125,3 @@ Het **Eenvoudige inschrijving** thema bij /etc/clientlibs/fd/af/guidetheme/simpl
   </tr>
  </tbody>
 </table>
-

@@ -3,10 +3,11 @@ title: Ondersteunde HTML-opmaaktags in Verzending PDF (voorheen Document of Reco
 description: Referentiegids voor HTML-opmaaktags die worden ondersteund bij het genereren van een Verzending PDF (voorheen Document of Record), inclusief het rendergedrag en toegankelijkheidsoverwegingen.
 feature: Adaptive Forms
 role: Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ U zou vertrouwd met moeten zijn:
 
 ### Overwegingen
 
-De PDF voor verzending (voorheen Document of Record) kan een gelabelde PDF zijn, die de toegankelijkheid en juiste structuur voor ondersteunende hulpmiddelen helpt te garanderen. Om geëtiketteerde output van PDF toe te laten, [&#x200B; plaats het bezit XCI `config/present/pdf/tagged` aan `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nadat u de PDF hebt gegenereerd, is het belangrijk te controleren of toegankelijkheidstags correct zijn toegepast. U kunt [&#x200B; Adobe Acrobat gebruiken om toegankelijkheidstags &#x200B;](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) te controleren en uw document te verzekeren voldoet aan toegankelijkheidsnormen.
+De PDF voor verzending (voorheen Document of Record) kan een gelabelde PDF zijn, die de toegankelijkheid en juiste structuur voor ondersteunende hulpmiddelen helpt te garanderen. Om geëtiketteerde output van PDF toe te laten, [ plaats het bezit XCI `config/present/pdf/tagged` aan `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nadat u de PDF hebt gegenereerd, is het belangrijk te controleren of toegankelijkheidstags correct zijn toegepast. U kunt [ Adobe Acrobat gebruiken om toegankelijkheidstags ](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) te controleren en uw document te verzekeren voldoet aan toegankelijkheidsnormen.
 
 ### Nieuwe functies
 

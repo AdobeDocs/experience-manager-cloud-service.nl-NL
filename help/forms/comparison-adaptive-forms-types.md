@@ -5,10 +5,11 @@ keywords: vergelijking van adaptieve formulieren, kerncomponenten, basiscomponen
 role: Architect, Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 37799555babb15809409ec5cda8a1c46ceff24f2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1959'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ De Componenten van de kern gebruiken een gestandaardiseerde, modulaire component
 - **het Stijlen Methodologie**: BEM (de Modifier van het Element van het Blok) CSS overeenkomsten
 - **Opslag van de Inhoud**: Opslag JCR met gestructureerde inhoudsknopen
 - **teruggevend**: Server-kant teruggevend in AEM met facultatieve cliënt-zij hoofdloze teruggeven
-- **Source**: Open-source (beschikbaar op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-core-forms-components))
+- **Source**: Open-source (beschikbaar op [ GitHub ](https://github.com/adobe/aem-core-forms-components))
 
 ### Rendermodel
 
@@ -65,7 +66,7 @@ De Componenten van de kern steunen veelvoudige het teruggeven modellen:
 | **Onderdelen** | 30 gestandaardiseerde componenten, waaronder Tekstvak, Numeriek vak, Datumkiezer, Vervolgkeuzelijst, Selectievakjesgroep, Keuzerondje, Bestandsbijlage, Wizard, Accordeon, Horizontale/Verticale tabbladen |
 | **Modellen van de Vorm** | JSON-schema (v4 en 2020-12), formuliergegevensmodel (FDM), XDP/XFA-sjablonen (beperkt) |
 | **Motor van Regels** | Visuele regelredacteur met voorwaardelijke logica, bevestiging, de dienstaanroeping, douanefuncties |
-| **legt Acties** voor | REST-eindpunt, e-mail, AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion, Form Data Model |
+| **legt Acties** voor | REST-eindpunt, e-mail, AEM-workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion, Form Data Model |
 | **pre-fill** | Prefill-service formuliergegevensmodel, aangepaste Prefill-services |
 | **CAPTCHA** | reCAPTCHA, hCaptcha, Turnstile |
 | **Document van Verslag** | PDF genereren met aangepaste of OTB-sjablonen |
@@ -177,7 +178,7 @@ EDS Forms ondersteunt twee ontwerpmethoden:
 - Formuliergegevensmodel
 - AEM Workflow
 - SharePoint/OneDrive
-- Azure Blob Storage
+- Azure Blob-opslag
 - Microsoft Power Automate
 - Adobe Workfront Fusion
 - Adobe Marketo Engage
@@ -415,4 +416,4 @@ De volgende gebieden hebben onvolledige of dubbelzinnige documentatie:
 - [Aan de slag met de universele editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
 - [Zelfstudie over ontwerpen op basis van documenten](/help/edge/docs/forms/tutorial.md)
 - [Hulpprogramma voor migratie](/help/forms/migration-utility-tool-for-af-core-components.md)
-- [&#x200B; de Componenten van de Kern van AEM Forms op GitHub &#x200B;](https://github.com/adobe/aem-core-forms-components)
+- [ de Componenten van de Kern van AEM Forms op GitHub ](https://github.com/adobe/aem-core-forms-components)

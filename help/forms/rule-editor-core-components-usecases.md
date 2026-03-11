@@ -4,10 +4,11 @@ description: Het artikel schetst diverse gebruiksgevallen voor een regelredacteu
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e10451553692b6ad957421783e176409b36b642b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Nu, laten wij de verschillende implementaties voor een regelredacteur bespreken.
 
 ## Stel focus in op een ander deelvenster wanneer u op een knop klikt als het eerste deelvenster geldig is
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [&#x200B; pre-vrijgavekanaal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Met de regeleditor kunt u de lay-outs van een deelvenster valideren, zoals Horizontale tabbladen, Verticale tabbladen, Accordeons of Wizard wanneer u op een knop klikt en de focus instelt op een formulierobject in een ander deelvenster. U kunt deze functionaliteit gebruiken om de navigatie en gebruikerservaring van formulieren te verbeteren.
 
@@ -27,7 +28,7 @@ Stel u een toepassingsformulier met meerdere stappen voor met een wizardindeling
 
 U kunt een regel maken op de knop `Next` om het eerste deelvenster te valideren:
 
-![&#x200B; Regel voor Volgende knoop &#x200B;](/help/forms/assets/next-rule.png){width=50%}
+![ Regel voor Volgende knoop ](/help/forms/assets/next-rule.png){width=50%}
 
 Wanneer u de **Volgende** knoop klikt, wordt het **Persoonlijke paneel van de Informatie** bevestigd. Als de ingevoerde details correct zijn, verschuift de nadruk naar het **paneel van de Veiligheid van de Rekening**; anders, veroorzaakt een foutenmelding u om de ontbrekende details in te vullen.
 
@@ -44,15 +45,15 @@ Elk deelvenster bevat relevante velden en opties voor het bijwerken van specifie
 
 Met de regel `Navigate among the panels` kunt u navigatieregels maken voor knoppen waarmee tussen verschillende deelvensters kan worden geschakeld.  Selecteer het kenmerk `Shift focus to the next item` om de focus naar het volgende deelvenster in de layout te verplaatsen.
 
-![&#x200B; Volgende paneelregel &#x200B;](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+![ Volgende paneelregel ](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
 
 Wanneer op de knop `Next` wordt geklikt, gaat de focus naar het volgende deelvenster in de layout.
 
-![&#x200B; navigeer in paneel gebruikend Volgende knoop &#x200B;](/help/forms/assets/navigate-in-panel.gif)
+![ navigeer in paneel gebruikend Volgende knoop ](/help/forms/assets/navigate-in-panel.gif)
 
 Op dezelfde manier kunt u een regel maken voor de knop `Previous` om de focus naar het vorige deelvenster te verplaatsen.
 
-![&#x200B; Vorige paneelregel &#x200B;](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
+![ Vorige paneelregel ](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## Complexe berekeningen stroomlijnen in herhaalbare deelvensters met functies
 
@@ -60,21 +61,21 @@ De regelredacteur staat u toe om uit-van-de-doos functies zoals Som, Min, Max, e
 
 Stel u een formulier voor met een herhaalbaar deelvenster, waarin elke deelvensterinstantie informatie verzamelt over de gedeclareerde waarde van elementen.
 
-![&#x200B; Herhaalbare vorm &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+![ Herhaalbare vorm ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
 
 Met de functie `Sum` kunt u automatisch de waarde van de totale elementen in alle deelvensters berekenen, zodat handmatige berekeningen overbodig zijn en de kans op fouten kleiner wordt.
 
-![&#x200B; Steun voor herhaalbare paneelgebieden in functies OOTB &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+![ Steun voor herhaalbare paneelgebieden in functies OOTB ](/help/forms/assets/ootb-function-support-repeatable-panel.png)
 
 Wanneer u een formulier invult en exemplaren toevoegt om de elementwaarden te declareren, berekent de knop `Calculate Asset Value` de totale som van alle gedeclareerde elementwaarden en wordt het resultaat in het totaal weergegeven in `assetvalue` textbox.
 
-![&#x200B; Steun voor herhaalbare paneelgebieden in functies OOTB &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+![ Steun voor herhaalbare paneelgebieden in functies OOTB ](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 >[!NOTE]
 >
 > Als de waarde van het veld van het herhaalbare deelvenster wordt doorgegeven aan een functie die geen array accepteert, wordt de veldwaarde van de laatste instantie van het herhaalbare deelvenster doorgegeven aan de functie.
 
-Dit is slechts één voorbeeld! Onderzoek de beschikbare [&#x200B; functies &#x200B;](#b-form-objects-and-functions-br) om werkschema&#39;s te vereenvoudigen en gegevensnauwkeurigheid binnen uw vormen te verbeteren.
+Dit is slechts één voorbeeld! Onderzoek de beschikbare [ functies ](#b-form-objects-and-functions-br) om werkschema&#39;s te vereenvoudigen en gegevensnauwkeurigheid binnen uw vormen te verbeteren.
 
 ## Geneste expressies {#nestedexpressions}
 
@@ -82,11 +83,11 @@ De redacteur van de regel laat u veelvoudige EN en OF exploitanten gebruiken om 
 
 Het volgende is een voorbeeld van een genestelde regel die een bericht aan de gebruiker over geschiktheid voor de bewaarneming van een kind toont wanneer de vereiste voorwaarden worden voldaan.
 
-![&#x200B; Complexe uitdrukking &#x200B;](assets/complexexpression.png)
+![ Complexe uitdrukking ](assets/complexexpression.png)
 
-U kunt ook voorwaarden slepen en neerzetten in een regel om deze te bewerken. Selecteer en beweegt over het handvat ( ![&#x200B; handvat &#x200B;](assets/drag-handle.svg)) vóór een voorwaarde. Zodra de aanwijzer verandert in het handsymbool zoals hieronder wordt weergegeven, sleept u de voorwaarde en zet u deze neer op een willekeurige plaats binnen de lijn. De regelstructuur verandert.
+U kunt ook voorwaarden slepen en neerzetten in een regel om deze te bewerken. Selecteer en beweegt over het handvat ( ![ handvat ](assets/drag-handle.svg)) vóór een voorwaarde. Zodra de aanwijzer verandert in het handsymbool zoals hieronder wordt weergegeven, sleept u de voorwaarde en zet u deze neer op een willekeurige plaats binnen de lijn. De regelstructuur verandert.
 
-![&#x200B; belemmering-en-daling &#x200B;](assets/drag-and-drop.png)
+![ belemmering-en-daling ](assets/drag-and-drop.png)
 
 ## Datumexpressievoorwaarden {#dateexpression}
 
@@ -96,11 +97,11 @@ Het volgende is een voorbeeldvoorwaarde die een statisch tekstvoorwerp toont als
 
 Wanneer de hypotheekdatum van het onroerend goed, zoals door de gebruiker ingevuld, in het verleden ligt, geeft het Adaptief formulier een toelichting op de berekening van het inkomen. In de volgende regel wordt de datum die door de gebruiker is ingevuld, vergeleken met de huidige datum en als de datum die door de gebruiker is ingevuld eerder is dan de huidige datum, wordt in het formulier het tekstbericht (Income genoemd) weergegeven.
 
-![&#x200B; de uitdrukkingsvoorwaarde van de Datum &#x200B;](assets/dateexpressioncondition.png)
+![ de uitdrukkingsvoorwaarde van de Datum ](assets/dateexpressioncondition.png)
 
 Wanneer de datum waarop deze is ingevuld, eerder is dan de huidige datum, wordt het tekstbericht (Inkomsten) als volgt weergegeven:
 
-![&#x200B; Voldoet de uitdrukkingsvoorwaarde van de Datum &#x200B;](assets/dateexpressionconditionmet.png)
+![ Voldoet de uitdrukkingsvoorwaarde van de Datum ](assets/dateexpressionconditionmet.png)
 
 ## Aantal vergelijkingsvoorwaarden {#number-comparison-conditions}
 
@@ -108,11 +109,11 @@ De redacteur van de regel laat u voorwaarden tot stand brengen die twee aantalle
 
 Na is een voorbeeldvoorwaarde die een statisch tekstvoorwerp toont als het aantal maanden een aanvrager op huidige adres minder dan 36 blijft.
 
-![&#x200B; de vergelijkingsvoorwaarde van het Aantal &#x200B;](assets/numbercomparisoncondition.png)
+![ de vergelijkingsvoorwaarde van het Aantal ](assets/numbercomparisoncondition.png)
 
 Wanneer de gebruiker aangeeft minder dan 36 maanden op het huidige woonadres te wonen, wordt in het formulier gemeld dat meer bewijs van verblijf kan worden aangevraagd.
 
-![&#x200B; Meer gevraagde proef &#x200B;](assets/additionalproofrequested.png)
+![ Meer gevraagde proef ](assets/additionalproofrequested.png)
 
 <!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
@@ -126,7 +127,7 @@ Bekijk een webservice `GetInterestRates` die het bedrag van de lening, de loopti
 
 De volgende regel toont hoe u de Invoke de dienstactie vormt om het voorbeeldscenario te verwezenlijken.
 
-![&#x200B; voorbeeld-invoke-services &#x200B;](assets/example-invoke-services.png)
+![ voorbeeld-invoke-services ](assets/example-invoke-services.png)
 
 >[!NOTE]
 >
@@ -142,7 +143,7 @@ In een aanvraagformulier voor een lening wilt u vastleggen of de aanvrager van d
 
 Wanneer u wanneer regel op het radioknoop schrijft om dit gedrag uit te voeren, verschijnt de regel als volgt in de visuele regelredacteur.
 
-![&#x200B; wanneer-regel-voorbeeld &#x200B;](assets/when-rule-example.png)
+![ wanneer-regel-voorbeeld ](assets/when-rule-example.png)
 
 In de voorbeeldregel, is de verklaring in wanneer sectie de voorwaarde is, die wanneer Waar terugkeert, de acties uitvoert die in de Dan sectie worden gespecificeerd.
 
@@ -160,19 +161,19 @@ In een inkooporderformulier hebt u de volgende tabel waarin gebruikers hun beste
 * De titel van de cel in de kolom Product Quantity van de herhaalbare rij is Quantity. De elementnaam voor deze cel is `productquantity` .
 * De tweede rij in de tabel is niet-herhaalbaar en de titel van de cel in de kolom Hoeveelheid product in deze rij is Totale hoeveelheid.
 
-![&#x200B; voorbeeld-functie-lijst &#x200B;](assets/example-function-table.png)
+![ voorbeeld-functie-lijst ](assets/example-function-table.png)
 
 **A.** Row1 **B.** Hoeveelheid **C.** Totale Hoeveelheid
 
 Nu, wilt u gespecificeerde hoeveelheden in de kolom van de Hoeveelheid van het Product voor alle producten toevoegen en de som in de Totale cel van de Hoeveelheid tonen. U kunt deze som bereiken door een Set Waarde van regel op de Totale cel van de Hoeveelheid te schrijven zoals hieronder getoond.
 
-![&#x200B; voorbeeld-functie-output &#x200B;](assets/example-function-output.png)
+![ voorbeeld-functie-output ](assets/example-function-output.png)
 
 ### Een veldwaarde valideren met expressie {#validating-a-field-value-using-expression}
 
 In het inkooporderformulier dat in het vorige voorbeeld wordt beschreven, wilt u de gebruiker beperken om meer dan één hoeveelheid van een product te bestellen waarvan de prijs meer dan 10000 bedraagt. Voor deze validatie kunt u een validatieregel schrijven, zoals hieronder wordt weergegeven.
 
-![&#x200B; voorbeeld-validate &#x200B;](assets/example-validate.png)
+![ voorbeeld-validate ](assets/example-validate.png)
 
 ## Zie ook
 

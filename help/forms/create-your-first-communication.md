@@ -5,13 +5,14 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
+exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
-
 
 # Maak uw eerste interactieve communicatie
 
@@ -54,7 +55,7 @@ De anatomie bevat gegevens met de volgende invoermodi:
 
 ## Stap 2: Een formuliergegevensmodel maken
 
-Met een formuliergegevensmodel kunt u een interactieve communicatie verbinden met verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful-webservices, SOAP-gebaseerde webservices, OData-services en relationele databases. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Voor meer informatie over het model van vormgegevens, zie [&#x200B; de Integratie van Gegevens van AEM Forms &#x200B;](/help/forms/data-integration.md).
+Met een formuliergegevensmodel kunt u een interactieve communicatie verbinden met verschillende gegevensbronnen. Bijvoorbeeld AEM-gebruikersprofiel, RESTful-webservices, op SOAP gebaseerde webservices, OData-services en relationele databases. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Voor meer informatie over het model van vormgegevens, zie [ de Integratie van Gegevens van AEM Forms ](/help/forms/data-integration.md).
 
 ## Stap 3: fragmenten maken
 
@@ -70,7 +71,7 @@ De interactieve Communicatie redacteur verstrekt veelvoudige malplaatjes OOTB. U
 
 Zodra u alle bouwstenen zoals het model van vormgegevens, documentfragmenten, en malplaatjes voor de Webversie creeert, kunt u beginnen tot een Interactieve Mededeling te leiden. Een interactieve communicatie beginnen maken:
 
-1. Meld u aan bij uw as a Cloud Service AEM Forms-omgeving.
+1. Meld u aan bij uw AEM Forms as a Cloud Service-omgeving.
 1. Ga naar Forms > Forms &amp; Documents
 1. Klik **creëren** en selecteren **Communicatie Document**. Er wordt een configuratiescherm weergegeven waarin u de volgende opties kunt instellen:
 

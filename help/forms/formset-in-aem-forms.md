@@ -6,14 +6,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2809'
 ht-degree: 0%
 
 ---
@@ -37,7 +38,7 @@ Formuliersets worden ook ondersteund in de AEM Forms-app, zodat uw medewerkers i
 
 U kunt verschillende XDP&#39;s of formuliersjablonen, gemaakt met Designer, koppelen aan een formulierset. Formuliersets kunnen vervolgens selectief worden gebruikt om de XDP&#39;s te renderen op basis van waarden die de gebruikers hebben ingevoerd in eerste formulieren en hun profielen.
 
-Het gebruikersinterface van AEM Forms van het gebruik [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) om al uw vormen, vormreeksen, en verwante activa te beheren.
+Het gebruikersinterface van AEM Forms van het gebruik [ ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) om al uw vormen, vormreeksen, en verwante activa te beheren.
 
 ### Een formulierset maken {#create-a-form-set}
 
@@ -56,7 +57,7 @@ Ga als volgt te werk om een formulierset te maken:
    * formsetPath: Het pad van de formset in CRXDE, die is verzonden.
    * HTML-renderprofiel: u kunt bepaalde opties configureren, zoals zwevende velden, bijlagen en ontwerpondersteuning (voor zelfstandige uitvoering van een formulierset), om de weergave, het gedrag en de interacties van de formulierset aan te passen. U kunt het bestaande profiel aanpassen of uitbreiden om de instellingen van HTML-formulierprofielen te wijzigen.
 
-   ![&#x200B; Reeks van de Vorm: voeg eigenschappen &#x200B;](assets/createformset1.png) toe
+   ![ Reeks van de Vorm: voeg eigenschappen ](assets/createformset1.png) toe
 
 1. In het scherm Formulier selecteren worden de beschikbare XDP-formulieren of XDP-bestanden weergegeven. Zoek en selecteer de formulieren die u in de formulierset wilt opnemen en klik vervolgens op Toevoegen aan formulierset. Zoek zo nodig nogmaals naar formulieren die u wilt toevoegen. Nadat u alle formulieren aan de formulierset hebt toegevoegd, klikt u op Volgende.
 
@@ -68,7 +69,7 @@ Ga als volgt te werk om een formulierset te maken:
 
    * Formuliervolgorde: sleep de formulieren om ze opnieuw te ordenen. De formuliervolgorde definieert de volgorde waarin formulieren aan de eindgebruiker worden weergegeven in de AEM Forms-app en zelfstandige uitvoering.
    * Formulierid: geeft een unieke identiteit op voor de formulieren die moeten worden gebruikt in geschiktheidsexpressies.
-   * Gegevensbasis: voor elk formulier in een formulierset kan de auteur de XPATH configureren waar de gegevens van dat formulier zich in verzonden XML bevinden. De standaardwaarde is /. Als alle formulieren in een formulierset zijn gebonden met een schema en hetzelfde XML-schema delen, kunt u deze waarde wijzigen. Het wordt aanbevolen dat voor elk veld in het formulier de juiste gegevensbinding is opgegeven in de XDP. Als twee velden in twee verschillende formulieren dezelfde gegevensbinding hebben, worden in het tweede formulier voorgevulde waarden uit het eerste formulier weergegeven. Bind twee subformulieren met dezelfde interne inhoud niet aan hetzelfde XML-knooppunt. Voor meer informatie ziet de structuur van XML van vormreeks, [&#x200B; vooraf ingevulde XML voor de reeks van de Vorm &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Gegevensbasis: voor elk formulier in een formulierset kan de auteur de XPATH configureren waar de gegevens van dat formulier zich in verzonden XML bevinden. De standaardwaarde is /. Als alle formulieren in een formulierset zijn gebonden met een schema en hetzelfde XML-schema delen, kunt u deze waarde wijzigen. Het wordt aanbevolen dat voor elk veld in het formulier de juiste gegevensbinding is opgegeven in de XDP. Als twee velden in twee verschillende formulieren dezelfde gegevensbinding hebben, worden in het tweede formulier voorgevulde waarden uit het eerste formulier weergegeven. Bind twee subformulieren met dezelfde interne inhoud niet aan hetzelfde XML-knooppunt. Voor meer informatie ziet de structuur van XML van vormreeks, [ vooraf ingevulde XML voor de reeks van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
    * Beleenbaarheidsuitdrukking: geeft een JavaScript-expressie op die een Booleaanse waarde evalueert en aangeeft of een formulier in een formulierset in aanmerking komt voor invulling. Indien onwaar, wordt de gebruiker niet gevraagd of zelfs getoond het te vullen formulier. De expressie is doorgaans gebaseerd op de waarden van de velden die vóór dit formulier zijn vastgelegd. Expressies bevatten ook aanroepen van de formulierset-API fs.valueOf om de waarden te extraheren die de gebruiker heeft ingevuld in een veld van een formulierset:
 
    *fs.valueOf (&lt;Form Identifier>, &lt;fieldSom expression>) > &lt;value>*
@@ -77,7 +78,7 @@ Ga als volgt te werk om een formulierset te maken:
 
    Bovendien kan de auteur ook verkiezen om een vorm uit de vormreeks te verwijderen gebruikend het pictogram van de Schrapping aanwezig bij de rechterhoek van elke rij of een andere reeks vormen toe te voegen gebruikend het &quot;**+**&quot;pictogram in de toolbar. Dit pictogram &#39;**+**&#39; stuurt de gebruiker terug naar de vorige stap in de wizard, die werd gebruikt om &#39;Formulier(s) selecteren&#39;. De bestaande selecties blijven behouden en eventuele extra selecties moeten aan de formulierset worden toegevoegd met het pictogram Toevoegen aan formulierset op die pagina.
 
-   ![&#x200B; Reeks van de Vorm: Vorm (s) vormen &#x200B;](assets/createformset2.png)
+   ![ Reeks van de Vorm: Vorm (s) vormen ](assets/createformset2.png)
 
    >[!NOTE]
    >
@@ -97,14 +98,14 @@ Nadat een formulierset is gemaakt, kunt u de volgende handelingen op die formuli
 * Voorvertoning: Voorvertoning biedt twee opties: Voorvertonen als HTML (zonder gegevens) en aangepaste voorvertoning met voorbeeldgegevens.
 * Eigenschappen van weergave/bewerking: u kunt de eigenschappen van metagegevens van een geselecteerde formulierset weergeven/bewerken.
 
-![&#x200B; createformset3 &#x200B;](assets/createformset3.png)
+![ createformset3 ](assets/createformset3.png)
 
 ### Een formulierset bewerken {#edit-a-form-set}
 
 Ga als volgt te werk om een formulierset te bewerken:
 
 1. Selecteer Forms > Forms en Documenten.
-1. Zoek de formulierset die u wilt bewerken. Beweeg over het en selecteer uitgeven ( ![&#x200B; editicon &#x200B;](assets/editicon.png)).
+1. Zoek de formulierset die u wilt bewerken. Beweeg over het en selecteer uitgeven ( ![ editicon ](assets/editicon.png)).
 1. Op de pagina Formulier(s) configureren kunt u het volgende bewerken:
 
    * Formuliervolgorde
@@ -122,11 +123,11 @@ Nadat u een formulierset hebt gemaakt met de gebruikersinterface van AEM Forms M
 
 1. Wanneer het ontwerpen van een proces, onder de Presentatie &amp; sectie van Gegevens van Assign Taak/Punt van het Begin, uitgezocht **gebruik een activa van CRX**. De CRX Asset-browser wordt weergegeven.
 
-   ![&#x200B; Ontwerp een proces: gebruik CRX activa &#x200B;](assets/formsetinprocessmgmt1.png)
+   ![ Ontwerp een proces: gebruik CRX activa ](assets/formsetinprocessmgmt1.png)
 
 1. Selecteer een formulierset om de formulierset te filteren in de AEM-gegevensopslagruimte (CRX).
 
-   ![&#x200B; Ontwerp een proces: Selecteer de dialoog van de Activa van de Vorm &#x200B;](assets/formsetinprocessmgmt2.png)
+   ![ Ontwerp een proces: Selecteer de dialoog van de Activa van de Vorm ](assets/formsetinprocessmgmt2.png)
 
 1. Selecteert een formulierset en klik op OK.
 

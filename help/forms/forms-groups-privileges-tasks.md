@@ -3,11 +3,12 @@ title: Welke gebruikersgroepen zijn beschikbaar uit de doos in AEM Forms as a Cl
 description: Lijst van uit de doos gebruikersgroepen en toestemmingen die aan elke groep worden toegewezen
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '213'
+ht-degree: 3%
 
 ---
 
@@ -15,10 +16,10 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-U kunt [&#x200B; groepen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=nl-NL#accessing) tot stand brengen en beleid en [&#x200B; gebruikers &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=nl-NL#accessing) aan de groepen toewijzen. Dit beleid controleert toestemmingen van de gebruikers die deel van de groep uitmaken.
+U kunt [ groepen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) tot stand brengen en beleid en [ gebruikers ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) aan de groepen toewijzen. Dit beleid controleert toestemmingen van de gebruikers die deel van de groep uitmaken.
 
 Nadat u [!DNL AEM Forms] as a Cloud Service hebt ingesteld, zijn de groepen in de onderstaande tabel, zoals [!DNL forms-users] en gebruikers die het formulierbeheer gebruiken, automatisch beschikbaar voor toewijzing:
 

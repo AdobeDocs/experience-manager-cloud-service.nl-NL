@@ -4,10 +4,11 @@ description: Gebruikers kunnen een voorbeeld van een formulier bekijken voordat 
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="van toepassing op AEM Forms)."
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
   </tr>-->
   <tr>
    <td>PDF-formulier</td>
-   <td>PDF voorproef en Voorproef met Gegevens <br /> </td>
+   <td>PDF-voorvertoning en -voorvertoning met gegevens <br /> </td>
   </tr>
   <tr>
    <td>Adaptief formulier</td>
@@ -49,11 +50,11 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
 
 ## Een voorbeeld van een formulier bekijken {#previewing-a-form-1}
 
-1. Selecteer activa die u wilt voorproef, en klik Voorproef ![&#x200B; aem6forms_preview &#x200B;](assets/aem6forms_preview.png) in de actietoolbar.
+1. Selecteer activa die u wilt voorproef, en klik Voorproef ![ aem6forms_preview ](assets/aem6forms_preview.png) in de actietoolbar.
 
    >[!NOTE]
    >
-   >Als u een element wilt selecteren, schakelt u over naar de lijstweergave in de standaardkaartweergave. Klik ![&#x200B; aem6forms_viewlist &#x200B;](assets/aem6forms_viewlist.png) of ![&#x200B; aem6forms_viewcard &#x200B;](assets/aem6forms_viewcard.png) om meningen te schakelen.
+   >Als u een element wilt selecteren, schakelt u over naar de lijstweergave in de standaardkaartweergave. Klik ![ aem6forms_viewlist ](assets/aem6forms_viewlist.png) of ![ aem6forms_viewcard ](assets/aem6forms_viewcard.png) om meningen te schakelen.
 
 1. Klik op Voorvertoning om de mogelijke voorvertoningsopties weer te geven die van toepassing zijn op het geselecteerde elementtype. Klik op de gewenste optie om het geselecteerde element op een nieuw tabblad weer te geven.
 
@@ -67,5 +68,5 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
 
 Wanneer u **Voorproef met Gegevens** selecteert, kunt u zien hoe de vorm met echte gegevens ingegaan in het kijkt. Met de optie Voorvertonen met gegevens kunt u een XML uploaden die voorbeeldgebruikersgegevens bevat. De voorbeeldgebruikersgegevens worden gebruikt om het voorbeeldformulier in de door u gekozen indeling in te vullen.
 
-1. Selecteer een activa, klik Voorproef ![&#x200B; aem6forms_preview &#x200B;](assets/aem6forms_preview.png), en selecteer **Voorproef met Gegevens**.
+1. Selecteer een activa, klik Voorproef ![ aem6forms_preview ](assets/aem6forms_preview.png), en selecteer **Voorproef met Gegevens**.
 1. Geef in het dialoogvenster Formulier voorvertonen de formuliergegevens op als een XML-bestand. Klik op Voorbeeld om het formulier te genereren met de samengevoegde gegevens van XML.
