@@ -18,15 +18,15 @@ Dit zijn de opmerkingen bij de release van 12 maart 2026 van de Universal Editor
 
 >[!TIP]
 >
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* De componenten kunnen nu via het [ contextmenu ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) van containers worden toegevoegd.
+* De componenten kunnen nu via het [&#x200B; contextmenu &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) van containers worden toegevoegd.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
