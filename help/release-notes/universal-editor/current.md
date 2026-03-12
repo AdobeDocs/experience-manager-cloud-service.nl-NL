@@ -1,33 +1,32 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2026.03.05
-description: Dit zijn de releaseopmerkingen voor de release 2026.03.05 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2026.03.12
+description: Dit zijn de releaseopmerkingen voor de release 2026.03.12 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
+source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2026.03.05 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2026.03.12 {#release-notes}
 
-Dit zijn de releaseopmerkingen voor de release van 5 maart 2026 van de Universal Editor.
-
->[!TIP]
->
->Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [&#x200B; Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+Dit zijn de opmerkingen bij de release van 12 maart 2026 van de Universal Editor.
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+
+>[!TIP]
+>
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* [&#x200B; de componentenplukker &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) heeft een nieuw ontwerp.
-* [&#x200B; de kleurkiezer van A &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) voor RTE is nu beschikbaar.
+* De componenten kunnen nu via het [ contextmenu ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) van containers worden toegevoegd.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -37,5 +36,4 @@ Als u de volgende functies wilt testen en uw feedback wilt delen, stuurt u een e
 
 ## Overige verbeteringen {#other-improvements}
 
-* De groepering, de tekstrichting, en de inkeping opties worden nu [&#x200B; toegelaten door gebrek in RTE &#x200B;](/help/implementing/universal-editor/configure-rte.md) op voorwaarde dat uw achterste eind hen steunt.
-* Tabs worden nu gerenderd bij gebruik van een inhoudsfragment met een Open API- en UI-schema.
+* Er is een probleem opgelost waarbij subelementen van Document Authoring zich niet aan de regels van NetChild hielden.
