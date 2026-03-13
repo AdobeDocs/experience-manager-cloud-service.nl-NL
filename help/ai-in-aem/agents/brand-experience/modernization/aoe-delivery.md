@@ -103,4 +103,4 @@ Het resulterende systeem is gebaseerd op Edge Delivery-sites die voortdurend vri
 
 ## Beperkingen {#limitations}
 
-De Experience Modernization Agent en AOE levering zijn niet perfect geschikt voor elk project. [ te herzien gelieve de beperkingen van de agent.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+De Experience Modernization Agent en AOE levering zijn niet perfect geschikt voor elk project. [&#x200B; te herzien gelieve de beperkingen van de agent.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
