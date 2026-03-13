@@ -4,9 +4,9 @@ description: Leer hoe u het modelcontextprotocol met AEM as a Cloud Service kunt
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: b3704dad066b66b103fdec849879f889e895c09d
+source-git-commit: 6fccf4f197fbfd38aa6a84422dc347b02d03061d
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1786'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ AEM stelt MCP-servers beschikbaar als HTTP-eindpunten. De hieronder vermelde ein
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **Inhoud** | `/content` | Alle inhoudsbewerkingen op laag niveau, inclusief maken, lezen, bijwerken en verwijderen (CRUD) voor pagina&#39;s, fragmenten en elementen. |
 | **Inhoud (read-only)** | `/content-readonly` | Alleen-lezen inhoudsbewerkingen (Ophalen, Lijst/Zoeken) voor pagina&#39;s, fragmenten en elementen. |
-| **Cloud Manager** | `/cloudmanager` | Cloud Manager-entiteiten beheren, waaronder programma&#39;s, omgevingen, opslagruimten en pijpleidingen, die ook kunnen worden geactiveerd. <br><br>*Deze server MCP is nu in **bèta**; om toegang, e-mail [&#x200B; aemcs-mcp-feedback@adobe.com &#x200B;](mailto:aemcs-mcp-feedback@adobe.com) met een beschrijving van uw gebruiksgeval te verzoeken.* |
+| **Cloud Manager** | `/cloudmanager` | Beheer Cloud Manager-entiteiten, inclusief programma&#39;s, omgevingen, opslagruimten en pijpleidingen, die ook kunnen worden geactiveerd. <br><br>*Deze server MCP is nu in **bèta**; om toegang, e-mail [ aemcs-mcp-feedback@adobe.com ](mailto:aemcs-mcp-feedback@adobe.com) met een beschrijving van uw gebruiksgeval te verzoeken.* |
 
 De specifieke hulpmiddelen die door elke server MCP worden blootgesteld kunnen in tijd evolueren. In de praktijk kunt u uw MCP-Toegelaten toepassing vragen om hulpmiddelen via een herinnering zoals te ontdekken:
 
@@ -64,9 +64,11 @@ De specifieke hulpmiddelen die door elke server MCP worden blootgesteld kunnen i
 
 De cliënt MCP gebruikt het protocol MCP om de hulpmiddellijst en schema&#39;s terug te winnen, die LLM dan kan gebruiken.
 
+Verwijs het [ Leerprogramma van de Server MCP van de Inhoud ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) en [ Video van de Server van Cloud Manager MCP ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) voor meer informatie over hun mogelijkheden en hoe te om hen te gebruiken.
+
 ## Ondersteunde MCP-toepassingen {#supported-mcp-applications}
 
-AEM MCP-servers zijn ontworpen voor gebruik met een gedefinieerde set MCP-compatibele toepassingen. Elke toepassing biedt een eigen configuratievenis, maar de stappen op hoog niveau zijn vergelijkbaar.
+AEM MCP servers worden ontworpen om met een bepaalde reeks MCP-compatibele toepassingen te werken. Elke toepassing biedt een eigen configuratie-ervaring, maar de stappen op hoog niveau zijn vergelijkbaar.
 
 ### Chattoepassingen (web en bureaublad) {#chat-applications}
 
@@ -92,10 +94,10 @@ AEM MCP-servers zijn ontworpen voor gebruik met een gedefinieerde set MCP-compat
 
 ## Overzicht van setup {#setup-overview}
 
-Het vormen MCP voor AEM impliceert twee belangrijkste delen:
+Het vormen MCP voor AEM impliceert twee belangrijke delen:
 
-1. **Configuratie in elke MCP cliënttoepassing** zodat de toepassing weet hoe te met de servers van AEM te verbinden MCP en OAuth login uit te voeren
-1. **selecteer de Server MCP** alvorens te beginnen te veroorzaken, zodat de cliënt MCP het weet te gebruiken.
+1. **Configuratie in elke MCP cliënttoepassing** zodat de toepassing weet hoe te met de AEM MCP servers te verbinden en OAuth login uit te voeren
+1. **selecteer de Server MCP** alvorens aan herinnering te beginnen, zodat de cliënt MCP weet om het te gebruiken.
 
 ### AEM-configuratie {#aem-configuration}
 
@@ -129,9 +131,9 @@ De beheerders kunnen toegang voor specifieke MCP cliënttoepassingen ook onbruik
 
 Voor alle MCP server verwante verzoeken, voel vrij om ons in **aemcs-mcp-feedback@adobe.com** te contacteren
 
-### Configuratie van MCP-clienttoepassing {#mcp-client-application-configuration}
+### Configuratie MCP-clienttoepassing {#mcp-client-application-configuration}
 
-Elke gebruiker voert deze stap uit, of een beheerder van de MCP cliënttoepassing kan het uitvoeren waar gesteund. De details van de configuratie variëren lichtjes tussen toepassingen. De cliënten MCP evolueren snel, en de steun voor verre servers MCP wordt actief ontwikkeld. Mogelijk moet u de ontwikkelaarsmodus inschakelen voor toegang tot de functionaliteit voor het toevoegen van externe servers, maar het algemene proces is:
+Elke gebruiker voert deze stap uit, of een beheerder van de MCP cliënttoepassing kan het uitvoeren waar gesteund. De configuratiedetails variëren iets tussen de toepassingen. De cliënten MCP evolueren snel, en de steun voor verre servers MCP wordt actief ontwikkeld. Mogelijk moet u de ontwikkelaarsmodus inschakelen voor toegang tot de functionaliteit voor het toevoegen van externe servers, maar het algemene proces is:
 
 1. Een of meer URL&#39;s van AEM MCP-servers toevoegen
    * Vorm één of meerdere eindpunten MCP van de lijst hierboven. Bijvoorbeeld:`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
@@ -168,12 +170,12 @@ Hieronder vindt u een overzicht van de ondersteunde toepassingen, waarvan enkele
 
 ## Verificatie {#authentication}
 
-De door Adobe gehoste MCP-servers implementeren OAuth en zijn geïntegreerd met het Adobe-identiteitssysteem.
+De Adobe-ontvangen MCP servers voeren OAuth uit en zijn geïntegreerd met het identiteitssysteem van de Adobe.
 
-* Wanneer een MCP cliënttoepassing met een server van AEM MCP verbindt, zien de gebruikers een login van Adobe dialoog en voor authentiek verklaren met hun **Adobe ID**
-* Na succesvolle login, verifieert het systeem dat de MCP cliënttoepassing in uw organisatie wordt toegelaten en dat de gevraagde server MCP wordt toegestaan. Als één van beide controle ontbreekt, wordt een foutenmelding getoond.
+* Wanneer een MCP cliënttoepassing met een AEM server verbindt MCP, zien de gebruikers een Adobe login dialoog en voor authentiek verklaren met hun **Adobe ID**
+* Na succesvolle login, verifieert het systeem dat de MCP cliënttoepassing in uw organisatie wordt toegelaten en dat de gevraagde server MCP wordt toegestaan. Als een van beide controles mislukt, wordt een foutbericht weergegeven.
 
-![&#x200B; MCP Cliënt niet toegelaten fout &#x200B;](assets/MCP-Client-not-permitted.png)
+![ MCP Cliënt niet toegelaten fout ](assets/MCP-Client-not-permitted.png)
 
 * Zodra geverifieerd, geeft de server MCP tekenen uit die de toepassing voor verdere hulpmiddelvraag gebruikt
 * De hulpmiddelen MCP respecteren de toestemmingen van AEM van de gebruiker. Alleen gebruikers die gemachtigd zijn om een inhoudsfragment in AEM te wijzigen, kunnen het wijzigen via MCP.
@@ -214,7 +216,7 @@ Enkele representatieve scenario&#39;s zijn:
 De volgende voorbeelden illustreren hoe een LLM hulpmiddelen MCP samen zou kunnen ketenen.
 
 1. **Werkend met een inhoudsfragment dat door een pagina** van verwijzingen wordt voorzien
-   * **krijgt paginacontent** - Vraag een hulpmiddel zoals `get-aem-page-content` om de pagina terug te winnen en van het `fragmentPath` bezit de plaats te bepalen.
+   * **krijg paginacontent** - roep een hulpmiddel zoals `get-aem-page-content` om de pagina terug te winnen en van het `fragmentPath` bezit de plaats te bepalen.
    * **los de fragmentweg** op - gebruik `resolve_fragment_path` om de weg in UUID om te zetten.
    * **de fragmentgegevens van de Vetch** - Vraag `get_fragment` om de huidige gebieden terug te winnen.
    * **werk het fragment** bij - vraag `patch_fragment` om veranderingen op de fragmentinhoud toe te passen.
@@ -252,6 +254,6 @@ Sommige MCP cliënttoepassingen, zoals Claude, bieden de optie aan auto-erkende 
 
 ## Beperkingen {#limitations}
 
-AEM steunt momenteel het vormen MCP servers in de toepassingen die onder [&#x200B; worden vermeld Gesteunde Toepassingen MCP &#x200B;](#supported-mcp-applications).
+AEM steunt momenteel het vormen MCP servers in de toepassingen die onder [ worden vermeld Gesteunde Toepassingen MCP ](#supported-mcp-applications).
 
 Als u een verschillende MCP cliënttoepassing zou willen gebruiken, voel vrij om uit in **aemcs-mcp-feedback@adobe.com** te bereiken om steun voor extra cliënten te verzoeken of een douane te lijsten van gewenste personen.
