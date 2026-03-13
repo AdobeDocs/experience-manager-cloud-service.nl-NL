@@ -64,7 +64,7 @@ De specifieke hulpmiddelen die door elke server MCP worden blootgesteld kunnen i
 
 De cliënt MCP gebruikt het protocol MCP om de hulpmiddellijst en schema&#39;s terug te winnen, die LLM dan kan gebruiken.
 
-Verwijs het [&#x200B; Leerprogramma van de Server MCP van de Inhoud &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) en [&#x200B; Video van de Server van Cloud Manager MCP &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) voor meer informatie over hun mogelijkheden en hoe te om hen te gebruiken.
+Verwijs het [&#x200B; Leerprogramma van de Server MCP van de Inhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) en [&#x200B; Video van de Server van Cloud Manager MCP &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) voor meer informatie over hun mogelijkheden en hoe te om hen te gebruiken.
 
 ## Ondersteunde MCP-toepassingen {#supported-mcp-applications}
 
