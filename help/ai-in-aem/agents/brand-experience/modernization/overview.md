@@ -4,9 +4,9 @@ description: Leer hoe de Experience Modernization Agent met behulp van AI nieuwe
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 84fed5a82d6c23cd51d9796eb644121c6ef06a29
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -18,29 +18,29 @@ Leer hoe de Experience Modernization Agent websites naar Edge Delivery Services 
 
 ## Inleiding {#introduction}
 
-[&#x200B; als deel van de Agent van de Ervaring van het Merk, &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) de Agent van de Modernisering van de Ervaring ontgrendelt de volledige waarde van Edge Delivery Services (met inbegrip van het auteursrecht van AEM) door websitemigraties en aan de gang zijnde evolutie snel en onwrikbaar te maken.
+[ als deel van de Agent van de Ervaring van het Merk, ](/help/ai-in-aem/agents/brand-experience/overview.md) versnelt de Agent van de Modernisering van de Ervaring onboarding aan Edge Delivery Services door websitemigraties en stichting van de gietplaats te automatiseren.
 
-Het combineert [&#x200B; de creatie van de plaats en migratievaardigheden &#x200B;](#creation-migration) voor aanvankelijke website onboarding en [&#x200B; blokontwikkelingsmogelijkheden &#x200B;](#block-development) voor ononderbroken ervaringsontwikkeling (stijlupdates, malplaatjeverfijningen, het landen paginaverwezenlijking). Bovendien biedt het de [&#x200B; Console van de Modernisering van de Ervaring &#x200B;](#console) als ontvangen AI-Gesteunde ontwikkelomgeving aan beschikbaar rechtstreeks aan u. Terwijl de gebruikers de agent direct door die console kunnen in werking stellen, behouden de ontwikkelaars volledige controle over welke schepen.
+Het combineert [ de verwezenlijking van de plaats en migratievaardigheden ](#creation-migration) voor aanvankelijke website onboarding en [ blokontwikkelingsmogelijkheden ](#block-development) om plaatsverwezenlijking en migratiewerkschema&#39;s te steunen. Bovendien biedt het de [ Console van de Modernisering van de Ervaring ](#console) als web-based op AI-Gesteunde ontwikkelomgeving aan beschikbaar aan u direct. Terwijl de gebruikers de agent direct door die console kunnen in werking stellen, behouden de ontwikkelaars volledige controle over welke schepen.
 
-Bovendien, om het succes van complexe migraties te verzekeren, biedt Adobe het [&#x200B; AgenticOutcome Engineer (AOE) leveringsmodel &#x200B;](#delivery-model) aan. Deze optie kan als accelerator of als tactische dienst worden gebruikt helpen specifieke projectuitdagingen ontsluiten.
+Voor complexe of high-priority migraties, biedt Adobe het [ Leveringsmodel van de Ingenieur van de Resultaten (AOE), ](#aoe-delivery) een ingenieursgestuurde dienst aan die wordt ontworpen om productie-klaar de plaatsen van Edge Delivery te leveren gebruikend de Agent van de Modernisering van de Ervaring.
 
 ## Voordelen {#benefits}
 
-De agent van de Modernisering van de Ervaring versnelt de tijd aan waarde voor [&#x200B; Edge Delivery Services &#x200B;](/help/edge/overview.md) goedkeuring en geeft u de behendigheid om het Webervaring van uw merk aan te passen.
+De agent van de Modernisering van de Ervaring versnelt de tijd aan waarde voor [ Edge Delivery Services ](/help/edge/overview.md) goedkeuring en geeft u de behendigheid om het Webervaring van uw merk aan te passen.
 
-* **Hoge snelheid**: AI de automatiseringshandvatten het herhalende migratiewerk (inhoudsimport, blokafbeelding, ontwerpsysteemtoepassing), die maanden van inspanning in weken comprimeren
-* **rendabel**: De automatisering behandelt het herhaalde werk, bevrijdend de professionele diensten voor hoogwaardige taken zoals integratie en strategische besluiten
+* **Hoge snelheid**: AI de automatiseringshandvatten het herhalende migratiewerk (inhoudsimport, blokafbeelding, ontwerpsysteemtoepassing), het comprimeren migratiechronologie vergeleken met traditionele benaderingen
+* **efficiency-Gericht**: De automatisering vermindert het herhaalde werk, toestaand teams om zich op het werk van de hoger-waardeimplementatie te concentreren
 * **Toegankelijk aan iedereen**: De verzoeken van de Natuurlijke taal maken websiteveranderingen voor minder technische gebruikers toegankelijk, met levende voorproef om veranderingen onmiddellijk te bevestigen
 * **het bestuur van de Onderneming**: De ontwikkelaars handhaven volledig gezag over wat door overzichtswerkschema&#39;s levend gaat die met GitHub worden geïntegreerd
-* **Ononderbroken waarde**: De agent steunt aan de gang zijnde plaatsevolutie, met inbegrip van stijlupdates, malplaatjeverfijningen, en het landen paginaverwezenlijking
+* **flexibiliteit post-migratie**: Laat teams toe om gemigreerde plaatsen uit te breiden en te raffineren gebruikend de patronen van Edge Delivery Services
 
 ## Vaardigheden voor het maken en migreren van sites {#creation-migration}
 
 De Experience Modernization Agent biedt vaardigheden voor het maken van nieuwe Edge Delivery Services-sites en het migreren van bestaande websites. Elke nieuwe Edge Delivery Services-site of migratie wordt aangemoedigd om deze vaardigheden te benutten.
 
 * Versnelt het maken van websites en het migreren van maanden tot weken of dagen, waardoor de tijd tot waarde voor Edge Delivery Services-adoptie aanzienlijk wordt verkort
-* Hiermee transformeert u websites van CMS, verouderde AEM of ontwerpsystemen (zoals Figma) naar Edge Delivery Services-projecten die klaar zijn voor productie
-* Biedt alle beloften van Edge Delivery Services: AI-gereedheid voor basisfuncties, snelle prestaties (Core Web Vital optimized), toegankelijkheid (WCAG 2.1 AA), responsief ontwerp voor alle breekpunten en inhouds+code-flexibiliteit
+* Ondersteunt migraties van een groot aantal CMS-platforms, verouderde AEM of ontwerpsystemen (zoals Figma) naar Edge Delivery Services-projecten die geschikt zijn voor productie
+* Biedt ondersteuning voor aanbevolen werkwijzen voor prestaties, toegankelijkheid en responsieve ontwerpen die zijn afgestemd op de Edge Delivery Services-richtlijnen
 
 Gedetailleerde vaardigheden zijn onder andere paginamigratie, bulkimport, ontwerpeigenschappen, navigatie-instellingen en webscraping.
 
@@ -49,29 +49,29 @@ Gedetailleerde vaardigheden zijn onder andere paginamigratie, bulkimport, ontwer
 De Experience Modernization Agent maakt gebruik van algemene Edge Delivery Services-ontwikkelingsmogelijkheden die verschillende ontwikkelingstaken leveren, en biedt ononderbroken waarde die verder gaat dan de initiële creatie of migratie van de site.
 
 * Volg de CDD-methode (Content-Driven Development) voor gebruiksvriendelijke inhoudsmodellen
-* Hefboomwerkingen de [&#x200B; Inzameling van het Blok &#x200B;](https://www.aem.live/developer/block-collection) en [&#x200B; Partij van het Blok &#x200B;](https://www.aem.live/developer/block-party/) om verwijzingsimplementaties en beste praktijken te vinden
+* Hefboomwerkingen de [ Inzameling van het Blok ](https://www.aem.live/developer/block-collection) en [ Partij van het Blok ](https://www.aem.live/developer/block-party/) om verwijzingsimplementaties en beste praktijken te vinden
 * Ondersteunt workflows voor het testen en opsporen van fouten voor het valideren van wijzigingen vóór de implementatie
 
 De gedetailleerde mogelijkheden omvatten blokontwikkeling, inhoud modellering, verwijzingsblokontdekking, het testen, en het zuiveren.
 
 ## Experience Moderation Console {#console}
 
-De agent van de Modernisering van de Ervaring verstrekt een ontvangen AI-bijgewoonde ontwikkelomgeving voor Edge Delivery Services, die als Webinterface bij [`aemcoder.adobe.io` wordt blootgesteld.](https://aemcoder.adobe.io)
+De agent van de Modernisering van de Ervaring verstrekt een web-based op AI-Gebaseerde ontwikkelomgeving voor Edge Delivery Services, die als Webinterface bij [`aemcoder.adobe.io` wordt blootgesteld.](https://aemcoder.adobe.io)
 
 * De console vereist geen lokale opstelling voor gebruikers beginnen veranderingen in natuurlijke taal onmiddellijk te veroorzaken.
 * U kunt ontwikkelingstaken van elke dag uitvoeren en er een voorbeeld van weergeven via live AEM-voorvertoning, en inhoud synchroniseren met AEM.
-* Het ondernemingsbestuur wordt afgedwongen aangezien de ontwikkelaars volledige controle over welke schepen via het gebruikelijke de overzicht en goedkeuringsproces van GitHub behouden.
+* De console steunt ondernemingsbestuur door standaard GitHub overzichtswerkschema&#39;s.
 
 De console van de Modernisering van de Ervaring van de zelfbediening is over het algemeen beschikbaar. Belangrijke gebruikers kunnen toegang aanvragen om ervoor te zorgen dat het instapproces soepel verloopt.
 
 Ga aan de slag met de Experience Modernization Console!
 
-* Als u uw plaats door Document Authoring te richten moderniseert, [&#x200B; hier begonnen wordt.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-* Als u uw plaats door het schrijven van AEM te richten moderniseert, [&#x200B; wordt begonnen hier.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+* Als u uw plaats door Document Authoring te richten moderniseert, [ hier begonnen wordt.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* Als u uw plaats door het schrijven van AEM te richten moderniseert, [ wordt begonnen hier.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
-## Leveringsmodel {#delivery-model}
+## Aflevering door een agitatieve werktuigkundige (AOE) {#aoe-delivery}
 
-Voor complexe migraties of versnelde resultaten biedt Adobe het leveringsmodel van de Agentic Outcome Engineer (AOE). Dit is een optionele service waarbij Adobe-technici namens u werken met de AI-werktuigen. Voor details op dit leveringsmodel, te zien gelieve het document [&#x200B; Model van de Levering van de Agent van de Modernisering van de Ervaring.](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
+Voor complexe migraties of versnelde resultaten biedt Adobe de levering van de Agentic Outcome Engineer (AOE). Dit is een optionele service waarbij Adobe-technici namens u de Experience Modernization Agent gebruiken, waarbij AI-automatisering wordt gecombineerd met deskundige begeleiding om resultaten te leveren die klaar zijn voor productie op schaal. Voor details op levering AOE, gelieve te zien het document [ AOE Levering van de Agent van de Modernisering van de Ervaring.](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
 
 Als u geïnteresseerd bent in het AOE-model voor uw volgende migratie:
 
@@ -82,7 +82,7 @@ Als u geïnteresseerd bent in het AOE-model voor uw volgende migratie:
 
 De volgende gebruiksgevallen vereisen extra implementatieinspanningen naast de vaardigheden van de Experience Modernization Agent.
 
-De volgende bronnen worden niet ondersteund door het gereedschap Schrappen.
+De het schrapen vaardigheid steunt niet de volgende bronnen.
 
 * Intranet of beschermde bronnen zoals inhoud achter verificatie, VPNs, of firewalls die niet toegankelijk zijn
 * Complexe dynamische inhoud, zoals inhoud waarvoor geavanceerde gebruikersinteractie in het DOM moet worden weergegeven.
@@ -109,4 +109,4 @@ De volgende vereisten worden niet gedekt door specifieke automatiseringsvaardigh
 
 ## Volgende stappen {#next-steps}
 
-Krijg begonnen door een plaats te migreren gebruikend het document [&#x200B; Begonnen het worden met de Agent van de Modernisering van de Ervaring.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+Krijg begonnen door een plaats te migreren gebruikend het document [ Begonnen het worden met de Agent van de Modernisering van de Ervaring.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
